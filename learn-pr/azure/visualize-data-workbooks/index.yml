@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.visualize-data-workbooks
+metadata:
+  title: Visualize data combined from multiple data sources by using Azure Monitor Workbooks
+  description: Use Azure Workbooks to query data from multiple data sources and use visualizations such as graphs, charts, and grids to build visual reports for data analysis and reporting.
+  ms.date: 10/27/2022
+  author: AbbyMSFT
+  ms.author: abbyweisberg
+  ms.topic: interactive-tutorial
+  ms.prod: azure-monitor
+title: Visualize data combined from multiple data sources by using Azure Workbooks
+summary: Query data from multiple data sources and use visualizations such as graphs, charts, and grids to build visual reports for data analysis and reporting using Azure Workbooks.
+abstract: |
+  By the end of this module, you'll be able to:
+    - Combine data from different sources into an Azure Workbook
+    - Build a visual report in Azure Workbooks to analyze your data
+prerequisites: |
+  - Experience creating and managing resources using the Azure portal at the beginner level
+  - Knowledge of what Azure Monitor is and how it works at the beginner level
+  - Knowledge of Azure Workbooks and how they work at the beginner level
+iconUrl: /learn/achievements/generic-badge.svg
+levels: 
+  - beginner
+roles: 
+  - network-engineer
+  - technology-manager
+products:
+- azure
+- azure-monitor
+- azure-portal
+subjects:
+  - cloud-computing
+units:
+- learn.visualize-data-workbooks.introduction
+- learn.visualize-data-workbooks.azure-workbooks-overview
+- learn.visualize-data-workbooks.create-new-azure-workbook
+- learn.visualize-data-workbooks.supported-data-sources
+- learn.visualize-data-workbooks.add-visualization-for-query-results
+- learn.visualize-data-workbooks.compare-data
+- learn.visualize-data-workbooks.add-visualizations-chart-grid
+- learn.visualize-data-workbooks.summary
+badge:
+  uid: learn.visualize-data-workbooks.badge

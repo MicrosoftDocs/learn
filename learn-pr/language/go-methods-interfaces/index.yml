@@ -3,7 +3,7 @@ uid: learn.language.go-methods-interfaces
 metadata:
   title: Use methods and interfaces in Go
   description: Learn about best practices for writing methods and interfaces in Go.
-  ms.date: 06/17/2021
+  ms.date: 01/27/2023
   author: danmabee
   ms.author: chnoring
   ms.topic: interactive-tutorial

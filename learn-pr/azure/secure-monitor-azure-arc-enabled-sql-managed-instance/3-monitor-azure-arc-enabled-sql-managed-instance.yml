@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.secure-monitor-azure-arc-enabled-sql-managed-instance.monitor-azure-arc-enabled-sql-managed-instance
+title: Monitor of Azure Arc-enabled SQL Managed Instance
+metadata:
+  title: Monitor of Azure Arc-enabled SQL Managed Instance
+  description: Implement monitoring Azure Arc-enabled SQL Managed Instance.
+  ms.date: 12/23/2022
+  author: tchristiani
+  ms.author: terrychr
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/monitor-azure-arc-enabled-sql-managed-instance.md)]

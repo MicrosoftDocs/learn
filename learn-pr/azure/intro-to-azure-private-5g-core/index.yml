@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.intro-to-azur-private-5g-core
+hidden: true
+metadata:
+  title: Introduction to Azure Private 5G Core
+  description: "Introduces Azure Private 5G Core, which provides 5G core network functions as part of an on-premises private mobile network for enterprises."
+  ms.date: 10/10/2022
+  author: michael-weizhong-shan
+  ms.author: michaelshan
+  ms.topic: interactive-tutorial
+  ms.service: learning-private-5g-core
+title: Introduction to Azure Private 5G Core
+summary: "Learn about the capabilities of Azure Private 5G Core and how you can use it to deploy a private mobile network."
+abstract: |
+  After completing this module, you'll be able to:
+    - Describe the role of Azure Private 5G Core in a private mobile network solution.
+    - List the key benefits of Azure Private 5G Core.
+    - Explain how Azure Private 5G Core works.
+    - List the key features of Azure Private 5G Core.
+prerequisites: |
+  - Fundamental Azure knowledge.
+  - Fundamental knowledge of 5G and 4G technologies.
+iconUrl: /learn/achievements/intro-to-azure-private-5g-core.svg
+levels:
+  - beginner
+roles:
+  - service-adoption-specialist
+  - solution-architect
+  - technology-manager
+products:
+  - azure
+subjects:
+  - cloud-computing
+  - networking
+units:
+- learn.intro-to-azure-private-5g-core.introduction
+- learn.intro-to-azure-private-5g-core.what-is-azure-private-5g-core
+- learn.intro-to-azure-private-5g-core.benefits-usage-scenarios
+- learn.intro-to-azure-private-5g-core.structure-components
+- learn.intro-to-azure-private-5g-core.key-features
+- learn.intro-to-azure-private-5g-core.knowledge-check
+- learn.intro-to-azure-private-5g-core.summary
+badge:
+  uid: learn.intro-to-azure-private-5g-core.badge

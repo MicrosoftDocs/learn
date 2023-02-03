@@ -30,6 +30,9 @@ roles:
 - solution-architect
 products:
 - azure
+- mdatp
+- azure-sentinel
+- defender-for-threat-intelligence
 subjects:
 - architecture
 - security

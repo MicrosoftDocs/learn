@@ -11,7 +11,7 @@ The cloud delivers fundamental technology benefits that can help your enterprise
 
 ## Optimize costs
 
-Datacenters are expensive. The costs of real estate, power, servers, storage, networks, and operations staff affect a company's bottom line. When customers migrate to modernize workloads in Azure, they convert upfront capital expenditures to operating expenditures that can be paid over time. Your cash flow is improved by only paying for what you need. You can also achieve cost savings and efficiency.
+Data centers are expensive. The costs of real estate, power, servers, storage, networks, and operations staff affect a company's bottom line. When customers migrate to modernize workloads in Azure, they convert upfront capital expenditures to operating expenditures that can be paid over time. Your cash flow is improved by only paying for what you need. You can also achieve cost savings and efficiency.
 
 ![Graph showing the difference between Pay as you go Azure resources and Reserved Instance pricing.](../media/optimize-it-spend.png)
 
@@ -31,19 +31,19 @@ Resilience is a core tenet of Azure trusted cloud commitments, alongside complia
 
 ### High-availability network design
 
-Unlike many other public cloud providers, data that traverses between Azure datacenters and regions doesn’t go through the public Internet - it stays in Microsoft’s network. The reliability and performance of cloud services is determined in part by the network and in addition to having more datacenter regions than any of our competitors. Microsoft’s network is also one of the largest in the world.
+Unlike many other public cloud providers, data that traverses between Azure data centers and regions doesn’t go through the public Internet - it stays in Microsoft’s network. The reliability and performance of cloud services is determined in part by the network and in addition to having more data center regions than any of our competitors, Microsoft’s network is also one of the largest in the world.
 
-The Microsoft global wide-area network (WAN) plays an essential part in delivering a great cloud service experience – offering near-perfect availability, high capacity, and the flexibility to respond to unpredictable demand spikes.
+The Microsoft global wide area network (WAN) plays an essential part in delivering a great cloud service experience – offering near-perfect availability, high capacity, and the flexibility to respond to unpredictable demand spikes.
 
-Azure traffic between our datacenters stays on our network and doesn't flow over the Internet. This includes all traffic between Microsoft services anywhere in the world. For example, within Azure, traffic between virtual machines, storage, and SQL communication traverses only the Microsoft network, regardless of the source and destination region. Intra-region VNet-to-VNet traffic, and cross-region VNet-to-VNet traffic, stays on the Microsoft network, giving us more control.
+Azure traffic between our datacenters stays on our network and doesn't flow over the Internet. This includes all traffic between Microsoft services anywhere in the world. For example, within Azure, traffic between virtual machines, storage, and SQL communication traverses only the Microsoft network, regardless of the source and destination region. Intra-region VNet-to-VNet traffic, and cross-region VNet-to-VNet traffic, stay on the Microsoft network, giving us more control.
 
-![A picture of the world with the Azure network shown with connections under the ocean.](../media/network.png)
+![An image of the world with the Azure network shown with connections under the ocean.](../media/network.png)
 
 ### Availability Zones
 
-An [Availability Zone](/azure/availability-zones/az-overview?azure-portal=true) is a high-availability offering that protects your applications and data from datacenter failures. Availability Zones are unique physical locations within an Azure region. Each zone is made up of one or more datacenters equipped with independent power, cooling, and networking.
+An [Availability Zone](/azure/availability-zones/az-overview?azure-portal=true) is a high-availability offering that protects your applications and data from data center failures. Availability Zones are unique physical locations within an Azure region. Each zone is made up of one or more datacenters equipped with independent power, cooling, and networking.
 
-To ensure resiliency, there's a minimum of three separate zones in all enabled regions. The physical separation of Availability Zones within a region protects applications and data from datacenter failures. Zone-redundant services replicate your applications and data across Availability Zones to protect from single-points-of-failure. With Availability Zones, Azure offers industry best 99.99% VM uptime SLA. The full [Azure SLA](https://azure.microsoft.com/support/legal/sla/?azure-portal=true) explains the guaranteed availability of Azure as a whole.
+To ensure resiliency, there's a minimum of three separate zones in all enabled regions. The physical separation of Availability Zones within a region protects applications and data from datacenter failures. Zone-redundant services replicate your applications and data across Availability Zones to protect from single-points-of-failure. With Availability Zones, Azure offers an industry best 99.99% VM uptime. The complete [Azure SLA](https://azure.microsoft.com/support/legal/sla/?azure-portal=true) explains the guaranteed availability of Azure as a whole.
 
 ![Diagram showing a web application and SQL servers in three availability zones.](../media/zones.png)
 
@@ -57,13 +57,13 @@ Microsoft uses predictive techniques to determine when a server might fail, so t
 
 ### Azure Service health alerts and status
 
-Azure has a full service health dashboard and fires alerts when issues happen. You can connect to the dashboard to receive information about the [status](https://status.azure.com/status/?azure-portal=true) of the Azure infrastructure and your services.  Azure Service Health (in the Azure portal) provides tailored information for your resources.
+Azure has a full service health dashboard and fires alerts when issues occur. You can connect to the dashboard to receive information about the [status](https://status.azure.com/status/?azure-portal=true) of the Azure infrastructure and your services.  Azure Service Health (in the Azure portal) provides tailored information for your resources.
 
 ![Azure Status Dashboard is shown including the current status of services in the Americas, Europe and Asia Pacific.](../media/azure-status.png)
 
 ### Security
 
-Azure provides a strong secure foundation to strengthen your security posture across operations, technology and partnerships. Microsoft invests 1 billion USD annually in cybersecurity and has over 3,500 global security experts to monitor and secure the environment Azure resources. The Microsoft Intelligent Security Graph, uses trillions of signals from Microsoft services and systems around the globe to identify new and evolving threats.
+Azure provides a strong secure foundation to strengthen your security posture across operations, technology, and partnerships. Microsoft invests 1 billion USD annually in cybersecurity and has over 3,500 global security experts to monitor and secure the environment Azure resources. The Microsoft Intelligent Security Graph uses trillions of signals from Microsoft services and systems around the globe to identify new and evolving threats.
 
 These ongoing investments protect workloads across your hybrid environments with intelligent security services. Customers will have reduced costs and complexity with a highly secure cloud foundation managed by Microsoft. Azure also has more compliance certifications than any other cloud provider—view the comprehensive list.
 
@@ -75,7 +75,7 @@ Microsoft uses a wide variety of physical, infrastructure, and operational contr
 
 #### Start with a secure foundation
 
-Take advantage of multi-layered security provided by Microsoft across physical datacenters, infrastructure, and operations in Azure. Gain from the state-of-art security delivered in Azure datacenters globally. Rely on a cloud that is built with customized hardware, has security controls integrated into the hardware and firmware components, and added protections against threats such as DDoS.
+Take advantage of the multi-layered security provided by Microsoft across physical datacenters, infrastructure, and operations in Azure. Gain from the state-of-art security delivered in Azure data centers globally. Rely on a cloud that is built with customized hardware, has security controls integrated into the hardware and firmware components, and added protections against threats such as DDoS.
 
 #### Simplify security with built-in controls
 
@@ -87,7 +87,7 @@ Identify new threats and respond quickly with services that are informed by real
 
 ## Hybrid flexibility
 
-Hybrid configurations deployed to Azure provide flexibility in the timing of migration or modernization of workloads. Tailwind Traders isn't required to move everything at once and may have both an on-premises and Azure environment running side-by-side for the foreseeable future. With the hybrid tools available you can't only start to migrate workloads to Azure and modernizing those workloads. You can also gain better management and governance of your workloads on-premises using the hybrid flexibility of Azure. This will better position you to gradually continue updating workloads over an extended period of time and to manage both on-premises and Azure workloads within a single, modern environment.
+Hybrid configurations deployed to Azure provide flexibility in the timing of migration or modernization of workloads. Tailwind Traders isn't required to move everything at once and may have both an on-premises and Azure environment running side-by-side for the foreseeable future. With the hybrid tools available, you can't only start migrating workloads to Azure and modernizing those workloads but also gain better management and governance of your workloads on-premises using the hybrid flexibility of Azure. This will position you to gradually continue updating workloads over an extended period of time and to manage both on-premises and Azure workloads within a single, modern environment.
 
 ## Scale Applications and Workloads on demand
 
@@ -99,13 +99,13 @@ Increase agility with best-in-class Azure infrastructure that scales to your bus
 
 ### Azure Autoscale
 
-Most Azure Solutions can be manually scaled up or down, with many also allowing for autoscale. Autoscale is a built-in feature of [App Services](/azure/azure-monitor/autoscale/autoscale-overview?azure-portal=true), [Azure Kubernetes Services](/azure/aks/cluster-autoscaler?azure-portal=true), [Virtual Machine Scale Sets](/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-autoscale-overview?azure-portal=true), and [Azure Cosmos DB](/azure/cosmos-db/provision-throughput-autoscale?azure-portal=true).
+Most Azure solutions can be manually scaled up or down, with many also allowing for autoscale. Autoscale is a built-in feature of [App Services](/azure/azure-monitor/autoscale/autoscale-overview?azure-portal=true), [Azure Kubernetes Services](/azure/aks/cluster-autoscaler?azure-portal=true), [Virtual Machine Scale Sets](/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-autoscale-overview?azure-portal=true), and [Azure Cosmos DB](/azure/cosmos-db/provision-throughput-autoscale?azure-portal=true).
 
 Scaling helps applications perform their best when demand changes. Performance means different things for different applications. Some apps are CPU-bound, others memory-bound. For example, you could have a web app that handles millions of requests during the day and none at night. Autoscale can scale your service by any of these or by a custom metric you define. An Azure administrator can scale other services such as Azure Database or Azure SQL to increase the size or responsiveness.
 
 ### Increase performance
 
-The benefits of migration can be immediate in terms of performance. Azure is available in 60 regions worldwide, more than any other cloud provider. Azure has one of the largest global networks, over 130,000 miles of fiber on land and below the sea. With 160+ edge sites, pairing points, and over 200 [ExpressRoute](https://azure.microsoft.com/services/expressroute?azure-portal=true) partners network speed and connectivity is unparalleled.
+The benefits of migration can be immediate in terms of performance. Azure is available in 60 regions worldwide, more than any other cloud provider. Azure has one of the largest global networks, over 130,000 miles of fiber on land and below the sea. With 160+ edge sites, pairing points, and over 200 [ExpressRoute](https://azure.microsoft.com/services/expressroute?azure-portal=true) partners, network speed and connectivity is unparalleled.
 
 ## Application Innovation
 
