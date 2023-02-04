@@ -3,7 +3,7 @@ uid: learn.languages.csharp-format-strings
 metadata:
   title: 'Format alphanumeric data for presentation in C#'
   description: 'Use C# to format strings with white space, special characters, padding, and alignment.  Give context to numeric data like currency, percentages, and numbers with decimals.'
-  ms.date: 08/19/2022
+  ms.date: 01/23/2023
   author: billwagner
   ms.author: wiwagn
   ms.topic: interactive-tutorial
@@ -11,11 +11,11 @@ metadata:
 title: Format alphanumeric data for presentation in C#
 summary: Use C# to format strings with white space, special characters, padding, and alignment.  Give context to numeric data like currency, percentages, and numbers with decimals.
 abstract: |
-  In this module, you will:
-  - Use character escape sequences to add tabs, new lines, and Unicode characters to our strings
-  - Create verbatim string literals, and escape common characters like backslash and double-quotes
-  - Merge templates with variables using composite formatting and string interpolation
-  - Include various format specifiers for percentages, currency, and numbers
+  In this module, you'll:
+  - Use character escape sequences to add tabs, new lines, and Unicode characters to our strings.
+  - Create verbatim string literals, and escape common characters like backslash and double-quotes.
+  - Merge templates with variables using composite formatting and string interpolation.
+  - Include various format specifiers for percentages, currency, and numbers.
 prerequisites: |
   - Introductory experience with creating and initializing variables of type `string` and `decimal`
   - Introductory experience with literal values of type `string` and `decimal`

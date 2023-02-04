@@ -14,7 +14,7 @@ You'll provide the networking resources for your Spring Apps service and your Ap
     ```Bash
     VIRTUAL_NETWORK_NAME=springappsvnet
     az network vnet create \
-        --resource-group $RESOURCE_GROUP \   
+        --resource-group $RESOURCE_GROUP \ 
         --name $VIRTUAL_NETWORK_NAME \
         --location $LOCATION \
         --address-prefix 10.1.0.0/16
@@ -23,16 +23,17 @@ You'll provide the networking resources for your Spring Apps service and your Ap
 
 2.  Create two subnets for Azure Spring Apps in this virtual network: one subnet for Application Gateway, the other another for the private endpoints of the MySQL Single Server instance and Azure Key Vault instance. You'll create environment variables for the subnet names of the Application Gateway and the Private Endpoints used later.
     
-    ```Bash
-    SERVICE_RUNTIME_SUBNET_CIDR=10.1.0.0/24
+    ```
     SERVICE_RUNTIME_SUBNET_CIDR=10.1.0.0/24
     APP_SUBNET_CIDR=10.1.1.0/24
     APPLICATION_GATEWAY_SUBNET_CIDR=10.1.2.0/24
     PRIVATE_ENDPOINTS_SUBNET_CIDR=10.1.3.0/24
+    DATABASE_SUBNET_CIDR=10.1.4.0/24
     APPLICATION_GATEWAY_SUBNET_NAME=app-gw-subnet
     PRIVATE_ENDPOINTS_SUBNET_NAME=private-endpoints-subnet
+    DATABASE_SUBNET_NAME=database-subnet
     az network vnet subnet create \
-        --resource-group $RESOURCE_GROUP \
+    --resource-group $RESOURCE_GROUP \
         --vnet-name $VIRTUAL_NETWORK_NAME \
         --address-prefixes $SERVICE_RUNTIME_SUBNET_CIDR \
         --name service-runtime-subnet \
@@ -51,13 +52,12 @@ You'll provide the networking resources for your Spring Apps service and your Ap
         --resource-group $RESOURCE_GROUP \
         --vnet-name $VIRTUAL_NETWORK_NAME \
         --address-prefix $PRIVATE_ENDPOINTS_SUBNET_CIDR
-    
     ```
 
 3.  Assign the **Owner** role-based access control (RBAC) role to the Azure Service Provider for Spring Apps access in the scope of the newly created virtual network. The assignment allows the resource provider to create resources in the service-runtime-subnet and apps-subnet subnets. The GUID used in the second command is the service provider ID for Azure Spring Apps.
     
     > [!NOTE]
-    > The export `MSYS_NO_PATHCONV=`1 must be included to address an issue with implementing role assignment when using Azure CLI in Git Bash shell, as documented on [GitHub](https://github.com/Azure/azure-cli/issues/16317).
+    > The export `MSYS_NO_PATHCONV=1` must be included to address an issue with implementing role assignment when using Azure CLI in Git Bash shell, as documented on [GitHub](https://github.com/Azure/azure-cli/issues/16317).
     
     ```Bash
     VIRTUAL_NETWORK_RESOURCE_ID=`az network vnet show \

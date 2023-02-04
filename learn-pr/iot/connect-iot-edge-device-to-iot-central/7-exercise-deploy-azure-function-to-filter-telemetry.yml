@@ -4,12 +4,11 @@ title: Exercise - Deploy an Azure function to IoT Edge
 metadata:
   title: Exercise - Deploy an Azure function to IoT Edge
   description: Exercise - Deploy an Azure function to IoT Edge
-  ms.date: 10/03/2022
+  ms.date: 01/11/2023
   author: dominicbetts
   ms.author: dobett
   ms.reviewer: rangv
   manager: lizross
-  ms.custom: engagement-fy23
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

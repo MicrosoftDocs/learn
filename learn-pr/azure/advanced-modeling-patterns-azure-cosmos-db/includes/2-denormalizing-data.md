@@ -6,7 +6,7 @@ In this unit, you'll look at the product table from your relational database and
 
 Your initial model for the product table includes only the fields from your relational table. However, your e-commerce application must display the product tags when you display a product page. You'll also want to query for products by product tags in either of two ways: you can store products in a product tags container, or you can embed your tags in the product container.
 
-Because there are far fewer tags per product than products per tag, it makes more sense to embed the product tags in the product table. There is a *one-to-few* relationship between each product and the tags, which makes a good case for embedding. You'll also store your product data with embedded tags in your new product container. So your new product model will appear as shown in the following diagram:
+Because there are far fewer tags per product than products per tag, it makes more sense to embed the product tags in the product table. There's a *one-to-few* relationship between each product and the tags, which makes a good case for embedding. You'll also store your product data with embedded tags in your new product container. So your new product model will appear as shown in the following diagram:
 
 :::image type="content" source="../media/2-product-tags-model-container.png" alt-text="Diagram that shows the relationship between the product and product tags entities but also includes a product container for which you haven't yet picked a partition key." border="false":::
 
@@ -30,7 +30,7 @@ To display a product page for a category, run the following queries:
 
 Running all the preceding queries could work for you. However, this approach isn't very scalable. Remember that, in NoSQL databases, there are no *joins* between containers, so joins aren't an option for you. Also remember that, for NoSQL databases, the objective is to reduce the number of requests by modeling data so that you can fetch your application data in as few requests as possible.
 
-The solution, then, is to *denormalize* your data. With denormalization, you can optimize your data models to ensure that all the required data for your application is ready to be served by your queries.
+The solution is to *denormalize* your data. With denormalization, you can optimize your data models to ensure that all the required data for your application is ready to be served by your queries.
 
 To denormalize your data in this instance, you add more properties, such as the name of the category and the name of each tag in your tags array. By adding these properties, you can now retrieve all the data you need to return to your clients in only a single request.
 

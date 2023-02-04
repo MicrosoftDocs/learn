@@ -1,4 +1,4 @@
-The following code is one possible solution for the challenge from the previous unit.
+The following code is one possible solution for the challenge from the previous unit:
 
 ```csharp-interactive
 Console.WriteLine("This is the first line.");
@@ -8,7 +8,7 @@ Console.Write("the second ");
 Console.Write("line.");
 ```
 
-This code is merely *one possible solution*, because we didn't specify which technique to apply to which line of output. However, you should have used both the `Console.WriteLine()` and `Console.Write()` methods to produce the desired output.
+This code is merely *one possible solution*, because we didn't specify which technique to apply to which line of output. However, you should've used both the `Console.WriteLine()` and `Console.Write()` methods to produce the desired output.
 
 ```output
 This is the first line.

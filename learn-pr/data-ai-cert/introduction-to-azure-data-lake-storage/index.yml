@@ -1,27 +1,28 @@
 ### YamlMime:Module
 uid: learn.data-ai.introduction-to-azure-data-lake-storage
 metadata:
-  title: Introduction to Azure Data Lake storage
+  title: Introduction to Azure Data Lake Storage Gen2
   description: "Discover how Data Lake Storage provides a repository where you can upload and store unstructured data bringing new efficiencies to processing big data analytics."
-  ms.date: 03/25/2022
+  ms.date: 02/03/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Introduction to Azure Data Lake storage
-summary: Learn how Azure Data Lake Storage provides a cloud storage service that is highly available, secure, durable, scalable, and redundant and brings new efficiencies to processing big data analytics workloads.
+  ms.service: azure-data-lake-storage
+title: Introduction to Azure Data Lake Storage Gen2
+summary: Data lakes are a core element of data analytics architectures. Azure Data Lake Storage Gen2 provides a scalable, secure, cloud-based solution for data lake storage.
 abstract: |
-  In this module you will:
-    - Decide when you should use Azure Data Lake Storage Gen2
-    - Create an Azure storage account by using the Azure portal
+  In this module you will learn how to:
+    - Describe the key features and benefits of Azure Data Lake Storage Gen2
+    - Enable Azure Data Lake Storage Gen2 in an Azure Storage account
     - Compare Azure Data Lake Storage Gen2 and Azure Blob storage
-    - Explore the stages for processing big data by using Azure Data Lake Store
-    - List the supported open-source platforms
+    - Describe where Azure Data Lake Storage Gen2 fits in the stages of analytical processing
+    - Describe how Azure data Lake Storage Gen2 is used in common analytical workloads
 prerequisites: |
-  None
+  Before starting this module, you should have completed the [Microsoft Azure Data Fundamentals certification](/certifications/azure-data-fundamentals/) or have equivalent knowledge and experience.
 iconUrl: /training/achievements/data-ai/introduction-to-azure-data-lake-storage-badge.svg
 levels:
-- beginner
+- intermediate
 roles:
 - data-engineer
 products:
@@ -36,6 +37,7 @@ units:
 - learn.data-ai-introduction-to-azure-data-lake-storage.azure-data-lake-and-blob-storage
 - learn.data-ai-introduction-to-azure-data-lake-storage.stages-for-processing-big-data
 - learn.data-ai-introduction-to-azure-data-lake-storage.use-cases
+- learn.data-ai.introduction-to-azure-data-lake-storage.knowledge-check
 - learn.data-ai-introduction-to-azure-data-lake-storage.summary
 badge:
   uid: learn.data-ai-introduction-to-azure-data-lake-storage.badge

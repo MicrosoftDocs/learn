@@ -4,7 +4,7 @@ metadata:
   moduleType: standard
   title: Test your Bicep code by using GitHub Actions
   description: Build a deployment workflow for Bicep infrastructure as code templates. Lint, validate, preview, and test your Bicep code by using GitHub and GitHub Actions.
-  ms.date: 10/19/2021
+  ms.date: 12/27/2022
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial
@@ -24,19 +24,19 @@ prerequisites: |
   - Bicep, including creating and deploying basic files.
   - Azure, including the Azure portal, subscriptions, resource groups, and resources.
   - Basic Git commands, including cloning, committing files, and pushing changes to GitHub.
-  - Basic workflows in GitHub Actions, including secrets.
-  
+  - Basic GitHub Actions workflows, including secrets so your workflow can connect to your Azure environment.
+
   To work through the exercises in the module, you'll need:
-  
+
   - An Azure account, with the ability to create resource groups and Azure Active Directory applications.
   - A GitHub account.
-  
-  You'll also need the following installed locally:
-  
-  - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
-  - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep&azure-portal=true)
+
+  You'll also need the following software installed locally:
+
+  - [Visual Studio Code](https://code.visualstudio.com)
+  - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep)
   - The latest [Azure CLI](/cli/azure/install-azure-cli) tools *or* the latest [Azure PowerShell](/powershell/azure/install-az-ps) version
-  - [Git](https://git-scm.com/download?azure-portal=true)
+  - [Git](https://git-scm.com/download)
 iconUrl: /training/achievements/bicep/test-bicep-code-using-github-actions.svg
 levels:
   - intermediate

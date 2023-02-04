@@ -10,7 +10,7 @@ When you don't provide an initial YAML file for your project, Azure Pipelines ca
 
 1. Either from the project page or from the left pane, select **Pipelines**.
 
-1. Select **New pipeline**.
+1. Select **Create Pipeline** (or **New pipeline** if this isn't the first pipeline in the project).
 
 1. On the **Connect** tab, select **GitHub**.
 
@@ -38,6 +38,9 @@ When you don't provide an initial YAML file for your project, Azure Pipelines ca
 ## Watch the pipeline run
 
 Under **Jobs**, select **Job**. Next, trace the build process through each of the steps. To see the job output as a text file when the build completes, you can also select **View raw log**.
+
+> [!NOTE]
+> If your pipeline status remains **Queued** and does not transition to **Running** after a few moments, check your parallel jobs. This module uses a Microsoft-hosted agent and requires a parallel job. [Check your parallel jobs and request a free grant](/azure/devops/pipelines/troubleshooting/troubleshooting#check-for-available-parallel-jobs).
 
 Here, you see the steps that the build definition created. It prepares the VM, fetches the latest source code from GitHub, and then builds the app.
 
@@ -80,8 +83,6 @@ In practice, you might add build tasks one at a time, push up your changes, and 
 1. In Visual Studio Code, change *azure-pipelines.yml* as you see here:
 
     [!code-yml[](code/6-azure-pipelines.yml)]
-
-    The `demands` section beneath `pool` specifies that you need npm, the Node.js package manager, installed on the build system.
 
     Under the `steps` section, you see the build tasks that map to each of the script commands that we identified earlier.
 

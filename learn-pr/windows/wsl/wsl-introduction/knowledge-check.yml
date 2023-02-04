@@ -1,0 +1,63 @@
+### YamlMime:ModuleUnit
+uid: learn.wsl-introduction.knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: "WSL knowledge check."
+  ms.date: 11/09/2022
+  author: mattwojo
+  ms.author: mattwoj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows
+durationInMinutes: 3
+###########################################################################
+###
+### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
+###  - Questions are complete sentences ending with a question mark
+###  - No true/false questions
+###  - 3 answers per question
+###  - All answers about the same length
+###  - Numeric answers listed in sorted order
+###  - No "All of the above" and/or "None of the above" as answer choices
+###  - No "Not" or "Except" in questions
+###  - No second person ("you") in the questions or answers
+###  - Provide a meaningful explanation for both correct and incorrect answers
+###
+###########################################################################
+content: |
+quiz:
+  questions:
+  - content: Which statement best describes WSL 2?
+    choices:
+    - content: A lightweight virtual machine that can run Bash commands, but that isn't 'actual' Linux because it doesn't use a Linux kernel. This makes it ideal for production-level deployment.
+      isCorrect: false
+      explanation: It is correct to say that WSL 2 uses a lightweight virtual machine to run the Linux distribution and Bash commands, but it does use an actual Linux kernel. It is also designed for development and NOT ideal for production-level deployment.
+    - content: A translation layer between a Linux distribution (like Ubuntu) and the Windows kernel that allows Windows command line or PowerShell to run Linux commands and seamlessly access Windows or Linux files because they are all stored on the same file system.
+      isCorrect: false
+      explanation: WSL 1 is a translation layer, whereas WSL 2 is running an actual Linux kernel. Neither WSL 1, nor WSL 2, stores files on the same file system. Windows and Linux file systems are separate and utilize different file system types (NTFS for Windows and ext4 for Linux.)
+    - content: A tool that enables any Linux distribution to be run on Windows using a lightweight, behind-the-scenes virtual machine. WSL utilizes both a Linux and Windows file system and enables switching seamlessly between Windows and Linux tools and GUI applications.
+      isCorrect: true
+      explanation: WSL does use a lightweight virtual machine, but set up is handled automatically and requires few resources, so it's hard to even notice it's running. WSL does utilize separate Windows and Linux file systems, but enables switching seamlessly between the two to run your preferred Windows or Linux command line tools and GUI applications.
+  - content: Which command + directory path will allow you to switch between Windows and Linux file systems?
+    choices:
+    - content: cd /mnt/c/Users
+      isCorrect: false
+      explanation: The cd command is correct to 'change directory' and `/mnt/c` is the correct path for accessing the mounted C:/ drive on the Windows file system from a Bash command line. (Note that Bash uses forward slashes in the path.) However, the other command option and path is correct as well, so the answer is All of the Above!
+    - content: cd \\\\wsl.localhost\\Ubuntu
+      isCorrect: false
+      explanation: The cd command is correct to 'change directory' and \\\\wsl.localhost\\Ubuntu is the correct path for accessing the Linux file system from a PowerShell command line. (Note that PowerShell uses back slashes in the path.) However, the other command option and path is correct as well, so the answer is All of the Above!
+    - content: All of the above.
+      isCorrect: true
+      explanation:  Great job! Both commands and paths are correct. The mnt path can be used with forward slashes to access the Windows file system from a Bash command line and the wsl.localhost (or \\wsl$) can be used to access the Linux file system from PowerShell.
+  - content: You can run any Linux distribution on WSL, as long as...
+    choices:
+    - content: The distribution is listed in the Microsoft Store.
+      isCorrect: false
+      explanation: A Linux distribution doesn't have to be available in the Microsoft Store in order to install it using WSL. Any distribution can be imported with the proper packaging.
+    - content: The distribution is widely supported by the Linux development community.
+      isCorrect: false
+      explanation: A Linux distribution doesn't have to be supported at all in order to install and use it with WSL. You can completely build your own custom distribution to use if you prefer.
+    - content: The distribution is packaged so that it can be imported."
+      isCorrect: true
+      explanation: Any Linux distribution can be imported with WSL. You can even build your own custom distribution. It just needs to be packaged in a tar file with all of the Linux binaries so that it can be imported (or side-loaded).

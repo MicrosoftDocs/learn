@@ -12,7 +12,7 @@ Friends and family can be a good source of early capital if they're happy to be 
 
 For most founders, the biggest challenge with friends and family rounds is that you have a friend or a family member who's now a shareholder in your company. They're financially exposed to the success or failure of your business.
 
-This arrangement can have a profound effect on your relationship with that person. It's wise to think about how you would manage this relationship over the long term.
+This arrangement can have a profound effect on your relationship with that person. It's wise to think about how you'd manage this relationship over the long term.
 
 Tips for raising money from friends and family:
 

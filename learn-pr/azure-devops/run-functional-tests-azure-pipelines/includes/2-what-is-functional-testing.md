@@ -1,4 +1,4 @@
-In this section, you join the Tailspin team as they define _functional tests_ for their pipeline. Functional tests verify that each function of the software does what it should.
+In this section, you join the Tailspin team as they define _functional tests_ for their pipeline. Functional tests verify whether each function of the software does what it should.
 
 The team first defines what a functional test covers. They explore some types of functional tests. Then they decide on the first test to add to their pipeline.
 
@@ -10,25 +10,25 @@ The team is having their weekly meeting. Andy is demonstrating the release pipel
 
 Also, the unit tests that Mara and Andy wrote eliminate all the regression bugs before I get the release. That removes a major source of frustration. I don't spend time finding and documenting regression bugs.
 
-But I'm worried that all of my testing is still manual. The process is slow, and we can't show anything to management until I finish. It's hard because the testing is important. Testing ensures that the users get the right experience. But the pressure is on to deliver faster.
+But I'm worried that all of my testing is still manual. The process is slow, and we can't show anything to management until I finish. It's hard because testing is important. Testing ensures that the users get the right experience. But the pressure is on to deliver faster.
 
 **Andy:** I'm sure we can help you. What kind of tests take up most of your time?
 
-**Amita:** I think the UI tests do. I have to click through every step to make sure I get the correct result. And I have to do that for every browser we support. It's very time consuming. And as the website grows in complexity, UI testing won't be practical in the long run.
+**Amita:** I think the UI tests do. I have to click through every step to make sure I get the correct result. And I have to do that for every browser we support. It's very time-consuming. And as the website grows in complexity, UI testing won't be practical in the long run.
 
 **Mara:** UI tests are considered to be _functional_ tests.
 
 **Tim:** As opposed to what, _nonfunctional_ tests?
 
-**Mara:** Exactly. And nonfunctional tests are something that you, in particular, care about.
+**Mara:** Exactly. And nonfunctional tests are something that you in particular, care about.
 
 **Tim:** Okay, I'm confused.
 
 ## What are functional and nonfunctional tests?
 
-**Mara:** _Functional tests_ verify that each function of the software does what it should. How the software implements each function isn't important in these tests. What's important is that the software behaves correctly. You provide an input and check that the output is what you expect. That's how Amita tests the UI. For example, if she selects the top player on the leaderboard, she expects to see that player's profile.
+**Mara:** _Functional tests_ verify that each function of the software does what it should. How the software implements each function isn't important in these tests. What's important is that the software behaves correctly. You provide input and check that the output is what you expect. That's how Amita tests the UI. For example, if she selects the top player on the leaderboard, she expects to see that player's profile.
 
-_Nonfunctional tests_ check characteristics like performance and reliability. An example of a nonfunctional test is checking to see how many people can sign in to the app simultaneously. Load testing is another example of a nonfunctional test. Those performance and reliability concerns are things you care about, Tim.
+_Nonfunctional tests_ check characteristics like performance and reliability. An example of a nonfunctional test is checking how many people can simultaneously sign up in to the app. Load testing is another example of a nonfunctional test. Those performance and reliability concerns are things you care about, Tim.
 
 **Tim:** They are, indeed. I need to think about this for a bit. I might want to add some automation to the pipeline too, but I'm not sure what I want to do. What kinds of automated tests can I run?
 
@@ -60,7 +60,7 @@ The UI tests that you'll run later in this module are unit tests.
 
 _Integration testing_ verifies that multiple software components work together to form a complete system. For example, an e-commerce system might include a website, a products database, and a payment system. You might write an integration test that adds items to the shopping cart and then purchases the items. The test verifies that the web application can connect to the products database and then fulfill the order.
 
-You can combine unit tests and integration tests to create a layered testing strategy. For example, you might run unit tests on each of your components before you run the integration tests. If all unit tests pass, you can move on to the integration tests with greater confidence.
+You can combine unit tests and integration tests to create a layered testing strategy. For example, you might run unit tests on each of your components before running the integration tests. If all unit tests pass, you can move on to the integration tests with greater confidence.
 
 ### Regression testing
 
@@ -78,7 +78,7 @@ Although sanity testing can be automated, it's often done manually in response t
 
 ### User interface testing
 
-_User interface (UI) testing_ verifies the behavior of an application's user interface. UI tests help verify that the sequence, or order, of user interactions leads to the expected result. These tests also help verify that input devices, such as the keyboard or mouse, affect the user interface properly. You can run UI tests to verify the behavior of a native Windows, macOS, or Linux application. Or you can use UI tests to verify that the UI behaves as expected across web browsers.
+_User interface (UI) testing_ verifies the behavior of an application's user interface. UI tests help verify that the sequence, or order, of user interactions, leads to the expected result. These tests also help verify that input devices, such as the keyboard or mouse, affect the user interface properly. You can run UI tests to verify the behavior of a native Windows, macOS, or Linux application. Or you can use UI tests to verify that the UI behaves as expected across web browsers.
 
 A unit test or integration test might verify that the UI _receives_ data correctly. But UI testing helps verify that the user interface _displays_ correctly and that the result functions as expected for the user.
 
@@ -98,7 +98,7 @@ For example, say you have a website that includes a link to the user's profile. 
 
 _User acceptance testing (UAT)_, like usability testing, focuses on an application's behavior from the user's perspective. Unlike acceptance testing, UAT is typically done by real end users.
 
-Depending on the software, end users might be asked to complete specific tasks. Or they might be allowed to explore the software without following any specific guidelines. For custom software, UAT typically happens directly with the client. For more general-purpose software, teams might run _beta_ tests. In beta tests, users from different geographic regions or users who have certain interests receive early access to the software.
+Depending on the software, end users might be asked to complete specific tasks. Or they might be allowed to explore the software without following specific guidelines. For custom software, UAT typically happens directly with the client. For more general-purpose software, teams might run _beta_ tests. In beta tests, users from different geographic regions or those with particular interests receive early access to the software.
 
 Feedback from testers can be direct or indirect. Direct feedback might come in the form of verbal comments. Indirect feedback can come in the form of measuring testers' body language, eye movements, or the time they take to complete certain tasks.
 
@@ -123,7 +123,7 @@ We've already covered the importance of writing tests. But just to emphasize it,
 **Mara:** When it comes to writing UI tests, what are our options? I know there are many. Some tools are open source. Others offer paid commercial support. Here are a few options that come to mind:
 
 * **Windows Application Driver** (WinAppDriver): WinAppDriver helps you automate UI tests on Windows apps. These apps can be written in Universal Windows Platform (UWP) or Windows Forms (WinForms). We need a solution that works in a browser.
-* **Selenium**: Selenium is a portable open-source software-testing framework for web applications. It runs on most operating systems, and it supports all modern browsers. You can write Selenium tests in several programming languages, including C#. In fact, there are NuGet packages that make it easy to run Selenium as NUnit tests. We already use NUnit for our unit tests.
+* **Selenium**: Selenium is a portable open-source software-testing framework for web applications. It runs on most operating systems, and it supports all modern browsers. You can write Selenium tests in several programming languages, including C#. In fact, you can use NuGet packages that make it easy to run Selenium as NUnit tests. We already use NUnit for our unit tests.
 * **SpecFlow**: SpecFlow is for .NET projects. It's inspired by a tool called Cucumber. Both SpecFlow and Cucumber support behavior-driven development (BDD). BDD uses a natural-language parser called Gherkin to help both technical teams and nontechnical teams define business rules and requirements. You can combine either SpecFlow or Cucumber with Selenium to build UI tests.
 
 Andy looks at Amita.
@@ -170,15 +170,15 @@ Our existing _Test_ stage includes one job. That job deploys the website to App 
 
 ## Create a functional test plan
 
-We've just seen the team decide on how they'll implement their first functional tests. If your team is just starting to incorporate functional tests into their pipeline (or even if you're already doing that), remember that you always need a plan.
+We've seen the team decide on how they'll implement their first functional tests. If your team is just starting to incorporate functional tests into their pipeline (or even if you're already doing that), remember that you always need a plan.
 
-Many times, when someone asks team members about their performance testing plan, it's common for  them to respond with a list of tools they are going to use. However, a list of tools isn't a plan. You also must work out how the testing environments will be configured, you need to determine the processes to be used, and you need to determine what success or failure looks like.
+Many times, when someone asks team members about their performance testing plan, it's common for  them to respond with a list of tools they're going to use. However, a list of tools isn't a plan. You must also work out how the testing environments will be configured. You need to determine the processes to use, and determine what success or failure looks like.
 
 Make sure your plan:
 
 * Takes the expectations of the business into account.
 * Takes the expectations of the target users into account.
-* Defines the metrics you will use.
-* Defines the KPIs you will use.
+* Defines the metrics you'll use.
+* Defines the KPIs you'll use.
 
-Performance testing needs to be part of your planning, right from the start. If you use a story or Kanban board, you might consider having an area near it where you can plan out your testing strategy. As part of the iteration planning, gaps in the testing strategy should be highlighted. It is also important to work out how you will monitor performance once the application has been deployed, and not just measure performance before it's released.
+Performance testing needs to be part of your planning, right from the start. If you use a story or Kanban board, you might consider having an area near it where you can plan out your testing strategy. As part of the iteration planning, gaps in the testing strategy should be highlighted. It's also important to work out how you'll monitor performance once the application has been deployed, and not just measure performance before it's released.

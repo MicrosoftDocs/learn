@@ -10,10 +10,10 @@ In this module, you'll explore the types of nonfunctional tests you can run. You
 
 After completing this module, you'll be able to:
 
-- Define the role of nonfunctional tests and explain how they compare to functional tests
-- Identify some popular kinds of nonfunctional tests you can run
-- Run automated load tests in the pipeline by using Apache JMeter
-- Convert test results to a format that Azure Pipelines can visualize for you
+- Define the role of nonfunctional tests and explain how they compare to functional tests.
+- Identify some popular kinds of nonfunctional tests you can run.
+- Run automated load tests in the pipeline by using Apache JMeter.
+- Convert test results to a format that Azure Pipelines can visualize for you.
 
 ## Prerequisites
 

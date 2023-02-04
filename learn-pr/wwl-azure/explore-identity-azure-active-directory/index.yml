@@ -3,9 +3,9 @@ uid: learn.wwl.explore-identity-azure-active-directory
 metadata:
   title: Explore identity in Azure AD
   description: "This module will cover a wide view of the definition and available services for identity provided in the Microsoft Cloud from Azure AD to Microsoft 365. You start with the basics of authentication, authorization, and access tokens. This builds a firm foundation of what an identity is, why it is important. Then we move into governance and lifecycle management of your identities and identity solutions. The final topic opens up the term zero trust to see how it should be applied to your identity solutions."
-  ms.date: 09/05/2022
+  ms.date: 02/03/2023
   author: wwlpublish
-  ms.author: v-arxia
+  ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Explore identity and Azure AD
@@ -30,6 +30,7 @@ products:
 - azure-active-directory
 - azure-active-directory-b2c
 - azure-active-directory-domain
+- entra-verified-id
 subjects:
 - architecture
 - identity-access

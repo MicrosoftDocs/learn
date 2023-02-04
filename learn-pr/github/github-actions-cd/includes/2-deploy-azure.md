@@ -8,7 +8,7 @@ In the previous module on CI with GitHub Actions, you learned how to trigger a w
 
 One option is to trigger the workflow with *ChatOps*. ChatOps uses chat clients, chatbots, and real-time communication tools to execute tasks. For example, you might leave a specific comment in a pull request that can kick off a bot. That bot might comment back with some statistics or run a workflow.
 
-Another option, and the one we use in our example, is to use labels in your pull request. Different labels can start different workflows. For example, add a *stage* label to begin a deployment workflow to your staging environment, or add a *spin up environment* label to run the workflow that creates the Microsoft Azure resources you will deploy to. To use labels, your workflow will look like this:
+Another option, and the one we use in our example, is to use labels in your pull request. Different labels can start different workflows. For example, add a *stage* label to begin a deployment workflow to your staging environment, or add a *spin up environment* label to run the workflow that creates the Microsoft Azure resources you'll deploy to. To use labels, your workflow will look like this:
 
 ```yml
 on:
@@ -20,7 +20,7 @@ on:
 
 Often, you only want to run a workflow if some condition is true. 
 
-GitHub workflows provide the *if* conditional for this scenario. The conditional uses an [expression](https://help.github.com/actions/reference/context-and-expression-syntax-for-github-actions?azure-portal=true) that will be evaluated at runtime. For example, we want to run this workflow if a *stage* label is added to the pull request.
+GitHub workflows provide the *if* conditional for this scenario. The conditional uses an [expression](https://docs.github.com/actions/learn-github-actions/expressions) that will be evaluated at runtime. For example, we want to run this workflow if a *stage* label is added to the pull request.
 
 ```yml
 if: contains(github.event.pull_request.labels.*.name, 'stage')
@@ -28,7 +28,7 @@ if: contains(github.event.pull_request.labels.*.name, 'stage')
 
 ## Store credentials with GitHub Secrets
 
-Of course, you never want to expose sensitive information in the workflow file. GitHub Secrets is a secure place to store sensitive information that your workflow will need. Here's an example.
+You never want to expose sensitive information in the workflow file. GitHub Secrets is a secure place to store sensitive information that your workflow will need. Here's an example.
 
 In order to deploy to an Azure resource, the GitHub Action must have permission to access the resource. You don't want to store your Azure credentials in plain sight in the workflow file. Instead, you can store your credentials in GitHub Secrets.
 
@@ -60,7 +60,7 @@ To find an Action:
 1. Click the **Edit** icon in the upper right corner of the file view.
 1. Use the GitHub Marketplace sidebar to the right of the editor to browse Actions.
 
-Suppose you want to deploy a container-based web app to Azure Web Apps. If you search the GitHub Marketplace you find these actions:
+Suppose you want to deploy a container-based web app to Azure Web Apps. If you search the GitHub Marketplace, you'll find these actions:
 
 - [azure/webapps-container-deploy@v1](https://github.com/Azure/webapps-container-deploy?azure-portal=true)
 - [azure/login@v1](https://github.com/Azure/login?azure-portal=true) that we saw previously  

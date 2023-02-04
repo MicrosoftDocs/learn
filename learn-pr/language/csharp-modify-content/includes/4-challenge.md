@@ -6,7 +6,7 @@ In this challenge, you'll work with a string that contains a fragment of HTML. Y
 
 ### Step 1: Delete all of the code in the .NET Editor from the earlier exercise.
 
-Select all of the code in the .NET Editor then select the `del` or `backspace key` to delete it.
+Select all of the code in the .NET Editor, then select the <kbd>Del</kbd> or <kbd>Backspace</kbd> key to delete it.
 
 ### Step 2: Write code in the .NET Editor to extract data, replace data, and remove data from an input string.
 
@@ -33,7 +33,7 @@ Output: <h2>Widgets &reg;</h2><span>5000</span>
 
 You may only add code to the starting point code listing. You must not change the variable declarations. All of your work should go under the comment `// Your work here`.
 
-You'll perform three operations on the input using the tools and techniques you learned in this module.
+You'll perform three operations on the input using the tools and techniques you learned in this module:
 
 1. Set the `quantity` variable to the value you extract from between the `<span>` and `</span>` tags.
 2. Set the `output` variable to the value of input, then remove the `<div>` and `</div>` tags.
@@ -43,7 +43,7 @@ Whether you get stuck and need to peek at the solution or you finish successfull
 
 ### Quick HTML primer
 
-In case you're not familiar with HTML, it's the markup language that is used to create all web pages. You can skip this section if you're already well versed in HTML. It's not designed to be a comprehensive tutorial, but provides enough information to complete this challenge.
+In case you're not familiar with HTML, it's the markup language that's used to create all web pages. You can skip this section if you're already well versed in HTML. It's not designed to be a comprehensive tutorial, but provides enough information to complete this challenge.
 
 In HTML, you can define the structure of a document using tags. A tag is composed of:
 
@@ -55,4 +55,4 @@ Each tag has a corresponding closing tag that's indicated by a forward slash cha
 
 The data between the opening and closing tag is that tag's content. The content can include text and other tags.
 
-You cam embed a set of tags inside another set of tags. In fact, that is what gives an HTML document its hierarchical structure.
+You cam embed a set of tags inside another set of tags. In fact, that's what gives an HTML document its hierarchical structure.

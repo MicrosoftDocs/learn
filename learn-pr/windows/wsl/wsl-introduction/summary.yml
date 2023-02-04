@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wsl-introduction.summary
+title: Summary
+metadata:
+  unitType: summary
+  title: summary
+  description: Summary of Windows Subsystem for Linux (WSL) including install, set up, developer workflow, and running basic Bash and PowerShell commands.
+  ms.date: 11/09/2022
+  author: mattwojo
+  ms.author: mattwoj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-summary.md)]

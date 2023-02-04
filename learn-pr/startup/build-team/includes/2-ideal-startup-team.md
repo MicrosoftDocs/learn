@@ -4,13 +4,13 @@ In this unit, we're going to talk about startup teams. We'll first look at the p
 
 ## Attributes of successful startup teams
 
-This section lists important attributes that should exist within every startup founding team. It's not essential (or likely) that every team member will have all these attributes. But it's highly desirable that each of the attributes exists somewhere within the team.
+This section lists important attributes that should exist within every startup founding team. It's not essential (or likely) that every team member will have all these attributes, but it's highly desirable that each of the attributes exists somewhere within the team.
 
 It's also important to look for these attributes in early employees, because they tend to correlate with high performance. Also, it's vital to have a good cultural alignment between founders and key employees.
 
 ### Curiosity
 
-Curious founders are genuinely interested in understanding problems. Curiosity leads to solutions that better meet the needs of customers.
+Curious founders are genuinely interested in understanding problems. Curiosity leads to solutions that better meet customer needs.
 
 Founders who have this attribute:
 
@@ -31,7 +31,7 @@ Founders who have this attribute:
 - Have established networks with potential customers or suppliers.
 - Are viewed by their peers as a domain expert.
 
-When combined with broad curiosity, this attribute can lead to *T-shaped* skills in which the person has a formidable combination of breadth and depth. 
+When combined with broad curiosity, this attribute can lead to *T-shaped* skills in which the person has a formidable combination of breadth and depth.
 
 ### Bias toward action
 
@@ -42,7 +42,7 @@ Founders who have this attribute:
 - Focus on taking action wherever possible.
 - Tend not to engage in prolonged deliberation or strategizing.
 - Are willing to make decisions based on imperfect information.
-- Aren't perfectionists and realize that *perfect* is the enemy of *done*.
+- Aren't perfectionists, and realize that *perfect* is the enemy of *done*.
 - Demonstrate in other aspects of life that they consistently take projects to completion.
 
 ### Determination
@@ -127,7 +127,7 @@ If your startup is still at the idea stage, this might be a great option. If you
 
 Successful founding teams frequently have an existing strong relationship between cofounders, sometimes developed over years of working together in other settings. When cofounders already know each other well, it's common for them to have worked out how to:
 
-- Function effectively as a team. 
+- Function effectively as a team.
 - Understand each other's strengths, weaknesses, and communication styles.
 - Navigate difficult decisions and deal with conflict.
 
@@ -139,7 +139,7 @@ Sometimes the best approach is to invite the person to work with you on a specif
 
 If you've been working on your startup for a while, and especially if you've already launched a product, the idea of bringing in a cofounder can be less straightforward. Anyone who joins as a cofounder at this point will likely face the question of whether they're genuinely a founder. You and any other original founders might be viewed as having a different status.
 
-Late-joining cofounders are often offered a lower-equity stake than the initial founders in an attempt to reconcile the fact that they weren't involved in coming up with the idea or taking the first steps to pursue it. As a result, their level of commitment can be considerably lower. This can lead to tensions within the team. 
+Late-joining cofounders are often offered a lower-equity stake than the initial founders in an attempt to reconcile the fact that they weren't involved in coming up with the idea or taking the first steps to pursue it. As a result, their level of commitment can be considerably lower. This can lead to tensions within the team.
 
 In these situations, you might be better off hiring an employee or a contractor.
 

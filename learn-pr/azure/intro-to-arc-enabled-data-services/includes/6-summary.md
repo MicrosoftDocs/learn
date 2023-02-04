@@ -1,4 +1,4 @@
-In this module, you learned about the fundamentals of hybrid computing and Azure Arc. You also learned about the Azure Arc-enabled data services architecture with important components like the Azure Arc data controller and the Kubernetes API. To conclude the module, you learned the capabilities and features of Azure Arc-enabled SQL Managed Instance and PostgreSQL Hyperscale.
+In this module, you learned about the fundamentals of hybrid computing and Azure Arc. You also learned about the Azure Arc-enabled data services architecture with important components like the Azure Arc data controller and the Kubernetes API. To conclude the module, you learned the capabilities and features of Azure Arc-enabled SQL Managed Instance.
 
 ## Learn more
 
@@ -15,10 +15,6 @@ Read this [overview](/azure/azure-arc/data/overview) to learn more about Azure A
 ### Azure Arc-enabled SQL Managed Instance
 
 Read this [overview](/azure/azure-arc/data/managed-instance-overview) to learn more about Azure Arc-enabled SQL Managed Instance and how to get started.
-
-### Azure Arc-enabled PostgreSQL Hyperscale (Preview)
-
-Read this [overview](/azure/azure-arc/data/what-is-azure-arc-enabled-postgres-hyperscale) to learn more about Azure Arc-enabled PostgreSQL Hyperscale and how to get started.
 
 ### Azure Arc Jumpstart
 

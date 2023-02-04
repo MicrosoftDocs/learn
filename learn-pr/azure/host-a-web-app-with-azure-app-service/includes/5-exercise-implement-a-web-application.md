@@ -11,7 +11,7 @@ First, let's install the appropriate version of `dotnet` into the Cloud Shell. F
 1. Run the following commands in Azure Cloud Shell on the right to download and install dotnet:
 
     ```bash
-    wget -q -O - https://dot.net/v1/dotnet-install.sh | bash -s -- --version 3.1.102
+    wget -q -O - https://dotnet.microsoft.com/download/dotnet/scripts/v1/dotnet-install.sh | bash -s -- --version 6.0.404
     export PATH="~/.dotnet:$PATH"
     echo "export PATH=~/.dotnet:\$PATH" >> ~/.bashrc
     ```

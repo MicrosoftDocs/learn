@@ -1,0 +1,42 @@
+### YamlMime:ModuleUnit
+uid: learn.design-health-model-mission-critical-workload.what-is-health-modeling
+title: What is health modeling?
+metadata:
+  title: What is health modeling?
+  description: Learn what a health model is and why you should use it.
+  ms.date: 01/12/2022
+  author: msimecek
+  ms.author: prwilk
+  ms.topic: interactive-tutorial 
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-what-is-health-modeling.md)]
+
+quiz:
+  title: Knowledge check
+  questions:
+  - content: "What is the main motivation to use health models instead of traditional dashboards?"
+    choices:
+    - content: "Health models add contextual information to raw metrics data, so you can react more quickly to problems."
+      isCorrect: true
+      explanation: "Correct. Health modeling focuses on a holistic view of the application, so you don't need to focus on raw data."
+    - content: "Health models look better and allow an organization to focus on the important parts."
+      isCorrect: false
+      explanation: "Incorrect. Although the visual aspect of a health model is important, the same applies to traditional dashboards. The added value of a health model is in clearly displaying an indication of the overall health of the system."
+  - content: "Health modeling focuses on:"
+    choices:
+    - content: "Cloud resources and health metrics."
+      isCorrect: false
+      explanation: "Incorrect. Although resources and metrics provide the necessary foundation of the health model, they aren't enough on their own."
+    - content: "A holistic view of the application, including, but not limited to, cloud resources."
+      isCorrect: true
+      explanation: "Correct. Health modeling focuses on the overall health status of the application rather than on raw data metrics. "
+  - content: "What does it mean when an application health model is *layered*?"
+    choices:
+    - content: "The health model is multidimensional, the entire system is separated into layers, and you filter only for the layer that's relevant to you."
+      isCorrect: false
+      explanation: "Incorrect. While a layered health model is multidimensional and it separates the system into layers, filtering on a single layer isn't the purpose of a health model. A health model provides value when it's analyzed and observed as a whole."
+    - content: "The health model is multidimensional, the entire system is separated into layers, and you observe the system as a whole."
+      isCorrect: true
+      explanation: "Correct. A layered health model provides value when it's analyzed and observed as whole. Each layer of the health model captures what its healthy and unhealthy states represent. Health status of lower-level dependencies helps to quickly find the cause of service degradation."

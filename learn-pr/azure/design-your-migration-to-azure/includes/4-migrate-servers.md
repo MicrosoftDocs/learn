@@ -4,7 +4,7 @@ In this unit, you'll review Azure Migrate and how to use it to migrate specific 
 
 ## Virtual machine replication
 
-Add Azure Migrate: Server Migration to your Azure Migrate dashboard, which carries over machines and insights from the assessment. You can begin your replication by clicking **Replicate** in the tool window. Azure Migrate replicates up to 100 VMs simultaneously. If you need to do more, we recommend that you create multiple batches. Times for replication will vary based on the number and size of virtual machines, along with connection speeds between your data center and Azure.
+Add Azure Migrate: Server Migration to your Azure Migrate dashboard, which carries over machines and insights from the assessment. You can begin your replication by clicking **Replicate** in the Migration and modernization tool window. Azure Migrate replicates up to 100 VMs simultaneously. If you need to do more, we recommend that you create multiple batches. Times for replication will vary based on the number and size of virtual machines, along with connection speeds between your data center and Azure.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of the Azure Migrate Servers page in Azure Admin center.](../media/4-vm-replication.png)
@@ -15,12 +15,13 @@ Once all your targeted virtual machines are replicated and into Azure, you can t
 
 ## Migrating the virtual machines into production
 
-Once you’re ready for the production migration, select **Migrate** from the replicating machines window. The process will prompt you to shut down the virtual machine to avoid any data loss and perform a final replication. We recommend doing this during off-peak business hours, because the virtual machine will be down for a few minutes.
+Once you’re ready for the production migration, select **Migrate** from the Replicating machines window. The process will prompt you to shut down the virtual machine to avoid any data loss and perform a final replication. We recommend doing this during off-peak business hours, because the virtual machine will be down for a few minutes.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of the Server migration replicating machines page in Azure Admin center.](../media/4-vm-machines.png)
 
-Now it'll run through the production migration process, and you can check the status as it validates the pre-requisites, prepares for migration, creates the Azure VM and starts the Azure VM.
+Now it'll run through the production migration process, and you can check the status as it validates the prerequisites, prepares for migration, creates the Azure VM and starts the Azure VM.
+
 
 ## Post-migration steps
 

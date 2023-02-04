@@ -31,31 +31,17 @@ gatsby develop
 You should now have two routes up and running:
 
 - `http://localhost:8000/`, where your app is rendered
-- `http://localhost:8000/___graphql`, where the built-in data graph is displayed with GraphiQL
+- `http://localhost:8000/___graphql`, where the built-in data graph is displayed with GraphQL
 
 ### Construct a query
 
 Go to `http://localhost:8000/___graphql` in your browser so you can get help creating the query.
 
-:::image type="content" source="../media/query.png" alt-text="Gatsby query.":::
+:::image type="content" source="../media/graphql-explorer.png" alt-text="Screenshot showing how to navigate to the Gatsby query." lightbox="../media/graphql-explorer.png":::
 
-In the above image, you can see the `Explorer` section on the left. You can use the Explorer to drill down into our Graph until you find the data we need. In the middle section, you can see how the query is written for you as you perform selections on the left. On the right, you see the result of running the query. You can run the query by clicking the *play* button in the middle section.
+In the above image, you can see the Explorer section in the left pane. You can use the Explorer to drill down into our Graph until you find the data you need. In the middle pane you can see how the query is written for you as you perform selections on the left. On the right you see the result of running the query. You can run the query by clicking the *play* button in the middle section.
 
-Select the following constructed query from the middle section:
-
-```bash
-site {
-  siteMetadata {
-    author,
-    description,
-    title
-  }
-}
-```
-
-Copy it to the clip board.
-
-Return back to the editor and locate the file `about.js` in the `pages/` directory. Change its content to the following code:
+Return back to the VS Code editor and locate the file `about.js` in the `pages/` directory. Change its content to the following code:
 
 ```jsx
 import React from 'react';
@@ -88,6 +74,6 @@ During build time Gatsby will input the query result into the component's `data`
 
 Save the file and browse to `http://localhost:8000/about` and you'll see the following:
 
-:::image type="content" source="../media/component-with-data.png" alt-text="Page component with data.":::
+:::image type="content" source="../media/component-with-data.png" alt-text="Screenshot showing the page component with data.":::
 
-You've added data to your component with a GraphQL query! You also got to use the GraphiQL querying tool and Gatsby development server in the process.
+You've added data to your component with a GraphQL query! You also got to use the GraphQL querying tool and Gatsby development server in the process.

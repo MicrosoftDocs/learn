@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-azure-kubernetes-service.configure-aks-networking
-title: Configure AKS networking
+title: Configure Azure Kubernetes Service networking
 metadata:
-  title: Configure AKS networking
-  description: "Configure AKS networking"
-  ms.date: 10/21/2022
+  title: Configure Azure Kubernetes Service networking
+  description: "Configure Azure Kubernetes Service networking"
+  ms.date: 12/21/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial

@@ -8,13 +8,13 @@ The following diagram illustrates Cloud Adoption Framework methodologies within 
 
 Tailwind Traders shouldn't undertake cloud adoption without considerable planning. Proceeding with caution is especially recommended for the migrate phase in the cloud adoption lifecycle. To prepare for migration, review the following documentation:
 
-- [Azure migration guide overview](/azure/cloud-adoption-framework/migrate/azure-migration-guide?azure-portal=true). Review the Azure migration guide to learn about Azure native tools and a relevant approach to migration.
+- [Azure migration guide overview](/azure/cloud-adoption-framework/migrate/azure-migration-guide?azure-portal=true) - Review the Azure migration guide to learn about Azure native tools and a relevant approach to migration.
 
-- [The One Migrate approach to migrating the IT portfolio](/azure/cloud-adoption-framework/scenarios?azure-portal=true). Examine the scenarios captured in this Migrate methodology. The examples demonstrate the same set of consistent guidelines and processes for migrating both Microsoft and third-party technologies.
+- [The One Migrate approach to migrating the IT portfolio](/azure/cloud-adoption-framework/scenarios?azure-portal=true) - Examine the scenarios captured in this Migrate methodology. The examples demonstrate the same set of consistent guidelines and processes for migrating both Microsoft and third-party technologies.
 
 - [Azure cloud migration best practices checklist](/azure/cloud-adoption-framework/migrate/azure-best-practices?azure-portal=true). Follow this document to learn how best to address common migration needs through the application of consistent best practices.
 
-- [The Cloud Adoption Framework migration model](/azure/cloud-adoption-framework/migrate/migration-considerations?azure-portal=true). Explore this document to understand migration and why the process can be an intensive activity. As you increase your migration effort, review these process improvements to help optimize aspects of your migration.
+- [The Cloud Adoption Framework migration model](/azure/cloud-adoption-framework/migrate/migration-considerations?azure-portal=true) - Explore this document to understand migration and why the process can be an intensive activity. As you increase your migration effort, review these process improvements to help optimize aspects of your migration.
 
 ### Things to consider when implementing migration adoption
 

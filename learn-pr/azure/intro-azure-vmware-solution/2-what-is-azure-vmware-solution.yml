@@ -28,7 +28,7 @@ quiz:
     - content: "Azure VMware Solution is the fastest way to force a move off Azure-centric operational processes."
       isCorrect: false
       explanation: "Azure VMware Solution provides a fast path to cloud."
-  - content: "Which native Azure service can be integrated with Azure VMware Solution to provide VMware vCenter SSO identity?"
+  - content: "Which native Azure service can be used to mount VM file shares using SMB or NFS?"
     choices:
     - content: "Azure Databricks"
       isCorrect: false
@@ -36,7 +36,7 @@ quiz:
     - content: "Azure Monitor"
       isCorrect: false
       explanation: "Azure Monitor can be integrated to monitor VMs on Azure and on Azure VMware Solution."
-    - content: "Azure Active Directory"
+    - content: "Azure NetApp Files"
       isCorrect: true
-      explanation: "Azure Active Directory can be used as the VMware vCenter SSO identity source."
+      explanation: "Azure NetApp Files supports mounting volumes using SMB or NFS on VMs."
   

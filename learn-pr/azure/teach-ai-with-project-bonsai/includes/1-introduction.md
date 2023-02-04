@@ -8,10 +8,10 @@ Through a combination of Project Bonsai and Project Moab, any engineer is able t
 
 ## Learning objectives
 
-- List the critical innovation factors of Project Bonsai
-- Describe how AI specification documents are used to build Bonsai brains
-- Explain coding and training of monolithic brains with the Bonsai UI
-- Describe the Project Bonsai workflow using the Moab as an example
+- Understand the Bonsai interface and the integration between brains and simulations
+- Gain familiarity with the components and functionality of automatic assessments
+- Translate an existing AI spec design into a trained Bonsai brain
+- Evaluate the success of a Bonsai training session using the training data
 
 ## Prerequisites
 

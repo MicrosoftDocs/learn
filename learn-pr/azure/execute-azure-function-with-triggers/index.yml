@@ -8,6 +8,7 @@ metadata:
   ms.author: glenga
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: engagement-fy23
 title: Execute an Azure Function with triggers
 summary: A trigger is responsible for executing an Azure function and there are dozens of triggers to choose from. This module will you show you some of the most common types of triggers and how to configure them to execute your logic.
 abstract:  | 
@@ -18,6 +19,7 @@ abstract:  |
   - Create a blob trigger to invoke a function when a blob is created or updated in Azure Storage
 prerequisites: None
 iconUrl: /training/achievements/execute-azure-function-with-triggers.svg
+hidden: true
 levels: 
 - beginner
 roles: 

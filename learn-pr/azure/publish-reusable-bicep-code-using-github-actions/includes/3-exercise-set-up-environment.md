@@ -12,7 +12,7 @@ To meet these objectives, you'll:
 
 ## Get the GitHub repository
 
-Here, you create a new GitHub repository based on a template repository. The template repository contains the files that you need to get started for this module. 
+Here, you create a new GitHub repository based on a template repository. The template repository contains the files that you need to get started for this module.
 
 The modules in this learning path are part of a progression. For learning purposes, each module has an associated GitHub template repository.
 
@@ -28,7 +28,7 @@ Run a template that sets up your GitHub repository.
 
 On the GitHub site, follow these steps to create a repository from the template:
 
-1. Select **Use this template**. 
+1. Select **Use this template**.
 
    :::image type="content" source="../media/3-template.png" alt-text="Screenshot of the GitHub interface that shows the template repo, with the button for using the template highlighted.":::
 
@@ -38,7 +38,7 @@ On the GitHub site, follow these steps to create a repository from the template:
 
    When you create your own repositories, you might want to make them private. In this module, you'll use features of GitHub that only work with public repositories and with GitHub Enterprise accounts.
 
-1. Select **Create repository from template**. 
+1. Select **Create repository from template**.
 
    :::image type="content" source="../media/3-repo-settings.png" alt-text="Screenshot of the GitHub interface that shows the repo creation page.":::
 
@@ -46,13 +46,13 @@ On the GitHub site, follow these steps to create a repository from the template:
 
 ## Clone the repository
 
-Now that you have a copy of the template repository in your own account, you'll clone this repository locally so you can start working in it. 
+Now that you have a copy of the template repository in your own account, you'll clone this repository locally so you can start working in it.
 
 1. Select **Code** and select the copy icon.
 
    :::image type="content" source="../media/3-github-repository-clipboard.png" alt-text="Screenshot of the GitHub interface that shows the new repository, with the repository U R L copy button highlighted.":::
 
-1. Open Visual Studio Code. 
+1. Open Visual Studio Code.
 
 1. Open a Visual Studio Code terminal window by selecting **Terminal** > **New Terminal**. The window usually opens at the bottom of the screen.
 
@@ -152,7 +152,7 @@ Next, create a workload identity in Azure AD for your deployment workflow.
 
    ```azurepowershell
    $applicationRegistration = New-AzADApplication -DisplayName 'toy-reusable'
-   New-AzADAppFederatedIdentityCredential `
+   New-AzADAppFederatedCredential `
       -Name 'toy-reusable-branch' `
       -ApplicationObjectId $applicationRegistration.Id `
       -Issuer 'https://token.actions.githubusercontent.com' `
@@ -239,7 +239,7 @@ You've created a workload identity, and a resource group that it can deploy to. 
 
 1. In the **Value** field, paste the GUID from the first line of the terminal output. Don't include `AZURE_CLIENT_ID`, the colon, or any spaces in the value.
 
-1. Select **Add secret**. 
+1. Select **Add secret**.
 
    :::image type="content" source="../../includes/media/github-create-repository-secret-details.png" alt-text="Screenshot of the GitHub interface showing the 'New Secret' page, with the name and value completed and the 'Add secret' button highlighted." border="true":::
 

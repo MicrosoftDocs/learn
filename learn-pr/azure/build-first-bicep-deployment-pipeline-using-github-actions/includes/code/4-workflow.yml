@@ -6,7 +6,7 @@ permissions:
   id-token: write
   contents: read
 
-env: 
+env:
     AZURE_RESOURCEGROUP_NAME: ToyWebsite
     ENVIRONMENT: nonprod
 
@@ -14,7 +14,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
       with:
         path: repo
     - uses: azure/login@v1

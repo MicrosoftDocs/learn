@@ -26,7 +26,7 @@ This table describes a privileged access strategy against ransomware in terms of
 
 ### Implementation checklist
 
-Build a multi-part strategy using the guidance at [https://aka.ms/SPA](https://aka.ms/SPA) that includes this checklist.
+Build a multi-part strategy using the guidance at [securing privileged access](https://aka.ms/SPA) that includes this checklist.
 
 | Done| Task | Description |
 |:-------|:-------|:-----|

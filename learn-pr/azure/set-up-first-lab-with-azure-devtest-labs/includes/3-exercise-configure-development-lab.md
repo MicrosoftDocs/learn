@@ -1,6 +1,6 @@
 A lab in Azure DevTest Labs represents a collection of settings to quickly and repeatably create virtualized computing environments.
 
-For your eCommerce company, you decide to create a lab for the development team. Developers need a Windows or Linux-based virtual machine. Your organization standardizes on the most recent versions of Ubuntu Server and Windows Server. To reduce cost, all VMs should be shut down daily at 7pm.
+For your eCommerce company, you decide to create a lab for the development team. Developers need a Windows- or Linux-based virtual machine. Your organization standardizes on the most recent versions of Ubuntu Server and Windows Server. To reduce cost, all VMs should be shut down daily at 7pm.
 
 In this exercise, you'll use the Azure portal to create an Azure DevTest Labs resource with settings to accommodate the needs from the development team and IT organization.
 

@@ -9,7 +9,7 @@ Now that you have reviewed this module, you should be able to:
 
 ## Resources
 
-To learn more about some of the topics we've examined in this module, check out the following links to documentation.
+To learn more about some of the idea we've examined in this module, check out the following links to documentation.
 
  -  [Enable combined security information registration in Azure Active Directory](/azure/active-directory/authentication/howto-registration-mfa-sspr-combined)
  -  [Create a resilient access control management strategy in Azure AD](/azure/active-directory/authentication/concept-resilient-controls)

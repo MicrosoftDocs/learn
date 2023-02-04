@@ -7,18 +7,18 @@ Azure Migrate: App Containerization tool is a standalone tool that can be run on
 In this module, you created resources by using your Azure subscription. The following steps show you how to clean up these resources so that there's no continued charge against your account.
 
 1. Go to the Azure portal.
-2. In the left menu, select Resource groups.
+2. In the left menu, select **Resource groups**.
 3. Select the resource group name that starts with *LearnAppContainerization* or the resource group name you used.
-4. On the Overview tab, select Delete resource group.
-5. To confirm the deletion, enter the name of the resource group. To delete all the resources you created in this module, select Delete.
+4. On the **Overview** tab, select **Delete resource group**.
+5. To confirm the deletion, enter the name of the resource group. To delete all the resources you created in this module, select **Delete**.
 
 
 ## Learn more
 
 For more information on containerizing and migrating your applications to App Service or AKS using Azure Migrate, see these articles:
 
-- [Containerize and migrate ASP.NET applications to AKS](https://go.microsoft.com/fwlink/?linkid=2173710)
-- [Containerize and migrate Java web apps to AKS](https://go.microsoft.com/fwlink/?linkid=2173511)
-- [Containerize and migrate ASP.NET applications to Azure App Service](https://go.microsoft.com/fwlink/?linkid=2173711)
-- [Containerize and migrate Java web apps to Azure App Service](https://go.microsoft.com/fwlink/?linkid=2173512)
+- [Containerize and migrate ASP.NET applications to AKS](https://go.microsoft.com/fwlink/?linkid=2173710).
+- [Containerize and migrate Java web apps to AKS](https://go.microsoft.com/fwlink/?linkid=2173511).
+- [Containerize and migrate ASP.NET applications to Azure App Service](https://go.microsoft.com/fwlink/?linkid=2173711).
+- [Containerize and migrate Java web apps to Azure App Service](https://go.microsoft.com/fwlink/?linkid=2173512).
 
