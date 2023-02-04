@@ -6,6 +6,12 @@ In this module, you accomplished the following objectives to build and manage a 
 - Tested your chat app
 - Learned about continuous delivery (CD), to automatically building and deploying code changes to Azure from the GitHub repo
 
+## Clean up
+
+The sandbox automatically cleans up your resources when you're finished with this module.
+
+When you're working in your own subscription, it's a good idea at the end of a project to identify whether you still need the resources you created. Resources that you leave running can cost you money. You can delete resources individually or delete the resource group to delete the entire set of resources.
+
 ## Learn more
 
 Now that you've seen your first serverless, real-time chat app, you can start to build your own applications. See these resources:

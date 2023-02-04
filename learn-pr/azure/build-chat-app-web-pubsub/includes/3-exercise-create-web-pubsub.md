@@ -6,7 +6,7 @@
     WPS_NAME=<my-unique-name>
     ```
 
-1. Set a location for this module's Web PubSub and Static Web Apps resources. Examples: westus, eastus2, westeurope, eastasia.
+1. Set a location for this module's Web PubSub and Static Web Apps resources. Select one of the recommended locations for this module: westus, eastus2, westeurope, eastasia.
 
     ```azurecli
     LOC=<region-name>

@@ -6,7 +6,7 @@ metadata:
   sandbox: true
   interactive: bash
   description: Exercise - Create and configure a static web app, configure the Web PubSub event handler, and view the web site
-  ms.date: 12/14/2022
+  ms.date: 02/03/2023
   author: dlepow
   ms.author: danlep
   ms.topic: interactive-tutorial
