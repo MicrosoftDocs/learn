@@ -6,7 +6,7 @@ You've nearly finished remodeling your database. You've transformed nine relatio
 
 There's one final optimization you could make. Have you noticed that the productCategory and productTag containers share the same partition key? As you might have guessed, because they share this key, you can put both entities into the same container and give it a more generic name, such as productMeta.
 
-Now you can use queries like the ones you've learned about earlier to get all your product tags and product categories. This pattern works for any kind of master or reference data you need to maintain. To help maintain referential integrity across the entire database, change feed monitors this new container. So you can route any change to specific update functions by inspecting the `type` property when the new data is read by change feed.
+Now you can use queries like the ones you've learned about earlier to get all your product tags and product categories. This pattern works for any kind of primary or reference data you need to maintain. To help maintain referential integrity across the entire database, change feed monitors this new container. So you can route any change to specific update functions by inspecting the `type` property when the new data is read by change feed.
 
 :::image type="content" source="../media/9-product-meta.png" alt-text="Diagram that shows the productCategory and productTag containers combined into a single container called productMeta." border="false":::
 

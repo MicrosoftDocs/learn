@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-ai-introduction-to-azure-data-lake-storage.create-data-lake-account
-title: Exercise - Create an Azure Storage Account by using the portal
+title: Enable Azure Data Lake Storage Gen2 in Azure Storage
 metadata:
-  title: Exercise - Create an Azure Storage Account by using the portal
-  description: "Exercise - Create an Azure Storage Account by using the portal"
-  ms.date: 03/25/2022
+  title: Enable Azure Data Lake Storage Gen2 in Azure Storage
+  description: "Enable Azure Data Lake Storage Gen2 in Azure Storage"
+  ms.date: 02/03/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial

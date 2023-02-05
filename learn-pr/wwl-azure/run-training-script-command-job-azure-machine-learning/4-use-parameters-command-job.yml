@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.run-training-script-command-job-azure-machine-learning.use-parameters-command-job
+title: Use parameters in a command job
+metadata:
+  title: Use parameters in a command job
+  description: "Learn how to use parameters in a command job."
+  ms.date: 01/25/2023
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-use-parameters-command-job.md)]

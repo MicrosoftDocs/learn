@@ -4,17 +4,17 @@ A floating point is a simple value type that represents fractional numbers. Unli
 
 ## Evaluate floating-point types
 
-First, you must also consider the digits of precision each allow. Precision is the number of values that can be stored after the decimal point.
+First, you must consider the digits of precision each type allows. Precision is the number of values that can be stored after the decimal point.
 
 Second, you must consider the manner in which the values are stored and the impact that has on the accuracy of the value. In other words, `float` and `double` values are stored internally in a binary (base 2) format, while `decimal` values are stored in a decimal (base 10) format. Why does this matter?
 
-Performing math on binary floating-point values can produce results that may surprise you if you're used to decimal (base 10) math. Often, binary floating-point math is an approximation of the real value. Therefore, `float` and `double` are useful, because they can store large numbers using a small memory footprint; however, you should only use them when an approximation is useful. For example, being a few thousandths off when calculating the blast zone of a weapon in a video game is close enough.
+Performing math on binary floating-point values can produce results that may surprise you if you're used to decimal (base 10) math. Often, binary floating-point math is an approximation of the real value. Therefore, `float` and `double` are useful because they can store large numbers using a small memory footprint; however, you should only use them when an approximation is useful. For example, being a few thousandths off when calculating the blast zone of a weapon in a video game is close enough.
 
-When you need more a more precise answer, you should use `decimal`. Each value of type `decimal` has a relatively large memory footprint; however, performing math operations gives you a more precise result. So, you should use `decimal` when working with financial data or any scenario where you need an accurate result from a calculation.
+When you need more a more precise answer, you should use `decimal`. Each value of type `decimal` has a relatively large memory footprint; however, performing math operations gives you a more precise result. Therefore, you should use `decimal` when working with financial data or in any scenario where you need an accurate result from a calculation.
 
 ### Step 1 - Delete or comment out any code from the previous exercises in the .NET Editor
 
-Select the code from the previous exercise and select the `backspace` or `del` key. Optionally, comment out the previous code in the .NET Editor.
+Select the code from the previous exercise and select the <kbd>Backspace</kbd> or <kbd>Del</kbd> key. Optionally, comment out the previous code in the .NET Editor.
 
 ### Step 2 - Use the MinValue and MaxValue properties for each signed float type
 
@@ -39,11 +39,11 @@ double : -1.79769313486232E+308 to 1.79769313486232E+308 (with ~15-17 digits of 
 decimal: -79228162514264337593543950335 to 79228162514264337593543950335 (with 28-29 digits of precision)
 ```
 
-As you can see, `float` and `double` use a different notation than `decimal` to represent its largest and smallest possible values. But what does this notation mean?
+As you can see, `float` and `double` use a different notation than `decimal` to represent their largest and smallest possible values. But what does this notation mean?
 
 ### Deciphering large floating-point values
 
-Because floating-point types can hold large numbers with a lot of precision, their values can be represented using "E notation", which is a form of scientific notation that means "times ten raised to the power of." So, a value like `5E+2` would be the value `500` because it's the equivalent of `5 * 10^2`, or `5 * 10 * 10`.
+Because floating-point types can hold large numbers with great precision, their values can be represented using "E notation", which is a form of scientific notation that means "times ten raised to the power of." So, a value like `5E+2` would be the value `500`, because it's the equivalent of `5 * 10^2`, or `5 * 10 * 10`.
 
 ## Recap
 
