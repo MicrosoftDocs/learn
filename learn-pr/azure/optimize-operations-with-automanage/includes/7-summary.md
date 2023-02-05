@@ -1,6 +1,6 @@
-As Contoso continues to expand its Windows Server and Linux operations, it has learned the value Azure Automanage can bring to its IT workload, allowing it to automate much of the day-to-day needs of their extensive VM infrastructure.
+As Contoso continues to expand its Windows Server and Linux operations, it has learned the value Azure Automanage can bring to its IT workload, allowing it to automate many of the day-to-day needs of their extensive VM infrastructure.
 
-In this module, you learned about the many benefits of enabling Azure Automanage for your Windows Server and Linux virtual machines, including the automation of numerous Azure services, how to create custom configuration profiles to fit your particular operational needs, and how to extend the benefits of Automanage to VMs hosted outside of Azure.
+In this module, you discovered the benefits Azure Automanage can bring to your Windows Server and Linux virtual machines. These benefits include automating numerous Azure services and creating custom configuration profiles that fit your operational needs. You also learned about extending Automanage to VMs hosted outside of Azure.
 
 ## Learn more
 
