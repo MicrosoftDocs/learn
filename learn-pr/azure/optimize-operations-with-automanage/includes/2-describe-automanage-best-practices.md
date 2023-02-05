@@ -42,7 +42,7 @@ Automanage Machine Configuration provides native capability to audit or configur
 
 When creating an Automanage Best Practices configuration profile, enable Machine Configuration either through creating a built-in profile or a custom profile.
 
-:::image type="content" source="../media/create-custom-profile.png" alt-text="Screen shot of the create custom profile window.":::
+:::image type="content" source="../media/create-custom-profile.png" alt-text="Screenshot of the create custom profile window.":::
 
 ## Automanage machine statuses
 

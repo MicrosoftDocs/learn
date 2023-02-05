@@ -1,6 +1,6 @@
-Azure Automanage best practices includes default configuration profiles that can be applied to most of your virtual machines. However, for more flexability, you can select from the set of services and settings by creating a custom configuration profile. For example, you can create a configuration that excludes Microsoft Defender for Cloud from your Automanage machines.
+Azure Automanage best practices includes default configuration profiles that can be applied to most of your virtual machines. You can select from the set of services and settings by creating a custom configuration profile. For example, you can create a configuration that excludes Microsoft Defender for Cloud from your Automanage machines.
 
-You can create a custom profile using the Azure portal or an Azure Resource Manager (ARM) template. For this module, you'll learn how to use the Azure portal to create a custom profile.
+Custom profiles can be created using the Azure portal or an Azure Resource Manager (ARM) template. For this module, you'll learn how to use the Azure portal to create a custom profile.
 
 ## Create a custom configuration profile in the Azure portal
 

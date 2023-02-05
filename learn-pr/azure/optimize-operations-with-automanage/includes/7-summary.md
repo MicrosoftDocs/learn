@@ -9,4 +9,4 @@ You can learn more by reviewing the following articles:
 - [What is Azure Automanage?](/azure/automanage/overview-about)
 - [Azure Automanage for Machines Best Practices](/azure/automanage/automanage-linux)
 - [What is Azure Arc-enabled servers?](/azure/azure-arc/servers/overview?azure-portal=true)
-- [What is Azure Policy?](/en-us/azure/governance/policy/overview)
+- [What is Azure Policy?](/azure/governance/policy/overview)
