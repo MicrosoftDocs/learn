@@ -1,3 +1,4 @@
+
 In this module, you learned how to:
 
 * Identify the components of the Microsoft identity platform
