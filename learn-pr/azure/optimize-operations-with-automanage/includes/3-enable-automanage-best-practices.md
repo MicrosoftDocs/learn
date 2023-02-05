@@ -75,10 +75,10 @@ You can enable Automanage for multiple VMs using a built-in Azure policy.
 1. In the search bar, search for and select **Policy**.
 1. In the menu, select **Definitions**.
 1. In the **Categories** drop-down, select **Automanage**.
-    The list of policies will update to include the following:
+    The list will update to include the following policies:
     - Configure virtual machines to be onboarded to Azure Automanage 
     - Configure virtual machines to be onboarded to Azure Automanage with Custom Configuration Profile
-1. Select the applicable policy. You wil then be able to view its **Definition** tab.
+1. Select the applicable policy. You will then be able to view its **Definition** tab.
     > [!NOTE]
     > The Azure Policy definition is used to set Automanage parameters like the configuration profile. It also sets filters that ensure the policy applies only to the correct VMs.
 1. Select the **Assign** button to create an assignment.
