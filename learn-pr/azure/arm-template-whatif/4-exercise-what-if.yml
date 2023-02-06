@@ -4,8 +4,8 @@ title: Exercise - Preview changes with the what-if command
 metadata:
   title: Exercise - Preview changes with the what-if command
   description: Use the what-if tool to predict what a deployment will carry out if it's applied.
-  author: softchris
-  ms.author: chnoring
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.date: 05/20/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
