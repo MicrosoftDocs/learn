@@ -1,3 +1,4 @@
+
 Authentication with Key Vault works in conjunction with Azure Active Directory, which is responsible for authenticating the identity of any given security principal.
 
 For applications, there are two ways to obtain a service principal:

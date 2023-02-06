@@ -4,13 +4,11 @@ title: Explore Azure Key Vault
 metadata:
   title: Explore Azure Key Vault
   description: "Explore Azure Key Vault"
-  ms.date: 05/11/2022
+  ms.date: 02/06/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/2-key-vault-overview.md)]
