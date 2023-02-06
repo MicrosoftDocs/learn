@@ -1,3 +1,4 @@
+
 In this exercise you'll learn how to create a simple C\# function that responds to HTTP requests. After creating and testing the code locally in Visual Studio Code you will deploy to Azure.
 
 ## Prerequisites
