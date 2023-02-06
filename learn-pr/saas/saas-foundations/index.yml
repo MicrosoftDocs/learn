@@ -89,6 +89,7 @@ units:
   - learn.saas-foundations.security-and-privacy
   - learn.saas-foundations.sla-and-slo
   - learn.saas-foundations.pricing-models-for-saas
+  - learn.saas-foundations.knowledge-check
   - learn.saas-foundations.summary
 badge:
   uid: learn.saas-foundations.badge
