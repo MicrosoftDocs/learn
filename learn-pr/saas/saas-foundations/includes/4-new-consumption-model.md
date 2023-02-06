@@ -23,7 +23,7 @@ In the next units, you'll learn about this in more details.
 To start with, we need to understand how the consumption model differs from the transaction based model.
 The LAER Model was introduced in the book called "Technology-as-a-Service Playbook" and it consists of 4 phases:
 
-![Diagram illustrates 4 steps of consumption model: Land, Adopt, Expand, Renew.](../media/laer.png)
+![This diagram illustrates 4 steps of consumption model: Land, Adopt, Expand, Renew.](../media/laer.png)
 
 * Land: the phase, which is familiar to those who used to sell traditional licenced-based software - the first phase of landing the customer with your solution. 
 * Adoption: next, you need to ensure that the customer was able to successfully use it, or adopt it and gain value, after which you'll be able to expand with other offerings.
@@ -51,7 +51,7 @@ Low adoption rates lead to high customer churn rates, thus investments in sales 
 
 As we can see, in order for this cycle to function we need to make sure that the level of churn is low, and level of adoption is high. This way improving adoption will improve revenue growth. And Predictable revenue growth will improve company financial results and evaluation.
 
-![Illustrates connection of Adoption to Financial results by impacting revenue growth.](../media/adoption-and-revenue.png)
+![This diagram illustrates connection of adoption to financial results by impacting revenue growth.](../media/adoption-and-revenue.png)
 
 As you can see, adoption plays a VERY important part in SaaS.
 
@@ -61,7 +61,7 @@ Understanding customer success becomes crucial to the value generation of the co
 
 What has happened is that the definition of customer success has gone from the company delivering a tool (which really isn't success) to an improvement of something by X% by the use of the service.
 
-![This image illustrates the shift from focus on the product feature towards success of customers.](../media/customer-success.png)
+![This screenshot illustrates the shift from focus on the product feature towards success of customers.](../media/customer-success.png)
 
 Based on these definitions above you can set possible targets for Customer Success organization. The main objective of this organization should be making sure that customers are adopting the service and gather value from using it. 
 

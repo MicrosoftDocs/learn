@@ -45,7 +45,7 @@ In the "Basic" plan additional functionality is included, such as:
 
 "Premium" plan has more extensive capabilities on top of the Basic plan, such as dedicated support service. 
 
-![This image illustrates the progressive pricing for 3 Contoso packages which include different functionality: Free, Basic 50$ per month, and Premium 1000$ per month.](../media/pricing-packaging.png)
+![This diagram illustrates the progressive pricing for 3 Contoso packages which include different functionality: Free, Basic 50$ per month, and Premium 1000$ per month.](../media/pricing-packaging.png)
 
 As you can see, Contoso tried to align their pricing to the most valuable features their customers are using within Contoso solution.
 

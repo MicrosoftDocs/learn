@@ -1,4 +1,4 @@
-# What SaaS really is?
+## What SaaS really is?
 
 One of the most popular forms of cloud computing is Software as a Service, or SaaS, and is often used daily by consumers and for business.
 
@@ -6,7 +6,7 @@ SaaS provides a complete software solution that you purchase on a pay-as-you-go 
 
 The idea of success behind SaaS model is not new, and the term which you might hear often, is Economies of scale. In production it is also called subtractive manufacturing – the more you produce, the higher margins it's possible to achieve.
 
-![Illustrates declining price per unit based on the amount of units produced.](../media/economies-of-scale.png) 
+![This graph illustrates declining price per unit based on the amount of units produced.](../media/economies-of-scale.png) 
 
 
 
@@ -50,19 +50,19 @@ Due to several reasons Contoso decided to focus initially on B2B model, in parti
 
 This way, the identified market segment could look something like this:
 
-#### Buying behaviors:
+#### Buying behaviors
 
 - Customers search for service online and purchase online
 
 - Requires free trial in order for user to try out the design and decide if it's suitable
 
-#### Company size, industry:
+#### Company size, industry
 
 - Small size companies
 
 - Legal industry
 
-#### Technical requirements:
+#### Technical requirements
 
 For the sake of example, requirements are simplified, but here are some examples to give you an idea:
 
@@ -71,7 +71,7 @@ For the sake of example, requirements are simplified, but here are some examples
 - Due to collection of the sensitive data, Contoso will have to comply with several regulations, such as UK GDPR
 - Provide capability for customers to book appointment with lawyer 
 
-#### Complexity:
+#### Complexity
 
 - AI model was trained on the set of simple landing pages and will be able to handle well designs for websites which are not too complex and mostly are informational and used for booking time slots.
 - Complexity of customers business should be low.
