@@ -1,3 +1,4 @@
+
 Each of the consistency models can be used for specific real-world scenarios. Each provides precise availability and performance tradeoffs and is backed by comprehensive SLAs. The following simple considerations will help you make the right choice in many common scenarios.
 
 ## Configure the default consistency level
