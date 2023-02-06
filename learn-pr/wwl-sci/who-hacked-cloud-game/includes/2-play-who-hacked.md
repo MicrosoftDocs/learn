@@ -1,16 +1,16 @@
 ## Play Who Hacked?
 
-:::image type="content" source="../media/playing-the-game.png" alt-text="Images of a security professionals and the Who Hacked? game leads.":::
+:::image type="content" source="../media/playing-the-game.png" alt-text="Images of a security professional and the Who Hacked? game leads.":::
 
 Best for you Organics has been hacked!
-You are tasked with assisting the CIO in investigating the source of a confidential leaked file.
+You're tasked with assisting the CIO in investigating the source of a confidential leaked file.
 
-After launching the game, and completing the introduction, playing the game consists of:
+After you launch the game, and complete the introduction, playing the game consists of:
 
 - Select Leads and complete each activity.
 - Complete the ***Morning Investigation*** by
   - Completing all four leads
-  - Leverage the Evidence map to review facts collected
+  - Use the Evidence map to review facts collected
   - Answer questions based on what you found.
   - Review the Learning Outcomes
 
