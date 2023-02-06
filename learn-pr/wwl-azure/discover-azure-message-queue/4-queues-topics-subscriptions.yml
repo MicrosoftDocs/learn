@@ -4,13 +4,11 @@ title: Discover Service Bus queues, topics, and subscriptions
 metadata:
   title: Discover Service Bus queues, topics, and subscriptions
   description: "Discover Service Bus queues, topics, and subscriptions"
-  ms.date: 12/01/2022
+  ms.date: 02/06/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/4-queues-topics-subscriptions.md)]
