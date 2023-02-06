@@ -4,7 +4,7 @@ Azure Synapse Pipelines enable you to create, run, and manage data integration a
 
 ![Diagram of a pipeline activity running a Spark notebook.](../media/spark-notebook.png)
 
-It's common in big data analytics solutions for data engineers to use Spark notebooks for initial data exploration and interactive experimentation when designing data transformation processes. When the appropriate transformation logic has been developed in a notebook, you can perform some final code optimization and refactoring for maintainability, and then include the notebook in a pipeline that can be run on a schedule or in response to an event (such as new data files being loaded into the data lake).
+It's common in big data analytics solutions for data engineers to use Spark notebooks for initial data exploration and interactive experimentation when designing data transformation processes. When the transformation logic has been completed, you can perform some final code optimization and refactoring for maintainability, and then include the notebook in a pipeline. The pipeline can then be run on a schedule or in response to an event (such as new data files being loaded into the data lake).
 
 The notebook is run on a Spark pool, which you can configure with the appropriate compute resources and Spark runtime for your specific workload. The pipeline itself is run in an integration runtime that orchestrates the activities in the pipeline, coordinating the external services needed to run them.
 

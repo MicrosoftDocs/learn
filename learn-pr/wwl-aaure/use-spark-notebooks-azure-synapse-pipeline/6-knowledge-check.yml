@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/03/2023
+  ms.date: 02/06/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
@@ -36,14 +36,14 @@ quiz:
     - content: "Script activity"
       isCorrect: false
       explanation: "Incorrect: A Script activity is used to run a script."
-  - content: "A notebook cell contains variable declarations. How can you use these as parameters?"
+  - content: "A notebook cell contains variable declarations. How can you use them as parameters?"
     choices:
     - content: "Add a %%Spark magic at the beginning of the cell"
       isCorrect: false
       explanation: "Incorrect: a %%Spark magic would configure the cell to be run as Scala code."
-    - content: "Toggle the *Parameters cell* setting for the cell."
+    - content: "Toggle the *Parameters cell* setting for the cell"
       isCorrect: true
       explanation: "Correct: Toggle the Parameters cell option to use variables as parameters."
-    - content: "Use the *var* keyword for each variable declaration."
+    - content: "Use the *var* keyword for each variable declaration"
       isCorrect: false
       explanation: "Incorrect: The var keyword is used to declare variables in Scala."

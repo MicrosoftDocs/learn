@@ -1,6 +1,6 @@
 
 
-Parameters enable you to dynamically pass values for variables in the notebook each time it is run. This approach provides flexibility, enabling you to adjust the logic encapsulated in the notebook for each run.
+Parameters enable you to dynamically pass values for variables in the notebook each time it's run. This approach provides flexibility, enabling you to adjust the logic encapsulated in the notebook for each run.
 
 ## Create a *parameters* cell in the notebook
 
@@ -8,7 +8,7 @@ To define the parameters for a notebook, you declare and initialize variables in
 
 ![Screenshot of a parameters cell in a notebook](../media/parameters-cell.png)
 
-Initializing a variable ensures that it has a default value, which will be used if the parameter is not set in the notebook activity.
+Initializing a variable ensures that it has a default value, which will be used if the parameter isn't set in the notebook activity.
 
 ## Set *base parameters* for the notebook activity
 
