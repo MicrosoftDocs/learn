@@ -15,7 +15,6 @@ Azure Active Directory is a part of [Exam AZ-500: Microsoft Azure Security Engin
 Manage identity and access (30-35%)
 
  -  Manage access control
-    
      -  configure subscription and resource permissions
      -  configure resource group permissions
      -  configure custom RBAC roles

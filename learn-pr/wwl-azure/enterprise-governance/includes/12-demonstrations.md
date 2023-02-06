@@ -15,7 +15,7 @@ In this task, you will access the lab environment and the Azure portal.
 5.  Notice you can **View account** and **Switch directory**.
 6.  **Switch directory** lets you view **My permissions** and **View my bill**.
 7.  Select the **Settings** icon (top right menu bar - cog icon).
-8.  Review the **Portal settings** including the **General** and **Language &amp; region** settings.
+8.  Review the **Portal settings** including the **General** and **Language & region** settings.
 9.  Use the **Search resources, services, and docs** textbox to search for **Virtual machines**.
 10. You can search for not only general Azure resources but specifically named resources.
 11. Select Use the **Portal menu** (left corner three bars icon).
