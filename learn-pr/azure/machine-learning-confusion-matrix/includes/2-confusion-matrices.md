@@ -22,7 +22,7 @@ A label for three categories is similar:
 
 This tells us that there are 200 samples that are ‘person’, 400 that are ‘animal’, and 100 that are ‘tree’.
 
-As categorical labels are much simpler, we can often simple show these as simple tables. The two graphs above would appear like so:
+As categorical labels are much simpler, we can often show these as simple tables. The two graphs above would appear like so:
 
 | Label      | False       |  True      |
 |------------|-------------|------------|
