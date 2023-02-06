@@ -1,9 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.saas-technical-foundations.knowledge-check
+uid: learn.saas-foundations.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
   ms.date: 2/6/2023
   author: kostinams
   ms.author: irkostin
@@ -53,10 +52,10 @@ quiz:
     choices:
     - content: "SaaS provider and Microsoft."
       isCorrect: true
-      explanation: "While Microsoft makes sure that Azure services are secure and compliant with all required regulations, it is also SaaS provider's responsibility to comply with required regulations and make sure that developed software is upto the latest security standards."
+      explanation: "While Microsoft makes sure that Azure services are secure and compliant with all required regulations, it's also SaaS provider's responsibility to comply with required regulations and make sure that developed software is upto the latest security standards."
     - content: "Microsoft only."
       isCorrect: false
-      explanation: "While Microsoft makes sure that Azure is secure and compliant with all required regulations, it is SaaS provider's responsibility to comply with required regulations and make sure that developed software is upto the latest security standards."
+      explanation: "While Microsoft makes sure that Azure is secure and compliant with all required regulations, it's SaaS provider's responsibility to comply with required regulations and make sure that developed software is upto the latest security standards."
     - content: "SaaS provider only."
       isCorrect: false
       explanation: "When SaaS providers build products on Azure, they utilize Azure services and store data. Azure services are compliant with all required regulations and provide secure platform for development."
@@ -64,7 +63,7 @@ quiz:
     choices:
     - content: "No chance for expansion if the product isn't adopted."
       isCorrect: true
-      explanation: "Without customers adopting the product, it is impossible to upsell them new features or functionality."
+      explanation: "Without customers adopting the product, it's impossible to upsell them new features or functionality."
     - content: "Adoption reduces churn, thus has high impact on overall financial results."
       isCorrect: true
       explanation: "The higher adoption, the lower churn rates. Low churn and high adoption contribute to revenue growth which directly impacts financial results of the company."
