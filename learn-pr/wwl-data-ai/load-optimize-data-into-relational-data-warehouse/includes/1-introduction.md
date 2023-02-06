@@ -1,4 +1,4 @@
 
-A data engineer is one of the primary roles responsible for loading and optimizing queries for cleansing, matching, and refinement of data. In this section, those elements will be discussed in context of Azure Synapse Analytics and the impact of good design in a distributed architecture.
+When loading data into a data warehouse, it's important for the data engineer to understand some of the best ways to accomplish this depending upon the type of data storage being loaded as well as the structure of the destination tables.
 
-There are many technologies you can use to load data, including pipelines created using Azure Synapse Analytics or Azure Data Factory, SQL Server Integration Services packages, or command line tools like the bulk copy program (BCP). In this unit, we'll focus on SQL-based techniques to ingest data from a data lake.
+There are many technologies you can use to load data, including pipelines created using Azure Synapse Analytics or Azure Data Factory, SQL Server Integration Services packages, or command line tools like the bulk copy program (BCP). In this module, we'll focus on SQL-based techniques to ingest data from a data lake.
