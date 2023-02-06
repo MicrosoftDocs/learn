@@ -13,7 +13,7 @@ While the Azure portal provides intuitive graphical user interface (GUI), an ARM
 > [!NOTE]
 >
 > - As one or more sites need to be created before a private mobile network can be put into operation, the mobile network and site deployment tasks are introduced in the *Deploy an Azure Private 5G Core service* module.
-> - Monitoring the health of a private mobile network and troubleshooting network issues are important management tasks. These tasks are introduced separately in the *Monitor the Azure Private 5G Core service* module.
+> - Monitoring the health of a private mobile network and troubleshooting network issues are important management tasks. These tasks are introduced separately in the [Monitor the Azure Private 5G Core service](/training/modules/monitor-azure-private-5g-core-service/) module.
 
 ## Azure resources used by management tasks
 
