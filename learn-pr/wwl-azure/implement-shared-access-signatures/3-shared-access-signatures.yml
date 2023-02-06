@@ -4,13 +4,11 @@ title: Choose when to use shared access signatures
 metadata:
   title: Choose when to use shared access signatures
   description: "Choose when to use shared access signatures"
-  ms.date: 01/20/2023
+  ms.date: 02/06/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/3-shared-access-signatures.md)]
