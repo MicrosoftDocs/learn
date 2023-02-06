@@ -1,3 +1,4 @@
+
 Azure Cosmos DB offers multiple database APIs, which include:
 
 * Azure Cosmos DB for NoSQL
