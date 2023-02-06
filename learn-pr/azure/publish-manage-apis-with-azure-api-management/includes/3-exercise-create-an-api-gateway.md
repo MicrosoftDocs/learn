@@ -6,7 +6,7 @@ Here, you'll create an API gateway to publish an inventory app that exposes an O
 
 ## Deploy the ShoeCompany Web API
 
-You have developed a .NET Core app that generates inventory and product information. The app includes Swashbuckle to generate OpenAPI Swagger documentation.
+You've developed a .NET Core app that generates inventory and product information. The app includes Swashbuckle to generate OpenAPI Swagger documentation.
 
 To save time, let's start by running a script to host our RESTful API in Azure. The script performs the following steps:
 
@@ -68,9 +68,9 @@ The final task in this exercise is to create an API gateway in the Azure portal.
     | --------- | --------- |
     | **Project details** |
     | Subscription | Concierge Subscription |
-    | Resource group | Select the resource group `<rgn>[sandbox resource group name]</rgn>` |
+    | Resource group | Select the resource group <rgn>[sandbox resource group name]</rgn> |
     | **Instance details** |
-    | Region | Select one of the following: North Central US, West US, West Europe, North Europe, Southeast Asia, and Australia East. The Consumption tier used in this exercise is available in these regions. |
+    | Region | Select one of the following regions: North Central US, West US, West Europe, North Europe, Southeast Asia, and Australia East. The Consumption tier used in this exercise is available in these regions. |
     | Resource Name | `apim-NorthWindShoes<random number>`, replacing `random number` with your own series of numbers to ensure that the name is globally unique. |
     | Organization Name | `NorthWindShoes`. This name is used to identify your resources in the developer portal. |
     | Administrator Email | If it doesn't display your Azure account email address by default, select your email from the dropdown list. |
