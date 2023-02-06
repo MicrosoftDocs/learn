@@ -1,3 +1,4 @@
+
 In this module you learned how to:
 
 * Identify the different types of storage accounts and the resource hierarchy for blob storage.
