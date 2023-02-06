@@ -124,9 +124,9 @@ The architecture consists of the following workflow:
 - **Azure Stack**. Is a portfolio of products that extend Azure services and capabilities to your environment of choice, from the datacenter to edge locations and remote offices. Systems that you integrate with Azure Stack typically utilize racks of four to sixteen servers, built by trusted hardware partners and delivered straight to your datacenter.
 - **Azure Monitor**. Collects monitoring telemetry from a variety of on-premises and Azure sources. Management tools, such as those in Microsoft Defender for Cloud and Azure Automation, also push log data to Azure Monitor.
 - **Log Analytics workspace**. Azure Monitor stores log data in a Log Analytics workspace, which is a container that includes data and configuration information.
-- **Log Analytics agent**. The Log Analytics agent collects monitoring data from the guest operating system and VM workloads in Azure, other cloud providers, and on-premises. The Log Analytics Agent supports Proxy configuration and, typically in this scenario, a Microsoft Operations Management Suite (OMS) Gateway acts as proxy.
+- **Azure Monitoring Agent**. The Azure Monitoring Agent collects monitoring data from the guest operating system and VM workloads in Azure, other cloud providers, and on-premises. The Azure Monitoring Agent supports Proxy configuration and, typically in this scenario, a Microsoft Operations Management Suite (OMS) Gateway acts as proxy.
 - **On-premises network**. This is the firewall configured to support HTTPS egress from defined systems.
-- **On-premises Windows and Linux systems**. Systems with the Log Analytics Agent installed.
+- **On-premises Windows and Linux systems**. Systems with the Azure Monitoring Agent installed.
 - **Azure Windows and Linux VMs**. Systems on which the Microsoft Defender for Cloud monitoring agent is installed.
 
 For full details on this reference architecture, see [Monitor hybrid security using Microsoft Defender for Cloud and Microsoft Sentinel](/azure/architecture/hybrid/hybrid-security-monitoring)
