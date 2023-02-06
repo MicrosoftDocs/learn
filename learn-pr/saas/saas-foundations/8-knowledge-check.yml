@@ -42,13 +42,13 @@ quiz:
     choices:
     - content: "Service-Level-Agreement is the same as Service-Level-Objective."
       isCorrect: false
-      explanation: "SLA describe software provider's commitments for uptime and connectivity. If software provider doesn't achieve and maintain the Service Levels for each Service as described in this SLA, then customers are eligible for compensation. Service level objectives (SLO) are measurable goals set on a few of key customer-centric service level indicators (SLIs). They measure your customer's experience of a business or infrastructure workload."
+      explanation: "SLA describes software provider's commitments for uptime and connectivity. If software provider doesn't achieve and maintain the Service Levels for each Service as described in this SLA, then customers are eligible for compensation. Service level objectives (SLO) are measurable goals set on a few of key customer-centric service level indicators (SLIs). They measure your customer's experience of a business or infrastructure workload."
     - content: "Service-Level-Agreement consists of different Service-Level-Objectives."
       isCorrect: false
-      explanation: "SLA describe software provider's commitments for uptime and connectivity. If software provider doesn't achieve and maintain the Service Levels for each Service as described in this SLA, then customers are eligible for compensation. Service level objectives (SLO) are measurable goals set on a few of key customer-centric service level indicators (SLIs). They measure your customer's experience of a business or infrastructure workload."
+      explanation: "SLA describes software provider's commitments for uptime and connectivity. If software provider doesn't achieve and maintain the Service Levels for each Service as described in this SLA, then customers are eligible for compensation. Service level objectives (SLO) are measurable goals set on a few of key customer-centric service level indicators (SLIs). They measure your customer's experience of a business or infrastructure workload."
     - content: "SLA is a legal agreement, while SLO is a goal which is used by development team."
       isCorrect: true
-      explanation: "SLA describe software provider's commitments for uptime and connectivity. If software provider doesn't achieve and maintain the Service Levels for each Service as described in this SLA, then customers are eligible for compensation. Service level objectives (SLO) are measurable goals set on a few of key customer-centric service level indicators (SLIs). They measure your customer's experience of a business or infrastructure workload."
+      explanation: "SLA describes software provider's commitments for uptime and connectivity. If software provider doesn't achieve and maintain the Service Levels for each Service as described in this SLA, then customers are eligible for compensation. Service level objectives (SLO) are measurable goals set on a few of key customer-centric service level indicators (SLIs). They measure your customer's experience of a business or infrastructure workload."
   - content: "Who is responsible for security and privacy when building SaaS solution on Azure?"
     choices:
     - content: "SaaS provider and Microsoft."
@@ -59,7 +59,7 @@ quiz:
       explanation: "While Microsoft makes sure that Azure is secure and compliant with all required regulations, it is SaaS provider's responsibility to comply with required regulations and make sure that developed software is upto the latest security standards."
     - content: "SaaS provider only."
       isCorrect: false
-      explanation: "When SaaS providers build products on Azure, they utilize Azure services and store data. Azure services are compliant with all required regulations and provide secure plarform for development."
+      explanation: "When SaaS providers build products on Azure, they utilize Azure services and store data. Azure services are compliant with all required regulations and provide secure platform for development."
   - content: "Why adoption is in the core of SaaS?"
     choices:
     - content: "No chance for expansion if the product isn't adopted."
@@ -67,7 +67,7 @@ quiz:
       explanation: "Without customers adopting the product, it is impossible to upsell them new features or functionality."
     - content: "Adoption reduces churn, thus has high impact on overall financial results."
       isCorrect: true
-      explanation: "The higher adoption, the lower churn rates. Low churn and hight adoption contribute to revenue growth which directly impacts financial results of the company."
+      explanation: "The higher adoption, the lower churn rates. Low churn and high adoption contribute to revenue growth which directly impacts financial results of the company."
     - content: "Adoption creates more leads on the Land phase in LAER model."
       isCorrect: false
       explanation: "Adoption comes into play starting from Adopt phase in the LAER model."
