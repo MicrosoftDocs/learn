@@ -67,7 +67,7 @@ In this section you'll open your terminal and create some variables that will be
     code .
     ```
 
-1. Open the terminal in VS Code by selecting **Terminal > New Terminal** in the menu bar and run the following commands to create the console app and add the **Azure.Messaging.ServiceBus** package.
+1. Open the terminal in Visual Studio Code by selecting **Terminal > New Terminal** in the menu bar and run the following commands to create the console app and add the **Azure.Messaging.ServiceBus** package.
 
     ```bash
     dotnet new console
@@ -154,7 +154,7 @@ In this section you'll open your terminal and create some variables that will be
 1. Log in to the Azure portal and navigate to your Service Bus namespace. Select the **Service Bus Explorer** in the Service Bus Queue navigation pane.
 1. Select **Peek from start** and the three messages that were sent will appear.
 
-    :::image type="content" source="../media/peek-messages.png" alt-text="Decorative":::
+    :::image type="content" source="../media/peek-messages.png" alt-text="Decorative.":::
 
 
 ## Update project to receive messages to the queue
