@@ -24,17 +24,20 @@ levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/m
   - beginner
 roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
   - developer
-products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
+products:
+- microsoft-sentinel
+- defender-for-cloud
+- mdatp
+- microsoft-defender # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
   {{products}}
 subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
   - cloud-computing
+  - threat-protection
+  - cloud-security
 units:
 - learn.wwl.who-hacked-cloud-game.introduction
-- learn.wwl.who-hacked-cloud-game.learning-content
-- learn.wwl.who-hacked-cloud-game.exercise
-- learn.wwl.who-hacked-cloud-game.learning-content
-- learn.wwl.who-hacked-cloud-game.exercise
-- learn.wwl.who-hacked-cloud-game.knowledge-check
+- learn.wwl.who-hacked-cloud-game.play-who-hacked
+- learn.wwl.who-hacked-cloud-game.keep-playing
 - learn.wwl.who-hacked-cloud-game.summary
 badge:
   uid: learn.wwl.who-hacked-cloud-game.badge
