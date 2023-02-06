@@ -25,12 +25,12 @@ quiz:
       explanation: "That's incorrect. Semi-structured data is typically stored in NoSQL data stores, such as Azure Cosmos DB."
     - content: "Unstructured"
       isCorrect: false
-      explanation: "That's incorrect. Unstructured data may be stored in a relational database, but a table is not unstructured."
+      explanation: "That's incorrect. Unstructured data may be stored in a relational database, but a table isn't unstructured."
   - content: "In a data lake, data is stored in?"
     choices:
     - content: "Relational tables"
       isCorrect: false
-      explanation: "That's incorrect. A data lake does not store data in relational tables."
+      explanation: "That's incorrect. A data lake doesn't store data in relational tables."
     - content: "Files"
       isCorrect: true
       explanation: "That's correct. Data in a data lake is stored in files."
