@@ -1,6 +1,6 @@
 
 
-![Diagram of the flow of a typical enterprise data analytics solution.](../media/3-data-engineering-in-azure.png)
+![Diagram of the flow of a typical enterprise data analytics solution.](../media/3-data-engineering-azure.png)
 
 Microsoft Azure includes many services that can be used to implement and manage data engineering workloads.
 
