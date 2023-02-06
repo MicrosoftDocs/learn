@@ -1,3 +1,4 @@
+
 Azure Cosmos DB uses partitioning to scale individual containers in a database to meet the performance needs of your application. 
 
 After completing this module, you'll be able to:
