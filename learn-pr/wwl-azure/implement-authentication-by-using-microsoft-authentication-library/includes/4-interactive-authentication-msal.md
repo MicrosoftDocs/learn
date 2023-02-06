@@ -1,3 +1,4 @@
+
 In this exercise you'll learn how to perform the following actions:
 
 * Register an application with the Microsoft identity platform
