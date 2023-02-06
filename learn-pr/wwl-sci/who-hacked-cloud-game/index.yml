@@ -28,12 +28,13 @@ products:
 - microsoft-sentinel
 - defender-for-cloud
 - mdatp
-- microsoft-defender # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
-  {{products}}
+- microsoft-defender
+- microsoft-purview
 subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
   - cloud-computing
   - threat-protection
   - cloud-security
+  - insider-risk
 units:
 - learn.wwl.who-hacked-cloud-game.introduction
 - learn.wwl.who-hacked-cloud-game.play-who-hacked
