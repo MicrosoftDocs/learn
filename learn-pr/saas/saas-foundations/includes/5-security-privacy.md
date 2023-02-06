@@ -16,7 +16,7 @@ Just to name a few:
 
 Besides making sure to comply with the regulations, it is important to put the required security controls and procedures in place. For SaaS companies, like other software companies, it is recommended to follow methodologies, such as SDLC (Security Development Lifecycle) to make sure that security is part of the ongoing product development process.
 
-The Security Development Lifecycle (SDL) consists of a set of practices that support security assurance and compliance requirements. The SDL helps developers build more secure software by reducing the number and severity of vulnerabilities in software, while reducing development cost. Here you can find more about which practices Microsoft defines as part of the SDLC : [Microsoft Security Development Lifecycle Practices](https://www.microsoft.com/securityengineering/sdl/practices) 
+The Security Development Lifecycle (SDL) consists of a set of practices that support security assurance and compliance requirements. The SDL helps developers build more secure software by reducing the number and severity of vulnerabilities in software, while reducing development cost. Here you can find more about which practices Microsoft defines as part of the SDLC: [Microsoft Security Development Lifecycle Practices](https://www.microsoft.com/securityengineering/sdl/practices) 
 
 When using Microsoft Azure as a cloud provider for your solution, it’s easy to benefit from all the work that Microsoft is already doing to protect your and your customers' data and comply with the latest regulations. 
 
