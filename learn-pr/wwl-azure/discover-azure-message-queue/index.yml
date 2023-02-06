@@ -2,7 +2,7 @@
 uid: learn.wwl.discover-azure-message-queue
 metadata:
   title: Discover Azure message queues
-  description: "<div|<span style=\"color:rgb(34, 34, 34);font-family:&quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, Verdana;font-size:12px;display:inline !important;\"|Learn how to integrate Azure Service Bus and Azure Queue storage in to your solution, and how to send and receive message by using .NET.</span|  </div|"
+  description: "Discover Azure message queues"
   ms.date: 02/06/2023
   author: wwlpublish
   ms.author: jeffko
