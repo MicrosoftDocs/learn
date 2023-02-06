@@ -39,5 +39,5 @@ DROP TABLE #TmpStageDate
 
 ```
 
->[!TIP] 
->Scripting this in SQL may be time-consuming in a dedicated SQL pool – it may be more efficient to prepare the data in Microsoft Excel or an external script and import it using the COPY statement
+> [!TIP] 
+> Scripting this in SQL may be time-consuming in a dedicated SQL pool – it may be more efficient to prepare the data in Microsoft Excel or an external script and import it using the COPY statement
