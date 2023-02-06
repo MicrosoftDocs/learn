@@ -1,3 +1,4 @@
+
 Use the wealth of data in Microsoft Graph to build apps for organizations and consumers that interact with millions of users.
 
 After completing this module, you'll be able to:

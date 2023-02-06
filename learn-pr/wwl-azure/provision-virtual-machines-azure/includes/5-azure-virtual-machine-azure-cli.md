@@ -1,3 +1,4 @@
+
 In this exercise you'll create a Linux virtual machine by performing the following operations using Azure CLI commands:
 
 * Create a resource group and a virtual machine

@@ -20,6 +20,7 @@ roles:
 - security-engineer
 - solution-architect
 products:
+- azure
 - defender-for-cloud
 - defender-for-cloud-apps
 - defender-identity

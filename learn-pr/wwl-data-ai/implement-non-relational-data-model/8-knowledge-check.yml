@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/17/2022
+  ms.date: 02/06/2023
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
@@ -25,7 +25,7 @@ quiz:
     - content: "Read or updated independently"
       isCorrect: false
       explanation: "That's incorrect. This is especially false with large documents. Updates in Azure Cosmos DB require the entire item to be replaced. If a document has a few properties that are frequently updated alongside a large number of mostly static properties, it's much more efficient to split the document into two."
-  - content: "Consider the following scenario: Your company has customers across four countries/regions, with hundreds of thousands of customers for countries/regions 1 and 2, and a few thousand customers for countries/regions 3 and 4.  Requests for each country/region total approximately 50,000 RU/s every hour of the day. Your application team proposes to use ``countryId`` as the partition key for this container. Which of the following statements is true?"
+  - content: "Consider the following scenario: Your company has customers across four countries/regions, with hundreds of thousands of customers for countries/regions 1 and 2, and a few thousand customers for countries/regions 3 and 4.  Requests for each country/region total approximately 50,000 RU/s every hour of the day. Your application team proposes to use ``countryId`` as the partition key for this container. This is a write-heavy application with no TTL being used. Which of the following statements is true?"
     choices:
     - content: "This partition key will prevent throughput hot partitions."
       isCorrect: false

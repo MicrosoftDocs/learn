@@ -1,4 +1,4 @@
-In this exercise you'll create a console app to perform the following operations in Azure Cosmos DB:
+In this exercise you'll create a console **app** to perform the following operations in Azure Cosmos DB:
 
 * Connect to an Azure Cosmos DB account
 * Create a database
