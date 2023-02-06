@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.data-ai.introduction-to-azure-data-lake-storage.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/03/2023
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Azure Data Lake Storage Gen2 stores data in…"
+    choices:
+    - content: "A document database hosted in Azure Cosmos DB."
+      isCorrect: false
+      explanation: "Incorrect. Azure Data Lake Storage Gen2 does not store data in Azure Cosmos DB."
+    - content: "An HDFS-compatible file system hosted in Azure Storage."
+      isCorrect: true
+      explanation: "Correct. Azure Data Lake Storage Gen2 stores data in an HDFS compatible file system in an Azure Storage blob container."
+    - content: "A relational data warehouse hosted in Azure Synapse Analytics."
+      isCorrect: false
+      explanation: "Incorrect. Azure Data Lake Storage Gen2 does not store data in an Azure Synapse Analytics SQL database."
+  - content: "What option must you enable to use Azure Data Lake Storage Gen2?"
+    choices:
+    - content: "Global replication"
+      isCorrect: false
+      explanation: "Incorrect. Global replication does not enable Azure Data Lake Storage Gen2 containers."
+    - content: "Data encryption"
+      isCorrect: false
+      explanation: "Incorrect. data encryption does not enable Azure Data Lake Storage Gen2 containers."
+    - content: "Hierarchical namespace"
+      isCorrect: true
+      explanation: "Correct. To enable Azure Data Lake Storage Gen2 containers, you must turn on the Hierarchical namespace option."

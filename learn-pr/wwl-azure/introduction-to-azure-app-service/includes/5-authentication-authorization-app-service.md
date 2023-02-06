@@ -1,3 +1,4 @@
+
 Azure App Service provides built-in authentication and authorization support, so you can sign in users and access data by writing minimal or no code in your web app, API, and mobile back end, and also Azure Functions.
 
 ## Why use the built-in authentication?
