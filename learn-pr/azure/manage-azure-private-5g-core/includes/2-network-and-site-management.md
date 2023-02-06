@@ -49,7 +49,7 @@ To add or modify a slice for an existing private mobile network, take these step
 > - Network slices are only supported in 5G networks. For 4G networks, all UEs are assigned to the slice with an SST value of 1 and no SD.
 > - You can't delete a slice that is currently used by other components.
 
-For detailed instructions on configuring network slices, see [Create and manage network slices](/azure/private-5g-core/create-manage-network-slices).
+For detailed instructions on configuring network slices, see [Create and manage network slices - Azure portal](/azure/private-5g-core/create-manage-network-slices) and [Create a slice using an ARM template](/azure/private-5g-core/create-slice-arm-template).
 
 ## Modify the packet core instance in a site
 
