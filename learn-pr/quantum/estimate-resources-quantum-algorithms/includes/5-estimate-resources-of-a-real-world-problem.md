@@ -5,7 +5,7 @@ However, there are more ways to create secure passwords and conceal confidential
 
 One quantum algorithm with superquadratic speedup and for which the cost of error correction is well studied is Shor’s factoring algorithm. In [Explore the key concepts of quantum computing by using Q#](/training/modules/qsharp-explore-key-concepts-quantum-computing/8-introduction-quantum-algorithms/?azure-portal=true) module, you can find an overview of Shor's algorithm application in cryptography.
 
-Some of today’s classical cryptographic schemes that are based on assumptions of the difficulty of factoring large numbers. Estimating the resources required for Shor’s algorithm is important for assessing the vulnerability of such cryptographic schmes. 
+Some of today’s classical cryptographic schemes that are based on assumptions of the difficulty of factoring large numbers. Estimating the resources required for Shor’s algorithm is important for assessing the vulnerability of such cryptographic schemes. 
 
 
 ## Estimate the resources with Azure Quantum
@@ -21,7 +21,7 @@ Create a new Notebook in your workspace as you did in the previous step.
 1. In **Kernel Type**, select **IPython**.
 1. Type a name for the file, for example *factoringResourceEstimator.ipynb*, and click **Create file**.
 
-First, we need to import several Python classes and functions from `azure.quantum` and `qiskit`. We are not using Qiskit to build quantum circuits, however, we are using `AzureQuantumJob` and `job_monitor`, which are built on top of the Qiskit ecosystem.
+First, we need to import several Python classes and functions from `azure.quantum` and `qiskit`. We aren't using Qiskit to build quantum circuits, however, we're using `AzureQuantumJob` and `job_monitor`, which are built on top of the Qiskit ecosystem.
 
 ```python
 from azure.quantum.qiskit import AzureQuantumProvider
@@ -80,7 +80,7 @@ def resource_estimation_job_from_qir(provider: AzureQuantumProvider, bitcode: by
     )
 ```
 
-Based on this function, we create another function that creates a resource estimation job directly from precomputed logical resource estimates. This function internally creates a small QIR program that leverages the low-level QIR function `__quantum__qis__applyunimplemented__body` that allows to inject logical resource counts to a list of qubits.
+Based on this function, we create another function that creates a resource estimation job directly from precomputed logical resource estimates. This function internally creates a small QIR program that uses the low-level QIR function `__quantum__qis__applyunimplemented__body` that allows to inject logical resource counts to a list of qubits.
 
 ```python
 def resource_estimation_job_from_logical_counts(
@@ -119,7 +119,7 @@ def resource_estimation_job_from_logical_counts(
 
 ### Running experiments
 
-As configurations for the experiment we use all six pre-defined qubit parameters. As pre-defined QEC scheme we are using `surface_code` with gate-based qubit parameters, and `floquet_code` with Majorana based qubit parameters. For all experiments, we assume an error budget of 1/3.
+As configurations for the experiment we use all six pre-defined qubit parameters. As pre-defined QEC scheme we use `surface_code` with gate-based qubit parameters, and `floquet_code` with Majorana based qubit parameters. For all experiments, we assume an error budget of 1/3.
 
 ```python
 experiments = [
@@ -132,7 +132,7 @@ experiments = [
 ]
 ```
 
-Next, we are creating a resource estimation job based on logical resource counts that we have extracted for the pre-computed for the 2048-bit factoring instance. We wait for each job to finish and push the extracted resource estimation results into the `experiment_results list`.
+Next, we're creating a resource estimation job based on logical resource counts that we have extracted for the pre-computed for the 2048-bit factoring instance. We wait for each job to finish and push the extracted resource estimation results into the `experiment_results list`.
 
 ```python
 from ipywidgets import IntProgress, Layout
@@ -165,7 +165,7 @@ for idx, (name, params) in enumerate(experiments):
 
 ### Understanding the results
 
-Finally, we are presenting the experimental results using built-in resource estimation tables as well as a custom summary table. For this purpose, we are creating a reusable `dashboard` function that is creating an HTML display from a pandas data frame and the resource estimation tables.
+Finally, we're presenting the experimental results using built-in resource estimation tables and a custom summary table. For this purpose, we write a reusable `dashboard` function that creates an HTML display from a pandas data frame and the resource estimation tables.
 
 ```python
 def dashboard(experiment_results):
@@ -244,6 +244,6 @@ dashboard(experiment_results)
 
 We see that in the worst scenario, a hacker using gate-based µs qubits (qubits that have operation times in the nanosecond regime such as superconducting qubits) and a surface QEC code would need six years and 37.38 millions of qubits to factor a 2048-bit integer with Shor's algorithm.
 
-If we use a different qubit technology, for example gate-based ns ion qubits and the same surface code, the number of qubits doens't change much, but the runtime became two days in the worst case and 18 hours in the optimistic case. If we change the qubit technology and the QEC code, for example, with Majorana-based qubits, factoring a 2048-bit integer using Shor’s algorithm could be done in hours with an array of 6.25 millions of qubits in the best case scenario. 
+If we use a different qubit technology, for example gate-based ns ion qubits and the same surface code, the number of qubits doesn't change much, but the runtime became two days in the worst case and 18 hours in the optimistic case. If we change the qubit technology and the QEC code, for example, with Majorana-based qubits, factoring a 2048-bit integer using Shor’s algorithm could be done in hours with an array of 6.25 millions of qubits in the best case scenario. 
 
 We can conclude that using Majorana qubits and a Floquet QEC code is the best choice to execute Shor's algorithm and factor a 2048-bit integer password. The space fleet should prepare for future quantum hackers, and even better, be ready to hack our space enemies ourselves!  
