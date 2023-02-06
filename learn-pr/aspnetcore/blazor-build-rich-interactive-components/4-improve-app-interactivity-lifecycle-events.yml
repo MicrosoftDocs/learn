@@ -2,40 +2,39 @@
 uid: learn.build-interactive-components-blazor-web-apps.improve-app-interactivity-lifecycle-events
 title: Improve app interactivity with lifecycle events
 metadata:
-  unitType: learning-content 
+  unitType: learning-content
   title: "Improve app interactivity with lifecycle events"
   description: "Learn how to use lifecycle events to improve the response time in a Blazor app"
-  ms.date: 08/18/2021
-  author: csharpfritz
-  ms.author: jefritz
+  ms.date: 02/02/2023
+  author: IEvangelist
+  ms.author: dapine
   ms.topic: interactive-tutorial
   ms.prod: learning-blazor
-durationInMinutes: 10
+durationInMinutes: 7
 content: |
   [!include[](includes/4-improve-app-interactivity-lifecycle-events.md)]
 quiz:
-    title: Check your knowledge
-    questions:
-    - content: "Which of these is NOT an event in the Blazor component lifecycle?"
+  title: Check your knowledge
+  questions:
+    - content: "Which of these **isn't** an event in the Blazor component lifecycle?"
       choices:
-      - content: "OnInitializedAsync"
-        isCorrect: false
-        explanation: "OnInitializedAsync is the first event that triggers in the lifecycle"
-      - content: "OnPageLoad"
-        isCorrect: true
-        explanation: "OnPageLoad sounds similar to another event in ASP.NET, but is not present in the Blazor component lifecycle"
-      - content: "OnAfterRenderAsync"
-        isCorrect: false
-        explanation: "OnAfterRender is the last event that triggers in the lifecycle and may be triggered multiple times"
-    - content: "Which of these events does NOT trigger the ParametersSetAsync event?"
+        - content: "`OnInitializedAsync`"
+          isCorrect: false
+          explanation: "`OnInitialized` (or `OnInitializedAsync`) is the first event that triggers in the lifecycle"
+        - content: "`OnPageLoad`"
+          isCorrect: true
+          explanation: "`OnPageLoad` sounds similar to another event in ASP.NET, but is not present in the Blazor component lifecycle"
+        - content: "`OnAfterRenderAsync`"
+          isCorrect: false
+          explanation: "`OnAfterRender` (or `OnAfterRenderAsync`) is the last event that triggers in the lifecycle and may be triggered multiple times"
+    - content: "Which of these events **doesn't** trigger the `ParametersSetAsync` event?"
       choices:
-      - content: "Route parameters are set"
-        isCorrect: false
-        explanation: "Assigning route parameters to Parameter properties is one of the core features of the SetParametersAsync method"
-      - content: "Private fields are allocated"
-        isCorrect: true
-        explanation: "Private fields do not interact with values outside of the component and do not trigger the ParametersSetAsync method"
-      - content: "Component Parameters are assigned from another component"
-        isCorrect: false
-        explanation: "Assigning values from another component is a core feature of the SetParametersAsync method"
-        
+        - content: "Route parameters are set"
+          isCorrect: false
+          explanation: "Assigning route parameters to `Parameter` properties is one of the core features of the `SetParametersAsync` method"
+        - content: "Private fields are allocated"
+          isCorrect: true
+          explanation: "Private fields do not interact with values outside of the component and do not trigger the `ParametersSetAsync` method"
+        - content: "Component parameters are assigned from another component"
+          isCorrect: false
+          explanation: "Assigning values from another component is a core feature of the `SetParametersAsync` method"

@@ -2,8 +2,8 @@
 uid: learn.wwl.plan-implement-administer-conditional-access
 metadata:
   title: Plan, implement, and administer Conditional Access
-  description: "Plan, implement, and administer Conditional Access"
-  ms.date: 12/07/2022
+  description: "Conditional Access gives a fine granularity of control over which users can do specific activities, access which resources, and how to ensure data and systems are safe."
+  ms.date: 02/03/2023
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
@@ -31,6 +31,10 @@ roles:
 products:
 - azure
 - azure-active-directory
+- azure-active-directory-domain
+- identity-manager
+- entra
+- entra-workload-identities
 subjects:
 - identity-access
 units:

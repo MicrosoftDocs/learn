@@ -2,10 +2,10 @@
 uid: learn.azure.analyze-data-in-sentinel
 metadata:
   title: Threat detection with Microsoft Sentinel analytics
-  description: Threat detection with Microsoft Sentinel analytics
-  ms.date: 12/15/2020
-  author: cwatson-cat
-  ms.author: cwatson
+  description: "Threat detection with Microsoft Sentinel analytics"
+  ms.date: 01/27/2023
+  author: wwlpublish
+  ms.author: kelawson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Threat detection with Microsoft Sentinel analytics
@@ -24,12 +24,12 @@ prerequisites: |
   - Microsoft Sentinel instance in your Azure subscription
 iconUrl: /training/achievements/analyze-data-in-sentinel.svg
 levels:
-- beginner
+- intermediate
 roles:
-- solution-architect
+- security-operations-analyst
 products:
 - azure
-- azure-sentinel
+- microsoft-sentinel
 subjects:
 - threat-protection
 units:

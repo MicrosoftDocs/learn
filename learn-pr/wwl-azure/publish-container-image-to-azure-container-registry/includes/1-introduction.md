@@ -1,3 +1,4 @@
+
 Azure Container Registry (ACR) is a managed, private Docker registry service based on the open-source Docker Registry 2.0. Create and maintain Azure container registries to store and manage your private Docker container images.
 
 After completing this module, you'll be able to:

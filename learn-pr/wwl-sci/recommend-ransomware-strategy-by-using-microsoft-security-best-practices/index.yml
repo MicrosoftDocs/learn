@@ -29,6 +29,7 @@ products:
 - azure-active-directory
 - azure-bastion
 - defender-office365
+- mdatp
 subjects:
 - cloud-security
 - security

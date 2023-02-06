@@ -1,3 +1,4 @@
+
 **Identity administration** is how identity objects are managed over the lifetime of the identity’s existence. This administration can be manual or automated.  However, it has to be done.  Here's a simple example of what happens without governance and administration of your identities.
 
 #### Story - the life of an identity

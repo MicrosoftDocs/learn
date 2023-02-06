@@ -26,6 +26,7 @@ roles:
 - solution-architect
 products:
 - azure-devops
+- azure-sentinel
 subjects:
 - cloud-security
 - security

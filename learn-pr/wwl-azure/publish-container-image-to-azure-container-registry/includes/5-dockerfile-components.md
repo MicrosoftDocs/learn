@@ -1,3 +1,4 @@
+
 If you want to create a custom container you will need to understand the elements of a Dockerfile. A Dockerfile is a text file that contains the instructions we use to build and run a Docker image.  The following aspects of the image are defined:
 
 * The base or parent image we use to create the new image
@@ -20,7 +21,7 @@ RUN apt -y update &&  apt install -y wget nginx software-properties-common apt-t
 	&& apt -y update \
 	&& apt install -y dotnet-sdk-3.0
 
-# Step 3: Configure Nginx environment
+# Step 3: Start Nginx environment
 CMD service nginx start
 
 # Step 4: Configure Nginx environment

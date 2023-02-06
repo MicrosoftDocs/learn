@@ -1,3 +1,4 @@
+
 **Authentication** is validating the identity (user or app or device) is who they proclaim to be. Then also providing an appropriate level of validation and security throughout the authentication transaction.  Identity authentication provides:
 
 - Flexible, standards compliant, authentication that integrates across  organizations

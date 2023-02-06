@@ -3,6 +3,7 @@ When you publish an API, you often want some level of control over who can acces
 Here, you'll learn how to use subscription keys to secure your APIs.
 
 ## Subscriptions and keys
+
 To protect your APIs, you can use a subscription key.
 
 A subscription key is a unique auto-generated string, which is passed through in the headers of the client request. The key is directly related to a subscription, which can be scoped to different areas, giving granular control over permissions and policies. The three main subscription scopes are:
@@ -11,9 +12,9 @@ A subscription key is a unique auto-generated string, which is passed through in
 - A Single API
 - A product
 
-Applications that call a protected API must include the key in request calls.
+An application that calls a protected API must include the key in the request.
 
-You can regenerate these subscription keys at any time, for example, if you suspect that a key has been shared with unauthorized users.
+You can regenerate these subscription keys at any time. For example, if you suspect that a key has been shared with unauthorized users.
 
 ![Subscription keys.](../media/6-subscription-keys.png)
 

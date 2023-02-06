@@ -1,3 +1,4 @@
+
  The *durable functions* extension lets you define stateful workflows by writing  *orchestrator functions* and stateful entities by writing  *entity functions* using the Azure Functions programming model. Behind the scenes, the extension manages state, checkpoints, and restarts for you, allowing you to focus on your business logic.
 
 ## Supported languages

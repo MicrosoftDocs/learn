@@ -4,7 +4,7 @@ metadata:
   moduleType: standard  
   title: Optimize databases by using advanced modeling patterns for Azure Cosmos DB
   description: Learn about various strategies for managing relationships between data entities when you model a database for Azure Cosmos DB.
-  ms.date: 6/11/2021  
+  ms.date: 01/27/2023  
   author: seesharprun  
   ms.author: sidandrews  
   manager: jroth
