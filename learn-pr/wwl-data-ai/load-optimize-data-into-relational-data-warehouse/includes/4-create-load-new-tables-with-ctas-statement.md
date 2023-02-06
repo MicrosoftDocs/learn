@@ -1,23 +1,22 @@
 
 
-
 In many data warehouses, you need to handle updates to dimension data and support what are commonly referred to as *slowly changing dimensions* (SCDs).
 
 There are multiple kinds of slowly changing dimension, of which three are commonly implemented:
 
-**Type 0** Dimension data can't be changed. Any attempted changes fail.
+**Type 0:** Dimension data can't be changed. Any attempted changes fail.
 
 | DateKey | DateAltKey | Day | Month | Year |
 |----------|----------|----------|----------|----------|
 |20230101|01-01-2023|Sunday|January|2023|
 
-**Type 1** A change made to an existing dimension row applies to all previously loaded facts related to the dimension
+**Type 1:** A change made to an existing dimension row applies to all previously loaded facts related to the dimension
 
 | StoreKey | StoreAltKey | StoreName |
 |----------|----------|----------|
 |123|EH199J|~~High Street Store~~ Town Central Store|
 
-**Type 2** A change to a dimension results in a new dimension row. Existing rows for previous versions of the dimension are retained for historical fact analysis and the new row is applied to future fact table entries.
+**Type 2:** A change to a dimension results in a new dimension row. Existing rows for previous versions of the dimension are retained for historical fact analysis and the new row is applied to future fact table entries.
 
 | CustomerKey | CustomerAltKey | Name | Address | City | DateFrom | DateTo | IsCurrent |
 |----------|----------|----------|----------|----------|----------|----------|----------|

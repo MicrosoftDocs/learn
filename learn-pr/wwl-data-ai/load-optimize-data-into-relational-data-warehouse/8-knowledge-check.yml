@@ -32,15 +32,15 @@ quiz:
       explanation: "That's Correct. With existing tables, the copy command is the most efficient way to populate the warehouse from the data lake."
     - content: "LOAD"
       isCorrect: false
-      explanation: "That's incorrect. Load is not a valid operation in this context"
+      explanation: "That's incorrect. Load isn't a valid operation in this context"
     - content: "INSERT"
       isCorrect: false
       explanation: "That's incorrect. Although INSERT is an option, it doesn't perform as well as the COPY command."
-  - content: "When a customer changes their phone number, the change should be made in the existing row for that customer in the dimension table. What type of slowly changing dimension is this?"
+  - content: "When a customer changes their phone number, the change should be made in the existing row for that customer in the dimension table. What type of slowly changing dimension does this scenario require?"
     choices:
     - content: "Type 0"
       isCorrect: false
-      explanation: "That's incorrect. We will want the new phone number stored."
+      explanation: "That's incorrect. We'll want the new phone number stored."
     - content: "Type 1"
       isCorrect: true
       explanation: "That's correct. In this case, simply changing the number with no history is appropriate."
