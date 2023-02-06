@@ -1,3 +1,4 @@
+
 Setting environment variables in your container instances allows you to provide dynamic configuration of the application or script run by the container. This is similar to the `--env` command-line argument to `docker run`.
 
 If you need to pass secrets as environment variables, Azure Container Instances supports secure values for both Windows and Linux containers.
