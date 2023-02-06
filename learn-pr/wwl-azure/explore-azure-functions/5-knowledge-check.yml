@@ -4,13 +4,11 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/29/2022
+  ms.date: 02/06/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
@@ -20,9 +18,9 @@ quiz:
     - content: "Functions Premium Plan"
       isCorrect: false
       explanation: "That's incorrect. The Premium Plan does support scaling, but it isn't predictive."
-    - content: "App service plan"
+    - content: "Dedicated plan"
       isCorrect: true
-      explanation: "That's correct. App service plans support setting autoscaling rules based on predictive usage."
+      explanation: "That's correct. Dedicated plans run in App service which supports setting autoscaling rules based on predictive usage."
     - content: "Consumption plan"
       isCorrect: false
       explanation: "That's incorrect. The Consumption plan does support scaling, but it isn't predictive."

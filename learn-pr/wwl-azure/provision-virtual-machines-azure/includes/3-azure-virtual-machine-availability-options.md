@@ -1,3 +1,4 @@
+
 Azure offers several options for ensuring the availability of the virtual machines, and applications, you have deployed.
 
 ## Availability zones

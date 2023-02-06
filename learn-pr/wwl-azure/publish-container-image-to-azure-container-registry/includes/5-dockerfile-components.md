@@ -1,3 +1,4 @@
+
 If you want to create a custom container you will need to understand the elements of a Dockerfile. A Dockerfile is a text file that contains the instructions we use to build and run a Docker image.  The following aspects of the image are defined:
 
 * The base or parent image we use to create the new image
