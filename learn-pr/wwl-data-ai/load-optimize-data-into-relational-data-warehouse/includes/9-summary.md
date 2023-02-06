@@ -6,4 +6,4 @@ As a data engineer, this should extend your existing knowledge and allow you to 
 
 
 >[!TIP]
-For some additional insights, you can view [Work with Data Warehouses using Azure Synapse Analytics](https://aka.ms/mslearn-synapse-data-warehouse)
+>For some additional insights, you can view [Update or merge records in Azure SQL Database with Azure Functions](/azure/stream-analytics/sql-database-upsert?azure-portal=true)

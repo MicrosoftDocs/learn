@@ -13,6 +13,24 @@ In some cases, if the data to be loaded is stored in files with an appropriate s
 
 ![Using and external table to query files in the data lake](../media/2-external-table-using-data-lake.png)
 
+```sql
+
+CREATE EXTERNAL TABLE dbo.ExternalStageProduct
+ (
+     ProductID NVARCHAR(10) NOT NULL,
+     ProductName NVARCHAR(10) NOT NULL,
+ ...
+ )
+WITH
+ (
+    DATE_SOURCE = StagedFiles,
+    LOCATION = 'folder_name/*.parquet',
+    FILE_FORMAT = ParquetFormat
+ );
+GO
+
+```
+
 ### COPY command
 
 If you use external tables for staging, there's no need to load the data into them because they already reference the data files in the data lake. However, if you use "regular" relational tables, you can use the COPY statement to load data from the data lake, as shown in the following example:
@@ -21,6 +39,21 @@ If you use external tables for staging, there's no need to load the data into th
 > This is generally the recommended approach to load staging tables due to its high performance throughput.
 
 ![Using the COPY command to load data into local tables](../media/2-use-copy-to-load-data-files-to-db.png)
+
+```sql
+
+COPY INTO dbo.StageProduct
+    (ProductID, ProductName, ...)
+FROM 'https://mydatalake.../data/products*.parquet'
+WITH
+(
+    FILE_TYPE = 'PARQUET',
+    MAXERRORS = 0,
+    IDENTITY_INSERT = 'OFF'
+);
+
+
+```
 
 > [!TIP]
 > For more information about using external tables, see [Use external tables with Synapse SQL](/azure/synapse-analytics/sql/develop-tables-external-tables) in the Azure Synapse Analytics documentation.

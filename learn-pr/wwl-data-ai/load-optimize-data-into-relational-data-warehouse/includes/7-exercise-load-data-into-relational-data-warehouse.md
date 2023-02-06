@@ -1,6 +1,6 @@
 
 
-Now it's your chance to explore Delta Lake for yourself. In this exercise, you'll use a Spark pool in Azure Synapse Analytics to create and query Delta Lake tables, and query Delta Lake data from a serverless SQL pool.
+Now it's your chance to explore loading and updating data into a relational data warehouse yourself. In this exercise, you'll create and update Fact and Dimension tables into a dedicated SQL Pool using the various techniques covered in this module.
 
 > [!NOTE]
 > To complete this lab, you will need an [Azure subscription](https://azure.microsoft.com/free?azure-portal=true) in which you have administrative access.
