@@ -1,3 +1,4 @@
+
 In this exercise you will learn how to:
 
 * Enable an Event Grid resource provider
