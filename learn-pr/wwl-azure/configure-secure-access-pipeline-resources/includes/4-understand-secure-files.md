@@ -1,78 +1,77 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+It is important to keep sensitive files such as certificates, private keys, or SSH Keys securely stored and protected from unauthorized access. Azure DevOps provides a secure file storage solution called Secure Files, which allows you to store and manage sensitive files within your projects securely.
 
-    Goal: briefly summarize the key skill this unit will teach
+## Why use Secure Files
 
-    Heading: none
+Using Secure Files in Azure DevOps provides several benefits for protecting sensitive files in your projects.
 
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
+Access to secure files is controlled through Azure DevOps permissions and can only be restricted to authorized users. All files are encrypted and stored securely.
 
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+Secure Files can be easily accessed and used in the build and release pipelines, eliminating the need to store sensitive files in a separate location.
+Secure Files help to maintain the security and privacy of sensitive files, reducing the risk of security breaches.
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+> [!IMPORTANT]
+> These files can be stored on the server without committing them to your repository.
 
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
+In this unit, you'll go through the steps to configure Secure Files in Azure DevOps and demonstrate how to access these files in your pipelines.
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+## Step 1: Creating a Secure File
 
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
+1. Go to the Azure DevOps project where you want to store the secure file.
+2. Navigate to the Library tab in the Pipelines section.
+3. Click on Secure Files and then click on the + Secure file button.
+4. Upload the file you want to store securely.
+5. Click on OK.
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
+    ![Screenshot of Azure DevOps project Library showing the steps to upload Secure Files.](../media/secure-file-upload.png)
 
-    Goal: State concisely what's covered in this unit
+## Step 2: Adding the Secure File to the pipeline
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+1. Go to your pipeline where you want to use the Secure File.
+2. Click to edit your existing pipeline, or create a new pipeline.
+3. Use the Download Secure File task to consume secure files.
 
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
+    ```YAML
+    steps:
+    - task: DownloadSecureFile@1
+      name: SecureFile
+      inputs:
+        secureFile: 'SecureFile.cer'
+      displayName: 'Download Secure File'
 
-<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
+    - task: CopyFiles@2
+      inputs:
+        SourceFolder: $(Agent.TempDirectory) # or use the file directly '$(SecureFile.secureFilePath)'
+        Contents: '**.cer'
+        TargetFolder: '$(Build.ArtifactStagingDirectory)\secrets'
+      displayName: 'Copy Secure File to Artifact Staging Directory'
+    ```
 
-    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
+    > [!NOTE]
+    > If the task is given the name mySecureFile, its path can be referenced in the pipeline as $(mySecureFile.secureFilePath). Alternatively, downloaded secure files can be found in the directory given by $(Agent.TempDirectory).
 
-    Heading: none
--->
-TODO: add a visual element
+4. Save and commit your YAML pipeline.
 
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
+    ![Screenshot of Azure Pipelines showing the steps to download Secure Files and copy it to a folder.](../media/download-secure-file.png)
 
-    Goal: Provide all the information the learner needs to perform this sub-task.
+5. (Optional) Run the pipeline. If you see the message:
 
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
+    >_There was a resource authorization issue: "The pipeline is not valid. Job Build: Step DownloadSecureFile input secureFile references secure file which could not be found. The secure file does not exist or has not been authorized for use. For authorization details, refer to <https://aka.ms/yamlauthz>."_
 
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=main)
--->
+    ![Screenshot of Azure Pipelines showing how to authorize Secure Files usage.](../media/authorize-secure-file.png)
 
-<!-- Pattern for simple chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
+6. (Optional) Click on Authorize Resources button to allow the Secure File usage by the pipeline.
 
-<!-- Pattern for complex chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
+7. (Optional) Click to rerun failed jobs, or run new.
 
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    ![Screenshot of Azure Pipelines showing how to rerun the pipeline after Secure Files authorization.](../media/rerun-authorized-secure-file.png)
 
-<!-- Do not add a unit summary or references/links -->
+8. The pipeline will download the secure file to the agent folder.
+
+    ![Screenshot of Azure Pipelines showing the downloaded secure file log.](../media/run-pipeline-download-secure-file.png)
+
+    > [!IMPORTANT]
+    > When the pipeline job completes, whether it succeeds, fails, or is canceled, the secure file is deleted from its download location.
+
+Secure Files in Azure DevOps is an essential tool for storing and protecting sensitive files in your projects. Ensure your sensitive files are securely accessible to authorized users in your pipelines.
+
+For more details about Secure Files (YAML or classic UI), see: [Use secure files](https://learn.microsoft.com/azure/devops/pipelines/library/secure-files/)

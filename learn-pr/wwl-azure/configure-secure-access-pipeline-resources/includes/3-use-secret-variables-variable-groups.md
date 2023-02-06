@@ -1,78 +1,60 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+Security and protection of sensitive information are of utmost importance in your projects. Using Secret Variables and Variable Groups, you can ensure that sensitive information such as passwords, API keys, or other secrets are stored securely and protected from unauthorized access.
 
-    Goal: briefly summarize the key skill this unit will teach
+In Azure DevOps, secret variables are stored encrypted and can only be accessed by authorized users. It protects sensitive information from being exposed or leaked in your build and release pipelines. Additionally, variable groups allow you to organize variables and manage access permissions for multiple users or teams in a centralized location.
 
-    Heading: none
+You can protect sensitive information throughout the DevOps phases by using secret variables and variable groups. It helps to ensure that your projects are secure, trustworthy, and meet industry standards for safety and privacy. The integrity of your projects is crucial, and you need to reduce the risk of security breaches.
 
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
+In this unit, you will learn how to create and manage secret variables and variable groups in Azure DevOps and configure permissions and access to protect your secrets.
 
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+## Step 1: Creating a Variable Group and Secret Variables
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+1. Navigate to the Azure DevOps project where you want to store your secrets.
+2. Go to the Pipelines section and select Library.
+3. Click on Variable Groups.
+4. Click on the New Variable Group button (+ Variable group).
+5. Enter a name for your Variable Group.
+6. Add your secret variables to the Variable Group by clicking on the Add button.
+7. (Optional) If you want to encrypt and securely store the value, choose the "lock" icon at the end of the row.
+8. Click on the Save button to store your Variable Group.
 
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
+    ![Screenshot of Azure DevOps project Library showing the steps to create a new Variable Group and variable.](../media/new-variable-group.png)
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+## Step 2: Configuring Permissions and Access
 
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
+1. Navigate to the Azure DevOps project where you want to store your secrets.
+2. Go to the Pipelines section and select Library.
+3. Click on Variable Groups.
+4. Click on the Variable Group that you want to configure.
+5. Click on the Security button.
+6. Add the users or groups that you want to have access to the Variable Group.
+7. Assign the appropriate permissions to each user or group.
+8. Click on the Save button to store your changes.
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
+    ![Screenshot of Azure DevOps project Library showing the steps to add users to the Variable Group.](../media/configure-security-variable-group.png)
 
-    Goal: State concisely what's covered in this unit
+> [!NOTE]
+> For more details about Library security, see: [Library security](https://learn.microsoft.com/azure/devops/pipelines/library/)
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+## Step 3: Configuring Pipeline permissions
 
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
+You can add pipeline permissions to limit access to secret variables in a variable group and restrict access to pipelines not in the allowed list. Pipeline permissions do not limit access to non-secret variables.
 
-<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
+1. Navigate to the Azure DevOps project where you want to store your secrets.
+2. Go to the Pipelines section and select Library.
+3. Click on Variable Groups.
+4. Click on the Variable Group that you want to configure.
+5. Click on the Pipeline permissions button.
+6. Add the pipeline you want to allow to use and have access to the Variable Group.
+7. (Optional) You can Open Access to all pipelines access the resource.
 
-    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
+    ![Screenshot of Azure DevOps project Library showing the steps to add users to the Variable Group.](../media/variable-groups-pipeline-permissions.png)
 
-    Heading: none
--->
-TODO: add a visual element
+## Challenge yourself
 
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
+Try creating a Secret Variable and Variable Group in your Azure DevOps project. Once you have created the Variable Group, try configuring permissions and access to see how it affects who can access the secrets stored in the Variable Group.
 
-    Goal: Provide all the information the learner needs to perform this sub-task.
+For more information about secret variables and variable groups, see:
 
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
-
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=main)
--->
-
-<!-- Pattern for simple chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
-
-<!-- Pattern for complex chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+* [Manage and modularize tasks and templates](https://learn.microsoft.com/training/modules/manage-modularize-tasks-templates/)
+* [Add & use variable groups](https://learn.microsoft.com/azure/devops/pipelines/library/variable-groups/)
+* [Set secret variables](https://learn.microsoft.com/azure/devops/pipelines/process/set-secret-variables/)
