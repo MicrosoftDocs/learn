@@ -10,7 +10,7 @@ Let’s focus on the main motivational drives for the SaaS model from both custo
 
 - #### Lower TCO (Total Cost of Ownership)
   
-  By purchasing Software-as-a-Service customers don't need to invest in own hardware, internal resources, IT & Operations, since the software provider takes care of the underlying infrastructure and operations for it. 
+  By purchasing Software-as-a-Service customers don't need to invest in own hardware, internal resources, IT and Operations, since the software provider takes care of the underlying infrastructure and operations for it. 
   
 - #### Purchase model
   

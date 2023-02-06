@@ -51,7 +51,7 @@ Low adoption rates lead to high customer churn rates, thus investments in sales 
 
 As we can see, in order for this cycle to function we need to make sure that the level of churn is low, and level of adoption is high. This way improving adoption will improve revenue growth. And Predictable revenue growth will improve company financial results and evaluation.
 
-![This diagram illustrates connection of adoption to financial results by impacting revenue growth.](../media/adoption-and-revenue.png)
+![This diagram illustrates connection of adoption to financial results by impacting revenue growth.](../media/adoption-revenue.png)
 
 As you can see, adoption plays a VERY important part in SaaS.
 

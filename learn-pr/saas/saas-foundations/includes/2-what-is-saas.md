@@ -34,7 +34,7 @@ And it's possible to serve both B2B and B2C customers, as we can see with exampl
 
 When working on defining business model for SaaS solution, you need to identify the market you are targeting, which will help you gather more insights about your customers and their problems, so that you can define more clear requirements for your tech team about what solution they have to build.  
 
-![Illustrates target market segment definition: Buying behavior, Company size & Industry, Technical requirements, Complexity, Geography.](../media/target.png)
+![Illustrates target market segment definition: Buying behavior, Company size and Industry, Technical requirements, Complexity, Geography.](../media/target.png)
 
 
 
