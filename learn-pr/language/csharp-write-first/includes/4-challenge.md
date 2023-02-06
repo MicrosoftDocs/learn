@@ -2,7 +2,7 @@ Code challenges throughout these modules will reinforce what you've learned and 
 
 ### Step 1: Delete all of the code in the .NET Editor from the earlier exercise
 
-Select all of the code in the .NET Editor, and press <kbd>Delete</kbd> or <kbd>Backspace</kbd> to delete it.
+Select all of the code in the .NET Editor, and press the <kbd>Del</kbd> or <kbd>Backspace</kbd> key on your keyboard to delete it.
 
 ### Step 2: Write code in the .NET Editor to display two messages
 
