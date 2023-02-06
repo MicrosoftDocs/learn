@@ -1,6 +1,7 @@
+
 Azure Container Instances (ACI) is a great solution for any scenario that can operate in isolated containers, including simple applications, task automation, and build jobs.  Here are some of the benefits:
 
-* **Fast startup**: ACI can start containers in **Azure** in seconds, without the need to provision and manage VMs
+* **Fast startup**: ACI can start containers in Azure in seconds, without the need to provision and manage VMs
 * **Container access**: ACI enables exposing your container groups directly to the internet with an IP address and a fully qualified domain name (FQDN)
 * **Hypervisor-level security**: Isolate your application as completely as it would be in a VM
 * **Customer data**: The ACI service stores the minimum customer data required to ensure your container groups are running as expected
