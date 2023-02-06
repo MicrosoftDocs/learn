@@ -1,3 +1,4 @@
+
 In this exercise you will learn how to use Visual Studio Code, and the Azure Resource Manager  Tools extension, to create and edit Azure Resource Manager templates.
 
 * Create an Azure Resource Manager template
