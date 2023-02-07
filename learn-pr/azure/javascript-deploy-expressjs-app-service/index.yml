@@ -28,7 +28,6 @@ prerequisites: |
   - Configuring web app such as configuring logging
   - Finding and resolving cloud app runtime issues 
 iconUrl: /training/achievements/js-data-web-app-to-azure-app-service.svg
-hidden: true
 levels: # see level taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
   - intermediate
 roles: # see role taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
