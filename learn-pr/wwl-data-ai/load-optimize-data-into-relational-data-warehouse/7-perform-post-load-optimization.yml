@@ -9,6 +9,7 @@ metadata:
   ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 15
+  ms.service: synapse-analytics
+durationInMinutes: 3
 content: |
-  [!include[](includes/6-perform-post-load-optimization.md)]
+  [!include[](includes/7-perform-post-load-optimization.md)]

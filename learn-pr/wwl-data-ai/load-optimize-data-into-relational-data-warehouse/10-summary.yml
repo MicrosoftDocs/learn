@@ -9,6 +9,7 @@ metadata:
   ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 3
+  ms.service: synapse-analytics
+durationInMinutes: 1
 content: |
-  [!include[](includes/9-summary.md)]
+  [!include[](includes/10-summary.md)]

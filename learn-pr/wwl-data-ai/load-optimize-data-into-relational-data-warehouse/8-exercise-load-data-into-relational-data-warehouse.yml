@@ -9,6 +9,7 @@ metadata:
   ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: synapse-analytics
 durationInMinutes: 40
 content: |
-  [!include[](includes/7-exercise-load-data-into-relational-data-warehouse.md)]
+  [!include[](includes/8-exercise-load-data-into-relational-data-warehouse.md)]

@@ -2,30 +2,25 @@
 uid: learn.wwl.load-optimize-data-into-relational-data-warehouse
 metadata:
   title: Load and optimize data into a relational data warehouse
-  description: "Load and optimize data into a relational data warehouse"
+  description: "Learn how to load tables in a relational data warehouse that is hosted in a dedicated SQL pool in Azure Synapse Analytics."
   ms.date: 02/07/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: synapse-analytics
 title: Load and optimize data into a relational data warehouse
-summary: Learn how to optimize querying performance on Azure Synapse Analytics SQL Pools for use in analytical workloads.
+summary: A core responsibility for a data engineer is to implement a data ingestion solution that loads new data into a relational data warehouse.
 abstract: |
-  In this module you will:
-  	Explain loading methods
-  	Manage source data files
-  	Implement workload management
-  	Exercise: Load data into a relational data warehouse
-  	Understand table distribution design
-  	Understand Indexes and query plans
-  	Other optimization considerations
-  	Exercise: See how statistic affects query plan
-  	Knowledge check
+  In this module, you'll learn how to:
+  - Load staging tables in a data warehouse
+  - Load dimension tables in a data warehouse
+  - Load time dimensions in a data warehouse
+  - Load slowly-changing dimensions in a data warehouse
+  - Load fact tables in a data warehouse
+  - Perform post-load optimizations in a data warehouse
 prerequisites: |
-  Before taking this module, it is recommended that the student can:
-  -	Log into the Azure portal
-  -	Create a Synapse Analytics Workspace
-  -	Create and connect to an Azure Synapse Analytics SQL Pool
+  Before starting this module, you should be familiar with data warehouses in Azure Synapse Analytics. Consider completing the [Analyze data in a relational data warehouse](/training/modules/design-multidimensional-schema-to-optimize-analytical-workloads/) module first.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
@@ -33,13 +28,16 @@ roles:
 - data-engineer
 products:
 - azure-synapse-analytics
+subjects:
+- data-engineering
+- data-warehousing
 units:
 - learn.wwl.load-optimize-data-into-relational-data-warehouse.introduction
-- learn.wwl.load-optimize-data-into-relational-data-warehouse.understand-considerations-for-loading-data-warehouse
-- learn.wwl.load-optimize-data-into-relational-data-warehouse.load-data-with-copy-statement
-- learn.wwl.load-optimize-data-into-relational-data-warehouse.3a-load-time-dimension-tables
-- learn.wwl.load-optimize-data-into-relational-data-warehouse.create-load-new-tables-with-ctas-statement
-- learn.wwl.load-optimize-data-into-relational-data-warehouse.load-slowly-changing-dimension-table
+- learn.wwl.load-optimize-data-into-relational-data-warehouse.load-staging-tables
+- learn.wwl.load-optimize-data-into-relational-data-warehouse.load-dimension-tables
+- learn.wwl.load-optimize-data-into-relational-data-warehouse.load-time-dimension-tables
+- learn.wwl.load-optimize-data-into-relational-data-warehouse.load-slowly-changing-dimensions
+- learn.wwl.load-optimize-data-into-relational-data-warehouse.load-fact-tables
 - learn.wwl.load-optimize-data-into-relational-data-warehouse.perform-post-load-optimization
 - learn.wwl.load-optimize-data-into-relational-data-warehouse.exercise-load-data-into-relational-data-warehouse
 - learn.wwl.load-optimize-data-into-relational-data-warehouse.knowledge-check

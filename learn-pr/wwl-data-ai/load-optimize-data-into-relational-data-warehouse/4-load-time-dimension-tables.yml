@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.load-optimize-data-into-relational-data-warehouse.3a-load-time-dimension-tables
+uid: learn.wwl.load-optimize-data-into-relational-data-warehouse.load-time-dimension-tables
 title: Load time dimension tables
 metadata:
   title: Load time dimension tables
@@ -9,6 +9,7 @@ metadata:
   ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: synapse-analytics
 durationInMinutes: 3
 content: |
-  [!include[](includes/3a-load-time-dimension-tables.md)]
+  [!include[](includes/4-load-time-dimension-tables.md)]

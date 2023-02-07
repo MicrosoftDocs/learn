@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.load-optimize-data-into-relational-data-warehouse.understand-considerations-for-loading-data-warehouse
+uid: learn.wwl.load-optimize-data-into-relational-data-warehouse.load-staging-tables
 title: Load staging tables
 metadata:
   title: Load staging tables
@@ -9,6 +9,7 @@ metadata:
   ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 10
+  ms.service: synapse-analytics
+durationInMinutes: 5
 content: |
-  [!include[](includes/2-understand-considerations-for-loading-data-warehouse.md)]
+  [!include[](includes/2-load-staging-tables.md)]
