@@ -12,7 +12,7 @@ Let's review some characteristics of Recovery Services vaults.
 
 - In the Azure portal, you can create a Recovery Services vault from the Backup center dashboard.
 
-   :::image type="content" source="../media/vault-backup-options-b1a2792d.png" alt-text="Screenshot that shows how to create a Recovery Services vault in the Azure portal.":::
+   :::image type="content" source="../media/create-vault.png" alt-text="Screenshot that shows how to create a Recovery Services vault in the Azure portal.":::
 
    To complete the initial configuration, you need to specify the subscription, resource group, and geographic region, along with a name to identify the vault.
 
