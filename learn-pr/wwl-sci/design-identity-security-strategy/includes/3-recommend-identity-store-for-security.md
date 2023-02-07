@@ -1,3 +1,9 @@
+---
+uid: learn.wwl.design-identity-security-strategy.recommend-identity-store-for-security
+title: Recommend an identity store for security
+description: Recommend an identity store for security
+durationInMinutes: 10
+---
 Azure Active Directory is Microsoft's cloud-based identity and access
 management service. It provides single sign-on authentication,
 conditional access, password-less and multifactor authentication,

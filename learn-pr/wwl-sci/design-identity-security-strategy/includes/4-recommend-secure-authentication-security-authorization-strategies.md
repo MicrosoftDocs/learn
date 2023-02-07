@@ -1,3 +1,9 @@
+---
+uid: learn.wwl.design-identity-security-strategy.recommend-secure-authentication-security-authorization-strategies
+title: Recommend secure authentication and security authorization strategies
+description: Recommend secure authentication and security authorization strategies
+durationInMinutes: 10
+---
 Choosing the correct authentication method is the first concern for organizations wanting to move their apps to the cloud. Don't take this decision lightly for the following reasons:
 
 * It's the first decision for an organization that wants to move to the cloud.
@@ -48,8 +54,7 @@ the password validation doesn't happen in the cloud.
 Companies with a security requirement to immediately enforce on-premises
 user account states, password policies, and sign-in hours might use this
 authentication method. For more information on the actual pass-through
-authentication process, see [User sign-in with Azure AD pass-through
-authentication](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-pta).
+authentication process, see [User sign-in with Azure AD pass-through authentication](/azure/active-directory/hybrid/how-to-connect-pta).
 
 ## Federated authentication
 

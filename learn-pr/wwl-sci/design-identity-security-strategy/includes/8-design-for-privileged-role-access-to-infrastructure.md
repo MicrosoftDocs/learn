@@ -1,3 +1,9 @@
+---
+uid: learn.wwl.design-identity-security-strategy.design-for-privileged-role-access-to-infrastructure
+title: Design a security strategy for privileged role access to infrastructure
+description: Design a security strategy for privileged role access to infrastructure
+durationInMinutes: 10
+---
 The security of business assets depends on the integrity of the
 privileged accounts that administer your IT systems. Cyber-attackers use
 credential theft attacks to target administrator accounts and other
@@ -16,6 +22,44 @@ authentication in your organization's identity layer, with users
 assigned to privileged administrative roles in control. Their access
 must be protected, whether the environment is on-premises, cloud, or a
 hybrid.
+
+## End to end security
+
+:::image type="content" source="../media/end-to-end-security.png" alt-text="Diagram showing an end to end security approach for managing access." lightbox="../media/end-to-end-security.png":::
+
+Microsoft recommends a simple three-level strategy which provides clear guidance, flexibility, enables progressive security improvement over time.
+
+These security levels are applied consistently across device, account, intermediary, and interfaces. 
+
+### Enterprise security
+
+Enterprise security is suitable for all enterprise users and productivity scenarios. In the progression of the rapid modernization plan, enterprise also serves as the starting point for specialized and privileged access as they progressively build on the security controls in enterprise security.
+
+### Specialized security 
+
+Specialized security provides increased security controls for roles with an elevated business impact (if compromised by an attacker or malicious insider). This level allows standard general productivity tasks like email and web browsing, but includes higher security rigor on those productivity tasks for higher business impact roles such as:
+
+* Developers of business critical systems
+* Sensitive business roles (such as users of SWIFT terminals, researchers with access to sensitive data, personnel with access to financial reporting prior to public release, payroll administrators, approvers for sensitive business processes)
+* Executives and personal assistants / administrative assistants that that regularly handle sensitive information.
+* High impact social media accounts that could damage the company reputation.
+* Sensitive IT Admins with a significant privileges and impact, but aren't enterprise-wide. This group typically includes administrators of individual high impact workloads. (for example, enterprise resource planning administrators, banking administrators, help desk /tech support roles, etc.)
+
+Specialized Account security also serves as an interim step for privileged security, which further builds on these controls.
+
+### Privileged Security
+
+Privileged security is the highest level of security designed for roles that could easily cause a major incident and potential material damage to the organization in the hands of an attacker or malicious insider. This level typically includes technical roles with administrative permissions on most or all enterprise systems (and sometimes includes a select few business critical roles). Privileged accounts are focused on security first, with productivity defined as the ability to easily and securely perform a fixed set of sensitive job tasks securely (not general productivity). 
+
+## Just in time access - PIM, PAM and CIEM
+
+:::image type="content" source="../media/just-in-time-pam-pim-ciem.png" alt-text="Diagram showing an enterprise access model with privileged access, control plane, management plane and user access." lightbox="../media/just-in-time-pam-pim-ciem.png":::
+
+There are three related concepts that all provide some form of just in time permissioning:
+
+* Privileged Account Management - a workflow grants access to an account with permanent privileges
+* Privileged Identity Management - a workflow grants access to privileges for authenticated accounts
+* Cloud Infrastructure Entitlement Management - a workflow grants access to infrastructure entitlements
 
 ## Securing privileged access
 
@@ -131,8 +175,7 @@ Use Privileged identity Management with Azure AD administrator roles to
 manage, control, and monitor access to Azure resources. Using PIM
 protects by lowering the exposure time of privileges and increasing your
 visibility into their use through reports and alerts. For more
-information, see [What is Azure AD Privileged Identity
-Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure).
+information, see [What is Azure AD Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure).
 
 ### Stage 4: Continue building defenses
 

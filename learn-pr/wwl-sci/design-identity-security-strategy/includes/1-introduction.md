@@ -1,3 +1,9 @@
+---
+uid: learn.wwl.design-identity-security-strategy.introduction
+title: Introduction
+description: Introduction
+durationInMinutes: 3
+---
 In this module, you'll learn how to: 
 
 -   Recommend an identity store for security

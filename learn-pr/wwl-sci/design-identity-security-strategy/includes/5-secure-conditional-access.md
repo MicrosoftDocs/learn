@@ -1,3 +1,9 @@
+---
+uid: learn.wwl.design-identity-security-strategy.secure-conditional-access
+title: Secure conditional access
+description: Secure conditional access
+durationInMinutes: 10
+---
 [Conditional access](/azure/active-directory/conditional-access/overview) is a key part of Zero Trust because it helps to ensure the right user has the right access to the right resources. Enabling Conditional Access allows Azure Active Directory to make access decisions based on computed risk and pre-configured policies. Independent software vendors can take advantage of conditional access by surfacing the option to apply conditional access policies when relevant.
 
 ## Requirements
@@ -137,3 +143,7 @@ policies include:
 -   Standard policy components - Apps, platform types, grant control types, named locations should all be defined in advanced to ensure consistency across all policies
 
 For more details on the recommended framework for conditional access policies, see [Conditional Access framework and policies](/azure/architecture/guide/security/conditional-access-framework).
+
+For more detailed guidance on configuring Conditional Access, view the following interactive guide.
+
+[:::image type="content" source="../media/configure-conditional-access-interactive-guide.png" alt-text="Cover for an interactive guide that says Configure Conditional Access in Azure AD." border="true":::](https://mslearn.cloudguides.com/guides/Configure%20Conditional%20Access%20in%20Azure%20AD)
