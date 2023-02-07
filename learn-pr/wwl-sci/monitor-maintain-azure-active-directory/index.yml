@@ -2,8 +2,8 @@
 uid: learn.wwl.monitor-maintain-azure-active-directory
 metadata:
   title: Monitor and maintain Azure Active Directory
-  description: "Monitor and maintain Azure Active Directory"
-  ms.date: 12/09/2022
+  description: "Azure AD audit and diagnostic logs provide a rich view into how users are accessing your Azure solution. Learn to monitor, troubleshoot, and analyze sign-in data."
+  ms.date: 02/07/2023
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
@@ -31,6 +31,11 @@ roles:
 products:
 - azure
 - azure-active-directory
+- azure-active-directory-domain
+- azure-log-analytics
+- azure-monitor
+- entra
+- entra-identity-governance
 subjects:
 - it-management-monitoring
 units:

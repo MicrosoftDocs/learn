@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.optimize-operations-with-automanage.create-custom-configuration-profile
+title: Create and assign a custom configuration profile
+metadata:
+  title: Create and assign a custom configuration profile
+  description: Get step by step guidance on creating and assigning a custom configuration profile using the Azure portal.
+  ms.date: 01/10/2023
+  author: johnmarco
+  ms.author: johnmarc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-create-custom-configuration-profile.md)]

@@ -3,7 +3,7 @@ uid: learn.languages.csharp-arrays-operations
 metadata:
   title: 'Perform operations on arrays using helper methods in C#'
   description: Use powerful helper methods to manipulate and control the content of arrays.
-  ms.date: 08/26/2022
+  ms.date: 02/07/2023
   author: billwagner
   ms.author: wiwagn
   ms.topic: interactive-tutorial

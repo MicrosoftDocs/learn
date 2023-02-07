@@ -4,13 +4,11 @@ title: Run containerized tasks with restart policies
 metadata:
   title: Run containerized tasks with restart policies
   description: "Run containerized tasks with restart policies"
-  ms.date: 12/19/2022
+  ms.date: 02/06/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/4-run-containerized-tasks-restart-policies.md)]

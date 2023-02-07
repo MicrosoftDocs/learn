@@ -4,13 +4,11 @@ title: 'Exercise: Send and receive message from a Service Bus queue by using .NE
 metadata:
   title: 'Exercise: Send and receive message from a Service Bus queue by using .NET.'
   description: "Exercise: Send and receive message from a Service Bus queue by using .NET."
-  ms.date: 12/01/2022
+  ms.date: 02/06/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 30
 content: |
   [!include[](includes/6-send-receive-messages-service-bus.md)]
