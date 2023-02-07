@@ -22,6 +22,6 @@ You can deploy the MARS agent on any Windows Server virtual machine or physical 
 
 | Backup scenario | MARS agent implementation |
 | --- | --- |
-| **Consider on-premises direct backup** | _Run the MARS agent on your on-premises Windows machines to back up your machine data directly to a Recovery Services vault in Azure_. |
-| **Consider back up for specific files or folders** | _Run the MARS agent on Azure virtual machines to back up specific files and folders on your virtual machine. Your Azure virtual machines must run Windows side-by-side with the Azure Virtual Machines Backup extension_. |
-| **Consider back up to MABS or System Center DPM** | _Run the MARS agent on a Microsoft Azure Backup Server (MABS) instance or a System Center Data Protection Manager (DPM) server. Back up your machines and workloads to MABS or DPM by using the MARS agent to back up to a Recovery Services vault in Azure_. |
+| **On-premises direct backup** | _Run the MARS agent on your on-premises Windows machines to back up your machine data directly to a Recovery Services vault in Azure_. |
+| **Back up for specific files or folders** | _Run the MARS agent on Azure virtual machines to back up specific files and folders on your virtual machine. Your Azure virtual machines must run Windows side-by-side with the Azure Virtual Machines Backup extension_. |
+| **Back up to MABS or System Center DPM** | _Run the MARS agent on a Microsoft Azure Backup Server (MABS) instance or a System Center Data Protection Manager (DPM) server. Back up your machines and workloads to MABS or DPM by using the MARS agent to back up to a Recovery Services vault in Azure_. |
