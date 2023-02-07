@@ -12,13 +12,9 @@ title: Who Hacked Cloud Game
 summary: "Provide instructions and guidance on playing the SC-200: Who Hacked cloud game."
 abstract: |
   By the end of this module, you'll be able to:
-    - "TODO learning objective 1"
-    - "TODO learning objective 2"
-    - "TODO learning objective 3 (if needed; see https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=main)"
+    - "Demonstrate skills learned in The Security Operations Analyst (SC-200) course."  
 prerequisites: |
-  - "TODO prerequisite 1"
-  - "TODO prerequisite 2"
-  - "TODO prerequisite 3 (if needed; see https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=main"
+  - "Practical experience using Microsoft Sentinel, Microsoft Purview nad Microsoft Defender is helpful but not required."  
 iconUrl: /learn/achievements/generic-badge.svg
 levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
   - intermediate
