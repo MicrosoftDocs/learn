@@ -22,4 +22,4 @@ Lastly, you learned that there are some great resources that go in to more depth
 - [Install WSL on Windows Server](/windows/wsl/install-on-server)
 - [Windows Terminal documentation](/windows/terminal/)
 - [Introduction to Bash](/training/modules/bash-introduction/)
-- [Navigate between Windows and Linux file systems with WSL](/training/modules/wsl-file-systems)
+- [Linux on Azure](/training/paths/azure-linux/)

@@ -4,9 +4,26 @@ You want to move to a new version of Ubuntu, so you deploy a new VM. You need to
 
 In this exercise, you'll deploy a Linux VM and enable boot diagnostics. After the VM is created, you'll quickly set up a graph to view the CPU usage and inbound traffic. You'll also check that the boot diagnostics are working correctly.
 
+[!include[](../../../includes/azure-subscription-prerequisite.md)]
+
 ## Task 1: Create a storage account and VM
 
-1. On the right, run the following command in Azure Cloud Shell to create a storage account to store boot diagnostics.
+1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
+1. From the top right-hand side of the Azure portal, select **Cloud Shell**.
+1. In Cloud Shell, select **Bash**.
+1. Create a resource group by running the following command where you replace the placeholders with a location like eastus2 and resource group name like learn-monitor-vm-rg.
+
+    ```azurecli
+
+    LOCATION=<region>
+    RESOURCEGROUP=<resource-group-name>
+
+    az group create \
+    --name $RESOURCEGROUP \
+    --location $LOCATION
+   ```
+
+1. Run the following command in Azure Cloud Shell to create a storage account to store boot diagnostics.
 
     ```azurecli
     STORAGE=metricsstorage$RANDOM
@@ -14,18 +31,10 @@ In this exercise, you'll deploy a Linux VM and enable boot diagnostics. After th
     az storage account create \
         --name $STORAGE \
         --sku Standard_LRS \
-        --location eastus2 \
-        --resource-group <rgn>[sandbox resource group name]</rgn>
+        --location $LOCATION \
+        --resource-group $RESOURCEGROUP
     ```
 
-1. Run the following command to generate the ssh key pair for an Azure VM.
-
-    ```bash
-    ssh-keygen -m PEM -t rsa -b 4096
-    ```
-1. Press <kbd>Enter</kbd> to accept the default location. The command creates two files: `id_rsa` and `id_rsa.pub` in the `~/.ssh` directory. The files are overwritten if they exist.
-
-1. Enter a passphrase that you'll remember. You'll need this passphrase when you use the SSH key to access the VM.
 1. Run the following command to create your VM with boot diagnostics enabled.
 
     ```azurecli
@@ -33,17 +42,18 @@ In this exercise, you'll deploy a Linux VM and enable boot diagnostics. After th
         --name monitored-linux-vm \
         --image UbuntuLTS \
         --size Standard_B1s \
-        --location eastus2 \
+        --location $LOCATION \
         --admin-username azureuser \
         --boot-diagnostics-storage $STORAGE \
-        --resource-group <rgn>[sandbox resource group name]</rgn> 
+        --resource-group $RESOURCEGROUP \
+        --generate-ssh-keys 
     ```
 
    Creating the VM might take a couple of minutes.
 
 ## Task 2: View basic metrics for the VM
 
-1. Go to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) and sign in with the account that you used to enable the sandbox.
+1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
 1. On the Azure portal menu or from the **Home** page, select **Virtual machines**. The **Virtual machines** pane appears.
 

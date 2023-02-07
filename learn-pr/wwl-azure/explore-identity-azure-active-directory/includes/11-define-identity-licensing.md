@@ -1,3 +1,4 @@
+
 A license is a purchased agreement to allow a user or group of users to use a piece of Microsoft technology.  Most people are familiar with an end-user license agreement (EULA) when you buy a piece of software that documents the responsibilities of the purchaser and the software company.  Licenses in Azure, Microsoft 365, and other technologies are no different.  To be able to use specific functions / features of Microsoft cloud technologies, you often must buy a license.  Here are several types of licenses to be familiar with:
 
 - **Azure AD P1 or P2 license** - This license allows you to purchase access to the more features in Azure AD.  You need an Azure AD P2 license if you want to use Privileged Identity Management (PIM) capability in Azure AD.  Any user that assigns or manages assignments in PIM needs to have a license.  A user within a privileged role doesn't need a license.
