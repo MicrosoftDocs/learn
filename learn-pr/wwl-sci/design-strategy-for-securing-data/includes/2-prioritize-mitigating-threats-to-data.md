@@ -90,7 +90,10 @@ threaten your business operations after the initial encounter.
 
 #### Phase 1. Prepare your recovery plan
 
-This phase is designed to [minimize the monetary incentive from ransomware attackers](/security/compass/protect-against-ransomware-phase1) by making it:
+This phase is designed to [minimize the monetary incentive from
+ransomware
+attackers](https://docs.microsoft.com/security/compass/protect-against-ransomware-phase1) by
+making it:
 
 -   Much harder to access and disrupt systems or encrypt or damage key
     organization data.
@@ -100,7 +103,9 @@ This phase is designed to [minimize the monetary incentive from ransomware attac
 
 #### Phase 2. Limit the scope of damage
 
-Make the attackers work a lot harder to [gain access to multiple business critical systems through privileged access roles](/security/compass/protect-against-ransomware-phase2).
+Make the attackers work a lot harder to [gain access to multiple
+business critical systems through privileged access
+roles](https://docs.microsoft.com/security/compass/protect-against-ransomware-phase2).
 Limiting the attacker's ability to get privileged access makes it much
 harder to profit off of an attack on your organization, making it more
 likely they will give up and go elsewhere.
@@ -109,7 +114,9 @@ likely they will give up and go elsewhere.
 
 This last set of tasks is important to raise friction for entry but will
 take time to complete as part of a larger security journey. The goal of
-this phase is for attackers to have to work a lot harder to [obtain access to your on-premises or cloud infrastructures](/security/compass/protect-against-ransomware-phase3) at
+this phase is for attackers to have to work a lot harder to [obtain
+access to your on-premises or cloud
+infrastructures](https://docs.microsoft.com/security/compass/protect-against-ransomware-phase3) at
 the various common points of entry. There are a lot of these tasks, so
 it's important to prioritize your work here based on how fast you can
 accomplish these with your current resources.
@@ -130,5 +137,5 @@ Here's a summary of the guidance:
 
 -   [**Defender for Cloud App Best Practices**](/defender-cloud-apps/best-practices)
 -   [**Threat Remediation**](/defender-cloud-apps/tutorial-flow)
--   [**Manage Multicloud Environment**](/defender-cloud-apps/tutorial-cloud-platform-security)
+-   [**Manage Multi-Cloud Environment**](/defender-cloud-apps/tutorial-cloud-platform-security)
 -   [**Ransomware Protection**](/security/compass/protect-against-ransomware)

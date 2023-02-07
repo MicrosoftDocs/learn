@@ -71,18 +71,17 @@ Vault, or customer-managed keys on customer-controlled hardware. You can
 manage and store keys on-premises or in another secure location with
 client-side encryption.
 
-**Client-side encryption** is performed outside of Azure. It includes:
+| Client-side encryption | Client-side encryption is performed outside of Azure. It includes:                                                                                                                                                                                                                              |
+|------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                        | Data is encrypted by an application running in the customer's datacenter or by a service application.                                                                                                                                                                                           |
+|                        | Data that is already encrypted when Azure receives it.                                                                                                                                                                                                                                          |
+|                        | With client-side encryption, cloud service providers don't have access to the encryption keys and can't decrypt this data. You maintain complete control of the keys.                                                                                                                          |
+| Server-side encryption | The three server-side encryption models offer different key management characteristics, which you can choose according to your requirements:                                                                                                                                                    |
+|                        | Service-managed keys: Provides a combination of control and convenience with low overhead.                                                                                                                                                                                                      |
+|                        | Customer-managed keys: Gives you control over the keys, including Bring Your Own Keys (BYOK) support, or allows you to generate new ones.                                                                                                                                                       |
+|                        | Service-managed keys in customer-controlled hardware: Enables you to manage keys in your proprietary repository, outside of Microsoft control. This characteristic is called Host Your Own Key (HYOK). However, the configuration is complex, and most Azure services don't support this model. |
 
-* Data is encrypted by an application running in the customer's datacenter or by a service application.
-* Data that is already encrypted when Azure receives it.
 
-With client-side encryption, cloud service providers don't have access to the encryption keys and can't decrypt this data. You maintain complete control of the keys.
-
-The three **server-side encryption** models offer different key management characteristics, which you can choose according to your requirements:
-
-* Service-managed keys: Provides a combination of control and convenience with low overhead. 
-* Customer-managed keys: Gives you control over the keys, including Bring Your Own Keys (BYOK) support, or allows you to generate new ones.
-* Service-managed keys in customer-controlled hardware: Enables you to manage keys in your proprietary repository, outside of Microsoft control. This characteristic is called Host Your Own Key (HYOK). However, the configuration is complex, and most Azure services don't support this model.
 
 ### Encryption of data in transit
 
@@ -117,10 +116,12 @@ features for a robust solution for certificate lifecycle management.
 specific scope.\
 **Detail**: Use Azure RBAC predefined roles. For example, to grant
 access to a user to manage key vaults, you would assign the predefined
-role [Key Vault Contributor](/azure/role-based-access-control/built-in-roles) to
+role [Key Vault
+Contributor](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles) to
 this user at a specific scope. The scope in this case would be a
 subscription, a resource group, or just a specific key vault. If the
-predefined roles don't fit your needs, you can [define your own roles](/azure/role-based-access-control/custom-roles).
+predefined roles don't fit your needs, you can [define your own
+roles](https://docs.microsoft.com/azure/role-based-access-control/custom-roles).
 
 **Best practice**: Control what users have access to.\
 **Detail**: Access to a key vault is controlled through two separate
@@ -134,7 +135,9 @@ security or the security of your data can be compromised.\
 stored in Azure Key Vault to Azure VMs when the VMs are deployed. By
 setting appropriate access policies for the key vault, you also control
 who gets access to your certificate. Another benefit is that you manage
-all your certificates in one place in Azure Key Vault. See [Deploy Certificates to VMs from customer-managed Key Vault](/archive/blogs/kv/updated-deploy-certificates-to-vms-from-customer-managed-key-vault) for
+all your certificates in one place in Azure Key Vault. See [Deploy
+Certificates to VMs from customer-managed Key
+Vault](https://docs.microsoft.com/archive/blogs/kv/updated-deploy-certificates-to-vms-from-customer-managed-key-vault) for
 more information.
 
 **Best practice**: Ensure that you can recover a deletion of key vaults
@@ -176,7 +179,8 @@ diligent and using correct security controls to enhance their data
 security to comply with industry regulations.
 
 **Best practice**: Apply disk encryption to help safeguard your data.\
-**Detail**: Use [Azure Disk Encryption](/azure/security/fundamentals/azure-disk-encryption-vms-vmss).
+**Detail**: Use [Azure Disk
+Encryption](https://docs.microsoft.com/azure/security/fundamentals/azure-disk-encryption-vms-vmss).
 It enables IT administrators to encrypt Windows and Linux IaaS VM disks.
 Disk Encryption combines the industry-standard Windows BitLocker feature
 and the Linux dm-crypt feature to provide volume encryption for the OS
@@ -185,7 +189,8 @@ and the data disks.
 Azure Storage and Azure SQL Database encrypt data at rest by default,
 and many services offer encryption as an option. You can use Azure Key
 Vault to maintain control of keys that access and encrypt your data.
-See [Azure resource providers encryption model support to learn more](/azure/security/fundamentals/encryption-atrest#azure-resource-providers-encryption-model-support).
+See [Azure resource providers encryption model support to learn
+more](https://docs.microsoft.com/azure/security/fundamentals/encryption-atrest#azure-resource-providers-encryption-model-support).
 
 **Best practices**: Use encryption to help mitigate risks related to
 unauthorized data access.\
@@ -202,11 +207,13 @@ cloud infrastructures by using a VPN.
 
 **Best practice**: Secure access from multiple workstations located
 on-premises to an Azure virtual network.\
-**Detail**: Use a [site-to-site VPN](/azure/vpn-gateway/tutorial-site-to-site-portal).
+**Detail**: Use a [site-to-site
+VPN](https://docs.microsoft.com/azure/vpn-gateway/tutorial-site-to-site-portal).
 
 **Best practice**: Secure access from an individual workstation located
 on-premises to an Azure virtual network.\
-**Detail**: Use a [point-to-site VPN](/azure/vpn-gateway/vpn-gateway-howto-point-to-site-classic-azure-portal).
+**Detail**: Use a [point-to-site
+VPN](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-howto-point-to-site-classic-azure-portal).
 
 **Best practice**: Move larger data sets over a dedicated high-speed WAN
 link.\
@@ -218,7 +225,9 @@ protection.
 
 **Best practice**: Interact with Azure Storage through the Azure
 portal.\
-**Detail**: All transactions occur via HTTPS. You can also use [Storage REST API](/rest/api/storageservices/) over
+**Detail**: All transactions occur via HTTPS. You can also use [Storage
+REST
+API](https://docs.microsoft.com/rest/api/storageservices/) over
 HTTPS to interact with [Azure
 Storage](https://azure.microsoft.com/services/storage/).
 
@@ -250,9 +259,12 @@ Azure Key Vault helps solve the following problems:
 **For additional information on Encryption Standards, see the
 following:**
 
--   [**Azure Encryption Overview**](/azure/security/fundamentals/encryption-overview)
+-   [**Azure Encryption
+    Overview**](https://docs.microsoft.com/azure/security/fundamentals/encryption-overview)
 
--   [**Data Encryption Best Practices**](/azure/security/fundamentals/data-encryption-best-practices)
+-   [**Data Encryption Best
+    Practices**](https://docs.microsoft.com/azure/security/fundamentals/data-encryption-best-practices)
 
--   [**Protect Sensitive Information**](/defender-cloud-apps/use-case-proxy-block-session-aad)
+-   [**Protect Sensitive
+    Information**](https://docs.microsoft.com/defender-cloud-apps/use-case-proxy-block-session-aad)
 
