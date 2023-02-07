@@ -1,4 +1,5 @@
-The Azure Storage client libraries for .NET offer a convenient interface for making calls to Azure **Storage**. The latest version of the Azure Storage client library is version 12.x. Microsoft recommends using version 12.x for new applications.
+
+The Azure Storage client libraries for .NET offer a convenient interface for making calls to Azure Storage. The latest version of the Azure Storage client library is version 12.x. Microsoft recommends using version 12.x for new applications.
 
 Below are the classes in the Azure.Storage.Blobs namespace and their purpose:
 
