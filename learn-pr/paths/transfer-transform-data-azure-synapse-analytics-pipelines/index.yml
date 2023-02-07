@@ -2,7 +2,7 @@
 uid: learn.wwl.transfer-transform-data-azure-synapse-analytics-pipelines
 metadata:
   title: Transfer and transform data with Azure Synapse Analytics pipelines
-  description: Transfer and transform data with Azure Synapse Analytics pipelines
+  description: Learn how to use Azure Synapse Analytics pipelines to automate and orchestrate data transfer and transformation activities.
   ms.date: 02/07/2023
   author: wwlpublish
   ms.author: jamesh
