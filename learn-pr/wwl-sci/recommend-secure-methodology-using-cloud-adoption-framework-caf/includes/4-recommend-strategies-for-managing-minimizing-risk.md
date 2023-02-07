@@ -1,3 +1,9 @@
+---
+uid: learn.wwl.recommend-secure-methodology-using-cloud-adoption-framework-caf.recommend-strategies-for-managing-minimizing-risk
+title: Recommend strategies for managing and minimizing risk
+description: Recommend strategies for managing and minimizing risk
+durationInMinutes: 20
+---
 Operating a business comes with risk. A security team's role is to inform and advise decision makers on how security risks fit in their frameworks. The goal of security is to learn about your business, and then use their security expertise to identify risks to business goals and assets. Security then advises your decision makers on each risk and then recommends which ones are acceptable. This information is provided with the understanding that the responsibility for these decisions lies with your asset or process owner.
 
 > [!NOTE]
