@@ -1,9 +1,4 @@
----
-uid: learn.wwl.design-strategy-for-securing-data.prioritize-mitigating-threats-to-data
-title: Prioritize mitigating threats to data
-description: Prioritize mitigating threats to data
-durationInMinutes: 10
----
+
 
 Cybersecurity weaknesses identified in your organization are mapped to
 actionable security recommendations and prioritized by their impact.

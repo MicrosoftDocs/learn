@@ -1,9 +1,4 @@
----
-uid: learn.wwl.design-strategy-for-securing-data.to-identify-protect-sensitive-data
-title: Design a strategy to identify and protect sensitive data
-description: Design a strategy to identify and protect sensitive data
-durationInMinutes: 10
----
+
 
 In a perfect world, all your employees understand the importance of
 information protection and work within your policies. In the real world,

@@ -1,9 +1,4 @@
----
-uid: learn.wwl.design-strategy-for-securing-data.summary
-title: Summary
-description: Summary
-durationInMinutes: 3
----
+
 
 In this module, you've learned how to build an overall data security
 strategy. You have learned different strategies for designing, defining,

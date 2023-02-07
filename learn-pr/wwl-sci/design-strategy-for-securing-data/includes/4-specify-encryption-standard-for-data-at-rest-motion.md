@@ -1,9 +1,4 @@
----
-uid: learn.wwl.design-strategy-for-securing-data.specify-encryption-standard-for-data-at-rest-motion
-title: Specify an encryption standard for data at rest and in motion
-description: Specify an encryption standard for data at rest and in motion
-durationInMinutes: 10
----
+
 
 Microsoft Defender for Cloud Apps encrypts data at rest to protect
 against 'out-of-band' attacks (such as accessing underlying storage)
