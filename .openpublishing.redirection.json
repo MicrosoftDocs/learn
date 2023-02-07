@@ -19989,6 +19989,16 @@
        "source_path": "learn-pr/wwl-azure/configure-azure-load-balancer/7-create-rules.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/configure-azure-load-balancer/8-create-load-balancer-rules",
       "redirect_document_id": false
+    },
+    {
+       "source_path": "learn-pr/wwl-azure/configure-file-folder-backups/6-manage-azure-recovery-services-agent.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-file-folder-backups/5-mars-backup-agent",
+      "redirect_document_id": false
+    },
+    {
+       "source_path": "learn-pr/wwl-azure/configure-file-folder-backups/5-configure-premises.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-file-folder-backups/6-configure-backups",
+      "redirect_document_id": false
     }
   ]
 }
