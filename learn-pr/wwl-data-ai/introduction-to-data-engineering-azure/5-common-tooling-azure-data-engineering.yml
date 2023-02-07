@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.introduction-daata-engineering-azure.common-tooling-azure-data-engineering
+uid: learn.wwl.introduction-data-engineering-azure.common-tooling-azure-data-engineering
 title: Data engineering in Microsoft Azure
 metadata:
   title: Data engineering in Microsoft Azure
   description: "Data engineering in Microsoft Azure"
-  ms.date: 02/06/2023
+  ms.date: 02/07/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial

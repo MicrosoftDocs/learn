@@ -1,9 +1,9 @@
 ### YamlMime:Module
-uid: learn.wwl.introduction-daata-engineering-azure
+uid: learn.wwl.introduction-data-engineering-azure
 metadata:
   title: Introduction to data engineering on Azure
-  description: "Introduction to data engineering on Azure"
-  ms.date: 02/06/2023
+  description: "This module describes how Microsoft Azure provides a comprehensive platform for data engineering."
+  ms.date: 02/07/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
@@ -28,11 +28,11 @@ products:
 subjects:
 - data-engineering
 units:
-- learn.wwl.introduction-daata-engineering-azure.introduction
-- learn.wwl.introduction-daata-engineering-azure.what-data-engineering
-- learn.wwl.introduction-daata-engineering-azure.common-patterns-azure-data-engineering
-- learn.wwl.introduction-daata-engineering-azure.common-tooling-azure-data-engineering
-- learn.wwl.introduction-daata-engineering-azure.knowledge-check
-- learn.wwl.introduction-daata-engineering-azure.summary
+- learn.wwl.introduction-data-engineering-azure.introduction
+- learn.wwl.introduction-data-engineering-azure.what-data-engineering
+- learn.wwl.introduction-data-engineering-azure.common-patterns-azure-data-engineering
+- learn.wwl.introduction-data-engineering-azure.common-tooling-azure-data-engineering
+- learn.wwl.introduction-data-engineering-azure.knowledge-check
+- learn.wwl.introduction-data-engineering-azure.summary
 badge:
   uid: learn.data-ai.intro-data-engineering.badge
