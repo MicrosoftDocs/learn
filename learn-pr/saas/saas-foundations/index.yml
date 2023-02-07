@@ -35,9 +35,6 @@ abstract: |
     - Describe the consumption-based model.
     - Describe the difference between SLA and SLO and define simple SLOs for your solution.
     - Identify suitable pricing model for your SaaS service
-    - Evaluate whether (product) is appropriate to (general product use case).
-    - Describe how (features) of (product) work to (solve problem).
-###########################################################################
 
 prerequisites: |
   - Basic familiarity with IT terms and concepts
