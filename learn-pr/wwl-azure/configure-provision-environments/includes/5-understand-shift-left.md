@@ -1,3 +1,8 @@
+---
+interactive:bash
+zone_pivot_groups:azure-interface
+title:Understand Shift-left
+---
 The goal for shifting left is to move quality upstream by performing tests early in the pipeline. It represents the phrase "fail fast, fail often" combining test and process improvements reduces the time it takes for tests to be run and the impact of failures later on.
 
 The idea is to ensure that most of the testing is complete before merging a change into the main branch.
