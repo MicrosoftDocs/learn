@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.transform-data-spark-azure-synapse-analytics.transform-dataframe
-title: Modify and save DataFrames
+title: Modify and save dataframes
 metadata:
-  title: Modify and save DataFrames
-  description: "Modify and save DataFrames"
+  title: Modify and save dataframes
+  description: "Modify and save dataframes"
   ms.date: 02/07/2023
   author: wwlpublish
   ms.author: jamesh
