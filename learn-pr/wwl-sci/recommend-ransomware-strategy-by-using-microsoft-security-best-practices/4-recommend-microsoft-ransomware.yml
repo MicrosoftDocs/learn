@@ -9,8 +9,6 @@ metadata:
   ms.author: hrasheed
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 3
+durationInMinutes: 15
 content: |
   [!include[](includes/4-recommend-microsoft-ransomware.md)]

@@ -1,9 +1,4 @@
----
-uid: learn.wwl.recommend-ransomware-strategy-by-using-microsoft-security-best-practices.introduction
-title: introduction
-description: introduction
-durationInMinutes: 10
----
+
 In this module, you'll learn how to:
 
 - Recognize different types of malware

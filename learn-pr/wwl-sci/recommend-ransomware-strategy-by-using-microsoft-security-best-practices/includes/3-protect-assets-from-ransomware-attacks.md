@@ -1,9 +1,4 @@
----
-uid: learn.wwl.recommend-ransomware-strategy-by-using-microsoft-security-best-practices.protect-assets-from-ransomware-attacks
-title: Protect assets from ransomware attacks
-description: Protect assets from ransomware attacks
-durationInMinutes: 15
----
+
 **Phase 2** of ransomware protection is to Limit the scope of damage.
 
 In this phase, you protect privileged roles to prevent attackers from obtaining a large scope of access for potential damage to data and systems.

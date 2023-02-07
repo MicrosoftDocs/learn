@@ -1,9 +1,4 @@
----
-uid: learn.wwl.recommend-ransomware-strategy-by-using-microsoft-security-best-practices.recommend-microsoft-ransomware
-title: Recommend Microsoft ransomware best practices
-description: Recommend Microsoft ransomware best practices
-durationInMinutes: 15
----
+
 **Phase 3** of ransomware protection is to make it hard to get in.
 
 In this phase, you make the attackers work a lot harder to get into your on-premises or cloud infrastructures by incrementally removing the risks at the points of entry.

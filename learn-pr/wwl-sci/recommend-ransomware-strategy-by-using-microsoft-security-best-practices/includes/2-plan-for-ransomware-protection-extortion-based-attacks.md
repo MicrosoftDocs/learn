@@ -1,9 +1,4 @@
----
-uid: learn.wwl.recommend-ransomware-strategy-by-using-microsoft-security-best-practices.plan-for-ransomware-protection-extortion-based-attacks
-title: Plan for ransomware protection and extortion-based attacks
-description: Plan for ransomware protection and extortion-based attacks
-durationInMinutes: 15
----
+
 **Phase 1** of ransomware protection is to develop a recovery plan.
 
 The first thing you should do for these attacks is prepare your organization so that it has a viable alternative to paying the ransom. While attackers in control of your organization have a variety of ways to pressure you into paying, the demands primarily focus on two categories:
