@@ -2,7 +2,7 @@ Backup center for Azure Backup provides a single unified management experience i
 
 In the Azure portal, search for **Backup center** and browse to the Backup center dashboard:
 
-:::image type="content" source="../media/backup-center-b3bf1f45.png" alt-text="Screenshot of the dashboard of Backup center for Azure Backup showing jobs and backup instances.":::
+:::image type="content" source="../media/backup-center-b3bf1f45.png" alt-text="Screenshot of the Backup center dashboard for Azure Backup showing jobs and backup instances.":::
 
 ### Things to consider when using Backup center
 

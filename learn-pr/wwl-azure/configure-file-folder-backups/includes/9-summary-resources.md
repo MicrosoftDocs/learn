@@ -10,6 +10,8 @@ In this module, you identified features and usage cases for Azure Backup. You re
 
 - Explore [Azure Recovery Services vaults](/azure/backup/backup-azure-recovery-services-vault-overview).
 
+- Explore [Backup center for Azure Backup and Azure Site Recovery](/azure/backup/backup-center-overview).
+
 - Back up [Azure file shares in the Azure portal](/azure/backup/backup-azure-files).
 
 - Create and configure an [Azure Recovery Services vault](/azure/backup/backup-create-recovery-services-vault).
