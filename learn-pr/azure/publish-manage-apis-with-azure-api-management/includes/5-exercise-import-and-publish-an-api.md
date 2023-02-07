@@ -19,7 +19,7 @@ The first part of the exercise is to import Northwind Shoes into an API Manageme
 
    ![Add a new API.](../media/5-import-open-api.png)
 
-1. In the OpenAPI specification complete the following settings:
+1. In the OpenAPI specification, complete the following settings:
  
     | Setting | Value |
     | --- | --- |
