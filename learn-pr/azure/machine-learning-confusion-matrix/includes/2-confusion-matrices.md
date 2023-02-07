@@ -2,11 +2,11 @@ Data can be thought of as continuous, categorical, or ordinal (categorical but w
 
 ## Continuous data distributions
 
-When we want to understand continuous data, the first step is often to see how it is distributed. Consider the histogram below:
+When we want to understand continuous data, the first step is often to see how it's distributed. Consider the following histogram:
 
 ![Histogram showing label distribution.](../media/8-g-a.jpg)
 
-We can see that the label is, on average, about zero, and most datapoints fall between -1 and 1. It appears as symmetrical – there are an approximately even count of numbers smaller and larger than the mean. If we wanted, we could use a table rather than a histogram, but it could be unwieldy.
+We can see that the label is, on average, about zero, and most datapoints fall between -1 and 1. It appears as symmetrical; there are an approximately even count of numbers smaller and larger than the mean. If we wanted, we could use a table rather than a histogram, but it could be unwieldy.
 
 ## Categorical data distributions
 
@@ -22,7 +22,7 @@ A label for three categories is similar:
 
 This tells us that there are 200 samples that are ‘person’, 400 that are ‘animal’, and 100 that are ‘tree’.
 
-As categorical labels are much simpler, we can often simple show these as simple tables. The two graphs above would appear like so:
+As categorical labels are simpler, we can often show these as simple tables. The two preceding graphs would appear like so:
 
 | Label      | False       |  True      |
 |------------|-------------|------------|
@@ -43,7 +43,7 @@ We can look at predictions that the model makes just like we look at the ground-
 | False      | 700         |
 | True       | 300         |
 
-This provides very direct information about the predictions our model is making, but it doesn’t tell us which of these are correct. While we can use a cost function to understand how often the correct responses are given, the cost function will not tell us which kinds of errors are being made. For example, the model might correctly guess all ‘true’ values, but also guess ‘true’ when it should have guessed ‘false’.
+This provides direct information about the predictions our model is making, but it doesn’t tell us which of these are correct. While we can use a cost function to understand how often the correct responses are given, the cost function won't tell us which kinds of errors are being made. For example, the model might correctly guess all ‘true’ values, but also guess ‘true’ when it should have guessed ‘false’.
 
 ## The confusion matrix
 
@@ -51,11 +51,11 @@ The key to understanding the model performance is to combine the table for model
 
 ![Confusion matrix with total numbers added.](../media/8-2-a.jpg)
 
-The square we have not filled out is called the confusion matrix.
+The square we haven't filled out is called the confusion matrix.
 
 Each cell in the confusion matrix tells us one thing about the model’s performance. These are True Negatives (TN), False Negatives (FN), False Positives (FP) and True Positives (TP).
 
-Let’s explain these one by one, replacing these acronyms with actual values. Blue squares mean the model made a correct prediction, and red squares men the model made an incorrect prediction.
+Let’s explain these one by one, replacing these acronyms with actual values. Blue-green squares mean the model made a correct prediction, and orange squares men the model made an incorrect prediction.
 
 ### True Negatives (TN)
 
@@ -65,7 +65,7 @@ The top-left value will list how many times the model predicted false, and the a
 
 ### False Negatives (FN)
 
-The top-right value tells us how many times the model predicted false, but the actual label was true. We know now that this is 200. How? Because the model predicted false 700 times, and 500 of those times it did so correctly. Thus, 200 times it must have predicted false when it should not have.
+The top-right value tells us how many times the model predicted false, but the actual label was true. We know now that this is 200. How? Because the model predicted false 700 times, and 500 of those times it did so correctly. Thus, 200 times it must have predicted false when it shouldn't have.
 
 ![Confusion matrix showing false negatives only.](../media/8-2-c.jpg)
 

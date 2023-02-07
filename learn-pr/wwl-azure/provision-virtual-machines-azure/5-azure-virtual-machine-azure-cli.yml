@@ -4,13 +4,11 @@ title: 'Exercise: Create a virtual machine by using the Azure CLI'
 metadata:
   title: 'Exercise: Create a virtual machine by using the Azure CLI'
   description: "Exercise: Create a virtual machine by using the Azure CLI"
-  ms.date: 01/17/2023
+  ms.date: 02/06/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 10
 content: |
   [!include[](includes/5-azure-virtual-machine-azure-cli.md)]
