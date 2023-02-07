@@ -1,3 +1,4 @@
+
 To keep Windows Server Active Directory in sync with Azure Active Directory, you can configure Azure AD Connect (for hybrid organizations).
 
 :::image type="content" source="../media/what-is-azure-ad-connect-7e4ac856.png" alt-text="What is Azure AD Connect":::

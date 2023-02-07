@@ -1,3 +1,4 @@
+
 Your users can install the client directly after downloading it. If you're deploying to multiple devices, you may want to also deploy the client to them through other means. Deploying using group policies or the Microsoft Endpoint Configuration Manager lets you run the installer silently using a command line. Run the following commands to deploy the client per-device or per-user.
 
 ### Per-device installation

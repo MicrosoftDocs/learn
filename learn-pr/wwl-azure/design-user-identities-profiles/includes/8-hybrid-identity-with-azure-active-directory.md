@@ -1,6 +1,7 @@
+
 Organizations are a mixture of on-premises and cloud applications. Users require access to those applications both on-premises and in the cloud.
 
-Microsoft identity spans on-premises and cloud-based capabilities. These solutions create a common user identity for authentication and authorization to all resources, regardless of location. We call this hybrid identity. Using hybrid identity to Azure AD and hybrid identity management these scenarios possible.
+Microsoft identity spans on-premises and cloud-based capabilities. These solutions create a common user identity for authentication and authorization to all resources, regardless of location.
 
 To achieve hybrid identity with Azure AD, one of three authentication methods can be used, depending on your scenarios. The three methods are:
 

@@ -1,3 +1,4 @@
+
 Azure offers multiple storage solutions that you can use to store your FSLogix profile container. This unit compares storage solutions that Azure offers for Azure Virtual Desktop FSLogix user profile containers.
 
 We recommend storing FSLogix profile containers on Azure Files for most of our customers.
@@ -61,7 +62,7 @@ The following tables compare the storage solutions Azure Storage offers for Azur
     All regions
   :::column-end:::
   :::column:::
-    [Select regions](https://azure.microsoft.com/global-infrastructure/services/?products=netapp&amp;regions=all).
+    [Select regions](https://azure.microsoft.com/global-infrastructure/services/?products=netapp&regions=all).
   :::column-end:::
   :::column:::
     All regions

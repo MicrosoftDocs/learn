@@ -1,16 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.design-for-user-identities-profiles.hybrid-identity-azure-active-directory
+uid: learn.wwl.design-for-user-identities-profiles.hybrid-identity-with-azure-active-directory
 title: Hybrid Identity with Azure Active Directory
 metadata:
   title: Hybrid Identity with Azure Active Directory
   description: "Hybrid Identity with Azure Active Directory"
-  ms.date: 04/07/2022
+  ms.date: 02/07/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 6
 content: |
   [!include[](includes/8-hybrid-identity-with-azure-active-directory.md)]

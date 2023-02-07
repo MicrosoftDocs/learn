@@ -1,3 +1,4 @@
+
 Below you will find examples of how to choose the right components for compute, storage and networking to help estimate pricing. To optimize infrastructure costs, you can take advantage of [one-year or three-year Azure Reserved Virtual Machine Instances](https://azure.microsoft.com/pricing/reserved-vm-instances/), which can save you up to 72 percent versus pay-as-you-go pricing. Reserved Virtual Machine Instances are flexible and can easily be exchanged or returned.<br>
 
 If you require Windows 7 virtual desktops, we also offer free Extended Security Updates until January 2023—to support legacy apps while you transition to Windows 10.
