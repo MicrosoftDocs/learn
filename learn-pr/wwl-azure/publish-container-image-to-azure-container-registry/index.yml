@@ -3,7 +3,7 @@ uid: learn.wwl.publish-container-image-to-azure-container-registry
 metadata:
   title: Manage container images in Azure Container Registry
   description: "Learn how to use Azure Container Registry to store your container images, and automate builds and deployments."
-  ms.date: 02/02/2023
+  ms.date: 02/06/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial

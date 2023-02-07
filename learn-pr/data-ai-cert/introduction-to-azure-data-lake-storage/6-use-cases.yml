@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-ai-introduction-to-azure-data-lake-storage.use-cases
-title: Examine uses for Azure Data Lake Storage Gen2
+title: Use Azure Data Lake Storage Gen2 in data analytics workloads
 metadata:
-  title: Examine uses for Azure Data Lake Storage Gen2
-  description: "Examine uses for Azure Data Lake Storage Gen2"
-  ms.date: 03/25/2022
+  title: Use Azure Data Lake Storage Gen2 in data analytics workloads
+  description: "Use Azure Data Lake Storage Gen2 in data analytics workloads"
+  ms.date: 02/03/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial

@@ -18,7 +18,7 @@ For more information about the subjects discussed in this module, see:
 - [Azure Cosmos DB's API for MongoDB (3.6 version): supported features and syntax](/azure/cosmos-db/mongodb/feature-support-36)
 - [Azure Cosmos DB's API for MongoDB (3.2 version): supported features and syntax](/azure/cosmos-db/mongodb/feature-support-32)
 - [Azure Cosmos DB capacity planner](https://cosmos.azure.com/capacitycalculator/)
-- [Create a database and collection for MongoDB API for Azure Cosmos DB using Azure CLI](https://azure.microsoft.com/azure/cosmos-db/scripts/cli/mongodb/create)
+- [Create a database and collection for MongoDB API for Azure Cosmos DB using Azure CLI](/azure/cosmos-db/scripts/cli/mongodb/create)
 - [Azure Cosmos DB resource model](/azure/cosmos-db/account-databases-containers-items)
 - [Provision database, container or autoscale throughput on Azure Cosmos DB for MongoDB resources](/azure/cosmos-db/mongodb/how-to-provision-throughput-mongodb)
 - [Create Azure Cosmos containers and databases with autoscale throughput](/azure/cosmos-db/provision-throughput-autoscale)

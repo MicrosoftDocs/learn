@@ -19989,6 +19989,11 @@
        "source_path": "learn-pr/wwl-azure/configure-azure-load-balancer/7-create-rules.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/configure-azure-load-balancer/8-create-load-balancer-rules",
       "redirect_document_id": false
+    },
+    {
+       "source_path": "learn-pr/data-ai-cert/introduction-to-azure-data-lake-storage/7-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-data-lake-storage/8-summary",
+      "redirect_document_id": false
     }
   ]
 }
