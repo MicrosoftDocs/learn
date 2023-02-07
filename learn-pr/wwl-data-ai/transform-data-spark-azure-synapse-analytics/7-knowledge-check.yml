@@ -31,18 +31,18 @@ quiz:
       explanation: "That's incorrect. The partitionBy method is the correct method to partition data across folders"
     - content: "distributeBy()"
       isCorrect: false
-      explanation: "That's incorrect.The partitionBy method is the correct method to split across folders when saving a DataFrame."
+      explanation: "That's incorrect. The partitionBy method is the correct method to split across folders when saving a DataFrame."
     - content: "partitionBy()"
       isCorrect: true
-      explanation: "That's correct. This method is an expressive and convenient operation in PySpark which partitions the DataFrame based on given columns and distributes the partitions across the nodes in the cluster."
+      explanation: "That's correct. This method is an expressive and convenient operation in PySpark, which partitions the DataFrame based on given columns and distributes the partitions across the nodes in the cluster."
   - content: "What happens if you drop an external table that is based on existing files?"
     choices:
     - content: "An error – you must delete the files first"
       isCorrect: false
-      explanation: "That's incorrect. The files and table are loosely-coupled, deleting the files does not remove the table from the metastore."
+      explanation: "That's incorrect. The files and table are loosely coupled, deleting the files doesn't remove the table from the metastore."
     - content: "The table is dropped from the metastore but the files remain unaffected"
       isCorrect: true
       explanation: "That's correct. The tables are loosely coupled from the files allowing the table to be dropped while the files remain."
     - content: "The table is dropped from the metastore and the files are deleted"
       isCorrect: false
-      explanation: "That's incorrect. The files are loosely-coupled and dropping the table has no impact on the existing files."
+      explanation: "That's incorrect. The files are loosely coupled and dropping the table has no impact on the existing files."

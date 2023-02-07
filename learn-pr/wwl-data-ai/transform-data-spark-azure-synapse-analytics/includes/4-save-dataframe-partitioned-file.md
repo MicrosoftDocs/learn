@@ -10,7 +10,7 @@ The SparkSQL library, which provides the DataFrame structure also allows you the
 The metastore enables you to write SQL queries as an internal view that return a DataFrame. You can then write this view as an external table. External tables are relational tables in the metastore that reference files in a data lake location that you specify. You can access this data by querying the table or by reading the files directly from the data lake.
 
 >[!NOTE]
-external tables are 'loosely bound' to the underlying files and deleting the table *does not* delete the files. This allows you to use Spark to do the heavy lifting of transformation then persist the data in the lake. Once this is done you can drop the table and downstream processes can access these optimized structures.
+> external tables are 'loosely bound' to the underlying files and deleting the table *does not* delete the files. This allows you to use Spark to do the heavy lifting of transformation then persist the data in the lake. Once this is done you can drop the table and downstream processes can access these optimized structures.
 
 The following code to saves the original sales orders data (loaded from CSV files) as a table within sales_orders metastore while the files are physically stored in the data lake **/sales_orders_table** as a folder with individual .parquet files split across the distributions located within the folder, this is done automatically and increases the performance for data analytic workloads.
 
