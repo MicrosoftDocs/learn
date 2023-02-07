@@ -9,7 +9,7 @@ Below are examples showing some of the key operations you should be familiar wit
 
 ## CosmosClient
 
-Creates a new `CosmosClient` with a connection string. `CosmosClient` is thread-safe. Its recommended to maintain a single instance of `CosmosClient` per lifetime of the application which enables efficient connection management and performance.
+Creates a new `CosmosClient` with a connection string. `CosmosClient` is thread-safe. It's recommended to maintain a single instance of `CosmosClient` per lifetime of the application which enables efficient connection management and performance.
 
 ```csharp
 CosmosClient client = new CosmosClient(endpoint, key);
@@ -19,7 +19,7 @@ CosmosClient client = new CosmosClient(endpoint, key);
 
 ### Create a database
 
-The `CosmosClient.CreateDatabaseIfNotExistsAsync` checks if a database exists, and if it doesn't, creates it. Only the database `id` is used to verify if there is an existing database. 
+The `CosmosClient.CreateDatabaseIfNotExistsAsync` checks if a database exists, and if it doesn't, creates it. Only the database `id` is used to verify if there's an existing database. 
 
 ```csharp
 // An object containing relevant information about the response
