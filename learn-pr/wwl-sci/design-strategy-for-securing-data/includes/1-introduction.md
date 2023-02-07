@@ -1,3 +1,9 @@
+---
+uid: learn.wwl.design-strategy-for-securing-data.introduction
+title: Introduction
+description: Introduction
+durationInMinutes: 3
+---
 
 In this module, you'll learn how to:
 

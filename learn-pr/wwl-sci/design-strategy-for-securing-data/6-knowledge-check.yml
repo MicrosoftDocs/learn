@@ -22,7 +22,7 @@ quiz:
     - content: "Use Azure encryption services to enforce double encryption and provide several independent layers of encryption to protect against compromises."
       isCorrect: true
       explanation: "Correct!"
-    - content: "Detect activity from unexpected locations or countries."
+    - content: "Detect activity from unexpected locations or countries/regions."
       isCorrect: false
       explanation: "Incorrect. Detecting activity from unexpected locations will help to prioritize cloud threats, but not directly protect against encryption compromises."
     - content: "Identify and control sensitive information (DLP); respond to sensitivity labels on content."

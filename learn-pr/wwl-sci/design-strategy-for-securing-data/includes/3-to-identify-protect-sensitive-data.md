@@ -1,3 +1,9 @@
+---
+uid: learn.wwl.design-strategy-for-securing-data.to-identify-protect-sensitive-data
+title: Design a strategy to identify and protect sensitive data
+description: Design a strategy to identify and protect sensitive data
+durationInMinutes: 10
+---
 
 In a perfect world, all your employees understand the importance of
 information protection and work within your policies. In the real world,
@@ -157,7 +163,7 @@ the product which is being used:
 -   Microsoft Purview: Know your data, Protect your data, Prevent Data
     loss, Govern your data. Microsoft Purview is a unified data
     governance service that helps you manage and govern your
-    on-premises, multi-cloud, and software-as-a-service (SaaS) data.
+    on-premises, multicloud, and software-as-a-service (SaaS) data.
     Create a holistic, up-to-date map of your data landscape with
     automated data discovery, sensitive data classification, and
     end-to-end data lineage. Enable data curators to manage and secure
@@ -194,54 +200,38 @@ Automated data discovery with Defender for Cloud Apps:
     policies and controls. Depending on how apps are connected affects
     how and when scans and controls are applied. You can connect your
     apps in one of the following ways:
-
-
 1.  **Investigate**: After you connect an app to Defender for Cloud Apps
     using its API connector, Defender for Cloud Apps scans all the files
     it uses. You can then go to the file investigation page
     by clicking **Investigate** > **Files** to get an overview of the files
     shared by your cloud apps, their accessibility, and their status.
-    For more information, see [Investigate
-    files](https://docs.microsoft.com/defender-cloud-apps/file-filters).
+    For more information, see [Investigate files](/defender-cloud-apps/file-filters).
 
-
-| Use an app connector               | Microsoft app connectors use the APIs supplied by app providers. They provide greater visibility into and control over the apps used in your organization. Scans are performed periodically (every 12 hours) and in real time (triggered each time a change is detected). For more information and instructions on how to add apps, see Connecting apps.                                                                                                                                            |
-|------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Use Conditional Access App Control | Conditional Access App Control solution uses a reverse proxy architecture that is uniquely integrated with Azure Active Directory (AD) Conditional Access. Once configured in Azure AD, users will be routed to Defender for Cloud Apps where access and session policies are enforced to protect the data apps attempt to use. This connection method allows you to apply controls to any app. For more information, see Protect apps with Defender for Cloud Apps Conditional Access App Control. |
+    - Use an app connector - Microsoft app connectors use the APIs supplied by app providers. They provide greater visibility into and control over the apps used in your organization. Scans are performed periodically (every 12 hours) and in real time (triggered each time a change is detected). For more information and instructions on how to add apps.
+    - Use Conditional Access App Control - Conditional Access App Control solution uses a reverse proxy architecture that is uniquely integrated with Azure Active Directory (AD) Conditional Access. Once configured in Azure AD, users will be routed to Defender for Cloud Apps where access and session policies are enforced to protect the data apps attempt to use. This connection method allows you to apply controls to any app. For more information, see Protect apps with Defender for Cloud Apps Conditional Access App Control.
 
 
 ### Defender Phase 2: Classify sensitive information
 
-Data Classification with Defender for Cloud Apps is natively integrated
-with Microsoft Information Protection, which is part of Microsoft
-Purview.
+Data Classification with Defender for Cloud Apps is natively integrated with Microsoft Information Protection, which is part of Microsoft Purview.
 
 ### Purview Phase 2: Protect your data (Phase 3 Defender)
 
-Data protection with Microsoft Purview (including Defender for Cloud
-Apps as a capability):
+Data protection with Microsoft Purview (including Defender for Cloud Apps as a capability):
 
-
-| Capability                                            | What problems does it solve?                                                                                                                                                                                                                           | Get started                                                                             |
-|-------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
-| Sensitivity labels                                    | A single solution across apps, services, and devices to label and protect your data as it travels inside and outside your organization.                                                                                                                | Get started with sensitivity labels                                                     |                                                      |                                                                                                                                                                                                                                                        |                                                                                         |
-|                                                       | Example scenarios:                                                                                                                                                                                                                                     |                                                                                         |
-|                                                       | - Manage sensitivity labels for Office apps                                                                                                                                                                                                            |                                                                                         |
-|                                                       | - Encrypt documents and emails                                                                                                                                                                                                                         |                                                                                         |
-|                                                       | - Apply and view labels in Power BI                                                                                                                                                                                                                    |                                                                                         |                                                                                         |
-|                                                       | For a comprehensive list of scenarios for sensitivity labels, see the Get started documentation.                                                                                                                                                       |                                                                                         |
-| Azure Information Protection unified labeling client  | For Windows computers, extends labeling to File Explorer and PowerShell, with additional features for Office apps if needed                                                                                                                            | Azure Information Protection unified labeling client administrator guide                |
-| Double Key Encryption                                 | Under all circumstances, only your organization can ever decrypt protected content or for regulatory requirements, you must hold encryption keys within a geographical boundary.                                                                       | Deploy Double Key Encryption                                                            |
-| Office 365 Message Encryption (OME)                   | Encrypts email messages and attached documents that are sent to any user on any device, so only authorized recipients can read emailed information.                                                                                                    | Set up new Message Encryption capabilities                                              |
-|                                                       | Example scenario: Revoke email encrypted by Advanced Message Encryption                                                                                                                                                                                |                                                                                         |
-| Service encryption with Customer Key                  | Protects against viewing of data by unauthorized systems or personnel, and complements BitLocker disk encryption in Microsoft datacenters.                                                                                                             | Set up Customer Key for Office 365                                                      |
-| SharePoint Information Rights Management (IRM)        | Protects SharePoint lists and libraries so that when a user checks out a document, the downloaded file is protected so that only authorized people can view and use the file according to policies that you specify.                                   | Set up Information Rights Management (IRM) in SharePoint admin center                   |
-| Rights Management connector                           | Protection-only for existing on-premises deployments that use Exchange or SharePoint Server, or file servers that run Windows Server and File Classification Infrastructure (FCI).                                                                     | Steps to deploy the RMS connector                                                       |
-| Azure Information Protection unified labeling scanner | Discovers, labels, and protects sensitive information that resides in data stores that are on premises.                                                                                                                                                | Configuring and installing the Azure Information Protection unified labeling scanner    |
-| Microsoft Defender for Cloud Apps                     | Discovers, labels, and protects sensitive information that resides in data stores that are in the cloud.                                                                                                                                               | Discover, classify, label, and protect regulated and sensitive data stored in the cloud |
-| Microsoft Purview Data Map                            | Identifies sensitive data and applies automatic labeling to content in Microsoft Purview Data Map assets. These include files in storage such as Azure Data Lake and Azure Files, and schematized data such as columns in Azure SQL DB, and Cosmos DB. | Labeling in Microsoft Purview Data Map                                                  |
-| Microsoft Information Protection SDK                  | Extends sensitivity labels to third-party apps and services.                                                                                                                                                                                           | Microsoft Information Protection (MIP) SDK setup and configuration                      |
-|                                                       | Example scenario: Set and get a sensitivity label (C++)                                                                                                                                                                                                |                                                                                         |
+| Capability | What problems does it solve? |
+|---|---|
+| Sensitivity labels | A single labeling solution across apps, services, and devices to protect your data as it travels inside and outside your organization.  |
+| Azure Information Protection unified labeling client | For Windows computers, extends labeling to File Explorer and PowerShell, with additional features for Office apps if needed |
+| Double Key Encryption | Under all circumstances, only your organization can ever decrypt protected content or for regulatory requirements, you must hold encryption keys within a geographical boundary. |
+| Office 365 Message Encryption (OME) | Encrypts email messages and attached documents that are sent to any user on any device, so only authorized recipients can read emailed information.  |
+| Service encryption with Customer Key | Protects against viewing of data by unauthorized systems or personnel, and complements BitLocker disk encryption in Microsoft datacenters. |
+| SharePoint Information Rights Management (IRM) | Protects SharePoint lists and libraries so that when a user checks out a document, the downloaded file is protected so that only authorized people can view and use the file according to policies that you specify. |
+| Rights Management connector | Protection-only for existing on-premises deployments that use Exchange or SharePoint Server, or file servers that run Windows Server and File Classification Infrastructure (FCI). |
+| Information protection scanner | Discovers, labels, and protects sensitive information that resides in data stores that are on premises. |
+| Microsoft Defender for Cloud Apps | Discovers, labels, and protects sensitive information that resides in data stores that are in the cloud. |
+| Microsoft Purview Data Map | Identifies sensitive data and applies automatic labeling to content in Microsoft Purview Data Map assets. These include files in storage such as Azure Data Lake and Azure Files, and schematized data such as columns in Azure SQL DB and Azure Cosmos DB. |
+| Microsoft Information Protection SDK | Extends sensitivity labels to third-party apps and services.  |
 
 ### Defender Phase 4: Monitor and report on your data
 
@@ -249,8 +239,7 @@ Monitoring and reporting is a greater emphasis in the data protection
 story with Defender for Cloud Apps.
 
 Your policies are all in place to inspect and protect your data. Now,
-you'll want to [check your
-dashboard](https://docs.microsoft.com/defender-cloud-apps/daily-activities-to-protect-your-cloud-environment#check-the-dashboard) daily
+you'll want to [check your dashboard](/defender-cloud-apps/daily-activities-to-protect-your-cloud-environment#check-the-dashboard) daily
 to see what new alerts have been triggered. It's a good place to keep
 an eye on the health of your cloud environment. Your dashboard helps you
 get a sense of what's happening and, if necessary, launch
@@ -285,12 +274,12 @@ In Microsoft Purview, governance consists of:
 
 To keep what you need and delete what you don't:
 
-| Capability                                                                           | What problems does it solve?                                                                                                                                                 |
-|--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Retention policies for Microsoft 365 workloads, with retention labels for exceptions | Lets you retain or delete content with policy management for email, documents, Teams and Yammer messages.                                                                    |
-| Inactive mailboxes                                                                   | Lets you retain mailbox content after employees leave the organization so that this content remains accessible to administrators, compliance officers, and records managers. |
-| Archive mailboxes                                                                    | Provides additional mailbox storage space for users.                                                                                                                         |
-| Import service for PST files                                                         | Supports bulk-importing PST files to Exchange Online mailboxes to retain and search email messages for compliance or regulatory requirements.                                |
+| Capability| What problems does it solve? |
+|---|---|
+| Retention policies for Microsoft 365 workloads, with retention labels for exceptions | Lets you retain or delete content with policy management for email, documents, Teams and Yammer messages.|
+| Inactive mailboxes | Lets you retain mailbox content after employees leave the organization so that this content remains accessible to administrators, compliance officers, and records managers. |
+| Archive mailboxes | Provides additional mailbox storage space for users.|
+| Import service for PST files| Supports bulk-importing PST files to Exchange Online mailboxes to retain and search email messages for compliance or regulatory requirements.|
 
 
 ## Microsoft Purview Records Management
@@ -298,11 +287,11 @@ To keep what you need and delete what you don't:
 Manage high-value items for business, legal, or regulatory
 record-keeping requirements:
 
-| Capability                                                                                 | What problems does it solve?                                                                                                                                                                                                   |
-|--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| File plan                                                                                  | Lets you create retention labels interactively or import in bulk, and export for analysis. Labels support additional administrative information (optional) to help you identify and track business or regulatory requirements. |
-| Retention labels for individual items, retention policies if needed for baseline retention | Labels support flexible retention and deletion schedules that can be applied manually or automatically, with records declaration when needed.                                                                                  |
-| Disposition review and proof of disposition                                                | Manual review of content before it's permanently deleted, with proof of disposition of records.                                                                                                                                |
+| Capability| What problems does it solve? |
+|---|---|
+| File plan | Lets you create retention labels interactively or import in bulk, and export for analysis. Labels support additional administrative information (optional) to help you identify and track business or regulatory requirements. |
+| Retention labels for individual items, retention policies if needed for baseline retention | Labels support flexible retention and deletion schedules that can be applied manually or automatically, with records declaration when needed.|
+| Disposition review and proof of disposition| Manual review of content before it's permanently deleted, with proof of disposition of records.|
 
 ## Best Practices
 

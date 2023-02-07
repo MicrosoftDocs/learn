@@ -1,3 +1,9 @@
+---
+uid: learn.wwl.design-strategy-for-securing-data.exercise
+title: Exercise: Design a strategy for securing data
+description: Exercise: Design a strategy for securing data
+durationInMinutes: 3
+---
 This case study exercise is designed to provide experience performing some conceptual design tasks that relate to the subjects learned in this module.
 
 ## Case study: data security
