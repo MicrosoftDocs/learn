@@ -9,8 +9,6 @@ metadata:
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
-azureSandbox: false
-labModal: false
 durationInMinutes: 8
 content: |
   [!include[](includes/4-describe-privileged-identity-management.md)]

@@ -1,9 +1,4 @@
----
-uid: learn.wwl.describe-identity-protection-governance-capabilities-of-azure-ad.describe-azure
-title: Describe Azure Identity Protection
-description: Describe Azure Identity Protection
-durationInMinutes: 3
----
+
 Identity Protection is a tool that allows organizations to accomplish three key tasks:
 
 - Automate the detection and remediation of identity-based risks.

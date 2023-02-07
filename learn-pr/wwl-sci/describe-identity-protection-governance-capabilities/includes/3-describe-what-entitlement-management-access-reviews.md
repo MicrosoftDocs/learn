@@ -1,9 +1,4 @@
----
-uid: learn.wwl.describe-identity-protection-governance-capabilities-of-azure-ad.describe-what-is-entitlement-management-access-reviews
-title: Describe what is entitlement management and access reviews
-description: Describe what is entitlement management and access reviews
-durationInMinutes: 8
----
+
 Entitlement management is an identity governance feature that enables organizations to manage the identity and access lifecycle at scale. Entitlement management automates access request workflows, access assignments, reviews, and expiration.
 
 The following video introduces entitlement management, and looks at how access packages are used for resources.

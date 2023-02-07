@@ -1,9 +1,4 @@
----
-uid: learn.wwl.describe-identity-protection-governance-capabilities-of-azure-ad.summary-resources
-title: Summary & resources
-description: Summary & resources
-durationInMinutes: 1
----
+
 In this module, you learned how Azure AD provides tools to help you govern the identity lifecycle and the access lifecycle. You also learned that Azure AD can be synchronized with human resources (HR) systems to manage identity lifecycles at scale.
 
 This module discussed entitlement management, which automates access requests, access assignments, reviews, and expiration. You learned how these reviews can help you monitor who has access to what resources.

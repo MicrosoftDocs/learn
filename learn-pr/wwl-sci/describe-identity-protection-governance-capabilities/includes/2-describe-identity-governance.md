@@ -1,9 +1,4 @@
----
-uid: learn.wwl.describe-identity-protection-governance-capabilities-of-azure-ad.describe-identity-governance
-title: Describe identity governance in Azure AD
-description: Describe identity governance in Azure AD
-durationInMinutes: 4
----
+
 Azure AD identity governance gives organizations the ability to do the following tasks:
 
 - Govern the identity lifecycle.
