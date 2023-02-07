@@ -1,3 +1,4 @@
+
 This exercise uses the Azure Blob storage client library to show you how to perform the following actions on Azure Blob storage in a console app:
 
 * Create a container
