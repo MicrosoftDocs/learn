@@ -1,4 +1,4 @@
-One of the main features of an identity platform is to verify, or authenticate, credentials when a user signs in to a device, application, or service. Azure AD offers different methods of authentication. 
+One of the main features of an identity **platform** is to verify, or authenticate, credentials when a user signs in to a device, application, or service. Azure AD offers different methods of authentication. 
 
 ### Passwords
 
