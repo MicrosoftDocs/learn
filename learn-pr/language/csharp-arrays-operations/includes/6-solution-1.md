@@ -17,7 +17,7 @@ string result = String.Join(" ", newMessage);
 Console.WriteLine(result);
 ```
 
-This code is merely *one possible solution*, because you could have taken different approaches to various steps in this process. As long as your output matches the following, you succeeded!
+This code is merely *one possible solution*, because you could've taken different approaches to various steps in this process. As long as your output matches the following, you succeeded!
 
 ```output
 ehT kciuq nworb xof spmuj revo eht yzal god
