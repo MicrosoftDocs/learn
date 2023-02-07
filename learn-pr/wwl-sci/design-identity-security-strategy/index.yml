@@ -2,8 +2,8 @@
 uid: learn.wwl.design-identity-security-strategy
 metadata:
   title: Design an identity security strategy
-  description: "Learn how to design a cybersecurity strategy for identity management."
-  ms.date: 07/27/2022
+  description: "<div|<span style=\"color:rgb(34, 34, 34);font-family:&quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, Verdana;font-size:12px;display:inline !important;\"|Learn how to design a cybersecurity strategy for identity management.</span|  </div|"
+  ms.date: 02/07/2023
   author: wwlpublish
   ms.author: hrasheed
   ms.topic: interactive-tutorial
@@ -30,7 +30,6 @@ roles:
 - solution-architect
 products:
 - azure
-- mdatp
 subjects:
 - architecture
 - security

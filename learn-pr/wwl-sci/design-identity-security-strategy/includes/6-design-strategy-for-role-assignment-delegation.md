@@ -1,17 +1,14 @@
-
-
+Azure Active Directory (Azure AD) lets you target Azure AD groups for role assignments. Assigning roles to groups can simplify the management of role assignments in Azure AD with minimal effort from your Global Administrators and Privileged Role Administrators.
 
 ## Why assign roles to groups?
 
-Azure Active Directory (Azure AD) lets you target Azure AD groups for role assignments. Assigning roles to groups can simplify the management of role assignments in Azure AD with minimal effort from your Global Administrators and Privileged Role Administrators.
-
 Consider the example where the Contoso company has hired people across geographies to manage and reset passwords for employees in its Azure AD organization. Instead of asking a Privileged Role Administrator or Global Administrator to assign the Helpdesk Administrator role to each
-person individually, they can create a Contoso_Helpdesk_Administrators group and assign the role to the group. When people join the group, they're assigned the role indirectly. Your existing governance workflow can then take care of the approval process and auditing of the group's
+person individually, they can create a Contoso_Helpdesk_Administrators group and assign the role to the group. When people join the group, they are assigned the role indirectly. Your existing governance workflow can then take care of the approval process and auditing of the group's
 membership to ensure that only legitimate users are members of the group and are thus assigned the Helpdesk Administrator role.
 
 ## Use PIM to make a group eligible for a role assignment
 
-If you don't want members of the group to have standing access to a role, you can use [Azure AD Privileged Identity Management (PIM)](/azure/active-directory/privileged-identity-management/pim-configure) to make a group eligible for a role assignment. Each member of the group is then eligible to activate the role assignment for a fixed time duration.
+If you do not want members of the group to have standing access to a role, you can use [Azure AD Privileged Identity Management (PIM)](/azure/active-directory/privileged-identity-management/pim-configure) to make a group eligible for a role assignment. Each member of the group is then eligible to activate the role assignment for a fixed time duration.
 
 ## Best practices for Azure AD roles
 
@@ -66,7 +63,8 @@ following reasons:
 -   A malicious actor can compromise an account.
 -   People move teams within a company. If there's no auditing, they can amass unnecessary access over time.
 
-For information about access reviews for roles, see [Create an access review of Azure AD roles in PIM](/azure/active-directory/privileged-identity-management/pim-create-azure-ad-roles-and-resource-roles-review). For information about access reviews of groups that are assigned roles, see [Create an access review of groups and applications in Azure AD access reviews](/azure/active-directory/governance/create-access-review).
+For information about access reviews for roles, see [Create an access review of Azure AD roles in PIM](/azure/active-directory/privileged-identity-management/pim-create-azure-ad-roles-and-resource-roles-review). For information about access reviews of groups that are assigned roles, see [Create an access review of groups and applications in Azure AD access
+reviews](https://docs.microsoft.com/azure/active-directory/governance/create-access-review).
 
 ### Limit the number of global administrators to less than five
 
@@ -80,7 +78,8 @@ Microsoft recommends that you keep two break glass accounts that are
 permanently assigned to the Global Administrator role. Make sure that
 these accounts don't require the same multifactor authentication
 mechanism as your normal administrative accounts to sign in, as
-described in [Manage emergency access accounts in Azure AD](/azure/active-directory/roles/security-emergency-access).
+described in [Manage emergency access accounts in Azure
+AD](https://docs.microsoft.com/azure/active-directory/roles/security-emergency-access).
 
 ### Use groups for Azure AD role assignments and delegate the role assignment
 
@@ -99,13 +98,13 @@ groups. For more information, see [Use Azure AD groups to manage role assignment
 ### Activate multiple roles at once using privileged access groups
 
 It may be the case that an individual has five or six eligible
-assignments to Azure AD roles through PIM. They'll have to activate
+assignments to Azure AD roles through PIM. They will have to activate
 each role individually, which can reduce productivity. Worse still, they
 can also have tens or hundreds of Azure resources assigned to them,
 which aggravates the problem.
 
 In this case, you should use [privileged access groups](/azure/active-directory/privileged-identity-management/groups-features). Create a privileged access group and grant it permanent access to multiple roles (Azure AD and/or Azure). Make that user an eligible
-member or owner of this group. With just one activation, they'll have access to all the linked resources.
+member or owner of this group. With just one activation, they will have access to all the linked resources.
 
 ![Screenshot of Privileged Access Group with eligible members on the left mapped to Azure A D roles on the right.](../media/privileged-access-group.png) 
 
@@ -121,7 +120,7 @@ To understand how to delegate access governance in entitlement
 management, it helps to consider an example. Suppose an organization has
 the following administrator and managers.
 
-Hana is the IT administrator. They have contacts in each department who are responsible for
+Hana is the IT administrator. She has contacts in each department who are responsible for
 their department's resources and business critical content: Mamta in Marketing, Mark in Finance, and Joe in Legal.
 
 With entitlement management, access governance can be delegated to these

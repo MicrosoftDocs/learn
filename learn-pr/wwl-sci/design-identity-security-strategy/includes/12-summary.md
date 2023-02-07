@@ -33,12 +33,13 @@ security strategy and architecture. You should now be able to:
 
 -   [Identity Zero Trust integration overview](/security/zero-trust/integrate/identity)
 
--   [Use Azure AD groups to manage role assignments - Azure Active Directory](/azure/active-directory/roles/groups-concept)
+-   [Use Azure AD groups to manage role assignments - Azure Active
+    Directory](https://docs.microsoft.com/azure/active-directory/roles/groups-concept)
 
 ### Learn more with self-paced training
 
--   [Investigate roles in Azure AD](/training/modules/azure-active-directory/4-roles-azure-active-directory)
+-   [Investigate roles in Azure AD - Learn](/learn/modules/azure-active-directory/4-roles-azure-active-directory)
 
--   [Explore authentication options](/training/modules/hybrid-identity/3-authentication-options)
+-   [Explore authentication options - Learn](/learn/modules/hybrid-identity/3-authentication-options)
 
--   [Explore the zero trust model](/training/modules/azure-ad-privileged-identity-management/2-microsofts-zero-trust-model)
+-   [Explore the zero trust model - Learn](/learn/modules/azure-ad-privileged-identity-management/2-microsofts-zero-trust-model)

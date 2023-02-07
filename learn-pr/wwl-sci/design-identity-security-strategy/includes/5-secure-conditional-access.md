@@ -137,7 +137,3 @@ policies include:
 -   Standard policy components - Apps, platform types, grant control types, named locations should all be defined in advanced to ensure consistency across all policies
 
 For more details on the recommended framework for conditional access policies, see [Conditional Access framework and policies](/azure/architecture/guide/security/conditional-access-framework).
-
-For more detailed guidance on configuring Conditional Access, view the following interactive guide.
-
-[:::image type="content" source="../media/configure-conditional-access-interactive-guide.png" alt-text="Cover for an interactive guide that says Configure Conditional Access in Azure AD." border="true":::](https://mslearn.cloudguides.com/guides/Configure%20Conditional%20Access%20in%20Azure%20AD)
