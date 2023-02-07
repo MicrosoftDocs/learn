@@ -3,7 +3,7 @@ uid: learn.wwl.design-implement-azure-expressroute
 metadata:
   title: Design and implement Azure ExpressRoute
   description: "<div|<span style=\"color:rgb(34, 34, 34);font-family:&quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, Verdana;font-size:12px;display:inline !important;\"|You will learn how to design and implement Azure ExpressRoute, ExpressRoute Global Reach, ExpressRoute FastPath, and when to use each service according to your environments requirements.</span| </div|"
-  ms.date: 02/06/2023
+  ms.date: 02/07/2023
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
