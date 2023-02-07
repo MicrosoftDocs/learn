@@ -2,8 +2,8 @@
 uid: learn.wwl.secure-azure-database-for-postgresql
 metadata:
   title: Secure Azure Database for PostgreSQL
-  description: "<div|<span style=\"color:rgb(34, 34, 34);font-family:&quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, Verdana;font-size:12px;display:inline !important;\"|Azure Database for PostgreSQL includes comprehensive security features including encryption in transit and at rest, authentication, and granting permissions to database users. In this module you will learn about the security features of Azure Database for PostgreSQL, and how to configure them.</span|  </div|"
-  ms.date: 02/03/2023
+  description: "Azure Database for PostgreSQL includes comprehensive security features including encryption in transit and at rest, authentication, and granting permissions to database users. In this module you will learn about the security features of Azure Database for PostgreSQL, and how to configure them."
+  ms.date: 02/07/2023
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
