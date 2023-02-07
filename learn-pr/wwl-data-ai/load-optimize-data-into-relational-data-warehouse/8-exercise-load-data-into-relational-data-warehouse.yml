@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.load-optimize-data-into-relational-data-warehouse.exercise-load-data-into-relational-data-warehouse
-title: Exercise load data into a relational data warehouse
+uid: learn.wwl.load-data-into-relational-data-warehouse.exercise-load-data-into-relational-data-warehouse
+title: Exercise - load data into a relational data warehouse
 metadata:
-  title: Exercise load data into a relational data warehouse
-  description: "Exercise load data into a relational data warehouse"
+  title: Exercise - load data into a relational data warehouse
+  description: "Exercise - load data into a relational data warehouse"
   ms.date: 02/07/2023
   author: wwlpublish
   ms.author: jamesh
