@@ -24,14 +24,14 @@ quiz:
     - content: "20%"
       isCorrect: false
       explanation: "Incorrect. By default, new slots are given a routing rule of `0%`."
-  - content: "Some configuration elements follow the content across a swap (not slot specific), whereas other configuration elements stay in the same slot after a swap (slot specific). Which of the settings below are swapped?"
+  - content: "Some configuration elements follow the content across a swap (not slot specific), whereas other configuration elements stay in the same slot after a swap (slot specific). Which of the following settings are swapped?"
     choices:
     - content: "Publishing endpoints"
       isCorrect: false
       explanation: "Incorrect. Publishing endpoints aren't swapped."
     - content: "WebJobs content"
       isCorrect: true
-      explanation: "Correct. WebJobs content are swapped."
+      explanation: "Correct. WebJobs content is swapped."
     - content: "WebJobs schedulers"
       isCorrect: false
       explanation: "Incorrect. WebJobs schedulers aren't swapped."
