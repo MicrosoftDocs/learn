@@ -4,7 +4,7 @@ The **Form Recognizer** in Azure provides intelligent form processing capabiliti
 - Processing tables of data.
 - Identifying specific types of field, such as dates, telephone numbers, addresses, totals, and others.
 
-Form Recognizer supports automated document processing through:
+Form **Recognizer** supports automated document processing through:
 
 - **A pre-built receipt model** that is provided out-of-the-box, and is trained to recognize and extract data from sales receipts.
 - **Custom models**, which enable you to extract what are known as key/value pairs and table data from forms.  Custom models are trained using your own data, which helps to tailor this model to your specific forms.  Starting with only five samples of your forms, you can train the custom model.  After the first training exercise, you can evaluate the results and consider if you need to add more samples and re-train.
