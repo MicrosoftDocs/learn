@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/03/2023
+  ms.date: 02/07/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
@@ -17,21 +17,21 @@ quiz:
     choices:
     - content: "0%"
       isCorrect: true
-      explanation: "That's correct. By default, new slots are given a routing rule of `0%`."
+      explanation: "Correct. By default, new slots are given a routing rule of `0%`."
     - content: "10%"
       isCorrect: false
-      explanation: "That's incorrect. By default, new slots are given a routing rule of `0%`."
+      explanation: "Incorrect. By default, new slots are given a routing rule of `0%`."
     - content: "20%"
       isCorrect: false
-      explanation: "That's incorrect. By default, new slots are given a routing rule of `0%`."
+      explanation: "Incorrect. By default, new slots are given a routing rule of `0%`."
   - content: "Some configuration elements follow the content across a swap (not slot specific), whereas other configuration elements stay in the same slot after a swap (slot specific). Which of the settings below are swapped?"
     choices:
     - content: "Publishing endpoints"
       isCorrect: false
-      explanation: "That's incorrect. Publishing endpoints are not swapped."
+      explanation: "Incorrect. Publishing endpoints aren't swapped."
     - content: "WebJobs content"
       isCorrect: true
-      explanation: "That's correct. WebJobs content are swapped."
+      explanation: "Correct. WebJobs content are swapped."
     - content: "WebJobs schedulers"
       isCorrect: false
-      explanation: "That's incorrect. WebJobs schedulers are not swapped."
+      explanation: "Incorrect. WebJobs schedulers aren't swapped."
