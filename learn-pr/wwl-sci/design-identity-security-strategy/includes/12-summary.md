@@ -1,9 +1,4 @@
----
-uid: learn.wwl.design-identity-security-strategy.summary
-title: Summary
-description: Summary
-durationInMinutes: 3
----
+
 ### Summary and Resources
 
 In this module, you've learned how to build an overall identity

@@ -1,9 +1,4 @@
----
-uid: learn.wwl.design-identity-security-strategy.design-for-privileged-activities
-title: Design a security strategy for privileged activities
-description: Design a security strategy for privileged activities
-durationInMinutes: 10
----
+
 Organizations should make securing privileged access the top security
 priority because of the significant potential business impact (and high
 likelihood) of attackers compromising this level of access. Privileged

@@ -1,9 +1,4 @@
----
-uid: learn.wwl.design-identity-security-strategy.design-for-privileged-role-access-to-infrastructure
-title: Design a security strategy for privileged role access to infrastructure
-description: Design a security strategy for privileged role access to infrastructure
-durationInMinutes: 10
----
+
 The security of business assets depends on the integrity of the
 privileged accounts that administer your IT systems. Cyber-attackers use
 credential theft attacks to target administrator accounts and other

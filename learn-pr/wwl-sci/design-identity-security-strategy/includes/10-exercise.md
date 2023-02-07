@@ -1,9 +1,4 @@
----
-uid: learn.wwl.design-identity-security-strategy.exercise
-title: Exercise: Design an identity security strategy
-description: Exercise: Design an identity security strategy
-durationInMinutes: 3
----
+
 ## Case Study: Design an identity security solution
 
 Tailwind Traders is a fictitious home improvement retailer. It operates

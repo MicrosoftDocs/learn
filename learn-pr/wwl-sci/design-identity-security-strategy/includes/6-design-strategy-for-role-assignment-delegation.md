@@ -1,9 +1,4 @@
----
-uid: learn.wwl.design-identity-security-strategy.design-strategy-for-role-assignment-delegation
-title: Design a strategy for role assignment and delegation
-description: Design a strategy for role assignment and delegation
-durationInMinutes: 10
----
+
 
 
 

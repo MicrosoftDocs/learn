@@ -1,9 +1,4 @@
----
-uid: learn.wwl.design-identity-security-strategy.define-identity-governance-for-access-reviews-entitlement-management
-title: Define Identity governance for access reviews and entitlement management
-description: Define Identity governance for access reviews and entitlement management
-durationInMinutes: 10
----
+
 By default, Global administrators and Identity governance administrators
 can create and manage all aspects of Azure AD entitlement management and
 easily ensure that users or guests have the appropriate access. You can

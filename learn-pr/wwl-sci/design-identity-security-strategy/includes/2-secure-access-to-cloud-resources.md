@@ -1,9 +1,4 @@
----
-uid: learn.wwl.design-identity-security-strategy.secure-access-to-cloud-resources
-title: Secure access to cloud resources
-description: Secure access to cloud resources
-durationInMinutes: 10
----
+
 Cloud applications and the mobile workforce have redefined the security
 perimeter. Employees are bringing their own devices and working
 remotely. Data is accessed outside the corporate network and shared with
