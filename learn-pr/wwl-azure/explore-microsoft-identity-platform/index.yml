@@ -2,14 +2,14 @@
 uid: learn.wwl.explore-microsoft-identity-platform
 metadata:
   title: Explore the Microsoft identity platform
-  description: "Learn the core features and functionality of the Microsoft identity platform which includes authentication service, open-source libraries, and application management tools to enable and control access to resources."
-  ms.date: 02/05/2023
+  description: "Learn the core features and functionality of the Microsoft identity platform including authentication, libraries, and app management tools."
+  ms.date: 02/07/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Explore the Microsoft identity platform
-summary: Learn the core features and functionality of the Microsoft identity platform which includes authentication service, open-source libraries, and application management tools to enable and control access to resources.
+summary: Learn the core features and functionality of the Microsoft identity platform including authentication, libraries, and app management tools.
 abstract: |
   After completing this module, you'll be able to:
   *   Identify the components of the Microsoft identity platform.
