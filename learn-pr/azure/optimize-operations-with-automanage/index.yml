@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.optimize-operations-with-automanage
+metadata:
+  title: Optimizing IT operations and management with Azure Automanage
+  description: Learn how to use Azure Automanage to optimize IT operations and management.
+  ms.date: 01/10/2023
+  author: johnmarco
+  ms.author: johnmarc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Optimizing IT operations and management with Azure Automanage
+summary: In this module, you'll discover how to optimize IT operations and management with Azure Automanage. 
+abstract: |
+  By the end of this module, you'll be able to:
+  - Describe how Azure Automanage best practices can optimize the operations of Windows Server and Linux virtual machines.
+  - Explain the different services available through Azure Automanage.
+  - Create and assign a custom configuration profile for Azure Automanage machines.
+  - Describe how to extend Azure Automanage capabilities to non-Azure infrastructure using Azure Arc.
+prerequisites: |
+  - Basic understanding of Azure Automanage.
+  - Basic understanding of Windows Server.
+  - Basic understanding of Linux virtual machines.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - administrator
+  - solution-architect
+products:
+- azure
+- azure-arc
+subjects:
+  - cloud-computing
+units:
+- learn.optimize-operations-with-automanage.introduction
+- learn.optimize-operations-with-automanage.describe-automanage-best-practices
+- learn.optimize-operations-with-automanage.enable-automanage-best-practices
+- learn.optimize-operations-with-automanage.create-custom-configuration-profile
+- learn.optimize-operations-with-automanage.extend-automanage-with-arc
+- learn.optimize-operations-with-automanage.knowledge-check
+- learn.optimize-operations-with-automanage.summary
+badge:
+  uid: learn.optimize-operations-with-automanage.badge

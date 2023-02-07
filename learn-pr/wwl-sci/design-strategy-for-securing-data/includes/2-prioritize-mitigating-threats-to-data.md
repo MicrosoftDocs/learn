@@ -40,7 +40,7 @@ on-premises, on PCs, on phones, and in the cloud.
 | Product/Service               | Article                                                                                             |
 |-------------------------------|-----------------------------------------------------------------------------------------------------|
 | Machine Trust Boundary        | Ensure that binaries are obfuscated if they contain sensitive information                           |
-|                               | Consider using an Encrypted File System (EFS) is used to protect confidential user-specific data    |
+|                               | Consider using an Encrypted File System (EFS) to protect confidential user-specific data    |
 |                               | Ensure that sensitive data stored by the application on the file system is encrypted                |
 | Web Application               | Ensure that sensitive content isn't cached on the browser                                          |
 |                               | Encrypt sections of Web App's configuration files that contain sensitive data                       |
