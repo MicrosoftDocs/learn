@@ -2,7 +2,7 @@
 
 To run a Spark notebook in a pipeline, you must add a notebook activity and configure it appropriately. You'll find the **Notebook** activity in the **Synapse** section of the activities pane in the Azure Synapse Analytics pipeline designer.
 
-![Screenshot of the Azure Synapse Analytics pipeline designer with a Notebook activity](../media/notebook-activity.png)
+![Screenshot of the Azure Synapse Analytics pipeline designer with a Notebook activity.](../media/notebook-activity.png)
 
 > [!TIP]
 > You can also add a notebook to a pipeline from within the notebook editor.

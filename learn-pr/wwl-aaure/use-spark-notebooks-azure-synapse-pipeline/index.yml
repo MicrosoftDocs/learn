@@ -2,8 +2,8 @@
 uid: learn.wwl.use-spark-notebooks-azure-synapse-pipeline
 metadata:
   title: Use Spark Notebooks in an Azure Synapse Pipeline
-  description: "Use Spark Notebooks in an Azure Synapse Pipeline"
-  ms.date: 02/06/2023
+  description: "This module describes how Apache Spark notebooks can be integrated into an Azure Synapse Analytics pipeline."
+  ms.date: 02/07/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
