@@ -1,3 +1,9 @@
+---
+uid: learn.wwl.configure-expressroute-virtual-wan.introduction
+title: Introduction
+description: Introduction
+durationInMinutes: 1
+---
 Azure ExpressRoute provides a high-speed private connection to connect your on-premises networks to Microsoft cloud services. The Azure Virtual WAN networking service combines networking, security, and routing functionalities into a single operational interface. 
 
 In this module, suppose your company has major offices located throughout the world. Some on-premises locations must connect to Azure, and these connections need to be private and secure. In other locations, a global transit network architecture is required. You're responsible for developing a plan to implement ExpressRoute and Virtual WAN to provide these connection services.

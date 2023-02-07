@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/24/2023
+  ms.date: 02/07/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -16,7 +16,6 @@ content: |
   [!include[](includes/7-knowledge-check.md)]
 quiz:
   title: ""
-
   questions:
   - content: "Which statement describes the Azure ExpressRoute service?"
     choices:
@@ -29,7 +28,6 @@ quiz:
     - content: "Azure ExpressRoute is a service that provides a site-to-site VPN connection between the on-premises network and the Microsoft cloud."
       isCorrect: false
       explanation: "Incorrect. Azure ExpressRoute doesn't implement a site-to-site VPN connection."
-
   - content: "What Microsoft service helps to simplify a complex hub-and-spoke virtual network WAN deployment?"
     choices:
     - content: "Azure ExpressRoute"
@@ -40,8 +38,7 @@ quiz:
       explanation: "Incorrect. Azure Virtual Network peering is best for simple deployments."
     - content: "Azure Virtual WAN"
       isCorrect: true
-      explanation: "Correct. Azure Virtual WAN with Virtual WAN hubs simplifies a complex virtual network WAN."      
-
+      explanation: "Correct. Azure Virtual WAN with Virtual WAN hubs simplifies a complex virtual network WAN."
   - content: "When should Azure ExpressRoute be used instead of Azure site-to-site connectivity?"
     choices:
     - content: "To handle enterprise-class and mission-critical workloads"
