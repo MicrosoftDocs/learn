@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.who-hacked-cloud-game.introduction
-title: Introduction
+uid: learn.wwl.sc-200-who-hacked-cloud-game.keep-playing
+title: keep-playing
 metadata:
-  title: introduction
+  title: keep-playing
   description: "Playing the Who Hacked? game is an optional activity for Security Operations Analysts."
-  ms.date: 2/3/2023
+  ms.date: 2/6/2023
   author: KenMAG
   ms.author: kelawson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 1
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/3-keep-playing.md)]
