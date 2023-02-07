@@ -18,11 +18,12 @@ dated_df.write.partitionBy("Year","Month").mode("overwrite").parquet("/partition
 print ("Transformed data saved!")
 
 ```
+
 >[!Note] The folder names generated when partitioning a DataFrame include the partitioning column name and value in a “column=value” format.
 
 ### Filter the parquet files
 
-When reading data from parquet files into a DataFrame, you have the ability to pull data from any folder within the hierarchical folders. This filtering process is done with the use of explicit values and wildcards against the partitioned fields. 
+When reading data from parquet files into a DataFrame, you have the ability to pull data from any folder within the hierarchical folders. This filtering process is done with the use of explicit values and wildcards against the partitioned fields.
 
 In the example below, the following code will pull the sales orders, which were placed in 2020 for all months.
 
@@ -32,4 +33,6 @@ orders_2020 = spark.read.parquet('/partitioned_data/Year=2020/Month=*')
 display(orders_2020.limit(5))
 
 ```
->[!Note] the partitioning columns specified in the file path are omitted in the resulting DataFrame.
+
+> [!NOTE]
+> the partitioning columns specified in the file path are omitted in the resulting DataFrame.

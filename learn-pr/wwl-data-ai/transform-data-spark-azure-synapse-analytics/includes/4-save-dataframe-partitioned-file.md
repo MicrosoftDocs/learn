@@ -1,16 +1,18 @@
 
 
-The Spark library, which provides the DataFrame structure also allows you the ability to use SQL as a way of working with data. With this approach, You can query and transform data in DataFrames by using SQL queries, and persist the results as tables. 
+The SparkSQL library, which provides the DataFrame structure also allows you the ability to use SQL as a way of working with data. With this approach, You can query and transform data in DataFrames by using SQL queries, and persist the results as tables. 
 
->[!Note] the persisted tables are metadata abstractions over physical files.
+> [!NOTE] 
+> the persisted tables are metadata abstractions over physical files.
 
 ### Define the tables and views
 
 The metastore enables you to write SQL queries as an internal view that return a DataFrame. You can then write this view as an external table. External tables are relational tables in the metastore that reference files in a data lake location that you specify. You can access this data by querying the table or by reading the files directly from the data lake.
 
->[!Note] external tables are 'loosely bound' to the underlying files and deleting the table *does not* delete the files. This allows you to use Spark to do the heavy lifting of transformation then persist the data in the lake. Once this is done you can drop the table and downstream processes can access these optimized structures.
+>[!NOTE]
+external tables are 'loosely bound' to the underlying files and deleting the table *does not* delete the files. This allows you to use Spark to do the heavy lifting of transformation then persist the data in the lake. Once this is done you can drop the table and downstream processes can access these optimized structures.
 
-The following code to save the original sales orders data (loaded from CSV files) as a table. 
+The following code to saves the original sales orders data (loaded from CSV files) as a table within sales_orders metastore while the files are physically stored in the data lake **/sales_orders_table** as a folder with individual .parquet files split across the distributions located within the folder, this is done automatically and increases the performance for data analytic workloads.
 
 ```python
 
@@ -18,13 +20,11 @@ order_details.write.saveAsTable('sales_orders', format='parquet', mode='overwrit
 
 ```
 
-After running this code, you would find a new folder named **sales_orders_table** which would contain parquet files for the table data.
-
-Technically, *sales_orders* is an external table because the path parameter, which is */sales_orders_table* is used to specify where the data files for the table are stored. An internal table would be stored in the system storage for the Spark metastore and managed automatically.
+Technically, *sales_orders* is an external table because the path parameter, which is */sales_orders_table* is used to specify where the data files for the table are stored. 
 
 ### Use SQL to query and transform the data
 
-We can now use SQL to transform the table. The following code creates two new derived columns named **Year** and **Month** and then creates a new table *transformed_orders* with the new derived columns added.
+The use of SQL can now be used to transform the table. The following code creates two new derived columns named **Year** and **Month** and then creates a new table *transformed_orders* with the new derived columns added.
 
 ```python
 
@@ -34,7 +34,7 @@ sql_transform.write.partitionBy("Year","Month").saveAsTable('transformed_orders'
      
 ```
 
-When looking at these files in the directory folder */transformed_orders_table* you'll note that you have performed the same data transformation as before by creating a hierarchy in the folders with the format of **Year=\*NNNN\* / Month=\*N\***, with each folder containing a .parquet file for the corresponding orders by year and month.
+When looking at these files in the directory folder */transformed_orders_table* you'll note that  the same data transformation as before has occurred by creating a hierarchy in the folders with the format of **Year=\*NNNN\* / Month=\*N\***, with each folder containing a .parquet file for the corresponding orders by year and month.
 
 ### Query the metastore
 

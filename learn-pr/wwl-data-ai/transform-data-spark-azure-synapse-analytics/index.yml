@@ -3,22 +3,21 @@ uid: learn.wwl.transform-data-spark-azure-synapse-analytics
 metadata:
   title: Transform Data with Spark in Azure Synapse Analytics
   description: "Transform Data with Spark in Azure Synapse Analytics"
-  ms.date: 02/03/2023
+  ms.date: 02/07/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: synapse-analytics
 title: Transform Data with Spark in Azure Synapse Analytics
 summary: |
   In this module, you'll learn how to:
   Integrate SQL pools and Apache Spark pools in Azure Synapse Analytics.
 abstract: |
   After completing this module, you will be able to:
-  Describe the integration methods between SQL and Apache Spark pools in Azure Synapse Analytics
-  Understand the use cases for SQL and Apache Spark pools integration
-  Optimize Apache Spark jobs in Azure Synapse Analytics
-  Automate scaling of Apache Spark pools in Azure Synapse Analytics
-  Exercise: Transform data with Spark in Azure Synapse Analytics
+  - Modify and save DataFrames
+  - Partition data files
+  - Transform data with SQL
 prerequisites: |
   Before taking this module, it is recommended that you complete the following modules:
   Azure Data Fundamentals
@@ -31,6 +30,8 @@ roles:
 - data-engineer
 products:
 - azure-synapse-analytics
+subjects:
+- data-engineering
 units:
 - learn.wwl.transform-data-spark-azure-synapse-analytics.introduction
 - learn.wwl.transform-data-spark-azure-synapse-analytics.load-data-into-dataframe

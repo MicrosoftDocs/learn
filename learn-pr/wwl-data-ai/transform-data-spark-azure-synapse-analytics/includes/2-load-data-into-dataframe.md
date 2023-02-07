@@ -12,9 +12,7 @@ When you initially create a notebook with Azure Synapse Analytics, simply select
 
 ### Load source data
 
-Let's Start by populating a DataFrame in your notebook. 
-
-In the below example we're reading historical sales order data from our **data** directory into a DataFrame (df). .
+To load data into a dataframe, you use the spark.read function, specifying the file format, path, and optionally the schema of the data to be read. For example, the following code loads data from all .csv files in the data folder into a dataframe named order_details and then displays the first five records.
 
 ```python
 
@@ -25,7 +23,14 @@ display(order_details.limit(5))
 ```
 ### Transform the data structure
 
-We'll now want to transform some of the data, in this case we'll want to *split* the **CustomerName** field into two new fields **FirstName** and **LastName**. We'll then *drop* the **CustomerName** field from the DataFrame and show the new headers and five records in the results.
+After loading the source data into a dataframe, you can use the dataframe object's methods and Spark functions to transform it. Typical operations on a dataframe include :
+
+- Filtering rows and columns.
+- Renaming columns.
+- Creating new columns, often derived from existing ones.
+- Replacing null or other values.
+
+In the following example, the code uses the split function to separate the values in the CustomerName column into two new columns named FirstName and LastName. Then it uses the drop method to delete the original CustomerName column.
 
 ```python
 from pyspark.sql.functions import split, col
@@ -43,11 +48,9 @@ You can use the full power of the Spark SQL library to transform the data by fil
 
 ### Save the transformed data
 
-Once your DataFrame is in the structure you like, you can save the results to a supported format in your data lake.
+Once your dataFrame is in the structure you like, you can save the results to a supported format in your data lake.
 
-In the following code, you'll be saving your DataFrame into a parquet file. 
-
->[!Warning] the code below will overwrite the *orders.parquet* if it already exists in the **transformed_data** folder.
+At this point we'll now want to save our dataFrame into a parquet file in order to take advantage of the distributed architecture in the data lake which improves performance on the client side queries.
 
 ```python
 
@@ -56,5 +59,5 @@ print ("Transformed data saved!")
 
 ```
 
- >[!Note]
- >The Parquet format is typically preferred for data files that you will use for further analysis or ingestion into an analytical store. Parquet is a very efficient format that is supported by most large scale data analytics systems. In fact, sometimes your data transformation requirement may simply be to convert data from another format (such as CSV) to Parquet!
+ > [!Note]
+ > The Parquet format is typically preferred for data files that you will use for further analysis or ingestion into an analytical store. Parquet is a very efficient format that is supported by most large scale data analytics systems. In fact, sometimes your data transformation requirement may simply be to convert data from another format (such as CSV) to Parquet!

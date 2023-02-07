@@ -4,11 +4,12 @@ title: Partition data files
 metadata:
   title: Partition data files
   description: "Partition data files"
-  ms.date: 02/03/2023
+  ms.date: 02/07/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: synapse-analytics
 durationInMinutes: 10
 content: |
   [!include[](includes/3-save-dataframe-specific-format.md)]
