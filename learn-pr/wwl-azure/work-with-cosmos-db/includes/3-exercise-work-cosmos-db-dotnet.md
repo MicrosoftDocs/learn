@@ -69,7 +69,7 @@ Now that the needed resources are deployed to Azure the next step is to set up t
     dotnet new console
     ```
 
-1. Open the current folder in VS Code using the command below. The `-r` option will open the folder without launching a new VS Code window.
+1. Open the current folder in Visual Studio Code using the command below. The `-r` option will open the folder without launching a new Visual Studio Code window.
 
     ```
     code . -r
@@ -83,7 +83,7 @@ It's time to start adding the packages and code to the project.
 
 ### Add packages and using statements
 
-1. Open the terminal in VS Code and use the command below to add the `Microsoft.Azure.Cosmos` package to the project.
+1. Open the terminal in Visual Studio Code and use the command below to add the `Microsoft.Azure.Cosmos` package to the project.
 
     ```
     dotnet add package Microsoft.Azure.Cosmos
@@ -193,7 +193,7 @@ private async Task CreateContainerAsync()
 
 ## Run the application
 
-1. Save your work and, in a terminal in VS Code, run the `dotnet run` command. The console will display the following messages.
+1. Save your work and, in a terminal in Visual Studio Code, run the `dotnet run` command. The console will display the following messages.
 
     ```
     Beginning operations...
