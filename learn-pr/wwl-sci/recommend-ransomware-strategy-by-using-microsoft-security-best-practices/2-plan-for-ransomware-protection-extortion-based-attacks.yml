@@ -4,13 +4,11 @@ title: Plan for ransomware protection and extortion-based attacks
 metadata:
   title: Plan for ransomware protection and extortion-based attacks
   description: "Plan for ransomware protection and extortion-based attacks"
-  ms.date: 01/06/2023
+  ms.date: 02/07/2023
   author: wwlpublish
   ms.author: hrasheed
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 15
 content: |
   [!include[](includes/2-plan-for-ransomware-protection-extortion-based-attacks.md)]
