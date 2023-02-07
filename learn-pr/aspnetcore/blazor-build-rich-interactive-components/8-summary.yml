@@ -2,12 +2,12 @@
 uid: learn.build-interactive-components-blazor-web-apps.summary
 title: Summary
 metadata:
-  unitType: learning-content  
+  unitType: learning-content
   title: "Summary"
   description: "Module summary"
-  ms.date: 08/18/2021
-  author: csharpfritz
-  ms.author: jefritz
+  ms.date: 02/02/2023
+  author: IEvangelist
+  ms.author: dapine
   ms.topic: interactive-tutorial
   ms.prod: learning-blazor
 durationInMinutes: 1
