@@ -1,3 +1,4 @@
+
 You can install Microsoft Office quickly and efficiently by using an FSLogix application container as a template for the other virtual machines (VMs) in your host pool.
 
 Here's why using an FSLogix app container can help make installation faster:
@@ -35,7 +36,6 @@ Next, you'll need to create and prepare a VHD image to use the Rule Editor on:
     
     ```
     taskkill /F /IM MSEdge.exe /T
-    
     ```
     
     > [!NOTE]
@@ -43,8 +43,7 @@ Next, you'll need to create and prepare a VHD image to use the Rule Editor on:
 2.  Run the command shown below:
     
     ```
-    sc queryex type=service state=all | find /i
-    
+    sc queryex type=service state=all | find /i "ClickToRunSvc"
     ```
     
     If you find the service, restart the VM before continuing with step 3.
@@ -75,6 +74,3 @@ Now that you've prepared your image, you'll need to configure the Rule Editor an
 8.  Select **OK**.
 9.  Go to the working folder at`C:\Users\<username>\Documents\FSLogix Rule Sets`and find **.frx** and **.fxa** files. You need to move these files to the **Rules** folder located at **C:\\Program Files\\FSLogix\\Apps\\Rules** in order for the rules to start working.
 10. Select **Apply Rules to System** for the rules to take effect.
-    
-    > [!NOTE]
-    > You'll need to apply the app rule files will need to all session hosts.

@@ -1,3 +1,4 @@
+
 Using Office Container, both applications and users see the portions of the profile managed by Office Container as if they're located on the local drive.
 
 All benefits of Office Container are automatic when using Profile Container. There's no need to implement Office Container if Profile Container is your primary solution for managing profiles. Office Container could optionally be used with Profile Container, to place Office Data in a location separate from the rest of the user's profile.
@@ -17,10 +18,49 @@ The configuration of Office Container is accomplished through registry settings 
 
 These settings are required to enable Office Container and to specify the location for the profile VHD to be stored. The minimum required settings to enable Office Container is:
 
-| **Value**                       | **Type**             | **Configured Value** | **Description**                                                                                                                                                                                                                                                                                                                                                                                            |
-| ------------------------------- | -------------------- | -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Enabled (required setting)      | DWORD                | 1                    | 0: Profile Containers disabled. 1: Profile Containers enabled                                                                                                                                                                                                                                                                                                                                              |
-| VHDLocations (required setting) | MULTI\_SZ or REG\_SZ |                      | A list of file system locations to search for the user's profile VHD(X) file. If one isn't found, one will be created in the first listed location. If the VHD path doesn't exist, it will be created before it checks if a VHD(X) exists in the path. These values can contain variables that will be resolved. When specified as a REG\_SZ value, multiple locations can be separated with a semi-colon. |
+:::row:::
+  :::column:::
+    **Value**
+  :::column-end:::
+  :::column:::
+    **Type**
+  :::column-end:::
+  :::column:::
+    **Configured Value**
+  :::column-end:::
+  :::column:::
+    **Description**
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Enabled (required setting)
+  :::column-end:::
+  :::column:::
+    DWORD
+  :::column-end:::
+  :::column:::
+    1
+  :::column-end:::
+  :::column:::
+    0: Profile Containers disabled. 1: Profile Containers enabled
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    VHDLocations (required setting)
+  :::column-end:::
+  :::column:::
+    MULTI\_SZ or REG\_SZ
+  :::column-end:::
+  :::column:::
+    
+  :::column-end:::
+  :::column:::
+    A list of file system locations to search for the user's profile VHD(X) file. If one isn't found, one will be created in the first listed location. If the VHD path doesn't exist, it will be created before it checks if a VHD(X) exists in the path. These values can contain variables that will be resolved. When specified as a REG\_SZ value, multiple locations can be separated with a semi-colon.
+  :::column-end:::
+:::row-end:::
+
 
 :::image type="content" source="../media/office-container-config-1-7b5ef71f.png" alt-text="Screenshot showing the Office Containers Registry Configuration.":::
 

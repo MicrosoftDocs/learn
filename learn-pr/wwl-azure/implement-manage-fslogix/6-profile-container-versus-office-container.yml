@@ -1,16 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.implement-manage-fslogix.profile-container-vs-office-container
+uid: learn.wwl.implement-manage-fslogix.profile-container-versus-office-container
 title: Profile Container vs Office Container
 metadata:
   title: Profile Container vs Office Container
   description: "Profile Container vs Office Container"
-  ms.date: 08/02/2022
+  ms.date: 02/07/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 4
 content: |
   [!include[](includes/6-profile-container-versus-office-container.md)]

@@ -4,13 +4,11 @@ title: Installing Microsoft Office using FSLogix application containers
 metadata:
   title: Installing Microsoft Office using FSLogix application containers
   description: "Installing Microsoft Office using FSLogix application containers"
-  ms.date: 08/02/2022
+  ms.date: 02/07/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 6
+  zone_pivot_groups: azure-interface
 content: |
   [!include[](includes/8-install-microsoft-office-fslogix-application-containers.md)]
