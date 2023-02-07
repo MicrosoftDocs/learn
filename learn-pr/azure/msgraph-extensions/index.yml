@@ -5,6 +5,7 @@ metadata:
   title: Add custom data to your app by using extensions in Microsoft Graph
   description: "Add custom data to Microsoft Graph resources by using extensions as a lightweight option instead of an external database."
   ms.date: 01/24/2023
+  ms.custom: engagement-fy23
   author: FaithOmbongi
   ms.author: ombongifaith
   ms.topic: interactive-tutorial
