@@ -12,7 +12,7 @@ title: Plan and design the integration of enterprise apps for SSO
 summary: Enterprise app deployment enables control over which users can access the apps, easily log into apps with single-sign-on, and provide integrated usage reports.
 abstract: |
   By the end of this module, you will be able to:
-  - Discover apps by using MCAS or ADFS app report.
+  - Discover apps by using Microsoft Defender for Cloud Apps or Active Directory Federation Services app report.
   - Design and implement access management for apps.
   - Design and implement app management roles.
   - Configure pre-integrated (gallery) SaaS apps.
