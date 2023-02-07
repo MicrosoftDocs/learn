@@ -3,7 +3,7 @@ uid: learn.wwl.introduction-to-secure-devops
 metadata:
   title: Introduction to Secure DevOps
   description: "Introduction to Secure DevOps"
-  ms.date: 01/12/2023
+  ms.date: 02/07/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -16,7 +16,8 @@ abstract: |
   - Understand DevSecOps
   - Implement pipeline security
   - Understand threat modeling
-prerequisites: ""
+prerequisites: |
+  None
 iconUrl: /training/achievements/1-understand-security-in-the-pipeline.svg
 levels:
 - advanced

@@ -1,3 +1,6 @@
+---
+title:Explore key validation points
+---
 Continuous security validation should be added at each step from development through production to help ensure the application is always secure.
 
 This approach aims to switch the conversation with the security team from approving each release to consenting to the CI/CD process and monitor and audit the process at any time.

@@ -1,8 +1,9 @@
-Security can't be a separate department in a silo. It also can't be added at the end of a project.
+---
+title:Exercise threat modeling
+---
+Security can't be a separate department in a silo. It also can't be added at the end of a project. Security must be part of DevOps, and together they're called DevSecOps.
 
-Security must be part of DevOps, and together they're called DevSecOps.
-
-The biggest weakness isn't knowing the flaw in your solution. Microsoft has created a threat modeling tool to remediate it, which helps you understand potential security vulnerabilities in your solution.
+The biggest weakness is not knowing the flaw in your solution. Microsoft has created a threat modeling tool to remediate it, which helps you understand potential security vulnerabilities in your solution.
 
 The Threat Modeling Tool is a core element of the Microsoft Security Development Life cycle (SDL).
 
@@ -26,24 +27,24 @@ In this exercise, we'll see how easy it's to use the Threat Modeling tool to see
 
 ## How to do it
 
-1. Launch the Microsoft Threat Modeling Tool and choose the option to Create a Model.
+1.  Launch the Microsoft Threat Modeling Tool and choose the option to Create a Model.
 
     :::image type="content" source="../media/microsoft-threat-modeling-tool-4fd0f6ef.png" alt-text="Microsoft Threat Modeling Tool.":::
 
 
-1. From the right panel, search and add `Azure App Service Web App`, `Azure SQL Database`, link them up to show a request and response flow as demonstrated in the following image.
+2.  From the right panel, search and add `Azure App Service Web App` and `Azure SQL Database`, and link them up to show a request and response flow, as demonstrated in the following image.
 
     :::image type="content" source="../media/azure-app-service-web-app-eb7e7ee3.png" alt-text="Azure App Service Web App, and Azure SQL Database request cycle.":::
 
 
-1. From the toolbar menu, select View -&gt; Analysis view. The analysis view will show you a complete list of threats categorized by severity.
+3.  From the toolbar menu, select View -&gt; Analysis view. The analysis view will show you a complete list of threats categorized by severity.
 
     :::image type="content" source="../media/threat-list-48ab5b08.png" alt-text="Threat list.":::
 
 
-1. To generate a full report of the threats, from the toolbar menu, select Reports -&gt; Create full report, select a location to save the report.
+4.  To generate a full report of the threats, select Reports -&gt; Create a full report from the toolbar menu, and select a location to save the report.
 
-    A full report is generated with details of the threat, the SLDC phase it applies to, and possible mitigation and links to more information.
+    A full report is generated with details of the threat, the SLDC phase it applies to, possible mitigation, and links to more information.
 
     :::image type="content" source="../media/azure-app-service-azure-database-1fed139c.png" alt-text="Azure App Service Web App, and Azure SQL Database request.":::
 
