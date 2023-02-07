@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/06/2023
+  ms.date: 02/07/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
@@ -24,7 +24,7 @@ quiz:
       explanation: "That's incorrect. Fact tables should be loaded last with the appropriate surrogate keys from dimensions."
     - content: "Dimension tables, then staging tables, then fact tables"
       isCorrect: false
-      explanation: "That's incorrect. This would put changes to dimensions behind and cause potential corruption."
+      explanation: "That's incorrect. This approach could cause corruption if there were changes to a dimension."
   - content: "Which command should you use to load a staging table with data from files in the data lake?"
     choices:
     - content: "COPY"
