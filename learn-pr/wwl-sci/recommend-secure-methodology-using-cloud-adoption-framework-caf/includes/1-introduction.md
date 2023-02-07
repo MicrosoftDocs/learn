@@ -1,9 +1,4 @@
----
-uid: learn.wwl.recommend-secure-methodology-using-cloud-adoption-framework-caf.introduction
-title: Introduction
-description: Introduction
-durationInMinutes: 5
----
+
 In this module, you'll learn how to:
 
 - Recommend a DevSecOps process

@@ -1,9 +1,4 @@
----
-uid: learn.wwl.recommend-secure-methodology-using-cloud-adoption-framework-caf.recommend-methodology-for-asset-protection
-title: Recommend a methodology for asset protection
-description: Recommend a methodology for asset protection
-durationInMinutes: 20
----
+
 Assets include physical and virtual items such as laptops, databases, files, and virtual storage accounts. Securing business critical assets often relies on the security of underlying systems, like storage, data, endpoint devices, and application components. The most valuable technical assets are typically data and the availability of applications, such as business websites, production lines, and communications.
 
 Asset protection implements controls to support security architecture, standards, and policy. Each asset type and security requirement is unique. The security standards for any asset type should be consistently applied to all instances.

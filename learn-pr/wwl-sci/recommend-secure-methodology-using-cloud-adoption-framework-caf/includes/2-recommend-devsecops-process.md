@@ -1,9 +1,4 @@
----
-uid: learn.wwl.recommend-secure-methodology-using-cloud-adoption-framework-caf.recommend-devsecops-process
-title: Recommend a DevSecOps process
-description: Recommend a DevSecOps process
-durationInMinutes: 20
----
+
 DevSecOps applies [innovation security](/azure/cloud-adoption-framework/secure/innovation-security) by integrating security processes and tools into the DevOps development process.
 
 Because DevOps itself is an emerging discipline with a high degree of process variations, successful DevSecOps hinges on understanding and thoughtfully integrating security into the development process. Adding security should start with low-friction changes to the code, the development processes, and the infrastructure that hosts the workload. Focus first on changes with the highest positive effect on security while placing a low burden on DevOps processes and skills.
