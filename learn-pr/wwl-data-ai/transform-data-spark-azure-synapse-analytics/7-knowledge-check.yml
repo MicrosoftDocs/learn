@@ -13,7 +13,7 @@ metadata:
 durationInMinutes: 3
 quiz:
   questions:
-  - content: "Which method of the Dataframe object is used to save a Dataframe as a file?"
+  - content: "Which method of the Dataframe object is used to save a dataframe as a file?"
     choices:
     - content: "toFile()"
       isCorrect: false
@@ -24,7 +24,7 @@ quiz:
     - content: "save()"
       isCorrect: false
       explanation: "That's incorrect. The write() method is the correct way to write a DataFrame as a file."
-  - content: "Which method is used to split the data across folders when saving a Dataframe?"
+  - content: "Which method is used to split the data across folders when saving a dataframe?"
     choices:
     - content: "splitBy()"
       isCorrect: false
