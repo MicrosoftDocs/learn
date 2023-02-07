@@ -19,4 +19,4 @@ When you arrive at the *Afternoon Investigation*, you may stop, or optionally ke
  > [!TIP]
  > To keep playing, keep your browser window open. If you close the window, you will not be able to resume your game.
 
-**Play Who Hacked?** [Episode 1](https://aka.ms/SC200_WH_Ep1)
+**Play Who Hacked?** [Episode 1](https://aka.ms/WH_E1)
