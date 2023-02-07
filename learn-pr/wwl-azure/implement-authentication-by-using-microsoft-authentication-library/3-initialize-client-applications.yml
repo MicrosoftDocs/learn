@@ -4,13 +4,11 @@ title: Initialize client applications
 metadata:
   title: Initialize client applications
   description: "Initialize client applications"
-  ms.date: 01/17/2023
+  ms.date: 02/07/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/3-initialize-client-applications.md)]
