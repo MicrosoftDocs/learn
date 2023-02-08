@@ -22,8 +22,8 @@ In this unit, you'll create a small project structure using Visual Studio Code. 
 
 1. Name the folder **simple-website**, and then select **Select Folder**.
 
-  > [!IMPORTANT]
-  > If a **Visual Studio Code** dialog appears, select **Trust the authors of all files in the parent folder...**; this is the Workspace Trust feature that lets you decide whether your project folders should allow or restrict automatic code execution. You just created the folder, so it's safe.
+    > [!IMPORTANT]
+    > If a **Visual Studio Code** dialog appears, select **Trust the authors of all files in the parent folder...**; this is the Workspace Trust feature that lets you decide whether your project folders should allow or restrict automatic code execution. You just created the folder, so it's safe.
 
 
 ## Create some files
