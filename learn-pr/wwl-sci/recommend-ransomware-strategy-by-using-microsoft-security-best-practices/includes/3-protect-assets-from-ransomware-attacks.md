@@ -1,3 +1,4 @@
+
 **Phase 2** of ransomware protection is to Limit the scope of damage.
 
 In this phase, you protect privileged roles to prevent attackers from obtaining a large scope of access for potential damage to data and systems.
