@@ -1,12 +1,17 @@
 ### YamlMime:ModuleUnit
-uid: .knowledge-check
+uid: learn.wwl.enterprise-governance.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 02/08/2023
-  zone_pivot_groups: None
-durationInMinutes: 3
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
 content: |
   [!include[](includes/13-knowledge-check.md)]
 quiz:

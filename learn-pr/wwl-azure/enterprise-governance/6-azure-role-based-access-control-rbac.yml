@@ -1,11 +1,16 @@
 ### YamlMime:ModuleUnit
-uid: .azure-role-based-access-control-rbac
+uid: learn.wwl.enterprise-governance.azure-role-based-access-control-rbac
 title: Enable Azure role-based access control (RBAC)
 metadata:
   title: Enable Azure role-based access control (RBAC)
   description: "Enable Azure role-based access control (RBAC)"
   ms.date: 02/08/2023
-  zone_pivot_groups: None
-durationInMinutes: 3
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
 content: |
   [!include[](includes/6-azure-role-based-access-control-rbac.md)]

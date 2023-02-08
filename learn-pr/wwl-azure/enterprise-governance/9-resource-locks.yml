@@ -1,11 +1,16 @@
 ### YamlMime:ModuleUnit
-uid: .resource-locks
+uid: learn.wwl.enterprise-governance.resource-locks
 title: Enable resource locks
 metadata:
   title: Enable resource locks
   description: "Enable resource locks"
   ms.date: 02/08/2023
-  zone_pivot_groups: None
-durationInMinutes: 3
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
 content: |
   [!include[](includes/9-resource-locks.md)]

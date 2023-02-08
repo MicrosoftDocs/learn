@@ -1,11 +1,16 @@
 ### YamlMime:ModuleUnit
-uid: .built-roles
+uid: learn.wwl.enterprise-governance.built-roles
 title: Configure built-in roles
 metadata:
   title: Configure built-in roles
   description: "Configure built-in roles"
   ms.date: 02/08/2023
-  zone_pivot_groups: None
-durationInMinutes: 3
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
 content: |
   [!include[](includes/8-built-roles.md)]

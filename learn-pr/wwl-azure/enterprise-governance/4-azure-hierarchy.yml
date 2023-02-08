@@ -1,11 +1,16 @@
 ### YamlMime:ModuleUnit
-uid: .azure-hierarchy
+uid: learn.wwl.enterprise-governance.azure-hierarchy
 title: Review Azure hierarchy of systems
 metadata:
   title: Review Azure hierarchy of systems
   description: "Review Azure hierarchy of systems"
   ms.date: 02/08/2023
-  zone_pivot_groups: None
-durationInMinutes: 3
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
 content: |
   [!include[](includes/4-azure-hierarchy.md)]
