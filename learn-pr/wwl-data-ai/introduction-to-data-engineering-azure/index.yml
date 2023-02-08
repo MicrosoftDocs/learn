@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.wwl.introduction-data-engineering-azure
+metadata:
+  title: Introduction to data engineering on Azure
+  description: "This module describes how Microsoft Azure provides a comprehensive platform for data engineering."
+  ms.date: 02/07/2023
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: azure
+title: Introduction to data engineering on Azure
+summary: Microsoft Azure provides a comprehensive platform for data engineering; but what is data engineering? Complete this module to find out.
+abstract: |
+  In this module you will learn how to:
+  - Identify common data engineering tasks
+  - Describe common data engineering concepts
+  - Identify Azure services for data engineering
+prerequisites: |
+  Before starting this module, you should have completed the [Microsoft Azure Data Fundamentals certification](/certifications/azure-data-fundamentals/) or have equivalent knowledge and experience.
+iconUrl: /training/achievements/data-ai/intro-data-engineering-badge.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+products:
+- azure
+subjects:
+- data-engineering
+units:
+- learn.wwl.introduction-data-engineering-azure.introduction
+- learn.wwl.introduction-data-engineering-azure.what-data-engineering
+- learn.wwl.introduction-data-engineering-azure.common-patterns-azure-data-engineering
+- learn.wwl.introduction-data-engineering-azure.common-tooling-azure-data-engineering
+- learn.wwl.introduction-data-engineering-azure.knowledge-check
+- learn.wwl.introduction-data-engineering-azure.summary
+badge:
+  uid: learn.data-ai.intro-data-engineering.badge

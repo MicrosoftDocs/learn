@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-data-engineering-azure.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/07/2023
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "Data in a relational database table is…"
+    choices:
+    - content: "Structured"
+      isCorrect: true
+      explanation: "That's correct. Relational databases contain structured data in tables."
+    - content: "Semi-structured"
+      isCorrect: false
+      explanation: "That's incorrect. Semi-structured data is typically stored in NoSQL data stores, such as Azure Cosmos DB."
+    - content: "Unstructured"
+      isCorrect: false
+      explanation: "That's incorrect. Unstructured data may be stored in a relational database, but a table isn't unstructured."
+  - content: "In a data lake, data is stored in?"
+    choices:
+    - content: "Relational tables"
+      isCorrect: false
+      explanation: "That's incorrect. A data lake doesn't store data in relational tables."
+    - content: "Files"
+      isCorrect: true
+      explanation: "That's correct. Data in a data lake is stored in files."
+    - content: "A single JSON document"
+      isCorrect: false
+      explanation: "That's incorrect. A data lake is based on a distributed file system, not a single JSON document."
+  - content: "Which of the following Azure services provides capabilities for running data pipelines AND managing analytical data in a data lake or relational data warehouse?"
+    choices:
+    - content: "Azure Stream Analytics"
+      isCorrect: false
+      explanation: "That's incorrect. Azure Stream Analytics is used to process real-time streams of data."
+    - content: "Azure Synapse Analytics"
+      isCorrect: true
+      explanation: "That's correct. Azure Synapse Analytics includes functionality for pipelines, data lakes, and relational data warehouses."
+    - content: "Azure Databricks"
+      isCorrect: false
+      explanation: "That's incorrect. Azure Databricks is primarily an Apache Spark implementation for processing data in a data lake."
