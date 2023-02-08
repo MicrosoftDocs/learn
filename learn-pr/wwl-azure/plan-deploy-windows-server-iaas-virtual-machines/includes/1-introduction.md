@@ -11,7 +11,7 @@ As part of the initial design, the Contoso IT team asked you, their lead system 
 
 As you consider ways to implement VMs in Azure, you realize you must understand the various ways that you can deploy Windows Server IaaS VMs in Contoso's Azure subscription. You want to ensure that you can minimize the number of configuration steps that you must perform when deploying VMs. At the back of your mind are concerns about cost and performance, so you must understand how best to size a Windows Server IaaS VM.
 
-By the end of this module, you'll be able to describe Azure compute and storage in relation to Azure VMs, and deploy Azure VMs by using the Azure portal, Azure CLI, or templates.
+By the end of this module, you'll be able to describe Azure compute and storage in relation to Azure VMs, and deploy Azure VMs by using the Azure portal, Azure CLI, or templates. You'll also be able to describe how Azure Automanage and Windows Server Datacenter: Azure Edition can optimize your IT management capabilities.
 
 ## Learning objectives
 
@@ -23,6 +23,7 @@ After completing this module, you will be able to:
 - Create a VM from the Azure portal.
 - Create a VM from Azure Cloud Shell.
 - Deploy Azure VMs by using templates.
+- Describe Azure Automanage and key features of Windows Server Datacenter: Azure Edition
 
 ## Prerequisites
 

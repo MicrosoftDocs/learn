@@ -39,18 +39,15 @@ When creating an Automanage Best Practices configuration profile, enable Machine
 
 :::image type="content" source="../media/create-custom-profile.png" alt-text="Screenshot of the create custom profile window.":::
 
-
 ## Windows Server Datacenter: Azure Edition
 
 The Azure Edition of Windows Server Datacenter brings additional capabilities for optimizing and managing VMs.
-
 
 ### Azure Extended Network
 
 Extended network for Azure enables you to stretch an on-premises subnet into Azure to let on-premises virtual machines keep their original on-premises private IP addresses when migrating to Azure.
 
 The network is extended using a bidirectional VXLAN tunnel between two Windows Server 2019 VMs acting as virtual appliances, one running on-premises and the other running in Azure, each also connected to the subnet to be extended. Each subnet that you are going to extend requires one pair of appliances. Multiple subnets can be extended using multiple pairs.
-
 
 ### Hotpatch for new virtual machines
 
@@ -62,6 +59,7 @@ Hotpatching is a new way to install updates on supported Windows Server Azure Ed
 
 Hotpatch works by first establishing a baseline with a Windows Update Latest Cumulative Update. Hotpatches are periodically released (for example, on the second Tuesday of the month) that build on that baseline. Hotpatches will contain updates that don't require a reboot. Periodically (starting at every three months), the baseline is refreshed with a new Latest Cumulative Update.
 
+:::image type="content" source="../media/hotpatch-sample-schedule.png" alt-text="Hotpatch sample schedule.":::
 
 There are two types of baselines: **planned baselines** and **unplanned baselines**.
 
@@ -70,33 +68,15 @@ There are two types of baselines: **planned baselines** and **unplanned baseline
 - Unplanned baselines are released when an important update (such as a zero-day fix) is released, and that particular update can't be released as a Hotpatch. When unplanned baselines are released, a hotpatch release will be replaced with an unplanned baseline in that month. Unplanned baselines also include all the updates in a comparable *Latest Cumulative Update* for that month, and also require a reboot.
     - The sample schedule above illustrates two unplanned baselines that would replace the hotpatch releases for those months (the actual number of unplanned baselines in a year isn't known in advance).
 
-
-
 ### SMB over QUIC
 
+SMB over QUIC introduces an alternative to the TCP network transport, providing secure, reliable connectivity to edge file servers over untrusted networks like the Internet. QUIC is an IETF-standardized protocol with many benefits when compared with TCP:
 
+- All packets are always encrypted and handshake is authenticated with TLS 1.3
+- Parallel streams of reliable and unreliable application data
+- Exchanges application data in the first round trip (0-RTT)
+- Improved congestion control and loss recovery
+- Survives a change in the clients IP address or port
 
+SMB over QUIC offers an "SMB VPN" for telecommuters, mobile device users, and high security organizations. The server certificate creates a TLS 1.3-encrypted tunnel over the internet-friendly UDP port 443 instead of the legacy TCP port 445. All SMB traffic, including authentication and authorization within the tunnel is never exposed to the underlying network. SMB behaves normally within the QUIC tunnel, meaning the user experience doesn't change. SMB features like multichannel, signing, compression, continuous availability, directory leasing, and so on, work normally.
 
-
-
-
-
-
-
-
-
-## Additional reading
-
-Learn more by reviewing the following documents:
-
-
-
-
-- [Understand the structure and syntax of Azure Resource Manager templates](https://aka.ms/syntax-ARM-templates?azure-portal=true)
-- [Create a Windows virtual machine from a Resource Manager template](https://aka.ms/windows-vm-from-rm-template?azure-portal=true)
-- [Azure QuickStart Templates](https://aka.ms/azure-quick-start-templates?azure-portal=true)
-- [Creating and deploying Azure resource groups through Visual Studio](https://aka.ms/create-visual-studio-deployment-project?azure-portal=true)
-- [Quickstart: Create Azure Resource Manager templates with Visual Studio Code](https://aka.ms/vscode-extension?azure-portal=true)
-
-> [!NOTE]
-> If you want to create an Azure VM by using a template, try the following hands on exercise: [Deploy a VM using an Azure Quickstart template.](https://aka.ms/deploy-a-vm-quickstart-template?azure-portal=true).
