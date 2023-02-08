@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.quantum.estimate-resources-quantum-algorithms.2-resource-estimation-in-quantum-computing
+uid: learn.quantum.estimate-resources-quantum-algorithms.resource-estimation-in-quantum-computing
 title: Resource estimation in quantum computing
 metadata:
   title: Resource estimation in quantum computing
   description: Learn what resource estimation is and why it is important in quantum computing
-  ms.date: 01/24/2023
+  ms.date: 02/08/2023
   author: SoniaLopezBravo
   ms.author: sonialopez
   ms.topic: interactive-tutorial
