@@ -33,7 +33,7 @@ Let's create a function app in the Azure portal.
 
     The **Create a resource** pane appears.
 
-1. In the menu, select **Compute**, and then select **Function App** in the *Popular products* list. The **Create Function App** pane appears.
+1. In the menu, select **Compute**, and then search for and select **Function App**. Select the **Create** button. The **Create Function App** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
