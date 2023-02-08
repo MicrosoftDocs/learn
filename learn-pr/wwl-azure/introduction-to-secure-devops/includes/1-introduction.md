@@ -1,8 +1,4 @@
----
-interactive:bash
-zone_pivot_groups:azure-interface
-title:Introduction
----
+
 While a DevOps way of working enables development teams to deploy applications faster, going faster over a cliff doesn't help!<br>
 
 DevOps teams have access to unprecedented infrastructure and scale thanks to the cloud. They can be approached by some of the most nefarious actors on the internet, as they risk the security of their business with every application deployment.

@@ -4,13 +4,10 @@ title: Understand DevSecOps
 metadata:
   title: Understand DevSecOps
   description: "Understand DevSecOps"
-  ms.date: 02/07/2023
+  ms.date: 02/08/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 2
 content: |
   [!include[](includes/3-understand-devsecops.md)]

@@ -1,8 +1,4 @@
----
-interactive:bash
-zone_pivot_groups:azure-interface
-title:Summary
----
+
 This module introduced DevSecOps concepts, SQL injection attacks, threat modeling, and security for continuous integration.
 
 You learned how to describe the benefits and usage of:

@@ -1,6 +1,4 @@
----
-title:Exercise threat modeling
----
+
 Security can't be a separate department in a silo. It also can't be added at the end of a project. Security must be part of DevOps, and together they're called DevSecOps.
 
 The biggest weakness is not knowing the flaw in your solution. Microsoft has created a threat modeling tool to remediate it, which helps you understand potential security vulnerabilities in your solution.
