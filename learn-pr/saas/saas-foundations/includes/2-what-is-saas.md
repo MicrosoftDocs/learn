@@ -1,5 +1,3 @@
-## What SaaS really is?
-
 One of the most popular forms of cloud computing is Software as a Service, or SaaS, and is often used daily by consumers and for business.
 
 SaaS provides a complete software solution that you purchase on a pay-as-you-go basis from a service provider. You rent the use of an app for your organization, and your users connect to it over the Internet, usually with a web browser or mobile app. All the underlying infrastructure, middleware, app software, and app data are in the service provider’s datacenter. The service provider manages the hardware and software, and with the appropriate service agreement, will ensure the availability and the security of the app and your data as well. SaaS allows your organization to get quickly up and running with an app at minimal upfront cost.

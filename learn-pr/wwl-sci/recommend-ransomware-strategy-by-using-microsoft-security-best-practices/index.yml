@@ -3,7 +3,7 @@ uid: learn.wwl.recommend-ransomware-strategy-by-using-microsoft-security-best-pr
 metadata:
   title: Recommend a ransomware strategy by using Microsoft Security Best Practices
   description: "This module shows you how to execute the three important phases of ransomware protection: create a recovery plan, limit the scope of damage, make it hard to get in."
-  ms.date: 01/06/2023
+  ms.date: 02/07/2023
   author: wwlpublish
   ms.author: hrasheed
   ms.topic: interactive-tutorial
@@ -29,7 +29,6 @@ products:
 - azure-active-directory
 - azure-bastion
 - defender-office365
-- mdatp
 subjects:
 - cloud-security
 - security

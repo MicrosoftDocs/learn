@@ -2,11 +2,11 @@ Code challenges throughout these modules will reinforce what you've learned and 
 
 ## Word reversal challenge
 
-Many times, you'll need to combine several of the ideas we covered in this module into a single solution. This challenge will force you to decompose a larger problem into many mini-problems, then use the various ideas in this module to solve each mini-problem.
+You'll often need to combine several of the ideas we covered in this module into a single solution. This challenge will force you to decompose a larger problem into many mini-problems, then use the various ideas in this module to solve each mini-problem.
 
 ### Step 1: Delete all of the code in the .NET Editor from the earlier exercise
 
-Select all of the code in the .NET Editor then select the `del` or backspace key to delete it.
+Select all of the code in the .NET Editor, then select the <kbd>Del</kbd> or <kbd>Backspace</kbd> key to delete it.
 
 ### Step 2: Write code in the .NET Editor to reverse each word in a message
 
@@ -24,8 +24,8 @@ If you're successful, you should get the following output:
 ehT kciuq nworb xof spmuj revo eht yzal god
 ```
 
-> [!Important]
-> This is a particularly difficult challenge. You'll need to combine many of the concepts you learned in this exercise, including the use of the `Split()`, `ToCharArray()`, `Array.Reverse()`, and `String.Join()`. You'll also need to create multiple arrays, and at least one iteration statement.  
+> [!IMPORTANT]
+> This is a particularly difficult challenge. You'll need to combine many of the concepts you learned in this exercise, including the use of the `Split()`, `ToCharArray()`, `Array.Reverse()`, and `String.Join()`. You'll also need to create multiple arrays and at least one iteration statement.  
 
 Good luck! You can do it! Just keep decomposing the problem into baby steps, then solve that particular step before moving to the next.
 
