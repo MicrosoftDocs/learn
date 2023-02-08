@@ -1,14 +1,15 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.develop-for-azure-cache-for-redis.summary
+uid: learn.wwl.transform-data-spark-azure-synapse-analytics.summary
 title: Summary
 metadata:
   title: Summary
   description: "Summary"
   ms.date: 02/08/2023
   author: wwlpublish
-  ms.author: jeffko
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 3
+  ms.service: synapse-analytics
+durationInMinutes: 1
 content: |
-  [!include[](includes/7-summary.md)]
+  [!include[](includes/8-summary.md)]
