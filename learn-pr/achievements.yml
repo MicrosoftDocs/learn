@@ -1426,7 +1426,7 @@ achievements:
   type: badge
   title: Trigger an Azure Event Grid workflow from an IoT device
   summary: Learn the basics of integrating Azure IoT Hub with Azure Event Grid to trigger a workflow when a new IoT device is added to a solution.
-  iconUrl: /training/achievements/trigger-azure-event-grid-workflow-iot-device.svg
+  iconUrl: /training/achievements/iot/trigger-azure-event-grid-workflow-iot-device.svg
 - uid: learn.wwl.serve-data-from-azure-synapse-serverless-sql-pool.badge
   type: badge
   title: Serve the data from Azure Synapse serverless SQL pool
