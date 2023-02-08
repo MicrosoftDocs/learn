@@ -4,70 +4,69 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Interactive questions that validate whether the learner achieved the learning objectives.
-  ms.date: 01/27/2022
+  ms.date: 04/19/2022
   author: timlt
   ms.author: timlt
   ms.reviewer: liydu
   manager: lizross
-  ms.custom: engagement-fy23
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3
 content: |
 quiz:
   questions:
-  - content: "Which of the following features would allow a counting semaphore to operate as a mutex?"
-    choices:
-    - content: "Initialize the counting semaphore to zero."
-      isCorrect: false
-      explanation: "Incorrect. This answer would not allow the counting semaphore to operate as a mutex."
-    - content: "Use the put semaphore service call."
-      isCorrect: false
-      explanation: "Incorrect. This answer would not allow the counting semaphore to operate as a mutex."
-    - content: "Use it as a binary semaphore."
-      isCorrect: true
-      explanation: "Correct! Using a counting semaphore as a binary semaphore would allow the semaphore to operate as a mutex."
-  - content: "Which service call would be able to retrieve the current run count of a thread?"
-    choices:
-    - content: "tx_thread_info_get"
-      isCorrect: true
-      explanation: "Correct! This service call retrieves the current run count of a thread."
-    - content: "tx_runcount_get"
-      isCorrect: false
-      explanation: "Incorrect. This service call would not retrieve the current run count of a thread."
-    - content: "tx_thread_running"
-      isCorrect: false
-      explanation: "Incorrect. This service call would not retrieve the current run count of a thread."
-  - content: "Which service call would be able to break the suspension of a thread?"
-    choices:
-    - content: "tx_thread_stop_suspend"
-      isCorrect: false
-      explanation: "Incorrect. This service call would not break the suspension of a thread."
-    - content: "tx_thread_break"
-      isCorrect: false
-      explanation: "Incorrect. This service call would not break the suspension of a thread."
-    - content: "tx_thread_wait_abort"
-      isCorrect: true
-      explanation: "Correct! This service call would be able to break the suspension of a thread."
-  - content: "Suppose we want to use a counting semaphore for five shared resources. What should the initial value of that semaphore be?"
-    choices:
-    - content: "5"
-      isCorrect: true
-      explanation: "Correct! The initial value of the semaphore should be 5."
-    - content: "0"
-      isCorrect: false
-      explanation: "Incorrect. The initial value of the semaphore should not be 0."
-    - content: "1"
-      isCorrect: false
-      explanation: "Incorrect. The initial value of the semaphore should not be 1."
-  - content: "Suppose we want to use a counting semaphore as a binary semaphore. What should the initial value of the semaphore be?"
-    choices:
-    - content: "1"
-      isCorrect: true
-      explanation: "Correct! The initial value of the semaphore should be 1."
-    - content: "0"
-      isCorrect: false
-      explanation: "Incorrect. The initial value of the semaphore should not be 0."
-    - content: "2"
-      isCorrect: false
-      explanation: "Incorrect. The initial value of the semaphore should not be 2."
+    - content: 'Which of the following features would allow a counting semaphore to operate as a mutex?'
+      choices:
+        - content: 'Initialize the counting semaphore to zero.'
+          isCorrect: false
+          explanation: 'Incorrect. This answer would not allow the counting semaphore to operate as a mutex.'
+        - content: 'Use the put semaphore service call.'
+          isCorrect: false
+          explanation: 'Incorrect. This answer would not allow the counting semaphore to operate as a mutex.'
+        - content: 'Use it as a binary semaphore.'
+          isCorrect: true
+          explanation: 'Correct! Using a counting semaphore as a binary semaphore would allow the semaphore to operate as a mutex.'
+    - content: 'Which service call would be able to retrieve the current run count of a thread?'
+      choices:
+        - content: 'tx_thread_info_get'
+          isCorrect: true
+          explanation: 'Correct! This service call retrieves the current run count of a thread.'
+        - content: 'tx_runcount_get'
+          isCorrect: false
+          explanation: 'Incorrect. This service call would not retrieve the current run count of a thread.'
+        - content: 'tx_thread_running'
+          isCorrect: false
+          explanation: 'Incorrect. This service call would not retrieve the current run count of a thread.'
+    - content: 'Which service call would be able to break the suspension of a thread?'
+      choices:
+        - content: 'tx_thread_stop_suspend'
+          isCorrect: false
+          explanation: 'Incorrect. This service call would not break the suspension of a thread.'
+        - content: 'tx_thread_break'
+          isCorrect: false
+          explanation: 'Incorrect. This service call would not break the suspension of a thread.'
+        - content: 'tx_thread_wait_abort'
+          isCorrect: true
+          explanation: 'Correct! This service call would be able to break the suspension of a thread.'
+    - content: 'Suppose we want to use a counting semaphore for five shared resources. What should the initial value of that semaphore be?'
+      choices:
+        - content: '5'
+          isCorrect: true
+          explanation: 'Correct! The initial value of the semaphore should be 5.'
+        - content: '0'
+          isCorrect: false
+          explanation: 'Incorrect. The initial value of the semaphore should not be 0.'
+        - content: '1'
+          isCorrect: false
+          explanation: 'Incorrect. The initial value of the semaphore should not be 1.'
+    - content: 'Suppose we want to use a counting semaphore as a binary semaphore. What should the initial value of the semaphore be?'
+      choices:
+        - content: '1'
+          isCorrect: true
+          explanation: 'Correct! The initial value of the semaphore should be 1.'
+        - content: '0'
+          isCorrect: false
+          explanation: 'Incorrect. The initial value of the semaphore should not be 0.'
+        - content: '2'
+          isCorrect: false
+          explanation: 'Incorrect. The initial value of the semaphore should not be 2.'

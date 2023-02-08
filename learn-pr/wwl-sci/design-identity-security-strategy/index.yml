@@ -30,6 +30,7 @@ roles:
 - solution-architect
 products:
 - azure
+- mdatp
 subjects:
 - architecture
 - security

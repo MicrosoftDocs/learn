@@ -13,6 +13,9 @@ Because an administrator account has full access to all resources, you should li
 
 See Azure Security Center's **Manage access and permissions** for guidance on controlling and monitoring administrative accounts.
 
+> [!NOTE]
+> This article contains references to the term *slave*, a term that Microsoft no longer uses. When the term is removed from the software, we'll remove it from this article.
+
 This server admin user has the following privileges:
 
 ```sql

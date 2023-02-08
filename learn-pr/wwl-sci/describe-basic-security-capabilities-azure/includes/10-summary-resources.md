@@ -14,7 +14,7 @@ Now that you've completed this module, you should be able to:
 
 To find out more about any of the topics covered in this module, go to:
 
-- [Azure DDoS Protection Standard overview](/azure/ddos-protection/ddos-protection-overview)
+- [Azure DDoS Protection overview](/azure/ddos-protection/ddos-protection-overview)
 - [Azure DDoS Protection pricing page](https://azure.microsoft.com/pricing/details/ddos-protection/)
 - [Azure Firewall](/azure/firewall/)
 - [Web Application firewall](/azure/web-application-firewall/)

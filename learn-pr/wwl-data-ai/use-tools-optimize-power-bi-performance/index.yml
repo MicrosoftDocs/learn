@@ -2,12 +2,11 @@
 uid: learn.wwl.use-tools-optimize-power-bi-performance
 metadata:
   title: Use tools to optimize Power BI performance
-  description: "Use tools to develop, manage, and optimize Power BI data model and DAX query performance."
-  ms.date: 08/11/2022
+  description: "Use tools to optimize Power BI performance"
+  ms.date: 01/16/2023
   author: wwlpublish
   ms.author: shlindsay
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Use tools to optimize Power BI performance
 summary: Use tools to develop, manage, and optimize Power BI data model and DAX query performance.
 abstract: |
@@ -17,7 +16,7 @@ abstract: |
   - Optimize a data model using Tabular Editor.
 prerequisites: |
   - Experience designing and building Power BI data models.
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/use-tools-optimize-power-bi-performance.svg
 levels:
 - intermediate
 roles:

@@ -20,7 +20,7 @@ With the right set of roles and permissions, the developers involved in your sec
 
 - For code scanning alerts: commit corrections to the code, dismiss alerts that do not require any action, or delete alerts to clean up code scanning results.
 - For secret scanning alerts: delete detected secrets, create new tokens, and update code that uses the detected secrets, or dismiss alerts that do not require any action.
-- For Dependabot alerts: update vulnerable dependencies, or dismiss alerts that do not require any action.
+- For Dependabot alerts: update vulnerable dependencies or dismiss alerts that do not require any action.
 
 ## Set a security policy at the organization level
 
@@ -28,10 +28,10 @@ A good way to make sure that everyone in your organization is using GitHub Advan
 
 Policies can be configured for all organizations owned by your enterprise account, or for individual organizations that you choose.
 
-Follow the steps below to set up a security policy at the organization level:
+Follow these steps to set up a security policy at the organization level:
 
 1. In your enterprise sidebar, navigate to **Policies > Advanced Security**.
-2. Under **GitHub Advanced Security**, select the drop-down menu and click a policy for the organizations owned by your enterprise.
+2. Under **GitHub Advanced Security**, select the drop-down menu and select a policy for the organizations owned by your enterprise.
 
     :::image type="content" source="../media/security-policy-org.png" alt-text="Screenshot of security policy drop-down.":::
 
@@ -48,7 +48,7 @@ Equally important when setting up a GitHub project is to document how to report 
 
 After someone reports a security vulnerability in your project, you can use GitHub Security Advisories to disclose, fix, and publish information about the vulnerability.
 
-Follow the steps below to set up a security policy at the repository level:
+Follow these steps to set up a security policy at the repository level:
 
 1. In your repository, navigate to **Security > Security policy**.
 2. Click **Start setup**.

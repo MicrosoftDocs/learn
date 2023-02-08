@@ -74,7 +74,13 @@ In your workflow, you use a special syntax to refer to the value of the paramete
 
 You pass the value for inputs to a called workflow by using the `with` keyword. You need to define the values for each input within the `with` section - you can't use the `env` keyword to refer to a workflow's environment variables. You pass secret values to a called workflow by using the `secrets` keyword.
 
-:::code language="yaml" source="code/3-caller-workflow-inputs.yml" highlight="7-12, 16-21" :::
+:::code language="yaml" source="code/3-caller-workflow-inputs.yml" highlight="11-16, 20-25" :::
+
+## Use workload identities from called workflows
+
+When you work with called workflows, you often define some of your deployment actions across multiple workflow definition files. You need to grant permission to the caller workflow, which then ensures that every called workflow is able to access the workflow's identity and authenticate to Azure:
+
+:::code language="yaml" source="code/3-caller-workflow-inputs.yml" highlight="4-6" :::
 
 ## Conditions
 

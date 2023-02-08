@@ -1,51 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.azdo.deploy-nodejs.2-azure-support-nodejs
-title: How do Azure and Azure DevOps support Node.js applications?
+title: Prepare
 metadata:
-  title: How do Azure and Azure DevOps support Node.js applications?
-  description: Understand what Node.js is and how it can be deployed to Azure.
+  title: Prepare to build your Node.js CI/CD pipeline.
+  description: Understand the prerequisites for your build.
   ms.date: 09/08/2022
   author: juliakm
   ms.author: jukullam
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: devdivchpfy22
+  ms.custom: devdivchpfy22, engagement-fy23
 durationInMinutes: 5
 content: |
   [!include[](includes/2-azure-support-nodejs.md)]
-quiz:
-  title: Check your knowledge
-  questions:
-  - content: "What kind of source changes will the typical Node.js project require in order to run on Azure?"
-    choices:
-    - content: "Node.js apps will need to be rewritten in C# or another .NET language before they'll run properly on Azure."
-      isCorrect: false
-      explanation: "Node.js is supported as a first-class app platform in Azure."
-    - content: "Configuration code will have to be rewritten to connect to Azure's configuration service."
-      isCorrect: false
-      explanation: "Azure is designed to provide application settings using standard mechanisms, such as configuration files and environment variables."
-    - content: "No changes are required."
-      isCorrect: true
-      explanation: "Node.js is supported as a first-class app platform in Azure."
-  - content: "How does hosting Node.js apps on Azure differ from hosting apps built for other platforms (like .NET) on Azure?"
-    choices:
-    - content: "Each app platform has its own dependencies, so developers need to be sure the Azure target they're using is configured correctly."
-      isCorrect: true
-      explanation: "Just like deploying anywhere else, the application environment needs to account for application prerequisites in order to run properly."
-    - content: "Node.js deployments require use of Node.js performance and monitoring tools."
-      isCorrect: false
-      explanation: "While specialized Node.js tools will work as expected, your Node.js deployments will also benefit from the same performance and monitoring tools used by Azure for apps across all platforms."
-    - content: "Node.js deployments are limited to web sites on Azure."
-      isCorrect: false
-      explanation: "You can deploy Node.js apps to App Services, Azure Functions, container-based services, and more."
-  - content: "What databases can a Node.js app deployed on Azure connect to?"
-    choices:
-    - content: "Azure SQL Database is the only option."
-      isCorrect: false
-      explanation: "While Node.js apps in Azure can connect to Azure SQL Database, they aren't limited in the databases, and services they can access."
-    - content: "Azure Database for MySQL is the only option."
-      isCorrect: false
-      explanation: "While Node.js apps in Azure can connect to Azure Database for MySQL, they aren't limited in the databases, and services they can access."
-    - content: "They can connect to any database or service."
-      isCorrect: true
-      explanation: "There is no limit to the databases or services Node.js apps can connect to when running on Azure."

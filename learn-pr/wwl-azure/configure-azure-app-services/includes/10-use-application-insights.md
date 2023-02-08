@@ -1,18 +1,39 @@
-Application Insights, a feature of Azure Monitor, monitors your live applications. It will automatically detect performance anomalies, and includes powerful analytics tools to help you diagnose issues and to understand what users actually do with your app. It's designed to help you continuously improve performance and usability. Insights works on various platforms including .NET, Node.js and Java EE, hosted on-premises, hybrid, or any public cloud. It integrates with your DevOps process, and has connection points to a variety of development tools. It can monitor and analyze data from mobile apps by integrating with Visual Studio App Center.
+Azure Application Insights is a feature of Azure Monitor that lets you monitor your live applications. You can integrate Application Insights with your App Service configure to automatically detect performance anomalies in your apps. 
 
-:::image type="content" source="../media/app-insights-16629887.png" alt-text="Diagram where Application Insights is receiving information from web pages, client apps, and web services. The information is transferred to Alerts, Power B I, and Visual Studio.":::
+Application Insights is designed to help you continuously improve the performance and usability of your apps. The feature offers powerful analytics tools to help you diagnose issues and understand what users actually do with your apps.
 
+### Things to know about Application Insights
 
-## Application Insights features
+Let's examine some characteristics of Application Insights for Azure Monitor.
 
-Application Insights is aimed at the development team, to help you understand how your app is performing and how it's being used. It monitors:
+- Application Insights works on various platforms including .NET, Node.js and Java EE.
 
- -  **Request rates, response times, and failure rates** \- Find out which pages are most popular, at what times of day, and where your users are. See which pages perform best. If your response times and failure rates go high when there are more requests, then perhaps you have a resourcing problem.
- -  **Dependency rates, response times, and failure rates** \- Find out whether external services are slowing you down.
- -  **Exceptions** \- Analyze the aggregated statistics, or pick specific instances and drill into the stack trace and related requests. Both server and browser exceptions are reported.
- -  **Page views and load performance** \- reported by your users' browsers.
- -  **User and session counts**.
- -  **Performance counters** from your Windows or Linux server machines, such as CPU, memory, and network usage.
- -  **Host diagnostics** from Docker or Azure.
- -  **Diagnostic trace logs** from your app - so that you can correlate trace events with requests.
- -  **Custom events and metrics** that you write yourself in the client or server code, to track business events such as items sold or games won.
+- The feature can be used for configurations that are hosted on-premises, in a hybrid environment, or in any public cloud.
+
+- Application Insights integrates with your Azure DevOps process, and has connection points to many development tools.
+
+- You can monitor and analyze data from mobile apps by integrating with Visual Studio App Center.
+
+:::image type="content" source="../media/app-insights-16629887.png" alt-text="Diagram that shows Azure Application Insights receiving information from web pages, client apps, and web services, which is transferred to Alerts, Power BI, and Visual Studio." border="false":::
+
+### Things to consider when using Application Insights
+
+Application Insights is ideal for supporting your development team. The feature helps developers understand how your app is performing and how it's being used. Consider monitoring the following items in your App Service configuration scenario.
+
+- **Consider Request rates, response times, and failure rates**. Find out which pages are most popular, at what times of day, and where your users are. See which pages perform best. If your response times and failure rates go high when there are more requests, then perhaps you have a resourcing problem.
+
+- **Consider Dependency rates, response times, and failure rates**. Use Application Insights to discover if external services are degrading your app performance.
+
+- **Consider Exceptions**. Analyze the aggregated statistics, or pick specific instances and drill into the stack trace and related requests. Both server and browser exceptions are reported.
+
+- **Consider Page views and load performance**. Collect the number of page views reported by your users' browsers and analyze the load performance.
+
+- **Consider User and session counts**. Application Insights can help you keep track of the number of users and sessions connected to your app.
+
+- **Consider Performance counters**. Add Application Insights performance counters from your Windows or Linux server machines. Monitor performance output for the CPU, memory, network usage, and so on.
+
+- **Consider Host diagnostics**. Integrate diagnostics from Docker or Azure into your app Application Insights.
+
+- **Consider Diagnostic trace logs**. Implement trace logs from your app to help correlate trace events with requests and diagnose issues.
+
+- **Consider Custom events and metrics**. Write your own custom events and metric tracking algorithms as client or server code. Track business events such as number of items sold, or number of games won.

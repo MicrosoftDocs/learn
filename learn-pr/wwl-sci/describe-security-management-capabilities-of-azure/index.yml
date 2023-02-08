@@ -14,7 +14,7 @@ abstract: |
   After completing this module, you'll be able to:
   - Describe cloud security posture management.
   - Describe the capabilities of Microsoft Defender for Cloud
-  - Understand the Azure Security Benchmark and the security baselines in Azure.
+  - Understand the Microsoft cloud security benchmark and the security baselines in Azure.
 prerequisites: |
   - General understanding of networking and cloud computing concepts.
   - General IT knowledge or any general experience working in an IT environment.
@@ -26,7 +26,7 @@ roles:
 - business-user
 - student
 products:
-- azure
+- defender-for-cloud
 subjects:
 - security
 units:

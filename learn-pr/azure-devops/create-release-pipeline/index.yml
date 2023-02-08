@@ -3,7 +3,7 @@ uid: learn.azdo.create-release-pipeline
 metadata:
   title: Create a release pipeline in Azure Pipelines
   description: Set up a continuous delivery (CD) pipeline that automates the process of deploying your application.
-  ms.custom: devdivchpfy22
+  ms.custom: devdivchpfy22, engagement-fy23
   ms.date: 08/19/2022
   author: ramiMSFT
   ms.author: rabououn
@@ -19,7 +19,7 @@ abstract: |
   - Examine pipeline analytics to understand the health and history of your releases
 prerequisites: |
   - An Azure subscription
-  - An Azure DevOps organization
+  - An Azure DevOps organization with access to parallel jobs
   - Visual Studio Code
   - .NET 6.0 SDK
   - Git
@@ -44,8 +44,7 @@ units:
 - learn.azdo.create-release-pipeline.4-set-up-environment
 - learn.azdo.create-release-pipeline.5-deploy-to-appservice
 - learn.azdo.create-release-pipeline.6-monitor-pipeline-health
-- learn.azdo.create-release-pipeline.7-plan-upcoming-sprint
-- learn.azdo.create-release-pipeline.8-clean-up-environment
-- learn.azdo.create-release-pipeline.9-summary
+- learn.azdo.create-release-pipeline.7-clean-up-environment
+- learn.azdo.create-release-pipeline.8-summary
 badge:
   uid: learn.azdo.create-release-pipeline.badge

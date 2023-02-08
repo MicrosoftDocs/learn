@@ -28,7 +28,7 @@ To view the connector page:
 
 :::image type="content" source="../media/common-event-format-connector.png" alt-text="Screenshot of the C E F Connector Page." lightbox="../media/common-event-format-connector.png":::
 
-### Using the same machine to forward both plain Syslog and common even format messages
+### Using the same machine to forward both plain Syslog and common event format messages
 
 If you plan to use this log forwarder machine to forward Syslog messages as CEF, then to avoid the duplication of events to the Syslog and CommonSecurityLog tables:
 

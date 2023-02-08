@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.create-azure-active-directory-test-environment.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary"
+  ms.date: 12/08/2022
+  author: rwike77
+  ms.author: ryanwi
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-summary.md)]

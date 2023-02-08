@@ -1,16 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-network-solutions.design-for-premises-connectivity-to-azure-virtual-networks
-title: Design for on-premises connectivity to Azure Virtual Networks
+title: Design for on-premises connectivity to Azure Virtual Network
 metadata:
-  title: Design for on-premises connectivity to Azure Virtual Networks
-  description: "Design for on-premises connectivity to Azure Virtual Networks"
-  ms.date: 11/01/2022
+  title: Design for on-premises connectivity to Azure Virtual Network
+  description: "Design for on-premises connectivity to Azure Virtual Network"
+  ms.date: 11/16/2022
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 4
 content: |
   [!include[](includes/3-design-for-premises-connectivity-to-azure-virtual-networks.md)]

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.manage-linux-with-arc.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction to Manage Linux with Azure Arc.
+  ms.date: 10/10/2022
+  author: johnmarco
+  ms.author: johnmarc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]

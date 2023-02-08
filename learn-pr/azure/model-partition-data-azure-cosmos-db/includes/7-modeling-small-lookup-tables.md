@@ -10,7 +10,7 @@ For categories, we'll model the data with its ID and name columns as properties 
 
 Next we need to choose a partition key. Let's explore the operations that we need to perform on this data. 
 
-We'll create a new product category, edit a product category, and then list all product categories. Creating and editing product categories are not frequently run operations. But our e-commerce application will often list all product categories when customers visit the website. So the last operation is the one we'll run the most.
+We'll create a new product category, edit a product category, and then list all product categories. Creating and editing product categories aren't frequently run operations. But our e-commerce application will often list all product categories when customers visit the website. So the last operation is the one we'll run the most.
 
 The query for this last operation will look like the following one. Even though we want to try to optimize read-heavy operations to have a single partition, this one is cross-partition. The data for product category will never grow near 20 GB in size. However, we're modeling this data in a way that will result in a single partition query to list all product categories. But we're doing this for a different reason that will be explained a bit later.
 

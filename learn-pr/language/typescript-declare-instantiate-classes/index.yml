@@ -38,7 +38,6 @@ roles:
 - student
 products:
 - azure
-- vs-code
 subjects:
 - data-modeling
 units:

@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/04/2022
+  ms.date: 01/04/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -16,37 +16,40 @@ content: |
   [!include[](includes/8-knowledge-check.md)]
 quiz:
   title: ""
+
   questions:
-  - content: "The infrastructure team has two NSG security rules for inbound traffic to the backend web servers. There's an allow rule with a priority of 200. And, there's a deny rule with a priority of 150. Which rule takes precedence?"
+  - content: "Which of the security rules defined by the infrastructure team takes precedence?"
     choices:
     - content: "The allow rule takes precedence."
       isCorrect: false
-      explanation: "Incorrect. Rules are processed by priority."
+      explanation: "Incorrect. Rules are processed according to the specified priority."
     - content: "The deny rule takes precedence."
       isCorrect: true
       explanation: "Correct. The deny rule takes precedence because it's processed first. The rule with priority 150 is processed before the rule with priority 200."
     - content: "The rule that was created first takes precedence."
       isCorrect: false
-      explanation: "Incorrect. Rules are processed using the priority."
-  - content: "Which of the following rules is a default inbound security rule?"
+      explanation: "Incorrect. Rules are processed according to the specified priority."
+
+  - content: "How would you define a default inbound security rule?"
     choices:
-    - content: "Allow inbound coming from any VM to any other VM within the virtual network."
+    - content: "Allow inbound coming from a virtual machine in another virtual network."
+      isCorrect: false
+      explanation: "Incorrect. This rule isn't a default inbound security rule."
+    - content: "Allow traffic from any external source to any of the virtual machines."
+      isCorrect: false
+      explanation: "Incorrect. This rule isn't a default inbound security rule."
+    - content: "Allow inbound coming from any virtual machine to any other virtual machine within the virtual network."
       isCorrect: true
-      explanation: "Correct. By default, inbound security rules allow traffic from any VM to any other VM within the virtual network."
-    - content: "Allow inbound coming from a VM in another virtual network."
-      isCorrect: false
-      explanation: "Incorrect. That rule isn't a default inbound security rule."
-    - content: "Allow traffic from any external source to any of the VMs."
-      isCorrect: false
-      explanation: "Incorrect. That rule isn't a default inbound security rule."
-  - content: "Which of the following tags is a valid service tag for network security group rules?"
+      explanation: "Correct. By default, inbound security rules allow traffic from any virtual machine to any other virtual machine within the virtual network."
+
+  - content: "What's a valid service tag for network security group rules?"
     choices:
-    - content: "VirtualNetwork"
+    - content: "`VirtualNetwork`"
       isCorrect: true
-      explanation: "Correct. VirtualNetwork is a valid service tag. Service tags represent a group of IP addresses. Other service tags are Internet, SQL, Storage, AzureLoadBalancer, and AzureTrafficManager."
-    - content: "VPN Gateway"
+      explanation: "Correct. `VirtualNetwork` is a valid service tag. Service tags represent a group of IP addresses. Other service tags are `Internet`, `SQL`, `Storage`, `AzureLoadBalancer`, and `AzureTrafficManager`."
+    - content: "`VPN Gateway`"
       isCorrect: false
-      explanation: "Incorrect. That tag isn't a valid service tag."
-    - content: "Database"
+      explanation: "Incorrect. `VPN Gateway` isn't a valid service tag."
+    - content: "`Database`"
       isCorrect: false
-      explanation: "Incorrect. That tag isn't a valid service tag."
+      explanation: "Incorrect. `Database` isn't a valid service tag."

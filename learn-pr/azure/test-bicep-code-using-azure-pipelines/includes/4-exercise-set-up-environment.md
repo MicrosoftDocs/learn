@@ -1,6 +1,6 @@
 [!INCLUDE [BYO subscription explanation](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
-Before you start to work on your toy company's website pipeline, you need to configure your environment. In this section, you make sure that your Azure and Azure DevOps environments are set up to complete the rest of this module.
+Before you start to work on your toy company's website pipeline, you need to configure your environment. In this section, you'll make sure that your Azure and Azure DevOps environments are set up to complete the rest of this module.
 
 To meet these objectives, you'll:
 
@@ -12,7 +12,7 @@ To meet these objectives, you'll:
 
 ## Get the Azure DevOps project
 
-Here you make sure that your Azure DevOps organization is set up to complete the rest of this module. You set it up by running a template that creates a project in Azure DevOps.
+Here, you'll make sure that your Azure DevOps organization is set up to complete the rest of this module. You'll set it up by running a template that creates a project in Azure DevOps.
 
 The modules in this learning path are part of a progression. For learning purposes, each module has an associated Azure DevOps project.
 

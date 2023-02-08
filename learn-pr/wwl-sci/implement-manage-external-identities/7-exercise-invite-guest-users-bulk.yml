@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-manage-external-identities.exercise-invite-guest-users-bulk
+title: Exercise - invite guest users bulk
+metadata:
+  title: Exercise - invite guest users bulk
+  description: "Exercise - invite guest users bulk"
+  ms.date: 02/03/2023
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/7-exercise-invite-guest-users-bulk.md)]

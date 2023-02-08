@@ -32,7 +32,6 @@ roles:
 - student
 products:
 - azure
-- vs-code
 subjects:
 - development-tools
 - it-management-monitoring

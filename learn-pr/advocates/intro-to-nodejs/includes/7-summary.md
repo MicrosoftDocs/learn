@@ -7,7 +7,7 @@ The following applications are built with Node.js:
 - CLI tools such as [hexa.run](https://www.hexa.run/?azure-portal=true) and [Azure Functions CLI](https://github.com/Azure/azure-functions-core-tools?azure-portal=true)
 - Back-end servers and API services such as [Express.js](https://expressjs.com/?azure-portal=true) and [NestJS](https://nestjs.com/?azure-portal=true)
 - Desktop apps such as [Slack](https://slack.com/?azure-portal=true) (using [Electron](https://www.electronjs.org/?azure-portal=true))
-- IoT libraries such as [Johnny-Five](http://johnny-five.io/?azure-portal=true), [Puck-js](https://www.puck-js.com/), and [Tessel](https://tessel.io/?azure-portal=true)
+- IoT libraries such as [Johnny-Five](http://johnny-five.io/?azure-portal=true) and [Puck-js](https://www.puck-js.com/)
 - Plug-ins for [SketchApp](https://www.sketch.com/?azure-portal=true) and [Adobe XD](https://www.adobe.com/products/xd.html?azure-portal=true)
 - Code editors such as [Visual Studio Code](https://code.visualstudio.com/?azure-portal=true) and [Atom](https://atom.io/?azure-portal=true)
 - Native mobile development with [NativeScript](https://www.nativescript.org/?azure-portal=true)

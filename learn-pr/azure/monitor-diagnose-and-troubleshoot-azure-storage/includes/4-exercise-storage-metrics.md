@@ -27,9 +27,9 @@ In this exercise, we'll use Azure portal and PowerShell to configure storage met
     | Performance | **Standard** |
     | Redundancy | **Geo-redundant storage (GRS)** |
 
-6. Select the **Advance** tab. In the **Blob storage** section, make sure that **access tier** is set to **Hot**.
+6. Select the **Advanced** tab. In the **Blob storage** section, make sure that **access tier** is set to **Hot**.
 
-7. Select **Review + create**. After validation passes, select **Create**.
+7. Select **Review**. After validation passes, select **Create**.
 
 8. On the **Your deployment is complete** panel, select **Go to resource**.
 
@@ -39,7 +39,7 @@ Before you can add blobs to a storage account, you need to create a blob contain
 
 1. Under **Data storage**, select **Containers**.  
 
-2. In the **Containers** panel, select **Container**.
+2. In the **Containers** panel, select **+ Container**.
 
 3. In the **Name** field, enter **monitor-blobs-container**, and then select **Create**.
 
@@ -69,7 +69,7 @@ Transaction metrics are emitted on every request to a storage account, so you sh
 
 3. In the top right, select **Last Hour** for the time range.
 
-4. Under **Time** granularity, select **1 minute**, and then select **Apply**.
+4. Under **Time** granularity, select **Automatic**, and then select **Apply**.
 
 5. On the bar that appears beneath the chart title, select **Line chart**, and then **Bar chart**.
 

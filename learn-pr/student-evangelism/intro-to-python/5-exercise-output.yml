@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.intro-to-python.exercise-output
-title: Exercise - output
+title: Exercise - Output
 metadata:
-  title: Exercise - output
-  description: In this unit, you will learn how to declare variables and use the print function while using the REPL.
-  ms.date: 06/14/2021
+  title: Exercise - Output
+  description: In this unit, you'll learn how to declare variables and use the print function while using the REPL.
+  ms.date: 1/23/2023
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial

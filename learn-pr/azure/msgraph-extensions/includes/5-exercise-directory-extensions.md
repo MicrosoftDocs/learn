@@ -2,15 +2,15 @@ In this exercise, you use [Graph Explorer](https://aka.ms/ge) to make REST API r
 
 ## Authenticate your session
 
-Sign in to Graph Explorer by using a work or school account that has global administrator privileges in the tenant.
+1. Sign in to Graph Explorer by using a work or school account that has global administrator privileges in the tenant.
 
-Consent to the *User.ReadWrite.All*, *Group.ReadWrite.All*, and *Application.ReadWrite.All* Microsoft Graph permissions to perform the API operations in this exercise.
+1. To perform the API operations in this exercise, consent to the *User.ReadWrite.All*, *Group.ReadWrite.All*, and *Application.ReadWrite.All* Microsoft Graph permissions.
 
-In the team-bonding app, employees will sign in with their Azure AD profile and must consent to the *User.Read.All* and *User.ReadWrite* Microsoft Graph permissions. Granting this consent will allow them to discover their colleagues and update their own profile information.
+In the team-bonding app, employees will sign in with their Azure AD profile and must consent to *User.Read.All* and *User.ReadWrite* Microsoft Graph permissions. Granting this consent will allow them to discover their colleagues and update their own profile information.
 
 ## Identify the owner app
 
-Retrieve the values of **id** and **appId** of the app you own and that has a service principal in the tenant. You'll use these values in this exercise. Assume that the following object represents your application.
+Retrieve the **id** and **appId** for an app that has a service principal in your tenant. You'll define the directory extension on this app.
 
 The object shown here has been shortened for readability.
 
@@ -44,6 +44,7 @@ The following request creates a directory extension definition named **linkedInP
 
 ```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/applications/da489504-01b0-4754-bf9d-8ed05422ba2f/extensionProperties
+Content-type: application/json
 
 {
     "name": "linkedInProfile",
@@ -83,12 +84,13 @@ Running the preceding request two more times with different names will give you 
 
 ## Store user data
 
-Consider a user named "Adele Vance," who's identified by the user ID `6e03a2db-564a-47ec-ba51-d0cd38af069a`. In this step, you store Adele's LinkedIn profile URL, Skype ID, and Xbox gamertag on the three new directory extension properties that you created.
+In this step, you store the LinkedIn profile URL, Skype ID, and Xbox gamertag for *Adele Vance* of user ID `6e03a2db-564a-47ec-ba51-d0cd38af069a`, in the three new directory extension properties that you created.
 
 ### Request
 
 ```http
 PATCH https://graph.microsoft.com/v1.0/users/6e03a2db-564a-47ec-ba51-d0cd38af069a
+Content-type: application/json
 
 {
     "extension_5bfc8fdacfc943a9a6de214ea9d15fdb_linkedInProfile": "www.linkedin.com/in/adelevanceonlinkedIn",
@@ -137,18 +139,17 @@ Content-type: application/json
 
 ## Update and delete user data
 
-Suppose further that user Adele has crossed the 1,000,000 *gamerscore* mark and, to show off the milestone, she has changed the Xbox gamertag from `AwesomeAdele` to `AtalantaAdele`. Adele wants to change the value in the internal profile as well, so that colleagues can discover her new gamertag.
-
-Adele also no longer uses the Skype app and now uses Teams instead. The app calls Microsoft Graph to set the value of `extension_5bfc8fdacfc943a9a6de214ea9d15fdb_xboxGamertag` to `null`.
+Suppose Adele has crossed the 1,000,000 *gamerscore* mark and, to show off the milestone, has changed her Xbox gamertag from `AwesomeAdele` to `AtalantaAdele`. Adele wants to change the value in the internal profile as well. Adele also no longer uses the Skype app and now uses Teams instead. The app calls Microsoft Graph to set the value of **extension_5bfc8fdacfc943a9a6de214ea9d15fdb_skypeId** to `null`.
 
 ### Request
 
 ```msgraph-interactive
 PATCH https://graph.microsoft.com/v1.0/users/6e03a2db-564a-47ec-ba51-d0cd38af069a
+Content-type: application/json
 
 {
     "extension_5bfc8fdacfc943a9a6de214ea9d15fdb_xboxGamertag": "AwesomeAdele",
-    "extension_5bfc8fdacfc943a9a6de214ea9d15fdb_xboxGamertag": null
+    "extension_5bfc8fdacfc943a9a6de214ea9d15fdb_skypeId": null
 }
 ```
 
@@ -160,19 +161,13 @@ HTTP/1.1 204 No Content
 
 ## Dynamically add users to groups based on their extension data
 
-Assume that you created the dynamic *xBoxers* group in the preceding exercise. In this exercise, you update the group **membershipRule** setting to configure the rule so that only users with Xbox gamer tags can be members of the group.
-
-Because Adele is already a member of the *xBoxers* group, you can choose to reset the group and remove all memberships. To achieve this, do the following:
-
-1. Update **groupTypes** to `Unified` only, and update **membershipRuleProcessingState** and **membershipRule** to `null`.
-1. Remove the current group members from the *xBoxers* group.
-
-You can alternatively choose to create a new dynamic group for this part of the exercise.
+Assume that you created the dynamic *xBoxers* group in the preceding exercise. In this step, you update the group **membershipRule** setting to configure the rule so that only users with Xbox gamer tags can be members of the group.
 
 ### Request
 
 ```msgraph-interactive
 PATCH https://graph.microsoft.com/v1.0/groups/d61efd38-0b40-488a-8e4d-ed7508504b27
+Content-type: application/json
 
 {
     "membershipRule": "(user.extension_5bfc8fdacfc943a9a6de214ea9d15fdb_xboxGamertag -ne null)"
@@ -186,12 +181,3 @@ HTTP/1.1 204 No Content
 ```
 
 After a few seconds to allow Azure AD to complete synchronization, the users who match the dynamic membership rule, such as Adele, are added as members of the group.
-
-## Conclusion
-
-In this unit, you used Microsoft Graph directory extension properties to store three custom values. You've seen how to:
-+ Retrieve those values or remove any values from the properties.
-+ Implement a custom search so that employees in the company can discover each other's external social profiles.
-+ Use the directory extension values for dynamic group memberships.
-
-After this exercise is complete, Adele's profile has only the LinkedIn profile URL and Xbox gamer tag, which can be discovered by other users through the team-bonding app. These users may decide to share all three pieces of data or none. For each type of operation, you should implement the appropriate logic in the team-bonding app to translate successful HTTP response codes to user-friendly response messages in the user interface.

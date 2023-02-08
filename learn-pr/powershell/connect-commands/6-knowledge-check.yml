@@ -19,18 +19,18 @@ quiz:
       choices:
         - content: "`Get-Process 'name of process' | Get-Member -Name F*`"
           isCorrect: true
-          explanation: "Correct. This solution is how you search for member starting with F"
+          explanation: "Correct. This solution is how you search for members starting with F."
         - content: "`Get-Process 'name of process' | Get-Member -Name F`"
           isCorrect: false
-          explanation: "Incorrect. This solution will not work as it only searches for a member with the exact name F"
+          explanation: "Incorrect. This solution won't work as it only searches for a member with the exact name F."
         - content: "`Get-Process 'name of process' | Get-Members -Name F*`"
           isCorrect: false
-          explanation: "Incorrect. The correct command to pipe to is Get-Member"
-    - content: What will this command answer with `Get-Process 'some process' | Format-Table Name,CPU | Select-Object Name, CPU`"?
+          explanation: "Incorrect. Get-Member is the correct command to pipe to."
+    - content: What will this command answer with `Get-Process 'some process' | Format-Table Name, CPU | Select-Object Name, CPU`"?
       choices:
         - content: The Name and CPU for the process in question.
           isCorrect: false
-          explanation: Incorrect. The use of Format-Table before Select-Object transforms the response to another type of object so values for Name and CPU is no longer found where they used to be.
+          explanation: Incorrect. The use of Format-Table before Select-Object transforms the response to another type of object so values for Name and CPU are no longer found where they used to be.
         - content: Empty response
           isCorrect: true
           explanation: Correct. The Format-Table command will transform the response so that Name and CPU values still exist, but in other columns.

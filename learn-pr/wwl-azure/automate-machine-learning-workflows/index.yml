@@ -24,7 +24,6 @@ products:
 - azure-devops
 - azure-machine-learning
 - github
-- vs-code
 units:
 - learn.wwl.automate-machine-learning-workflows.introduction
 - learn.wwl.automate-machine-learning-workflows.machine-learning-pipelines

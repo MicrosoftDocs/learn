@@ -4,8 +4,8 @@ metadata:
   title: Introduction to Linux on Azure
   description: Discover the unique benefits of running Linux on Azure, and how to run Linux-based applications and workloads in the cloud with Azure.  
   ms.date: 6/26/2020
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: ChaseCrum
+  ms.author: chasecrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Linux on Azure

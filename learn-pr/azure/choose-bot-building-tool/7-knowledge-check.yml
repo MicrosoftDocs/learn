@@ -7,7 +7,7 @@ metadata:
   description: Knowledge check
   ms.date: 6/15/2021
   author: jasonkellingtonwaypoint
-  ms.author: v-jaske
+  ms.author: v-jasonke
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 4
@@ -22,7 +22,7 @@ quiz:
       explanation: "Correct. Topics define how a bot conversation proceeds, based on user input."
     - content: "Trigger"
       isCorrect: false
-      explanation: "Incorrect. A trigger is phrase defined within a topic that represents expected user input."
+      explanation: "Incorrect. A trigger is a phrase defined within a topic that represents expected user input."
     - content: "Skills"
       isCorrect: false
       explanation: "Incorrect. A skill is a Bot Framework component that defines a set of programmatic actions."

@@ -1,4 +1,4 @@
-Now it's your opportunity to explore Azure Stream Analytics in a sample solution that aggregates streaming data from a simulated IoT device.
+Now it's your opportunity to explore Azure Stream Analytics in a sample solution that aggregates streaming data events.
 
 > [!NOTE]
 > To complete this lab, you will need an [Azure subscription](https://azure.microsoft.com/free?azure-portal=true) in which you have administrative access.

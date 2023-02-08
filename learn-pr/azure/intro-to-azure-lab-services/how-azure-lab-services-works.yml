@@ -10,6 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   hidden: true
-durationInMinutes: 5
+durationInMinutes: 4
 content: |
   [!include[](includes/3-how-azure-lab-services-works.md)]

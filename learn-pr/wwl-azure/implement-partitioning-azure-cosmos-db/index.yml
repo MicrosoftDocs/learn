@@ -2,8 +2,8 @@
 uid: learn.wwl.implement-partitioning-azure-cosmos-db
 metadata:
   title: Implement partitioning in Azure Cosmos DB
-  description: "Learn how partitions are organized in Azure Cosmos DB and how to choose an appropriate partition key for your solution."
-  ms.date: 10/08/2022
+  description: "Implement partitioning in Azure Cosmos DB"
+  ms.date: 02/06/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial

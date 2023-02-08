@@ -5,8 +5,8 @@ metadata:
   title: Customize a Docker image to run your own web app
   description: Explain how to create a custom Docker image. Show how to specify the steps for creating an image by using a Dockerfile
   ms.date: 03/03/2022
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: MGoedtel
+  ms.author: magoedte
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

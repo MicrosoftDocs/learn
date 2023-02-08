@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/04/2022
+  ms.date: 12/22/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -17,36 +17,36 @@ content: |
 quiz:
   title: ""
   questions:
-  - content: "Which workload option should be selected to run a network appliance on a virtual machine?"
+  - content: "Which virtual machine is best for running a network appliance?"
     choices:
-    - content: "Compute optimized"
+    - content: "Memory-optimized virtual machine"
+      isCorrect: false
+      explanation: "Incorrect. Memory-optimized virtual machines are better for large in-memory business critical workloads that require massive parallel compute power."
+    - content: "Compute-optimized virtual machine"
       isCorrect: true
-      explanation: "Correct. Compute optimized virtual machines are designed to have a high CPU-to-memory ratio. Suitable for medium traffic web servers, network appliances, batch processes, and application servers."
-    - content: "Memory optimized"
+      explanation: "Correct. Compute-optimized virtual machines are designed to have a high CPU-to-memory ratio. These virtual machines are suitable for medium traffic web servers, network appliances, batch processes, and application servers."
+    - content: "Storage-optimized virtual machine"
       isCorrect: false
-      explanation: "Incorrect. Memory optimized virtual machines are better for large in-memory business critical workloads requiring massive parallel compute power."
-    - content: "Storage optimized"
-      isCorrect: false
-      explanation: "Incorrect. Storage optimized virtual machines are better for data warehousing applications and large transactional databases."
-  - content: "An organization has a security policy that prohibits exposing SSH ports to the outside world. What is the best way to connect to the Azure Linux virtual machines and install software?"
+      explanation: "Incorrect. Storage-optimized virtual machines are better for data warehousing applications and large transactional databases."
+  - content: "For the security requirements, how can you connect to Azure Linux virtual machines and install software?"
     choices:
-    - content: "Configure the Bastion service."
-      isCorrect: true
-      explanation: "Correct. The Azure Bastion service is a new fully platform-managed PaaS service provisioned inside a virtual network. Bastion provides secure and seamless RDP and SSH connectivity to virtual machines. The access uses the Azure portal and SSL."
-    - content: "Configure a Guest configuration on the virtual machine."
+    - content: "Configure a guest configuration on the virtual machine."
       isCorrect: false
       explanation: "Incorrect. The guest configuration isn't a valid solution. Is there a better answer?"
     - content: "Create a custom script extension."
       isCorrect: false
-      explanation: "Incorrect. Custom script extensions are for post deployment configuration, software installation, or any other configuration or management tasks."
-  - content: "What is the effect of the default network security settings for a new virtual machine?"
+      explanation: "Incorrect. Custom script extensions are for post-deployment configuration, software installation, or any other configuration or management task."
+    - content: "Configure Azure Bastion."
+      isCorrect: true
+      explanation: "Correct. Azure Bastion is a fully platform-managed PaaS service provisioned inside a virtual network. Azure Bastion provides secure and seamless RDP and SSH connectivity to virtual machines. The access uses the Azure portal and SSL."
+  - content: "What effect do the default network security settings have on a new virtual machine?"
     choices:
-    - content: "All outbound and inbound requests aren't allowed."
-      isCorrect: false
-      explanation: "Incorrect. Outbound requests are allowed by default."
-    - content: "Outbound requests are allowed. Inbound traffic is only allowed from within the virtual network."
+    - content: "Outbound requests are allowed. Inbound traffic is allowed only from within the virtual network."
       isCorrect: true
       explanation: "Correct. Outbound requests are considered low risk, so they're allowed by default. Inbound traffic from within the virtual network is allowed."
+    - content: "No outbound and inbound requests are allowed."
+      isCorrect: false
+      explanation: "Incorrect. Outbound requests are allowed by default."
     - content: "There are no restrictions. All outbound and inbound requests are allowed."
       isCorrect: false
       explanation: "Incorrect. There are restrictions on inbound traffic."

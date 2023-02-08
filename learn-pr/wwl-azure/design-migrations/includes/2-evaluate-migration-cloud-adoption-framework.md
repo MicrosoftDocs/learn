@@ -1,60 +1,29 @@
-### Understand Cloud migration in the Cloud Adoption Framework
+The Microsoft Cloud Adoption Framework for Azure provides recommendations, best practice guidance, documentation, and tools to help you drive adoption of Azure in your organization. The Cloud Adoption Framework supports methodologies for defining your strategy, planning and preparing for your migration, and establishing organizational structure to align your teams and roles. You can migrate and modernize existing workloads and develop new cloud-native or hybrid solutions. You can employ Cloud Adoption Framework tools to govern your environment and workloads and manage operations for cloud and hybrid solutions.
 
-The Microsoft Cloud Adoption Framework for Azure is provided to help you drive adoption of Azure in your organization. It provides recommendations, best practice guidance, documentation, and tools. The framework supports several methodologies:
+The following diagram illustrates Cloud Adoption Framework methodologies within a cloud adoption lifecycle.
 
-- **Define strategy**: Define business justification and expected outcomes of adoption.
+:::image type="content" source="../media/cloud-adoption-framework.png" alt-text="Diagram that shows Cloud Adoption Framework methodologies, including strategy, plan, ready, adopt, govern, and manage." border="false":::
 
-- **Plan**: Align actionable adoption plans to business outcomes.
+### Things to know about cloud adoption and migration
 
-- **Ready**: Prepare the cloud environment for the planned changes.
+Tailwind Traders shouldn't undertake cloud adoption without considerable planning. Proceeding with caution is especially recommended for the migrate phase in the cloud adoption lifecycle. To prepare for migration, review the following documentation:
 
-- **Migrate**: Migrate and modernize existing workloads.
+- [Azure migration guide overview](/azure/cloud-adoption-framework/migrate/azure-migration-guide?azure-portal=true) - Review the Azure migration guide to learn about Azure native tools and a relevant approach to migration.
 
-- **Innovate**: Develop new cloud-native or hybrid solutions.
+- [The One Migrate approach to migrating the IT portfolio](/azure/cloud-adoption-framework/scenarios?azure-portal=true) - Examine the scenarios captured in this Migrate methodology. The examples demonstrate the same set of consistent guidelines and processes for migrating both Microsoft and third-party technologies.
 
-- **Govern**: Govern the environment and workloads.
+- [Azure cloud migration best practices checklist](/azure/cloud-adoption-framework/migrate/azure-best-practices?azure-portal=true). Follow this document to learn how best to address common migration needs through the application of consistent best practices.
 
-- **Manage**: Operations management for cloud and hybrid solutions.
+- [The Cloud Adoption Framework migration model](/azure/cloud-adoption-framework/migrate/migration-considerations?azure-portal=true) - Explore this document to understand migration and why the process can be an intensive activity. As you increase your migration effort, review these process improvements to help optimize aspects of your migration.
 
-- **Organize**: Align the teams and roles supporting your organization's cloud adoption efforts.
+### Things to consider when implementing migration adoption
 
-Each of the methodologies is a phase within a cloud adoption lifecycle.
+The migration adoption process for Tailwind Traders should consist of three phases or _efforts_ for each workload: _Assess_, _Deploy_, and _Release_. The following table and illustration summarize the migration adoption efforts.
 
- 
+| Effort | Description |
+| --- | --- |
+| _Assess_ | Assess your workloads to determine costs, modernization, and required deployment tools. |
+| _Deploy_ | After you assess your workloads, the existing workload functionality is replicated (or improved) in the cloud. |
+| _Release_ | After your workloads are deployed (replicated) to the cloud, you can test, optimize, and document your migrated workloads. When you're ready, you can release the workloads to your users. During the _Release_ effort, be sure to hand off the workloads to governance, operations management, and security teams for ongoing support of the workloads. |
 
-:::image type="content" source="../media/cloud-adoption-framework.png" alt-text="Diagram of cloud adoption framework with strategy, plan, ready, adopt, govern, and manage categories.":::
-
- 
-
-Tailwind Traders shouldn’t undertake cloud adoption without considerable planning. This is especially true with the migrate phase in the cloud adoption lifecycle. To prepare you for this phase, you should review the following documentation:
-
-- [Azure migration guide overview](/azure/cloud-adoption-framework/migrate/azure-migration-guide?azure-portal=true): Review the Azure migration guide to learn about Azure native tools and a relevant approach to migration.
-
-- [The One Migrate approach to migrating the IT portfolio](/azure/cloud-adoption-framework/scenarios?azure-portal=true). Review the scenarios captured in this Migrate methodology: They demonstrate the same set of consistent guidelines and processes for migrating both Microsoft and third-party technologies.
-
-- [Azure cloud migration best practices checklist](/azure/cloud-adoption-framework/migrate/azure-best-practices?azure-portal=true): Review this document to learn how best to address common migration needs through the application of consistent best practices.
-
-- [Cloud Adoption Framework migration model](/azure/cloud-adoption-framework/migrate/migration-considerations?azure-portal=true): Review this document to understand mitigation. Migration can be process intensive activity. As you increase migration effort, review these process improvements to help to optimize aspects of your migration.
-
-### Understand the migration effort
-
-The actions required to migrate Tailwind Traders' workloads will almost certainly fall into three efforts (or phases) for each workload:
-
-- Assess
-
-- Deploy
-
-- Release
-
-This section of the Cloud Adoption Framework explains how to maximize the return from each of the phases required to migrate a workload to production. The following table provides an overview of the phases of this process, as displayed in the diagram below:
-
- 
-
-| **Phase**| **Explanation** |
-| - | - |
-| Assess| Assess your workloads to determine costs, modernization, and required deployment tools. |
-| Deploy| After workloads are assessed, the existing functionality of those workloads is replicated (or improved) in the cloud. |
-| Release| After workloads are replicated to the cloud, you can test, optimize, and document your migrated workloads. When satisfied, you can release these workloads to users. During this phase, ensure that you hand off the workloads to governance, operations management, and security teams for ongoing support of those workloads. |
-
-
-:::image type="content" source="../media/migrate-methodology.png" alt-text="Diagram of migration adoption with assess workloads, deploy workloads, and release workload tasks.":::
+:::image type="content" source="../media/migrate-methodology.png" alt-text="Diagram of migration adoption efforts for workloads, including assess, deploy, and release." border="false":::

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-tips-tricks-teach-az-900-microsoft-azure-ai-fundamentals.bring-it-together
+title: Bring it all together
+metadata:
+  title: Bring it all together
+  description: "Bring it all together"
+  ms.date: 01/16/2023
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/10-bring-it-all-together.md)]

@@ -4,7 +4,7 @@ While we could certainly use the `if ... elseif ... else` branching construct to
 
 ## What is the conditional operator?
 
-The *conditional operator* `?:`, commonly known as the ternary conditional operator, evaluates a Boolean expression, and returns the result of evaluating one of two expressions, depending on whether the Boolean expression evaluates to true or false.
+The *conditional operator* `?:`, commonly known as the ternary conditional operator, evaluates a Boolean expression and returns the result of evaluating one of two expressions, depending on whether the Boolean expression evaluates to true or false.
 
 Here's the basic form:
 
@@ -28,7 +28,7 @@ int discount = saleAmount > 1000 ? 100 : 50;
 Console.WriteLine($"Discount: {discount}");
 ```
 
-When you run the code, you should get the following output.
+When you run the code, you should get the following output:
 
 ```output
 Discount: 100

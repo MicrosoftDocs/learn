@@ -5,7 +5,7 @@ Our goal was to help you determine whether Azure Front Door is a good fit for yo
 - Pricing
 - Content delivery
 
-We applied the criteria to our module scenario. We then analyzed which Azure Front Door tier met one or more of these criteria. You learned that Azure Front Door Standard/Premium combines the functions of Azure Front Door, Azure Content Delivery Network, and Azure Web Application Firewall. This combination helps provide a fast, more reliable, and secure modern cloud CDN that integrates with intelligent threat protection.
+We applied the criteria to our module scenario. We then analyzed which Azure Front Door tier met one or more of these criteria. You learned that Azure Front Door Standard/Premium combines the functions of Azure Front Door, Azure Content Delivery Network, and Azure Web Application Firewall. This combination helps provide a fast, reliable, and secure modern cloud CDN that integrates with intelligent threat protection.
 
 The criteria help you compare Azure Front Door Standard and Azure Front Door Premium features with Azure Front Door, Azure Content Delivery Network, and Azure Web Application Firewall offerings. This helps you assess whether Azure Front Door could help improve your organization's app infrastructure delivery. Additionally, you now have a better understanding of how Azure Front Door can help protect your apps.
 

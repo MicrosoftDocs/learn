@@ -19,7 +19,7 @@
 
     **Note**: You may need to wait a few seconds while the Tool refreshes the packages from the feeds.
 
-1. On the **Discover Features** page, note that there is a list of six package groups.
+1. On the **Discover Features** page, note that there is a list of available package groups.
 
     :::image type="content" source="../../media/003-mrft-groups.png" alt-text="The main groups of packages in the Mixed Reality Feature Tool":::
 
@@ -66,64 +66,15 @@
     :::image type="content" source="../../media/013-init-xr-on-startup.png" alt-text="Screenshot of Project Settings Window 3.":::
 
 1. The OpenXR Plugin loads, and then two items appear underneath **OpenXR**. Select the first one, **Microsoft HoloLens feature group**.
-
-1. Note that there's now a yellow warning triangle next to **OpenXR**. Hover your cursor over the triangle, then read the message in the popup, and then select the triangle.
-
-    :::image type="content" source="../../media/014-yellow-triangle-warning.png" alt-text="Screenshot of warning about incompatible settings.":::
-
-1. In the **OpenXR Project Validation** window, there are several issues listed. Select the **Fix All** button.
-
-    :::image type="content" source="../../media/015-fix-all-button.png" alt-text="Screenshot of the Fix All button in the OpenXR Project Validation window.":::
-
-1. One issue remains and tells you that you must add at least one interaction profile. To do so, click **Edit**. This takes you to the settings for the **OpenXR** plugin in the **Project Settings** window.
-
-    :::image type="content" source="../../media/016-openxr-screen.png" alt-text="Screenshot of the Project Settings window with the OpenXR settings displayed.":::
-
-1. Underneath **Interaction Profiles**, note the plus sign (+) button.
-
-    :::image type="content" source="../../media/017-add-profile-button.png" alt-text="Screenshot of the Add Interaction Profile button.":::
-
- 1. Click the button three times, each time choosing a different profile:
-
-    **Eye Gaze Interaction Profile**
-
-    **Microsoft Hand Interaction Profile**
-
-    **Microsoft Motion Controller Profile**
-
-    :::image type="content" source="../../media/018-interaction-profiles.png" alt-text="Screenshot of interaction profiles that should be added.":::
-
-    If the **Eye Gaze Interaction Profile**, or any other profile, appears with a yellow triangle next to it, select the triangle, and then in the **OpenXR Project Validation** window, click the **Fix** button. When you're finished, close the **OpenXR Project Validation** window.
-
-    :::image type="content" source="../../media/019-fix-eye-gaze.png" alt-text="Screenshot of the Fix button for the Eye Gaze interaction profile.":::
-
-1. In the **Project Settings** window under **OpenXR Feature Groups**, ensure that the following are selected:
-   
-   **Microsoft HoloLens**
-
-   **Hand Tracking**
-
-   **Motion Controller Model**
-
-    :::image type="content" source="../../media/020-selected-features.png" alt-text="Screenshot of selected features for OpenXR.":::
-
-1. Click the **Depth Submission Mode** drop down and then select **Depth 16 Bit**.
-
-    :::image type="content" source="../../media/021-depth-submission-mode.png" alt-text="Screenshot of Depth 16 Bit selected for Depth Submission Mode.":::
-
-    > [!TIP]
-    > Reducing the Depth Format to 16-bit is optional, but it may improve graphics performance in your project. To learn more, see [Depth buffer sharing (HoloLens)](/windows/mixed-reality/mrtk-unity/performance/perf-getting-started#single-pass-instanced-rendering).
-
-    > [!NOTE]
-    > The **Render Mode** setting, located just above **Depth Submission Mode**, is set by default to **Single Pass Instanced**. In mixed reality apps, the scene is rendered twice: once for each eye. The result is "stereoscopic vision." This doubles the amount of necessary computing, so it's important to select the most efficient rendering path in Unity to save on both CPU and GPU time. Single pass instanced rendering is the best choice here--we recommend that you enable it by default for every project. To learn more about this, [see the Unity documentation](https://docs.unity3d.com/Manual/SinglePassInstancing.html).
-
 1. Close the **Project Settings** window.
 1. In the **MRTK Project Configurator** window, select **Apply Settings**.
 
     :::image type="content" source="../../media/022-configurator-apply-settings.png" alt-text="Screenshot of MRTK Project Configurator with the Apply Settings button.":::
 
-1.  Select **Next** and then **Apply**. 
-1. Unity must restart in order for the configuration to take effect. When prompted, select **Apply** to restart the Unity editor.
+1. In the **Project Validation** window that appears, make sure you're on the UWP platform tab (the tab displays the Windows logo), and then click **Fix all** to resolve the validation issues. Note that there may be issues that remain after you click **Fix All**. In that case, click **Fix All** again, ignore any issues that are marked **Scene specific**, and then read the recommendations for the remaining issues (if any) and make any changes you want.
+2. In the **MRTK Configurator**, click **Next**, and then click **Apply** to apply the recommended settings.
+3. Click**Next**, and then click **Import TMP Essentials**.
+4. When the **MRTK Setup Completed!** panel appears, click **Done**.
 
 ## Configure project settings for OpenXR
 

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals.explore-best-practices-for-module-3
+title: Explore module best practices for module 3
+metadata:
+  title: Explore module best practices for module 3
+  description: "Explore module best practices for module 3"
+  ms.date: 11/21/2022
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-explore-best-practices-module-3.md)]

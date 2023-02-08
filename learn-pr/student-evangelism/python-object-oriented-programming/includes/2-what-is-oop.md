@@ -18,13 +18,13 @@ During the modeling phase, you look at a description of a domain and try to anal
 
 After you identify actors, you look at *what* they do, which is their behavior. Then you look at descriptions of the actors and any data that's needed to carry out the action. Actors are made into objects, the traits are encoded as data on the objects, and the behaviors are functions that also get added to the object.
 
-:::image type="content" source="../media/printer.png" alt-text="Illustration visualizing a printer printing." border="false":::
+:::image type="content" source="../media/printer.png" alt-text="Diagram visualizing a printer printing." border="false":::
 
 The idea is that data on objects can be altered by calling functions on the objects themselves. There's also the notion that objects *interact* with one another to achieve a tangible result.
 
 ## Benefits of OOP
 
-So why use OOP? Why not use some other paradigm? To be clear, OOP isn't better or worse than any other paradigm. There are pros and cons to everything. OOP does have some nice benefits, and here are some of those benefits:
+So why use OOP? Why not use some other paradigm? To be clear, OOP isn't better or worse than any other paradigm. There are pros and cons to everything. OOP does have some nice benefits, for example:
 
 - **Data encapsulation**: Data encapsulation is about hiding data away from the rest of the system and only allowing access to parts of it. The reason is data holds *state*, and that state can be made up of one or more variables. If these variables need to be changed at the same time, you need to protect them and only allow access via public methods so that changes are made in a predictable way. OOP has mechanisms like access levels, where data that's on an object can only be accessed by the object itself or can be made publicly available.
 - **Simplicity**: Building large systems is a complex task, with many problems to solve. Being able to break down the complexity into smaller problems, to objects, means you can *simplify* the overall task.

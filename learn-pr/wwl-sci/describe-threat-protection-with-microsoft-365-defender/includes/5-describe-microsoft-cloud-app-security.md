@@ -41,7 +41,7 @@ Defender for Cloud Apps Security delivers on the components of the framework thr
 
 In this interactive guide, you’ll get an introduction to the capabilities available with Microsoft Defender for Cloud Apps. Select the image below to get started and follow the prompts on the screen.
 
-[![Interactive guide](../media/5-defender-cloud-apps-interactive-guide.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/sc-900/LP03M04-Describe-threat-protection-with-Microsoft-365/index.html?azure-portal=true)
+[![Interactive guide](../media/5-defender-cloud-apps-interactive-guide.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/sc-900/mcas-revised-2048x1080-v2-november-2022-update/index.html?azure-portal=true)
 
 ## Office 365 Cloud App Security
 

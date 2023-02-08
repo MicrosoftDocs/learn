@@ -18,32 +18,32 @@ quiz:
     choices:
     - content: "`kind=leftouter`"
       isCorrect: false
-      explanation: "Incorrect. Leftouter contains all records from the left table and only matching rows from the right table."
+      explanation: "Incorrect. The `leftouter` kind contains all records from the left table and only matching rows from the right table."
     - content: "`kind=inner`"
       isCorrect: true
-      explanation: "Correct. Inner contains a row in the output for every combination of matching rows from the left and right tables."
+      explanation: "Correct. The `inner` kind contains a row in the output for every combination of matching rows from the left and right tables."
     - content: "`kind=fullouter`"
       isCorrect: false
-      explanation: "Incorrect. Fullouter contains all records from both tables with unmatched cells populated with null."
+      explanation: "Incorrect. The `fullouter` kind contains all records from both tables with unmatched cells populated with `null`."
   - content: "Which operator returns a table with appended rows from multiple tables?"
     choices:
-    - content: "`lookup` operator"
+    - content: "The `lookup` operator"
       isCorrect: false
       explanation: "Incorrect. The `lookup` operator extends the columns of a fact table with values looked up in a dimension table."
-    - content: "`join` operator"
+    - content: "The `join` operator"
       isCorrect: false
       explanation: "Incorrect. The `join` operator merges the rows of two tables to form a new table by matching values of the specified columns from each table."
-    - content: "`union` operator"
+    - content: "The `union` operator"
       isCorrect: true
       explanation: "Correct. The `union` operator takes two or more tables and returns a table with all the rows appended."
   - content: "Which function should you use to capture the results of a tabular expression?"
     choices:
-    - content: "The `materialize()` function."
+    - content: "The `materialize()` function"
       isCorrect: true
-      explanation: "Correct. The materialize function captures the result of a tabular expression so that it can be referenced multiple times by the query without recalculation."
-    - content: "The `cache()` function."
+      explanation: "Correct. The `materialize()` function captures the result of a tabular expression so that it can be referenced multiple times by the query without recalculation."
+    - content: "The `cache()` function"
       isCorrect: false
-      explanation: "Incorrect. There's Kusto Query Language does not have a `cache()` function."
-    - content: "The `let` statement."
+      explanation: "Incorrect. Kusto Query Language doesn't have a `cache()` function."
+    - content: "The `let` statement"
       isCorrect: false
-      explanation: "Incorrect. The `let` statement is used to set a variable name equal to an expression or a function but does not capture the result."
+      explanation: "Incorrect. The `let` statement is used to set a variable name equal to an expression or a function but doesn't capture the result."

@@ -9,9 +9,10 @@ In this unit, you'll create an Azure Relay namespace and then store the primary 
 Let's start by creating a new Azure Relay namespace.
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), in the left pane, select **Create a resource**.
-1. In the **Search the Marketplace** search box, search for and select **Relay**. The **Relay** panel appears.
 
-1. Read the information, and then select **Create**. The **Create namespace** panel appears.
+1. In the **Search the Marketplace** search box, search for and select **Relays**. The **Relays** panel appears.
+
+1. Select **Create**. The **Create namespace** panel appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -31,13 +32,13 @@ Azure creates and deploys the new namespace. This deployment might take several 
 
 ## Get the primary key and primary connection string
 
-Azure Relay helps maintain security by requiring applications to supply an access key when they connect. Get and store that key now, so that you can use it in the app code later in the module.
+Azure Relay helps maintain security by requiring applications to supply an access key when they connect. Get and store that key now so you can use it in the app code later in the module.
 
 1. When the namespace deployment successfully completes, select **Go to resource**. Your **Relay** panel appears.
 
 1. In the left menu pane, under **Settings**, select **Shared access policies**, and then select the **RootManageSharedAccessKey** policy. The **SAS Policy: RootManageSharedAccessKey** panel appears.
 
-    ![Get the access key for the relay.](../media/3-obtain-access-key.png)
+    ![Screenshot of getting the access key for the relay.](../media/3-obtain-access-key.png)
 
 1. To save the primary key and primary connection string, do the following:
   
@@ -53,7 +54,7 @@ For your credit-checking web service, you want to use hybrid connections, not Wi
 
 1. In the Azure portal, from the upper left top pathway, select the relay you created earlier.
 
-1. Select **Hybrid Connections**. The **Create Hybrid Connection** panel appears.
+1. Select **+ Hybrid Connection**. The **Create Hybrid Connection** panel appears.
 
 1. In the **Name** box, enter **creditcheckconnection**. Leave **Requires Client Authentication** selected, and then select **Create**.
 

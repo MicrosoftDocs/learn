@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.deploy-nodejs.get-sample-application
+title: Exercise - Get the sample application
+metadata:
+  title: Exercise - Get the sample application
+  description: Get the sample application for your Azure DevOps pipeline.
+  ms.date: 11/09/2022
+  author: juliakm
+  ms.author: jukullam
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: devdivchpfy22, engagement-fy23
+durationInMinutes: 15
+content: |
+  [!include[](includes/3-get-sample-application.md)]

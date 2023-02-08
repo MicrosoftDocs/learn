@@ -5,7 +5,7 @@ metadata:
   unitType: summary
   title: Summary
   description: This unit summarizes how to manage end-to-end deployment scenarios by using Bicep and Azure Pipelines.
-  ms.date: 10/10/2021
+  ms.date: 12/12/2022
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial

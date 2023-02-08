@@ -24,7 +24,7 @@ levels:
 roles:
   - developer
 products:
-  - vs
+  - azure
 prerequisites: |
   -	Ability to create their own Azure Storage account
   -	Know the basic concepts of Static Web Apps

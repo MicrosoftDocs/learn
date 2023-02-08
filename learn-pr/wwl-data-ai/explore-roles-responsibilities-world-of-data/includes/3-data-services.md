@@ -80,7 +80,6 @@ Data Analysts can use the native notebook support in Azure Databricks to query a
 - **Apache Hadoop** - a distributed system that uses *MapReduce* jobs to process large volumes of data efficiently across multiple cluster nodes. MapReduce jobs can be written in Java or abstracted by interfaces such as Apache Hive - a SQL-based API that runs on Hadoop.
 - **Apache HBase** - an open-source system for large-scale NoSQL data storage and querying.
 - **Apache Kafka** - a message broker for data stream processing.
-- **Apache Storm** - an open-source system for real-time data processing through a topology of *spouts* and *bolts*.
 
 Data engineers can use Azure HDInsight to support big data analytics workloads that depend on multiple open-source technologies.
 

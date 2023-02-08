@@ -3,7 +3,7 @@ uid: learn.wwl.storage-security
 metadata:
   title: Implement storage security
   description: "Ensure your data is stored, transferred, and accessed in a secure way using Azure storage and file security features."
-  ms.date: 09/06/2022
+  ms.date: 01/05/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial

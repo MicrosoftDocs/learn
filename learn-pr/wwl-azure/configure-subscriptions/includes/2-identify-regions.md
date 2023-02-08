@@ -4,7 +4,7 @@ Microsoft Azure is made up of datacenters located around the globe. These datace
 
 Here are some points to consider about regions:
 
-- Azure is generally available in more than 140 countries/regions.
+- Azure is generally available in more than 60 regions in 140 countries.
 
 - Azure has more global regions than any other cloud provider.
 
@@ -40,7 +40,7 @@ You've reviewed the important considerations about regions and regional pairs. N
 
 ## Find regions for your business geography
 
-Visit the Azure global infrastructure website to find supported regions for your business geography. You can search by country/region name or by Microsoft product. A list of supported region pairs and exceptions is also available.
+Visit the Azure global infrastructure website to find supported regions for your business geography. You can search by country name or by Microsoft product. A list of supported region pairs and exceptions is also available.
 
 :::image type="content" source="../media/azure-geographies.png" alt-text="Screenshot of the Azure global infrastructure and Azure geographies website." border="false":::
 

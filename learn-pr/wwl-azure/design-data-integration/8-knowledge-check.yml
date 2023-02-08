@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/14/2022
+  ms.date: 01/31/2023
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
@@ -16,7 +16,6 @@ content: |
   [!include[](includes/8-knowledge-check.md)]
 quiz:
   title: ""
-
   questions:
   - content: "Which Azure solution fulfills the manufacturing data requirements?"
     choices:
@@ -25,11 +24,10 @@ quiz:
       explanation: "Incorrect. Azure Databricks doesn't meet the requirement for the manufacturing data."
     - content: "Azure Data Factory"
       isCorrect: true
-      explanation: "Correct. Azure Data Factory can connect different data sources and run stored procedures on the data."          
+      explanation: "Correct. Azure Data Factory can connect different data sources and run stored procedures on the data."
     - content: "Azure Data Lake"
       isCorrect: false
       explanation: "Incorrect. Azure Data Lake doesn't meet the requirement for the manufacturing data."
-  
   - content: "Which Azure solution provides real-time data ingestion and storage of multiple data sources?"
     choices:
     - content: "Azure Databricks"
@@ -40,8 +38,7 @@ quiz:
       explanation: "Incorrect. Azure Blob Storage doesn't meet the requirement for real-time data ingestion from multiple data sources."
     - content: "Azure Data Lake"
       isCorrect: true
-      explanation: "Correct. Azure Data Lake can ingest real-time data directly from multiple sources."      
-  
+      explanation: "Correct. Azure Data Lake can ingest real-time data directly from multiple sources."
   - content: "Based on the historical company data requirements, what's the appropriate solution?"
     choices:
     - content: "Cold storage"

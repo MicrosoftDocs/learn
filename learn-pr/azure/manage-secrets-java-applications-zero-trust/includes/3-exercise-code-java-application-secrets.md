@@ -9,7 +9,7 @@ In this exercise, you'll use Azure CLI to create the following resources:
 
 - An Azure resource group, that will contain all the resources for your application.
 - A PostgreSQL database server.
-- An Azure Spring Cloud cluster, and a Spring Cloud application running inside this cluster.
+- An Azure Spring Apps cluster, and a Spring Boot application running inside this cluster.
 
 You need to provide some environment variables at the beginning of the script, that should be unique across Azure.
 We recommend you use your username and some random characters to avoid naming conflicts.

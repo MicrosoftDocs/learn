@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.use-css-styles
+metadata:
+  title: Use CSS styles in a webpage
+  description: "Use CSS styles in a webpage"
+  ms.date: 01/30/2023
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Use CSS styles in a webpage
+summary: Demonstrates how to apply formatting to basic HTML by using styles and Cascading Style Sheets.
+abstract: |
+  After completing this module, you'll be able to:
+  - Explain how Cascading Style Sheets work
+  - Create inline styles for basic HTML
+  - Use selectors in CSS
+prerequisites: |
+  Basic knowledge of computer terminology.
+iconUrl: /training/achievements/use-css-styles.svg
+levels:
+- beginner
+roles:
+- administrator
+- developer
+- k-12-educator
+- student
+products:
+- return-to-school
+- return-to-workplace
+subjects:
+- cloud-computing
+units:
+- learn.wwl.use-css-styles.introduction
+- learn.wwl.use-css-styles.explore-css-concepts
+- learn.wwl.use-css-styles.discover-more-css
+- learn.wwl.use-css-styles.exercise-css-concepts
+- learn.wwl.use-css-styles.inspect-selectors
+- learn.wwl.use-css-styles.exercise-selectors
+- learn.wwl.use-css-styles.knowledge-check
+- learn.wwl.use-css-styles.summary
+badge:
+  uid: learn.wwl.use-html-style.badge

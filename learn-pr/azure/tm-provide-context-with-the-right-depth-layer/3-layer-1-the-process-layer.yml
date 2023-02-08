@@ -15,14 +15,14 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which layer do most applications fall under?"
+  - content: "Under which layer do most applications fall?"
     choices:
     - content: "Context Layer"
       isCorrect: false
-      explanation: "This layer is the starting ground for any system. Also known as System Layer"
+      explanation: "This layer is the starting ground for any system. It's also known as the System Layer."
     - content: "Process Layer"
       isCorrect: true
-      explanation: "This layer focuses on each system part"
+      explanation: "This layer focuses on each system part."
     - content: "Subprocess Layer"
       isCorrect: false
-      explanation: "This layer focuses on the system subparts for a system part"
+      explanation: "This layer focuses on the system subparts for a system part."

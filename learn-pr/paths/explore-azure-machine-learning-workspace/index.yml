@@ -1,0 +1,29 @@
+### YamlMime:LearningPath
+uid: learn.wwl.explore-azure-machine-learning-workspace
+metadata:
+  title: Explore the Azure Machine Learning workspace
+  description: Explore the Azure Machine Learning workspace
+  ms.date: 01/09/2023
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Explore the Azure Machine Learning workspace
+prerequisites: |
+  None
+summary: |
+  Throughout this learning path you'll explore the Azure Machine Learning workspace. Learn how you can create a workspace and what you can do with it. You'll also explore the various developer tools you can use to interact with the workspace.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- data-scientist
+products:
+- azure-machine-learning
+subjects:
+- machine-learning
+modules:
+- learn.wwl.explore-azure-machine-learning-workspace-resources-assets
+- learn.wwl.explore-developer-tools-for-workspace-interaction
+trophy:
+  uid: learn.wwl.explore-azure-machine-learning-workspace.trophy

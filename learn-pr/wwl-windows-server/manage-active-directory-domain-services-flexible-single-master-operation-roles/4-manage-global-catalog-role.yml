@@ -4,11 +4,10 @@ title: Manage the AD DS Global Catalog role
 metadata:
   title: Manage the AD DS Global Catalog role
   description: "Manage the AD DS Global Catalog role"
-  ms.date: 10/20/2021
+  ms.date: 01/05/2023
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
 azureSandbox: false
 labModal: false
 durationInMinutes: 4

@@ -1,31 +1,30 @@
 ### YamlMime:Module
 uid: learn.azdo.deploy-nodejs
 metadata:
-  title: Automate Node.js deployments with Azure Pipelines
+  title: Guided project - Automate Node.js deployments with Azure Pipelines
   description: Implement CI/CD pipeline for Node.js applications. Automate deployment of Vue, React, Angular or Webpack apps with Azure Pipelines.
-  ms.date: 09/08/2022
+  ms.date: 11/10/2022
   author: juliakm
   ms.author: jukullam
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: devdivchpfy22
-title: Automate Node.js deployments with Azure Pipelines
+  ms.custom: devdivchpfy22, engagement-fy23
+title: Guided project - Automate Node.js deployments with Azure Pipelines
 summary: Implement CI/CD pipeline for Node.js applications.
 abstract: |
-  After completing this module, you'll be able to:
-  - Explain how Azure and Azure DevOps support Node.js applications
-  - Create a project in Azure Pipelines that builds and deploys a basic Node.js application to Azure App Service
-  - Trigger the pipeline and see your application be built and deployed to Azure
+  In this module, you'll practice how to:
+  - Fork a GitHub repo.
+  - Create an App Service environment.
+  - Create an Azure DevOps pipeline that builds and deploys a basic Node.js application to Azure App Service.
 prerequisites: |
   - An Azure subscription
-  - An Azure DevOps organization
+  - An Azure DevOps organization with access to parallel jobs
   - A GitHub account
 iconUrl: /training/achievements/azure-devops/deploy-nodejs.svg
 levels:
-- beginner
+- intermediate
 roles:
 - devops-engineer
-- administrator
 - developer
 - solution-architect
 products:
@@ -37,9 +36,11 @@ subjects:
 units:
 - learn.azdo.deploy-nodejs.1-introduction
 - learn.azdo.deploy-nodejs.2-azure-support-nodejs
+- learn.azdo.deploy-nodejs.get-sample-application
 - learn.azdo.deploy-nodejs.3-set-up-environment
 - learn.azdo.deploy-nodejs.4-deploy-nodejs
 - learn.azdo.deploy-nodejs.5-clean-up-environment
+- learn.azdo.deploy-nodejs.knowledge-check
 - learn.azdo.deploy-nodejs.6-summary
 badge:
   uid: learn.azdo.deploy-nodejs.badge

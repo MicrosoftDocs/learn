@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.perform-code-free-transformation-scale-azure-data-factory.use-mapping-data-flow
-title: "Exercise - Author an Azure Data Factory mapping data flow"
+title: '"Exercise - Author an Azure Data Factory mapping data flow"'
 metadata:
-  title: "Exercise - Author an Azure Data Factory mapping data flow"
-  description: "Exercise - Author an Azure Data Factory mapping data flow"
-  ms.date: 01/05/2022
+  title: Exercise - Author an Azure Data Factory mapping data flow
+  description: "\"Exercise - Author an Azure Data Factory mapping data flow\""
+  ms.date: 11/18/2022
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial

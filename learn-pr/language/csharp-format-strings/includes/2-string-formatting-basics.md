@@ -13,9 +13,9 @@ string result = string.Format("{0} {1}!", first, second);
 Console.WriteLine(result);
 ```
 
-If you run this code, you'll get the following output.
+We'll talk about the different kinds of built-in methods that are available on the `string` data type and on variables of type `string`.
 
-We'll talk about the different kinds of built-in methods that are available on the `string`data type and on variables of type `string`.
+If you run this code, you'll get the following output:
 
 ```output
 Hello World!
@@ -58,7 +58,7 @@ A few observations about these examples:
 
 Instead of using a numbered token and including the literal value or variable name in a list of arguments to `String.Format()` or `Console.WriteLine()`, you can just use the variable name inside of the curly braces.
 
-In order for a string to be interpolated, you must prefix it with the `$` directive. Here's the same examples from earlier, using string interpolation instead of composite formatting"
+In order for a string to be interpolated, you must prefix it with the `$` directive. Here's the same examples from earlier, using string interpolation instead of composite formatting:
 
 ```csharp-interactive
 string first = "Hello";
@@ -104,7 +104,7 @@ Notice how adding the `:C` to the tokens inside of the curly braces formats the 
 
 ## How the user's country/region and language impact string formatting
 
-What if you execute the preceding code on a computer in France that has its Windows Display Language set to French? In that case, you would get the following output.
+What if you execute the preceding code on a computer in France that has its Windows Display Language set to French? In that case, you would get the following output:
 
 ```output
 Price: 123,45 € (Save 50,00 €)

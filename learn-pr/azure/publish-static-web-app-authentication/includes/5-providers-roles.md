@@ -89,4 +89,4 @@ You can use a wildcard at the end of route to match all routes following the bas
 
 ## Next steps
 
-Next, we'll implement these access restrictions in our app.
+Next, we'll implement access restrictions in our app.

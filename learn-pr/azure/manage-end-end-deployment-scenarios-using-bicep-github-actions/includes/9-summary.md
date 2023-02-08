@@ -7,11 +7,11 @@ Now, your website's deployment workflow creates a working website for your team 
 ## Learn more
 
 - GitHub Actions variables
-    - [Setting an environment variable](https://docs.github.com/actions/learn-github-actions/workflow-commands-for-github-actions#setting-an-environment-variable)
-    - [Job outputs](https://docs.github.com/actions/using-jobs/defining-outputs-for-jobs)
+  - [Setting an environment variable](https://docs.github.com/actions/learn-github-actions/workflow-commands-for-github-actions#setting-an-environment-variable)
+  - [Job outputs](https://docs.github.com/actions/using-jobs/defining-outputs-for-jobs)
 - [Self-hosted runners](https://docs.github.com/actions/hosting-your-own-runners/about-self-hosted-runners)
 - [Azure App Service deployment slots](/azure/app-service/deploy-staging-slots)
 - [Secure Azure SQL Database connection from App Service using a managed identity](/azure/app-service/app-service-web-tutorial-connect-msi)
 - Deployment for other Azure services
-    - [CI/CD for API Management using Azure Resource Manager templates](/azure/api-management/devops-api-development-templates)
-    - [Continuous integration and delivery in Azure Data Factory](/azure/data-factory/continuous-integration-delivery)
+  - [CI/CD for API Management using Azure Resource Manager templates](/azure/api-management/devops-api-development-templates)
+  - [Continuous integration and delivery in Azure Data Factory](/azure/data-factory/continuous-integration-delivery)

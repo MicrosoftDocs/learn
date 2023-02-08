@@ -3,7 +3,7 @@ uid: learn.wwl.construct-kql-statements
 metadata:
   title: Construct KQL statements for Microsoft Sentinel
   description: "Construct KQL statements for Microsoft Sentinel"
-  ms.date: 07/18/2022
+  ms.date: 01/18/2023
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
@@ -30,9 +30,9 @@ subjects:
 units:
 - learn.wwl.construct-kql-statements.introduction
 - learn.wwl.construct-kql-statements.understand-kql-statement-structure
-- learn.wwl.construct-kql-statements.use-let-statement
 - learn.wwl.construct-kql-statements.use-search-operator
 - learn.wwl.construct-kql-statements.use-where-operator
+- learn.wwl.construct-kql-statements.use-let-statement
 - learn.wwl.construct-kql-statements.use-extend-operator
 - learn.wwl.construct-kql-statements.use-order-by-operator
 - learn.wwl.construct-kql-statements.use-project-operators

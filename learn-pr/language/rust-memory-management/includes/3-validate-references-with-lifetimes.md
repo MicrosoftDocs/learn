@@ -1,6 +1,6 @@
-The use of references presents a problem. The item a reference is referring to doesn't keep track of all of its references. This can lead to an issue: when the item is dropped and its resources are freed, how can we be sure that there are no references that point to this now freed, and invalid, memory?
+The use of references presents a problem. The item a reference is referring to doesn't keep track of all of its references. This behavior can lead to an issue: when the item is dropped and its resources are freed, how can we be sure that there are no references that point to the now freed, and invalid, memory?
 
-Languages like C and C++ often have a problem where a pointer points to an item that's already been freed. This problem is known as a "dangling pointer". Fortunately, Rust eliminates this issue. It guarantees that all references always refer to valid items. How does it do this?
+Languages like C and C++ often have a problem where a pointer points to an item that's already been freed. This problem is known as a "dangling pointer". Fortunately, Rust eliminates this problem. It guarantees that all references always refer to valid items. But, how does it do it?
 
 Rust's answer to this question is lifetimes. They allow Rust to ensure memory safety without the performance costs of garbage collection.
 
@@ -99,7 +99,7 @@ The help text says Rust can't tell whether the reference that's being returned r
 
 It's possible that lifetimes could be different whenever the function is called. We don't know the concrete lifetimes of the references that will be passed to our `longest_word` function, and we can't determine if the reference that will be returned will always be a valid one.
 
-The borrow checker can't determine if the reference will be a valid one either. It doesn't know how the input parameters' lifetime relates to the return value's lifetime. This is why we need to annotate the lifetimes manually.
+The borrow checker can't determine if the reference will be a valid one either. It doesn't know how the input parameters' lifetime relates to the return value's lifetime. This ambiguity is why we need to annotate the lifetimes manually.
 
 Luckily, the compiler gave us a hint on how to fix this error. We can add generic lifetime parameters to our function signature. These parameters define the relationship between the references so the borrow checker can complete its analysis:
 
@@ -160,7 +160,7 @@ If you guessed that this code is broken, you're right. This time, we see the fol
       |                                              ------ borrow later used here
 ```
 
-This error shows that the compiler expected the lifetime of `magic2` to be the same as the lifetime of the returned value and of the `x` input argument. Rust knows this because we annotated the lifetimes of the function parameters and return value by using the same lifetime name: `'a`.
+This error shows that the compiler expected the lifetime of `magic2` to be the same as the lifetime of the returned value and of the `x` input argument. Rust expected this behavior because we annotated the lifetimes of the function parameters and return value by using the same lifetime name: `'a`.
 
 If we inspected the code, as humans, we would see that `magic1` is longer than `magic2`. We would see that the result contains a reference to `magic1`, which will live long enough to be valid. However, Rust can't run that code at compile time. It will consider both the `&magic1` and `&magic2` references to be possible return values and will emit the error that we saw earlier.
 
@@ -197,7 +197,7 @@ The `main` function here creates two instances of the `Highlight` struct. Each i
 - `fox` references the segment between the 4th and 19th characters of the `text` string.
 - `dog` references the segment between the 35th and 43rd characters of the `text` string.
 
-Also, `Highlight` goes out of scope before `text` goes out of scope. This means that the `Highlight` instance is valid.
+Also, `Highlight` goes out of scope before `text` goes out of scope, which means that the `Highlight` instance is valid.
 
 The code would print this message on the console:
 

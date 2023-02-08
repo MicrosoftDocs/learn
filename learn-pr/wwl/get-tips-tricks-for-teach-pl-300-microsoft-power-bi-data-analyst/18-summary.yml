@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-tips-tricks-for-teach-pl-300-microsoft-power-bi-data-analyst.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary"
+  ms.date: 11/18/2022
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+durationInMinutes: 1
+content: |
+  [!include[](includes/18-summary.md)]

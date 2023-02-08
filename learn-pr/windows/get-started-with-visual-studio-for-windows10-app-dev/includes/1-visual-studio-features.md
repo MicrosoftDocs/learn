@@ -1,5 +1,4 @@
-## Welcome to Visual Studio
-
+## Install Visual Studio and get started
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MhKX]
 
 Visual Studio is an *Integrated Development Environment (IDE)* used to develop apps for Windows, the web, and other platforms. It consists of a *source code editor*, *designer*, *compiler*, and *debugger*.

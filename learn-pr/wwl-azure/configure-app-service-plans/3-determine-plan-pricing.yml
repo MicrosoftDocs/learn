@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-app-service-plans.determine-plan-pricing
-title: Determine app service plan pricing
+title: Determine Azure App Service plan pricing
 metadata:
-  title: Determine app service plan pricing
-  description: "Determine app service plan pricing"
-  ms.date: 05/19/2022
+  title: Determine Azure App Service plan pricing
+  description: "Determine Azure App Service plan pricing"
+  ms.date: 01/29/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial

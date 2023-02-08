@@ -1,16 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-migrations.select-online-storage-migration-tool
-title: Select an online storage migration tool
+title: Select an online storage migration tool for unstructured data
 metadata:
-  title: Select an online storage migration tool
-  description: "Select an online storage migration tool"
-  ms.date: 06/28/2022
+  title: Select an online storage migration tool for unstructured data
+  description: "Select an online storage migration tool to move unstructured data, and examine the Azure Storage Migration Service and Azure File Sync."
+  ms.date: 11/21/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 6
 content: |
   [!include[](includes/7-select-online-storage-migration-tool.md)]

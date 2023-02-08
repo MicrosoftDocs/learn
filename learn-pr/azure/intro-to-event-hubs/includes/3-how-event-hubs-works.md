@@ -11,7 +11,6 @@ Event Hubs is available in the following languages:
 * Go
 * C (send only)
 
-Messages can also be received from Event Hubs using Apache Storm.
 
 ## Choosing a tier and throughput
 

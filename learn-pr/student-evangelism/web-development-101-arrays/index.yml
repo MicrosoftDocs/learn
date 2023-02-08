@@ -23,7 +23,7 @@ levels:
 roles:
 - student
 products:
-- vs-code
+- azure
 subjects:
 - development-tools
 units:

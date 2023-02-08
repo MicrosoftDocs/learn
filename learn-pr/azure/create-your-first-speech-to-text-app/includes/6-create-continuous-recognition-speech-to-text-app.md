@@ -16,9 +16,9 @@ To create an application that will convert speech to text using Azure Cognitive 
 
 - Subscribe to the following events of the `SpeechRecognizer` class:
 
-    - The `Recognized` event detects whether text has been recognized.
-    - The `Canceled` event detects whether the recognition has been canceled, which might be due to error.
-    - The `SessionStopped` event detects when recognition has stopped.
+  - The `Recognized` event detects whether text has been recognized.
+  - The `Canceled` event detects whether the recognition has been canceled, which might be due to error.
+  - The `SessionStopped` event detects when recognition has stopped.
 
 - Create a `StreamWriter` class to write the converted text to a file.
 

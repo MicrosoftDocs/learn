@@ -8,7 +8,7 @@ In this unit, you'll write the Azure Relay code in both the sender and listener 
 
 You have two command-line apps that will send messages to and listen for messages from the relay that you created earlier. Most of the code is finished, but you must add the Azure Relay code to the apps. Let's start by obtaining the code:
 
-- In Azure Cloud Shell, at the right, use `git` to clone the sample apps:
+- In Azure Cloud Shell at the right, use `git` to clone the sample apps:
 
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-expose-hybrid-services-with-azure-relay.git
@@ -18,7 +18,7 @@ You have two command-line apps that will send messages to and listen for message
 
 First, let's ensure that the listener app can connect to the relay. The app needs the address of the namespace, the name of the hybrid connection, the key name, and the primary connection key, which you saved earlier in a text file.
 
-1. Change the directory into the starter code for the listener app, and then start the code editor:
+1. Change the directory into the starter code for the listener app, then start the code editor:
 
     ```bash
     cd ~/mslearn-expose-hybrid-services-with-azure-relay/starter/listener
@@ -34,7 +34,7 @@ First, let's ensure that the listener app can connect to the relay. The app need
     private const string Key = "<your key here>";
     ```
 
-1. In the code, replace `<namespace>` with the name of the relay you created earlier, copy the key from the saved *AccessKeys.txt* file, and then paste it to replace `<your key here>`.
+1. In the code, replace `<namespace>` with the name of the relay you created earlier, then copy the key from the saved *AccessKeys.txt* file and paste it to replace `<your key here>`.
 
 The listener app now has all the information it needs to connect to and authenticate with the relay in Azure.
 
@@ -100,7 +100,7 @@ Apps that want to check a customer's credit record send a request to the relay, 
     private const string Key = "<your key here>";
     ```
 
-1. In the code, replace `<namespace>` with the name of the relay you created earlier, copy the key from the *AccessKeys.txt* file that you saved earlier, and then paste it to replace `<your key here>`.
+1. In the code, replace `<namespace>` with the name of the relay you created earlier, then copy the key from the *AccessKeys.txt* file that you saved earlier and paste it to replace `<your key here>`.
 
 The sender app now has all the information it needs to connect to and authenticate with the relay in Azure.
 

@@ -3,14 +3,14 @@ uid: learn.wwl.design-migrations.select-migration-tool
 title: Select a migration tool
 metadata:
   title: Select a migration tool
-  description: "Select a migration tool"
-  ms.date: 06/28/2022
+  description: "Select a migration tool and examine Azure Migrate for migration and Azure Resource Mover."
+  ms.date: 11/21/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 5
 content: |
   [!include[](includes/5-select-migration-tool.md)]

@@ -4,11 +4,11 @@ title: Triggers for migration and modernization
 metadata:
   title: Triggers for migration and modernization
   description: Triggers for migration and modernization
-  ms.date: 01/31/2019
-  author: maargued
-  ms.author: maargued
+  ms.date: 12/04/2022
+  author: wwlpublish
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5
 content: |
-  [!include[](includes/2-Triggers-for-migration-and-modernization.md)]
+  [!include[](includes/2-triggers-for-migration-and-modernization.md)]

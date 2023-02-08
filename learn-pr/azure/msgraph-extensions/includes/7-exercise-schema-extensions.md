@@ -6,20 +6,21 @@ Be an owner of an application and record its **appId**. This app will be the own
 
 ## Authenticate your session
 
-Sign in to Graph Explorer by using a work or school account that has global administrator privileges in the tenant.
+1. Sign in to Graph Explorer by using a work or school account that has global administrator privileges in the tenant.
 
-To perform the API operations in this exercise, consent to the *User.ReadWrite.All* and *Application.ReadWrite.All* Microsoft Graph permissions.
+1. To perform the API operations in this exercise, consent to the *User.ReadWrite.All* and *Application.ReadWrite.All* Microsoft Graph permissions.
 
-In the team-bonding app, employees will sign in with their Azure AD profile and must consent to the *User.Read.All* and *User.ReadWrite.All* Microsoft Graph permissions. By granting this consent, the employees can discover their colleagues and update their own profile information.
+In the team-bonding app, employees will sign in with their Azure AD profile and must consent to the *User.Read.All* and *User.ReadWrite*  permissions. Granting this consent will allow them to discover their colleagues and update their own profile information.
 
 ## Create schema extension definitions
 
-The request in this section specifies the **owner** property. If you're using Graph Explorer, you must specify in the **owner** property an **appId** for an app that you own. In this example, you own the app that's identified by **appId** `5bfc8fda-cfc9-43a9-a6de-214ea9d15fdb`. If you're running this exercise while you're signed in from an app that you own, you don't need to specify the **owner** property.
+The request in this section specifies the **owner** property. If you're using Graph Explorer, you must specify in the **owner** property an **appId** for an app that you own. In this example, you own the app that's identified by **appId** `5bfc8fda-cfc9-43a9-a6de-214ea9d15fdb`. If you're running this exercise while you're signed in to an app that you own, you don't need to specify the **owner** property.
 
 ### Request
 
 ```msgraph-interactive
-POST ttps://graph.microsoft.com/v1.0/schemaExtensions
+POST https://graph.microsoft.com/v1.0/schemaExtensions
+Content-type: application/json
 
 {
     "id": "contoso_teamBondingApp",
@@ -79,11 +80,12 @@ Content-type: application/json
 
 ## Store user data
 
-In this step, you store the LinkedIn profile URL, Skype ID, and Xbox *gamertag* in the three new properties of the *contoso_teamBondingApp* extension for user "Adele Vance," who's identified by ID `6e03a2db-564a-47ec-ba51-d0cd38af069a`.
+In this step, you store the LinkedIn profile URL, Skype ID, and Xbox gamertag for *Adele Vance* of user ID `6e03a2db-564a-47ec-ba51-d0cd38af069a`, in the three new properties of the *contoso_teamBondingApp* extension.
 
 ### Request
 ```http
 PATCH https://graph.microsoft.com/v1.0/users/6e03a2db-564a-47ec-ba51-d0cd38af069a
+Content-type: application/json
 
 {
     "contoso_teamBondingApp": {
@@ -139,14 +141,13 @@ Content-type: application/json
 
 ## Update and delete user data
 
-Suppose that Adele has crossed the 1,000,000 *gamerscore* mark and, to show off the milestone, she has changed her Xbox gamertag from `AwesomeAdele` to `AtalantaAdele`. Adele wants to change her gamertag in the app profile so that her colleagues can discover it.
-
-Adele also no longer uses the Skype app, and she now uses Teams instead. The app calls Microsoft Graph to set the value of the **skypeId** property to `null`.
+Suppose Adele has crossed the 1,000,000 *gamerscore* mark and, to show off the milestone, has changed her Xbox gamertag from `AwesomeAdele` to `AtalantaAdele`. Adele wants to change the value in the internal profile as well. Adele also no longer uses the Skype app and now uses Teams instead. The app calls Microsoft Graph to set the value of the **skypeId** property to `null`.
 
 ### Request
 
 ```msgraph-interactive
 PATCH https://graph.microsoft.com/v1.0/users/6e03a2db-564a-47ec-ba51-d0cd38af069a
+Content-type: application/json
 
 {
     "contoso_teamBondingApp": {
@@ -162,12 +163,3 @@ PATCH https://graph.microsoft.com/v1.0/users/6e03a2db-564a-47ec-ba51-d0cd38af069
 ```http
 HTTP/1.1 204 No Content
 ```
-
-## Conclusion
-
-You've used Microsoft Graph schema extension properties to store three custom values. You've seen how to:
-
-+ Retrieve those values or remove any values from the properties.
-+ Implement a custom search so that the company's employees can discover each other's external social profiles.
-
-After this exercise is complete, Adele's social profiles are undiscoverable through the team-bonding app. Other users may decide to share all three pieces of data or none. For each type of operation, you should implement the appropriate logic in the team-bonding app to translate successful HTTP response codes to user-friendly response messages in the user interface.

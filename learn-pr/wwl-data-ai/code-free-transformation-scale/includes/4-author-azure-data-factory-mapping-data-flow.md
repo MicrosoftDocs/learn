@@ -26,7 +26,7 @@ Mapping Data Flow follows an extract, load, transform (ELT) approach and works w
 - Azure Data Lake Storage Gen2 (JSON, Avro, Text, Parquet)
 - Azure Synapse Analytics
 - Azure SQL Database
-- Azure CosmosDB
+- Azure Cosmos DB
 
 Azure Data Factory has access to over 80 native connectors. To include data from those other sources in your data flow, use the Copy Activity to load that data into one of the supported staging areas.
 
@@ -56,7 +56,7 @@ The main tasks for this are as follows:
     > [!NOTE]
     > Data Flow clusters take 5-7 minutes to warm up.
 
-1. **Add a Data Flow activity**. In the Activities pane, open the Move and Transform accordion and drag the **Data Flow** activity onto the pipeline canvas. In the blade that pops up, click **Create new Data Flow** and select **Mapping Data Flow** and then click **OK**. Click on the  **pipeline1** tab and drag the green box from your Copy activity to the Data Flow Activity to create an on success condition. You will see the following in the canvass:
+1. **Add a Data Flow activity**. In the Activities pane, open the Move and Transform accordion and drag the **Data Flow** activity onto the pipeline canvas. In the blade that pops up, click **Create new Data Flow** and select **Mapping Data Flow** and then click **OK**. Click on the  **pipeline1** tab and drag the green box from your Copy activity to the Data Flow Activity to create an on success condition. You will see the following in the canvas:
 
     ![Adding a Mapping Data Flow in Azure Data Factory](../media/add-mapping-data-flow.png)
 
@@ -112,7 +112,7 @@ The main tasks for this are as follows:
 
     ![Using the Aggregate Transformation to a Mapping Data Flow in Azure Data Factory](../media/use-aggregate-transformation.png)
 
-    In the Aggregates tab, you can aggregations calculated over the specified group by columns. For every genre and year, lets get the average Rotten Tomatoes rating, the highest and lowest rated movie (utilizing the windowing function) and the number of movies that are in each group. Aggregation significantly reduces the number of rows in your transformation stream and only propagates the group by and aggregate columns specified in the transformation.
+    In the Aggregates tab, you can create aggregates calculated over the specified group by columns. For every genre and year, lets get the average Rotten Tomatoes rating, the highest and lowest rated movie (utilizing the windowing function) and the number of movies that are in each group. Aggregation significantly reduces the number of rows in your transformation stream and only propagates the group by and aggregate columns specified in the transformation.
 
     ![Configuring the Aggregate Transformation to a Mapping Data Flow in Azure Data Factory](../media/configure-aggregate-transformation.png)
 

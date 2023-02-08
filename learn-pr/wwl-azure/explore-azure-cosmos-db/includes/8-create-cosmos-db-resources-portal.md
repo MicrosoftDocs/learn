@@ -1,3 +1,4 @@
+
 In this exercise you'll learn how to perform the following actions in the Azure portal:
 
 * Create an Azure Cosmos DB account
@@ -17,9 +18,9 @@ In this exercise you'll learn how to perform the following actions in the Azure 
 
 1. Search for **Azure Cosmos DB**, then select **Create/Azure Cosmos DB** to get started.
 
-1. On the Select API option page, select **Create** in the **Core (SQL) - Recommended** box.
+1. On the **Which API best suits your workload?** page, select **Create** in the **Azure Cosmos DB for NoSQL** box.
  
-1. In the **Create Azure Cosmos DB Account - Core (SQL)** page, enter the basic settings for the new Azure Cosmos account.
+1. In the **Create Azure Cosmos DB Account - Azure Cosmos DB for NoSQL** page, enter the basic settings for the new Azure Cosmos DB account.
 
     * **Subscription**: Select the subscription you want to use.
     * **Resource Group**: Select **Create new**, then enter *az204-cosmos-rg*.
@@ -42,7 +43,7 @@ You can use the Data Explorer in the Azure portal to create a database and conta
 
     :::image type="content" source="../media/portal-cosmos-new-container.png" alt-text="You can add a container using the Data Explorer.":::    
 
-1. In the **Add container** pane, enter the settings for the new container.
+1. In the **New container** pane, enter the settings for the new container.
 
     * **Database ID**: Select **Create new**, and enter *ToDoList*.
     * **Container ID**: Enter *Items*

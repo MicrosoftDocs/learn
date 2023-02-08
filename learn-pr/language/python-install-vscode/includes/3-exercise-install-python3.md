@@ -2,7 +2,7 @@ In the previous exercise, you ran a command to determine whether you had Python 
 
 Once you're certain that Python 3 is installed, you can scroll to the bottom of this page and select **Continue**.
 
-When this module was written, Python 3.10 was the latest version available, so instructions here refer to that version. Install the latest version of Python that is available for your operating system. If you install a different version, the button labels and the filenames may differ slightly from the installation instructions.
+When this module was written, Python 3.11 was the latest version available, so instructions here refer to that version. Install the latest version of Python that is available for your operating system. If you install a different version, the button labels and the filenames may differ slightly from the installation instructions.
 
 ::: zone pivot="windows"
 
@@ -19,7 +19,7 @@ When this module was written, Python 3.10 was the latest version available, so i
 
 1. Select the most recent version of Python.
 
-    :::image type="content" source="../media/windows-install-python-search.png" alt-text="Screenshot of search results screen from Microsoft Store for Python, highlighting Python 3.10.":::
+    :::image type="content" source="../media/windows-install-python-search.png" alt-text="Screenshot of search results screen from Microsoft Store for Python, highlighting Python 3.11.":::
 
 1. On the Home tab, select *Get or Install*.
 
@@ -27,7 +27,7 @@ When this module was written, Python 3.10 was the latest version available, so i
 
     
     > [!NOTE]
-    > If you are unable to use the installer because you don't have administrator privileges, download the embeddable package (zip file) of Python from the [Python website](https://www.python.org/getit/), and then extract the zip file to a local folder, such as C:\Python310.
+    > If you're unable to use the installer because you don't have administrator privileges, download the embeddable package (zip file) of Python from the [Python website](https://www.python.org/getit/), and then extract the zip file to a local folder, such as C:\Python311.
 
     Python installs in the background. The installation may take a couple of minutes depending on the speed of your system.
 

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-tips-tricks-for-teach-pl-300-microsoft-power-bi-data-analyst.objective-domains
+title: Discuss objective domains
+metadata:
+  title: Discuss objective domains
+  description: "Discuss objective domains"
+  ms.date: 11/18/2022
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+durationInMinutes: 18
+content: |
+  [!include[](includes/2-objective-domains.md)]

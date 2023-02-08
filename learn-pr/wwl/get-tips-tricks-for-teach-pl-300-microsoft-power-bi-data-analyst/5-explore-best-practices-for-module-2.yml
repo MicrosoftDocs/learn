@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-tips-tricks-for-teach-pl-300-microsoft-power-bi-data-analyst.explore-best-practices-for-module-2
+title: Explore best practices for module 2
+metadata:
+  title: Explore best practices for module 2
+  description: "Explore best practices for module 2"
+  ms.date: 11/18/2022
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-explore-best-practices-for-module-2.md)]

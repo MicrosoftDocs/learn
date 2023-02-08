@@ -1,4 +1,4 @@
-![Process Element.](../media/process.png)
+![Rendering of a circle representing the Process Element.](../media/process.png)
 
 Depicted by a circle, this element represents activities that can modify or redirect received input to their proper outputs.
 
@@ -15,7 +15,7 @@ Add a process element between:
 - **External entities with other elements**: Processes handle all tasks and communication
 - **Processes**: Processes handle all tasks
 
-Depending on the information depth level required for a data-flow diagram, you may use the process element to represent a few distinct use cases:
+Depending on the information-depth level required for a data-flow diagram, you may use the process element to represent a few distinct use cases:
 
 |Use case|Description|
 |--------|-----------|
@@ -29,7 +29,7 @@ Include the following context to each process element:
 |Context|Questions|
 |-------|---------|
 |Code|Is this process running in C#, C++, Objective C, Java, or a scripting language?|
-|Permission level|Does this process need kernel, local, or administration level permissions to run?|
+|Permission level|Does this process need kernel, local, or administration-level permissions to run?|
 |Service isolation|Is the process running in a sandbox?|
 |Input|Can this process accept input from everyone, local accounts, or just administrators?|
 |Validation|How does the process parse, handle, and accept input?|

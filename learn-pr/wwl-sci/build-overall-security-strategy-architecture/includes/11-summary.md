@@ -21,18 +21,15 @@ able to:
 
 ## Learn more with Azure documentation
 
--   [Microsoft Cybersecurity Reference Architectures - Security
-    documentation](https://docs.microsoft.com/security/cybersecurity-reference-architecture/mcra)
+-   [Microsoft Cybersecurity Reference Architectures - Security documentation](/security/cybersecurity-reference-architecture/mcra)
 
--   [Governance in the Microsoft Cloud Adoption Framework for Azure -
-    Cloud Adoption Framework](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/)
+-   [Governance in the Microsoft Cloud Adoption Framework for Azure - Cloud Adoption Framework](/azure/cloud-adoption-framework/govern/)
 
 -   [Balance competing priorities - Cloud Adoption Framework](/azure/cloud-adoption-framework/strategy/balance-competing-priorities)
 
 -   [Resiliency and continuity - Microsoft Service Assurance](/compliance/assurance/assurance-resiliency-and-continuity)
 
--   [Organize and manage multiple Azure subscriptions - Cloud Adoption
-    Framework](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/organize-subscriptions)
+-   [Organize and manage multiple Azure subscriptions - Cloud Adoption Framework](/azure/cloud-adoption-framework/ready/azure-best-practices/organize-subscriptions)
 
 -   [Recommended policies for Azure services - Azure Policy](/azure/governance/policy/concepts/recommended-policies)
 

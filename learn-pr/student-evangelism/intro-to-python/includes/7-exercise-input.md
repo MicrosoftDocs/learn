@@ -1,6 +1,6 @@
-In this exercise, you'll learn to build a calculator. A calculator takes input and presents the result on the screen.
+In this exercise, you'll learn to build a calculator. A calculator takes input and presents the result on the screen. After activating the sandbox, **refresh the page** to restart the Cloud Shell console.
 
-1. Start the REPL by typing `python`:
+1. Start the REPL by typing `python` in the Cloud Shell console:
 
    ```python
    python
@@ -9,8 +9,8 @@ In this exercise, you'll learn to build a calculator. A calculator takes input a
     You should see output that looks similar to:
 
     ```output
-    Python 3.5.2 (default, Nov 12 2018, 13:43:14)
-    [GCC 5.4.0 20160609] on linux
+    Python 3.9.14 (main, Oct 29 2022, 22:18:10)
+    [GCC 11.2.0] on linux
     Type "help", "copyright", "credits" or "license" for more information.
     >>>
     ```

@@ -2,17 +2,17 @@
 uid: learn.wwl.configure-virtual-networks
 metadata:
   title: Configure virtual networks
-  description: "You will learn to configure virtual networks and subnets, including IP addressing."
-  ms.date: 11/04/2022
+  description: "Learn how to configure virtual networks and subnets, including IP addressing."
+  ms.date: 12/29/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Configure virtual networks
-summary: You will learn to configure virtual networks and subnets, including IP addressing.
+summary: Learn to configure virtual networks and subnets, including IP addressing.
 abstract: |
-  After completing this module, you will be able to:
-  - Describe virtual network features and components.
+  In this module, you learn how to:
+  - Describe Azure Virtual Network features and components.
   - Identify features and usage cases for subnets and subnetting.
   - Identify usage cases for private and public IP addresses.
   - Create and determine which resources require public IP addresses.

@@ -1,4 +1,4 @@
-In the previous unit, we used the roll dice code to illustrate the two different methods: stateful (instance) and stateless (static) methods. However, that same code example can help us understand other critical ideas about calling methods like handling return values, accepting input parameters, and choosing an overloaded version of a method.
+In the previous unit, we used the dice-roll code to illustrate the two different methods: stateful (instance) and stateless (static) methods. However, that same code example can help us understand other critical ideas about calling methods like handling return values, accepting input parameters and choosing an overloaded version of a method.
 
 ## Return values
 
@@ -44,7 +44,7 @@ Many methods in the .NET Class Library have *overloaded* method signatures.
 
 An **overloaded method** is defined with multiple method signatures. Overloaded methods provide different ways to call the method or provide different types of data.
 
-In some cases, overloaded versions of a given method allow send values of different data types into the method. For example, the `Console.WriteLine()` method has 19 different overloaded versions. Most of those overloads allow sending of different types of data to be printed to the console. Consider the following code:
+In some cases, overloaded versions of a given method allow you to send values of different data types into the method. For example, the `Console.WriteLine()` method has 19 different overloaded versions. Most of those overloads allow sending of different types of data to be printed to the console. Consider the following code:
 
 ```csharp-interactive
 int number = 7;
@@ -87,24 +87,24 @@ Here, we've described:
 
 ### Use Intellisense
 
-First, the code editor's *Intellisense* may tell us a lot about a method without leaving the coding environment. **Intellisense** is a feature of code editors from Microsoft. It provides hints and brief reference information in a popup window under caret as you enter your code. When typing code, the Intellisense popup window will change its contents depending on the context.
+First, the code editor's *Intellisense* may tell us a lot about a method without leaving the coding environment. **Intellisense** is a feature of code editors from Microsoft. It provides hints and brief reference information in a popup window under the caret as you enter your code. When typing code, the Intellisense popup window will change its contents depending on the context.
 
 For example, as you enter the word `dice` slowly, Intellisense will show all C# keywords, identifiers (or rather, variable names in the code), and classes in the .NET Class Library that match the letters being entered. Autocomplete features of the code editor can finish typing the word that is the top match in the Intellisense popup.
 
-To experiment with Intellisense, enter the letters `d`, `i` then `c`. When Intellisense pops up, the identifier `dice` should appear. Select the `tab` key on the keyboard, and the entire word will be completed. You can also use the up and down arrow keys to change the selection.
+To experiment with Intellisense, enter the letters `d`, `i` then `c`. When Intellisense pops up, the identifier `dice` should appear. Select the <kbd>Tab</kbd> key on the keyboard, and the entire word will be completed. You can also use the up and down arrow keys to change the selection.
 
-> [!Note]
-> If the Intellisense window disappears, you can select it by using the `backspace` key on the keyboard, then re-entering the last symbol to re-open Intellisense.
+> [!NOTE]
+> If the Intellisense window disappears, you can get it back by using the <kbd>Backspace</kbd> key on the keyboard, then re-entering the last symbol to re-open Intellisense.
 
-Next, enter the member access operator. The Intellisense popup reappears and shows all of the methods (and other members of the class) that are available. If you enter the letter `N`, the list will be filtered, and the word `Next` should be the top selection. Again, select the `tab` key on the keyboard to autocomplete the entire word.
+Next, enter the member access operator. The Intellisense popup reappears and shows all of the methods (and other members of the class) that are available. If you enter the letter `N`, the list will be filtered, and the word `Next` should be the top selection. Again, select the <kbd>Tab</kbd> key on the keyboard to autocomplete the entire word.
 
 Next, enter the *opening* parenthesis. The closing parenthesis is automatically added.
 
-More importantly, two areas appear in the Intellisense popup. On the right, you should see `int Random.Next()`. The `int` is the return type. In other words, when executed this version of the method, it will return a value of type `int`.
+More importantly, two areas appear in the Intellisense popup. On the right, you should see `int Random.Next()`. The `int` is the return type. In other words, when executed, this version of the method will return a value of type `int`.
 
 On the left of the Intellisense popup, it displays `1/3`, indicating you're looking at the first version of the `Next()` method, which accepts no input parameters. There's also a tiny arrow above and below the `1/3`. Select the keyboard's up and down arrow keys to navigate to the second and third overloaded versions of the method. When you do, you'll see `2/3` and `3/3` appear on the left side of Intellisense, respectively.
 
-The second overloaded version of the method `2/3` informs that the `Next()` method can accept an input parameter `int maxValue`. The third version of the method `3/3` informs you that the `Next()` method can accept both `int minValue` and `int maxValue` as input parameters.
+The second overloaded version of the method `2/3` informs you that the `Next()` method can accept an input parameter `int maxValue`. The third version of the method `3/3` informs you that the `Next()` method can accept both `int minValue` and `int maxValue` as input parameters.
 
 What is `maxValue` and `minValue`? Usually, we can derive the meaning of the parameter through its name. However, if it's not apparent, we may need to consult the method's documentation. In this case, the `maxValue` is the maximum, or "upper boundary" that we want the `Next()` method to generate. The `minValue` is the minimum or "lower boundary" that we want the `Next()` method to generate.
 

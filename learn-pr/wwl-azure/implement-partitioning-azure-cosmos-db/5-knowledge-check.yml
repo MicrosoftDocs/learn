@@ -4,13 +4,11 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/08/2022
+  ms.date: 02/06/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 5
 quiz:
   title: "Check your knowledge"
@@ -23,17 +21,17 @@ quiz:
     - content: "Physical partitions are collections of logical partitions"
       isCorrect: true
       explanation: "That's correct. One or more logical partitions are mapped to a single physical partition."
-    - content: "There is no relationship between physical and logical partitions."
+    - content: "There's no relationship between physical and logical partitions."
       isCorrect: false
       explanation: "That's incorrect. One or more logical partitions are mapped to a single physical partition."
   - content: "Which of the below correctly lists the two components of a partition key?"
     choices:
     - content: "Key path, synthetic key"
       isCorrect: false
-      explanation: "That's incorrect. A synthetic key is a type of key, but it is not one of the two components of a key."
+      explanation: "That's incorrect. A synthetic key is a type of key, but it isn't one of the two components of a key."
     - content: "Key path, key value"
       isCorrect: true
       explanation: "That's correct. A partition key has two components: partition key path and the partition key value."
     - content: "Key value, item ID"
       isCorrect: false
-      explanation: "That's incorrect. An item ID can be used as a value for a partition key, but it is not one of the two components."
+      explanation: "That's incorrect. An item ID can be used as a value for a partition key, but it isn't one of the two components."

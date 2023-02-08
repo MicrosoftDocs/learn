@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-ai.introduction-to-data-streaming.event-with-asa
-title: Exercise - Explore Azure Stream Analytics
+title: Exercise - Get started with Azure Stream Analytics
 metadata:
-  title: Exercise - Explore Azure Stream Analytics
-  description: "Process events with Azure Stream Analytics"
-  ms.date: 11/10/2022
+  title: Exercise - Get started with Azure Stream Analytics
+  description: "Exercise - Get started with Azure Stream Analytics"
+  ms.date: 12/08/2022
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial

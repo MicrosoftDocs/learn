@@ -16,6 +16,6 @@ Suppose you're creating a mixed reality experience in which the user needs the a
 
 - A Windows 10 PC configured with [the correct tools](/windows/mixed-reality/install-the-tools)
 - Windows 10 SDK 10.0.18362.0 or later
-- Unity Hub with Unity 2020.3.x/2019.4.x installed
+- Unity Hub with Unity 2020.3.x (preferred)/2019.4.x installed (make sure to check out the [known issues in Unity versions and packages page](/windows/mixed-reality/develop/unity/known-issues))
 - [Mixed Reality Feature Tool](https://aka.ms/MRFeatureTool)
-- Basic familiarity with Unity: interface, scene creation, package import, addition of GameObjects to a scene
+- 

@@ -4,6 +4,6 @@ You learned how to determine the priority of your issues and apply the right lay
 
 In this module, you:
 
-- Learned to prioritize your issues
-- Categorized security controls
-- Understood each security control type and function
+- Learned to prioritize your issues.
+- Categorized security controls.
+- Understood each security control type and function.

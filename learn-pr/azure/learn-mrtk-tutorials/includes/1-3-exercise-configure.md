@@ -24,11 +24,28 @@ We'll start by creating a new Unity project and configuring it for Windows Mixed
 > [!CAUTION]
 > When working on Windows, there is a MAX_PATH limit of 255 characters. Unity is affected by these limits and may fail to compile if any file path is longer than 255 characters. Therefore, we recommend that you store your Unity project as close to the root of the drive as possible.
 
-## Configure your project for Windows Mixed Reality
-
-**Switch Build Platform**
+## Switch Build Platform
 
 To target Windows Mixed Reality, your Unity project must be set to export as a Universal Windows Platform app. By default, the build settings for the Universal Windows Platform target any device, including immersive headsets. However, you can select a specific device using the **Target Device** drop down.
 
-[!INCLUDE[](includes/switch-build-platform.md)]
+1. In the menu bar, select **File** > **Build Settings...**.
+1. In the **Build Settings** window, select **Universal Windows Platform**.
+1. Make sure the following settings are active:
+
+    **Architecture**: ARM 64-bit
+
+    **Build Type**: D3D Project
+
+    **Target SDK Version**: Latest Installed
+
+    **Minimum Platform Version**: 10.0.10240.0
+
+    **Visual Studio Version**: Latest installed
+
+    **Build and Run on**: Local Machine
+
+    **Build configuration**: Release (there are known performance issues with Debug)
+
+1. Click the **Switch Platform** button. Unity displays a progress bar while it switches platforms.
+1. After the switch platform process is finished, close the **Build Settings** window.
 

@@ -2,7 +2,7 @@ Code challenges throughout these modules will reinforce what you've learned and 
 
 ## Complicated Permissions Challenge
 
-In this challenge, you'll implement business rules that restrict access to users based on their permissions and their level.  You'll display a different message to the user depending on their permissions and level.
+In this challenge, you'll implement business rules that restrict access to users based on their permissions and their level. You'll display a different message to the user depending on their permissions and level.
 
 ### Step 1 - Delete all of the code in the .NET Editor from the earlier exercise.
 
@@ -33,7 +33,7 @@ To sufficiently test all of the scenarios described in Step 3, you may need to u
    ```
 
 2. If the user is an Admin with a level less than or equal to 55, output the message:
- 
+
    ```output
    Welcome, Admin user.
    ```

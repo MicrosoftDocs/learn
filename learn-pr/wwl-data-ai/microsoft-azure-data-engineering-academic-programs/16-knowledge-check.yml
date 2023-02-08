@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.microsoft-azure-data-engineering-academic-programs.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 11/18/2022
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+durationInMinutes: 6
+content: |
+  [!include[](includes/16-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "How often should you download content from the [Learning Download Center](https://aka.ms/ldc) (LDC) to ensure you have the most up to date course materials?"
+    choices:
+    - content: "Every three years"
+      isCorrect: false
+      explanation: "Incorrect. The tech world is constantly changing so the curriculum content is updated to match. By downloading the course materials quarterly or before teaching the course you know you have the most up-to-date materials."
+    - content: "Quarterly"
+      isCorrect: true
+      explanation: "Correct. The tech world is constantly changing so the curriculum content is updated to match. By downloading the course materials each quarter or before teaching the course you know you have the most up-to-date materials."
+    - content: "Once a year"
+      isCorrect: false
+      explanation: "Incorrect. The tech world is constantly changing so the curriculum content is updated to match. By downloading the course materials quarterly or before teaching the course you know you have the most up-to-date materials."
+  - content: "Which tool is great for giving students a visual representation of topics?"
+    choices:
+    - content: "The Textbook"
+      isCorrect: false
+      explanation: "Incorrect. While a textbook can be used as a standard work for the study of a particular subject, the Microsoft Whiteboard can help people visualize a process and increase collaboration by allowing participants to easily add ideas with sticky notes or colored markers."
+    - content: "Microsoft Whiteboard"
+      isCorrect: true
+      explanation: "Correct. A Microsoft Whiteboard can help people visualize a process. Microsoft Whiteboard increase collaboration by allowing participants to easily add ideas with sticky notes or colored markers."
+    - content: "Flash Cards"
+      isCorrect: false
+      explanation: "Incorrect. Flash cards contain a small amount of information, held up for students to see, as an aid to learning, however the Microsoft Whiteboard can help people visualize a process and increase collaboration by allowing participants to easily add ideas with sticky notes or colored markers."
+  - content: "What is the name of the fully managed stream processing engine designed to analyze and process large volumes of streaming data?"
+    choices:
+    - content: "Azure Data Factory"
+      isCorrect: false
+      explanation: "Incorrect. Azure Data Factory is a managed cloud service built for complex hybrid extract-transform-load (ETL), extract-load-transform (ELT), and data integration projects, whereas Azure Stream Analytics is a fully managed stream processing engine that is designed to analyze and process large volumes of streaming data."
+    - content: "Azure Synapse"
+      isCorrect: false
+      explanation: "Incorrect: Azure Synapse is an enterprise analytics service that accelerates time to insight across data warehouses and big data systems, whereas Azure Stream Analytics is a fully managed stream processing engine that is designed to analyze and process large volumes of streaming data."
+    - content: "Azure Stream Analytics"
+      isCorrect: true
+      explanation: "Correct. Azure Stream Analytics is a fully managed stream processing engine that is designed to analyze and process large volumes of streaming data."

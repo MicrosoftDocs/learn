@@ -47,6 +47,3 @@ quiz:
     - content: "Apache Spark"
       isCorrect: true
       explanation: "That's correct. Azure Synapse Analytics includes an Apache Spark runtime."
-    - content: "Apache Storm"
-      isCorrect: false
-      explanation: "That's incorrect. To use Apache Storm, provision an Azure HDInsight cluster."

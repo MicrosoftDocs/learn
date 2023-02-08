@@ -101,7 +101,7 @@ The alternative approach is to:
 
 1. If you select **From Azure subscription**, select the relevant **Azure subscription**, **Storage account name**, and **File share**.
 
-1. If you select **Enter manually**, enter \\\\<storage account name\>.file.core.windows.net\<file share name> for **Host**, Azure\\<storage account name\> for **Username**, and \<storage account key\> for **Password** or select your **Azure Key Vault** where it's stored as a secret.
+1.  If you select **Enter manually**, enter \\\\<storage account name\>.file.core.windows.net\<file share name> for **Host**, Azure\\<storage account name\> for **Username**, and \<storage account key\> for **Password** or select your **Azure Key Vault** where it's stored as a secret.
 
     > [!NOTE]
     > There are different settings if you select **Azure SQL Managed Instance**, or **File System**

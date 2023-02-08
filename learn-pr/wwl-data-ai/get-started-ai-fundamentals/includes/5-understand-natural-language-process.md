@@ -24,9 +24,3 @@ In Microsoft Azure, you can use the following cognitive services to build natura
 | **Speech** | Use this service to recognize and synthesize speech, and to translate spoken languages.|
 | **Azure Bot** | This service provides a platform for conversational AI, the capability of a software "agent" to participate in a conversation. Developers can use the *Bot Framework* to create a bot and manage it with Azure Bot Service - integrating back-end services like Language, and connecting to channels for web chat, email, Microsoft Teams, and others.|
 
-## Try this
-
-To see an example of a how you can use natural language to interact with an AI system, follow these steps:
-
-1. Open another browser tab and go to https://aidemos.microsoft.com/luis/demo.
-2. Use the demo interface to control the lighting in the virtual home. You can type instructions, use the microphone button to speak commands, or select any of the suggested phrases to see how the system responds.

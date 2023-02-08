@@ -3,8 +3,8 @@ uid: learn.wwl.configure-role-based-access-control.compare-azure-rbac-roles-to-a
 title: Compare Azure roles to Azure Active Directory roles
 metadata:
   title: Compare Azure roles to Azure Active Directory roles
-  description: "Compare Azure RBAC roles to Azure Active Directory (Azure AD) roles"
-  ms.date: 10/21/2022
+  description: "Compare Azure roles to Azure Active Directory roles"
+  ms.date: 01/16/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial

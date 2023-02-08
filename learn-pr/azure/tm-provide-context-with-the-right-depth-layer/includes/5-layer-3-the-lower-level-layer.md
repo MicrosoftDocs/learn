@@ -1,8 +1,8 @@
 The lower-level layer is the last layer, and you should use it whenever you create a kernel-level or critical level system. Data-flow diagrams at this layer contain separate data-flow diagrams detailing each **low-level** system subpart. 
 
-**Goal:** Represent **low-level system subparts** with enough context to help you understand how they work and interact with each other.
+**Goal**: Represent **low-level system subparts** with enough context to help you understand how they work and interact with each other.
 
-Similar to the process layer, data-flow diagrams in the system subprocess layer should fit in a single page and contain all processes for their respective system subparts.
+Similar to the process layer, data-flow diagrams in the lower-level layer should fit in a single page and contain all processes for their respective system subparts.
 
 > [!IMPORTANT]
 > Check with your team to make sure this level of depth is required.

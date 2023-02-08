@@ -5,7 +5,7 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: Knowledge check.
-  ms.date: 07/20/2022
+  ms.date: 01/17/2023
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial
@@ -33,10 +33,10 @@ quiz:
     - content: It will execute when there's a change in the _README.md_ file in the root directory on the _main_ branch.
       isCorrect: false
       explanation: Incorrect. The trigger only includes all files in the _deploy_ folder.
-    - content: It will execute when there's a change in any of the files in the _deploy_ folder on any branch. 
+    - content: It will execute when there's a change in any of the files in the _deploy_ folder on any branch.
       isCorrect: false
       explanation: Incorrect. While it's true that the trigger will only run the workflow for changes in files in the _deploy_ folder, this only happens when the changes are on the _main_ branch.
-    - content: It will execute when there's a change to a file named _main.bicep_ in the _deploy_ folder on the _main_ branch. 
+    - content: It will execute when there's a change to a file named _main.bicep_ in the _deploy_ folder on the _main_ branch.
       isCorrect: true
       explanation: Correct. The file _deploy/main.bicep_ is included by the path filter. Since this change happens on the _main_ branch, both conditions are met and the trigger starts the workflow.
   - content: |

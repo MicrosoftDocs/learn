@@ -29,7 +29,7 @@ The Azure Toolkit for IntelliJ is an extension for IntelliJ IDEA that provides t
 - Deploy a web app to these types of hosts:
     - Azure App Service
     - Azure Functions
-    - Azure Spring Cloud
+    - Azure Spring Apps
 
 You also use the Azure Explorer with the Azure Toolkit for IntelliJ, which provides an additional window within IntelliJ IDEA where you can see and manage the resources that exist in your Azure subscription. In the Azure Explorer window you can create new web apps, storage accounts, and other resources, or configure Azure resources that you have created.
 

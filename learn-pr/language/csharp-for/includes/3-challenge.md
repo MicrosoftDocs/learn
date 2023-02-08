@@ -2,13 +2,13 @@ Code challenges throughout these modules will reinforce what you've learned and 
 
 ## FizzBuzz challenge
 
-FizzBuzz is a popular coding challenge and interview question.  It exercises your understanding of the `for`, the `if`, the `%` remainder operator, and your command of basic logic.
+FizzBuzz is a popular coding challenge and interview question. It exercises your understanding of the `for`, the `if`, the `%` remainder operator, and your command of basic logic.
 
 ### Step 1 - Delete all of the code in the .NET Editor from the earlier exercise
 
-Select all of the code in the .NET Editor, then select the `del` or `backspace` key to delete it.
+Select all of the code in the .NET Editor, then select the <kbd>Del</kbd> or <kbd>Backspace</kbd> key to delete it.
 
-### Step 2 - Implement the FizzBuzz challenge rules.
+### Step 2 - Implement the FizzBuzz challenge rules
 
 Using the .NET Editor, implement each rule.
 
@@ -20,7 +20,7 @@ Using the .NET Editor, implement each rule.
 - When the current value is divisible by **both** 3 and 5, print the term `FizzBuzz` next to the number.
 
 > [!IMPORTANT]
-> You will need to understand how to use the `%` remainder operator to determine if a number is divisible by another number evenly. We covered this in the [Perform basic operations on numbers in C#](/training/modules/csharp-basic-operations/) module.
+> You'll need to understand how to use the `%` remainder operator to determine if a number is divisible by another number evenly. We covered this in the [Perform basic operations on numbers in C#](/training/modules/csharp-basic-operations/) module.
 
 No matter how you do it, your code should produce the following output. We'll only show the first 22 values, but your output should continue to 100.
 

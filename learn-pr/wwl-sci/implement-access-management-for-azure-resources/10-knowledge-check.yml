@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/01/2022
+  ms.date: 02/03/2023
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
@@ -39,7 +39,7 @@ quiz:
     - content: "Scripting only with PowerShell and CLI"
       isCorrect: false
       explanation: "Sorry, that's incorrect. When you only need to assign or manage a few role assignments, you can use Azure portal."
-  - content: "You want to create a managed identity for your application.  You want the identity to be created and deleted dynamically when the resource is started and stopped.  What type of managed identity do you need to create?"
+  - content: "You want to create a managed identity for your application. You want the identity to be created and deleted dynamically when the resource is started and stopped. What type of managed identity do you need to create?"
     choices:
     - content: "User-assigned"
       isCorrect: false

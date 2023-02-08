@@ -1,0 +1,29 @@
+### YamlMime:LearningPath
+uid: learn.wwl.use-azure-machine-learning-pipelines-for-automation
+metadata:
+  title: Optimize model training in Azure Machine Learning
+  description: Optimize model training in Azure Machine Learning
+  ms.date: 11/21/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Optimize model training in Azure Machine Learning
+prerequisites: |
+  None
+summary: |
+  Learn how to optimize model training in Azure Machine Learning by using pipelines and hyperparameter tuning.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- data-scientist
+products:
+- azure-machine-learning
+subjects:
+- machine-learning
+modules:
+- learn.wwl.run-pipelines-azure-machine-learning
+- learn.wwl.perform-hyperparameter-tuning-azure-machine-learning-pipelines
+trophy:
+  uid: learn.wwl.use-azure-machine-learning-pipelines-for-automation.trophy

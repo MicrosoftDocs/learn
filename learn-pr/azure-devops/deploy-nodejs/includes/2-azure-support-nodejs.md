@@ -1,27 +1,23 @@
-In this part, you'll learn some of the ways Azure and Azure DevOps support Node.js applications.
+In this module, you'll explore creating a Node.js API for a bank and learn how Azure and Azure DevOps support Node.js applications.
 
-**Node.js** is an open-source JavaScript runtime environment, designed for server-side execution. It runs outside the context of a web browser. You can learn more at [nodejs.org](https://nodejs.org?azure-portal=true).
+This module uses a Bank API that's part of the Azure Developer Advocates' [Web Development for Beginners course](https://microsoft.github.io/Web-Dev-For-Beginners/#/?id=web-development-for-beginners-a-curriculum). If you'd like to learn more about the Bank API code, see the [Build a Bank project](https://github.com/microsoft/Web-Dev-For-Beginners/tree/main/7-bank-project) that's part of the course.
 
-## Node.js and Azure
+## Check for available parallel jobs
 
-Azure provides first-class support for Node.js. This means that you can take your existing codebase and, in most cases, deploy it directly to Azure without making modifications. On Azure, hosting a Node.js application is similar to hosting a .NET application, assuming that the proper dependencies are configured. Azure also enables you to configure environment variables for application settings, which mean you can continue to load settings and secrets using standard methods for Node.js.
+This project uses a Microsoft-hosted agent and requires access to a parallel job. To check if your organization has a parallel job available:
 
-After deploying the Node.js application to Azure, you can connect to resources within Azure, across VPN connections, and anywhere else accessible from the internet. This includes access to databases, document stores, and all the other resources and services Node.js developers rely on.
+1. Open your Azure DevOps project. If you don't already have a project, [create one for free](/azure/devops/pipelines/get-started/pipelines-sign-up).
 
-## Node.js and Azure DevOps
+1. Select **Project Settings**.
 
-As a Node.js developer, you'll find a welcoming environment in Azure DevOps. Although Azure DevOps provides a wide range of features for managing the entire software lifecycle, you can choose the features you need to make the process as efficient as possible.
+    :::image type="content" source="../media/2-pipeline-project-settings.png" alt-text="Screenshot of project settings menu option.":::
 
-When you connect your code to Azure Pipelines, Azure Pipelines can automatically detect the language that you're using and provide starter code for your CI/CD pipeline.
+1. Select **Pipelines** > **Parallel Jobs**.
 
-Here's an example that shows starter code templates for a Node.js application:
+    :::image type="content" source="../media/2-parallel-jobs-menu.png" alt-text="Screenshot of Parallel Jobs menu option.":::
 
-:::image type="content" source="../media/2-configure-pipeline-nodejs.png" alt-text="A screenshot of Azure Pipelines showing a list of starter projects for Node.js.":::
+1. Review the available number of Microsoft-hosted parallel jobs for private and public projects. You need to have at least one parallel job available.
 
-Azure Pipelines provides built-in tasks that support the build, test, and deployment jobs you need to deploy source code from GitHub or anywhere else.
+    :::image type="content" source="../media/2-available-parallel-jobs.png" alt-text="Screenshot of Parallel Jobs availability chart.":::
 
-In Azure Pipelines, pipeline code is expressed through YAML configuration files. This example shows the built-in `NodeTool@0` task, which installs the version of Node.js that you need to build your application.
-
-:::image type="content" source="../media/2-starter-code-nodejs.png" alt-text="A screenshot of Azure Pipelines showing starter code for the Node.js project.":::
-
-If Azure Pipelines doesn't provide a specific task that you need, you can provide scripts that fill in the gaps. The `script` task in the previous example uses `npm` to install dependencies, build the application, and run any associated tests.
+1. If you do not have any parallel jobs available, you can request parallel jobs for free for public or private projects using [this form](https://aka.ms/azpipelines-parallelism-request). Your request will take 2-3 business days. 

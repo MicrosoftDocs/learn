@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.build-a-udp-echo-client.building-and-running-the-project
+title: Building and running the project
+metadata:
+  title: Building and running the project
+  description: Building and running the project.
+  ms.date: 01/23/2023
+  author: edlamie80
+  ms.author: liydu
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-building-and-running-the-project.md)]

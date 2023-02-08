@@ -124,7 +124,6 @@ To complete the component that sends messages about sales performance, complete 
     ```
 
 1. Save the file using the editor's **&#9776;** menu, or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Cmd+S</kbd> on macOS).
-1. Select the project file **performancemessagesender.csproj** in the editor, update the `TargetFramework` value to `net6.0`, and then press <kbd>Ctrl+S</kbd> on Windows and Linux, or <kbd>Cmd+S</kbd> on macOS to save the file.
 
 ## Send a message to the topic
 
@@ -332,7 +331,6 @@ To create the component that retrieves messages about sales performance, complet
     ```
 
 1. Save the file using either the **&#9776;** menu or use the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Cmd+S</kbd> on macOS).
-1. Select the project file **performancemessagereceiver.csproj** in the editor, update the `TargetFramework` value to `net6.0`, and then press <kbd>Ctrl+S</kbd> on Windows and Linux, or <kbd>Cmd+S</kbd> on macOS to save the file.
 
 ## Retrieve a topic message for a subscription
 
@@ -345,7 +343,7 @@ To create the component that retrieves messages about sales performance, complet
     You'll see output similar to the following example:
 
     ```command
-    Received message: SequenceNumber:31806672368304129 Body:Total sales for Brazil in August: $13m.
+    Received message: SequenceNumber:1 Body:Total sales for Brazil in August: $13m.
     ```
 
 1. When the program has returned notifications that it's receiving messages, press <kbd>Enter</kbd> to stop the app.

@@ -23,19 +23,3 @@ In this module, you'll create a reusable Bicep template to deploy a set of Azure
 ## What is the main goal?
 
 By the end of this module, you'll be able to create Bicep templates that define your Azure resources. You'll be able to use parameters, variables, and expressions to make your templates reusable. You'll also be able to use modules and outputs to organize your templates into separate files.
-
-## Prerequisites
-
-You should be familiar with:
-
-- Infrastructure as code and its benefits.
-- Azure, including the Azure portal, subscriptions, resource groups, and resources.
-
-To follow along with the exercises in the module, you'll need the following software installed locally:
-
-- [Visual Studio Code](https://code.visualstudio.com).
-- The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep).
-- Either the latest [Azure CLI](/cli/azure/install-azure-cli) tools, or the latest version of [Azure PowerShell](/powershell/azure/install-az-ps).
-
-> [!TIP]
-> You can use either the Azure CLI or Azure PowerShell to complete this module. If you're not sure which to choose, we recommend you use the [Azure CLI](/cli/azure/install-azure-cli).

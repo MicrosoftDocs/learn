@@ -1,12 +1,12 @@
-In this exercise, you'll use the `union` operator to combine sales facts collected from different countries.
+In this exercise, you'll use the `union` operator to combine sales facts that were collected from various countries.
 
 ## Use the `union` operator
 
-Your sales team asks you to create a single table that combines 10 arbitrary sales from each one of the following countries: Australia, United Kingdom, and United States.
+Your sales team asks you to create a single table that combines 10 arbitrary sales results from each of the following countries: Australia, the United Kingdom, and the United States.
 
-You'll use the `let` statement to create three tabular expressions, each with 10 records from a specific country in the  *SalesFact* table, to represent sales data from three countries. You can think of them as three separate tables.
+You'll use the `let` statement to create three tabular expressions, each with 10 records from a specific country, in the *SalesFact* table, to represent sales data from three countries. You can think of them as three separate tables.
 
-Examining these tables, you can see that they have the same columns. The only difference is the data in the `RegionCountryName` column representing the country. You'll' use the `union` operator to combine the sales facts tables for the United Kingdom and the United States, to the sales facts table for Australia.
+Examining these tables, you can see that they have the same columns. The only difference is the data in the `RegionCountryName` column that represents the country. You'll use the `union` operator to combine the sales facts tables for the United Kingdom and the United States with the sales facts table for Australia.
 
 1. Run the following query.
 
@@ -29,17 +29,17 @@ Examining these tables, you can see that they have the same columns. The only di
     | union UnitedKingdomSales, UnitedStatesSales
     ```
 
-    You should get results that look like the following image:
+    Your results should look like those in the following image:
 
-    :::image type="content" source="../media/6-union-1.png" alt-text="Screenshot of union operator with tables with same columns query and results.":::
+    :::image type="content" source="../media/6-union-1.png" alt-text="Screenshot of the union operator with tables that have the same columns, query, and results.":::
 
 1. Notice that you get all the rows from the three tables. Try modifying the query to add simulated data for France and combining it with the data from the other countries.
 
-In the following sections, you'll use the `let` statement to create ad hoc tables that simulate data with the columns required for the scenarios.
+In the following sections, you use the `let` statement to create ad hoc tables that simulate data, with the columns required for the scenarios.
 
 ## Use the `union` operator with tables that have different columns
 
-The next month, your sales team again asks you to create the sales data from the three countries. This time when you examined the tables you notice that the tables have different columns. The nice thing about the `union` operator is that it will combine tables even if they have different columns. For this query, you'll use the alternative syntax for the `union` operator that doesn't require piped input.
+The next month, your sales team again asks you to create the sales data from the three countries. When you examine the tables this time, you notice that they have different columns. The nice thing about the `union` operator is that it will combine tables even if they have different columns. For this query, you use the alternative syntax for the `union` operator, which doesn't require piped input.
 
 1. Run the following query.
 
@@ -64,9 +64,9 @@ The next month, your sales team again asks you to create the sales data from the
     union AustraliaSales, UnitedKingdomSales, UnitedStatesSales
     ```
 
-    You should get results that look like the following image:
+    Your results should look like those in the following image:
 
-    :::image type="content" source="../media/6-union-2.png" alt-text="Screenshot of union operator with tables with different columns query and results.":::
+    :::image type="content" source="../media/6-union-2.png" alt-text="Screenshot of the union operator, with tables that have different columns, query, and results.":::
 
 1. Notice that you get all the rows from the three tables and all the columns that occur in any of the tables. Cells that weren't defined by an input row are set to null. Try modifying the query to add more columns and see how their values are populated in the results.
 
@@ -99,8 +99,10 @@ To only return the columns that occur in all tables, you'll use an inner union o
     union kind=inner AustraliaSales, UnitedKingdomSales, UnitedStatesSales
     ```
 
-    You should get results that look like the following image:
+    Your results should look like those in the following image:
 
-    :::image type="content" source="../media/6-union-3.png" alt-text="Screenshot of union operator returning common columns from tables with different columns, query and results.":::
+    :::image type="content" source="../media/6-union-3.png" alt-text="Screenshot of the union operator, returning common columns from tables that have different columns, query, and results.":::
 
-1. Notice that you get all the rows from the three tables and only the columns that occur in all of the tables. Try modifying the query to add more common columns by extending each table with a column of the same name, and see how their values are populated in the results.
+    Notice that you get all the rows from the three tables and only the columns that occur in all of the tables. 
+    
+1. Now try modifying the query to add more common columns by extending each table with a column of the same name, and then see how their values are populated in the results.

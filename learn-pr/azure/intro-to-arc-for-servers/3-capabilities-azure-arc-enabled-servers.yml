@@ -4,7 +4,7 @@ title:  What are the core management and governance capabilities of Azure Arc-en
 metadata:
   title: What are the core management and governance capabilities of Azure Arc-enabled servers?
   description: What are the core management and governance capabilities of Azure Arc-enabled servers?
-  ms.date: 12/01/2021
+  ms.date: 01/04/2023
   author: JnHs
   ms.author: jenhayes
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which VM extension can the administrator add to Azure Arc enabled servers to start monitoring it with Azure services?"
+  - content: "Which VM extension can the administrator add to Azure Arc-enabled servers to start monitoring it with Azure services?"
     choices:
     - content: "Qualys extension. This VM extension implements integration with Azure Defender for servers vulnerability assessment scanning."
       isCorrect: false
@@ -27,7 +27,7 @@ quiz:
     - content: "Log Analytics agent."
       isCorrect: true
       explanation: "That's correct. This VM extension implements integration with Azure Monitor."
-  - content: "What can the administrator do in order to audit changes the state of operating system of Azure Arc enabled servers?"
+  - content: "What can the administrator do in order to audit changes the state of operating system of Azure Arc-enabled servers?"
     choices:
     - content: "Review Azure Advisor."
       isCorrect: false

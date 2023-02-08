@@ -1,4 +1,4 @@
-In this module, you’ve learned how to design a solution to log and monitor Azure resources. You should now be able to:
+In this module, you’ve learned how to design solutions for high availability. You should now be able to:
 
 - Identify the availability requirements of Azure resources 
 
@@ -27,7 +27,5 @@ In this module, you’ve learned how to design a solution to log and monitor Azu
 - [Describe high-availability and disaster-recovery strategies](/training/modules/describe-high-availability-disaster-recovery-strategies/)
 
 - [Introduction to Azure Front Door](/training/modules/intro-to-azure-front-door/)
-
-- [Describe high availability and disaster recovery strategies](/training/modules/describe-high-availability-disaster-recovery-strategies/)
 
 - [Explore IaaS and PaaS platform tools for high availability and disaster recovery](/training/modules/explore-iaas-paas-platform-tools-for-high-availability-disaster-recovery/)

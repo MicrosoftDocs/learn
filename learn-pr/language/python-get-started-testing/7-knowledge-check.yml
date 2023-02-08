@@ -24,7 +24,7 @@ quiz:
       explanation: "Correct! When a function isn't tested, it's common to see it grow and become more complex."
     - content: "Functions will run slower and have more arguments."
       isCorrect: false
-      explanation: "Incorrect. Although it's possible that a function may run slower and have more arguments, these aren't related to not having tests."
+      explanation: "Incorrect. Although it's possible that a function may run slower and have more arguments, these characteristics aren't related to not having tests."
   - content: "What is a recognizable aspect in functions and methods when testing is involved?"
     choices:
     - content: "They tend to have a single responsibility instead of doing many different things"

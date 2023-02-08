@@ -5,9 +5,9 @@ metadata:
   unitType: introduction
   title: Introduction
   description: "Learn about a scenario where JavaScript interoperability, life cycle events, and templates can increase the functionality of a Blazor web app."
-  ms.date: 08/18/2021
-  author: csharpfritz
-  ms.author: jefritz
+  ms.date: 02/02/2023
+  author: IEvangelist
+  ms.author: dapine
   ms.topic: interactive-tutorial
   ms.prod: learning-blazor
 durationInMinutes: 3

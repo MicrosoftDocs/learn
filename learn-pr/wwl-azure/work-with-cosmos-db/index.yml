@@ -2,8 +2,8 @@
 uid: learn.wwl.work-with-cosmos-db
 metadata:
   title: Work with Azure Cosmos DB
-  description: "Learn how to develop client and server-side programming solutions on Azure Cosmos DB."
-  ms.date: 09/07/2022
+  description: "Work with Azure Cosmos DB"
+  ms.date: 02/07/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial

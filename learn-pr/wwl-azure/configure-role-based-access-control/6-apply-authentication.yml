@@ -3,8 +3,8 @@ uid: learn.wwl.configure-role-based-access-control.apply-rbac-authentication
 title: Apply role-based access control
 metadata:
   title: Apply role-based access control
-  description: "Apply role-based access control (RBAC)"
-  ms.date: 10/21/2022
+  description: "Apply role-based access control"
+  ms.date: 01/16/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial

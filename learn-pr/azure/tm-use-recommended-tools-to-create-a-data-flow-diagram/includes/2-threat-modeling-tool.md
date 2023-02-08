@@ -1,6 +1,6 @@
 ## Quick overview
 
-Published by Microsoft and recognized by the threat modeling community, the Microsoft Threat Modeling Tool helps engineers create data-flow diagrams and apply STRIDE for their threat-modeling work.
+Published by Microsoft and recognized by the threat-modeling community, the Microsoft Threat Modeling Tool helps engineers create data-flow diagrams and apply STRIDE for their threat-modeling work.
 
 The Threat Modeling Tool offers:
 
@@ -13,12 +13,12 @@ The default template is called "SDL TM Knowledge Base" and gives you a basic set
 
 STRIDE is the acronym for the six major threat categories:
 
-- Spoofing: pretending to be someone or something else
-- Tampering: changing data without authorization
-- Repudiation: not claiming responsibility for an action taken
-- Information disclosure: seeing data without permission
-- Denial of service: overwhelming the system
-- Elevation of privilege: having permissions I shouldn't have
+- **Spoofing**: pretending to be someone or something else
+- **Tampering**: changing data without authorization
+- **Repudiation**: not claiming responsibility for an action taken
+- **Information disclosure**: seeing data without permission
+- **Denial of service**: overwhelming the system
+- **Elevation of privilege**: having permissions I shouldn't have
 
 ## Advanced user section
 
@@ -28,11 +28,11 @@ For more advanced users, you can customize the template across three main sectio
 
 Process, external entity, data store, data-flow, and trust boundaries make up the parent elements.
 
-:::image type="content" source="../media/parentstencils.jpg" alt-text="Parent Stencils." loc-scope="other":::
+:::image type="content" source="../media/parentstencils.jpg" alt-text="Screenshot of Parent Stencils." loc-scope="other":::
 
 You can also create child elements to help provide granularity for additional context, actionable threat generation, and risk-reduction strategies.
 
-:::image type="content" source="../media/expandedflowstencils.jpg" alt-text="Expanded Flow Stencils." loc-scope="other":::
+:::image type="content" source="../media/expandedflowstencils.jpg" alt-text="Screenshot of Expanded Flow Stencils." loc-scope="other":::
 
 #### Example of how child elements work
 
@@ -42,21 +42,21 @@ HTTP should generate more threats because tampering, information disclosure, and
 
 ##### Using HTTP
 
-:::image type="content" source="../media/HTTP.JPG" alt-text="Illustrates the HTTP child element." loc-scope="other":::
+:::image type="content" source="../media/HTTP.JPG" alt-text="Screenshot illustrating the HTTP child element." loc-scope="other":::
 
 ##### Using HTTPS
 
-:::image type="content" source="../media/HTTPS.JPG" alt-text="Illustrates the HTTPS child element." loc-scope="other":::
+:::image type="content" source="../media/HTTPS.JPG" alt-text="Screenshot illustrating the HTTPS child element." loc-scope="other":::
 
 #### How to add element properties
 
 If you have additional properties that must be included in the default template, you can add them to each element in the administrator view.
 
-:::image type="content" source="../media/StencilPropertiesAdmin.JPG" alt-text="Stencil Properties Admin View." loc-scope="other":::
+:::image type="content" source="../media/StencilPropertiesAdmin.JPG" alt-text="Screenshot of the Stencil Properties Admin View." loc-scope="other":::
 
 Users will see the changes whenever they drag and drop that element onto the canvas.
 
-:::image type="content" source="../media/StencilProperties.JPG" alt-text="Stencil Properties User View." loc-scope="other":::
+:::image type="content" source="../media/StencilProperties.JPG" alt-text="Screenshot of the Stencil Properties User View." loc-scope="other":::
 
 ### Threat properties
 
@@ -74,13 +74,13 @@ Add fields that give you more context and actionable steps. Examples include:
 - **Hyperlinks**: link issues to online documentation
 - **External risk mapping**: speak the same risk language of other organizations by using reliable third-party sources, such as OWASP Top 10 and CWE Details
 
-:::image type="content" source="../media/ThreatAdminView.JPG" alt-text="Threat Properties Admin View." loc-scope="other":::
+:::image type="content" source="../media/ThreatAdminView.JPG" alt-text="Screenshot of the Threat Properties Admin View." loc-scope="other":::
 
 ##### User view
 
 Threat Modeling Tool users will see these changes whenever they analyze their data-flow diagrams.
 
-:::image type="content" source="../media/ThreatUserView.JPG" alt-text="Threat Properties User View." loc-scope="other":::
+:::image type="content" source="../media/ThreatUserView.JPG" alt-text="Screenshot of the Threat Properties User View." loc-scope="other":::
 
 ### Threats and risk reduction strategies
 
@@ -122,7 +122,7 @@ The Cross Site Scripting threat above will **only** be generated when:
 - The process is either a Web Server or a Web Application
 - Input and output aren't sanitized
 
-:::image type="content" source="../media/IncludeExclude.JPG" alt-text="Include Exclude." loc-scope="other":::
+:::image type="content" source="../media/IncludeExclude.JPG" alt-text="Screenshot of Include/Exclude view." loc-scope="other":::
 
 > [!NOTE]
 > Microsoft Threat Modeling Tool template creation is a complex topic and will not be fully discussed in this learning path.

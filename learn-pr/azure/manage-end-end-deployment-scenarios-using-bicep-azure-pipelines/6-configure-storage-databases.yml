@@ -5,7 +5,7 @@ metadata:
   unitType: learning-content
   title: Configure storage and databases
   description: Learn how to work with databases and storage accounts in a Bicep deployment pipeline.
-  ms.date: 10/10/2021
+  ms.date: 12/12/2022
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial

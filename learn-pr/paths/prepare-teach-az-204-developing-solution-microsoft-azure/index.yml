@@ -1,0 +1,35 @@
+### YamlMime:LearningPath
+uid: learn.wwl.prepare-teach-az-204-developing-solution-microsoft-azure
+metadata:
+  title: Prepare to teach AZ-204 Developing Solution for Microsoft Azure
+  description: Prepare to teach AZ-204 Developing Solution for Microsoft Azure
+  ms.date: 11/21/2022
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Prepare to teach AZ-204 Developing Solution for Microsoft Azure
+prerequisites: |
+  None
+summary: |
+  Learn about the Microsoft Learn for Educators program and how to best deliver its content to your students. Prepare to deliver Developing solution for Microsoft Azure solutions in the classroom.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- advanced
+roles:
+- higher-ed-educator
+products:
+- azure
+subjects:
+- cloud-computing
+modules:
+- learn.wwl.introduction-microsoft-learn-educators-program
+- learn.wwl.onboard-microsoft-learn-educators-program
+- learn.wwl.microsoft-learn-educators-course-preparation
+- learn.wwl.microsoft-learn-educators-course-plan
+- learn.wwl.learn-best-practices-from-microsoft-technical-trainers
+- learn.wwl.teach-azure-204-develop-solution-microsoft-azure-academic-programs
+- learn.wwl.prepare-for-course-delivery
+- learn.wwl.close-out-course
+trophy:
+  uid: learn.wwl.prepare-teach-az-204-developing-solution-microsoft-azure.trophy

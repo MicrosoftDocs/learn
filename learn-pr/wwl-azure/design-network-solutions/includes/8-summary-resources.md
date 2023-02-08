@@ -1,47 +1,33 @@
-Now that you have reviewed this module, you should be able to:
+In this module, you learned how to evaluate and design an effective network architecture solution based on workload requirements. You reviewed features and benefits of several Azure Services, including Azure Bastion, Web Application Firewall, Front Door, and Virtual WAN. You explored how to design a solution for on-premises connectivity to Azure Virtual Networks and Azure network connectivity services. You discovered how to create a solution for application delivery services and protection services.
 
-- Recommend a network architecture solution based on workload requirements 
+## Learn more with Azure documentation
 
-- Design for on-premises connectivity to Azure Virtual Networks 
+- Review [best practices to set up networking for workloads migrated to Azure](/azure/cloud-adoption-framework/migrate/azure-best-practices/migrate-best-practices-networking).
 
-- Design for Azure network connectivity services 
+## Learn more with self-paced training
 
-- Design for application delivery services 
+- Complete an [introduction to Azure Bastion](/training/modules/intro-to-azure-bastion/).
 
-- Design for application protection services 
+- Complete an [introduction to Azure Web Application Firewall](/training/modules/introduction-azure-web-application-firewall/).
 
-## Resources
+- Complete an [introduction to Azure Firewall](/training/modules/introduction-azure-firewall/).
 
-Use these resources to discover more.
+- Complete an [introduction to Azure Front Door](/training/modules/intro-to-azure-front-door/).
 
-### Learn more with Azure documentation
+- Complete an [introduction to Azure Virtual WAN](/training/modules/introduction-azure-virtual-wan/).
 
-- [Best practices to set up networking for workloads migrated to Azure](/azure/cloud-adoption-framework/migrate/azure-best-practices/migrate-best-practices-networking)
+## Learn more with optional hands-on exercises
 
-### Learn more with self-paced training
+- Complete an [introduction to Azure Virtual Networks](/training/modules/introduction-to-azure-virtual-networks/). (_Azure subscription required_.)
 
-- [Introduction to Azure Virtual Networks](/training/modules/introduction-to-azure-virtual-networks/)
+- Design and implement [Azure ExpressRoute](/training/modules/design-implement-azure-expressroute/). (_Azure subscription required_.)
 
-- [Design and implement Azure ExpressRoute](/training/modules/design-implement-azure-expressroute/)
+- Design and implement [hybrid networking](/training/modules/design-implement-hybrid-networking/). (_Azure subscription required_.)
 
-- [Introduction to Azure Virtual WAN](/training/modules/introduction-azure-virtual-wan/)
+- Design and implement [private access to Azure Services](/training/modules/design-implement-private-access-to-azure-services/). (_Azure subscription required_.)
 
-- [Design and implement hybrid networking](/training/modules/design-implement-hybrid-networking/)
+- Enhance [your service availability and data locality with Azure Traffic Manager (sandbox)](/training/modules/distribute-load-with-traffic-manager/).
 
-- [Design and implement private access to Azure Services](/training/modules/design-implement-private-access-to-azure-services/)
+- Distribute [services across virtual networks and integrate with Azure Virtual Network peering (sandbox)](/training/modules/integrate-vnets-with-vnet-peering/).
 
-- [Enhance your service availability and data locality by using Azure Traffic Manager](/training/modules/distribute-load-with-traffic-manager/)
-
-- [Introduction to Azure Bastion](/training/modules/intro-to-azure-bastion/)
-
-- [Introduction to Azure Web Application Firewall](/training/modules/introduction-azure-web-application-firewall/)
-
-- [Introduction to Azure Firewall](/training/modules/introduction-azure-firewall/)
-
-- [Introduction to Azure Front Door](/training/modules/intro-to-azure-front-door/)
-
-### Learn more with optional hands-on exercises
-
-- [Distribute your services across Azure virtual networks and integrate them by using virtual network peering](/training/modules/integrate-vnets-with-vnet-peering/)
-
-- [Secure and isolate access to Azure resources by using network security groups and service endpoints](/training/modules/secure-and-isolate-with-nsg-and-service-endpoints/)
+- Secure and isolate [access to Azure resources by using network security groups and service endpoints (sandbox)](/training/modules/secure-and-isolate-with-nsg-and-service-endpoints/).

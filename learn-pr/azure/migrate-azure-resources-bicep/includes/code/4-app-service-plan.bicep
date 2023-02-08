@@ -1,4 +1,4 @@
-@description('Location For All Resources.')
+@description('Location for all resources.')
 param location string = resourceGroup().location
 
 @allowed([
@@ -32,6 +32,7 @@ resource appServicePlanName 'Microsoft.Web/serverfarms@2020-12-01' = {
     capacity: appServicePlanInstanceCount
   }
   kind: 'app'
+  properties: {}
 }
 
 output appServicePlanId string = appServicePlanName.id

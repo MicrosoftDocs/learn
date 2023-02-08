@@ -21,7 +21,7 @@ The _Actions_ permissions show the _Contributor_ role has all action privileges.
 The _Contributor_ role also has two _DataActions_ permissions to specify how data can be affected:
 
 - `"NotDataActions": []`: No specific actions are listed. Therefore, all actions can affect the data.
-- `"AssignableScopes": ["/"]`: The role can be assigned for all scopes that affect data. The backslash `{\}` wildcard means "all."
+- `"AssignableScopes": ["/"]`: The role can be assigned for all scopes that affect data. 
 
 Here's another example of a role definition in PowerShell:
 
@@ -50,15 +50,15 @@ Review the following characteristics of role definitions:
 
 ### Role permissions
 
-Use the _Actions_ and _NotActions_ permissions together to grant and deny the exact privileges for each role. The _Actions_ permissions can provide the breadth of access and the _NotActons_ permissions can narrow the access. 
+Use the _Actions_ and _NotActions_ permissions together to grant and deny the exact privileges for each role. The _Actions_ permissions can provide the breadth of access and the _NotActions_ permissions can narrow the access. 
 
 The following table shows how the _Actions_ or _NotActions_ permissions are used in the definitions for three built-in roles: _Owner_, _Contributor_, and _Reader_. The permissions are narrowed from the _Owner_ role to the _Contributor_ and _Reader_ roles to limit access.
 
 | Role&nbsp;name| Description | Actions&nbsp;permissions | NotActions&nbsp;permissions |
 | --- | --- | --- | --- |
-| _Owner_ | Allow all actions | `\*` | n/a |
-| _Contributor_ | Allow all actions, except write or delete role assignment | `\*` | - `Microsoft.Authorization/\*/Delete` <br> - `Microsoft.Authorization/\*/Write` <br> - `Microsoft.Authorization/elevateAccess/Action` |
-| _Reader_ | Allow all read actions | `\*/read` | n/a |
+| _Owner_ | Allow all actions | `*` | n/a |
+| _Contributor_ | Allow all actions, except write or delete role assignment | `*` | - `Microsoft.Authorization/*/Delete` <br> - `Microsoft.Authorization/*/Write` <br> - `Microsoft.Authorization/elevateAccess/Action` |
+| _Reader_ | Allow all read actions | `/*/read` | n/a |
 
 ### Role scopes
 
@@ -88,4 +88,4 @@ Consider the following points about creating role definitions in Azure RBAC:
 
 - **Consider controlling changes to data**. Identify data or resources that should only be modified in specific scenarios and apply tight access control. Limit users to the least of amount of access they need to get their work done. A well-planned access management strategy helps to maintain your infrastructure and prevent security issues.
 
-- **Consider applying deny assignments**. Determine if you need to implement the deny assignment feature, which is currently read-only. This type of assignment can only be set by Azure.
+- **Consider applying deny assignments**. Determine if you need to implement the deny assignment feature. Similar to a role assignment, a deny assignment attaches a set of deny actions to a user, group, or service principal at a particular scope for the purpose of denying access. Deny assignments block users from performing specific Azure resource actions even if a role assignment grants them access.

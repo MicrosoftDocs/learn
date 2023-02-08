@@ -1,10 +1,10 @@
 name: learn-github-actions
 
-on: 
+on:
   push:
-    branches: 
+    branches:
       - main
-    paths: 
+    paths:
       - 'deploy/**'
   workflow_dispatch:
 
@@ -12,22 +12,22 @@ permissions:
   id-token: write
   contents: read
 
-env: 
+env:
     AZURE_RESOURCEGROUP_NAME: ToyWebsiteTest
     ENVIRONMENT_TYPE: Test
 
 jobs:
-  lint: 
+  lint:
      runs-on: ubuntu-latest
-     steps: 
-     - uses: actions/checkout@v2
+     steps:
+     - uses: actions/checkout@v3
      - name: Run Bicep linter
        run: az bicep build --file deploy/main.bicep
-  
-  validate: 
+
+  validate:
      runs-on: ubuntu-latest
-     steps: 
-     - uses: actions/checkout@v2
+     steps:
+     - uses: actions/checkout@v3
      - uses: azure/login@v1
        name: Sign in to Azure
        with:
@@ -42,12 +42,12 @@ jobs:
          template: ./deploy/main.bicep
          parameters: environmentType=${{ env.ENVIRONMENT_TYPE }}
          deploymentMode: Validate
-        
+
   preview:
      runs-on: ubuntu-latest
      needs: [lint, validate]
-     steps: 
-     - uses: actions/checkout@v2
+     steps:
+     - uses: actions/checkout@v3
      - uses: azure/login@v1
        name: Sign in to Azure
        with:
@@ -71,7 +71,7 @@ jobs:
     outputs:
       appServiceAppHostName: ${{ steps.deploy.outputs.appServiceAppHostName }}
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - uses: azure/login@v1
       name: Sign in to Azure
       with:
@@ -90,8 +90,8 @@ jobs:
   smoke-test:
     runs-on: ubuntu-latest
     needs: deploy
-    steps: 
-    - uses: actions/checkout@v2
+    steps:
+    - uses: actions/checkout@v3
     - run: |
         $container = New-PesterContainer `
           -Path 'deploy/Website.Tests.ps1' `

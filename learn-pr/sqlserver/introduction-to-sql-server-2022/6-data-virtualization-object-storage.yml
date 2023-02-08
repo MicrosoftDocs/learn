@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-sql-server-2022.data-virtualization-object-storage
+title: Use SQL Server 2022 as a data hub querying files and backup/restore to object storage providers
+metadata:
+  unitType: learning-content
+  title: Use SQL Server 2022 as a data hub querying files and backup/restore to object storage providers
+  description: "Learn how to use T-SQL to access files types like parquet and delta stored in Azure Storage of S3 compatible storage. In addition, learn how to back up and restore SQL Server databases with S3 compatible storage."
+  ms.date: 11/10/2022
+  author: rgward
+  ms.author: bobward
+  ms.topic: interactive-tutorial
+  ms.prod: learning-sqlserver
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-data-virtualization-object-storage.md)]
+quiz:
+  title: Knowledge check
+  questions:
+  - content: "SQL Server 2022 uses REST API to provide data virtualization to which type of data sources?"
+    choices: 
+    - content: "S3 compatible object storage providers"
+      isCorrect: true
+      explanation: "SQL Server 2022 provides built-in REST API support for S3 compatible object storage providers"
+    - content: "Oracle data sources using ODBC"
+      isCorrect: false
+      explanation: "SQL Server 2022 does support Oracle data sources, but uses ODBC with Polybase services and not REST API."
+    - content: "Hadoop data sources using Java"
+      isCorrect: false
+      explanation: "Polybase support for Hadoop using Java has been removed in SQL Server 2022."
+  - content: "SQL Server 2022 data virtualization now supports which file format popular for data lakes?"
+    choices: 
+    - content: "JSON"
+      isCorrect: false
+      explanation: "JSON isn't natively supported for data virtualization in SQL Server 2022. You can create a file format to define the structure of a JSON file."
+    - content: "Parquet"
+      isCorrect: true
+      explanation: "Parquet files are natively supported in SQL Server 2022 without the need to create a file format definition."
+    - content: "HDFS"
+      isCorrect: false
+      explanation: "HDFS is a file system and not a file or data format."

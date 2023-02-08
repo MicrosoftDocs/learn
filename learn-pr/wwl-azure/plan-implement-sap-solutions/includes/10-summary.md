@@ -1,1 +1,0 @@
-In this module, you've learned how the SAPS metric serves as a guide for determining the correct VM size for providing the necessary throughput for an SAP workload. Additionally, you saw how VMs hosting SAP Application can be backed up using Azure Backup. Lastly, you reviewed the compute considerations for planning SAP HANA on Azure Large Instances.

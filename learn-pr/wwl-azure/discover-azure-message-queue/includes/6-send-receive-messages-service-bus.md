@@ -1,18 +1,20 @@
-In this exercise you will learn how to:
+
+
+In this exercise you'll learn how to:
 
 * Create a Service Bus namespace, and queue, using the Azure CLI.
-* Create a .NET Core console application to send a set of messages to the queue.
-* Create a .NET Core console application to receive those messages from the queue.
+* Create a .NET console application to send and receive messages from the queue.
 
 ## Prerequisites
 
 * An **Azure account** with an active subscription. If you don't already have one, you can sign up for a free trial at [https://azure.com/free](https://azure.com/free).
 * [Visual Studio Code](https://code.visualstudio.com/) on one of the [supported platforms](https://code.visualstudio.com/docs/supporting/requirements#_platforms).
 * The [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) for Visual Studio Code.
+* [.NET 6](https://dotnet.microsoft.com/download/dotnet/6.0) is the target framework for the steps below.
 
-## Login to Azure
+## Log in to Azure
 
-In this section you will open your terminal and create some variables that will be used throughout the rest of the exercise to make command entry, and unique resource name creation, a bit easier.
+In this section you'll open your terminal and create some variables that will be used throughout the rest of the exercise to make command entry, and unique resource name creation, a bit easier.
 
 1. Launch the [Azure Cloud Shell](https://shell.azure.com) and select **Bash** and the environment.
 
@@ -25,7 +27,7 @@ In this section you will open your terminal and create some variables that will 
 
 ## Create Azure resources
 
-1. Create a resource group to hold the Azure resources you will be creating.
+1. Create a resource group to hold the Azure resources you'll be creating.
 
     ```bash
     az group create --name az204-svcbus-rg --location $myLocation
@@ -67,7 +69,7 @@ In this section you will open your terminal and create some variables that will 
     code .
     ```
 
-1. Open the terminal in VS Code by selecting **Terminal > New Terminal** in the menu bar and run the following commands to create the console app and add the **Azure.Messaging.ServiceBus** package.
+1. Open the terminal in Visual Studio Code by selecting **Terminal > New Terminal** in the menu bar and run the following commands to create the console app and add the **Azure.Messaging.ServiceBus** package.
 
     ```bash
     dotnet new console
@@ -77,109 +79,128 @@ In this section you will open your terminal and create some variables that will 
 1. In *Program.cs*, add the following `using` statements at the top of the file after the current `using` statement.
 
     ```csharp
-    using System.Threading.Tasks;    
     using Azure.Messaging.ServiceBus;
     ```
 
-1. In the `Program` class, add the following two static properties. Set the `ServiceBusConnectionString` variable to the connection string that you obtained earlier.
+1. Add the following variables to the code and set the `connectionString` variable to the connection string that you obtained earlier.
 
     ```csharp
     // connection string to your Service Bus namespace
-    static string connectionString = "<NAMESPACE CONNECTION STRING>";
+    string connectionString = "<CONNECTION STRING>";
 
     // name of your Service Bus topic
-    static string queueName = "az204-queue";
+    string queueName = "az204-queue";
     ```
 
-1. Declare the following static properties in the `Program` class. See code comments for details.
+1. Add the following code below the variables you just added. See code comments for details.
 
     ```csharp
     // the client that owns the connection and can be used to create senders and receivers
-    static ServiceBusClient client;
+    ServiceBusClient client;
     
     // the sender used to publish messages to the queue
-    static ServiceBusSender sender;
+    ServiceBusSender sender;
     
-    // number of messages to be sent to the queue
-    private const int numOfMessages = 3;
-    ```
-
-1. Replace the `Main()` method with the following **async** `Main` method.
-
-    ```csharp
-    static async Task Main()
+    // the client that owns the connection and can be used to create senders and receivers
+    ServiceBusClient client;
+    
+    // the sender used to publish messages to the queue
+    ServiceBusSender sender;
+    
+    // Create the clients that we'll use for sending and processing messages.
+    client = new ServiceBusClient(connectionString);
+    sender = client.CreateSender(queueName);
+    
+    // create a batch 
+    using ServiceBusMessageBatch messageBatch = await sender.CreateMessageBatchAsync();
+    
+    for (int i = 1; i <= 3; i++)
+    {
+        // try adding a message to the batch
+        if (!messageBatch.TryAddMessage(new ServiceBusMessage($"Message {i}")))
         {
-            // Create the clients that we'll use for sending and processing messages.
-            client = new ServiceBusClient(connectionString);
-            sender = client.CreateSender(queueName);
-    
-            // create a batch 
-            using ServiceBusMessageBatch messageBatch = await sender.CreateMessageBatchAsync();
-    
-            for (int i = 1; i <= 3; i++)
-            {
-                // try adding a message to the batch
-                if (!messageBatch.TryAddMessage(new ServiceBusMessage($"Message {i}")))
-                {
-                    // if an exception occurs
-                    throw new Exception($"Exception {i} has occurred.");
-                }
-            }
-    
-            try 
-            {
-                // Use the producer client to send the batch of messages to the Service Bus queue
-                await sender.SendMessagesAsync(messageBatch);
-                Console.WriteLine($"A batch of {numOfMessages} messages has been published to the queue.");
-            }
-            finally
-            {
-                // Calling DisposeAsync on client types is required to ensure that network
-                // resources and other unmanaged objects are properly cleaned up.
-                await sender.DisposeAsync();
-                await client.DisposeAsync();
-            }
-    
-            Console.WriteLine("Press any key to end the application");
-            Console.ReadKey();
+            // if an exception occurs
+            throw new Exception($"Exception {i} has occurred.");
         }
+    }
+    
+    try
+    {
+        // Use the producer client to send the batch of messages to the Service Bus queue
+        await sender.SendMessagesAsync(messageBatch);
+        Console.WriteLine($"A batch of three messages has been published to the queue.");
+    }
+    finally
+    {
+        // Calling DisposeAsync on client types is required to ensure that network
+        // resources and other unmanaged objects are properly cleaned up.
+        await sender.DisposeAsync();
+        await client.DisposeAsync();
+    }
+    
+    Console.WriteLine("Follow the directions in the exercise to review the results in the Azure portal.");
+    Console.WriteLine("Press any key to continue");
+    Console.ReadKey();
     ```
 
 1. Save the file and run the `dotnet build` command to ensure there are no errors.
 
-1. Run the program and wait for the confirmation message.
+1. Run the program using the `dotnet run` command and wait for the confirmation message below. Then press any key to exit the program.
 
     ```bash
-    A batch of 3 messages has been published to the queue.
+    A batch of three messages has been published to the queue.
     ```
 
-1. Login to the Azure portal and navigate to your Service Bus namespace. On the Overview page, select the *az204-queue* queue in the bottom-middle pane. 
+## Review results
 
+1. Log in to the Azure portal and navigate to your Service Bus namespace. Select the **Service Bus Explorer** in the Service Bus Queue navigation pane.
+1. Select **Peek from start** and the three messages that were sent will appear.
 
-    :::image type="content" source="../media/service-bus-queue.png" alt-text="Select az204-queue in the bottom-middle pane.":::
+    :::image type="content" source="../media/peek-messages.png" alt-text="Decorative.":::
 
-    Notice the following values in the Essentials section:
-
-    * The **Active** message count value for the queue is now **3**. Each time you run this sender app without retrieving the messages, this value increases by 3.
-    * The **current size** of the queue increments each time the app adds messages to the queue.
-    * In the **Messages** chart in the bottom **Metrics** section, you can see that there are three incoming messages for the queue.
 
 ## Update project to receive messages to the queue
 
-In this section you'll modify the program to receive messages from the queue.
+In this section you'll update the program to receive messages from the queue.
 
-1. In the `Program` class, delete the static properties that follow `ServiceBusClient`. We'll keep using `connectionString`, `queueName`, and `ServiceBusClient` for the rest of the exercise. Add the following after the ServiceBusClient static property.
-
-    ```csharp
-    // the processor that reads and processes messages from the queue
-    static ServiceBusProcessor processor;
-    ```
-
-1. Add the following methods to the `Program` class to handle messages and any errors.
+1. Add the code below at the end of the existing code. See code comments for details.
 
     ```csharp
+    ServiceBusProcessor processor;
+    client = new ServiceBusClient(connectionString);
+    
+    // create a processor that we can use to process the messages
+    processor = client.CreateProcessor(queueName, new ServiceBusProcessorOptions());
+    
+    try
+    {
+        // add handler to process messages
+        processor.ProcessMessageAsync += MessageHandler;
+        
+        // add handler to process any errors
+        processor.ProcessErrorAsync += ErrorHandler;
+        
+        // start processing 
+        await processor.StartProcessingAsync();
+        
+        Console.WriteLine("Wait for a minute and then press any key to end the processing");
+        Console.ReadKey();
+        
+        // stop processing 
+        Console.WriteLine("\nStopping the receiver...");
+        await processor.StopProcessingAsync();
+        Console.WriteLine("Stopped receiving messages");
+    }
+    finally
+    {
+        // Calling DisposeAsync on client types is required to ensure that network
+        // resources and other unmanaged objects are properly cleaned up.
+        await processor.DisposeAsync();
+        await client.DisposeAsync();
+    }
+
     // handle received messages
-    static async Task MessageHandler(ProcessMessageEventArgs args)
+    async Task MessageHandler(ProcessMessageEventArgs args)
     {
         string body = args.Message.Body.ToString();
         Console.WriteLine($"Received: {body}");
@@ -189,59 +210,22 @@ In this section you'll modify the program to receive messages from the queue.
     }
     
     // handle any errors when receiving messages
-    static Task ErrorHandler(ProcessErrorEventArgs args)
+    Task ErrorHandler(ProcessErrorEventArgs args)
     {
         Console.WriteLine(args.Exception.ToString());
         return Task.CompletedTask;
     }
     ```
 
-1. Replace the `Main()` method. It calls the `ReceiveMessages` method to receive messages from the queue.
-
-    ```csharp
-    static async Task Main()
-    {
-        // Create the client object that will be used to create sender and receiver objects
-        client = new ServiceBusClient(connectionString);
-
-        // create a processor that we can use to process the messages
-        processor = client.CreateProcessor(queueName, new ServiceBusProcessorOptions());
-
-        try
-        {
-            // add handler to process messages
-            processor.ProcessMessageAsync += MessageHandler;
-
-            // add handler to process any errors
-            processor.ProcessErrorAsync += ErrorHandler;
-
-            // start processing 
-            await processor.StartProcessingAsync();
-
-            Console.WriteLine("Wait for a minute and then press any key to end the processing");
-            Console.ReadKey();
-
-            // stop processing 
-            Console.WriteLine("\nStopping the receiver...");
-            await processor.StopProcessingAsync();
-            Console.WriteLine("Stopped receiving messages");
-        }
-        finally
-        {
-            // Calling DisposeAsync on client types is required to ensure that network
-            // resources and other unmanaged objects are properly cleaned up.
-            await processor.DisposeAsync();
-            await client.DisposeAsync();
-        }
-    }
-    ```
-
 1. Use the `dotnet build` command to ensure there are no errors.
 
-1. Use the dotnet run command to run the application. You should see the received messages. Press any key to stop the receiver and the application.
+1. Use the `dotnet run` command to run the application. It will send three more messages to the queue and then retrieve all six messages. Press any key to stop the receiver and the application.
 
     ```bash
     Wait for a minute and then press any key to end the processing
+    Received: Message 1
+    Received: Message 2
+    Received: Message 3
     Received: Message 1
     Received: Message 2
     Received: Message 3
@@ -250,7 +234,10 @@ In this section you'll modify the program to receive messages from the queue.
     Stopped receiving messages
     ```
 
-1. Check the portal again. Notice that the **Active Message Count** value is now 0. You may need to refresh the portal page.
+    > [!NOTE]
+    > Since the application sent two batches of messages before retrieving them, you should see two batches of three messages represented in the output.
+
+1. Return to the portal and select **Peek from start** again. Notice that no messages appear in the queue since we've retrieved them all. 
 
 ## Clean up resources
 

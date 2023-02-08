@@ -1,10 +1,11 @@
-Tailwind Traders has several requirements to meet for their production network environment. It is important you select the right networking solutions to meet all of the requirements. Here are the specific requirements.
+Tailwind Traders has several requirements to meet for their production network environment. It's important that you select the right networking solutions to meet all of the requirements.
 
-- A web application that isn't internet facing. They need to load balance incoming traffic to the web application, but it can't be internet facing. 
+- **Non-internet facing web app**. The company needs to load balance incoming traffic to their web application, but the app can't be internet facing. 
 
-- Network security. Filter HTTP(S) traffic from Azure to on premises. They also need to filter traffic outbound to the internet. 
+- **Network security**. You need to filter HTTP(S) traffic from Azure to on-premises, and filter traffic outbound to the internet. 
 
-- Network architecture. The Network team intends to deploy resources across several Azure regions, requires global connectivity between VNets in these Azure regions and multiple on-premises locations, and wishes to centrally manage the networks and connections
+- **Network architecture**. The Network team intends to deploy resources across several Azure regions. The configuration requires global connectivity between Azure virtual networks in these Azure regions and multiple on-premises locations. The company requires centralized management of the networks and connections.
 
- 
+### Answer the following questions
+
 Choose the best response for each of the questions below. Then select **Check your answers**.

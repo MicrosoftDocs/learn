@@ -1,6 +1,0 @@
-Microsoft offers ExpressRoute Fast Path to optimize connectivity of HANA Large Instances to Azure virtual networks that host the SAP application VMs. Its major benefit is data flows between VMs and HANA Large Instances are not routed through the ExpressRoute gateway anymore. Instead the VMs assigned in the subnet(s) of the Azure virtual network are directly communicating with the dedicated enterprise edge router.
-
-The ExpressRoute Fast Path functionality requires that the subnets running the SAP application VMs are in the same Azure virtual network connected to the HANA Large Instances. VMs located in Azure virtual networks that are peered with the Azure virtual network connected directly to the HANA Large Instance units are not benefiting from ExpressRoute Fast Path. As a result, traditional typical hub and spoke virtual network designs, where the ExpressRoute circuits are connecting against a hub virtual network and virtual networks containing the SAP application layer (spokes) are getting peered, are not capable of taking advantage of the optimization by ExpressRoute Fast Path. In addition, ExpressRoute Fast Path does not support user defined routing rules (UDR) today. ExpressRoute Fast Path requires an UltraPerformance ExpressRoute gateway. 
-
-
-

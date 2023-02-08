@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.run-pipelines-azure-machine-learning.create-components
+title: Create components
+metadata:
+  title: Create components
+  description: "Create components"
+  ms.date: 11/17/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-create-components.md)]

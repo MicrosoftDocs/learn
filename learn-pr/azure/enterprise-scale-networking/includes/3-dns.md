@@ -6,10 +6,10 @@ Fast and reliable DNS resolution is required for most applications to function w
 
 ## Recommendations
 
-If you need only resolution inside an Azure virtual network, use Azure Private DNS to minimize your operational and administrative effort. For cross-premises resolution, deploy at least two DNS resolvers per Azure region into an Azure virtual network. Configure the virtual networks to use those resolvers. This allows for DNS resolution to not be affected by latency or be offline because of a single VM failure. Use zone-redundant services where available.
+If you only need resolution inside an Azure virtual network, you can use Azure Private DNS to minimize your operational and administrative effort. For cross-premises resolution, deploy at least two DNS resolvers per Azure region into an Azure virtual network. Configure the virtual networks to use those resolvers. This allows for DNS resolution to not be affected by latency or be offline because of a single VM failure. Use zone-redundant services where available.
 
 Use conditional forwarders with Azure Private DNS so that on-premises servers can resolve Azure VMs and platform as a service (PaaS) service names.
 
-Enable DNS autoregistration for Azure VMs, so VMs can locate each other by name.
+Enable DNS autoregistration for Azure VMs so they can locate each other by name.
 
 Use an Azure Private DNS zone in the global connectivity subscription. You might need more zones for services such as Azure Private Link.

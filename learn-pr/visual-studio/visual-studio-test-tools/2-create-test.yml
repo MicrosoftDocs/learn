@@ -7,6 +7,7 @@ metadata:
   description: Learn to create a test project, add a reference, and write a test.
   author: kendrahavens
   ms.author: chnoring
+  manager: jmartens
   ms.custom: team=nextgen
   ms.date: 07/19/2021
   ms.topic: interactive-tutorial

@@ -1,4 +1,4 @@
-In this unit, we look Azure Spring Cloud's Application Insights features, to better understand microservices issues.
+In this unit, we look Azure Spring Apps's Application Insights features, to better understand microservices issues.
 
 We now have a complete microservices stack:
 
@@ -10,7 +10,7 @@ However, even with only those two components, it already is quite challenging to
 To solve that issue, we're going to use Application Performance Monitoring (APM):
 
 1. Go to [the Azure portal](https://portal.azure.com/?WT.mc_id=azurespringcloud-mslearn-judubois).
-2. Go to the overview page of your Azure Spring Cloud cluster and select **Application Insights** in the menu.
+2. Go to the overview page of your Azure Spring Apps cluster and select **Application Insights** in the menu.
 3. This setting should already be on **Enable**.
 4. You'll have access to an **application map**, storing your tracing data.
 

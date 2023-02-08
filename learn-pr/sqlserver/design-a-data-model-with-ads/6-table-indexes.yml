@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.design-a-data-model-with-ads.table-indexes
+title: Table indexes
+metadata:
+  title: Table indexes
+  description: "Learn about index types in Azure SQL Database. Learn about clustered indexes, columnstore indexes and full text indexes."
+  ms.date: 12/29/2022
+  author: JetterMcTedder
+  ms.author: bspendolini
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+content: |
+  [!include[](includes/6-table-indexes.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: What type of index is created when a primary key is added to a table?
+    choices:
+    - content: Nonclustered 
+      isCorrect: false
+      explanation: Noncluistered indexes can be added on non-primary key columns
+    - content: Clustered
+      isCorrect: true
+      explanation: When a primary key is created, a clustered index (rowstore or columnstore) is created.
+    - content: B+ tree
+      isCorrect: false
+      explanation: A B+ tree is an index structure used by rowstore indexes and isn't a type of index.
+
+  - content: What use case is a clustered columnstore index best used for?
+    choices:
+    - content: Transaction Processing
+      isCorrect: false
+      explanation: While a nonclustered columnstore index can be used here, rowstore indexes may better suit this use case.
+    - content: Image Storage
+      isCorrect: false
+      explanation: Columnstore indexes wouldn't help with the storage of binary data or data kept on the file system.
+    - content: Data Warehouses
+      isCorrect: true
+      explanation:  Clustered columnstore indexes use column-based data storage to help with analytical queries that are run in data warehouses.

@@ -4,30 +4,28 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/25/2022
+  ms.date: 11/21/2022
   author: wwlpublish
   ms.author: tsheppard
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/9-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "How often should you download content from the [Learning Download Center](https://aka.ms/ldc) (LDC) to ensure you have the most up-to-date course materials?"
+  - content: "How often should you download content from the Learning Download Center (LDC) to ensure you have the most up-to-date course materials?"
     choices:
     - content: "Every three years"
       isCorrect: false
-      explanation: "Incorrect. The tech world is constantly changing so the curriculum content is updated to match. By downloading the course materials quarterly or before teaching the course, you know you have the most up-to-date materials."
+      explanation: "Incorrect. The tech world is constantly changing so the curriculum content is updated to match. By downloading the course materials quarterly or before teaching the course you know you have the most up-to-date materials."
     - content: "Once a year"
       isCorrect: false
-      explanation: "Incorrect. The tech world is constantly changing so the curriculum content is updated to match. By downloading the course materials quarterly or before teaching the course, you know you have the most up-to-date materials."
+      explanation: "Incorrect. The tech world is constantly changing so the curriculum content is updated to match. By downloading the course materials quarterly or before teaching the course you know you have the most up-to-date materials."
     - content: "Quarterly"
       isCorrect: true
-      explanation: "Correct. The tech world is constantly changing so the curriculum content is updated to match. By downloading the course materials each quarter or before teaching the course, you know you have the most up-to-date materials."
+      explanation: "Correct. The tech world is constantly changing so the curriculum content is updated to match. By downloading the course materials each quarter or before teaching the course you know you have the most up-to-date materials."
   - content: "Which tool is great for giving students a visual representation of topics?"
     choices:
     - content: "The Textbook"
@@ -41,12 +39,12 @@ quiz:
       explanation: "Incorrect. Flash cards contain a small amount of information, held up for students to see, as an aid to learning, however the Microsoft Whiteboard can help people visualize a process and increase collaboration by allowing participants to easily add ideas with sticky notes or colored markers."
   - content: "Which supplemental resource is a great way to bring a module to life in the AI-900 Microsoft Azure AI Fundamentals course?"
     choices:
-    - content: "Microsoft Customer Success Stories"
+    - content: "Microsoft Learn AI demos"
       isCorrect: true
-      explanation: "Correct. Microsoft Customer Success Stories can be used to provide case studies and examples to bring module concepts to life. Instructors are encouraged to incorporate customer success stories throughout the AI-900 Microsoft Azure AI Fundamentals course."
+      explanation: "Correct. Incorporating Microsoft Learn AI interactive demos can showcase a selection of the capabilities of the Microsoft AI platform and bring module concepts to life. Instructors are encouraged to incorporate demos throughout the AI-900 Microsoft Azure AI Fundamentals course."
     - content: "Reviewing concepts from previous modules and courses"
       isCorrect: false
-      explanation: "Incorrect. The correct answer is a) Microsoft Customer Success Stories. Microsoft Customer Success Stories can be used to provide case studies and examples to bring module concepts to life. Instructors are encouraged to incorporate customer success stories throughout the AI-900 Microsoft Azure AI Fundamentals course."
-    - content: "The Textbook"
+      explanation: "Incorrect. While reviewing concepts from previous modules and courses can help reinforce concepts, incorporating Microsoft Learn AI interactive demos can showcase a selection of the capabilities of the Microsoft AI platform and bring module concepts to life. Instructors are encouraged to incorporate demos throughout the AI-900 Microsoft Azure AI Fundamentals course."
+    - content: "GitHub"
       isCorrect: false
-      explanation: "Incorrect. The correct answer is a) Microsoft Customer Success Stories. Microsoft Customer Success Stories can be used to provide case studies and examples to bring module concepts to life. Instructors are encouraged to incorporate customer success stories throughout the AI-900 Microsoft Azure AI Fundamentals course."
+      explanation: "Incorrect. GitHub is an Internet hosting service for software development and version control using Git. Incorporating Microsoft Learn AI interactive demos can showcase a selection of the capabilities of the Microsoft AI platform and bring module concepts to life. Instructors are encouraged to incorporate demos throughout the AI-900 Microsoft Azure AI Fundamentals course."

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.teach-azure-204-develop-solution-microsoft-azure-academic-programs.explore-best-practices-for-module-1
+title: Explore best practices for module 1
+metadata:
+  title: Explore best practices for module 1
+  description: "Explore best practices for module 1"
+  ms.date: 11/18/2022
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 23
+content: |
+  [!include[](includes/4-explore-best-practices-for-module-1.md)]

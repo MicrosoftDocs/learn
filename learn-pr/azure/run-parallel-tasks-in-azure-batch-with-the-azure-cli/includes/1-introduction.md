@@ -4,14 +4,14 @@ Imagine you're a software developer at a non-profit organization whose mission i
 
 In this module, you'll learn about using Azure Batch to create and run parallel tasks with the Azure CLI, and how to use the CLI to check the status of Batch jobs and tasks. This module also describes how to use the standalone Batch Explorer tool to monitor ongoing jobs.
 
-By the end of this module, you will be able to create, execute, and monitor batch jobs.
+By the end of this module, you'll be able to create, execute, and monitor batch jobs.
 
 ## Learning objectives
 
 In this module, you will:
 
-- Create an Azure Batch job in the Azure CLI
-- Run an Azure Batch job in the Azure CLI
+- Create a Batch job in the Azure CLI
+- Run a Batch job in the Azure CLI
 - Check the status and results of a Batch job in the Azure CLI
 - Monitor a Batch job with Batch Explorer
 

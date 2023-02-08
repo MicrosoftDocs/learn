@@ -4,11 +4,11 @@ In this module, you'll review the narrative that spans the majority of the Learn
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you'll:
 
-- Understand common roadblocks that prevent adoption success
-- Evaluate one or more guides that can help you get things moving or moving faster
-- Get started on the proper course of action by using shared guidance and related Learn modules
+- Understand common roadblocks that prevent adoption success.
+- Evaluate one or more guides that can help you get things moving or moving faster.
+- Get started on the proper course of action by using shared guidance and related Learn modules.
 
 ## Prerequisites
 

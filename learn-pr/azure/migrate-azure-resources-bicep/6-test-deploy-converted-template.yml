@@ -5,7 +5,7 @@ metadata:
   unitType: learning-content
   title: Test and deploy your converted template
   description: Learn about the test and deploy phases of the recommended workflow for migrating your Azure resources to Bicep.
-  ms.date: 08/17/2021
+  ms.date: 12/01/2022
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial

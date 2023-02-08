@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.teach-azure-204-develop-solution-microsoft-azure-academic-programs.bring-together
+title: 'Bring it all together '
+metadata:
+  title: Bring it all together
+  description: "Bring it all together"
+  ms.date: 11/18/2022
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/16-bring-together.md)]

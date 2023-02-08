@@ -3,14 +3,14 @@ uid: learn.student-evangelism.intro-to-python
 metadata:
   title: Introduction to Python
   description: Learn about the Python programming language, how to execute statements and scripts, declare variables, and create a basic Python app.
-  ms.date: 06/14/2021
+  ms.date: 1/23/2023
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-python
-  ms.custom: team=nextgen
+  ms.custom: team=nextgen, py-fresh-zinc
 title: Introduction to Python
-summary: Learn how to write basic Python code, declare variables, and work with
+summary: Learn how to write a few lines of Python code, declare variables, and work with
   console input and output
 abstract: |
   In this module, you will:
@@ -18,7 +18,8 @@ abstract: |
   - Use the Python interpreter to execute statements and scripts
   - Learn how to declare variables
   - Build a simple Python app that takes input and produces output
-prerequisites: None
+prerequisites: |
+ - An Azure account. Learn how to create a free account in [Create an Azure account](/training/modules/create-an-azure-account/).
 iconUrl: /training/achievements/intro-to-python.svg
 levels:
   - beginner

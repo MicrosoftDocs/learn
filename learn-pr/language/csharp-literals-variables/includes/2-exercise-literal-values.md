@@ -2,18 +2,18 @@ In this exercise, you'll print out messages containing other types of data and l
 
 ## What is a literal value?
 
-A literal value is a hard-coded value that never changes. Previously, we displayed a literal string to the Output pane. In other words, we literally wanted that string of alphanumeric characters `H`, `e`, `l`, `l`, `o`, and so on, displayed in the Output window.
+A literal value is a hard-coded value that never changes. In a previous module, we displayed a literal string to the Output pane. In other words, we literally wanted that string of alphanumeric characters `H`, `e`, `l`, `l`, `o`, and so on, displayed in the Output window.
 
-The string data type is used whenever you have alphanumeric words, phrases, or data for presentation, not calculation. More about that in a moment.
+The string data type is used whenever you have alphanumeric words, phrases, or data for presentation, not calculation; more about that in a moment.
 
 What other kinds of literal data can we print to the Output pane?
 
 ## Exercise - Print out different literal data types
 
-There are many data types in C#. But as you're getting started, you only need to know about five or six data types since they cover most scenarios. Let's display a literal instance of data type to the output pane.
+There are many data types in C#, but as you're getting started, you only need to know about five or six data types because they cover most scenarios. Let's display a literal instance of data type to the output pane.
 
 > [!NOTE]
-> You may notice as you begin to work in the code window that it marks certain syntax in different colors to indicate keywords, operators, data types and more. Begin to take notice of the colors. It can help you spot syntax errors as you enter characters, and can help you understand the code more effectively.
+> You may notice as you begin to work in the code window that it marks certain syntax in different colors to indicate keywords, operators, data types, and more. Begin to take notice of the colors. They can help you spot syntax errors as you enter characters, and can help you understand the code more effectively.
 
 ### Step 1: Write a char literal to the console
 
@@ -25,21 +25,27 @@ Add the following line of code in the code editor:
 Console.WriteLine('b');
 ```
 
+If you run the code, you'll get the following output:
+
+```output
+b
+```
+
 If you enter the following code:
 
 ```csharp-interactive
 Console.WriteLine('Hello World!');
 ```
 
-You would get the following error:
+You'd get the following error when you run the code:
 
 ```output
 (1,19): error CS1012: Too many characters in character literal
 ```
 
-The C# compiler was expecting a single character (since you used the character literal syntax) but you supplied 12 characters instead!
+The C# compiler was expecting a single character (since you used the character literal syntax), but you supplied 12 characters instead!
 
-Just like the string data type, you use `char` whenever you have a single alphanumeric character for presentation (not calculation).
+Just like the string data type, you'll use `char` whenever you have a single alphanumeric character for presentation (not calculation).
 
 The term *char* is short for *character*. In C#, they're officially referred to as "char", but frequently referred to as a "character".
 
@@ -114,9 +120,9 @@ Data types play a central role in C#. In fact, the emphasis on data types is one
 
 Earlier we said that `string`s and `char`s are used for "presentation, not calculation". If you need to perform a mathematical operation on numeric values, you should use an `int` or `decimal`. If you have data that's used for presentation or reference purposes only, you should use a `string` or `char` data type.
 
-Suppose you needed to collect data from a user like a phone number or postal code. Depending on the country/region where you live, that data may consist of numeric characters. However, since you rarely perform mathematical calculations on phone numbers and postal codes, you should prefer to use a `string` data type when working with them.
+Suppose you needed to collect data from a user, like a phone number or postal code. Depending on the country/region where you live, that data may consist of numeric characters. However, since you rarely perform mathematical calculations on phone numbers and postal codes, you should prefer to use a `string` data type when working with them.
 
-We could say the same about `bool`. If you need to work with the words `"true"` and `"false"` in your application, you would use a `string`. However, if you need to work with the concept of `true` or `false` when performing an evaluation, you use a `bool`. This should become clearer as we perform evaluations in other modules.
+We could say the same about `bool`. If you need to work with the words `"true"` and `"false"` in your application, you'd use a `string`. However, if you need to work with the concept of `true` or `false` when performing an evaluation, you'd use a `bool`. This should become clearer as we perform evaluations in other modules.
 
 It's important to know that these values may look like their string literal equivalents. In other words, you may think these statements are the same:
 

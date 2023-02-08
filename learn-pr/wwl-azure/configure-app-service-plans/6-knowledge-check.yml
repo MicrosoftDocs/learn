@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/19/2022
+  ms.date: 01/29/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ content: |
 quiz:
   title: ""
   questions:
-  - content: "The infrastructure team is responsible for managing a production web app. The app requires scaling to 5 instances and 100 GB of disk storage. The most cost efficient solution is desired. Which App Service Plan would meet the requirements?"
+  - content: "Which App Service Plan can you implement to support the Production team's requirements?"
     choices:
     - content: "Basic"
       isCorrect: false
@@ -27,26 +27,26 @@ quiz:
       explanation: "Incorrect. The Standard App Service plan doesn't meet the requirements."
     - content: "Premium"
       isCorrect: true
-      explanation: "Correct. The Premium App Service plan meets the requirements."
-  - content: "Which of following provides more CPU, memory, or disk space without adding more virtual machines?"
+      explanation: "Correct. The Premium App Service plan meets the requirements of scaling to 5 instances and 100 GB of disk storage."
+  - content: "What scaling option provides more CPU, memory, or disk space without adding more virtual machines?"
     choices:
     - content: "Scale up"
       isCorrect: true
-      explanation: "Correct. Scale up gives more CPU, memory, and disk space. Scale up by changing the pricing tier of the App Service plan."
+      explanation: "Correct. Scale up gives more CPU, memory, and disk space. You can scale up by changing the pricing tier of the App Service plan."
     - content: "Scale out"
       isCorrect: false
-      explanation: "Incorrect. Scale out increases the number of virtual machine instances that run the app."
+      explanation: "Incorrect. Scale out increases the number of virtual machine instances that run an application."
     - content: "Scale back"
       isCorrect: false
-      explanation: "Incorrect. Scale back isn't a valid choice."
-  - content: "Triggering a webhook at 8am on Saturday is an example of which of the following?"
+      explanation: "Incorrect. Scale back isn't a valid scaling option. The options are scale in and out, or scale up and down."
+  - content: "Triggering a webhook at 8:00 AM on Saturday is an example of what type of rule?"
     choices:
     - content: "A metric-based rule."
       isCorrect: false
       explanation: "Incorrect. Metric-based rules measure application load and add or remove virtual machines based on that load."
-    - content: "An app-insight rule."
-      isCorrect: false
-      explanation: "Incorrect. App-insight rule isn't a valid choice."
     - content: "A time-based rule."
       isCorrect: true
       explanation: "Correct. Time-based rules allow scaling based on time patterns."
+    - content: "An app-insight rule."
+      isCorrect: false
+      explanation: "Incorrect. An _app-insight_ rule isn't a valid rule option."

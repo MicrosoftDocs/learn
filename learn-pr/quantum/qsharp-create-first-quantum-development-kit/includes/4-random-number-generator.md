@@ -6,7 +6,7 @@ First, let's see how classical code fits in with Q#.
 
 Yes, you can. Quantum computers perform specialized tasks. You don't use a quantum computer for everything because, for many tasks, classical computers work fine.
 
-Just like a graphics processing unit (GPU) or other specialized hardware, you want to use a quantum computer for tasks they're best suited for; in this case, you want to produce purely random bits.
+Just like a graphics processing unit (GPU) or other specialized hardware, you want to use a quantum computer for the tasks they're best suited for. In this case, you want to produce purely random bits.
 
 This is why Q# also enables you to write classical code that resembles programming languages you already know.
 
@@ -122,4 +122,4 @@ Congratulations! Now you know how to combine classical logic with Q# to create a
 
 Modify the program to also require the generated random number to be greater than some minimum number, `min`, instead of zero.
 
-In the next unit, you will learn more about the structure Q# programs in general and the basic building blocks of quantum computing.
+In the next unit, you'll learn more about the structure Q# programs in general and the basic building blocks of quantum computing.

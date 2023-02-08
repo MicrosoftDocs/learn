@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-app-registration.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/07/2023
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/10-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following directories is maintained by Microsoft and used to publish applications?"
+    choices:
+    - content: "SaaS directory"
+      isCorrect: false
+      explanation: "Incorrect. Application publishers/vendors who integrate with Azure AD are required to have a SaaS directory."
+    - content: "Single-sign-on app connected directory"
+      isCorrect: false
+      explanation: "Incorrect. Apps connected for single-sign-on are added by the user."
+    - content: "App gallery directory"
+      isCorrect: true
+      explanation: "Correct. The two directories that Microsoft maintains are the App gallery directory and the Microsoft services directory."
+  - content: "Which one of the following is a best practice for building multi-tenant apps?"
+    choices:
+    - content: "Follow the principle of least user access to ensure that your app only requests permissions it actually needs."
+      isCorrect: true
+      explanation: "- Provide appropriate names and descriptions for any permissions you expose as part of your app. This helps users and admins know what they're agreeing to when they attempt to use your app's APIs."
+    - content: "Test your app in each tenant to ensure functionality."
+      isCorrect: false
+      explanation: "Incorrect. You should test your app in a tenant that has configured Conditional Access policies. Testing in every tenant isn't a best practice."
+    - content: "Use names and descriptions that are only meaningful to your team."
+      isCorrect: false
+      explanation: "Incorrect. Provide appropriate names and descriptions for any permissions you expose as part of your app. This helps users and admins know what they're agreeing to when they attempt to use your app's APIs."
+  - content: "Which two ways do you declare app roles by using the Azure portal?"
+    choices:
+    - content: "Certificates and secrets."
+      isCorrect: false
+      explanation: "Incorrect. Certificates can be used as secrets to prove the applications identity when requesting a token. Also can be referred to as public keys. A secret string that the application uses to prove its identity when requesting a token. Also can be referred to as application password."
+    - content: "Use the App manifest editor and API permissions."
+      isCorrect: false
+      explanation: "Incorrect. Applications are authorized to call APIs when they're granted permissions by users/admins as part of the consent process. The list of configured permissions should include all the permissions the application needs"
+    - content: "Use the App roles and App manifest editor."
+      isCorrect: true
+      explanation: "Correct. Application roles are used to assign permissions to users. You define app roles by using the Azure portal. When a user signs into the application, Azure AD emits a roles claim for each role that the user has been granted individually to the user and from their group membership. The App roles and Manifest editor are found in the Manage section of the app."

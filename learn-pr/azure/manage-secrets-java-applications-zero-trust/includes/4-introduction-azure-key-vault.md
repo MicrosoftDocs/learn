@@ -1,6 +1,6 @@
 Azure Key Vault is a Secrets store provided by
 Azure. It's integrated with all major Azure services, making it easy to manage secrets with Azure
-App Services, Azure Kubernetes Services, or Azure Spring Cloud.
+App Services, Azure Kubernetes Services, or Azure Spring Apps.
 
 ## Using Azure Key Vault to enhance data protection and compliance
 

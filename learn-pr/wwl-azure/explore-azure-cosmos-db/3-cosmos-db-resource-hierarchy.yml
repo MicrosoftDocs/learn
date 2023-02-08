@@ -4,13 +4,11 @@ title: Explore the resource hierarchy
 metadata:
   title: Explore the resource hierarchy
   description: "Explore the resource hierarchy"
-  ms.date: 11/03/2022
+  ms.date: 02/06/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/3-cosmos-db-resource-hierarchy.md)]

@@ -27,6 +27,9 @@ roles:
 - student
 products:
 - azure
+- azure-blueprints
+- azure-policy
+- microsoft-purview
 subjects:
 - cloud-computing
 - information-protection-governance

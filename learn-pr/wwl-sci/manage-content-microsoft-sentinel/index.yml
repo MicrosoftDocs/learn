@@ -3,7 +3,7 @@ uid: learn.wwl.manage-content-microsoft-sentinel
 metadata:
   title: Manage content in Microsoft Sentinel
   description: "Manage content in Microsoft Sentinel"
-  ms.date: 07/01/2022
+  ms.date: 11/22/2022
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
@@ -13,10 +13,10 @@ summary: By the end of this module, you'll be able to manage _content_ in Micros
 abstract: |
   After completing this module, you'll be able to:
   *   Install a content hub solution in Microsoft Sentinel
-  *   Connect a github repository to Microsoft Sentinel
+  *   Connect a GitHub repository to Microsoft Sentinel
 prerequisites: |
   Azure and Microsoft Sentinel experience.
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/manage-content-microsoft-sentinel.svg
 levels:
 - intermediate
 roles:

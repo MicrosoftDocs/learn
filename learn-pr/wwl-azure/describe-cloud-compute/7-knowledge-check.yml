@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/30/2022
+  ms.date: 01/24/2023
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
@@ -19,7 +19,7 @@ quiz:
   questions:
   - content: "What is cloud computing?"
     choices:
-    - content: "Deliver of computing services over the internet."
+    - content: "Delivery of computing services over the internet."
       isCorrect: true
       explanation: "Cloud computing is the delivery of computing services over the internet."
     - content: "Delivery of storage services over the internet."

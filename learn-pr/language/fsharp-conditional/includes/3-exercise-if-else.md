@@ -11,18 +11,18 @@ Blackjack players typically are dealt face cards called Jack, Queen, King, and A
     cd Cards
     ```
 
-1. Open the *Program.fs* file. In the `main()` method, add the following code:
+1. Open the *Program.fs* file. Replace the contents with the following code:
 
    ```fsharp
    let cardNo = 12
     
-    let cardDescription = 
+   let cardDescription = 
       if cardNo = 1 || cardNo = 14 then "Ace"
       elif cardNo = 11 then "Jack"
       elif cardNo = 12 then "Queen"
       elif cardNo = 13 then "King"
       else string cardNo
-    printfn "%s" cardDescription
+   printfn "%s" cardDescription
    ```
 
 1. Run the project with `dotnet run`:

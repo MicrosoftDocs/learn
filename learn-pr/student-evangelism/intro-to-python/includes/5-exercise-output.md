@@ -1,10 +1,10 @@
-In this exercise, you will use the REPL to declare variables and run statements. 
+In this exercise, you'll use the REPL to declare variables and run statements. 
 
 ## Try your first Python statement
 
 Python supports an interactive console experience, which allows you to type in commands and see the results immediately.
 
-1. In a console, type `python` to start the Python interpreter in the interactive mode.
+1. In the Cloud Shell console, type `python` to start the Python interpreter in the interactive mode.
 
    ```bash
    python
@@ -13,8 +13,8 @@ Python supports an interactive console experience, which allows you to type in c
    You should see output that looks similar to:
 
     ```output
-    Python 3.5.2 (default, Nov 12 2018, 13:43:14)
-    [GCC 5.4.0 20160609] on linux
+    Python 3.9.14 (main, Oct 29 2022, 22:18:10)
+    [GCC 11.2.0] on linux
     Type "help", "copyright", "credits" or "license" for more information.
     >>>
     ```

@@ -1,6 +1,6 @@
 ## Template references
 
-You can export reusable sections of your pipeline to a separate file. These individual files are known as templates. Azure Pipelines supports four kinds of templates:
+You can export reusable sections of your pipeline to a separate file. These individual files are known as templates.
 
 Azure Pipelines supports four types of templates:
 
@@ -13,13 +13,13 @@ You can also use templates to control what is allowed in a pipeline and define h
 
  -  Parameter
 
-Templates themselves can include other templates. Azure Pipelines supports a maximum of 50 individual template files in a single pipeline.
+Templates themselves can include other templates. Azure Pipelines supports 50 individual template files in a single pipeline.
 
 ## Stage templates
 
 You can define a set of stages in one file and use it multiple times in other files.
 
-In this example, a stage is repeated twice for two different testing regimes. The stage itself is specified only once.
+In this example, a stage is repeated twice for two testing regimes. The stage itself is specified only once.
 
 ```YAML
 # File: stages/test.yml
@@ -35,7 +35,7 @@ stages:
 
   - job: ${{ parameters.name }}_Windows
     pool:
-      vmImage: vs2017-win2016
+      vmImage: windows-latest
     steps:
 
     - script: npm install
@@ -43,7 +43,7 @@ stages:
 
   - job: ${{ parameters.name }}_Mac
     pool:
-      vmImage: macos-10.14
+      vmImage: macOS-latest
     steps:
 
     - script: npm install
@@ -108,28 +108,28 @@ jobs:
   parameters:
     name: macOS
     pool:
-      vmImage: 'macOS-10.14'
+      vmImage: 'macOS-latest'
 
 
 - template: jobs/build.yml  # Template reference
   parameters:
     name: Linux
     pool:
-      vmImage: 'ubuntu-16.04'
+      vmImage: 'ubuntu-latest'
 
 
 - template: jobs/build.yml  # Template reference
   parameters:
     name: Windows
     pool:
-      vmImage: 'vs2017-win2016'
+      vmImage: 'windows-latest'
     sign: true  # Extra step on Windows only
 
 ```
 
 ## Step templates
 
-You can define a set of steps in one file and use it multiple times in another file.
+You can define a set of steps in one file and use it multiple times in another.
 
 ```YAML
 # File: steps/build.yml
@@ -148,7 +148,7 @@ jobs:
 
 - job: macOS
   pool:
-    vmImage: 'macOS-10.14'
+    vmImage: 'macOS-latest'
   steps:
 
   - template: steps/build.yml # Template reference
@@ -156,7 +156,7 @@ jobs:
 
 - job: Linux
   pool:
-    vmImage: 'ubuntu-16.04'
+    vmImage: 'ubuntu-latest'
   steps:
 
   - template: steps/build.yml # Template reference
@@ -164,7 +164,7 @@ jobs:
 
 - job: Windows
   pool:
-    vmImage: 'vs2017-win2016'
+    vmImage: 'windows-latest'
   steps:
 
   - template: steps/build.yml # Template reference
@@ -183,7 +183,7 @@ In this example, a set of variables is repeated across multiple pipelines. The v
 variables:
 
 - name: vmImage
-  value: vs2017-win2016
+  value: windows-latest
 
 - name: arch
   value: x64

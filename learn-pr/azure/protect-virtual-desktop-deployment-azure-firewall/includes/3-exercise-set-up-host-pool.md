@@ -99,7 +99,7 @@ Here, you'll create an Azure VM to act as a session host for the host pool.
     -Size 'Standard_DS1_v2' `
     -VirtualNetworkName hostVNet `
     -SubnetName hostSubnet `
-    -Image "MicrosoftWindowsDesktop:Windows-10:20h1-evd-g2:latest" 
+    -Image "MicrosoftWindowsDesktop:Windows-10:21h1-evd-g2:latest" 
 
     ```
 

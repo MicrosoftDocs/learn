@@ -29,4 +29,4 @@ During this lab, you'll complete the following exercises:
  -  Exercise 1: Working with Azure Artifacts.
 
 [:::image type="content" source="../media/launch-exercise-25d42425.png" alt-text="Screenshot of a launch button which will take you to the lab.":::
-](https://microsoftlearning.github.io/AZ400-DesigningandImplementingMicrosoftDevOpsSolutions/Instructions/Labs/AZ400_M08_L17_Package_Management_with_Azure_Artifacts.html)
+](https://microsoftlearning.github.io/AZ400-DesigningandImplementingMicrosoftDevOpsSolutions/Instructions/Labs/AZ400_M08_L18_Package_Management_with_Azure_Artifacts.html)

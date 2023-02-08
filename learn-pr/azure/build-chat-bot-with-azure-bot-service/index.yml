@@ -29,8 +29,6 @@ roles:
 - student
 products:
 - azure
-- vs
-- vs-code
 - azure-bot-service
 subjects:
 - chatbot

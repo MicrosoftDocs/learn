@@ -1,5 +1,6 @@
-In this module, you learned to write optimized Kusto queries combining data from several tables and gain further insights as a result of enriching the data.
-You used the `join`, `lookup`, `union` operators to combine data from several tables, and the `materialize()` function to cache results used more than once in a query, and other functions to answer questions about sales data.
+In this module, you learned how to write optimized Kusto queries that combine data from several tables. You gained further insights as a result of enriching the data.
+
+You used the `join`, `lookup`, and `union` operators to combine data from several tables, the `materialize()` function to cache results that are used more than once in a query, and other functions to answer questions about sales data.
 
 ## References
 

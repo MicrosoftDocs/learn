@@ -2,10 +2,10 @@ The Batch Explorer lets you view the status of jobs in the Azure Batch service.
 
 As the solution architect, you'll need a way of visualizing the progress of large numbers of nodes and tasks being used to process water purification images in parallel.
 
-Here, you will execute a job in Azure Batch and then use the Batch Explorer to view its progress.
+Here, you'll execute a job in Azure Batch and then use the Batch Explorer to view its progress.
 
 >[!IMPORTANT]
->The exercises in this module are optional. To complete the exercises, you will need your own Azure subscription.
+>The exercises in this module are optional. To complete the exercises, you'll need your own Azure subscription.
 
 ## Use the Batch Explorer to analyze a job
 
@@ -29,7 +29,7 @@ For scenarios in which you may have hundreds or thousands of tasks running in va
 
 1. Go to the **Jobs** section under **Features**.
 
-1. Click on the active job.
+1. Select the active job.
 
     A panel opens up showing the status of the job. You haven't created any tasks and nothing is running so this panel will be empty.
 
@@ -49,4 +49,4 @@ For scenarios in which you may have hundreds or thousands of tasks running in va
 
 1. Go back to Batch Explorer. Notice, in the top-right corner, tasks being queued, an indication of progress, and the number of tasks that have succeeded or failed.
 
-1. Click on the refresh wheel to the right of the 'Filter by task ID' box. As tasks complete, details of the task including the exit code appear here.
+1. Select the refresh wheel to the right of the **Filter by task ID** box. As tasks complete, details of the task including the exit code appear here.

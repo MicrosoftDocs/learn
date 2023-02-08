@@ -23,7 +23,7 @@ First, you'll create the Azure Batch account and pool of worker nodes for your t
 
 ### Create the Azure Batch account
 
-1. In portal, open the cloud shell by clicking **>_** in the top menu. Use the dropdown at the top of the terminal window to make sure you're in **Bash**.
+1. In portal, open the Cloud Shell by clicking **>_** in the top menu. Use the dropdown at the top of the terminal window to make sure you're in **Bash**.
 
 1. Create environment variables for your resource group and batch resource.
     ```azurecli
@@ -69,8 +69,8 @@ First, you'll create the Azure Batch account and pool of worker nodes for your t
      --query "allocationState"
     ```
 
-    When this query shows that the nodes are "steady", they are ready to work. While they show as "resizing", they are being provisioned. You can use the up arrow key to repeat the most recent command in the Cloud Shell if you want to query the status of the nodes more than once.
-    
+    When this query shows that the nodes are "steady", they're ready to work. While they show as "resizing", they're actually being provisioned. You can use the up arrow key to repeat the most recent command in the Cloud Shell if you want to query the status of the nodes more than once.
+
 1. Run the following command to create a "Batch job", a logical grouping for all the tasks that will run on your nodes:
 
     ```azurecli
@@ -91,9 +91,9 @@ First, you'll create the Azure Batch account and pool of worker nodes for your t
     done
     ```
 
-    This loop creates a series of numbered Batch tasks, each of which outputs information about the task ID and node ID involved. By examining what's happening here closely, you can see quite a few characteristics of the way Azure Batch works. Tasks get automatically scheduled onto nodes with available capacity. However, the environment variables we're using (AZ_BATCH_TASK_ID and AZ_BATCH_NODE_ID), to show information about which task is being run on which node, are only available in the context of the 'task user', a default account created on each node in order to run tasks. Also, the --command-line argument does not directly run under a shell, so you have to explicitly invoke the shell using "/bin/bash -c" in order to use commands like printenv and grep.
+    This loop creates a series of numbered Batch tasks, each of which outputs information about the task ID and node ID involved. By examining what's happening here closely, you can see quite a few characteristics of the way Azure Batch works. Tasks get automatically scheduled onto nodes with available capacity. However, the environment variables we're using (AZ_BATCH_TASK_ID and AZ_BATCH_NODE_ID), to show information about which task is being run on which node, are only available in the context of the 'task user', a default account created on each node in order to run tasks. Also, the `--command-line` argument doesn't directly run under a shell, so you have to explicitly invoke the shell using "/bin/bash -c" in order to use commands like printenv and grep.
 
-    This loop completes the Azure Batch job implementation. We will leave the Azure Batch account and pool of worker nodes in place for use in the next module, but we will delete the Batch job. Because the Batch job acts as a container for its Batch tasks, the tasks are also deleted.
+    This loop completes the Azure Batch job implementation. We'll leave the Azure Batch account and pool of worker nodes in place for use in the next module, but we'll delete the Batch job. Because the Batch job acts as a container for its Batch tasks, the tasks are also deleted.
 
 1. Run the following command in the Cloud Shell in order to delete the Batch job:
 

@@ -3,7 +3,7 @@ uid: learn.azure.publish-static-web-app-and-api.3-static-web-apps
 metadata:
   title: Plan your Azure Static Web App
   description: Plan your Azure Static Web App
-  ms.date: 06/17/2021
+  ms.date: 11/18/2022
   author: johnpapa
   ms.author: jopapa
   ms.topic: interactive-tutorial
@@ -20,10 +20,10 @@ quiz:
       choices:
         - content: 'routes'
           isCorrect: false
-          explanation: 'The `routes` array is where you would put redirects or or other custom routing rules. '
+          explanation: Incorrect. 'The `routes` array is where you would put redirects or or other custom routing rules. '
         - content: 'responseOverrides'
           isCorrect: false
-          explanation: 'The `responseOverrides` section provides an opportunity to define a custom response when the server would otherwise return an error code.'
+          explanation: Incorrect. 'The `responseOverrides` section provides an opportunity to define a custom response when the server would otherwise return an error code.'
         - content: 'navigationFallback'
           isCorrect: true
-          explanation: 'The `navigationFallback` section is where you define a server-side fallback route to serve the appropriate HTML page (which is generally the index.html for your client-side app).'
+          explanation: Correct. 'The `navigationFallback` section is where you define a server-side fallback route to serve the appropriate HTML page (which is generally the index.html for your client-side app).'

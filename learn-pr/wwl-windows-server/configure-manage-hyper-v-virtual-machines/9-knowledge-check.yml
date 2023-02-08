@@ -4,13 +4,15 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/26/2021
+  ms.date: 12/12/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
 azureSandbox: false
+labModal: false
 durationInMinutes: 5
+content: |
+  [!include[](includes/9-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
@@ -41,9 +43,9 @@ quiz:
     - content: ".vhd and .vhdx"
       isCorrect: false
       explanation: "That's incorrect. Shared virtual hard disks can be .vhdx format, but they can't be .vhd format."
-    - content: ".vhdx and .vhds"
+    - content: ".vhdx and.vhds"
       isCorrect: true
-      explanation: "That's correct. Shared virtual hard disks can be either .vhdx or a VHD Set, which is .vhds format."
+      explanation: "That's correct. Shared virtual hard disks can be either .vhdx or a VHD Set, which is.vhds format."
     - content: "Differencing and Dynamically expanding"
       isCorrect: false
-      explanation: "That's incorrect. Shared drives can be Dynamically expanding drives but can't be Differencing drives. Additionally, neither of these are disk formats; they are disk types."
+      explanation: "That's incorrect. Shared drives can be Dynamically expanding drives but can't be Differencing drives. Additionally, neither of these are disk formats; they're disk types."

@@ -1,4 +1,4 @@
-The C# programming language is similar to any human written or spoken language, inasmuch that you can choose different ways to express the same idea. Some words and phrases are more descriptive, accurate, or succinct than others. There are several ways to add branching logic in your application, and depending on the context, some are more expressive and succinct than others.
+The C# programming language is similar to any human written or spoken language, in that you can choose different ways to express the same idea. Some words and phrases are more descriptive, accurate, or succinct than others. There are several ways to add branching logic in your application, and depending on the context, some are more expressive and succinct than others.
 
 Suppose we wanted to add a feature to our application that displayed an employee's title at the company next to their name. However, since the title names change occasionally, we only store the employee's level, which is a numeric equivalent of their title.
 
@@ -6,7 +6,7 @@ When we want to display their title, we need to evaluate the numeric level and r
 
 There are several levels and matching titles. Occasionally, the company adds new levels and titles. If this happens before we can update our application, we need to use a generic title "Associate" until we can update our software.
 
-In this scenario, we could easily use an `if-elseif-else` branching construct. But if there are many possible levels and titles, the `switch` statement might be easier to read, understand, and modify.
+In this scenario, we could easily use an `if-elseif-else` branching construct. However, if there are many possible levels and titles, the `switch` statement might be easier to read, understand, and modify.
 
 In this module, you'll use the `switch-case` construct to add branching logic where you must match one variable or expression against many possible values.
 

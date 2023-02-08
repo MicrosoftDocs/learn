@@ -28,8 +28,8 @@ In this module, you'll learn about each threat category and its corresponding se
 
 In this module, you'll be able to:
 
-- Discuss each threat category in the threat-modeling framework
-- Learn about the security controls to help reduce or eliminate risk
+- Discuss each threat category in the threat-modeling framework.
+- Learn about the security controls to help reduce or eliminate risk.
 
 ## Prerequisites
 

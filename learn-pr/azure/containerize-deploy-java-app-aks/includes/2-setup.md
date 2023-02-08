@@ -1,9 +1,9 @@
-In this unit, you'll use the Azure CLI to create the Azure resources that will be needed in later units. 
+In this unit, you'll use the Azure CLI to create the Azure resources that will be needed in later units. Before you start entering commands, make sure Docker Desktop is installed and running.
 
 ## Using the Azure CLI, perform the following steps
 
 > [!NOTE]
-> In an effort to preserve time, you'll instruct Azure to provision the resources first and move on to the next unit. Azure Kubernetes Cluster creation can take up to 10 minutes. This can, optionally, run in your background while you proceed through the next units.
+> In an effort to preserve time, you'll instruct Azure to provision the resources first and move on to the next unit. Azure Kubernetes Cluster creation can take up to 10 minutes. This can, optionally, run in the background while you proceed through the next units.
 
 ### Authenticate with Azure Resource Manager
 
@@ -29,14 +29,14 @@ az account set --subscription "<YOUR_SUBSCRIPTION_ID>"
 
 ### Define local variables
 
-To simplify the commands that will be executed further down, set up the following environment variables:
+To simplify the commands that we'll execute later, set up the following environment variables:
 
 > [!NOTE]
 > You'll want to replace <YOUR_AZURE_REGION> with your region of choice, for example: eastus  
 >
-> You'll want to replace <YOUR_CONTAINER_REGISTRY> with a unique value as this is used to generate a unique FQDN (fully qualified domain name) for your Azure Container Registry when it is created, for example: someuniquevaluejavacontainerregistry
+> You'll want to replace <YOUR_CONTAINER_REGISTRY> with a unique value, because this is used to generate a unique FQDN (fully qualified domain name) for your Azure Container Registry when it is created; for example: someuniquevaluejavacontainerregistry.
 >
-> You'll want to replace <YOUR_UNIQUE_DNS_PREFIX_TO_ACCESS_YOUR_AKS_CLUSTER> with a unique value as this is used to generate a unique FQDN (fully qualified domain name) for your Azure Kubernetes Cluster when it is created, for example: someuniquevaluejavacontainerizationdemoaks
+> You'll want to replace <YOUR_UNIQUE_DNS_PREFIX_TO_ACCESS_YOUR_AKS_CLUSTER> with a unique value as this is used to generate a unique FQDN (fully qualified domain name) for your Azure Kubernetes Cluster when it is created, for example: `someuniquevaluejavacontainerizationdemoaks`.
 
 ```bash
 AZ_RESOURCE_GROUP=javacontainerizationdemorg
@@ -102,4 +102,4 @@ az aks create \
 ```
 
 > [!NOTE]
-> Azure Kubernetes Cluster creation can take up to 10 minutes, once you run the command above, you can optionally let it continue in that Azure CLI tab and move on to the next unit.
+> Azure Kubernetes Cluster creation can take up to 10 minutes. Once you run the command above, you can optionally let it continue in your Azure CLI tab and move on to the next unit.

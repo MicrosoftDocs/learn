@@ -24,7 +24,7 @@ Redundancy in the primary region can be provided as follows:
 
 	- Copies your data synchronously across three Azure availability zones in the primary region.
 
-	- Recommended by Microsoft for apps requiring high availability in the primary region and replicating to a secondary region.
+	- For applications requiring high availability, Microsoft recommends using ZRS in the primary region, and also replicating to a secondary region.
 
 >[!NOTE]
 > Each availability zone is a separate physical location with independent power, cooling, and networking.

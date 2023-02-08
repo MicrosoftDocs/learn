@@ -34,7 +34,7 @@ roles:
 - student
 - developer
 products:
-- vs-code
+- azure
 subjects:
 - development-tools
 modules:

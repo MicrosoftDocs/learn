@@ -1,4 +1,4 @@
-Your ultimate goal is to host your app in Azure. Azure Static Web Apps takes care of provisioning all the necessary Azure resources for you.
+Your ultimate goal is to host your app in Azure. Azure Static Web Apps takes care of provisioning all of the necessary Azure resources for you.
 
 However, before your app can be hosted, you need something to build your app as you make changes. Those changes could be via commits or pull requests to your repository. A key feature of Azure Static Web Apps is that it sets up a GitHub Actions workflow to build and publish your application.
 

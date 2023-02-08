@@ -50,13 +50,12 @@ If you have data stored in a relational database management system, you could tr
 - Azure SQL Database
 - Azure SQL Managed Instance
 
-If your relational data is on-premises, Azure Data Factory can also work with most relational database systems as sources. This includes MongoDB, MySQL, and Microsoft SQL Server.
+If your relational data is on-premises, Azure Data Factory can also work with most relational database systems as sources, including MongoDB, MySQL, and Microsoft SQL Server.
 
 ### Ingesting streaming data
 
-Does your organization generate real-time streaming data from devices, sensors, or applications? If so, then you'll want to capture that data on an event-by-event basis as the data is generated, and then ingest that data into Azure Data Lake Storage for processing and analysis. You can use the following tools to ingest streaming data:
+Does your organization generate real-time streaming data from devices, sensors, or applications? If so, you'll want to capture that data on an event-by-event basis as the data is generated. Then, ingest the data into Azure Data Lake Storage for processing and analysis. You can use the following tools to ingest streaming data:
 
-- Apache Storm on Azure HDInsight
 - Azure Stream Analytics
 
 ## Accessing stored data
@@ -102,7 +101,7 @@ As described in the following two sections, you use RBAC for *coarse-grained* (t
 
 ### RBAC
 
-RBAC in Azure uses role assignments to apply a collection of permissions to a security principal (that is, any entity that can be authenticated, such as a user account or service). When assigning a role to a security principal, you specify a role definition. A *role definition* is a set of permissions that lists the operations the security principal can perform. These include read, write, and delete. A role definition gives a security principal coarse-grained access. For example, a security principal might have a role assignment for read or write access to all data in a storage account, or in a container.
+RBAC in Azure uses role assignments to apply a collection of permissions to a security principal (that is, any entity that can be authenticated, such as a user account or service). When assigning a role to a security principal, you specify a role definition. A *role definition* is a set of permissions that lists the operations the security principal can perform. These permissions include read, write, and delete. A role definition gives a security principal coarse-grained access. For example, a security principal might have a role assignment for read or write access to all data in a storage account, or in a container.
 
 ### ACL
 

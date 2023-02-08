@@ -3,7 +3,7 @@ uid: learn.wwl.introduction-microsoft-365-threat-protection
 metadata:
   title: Introduction to Microsoft 365 threat protection
   description: "Introduction to Microsoft 365 threat protection"
-  ms.date: 07/28/2022
+  ms.date: 12/08/2022
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ abstract: |
   - Understand Microsoft 365 Defender solution by domain
   - Understand Microsoft 365 Defender role in a Modern SOC
 prerequisites: ""
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/introduction-microsoft-365-threat-protection.svg
 levels:
 - intermediate
 roles:

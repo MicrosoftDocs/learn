@@ -33,9 +33,9 @@ quiz:
     - content: "Default DDoS infrastructure protection."
       isCorrect: false
       explanation: "Incorrect. The default DDoS infrastructure-level protection service doesn't provide logging, alerting, or telemetry."
-    - content: "DDos Protection Standard."
+    - content: "Both DDoS IP Protection and DDoS Network Protection."
       isCorrect: true
-      explanation: "Correct. DDoS Protection Standard provides advanced capabilities, including logging, alerting, and telemetry."
+      explanation: "Correct. Both DDoS IP Protection and DDoS Network Protection provide advanced capabilities, including logging, alerting, and telemetry."
     - content: "Azure Bastion."
       isCorrect: false
       explanation: "Incorrect. Azure Bastion is a service you deploy that lets you connect to a virtual machine using your browser and the Azure portal.  Azure Bastion doesn't provide DDoS protection."
