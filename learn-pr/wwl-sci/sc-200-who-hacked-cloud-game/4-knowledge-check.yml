@@ -19,10 +19,10 @@ quiz:
     choices:
     - content: "They don't. They call the investigators and report it now."
       isCorrect: false
-      explanation: "As stated in the introduction, they are investigating first."
+      explanation: "As stated in the introduction, they're investigating first."
     - content: "Select one of the available leads"
       isCorrect: true
-      explanation: "Correct. This is how you will begin your investigation"
+      explanation: "Correct. This is how you'll begin your investigation"
     - content: "Immediately select the Evidence Map."
       isCorrect: false
       explanation: "While you can select the Evidence Map, the point of the game is to follow the leads."
