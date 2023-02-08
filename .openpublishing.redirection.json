@@ -19995,7 +19995,7 @@
       "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-data-lake-storage/8-summary",
       "redirect_document_id": false
     },
-        {
+    {
       "source_path": "learn-pr/wwl-aaure/use-spark-notebooks-azure-synapse-pipeline/1-introduction.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/use-spark-notebooks-azure-synapse-pipeline/",
       "redirect_document_id": false
@@ -20033,6 +20033,16 @@
     {
       "source_path": "learn-pr/wwl-aaure/use-spark-notebooks-azure-synapse-pipeline/index.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/use-spark-notebooks-azure-synapse-pipeline/",
+      "redirect_document_id": false
+    },
+    {
+       "source_path": "learn-pr/wwl-azure/configure-file-folder-backups/6-manage-azure-recovery-services-agent.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-file-folder-backups/5-mars-backup-agent",
+      "redirect_document_id": false
+    },
+    {
+       "source_path": "learn-pr/wwl-azure/configure-file-folder-backups/5-configure-premises.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-file-folder-backups/6-configure-backups",
       "redirect_document_id": false
     }
   ]
