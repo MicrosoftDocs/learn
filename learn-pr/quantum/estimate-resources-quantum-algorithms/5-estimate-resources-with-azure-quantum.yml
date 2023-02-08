@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.quantum.estimate-resources-quantum-algorithms.5-estimate-resources-of-a-real-world-problem
+uid: learn.quantum.estimate-resources-quantum-algorithms.estimate-resources-of-a-real-world-problem
 title: Estimate the resources of a real-world problem
 metadata:
   title: Estimate the resources of a real-world problem
   description: Learn how to run a QIR quantum algorithm on the Azure Quantum Resource Estimator 
-  ms.date: 01/24/2023
+  ms.date: 02/08/2023
   author: SoniaLopezBravo
   ms.author: sonialopez
   ms.topic: interactive-tutorial
