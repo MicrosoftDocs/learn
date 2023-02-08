@@ -2,6 +2,6 @@ In this module, we used helper methods to use arrays more effectively. We used s
 
 The array helper methods allowed us to work flexibly with data in our applications. Without these features, arrays would be less useful.
 
-Later, we'll learn about special classes in the .NET Class Library called collections, which provides even more functionality than arrays. We'll also learn about a special feature of C# and the .NET Class Library called LINQ that allows us to query, filter, sort, and aggregate data in arrays and collections, which will provide even more flexibility and utility.
+Later, we'll learn about special classes in the .NET Class Library called collections, which provide even more functionality than arrays. We'll also learn about a special feature of C# and the .NET Class Library called LINQ that allows us to query, filter, sort, and aggregate data in arrays and collections, which provides even more flexibility and utility.
 
 [!include[](../../../includes/dotnet-summary.md)]

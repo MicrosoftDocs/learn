@@ -1,4 +1,5 @@
 
+
 Microsoft Defender for Cloud Apps encrypts data at rest to protect
 against 'out-of-band' attacks (such as accessing underlying storage)
 using encryption. This helps ensure that attackers can't easily read or
