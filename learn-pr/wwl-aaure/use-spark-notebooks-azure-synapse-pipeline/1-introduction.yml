@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-spark-notebooks-azure-synapse-pipeline.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Introduction"
+  ms.date: 02/07/2023
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: synapse-analytics
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

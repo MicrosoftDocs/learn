@@ -1,3 +1,4 @@
+
 Azure AD is available in four editions: Free, Office 365 Apps, Premium P1, and Premium P2.
 
 **Azure Active Directory Free**. The free version allows you to administer users and create groups, synchronize with on-premises Active Directory, create basic reports, configure self-service password change for cloud users, and enable single sign-on across Azure, Microsoft 365, and many popular SaaS apps. The free edition is included with subscriptions to Office 365, Azure, Dynamics 365, Intune, and Power Platform.

@@ -28,7 +28,7 @@ When you create an Azure Database for PostgreSQL server, you also create an admi
 
 ### SCRAM authentication
 
-Most access to an Azure Database for PostgreSQL server relies on passwords. However, it is possible to use SCRAM authentication, which does not require a password. Salted Challenge Response Authentication Mechanism (SCRAM) is designed to make man-in-the-middle attacks more difficult. To enable SCRAM authentication:
+Most access to an Azure Database for PostgreSQL server relies on passwords. However, it is possible to use SCRAM authentication, a secure password authentication protocol that can authenticate the client without revealing the user's cleartext password to the server. Salted Challenge Response Authentication Mechanism (SCRAM) is designed to make man-in-the-middle attacks more difficult. To enable SCRAM authentication:
 
 1. In the Azure portal, navigate to your Azure Database for PostgreSQL flexible server, and under **Settings**, select **Server parameters**.
 1. In the search bar, enter **password_encryption**. The two parameters listed both default to MD5. If you want to use SCRAM, change both parameters to SCRAM-SHA-256:
