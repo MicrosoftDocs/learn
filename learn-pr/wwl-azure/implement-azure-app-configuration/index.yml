@@ -3,7 +3,7 @@ uid: learn.wwl.implement-azure-app-configuration
 metadata:
   title: Implement Azure App Configuration
   description: "Implement Azure App Configuration"
-  ms.date: 04/06/2022
+  ms.date: 02/08/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   * You should be experienced with developer concepts and terminology.
   * An understanding of cloud computing and some experience with the Azure portal.
-iconUrl: /training/achievements/azure-app-implement-configuration.svg
+iconUrl: /learn/achievements/azure-app-implement-configuration.svg
 levels:
 - intermediate
 roles:

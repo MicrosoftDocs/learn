@@ -4,13 +4,11 @@ title: Secure app configuration data
 metadata:
   title: Secure app configuration data
   description: "Secure app configuration data"
-  ms.date: 04/06/2022
+  ms.date: 02/08/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/5-secure-app-configuration-data.md)]
