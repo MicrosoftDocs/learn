@@ -31,7 +31,7 @@ units:
 - learn.wwl.transform-data-spark-azure-synapse-analytics.introduction
 - learn.wwl.transform-data-spark-azure-synapse-analytics.transform-dataframe
 - learn.wwl.transform-data-spark-azure-synapse-analytics.partition-data
-- learn.wwl.transform-data-spark-azure-synapse-analytics.tramsform-with-sql
+- learn.wwl.transform-data-spark-azure-synapse-analytics.tramsform-sql
 - learn.wwl.transform-data-spark-azure-synapse-analytics.exercise-transform-data-spark-azure-synapse-analytics
 - learn.wwl.transform-data-spark-azure-synapse-analytics.knowledge-check
 - learn.wwl.transform-data-spark-azure-synapse-analytics.summary

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.transform-data-spark-azure-synapse-analytics.tramsform-with-sql
+uid: learn.wwl.transform-data-spark-azure-synapse-analytics.tramsform-sql
 title: Transform data with SQL
 metadata:
   title: Transform data with SQL
@@ -12,4 +12,4 @@ metadata:
   ms.service: synapse-analytics
 durationInMinutes: 5
 content: |
-  [!include[](includes/4-tramsform-with-sql.md)]
+  [!include[](includes/4-tramsform-sql.md)]
