@@ -7,7 +7,7 @@ The distributed tracing tool is available from the ASE on which the packet core 
 > [!IMPORTANT]
 > To effectively diagnose issues in your private mobile network, you need to be familiar with the network functions that Azure Private 5G Core provides. For more information about the network functions, see [Packet core architecture](/azure/private-5g-core/private-5g-core-overview#packet-core-architecture).
 
-If you can't find the root cause of an issue with the distributed tracing tool, Azure Private 5G Core allows you to [collect a diagnostics package](#collect-and-share-a-diagnostics-package) from the relevant site. The package can then be used by Azure support engineers to assist you. In addition, Azure Private 5G Core also allows you to use the [*UPF Trace (UPFT)* tool](#perform-data-plane-package-capture) to do data plane packet analysis.
+If you can't find the root cause of an issue with the distributed tracing tool, Azure Private 5G Core allows you to [collect a diagnostics package](#collect-and-share-a-diagnostics-package) from the relevant site. The package can then be used by Azure support engineers to assist you. In addition, Azure Private 5G Core allows you to use the [*UPF Trace (UPFT)* tool](#perform-data-plane-package-capture) to do data plane packet analysis.
 
 ## Access the distributed tracing tool
 
@@ -44,7 +44,7 @@ For detailed instructions on using these views, see [Distributed tracing](/azure
 
 ## Search for specific information
 
-To find the root cause of a network issue, you'll need to find signal flows or errors involving a particular subscriber. The distributed tracing tool allows you to search for activities involving a particular subscriber using their subscription permanent identifier (SUPI) or, in 4G networks, their international mobile subscriber identity (IMSI). For errors, the tool allows you to search for error condition occurrences across all subscribers.
+To find the root cause of a network issue, you need to find signal flows or errors involving a particular subscriber. The distributed tracing tool allows you to search for activities involving a particular subscriber using their subscription permanent identifier (SUPI) or, in 4G networks, their international mobile subscriber identity (IMSI). For errors, the tool allows you to search for error condition occurrences across all subscribers.
 
 In addition, the distributed tracing tool allows you to use a date/time range to specify a custom time window in which to search for diagnostics data.
 
@@ -79,7 +79,7 @@ To find the root cause of this communication issue, you can take the following s
 
 ## Collect and share information for technical support
 
-If you can't find the root cause of an issue, you may need Microsoft technical support to help you. In this case, you'll need to collect necessary diagnostics information and share it with Microsoft support personnel.
+If you can't find the root cause of an issue, you may need Microsoft technical support to help you. In this case, you need to collect necessary diagnostics information and share it with Microsoft support personnel.
 
 You can use one of the following methods to collect the diagnostics information:
 
@@ -110,7 +110,7 @@ For detailed instructions on exporting a trace and sharing the exported trace fi
 
 Azure Private 5G Core allows you to use the Azure portal to collect a diagnostics package from a site. You can enable package collection either when you create a site or when you edit a site.
 
-To enable diagnostics package collection, you'll need to specify the following information:
+To enable diagnostics package collection, you need to specify the following information:
 
 - A storage account for storing your diagnostics package.
 - A managed identity that has the write access to the storage account.
@@ -123,7 +123,7 @@ For details about diagnostics package collection, see [Gather diagnostics using 
 
 ## Perform data plane package capture
 
-Azure Private 5G Core provides a data plane packet capture tool, UPFT, which allows you to capture data plane packets for analysis purposes. You can use UPFT to analyze packets on any user plane interface on the access network or data network.
+Azure Private 5G Core provides a data plane packet capture tool, UPFT, which allows you to capture data plane packets for analysis purposes. You can use UPFT to capture packets on any user plane interface on the access network or data network.
 
 UPFT works together with *tcpdump*, a data-network packet analyzer program, for packet capturing.
 
