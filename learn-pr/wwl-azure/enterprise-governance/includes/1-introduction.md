@@ -1,3 +1,4 @@
+
 The first part of your organization's secure Azure tenant is set up, but you need to monitor and maintain it. Enterprise Governance is the process of setting strategic tools, systems, and process into motion to keep your systems secure and running well.
 
 ## Scenario
@@ -10,7 +11,7 @@ A security engineer uses enterprise governance tools and policies to manage and 
 
 ## Skills measured
 
-Azure Active Directory is a part of [Exam AZ-500: Microsoft Azure Security Engineer](/certifications/exams/az-500).
+Azure Active Directory is a part of [Exam AZ-500: Microsoft Azure Security Engineer](/learn/certifications/exams/az-500).
 
 Manage identity and access (30-35%)
 

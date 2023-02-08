@@ -1,16 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.enterprise-governance.azure-subscription-management
+uid: .azure-subscription-management
 title: Design an Azure subscription management plan
 metadata:
   title: Design an Azure subscription management plan
   description: "Design an Azure subscription management plan"
-  ms.date: 02/06/2023
-  author: wwlpublish
-  ms.author: serlingdavis
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 7
+  ms.date: 02/08/2023
+  zone_pivot_groups: None
+durationInMinutes: 3
 content: |
   [!include[](includes/11-azure-subscription-management.md)]
