@@ -2,7 +2,7 @@
 
 :::image type="content" source="../media/playing-the-game.png" alt-text="Images of a security professional and the Who Hacked? game leads.":::
 
-Best for you Organics has been hacked!
+Best for You Organics has been hacked!
 You're tasked with assisting the CIO in investigating the source of a confidential leaked file.
 
 After you launch the game, and complete the introduction, playing the game consists of:
