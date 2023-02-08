@@ -2,7 +2,7 @@ Your organization plans to implement failover clustering of Windows virtual mach
 
 ## Create Azure shared disks
 
-You can create Azure shared disks by using a variety of tools. 
+You can create Azure shared disks by using various tools. 
 
 **Use the Azure portal**
 
