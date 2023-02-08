@@ -26,21 +26,21 @@ People in these modules are interested in designing and implementing DevOps proc
 
 After completing this module, students and professionals can:
 
-- Configure pipeline access to specific agent pools
-- Configure agents for projects and agent identities
-- Configure pipeline access to packages
-- Manage secret variables and variable groups
-- Configure service connections
-- Manage environments
-- Secure repositories
-- Ensure that the secrets are in the Azure Key Vault
-- Configure and validate user and pipeline permissions
-- Configure and validate approval and branch checks
-- Manage and audit permissions in Azure DevOps
-- Separate secure files between projects
-- Create nested templates
-- Limit variables that can be set at queue time
-- Convert to a managed identity in Azure DevOps
+- Configure pipeline access to specific agent pools.
+- Configure agents for projects and agent identities.
+- Configure pipeline access to packages.
+- Manage secret variables and variable groups.
+- Configure service connections.
+- Manage environments.
+- Secure repositories.
+- Ensure that the secrets are in the Azure Key Vault.
+- Configure and validate user and pipeline permissions.
+- Configure and validate approval and branch checks.
+- Manage and audit permissions in Azure DevOps.
+- Separate secure files between projects.
+- Create nested templates.
+- Limit variables that can be set at queue time.
+- Convert to a managed identity in Azure DevOps.
 
 ### Prerequisites
 
@@ -52,9 +52,9 @@ You must create an Azure DevOps Organization and a Team Project for some exercis
 To get the most out of this course, we recommend that you understand Azure DevOps and pipeline management. If you don't have this experience, we recommend that you first complete a module or course on Azure DevOps and pipeline management:
 
 - Free online:
-  - [Choose the DevOps tools](https://learn.microsoft.com/training/modules/migrate-to-devops/)
-  - [Explore Azure Pipelines](https://learn.microsoft.com/training/modules/explore-azure-pipelines/)
-  - [Integrate with Azure Pipelines](https://learn.microsoft.com/training/modules/integrate-azure-pipelines/)
+  - [Choose the DevOps tools](https://learn.microsoft.com/training/modules/migrate-to-devops/).
+  - [Explore Azure Pipelines](https://learn.microsoft.com/training/modules/explore-azure-pipelines/).
+  - [Integrate with Azure Pipelines](https://learn.microsoft.com/training/modules/integrate-azure-pipelines/).
 
 - Instructor-led course: [AZ-400: Designing and Implementing Microsoft DevOps solutions](https://learn.microsoft.com/training/courses/az-400t00).
 

@@ -33,7 +33,7 @@ In this unit, you will learn how to create and manage secret variables and varia
     ![Screenshot of Azure DevOps project Library showing the steps to add users to the Variable Group.](../media/configure-security-variable-group.png)
 
 > [!NOTE]
-> For more details about Library security, see: [Library security](https://learn.microsoft.com/azure/devops/pipelines/library/)
+> For more details about Library security, see: [Library security.](https://learn.microsoft.com/azure/devops/pipelines/library/)
 
 ## Step 3: Configuring Pipeline permissions
 
@@ -55,6 +55,6 @@ Try creating a Secret Variable and Variable Group in your Azure DevOps project. 
 
 For more information about secret variables and variable groups, see:
 
-* [Manage and modularize tasks and templates](https://learn.microsoft.com/training/modules/manage-modularize-tasks-templates/)
-* [Add & use variable groups](https://learn.microsoft.com/azure/devops/pipelines/library/variable-groups/)
-* [Set secret variables](https://learn.microsoft.com/azure/devops/pipelines/process/set-secret-variables/)
+- [Manage and modularize tasks and templates](https://learn.microsoft.com/training/modules/manage-modularize-tasks-templates/).
+- [Add & use variable groups](https://learn.microsoft.com/azure/devops/pipelines/library/variable-groups/).
+- [Set secret variables](https://learn.microsoft.com/azure/devops/pipelines/process/set-secret-variables/).

@@ -1,78 +1,62 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+You can use Environments to isolate different application stages, such as development, testing, and production. Azure DevOps provides an environment management feature that makes it easy to manage the environments used in your pipelines. In this unit, we will learn how to configure and manage environments and how to use them in YAML pipelines.
 
-    Goal: briefly summarize the key skill this unit will teach
+## Why use Environment in Azure DevOps?
 
-    Heading: none
+Using Environments in Azure DevOps will provide traceability from code to the physical deployment targets, improve resource health/availability visibility, and support zero downtime deployments using deployment strategies (runOnce, canary, blueGreen, and rolling). Also, you can easily manage the deployment of the application to different stages.
 
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
+## Step 1: Configuring Environments
 
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+While an environment is a grouping of resources, the resources represent actual deployment targets. The Kubernetes resource and virtual machine resource types are currently supported.
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+1. Log in to your Azure DevOps account.
+2. Go to the project for which you want to configure environments.
+3. Go to the Environments, under Pipelines.
+4. Click on the Create environment button.
+5. Give a name to the environment, such as Development.
+6. Choose the environment type. (None if you want to add resources later).
+7. Click on the Create button.
+8. Repeat the above steps to create more environments, such as Testing and Production.
 
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
+    ![Screenshot of Azure Pipelines showing how to create new environments.](../media/create-new-dev-environment.png)
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+    > [!NOTE]
+    > Adding resources to the environment is optional. You can create an empty environment and reference it from deployment jobs. This lets you record the deployment history against the environment.
 
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
+## Step 2: Managing Environments and Security
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
+1. Go to the Environments page.
+2. Select an environment, such as Development.
+3. Click on the ellipsis (...).
+4. Click on the Edit button to update the environment settings, such as the environment name and description.
+5. Click on the Security button to update user and pipeline permissions.
+6. Add the pipeline you want to allow to use and have access to the Environment.
+7. Repeat the above steps to manage other environments.
 
-    Goal: State concisely what's covered in this unit
+    ![Screenshot of Azure Pipelines showing how to configure environments and add pipeline permissions.](../media/add-pipeline-environment.png)
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+## Step 3: Using Environments in YAML Pipelines
 
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
+Here is an example YAML pipeline that deploys an application to the Development environment:
 
-<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
+```YAML
+- stage: deploy
+  jobs:
+  - deployment: DeployWeb
+    displayName: Deploy Web App
+    pool:
+      vmImage: 'Ubuntu-latest'
+    # creates an environment if it doesn't exist
+    environment: 'Development'
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          - script: echo Hello world securing your environments!
+```
 
-    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
+It allows you to deploy the application to different environments by changing the environment name in the env section.
 
-    Heading: none
--->
-TODO: add a visual element
+For more details about Environments, see:
 
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
-
-    Goal: Provide all the information the learner needs to perform this sub-task.
-
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
-
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=main)
--->
-
-<!-- Pattern for simple chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
-
-<!-- Pattern for complex chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+- [Create and target an environment.](https://learn.microsoft.com/azure/devops/pipelines/process/environments)
+- [Manage multiple environments by using Bicep and Azure Pipelines](https://learn.microsoft.com/training/modules/manage-multiple-environments-using-bicep-azure-pipelines/)

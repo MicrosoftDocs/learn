@@ -1,78 +1,58 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+Service connections in Azure DevOps allow you to connect to external services and resources securely. These connections can access databases, third-party APIs, and cloud services. You can automate deployment, testing, and other processes using service connections without storing sensitive information in your codebase.
 
-    Goal: briefly summarize the key skill this unit will teach
+## Step 1: Creating a Service Connection
 
-    Heading: none
+To create a service connection, you need to be a Project Administrator or a Project Collection Administrator in Azure DevOps.
 
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
+1. Navigate to the Project Settings in Azure DevOps.
+2. Click on the Service Connections tab under Pipelines.
+3. Click on the "Create service connection" button.
+4. Select the type of service connection you want to create (e.g. Azure Resource Manager, GitHub, etc.).
+5. Enter the necessary information to connect to the service (e.g. subscription ID, access key, etc.).
+6. (Optional) Click on the "Verify connection" button to validate your connection.
+7. Give your service connection a meaningful name and description.
+8. Click on the "Save" button to create the service connection.
 
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+    ![Screenshot of Azure Pipelines showing how to create a new Service Connection Azure Resource Manager using service principal (automatic).](../media/new-service-connection.png)
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+## Step 2: Configure Pipeline Permissions to the Service Connection
 
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
+1. Go to the Azure DevOps project where the service connection was created.
+2. Click on the Project settings located in the bottom left corner.
+3. Under the Pipelines section, select Service connections.
+4. Click on the service connection you want to grant access to the pipeline.
+5. Click on the three dots (...) on the right side of the service connection, and select Security.
+6. In the Pipeline permissions section, add the pipeline that should have access to the service connection.
+7. Click on the Save button to save the pipeline permissions.
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+    ![Screenshot of Azure Pipelines showing how to add pipeline permissions to the Service Connection.](../media/service-connection-pipeline-permission.png)
 
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
+## Step 3: Using the Service Connection in a Pipeline
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
+Once you have created a service connection, you can use it in your pipelines. Here's an example of how you can use a service connection in a YAML pipeline:
 
-    Goal: State concisely what's covered in this unit
+```YAML
+steps:
+- task: AzureResourceManagerTemplateDeployment@3
+  displayName: 'Create Azure Resource Group'
+  inputs:
+    deploymentScope: 'Resource Group'
+    azureResourceManagerConnection: 'Secure Pipelines Service Connection'
+    subscriptionId: '<your-subscription-id>'
+    action: 'Create Or Update Resource Group'
+    resourceGroupName: 'Secure-Pipelines-RG'
+    location: 'Central US'
+    templateLocation: 'Linked artifact'
+    deploymentMode: 'Incremental'
+```
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+The example uses a YAML pipeline to deploy an Azure Resource Manager (ARM) template. The pipeline contains a task, AzureResourceManagerTemplateDeployment@3, used to deploy the ARM template. The task requires several inputs, such as the deploymentScope, azureResourceManagerConnection, action, resourceGroupName, location, templateLocation, etc.
 
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
+By using service connections, you can automate deployment, testing, and other processes that help maintain your projects' security and integrity and make it easier to manage and update the information as needed.
 
-<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
+For more details about Service Connections, see:
 
-    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
-
-    Heading: none
--->
-TODO: add a visual element
-
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
-
-    Goal: Provide all the information the learner needs to perform this sub-task.
-
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
-
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=main)
--->
-
-<!-- Pattern for simple chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
-
-<!-- Pattern for complex chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+- [Manage service connections](https://learn.microsoft.com/azure/devops/pipelines/library/service-endpoints/).
+- [Provision and test environments](https://learn.microsoft.com/training/modules/configure-provision-environments/).
+- [Integrate with identity management systems](https://learn.microsoft.com/training/modules/integrate-identity-management-systems/).
+- [Create Azure resources using Azure Resource Manager templates](https://learn.microsoft.com/training/modules/create-azure-resources-using-azure-resource-manager-templates/).

@@ -46,6 +46,8 @@ In this unit, you'll go through the steps to configure Secure Files in Azure Dev
       displayName: 'Copy Secure File to Artifact Staging Directory'
     ```
 
+    In this example, the first task **DownloadSecureFile@1** is used to download the secure file specified in the **secureFile** input. The second task **CopyFiles@2** is used to copy the secure file to the artifact staging directory. The secure file will now be available for use in your build pipeline and can be passed to other tasks or stages as needed.
+
     > [!NOTE]
     > If the task is given the name mySecureFile, its path can be referenced in the pipeline as $(mySecureFile.secureFilePath). Alternatively, downloaded secure files can be found in the directory given by $(Agent.TempDirectory).
 
@@ -74,4 +76,4 @@ In this unit, you'll go through the steps to configure Secure Files in Azure Dev
 
 Secure Files in Azure DevOps is an essential tool for storing and protecting sensitive files in your projects. Ensure your sensitive files are securely accessible to authorized users in your pipelines.
 
-For more details about Secure Files (YAML or classic UI), see: [Use secure files](https://learn.microsoft.com/azure/devops/pipelines/library/secure-files/)
+For more details about Secure Files (YAML or classic UI), see: [Use secure files](https://learn.microsoft.com/azure/devops/pipelines/library/secure-files/).
