@@ -1,10 +1,3 @@
----
-uid:implement-azure-security-center
-durationInMinutes:false
-interactive:none
-zone_pivot_groups:None
-title:Implement Azure Security Center
----
 Microsoft Defender for Cloud is a **Cloud Security Posture Management (CSPM)** and **Cloud Workload Protection Platform (CWPP)** for all of your **Azure**, **on-premises**, and **multi-cloud** (Amazon AWS and Google GCP) **resources**. Defender for Cloud fills three vital needs as you manage the security of your resources and workloads in the cloud and on-premises:
 
 For an interactive overview of how to Manage your cloud security posture with Microsoft Defender for Cloud, click on the image below.<br>

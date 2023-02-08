@@ -1,10 +1,3 @@
----
-uid:secure-score
-durationInMinutes:false
-interactive:none
-zone_pivot_groups:None
-title:Explore secure score
----
 Secure Score is going to help your company track and raise your security posture.
 
 ## Introduction to secure score

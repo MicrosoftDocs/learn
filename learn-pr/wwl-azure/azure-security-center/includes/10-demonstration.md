@@ -1,10 +1,3 @@
----
-uid:demonstration
-durationInMinutes:false
-interactive:none
-zone_pivot_groups:None
-title:Perform try-this exercises
----
 Use this try-this exercise to gain some hands-on experience with Azure.
 
 ## Task 1: Microsoft Defender for Cloud overview and recommendations

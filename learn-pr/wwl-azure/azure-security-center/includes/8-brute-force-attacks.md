@@ -1,10 +1,3 @@
----
-uid:brute-force-attacks
-durationInMinutes:false
-interactive:none
-zone_pivot_groups:None
-title:Define brute force attacks
----
 The brute force attack is the most common attack, and the easiest to be used against your Azure solutions.
 
 ## Attack scenario

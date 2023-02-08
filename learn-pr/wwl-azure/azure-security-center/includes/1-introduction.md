@@ -1,10 +1,3 @@
----
-uid:introduction
-durationInMinutes:false
-interactive:none
-zone_pivot_groups:None
-title:Introduction
----
 Microsoft Defender for Cloud is your central location for setting and monitoring your organizations security posture. You can see which solutions are adhering to security measures and which systems need to be secured.
 
 ## Scenario

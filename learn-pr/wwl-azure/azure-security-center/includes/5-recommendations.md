@@ -1,10 +1,3 @@
----
-uid:recommendations
-durationInMinutes:false
-interactive:none
-zone_pivot_groups:None
-title:Manage and implement security center recommendations
----
 ## What is a security recommendation?
 
 Using the policies, Defender for Cloud periodically analyzes the compliance status of your resources to identify potential security misconfigurations and weaknesses. It then provides you with recommendations on how to remediate those issues. Recommendations are the result of assessing your resources against the relevant policies and identifying resources that aren't meeting your defined requirements.<br>
@@ -35,7 +28,7 @@ So, (1) **an initiative includes** (2) **policies that generate** (3) **environm
 
 Security recommendations contain details that help you understand its significance and how to handle it.
 
-:::image type="content" source="../media/recommendation-details-page-d6bf1702.png":::
+:::image type="content" source="../media/recommendation-details-page-d6bf1702.png" alt-text="Screenshot of Cloud Security Poster Management virtual machine vulnerability findings resolved.":::
 
 
 The recommendation details shown are:
@@ -51,7 +44,7 @@ The recommendation details shown are:
 4.  **Count of exempted resources** if exemptions exist for a recommendation; this shows the number of resources that have been exempted with a link to view the specific resources.
 5.  **Mapping to MITRE ATT&CK tactics and techniques** if a recommendation has defined tactics and techniques, select the icon for links to the relevant pages on MITRE's site. This applies only to Azure-scored recommendations.
     
-    :::image type="content" source="../media/tactics-window-38591f40.png":::
+    :::image type="content" source="../media/tactics-window-38591f40.png" alt-text="Screenshot of Cloud Security Poster Management recommendation that Management ports should be closed on your virtual machines.":::
     
 6.  **Description** \- A short description of the security issue.
 7.  When relevant, the details page also includes a table of related recommendations:
@@ -71,7 +64,7 @@ The recommendation details shown are:
 9.  **Affected resources** \- Your resources are grouped into tabs:
      -  **Healthy resources** – Relevant resources that either aren't impacted or on which you've already remediated the issue.
      -  **Unhealthy resources** – Resources that are still impacted by the identified issue.
-     -  **Not applicable resources** – Resources for which the recommendation can't give a definitive answer. The not applicable tab also includes reasons for each resource. :::image type="content" source="../media/recommendations-not-applicable-reasons-19d5a9ad.png":::
+     -  **Not applicable resources** – Resources for which the recommendation can't give a definitive answer. The not applicable tab also includes reasons for each resource. :::image type="content" source="../media/recommendations-not-applicable-reasons-19d5a9ad.png" alt-text="Screenshot of Cloud Security Poster Management recommendation of Vulnerabilities in your virtual machines should be remediated.":::
         
 10. Action buttons to **remediate** the **recommendation** or **trigger a logic app**.
 
@@ -81,11 +74,11 @@ As mentioned above, Defender for Cloud's built-in recommendations are based on t
 
 When you're reviewing the details of a recommendation, it's often helpful to be able to see the underlying policy. For every recommendation supported by a policy, use the View policy definition link from the recommendation details page to go directly to the Azure Policy entry for the relevant policy:
 
-:::image type="content" source="../media/view-policy-definition-79d58740.png":::
+:::image type="content" source="../media/view-policy-definition-79d58740.png" alt-text="Screenshot of Cloud Security Poster Management recommendation that Management ports should be closed on your virtual machines and Viewing policy definition.":::
 
 
 Use this link to view the policy definition and review the evaluation logic.
 
 If you're reviewing the list of recommendations on our Security recommendations reference guide, you'll also see links to the policy definition pages:
 
-:::image type="content" source="../media/view-policy-definition-from-documentation-fd84f2cd.png":::
+:::image type="content" source="../media/view-policy-definition-from-documentation-fd84f2cd.png" alt-text="Screenshot of Cloud Security Poster Management recommendation that Management ports should be closed on your virtual machines and an example link to the policy definition pages.":::

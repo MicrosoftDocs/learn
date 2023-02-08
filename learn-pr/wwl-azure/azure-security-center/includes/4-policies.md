@@ -1,10 +1,3 @@
----
-uid:policies
-durationInMinutes:false
-interactive:none
-zone_pivot_groups:None
-title:Configure security center policies
----
 **Azure Security Benchmark (ASB)** is the Microsoft-authored, Azure-specific set of guidelines for security and compliance best practices based on common compliance frameworks. This widely respected benchmark builds on the controls from the Center for Internet Security (CIS) and the National Institute of Standards and Technology (NIST) with a focus on cloud-centric security. Customers use the Azure Security Benchmark (ASB) as a comprehensive control framework to help meet all their security requirements. The Benchmark is implemented as an Azure Policy initiative implementing monitoring for all of these guidelines.<br>
 
 Azure Security Benchmark is the foundation for Security Center’s recommendations and has been fully integrated as the default policy initiative. This means that ALL Azure Security Customers (ASC's) automatically get the ASB as their default security policy, and the ASB is positioned as the singular set of security best practices in Azure, aligned with Secure Score.<br>

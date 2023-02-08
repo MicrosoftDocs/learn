@@ -1,10 +1,3 @@
----
-uid:azure-defender
-durationInMinutes:false
-interactive:none
-zone_pivot_groups:None
-title:Deploy Azure Defender
----
 ## Basic and enhanced security features
 
 ## Basic features

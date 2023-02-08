@@ -1,10 +1,3 @@
----
-uid:summary
-durationInMinutes:false
-interactive:none
-zone_pivot_groups:None
-title:Summary
----
 Maintaining your security with Microsoft Defender for Cloud, and Secure Score are the keys to keeping your solutions and data secure.
 
 You should be able to:

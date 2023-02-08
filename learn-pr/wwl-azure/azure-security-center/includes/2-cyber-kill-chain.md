@@ -1,10 +1,3 @@
----
-uid:cyber-kill-chain
-durationInMinutes:false
-interactive:none
-zone_pivot_groups:None
-title:Review the cyber kill chain
----
 In the information security lexicon, a kill chain describes the structure of an attack against an objective. The series of steps that describe the progression of a cyberattack from reconnaissance to data exfiltration.
 
 Understanding the intention of an attack can help you investigate and report the event more easily. Microsoft Defender for Cloud alerts include the 'intent' field to help with these efforts.
