@@ -3,7 +3,7 @@ Quantum computers promise to solve important scientific and commercial problems.
 
 In this context, resource estimation becomes crucial in the development of quantum computers and quantum solutions. We need to  understand the impact of architectural design choices and quantum error correction schemes. 
 
-Get ready! Azure Quantum has developed a tool that allows us to analyse the impact that various choices for architectural parameters such as physical qubit and QEC models have to the overall physical resource estimates. In this module, you'll learn some basic concepts about resource estimation in fault-tolerant quantum computing, and you'll explore the Azure Quantum Resource Estimator. 
+Get ready! Azure Quantum has developed a tool that allows us to analyze the impact that various choices for architectural parameters such as physical qubit and QEC models have to the overall physical resource estimates. In this module, you'll learn some basic concepts about resource estimation in fault-tolerant quantum computing, and you'll explore the Azure Quantum Resource Estimator. 
 
 ## Learning objectives
 
