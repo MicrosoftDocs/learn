@@ -8,77 +8,32 @@ metadata:
   author: KenMAG
   ms.author: kelawson
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
-durationInMinutes: 1
-###########################################################################
-###
-### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check) 
-###  - Questions are complete sentences ending with a question mark 
-###  - No true/false questions 
-###  - 3 answers per question 
-###  - All answers about the same length 
-###  - Numeric answers listed in sorted order 
-###  - No "All of the above" and/or "None of the above" as answer choices 
-###  - No "Not" or "Except" in questions 
-###  - No second person ("you") in the questions or answers 
-###  - Provide a meaningful explanation for both correct and incorrect answers 
-###
-###########################################################################
+  ms.prod: learning-azure
+durationInMinutes: 3
 content: |
+  [!include[](includes/4-knowledge-check.md)]
 quiz:
+  title: "Check your knowledge"
   questions:
-  - content: ""
+  - content: "How does the team begin the investigation?"
     choices:
-    - content: ""
+    - content: "They don't. They call the investigators and report it now."
+      isCorrect: false
+      explanation: "As stated in the introduction, they are investigating first."
+    - content: "Select one of the available leads"
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct. This is how you will begin your investigation"
+    - content: "Immediately select the Evidence Map."
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "While you can select the Evidence Map, the point of the game is to follow the leads."
+  - content: "In the Search for Leaked File lead, which role do you portray?"
     choices:
-    - content: ""
+    - content: "Information Protection Administrator"
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "This is the correct role for performing Microsoft Purview investigations."
+    - content: "Identity Administrator"
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "This role is used for an Azure Active Directory investigation."
+    - content: "Security Operations Analyst"
       isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      explanation: "This role is used in Microsoft Sentinel investigations" 
