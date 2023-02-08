@@ -1,5 +1,3 @@
-## Motivations for SaaS
-
 Let’s focus on the main motivational drives for the SaaS model from both customer point of view, and software provider point of view. 
 
 ## Customers motivations for using SaaS products
@@ -20,7 +18,7 @@ Let’s focus on the main motivational drives for the SaaS model from both custo
   
   There are also financial and tax reasons why customers prefer to purchase SaaS solutions, since OpEx offers more immediate tax deduction benefits
 
-## Software's provider motivations for creating SaaS business vs traditional license based product:
+## Software's provider motivations for creating SaaS business vs traditional license based product
 
 - #### Market demand
 
