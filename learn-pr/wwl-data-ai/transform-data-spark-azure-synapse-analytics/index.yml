@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.wwl.transform-data-spark-azure-synapse-analytics
 metadata:
-  title: Transform Data with Spark in Azure Synapse Analytics
+  title: Transform data with Spark in Azure Synapse Analytics
   description: "Learn how to use Apache Spark pools in Azure Synapse Analytics to transform data."
-  ms.date: 02/07/2023
+  ms.date: 02/08/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.service: synapse-analytics
-title: Transform Data with Spark in Azure Synapse Analytics
+title: Transform data with Spark in Azure Synapse Analytics
 summary: Data engineers commonly need to transform large volumes of data. Apache Spark pools in Azure Synapse Analytics provide a distributed processing platform that they can use to accomplish this goal.
 abstract: |
   In this module, you will learn how to:
