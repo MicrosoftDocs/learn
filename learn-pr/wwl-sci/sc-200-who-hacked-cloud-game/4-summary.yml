@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.sc-200-who-hacked-cloud-game.summary
+title: Summary
+metadata:
+  title: summary
+  description: "Playing the Who Hacked? game is an optional activity for Security Operations Analysts."
+  ms.date: 2/3/2023
+  author: KenMAG
+  ms.author: kelawson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure  # Edit as appropriate for your portfolio area
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-summary.md)]
