@@ -121,7 +121,7 @@ Once package collection is enabled, you can use the **Diagnostics collection** m
 
 For details about diagnostics package collection, see [Gather diagnostics using the Azure portal](/azure/private-5g-core/gather-diagnostics).
 
-## Perform data plane package capture
+## Perform data plane packet capture
 
 Azure Private 5G Core provides a data plane packet capture tool, UPFT, which allows you to capture data plane packets for analysis purposes. You can use UPFT to capture packets on any user plane interface on the access network or data network.
 
