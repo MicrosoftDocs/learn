@@ -11,10 +11,10 @@ metadata:
 title: Who Hacked Cloud Game
 summary: "Provide instructions and guidance on playing the SC-200: Who Hacked cloud game."
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you're able to:
     - "Demonstrate skills learned in The Security Operations Analyst (SC-200) course."  
 prerequisites: |
-  - "Practical experience using Microsoft Sentinel, Microsoft Purview nad Microsoft Defender is helpful but not required."  
+  - "Practical experience using Microsoft Sentinel, Microsoft Purview and Microsoft Defender is helpful but not required."  
 iconUrl: /learn/achievements/generic-badge.svg
 levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
   - intermediate
