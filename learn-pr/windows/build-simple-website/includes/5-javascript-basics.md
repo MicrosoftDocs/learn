@@ -224,4 +224,4 @@ You can define a text *string* with single or double quotes around the text.
 
 Using the console, you can get interesting insights from your JavaScript code. Add more console messages to understand which parts of your code are getting executed and to know the current values of other variables.
 
-To learn more about the console, check out the [Console overview](/microsoft-edge/devtools-guide-chromium/console/) article.
+To learn more about the console, check out the [Console overview](/microsoft-edge/devtools-guide-chromium/console/?azure-portal=true) article.
