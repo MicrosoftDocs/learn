@@ -1,14 +1,15 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.understand-app-service-deployment-slots.summary
+uid: learn.wwl.load-data-into-relational-data-warehouse.summary
 title: Summary
 metadata:
   title: Summary
   description: "Summary"
   ms.date: 02/07/2023
   author: wwlpublish
-  ms.author: jeffko
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 3
+  ms.service: synapse-analytics
+durationInMinutes: 1
 content: |
-  [!include[](includes/7-summary.md)]
+  [!include[](includes/10-summary.md)]
