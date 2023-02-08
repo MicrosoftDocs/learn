@@ -1,9 +1,4 @@
----
-uid: learn.wwl.configure-expressroute-virtual-wan.determine-expressroute-uses
-title: Determine Azure ExpressRoute uses
-description: Explore the features and usage cases for Azure ExpressRoute.
-durationInMinutes: 3
----
+
 Azure ExpressRoute lets you extend your on-premises networks into the Microsoft cloud. The connection is facilitated by a connectivity provider. With ExpressRoute, you can establish connections to Microsoft cloud services, such as Microsoft Azure, Microsoft 365, and Microsoft Dynamics CRM applications.
 
 Microsoft network operates the primary and secondary connections of Azure ExpressRoute circuits in active-active mode. Administrators can force their redundant connections of an ExpressRoute circuit to operate in active-passive mode. 

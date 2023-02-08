@@ -1,9 +1,4 @@
----
-uid: learn.wwl.configure-expressroute-virtual-wan.coexist-site-to-site-expressroute
-title: Coexist site-to-site and Azure ExpressRoute
-description: Coexist site-to-site and Azure ExpressRoute
-durationInMinutes: 3
----
+
 Azure ExpressRoute is a direct, private connection from your WAN (not over the public internet) to Microsoft services, including Azure. Site-to-site VPN traffic travels encrypted over the public internet. Being able to configure site-to-site VPN and ExpressRoute connections for the same virtual network has several advantages.
 
 You configure a site-to-site VPN as a secure failover path for ExpressRoute. You can also use site-to-site VPNs to connect to sites that aren't part of your network, but are connected through ExpressRoute. Notice this configuration requires two virtual network gateways for the same virtual network. One network uses the gateway type *VPN*, and the other network uses the gateway type *ExpressRoute*.

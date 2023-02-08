@@ -1,9 +1,4 @@
----
-uid: learn.wwl.configure-expressroute-virtual-wan.summary-resources
-title: Summary and resources
-description: Summary and resources
-durationInMinutes: 1
----
+
 Azure ExpressRoute can be used to connect your on-premises networks to the Microsoft cloud infrastructure. ExpressRoute works with an approved connectivity provider to establish the connections via a dedicated circuit.
 
 Azure Virtual WAN can also be used to establish network connections. Azure Virtual WAN provides any-to-any connectivity, custom routing, and security.

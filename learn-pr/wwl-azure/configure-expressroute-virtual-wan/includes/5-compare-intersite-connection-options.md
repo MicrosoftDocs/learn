@@ -1,9 +1,4 @@
----
-uid: learn.wwl.configure-expressroute-virtual-wan.compare-intersite-connection-options
-title: Compare intersite connection options
-description: Compare intersite connection options
-durationInMinutes: 3
----
+
 Microsoft network operates the primary and secondary connections of Azure ExpressRoute circuits in active-active mode. Administrators can force their redundant connections of an ExpressRoute circuit to operate in active-passive mode. To improve high availability, we recommend that you operate both connections of an ExpressRoute circuit in active-active mode. When you allow the connections to operate in active-active mode, Microsoft network load balances the traffic across the connections on a per-flow basis.
 
 ### Things to know about intersite connections
