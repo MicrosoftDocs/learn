@@ -3,7 +3,7 @@ uid: learn.quantum.estimate-resources-quantum-algorithms
 metadata:
   title: Estimate physical resources for quantum algorithms using the Azure Quantum Resource Estimator
   description: Learn how to get started with Azure Quantum Resource Estimator
-  ms.date: 01/12/2023
+  ms.date: 02/08/2023
   author: SoniaLopezBravo
   ms.author: sonialopez
   ms.topic: interactive-tutorial
@@ -27,11 +27,11 @@ products:
 subjects:
 - cloud-computing
 units:
-- learn.quantum.estimate-resources-quantum-algorithms.1-introduction
-- learn.quantum.estimate-resources-quantum-algorithms.2-resource-estimation-in-quantum-computing
-- learn.quantum.estimate-resources-quantum-algorithms.3-azure-quantum-resource-estimator
-- learn.quantum.estimate-resources-quantum-algorithms.4-get-started-with-azure-quantum-resource-estimator
-- learn.quantum.estimate-resources-quantum-algorithms.5-estimate-resources-of-a-real-world-problem
+- learn.quantum.estimate-resources-quantum-algorithms.introduction
+- learn.quantum.estimate-resources-quantum-algorithms.resource-estimation-in-quantum-computing
+- learn.quantum.estimate-resources-quantum-algorithms.azure-quantum-resource-estimator
+- learn.quantum.estimate-resources-quantum-algorithms.get-started-with-azure-quantum-resource-estimator
+- learn.quantum.estimate-resources-quantum-algorithms.estimate-resources-of-a-real-world-problem
 - learn.quantum.estimate-resources-quantum-algorithms.knowledge-check
 - learn.quantum.estimate-resources-quantum-algorithms.summary
 badge:
