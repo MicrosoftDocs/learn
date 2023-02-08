@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.load-data-into-relational-data-warehouse.load-staging-tables
+title: Load staging tables
+metadata:
+  title: Load staging tables
+  description: "Load staging tables"
+  ms.date: 02/07/2023
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: synapse-analytics
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-load-staging-tables.md)]
