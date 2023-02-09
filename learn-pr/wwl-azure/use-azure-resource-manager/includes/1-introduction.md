@@ -2,7 +2,7 @@
 
 Your company is beginning to create resources in Azure. There is no organizational plan for standardizing the effort. There have been several instances where critical resources were inadvertently deleted. It is difficult to determine who owns which resource.
 
-You need to use resource groups to organize the company's resources.
+You need to use resource groups to organize the company's Azure resources.
 
 ## Skills measured
 
