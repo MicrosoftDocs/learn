@@ -18,24 +18,3 @@ When completed, your website will look like this example when the dark theme is 
 ## What's in a web page?
 
 The content, style, and interactive logic are separated into HTML, CSS, and JavaScript files, respectively. A design principle in modern programming is *separation of concerns*. Among the many reasons to separate concerns, two are simplicity and reuse. For example, by styling HTML elements using CSS, you can simplify your HTML code. Instead of coding the appearance within each element, you apply CSS styles to all the elements on a page, regardless of the page complexity. In addition, you can link multiple HTML pages to a single CSS file, which can help simplify a consistent look and feel across your entire website.
-
-## Learning objectives
-
-In this module, you'll:
-
-- Create a basic web page using HTML
-- Apply styles to page elements using CSS
-- Create themes using CSS
-- Add support for switching between themes using JavaScript
-- Inspect the website using browser developer tools
-
-You'll run the site in your default browser. At the end of the module, we'll link to other modules that show how to deploy the website using Azure Static Web Apps.
-
-## Prerequisites
-
-- [Visual Studio Code](https://code.visualstudio.com), a cross-platform code editor.
-- Familiarity with at least one programming language and one markup language like HTML
-- A computer that's running one of the following:
-  - Windows: Windows 7, 8, 10
-  - Mac: macOS 10.9 or later
-  - Linux: Ubuntu, Debian, Red Hat, Fedora, or SUSE
