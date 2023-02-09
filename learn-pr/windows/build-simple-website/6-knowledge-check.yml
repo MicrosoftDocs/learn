@@ -18,7 +18,7 @@ quiz:
     - content: What is the main purpose of HTML?
       choices:
       - content: HTML is used to provide webpage structure.
-        explanation: Correct! HTMl provides the structural building blocks of a web page.
+        explanation: Correct! HTML provides the structural building blocks of a web page.
         isCorrect: true
       - content: HTML is used to style web pages.
         explanation: Incorrect. CSS is generally used for styling HTML elements.
