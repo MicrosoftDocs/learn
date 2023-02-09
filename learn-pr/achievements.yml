@@ -1504,3 +1504,8 @@ achievements:
   title: Microsoft Azure Artificial Intelligence (AI) strategy and solutions
   summary: This module provides an overview of Azure AI and demonstrates how Microsoft tools, services, and infrastructure can help make AI real for your organization, whether you want to unlock insights from your latent data with knowledge mining, develop your own AI models with machine learning, or build immersive apps using AI.
   iconUrl: /training/achievements/azure-artificial-intelligence.svg
+- uid: learn-wwl.azure-in-action.badge
+  type: badge
+  title: See Azure in action
+  summary: Many organizations are eager to take advantage of the benefits of cloud computing by migrating their existing apps and workloads to the cloud from their on-premises datacenters. The competitive advantages of higher efficiency, greater flexibility, lower costs, and better performance are appealing, but getting started can feel intimidating. To help you get started with migration, the demos in this module provide an opportunity to see Azure in action.
+  iconUrl: /training/achievements/azure-in-action.svg
