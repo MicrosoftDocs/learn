@@ -20044,6 +20044,11 @@
        "source_path": "learn-pr/wwl-azure/configure-file-folder-backups/5-configure-premises.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/configure-file-folder-backups/6-configure-backups",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/app-and-infra-migration-and-modernization/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     }
   ]
 }
