@@ -1,0 +1,35 @@
+### YamlMime:Module
+uid: learn.wwl.train-models-training-mlflow-jobs
+metadata:
+  title: Track model training with MLflow in jobs
+  description: "Track model training with MLflow in jobs"
+  ms.date: 02/09/2023
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Track model training with MLflow in jobs
+summary: Learn how to track model training with MLflow in jobs when running scripts.
+abstract: |
+  In this module, you learn how to:
+  - Use MLflow when you run a script as a job.
+  - Review metrics, parameters, artifacts, and models from a run.
+prerequisites: ""
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- data-scientist
+products:
+- azure-machine-learning
+subjects:
+- machine-learning
+units:
+- learn.wwl.train-models-training-mlflow-jobs.introduction
+- learn.wwl.train-models-training-mlflow-jobs.track-metrics-mlflow
+- learn.wwl.train-models-training-mlflow-jobs.view-metrics-evaluate-models
+- learn.wwl.train-models-training-mlflow-jobs.exercise-use-mlflow-track-training-jobs
+- learn.wwl.train-models-training-mlflow-jobs.knowledge-check
+- learn.wwl.train-models-training-mlflow-jobs.summary
+badge:
+  uid: learn.wwl.train-models-training-mlflow-jobs.badge
