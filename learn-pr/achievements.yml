@@ -1509,3 +1509,8 @@ achievements:
   title: See Azure in action
   summary: Many organizations are eager to take advantage of the benefits of cloud computing by migrating their existing apps and workloads to the cloud from their on-premises datacenters. The competitive advantages of higher efficiency, greater flexibility, lower costs, and better performance are appealing, but getting started can feel intimidating. To help you get started with migration, the demos in this module provide an opportunity to see Azure in action.
   iconUrl: /training/achievements/azure-in-action.svg
+- uid: learn-wwl.data-estate-migration-and-modernization.badge
+  type: badge
+  title: Microsoft data estate migration and modernization
+  summary: Establishing a modern data estate is a foundational step toward digital transformation. A modern data estate enables timely insights and decision making across all your data, and sets the foundation for AI. A data estate is all of the data an organization owns. When you migrate this data to the cloud or modernize your environment on-premises you can gain important insights to fuel innovation.
+  iconUrl: /training/achievements/data-estate-migration-and-modernization.svg
