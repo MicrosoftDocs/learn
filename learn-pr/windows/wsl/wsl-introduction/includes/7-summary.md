@@ -18,7 +18,7 @@ Lastly, you learned that there are some great resources that go in to more depth
 
 - [WSL documentation](/windows/wsl)
 - [Manual installation steps for older versions of Windows](/windows/wsl/install-manual)
-- [Enterprise environment: Set up WSL for your company](/windows/enterprise)
+- [Enterprise environment: Set up WSL for your company](/windows/wsl/enterprise)
 - [Install WSL on Windows Server](/windows/wsl/install-on-server)
 - [Windows Terminal documentation](/windows/terminal/)
 - [Introduction to Bash](/training/modules/bash-introduction/)

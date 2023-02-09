@@ -4,15 +4,15 @@ In this unit, you'll create a small project structure using Visual Studio Code. 
 
 ## Create a new folder for your website
 
-1. Open VS Code.
+1. Open Visual Studio Code.
 
-   When you open Visual Studio Code, the **Get Started** page opens. Notice that you can create a new file or open a folder in the **Start** list.
+   When you open Visual Studio Code, the **Welcome** page opens. Notice that you can create a new file or open a folder in the **Start** list.
 
    :::image type="content" source="../media/vs-code-get-started.png" alt-text="Screenshot of the Visual Studio Code Get Started page." lightbox="../media/vs-code-get-started.png":::
 
-   If the **Get Started** page isn't visible, you can display it by selecting **Help > Get Started** on the menu. (Alternatively, you can display the **Get Started** page by opening the **Command Palette** using the keyboard shortcut <kbd>Shift+Ctrl+P</kbd> on a Windows computer or <kbd>Shift+Cmd+P</kbd> on a macOS, or by selecting **View > Command Palette** from the Visual Studio Code menu. When the **Command Palette** displays, enter **>Help: Get Started** in the search field to open the **Get Started** page.)
+   If the **Welcome** page isn't visible, you can display it by selecting **Help > Welcome** on the menu. (Alternatively, you can display the **Welcome** page by opening the **Command Palette** using the keyboard shortcut <kbd>Shift+Ctrl+P</kbd> on a Windows computer or <kbd>Shift+Cmd+P</kbd> on a macOS, or by selecting **View > Command Palette** from the Visual Studio Code menu. When the **Command Palette** displays, enter **>Help: Welcome** in the search field to open the **Welcome** page.)
 
-1. Select **Open folder** in the **Start** list of the **Get Started** page, or select **File > Open Folder** from the Visual Studio Code menu.
+1. Select **Open folder** in the **Start** list of the **Welcome** page, or select **File > Open Folder** from the Visual Studio Code menu.
 
    :::image type="content" source="../media/vs-code-open-folder.png" alt-text="Screenshot of the Windows operating system folder open dialog." lightbox="../media/vs-code-open-folder.png":::
 
@@ -21,6 +21,10 @@ In this unit, you'll create a small project structure using Visual Studio Code. 
 1. Navigate to the location where you want to create the new folder for your website, and select **New Folder**.
 
 1. Name the folder **simple-website**, and then select **Select Folder**.
+
+    > [!IMPORTANT]
+    > If a **Visual Studio Code** dialog appears, select **Trust the authors of all files in the parent folder...**; this is the Workspace Trust feature that lets you decide whether your project folders should allow or restrict automatic code execution. You just created the folder, so it's safe.
+
 
 ## Create some files
 
