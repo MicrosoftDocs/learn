@@ -1,6 +1,6 @@
 Azure Monitor delivers a comprehensive solution for collecting, analyzing, and acting on telemetry from your cloud and on-premises environments. 
 
-The following diagram is a high-level view of Azure Monitor.
+The following diagram is a high-level view of Azure *Monitor*.
 
 * At the center of the diagram, you'll find the data stores for metrics and logs and changes. These data stores are the fundamental types of data used by Azure Monitor.
 * On the left are the sources of monitoring data that populate the data stores.
