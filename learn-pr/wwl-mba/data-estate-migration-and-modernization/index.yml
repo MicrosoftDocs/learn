@@ -29,7 +29,6 @@ subjects:
 - data-management
 - migration
 units:
-- learn-wwl.data-estate-migration-and-modernization.1-introduction-to-microsoft-data-estate-migration-and-modernization
 - learn-wwl.data-estate-migration-and-modernization.2-data-modernization
 - learn-wwl.data-estate-migration-and-modernization.3-globally-distributed-data
 - learn-wwl.data-estate-migration-and-modernization.4-cloud-scale-analytics
