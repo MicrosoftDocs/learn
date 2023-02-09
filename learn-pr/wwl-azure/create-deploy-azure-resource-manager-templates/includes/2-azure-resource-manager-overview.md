@@ -1,3 +1,4 @@
+
 When a user sends a request from any of the Azure tools, APIs, or SDKs, Resource Manager receives the request. It authenticates and authorizes the request. Resource Manager sends the request to the Azure service, which takes the requested action. Because all requests are handled through the same API, you see consistent results and capabilities in all the different tools.
 
 The following image shows the role Azure Resource Manager  plays in handling Azure requests.

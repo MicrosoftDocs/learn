@@ -20,7 +20,7 @@ There are various API frameworks and standards. API Management provides you with
 |Type  |Details |
 |---------|---------|
 |**Blank API**|You can import an API with a blank API definition. You then manually specify all the required parameters. |
-|**Open API**|Open API is a specification that documents all the endpoints and operations for RESTful APIs, and all input and output parameters. OpenAPI was originally called Swagger.|
+|**OpenAPI**|OpenAPI is a specification that documents all the endpoints and operations for RESTful APIs, and all input and output parameters. OpenAPI was originally called Swagger.|
 |**WADL**| Web Application Description Language is an XML description of HTTP-based web services. It's a simpler format and more lightweight than WSDL.|
 |**WSDL**| Web Service Description Language is an XML description of any network service, not just HTTP.|
 |**Logic App**| Logic apps are used to orchestrate and automate workflows and integrations with various data sources.|
@@ -64,7 +64,8 @@ Policies can be viewed in the **Design** tab.
 
 ![Screenshot of Azure portal showing API configuration for all operations with base policies highlighted for inbound, outbound, and backend sections.](../media/4-policies-1.png)
 
-You can also use the Design tab to add new policies.
+You can also use the **Design** tab to add new policies.
+
 ![Screenshot of Azure portal showing inbound policy options for API configuration.](../media/4-policies-2.png)
 
 ## Product

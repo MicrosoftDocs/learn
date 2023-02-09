@@ -1,3 +1,4 @@
+
 Containers and blobs support custom metadata, represented as HTTP headers. Metadata headers can be set on a request that creates a new container or blob resource, or on a request that explicitly creates a property on an existing resource. 
 
 ##  Metadata header format

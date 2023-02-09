@@ -1,3 +1,4 @@
+
 The eDiscovery and audit solutions in Microsoft Purview can help organizations identify, collect, and audit information in a rapid and effective manner, to meet legal requirements.
 
 Now that you’ve completed this module, you'll be able to:
