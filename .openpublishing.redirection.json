@@ -20174,6 +20174,11 @@
       "source_path": "learn-pr/wwl-mba/data-estate-migration-and-modernization/1-Introduction-to-Microsoft-data-estate-migration-and-modernization.md",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/data-estate-migration-and-modernization/2-Data-modernization.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     }
   ]
 }
