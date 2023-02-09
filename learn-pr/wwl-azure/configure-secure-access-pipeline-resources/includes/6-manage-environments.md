@@ -1,14 +1,14 @@
-You can use Environments to isolate different application stages, such as development, testing, and production. Azure DevOps provides an environment management feature that makes it easy to manage the environments used in your pipelines. In this unit, we will learn how to configure and manage environments and how to use them in YAML pipelines.
+You can use Environments to isolate different application stages, such as development, testing, and production. Azure DevOps provides an environment management feature that makes it easy to manage the environments used in your pipelines. In this unit, you'll learn how to configure and manage environments and how to use them in YAML pipelines.
 
 ## Why use Environment in Azure DevOps?
 
-Using Environments in Azure DevOps will provide traceability from code to the physical deployment targets, improve resource health/availability visibility, and support zero downtime deployments using deployment strategies (runOnce, canary, blueGreen, and rolling). Also, you can easily manage the deployment of the application to different stages.
+Using Environments in Azure DevOps provides traceability from code to the physical deployment targets, improve resource health/availability visibility, and support zero downtime deployments using deployment strategies (runOnce, canary, blueGreen, and rolling). Also, you can easily manage the deployment of the application to different stages.
 
 ## Step 1: Configuring Environments
 
 While an environment is a grouping of resources, the resources represent actual deployment targets. The Kubernetes resource and virtual machine resource types are currently supported.
 
-1. Log in to your Azure DevOps account.
+1. Sign-in to your Azure DevOps organization.
 2. Go to the project for which you want to configure environments.
 3. Go to the Environments, under Pipelines.
 4. Click on the Create environment button.
@@ -36,7 +36,7 @@ While an environment is a grouping of resources, the resources represent actual 
 
 ## Step 3: Using Environments in YAML Pipelines
 
-Here is an example YAML pipeline that deploys an application to the Development environment:
+Here's an example YAML pipeline that deploys an application to the Development environment:
 
 ```YAML
 - stage: deploy
@@ -55,7 +55,7 @@ Here is an example YAML pipeline that deploys an application to the Development 
 
 It allows you to deploy the application to different environments by changing the environment name in the env section.
 
-For more details about Environments, see:
+For more information about Environments, see:
 
 - [Create and target an environment.](https://learn.microsoft.com/azure/devops/pipelines/process/environments)
 - [Manage multiple environments by using Bicep and Azure Pipelines](https://learn.microsoft.com/training/modules/manage-multiple-environments-using-bicep-azure-pipelines/)

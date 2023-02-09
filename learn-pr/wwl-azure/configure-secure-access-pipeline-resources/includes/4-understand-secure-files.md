@@ -1,4 +1,4 @@
-It is important to keep sensitive files such as certificates, private keys, or SSH Keys securely stored and protected from unauthorized access. Azure DevOps provides a secure file storage solution called Secure Files, which allows you to store and manage sensitive files within your projects securely.
+It's important to keep sensitive files such as certificates, private keys, or SSH Keys securely stored and protected from unauthorized access. Azure DevOps provides a secure file storage solution called Secure Files, which allows you to store and manage sensitive files within your projects securely.
 
 ## Why use Secure Files
 
@@ -12,7 +12,7 @@ Secure Files help to maintain the security and privacy of sensitive files, reduc
 > [!IMPORTANT]
 > These files can be stored on the server without committing them to your repository.
 
-In this unit, you'll go through the steps to configure Secure Files in Azure DevOps and demonstrate how to access these files in your pipelines.
+In this unit, you go through the steps to configure Secure Files in Azure DevOps and demonstrate how to access these files in your pipelines.
 
 ## Step 1: Creating a Secure File
 
@@ -67,7 +67,7 @@ In this unit, you'll go through the steps to configure Secure Files in Azure Dev
 
     ![Screenshot of Azure Pipelines showing how to rerun the pipeline after Secure Files authorization.](../media/rerun-authorized-secure-file.png)
 
-8. The pipeline will download the secure file to the agent folder.
+8. The pipeline downloads the secure file to the agent folder.
 
     ![Screenshot of Azure Pipelines showing the downloaded secure file log.](../media/run-pipeline-download-secure-file.png)
 
@@ -76,4 +76,4 @@ In this unit, you'll go through the steps to configure Secure Files in Azure Dev
 
 Secure Files in Azure DevOps is an essential tool for storing and protecting sensitive files in your projects. Ensure your sensitive files are securely accessible to authorized users in your pipelines.
 
-For more details about Secure Files (YAML or classic UI), see: [Use secure files](https://learn.microsoft.com/azure/devops/pipelines/library/secure-files/).
+For more information about Secure Files (YAML or classic UI), see: [Use secure files](https://learn.microsoft.com/azure/devops/pipelines/library/secure-files/).

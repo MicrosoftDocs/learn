@@ -9,7 +9,7 @@ metadata:
   ms.author: lumac
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1
+durationInMinutes: 4
 content: |
 quiz:
   questions:
@@ -17,13 +17,13 @@ quiz:
     choices:
     - content: "Store it as plain text in environment variables."
       isCorrect: false
-      explanation: "Incorrect. Store it as plain text in environment variables will make it insecure and accessible to unauthorized users."
+      explanation: "Incorrect. Store it as plain text in environment variables make it insecure and accessible to unauthorized users."
     - content: "Store it as encrypted variables."
       isCorrect: true
-      explanation: "Correct. Storing sensitive information as encrypted variables is considered the best practice as it provides an additional layer of security and encryption to the data, making it secure and inaccessible to unauthorized users."
+      explanation: "Correct. Storing sensitive information as encrypted variables is considered the best practice as it provides an extra layer of security and encryption to the data, making it secure and inaccessible to unauthorized users."
     - content: "Store it as plain text in pipeline YAML."
       isCorrect: false
-      explanation: "Incorrect. Store it as plain text in pipeline YAML will make it insecure and accessible to unauthorized users."
+      explanation: "Incorrect. Store it as plain text in pipeline YAML makes it insecure and accessible to unauthorized users."
   - content: "What is the purpose of using Variable Groups in Azure DevOps?"
     choices:
     - content: "To share variables across multiple pipelines and encrypt sensitive information."
