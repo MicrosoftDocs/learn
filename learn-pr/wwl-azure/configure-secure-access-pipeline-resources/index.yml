@@ -12,13 +12,13 @@ title: Configure secure access to pipeline resources
 summary: "This module is designed to help learners understand the importance of pipeline security and how to secure pipeline resources using Azure DevOps. The module covers fundamental concepts and best practices for secure agent pools, secret variables, files and storage, service connections, environments, and repositories."
 abstract: |
   By the end of this module, you'll be able to:
-    - "Identify and mitigate common security threats"
-    - "Configure pipeline access to specific agent pools"
-    - "Manage secret variables and variable groups"
-    - "Secure files and storage"
-    - "Configure service connections"
-    - "Manage environments"
-    - "Secure repositories"
+    - Identify and mitigate common security threats
+    - Configure pipeline access to specific agent pools
+    - Manage secret variables and variable groups
+    - Secure files and storage
+    - Configure service connections
+    - Manage environments
+    - Secure repositories
 prerequisites: |
   - None
 iconUrl: /training/achievements/generic-trophy.svg

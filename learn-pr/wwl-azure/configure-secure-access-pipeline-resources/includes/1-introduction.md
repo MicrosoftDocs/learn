@@ -1,5 +1,3 @@
-# Introduction to Implement security through a pipeline using DevOps
-
 While a DevOps culture enables development and operations teams to deploy applications faster, going faster over a cliff doesn't help.
 
 Security is a crucial part of DevOps. DevSecOps is a continuous and ongoing effort that requires the attention of everyone.
@@ -14,7 +12,7 @@ Securing applications is a continuous process encompassing secure infrastructure
 
 You'll learn best practices for securing pipelines in Azure DevOps, how to configure secure access to pipeline resources, secure access to Azure Repos from pipelines, manage permissions, structure projects and repositories for security, extend pipelines with multiple templates, secure variables, and parameters, and manage identity for projects, pipelines, and agents.
 
-This module series is designed for developers, administrators, and IT professionals responsible for managing and securing pipelines in Azure DevOps. By the end of this journey, you'll have the skills to secure your pipelines.
+This module series is designed for the Implement security through a pipeline using DevOps credential made for developers, administrators, and IT professionals responsible for managing and securing pipelines in Azure DevOps. By the end of this journey, you'll have the skills to secure your pipelines.
 
 The course is divided into several modules, each covering a specific topic related to securing pipelines in Azure DevOps. Each module includes lectures, hands-on activities, quizzes, and challenges to help you apply your knowledge and practice what you have learned. At the end of each module, you take a final assessment to evaluate your understanding of the subject.
 

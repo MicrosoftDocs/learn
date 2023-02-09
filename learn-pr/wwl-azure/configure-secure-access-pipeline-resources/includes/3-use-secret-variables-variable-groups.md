@@ -47,7 +47,7 @@ You can add pipeline permissions to limit access to secret variables in a variab
 6. Add the pipeline you want to allow and have access to the Variable Group.
 7. (Optional) You can Open Access to all pipelines access the resource.
 
-    ![Screenshot of Azure DevOps project Library showing the steps to add users to the Variable Group.](../media/variable-groups-pipeline-permissions.png)
+    ![Screenshot of Azure DevOps project Library showing the steps to pipeline permissions in the Variable Group.](../media/variable-groups-pipeline-permissions.png)
 
 ## Challenge yourself
 
