@@ -3,7 +3,7 @@ uid: learn.wwl.describe-basic-security-capabilities-azure
 metadata:
   title: Describe basic security capabilities in Azure
   description: "Describe basic security capabilities in Azure"
-  ms.date: 09/29/2022
+  ms.date: 02/09/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -27,9 +27,9 @@ roles:
 - student
 products:
 - azure
+- azure-bastion
 - azure-ddos-protection
 - azure-firewall
-- azure-bastion
 - azure-web-application-firewall
 subjects:
 - cloud-security

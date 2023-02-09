@@ -1,3 +1,4 @@
+
 Modern programs, especially programs running in a cloud, generally have many components that are distributed in nature. Spreading configuration settings across these components can lead to hard-to-troubleshoot errors during an application deployment. Use App Configuration to store all the settings for your application and secure their access in one place.
 
 App Configuration offers the following benefits:
@@ -20,7 +21,7 @@ App Configuration complements Azure Key Vault, which is used to store applicatio
 
 ## Use App Configuration
 
-The easiest way to add an App Configuration store to your application is through a client library that Microsoft provides. Based on the programming language and framework, the following best methods are available to You.
+The easiest way to add an App Configuration store to your application is through a client library that Microsoft provides. Based on the programming language and framework, the following best methods are available to you.
 
 | Programming language and framework | How to connect |
 |--|--|

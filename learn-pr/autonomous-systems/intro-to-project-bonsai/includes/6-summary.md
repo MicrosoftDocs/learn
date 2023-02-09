@@ -13,6 +13,6 @@ You applied these criteria to a fictional soap manufacturing company. You should
 
 ## References
 
-- [Bonsai simulation partners](/bonsai/resources/sim-platform-support?azure-portal=true)
+- [Bonsai simulation partners](/autonomous-systems/bonsai-connectors/overview/simulation-partners)
 - [Project Bonsai](https://azure.microsoft.com/services/project-bonsai/)
 - [Bonsai documentation](/bonsai/?azure-portal=true)

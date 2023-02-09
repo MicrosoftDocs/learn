@@ -97,7 +97,7 @@ Now that we have a functional API, let's set up API Management:
     | **Instance details** |
     | Region | Choose the same location you used for the Redis Cache. |
     | Resource name | Choose a unique name. Make a note of it. You'll need it later on. |
-    | Organization name | BoardGames |
+    | Workspace name | BoardGames |
     | Administrator email | Enter your email address. |
     | **Pricing tier** |
     | Pricing tier | Consumption |
@@ -235,7 +235,7 @@ The cache needs to be configured to serve unique prices based on the *Height* qu
     </cache-lookup>
     ```
 
-1. Select **Save**.
+1. Select **Save**. 
 
 ## Test the new cache configuration
 

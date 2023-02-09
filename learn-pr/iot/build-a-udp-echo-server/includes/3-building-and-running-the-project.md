@@ -3,7 +3,7 @@ these steps.
 
 ## Step 1: Go to codespace
 
-1. Launch your browser and go to the forked samples repository, which you've done in a previous module. The link should look like this: https://github.com/lyour_githubJdl/azure-rtos-learn-samples
+1. Launch your browser and go to the forked samples repository, which you've done in a previous module. The link should look like this: `https://github.com/lyour_githubJdl/azure-rtos-learn-samples`
 1. Select Code and open the codespace you've created.
 1. Once the codespace is launched, in the Explorer pane file tree, expand and open the `courses/netxduo`folder, as illustrated by the following screenshot.
 

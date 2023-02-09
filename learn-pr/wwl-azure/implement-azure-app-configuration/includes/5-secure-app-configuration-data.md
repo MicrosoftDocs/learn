@@ -1,3 +1,4 @@
+
 In this unit you will learn how to secure your apps configuration data by using:
 
 * Customer-managed keys
@@ -43,7 +44,7 @@ When you resolve the endpoint URL from within the VNet hosting the private endpo
 
 ## Managed identities
 
-A managed identity from Azure Active Directory (AAD) allows Azure App Configuration to easily access other AAD-protected resources, such as Azure Key Vault. The identity is managed by the Azure platform. It does not require you to provision or rotate any secrets. 
+A managed identity from Azure Active Directory (Azure AD) allows Azure App Configuration to easily access other AAD-protected resources, such as Azure Key Vault. The identity is managed by the Azure platform. It does not require you to provision or rotate any secrets. 
 
 Your application can be granted two types of identities:
 
@@ -62,7 +63,7 @@ az appconfig identity assign \
 
 ### Add a user-assigned identity
 
-Creating an App Configuration store with a user-assigned identity requires that you create the identity and then assign its resource identifier to your store. The following Azure CLI examples create  a user-assigned identity called `myUserAssignedIdentity` and assigns it to an Azure App Configuration store named `myTestAppConfigStore`.
+Creating an App Configuration store with a user-assigned identity requires that you create the identity and then assign its resource identifier to your store. The following Azure CLI examples create  a user-assigned identity called `myUserAssignedIdentity` and assign it to an Azure App Configuration store named `myTestAppConfigStore`.
 
 Create an identity using the `az identity create` command:
 

@@ -1,3 +1,4 @@
+
 Microsoft Defender for Identity is a cloud-based security solution. It uses your on-premises Active Directory data (called signals) to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization. 
 
 Microsoft Defender for Identity provides security professionals managing hybrid environments functionality to:
