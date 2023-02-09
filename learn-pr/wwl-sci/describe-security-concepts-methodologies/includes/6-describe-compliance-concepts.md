@@ -1,4 +1,5 @@
 
+
 Data has become more important than ever. Organizations, institutions, and entire societies generate and rely on data to function on a day-to-day basis.  The sheer scale of data generated and the increasing reliance on it means that the privacy and protection of that data has become pivotal.  As organizations and institutions move their data to service provider clouds, with datacenters all over the world, additional considerations come into play.
 
 Government agencies and industry groups have issued regulations to help protect and govern the use of data.  From personal and financial information to data protection and privacy, organizations can be accountable for meeting dozens of regulations to be compliant.   Listed below are some important concepts and terms that relate to data compliance.
