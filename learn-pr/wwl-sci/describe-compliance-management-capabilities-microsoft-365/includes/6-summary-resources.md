@@ -1,3 +1,4 @@
+
 You've learned about the various tools provided by Microsoft Purview to manage compliance for your organization. You explored the compliance portal, which enables organizations to manage their compliance needs.  You learned how Compliance Manager and compliance score can help organizations manage, simplify, and improve compliance across their organization.
 
 Now that you’ve completed this module, you should be able to:

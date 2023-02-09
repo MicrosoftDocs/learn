@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Check your knowledge of the basics of web development
-  ms.date: 3/28/2022
+  ms.date: 2/8/2023
   author: mmpadget
   ms.author: quradic
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ quiz:
     - content: What is the main purpose of HTML?
       choices:
       - content: HTML is used to provide webpage structure.
-        explanation: Correct! HTMl provides the structural building blocks of a web page.
+        explanation: Correct! HTML provides the structural building blocks of a web page.
         isCorrect: true
       - content: HTML is used to style web pages.
         explanation: Incorrect. CSS is generally used for styling HTML elements.

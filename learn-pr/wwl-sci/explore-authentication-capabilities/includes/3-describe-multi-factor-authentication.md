@@ -1,3 +1,4 @@
+
 Multi-factor authentication requires more than one form of verification, such as a trusted device or a fingerprint scan, to prove that an identity is legitimate. It means that, even when an identity’s password has been compromised, a hacker can't access a resource.
 
 Multi-factor authentication dramatically improves the security of an identity, while still being simple for users. The extra authentication factor must be something that's difficult for an attacker to obtain or duplicate.

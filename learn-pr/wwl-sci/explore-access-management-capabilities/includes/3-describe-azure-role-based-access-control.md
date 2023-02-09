@@ -1,3 +1,4 @@
+
 Azure AD roles control permissions to manage Azure AD resources. For example, allowing user accounts to be created, or billing information to be viewed.  Azure AD supports built-in and custom roles. 
 
 Managing access using roles is known as **role-based access control (RBAC)**. Azure AD built-in and custom roles are a form of RBAC in that Azure AD roles control access to Azure AD resources.  This is referred to as Azure AD RBAC.

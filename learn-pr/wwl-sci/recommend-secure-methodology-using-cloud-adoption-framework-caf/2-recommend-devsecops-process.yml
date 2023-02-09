@@ -4,13 +4,11 @@ title: Recommend a DevSecOps process
 metadata:
   title: Recommend a DevSecOps process
   description: "Recommend a DevSecOps process"
-  ms.date: 01/06/2023
+  ms.date: 02/07/2023
   author: wwlpublish
   ms.author: hrasheed
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 20
 content: |
   [!include[](includes/2-recommend-devsecops-process.md)]

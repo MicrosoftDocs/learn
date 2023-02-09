@@ -144,7 +144,7 @@ Next, you'll add support for a color theme for your website. Begin by defining a
 
 :::image type="content" source="../media/light-theme-in-dev-tools.png" alt-text="Screenshot of the website with its light theme applied and the Developer Tools next to it showing the Elements panel with the HTML and CSS code." lightbox="../media/light-theme-in-dev-tools.png":::
 
-To learn more about viewing CSS styles in Developer Tools, check out the [Get started viewing and changing CSS](/microsoft-edge/devtools-guide-chromium/css/) article.
+To learn more about viewing CSS styles in Developer Tools, check out the [Get started viewing and changing CSS](/microsoft-edge/devtools-guide-chromium/css/?azure-portal=true) article.
 
 ## Add a dark theme
 

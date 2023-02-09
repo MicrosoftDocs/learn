@@ -1,3 +1,4 @@
+
 In this module, you learned how to:
 
 * Explain how Azure Monitor operates as the center of monitoring in Azure.

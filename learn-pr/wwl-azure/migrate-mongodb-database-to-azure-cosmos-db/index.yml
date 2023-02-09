@@ -2,8 +2,8 @@
 uid: learn.wwl.migrate-mongodb-database-to-azure-cosmos-db
 metadata:
   title: Migrate a MongoDB database to Azure Cosmos DB
-  description: "Migrate a MongoDB database to Azure Cosmos DB"
-  ms.date: 12/28/2022
+  description: "Online and offline migration option to Azure Cosmos DB API for MongoDB."
+  ms.date: 02/06/2023
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
