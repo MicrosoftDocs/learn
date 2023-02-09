@@ -366,8 +366,8 @@ We're going to use the **Test/Run** feature in *Developer* > *Code + Test* to te
 
 1. In the Developer menu on the left, select **Monitor** to see that the request has been logged to Application Insights. The **Monitor** pane appears for your function.
 
-1. Select **Configure**. The **Application Insights** pane appears for your trigger function.
+1. Select **Configure**. The **Application Insights** pane appears for your trigger function. Select **Turn on Application Insights**.
 
-1. Select **Create new resource**, and in the **New resource name** field, select your function app, and in the **Location** field, select the region you initially associated with your function app.
+1. In the **New resource name** field, select your function app, and in the **Location** field, select the region you initially associated with your function app.
 
-1. Select **OK**.
+1. Select **Apply**, then select **Yes**.
