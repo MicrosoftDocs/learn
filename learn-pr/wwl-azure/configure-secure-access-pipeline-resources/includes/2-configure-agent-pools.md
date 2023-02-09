@@ -42,4 +42,4 @@ By configuring pipeline access to agent pools, you can ensure that your pipeline
 
 Your pipeline is ready to run from the agent you select.
 
-For more information about Agents and Pools, see: [Manage Azure Pipeline agents and pools.](https://learn.microsoft.com/training/modules/manage-azure-pipeline-agents-pools/
+For more information about Agents and Pools, see: [Manage Azure Pipeline agents and pools.](https://learn.microsoft.com/training/modules/manage-azure-pipeline-agents-pools/)
