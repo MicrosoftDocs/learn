@@ -12,7 +12,7 @@ Let’s start by creating an Azure Function App in the portal.
 
     The **Create a resource** pane appears.
 
-1. In the **Create a resource** menu, select **Compute**, and then select **Function App** from the results. Optionally, you can enter **Function App** in the search bar, and press <kbd>Enter</kbd>. On the **Function App** pane that appears, select **Create**. The **Create Function App** pane appears.
+1. In the **Create a resource** menu, select **Web**, and then select **Function App** from the results. Optionally, you can enter **Function App** in the search bar, and press <kbd>Enter</kbd>. On the **Function App** pane that appears, select **Create**. The **Create Function App** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -24,7 +24,7 @@ Let’s start by creating an Azure Function App in the portal.
     | **Instance Details** |
     | Function App name | *\<your-webapp-name\>*. Enter a globally unique name for your function app. |
     | Publish | Code |
-    | Runtime stack | Select one of the languages supported for in-portal development: **.NET**, **Node.js**, **Python**, or **PowerShell Core**.  |
+    | Runtime stack | Select one of the languages supported for in-portal development: **.NET**, **Node.js**, or **PowerShell Core**.  |
     | Version | Use the suggested default version of your language runtime. |
     | Region | Select a location close to you. |
     | **Operating system** |
@@ -43,7 +43,7 @@ Let’s start by creating an Azure Function App in the portal.
 
 1. When deployment is complete, select **Go to resource**. The **Overview** pane for your *Function App* appears.
 
-## Create a timer-triggered function
+## Create and configure a timer-triggered function
 
 Let's create a timer trigger in your function.
 
@@ -51,25 +51,15 @@ Let's create a timer trigger in your function.
 
 1. On the command bar, select **Create**. It may take a few moments for your permissions to propagate to use this service. The **Create function** pane appears.
 
-1. Under **Select a template**, select **Timer trigger**, and then select **Create**. The **TimerTrigger1** *Function* pane appears.
+1. Under **Select a template**, select **Timer trigger**.
 
-## Configure the timer trigger
-
-You've created an Azure function app with logic to print a message to the log window. We're going to set the schedule of the timer to run every 20 seconds.
-
-1. In the **TimerTrigger1** menu, select **Integration**. The **Integration** pane for your time function appears.
-
-1. In the **Trigger** box, select the **Timer (myTimer)** link. The **Edit Trigger** pane appears.
-
-1. Enter the following value into the **Schedule** field.
+1. Under **Template details**, enter the following value into the **Schedule** field, and then select **Create**.
 
     ```log
     */20 * * * * *
     ```
 
     The value in this parameter represents the CRON expression with six places for time precision: {second} {minute} {hour} {day} {month} {day-of-week}. The first place value represents every 20 seconds.
-
-1. In the command bar, select **Save** to configure your timer trigger.
 
 ## Test the timer
 
@@ -80,10 +70,12 @@ Now that we've configured the timer, it will invoke the function on the interval
     > [!NOTE]
     > Azure automatically provides a default name for a new trigger that you create. **TimerTrigger1** is default value that you can change when you create a new trigger.
 
-1. In the command bar, select **Test/Run**. In the **Input**  **Output** pane, select **Run**. The **Logs** session pane opens at the bottom of the page.
+1. The **Logs** session pane opens at the bottom of the page. Select the **App Insight Logs** drop-down, and then select **Filesystem Logs**. Select **OK** when the **Switching to filesystem based logs...** message displays.
+
+    :::image type="content" source="../media/4-azure-function-logs.png" alt-text="Screenshot that shows the function Code + Test pane with the Filesystem Log displayed.":::
 
 1. Observe that a new message arrives every 20 seconds in the log pane.
 
-1. To stop the function, close the *Input/Output* pane, and then in the command bar of the *Logs* pane, select **Stop**.
+1. To stop the function, select **Stop** in the command bar of the *Logs* pane.
 
 1. To disable the function, in the **TimerTrigger1** menu, select **Overview**, and then in the command bar, select **Disable**.
