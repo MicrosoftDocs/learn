@@ -1,4 +1,5 @@
-Any company, large or small, can be the target of a serious network attack. The nature of these **attacks** might be to make a statement, or because the attacker wanted a challenge.
+
+Any company, large or small, can be the target of a serious network attack. The nature of these attacks might be to make a statement, or because the attacker wanted a challenge.
 
 ## Distributed Denial of Service attacks
 
