@@ -1,13 +1,13 @@
-Microsoft Defender for Cloud is a **Cloud Security Posture Management (CSPM)** and **Cloud Workload Protection Platform (CWPP)** for all of your **Azure**, **on-premises**, and **multi-cloud** (Amazon AWS and Google GCP) **resources**. Defender for Cloud fills three vital needs as you manage the security of your resources and workloads in the cloud and on-premises:
+Microsoft Defender for Cloud is a **Cloud Security Posture Management (CSPM)** and **Cloud Workload Protection Platform (CWPP)** for all of your **Azure**, **on-premises**, and **multicloud** (Amazon AWS and Google GCP) **resources**. Defender for Cloud fills three vital needs as you manage the security of your resources and workloads in the cloud and on-premises:
 
 For an interactive overview of how to Manage your cloud security posture with Microsoft Defender for Cloud, click on the image below.<br>
 
 [:::image type="content" source="../media/manage-your-cloud-security-posture-with-microsoft-defender-for-cloud-landing-page-c30d6581.png" alt-text="Screenshot of the interactive guide landing page for Manage your cloud security posture with Microsoft Defender for Cloud.":::
 ](https://mslearn.cloudguides.com/guides/Manage%20your%20cloud%20security%20posture%20with%20Microsoft%20Defender%20for%20Cloud)
 
-Microsoft Defender for Cloud is a **Cloud Security Posture Management (CSPM)** and **Cloud Workload Protection Platform (CWPP)** for all of your Azure, on-premises, and multi-cloud (Amazon AWS and Google GCP) resources. Defender for Cloud fills **three vital needs** as you manage the security of your resources and workloads in the cloud and on-premises:<br>
+Microsoft Defender for Cloud is a **Cloud Security Posture Management (CSPM)** and **Cloud Workload Protection Platform (CWPP)** for all of your Azure, on-premises, and multicloud (Amazon AWS and Google GCP) resources. Defender for Cloud fills **three vital needs** as you manage the security of your resources and workloads in the cloud and on-premises:<br>
 
-:::image type="content" source="../media/defender-for-cloud-synopsis-e0fdf519.png" alt-text="Image descibing how Defender for Cloud fills the need of three vital areas as you manage the security of your resources and workloads in the cloud and on-premises.":::
+:::image type="content" source="../media/defender-for-cloud-synopsis-e0fdf519.png" alt-text="Image describing how Defender for Cloud fills the need of three vital areas as you manage the security of your resources and workloads in the cloud and on-premises.":::
 <br>
 
  -  **Defender for Cloud secure score continually assesses** your security posture so you can track new security opportunities and precisely report on the progress of your security efforts.
@@ -33,8 +33,8 @@ Defender for Cloud continually assesses your resources, subscriptions, and organ
 As soon as you open Defender for Cloud for the first time, Defender for Cloud:<br>
 
  -  **Generates a secure score** for your subscriptions based on an assessment of your connected resources compared with the guidance in the Microsoft cloud security benchmark. Use the score to understand your security posture and the compliance dashboard to review your compliance with the built-in benchmark. When you've enabled the enhanced security features, you can customize the standards used to assess your compliance and add other regulations such as the National Institute of Standards and Technology (NIST) and Azure Center for Internet Security (CIS) or organization-specific security requirements. You can also apply recommendations and score based on the AWS Foundational Security Best practices standards.
- -  **Provides hardening recommendations** based on any identified security misconfigurations and weaknesses. Use these security recommendations to strengthen the security posture of your organization's Azure, hybrid, and multi-cloud resources.
- -  **Analyze and secure your attack paths** through the cloud security graph, which is a graph-based context engine that exists within Defender for Cloud. The cloud security graph collects data from your multi-cloud environment and other data sources. For example, the cloud assets inventory, connections and lateral movement possibilities between resources, exposure to the internet, permissions, network connections, vulnerabilities, and more. The data collected is then used to build a graph representing your multi-cloud environment.
+ -  **Provides hardening recommendations** based on any identified security misconfigurations and weaknesses. Use these security recommendations to strengthen the security posture of your organization's Azure, hybrid, and multicloud resources.
+ -  **Analyze and secure your attack paths** through the cloud security graph, which is a graph-based context engine that exists within Defender for Cloud. The cloud security graph collects data from your multicloud environment and other data sources. For example, the cloud assets inventory, connections and lateral movement possibilities between resources, exposure to the internet, permissions, network connections, vulnerabilities, and more. The data collected is then used to build a graph representing your multicloud environment.
     
     Attack path analysis is a graph-based algorithm that scans the cloud security graph. The scans expose exploitable paths that attackers may use to breach your environment to reach your high-impact assets. Attack path analysis exposes those attack paths and suggests recommendations as to how best to remediate the issues that will break the attack path and prevent a successful breach.
     
@@ -50,7 +50,7 @@ Defender for Cloud offers security alerts that are powered by Microsoft Threat I
 
 Because Defender for Cloud is an Azure-native service, many Azure services are monitored and protected without needing any deployment, but you can also add resources that are on-premises or in other public clouds.
 
-When necessary, Defender for Cloud can automatically deploy a Log Analytics agent to gather security-related data. For Azure machines, deployment is handled directly. For hybrid and multi-cloud environments, Microsoft Defender plans are extended to non-Azure machines with the help of **Azure Arc**. CSPM features are extended to multi-cloud machines without the need for any agents.
+When necessary, Defender for Cloud can automatically deploy a Log Analytics agent to gather security-related data. For Azure machines, deployment is handled directly. For hybrid and multicloud environments, Microsoft Defender plans are extended to non-Azure machines with the help of **Azure Arc**. CSPM features are extended to multicloud machines without the need for any agents.
 
 ## Defend your Azure-native resources
 
@@ -72,7 +72,7 @@ Defender for Cloud can protect resources in other clouds (such as Amazon Web Ser
 
 For example, if you've connected an Amazon Web Services (AWS) account to an Azure subscription, you can enable any of these protections:
 
- -  **Defender for Cloud's CSPM features** extend to your AWS resources. This agentless plan assesses your AWS resources according to AWS-specific security recommendations, and these are included in your secure score. The resources will also be assessed for compliance with built-in standards specific to AWS (AWS Center for Internet Security (CIS), AWS Payment Card Industry (PCI) Data Security Standards (DSS), and AWS Foundational Security Best Practices). Defender for Cloud's asset inventory page is a multi-cloud enabled feature helping you manage your AWS resources alongside your Azure resources.
+ -  **Defender for Cloud's CSPM features** extend to your AWS resources. This agentless plan assesses your AWS resources according to AWS-specific security recommendations, and these are included in your secure score. The resources will also be assessed for compliance with built-in standards specific to AWS (AWS Center for Internet Security (CIS), AWS Payment Card Industry (PCI) Data Security Standards (DSS), and AWS Foundational Security Best Practices). Defender for Cloud's asset inventory page is a multicloud enabled feature helping you manage your AWS resources alongside your Azure resources.
  -  **Microsoft Defender for Kubernetes extends** its container threat detection and advanced defenses to your Amazon Elastic Kubernetes Service (EKS) Linux clusters.
  -  **Microsoft Defender for Servers** brings threat detection and advanced defenses to your Windows and Linux Elastic Compute Cloud 2 (EC2) instances. This plan includes the integrated license for Microsoft Defender for Endpoint, security baselines and OS level assessments, vulnerability assessment scanning, adaptive application controls (AAC), file integrity monitoring (FIM), and more.
 
