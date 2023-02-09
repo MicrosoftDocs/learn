@@ -3,7 +3,7 @@ An organization's data is constantly growing and users are storing and sharing d
 
 Microsoft Purview is designed to address the challenges associated with the rapid growth of data and to help enterprises get the most value from their information assets.
 
-The Microsoft Purview governance portal provides a unified data governance service that helps you manage your on-premises, multi-cloud, and software-as-a-service (SaaS) data. The Microsoft Purview governance portal allows you to:
+The Microsoft Purview governance portal provides a unified data governance service that helps you manage your on-premises, multicloud, and software-as-a-service (SaaS) data. The Microsoft Purview governance portal allows you to:
 
 - Create a holistic, up-to-date map of your data landscape with automated data discovery, sensitive data classification, and end-to-end data lineage.
 - Enable data curators to manage and secure your data estate.
