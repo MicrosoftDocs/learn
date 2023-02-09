@@ -1,4 +1,4 @@
-Many organizations have existing policies and device management infrastructure that's only being "maintained." For example, you might have 20-year-old group policies, and don't have the details about why they were added, or possibly even what they do. When considering a move to the cloud, instead of looking at what you've always done, determine the goal.
+Many organizations have existing policies and device-management infrastructure that's only being "maintained." For example, you might have 20-year-old group policies, and don't have the details about why they were added, or possibly even what they do. When considering a move to the cloud, instead of looking at what you've always done, determine the goal.
 
 > [!TIP]
 > If you're currently using multiple device-management solutions, now might be the time to upgrade to a single modern mobile device-management solution such as Microsoft Endpoint Manager.
@@ -12,4 +12,4 @@ To determine your future endpoint-management plan, you can start by assessing yo
 - Review the current structure of your organization's device and user groups
 - Determine the structure of the new groups that you can create in Endpoint Manager
 
-To determine the specific tasks you can follow to successfully assess your existing and future endpoint management and infrastructure, see [Microsoft Intune planning guide - Review existing policies and infrastructure](/mem/intune/fundamentals/intune-planning-guide?azure-portal=true#task-4-review-existing-policies-and-infrastructure)
+To determine the specific tasks you can follow to successfully assess your existing and future endpoint management and infrastructure, check out [Microsoft Intune planning guide - Review existing policies and infrastructure](/mem/intune/fundamentals/intune-planning-guide?azure-portal=true#task-4-review-existing-policies-and-infrastructure)

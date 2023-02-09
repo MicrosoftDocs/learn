@@ -1,14 +1,14 @@
 "Decision logic" and "branching logic" are terms programmers use to describe the change in execution path based on the evaluation of some expression. For example, we may write code that evaluates user input. If the value the user inputs is equal to the string value "a", execute one code block. If the value the user inputs is equal to the string value "b", execute a different code block. Here, we're changing the execution path of our application based on user input. This is what programmers mean by the terms "branching" and "decision".
 
-But before we work with the logic statements, let's start by talking about how to evaluate an expression.
+Before we work with the logic statements, let's start by talking about how to evaluate an expression.
 
-## What is an expression?
+## What's an expression?
 
 An expression is any combination of values (literal or variable), operators, and methods that return a single value. A statement is a complete instruction in C#, and statements are composed of one or more expressions.
 
 There are many different categories of expressions, but when working with decision statements, we're interested in Boolean expressions. In a Boolean expression, the runtime evaluates the values, operators, and methods to return a single true or false value.
 
-Boolean expressions are important, because the decision statements we'll learn about next use these to decide which block of code to execute.
+Boolean expressions are important because the decision statements we'll learn about next use these to decide which code block to execute.
 
 There are many different operators we can use depending on what we want to express in our code.
 
@@ -68,12 +68,12 @@ string value1 = " a";
 string value2 = "A ";
 Console.WriteLine(value1.Trim().ToLower() == value2.Trim().ToLower());
 ```
-When you run the code this time, the output will be `true`.
 
+When you run the code this time, the output will be `true`.
 
 ### Step 3 - Use the inequality operator
 
-Use the line comment operator `//` to comment out all of the code from the previous step. Then, add the following code below it in the code editor:
+Use the line comment operator `//` to comment out all of the code from the previous step. Then, add the following code underneath it in the code editor:
 
 ```csharp-interactive
 Console.WriteLine("a" != "a");
@@ -102,10 +102,9 @@ When working with numeric data types, you'll want to determine if one value is l
 - Greater than or equal to `>=`
 - Less than or equal to `<=`
 
-
 ### Step 4 - Use the Comparison operators
 
-Use the line comment operator `//` to comment out all of the code from the previous step. Then add, the following code below it in the code editor:
+Use the line comment operator `//` to comment out all of the code from the previous step. Then add, the following code underneath it in the code editor:
 
 ```csharp-interactive
 Console.WriteLine(1 > 2);
@@ -125,14 +124,14 @@ True
 
 ## Methods that return a Boolean value
 
-Some methods return a Boolean value. You can think of these types of methods as queries. In the following exercise, we'll use a built-in method on the String class to determine whether or not a larger string contains a specific word or phrase that may be interesting to us.
+Some methods return a Boolean value. You can think of these types of methods as queries. In the following exercise, we'll use a built-in method on the `String` class to determine whether or not a larger string contains a specific word or phrase that may be interesting to us.
 
 > [!NOTE]
 > Some data types have methods that perform helpful utility tasks. The String data type has many of these. Several return a Boolean value, including `Contains()`, `StartsWith()`, and `EndsWith()`. You can learn more about them in the Microsoft Learn module [Format alphanumeric data for presentation in C#](/training/modules/csharp-format-strings/).
 
 ### Step 5 - Use a method invocation expression
 
-Use the line comment operator `//` to comment out all of the code from the previous steps. Then, add the following code below it in the code editor:
+Use the line comment operator `//` to comment out all of the code from the previous steps. Then, add the following code underneath it in the code editor:
 
 ```csharp-interactive
 string pangram = "The quick brown fox jumps over the lazy dog.";
@@ -140,7 +139,7 @@ Console.WriteLine(pangram.Contains("fox"));
 Console.WriteLine(pangram.Contains("cow"));
 ```
 
-Now, run the code. You should get the following output.
+Now, run the code. You should get the following output:
 
 ```output
 True
@@ -151,7 +150,7 @@ False
 
 The term "Logical Negation" refers to the `!` operator. Some people simply call this the "not operator". Adding the `!` operator before a conditional expression like a method call checks to ensure the expression is false.
 
-And just to hopefully help you see the connections between these ideas, the following two lines of code do the same thing. The second line is more compact.
+And just to hopefully help you learn the connections between these ideas, the following two lines of code do the same thing. The second line is more compact.
 
 ```csharp
 // These two lines of code do the same thing:
@@ -170,7 +169,7 @@ Console.WriteLine(!pangram.Contains("fox"));
 Console.WriteLine(!pangram.Contains("cow"));
 ```
 
-Now, run the code. You should get the following output.
+Now, run the code. You should get the following output:
 
 ```output
 False

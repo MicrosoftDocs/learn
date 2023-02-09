@@ -2,7 +2,7 @@ In this unit, you'll see how change feed can help maintain referential integrity
 
 For this exercise, you'll complete the following steps:
 
-- Start Azure Cloud Shell and open Visual Studio Code to show your code for change feed.
+- Start Azure Cloud Shell and open the code editor to show your code for change feed.
 - Complete some C# code to highlight key concepts to understand.
 - Start the change feed processor so that it begins to listen to the productCategory container.
 - Query the product container for the category whose name you're changing and the number of products in that category.
@@ -10,9 +10,9 @@ For this exercise, you'll complete the following steps:
 - Query the new product container with the new category name, and count the number of products to ensure that they're all updated.
 - Change the name back to the original, and watch change feed propagate the changes back.
 
-## Start Azure Cloud Shell and open Visual Studio Code
+## Start Azure Cloud Shell and open the code editor
 
-To go to the code that you'll update for change feed, do the following:
+Go to the code that you'll update for change feed.
 
 1. In Cloud Shell, if necessary, change the current directory to the location of the project.
 
@@ -20,7 +20,7 @@ To go to the code that you'll update for change feed, do the following:
     cd mslearn-model-partition-data-azure-cosmos-db/modeling
     ```
 
-1. Start Visual Studio Code, and go to the *Program.cs* file.
+1. Open the *Program.cs* file in the code editor.
 
     ```bash
     code Program.cs
@@ -28,15 +28,13 @@ To go to the code that you'll update for change feed, do the following:
 
 1. You should now see the following code in Cloud Shell.
 
-    :::image type="content" source="../media/5-cloud-shell-vs-code.png" lightbox="../media/5-cloud-shell-vs-code.png" alt-text="Screenshot of Cloud Shell with Visual Studio Code, displaying a list of 'using' statements, the app namespace, and the start of the Program class.":::
+    :::image type="content" source="../media/5-cloud-shell-vs-code.png" lightbox="../media/5-cloud-shell-vs-code.png" alt-text="Screenshot of Cloud Shell with the code editor open, displaying a list of 'using' statements, the app namespace, and the start of the Program class.":::
 
 ## Complete the code for change feed
 
 Add code to handle the changes that are passed into the delegate, loop through each product for that category, and update them.
 
-1. Go to the function that starts the change feed processor.
-
-1. Select Ctrl+G, and then type **603** to go to that line in the file.
+1. Select Ctrl+G, and then type **603** to go to the function that starts the change feed processor.
 
 1. You should now see the following code:
 
@@ -69,7 +67,7 @@ Add code to handle the changes that are passed into the delegate, loop through e
 
     :::image type="content" source="../media/5-change-feed-function-delegate-code.png" lightbox="../media/5-change-feed-function-delegate-code.png" alt-text="Screenshot of the Cloud Shell window that displays the fully completed code for change feed.":::
 
-    By default, change feed runs every second. In scenarios where there are a lot of inserts or updates made in the watched container, the delegate might have more than one change. For this reason, you type the delegate `input` as `IReadOnlyCollection`.
+    By default, change feed runs every second. In scenarios where there are many inserts or updates made in the watched container, the delegate might have more than one change. For this reason, you type the delegate `input` as `IReadOnlyCollection`.
 
     This code snippet loops through all the changes in the delegate `input` and saves them as strings for `categoryId` and `categoryName`. It then adds a task to the task list with a call to another function that updates the product container with the new category name.
 

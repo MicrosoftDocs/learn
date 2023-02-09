@@ -1,11 +1,11 @@
-While your company strives to provide sufficient levels of isolation between its customers, it’s also trying to integrate its own existing virtual local area network (VLAN)-based infrastructure with Azure Stack HCI deployments. Your intention is to identify a solution that would allow for implementing such integration by using the same technologies that your internal Network team is already familiar with. In a search for the solution, you decide to evaluate the use of Azure Stack HCI SDN logical networks. 
+While your company strives to provide sufficient levels of isolation between its customers, it’s also trying to integrate its own existing virtual local area network (VLAN)-based infrastructure with Azure Stack HCI deployments. Your intention is to identify a solution that would allow for implementing such integration by using the same technologies with which your internal Network team is already familiar. In a search for the solution, you decide to evaluate the use of Azure Stack HCI SDN logical networks. 
 
 > [!NOTE]
 > In the context of Azure Stack HCI networking, a *customer* or a *tenant* is defined as the owner of a set of IP subnets that are deployed in an enterprise or a datacenter. A customer can be a corporation or an enterprise with multiple departments or business units in a private datacenter that require network isolation. It could also be a tenant in a public datacenter that’s hosted by a service provider.
 
 ## Describe Azure Stack HCI tenant logical networks
 
-Azure Stack HCI gives you the option to virtualize its network resources by implementing SDN virtual networks, and then using them to isolate the virtualized workloads. At the same time, you can also implement networking by using SDN logical networks. This process doesn’t depend on the overlay network model, but instead uses the traditional VLAN-based technology. In this way, it facilitates an integration with your existing environment.
+Azure Stack HCI gives you the option to virtualize its network resources by implementing SDN virtual networks, then using them to isolate the virtualized workloads. At the same time, you can also implement networking by using SDN logical networks. This process doesn’t depend on the overlay network model, but instead uses the traditional VLAN-based technology. In this way, it facilitates an integration with your existing environment.
 
 By modeling a VLAN-based network as an SDN logical network, you can apply network policies to workloads that are attached to these networks. For example, you can use the SDN distributed firewall to apply security access control lists (ACLs) to workloads that are attached to SDN logical networks. Applying the ACLs helps protect your VLAN-based workloads from both external and internal attacks. This is complimentary to existing hardware or software firewalls.
 
@@ -68,6 +68,6 @@ Using Windows Admin Center also simplifies deleting Azure Stack HCI tenant logic
 1. In Windows Admin Center, connect to the Azure Stack HCI cluster.
 1. In the **Tools** pane, in the **Networking** section, select **Logical networks**.
 1. On the **Logical networks** page, select the **Inventory** tab, select the logical network you intend to delete, and then select **Delete**.
-1. When prompted for confirmation, select **Yes**. 
+1. When prompted for confirmation, select **Yes**.
 
 :::image type="content" source="../media/2-delete-logical-network.png" alt-text="Screenshot of the logical networks pane in Windows Admin Center. A dialog box requests confirmation for deleting a tenant logical network." border="false" lightbox="../media/2-delete-logical-network.png":::

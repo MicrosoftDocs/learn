@@ -5,36 +5,36 @@ metadata:
   unitType: learning-content
   title: Create a user interface with Blazor components
   description: "Learn how to use JavaScript libraries in Blazor apps."
-  ms.date: 08/18/2021
-  author: csharpfritz
-  ms.author: jefritz
+  ms.date: 02/02/2023
+  author: IEvangelist
+  ms.author: dapine
   ms.topic: interactive-tutorial
   ms.prod: learning-blazor
-durationInMinutes: 10
+durationInMinutes: 5
 content: |
   [!include[](includes/2-create-user-interfaces-blazor-components.md)]
 quiz:
-    title: Check your knowledge
-    questions:
-    - content: "If you are going to include a JavaScript file on a Blazor page, what is the recommended way to reference it?"
+  title: Check your knowledge
+  questions:
+    - content: "If you are going to include a JavaScript file in Blazor, what is the recommended way to reference it?"
       choices:
-      - content: "Add a script tag on the Blazor page"
-        isCorrect: false
-        explanation: "Script tags shouldn't be added on Blazor pages because they won't render and load properly"
-      - content: "Add a script tag to the `Pages/_Host.cshtml file"
-        isCorrect: true
-        explanation: "The script tag should be added to the `_Host.cshtml` file so that it is available before the Blazor components need it"
-      - content: "Add a script tag to the Layout.razor file"
-        isCorrect: false
-        explanation: "The layout should not include script tags and it would be better referenced in another location"
-    - content: "Which method should you use to execute a JavaScript function from C# that returns void?"
+        - content: "Add a `script` tag on the Blazor page"
+          isCorrect: false
+          explanation: "Script tags shouldn't be added on Blazor pages because they won't render and load properly"
+        - content: "Add a `script` tag to the *Pages/_Host.cshtml* file"
+          isCorrect: true
+          explanation: "The `script` tag should be added to the *Pages/_Host.cshtml* file so that it is available before the Blazor components need it"
+        - content: "Add a `script` tag to the *Shared/MainLayout.razor* file"
+          isCorrect: false
+          explanation: "The layout should not include `script` tags and it would be better referenced in another location"
+    - content: "Which method should you use to execute a JavaScript function from C# that returns `void`?"
       choices:
-      - content: "InvokeVoidAsync"
-        isCorrect: true
-        explanation: "This asynchronous method will execute a JavaScript function and await its response"
-      - content: "Invoke"
-        isCorrect: false
-        explanation: "Invoke is not the method on the JavaScript runtime object in .NET that should be called"
-      - content: "InvokeAsync"
-        isCorrect: false
-        explanation: "The C# method needs to be told that it should not expect a return value from the JavaScript function.  This is not the correct choice"
+        - content: "`InvokeVoidAsync`"
+          isCorrect: true
+          explanation: "This asynchronous method will execute a JavaScript function and await its response"
+        - content: "`Invoke`"
+          isCorrect: false
+          explanation: "Invoke is not the method on the JavaScript runtime object in .NET that should be called"
+        - content: "`InvokeAsync`"
+          isCorrect: false
+          explanation: "The C# method needs to be told that it should not expect a return value from the JavaScript function. This isn't the correct choice"

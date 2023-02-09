@@ -50,7 +50,7 @@ When the code is rendered, all the names in the array are displayed:
 
 ## Keys and state
 
-If the data is modified, Vue.js needs to be able to refresh the appropriate parts of the display. When you're working with a list, it's best to update the individual item rather than the entire list. To allow Vue.js to find an individual item, give each displayed item a key. The key does *not* need to be part of the data; you can generate it by using the **index** of the array.
+If the data is modified, Vue.js needs to be able to refresh the appropriate parts of the display. When you're working with a list, it's best to update the individual item rather than the entire list. To allow Vue.js to find an individual item, give each displayed item a key. You don't have to add the key to your data object; you can generate it by using the **index** of the array.
 
 You can obtain the index by updating the `v-for` declaration, as shown in the following code:
 

@@ -13,7 +13,7 @@ To meet these objectives, you'll:
 
 ## Get the GitHub repository
 
-Here you make sure that your GitHub repository is set up to complete the rest of this module. You set it up by creating a new repository based on a template repository. The template repository contains the files you need to get started for this module. 
+Here you make sure that your GitHub repository is set up to complete the rest of this module. You set it up by creating a new repository based on a template repository. The template repository contains the files you need to get started for this module.
 
 The modules in this learning path are part of a progression. For learning purposes, each module has an associated GitHub template repository.
 
@@ -29,7 +29,7 @@ Run a template that sets up your GitHub repository.
 
 On the GitHub site, follow these steps to create a repository from the template:
 
-1. Select **Use this template**. 
+1. Select **Use this template**.
 
    :::image type="content" source="../media/4-template.png" alt-text="Screenshot of the GitHub interface showing the template repo, with the 'Use this template' button highlighted.":::
 
@@ -41,7 +41,7 @@ On the GitHub site, follow these steps to create a repository from the template:
 
    When you create your own repositories, you might want to make them private. In this module, you'll work with some features of GitHub that only work with public repositories and with GitHub Enterprise accounts.
 
-1. Select **Create repository from template**. 
+1. Select **Create repository from template**.
 
    :::image type="content" source="../media/4-repo-settings.png" alt-text="Screenshot of the GitHub interface showing the repo creation page.":::
 
@@ -49,13 +49,13 @@ On the GitHub site, follow these steps to create a repository from the template:
 
 ## Clone the repository
 
-You now have a copy of the template repository in your own account. You will now clone this repository locally so you can start work in it. 
+You now have a copy of the template repository in your own account. You will now clone this repository locally so you can start work in it.
 
 1. Select **Code** and select the copy icon.
 
    :::image type="content" source="../media/4-github-repository-clipboard.png" alt-text="Screenshot of the GitHub interface showing the new repository, with the repository U R L copy button highlighted.":::
 
-1. Open Visual Studio Code. 
+1. Open Visual Studio Code.
 
 1. Open a Visual Studio Code terminal window by selecting **Terminal** > **New Terminal**. The window usually opens at the bottom of the screen.
 
@@ -175,13 +175,13 @@ Next, create two workload identities in Azure AD: one for your test environment 
 
    ```azurepowershell
    $testApplicationRegistration = New-AzADApplication -DisplayName 'toy-website-environments-test'
-   New-AzADAppFederatedIdentityCredential `
+   New-AzADAppFederatedCredential `
       -Name 'toy-website-environments-test' `
       -ApplicationObjectId $testApplicationRegistration.Id `
       -Issuer 'https://token.actions.githubusercontent.com' `
       -Audience 'api://AzureADTokenExchange' `
       -Subject "repo:$($githubOrganizationName)/$($githubRepositoryName):environment:Test"
-   New-AzADAppFederatedIdentityCredential `
+   New-AzADAppFederatedCredential `
       -Name 'toy-website-environments-test-branch' `
       -ApplicationObjectId $testApplicationRegistration.Id `
       -Issuer 'https://token.actions.githubusercontent.com' `
@@ -193,13 +193,13 @@ Next, create two workload identities in Azure AD: one for your test environment 
 
    ```azurepowershell
    $productionApplicationRegistration = New-AzADApplication -DisplayName 'toy-website-environments-production'
-   New-AzADAppFederatedIdentityCredential `
+   New-AzADAppFederatedCredential `
       -Name 'toy-website-environments-production' `
       -ApplicationObjectId $productionApplicationRegistration.Id `
       -Issuer 'https://token.actions.githubusercontent.com' `
       -Audience 'api://AzureADTokenExchange' `
       -Subject "repo:$($githubOrganizationName)/$($githubRepositoryName):environment:Production"
-   New-AzADAppFederatedIdentityCredential `
+   New-AzADAppFederatedCredential `
       -Name 'toy-website-environments-production-branch' `
       -ApplicationObjectId $productionApplicationRegistration.Id `
       -Issuer 'https://token.actions.githubusercontent.com' `
@@ -312,7 +312,7 @@ You've created two workload identities, and resource groups that they can deploy
 
 1. In the **Value** field, paste the GUID from the first line of the terminal output. Don't include `AZURE_CLIENT_ID_TEST`, the colon, or any spaces in the value.
 
-1. Select **Add secret**. 
+1. Select **Add secret**.
 
    :::image type="content" source="../../includes/media/github-create-repository-secret-details-test-environment.png" alt-text="Screenshot of the GitHub interface showing the 'New Secret' page, with the name and value completed and the 'Add secret' button highlighted." border="true":::
 

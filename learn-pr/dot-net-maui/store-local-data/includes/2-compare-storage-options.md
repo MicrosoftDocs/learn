@@ -57,7 +57,7 @@ When you're working with loose files such XML files, you need to store them in a
 string path = FileSystem.AppDataDirectory;
 ```
 
-In this code, the **path** variable contains the file path to the location where you can store files for the application to use. You can read and write data to files in this folder using the techniques shown in the section **How to use the file system**.
+In this code, the **path** variable contains the file path to the location where you can store files for the application to use. You can read and write data to files in this folder using the techniques shown in the **When to use the file system** section.
 
 > [!NOTE]
 > The `FileSystem.AppDataDirectory` property is an abstraction of a device-specific path; it evaluates to different folders on Android, iOS, and WinUI3. This abstraction enables you to write code that references the sandbox in a manner that is independent of the platform on which it runs. Use this abstraction rather than referencing a device-specific path explicitly in your code.

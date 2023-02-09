@@ -20,5 +20,6 @@ By the end of this module, you'll be able to:
 - The ability to create a Docker container. If you're new to Docker, start with the [introduction to containers](/training/modules/intro-to-containers/).
 
 All exercises will use [Azure Cloud Shell](/azure/cloud-shell/overview), which already has all the needed tools installed. If you prefer to run the examples in your own terminal, you'll need to have the following tools installed first:
+
 - [Azure CLI](/azure/aks/kubernetes-walkthrough)
 - [Kubectl](/azure/aks/kubernetes-walkthrough#connect-to-the-cluster)

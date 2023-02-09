@@ -47,7 +47,7 @@ func main() {
 }
 ```
 
-In this code, notice that the `num` variable stores the value returned from the `givemeanumber()` function, and the variable *is available in all `if` branches*. However, if you try to print the value of the `num` variable outside the `if` block, you'll get an error like this:
+In this code, notice that the `num` variable stores the value returned from the `givemeanumber()` function, and the variable *is available in all `if` branches*. However, if you try to print the value of the `num` variable outside the `if` block, you'll get an error:
 
 ```go
 package main

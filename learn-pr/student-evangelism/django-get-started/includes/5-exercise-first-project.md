@@ -23,9 +23,9 @@ Now that the Django project has been created, let's look at the structure to see
 manage.py
 helloproject/
     __init__.py
+    asgi.py
     settings.py
     urls.py
-    asgi.py
     wsgi.py
 ```
 
@@ -57,7 +57,7 @@ Now that Django is installed, a project has been created, and we've examined the
 
 ## Create the Hello World app
 
-We've learned the basics about the Django framework and examined the folder structure of our project. Now it's time to create our first app! This **Hello, world!** app will help you understand how apps are created and how they work in unison with the Django project.
+We've learned the basics about the Django framework and examined the folder structure of our project. Now it's time to create our first app! The **Hello, world!** app will help you understand how apps are created and how they work in unison with the Django project.
 
 Inside the **terminal** window, run the following command to create the app.
 
@@ -107,4 +107,4 @@ Because apps and projects are separate in Django, you must register your app wit
 
 1. Save all files by selecting **File** > **Save all**.
 
-Congratulations! You have now created your first Django project and app. Next is to create a path and view to add some functionality.
+Congratulations! You've now created your first Django project and app. Next is to create a path and view to add some functionality.

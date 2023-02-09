@@ -37,8 +37,8 @@ Alongside the eight principles of Sustainable Software Engineering, there are tw
 
     Nothing happens in isolation, everything is connected, and small changes lead to significant changes. Even the act of normalizing a discussion about sustainability in technical meetings will empower others to raise their voices. That's how you create change in any organization.
 
-    As Sustainable Software Engineers, we believe that everyone has a part to play in the climate solution. Sustainable Software Engineering is inclusive. Whatever sector, industry, role, technology; there is always something you can do to have an impact.
+    As Sustainable Software Engineers, we believe that everyone has a part to play in the climate solution. Sustainable Software Engineering is inclusive. Whatever sector, industry, role, technology; there's always something you can do to have an impact.
 
 1. **Sustainability is enough, all by itself, to justify our work**
 
-    As Sustainable Software Engineers, we recognize there are many advantages to building sustainable applications. They are almost always cheaper, they are often more performant, they are often more resilient. But the primary reason we are practicing Sustainable Software Engineering is for sustainability; everything else is an added advantage.
+    As Sustainable Software Engineers, we recognize there are many advantages to building sustainable applications. They're almost always cheaper, they're often more performant, and they're often more resilient. But the primary reason we are practicing Sustainable Software Engineering is for sustainability; everything else is an added advantage.

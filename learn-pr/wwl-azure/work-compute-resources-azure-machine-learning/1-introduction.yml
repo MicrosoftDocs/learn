@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.work-compute-resources-azure-machine-learning.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Learn about working with compute targets in Azure Machine Learning. Specifically, you'll learn how to create and use a compute instance and compute cluster."
+  ms.date: 01/17/2023
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

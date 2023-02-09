@@ -1,3 +1,4 @@
+
 Assets include physical and virtual items such as laptops, databases, files, and virtual storage accounts. Securing business critical assets often relies on the security of underlying systems, like storage, data, endpoint devices, and application components. The most valuable technical assets are typically data and the availability of applications, such as business websites, production lines, and communications.
 
 Asset protection implements controls to support security architecture, standards, and policy. Each asset type and security requirement is unique. The security standards for any asset type should be consistently applied to all instances.
@@ -73,7 +74,7 @@ To get started with asset protection, we recommend that organizations take the f
 - **Focus on well-known resources first:** Think about virtual machines, networks, and identities in the cloud that the team is already familiar with. This technique allows you to make immediate progress and are often easier to manage and secure with native cloud tools like Microsoft Defender for Cloud.
 - **Start with vendor/industry baselines:** Start your security configuration with a well-known and proven solution, for example:
 
-  - **Security baselines in the Microsoft cloud security benchmark.** Microsoft provides security configuration guidance tailored to individual Azure services. These baselines apply the Azure security benchmarks to the unique attributes of each service. This approach enables security teams to secure each service and refine configurations as needed. For more information, see [Security baselines for Azure](/security/benchmark/azure/security-baselines-overview).
+  - **Security baselines in the Microsoft cloud security benchmark.** Microsoft provides security configuration guidance tailored to individual Azure services. These baselines apply the Microsoft cloud security benchmarks to the unique attributes of each service. This approach enables security teams to secure each service and refine configurations as needed. For more information, see [Security baselines for Azure](/security/benchmark/azure/security-baselines-overview).
   - **Microsoft security baselines.** Microsoft provides security configuration guidance for commonly used technologies including Windows, Microsoft Office, and Microsoft Edge. For more information, see [Microsoft security baselines](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/bg-p/Microsoft-Security-Baselines).Microsoft-security-baselines) for more information
   - **CIS benchmarks.** The Center for Internet Security (CIS) provides specific configuration guidance for many products and vendors. For more information, see [CIS benchmarks](https://www.cisecurity.org/cis-benchmarks/).
 

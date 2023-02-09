@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   - Familiarity with Azure Space.
   - Ability to navigate the Azure portal.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/azure-space-ground-station.svg
 levels:
 - beginner
 roles:

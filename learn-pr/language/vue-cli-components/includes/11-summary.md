@@ -4,5 +4,6 @@ You then explored some of the core capabilities of Vue components. Next, you saw
 
 Finally, you closed by seeing how custom events allow components to become interactive.
 
-## Additional resources
+## Other resources
+
 For information about publishing a Vue app, see [Publish an Angular, React, Svelte, or Vue JavaScript app with Azure Static Web Apps](/training/modules/publish-app-service-static-web-app-api/).

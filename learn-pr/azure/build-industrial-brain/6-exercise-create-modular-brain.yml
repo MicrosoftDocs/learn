@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.build-industrial-brain.exercise-create-brain
+title: Exercise - Create a modular brain
+metadata:
+  title: Exercise - Create a modular brain 
+  description: In this unit, we'll explain how to create a brain.
+  ms.date: 11/30/2022
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-exercise-create-modular-brain.md)] 

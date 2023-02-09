@@ -9,11 +9,11 @@ Azure Active Directory (Azure AD) and Azure role-based access control (Azure RBA
 
 First, remember that each Azure subscription is associated with a single Azure AD directory. Users, groups, and applications in that directory can manage resources in the Azure subscription. The subscriptions use Azure AD for single sign-on (SSO) and access management. You can extend your on-premises Active Directory to the cloud by using **Azure AD Connect**. This feature allows your employees to manage their Azure subscriptions by using their existing work identities. When you disable an on-premises Active Directory account, it automatically loses access to all Azure subscriptions connected with Azure AD.
 
-## What is Azure RBAC?
+## What's Azure RBAC?
 
 Azure role-based access control (Azure RBAC) is an authorization system built on Azure Resource Manager that provides fine-grained access management of resources in Azure. With Azure RBAC, you can grant the exact access that users need to do their jobs. For example, you can use Azure RBAC to let one employee manage virtual machines in a subscription while another manages SQL databases within the same subscription.
 
-#### What is Azure role-based access control?
+#### What's Azure role-based access control?
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2yEvk]
 
@@ -23,13 +23,13 @@ The following diagram depicts how the classic subscription administrator roles, 
 
 ![Diagram that depicts how the classic subscription administrator roles, Azure roles, and Azure AD roles are related at a high level.](../media/2-azuread-and-azure-roles.png)
 
-In the preceding diagram, a subscription is associated with only one Azure AD tenant. Also note that a resource group can have multiple resources but is associated with only one subscription. Although it’s not obvious from the diagram, a resource can be bound to only one resource group.
+In the preceding diagram, a subscription is associated with only one Azure AD tenant. Also note that a resource group can have multiple resources, but is associated with only one subscription. Although it’s not obvious from the diagram, a resource can be bound to only one resource group.
 
 ## What can I do with Azure RBAC?
 
 Azure RBAC allows you to grant access to Azure resources that you control. Suppose you need to manage access to resources in Azure for the development, engineering, and marketing teams. You’ve started to receive access requests, and you need to quickly learn how access management works for Azure resources.
 
-Here are some scenarios you can implement with Azure RBAC.
+Here are some scenarios you can implement with Azure RBAC:
 
 - Allow one user to manage virtual machines in a subscription and another user to manage virtual networks
 - Allow a database administrator group to manage SQL databases in a subscription
@@ -42,7 +42,7 @@ In several areas in the Azure portal, you'll see a pane named **Access control (
 
 The following shows an example of the Access control (IAM) pane for a resource group. In this example, Alain has been assigned the Backup Operator role for this resource group.
 
-![Screenshot of the Azure portal showing the Access control-Role assignment pane with the Backup operator section highlighted.](../media/2-resource-group-access-control.png)
+![Screenshot of the Azure portal showing the Access control Role assignment pane with the Backup operator section highlighted.](../media/2-resource-group-access-control.png)
 
 ## How does Azure RBAC work?
 
@@ -83,13 +83,13 @@ Once you have determined the who, what, and where, you can combine those element
 
 The following example shows how the Marketing group has been assigned the Contributor role at the sales resource group scope.
 
-![An illustration showing a sample role assignment process for Marketing group, which is a combination of security principal, role definition, and scope. The Marketing group falls under the Group security principal and has  a Contributor role assigned for  the Resource group scope.](../media/2-rbac-overview.png)
+![An illustration showing a sample role assignment process for Marketing group, which is a combination of security principal, role definition, and scope. The Marketing group falls under the Group security principal and has a Contributor role assigned for the Resource group scope.](../media/2-rbac-overview.png)
 
 ## Azure RBAC is an allow model
 
-Azure RBAC is an allow model. This means that when you're assigned a role, Azure RBAC allows you to perform certain actions, such as read, write, or delete. So, if one role assignment grants you read permissions to a resource group and a different role assignment grants you write permissions to the same resource group, you will have read and write permissions on that resource group.
+Azure RBAC is an *allow* model. This means that when you're assigned a role, Azure RBAC allows you to perform certain actions, such as read, write, or delete. So, if one role assignment grants you read permissions to a resource group and a different role assignment grants you write permissions to the same resource group, you will have read and write permissions on that resource group.
 
-Azure RBAC has something called `NotActions` permissions. You can use `NotActions` to create a set of not allowed permissions. The access granted by a role, the effective permissions, is computed by subtracting the `NotActions` operations from the `Actions` operations. For example, the [Contributor](/azure/role-based-access-control/built-in-roles#contributor) role has both `Actions` and `NotActions`. The wildcard (*) in `Actions` indicates that it can perform all operations on the control plane. Then you subtract the following operations in `NotActions` to compute the effective permissions:
+Azure RBAC has something called `NotActions` permissions. You can use `NotActions` to create a set of not allowed permissions. The access granted by a role, the effective permissions, is computed by subtracting the `NotActions` operations from the `Actions` operations. For example, the [Contributor](/azure/role-based-access-control/built-in-roles#contributor) role has both `Actions` and `NotActions`. The wildcard (*) in `Actions` indicates that it can perform all operations on the control plane. You'd then subtract the following operations in `NotActions` to compute the effective permissions:
 
 - Delete roles and role assignments
 - Create roles and role assignments

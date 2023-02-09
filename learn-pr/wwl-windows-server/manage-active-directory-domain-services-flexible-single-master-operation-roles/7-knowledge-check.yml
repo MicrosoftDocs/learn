@@ -4,14 +4,15 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/20/2021
+  ms.date: 01/05/2023
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
 azureSandbox: false
 labModal: false
 durationInMinutes: 5
+content: |
+  [!include[](includes/7-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
@@ -41,7 +42,7 @@ quiz:
     choices:
     - content: "Infrastructure"
       isCorrect: false
-      explanation: "incorrect choice"
+      explanation: "That's incorrect. Infrastructure master is a domain-level operations master."
     - content: "Domain naming"
       isCorrect: true
       explanation: "That's correct. Domain naming master is a forest-level operations master."

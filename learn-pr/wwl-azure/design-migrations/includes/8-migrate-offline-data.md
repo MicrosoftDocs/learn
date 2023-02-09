@@ -11,13 +11,9 @@ To use the Azure Import/Export service, you create a job that specifies the data
 Here are a few more points about working with the Import/Export service:
 
 - You can use the Azure Import/Export service to export data from Azure Blob Storage only.
-
 - You can't export data that's stored in Azure Files.
-
 - To use the Import/Export service, BitLocker must be enabled on the Windows system.
-
 - You need an active shipping carrier account like FedEx or DHL for shipping drives to an Azure datacenter.
-
 - For exporting, you need a set of disks that you can send to an Azure datacenter. The datacenter uses these disks to copy the data from Azure Storage.
 
 ### Things to consider when using the Import/Export service

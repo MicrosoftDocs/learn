@@ -5,8 +5,8 @@ metadata:
   title: Introduction
   description: Learn to move your existing project to GitHub from a legacy version control system.
   ms.date: 06/26/2020
-  author: tpetchel
-  ms.author: thpetche
+  author: a-a-ron
+  ms.author: aastewar
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

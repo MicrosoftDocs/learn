@@ -1,10 +1,10 @@
 In this module, you started by learning what a pipeline is. 
 
-A pipeline is set of commands connected by the pipe (`|`) character. The idea is to have the output of one command serve as the input to the next command.
+A pipeline is a set of commands connected by the pipe (`|`) character. The idea is to have the output of one command serve as the input to the next command.
 
-As part of constructing the pipeline, you learned that you first need to evaluate whether a command fits and can be added as the next command in the pipeline. A command fits if its output matches the input that's needed for the next command to run.
+As part of constructing the pipeline, you learned that you first need to evaluate whether a command fits, and can be added as the next command in the pipeline. A command fits if its output matches the input that's needed for the next command to run.
 
-The `Get-Help` command helps you inspect the command, and the INPUT and PARAMETERS sections can help you understand what types of input a command accepts. For pipeline input, you need to find parameters that have a property `Accept pipeline input?` set to _True_. 
+The `Get-Help` command helps you inspect the command, and the INPUT and PARAMETERS sections can help you understand what types of input a command accepts. For pipeline input, you need to find parameters that have the property `Accept pipeline input?` set to _True_.
 
 There's also an evaluation order that reveals how the input is analyzed for validity. Input can be considered _valid_ in either of two main ways. The first way is called _By value_, which means that the input matches an array to a specific type. The second way, _By property name_, means that whatever type of object is passed in, it must have a property with a particular name.
 

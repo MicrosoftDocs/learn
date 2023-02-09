@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.ingest-streaming-data-use-azure-stream-analytics-synapse.run-job-ingest
+title: Run a job to ingest data
+metadata:
+  title: Run a job to ingest data
+  description: "Run a job to ingest data"
+  ms.date: 12/08/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: stream-analytics
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-run-job-ingest.md)]

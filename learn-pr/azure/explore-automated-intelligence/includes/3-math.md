@@ -29,7 +29,7 @@ PID control is a closed loop control system that employs feedback.
 
 The first PID controller was invented to automatically steer ship rudders and control ship’s direction. Imagine that a ship is pointing in one direction and the captain wants to point the ship in a different direction. The controller uses math to calculate how much to move the rudder based on feedback it gets from its last action.
 
-There are three numbers that determine how the controller will behave: the “P”, the “I” and the “D” constant (Figure 1).
+There are three numbers that determine how the controller will behave: the “P”, the “I” and the “D” constant.
 
 - The “**P**” constant moves you toward the target, but if the controller keeps turning the rudder, the ship sweeps right past the target heading.
 - The “**I**” constant tracks how much total error you have in the system and keeps you from overshooting the target.
@@ -37,7 +37,7 @@ There are three numbers that determine how the controller will behave: the “P�
 
 ![Effect of the “P”, the “I” and the “D” of the PID controller when turning the ship rudder.](../media/pid-controller.png)
 
-Above image (Figure 1) shows the effect of the “P”, the “I” and the “D” of the PID controller when turning the ship rudder.
+Above image shows the effect of the “P”, the “I” and the “D” of the PID controller when turning the ship rudder.
 
 #### PID strengths & weaknesses
 

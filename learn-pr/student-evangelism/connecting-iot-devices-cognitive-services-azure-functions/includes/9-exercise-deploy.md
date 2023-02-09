@@ -30,10 +30,10 @@ You need to install some extensions for the Visual Studio Code.
 
 - Launch Visual Studio Code, search for Arduino in the extension marketplace, and install it. This extension provides enhanced experiences for developing on the Arduino platform.
 
-- Search for [Azure IoT Tools](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-tools) in the extension marketplace and install it.
+- Search for [Azure IoT Tools](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-toolkit) in the extension marketplace and install it.
 
   >[!NOTE]
-  >The Azure IoT Tools extension pack contains the [Azure IoT Device Workbench](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.vscode-iot-workbench), which is used to develop and debug on various IoT devkit devices. The [Azure IoT Hub extension](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-toolkit), also included with the Azure IoT Tools extension pack, is used to manage and interact with Azure IoT Hubs.
+  >The Azure IoT Tools extension pack contains the [Azure IoT Device Workbench](https://github.com/microsoft/vscode-iot-workbench/releases), which is used to develop and debug on various IoT devkit devices. The [Azure IoT Hub extension](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-toolkit), also included with the Azure IoT Tools extension pack, is used to manage and interact with Azure IoT Hubs.
 
 - Search for C# in the extension marketplace and install it.
 

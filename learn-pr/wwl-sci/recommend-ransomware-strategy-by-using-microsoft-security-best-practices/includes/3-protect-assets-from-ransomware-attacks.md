@@ -1,3 +1,4 @@
+
 **Phase 2** of ransomware protection is to Limit the scope of damage.
 
 In this phase, you protect privileged roles to prevent attackers from obtaining a large scope of access for potential damage to data and systems.
@@ -26,14 +27,14 @@ This table describes a privileged access strategy against ransomware in terms of
 
 ### Implementation checklist
 
-Build a multi-part strategy using the guidance at [https://aka.ms/SPA](https://aka.ms/SPA) that includes this checklist.
+Build a multi-part strategy using the guidance at [securing privileged access](https://aka.ms/SPA) that includes this checklist.
 
 | Done| Task | Description |
 |:-------|:-------|:-----|
 | <input type="checkbox" /> | Enforce end-to-end session security. | Explicitly validates the trust of users and devices before allowing access to administrative interfaces (using [Azure Active Directory Conditional Access](/azure/active-directory/conditional-access/overview)). |
 | <input type="checkbox" /> |  Protect and monitor identity systems. | Prevents privilege escalation attacks including directories, identity management, administrator accounts and groups, and consent grant configuration. |
 | <input type="checkbox" /> | Mitigate lateral traversal. | Ensures that compromising a single device does not immediately lead to control of many or all other devices using local account passwords, service account passwords, or other secrets. |
-| <input type="checkbox" /> | Ensure rapid threat response. | Limits an adversary's access and time in the environment. See [Detection and Response](/azure/security/fundamentals/protect-against-ransomware-phase2.md#detection-and-response) for more information. |
+| <input type="checkbox" /> | Ensure rapid threat response. | Limits an adversary's access and time in the environment. See [Detection and Response](/security/compass/protect-against-ransomware-phase2.md#detection-and-response) for more information. |
 |  |  |  |
 
 

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.manage-azure-private-5g-core.system-upgrade
+title: System upgrade
+metadata:
+  title: System upgrade
+  description: Describes the tasks for upgrading an Azure Private 5G Core instance and its underlying platforms.
+  ms.date: 11/29/2022
+  author: michael-weizhong-shan
+  ms.author: michaelshan
+  ms.topic: interactive-tutorial
+  ms.service: learning-private-5g-core
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-system-upgrade.md)]

@@ -29,7 +29,6 @@ roles:
 products:
 - azure-sql-database
 - github
-- vs-code
 - azure-functions
 - azure-app-service-static
 - azure-web-apps

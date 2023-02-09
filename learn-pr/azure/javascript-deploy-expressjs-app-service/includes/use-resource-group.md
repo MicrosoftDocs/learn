@@ -1,4 +1,4 @@
-The Azure platform organizes cloud services that you subscribe to. It's important to understand the virtual organizational units. You need to know what you need to create and what the free Microsoft Learn sandbox provides for you while you use this module. Here, you'll learn about subscriptions, resource groups, and resources.
+The Azure platform organizes cloud services to which you subscribe. It's important to understand the virtual organizational units. You need to know what you need to create and what the free Microsoft Learn sandbox provides for you while you use this module. Here, you'll learn about subscriptions, resource groups, and resources.
 
 :::image type="content" source="../media/azure-subscription-resource-group.png" alt-text="Diagram that shows the relationship of management hierarchy levels.":::
 
@@ -7,7 +7,7 @@ The Azure platform organizes cloud services that you subscribe to. It's importan
 When you use Azure, you need a subscription. Inside the subscription, you create resource groups. Inside the resource groups, you create resources. The terms are described here:
 
 * **Management groups**: Enterprise-level units of Azure management. *This feature won't be used in this module.*
-* **Subscription**: It's used in the sandbox and associates your account with the resources created in this module. The Learn sandbox provides a free subscription. There's no need to enter credit card information.
+* **Subscription**: A subscription is used in the sandbox and associates your account with the resources created in this module. The Learn sandbox provides a free subscription. There's no need to enter credit card information.
 * **Resource group**: A logical container where you manage Azure resources. The Learn sandbox provides a resource group for all your resources used in this module.
 * **Resources**: Instances of services you create, like Azure App Service.
 
@@ -21,7 +21,7 @@ Examples of resource group names include:
 * `temporary-rental-web-app`
 * `web-app-rental-property`
 
-For this module, you use a resource group that contains resources to host your web app.
+For this module, you'll use a resource group that contains resources to host your web app.
 
 ## How do you create a resource group?
 
@@ -29,7 +29,7 @@ You can create a resource group with any of the following tools:
 
 |Tool|Explanation|
 |--|--|
-|Visual Studio Code extension for Azure resources|This tool is good for in-the-moment developer tasks because you don't have to leave your development environment.|
+|Visual Studio Code extension for Azure resources|This tool is good for in-the-moment developer tasks, because you don't have to leave your development environment.|
 |Azure portal|This tool is good for people new to Azure.|
 |Azure CLI|This tool is good for automation tasks.|
 |PowerShell|This tool is good for automation tasks.|
@@ -43,7 +43,7 @@ A resource group has required and optional properties:
 
 |Property|Explanation|
 |--|--|
-|Location (required)|Azure region, such as `U.S. West`, allows you to group your resources by region.|
+|Location (required)|Azure region, such as `West US`, allows you to group your resources by region.|
 |Tags (optional)|Name/values pairs that can help you add more granularity to the resource group that naming doesn't provide. |
 
 ## Use tags for rich categorization
@@ -67,4 +67,4 @@ The sandbox allows you to skip steps you would otherwise need. You can:
 * Create a resource group.
 * Delete resources when you're finished so that you aren't billed.
 
-The subscription and resource group are already created for you. As part of the sandbox, you use that subscription to create the resources necessary to deploy your web app.
+The subscription and resource group are already created for you. As part of the sandbox, you'll use that subscription to create the resources necessary to deploy your web app.

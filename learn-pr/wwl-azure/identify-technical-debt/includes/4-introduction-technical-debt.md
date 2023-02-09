@@ -20,7 +20,7 @@ Over time, it increases in much the same way that monetary debt does. Common sou
 
  -  Lack of coding style and standards.
  -  Lack of or poor design of unit test cases.
- -  Ignoring or not-understanding object orient design principles.
+ -  Ignoring or not understanding object oriented design principles.
  -  Monolithic classes and code libraries.
  -  Poorly envisioned the use of technology, architecture, and approach. (Forgetting that all system attributes, affecting maintenance, user experience, scalability, and others, need to be considered).
  -  Over-engineering code (adding or creating code that isn't required, adding custom code when existing libraries are sufficient, or creating layers or components that aren't needed).

@@ -2,7 +2,7 @@ The ThisOrThat web app uses a machine learning model built using the Custom Visi
 
 You have a web app built that can consume machine learning models, but you don't want a complicated process to rebuild the app when you need to import a fresh model. In addition, you need this app to work offline, so you need to avoid API calls.
 
-In this module, we'll train a custom machine learning model on some similar tagged images, then we'll import that model into a web app. Finally, we'll create a GitHub Action to create a continuous integration workflow so that when you push a new model to your repo, you will rebuild the app.
+In this module, we'll train a custom machine learning model on some similar tagged images, then we'll import that model into a web app. Finally, we'll create a GitHub Action to create a continuous integration workflow so that when you push a new model to your repo, you'll rebuild the app.
 
 ## Learning objectives
 

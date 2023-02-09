@@ -2,8 +2,8 @@
 uid: learn.wwl.catalog-data-artifacts-use-microsoft-purview
 metadata:
   title: Catalog data artifacts by using Microsoft Purview
-  description: "Register, scan, catalog, and view data assets and their relevant details in Microsoft Purview."
-  ms.date: 07/22/2022
+  description: "Catalog data artifacts by using Microsoft Purview"
+  ms.date: 12/30/2022
   author: wwlpublish
   ms.author: shlindsay
   ms.topic: interactive-tutorial

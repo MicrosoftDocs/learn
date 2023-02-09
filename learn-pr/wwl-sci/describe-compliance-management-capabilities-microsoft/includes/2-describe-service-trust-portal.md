@@ -55,7 +55,7 @@ This section includes documents the apply to the following industries and region
 ### Resources for your Organization
 This section lists documents applying to your organization (restricted by tenant) based on your organization’s subscription and permissions.
 
-:::image type="content" source="../media/stp-reports.png" alt-text="Tiles available in the resources for your organization section of the Service Trust Portal home page.":::
+:::image type="content" source="../media/stp-organization-resources.png" alt-text="Screenshot showing tiles available in the resources for your organization section of the Service Trust Portal home page.":::
 
 ## My Library
 Use the My Library feature to add documents and resources on the Service Trust Portal to your My Library page. This lets you access documents that are relevant to you in a single place. To add a document to your My Library, select the ellipsis (...) menu to the right of a document and then select Save to library.

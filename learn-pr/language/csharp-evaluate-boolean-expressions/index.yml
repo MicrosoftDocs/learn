@@ -3,7 +3,7 @@ uid: learn.languages.csharp-evaluate-boolean-expressions
 metadata:
   title: 'Evaluate Boolean expressions to make decisions in C#'
   description: Learn the operators and techniques required to evaluate and compare values in your decision statements.
-  ms.date: 08/17/2022
+  ms.date: 01/18/2023
   author: billwagner
   ms.author: wiwagn
   ms.topic: interactive-tutorial

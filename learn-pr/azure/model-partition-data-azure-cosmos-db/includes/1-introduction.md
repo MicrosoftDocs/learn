@@ -1,8 +1,8 @@
 Azure Cosmos DB is Microsoft's fully managed NoSQL database on Azure. As a NoSQL database, Azure Cosmos DB is both horizontally scalable and nonrelational. 
 
-The horizontal scalability allows Azure Cosmos DB grow to sizes well beyond the size of a typical relational database. Horizontal scalability also means that the database provides predictable performance, because it doesn't implement relational constraints on data.
+The horizontal scalability allows Azure Cosmos DB to grow to sizes well beyond the size of a typical relational database. Horizontal scalability also means that the database provides predictable performance, because it doesn't implement relational constraints on data.
 
-To achieve this level of scalability, users need to understand the concepts, techniques, and technologies unique to NoSQL databases for modeling and partitioning data.
+To achieve this level of scalability, we need to understand the concepts, techniques, and technologies unique to NoSQL databases for modeling and partitioning data.
 
 ## Scenario
 
@@ -16,7 +16,7 @@ The following diagram shows the model you'll start from. The relational model ha
 
 In this module, we'll take our existing relational data model and redesign it as a NoSQL database for our e-commerce application. During this process, you'll learn the following concepts:
 
-- **Differences between relational versus NoSQL databases**: You'll explore how NoSQL databases differ from relational databases and why they are that way.
+- **Differences between relational versus NoSQL databases**: You'll explore how NoSQL databases differ from relational databases and why they're that way.
 - **Using access patterns to model data**: You'll learn how understanding the way an application reads and writes data influences how to model it for a NoSQL database.
 - **Embedding versus referencing**: You'll learn when you should embed data within the same document versus when you should store data as a separate row.
 - **Choosing a partition key**: You'll learn key concepts for choosing a partition key. Information includes how to avoid hot partitions and how to handle workloads that are both read and write heavy.

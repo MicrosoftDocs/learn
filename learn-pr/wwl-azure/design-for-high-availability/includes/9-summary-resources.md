@@ -28,6 +28,4 @@ In this module, you’ve learned how to design solutions for high availability. 
 
 - [Introduction to Azure Front Door](/training/modules/intro-to-azure-front-door/)
 
-- [Describe high availability and disaster recovery strategies](/training/modules/describe-high-availability-disaster-recovery-strategies/)
-
 - [Explore IaaS and PaaS platform tools for high availability and disaster recovery](/training/modules/explore-iaas-paas-platform-tools-for-high-availability-disaster-recovery/)

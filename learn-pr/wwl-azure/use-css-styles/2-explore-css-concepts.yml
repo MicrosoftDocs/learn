@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-css-styles.explore-css-concepts
+title: Explore CSS concepts
+metadata:
+  title: Explore CSS concepts
+  description: "Explore CSS concepts"
+  ms.date: 01/30/2023
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-explore-css-concepts.md)]

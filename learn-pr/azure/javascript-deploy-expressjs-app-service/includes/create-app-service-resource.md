@@ -11,13 +11,13 @@ Azure provides several hosting choices, each with tradeoffs for intended purpose
 |Azure App Service|A service that runs either a Windows or Linux hosting environment or container. You have control over all the normal server settings to configure and control your app.|
 |Azure Container<br><br>Azure Kubernetes<br><br>Azure Container apps<br><br>Azure Virtual Machines|These other hosting choices provide the entire system that runs the hosting environment. These choices allow more flexibility. The tradeoff is more work to configure and maintain the environment.|
 
-For this module, the hosting choice is App Service. This Express.js app doesn't require the level of customization provided by containers, virtual machines, and container apps.
+For this module, our hosting choice is App Service. This Express.js app doesn't require the level of customization provided by containers, virtual machines, and container apps.
 
 ## Azure App Service and the App Service plan
 
 The parent unit for App Service is the App Service plan. When you create the App Service instance, you can create a plan at the same time or use an existing plan.
 
-An App Service plan defines a set of compute resources for a web app to run. These compute resources are analogous to the server farm in conventional web hosting. One or more apps can be configured to run on the same computing resources or in the same App Service plan.
+An App Service plan defines a set of compute resources for a web app to run. These compute resources are analogous to the server farm in conventional web hosting. You can configure one or more apps to run on the same computing resources or in the same App Service plan.
 
 Each App Service plan defines the:
 
@@ -41,17 +41,17 @@ Isolate your app into a new App Service plan when:
 
 ## Linux for the Express.js web app
 
-In this module, use the Linux operating system for this web app.
+In this module, you'll use the Linux operating system for this web app.
 
 ## App Service settings during creation
 
-When you create an App Service resource, you have various settings to choose from. Many of the settings have default values.
+When you create an App Service resource, you have various settings from which to choose. Many of the settings have default values.
 
 The following table lists the settings available during creation:
 
 |Setting|Value|
 |--|--|
-|Globally unique name|The resource name you choose must be unique from all other App Service resources because the name is used in the URL `YOUR-APP-NAME.azurewebsites.net`.|
+|Globally unique name|The resource name you choose must be unique from all other App Service resources, because the name is used in the URL: `YOUR-APP-NAME.azurewebsites.net`.|
 |Resource group|The resource group allows you to have a virtual category for all related resources.|
 |Runtime stack|App Service allows you to pick the programmatic runtime stack, such as a Node.js LTS version.|
 |OS|The two operating systems of the App Service, Windows and Linux, provide comparable functionality. A few differences are specific to each.|
@@ -105,7 +105,7 @@ https://YOUR-RESOURCE-NAME.azurewebsites.net/
 
 ## Default web app before your first deployment
 
-Before you deploy your app, the file `hostingstart.html` is returned for any requests. You can change this static HTML file to fit your own needs like branding and contact information.
+Before you deploy your app, the file `hostingstart.html` is returned for any requests. You can change this static HTML file to fit your own needs, like branding and contact information.
 
 ## Authentication
 

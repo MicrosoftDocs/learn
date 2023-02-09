@@ -2,12 +2,12 @@ In the introduction, we described a scenario that required us to match a number 
 
 ## What is the switch statement?
 
-`switch` is a selection statement that chooses a single switch section to execute from a list of candidates based on a pattern match with the match expression. A switch statement includes one or more switch sections. Each switch section contains one or more case labels (either a case or default label) followed by one or more statements. The switch statement may include at most one default label placed in any switch section.
+`switch` is a selection statement that chooses a single switch section to execute from a list of candidates, based on a pattern match with the match expression. A switch statement includes one or more switch sections. Each switch section contains one or more case labels (either a case or default label) followed by one or more statements. The switch statement may include at most one default label placed in any switch section.
 
 The switch is best used when:
 
-- You have a single value you want to match against many possible values;
-- But for any given match, you need to execute a couple of lines of code at most.
+- You have a single value you want to match against many possible values, but;
+- For any given match, you need to execute a couple of lines of code at most.
 
 It's possible that multiple cases apply. However, C# will select the first matching expression.
 
@@ -55,7 +55,7 @@ Inside the code block, there are one or more *switch sections*. Each switch sect
 
 Once the runtime finds a matching label, it performs the code in that particular switch section.
 
-Only one switch section can be executed. The `break` keyword is one of several ways to end a switch section and literally break out of the switch statement. If you forget the `break` keyword (or, optionally, the `return` keyword) the compiler will generate an error.
+Only one switch section can be executed. The `break` keyword is one of several ways to end a switch section and literally break out of the switch statement. If you forget the `break` keyword (or, optionally, the `return` keyword), the compiler will generate an error.
 
 If there are no matching labels, the optional `default` label will be matched. If there's no `default` defined, then the `switch` statement only executes when one of its cases match.
 
@@ -63,7 +63,7 @@ The optional `default` label is not required to be defined after the rest of the
 
 ### Step 2 - Change the level variable value to see how the switch statement evaluates it
 
-To exercise the default case, let's change the employee's level by modifying the following line of code.
+To exercise the default case, let's change the employee's level by modifying the following line of code:
 
 ```csharp
 int employeeLevel = 201;
@@ -81,7 +81,7 @@ Since the `employeeLevel` doesn't match any labels, the `default` label is match
 
 Our company decided to give all level 100 employees the title "Senior Associate", the same title as level 200 employees. As the developer, you decide to implement this by removing the first switch section belonging to the label `case 100:`, and instead allow both the `case 100:` and `case 200:` labels execute the same switch section.
 
-Modify the code to set the `employeeLevel` to `100`.
+Modify the code to set the `employeeLevel` to `100`:
 
 ```csharp
 int employeeLevel = 100;
@@ -124,7 +124,7 @@ switch (employeeLevel)
 Console.WriteLine($"{employeeName}, {title}");
 ```
 
-Now, run the application; you should get the following output.
+Now, run the application. You should get the following output:
 
 ```output
 John Smith, Senior Associate

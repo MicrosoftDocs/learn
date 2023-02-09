@@ -3,7 +3,7 @@ uid: learn.language.go-control-flow
 metadata:
   title: Use control flows in Go
   description: Learn to use control flows in Go.
-  ms.date: 06/20/2021
+  ms.date: 01/25/2023
   author: GitHubber17
   ms.author: chnoring
   ms.topic: interactive-tutorial
@@ -34,7 +34,6 @@ roles: # TBC
 - student
 products: 
 - azure
-- vs-code
 subjects:
 - development-tools
 units:

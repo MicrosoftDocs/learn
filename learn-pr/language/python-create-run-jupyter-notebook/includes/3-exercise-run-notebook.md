@@ -4,7 +4,7 @@ Here, you'll create a local *.ipynb* file and run it in Visual Studio Code. The 
 
 ## Create a notebook
 
-On your local computer, create a file called *ship-manual.ipynb*. You can create the file by using the terminal in Visual Studio code: type `touch ship-manual.ipynb`. You can also create the file via the command palette in Visual Studio Code, by opening the palette and typing `Jupyter > Create New Jupyter Notebook`. Open this file in Visual Studio Code. The Jupyter extension should display the file as blank, with the option to add code and Markdown blocks.
+On your local computer, create a file called *ship-manual.ipynb*. You can create the file by using the terminal in Visual Studio code: type `touch ship-manual.ipynb`. You can also create the file via the command palette in Visual Studio Code, by opening the palette and typing `Create: New Jupyter Notebook`. Open this file in Visual Studio Code. The Jupyter extension should display the file as blank, with the option to add code and Markdown blocks.
 
 :::image type="content" source="../media/new-file.png" alt-text="Screenshot that shows an example of a new Visual Studio Code file.":::
 

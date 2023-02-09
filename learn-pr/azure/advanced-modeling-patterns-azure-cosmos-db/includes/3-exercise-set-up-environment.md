@@ -144,7 +144,7 @@ Let's query for the same information but in the denormalized database.
    SELECT * FROM c where c.categoryId = "AB952F9F-5ABA-4251-BC2D-AFF8DF412A4A"
    ```
 
-    The results will look something like the following:
+    The results will look something like the following screenshot:
 
     :::image type="content" source="../media/3-product-query-v2.png" alt-text="Screenshot of the results of the query to the product container in the newly modeled product container." lightbox="../media/3-product-query-v2.png":::
 
@@ -158,6 +158,6 @@ In the relational model, where data is stored in individual containers, you ran 
 
 To get the same information in the NoSQL model, you ran one query, and its request charge was 2.9 RUs.
 
-The benefit is not just the lower cost of a NoSQL design like this model. This type of design is also faster, because it requires only a single request. Further, the data itself is served in the way that it's likely to be rendered on a webpage. This means less code to write and maintain downstream in your e-commerce application.
+The benefit isn't just the lower cost of a NoSQL design like this model. This type of design is also faster, because it requires only a single request. Further, the data is served in the way that it's likely to be rendered on a webpage. This means less code to write and maintain downstream in your e-commerce application.
 
 When you denormalize data, you produce simpler, more efficient queries for your e-commerce application. You can store all the data that's needed by your application in a single container, and you can fetch it with a single query. When you're dealing with high-concurrency queries, this type of data modeling can provide huge benefits in simplicity, speed, and cost.

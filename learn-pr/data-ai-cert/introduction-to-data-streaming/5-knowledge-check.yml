@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/23/2022
+  ms.date: 12/08/2022
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
@@ -37,14 +37,14 @@ quiz:
     - content: "Azure Stream Analytics"
       isCorrect: true
       explanation: "Correct. Azure Stream Analytics is a stream processing engine."
-  - content: "You want to create a real-time visualization of temporally aggerated data from an Azure Stream Analytics query. Which type of output should you use?"
+  - content: "You want to aggregate event data by contiguous, fixed-length, non-overlapping temporal intervals. What kind of window should you use?"
     choices:
-    - content: "Azure Cosmos DB"
+    - content: "Sliding"
       isCorrect: false
-      explanation: "Incorrect. Azure Cosmos DB is a fully-managed NoSQL database for modern app development. It can be used to store the output of data stream processing in Azure Stream Analytics but doesn't provide the functionality to create dashboards or visualizations."
-    - content: "Event Hubs"
+      explanation: "Incorrect. Sliding windows are not contiguous."
+    - content: "Session"
       isCorrect: false
-      explanation: "Incorrect. Azure Event Hubs is a big data streaming platform and event ingestion service, which you can use to feed events from event producers into Azure Stream Analytics."
-    - content: "Power BI"
+      explanation: "Incorrect. Session windows only include concurrent events."
+    - content: "Tumbling"
       isCorrect: true
-      explanation: "Correct. Power BI provides a platform for visualizing and analyzing aggregated data in near-real-time. Azure Stream Analytics can target Power BI as an output destination. Processed data is passed into Power BI to facilitate near-real-time dashboard updates."
+      explanation: "Correct. Tumbling windows define contiguous, fixed-length, non-overlapping windows."

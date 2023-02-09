@@ -3,7 +3,7 @@ uid: learn.azure.manage-azure-stack-hci-tenant-networks
 metadata:
   title: 'Manage Azure Stack HCI tenant networks'
   description: Azure Stack HCI provides a highly flexible and more secure multitenant networking environment.
-  ms.date: 03/30/2022
+  ms.date: 12/28/2022
   author: mpolicht
   ms.author: nedelgad
   ms.topic: interactive-tutorial
@@ -11,7 +11,7 @@ metadata:
 title: 'Manage Azure Stack HCI tenant networks'
 summary: Manage Azure Stack HCI tenant networks.
 abstract:  | 
-  After completing this module, you’ll be able to:
+  After completing this module, you'll be able to:
   - Describe and implement Azure Stack HCI logical and virtual networks.
   - Describe the functionality and implementation of Gateway Services for hyperconverged infrastructure (HCI) tenant virtual machines (VMs) that use Remote Access Service (RAS) gateways and understand the Route Reflector role.
   

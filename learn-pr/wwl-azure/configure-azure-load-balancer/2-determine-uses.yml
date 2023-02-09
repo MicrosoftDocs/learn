@@ -1,16 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-azure-load-balancer.determine-uses
-title: Determine Azure load balancer uses
+title: Determine Azure Load Balancer uses
 metadata:
-  title: Determine Azure load balancer uses
-  description: "Determine Azure load balancer uses"
-  ms.date: 10/25/2022
+  title: Determine Azure Load Balancer uses
+  description: "Learn how Azure Load Balancer operates with the frontend, backend, load-balancing rules, and health probes."
+  ms.date: 01/31/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 2
 content: |
   [!include[](includes/2-determine-uses.md)]

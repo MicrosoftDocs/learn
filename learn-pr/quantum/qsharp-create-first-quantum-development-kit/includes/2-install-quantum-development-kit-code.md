@@ -47,7 +47,7 @@ This step installs the QDK and adds extensions to Visual Studio Code that provid
 
 ## Verify the installation
 
-To verify your installation, create a basic Q# application as shown below.
+To verify your installation, create a basic Q# application as shown in the following steps.
 
 ### Install the Quantum project templates
 
@@ -103,6 +103,7 @@ Now let's run the program to verify that everything is set up correctly. You use
     ```bash
     dotnet run
     ```
+
 1. The program prints this message:
 
     ```output

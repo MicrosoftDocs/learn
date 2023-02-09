@@ -5,7 +5,7 @@ Now you'll create a computed property to display information about the selected 
 Add the computed property to display a string for the selected cabin:
 
 1. In Visual Studio Code, open the *index.js* file.
-1. Below the `TODO: Add computed values` comment, add the following JavaScript code to create the computed value.
+1. On the line after the `TODO: Add computed values` comment, add the following JavaScript code to create the computed value.
 
     ```javascript
     // TODO: Add computed values
@@ -24,7 +24,7 @@ Notice that you can use `this` to access `product.cabins`. You use `booking.cabi
 Now add the display to the page:
 
 1. In Visual Studio Code, open the *index.html* file.
-1. Below the `TODO: Add success display` comment, add the following HTML to display the booking.
+1. On the line after the `TODO: Add success display` comment, add the following HTML to display the booking.
 
     ```html
     <!-- TODO: Add success display -->
@@ -52,10 +52,10 @@ Now check out the page in action!
 1. Open a browser and go to `http://localhost:5500`. The page appears.
 1. Fill out the form.
 
-    :::image type="content" source="../media/form-completed.png" alt-text="Screenshot of the completed form showing business class selected. The text reads, window seat please.":::
+    :::image type="content" source="../media/form-completed.png" alt-text="Screenshot of the completed form showing business class selected, and a request entered in the Notes field.":::
 
 1. Select the button and notice the display.
 
-    :::image type="content" source="../media/booking-display.png" alt-text="Screenshot of the updated display showing business class and the price selected. The text reads, window seat please.":::
+    :::image type="content" source="../media/booking-display.png" alt-text="Screenshot of the updated display showing the Booking details, indicating Business class, the price, and a note requesting a window seat.":::
 
 You've now added a computed property to a Vue application.

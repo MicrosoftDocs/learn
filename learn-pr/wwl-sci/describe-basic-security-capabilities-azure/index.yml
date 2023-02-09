@@ -27,6 +27,10 @@ roles:
 - student
 products:
 - azure
+- azure-ddos-protection
+- azure-firewall
+- azure-bastion
+- azure-web-application-firewall
 subjects:
 - cloud-security
 units:

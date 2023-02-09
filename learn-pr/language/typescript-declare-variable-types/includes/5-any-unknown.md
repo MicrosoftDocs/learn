@@ -1,8 +1,8 @@
-There are times when you'll need to work with values that are unknown to you at the time you develop your code, or are of a narrow possible range of value types. In these cases, you can use the `any` and `unknown` types and use type assertion and type guards to maintain control over what your code is allowed to do with the values that are passed.
+There are times when you'll need to work with values that are unknown to you at the time you develop your code. In these cases, you can use the `any` and `unknown` types and use type assertion and type guards to maintain control over what your code is allowed to do with the values that are passed.
 
 ## Any type
 
-The `any` type is the one type that can represent any JavaScript value with no constraints. This can be useful when you're expecting a value from a third-party library or user inputs where the value is dynamic because the `any` type will allow you to reassign different types of values. And, as mentioned earlier, using the `any` type allows you to gradually migrate your JavaScript code to use static types in TypeScript.
+The `any` type is the one type that can represent any JavaScript value with no constraints. This type can be useful when you're expecting a value from a third-party library or user inputs where the value is dynamic because the `any` type will allow you to reassign different types of values. And, as mentioned earlier, using the `any` type allows you to gradually migrate your JavaScript code to use static types in TypeScript.
 
 The following example declares a variable of type `any` and assigns values to it:
 
@@ -33,7 +33,7 @@ randomValue.toUpperCase();      // Returns "randomValue is not a function" error
 
 ## Unknown type
 
-While flexible, the `any` type can cause unexpected errors. To address this, TypeScript introduced the `unknown` type.
+While flexible, the `any` type can cause unexpected errors. To address this issue, TypeScript introduced the `unknown` type.
 
 The `unknown` type is similar to the `any` type in that any value is assignable to type `unknown`. However, you can't access any properties of an `unknown` type, nor can you call or construct them.
 
@@ -54,7 +54,7 @@ randomValue.toUpperCase();      // Error: Object is of type unknown
 
 ## Type assertion
 
-If you need to treat a variable as a different data type you can use a **type assertion**. A type assertion tells TypeScript you have performed any special checks that you need before calling the statement. It tells the compiler "trust me, I know what I’m doing." A type assertion is like a type cast in other languages, but it performs no special checking or restructuring of data. It has no runtime impact and is used purely by the compiler.
+If you need to treat a variable as a different data type, you can use a **type assertion**. A type assertion tells TypeScript you've performed any special checks that you need before calling the statement. It tells the compiler "trust me, I know what I’m doing." A type assertion is like a type cast in other languages, but it performs no special checking or restructuring of data. It has no runtime effect and is used purely by the compiler.
 
 Type assertions have two forms. One is the `as`-syntax:
 
@@ -87,7 +87,7 @@ TypeScript now assumes that you have made the necessary check. The type assertio
 
 ## Type guards
 
-The previous example demonstrates the use of `typeof` in the `if` block to examine the type of an expression at runtime. This is called a **type guard**.
+The previous example demonstrates the use of `typeof` in the `if` block to examine the type of an expression at runtime. This conditional test is called a **type guard**.
 
 You may be familiar with using `typeof` and `instanceof` in JavaScript to test for these conditions. TypeScript understands these conditions and will change type inference accordingly when used in an `if` block.
 

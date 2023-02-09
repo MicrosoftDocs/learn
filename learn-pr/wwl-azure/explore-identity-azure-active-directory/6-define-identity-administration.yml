@@ -4,13 +4,11 @@ title: Define identity administration
 metadata:
   title: Define identity administration
   description: "Define identity administration"
-  ms.date: 09/05/2022
+  ms.date: 02/03/2023
   author: wwlpublish
-  ms.author: v-arxia
+  ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/6-define-identity-administration.md)]

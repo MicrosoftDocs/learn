@@ -4,7 +4,7 @@ metadata:
   moduleType: standard  
   title: Build full stack applications with Azure Static Web Apps and Azure SQL Database
   description: In the language of your choice, deploy an Azure Static Web App, which combines the power of Azure Functions and Azure Web Apps into one service managed by GitHub Actions. This application surfaces real-time bus data and geofences stored in an Azure SQL Database.
-  ms.date: 3/24/2021  
+  ms.date: 01/24/2023  
   author: amthomas46
   ms.author: antho
   ms.topic: interactive-tutorial
@@ -33,7 +33,6 @@ roles:
 products:  
   - azure-sql-database
   - github
-  - vs-code
   - azure-functions
   - azure-app-service-static
   - azure-web-apps

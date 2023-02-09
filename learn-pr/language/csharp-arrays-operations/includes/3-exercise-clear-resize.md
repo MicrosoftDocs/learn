@@ -6,7 +6,7 @@ The `Array.Clear()` method allows us to remove the contents of specific elements
 
 ### Step 1 - Clear items from the array
 
-Comment out or delete the code from the previous unit in the .NET Editor. Then, add the following code listing:
+Comment out or delete the code from the previous unit in the .NET Editor, then add the following code listing:
 
 ```csharp-interactive
 string[] pallets = { "B14", "A11", "B12", "A13" };
@@ -36,7 +36,7 @@ Clearing 2 ... count: 4
 
 When you use `Array.Clear()`, the elements that were cleared no longer reference a string in memory. In fact, the element points to nothing at all. This is an important distinction that can be difficult to grasp at first.
 
-What if we attempt to retrieve the value of an element that was affected by the `Array.Clear()` method; could we do it?
+What if we attempted to retrieve the value of an element that was affected by the `Array.Clear()` method? Could we do it?
 
 ### Step 2 - Access the value of a cleared element
 
@@ -80,7 +80,7 @@ Clearing 2 ... count: 4
 -- A13
 ```
 
-If you focus on the line of output `After: `, you may think that the value stored in `pallets[0]` is an empty string. However, the C# Compiler implicitly converts the null value to an empty string for presentation.
+If you focus on the line of output `After: `, you might think that the value stored in `pallets[0]` is an empty string. However, the C# Compiler implicitly converts the null value to an empty string for presentation.
 
 ### Step 3 - Call a string helper method on a cleared element
 
@@ -181,7 +181,6 @@ Resizing 6 ... count: 6
 ### Step 5 - Resize the array to remove elements
 
 Conversely, we can remove array elements using `Array.Resize()`:
-
 
 ```csharp-interactive
 string[] pallets = { "B14", "A11", "B12", "A13" };

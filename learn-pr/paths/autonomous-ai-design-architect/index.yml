@@ -1,0 +1,43 @@
+### YamlMime:LearningPath
+uid: learn.oxford.autonomous-ai-design-architect
+metadata:
+  title: Autonomous AI design architect 
+  description: This learning path aims to explain Machine Teaching for Autonomous AI.
+  ms.date: 12/12/2022
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Autonomous AI design architect 
+summary: |
+  This learning path is a brief introduction to a new AI paradigm called Machine Teaching for Autonomous AI. Machine Teaching uses the knowledge of subject matter experts to teach AI. It integrates known control methods for stable control, Machine Learning for advance perception, and Deep Reinforcement Learning for learning strategies and human-like decision making. It's AI integrated in industrial processes without disruption and providing real business value. It's validated in simulation, explainable that your experts can validate. Machine Teaching for Autonomous AI stores expert operators' skill set, enhancing and homogenizing expert operators' best performance, and/or efficiently training novices on the job when deployed as a Decision Support tool. It helps your company achieve new levels of optimization for competitiveness, profitability, and sustainability. It provides a robust innovation path for all areas of industrial processes and business with real ROI.
+  At the end of this learning path, you'll be able to:
+  - Know the difference between automated and autonomous decision-making systems.
+  - Select use cases where autonomous AI will outperform both humans and automated systems.
+  - Leverage human expertise to design and teach AI solutions.
+  - Use brain design patterns to quickly design brains for any use case.
+  - Fill up AI specification documents that accurately describe the problem and the proposed solution. 
+  - Use AI specification documents to talk about use cases and brain designs to diverse stakeholders.
+
+  ***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)***
+prerequisites: None
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- ai-engineer
+- data-scientist
+products:
+- azure
+- bonsai
+subjects:
+- artificial-intelligence
+modules:
+- learn.oxford.explore-automated-intelligence
+- learn.oxford.explore-autonomous-intelligence
+- learn.oxford.intro-machine-teaching
+- learn.oxford.explore-design-brain-patterns
+- learn.oxford.explore-select-use-cases
+- learn.oxford.explore-ai-specification
+trophy:
+  uid: learn.oxford.autonomous-ai-design-architect.trophy

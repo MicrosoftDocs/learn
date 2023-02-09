@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.deploy-manage-azure-arc-enabled-sql-managed-instance.manage-azure-arc-enabled-sql-managed-instance
+title: Use Azure Arc-enabled SQL Managed Instance
+metadata:
+  title: Manage Azure Arc-enabled SQL Managed Instance
+  description: Demonstrates how to manage Azure Arc-enabled SQL Managed Instance.
+  ms.date: 12/21/2022
+  author: tchristiani
+  ms.author: terrychr
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/manage-azure-arc-enabled-sql-managed-instance.md)]

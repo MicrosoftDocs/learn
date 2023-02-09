@@ -1,18 +1,30 @@
-## Active/standby
+You can implement a highly available VPN gateway to support cross-premises and VNet-to-VNet connections and configurations with multiple on-premises VPN devices. In these scenarios, the Azure VPN gateway consists of two instances in an _active-standby_ configuration.
 
-Every Azure VPN gateway consists of two instances in an active-standby configuration. For any planned maintenance or unplanned disruption that happens to the active instance, the standby instance would take over (failover) automatically, and resume the S2S VPN or VNet-to-VNet connections. The switch over will cause a brief interruption. For planned maintenance, the connectivity should be restored within 10 to 15 seconds. For unplanned issues, the connection recovery will be longer, about 1 minute to 1 and a half minutes in the worst case. For P2S VPN client connections to the gateway, the P2S connections will be disconnected and the users will need to reconnect from the client machines.
+You can also create an Azure VPN gateway in an _active-active_ configuration. Both instances of the gateway virtual machines establish site-to-site VPN tunnels to your on-premises VPN device. You can support an active-active configuration for Azure VPN gateways only, or in combination with multiple on-premises VPN devices.
 
-:::image type="content" source="../media/active-standby-b1ae014b.png" alt-text="Diagram showing an active and standby V P N Gateway. The active gateway is connected to an on-premises V P N.":::
+### Things to know about active-standby
 
+In a highly available scenario, every Azure VPN gateway has two instances in an active-standby configuration.
 
-## Active/active
+For any planned maintenance or unplanned disruption that happens to the _active_ instance, the _standby_ instance takes over (failover) automatically, and resumes the site-to-site VPN or VNet-to-VNet connections.
 
-You can now create an Azure VPN gateway in an active-active configuration, where both instances of the gateway VMs will establish S2S VPN tunnels to your on-premises VPN device.
+- The switch over causes a brief interruption.
+- For planned maintenance, connectivity is commonly restored within 10 to 15 seconds.
+- For unplanned issues, the connection recovery can be longer, taking from 1 minute to 1 and a half minutes in the worst case.
+- For point-to-site VPN client connections to the gateway, the P2S connections are disconnected and users need to reconnect from the client machines.
 
-In this configuration, each Azure gateway instance will have a unique public IP address, and each will establish an IPsec/IKE S2S VPN tunnel to your on-premises VPN device specified in your local network gateway and connection. Both VPN tunnels are actually part of the same connection. You will still need to configure your on-premises VPN device to accept or establish two S2S VPN tunnels to those two Azure VPN gateway public IP addresses.
+:::image type="content" source="../media/active-standby-b1ae014b.png" alt-text="Diagram that shows an active-standby VPN gateway, where the active gateway is connected to an on-premises VPN." border="false":::
 
-When in active-active configuration, the traffic from your Azure virtual network to your on-premises network will be routed through both tunnels simultaneously. The same TCP or UDP flow will always traverse the same tunnel or path, unless a maintenance event happens on one of the instances.
+### Things to know about active-active
 
-When a planned maintenance or unplanned event happens to one gateway instance, the IPsec tunnel from that instance to your on-premises VPN device will be disconnected. The corresponding routes on your VPN devices should be removed or withdrawn automatically so that the traffic will be switched over to the other active IPsec tunnel. On the Azure side, the switch over will happen automatically from the affected instance to the active instance.
+A highly available scenario can also be configured for an Azure VPN gateway in an active-active configuration. The virtual machines in both gateway instances establish site-to-site VPN tunnels to your on-premises VPN device.
 
-:::image type="content" source="../media/active-active-ea464be2.png" alt-text="Diagram showing two active V P N Gateways connecting through multiple paths to two on-premises V P N gateways.":::
+- Each Azure VPN gateway instance has a unique public IP address.
+- Each instance establishes an IPsec/IKE S2S VPN tunnel to your on-premises VPN device specified in your local network gateway and connection, but both VPN tunnels are part of the same connection.
+- You still need to configure your on-premises VPN device to accept or establish two S2S VPN tunnels to the two Azure VPN gateway public IP addresses.
+
+The traffic from your Azure virtual network to your on-premises network is routed through both VPN tunnels simultaneously. The same TCP or UDP flow always traverses the same VPN tunnel or path, unless a maintenance event happens on one of the instances.
+
+When a planned maintenance or unplanned event happens to one gateway instance, the IPsec tunnel from that instance to your on-premises VPN device is disconnected. The corresponding routes on your VPN devices should be removed or withdrawn automatically so traffic is switched over to the other active IPsec tunnel. On the Azure side, the switch happens automatically from the affected instance to the active instance.
+
+:::image type="content" source="../media/active-active-ea464be2.png" alt-text="Diagram that shows two active-active VPN gateways connecting through multiple paths to two on-premises VPN gateways." border="false":::

@@ -4,7 +4,7 @@ Suppose you need to determine whether one value is greater, equal to, or less th
 
 In these cases, you use many different kinds of Boolean expressions that use a wide array of operators.
 
-In this module, you'll learn about Boolean expressions and use many different operators and technique to test values for equality, inequality, and comparison. Finally, you'll learn how to use a special inline version of an `if` statement called the conditional operator for an "either/or" result.
+In this module, you'll learn about Boolean expressions and use many different operators and techniques to test values for equality, inequality, and comparison. Finally, you'll learn how to use a special inline version of an `if` statement called the conditional operator for an "either/or" result.
 
 By the end of this module, you'll write code that can more fully express your intent as you develop decision logic in your applications.
 

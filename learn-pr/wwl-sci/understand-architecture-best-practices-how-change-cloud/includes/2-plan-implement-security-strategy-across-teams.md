@@ -244,7 +244,7 @@ Successful programs incorporate these elements into their security strategy proc
 
     -   Adapt to the shared responsibility model of the cloud.
 
-    -   Include all cloud types and multi-cloud deployments.
+    -   Include all cloud types and multicloud deployments.
 
     -   Prefer native cloud controls to avoid unnecessary and harmful friction.
 

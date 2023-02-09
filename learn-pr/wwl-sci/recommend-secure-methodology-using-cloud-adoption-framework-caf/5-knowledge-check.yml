@@ -4,49 +4,80 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/17/2022
+  ms.date: 02/07/2023
   author: wwlpublish
   ms.author: hrasheed
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/5-knowledge-check.md)]
 quiz:
-  title: "Recommend a secure methodology using the Cloud Adoption Framework (CAF)"
+  title: "Understand architecture best practices"
   questions:
-  - content: "What three security practices should be the focus of the plan and develop stage?"
+  - content: "How can Tailwind Traders reference Microsoft Zero Trust Architecture?"
     choices:
-    - content: "1) Dependency management 2) Static application security testing 3) Secure pipelines"
+    - content: "Develop security requirements based on the organizational financial goals."
       isCorrect: false
-      explanation: "Incorrect. These security controls are used in the 'Commit the code' phase."
-    - content: "1) Threat modeling, 2) IDE security plug-ins and pre-commit hooks and 3) peer reviews and securing coding standards."
+      explanation: "Develop security requirements based on the organizational financial goals."
+    - content: "Identify the integration points for architecture using Microsoft Cybersecurity Reference Architecture (MCRA)."
       isCorrect: true
-      explanation: "Correct. These are all security controls, which should be applied the plan and develop stage."
-    - content: "1) Dynamic application security testing 2) Cloud configuration validation 3) Infrastructure scanning."
+      explanation: "Identify the integration points for architecture using Microsoft Cybersecurity Reference Architecture (MCRA)."
+    - content: "Provide familiar security tools and significantly enhanced levels of network security."
       isCorrect: false
-      explanation: "Incorrect. These items are security controls that used in the 'Build and test' phase"
-  - content: "What should be the first step to get started with asset protection?"
+      explanation: "Provide familiar security tools and significantly enhanced levels of network security."
+  - content: "Security helps create assurances for a business based on three major elements. Which one isn't part of this list?"
     choices:
-    - content: "Start with industry baselines."
+    - content: "Confidentiality"
       isCorrect: false
-      explanation: "Incorrect. This is technique is actually the second step for getting started with asset protection."
-    - content: "Focus on well known resources."
+      explanation: "Incorrect. Security helps create assurances of confidentiality, integrity, and availability for a business."
+    - content: "Availability"
+      isCorrect: false
+      explanation: "Incorrect. Security helps create assurances of confidentiality, integrity, and availability for a business."
+    - content: "Redundancy"
       isCorrect: true
-      explanation: "Correct."
-    - content: "Make a list of accountable and responsible teams."
-      isCorrect: false
-      explanation: "This best practice is key information in the asset protection process, but is not the first step."
-  - content: "The goal of a mature security program should be which of the following?"
+      explanation: "Correct. Redundancy isn't a separate element, is actually part of availability."
+  - content: "A security strategy must enable defined business outcomes while:"
     choices:
-    - content: "Search for and eliminate risk."
-      isCorrect: false
-      explanation: "Incorrect. It may be difficult or impossible to completely eliminate all risk from an organization's systems."
-    - content: "Expose and mitigate risks."
+    - content: "Reduce risk to an acceptable level and enable employees to be productive."
       isCorrect: true
-      explanation: "Correct."
-    - content: "Prevent risks from occurring."
+      explanation: "Correct. The security strategy must enable defined business outcomes, reduce risk to an acceptable level, and enable employees to be productive."
+    - content: "Reduce risk to zero and enable employees to be productive."
       isCorrect: false
-      explanation: "Incorrect. In situations where a security program is being created after systems already exist, the goal should be to handle existing risks."
+      explanation: "Incorrect. Reducing risk to zero may be too costly for the company. In addition, the cost of the security controls could be more expensive than the value of the asset being protected."
+    - content: "Reduce risk to an acceptable level and enable partners."
+      isCorrect: false
+      explanation: "Incorrect. The security strategy can enable partners, but the answer is incomplete since it doesn't cover employees first."
+  - content: "Which one of the options below isn't a key security strategy principle?"
+    choices:
+    - content: "Productivity and security"
+      isCorrect: false
+      explanation: "Incorrect. Productivity and security are actually key security strategy principles."
+    - content: "Shared responsibility"
+      isCorrect: false
+      explanation: "Incorrect. Shared responsibility is actually a key security strategy principle."
+    - content: "Reduce compromise"
+      isCorrect: true
+      explanation: "Correct. Reduce compromise isn't a key security strategy principle."
+  - content: "Microsoft has built capabilities and resources to help accelerate your implementation of this security guidance on Microsoft Azure. Which tool is responsible for continuous assessment of the workloads and provides security visibility via Secure Score?"
+    choices:
+    - content: "Microsoft cloud security benchmark"
+      isCorrect: false
+      explanation: "Incorrect. MCSB is a set of security recommendations."
+    - content: "Microsoft Defender for Cloud"
+      isCorrect: true
+      explanation: "Correct. Defender for Cloud performs continuous assessment, and it has the Secure Score capability built-in."
+    - content: "Microsoft Sentinel"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Sentinel is a SIEM solution."
+  - content: "Security management strategy is composed by some imperative principles. Given the following definition, which principle does it relate to? \"Elevate security through built-in intelligence and recommendations\"."
+    choices:
+    - content: "Visibility"
+      isCorrect: false
+      explanation: "Incorrect. Visibility is about understanding the security state and risk across resources."
+    - content: "Control"
+      isCorrect: false
+      explanation: "Incorrect. Control is about defining consistent security policies and enabling controls."
+    - content: "Guidance"
+      isCorrect: true
+      explanation: "Correct. Guidance is used to elevate security through built-in intelligence and recommendations."

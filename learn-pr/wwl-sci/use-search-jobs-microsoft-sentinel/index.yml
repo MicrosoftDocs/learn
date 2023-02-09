@@ -3,7 +3,7 @@ uid: learn.wwl.use-search-jobs-microsoft-sentinel
 metadata:
   title: Use Search jobs in Microsoft Sentinel
   description: "Use Search jobs in Microsoft Sentinel"
-  ms.date: 06/29/2022
+  ms.date: 12/01/2022
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ abstract: |
   - Restore archive logs in Microsoft Sentinel
 prerequisites: |
   Basic knowledge of operational concepts such as KQL, logging, and archiving
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/use-search-jobs-microsoft-sentinel.svg
 levels:
 - intermediate
 roles:

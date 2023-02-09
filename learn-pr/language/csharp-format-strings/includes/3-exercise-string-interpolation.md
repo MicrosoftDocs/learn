@@ -1,4 +1,4 @@
-Suppose we want to print a receipt for the sale of a chemical solvent used in industrial settings. While our scales measure in micrograms, we price each sale in milligrams (a thousandth of a gram). To print the receipt, we would likely need to combine data of different types, including fractional values, currency, and percentages in precise ways.
+Suppose we want to print a receipt for the sale of a chemical solvent used in industrial settings. While our scales measure in micrograms, we price each sale in milligrams (a thousandth of a gram). To print the receipt, we'd likely need to combine data of different types, including fractional values, currency, and percentages in precise ways.
 
 ### Step 1 - Display the invoice number using string interpolation
 
@@ -22,7 +22,7 @@ Invoice Number: 1201
 
 ### Step 2 - Display the product measurement in milligrams
 
-Since we bill our customers using milligrams even though our measuring instruments measure to the precision of a microgram, we will only display three digits after the decimal point. Add the following code below the code you typed in step 1:
+Because we bill our customers using milligrams even though our measuring instruments measure to the precision of a microgram, we'll only display three digits after the decimal point. Add the following code below the code you typed in step 1:
 
 ```csharp-interactive
 Console.WriteLine($"   Measurement: {productMeasurement:N3} mg");

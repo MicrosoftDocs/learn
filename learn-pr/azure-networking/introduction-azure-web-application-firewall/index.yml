@@ -3,7 +3,7 @@ uid: introduction-azure-web-application-firewall
 metadata:
   title: "Introduction to Azure Web Application Firewall"
   description: Describe how Azure Web Application Firewall protects Azure web applications from common attacks, including its features, how it’s deployed, and its common use cases.
-  ms.date: 02/10/2021
+  ms.date: 12/19/2022
   author: vhorne
   ms.author: victorh
   ms.topic: interactive-tutorial

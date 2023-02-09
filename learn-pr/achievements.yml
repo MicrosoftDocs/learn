@@ -1362,3 +1362,135 @@ achievements:
   title: Using IAAS support with Azure for SAP workloads
   summary: There are many SAP-certified operating systems supported by SAP running on Azure VMs. In this module, you will review the SAP recommended support products for VM types and the network, database, and monitoring requirements.
   iconUrl: /training/achievements/using-iaas-support-with-azure-for-sap-workloads.svg
+- uid: learn-pr.wwl.planning-azure-sap-workloads.trophy
+  type: trophy
+  title: Planning Azure for SAP workloads
+  summary: In this learning path, you see how to plan for a deployment of SAP solutions on Azure. You will also consider the preparation required for migrating SAP workloads to Azure.
+  iconUrl: /training/achievements/planning-azure-sap-workloads.svg
+- uid: learn-pr.wwl.planning-implementing-sap-solutions-azure.badge
+  type: badge
+  title: Planning for implementing SAP solutions on Azure
+  summary: In this module, you will review the SAP supported VM and HLI types, the OS and DBMS releases for SAP in Azure, and the SAPS throughput estimates provided by Azure VMs and HLI.
+  iconUrl: /training/achievements/planning-implementing-sap-solutions-azure.svg
+- uid: learn-pr.wwl.preparing-migrate-sap-workloads-azure.badge
+  type: badge
+  title: Prepare to migrate SAP workloads to Azure
+  summary: In this module, you will walk through the important steps required for deploying SAP workloads to Azure. The steps include project preparation, pilot, non-production, production preparation, go-live, and post production.
+  iconUrl: /training/achievements/preparing-migrate-sap-workloads-azure.svg
+- uid: learn-pr.wwl.utilizing-azure-sap-workloads-reference-architecture.badge
+  type: badge
+  title: Utilize Azure for SAP workloads reference architecture
+  summary: In this module, you will review the Azure infrastructure options for hosting SAP NetWeaver and S/4HANA systems in Azure. You will examine the differences between the offerings of traditional outsourcers and IaaS offerings.
+  iconUrl: /training/achievements/utilizing-azure-sap-workloads-reference-architecture.svg
+- uid: learn.create-voice-activated-webxr-app-with-babylonjs.badge
+  type: badge
+  title: Create and deploy a voice activated WebXR app with Babylon.js and Azure Cognitive Services
+  summary: Create a voice activated WebXR app using Babylon.js and the Azure Speech-to-text API under Azure Cognitive Services, and then deploy the app using Azure Blob Storage.
+  iconUrl: /training/achievements/create-voice-activated-webxr-app-with-babylonjs.svg
+- uid: learn.azure.intro-to-custom-commands.badge
+  type: badge
+  title: Introduction to Custom Commands
+  summary: Custom Commands makes it easy to build voice commanding apps optimized for voice-first interaction experiences. It provides a straightforward authoring and hosting experience on a single interface, helping you to focus on building the best solution for your voice-commanding scenarios.
+  iconUrl: /training/achievements/intro-to-custom-commands.svg
+- uid: learn.iot.manage-iot-central-apps-with-rest-api.badge
+  type: badge
+  title: Manage IoT Central applications with the REST API
+  summary: The IoT Central REST API lets you manage applications programmatically. For example, you can add device templates, create devices, set device properties, send commands to devices, and manage data exports.
+  iconUrl: /training/achievements/manage-iot-central-apps-with-rest-api.svg
+- uid: learn.azure.create-language-translator-mixed-reality-application-unity-azure-cognitive-services.badge
+  type: badge
+  title: Create a speech translator application with Unity and Azure Cognitive Services.
+  summary: Create a speech translator application for your mixed reality device (Windows Mixed Reality, HoloLens 2, etc.) by using Cognitive Services.
+  iconUrl: /training/achievements/language-translator-mixed-reality.svg
+- uid: learn.azure.intro-to-speech-to-text.badge
+  type: badge
+  title: Introduction to Speech-to-text
+  summary: Speech-to-text enables the real-time transcription of audio streams into text.
+  iconUrl: /training/achievements/intro-to-speech-to-text.svg
+- uid: learn.azure.intro-to-text-to-speech.badge
+  type: badge
+  title: Introduction to Text-to-speech
+  summary: Text-to-speech converts text into human-like speech, along with the ability to create a unique, custom voice to use in your applications.
+  iconUrl: /training/achievements/intro-to-text-to-speech.svg
+- uid: learn.wwl.ingest-data-streams-with-azure-stream-analytics.badge
+  type: badge
+  title: Ingest data streams with Azure Stream Analytics
+  summary: Learn how to create Azure Stream Analytics jobs to process input data, transform it with a query, and return results.
+  iconUrl: /training/achievements/azure-stream-analytics-ingest-data-streams.svg
+- uid: learn.identify-abnormal-time-series-data-anomaly-detector.badge
+  type: badge
+  title: Identify abnormal time-series data with Anomaly Detector
+  summary: Learn how to detect anomalies in real-time from an IoT time-series data stream using univariate Azure Anomaly Detector API. In addition, users will learn how to train an AI model using the multivariate Anomaly Detector API to identify outliers, unexpected data patterns or data that deviate significantly from the norm..
+  iconUrl: /training/achievements/identify-abnormal-time-series-data-anomaly-detector.svg
+- uid: learn.iot.trigger-azure-event-grid-workflow-iot-device.badge
+  type: badge
+  title: Trigger an Azure Event Grid workflow from an IoT device
+  summary: Learn the basics of integrating Azure IoT Hub with Azure Event Grid to trigger a workflow when a new IoT device is added to a solution.
+  iconUrl: /training/achievements/trigger-azure-event-grid-workflow-iot-device.svg
+- uid: learn.wwl.serve-data-from-azure-synapse-serverless-sql-pool.badge
+  type: badge
+  title: Serve the data from Azure Synapse serverless SQL pool
+  summary: Learn how to serve and make use of the data that is queried or transformed by Azure Synapse serverless SQL pool.
+  iconUrl: /training/achievements/serve-the-data-from-azure-synapse-serverless-sql-pool.svg
+- uid: learn.az-900-describe-cloud-concepts.trophy
+  type: trophy
+  title: 'Microsoft Azure Fundamentals: Describe core Azure concepts'
+  summary: >-
+    New to the cloud? Azure fundamentals is a six-part series that teaches you basic cloud concepts, provides a streamlined overview of many Azure services, and guides you with hands-on exercises to deploy your very first services for free.
+  
+  
+    After completing this learning path, you'll be able to:
+  
+      - Understand the benefits of cloud computing in Azure and how it can save you time and money
+      - Explain cloud concepts such as high availability, scalability, elasticity, agility, and disaster recovery
+      - Describe core Azure architecture components such as subscriptions, management groups, resources and resource groups
+      - Summarize geographic distribution concepts such as Azure regions, region pairs, and availability zones
+  
+    Here are the learning paths in this series:
+  
+  
+    :::row:::
+  
+    :::column:::
+      <img src="/training/achievements/az-900-describe-cloud-concepts.svg" width="101" alt="The trophy for the Describe core Azure concepts learning path." role="presentation"></img>
+  
+      Part 1: Describe core Azure concepts
+    :::column-end:::
+  
+    :::column:::
+      <img src="/training/achievements/az-900-describe-core-azure-services.svg" width="79.59" alt="The trophy for the Describe core Azure services learning path." role="presentation"></img>
+  
+      [Part 2: Describe core Azure services](/training/paths/az-900-describe-core-azure-services/)
+    :::column-end:::
+  
+    :::column:::
+      <img src="/training/achievements/azure-fundamentals-describe-core-solutions-and-management-tools-on-azure.svg" width="79.59" alt="The trophy for the Describe core solutions and management tools on Azure learning path." role="presentation"></img>
+  
+      [Part 3: Describe core solutions and management tools on Azure](/training/paths/az-900-describe-core-solutions-management-tools-azure/)
+    :::column-end:::
+  
+    :::row-end:::
+  
+  
+    :::row:::
+  
+    :::column:::
+      <img src="/training/achievements/examine-microsoft-azure-security-privacy-compliance-trust.svg" width="101" alt="The trophy for the Describe general security and network security features learning path." role="presentation"></img>
+  
+      [Part 4: Describe general security and network security features](/training/paths/az-900-describe-general-security-network-security-features/)
+    :::column-end:::
+  
+    :::column:::
+      <img src="/training/achievements/az-900-describe-identity-governance-privacy-compliance-features.svg" width="79.59" alt="The trophy for the Describe identity, governance, privacy, and compliance features learning path." role="presentation"></img>
+  
+      [Part 5: Describe identity, governance, privacy, and compliance features](/training/paths/az-900-describe-identity-governance-privacy-compliance-features/)
+    :::column-end:::
+  
+    :::column:::
+      <img src="/training/achievements/review-microsoft-azure-pricing-slas-lifecycles.svg" width="101" alt="The trophy for the Describe Microsoft Cost Management and service level agreements learning path." role="presentation"></img>
+  
+      [Part 6: Describe Microsoft Cost Management and service level agreements](/training/paths/az-900-describe-azure-cost-management-service-level-agreements/)
+    :::column-end:::
+  
+    :::row-end:::
+  iconUrl: /training/achievements/az-900-describe-cloud-concepts.svg

@@ -1,4 +1,4 @@
-Pipelines enable you to automate the steps in your deployment process. Your process might include several logical groups of jobs that you want to run. In this unit, you'll learn about pipeline stages and how you use them to add quality control processes to your Bicep deployments.
+Pipelines allow you to automate the steps in your deployment process. Your process might include several logical groups of jobs that you want to run. In this unit, you'll learn about pipeline stages and how you use them to add quality control processes to your Bicep deployments.
 
 ## What are pipeline stages?
 
@@ -12,7 +12,7 @@ In CI stages, you check the validity of the changes that have been made to your 
 
 In many programming languages, code needs to be _built_ before someone can run it. When a Bicep file is deployed, it's converted, or _transpiled_, from Bicep to JSON. The tooling performs this process automatically. In most situations, you don't need to manually build Bicep code to JSON templates within your pipeline. We still use the term _continuous integration_ when we talk about Bicep code, though, because the other parts of CI still apply, such as validating your code.
 
-After your CI stages run successfully, you should have increased your confidence that the changes you've made will deploy successfully too. In CD stages, you deploy your code to each of your environments. You usually start with test and other non-production environments, and then move through to production environments. In this module, we'll deploy to a single environment. In a future module, you'll learn how to extend your deployment pipeline to deploy to multiple environments, such as non-production and production environments.
+After your CI stages run successfully, you should've increased your confidence that the changes you've made will deploy successfully too. In CD stages, you'll deploy your code to each of your environments. You'll usually start with test and other non-production environments and move through to production environments. In this module, we'll deploy to a single environment. In a future module, you'll learn how to extend your deployment pipeline to deploy to multiple environments, such as non-production and production environments.
 
 Stages run in a sequence. You can control how and when each stage runs. For example, you can configure your CD stages to run only after your CI stages successfully run. Or, you might have multiple CI stages that need to run in sequence, such as to build your code and then test it. You might also include a _rollback_ stage that runs only if previous deployment stages failed.
 
@@ -24,7 +24,7 @@ Consider a timeline of the activities that you perform when you write code. The 
 
 :::image type="content" source="../../includes/media/shift-left.png" alt-text="Chart with a timeline on the horizontal axis, cost on the vertical axis, and a line showing that the cost increases the later an error is identified." border="false":::
 
-It's a well-understood rule in software development that the earlier in the process that you find an error - the closer to the left of the timeline - the easier, quicker, and cheaper it is to fix. The later in the process that you catch an error, the harder and more complicated it is to fix.
+It's a well-understood rule in software development that the earlier in the process that you find an error (the closer to the left of the timeline), the easier, quicker, and cheaper it is to fix. The later in the process that you catch an error, the harder it is to fix.
 
 So, the goal is to shift the discovery of problems toward the left of the preceding diagram. Throughout this module, you'll see how you can add more validation and testing to your pipeline as it progresses.
 
@@ -68,13 +68,13 @@ Sometimes, you want to run a stage when a previous stage fails. For example, her
 
 :::image type="content" source="../media/2-stages-condition.png" alt-text="Diagram that shows a pipeline with a Deploy stage, and a condition so that a failure in the Deploy stage results in the Rollback stage running." border="false":::
 
-You use the `condition` keyword to specify a condition that should be met before a stage runs:
+You can use the `condition` keyword to specify a condition that should be met before a stage runs:
 
 :::code language="yaml" source="code/2-stages-condition.yml" highlight="13" :::
 
 In the preceding example, when everything goes well, Azure Pipelines runs the **Validate** stage first, and then it runs the **Deploy** stage. It skips the **Rollback** stage. However, if the **Deploy** stage fails, Azure Pipelines runs the **Rollback** stage. You'll learn more about rollback later in this module.
 
-Every job executes on a new agent. That means that every job will start from a clean environment. So, in every job you typically need to check out the source code as your first step.
+Every job executes on a new agent. That means that every job will start from a clean environment, so in every job you typically need to check out the source code as your first step.
 
 ## Bicep deployment stages
 

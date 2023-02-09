@@ -10,11 +10,11 @@ How do you decide which investors to approach, and in what order?
 
 The first step before you contact any investors is to do research and determine which investors might be interested in your company. Consider the sector focus, stage of investment, and geography. Most investors prefer to invest in companies located close enough that they can meet in person (although this has changed markedly over the last couple of years).
 
-After you have a list of potential investors, rank them in order of preference. At the top of the list are the investors that you most want to have as shareholders in your company. This ranking might be because of their sector experience, networks, or strong brand. Or maybe you've spoken to founders they've backed previously who have said they're great to work with.
+After you have a list of potential investors, rank them in order of preference. At the top of the list are the investors that you most want to have as shareholders in your company. This ranking might be because of their sector experience, networks, or strong brand. Maybe you've spoken to founders they've backed previously who have said they're great to work with.
 
 At the bottom of the list are the investors that you would be willing to have as shareholders. They might be less desirable because they have shallower expertise in your sector, they're general partners who don't have experience as founders, or the feedback from other founders is less positive.
 
-Don't contact investors you wouldn't accept an investment from. This is a waste of your time and theirs.
+Don't contact investors from whom you wouldn't accept an investment. This is a waste of your time and theirs.
 
 There are two schools of thought on which investors to approach first:
 
@@ -24,7 +24,7 @@ There are two schools of thought on which investors to approach first:
 
    By pitching less desirable investors, you'll gain valuable experience in pitching your startup. You'll also receive feedback and questions from these investors that you can integrate into subsequent pitches. By the time you make it to the top of your list, your pitch will be more solid. You should be able to anticipate most of the likely questions you'll receive.
 
-   The disadvantage of the second approach is that it takes longer. You'll have more meetings, and you might even receive investment offers from your non-preferred investors. Many founders find it difficult to say no to an investment offer because they run the risk of saying no and then not receiving offers from any of their preferred investors.
+   The disadvantage of the second approach is that it takes longer. You'll have more meetings, and you might even receive investment offers from your non-preferred investors. Many founders find it difficult to say no to an investment offer, because they run the risk of saying no and then not receiving offers from any of their preferred investors.
   
 ## Make contact with investors
 
@@ -52,15 +52,15 @@ Approaching investors in series also means you have little opportunity for compe
 
 Finally, startups that are on the fundraising trail for an extended period start to look questionable. Investors will ask why after many months you've still not secured your required funding.
 
-In contrast, if you make initial contact with 10 to 20 investors in parallel, you'll increase the chances of closing your funding round quickly. The up-front workload is higher. But this approach enables you to treat fundraising like a sales funnel and prioritize your efforts on those investors who appear most likely to proceed. Even if most investors pass on your funding round, you'll have enough candidate investors in the pipeline that you won't need to restart the entire process.
+In contrast, if you make initial contact with 10 to 20 investors in parallel, you'll increase the chances of closing your funding round quickly. The up-front workload is higher, but this approach allows you to treat fundraising like a sales funnel and prioritize your efforts on those investors who appear most likely to proceed. Even if most investors pass on your funding round, you'll have enough candidate investors in the pipeline that you won't need to restart the entire process.
 
 You might also be able to achieve some competitive tension as investors realize they need to move quickly and offer attractive terms to not miss out.
 
 ## Find a lead investor
 
-Most funding rounds involve multiple investors. But in most cases, one investor will do most of the pre-investment work and will often be the first to commit funding. This investor is referred to as the *lead investor*.
+Most funding rounds involve multiple investors, but in most cases one investor will do most of the pre-investment work and will often be the first to commit funding. This investor is referred to as the *lead investor*.
 
-Finding a lead investor is important because their commitment signals to other investors that someone they trust has evaluated your startup as a worthy investment. This phenomenon is noticeable when the lead investor is a top-tier venture capital fund or well-known angel investor. On many occasions, previously undecided investors have committed within days of learning that a lead investor has committed to a funding round.
+Finding a lead investor is important, because their commitment signals to other investors that someone they trust has evaluated your startup as a worthy investment. This phenomenon is noticeable when the lead investor is a top-tier venture capital fund or well-known angel investor. On many occasions, previously undecided investors have committed within days of learning that a lead investor has committed to a funding round.
 
 As a startup founder, one of your objectives is to find true believers who will make an early decision to back your company and help you secure the other investors you need to close your funding round.
 
@@ -75,12 +75,12 @@ A term sheet is a short legal agreement between your company and an investor tha
 
 After investors have signed a term sheet, they'll commence due diligence, as discussed in the following section. If no major issues are identified, the transaction will be documented in a more substantive set of legal agreements. Funds will only be transferred to your company's bank account after these agreements are signed.
 
-Term sheets are an important part of the fundraising process. They allow investors to make an in-principle commitment to invest but without the overhead of negotiating detailed legal agreements. They also allow startups to have some degree of confidence about which investors are committed and on what terms.
+Term sheets are an important part of the fundraising process. They allow investors to make an in-principle commitment to invest, but without the overhead of negotiating detailed legal agreements. They also allow startups to have some degree of confidence about which investors are committed and on what terms.
 
 The content of term sheets is beyond the scope of this unit. As a startup founder, you should be familiar with the key terminology and concepts contained in term sheets. You should also put some thought into preparing a term sheet of your own.
 
 > [!TIP]
-> For more information on fundraising terminology and term sheets, see Brad Feld's book [Venture Deals: Be Smarter Than Your Lawyer and Venture Capitalist](https://www.venturedeals.com/?azure-portal=true).
+> For more information on fundraising terminology and term sheets, check out Brad Feld's book [Venture Deals: Be Smarter Than Your Lawyer and Venture Capitalist](https://www.venturedeals.com/?azure-portal=true).
 
 ## Be prepared for due diligence
 
@@ -92,19 +92,19 @@ After you've signed a term sheet, an investor begins due diligence. In this proc
 
 The result of due diligence is to ensure that there are no serious obstacles to your company's chance to succeed.
 
-There's no single due-diligence checklist that all investors use. There are some common themes that most investors are interested in. The following sections list due diligence review topics that most early-stage investors will want to review.
+There's no single due-diligence checklist that all investors use, but there are some common themes in which most investors are interested. The following sections list due diligence review topics that most early-stage investors will want to review.
 
 ||Topics|
 |---|---|
-|**Corporate**|Confirm company structure, incorporation documents, list of shareholders, and class of shares.<br><br>Copy of shareholders agreement.|
-|**Intellectual property (IP)**|Confirm ownership by the company of all relevant IP assets.<br><br>Confirm deed of assignment conferring ownership of the IP created by employees and contractors.<br><br>Confirm non-reliance on IP assets that aren't owned by the company.|
-|**Financial**|Identify any outstanding debts or other financing arrangements.<br><br>Historical financial reports verified by company accountant.<br><br>Details of any financial breaches or disputes.|
-|**Contracts**|Details of all material contracts, including with employees, contractors, suppliers, and customers.<br><br>Copies of all material contracts.<br><br>Details of any contractual breaches or disputes.|
-|**Investment**|Details of any prior investments, including identity of investor and investment terms.|
-|**Assets**|Register of all material assets or real property owned by the company.|
-|**Employees**|List of all current and past employees, including roles, responsibilities, remuneration, and stock options.<br><br>Details of any disputes or claims.<br><br>Copies of all employment agreements.|
-|**Insurance**|Details of any current insurance policies, including claims made and any disputes.|
-|**Litigation**|Details of any existing or threatened proceedings by third parties.|
-|**Regulatory**|Details of any government approvals, licenses, or permits obtained or required.|
+|**Corporate**|Confirm company structure, incorporation documents, list of shareholders, and class of shares<br><br>Copy of shareholders agreement|
+|**Intellectual property (IP)**|Confirm ownership by the company of all relevant IP assets<br><br>Confirm deed of assignment conferring ownership of the IP created by employees and contractors<br><br>Confirm non-reliance on IP assets that aren't owned by the company|
+|**Financial**|Identify any outstanding debts or other financing arrangements<br><br>Historical financial reports verified by company accountant<br><br>Details of any financial breaches or disputes|
+|**Contracts**|Details of all material contracts, including with employees, contractors, suppliers, and customers<br><br>Copies of all material contracts<br><br>Details of any contractual breaches or disputes|
+|**Investment**|Details of any prior investments, including identity of investor and investment terms|
+|**Assets**|Register of all material assets or real property owned by the company|
+|**Employees**|List of all current and past employees, including roles, responsibilities, remuneration, and stock options<br><br>Details of any disputes or claims<br><br>Copies of all employment agreements|
+|**Insurance**|Details of any current insurance policies, including claims made and any disputes|
+|**Litigation**|Details of any existing or threatened proceedings by third parties|
+|**Regulatory**|Details of any government approvals, licenses, or permits obtained or required|
 
-As a founder, you'll want to ensure that investors can complete due diligence in the shortest time possible. You can streamline this process by creating a secure online repository of all relevant documents  and sharing a link with the investor. This repository is sometimes referred to as a *data room*.
+As a founder, you'll want to ensure that investors can complete due diligence in the shortest time possible. You can streamline this process by creating a secure online repository of all relevant documents and sharing a link with the investor. This repository is sometimes referred to as a *data room*.

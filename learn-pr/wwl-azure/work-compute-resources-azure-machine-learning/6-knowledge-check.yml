@@ -1,0 +1,36 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.work-compute-resources-azure-machine-learning.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Test your knowledge on how and when to work with different types of compute targets in Azure Machine Learning."
+  ms.date: 01/17/2023
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "You're working in Visual Studio Code. You cloned a GitHub repository to Visual Studio Code and you're editing code in a Jupyter notebook. To test the code, you want to run a cell within the notebook. Which compute should you use?"
+    choices:
+    - content: "Compute instance"
+      isCorrect: true
+      explanation: "Correct. You can use a compute instance to run a notebook in Visual Studio Code."
+    - content: "Compute cluster"
+      isCorrect: false
+      explanation: "Incorrect. You can't use a compute cluster to run a notebook in Visual Studio Code."
+    - content: "Azure Databricks cluster"
+      isCorrect: false
+      explanation: "Incorrect. You can't use a Databricks cluster to run a notebook in Visual Studio Code."
+  - content: "You're experimenting with component-based pipelines in the Designer. You want to quickly iterate and experiment, as you're trying out varying configurations of a pipeline. You're using a compute cluster. To minimize the start-up time each time you submit a pipeline, which parameter should you change?"
+    choices:
+    - content: "Compute size"
+      isCorrect: false
+      explanation: "Incorrect. You shouldn't change the compute size when you want the compute cluster to remain available in between pipeline job runs."
+    - content: "Idle time before scale down"
+      isCorrect: true
+      explanation: "Correct. By increasing the idle time before scale down, you can run multiple pipelines consecutively without the compute cluster resizing to zero nodes in between jobs."
+    - content: "Maximum number of instances"
+      isCorrect: false
+      explanation: "Incorrect. You shouldn't change the maximum number of instances when you want the compute cluster to remain available in between pipeline job runs."

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.ingest-streaming-data-use-azure-stream-analytics-synapse.stream-ingestion-scenarios
+title: Stream ingestion scenarios
+metadata:
+  title: Stream ingestion scenarios
+  description: "Stream ingestion scenarios"
+  ms.date: 12/08/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: stream-analytics
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-stream-ingestion-scenarios.md)]

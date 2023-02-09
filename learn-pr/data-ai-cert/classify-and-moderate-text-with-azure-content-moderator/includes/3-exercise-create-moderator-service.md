@@ -23,7 +23,7 @@ In this exercise, you'll create a new Content Moderator resource in the Azure po
 
 1. Create a new resource group named **LearnRG**.
 
-1. Select **Create**.
+1. Select **Review + Create**. After the validation completes, select **Create**.
 
 The resource will take a few minutes to deploy. After it does, go to the new resource.
 

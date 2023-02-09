@@ -1,4 +1,4 @@
-In this module, you'll finally implement Grover's search algorithm end-to-end - from the oracle definition for the graph coloring problem to the logic of dealing with the randomized nature of the algorithm. 
+In this unit, you'll finally implement Grover's search algorithm end-to-end - from the oracle definition for the graph coloring problem to the logic of dealing with the randomized nature of the algorithm. 
 
 > [!NOTE]
 > Out of necessity, the overall code in this example is rather long, as it includes not only the generic Grover's algorithm implementation but also the problem-specific oracle implementation. 
@@ -66,7 +66,7 @@ This leaves us only the last operation, which defines the problem we're solving,
   Taking this into account, we'll end up running $\frac{\pi}{4} \sqrt{\frac{N}{M}} = 2.96 \approx 3$ iterations.
 
 * The `repeat ... until` loop handles the possibility of getting an incorrect answer on the first run of the algorithm. 
-  The body of the loop runs the algorithm once, measures the qubit register to get the result, and then checks whether it's a solution to the problem. If it is, the variable `correct` is updated to reflect that and the measurement results are converted to a bit array. Otherwise, the algorithm is run again.
+  The body of the loop runs the algorithm once, measures the qubit register to get the result, and then checks whether it's a solution to the problem. If it is, the variable `correct` is updated to reflect that, and the measurement results are converted to a bit array. Otherwise, the algorithm is run again.
 
 If you run the algorithm, you'll see output like this:
 
@@ -78,15 +78,16 @@ Vertex 2 - color 1
 Vertex 3 - color 3
 Vertex 4 - color 2
 ```
+
 For five space stations with these characteristics, we need to assign four different bandwidths based on these results.
 
 ## Watching the amplitudes
 
 Now let's take a look at the behavior of the amplitudes of the basis states at the key points during the algorithm execution.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4JQ8E]
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4JQ8E]
 
 Congratulations! You've implemented your first quantum search algorithm and used it to solve a small problem.
 
-In the next unit, you consider other examples and you take a look at what kinds of real-world problems are, or are not, a good fit for using Grover's algorithm to solve them.
+In the next unit, you consider other examples and you take a look at what kinds of real-world problems are, or aren't, a good fit for using Grover's algorithm to solve them.
 

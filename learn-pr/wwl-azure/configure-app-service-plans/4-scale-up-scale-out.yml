@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-app-service-plans.scale-up-scale-out
-title: Scale up and scale out the app service
+title: Scale up and scale out Azure App Service
 metadata:
-  title: Scale up and scale out the app service
-  description: "Scale up and scale out the app service"
-  ms.date: 11/17/2022
+  title: Scale up and scale out Azure App Service
+  description: "Scale up and scale out Azure App Service"
+  ms.date: 01/29/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial

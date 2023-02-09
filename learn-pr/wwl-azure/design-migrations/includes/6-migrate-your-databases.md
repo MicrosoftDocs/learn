@@ -37,14 +37,14 @@ Let's examine how to use the Database Migration Service to migrate your database
 
 For both online and offline migrations, you need to complete the following prerequisite tasks:
 
-- Download DMA
-- Create an Azure Virtual Network instance
-- Configure network security groups (NSGs)
-- Configure Azure Windows Firewall
-- Configure credentials
-- Provision your target database in Azure (size the target database appropriately for the migrated workload)
+- Download DMA.
+- Create an Azure Virtual Network instance.
+- Configure Network Security Groups (NSGs).
+- Configure Azure Windows Firewall.
+- Configure credentials.
+- Provision your target database in Azure (size the target database appropriately for the migrated workload).
 
-#### Step 1. Assess on-premises databases
+#### Step 1: Assess on-premises databases
 
 After you verify all prerequisites are met, you're ready to begin the migration. The first step is to assess your on-premises environment with DMA.
 
@@ -54,7 +54,7 @@ The following screenshot shows a typical DMA assessment report for migrating a d
 
 :::image type="content" source="../media/data-migration-supported-features.png" alt-text="Screenshot of a typical DMA assessment report for migrating a database to Azure." border="false":::
 
-#### Step 2. Migrate schema with DMA
+#### Step 2: Migrate schema with DMA
 
 Each database has a schema that represents its entire structure. The schema defines the rules for how the structured data is organized and the relationships between data elements. You migrate the schema before you migrate all the data in your database. By migrating the schema first, you accomplish two goals:
 
@@ -64,7 +64,7 @@ Each database has a schema that represents its entire structure. The schema defi
 
 When the script completes, check the target server to make sure the database is configured correctly.
 
-#### Step 3. Migrate data and verify
+#### Step 3: Migrate data and verify
 
 After you complete your assessment and migrate your schema, you can migrate the structured data with the Database Migration Service.
 

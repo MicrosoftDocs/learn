@@ -4,9 +4,9 @@ title: Knowledge check
 metadata:
   title: Check your knowledge
   description: Review what you've learned.
-  ms.date: 04/05/2022
-  author: rjmolyneaux
-  ms.author: rmolyneaux
+  ms.date: 01/09/2023
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-languages
   ms.custom: team=nextgen, devdivchpfy22
@@ -14,37 +14,37 @@ durationInMinutes: 1
 quiz:
   title: Check your knowledge
   questions:
-    - content: What is the main version of Python currently supported?
+    - content: "What is the main version of Python currently supported?"
       choices:
-        - content: Python 1
+        - content: "Python 1"
           isCorrect: false
-          explanation: Incorrect. Python 1 isn't currently supported.
-        - content: Python 2
+          explanation: "Incorrect. Python 1 isn't currently supported."
+        - content: "Python 2"
           isCorrect: false
-          explanation: Incorrect. Python 2 isn't currently supported.
-        - content: Python 3
+          explanation: "Incorrect. Python 2 isn't currently supported."
+        - content: "Python 3"
           isCorrect: true
-          explanation: Correct! The currently supported version of Python is Python 3.
-    - content: What Python function is used to display information on the screen?
+          explanation: "Correct! The currently supported version of Python is Python 3."
+    - content: "What Python function is used to display information on the screen?"
       choices:
-        - content: len
+        - content: "`len`"
           isCorrect: false
-          explanation: Incorrect. len is used to find the length of an item.
-        - content: print
+          explanation: "Incorrect. `len` is used to find the length of an item."
+        - content: "`print`"
           isCorrect: true
-          explanation: Correct! The Python function to display information on the screen
-            is print.
-        - content: open
+          explanation: "Correct! The Python function to display information on the screen
+            is `print`."
+        - content: "`open`"
           isCorrect: false
-          explanation: Incorrect. open is used to open a file.
-    - content: What file extension is typically used for Python files?
+          explanation: "Incorrect. `open` is used to open a file."
+    - content: "What file extension is typically used for Python files?"
       choices:
-        - content: python
+        - content: "python"
           isCorrect: false
-          explanation: Incorrect. python isn't the standard extension for Python files.
-        - content: p
+          explanation: "Incorrect. python isn't the standard extension for Python files."
+        - content: "p"
           isCorrect: false
-          explanation: Incorrect. p isn't the standard extension for Python files.
-        - content: py
+          explanation: "Incorrect. p isn't the standard extension for Python files."
+        - content: "py"
           isCorrect: true
-          explanation: Correct! .py is the standard extension for Python files.
+          explanation: "Correct! .py is the standard extension for Python files."

@@ -35,15 +35,16 @@ In Database-v1, run a query to get the customer entity and review the request ch
 1. On the Azure portal menu, or from the **Home** page, select **Azure Cosmos DB**.
 1. Select the Azure Cosmos DB account with the name that starts with **cosmicworks**.
 1. Select **Data Explorer** on the left side.
-1. Expand **Database-v1**.
-1. Select the **Customer** container.
+1. Expand **database-v1**.
+1. Select the **customer** container.
 1. At the top of the screen, select **New SQL Query**.
 1. Copy and paste the following SQL text and then select **Execute Query**.
 
     ```sql
     SELECT * FROM c WHERE c.id = "FFD0DD37-1F0E-4E2E-8FAC-EAF45B0E9447"
    ```
-1. Select the **Query Stats** tab and note the request charge of 2.83.
+
+1. Select the **Query Stats** tab and note the request charge of 2.83 RUs.
 
     :::image type="content" source="../media/5-customer-query-v1.png" alt-text="Screenshot that shows the query stats for customer query in the database.":::
 
@@ -51,7 +52,7 @@ In Database-v1, run a query to get the customer entity and review the request ch
 
 Run a query to get the customer address entity and review the request charge.
 
-1. Select the **CustomerAddress** container.
+1. Select the **customerAddress** container.
 1. At the top of the screen, select **New SQL Query**.
 1. Copy and paste the following SQL text and then select **Execute Query**.
 
@@ -59,7 +60,7 @@ Run a query to get the customer address entity and review the request charge.
     SELECT * FROM c WHERE c.customerId = "FFD0DD37-1F0E-4E2E-8FAC-EAF45B0E9447"
    ```
 
-1. Select the **Query Stats** tab and note the request charge of 2.83.
+1. Select the **Query Stats** tab and note the request charge of 2.83 RUs.
 
     :::image type="content" source="../media/5-customer-address-query-v1.png" alt-text="Screenshot that shows the query stats for customer address query in the database.":::
 
@@ -67,7 +68,7 @@ Run a query to get the customer address entity and review the request charge.
 
 Run a query to get the customer password entity and review the request charge.
 
-1. Select the **CustomerPassword** container.
+1. Select the **customerPassword** container.
 1. At the top of the screen, select **New SQL Query**.
 1. Copy and paste the following SQL text and then select **Execute Query**.
 
@@ -75,7 +76,7 @@ Run a query to get the customer password entity and review the request charge.
     SELECT * FROM c WHERE c.id = "FFD0DD37-1F0E-4E2E-8FAC-EAF45B0E9447"
    ```
 
-1. Select the **Query Stats** tab and note the request charge of 2.83.
+1. Select the **Query Stats** tab and note the request charge of 2.82 RUs.
 
     :::image type="content" source="../media/5-customer-password-query-v1.png" alt-text="Screenshot that shows the query stats for customer password query in the database.":::
 
@@ -87,15 +88,15 @@ Now that we've run all of our queries, let's add up all of the Request Unit cost
 |---------|---------|
 |Customer|2.83|
 |Customer Address|2.83|
-|Customer Password|2.83|
-|**Total RU/s**|**8.49**|
+|Customer Password|2.82|
+|**Total RU/s**|**8.48**|
 
 ## Measure performance of embedded entities
 
 Now we're going to query for the same information but with the entities embedded in a single document.
 
-1. Select the **Database-v2** database.
-1. Select the **Customer** container.
+1. Select the **database-v2** database.
+1. Select the **customer** container.
 1. Run the following query.
 
     ```sql
@@ -106,7 +107,7 @@ Now we're going to query for the same information but with the entities embedded
 
     :::image type="content" source="../media/5-customer-query-v2.png" alt-text="Screenshot that shows the query results for customer in the database.":::
 
-1. Select **Query Stats**. Note the request charge of 2.83, versus the 8.49 RU/s for the three queries that you ran earlier.
+1. Select **Query Stats**. Note the request charge of 2.83 RUs, versus the 8.48 RUs for the three queries that you ran earlier.
 
 ## Compare the performance of the two models
 

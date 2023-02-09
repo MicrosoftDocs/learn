@@ -26,12 +26,12 @@ In this step, you create a project workspace in Visual Studio Code and then init
 
 The TypeScript compiler applies default behavior when you compile TypeScript source code. But you can modify the TypeScript compiler options by adding a *tsconfig.json* file to the root of your TypeScript project folder. This file defines the TypeScript project settings, such as the compiler options and the files that should be included.
 
-You can use the `init` option of the TypeScript compiler to generate a TSConfig file with default options.
+You can use the `init` option of the TypeScript compiler to generate a *tsconfig.json* file with default options.
 
 1. In Visual Studio Code, open a new Terminal window by selecting **Terminal** > **New Terminal**.
 
 1. At the command prompt, enter `tsc --init`.
-   
+
    Notice that the new *tsconfig.json* file has been added to the Explorer pane. You might need to refresh the Explorer pane to view the file.
 
 1. Open the *tsconfig.json* file in the code editor. You'll see that it has many options, most of which are commented out. Review the description of each enabled option.
@@ -45,7 +45,7 @@ You can use the `init` option of the TypeScript compiler to generate a TSConfig 
 
 1. Save the *tsconfig.json* file.
 
-1. At the command prompt, enter `tsc`. This reads the *tsconfig.json* file and resets the options for the project.
+1. At the command prompt, enter `tsc`. This command reads the *tsconfig.json* file and resets the options for the project.
 
 > [!TIP]
 > To learn more about the *tsconfig.json* file, see [TSConfig Reference](https://www.staging-typescript.org/tsconfig?azure-portal=true).
@@ -64,8 +64,8 @@ Let's add some JavaScript code to the TypeScript file and then compile it.
    ```
 
    Notice that even though you haven't yet compiled the code, Visual Studio Code has used its built-in TypeScript support to type-check it. As before, there are type errors in the two parameters of the `addNumbers` function.
-    
-   :::image type="content" source="../media/m01-visual-studio-code-intellisense-5.png" alt-text="Visual Studio Code editor with IntelliSense, showing that there is a type-checking error on the first parameter of the addNumbers function.":::
+
+   :::image type="content" source="../media/m01-visual-studio-code-intellisense-5.png" alt-text="Visual Studio Code editor with IntelliSense, showing that there's a type-checking error on the first parameter of the addNumbers function.":::
 
 1. Update the TypeScript code to specify a type for each parameter. Replace `x` with `x: number`, and replace `y` with `y: number`.
 
@@ -73,15 +73,15 @@ Let's add some JavaScript code to the TypeScript file and then compile it.
 
 1. At the Terminal command prompt, enter **tsc module01.ts**. The compiler should run without errors.
 
-   Notice that a new JavaScript file has been added, but it is not in the *build* folder in the Explorer. You might need to refresh the Explorer pane to view the file. When you run the `tsc` command on a single file, the compiler ignores the *tsconfig.json* file.
+   Notice that a new JavaScript file has been added, but it isn't in the *build* folder in the Explorer. You might need to refresh the Explorer pane to view the file. When you run the `tsc` command on a single file, the compiler ignores the *tsconfig.json* file.
 
-1. To load the config file and compile all the *.ts* files in the folder, run `tsc` without a file name. This should add the *.js* file to the *build* folder. Remember to delete the extra *.js* file in the root folder.
+1. To load the config file and compile all the *.ts* files in the folder, run `tsc` without a file name. This command should add the *.js* file to the *build* folder. Remember to delete the extra *.js* file in the root folder.
 
 1. Open the *module01.js* file, and then select the **Split Editor Right** button at the upper right to open a new editor view. 
  
    You should now be able to see the *.ts* and *.js* files side by side. Notice that they're identical, except that the *.js* file doesn't include the new type annotations.
 
-1. At the Terminal command prompt, enter **node .\build\module01.js**`. This runs the JavaScript and displays the result in the console log.
+1. At the Terminal command prompt, enter `node .\build\module01.js`. This command runs the JavaScript and displays the result in the console log.
 
 ## Add an HTML file
 

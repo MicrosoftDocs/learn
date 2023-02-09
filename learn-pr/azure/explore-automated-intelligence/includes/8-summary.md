@@ -7,3 +7,6 @@ Optimization algorithms perform a search of the space and create a list of optio
 Expert systems behave as an expert in a narrow application domain. The best time to use them is when we have lots of expertise in the area, and/or when there are a lot of constraints to comply with. Also, when we need to have an explanation to back up the decision taken. Their limitation is that it's tedious to maintain.
 
 These technologies are potential components of an Autonomous AI brain design implemented using the new AI paradigm of Machine Teaching.
+
+> [!NOTE]
+> To learn about Autonomous Intelligence technologies, their strengths and weaknesses, review Module 2 – Explore Autonomous Intelligence.

@@ -1,3 +1,4 @@
+
 Typically, a client application will use a client library to form requests and execute commands on a Redis cache. You can get a list of client libraries directly from the Redis clients page. 
 
 ## Executing commands on the Redis cache
@@ -39,7 +40,7 @@ var redisConnection = ConnectionMultiplexer.Connect(connectionString);
 Once you have a `ConnectionMultiplexer`, there are 3 primary things you might want to do:
 
 * Access a Redis Database. This is what we will focus on here.
-* Make use of the publisher/subscript features of Redis. This is outside the scope of this module.
+* Make use of the publisher/subscriber features of Redis. This is outside the scope of this module.
 * Access an individual server for maintenance or monitoring purposes.
 
 ### Accessing a Redis database

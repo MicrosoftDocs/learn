@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.construct-kql-statements.use-let-statement
+title: Use the let statement
+metadata:
+  title: Use the let statement
+  description: "Use the let statement"
+  ms.date: 01/18/2023
+  author: wwlpublish
+  ms.author: kelawson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-use-let-statement.md)]

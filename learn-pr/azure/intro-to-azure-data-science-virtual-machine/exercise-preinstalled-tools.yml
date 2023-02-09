@@ -1,16 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-data-science-virtual-machine.exercise-preinstalled-tools
 metadata:
-  title: "Exercise: Use RStudio and other preinstalled tools"
+  title: "Exercise: Use the preinstalled tools"
   description: Use the preinstalled tools in the Data Science Virtual Machine to perform data science.
-  ms.date: 08/28/2020
-  author: samkemp
-  ms.author: samkemp
+  ms.date: 12/14/2022
+  author: jesscioffi
+  ms.author: jcioffi
   ms.topic: interactive-tutorial
   ms.service: machine-learning
   ms.prod: learning-azure
 azureSandbox: true
-title: "Exercise: Use RStudio and other preinstalled tools"
+title: "Exercise: Use the preinstalled tools"
 durationInMinutes: 15
 content: |
   [!include[](includes/exercise-preinstalled-tools.md)]

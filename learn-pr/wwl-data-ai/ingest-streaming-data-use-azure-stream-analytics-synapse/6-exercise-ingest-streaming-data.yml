@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.ingest-streaming-data-use-azure-stream-analytics-synapse.exercise-ingest-streaming-data
+title: Exercise - Ingest streaming data into Azure Synapse Analytics
+metadata:
+  title: Exercise - Ingest streaming data into Azure Synapse Analytics
+  description: "Exercise - Ingest streaming data into Azure Synapse Analytics"
+  ms.date: 12/08/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: stream-analytics
+durationInMinutes: 45
+content: |
+  [!include[](includes/6-exercise-ingest-streaming-data.md)]

@@ -1,24 +1,22 @@
-VNet Peering is nontransitive. When you establish VNet peering between VNet1 and VNet2 and between VNet2 and VNet3, VNet peering capabilities do not apply between VNet1 and VNet3. However, you can configure user-defined routes and service chaining to provide the transitivity. This allows you to:
+Virtual network peering is nontransitive. The communication capabilities in a peering are available to only the virtual networks and resources in the peering. Other mechanisms have to be used to enable traffic to and from resources and networks outside the private peering network.
 
- -  Implement a multi-level hub and spoke architecture.
- -  Overcome the limit on the number of VNet peerings per virtual network.
+Suppose you have three virtual networks: A, B, and C. You establish virtual network peering between networks A and B, and also between networks B and C. You don't set up peering between networks A and C. The virtual network peering capabilities that you set up between networks B and C don't automatically enable peering communication capabilities between networks A and C. If you don't want to establish virtual network peering between networks A and C, you need to use another mechanism to support communication between these networks.
 
-## Hub and spoke architecture
+### Things to know about extending peering
 
-When you deploy hub-and-spoke networks, the hub virtual network can host infrastructure components like the network virtual appliance or VPN gateway. All the spoke virtual networks can then peer with the hub virtual network. Traffic can flow through network virtual appliances or VPN gateways in the hub virtual network.
+There are a few ways to extend the capabilities of your peering for resources and virtual networks outside your peering network:
+- Hub and spoke networks
+- User-defined routes
+- Service chaining
 
-:::image type="content" source="../media/service-chains-5c9286d1.png" alt-text="Hub virtual network with virtual appliance and gateway is being accessed by other virtual networks.":::
+You can implement these mechanisms and create a multi-level hub and spoke architecture. These options can help overcome the limit on the number of virtual network peerings per virtual network.
 
+The following diagram shows a hub and spoke virtual network with an NVA and VPN gateway. The hub and spoke network is accessible to other virtual networks via user-defined routes and service chaining.
 
-## User-defined routes and service chaining
+:::image type="content" source="../media/service-chains-5c9286d1.png" alt-text="Diagram that shows a hub virtual network with an NVA and VPN gateway that are accessible to other virtual networks." border="false":::
 
-Virtual network peering enables the next hop in a user-defined route to be the IP address of a virtual machine in the peered virtual network, or a VPN gateway.
-
-Service chaining lets you define user routes. These routes direct traffic from one virtual network to a virtual appliance, or virtual network gateway.
-
-## Checking connectivity
-
-You can check the status of the VNet peering.
-
- -  **Initiated**: When you create the peering to the second virtual network from the first virtual network, the peering status is Initiated.
- -  **Connected**: When you create the peering from the second virtual network to the first virtual network, its peering status is Connected. When you view the peering status for the first virtual network, you see its status changed from Initiated to Connected. The peering is not successfully established until the peering status for both virtual network peerings is Connected.
+| Mechanism | Description |
+| --- | --- |
+| **Hub and spoke network** | When you deploy a hub-and-spoke network, the hub virtual network can host infrastructure components like a network virtual appliance (NVA) or Azure VPN gateway. All the spoke virtual networks can then peer with the hub virtual network. Traffic can flow through NVAs or VPN gateways in the hub virtual network. |
+| **User-defined route (UDR)** | Virtual network peering enables the next hop in a user-defined route to be the IP address of a virtual machine in the peered virtual network, or a VPN gateway. |
+| **Service chaining** | Service chaining lets you define UDRs. These routes direct traffic from one virtual network to an NVA or VPN gateway. |

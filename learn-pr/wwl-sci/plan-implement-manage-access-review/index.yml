@@ -3,7 +3,7 @@ uid: learn.wwl.plan-implement-manage-access-review
 metadata:
   title: Plan, implement, and manage access review
   description: "Once identity is deployed, proper governance using access reviews is necessary for a secure solution. Explore how to plan for and implement access reviews."
-  ms.date: 06/24/2022
+  ms.date: 02/07/2023
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
@@ -18,7 +18,8 @@ abstract: |
   - Manage licenses for access reviews
   - Automate management tasks for access review
   - Configure recurring access reviews
-prerequisites: ""
+prerequisites: |
+  None
 iconUrl: /training/achievements/plan-implement-and-manage-access-review.svg
 levels:
 - advanced
@@ -29,6 +30,9 @@ roles:
 products:
 - azure
 - azure-active-directory
+- azure-active-directory-domain
+- entra
+- entra-identity-governance
 subjects:
 - identity-access
 units:

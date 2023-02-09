@@ -38,11 +38,11 @@ quiz:
       - content: "A server that defines the logical rules that sort and compare data."
         isCorrect: false
         explanation: "_Collation_ refers to the rules that sort and compare data."
-    - content: "Your Azure SQL database provides adequate storage and compute power. But you find that you need additional IO throughput. Which performance model might you use?"
+    - content: "Your Azure SQL database provides adequate storage and compute power. But you find that you need more IO throughput. Which performance model might you use?"
       choices:
       - content: "DTU"
         isCorrect: false
-        explanation: "DTU, or Database Transaction Unit, provides a simple, preconfigured purchase option. To increase IO throughput, you would need to move to a higher tier that also increases your storage and compute power, things you don't need."
+        explanation: "DTU, or Database Transaction Unit, provides a simple, preconfigured purchase option. To increase IO throughput, you would need to move to a higher tier. The higher tier increases your storage and compute power, things you don't need."
       - content: "vCore"
         isCorrect: true
         explanation: "vCore gives you greater control over what compute and storage resources you create and pay for. You can increase IO throughput but keep the existing amount of compute and storage."

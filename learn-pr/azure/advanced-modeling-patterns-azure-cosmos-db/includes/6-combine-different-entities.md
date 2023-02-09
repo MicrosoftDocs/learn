@@ -2,7 +2,7 @@ You've nearly finished modeling your database for your e-commerce application. T
 
 ## Model sales order entities
 
-As with the other entities, you want to look at your operations and then decide whether to embed or reference your related data. In this scenario, sales order detail makes a great candidate for embedding. This is because the items in the order are not unbounded and the data is always inserted and read together. So you'll embed sales order details as an array within your sales order entity. And you'll store your data in a new container, called salesOrder.
+As with the other entities, you want to look at your operations and then decide whether to embed or reference your related data. In this scenario, sales order detail makes a great candidate for embedding. This is because the items in the order aren't unbounded and the data is always inserted and read together. So you'll embed sales order details as an array within your sales order entity. And you'll store your data in a new container, called salesOrder.
 
 :::image type="content" source="../media/6-sales-order-model.png" alt-text="Diagram that shows the relational model for sales orders and sales order detail tables with the new NoSQL model, and the operations needed." border="false":::
 
@@ -14,7 +14,7 @@ At this point, you've modeled all your relational entities for your NoSQL databa
 
 ## Identify optimization opportunities
 
-One thing you might have noticed with the salesOrder container is that it shares the same partition key as the customer container. The customer container has a partition key of ID and salesOrder has a partition key of `customerId`. When data share a partition key and have similar access patterns, they're candidates for being stored in the same container. As a NoSQL database, Azure Cosmos DB is schema agnostic, so mixing entities with different schema is not only possible but, under these conditions, it's also another best practice. But to combine the data from these two containers, you'll need to make more changes to your schema.
+One thing you might have noticed with the salesOrder container is that it shares the same partition key as the customer container. The customer container has a partition key of ID and salesOrder has a partition key of `customerId`. When data share a partition key and have similar access patterns, they're candidates for being stored in the same container. As a NoSQL database, Azure Cosmos DB is schema agnostic, so mixing entities with different schema isn't only possible but, under these conditions, it's also another best practice. But to combine the data from these two containers, you'll need to make more changes to your schema.
 
 :::image type="content" source="../media/6-sales-orders-customers.png" alt-text="Diagram showing the sales orders and customer models and containers going to a single customer container with both the sales order and customer documents stored in it." border="false":::
 

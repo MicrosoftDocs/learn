@@ -7,6 +7,7 @@ metadata:
   ms.date: 11/18/2022
   author: mikejo5000
   ms.author: mikejo
+  manager: jmartens
   ms.topic: interactive-tutorial
   ms.prod: learning-azure 
 title: Set up your first lab using Azure Lab Services

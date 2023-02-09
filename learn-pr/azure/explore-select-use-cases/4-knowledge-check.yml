@@ -13,47 +13,46 @@ durationInMinutes: 3
 content: |
   [!include[](includes/4-knowledge-check.md)] 
 quiz:
-  title: Check your knowledge
   questions:
   - content: "The purpose of the Heating, Ventilation and Air Conditioning (HVAC) use case is to regulate the damper to minimize energy cost while keeping temperature within comfort (as dictated by a set point) and keeping CO2 within legal limits. The current methods include a PID controller with fixed automated timer. Select which one of the following limitations of the current methods does NOT apply:"
     choices:
     - content: "Dynamic highly variable systems."
       isCorrect: false
-      explanation: "Weather and building occupancy in the HVAC challenge configures a very dynamic and variable system."
+      explanation: "Incorrect. Weather and building occupancy in the HVAC challenge configures a very dynamic and variable system."
     - content: "Competing optimization goals or strategies."
       isCorrect: false
-      explanation: "The competing goals are maximizing people's comfort while minimizing energy consumption."
+      explanation: "Incorrect. The competing goals are maximizing people's comfort while minimizing energy consumption."
     - content: "Unforeseen starting or system conditions."
       isCorrect: false
-      explanation: "When the cooler is shut down for maintenance, the starting conditions are unknown."
+      explanation: "Incorrect. When the cooler is shut down for maintenance, the starting conditions are unknown."
     - content: "Dependency on human operators."
       isCorrect: true
-      explanation: "HVAC systems don't require a human in the loop."
+      explanation: "Correct. HVAC systems don't require a human in the loop."
   - content: "MineCo Is a company that mines precious metals from ore.​ The first and roughest stage of ore processing is crushing the ore, in this case with a gyratory crusher. ​Operators manually control supervisory settings for the gyratory crusher. Low-level control is done with PID controllers. The goal is to maximize throughput while also maximizing efficiency. The size and hardness of the incoming rocks is variable within a set of well-known limits. Select which one of the following limitations of the current methods does NOT apply:"
     choices:
     - content: "Dynamic highly variable systems."
       isCorrect: false
-      explanation: "The size and hardness of the incoming rocks is variable and difficult to evaluate."
+      explanation: "Incorrect. The size and hardness of the incoming rocks is variable and difficult to evaluate."
     - content: "Competing optimization goals or strategies."
       isCorrect: false
-      explanation: "The competing goals are to maximize throughput while also maximizing efficiency."
+      explanation: "Incorrect. The competing goals are to maximize throughput while also maximizing efficiency."
     - content: "Unforeseen starting or system conditions."
       isCorrect: false
-      explanation: "The size and hardness of the incoming rocks is variable and difficult to evaluate."
+      explanation: "Incorrect. The size and hardness of the incoming rocks is variable and difficult to evaluate."
     - content: "Independency on human operators."
       isCorrect: true
-      explanation: "Operators manually control supervisory settings for the gyratory crusher."
+      explanation: "Correct. Operators manually control supervisory settings for the gyratory crusher."
   - content: "A logistics company has a large warehouse with many front doors to load trucks for daily distribution to multiple stores. Wherever you locate the goods in the warehouse will influence how easy or difficult it's to access them and how fast a truck can be loaded. For perishable produce, like lettuce, that needs to arrive at the destination fast you want to have it distributed in every door to facilitate its transportation. For long-lasting food, like potatoes or onions, it can be concentrated in one location where you can get it when you need it. The goal is to maximize throughput and minimize truck loading time. Current methods include some optimization algorithms and the experience of the scheduler operator. Select which of the following limitations of the current methods don't apply:"
     choices:
     - content: "Dynamic highly variable systems."
       isCorrect: false
-      explanation: "Inbound load content of perishable and non-perishable items is variable."
+      explanation: "Incorrect. Inbound load content of perishable and non-perishable items is variable."
     - content: "Competing optimization goals or strategies."
       isCorrect: false
-      explanation: "The competing goals are to maximize throughput and minimize truck loading time."
+      explanation: "Incorrect. The competing goals are to maximize throughput and minimize truck loading time."
     - content: "Unforeseen starting or system conditions"
       isCorrect: true
-      explanation: "Perishable and non-perishable products are easy to distinguish. Additionally, the products the company works with are known upfront (lettuce, potatoes, onions...)."
+      explanation: "Correct. Perishable and non-perishable products are easy to distinguish. Additionally, the products the company works with are known upfront (lettuce, potatoes, onions...)."
     - content: "Dependency on human operators."
       isCorrect: false
-      explanation: "Current methods rely on the experience of the scheduler operator, who uses optimization algorithms."
+      explanation: "Incorrect. Current methods rely on the experience of the scheduler operator, who uses optimization algorithms."

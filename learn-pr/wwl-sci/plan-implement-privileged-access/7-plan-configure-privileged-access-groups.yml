@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan-implement-privileged-access.plan-configure-privileged-access-groups
+title: Plan and configure Privileged Access Groups
+metadata:
+  title: Plan and configure Privileged Access Groups
+  description: "Plan and configure Privileged Access Groups"
+  ms.date: 02/07/2023
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-plan-configure-privileged-access-groups.md)]

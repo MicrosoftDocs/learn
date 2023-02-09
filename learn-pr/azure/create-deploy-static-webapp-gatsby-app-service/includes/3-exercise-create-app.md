@@ -38,38 +38,42 @@ You should see the following output in the terminal:
 ```output
 You can now view gatsby-starter-default in the browser.
   http://localhost:8000.
-View GraphiQL, an in-browser IDE, to explore your site's data and schema
+View GraphQL, an in-browser IDE, to explore your site's data and schema
   http://localhost:8000/___graphql
 ```
 
 Now open up a browser and navigate to `http://localhost:8000`.
 
-:::image type="content" source="../media/browser.png" alt-text="Gatsby app.":::
+:::image type="content" source="../media/welcome-page-gatsby.png" alt-text="Screenshot of the Gatsby app.":::
 
 If you see the above, you successfully created your first Gatsby app. Congrats!
 
 ## Add a page component
 
-Now you'll create a component that you can navigate to in the browser: a *page component*.
+Now you'll create a component that you can navigate to in the browser: a **page component**.
 
-Open the "myApp" project folder in your text editor. Find the `pages/` directory and create a file and name it *about.js*. Give the file the following content:
+1. Open the "myApp" project folder in Visual Studio Code. Find the `pages/` directory.
 
-```jsx
-import React from 'react';
-import { Link } from 'gatsby';
+   :::image type="content" source="../media/add-page-component.png" alt-text="Screenshot of the pages folder in VS Code.":::
 
-export default () => (
-  <React.Fragment>
-    <div>About page</div>
-    <Link to="/">Back to home</Link>
-  </React.Fragment>
-)
-```
+1. Create a file and name it **about.js**. Give the file the following content:
 
-The code above creates a *presentation component* that is only able to show data. This component simply renders the text "About page" and a link that point to the root of the application.
+   ```jsx
+   import React from 'react';
+   import { Link } from 'gatsby';
+   
+   export default () => (
+     <React.Fragment>
+       <div>About page</div>
+       <Link to="/">Back to home</Link>
+     </React.Fragment>
+   )
+   ```
 
-Once you've pasted in the code above and saved it in the file `about.js`, the development server will recompile the application automatically. If you now visit `http://localhost:8000/about` you should see the following content rendered:
+The code above creates a *presentation component* that is only able to show data. This component simply renders the text "About page" and a link that points to the root of the application.
 
-:::image type="content" source="../media/page-component.png" alt-text="Page component.":::
+Once you've pasted in the code and saved it in the file `about.js`, the development server will recompile the application automatically. If you now visit `http://localhost:8000/about` you should see the following content rendered:
+
+:::image type="content" source="../media/page-component.png" alt-text="Screenshot showing the loaded page component.":::
 
 You've got your first page! Now you can see how any component placed in the `/pages` directory can be navigated to.

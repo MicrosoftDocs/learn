@@ -45,7 +45,7 @@ When you typed your code in the Cloud Shell terminal in the preceding unit, you 
 
 ## Compiling code in PowerShell
 
-Computers aren't good at reading our programs in the way we write them. Programming languages need to be translated into a form that the computer can understand. Programming languages have a variety of ways of doing this.
+Computers aren't good at reading our programs in the way we write them. Programming languages need to be translated into a form that the computer can understand. Programming languages have various ways of doing this.
 
 Many programming languages *compile* code as an individual step. You write your code, run it through a special program called a compiler, and the compiler produces an executable package to run. 
 

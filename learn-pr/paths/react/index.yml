@@ -22,7 +22,6 @@ roles:
 - student
 products:
 - azure-app-service-static
-- vs-code
 subjects:
 - development-tools
 modules:

@@ -21,6 +21,7 @@ prerequisites: |
   - A Remote Desktop Protocol (RDP) client (included with all versions of Windows)
 ratingEnabled: true
 iconUrl: /training/achievements/migrate-app-service-migration-assistant.svg
+hidden: true
 levels:
 - beginner
 roles:

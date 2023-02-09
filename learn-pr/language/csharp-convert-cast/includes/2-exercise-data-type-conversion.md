@@ -1,4 +1,4 @@
-There are multiple techniques to perform a data type conversion or cast. Which technique you choose depends on your answer to two important questions:
+There are multiple techniques you can use to perform a data type conversion or cast. Which technique you choose depends on your answer to two important questions:
 
 - Question 1: Is it possible, depending on the value, that attempting to change the value's data type would throw an exception at runtime?
 - Question 2: Is it possible, depending on the value, that attempting to change the value's data type would result in a loss of information?
@@ -49,7 +49,7 @@ The C# compiler sees a potential problem in the making. The variable `second` is
 
 From the C# compiler's perspective, the safer operation would be to convert `int` into a `string` and perform concatenation instead.
 
-If you intend to perform addition using a string, the C# compiler requires you to take more explicit control of the process of data conversion. In other words, it forces you to be more involved so that you can put the proper precautions in place to handle the possibility that the conversion could throw an exception.
+If you intend to perform addition using a string, the C# compiler requires you to take more explicit control of the data-conversion process. In other words, it forces you to be more involved so that you can put the proper precautions in place to handle the possibility that the conversion could throw an exception.
 
 If you need to change a value from the original data type to a new data type and the change could produce an exception at runtime, you must perform a **data conversion**.
 
@@ -65,7 +65,7 @@ We'll look at a few examples of these techniques for data conversion later in th
 
 The term *widening conversion* means that you're attempting to convert a value **from** a data type that could hold *less* information **to** a data type that can hold *more* information. In this case, you'll lose no information. So, an example would be converting a value stored in a variable of type `int`, and now converting that value into a variable of type `decimal`.
 
-If you were to print out the two values, you would likely notice no difference.
+If you were to print out the two values, you'd likely notice no difference.
 
 When you know you'll be performing a widening conversion, you can rely on **implicit conversion**. The compiler handles implicit conversion.
 
@@ -94,9 +94,9 @@ The key to this example is this line of code:
 decimal myDecimal = myInt;
 ```
 
-Since any `int` value can easily fit inside of a `decimal`, the compiler performs the conversion.
+Because any `int` value can easily fit inside of a `decimal`, the compiler performs the conversion.
 
-The term **narrowing conversion** means that you're attempting to convert a value from a data type that can hold more information to a data type that can hold less information. In this case, you may lose information like precision (that is, the number of values after the decimal point). An example would be converting value stored in a variable of type `decimal`, and now converting that value into a variable of type `int`. If you were to print out the two values, you would possibly notice the loss of information.
+The term **narrowing conversion** means that you're attempting to convert a value from a data type that can hold more information to a data type that can hold less information. In this case, you may lose information like precision (that is, the number of values after the decimal point). An example would be converting value stored in a variable of type `decimal`, and now converting that value into a variable of type `int`. If you were to print out the two values, you'd possibly notice the loss of information.
 
 When you know you'll be performing a narrowing conversion, you'll need to perform a **cast**. Casting is an instruction to the C# compiler that you know precision may be lost, but you're willing to accept it.
 
@@ -114,7 +114,7 @@ int myInt = (int)myDecimal;
 Console.WriteLine($"int: {myInt}");
 ```
 
-If you run the code example, you should get the following output.
+If you run the code example, you should get the following output:
 
 ```output
 decimal: 3.14
@@ -137,7 +137,7 @@ The definitive resource is the following article:
 
 [Type Conversion Tables in .NET](/dotnet/standard/base-types/conversion-tables?azure-portal=true)
 
-This Docs article uses the .NET Class Library name for types, not the C# keyword for the data types, so it might be a bit confusing at first. Use the following article to map between the C# keyword and the .NET Class Library type:
+This article uses the .NET Class Library name for types, not the C# keyword for the data types, so it might be a bit confusing at first. Use the following article to map between the C# keyword and the .NET Class Library type:
 
 [Built-in types table](/dotnet/csharp/language-reference/keywords/built-in-types-table?azure-portal=true)
 
@@ -158,7 +158,7 @@ Decimal: 1.23456789
 Float: 1.234568
 ```
 
-From this, you can see that casting a `decimal` into a `float` is a narrowing conversion, because you're losing precision.
+From this example, you can see that casting a `decimal` into a `float` is a narrowing conversion, because you're losing precision.
 
 ## Performing Data Conversions
 
@@ -170,7 +170,7 @@ Earlier, we said that when you need to change a value from one data type into an
 
 ### Use ToString() to convert a number to a string
 
-Every data type variable has a `ToString()` method. What the `ToString()` method does depends on how it's implemented on a given type. However, on most primitives, it performs a widening conversion. While this isn't strictly necessary (since we can rely on implicit conversion in most cases) it can communicate to other developers that you understand what you're doing and that it's intentional.
+Every data type variable has a `ToString()` method. What the `ToString()` method does depends on how it's implemented on a given type. However, on most primitives, it performs a widening conversion. While this isn't strictly necessary (because we can rely on implicit conversion in most cases), it can communicate to other developers that you understand what you're doing and that it's intentional.
 
 ### Step 4 - Modify the code in the .NET Editor to convert a number to a string using the ToString() helper method
 
@@ -215,9 +215,9 @@ Can you spot the potential problem with the code example above? What if either o
 
  The easiest way to mitigate this situation is through the use of `TryParse()`, which is a better version of the `Parse()` method. We'll discover that in the next unit.
 
-## Data Conversion using the Convert class
+## Data Conversion using the `Convert` class
 
-The Convert class has many helper methods to convert a value from one type into another. In the following code example, we'll convert a couple of strings into values of type `int`.
+The `Convert` class has many helper methods to convert a value from one type into another. In the following code example, we'll convert a couple of strings into values of type `int`.
 
 ## Step 6 - Modify the code in the .NET Editor to convert a string to a number using the Convert class
 
@@ -230,14 +230,20 @@ int result = Convert.ToInt32(value1) * Convert.ToInt32(value2);
 Console.WriteLine(result);
 ```
 
-> [!NOTE]
-> Why is the method name `ToInt32()`? Why not `ToInt()`? `System.Int32` is the name of the underlying data type in the .NET Class Library that the C# programming language maps to the keyword `int`. Because the `Convert` class is also part of the .NET Class Library, it is called by its full name, not its C# name. By defining data types as part of the .NET Class Library, multiple .NET languages like Visual Basic, F#, IronPython, and others can share the same data types and the same classes in the .NET Class Library. At the end of this module, we'll post some links so you can learn more about .NET's Common Type System.
+If you run the code example, you should get the following output:
 
-The `ToInt32()` method has 19 overloaded versions allowing it to accept virtually every data type, as we'll see in a moment.
+```output
+35
+```
+
+> [!NOTE]
+> Why is the method name `ToInt32()`? Why not `ToInt()`? `System.Int32` is the name of the underlying data type in the .NET Class Library that the C# programming language maps to the keyword `int`. Because the `Convert` class is also part of the .NET Class Library, it's called by its full name, not its C# name. By defining data types as part of the .NET Class Library, multiple .NET languages like Visual Basic, F#, IronPython, and others can share the same data types and the same classes in the .NET Class Library. At the end of this module, we'll post some links so you can learn more about .NET's Common Type System.
+
+The `ToInt32()` method has 19 overloaded versions, which allows it to accept virtually every data type, as we'll see in a moment.
 
 We used the `Convert.ToInt32()` method with a string here, but you should probably use `TryParse()` when possible.
 
-So, when should we use the `Convert` class? The Convert class is best for converting fractional numbers into whole numbers (`int`) because it rounds up the way you would expect.
+So, when should we use the `Convert` class? The `Convert` class is best for converting fractional numbers into whole numbers (`int`) because it rounds up the way you would expect.
 
 ### Casting versus Conversion
 
