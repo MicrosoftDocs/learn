@@ -27,6 +27,7 @@ roles:
 - student
 products:
 - m365
+- microsoft-purview
 subjects:
 - insider-risk
 units:
