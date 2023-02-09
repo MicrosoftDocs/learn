@@ -30,7 +30,6 @@ subjects:
 - cloud-computing
 modules:
 - learn-wwl.introduction-to-azure-solutions
-- learn-wwl.app-and-infra-migration-and-modernization
 - learn-wwl.data-estate-migration-and-modernization
 - learn-wwl.azure-ai-strategy
 - learn-wwl.azure-in-action
