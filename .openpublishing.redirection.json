@@ -20144,6 +20144,11 @@
       "source_path": "learn-pr/wwl-mba/azure-in-action/1-module-overview.md",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/azure-in-action/2-demo--microsoft-azure-migration.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     }
   ]
 }
