@@ -1,6 +1,6 @@
-In the past, Contoso would log in to a customer's Azure tenant with an account provided by the customer. It meant that Contoso only had visibility of one customer's Azure environment at a time. It also placed the responsibility on the customer to create and provide that account, reset the password if necessary and remove the account once the service contract had ended.
+In the past, Contoso would log-in to a customer's Azure tenant with an account provided by the customer. It meant that Contoso only had visibility of one customer's Azure environment at a time. It also placed the responsibility on the customer to create and provide that account, reset the password if necessary, and remove the account once the service contract ended.
 
-Your manager has heard that Azure Lighthouse may provide a better way of accessing and managing Azure tenants for multiple customers while supporting the different requirements of each customer's service contract, removing the administration overhead from the customer and maintaining the customer's visibility of Contoso's access and activities inside the customer's environment.
+Your manager has heard that Azure Lighthouse may provide a better way of accessing and managing Azure tenants for multiple customers while supporting the different requirements of each customer's service contract, removing the administration overhead from the customer and maintaining the customer's visibility of Contoso's access and activities inside their environment.
 
 In this unit, you'll get an introduction to Azure Lighthouse, and the core features and benefits it delivers for managed service providers like Contoso and their customers.
 

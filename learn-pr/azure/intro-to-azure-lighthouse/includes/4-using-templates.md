@@ -8,9 +8,9 @@ In this unit, you'll take a more in-depth look at Azure delegated resource manag
 
 Azure delegated resource management is the technology capability that gives Contoso access to customer resources from your own tenant, with Azure Lighthouse. Azure delegated resource management has three key components:
 
-- The principal ID and the display name of the user, group, or service principal that is being granted the permissions. The principal ID is displayed as the Object ID in Azure Active Directory. 
+- The principal ID and the display name of the user, group, or service principal that is being granted the permissions. The principal ID is displayed as the Object ID in Azure Active Directory.
 - The role definition ID of the Azure in-built role, that contains the most appropriate level of permissions that you want to grant. Together, the principal ID, principal ID display name, and the role definition are known as the authorization for Azure Lighthouse.
-- The scope of where the authorization is applied to, either a subscription, a resource group or multiple resource groups.
+- The scope of where the authorization is applied to: a subscription, a resource group or multiple resource groups.
 
 >[!TIP]
 >You can also onboard multiple subscriptions owned by the same customer, by deploying your Azure Resource Manager template separately to each target subscription.
@@ -19,7 +19,7 @@ The scope is defined by choosing the correct Azure Resource Manager template for
 
 ## Azure Resource Manager templates
 
-Azure Resource Manager templates are free to use and are available online via GitHub. Each template is just a code block that contains the instructions that allow you to meet a specific scenario or need, and a parameter file.
+Azure Resource Manager templates are free to use and are available online via GitHub. Each template is a code block that contains the instructions that allow you to meet a specific scenario or need, and a parameter file.
 
 When you visit the GitHub repository (https://github.com/Azure/Azure-Lighthouse-samples/), you'll find many templates, four of which you can use to onboard your customers.
 
@@ -33,7 +33,7 @@ When you visit the GitHub repository (https://github.com/Azure/Azure-Lighthouse-
 Templates can be used to automate and streamline the onboarding process, however:
 
 - If you have multiple subscriptions in a tenant, each one will need a separate onboarding deployment
-- If you want to onboard multiple resource groups each with different subscriptions, you will also need separate onboarding deployments
+- If you want to onboard multiple resource groups, each with different subscriptions, you will also need separate onboarding deployments
 
 ## Configuring an Azure Resource Manager template
 
@@ -43,7 +43,7 @@ Deploying Azure Lighthouse to your customers requires you to fill in the followi
 
 - mspOfferName - A readable short name relevant to your services contract
 - mspOfferDescription - A short description of the managed service offer
-- managedByTenantId - Contoso's tenant ID such as df4602a3-920c-435f-98c4-49ff031b9ef6 
+- managedByTenantId - Contoso's tenant ID such as df4602a3-920c-435f-98c4-49ff031b9ef6
 - authorizations - The list of Contoso's requested principal IDs, principal ID display names, and role definition IDs.
 
 This information will be visible to the customer inside Azure Lighthouse in their Azure portal, after they've been successfully onboarded and will also be visible to Contoso inside their Azure portal.

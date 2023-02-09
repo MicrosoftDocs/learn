@@ -15,6 +15,4 @@ As the administrator for Contoso, you are responsible for onboarding three new c
 
 **Customer 3's** service contract requires **Reader** access to two resource groups in the same subscription, **"cust3-rg1"** and **"cust3-rg2"**.
 
-In this exercise, you will create a security group for your Contoso staff and prepare your Azure Resource Manager template files with your specific tenant and principal ID information. 
-
-You will save your template files so you can use them in the next exercise, where you will onboard your customers.
+In this exercise, you'll create a security group for your Contoso staff and prepare your Azure Resource Manager template files with your specific tenant and principal ID information. You'll save your template files so you can use them in the next exercise, where you'll onboard your customers.

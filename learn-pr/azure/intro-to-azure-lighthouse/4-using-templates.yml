@@ -3,7 +3,7 @@ uid: learn.intro-to-azure-lighthouse.4-using-templates
 metadata:
   title: Using Azure Resource Manager templates to deploy Azure Lighthouse
   description: Understand how you can use Azure Resource Manager templates to onboard customers to Azure Lighthouse
-  ms.date: 01/08/2020
+  ms.date: 02/10/2023
   author: iankensey
   ms.author: socuff
   ms.topic: interactive-tutorial
