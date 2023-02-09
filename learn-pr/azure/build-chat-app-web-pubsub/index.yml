@@ -29,12 +29,12 @@ products:
 subjects:
 - custom-app-development 
 units:
-- learn.build-chat-app-web-pubsub.1-introduction
-- learn.build-chat-app-web-pubsub.2-overview-static-web-app
-- learn.build-chat-app-web-pubsub.3-exercise-create-web-pubsub
-- learn.build-chat-app-web-pubsub.4-exercise-create-configure-static-web-app
-- learn.build-chat-app-web-pubsub.5-configure-continuous-delivery
-- learn.build-chat-app-web-pubsub.6-knowledge-check
-- learn.build-chat-app-web-pubsub.7-summary
+- learn.build-chat-app-web-pubsub.introduction
+- learn.build-chat-app-web-pubsub.overview-static-web-app
+- learn.build-chat-app-web-pubsub.exercise-create-web-pubsub
+- learn.build-chat-app-web-pubsub.exercise-create-configure-static-web-app
+- learn.build-chat-app-web-pubsub.configure-continuous-delivery
+- learn.build-chat-app-web-pubsub.knowledge-check
+- learn.build-chat-app-web-pubsub.summary
 badge:
   uid: learn.build-chat-app-web-pubsub.badge
