@@ -34,7 +34,6 @@ Congratulations! You've built and coded a working IoT device prototype!
 
 If your app doesn't work right or throws an exception, don't panic. Check the following things:
 
-1. If the app doesn't run at all, verify that you have targetted the correct runtime for your OS. For example, if you're using the recommended **Raspberry Pi OS Lite (64-bit)**, you need to target the `linux-arm64` runtime.
 1. Double-check the connections on your breadboard. Use the tables and diagrams in unit 2 for reference.
 1. Did you enable the `I2C` service using `raspi-config`?
 1. Did you include the right device address for your BME280? If `Bme280.DefaultI2cAddress` doesn't work, try `Bme280.SecondaryI2cAddress` instead.
