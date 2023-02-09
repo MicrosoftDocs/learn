@@ -14,6 +14,8 @@ In this module, you identified features and usage cases for different Azure back
 
 - Complete an [introduction to Azure Backup](/training/modules/intro-to-azure-backup/).
 
+## Learn more with optional hands-on exercises
+
 - Protect your [virtual machines by using Azure Backup](/training/modules/protect-virtual-machines-with-azure-backup/). _Azure subscription required_.
 
 - Implement [hybrid backup and recovery with Windows Server IaaS](/training/modules/implement-hybrid-backup-recovery-windows-server-iaas/). _Azure subscription required_.
