@@ -29,7 +29,6 @@ products:
 subjects:
 - cloud-computing
 units:
-- learn-wwl.azure-in-action.1-module-overview
 - learn-wwl.azure-in-action.2-demo--microsoft-azure-migration
 - learn-wwl.azure-in-action.3-demo--modernizing-.net-applications
 - learn-wwl.azure-in-action.4-knowledge-check
