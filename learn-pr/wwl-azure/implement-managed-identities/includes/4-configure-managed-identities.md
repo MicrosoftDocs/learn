@@ -1,3 +1,4 @@
+
 You can configure an Azure virtual machine with a managed identity during, or after, the creation of the virtual machine. Below are some CLI examples showing the commands for both system- and user-assigned identities.
 
 ## System-assigned managed identity
