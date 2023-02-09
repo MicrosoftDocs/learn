@@ -1,15 +1,15 @@
 
-Once Contoso has deployed numerous virtual machines in Azure across Windows Server, they'll need to optimize their operations and management tasks. Azure Automanage and Windows Server Azure edition contain specialized functionality to help alleviate day-to-day operational tasks as Contoso's Windows Server infrastructure grows.
+Once Contoso has deployed numerous virtual machines in Azure across Windows Server, they'll need to optimize their operations and management tasks. Azure Automanage and Windows Server Azure edition contain specialized functionality to help alleviate these day-to-day operational tasks.
 
 ## Azure Automanage
 
 Azure Automanage offers a unified solution to simplify IT operations on your Windows Server virtual machines. With point-and-click simplicity, Azure Automanage lets you automate management tasks and apply consistent best practices across the entire lifecycle of Windows Server in Azure. It eliminates the need to discover and know how to onboard and configure certain Azure services to benefit your Window Server VMs. These Azure services help enhance reliability, security, and management and provide the following benefits:
 
-Intelligently onboards virtual machines to select best practices Azure services
-Automatically configures each service per Azure best practices
-Supports customization of best practice services
-Monitors for drift and corrects for it when detected
-Provides a simple experience (point, select, set, forget)
+- Onboards virtual machines to select best practices Azure services
+- Configures each service per Azure best practices
+- Supports customization of best practice services
+- Monitors for drift and corrects for it when detected
+- Provides a simple experience (point, select, set, forget)
 
 ### Participating services
 
@@ -41,13 +41,13 @@ When creating an Automanage Best Practices configuration profile, enable Machine
 
 ## Windows Server Datacenter: Azure Edition
 
-The Azure Edition of Windows Server Datacenter brings additional capabilities for optimizing and managing VMs.
+The Azure Edition of Windows Server Datacenter offers extra capabilities for optimizing and managing VMs.
 
 ### Azure Extended Network
 
 Extended network for Azure enables you to stretch an on-premises subnet into Azure to let on-premises virtual machines keep their original on-premises private IP addresses when migrating to Azure.
 
-The network is extended using a bidirectional VXLAN tunnel between two Windows Server 2019 VMs acting as virtual appliances, one running on-premises and the other running in Azure, each also connected to the subnet to be extended. Each subnet that you are going to extend requires one pair of appliances. Multiple subnets can be extended using multiple pairs.
+The network is extended using a bidirectional VXLAN tunnel between two Windows Server 2019 VMs acting as virtual appliances, one running on-premises and the other running in Azure, each also connected to the subnet to be extended. Each subnet that you're going to extend requires one pair of appliances. Multiple subnets can be extended using multiple pairs.
 
 ### Hotpatch for new virtual machines
 
@@ -57,7 +57,7 @@ Hotpatching is a new way to install updates on supported Windows Server Azure Ed
 - Faster deployment of updates as the packages are smaller, install faster, and have easier patch orchestration with Azure Update Manager
 - Better protection, as the Hotpatch update packages are scoped to Windows security updates that install faster without rebooting
 
-Hotpatch works by first establishing a baseline with a Windows Update Latest Cumulative Update. Hotpatches are periodically released (for example, on the second Tuesday of the month) that build on that baseline. Hotpatches will contain updates that don't require a reboot. Periodically (starting at every three months), the baseline is refreshed with a new Latest Cumulative Update.
+Hotpatch works by first establishing a baseline with a Windows Update Latest Cumulative Update. Hotpatches are periodically released (for example, on the second Tuesday of the month) that builds on that baseline. Hotpatches will contain updates that don't require a reboot. Periodically (starting at every three months), the baseline is refreshed with a new Latest Cumulative Update.
 
 :::image type="content" source="../media/hotpatch-sample-schedule.png" alt-text="Hotpatch sample schedule.":::
 
