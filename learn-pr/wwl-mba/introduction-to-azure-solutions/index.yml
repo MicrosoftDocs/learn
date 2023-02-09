@@ -27,7 +27,6 @@ products:
 subjects:
 - cloud-computing
 units:
-- learn-wwl.introduction-to-azure-solutions.5-knowledge-check
 - learn-wwl.introduction-to-azure-solutions.6-summary-and-resources
 badge:
   uid: learn-wwl.introduction-to-azure-solutions.badge
