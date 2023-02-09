@@ -29,6 +29,5 @@ products:
 subjects:
 - cloud-computing
 units:
-- learn-wwl.azure-in-action.5-summary-and-resources
 badge:
   uid: learn-wwl.azure-in-action.badge
