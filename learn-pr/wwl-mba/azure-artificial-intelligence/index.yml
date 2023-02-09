@@ -25,7 +25,6 @@ roles:
 products:
 - azure
 units:
-- learn-wwl.azure-ai-strategy.6-knowledge-check
 - learn-wwl.azure-ai-strategy.7-summary-and-resources
 badge: 
   uid: learn-wwl.azure-ai-strategy.badge
