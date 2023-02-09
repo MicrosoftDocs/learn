@@ -76,7 +76,7 @@ catch (Exception e)
 
 ## Token caching
 
-While the managed identities for Azure resources subsystem does cache tokens, we also recommend to implement token caching in your code. As a result, you should prepare for scenarios where the resource indicates that the token is expired.
+While the managed identities for Azure resources subsystem does cache tokens, we also recommend implementing token caching in your code. As a result, you should prepare for scenarios where the resource indicates that the token is expired.
 
 On-the-wire calls to Azure Active Directory result only when:
 
