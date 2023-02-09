@@ -20219,6 +20219,11 @@
       "source_path": "learn-pr/wwl-mba/introduction-to-azure-solutions/2-enabling-digital-transformation-with-azure.md",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/introduction-to-azure-solutions/3-the-unique-value-of-azure.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     }
   ]
 }
