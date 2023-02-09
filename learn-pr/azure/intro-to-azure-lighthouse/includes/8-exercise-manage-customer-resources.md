@@ -1,9 +1,7 @@
-In this exercise, you'll manage the resources of Contoso's customers. 
+In this exercise, you'll manage the resources of Contoso's customers in three different scenarios.
 
 > [!IMPORTANT]
 > Return to the lab environment you have open from the previous exercise, as it contains pre-requisites needed for these scenarios.
-
-## Exercise scenarios
 
 ### Enable Azure Backup
 

@@ -3,8 +3,6 @@ In this exercise, you'll apply what you've learned so far to the new customers y
 > [!IMPORTANT]
 > Return to the lab environment you have open from the previous exercise, as it contains pre-requisites needed for these scenarios.
 
-## Exercise scenarios
-
 ### Review Azure Marketplace offers
 
 Start by visiting the Azure Marketplace to see the service offers published by other Microsoft Partners.

@@ -7,8 +7,6 @@ In this exercise, you'll use those Azure Resource Manager templates for one depl
 >
 > [Sign up for a free trial](https://azure.microsoft.com/free/).
 
-## Exercise scenarios
-
 As the administrator for Contoso, onboard three new customers using the following methods:
 
 - **Customer 1** requires a subscription-level deployment of your Azure Resource Manager templates, using PowerShell.
