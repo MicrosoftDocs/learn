@@ -4,13 +4,11 @@ title: Describe Microsoft Defender for Cloud Apps
 metadata:
   title: Describe Microsoft Defender for Cloud Apps
   description: "Describe Microsoft Defender for Cloud Apps"
-  ms.date: 08/17/2022
+  ms.date: 02/09/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
-  ms.prod: learning-m365
-azureSandbox: false
-labModal: false
+  ms.prod: learning-azure
 durationInMinutes: 11
 content: |
   [!include[](includes/5-describe-microsoft-cloud-app-security.md)]
