@@ -20204,6 +20204,11 @@
       "source_path": "learn-pr/wwl-mba/data-estate-migration-and-modernization/7-Summary-and-resources.md",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/introduction-to-azure-solutions/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     }
   ]
 }
