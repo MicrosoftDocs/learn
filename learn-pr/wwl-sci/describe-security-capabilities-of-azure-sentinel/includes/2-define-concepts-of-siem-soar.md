@@ -4,7 +4,7 @@ Having a resilient and robust, industry-standard set of tools can help mitigate 
 
 ### What is security information and event management (SIEM)?
 
-A SIEM system is a tool that an organization uses to collect data from across the whole estate, including infrastructure, software, and resources. It does analysis, looks for correlations or anomalies, and generates alerts and incidents.
+A **SIEM** system is a tool that an organization uses to collect data from across the whole estate, including infrastructure, software, and resources. It does analysis, looks for correlations or anomalies, and generates alerts and incidents.
 
 ### What is security orchestration automated response (SOAR)?
 
