@@ -50,7 +50,7 @@ Complete the following steps **in the original terminal window on your developme
     ```
 
     > [!IMPORTANT]
-    > This assumes you are using the recommended 64-bit OS. If you're using a 32-bit version of Raspberry Pi OS, use `--runtime linux-arm` in the command above to target the correct OS.
+    > This assumes you're using the recommended 64-bit OS. If you're using a 32-bit version of Raspberry Pi OS, use `--runtime linux-arm` in the command above to target the correct OS.
 
     The preceding command creates a directory with the files required for a self-contained deployment for the `linux-arm64` runtime. Take note of the location of the *publish* folder.
 
