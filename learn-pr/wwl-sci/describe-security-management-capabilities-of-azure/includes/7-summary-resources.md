@@ -1,3 +1,4 @@
+
 Microsoft Azure offers a suite of threat protection and detection systems to minimize and mitigate threats across your whole estate and improve the overall cloud security posture.  
 
 You've learned about cloud security posture management (CSPM).  You've also explored the capabilities of Microsoft Defender for Cloud and how to understand your security position using secure score. You've discovered the different plans of Microsoft Defender for Cloud that are available and the enhanced security benefits they offer. Finally, you’ve learned about the Microsoft cloud security benchmark and security baseline in Azure.

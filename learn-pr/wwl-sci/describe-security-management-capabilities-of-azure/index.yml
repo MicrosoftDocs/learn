@@ -3,7 +3,7 @@ uid: learn.wwl.describe-security-management-capabilities-of-azure
 metadata:
   title: Describe security management capabilities of Azure
   description: "Describe security management capabilities of Azure"
-  ms.date: 04/06/2022
+  ms.date: 02/09/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -12,14 +12,14 @@ title: Describe security management capabilities of Azure
 summary: Learn about cloud security posture management and how Microsoft Defender for Cloud protects your cloud through secure score, recommendations, and enhanced features that provide cloud workload protection. You’ll also learn about security baselines in Azure.
 abstract: |
   After completing this module, you'll be able to:
-  - Describe cloud security posture management.
-  - Describe the capabilities of Microsoft Defender for Cloud
-  - Understand the Microsoft cloud security benchmark and the security baselines in Azure.
+  *   Describe cloud security posture management.
+  *   Describe the capabilities of Microsoft Defender for Cloud
+  *   Understand the Microsoft cloud security benchmark and the security baselines in Azure.
 prerequisites: |
   - General understanding of networking and cloud computing concepts.
   - General IT knowledge or any general experience working in an IT environment.
   - General understanding of Microsoft Azure and Microsoft 365.
-iconUrl: /training/achievements/describe-security-management-capabilities-of-azure.svg
+iconUrl: /learn/achievements/describe-security-management-capabilities-of-azure.svg
 levels:
 - beginner
 roles:
