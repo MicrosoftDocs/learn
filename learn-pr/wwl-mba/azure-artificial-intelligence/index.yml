@@ -25,7 +25,6 @@ roles:
 products:
 - azure
 units:
-- learn-wwl.azure-ai-strategy.1-introduction-to-azure-ai
 - learn-wwl.azure-ai-strategy.2-knowledge-mining
 - learn-wwl.azure-ai-strategy.3-machine-learning
 - learn-wwl.azure-ai-strategy.4-apps-and-agents
