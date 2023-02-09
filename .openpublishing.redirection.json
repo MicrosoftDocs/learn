@@ -20094,6 +20094,11 @@
       "source_path": "learn-pr/wwl-mba/app-and-infra-migration-and-modernization/9-Summary-and-resources.md",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/azure-artificial-intelligence/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     }
   ]
 }
