@@ -24,7 +24,7 @@ quiz:
     - content: Cost is based on the number of onboarded customers.
       isCorrect: false
       explanation: Incorrect. Azure Lighthouse is free to use, as long as you have an existing Azure subscription.
-    - content: Free for the first ten onboarded customers.
+    - content: Free for the first 10 onboarded customers.
       isCorrect: false
       explanation: Incorrect. Azure Lighthouse is free to use, as long as you have an existing Azure subscription.
     - content: Cost is based on number of marketplace offers and Azure Resource Manager Templates used.
@@ -34,16 +34,16 @@ quiz:
     choices:
     - content: My Service Offerings.
       isCorrect: false
-      explanation: Incorrect. The My Customers page lets you see all the customers you have onboarded.
+      explanation: Incorrect. The My Customers page lets you see all the customers you've onboarded.
     - content: My Offerings.
       isCorrect: false
-      explanation: Incorrect. The My Customers page lets you see all the customers you have onboarded.
+      explanation: Incorrect. The My Customers page lets you see all the customers you've onboarded.
     - content: My Customers.
       isCorrect: true
-      explanation: Correct. The My Customers page lets you see all the customers you have onboarded.
+      explanation: Correct. The My Customers page lets you see all the customers you've onboarded.
     - content: My Customer Offerings.
       isCorrect: false
-      explanation: Incorrect. The My Customers page lets you see all the customers you have onboarded.
+      explanation: Incorrect. The My Customers page lets you see all the customers you've onboarded.
   - content: 'When creating and assigning roles what is the best practice?'
     choices:
     - content: Avoid restricting your users' control over your onboarded customers.
@@ -54,16 +54,16 @@ quiz:
       explanation: Incorrect. Roles should be allocated based on the type of service offer you're making.
     - content: Avoid assigning individual users to a role.
       isCorrect: true
-      explanation: Correct. It is good practice to assign user groups to roles rather than individuals.
+      explanation: Correct. It's good practice to assign user groups to roles rather than individuals.
   - content: 'When considering customer onboarding, which of these security considerations should you implement?'
     choices:
     - content: Rotate the schedule of service manager users to prevent over-familiarity with the customer's Azure estate.
       isCorrect: false
-      explanation: Incorrect. Using multi-factor authentication will limit the chance of an unauthorized user accessing an onboarded customer's Azure instance.
-    - content: Carry out detailed background checks of all your staff who will manage your onboarded customers.
+      explanation: Incorrect. Using multi-factor authentication limits the chance of an unauthorized user accessing an onboarded customer's Azure instance.
+    - content: Carry out detailed background checks of all your staff who manage your onboarded customers.
       isCorrect: false
       explanation: Incorrect. Use MFA to validate this information.
-    - content: Implement multi-factor authentication for all users who will manage your onboarded customers.
+    - content: Implement multi-factor authentication for all users who manage your onboarded customers.
       isCorrect: true
       explanation: Correct. MFA ensures that only dedicated users can access your customer's Azure estate. It's also a good practice to ask the customer to implement MFA on their Azure tenant.
   - content: 'Where will you find the Azure Lighthouse Resource Manager templates?'
@@ -76,7 +76,7 @@ quiz:
       explanation: Incorrect. The Azure Lighthouse Resource Manager templates can be found on GitHub.
     - content: GitHub.
       isCorrect: true
-      explanation: Correct. GitHub has a number of Resource Manager templates, which are suitable for Azure Lighthouse.
+      explanation: Correct. GitHub has many Resource Manager templates, which are suitable for Azure Lighthouse.
   - content: "When deploying an Azure Resource Manager template on the customer's Azure instance, which CLI command would you use?"
     choices:
     - content: The command `az deployment onboard --name delegated-resource-management  --location westUS --template-file delegatedResourceManagement.json --parameters delegatedResourceManagement.parameters.json --verbose`
@@ -84,18 +84,18 @@ quiz:
       explanation: Incorrect. When deploying an Azure Resource Manager template, you wouldn't use the onboard command.
     - content: The command `az deployment create --name delegated-resource-management  --location westUS --template-file delegatedResourceManagement.json --parameters delegatedResourceManagement.parameters.json --verbose`
       isCorrect: true
-      explanation: Correct. The create command will deploy the Azure Resource Manager template onto the customer's Azure instance.
+      explanation: Correct. The create command deploys the Azure Resource Manager template onto the customer's Azure instance.
     - content: The command `az deployment deploy --name delegated-resource-management  --location westUS --template-file delegatedResourceManagement.json --parameters delegatedResourceManagement.parameters.json --verbose`
       isCorrect: false
       explanation: Incorrect. When deploying an Azure Resource Manager template, you wouldn't use the deploy command.
-  - content: 'As Contoso, how would you find the customers you have onboarded?'
+  - content: "As Contoso, how would you find the customers you've onboarded?"
     choices:
     - content: From the Onboarded Customers page.
       isCorrect: false
       explanation: Incorrect. There is no onboarded customers page. The My Customers page shows onboarded subscriptions.
     - content: From the My Customers page.
       isCorrect: true
-      explanation: Correct. This page will show all the customers who have completed the onboarding processes.
+      explanation: Correct. This page shows all the customers who have completed the onboarding processes.
     - content: From the Subscriptions page.
       isCorrect: false
       explanation: Incorrect. The subscriptions page only shows the Contoso subscriptions. The My customers page shows the onboarded subscriptions.
@@ -103,13 +103,13 @@ quiz:
     choices:
     - content: Using Microsoft Sentinel and filtering for the desired customer.
       isCorrect: false
-      explanation: Incorrect. Defender for Cloud will let you know if a subscription or other resource meets Azure's default security policy.
+      explanation: Incorrect. Defender for Cloud lets you know if a subscription or other resource meets Azure's default security policy.
     - content: Using Azure Monitor and filtering for the desired customer.
       isCorrect: false
-      explanation: Incorrect. Defender for Cloud will let you know if a subscription or other resource meets Azure's default security policy.
+      explanation: Incorrect. Defender for Cloud lets you know if a subscription or other resource meets Azure's default security policy.
     - content: Using Defender for Cloud and filtering for the desired customer.
       isCorrect: true
-      explanation: Correct. Defender for Cloud will let you know if a specific or all subscriptions meet the security policy.
+      explanation: Correct. Defender for Cloud lets you know if a specific or all subscriptions meet the security policy.
   - content: 'When would you use a private plan type?'
     choices:
     - content: When you want to preview a service offer before publishing it on the Azure Marketplace.

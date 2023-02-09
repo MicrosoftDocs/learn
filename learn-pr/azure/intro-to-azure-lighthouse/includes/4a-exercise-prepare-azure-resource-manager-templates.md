@@ -1,4 +1,4 @@
-In this exercise, you will apply what you've learned so far to configure your Azure Resource Manager templates, ready to onboard your first new customer to Azure Lighthouse.
+In this exercise, you'll apply what you've learned so far to configure your Azure Resource Manager templates, ready to onboard your first new customer to Azure Lighthouse.
 
 > [!IMPORTANT]
 > Your own Microsoft Azure subscription is required to complete this exercise, but the exercise can be viewed and this module completed without performing the exercise steps. The tasks incur no cost and a free Azure trial can be used.
@@ -7,9 +7,9 @@ In this exercise, you will apply what you've learned so far to configure your Az
 
 ## Exercise scenarios
 
-As the administrator for Contoso, you are responsible for onboarding three new customers:
+As the administrator for Contoso, you're responsible for onboarding three new customers:
 
-**Customer 1** has a services contract for Contoso to manage and administer their entire Azure subscription and all of its resources. To achieve this, Contoso staff will need **Contributor** access to the customer's subscription.
+**Customer 1** has a services contract for Contoso to manage and administer their entire Azure subscription and all of its resources. To achieve this, Contoso staff needs **Contributor** access to the customer's subscription.
 
 **Customer 2's** service contract requires **Reader** access to one resource group, called **"cust2-rg1"**.
 

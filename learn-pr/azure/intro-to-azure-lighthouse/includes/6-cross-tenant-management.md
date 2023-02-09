@@ -1,4 +1,4 @@
-So far, you've learned how Azure Lighthouse streamlines the onboarding of Contoso's new customers. Beyond onboarding, Azure Lighthouse will improve the way that Contoso manages Azure resources for its customers. Let's start by exploring how both Contoso and its customers have visibility of the Azure delegated resource management that has been deployed.
+So far, you've learned how Azure Lighthouse streamlines the onboarding of Contoso's new customers. Beyond onboarding, Azure Lighthouse improves the way that Contoso manages Azure resources for its customers. Let's start by exploring how both Contoso and its customers have visibility of the Azure delegated resource management that has been deployed.
 
 ## Viewing your customers
 
@@ -9,7 +9,7 @@ In the **My Customers** page of Azure Lighthouse, they can display the customer'
 
 ## Viewing your service providers
 
-Customers who have accepted a services offer through the Azure Marketplace or by deploying an Azure Resource Manager template from their service provider, can view their accepted offer details via the **Service Providers/Delegations** page of Azure Lighthouse.
+Customers who have accepted a service offer through the Azure Marketplace or by deploying an Azure Resource Manager template from their service provider, can view their accepted offer details via the **Service Providers/Delegations** page of Azure Lighthouse.
 
 :::image type="content" source="../media/6-my-service-providers.png" alt-text="Screenshot of the customer view of Service Providers in Azure Lighthouse.":::
 

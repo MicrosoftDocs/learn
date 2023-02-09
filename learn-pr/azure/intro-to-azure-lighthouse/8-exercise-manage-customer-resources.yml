@@ -3,7 +3,7 @@ uid: learn.intro-to-azure-lighthouse.8-exercise-manage-customer-resources
 title: Exercise - Manage customer resources
 metadata:
   title: Exercise - Manage customer resources
-  description: In this exercise, you will explore how to manage customer resources with Azure Lighthouse
+  description: In this exercise, you'll explore how to manage customer resources with Azure Lighthouse
   ms.date: 02/10/2023
   author: SCuffy
   ms.author: socuff

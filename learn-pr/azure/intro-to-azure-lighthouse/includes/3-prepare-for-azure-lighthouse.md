@@ -14,7 +14,7 @@ Through Azure delegated resource management, your customer's Azure subscriptions
 - A group of Backup Management staff with access to manage Azure Backup for your customers
 - A group of project staff with a higher level of access to all of the resources inside particular resource groups in your customer's environment
 
-This logical mapping is automatically created when the customer accepts a Service Management offering on the Azure Marketplace. It also occurs when they deploy one of your Azure Resource Manager templates on their Azure tenant, where you will specify these access levels and the scope of their application.
+This logical mapping is automatically created when the customer accepts a Service Management offering on the Azure Marketplace. It also occurs when they deploy one of your Azure Resource Manager templates on their Azure tenant, where you'll specify these access levels and the scope of their application.
 
 These access levels are defined and enforced using Azure's role-based access control. Let's take a deeper look at those roles and authorizations.
 
@@ -27,7 +27,7 @@ Once you've confirmed how the service teams at Contoso are structured, to delive
 > [!TIP]
 > You can apply roles to a group name in your Azure resource manager templates to onboard your customer to Azure Lighthouse. Then during the life of that services contract, you can add and remove your Contoso staff to that group as required within your own Azure tenant, without needing to make any changes to your customer's delegated resource access.  
 
-- **Customer 2's** service contract is limited to resources inside one particular resource group called "cust2-rg1". Your Contoso staff only need **Reader** access to this resource group and its resources, so the Reader role and it's associated permissions are appropriate here.
+- **Customer 2's** service contract is limited to resources inside one particular resource group called "cust2-rg1". Your Contoso staff only needs **Reader** access to this resource group and its resources, so the Reader role and it's associated permissions are appropriate here.
 
 > [!TIP]
 > Authorizations applied at a resource group level will apply to all existing resources in that resource group and will be inherited by all new resources created in that resource group.
@@ -47,7 +47,7 @@ If you're thinking about users and roles, especially for  Azure delegated resour
 
 ## Permission structures
 
-Contoso already uses Azure AD user groups and roles to control access to its own Azure resources. To simplify the authorizations you will assign to your managed service offers, you have decided to create a dedicated suite of Azure AD user groups and associated roles in your tenant.
+Contoso already uses Azure AD user groups and roles to control access to its own Azure resources. To simplify the authorizations you'll assign to your managed service offers, you've decided to create a dedicated suite of Azure AD user groups and associated roles in your tenant.
 
 | **Group name**                     | **Type**   | **Role definition**                             |
 | ---------------------------------- | ---------- | ----------------------------------------------- |

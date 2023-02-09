@@ -10,7 +10,7 @@ Azure delegated resource management is the technology capability that gives Cont
 
 - The principal ID and the display name of the user, group, or service principal that is being granted the permissions. The principal ID is displayed as the Object ID in Azure Active Directory.
 - The role definition ID of the Azure in-built role, that contains the most appropriate level of permissions that you want to grant. Together, the principal ID, principal ID display name, and the role definition are known as the authorization for Azure Lighthouse.
-- The scope of where the authorization is applied to: a subscription, a resource group or multiple resource groups.
+- The scope of the authorization: a subscription, a resource group or multiple resource groups.
 
 >[!TIP]
 >You can also onboard multiple subscriptions owned by the same customer, by deploying your Azure Resource Manager template separately to each target subscription.
@@ -32,12 +32,12 @@ When you visit the GitHub repository (https://github.com/Azure/Azure-Lighthouse-
 
 Templates can be used to automate and streamline the onboarding process, however:
 
-- If you have multiple subscriptions in a tenant, each one will need a separate onboarding deployment
-- If you want to onboard multiple resource groups, each with different subscriptions, you will also need separate onboarding deployments
+- If you have multiple subscriptions in a tenant, each one needs a separate onboarding deployment
+- If you want to onboard multiple resource groups, each with different subscriptions, you'll also need separate onboarding deployments
 
 ## Configuring an Azure Resource Manager template
 
-A template is divided into two parts: a code (template) file and a parameter file. The code files provided in the samples do not need any modification - just make sure you select the right one corresponding to your target scope of subscription, resource group, or multiple resource groups. You will need to modify the parameter file.
+A template is divided into two parts: a code (template) file and a parameter file. The code files provided in the samples don't need any modification - just make sure you select the right one corresponding to your target scope of subscription, resource group, or multiple resource groups. You need to modify the parameter file.
 
 Deploying Azure Lighthouse to your customers requires you to fill in the following information about your service offering in the Azure Resource Manager template parameters file:
 
@@ -52,7 +52,7 @@ All of the template files are based on JSON. So, when editing templates, you'll 
 
 ### Configuring the parameter file
 
-Below is an example of what the file will look like:
+Here is an example of what the file looks like:
 
 ```JSON
 {
@@ -94,7 +94,7 @@ Below is an example of what the file will look like:
 
 ## Deploying your Azure Resource Manager template
 
-As Contoso does not yet have access to their new customer's Azure environments, but they have established a relationship with them over the signing of the new services contracts, Contoso will distribute the template files to the customers to deploy. One of the customer's users who has the Owner role for their Azure subscriptions can then deploy the template in their subscriptions.
+As Contoso doesn't yet have access to their new customer's Azure environments, but they have established a relationship with them over the signing of the new services contracts, Contoso distributes the template files to the customers to deploy. One of the customer's users who has the Owner role for their Azure subscriptions can then deploy the template in their subscriptions.
 
 The onboarding template files always require a subscription-level deployment, even if you're onboarding only one or more resource groups within a subscription. For subscription level deployments you need to use Cloud Shell, for example:
 
@@ -116,4 +116,4 @@ az deployment sub create --name <deploymentName> \
                          --verbose
 ```
 
-In the following exercise, you will configure an Azure Resource Manager template and deploy it to three new customers.
+In the following exercise, you'll configure an Azure Resource Manager template and deploy it to three new customers.

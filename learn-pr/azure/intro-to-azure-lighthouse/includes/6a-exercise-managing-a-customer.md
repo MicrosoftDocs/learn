@@ -1,4 +1,4 @@
-In this exercise, you will apply what you've learned so far to the new customers you have onboarded. 
+In this exercise, you'll apply what you've learned so far to the new customers you have onboarded. 
 
 > [!IMPORTANT]
 > Return to the lab environment you have open from the previous exercise, as it contains pre-requisites needed for these scenarios.
@@ -7,11 +7,11 @@ In this exercise, you will apply what you've learned so far to the new customers
 
 ### Review Azure Marketplace offers
 
-Here you will visit the Azure Marketplace and see the service offers published by other Microsoft Partners.
+Here you'll visit the Azure Marketplace and see the service offers published by other Microsoft Partners.
 
 ### Review your delegated customers and their Azure resource
 
-As a Contoso user, you will use Azure Lighthouse to view your customers and the delegated access you have been granted. Then you'll view your customer's resources using the Azure portal and your Contoso credentials.
+As a Contoso user, you'll use Azure Lighthouse to view your customers, and the delegated access you have been granted. Then you'll view your customer's resources using the Azure portal and your Contoso credentials.
 
 ### Update a service offer using Azure Resource Manager templates
 

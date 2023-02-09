@@ -4,11 +4,11 @@ With Azure Lighthouse, you can create a service offer and publish it to the Azur
 
 ## Getting Started
 
-If you already have experience with publishing offers to the Azure Marketplace, there is almost no difference in publishing a service offer that uses Azure Lighthouse.
+If you already have experience with publishing offers to the Azure Marketplace, there's almost no difference in publishing a service offer that uses Azure Lighthouse.
 
 ### Partner Center account
 
-In order to create a service offer, you'll need a valid Partner Center account. If you don't have one, you'll need to sign up and enroll in the Commercial Marketplace program.
+In order to create a service offer, you need a valid Partner Center account. If you don't have one, you'll need to sign up and enroll in the Commercial Marketplace program.
 
 ### Public and Private offers
 
@@ -19,9 +19,9 @@ When defining an Azure Marketplace managed service offer, you'll need to decide 
 
 ## The walk-through
 
-Since not everyone can access Partner Center, this unit will showcase how to create and publish a service offer to the Azure Marketplace through a video walk-through.
+Since not everyone can access Partner Center, this unit showcases how to create and publish a service offer to the Azure Marketplace through a video walk-through.
 
-This content will look at:
+This content looks at:
 
 - The steps needed to create a managed service offer
 - The difference between private and public offers
