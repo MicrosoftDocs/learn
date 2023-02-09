@@ -3,7 +3,7 @@ uid: learn.wwl.describe-compliance-management-capabilities-microsoft
 metadata:
   title: Describe the Service Trust Portal and privacy at Microsoft
   description: "Describe the Service Trust Portal and privacy at Microsoft"
-  ms.date: 09/26/2022
+  ms.date: 02/09/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -26,7 +26,8 @@ roles:
 - business-user
 - student
 products:
-- priva
+- azure
+- m365
 subjects:
 - compliance
 units:
