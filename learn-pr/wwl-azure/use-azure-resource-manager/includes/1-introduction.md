@@ -23,7 +23,7 @@ Configure VMs
 
 ## Learning objectives
 
-In this module, you will learn how to:
+In this module, you'll learn how to:
 
  -  Identify the features and usage cases for Azure Resource Manager.
  -  Describe each Azure Resource Manager component and its usage.
