@@ -208,8 +208,9 @@ When you've finished this task, the shared disk is attached to two VMs at the sa
     sudo sg_persist /dev/sdc -s
     ```
 
+1. Close the SSH session:
+
     ```bash
-    # Exit the SSH from VM2
     exit
     ```
 
