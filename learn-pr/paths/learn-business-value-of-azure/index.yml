@@ -30,7 +30,6 @@ subjects:
 - cloud-computing
 modules:
 - learn-wwl.introduction-to-azure-solutions
-- learn-wwl.data-estate-migration-and-modernization
 - learn-wwl.microsoft-cloud-adoption-framework-for-azure-v1-1
 - learn-wwl.microsoft-runs-on-trust
 trophy:
