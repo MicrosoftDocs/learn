@@ -9,7 +9,7 @@ In this unit, you'll take a more in-depth look at Azure delegated resource manag
 Azure delegated resource management is the technology capability that gives Contoso access to customer resources from your own tenant, with Azure Lighthouse. Azure delegated resource management has three key components:
 
 - The principal ID and the display name of the user, group, or service principal that is being granted the permissions. The principal ID is displayed as the Object ID in Azure Active Directory.
-- The role definition ID of the Azure in-built role, that contains the most appropriate level of permissions that you want to grant. Together, the principal ID, principal ID display name, and the role definition are known as the authorization for Azure Lighthouse.
+- The role definition ID of the Azure in-built role that contains the most appropriate level of permissions that you want to grant. Together, the principal ID, principal ID display name, and the role definition are known as the authorization for Azure Lighthouse.
 - The scope of the authorization: a subscription, a resource group or multiple resource groups.
 
 >[!TIP]
@@ -46,13 +46,13 @@ Deploying Azure Lighthouse to your customers requires you to fill in the followi
 - managedByTenantId - Contoso's tenant ID such as df4602a3-920c-435f-98c4-49ff031b9ef6
 - authorizations - The list of Contoso's requested principal IDs, principal ID display names, and role definition IDs.
 
-This information will be visible to the customer inside Azure Lighthouse in their Azure portal, after they've been successfully onboarded and will also be visible to Contoso inside their Azure portal.
+This information is visible to the customer and Contoso inside Azure Lighthouse in the customer's Azure portal, after they've been successfully onboarded.
 
-All of the template files are based on JSON. So, when editing templates, you'll need a text editing program like Notepad or Visual Studio Code, which also has a Resource Manager Tools extension to help you identify possible errors.
+All of the template files are based on JSON. So, when editing templates, you need a text editing program like Notepad or Visual Studio Code, which also has a Resource Manager Tools extension to help you identify possible errors.
 
 ### Configuring the parameter file
 
-Here is an example of what the file looks like:
+Here's an example of what the file looks like:
 
 ```JSON
 {
@@ -94,7 +94,7 @@ Here is an example of what the file looks like:
 
 ## Deploying your Azure Resource Manager template
 
-As Contoso doesn't yet have access to their new customer's Azure environments, but they have established a relationship with them over the signing of the new services contracts, Contoso distributes the template files to the customers to deploy. One of the customer's users who has the Owner role for their Azure subscriptions can then deploy the template in their subscriptions.
+As Contoso doesn't yet have access to their new customer's Azure environments, but they've established a relationship with them over the signing of the new services contracts, Contoso distributes the template files to the customers to deploy. One of the customer's users who has the Owner role for their Azure subscriptions can then deploy the template in their subscriptions.
 
 The onboarding template files always require a subscription-level deployment, even if you're onboarding only one or more resource groups within a subscription. For subscription level deployments you need to use Cloud Shell, for example:
 

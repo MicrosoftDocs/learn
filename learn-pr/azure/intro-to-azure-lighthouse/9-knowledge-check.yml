@@ -66,7 +66,7 @@ quiz:
     - content: Implement multi-factor authentication for all users who manage your onboarded customers.
       isCorrect: true
       explanation: Correct. MFA ensures that only dedicated users can access your customer's Azure estate. It's also a good practice to ask the customer to implement MFA on their Azure tenant.
-  - content: 'Where will you find the Azure Lighthouse Resource Manager templates?'
+  - content: 'Where can you find the Azure Lighthouse Resource Manager templates?'
     choices:
     - content: Azure Marketplace.
       isCorrect: false
@@ -92,7 +92,7 @@ quiz:
     choices:
     - content: From the Onboarded Customers page.
       isCorrect: false
-      explanation: Incorrect. There is no onboarded customers page. The My Customers page shows onboarded subscriptions.
+      explanation: Incorrect. There's no onboarded customers page. The My Customers page shows onboarded subscriptions.
     - content: From the My Customers page.
       isCorrect: true
       explanation: Correct. This page shows all the customers who have completed the onboarding processes.
