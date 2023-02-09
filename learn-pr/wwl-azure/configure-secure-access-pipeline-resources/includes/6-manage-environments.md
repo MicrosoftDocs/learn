@@ -45,7 +45,6 @@ Here is an example YAML pipeline that deploys an application to the Development 
     displayName: Deploy Web App
     pool:
       vmImage: 'Ubuntu-latest'
-    # creates an environment if it doesn't exist
     environment: 'Development'
     strategy:
       runOnce:
