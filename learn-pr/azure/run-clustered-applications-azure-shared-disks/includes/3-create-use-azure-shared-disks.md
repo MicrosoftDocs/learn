@@ -7,7 +7,7 @@ You can create Azure shared disks by using various tools.
 **Use the Azure portal**
 
 1. Sign in to the Azure portal, and then search for and select **Disks**.
-1. Select **Add** to create a managed disk and then, on the **Basic** tab, provide the following information:
+1. Select **+ Create** to create a managed disk and then, on the **Basic** tab, provide the following information:
 
     |Setting | Description |
     | --- | --- |
