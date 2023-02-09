@@ -3,7 +3,7 @@ uid: learn.wwl.describe-security-capabilities-of-azure-sentinel
 metadata:
   title: Describe security capabilities of Microsoft Sentinel
   description: "Describe security capabilities of Microsoft Sentinel"
-  ms.date: 04/07/2022
+  ms.date: 02/09/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -19,7 +19,7 @@ prerequisites: |
   - General understanding of networking and cloud computing concepts.
   - General IT knowledge or any general experience working in an IT environment.
   - General understanding of Microsoft Azure and Microsoft 365.
-iconUrl: /training/achievements/describe-security-capabilities-of-azure-sentinel.svg
+iconUrl: /learn/achievements/describe-security-capabilities-of-azure-sentinel.svg
 levels:
 - beginner
 roles:
