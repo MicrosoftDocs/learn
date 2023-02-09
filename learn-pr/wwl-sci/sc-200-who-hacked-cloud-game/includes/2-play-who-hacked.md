@@ -1,5 +1,3 @@
-## Play Who Hacked?
-
 :::image type="content" source="../media/playing-the-game.png" alt-text="Images of a security professional and the Who Hacked? game leads.":::
 
 Best for You Organics has been hacked!

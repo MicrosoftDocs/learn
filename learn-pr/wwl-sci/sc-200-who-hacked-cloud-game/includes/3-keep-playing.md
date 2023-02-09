@@ -1,5 +1,3 @@
-## Keep playing to find the culprit!
-
 :::image type="content" source="../media/keep-playing.png" alt-text="Images of the Who Hacked? game leads on the Evidence map.":::
 
 You can continue playing WhoHacked?
