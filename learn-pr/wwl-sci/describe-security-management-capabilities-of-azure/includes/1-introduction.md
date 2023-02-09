@@ -1,3 +1,4 @@
+
 As more companies move their assets and resources into the cloud, keeping them safe is a primary consideration for all IT and security departments.  Cybercrime is a multi-billion-dollar business. Failure to protect your organization can be costly because of loss of data and reputation.
 
 Microsoft Azure offers a suite of threat protection and detection systems to minimize and mitigate threats across your whole estate and improve the overall cloud security posture.  
