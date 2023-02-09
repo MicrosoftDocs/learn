@@ -1,10 +1,10 @@
-There are different ways to create and manage website projects. Some of these differences depend on the specific tools you have and the preferences of your organization. When creating a website, it's not uncommon for your project structure to change over time as it becomes more complicated. The key is to maintain a semblance of organization, and there are common strategies to help you do this. Large projects often require a higher degree of care and attention so that many people can keep everything organized.
+There are different ways to create and manage website projects. Some of these differences depend on the specific tools you have and the preferences of your organization. When creating a website, it's not uncommon for your project structure to change over time as it becomes more complicated. The key is to maintain a semblance of organization, and there are common strategies to help you do this. Large projects often require a higher degree of care and attention so that many people can keep everything organized.VS Code
 
 In this unit, you'll create a small project structure using Visual Studio Code. The project will have three files: an HTML file, a CSS file, and a JavaScript file. You'll also add a Visual Studio Code extension to simplify running the website in your browser.
 
 ## Create a new folder for your website
 
-1. Open VS Code.
+1. Open Visual Studio Code.
 
    When you open Visual Studio Code, the **Welcome** page opens. Notice that you can create a new file or open a folder in the **Start** list.
 
