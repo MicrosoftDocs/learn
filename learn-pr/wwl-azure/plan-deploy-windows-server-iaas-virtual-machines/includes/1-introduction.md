@@ -3,7 +3,7 @@ You can deploy Windows Server ​​infrastructure as a service (IaaS) virtual m
 
 ## Scenario
 
-Contoso is a medium-size financial services company in London with a branch office in New York. Most of its compute environment runs on-premises on Windows Server. This includes virtualized workloads on Windows Server 2012 R2 hosts. The IT group at Contoso are in the process of migrating Contoso servers to Windows Server 2019.
+Contoso is a medium-size financial services company in London with a branch office in New York. Most of its compute environment runs on-premises on Windows Server. This includes virtualized workloads on Windows Server 2012 R2 hosts. The IT group at Contoso is in the process of migrating Contoso servers to Windows Server 2019.
 
 Contoso's IT director realizes that Contoso has an outdated operational model with limited automation and reliance on dated technology. The Contoso IT Engineering team has started exploring Azure capabilities. They want to determine whether Azure services can help modernize operations through automation and virtualization.
 
