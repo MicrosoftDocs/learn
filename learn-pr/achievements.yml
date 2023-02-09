@@ -1519,3 +1519,21 @@ achievements:
   title: Introduction to Azure solutions
   summary: Begin digital transformation by exploring why Azure is the right platform for your organization and the value Azure can bring. See how Azure enables you to empower employees, engage customers, optimize operations, and transform products.
   iconUrl: /training/achievements/intro-to-azure-areas-and-solutions.svg
+- uid: learn-wwl.learn-business-value-of-azure-v1-1.trophy
+  type: trophy
+  title: Learn the business value of Microsoft Azure
+  summary: >-
+    Are you interested in learning about the cloud in an easy to understand way? Or perhaps you are confused about where to begin with cloud technology?
+  
+    This learning experience will take you on  a journey that will begin by showing you how digital transformation and the power of the cloud can transform your business. We will cover how Microsoft Azure cloud services can power your organization on a trusted cloud platform. Finally, we will wrap up by illustrating how to make this journey real for your organization.
+  
+    In this learning path, you will learn about:
+  
+    - Enabling digital transformation.
+  
+    - Identifying ways to migrate and modernize applications.
+  
+    - Gaining insights through data, artificial intelligence (AI) and the Internet of Things (IoT)
+  
+    - Meeting a broad set of regulatory and compliance standards on a trusted cloud platform.
+  iconUrl: /training/achievements/azure-sfa-generalist-path.svg
