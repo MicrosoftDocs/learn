@@ -1499,3 +1499,8 @@ achievements:
   title: Applications and infrastructure migration and modernization
   summary: Every modern business is powered by applications, such as internal procurement applications, Customer Relationship Management (CRM) systems, retail websites, and third-party products. As your business prepares for digital transformation, it’s important to begin modernizing and migrating your applications and infrastructure to the cloud. Azure is a key component of that process. You can choose to migrate, modernize, or build cloud native solutions depending on your business goals and how you assess your application portfolio. This is a strategic decision. You’ll be able to choose the path that’s right for your organization.
   iconUrl: /training/achievements/apps-and-infra-migration-modernization.svg
+- uid: learn-wwl.azure-ai-strategy.badge
+  type: badge
+  title: Microsoft Azure Artificial Intelligence (AI) strategy and solutions
+  summary: This module provides an overview of Azure AI and demonstrates how Microsoft tools, services, and infrastructure can help make AI real for your organization, whether you want to unlock insights from your latent data with knowledge mining, develop your own AI models with machine learning, or build immersive apps using AI.
+  iconUrl: /training/achievements/azure-artificial-intelligence.svg
