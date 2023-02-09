@@ -20074,6 +20074,11 @@
       "source_path": "learn-pr/wwl-mba/app-and-infra-migration-and-modernization/5-Application-modernization.md",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/app-and-infra-migration-and-modernization/6-Comparing-types-of-app-modernization.md",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     }
   ]
 }
