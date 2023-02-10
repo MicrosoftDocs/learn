@@ -3,7 +3,7 @@ uid: learn.wwl.use-azure-resource-manager
 metadata:
   title: Use Azure Resource Manager
   description: "You'll learn to use resource groups to organization your Azure resources."
-  ms.date: 02/09/2023
+  ms.date: 02/10/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
