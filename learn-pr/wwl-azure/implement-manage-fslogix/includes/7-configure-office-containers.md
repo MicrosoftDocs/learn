@@ -1,4 +1,3 @@
-
 Using Office Container, both applications and users see the portions of the profile managed by Office Container as if they're located on the local drive.
 
 All benefits of Office Container are automatic when using Profile Container. There's no need to implement Office Container if Profile Container is your primary solution for managing profiles. Office Container could optionally be used with Profile Container, to place Office Data in a location separate from the rest of the user's profile.

@@ -4,10 +4,13 @@ title: Install FSLogix
 metadata:
   title: Install FSLogix
   description: "Install FSLogix"
-  ms.date: 02/08/2023
+  ms.date: 02/10/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
 content: |
   [!include[](includes/4-install-fslogix.md)]

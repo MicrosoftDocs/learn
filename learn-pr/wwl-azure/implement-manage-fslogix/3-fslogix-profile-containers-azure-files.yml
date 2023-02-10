@@ -4,11 +4,13 @@ title: FSLogix profile containers and Azure files
 metadata:
   title: FSLogix profile containers and Azure files
   description: "FSLogix profile containers and Azure files"
-  ms.date: 02/08/2023
+  ms.date: 02/10/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  zone_pivot_groups: azure-interface
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
 content: |
   [!include[](includes/3-fslogix-profile-containers-azure-files.md)]

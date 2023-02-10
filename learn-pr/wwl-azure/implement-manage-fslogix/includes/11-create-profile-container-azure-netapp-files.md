@@ -1,4 +1,3 @@
-
 This unit shows you how to set up an Azure NetApp Files account and create FSLogix profile containers in Azure Virtual Desktop. It assumes you've already created a host pool and an application group.
 
 It's recommended you use FSLogix profile containers as a user profile solution for the Azure Virtual Desktop service.

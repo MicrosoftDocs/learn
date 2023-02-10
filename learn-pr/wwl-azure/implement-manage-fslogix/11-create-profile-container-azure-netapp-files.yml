@@ -4,11 +4,13 @@ title: Create a profile container with Azure NetApp Files and capacity pool
 metadata:
   title: Create a profile container with Azure NetApp Files and capacity pool
   description: "Create a profile container with Azure NetApp Files and capacity pool"
-  ms.date: 02/08/2023
+  ms.date: 02/10/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  zone_pivot_groups: azure-interface
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
 content: |
   [!include[](includes/11-create-profile-container-azure-netapp-files.md)]

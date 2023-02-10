@@ -4,10 +4,13 @@ title: Plan for FSLogix
 metadata:
   title: Plan for FSLogix
   description: "Plan for FSLogix"
-  ms.date: 02/08/2023
+  ms.date: 02/10/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
 content: |
   [!include[](includes/2-plan-for-fslogix.md)]

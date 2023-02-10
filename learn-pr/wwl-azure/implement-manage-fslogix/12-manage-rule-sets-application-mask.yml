@@ -1,14 +1,16 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.implement-manage-fslogix.manage-rule-sets-application-mask
+uid: learn.wwl.implement-manage-fslogix.manage-rule-sets-application-masking
 title: Manage Rule Sets and application masking
 metadata:
   title: Manage Rule Sets and application masking
   description: "Manage Rule Sets and application masking"
-  ms.date: 02/08/2023
+  ms.date: 02/10/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  zone_pivot_groups: azure-interface
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
 content: |
   [!include[](includes/12-manage-rule-sets-application-mask.md)]

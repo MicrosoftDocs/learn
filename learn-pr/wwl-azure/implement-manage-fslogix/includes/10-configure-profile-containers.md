@@ -1,4 +1,3 @@
-
 Profile Container is a full remote profile solution for non-persistent environments. Profile Container redirects the entire user profile to a remote location. Profile Container configuration defines how and where the profile is redirected.
 
 Profile Container is inclusive of the benefits found in Office Container.

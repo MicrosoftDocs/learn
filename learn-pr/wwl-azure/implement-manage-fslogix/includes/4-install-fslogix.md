@@ -1,4 +1,3 @@
-
 The FSLogix software no longer requires license keys. It is recommended that the latest version of FSLogix is downloaded and installed.
 
 This unit describes how to download and install FSLogix tools.

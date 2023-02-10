@@ -1,4 +1,3 @@
-
 It's important to understand the differences between Profile Container and Office Container for proper use and maximum benefit.
 
 Office Container is a subset of Profile Container. Although all of the benefits of Office Container are also delivered from Profile Container, there are times when it may be beneficial to use them together.

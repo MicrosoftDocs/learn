@@ -1,4 +1,3 @@
-
 You can install Microsoft Office quickly and efficiently by using an FSLogix application container as a template for the other virtual machines (VMs) in your host pool.
 
 Here's why using an FSLogix app container can help make installation faster:

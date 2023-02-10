@@ -1,4 +1,3 @@
-
 This unit compares storage solutions that Azure offers for Azure Virtual Desktop FSLogix user profile containers.
 
 As mentioned in Module 2, it's best to store FSLogix profile containers on Azure Files.

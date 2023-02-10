@@ -1,4 +1,3 @@
-
 Application Masking manages access to Applications, Fonts, and other items based on criteria. The Application Rules Editor is used to Describe the item, such as application, to be managed. The Editor is also used to define criteria rules are managed by.
 
 Things you can do with the Apps Rules Editor:

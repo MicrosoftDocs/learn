@@ -3,7 +3,7 @@ uid: learn.wwl.implement-manage-fslogix
 metadata:
   title: Implement and manage FSLogix
   description: "Implement and manage FSLogix"
-  ms.date: 02/08/2023
+  ms.date: 02/10/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -40,13 +40,13 @@ units:
 - learn.wwl.implement-manage-fslogix.fslogix-profile-containers-azure-files
 - learn.wwl.implement-manage-fslogix.install-fslogix
 - learn.wwl.implement-manage-fslogix.storage-options-for-fslogix-profile-containers
-- learn.wwl.implement-manage-fslogix.profile-container-versus-office-container
+- learn.wwl.implement-manage-fslogix.profile-container-vs-office-container
 - learn.wwl.implement-manage-fslogix.configure-office-containers
 - learn.wwl.implement-manage-fslogix.install-microsoft-office-fslogix-application-containers
 - learn.wwl.implement-manage-fslogix.configure-cloud-cache
 - learn.wwl.implement-manage-fslogix.configure-profile-containers
 - learn.wwl.implement-manage-fslogix.create-profile-container-azure-netapp-files
-- learn.wwl.implement-manage-fslogix.manage-rule-sets-application-mask
+- learn.wwl.implement-manage-fslogix.manage-rule-sets-application-masking
 - learn.wwl.implement-manage-fslogix.knowledge-check
 - learn.wwl.implement-manage-fslogix.summary
 badge:
