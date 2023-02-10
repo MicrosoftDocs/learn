@@ -1,4 +1,3 @@
-
 Work item integration functionality allows you to easily create work items in Azure DevOps with relevant Application Insights data embedded in them.
 
 It's straightforward to configure this association and begin creating work items (this process should only take a minute or two).
