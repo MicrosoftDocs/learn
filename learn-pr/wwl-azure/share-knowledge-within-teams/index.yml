@@ -3,7 +3,7 @@ uid: learn.wwl.share-knowledge-within-teams
 metadata:
   title: Share knowledge within teams
   description: "Share knowledge within teams"
-  ms.date: 01/10/2023
+  ms.date: 02/10/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -44,7 +44,7 @@ subjects:
 units:
 - learn.wwl.share-knowledge-within-teams.introduction
 - learn.wwl.share-knowledge-within-teams.share-acquired-development-teams
-- learn.wwl.share-knowledge-within-teams.introduction-to-azure-devops-project-wikis
+- learn.wwl.share-knowledge-within-teams.introduction-azure-devops-project-wikis
 - learn.wwl.share-knowledge-within-teams.integrate-azure-boards
 - learn.wwl.share-knowledge-within-teams.integrate-azure-devops-teams
 - learn.wwl.share-knowledge-within-teams.share-team-knowledge-azure-project-wiki
