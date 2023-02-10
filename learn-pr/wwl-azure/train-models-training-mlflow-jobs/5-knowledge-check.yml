@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/09/2023
+  ms.date: 02/10/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
@@ -25,12 +25,12 @@ quiz:
       explanation: "Correct. Use `mlflow.log_metric()` to log a metric like the RMSE."
   - content: "When a data scientist enables MLflow autologging, where can all model assets be found?"
     choices:
-    - content: "In the model folder under Outputs + logs."
+    - content: "In the model folder under **Outputs + logs**."
       isCorrect: true
       explanation: "Correct. Model assets like the model pickle file will be stored in the model folder under Outputs + logs."
-    - content: "In the outputs folder under Outputs + logs."
+    - content: "In the outputs folder under **Outputs + logs**."
       isCorrect: false
       explanation: "Incorrect. When enabling autologging, the model assets will not be stored in the outputs folder."
-    - content: "In the model folder under Metrics."
+    - content: "In the model folder under **Metrics**."
       isCorrect: false
       explanation: "Incorrect. Artifacts like the model assets are not stored under Metrics."
