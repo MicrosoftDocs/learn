@@ -22,7 +22,7 @@ prerequisites: |
   - Basic knowledge of Azure
   - Basic knowledge of any command line tool
 ratingEnabled: false
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /training/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
