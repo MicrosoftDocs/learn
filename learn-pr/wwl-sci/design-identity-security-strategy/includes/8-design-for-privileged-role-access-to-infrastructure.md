@@ -36,7 +36,7 @@ Specialized security provides increased security controls for roles with an elev
 
 * Developers of business critical systems
 * Sensitive business roles (such as users of SWIFT terminals, researchers with access to sensitive data, personnel with access to financial reporting prior to public release, payroll administrators, approvers for sensitive business processes)
-* Executives and personal assistants / administrative assistants that that regularly handle sensitive information.
+* Executives and personal assistants / administrative assistants that regularly handle sensitive information.
 * High impact social media accounts that could damage the company reputation.
 * Sensitive IT Admins with a significant privileges and impact, but aren't enterprise-wide. This group typically includes administrators of individual high impact workloads. (for example, enterprise resource planning administrators, banking administrators, help desk /tech support roles, etc.)
 
