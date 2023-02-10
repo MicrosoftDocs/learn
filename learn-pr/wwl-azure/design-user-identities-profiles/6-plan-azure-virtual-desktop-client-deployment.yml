@@ -1,14 +1,16 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.design-for-user-identities-profiles.plan-azure-virtual-desktop-client-deployment
-title: Plan for Azure Virtual Desktop client deployment - Remote Desktop Protocol
+uid: learn.wwl.design-for-user-identities-profiles.plan-for-azure-virtual-desktop-client-deployment-remote-desktop-protocol-rdp
+title: Plan for Azure Virtual Desktop client deployment - Remote Desktop Protocol (RDP)
 metadata:
-  title: Plan for Azure Virtual Desktop client deployment - Remote Desktop Protocol
-  description: "Plan for Azure Virtual Desktop client deployment - Remote Desktop Protocol"
-  ms.date: 02/07/2023
+  title: Plan for Azure Virtual Desktop client deployment - Remote Desktop Protocol (RDP)
+  description: "Plan for Azure Virtual Desktop client deployment - Remote Desktop Protocol (RDP)"
+  ms.date: 02/10/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  zone_pivot_groups: azure-interface
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
 content: |
   [!include[](includes/6-plan-azure-virtual-desktop-client-deployment.md)]

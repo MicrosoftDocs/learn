@@ -3,7 +3,7 @@ uid: learn.wwl.design-for-user-identities-profiles
 metadata:
   title: Design for user identities and profiles
   description: "Design for user identities and profiles"
-  ms.date: 02/07/2023
+  ms.date: 02/10/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -34,14 +34,14 @@ subjects:
 - identity-access
 units:
 - learn.wwl.design-for-user-identities-profiles.introduction
-- learn.wwl.design-for-user-identities-profiles.select-appropriate-licensing-model
+- learn.wwl.design-for-user-identities-profiles.select-appropriate-licensing-model-for-azure-virtual-desktop-based-requirements
 - learn.wwl.design-for-user-identities-profiles.personal-multi-session-desktop-scenarios
 - learn.wwl.design-for-user-identities-profiles.recommend-appropriate-storage-solution
-- learn.wwl.design-for-user-identities-profiles.plan-desktop-client-deployment
-- learn.wwl.design-for-user-identities-profiles.plan-azure-virtual-desktop-client-deployment
-- learn.wwl.design-for-user-identities-profiles.windows-desktop-client-multiple-devices
-- learn.wwl.design-for-user-identities-profiles.hybrid-identity-with-azure-active-directory
-- learn.wwl.design-for-user-identities-profiles.plan-azure-active-directory-connect-for-user-identities
+- learn.wwl.design-for-user-identities-profiles.plan-for-desktop-client-deployment
+- learn.wwl.design-for-user-identities-profiles.plan-for-azure-virtual-desktop-client-deployment-remote-desktop-protocol-rdp
+- learn.wwl.design-for-user-identities-profiles.windows-desktop-client-to-multiple-devices
+- learn.wwl.design-for-user-identities-profiles.hybrid-identity-azure-active-directory
+- learn.wwl.design-for-user-identities-profiles.plan-for-azure-ad-connect
 - learn.wwl.design-for-user-identities-profiles.knowledge-check
 - learn.wwl.design-for-user-identities-profiles.summary
 badge:

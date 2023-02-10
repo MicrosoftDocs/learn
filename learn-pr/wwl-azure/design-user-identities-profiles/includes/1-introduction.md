@@ -1,4 +1,3 @@
-
 Organizations are a mixture of on-premises and cloud applications. Users require access to those applications both on-premises and in the cloud. You use the Remote Desktop client for Windows Desktop to access Windows apps and desktops remotely from a different Windows device.
 
 This module aligns with the exam AZ-140: Configuring and Operating Microsoft Azure Virtual Desktop.

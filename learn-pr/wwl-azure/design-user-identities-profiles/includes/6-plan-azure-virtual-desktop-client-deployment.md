@@ -1,4 +1,3 @@
-
 The Remote Desktop web client lets you use a compatible web browser to access your organization's remote resources (apps and desktops) published to you by your admin. You'll be able to interact with the remote apps and desktops like you would with a local PC no matter where you are, without having to use another desktop computer.
 
 Once your admin sets up your remote resources all you need are your domain, user name, password, the URL your admin sent you, and web browser.

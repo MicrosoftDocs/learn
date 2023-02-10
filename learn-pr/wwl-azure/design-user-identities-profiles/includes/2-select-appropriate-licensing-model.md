@@ -1,4 +1,3 @@
-
 You can access Windows 10 Enterprise and Windows 7 Enterprise desktops and apps at no extra cost if you have an eligible Windows or Microsoft 365 license.
 
 Windows Server Remote Desktop Service is available at no cost if you have an eligible Microsoft Remote Desktop Services (RDS) Client Access License (CAL).

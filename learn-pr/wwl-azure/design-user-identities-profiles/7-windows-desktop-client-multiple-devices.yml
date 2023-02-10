@@ -1,13 +1,16 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.design-for-user-identities-profiles.windows-desktop-client-multiple-devices
+uid: learn.wwl.design-for-user-identities-profiles.windows-desktop-client-to-multiple-devices
 title: Windows Desktop client to multiple devices
 metadata:
   title: Windows Desktop client to multiple devices
   description: "Windows Desktop client to multiple devices"
-  ms.date: 02/07/2023
+  ms.date: 02/10/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
 content: |
   [!include[](includes/7-windows-desktop-client-multiple-devices.md)]

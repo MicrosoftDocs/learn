@@ -1,4 +1,3 @@
-
 In this module, you learned how to:
 
  -  Select a licensing model for Azure Virtual Desktop.

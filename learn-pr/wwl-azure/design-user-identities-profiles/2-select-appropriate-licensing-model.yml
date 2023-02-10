@@ -1,14 +1,16 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.design-for-user-identities-profiles.select-appropriate-licensing-model
+uid: learn.wwl.design-for-user-identities-profiles.select-appropriate-licensing-model-for-azure-virtual-desktop-based-requirements
 title: Select an appropriate licensing model for Azure Virtual Desktop based on requirements
 metadata:
   title: Select an appropriate licensing model for Azure Virtual Desktop based on requirements
   description: "Select an appropriate licensing model for Azure Virtual Desktop based on requirements"
-  ms.date: 02/07/2023
+  ms.date: 02/10/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  zone_pivot_groups: azure-interface
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
 content: |
   [!include[](includes/2-select-appropriate-licensing-model.md)]

@@ -1,14 +1,16 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.design-for-user-identities-profiles.plan-desktop-client-deployment
+uid: learn.wwl.design-for-user-identities-profiles.plan-for-desktop-client-deployment
 title: Plan for a desktop client deployment
 metadata:
   title: Plan for a desktop client deployment
   description: "Plan for a desktop client deployment"
-  ms.date: 02/07/2023
+  ms.date: 02/10/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  zone_pivot_groups: azure-interface
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
 content: |
   [!include[](includes/5-plan-desktop-client-deployment.md)]
