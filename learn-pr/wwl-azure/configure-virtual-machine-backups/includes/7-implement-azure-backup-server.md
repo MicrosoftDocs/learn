@@ -4,7 +4,7 @@ Another option for backing up your virtual machines is to use System Center Data
 
 You can back up your virtual machines and applications to System Center DPM or MABS storage, and then back up the DPM or MABS storage to an Azure Recovery Services vault.
 
-### Things to know about using System Center DPM or MABS
+### Things to know about using System Center DPM and MABS
 
 Let's examine the configuration details for using System Center DPM or MABS to back up your data.
 
@@ -20,7 +20,7 @@ Let's examine the configuration details for using System Center DPM or MABS to b
 
 - When the backup triggers, the disk of the protected workload is backed up to the local MABS or DPM disks, according to the schedule you specified. The DPM and MABS disks are then backed up to the Recovery Services vault by the MARS agent running on the DPM or MABS instance.
 
-### Things to consider when using System Center DPM or MABS
+### Things to consider when using System Center DPM and MABS
 
 There are several advantages to choosing System Center DPM or MABS for your backup solution.
 
