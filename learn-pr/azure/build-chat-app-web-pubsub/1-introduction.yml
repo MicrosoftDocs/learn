@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.build-chat-app-web-pubsub.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction to the training module
+  ms.date: 02/03/2023
+  author: dlepow
+  ms.author: danlep
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.contributors: jixin
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]
