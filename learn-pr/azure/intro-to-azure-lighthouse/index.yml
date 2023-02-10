@@ -3,7 +3,7 @@ uid: learn.intro-to-azure-lighthouse
 metadata:
   title: Use Azure Lighthouse with your managed service business
   description: Learn about and adopt Azure Lighthouse for your managed service business to manage your customers at scale.
-  ms.date: 02/10/2023
+  ms.date: 02/09/2023
   author: iankensey
   ms.author: socuff
   ms.topic: interactive-tutorial

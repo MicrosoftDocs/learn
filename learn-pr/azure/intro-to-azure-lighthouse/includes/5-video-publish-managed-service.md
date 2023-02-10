@@ -2,13 +2,13 @@ Azure Lighthouse provides two means of onboarding Azure Customers. Contoso is no
 
 With Azure Lighthouse, you can create a service offer and publish it to the Azure Marketplace.
 
-## Getting Started
+## Getting started
 
 If you already have experience with publishing offers to the Azure Marketplace, there's almost no difference in publishing a service offer that uses Azure Lighthouse.
 
 ### Partner Center account
 
-In order to create a service offer, you need a valid Partner Center account. If you don't have one, you'll need to sign up and enroll in the Commercial Marketplace program.
+In order to create a service offer, you need a valid Partner Center account. If you don't have one, you'll need to [sign up and enroll in the Commercial Marketplace program](https://learn.microsoft.com/azure/marketplace/create-account).
 
 ### Public and Private offers
 
