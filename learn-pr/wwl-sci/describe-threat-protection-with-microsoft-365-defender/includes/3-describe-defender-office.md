@@ -1,3 +1,4 @@
+
 Microsoft Defender for Office 365 safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools, including Microsoft Teams, SharePoint Online, OneDrive for Business, and other Office clients.
 
 Microsoft Defender for Office 365 covers these key areas:
