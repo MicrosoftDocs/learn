@@ -1631,6 +1631,76 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/student-evangelism/train-package-module-iot-edge/index.md",
+      "redirect_url": "/training/paths/ai-edge-engineer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/train-package-module-iot-edge/1-introduction.md",
+      "redirect_url": "/training/paths/ai-edge-engineer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/train-package-module-iot-edge/2-how-create-deploy-azure-ml-modules.md",
+      "redirect_url": "/training/paths/ai-edge-engineer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/train-package-module-iot-edge/3-exercise-create-deploy-azure-ml-module.md",
+      "redirect_url": "/training/paths/ai-edge-engineer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/train-package-module-iot-edge/4-how-view-container-repository.md",
+      "redirect_url": "/training/paths/ai-edge-engineer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/train-package-module-iot-edge/5-exercise-view-container-repository.md",
+      "redirect_url": "/training/paths/ai-edge-engineer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/train-package-module-iot-edge/6-how-view-generated-data.md",
+      "redirect_url": "/training/paths/ai-edge-engineer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/train-package-module-iot-edge/7-exercise-view-generated-data.md",
+      "redirect_url": "/training/paths/ai-edge-engineer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/train-package-module-iot-edge/8-clean-up-resources.md",
+      "redirect_url": "/training/paths/ai-edge-engineer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/train-package-module-iot-edge/9-knowledge-check.md",
+      "redirect_url": "/training/paths/ai-edge-engineer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/train-package-module-iot-edge/10-summary.md",
+      "redirect_url": "/training/paths/ai-edge-engineer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/train-package-module-iot-edge/11-what-is-virtual-machine.md",
+      "redirect_url": "/training/paths/ai-edge-engineer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/train-package-module-iot-edge/12-how-setup-communication.md",
+      "redirect_url": "/training/paths/ai-edge-engineer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/train-package-module-iot-edge/13-exercise-setup-communication.md",
+      "redirect_url": "/training/paths/ai-edge-engineer",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/commercial-marketplace/intro-commercial-marketplace/intro-commercial-marketplace/1-introduction.md",
       "redirect_url": "/training/modules/intro-commercial-marketplace/1-introduction",
       "redirect_document_id": false
