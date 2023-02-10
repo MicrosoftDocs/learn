@@ -14,6 +14,8 @@ In this module, you identified features and usage cases for different Azure back
 
 - Complete an [introduction to Azure Backup](/training/modules/intro-to-azure-backup/).
 
+- Configure [Azure Recovery Services vault backup options](/training/modules/configure-file-folder-backups/4-setup-recovery-service-vault-backup-options).
+
 ## Learn more with optional hands-on exercises
 
 - Protect your [virtual machines by using Azure Backup](/training/modules/protect-virtual-machines-with-azure-backup/). _Azure subscription required_.

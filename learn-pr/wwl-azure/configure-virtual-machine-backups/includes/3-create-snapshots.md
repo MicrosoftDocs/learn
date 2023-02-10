@@ -16,7 +16,7 @@ Let's take a closer look at the characteristics of snapshots and recovery points
 
 - By default, Azure Backup keeps snapshots for two days to reduce backup and restore times. The local retention reduces the time required to transform and copy data back from an Azure Recovery Services vault.
 
-- You can set the default snapshot retention value between one and five days.
+- You can set the default snapshot retention value from one and five days.
 
 - Incremental snapshots are stored as Azure page blobs (Azure Disks). 
 
