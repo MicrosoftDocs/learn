@@ -78,7 +78,7 @@ Now you use the service you defined by calling it in a Blazor component and obta
 
 ### Injecting the service
 
-Before you can call the service from the component, you must use dependency injection to add the service. This is done by adding the following code after the `@page` directive:
+Before you can call the service from the component, you must use dependency injection to add the service. Inject the service by adding the following code after the `@page` directive:
 
 ```razor
 @using BlazingPizza.Data
@@ -89,7 +89,7 @@ Usually, the component and the service are in different namespace members, so yo
 
 ### Override the OnInitializedAsync method
 
-A good place to call the service and obtain data is in the `OnInitializedAsync` method. This event fires when the component's initialization is complete and it has received initial parameters but before the page is rendered and displayed to the user. The event is defined on the Blazor component's base class. You can override it in a code block like this one:
+A good place to call the service and obtain data is in the `OnInitializedAsync` method. This event fires when the component's initialization is complete and it has received initial parameters but before the page is rendered and displayed to the user. The event is defined on the Blazor component's base class. You can override it in a code block as in this example:
 
 ```csharp
 protected override async Task OnInitializedAsync()
@@ -137,7 +137,7 @@ The `@if` directive renders the markup in its first code block only if the C# ex
 
 ### Rendering a collection of objects
 
-If Blazor executes the `else` statement in the preceding code, you know that some pizzas were obtained from the service. The next task is to display these pizzas to the user. Let's look at how to display these in a simple HTML table.
+If Blazor executes the `else` statement in the preceding code, you know that some pizzas were obtained from the service. The next task is to display these pizzas to the user. Let's look at how to display the data in a simple HTML table.
 
 We don't know how many pizzas will be available when we code this page. We can use the `@foreach` directive to loop through all the objects in the `todaysPizzas` collection and render a row for each one:
 

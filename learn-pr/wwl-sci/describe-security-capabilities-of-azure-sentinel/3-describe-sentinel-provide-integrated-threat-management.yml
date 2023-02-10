@@ -4,13 +4,11 @@ title: Describe how Microsoft Sentinel provides integrated threat management
 metadata:
   title: Describe how Microsoft Sentinel provides integrated threat management
   description: "Describe how Microsoft Sentinel provides integrated threat management"
-  ms.date: 04/07/2022
+  ms.date: 02/09/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 13
 content: |
   [!include[](includes/3-describe-sentinel-provide-integrated-threat-management.md)]
