@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-secure-access-pipeline-resources.manage-environments
+title: Manage environments
+metadata:
+  title: Manage environments
+  description: "Manage environments."
+  ms.date: 1/25/2023
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-manage-environments.md)]
