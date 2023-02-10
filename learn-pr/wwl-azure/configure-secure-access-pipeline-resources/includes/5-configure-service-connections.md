@@ -1,4 +1,4 @@
-Service connections in Azure DevOps allows you to connect to external services and resources securely. These connections can access databases, third-party APIs, and cloud services. You can automate deployment, testing, and other processes using service connections without storing sensitive information in your codebase.
+Service connections in Azure DevOps allow you to connect to external services and resources securely. These connections can access databases, third-party APIs, and cloud services. You can automate deployment, testing, and other processes using service connections without storing sensitive information in your codebase.
 
 ## Step 1: Creating a Service Connection
 
@@ -15,7 +15,7 @@ To create a service connection, you need to be a Project Administrator or a Proj
 
     ![Screenshot of Azure Pipelines showing how to create a new Service Connection Azure Resource Manager using service principal (automatic).](../media/new-service-connection.png)
 
-## Step 2: Configure Pipeline Permissions to the Service Connection
+## Step 2: Configure pipeline permissions to the Service Connection
 
 1. Go to the Azure DevOps project where the service connection was created.
 2. Click on the Project settings located in the bottom left corner.
@@ -27,7 +27,7 @@ To create a service connection, you need to be a Project Administrator or a Proj
 
     ![Screenshot of Azure Pipelines showing how to add pipeline permissions to the Service Connection.](../media/service-connection-pipeline-permission.png)
 
-## Step 3: Using the Service Connection in a Pipeline
+## Step 3: Using the Service Connection in a pipeline
 
 Once you've created a service connection, you can use it in your pipelines. Here's an example of how you can use a service connection in a YAML pipeline:
 

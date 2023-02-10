@@ -13,7 +13,7 @@ To verify or disable it for your project:
 3. Go to Project Settings, then click on Settings under Pipelines.
 4. Under general, toggle the option Protect access to repositories in YAML pipelines to disable or enable it.
 
-## Step 2: Configuring Pipeline Access to the Repository
+## Step 2: Configuring pipeline access to the repository
 
 Once you confirm your settings, you can configure pipeline access to the repository.
 

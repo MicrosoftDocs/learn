@@ -22,7 +22,7 @@ While an environment is a grouping of resources, the resources represent actual 
     > [!NOTE]
     > Adding resources to the environment is optional. You can create an empty environment and reference it from deployment jobs. This lets you record the deployment history against the environment.
 
-## Step 2: Managing Environments and Security
+## Step 2: Managing Environments and security
 
 1. Go to the Environments page.
 2. Select an environment, such as Development.
@@ -34,7 +34,7 @@ While an environment is a grouping of resources, the resources represent actual 
 
     ![Screenshot of Azure Pipelines showing how to configure environments and add pipeline permissions.](../media/add-pipeline-environment.png)
 
-## Step 3: Using Environments in YAML Pipelines
+## Step 3: Using Environments in YAML pipelines
 
 Here's an example YAML pipeline that deploys an application to the Development environment:
 

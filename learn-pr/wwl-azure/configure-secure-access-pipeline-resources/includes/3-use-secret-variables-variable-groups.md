@@ -6,7 +6,7 @@ You can protect sensitive information throughout the DevOps phases by using secr
 
 In this unit, you'll learn how to create and manage secret variables and variable groups in Azure DevOps and configure permissions and access to protect your secrets.
 
-## Step 1: Creating a Variable Group and Secret Variables
+## Step 1: Creating a Variable Group and secret variables
 
 1. Navigate to the Azure DevOps project where you want to store your secrets.
 2. Go to the Pipelines section and select Library.
@@ -19,7 +19,7 @@ In this unit, you'll learn how to create and manage secret variables and variabl
 
     ![Screenshot of Azure DevOps project Library showing the steps to create a new Variable Group and variable.](../media/new-variable-group.png)
 
-## Step 2: Configuring Permissions and Access
+## Step 2: Configuring permissions and access
 
 1. Navigate to the Azure DevOps project where you want to store your secrets.
 2. Go to the Pipelines section and select Library.
@@ -35,7 +35,7 @@ In this unit, you'll learn how to create and manage secret variables and variabl
 > [!NOTE]
 > For more information about Library security, see: [Library security.](https://learn.microsoft.com/azure/devops/pipelines/library/)
 
-## Step 3: Configuring Pipeline permissions
+## Step 3: Configuring pipeline permissions
 
 You can add pipeline permissions to limit access to secret variables in a variable group and restrict access to pipelines not in the allowed list. Pipeline permissions don't limit access to non-secret variables.
 

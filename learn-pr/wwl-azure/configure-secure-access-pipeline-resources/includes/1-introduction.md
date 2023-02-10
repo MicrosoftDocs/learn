@@ -16,7 +16,7 @@ This module series is designed for the Implement security through a pipeline usi
 
 The course is divided into several modules, each covering a specific topic related to securing pipelines in Azure DevOps. Each module includes lectures, hands-on activities, quizzes, and challenges to help you apply your knowledge and practice what you have learned. At the end of each module, you take a final assessment to evaluate your understanding of the subject.
 
-## Why should I take the Implement security through a pipeline using DevOps learning path?
+## Why should I take the implement security through a pipeline using DevOps learning path?
 
 People in these modules are interested in designing and implementing DevOps processes. Also, they're preparing for the [Implement security through a pipeline using DevOps](about:blank) credential.
 
