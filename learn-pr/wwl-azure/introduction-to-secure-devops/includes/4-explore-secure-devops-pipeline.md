@@ -1,3 +1,4 @@
+
 As previously stated, the goal of a *Secure DevOps* Pipeline is to enable development teams to work fast without introducing unwanted vulnerabilities to their project.
 
 :::image type="content" source="../media/secure-devops-workflow-895bcdec.png" alt-text="Diagram showing Secure DevOps Pipeline. 10 circles are arranged in a continuous circle.":::
