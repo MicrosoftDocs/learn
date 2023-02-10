@@ -10,6 +10,8 @@ In this module, you identified features and usage cases for different Azure back
 
 - Preuse [Azure Site Recovery documentation](/azure/site-recovery/site-recovery-overview).
 
+- Install the [Microsoft Azure Virtual Machine Agent](/azure/virtual-machines/extensions/agent-windows#install-the-vm-agent).
+
 ## Learn more with self-paced training
 
 - Complete an [introduction to Azure Backup](/training/modules/intro-to-azure-backup/).
