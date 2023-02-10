@@ -1432,6 +1432,11 @@ achievements:
   title: Serve the data from Azure Synapse serverless SQL pool
   summary: Learn how to serve and make use of the data that is queried or transformed by Azure Synapse serverless SQL pool.
   iconUrl: /training/achievements/serve-the-data-from-azure-synapse-serverless-sql-pool.svg
+- uid: learn.azure.advanced-modeling-patterns-azure-cosmos-db
+  type: badge
+  title: Optimize databases by using advanced modeling patterns for Azure Cosmos DB
+  summary: Identify strategies for managing relationships between data entities, such as customers and sales data. Improve data-model performance and scaling by pre-aggregating and denormalizing your data. Use change feed to maintain the referential integrity of your data.
+  iconUrl: /training/achievements/advanced-modeling-patterns-azure-cosmos-db.svg
 - uid: learn.az-900-describe-cloud-concepts.trophy
   type: trophy
   title: 'Microsoft Azure Fundamentals: Describe core Azure concepts'

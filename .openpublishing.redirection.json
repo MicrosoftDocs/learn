@@ -9176,6 +9176,61 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "learn-pr/azure/advanced-modeling-patterns-azure-cosmos-db/index.md",
+      "redirect_url": "/training/modules/design-data-partitioning-strategy/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/advanced-modeling-patterns-azure-cosmos-db/1-introduction.md",
+      "redirect_url": "/training/modules/design-data-partitioning-strategy/1-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/advanced-modeling-patterns-azure-cosmos-db/2-denormalizing-data.md",
+      "redirect_url": "/training/modules/design-data-partitioning-strategy/2-denormalize-data-your-model",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/advanced-modeling-patterns-azure-cosmos-db/3-exercise-set-up-environment.md",
+      "redirect_url": "/training/modules/design-data-partitioning-strategy/7-exercise-advanced-modeling-patterns",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/advanced-modeling-patterns-azure-cosmos-db/4-manage-referential-integrity-with-change-feed.md",
+      "redirect_url": "/training/modules/design-data-partitioning-strategy/3-manage-referential-integrity-by-using-change-feed",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/advanced-modeling-patterns-azure-cosmos-db/5-exercise-use-change-feed.md",
+      "redirect_url": "/training/modules/design-data-partitioning-strategy/7-exercise-advanced-modeling-patterns",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/advanced-modeling-patterns-azure-cosmos-db/6-combine-different-entities.md",
+      "redirect_url": "/training/modules/design-data-partitioning-strategy/5-denormalize-aggregates-same-container",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/advanced-modeling-patterns-azure-cosmos-db/7-denormalizing-aggregates.md",
+      "redirect_url": "/training/modules/design-data-partitioning-strategy/5-denormalize-aggregates-same-container",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/advanced-modeling-patterns-azure-cosmos-db/8-exercise-denormalizing-aggregates.md",
+      "redirect_url": "/training/modules/design-data-partitioning-strategy/7-exercise-advanced-modeling-patterns",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/advanced-modeling-patterns-azure-cosmos-db/9-finalize-data-model.md",
+      "redirect_url": "/training/modules/design-data-partitioning-strategy/6-finalize-data-model",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/advanced-modeling-patterns-azure-cosmos-db/10-summary.md",
+      "redirect_url": "/training/modules/design-data-partitioning-strategy/9-summary",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/arm-template-test/2-what-if.md",
       "redirect_url": "/training/modules/arm-template-whatif",
       "redirect_document_id": false
