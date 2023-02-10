@@ -10,7 +10,13 @@ In this module, you identified features and usage cases for different Azure back
 
 - Preuse [Azure Site Recovery documentation](/azure/site-recovery/site-recovery-overview).
 
+- Discover [System Center Data Protection Manager (DPM)](/system-center/dpm/dpm-overview).
+
+- Discover [Microsoft Azure Backup Server (MABS)](/azure/backup/backup-mabs-whats-new-mabs).
+
 - Install the [Microsoft Azure Virtual Machine Agent](/azure/virtual-machines/extensions/agent-windows#install-the-vm-agent).
+
+- Deploy the [System Center DPM (and MABS) protection agent](/system-center/dpm/deploy-dpm-protection-agent).
 
 ## Learn more with self-paced training
 
