@@ -4,7 +4,7 @@ title: Extend peering with user-defined routes and service chaining
 metadata:
   title: Extend peering with user-defined routes and service chaining
   description: "Use a hub and spoke network with user-defined routes and service chaining to extend peering capabilities."
-  ms.date: 02/09/2023
+  ms.date: 02/10/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
