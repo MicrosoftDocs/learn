@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-command-line-tools-intro.intro-to-bicep
+metadata:
+  title: Introduction to Bicep
+  description: Overview of using Bicep to manage and provision Azure resources
+  ms.published: 02/06/2023
+  ms.date: 02/06/2023
+  author: tfitzmac
+  ms.author: tomfitz
+  ms.topic: module-choose-best-product
+  ms.prod: learning-azure
+title: Introduction to Bicep
+durationInMinutes: 3
+content: |
+  [!include[](includes/intro-to-bicep.md)]

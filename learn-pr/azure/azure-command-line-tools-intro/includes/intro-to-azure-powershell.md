@@ -1,0 +1,59 @@
+# Azure PowerShell
+
+Azure PowerShell is a collection of modules for managing Azure resources directly from PowerShell.
+PowerShell provides powerful features for automation that can be leveraged for managing your Azure
+resources.
+
+The Az PowerShell module is based on .NET Standard, and works with PowerShell 7.x or higher on all
+platforms including Windows, Linux, and macOS. It's also compatible with Windows PowerShell 5.1.
+
+You can install the Az PowerShell module locally on Windows, Linux, and macOS. It can also be used
+from a browser through Azure Cloud Shell or inside a Docker container.
+
+
+## Prerequisites
+
+Since your company already uses Azure, you have an active Azure subscription. You're using
+PowerShell in Azure Cloud Shell and you've created a resource group for the Azure storage account
+that you're about to create.
+
+## Create a storage account
+
+A storage account is an Azure resource and is part of a resource group. Storage account names must
+be between 3 and 24 characters in length and may contain numbers and lowercase letters only. Your
+storage account name must be unique within Azure. No two storage accounts can have the same name.
+
+The `Get-AzStorageAccountNameAvailability` cmdlet is used to verify that the name you've chosen for
+your storage account is valid and not already in use.
+
+```azurepowershell
+Get-AzStorageAccountNameAvailability -Name <storage-account-name>
+```
+
+The `New-AzStorageAccount` cmdlet is used to create a new Azure storage account. The mandatory
+parameters include **Name**, **ResourceGroupName**, **Location**, and **SkuName**. The **Kind**
+parameter is optional and defaults to `StorageV2` when not specified.
+
+```azurepowershell
+New-AzStorageAccount -Name <storage-account-name> -ResourceGroupName <resource-group-name> -Location eastus -SkuName Standard_RAGRS
+```
+
+## Verify the storage account
+
+The `Get-AzStorageAccount` cmdlet is used to verify that a storage group exists. There are no
+mandatory parameters. Specify the **ResourceGroupName** parameter to return only storage accounts in
+a specific resource group or the **Name** and **ResourceGroupName** parameters to return only a
+specific storage account.
+
+```azurepowershell
+Get-AzStorageAccount -Name <storage-account-name> -ResourceGroupName <resource-group-name>
+```
+
+## Remove the storage account
+
+The `Remove-AzStorageAccount` cmdlet is used to remove a storage account. The mandatory
+parameters include **Name** and **ResourceGroupName**.
+
+```azurepowershell
+Remove-AzStorageAccount -Name <storage-account-name> -ResourceGroupName <resource-group-name>
+```
