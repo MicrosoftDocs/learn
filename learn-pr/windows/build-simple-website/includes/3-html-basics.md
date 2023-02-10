@@ -126,7 +126,7 @@ You can preview your webpage locally by opening the HTML file in a browser. Inst
    :::image type="content" source="../media/vs-code-open-in-browser.png" alt-text="Screenshot of the Open in Browser context menu item in Visual Studio Code." lightbox="../media/vs-code-open-in-browser.png":::
 
   > [!IMPORTANT]
-  > If you're having trouble, make sure you're directly right-clicking the filename icon or text. If a **Visual Studio Code** dialog appears, select **Yes, I trust the authors**; this is the Workspace Trust feature that lets you decide whether your project folders should allow or restrict automatic code execution. You just created the file, so is is safe.
+  > If you're having trouble, make sure you're directly right-clicking the filename icon or text. If a **Visual Studio Code** dialog appears, select **Yes, I trust the authors**; this is the Workspace Trust feature that lets you decide whether your project folders should allow or restrict automatic code execution. You just created the file, so it's safe.
 
   The webpage opens in your default browser.
 
@@ -140,9 +140,9 @@ You can inspect a webpage by using the developer tools in your browser. Let's gi
 
    - Press <kbd>Ctrl+Shift+I</kbd> on Windows and Linux or <kbd>Option+Command+I</kbd> on a Mac.
 
-   These keyboard shortcuts work in **Microsoft Edge**, **Chrome**, and **Firefox**. If you're using **Safari**, see the [Web Development Tools](https://developer.apple.com/safari/tools/). When installed, select **Safari > Preferences**, and then select **Advanced**. At the bottom of the pane, select the **Show Develop menu in menu bar** checkbox. Select **Develop > Show Web Inspector**. For more information, check the Safari Web Inspector documentation.
+   These keyboard shortcuts work in **Microsoft Edge**, **Chrome**, and **Firefox**. If you're using **Safari**, see the [Web Development Tools](https://developer.apple.com/safari/tools/?azure-portal=true). When installed, select **Safari > Preferences**, and then select **Advanced**. At the bottom of the pane, select the **Show Develop menu in menu bar** checkbox. Select **Develop > Show Web Inspector**. For more information, check the Safari Web Inspector documentation.
 
-   To learn more about opening Developer Tools and the main available features, check out the [Overview of DevTools article](/microsoft-edge/devtools-guide-chromium/overview).
+   To learn more about opening Developer Tools and the main available features, check out the [Overview of DevTools article](/microsoft-edge/devtools-guide-chromium/overview?azure-portal=true).
 
 1. Select the **Elements** tab.
 

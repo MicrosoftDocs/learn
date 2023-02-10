@@ -1,3 +1,4 @@
+
 Applications that integrate with the Microsoft identity platform follow an authorization model that gives users and administrators control over how data can be accessed.
 
 The Microsoft identity platform implements the [OAuth 2.0](/azure/active-directory/develop/active-directory-v2-protocols) authorization protocol. OAuth 2.0 is a method through which a third-party app can access web-hosted resources on behalf of a user. Any web-hosted resource that integrates with the Microsoft identity platform has a resource identifier, or *application ID URI*.
@@ -19,11 +20,11 @@ An app most commonly requests these permissions by specifying the scopes in requ
 
 ## Permission types
 
-The Microsoft identity platform supports two types of permissions: *delegated permissions* and *application permissions*.
+The Microsoft identity platform supports two types of permissions: *delegated permissions* and *app-only access*.
 
 * **Delegated permissions** are used by apps that have a signed-in user present. For these apps, either the user or an administrator consents to the permissions that the app requests. The app is delegated with the permission to act as a signed-in user when it makes calls to the target resource.
 
-* **Application permissions** are used by apps that run without a signed-in user present, for example, apps that run as background services or daemons. Only an administrator can consent to application permissions.
+* **App-only access permissions** are used by apps that run without a signed-in user present, for example, apps that run as background services or daemons. Only an administrator can consent to app-only access permissions.
 
 ## Consent types
 
@@ -45,7 +46,7 @@ While static permissions of the app defined in the Azure portal keep the code ni
 
 With the Microsoft identity platform endpoint, you can ignore the static permissions defined in the app registration information in the Azure portal and request permissions incrementally instead.  You can ask for a minimum set of permissions upfront and request more over time as the customer uses additional app features. 
 
-To do so, you can specify the scopes your app needs at any time by including the new scopes in the `scope` parameter when requesting an access token - without the need to pre-define them in the application registration information. If the user hasn't yet consented to new scopes added to the request, they'll be prompted to consent only to the new permissions. Incremental, or dynamic consent, only applies to delegated permissions and not to application permissions.
+To do so, you can specify the scopes your app needs at any time by including the new scopes in the `scope` parameter when requesting an access token - without the need to pre-define them in the application registration information. If the user hasn't yet consented to new scopes added to the request, they'll be prompted to consent only to the new permissions. Incremental, or dynamic consent, only applies to delegated permissions and not to app-only access permissions.
 
 > [!IMPORTANT]
 > Dynamic consent can be convenient, but presents a big challenge for permissions that require admin consent, since the admin consent experience doesn't know about those permissions at consent time. If you require admin privileged permissions or if your app uses dynamic consent, you must register all of the permissions in the Azure portal (not just the subset of permissions that require admin consent). This enables tenant admins to consent on behalf of all their users.
