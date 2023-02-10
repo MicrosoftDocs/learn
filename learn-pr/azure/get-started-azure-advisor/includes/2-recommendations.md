@@ -2,7 +2,7 @@ Let's get started by going to your Azure account on the Azure portal.
 
 ## Where can I find Advisor?
 
-Advisor is available on the [Azure portal](https://portal.azure.com/?azure-portal=true). Here are a couple different ways you can get to it:
+Advisor is available on the [Azure portal](https://portal.azure.com/?azure-portal=true). Here's a couple of different ways you can get to it:
 
 - Select **Advisor** from the left pane of the portal.
 
@@ -103,6 +103,6 @@ After you select a linked description for a recommendation, a window opens showi
 
 - You can select a linked **Recommended action** and another page opens that lets you take the necessary steps to resolve the issue.
 - If you'd prefer to handle the recommendation at a later time, you can select **Postpone**. Advisor removes it from the list, but will recommend it again if the issue hasn't been resolved.
-- If you know that you don't want to resolve that issue, you can just select **Dismiss** and Advisor will remove it from the list and will no longer show it as a recommendation for that resource. You can always revisit your dismissed recommendations in the **Postponed & Dismissed** tab under any of your recommendations.
+- If you know that you don't want to resolve that issue, you can just select **Dismiss**, and Advisor removes it from the list and no longer shows it as a recommendation for that resource. You can always revisit your dismissed recommendations in the **Postponed & Dismissed** tab under any of your recommendations.
 
    :::image type="content" source="../media/azure-advisor-vm-resize-postpone-dismiss.png" alt-text="Screenshot showing how to find Advisor by using search." lightbox="../media/azure-advisor-vm-resize-postpone-dismiss.png":::
