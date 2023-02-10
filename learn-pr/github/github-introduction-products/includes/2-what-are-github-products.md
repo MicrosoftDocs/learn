@@ -26,14 +26,14 @@ Here's a breakdown of the features included with GitHub Free:
 - Unlimited public/private repositories
 - 2,000 Actions automation minutes/month (_Free for public repositories_)
 - 500 MB of Packages storage (_Free for public repositories_)
-- New Issues & Projects (in limited beta)
+- 120 core-hours Codespaces compute/month
+- 15 GB of Codespaces storage/month
+- New issues & projects (in limited beta)
 - GitHub Community Support
 - Dependabot alerts
 - Two-factor authentication enforcement
-- 2,000 GitHub Actions minutes (_Number of free minutes for private repositories_)
-- 500 MB of GitHub Packages storage (_Amount of free storage for private repositories_)
 
-For a more comprehensive list of features, refer to [GitHub's pricing page](https://github.com/pricing?azure-portal=true).
+For a more comprehensive description of features and available add-ons, refer to [GitHub's pricing page](https://github.com/pricing?azure-portal=true).
 
 #### GitHub Free for organizations
 
@@ -62,6 +62,8 @@ In addition, GitHub Pro increases the limits of GitHub Actions and GitHub Packag
 |---|---|
 | GitHub Actions minutes | 3000 |
 | GitHub Packages storage | 2 GB |
+| GitHub Codespaces core-hours | 180 |
+| GitHub Codespaces storage | 20 GB | 
 
 > [!NOTE]
 > GitHub Pro doesn't show up on the pricing page, but is available as an upgrade to personal user accounts once the user is logged in. If the account already belongs to an organization, GitHub Pro will not be available, instead GitHub Team will show as an available upgrade.
@@ -76,11 +78,11 @@ GitHub Team is the version of GitHub Pro for teams instead of personal accounts.
 
 ### GitHub Enterprise
 
-GitHub Enterprise can be hosted on-premises or in the cloud using GitHub's existing infrastructure. GitHub Enterprise accounts enjoy a greater level of support and extra security, compliance, and deployment controls.
+GitHub Enterprise can be hosted on-premises (GitHub Enterprise Server) or in the cloud (GitHub Enterprise Cloud) using GitHub's existing infrastructure. GitHub Enterprise accounts enjoy a greater level of support and extra security, compliance, and deployment controls.
 
 You can create one or more *enterprise accounts* by signing up for the paid GitHub Enterprise product. When you create an enterprise account, you're assigned the role of *enterprise owner*.  As an enterprise owner, you can add and remove organizations to and from the enterprise account. You can manage other administrators, enforce security policies across organizations, and so on.
 
-With GitHub Enterprise (GHE), you get GitHub Enterprise Support and a greater integration with existing on-premises or cloud services. For example, you can synchronize your authentication with SAML to enable single sign-on by using your existing configurations stored in Active Directory Federation Services or Azure Active Directory.  Alternatively, you can provision access to other services by using SAML or SCIM as the identity provider. You can also use GitHub Connect to share certain features and data between your GitHub Enterprise Server instance, your GitHub Enterprise Cloud organization, or your enterprise account on GitHub.com.
+With GitHub Enterprise, you get GitHub Enterprise Support and a greater integration with existing on-premises or cloud services. For example, you can synchronize your authentication with SAML to enable single sign-on by using your existing configurations stored in Active Directory Federation Services or Azure Active Directory.  Alternatively, you can provision access to other services by using SAML or SCIM as the identity provider. You can also use GitHub Connect to share certain features and data between your GitHub Enterprise Server instance, your GitHub Enterprise Cloud organization, or your enterprise account on GitHub.com.
 
 In addition to the features available with GitHub Team, GitHub Enterprise includes:
 

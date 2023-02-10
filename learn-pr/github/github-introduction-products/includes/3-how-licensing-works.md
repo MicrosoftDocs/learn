@@ -47,12 +47,11 @@ At the end of the month, GitHub calculates the cost of minutes and storage used 
 > [!NOTE]
 > For a specific scenario that demonstrates how your bill is calculated with actual dollar amounts, see [calculating minute and storage spending](https://docs.github.com/billing/managing-billing-for-github-actions/about-billing-for-github-actions#calculating-minute-and-storage-spending) in GitHub Docs.
 
-
 ### What are spending limits?
 
 By default, your account will have a spending limit of $0 for GitHub Actions usage. To enable using minutes and storage for private repositories beyond the amounts included with your account, you can increase the spending limit or allow unlimited spending.
 
-If you pay for your enterprise account by invoice, you can't manage the spending limit for your enterprise account on GitHub. If you want to allow organizations owned by your enterprise account to use GitHub Actions beyond the storage or data transfer included in their accounts, you can prepay for overages. Because overages must be prepaid, you can't enable unlimited spending on accounts paid by invoice. Your spending limit will be 150% of the amount you prepaid.
+If you pay for your enterprise account by invoice, your account will have an unlimited default spending limit and you will be billed for overages.
 
 If your account has outstanding unpaid charges:
 
