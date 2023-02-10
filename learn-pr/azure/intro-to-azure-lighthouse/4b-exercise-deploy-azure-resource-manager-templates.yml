@@ -3,8 +3,8 @@ uid: learn.intro-to-azure-lighthouse.4b-exercise-deploy-azure-resource-manager-t
 title: Exercise - Deploy Azure Resource Manager templates
 metadata:
   title: Exercise - Deploy Azure Resource Manager templates
-  description: In this exercise, you will deploy the Azure Resource Manager templates
-  ms.date: 04/08/2021
+  description: In this exercise, you'll deploy the Azure Resource Manager templates
+  ms.date: 02/09/2023
   author: SCuffy
   ms.author: socuff
   ms.topic: interactive-tutorial

@@ -1631,6 +1631,76 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/student-evangelism/train-package-module-iot-edge/index.md",
+      "redirect_url": "/training/paths/ai-edge-engineer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/train-package-module-iot-edge/1-introduction.md",
+      "redirect_url": "/training/paths/ai-edge-engineer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/train-package-module-iot-edge/2-how-create-deploy-azure-ml-modules.md",
+      "redirect_url": "/training/paths/ai-edge-engineer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/train-package-module-iot-edge/3-exercise-create-deploy-azure-ml-module.md",
+      "redirect_url": "/training/paths/ai-edge-engineer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/train-package-module-iot-edge/4-how-view-container-repository.md",
+      "redirect_url": "/training/paths/ai-edge-engineer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/train-package-module-iot-edge/5-exercise-view-container-repository.md",
+      "redirect_url": "/training/paths/ai-edge-engineer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/train-package-module-iot-edge/6-how-view-generated-data.md",
+      "redirect_url": "/training/paths/ai-edge-engineer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/train-package-module-iot-edge/7-exercise-view-generated-data.md",
+      "redirect_url": "/training/paths/ai-edge-engineer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/train-package-module-iot-edge/8-clean-up-resources.md",
+      "redirect_url": "/training/paths/ai-edge-engineer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/train-package-module-iot-edge/9-knowledge-check.md",
+      "redirect_url": "/training/paths/ai-edge-engineer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/train-package-module-iot-edge/10-summary.md",
+      "redirect_url": "/training/paths/ai-edge-engineer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/train-package-module-iot-edge/11-what-is-virtual-machine.md",
+      "redirect_url": "/training/paths/ai-edge-engineer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/train-package-module-iot-edge/12-how-setup-communication.md",
+      "redirect_url": "/training/paths/ai-edge-engineer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/train-package-module-iot-edge/13-exercise-setup-communication.md",
+      "redirect_url": "/training/paths/ai-edge-engineer",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/commercial-marketplace/intro-commercial-marketplace/intro-commercial-marketplace/1-introduction.md",
       "redirect_url": "/training/modules/intro-commercial-marketplace/1-introduction",
       "redirect_document_id": false
@@ -9174,6 +9244,61 @@
       "source_path": "learn-pr/student-evangelism/web-development-101/accessibility/7-summary.md",
       "redirect_url": "/training/modules/web-development-101-accessibility/7-summary",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/advanced-modeling-patterns-azure-cosmos-db/index.md",
+      "redirect_url": "/training/modules/design-data-partitioning-strategy/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/advanced-modeling-patterns-azure-cosmos-db/1-introduction.md",
+      "redirect_url": "/training/modules/design-data-partitioning-strategy/1-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/advanced-modeling-patterns-azure-cosmos-db/2-denormalizing-data.md",
+      "redirect_url": "/training/modules/design-data-partitioning-strategy/2-denormalize-data-your-model",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/advanced-modeling-patterns-azure-cosmos-db/3-exercise-set-up-environment.md",
+      "redirect_url": "/training/modules/design-data-partitioning-strategy/7-exercise-advanced-modeling-patterns",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/advanced-modeling-patterns-azure-cosmos-db/4-manage-referential-integrity-with-change-feed.md",
+      "redirect_url": "/training/modules/design-data-partitioning-strategy/3-manage-referential-integrity-by-using-change-feed",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/advanced-modeling-patterns-azure-cosmos-db/5-exercise-use-change-feed.md",
+      "redirect_url": "/training/modules/design-data-partitioning-strategy/7-exercise-advanced-modeling-patterns",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/advanced-modeling-patterns-azure-cosmos-db/6-combine-different-entities.md",
+      "redirect_url": "/training/modules/design-data-partitioning-strategy/5-denormalize-aggregates-same-container",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/advanced-modeling-patterns-azure-cosmos-db/7-denormalizing-aggregates.md",
+      "redirect_url": "/training/modules/design-data-partitioning-strategy/5-denormalize-aggregates-same-container",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/advanced-modeling-patterns-azure-cosmos-db/8-exercise-denormalizing-aggregates.md",
+      "redirect_url": "/training/modules/design-data-partitioning-strategy/7-exercise-advanced-modeling-patterns",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/advanced-modeling-patterns-azure-cosmos-db/9-finalize-data-model.md",
+      "redirect_url": "/training/modules/design-data-partitioning-strategy/6-finalize-data-model",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/advanced-modeling-patterns-azure-cosmos-db/10-summary.md",
+      "redirect_url": "/training/modules/design-data-partitioning-strategy/9-summary",
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/arm-template-test/2-what-if.md",
@@ -19883,6 +20008,51 @@
     {
       "source_path": "learn-pr/paths/az-900-describe-cloud-concepts/index.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/model-partition-data-azure-cosmos-db/index.md",
+      "redirect_url": "/training/modules/implement-non-relational-data-model/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/model-partition-data-azure-cosmos-db/1-introduction.md",
+      "redirect_url": "/training/modules/implement-non-relational-data-model/1-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/model-partition-data-azure-cosmos-db/2-nosql-versus-relational.md",
+      "redirect_url": "/training/modules/implement-non-relational-data-model/2-whats-difference-between-nosql-relational-databases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/model-partition-data-azure-cosmos-db/3-identify-access-patterns.md",
+      "redirect_url": "/training/modules/implement-non-relational-data-model/3-identify-access-patterns-for-your-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/model-partition-data-azure-cosmos-db/4-embed-or-reference-data.md",
+      "redirect_url": "/training/modules/implement-non-relational-data-model/4-when-to-embed-reference-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/model-partition-data-azure-cosmos-db/5-exercise-measure-performance.md",
+      "redirect_url": "/training/modules/implement-non-relational-data-model/5-exercise-measure-performance-for-customer-entities",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/model-partition-data-azure-cosmos-db/6-choosing-a-partition-key.md",
+      "redirect_url": "/training/modules/implement-non-relational-data-model/6-choose-partition-key",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/model-partition-data-azure-cosmos-db/7-modeling-small-lookup-tables.md",
+      "redirect_url": "/training/modules/implement-non-relational-data-model/7-model-small-lookup-entities",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/model-partition-data-azure-cosmos-db/8-summary.md",
+      "redirect_url": "/training/modules/implement-non-relational-data-model/9-summary",
       "redirect_document_id": false
     },
     {
