@@ -1,53 +1,8 @@
-This table summarizes the Azure Backup (MARS) agent and the Azure Backup Server usage cases.
+The are advantages and limits to using the different Azure backup options. In this section, we compare the Microsoft Azure Recovery Services (MARS) backup agent and Microsoft Azure Backup Server.
 
-:::row:::
-  :::column:::
-    **Component**
-  :::column-end:::
-  :::column:::
-    **Benefits**
-  :::column-end:::
-  :::column:::
-    **Limits**
-  :::column-end:::
-  :::column:::
-    **What is protected?**
-  :::column-end:::
-  :::column:::
-    **Where are backups stored?**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Azure Backup (MARS) agent
-  :::column-end:::
-  :::column:::
-    Backup files and folders on physical or virtual Windows OS; no separate backup server required
-  :::column-end:::
-  :::column:::
-    Backup 3x per day; not application aware; file, folder, and volume-level restore only; no support for Linux
-  :::column-end:::
-  :::column:::
-    Files and folders
-  :::column-end:::
-  :::column:::
-    Recovery services vault
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Azure Backup Server (MABS)
-  :::column-end:::
-  :::column:::
-    App aware snapshots; full flex for when to backups; recovery granularity; linux support on Hyper-V and VMware VMs; backup and restore VMware VMs, doesn't require a System Center license
-  :::column-end:::
-  :::column:::
-    Cannot backup Oracle workloads; always requires live Azure subscription; no support for tape backup
-  :::column-end:::
-  :::column:::
-    Files, folders, volumes, VMs, applications, and workloads
-  :::column-end:::
-  :::column:::
-    Recovery services vault, locally attached disk
-  :::column-end:::
-:::row-end:::
+The following table summarizes features and restrictions, and identifies what data is protected by the backup, and where the backups are stored in the configuration.
+
+| Azure backup option | Features and benefits | Limits and restrictions | What data is protected? | Where are backups stored? |
+| --- | --- | --- | --- | --- 
+| **MARS backup agent** | - Back up files and folders on physical or virtual machines running Windows <br> - No separate backup server required | - Backups triggered 3x per day <br> - Not application aware <br> - File, folder, and volume-level restore only <br> - No support for Linux | Files and folders | Azure Recovery Services vault |
+| **Azure Backup Server** | - App-aware snapshots <br> - Full flexibility for when to trigger backups <br> - Recovery granularity <br> - Linux support on Hyper-V and VMware virtual machines <br> - Back up and restore VMware virtual machines <br> - No System Center license required | - Always requires an active Azure subscription <br> - No backups for Oracle workloads <br> - No support for tape backup | Files, folders, volumes, virtual machines, applications, and workloads | Azure Recovery Services vault or locally attached disks |

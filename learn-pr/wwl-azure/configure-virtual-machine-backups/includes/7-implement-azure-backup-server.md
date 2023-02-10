@@ -6,7 +6,7 @@ You can back up your virtual machines and applications to System Center DPM or M
 
 ### Things to know about using System Center DPM or MABS
 
-Let's take a closer look at the configuration details for using System Center DPM or MABS to back up your data.
+Let's examine the configuration details for using System Center DPM or MABS to back up your data.
 
 - When you set up protection for a machine or application by using System Center DPM or MABS, you select to back up to the MABS or DPM local disk for short-term storage, and to Azure for online protection. You specify when to run the backup to the local DPM or MABS storage, and when to run the online backup to Azure.
 
