@@ -2,7 +2,7 @@ Azure Storage now offers the _soft delete_ option for Azure Blob objects. With t
 
 :::image type="content" source="../media/soft-delete-93edca4c.png" alt-text="Flowchart that shows how backup items remain in the soft delete state for 14 days until the item is permanently deleted." border="false":::
 
-Soft delete for virtual machines protects backups of your virtual machines from unintended deletion. Even after the backups are deleted, they're preserved in the soft-delete state for 14 additional days.
+Soft delete for virtual machines protects backups of your virtual machines from unintended deletion. Even after the backups are deleted, they're preserved in the soft-delete state for 14 more days.
 
 > [!Important]
 > Soft delete only protects deleted backup data. If a virtual machine is deleted without a backup, the soft-delete feature won't preserve the data. All resources should be protected with Azure Backup to ensure full resilience.
