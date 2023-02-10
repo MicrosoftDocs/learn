@@ -4,13 +4,11 @@ title: Design a security strategy for privileged activities
 metadata:
   title: Design a security strategy for privileged activities
   description: "Design a security strategy for privileged activities"
-  ms.date: 07/27/2022
+  ms.date: 02/10/2023
   author: wwlpublish
   ms.author: hrasheed
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 10
 content: |
   [!include[](includes/9-design-for-privileged-activities.md)]
