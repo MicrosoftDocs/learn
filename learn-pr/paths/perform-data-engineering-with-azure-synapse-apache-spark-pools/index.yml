@@ -2,17 +2,18 @@
 uid: learn.wwl.perform-data-engineering-with-azure-synapse-apache-spark-pools
 metadata:
   title: Perform data engineering with Azure Synapse Apache Spark Pools
-  description: Perform data engineering with Azure Synapse Apache Spark Pools
-  ms.date: 02/08/2023
+  description: Learn how to use Apache Spark pools in Azure Synapse Analytics for scalable distributed data processing.
+  ms.date: 02/09/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: synapse-analytics
 title: Perform data engineering with Azure Synapse Apache Spark Pools
 prerequisites: |
-  - It is recommended that students have completed Data Fundamentals before starting this learning path.
+  Before starting this learning path, you should be familiar with Azure Synapse Analytics. Consider completing the [Introduction to Azure Synapse Analytics](/training/modules/introduction-azure-synapse-analytics/) module first.
 summary: |
-  Learn how to perform data engineering with Azure Synapse Apache Spark Pools, which enable you to boost the performance of big-data analytic applications by in-memory cluster computing.
+  Apache Spark is a highly scalable distributed processing solution for big data analytics and transformation. You can leverage its power in Azure Synapse Analytics by using Spark pools.
 iconUrl: /learn/achievements/perform-data-engineering-with-azure-synapse-apache-spark-pools.svg
 levels:
 - intermediate
