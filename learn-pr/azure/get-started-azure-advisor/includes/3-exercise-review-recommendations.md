@@ -5,11 +5,10 @@ Now, let's walk through a real-world example to see how Advisor can work in your
 
 1. First, sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true).
 1. Go to your Advisor dashboard by typing "advisor" in the search bar and then selecting **Advisor** from the list of services.
-1. Select **Overview**.
 
    :::image type="content" source="../media/advisor-from-search-bar.png" alt-text="Screenshot showing how to find Advisor by using the search bar." lightbox="../media/advisor-from-search-bar.png":::
 
-   The Advisor dashboard opens, showing personalized recommendations for all your subscriptions. The recommendations are divided into the five categories that you learned about in the previous unit.
+1. Select **Overview**. The Advisor dashboard opens, showing personalized recommendations for all your subscriptions. The recommendations are divided into the five categories that you learned about in the previous unit.
 
 1. You can select any one of the five categories that shows there are recommendations to address. Your dashboard looks different from the following screenshot because Advisor is personalized for you.
 
