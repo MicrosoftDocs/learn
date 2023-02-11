@@ -2,7 +2,7 @@ Let's get started by going to your Azure account on the Azure portal.
 
 ## Where can I find Advisor?
 
-Advisor is available on the [Azure portal](https://portal.azure.com/?azure-portal=true). Here's a couple of different ways you can get to it:
+Advisor is available on the [Azure portal](https://portal.azure.com/?azure-portal=true). Here are a couple of different ways you can get to it:
 
 - Select **Advisor** from the left pane of the portal.
 
