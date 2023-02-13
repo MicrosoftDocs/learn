@@ -1,4 +1,4 @@
-Azure Migrate App Containerization is a standalone utility that you can download and install on any Windows 10 or Windows Server 2016 (or later) machine with network access to your application servers running the Java web app to be containerized and migrated. The tool works by using the running state of the applications on a server to determine the application components and helps you package them in a container image. The containerized application can then be deployed on Azure Kubernetes Service (AKS) or Azure App Service containers. The containerization process doesn’t require access to your codebase and provides an easy way to containerize existing applications.
+Azure Migrate App Containerization is a standalone utility that you can download and install on any Windows 10 or Windows Server 2016 (or later) machine with network access to your application servers running the Java web app that's to be containerized and migrated. The tool works by using the running state of the applications on a server to determine the application components and helps you package them in a container image. The containerized application can then be deployed on Azure Kubernetes Service (AKS) or Azure App Service containers. The containerization process doesn’t require access to your codebase and provides an easy way to containerize existing applications.
 
 The tool currently supports containerization and migration of following Java web applications:
 
@@ -14,4 +14,4 @@ Azure Migrate: App Containerization helps you:
 
 ![App Containerization process overview](../media/process-overview.png)
 
-In the next sections of this module, you'll setup a sample two-tier Java web application and use Azure Migrate App Containerization to containerize and migrate the application to AKS. 
+In the subsequent sections of this module, you'll set up a sample two-tier Java web application and use Azure Migrate: App Containerization to containerize and migrate the application to AKS. 

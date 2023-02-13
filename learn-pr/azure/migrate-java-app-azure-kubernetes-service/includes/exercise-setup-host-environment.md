@@ -1,4 +1,4 @@
-For this module, we will try to containerize and migrate the Airsonic application. Airsonic is a free, web-based music streaming application. We will deploy Airsonic in a two-tier configuration with the application front end running on Apache Tomcat on a Linux server and the application backend running on Azure Database for MySQL.
+For this module, we try to containerize and migrate the Airsonic application. Airsonic is a free, web-based music streaming application. We deploy Airsonic in a two-tier configuration with the application front-end running on Apache Tomcat on a Linux server and the application backend running on Azure Database for MySQL.
 
 ## Prepare your Azure account
 
@@ -21,7 +21,7 @@ If you just created a free Azure account, you're the owner of your subscription.
 
    :::image type="content" source="../media/azure-account-access.png" alt-text="Search for a user account to check access and assign a role.":::
 
-6. In **Add role assignment**, select the Owner role, and select the account (azmigrateuser in our example). Then click **Save**.
+6. In **Add role assignment**, select the Owner role, and select the account (azmigrateuser in our example). Then select **Save**.
 
     :::image type="content" source="../media/assign-role.png" alt-text="Screenshot of the Add Role assignment page to assign a role to the account.":::
 
@@ -45,7 +45,7 @@ If you just created a free Azure account, you're the owner of your subscription.
     ./scripts/deploy.sh 'westus2' 'LearnAppContainerization'
     ```
 
-4. Once the deployment is complete, you will see the following resources in your resource group. 
+4. Once the deployment is complete, you see the following resources in your resource group. 
 
    :::image type="content" source="../media/source-environment-deployed.png" alt-text="Screenshot of two-tier Java web application deployed for workshop.":::
 
@@ -54,13 +54,13 @@ If you just created a free Azure account, you're the owner of your subscription.
 
     :::image type="content" source="../media/source-app.png" alt-text="Screenshot of Java web application to be containerized and migrated.":::
 
-6. You can log in to the application using the following credentials. 
+6. You can sign in to the application using the following credentials. 
     - Username: admin
     - Password: admin
 
 ## Download and install Azure Migrate: App Containerization tool
 
-1. In your resource group, select **tomcatMigrate-toolclient** virtual machine resource and log in to it using bastion. Use **adminuser** as the username and **Password@123** for password. You'll be using this machine to run the Azure Migrate: App Containerization tool to migrate the Java web application hosted on *TomcatServer*.
+1. In your resource group, select **tomcatMigrate-toolclient** virtual machine resource and sign in to it using bastion. Use **adminuser** as the username and **Password@123** for password. Use this machine to run the Azure Migrate: App Containerization tool to migrate the Java web application hosted on *TomcatServer*.
 2. After logging in, [download](https://go.microsoft.com/fwlink/?linkid=2134571) the Azure Migrate: App Containerization installer on the Windows machine.
 3. Launch PowerShell in administrator mode and run the following commands to install the tool.
 
