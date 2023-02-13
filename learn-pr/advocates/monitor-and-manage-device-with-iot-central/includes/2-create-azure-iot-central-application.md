@@ -1,12 +1,12 @@
 Azure IoT Central applications can be customized for each case.
 
-In the IoT enabled coffee machines example, there will be one application to monitor and manage your devices spread around the world.
+In the IoT enabled coffee machines example, you have one application to monitor and manage your devices spread around the world.
 
-You'll begin by creating an IoT Central custom application that defines the data and commands to be exchanged with the IoT device.
+You begin by creating an IoT Central custom application that defines the data and commands to be exchanged with the IoT device.
 
 ## Create the Coffee Maker application
 
-To create an IoT Central application you will need an Azure Subscription. In this section we will activate the Azure sandbox, sign in to Azure IoT Central and create a new custom application using a standard pricing plan. Your personal subscription will not be charged. All resources created in the sandbox are free for use in this module.
+To create an IoT Central application, you need an Azure Subscription. In this section we activate the Azure sandbox, sign in to Azure IoT Central and create a new custom application using a standard pricing plan. Your personal subscription isn't charged. All resources created in the sandbox are free for use in this module.
 
 1. Start by **activating the Azure sandbox above**.
 
