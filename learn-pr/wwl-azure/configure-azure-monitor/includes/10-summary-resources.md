@@ -6,9 +6,13 @@ In this module, you identified the features and usage cases for Azure Monitor. Y
 
 - Peruse [Azure Monitor documentation](/azure/azure-monitor/).
 
-- Read about [Azure Monitor Logs](/azure/azure-monitor/logs/data-platform-logs).
+- Explore [Azure Monitor Metrics](/azure/azure-monitor/essentials/data-platform-metrics) and [Azure Monitor Logs](/azure/azure-monitor/logs/data-platform-logs).
+
+- Discover [Azure Monitor Insights](/azure/azure-monitor/insights/insights-overview).
 
 - Read about [Log Analytics in Azure Monitor](/azure/azure-monitor/logs/log-analytics-overview).
+
+- Get started with [metrics explorer in Azure Monitor](/azure/azure-monitor/essentials/metrics-getting-started).
 
 - Get started with [log queries in Azure Monitor](/azure/azure-monitor/logs/get-started-queries).
 
