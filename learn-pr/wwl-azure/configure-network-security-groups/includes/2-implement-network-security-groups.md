@@ -24,8 +24,6 @@ You can assign network security groups to a subnet and create a protected screen
 
 - Each subnet can have a maximum of one associated network security group.
 
-- A subnet can have no associated network security group.
-
 #### Network security groups and network interfaces
 
 You can assign network security groups to a network interface card (NIC).
