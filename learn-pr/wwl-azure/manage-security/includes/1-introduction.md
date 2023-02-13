@@ -1,3 +1,5 @@
+
+
 The Windows client for Azure Virtual Desktop integrates Azure Virtual Desktop with your local machine. However, when you configure your Azure Virtual Desktop account into the Windows client, there are certain actions you'll need to take to keep your users safe.
 
 This module aligns with the exam AZ-140: Configuring and Operating Microsoft Azure Virtual Desktop.
