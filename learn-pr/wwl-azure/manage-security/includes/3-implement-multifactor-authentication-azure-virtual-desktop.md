@@ -1,3 +1,5 @@
+
+
 The Windows client for Azure Virtual Desktop integrates Azure Virtual Desktop with your local machine. However, when you configure your Azure Virtual Desktop account into the Windows client, there are certain actions you'll need to take to keep your users safe.
 
 When you first sign in, the client asks for your username and password. The next time you sign in, the client will remember your token from your Azure Active Directory (AD) Enterprise Application. When they select **Remember me** on the prompt for credentials for the session host, your users can sign in after restarting the client without needing to reenter their credentials.
