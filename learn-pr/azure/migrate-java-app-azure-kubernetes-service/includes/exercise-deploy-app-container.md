@@ -1,12 +1,12 @@
 Once the container image is built, the next step is to deploy the application as a container on AKS.
 
-AKS simplifies deploying a managed Kubernetes cluster in Azure by offloading the operational overhead to Azure. As a hosted Kubernetes service, Azure handles critical tasks, like health monitoring and maintenance. Since Kubernetes masters are managed by Azure, you only manage and maintain the agent nodes. 
+AKS simplifies deploying a managed Kubernetes cluster in Azure by offloading the operational overhead to Azure. As a hosted Kubernetes service, Azure handles critical tasks like health monitoring and maintenance. Since Kubernetes masters are managed by Azure, you only manage and maintain the agent nodes. 
 
 ## **Create the Azure Kubernetes Service Cluster** 
 
-The tool provides an option to select an existing AKS cluster but for this exercise we will create a new AKS cluster. 
+The tool provides an option to select an existing AKS cluster but for this exercise, we will create a new AKS cluster. 
 
-1. Click **Create new AKS cluster**.  
+1. Select **Create new AKS cluster**.  
 2. Select the Azure subscription you want to work with. 
 3. Select the **LearnAppContainerization** resource group.
 4. Specify the AKS cluster name as **LearnAppContainerizationAKSCluster**.
@@ -25,16 +25,16 @@ Since you had opted to parameterize application configurations (database connect
 
 To monitor the containerized Java web application, we'll need to create a new Application Insights resource.
 
-1. Select the option to **create new Azure Application Insights** and specify the name as **learnappcontainerizationappinsight**. The tool will create the resource and the configuration will be performed automatically during deployment. 
+1. Select the option to Create new Azure Application Insights and specify the name as **learnappcontainerizationappinsight**. The tool will create the resource and configure it automatically during deployment. 
 
 ## **Specify Azure file share** 
 
 If you had added more folders and selected the Persistent Volume option, then specify the Azure file share that should be used by Azure Migrate: App Containerization tool during the deployment process. The tool will create new directories in this Azure file share to copy over the application folders that are configured for Persistent Volume storage. Once the application deployment is complete, the tool will clean up the Azure file share by deleting the directories it had created. 
 
-1. Select the option to **create new Storage Account and Azure file share**. 
+1. Select the option to **Create new Storage Account and Azure file share**. 
 2. Specify a name for storage account and select the location and SKU for the storage account. 
 3. Specify the Azure file share name as **learnappcontainerizationfileshare**. 
-4. Click **create**.
+4. Select **Create**.
 
 ## **Application deployment configuration** 
 
@@ -42,7 +42,7 @@ Once you've completed the steps above, you'll need to specify the deployment con
 
 1. **Prefix string**: Specify a prefix string to use in the name for all resources that are created for the containerized application in the AKS cluster. Use **airsonictest** as the prefix string for this exercise.
 2. **Number of replicas**: Specify the number of application instances (pods) that should run inside the containers. Use the value **1**.
-3. **Load balancer type**: Select **external** so that the containerized application is reachable from public networks.
+3. **Load balancer type**: Select **External** so that the containerized application is reachable from public networks.
 4. **Application Configuration**: For application configurations that were parameterized, use the following value for the current deployment. 
     - Navigate to the *LearnAppContainerization* resource group [Azure portal](https://portal.azure.com). 
     - Copy the name of the MySQL server. The MySQL server will name will be in the following format - "airsonic-mysql-server-0000000000". 
@@ -54,7 +54,7 @@ Once you've completed the steps above, you'll need to specify the deployment con
 5. Click **Apply** to save the deployment configuration.
 6. Click **Continue** to deploy the application.
 
-    ![Screenshot for deployment app configuration.](../media/deploy-java-app-config.png)
+   :::image type="content" source="../media/deploy-java-app-config.png" alt-text="Screenshot for deployment app configuration.":::
 
 ## **Deploy the application** 
 
