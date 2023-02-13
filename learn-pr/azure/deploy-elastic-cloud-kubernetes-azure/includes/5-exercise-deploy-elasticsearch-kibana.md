@@ -1,6 +1,12 @@
-Elastic Stack provides tools, including Elasticsearch and Kibana, to help you search, analyze, monitor, and secure your apps and IT. Recall that in the Tailwind Traders scenario, you have been asked to deploy Elastic Cloud on Kubernetes on AKS. Here, you will deploy a three-node Elasticsearch cluster and two instances of Kibana leveraging Azure Cloud Shell.
+Elastic Stack provides tools, including Elasticsearch and Kibana, to help you search, analyze, monitor, and secure your apps and IT. Recall that in the Tailwind Traders scenario, you've been asked to deploy Elastic Cloud on Kubernetes on AKS. Here, you'll deploy a three-node Elasticsearch cluster and two instances of Kibana by using Azure Cloud Shell.
 
-1. Create an elasticsearch.yaml configuration file with the following content.
+1. Enter the following command in Azure Cloud Shell to create a new configuration file.
+
+    ```bash
+    code elasticsearch.yaml
+    ```
+
+1. Add the following content to the configuration file.
 
     ```yml
     apiVersion: elasticsearch.k8s.elastic.co/v1
@@ -16,7 +22,7 @@ Elastic Stack provides tools, including Elasticsearch and Kibana, to help you se
           node.store.allow_mmap: false
     ```
 
-1. Save the changes to elasticsearch.yaml and run the following command in Azure Cloud Shell:
+1. Save the changes to elasticsearch.yaml and run the following command:
 
     ```bash
     kubectl apply -f elasticsearch.yaml
@@ -56,7 +62,7 @@ Elastic Stack provides tools, including Elasticsearch and Kibana, to help you se
 
     :::image type="content" source="../media/curl-output.png" alt-text="A screenshot of information about the cluster nodes.":::
 
-1. Create kibana.yaml file with the following content:
+1. Create a kibana.yaml file with the following content:
 
     ```yml
     apiVersion: kibana.k8s.elastic.co/v1
@@ -82,17 +88,17 @@ Elastic Stack provides tools, including Elasticsearch and Kibana, to help you se
 
 1. You can use `watch kubectl get kibana` command to see the status of Kibana deployment. Once the health of the deployment turns green, stop the `watch` command and run `kubectl get service quickstart-kb-http` to get details for Kibana.
 
-1. Copy the EXTERNAL-IP from the output and open `https://<EXTERNAL-IP>:5601`. **Caution**: Since we are using self-signed certificates for this tutorial you should see a “Your connection isn’t private” message in the browser. Please use valid certificates for any production deployments. Please refer to the TLS certificates section for more details.
+1. Copy the EXTERNAL-IP from the output and open `https://<EXTERNAL-IP>:5601`. **Caution**: Since we're using self-signed certificates for this tutorial, you should see a “Your connection isn’t private” message in the browser. Use valid certificates for any production deployments. Refer to the TLS certificates section for more details.
 
-1. Select Advanced and proceed to the Kibana Login page. Use the ***elastic*** user to log in.
+1. Select Advanced and proceed to the Kibana sign-in page. Use the ***elastic*** user to sign in.
 
-1. On Azure Cloud Shell, run the following command to get the password for the elastic user and use the value to log in to the Kibana Login page in the browser.
+1. On Azure Cloud Shell, run the following command to get the password for the elastic user and use the value to sign in to the Kibana sign-in page in the browser.
 
     ```bash
     kubectl get secret quickstart-es-elastic-user -o go-template='{{.data.elastic | base64decode}}'    
     ```
 
-    :::image type="content" source="../media/elastic-login-dialog.png" alt-text="A screenshot of the Elastic login page.":::
+    :::image type="content" source="../media/elastic-login-dialog.png" alt-text="A screenshot of the Elastic sign-in page.":::
 
     :::image type="content" source="../media/elastic-welcome-screen.png" alt-text="A screenshot of the Elastic welcome screen and button to add data.":::
 

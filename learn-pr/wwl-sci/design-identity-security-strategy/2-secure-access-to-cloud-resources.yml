@@ -4,13 +4,11 @@ title: Secure access to cloud resources
 metadata:
   title: Secure access to cloud resources
   description: "Secure access to cloud resources"
-  ms.date: 07/27/2022
+  ms.date: 02/10/2023
   author: wwlpublish
   ms.author: hrasheed
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 10
 content: |
   [!include[](includes/2-secure-access-to-cloud-resources.md)]

@@ -1,30 +1,22 @@
-You can protect your data by taking backups at regular intervals. There are several backup options available for VMs, depending on your use-case.
+You can protect your data by taking backups at regular intervals. Azure provides several backup options for virtual machines to support different scenarios and configuration requirements.
 
-:::image type="content" source="../media/virtual-machine-data-protection-9f5c2a78.png" alt-text="Snapshots, azure backup, and azure site recovery.":::
+### Things to know about backup options for virtual machines 
 
+Let's examine four options for backing up your virtual machines: Azure Backup, Azure Site Recovery, and Azure managed disks snapshots and images. The following table summarizes these options and provides scenarios for using the different methods. As you review these options, think about which method can support the requirements for the business scenario presented in this module.
 
-## Azure Backup
+| **Azure backup option** | **Configuration scenarios** | **Description** | 
+| --- | --- | --- |
+| **Azure Backup** | _Back up Azure virtual machines running production workloads_ <br><br> _Create application-consistent backups for both Windows and Linux virtual machines_ | Azure Backup takes a snapshot of your virtual machine and stores the data as recovery points in geo-redundant recovery vaults. When you restore from a recovery point, you can restore your entire virtual machine or specific files only. | 
+| **Azure Site Recovery** |_Quickly and easily recover specific applications_ <br><br> _Replicate to the Azure region of your choice_ | Azure Site Recovery protects your virtual machines from a major disaster scenario when a whole region experiences an outage due to a major natural disaster or widespread service interruption. | 
+| **Azure managed disks - snapshot** | _Quickly and easily back up your virtual machines that use Azure managed disks at any point in time_ <br><br> _Support development and test environments_ | An Azure managed disks snapshot is a read-only full copy of a managed disk that's stored as a standard managed disk by default. A snapshot exists independent of the source disk and can be used to create new managed disks. Each snapshot is billed based on the actual size used. If you create a snapshot of a managed disk with a capacity of 64 GB that's used only 10 GB, you're billed for 10 GB. | 
+| **Azure managed disks - image** | _Create an image from your custom VHD in an Azure storage account or directly from a generalized (via Sysprep) virtual machine_ <br><br> _Create hundreds of virtual machines by using your custom image without copying or managing any storage account_ | Azure managed disks also support creating a managed custom image. This process captures a single image that contains all managed disks associated with a virtual machine, including both the operating system and data disks. | 
 
-For backing up Azure VMs running production workloads, use Azure Backup. Azure Backup supports application-consistent backups for both Windows and Linux VMs. Azure Backup creates recovery points that are stored in geo-redundant recovery vaults. When you restore from a recovery point, you can restore the whole VM or just specific files.
+### Things to consider when creating images versus snapshots
 
-## Azure Site Recovery
+It's important to understand the differences and benefits of creating an image and a snapshot backup of an Azure managed disk.
 
-Azure Site Recovery protects your VMs from a major disaster scenario when a whole region experiences an outage due to major natural disaster or widespread service interruption. You can configure Azure Site Recovery for your VMs so that you can recover your application with a single click in matter of minutes. You can replicate to an Azure region of your choice.
+- **Consider images**. With Azure managed disks, you can take an image of a generalized virtual machine that's been deallocated. The image includes all of the disks attached to the virtual machine. You can use the image to create a virtual machine that includes all of the disks.
 
-## Managed disk snapshots
+- **Consider snapshots**. A snapshot is a copy of a disk at the point in time the snapshot is taken. The snapshot applies to one disk only, and doesn't have awareness of any disk other than the one it contains. Snapshot backups are problematic for configurations that require the coordination of multiple disks, such as striping. In this case, the snapshots need to coordinate with each other, but this functionality isn't currently supported.
 
-In development and test environments, snapshots provide a quick and simple option for backing up VMs that use Managed Disks. A managed disk snapshot is a read-only full copy of a managed disk that is stored as a standard managed disk by default. With snapshots, you can back up your managed disks at any point in time. These snapshots exist independent of the source disk and can be used to create new managed disks. They are billed based on the used size. For example, if you create a snapshot of a managed disk with provisioned capacity of 64 GiB and actual used data size of 10 GiB, that snapshot is billed only for the used data size of 10 GiB.
-
-## Images
-
-Managed disks also support creating a managed custom image. You can create an image from your custom VHD in a storage account or directly from a generalized (sysprepped) VM. This process captures a single image. This image contains all managed disks associated with a VM, including both the OS and data disks. This managed custom image enables creating hundreds of VMs using your custom image without the need to copy or manage any storage accounts.
-
-## Images versus snapshots
-
-It's important to understand the difference between images and snapshots. With managed disks, you can take an image of a generalized VM that has been deallocated. This image includes all of the disks attached to the VM. You can use this image to create a VM, and it includes all of the disks.
-
- -  A snapshot is a copy of a disk at the point in time the snapshot is taken. It applies only to one disk. If you have a VM that has one disk (the OS disk), you can take a snapshot or an image of it and create a VM from either the snapshot or the image.
- -  A snapshot doesn't have awareness of any disk except the one it contains. This makes it problematic to use in scenarios that require the coordination of multiple disks, such as striping. Snapshots would need to be able to coordinate with each other and this is currently not supported.
-
-> [!NOTE]
-> Have you tried any of these backup methods? Do you have a backup plan?
+- **Consider operating disk backups**. If you have a virtual machine with only one disk (the operating system disk), you can take a snapshot or an image of the disk. You can create a virtual machine from either a snapshot or an image.

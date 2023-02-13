@@ -1,42 +1,31 @@
-[Azure Security Benchmark](/security/benchmark/azure/introduction) is the Microsoft-authored, Azure-specific set of guidelines for security and compliance best practices based on common compliance frameworks. This widely respected benchmark builds on the controls from the Center for Internet Security (CIS) and the National Institute of Standards and Technology (NIST) with a focus on cloud-centric security. Customers use the ASB as a comprehensive control framework to help meet all their security requirements. The Benchmark is implemented as an Azure Policy initiative implementing monitoring for all of these guidelines.
+**Azure Security Benchmark (ASB)** is the Microsoft-authored, Azure-specific set of guidelines for security and compliance best practices based on common compliance frameworks. This widely respected benchmark builds on the controls from the Center for Internet Security (CIS) and the National Institute of Standards and Technology (NIST) with a focus on cloud-centric security. Customers use the Azure Security Benchmark (ASB) as a comprehensive control framework to help meet all their security requirements. The Benchmark is implemented as an Azure Policy initiative implementing monitoring for all of these guidelines.<br>
 
-Azure Security Benchmark is the foundation for Security Center’s recommendations and has been fully integrated as the default policy initiative. This means that ALL ASC customers automatically get the ASB as their default security policy, and the ASB is positioned as the singular set of security best practices in Azure, aligned with Secure Score.
+Azure Security Benchmark is the foundation for Security Center’s recommendations and has been fully integrated as the default policy initiative. This means that ALL Azure Security Customers (SCs) automatically get the ASB as their default security policy, and the ASB is positioned as the singular set of security best practices in Azure, aligned with Secure Score.<br>
 
-## Working with security policy in Microsoft Defender for Cloud
+## What are security policies, initiatives<br>
 
-By default, all prevention policies are turned on. Prevention policies and recommendations are tied to each other. In other words, if you enable a prevention policy, such as OS vulnerabilities, that enables recommendations for that policy. In most situations, you want to enable all policies even though some might be more important to you than others, depending on the Azure resource you’ve deployed.
+Microsoft Defender for Cloud applies security initiatives to your subscriptions. These initiatives contain one or more security policies. Each of those policies results in a security recommendation for improving your security posture. This page explains each of these ideas in detail.
 
-Security Center automatically creates a default security policy for each of your Azure subscriptions. You can edit Azure policies:
+## What is a security policy?
 
- -  Create new policy definitions.
- -  Assign policies across management groups and subscriptions, which can represent an entire organization or a business unit within the organization.
- -  Monitor policy compliance.
+An Azure Policy definition, created in Azure Policy, is a rule about specific security conditions you want to be controlled. Built-in definitions include things like controlling what type of resources can be deployed or enforcing the use of tags on all resources. You can also create your own custom policy definitions.
 
-An Azure policy consists of the following components:
+To implement these policy definitions (whether built-in or custom), you'll need to assign them. You can assign any of these policies through the Azure portal, PowerShell, or Azure CLI. Policies can be disabled or enabled from Azure Policy.
 
- -  A **policy** is a rule.
- -  An **initiative** is a collection of policies.
- -  An **assignment** is the application of an initiative or a policy to a specific scope (management group, subscription, or resource group).
+There are different types of policies in Azure Policy. Defender for Cloud mainly uses 'Audit' policies that check specific conditions and configurations and then report on compliance. There are also "Enforce' policies that can be used to apply security settings.
 
-The following is a generated list of the types of recommendations. The recommendations help provide full visibility into the security health of your environment.
+## What is a security initiative?
 
-:::image type="content" source="../media/az500-azure-security-center-policies-0df21527.png" alt-text="Screenshot that depicts recommendations turned on.":::
+A security initiative is a collection of Azure Policy definitions or rules that are grouped together towards a specific goal or purpose. Security initiatives simplify the management of your policies by grouping a set of policies together, logically, as a single item.
 
+A security initiative defines the desired configuration of your workloads and helps ensure you're complying with the security requirements of your company or regulators.
 
- -  **System updates**. Retrieves a daily list of available security updates and critical updates from Windows Update or Windows Server Update Services (WSUS).
- -  **OS vulnerabilities**. Analyzes OS configurations daily to determine issues that might make the VM vulnerable to attack.
- -  **Endpoint protection**. Recommends endpoint protection to be provisioned for all Windows VMs to help identify and remove viruses, spyware, and other malicious software.
- -  **Disk encryption**. Recommends enabling disk encryption in all VMs to enhance data protection at rest.
- -  **Network security groups**. Recommends that NSGs be configured to control inbound and outbound traffic to VMs that have public endpoints. In addition to checking that an NSG has been configured, this policy assesses inbound security rules.
- -  **Web application firewall**. Extends network protections beyond NSGs, which are built in to Azure. Security Center will discover deployments for which a next generation firewall is recommended and allow you to provision a virtual appliance.
- -  **Next Generation firewall**. Microsoft Defender for Cloud may recommend that you add a partner’s next generation firewall (NGFW) from a Microsoft partner to increase your security protections.
- -  **Vulnerability Assessment**. Recommends that you install a vulnerability assessment solution on your VM.
- -  **SQL auditing &amp; Threat detection**. Recommends that you enable the auditing of access to Azure SQL Database for compliance and advanced threat detection—for investigation purposes.
- -  **SQL Encryption**. Recommends that you enable encryption at rest for your Azure SQL database, associated backups, and transaction log files. This helps prevent your data from being readable even if it’s breached.
+Like security policies, Defender for Cloud initiatives are also created in Azure Policy. You can use **Azure Policy** to manage your policies, build initiatives, and assign initiatives to multiple subscriptions or entire management groups.
 
-### Who can edit security policies?
+The default initiative automatically assigned to every subscription in Microsoft Defender for Cloud is the Microsoft cloud security benchmark. This benchmark is the Microsoft-authored set of guidelines for security and compliance best practices based on common compliance frameworks. This widely respected benchmark builds on the controls from the Center for Internet Security (CIS) and the National Institute of Standards and Technology (NIST) with a focus on cloud-centric security.
 
-Security Center uses Role-Based Access Control (RBAC), which provides built-in roles that can be assigned to users, groups, and services in Azure. When users open Security Center, they can only view information that's related to resources they have access to. Which means that users are assigned the role of owner, contributor, or reader to the subscription or resource group that a resource belongs to. In addition to these roles, there are two specific Security Center roles:
+Defender for Cloud offers the following options for working with security initiatives and policies:
 
- -  Security reader: Have view rights to Security Center, which includes recommendations, alerts, policy, and health, but they can't make changes.
- -  Security admin: Have the same view rights as security reader, and they can also update the security policy and dismiss recommendations and alerts.
+ -  **View and edit the built-in default initiative** \- When you enable Defender for Cloud, the initiative named 'Microsoft cloud security benchmark' is automatically assigned to all Defender for Cloud registered subscriptions. To customize this initiative, you can enable or disable individual policies within it by editing a policy's parameters.
+ -  **Add your own custom initiatives** \- If you want to customize the security initiatives applied to your subscription, you can do so within Defender for Cloud. You'll then receive recommendations if your machines don't follow the policies you create.
+ -  **Add regulatory compliance standards as initiatives** \- Defender for Cloud's regulatory compliance dashboard shows the status of all the assessments within your environment in the context of a particular standard or regulation (such as Azure Center for Internet Security (CIS), National Institute of Standards and Technology (NIST) Special Publications (SP) SP 800-53 Rev.4, Swift’s Customer Security Program (CSP) Call Session Control Function (CSCF) v2020).

@@ -1,3 +1,4 @@
+
 Microsoft’s products and services run on trust. At Microsoft, we value, protect, and defend privacy. We believe in transparency, so that people and organizations can control their data and have meaningful choices in how it's used. We empower and defend the privacy choices of every person who uses our products and services.
 
 Microsoft's approach to privacy is built on the following six principles:
