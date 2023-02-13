@@ -1,3 +1,4 @@
+
 **Authorization** covers what an identity can access and what are they allowed to do once they gain access. Identity authorization provides:
 
 - Methods of assigning entitlement allowing for increased security and less administration

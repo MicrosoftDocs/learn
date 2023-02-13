@@ -2,8 +2,8 @@
 uid: learn.wwl.azure-active-directory
 metadata:
   title: Secure Azure solutions with Azure Active Directory
-  description: "Secure Azure solutions with Azure Active Directory"
-  ms.date: 01/18/2023
+  description: "Explore how to securely configure and administer your Azure Active Directory instance."
+  ms.date: 02/02/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial

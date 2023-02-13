@@ -1,3 +1,4 @@
+
 ## Exercise: Threat detection with Microsoft Sentinel Analytics
 
 As a security engineer working for Contoso, you recently noticed that a significant number of VMs has been deleted from your Azure subscription. You want to analyze this  occurrence and be alerted when a similar activity occurs in the future. You decide to implement an analytics rule to create an incident when someone deletes an existing VM.
@@ -60,7 +61,7 @@ In this exercise, you'll explore a Microsoft Sentinel analytics rule and perform
 ### Task 2: Invoke an incident and review the associated actions
 
 1. In the Azure portal, select **Home** and in the **Search** omnibox, enter **virtual machines**, and then select **Enter**.
-2. On the **Virtual machines** page, locate and select the **simple-vm** virtual machine that you created in the resource group for this exercise, and then on the header bar, select **Delete**. In the **Delete virtual machine** prompt select **Yes**.
+2. On the **Virtual machines** page, locate and select the **simple-vm** virtual machine that you created in the resource group for this exercise, and then on the header bar, select **Delete**. In the Delete virtual machine prompt, select **Yes**.
 3. In the **Delete virtual machine** prompt, select **OK** to delete the virtual machine.
 
 > [!Note]
@@ -102,3 +103,4 @@ After you've finished with the exercise, you should delete resources to avoid in
 1. Select **azure-sentinel-rg**.
 1. On the header bar, select **Delete resource group**.
 1. In the **TYPE THE RESOURCE GROUP NAME:** field, enter the name of the resource group **azure-sentinel-rg** and select **Delete**.
+

@@ -3,7 +3,7 @@ uid: learn.languages.csharp-switch-case
 metadata:
   title: 'Branch the flow of code using the switch-case construct in C#'
   description: Learn how to add branching logic that matches one variable or expression against many possible values.
-  ms.date: 08/26/2022
+  ms.date: 01/27/2023
   author: billwagner
   ms.author: wiwagn
   ms.topic: interactive-tutorial
@@ -11,7 +11,7 @@ metadata:
 title: Branch the flow of code using the switch-case construct in C#
 summary: Learn how to add branching logic that matches one variable or expression against many possible values.
 abstract: |
-  In this module, you will:
+  In this module, you'll:
   - Use the `switch-case` construct to match a variable or expression against several possible outcomes.
   - Convert code that uses an `if-elseif-else` construct into a `switch-case` construct.
 prerequisites: |

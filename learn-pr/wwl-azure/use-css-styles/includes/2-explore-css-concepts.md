@@ -1,6 +1,6 @@
 ## CSS Structure
 
-If you want your HTML page to display all text between the `h1` tags with the color orange, you could use the CSS code below.
+If you want your HTML page to display all text between the `h1` tags with the color orange, you could use the CSS code that follows.
 
 ```css
 h1 {
@@ -21,7 +21,7 @@ Your sample declaration contains a **property**, `color`, which is separated fro
 
 A quick way to add style information is to place it within the `head` tags of your HTML page by using a `style` attribute. This method isn't considered the best practice, but is OK to use for learning and testing.  
 
-The example below adds the `<style>` tag with styling information for any `h1` to display gray. Since that is the only styling, the rest of the HTML displays with the browser's default styling.
+The example that follows adds the `<style>` tag with styling information for any `h1` to display gray. Since that is the only styling, the rest of the HTML displays with the browser's default styling.
 
 ```html
 <!DOCTYPE html>
@@ -55,7 +55,7 @@ When you add styles to Hypertext Markup Language (HTML), it's best to do your st
 
 To reference the CSS file, you use the `link` element.
 
-`link` has two attributes, `rel` and `href`. `rel` is used to identify the resource type you are referencing, **style sheet** for style sheets. `href` is used to identify the path to the CSS file. If your CSS file was in the same folder as your HTML file and had the name **style.css**, you could use the following to reference it from your page:
+`link` has two attributes, `rel` and `href`. `rel` is used to identify the resource type you're referencing, **style sheet** for style sheets. `href` is used to identify the path to the CSS file. If your CSS file was in the same folder as your HTML file and had the name **style.css**, you could use the following to reference it from your page:
 
 ```html
 <link rel="stylesheet" href="style.css">

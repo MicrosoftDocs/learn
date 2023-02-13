@@ -3,9 +3,9 @@ uid: learn.wwl.read-text-computer-vision
 metadata:
   title: Read text with the Computer Vision service
   description: "Read text with the Computer Vision service"
-  ms.date: 10/18/2022
+  ms.date: 01/27/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: sheryang
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Read text with the Computer Vision service

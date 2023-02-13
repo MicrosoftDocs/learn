@@ -2,10 +2,10 @@
 uid: learn.arm-template-whatif
 metadata:
   title: Preview Azure deployment changes by using what-if
-  description: Apply the what-if command to see the impact of a deployment before it's applied. 
+  description: Apply the what-if command to see the impact of a deployment before it's applied.
   ms.date: 05/20/2021
-  author: softchris
-  ms.author: chnoring
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen

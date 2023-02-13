@@ -15,7 +15,7 @@ This module will help you to plan the migration of the [PetClinic](https://githu
 
 After completing this module, you'll be able to:
 
- -  Explain the microservice architecture pattern and services of the [PetClinic](https://github.com/spring-petclinic/spring-petclinic-microservices) sample app.
+ -  Explain the microservice architecture pattern and services of the [lab starter branch of the GitHub repo hosting the Spring Petclinic application code](https://github.com/Azure-Samples/spring-petclinic-microservices/tree/labstarter) and review the README.md file.
  -  Understand the infrastructure services hosted by Azure Spring Apps.
  -  Understand the multiple microservices running the Petclinic sample application.
  -  Plan the Azure services used for storing the data for the Petclinic sample application.

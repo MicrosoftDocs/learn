@@ -1,3 +1,4 @@
+
 In addition to using built-in templates to create a customized workbook, you can also create custom workbooks from the beginning to produce highly interactive reports that contains, texts, analytic queries, metrics, and parameters.
 
 ## Create a custom workbook
@@ -61,7 +62,7 @@ On the header bar, there are several fields that provide you options to tune the
 |Size|Use this option to choose the size of the visualization element.|
 |Color palette|Use this option to choose specific series colors in chart settings.|
 
-On the **Advanced Settings** tab, you can provide additional customization for the settings and the styles of your query step. On the **Advanced Settings** tab, you can modify properties in the following two tabs:
+On the **Advanced Settings** tab, you can provide more customization for the settings and the styles of your query step. On the **Advanced Settings** tab, you can modify properties in the following two tabs:
 
 - **Settings** tab. Use this tab to provide values that affect how the step will appear.
 - **Style** tab. Use this tab to set the values that affect how this step will appear.
@@ -70,7 +71,7 @@ For example, on the **Settings** tab, you can enter the **Chart title**, as the 
 
 :::image type="content" source="../media/06-advanced-settings.png" alt-text="Screenshot of the Advanced settings tab, with the chart title, Total number of Security Alerts." border="true":::
 
-You can use the **Style** tab to adjust the margin and padding element in the step. After you are done customizing the settings and styles, remember to save the step by selecting **Done Editing**.
+You can use the **Style** tab to adjust the margin and padding element in the step. After you're done customizing the settings and styles, remember to save the step by selecting **Done Editing**.
 
 ## Chart visualizations
 
@@ -139,4 +140,4 @@ You can add a new tab by selecting **TABS** from the **Style** drop-down menu on
 
 ## Metric steps
 
-You can use metric steps to combine the results of the workbook with metrics from different Azure resources. After you are done making all your custom modifications to your workbook, remember to save the workbook by selecting **Done Editing**.
+You can use metric steps to combine the results of the workbook with metrics from different Azure resources. After you're done making all your custom modifications to your workbook, remember to save the workbook by selecting **Done Editing**.

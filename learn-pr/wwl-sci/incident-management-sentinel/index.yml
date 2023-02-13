@@ -2,10 +2,10 @@
 uid: learn.azure.incident-management-sentinel
 metadata:
   title: Security incident management in Microsoft Sentinel
-  description: Security incident management in Microsoft Sentinel
-  ms.date: 12/15/2020
-  author: cwatson-cat
-  ms.author: cwatson
+  description: "Security incident management in Microsoft Sentinel"
+  ms.date: 01/26/2023
+  author: wwlpublish
+  ms.author: kelawson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Security incident management in Microsoft Sentinel
@@ -22,13 +22,14 @@ prerequisites: |
   - Basic knowledge of Microsoft Sentinel rules
 iconUrl: /training/achievements/incident-management-sentinel.svg
 levels:
-- beginner
+- intermediate
 roles:
-- solution-architect
+- security-operations-analyst
 products:
 - azure
-- azure-sentinel
+- microsoft-sentinel
 subjects:
+- cloud-security
 - security
 units:
 - learn.azure.incident-management-sentinel.1-introduction

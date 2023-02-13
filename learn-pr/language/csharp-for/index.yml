@@ -3,7 +3,7 @@ uid: learn.languages.csharp-for
 metadata:
   title: 'Iterate through a code block using for statement in C#'
   description: Use the `for` iteration statement to loop a pre-set number of times and control the iteration process.
-  ms.date: 08/29/2022
+  ms.date: 01/31/2023
   author: billwagner
   ms.author: wiwagn
   ms.topic: interactive-tutorial
@@ -11,12 +11,12 @@ metadata:
 title: Iterate through a code block using for statement in C#
 summary: Use the `for` iteration statement to loop a pre-set number of times and control the iteration process.
 abstract: |
-  In this module, you will:
+  In this module, you'll:
   - Use the `for` statement to loop through a block of code.
-  - Modify how the .NET Runtime executes the looping logic, changing the value of the iterator, the condition and the pattern.
+  - Modify how the .NET Runtime executes the looping logic, changing the value of the iterator, the condition, and the pattern.
 prerequisites: |
-  - Experience with the `foreach` iteration statement.
-  - Experience working with variables.
+  - Experience with the `foreach` iteration statement
+  - Experience working with variables
 ratingEnabled: true
 iconUrl: /training/achievements/csharp-for.svg
 levels:

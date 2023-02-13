@@ -6,7 +6,7 @@ When we want to display their title, we need to evaluate the numeric level and r
 
 There are several levels and matching titles. Occasionally, the company adds new levels and titles. If this happens before we can update our application, we need to use a generic title "Associate" until we can update our software.
 
-In this scenario, we could easily use an `if-elseif-else` branching construct. But if there are many possible levels and titles, the `switch` statement might be easier to read, understand, and modify.
+In this scenario, we could easily use an `if-elseif-else` branching construct. However, if there are many possible levels and titles, the `switch` statement might be easier to read, understand, and modify.
 
 In this module, you'll use the `switch-case` construct to add branching logic where you must match one variable or expression against many possible values.
 

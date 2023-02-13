@@ -1,19 +1,19 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.threat-response-sentinel-playbooks.4-playbook-trigger
+title: Trigger a playbook in real-time
 metadata:
   title: Trigger a playbook in real-time
-  description: Explain how to trigger a playbook in real time.
-  ms.date: 12/17/2020
-  author: cwatson-cat
-  ms.author: cwatson
+  description: "Explain how to trigger a playbook in real time."
+  ms.date: 01/25/2023
+  author: wwlpublish
+  ms.author: kelawson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Trigger a playbook in real-time
 durationInMinutes: 12
 content: |
   [!include[](includes/4-playbook-trigger.md)]
 quiz:
-  title: Check your knowledge
+  title: "Check your knowledge"
   questions:
   - content: "What is dynamic content in a logic app?"
     choices:

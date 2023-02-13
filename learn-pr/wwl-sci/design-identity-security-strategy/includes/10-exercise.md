@@ -1,3 +1,4 @@
+
 ## Case Study: Design an identity security solution
 
 Tailwind Traders is a fictitious home improvement retailer. It operates

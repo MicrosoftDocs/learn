@@ -28,7 +28,7 @@ When you run the preceding code, you get the following output:
 0
 ```
 
-Even though you declared an array, you don't get an error when you access its elements. By default, Go initializes each element with the default data type. In this case, the default value for `int` is zero. But you can assign a value to a specific position. That's why you see `a[1] = 10`. And, you can access that element by using the same notation. Also, notice that to print out the first element, we used `a[0]`. To print out the last one, we used `a[len(a)-1]`. The `len` function is a built-in function in Go to get the number of elements in an array, slice, or map.
+Even though you declared an array, you don't get an error when you access its elements. By default, Go initializes each element with the default data type. In this case, the default value for `int` is zero. But you can assign a value to a specific position, as we did with `a[1] = 10`. And, you can access that element by using the same notation. Also, notice that to reference the first element, we used `a[0]`. To reference the last element, we used `a[len(a)-1]`. The `len` function is a built-in function in Go to get the number of elements in an array, slice, or map.
 
 ## Initialize arrays
 
@@ -51,11 +51,11 @@ Run the preceding code, and you should see this output:
 Cities: [New York Paris Berlin Madrid ]
 ```
 
-Even though the array should have five elements, we don't need to assign a value to all elements. As we've seen before, the latest position has an empty string because it's the default value for a string data type.
+Even though the array should have five elements, we don't need to assign a value to all elements. As we've seen before, the last position has an empty string because it's the default value for a string data type.
 
 ## Ellipsis in arrays
 
-Another way of declaring and initializing an array when you don't know how many positions you'll need, but you know how many data you'll have, is to use an ellipsis (`...`), like this example:
+Another way of declaring and initializing an array when you don't know how many positions you'll need, but you know the set of data elements, is to use an ellipsis (`...`), like this example:
 
 ```go
 q := [...]int{1, 2, 3}
@@ -82,7 +82,7 @@ Cities: [New York Paris Berlin Madrid]
 
 Can you see the difference? There's no empty string at the end. The array length was determined by the strings you put when you initialized it. You're not reserving memory you don't know if you'll end up needing.
 
-Another interesting way of initializing an array is to use an ellipsis and only specify a value for the latest position. For instance, use the following code:
+Another interesting way of initializing an array is to use an ellipsis and only specify a value for the last position. For instance, use the following code:
 
 ```go
 package main
@@ -105,7 +105,7 @@ Last Position: -1
 Length: 100
 ```
 
-Notice how the array length is 100 because you specified a value for the 99th position. The first position prints out the default value (zero).
+Notice how the array length is 100 because you specified a value for the 99th position. The first position prints the default value (zero).
 
 ## Multidimensional arrays
 
@@ -138,7 +138,7 @@ Row 2 [3 6 9 12 15]
 All at once: [[1 2 3 4 5] [2 4 6 8 10] [3 6 9 12 15]]
 ```
 
-You've declared a two-dimensional array that specifies how many positions the array would have in the second dimension, like this `var twoD [3][5]int`. You could think about this array as one data structure with columns and rows, like a spreadsheet or a matrix. At this point, all positions have a default value of zero. In the `for` loop, we're initializing every position with a different value pattern at every row. Finally, you print out all its values to the terminal.
+You've declared a two-dimensional array that specifies how many positions the array would have in the second dimension, like this `var twoD [3][5]int`. You could think about this array as one data structure with columns and rows, like a spreadsheet or a matrix. At this point, all positions have a default value of zero. In the `for` loop, we're initializing every position with a different value pattern at every row. Finally, you print all of its values to the terminal.
 
 What if you want to declare a three-dimensional array? Well, you might guess what the syntax would be, right? You can do it like this example:
 
