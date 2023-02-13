@@ -20417,32 +20417,32 @@
     },
     {
       "source_path": "learn-pr/advocates/monitor-and-manage-device-with-iot-central/1-create-azure-iot-central-application.md",
-      "redirect_url": "/training/modules/monitor-and-manage-device-with-iot-central/create-azure-iot-central-application",
+      "redirect_url": "/training/modules/monitor-and-manage-device-with-iot-central/2-create-azure-iot-central-application",
       "redirect_document_id": true
     },
     {
       "source_path": "learn-pr/advocates/monitor-and-manage-device-with-iot-central/2-define-coffee-machine-with-device-template.md",
-      "redirect_url": "/training/modules/monitor-and-manage-device-with-iot-central/define-coffee-machine-device-template",
+      "redirect_url": "/training/modules/monitor-and-manage-device-with-iot-central/3-define-coffee-machine-device-template",
       "redirect_document_id": true
     },
     {
       "source_path": "learn-pr/advocates/monitor-and-manage-device-with-iot-central/3-connect-your-application-to-simulator.md",
-      "redirect_url": "/training/modules/monitor-and-manage-device-with-iot-central/connect-your-application-to-simulator",
+      "redirect_url": "/training/modules/monitor-and-manage-device-with-iot-central/5-connect-your-application-to-simulator",
       "redirect_document_id": true
     },
     {
       "source_path": "learn-pr/advocates/monitor-and-manage-device-with-iot-central/4-validate-your-connection.md",
-      "redirect_url": "/training/modules/monitor-and-manage-device-with-iot-central/validate-your-connection",
+      "redirect_url": "/training/modules/monitor-and-manage-device-with-iot-central/6-validate-your-connection",
       "redirect_document_id": true
     },
     {
       "source_path": "learn-pr/advocates/monitor-and-manage-device-with-iot-central/5-configure-rules-and-actions.md",
-      "redirect_url": "/training/modules/monitor-and-manage-device-with-iot-central/configure-rules-and-actions",
+      "redirect_url": "/training/modules/monitor-and-manage-device-with-iot-central/7-configure-rules-and-actions",
       "redirect_document_id": true
     },
     {
       "source_path": "learn-pr/advocates/monitor-and-manage-device-with-iot-central/6-knowledge-check.md",
-      "redirect_url": "/training/modules/monitor-and-manage-device-with-iot-central/knowledge-check",
+      "redirect_url": "/training/modules/monitor-and-manage-device-with-iot-central/8-knowledge-check",
       "redirect_document_id": true
     }
   ]
