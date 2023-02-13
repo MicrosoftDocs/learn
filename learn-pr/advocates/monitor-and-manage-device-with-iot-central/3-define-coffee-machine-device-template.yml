@@ -19,7 +19,7 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: "How many telemetry capabilities are defined in the Connected Coffee Maker device model?"
+  - content: "How many telemetry capabilities are defined in the Connected Coffee Maker model?"
     choices:
     - content: "Two: Water Temperature and Air Humidity."
       isCorrect: false
