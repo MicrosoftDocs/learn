@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-virtual-machine-backups.protect-data
-title: Protect virtual machine data
+title: Explore options to protect virtual machine data
 metadata:
-  title: Protect virtual machine data
-  description: "Protect virtual machine data"
-  ms.date: 11/01/2022
+  title: Explore options to protect virtual machine data
+  description: "Explore Azure options for backing up your virtual machines and protecting your data."
+  ms.date: 02/10/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
