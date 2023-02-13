@@ -8,7 +8,7 @@ In this exercise, we'll use the Azure Migrate: App Containerization tool to disc
    :::image type="content" source="../media/tool-home.png" alt-text="Screenshot for default load-up of App Containerization tool.":::
 
 3. Accept the license terms and read the third-party information.
-4. The tool automatically checks for internet connectivity and install the latest version of the Azure Migrate: App Containerization tool.  
+4. The tool automatically checks for internet connectivity and installs the latest version of the Azure Migrate: App Containerization tool.  
 5. The tool informs you to enable SSH on the application server which was done as part of the setup. Select **Continue**.
 
 

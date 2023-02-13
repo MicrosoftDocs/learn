@@ -25,7 +25,7 @@ Since you had opted to parameterize application configurations (database connect
 
 To monitor the containerized Java web application, we'll need to create a new Application Insights resource.
 
-1. Select the option to Create new Azure Application Insights and specify the name as **learnappcontainerizationappinsight**. The tool creates the resource and configure it automatically during deployment. 
+1. Select the option to Create new Azure Application Insights and specify the name as **learnappcontainerizationappinsight**. The tool creates the resource and configures it automatically during deployment. 
 
 ## **Specify Azure file share** 
 
