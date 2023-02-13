@@ -9,7 +9,7 @@ metadata:
   ms.reviewer: adchukwu
   manager: lizross
   ms.custom: engagement-fy23
-  ms.topic: interactive-tutorial
+  ms.topic: module-build-your-first
   ms.prod: learning-azure
 title: Monitor and manage your coffee machine with Azure IoT Central
 summary: Create an Azure IoT Central custom application to monitor telemetry, observe the state of the coffee machine simulator, send commands and configure rules for maintenance notifications.
