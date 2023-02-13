@@ -1,3 +1,4 @@
+
 Today, developers don't hesitate to use components available in public package sources (such as npm or NuGet).
 
 With faster delivery and better productivity, open-source software (OSS) components are encouraged across many organizations.

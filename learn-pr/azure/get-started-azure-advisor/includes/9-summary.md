@@ -5,7 +5,7 @@ In this module, you've learned how Advisor provides you with recommendations bas
 - **Cost:** such as reporting idle or under-used services that can be deleted or downsized to save money
 - **Security:** such as recommending multi-factor authentication settings for your users
 - **Reliability:** such as recommending redundancy to keep your applications up and running
-- **Operational Excellence:** such as providing your service health status, which can impact your applications
+- **Operational Excellence:** such as providing your service health status, which can affect your applications
 - **Performance:** such as scaling applications or upgrading resources to get better performance
 
 You've learned through step-by-step examples how Advisor gives you *actionable* recommendations. The Advisor dashboard makes the application of its recommendations quick and easy. And lastly you've seen how you can use Advisor Score as a way to set target goals for optimizing your workloads and then track your progress over time.
@@ -15,4 +15,4 @@ You've learned through step-by-step examples how Advisor gives you *actionable* 
 - Read a more detailed [Overview of Azure Advisor](/azure/advisor/advisor-overview?azure-portal=true).
 - Learn more about the [Azure Well-Architected Framework](/azure/architecture/framework?azure-portal=true).
 - Review a comprehensive guide on [Getting started with Azure Advisor](/azure/advisor/advisor-get-started?azure-portal=true).
-- Understand everything there is to know about [Advisor Score](/azure/advisor/azure-advisor-score?azure-portal=true).
+- Learn how to [Optimize Azure workloads by using Advisor score](/azure/advisor/azure-advisor-score?azure-portal=true).
