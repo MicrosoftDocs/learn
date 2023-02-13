@@ -1,4 +1,4 @@
-The societal implications of AI and the responsibility of leaders to anticipate and mitigate unintended consequences of AI technology are significant. Considering this responsibility, governments are finding the need to establish governing practices to guide their AI efforts, whether they are deploying third-party AI solutions or developing their own. This is especially relevant in government scenarios that can affect a huge number of stakeholders.
+The societal implications of AI and the responsibility of leaders to anticipate and mitigate unintended consequences of AI technology are significant. Considering this responsibility, governments are finding the need to establish governing practices to guide their AI efforts, whether they are deploying third-party AI solutions or developing their own. This is especially relevant in government scenarios that can affect large numbers of stakeholders.
 
 Now that you have reviewed this module, you should be able to:
 

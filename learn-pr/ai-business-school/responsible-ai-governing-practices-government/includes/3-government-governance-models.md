@@ -1,5 +1,3 @@
-## Abstract
-
 As discussed previously, each organization will have its own guiding principles for responsible AI. But ultimately, those principles need to be part of a larger strategy to be effective.
 
 Businesses and government agencies alike are using their guiding principles as a foundation for a system of internal oversight, or “governance,” that provides guardrails for their AI solutions. Here, we’ll share a few examples of how governments around the world are approaching AI governance.

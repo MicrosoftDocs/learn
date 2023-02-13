@@ -1,5 +1,3 @@
-## Introduction
-
 The promise of AI is that the knowledge gained from applying analytics and machine learning to the wealth of data that is available today will enhance any decision-making process with additional intelligence, leading to better outcomes and transforming lives. Recent research from McKinsey estimates that AI can boost global GDP by $13 trillion by 2030, which is about 16% cumulative growth or 1.2% additional GDP growth per year.<sup>4</sup> United Nations agencies have embraced AI as an accelerator for realizing the 2030 Sustainable Development Goals.
 
 As AI plays an increasing role in mediating people’s lives online and offline, appropriate design, deployment, economic, and social choices are essential to ensuring that AI systems deserve the trust of individuals and society at large. The starting point for creating trust in AI is to take a human-centered approach, with system choices that are grounded in universal, timeless values – that are also shared by relevant stakeholders from industry, government, civil society, and the research community.
