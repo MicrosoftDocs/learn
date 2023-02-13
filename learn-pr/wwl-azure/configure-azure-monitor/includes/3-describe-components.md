@@ -12,7 +12,7 @@ Let's take a look at the various Azure components that support Azure Monitor cap
 
 - The monitoring and diagnostic services offered in Azure are divided into broad **categories** such as Core, Application, Infrastructure, and Shared Capabilities.
 
-- **Data stores** in Azure Monitor hold your metrics and logs. [Azure Monitor Metrics](/azure/azure-monitor/essentials/data-platform-metrics) and [Azure Monitor Logs](/azure/azure-monitor/logs/data-platform-logs) are the two fundamental types of data used by the service.
+- **Data stores** in Azure Monitor hold your metrics and logs. [Azure Monitor Metrics](/azure/azure-monitor/essentials/data-platform-metrics) and [Azure Monitor Logs](/azure/azure-monitor/logs/data-platform-logs) are the two base types of data used by the service.
 
 - Various **monitoring sources** provide Azure Monitor with the metrics and logs data to analyze. These sources can include your Azure subscription and tenant, your Azure service instances, your Azure resources, data from your applications, and more.
 
