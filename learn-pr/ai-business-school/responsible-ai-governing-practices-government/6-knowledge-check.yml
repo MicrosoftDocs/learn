@@ -17,37 +17,37 @@ quiz:
   questions:
   - content: "Why is it important to involve many different stakeholders in discussions regarding responsible AI in government?"
     choices:
-    - content: "AI is a very controversial technology, so it’s important to include many perspectives when discussing it."
+    - content: "AI is a controversial technology, so it’s important to include many perspectives when discussing it."
       isCorrect: false
-      explanation: "Incorrect. While AI can be a controversial topic, this does not necessitate a multistakeholder approach."
-    - content: "AI is a very complicated technology, so it requires many experts to inform discussions regarding its regulation."
+      explanation: "Incorrect. While AI can be a controversial topic, this doesn't necessitate a multistakeholder approach."
+    - content: "AI is a complicated technology, so it requires many experts to inform discussions regarding its regulation."
       isCorrect: false
-      explanation: "Incorrect. While AI is a complicated and nuanced topic, this does not necessitate a multistakeholder approach."
+      explanation: "Incorrect. While AI is a complicated and nuanced topic, this doesn't necessitate a multistakeholder approach."
     - content: "AI is an emergent technology and it’s being implemented in new ways. Because it’s self-learning and autonomous, AI requires careful oversight and input from many different experts."
       isCorrect: true
-      explanation: "Correct. As governments implement AI in new ways, it will affect a plethora of stakeholders, necessitating a diversity of perspectives in these discussions."
-    - content: "AI is an emergent technology, so there are very few established best practices for implementing it in government scenarios, requiring input from many different experts."
+      explanation: "Correct. As governments implement AI in new ways, it affects a plethora of stakeholders, necessitating a diversity of perspectives in these discussions."
+    - content: "AI is an emergent technology, so there are few established best practices for implementing it in government scenarios, requiring input from many different experts."
       isCorrect: false
-      explanation: "Incorrect. While there are very few established best practices for implementing AI in government scenarios, this does not necessitate a multistakeholder approach."
+      explanation: "Incorrect. While there are few established best practices for implementing AI in government scenarios, this doesn't necessitate a multistakeholder approach."
   - content: "Why should governments customize their responsible AI governance model?"
     choices:
     - content: "Governments should tailor their responsible AI governance model to reflect their national priorities and culture."
       isCorrect: true
-      explanation: "Correct. It is important that governments take their nation’s priorities and culture into account when customizing their responsible AI governance model."
+      explanation: "Correct. It's important that governments take their nation’s priorities and culture into account when customizing their responsible AI governance model."
     - content: "Governments should tailor their responsible AI governance model to reflect the needs of their biggest businesses."
       isCorrect: false
-      explanation: "Incorrect. The needs of the private sector should not solely dictate how a government customizes their responsible AI governance model."
+      explanation: "Incorrect. The needs of the private sector shouldn't solely dictate how a government customizes their responsible AI governance model."
     - content: "Governments should tailor their responsible AI governance model to reflect the desires of their leader."
       isCorrect: false
-      explanation: "Incorrect. The desires of a nation’s head of state should not solely dictate how a government customizes their responsible AI governance model."
-    - content: "Governments do not have to tailor their responsible AI governance model, they can simply implement a model used by another nation."
+      explanation: "Incorrect. The desires of a nation’s head of state shouldn't solely dictate how a government customizes their responsible AI governance model."
+    - content: "Governments do not have to tailor their responsible AI governance model, they can implement a model used by another nation."
       isCorrect: false
       explanation: "Incorrect. Every nation is different, so every government should customize their responsible AI governance model to reflect national priorities and culture."
   - content: "What is the key advantage of a hybrid governance model?"
     choices:
     - content: "A hybrid governance model ensures all agencies adhere to the same strict guidelines for responsible AI development and deployment."
       isCorrect: false
-      explanation: "Incorrect. A hybrid model provides agencies with key guidelines for responsible AI development and deployment but does not provide strict rules like a centralized model does."
+      explanation: "Incorrect. A hybrid model provides agencies with key guidelines for responsible AI development and deployment but doesn't provide strict rules like a centralized model does."
     - content: "A hybrid governance model empowers individual agencies to completely create their own standards and policies."
       isCorrect: false
       explanation: "Incorrect. A hybrid model provides agencies with key guidelines for responsible AI development and deployment. A decentralized model allows individual agencies to create their own standards."
@@ -64,10 +64,10 @@ quiz:
       explanation: "Correct. An inclusive approach that values  multidisciplinary and  multistakeholder contributions and actions can motivate an open and collaborative model to policy development."
     - content: "AI policies need to be flexible in order to meet enterprise needs."
       isCorrect: false
-      explanation: "Incorrect. Requests from enterprises should not dictate AI policy."
+      explanation: "Incorrect. Requests from enterprises shouldn't dictate AI policy."
     - content: "AI policies need to be flexible in order to reflect changes in public opinion."
       isCorrect: false
-      explanation: "Incorrect. While important, public opinion should not dictate AI policy on its own as it can be manipulated, misinformed, and erratic."
+      explanation: "Incorrect. While important, public opinion shouldn't dictate AI policy on its own as it can be manipulated, misinformed, and erratic."
     - content: "AI policies need to be flexible in order to match the policies of governments who are leading in AI."
       isCorrect: false
-      explanation: "Incorrect. While governments should absolutely learn from each other, AI policy should not be dictated by what other countries/regions are doing."
+      explanation: "Incorrect. While governments should absolutely learn from each other, AI policy shouldn't be dictated by what other countries/regions are doing."

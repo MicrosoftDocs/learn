@@ -10,7 +10,7 @@ metadata:
   ms.prod: learning-azure
   #ms.learn-contact: barlan
 title: Identify governing practices for responsible AI in government
-summary: As AI becomes more prevalent, it’s imperative that governments have practices in place to ensure that it’s used responsibly. This starts with governments establishing their own guiding principles, then choosing and operationalizing a system of governance. We recognize that every government will have their own perspective on responsible AI, but we’re hopeful that our perspective will serve as a helpful starting point as they embark on their own AI journey.
+summary: As AI becomes more prevalent, it’s imperative that governments have practices in place to ensure that it’s used responsibly. This starts with governments establishing their own guiding principles, then choosing and operationalizing a system of governance. We recognize that every government has their own perspective on responsible AI, but we’re hopeful that our perspective is as a helpful starting point as they embark on their own AI journey.
 abstract: | 
   In this module, you will:
   - Determine the elements of an AI governance system.

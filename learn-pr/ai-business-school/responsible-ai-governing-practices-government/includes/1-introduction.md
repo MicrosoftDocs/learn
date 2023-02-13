@@ -1,4 +1,4 @@
-Like businesses, governments around the world are looking to take advantage of AI to engage citizens, aid tax compliance, drive smart city initiatives, and improve security and defense. Because governments make decisions and deliver services that have a serious impact on people’s lives, they are seeing a growing need to provide oversight and create guidelines to help them design and manage AI solutions responsibly.
+Like businesses, governments around the world are looking to take advantage of AI to engage citizens, aid tax compliance, drive smart city initiatives, and improve security and defense. Because governments make decisions and deliver services that have a serious impact on people’s lives, there's a growing need to provide oversight and create guidelines to help design and manage AI solutions responsibly.
 
 **In this module, you'll learn to:**
 
