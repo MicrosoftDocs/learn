@@ -6,7 +6,7 @@ An Azure Backup job creates a snapshot for your virtual machine in two phases:
 
 The following diagram highlights this process.
 
-:::image type="content" source="../media/virtual-machine-snapshot-aeddf5a2.png" alt-text="Illustraion that shows the Azure Backup job process for a virtual machine as described in the text." border="false":::
+:::image type="content" source="../media/virtual-machine-snapshot-aeddf5a2.png" alt-text="Illustration that shows the Azure Backup job process for a virtual machine as described in the text." border="false":::
 
 After the Azure Backup job completes, you can use recovery points for the snapshot to restore your virtual machine or specific files.
 
