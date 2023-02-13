@@ -38,13 +38,13 @@ quiz:
       explanation: "In the JSON device capability model, Optimal Temperature is of type Property and writable value is set to true."
     - content: "False"
       isCorrect: false
-      explanation: "In the JSON device capability model, Optimal Temperature is of type Property though the writable value is not set to false."
+      explanation: "In the JSON device capability model, Optimal Temperature is of type Property though the writable value isn't set to false."
 
   - content: "True or false: the connected coffee machine can start brewing remotely by using the command StartBrewing."
     choices:
     - content: "True"
       isCorrect: true
-      explanation: "In the JSON device capability model, there is a command defined with name StartBrewing."
+      explanation: "In the JSON device capability model, there's a command defined with name StartBrewing."
     - content: "False"
       isCorrect: false
-      explanation: "In the JSON device capability model, StartBrewing is of type Command which allows you to remotely manage your device from your application."
+      explanation: "In the JSON device capability model, StartBrewing is of type Command, which allows you to remotely manage your device from your application."
