@@ -51,7 +51,7 @@ At the end of the month, GitHub calculates the cost of minutes and storage used 
 
 By default, your account will have a spending limit of $0 for GitHub Actions usage. To enable using minutes and storage for private repositories beyond the amounts included with your account, you can increase the spending limit or allow unlimited spending.
 
-If you pay for your enterprise account by invoice, your account will have an unlimited default spending limit and you will be billed for overages.
+If you pay for your enterprise account by invoice, your account will have an unlimited default spending limit and you will be billed for overages. You can set a specific spending limit.
 
 If your account has outstanding unpaid charges:
 
@@ -61,13 +61,15 @@ If your account has outstanding unpaid charges:
 
 ## Codespaces billing
 
-GitHub Codespaces usage is billed for all organization and enterprise accounts on GitHub Team and GitHub Enterprise, which don't include any free minutes or storage. Personal accounts aren't currently billed for Codespaces usage.
+GitHub Codespaces usage is billed monthly for all organization and enterprise accounts on GitHub Team and GitHub Enterprise, which don't include any free minutes or storage. 
 
-Compute costs are incurred only when a codespace is active. When you're using a codespace, the codespace is active. After 30 minutes of inactivity, a codespace becomes suspended automatically.
+Personal accounts include free use of GitHub Codespaces up to a fixed amount of usage every month.
 
-Compute usage is billed per hour, at a rate that depends on your codespace's instance type. Compute pricing may vary for additional instance types and operating systems supported in the future.
+Compute costs are incurred when a codespace is active. When you're using a codespace, the codespace is active. After 30 minutes of inactivity, a codespace becomes suspended automatically.
 
-Each codespace also incurs monthly storage costs until you delete the codespace. Storage costs for all instance types incur a small additional fee per month per gigabyte of storage used.
+The unit of measure for compute usage is one hour, at a rate that depends on your codespace's instance type. Compute pricing may vary for additional instance types and operating systems supported in the future.
+
+Storage is billed for all of your existing codespaces, regardless of whether they are active or inactive, unless your storage quota is used up or you've reached your spending limit. The storage billing for a codespace ends when it's deleted.
 
 ## How can I view my usage of products and services?
 
@@ -81,27 +83,27 @@ Organization or enterprise owners who are responsible for multiple accounts need
 
 As an owner, you can select your profile photo and choose the option to switch to a different account.
 
-:::image type="content" source="../media/multiple-accounts.png" alt-text="Screenshot of multiple accounts dropdown menu.":::
+:::image type="content" source="../media/multiple-accounts.png" alt-text="Screenshot of the dropdown menu showing multiple accounts.":::
 
 Context switching demonstrates GitHub's capability to enable usage management across accounts.
 
 ### Manage licenses across organizations
 
-An Organization owner seeking to manage and monitor the number of seats licensed to their organization can select their profile photo and then navigate to *Billing & plans*. 
+An Organization owner seeking to manage and monitor the number of seats licensed to their organization can select their profile photo and then navigate to **Billing and plans**.
 
-As it's possible to have multiple organizations, the user interface requires the organization owner to select the organization for which they would like to view licensing. 
+As it's possible to have multiple organizations, the user interface requires the organization owner to select the organization for which they would like to view licensing.
 
-:::image type="content" source="../media/select-org.png" alt-text="Screenshot of settings option.":::
+:::image type="content" source="../media/select-org.png" alt-text="Screenshot of the settings option for an organization.":::
 
-After selecting their organization, they can view their current plan and choose to add to or remove seats from it. 
+After selecting their organization, they can view their current plan and choose to add to or remove seats from it.
 
-:::image type="content" source="../media/remove-seats.png" alt-text="Screenshot of remove seats option.":::
+:::image type="content" source="../media/remove-seats.png" alt-text="Screenshot of the add and remove seats options for an organization.":::
 
 ### Manage licenses across enterprises and instances
 
 Enterprise owners that manage multiple enterprises or enterprise instances can also easily view and manage licensing for one or more enterprises.  
 
-After selecting their profile photo, the enterprise owner can choose *Your Enterprises* from the drop-down menu. If the enterprise owner is responsible for multiple enterprises, GitHub lists the ones available. This listing shows GitHub's ability to accommodate license management across multiple enterprises.
+After selecting their profile photo, the enterprise owner can choose **Your Enterprises** from the dropdown menu. If the enterprise owner is responsible for multiple enterprises, GitHub lists the ones available. This listing shows GitHub's ability to accommodate license management across multiple enterprises.
 
 In the same scenario, the enterprise owner continues by selecting an enterprise. The enterprise may have multiple licensed server instances. Next, the enterprise owner has the option to view and manage the number of seats for each of these server instances. Each of those instances has a set number of seats licensed. The owner can remove or add seats.
 
@@ -109,7 +111,7 @@ In the same scenario, the enterprise owner continues by selecting an enterprise.
 
 As you've learned, metered products are billed by the number of minutes or gigabytes consumed beyond the allotted, basic amount. GitHub Actions and GitHub Packages are examples of metered products. The GitHub user interface also enables you to monitor statistics for metered products.
 
-The *Billing & plans* provides an overview of your current plans, up-to-date minute usage for GitHub Actions, and storage usage for GitHub Packages.
+The **Billing & plans** provides an overview of your current plans, up-to-date minute usage for GitHub Actions, and storage usage for GitHub Packages.
 
 In addition to viewing data in the GitHub user interface, you can also have CSV reports sent to your email address.
 
@@ -135,7 +137,9 @@ The GitHub user interface enables management of Git LFS (Large File Storage) Dat
 
 [Switching between settings for your different accounts](https://docs.github.com/en/billing/managing-your-github-billing-settings/about-billing-on-github#switching-between-settings-for-your-different-accounts)
 
-[Managing your license for GitHub Enterprise](https://docs.github.com/enterprise-server@3.8/billing/managing-your-license-for-github-enterprise?azure-portal=true)
+[Managing your license for GitHub Enterprise Server](https://docs.github.com/enterprise-server@3.8/billing/managing-your-license-for-github-enterprise?azure-portal=true)
+
+[Managing your license for GitHub Enterprise Cloud](https://docs.github.com/enterprise-cloud@latest/billing/managing-your-license-for-github-enterprise?azure-portal=true)
 
 [Viewing your GitHub Actions usage](https://docs.github.com/en/billing/managing-billing-for-github-actions/viewing-your-github-actions-usage?azure-portal=true)
 
