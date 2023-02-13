@@ -6,7 +6,7 @@ metadata:
   description: "Connect using the Windows Security Events via AMA Connector"
   ms.date: 08/16/2022
   author: wwlpublish
-  ms.author: kelawson
+  ms.author: bneeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
