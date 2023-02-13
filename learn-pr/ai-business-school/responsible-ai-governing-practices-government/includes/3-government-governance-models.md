@@ -1,12 +1,12 @@
 As discussed previously, each organization has its own guiding principles for responsible AI. But ultimately, those principles need to be part of a larger strategy to be effective.
 
-Businesses and government agencies alike are using their guiding principles as a foundation for a system of internal oversight, or “governance,” that provides guardrails for their AI solutions. Here, are a few examples of how governments around the world are approaching AI governance.
+Businesses and government agencies alike are using their guiding principles as a foundation for a system of internal oversight, or “governance,” that provides guardrails for their AI solutions. Here are a few examples of how governments around the world are approaching AI governance.
 
 ## Introduction
 
-Governments play a key role in encouraging AI innovation and responsibility throughout society. They're accountable to citizens to ensure that AI systems across industries do not violate anti-discrimination, data protection, and data privacy laws. Governments have the power to create new laws and invest in research regarding trustworthy AI systems. They're uniquely positioned to bring together stakeholders across business, borders, and academia.
+Governments play a key role in encouraging AI innovation and responsibility throughout society. They're accountable to citizens to ensure that AI systems across industries don't violate anti-discrimination, data protection, and data privacy laws. Governments have the power to create new laws and invest in research regarding trustworthy AI systems. They're uniquely positioned to bring together stakeholders across business, borders, and academia.
 
-But governments are not just a referee or coach when it comes to AI in society – they're also a player. Governments around the world are increasingly using AI themselves, from bots that engage citizens to AI models that detect tax compliance trends. As they do so, they're seeing a need to create internal guidelines to ensure those systems are designed and managed responsibly.
+But governments aren't just a referee or coach when it comes to AI in society – they're also a player. Governments around the world are increasingly using AI themselves, from bots that engage citizens to AI models that detect tax compliance trends. As they do so, they're seeing a need to create internal guidelines to ensure those systems are designed and managed responsibly.
 
 Managing internal AI solutions is especially important for government agencies. First of all, governments collect a high concentration of sensitive, personal data, heightening the importance of data security and prudence with AI applications. Plus, unlike some private enterprises, government regulations and services often have a significant impact on people’s lives, and governments are accountable to citizens rather than shareholders.
 
@@ -34,7 +34,7 @@ The United States has taken a similar approach to AI governance. We interviewed 
 
 The Executive Order also directs federal agencies to prioritize AI investments in their R&D missions. As Wilczak explains, the goal is to give agencies the freedom to explore how AI can be used to solve their unique challenges. In September 2019, as part of the American AI Initiative, the administration released details of nondefense AI R&D investments for each federal agency, showing that these investments address a wide breadth and depth of AI challenges across many federal agencies, programs, and initiatives.
 
-With innovation happening in every corner of the government, interagency collaboration has the potential to accelerate the spread of responsible AI best practices. Coupled with standards like those from the NIST, there is the opportunity to foster consistency and trustworthiness across the government as a whole.
+With innovation happening in every corner of the government, interagency collaboration has the potential to accelerate the spread of responsible AI best practices. Coupled with standards like those from the NIST, there's the opportunity to foster consistency and trustworthiness across the government as a whole.
 
 ## India
 
@@ -50,7 +50,7 @@ It’s often helpful to partner with stakeholders outside of the government when
 
 As previously noted by Susan Etlinger, it’s important to consult with technology experts like data scientists and machine learning engineers who can speak to the capabilities and limitations of AI. Leading think tanks, policy advisors, and non-governmental organizations should also be included—especially those that focus on underserved communities. It’s helpful to loop in researchers from academic institutions who represent a variety of disciplines such as sociology, economics, philosophy, applied ethics, law, humanities, social psychology, and neuroscience. Finally, it can be helpful to work with business leaders who are utilizing AI at scale and organizations such as the [Organization for Economic Co-operation and Development (OECD)](https://www.oecd.org), [Partnership on AI (PAI)](https://www.partnershiponai.org), and [World Economic Forum (WEF)](https://www.weforum.org).
 
-There is one more important voice for governments to consider: their citizens. Many governments, such as Canada and the UK, are making their responsible AI policies, non-private training data, and source code public, thereby enabling citizens to access, review, and provide their perspective on them. Public feedback gives governments the opportunity to tailor their governance model to reflect citizen priorities. For example, some countries/regions may choose to prioritize rapid innovation over personal privacy, while others may place more emphasis on protecting human rights.
+There's one more important voice for governments to consider: their citizens. Many governments, such as Canada and the UK, are making their responsible AI policies, non-private training data, and source code public, thereby enabling citizens to access, review, and provide their perspective on them. Public feedback gives governments the opportunity to tailor their governance model to reflect citizen priorities. For example, some countries/regions may choose to prioritize rapid innovation over personal privacy, while others may place more emphasis on protecting human rights.
 
 Next, let’s learn more about how governments can approach policy discussions regarding responsible AI.
 

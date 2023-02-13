@@ -26,9 +26,9 @@ quiz:
     - content: "AI is an emergent technology and it’s being implemented in new ways. Because it’s self-learning and autonomous, AI requires careful oversight and input from many different experts."
       isCorrect: true
       explanation: "Correct. As governments implement AI in new ways, it affects a plethora of stakeholders, necessitating a diversity of perspectives in these discussions."
-    - content: "AI is an emergent technology, so there are few established best practices for implementing it in government scenarios, requiring input from many different experts."
+    - content: "AI is an emergent technology, so there are only a few established best practices for implementing it in government scenarios, requiring input from many different experts."
       isCorrect: false
-      explanation: "Incorrect. While there are few established best practices for implementing AI in government scenarios, this doesn't necessitate a multistakeholder approach."
+      explanation: "Incorrect. While there are just a few established best practices for implementing AI in government scenarios, this doesn't necessitate a multistakeholder approach."
   - content: "Why should governments customize their responsible AI governance model?"
     choices:
     - content: "Governments should tailor their responsible AI governance model to reflect their national priorities and culture."
@@ -40,7 +40,7 @@ quiz:
     - content: "Governments should tailor their responsible AI governance model to reflect the desires of their leader."
       isCorrect: false
       explanation: "Incorrect. The desires of a nation’s head of state shouldn't solely dictate how a government customizes their responsible AI governance model."
-    - content: "Governments do not have to tailor their responsible AI governance model, they can implement a model used by another nation."
+    - content: "Governments don't have to tailor their responsible AI governance model, they can implement a model used by another nation."
       isCorrect: false
       explanation: "Incorrect. Every nation is different, so every government should customize their responsible AI governance model to reflect national priorities and culture."
   - content: "What is the key advantage of a hybrid governance model?"
