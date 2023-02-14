@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/13/2023
+  ms.date: 02/14/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
@@ -30,7 +30,7 @@ quiz:
       explanation: "Correct. Model assets like the model pickle file will be stored in the model folder under Outputs + logs."
     - content: "In the outputs folder under **Outputs + logs**."
       isCorrect: false
-      explanation: "Incorrect. When the data scientists enables autologging, the model assets will not be stored in the outputs folder."
+      explanation: "Incorrect. When the data scientist enables autologging, the model assets will not be stored in the outputs folder."
     - content: "In the model folder under **Metrics**."
       isCorrect: false
       explanation: "Incorrect. Artifacts like the model assets are not stored under Metrics."
