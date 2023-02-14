@@ -1,19 +1,42 @@
-An Azure backup job consists of two phases. First, a virtual machine snapshot is taken. Second, the virtual machine snapshot is transferred to the Azure Recovery Services vault.
+An Azure Backup job creates a snapshot for your virtual machine in two phases:
 
-:::image type="content" source="../media/virtual-machine-snapshot-aeddf5a2.png" alt-text="A virtual machine snapshot is transferring data to an Azure Recovery Services vault.":::
+- Phase 1: Take a snapshot of the virtual machine data
 
+- Phase 2: Transfer the snapshot to an Azure Recovery Services vault
 
-A recovery point is considered created only after both steps are completed. As a part of the upgrade, a recovery point is created as soon as the snapshot is finished. This recovery point is used to perform a restore. You can identify the recovery point in the Azure portal by using “snapshot” as the recovery point type. After the snapshot is transferred to the vault, the recovery point type changes to “snapshot and vault”.
+The following diagram highlights this process.
 
-## Capabilities and considerations
+:::image type="content" source="../media/virtual-machine-snapshot-aeddf5a2.png" alt-text="Illustration that shows the Azure Backup job process for a virtual machine as described in the text." border="false":::
 
- -  Ability to use snapshots taken as part of a backup job that is available for recovery without waiting for data transfer to the vault to finish.
- -  Reduces backup and restore times by retaining snapshots locally, for two days by default. This default snapshot retention value is configurable to any value between 1 to 5 days.
- -  Supports disk sizes up to 32 TB. Resizing of disks is not recommended by Azure Backup.
- -  Supports Standard SSD disks along with Standard HDD disks and Premium SSD disks.
- -  Incremental snapshots are stored as page blobs. 
- -  For premium storage accounts, the snapshots taken for instant recovery points count towards the 10-TB limit of allocated space.
- -  You get an ability to configure the snapshot retention based on the restore needs. Depending on the requirement, you can set the snapshot retention to a minimum of one day in the backup policy blade as explained below. This will help you save cost for snapshot retention if you don’t perform restores frequently.
+After the Azure Backup job completes, you can use recovery points for the snapshot to restore your virtual machine or specific files.
 
-> [!NOTE]
-> By default, snapshots are retained for two days. This feature allows restore operation from these snapshots there by cutting down the restore times. It reduces the time that is required to transform and copy data back from the vault.
+### Things to know about snapshots and recovery points
+
+Let's take a closer look at the characteristics of snapshots and recovery points in Azure Backup.
+
+- By default, Azure Backup keeps snapshots for two days to reduce backup and restore times. The local retention reduces the time required to transform and copy data back from an Azure Recovery Services vault.
+
+- You can set the default snapshot retention value from one and five days.
+
+- Incremental snapshots are stored as Azure page blobs (Azure Disks). 
+
+- Recovery points for a virtual machine snapshot are available only after both phases of the Azure Backup job are complete.
+
+- Recovery points are listed for the virtual machine snapshot in the Azure portal and are labeled with a _recovery point type_.
+
+- After a snapshot is first taken, the recovery points are identified with the **snapshot** recovery point type.
+
+- After the snapshot is transferred to an Azure Recovery Services vault, the recovery point type changes to **snapshot and vault**.
+
+### Things to consider when using snapshots and recovery points
+
+Here are some important benefits and considerations about using snapshots and recovery points.
+
+- **Consider recovery after Phase 1**. Use the snapshot captured in Phase 1 of the Azure Backup job to restore your virtual machine from the snapshot. Phase 2 transfers the snapshot to the Recovery Services vault, so recovery points can be created. If don't need specific recovery points, you don't have to wait for Phase 2 to complete before attempting a full restore from the snapshot.
+
+- **Consider disk type, sizing, pricing**. Back up Standard SSD disks, Standard HDD disks, and Premium SSD disks. Use disk sizes up to 32 TB. For Premium Azure storage accounts, snapshots taken for instant recovery points count towards the 10-TB limit of allocated space.
+
+   > [!Note]
+   > Azure Backup doesn't recommend resizing disks.
+
+- **Consider snapshot retention and cost savings**. Configure how long Azure Backup retains your snapshots based on your restore needs. Depending on your requirements, you might set the snapshot retention value to a minimum of one day. This setting can help reduce costs for snapshot retention, if you don't perform restores frequently.

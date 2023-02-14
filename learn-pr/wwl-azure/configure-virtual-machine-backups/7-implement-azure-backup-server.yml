@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-virtual-machine-backups.implement-azure-backup-server
-title: Implement Azure Backup Server
+title: Implement System Center DPM and Azure Backup Server
 metadata:
-  title: Implement Azure Backup Server
-  description: "Implement Azure Backup Server"
-  ms.date: 11/01/2022
+  title: Implement System Center DPM and Microsoft Azure Backup Server (MABS)
+  description: "Implement System Center Data Protection Manager (DPM) and Microsoft Azure Backup Server (MABS)"
+  ms.date: 02/10/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial

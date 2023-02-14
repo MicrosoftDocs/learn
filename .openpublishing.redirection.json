@@ -20416,6 +20416,46 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/windows/build-simple-website/1-introduction.md",
+      "redirect_url": "/training/modules/get-started-with-web-development/1-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/build-simple-website/2-project-structure.md",
+      "redirect_url": "/training/modules/get-started-with-web-development/2-project-structure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/build-simple-website/3-html-basics.md",
+      "redirect_url": "/training/modules/get-started-with-web-development/3-html-basics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/build-simple-website/4-css-basics.md",
+      "redirect_url": "/training/modules/get-started-with-web-development/4-css-basics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/build-simple-website/5-javascript-basics.md",
+      "redirect_url": "/training/modules/get-started-with-web-development/5-javascript-basics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/build-simple-website/6-knowledge-check.md",
+      "redirect_url": "/training/modules/get-started-with-web-development/6-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/build-simple-website/7-summary.md",
+      "redirect_url": "/training/modules/get-started-with-web-development/7-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/build-simple-website/index.md",
+      "redirect_url": "/training/modules/get-started-with-web-development/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/advocates/monitor-and-manage-device-with-iot-central/1-create-azure-iot-central-application.md",
       "redirect_url": "/training/modules/monitor-and-manage-device-with-iot-central/2-create-azure-iot-central-application",
       "redirect_document_id": true
@@ -20445,5 +20485,6 @@
       "redirect_url": "/training/modules/monitor-and-manage-device-with-iot-central/8-knowledge-check",
       "redirect_document_id": true
     }
+  
   ]
 }
