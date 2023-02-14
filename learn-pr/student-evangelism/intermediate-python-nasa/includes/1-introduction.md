@@ -1,4 +1,4 @@
-In this module, you'll learn about some intermediate concepts of the Python programming language and apply these ideas to examples inspired by the National Aeronautics and Space Administration (NASA).
+In this module, you'll learn about some intermediate concepts of the Python programming language and practice these concepts using examples with space exploration themes inspired by the National Aeronautics and Space Administration (NASA).
 
 > [!TIP]
 > This module is part of a multimodal learning experience. [Follow along with a video walk-through of the module](https://youtu.be/NcUreWUpQFo?azure-portal=true) in a new tab.
