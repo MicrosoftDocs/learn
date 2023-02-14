@@ -1,24 +1,31 @@
-Site Recovery helps ensure business continuity by keeping business apps and workloads running during outages. Site Recovery replicates workloads running on physical and virtual machines (VMs) from a primary site to a secondary location. When an outage occurs at your primary site, you fail over to secondary location, and access apps from there. After the primary location is running again, you can fall back to it.
+Azure Site Recovery helps ensure business continuity by keeping business applications and workloads running during outages. Site Recovery replicates workloads running on physical and virtual machines from a primary site to a secondary location. When an outage occurs at your primary site, Site Recovery implements a failover to the secondary location to allow continued access to your applications. After the primary location is running again, you can resume application access on the primary machine.
 
-:::image type="content" source="../media/site-recovery-scenarios-388c71fd.png" alt-text="Two regions are connected by Traffic Manager. Region 1 is failing over to Region 2.":::
+The following illustration that shows two regions connected by Azure Traffic Manager. Azure Site Recovery is implemented to enable failover from region 1 to region 2.
 
+:::image type="content" source="../media/site-recovery-scenarios-388c71fd.png" alt-text="Illustration that shows an implementation of Azure Site Recovery to enable failover from region 1 to region 2." border="false":::
 
-## Replications scenarios
+### Things to know about Azure Site Recovery
 
- -  Replicate Azure VMs from one Azure region to another.
- -  Replicate on-premises VMware VMs, Hyper-V VMs, physical servers (Windows and Linux), Azure Stack VMs to Azure.
- -  Replicate AWS Windows instances to Azure.
- -  Replicate on-premises VMware VMs, Hyper-V VMs managed by System Center VMM, and physical servers to a secondary site.
+Azure Site Recovery supports many configurations and complements various Azure services. You can implement Site Recovery to back up your virtual machines and physical machines in the following scenarios:
 
-## Features
+- Replicate Azure virtual machines from one Azure region to another
 
- -  Using Site Recovery, you can set up and manage replication, failover, and failback from a single location in the Azure portal.
- -  Replication to Azure eliminates the cost and complexity of maintaining a secondary datacenter.
- -  Site Recovery orchestrates replication without intercepting application data. When you replicate to Azure, data is stored in Azure storage, with the resilience that it provides. When failover occurs, Azure VMs are created, based on the replicated data.
- -  Site Recovery provides continuous replication for Azure VMs and VMware VMs, and replication frequency as low as 30 seconds for Hyper-V.
- -  You can replicate using recovery points with application-consistent snapshots. These snapshots capture disk data, all data in memory, and all transactions in process.
- -  You can run planned failovers for expected outages with zero-data loss, or unplanned failovers with minimal data loss (depending on replication frequency) for unexpected disasters. You can easily fall back to your primary site when it's available again.
- -  Site Recovery integrates with Azure for simple application network management, including reserving IP addresses, configuring load-balancers, and integrating Azure Traffic Manager for efficient network switchovers.
+- Replicate on-premises VMware virtual machines, Hyper-V virtual machines, physical servers (Windows and Linux), and Azure Stack virtual machines to Azure
 
-> [!NOTE]
-> Are you considering using Azure Site Recovery and are you interested in any of these specific features? Which one is most important to you?
+- Replicate AWS Windows instances to Azure
+
+- Replicate on-premises VMware virtual machines, Hyper-V virtual machines managed by System Center VMM, and physical servers to a secondary site
+
+### Things to consider when using Site Recovery
+
+There are many benefits to implementing Azure Site Recovery. As you review the following features, consider how the service can support your buniess rerequiremetns.
+
+| Feature | Description |
+| --- | --- |
+| **Consolidated management** | Set up and manage replication, failover, and failback from a single location in the Azure portal. |
+| **Reduced cost and complexity** | Replicate to Azure to eliminate the cost and complexity of maintaining a secondary datacenter. |
+| **Replication resilience** | Orchestrate replication without intercepting your app data and gain the resilience of Azure Storage. When failover occurs, Azure virtual machines are created, based on the replicated data. |
+| **Continuous replication** | Access continuous replication for Azure virtual machines and VMware virtual machines, and replication frequency as low as 30 seconds for Hyper-V. |
+| **Snapshot recovery points** | Replicate by using recovery points with app-consistent snapshots that capture disk data, all data in memory, and all transactions in process. |
+| **Failover and easy fall back** | Run planned failovers for expected outages with zero-data loss. Run unplanned failovers with minimal data loss depending on replication frequency. Easily fall back to your primary site when it's available again.
+| **Integration** | Integrate with Azure for simple application network management, including reserving IP addresses, configuring load-balancers, and integrating Azure Traffic Manager for efficient network switchovers. |
