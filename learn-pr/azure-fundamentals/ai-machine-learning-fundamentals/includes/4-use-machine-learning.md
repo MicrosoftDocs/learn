@@ -8,9 +8,9 @@ The Marketing team's existing data science experts have already done some initia
 
 Let's apply the decision criteria you learned about in the preceding unit to find the right option.
 
-First, is Tailwind Traders building a virtual agent that interfaces with humans via natural language? No, it is not, so Azure Bot Service is not a good candidate for this scenario.
+First, is Tailwind Traders building a virtual agent that interfaces with humans via natural language? No, it isn't, so Azure Bot Service isn't a good candidate for this scenario.
 
-Second, does Tailwind Traders need a service that can understand the content and meaning of images, video, audio, or translate text into a different language? No, it doesn't, so the relevant Cognitive Services will not help the company.
+Second, does Tailwind Traders need a service that can understand the content and meaning of images, video, audio, or translate text into a different language? No, it doesn't, so the relevant Cognitive Services won't help the company.
 
 Third, does Tailwind Traders need to predict user behavior or provide users with personalized recommendations? Yes, it does. However, creating recommendations based on user behavior is only part of the requirement. Tailwind Traders needs to create a complex model that incorporates historical sales data, trending sales data, inventory, and more. It's possible that the Azure Cognitive Services Personalizer service could play a role, but it couldn't handle the entire breadth of the project alone.
 
