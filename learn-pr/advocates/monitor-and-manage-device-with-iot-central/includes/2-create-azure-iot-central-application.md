@@ -42,7 +42,7 @@ To create an IoT Central application, you need an Azure Subscription. In this se
 
 1. When your application has been created, click **Go to resource**.
 
-### Check your work
+## Check your work
 
 Your IoT Central custom application is now live and ready to connect to IoT Devices.
 

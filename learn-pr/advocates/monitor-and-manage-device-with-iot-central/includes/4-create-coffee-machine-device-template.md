@@ -18,7 +18,7 @@ You already have a device capability model for the coffee machine defined in the
 
 1. On the **Create a model** page, select the **Import a model** tile.
 
-1. Browse to the **CoffeeMaker.json** file you created previously, and select **Open**.
+1. Browse to the `CoffeeMaker.json` file you created previously, and select **Open**.
 
 IoT Central displays the **Connected Coffee Maker** capability model that defines the telemetry, properties, and commands that the device supports.
 
@@ -84,6 +84,8 @@ Before you can connect a coffee machine device to your IoT Central application, 
 1. Navigate to the **Connected Coffee Machine** device template you created, and select **Publish**.
 
 1. The **Publish this device template to the application** shows you the changes that you're publishing. Select **Publish**.
+
+## Check your work
 
 To verify that the device template was published and is ready to use:
 
