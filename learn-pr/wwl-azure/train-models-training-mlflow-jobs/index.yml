@@ -14,7 +14,8 @@ abstract: |
   In this module, you learn how to:
   - Use MLflow when you run a script as a job.
   - Review metrics, parameters, artifacts, and models from a run.
-prerequisites: ""
+prerequisites: |
+  None
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - beginner
