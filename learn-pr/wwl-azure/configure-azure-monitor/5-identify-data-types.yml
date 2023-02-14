@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-azure-monitor.identify-data-types
-title: Identify types of monitoring data and tiers
+title: Identify monitoring data and tiers
 metadata:
-  title: Identify types of monitoring data and tiers
-  description: "Identify types of monitoring data and tiers"
+  title: Identify monitoring data and tiers
+  description: "Identify monitoring data and tiers"
   ms.date: 02/15/2023
   author: wwlpublish
   ms.author: cynthist
