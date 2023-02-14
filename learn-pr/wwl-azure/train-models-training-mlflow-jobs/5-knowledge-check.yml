@@ -30,7 +30,7 @@ quiz:
       explanation: "Correct. Model assets like the model pickle file will be stored in the model folder under Outputs + logs."
     - content: "In the outputs folder under **Outputs + logs**."
       isCorrect: false
-      explanation: "Incorrect. When the data scientist enables autologging, the model assets will not be stored in the outputs folder."
+      explanation: "Incorrect. When the data scientist enables autologging, the model assets won't be stored in the outputs folder."
     - content: "In the model folder under **Metrics**."
       isCorrect: false
-      explanation: "Incorrect. Artifacts like the model assets are not stored under Metrics."
+      explanation: "Incorrect. Artifacts like the model assets aren't stored under Metrics."
