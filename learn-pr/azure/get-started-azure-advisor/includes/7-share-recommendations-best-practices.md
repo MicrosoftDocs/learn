@@ -9,7 +9,7 @@ Well, in addition to regularly checking your Advisor dashboard to see your Advis
 
 ## Advisor alerts
 
-You can configure Azure Advisor to send you an alert whenever a new recommendation is available for one of your resources. You choose a subscription and optionally a resource group, and Advisor alerts will notify you of recommendations for those resources.
+You can configure Azure Advisor to send you an alert whenever a new recommendation is available for one of your resources. You choose a subscription and optionally a resource group, and Advisor alerts notifies you of recommendations for those resources.
 
 You can also further specify your alerts by choosing from the following properties:
 
@@ -34,10 +34,10 @@ When creating or editing an alert, specify the following configurations:
 
 - **SCOPE:** Select the subscription and (optionally) the resource group for which you want to receive an alert.
 - **CONDITION:** Choose a specific category, impact level, or recommendation type for the alert.
-- **ACTION GROUPS:** Select an existing action group or create a new one to define the list of notifications that are sent when an alert is triggered, such as through email or SMS.
-- **ALERTS DETAILS:** Provide a name and description for the alert. You can also choose to have the alert enabled or disabled when you save your changes.
+- **ACTION GROUPS:** Select an existing action group. Or, create a new one to define the list of notifications that are sent when an alert is triggered, such as through email or SMS.
+- **ALERT DETAILS:** Provide a name and description for the alert. You can also choose to have the alert enabled or disabled when you save your changes.
 
-That's it! Once the alert is configured and saved, you'll be notified whenever a new recommendation that matches those settings is available.
+That's it! Once the alert is configured and saved, you're notified whenever a new recommendation that matches those settings is available.
 
 ## Recommendation digests
 
@@ -56,11 +56,11 @@ Specify similar configurations as you did for Advisor Alerts:
 - **SCOPE:** Select the subscription for which you want to receive recommendation digest notifications.
 - **CONDITION:** Specify how often you're notified, which categories you want to include, and in what language you want to receive the recommendation digest.
 - **ACTION GROUPS:** Select an existing action group or create a new one to define the list of notifications that are sent for the recommendation digest, such as through email or SMS.
-- **ALERTS DETAILS:** Provide a name for the recommendation digest. You can also choose to have it enabled or disabled when you save your changes.
+- **DIGEST DETAILS:** Provide a name for the recommendation digest. You can also choose to have it enabled or disabled when you save your changes.
 
 :::image type="content" source="../media/azure-advisor-recommendation-digest.png" alt-text="Screenshot showing the Add and Advisor recommendation digest page." lightbox="../media/azure-advisor-recommendation-digest.png":::
 
-After you've configured and saved the recommendation digest, you'll receive your notification as often as you indicated. The recommendation digest will provide you a summary of all your active recommendations, across the different categories you specified.
+After you've configured and saved the recommendation digest, you'll receive your notification as often as you indicated. The recommendation digest provides a summary of all your active recommendations, across the different categories you specified.
 
 ## Export Advisor reports
 

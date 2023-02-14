@@ -3,7 +3,7 @@ uid: learn.wwl.configure-expressroute-virtual-wan
 metadata:
   title: Configure Azure ExpressRoute and Azure Virtual WAN
   description: "Learn how to configure Azure ExpressRoute and Virtual WAN to provide connection services."
-  ms.date: 02/08/2023
+  ms.date: 02/10/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
