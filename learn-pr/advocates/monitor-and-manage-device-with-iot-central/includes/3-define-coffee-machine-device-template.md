@@ -38,7 +38,7 @@ You can customize the UI that IoT Central displays for managing and monitoring d
 
 ## Connected Coffee Maker model
 
-A device model is the part of the device template that defines the telemetry, properties, and commands that a device supports. The following JSON is the device capability model for the connected coffee machine.
+A device model is the part of the device template that defines the telemetry, properties, and commands that a device supports. You can store a device capability model in a JSON file and import it into IoT Central. The following JSON is the device capability model for the connected coffee machine. Copy the JSON and save it on your local machine in a file called `CoffeeMaker.json`:
 
 :::code language="json" source="../resources/CoffeeMaker.json":::
 
