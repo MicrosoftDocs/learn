@@ -8,7 +8,7 @@ Overall you saw how introducing Helm, as part of your software development and r
 
 ## Clean up resources
 
-When running the exercises in the Learn sandbox, all resources are cleaned up automatically. However, if you're running this exercise in your own subscription, you'll want to clean up these resources so that there's no continued charge against your account for these resources.
+When you run the exercises in the Learn sandbox, all resources are cleaned up automatically. However, if you're running this exercise in your own subscription, you'll want to clean up these resources so that there's no continued charge against your account for these resources.
 
 1. Open the Azure portal.
 
