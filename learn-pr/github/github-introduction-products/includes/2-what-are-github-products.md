@@ -70,7 +70,7 @@ In addition, GitHub Pro increases the limits of GitHub Actions and GitHub Packag
 
 ### GitHub Team
 
-GitHub Team is the version of GitHub Pro for teams instead of personal accounts. GitHub Team includes all the same features as GitHub Pro and a few extra features that help with collaboration within a team:
+GitHub Team is the version of GitHub Pro for organizations instead of personal accounts. GitHub Team includes all the same features as GitHub Pro and a few extra features that help with collaboration within a team:
 
 - Draft pull requests
 - Team pull-request reviewers
@@ -80,7 +80,7 @@ GitHub Team is the version of GitHub Pro for teams instead of personal accounts.
 
 GitHub Enterprise can be hosted on-premises (GitHub Enterprise Server) or in the cloud (GitHub Enterprise Cloud) using GitHub's existing infrastructure. GitHub Enterprise accounts enjoy a greater level of support and extra security, compliance, and deployment controls.
 
-You can create one or more *enterprise accounts* by signing up for the paid GitHub Enterprise product. When you create an enterprise account, you're assigned the role of *enterprise owner*.  As an enterprise owner, you can add and remove organizations to and from the enterprise account. You can manage other administrators, enforce security policies across organizations, and so on.
+You can create one or more *enterprise accounts* by signing up for the paid GitHub Enterprise product. When you create an enterprise account, you're assigned the role of *enterprise owner*. As an enterprise owner, you can add and remove organizations to and from the enterprise account. You can manage other administrators, enforce security policies across organizations, and so on.
 
 With GitHub Enterprise, you get GitHub Enterprise Support and a greater integration with existing on-premises or cloud services. For example, you can synchronize your authentication with SAML to enable single sign-on by using your existing configurations stored in Active Directory Federation Services or Azure Active Directory.  Alternatively, you can provision access to other services by using SAML or SCIM as the identity provider. You can also use GitHub Connect to share certain features and data between your GitHub Enterprise Server instance, your GitHub Enterprise Cloud organization, or your enterprise account on GitHub.com.
 

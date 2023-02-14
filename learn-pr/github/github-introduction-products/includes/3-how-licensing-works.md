@@ -20,7 +20,7 @@ The following table compares the minute multiplier for the different operating s
 
 Finally, the free minutes reset each month. You can't "roll over" unused minutes from previous months.
 
-If your account's usage surpasses these limits and you have set a spending limit higher than `$0`, you'll pay per-minute usage based on the operating system used by the GitHub-hosted runner. GitHub rounds the minutes each job uses up to the nearest minute.
+If your account's usage surpasses these limits and you've set a spending limit higher than `$0`, you'll pay per-minute usage based on the operating system used by the GitHub-hosted runner. GitHub rounds the minutes each job uses up to the nearest minute.
 
 > [!NOTE]
 > For current prices, refer to [GitHub's pricing page](https://github.com/pricing?azure-portal=true).
@@ -40,7 +40,7 @@ GitHub calculates your storage usage for each month based on hourly usage during
 
 At the end of the month, GitHub rounds your storage to the nearest megabyte. Therefore, your storage usage for March would be 9.097 GB.
 
-If your account's usage surpasses these limits and you have set a spending limit higher than $0, you incur an additional fee per gigabyte of storage used per month.
+If your account's usage surpasses these limits and you've set a spending limit higher than $0, you incur an additional fee per gigabyte of storage used per month.
 
 At the end of the month, GitHub calculates the cost of minutes and storage used over the amount included in your account.
 
@@ -49,9 +49,9 @@ At the end of the month, GitHub calculates the cost of minutes and storage used 
 
 ### What are spending limits?
 
-By default, your account will have a spending limit of $0 for GitHub Actions usage. To enable using minutes and storage for private repositories beyond the amounts included with your account, you can increase the spending limit or allow unlimited spending.
+By default, your account will have a spending limit of $0 for GitHub Actions usage. To allow you to use minutes and storage for private repositories beyond the amounts included with your account, you can increase the spending limit or allow unlimited spending.
 
-If you pay for your enterprise account by invoice, your account will have an unlimited default spending limit and you will be billed for overages. You can set a specific spending limit.
+If you pay for your enterprise account by invoice, your account will have an unlimited default spending limit and you'll be billed for overages. You can set a specific spending limit.
 
 If your account has outstanding unpaid charges:
 
@@ -69,13 +69,13 @@ Compute costs are incurred when a codespace is active. When you're using a codes
 
 The unit of measure for compute usage is one hour, at a rate that depends on your codespace's instance type. Compute pricing may vary for additional instance types and operating systems supported in the future.
 
-Storage is billed for all of your existing codespaces, regardless of whether they are active or inactive, unless your storage quota is used up or you've reached your spending limit. The storage billing for a codespace ends when it's deleted.
+Storage is billed for all of your existing codespaces, regardless of whether they're active or inactive, unless your storage quota is used up or you've reached your spending limit. The storage billing for a codespace ends when it's deleted.
 
 ## How can I view my usage of products and services?
 
 The GitHub user interface makes it easy for you to find statistics of license usage for a specific organization, across organizations, for enterprise accounts, or for instances. Also, you can view details about your license usage for machine accounts and peripheral services. 
 
-Licenses for paid products are available to an organization on a per user basis. Each of these licenses is referred to as a *seat*. It's possible to set up a machine user: a GitHub account that is attached to an SSH key and used exclusively for automation. A machine user also consumes a license.
+Licenses for paid products are available to an organization on a per user basis. Each of these licenses is referred to as a *seat*. It's possible to set up a machine user: a GitHub account that's attached to an SSH key and used exclusively for automation. A machine user also consumes a license.
 
 ### Context switching for organization or enterprise owners
 
@@ -89,29 +89,27 @@ Context switching demonstrates GitHub's capability to enable usage management ac
 
 ### Manage licenses across organizations
 
-An Organization owner seeking to manage and monitor the number of seats licensed to their organization can select their profile photo and then navigate to **Billing and plans**.
+An organization owner who wants to manage and monitor the number of seats licensed to their organization can select their profile photo and then navigate to **Billing and plans**.
 
-As it's possible to have multiple organizations, the user interface requires the organization owner to select the organization for which they would like to view licensing.
+If the owner manages multiple organizations, they'll need to select the organization they want to view.
 
 :::image type="content" source="../media/select-org.png" alt-text="Screenshot of the settings option for an organization.":::
 
-After selecting their organization, they can view their current plan and choose to add to or remove seats from it.
+They can then view their current plan and add or remove seats.
 
 :::image type="content" source="../media/remove-seats.png" alt-text="Screenshot of the add and remove seats options for an organization.":::
 
 ### Manage licenses across enterprises and instances
 
-Enterprise owners that manage multiple enterprises or enterprise instances can also easily view and manage licensing for one or more enterprises.  
+Enterprise owners that manage multiple enterprises or enterprise instances can also easily view and manage licensing for one or more enterprises, by selecting **Your Enterprises** from the **Settings** dropdown menu in the owner's profile.
 
-After selecting their profile photo, the enterprise owner can choose **Your Enterprises** from the dropdown menu. If the enterprise owner is responsible for multiple enterprises, GitHub lists the ones available. This listing shows GitHub's ability to accommodate license management across multiple enterprises.
-
-In the same scenario, the enterprise owner continues by selecting an enterprise. The enterprise may have multiple licensed server instances. Next, the enterprise owner has the option to view and manage the number of seats for each of these server instances. Each of those instances has a set number of seats licensed. The owner can remove or add seats.
+GitHub Enterprise Server licenses can be viewed and managed at the server instance level.
 
 ### Monitoring consumption of metered products
 
 As you've learned, metered products are billed by the number of minutes or gigabytes consumed beyond the allotted, basic amount. GitHub Actions and GitHub Packages are examples of metered products. The GitHub user interface also enables you to monitor statistics for metered products.
 
-The **Billing & plans** provides an overview of your current plans, up-to-date minute usage for GitHub Actions, and storage usage for GitHub Packages.
+**Billing & plans** provides an overview of your current plans, up-to-date minute usage for GitHub Actions, and storage usage for GitHub Packages.
 
 In addition to viewing data in the GitHub user interface, you can also have CSV reports sent to your email address.
 
@@ -129,7 +127,7 @@ When misconfiguration isn't the case, a spending limit simply assists you in bud
 
 ### Monitor Git LFS data
 
-The GitHub user interface enables management of Git LFS (Large File Storage) Data providing feedback on the amount of storage and bandwidth used. Every account using Git Large File Storage receives 1 GB of free storage and 1 GB a month of free bandwidth. You pay when assets are pushed to or downloaded from your account. 
+The GitHub user interface enables management of Git LFS (Large File Storage) Data providing feedback on the amount of storage and bandwidth used. Every account using Git Large File Storage receives 1 GB of free storage and 1 GB a month of free bandwidth. If that's not enough, you can purchase extra. You pay when assets are pushed to or downloaded from your account. 
 
 :::image type="content" source="../media/lfs.png" alt-text="Screenshot of Git LFS usage overview.":::
 
