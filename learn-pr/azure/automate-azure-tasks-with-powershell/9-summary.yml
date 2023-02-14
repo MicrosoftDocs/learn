@@ -16,35 +16,35 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: "True or false: The Azure portal, the Azure CLI, and Azure PowerShell offer significantly different services, so it is unlikely that all three will support the operation you need."
+  - content: "True or false: The Azure portal, the Azure CLI, and Azure PowerShell offer significantly different services, so it's unlikely that all three will support the operation you need."
     choices: 
     - content: "True"
       isCorrect: false
       explanation: "The three tools offer almost exactly the same set of services."
     - content: "False"
       isCorrect: true
-      explanation: "The three tools offer almost the same set of services. Generally, this is not a factor in deciding which tool is best for your tasks."
+      explanation: "The three tools offer almost the same set of services. Generally, services aren't a factor in deciding which tool is best for your tasks."
 
-  - content: "Suppose you are building a video-editing application that will offer online storage for user-generated video content. You will store the videos in Azure Blobs, so you need to create an Azure storage account to contain the blobs. Once the storage account is in place, it is unlikely you would remove and recreate it because this would delete all the user videos. Which tool is likely to offer the quickest and easiest way to create the storage account?"
+  - content: "Suppose you're building a video-editing application that will offer online storage for user-generated video content. You'll store the videos in Azure Blobs, so you need to create an Azure storage account to contain the blobs. Once the storage account is in place, it's unlikely you would remove and recreate it because all the user videos would be deleted. Which tool is likely to offer the quickest and easiest way to create the storage account?"
     choices: 
     - content: "Azure portal"
       isCorrect: true
       explanation: "The portal is a good choice for one-off operations like creating a long-lived storage account. The portal gives you a GUI containing all the storage-account properties and provides tool tips to help you select the right options for your needs."
     - content: "Azure CLI"
       isCorrect: false
-      explanation: "To use the CLI, you would need to research the command used to create a storage account. You would also need to either install the CLI locally or login to the cloud shell. For a one-off operation like creating a storage account, this is likely to take longer than using the Azure portal."
+      explanation: "To use the CLI, you would need to research the command used to create a storage account. You would also need to either install the CLI locally or sign in to the Cloud Shell. For a one-off operation like creating a storage account, the CLI is likely to take longer than using the Azure portal."
     - content: "Azure PowerShell"
       isCorrect: false
-      explanation: "To use Azure PowerShell, you would need to research the command used to create a storage account. You would also need to either install PowerShell and Azure PowerShell locally or login to the cloud shell. For a one-off operation like creating a storage account, this is likely to take longer than using the Azure portal."
+      explanation: "To use Azure PowerShell, you would need to research the command used to create a storage account. You would also need to either install PowerShell and Azure PowerShell locally or sign in to the Cloud Shell. For a one-off operation like creating a storage account, it's likely to take longer than using the Azure portal."
 
   - content: "What needs to be installed on your machine to let you execute Azure PowerShell cmdlets locally?"
     choices:
-    - content: "The Azure cloud shell"
+    - content: "The Azure Cloud Shell"
       isCorrect: false
-      explanation: "The cloud shell does let you execute Azure cmdlets; however, you use it in a browser, so you are not running the commands on your local machine."
-    - content: "The base PowerShell product and the Az module"
+      explanation: "The Cloud Shell does let you execute Azure cmdlets; however, you use it in a browser, so you aren't running the commands on your local machine."
+    - content: "The base PowerShell product and the Az PowerShell module"
       isCorrect: true
-      explanation: "You need both the base PowerShell product and the Az module. The base product gives you the shell itself, a few core commands, and programming constructs like loops, variables, etc. The Az modules adds the cmdlets you need to work with Azure resources."
+      explanation: "You need both the base PowerShell product and the Az PowerShell module. The base product gives you the shell itself, a few core commands, and programming constructs like loops, variables, etc. The Az PowerShell module adds the cmdlets you need to work with Azure resources."
     - content: "The Azure CLI and Azure PowerShell"
       isCorrect: false
-      explanation: "The Azure CLI is an alternate command-line and scripting tool. It is not needed if you are going to use Azure PowerShell."
+      explanation: "The Azure CLI is an alternate command-line and scripting tool. It isn't needed if you're going to use Azure PowerShell."

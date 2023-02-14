@@ -1,3 +1,8 @@
+---
+interactive:bash
+zone_pivot_groups:azure-interface
+title:Create an Azure Service Bus
+---
 Azure Service Bus is a fully managed message broker with message queues and publish-subscribe articles (in a namespace). Service Bus is used to decouple applications and services from each other, providing the following benefits:
 
  -  Load-balancing work across competing workers.
@@ -68,7 +73,7 @@ jms:
 1.  Create a new Service Bus namespace. The name you use for your namespace should be globally unique, so update the value for the environment variable. You'll need to create the namespace with the **Premium** SKU.
     
     ```Bash
-    SERVICEBUS_NAMESPACE=springapps$RANDOM$RANDOM
+    SERVICEBUS_NAMESPACE=sb-$APPNAME-$UNIQUEID
     
     az servicebus namespace create \
         --resource-group $RESOURCE_GROUP \
@@ -77,7 +82,7 @@ jms:
         --sku Premium
     ```
 
-2.  Create two new queues in the namespace called `visits-requests` and`visits-confirmations`.
+2.  Create a new queue in the namespace called `visits-requests`.
     
     ```Bash
     az servicebus queue create \
@@ -85,13 +90,9 @@ jms:
         --namespace-name $SERVICEBUS_NAMESPACE \
         --name visits-requests
     
-    az servicebus queue create \
-        --resource-group $RESOURCE_GROUP \
-        --namespace-name $SERVICEBUS_NAMESPACE \
-        --name visits-confirmations
     ```
 
-3.  Query your Service Bus namespace for its connection string.
+4.  Retrieve the value of the connection string to the newly created Service Bus namespace.
     
     ```Bash
     SERVICEBUS_CONNECTIONSTRING=$(az servicebus namespace authorization-rule keys list \
@@ -102,7 +103,7 @@ jms:
         --output tsv)
     ```
 
-4.  Create a new Key Vault secret for the connection string.
+5.  Create a new Key Vault secret for the connection string.
     
     ```Bash
     az keyvault secret set \
@@ -111,7 +112,7 @@ jms:
         --vault-name $KEYVAULT_NAME
     ```
 
-6.  In the configuration repository, search for the **application.yml** file. Add the following text below the mysql profile (likely, below line 78).
+6.  In the configuration repository, search for the **application.yml** file. Add the following text below the mysql profile (likely, line 78).
     
     ```yaml
     jms:

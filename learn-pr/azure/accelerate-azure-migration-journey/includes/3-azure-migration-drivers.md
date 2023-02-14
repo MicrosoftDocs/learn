@@ -1,16 +1,16 @@
 One crucial part of building a cloud migration and modernization strategy for an organization is identifying what is triggering cloud adoption. Some triggers may prompt quick action, while others may call for a more active, hands-on approach.
 
-Business and IT-driven goals point to migration and modernization triggers, which determine the strategy for moving applications to the cloud. For IT-based triggers *migration* of your workloads is best. When you're presented with business-focused goals, we recommend *modernizing* your applications.
+Business and IT-driven goals point to migration and modernization triggers, which determine the strategy for moving applications to the cloud. For IT-based triggers, *migration* of your workloads is best. When you're presented with business-focused goals, we recommend *modernizing* your applications.
 
 ![Graphic showing the two migration paths of Migration or Modernization.](../media/migrate-or-modern-2.png)
 
-With a migration, the workloads will remain unchanged and moved to the cloud. If, modernization is selected the application code will be changed or the application could be rewritten or replaced to use new cloud technologies.
+With a migration, the workloads will remain unchanged and moved to the cloud. If modernization is selected, the application code will be changed or the application could be rewritten or replaced to use new cloud technologies.
 
-At Tailwind Traders you could develop a decision tree, which can help you to evaluate your applications:
+At Tailwind Traders, you could develop a decision tree, which can help you to evaluate your applications:
 
 ![Graphic of a decision tree showing PaaS or IaaS based on future development on an application.](../media/modernize-decision-tree.png)
 
-As the solution architect on the Tailwind Traders team you will need to understand the triggers for your **migration** or **modernization**.
+As the solution architect on the Tailwind Traders team, you will need to understand the triggers for your **migration** or **modernization**.
 
 ![Graphic showing the triggers for a migration or modernization project.](../media/migration-triggers-2.png)
 
@@ -119,7 +119,7 @@ Moving to the cloud increases your agility with an infrastructure that scales to
 
 Several industries such as healthcare, insurance, and banking are experiencing considerable growth, but many organizations within these verticals are finding it difficult to keep pace with significant surges in demand.
 
-By moving to managed services in the cloud, organizations can modernize their business-critical applications and take advantage of managed services such as [Azure App Service](https://azure.microsoft.com/services/app-service/?azure-portal=true) and [Azure SQL Database Managed Instances](https://azure.microsoft.com/services/azure-sql/sql-managed-instance/?azure-portal=true) to reduce operational tasks and focus scarce resources on higher value work.
+By moving to managed services in the cloud, organizations can modernize their business-critical applications and take advantage of managed services such as [Azure App Service](https://azure.microsoft.com/services/app-service/?azure-portal=true) and [Azure SQL Managed Instances](https://azure.microsoft.com/services/azure-sql/sql-managed-instance/?azure-portal=true) to reduce operational tasks and focus scarce resources on higher value work.
 
 ### Application innovation
 

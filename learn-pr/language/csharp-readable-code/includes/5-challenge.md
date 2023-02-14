@@ -6,7 +6,7 @@ In this challenge, you'll use the techniques you learned in this module. Your go
 
 ### Step 1 - Delete all of the code in the .NET Editor from the earlier exercise
 
-Select all of the code in the .NET Editor, then select the `del` or `backspace` key to delete it.
+Select all of the code in the .NET Editor, then select the <kbd>Del</kbd> or <kbd>Backspace</kbd> key to delete it.
 
 ### Step 2 - Start with the following unreadable code in the .NET Editor
 

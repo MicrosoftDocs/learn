@@ -1,4 +1,4 @@
-Windows Subsystem for Linux is included by default with Windows, but must be enabled before installing a Linux distribution. This unit will cover how you can enable WSL, install Linux distributions, and set up a Linux username and password.
+Windows Subsystem for Linux (WSL) must be enabled and a distribution of Linux must be installed before you can run Linux commands and access tools like Bash. This unit will cover how you can enable WSL, install Linux distributions, and set up a Linux username and password.
 
 > [!IMPORTANT]
 > You must make sure that you're running Windows 11 or Windows 10 version 2004+ (Build 19041 and higher) to run the WSL install command.
@@ -9,16 +9,15 @@ You can now install everything you need to run WSL by entering a single command,
 
 There are a few things to know about what this command accomplishes and the options that it provides.
 
-You must make sure that you're running Windows 11 or Windows 10 version 2004+ (Build 19041 and higher) to run the WSL install command. [Check for updates](ms-settings:windowsupdate). If you're running an earlier build of Windows and can't update, see the docs linked at the end of this training on how to manually enable WSL and install a Linux distribution.
+You must make sure that you're running Windows 11 or Windows 10 version 2004+ (Build 19041 and higher) to run the WSL install command. You can [check the version of Windows you are currently running and update to a new version](ms-settings:windowsupdate) if necessary. If you're running an older build of Windows and can't update, see the docs linked at the end of this training on how to manually enable WSL and install a Linux distribution.
 
 :::image type="content" source="../media/wsl-install.png" alt-text="Screenshot of PowerShell with wsl install command entered.":::
 
 The `wsl --install` command performs the following actions:
 
-- Enables WSL and Virtual Machine Platform components that are included by default with Windows operating system.
-- Downloads the WSL package from the Microsoft Store, enabling updates and security fixes to be pushed as they become available.
-- Downloads and installs the latest Linux kernel, setting WSL 2 as the default architecture.
-- Downloads and installs the Ubuntu distribution of Linux.
+- Enables the Virtual Machine Platform Optional Component and installs the WSL core binaries.
+- Downloads the WSL package (including the latest Linux kernel) from the Microsoft Store, enabling updates and security fixes to be pushed as they become available.
+- Downloads and installs the Ubuntu distribution of Linux (unless you use one of the command options to elect a different distribution).
 
 To use the install command:
 
@@ -43,7 +42,7 @@ If a Linux distribution that you want to install isn't available via the Microso
 > [!NOTE]
 > For advanced-level WSL users, there are some additional options that can be set using flags on the `wsl --install` command. See the WSL documentation linked at the end of this training to learn more.
 > - If access to the Microsoft Store is blocked, WSL can be installed from a CDN instead.
-> - The `wsl --install` command is supported on Windows Server with options not to automatically launch the distribution after install or to enable WSL components without installing any distribution at all. . *(Only on Windows 2019 version 1709 or newer).*
+> - The `wsl --install` command is supported on Windows Server with options not to automatically launch the distribution after install or to enable WSL components without installing any distribution at all. *(Only on Windows 2019 version 1709 or newer).*
 > - Linux distributions can be installed with WSL 1 architecture if you have a specific scenario that requires it.
 > - Business or enterprise users, can create a custom WSL image for distribution in your company.
 

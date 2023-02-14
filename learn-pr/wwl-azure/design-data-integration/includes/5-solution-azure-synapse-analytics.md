@@ -13,7 +13,7 @@ Azure Synapse Analytics implements a massively parallel processing (MPP) archite
 
 - You submit queries in the form of Transact-SQL statements, and Azure Synapse Analytics runs them.
 
-- Azure Synapse uses a technology named [PolyBase](https://github.com/GitHubber17/learn-pr/blob/update-az-305-data-integration-1/sql/relational-databases/polybase/polybase-guide) that enables you to retrieve and query data from relational and non-relational sources. You can save the data read in as SQL tables within the Azure Synapse service.
+- Azure Synapse uses a technology named [PolyBase](/sql/relational-databases/polybase/polybase-guide?view=sql-server-ver16) that enables you to retrieve and query data from relational and non-relational sources. You can save the data read in as SQL tables within the Azure Synapse service.
 
 #### Components of Azure Synapse Analytics
 

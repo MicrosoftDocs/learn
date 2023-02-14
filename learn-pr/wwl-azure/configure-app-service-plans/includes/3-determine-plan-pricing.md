@@ -9,7 +9,7 @@ There are six categories of pricing tiers for an Azure App Service plan. Examine
 | Usage | Development, Testing | Development, Testing | Dedicated development, Testing | Production workloads | Enhanced scale, performance | High performance, security, isolation |
 | Web, mobile, or API applications | 10 | 100 | Unlimited | Unlimited | Unlimited | Unlimited |
 | Disk space | 1 GB | 1 GB | 10 GB | 50 GB | 250 GB | 1 TB |
-| Auto scale | n/a | n/a | Supported | Supported | Supported | Supported |
+| Auto scale | n/a | n/a | n/a | Supported | Supported | Supported |
 | Deployment slots | n/a | n/a | n/a | 5 | 20 | 20 |
 | Max instances | n/a | n/a | Up to 3 | Up to 10 | Up to 30 | Up to 100 |
 

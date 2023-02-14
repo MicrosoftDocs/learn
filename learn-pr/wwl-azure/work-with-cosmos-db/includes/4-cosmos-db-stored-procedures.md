@@ -1,3 +1,4 @@
+
 Azure Cosmos DB provides language-integrated, transactional execution of JavaScript that lets you write **stored procedures**, **triggers**, and **user-defined functions (UDFs)**. To call a stored procedure, trigger, or user-defined function, you need to register it. For more information, see [How to work with stored procedures, triggers, user-defined functions in Azure Cosmos DB](/azure/cosmos-db/sql/how-to-use-stored-procedures-triggers-udfs).
 
 > [!NOTE]

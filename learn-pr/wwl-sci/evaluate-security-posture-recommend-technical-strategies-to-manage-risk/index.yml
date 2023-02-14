@@ -33,6 +33,7 @@ products:
 - azure
 - defender-for-cloud
 - defender-for-cloud-apps
+- azure-sentinel
 subjects:
 - architecture
 - security
