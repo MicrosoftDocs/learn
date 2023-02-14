@@ -48,5 +48,5 @@ If you want to take your learning to the next level, try setting up a pipeline t
 For more information about Artifacts, see:
 
 - [Create and target an environment.](https://learn.microsoft.com/azure/devops/artifacts/start-using-azure-artifacts)
-- [Configure permissions](https://learn.microsoft.com/azure/devops/artifacts/feeds/feed-permissions)
-- [Set pipeline permissions](https://learn.microsoft.com/azure/devops/pipelines/policies/permissions)
+- [Configure permissions.](https://learn.microsoft.com/azure/devops/artifacts/feeds/feed-permissions)
+- [Set pipeline permissions.](https://learn.microsoft.com/azure/devops/pipelines/policies/permissions)
