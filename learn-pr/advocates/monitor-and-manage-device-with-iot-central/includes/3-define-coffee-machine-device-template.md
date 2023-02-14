@@ -46,7 +46,7 @@ A device model is the part of the device template that defines the telemetry, pr
 - The **@type** field is used to indicate the type of the [Digital Twin Definition Language (DTDL)](/azure/digital-twins/concepts-models) entity. In this case, the entity is an Interface.
 - The **contents** field is an array of attribute definitions. Each attribute must provide a @type (Property, Telemetry, Relationship, or Component) to identify the sort of interface information it describes. In this case, telemetry, property, and command objects describe the features of the connected coffee maker.
 - The **displayName** field is an object that provides a human-readable name for the interface or entity in different languages. In this case, the interface name is "Connected Coffee Maker".
-- The **@context** field is used to specify the DTDL context in which the interface or entity is defined. In this case, it references the "iotcentral" and "dtdl" contexts.
+- The **@context** field is used to specify the DTDL context in which the interface or entity is defined. In this case, it references the `iotcentral` and `dtdl` contexts.
 - The **name** field is a unique identifier for the telemetry, property, or command.
 - Each telemetry field represent measurements or events, and are often used to describe device sensor readings. For example, "Water Temperature" has a **schema** of "double" and a **unit** of "degreeCelsius". The **decimalPlaces**, **maxValue**, and **minValue** fields specify additional details about the telemetry data.
 - Each property field represents the state of an entity. For example, "Device Warranty Expired" is of type boolean and can have its state set by the connected device as true or false.
