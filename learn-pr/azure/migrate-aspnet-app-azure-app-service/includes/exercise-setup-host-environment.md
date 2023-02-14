@@ -17,17 +17,17 @@ If you just created a free Azure account, you're the owner of your subscription.
 2. In the **Subscriptions** page, select the subscription in which you want to create an Azure Migrate project. 
 3. In the subscription, select **Access control (IAM)** > **Check access**.
 4. In **Check access**, search for the relevant user account.
-5. In **Add a role assignment**, click **Add**.
+5. In **Add a role assignment**, select **Add**.
 
     ![Search for a user account to check access and assign a role.](../media/azure-account-access.png)
 
-6. In **Add role assignment**, select the Owner role, and select the account (azmigrateuser in our example). Then click **Save**.
+6. In **Add role assignment**, select the Owner role, and select the account (azmigrateuser in our example). Then select **Save**.
 
     ![Opens the Add Role assignment page to assign a role to the account.](../media/assign-role.png)
 
 7. Your Azure account also needs **permissions to register Azure Active Directory apps.**
-8.  In Azure portal, navigate to **Azure Active Directory** > **Users** > **User Settings**.
-9.  In **User settings**, verify that Azure AD users can register applications (set to **Yes** by default).
+8. In Azure portal, navigate to **Azure Active Directory** > **Users** > **User Settings**.
+9. In **User settings**, verify that Azure AD users can register applications (set to **Yes** by default).
 
       ![Verify in User Settings that users can register Active Directory apps.](../media/register-apps.png)
 
@@ -37,7 +37,7 @@ If you just created a free Azure account, you're the owner of your subscription.
 
 1. To deploy the workshop environment, begin by navigating to the [Azure portal](https://portal.azure.com).
 2. In your Azure subscription, create a new resource group **LearnAppContainerization**.
-3. Click the button below to deploy the resources for the application. Clicking this button will take you to the Azure portal to deploy a custom template.  
+3. Select the button below to deploy the resources for the application. Selecting this button will take you to the Azure portal to deploy a custom template.  
 
      [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftDocs%2Fmslearn-azuremigrate-appcontainerization-aspnet%2Fmain%2FASP.NET%2520Containerization%2Ftemplate.json)
 
@@ -76,4 +76,4 @@ If you just created a free Azure account, you're the owner of your subscription.
    cd Downloads
    .\AppContainerizationInstaller.ps1
    ```
-4. Open Microsoft Edge browser and launch the tool by browsing to **https://toolclient:44369**. If you encounter a warning, click *advanced* and *continue to toolclient*. 
+4. Open Microsoft Edge browser and launch the tool by browsing to **https://toolclient:44369**. If you encounter a warning, select **Advanced** and **Continue to toolclient**. 

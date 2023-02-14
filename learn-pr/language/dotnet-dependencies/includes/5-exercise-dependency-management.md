@@ -2,7 +2,7 @@ Dependencies that you use in your apps can be updated often and may contain new 
 
 ## Upgrade app dependencies
 
-1. In the **DotNetDependencies.csproj** file, look at the `dependencies`. It should look like this code.
+1. In the **DotNetDependencies.csproj** file, look at the `dependencies`. It should look like this code:
 
     ```xml
     <ItemGroup>
@@ -29,7 +29,7 @@ Dependencies that you use in your apps can be updated often and may contain new 
    dotnet list package --outdated
    ```
 
-   The output should look something like the following output. You might see different values in the `Latest` column.
+   The output should look something like the following output. You might get different values in the `Latest` column.
 
    ```output
    Project `DotNetDependencies` has the following updates to its packages
@@ -50,7 +50,7 @@ Dependencies that you use in your apps can be updated often and may contain new 
    dotnet add package Humanizer 
    ```
 
-   Your output should look like this:
+   You should get output similar to the following:
 
    ```output
    info : PackageReference for package 'Humanizer' version '2.11.10' updated in file 'C:\Users\username\Desktop\DotNetDependencies\DotNetDependencies.csproj'.

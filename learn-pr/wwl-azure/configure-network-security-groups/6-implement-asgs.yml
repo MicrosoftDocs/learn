@@ -1,16 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-network-security-groups.implement-asgs-new
-title: Implement Application Security Groups
+title: Implement application security groups
 metadata:
-  title: Implement Application Security Groups
-  description: "Implement Application Security Groups"
-  ms.date: 11/04/2022
+  title: Implement application security groups
+  description: "Implement application security groups for machines in your virtual network."
+  ms.date: 02/13/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 4
 content: |
   [!include[](includes/6-implement-asgs.md)]

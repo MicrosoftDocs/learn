@@ -40,7 +40,9 @@ The Bonsai UI can assist you in generating an assessment configuration file for 
 
 1. Add height_z as a configuration variable and constrain the value to be a float between 0.1 m and 0.2 m.
 
-    `height_z: number<0.1 .. 0.2>`
+    ```
+    height_z: number<0.1 .. 0.2>
+    ```
 
     ![The screenshot shows how to edit configuration variable.](../media/add-height.png)
 

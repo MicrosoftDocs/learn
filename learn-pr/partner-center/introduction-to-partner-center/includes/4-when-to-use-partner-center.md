@@ -56,9 +56,9 @@ For more specific information, read the topics listed in the following table.
 
 | Related topic | Description |
 | --- | --- |
-| [CSP global markets](/partner-center/regional-authorization-overview)| See the countries, regions, and currencies where you can sell CSP offers, based on your company’s location.|
+| [CSP global markets](/partner-center/regional-authorization-overview)| See the countries/regions and currencies where you can sell CSP offers, based on your company’s location.|
 | [Partner Center announcements](/partner-center/announcements/index)| Stay on top of new developments and changes to Partner Center, partner programs, and product offers.|
-|([Software pricing](/partner-center/software-pricing)|Find the latest CSP software pricing. Software subscription pricing includes term-based software subscriptions for all supported currencies and provides the unit price and estimated retail price. Software pricing is updated on the first day of every month.|
+| [Software pricing](/partner-center/software-pricing)|Find the latest CSP software pricing. Software subscription pricing includes term-based software subscriptions for all supported currencies and provides the unit price and estimated retail price. Software pricing is updated on the first day of every month.|
 | [Sell to specialized industries](/partner-center/get-special-pricing-for-offers)| Learn about Microsoft's special, reduced pricing for certain customer groups, including education customers, non-profit customers, and government users.|
 |[Save with Azure savings plans](/partner-center/azure-savings-plan)|Use the Azure portal to acquire and manage Azure savings plans for customers.|
 

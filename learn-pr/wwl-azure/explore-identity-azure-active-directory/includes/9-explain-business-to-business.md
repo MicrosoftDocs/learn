@@ -1,3 +1,4 @@
+
 Business to business communication for your applications and users is essential.  You need to work with external organizations without having to maintain multiple identities.  That creates the space for Azure Business to Business (B2B) services.  And the product Azure AD External Identities, part of Microsoft Entra.
 
 ## Azure AD External Identities

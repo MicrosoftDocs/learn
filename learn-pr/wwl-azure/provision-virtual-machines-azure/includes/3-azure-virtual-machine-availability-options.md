@@ -1,10 +1,11 @@
+
 Azure offers several options for ensuring the availability of the virtual machines, and applications, you have deployed.
 
 ## Availability zones
 
-[Availability zones](/azure/availability-zones/az-overview?context=/azure/virtual-machines/context/context) expands the level of control you have to maintain the availability of the applications and data on your VMs. An Availability Zone is a physically separate zone, within an Azure region. There are three Availability Zones per supported Azure region.
+[Availability zones](/azure/availability-zones/az-overview?context=/azure/virtual-machines/context/context) expand the level of control you have to maintain the availability of the applications and data on your VMs. An Availability Zone is a physically separate zone, within an Azure region. There are three Availability Zones per supported Azure region.
 
-An Availability Zone in an Azure region is a combination of a fault domain and an update domain. For example, if you create three or more VMs across three zones in an Azure region, your VMs are effectively distributed across three fault domains and three update domains. The Azure platform recognizes this distribution across update domains to make sure that VMs in different zones are not scheduled to be updated at the same time.
+An Availability Zone in an Azure region is a combination of a fault domain and an update domain. For example, if you create three or more VMs across three zones in an Azure region, your VMs are effectively distributed across three Fault domain and three update domains. The Azure platform recognizes this distribution across update domains to make sure that VMs in different zones are not scheduled to be updated at the same time.
 
 Build high-availability into your application architecture by co-locating your compute, storage, networking, and data resources within a zone and replicating in other zones. Azure services that support Availability Zones fall into two categories:
 
@@ -13,13 +14,13 @@ Build high-availability into your application architecture by co-locating your c
 
 ## Availability sets
 
-An [availability set](/azure/virtual-machines/availability-set-overview) is a logical grouping of VMs that allows Azure to understand how your application is built to provide for redundancy and availability. An availability set is composed of two additional groupings that protect against hardware failures and allow updates to safely be applied - fault domains (FDs) and update domains (UDs).
+An [availability set](/azure/virtual-machines/availability-set-overview) is a logical grouping of VMs that allows Azure to understand how your application is built to provide for redundancy and availability. An availability set is composed of two additional groupings that protect against hardware failures and allow updates to be safely applied - Fault domain (FDs) and update domains (UDs).
 
-### Fault domains
+### Fault domain
 
-A fault domain is a logical group of underlying hardware that share a common power source and network switch, similar to a rack within an on-premises datacenter. As you create VMs within an availability set, the Azure platform automatically distributes your VMs across these fault domains. This approach limits the impact of potential physical hardware failures, network outages, or power interruptions.
+A fault domain is a logical group of underlying hardware that share a common power source and network switch, similar to a rack within an on-premises datacenter. As you create VMs within an availability set, the Azure platform automatically distributes your VMs across these Fault domain. This approach limits the impact of potential physical hardware failures, network outages, or power interruptions.
 
-:::image type="content" source="../media/virtual-machine-fault-domains.png" alt-text="Image showing a representation of a Fault domains. Two separate hardware racks are shown with VMs and databases distributed across each.":::
+:::image type="content" source="../media/virtual-machine-fault-domains.png" alt-text="Image showing a representation of a Fault domain. Two separate hardware racks are shown with VMs and databases distributed across each.":::
 
 ### Update domains
 
@@ -28,9 +29,9 @@ An update domain is a logical group of underlying hardware that can undergo main
 :::image type="content" source="../media/virtual-machine-update-domains.png" alt-text="Conceptual drawing of the update domain and fault domain configuration. Image shows groups of hardware that can be maintained or rebooted at the same time.":::
 
 
-## Virtual machine scale sets
+## Virtual Machine Scale Sets
 
-[Azure virtual machine scale sets](/azure/virtual-machine-scale-sets/overview?context=/azure/virtual-machines/context/context) let you create and manage a group of load balanced VMs. The number of VM instances can automatically increase or decrease in response to demand or a defined schedule.
+[Azure Virtual Machine Scale Sets](/azure/virtual-machine-scale-sets/overview?context=/azure/virtual-machines/context/context) let you create and manage a group of load balanced VMs. The number of VM instances can automatically increase or decrease in response to demand or a defined schedule.
 
 ## Load balancer
 

@@ -1,10 +1,10 @@
-On the surface, the `for` statement is another iteration statement that allows you to iterate through a code block, and thereby change the flow of execution of your code. However, once we examine how each works, we can better identify the nuances of each iteration statement and when to use them.
+On the surface, the `for` statement is another iteration statement that allows you to iterate through a code block, and thereby change the flow of execution of your code. However, once we examine how each statement works, we can better identify the nuances of each iteration statement and when to use them.
 
-## What is the `for` statement?
+## What's the `for` statement?
 
 The `for` statement iterates through a code block a specific number of times. This makes the `for` statement unique among the other iteration statements. The `foreach` statement iterates through a block of code once for each item in a sequence of data like an array or collection. The `while` statement iterates through a block of code until a condition is met.  
 
-Furthermore, the `for` statement gives you much more control over the process of iteration by exposing the conditions for iteration.
+Furthermore, the `for` statement gives you much more control over the iteration process by exposing the conditions for iteration.
 
 In this exercise, you'll use the `for` statement, and learn how to control the iteration's pre-condition, completion condition, its iteration pattern, and more. Also, you'll learn of common use cases for the `for` statement.
 
@@ -37,9 +37,9 @@ When you run this code, you'll get the following output:
 There are six parts to the `for` statement.
 
 - The `for` keyword.
-- A set of parenthesis that defines the conditions of for iteration. It contains three distinct parts, separated by the end of statement operator, a semi-colon.
-- The first part defines and initializes the iterator variable. In this example: `int i = 0`. The documentation refers to this section as the **initializer**.
-- The second part defines the completion condition. In this example: `i < 10`. In other words, the runtime will continue to iterate over the code in the code block below the `for` statement while `i` is less than `10`. When `i` becomes equal to `10`, the runtime stops executing the `for` statement's code block. The documentation refers to this section as the **condition**.
+- A set of parentheses that defines the conditions of for iteration. It contains three distinct parts, separated by the end of statement operator, a semi-colon.
+- The first part defines and initializes the iterator variable; in this example: `int i = 0`. The documentation refers to this section as the **initializer**.
+- The second part defines the completion condition; in this example: `i < 10`. In other words, the runtime will continue to iterate over the code in the code block below the `for` statement while `i` is less than `10`. When `i` becomes equal to `10`, the runtime stops executing the `for` statement's code block. The documentation refers to this section as the **condition**.
 - The third part defines the action to take after each iteration. In this case, after each iteration, `i++` will increment the value of `i` by 1. The documentation refers to this section as the **iterator**.
 - Finally, the code block. This is the code that will be executed for each iteration. Notice that the value of `i` is referenced inside of the code block. The documentation refers to this section as the **body**.
 
@@ -51,7 +51,7 @@ As we stated at the outset, the `for` statement has two unique qualities among i
 - You should use the `for` statement when you know the number of times you need to iterate through a block of code ahead of time.
 - The `for` statement allows you to control the way in which each iteration is handled. We'll see a few examples of this in the rest of the steps in this exercise.
 
-Given our rules for naming variables, you may wonder if `i` is a valid name for the variable that holds the current iteration. In this case, `i` is considered by most to be valid. Other popular choices are `x` and `counter`. `j` is also used in those situations when you have an outer `for` statement that uses `i`, and need to create an iteration variable for an inner `for` statement.
+Given our rules for naming variables, you may wonder if `i` is a valid name for the variable that holds the current iteration. In this case, most consider `i` to be valid. Other popular choices are `x` and `counter`. You can also use `j` in those situations when you have an outer `for` statement that uses `i`, and need to create an iteration variable for an inner `for` statement.
 
 ### Step 2 - Change the iteration conditions
 
@@ -84,7 +84,7 @@ When you run the code, you'll get the following output:
 
 By changing the three parts of the `for` statement, we change its behavior.
 
-- We initialize the iteration variable to 10.
+- We initialize the iteration variable to `10`.
 - We change the completion condition to exit the `for` statement when `i` is less than `0`.
 - We change the pattern of the iterator to subtract `1` from `i` each time we complete an iteration.
 
@@ -181,13 +181,13 @@ foreach (var name in names)
 }
 ```
 
-If you attempt to compile and run this code, you will get an exception:
+If you attempt to compile and run this code, you'll get an exception:
 
 ```output
 Cannot assign to name because it is a 'foreach iteration variable'
 ```
 
-In other words, you can't reassign the value of `name` because it is part of the `foreach` iteration's inner implementation.
+In other words, you can't reassign the value of `name` because it's part of the `foreach` iteration's inner implementation.
 
 ### Step 7 - Overcoming the limitation of the foreach statement using the for statement
 

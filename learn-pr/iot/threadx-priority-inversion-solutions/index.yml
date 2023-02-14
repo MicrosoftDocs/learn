@@ -3,7 +3,7 @@ uid: learn.iot.threadx-priority-inversion-solutions
 metadata:
   title: ThreadX priority inversion solutions
   description: Learn how preemption threshold and priority inheritance work as solutions to priority inversion in Azure RTOS ThreadX.
-  ms.date: 01/27/2022
+  ms.date: 04/19/2022
   author: timlt
   ms.author: timlt
   ms.reviewer: liydu
@@ -12,7 +12,7 @@ metadata:
   ms.prod: learning-azure
 title: ThreadX priority inversion solutions
 summary: Learn how preemption threshold and priority inheritance work as solutions to priority inversion in Azure RTOS ThreadX.
-abstract:  | 
+abstract: |
   In this module, you will:
   - Understand the dangers of priority inversion
   -	Understand how to use priority inheritance to avoid priority inversion problems.
@@ -25,25 +25,25 @@ prerequisites: |
   - Previous modules in this [learning path](/training/paths/azure-rtos-threadx)
 iconUrl: /training/achievements/iot/threadx-priority-inversion-solutions.svg
 levels:
-- beginner
+  - beginner
 roles:
-- developer
+  - developer
 products:
-- azure
-- azure-iot
-- azure-rtos
+  - azure
+  - azure-iot
+  - azure-rtos
 subjects:
-- iot
+  - iot
 units:
-- learn.iot.threadx-priority-inversion-solutions.introduction
-- learn.iot.threadx-priority-inversion-solutions.overview
-- learn.iot.threadx-priority-inversion-solutions.scenario
-- learn.iot.threadx-priority-inversion-solutions.activities
-- learn.iot.threadx-priority-inversion-solutions.priority-inheritance
-- learn.iot.threadx-priority-inversion-solutions.preemption-threshold
-- learn.iot.threadx-priority-inversion-solutions.building-blocks
-- learn.iot.threadx-priority-inversion-solutions.exercise-build-debug
-- learn.iot.threadx-priority-inversion-solutions.knowledge-check
-- learn.iot.threadx-priority-inversion-solutions.summary
+  - learn.iot.threadx-priority-inversion-solutions.introduction
+  - learn.iot.threadx-priority-inversion-solutions.overview
+  - learn.iot.threadx-priority-inversion-solutions.scenario
+  - learn.iot.threadx-priority-inversion-solutions.activities
+  - learn.iot.threadx-priority-inversion-solutions.priority-inheritance
+  - learn.iot.threadx-priority-inversion-solutions.preemption-threshold
+  - learn.iot.threadx-priority-inversion-solutions.building-blocks
+  - learn.iot.threadx-priority-inversion-solutions.exercise-build-debug
+  - learn.iot.threadx-priority-inversion-solutions.knowledge-check
+  - learn.iot.threadx-priority-inversion-solutions.summary
 badge:
   uid: learn.iot.threadx-priority-inversion-solutions.badge

@@ -3,7 +3,7 @@ uid: learn.wwl.create-stored-procedures-table-valued-functions
 metadata:
   title: Create stored procedures and user-defined functions
   description: "Create stored procedures and user-defined functions"
-  ms.date: 12/02/2022
+  ms.date: 02/02/2023
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial

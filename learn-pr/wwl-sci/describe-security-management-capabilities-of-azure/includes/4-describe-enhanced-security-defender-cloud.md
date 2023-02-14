@@ -1,3 +1,4 @@
+
 Microsoft Defender for Cloud is offered in two modes:
 
 - Microsoft Defender for Cloud (Free) - Microsoft Defender for Cloud is enabled for free on all your Azure subscriptions. Using this free mode provides the secure score and its related features: security policy, continuous security assessment, and actionable security recommendations to help you protect your Azure resources.

@@ -14,7 +14,7 @@ Sometimes, data stored in older files is fixed length, where character positions
 
 Perhaps we need to remove the customer's name to format the data so that it can be sent to a separate process. Since we know the exact position and length of the user's name, we can easily remove it using the `Remove()` method.
 
-Comment out or delete all of the code in the .NET Editor. Then, write code in the .NET Editor so that it matches the following code listing:
+Comment out or delete all of the code in the .NET Editor. Then, write code in the .NET Editor that matches the following code listing:
 
 ```csharp-interactive
 string data = "12345John Smith          5000  3  ";
@@ -49,7 +49,7 @@ When you run the code, you should get the following output:
 This is example data
 ```
 
-Here we used the `Replace()` method twice. The first time we replaced the string `--` with an empty space. The second time we replaced the string `-` with an empty string, which completely removes the character from the string.
+Here, we used the `Replace()` method twice. The first time we replaced the string `--` with an empty space. The second time we replaced the string `-` with an empty string, which completely removes the character from the string.
 
 ## Recap
 

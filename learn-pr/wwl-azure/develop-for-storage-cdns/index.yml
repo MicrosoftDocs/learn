@@ -2,8 +2,8 @@
 uid: learn.wwl.develop-for-storage-cdns
 metadata:
   title: Develop for storage on CDNs
-  description: "Develop for storage on CDNs"
-  ms.date: 12/13/2022
+  description: "Learn how the Azure Content Delivery Network (CDN) functions, how to control cache behavior, and how to perform actions by using .NET."
+  ms.date: 02/08/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial

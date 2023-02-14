@@ -2,7 +2,7 @@ In this module, you learned how to design a solution to log and monitor Azure re
 
 ## Learn more with Azure documentation
 
-- Read about [sources of data in Azure Monitor](/azure/azure-monitor/agents/data-sources).
+- Read about [sources of data in Azure Monitor](/azure/azure-monitor/data-sources).
 
 - Review [infrastructure metrics and logs in Azure Architecture Center](/azure/architecture/framework/scalability/monitor-infrastructure).
 

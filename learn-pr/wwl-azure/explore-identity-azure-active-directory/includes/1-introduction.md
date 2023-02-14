@@ -1,3 +1,4 @@
+
 This module will cover a wide view of the definitions and available services for identity provided in the Microsoft Cloud from Azure AD to Microsoft 365.  You start with the basics of authentication, authorization, and access tokens.
 
 From this firm foundation of what an identity is, why it's important we explore deeper scenarios. We move into governance and lifecycle management of your identities and identity solutions. The final section opens up the concept of zero trust, and how it should be applied to your identity solutions. What is the Azure Active Directory (Azure AD) architecture and the connection with identity in Microsoft 365?

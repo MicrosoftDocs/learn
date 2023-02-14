@@ -3,7 +3,7 @@ In this module, you created an ASP.NET Core web API running on .NET. The web API
 You learned that creating a web API with ASP.NET Core entails:
 
 1. Creating a new application by using the *ASP.NET Core Web API* template.
-1. Creating classes that inherit from the `ControllerBase` class and that contain methods that respond to HTTP requests. 
+1. Creating classes that inherit from the `ControllerBase` class and that contain methods that respond to HTTP requests.
 
 Because this pattern allows you to focus on a single controller action at a time, you can create functional web APIs pretty quickly with a little practice.
 

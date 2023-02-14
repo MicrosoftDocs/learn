@@ -2,7 +2,7 @@ In this module, you'll see what makes a startup pitch effective.
 
 ## Attributes of a great startup pitch
 
-By analyzing pitches that have been delivered by large numbers of startups, you can distill them down to several common themes that emerge from the best of them. These themes are covered in the following sections.
+By analyzing pitches delivered by large numbers of startups, you can distill them down to several common themes that emerge from the best of them. These themes are covered in the following sections.
 
 ### Clearly explained
 
@@ -18,13 +18,13 @@ It's surprisingly common for an audience to remain unclear about what the compan
 
 Great startup pitches engage the audience in the first 30 seconds. Then, make a clear argument for why your startup needs to exist, why it's solving an important problem, and why your audience should pay attention to the rest of the pitch. If you have a personal, authentic connection to the problem, this is a great time to explain it.
 
-If you fail to engage the audience in the first 30 seconds, people will tune you out and begin checking their email or Twitter account. Immediate engagement is especially important if you're pitching at a demo day alongside a large number of other startups.
+If you fail to engage the audience in the first 30 seconds, people will tune you out and begin checking their email or Twitter account. Immediate engagement is especially important if you're pitching at a demo day alongside many other startups.
 
 If you've experienced great early traction, or anything else noteworthy, talk about it in the first 60 seconds. Nothing gets investors more excited about a business than telling them that it's making money and growing fast.
 
 ### Context
 
-You might have spent the last 10 years of your life deeply immersed in a certain problem space, but it's likely that most of the audience has not. You'll need to explain the problem clearly, so that your solution and entire business model make sense in context.
+You might have spent the last 10 years of your life deeply immersed in a certain problem space, but it's likely that most of the audience hasn't. You'll need to explain the problem clearly, so that your solution and entire business model make sense in context.
 
 Clear context is particularly important for deep-tech startups or those operating in narrow B2B niches, and less critical for consumer-focused startups.
 
@@ -46,11 +46,11 @@ Sometimes, startups are based on a unique window of opportunity, such as a funda
 
 You can keep your audience engaged by having a logical structure to your pitch, outlining that structure at the outset, and then delivering that structure.
 
-For example, at the beginning of your pitch, you might tell your audience that you're going to start by giving them some important context for the problem you're solving. Then, you might explain why it's important, and why no one else has solved it. Next, you describe your solution and why your customers are signing up for it. You then cover the business model and traction. Finally, you talk about next steps and your funding round.
+For example, at the beginning of your pitch, you might tell your audience that you're going to start by giving them some important context for the problem you're solving. Then, you might explain why it's important and why no one else has solved it. Next, you describe your solution and why your customers are signing up for it. You can then cover the business model and traction. Finally, you can talk about next steps and your funding round.
 
 As you then step through each element of the pitch, your audience will remain more engaged, because they already have a rough road map in their minds and can see how each part of your pitch flows logically from the last part.
 
-In contrast, if your pitch jumps around and doesn't follow a logical flow, or isn't in the order your audience is expecting, it will be much more difficult for them to absorb.
+In contrast, if your pitch jumps around and doesn't follow a logical flow, or isn't in the order your audience is expecting, it'll be much more difficult for them to absorb.
 
 ## Design your PowerPoint presentation
 
@@ -59,7 +59,7 @@ Besides a sound message, a successful pitch also needs a polished delivery. An e
 ### Slides support the message
 
 - Your slides should support the message that you're delivering verbally, not the other way around.
-- Focus on communicating your key points verbally, support them with images, charts, and other pieces of information, one idea per slide.
+- Focus on communicating your key points verbally, Support them with images, charts, and other pieces of information, one idea per slide.
 - It's tempting to try to cram a lot of content into your slides in the hope that they'll convey the key points. However, humans struggle to read and listen at the same time.
 - Don't use your slides as a teleprompter. You're creating them for the audience, not for yourself.
 
@@ -85,7 +85,7 @@ If you're pitching at a public event, or one that will be recorded and posted on
 
 ### Display your product
 
-If you've built a great product, be sure to display it in your presentation. It has been said, only somewhat facetiously, that the likelihood of a live product demo working is inversely proportional to the importance of the meeting. If you're feeling brave, do include a live demo in your pitch, but be prepared with at least one fallback solution, such as a prerecorded video walk-through of your product or a few attractive photos.
+If you've built a great product, be sure to display it in your presentation. It's been said (only somewhat facetiously) that the likelihood of a live product demo working is inversely proportional to the importance of the meeting. If you're feeling brave, do include a live demo in your pitch, but be prepared with at least one fallback solution, such as a prerecorded video walk-through of your product or a few attractive photos.
 
 ## Deliver a compelling pitch
 
@@ -143,23 +143,23 @@ After you've done this with a few test audiences, you'll be able to identify any
 
 ### Call out the elephant in the room
 
-If there's a potential major issue or obstacle that your audience is likely to be aware of, address it early in your presentation. For example, let's say one of your cofounders previously founded a company that's now being sued. Acknowledge the issue up front rather than let your audience wonder whether you're going to bring it up. Taking it off the table in this way allows everyone to focus on your presentation rather than on the elephant.
+If there's a potential major issue or obstacle of which your audience is likely to be aware, address it early in your presentation. For example, let's say one of your cofounders previously founded a company that's now being sued. Acknowledge the issue up front rather than let your audience wonder whether you're going to bring it up. Taking it off the table in this way allows everyone to focus on your presentation rather than on the elephant.
 
 ### Leave breadcrumbs
 
-If there's something you want your audience to ask you about, mention it briefly in your presentation and note that you'd be happy to give more details at the end if time permits. This technique has been used by many startups to effectively guarantee that the first question they're asked is the one that they're ready to give a great answer to.
+If there's something you want your audience to ask you about, mention it briefly in your presentation and note that you'd be happy to give more details at the end if time permits. This technique has been used by many startups to effectively guarantee that the first question they're asked is the one to which they're ready to give a great answer.
 
 ### Anticipate questions
 
-You should be able to anticipate most of the questions that will come up from investors. Doing so will enable you to have answers at the ready, and perhaps even have a backup slide or two that address the questions. You can do this by road testing your presentation on a friendly investor audience (such as a mentor who has also been an investor), or even someone who's low on your investor wish list, and noting the questions that come up frequently.
+You should be able to anticipate most of the questions that will come up from investors. Doing so will allow you to have answers at the ready, and perhaps even have a backup slide or two that address the questions. You can do this by road testing your presentation on a friendly investor audience (such as a mentor who has also been an investor), or even someone who's low on your investor wish list, and noting the questions that come up frequently.
 
 ### Iterate and practice
 
 The biggest mistake that startup founders make with investor pitches is to not prepare sufficiently.
 
-Unless you're an extremely practiced presenter, it's likely that your presentation will improve with each cycle of *deliver* > *feedback* > *edit*, up to about 20 iterations. The most useful feedback will come from people who have seen a lot of pitches (such as investors or experienced mentors), and the least useful will come from friends or family.
+Unless you're an extremely practiced presenter, it's likely that your presentation will improve with each cycle of *deliver* > *feedback* > *edit*, up to about 20 iterations. The most useful feedback will come from people who've seen a lot of pitches (such as investors or experienced mentors), and the least useful will come from friends or family.
 
-Practicing your pitch will help you to memorize it, enabling you to deliver it in a more authentic and relaxed way, rather than using all of your mental energy just to recall the content and delivering a stilted, nervous presentation.
+Practicing your pitch will help you to memorize it, allowing you to deliver it in a more authentic and relaxed way, rather than using all of your mental energy just to recall the content and delivering a stilted, nervous presentation.
 
 Practicing also helps you to resist the temptation to repeatedly look at the slides on the screen while you're presenting. A good rule of thumb is to test, refine, and improve your presentation at least 10 times before you deliver it to an investor audience, and to practice at least one hour for every minute of your pitch. That is, to prepare a 20-minute investor presentation, you practice it at least 10 times, for a total of about 20 hours by the time you've settled on a final version.
 

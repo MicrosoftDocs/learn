@@ -1,10 +1,10 @@
-You want to begin styling your resume web page. You will start by selecting the font and setting sizes for the various elements you will use on the page.
+You want to begin styling your resume web page. You'll start by selecting the font and setting sizes for the various elements you'll use on the page.
 
-This module uses [vscode.dev](https://vscode.dev/) - a web-based version of Visual Studio Code and [CodeSwing](https://marketplace.visualstudio.com/items?itemName=codespaces-Contrib.codeswing). These tools help streamline the development process. No local installation is required to complete the exercises below.
+This module uses [vscode.dev](https://vscode.dev/) - a web-based version of Visual Studio Code and [CodeSwing](https://marketplace.visualstudio.com/items?itemName=codespaces-Contrib.codeswing). These tools help streamline the development process. No local installation is required to complete the exercises that follow.
 
 ## Create a Project
 
-You'll start by creating a folder, setting up your tooling, and creating a "swing" using CodeSwing in vscode.dev. A swing will automatically display the results of your code in vscode.dev. This allows you to quickly make modifications with the updates happening in real time.
+You'll start by creating a folder, setting up your tooling, and creating a "swing" using CodeSwing in vscode.dev. A swing will automatically display the results of your code in vscode.dev. Using VSCode with CodeSwing allows you to quickly make modifications with a preview of updates happening in real time.
 
 1. Create a folder on your desktop named **resume**.
 1. Open [vscode.dev](https://vscode.dev).
@@ -26,7 +26,7 @@ Visual Studio Code will create two sections side by side. The left will be your 
 
 ## Create the HTML
 
-You will use existing HTML to allow us to focus solely on the CSS. The HTML includes the `link` element to reference the CSS file.
+You'll use existing HTML to allow us to focus solely on the CSS. The HTML includes the `link` element to reference the CSS file.
 
 1. Copy the following HTML into the window titled **index.html**:
 
@@ -73,7 +73,7 @@ You will use existing HTML to allow us to focus solely on the CSS. The HTML incl
 
 ## Set Font Type and Size
 
-By default, most browsers will use a serif font such as Times New Roman. You want to set this to a more popular font. Additionally, you want to set the size of the font for the page and various headers.
+By default, most browsers will use a serif font such as Times New Roman. You want to set the page default to a more popular font. Additionally, you want to set the size of the font for the page and various headers.
 
 1. Inside the file titled **style.css**, add the following CSS to set the font family to Verdana with fallback options, and the font size to 12 pixels on the `html` element:
 
@@ -84,7 +84,7 @@ By default, most browsers will use a serif font such as Times New Roman. You wan
     }
     ```
 
-    You are using the `html` element to update the root font and sizing. This will allow you to use `rem` sizing.
+    You're using the `html` element to update the root font and sizing. With the `html` element will allow you to use `rem` sizing.
 
 1. Notice the page automatically updates with the changes.
 1. Add the following CSS code to the end of **style.css** to set the sizes for `h1` through `h4`.
@@ -110,7 +110,7 @@ By default, most browsers will use a serif font such as Times New Roman. You wan
     `rem` is based on the root size, which is 14 pixels. As an example, this CSS will set the size of `h1` to 22.4 pixels.
 
 1. The page is automatically updated in vscode.dev.
-1. Leave the window open as you will use it in the next exercise.
+1. Leave the window open as you'll use it in the next exercise.
 
 ## Result and Next Steps
 

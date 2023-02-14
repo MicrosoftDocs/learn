@@ -62,13 +62,18 @@ To download your exported brain:
 
 1. Log in to your Azure Container Registry with the Azure CLI:
 
-    ``az login``
+    ```
+    az login
+    az acr login --name ACR_NAME
+    ```
 
-    ``az acr login --name ACR_NAME``
+    - **ACR_NAME**: The name of your Azure Container Registry (ACR) instance.
 
 2. Fetch the containerized brain image and save it to your local machine. Replace WORKSPACE_NAME, WORKSPACE_ID,BRAIN_NAME,VERSION,OS_TYPE and ARCHITECTURE.
 
-    ``docker pull  WORKSPACE_NAME.azurecr.io/WORKSPACE_ID/BRAIN_NAME:VERSION-OS_TYPE-ARCHITECTURE``
+    ```
+    docker pull  WORKSPACE_NAME.azurecr.io/WORKSPACE_ID/BRAIN_NAME:VERSION-OS_TYPE-ARCHITECTURE
+    ```
 
     - **ACR_NAME**: The name of your Azure Container Registry (ACR) instance.
     - **WORKSPACE_NAME**: The name you gave to your Bonsai workspace when it was provisioned.
@@ -77,13 +82,17 @@ To download your exported brain:
 
 3. Run the container as a local server.  Replace WORKSPACE_NAME, WORKSPACE_ID,BRAIN_NAME,VERSION,OS_TYPE and ARCHITECTURE.
 
-    ``docker run \ --detach \ --publish 5000:5000 \ --name CONTAINER_NAME \ WORKSPACE_NAME.azurecr.io/WORKSPACE_ID/BRAIN_NAME:VERSION-OS_TYPE-ARCHITECTURE``
+    ```
+    docker run \ --detach \ --publish 5000:5000 \ --name CONTAINER_NAME \ WORKSPACE_NAME.azurecr.io/WORKSPACE_ID/BRAIN_NAME:VERSION-OS_TYPE-ARCHITECTURE
+    ```
 
     The detach flag starts the container in the background without blocking your terminal. The 	publish flag tells Docker to route traffic on port 5000 of the container to port 5000 on your local machine (localhost:5000).
 
 4. Check the status of the container. Run the following to list the status of all running containers by default.
 
-    ``docker ps``
+    ```
+    docker ps
+    ```
 
 ## Clean up
 

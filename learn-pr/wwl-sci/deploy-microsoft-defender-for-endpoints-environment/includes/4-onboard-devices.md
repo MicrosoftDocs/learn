@@ -63,19 +63,17 @@ In Settings, Endpoints, Device management, Onboarding select operating system dr
 
 After you select the appropriate operating system option, the supported deployment options are outlined.   Here's a list of the Windows 10 supported deployment options:
 
+- Local script (for up to 10 devices)
+
 - Group Policy
 
 - Microsoft Endpoint Configuration Manager current branch and later
 
 - Mobile Device Management (including Microsoft Intune)
 
-- Local script (for up to 10 devices)
-
 - VDI onboarding script for non-persistent devices
 
-- System Center Configuration Manager 2012 / 2012 R2 / 1511 /1602
-
-:::image type="content" source="../media/onboard-deployment.png" alt-text="Screenshot of the Windows 10 Deployment options." lightbox="../media/onboard-deployment.png":::
+:::image type="content" source="../media/onboard-deployment.png" alt-text="Screenshot of the device onboarding Deployment methods." lightbox="../media/onboard-deployment.png":::
 
 As you can see, there are many configuration options.  
 

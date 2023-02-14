@@ -1,25 +1,17 @@
+Workbooks provide a flexible canvas for free-form data exploration. Azure Workbooks combine text, log queries, metrics, and parameters, and include multiple kinds of visualizations and analyses. Use Workbooks to extract data from multiple data sources and combine them into an individualized report. You can share Workbooks with your team in the Azure portal, to interactively gather and share information.
 
-Azure Workbooks combine text, log queries, metrics, and parameters in single tool. Workbooks use multiple kinds of visualizations and analyses to create rich interactive reports. Workbooks are the foundation for many of the Azure monitor insights. You can use Workbook's flexible canvas for free-form data exploration to extract data from multiple data sources and combine them into an individualized report. You can share Workbooks with your team in the Azure portal, to interactively gather and share information.
+Workbooks are helpful to analyze things like:
+
+- Virtual machine usage. You can discover metrics for CPU utilization, disk space, memory, and network dependencies.
+- Performance of a recently provisioned VM. You can display metrics for key counters and other log events to other team members.
+- Results of a resizing experiment of your VM. You can show each usage metric and the analytics queries used to evaluate the experiment, and clearly call-out if a metric isn't within the target range.
+- The effect of an outage on the usage of a resource.
 
 ## Data Sources
-You can query and combine data from multiple data sources within a single report. Workbooks support these data sources:
-
-- Azure Monitor logs
-- Activity logs
-- Metrics
-- Azure Resource Graph
-- Azure Resource Manager REST operations
-- Azure Data Explorer
-- Azure resource health
-- JSON
-- Merged data
-- Data imported from custom endpoints
-- Workload health
-- Azure RBAC data
-- Change Analysis (preview)
+Workbooks can query data from multiple sources. You can combine the data from multiple data sources within a single report, and transform the data to give you visual insights into the availability, performance, usage, and overall health of your resources.
 
 ## Visualizations
-Using workbooks, you can use a rich set of visualizations to customize the reports based on your needs and requirements. You can create a workbook that uses a combination of any of these visualizations:
+Workbooks provide a rich set of visualizations you can use to customize reports, including:
 
 - Text parameters
 - Charts
@@ -31,6 +23,6 @@ Using workbooks, you can use a rich set of visualizations to customize the repor
 - Maps
 - Text visualizations
 
-This is an example of a report that combines data from multiple sources to produce some visualizations to help you analyze the data.
+This is an example of a report that combines data from multiple sources and uses visualizations that help analyze data.
 
 :::image type="content" source="../media/2-workbook-sample.png" alt-text="Screenshot of a sample workbook with several visualizations.":::

@@ -13,7 +13,6 @@ durationInMinutes: 3
 content: |
   [!include[](includes/7-knowledge-check.md)] 
 quiz:
-  title: Check your knowledge
   questions:
   - content: "What do you find in the selected area of the Microsoft Bonsai platform?"
     choices:

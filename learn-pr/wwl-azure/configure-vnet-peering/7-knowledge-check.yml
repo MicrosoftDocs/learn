@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/24/2022
+  ms.date: 02/10/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -17,36 +17,36 @@ content: |
 quiz:
   title: ""
   questions:
-  - content: "Virtual network peering is successfully established when the peering status for both virtual network peerings shows which status?"
+  - content: "When virtual networks are successfully peered, what's the peering status for both virtual networks in the peering?"
     choices:
-    - content: "Connected"
+    - content: "**Initiated**"
+      isCorrect: false
+      explanation: "Incorrect. The **Initiated** status is shown when the peering is first created."
+    - content: "**Connected**"
       isCorrect: true
-      explanation: "Correct. The peering isn't successfully established until the peering status for both virtual network peerings is Connected."
-    - content: "Initiated"
+      explanation: "Correct. The peering isn't successfully established until the peering status for both virtual networks is **Connected**."
+    - content: "**Peered**"
       isCorrect: false
-      explanation: "Incorrect. The Initiated status is shown when the peering is first created."
-    - content: "Peered"
-      isCorrect: false
-      explanation: "Incorrect. Peered isn't a virtual network status."
-  - content: "Which allows peered virtual networks to share the gateway and get access to resources?"
+      explanation: "Incorrect. **Peered** isn't a valid virtual network peering status."
+  - content: "What approach enables peered virtual networks to share the gateway and get access to resources?"
     choices:
-    - content: "Gateway transit"
-      isCorrect: true
-      explanation: "Correct. Gateway transit allows peered virtual networks to share the gateway and get access to resources."
     - content: "Point-to-site connectivity"
       isCorrect: false
-      explanation: "Incorrect. Point-to-site creates a secure connection to a virtual network from an individual client computer."
+      explanation: "Incorrect. Point-to-site connectivity creates a secure connection to a virtual network from an individual client computer."
     - content: "Transitivity"
       isCorrect: false
       explanation: "Incorrect. Transitivity refers to virtual networks communicating with the peers of their peers."
-  - content: "Which best describes virtual network peering?"
-    choices:
-    - content: "Creating a virtual network disrupts other resources."
-      isCorrect: false
-      explanation: "Incorrect. There's no downtime to resources in either virtual network."
-    - content: "Traffic between the virtual networks is kept on the Microsoft backbone network."
+    - content: "Gateway transit"
       isCorrect: true
-      explanation: "Correct. The Azure backbone handles traffic between virtual networks."
+      explanation: "Correct. Gateway transit allows peered virtual networks to share the gateway and get access to resources."
+  - content: "How is Azure Virtual Network peering best described?"
+    choices:
+    - content: "Traffic between virtual networks is kept on the Microsoft backbone network."
+      isCorrect: true
+      explanation: "Correct. The Azure backbone handles traffic between virtual networks in a virtual network peering."
+    - content: "Virtual network peering disrupts other resources."
+      isCorrect: false
+      explanation: "Incorrect. When peering is implemented, there's no downtime to resources in either virtual network."
     - content: "Peered virtual networks must be in the same region."
       isCorrect: false
-      explanation: "Incorrect. Global virtual network peering connects virtual networks that are in different Azure regions."
+      explanation: "Incorrect. Global virtual network peering connects virtual networks in different Azure regions."

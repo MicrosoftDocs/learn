@@ -1,3 +1,4 @@
+
 Microsoft 365 Defender is an enterprise defense suite that protects against sophisticated cyberattacks. With Microsoft 365 Defender, you can natively coordinate the detection, prevention, investigation, and response to threats across endpoints, identities, email, and applications.
 
 This short three-minute video provides an essential overview of Microsoft 365 Defender.

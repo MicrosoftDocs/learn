@@ -1,3 +1,4 @@
+
 DevSecOps applies [innovation security](/azure/cloud-adoption-framework/secure/innovation-security) by integrating security processes and tools into the DevOps development process.
 
 Because DevOps itself is an emerging discipline with a high degree of process variations, successful DevSecOps hinges on understanding and thoughtfully integrating security into the development process. Adding security should start with low-friction changes to the code, the development processes, and the infrastructure that hosts the workload. Focus first on changes with the highest positive effect on security while placing a low burden on DevOps processes and skills.
@@ -57,7 +58,7 @@ Another option to consider is to use a pre-commit framework if the version contr
 
 Pull requests are standard in the development process. Part of the pull request process is peer reviews that often reveal undiscovered defects, bugs, or issues related to human mistakes. It's good practice to have a security champion or knowledgeable security teammate who can guide the developer during the peer review process before creating a pull request.
 
-Secure coding practice guidelines help developers learn essential secure coding principles and how they should be applied. There are secure coding practices available, such as [OWASP secure coding practices](https://owasp.org/www-project-secure-coding-practices-quick-reference-guide/migrated_content) to incorporate with general coding practices.
+Secure coding practice guidelines help developers learn essential secure coding principles and how they should be applied. There are secure coding practices available, such as [OWASP secure coding practices](https://owasp.org/www-project-secure-coding-practices-quick-reference-guide/) to incorporate with general coding practices.
 
 ## Commit the code
 

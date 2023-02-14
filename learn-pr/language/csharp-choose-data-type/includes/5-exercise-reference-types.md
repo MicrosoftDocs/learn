@@ -1,4 +1,4 @@
-Reference types include arrays, classes, and strings. Reference types are treated differently from value types in regard to the way values are stored when the application is executing.
+Reference types include arrays, classes, and strings. Reference types are treated differently from value types regarding the way values are stored when the application is executing.
 
 In this exercise, we'll learn how reference types are different from value types, and how to use the `new` operator to associate a variable with a value in the computer's memory.
 
@@ -12,7 +12,7 @@ Let's write some code that illustrates these ideas more clearly.
 
 ### Step 1 - Delete or comment out code from previous exercises
 
-Select the code from the previous exercise, and select the `backspace` or `del` key. Optionally, comment out the previous code in the .NET Editor.
+Select the code from the previous exercise and select the <kbd>Backspace</kbd> or <kbd>Del</kbd> key. Optionally, comment out the previous code in the .NET Editor.
 
 ### Step 2 - Define a reference type variable
 
@@ -43,7 +43,7 @@ The two lines of code in step 3 are typically shortened to a single line of code
 int[] data = new int[3];
 ```
 
-While there is no output to observe, hopefully this exercise added clarity to how the C# syntax relates to the steps of the process for working with reference types.
+While there's no output to observe, hopefully this exercise added clarity to how the C# syntax relates to the steps of the process for working with reference types.
 
 ### Why is the C# string data type different?
 

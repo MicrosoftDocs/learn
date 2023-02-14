@@ -36,8 +36,8 @@ Once you've completed the steps above, you'll need to specify the deployment con
 1. **Name**: Specify a unique app name for the application. This name will be used to generate the application URL and used as a prefix for other resources being created as part of this deployment. 
 2. **Application Configuration**: For any application configurations that were parameterized, use the following value for the current deployment.
     - **URL**: To create the URL to be specified, navigate to *LearnAppContainerization* resource group and copy the name of the SQL server. 
-        - The SQL server will name will be in the following format - "appcontainerization-lab0000". 
-        - Replace the SQL Server name in the following connection string and paste it in the App Containerization tool. <br/>
+      - The SQL server will name will be in the format: "appcontainerization-lab0000". 
+      - Replace the SQL Server name in the following connection string and paste it in the App Containerization tool. <br/>
         Server=tcp:{SQLSERVERNAME}.database.windows.net,1433;Initial Catalog=partsunlimiteddb;Persist Security Info=False;User ID=adminuser;Password=Password@123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
 
 3. Click **Apply** to save the deployment configuration.
@@ -56,7 +56,7 @@ Once the deployment configuration for the application is saved, the tool will ge
 
 ## **Browse the deployed application**
 
-Now that your application container is deployed, you can browse the migrated application as follows - 
+Now that your application container is deployed, you can browse the migrated application as follows: 
 
 1. Copy the URL displayed in the **Deployment status** column.
 2. Paste the URL in a new browser tab. 

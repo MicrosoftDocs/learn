@@ -16,7 +16,7 @@ According to a recent study by Kauffmann Fellows, founders and executives of US 
 
 Again, bias has been shown to play a large part in this discrepancy. A [study by Paul Gompers and Sophie Wang from Harvard Business School](https://www.hbs.edu/ris/Publication%20Files/17-067_b5578676-e44c-40aa-a9d8-9e72c287afe8.pdf?azure-portal=true) showed that investors are 39 percent more likely to invest in startups founded by people who share their race. At the same time, only 2 percent of venture capital investors are Hispanic, and fewer than 1 percent are black.
 
-The reasons for greater performance by ethnically diverse teams include greater diversity of ideas and perspectives, greater objectivity in decision-making, and less susceptibility to group-think. For more information, see [Why Diverse Teams Are Smarter](https://hbr.org/2016/11/why-diverse-teams-are-smarter?azure-portal=true) by *Harvard Business Review*.
+The reasons for greater performance by ethnically diverse teams include greater diversity of ideas and perspectives, greater objectivity in decision-making, and less susceptibility to group-think. For more information, check out [Why Diverse Teams Are Smarter](https://hbr.org/2016/11/why-diverse-teams-are-smarter?azure-portal=true) by *Harvard Business Review*.
 
 ## Neurodiversity
 
@@ -32,7 +32,7 @@ For these reasons, large companies such as [SAP, Hewlett Packard, and Microsoft 
 
 One in four adults in the US has some type of disability, which includes challenges with [mobility (14 percent), cognition (11 percent), hearing (6 percent), and vision (5 percent)](https://www.cdc.gov/ncbddd/disabilityandhealth/infographic-disability-impacts-all.html?azure-portal=true).
 
-The inclusion of people with disabilities in product development has been shown to greatly improve companies' success in building products that need to be accessible by those with disabilities. Building accessible products is becoming not just desirable but mandated in many settings. It's much easier to achieve if your team includes people with a disability.
+The inclusion of people with disabilities in product development has been shown to greatly improve companies' success in building products that need to be accessible by those with disabilities. Building accessible products is becoming not just desirable, but mandated in many settings. It's much easier to achieve if your team includes people with a disability.
 
 Research has also shown that teams composed of people with disabilities make better business decisions and develop products that are more in tune with customers' changing needs. This leads to [revenue increases of up to 19 percent](https://www.fastcompany.com/90603481/4-reasons-why-hiring-disabled-workers-is-good-for-business?azure-portal=true).
 
@@ -69,9 +69,9 @@ Here are some of the ways in which startups can benefit from [building teams tha
 
 It's clear that creating a diverse team can be a massive competitive advantage for startups. A diverse population is a highly skilled but underutilized talent pool. Startups that can attract and retain the right candidates can use this enhanced talent to their advantage and outperform companies with less diverse teams.  
 
-Calendly is a great example of a company benefiting from a focus on diversity. It has implemented diversity programs to encourage and support employees from diverse backgrounds, including programs specifically for women of color. It has become recognized as a highly desirable employer, with [96 percent of employees reporting it's a great place to work](https://www.greatplacetowork.com/certified-company/7023983?azure-portal=true) compared to a US average of 59 percent of employees.
+Calendly is a great example of a company benefiting from a focus on diversity. It has implemented diversity programs to encourage and support employees from diverse backgrounds, including programs specifically for women of color. It's become recognized as a highly desirable employer, with [93 percent of employees reporting it's a great place to work](https://www.greatplacetowork.com/certified-company/7023983?azure-portal=true) compared to a US average of 59 percent of employees.
 
-Attracting and retaining diverse candidates requires creating a work environment that enables them to deliver their best work. Companies need to think about how to achieve this before recruiting. For example, there's no point in recruiting a candidate with autism unless you've understood their needs (which might include minimizing visual and auditory distractions) and created a work environment that allows them to be productive.
+Attracting and retaining diverse candidates requires creating a work environment that allows them to deliver their best work. Companies need to think about how to achieve this before recruiting. For example, there's no point in recruiting a candidate with autism unless you've understood their needs (which might include minimizing visual and auditory distractions) and created a work environment that allows them to be productive.
 
 How you go about building a diverse team depends on where you're starting from. As a rule, what you start with scales. If your founding team lacks diversity by the time it has around 12 people, that level of diversity is likely to remain static as the company grows. That tendency is largely due to the influence of unconscious bias in hiring decisions. A company that has a homogenous founding team whose networks lack diversity will need to take deliberate steps to broaden its reach and overcome unconscious bias in hiring.
 
@@ -85,7 +85,5 @@ Here are some practical tips for inclusive hiring, based on lessons from founder
 - Review all your communications, including website, social media, and email campaigns. Reflect on whether they represent the diversity that you're seeking to achieve within your company.
 - If your team is still small, consider enlisting a group of peers from diverse backgrounds to sanity check your diversity plans, communications, work environment, and hiring processes.
 - Appoint someone within your team (ideally a founder) to lead diversity and inclusion, and attach performance metrics to the achievement of agreed diversity goals.
-- Reach out to programs that support the development of diverse communities, and look for ways to tap into their networks.
+- Reach out to programs that support the development of diverse communities and look for ways to tap into their networks.
 - Connect with other founders who have successfully built diverse teams and seek out their advice. Some of them might also act as a referral source for great candidates.
-
-

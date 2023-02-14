@@ -1,6 +1,6 @@
-In this lab, you will convert some JavaScript functions to TypeScript.
+In this lab, you'll convert some JavaScript functions to TypeScript.
 
-### Exercise 1: Convert a JavaScript function to a TypeScript with strongly typed parameters and return types
+### Exercise 1: Convert a JavaScript function to TypeScript with strongly typed parameters and return types
 
 The following JavaScript code contains three functions:
 
@@ -19,7 +19,7 @@ Convert the functions to TypeScript with strongly typed parameters and return ty
 
 1. Open the file **module04.ts**.
 1. Locate `TODO: Update the BuildArray function`. 
-1. In the `BuildArray` function, add types to parameter list, return value, and variables.
+1. In the `BuildArray` function, add types to the parameter list, return value, and variables.
 
     ```typescript
     function buildArray(items: number, sortOrder: 'ascending' | 'descending'): number[] {
@@ -145,4 +145,4 @@ cd ../m04-end
 code .
 ```
 
-Open the file **module04.ts** to see the solution to this lab. See the **Lab setup** section above for more information about setting up your development environment to run the solution.
+Open the file **module04.ts** to see the solution to this lab. 

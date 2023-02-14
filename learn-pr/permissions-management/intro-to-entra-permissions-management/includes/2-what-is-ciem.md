@@ -6,13 +6,13 @@ Cloud infrastructure entitlement management, or CIEM (pronounced *kim*), is a Sa
 
 ## Why is CIEM important?
 
-As company workflows and system applications continue to move to the cloud environments, there's an increasing need for monitoring identities and privileges in a secure environment that is dynamic. CIEM allows companies to discover, manage, and monitor identities and their permissions in real time across multiple cloud infrastructures. 
+As company workflows and system applications continue to move to the cloud, there's an increasing need for monitoring identities and privileges in a secure environment that is dynamic. CIEM allows companies to discover, manage, and monitor identities and their permissions in real time across multiple cloud infrastructures. 
 
-Managing permissions with a CIEM approach in your organization allows you to prevent what's called Permissions Gap.  
+Managing permissions with a CIEM approach in your organization allows you to prevent what's called the Permissions Gap problem.  
 
 ![Image showing the gap between Permissions Granted and Permissions Used](../media/permissions-gap.png)
 
-Permissions Gap is the space in which permissions granted go unused or unmonitored. Permissions Gap can become a problem as it expands the space for cyber attacks in your organization's cloud infrastructure. This can leave you open to risk of a security breach from accidental or malicious permissions use. 
+The Permissions Gap is defined as the difference between Permissions Granted and Permissions Used (Permissions Gap = Permissions Granted - Permissions Used), or, it's the number of granted permissions in your environment that go unused or unmonitored. Having a large Permissions Gap is problematic as it expands the space for cyber attacks in your organization's cloud infrastructure. This expanded space can leave you open to risk of a security breach from accidental or malicious permissions use. 
 
 ## CIEM market growth & viability
 
@@ -38,6 +38,6 @@ CIEM solutions use analytics, machine learning (ML) and other methods to detect 
 
 CIEM solutions continuously monitor access activity to identify outdated identities and right-size active permissions. Continuous monitoring also helps organizations adhere to compliance regulations and standards for user permissions.
 
-CIEM removes the gap between moving company workflows to the cloud and ensuring those workflows remain secure, remain accessible to those who use them, and remain simple to manage.
+CIEM removes the gap between moving company workflows to the cloud and ensuring those workflows remain secure, remain accessible to the resources that use them, and remain simple to manage.
 
 Now that you've had a quick overview of CIEM, let's move on to the product, Microsoft Entra Permissions Management, Microsoft’s CIEM solution.

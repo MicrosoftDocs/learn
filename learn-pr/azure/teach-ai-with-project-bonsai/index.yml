@@ -9,13 +9,13 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Teach AI like you would a human with Project Bonsai
-summary: In this module, you'll learn about capabilities and essential concepts of Machine Teaching, the steps to add intelligence into Autonomous Intelligence systems and the types of business problems that you can solve using Machine Teaching for Autonomous AI.
+summary: Implementing a monolithic (one concept) brain. Set up your Bonsai workplace and train a brain. Learn how to read the assessment graphs that tell you how the brain is performing.
 abstract: | 
   In this module, you'll learn how to:
-  - List the critical innovation factors of Project Bonsai
-  - Describe how AI specification documents are used to build Bonsai brains
-  - Explain coding and training of monolithic brains with the Bonsai UI
-  - Describe the Project Bonsai workflow using the Moab as an example
+  - Understand the Bonsai interface and the integration between brains and simulations
+  - Gain familiarity with the components and functionality of automatic assessments
+  - Translate an existing AI spec design into a trained Bonsai brain
+  - Evaluate the success of a Bonsai training session using the training data
 
   "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)***"
 prerequisites: | 

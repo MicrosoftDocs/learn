@@ -22,11 +22,11 @@ Follow this procedure to assign the Virtual Machine Contributor role to a user a
 
 1. Select **Add** > **Add role assignment**.
 
-    If you don't have permissions to assign roles, the Add role assignment option will be disabled.
+    If you don't have permissions to assign roles, the **Add role assignment** option will be disabled.
 
    :::image type="content" source="../media/5-resource-group-add-role-assignment.png" alt-text="Screenshot that shows Add role assignment menu.":::
 
-    The Add role assignment page opens.
+    The **Add role assignment** page opens.
 
 1. On the **Roles** tab, search for and select **Virtual Machine Contributor**.
 
@@ -54,7 +54,7 @@ Follow this procedure to assign the Virtual Machine Contributor role to a user a
 
 ## Remove access
 
-In Azure RBAC, to remove access, you remove a role assignment.
+In Azure RBAC, you'll remove a role assignment to remove access.
 
 1. In the list of role assignments, select the user with the Virtual Machine Contributor role.
 

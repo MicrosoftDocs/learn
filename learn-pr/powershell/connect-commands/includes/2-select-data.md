@@ -2,7 +2,7 @@ Running a command can be powerful, you get data from your local machine or from 
 
 ## Use Get-Member to inspect output
 
-When you pass the results of a command to `Get-Member`, `Get-Member` returns information about the object, like:
+When you pass the results of a command to `Get-Member`, `Get-Member` returns information about an object, like:
 
 - The type of object being passed to Get-Member.
 - The Properties of the object that may be evaluated.
@@ -14,7 +14,7 @@ Let's demonstrate this fact by running `Get-Member` on the command `Get-Process`
 Get-Process | Get-Member
 ```
 
-Note how you are using the pipe `|` and that by calling `Get-Member`, you are in fact creating a pipeline already. The first few lines of output from the preceding statement look like so:
+Note how you're using the pipe `|` and that by calling `Get-Member`, you are in fact creating a pipeline already. The first few lines of output from the preceding statement look like so:
 
 ```output
 TypeName: System.Diagnostics.Process
@@ -35,7 +35,7 @@ The output shows the type of object that the `Get-Process` command returns (`Sys
 
 ## Select-Object
 
-By default, when you run a command that is going to output to the screen, PowerShell automatically adds the command `Out-Default`. If the data isn't just a collection of strings, but objects - PowerShell looks at the object type to determine if there's a registered view for that object type, and if so, it uses that view.
+By default, when you run a command that is going to output to the screen, PowerShell automatically adds the command `Out-Default`. When the output data is a collection of objects, PowerShell looks at the object type to determine if there's a registered view for that object type. If it finds one, it uses that view.
 
 The view generally doesn't contain all the properties of an object because it wouldn't display properly on screen, so only some of the most common properties are included in the view.
 
@@ -132,7 +132,7 @@ This sequence of commands gives you an output that differs from the default outp
 
 ## Sorting
 
-When using `Sort-Object` in a pipeline, PowerShell sorts the output data by using the default properties first. If no such properties exist, it then tries to compare the objects themselves. The sorting is either by ascending or descending order.
+When you use `Sort-Object` in a pipeline, PowerShell sorts the output data by using the default properties first. If no such properties exist, it then tries to compare the objects themselves. The sorting is either by ascending or descending order.
 
 By providing properties, you can choose to sort by specific columns, like so:
 
@@ -152,4 +152,4 @@ In addition to sorting by column name, you can also provide your own custom expr
 Get-Process 'some process' | Sort-Object -Property @{Expression = "Name"; Descending = $True}, @{Expression = "CPU"; Descending = $False}
 ```
 
-The preceding example demonstrates how powerful and flexible `Sort-Object` can be. This topic is a bit advanced and out of scope for this module, but will be revisited in more advanced modules.
+The preceding example demonstrates how powerful and flexible `Sort-Object` can be. This subject is a bit advanced and out of scope for this module, but is revisited in more advanced modules.

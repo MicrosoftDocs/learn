@@ -1,3 +1,4 @@
+
 In this exercise you will learn how to:
 
 * Create a new Redis Cache instance by using Azure CLI commands.

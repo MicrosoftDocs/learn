@@ -4,13 +4,13 @@ title: Explore software composition analysis
 metadata:
   title: Explore software composition analysis
   description: "Explore software composition analysis"
-  ms.date: 12/09/2022
+  ms.date: 01/10/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 65
+durationInMinutes: 4
 content: |
   [!include[](includes/3-explore-software-composition-analysis.md)]

@@ -1,4 +1,4 @@
-Let's take a look at how this brain is designed. You can see the full AI specification document [here](https://github.com/MicrosoftDocs/mslearn-machine-teaching-for-autonomous-ai/blob/main/MineCo%20Gyratory%20Crusher%20Optimization%20presentation.pptx?raw=true).
+Let's take a look at how this brain is designed. You can see the full AI specification document [here](https://github.com/MicrosoftDocs/mslearn-machine-teaching-for-autonomous-ai/blob/main/Bonsai%20Brain,%20AI%20Solution%20Spec%20-%20Chemical%20Process%20Optimization.docx?raw=true).
 
 ## Understand a modular brain
 

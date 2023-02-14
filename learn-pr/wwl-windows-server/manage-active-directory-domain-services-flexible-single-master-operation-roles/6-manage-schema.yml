@@ -4,7 +4,7 @@ title: Manage AD DS schema
 metadata:
   title: Manage AD DS schema
   description: "Manage AD DS schema"
-  ms.date: 12/12/2022
+  ms.date: 01/05/2023
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ quiz:
   questions:
   - content: "Which tool can you use to trigger an AD DS schema update?"
     choices:
-    - content: "ADSI.MSC"
+    - content: "ADSIEDIT.MSC"
       isCorrect: true
       explanation: "That's correct. In the ADSI.MSC console, you can right-click or access the context menu on the Schema container, and then select **Update Schema now**. This will trigger an update."
     - content: "Active Directory Schema console"

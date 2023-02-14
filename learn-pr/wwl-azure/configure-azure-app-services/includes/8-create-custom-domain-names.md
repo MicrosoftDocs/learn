@@ -9,7 +9,7 @@ There are three steps to create a custom domain name. The following steps outlin
 > [!Important]
 > To map a custom DNS name to your app, you need a paid tier of an App Service plan for your app.
 
-1. **Reserve your domain name**. If you haven't registered for an external domain name for your app, the easiest way to set up a custom domain is to buy one directly in the Azure portal. (This name isn't the Azure assigned name of `\*.azurewebsites.net`.) The registration process enables you to manage your web app's domain name directly in the Azure portal instead of going to a third-party site. Configuring the domain name in your web app is also a simple process in the Azure portal. If you don't use the Azure portal, you can use any domain registrar. When you sign up, the registration site helps you through the process.
+1. **Reserve your domain name**. If you haven't registered for an external domain name for your app, the easiest way to set up a custom domain is to buy one directly in the Azure portal. (This name isn't the Azure assigned name of `\*.azurewebsites.net`.) The registration process enables you to manage your web app's domain name directly in the Azure portal instead of going to a third-party site. Configuring the domain name in your web app is also a simple process in the Azure portal. 
 
 1. **Create DNS records to map the domain to your Azure web app**. The Domain Name System (DNS) uses data records to map domain names to IP addresses. There are several types of DNS records.
 

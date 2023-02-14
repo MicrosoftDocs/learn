@@ -37,7 +37,7 @@ For more information about host and container image compatibility, check out [Wi
 You can find and download base images through the Microsoft Container Registry. Use the docker pull command to download a specific base image.
 
 > [!Important]
-> OS base images provide the Windows Sever OS components and its server roles. Microsoft also provides specific images for different frameworks already installed, such as IIS, .Net Framework and .Net.
+> OS base images provide the Windows Server OS components and its server roles. Microsoft also provides specific images for different frameworks already installed, such as IIS, .Net Framework and .Net.
 
 When you enter the docker pull command, specify the version that matches the version of the host machine. For example, if you wanted to pull a Nano Server image based upon Windows Server 2022, you would use the following command:
 

@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-manage-hybrid-identity.demo-manage-pass-through-authentication-seamless-single-sign
-title: Demo - Manage pass-through authentication and Seamless Single Sign-On (SSO)
+title: Demo - Manage pass-through authentication and seamless single sign-on (SSO)
 metadata:
-  title: Demo - Manage pass-through authentication and Seamless Single Sign-On (SSO)
-  description: "Demo - Manage pass-through authentication and Seamless Single Sign-On (SSO)"
-  ms.date: 12/14/2022
+  title: Demo - Manage pass-through authentication and seamless single sign-on (SSO)
+  description: "Demo - Manage pass-through authentication and seamless single sign-on (SSO)"
+  ms.date: 02/03/2023
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
