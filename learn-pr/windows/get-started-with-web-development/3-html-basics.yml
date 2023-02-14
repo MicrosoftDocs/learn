@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+title: Exercise - Add basic HTML to your web app
+uid: learn-windows.introduction-to-web-development.3-html-basics
+metadata:
+  title: Exercise - Add basic HTML to your web app
+  description: Learn how to add the basic HTML to your web app.
+  ms.date: 2/8/2023
+  author: mmpadget
+  ms.author: quradic
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows
+durationInMinutes: 10
+content: |
+    [!include[](includes/3-html-basics.md)]
