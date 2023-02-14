@@ -10,4 +10,4 @@ If you're running multiple databases with usage spikes, or operating as a SaaS p
 
 - [Choose between the vCore and the DTU purchasing model](/azure/sql-database/sql-database-purchase-models)
 
-- [Azure SQL Database DTU Calculator](https://www.mssqltips.com/sqlservertip/5606/how-to-use-the-azure-sql-database-dtu-calculator/)
+- [Get Azure SQL SKU recommendations](/sql/dma/dma-sku-recommend-sql-db)
