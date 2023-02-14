@@ -39,7 +39,7 @@ This step isn't required when using the sandbox. However, if you're running this
 1. Run the following command to restore your prior *:::no-loc text=".bashrc":::* profile startup file from a backup saved by the setup script.
 
     ```bash
-    cp ~/.bashrc.bak.learn-helm-aks ~/.bashrc
+    cp ~/.bashrc.bak.learn-helm-deploy-aks ~/.bashrc
     ```
 
 ## Learn More
