@@ -3,11 +3,7 @@
     "@type": "Interface",
     "contents": [
         {
-            "@type": [
-                "Telemetry",
-                "NumberValue",
-                "Temperature"
-            ],
+            "@type": ["Telemetry", "NumberValue", "Temperature"],
             "displayName": {
                 "en": "Water Temperature"
             },
@@ -19,11 +15,7 @@
             "minValue": 86
         },
         {
-            "@type": [
-                "Telemetry",
-                "NumberValue",
-                "Humidity"
-            ],
+            "@type": ["Telemetry", "NumberValue", "Humidity"],
             "displayName": {
                 "en": "Air Humidity"
             },
@@ -34,10 +26,7 @@
             "minValue": 20
         },
         {
-            "@type": [
-                "Telemetry",
-                "State"
-            ],
+            "@type": ["Telemetry", "State"],
             "displayName": {
                 "en": "Brewing"
             },
@@ -64,10 +53,7 @@
             }
         },
         {
-            "@type": [
-                "Telemetry",
-                "State"
-            ],
+            "@type": ["Telemetry", "State"],
             "displayName": {
                 "en": "Cup Detected"
             },
@@ -94,12 +80,7 @@
             }
         },
         {
-            "@type": [
-                "Property",
-                "NumberValue",
-                "Initialized",
-                "Temperature"
-            ],
+            "@type": ["Property", "NumberValue", "Initialized", "Temperature"],
             "displayName": {
                 "en": "Optimal Temperature"
             },
@@ -113,10 +94,7 @@
             "minValue": 86
         },
         {
-            "@type": [
-                "Property",
-                "BooleanValue"
-            ],
+            "@type": ["Property", "BooleanValue"],
             "displayName": {
                 "en": "Device Warranty Expired"
             },
