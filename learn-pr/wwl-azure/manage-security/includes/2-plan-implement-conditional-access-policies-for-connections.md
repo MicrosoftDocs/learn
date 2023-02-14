@@ -1,4 +1,6 @@
-Planning your Conditional Access deployment is critical to achieving your organization's access strategy for apps **and** resources.
+
+
+Planning your Conditional Access deployment is critical to achieving your organization's access strategy for apps and resources.
 
 Azure Active Directory (Azure AD) Conditional Access analyses signals such as user, device, and location to automate decisions and enforce organizational access policies for resource. You can use Conditional Access policies to apply access controls like multifactor authentication (MFA). Conditional Access policies allow you to prompt users for MFA when needed for security, and stay out of users’ way when not needed.
 
@@ -22,3 +24,4 @@ The benefits of deploying Conditional Access are:
  -  An account with Conditional Access administrator privileges.
  -  A non-administrator user with a password you know, such as testuser.
  -  A group that the non-administrator user is a member of.
+ 
