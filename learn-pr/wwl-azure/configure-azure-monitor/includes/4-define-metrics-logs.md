@@ -1,8 +1,8 @@
 All data collected by Azure Monitor fits into one of two fundamental types, [metrics and logs](/azure/azure-monitor/platform/data-collection):
 
-- **Metrics** are numerical values that describe some aspect of a system at a particular point in time. Metrics are lightweight and capable of supporting near real-time scenarios.
+**Metrics** are numerical values that describe some aspect of a system at a particular point in time. Metrics are lightweight and capable of supporting near real-time scenarios.
 
-- **Logs** contain different kinds of data organized into records with different sets of properties for each type. Data like events and traces are stored as logs along with performance data so all the data can be combined for analysis.
+**Logs** contain different kinds of data organized into records with different sets of properties for each type. Data like events and traces are stored as logs along with performance data so all the data can be combined for analysis.
 
 ### Things to know about Azure Monitor metrics
 
