@@ -42,7 +42,7 @@ A device model is the part of the device template that defines the telemetry, pr
 
 :::code language="json" source="../resources/CoffeeMaker.json":::
 
-- The **@id** field is the [Digital Twin Model Identifier (DTMI)](https://github.com/Azure/opendigitaltwins-dtdl/blob/master/DTDL/v2/DTDL.v2.md#digital-twin-model-identifier) for the model, in the format `dtmi:<domain>:<unique-model-identifier>;<model-version-number>`.
+- The `@id` field is the [Digital Twin Model Identifier (DTMI)](https://github.com/Azure/opendigitaltwins-dtdl/blob/master/DTDL/v2/DTDL.v2.md#digital-twin-model-identifier) for the model, in the format `dtmi:<domain>:<unique-model-identifier>;<model-version-number>`.
 - The **@type** field is used to indicate the type of the [Digital Twin Definition Language (DTDL)](/azure/digital-twins/concepts-models) entity. In this case, the entity is an Interface.
 - The **contents** field is an array of attribute definitions. Each attribute must provide a @type (Property, Telemetry, Relationship, or Component) to identify the sort of interface information it describes. In this case, telemetry, property, and command objects describe the features of the connected coffee maker.
 - The **displayName** field is an object that provides a human-readable name for the interface or entity in different languages. In this case, the interface name is "Connected Coffee Maker".
