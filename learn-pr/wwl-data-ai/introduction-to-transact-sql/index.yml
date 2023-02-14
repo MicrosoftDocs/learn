@@ -3,15 +3,15 @@ uid: learn.wwl.intro-to-transact-sql
 metadata:
   title: Introduction to Transact-SQL
   description: "Introduction to Transact-SQL"
-  ms.date: 02/09/2023
+  ms.date: 02/13/2023
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Transact-SQL
-summary: This module provides an introduction to relational databases, the SQL language and Transact-SQL. You will learn what kinds of statements make up the SQL language and look at the SELECT statement in detail.
+summary: This module provides an introduction to relational databases, the SQL language and Transact-SQL. You'll learn what kinds of statements make up the SQL language and look at the SELECT statement in detail.
 abstract: |
-  After completing this module, you will be able to:
+  After completing this module, you'll be able to:
   - Understand what SQL is for
   - Identify database objects in schemas
   - Identify SQL statement types
@@ -19,7 +19,7 @@ abstract: |
   - Work with data types
   - Handle NULLs
 prerequisites: |
-  Before starting this module, it is helpful to have experience of working with tables with data; for example in a spreadsheet.
+  Before starting this module, it's helpful to have experience of working with tables with data; for example in a spreadsheet.
 iconUrl: /training/achievements/explore-sql-server-and-query-tools.svg
 levels:
 - beginner
