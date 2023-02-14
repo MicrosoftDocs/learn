@@ -4,13 +4,11 @@ title: Explore the Azure cloud security advantages
 metadata:
   title: Explore the Azure cloud security advantages
   description: "Explore the Azure cloud security advantages"
-  ms.date: 02/10/2023
+  ms.date: 02/14/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 7
+  zone_pivot_groups: None
 content: |
   [!include[](includes/3-azure-cloud-security-advantages.md)]
