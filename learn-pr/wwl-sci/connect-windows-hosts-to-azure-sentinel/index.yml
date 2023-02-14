@@ -5,7 +5,7 @@ metadata:
   description: "Connect Windows hosts to Microsoft Sentinel"
   ms.date: 08/16/2022
   author: wwlpublish
-  ms.author: bneeb
+  ms.author: kelawson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Connect Windows hosts to Microsoft Sentinel
