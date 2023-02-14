@@ -73,7 +73,7 @@ Storage is billed for all of your existing codespaces, regardless of whether the
 
 ## How can I view my usage of products and services?
 
-The GitHub user interface makes it easy for you to find statistics of license usage for a specific organization, across organizations, for enterprise accounts, or for instances. Also, you can view details about your license usage for machine accounts and peripheral services. 
+The GitHub user interface makes it easy for you to find statistics of license usage for a specific organization, or across organizations, enterprise accounts, or instances. Also, you can view details about your license usage for machine accounts and peripheral services. 
 
 Licenses for paid products are available to an organization on a per user basis. Each of these licenses is referred to as a *seat*. It's possible to set up a machine user: a GitHub account that's attached to an SSH key and used exclusively for automation. A machine user also consumes a license.
 
