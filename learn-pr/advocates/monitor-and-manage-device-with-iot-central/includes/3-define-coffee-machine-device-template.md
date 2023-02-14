@@ -50,6 +50,6 @@ A device model is the part of the device template that defines the telemetry, pr
 - The **name** field is a unique identifier for the telemetry, property, or command.
 - Each telemetry field represent measurements or events, and are often used to describe device sensor readings. For example, "Water Temperature" has a **schema** of "double" and a **unit** of "degreeCelsius". The **decimalPlaces**, **maxValue**, and **minValue** fields specify additional details about the telemetry data.
 - Each property field represents the state of an entity. For example, "Device Warranty Expired" is of type boolean and can have its state set by the connected device as true or false.
-- The **writable** field specifies whether the property can be set by the cloud or not. In this case, "Optimal Temperature" can be set, while "Device Warranty Expired" cannot.
+- The **writable** field specifies whether the property can be set from the IoT Central application. In this case, "Optimal Temperature" can be set from the application UI, while "Device Warranty Expired" cannot.
 - Each command field describes an action that the device can perform. For example, "Start Brewing" is a command that the cloud can send to the device to begin brewing coffee.
 - The **commandType** field specifies whether a command is synchronous (waits for a response) or asynchronous (does not wait for a response).
