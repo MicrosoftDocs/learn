@@ -13,9 +13,21 @@ from a browser through Azure Cloud Shell or inside a Docker container.
 
 ## Prerequisites
 
-Since your company already uses Azure, you have an active Azure subscription. You're using
-PowerShell in Azure Cloud Shell and you've created a resource group for the Azure storage account
-that you're about to create.
+Since your company already uses Azure, you have an active Azure subscription and you're using
+PowerShell in Azure Cloud Shell.
+
+## Create a resource group
+
+Before creating a storage account, you need to create a resource group for your Azure storage
+account or use an existing resource group. A resource group is a logical container in which Azure
+resources are deployed and managed as a group.
+
+Create an Azure resource group named **storageaccountexamplerg** in the **eastus** region using the
+`New-AzResourceGroup` cmdlet.
+
+```azurepowershell
+New-AzResourceGroup -Name storageaccountexamplerg -Location eastus
+```
 
 ## Create a storage account
 
@@ -41,15 +53,24 @@ New-AzStorageAccount -Name <storage-account-name> -ResourceGroupName <resource-g
 ## Verify the storage account
 
 The `Get-AzStorageAccount` cmdlet is used to verify that a storage group exists. There are no
-mandatory parameters. Specify the **ResourceGroupName** parameter to return only storage accounts in
-a specific resource group or the **Name** and **ResourceGroupName** parameters to return only a
+mandatory parameters. Use the **ResourceGroupName** parameter to return only storage accounts in a
+specific resource group or the **Name** and **ResourceGroupName** parameters to return only a
 specific storage account.
 
 ```azurepowershell
 Get-AzStorageAccount -Name <storage-account-name> -ResourceGroupName <resource-group-name>
 ```
 
-## Remove the storage account
+## Clean up resources
+
+The `Remove-AzResourceGroup` cmdlet is used to delete a resource group. **Name** is the only
+mandatory parameter. Deleting a resource group deletes the resource group and all resources
+contained within it. If resources outside the scope of the storage account created in this unit
+exist in the **storageaccountexamplerg** resource group, they will also be deleted.
+
+```azurepowershell
+Remove-AzResourceGroup -Name storageaccountexamplerg
+```
 
 The `Remove-AzStorageAccount` cmdlet is used to remove a storage account. The mandatory
 parameters include **Name** and **ResourceGroupName**.
