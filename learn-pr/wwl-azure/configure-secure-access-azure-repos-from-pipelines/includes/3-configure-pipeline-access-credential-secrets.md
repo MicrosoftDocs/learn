@@ -14,7 +14,7 @@ In this unit, you'll learn how to secure your pipeline secrets using Azure DevOp
 10. Click the OK button to save your variable.
 11. Click the Save button to save your pipeline.
 
-    ![Screenshot of Azure Pipelines showing how to add a new variable to the Variable Group.](../media/new-secret-variable-pipeline.png)
+    ![Screenshot of Azure Pipelines showing how to add a new secret variable in the pipeline UI.](../media/new-secret-variable-pipeline.png)
 
 ## Create a secret in Azure DevOps Variable Group
 
