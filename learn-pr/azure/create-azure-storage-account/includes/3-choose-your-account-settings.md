@@ -25,14 +25,13 @@ Microsoft recommends that you use **Resource Manager** for all new resources.
 
 ## Account kind
 
-Storage account _kind_ is a set of policies that determine which data services you can include in the account and the pricing of those services. There are three kinds of storage accounts:
+Storage account _kind_ is a set of policies that determine which data services you can include in the account and the pricing of those services. There are four kinds of storage accounts:
 
-- **StorageV2 (general purpose v2)**: the current offering that supports all storage types and all of the latest features
-- **Storage (general purpose v1)**: a legacy kind that supports all storage types but may not support all features
-- **Blob storage**: a legacy kind that allows only block blobs and append blobs
+- **Standard - StorageV2 (general purpose v2)**: the current offering that supports all storage types and all of the latest features
+- **Premium - Page blobs**: Premium storage account type for page blobs only
+- **Premium - Block blobs**: Premium storage account type for block blobs and append blobs
+- **Premium - File shares**: Premium storage account type for file shares only
 
 Microsoft recommends that you use the **General-purpose v2** option for new storage accounts.
 
-There are a few special cases that can be exceptions to this rule. For example, pricing for transactions is lower in general purpose v1, which would allow you to slightly reduce costs if that matches your typical workload.
-
-The core advice here is to choose the **Resource Manager** deployment model and the **StorageV2 (general purpose v2)** account kind for all your storage accounts. The other options still exist primarily to allow existing resources to continue operation. For new resources, there are few reasons to consider the other choices.
+The core advice here is to choose the **Resource Manager** deployment model and the **StorageV2 (general purpose v2)** account kind for all your storage accounts. For new resources, there are few reasons to consider the other choices.
