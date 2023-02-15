@@ -4,11 +4,13 @@ title: Enable Azure role-based access control (RBAC)
 metadata:
   title: Enable Azure role-based access control (RBAC)
   description: "Enable Azure role-based access control (RBAC)"
-  ms.date: 02/14/2023
+  ms.date: 02/15/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  zone_pivot_groups: None
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
 content: |
   [!include[](includes/6-azure-role-based-access-control-rbac.md)]
