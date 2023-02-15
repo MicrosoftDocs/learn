@@ -1,6 +1,6 @@
 Azure OpenAI's natural language models are able to take in natural language and generate responses. 
 
-Natural language learning models are trained on words or chunks of characters known as *tokens*. For example, the word "hamburger" gets broken up into the tokens "ham,", "bur," and "ger,", while a short and common word like "pear" is a single token. These tokens are mapped into vectors for a machine learning model to use for training. When a trained natural language model takes in a user's input, it also breaks down the input into tokens.  
+Natural language learning models are trained on words or chunks of characters known as *tokens*. For example, the word "hamburger" gets broken up into the tokens `ham`, `bur`, and `ger`, while a short and common word like "pear" is a single token. These tokens are mapped into vectors for a machine learning model to use for training. When a trained natural language model takes in a user's input, it also breaks down the input into tokens.  
 
 ## Understanding GPT models for natural language generation 
 
