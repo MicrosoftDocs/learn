@@ -2,16 +2,16 @@
 uid: learn.wwl.configure-azure-monitor
 metadata:
   title: Configure Azure Monitor
-  description: "<div|<span style=\"color:rgb(34, 34, 34);font-family:&quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, Verdana;font-size:12px;display:inline !important;\"|You will learn how to configure Azure Monitor including querying the activity log.</span| </div|"
+  description: "You learn how to configure Azure Monitor including querying the activity log."
   ms.date: 02/15/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Configure Azure Monitor
-summary: You will learn how to configure Azure Monitor including querying the activity log.
+summary: You'll learn how to configure Azure Monitor including querying the activity log.
 abstract: |
-  After completing this module, you will be able to:
+  After completing this module, you'll be able to:
   - Identify the features and usage cases for Azure Monitor.
   - Configure and interpret metrics and logs.
   - Identify the Azure Monitor components and data types.
