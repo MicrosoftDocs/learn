@@ -8,7 +8,7 @@ The Az PowerShell module is based on .NET Standard, and works with PowerShell 7.
 platforms including Windows, Linux, and macOS. It's also compatible with Windows PowerShell 5.1.
 
 You can install the Az PowerShell module locally on Windows, Linux, and macOS. It can also be used
-from a browser through Azure Cloud Shell or inside a Docker container.
+from a web browser through Azure Cloud Shell or inside a Docker container.
 
 
 ## Prerequisites
