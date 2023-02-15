@@ -4,49 +4,52 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/14/2022
+  ms.date: 02/17/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 4
 content: |
   [!include[](includes/5-knowledge-check.md)]
 quiz:
   title: ""
+
   questions:
-  - content: "The Alerts page has an alert marked as Acknowledged. What does this status indicate?"
+  - content: "What does an alert in the _Acknowledged_ state indicate?"
     choices:
-    - content: "A new issue has been opened."
+    - content: "A new issue is open."
       isCorrect: false
-      explanation: "That's incorrect. The Alerts page shows New when an issue has been detected and has not yet been reviewed."
-    - content: "An administrator has reviewed the alert and started working on it."
+      explanation: "Incorrect. When an issue is open, but not under review, the alert is in the _New_ state."
+    - content: "The alert is in review and work is in progress."
       isCorrect: true
-      explanation: "That's correct. The Acknowledged state is shown when an administrator has reviewed an alert and is working on it."
-    - content: "An issue has been resolved."
+      explanation: "Correct. An alert in the _Acknowledged_ state indicates an admin has reviewed the alert and is working on the issue."
+    - content: "An issue is complete."
       isCorrect: false
-      explanation: "That's incorrect. The Alerts page shows Closed when an issue has been resolved."
-  - content: "A major retailer has an app that is used across the business. The performance of this app is critical to day-to-day operations. Because the app is so important, four infrastructure administrators have been identified to address any issues. What would ensure the administrators are notified if there is a problem?"
+      explanation: "Incorrect. When an issue is no longer in review, the alert is in the _Closed_ state."
+
+  - content: "Which Azure Monitor feature can notify administrators in real time about critical application issues?"
     choices:
-    - content: "Configure the Activity log"
+    - content: "Azure Monitor activity logs"
       isCorrect: false
-      explanation: "That's incorrect. The Activity Log provides insight into subscription-level events."
-    - content: "Configure an Alert Team"
+      explanation: "Incorrect. Azure Monitor activity logs provide insight into subscription-level event data. You can't configure activity logs to send alerts."
+    - content: "Alert teams"
       isCorrect: false
-      explanation: "That's incorrect. An alert team is not a valid choice."
-    - content: "Configure an Action Group"
+      explanation: "Incorrect. Alert teams aren't a valid feature of Azure Monitor."
+    - content: "Action groups"
       isCorrect: true
-      explanation: "That's correct. An Action Group notifies a group of administrators when there is an issue."
-  - content: "An alert rule consists of which of the following?"
+      explanation: "Correct. You can configure Azure Monitor action groups to notify all group members based on specified conditions."
+  
+  - content: "An alert rule consists of which of the following items?"
     choices:
-    - content: "Resource, condition, log, alert type"
-      isCorrect: false
-      explanation: "That's incorrect. These elements do not make up an alert rule."
-    - content: "Metrics, logs, application, operating system"
-      isCorrect: false
-      explanation: "That's incorrect. These elements do not make up an alert rule."
     - content: "Resource, condition, actions, alert details"
       isCorrect: true
-      explanation: "That's correct. These elements make up an alert rule."
+      explanation: "Correct. These elements make up an alert rule."    
+    - content: "Resource, condition, log, alert type"
+      isCorrect: false
+      explanation: "Incorrect. An alert rule doesn't include logs and alert type elements."
+    - content: "Metrics, logs, application, operating system"
+      isCorrect: false
+      explanation: "Incorrect. An alert rule doesn't include these elements."
