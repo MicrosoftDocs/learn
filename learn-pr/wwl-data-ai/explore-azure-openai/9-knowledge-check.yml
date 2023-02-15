@@ -18,7 +18,7 @@ quiz:
     choices: 
     - content: "Azure OpenAI is Microsoft's version of ChatGPT, a chatbot that uses generative AI models."
       isCorrect: false
-      explanation: "Incorrect. ChatGPT is a chatbot, but Azure OpenAI isn't a chatbot, it;s a service connecting users to many generative AI models."
+      explanation: "Incorrect. ChatGPT is a chatbot, but Azure OpenAI isn't a chatbot, it's a service connecting users to many generative AI models."
     - content: "ChatGPT and OpenAI are chatbots that generate natural language, code, and images. Azure OpenAI provides access to these two chatbots."
       isCorrect: false
       explanation: "Incorrect. While ChatGPT is a chatbot, OpenAI is a research company that provides access to AI models. Azure OpenAI also provides access to many of these AI models."

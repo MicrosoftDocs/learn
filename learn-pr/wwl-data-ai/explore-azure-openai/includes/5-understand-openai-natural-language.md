@@ -61,4 +61,4 @@ Delicious - maybe! It's important to understand that the generated responses are
 
 ChatGPT is chatbot built on the GPT-3.5 generative AI model. You may have tried out ChatGPT's predictive capabilities in a chat portal similar to this screenshot, where you can type prompts and receive automated responses. The portal consists of the front-end user interface (UI) users see, and a back-end that includes the GPT-3.5 model. The combination of the front and back end can be described as a chatbot. The model provided on the back end is what is available as a building block with the OpenAI API. When you see ChatGPT-like capabilities in other applications, developers have taken the building blocks, customized them to a use case, and built them into the back end of new front-end user interfaces.  
 
-![Screenshot of the ChatGPT portal.](../media/chatgpt_interface.png)
+![Screenshot of the ChatGPT portal.](../media/chatgpt-interface.png)

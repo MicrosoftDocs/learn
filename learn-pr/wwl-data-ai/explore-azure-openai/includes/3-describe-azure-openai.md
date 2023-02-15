@@ -33,7 +33,7 @@ Other AI workloads Azure OpenAI supports can be categorized into three groups:
 
 ### Azure OpenAI's relationship to Azure AI services 
 
-![Diagram showing Microsoft AI portfolio and how they relate.](../media/Microsoft-ai-portfolio.png)
+![Diagram showing Microsoft AI portfolio and how they relate.](../media/microsoft-ai-portfolio.png)
 
 Azure's AI services are tools for solving AI workloads and can be categorized into Azure's Machine Learning platform, Cognitive Services, and Applied AI Services.   
  

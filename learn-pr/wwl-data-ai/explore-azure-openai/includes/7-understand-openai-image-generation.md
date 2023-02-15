@@ -12,15 +12,15 @@ With DALL-E, you can even request an image in a particular style, such as "a dog
 
 For example, given the prompt "an elephant standing with a burger on top, style digital art", the model generates digital art images depicting exactly what is asked for.
 
-![Four AI generated art depictions of an elephant with a burger on top of it.](../media/dall-e_elephant_burger.png)
+![Four AI generated art depictions of an elephant with a burger on top of it.](../media/dall-e-elephant-burger.png)
 
 When asked for something more generic like "a pink fox", the images generated are more varied and simpler while still fulfilling what is asked for.
 
-![Four AI generated art depictions of different pink foxes.](../media/dall-e_pink_fox.png)
+![Four AI generated art depictions of different pink foxes.](../media/dall-e-pink-fox.png)
 
 However when we make the prompt more specific, such as "a pink fox running through a field, in the style of Monet", the model creates much more similar detailed images.
 
-![Four AI generated art depictions of a pink fox in the style of Monet.](../media/dall-e_pink_fox_monet.png)
+![Four AI generated art depictions of a pink fox in the style of Monet.](../media/dall-e-pink-fox-monet.png)
 
 ## Editing an image
 
@@ -28,7 +28,7 @@ When provided an image, DALL-E can edit the image as requested by changing its s
 
 When given one of the above images of a pink fox, a mask covering the fox, and the prompt of "blue gorilla reading a book in a field", the model creates edits of the image based on the provided input.
 
-![Four AI generated art depictions of a blue gorilla in a field.](../media/blue_gorilla_edit.png)
+![Four AI generated art depictions of a blue gorilla in a field.](../media/blue-gorilla-edit.png)
 
 ## Image variations
 
@@ -36,7 +36,7 @@ Image variations can be created by providing an image and specifying how many va
 
 For example, if I upload one of the images of the elephant wearing a burger as a hat, I get variations of the same subject.
 
-![Four AI generated art variations of an elephant with a burger on its head.](../media/dall-e_elephant_variations.png)
+![Four AI generated art variations of an elephant with a burger on its head.](../media/dall-e-elephant-variations.png)
 
 >[!NOTE]
 >Access to DALL-E is currently granted on an invite basis only.

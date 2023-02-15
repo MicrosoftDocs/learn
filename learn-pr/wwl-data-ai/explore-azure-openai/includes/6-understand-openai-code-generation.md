@@ -101,8 +101,8 @@ OpenAI partnered with GitHub to create GitHub Copilot, which they call an AI pai
 
 Once the plugin is installed and enabled, you can start writing your code, and GitHub Copilot starts automatically suggesting the remainder of the function based on code comments or the function name. For example, we have only a function name in the file, and the gray text is automatically suggested to complete it.
 
-![Screenshot of GitHub Copilot suggesting completion of function.](../media/github_copilot_newyear_function.png)
+![Screenshot of GitHub Copilot suggesting completion of function.](../media/github-copilot-newyear-function.png)
 
 GitHub Copilot offers multiple suggestions for code completion, which you can tab through using keyboard shortcuts. When given informative code comments, it can even suggest a function name along with the complete function code.
 
-![Animated screenshot of GitHub Copilot suggesting completion of function based on code comments.](../media/github_copilot.gif)
+![Animated screenshot of GitHub Copilot suggesting completion of function based on code comments.](../media/github-copilot.gif)
