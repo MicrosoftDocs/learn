@@ -78,7 +78,7 @@ For the sake of example, requirements are simplified, but here are some examples
 
 - Initially Contoso is focusing on UK region due to its origins, preferred language and financial capability of companies providing legal services within UK region. In the future, after Contoso establishes stable business within UK region, they'll start going into other markets. 
 
-  Each geographical region will bring additional challenges, in term of technical delivery of the service, as well as over all Go-To-Market strategies and activities. If Contoso decides, that next market is Europe, they'll have to create a strategy of how to market the product in countries, where English is not default language and take into account specifics of local legal industry.  
+  Each geographical region will bring additional challenges, in term of technical delivery of the service, as well as over all Go-To-Market strategies and activities. If Contoso decides, that next market is Europe, they'll have to create a strategy of how to market the product in countries/regions, where English is not default language and take into account specifics of local legal industry.  
 
 
 
