@@ -9,8 +9,6 @@ metadata:
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 8
+  zone_pivot_groups: None
 content: |
   [!include[](includes/2-shared-responsibility-model.md)]
