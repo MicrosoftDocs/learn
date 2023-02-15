@@ -22,7 +22,7 @@ quiz:
       explanation: "Incorrect. You wouldn't want to make your code harder to read."
     - content: "To make your code look more sophisticated"
       isCorrect: false
-      explanation: "Incorrect. Developers prefer simplicity"
+      explanation: "Incorrect. Developers prefer simplicity."
     - content: "To make your code cleaner and less redundant"
       isCorrect: true
       explanation: "Correct! This is the exact reason you'd use functions in your code."
@@ -47,4 +47,4 @@ quiz:
       explanation: "Incorrect. You need to indent the line after the `if` condition"
     - content: "`if(condition);`<br /> `do something`"
       isCorrect: false
-      explanation: "Incorrect. You need to use a colon (:) instead of a semicolon (;) and indent the line after the `if` condition"
+      explanation: "Incorrect. You need to use a colon (:) instead of a semicolon (;) and indent the line after the `if` condition."
