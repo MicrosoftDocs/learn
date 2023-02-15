@@ -6,9 +6,9 @@
 
 Congratulations! You've completed episode one, the *Morning Investigation*. What are your thoughts on these two questions?
 
-> Do the initial clues suggest that Amari is possibly innocent or the culprit?
+- Do the initial clues suggest that Amari is possibly innocent or the culprit?
 
-> What would you do next to continue the investigation?
+- What would you do next to continue the investigation?
 
 **Keep playing to find out.!**
 
