@@ -17,7 +17,7 @@ A _deployment model_ is the system Azure uses to organize your resources. The mo
 - **Resource Manager**: the current model that uses the Azure Resource Manager API
 - **Classic**: a legacy offering that uses the Azure Service Management API
 
-Most Azure resources only work with Resource Manager, and makes it easy to decide which model to choose. However, storage accounts, virtual machines, and virtual networks support both, so you must choose one or the other when you create your storage account.
+Most Azure resources only work with Resource Manager, which makes it easy to decide which model to choose. However, storage accounts, virtual machines, and virtual networks support both, so you must choose one or the other when you create your storage account.
 
 The key feature difference between the two models is their support for grouping. The Resource Manager model adds the concept of a _resource group_, which is not available in the classic model. A resource group lets you deploy and manage a collection of resources as a single unit.
 
