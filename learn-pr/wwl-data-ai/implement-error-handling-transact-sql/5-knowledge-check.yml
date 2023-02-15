@@ -18,13 +18,13 @@ quiz:
     choices:
     - content: "THROW"
       isCorrect: false
-      explanation: "Incorrect. THROW always sets the severity of an error to 16 which prevents you raising a severity level of 20."
+      explanation: "Incorrect. THROW always sets the severity of an error to 16, which prevents you raising a severity level of 20."
     - content: "RAISERROR"
       isCorrect: true
       explanation: "Correct. RAISERROR lets you set the severity level, and will allow you to raise an error with a severity of 20."
     - content: "@@ERROR"
       isCorrect: false
-      explanation: "Incorrect. @@ERROR will not let you set the severity level."
+      explanation: "Incorrect. @@ERROR won't  let you set the severity level."
   - content: "How can you THROW outside of a CATCH block?"
     choices:
     - content: "With arguments that raise a user-defined error."
@@ -32,10 +32,10 @@ quiz:
       explanation: "Correct. Developing your own custom errors is the only means to THROW outside a TRY/CATCH block."
     - content: "With a conditional EXCEPTION clause"
       isCorrect: false
-      explanation: "Incorrect. The EXCEPTION statement is not valid."
+      explanation: "Incorrect. The EXCEPTION statement isn't valid."
     - content: "With a RAISERROR argument."
       isCorrect: false
-      explanation: "Incorrect. The RAISERROR command will not THROW an error."
+      explanation: "Incorrect. The RAISERROR command won't  THROW an error."
   - content: "In what situation would you use @@ERROR?"
     choices:
     - content: "To throw an error code."
