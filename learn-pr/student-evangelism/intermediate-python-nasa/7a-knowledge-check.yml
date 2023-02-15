@@ -3,7 +3,7 @@ uid: learn.student-evangelism.intermediate-python-nasa.7a-knowledge-check
 metadata:
   title: Knowledge check
   description: Interactive questions that validate whether the learner achieved the learning objectives.
-  ms.date: 05/05/2021
+  ms.date: 02/14/2023
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
@@ -19,10 +19,10 @@ quiz:
     choices:
     - content: "To make it harder for others to read your code"
       isCorrect: false
-      explanation: "You wouldn't want to make your code harder to read."
+      explanation: "Incorrect. You wouldn't want to make your code harder to read."
     - content: "To make your code look more sophisticated"
       isCorrect: false
-      explanation: "Developers prefer simplicity"
+      explanation: "Incorrect. Developers prefer simplicity."
     - content: "To make your code cleaner and less redundant"
       isCorrect: true
       explanation: "Correct! This is the exact reason you'd use functions in your code."
@@ -34,17 +34,17 @@ quiz:
     - content: "To create variables outside the function or pass them in as parameters."
       isCorrect: false
       explanation: "Incorrect. The two ways are to make them global or pass them in as parameters."
-  - content: "What is the proper code for an if-statement?"
+  - content: "What is the proper code for an `if`-statement?"
     choices:
-    - content: "if(condition):<br /> &nbsp; &nbsp; &nbsp; do something"
+    - content: "`if(condition):`<br /> &nbsp; &nbsp; &nbsp; `do something`"
       isCorrect: true
-      explanation: "Correct! You need both the colon (:) and an indentation on the line after the if statement."
-    - content: "if(condition);<br /> &nbsp; &nbsp; &nbsp; do something"
+      explanation: "Correct! You need both the colon (:) and an indentation on the line after the `if` statement."
+    - content: "`if(condition);`<br /> &nbsp; &nbsp; &nbsp; `do something`"
       isCorrect: false
-      explanation: "You need to use a colon (:) instead of a semicolon (;)."
-    - content: "if(condition):<br /> do something"
+      explanation: "Incorrect. You need to use a colon (:) instead of a semicolon (;)."
+    - content: "`if(condition):`<br /> `do something`"
       isCorrect: false
-      explanation: "You need to indent the line after the if condition"
-    - content: "if(condition);<br /> do something"
+      explanation: "Incorrect. You need to indent the line after the `if` condition"
+    - content: "`if(condition);`<br /> `do something`"
       isCorrect: false
-      explanation: "You need to use a colon (:) instead of a semicolon (;) and indent the line after the if condition"
+      explanation: "Incorrect. You need to use a colon (:) instead of a semicolon (;) and indent the line after the `if` condition."
