@@ -15,11 +15,11 @@ In order to complete the exercises, you'll need to configure your environment. I
     - [**Azure Resources**](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureresourcegroups): This extension allows you to manage Azure resources.
     - [**SQL Server (mssql)**](https://marketplace.visualstudio.com/items?itemName=ms-mssql.mssql): This extension includes tools for querying SQL Server and Azure SQL resources.
     - [**Live Server**](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer): This extension enables you to run web applications locally with ease.
-    
+
 1. Sign in to GitHub in Visual Studio Code using your GitHub account. If you do not have a GitHub account, [create one here](https://github.com/join).
 1. Sign in to GitHub with your GitHub account and navigate to [this repository](https://github.com/Azure-Samples/serverless-full-stack-apps-azure-sql). In the top-right corner of your browser, select the **Fork** button.
 1. On the same page, select **Code** and copy the HTTPS Clone URL, for example, *`https://github.com/<github-username>/serverless-full-stack-apps-azure-sql.git`*.
-1. Back in Visual Studio Code, select **Source Control** > **...** > **Clone** and enter the URL copied in a previous step. Select the location you would like the repository to be copied locally.
+1. Back in Visual Studio Code, select **View** > **Source Control** > **Clone Repository** and enter the URL copied in a previous step. Select the location you would like the repository to be copied locally.
 1. In Visual Studio Code, select **File** > **Open folder** and navigate to the location where you cloned the repository. This step will open the folder in your Visual Studio Code session.
 1. Select the **Explorer** blade from the left-hand taskbar. Confirm that you see the repository files.
 
@@ -43,12 +43,12 @@ These scripts should take three to five minutes to complete. Be sure to note you
     > [!Note]
     > A **complex password** must consist of:
     >
-    > * 8 characters minimum and 16 characters maximum
-    > * Requires 3 out of 4 of the following:
-    >    * Lowercase characters
-    >    * Uppercase characters
-    >    * Numbers ( 0-9 )
-    >    * Symbols ( @ # $ % ^ & * - _  + = [ ] { } | \ : ‘ , . ? / ` ~ “ ( ) ; )
+    > - 8 characters minimum and 16 characters maximum
+    > - Requires 3 out of 4 of the following:
+    >    - Lowercase characters
+    >    - Uppercase characters
+    >    - Numbers ( 0-9 )
+    >    - Symbols ( @ # $ % ^ & * - _  + = [ ] { } | \ : ‘ , . ? / ` ~ “ ( ) ; )
 
     ```powershell
     # Collect password 
@@ -233,27 +233,27 @@ The next step is to configure the Logic App and update the Application Setting f
 1. In a text file, determine the connection string that you'll need to be able to connect to your Azure SQL Database. The format should be as follows:
 
     ::: zone pivot="python"
-    
+
     ```cmd
     Driver={ODBC Driver 17 for SQL Server};Server=[serverName].database.windows.net,1433;Database=bus-db;UID=cloudadmin;PWD=[yourPassword];Connection Timeout=30;
     ```
-    
+
     ::: zone-end
 
     ::: zone pivot="csharp"
-    
+
     ```cmd
     Server=tcp:[serverName].database.windows.net,1433;Database=bus-db;User ID=cloudadmin;Password=[yourPassword];Encrypt=true;Connection Timeout=30;
     ```
-    
+
     ::: zone-end
-    
+
     ::: zone pivot="node"
-    
+
     ```cmd
     mssql://cloudadmin:[yourPassword]@[serverName].database.windows.net/bus-db?encrypt=true
     ```
-    
+
     ::: zone-end
 
 1. In the Azure portal, navigate to your Azure Function App.
