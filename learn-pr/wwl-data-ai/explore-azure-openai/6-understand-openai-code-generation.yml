@@ -3,7 +3,7 @@ uid: learn.wwl.explore-azure-openai.understand-openai-code-generation
 title: Understand OpenAI code generation capabilities
 metadata:
   title: Understand OpenAI code generation capabilities
-  description: "Understand how OpenAI models generate code, through codex based models. Tools like Github Copilot and ChatGPT are good examples."
+  description: "Understand how OpenAI models generate code, through codex based models. Tools like GitHub Copilot and ChatGPT are good examples."
   ms.date: 2/14/2023
   author: sherzyang
   ms.author: sheryang

@@ -3,7 +3,7 @@ uid: learn.wwl.explore-azure-openai.describe-azure-openai
 title: Describe Azure OpenAI
 metadata:
   title: Describe Azure OpenAI
-  description: "Learn what Azure OpenAI Service can do and how it is related to existing Azure AI services."
+  description: "Learn what Azure OpenAI Service can do and how it's related to existing Azure AI services."
   ms.date: 2/14/2023
   author: sherzyang
   ms.author: sheryang

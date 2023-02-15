@@ -11,11 +11,11 @@ for i in range(1,11):
     print(i)
 ```
 
-Code generation models can help developers code faster, understand new coding languages, and focus on solving bigger problems in their application. Developers can break their goal down into simpler tasks and use Codex to help build those out using known patterns.
+Code generation models can help developers code faster, understand new coding languages, and focus on solving bigger problems in their application. Developers can break down their goal into simpler tasks and use Codex to help build those out tasks  using known patterns.
 
 ## Examples of code generation
 
-Part of the training data for GPT-3 included programming languages, so it's no surprise that GPT models can answer programming questions if asked. What's unique about the Codex model family is that it is more capable across more languages than GPT models. 
+Part of the training data for GPT-3 included programming languages, so it's no surprise that GPT models can answer programming questions if asked. What's unique about the Codex model family is that it's more capable across more languages than GPT models.
 
 Codex goes beyond just writing code from natural language prompts. Given the following code, it can generate unit tests:
 
@@ -49,7 +49,7 @@ def test_mult_numbers_negative():
 
 Codex can also summarize functions that are already written, explain SQL queries or tables, and convert a function from one programming language into another.
 
-When interacting with Codex models, you can specify libraries or language specific tags to make it very clear to Codex what we want. For example, we can provide this prompt formatted as an HTML comment: `<!-- build a page titled "Let's Learn about AI" -->`, and get this as a result:
+When interacting with Codex models, you can specify libraries or language specific tags to make it clear to Codex what we want. For example, we can provide this prompt formatted as an HTML comment: `<!-- build a page titled "Let's Learn about AI" -->`, and get this as a result:
 
 ```html
 <html>
@@ -99,7 +99,7 @@ When interacting with Codex models, you can specify libraries or language specif
 
 OpenAI partnered with GitHub to create GitHub Copilot, which they call an AI pair programmer. GitHub Copilot integrates the power of OpenAI Codex into a plugin for developer environments like Visual Studio Code.
 
-Once the plugin is installed and enabled, you can start writing out your code and GitHub Copilot will start automatically suggesting the remainder of the function based on code comments or the function name. For example, we have only a function name in the file, and the grey text is automatically suggested to complete it.
+Once the plugin is installed and enabled, you can start writing your code, and GitHub Copilot starts automatically suggesting the remainder of the function based on code comments or the function name. For example, we have only a function name in the file, and the gray text is automatically suggested to complete it.
 
 ![Screenshot of GitHub Copilot suggesting completion of function.](../media/github_copilot_newyear_function.png)
 

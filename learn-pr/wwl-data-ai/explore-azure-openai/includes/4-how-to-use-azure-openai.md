@@ -7,7 +7,7 @@ Currently you need to [apply](https://aka.ms/oaiapply?azure-portal=true) for acc
 
 ![Screenshot showing the Azure OpenAI Studio UI get started page with options for exploring the service.](../media/azure-openai-studio-start.png)
 
-In the Azure OpenAI Studio you can build AI models and deploy them for public consumption in software applications. Azure OpenAI's capabilities are made possible by a few specific generative AI models. Different models are optimized for different tasks; some models excel at simple summarization tasks, some a great at general unstructured responses, and still others are built to generate unique images from text input.
+In the Azure OpenAI Studio, you can build AI models and deploy them for public consumption in software applications. Azure OpenAI's capabilities are made possible by a few specific generative AI models. Different models are optimized for different tasks; some models excel at simple summarization tasks, some are great at general unstructured responses, and still others are built to generate unique images from text input.
 
 ![Image of Azure OpenAI models that fall into three categories gpt-3, coedex, and dall-e.](../media/azure-openai-models.png)
 

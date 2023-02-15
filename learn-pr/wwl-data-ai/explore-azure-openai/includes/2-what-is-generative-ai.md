@@ -9,4 +9,4 @@ Let's identify where OpenAI models fit into the AI landscape.
 
 ![Illustration of generative AI's place within machine learning.](../media/generative-ai.png)
 
-Next you will learn how Azure OpenAI gives users the ability to combine Azure's enterprise-grade solutions with many of OpenAI's same generative AI models.
+Next you'll learn how Azure OpenAI gives users the ability to combine Azure's enterprise-grade solutions with many of OpenAI's same generative AI models.
