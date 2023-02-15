@@ -1,8 +1,8 @@
-The Azure Monitor activity Log is a subscription log that provides insight into subscription-level events that occur in Azure. Events include a range of data from Azure Resource Manager operational data to updates on Service Health events.
+The Azure Monitor activity log is a subscription log that provides insight into subscription-level events that occur in Azure. Events can include a range of data from Azure Resource Manager operational data to updates on Azure service health events.
 
 ### Things to know about activity logs
 
-Let's examine some of the characteristics of working with activity logs in Azure Monitor.
+Let's examine some details about working with activity logs in Azure Monitor.
 
 - You can use the information in activity logs to understand the status of resource operations and other relevant properties.
 

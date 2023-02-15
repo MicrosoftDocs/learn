@@ -20,6 +20,10 @@ In this module, you identified the features and usage cases for Azure Monitor. Y
 
 - Monitor [virtual machines with Azure Monitor](/azure/azure-monitor/vm/monitor-virtual-machine).
 
+- View the [schema for Azure Monitor activity log events and categories](/azure/azure-monitor/essentials/activity-log-schema).
+
+- Review [types of Azure Monitor alerts](/azure/azure-monitor/alerts/alerts-types).
+
 ## Learn more with self-paced training
 
 - Design a [holistic monitoring strategy on Azure](/training/modules/design-monitoring-strategy-on-azure/).
