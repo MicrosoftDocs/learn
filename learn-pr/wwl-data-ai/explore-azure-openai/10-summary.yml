@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-openai.summary
+title: Summary
+metadata:
+  title: summary
+  description: "Review a short summary of what was covered in the Introduction to Azure OpenAI module and see where to get additional information from the documentation."
+  author: sherzyang
+  ms.author: sheryang
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 1
+content: |
+  [!include[](includes/10-summary.md)]
