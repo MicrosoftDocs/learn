@@ -1,3 +1,4 @@
+
 Cloud applications and the mobile workforce have redefined the security
 perimeter. Employees are bringing their own devices and working
 remotely. Data is accessed outside the corporate network and shared with

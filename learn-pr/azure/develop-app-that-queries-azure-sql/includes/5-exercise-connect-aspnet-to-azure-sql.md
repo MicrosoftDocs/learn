@@ -13,7 +13,7 @@ You'll do the following things:
 
 ## Deploy and run the pre-existing web app
 
-1. Change your working directory to the **education** folder.
+1. Change your working directory to the `education` folder.
 
     ```bash
     cd ~/education
@@ -40,15 +40,15 @@ You'll do the following things:
 
 Now let's add to the application the code to retrieve course data from the database.
 
-1. In Cloud Shell, go to the **education/Models** folder.
+1. In Cloud Shell, go to the `education/Models` folder.
 
     ```bash
     cd ~/education/Models
     ```
 
-    This folder contains two files, **CoursesAndModules.cs** and **DataAccessController.cs**.
+    This folder contains two files, `CoursesAndModules.cs` and `DataAccessController.cs`.
 
-1. Use the code editor to open the **CoursesAndModules.cs** file.
+1. Use the code editor to open the `CoursesAndModules.cs` file.
 
     ```bash
     code CoursesAndModules.cs
@@ -112,7 +112,7 @@ Now let's add to the application the code to retrieve course data from the datab
 
 1. Save the file by pressing <kbd>Ctrl+S</kbd>, and close the code editor by pressing <kbd>Ctrl+Q</kbd>.
 
-1. Use the code editor to open the **DataAccessController.cs** file.
+1. Use the code editor to open the `DataAccessController.cs` file.
 
     ```bash
     code DataAccessController.cs
@@ -144,7 +144,7 @@ Now let's add to the application the code to retrieve course data from the datab
                 // TODO: Connect to the database
                 //using ()
                 {
-                    // TODO: Specify the SQL query to run
+                    // TODO: Specify the Transact-SQL query to run
 
                     // TODO: Execute the query
 
@@ -180,7 +180,7 @@ Now let's add to the application the code to retrieve course data from the datab
 
     This code creates a new `SqlConnection` object that uses your connection string to connect to the database.
 
-1. Replace the comment `// TODO: Specify the SQL query to run` with the following statements.
+1. Replace the comment `// TODO: Specify the Transact-SQL query to run` with the following statements.
 
     ```C#
     SqlCommand cmd = new SqlCommand(
@@ -193,7 +193,7 @@ Now let's add to the application the code to retrieve course data from the datab
     cmd.CommandType = CommandType.Text;
     ```
 
-    The `SqlCommand` object contains an SQL statement that retrieves the data for all courses and modules. It joins them by using the information in the **StudyPlan** table.
+    The `SqlCommand` object contains a Transact-SQL (T-SQL) statement that retrieves the data for all courses and modules. It joins them by using the information in the `dbo.StudyPlan` table.
 
 1. Replace the comment `// TODO: Execute the query` with the following code.
 
@@ -202,7 +202,7 @@ Now let's add to the application the code to retrieve course data from the datab
     SqlDataReader rdr = cmd.ExecuteReader();
     ```
 
-    These statements open the connection to the database and run the SQL statement. You can use the `SqlDataReader` object to fetch the results one row at a time.
+    These statements open the connection to the database and run the T-SQL statement. You can use the `SqlDataReader` object to fetch the results one row at a time.
 
 1. Replace the comment `// TODO: Read the data a row at a time` with the following block of code.
 
@@ -253,7 +253,7 @@ Now let's add to the application the code to retrieve course data from the datab
                 // Connect to the database
                 using (SqlConnection con = new SqlConnection(connectionString))
                 {
-                    // Specify the SQL query to run
+                    // Specify the Transact-SQL query to run
                     SqlCommand cmd = new SqlCommand(
                         @"SELECT c.CourseName, m.ModuleTitle, s.ModuleSequence
                         FROM dbo.Courses c JOIN dbo.StudyPlans s
@@ -292,7 +292,7 @@ Now let's add to the application the code to retrieve course data from the datab
 
 The application can now retrieve the course data. Now, update the app to display the data to the user.
 
-1. In Cloud Shell, move to the **education/Pages** folder.
+1. In Cloud Shell, move to the `education/Pages` folder.
 
     ```bash
     cd ~/education/Pages
@@ -300,7 +300,7 @@ The application can now retrieve the course data. Now, update the app to display
 
     This folder contains the .cshtml pages and code files that the web app uses to display information.
 
-1. Use the code editor to open the **Index.cshtml.cs** file.
+1. Use the code editor to open the `Index.cshtml.cs` file.
 
     ```bash
     code Index.cshtml.cs
@@ -333,7 +333,7 @@ The application can now retrieve the course data. Now, update the app to display
     }
     ```
 
-1. In **Index.cshtml.cs**, replace the comment `// TODO: Create a DataAccessController object` with the following code to create a new `DataAccessController` object.
+1. In `Index.cshtml.cs`, replace the comment `// TODO: Create a DataAccessController object` with the following code to create a new `DataAccessController` object.
 
     ```C#
     DataAccessController dac = new DataAccessController();
@@ -345,7 +345,7 @@ The application can now retrieve the course data. Now, update the app to display
     public List<CoursesAndModules> CoursesAndModules;
     ```
 
-1. In the `OnGet` method, replace the comment `// TODO: Retrieve the data using the DataAccessController object and populate the CoursesAndModules object` with the following code. This code uses the `DataAcessController` object to populate the list with the data from the database.
+1. In the `OnGet` method, replace the comment `// TODO: Retrieve the data using the DataAccessController object and populate the CoursesAndModules object` with the following code. This code uses the `DataAccessController` object to populate the list with the data from the database.
 
     ```C#
     CoursesAndModules = dac.GetAllCoursesAndModules().ToList();
@@ -383,7 +383,7 @@ The application can now retrieve the course data. Now, update the app to display
 
 1. Save the file, and close the code editor.
 
-1. Use the code editor to open the file **Index.cshtml**.
+1. Use the code editor to open the file `Index.cshtml`.
 
     ```bash
     code Index.cshtml
@@ -438,7 +438,7 @@ The application can now retrieve the course data. Now, update the app to display
 
     This code iterates through the rows in the model and outputs the data in each field.
 
-    The completed **Index.cshtml** file should contain the following code.
+    The completed `Index.cshtml` file should contain the following code.
 
     ```cshtml
     @page
@@ -489,7 +489,7 @@ The application can now retrieve the course data. Now, update the app to display
 
 With the application fully configured to retrieve and display the course data to the user, you can deploy the updated version.
 
-1. In Cloud Shell, return to the **education** folder.
+1. In Cloud Shell, return to the `education` folder.
 
     ```bash
     cd ~/education

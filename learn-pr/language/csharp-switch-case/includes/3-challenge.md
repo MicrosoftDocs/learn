@@ -1,6 +1,6 @@
-Code challenges throughout these modules will reinforce what you've learned, and help you gain some confidence before continuing on.
+Code challenges throughout these modules will reinforce what you've learned and help you gain some confidence before continuing on.
 
-The focus of this challenge is to rewrite the code in the .NET Editor to use a different technique to accomplish essentially the same task. This challenge will help you see the strengths and weaknesses of the switch-case when compared to an if-elseif-else statement.
+The focus of this challenge is to rewrite the code in the .NET Editor to use a different technique to accomplish essentially the same task. This challenge will help you learn the strengths and weaknesses of the switch-case when compared to an if-elseif-else statement.
 
 ## Look up product by SKU challenge
 
@@ -8,7 +8,7 @@ Suppose we work for a souvenir shop in a college town that sells t-shirts, sweat
 
 ### Step 1: Delete all of the code in the .NET Editor from the earlier exercise
 
-Select all of the code in the .NET Editor, then select the `del` or `backspace` key to delete it.
+Select all of the code in the .NET Editor, then select the <kbd>Del</kbd> or <kbd>Backspace</kbd> key to delete it.
 
 ### Step 2: Rewrite the code in the .NET editor to use the switch-case statement instead of the if-elseif-else statement
 

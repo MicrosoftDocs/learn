@@ -1,19 +1,19 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.analyze-data-in-sentinel.5-create-rule-from-templates
+title: Create an analytics rule from templates
 metadata:
   title: Create an analytics rule from templates
-  description: Describes the procedure to create an analytics rule from templates.
-  ms.date: 12/15/2020
-  author: cwatson-cat
-  ms.author: cwatson
+  description: "Describes the procedure to create an analytics rule from templates."
+  ms.date: 01/27/2023
+  author: wwlpublish
+  ms.author: kelawson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Create an analytics rule from templates
 durationInMinutes: 8
 content: |
   [!include[](includes/5-create-rule-from-templates.md)]
 quiz:
-  title: Check your knowledge
+  title: "Check your knowledge"
   questions:
   - content: "Which one of the template types should you use to create an incident based on all alerts generated in Microsoft Defender for Cloud?"
     choices:
@@ -25,7 +25,7 @@ quiz:
       explanation: "Machine learning behavior analytics detects anomalous SSH or RDP sign-in activity."
     - content: "Microsoft Security"
       isCorrect: true
-      explanation: "Template rules based on the Microsoft security type creates incidents based on all alerts generated in Microsoft Defender for Cloud."
+      explanation: "Template rules based on the Microsoft security type create incidents based on all alerts generated in Microsoft Defender for Cloud."
   - content: "Which one of the following template rules are precreated in Microsoft Sentinel Analytics?"
     choices:
     - content: "Scheduled template rules"

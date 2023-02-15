@@ -4,7 +4,7 @@ metadata:
   title: Azure RTOS NetX Duo
   description: Learn about basics of TCP/IP and related network concepts, and Azure RTOS NetX Duo, an industrial grade dual IPv4 and IPv6 TCP/IP network stack that is designed specifically for deeply embedded, real-time, and IoT applications.
   brand: azure
-  ms.date: 09/30/2022
+  ms.date: 01/23/2023
   author: edlamie80
   ms.author: liydu
   ms.topic: interactive-tutorial
@@ -29,5 +29,7 @@ modules:
   - learn.iot.introduction-azure-rtos-netx-duo
   - learn.iot.azure-rtos-netx-duo-fundamentals
   - learn.iot.create-first-netx-duo-project
+  - learn.iot.build-a-udp-echo-client
+  - learn.iot.build-a-udp-echo-server
 trophy:
   uid: learn.iot.azure-rtos-netx-duo.trophy

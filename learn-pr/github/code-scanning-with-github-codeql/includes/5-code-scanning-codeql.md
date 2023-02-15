@@ -7,7 +7,7 @@ Depending on which tool you want to use for analysis and how you want to generat
 | Third-party | GitHub Actions |
 | Third-party | Generated externally and then uploaded to GitHub |
 
-In this unit, you will learn how to set up code scanning with GitHub Actions, as well as how to perform bulk setup of code scanning for multiple repositories.
+In this unit, you'll learn how to set up code scanning with GitHub Actions, as well as how to perform bulk setup of code scanning for multiple repositories.
 
 ## Code scanning with GitHub Actions and CodeQL
 
@@ -34,4 +34,4 @@ The `on:pull_request` and `on:push triggers` for code scanning are each useful f
 
 ## Bulk setup of code scanning
 
-You can set up code scanning in many repositories at once using a script. If you'd like to use a script to raise pull requests that add a GitHub Actions workflow to multiple repositories, see the [jhutchings1/Create-ActionsPRs](https://github.com/jhutchings1/Create-ActionsPRs) repository for an example using PowerShell, or [nickliffen/ghas-enablement](https://github.com/NickLiffen/ghas-enablement) for an example using NodeJS.
+You can set up code scanning in many repositories at once using a script. If you'd like to use a script to raise pull requests that add a GitHub Actions workflow to multiple repositories, reference the [jhutchings1/Create-ActionsPRs](https://github.com/jhutchings1/Create-ActionsPRs) repository for an example using PowerShell, or [nickliffen/ghas-enablement](https://github.com/NickLiffen/ghas-enablement) for an example using NodeJS.

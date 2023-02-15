@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-file-folder-backups.describe-azure-backup-benefits
-title: Describe Azure backup benefits
+title: Describe Azure Backup benefits
 metadata:
-  title: Describe Azure backup benefits
-  description: "Describe Azure backup benefits"
-  ms.date: 12/01/2022
+  title: Describe Azure Backup benefits
+  description: "Describe Azure Backup benefits"
+  ms.date: 02/07/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial

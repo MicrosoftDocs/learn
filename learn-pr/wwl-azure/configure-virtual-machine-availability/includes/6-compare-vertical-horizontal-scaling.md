@@ -20,7 +20,7 @@ Horizontal scaling, also referred to as _scale out and scale in_, is used to adj
 
 ### Things to consider when using vertical and horizontal scaling
 
-Review the following considerations regrading vertical and horizontal scaling. Think about which implementation might be required to support your company website.
+Review the following considerations regarding vertical and horizontal scaling. Think about which implementation might be required to support your company website.
 
 - **Consider limitations**. Generally speaking, horizontal scaling has fewer limitations than vertical scaling. A vertical scaling implementation depends on the availability of larger hardware, which quickly hits an upper limit and can vary by region. Vertical scaling also usually requires a virtual machine to stop and restart, which can temporarily limit access to applications or data.
 

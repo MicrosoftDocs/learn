@@ -1,4 +1,4 @@
-When you work with PowerShell, _filtering_ and _formatting_ are important concepts to understand, for a couple of reasons. First, you want to create a pipeline that produces the result you want. Second, you want to do so efficiently, in terms of how you pull data over the network and how you ensure that the result is something you can work with.
+When you work with PowerShell, _filtering_ and _formatting_ are important concepts to understand, for a couple of reasons. First, you want to create a pipeline that produces the result you want. Second, you want to do so efficiently. Both in terms of how you pull data over the network, and how you ensure that the result is something you can work with.
 
 ## Filtering left
 
@@ -28,7 +28,7 @@ In this version, the parameter `-Name` does the filtering for you.
 
 ## Formatting right, formatting as the last thing you do
 
-Whereas _filtering left_ means to filter something as _early_ as possible in a statement, _formatting right_ means to format something as _late_ as possible in the statement. Ok, but why do I need to format late? The answer is because format commands alter the resulting object so that your data is no longer found in the same properties. This alteration impacts your ability to retrieve the information you want by using pipe commands, `Select-Object`, or by looping through the object with `foreach`.
+Whereas _filtering left_ means to filter something as _early_ as possible in a statement, _formatting right_ means to format something as _late_ as possible in the statement. Ok, but why do I need to format late? The answer is because format commands alter the structure of the object that your results are contained in so that your data is no longer found in the same properties. This alteration impacts your ability to retrieve the information you want by using pipe commands, `Select-Object`, or by looping through the results with `foreach`.
 
 The formatting destroys the object with which you're dealing. Take the following call for example:
 
@@ -42,7 +42,7 @@ The type you get back is `System.Diagnostics.Process`. Now, add the `Format-Tabl
 Get-Process 'some process' | Format-Table Name,CPU | Get-Member
 ```
 
-If you only focus on the types you get back, you'll notice you're getting back something different:
+Focusing just on the types you get back, notice you're getting back something different:
 
 ```output
 TypeName: Microsoft.PowerShell.Commands.Internal.Format.FormatStartData
@@ -51,7 +51,7 @@ TypeName: Microsoft.PowerShell.Commands.Internal.Format.FormatEntryData
 TypeName: Microsoft.PowerShell.Commands.Internal.Format.GroupEndData
 ```
 
-What these types are, isn't important for this lesson. What is important is to realize that when you use any type of formatting command, your data is different and when it's different it might no longer contain the columns you care about. Let's illustrate this with an example:
+What these types are, isn't important for this lesson. What's important to realize is that when you use any type of formatting command, your data is different. And when it's different, it may no longer contain the columns you care about. Let's illustrate with an example:
 
 ```powershell
 Get-Process 'some process' | Select-Object Name, Cpu
@@ -85,7 +85,7 @@ Name CPU
 ---- ---
 ```
 
-It's empty, because `Format-Table` transformed your object by placing data into other properties. Your data isn't gone, only your properties. The preceding PowerShell command makes an attempt to find the properties but is unable to.
+It's empty, because `Format-Table` transformed the object containing your results by placing data into other properties. Your data isn't gone, only your properties. The preceding PowerShell command makes an attempt to find the properties but is unable to.
 
 Formatting commands should be the last thing you use in your statement because they're meant for formatting things nicely for screen presentation. They aren't meant to be used as a way to filter or sort your data.
 

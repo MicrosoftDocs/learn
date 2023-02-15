@@ -1,3 +1,4 @@
+
 In this exercise you will use ACR Tasks to perform the following actions:
 
 * Create an Azure Container Registry

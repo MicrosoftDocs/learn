@@ -2,10 +2,10 @@
 uid: azure.query-data-sentinel
 metadata:
   title: Query, visualize, and monitor data in Microsoft Sentinel
-  description: Describe how to query, visualize, and monitor data in Microsoft Sentinel.
-  ms.date: 12/17/2020
-  author: cwatson-cat
-  ms.author: cwatson
+  description: "Describe how to query, visualize, and monitor data in Microsoft Sentinel."
+  ms.date: 01/26/2023
+  author: wwlpublish
+  ms.author: kelawson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Query, visualize, and monitor data in Microsoft Sentinel
@@ -23,12 +23,12 @@ prerequisites: |
   - A Microsoft Sentinel instance in your Azure subscription
 iconUrl: /training/achievements/query-data-sentinel.svg
 levels:
-- beginner
+- intermediate
 roles:
-- solution-architect
+- security-operations-analyst
 products:
 - azure
-- azure-sentinel
+- microsoft-sentinel
 subjects:
 - threat-protection
 units:

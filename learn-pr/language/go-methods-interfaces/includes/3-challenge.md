@@ -8,6 +8,6 @@ Write a program that uses a custom package to manage accounts for an online stor
 
 2. Create another custom type called `Employee` that includes a variable to store the number of credits as type `float64` and that embeds the `Account` object. The type must also include the functionality to `AddCredits`, `RemoveCredits`, and `CheckCredits`. You need to demonstrate that you can change the account name via the `Employee` object.
 
-3. Write a Stringer method to your `Account` object so that the `Employee` name can be printed out in a format that includes the first and last name.
+3. Write a Stringer method to your `Account` object so that the `Employee` name can be printed in a format that includes the first and last name.
 
 4. Finally, write a program that consumes the package you created, and test all the functionality listed in this challenge. That is, the main program should change the name, print the name, add credit, remove credit, and check the balance.

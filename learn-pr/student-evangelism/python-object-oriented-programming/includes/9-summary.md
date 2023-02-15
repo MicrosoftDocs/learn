@@ -4,7 +4,7 @@ You were then introduced to classes and how they differed from objects. Addition
 
 After that, you went through an exercise where you started working on a project to implement the game rock, paper, scissors. You started with a modeling exercise. You also scaffolded some starter code based on the objects and data identified when you were modeling.
 
-You then looked at how you can add behavior to objects to operate on an object's data. Additionally, you learned about an important principle called *encapsulation*. Encapsulation is about hiding your data from other objects and instead communicates via methods. Python encapsulates the object's data by using prefixes on the variable naming.
+You then looked at how you can add behavior to objects to operate on an object's data. Additionally, you learned about an important principle called *encapsulation*. Encapsulation is about hiding your data from other objects and instead communicating via methods. Python encapsulates the object's data by using prefixes on the variable naming.
 
 Finally, you learned to add behavior to your rock, paper, scissors game and got a working piece of software. As an added bonus, you also learned how you could extend your game with the choices lizard and Spock. In that way, you were shown how little you needed to modify.
 

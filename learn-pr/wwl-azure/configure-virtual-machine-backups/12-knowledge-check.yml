@@ -4,49 +4,52 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/01/2022
+  ms.date: 02/10/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 5
+durationInMinutes: 3
 content: |
   [!include[](includes/12-knowledge-check.md)]
 quiz:
   title: ""
+
   questions:
-  - content: "A company has several Azure VMs that are currently running production workloads. There's a mix of production Windows Server and Linux servers. Which option is the best choice for production backups?"
+  - content: "What's the best backup method for the company's production virtual machines?"
     choices:
-    - content: "Managed snapshots"
+    - content: "Azure managed disks snapshots"
       isCorrect: false
-      explanation: "Incorrect. An Azure Snapshot is a read-only copy of the existing disk in the Microsoft Azure Cloud. This snapshot can be used as a backup or to create a virtual machine. However, the snapshot is only for a single point in time and isn't the best choice for production environments."
+      explanation: "Incorrect. An Azure snapshot is a read-only copy of the existing disk in the Microsoft Azure Cloud. This snapshot can be used as a backup or to create a virtual machine. However, the snapshot is only for a single point in time and isn't the best choice for production environments."
     - content: "Azure Backup"
       isCorrect: true
       explanation: "Correct. Azure Backup is the best option for production workloads."
     - content: "Azure Site Recovery"
       isCorrect: false
-      explanation: "Incorrect. Azure Site Recovery would be better for scenarios involving replication, failover, and fallback."
-  - content: "Which of these options is recommended to back up a database disk used for development?"
+      explanation: "Incorrect. Azure Site Recovery is better for scenarios involving replication, failover, and fall back."
+  
+  - content: "Which option should you recommend to back up the Engineering database disks?"
     choices:
-    - content: "Virtual machine backup"
+    - content: "Azure virtual machine backup"
       isCorrect: false
-      explanation: "Incorrect. Is there a better choice for just the database backup?"
+      explanation: "Incorrect. Is there an option that can capture only the database backup?"
     - content: "Azure Site Recovery"
       isCorrect: false
-      explanation: "Incorrect. Azure Site Recovery would be better for scenarios involving replication, failover, and fallback."
-    - content: "Disk snapshot"
+      explanation: "Incorrect. Azure Site Recovery is better for scenarios involving replication, failover, and fall back."
+    - content: "Azure managed disks snapshots"
       isCorrect: true
-      explanation: "Correct. Snapshots can be taken at any time and used to quickly restore the database data disk."
-  - content: "A malware attack has deleted several virtual machine backups. How long are items available in the soft delete state?"
+      explanation: "Correct. Azure snapshots can be taken at any time, and can be used to quickly restore a database data disk."
+
+  - content: "A recent malware attack deleted several virtual machine backups. How long are backup items available in a soft delete state?"
     choices:
+    - content: "14 days"
+      isCorrect: true
+      explanation: "Correct. Backup data is retained for 14 more days, which allows the recovery of the backup item with no data loss."
     - content: "Seven days"
       isCorrect: false
       explanation: "Incorrect. Soft delete provides for longer backup recovery."
-    - content: "14 days"
-      isCorrect: true
-      explanation: "Correct. Backup data is retained for 14 more days, allowing the recovery of that backup item with no data loss."
     - content: "30 days"
       isCorrect: false
-      explanation: "Incorrect. Soft delete doesn't provide for a 30 day recovery period."
+      explanation: "Incorrect. Soft delete doesn't provide for a 30-day recovery period."

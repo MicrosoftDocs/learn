@@ -3,7 +3,7 @@ uid: learn.wwl.describe-security-management-capabilities-of-azure
 metadata:
   title: Describe security management capabilities of Azure
   description: "Describe security management capabilities of Azure"
-  ms.date: 04/06/2022
+  ms.date: 02/09/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -26,7 +26,7 @@ roles:
 - business-user
 - student
 products:
-- azure
+- defender-for-cloud
 subjects:
 - security
 units:

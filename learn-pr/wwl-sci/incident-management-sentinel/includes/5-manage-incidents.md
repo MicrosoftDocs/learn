@@ -1,3 +1,4 @@
+
 After you start using Microsoft Sentinel to generate incidents, you and the IT team at Contoso will want to investigate those incidents. You can use the advanced investigation and analysis tools to gather information and determine remediation steps.
 
 ## Investigate incidents

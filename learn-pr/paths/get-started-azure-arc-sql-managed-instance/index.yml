@@ -34,7 +34,7 @@ modules:
 - learn.azure.intro-to-arc-enabled-data-services
 - learn.azure.deploy-manage-azure-arc-data-controller
 - learn.azure.deploy-manage-azure-arc-enabled-sql-managed-instance
-- learn.monitor-azure-arc-enabled-sql-managed-instance-security-performance
+- learn.azure.secure-monitor-azure-arc-enabled-sql-managed-instance
 - learn.azure.high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance
 trophy:
   uid: learn.get-started-azure-arc-sql-managed-instance.trophy
