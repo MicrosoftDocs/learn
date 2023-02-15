@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.build-chat-app-web-pubsub.summary
+title: Summary
+metadata:
+  title: Summary of the training module
+  description: Overview of Static Web Apps
+  ms.date: 12/14/2022
+  author: dlepow
+  ms.author: danlep
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.contributors: jixin
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-summary.md)]

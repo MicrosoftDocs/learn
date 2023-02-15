@@ -90,7 +90,7 @@ For example, when analyzing the following image for landmarks, the Computer Visi
 
 ### Optical character recognition
 
-The Computer Vision service can use optical character recognition (OCR) capabilities to detect printed and handwritten text in images. This capability is explored in the [Read text with the Computer Vision service](/training/modules/read-text-computer-vision/) module on Microsoft Learn.
+The Computer Vision service can use optical character recognition (OCR) capabilities to detect printed and handwritten text in images. This capability is explored in the [Read text with the Computer Vision service](/learn/modules/read-text-computer-vision/) module on Microsoft Learn.
 
 ### Additional capabilities
 

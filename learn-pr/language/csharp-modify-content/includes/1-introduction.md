@@ -1,6 +1,6 @@
-Often the data with which you'll need to work will come from other software systems as a string. It usually starts in a format that is unusable, containing extraneous information that makes the important information difficult to extract. When this happens, you'll need tools and techniques to parse through string data, isolate the information you need, and remove the information you don't need.
+Often, the data with which you'll need to work will come from other software systems as a string. It usually starts in a format that's unusable, containing extraneous information that makes the important information difficult to extract. When this happens, you'll need tools and techniques to parse through string data, isolate the information you need, and remove the information you don't need.
 
-In this module, you'll use string helper methods to identify and isolate the information in which you're interested. You'll learn how to copy out just a smaller portion of a larger string. You'll replace characters, or remove characters from a string.
+In this module, you'll use string helper methods to identify and isolate the information in which you're interested. You'll learn how to copy out just a smaller portion of a larger string. You'll replace characters or remove characters from a string.
 
 By the end of this module, you'll be able to modify a string's contents, isolating specific portions to extract, replace, or remove.
 

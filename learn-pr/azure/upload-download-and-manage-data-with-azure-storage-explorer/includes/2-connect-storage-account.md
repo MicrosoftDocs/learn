@@ -23,8 +23,8 @@ The Azure Storage Explorer application runs on the following versions of these p
 
 | Operating system | Version                                                |
 | ---------------- | ------------------------------------------------------ |
-| Windows          | Windows 10 (Recommended), Windows 8, or Windows 7      |
-| macOS            | macOS 12.12 Sierra and later                           |
+| Windows          | Windows 11, Windows 10, Windows 8, or Windows 7      |
+| macOS            | macOS 10.12 Sierra and later                           |
 | Linux            | Ubuntu 18.04 x64, Ubuntu16.04 x64, or Ubuntu 14.04 x64 |
 
 ### Azure Storage types

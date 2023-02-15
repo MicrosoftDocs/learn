@@ -10,7 +10,7 @@ variables:
 jobs:
 - job:
   steps:
-  
+
   - task: AzureResourceManagerTemplateDeployment@3
     inputs:
       connectedServiceName: $(ServiceConnectionName)

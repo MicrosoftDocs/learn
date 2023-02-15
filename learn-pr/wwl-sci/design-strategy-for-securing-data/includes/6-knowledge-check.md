@@ -1,3 +1,4 @@
+
 Tailwind Traders is planning some significant changes to their Data Security Strategy. They've asked for your assistance as follows:
 
 -   **Data Security Services.**  The Security department wants to know how to evaluate Data Security solutions in Azure.

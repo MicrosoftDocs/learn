@@ -1,3 +1,4 @@
+
 Azure Monitor delivers a comprehensive solution for collecting, analyzing, and acting on telemetry from your cloud and on-premises environments. 
 
 The following diagram is a high-level view of Azure Monitor.

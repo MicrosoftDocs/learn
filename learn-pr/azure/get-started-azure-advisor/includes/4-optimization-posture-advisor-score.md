@@ -4,7 +4,7 @@ When you reviewed your Advisor recommendations in the last unit, you may have di
 
 Advisor aggregates its findings into a single number – **Advisor Score**.
 
-Advisor Score is a rating of your Azure subscriptions on a scale from 0% to 100% to help you understand how well the resources in those subscriptions are optimized, based on our documented best practices. It's also further broken down into five individual category scores, each representing one of the five pillars of Azure Advisor and the Azure Well-Architected Framework.
+Advisor Score is a rating of your Azure subscriptions on a scale from 0% to 100%. It's intended to help you understand how well the resources in those subscriptions are optimized, based on our documented best practices. It's also further broken down into five individual category scores, each representing one of the five pillars of Azure Advisor and the Azure Well-Architected Framework.
 
 With just a quick glance, Advisor Score helps you to:
 
@@ -60,7 +60,7 @@ As we've learned, the higher the Advisor Score, the more in line your subscripti
 
 - The **Advisor Score** gives you a baseline for how your subscriptions are doing overall. You can also see the historical trends to understand and track your progress.
 - The **Score by category** tells you how each individual category rates on its own and lets you see which categories are most impacting your overall score.
-- The **Category score impact** lets you quickly see which outstanding recommendations will improve your score the most. This value reflects both the importance of the recommendation and how easy it would be to apply the recommendation.
+- The **Category score impact** lets you quickly see which outstanding recommendations would improve your score the most. This value reflects both the importance of the recommendation and how easy it would be to apply the recommendation.
 
 Your Advisor Score changes as you remediate issues by adopting the best practices that Advisor recommends. By focusing on the Advisor recommendations that most affect your Advisor Score, you'll make the most progress as you address these issues.
 
@@ -68,13 +68,13 @@ Your Advisor Score changes as you remediate issues by adopting the best practice
 
 You can track your progress over time by seeing how much your overall score and your category scores change on a daily, weekly, and monthly basis. That way, you can set baselines to help you achieve your goals. Your ultimate goal probably isn't to achieve a 100% Advisor Score, but to design, build, and operate well-architected Azure workloads. Advisor Score is a great way to help you get there.
 
-You can tailor your use of Advisor Score to fit your particular needs, but here is a recommended general workflow for how to manage your Advisor Score:
+You can tailor your use of Advisor Score to fit your particular needs, but here's a recommended general workflow for how to manage your Advisor Score:
 
 :::image type="content" source="../media/advisor-score-workflow.png" alt-text="Diagram showing the four steps of the Azure Advisor Score workflow - check, analyze, review, apply." border="false":::
 
 - **Check** in to your Advisor Score dashboard to see if your target score is being met. (Ideally, you'd set your target at 100%, but depending on your current situation you might need to start with a different target.)
 - **Analyze** the category scores to see what needs to be addressed (if the score falls below your target).
-- **Review** the category score impact for each recommendation to see which ones will produce the most benefit when addressed.
-- **Apply** the recommendations that will get you back to your target score as quickly as possible.
+- **Review** the category score impact for each recommendation to see which ones produce the most benefit when addressed.
+- **Apply** the recommendations that get you back to your target score as quickly as possible.
 
 That's it! Then just repeat this process regularly to help you reach and maintain your well-architected goals.

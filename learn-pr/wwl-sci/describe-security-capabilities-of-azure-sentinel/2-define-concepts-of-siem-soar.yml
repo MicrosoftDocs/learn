@@ -4,13 +4,11 @@ title: Define the concepts of SIEM and SOAR
 metadata:
   title: Define the concepts of SIEM and SOAR
   description: "Define the concepts of SIEM and SOAR"
-  ms.date: 04/07/2022
+  ms.date: 02/09/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 1
 content: |
   [!include[](includes/2-define-concepts-of-siem-soar.md)]

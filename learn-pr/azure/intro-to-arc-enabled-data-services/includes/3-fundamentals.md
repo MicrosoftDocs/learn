@@ -1,7 +1,7 @@
 Azure Arc-enabled data services are a set of software to provide hybrid data capabilities and managed services using the Kubernetes platform. The following Azure Arc-enabled data services are available:
 
 - Azure Arc-enabled SQL Managed Instance
-- Azure Arc-enabled PostgreSQL Hyperscale (Preview)
+- Azure Arc-enabled PostgreSQL server (preview)
 
 One of the ways to learn about the various components that make up Azure Arc-enabled data services is to examine the architecture.
 
@@ -51,7 +51,7 @@ The data controller can be deployed in indirect connected mode using the az CLI 
 
 ## Azure Arc-enabled data services
 
-With a successful Azure Arc data controller deployment, you can now deploy an Azure Arc-enabled SQL Managed Instance or Azure Arc-enabled PostgreSQL Hyperscale.
+With a successful Azure Arc data controller deployment, you can now deploy an Azure Arc-enabled SQL Managed Instance or Azure Arc-enabled PostgreSQL server (preview).
 
 Azure Arc-enabled data services are based on Kubernetes Custom Resource Definitions (CRD). CRD allows the Arc data controller to recognize Kubernetes API requests to deploy and configure Azure Arc-enabled data services.
 
@@ -60,12 +60,6 @@ Azure Arc-enabled data services are based on Kubernetes Custom Resource Definiti
 Azure Arc-enabled SQL Managed Instance is a Kubernetes stateful-set pod, giving it built-in basic high availability. The pod includes containers for the SQL Server instance, metrics, and log collection. The SQL Server instance container includes the SQL Server engine and agents to assist with management capabilities.
 
 In direct connected mode, you can deploy and manage an Azure Arc-enabled SQL Managed Instance using the Azure portal. In indirect connected mode, you can use the az CLI (using the arcdata extension), kubectl, or Azure Data Studio.
-
-### Azure Arc-enabled PostgreSQL Hyperscale
-
-An Azure Arc-enabled PostgreSQL server group is a series of Kubernetes stateful-set pods (the number depends on how many worker nodes you deploy), giving it built-in basic high availability. Each pod includes containers for the PostgreSQL engine, metrics, and log collection.
-
-You can deploy an Azure Arc-enabled PostgreSQL Hyperscale through the Azure portal if you use direct connected mode. In indirect connected mode, you can use the az CLI (using the arcdata extension), kubectl, or Azure Data Studio.
 
 ## Unified Azure experience
 

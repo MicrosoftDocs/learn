@@ -3,7 +3,7 @@ uid: learn.wwl.build-data-analytics-solutions-using-azure-synapse-serverless-sql
 metadata:
   title: Build data analytics solutions using Azure Synapse serverless SQL pools
   description: Build data analytics solutions using Azure Synapse serverless SQL pools
-  ms.date: 05/24/2022
+  ms.date: 01/24/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
@@ -29,8 +29,8 @@ subjects:
 - serverless-compute
 modules:
 - learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools
-- learn.wwl.create-metadata-objects-azure-synapse-serverless-sql-pools
 - learn.wwl.use-azure-synapse-serverless-sql-pools-for-transforming-data-lake
+- learn.wwl.create-metadata-objects-azure-synapse-serverless-sql-pools
 - learn.wwl.secure-data-manage-users-azure-synapse-serverless-sql-pools
 trophy:
   uid: learn.wwl.build-data-analytics-solutions.trophy

@@ -4,7 +4,7 @@ metadata:
   moduleType: standard
   title: Manage changes to your Bicep code by using Git
   description: Learn how to use Git version control with your Bicep files and infrastructure as code.
-  ms.date: 07/29/2022
+  ms.date: 01/23/2023
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial

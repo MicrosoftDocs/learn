@@ -6,13 +6,13 @@ In this exercise, you'll declare a variable, assign it a value, retrieve its val
 
 ### Step 1: Delete all of the code in the code editor
 
-Use your mouse to highlight all of the text in the code editor, then select the `backspace` or `del` key to remove everything.
+Use your mouse to highlight all of the text in the code editor, then select the <kbd>Backspace</kbd> or <kbd>Del</kbd> key to remove everything.
 
 Later, we'll learn a different, less destructive technique for disabling the lines of code you no longer want to execute.
 
 ### Step 2: Declare a variable and assign a value to it
 
-To assign a value to a variable, you'll use the *assignment operator*, which is a single equals character `=`.
+To assign a value to a variable, you'll use the *assignment operator*, which is a single equals character: `=`.
 
 Add the following code in the code editor:
 

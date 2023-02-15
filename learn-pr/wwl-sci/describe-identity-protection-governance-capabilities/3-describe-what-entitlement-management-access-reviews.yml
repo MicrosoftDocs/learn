@@ -4,13 +4,11 @@ title: Describe what is entitlement management and access reviews
 metadata:
   title: Describe what is entitlement management and access reviews
   description: "Describe what is entitlement management and access reviews"
-  ms.date: 04/02/2022
+  ms.date: 02/07/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
-azureSandbox: false
-labModal: false
 durationInMinutes: 8
 content: |
   [!include[](includes/3-describe-what-entitlement-management-access-reviews.md)]

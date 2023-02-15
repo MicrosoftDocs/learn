@@ -28,7 +28,7 @@ roles:
 - ip-admin
 products:
 - m365
-- m365-information-protection
+- office-365
 subjects:
 - compliance
 - data-management

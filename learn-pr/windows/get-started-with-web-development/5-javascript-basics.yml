@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+title: Exercise - Add interactivity with JavaScript
+uid: learn-windows.introduction-to-web-development.5-javascript-basics
+metadata:
+  title: Exercise - Add interactivity with JavaScript
+  description: Learn how to use JavaScript to add interactivity to your web page.
+  ms.date: 2/8/2023
+  author: mmpadget
+  ms.author: quradic
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows
+durationInMinutes: 10
+content: |
+    [!include[](includes/5-javascript-basics.md)]

@@ -1,3 +1,4 @@
+
 As a security engineer working for Contoso, you recently noticed that a significant number of VMs were deleted from your Azure subscription. You want to analyze this occurrence and be alerted when a similar activity occurs in the future. You decide to implement an analytics rule to create an incident when someone deletes an existing VM. You can then investigate the incident to determine the details, and close the incident when you're finished.
 
 In this exercise, you'll create a Microsoft Sentinel analytics rule, delete a VM, and investigate the incident created by the rule.
@@ -20,7 +21,7 @@ In this task, you'll create an analytics rule that will create an incident when 
    - **Severity**: Select **Medium**.
    - **Status**: Select **Enable**.
 
-   :::image type="content" source="../media/6-Analytics-rule-wizard-Create-new-rule.PNG" alt-text="Screenshot of the page for creating a new rule in the Analytics Rule wizard." border="true":::
+   :::image type="content" source="../media/6-analytics-rule-wizard-create-new-rule.png" alt-text="Screenshot of the page for creating a new rule in the Analytics Rule wizard." border="true":::
 
 5. On the **Set rule logic** page, in the **Rule query** section, enter the following query:
 
@@ -76,7 +77,7 @@ In this task, you'll investigate the incident created when you deleted the VM in
 7. On the **Investigation** page:
 
    1. Select **Deleted VMs** in the center of the page and observe the details of the incident.
-   1. Select the entity on the graph that represents a user. Note that this is your user account, indicating that you deleted the VM.
+   1. Select the entity on the graph that represents a user. This is your user account, indicating that you deleted the VM.
    1. Select **Status** > **Closed**.
 8. In the **Select classification** drop-down menu, select **Benign Positive - suspicious but expected**.
 9. In the **Comment** field, enter **Testing incident creation and resolution steps**, and then select **Apply**.
@@ -95,3 +96,4 @@ To avoid incurring costs, delete the Azure resources that you created in this ex
 2. Select **azure-sentinel-rg**.
 3. On the header bar, select **Delete resource group**.
 4. In the **TYPE THE RESOURCE GROUP NAME** field, enter `azure-sentinel-rg` and select **Delete**.
+

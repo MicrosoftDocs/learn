@@ -4,13 +4,11 @@ title: introduction
 metadata:
   title: introduction
   description: "introduction"
-  ms.date: 01/06/2023
+  ms.date: 02/07/2023
   author: wwlpublish
   ms.author: hrasheed
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 3
+durationInMinutes: 10
 content: |
   [!include[](includes/1-introduction.md)]

@@ -18,6 +18,6 @@ There are several benefits to using a hub-spoke network for your Azure Firewall 
 
 - **Consider role separation**. Use a hub-spoke network configuration to support separation of responsibilities. The hub-spoke firewall topology lets you distribute maintenance tasks between central IT (SecOps, InfraOps) and workloads (DevOps).
 
-- **Consider shared services**. Support workloads in different environments that require shared services, but not connectivity to each other. Examples of these environments include development and testing where each requires DNS. Place shared services in the hub virtual network, and deply each environment to a spoke to maintain isolation.
+- **Consider shared services**. Support workloads in different environments that require shared services, but not connectivity to each other. Examples of these environments include development and testing where each requires DNS. Place shared services in the hub virtual network, and deploy each environment to a spoke to maintain isolation.
 
 - **Consider centralized control**. Apply the hub-spoke network for enterprises that require central control over security aspects. A common example is a firewall located in the hub and workloads placed in each spoke.

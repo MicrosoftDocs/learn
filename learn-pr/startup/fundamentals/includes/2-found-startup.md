@@ -48,7 +48,7 @@ As a startup founder, you need to work on three tasks to determine your startup'
 
 - Predict the likely revenues you'll generate when the product is in the hands of customers. Consider how long it will take to reach that juncture.
 
-  - This is the trickiest part, and many would argue that forecasting future revenues for a pre-launch startup is at best a rough guess, and perhaps no more than crystal-ball gazing.
+  - This is the trickiest part, and many would argue that forecasting future revenues for a pre-launch startup is at best a rough guess.
   - Almost all startup pitch decks are heavily influenced by optimism bias. They have a revenue chart that goes steeply up and to the right. A good rule of thumb is to double the length of time you think it will take to get to revenue, and halve the amount of revenue you think you'll generate.
 
 - Determine how much capital you have and are willing to invest in the company, prior to funding from revenues or external investment. If you have cofounders, this is a great topic to discuss as a team.
