@@ -47,7 +47,7 @@ parameters include **Name**, **ResourceGroupName**, **Location**, and **SkuName*
 parameter is optional and defaults to `StorageV2` when not specified.
 
 ```azurepowershell
-New-AzStorageAccount -Name <storage-account-name> -ResourceGroupName <resource-group-name> -Location eastus -SkuName Standard_RAGRS
+New-AzStorageAccount -Name <storage-account-name> -ResourceGroupName storageaccountexamplerg -Location eastus -SkuName Standard_RAGRS
 ```
 
 ## Verify the storage account
@@ -58,7 +58,7 @@ specific resource group or the **Name** and **ResourceGroupName** parameters to 
 specific storage account.
 
 ```azurepowershell
-Get-AzStorageAccount -Name <storage-account-name> -ResourceGroupName <resource-group-name>
+Get-AzStorageAccount -Name <storage-account-name> -ResourceGroupName storageaccountexamplerg
 ```
 
 ## Clean up resources
@@ -76,5 +76,5 @@ The `Remove-AzStorageAccount` cmdlet is used to remove a storage account. The ma
 parameters include **Name** and **ResourceGroupName**.
 
 ```azurepowershell
-Remove-AzStorageAccount -Name <storage-account-name> -ResourceGroupName <resource-group-name>
+Remove-AzStorageAccount -Name <storage-account-name> -ResourceGroupName storageaccountexamplerg
 ```
