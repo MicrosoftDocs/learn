@@ -15,7 +15,7 @@ abstract: |
     - Configure pipeline access to packages
     - Configure credential secrets, and secrets for services
     - Ensure that the secrets are in the Azure Key Vault
-    - Ensure that secrets are not in the logs
+    - Ensure that secrets aren't in the logs
 prerequisites: |
   - None
 iconUrl: /training/achievements/generic-trophy.svg

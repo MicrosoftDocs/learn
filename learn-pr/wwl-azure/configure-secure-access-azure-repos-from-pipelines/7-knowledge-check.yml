@@ -9,76 +9,40 @@ metadata:
   ms.author: lumac
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1
-###########################################################################
-###
-### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
-###  - Questions are complete sentences ending with a question mark
-###  - No true/false questions
-###  - 3 answers per question
-###  - All answers about the same length
-###  - Numeric answers listed in sorted order
-###  - No "All of the above" and/or "None of the above" as answer choices
-###  - No "Not" or "Except" in questions
-###  - No second person ("you") in the questions or answers
-###  - Provide a meaningful explanation for both correct and incorrect answers
-###
-###########################################################################
+durationInMinutes: 4
 content: |
 quiz:
   questions:
-  - content: ""
+  - content: "What is the primary purpose of using Azure Key Vault in a pipeline?"
     choices:
-    - content: ""
+    - content: "To store and manage secrets used in the pipeline."
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct. To store and manage secrets and keys used in the pipeline securely."
+    - content: "To configure access to packages used in the pipeline."
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "Incorrect. Azure Key Vault can't control package access and permissions."
+    - content: "To run pipeline validation for secrets."
       isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Incorrect. Azure Key Vault can't validate secrets in the pipeline."
+  - content: "Which of the following is the main reason for using Service Connections to access external services in pipelines?"
     choices:
-    - content: ""
+    - content: "It makes it easier to manage multiple environments in the pipeline."
+      isCorrect: false
+      explanation: "Incorrect. While it can make managing pipelines easier, it doesn't reduce the need for secure authentication methods."
+    - content: "It reduces the need for the user and password to connect to external services."
+      isCorrect: false
+      explanation: "Incorrect. In a few Service Connection types it's still possible to use user and password, although it's the recommended authentication method."
+    - content: "It ensures a secure connection with external services."
       isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Correct. The Service Connection ensures a secure authentication and connection with external services."
+  - content: "How can you prevent sensitive information from being exposed in plaintext within pipeline logs?"
     choices:
-    - content: ""
+    - content: "Encrypt the pipeline YAML file."
+      isCorrect: false
+      explanation: "Incorrect. Encrypting the YAML file won't prevent sensitive information from being logged."
+    - content: "Use secure files to store sensitive information."
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct. Using secure files is one of the recommended mechanisms to prevent sensitive information from being exposed in plaintext within pipeline logs."
+    - content: "Use the Azure DevOps CLI to manage pipeline logs."
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      explanation: "Incorrect. Using the Azure DevOps CLI won't prevent sensitive information from being logged."
