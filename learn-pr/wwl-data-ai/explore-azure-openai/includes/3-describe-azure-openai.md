@@ -1,4 +1,4 @@
-![Example.](../media/openai-microsoft-logo.png)
+![Screenshot of Microsoft and OpenAI logos together for Azure OpenAI.](../media/openai-microsoft-logo.png)
 
 Microsoft has partnered with OpenAI to deliver on three main goals:  
 - To utilize Azure's infrastructure, including security, compliance, and regional availability, to help users build enterprise-grade applications.
@@ -33,7 +33,7 @@ Other AI workloads Azure OpenAI supports can be categorized into three groups:
 
 ### Azure OpenAI's relationship to Azure AI services 
 
-![Example.](../media/Microsoft-ai-portfolio.png)
+![Diagram showing Microsoft AI portfolio and how they relate.](../media/Microsoft-ai-portfolio.png)
 
 Azure's AI services are tools for solving AI workloads and can be categorized into Azure's Machine Learning platform, Cognitive Services, and Applied AI Services.   
  
