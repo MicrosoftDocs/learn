@@ -20,13 +20,13 @@ quiz:
   questions:
   - content: "What does an alert in the _Acknowledged_ state indicate?"
     choices:
-    - content: "A new issue is open."
+    - content: "The issue is new (open) and not in review."
       isCorrect: false
       explanation: "Incorrect. When an issue is open, but not under review, the alert is in the _New_ state."
-    - content: "The alert is in review and work is in progress."
+    - content: "The issue is in review and work is in progress."
       isCorrect: true
       explanation: "Correct. An alert in the _Acknowledged_ state indicates an admin has reviewed the alert and is working on the issue."
-    - content: "An issue is complete."
+    - content: "The issue is complete."
       isCorrect: false
       explanation: "Incorrect. When an issue is no longer in review, the alert is in the _Closed_ state."
 

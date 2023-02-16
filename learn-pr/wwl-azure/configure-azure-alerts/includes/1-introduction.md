@@ -1,8 +1,8 @@
-Azure Administrator use Azure Monitor to receive alerts for their monitored applications and resources. Alerts can help an organizations respond to system issues in a timely manner, including setting up automated trigger actions.
+Azure Administrators use Azure Monitor to receive alerts for their monitored applications and resources. Alerts can help an organization address to system issues in a timely manner, including setting up automated responsive actions.
 
-In this module, suppose you work for a large retail company with recently deployed shopping applications to the Azure platform. During peak sales times, the system begins to slow and response times increase.
+In this module, suppose you work for a large retail company with shopping applications recently deployed to the Azure platform. During peak sales times, the system begins to slow and response times increase.
 
-You're responsible for configuring Azure Monitor notifications and alerts for the key systems and applications. The alerts should notify the correct team based on the issue conditions and response actions. You need to detect issues in real time, and resolve any problems before they affect your customers.
+You're responsible for configuring Azure Monitor notifications and alerts for the key systems and applications. The alerts must notify the correct team based on the issue conditions and responsive actions. You need to detect issues in real time, and resolve any problems before they affect your customers.
 
 ## Learning objectives
 
