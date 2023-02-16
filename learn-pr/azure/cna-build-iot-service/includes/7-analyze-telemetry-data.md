@@ -1,4 +1,4 @@
-With the IoT pipeline components clearly identified, you now want to focus on the ability to extract data that will provide meaningful insights into the state of managed devices. You need to explore built-in Azure IoT Central analytics capabilities to determine whether they'll be sufficient to address your requirements. However, you also intend to evaluate other options, including Azure Time Series Insights and the export functionality that's available with Azure IoT Hub.
+With the IoT pipeline components clearly identified, you now want to focus on the ability to extract data that provides meaningful insights into the state of managed devices. You need to explore built-in Azure IoT Central analytics capabilities to determine whether they'll be sufficient to address your requirements. However, you also intend to evaluate other options, including Azure Time Series Insights and the export functionality that's available with Azure IoT Hub.
 
 ## What are the primary IoT analytics options?
 
@@ -14,9 +14,10 @@ Azure IoT Central offers built-in analytics functionality based on the built-in 
 
 :::image type="content" source="../media/7-iot-central-pre-defined-dashboard.png" alt-text="Screenshot of the condition monitoring dashboard of an Azure IoT Central application based on a predefined template.":::
 
-As part of the hot path analytics, you have the option of configuring continuous data export from Azure IoT Central to Azure Event Hub, which integrates with Azure Databricks. After you install the relevant libraries in the Azure Databricks workspace, you'll be able to leverage its processing resources to further analyze the telemetry stream and generate more complex visualizations, such as box plots. Besides Databricks, you can also use for this purpose Azure Stream Analytics or the Spark streaming functionality included in Azure HDInsight. Alternatively, you can leverage Azure Time Series Insights, which is optimized for simultaneous queries over large data sets with the latency within the range of 30 and 60 seconds. 
+As part of the hot path analytics, you have the option of configuring continuous data export from Azure IoT Central to Azure Event Hubs, which integrates with Azure Databricks. After you install the relevant libraries in the Azure Databricks workspace, you'll be able to use its processing resources to further analyze the telemetry stream and generate more complex visualizations, such as box plots. Besides Azure Databricks, you can also use for this purpose Azure Stream Analytics or the Spark streaming functionality included in Azure HDInsight. Alternatively, you can use Azure Time Series Insights, which is optimized for simultaneous queries over large data sets with the latency within the range of 30 and 60 seconds.
 
 For the cold data path, you can export data in regular intervals to Azure Blob storage. Next, you can configure a data pipeline that combines the following components:
+
 - An Azure function
 - An Azure Data Factory pipeline
 - An Azure SQL database
@@ -27,7 +28,7 @@ For the cold data path, you can export data in regular intervals to Azure Blob s
 
 ## What are the analytics capabilities of Azure Time Series Insights?
 
-Though Azure Time Series Insights is built into Azure IoT Central, it's also available as a separate service, which closely integrates with cloud gateways such as Azure IoT Hub and Azure Event Hub. It provides an analytics, storage, and visualization service for time series data, including support for SQL-like filtering and aggregation rules. Its visualization capabilities include support for overlays of different time series, dashboard comparisons, tabular views, and heat maps, and a data explorer for interactive data queries. In addition, it exposes a JavaScript controls library that facilitates embedding time series charts into custom applications.
+Though Azure Time Series Insights is built into Azure IoT Central, it's also available as a separate service, which closely integrates with cloud gateways such as Azure IoT Hub and Azure Event Hubs. It provides an analytics, storage, and visualization service for time series data, including support for SQL-like filtering and aggregation rules. Its visualization capabilities include support for overlays of different time series, dashboard comparisons, tabular views, and heat maps, and a data explorer for interactive data queries. In addition, it exposes a JavaScript controls library that facilitates embedding time series charts into custom applications.
 
 ## What are the analytics capabilities of Azure Stream Analytics?
 
