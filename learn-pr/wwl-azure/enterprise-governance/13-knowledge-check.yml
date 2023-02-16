@@ -27,7 +27,7 @@ quiz:
       explanation: "Owner doesn't have all the permissions the new user needs."
     - content: "Assign the user the Global Administrator role."
       isCorrect: false
-      explanation: "While this would work, the principal of least privileged should encourage companies not to use the Global Admin role."
+      explanation: "While this would work. The principal of least privileged should encourage companies not to use the Global Admin role."
   - content: "Which of the following would be good example of when to use a resource lock?"
     choices:
     - content: "An ExpressRoute circuit with connectivity back to your on-premises network."
@@ -46,7 +46,7 @@ quiz:
       explanation: "The user would be able to modify all the VMs, so this is an unsecure choice."
     - content: "Assign the user to the Contributor role on VM3."
       isCorrect: true
-      explanation: "Assign the user to the Contributor role on VM3. This means the user will not have access to VM1 or VM2. By assigning the Contributor role to the current resource group is incorrect, as it would the new hire to change the settings on VM1 and VM2 and therefore would meet the requirements."
+      explanation: "Assign the user to the Contributor role on VM3. This means the user won't have access to VM1 or VM2. By assigning the Contributor role to the current resource group is incorrect, as it would the new hire to change the settings on VM1 and VM2 and therefore would meet the requirements."
     - content: "Move VM3 to a new resource group and assign the user to the Contributor role on VM3."
       isCorrect: false
       explanation: "This could work, but may actually cause other problems because there's no longer the resources and rules associated with the original resource group."
@@ -54,7 +54,7 @@ quiz:
     choices:
     - content: "A billing group"
       isCorrect: false
-      explanation: "Billing groups do not work across subscriptions."
+      explanation: "Billing groups don't work across subscriptions."
     - content: "A management group"
       isCorrect: true
       explanation: "A management groups. Management groups can be used to organize and manage subscriptions."
