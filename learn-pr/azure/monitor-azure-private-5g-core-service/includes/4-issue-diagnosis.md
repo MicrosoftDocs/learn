@@ -131,10 +131,6 @@ To perform packet capture, take these steps:
 
 1. Enter the UPF-PP troubleshooter pod in the Azure Arc-enabled Kubernetes cluster.
 1. Run `upftdump` to capture the packets. This command runs `tcpdump` automatically.
-
-   > [!TIP]
-   > If necessary, you can also run the `upft` and `tcpdump` commands separately.
-
 1. Move the generated output file to a location where you want to do packet analysis.
 
 For detailed instructions about packet capturing, see [Perform data plane packet capture for a packet core instance](/azure/private-5g-core/data-plane-packet-capture).
