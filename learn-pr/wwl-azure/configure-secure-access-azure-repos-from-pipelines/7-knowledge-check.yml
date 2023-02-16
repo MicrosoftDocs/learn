@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-secure-access-azure-repos-from-pipelines.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check."
+  ms.date: 1/25/2023
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+quiz:
+  questions:
+  - content: "What is the primary purpose of using Azure Key Vault in a pipeline?"
+    choices:
+    - content: "To store and manage secrets used in the pipeline."
+      isCorrect: true
+      explanation: "Correct. To store and manage secrets and keys used in the pipeline securely."
+    - content: "To configure access to packages used in the pipeline."
+      isCorrect: false
+      explanation: "Incorrect. Azure Key Vault can't control package access and permissions."
+    - content: "To run pipeline validation for secrets."
+      isCorrect: false
+      explanation: "Incorrect. Azure Key Vault can't validate secrets in the pipeline."
+  - content: "Which of the following is the main reason for using Service Connections to access external services in pipelines?"
+    choices:
+    - content: "It makes it easier to manage multiple environments in the pipeline."
+      isCorrect: false
+      explanation: "Incorrect. While it can make managing pipelines easier, it doesn't reduce the need for secure authentication methods."
+    - content: "It reduces the need for the user and password to connect to external services."
+      isCorrect: false
+      explanation: "Incorrect. In a few Service Connection types it's still possible to use user and password, although it's the recommended authentication method."
+    - content: "It ensures a secure connection with external services."
+      isCorrect: true
+      explanation: "Correct. The Service Connection ensures a secure authentication and connection with external services."
+  - content: "How can you prevent sensitive information from being exposed in plaintext within pipeline logs?"
+    choices:
+    - content: "Encrypt the pipeline YAML file."
+      isCorrect: false
+      explanation: "Incorrect. Encrypting the YAML file won't prevent sensitive information from being logged."
+    - content: "Use secure files to store sensitive information."
+      isCorrect: true
+      explanation: "Correct. Using secure files is one of the recommended mechanisms to prevent sensitive information from being exposed in plaintext within pipeline logs."
+    - content: "Use the Azure DevOps CLI to manage pipeline logs."
+      isCorrect: false
+      explanation: "Incorrect. Using the Azure DevOps CLI won't prevent sensitive information from being logged."
