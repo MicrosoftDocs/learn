@@ -74,7 +74,7 @@ managing cloud infrastructure. It codifies infrastructure in configuration files
 desired state for your topology. Terraform enables the management of any infrastructure, such as
 public clouds, private clouds, and SaaS services, by using Terraform providers.
 
-## Which Azure automation tool is right for you?
+## Which Azure Automation tool is right for you?
 
 When picking a tool, consider your prior experience and current work environment.
 
