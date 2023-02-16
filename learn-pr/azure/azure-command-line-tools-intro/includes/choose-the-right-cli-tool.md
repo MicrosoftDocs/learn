@@ -38,11 +38,12 @@ resources. Both are cross-platform, installable on Windows, Linux, and macOS.
 **Azure CLI**
 
 - Cross-platform command-line interface, installable on Windows, Linux, and macOS
-- Runs in PowerShell, `Cmd.exe`, or Bash and other Unix shells
+- Runs in Azure Cloud Shell, PowerShell, `Cmd.exe`, or in a Docker container
 - Is based on Python
-- Defaults to outputting a JSON string. Other format options can be found on the Output formats for
-  Azure CLI commands
+- Defaults to outputting a JSON string although other format options are available, such as table, yaml and tsv
 - Allows you to query for command output using JMESPath query syntax
+- Commands are organized in _groups_, like `az vm`, and _subgroups_, like `az vm disk`
+- Syntax follows a simple `reference name -command -parameter -parameter value` pattern
 - Supports asynchronous operations
 
 **Azure PowerShell**
@@ -73,7 +74,7 @@ managing cloud infrastructure. It codifies infrastructure in configuration files
 desired state for your topology. Terraform enables the management of any infrastructure, such as
 public clouds, private clouds, and SaaS services, by using Terraform providers.
 
-## Which Azure automation tool is right for you?
+## Which Azure Automation tool is right for you?
 
 When picking a tool, consider your prior experience and current work environment.
 
