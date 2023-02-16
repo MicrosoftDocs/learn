@@ -12,18 +12,18 @@ metadata:
 durationInMinutes: 3
 quiz:
   questions:
-  - content: "A data scientist trains and logs a model with MLflow. When deploying the model, it seems the schema of the model's input and output isn't correct. What should the data scientist customize to fix the issue?"
+  - content: "A data scientist trains and logs a model with MLflow. When the data scientists deploys the model, the schema of the model's input and output isn't correct. What should the data scientist customize to fix the issue?"
     choices:
     - content: "Customize the model's environment."
       isCorrect: false
       explanation: "Incorrect. The environment includes the necessary packages for the model to run."
     - content: "Change the model's flavor."
       isCorrect: false
-      explanation: "Incorrect. The flavor specifies with which framework the model is trained."
+      explanation: "Incorrect. The flavor specifies the machine learning framework of the model."
     - content: "Customize the model's signature."
       isCorrect: true
-      explanation: "Correct. The model's signature defines the schemas of the inputs and outputs.."
-  - content: "A data scientist trained a deep learning model with TensorFlow. The deployed model will be compute-intensive and needs to use the most optimal inference server for similar workloads. Which model type is compatible with compute-intensive and no-code deployments?"
+      explanation: "Correct. The model's signature defines the schemas of the inputs and outputs."
+  - content: "A data scientist trained a deep learning model with TensorFlow. The deployed model is compute-intensive and needs to use the most optimal inference server for similar workloads. Which model type is compatible with compute-intensive and no-code deployments?"
     choices:
     - content: "MLflow"
       isCorrect: false
@@ -33,4 +33,4 @@ quiz:
       explanation: "Correct. Triton is ideal for compute-intensive deployments."
     - content: "Custom"
       isCorrect: false
-      explanation: "Incorrect. There is no no-code deployment with custom models."
+      explanation: "Incorrect. No-code deployment isn't available in Azure Machine Learning for custom models."
