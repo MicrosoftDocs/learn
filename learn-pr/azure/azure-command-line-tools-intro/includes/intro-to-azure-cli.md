@@ -20,8 +20,20 @@ differences, like line breaks or quoting, when copying Bash scripts for use in o
 ## Prerequisites
 
 Since your company already uses Azure, you have an active Azure subscription. You're using Bash in
-Azure Cloud Shell and you've created a resource group for the Azure storage account that you're
-about to create.
+Azure Cloud Shell.
+
+## Create a resource group
+
+Before creating a storage account, you need to create a resource group for your Azure storage
+account or use an existing resource group. A resource group is a logical container in which Azure
+resources are deployed and managed as a group.
+
+Create an Azure resource group named **storageaccountexamplerg** in the **eastus** region using the
+`az group create` command.
+
+```azurecli
+az group create -name storageaccountexamplerg -location eastus
+```
 
 ## Create a storage account
 
@@ -59,7 +71,16 @@ az storage account list
 az storage account list --resource-group <resource-group-name>
 ```
 
-## Remove the storage account
+## Clean up resources
+
+The `az group delete` command is used to delete a resource group. **Name** is the only
+mandatory parameter. Deleting a resource group deletes the resource group and all resources
+contained within it. If resources outside the scope of the storage account created in this unit
+exist in the **storageaccountexamplerg** resource group, they will also be deleted.
+
+```azurecli
+az group delete --name storageaccountexamplerg
+```
 
 When working in a resource group shared with other team members, delete the test storage account by
 using the `az storage account delete` command.
