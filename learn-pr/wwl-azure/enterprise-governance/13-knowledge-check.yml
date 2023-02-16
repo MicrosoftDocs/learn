@@ -27,7 +27,7 @@ quiz:
       explanation: "Owner doesn't have all the permissions the new user needs."
     - content: "Assign the user the Global Administrator role."
       isCorrect: false
-      explanation: "While this would work. The principal of least privileged should encourage companies not to use the Global Admin role."
+      explanation: "While this would work, the principal of least privileged should encourage companies not to use the Global Admin role."
   - content: "Which of the following would be good example of when to use a resource lock?"
     choices:
     - content: "An ExpressRoute circuit with connectivity back to your on-premises network."

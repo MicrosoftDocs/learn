@@ -11,7 +11,7 @@ The following figure depicts the various responsibility zones.
 :::image type="content" source="../media/az500-shared-responsibility-model-1b0dd365.png" alt-text="Diagram that depicts the responsibility zones, which indicate who handles each responsibility scope.":::
 
 
-For all cloud deployment types, you own your data and identities. You are responsible for helping secure your data and identities, your on-premises resources, and the cloud components you control (which vary by service type).
+For all cloud deployment types, you own your data and identities. You're responsible for helping secure your data and identities, your on-premises resources, and the cloud components you control (which vary by service type).
 
 Regardless of the deployment type, **you always retain responsibility for the following:**
 

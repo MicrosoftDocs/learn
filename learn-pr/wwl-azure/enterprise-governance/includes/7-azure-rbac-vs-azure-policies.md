@@ -2,7 +2,7 @@ A few key differences between Azure Policy and RBAC exist. RBAC focuses on user 
 
 ## RBAC
 
-Azure Role Based Access Control and Azure Policies play an important role in governance to ensure everyone and every resource stays within the required boundaries. They are controls put in place to meet an organizations standards for resource utilization and creation.
+Azure Role Based Access Control and Azure Policies play an important role in governance to ensure everyone and every resource stays within the required boundaries. They're controls put in place to meet an organizations standards for resource utilization and creation.
 
 RBAC manages who has access to Azure resources, what areas they have access to and what they can do with those resources. RBAC can be used to assign duties within a team and grant only the amount of access needed to allow the assigned user the ability to perform their job instead of giving everybody unrestricted permissions in an Azure subscription or resource.
 
@@ -17,7 +17,7 @@ RBAC achieves the ability to grant users the least amount privilege to get their
 
 ## Policies
 
-Policies on the other hand play a slightly different role in governance. Azure Policies focus on resource properties during deployment and for already existing resources. As an example, a policy can be issued to ensure users can only deploy DS series VMs within a specified resource should the user have the permission to deploy the VMs. In an existing resource, a policy could be implemented to add or append tags to resources that do not currently have tags to make reporting on costs easier and provide a better way to assign resources to business cost centers.
+Policies on the other hand play a slightly different role in governance. Azure Policies focus on resource properties during deployment and for already existing resources. As an example, a policy can be issued to ensure users can only deploy DS series VMs within a specified resource should the user have the permission to deploy the VMs. In an existing resource, a policy could be implemented to add or append tags to resources that don't currently have tags to make reporting on costs easier and provide a better way to assign resources to business cost centers.
 
 :::image type="content" source="../media/az500-role-based-versus-policies-ee3f9164.png" alt-text="RBAC has roles, users, role definitions and role initiatives.":::
 

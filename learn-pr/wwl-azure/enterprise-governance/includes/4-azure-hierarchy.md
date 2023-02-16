@@ -40,7 +40,7 @@ Management groups are an Azure resource to create flexible and very maintainable
 
 Management group hierarchies can be up to six levels deep. This provides you with the flexibility to create a hierarchy that combines several of these strategies to meet your organizational needs. For example, the diagram below shows an organizational hierarchy that combines a business unit strategy with a geographic strategy.
 
-:::image type="content" source="../media/az500-management-group-geography-4b75337f.png" alt-text="Management Group hieracrchy with geographical locations.":::
+:::image type="content" source="../media/az500-management-group-geography-4b75337f.png" alt-text="Management Group hierarchy with geographical locations.":::
 
 
 ### The value of management groups
