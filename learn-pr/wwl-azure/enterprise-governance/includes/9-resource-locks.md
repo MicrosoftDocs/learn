@@ -1,4 +1,3 @@
-
 As an administrator, you may need to lock a subscription, resource group, or resource to prevent other users in your organization from accidentally deleting or modifying critical resources. You can set the lock level to **CanNotDelete or ReadOnly**. In the portal, the locks are called **Delete and Read-only** respectively.
 
 :::image type="content" source="../media/az500-resource-locks-1bb4601b.png" alt-text="Screenshot of adding a resource lock.":::

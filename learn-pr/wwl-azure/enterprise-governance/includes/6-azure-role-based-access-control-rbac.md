@@ -1,4 +1,3 @@
-
 When it comes to identity and access, most organizations that are considering using the public cloud are concerned about two things:
 
  -  Ensuring that when people leave the organization, they lose access to resources in the cloud.
