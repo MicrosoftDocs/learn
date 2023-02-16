@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Check your knowledge
   description: Review what you've learned.
-  ms.date: 8/23/2021
+  ms.date: 1/16/2023
   author: lucie-docs
   ms.author: lucielenaour
   ms.topic: interactive-tutorial
@@ -17,41 +17,41 @@ quiz:
     choices:
     - content: "The admin permission on a repository"
       isCorrect: false
-      explanation: "The admin permission on a repository will only allow you to perform full administration-related tasks on a specific repository; it will not affect membership on a team."
+      explanation: "Incorrect. The admin permission on a repository only allows you to perform full administration-related tasks on a specific repository; it doesn't affect membership on a team."
     - content: "The maintain permission on a repository"
       isCorrect: false
-      explanation: "The maintain permission on a repository will only allow you to perform limited administration-related tasks on a specific repository; it will not affect membership on a team."
+      explanation: "Incorrect. The maintain permission on a repository only allows you to perform limited administration-related tasks on a specific repository; it doesn't affect membership on a team."
     - content: "Organization billing manager"
       isCorrect: false
-      explanation: "The organization billing manager permission only allows the user to handle billing related tasks; it will not affect membership on a team."
+      explanation: "Incorrect. The organization billing manager permission only allows the user to handle billing related tasks; it doesn't affect membership on a team."
     - content: "Team maintainer"
       isCorrect: true
-      explanation: "As a team maintainer, the user will be able to add and remove organization members to a team."
+      explanation: "Correct! As a team maintainer, the user can add and remove organization members to a team."
   - content: "As an organization owner, you want to ensure that everyone who is signed in to your corporate network can access the GitHub website without requiring a second sign-in. Which technology will you enable to accomplish this?"
     choices:
-    - content: "Single Sign-On"
+    - content: "Single sign-on"
       isCorrect: true
-      explanation: "Single Sign-On is the right technology to allow network users to access the GitHub website without additional sign-ins."
+      explanation: "Correct! Single sign-on is the right technology to allow network users to access the GitHub website without extra sign-ins."
     - content: "Two-factor authentication"
       isCorrect: false
-      explanation: "Two-factor authentication would require each user to sign in using a second means of identifying themselves, like using an authenticator app on their phones. It would not be used in this scenario."
-    - content: "SSH Keys"
+      explanation: "Incorrect. Two-factor authentication requires each user to sign in by using a second means of identifying themselves, like using an authenticator app on their phones. It's not used in this scenario."
+    - content: "SSH keys"
       isCorrect: false
-      explanation: "Personal Access Tokens provide access for the git client or web API by using a cryptographic key.  You do not use them to access the GitHub website."
+      explanation: "Incorrect. Personal Access Tokens provide access for the git client or web API by using a cryptographic key. You don't use them to access the GitHub website."
     - content: "Personal Access Tokens"
       isCorrect: false
-      explanation: "Personal Access Tokens provide access for the git client through a username and password. You do not use them to access the GitHub website."
-  - content: "What is the appropriate repository permission level for contributors who will actively push changes to your repository?"
+      explanation: "Incorrect. Personal Access Tokens provide access for the git client through a username and password. You don't use them to access the GitHub website."
+  - content: "What's the appropriate repository permission level for contributors who will actively push changes to your repository?"
     choices:
     - content: "admin"
       isCorrect: false
-      explanation: "The admin permission is not appropriate because provides too much access to the administration functions of the repository."
+      explanation: "Incorrect. The admin permission isn't appropriate because it provides too much access to the administration functions of the repository."
     - content: "write"
       isCorrect: true
-      explanation: "The write permission is the appropriate permission level."
+      explanation: "Correct! The write permission is the appropriate permission level."
     - content: "triage"
       isCorrect: false
-      explanation: "The triage permission is not appropriate because it is intended for contributors who need to proactively manage issues and pull requests without write access."
+      explanation: "Incorrect. The triage permission isn't appropriate because it's intended for contributors who need to proactively manage issues and pull requests without write access."
     - content: "maintain"
       isCorrect: false
-      explanation: "The maintain permission is not appropriate because it is intended for project managers who need to manage the repository without access to sensitive or destructive actions. It would provide too much access for other users."
+      explanation: "Incorrect. The maintain permission isn't appropriate because it's intended for project managers who need to manage the repository without access to sensitive or destructive actions. It provides too much access for other users."
