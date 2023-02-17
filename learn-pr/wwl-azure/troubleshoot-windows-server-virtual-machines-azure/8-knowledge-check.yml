@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/16/2023
+  ms.date: 02/17/2023
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -19,16 +19,16 @@ quiz:
   questions:
   - content: "An administrator is provisioning Windows Server VMs in Azure. They upload a specialized VM image as a generalized image. What is likely to happen when they perform this task?"
     choices:
-    - content: "The administrator will receive a provisioning failure error with the VM stuck at the OOBE screen because the new VM is running with the original computer name, username and password."
+    - content: "The administrator receives a provisioning failure error with the VM stuck at the OOBE screen because the new VM is running with the original computer name, username and password."
       isCorrect: true
-      explanation: "Correct. The administrator will receive this error."
+      explanation: "Correct. The administrator receives this error."
     - content: "The administrator receives no error and is able to complete the task."
       isCorrect: false
       explanation: "Incorrect. Upload or capture of a specialized VM image as a generalized image causes a provisioning failure and an error is displayed."
-    - content: "The administrator receives a provisioning timeout error because the original VM is not usable as it is marked as generalized."
+    - content: "The administrator receives a provisioning timeout error because the original VM isn't usable as it's marked as generalized."
       isCorrect: false
       explanation: "Incorrect. Timeout errors result when an administrator uploads or captures a generalized VM image as a specialized image."
-  - content: "An administrator attempts to connect remotely to a VM for performing a management task. They are unable to establish an RDP connection. What should the administrator do next?"
+  - content: "An administrator attempts to connect remotely to a VM for performing a management task. They're unable to establish an RDP connection. What should the administrator do next?"
     choices:
     - content: "Restart their administrative computer."
       isCorrect: false
