@@ -23,10 +23,10 @@ quiz:
       explanation: ExpressRoute is the recommended service for mission-critical, large-scale workloads.
     - content: Prototyping
       isCorrect: false
-      explanation: ExpressRoute is not the best connectivity method for prototyping in Azure, because it is expensive and takes time to set up.
+      explanation: ExpressRoute isn't the best connectivity method for prototyping in Azure, because it's expensive and takes time to set up.
     - content: Dev/test workloads
       isCorrect: false
-      explanation: ExpressRoute is not the most suitable connection method for dev/test workloads, because it is expensive and takes time to set up.
+      explanation: ExpressRoute isn't the most suitable connection method for dev/test workloads, because it's expensive and takes time to set up.
     - content: Small production workloads
       isCorrect: false
       explanation: VPN Gateway is better suited for small production workloads and lower traffic throughput.
@@ -40,10 +40,10 @@ quiz:
       explanation: VPN Gateway is less expensive than ExpressRoute and is better suited to smaller traffic volumes.
     - content: Redundancy support
       isCorrect: false
-      explanation: Both services have redundancy support when they are added to an Azure availability zone.
+      explanation: Both services have redundancy support when they're added to an Azure availability zone.
     - content: Lack of ExpressRoute partners
       isCorrect: false
-      explanation: There is a rich ecosystem of system integrators and partners for ExpressRoute.
+      explanation: There's a rich ecosystem of system integrators and partners for ExpressRoute.
   - content: 'What is the preferred connection resiliency for ExpressRoute?'
     choices:
     - content: passive-passive
