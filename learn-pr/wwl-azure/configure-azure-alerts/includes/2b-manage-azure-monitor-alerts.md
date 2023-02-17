@@ -23,12 +23,9 @@ Here are some of the most common types of alerts:
 In the Azure portal, each alert has a _state_ indicator to identify where the alert and corresponding issue are in the monitoring process.
 
 - There are three alert states:
-
-   | State | Description |
-   | --- | --- |
-   | _New_ | The issue is new (open) and not in review. |
-   | _Acknowledged_ | The issue is in review and work is in progress. |
-   | _Closed_ | The issue is complete. |
+   - **New**: The issue is new (open) and not in review.
+   - **Acknowledged**: The issue is in review and work is in progress.
+   - **Closed**: The issue is complete.
 
 - During the alert monitoring process, when the conditions of an alert rule match telemetry data for your specified resource, an alert triggers and invokes the specified action groups. The system sets the alert state to _New_. 
 
@@ -61,6 +58,6 @@ The **alert state** is different and independent of the Azure Monitor **conditio
 
 You can configure most types of alerts as _stateful_ or _stateless_, which corresponds to how many instances of the same alert can be active at the same time.
 
-- **Stateless alerts** trigger each time your alert rule condition matches your data, even if the same alert already exists. You can configure log alerts and metric alerts stateless. For metric alerts, you can set the frequency of the notifications.
+- **Stateless alerts** trigger each time your alert rule condition matches your data, even if the same alert already exists. You can configure log alerts and metric alerts as stateless.
 
 - **Stateful alerts** trigger when your alert rule condition matches your data and the same alert doesn't exist. A stateful alert doesn't trigger any more actions until the current alert rule conditions clear. You can configure log alerts and metric alerts as stateful. Activity log alerts are always stateless.

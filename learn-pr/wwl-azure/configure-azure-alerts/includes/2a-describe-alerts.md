@@ -21,11 +21,11 @@ Let's examine how to work with Azure alerts and Azure Monitor.
 
 - When your rule conditions match your telemetry data, an alert triggers and invokes the specified action groups.
 
-- If you're monitoring multiple resource, your conditions are evaluated separately for each resource, and alerts trigger for each resource separately.
+- If you're monitoring multiple resources, the system evaluates your conditions separately for each resource, and alerts trigger for each resource separately.
 
 The following diagram demonstrates the Azure alert process.
 
-:::image type="content" source="../media/how-azure-monitor-alerts-work.png" alt-text="Illustration that shows how Azure Monitor alerts work as described in the text." border="false":::
+:::image type="content" source="../media/how-azure-monitor-alerts-work.png" alt-text="Illustration that shows how Azure Monitor alerts work as described in the text." lightbox="../media/how-azure-monitor-alerts-work-expanded.png" border="false":::
 
 ### Things to consider when using Azure alerts
 
@@ -33,8 +33,8 @@ The Azure Monitor alerts experience offers many benefits. As you review this lis
 
 | Benefit | Description |
 | --- | --- |
-| **Improved notification system** | Implement action groups for all newer alerts to access notifications. Define notifications and other actions that can be reused for multiple alerts. |
+| **Improved notification system** | Implement action groups for all newer alerts to access notifications. Define notifications and other actions and reuse these settings for multiple alerts. |
 | **Unified authoring experience** | Easily create all your alerts in one place. Follow the same process to set up alerts for metrics, logs and activity logs across Azure Monitor, Log Analytics (in the Azure portal), and Azure Application Insights.
 | **Combined view for Log Analytics alerts** | Monitor Log Analytics alerts for your subscriptions in the Azure portal, along with your other monitored resources and applications. Prior to the new Azure alerts experience, Azure Monitor (Log Analytics) alerts were displayed in a separate portal. |
-| **Separation of active alerts and alert rules** | Differentitate between alert rules with conditions to trigger an alert and the active (fired) alert. Separate the operational and configuration views for your alerts, alert rules, and actions.
+| **Separation of active alerts and alert rules** | Differentiate between alert rules with conditions to trigger an alert and the active (fired) alert. Separate the operational and configuration views for your alerts, alert rules, and actions.
 | **Better workflow** | Take advantage of the new Azure alerts authoring experience that guides you through the process of configuring alert rules. Get help with discovering and defining the settings and conditions to trigger your alerts. |
