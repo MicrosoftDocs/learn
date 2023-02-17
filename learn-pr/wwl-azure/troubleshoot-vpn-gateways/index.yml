@@ -2,16 +2,16 @@
 uid: learn.wwl.troubleshoot-vpn-gateways
 metadata:
   title: Troubleshoot VPN gateways in Microsoft Azure
-  description: "<div|<span style=\"color:rgb(34, 34, 34);font-family:&quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, Verdana;font-size:12px;display:inline !important;\"|<span style=\"display:inline !important;\"|Network configuration and the use of Virtual Private Networks (VPNs) is integral to the success of collaborative working. In this module, we'll look at how to monitor and troubleshoot site-to-site and point-to-site VPNs.&nbsp;<span style=\"font-family:&quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, Verdana;display:inline !important;\"|AZ720 AZ-720 az-720 networking</span|</span|</span|  </div|<div| </div|<div| </div|"
-  ms.date: 02/16/2023
+  description: "Network configuration and the use of Virtual Private Networks (VPNs) is integral to the success of collaborative working. In this module, we look at how to monitor and troubleshoot site-to-site and point-to-site VPNs. AZ720 AZ-720 az-720 networking"
+  ms.date: 02/17/2023
   author: wwlpublish
   ms.author: lauraalv
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Troubleshoot VPN gateways in Microsoft Azure
-summary: Network configuration and the use of Virtual Private Networks (VPNs) is integral to the success of collaborative working. In this module, we'll look at how to monitor and troubleshoot site-to-site and point-to-site VPNs.
+summary: Network configuration and the use of Virtual Private Networks (VPNs) is integral to the success of collaborative working. In this module, we look at how to monitor and troubleshoot site-to-site and point-to-site VPNs.
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you are able to:
   - Troubleshoot site to site VPNs
   - Troubleshoot point to site VPNs
 prerequisites: |
