@@ -20,7 +20,7 @@ quiz:
       explanation: "That's incorrect. Orchestrator functions describe how actions are executed and the order in which actions are executed."
     - content: "Activity"
       isCorrect: false
-      explanation: "That's incorrect. Activity functions are the basic unit of work in a durable function orchestration and do not manage state."
+      explanation: "That's incorrect. Activity functions are the basic unit of work in a durable function orchestration and don't manage state."
     - content: "Entity"
       isCorrect: true
       explanation: "That's correct. Entity functions define operations for reading and updating small pieces of state."
