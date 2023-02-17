@@ -2,7 +2,7 @@ In the previous unit, you learned about typical administration tasks at the team
 
 ## GitHub's authentication options
 
-There are several options for authenticating with GitHub. 
+There are several options for authenticating with GitHub: 
 
 ### Username and password
 
@@ -62,7 +62,7 @@ GitHub offers limited support for all identity providers that implement the SAML
 
 ### LDAP
 
-Lightweight directory access protocol (LDAP) lets you authenticate GitHub Enterprise Server against your existing accounts and centrally manage repository access. LDAP is a popular application protocol for accessing and maintaining directory information services, and is one of the most common protocols used to integrate third-party software with large company user directories.
+Lightweight directory access protocol (LDAP) is a popular application protocol for accessing and maintaining directory information services. LDAP lets you authenticate GitHub Enterprise Server against your existing accounts and centrally manage repository access. It's one of the most common protocols used to integrate third-party software with large company user directories.
 
 GitHub Enterprise Server integrates with popular LDAP services like:
 
