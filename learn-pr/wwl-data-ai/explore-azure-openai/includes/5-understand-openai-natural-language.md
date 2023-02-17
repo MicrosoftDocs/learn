@@ -14,7 +14,7 @@ GPT models are great at completing several natural language tasks, some of which
 
 | Task | Prompt |
 |------|---------|
-| Summarizing text | "Summarize this text into a tl;dr" |
+| Summarizing text | "Summarize this text into a short blurb" |
 | Classifying text | "What genre of book is this?" |
 | Generating names or phrases | "Write a tagline for my flower company" |
 | Translation | "Translate 'How are you' to French" |
