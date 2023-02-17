@@ -1,0 +1,36 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.register-mlflow-model-azure-machine-learning.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/17/2023
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "A data scientist trains and logs a model with MLflow. When the data scientist deploys the model, the schema of the model's input and output isn't correct. What should the data scientist customize to fix the issue?"
+    choices:
+    - content: "Customize the model's environment."
+      isCorrect: false
+      explanation: "Incorrect. The environment includes the necessary packages for the model to run."
+    - content: "Change the model's flavor."
+      isCorrect: false
+      explanation: "Incorrect. The flavor specifies the machine learning framework of the model."
+    - content: "Customize the model's signature."
+      isCorrect: true
+      explanation: "Correct. The model's signature defines the schemas of the inputs and outputs."
+  - content: "A data scientist trained a deep learning model with TensorFlow. The deployed model is compute-intensive and needs to use the most optimal inference server for similar workloads. Which model type is compatible with compute-intensive and no-code deployments?"
+    choices:
+    - content: "MLflow"
+      isCorrect: false
+      explanation: "Incorrect. MLflow is ideal for standard deployments."
+    - content: "Triton"
+      isCorrect: true
+      explanation: "Correct. Triton is ideal for compute-intensive deployments."
+    - content: "Custom"
+      isCorrect: false
+      explanation: "Incorrect. No-code deployment isn't available in Azure Machine Learning for custom models."
