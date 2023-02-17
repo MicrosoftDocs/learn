@@ -5,7 +5,7 @@ metadata:
   description: Explore creation and management of Microsoft Sentinel threat-hunting queries
   ms.date: 12/15/2020
   author: wwlpublish
-  ms.author: cwatson
+  ms.author: kelawson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Explore creation and management of Microsoft Sentinel threat-hunting queries

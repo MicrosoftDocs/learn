@@ -5,7 +5,7 @@ metadata:
   description: Exercise - Hunt for threats by using Microsoft Sentinel
   ms.date: 12/15/2020
   author: wwlpublish
-  ms.author: cwatson
+  ms.author: kelawson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Hunt for threats by using Microsoft Sentinel
