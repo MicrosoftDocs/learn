@@ -1,6 +1,6 @@
 In this exercise, we'll add notes to our code and temporarily disable certain lines of code from compilation. Then, we'll look at how the C# compiler understands our whitespace, and how we can use whitespace to increase the readability of the code.
 
-## What is a code comment?
+## What's a code comment?
 
 A code comment is an instruction to the compiler to ignore everything after the code comment symbols in the current line.
 
@@ -10,14 +10,14 @@ A code comment is an instruction to the compiler to ignore everything after the 
 
 This may not seem useful at first. However, it's useful in three situations:
 
-- When you want to leave a note about the intent of a passage of code. This is useful to describe the purpose or the thought process when you're writing a particularly challenging set of coding instructions. Your future self will thank you.
-- When you want to temporarily remove code from your application to try a different approach, but you're not yet convinced your new idea will work. You can comment out the code, write the new code, and once you're convinced the new code will work the way you want it to, you can safely delete the old (commented) code.
-- Adding a message like `TODO` to remind you to look at a given passage of code later. While you should use this judiciously, it's a valid reason. You may be working on another feature when you read a line of code that sparks a concern. Rather than ignoring the new concern, you can mark it for investigation later. The Visual Studio IDE even provides a window called the Task List to help you identify `TODO` messages you leave in your code.
+- When you want to leave a note about the intent of a passage of code, a code comment is useful to describe the purpose or the thought process when you're writing a particularly challenging set of coding instructions. Your future self will thank you.
+- When you want to temporarily remove code from your application to try a different approach, but you're not yet convinced your new idea will work, you can comment out the code and write the new code. Once you're convinced the new code will work the way you want it to, you can safely delete the old (commented) code.
+- You can use code comments to add a message like `TODO` to remind you to look at a given passage of code later. While you should use this judiciously, it's a valid reason. You may be working on another feature when you read a line of code that sparks a concern. Rather than ignoring the new concern, you can mark it for investigation later. The Visual Studio IDE even provides a window called the Task List to help you identify `TODO` messages you leave in your code.
 
 > [!NOTE]
-> Code comments cannot be trusted. Often, developers update their code, but forget to update the code comments.  It's best to use comments for higher-level ideas, and not to add comments about how an individual line of code works.
+> Code comments cannot be trusted. Often, developers update their code, but forget to update the code comments. It's best to use comments for higher-level ideas, and not to add comments about how an individual line of code works.
 
-### Step 1 - Add some code in the .NET Editor as a starting point for the exercise.
+### Step 1 - Add some code in the .NET Editor as a starting point for the exercise
 
 To demonstrate the use of code comments, you'll need to work with some code. We used the following code in a previous module. Re-enter the code by copying/pasting, or click the **Run** button to add it to the .NET Editor.
 
@@ -26,7 +26,6 @@ string firstName = "Bob";
 int widgetsSold = 7;
 Console.WriteLine($"{firstName} sold {widgetsSold} widgets.");
 ```
-
 
 ### Step 2 - Comment out lines of code from the previous exercise
 
@@ -47,7 +46,7 @@ Now, run the application. You'll get the following result in the output console:
 Bob purchased 7 widgets.
 ```
 
-Notice that we used the code comments to document the potential change being made, and to temporarily disable the old message as we test the new message. If we're satisfied with the new code, we can safely delete the old code that was commented out. This is a safer, more methodical approach to modifying working code until we're convinced we're ready to permanently remove it.
+Notice that we used the code comments to document the potential change being made, and to temporarily disable the old message as we test the new message. If we're satisfied with the new code, we can safely delete the old code that we commented out. This is a safer, more methodical approach to modifying working code until we're convinced we're ready to permanently remove it.
 
 ### Step 3 - Delete the commented code
 
@@ -162,7 +161,7 @@ To further improve this code, add a comment that explains the higher-level purpo
 ```csharp-interactive
 /*
   The following code creates five random OrderIDs
-  to test the fraud detection process.  OrderIDs 
+  to test the fraud-detection process.  OrderIDs 
   consist of a letter from A to E, and a three
   digit number. Ex. A123.
 */

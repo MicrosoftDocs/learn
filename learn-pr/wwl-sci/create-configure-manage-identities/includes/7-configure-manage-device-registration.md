@@ -56,7 +56,7 @@ Administrators can secure and further control Azure AD joined devices using Mobi
 
 Azure AD join can be accomplished using self-service options like the Out of Box Experience (OOBE), bulk enrollment, or Windows Autopilot.
 
-Azure AD joined devices can still maintain single sign-on access to on-premises resources when they are on the organization's network. Devices that are Azure AD joined can still authenticate to on-premises servers like file, print, and other applications.
+Azure AD joined devices can still maintain single sign-on access to on-premises resources when they are on the organization's network. Azure AD joined devices authenticate to on-premises servers like for file, print, and other applications.
 
 ### Scenarios for joined devices
 

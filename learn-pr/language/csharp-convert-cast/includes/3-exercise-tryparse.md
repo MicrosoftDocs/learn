@@ -21,9 +21,9 @@ The TryParse() method does several things simultaneously:
 
 - It attempts to parse a string into the given numeric data type.
 - If successful, it will store the converted value in an **out parameter**.
-- It returns a bool to indicate whether the action succeeded or failed.
+- It returns a `bool` to indicate whether the action succeeded or failed.
 
-We can use the bool to take action on the value (like performing some calculation), or display a message if the parse operation was unsuccessful.
+We can use the `bool` to take action on the value (like performing some calculation), or display a message if the parse operation was unsuccessful.
 
 > [!NOTE]
 > In this exercise, we're using the `int` data type, but a similar `TryParse()` method is available on all numeric data types.
@@ -32,7 +32,7 @@ We can use the bool to take action on the value (like performing some calculatio
 
 Methods can return a value or return "void", meaning they return no value. Methods can also return values through `out` parameters, which are defined just like an input parameter, but include the `out` keyword.
 
-When calling a method with an `out` parameter, you must also use the keyword `out` before the variable, which will hold the value. So, you have to define a variable before calling the method that will be used to store an out parameter value. You can then use the value contained in the out parameter throughout the rest of your code.
+When calling a method with an `out` parameter, you must also use the keyword `out` before the variable, which will hold the value. Therefore, you have to define a variable before calling the method that will be used to store an out parameter value. You can then use the value contained in the out parameter throughout the rest of your code.
 
 ### Step 1 - TryParse() a string into an int
 
@@ -115,7 +115,7 @@ Modify the first line of code, re-initializing the variable `value` to a differe
 string value = "bad";
 ```
 
-Also, modify the last line of code to ensure that the result is greater than 0 before showing the second message:
+Also, modify the last line of code to ensure that the result is greater than zero before showing the second message:
 
 ```csharp
 if (result > 0)

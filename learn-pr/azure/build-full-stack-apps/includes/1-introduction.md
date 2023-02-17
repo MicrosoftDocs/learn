@@ -2,7 +2,7 @@ Azure Static Web Apps combines the power of Azure App Service and Azure Function
 
 Suppose you work for the transportation department of a major city and you want to increase the number of bus riders. To make it convenient to jump on the bus, you want to build a web app that allows users to monitor a bus’s progress along its route. By providing up to the second information on the whereabouts of the next bus along the route, you can help potential riders eliminate the situation where they either end up waiting for the bus or running to catch the bus and missing it. You also want to give users the option to get notified when a bus they want to take is nearby.
 
-Throughout this module and the associated learning path, you'll follow the scenario (and the development of a solution) of catching the bus. There's a complete learning path dedicated to exploring each piece of the architecture below. In this module, you'll create and deploy a website that can be used to track real-time location of buses.
+Throughout this module and the associated learning path, you'll follow the scenario (and the development of a solution) of catching the bus. There's a complete learning path dedicated to exploring each piece of the following architecture. In this module, you'll create and deploy a website that can be used to track real-time location of buses.
 
 :::image type="content" source="../media/1-catch-the-bus.svg" alt-text="Diagram of potential architecture for a solution to the catching the bus scenario.":::
 

@@ -18,7 +18,8 @@ In Azure AD, all users can register application registrations and manage all asp
     
     
      -  On the **User settings** page for your organization, set the **Users can register applications** setting to No. This will disable the default ability for users to create application registrations.
-     -  On the User settings for enterprise applications, set the **Users can consent to applications accessing company data on their behalf** setting to No. This will disable the default ability for users to consent to applications accessing company data on their behalf.
+     -  On the **User Settings** for enterprise applications, configure if users can add Gallery Apps to My App or if Office 365 apps appear in the Office portal.
+     -  On the **Consent and Permissions** settings for enterprise applications, set the **Users can consent to applications accessing company data on their behalf** setting to No. This will disable the default ability for users to consent to applications accessing company data on their behalf.
 
 ### Grant individual permissions to create and consent to applications when the default ability is disabled
 

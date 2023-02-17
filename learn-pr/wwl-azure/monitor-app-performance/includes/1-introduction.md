@@ -1,4 +1,5 @@
-Instrumenting, and monitoring, your apps helps you maximize their availability and performance.
+
+Instrumenting and monitoring, your apps helps you maximize their availability and performance.
 
 After completing this module, you'll be able to: 
 

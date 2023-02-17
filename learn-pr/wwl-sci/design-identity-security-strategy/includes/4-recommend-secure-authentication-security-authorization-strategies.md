@@ -1,3 +1,4 @@
+
 Choosing the correct authentication method is the first concern for organizations wanting to move their apps to the cloud. Don't take this decision lightly for the following reasons:
 
 * It's the first decision for an organization that wants to move to the cloud.

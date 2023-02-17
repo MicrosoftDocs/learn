@@ -6,7 +6,7 @@ Open the `$GOPATH/src/bankcore/bank.go` file, remove the `Hello()` function, and
 
 Let's begin by creating a `Customer` structure where we'll have the name, address, and phone number from a person who wants to become a bank customer. Also, we need a structure for the `Account` data. Because a customer can have more than one account, let's embed the customer information into the account object. Basically, let's create what we defined in the `TestAccount` test.
 
-The structures that we need might look like the following:
+The structures that we need might look like the following code example:
 
 ```go
 package bank
@@ -69,7 +69,7 @@ When you run `go test -v`, you should see a failing test in the output:
 FAIL    github.com/msft/bank [build failed]
 ```
 
-To satisfy the previous test, let's create a `Deposit` method to our `Account` structure that returns an error if the amount received is equal to or lower than zero. Otherwise, simply add the amount received to the balance of the account.
+To satisfy the previous test, let's create a `Deposit` method to our `Account` structure that returns an error if the amount received is equal to or lower than zero. Otherwise, just add the amount received to the balance of the account.
 
 Use the following code for the `Deposit` method:
 
@@ -202,7 +202,7 @@ ok      github.com/msft/bank    0.250s
 
 ## Implement the statement method
 
-Let's write a simple method to print the statement that includes the account name, number, and balance. But first, let's create the `TestStatement` function:
+Let's write a method to print the statement that includes the account name, number, and balance. But first, let's create the `TestStatement` function:
 
 ```go
 func TestStatement(t *testing.T) {
@@ -232,7 +232,7 @@ When you run `go test -v`, you should see a failing test in the output:
 FAIL    github.com/msft/bank [build failed]
 ```
 
-Let's write the `Statement` method, which should return a simple string. (You'll have to overwrite this method later as a challenge.) Use the following code:
+Let's write the `Statement` method, which should return a string. (You'll have to overwrite this method later as a challenge.) Use the following code:
 
 ```go
 // Statement ...

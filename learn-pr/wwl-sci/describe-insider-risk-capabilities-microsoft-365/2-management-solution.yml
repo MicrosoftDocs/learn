@@ -4,13 +4,11 @@ title: Describe insider risk management
 metadata:
   title: Describe insider risk management
   description: "Describe insider risk management"
-  ms.date: 10/12/2022
+  ms.date: 02/09/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
-azureSandbox: false
-labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/2-management-solution.md)]

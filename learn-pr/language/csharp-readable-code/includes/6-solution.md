@@ -36,7 +36,7 @@ This code is merely *one possible solution*. You may have come up with some diff
 - We used line feeds and tabs to improve the `foreach` statement and the `if` statement.
 - We used local variable naming conventions to better convey the purpose of each value.
 
-If identified the same issues and addressed them in some way, congratulations! Continue on to the knowledge check in the next unit.
+If you identified the same issues and addressed them in some way, congratulations! Continue on to the knowledge check in the next unit.
 
 > [!IMPORTANT]
-> If you had trouble completing this challenge,  you should review the previous units before you continue on. All new ideas we discuss in other modules will depend on your understanding of the ideas that were presented in this module.
+> If you had trouble completing this challenge, you should review the previous units before you continue on. All new ideas we discuss in other modules will depend on your understanding of the ideas that were presented in this module.

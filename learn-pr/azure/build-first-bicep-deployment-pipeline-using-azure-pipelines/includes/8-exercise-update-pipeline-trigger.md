@@ -1,17 +1,18 @@
 A colleague asks you to turn on the App Service Always On feature on the company website, so the website app is always running.
 
-In this exercise, you'll update the pipeline you created to run automatically whenever a file changes on your *main* branch. You'll use the updated pipeline to deploy the requested configuration change to the website.
+In this exercise, you'll update the pipeline you created to run automatically whenever a file changes on your _main_ branch. You'll use the updated pipeline to deploy the requested configuration change to the website.
 
 During the process, you'll:
 
 > [!div class="checklist"]
-> * Update your pipeline, so it triggers automatically whenever a file changes in the *deploy* folder on the *main* branch.
-> * Make a change to your Bicep file.
-> * Verify that the pipeline runs automatically.
+>
+> - Update your pipeline, so it triggers automatically whenever a file changes in the _deploy_ folder on the _main_ branch.
+> - Make a change to your Bicep file.
+> - Verify that the pipeline runs automatically.
 
 ## Update the trigger to be branch-based
 
-1. In Visual Studio Code, open the *deploy/azure-pipelines.yml* file.
+1. In Visual Studio Code, open the _deploy/azure-pipelines.yml_ file.
 
 1. Remove the manual trigger on the first line.
 
@@ -32,11 +33,11 @@ During the process, you'll:
 
 ## Update your Bicep file
 
-1. In Visual Studio Code, open the *main.bicep* file.
+1. In Visual Studio Code, open the _main.bicep_ file.
 
 1. In the `appServiceApp` resource definition's `siteConfig` property, add the `alwaysOn` property, with a value of `true`:
 
-   :::code language="bicep" source="code/8-main-broken.bicep" range="59-75" highlight="8":::
+   :::code language="bicep" source="code/8-main-broken.bicep" range="60-76" highlight="8":::
 
 1. Save your changes to the file.
 
@@ -58,7 +59,7 @@ During the process, you'll:
 
    The pipeline shows a failed deployment.
 
-1. To diagnose the failure, in **Jobs**, select the job, and then select the failed *AzureResourceManagerTemplateDeployment* task. Scroll to see the full error message. The error message includes the following text:
+1. To diagnose the failure, in **Jobs**, select the job, and then select the failed _AzureResourceManagerTemplateDeployment_ task. Scroll to see the full error message. The error message includes the following text:
 
    `There was a conflict. AlwaysOn cannot be set for this site as the plan does not allow it. For more information on pricing and features, please see: https://aka.ms/appservicepricingdetails`
 
@@ -77,7 +78,7 @@ You speak to your colleague about the failed deployment. Together, you decide th
 
 1. Change the application's `alwaysOn` setting to use the appropriate configuration map value for the environment type:
 
-   :::code language="bicep" source="code/8-main-fixed.bicep" range="65-81" highlight="8":::
+   :::code language="bicep" source="code/8-main-fixed.bicep" range="66-82" highlight="8":::
 
 1. Save your changes to the file.
 

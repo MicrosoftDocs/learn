@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/12/2023
+  ms.date: 02/10/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -16,7 +16,6 @@ content: |
   [!include[](includes/7-knowledge-check.md)]
 quiz:
   title: ""
-
   questions:
   - content: "When virtual networks are successfully peered, what's the peering status for both virtual networks in the peering?"
     choices:
@@ -29,7 +28,6 @@ quiz:
     - content: "**Peered**"
       isCorrect: false
       explanation: "Incorrect. **Peered** isn't a valid virtual network peering status."
-
   - content: "What approach enables peered virtual networks to share the gateway and get access to resources?"
     choices:
     - content: "Point-to-site connectivity"
@@ -41,7 +39,6 @@ quiz:
     - content: "Gateway transit"
       isCorrect: true
       explanation: "Correct. Gateway transit allows peered virtual networks to share the gateway and get access to resources."
-
   - content: "How is Azure Virtual Network peering best described?"
     choices:
     - content: "Traffic between virtual networks is kept on the Microsoft backbone network."

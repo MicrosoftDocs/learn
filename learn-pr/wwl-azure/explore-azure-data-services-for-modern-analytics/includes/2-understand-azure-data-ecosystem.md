@@ -24,7 +24,7 @@ Areas outlined in red in the image above highlight the pieces of the analytics s
 In *batch processing*, newly arriving data elements are collected into a group. The whole group is then processed at a future time as a batch. Exactly when each group is processed can be determined in many ways. For example, you can process data based on a scheduled time interval (for example, every hour), or it could be triggered when a certain amount of data has arrived. Relecloud's monthly billing process is a good example of batch processing, as account transactions are processed and billed on a monthly basis. 
 
 > [!NOTE]
-> Batch processsing is the most common type of data processing, best suited for large datasets or data coming from legacy data systems. Batch processing is not suited for rapid analysis and decision making.
+> Batch processing is the most common type of data processing, best suited for large datasets or data coming from legacy data systems. Batch processing is not suited for rapid analysis and decision making.
 
 In *stream processing*, each new piece of data is processed when it arrives. For example, data ingestion is inherently a streaming process.
 
@@ -33,6 +33,11 @@ Streaming handles data in real time. Unlike batch processing, there's no waiting
 A fraud department would use stream processing to handle real-time fraud and anomaly detection. 
 
 > [!NOTE]
-> Stream processsing is ideal for projects that require real-time analysis, and is less suited for projects requiring complex analytics.
+> Stream processing is ideal for projects that require real-time analysis, and is less suited for projects requiring complex analytics.
 
 While data processing typically occurs upstream of the analytical data store, it's critical that analysts understand how data are ingested and at what frequency, to build the appropriate analytics solution. 
+
+
+
+
+

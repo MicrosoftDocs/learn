@@ -74,7 +74,7 @@ $rs = @{
 }
 New-AzRouteServer @rs
 $peer = @{
-    PeerName = 'myNVA"
+    PeerName = 'myNVA'
     PeerIp = '192.168.0.1'
     PeerAsn = '65501'
     RouteServerName = 'myRouteServer'

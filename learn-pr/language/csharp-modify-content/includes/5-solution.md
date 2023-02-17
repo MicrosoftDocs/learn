@@ -45,7 +45,7 @@ Quantity: 5000
 Output: <h2>Widgets &reg;</h2><span>5000</span>
 ```
 
-If you were successful, congratulations! Continue on to the knowledge check in the next unit.
+If you were successful, congratulations! Continue on to the Knowledge check in the next unit.
 
 > [!IMPORTANT]
 > If you had trouble completing this challenge, you should review the previous units before you continue on. All new ideas we discuss in other modules will depend on your understanding of the ideas that were presented in this module.

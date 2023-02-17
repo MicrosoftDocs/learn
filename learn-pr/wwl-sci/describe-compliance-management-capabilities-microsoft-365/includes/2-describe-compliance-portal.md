@@ -1,3 +1,4 @@
+
 > [!NOTE]
 > Microsoft 365 compliance is now called Microsoft Purview and the solutions within the compliance area have been rebranded. The Microsoft 365 compliance center is now the Microsoft Purview Compliance portal. For more information about Microsoft Purview, see the [blog announcement](https://www.microsoft.com/security/blog/2022/04/19/the-future-of-compliance-and-data-governance-is-here-introducing-microsoft-purview/)
 
