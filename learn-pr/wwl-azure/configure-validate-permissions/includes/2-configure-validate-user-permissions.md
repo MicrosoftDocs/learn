@@ -1,78 +1,63 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+By validating user permissions, you can check that only authorized users can access and modify your pipelines and that unauthorized users are blocked from performing actions that could compromise your code or resources. Validating user permissions can help you identify and fix security gaps or pipeline issues.
 
-    Goal: briefly summarize the key skill this unit will teach
+There are many ways to configure user permissions in Azure DevOps. You can use the Azure DevOps web interface or the Azure DevOps REST API. You can also use the Azure DevOps CLI to manage user permissions.
 
-    Heading: none
+When you decide how to add permissions, you should consider the following factors:
 
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
+- The number of users and groups you need to add to your project.
+- The users need temporary access to a specific resource or pipeline.
+- Whether you want to add users and groups to a specific project or the entire organization.
+- Whether you want to add users and groups to a specific pipeline, resource, approval, branch check, audit, environment, etc.
 
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+For every user and group you add to your project, you can specify the permissions they have for the project. Azure DevOps provides a set of predefined permissions that you can use to control access to your project. You can also create custom permissions to meet your specific needs.
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+It's recommended to follow the principle of least privilege, granting users only the minimum level of access required to perform their job functions and regularly reviewing and updating permissions as needed.
 
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
+## Add users or groups to the project
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+1. Open the Azure DevOps project and select the Project settings.
+2. In the Project Settings menu, select the Permissions option under General.
+3. You can view and manage the security groups, users, and their permissions.
+4. Select the group you want to add users.
 
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
+    >[!NOTE]
+    > To understand the different types of groups and permissions, see [Security groups, service accounts, and permissions in Azure DevOps](https://learn.microsoft.com/azure/devops/organizations/security/permissions/).
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
+5. Select the "Members" tab to view the list of users in the group.
+6. Click on the "+ Add" button, then select the user or group you want to add.
+7. To specify permissions to the user, you can open the new added user and make changes to the default inherited permissions.
 
-    Goal: State concisely what's covered in this unit
+    ![Screenshot of Azure Pipelines showing how to add new users to the contributors group.](../media/add-project-user-contributors.png)
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+## Add users to specific teams
 
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
+You can create teams or groups based on your organizational structure if you have many users and groups. Teams is a collection of users and groups with access to a specific project. You can add users and groups to a team and then add the team to a particular pipeline. This way, you can manage permissions for many users and groups in a single place.
 
-<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
+1. Open the Azure DevOps project and select the Project settings.
+2. In the Project Settings menu, select the Teams option under General.
+3. You can view and manage the teams and their permissions.
+4. Select the team you want to add users.
+5. Select the "Members" tab to view the list of users in the team.
+6. Click on the "+ Add" button, then select the user or group you want to add.
+7. To specify permissions to the user, you can open the new added user and make changes to the default inherited permissions.
 
-    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
+    ![Screenshot of Azure Pipelines showing how to add new users to the contributors group.](../media/add-project-user-teams.png)
 
-    Heading: none
--->
-TODO: add a visual element
+## Tips for validating user permissions
 
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
+- Use test cases to verify that users have access to the resources they need to complete their tasks.
+- Perform a thorough review of your user permissions at regular intervals to ensure that they're up to date and reflect the project's current state.
+- Use the Azure DevOps audit logs to monitor changes to user permissions and track any unauthorized changes.
 
-    Goal: Provide all the information the learner needs to perform this sub-task.
+## Challenge yourself
 
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
+You're a DevOps engineer responsible for managing a team project in Azure DevOps. The project has several teams, and you must set up specific permissions for each group.
 
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=main)
--->
+Team A should be able to create and manage projects but can't delete or rename them. Team B should be able to manage work items but need permission to move out of the project and view analytics. Team C should have full access to everything. How would you configure the user permissions for each team in Azure DevOps?
 
-<!-- Pattern for simple chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
+For more information about permissions, security groups, and accounts, see:
 
-<!-- Pattern for complex chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+- [Security groups, service accounts, and permissions in Azure DevOps](https://learn.microsoft.com/azure/devops/organizations/security/permissions/)
+- [Add organization users and manage access](https://learn.microsoft.com/azure/devops/organizations/accounts/add-organization-users)
+- [About access levels](https://learn.microsoft.com/azure/devops/organizations/security/access-levels)
+- [Troubleshoot access and permission issues](https://learn.microsoft.com/azure/devops/organizations/security/troubleshoot-permissions)

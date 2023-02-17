@@ -1,62 +1,32 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+Azure DevOps is a robust platform that can help you streamline your software development and deployment processes. However, ensuring that only authorized users can access the pipelines, environments, and other resources are crucial. Failure to properly manage and validate user permissions can result in serious security issues and potentially put your organization at risk.
 
-    Goal: orient the learner to the area covered in this module
+Azure Pipelines also involves security risks you must be aware of and mitigate. For example, you need to protect your secrets, control access to your pipelines and resources, and monitor your pipeline activities for any anomalies.
 
-    Heading: none
+In this module, you explore the key concepts and best practices for configuring and validating permissions in Azure DevOps. Also, how to configure user permissions, pipeline permissions, approval, branch checks, and auditing and managing permissions.
 
-    Example: "Azure Logic Apps let you automate your business processes and run them in the cloud."
+### Learning objectives
 
-    Recommended: visual like an image, table, list, etc. that supports the topic sentence(s)
+After completing this module, students and professionals can:
 
-    [Introduction unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-module-introduction-format)
+- Configure and validate user permissions
+- Configure and validate pipeline permissions
+- Configure and validate approval and branch checks
+- Manage and audit permissions in Azure DevOps
+
+### Prerequisites
+
+You must create an Azure DevOps Organization and a Team Project for some exercises. If you don't have it yet, see:
+
+- [Create an organization - Azure DevOps.](https://docs.microsoft.com/azure/devops/organizations/accounts/create-organization)
+- [Create a project in Azure DevOps.](https://learn.microsoft.com/azure/devops/organizations/projects/create-project)
+
+To get the most out of this course, we recommend that you understand Azure DevOps and pipeline management.
+
+For study recommendations, see:
+<!-- TODO: Replace with the correct link without the branch parameter.
 -->
-TODO: add your topic sentences(s)
-TODO: add a visual element
+[Configure secure access to pipeline resources - Introduction.](/training/modules/configure-secure-access-pipeline-resources/1-introduction?branch=release-configure-secure-access-pipeline-resources)
 
-<!-- 2. Scenario -----------------------------------------------------------------------------------------
+Ensure you have all the necessary resources and access to Azure DevOps before starting the course.
 
-    Goal: describe the real-world scenario this module will use to illustrate the concepts
-
-    Heading: "## Example scenario"
-
-    Example: "Suppose you work at an athletic shoe company on the marketing team. You're launching a new basketball shoe created by a celebrity athlete. Previous launches resulted in a social media frenzy as people shared stories and photos of themselves wearing their new shoes. The marketing team wants to monitor hundreds of social media sites, blogs, and websites to determine consumer reaction. There will be more data than you can process manually. You would like a cloud-hosted system that automates monitoring, text analytics, database storage, and email notifications."
-
-    Recommended: an image that visualizes the scenario, use the image markdown extension (https://review.docs.microsoft.com/help/contribute/markdown-reference?branch=main#images)
-
-    Optional: a "scenario video" that visualizes the scenario
-
-    [Scenario guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-scenarios)
-    [Scenario video guidance](TBD)
- -->
-## Example scenario
-TODO: add your scenario
-TODO: add a visual element
-
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------------
-
-    Goal: List the activities the learner will do in this content. This differs from the title and the learning objectives. The title and the learning objectives are "outcome focused"; that is, they describe the skills the learner will acquire as a result of consuming this content. By contrast, here you should be specific about what the learning will **do** in order to acquire those skills. The format can be either prose or bulleted-list; however, a list will yield better results when transformed into other output types such as PowerPoint.
-
-    Heading: "## What will we be doing?"
-
-    Example: "Here, you'll create a business workflow using Azure Logic Apps to automate the processing of tweets:
-                * **Launch**: when a new tweet is available
-                * **Process**: determine if the sentiment of the tweet is positive or negative
-                * **Route**: branch based on the sentiment score"
-
- -->
-## What will we be doing?
-TODO: add your activities
-
-<!-- 4. Terminal learning objective ----------------------------------------------------------------------
-
-    Goal: This is a restatement of the module title into a complete sentence. You have more room here to convey the main goal than in a space-limited title. Make it outcome-focused so it describes the main skill the learner will acquire as a result of this training. In other words, it should answer the question: "what is the key thing the learner will be able to do as a result of consuming this training?"
-
-    Heading: "## What is the main goal?"
-
-    Example: "By the end of this session, you'll be able to create workflows which route and process data using Azure Logic Apps and its built-in connectors."
-
- -->
-## What is the main goal?
-By the end of this session, you'll be able to (TODO)
-
-<!-- Do **not** include any other content like learning objectives, prerequisites, unit summary, "next unit" lead-in, or references. -->
+Let's begin!
