@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/16/2023
+  ms.date: 02/17/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
@@ -12,7 +12,7 @@ metadata:
 durationInMinutes: 3
 quiz:
   questions:
-  - content: "A data scientist trains and logs a model with MLflow. When the data scientists deploys the model, the schema of the model's input and output isn't correct. What should the data scientist customize to fix the issue?"
+  - content: "A data scientist trains and logs a model with MLflow. When the data scientist deploys the model, the schema of the model's input and output isn't correct. What should the data scientist customize to fix the issue?"
     choices:
     - content: "Customize the model's environment."
       isCorrect: false
