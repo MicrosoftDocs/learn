@@ -2,7 +2,7 @@ In the previous unit, you learned about typical administration tasks at the team
 
 ## GitHub's authentication options
 
-There are several options for authenticating with GitHub: 
+There are several options for authenticating with GitHub. 
 
 ### Username and password
 
@@ -10,7 +10,7 @@ Administrators can allow users to continue using the default username and passwo
 
 ### Personal access tokens
 
-:::image type="content" source="../media/personal-access-token.png" alt-text="Screenshot of personal access token screen.":::
+:::image type="content" source="../media/personal-access-token.png" alt-text="Screenshot of the personal access token screen.":::
 
 Personal access tokens (PATs) are an alternative to using passwords for authentication to GitHub when using the GitHub API or the command line. Users generate a token via the GitHub's settings option, and tie the token permissions to a repository or organization. When users interact with GitHub by using the git command-line tool, they can enter the token information when they're asked for their username and password.
 
@@ -18,21 +18,21 @@ Personal access tokens (PATs) are an alternative to using passwords for authenti
 
 As an alternative to using personal access tokens, users can connect and authenticate to remote servers and services via SSH with the help of SSH keys. SSH keys eliminate the need for users to supply their username and personal access token for every interaction.
 
-When setting up SSH, users generate an SSH key, add it to the ssh-agent and then add the key to their GitHub account. Adding the SSH key to the ssh-agent ensures that the SSH key has an extra layer of security through the use of a passphrase. Users can configure their local copy of git to automatically supply the passphrase, or they can supply it manually each time they use the git command-line tool to interact with GitHub.
+When setting up SSH, users generate an SSH key, add it to the ssh-agent and then add the key to their GitHub account. Adding the SSH key to the ssh-agent ensures that the SSH key has a passphrase as an extra layer of security. Users can configure their local copy of git to automatically supply the passphrase, or they can supply it manually each time they use the git command-line tool to interact with GitHub.
 
-SSH keys can even be authorized for use with a repository owned by an organization that uses SAML single sign-on. If the organization provides SSH certificates, users can also use it to access the organization's repositories without adding the certificate to their GitHub account.
+You can even use SSH keys with a repository owned by an organization that uses SAML single sign-on. If the organization provides SSH certificates, users can also use it to access the organization's repositories without adding the certificate to their GitHub account.
 
 ### Deploy keys
 
-Deploy keys are another type of SSH key in GitHub that grant a user access to a single repository. GitHub attaches the public part of the key directly to the repository instead of a personal user account, and the private part of the key remains on the user's server. Deploy keys are read-only by default, but you can give them write access when adding them to a repository.
+Deploy keys are another type of SSH key in GitHub that grants a user access to a single repository. GitHub attaches the public part of the key directly to the repository instead of a personal user account, and the private part of the key remains on the user's server. Deploy keys are read-only by default, but you can give them write access when adding them to a repository.
 
 ## GitHub's added security options
 
-GitHub also offers the following additional security options. 
+GitHub also offers the following extra security options. 
 
 ### Two-factor authentication
 
-:::image type="content" source="../media/2-factor-authentication.png" alt-text="Screenshot of two-factor authentication screen.":::
+:::image type="content" source="../media/2-factor-authentication.png" alt-text="Screenshot of the two-factor authentication screen.":::
 
 Two-factor authentication (2FA), sometimes known as multifactor authentication (MFA), is an extra layer of security used when logging into websites or apps. With 2FA, users have to sign in with their username and password and provide another form of authentication that only they have access to.
 
