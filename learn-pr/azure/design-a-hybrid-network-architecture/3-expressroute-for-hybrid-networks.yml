@@ -23,10 +23,10 @@ quiz:
       explanation: Cross-network connections and ExpressRoute are supported, but the correct model is via a colocated facility through a Cloud Exchange provider.
     - content: A point-to-point Ethernet network
       isCorrect: true
-      explanation: A point-to-point Ethernet connection is used to connect on-premises datacenters and offices to Azure through a point-to-point Ethernet link.
+      explanation: A point-to-point Ethernet connection, connects on-premises datacenters and offices to Azure through a point-to-point Ethernet link.
     - content: Azure network-to-network connectivity
       isCorrect: false
-      explanation: VNet-to-VNet connections can be configured in ExpressRoute, but it is not a connectivity model.
+      explanation: VNet-to-VNet connections can be configured in ExpressRoute, but it isn't a connectivity model.
     - content: A point-to-site network
       isCorrect: false
       explanation: A point-to-site network is a connectivity model for a VPN gateway.
@@ -34,21 +34,21 @@ quiz:
     choices:
     - content: 50 Mbps
       isCorrect: false
-      explanation: Although 50 Mbps is an available bandwidth, it is not the maximum available.
+      explanation: Although 50 Mbps is an available bandwidth, it isn't the maximum available.
     - content: 1 Gbps
       isCorrect: false
-      explanation: Although 1 Gbps is an available bandwidth, it is not the maximum available.
+      explanation: Although 1 Gbps is an available bandwidth, it isn't the maximum available.
     - content: 200 Gbps
       isCorrect: false
-      explanation: A 200 Gbps bandwidth circuit is not available with ExpressRoute.
+      explanation: A 200-Gbps bandwidth circuit isn't available with ExpressRoute.
     - content: 100 Gbps
       isCorrect: true
-      explanation: A 100 Gbps bandwidth circuit is currently the maximum available with ExpressRoute.
+      explanation: A 100-Gbps bandwidth circuit is currently the maximum available with ExpressRoute.
   - content: 'What would you use a VPN gateway for?'
     choices:
     - content: To connect to a CloudExchange provider
       isCorrect: false
-      explanation: CloudExchange providers are used in a colocated ExpressRoute model. A VPN gateway is not used.
+      explanation: CloudExchange providers are used in a colocated ExpressRoute model. A VPN gateway isn't used.
     - content: For ExpressRoute to connect to on-premises networks
       isCorrect: false
       explanation: A VPN gateway is a separate resource to Azure ExpressRoute.
