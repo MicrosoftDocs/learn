@@ -3,7 +3,7 @@ uid: learn.wwl.implement-windows-10-security-enhancements-with-microsoft-defende
 metadata:
   title: Implement Windows security enhancements with Microsoft Defender for Endpoint
   description: "Implement Windows security enhancements with Microsoft Defender for Endpoint"
-  ms.date: 06/29/2022
+  ms.date: 02/17/2023
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
@@ -24,9 +24,13 @@ roles:
 - security-operations-analyst
 products:
 - m365
+- mdatp
 - windows
 subjects:
+- cloud-security
+- compliance
 - security
+- threat-protection
 units:
 - learn.wwl.implement-windows-10-security-enhancements-with-microsoft-defender-for-endpoint.introduction
 - learn.wwl.implement-windows-10-security-enhancements-with-microsoft-defender-for-endpoint.understand-attack-surface-reduction
