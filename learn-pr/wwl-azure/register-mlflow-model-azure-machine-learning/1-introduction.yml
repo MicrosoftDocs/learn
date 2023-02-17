@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.sc-200-who-hacked-cloud-game.introduction
+uid: learn.wwl.register-mlflow-model-azure-machine-learning.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: "Introduction to the Who Hacked? game."
+  description: "Learn how to register a model with MLflow in Azure Machine Learning."
   ms.date: 02/17/2023
   author: wwlpublish
-  ms.author: kelawson
+  ms.author: madiepev
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1
+durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
