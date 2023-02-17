@@ -24,18 +24,18 @@ quiz:
       explanation: "Correct. Domain compromise is detected with Microsoft Defender for Identity."
     - content: "Microsoft Defender for Endpoint"
       isCorrect: false
-      explanation: "Incorrect. Domain compromise is not detected by Microsoft Defender for Endpoint."
+      explanation: "Incorrect. Domain compromise isn't detected by Microsoft Defender for Endpoint."
     - content: "Microsoft Defender for Office 365"
       isCorrect: false
-      explanation: "Incorrect. Domain compromise is not detected by Microsoft Defender for Office 365."
+      explanation: "Incorrect. Domain compromise isn't detected by Microsoft Defender for Office 365."
   - content: "Which Microsoft 365 Defender solution can detect a phishing email?"
     choices:
     - content: "Microsoft Defender for Identity"
       isCorrect: false
-      explanation: "Incorrect. Phishing email is not detected with Microsoft Defender for Identity."
+      explanation: "Incorrect. Phishing email isn't detected with Microsoft Defender for Identity."
     - content: "Microsoft Defender for Endpoint"
       isCorrect: false
-      explanation: "Incorrect. Phishing email is not detected by Microsoft Defender for Endpoint."
+      explanation: "Incorrect. Phishing email isn't detected by Microsoft Defender for Endpoint."
     - content: "Microsoft Defender for Office 365"
       isCorrect: true
       explanation: "Correct. Phishing email is detected by Microsoft Defender for Office 365."
@@ -43,10 +43,10 @@ quiz:
     choices:
     - content: "Microsoft Defender for Identity"
       isCorrect: false
-      explanation: "Incorrect. Malware installation is not detected with Microsoft Defender for Identity."
+      explanation: "Incorrect. Malware installation isn't detected with Microsoft Defender for Identity."
     - content: "Microsoft Defender for Endpoint"
       isCorrect: true
       explanation: "Correct. Malware installation is detected by Microsoft Defender for Endpoint."
     - content: "Microsoft Defender for Office 365"
       isCorrect: false
-      explanation: "Incorrect. Malware installation is not detected by Microsoft Defender for Office 365."
+      explanation: "Incorrect. Malware installation isn't detected by Microsoft Defender for Office 365."
