@@ -1,4 +1,5 @@
 
+
 There are currently four durable function types in Azure Functions: orchestrator, activity, entity, and client. The rest of this section goes into more details about the types of functions involved in an orchestration.
 
 ## Orchestrator functions
