@@ -89,7 +89,7 @@ The **AstronomicalBodiesPage** has already been added as a tab on the page that 
     ```
 
 1. Start the app and select the tab titled: **Bodies**.
-1. Select the Earth button. The details for the Earth should appear. The navigation bar should contain a *back arrow* that enables the user to return to the list of bodies. The remaining tabs are still visible and active:
+1. Select the **Sun** button. The details for the Sun should appear. The navigation bar should contain a *back arrow* that allows the user to return to the list of bodies. The remaining tabs are still visible and active:
 
     :::image type="content" source="../media/7-navigation.png" alt-text="A screenshot of the app running with the astronomical body detail screen shown.":::
 

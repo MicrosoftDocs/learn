@@ -1,8 +1,8 @@
-Your company plans to migrate most of its on-premises resources to Azure. However, a small datacenter must remain on-premises to be integrated into the Azure network. The architectural model needs to consider using Azure network connectivity for several satellite offices. You want to use a hybrid network architecture that grants access to both your on-premises and cloud-based resources.
+Your company plans to migrate most of its on-premises resources to Azure. However, a small datacenter must remain on-premises for integration into the Azure network. The architectural model needs to consider using Azure network connectivity for several satellite offices. You want to use a hybrid network architecture that grants access to both your on-premises and cloud-based resources.
 
 To handle the migration, you'll produce a network integration plan for Azure that includes a selection of the best hybrid network options available in Azure. The options must meet the organization's requirements for hybrid connectivity.
 
-In this unit, you'll explore on-premises connectivity on the Azure platform. You'll also get an overview of Azure Virtual Network, and see how to use Azure VPN Gateway to secure traffic to an on-premises network.
+In this unit, you explore on-premises connectivity on the Azure platform. You also get an overview of Azure Virtual Network, and see how to use Azure VPN Gateway to secure traffic to an on-premises network.
 
 ## About Azure Virtual Network
 
@@ -11,20 +11,20 @@ The Azure Virtual Network service has a specific set of tools and resources for 
 With an Azure virtual network, you can:
 
 - Connect virtual machines to the internet.
-- Provide secure communications between Azure resources that are hosted in various datacenters and regions.
+- Provide secure communications between Azure resources hosted in various datacenters and regions.
 - Isolate and manage Azure resources.
 - Connect to on-premises computers.
 - Manage network traffic.
 
 By default, all Azure resources within a virtual network have outbound connectivity to the internet. External inbound communication must come through a public-facing endpoint. All internal resources use a private endpoint to access the virtual network.
 
-A virtual network is composed of many elements including, but not limited to, network interfaces, load balancers, subnets, network security groups, and public IP addresses. These elements work together and enable secure, reliable network communication between your Azure resources, the internet, and on-premises networks.
+A virtual network is composed of many elements. Including, but not limited to, network interfaces, load balancers, subnets, network security groups, and public IP addresses. These elements work together and enable secure, reliable network communication between your Azure resources, the internet, and on-premises networks.
 
   ![Azure virtual network component architecture.](../media/2-azure-vnet-vm-arch.svg)
 
 ## Traffic routing on an Azure virtual network
 
-Outbound traffic from a subnet is routed based on the destination IP address. A routing table defines how the traffic routes and what happens next. A destination IP address can exist across multiple routing table prefix definitions (for example, 10.0.0.0/16 and 10.0.0.0/24). The router uses a sophisticated algorithm to find the longest prefix match. Traffic that's heading for a 10.0.0.6 address would resolve to the 10.0.0.0/24 prefix and be routed accordingly.
+Outbound traffic from a subnet is routed based on the destination IP address. A routing table defines how the traffic routes and what happens next. A destination IP address can exist across multiple routing table prefix definitions (for example, 10.0.0.0/16 and 10.0.0.0/24). The router uses a sophisticated algorithm to find the longest prefix match. Traffic that's heading for a 10.0.0.6 address would resolve to the 10.0.0.0/24 prefix and is routed accordingly.
 
 There are two principal routing tables: system and custom.
 
@@ -43,7 +43,7 @@ A typical default routing table might look like this:
 | Default | 192.168.0.0/16 | None |
 | Default | 100.64.0.0/10 | None |
 
-A routing table is made up of a source, an address prefix, and a *next hop* type. All traffic that leaves the subnet uses the routing table to find out where it should go next. In effect, the traffic looks for the next hop in its journey.
+A routing table consists of a source, an address prefix, and a *next hop* type. All traffic that leaves the subnet uses the routing table to find out where it should go next. In effect, the traffic looks for the next hop in its journey.
 
 A next hop defines what happens to the traffic flow next, based on the prefix. There are three types of next hop:
 
@@ -55,7 +55,7 @@ A next hop defines what happens to the traffic flow next, based on the prefix. T
 
 Apart from system-defined routing tables, you can also create custom routing tables. These user-defined routing tables override the default system table. There are limitations on the number of routing items you can have in a custom table.
 
-A few of the many limitations that apply to virtual networks are listed in the following table:
+The following table lists a few of the many limitations that apply to virtual networks:
 
 | Resource | Default or maximum number |
 | ---- | ---- |
@@ -74,15 +74,15 @@ Much like the system routing table, custom routing tables also have a next hop t
 
 ## Connect Azure virtual networks
 
-You can connect your virtual networks in any of several ways.  You can use Azure VPN Gateway or ExpressRoute, or you can use the peering method directly.
+You can connect your virtual networks in any of several ways. You can use Azure VPN Gateway or ExpressRoute, or you can use the peering method directly.
 
 ### Azure VPN Gateway
 
-When you're working toward integrating your on-premises network with Azure, there needs to be a bridge between them. VPN Gateway is an Azure service that provides this functionality. A VPN gateway can send encrypted traffic between the two networks. VPN gateways support multiple connections, which enable them to route VPN tunnels that use any available bandwidth. A virtual network can have only one gateway assigned. VPN gateways can also be used for connections between virtual networks in Azure.
+When you're working toward integrating your on-premises network with Azure, you need a bridge between them. VPN Gateway is an Azure service that provides this functionality. A VPN gateway can send encrypted traffic between the two networks. VPN gateways support multiple connections, which enable them to route VPN tunnels that use any available bandwidth. A virtual network can have only one gateway assigned. VPN gateways can also be used for connections between virtual networks in Azure.
 
-Implementing a VPN gateway requires two or more virtual machines to be deployed to the subnet that you create when you set up the virtual network. In this instance, the subnet is also known as the gateway subnet. Each virtual machine is assigned a default configuration for routing and gateway services, explicit to the provisioned gateway. You can't configure these virtual machines directly.
+Implementing a VPN gateway requires you to deploy two or more virtual machines to the subnet that you create when you set up the virtual network. In this instance, the subnet is also called the *gateway subnet*. Each virtual machine is assigned a default configuration for routing and gateway services, explicit to the provisioned gateway. You can't configure these virtual machines directly.
 
-When you create a gateway, several topologies are available. These topologies, also known as gateway types, determine what's configured and the expected connection type.
+When you create a gateway, several topologies are available. These topologies, also known as *gateway types*, determine what's configured and the expected connection type.
 
 #### Site-to-site
 
@@ -98,11 +98,11 @@ A point-to-site connection is suited to a remote individual client device that c
 
 #### Network-to-network
 
-You use a network-to-network connection to create connections between multiple Azure virtual networks. This connection topology, unlike the others, doesn't require a public IP or VPN device. It can also be used in a multisite configuration to establish combined cross-premises connections with inter-virtual network connectivity.
+You use a network-to-network connection to create connections between multiple Azure virtual networks. This connection topology, unlike the others, doesn't require a public IP or VPN device. You can also use a network-to-network connection in a multisite configuration to establish combined cross-premises connections with inter-virtual network connectivity.
 
 ### ExpressRoute
 
-ExpressRoute creates a direct connection between your on-premises network and the Azure virtual network that doesn't use the internet. You use ExpressRoute to seamlessly extend your local network across to the Azure virtual network space. The ExpressRoute service is offered by many third-party connectivity providers. There are three different ExpressRoute connection types:
+ExpressRoute creates a direct connection between your on-premises network and the Azure virtual network that doesn't use the internet. You use ExpressRoute to seamlessly extend your local network across to the Azure virtual network space. Many third-party connectivity providers offer the ExpressRoute service. There are three different ExpressRoute connection types:
 
 - CloudExchange colocation
 - Point-to-point Ethernet connection
@@ -125,7 +125,7 @@ The architecture features several components:
 - The **on-premises network** represents your on-premises Active Directory and any data or resources.
 - The **gateway** is responsible for sending encrypted traffic to a virtual IP address when it uses a public connection.
 - The **Azure virtual network** holds all your cloud applications and any Azure VPN gateway components.
-- An **Azure VPN gateway** provides the encrypted link between the Azure virtual network and your on-premises network. An Azure VPN gateway is made up of these elements:
+- An **Azure VPN gateway** provides the encrypted link between the Azure virtual network and your on-premises network. An Azure VPN gateway consists of these elements:
   - Virtual network gateway
   - Local network gateway
   - Connection
