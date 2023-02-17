@@ -6,7 +6,7 @@ Imagine you're a data scientist, working for a company that creates an applicati
 
 You expect to regularly retrain the model that predicts diabetes. Whenever you have more training data, you want to retrain the model to produce a better performing model. Every time the model is retrained, you want to update the model that is deployed to the endpoint and integrated with the application. By doing so, you're providing the practitioners with the latest version of the model anytime they use the application.
 
-You'll learn how to register a model with MLflow in Azure Machine Learning to prepare the model for deployment.
+You'll learn how to register a model with MLflow in Azure Machine Learning to prepare the model for deployment. 
 
 ## Learning objectives 
 
