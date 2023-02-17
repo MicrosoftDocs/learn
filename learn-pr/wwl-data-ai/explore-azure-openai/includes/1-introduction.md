@@ -6,7 +6,7 @@ You share with your team that today, stable AI models are regularly put into pro
 
 Recently, OpenAI, an AI research company, published a chatbot known as ChatGPT and an image generation application known as DALL-E. Both displayed AI capabilities many have not seen before. These technologies were built with AI models which can take almost any natural language input from a user and return a machine-created human-like response.
 
-You share with your team that Azure OpenAI Service enables users to build enterprise-grade solutions with OpenAI AI models. With Azure OpenAI, users can summarize text, get code suggestions, generate images for a web site, and much more. This module dives into these capabilities.
+You share with your team that Azure OpenAI Service enables users to build enterprise-grade solutions with OpenAI models. With Azure OpenAI, users can summarize text, get code suggestions, generate images for a web site, and much more. This module dives into these capabilities.
 
 ## Capabilities of OpenAI AI models
 
