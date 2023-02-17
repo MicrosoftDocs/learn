@@ -4,7 +4,7 @@ metadata:
   title: Threat hunting with Microsoft Sentinel
   description: Threat hunting with Microsoft Sentinel
   ms.date: 12/15/2020
-  author: cwatson-cat
+  author: wwlpublish
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -23,9 +23,10 @@ prerequisites: |
   - Access to a Microsoft Azure subscription for exercise tasks.
 iconUrl: /training/achievements/hunt-threats-sentinel.svg
 levels:
-- beginner
+- intermediate
 roles:
 - solution-architect
+- security-operations-analyst
 products:
 - azure
 - azure-sentinel
