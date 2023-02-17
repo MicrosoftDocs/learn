@@ -1,4 +1,4 @@
-The learning process repeatedly alters a model until it can make high-quality estimates. To determine how well a model is performing, the learning process uses mathematics in the form of a cost function (also known as an objective function). To understand what a cost function is, let's break it down a little.
+The learning process repeatedly alters a model until it can make high-quality estimates. To determine how well a model is performing, the learning process uses mathematics in the form of a cost function. The cost function is also known as an objective function. To understand what a cost function is, let's break it down a little.
 
 ## Error, cost, and loss
 
@@ -10,7 +10,7 @@ These three terms are used somewhat loosely in machine learning, which can cause
 
 Because cost indicates how badly a model works, our goal is to have zero cost. In other words, we want to train the model to make no mistakes at all. This idea is often impossible, though, so instead we set a slightly more nebulous goal of training the model to have the lowest cost possible.
 
-Because of this goal, how we calculate cost dictates what the model will try to learn. In the preceding example, we defined cost as the error in estimating temperature.
+Because of this goal, how we calculate cost dictates what the model tries to learn. In the preceding example, we defined cost as the error in estimating temperature.
 
 ## What is a cost function?
 
