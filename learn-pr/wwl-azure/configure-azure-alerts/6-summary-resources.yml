@@ -11,6 +11,6 @@ metadata:
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 2
+durationInMinutes: 1
 content: |
   [!include[](includes/6-summary-resources.md)]

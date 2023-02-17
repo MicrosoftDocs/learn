@@ -3,14 +3,14 @@ uid: learn.wwl.configure-azure-alerts.manage-azure-monitor-alerts
 title: Manage Azure Monitor alerts
 metadata:
   title: Manage Azure Monitor alerts
-  description: "Manage Azure Monitor alerts"
-  ms.date: 11/14/2022
+  description: "Manage Azure Monitor alerts, including the alert type, the alert state, and statefulness."
+  ms.date: 02/17/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 4
 content: |
-  [!include[](includes/2-manage-azure-monitor-alerts.md)]
+  [!include[](includes/2b-manage-azure-monitor-alerts.md)]

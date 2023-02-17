@@ -12,6 +12,7 @@ title: Configure Azure alerts
 summary: Learn how to configure Azure alerts including action groups.
 abstract: |
   In this module, you learn how to:
+  - Identify Azure Monitor alerts, including alert types and alert states.
   - Configure Azure Monitor alerts.
   - Create alert rules and action groups.
 prerequisites: |
@@ -28,6 +29,7 @@ subjects:
 - communication
 units:
 - learn.wwl.configure-azure-alerts.introduction
+- learn.wwl.configure-azure-alerts.describe-azure-monitor-alerts
 - learn.wwl.configure-azure-alerts.manage-azure-monitor-alerts
 - learn.wwl.configure-azure-alerts.create-alert-rules
 - learn.wwl.configure-azure-alerts.create-action-groups
