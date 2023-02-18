@@ -57,7 +57,7 @@ az resource list --tag tier=presentation --output table
 
 In the three-tier architecture we've been referencing, this is the presentation tier. We've deployed the code responsible for the web interface on this tier, it presents the UI, and directly handles user requests. The only concern of this tier is the presentation of the web site to the user. It doesn't have direct access to the data, and doesn't include business logic.
 
-We've deployed a web server called **demo-web-vm** that is running the web site we're accessing. The server has a network interface **demo-web-vm-nic** that has a public IP address **demo-web-vm-nic-pip** associated with it. This public IP address. is the URL that we retrieved earlier. It also has a network security group **demo-web-nsg** that allows only port 80 (HTTP) traffic inbound from the internet. This network security group restricts access to only the website, and prevents access via unnecessary ports that could be used maliciously. This tier communicates with the presentation tier over HTTP to fulfill the request for the user.
+We've deployed a web server called **demo-web-vm** that is running the web site we're accessing. The server has a network interface **demo-web-vm-nic** that has a public IP address **demo-web-vm-nic-pip** associated with it. This public IP address is the URL that we retrieved earlier. It also has a network security group **demo-web-nsg** that allows only port 80 (HTTP) traffic inbound from the internet. This network security group restricts access to only the website, and prevents access via unnecessary ports that could be used maliciously. This tier communicates with the presentation tier over HTTP to fulfill the request for the user.
 
 ### Application tier
 
