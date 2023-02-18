@@ -21,7 +21,7 @@ At a high level, there are three primary offerings, each of which is aimed at a 
 Azure DevOps Services is a suite of services that address every stage of the software development lifecycle.
 
 - **Azure Repos** is a centralized source-code repository where software development, DevOps engineering, and documentation professionals can publish their code for review and collaboration.
-- **Azure Boards** is an agile project management suite that includes Kanban boards, reporting, and tracking ideas. Azure boards works from high-level epics to work items and issues.
+- **Azure Boards** is an agile project management suite that includes Kanban boards, reporting, and tracking ideas. Azure Boards operate from high-level epics to work items and issues.
 - **Azure Pipelines** is a CI/CD pipeline automation tool.
 - **Azure Artifacts** is a repository for hosting artifacts, such as compiled source code, which can be fed into testing or deployment pipeline steps.
 - **Azure Test Plans** is an automated test tool that can be used in a CI/CD pipeline to ensure quality before a software release.
@@ -41,13 +41,13 @@ GitHub is arguably the world's most popular code repository for open-source soft
 - It includes a wiki for collaborative documentation.
 - It can be run from the cloud or on-premises
 
-Most relevant for this module, GitHub Actions enables workflow automation with triggers for many lifecycle events. One such example would be automating a CI/CD *toolchain*.  
+Most relevant for this module, GitHub Actions enable workflow automation with triggers for many lifecycle events. One such example would be automating a CI/CD *toolchain*.  
 
 A toolchain is a combination of software tools that aid in the delivery, development, and management of software applications throughout a system's development lifecycle. The output of one tool in the toolchain is the input of the next tool in the toolchain. Typical tool functions range from performing automated dependency updates to building and configuring the software, delivering the build artifacts to various locations, testing, and so on.
 
 With such similarity between many GitHub and Azure DevOps features, you might wonder which product to choose for your organization. Unfortunately, the answer might not be straightforward.
 
-Although both Azure DevOps and GitHub allow public and private code repositories, GitHub has a long history with public repositories and is trusted by tens of thousands of open-source project owners.  GitHub is a lighter-weight tool than Azure DevOps, with a focus on individual developers contributing to the open-source code. Azure DevOps is more focused on enterprise development, with heavier project-management and planning tools, and finer-grained access control.
+Although both Azure DevOps and GitHub allow public and private code repositories, GitHub has a long history with public repositories and is trusted by tens of thousands of open-source project owners.  GitHub is a lighter-weight tool than Azure DevOps, with a focus on individual developers contributing to the open-source code. Azure DevOps is focused on enterprise development, with heavier project-management and planning tools, and finer-grained access control.
 
 > [!NOTE]
 > Your choices are not limited to Azure DevOps Services or GitHub and GitHub Actions. In practice, you can mix and match these services as needed. For example, you can use GitHub repos with Azure Boards for work item tracking.
@@ -56,4 +56,4 @@ Although both Azure DevOps and GitHub allow public and private code repositories
 
 Azure DevTest Labs provides an automated means of managing the process of building, setting up, and tearing down virtual machines (VMs) that contain builds of your software projects. This way, developers and testers can perform tests across a variety of environments and builds. And this capability isn't limited to VMs. Anything you can deploy in Azure via an ARM template can be provisioned through DevTest Labs. Provisioning pre-created lab environments with their required configurations and tools already installed is a huge time saver for quality assurance professionals and developers.
 
-Suppose you need to test a new feature on an old version of an operating system. Azure DevTest Labs can set up everything automatically upon request. After the testing is complete, DevTest Labs can shut down and deprovision the VM, which saves money when it's not in use. To control costs, the management team can restrict how many labs can be created, how long they run, and more. 
+Suppose you need to test a new feature on an old version of an operating system. Azure DevTest Labs can set up everything automatically upon request. After the testing is complete, DevTest Labs can shut down and deprovision the VM, which saves money when it's not in use. To control costs, the management team can restrict how many labs can be created, how long they run, and more.
