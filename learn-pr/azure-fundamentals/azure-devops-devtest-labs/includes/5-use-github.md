@@ -6,7 +6,7 @@ Although the internal implementation of the API is closed source, Tailwind Trade
 
 Apply the decision criteria you learned about earlier to find the right option.
 
-First, does Tailwind Traders need to automate and manage test lab creation? No. In this scenario, Azure DevTest Labs is not a candidate because it isn't designed for this use case.
+First, does Tailwind Traders need to automate and manage test lab creation? No. In this scenario, Azure DevTest Labs isn't a candidate because it isn't designed for this use case.
 
 Second, is Tailwind Traders building open-source software?  Yes. As we noted in a previous unit, developers are used to seeing this kind of content available on GitHub.  With GitHub, Tailwind Traders developers can publish their code, accept community contributions to improve the code examples, accept feedback and bug reports, and more. Because this scenario involves open-source code, GitHub is a leading candidate.
 

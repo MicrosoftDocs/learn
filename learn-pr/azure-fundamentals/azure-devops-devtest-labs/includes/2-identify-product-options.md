@@ -1,14 +1,14 @@
-Software developers and operations professionals strive to create working software systems that satisfy the needs of the organization. However, sometimes their short-term objectives are at cross-purposes, which can result in technical issues, delays, and downtime. 
+Software developers and operations professionals strive to create working software systems that satisfy the needs of the organization. However, sometimes their short-term objectives are at odds, which can result in technical issues, delays, and downtime. 
 
-DevOps is a concept that combines philosophies and practices to facilitate technical teams as they work toward common goals. To accomplish this alignment, organizations employ practices and processes that automate the ongoing development, maintenance, and deployment of software systems. The aim is to expedite the release of software changes, ensure the ongoing deployability of the system, and ensure that all changes meet a high quality bar. 
+DevOps is a concept that combines philosophies and practices to facilitate technical teams as they work toward common goals. To accomplish this alignment, organizations employ practices and processes that automate the ongoing development, maintenance, and deployment of software systems. The aim is to expedite the release of software changes, ensure the ongoing deployability of the system and that all changes meet the bar for quality.
 
-When done correctly, DevOps practices and processes touch nearly every aspect of a company and the software development lifecycle, including planning, project management, and the collaboration of software developers and operations and quality assurance teams. Tooling automates and enforces most of the practices and processes, making it both difficult and unnecessary to work around.
+When done correctly, DevOps practices and processes touch nearly every aspect of a company and the software development lifecycle, including planning, project management, the collaboration of software developers and operations, and quality assurance teams. Tooling automates and enforces most of the practices and processes, making it both difficult and unnecessary to work around.
 
-DevOps requires a fundamental mindset change from the top down. Organizations can't merely install software tools or adopt services and hope to get all of the benefits promised by DevOps.
+DevOps requires a fundamental mindset change from the top down. Organizations can't install software tools or adopt services and hope to get all of the benefits promised by DevOps.
 
 In this module, we'll focus on the Microsoft tools that can help accomplish some of the DevOps objectives. Organizations that aren't ready to fully embrace the power of DevOps can support technical teams in their cloud development activities.  If you're interested in learning more about DevOps in general, Microsoft Learn has [several learning paths and modules](/training/browse/?azure-portal=true&terms=DevOps) that can help you.
 
-Microsoft tools enable source-code management, continuous integration and continuous delivery (CI/CD), and automate the creation of testing environments. It seems as though these tools overlap in functionality, so in this module you'll learn about product options, and when to choose one product over another.
+Microsoft tools enable source-code management, continuous integration and continuous delivery (CI/CD), and automate the creation of testing environments. These tools overlap in functionality, so in this module you'll learn about product options, and when to choose one product over another.
 
 ## Product options
 

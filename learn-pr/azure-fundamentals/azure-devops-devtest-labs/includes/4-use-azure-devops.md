@@ -6,7 +6,7 @@ As Tailwind Traders grows and hires contractors and outside vendors for short-te
 
 Apply the decision criteria you learned about in the preceding unit to find the right option.
 
-First, does Tailwind Traders need to automate and manage test lab creation? No. So, in this scenario, Azure DevTest Labs is not a candidate, because it isn't intended for this specific use case.
+First, does Tailwind Traders need to automate and manage test lab creation? No. So, in this scenario, Azure DevTest Labs isn't a candidate, because it isn't intended for this specific use case.
 
 Second, is Tailwind Traders building open-source software? Though it's not stated specifically, Tailwind Traders is building internal and external systems, such as their e-commerce system, which isn't open source.  So that isn't a consideration in this scenario.
 
@@ -14,4 +14,4 @@ Third, what level of granularity does Tailwind Traders need for permissions? Ear
 
 Fourth, does Tailwind Traders require a sophisticated project management and reporting solution? Yes, robust project management and reporting features are one of the primary considerations. Here again, because of the amount of work-item customization and reporting the management team wants, Azure DevOps would likely be a good choice.
 
-Fifth, does Tailwind Traders require tight integration with any third-party DevOps tools? Tool integration was not listed as a primary consideration for this scenario.  As you learned in the preceding unit, most third-party DevOps tools integrate with both Azure DevOps and GitHub, which makes it likely that the team will find the tools it needs.
+Fifth, does Tailwind Traders require tight integration with any third-party DevOps tools? Tool integration wasn't listed as a primary consideration for this scenario.  As you learned in the preceding unit, most third-party DevOps tools integrate with both Azure DevOps and GitHub, which makes it likely that the team will find the tools it needs.

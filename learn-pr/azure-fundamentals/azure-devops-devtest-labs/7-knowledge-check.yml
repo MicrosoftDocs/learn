@@ -13,36 +13,36 @@ durationInMinutes: 3
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which of the following choices would not be used to automate a CI/CD process?"
+  - content: "Which of the following choices doesn't automate a CI/CD process?"
     choices:
     - content: "Azure Pipelines"
       isCorrect: false
-      explanation: "Azure Pipelines can be used to automate a CI/CD process."
+      explanation: "Incorrect. Azure Pipelines can automate a CI/CD process."
     - content: "GitHub Actions"
       isCorrect: false
-      explanation: "GitHub Actions can be used to automate a CI/CD process."
+      explanation: "Incorrect. GitHub Actions can automate a CI/CD process."
     - content: "Azure Boards"
       isCorrect: true
-      explanation: "Azure Boards is an agile project-management tool. It would not be used to automate a CI/CD process."
+      explanation: "Correct. Azure Boards is an agile project-management tool. It cannot automate a CI/CD process."
   - content: "Which service could help you manage the VMs that your developers and testers need to ensure that your new app works across various operating systems?"
     choices:
     - content: "Azure DevTest Labs"
       isCorrect: true
-      explanation: "Azure DevTest Labs is used to manage VMs for testing, including configuration, provisioning, and automatic de-provisioning."
+      explanation: "Correct. Azure DevTest Labs is used to manage VMs for testing, including configuration, provisioning, and automatic de-provisioning."
     - content: "Azure Test Labs"
       isCorrect: false
-      explanation: "Azure Test Labs is used to create automated tests, but not to manage VMs to test across various environments."
+      explanation: "Incorrect. Azure Test Labs is used to create automated tests, but not to manage VMs to test across various environments."
     - content: "Azure Repos"
       isCorrect: false
-      explanation: "Azure Repos is a centralized, source-code management repository.  It is not used to manage testing VMs."
+      explanation: "Incorrect. Azure Repos is a centralized, source-code management repository.  It isn't used to manage testing VMs."
   - content: "Which service lacks features to assign individual developers tasks to work on?"
     choices:
     - content: "Azure Boards"
       isCorrect: false
-      explanation: "Azure Boards has sophisticated project-management features that allow you to assign tasks to a user."
+      explanation: "Incorrect. Azure Boards has sophisticated project-management features that allow you to assign tasks to a user."
     - content: "GitHub"
       isCorrect: false
-      explanation: "GitHub has lightweight project-management features that allow you to assign tasks to a user."
+      explanation: "Incorrect. GitHub has lightweight project-management features that allow you to assign tasks to a user."
     - content: "Azure Pipelines"
       isCorrect: true
-      explanation: "Azure Pipelines is a CI/CD tool for building an automated toolchain. It lacks features to assign tasks for individual developers to work on.  However, it can automate other tools to assign tasks to users."
+      explanation: "Correct. Azure Pipelines is a CI/CD tool for building an automated toolchain. It lacks features to assign tasks for individual developers to work on.  However, it can automate other tools to assign tasks to users."
