@@ -1,4 +1,4 @@
-The software development team at Tailwind Traders works on many different projects, both for internal and external usage.  The team needs to give project sponsors and managers executive level reporting, including burndown charts, track progress against epics, and track custom information that's specific to Tailwind Traders in each work item and bug report.
+The software development team at Tailwind Traders works on many different projects, both for internal and external usage.  The team needs to give project sponsors and managers executive level reporting, including burndown charts, progress against epics, and custom information that's specific to Tailwind Traders in each work item and bug report.
 
 As Tailwind Traders grows and hires contractors and outside vendors for short-term work, the upper management team wants to ensure that these individuals have access only to the information they need to do their work.
 

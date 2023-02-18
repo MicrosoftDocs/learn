@@ -1,6 +1,6 @@
 Tailwind Traders hopes to publish an API that would allow third parties to integrate their own inventories of new and used items. This approach would allow Tailwind Traders to offer a wider variety of products directly from their e-commerce site.
 
-Although the internal implementation of the API is closed source, Tailwind Traders wants to create a set of examples that call the API to perform various actions.  The team needs a platform to share example code, collect feedback on the API, allow contributors to report issues, and build a community around feature requests.
+Although the internal implementation of the API is closed source, Tailwind Traders wants to create a set of examples that call the API to perform various actions. The team needs a platform to share example code, collect feedback on the API, allow contributors to report issues, and build a community around feature requests.
 
 ### Which service should you choose?
 
