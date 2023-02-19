@@ -3,7 +3,7 @@ uid: learn.github.github-introduction-administration
 metadata:
   title: Introduction to GitHub administration
   description: Understand the security and control measures available to GitHub administrators within an organization or enterprise.
-  ms.date: 8/23/2021
+  ms.date: 2/16/2023
   author: lucie-docs
   ms.author: rotabor
   ms.topic: interactive-tutorial
@@ -11,10 +11,11 @@ metadata:
 title: Introduction to GitHub administration
 summary: Understand the security and control measures available to GitHub administrators within an organization or enterprise.
 abstract: |
-  By the end of this module, you will be able to:
+  By the end of this module, you'll be able to:
   - Summarize the organizational structures and permission levels that GitHub administrators can use to organize members in order to control access and security.
   - Identify the various technologies that enable a secure authentication strategy allowing administrators to centrally manage repository access.
-  - Describe the technologies required to centrally manage teams and members using existing directory information services and how GitHub can itself be used as an identity provider for authentication and authorization.
+  - Describe the technologies required to centrally manage teams and members using existing directory information services.
+  - Describe how you can use GitHub itself as an identity provider for authentication and authorization.
 prerequisites: |
  - Familiarity with GitHub, repositories, and the basics of managing individual accounts is required
  - Familiarity with personal and organizational authentication technologies and processes would be helpful
