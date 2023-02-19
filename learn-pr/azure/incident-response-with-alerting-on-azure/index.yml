@@ -36,6 +36,7 @@ units:
 - learn.incident-response-with-alerting-on-azure.5-log-alerts
 - learn.incident-response-with-alerting-on-azure.6-activity-log-alerts
 - learn.incident-response-with-alerting-on-azure.7-exercise-activity-log-alerts
+- learn.incident-response-with-alerting-on-azure.8-alert-processing-rules
 - learn.incident-response-with-alerting-on-azure.9-summary
 badge:
   uid: learn.incident-response-with-alerting-on-azure.badge
