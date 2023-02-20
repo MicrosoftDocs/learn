@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
 title: Perform evidence and entities investigations using Microsoft Defender for Endpoint
-summary: Learn about the artifacts in your environment and how they relate to other artifacts and alerts that will provide you insight to understand the overall impact to your environment.
+summary: Learn about the artifacts in your environment and how they relate to other artifacts and alerts that will provide you with insight to understand the overall impact to your environment.
 abstract: |
   Upon completion of this module, the learner will be able to:
   - Investigate files in Microsoft Defender for Endpoint
