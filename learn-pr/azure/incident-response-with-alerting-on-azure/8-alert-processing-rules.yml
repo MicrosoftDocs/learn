@@ -8,7 +8,7 @@ metadata:
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Use activity log alerts to alert on events within your Azure infrastructure
+title: Use alert processing rules to modify the behavior of an activity group
 durationInMinutes: 10
 content: |
   [!include[](includes/8-alert-processing-rules.md)]
