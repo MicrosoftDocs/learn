@@ -1,12 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.incident-response-with-alerting-on-azure.alert-processing-rules
-title: alert-processing-rules
+uid: learn.incident-response-with-alerting-on-azure.8-alert-processing-rules
 metadata:
-  title: alert-processing-rules
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  title: Alert processing rules
+  description: Learn how you can adjust the notifications and actions for a triggered alert using alert processing rules.
   ms.date: 2/19/2023
-  author: {{githubUsername}}
-  ms.author: {{msUser}}
+  author: AbbyMSFT
+  ms.author: abbyweisberg
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1
