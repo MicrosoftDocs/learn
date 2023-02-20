@@ -4,13 +4,11 @@ title: Create the gateway subnet
 metadata:
   title: Create the gateway subnet
   description: "Create the gateway subnet for a virtual network in the Azure portal."
-  ms.date: 01/18/2023
+  ms.date: 02/20/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 2
 content: |
   [!include[](includes/4-create-gateway-subnet.md)]
