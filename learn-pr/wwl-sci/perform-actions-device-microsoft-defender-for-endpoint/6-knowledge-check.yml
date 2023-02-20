@@ -21,13 +21,13 @@ quiz:
     choices:
     - content: "Command History"
       isCorrect: false
-      explanation: "Incorrect. Command history is not collected."
+      explanation: "Incorrect. Command history isn't collected."
     - content: "Prefetch Files"
       isCorrect: true
       explanation: "Correct. Prefetch files are collected."
     - content: "Network transactions"
       isCorrect: false
-      explanation: "Incorrect. Network transactions are not collected."
+      explanation: "Incorrect. Network transactions aren't collected."
   - content: "Which of the actions below is a Device action?"
     choices:
     - content: "Reboot"
