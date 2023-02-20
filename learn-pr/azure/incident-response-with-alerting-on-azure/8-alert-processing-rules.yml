@@ -1,13 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.incident-response-with-alerting-on-azure.8-alert-processing-rules
 metadata:
-  title: Alert processing rules
-  description: Learn how you can adjust the notifications and actions for a triggered alert using alert processing rules.
-  ms.date: 2/19/2023
-  author: AbbyMSFT
-  ms.author: abbyweisberg
+  title: Use alert processing rules to modify the behavior of an activity group.
+  description: Learn about how to use alert processing rules to change the behavior of an action group in an alert rule.
+  ms.date: 10/10/2019
+  author: cwatson-cat
+  ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1
+title: Use activity log alerts to alert on events within your Azure infrastructure
+durationInMinutes: 10
 content: |
   [!include[](includes/8-alert-processing-rules.md)]
