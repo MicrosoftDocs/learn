@@ -29,12 +29,12 @@ quiz:
       explanation: The ExpressRoute circuit connects to the local edge routers of a connectivity provider.
     - content: To provide a redundant failover connection
       isCorrect: true
-      explanation: The VPN gateway provides a direct connection between your on-premises gateway and the Azure virtual network. The VPN gateway can be used in the event of an ExpressRoute circuit failure.
+      explanation: The VPN gateway provides a direct connection between your on-premises gateway and the Azure virtual network. The VPN gateway can be used if there is an ExpressRoute circuit failure.
   - content: 'How are VPN gateway connections to an on-premises network routed?'
     choices:
     - content: Through a private VPN connection
       isCorrect: false
-      explanation: VPN gateways do not use a private connection.
+      explanation: VPN gateways don't use a private connection.
     - content: Over the public internet
       isCorrect: true
       explanation: A VPN gateway sends encrypted traffic between an on-premises network and the Azure network over the public internet.
@@ -48,13 +48,13 @@ quiz:
     choices:
     - content: Greater cost visibility
       isCorrect: false
-      explanation: 'A hub-spoke architecture can help reduce cost, but it does not improve cost visibility.'
+      explanation: A hub-spoke architecture can help reduce cost, but it doesn't improve cost visibility.
     - content: Greater security
       isCorrect: false
-      explanation: A hub-spoke architecture might be more secure, but it is not normally considered a benefit.
+      explanation: A hub-spoke architecture might be more secure, but it isn't normally considered a benefit.
     - content: Greater business visibility
       isCorrect: true
       explanation: The hub becomes the core of the business and provides the foundations for much deeper business insight.
     - content: Faster network communications
       isCorrect: false
-      explanation: A hub-spoke architecture might help increase network speed, but it is not guaranteed to remove network bottlenecks.
+      explanation: A hub-spoke architecture might help increase network speed, but it isn't guaranteed to remove network bottlenecks.
