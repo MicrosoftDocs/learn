@@ -2,8 +2,8 @@
 uid: learn.wwl.configure-storage-accounts
 metadata:
   title: Configure storage accounts
-  description: "<div|<span style=\"color:rgb(34, 34, 34);font-family:&quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, Verdana;font-size:12px;display:inline !important;\"|Learn how to configure storage accounts, including replication and endpoints.</span|  </div|"
-  ms.date: 02/16/2023
+  description: "Learn how to configure storage accounts, including replication and endpoints."
+  ms.date: 02/20/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
