@@ -1,3 +1,4 @@
+
 A VPN gateway is a specific type of virtual network gateway that's used to send encrypted traffic between your Azure virtual network and an on-premises location over the public internet. A VPN gateway can also be used to send encrypted traffic between your Azure virtual networks over the Microsoft network. 
 
 Azure VPN Gateway is a service that uses this specific type of virtual network gateway to support encrypted traffic.
