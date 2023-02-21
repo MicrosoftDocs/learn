@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.monitor-aks-using-container-insights.3-exercise-enable-container-insights
+title: Exercise – Enable Container insights
+metadata:
+  title: Exercise – Enable Container insights
+  description: TBD
+  ms.date: 08/10/2022
+  author: bwren
+  ms.author: bwren
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/3-exercise--enable-container-insights.md)]
