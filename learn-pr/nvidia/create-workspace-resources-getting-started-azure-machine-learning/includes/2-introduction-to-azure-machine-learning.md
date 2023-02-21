@@ -2,7 +2,7 @@ Azure Machine Learning  is a platform for creating and managing the end-to-end l
 
 ## Introduction to Azure Machine Learning 
 
-Azure Machine Learning  enables users familiar with Machine Learning  frameworks to quickly train and deploy models using code, while giving others powerful visual tools. All your training scripts, models, logs, and computes are centralized in a shared Workspace in Azure Machine Learning , which assists you in every step of building and deploying machine learning systems—meaning you can focus on models while Azure Machine Learning  does the rest.
+Azure Machine Learning  enables users familiar with Machine Learning  frameworks to quickly train and deploy models using code, while giving others powerful visual tools. All your training scripts, models, logs, and computes are centralized in a shared Workspace in Azure Machine Learning, which assists you in every step of building and deploying machine learning systems—meaning you can focus on models while Azure Machine Learning  does the rest.
 
 Azure Machine Learning  has a comprehensive suite of features to support logging, monitoring, and governance of datasets and models, ensuring your models are performing as intended and effectively communicated to stakeholders.
 
@@ -26,7 +26,7 @@ In the following image, there's an overview of the AutoML pipeline building and 
 
 ## Compute
 
-The computing resources you need for your Machine Learning  environment can be allocated or attached through Azure Machine Learning . From the compute that powers your Jupyter notebooks for exploratory data analysis, to the clusters you'll use for training and the kubernetes clusters you'll deploy to for production inferencing at scale, it can be managed through Azure Machine Learning .
+The computing resources you need for your Machine Learning environment can be allocated or attached through Azure Machine Learning. From the compute that powers your Jupyter notebooks for exploratory data analysis, to the clusters you'll use for training and the kubernetes clusters you'll deploy to for production inferencing at scale, it can be managed through Azure Machine Learning.
 
 ## Managing data
 
