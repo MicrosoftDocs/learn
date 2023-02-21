@@ -22,7 +22,7 @@ In *type 1* dimensions, the dimension record is updated in-place. Changes made t
 |----------|----------|----------|
 |123|EH199J|~~High Street Store~~ Town Central Store|
 
-### Type 1
+### Type 2
 
 In a *type 2* dimension, a change to a dimension results in a new dimension row. Existing rows for previous versions of the dimension are retained for historical fact analysis and the new row is applied to future fact table entries.
 
