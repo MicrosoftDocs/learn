@@ -25,9 +25,7 @@ For diagnosing issues that are reported during network monitoring, Azure Private
 
 With these monitoring and troubleshooting tools, you can monitor the health and performance of your private mobile network on a continuous basis and diagnose issues once they're reported. The monitoring and troubleshooting capabilities of Azure Private 5G Core help ensure the business continuity of enterprises and minimize possible business impact.
 
-<!-- The following video introduces the monitoring and capabilities of Azure Private 5G Core. It also discusses the use of relevant tools and techniques.
-
-TBD: Insert the monitoring introduction video here. -->
+[!VIDEO 11540a9b-1254-45b1-87f1-02f1b1bc9899]
 
 ## Monitoring example
 
