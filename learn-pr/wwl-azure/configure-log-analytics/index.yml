@@ -14,7 +14,7 @@ abstract: |
   In this module, you learn how to:
   - Identify the features and usage cases for Log Analytics in Azure Monitor.
   - Create a Log Analytics workspace in the Azure portal.
-  - Structure a Log Analytics query and review results.
+  - Use the Kusto Query Language (KQL) to structure a Log Analytics query and review results.
 prerequisites: |
   None
 iconUrl: /training/achievements/log-analytics-configure.svg

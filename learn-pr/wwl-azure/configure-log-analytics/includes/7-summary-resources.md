@@ -1,17 +1,35 @@
-## Summary
+Azure Administrators work with Log Analytics in the Azure portal to run log queries on their data in Azure Monitor logs. Administrators can create Kusto Query Language (KQL) queries to consolidate and analyze their data.
 
-Azure Administrators use the Log Analytics tool to run log queries on data in Azure Monitor Logs.
+In this module, you identified the features and usage cases for Log Analytics in Azure Monitor. You created a Log Analytics workspace in the Azure portal. You reviewed how to use KQL to structure a Log Analytics query and review the results.
 
-You should now be able to: 
+## Learn more
 
- -  Identify the features and usage cases for Log Analytics.
- -  Create a Log Analytics workspace.
- -  Structure a Log Analytics query and review results.
+- Read about [Log Analytics in Azure Monitor](/azure/azure-monitor/logs/log-analytics-overview).
 
-You can learn more by reviewing the following. A sandbox indicates a hands-on exercise. 
+- Explore the [Kusto Query Language (KQL)](/azure/data-explorer/kusto/query/).
 
- -  [Overview of Log Analytics in Azure Monitor](/azure/azure-monitor/logs/log-analytics-overview)
- -  [Log Analytics tutorial](/azure/azure-monitor/logs/log-analytics-tutorial)
- -  [Learn - Analyze your Azure infrastructure by using Azure Monitor logs (Sandbox)](/learn/modules/analyze-infrastructure-with-azure-monitor-logs/)
- -  [Learn - Monitor performance of virtual machines by using Azure Monitor for VMs (Sandbox)](/learn/modules/monitor-performance-using-azure-monitor-for-vms/)
- -  [Learn - Write your first query with the Kusto Query Language](/learn/modules/write-first-query-kusto-query-language/)
+- Get started with [log queries in Azure Monitor](/azure/azure-monitor/logs/get-started-queries).
+
+- Get started with [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial).
+
+- Use queries in [Azure Monitor Logs (Log Analytics)](/azure/azure-monitor/logs/queries).
+
+- Discover how to [analyze and visualize data](/azure/azure-monitor/best-practices-analysis).
+
+- Use the [KQL quick reference](/azure/data-explorer/kql-quick-reference).
+
+- Use the [Azure Monitor Logs table reference](/azure/azure-monitor/reference/tables/tables-category).
+
+## Learn more with self-paced training
+
+- Configure [Azure Monitor](/training/modules/configure-azure-monitor/).
+
+- Design a [holistic monitoring strategy on Azure](/training/modules/design-monitoring-strategy-on-azure/).
+
+## Learn more with optional hands-on exercises
+
+- Analyze your [Azure infrastructure by using Azure Monitor logs (sandbox)](/training/modules/analyze-infrastructure-with-azure-monitor-logs/).
+
+- Monitor [virtual machine performance by using Azure Monitor VM Insights (sandbox)](/training/modules/monitor-performance-using-azure-monitor-for-vms/).
+
+- Write your [first query with the Kusto Query Language (KQL)](/training/modules/write-first-query-kusto-query-language/). _Azure subscription required_.

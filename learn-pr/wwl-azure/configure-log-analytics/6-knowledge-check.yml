@@ -37,7 +37,7 @@ quiz:
       explanation: "Correct. The `summarize` operator creates a table that aggregates your input table content. The `render` operator prepares a visualization of your query results, such as a pie chart, scatter graph, or time pivot."
     - content: "`aggregate` and `visualize`"
       isCorrect: false
-      explanation: "Incorrect. These two commands aren't recognized operators in KQL."
+      explanation: "Incorrect. You can compose an aggregation function in KQL, and also create visualizations, but `aggregate` and `visualize` aren't recognized commands in KQL."
     - content: "`count` and `project`"
       isCorrect: false
       explanation: "Incorrect. The `count` operator shows the number of records in an input record set. The `project` operator selects columns to include, drop, or insert."

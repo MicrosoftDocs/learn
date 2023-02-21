@@ -10,7 +10,7 @@ In this module, you learn how to:
 
 - Identify the features and usage cases for Log Analytics in Azure Monitor.
 - Create a Log Analytics workspace in the Azure portal.
-- Structure a Log Analytics query and review results.
+- Use KQL to structure a Log Analytics query and review results.
 
 ## Skills measured
 
