@@ -20394,7 +20394,11 @@
       "source_path": "learn-pr/windows/build-simple-website/index.md",
       "redirect_url": "/training/modules/get-started-with-web-development/",
       "redirect_document_id": false
-    }
-  
+    },
+    {
+       "source_path": "learn-pr/wwl-azure/configure-azure-alerts/2-manage-azure-monitor-alerts.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-azure-alerts/2b-manage-azure-monitor-alerts",
+      "redirect_document_id": false
+    }    
   ]
 }
