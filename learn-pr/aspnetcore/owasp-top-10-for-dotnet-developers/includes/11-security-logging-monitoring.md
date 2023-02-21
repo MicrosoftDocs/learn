@@ -28,3 +28,10 @@ Make sure you have answers to the following questions:
 
 > [!TIP]
 > .NET provides native logging capabilities (through [ILogger](/dotnet/api/microsoft.extensions.logging.ilogger) or [LoggerFactory](/dotnet/api/microsoft.extensions.logging.loggerfactory) that can be easily added to your solutions.
+
+In our scenario, your new DevOps team can prevent security logging and monitoring failures in their .NET applications by:
+
+- Use a centralized logging framework (such as NLog) or service (such as Application Insights)
+- Log all relevant security events such as authentication failures, authorization failures, input validation failures.
+- Monitor logs for anomalies and alerts using automation
+- Perform dynamic application security testing (e.g with OWASP ZAP Scan GitHub Action or Azure DevOps Pipeline task).

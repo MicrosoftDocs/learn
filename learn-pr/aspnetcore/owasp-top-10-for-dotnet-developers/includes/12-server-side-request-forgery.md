@@ -1,8 +1,7 @@
-This category describes situations whenever a web application is fetching a remote resource without validating the user-supplied URL. It allows an attacker to coerce the application to send a crafted request to an unexpected destination
+This category describes situations whenever a web application is fetching a remote resource without validating the user-supplied URL. It allows an attacker to coerce the application to send a crafted request to an unexpected destination.
 
 Let's consider a crafted or modified URL supplied by the attacker. The server code will read or submit data included in the URL.
-With carefully formulated URL, the attacker may be able to
-
+With carefully formulated URL, the attacker may be able to:
 - read server configuration such as metadata,
 - connect to internal services like http enabled databases,
 - perform POST requests to an internal service, which aren't intended to be exposed.
@@ -28,3 +27,7 @@ Correct user input validation can protect your application from a few OWASP Top 
 
 > [!TIP]
 > Use built-in [IPAddress.TryParse](/dotnet/api/system.net.ipaddress.tryparse) or [Uri.CheckHostName](/dotnet/api/system.uri.checkhostname) methods for input and configuration validation.
+
+To summarize, prevention from SSRF attacks in your .NET applications may involve:
+- validation of user input and only allowing expected values
+- use of allowlised with approved domains and protocols

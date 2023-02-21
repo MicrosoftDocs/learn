@@ -15,15 +15,14 @@ summary: "Discover the most common software vulnerabilities according to OWASP a
 
 abstract: |
   By the end of this module, you'll be able to:
-    - Describe what OWASP Top 10 is.
-    - Evaluate security risks that come with insecure application development patterns and practices.
-    - Identify potential security vulnerabilities in your software and know how to remedy them.
+    - Describe what OWASP Top 10 is.    
+    - Identify potential security vulnerabilities in your software.
+    - Always validate user input in your applications.
 
 prerequisites: |
-  - Basic knowledge of .NET and C# at the beginner level
-  - Basic knowledge of web development with ASP.NET at the beginner level, including controllers and razor syntax
-  - Familiarity with programming concepts such as conditional logic and loops at the beginner level
-  - Familiarity whit what DevOps, DevSecOps is and its concepts at the beginner level
+  - Basic knowledge of .NET and C# at the intermediate level.
+  - Basic knowledge of web development with ASP.NET at the beginner level, including controllers and razor syntax.
+  - Familiarity with software development and release cycle at the beginner level.
   - Basic concepts and terminology of cloud hosting and security tooling, including automation and release process.
 
 iconUrl: /learn/achievements/generic-badge.svg

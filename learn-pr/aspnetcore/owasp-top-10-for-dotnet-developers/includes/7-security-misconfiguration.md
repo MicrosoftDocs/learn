@@ -12,3 +12,5 @@ Security misconfiguration can manifest itself in many places, from `web.config` 
 
 The example above demonstrates one of many native integrations between Azure DevOps and Azure Cloud where Azure DevOps Library is linked with Azure KeyVault to securely access secret pipeline parameters.
 Secret values should never be found in codebase. The same practice applies to infrastructure as code (IaC) release workflows and CI/CD services themselves.
+
+As the new addition to the team, be on a lookout for default accounts and their passwords being enabled and unchanged. Use secure settings for your application servers, frameworks, libraries and databases. As you familiarize yourself with your team's codebase take this opportunity to remove any unused features, components, accounts or services from your applications.

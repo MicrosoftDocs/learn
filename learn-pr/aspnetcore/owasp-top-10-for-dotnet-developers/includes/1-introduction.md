@@ -1,4 +1,4 @@
-Implementing secured and high quality software  be challenging. In this module, we'll learn about  about application security from the perspective of a (.NET) developer. We’ll go through the recently updated version of OWASP TOP 10 to discover, by looking at examples, that are the most common security weaknesses and how we, app developers, can minimalize the risk of security bug infecting your systems. We’ll also introduce techniques, tools and best practices that can improve your product’s security posture.
+Implementing secured and high quality software can be challenging. In this module, you'' learn about  about application security from the perspective of a (.NET) developer. You’ll go through the list of OWASP TOP 10 to discover, by looking at examples, that are the most common security weaknesses and how you, app developer or architect, can redice the risk of security bug infecting your systems. This module will introduce techniques, tools and best practices that can improve your product’s security posture.
 
 <!-- ![Security culture, delivery and automation cogs work better with CI, shift left and automation](../media/security-in-devops.png) -->
 # Threat landscape
@@ -26,8 +26,6 @@ None of these services are simple plug and play affairs, developers need to unde
 
 ![Security culture, delivery and automation cogs work better with CI, Shift left and automation](../media/worlds-breaches.png)
 [Image source](https://www.informationisbeautiful.net/visualizations/worlds-biggest-data-breaches-hacks/)
-
-It’s important to understand there isn’t any single silver bullet or check box to enable AppSec. All the things we’re going to talk about join together to build your suit of AppSec armour.
 
 ### Application security in a wider security context​
 
