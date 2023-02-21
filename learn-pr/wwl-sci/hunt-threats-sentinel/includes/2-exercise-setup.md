@@ -51,12 +51,17 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 In this task, you'll deploy a Microsoft Sentinel connector to Azure Activity.
 
 1. In the Azure portal, search for and select **Microsoft Sentinel**, and then select the previously created Microsoft Sentinel workspace.
-2. On the **Microsoft Sentinel** page, on the menu bar, in the **Configuration** section, select **Data connectors**.
-3. On the **Data connectors** pane, search for and select **Azure Activity**. On the details pane, select **Open connector page**.
-4. On the **Azure Activity** pane, select the link **Configure Azure Activity logs**.
-5. Select your subscription, and then select **Connect**.
-6. When you receive a status of **Connected**, return to the **Data connectors** pane.
-7. Ensure that the **Azure Activity** connector has a status of **Connected**.
+1. On the **Microsoft Sentinel** page, on the menu bar, in the **Configuration** section, select **Data connectors**.
+1. On the **Data connectors** pane, search for and select **Azure Activity**. On the details pane, select **Open connector page**.
+1. Review the **Prerequisites**, you will need to have the owner role assigned for Azure Policy assignment scopes.
+1. If you have a subscription connected with the *legacy method*, you will be directed to disconnect it using the **Configuration** instructions for "1. Disconnect your subscriptions from the legacy method".
+1. If you didn't have the connector configured with the legacy method, proceed to "2. Connect your subscriptions..." in the **Configuration** area.
+1. Select **Launch Azure Policy Assignment Wizard>**.
+1. In the **Basics** tab, select the ellipsis button (...) under **Scope** and select your "Azure Pass - Sponsorship" subscription from the drop-down list and click **Select**.
+1. Select the **Parameters** tab, choose your *uniquenameDefender* workspace from the **Primary Log Analytics workspace** drop-down list.
+1. Select the **ReMediation** tab and select the **Create a reMediation task** checkbox.
+1. Select the **Review + Create** button to review the configuration.
+1. Select **Create** to finish.
 
 > [!NOTE]
-> The connector for Azure Activity might take 15 to 30 minutes to display a status of **Connected**.
+> Because the connector for Azure Activity uses policy assignments it might take 15 to 30 minutes to display a status of **Connected**.
