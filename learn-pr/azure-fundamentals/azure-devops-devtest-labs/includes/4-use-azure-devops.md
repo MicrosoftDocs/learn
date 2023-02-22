@@ -8,7 +8,7 @@ First, does Tailwind Traders need to automate and manage test lab creation? No. 
 
 Second, is Tailwind Traders building open-source software? Though it's not stated specifically, Tailwind Traders is only building internal and external systems, which aren't open source. So that isn't a consideration in this scenario.
 
-Third, what level of granularity does Tailwind Traders need for permissions? Earlier, we stated that Tailwind Traders often hires temporary employees and vendors for short-term work, which makes a granular permissions requirement an important consideration for upper management. Based on our description in the preceding unit, this feature makes **Azure DevOps a leading candidate**.** By using Azure DevOps, Tailwind Traders administrators have a more robust set of options for controlling permissions across the entire portfolio of work.
+Third, what level of granularity does Tailwind Traders need for permissions? Earlier, we stated that Tailwind Traders often hires temporary employees and vendors for short-term work, which makes a granular permissions requirement an important consideration for upper management. Based on our description in the preceding unit, this feature makes **Azure DevOps a leading candidate**. By using Azure DevOps, Tailwind Traders administrators have a more robust set of options for controlling permissions across the entire portfolio of work.
 
 Fourth, does Tailwind Traders require a sophisticated project management and reporting solution? Yes, robust project management and reporting features are one of the primary considerations for this company. Here again, because of the amount of work-item customization and reporting the management team wants, **Azure DevOps is the best choice**.
 
