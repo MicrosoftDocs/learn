@@ -3,7 +3,7 @@ In this exercise, you’ll enable an alert rule and action group to send you a t
 ## Create alert rule for Node CPU
 
 1. From your AKS cluster, select **Insights**.
-1. At the top of the screen, select **Recommended alerts**. This will display a list of recommended alert rules. 
+1. At the top of the screen, select **Recommended alerts**. This displays a list of recommended alert rules. 
    
    :::image type="content" source="../media/image16.png" lightbox="../media/image16.png" alt-text="Screenshot to select recommended alerts" border="true":::
 
@@ -30,8 +30,6 @@ The Node CPU alert will be difficult to simulate for a test application, so enab
 1. Locate the alert with the **Rule Name** _Restarting container count_. Click the slider in the **Status** column to change its status to _Enabled_.
 
    :::image type="content" source="../media/image17.png" lightbox="../media/image17.png" alt-text="Screenshot enable restarting container count alert rule"  border="true":::
-   
-   Description automatically generated" border="true":::
 
 1. Click the message **No action group assigned** to create an action group and assign it to the rule that you just enabled.
 1. Select the action group that you created and click **Apply to rule**.
@@ -47,7 +45,6 @@ To test the alert rule, trigger a container restart by stopping the primary proc
    kubectl exec -it deploy/contoso-website -- /bin/sh
    ```
 
-1. 
 1. From the command line, run the following command:
 
    ```
