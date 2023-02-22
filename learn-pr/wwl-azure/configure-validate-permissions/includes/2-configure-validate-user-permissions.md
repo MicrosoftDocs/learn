@@ -41,7 +41,7 @@ You can create teams or groups based on your organizational structure if you hav
 6. Click on the "+ Add" button, then select the user or group you want to add.
 7. To specify permissions to the user, you can open the new added user and make changes to the default inherited permissions.
 
-    ![Screenshot of Azure Pipelines showing how to add new users to the contributors group.](../media/add-project-user-teams.png)
+    ![Screenshot of Azure Pipelines showing how to add new users to a team.](../media/add-project-user-teams.png)
 
 ## Tips for validating user permissions
 
