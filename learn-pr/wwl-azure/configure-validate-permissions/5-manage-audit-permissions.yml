@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-validate-permissions.manage-audit-permissions
+title: Manage and audit permissions
+metadata:
+  title: Manage and audit permissions
+  description: "Manage and audit permissions."
+  ms.date: 1/25/2023
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-manage-audit-permissions.md)]
