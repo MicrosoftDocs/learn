@@ -11,3 +11,5 @@ You can learn more by reviewing the following documents:
 
 - [Tutorial: Create and Manage Windows VMs with Azure PowerShell](https://aka.ms/tutorial-manage-vm?azure-portal=true).
 - [Sizes for virtual machines in Azure](https://aka.ms/Windows-VM-sizes-Azure?azure-portal=true)
+- [Azure Automanage](/azure/automanage/)
+- [What's new in Windows Server 2022](/windows-server/get-started/whats-new-in-windows-server-2022)
