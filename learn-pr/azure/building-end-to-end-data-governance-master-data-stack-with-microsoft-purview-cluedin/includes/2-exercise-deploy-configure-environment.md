@@ -1,35 +1,71 @@
 This module requires an Azure account with an active subscription to complete.
+
 If you don't have one, you can follow [this link to create a free subscription](https://azure.microsoft.com/free/).
 
-or providing an end to end data technology stack we'll be creating many resources and integrating them together as to provide a steady and robust flow of high quality data. In this exercise you'll deploy some foundational services that you'll use in the future exercises. This exercise includes setting up your ADLS Gen2 instance and your Microsoft Purview instance.
+For providing an end to end data technology stack we'll be creating many resources and integrating them together as to provide a steady and robust flow of high quality data. In this exercise you'll deploy some foundational services that you'll use in the future exercises. This exercise includes setting up your ADLS Gen2 instance and your Microsoft Purview instance.
 
-## Configure your environment with Visual Studio Code
+## Deploy Azure Components through the Azure Portal
 
-In order to complete the exercises, you'll need to configure your environment. If you already have these components installed and configured, you don't need to repeat the steps:
+### Creating an Azure Data Factory
 
-1. [Download](https://code.visualstudio.com/Download) and install Visual Studio Code.
+We will be using Azure Data Factory as our mechanism to pull data from source systems into the Storage Accounts, but will also be using it as the mechanism for CluedIn to pull data registered in Microsoft Purview through into CluedIn to be processed. 
 
-1. [Download and install](/azure/azure-functions/functions-run-local#install-the-azure-functions-core-tools) the Azure Functions Core Tools.
+You will need to create an instance of Azure Data Factory (or bring an existing instance) and you can use the following guide to setup an Azure Data Factory instance: https://learn.microsoft.com/en-us/azure/data-factory/quickstart-create-data-factory
 
-1. In Visual Studio Code, install the following extensions:
+### Creating a Microsoft Purview instance
 
-    - Azure Account: This extension allows you to authenticate to Azure.
-    - Azure Functions: This extension allows you to manage Azure Functions.
-    - GitHub Pull Requests and Issues: This extension allows you to authenticate to GitHub and manage repositories.
-    - Azure Resources: This extension allows you to manage Azure resources.
+You will need to bring your own Microsoft Purview instance to the learning module, which can be installed using the following guide: https://learn.microsoft.com/en-us/azure/purview/create-microsoft-purview-portal
 
-1. Sign in to GitHub with your GitHub account and navigate to this repository. In the top-right corner of your browser, select the Fork button.
+![Create-Purview-Account-Azure-Portal](images/Create-Purview-Account-Azure-Portal.png)
 
-1. On the same page, select Code and copy the HTTPS Clone URL, for example, `https://github.com/<github-username>/serverless-full-stack-apps-azure-sql.git`.
+You will also need to setup a Service Principal in order to generate the right credentials for all the different components to talk with each other. You can follow the guide here to achieve that: https://learn.microsoft.com/en-us/azure/purview/tutorial-using-rest-apis#create-a-service-principal-application
 
-1. Back in Visual Studio Code, select Source Control > ... > Clone and enter the URL copied in a previous step. Select the location you would like the repository to be copied locally.
+### Creating a CluedIn instance
 
-1. In Visual Studio Code, select File > Open folder and navigate to the location where you cloned the repository. This step will open the folder in your Visual Studio Code session.
+You can also install CluedIn directly through the Azure Marketplace or Azure Portal. You will need to make sure that you check and validate that you have all the prerequisites for installing the trial, available here: https://documentation.cluedin.net/deployment/azure-marketplace/preflight 
 
-1. Select the Explorer blade from the left-hand taskbar. Confirm that you see the repository files.
+To install CluedIn, head to the Azure Portal and follow the steps below:
 
-## Deploy Azure components with PowerShell
+1. Type "CluedIn" in your Azure Portal and select the application under the Marketplace section. 
 
-It's possible to do this all through the user interface of the Azure portal since all of the required resources can be installed directly from the Azure Marketplace.
+    ![Create_CluedIn_Azure_Portal](images/Create_CluedIn_Azure_Portal.png)
 
-???
+1. This will take you to a form where you will be asked to choose the type of plan. CluedIn provides a 7-day trial that is cost-free from CluedIn, but will charge for the underlying Azure infrastructure used to install within your environment. You can also choose the "CluedIn Platform" plan which is the hourly based pricing. 
+
+    ![Choose_CluedIn_Instance](images/Choose_CluedIn_Instance.png)
+
+1. Choose the plan that works for you and fill in the form details. In this modeul, we will walk you through using the CluedIn 7-day trial. 
+
+1. Choose "Trial Version" from the dropdown and select "Create".
+
+1. Fill in the Subscription and Resource Group you would like to use. You can also create a new Resource Group here if that is preffered. For the region, make sure you choose a region in which you are able to create infrastructure and that you have enough of a quota to spin up the required infrastructure. If you are in doubt, there is a handy PowerShell script that you can run here: https://documentation.cluedin.net/deployment/azure-marketplace/preflight that will tell you if you have enough quota and all required prerequisites before running the installation. 
+
+    >[!NOTE]
+    >The Managed Resource Group name is autogenerated for you, there is no need to rename this. Call your Installation Name something that will be easy for you to remember throughout your learning Module. 
+
+    ![Fill_CluedIn_Trial_Forn](images/Fill_CluedIn_Trial_Forn.png)
+
+1. Select "Next : CluedIn - Organization Setup >" in which you will then be taken to set the Organization Name, Administrator Email Address, CluedIn Administrator Password, Confirm Password. 
+
+    ![Fill_CluedIn_Organization_Details](images/Fill_CluedIn_Organization_Details.png)
+
+    >[!NOTE]
+    >If you are required to use Single Sign On for your Learning Module then you will need to use the "CluedIn Platform" plan. The Trial does not support SSO setup and uses simple OAuth 2 / JWT authentication.
+
+    The Organization Name will not only act as the Account Name for your new instance of CluedIn, but will also be the subdomain that will be used to access your CluedIn Studio in the browser. 
+
+1. Provide an email address that is valid and that you have access to, and provide a strong Password in the CluedIn Administration Password and Confirm password fields. 
+
+1. Select "Next : CluedIn - AKS Setup >" and leave all of the values as the default. 
+
+    ![Fill_CluedIn_AKS_Setup](images/Fill_CluedIn_AKS_Setup.png)
+
+1. Select "Next : Review + create >". On this next page you will need to check the checkbox to agree to the terms and conditions.
+
+In approximately 15 to 20 minutes, you will have a created instance of CluedIn and will receive an email with all of the access details, including the Url, to access your newly created CluedIn environment. 
+
+# Creating an Azure Storage Account
+
+To act as the ADLS Gen2 in the scenario for this Microsoft Learn module, we will be creating a Storage Account (Container Storage) as to host all of the data used for the module. You can follow a guide here: https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create?tabs=azure-portal
+
+![Search_Storage_Accounts](images/Search_Storage_Accounts.png)

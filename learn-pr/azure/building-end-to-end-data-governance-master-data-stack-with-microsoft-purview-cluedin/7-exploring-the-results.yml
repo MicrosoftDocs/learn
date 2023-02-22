@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.exercise-streaming-data
-title: Exercise streaming data
+uid: learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.exploring-the-results
+title: exploring-the-results
 metadata:
-  title: Exercise streaming data
+  title: exploring-the-results
   description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
-  ms.date: 1/18/2023
+  ms.date: 2/22/2023
   author: whhender
   ms.author: whhender
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 1
 content: |
-  [!include[](includes/5-exercise-streaming-data.md)]
+  [!include[](includes/7-exploring-the-results.md)]

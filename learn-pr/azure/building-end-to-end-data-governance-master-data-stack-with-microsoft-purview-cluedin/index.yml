@@ -36,12 +36,12 @@ units:
 - learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.exercise-deploy-configure-environment
 - learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.roles-and-responsibilities
 - learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.integrating-deployed-technologies
+- learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.mapping-data
 - learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.exercise-streaming-data
-- learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.exercise-validate-microsoft-purview-scan
+- learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.exploring-the-results
 - learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.exercise-fix-duplicate-records
-- learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.exercise-simulate-a-change
-- learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.exercise-interact-with-cluedin-data
-- learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.exercise-simulate-production-environment
+- learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.exercise-validate-microsoft-purview-scan
+- learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.cleaning-data-quality-issues
 - learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.exercise-incrementally-increase-readiness
 - learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.knowledge-check
 - learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.summary
