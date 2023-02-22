@@ -8,10 +8,10 @@ In this module, you explore the key concepts and best practices for configuring 
 
 After completing this module, students and professionals can:
 
-- Configure and validate user permissions
-- Configure and validate pipeline permissions
-- Configure and validate approval and branch checks
-- Manage and audit permissions in Azure DevOps
+- Configure and validate user permissions.
+- Configure and validate pipeline permissions.
+- Configure and validate approval and branch checks.
+- Manage and audit permissions in Azure DevOps.
 
 ### Prerequisites
 
@@ -25,7 +25,7 @@ To get the most out of this course, we recommend that you understand Azure DevOp
 For study recommendations, see:
 <!-- TODO: Replace with the correct link without the branch parameter.
 -->
-[Configure secure access to pipeline resources - Introduction.](/training/modules/configure-secure-access-pipeline-resources/1-introduction?branch=release-configure-secure-access-pipeline-resources)
+- [Configure secure access to pipeline resources - Introduction.](/training/modules/configure-secure-access-pipeline-resources/1-introduction?branch=release-configure-secure-access-pipeline-resources/)
 
 Ensure you have all the necessary resources and access to Azure DevOps before starting the course.
 
