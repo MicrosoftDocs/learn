@@ -21,6 +21,7 @@ abstract: |
 prerequisites: |
   - None
 iconUrl: /training/achievements/generic-trophy.svg
+hidden: true
 levels:
   - intermediate
 roles:
@@ -55,7 +56,6 @@ units:
 - learn.wwl.extend-pipeline-use-multiple-templates.remove-plain-text-secrets
 - learn.wwl.extend-pipeline-use-multiple-templates.restrict-agent-logging
 - learn.wwl.extend-pipeline-use-multiple-templates.identify-conditionally-remove-script-tasks
-- learn.wwl.extend-pipeline-use-multiple-templates.learning-lab-extend-pipeline-use-multiple-templates
 - learn.wwl.extend-pipeline-use-multiple-templates.knowledge-check
 - learn.wwl.extend-pipeline-use-multiple-templates.summary
 badge:

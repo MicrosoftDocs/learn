@@ -1,62 +1,37 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+Separate YAML pipeline files in multiple repositories, projects, or templates are essential to help improve Azure DevOps security.
 
-    Goal: orient the learner to the area covered in this module
+Implementing nested templates and tokens, sensitive information such as credentials, secrets, and other configuration settings help abstract the main deployment pipeline and store it in a more secure location. This approach helps to limit the exposure of sensitive information to unauthorized users, reduce the risk of data breaches and prevent unauthorized access to critical resources.
 
-    Heading: none
+In addition, by separating the pipeline configuration into smaller, more manageable pieces, it's easier to manage changes and version control, which can help to prevent errors and conflicts that can lead to security issues. By applying the power of nested templates, it's also possible to reduce the duplication in the pipeline configuration, which can help simplify the pipeline's maintenance and management over time.
 
-    Example: "Azure Logic Apps let you automate your business processes and run them in the cloud."
+In this module, learners can work with Azure DevOps to create nested templates and configure pipelines to use tokenization while also learning to secure pipelines and protect their organization's sensitive information.
 
-    Recommended: visual like an image, table, list, etc. that supports the topic sentence(s)
+### Learning objectives
 
-    [Introduction unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-module-introduction-format)
--->
-TODO: add your topic sentences(s)
-TODO: add a visual element
+After completing this module, students and professionals can:
 
-<!-- 2. Scenario -----------------------------------------------------------------------------------------
+- Create nested templates.
+- Rewrite the main deployment pipeline.
+- Configure the pipeline and the application to use tokenization.
+- Remove plain text secrets.
+- Restrict agent logging.
+- Identify and conditionally remove script tasks in Azure DevOps.
 
-    Goal: describe the real-world scenario this module will use to illustrate the concepts
+By the end of this module, you have a solid understanding of how to extend a pipeline to use multiple templates, and how to secure pipelines to protect their organization's sensitive information.
 
-    Heading: "## Example scenario"
+### Prerequisites
 
-    Example: "Suppose you work at an athletic shoe company on the marketing team. You're launching a new basketball shoe created by a celebrity athlete. Previous launches resulted in a social media frenzy as people shared stories and photos of themselves wearing their new shoes. The marketing team wants to monitor hundreds of social media sites, blogs, and websites to determine consumer reaction. There will be more data than you can process manually. You would like a cloud-hosted system that automates monitoring, text analytics, database storage, and email notifications."
+You must create an Azure DevOps Organization and a Team Project for some exercises. If you don't have it yet, see:
 
-    Recommended: an image that visualizes the scenario, use the image markdown extension (https://review.docs.microsoft.com/help/contribute/markdown-reference?branch=main#images)
+- [Create an organization - Azure DevOps.](https://docs.microsoft.com/azure/devops/organizations/accounts/create-organization)
+- [Create a project in Azure DevOps.](https://learn.microsoft.com/azure/devops/organizations/projects/create-project)
 
-    Optional: a "scenario video" that visualizes the scenario
+To get the most out of this course, we recommend that you understand Azure DevOps and pipeline management.
 
-    [Scenario guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-scenarios)
-    [Scenario video guidance](TBD)
- -->
-## Example scenario
-TODO: add your scenario
-TODO: add a visual element
+For study recommendations, see:
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------------
+- [Configure secure access to pipeline resources - Introduction.](/training/modules/configure-secure-access-pipeline-resources/1-introduction)
 
-    Goal: List the activities the learner will do in this content. This differs from the title and the learning objectives. The title and the learning objectives are "outcome focused"; that is, they describe the skills the learner will acquire as a result of consuming this content. By contrast, here you should be specific about what the learning will **do** in order to acquire those skills. The format can be either prose or bulleted-list; however, a list will yield better results when transformed into other output types such as PowerPoint.
+Ensure you have all the necessary resources and access to Azure DevOps before starting the course.
 
-    Heading: "## What will we be doing?"
-
-    Example: "Here, you'll create a business workflow using Azure Logic Apps to automate the processing of tweets:
-                * **Launch**: when a new tweet is available
-                * **Process**: determine if the sentiment of the tweet is positive or negative
-                * **Route**: branch based on the sentiment score"
-
- -->
-## What will we be doing?
-TODO: add your activities
-
-<!-- 4. Terminal learning objective ----------------------------------------------------------------------
-
-    Goal: This is a restatement of the module title into a complete sentence. You have more room here to convey the main goal than in a space-limited title. Make it outcome-focused so it describes the main skill the learner will acquire as a result of this training. In other words, it should answer the question: "what is the key thing the learner will be able to do as a result of consuming this training?"
-
-    Heading: "## What is the main goal?"
-
-    Example: "By the end of this session, you'll be able to create workflows which route and process data using Azure Logic Apps and its built-in connectors."
-
- -->
-## What is the main goal?
-By the end of this session, you'll be able to (TODO)
-
-<!-- Do **not** include any other content like learning objectives, prerequisites, unit summary, "next unit" lead-in, or references. -->
+Let's begin!
