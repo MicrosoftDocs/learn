@@ -19,4 +19,6 @@ To create your Log Analytics workspace, configure the following parameters:
    > [!Note]
    > The region must support Log Analytics. You can review the [regions that support Log Analytics](https://azure.microsoft.com/explore/global-infrastructure/products-by-region/). In the **Search for a product** box, enter "Azure Monitor."
 
-- **Pricing**: By default, _pay-as-you-go_ is the pricing tier for your new workspace. Charges incur only after you start collecting data. 
+- **Pricing**: The default pricing tier for a new workspace is _pay-as-you-go_. Charges incur only after you start collecting data. 
+
+   Each Log Analytics workspace in Azure Monitor can have a different pricing tier. You can change the pricing tier for a workspace and also track the changes.

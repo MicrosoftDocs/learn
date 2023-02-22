@@ -18,9 +18,11 @@ In this module, you identified the features and usage cases for Log Analytics in
 
 - Discover how to [analyze and visualize data](/azure/azure-monitor/best-practices-analysis).
 
-- Use the [KQL quick reference](/azure/data-explorer/kql-quick-reference).
+- Explore the [KQL quick reference](/azure/data-explorer/kql-quick-reference).
 
-- Use the [Azure Monitor Logs table reference](/azure/azure-monitor/reference/tables/tables-category).
+- Explore the [Azure Monitor Logs table reference](/azure/azure-monitor/reference/tables/tables-category).
+
+- Explore the [Log Analytics REST API reference](/rest/api/loganalytics/).
 
 ## Learn more with self-paced training
 
