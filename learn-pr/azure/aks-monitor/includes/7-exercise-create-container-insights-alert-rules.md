@@ -5,7 +5,7 @@ In this exercise, you’ll enable an alert rule and action group to send you a t
 1. From your AKS cluster, select **Insights**.
 1. At the top of the screen, select **Recommended alerts**. This will display a list of recommended alert rules. 
    
-   :::image type="content" source="../media/image16.png" alt-text="Screenshot to select recommended alerts" border="true":::
+   :::image type="content" source="../media/image16.png" lightbox="../media/image16.png" alt-text="Screenshot to select recommended alerts" border="true":::
 
 2. Locate the alert with the **Rule Name** _Node CPU%_. Click the slider in the **Status** column to change its status to _Enabled_.
 3. Click on the _Node CPU%_ name. This will allow you to view the details of the alert rule. 
@@ -29,7 +29,7 @@ The Node CPU alert will be difficult to simulate for a test application, so enab
 
 1. Locate the alert with the **Rule Name** _Restarting container count_. Click the slider in the **Status** column to change its status to _Enabled_.
 
-   :::image type="content" source="../media/image17.png" alt-text="Screenshot enable restarting container count alert rule"  border="true":::
+   :::image type="content" source="../media/image17.png" lightbox="../media/image17.png" alt-text="Screenshot enable restarting container count alert rule"  border="true":::
    
    Description automatically generated" border="true":::
 
@@ -59,7 +59,7 @@ To test the alert rule, trigger a container restart by stopping the primary proc
    ```
    # command terminated with exit code 137
    ```
-   :::image type="content" source="../media/image18.png" alt-text="Screenshot with output from " border="true":::
+   :::image type="content" source="../media/image18.png" lightbox="../media/image18.png" alt-text="Screenshot with output from " border="true":::
 
 3. Within a minute or so, you should receive a text to the number you specified with a message similar to the following:
 
@@ -70,7 +70,7 @@ To test the alert rule, trigger a container restart by stopping the primary proc
 4. Go to **Alerts** for your cluster to view the fired alert that should now be displayed.
 5. Click on the alert to view its details.
 
-   ![Graphical user interface, application  Description automatically generated](../media/image19.png)
+   :::image type="content" source="../media/image19.png" lightbox="../media/image19.png" alt-text="Graphical user interface, application  Description automatically generated" border="true":::
 
 6. Within a few minutes, you should receive a second text similar to the following. This is because the container restarted to repair the missing process. Azure Monitor then marked the alert as resolved. 
 
