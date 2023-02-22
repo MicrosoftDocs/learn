@@ -27,7 +27,7 @@ quiz:
       explanation: "Correct. Using Azure Arc enabled servers is an option to connect."
     - content: "From an Excel spreadsheet"
       isCorrect: false
-      explanation: "Incorrect. This is not an option to connect."
+      explanation: "Incorrect. This isn't an option to connect."
   - content: "Which resource can Microsoft Defender for Cloud protect in a hybrid environment?"
     choices:
     - content: "Word Documents"
@@ -38,7 +38,7 @@ quiz:
       explanation: "Correct. SQL Databases can be protected by Microsoft Defender for Cloud."
     - content: "Cosmos DB"
       isCorrect: false
-      explanation: "Incorrect. Cosmos DB is not a protection option in a hybrid environment."
+      explanation: "Incorrect. Cosmos DB isn't a protection option in a hybrid environment."
   - content: "Which Cloud provider has a Cloud connector in Security Center?"
     choices:
     - content: "IBM Cloud"
