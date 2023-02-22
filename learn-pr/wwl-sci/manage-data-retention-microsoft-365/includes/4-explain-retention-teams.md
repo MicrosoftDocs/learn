@@ -8,7 +8,7 @@ Teams is a solution with content stored across the different Microsoft 365 servi
 
 - **Emails and files that you use with Teams are not included in retention policies for Teams**. These items require a separate retention policy configured for Exchange locations to protect the group mailbox.
 
-- **Shared channels are only subject to retention in the originating tenant**. Messages in shared channels are stored in a hidden folder in a mailbox that is created in the originator tenant of the channel specifically for this purpose. Unlike private channel messages these shared channels inherit retention settings from the parent channel and don't need designated retention policies.
+- **Shared channels are only subject to retention in the originating tenant**. Messages in shared channels are stored in a hidden folder in a mailbox that is created in the originator tenant of the channel specifically for this purpose. Unlike private channel messages these shared channels inherit retention settings from the parent team and don't need designated retention policies.
 
 Retention policies with Teams locations can retain chats and channel messages in Teams, which are ingested from the original storage location in an Azure Cosmos DB into a hidden folder in the group mailbox. To retain other email messages sent to a Teams retention policy with Exchange locations and the group mailbox in scope is required.
 
