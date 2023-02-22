@@ -4,21 +4,21 @@ It may sound odd that we are going to do this so early in the learning module, b
 
 1. Navigate to your Export Targets and select "Add Export Target". 
 
-    ![Export_Target_Data_Lake](images/Export_Target_Data_Lake.png)
+    ![Export_Target_Data_Lake](../media/Export_Target_Data_Lake.png)
 
 1. Choose the Azure Data Lake Connector. Enter the details of your Container Storage into the form and select "Test Connection". If you get a green light, you are good to then move on. 
 
-    ![Export_Target_Details](images/Export_Target_Details.png)
+    ![Export_Target_Details](../media/Export_Target_Details.png)
 
 1. Select "Streams" in the Left-Hand Menu of CluedIn and Create a New Stream called "Employees"
 
-    ![Employee_Stream](images/Employee_Stream.png)
+    ![Employee_Stream](../media/Employee_Stream.png)
 
     A Stream in CluedIn will allow an end user to setup a Push-based delivery of data to a target. In this case, it will deliver it to one or more Export Targets. 
 
     A stream requires that you provide it with a Filter (Which records you would like to share), an Export Target (where to send it), a projection (What data in those records to share). In addition to this, users can optionally make final transformations or actions on the data to be applied to the data leaving the platform (but will not make any changes to that same data in the CluedIn platform). For example, imagine that you wanted to format the data in a specific way on the way out to a particular target, or you may even want to mask or anonymise certain records values on the way out to a specific target, but not in CluedIn itself. 
 
-    ![Stream_Filter](images/Stream_Filter.png)
+    ![Stream_Filter](../media/Stream_Filter.png)
 
 1. You will want to set a filter using the Conditions on the first tab of your newly created stream with a value of "Property", with a value of "Entity Type" and set the operator to "Equals". In the value for the Entity Type, choose Employee and save. Move to the Export Target tab, in which you will want to choose the Azure Data Lake Connector that you just added. 
 
@@ -27,7 +27,7 @@ It may sound odd that we are going to do this so early in the learning module, b
     >[!NOTE]
     > You will need to manually create the target folder in your Storage Account so that CluedIn has a container to write its data into. 
 
-    ![Choose_Target](images/Choose_Target.png)
+    ![Choose_Target](../media/Choose_Target.png)
 
 1. Create a folder called "mastered" in your Storage Account and then use this exact folder name as the name of your Container name in your new stream. 
 
@@ -40,7 +40,7 @@ It may sound odd that we are going to do this so early in the learning module, b
     >[!NOTE]
     > You can look at the Data Tab to get a preview of the exact data that will be shared downstream. 
 
-    ![Stream_Setup](images/Stream_Setup.png)
+    ![Stream_Setup](../media/Stream_Setup.png)
 
 1. Toggle the Inactive button and your stream will be activated. 
 

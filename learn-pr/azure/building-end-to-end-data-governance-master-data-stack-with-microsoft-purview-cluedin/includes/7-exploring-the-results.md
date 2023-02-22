@@ -2,7 +2,7 @@ With your data now mapped into the CluedIn platform, let's go explore the data i
 
 1. In the search bar up the top of the Studio, search for "Lorain". You will notice that CluedIn will provide some autosuggested search results, but you can just select the search button or press enter to see the results. 
 
-    ![Auto_Search](images/Auto_Search.png)
+    ![Auto_Search](../media/Auto_Search.png)
 
     If you mapped the data like in the previous exercise then you should see one result for Lorain. If you see more than this, please revisit the last part of the exercise as you may be missing an identifier mapped. 
 

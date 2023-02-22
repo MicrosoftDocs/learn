@@ -11,6 +11,7 @@ By the end of this module, you'll be able to:
 
 ## Prerequisites
 
+- An Azure account with an active subscription to complete. If you don't have one, you can follow [this link to create a free subscription](https://azure.microsoft.com/free/).
 - Ability to navigate the Azure portal
 - Familiarity with Azure Data Factory
 - Familiarity with high-level concepts of Microsoft Purview

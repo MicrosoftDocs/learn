@@ -12,23 +12,23 @@ So far in the exercise, we have found that the majority of our records were able
 
 1. In the left hand side menu of CluedIn, select Management -> Deduplication. 
 
-    ![Deduplication_Menu](images/Deduplication_Menu.png)
+    ![Deduplication_Menu](../media/Deduplication_Menu.png)
 
 1. Create a new deduplication project called "Products" and select the Entity Type of "Product". 
 
-    ![Deduplication_Product](images/Deduplication_Product.png)
+    ![Deduplication_Product](../media/Deduplication_Product.png)
 
 1. Give the project a useful description and select "Create".
 
     Under the tab called "Matching Rules", create a new rule called "Match on Name".
 
-    ![Match_On_Name](images/Match_On_Name.png)
+    ![Match_On_Name](../media/Match_On_Name.png)
 
 1. When prompted to provide input, choose the radiobox for 'Property' in which choose the Name of the record. 
 
     It will ask you to choose an comparor, in which we can keep it very simple for now and use the Equals comparetor.
 
-    ![Simple_Matching_Rule](images/Simple_Matching_Rule.png)
+    ![Simple_Matching_Rule](../media/Simple_Matching_Rule.png)
 
 1. Select "Generate Results".
 

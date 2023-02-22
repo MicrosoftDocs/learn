@@ -10,4 +10,4 @@ Refresh your Data Map, in which you should now see a CluedIn Collection on your 
 
 Select the Employees.csv file first, in which you will find that when you select the lineage tab, there is some detailed lineage of the exercise we just took within CluedIn i.e. we can see that Employees.csv was mapped into an Entity Type called /Employee and that it was also exported out to the same Conatiner Storage that it came from in a dolder called Mastered. 
 
-![Purview_Employees](images/Purview_Employees.png)
+![Purview_Employees](../media/Purview_Employees.png)
