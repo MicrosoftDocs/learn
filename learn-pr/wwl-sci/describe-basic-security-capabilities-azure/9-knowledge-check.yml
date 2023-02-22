@@ -31,9 +31,9 @@ quiz:
     - content: "Default DDoS infrastructure protection."
       isCorrect: false
       explanation: "Incorrect. The default DDoS infrastructure-level protection service doesn't provide logging, alerting, or telemetry."
-    - content: "Both DDoS IP Protection and DDoS Network Protection."
+    - content: "DDoS Network Protection."
       isCorrect: true
-      explanation: "Correct. Both DDoS IP Protection and DDoS Network Protection provide advanced capabilities, including logging, alerting, and telemetry."
+      explanation: "Correct. DDoS Network Protection provides the default DDoS infrastructure-level protection plus advanced capabilities, including logging, alerting, and telemetry."
     - content: "Azure Bastion."
       isCorrect: false
       explanation: "Incorrect. Azure Bastion is a service you deploy that lets you connect to a virtual machine using your browser and the Azure portal.  Azure Bastion doesn't provide DDoS protection."
@@ -48,14 +48,14 @@ quiz:
     - content: "Azure Bastion is deployed per virtual machine."
       isCorrect: false
       explanation: "Incorrect. Azure Bastion deployment isn't per virtual machine. Bastion provides secure RDP and SSH connectivity to all of the VMs in the virtual network in which it's provisioned."
-  - content: "An organization has much of its application data in Azure. The security admin wants to use the encryption capabilities in Azure. Which service would the admin use to store the application’s secrets?"
+  - content: "An organization has much of its application data in Azure. The security admin wants a way to create and control the keys used to encrypt the organization's application data. Which service would the admin use?"
     choices:
     - content: "Transparent data encryption."
       isCorrect: false
       explanation: "Incorrect. Transparent data encryption helps protect Azure SQL Database and Azure Data Warehouse against the threat of malicious activity."
     - content: "Secrets management."
       isCorrect: false
-      explanation: "Incorrect. Secrets management is an aspect of Azure Key Vault."
+      explanation: "Incorrect. Secrets management represents a use case for Azure Key Vault, but is not the name of the service in Azure."
     - content: "Azure Key Vault."
       isCorrect: true
-      explanation: "Correct. Azure Key Vault is a centralized cloud service for storing your application secrets."
+      explanation: "Correct. Azure Key Vault is a centralized cloud service that that can be used for secrets management, key management, and certificate management."
