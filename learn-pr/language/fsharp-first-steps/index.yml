@@ -4,7 +4,7 @@ metadata:
   moduleType: standard
   title: "Write your first F# code"
   description: "Set up your F# development environment, write your first line of F# code, and build your first F# application" 
-  ms.date: 07/20/2021
+  ms.date: 02/22/2022
   author: luisquintanilla
   ms.author: luquinta
   ms.topic: interactive-tutorial
