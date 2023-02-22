@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.azure-devops-devtest-labs.use-azure-devops
-title: Use Azure DevOps to manage the application development lifecycle
+title: Scenario 1 - Use Azure DevOps to manage the application development lifecycle
 metadata:
   title: Use Azure DevOps to manage the application development lifecycle
   description: Analyze a scenario that requires sophisticated project management and reporting features.
