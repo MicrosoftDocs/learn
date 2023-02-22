@@ -1,4 +1,4 @@
-Azure Monitor collects log data and stores it in tables. Administrators use Log Analytics in the Azure portal to configure their input data sources and conduct queries.
+Azure Monitor collects log data and stores it in tables. Administrators use Log Analytics in the Azure portal to configure their input data sources and conduct queries for their Azure Monitor logs.
 
 Queries provide insights into system infrastructure, such as assessing system updates and troubleshooting operational incidents. To retrieve and consolidate data in the repository, administrators can create Kusto Query Language (KQL) queries.
 
