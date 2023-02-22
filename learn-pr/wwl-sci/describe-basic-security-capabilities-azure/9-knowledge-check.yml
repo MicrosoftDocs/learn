@@ -58,4 +58,4 @@ quiz:
       explanation: "Incorrect. Secrets management represents a use case for Azure Key Vault, but is not the name of the service in Azure."
     - content: "Azure Key Vault."
       isCorrect: true
-      explanation: "Correct. Azure Key Vault is a centralized cloud service that that can be used for secrets management, key management, and certificate management ."
+      explanation: "Correct. Azure Key Vault is a centralized cloud service that that can be used for secrets management, key management, and certificate management."
