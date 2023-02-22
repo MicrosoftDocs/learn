@@ -72,9 +72,9 @@ Your repository contains a draft of a workflow that you can use as a starting po
 
    :::image type="content" source="../media/6-visual-studio-code-workflow.png" alt-text="Screenshot of Visual Studio Code that shows the location of the workflow definition file.":::
 
-1. On line 14, update the value of the `MODULE_REGISTRY_SERVER` environment variable to your container registry's server name. You copied that name earlier in this exercise. 
+1. On line 18, update the value of the `MODULE_REGISTRY_SERVER` environment variable to your container registry's server name. You copied that name earlier in this exercise. 
 
-   For example, if your registry's login server is *yourregistryname.azurecr.io*, line 14 will look like this:
+   For example, if your registry's login server is *yourregistryname.azurecr.io*, line 18 will look like this:
 
    :::code language="yaml" source="code/6-workflow.yml" range="16-20" highlight="3" :::
 
