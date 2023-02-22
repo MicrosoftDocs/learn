@@ -29,4 +29,4 @@ Once you have the .NET SDK installed, install Visual Studio Code and the Ionide 
 1. In the Extensions view, search for **Ionide for F#**.
 1. Select **Install**.
 
-:::image type="content" source="../media/visual-studio-code-install-ionide-extension.png" alt-text="Screenshot of Visual Studio Code extensions view displaying F# Ionide extension install page.":::
+:::image type="content" source="../media/visual-studio-code-install-ionide-extension.png" alt-text="Screenshot of the Visual Studio Code extensions view that displays the F# Ionide extension install page with a box around the Install button.":::
