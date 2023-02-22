@@ -1,0 +1,60 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-netapp-files-with-vmware-solution.knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: Check your knowledge of Azure NetApp Files.
+  ms.date: 06/18/2021
+  author: b-ahibbard
+  ms.author: anfdocs
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+quiz: 
+  questions: 
+  - content: "Which of the following protocols does Azure NetApp Files not support?"
+    choices: 
+    - content: "NFS"
+      isCorrect: false
+      explanation: "Incorrect. Azure NetApp Files supports NFS, SMB, and dual-protocol NFS/SMB volumes."
+    - content: "SMB"
+      isCorrect: false
+      explanation: "Incorrect. Azure NetApp Files supports NFS, SMB, and dual-protocol NFS/SMB volumes."
+    - content: "SAN"
+      isCorrect: true
+      explanation: "Correct. Azure NetApp Files supports NFS, SMB, and dual-protocol NFS/SMB volumes."
+  - content: "Which is of the following options are not used to determine performance in Azure NetApp Files?"
+    choices: 
+      - content: "Performance tier"
+        isCorrect: false 
+        explanation: 
+      - content: "The region of the NetApp subscription"
+        isCorrect: true 
+        explanation: "Correct."
+      - content: "Volume quota"
+        isCorrect: false
+        explanation: "Incorrect. Azure NetApp Files performances is determined by two factors: performance tier and volume size."
+  - content: "Suppose an administrator working with Azure VMware Solution is evaluating attaching Azure NetApp Files. Which scenario would you advise they not use Azure NetApp Files for?"
+    choices:
+    - content: "A small scale workload with fairly constant data needs."
+      isCorrect: true
+      explanation: "Correct. While Azure NetApp Files would server your data needs well, "
+    - content: "A data administrator wants to stop relying on a DR data center."
+      isCorrect: false
+      explanation: "Incorrect. Connecting your Azure VMware Solution to Azure NetApp Files can mitigate your reliance on a DR data center."
+    - content: "A dynamic workload that has shifting needs."
+      isCorrect: false
+      explanation: "Incorrect. You can use Azure NetApp Files to scale storage with your Azure VMware Solution deployment without having to waste Azure VMware Solution CPU and memory costs."
+  - content: "Which of the following is a primary business benefit of Azure NetApp Files attached to Azure VMware Solution?"
+    choices: 
+      - content: "Reduced TCO"
+        isCorrect: true
+        explanation: "Correct."
+      - content: "Combine block and file storage"
+        isCorrect: false
+        explanation: "Incorrect."
+      - content: "Increased ____?"
+        isCorrect: false 
+        explanation: "Incorrect."
