@@ -1,10 +1,22 @@
-To get started with Log Analytics you need to add a workspace.
+When you capture logs and data in Azure Monitor, Azure stores the collected information in a Log Analytics workspace. Your Log Analytics workspace is the basic management environment for Azure Monitor Logs.
 
-:::image type="content" source="../media/create-workspace-f37a5b11.png" alt-text="Screenshot of the log analytics workspace page.":::
+:::image type="content" source="../media/create-workspace-f37a5b11.png" alt-text="Screenshot that shows how to create a Log Analytics workspace in the Azure portal.":::
 
+### Things to know about the Log Analytics workspace
 
- -  Provide a name for the new Log Analytics workspace.
- -  Select a Subscription from the drop-down list.
- -  For Resource Group, select an existing resource group that contains one or more Azure virtual machines.
- -  Select the Location your VMs are deployed to.
- -  The workspace will automatically use the Per GB pricing plan.
+To get started with Log Analytics in Azure Monitor, you need to create your workspace. Each workspace has a unique workspace ID and resource ID. After you create your workspace, you configure your data sources and solutions to store their data in your workspace.
+
+To create your Log Analytics workspace, configure the following parameters:
+
+- **Name**: Provide a name for your new Log Analytics workspace. The name for your workspace must be unique within your resource group. 
+
+- **Subscription**: Specify the Azure Subscription to associate with your workspace.
+
+- **Resource Group**: Specify the resource group to associate with your workspace. You can choose an existing resource group or create a new one. The resource group must contain at least one Azure Virtual Machines instance. 
+
+- **Region**: Select the region where you deploy your virtual machines.
+
+   > [!Note]
+   > The region must support Log Analytics. You can review the [regions that support Log Analytics](https://azure.microsoft.com/explore/global-infrastructure/products-by-region/). In the **Search for a product** box, enter "Azure Monitor."
+
+- **Pricing**: By default, _pay-as-you-go_ is the pricing tier for your new workspace. Charges incur only after you start collecting data. 

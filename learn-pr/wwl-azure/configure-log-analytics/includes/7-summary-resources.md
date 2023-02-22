@@ -8,6 +8,8 @@ In this module, you identified the features and usage cases for Log Analytics in
 
 - Explore the [Kusto Query Language (KQL)](/azure/data-explorer/kusto/query/).
 
+- Create a [Log Analytics workspace (Azure portal, PowerShell, the Azure CLI, or Azure Resource Manager (ARM) template)](/azure/azure-monitor/logs/quick-create-workspace).
+
 - Get started with [log queries in Azure Monitor](/azure/azure-monitor/logs/get-started-queries).
 
 - Get started with [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial).
