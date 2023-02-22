@@ -1,3 +1,4 @@
+
 Before you create a virtual network gateway for your virtual network, you first need to create the gateway subnet. The gateway subnet is part of the virtual network IP address range that you specify when you configure your virtual network. There are a few requirements for creating the gateway subnet, including identifying your virtual network gateway IP addresses before you start the creation process.
 
 ### Things to know about the gateway subnet

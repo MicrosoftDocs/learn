@@ -17,24 +17,24 @@ quiz:
   questions:
   - content: 'Which of the following might be a way to improve performance of an application on an N-tier architecture, while keeping costs optimized?'
     choices:
-    - content: 'Deploy larger virtual machines to each tier.'
+    - content: Deploy larger virtual machines to each tier.
       isCorrect: false
-      explanation: 'While increasing the size of virtual machines may improve performance, it does not minimize costs. As the load drops, the virtual machines remain the same size and your costs do not decrease.'
+      explanation: While increasing the size of virtual machines may improve performance, it doesn't minimize costs. As the load drops, the virtual machines remain the same size and your costs don't decrease.
     - content: 'Use autoscaling to handle fluctuations in load.'
       isCorrect: true
-      explanation: 'This is a good way to minimize your costs. As load increases or decreases, your compute resources can adjust with them, ensuring your costs are optimized to your load.'
-    - content: 'Place your application behind a load balancer.'
+      explanation: Autoscaling is a good way to minimize your costs. As load increases or decreases, your compute resources can adjust with it, ensuring your costs are optimized to your load.
+    - content: Place your application behind a load balancer.
       isCorrect: false
-      explanation: 'Placing an application behind a load balancer alone does not have a direct impact on performance or costs.'
+      explanation: Placing an application behind a load balancer alone doesn't have a direct effect on performance or costs.
 
   - content: 'Which of the following actions would improve the security of an application?'
     choices:
-    - content: 'Restrict access to your data tier from the internet.'
+    - content: Restrict access to your data tier from the internet.
       isCorrect: true
-      explanation: 'Isolating access to your data tier is a recommended way to improve the security of your application.'
-    - content: 'Allow remote administration of your application tier servers from the internet.'
+      explanation: Isolating access to your data tier is a recommended way to improve the security of your application.
+    - content: Allow remote administration of your application tier servers from the internet.
       isCorrect: false
-      explanation: 'Opening up access to the internet for remote administration increases the ability for malicious activity against your systems, and is not recommended.'
-    - content: 'Add a caching technology between your application and data tiers.'
+      explanation: Opening up access to the internet for remote administration isn't recommended. It increases the ability for malicious activity against your systems.
+    - content: Add a caching technology between your application and data tiers.'
       isCorrect: false
-      explanation: 'Adding a caching technology to your application can help improve performance, but does not have a direct impact on the security of your application.'
+      explanation: Adding a caching technology to your application can help improve performance, but doesn't have a direct effect on the security of your application.

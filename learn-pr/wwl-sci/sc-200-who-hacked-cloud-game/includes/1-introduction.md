@@ -1,3 +1,4 @@
+
 # Test your skills by playing Who Hacked?
 
 <!--- Removing image for now
@@ -15,4 +16,3 @@ Apply what you’ve learned in a fun and interactive mystery game. Level-up your
 ## How to play
 
 The *How to Play* video introduces players to the stories and concepts of how the game is played. [HowToPlayVideo](https://aka.ms/WhoHacked_HowToPlay)
-

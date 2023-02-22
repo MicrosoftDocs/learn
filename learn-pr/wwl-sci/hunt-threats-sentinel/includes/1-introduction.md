@@ -19,7 +19,7 @@ After completing this module, you'll be able to:
 To get the best learning experience from this module, you should have the following:
 
 - Familiarity with security operations in an organization.
-- Basic experience with Azure services.
+- Basic experience with configuring Azure services, specifically Azure Policy.
 - Basic knowledge of operational concepts such as monitoring, logging, and alerting.
 - Basic Microsoft Sentinel functionality.
 - Access to a Microsoft Azure subscription for exercise tasks.

@@ -1,3 +1,4 @@
+
 The local network gateway typically refers to the on-premises location. To create a local gateway, you provide a name for the site, along with the IP address or FQDN of the on-premises VPN device for the connection. You also specify the IP address prefixes to route through the VPN gateway to the VPN device. The address prefixes you specify are the prefixes located in the on-premises network.
 
 ### Things to know about creating a local network gateway

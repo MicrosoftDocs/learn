@@ -4,19 +4,16 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/18/2023
+  ms.date: 02/21/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/12-knowledge-check.md)]
 quiz:
   title: ""
-
   questions:
   - content: "How can you enable the VPN gateway to work with Azure ExpressRoute?"
     choices:
@@ -29,7 +26,6 @@ quiz:
     - content: "Implement a path-based VPN gateway."
       isCorrect: false
       explanation: "Incorrect. _Path-based_ isn't a valid type of VPN gateway."
-
   - content: "Which implementation decision most influences VPN gateway performance?"
     choices:
     - content: "A route-based VPN gateway."
@@ -41,12 +37,11 @@ quiz:
     - content: "The appropriate Azure VPN Gateway SKU."
       isCorrect: true
       explanation: "Correct. The most significant implementation decision for your VPN gateway performance is selecting the appropriate SKU for your configuration. Performance is measured through **Aggregate Throughput Benchmarks** provided for each Azure VPN Gateway SKU."
-
   - content: "What key piece of information do you need to set up the on-premises VPN gateway?"
     choices:
     - content: "The shared key provided when the site-to-site (S2S) VPN connection was created."
       isCorrect: true
-      explanation: "Correct. The shared key is required to set up the on-premises VPN gateway."    
+      explanation: "Correct. The shared key is required to set up the on-premises VPN gateway."
     - content: "The shared access signature (SAS) key for the recovery services vault."
       isCorrect: false
       explanation: "Incorrect. The SAS key and recovery service vault aren't needed."
