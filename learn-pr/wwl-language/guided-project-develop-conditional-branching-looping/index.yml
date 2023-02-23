@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.guided-project-develop-conditional-branching-looping
+metadata:
+  title: Guided project - Develop conditional branching and looping structures in C#
+  description: "<div|<span style=\"color:rgb(34, 34, 34);font-family:&quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, Verdana;font-size:12px;display:inline !important;\"|Gain experience developing a console app that implements selection and iteration statements to achieve app specifications.</span|  </div|"
+  ms.date: 02/23/2023
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Guided project - Develop conditional branching and looping structures in C#
+summary: Gain experience developing a console app that implements selection and iteration statements to achieve app specifications.
+abstract: |
+  In this module, you'll practice how to:
+  *   Use Visual Studio Code to develop a C# console application that uses a combination of selection and iteration statements to implement logical workflows in accordance with supplied application data and user interactions.
+  *   Evaluate the underlying conditions and make an informed decision when choosing between if-elseif-else and switch statements, and between foreach, for, while, and do iteration statements.
+  *   Scope variables at an appropriate level within an application.
+prerequisites: |
+  *   Experience using Visual Studio Code to develop, build, and run C# console applications that include console I/O and access the methods of .NET classes
+  *   Experience using C# code to evaluate conditional expressions and manage variable scope inside and outside of code blocks
+  *   Experience using if-elseif-else and switch-case statements in C# to match a variable or expression against several possible outcomes
+  *   Experience using foreach, for, do, and while statements in C# to loop through a block of code and access elements of array variables
+iconUrl: /training/achievements/guided-project-develop-conditional-branching-looping.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- dotnet
+- dotnet-framework
+- vs-code
+subjects:
+- development-tools
+units:
+- learn.wwl.guided-project-develop-conditional-branching-looping.introduction
+- learn.wwl.guided-project-develop-conditional-branching-looping.prepare
+- learn.wwl.guided-project-develop-conditional-branching-looping.exercise-build-data-menu-loops
+- learn.wwl.guided-project-develop-conditional-branching-looping.exercise-display-all-array-data
+- learn.wwl.guided-project-develop-conditional-branching-looping.exercise-build-loop-new-array-data
+- learn.wwl.guided-project-develop-conditional-branching-looping.exercise-read-save-array-data
+- learn.wwl.guided-project-develop-conditional-branching-looping.knowledge-check
+- learn.wwl.guided-project-develop-conditional-branching-looping.summary
+badge:
+  uid: learn.wwl.guided-project-develop-conditional-branching-looping.badge
