@@ -3,7 +3,7 @@ There are a few key differences between Azure Policy and **Azure role-based acce
 
 Azure RBAC focuses on managing **user actions** at different scopes. If control of an action is required based on user information, then Azure RBAC is the correct tool to use. Even if an individual has access to perform an action, if the result is a non-compliant resource, Azure Policy still blocks the create or update task.<br>
 
-The combination of Azure RBAC and Azure Policy provides full-scope control in Azure.<br>
+The combination of **Azure role-based access control (Azure RBAC)** and Azure Policy provides full-scope control in Azure.<br>
 
 ## Azure RBAC permissions in Azure Policy
 

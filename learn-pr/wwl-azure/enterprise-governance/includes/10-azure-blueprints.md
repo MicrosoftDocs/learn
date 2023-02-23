@@ -1,42 +1,103 @@
 
-Just as a blueprint allows an engineer or an architect to sketch a project's design parameters, Azure Blueprints enables cloud architects and central information technology groups to define a repeatable set of Azure resources that implements and adheres to an organization's standards, patterns, and requirements. Azure Blueprints makes it possible for development teams to rapidly build and stand up new environments with trust they're building within organizational compliance with a set of built-in components -- such as networking -- to speed up development and delivery.
+Just as a blueprint allows an engineer or an architect to sketch a project's design parameters, Azure Blueprints enables cloud architects and central information technology groups to define a repeatable set of Azure resources that implements and adheres to an organization's standards, patterns, and requirements. Azure Blueprints allows development teams to rapidly build and stand up new environments with the trust they're building within organizational compliance with a set of built-in components, such as networking, to speed up development and delivery.
 
-Blueprints are a declarative way to orchestrate the deployment of various resource templates and other artifacts such as:
+Blueprints are a declarative way to orchestrate the deployment of various resource templates and other artifacts, such as:
 
  -  Role Assignments
  -  Policy Assignments
  -  Azure Resource Manager templates
  -  Resource Groups
 
-The Azure Blueprints service is backed by the globally distributed Azure Cosmos DB. Blueprint objects are replicated to multiple Azure regions. This replication provides low latency, high availability, and consistent access to your blueprint objects, regardless of which region Blueprints deploys your resources to.
+The Azure Blueprints service is supported by the globally distributed Azure Cosmos Data Base. Blueprint objects are replicated in multiple Azure regions. This replication provides **low latency**, **high availability**, and **consistent access** to your blueprint objects, regardless of which region Blueprints deploys your resources to.
 
-## How is it different from Resource Manager templates?
+## How is it different from Azure Resource Manager templates?
 
-The service is designed to help with environment setup. This setup often consists of a set of resource groups, policies, role assignments, and Resource Manager template deployments. A blueprint is a package to bring each of these artifact types together and allow you to compose and version that package -- including through a CI/CD pipeline. Ultimately, each is assigned to a subscription in a single operation that can be audited and tracked.
+The service design helps with environment setup. This setup often includes **resource groups**, **policies**, **role assignments**, and **Resource Manager template deployments** assigned to a subscription in a single audited and tracked operation. A blueprint is a package to bring each artifact type together and allows you to compose and version that package into a continuous integration and pipeline.
 
-Nearly everything that you want to include for deployment in Blueprints can be accomplished with a Resource Manager template. However, a Resource Manager template is a document that doesn't exist natively in Azure – each is stored either locally or in source control. The template gets used for deployments of one or more Azure resources, but once those resources deploy there's no active connection or relationship to the template.
+Nearly everything that you want to include for deployment in Blueprints is also with a Resource Manager template. However, a Resource Manager template is a document that doesn't exist natively in Azure – it's stored either locally or in source control. The template gets used for deployments of one or more Azure resources, but once those resources deploy, there's no active connection or relationship to the template.
 
-With Blueprints, the relationship between the blueprint definition (what should be deployed) and the blueprint assignment (what was deployed) is preserved. This connection supports improved tracking and auditing of deployments. Blueprints can also upgrade several subscriptions at once that are governed by the same blueprint.
+Blueprints save the relationship between the blueprint definition and the blueprint assignment. This connection supports improved tracking and auditing of deployments. Blueprints can upgrade several subscriptions governed by the exact blueprint.
 
 There's no need to choose between a Resource Manager template and a blueprint. Each blueprint can consist of zero or more Resource Manager template artifacts. This support means that previous efforts to develop and maintain a library of Resource Manager templates are reusable in Blueprints.
 
 ## How it's different from Azure Policy
 
-A blueprint is a package or container for composing focus-specific sets of standards, patterns, and requirements related to the implementation of Azure cloud services, security, and design that can be reused to maintain consistency and compliance.
+A blueprint is a package or container for composing focus-specific standards, patterns, and requirements for implementing Azure cloud services, security, and design reused to maintain consistency and compliance.
 
-A policy is a default allow and explicit deny system focused on resource properties during deployment and for already existing resources. It supports cloud governance by validating that resources within a subscription adhere to requirements and standards.
+An Azure policy is a **default allow** and **explicit deny** system focused on resource properties during deployment and for existing resources. It supports cloud governance by validating that help within a subscription adhere to requirements and standards.
 
-Including a policy in a blueprint enables the creation of the right pattern or design during assignment of the blueprint. The policy inclusion makes sure that only approved or expected changes can be made to the environment to protect ongoing compliance to the intent of the blueprint.
+Including an Azure policy in a blueprint enables the creation of the correct pattern or design during the assignment of the blueprint. The policy inclusion ensures that only **approved** or **expected changes** can be made to the environment to protect ongoing compliance with the intent of the blueprint.
 
-A policy can be included as one of many artifacts in a blueprint definition. Blueprints also support using parameters with policies and initiatives.
+An Azure policy is available as one of many artifacts in a blueprint definition. Blueprints also support using parameters with **policies** and **initiatives**.
 
-## Example
+## Blueprint definition
 
-The following example illustrates the power of Azure Blueprints to deploy a complex solution and secure it.
+A blueprint is composed of ***artifacts***. Azure Blueprints currently supports the following resources as artifacts:
 
-## Azure Security and Compliance Blueprint: PaaS Web Application for PCI DSS
+:::row:::
+  :::column:::
+    **Resource**
+  :::column-end:::
+  :::column:::
+    **Hierarchy options**
+  :::column-end:::
+  :::column:::
+    **Description**
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Resource Groups
+  :::column-end:::
+  :::column:::
+    Subscription
+  :::column-end:::
+  :::column:::
+    Create a new resource group for use by other artifacts within the blueprint. These placeholder resource groups enable you to organize resources exactly how you want them structured and provide a scope limiter for included policy and role assignment artifacts and ARM templates.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    ARM template
+  :::column-end:::
+  :::column:::
+    Subscription, Resource Group
+  :::column-end:::
+  :::column:::
+    Templates, including nested and linked templates, are used to compose complex environments. Example environments: a SharePoint farm, Azure Automation State Configuration, or a Log Analytics workspace.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Policy Assignment
+  :::column-end:::
+  :::column:::
+    Subscription, Resource Group
+  :::column-end:::
+  :::column:::
+    Allows assignment of a policy or initiative to the subscription the blueprint is assigned to. The policy or initiative must be within the scope of the blueprint definition location. If the policy or initiative has parameters, these parameters are assigned at the creation of the blueprint or during blueprint assignment.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Role Assignment
+  :::column-end:::
+  :::column:::
+    Subscription, Resource Group
+  :::column-end:::
+  :::column:::
+    Add an existing user or group to a built-in role to make sure the right people always have the right access to your resources. Role assignments can be defined for the entire subscription or nested to a specific resource group included in the blueprint.
+  :::column-end:::
+:::row-end:::
 
- -  This Azure Security and Compliance Blueprint Automation provides guidance for the deployment of a Payment Card Industry Data Security Standards (PCI DSS 3.2) compliant platform as a service (PaaS) environment suitable for the collection, storage, and retrieval of cardholder data.
- -  This Azure Security and Compliance Blueprint Automation automatically deploys a PaaS web application reference architecture with pre-configured security controls to help customers achieve compliance with PCI DSS 3.2 requirements. The solution consists of Azure Resource Manager templates and PowerShell scripts that guide resource deployment and configuration.
- -  This Blueprint uses Azure Resource Manager, Bastion Host, App Service Environment, Azure Web App, Network Security Groups, Subnets, Azure DNS, Azure Load Balancer, Azure encryption, Azure Storage, Azure SQL DB, Identity Management, Azure Key Vault, Microsoft Defender for Cloud, Azure Application Gateway, Azure Monitor logs, Azure Monitor, Azure Automation, and Application Insights.
- -  This Azure Security and Compliance Blueprint Automation is comprised of JSON configuration files and PowerShell scripts that are handled by Azure Resource Manager's API service to deploy resources within Azure.
+
+## Blueprint definition locations
+
+When creating a blueprint definition, you'll define where the blueprint is saved. Blueprints can be saved to a **management group** or **subscription** that you have **Contributor access** to. If the location is a management group, the blueprint is available to assign to any child subscription of that management group.
+
+## Blueprint parameters
+
+Blueprints can pass parameters to either a **policy/initiative** or an **ARM template**. When adding either ***artifact***to a blueprint, the author decides to provide a defined value for each blueprint assignment or to allow each blueprint assignment to provide a value at assignment time. This flexibility provides the option to define a pre-determined value for all uses of the blueprint or to enable that decision to be made at the time of assignment.
+
+> [!NOTE]
+> Assigning a blueprint definition to a management group means the assignment object exists in the management group. The deployment of artifacts still targets a subscription. To perform a management group assignment, the **Create** Or **Update REST API** must be used, and the request body must include a value for **properties.scope** to define the target subscription.
