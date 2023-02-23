@@ -981,6 +981,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/react-to-state-changes-using-event-grid/6-summary.yml",                      
+      "redirect_url": "/training/modules/react-to-state-changes-using-event-grid/7-summary",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/deploy-configure-azure-arc-enabled-sql-managed-instance/1-introduction.yml",
       "redirect_url": "/training/modules/deploy-manage-azure-arc-enabled-sql-managed-instance",
       "redirect_document_id": false
