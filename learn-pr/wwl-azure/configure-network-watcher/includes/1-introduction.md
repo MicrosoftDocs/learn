@@ -1,26 +1,23 @@
-You can create complex and flexible setups in Azure that connect many virtual machines (VMs) to meet your needs. Just like in an on-premises network, configuration errors can result in problems that are challenging to troubleshoot. When you have to diagnose network problems in Azure, use Azure Network Watcher.
+Administrators use Azure Network Watcher to monitor, diagnose, and gain insight into their network health and performance. Network Watcher provides monitoring and network diagnostics of metrics and logs data gathered from your monitored network resources.
 
-Suppose you have deployed a VM in Azure, and the VM has network connectivity issues. You want to learn how to troubleshoot and fix the problem so that you can help your colleagues to do the same, if they face similar issues in the future.
-
-Administrators use Network Watcher to monitor, diagnose, and gain insight into their network health and performance with metrics. The elements can be broken down into four areas: monitoring, network diagnostic tools, metrics, and logs. Additionally, Network Watcher provides tools for troubleshooting connection problems.
-
-## Skills measured
-
-Network watcher is part of [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104).
-
-Configure and manage virtual networking (25–30%)
-
-Monitor and troubleshoot virtual networking
-
- -  Configure and use Network Performance Monitor.
- -  Configure Azure Network Watcher.
+In this module, suppose you deploy a virtual machine in Azure, and the machine develops network connectivity issues. You need to troubleshoot the issues and resolve any problems. You decide to use Azure Network Watcher to diagnose the situation and detect configuration errors. You need to create complex and flexible setups in Azure to connect your virtual machines. You want to share your troubleshooting strategy with your colleagues, so they can implement a similar approach for future issues.
 
 ## Learning objectives
 
-In this module, you will learn how to:
+In this module, you learn how to:
 
- -  Identify the features and usage cases for Azure Network Watcher.
- -  Configure diagnostic capabilities like IP Flow Verify, Next Hop, and Network Topology.
+- Identify the features and usage cases for Azure Network Watcher.
+- Configure diagnostic capabilities like IP flow verify, next hop, and network topology.
+
+## Skills measured
+
+The content in the module helps you prepare for [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104). The module covers the following course concept requirements:
+
+Configure and manage virtual networking (25–30%)
+
+- Monitor and troubleshoot virtual networking.
+   - Configure and use Network Performance Monitor.
+   - Configure Azure Network Watcher.
 
 ## Prerequisites
 
