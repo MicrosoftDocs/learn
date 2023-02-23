@@ -2,7 +2,7 @@
 uid: learn.wwl.guided-project-calculate-final-gpa
 metadata:
   title: Guided project - Calculate final GPA
-  description: "<div|<span style=\"color:rgb(34, 34, 34);font-family:&quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, Verdana;font-size:12px;display:inline !important;\"|Gain experience developing an application that will calculate and display results based on given data.</span|  </div|"
+  description: "Guided project - Calculate final GPA"
   ms.date: 02/23/2023
   author: wwlpublish
   ms.author: buzahid
