@@ -1,62 +1,62 @@
-At this point, you should have all resources running and operational as individual technologies. In this part of the learning module, we will be integrating the different pieces together.
+At this point, you should have all resources running and operational as individual technologies. In this part of the learning module, we will be bringing the pieces together.
 
 ## ADLS Gen 2
 
 ## Investigating the data
 
-Download the following zip file [CluedIn.zip] and extract it to your local drive. You will find a few folders here, with 7 files and 6 folders. The folders are representing different sources of data, and the files are representing different sample datasets across common Master Data domains. 
+Download the following zip file [CluedIn.zip](ungodly zip file from the downloads center) and extract it to your local drive. You will find 7 files representing different sample datasets across common Master Data domains. 
 
-### Arca/Companies.csv
+### Companies.csv
 
 Notice in the data, that we have 10 rows of data containing a list of different companies. We have columns for an Id, Name, Website, Address and a Person_Id. 
 
-![Copmanies_CSV_Sample](../media/Copmanies_CSV_Sample.png)
+:::image type="content" source="../media/Copmanies_CSV_Sample.png" alt-text="Screenshot of sample data in Companies.csv.":::
 
 Notice that the addresses of many of the companies are very similar with e.g. "188, Quuen St Brisbane" and "188 queen street brisbane". These addresses are simply fictitous, but we can clearly see that there is a data quality issue that we are hoping to fix. 
 
 The "person_id" column is referring to the identifier of an Employee of which is somewhere within one of the other files and hence we will be wanting to create what CluedIn calls "Edges" or "Relationships" between this column and the column of another Domain. 
 
-### Experian/Contacts.csv
+### Contacts.csv
 
 Notice in the data, that we hav 10 rows of data containing 10 fictitious employees. We have columns for an Id, First_Name, Last_Name, Full_Name, Email, Job. 
 
-![Contacts_CSV_Sample](../media/Contacts_CSV_Sample.png)
+:::image type="content" source="../media/Contacts_CSV_Sample.png" alt-text="Screenshot of sample data in Contacts.csv.":::
 
 We can also clearly see that the Job column has a data quality issue in it where we are receiving data that has different ways to spell the different Job Titles of the employees. 
 
 For the learning module, pay particular attention to Lorain Andrzej, as, as we start to look through the other files, there is no a single identifier that we can use to stitch her record together consistently. Most notable, notice her email address ends with "@wtb.gov.au" and she has an Id value of "1".
 
-### Experian/ContactsAddLater.csv
+### ContactsAddLater.csv
 
 This file contains more employees, but contains some of the same data quality issues that are present on the Contacts.csv file. 
 
-![ContactsAddLater_CSV_Sample](../media/ContactsAddLater_CSV_Sample.png)
+:::image type="content" source="../media/ContactsAddLater_CSV_Sample.png" alt-text="Screenshot of sample data in ContactsAddLater.csv.":::
 
-### Navision/Products.csv
+### Products.csv
 
 Notice in the data, we have 10 rows of data containing 10 fictitious products. We have columns for a SKU, Name and Size. One thing to notice as you look across the other Products.csv file from YellowSystems (under the YellowSystems folder) is that there is no Identifier that can be used to uniquely stitch the products together and we will need to use a fuzzy merging approach later in the exercise. 
 
-![Navision_Products_CSV_Sample](../media/Navision_Products_CSV_Sample.png)
+:::image type="content" source="../media/Navision_Products_CSV_Sample.png" alt-text="Screenshot of sample data in Products.csv.":::
 
 ### YellowSystems/Products.csv
 
-Notice that we have 10 rows of data containing the same 10 fictitious products mentioned in the Products.csv file under the Navision folder. However we can see that we don't have a SKU column that we may have been able to use to stitch the products together. Instead we have columns for an ItemId, Name and CompanyId. Most likely, we can use the CompanyId to connect to the companies mentiond in the Companies.csv above. 
+Notice that we have 10 rows of data containing the same 10 fictitious products mentioned in the Products.csv file under the Navision folder. However we can see that we don't have a SKU column that we may have been able to use to stitch the products together. Instead we have columns for an ItemId, Name and CompanyId. Most likely, we can use the CompanyId to connect to the companies mentiond in the Companies.csv above.
 
-![YellowSystems_Products_CSV_Sample](../media/YellowSystems_Products_CSV_Sample.png)
+:::image type="content" source="../media/YellowSystems_Products_CSV_Sample.png" alt-text="Screenshot of sample data in the YellowSystems Products.csv.":::
 
-### Salesforce/Employees.csv
+### Employees.csv
 
 Notice in this file that we have the same 10 employees however we do have very different identifiers, column names and details. We have columns for FName, LName, Full, Email, Person_Id. If we take a look at Lorain Andrzej in this file, unfortunately we don't have an Identifiter of "1" or an email that ends in "wtb.gov.au" but rather we could assume that the email column and the person_id column could both be used to uniquely identify these employees. 
 
-![Salesforce_Employees_CSV_Sample](../media/Salesforce_Employees_CSV_Sample.png)
+:::image type="content" source="../media/Salesforce_Employees_CSV_Sample.png" alt-text="Screenshot of sample data in Employees.csv.":::
 
 We can also see that the names of the columns, although similar to those in the Contacts.csv and ContactsAddLater.csv, that they are different. If we were to not address this, it would most likely lead to some quite confused downstream users of the data. 
 
-### Xero/Persons.csv
+### Persons.csv
 
 Finally, notice in the file that we have the same 10 employees however we once again have different identifiers, column names, and details. We have columns for Id, First, Last, Email, Full_Name, Gender, IP_Address and PID. 
 
-![Xero_Persons_CSV_Sample](../media/Xero_Persons_CSV_Sample.png)
+:::image type="content" source="../media/Xero_Persons_CSV_Sample.png" alt-text="Screenshot of sample data in Persons.csv.":::
 
 Once again, if we look at Lorain, we can see that this time her email ends with "yahoo.com". However we can see that she does have an identifier of "1" and a column called "pid" that has a value that we did see in the Employees.csv file above. It is most likely that we could use different identifiers from each file to stitch this together - however on the surface that would be quite a tricky SQL statement or Phython script to create. 
 
@@ -64,7 +64,7 @@ Once again, if we look at Lorain, we can see that this time her email ends with 
 
 Navigate to the Storage Account that you created in the earlier part of the module and create a new folder called "Raw" to simulate that this is where Azure Data Factory would dump the data from operational systems on a regular basis. Navigate to your Container Storage in the left hand side menu of which you will be taken to a list of filesystems. If you don't already have a filesystem, create a new one called "cluedintrial". Navigate inside the filesystem and create your "Raw" folder. Inside the "Raw" folder, Create subfolders for the folders in the CluedIn.zip file e.g. Arca. To keep things simple, we will manually upload the data in the CluedIn.zip file above using the "Upload" button into their respective folder. 
 
-![Upload_Data_To_Storage_Account](../media/Upload_Data_To_Storage_Account.png)
+:::image type="content" source="../media/Upload_Data_To_Storage_Account.png" alt-text="Screenshot of the sample data being uploaded in ADLS Gen2":::
 
 ## Microsoft Purview
 
