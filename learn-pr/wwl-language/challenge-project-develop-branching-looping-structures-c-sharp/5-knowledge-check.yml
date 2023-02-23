@@ -12,7 +12,7 @@ metadata:
 durationInMinutes: 3
 quiz:
   questions:
-  - content: "You are developing an application in Visual Studio Code. You save changes to your Program.cs file, and then run the `dotnet build` command in the Terminal panel. What information can you find in reported Error and Warning messages?"
+  - content: "A developer is writing an application in Visual Studio Code. They save changes to their Program.cs file, and then run the `dotnet build` command in the Terminal panel. What information can they find in reported Error and Warning messages?"
     choices:
     - content: "one or more suggestions for how to fix any syntax issues detected"
       isCorrect: false
@@ -23,14 +23,14 @@ quiz:
     - content: "links to help documentation"
       isCorrect: false
       explanation: "Incorrect. Error and Warning messages do not include links to documentation."
-  - content: "If you are going to create a iteration statement, under which condition is it better create a `while` statement rather than a `do` statement?"
+  - content: "If a developer is going to create a iteration statement, under which condition is it better create a `while` statement rather than a `do` statement?"
     choices:
-    - content: "when, prior to the iteration code block, your code doesn't know the values for the expression that will be evaluated by iteration statement"
+    - content: "when, prior to the iteration code block, the code doesn't know the values for the expression that will be evaluated by iteration statement"
       isCorrect: false
       explanation: "Incorrect. A `do` statement would work well in this situation."
-    - content: "when, prior to the iteration code block, your code does know the values for the expression that will be evaluated by iteration statement"
+    - content: "when, prior to the iteration code block, the code does know the values for the expression that will be evaluated by iteration statement"
       isCorrect: true
-      explanation: "Correct. When your code is able to evaluate the loop expression prior to the loop, a `while` statement allows your code to implement 0 iterations."
-    - content: "when you have an outer `do` or `while` loop and need to create one or more inner loops that use a `do` or `while` statement"
+      explanation: "Correct. When the code is able to evaluate the loop expression prior to the loop, a `while` statement allows the code to implement 0 iterations."
+    - content: "when the developer has an outer `do` or `while` loop and needs to create one or more inner loops that use a `do` or `while` statement"
       isCorrect: false
       explanation: "Incorrect. Nesting of loops is not a factor in this decision."
