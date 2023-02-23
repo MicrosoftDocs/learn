@@ -2,7 +2,7 @@ Trial restores are a key component of any disaster recovery strategy.
 
 You want to familiarize yourself with the steps to restore a backed-up database to a specific point in time, in case it becomes necessary. You also want to investigate how long a restore operation takes. That way, you can plan for this time in your guidance for your organization.
 
-Here, you'll perform a restore from automated Azure SQL Database backups.
+Let's perform a restore from automated Azure SQL Database backups.
 
 ## Confirm that backups are active
 

@@ -2,7 +2,7 @@ Companies need to keep backups for months or years for regular administrative pr
 
 For example, data protection laws in at least one country/region where your retail organization operates require you to keep records of all customer transactions for five years. You need to ensure that you keep the data in Azure SQL Database, which underpins your enterprise resource planning (ERP) system, for at least that long.
 
-Here, you'll learn about long-term retention policies in Azure SQL Database and how to use them when you need backups kept for more than 35 days.
+Now, let's learn about long-term retention policies in Azure SQL Database and how to use them when you need backups kept for more than 35 days.
 
 ## Long-term backup retention policies
 
@@ -12,7 +12,7 @@ For these requirements, use the long-term retention (LTR) feature. This way, you
 
 ## How SQL Database long-term retention works
 
-LTR takes the backups that are automatically made for point-in-time recovery and copies them to different blobs. This copy operation runs in the background at low priority to ensure that there's no effect on performance.
+The LTR feature takes the backups that it has automatically made for point-in-time recovery and copies them to different blobs. This copy operation runs in the background at low priority to ensure that there's no effect on performance.
 
 These backups don't happen by default. You must configure a policy to start and manage them.
 
@@ -20,7 +20,7 @@ These backups don't happen by default. You must configure a policy to start and 
 
 The long-term retention policy sets how frequently an automatic backup will be copied for long-term retention. You specify this frequency with letters:
 
-- `W`: Specifies that one full back up each week will be copied to long-term retention.
+- `W`: Specifies that one full backup each week will be copied to long-term retention.
 - `M`: Specifies that one full backup from the first week of each month will be copied to long-term retention.
 - `Y`: Specifies that one full backup each year will be copied to long-term retention.
 
