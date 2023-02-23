@@ -6,7 +6,7 @@ metadata:
   description: "Multi-tenant SaaS applications often contain tenants of vastly differing sizes. Azure Cosmos DB for PostgreSQL makes it easy to isolate large tenants to reduce resource contention and improve overall quality of service."
   ms.date: 11/29/2022
   author: kylebunting
-  ms.author: {{msUser}}
+  ms.author: jonels
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 4

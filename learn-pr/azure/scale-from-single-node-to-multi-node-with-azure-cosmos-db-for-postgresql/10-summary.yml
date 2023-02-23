@@ -7,7 +7,7 @@ metadata:
   description: "In this module, you learned how to scale a database from a non-distributed, single-node cluster to a distributed, multi-node cluster using Azure Cosmos DB for PostgreSQL."
   ms.date: 12/22/2022
   author: sadukie
-  ms.author: {{msUser}}
+  ms.author: jonels
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 2

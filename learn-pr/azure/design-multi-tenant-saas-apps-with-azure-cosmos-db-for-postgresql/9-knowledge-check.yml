@@ -6,7 +6,7 @@ metadata:
   description: "Test your understanding of scaling and monitoring multi-tenant SaaS application databases using Azure Cosmos DB for PostgreSQL."
   ms.date: 11/29/2022
   author: kylebunting
-  ms.author: {{msUser}}
+  ms.author: jonels
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 3

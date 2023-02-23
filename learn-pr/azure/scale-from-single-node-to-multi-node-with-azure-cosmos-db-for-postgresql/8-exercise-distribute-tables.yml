@@ -7,7 +7,7 @@ metadata:
   description: "Distribute data in Azure Cosmos DB for PostgreSQL with minimal impact to data in use."
   ms.date: 12/22/2022
   author: sadukie
-  ms.author: {{msUser}}
+  ms.author: jonels
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 20

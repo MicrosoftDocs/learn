@@ -5,7 +5,7 @@ metadata:
   description: "Azure Cosmos DB for PostgreSQL is the ideal database from hosting PostgreSQL at any scale. The distributed architecture allows multi-tenant SaaS application providers to easily scale from a single-node to a multi-node distributed cluster as the number of tenants grows."
   ms.date: 11/29/2022
   author: kylebunting
-  ms.author: {{msUser}}
+  ms.author: jonels
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 title: design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql
