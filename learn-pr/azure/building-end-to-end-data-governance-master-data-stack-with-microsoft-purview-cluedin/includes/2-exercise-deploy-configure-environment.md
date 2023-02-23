@@ -1,29 +1,48 @@
-To provide an end to end data technology stack, we'll be creating many resources and integrating them together. In this exercise, you'll deploy some foundational services that you can use in the future exercises. This exercise includes setting up Azure Data Factory, Microsoft Purview, CluedIn, a Service Principal, and an Azure Storage account. If you have these components already, you can move on to the next section. 
+To provide an end to end data technology stack, we'll be creating many resources and integrating them together to create a flow of data. This exercise includes setting up Azure Data Factory, Microsoft Purview, CluedIn, a Service Principal, and an Azure Storage account. If you have these components already, you can move on to the next section. 
 
 >[!TIP]
 >Even if you already have a security principal, confirm you have the correct permissions in the [set up authentication using a service principal](#set-up-authentication-using-service-principal) section.
 
 ## Create an Azure Data Factory
 
-We'll be using Azure Data Factory as our mechanism to pull data from source systems into the Storage Accounts, but will also be using it as the mechanism for CluedIn to pull data registered in Microsoft Purview through into CluedIn to be processed.
+We'll be using Azure Data Factory as our mechanism to pull data from source systems into storage accounts, but will also be using it as the mechanism to pull data registered in Microsoft Purview to CluedIn to be processed.
 
-You'll need to create an instance of Azure Data Factory (or bring an existing instance) and you can use the following guide to set up an Azure Data Factory instance:
+If you don't have a data factory instance, you can use the following guide to create one:
 
-1. Launch **Microsoft Edge** or **Google Chrome** web browser. Currently, only Microsoft Edge and Google Chrome web browsers support the Azure Data Factory UI.
+1. Launch a **Microsoft Edge** or **Google Chrome** web browser. Currently, only Microsoft Edge and Google Chrome web browsers support the Azure Data Factory UI.
 1. Go to the [Azure Data Factory Studio](https://adf.azure.com) and choose the **Create a new data factory** radio button.
-1. You can use the default values to create directly, or enter a unique name and choose a preferred location and subscription to use when creating the new data factory.
+1. You can use the default values to create an instance, or enter a unique name and choose a preferred location and subscription and select **Create**.
 
    :::image type="content" source="../media/create-azure-data-factory.png" alt-text="Shows a screenshot of the Azure Data Factory Studio page to create a new data factory.":::
 
 ## Create a Microsoft Purview instance
 
-You'll need to bring your own Microsoft Purview instance to the learning module, which can be installed using the following guide: https://learn.microsoft.com/en-us/azure/purview/create-microsoft-purview-portal
+You'll need to bring your own Microsoft Purview instance to the learning module, or you can create one using these steps:
 
-:::image type="content" source="../media/Create-Purview-Account-Azure-Portal.png" alt-text="Screenshot of the Create Microsoft Purview account page in the Azure portal.":::
+
+1. Search for **Microsoft Purview** in the [Azure portal](https://portal.azure.com) and select **Create** to create a new Microsoft Purview account.
+
+   :::image type="content" source="../media/select-create.png" alt-text="Screenshot of the Microsoft Purview accounts page with the create button highlighted in the Azure portal.":::
+  
+      Or instead, you can go to the marketplace, search for **Microsoft Purview**, and select **Create**.
+
+     :::image type="content" source="../media/search-marketplace.png" alt-text="Screenshot showing Microsoft Purview in the Azure Marketplace, with the create button highlighted.":::
+
+1. On the new Create Microsoft Purview account page under the **Basics** tab, select the Azure subscription, resource group, enter a name, and choose a location.
+
+    :::image type="content" source="../media/Create-Purview-Account-Azure-Portal.png" alt-text="Screenshot of the Create Microsoft Purview account page in the Azure portal.":::
+
+    >[!TIP]
+    > The list shows only locations that support the Microsoft Purview governance portal. The location you choose will be the region where your Microsoft Purview account and meta data will be stored. Sources can be housed in other regions.
+
+    To learn more about resource groups, see our article on [using resource groups to manage your Azure resources](../azure-resource-manager/management/manage-resource-groups-portal.md#what-is-a-resource-group).
+
+1. Select **Review & Create**, and then select **Create**.
 
 ## Create a service principal
 
-You'll also need to set up a Service Principal in order to generate the right credentials for all the different components to talk with each other.
+You'll also need to set up a Service Principal to generate the right credentials for all the components to talk with each other.
+
 To create a new service principal:
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
@@ -40,8 +59,6 @@ To create a new service principal:
 
 1. On the new service principal page, copy the values of the **Display name** and the **Application (client) ID** to save for later.
 
-   The application ID is the `client_id` value in the sample code.
-
    :::image type="content" source="../media/application-id.png" alt-text="Screenshot of the application page in the portal with the Application (client) ID highlighted.":::
 
 To use the service principal (application), you need to know the service principal's password that can be found by:
@@ -56,9 +73,9 @@ To use the service principal (application), you need to know the service princip
 
    :::image type="content" source="../media/client-secret.png" alt-text="Screenshot showing a client secret.":::
 
-### Set up authentication using service principal
+## Set up authentication using service principal
 
-Once the new service principal is created, you need to assign the data plane roles of your purview account to the service principal created above. Follow the steps below to assign the correct role to establish trust between the service principal and the Purview account:
+Once the new service principal is created, or if you're bringing your own, you need to assign the data plane roles of your Microsoft Purview account to the service principal:
 
 1. Navigate to your [Microsoft Purview governance portal](https://web.purview.azure.com/resource/).
 1. Select the Data Map in the left menu.
@@ -85,11 +102,11 @@ You can also install CluedIn directly through the Azure Marketplace or Azure por
 
 To install CluedIn, head to the Azure portal and follow the steps below:
 
-1. Type "CluedIn" in your Azure portal and select the application under the Marketplace section.
+1. Search "CluedIn" in your Azure portal and select the application under the Marketplace section.
 
     :::image type="content" source="../media/Create_CluedIn_Azure_Portal.png" alt-text="Screenshot of Azure Marketplace, showing CluedIn Master Data Management.":::
 
-1. This will take you to a form where you'll be asked to choose the type of plan. CluedIn provides a seven-day trial that is cost-free from CluedIn, but will charge for the underlying Azure infrastructure used to install within your environment. You can also choose the "CluedIn Platform" plan that is the hourly based pricing.
+1. This will take you to a form where you'll be asked to choose the type of plan. CluedIn provides a seven-day trial that is cost-free from CluedIn, but will charge for the underlying Azure infrastructure used to install within your environment. You can also choose the **CluedIn Platform** plan that is hourly based pricing.
 
     :::image type="content" source="../media/Choose_CluedIn_Instance.png" alt-text="Screenshot of CluedIn Master Data Management Page, showing the CluedIn Platform option.":::
 
@@ -97,23 +114,19 @@ To install CluedIn, head to the Azure portal and follow the steps below:
 
 1. Choose "Trial Version" from the dropdown and select "Create".
 
-1. Fill in the Subscription and Resource Group you would like to use. You can also create a new Resource Group here if that is preferred. For the region, make sure you choose a region in which you're able to create infrastructure and that you have enough of a quota to spin up the required infrastructure. If you are in doubt, there's a handy PowerShell script that you can run here: https://documentation.cluedin.net/deployment/azure-marketplace/preflight that will tell you if you have enough quota and all required prerequisites before running the installation.
+1. Fill in the Subscription and Resource Group you would like to use. You can also create a new Resource Group here if that is preferred. For the region, make sure you choose a region in which you're able to create infrastructure and that you have enough of a quota to spin up the required infrastructure. If you are in doubt, [there's a handy PowerShell script that you can run](https://documentation.cluedin.net/deployment/azure-marketplace/preflight) that will tell you if you have enough quota and all required prerequisites before running the installation.
 
     >[!NOTE]
     >The Managed Resource Group name is autogenerated for you, there is no need to rename this. Call your Installation Name something that will be easy for you to remember throughout your learning Module.
 
     :::image type="content" source="../media/Fill_CluedIn_Trial_Forn.png" alt-text="Screenshot of CluedIn Master Data Management Page creation form, showing some generic options.":::
 
-1. Select **Next : CluedIn - Organization Setup >** in which you'll then be taken to set the Organization Name, Administrator Email Address, CluedIn Administrator Password, Confirm Password.
+1. Select **Next : CluedIn - Organization Setup >** to set the Organization Name, Administrator Email Address, CluedIn Administrator Password, and Confirm Password. The Organization Name will be the name for your new instance of CluedIn and the subdomain that will be used to access your CluedIn Studio in the browser. Provide an email address that is valid and that you have access to, and provide a strong Password in the CluedIn Administration Password and Confirm password fields.
 
     :::image type="content" source="../media/Fill_CluedIn_Organization_Details.png" alt-text="Screenshot of CluedIn Master Data Management Page organization setup page.":::
 
     >[!NOTE]
     >If you are required to use Single Sign On for your Learning Module then you will need to use the "CluedIn Platform" plan. The Trial does not support SSO setup and uses simple OAuth 2 / JWT authentication.
-
-    The Organization Name won't only act as the Account Name for your new instance of CluedIn, but will also be the subdomain that will be used to access your CluedIn Studio in the browser.
-
-1. Provide an email address that is valid and that you have access to, and provide a strong Password in the CluedIn Administration Password and Confirm password fields. 
 
 1. Select **Next : CluedIn - AKS Setup >** and leave all of the values as the default.
 
@@ -125,9 +138,9 @@ In approximately 15 to 20 minutes, you'll have a created instance of CluedIn and
 
 ## Create an Azure Storage Account
 
-We'll be creating a Storage Account (Container Storage) ADLS Gen2 account to host all of the data used for the module.
+You need an ADLS Gen2 Storage Account to host all of the data used for the module.
 
-You can bring an ADLS Gen2 account you already have or use this guide to create one.
+You can bring an account you already have or use this guide to create one:
 
 1. In the Azure portal, search **Storage account**, select it, and select **Create**.
 
