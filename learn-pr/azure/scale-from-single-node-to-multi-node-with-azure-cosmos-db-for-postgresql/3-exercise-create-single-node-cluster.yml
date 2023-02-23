@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.scale-from-single-node-to-multi-node-with-azure-cosmos-db-for-postgresql.exercise-create-single-node-setup
+uid: learn.scale-from-single-node-to-multi-node-with-azure-cosmos-db-for-postgresql.exercise-create-single-node-cluster
 title: Exercise - Create a single-node cluster in Azure Cosmos DB for PostgreSQL
 metadata:
   unitType: exercise
