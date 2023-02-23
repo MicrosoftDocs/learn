@@ -2,7 +2,7 @@
 uid: learn.azure-netapp-files-with-vmware-solution
 metadata:
   title: Using Azure NetApp Files with Azure VMware Solution
-  description: TK
+  description: This module helps you understand Azure NetApp Files and how to use it with the Azure VMware Solution. 
   ms.date: 02/21/2023
   author: PageWriter-MSFT
   ms.author: b-ahibbard
@@ -40,4 +40,4 @@ units:
 - learn.azure-netapp-files-with-vmware-solution.knowledge-check
 - learn.azure-netapp-files-with-vmware-solution.summary
 badge:
-  uid: learn.azure-netapp-files-with-vmware-solution.badge
+  uid: http://via.placeholder.com/120x120
