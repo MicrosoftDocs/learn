@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.application-security.azure-app-services
+title: Azure App Services
+metadata:
+  title: Azure App Services
+  description: "Azure App Services"
+  ms.date: 02/23/2023
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: azure-interface
+content: |
+  [!include[](includes/7-azure-app-services.md)]

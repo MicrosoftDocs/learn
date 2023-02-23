@@ -4,13 +4,11 @@ title: Review the Microsoft identity platform
 metadata:
   title: Review the Microsoft identity platform
   description: "Review the Microsoft identity platform"
-  ms.date: 09/06/2022
+  ms.date: 02/23/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 7
+  zone_pivot_groups: None
 content: |
   [!include[](includes/2-microsoft-identity-platform.md)]

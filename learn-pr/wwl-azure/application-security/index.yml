@@ -2,8 +2,8 @@
 uid: learn.wwl.application-security
 metadata:
   title: Configure application security features
-  description: "Register your company applications then use Azure security features to configure and monitor secure access to the application."
-  ms.date: 09/06/2022
+  description: "Configure application security features"
+  ms.date: 02/23/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
@@ -27,7 +27,10 @@ products:
 - azure
 - azure-app-configuration
 - azure-app-service
+- azure-web-apps
 - ms-graph
+- microsoft-graph-permissions-api
+- microsoft-identity-platform
 subjects:
 - cloud-security
 units:
@@ -37,7 +40,12 @@ units:
 - learn.wwl.application-security.app-registration
 - learn.wwl.application-security.microsoft-graph-permissions
 - learn.wwl.application-security.managed-identities
-- learn.wwl.application-security.web-app-certificates
+- learn.wwl.application-security.azure-app-services
+- learn.wwl.application-security.app-service-environment
+- learn.wwl.application-security.azure-app-service-plan
+- learn.wwl.application-security.app-service-environment-networking
+- learn.wwl.application-security.availability-zone-support-for-app-service-environments
+- learn.wwl.application-security.app-service-environment-certificates
 - learn.wwl.application-security.demonstration
 - learn.wwl.application-security.knowledge-check
 - learn.wwl.application-security.summary

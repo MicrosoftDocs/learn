@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.application-security.app-service-environment-networking
+title: App Service Environment networking
+metadata:
+  title: App Service Environment networking
+  description: "App Service Environment networking"
+  ms.date: 02/23/2023
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: azure-interface
+content: |
+  [!include[](includes/10-app-service-environment-networking.md)]
