@@ -12,9 +12,9 @@ This doesn't mean that the mastered data will only be provided in this format, b
 
 Microsoft Purview will have the responsibility of scanning the ADLS Gen2 on a regular cadence (for example, every hour) to identify new data sources and delta files. It will also run pre-movement and in-place classification scans to identify possible privacy and governance risks before we move the data downstream.
 
-It's worth mentioning that the data isn't physically stored in Purview, but rather it's a metadata store that holds pointers to where the data is and some standard metadata around those assets.
+It's worth mentioning that the data isn't physically stored in Microsoft Purview, but rather it's a metadata store that holds pointers to where the data is and some standard metadata around those assets.
 
-Microsoft Purview will also provide the end to end lineage of all data movement in the Azure ecosystem, including the lineage that will be built up through CluedIn. In addition to this, Microsoft Purview will be the public platform for end users to discover, request access to, and explore that raw and mastered data assets for insights. It's also assumed that any other technology introduced into the stack at a later point will be writing its lineage into Purview as well.
+Microsoft Purview will also provide the end to end lineage of all data movement in the Azure ecosystem, including the lineage that will be built up through CluedIn. In addition to this, Microsoft Purview will be the public platform for end users to discover, request access to, and explore that raw and mastered data assets for insights. It's also assumed that any other technology introduced into the stack at a later point will be writing its lineage into Microsoft Purview as well.
 
 If an end user requests access to a mastered asset, then (Azure) Data Sharing will be utilized to deliver this data in an appropriate format to the target system of choice. For example: Azure Synapse, Power BI, SQL Server, Files etc.
 

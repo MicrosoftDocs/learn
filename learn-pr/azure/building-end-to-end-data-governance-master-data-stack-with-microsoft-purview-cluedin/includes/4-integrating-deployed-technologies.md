@@ -68,13 +68,13 @@ Navigate to the Storage Account that you created in the earlier part of the modu
 
 ## Microsoft Purview
 
-1. Let's sign in to Microsoft Purview. You can do this by choosing the Purview Account in your resource group and then selecting the Open Purview Studio link. This will open Microsoft Purview in a new tab.
+1. Let's sign in to Microsoft Purview. You can do this by choosing the Microsoft Purview Account in your resource group and then selecting the Open Microsoft Purview Studio link. This will open Microsoft Purview in a new tab.
 
 1. Select your Data Map on the left hand side menu and select Register. Choose ADLS Gen2 from the selection and in the drop-down, select the instance called Data Governance that was created in the previous step. 
 
 1. Next, set up a scan to scan the files every 1 hour and then trigger an initial scan. This will typically take many minutes to scan the files in the ADLS Gen2 instance.
 
-1. After the scan is complete, you should validate that everything was success by making sure that there are 10 assets in your Purview instance.
+1. After the scan is complete, you should validate that everything was success by making sure that there are 10 assets in your Microsoft Purview instance.
 
     >[!NOTE] 
     > A details guide to register your Storage Account in Microsoft Purview and setup a Scan to Run Once over the assets for the learning module is available here: https://learn.microsoft.com/en-us/azure/purview/register-scan-azure-multiple-sources
@@ -83,17 +83,17 @@ Navigate to the Storage Account that you created in the earlier part of the modu
 
     ![Purview_Data_Map](../media/Purview_Data_Map.png)
 
-1. If you search in Purview for Contacts.csv then you should find your assets in Purview.
+1. If you search in Microsoft Purview for Contacts.csv then you should find your assets in Microsoft Purview.
 
     ![Contacts_CSV_Purview](../media/Contacts_CSV_Purview.png)
 
-1. Head over to the settings within Purview and create a Data Factory connection to your Azure Data Factory instance. This will not only allow Purview to create automated lineage for you based off the ADF scheduled pipelines you have for pulling in the data from the source systems into the raw folder on a regular basis, but also for the lineage that CluedIn will create as part of the process of processing the data as well. 
+1. Head over to the settings within Microsoft Purview and create a Data Factory connection to your Azure Data Factory instance. This will not only allow Microsoft Purview to create automated lineage for you based off the ADF scheduled pipelines you have for pulling in the data from the source systems into the raw folder on a regular basis, but also for the lineage that CluedIn will create as part of the process of processing the data as well. 
 
     ![Purview_Azure_Data_Factory](../media/Purview_Azure_Data_Factory.png)
 
-1. Next, you will need to create the credentials in Purview so that CluedIn knows how to authenticate with the data sources when it comes time to copy the data from the Storage Accounts in CluedIn for processing. Create a new Key called "CluedInTrial" and use this to setup the credentials to access your Container Storage. 
+1. Next, you will need to create the credentials in Microsoft Purview so that CluedIn knows how to authenticate with the data sources when it comes time to copy the data from the Storage Accounts in CluedIn for processing. Create a new Key called "CluedInTrial" and use this to setup the credentials to access your Container Storage. 
 
-1. You will also need to setup the right access to CluedIn on the Collections so that they can properly read assets within Purview. Under the Role Assignments, make sure that your Service Principal used for this learning module is a Collection Admin, Data Source Admin, Data Reader.
+1. You will also need to setup the right access to CluedIn on the Collections so that they can properly read assets within Microsoft Purview. Under the Role Assignments, make sure that your Service Principal used for this learning module is a Collection Admin, Data Source Admin, Data Reader.
 
     ![Purview_Collection_Credentials](../media/Purview_Collection_Credentials.png)
 
@@ -107,21 +107,21 @@ Navigate to the Storage Account that you created in the earlier part of the modu
 
     ![CluedIn_Home_Screen](../media/CluedIn_Home_Screen.png)
 
-### Connect CluedIn to Purview
+### Connect CluedIn to Microsoft Purview
 
-1. In your CluedIn Studio, head to the Settings section, under Administration. You will notice that it will ask you to fill in different Purview details, including the Client Id, Client Secret, Tenant Id and Purview Url. For this, you will need to create an Enterprise Application (and you can find a guide to it here: https://learn.microsoft.com/en-us/azure/purview/tutorial-using-rest-apis) in your Azure Active Directory to generate these Client Id and Client Secret. 
+1. In your CluedIn Studio, head to the Settings section, under Administration. You will notice that it will ask you to fill in different Microsoft Purview details, including the Client Id, Client Secret, Tenant Id and Microsoft Purview Url. For this, you will need to create an Enterprise Application (and you can find a guide to it here: https://learn.microsoft.com/en-us/azure/purview/tutorial-using-rest-apis) in your Azure Active Directory to generate these Client Id and Client Secret. 
 
     ![Purview_CluedIn_Settings](../media/Purview_CluedIn_Settings.png)
 
-1. Once you have filled these details in, you will want to toggle on the setting for "Syncing Purview Datasources" and "Poll Purview Datasources". You will also notice a setting called "Search Filter for Datasources". 
+1. Once you have filled these details in, you will want to toggle on the setting for "Syncing Microsoft Purview Datasources" and "Poll Microsoft Purview Datasources". You will also notice a setting called "Search Filter for Datasources". 
 
     ![CluedIn_DataSources_Purview](../media/CluedIn_DataSources_Purview.png)
 
-1. Effectively, CluedIn will now be polling every 60 seconds to find Purview assets that have been tagged with a Glossary Term that matches the filter in "Search Filter for Datasources". You can change this Search filter to something appropriate for you.
+1. Effectively, CluedIn will now be polling every 60 seconds to find Microsoft Purview assets that have been tagged with a Glossary Term that matches the filter in "Search Filter for Datasources". You can change this Search filter to something appropriate for you.
 
 ### Flagging assets that can sync with CluedIn
 
-1. Now with CluedIn talking to Purview, head over the Microsoft Purview and tag all 7 files from the CluedIn.zip with the Glossary Term of "CluedInSource". You will need to wait up to 60 seconds to see the results. 
+1. Now with CluedIn talking to Microsoft Purview, head over the Microsoft Purview and tag all 7 files from the CluedIn.zip with the Glossary Term of "CluedInSource". You will need to wait up to 60 seconds to see the results. 
 
 1. Head to the Datasources section under Integration in CluedIn and you will notice that your 7 files are now showing in CluedIn. However, there will only be the metadata that is actually registered. 
 
