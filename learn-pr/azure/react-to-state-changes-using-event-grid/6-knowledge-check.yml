@@ -16,21 +16,21 @@ quiz:
       choices:
       - content: "A fully managed enterprise message broker on Azure with queues and publish-subscribe topics."
         isCorrect: false
-        explanation: "No. Azure Service Bus is a fully managed enterprise message broker with message queues and publish-subscribe topics." 
+        explanation: "No. Azure Service Bus is a fully managed enterprise message broker." 
       - content: "An Azure service that manages event routing and delivery from many sources and subscribers. "
         isCorrect: true
-        explanation: "Yes. That’s correct. Azure Event Grid supports routing events from several sources to subscribers."
+        explanation: "Yes. Azure Event Grid supports routing events from several sources to subscribers."
       - content: "A big data streaming platform and event ingestion service on Azure."
         isCorrect: false
         explanation: "No. Azure Event Hubs is the big data streaming platform and event ingestion service on Azure."
-    - content: "Which one of these Azure services is supported as an Azure Event Grid event handler? ?"
+    - content: "Which one of these Azure services Azure Event Grid supports as an event handler? ?"
       choices:
         - content: "Azure Stream Analytics"
           isCorrect: false
-          explanation: "No. Azure Stream Analytics is not supported as an event. Some examples of event handlers within Azure are Functions, Event Hubs, Service Bus, Logic Apps."
+          explanation: "No. Azure Event Grid doesn't support Azure Stream Analytics as an event handler. Some examples of event handlers within Azure are Functions, Event Hubs, Service Bus, Logic Apps."
         - content: "Azure SQL Database"
           isCorrect: false
-          explanation: "No. Azure SQL Database is not supported as an event. Some examples of event handlers within Azure are Functions, Event Hubs, Service Bus, Logic Apps."
+          explanation: "No. Azure Event Grid doesn't support Azure SQL Database as an event handler. Some examples of event handlers within Azure are Functions, Event Hubs, Service Bus, Logic Apps."
         - content: "Azure Logic Apps"
           isCorrect: true
-          explanation: "Yes. Azure Logic Apps is a supported event handler. Few other examples of event handlers within Azure are Functions, Event Hubs, and Service Bus."
+          explanation: "Yes. Azure Event Grid supports Azure Logic Apps as an event handler. Few other examples of event handlers within Azure are Functions, Event Hubs, and Service Bus."
