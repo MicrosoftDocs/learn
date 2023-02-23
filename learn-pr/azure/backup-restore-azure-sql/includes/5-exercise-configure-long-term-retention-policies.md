@@ -22,7 +22,7 @@ Let's start by configuring the five-year retention by using the portal.
 
 1. In the **How long would you like this annual backup to be kept?** controls, enter the value **5** and select **Year(s)**.
 
-    :::image type="content" source="../media/5-configure-ltr-policy.png" alt-text="[Screenshot of the configure policies panel used to create a yearly retention policy.":::
+    :::image type="content" source="../media/5-configure-ltr-policy.png" alt-text="Screenshot of the configure policies panel used to create a yearly retention policy.":::
 
 1. Select **Apply**, and then select **Yes**.
 
@@ -98,6 +98,6 @@ You can also configure long-term retention policies by using PowerShell. Let's c
 
 1. Under **Settings**, select **Manage Backups**. In the list of databases, check the **sql-erp-db** long-term retention properties.
 
-    :::image type="content" source="../media/5-completed-ltr-settings.png" alt-text="[Screenshot of completed long-term retention policy settings.":::
+    :::image type="content" source="../media/5-completed-ltr-settings.png" alt-text="Screenshot of completed long-term retention policy settings.":::
 
 You've now configured a retention policy and validated that the policy meets your organizational and regulatory requirements.

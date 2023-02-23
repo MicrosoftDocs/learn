@@ -2,7 +2,7 @@ Although the default Azure SQL Database configuration includes automated backups
 
 Now that you've planned a comprehensive backup strategy for Azure SQL Database and your company's ERP system, it's time to implement it.
 
-Let's Create a database in Azure and then configure backups. Set the retention to 28 days to ensure that you have four weeks of backups retained in accordance with your policy. Then, add some content to the database.
+Let's create a database in Azure and then configure backups. Set the retention to 28 days to ensure that you have four weeks of backups retained in accordance with your policy. Then, add some content to the database.
 
 ## Create a SQL Database server and database
 
@@ -66,7 +66,7 @@ By default, Azure SQL Database blocks network access to the server. Let's enable
 
 1. In the **Exceptions** section, select the checkbox for **Allow Azure services and resources to access this server**.
 
-    :::image type="content" source="../media/3-add-client-ip.png" alt-text="[Screenshot of Add a client IP address rule with a callout highlighting Allow access to Azure services option and the Save button.":::
+    :::image type="content" source="../media/3-add-client-ip.png" alt-text="Screenshot of Add a client IP address rule with a callout highlighting Allow access to Azure services option and the Save button.":::
 
 1. Select **Save**.
 
@@ -90,7 +90,7 @@ Now, let's add a table and a sample record to the database. It's helpful to have
     )
     ```
 
-    :::image type="content" source="../media/3-create-table.png" alt-text="[Screenshot of the query editor with T-SQL to create a new table in the sql-erp-db database. A callout highlights the run button.":::
+    :::image type="content" source="../media/3-create-table.png" alt-text="Screenshot of the query editor with T-SQL to create a new table in the sql-erp-db database. A callout highlights the run button.":::
 
 1. To add a record, in the top menu bar, select **New Query**. In the **Query 2** window, enter the following SQL command, and then select **Run**.
 
@@ -99,7 +99,7 @@ Now, let's add a table and a sample record to the database. It's helpful to have
     VALUES ('Lucas', 'Ball', '1987-11-03');
     ```
 
-    :::image type="content" source="../media/3-insert-record.png" alt-text="[Screenshot of the query editor with T-SQL to insert a record into the Person table of the sql-erp-db database. A callout highlights the run button.":::
+    :::image type="content" source="../media/3-insert-record.png" alt-text="Screenshot of the query editor with T-SQL to insert a record into the Person table of the sql-erp-db database. A callout highlights the run button.":::
 
 1. To query the database, select **New Query**. In the **Query 3** window, enter the following SQL command, and then select **Run**.
 
@@ -109,6 +109,6 @@ Now, let's add a table and a sample record to the database. It's helpful to have
 
     The **Results** window displays the record for Lucas Ball.
 
-    :::image type="content" source="../media/3-query-person-table.png" alt-text="[Screenshot of the query editor with T-SQL to query the person table in the sql-erp-db database. A callout highlights the run button.":::
+    :::image type="content" source="../media/3-query-person-table.png" alt-text="Screenshot of the query editor with T-SQL to query the person table in the sql-erp-db database. A callout highlights the run button.":::
 
 You now have an Azure SQL database populated with data. And you've set up a retention policy to ensure that you have four (4) weeks of backups immediately available for restore.
