@@ -1,7 +1,6 @@
 ### YamlMime:Module
 uid: learn.scale-from-single-node-to-multi-node-with-azure-cosmos-db-for-postgresql
 metadata:
-  moduleType: standard
   title: Scale from a single node to multiple nodes with Azure Cosmos DB for PostgreSQL
   description: "In this module, you will learn how to grow from a single-node, non-distributed cluster to a multi-node, distributed cluster with Azure Cosmos DB for PostgreSQL."
   ms.date: 02/22/2023
