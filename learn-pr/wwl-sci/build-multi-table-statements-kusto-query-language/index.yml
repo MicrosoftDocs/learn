@@ -22,7 +22,11 @@ roles:
 - security-operations-analyst
 products:
 - azure
-- azure-sentinel
+- microsoft-sentinel
+- azure-log-analytics
+subjects:
+  - cloud-security
+  - data-analytics
 units:
 - learn.wwl.build-multi-table-statements-kql.introduction
 - learn.wwl.build-multi-table-statements-kql.use-union-operator
