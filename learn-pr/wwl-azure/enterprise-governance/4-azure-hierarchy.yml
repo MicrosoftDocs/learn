@@ -9,8 +9,7 @@ metadata:
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  zone_pivot_groups: None
 durationInMinutes: 10
 content: |
   [!include[](includes/4-azure-hierarchy.md)]
