@@ -14,19 +14,17 @@ Microsoft Purview will have the responsibility of scanning the ADLS Gen2 on a re
 
 It's worth mentioning that the data isn't physically stored in Microsoft Purview, but rather it's a metadata store that holds pointers to where the data is and some standard metadata around those assets.
 
-Microsoft Purview will also provide the end to end lineage of all data movement in the Azure ecosystem, including the lineage that will be built up through CluedIn. In addition to this, Microsoft Purview will be the public platform for end users to discover, request access to, and explore that raw and mastered data assets for insights. It's also assumed that any other technology introduced into the stack at a later point will be writing its lineage into Microsoft Purview as well.
-
-If an end user requests access to a mastered asset, then (Azure) Data Sharing will be utilized to deliver this data in an appropriate format to the target system of choice. For example: Azure Synapse, Power BI, SQL Server, Files etc.
+Microsoft Purview will also provide the end to end lineage of all data movement in the Azure ecosystem, including the lineage that will be built up through CluedIn. In addition to this, Microsoft Purview will be the public platform for end users to discover, request access to, and explore that raw and mastered data assets for insights.
 
 ### CluedIn
 
-CluedIn will be responsible for standardization of data into domains, abstracting away the systems and formats of the data so that the end users are working with domains, instead of assets. CluedIn will also standardize semantics, clean and standardize the data, enrich the data from external sources when necessary, deduplicate the data and then provide mechanisms for this data to be shared through Microsoft Purview to the downstream consumers.
+CluedIn will be responsible for standardization of data into domains, abstracting away the systems and formats of the data so that the end users are working with domains, instead of assets. CluedIn will also standardize semantics, clean and standardize the data, enrich the data from external sources when necessary, deduplicate the data, and then provide mechanisms for this data to be shared through Microsoft Purview to the downstream consumers.
 
 Azure Data Factory will be utilized to pull the data assets that are registered in Microsoft Purview from the ADLS Gen2 store and copy that data into CluedIn.  CluedIn will provide its processed data back into the ADLS Gen2 store into a folder called "Mastered" and Microsoft Purview will be set up to scan this folder and apply tags to those assets so that they're easily discoverable in Microsoft Purview by the end consumers.
 
 ### Azure Data Factory
 
-Azure Data Factory (ADF) will be utilized as a generic data integration and data movement pipeline. In addition to this, it can optionally be used as a data transformation service when necessary. Azure Data Factory will also be used as the backbone to copy data from the ADLS Gen2 Storage Account to CluedIn via the use of Microsoft Purview. 
+Azure Data Factory (ADF) will be utilized as a generic data integration and data movement pipeline. It will copy data from the ADLS Gen2 storage account to CluedIn. It can also optionally be used as a data transformation service when necessary.
 
 ### Azure Synapse
 
