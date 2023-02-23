@@ -4,7 +4,7 @@ title: Introduction
 metadata:
   title: introduction
   description: "Multi-tenant SaaS applications have unique database requirements, and Azure Cosmos DB for PostgreSQL is capable of handling these needs at any scale."
-  ms.date: 11/29/2022
+  ms.date: 02/22/2023
   author: kylebunting
   ms.author: jonels
   ms.topic: interactive-tutorial

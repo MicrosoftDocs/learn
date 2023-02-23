@@ -4,7 +4,7 @@ title: Prepare tables for a multi-tenant data architecture
 metadata:
   title: prep-tables-for-multi-tenant-data-architecture
   description: "Migrating a multi-tenant database from a single to a multi-node Azure Cosmos DB for PostgreSQL cluster can be accomplished quickly and easily in the Azure portal. However, there is some planning and work that you must complete to prepare the database for a multi-tenant architecture."
-  ms.date: 11/29/2022
+  ms.date: 02/22/2023
   author: kylebunting
   ms.author: jonels
   ms.topic: interactive-tutorial

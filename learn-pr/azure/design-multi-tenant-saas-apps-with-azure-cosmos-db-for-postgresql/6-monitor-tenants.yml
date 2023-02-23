@@ -4,7 +4,7 @@ title: Monitor tenants in a multi-tenant database
 metadata:
   title: monitor-tenants
   description: "Azure Cosmos DB for PostgreSQL makes it easy to view and understand what the tenants in your multi-tenant database are doing."
-  ms.date: 11/29/2022
+  ms.date: 02/22/2023
   author: kylebunting
   ms.author: jonels
   ms.topic: interactive-tutorial

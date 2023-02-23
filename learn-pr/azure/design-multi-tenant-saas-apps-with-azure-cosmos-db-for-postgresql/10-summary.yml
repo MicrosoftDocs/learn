@@ -4,7 +4,7 @@ title: Summary
 metadata:
   title: summary
   description: "In this module, you learned how to efficiently scale and monitor an Azure Cosmos DB for PostgreSQL cluster for multi-tenant SaaS applications."
-  ms.date: 11/29/2022
+  ms.date: 02/22/2023
   author: kylebunting
   ms.author: jonels
   ms.topic: interactive-tutorial

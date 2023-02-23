@@ -4,7 +4,7 @@ title: Distribute tables with minimal application disruption
 metadata:
   title: distribute-tables-with-minimal-app-disruption
   description: "Azure Cosmos DB for PostgreSQL provides several methods for minimizing the impact of distributing table data across worker nodes on a multi-tenant SaaS application."
-  ms.date: 11/29/2022
+  ms.date: 02/22/2023
   author: kylebunting
   ms.author: jonels
   ms.topic: interactive-tutorial

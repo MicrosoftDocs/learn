@@ -4,7 +4,7 @@ title: Exercise - Prepare tables for distribution
 metadata:
   title: exercise-prep-tables-for-distribution
   description: "Before migrating a multi-tenant SaaS database to a multi-node cluster, you must prepare the tables in the database for distribution. In this exercise, you execute the steps required to prepare tables to be distributed in a multi-node Azure Cosmos DB for PostgreSQL cluster."
-  ms.date: 11/29/2022
+  ms.date: 02/22/2023
   author: kylebunting
   ms.author: jonels
   ms.topic: interactive-tutorial
