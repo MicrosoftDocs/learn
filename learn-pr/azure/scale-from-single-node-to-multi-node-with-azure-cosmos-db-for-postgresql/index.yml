@@ -35,6 +35,7 @@ units:
   - learn.scale-from-single-node-to-multi-node-with-azure-cosmos-db-for-postgresql.understand-architecture
   - learn.scale-from-single-node-to-multi-node-with-azure-cosmos-db-for-postgresql.exercise-scale-nodes
   - learn.scale-from-single-node-to-multi-node-with-azure-cosmos-db-for-postgresql.address-schema-concerns
+  - learn.scale-from-single-node-to-multi-node-with-azure-cosmos-db-for-postgresql.distribute-tables
   - learn.scale-from-single-node-to-multi-node-with-azure-cosmos-db-for-postgresql.exercise-distribute-tables
   - learn.scale-from-single-node-to-multi-node-with-azure-cosmos-db-for-postgresql.knowledge-check
   - learn.scale-from-single-node-to-multi-node-with-azure-cosmos-db-for-postgresql.summary
