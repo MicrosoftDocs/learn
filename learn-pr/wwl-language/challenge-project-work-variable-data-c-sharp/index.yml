@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.challenge-project-work-variable-data-c-sharp
+metadata:
+  title: Challenge project - Work with variable data in C#
+  description: "Challenge project - Work with variable data in C#"
+  ms.date: 02/23/2023
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Challenge project - Work with variable data in C#
+summary: Demonstrate your ability to develop a console app that implements data formatting and using arrays to deliver a multiple term search feature.
+abstract: |
+  *   Apply iteration statements using data input
+  *   Process data
+  *   Format data output
+  *   Choose the correct data types and safely converting data types
+  *   Create and manipulate string arrays, and sort array data
+  *   Modify and build complex strings from multiple data sources, and format data for display
+prerequisites: |
+  - Experience using Visual Studio Code to develop, build, and run C# console applications that include console I/O and access the methods of .NET classes
+  - Experience using C# code to evaluate conditional expressions and manage variable scope inside and outside of code blocks
+  - Experience using if-elseif-else and switch-case statements in C# to match a variable or expression against several possible outcomes
+  - Experience using foreach and for statements in C# to loop through a block of code and access elements of array variables
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- developer
+- k-12-educator
+- student
+products:
+- ai-builder
+units:
+- learn.wwl.challenge-project-work-variable-data-c-sharp.introduction
+- learn.wwl.challenge-project-work-variable-data-c-sharp.prepare
+- learn.wwl.challenge-project-work-variable-data-c-sharp.exercise-search-multiple-terms
+- learn.wwl.challenge-project-work-variable-data-c-sharp.exercise-add-improved-search-animation
+- learn.wwl.challenge-project-work-variable-data-c-sharp.knowledge-check
+- learn.wwl.challenge-project-work-variable-data-c-sharp.summary
+badge:
+  uid: learn.wwl.challenge-project-work-variable-data-c-sharp.badge
