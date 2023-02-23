@@ -17,13 +17,13 @@ quiz:
     choices:
     - content: "Casts the operands to truncate the result"
       isCorrect: true
-      explanation: "Correct. The operands are casted to the int data type which will create an implicitly typed int result"
+      explanation: "Correct. The operands are casted to the int data type that will create an implicitly typed int result"
     - content: "Declares an explicitly typed int variable"
       isCorrect: false
       explanation: "Incorrect. The var keyword creates an implicitly typed variable"
     - content: "Casts the operands to prevent truncating the result"
       isCorrect: false
-      explanation: "Incorrect. The operands are casted to the int data type which will truncate the result"
+      explanation: "Incorrect. The operands are casted to the int data type that will truncate the result"
   - content: "Why does the tab appear to be a space in the output of the following code? `Console.WriteLine(\"Student\\tGrade\");`"
     choices:
     - content: "The tab escape sequence is incorrect"
@@ -42,7 +42,7 @@ quiz:
       explanation: "Correct. You must set a variable to a value before you can reference the value from the variable"
     - content: "`sophiaSum` is not implicitly typed to a string"
       isCorrect: false
-      explanation: "Incorrect. Using Console.WriteLine will implicitly convert convert variables into strings"
+      explanation: "Incorrect. Using Console.WriteLine will implicitly convert variables into strings"
     - content: "`sophiaSum` should use the var keyword"
       isCorrect: false
       explanation: "Incorrect. var variables need to be initialized immediately"
