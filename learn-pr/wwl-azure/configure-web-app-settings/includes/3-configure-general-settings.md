@@ -1,4 +1,5 @@
 
+
 In the  **Configuration > General settings** section you can configure some common settings for your app. Some settings require you to scale up to higher pricing tiers.
 
 Below is a list of the currently available settings:
