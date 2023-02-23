@@ -12,11 +12,11 @@ Each of these tables starts on the coordinator node and is created using the reg
 
 ### Local tables
 
-[**Local tables**](https://learn.microsoft.com/azure/cosmos-db/postgresql/concepts-nodes#type-3-local-tables) are tables of data that may be related to the application that consumes the data in the database. Local tables live solely on the coordinator node. An example of a local table could be a user authentication table. All tables start as local tables until they are distributed.
+[**Local tables**](/azure/cosmos-db/postgresql/concepts-nodes#type-3-local-tables) are tables of data that may be related to the application that consumes the data in the database. Local tables live solely on the coordinator node. An example of a local table could be a user authentication table. All tables start as local tables until they are distributed.
 
 ### Reference tables
 
-[**Reference tables**](https://learn.microsoft.com/azure/cosmos-db/postgresql/concepts-nodes#type-2-reference-tables) are smaller tables of data replicated across each of the worker nodes that are frequently linked to the distributed tables. As the reference table lives in duplicate on each worker node, a worker node can access the data of a reference table without needing to access additional records from another worker node. The `device_types` table contains a few records of the types of devices supported in the system, so it is a smaller table and a good candidate to be a reference table.
+[**Reference tables**](/azure/cosmos-db/postgresql/concepts-nodes#type-2-reference-tables) are smaller tables of data replicated across each of the worker nodes that are frequently linked to the distributed tables. As the reference table lives in duplicate on each worker node, a worker node can access the data of a reference table without needing to access additional records from another worker node. The `device_types` table contains a few records of the types of devices supported in the system, so it is a smaller table and a good candidate to be a reference table.
 
 A reference table is created by the `create_reference_table()` function. This query will convert the `device_types` table from a local table to a reference table:
 
@@ -28,9 +28,9 @@ Reference tables can be joined with local tables. They can also be joined with d
 
 ### Distributed tables
 
-[**Distributed tables**](https://learn.microsoft.com/azure/cosmos-db/postgresql/concepts-nodes#type-1-distributed-tables) are large tables of data that are broken up into [shards](https://learn.microsoft.com/azure/cosmos-db/postgresql/concepts-nodes#shards). The tables are sharded - or distributed - by a field known as the **distribution column**. Examples of distributed tables for the Wide World Importers app are the `devices` and `events` tables.
+[**Distributed tables**](/azure/cosmos-db/postgresql/concepts-nodes#type-1-distributed-tables) are large tables of data that are broken up into [shards](/azure/cosmos-db/postgresql/concepts-nodes#shards). The tables are sharded - or distributed - by a field known as the **distribution column**. Examples of distributed tables for the Wide World Importers app are the `devices` and `events` tables.
 
-When two tables are distributed on the same field, it'd make sense to store shards with the same field value together and take advantage of [colocation](https://learn.microsoft.com/azure/cosmos-db/postgresql/concepts-colocation). Colocation means that all data with the same distribution column value is stored on the same node.
+When two tables are distributed on the same field, it'd make sense to store shards with the same field value together and take advantage of [colocation](/azure/cosmos-db/postgresql/concepts-colocation). Colocation means that all data with the same distribution column value is stored on the same node.
 
 Suppose the `devices` and `events` tables are distributed on `device_id`. Since the tables are distributed by the same column, colocating them makes sense. This means that the device entry for `device97` would be stored on the same node as the sensors readings for `device97`. When a query is run specifically for `device97`, only the node that has that information will be engaged. The query won't have to be processed by separate nodes for the `devices` and `events` table due to colocation.
 

@@ -18,7 +18,7 @@ A single node is a plain Postgres database with the Citus extension. In applicat
 
 As the amount of data grows, it may make sense to go to a distributed configuration. In a distributed configuration, the data is distributed based on a column's value and stored in a **shard** - a partial table - based on the hash value of that column's value. By default, Azure Cosmos DB for PostgreSQL distributes data across 32 shards.
 
-> **Note**: The number of shards is configurable. If you find that 32 shards aren't enough for your query needs, see [shard count guidance](https://learn.microsoft.com/azure/cosmos-db/postgresql/howto-shard-count).
+> **Note**: The number of shards is configurable. If you find that 32 shards aren't enough for your query needs, see [shard count guidance](/azure/cosmos-db/postgresql/howto-shard-count).
 
 Wide World Importers is tracking their warehouse and delivery truck environments for their products like chilly chocolates, which need to be stored at 50-60 degrees Fahrenheit and 60-70% humidity. The device readings were initially stored on a single, non-distributed table named `events`. As Wide World Importers adds more delivery trucks to deliver more chilly chocolates, their data grows into the hundreds of thousands and millions of records. With large amounts of data, the queries for specific devices took longer, as those queries scan the entire events table to find a specific device's set of records. A large amount of data is causing a slower analysis of device readings, making it slower to identify the devices that are causing melted chocolates.
 

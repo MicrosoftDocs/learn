@@ -19,14 +19,14 @@ To ensure you are not charged for the configured capacity of the resources you c
 >
 > To open a hyperlink, right-click and choose **Open in new tab or window**. That way, you can see the resource and quickly return to the module.
 
-- [Azure Cosmos DB for PostgreSQL documentation](https://learn.microsoft.com/azure/cosmos-db/postgresql/introduction)
-- [Model multi-tenant SaaS apps](https://learn.microsoft.com/azure/cosmos-db/postgresql/quickstart-build-scalable-apps-model-multi-tenant)
-- [Characteristics of multi-tenant SaaS applications](https://learn.microsoft.com/azure/cosmos-db/postgresql/quickstart-build-scalable-apps-classify#characteristics-of-multi-tenant-saas)
-- [Pick an initial cluster size for multi-tenant SaaS database](https://learn.microsoft.com/azure/cosmos-db/postgresql/howto-scale-initial#multi-tenant-saas)
-- [How to choose shard count for a multi-tenant SaaS database](https://learn.microsoft.com/azure/cosmos-db/postgresql/howto-shard-count#multi-tenant-saas-use-case)
-- [Monitor and tune Azure Cosmos DB for PostgreSQL](https://learn.microsoft.com/azure/cosmos-db/postgresql/concepts-monitoring)
-- [How to view metrics in Azure Cosmos DB for PostgreSQL](https://learn.microsoft.com/azure/cosmos-db/postgresql/howto-monitoring)
+- [Azure Cosmos DB for PostgreSQL documentation](/azure/cosmos-db/postgresql/introduction)
+- [Model multi-tenant SaaS apps](/azure/cosmos-db/postgresql/quickstart-build-scalable-apps-model-multi-tenant)
+- [Characteristics of multi-tenant SaaS applications](/azure/cosmos-db/postgresql/quickstart-build-scalable-apps-classify#characteristics-of-multi-tenant-saas)
+- [Pick an initial cluster size for multi-tenant SaaS database](/azure/cosmos-db/postgresql/howto-scale-initial#multi-tenant-saas)
+- [How to choose shard count for a multi-tenant SaaS database](/azure/cosmos-db/postgresql/howto-shard-count#multi-tenant-saas-use-case)
+- [Monitor and tune Azure Cosmos DB for PostgreSQL](/azure/cosmos-db/postgresql/concepts-monitoring)
+- [How to view metrics in Azure Cosmos DB for PostgreSQL](/azure/cosmos-db/postgresql/howto-monitoring)
 - [Tenant isolation in Azure Cosmos DB for PostgreSQL](https://docs.citusdata.com/en/v11.1/admin_guide/cluster_management.html#tenant-isolation)
-- [Isolate tenant to new shard](https://learn.microsoft.com/azure/cosmos-db/postgresql/reference-functions#isolate_tenant_to_new_shard)
-- [Rebalance tenant shards to new nodes](https://learn.microsoft.com/azure/cosmos-db/postgresql/howto-scale-rebalance)]
-- [Horizontally scale an Azure Cosmos DB for PostgreSQL database](https://learn.microsoft.com/azure/cosmos-db/postgresql/howto-scale-grow)]
+- [Isolate tenant to new shard](/azure/cosmos-db/postgresql/reference-functions#isolate_tenant_to_new_shard)
+- [Rebalance tenant shards to new nodes](/azure/cosmos-db/postgresql/howto-scale-rebalance)]
+- [Horizontally scale an Azure Cosmos DB for PostgreSQL database](/azure/cosmos-db/postgresql/howto-scale-grow)]
