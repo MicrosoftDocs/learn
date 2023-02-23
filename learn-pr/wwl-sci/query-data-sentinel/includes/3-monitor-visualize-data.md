@@ -1,3 +1,4 @@
+
 Microsoft Sentinel Logs provide you access to the various logs collected from the security connectors. Microsoft Sentinel collects these logs from its integrated connectors and stores them in the Azure Log Analytics workspace.
 
 ## Log Analytics workspace
@@ -58,14 +59,14 @@ AzureActivity
 
 ### Header toolbar
 
-The header toolbar provides additional interaction with the query, as displayed in the following screenshot.
+The header toolbar provides more interaction with the query, as displayed in the following screenshot.
 
 :::image type="content" source="../media/03-header-toolbar.png" alt-text="Screenshot of the header toolbar, with options described in the text following the image." border="true":::
 
-Save the query from the **Query** pane by selecting **Save**. This opens a new window, where you are prompted to enter the name of the saved query and category. Saved queries appear in the query explorer.
+Save the query from the **Query** pane by selecting **Save**. This opens a new window, where you're prompted to enter the name of the saved query and category. Saved queries appear in the query explorer.
 In the **Time Range** field, you can provide a different time to change the time range for which you want to display the results of the query.
 Create a link for the query and share with other team members by selecting **Copy link to query**. You can also copy the query text.
-From the header toolbar in the **Query** pane, you can create either a **New Azure Monitor alert** or a **New Microsoft Sentinel alert**. If you opt to create a new Microsoft Sentinel alert, you will be directed to the next steps for creating an analytics rule.
+From the header toolbar in the **Query** pane, you can create either a **New Azure Monitor alert** or a **New Microsoft Sentinel alert**. If you opt to create a new Microsoft Sentinel alert, you'll be directed to the next steps for creating an analytics rule.
 Export the query into one of the following formats:
 
 - **Export to CSV**. To export all the columns, both visible and hidden, into a CSV file that you can open with Microsoft Excel.
@@ -80,4 +81,4 @@ You can use **Format query** on the header toolbar to make the query more readab
 
 ### Query results
 
-In the **Query results** pane, you can observe the results of the query. You can also present the results using a chart, or hide and display additional columns to filter the query results.
+In the **Query results** pane, you can observe the results of the query. You can also present the results using a chart, or hide and display other columns to filter the query results.

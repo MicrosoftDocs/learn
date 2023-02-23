@@ -3,7 +3,7 @@ uid: learn.wwl.scale-apps-app-service
 metadata:
   title: Scale apps in Azure App Service
   description: "Scale apps in Azure App Service"
-  ms.date: 01/20/2023
+  ms.date: 02/03/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial

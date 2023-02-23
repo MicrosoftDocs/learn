@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.register-mlflow-model-azure-machine-learning.log-mlflow-model
+title: Log models with MLflow
+metadata:
+  title: Log models with MLflow
+  description: "Learn how to log models with MLflow for easy deployment in Azure Machine Learning."
+  ms.date: 02/17/2023
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 9
+content: |
+  [!include[](includes/2-log-mlflow-model.md)]

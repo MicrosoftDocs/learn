@@ -74,7 +74,7 @@ The reason is that the calls to the `send` function are sequential. You're not c
 
 Channels are deeply connected to goroutines. Without another goroutine receiving data from the channel, the whole program might enter into a block forever. As you've seen, it does happen. 
 
-Now let's make something interesting! We'll create a goroutine for the last two calls (the first two fit into the buffer properly), and make a for loop run four times. Here's the code:
+Now let's make something interesting! We'll create a goroutine for the last two calls (the first two calls fit into the buffer properly), and make a for loop run four times. Here's the code:
 
 ```go
 func main() {
@@ -96,7 +96,7 @@ func main() {
 
 When you run the program, it works as expected. We recommend that when you use channels, you always use goroutines.
 
-To test the case where you create a buffered channel with more elements than you'll need, let's use the example that we used before to check APIs and create a buffered channel with a size of 10:
+Let's test the case where you create a buffered channel with more elements than you'll need. We'll use the example that we used before to check APIs and create a buffered channel with a size of 10:
 
 ```go
 package main
@@ -154,9 +154,9 @@ Conversely, buffered channels decouple the send and receive operations. They don
 
 ## Channel directions
 
-An interesting feature for channels in Go is that when you use channels as parameters to a function, you can specify whether a channel is meant to *send* or *receive* data. As your program grows, you might have too many functions, and it's a good idea to document the intent of each channel to use them properly. Or perhaps you're writing a library and want to expose a channel as read-only to maintain data consistency.
+Channels in Go have another interesting feature. When you use channels as parameters to a function, you can specify whether a channel is meant to *send* or *receive* data. As your program grows, you might have too many functions, and it's a good idea to document the intent of each channel to use them properly. Or perhaps you're writing a library and want to expose a channel as read-only to maintain data consistency.
 
-To define the channel's direction, you do it in a similar way to when you're reading or receiving data. But you do it when you're declaring the channel in a function parameter. The syntax to define the type of channel as a parameter in a function is like the following:
+To define the channel's direction, you do it in a similar way to when you're reading or receiving data. But you do it when you're declaring the channel in a function parameter. The syntax to define the type of channel as a parameter in a function is:
 
 ```go
 chan<- int // it's a channel to only send data
@@ -215,7 +215,7 @@ It's better to have a compile error than to misuse a channel.
 
 ## Multiplexing
 
-Finally, let's cover a short topic on how to interact with more than one channel simultaneously by using the `select` keyword. At times, you'll want to wait for an event to happen when you're working with multiple channels. For instance, you might include some logic to cancel an operation when there's an anomaly in the data that your program is processing.
+Finally, let's see how to interact with more than one channel simultaneously by using the `select` keyword. At times, you'll want to wait for an event to happen when you're working with multiple channels. For instance, you might include some logic to cancel an operation when there's an anomaly in the data that your program is processing.
 
 A `select` statement works like a `switch` statement but for channels. It blocks the program's execution until it receives an event to process. If it gets more than one event, it chooses one at random. 
 
@@ -265,4 +265,4 @@ Done replicating!
 Done processing!
 ```
 
-Notice that the `replicate` function finished first. That's why you see its output in the terminal first. The main function has a loop because the `select` statement ends as soon as it receives an event, but we're still waiting for the `process` function to finish.
+Notice that the `replicate` function finished first, which is why you see its output in the terminal first. The main function has a loop because the `select` statement ends as soon as it receives an event, but we're still waiting for the `process` function to finish.

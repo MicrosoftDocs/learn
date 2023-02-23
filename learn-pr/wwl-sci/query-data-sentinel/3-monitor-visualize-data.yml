@@ -1,19 +1,19 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.query-data-sentinel.3-monitor-visualize-data
+title: Monitor and visualize data
 metadata:
   title: Monitor and visualize data
-  description: Monitor and visualize data by using Microsoft Sentinel Workbooks.
-  ms.date: 12/17/2020
-  author: cwatson-cat
-  ms.author: cwatson
+  description: "Monitor and visualize data by using Microsoft Sentinel Workbooks."
+  ms.date: 01/26/2023
+  author: wwlpublish
+  ms.author: kelawson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Monitor and visualize data
 durationInMinutes: 5
 content: |
   [!include[](includes/3-monitor-visualize-data.md)]
 quiz:
-  title: Check your knowledge
+  title: "Check your knowledge"
   questions:
   - content: "An administrator wants to open a previously saved query. After opening the Logs page in Microsoft Sentinel, which one of the following options must the administrator select?"
     choices:
@@ -21,7 +21,7 @@ quiz:
       isCorrect: false
       explanation: "The Queries link in the page header opens some of the predefined sample queries."
     - content: "Query explorer"
-      isCorrect: True
+      isCorrect: true
       explanation: "The Query Explorer link in the page header helps you access your previously saved queries."
     - content: "Tables pane"
       isCorrect: false

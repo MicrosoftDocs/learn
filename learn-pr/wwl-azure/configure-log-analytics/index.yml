@@ -1,20 +1,20 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-log-analytics
 metadata:
-  title: Configure Log Analytics
-  description: "Configure Log Analytics"
-  ms.date: 11/18/2022
+  title: Configure Log Analytics in Azure Monitor
+  description: "Configure Log Analytics in Azure Monitor"
+  ms.date: 02/22/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Configure Log Analytics
-summary: You will learn how to configure Log Analytics including structuring queries.
+title: Configure Log Analytics in Azure Monitor
+summary: Learn how to configure Log Analytics in Azure Monitor including structuring queries.
 abstract: |
-  After completing this module, you will be able to:
-  - Identify the features and usage cases for Log Analytics.
-  - Create a Log Analytics workspace.
-  - Structure a Log Analytics query and review results.
+  In this module, you learn how to:
+  - Identify the features and usage cases for Log Analytics in Azure Monitor.
+  - Create a Log Analytics workspace in the Azure portal.
+  - Use the Kusto Query Language (KQL) to structure a Log Analytics query and review results.
 prerequisites: |
   None
 iconUrl: /training/achievements/log-analytics-configure.svg

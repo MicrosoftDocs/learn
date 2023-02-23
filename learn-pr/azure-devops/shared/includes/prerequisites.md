@@ -1,6 +1,6 @@
 - An [Azure DevOps organization](/azure/devops/pipelines/get-started/pipelines-sign-up) with access to [parallel jobs](/azure/devops/pipelines/licensing/concurrent-jobs). If your organization does not have access to parallel jobs, you can request parallel jobs for free for public or private projects using [this form](https://aka.ms/azpipelines-parallelism-request). Your request will take 2-3 business days.
 - An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true)
 - A [GitHub](https://github.com/join?azure-portal=true) account
-- [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
+- [Visual Studio Code](https://code.visualstudio.com?azure-portal=true) with the [Azure Pipelines for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-azure-devops.azure-pipelines) extension.
 - [.NET 6.0 SDK](https://dotnet.microsoft.com/download/dotnet/6.0?azure-portal=true)
 - [Git](https://git-scm.com/downloads?azure-portal=true)

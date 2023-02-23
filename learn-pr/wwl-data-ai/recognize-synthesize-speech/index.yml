@@ -3,9 +3,9 @@ uid: learn.wwl.recognize-synthesize-speech
 metadata:
   title: Recognize and synthesize speech
   description: "Recognize and synthesize speech"
-  ms.date: 09/02/2022
+  ms.date: 01/27/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: sheryang
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Recognize and synthesize speech
@@ -16,7 +16,7 @@ abstract: |
   - Learn how to use the Speech cognitive service in Azure
 prerequisites: |
   Ability to navigate the Azure portal
-iconUrl: /training/achievements/convert-speech-to-text.svg
+iconUrl: /learn/achievements/convert-speech-to-text.svg
 levels:
 - intermediate
 roles:

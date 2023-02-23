@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-private-5g-core.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Checks that you've grasped what is taught about Azure Private 5G Core."
+  ms.date: 10/10/2022
+  author: michael-weizhong-shan
+  ms.author: michaelshan
+  ms.topic: interactive-tutorial
+  ms.service: learning-private-5g-core
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "In which of the following situations should Azure Private 5G Core be used?"
+    choices:
+    - content: "Artificial intelligence functionalities in IoT devices."
+      isCorrect: false
+      explanation: "Try again. Azure Private 5G Core doesn't provide artificial intelligence functionalities for IoT devices."
+    - content: "Mobility and connectivity at the customer edge."
+      isCorrect: true
+      explanation: "Correct. Azure Private 5G Core provides local high-speed access at the customer location to reduce latency, ensure connectivity of devices even during network disruptions, and ensure data is locally processed and secured."
+    - content: "Deploying virtual machines in private networks."
+      isCorrect: false
+      explanation: "Try again. Enterprises can use Azure Private 5G Core to deploy a private mobile network but not to provision other virtual machines in the network."
+  - content: "Which of the following features does Azure Private 5G Core provide?"
+    choices:
+    - content: "A docker-compatible container environment to run business logic."
+      isCorrect: false
+      explanation: "Try again. Azure Private 5G Core is container based and can work together with applications that run business logic. However, it doesn't provide the container environment itself to run business logic."
+    - content: "3GPP defined 5G network functions."
+      isCorrect: true
+      explanation: "Correct. The packet core instance that Azure Private 5G Core deploys at each site is a set of 5G network functions."
+    - content: "Threat protection for IoT devices."
+      isCorrect: false
+      explanation: "Try again. Azure Private 5G Core can be used to connect IoT devices. However, it doesn't provide a threat protection service for each IoT device."
+  - content: "How does Azure Private 5G Core provide integration with 5G RAN?"
+    choices:
+    - content: "It exposes a standards-based N2 interface for the 5G control plane."
+      isCorrect: true
+      explanation: "Correct. Azure Private 5G Core complies with 3GPP technical specifications. It uses the N2 interface to connect to 5G RANs and the S1-MME interface to connect to 4G RANs."
+    - content: "It uses a fully managed event-routing service with a publish-subscribe model."
+      isCorrect: false
+      explanation: "Try again. Azure Private 5G Core doesn't use any event-routing service for integration."
+    - content: "It shares data with other applications through a central database server."
+      isCorrect: false
+      explanation: "Try again. Azure Private 5G Core doesn't use a database server to share data."

@@ -8,7 +8,7 @@ A *signed type* uses its bytes to represent an equal number of positive and nega
 
 ### Step 1 - Use the MinValue and MaxValue properties for each signed integral type
 
-To see the value ranges for the various data types, type the following code into the .NET Editor:
+To see the value ranges for the various data types, type or paste the following code into the .NET Editor:
 
 ```csharp-interactive
 Console.WriteLine("Signed integral types:");

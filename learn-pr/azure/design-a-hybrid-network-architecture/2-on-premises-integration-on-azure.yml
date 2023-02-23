@@ -37,7 +37,7 @@ quiz:
       explanation: Authentication between sites is required for secure communications in the network. 
     - content: By using an administrator account
       isCorrect: false
-      explanation: Storing the credentials for an administrator account in a VPN is not a secure or supported method for site-to-site VPN connections.
+      explanation: Storing the credentials for an administrator account in a VPN isn't a secure or supported method for site-to-site VPN connections.
     - content: Through a service principal in Azure Active Directory
       isCorrect: false
       explanation: Service principals are used for authentication, but not in site-to-site VPN connections.
@@ -51,7 +51,7 @@ quiz:
       explanation: A VPN gateway must be set up to bridge the connection between on-premises and Azure.
     - content: An encrypted connection
       isCorrect: false
-      explanation: All Azure VPN connections get encrypted automatically. There is no requirement to enable encryption.
+      explanation: All Azure VPN connections get encrypted automatically. There's no requirement to enable encryption.
     - content: An Azure virtual machine
       isCorrect: false
       explanation: Several Azure virtual machines are used to host VPN connections, but this is transparent to users.

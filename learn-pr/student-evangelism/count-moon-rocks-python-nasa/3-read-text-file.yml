@@ -3,7 +3,7 @@ uid: learn.student-evangelism.count-moon-rocks-python-nasa.3-read-text-file
 metadata:
   title: Exercise - Read in Moon rock data from a text file for exploration
   description: Read the text from rocks.txt.
-  ms.date: 06/29/2021
+  ms.date: 01/27/2023
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial

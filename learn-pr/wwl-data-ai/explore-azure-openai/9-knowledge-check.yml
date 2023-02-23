@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-openai.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "This page serves as a knowledge check after a student has completed learning from the module."
+  ms.date: 2/14/2023
+  author: sherzyang
+  ms.author: sheryang
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure 
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+quiz:
+  questions:
+  - content: "How are ChatGPT, OpenAI, and Azure OpenAI related?"
+    choices: 
+    - content: "Azure OpenAI is Microsoft's version of ChatGPT, a chatbot that uses generative AI models."
+      isCorrect: false
+      explanation: "Incorrect. ChatGPT is a chatbot, but Azure OpenAI isn't a chatbot, it's a service connecting users to many generative AI models."
+    - content: "ChatGPT and OpenAI are chatbots that generate natural language, code, and images. Azure OpenAI provides access to these two chatbots."
+      isCorrect: false
+      explanation: "Incorrect. While ChatGPT is a chatbot, OpenAI is a research company that provides access to AI models. Azure OpenAI also provides access to many of these AI models."
+    - content: "OpenAI is a research company that developed ChatGPT, a chatbot that uses generative AI models. Azure OpenAI provides access to many of OpenAI's AI models."
+      isCorrect: true
+      explanation: "Correct."
+  - content: "You would like to summarize a paragraph of text. Which generative AI model family would you use to solve for this workload?"
+    choices:
+    - content: "GPT-3."
+      isCorrect: true
+      explanation: "Correct."
+    - content: "Codex."
+      isCorrect: false
+      explanation: "Incorrect. The Codex model family is specifically trained to produce code or text explanations of code."
+    - content: "Dall-E."
+      isCorrect: false
+      explanation: "Incorrect. The Dall-E model family is specifically trained to produce images."
+  - content: "What is one action Microsoft takes to support ethical AI practices in Azure OpenAI?"
+    choices: 
+    - content: "Provides Transparency Notes that share how technology is built and asks users to consider its implications."
+      isCorrect: true 
+      explanation: "Correct."
+    - content: "Logs users out of Azure OpenAI Studio after a period of inactivity to ensure it's only used by one user."
+      isCorrect: false
+      explanation: "Incorrect. Monitoring inactivity may be useful, but it's not a specific action Microsoft takes to support ethical AI."
+    - content: "Allows users to build any application, regardless of harmful effects, to ensure fairness."
+      isCorrect: false
+      explanation: "Incorrect. Microsoft's Responsible AI principle, fairness, says AI systems shouldn't make decisions that discriminate or bias a group or individual. Harmful use of Azure OpenAI isn't permitted."
+
+
+

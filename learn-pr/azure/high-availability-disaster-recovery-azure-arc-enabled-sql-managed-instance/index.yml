@@ -1,42 +1,49 @@
 ### YamlMime:Module
-uid: learn.high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance
+uid: learn.azure.high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance
 metadata:
-  title: High Availability and Disaster Recovery for Azure Arc-enabled SQL Managed Instance
-  description: "Learn how to manage availability and recover from disasters with Azure Arc-enabled SQL Managed Instance."
-  ms.date: 8/24/2022
+  title: Implement high availability and disaster recovery for Azure Arc-enabled SQL Managed Instance
+  description: Learn how to manage availability and recover from disasters with Azure Arc-enabled SQL Managed Instance.
+  ms.date: 12/26/2022
   author: MikeRayMSFT
   ms.author: mikeray
   manager: jroth
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
-title: High Availability and Disaster Recovery for Azure Arc-enabled SQL Managed Instance
-summary: "Describe the High Availability options for Arc-enabled SQL Managed Instance Tiers. Implement Disaster Recovery for your Arc-enabled SQL Managed Instance and understand how Point-in-time Recovery fits into your environment."
+  ms.prod: learning-azure
+title: Implement high availability and disaster recovery for Azure Arc-enabled SQL Managed Instance
+summary: Describe high availability and disaster recovery options for Azure Arc-enabled SQL Managed Instance.
 abstract: |
   By the end of this module, you'll be able to:
-    - Describe the different High Availability options
-    - Discern the Disaster Recovery options
-    - Configure readable secondaries and understand how to use Point-in-time restores
+    - Describe the resiliency features of Azure Arc-enabled SQL Managed Instance.
 prerequisites: |
-  - Familiar with Azure data services such as Azure SQL Managed Instance
-  - Basic knowledge of executing command-line interface (CLI) or terminal commands
+  - Experience implementing and managing Platform-as-a-Service (PaaS) services in Microsoft Azure.
+  - Intermediate knowledge of Azure management, including the ability to navigate the Azure portal and run Azure CLI commands.
+  - Intermediate knowledge of containerization and container orchestration by using Kubernetes.
+  - Intermediate knowledge of Azure SQL Managed Instance.
 iconUrl: /learn/achievements/generic-badge.svg
 hidden: true
-levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
-  - beginner
-roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
+levels:
+  - intermediate
+roles:
+  - administrator
   - data-engineer
+  - database-administrator
+  - devops-engineer
   - solution-architect
-products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
+  - student
+  - technology-manager
+  - security-engineer
+products:
   - azure-arc
   - azure-sql-managed-instance
-subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
+subjects:
   - cloud-computing
 units:
-- learn.high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance.introduction
-- learn.high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance.establish-high-availability-disaster-recovery-for-azure-arc-enabled-sql-mi
-- learn.high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance.azure-arc-enabled-sql-mi-disaster-recovery-options
-- learn.high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance.exercise-configure-and-explore-high-availability-disaster-recovery
-- learn.high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance.knowledge-check
-- learn.high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance.summary
+- learn.azure.high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance.introduction
+- learn.azure.high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance.explore-high-availability-azure-arc-enabled-sql-managed-instance
+- learn.azure.high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance.explore-disaster-recovery-azure-arc-enabled-sql-managed-instance
+- learn.azure.high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance.exercise-implement-high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance
+- learn.azure.high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance.knowledge-check
+- learn.azure.high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance.summary
 badge:
-  uid: learn.high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance.badge
+  uid: learn.azure.high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance.badge
+  

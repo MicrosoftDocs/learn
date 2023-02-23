@@ -6,7 +6,7 @@ Consider a scenario where three virtual networks in the same region are connecte
 
 ### Things to know about Azure VPN Gateway
 
-Let's take a closer look at how Azure VP Gateway is implemented with Azure Virtual Network peering.
+Let's take a closer look at how Azure VPN Gateway is implemented with Azure Virtual Network peering.
 
 - A virtual network can have only one VPN gateway.
 

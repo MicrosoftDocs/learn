@@ -4,7 +4,7 @@ metadata:
   moduleType: standard
   title: "Code scanning with GitHub CodeQL" # user input: module title for browser tab and search results
   description: "Learn how to use CodeQL, a powerful static analysis tool, to implement code scanning on GitHub." # user input: a description for site search and SEO
-  ms.date: 2/15/2022
+  ms.date: 01/24/2023
   author: hrasheed-msft
   ms.author: hrasheed
   ms.topic: interactive-tutorial # do we need ms.topic?
@@ -13,13 +13,13 @@ title: Code scanning with GitHub CodeQL
 summary: "Learn how to use CodeQL, a powerful static analysis tool, to implement code scanning on GitHub." # user input: introductory summary (https://review.learn.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main)
 abstract: | # user input: learning objectives (https://review.learn.microsoft.com/help/learn/id-guidance-learning-objectives?branch=main)
   By the end of this module, you'll be able to:
-    - Understand CodeQL and how it analyzes code
-    - Understand QL, a unique logic programming language
-    - Set up CodeQL based code scanning in a GitHub repository
-    - Reference a custom CodeQL query
-    - Configure the language matrix in a CodeQL workflow
-    - Learn how to use the CodeQL CLI to generate code scanning results and upload them to GitHub
-    - Implement custom build steps
+    - Understand CodeQL and how it analyzes code.
+    - Understand QL, a unique logic programming language.
+    - Set up CodeQL based code scanning in a GitHub repository.
+    - Reference a custom CodeQL query.
+    - Configure the language matrix in a CodeQL workflow.
+    - Learn how to use the CodeQL CLI to generate code scanning results and upload them to GitHub.
+    - Implement custom build steps.
 prerequisites: | # user input: prerequisites (https://review.learn.microsoft.com/help/learn/id-guidance-prerequisites?branch=main)
   - A GitHub enterprise account with a GitHub Advanced Security license
   - Necessary permissions to administrate your repository

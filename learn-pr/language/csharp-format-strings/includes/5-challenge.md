@@ -18,7 +18,7 @@ Glorious Future     13.13 %   ¤63,000,000.00
 
 Use your newfound knowledge of string formatting to build an application that can merge and format the appropriate content given the example output above. Pay particular attention to the white space, and make sure you accurately represent this exact format using C#.
 
-Here are the rules for the challenge.
+Here are the rules for the challenge:
 
 1. Use the .NET Editor to generate the message given the variables and code. Replace the code comments with your own string formatting code.
 

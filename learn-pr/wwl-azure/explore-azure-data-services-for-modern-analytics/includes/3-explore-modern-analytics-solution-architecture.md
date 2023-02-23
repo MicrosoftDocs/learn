@@ -28,4 +28,5 @@ Power BI also has native connectors to many Azure data services. Using Power BI,
 [![Power BI Report interface in Azure Synapse Analytics Workspace.](../media/synapse-power-bi.png)](../media/synapse-power-bi.png#lightbox)
 
 > [!NOTE]
-> Learn more about [analytics and reporting with Power BI](/training/paths/create-use-analytics-reports-power-bi/).
+> Learn more about [analytics and reporting with Power BI](/learn/paths/create-use-analytics-reports-power-bi/).
+

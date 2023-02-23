@@ -2,7 +2,7 @@ Variables are one of the fundamental building blocks of programs written in Pyth
 
 ## Variables
 
-In Python, a variable is declared and assigned a value using the assignment operator `=`. The variable is on the left-hand side of the operator, and the value being assigned &mdash; which can be an expression such as `2 + 2` and can even include other variables &mdash; is on the right-hand side:
+In Python, a variable is declared and assigned a value using the assignment operator `=`. The variable is on the left-hand side of the operator, and the value being assigned &mdash; which can be an expression such as `2 + 2` and can even include other variables &mdash; is on the right-hand side. For example:
 
 ```python
 x = 1         # assign variable x the value 1

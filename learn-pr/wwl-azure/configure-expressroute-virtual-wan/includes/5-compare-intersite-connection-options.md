@@ -1,70 +1,12 @@
-There are many intersite connection choices. This table summarizes how to make a selection.
 
-:::row:::
-  :::column:::
-    **Connection**
-  :::column-end:::
-  :::column:::
-    **Azure Services Supported**
-  :::column-end:::
-  :::column:::
-    **Bandwidths**
-  :::column-end:::
-  :::column:::
-    **Protocols**
-  :::column-end:::
-  :::column:::
-    **Typical Use Case**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Virtual network, point-to-site
-  :::column-end:::
-  :::column:::
-    Azure IaaS services, Azure Virtual Machines
-  :::column-end:::
-  :::column:::
-    Based on the gateway SKU
-  :::column-end:::
-  :::column:::
-    Active/passive
-  :::column-end:::
-  :::column:::
-    Dev, test, and lab environments for cloud services and virtual machines.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Virtual network, site-to-site
-  :::column-end:::
-  :::column:::
-    Azure IaaS services, Azure Virtual Machines
-  :::column-end:::
-  :::column:::
-    Typically &lt; 1 Gbps aggregate
-  :::column-end:::
-  :::column:::
-    Active/passive, Active/active
-  :::column-end:::
-  :::column:::
-    Dev, test, and lab environments. Small-scale production workloads and virtual machines.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    ExpressRoute
-  :::column-end:::
-  :::column:::
-    Azure IaaS and PaaS services, Microsoft 365 services
-  :::column-end:::
-  :::column:::
-    50 Mbps up to 100 Gbps
-  :::column-end:::
-  :::column:::
-    Active/active
-  :::column-end:::
-  :::column:::
-    Enterprise-class and mission-critical workloads. Big data solutions.
-  :::column-end:::
-:::row-end:::
+Microsoft network operates the primary and secondary connections of Azure ExpressRoute circuits in active-active mode. Administrators can force their redundant connections of an ExpressRoute circuit to operate in active-passive mode. To improve high availability, we recommend that you operate both connections of an ExpressRoute circuit in active-active mode. When you allow the connections to operate in active-active mode, Microsoft network load balances the traffic across the connections on a per-flow basis.
+
+### Things to know about intersite connections
+
+There are multiple Azure services that can support various intersite connection configurations. The following table highlights some common scenarios. As you review these details, think about what solution can fulfill your business requirements.
+
+| Connection | Azure services | Bandwidth | Protocols | Scenarios |
+| --- | --- | --- | --- | --- |
+| **Virtual network and Point-to-site (User VPN)** | Azure IaaS services, <br> Azure Virtual Machines | Based on the gateway SKU | active-passive | _Development, test, and lab environments for cloud services_ <br><br> _Development, test, and lab environments for virtual machines_ |
+| **Virtual network and Site-to-site** | Azure IaaS services, <br> Azure Virtual Machines | Typically < 1 Gbps aggregate | active-passive <br> active-active | _Development, test, and lab environments_ <br><br> _Small-scale production workloads and virtual machines_ |
+| **ExpressRoute circuit** | Azure IaaS and PaaS services, <br> Microsoft 365 services | 50 Mbps up to 100 Gbps | active-active (recommended) <br> active-passive (manually forced) | _Enterprise-class and mission-critical workloads_ <br><br> _Big data solutions_ |

@@ -3,7 +3,7 @@ uid: learn.student-evangelism.introduction-python-nasa.6a-knowledge-check
 metadata:
   title: Knowledge check
   description: Interactive questions that validate whether the learner achieved the learning objectives.
-  ms.date: 05/05/2021
+  ms.date: 01/23/2023
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
@@ -15,46 +15,46 @@ content: |
   Answer the following questions to see what you've learned.
 quiz:
   questions:
-  - content: "What is the goal of NASA-themed Microsoft Learn Modules?"
+  - content: "What's the goal of the NASA-themed Microsoft Learn Training Modules?"
     choices:
     - content: "To inspire the next generation to all become astronauts."
       isCorrect: false
-      explanation: "Incorrect. That's not the goal of these modules."
+      explanation: "Incorrect. The goal of these modules is not for everyone to become astronauts."
     - content: "To inspire scientists to focus on space exploration."
       isCorrect: false
-      explanation: "Incorrect. That's not the goal of these modules."
+      explanation: "Incorrect. The goal of these modules is not for every scientist to focus on space exploration. We need scientists to work on all kinds of problems."
     - content: "To inspire persistence and innovation in problem solvers of all industries."
       isCorrect: true
-      explanation: "Correct! This is the exact goal."
+      explanation: "Correct! The goal of these modules is to inspire persistence and innovation in whatever industry or profession you choose."
     - content: "To inspire innovations for the Artemis program."
       isCorrect: false
-      explanation: "Incorrect. That's not the goal of these modules."
+      explanation: "Incorrect. Although the focus of these modules is on Artemis, we hope to inspire innovations in fields and industries beyond Artemis."
   - content: "When was the last time a human landed on the Moon?"
     choices:
-    - content: "Over 300 years ago"
+    - content: "More than 300 years ago"
       isCorrect: false
-      explanation: "Incorrect. It was a little more recent."
+      explanation: "Incorrect. Someone walked on the Moon more recently than 300 years ago."
     - content: "In 2015"
       isCorrect: false
-      explanation: "Incorrect. It was longer ago."
-    - content: "Almost 50 years ago"
+      explanation: "Incorrect. No human has walked on the Moon in the 21st century."
+    - content: "About 50 years ago"
       isCorrect: true
-      explanation: "Correct! It has been 50 years."
+      explanation: "Correct! Astronauts last walked on the Moon in 1972."
     - content: "In 1999"
       isCorrect: false
       explanation: "Incorrect. The last moon landing wasn't in 1999."
   - content: "When will the next person land on the Moon?"
     choices:
-    - content: "By 2024."
+    - content: "By 2025."
       isCorrect: true
-      explanation: "Correct! This is when Artemis will take humans to the Moon."
+      explanation: "Correct! NASA plans to put astronauts back on the Moon by 2025."
     - content: "In 3000."
       isCorrect: false
       explanation: "Maybe, but nothing is planned that far ahead."
     - content: "No plans yet."
       isCorrect: false
-      explanation: "There is a planned mission."
+      explanation: "NASA plans to put astronauts back on the Moon by 2025."
     - content: "Someone is on the Moon right now."
       isCorrect: false
-      explanation: "This is not true."
+      explanation: "No one is currently on the Moon."
  

@@ -3,13 +3,13 @@ uid: learn.wsl-introduction.run-basic-commands
 title: Run basic WSL commands
 metadata:
   unitType: exercise
-  title: exercise
+  title: Exercise - Run basic commands
   description: "Try running some basic WSL administrative commands and Bash commands."
   ms.date: 11/09/2022
   author: mattwojo
   ms.author: mattwoj
   ms.topic: interactive-tutorial
   ms.prod: learning-windows
-durationInMinutes: 1
+durationInMinutes: 8
 content: |
   [!include[](includes/5-run-basic-commands.md)]

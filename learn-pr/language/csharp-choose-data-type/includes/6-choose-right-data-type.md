@@ -1,6 +1,6 @@
 You've been introduced to the difference between value types and reference types, as well as integral and floating point types.
 
-Suppose your job is to build a new application that retrieves, manipulates, and stores different types of data.  Which data types will you choose?
+Suppose your job is to build a new application that retrieves, manipulates, and stores different types of data. Which data types will you choose?
 
 In some cases, it'll be an easy choice. For example, when you need to work with text, then you'll likely default to using the `string` data type unless you need to perform a significant amount of concatenation.
 
@@ -8,7 +8,7 @@ But what about working with numeric data? There are 11 different options. How do
 
 ## How do you choose the right data type?
 
-With so many data types to choose from, what criteria should you use to choose the right data type for the particular situation?
+With so many data types from which to choose, what criteria should you use to choose the right data type for the particular situation?
 
 When evaluating your options, you must weigh several important considerations. Often there's no single correct answer, but some answers are more correct than others.
 
@@ -22,18 +22,18 @@ When evaluating your options, you must weigh several important considerations. O
 
 - **When in doubt, stick with the basics.** While we've looked at several considerations that often lead you to consider many different data types, as you're getting started, you should prefer a subset of basic data types for simplicity's sake, including:
 
-   - `int` for most whole numbers
-   - `decimal` for numbers representing money
-   - `bool` for true or false values
-   - `string` for alphanumeric value
+  - `int` for most whole numbers
+  - `decimal` for numbers representing money
+  - `bool` for true or false values
+  - `string` for alphanumeric value
 
 - **Choose specialty complex types for special situations.** Don't reinvent data types if they already exist for a given purpose.
 
-   - `byte` for working with encoded data that comes from other computer systems or using different character sets.
-   - `double` for working with geometric or scientific purposes. `double` is used frequently when building games involving motion.
-   - `System.StringBuilder` to build a single string from many literals or other variables. We'll cover this in more detail in the [Modify content of strings using built-in string data type methods in C#](/training/modules/csharp-modify-content/) module.
-   - `System.DateTime` for a specific date and time value.
-   - `System.TimeSpan` for a span of years/months/days/hours/minutes/seconds/milliseconds.
+  - `byte` for working with encoded data that comes from other computer systems or using different character sets.
+  - `double` for working with geometric or scientific purposes. `double` is used frequently when building games involving motion.
+  - `System.StringBuilder` to build a single string from many literals or other variables. We'll cover this in more detail in the [Modify content of strings using built-in string data type methods in C#](/training/modules/csharp-modify-content/) module.
+  - `System.DateTime` for a specific date and time value.
+  - `System.TimeSpan` for a span of years/months/days/hours/minutes/seconds/milliseconds.
 
 ## Recap
 

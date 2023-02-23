@@ -1,4 +1,4 @@
-﻿Adatum's management team wants to leverage IoT capabilities to extend the scope of services it delivers to its customers, including automated monitoring, alerting, and self-servicing of smart appliances. Your development team plans to provide the desired functionality by implementing a robust and feature-rich IoT pipeline in a manner that adheres to the foundational design principles of cloud-native applications. To accomplish this objective, you decide to explore the concepts of IoT services architecture.
+﻿Adatum's management team wants to use IoT capabilities to extend the scope of services it delivers to its customers, including automated monitoring, alerting, and self-servicing of smart appliances. Your development team plans to provide the desired functionality by implementing a robust and feature-rich IoT pipeline in a manner that adheres to the foundational design principles of cloud-native applications. To accomplish this objective, you decide to explore the concepts of IoT services architecture.
 
 ## What is IoT services architecture?
 
@@ -50,7 +50,7 @@ Microsoft offers a comprehensive portfolio of services that deliver various type
   - Lets you use cloud agility and scalability.
   - Supports built-in integration with several other Azure services.
   - Simplifies the development and implementation of custom IoT solutions and supports ad-hoc testing with built-in mock devices.
-  - Integrates with Time Series Insights and can define rules for generating alerts. This might help you eliminate the need for dedicated stream processing services, such as Stream Analytics.
+  - Integrates with Time Series Insights and can define rules for generating alerts. This integration might help you eliminate the need for dedicated stream processing services, such as Stream Analytics.
 - Azure IoT Hub. This service is optimized for reliable and secure bidirectional communications between IoT devices and cloud services. Just as Azure IoT Central, it incorporates Device Provisioning Service (DPS) as a helper service for in-bulk, zero-touch, just-in-time provisioning of IoT devices.
 - Azure Time Series Insights. This highly performing analytics, storage, and visualization service for time series data provides capabilities such as filtering and aggregation. Its visualization capabilities include support for overlays of different time series, dashboard comparisons, accessible tabular views, and heat maps. Azure Time Series also offers a JavaScript controls library that facilitates embedding time series charts into custom applications. It's optimized for scenarios that require aggregation over large sets of data.
 

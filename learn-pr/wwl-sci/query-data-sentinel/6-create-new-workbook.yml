@@ -1,19 +1,19 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.query-data-sentinel.6-create-new-workbook
+title: Create a new Microsoft Sentinel Workbook
 metadata:
   title: Create a new Microsoft Sentinel Workbook
-  description: Create a new Microsoft Sentinel Workbook.
-  ms.date: 12/17/2020
-  author: cwatson-cat
-  ms.author: cwatson
+  description: "Create a new Microsoft Sentinel Workbook."
+  ms.date: 01/26/2023
+  author: wwlpublish
+  ms.author: kelawson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Create a new Microsoft Sentinel Workbook
 durationInMinutes: 5
 content: |
   [!include[](includes/6-create-new-workbook.md)]
 quiz:
-  title: Check your knowledge
+  title: "Check your knowledge"
   questions:
   - content: "Which formatting does Microsoft Sentinel use to format the text in the workbook with text visualization?"
     choices:

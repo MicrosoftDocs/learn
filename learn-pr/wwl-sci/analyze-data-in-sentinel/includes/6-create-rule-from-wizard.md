@@ -1,3 +1,4 @@
+
 You can create a custom analytics rule to search for suspicious activities and threats at Contoso.
 
 ## Create a custom scheduled analytics rule
@@ -50,15 +51,15 @@ Alert enrichment enables you to further customize the result of your query.
 
 #### Entity mapping
 
-In the **Entity mapping** section, you can define up to five entities from your query results, and then use these entities to perform in-depth analysis. By selecting  **Add new entity** to add these entities in the query rule. These entities can help you perform a visual investigation because they will appear as a group on the **Incident** tab. Some of the entities contain information that represents a user, a host, or an IP address.
+In the **Entity mapping** section, you can define up to five entities from your query results, and then use these entities to perform in-depth analysis. By selecting  **Add new entity** to add these entities in the query rule. These entities can help you perform a visual investigation because they'll appear as a group on the **Incident** tab. Some of the entities contain information that represents a user, a host, or an IP address.
 
 #### Custom details
 
-In the **Custom details** section, you can set key value pairs which, if they appear in the query result, will display an event parameter in the results.  
+In the **Custom details** section, you can set key value pairs, which, if they appear in the query result, will display an event parameter in the results.  
 
 #### Alert details
 
-In the **Alert details** section, you can enter free text as parameters that can be represented in each instance of the alert; these can also be contain the tactics and severity assigned to that instance of the alert.  
+In the **Alert details** section, you can enter free text as parameters that can be represented in each instance of the alert; these can also contain the tactics and severity assigned to that instance of the alert.  
 
 ### Query Scheduling
 
@@ -71,7 +72,7 @@ In the **Alert threshold** section, you can specify the number of a positive res
 - Is greater than
 - Is fewer than
 - Is equal to
-- Is not equal to
+- Isn't equal to
 
 ### Event grouping
 
@@ -108,4 +109,4 @@ For more information about how to create a playbook and run the automated activi
 
 ## Review and create tab
 
-On the **Review and create** tab, review the settings you have configured in the wizard before creating a new rule.
+On the **Review and create** tab, review the settings you've configured in the wizard before creating a new rule.

@@ -48,13 +48,13 @@ Azure Data Lake Storage is primarily designed to work with Hadoop and all framew
 
 ### Data costs
 
-Azure Data Lake Storage is priced at Azure Blob Storage levels. It builds on Azure Blob Storage capabilities such as Automated Lifecycle Policy Management and Object Level tiering to manage big data storage costs. By using a hierarchical namespace, an Azure Data Lake Storage account provides the scalability and cost-effectiveness of object storage.
+Azure Data Lake Storage is priced at Azure Blob Storage levels. It builds on Azure Blob Storage capabilities such as Automated Lifecycle Policy Management and Object Level tiering to manage big data storage costs. An Azure Data Lake Storage account uses a hierarchical namespace, which provides the scalability and cost-effectiveness of object storage.
 
 ### Data performance
 
-The hierarchical namespace capability of Azure Data Lake Storage allows for efficient access and navigation. This architecture means that data processing requires fewer computational resources, which reduces both the speed and cost of accessing data.
+The hierarchical namespace capability of Azure Data Lake Storage allows for efficient access and navigation. This architecture means that data processing requires fewer computational resources, reducing both the speed and cost of accessing data.
 
-Azure Data Lake Storage supports high throughput for input/output&ndash;intensive analytics and data movement. To get the best performance from Azure Data Lake Storage, you should use all available *throughput*; that is, the amount of data that can be read or written per second. Azure Data Lake Storage achieves throughput maximization by performing as many reads and writes in parallel as possible.
+Azure Data Lake Storage supports high throughput for input/output intensive analytics and data movement. To get the best performance from Azure Data Lake Storage, you should use all available *throughput*; that is, the amount of data that can be read or written per second. Azure Data Lake Storage achieves throughput maximization by performing as many reads and writes in parallel as possible.
 
 ### Data security
 
@@ -77,7 +77,7 @@ Azure Data Lake Storage utilizes Azure Blob replication models. These models pro
 
 ### Data scalability
 
-Azure Data Lake Storage offers massive storage and accepts numerous data types for analytics. It doesn't impose any limits on account sizes, file sizes, or the amount of data that can be stored in the data lake. Individual blobs and files can have sizes that range from a few kilobytes (KBs) to a few petabytes (PBs). All of this means that Azure Data Lake Storage can easily and quickly scale up to meet the most demanding workloads. It can also just as easily scale back down when demand drops.
+Azure Data Lake Storage offers massive storage and accepts numerous data types for analytics. It doesn't impose any limits on account sizes, file sizes, or the amount of data that can be stored in the data lake. Individual blobs and files can have sizes that range from a few kilobytes (KBs) to a few petabytes (PBs). This design means that Azure Data Lake Storage can easily and quickly scale up to meet the most demanding workloads. It can also just as easily scale back down when demand drops.
 
 ### Data analysis
 
@@ -104,4 +104,4 @@ Data silos occur when different data sources are stored in separate locations, e
 1. Process the downloaded data in a way that makes it possible to analyze the two datasets together.
 1. Analyze the processed data.
 
-This is a time-consuming, convoluted, and complex process. However, if all the required data is stored in Azure Data Lake Storage, the business analyst or data scientist can use their tool of choice&mdash;such as Power BI or Azure HDInsight&mdash;to work directly with all the data they need. Azure Data Lake Storage leaves it up to the individual analytic framework to interpret the data and define a schema at the time of  analysis.
+These steps form a time-consuming, convoluted, and complex process. However, if all the required data is stored in Azure Data Lake Storage, the business analyst or data scientist can use their tool of choice&mdash;such as Power BI or Azure HDInsight&mdash;to work directly with all the data they need. Azure Data Lake Storage leaves it up to the individual analytic framework to interpret the data and define a schema at the time of  analysis.

@@ -2,9 +2,9 @@ With so many different data types available in C#, choosing the right one to use
 
 But before we can discuss *why* you might choose one type over another, first you need to understand how data and data types work in C# and .NET, and learn about more data types, including key differentiations between similar data types.
 
-## What is data?
+## What's data?
 
-Answering the question "what is data" depends on who you ask and the context in which context you're asking.  
+Answering the question "what's data" depends on who you ask and the context in which context you're asking.  
 
 In software development, data is essentially a value that is stored in the computer's memory as a series of bits. A **bit** is a simple binary switch represented as a `0` or `1`; or rather, "off" and "on", respectively. A single bit doesn't seem useful. However, when you combine eight bits together in a sequence, they form a **byte**. When used in a byte, each bit takes on a meaning in the sequence. In fact, you can represent 256 different combinations with just 8 bits if you use a binary (or rather, base-2) numeral system.
 
@@ -30,15 +30,15 @@ In this case, the lower-case letter `a` is equivalent to the decimal value `97`.
 |-----|-----|-----|-----|-----|-----|-----|-----|
 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | 1 |
 
-Or, rather, `64 + 32 + 1 = 97`.
+Or rather, `64 + 32 + 1 = 97`.
 
 It's likely that you'll never need to perform these types of conversions on your own, but understanding the computer's perspective of data is a foundational concept, especially as we're considering data types.
 
-## What is a data type?
+## What's a data type?
 
-A data type is a programming language construct that defines how much memory to reserve for a value. This is why we have so many data types, because the designers of the programming language understand that it will be used for many different applications and sizes of data.
+A data type is a programming language construct that defines how much memory to reserve for a value. That's why we have so many data types, because the designers of the programming language understand that it will be used for many different applications and sizes of data.
 
-Given the type of applications you'll build in your career, you'll come to realize you settle on a small subset of all the available data types. However, it's still vital to know others exist and why.
+Given the type of applications you'll build in your career, you'll come to realize that you settle on a small subset of all the available data types. However, it's still vital to know others exist and why.
 
 ## Value vs. reference types
 
@@ -50,7 +50,7 @@ This module will focus on simple value and reference types. As you learn more ab
 
 Simple value types are a set of predefined types provided by C# as keywords. These keywords are merely aliases for predefined types defined in the .NET Class Library. For example, the C# keyword `int` is an alias of a value type defined in the .NET Class Library as `System.Int32`.
 
-Simple value types include many of the data types that you may have used already like, `char` and `bool`. There are also many **integral** and **floating-point** value types to represent a wide range of whole and fractional numbers.
+Simple value types include many of the data types that you may have used already, like `char` and `bool`. There are also many **integral** and **floating-point** value types to represent a wide range of whole and fractional numbers.
 
 > [!NOTE]
 > Besides simple value types, other value types include enums and structs. However, we'll cover those in other modules.

@@ -3,9 +3,9 @@ uid: learn.wwl.translate-text-with-translation-service
 metadata:
   title: Translate text and speech
   description: "Translate text and speech"
-  ms.date: 09/02/2022
+  ms.date: 01/27/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: sheryang
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Translate text and speech
