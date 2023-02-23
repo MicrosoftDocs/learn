@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql
 metadata:
-  title: design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql
+  title: Design multi-tenant SaaS apps with Azure Cosmos DB for PostgreSQL
   description: "Azure Cosmos DB for PostgreSQL is the ideal database from hosting PostgreSQL at any scale. The distributed architecture allows multi-tenant SaaS application providers to easily scale from a single-node to a multi-node distributed cluster as the number of tenants grows."
   ms.date: 02/22/2023
   author: kylebunting
