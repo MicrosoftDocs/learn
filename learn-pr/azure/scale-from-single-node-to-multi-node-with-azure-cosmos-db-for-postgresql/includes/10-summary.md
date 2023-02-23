@@ -21,8 +21,8 @@ Delete the `learn-cosmosdb-postgresql` resource group created for the exercises 
 
 To learn more information about the topics covered in this module, see:
 
-- [Table types for Azure Cosmos DB for PostgreSQL](https://learn.microsoft.com/azure/cosmos-db/postgresql/concepts-nodes#table-types)
-- [Classify application workloads in Azure Cosmos DB for PostgreSQL](https://learn.microsoft.com/azure/cosmos-db/postgresql/quickstart-build-scalable-apps-classify)
-- [Model high-throughput transactional apps](https://learn.microsoft.com/azure/cosmos-db/postgresql/quickstart-build-scalable-apps-model-high-throughput#common-filter-as-shard-key)
-- [Choose shard count](https://learn.microsoft.com/azure/cosmos-db/postgresql/howto-shard-count)
+- [Table types for Azure Cosmos DB for PostgreSQL](/azure/cosmos-db/postgresql/concepts-nodes#table-types)
+- [Classify application workloads in Azure Cosmos DB for PostgreSQL](/azure/cosmos-db/postgresql/quickstart-build-scalable-apps-classify)
+- [Model high-throughput transactional apps](/azure/cosmos-db/postgresql/quickstart-build-scalable-apps-model-high-throughput#common-filter-as-shard-key)
+- [Choose shard count](/azure/cosmos-db/postgresql/howto-shard-count)
 - [Citus 11.1 shards your Postgres without interruption](https://www.citusdata.com/blog/2022/09/19/citus-11-1-shards-postgres-tables-without-interruption/)
