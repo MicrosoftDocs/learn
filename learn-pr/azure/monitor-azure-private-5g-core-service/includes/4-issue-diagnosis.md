@@ -11,7 +11,7 @@ If you can't find the root cause of an issue with the distributed tracing tool, 
 
 ## Video: Issue Diagnosis
 
-The following video provides an overview of how to diagnosis issues in Azure Private 5G Core
+The following video provides an overview of how to diagnose issues in Azure Private 5G Core:
 
 > [!VIDEO 9c711355-a0a0-460a-b9e9-28ceee39d603]
 
