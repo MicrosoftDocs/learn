@@ -2,15 +2,13 @@
 uid: learn.wwl.configure-virtual-machine-backups.compare-backup-options
 title: Compare the MARS agent and Azure Backup Server
 metadata:
-  title: Compare the MARS backup agent and Microsoft Azure Backup Server (MABS)
+  title: Compare the MARS agent and Azure Backup Server
   description: "Compare the Azure Recovery Services (MARS) backup agent with Azure Backup Server (MABS)."
-  ms.date: 02/10/2023
+  ms.date: 02/23/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 2
 content: |
   [!include[](includes/8-compare-backup-options.md)]
