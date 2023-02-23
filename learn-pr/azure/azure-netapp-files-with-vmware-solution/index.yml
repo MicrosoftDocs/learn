@@ -40,4 +40,4 @@ units:
 - learn.azure.azure-netapp-files-with-vmware-solution.knowledge-check
 - learn.azure.azure-netapp-files-with-vmware-solution.summary
 badge:
-  uid: http://via.placeholder.com/120x120
+  uid: learn.azure-netapp-files-with-vmware-solution.badge
