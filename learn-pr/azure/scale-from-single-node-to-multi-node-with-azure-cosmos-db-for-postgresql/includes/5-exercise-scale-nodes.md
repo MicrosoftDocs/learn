@@ -20,7 +20,7 @@ FROM events
 GROUP BY device_id;
 ```
 
-You'll store this SQL in a file and have `pgbench` run the benchmark for a period of time. It will report its findings periodically so that you can be sure the benchmark is still running. Since `pgbench` is accessing the data created in the previous exercise, this exercise is simulating scaling the Azure Cosmos DB for PostgreSQL cluster while the data is in use.
+You'll store this SQL in a file and have `pgbench` run the benchmark for some time. It reports its findings periodically so that you can be sure the benchmark is still running. Since `pgbench` is accessing the data created in the previous exercise, this exercise is simulating scaling the Azure Cosmos DB for PostgreSQL cluster while the data is in use.
 
 For this exercise, `pgbench` will be set to run for 20 minutes. The scale process may take about 20 minutes.
 
@@ -40,7 +40,7 @@ For this exercise, `pgbench` will be set to run for 20 minutes. The scale proces
 2. In the portal above Azure Cloud Shell, navigate to your Azure Cosmos DB for PostgreSQL cluster.
 3. Under **Settings** in the navigation, select **Connection String**.
 4. Copy the value for **PostgreSQL connection URL**.
-5. In the command line, store the connection URL in a variable named `PGURL`. You'll use your PostgreSQL connection URL. Be sure to update the password to your password.
+5. In the command line, store the connection URL in a variable named `PGURL`. Use your PostgreSQL connection URL, and be sure to update the password to your password.
 
     ```bash
     export PGURL='postgres://citus:YOUR_PASSWORD@YOUR_COORDINATOR_NODE_NAME.postgres.database.azure.com:5432/citus?sslmode=require'
@@ -110,7 +110,7 @@ progress: 295.0 s, 17.8 tps, lat 3752.572 ms stddev 390.830
 
 The number of transactions per second and the latency should be fairly consistent and not vary wildly throughout the process. As `pgbench` is running the query on the data loaded in the previous exercise, this is similar to your customers accessing the database while you're scaling your single-node cluster to a multi-node cluster.
 
-If the scale finishes before the 20-minute mark, use `Ctrl+C` to stop the benchmark. You'll use `pgbench` for benchmarking in an upcoming exercise. Don't close Azure Cloud Shell yet, as you need it to run a check in `psql`.
+If the scale finishes before the 20-minute mark, use `Ctrl+C` to stop the benchmark. You'll use `pgbench` for benchmarking in an upcoming exercise. Don't close Azure Cloud Shell yet, as you need it to run a check with `psql`.
 
 ## What if Wide World Importers started with minimal resources?
 
@@ -131,15 +131,15 @@ The `pgbench` process would end with:
 pgbench: fatal: Run was aborted; the above results are incomplete.
 ```
 
-If you want to prepare for growing from a single-node configuration to a multi-node configuration with minimal disruption, it is advised to start -- as we did earlier -- with the following resource allocation:
+If you want to prepare for growing from a single-node configuration to a multi-node configuration with minimal disruption, it's advised to start--as we did earlier--with the following resource allocation:
 
-- 1 node
-- Compute: 4 vCores with 16 GiB RAM
+- One node
+- Compute: 4 vCores with 16-GiB RAM
 - Storage: 512 GiB
 
 ## Confirm data isn't distributed or scaled
 
-Once the nodes are finished provisioning and `pgbench` has stopped, you can reuse the Azure Cloud Shell session for this step. As the tables haven't been converted to distributed types, they all live on the coordinator node. The `citus_tables` view shows tables that are distributed. You should not see any tables on it.
+Once the nodes are finished provisioning and `pgbench` has stopped, you can reuse the Azure Cloud Shell session for this step. As the tables haven't been converted to distributed types, they all live on the coordinator node. The `citus_tables` view shows tables that are distributed. You shouldn't see any tables on it.
 
 1. Reconnect to the Azure Cosmos DB for PostgreSQL cluster using `psql` in Azure Cloud Shell.
 2. In `psql`, run the following query:
@@ -148,4 +148,4 @@ Once the nodes are finished provisioning and `pgbench` has stopped, you can reus
     SELECT * FROM citus_tables;
     ```
 
-Notice that there are 0 tables returned. No tables have been configured for distribution yet. You need to identify how the tables should be distributed. As there is data already existing, you need to distribute the data with minimal impact to the system.
+Notice that there are no tables returned. No tables have been configured for distribution yet. You need to identify how the tables should be distributed. As there's data already existing, you need to distribute the data with minimal impact to the system.
