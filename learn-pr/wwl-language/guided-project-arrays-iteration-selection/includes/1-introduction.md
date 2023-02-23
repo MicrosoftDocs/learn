@@ -1,0 +1,24 @@
+
+The ability to branch code execution and iterate a code block are essential capabilities for a developer. In C#, you can use an `if` statement to process a selection of different code blocks based the evaluation of an expression. In addition, you can use a `foreach` statement to loop through each element in an array. When you combine the ability to iterate through an array with the ability to branch the execution path, you are able to create powerful and extensible code.
+
+Suppose you're a teacher's assistant that has been working on an application to help automate the grading process. Your C# programming skills have increased since you handed off the initial version of your application. The teacher has asked you to update the application to include what you've learned about arrays, `foreach` statements, and `if` statements. You have also been tasked with including extra credit assignments in the calculation of the final grade.  
+
+This module will guide you through the steps required as you update your Student Grading application. Your updated code will use arrays to store student names and the scores of graded assignments, and you will use `foreach` statements to iterate through the array values. Each student's final score and letter grade will be calculated and displayed according to the teacher's specification.
+
+By the end of this module, you'll be able to implement arrays, `foreach` statements, and `if` statements to create applications that efficiently process data using nested iteration and branching logic.
+
+> [!NOTE]
+> This is a guided project module where you’ll complete an end-to-end project by following step-by-step instructions.
+
+## Learning Objectives
+
+In this module, you'll practice how to:
+
+- Use Visual Studio Code to develop a C# console application that uses foreach loops to access array data.
+- Use if statements to evaluate conditions and create code branches.
+
+## Prerequisites
+
+- Experience using Visual Studio Code to develop, build, and run C# console applications that include console I/O and access the methods of .NET classes.
+- Experience using if statements in C# to evaluate an expression and branch code accordingly.
+- Experience using a foreach loop to access elements of array variables.
