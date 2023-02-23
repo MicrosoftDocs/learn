@@ -1,5 +1,6 @@
 
 
+
 In this module, you learned how to:
 
 * Describe the app patterns typically used in Durable Functions
