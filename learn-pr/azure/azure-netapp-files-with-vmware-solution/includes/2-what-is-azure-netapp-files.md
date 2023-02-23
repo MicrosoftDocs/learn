@@ -25,6 +25,7 @@ Although Azure NetApp Files instances run on bare-metal NetApp devices, that har
 An Azure NetApp Files snapshot is a point-in-time image of a volume. These snapshots have low overhead because of the way Azure NetApp Files performs volume virtualization. Like a database, this layer uses pointers to the actual data blocks on disk. However, unlike a database, it doesn't rewrite existing blocks. It writes updated data to a new block and changes the pointer.
 
 The following diagram illustrates the snapshot process:
+
 1. Time A. A snapshot (Snapshot 1) is created.
 1. Time B. Changed data (B is now B1) is written to a new block and the pointer is updated. However, the snapshot pointer still points to the previously written block, giving you both a live view and a historical view of the data.
 1. Time C. Another snapshot (Snapshot 2) is created. Now you have access to three generations of data—the live data, Snapshot 2, and Snapshot 1, in descending order of age, without taking up the volume space that three full copies would require.

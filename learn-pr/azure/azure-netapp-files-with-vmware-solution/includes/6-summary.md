@@ -1,6 +1,7 @@
 In this module, we explored the benefits of using Azure NetApp Files to extend your Azure VMware Solution configuration. Azure NetApp Files with Azure VMware Solution is designed for situations where:
 
-* You need to scale your storage and have shifting storage needs in the process.
+* You need to scale your storage.
+* You anticipate fluctuating storage demands.
 * You want to scale storage independent of compute, creating lower TCO.
 
 In addition to understanding why to use Azure NetApp Files with Azure VMware Solution, we've learned:

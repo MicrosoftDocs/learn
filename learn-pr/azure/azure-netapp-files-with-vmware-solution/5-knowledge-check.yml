@@ -10,7 +10,7 @@ metadata:
   ms.author: anfdocs
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 5
+durationInMinutes: 4
 content: |
 quiz: 
   questions: 
@@ -33,28 +33,28 @@ quiz:
       - content: "The region of the NetApp subscription"
         isCorrect: true 
         explanation: "Correct. Performance tier and volume size determine Azure NetApp Files performance."
-      - content: "Volume quota."
+      - content: "Volume quota"
         isCorrect: false
         explanation: "Incorrect. Performance tier and volume size determine Azure NetApp Files performance."
   - content: "Suppose an administrator working with Azure VMware Solution is evaluating attaching Azure NetApp Files. Which scenario would you advise they not use Azure NetApp Files for?"
     choices:
-    - content: "A small scale workload with fairly constant data needs."
+    - content: "A small scale workload with fairly constant data needs"
       isCorrect: true
-      explanation: "Correct.Azure NetApp Files is particularly suited for migrating and running complex, file-based applications with no code change."
-    - content: "A data administrator wants to stop relying on a DR data center."
+      explanation: "Correct. Although Azure NetApp Files would work in this situation, Azure NetApp Files is particularly suited for migrating and running complex, file-based applications with no code change."
+    - content: "A data administrator wants to stop relying on a DR data center"
       isCorrect: false
       explanation: "Incorrect. Connecting your Azure VMware Solution to Azure NetApp Files can mitigate your reliance on a DR data center."
-    - content: "A dynamic workload that has shifting needs."
+    - content: "A dynamic workload that has shifting needs"
       isCorrect: false
       explanation: "Incorrect. You can use Azure NetApp Files to scale storage with your Azure VMware Solution deployment without having to waste Azure VMware Solution CPU and memory costs."
-  - content: "Which option is a primary business benefit of Azure NetApp Files attached to Azure VMware Solution?"
+  - content: "What is a primary business benefit of attaching Azure NetApp Files to Azure VMware Solution?"
     choices: 
-      - content: "Reduced TCO"
+      - content: "Reduced Azure VMware Solution CPU and memory costs"
         isCorrect: true
-        explanation: "Correct."
+        explanation: "Correct. Azure NetApp Files offloads I/O and memory from Azure VMware solution which can improve Azure VMware Solution performance."
       - content: "Combine block and file storage"
         isCorrect: false
-        explanation: "Incorrect."
-      - content: "Increased ____?"
+        explanation: "Incorrect. Azure NetApp Files is a file storage service"
+      - content: "Increased reliance on a DR data center."
         isCorrect: false 
-        explanation: "Incorrect."
+        explanation: "Incorrect. Azure NetApp Files offers data replication features such as backup and cross-region replication that can mitigate your reliance on a DR data center."

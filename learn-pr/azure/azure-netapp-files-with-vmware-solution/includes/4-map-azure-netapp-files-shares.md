@@ -2,7 +2,7 @@ Once you have your Azure NetApp Files configuration established, it is easy to c
 
 The following diagram shows a connection through Azure ExpressRoute to an Azure VMware Solution private cloud. ExpressRoute is used to connect private clouds to on-premises environments. The connection requires a virtual network (VNet) with an ExpressRoute circuit to on-premises in your subscription. The Azure VMware Solution environment accesses the Azure NetApp Files share mounted on Azure VMware Solution VMs.
 
-:::image type="content" source="../media/2-what-is-azure-netapp-files-snapshots.png" alt-text="Diagram depicting the topology of Azure NetApp Files." lightbox="../media/2-what-is-azure-netapp-files-snapshots.png":::
+:::image type="content" source="../media/4-azure-netapp-files-topology.png" alt-text="Diagram depicting the topology of Azure NetApp Files." lightbox="../media/4-azure-netapp-files-topology.png":::
 
 ## Map NFS
 
