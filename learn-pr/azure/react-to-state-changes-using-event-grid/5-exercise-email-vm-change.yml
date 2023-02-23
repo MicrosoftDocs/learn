@@ -3,7 +3,7 @@ uid: learn.react-to-state-changes-using-event-grid.5-exercise-email-vm-change
 metadata:
   title: Exercise - Send an email when virtual machines change
   description: Check an event and trigger an email
-  ms.date: 04/30/2019
+  ms.date: 02/22/2023
   author: spelluru
   ms.author: spelluru
   ms.topic: interactive-tutorial
