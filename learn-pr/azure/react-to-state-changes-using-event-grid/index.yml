@@ -35,6 +35,7 @@ units:
 - learn.react-to-state-changes-using-event-grid.3-exercise-trigger-logic-app
 - learn.react-to-state-changes-using-event-grid.4-build-logic-respond-event
 - learn.react-to-state-changes-using-event-grid.5-exercise-email-vm-change
-- learn.react-to-state-changes-using-event-grid.6-summary
+- learn.react-to-state-changes-using-event-grid.6-knowledge-check
+- learn.react-to-state-changes-using-event-grid.7-summary
 badge:
   uid: learn.react-to-state-changes-using-event-grid.badge
