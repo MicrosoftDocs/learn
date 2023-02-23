@@ -7,7 +7,7 @@ metadata:
   description: "Create a single-node cluster in Azure Cosmos DB for PostgreSQL."
   ms.date: 12/22/2022
   author: sadukie
-  ms.author: {{msUser}}
+  ms.author: jonels
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 13

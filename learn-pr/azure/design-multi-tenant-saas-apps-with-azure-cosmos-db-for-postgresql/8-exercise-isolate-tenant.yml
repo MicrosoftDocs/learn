@@ -6,7 +6,7 @@ metadata:
   description: "In this exercise, you identify a noisy tenant and isolate it to a dedicated worker node to reduce resource contention and improve overall quality of service."
   ms.date: 11/29/2022
   author: kylebunting
-  ms.author: {{msUser}}
+  ms.author: jonels
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 7

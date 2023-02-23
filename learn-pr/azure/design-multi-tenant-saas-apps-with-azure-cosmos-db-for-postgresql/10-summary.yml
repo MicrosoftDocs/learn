@@ -6,7 +6,7 @@ metadata:
   description: "In this module, you learned how to efficiently scale and monitor an Azure Cosmos DB for PostgreSQL cluster for multi-tenant SaaS applications."
   ms.date: 11/29/2022
   author: kylebunting
-  ms.author: {{msUser}}
+  ms.author: jonels
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 2

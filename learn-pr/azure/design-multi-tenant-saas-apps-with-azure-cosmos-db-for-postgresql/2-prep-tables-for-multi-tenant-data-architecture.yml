@@ -6,7 +6,7 @@ metadata:
   description: "Migrating a multi-tenant database from a single to a multi-node Azure Cosmos DB for PostgreSQL cluster can be accomplished quickly and easily in the Azure portal. However, there is some planning and work that you must complete to prepare the database for a multi-tenant architecture."
   ms.date: 11/29/2022
   author: kylebunting
-  ms.author: {{msUser}}
+  ms.author: jonels
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 10

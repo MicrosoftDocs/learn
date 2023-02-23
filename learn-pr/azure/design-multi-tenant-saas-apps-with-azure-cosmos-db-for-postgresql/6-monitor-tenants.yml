@@ -6,7 +6,7 @@ metadata:
   description: "Azure Cosmos DB for PostgreSQL makes it easy to view and understand what the tenants in your multi-tenant database are doing."
   ms.date: 11/29/2022
   author: kylebunting
-  ms.author: {{msUser}}
+  ms.author: jonels
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 6

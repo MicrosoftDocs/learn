@@ -6,7 +6,7 @@ metadata:
   description: "In this exercise, you scale a single-node Azure Cosmos DB for PostgreSQL database to a multi-node cluster and distribute the tables in the database across worker nodes."
   ms.date: 11/29/2022
   author: kylebunting
-  ms.author: {{msUser}}
+  ms.author: jonels
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 15
