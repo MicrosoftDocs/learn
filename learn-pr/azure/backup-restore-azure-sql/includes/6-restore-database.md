@@ -4,7 +4,7 @@ Here, you'll learn how to restore an Azure SQL Server database from automated da
 
 ## What you can restore
 
-Automated backups in Azure SQL Database copy databases to blobs in read-access geo-redundant storage (RA-GRS) accounts on the schedule that you specify. If you want to restore one of these backups, you must create a new database to contain the restored data. You can't restore a database over an existing database.
+Automated backups in Azure SQL Database, copy databases to blobs in read-access geo-redundant storage (RA-GRS) accounts on the schedule that you specify. If you want to restore one of these backups, you must create a new database to contain the restored data. You can't restore a database over an existing database.
 
 You can create the database on the same server where the backup was taken or on another server with these options:
 

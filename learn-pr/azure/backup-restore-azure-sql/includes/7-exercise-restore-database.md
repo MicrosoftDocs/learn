@@ -1,8 +1,8 @@
 Trial restores are a key component of any disaster recovery strategy.
 
-You want to familiarize yourself with the steps to restore a backed-up database to a specific point in time, in case it becomes necessary. You also want to investigate how long a restore operation will take. That way, you can plan for this time in your guidance for your organization.
+You want to familiarize yourself with the steps to restore a backed-up database to a specific point in time, in case it becomes necessary. You also want to investigate how long a restore operation takes. That way, you can plan for this time in your guidance for your organization.
 
-Here, you'll perform a restore of from automated Azure SQL Database backups.
+Here, you'll perform a restore from automated Azure SQL Database backups.
 
 ## Confirm that backups are active
 
@@ -81,7 +81,7 @@ The **Person** table was mistakenly deleted. Now, let's restore the database to 
 
     :::image type="content" source="../media/7-restore-sql-database-pitr-2022.png" alt-text="Screenshot that shows the restore database page with the Review + create button selected.":::
 
-1. Select **Create**. The database restore will take several minutes.
+1. Select **Create**. The database restore takes several minutes to complete.
 
 ## View the restored database
 
@@ -114,4 +114,4 @@ The restored database should contain the **Person** table. You can check that in
 
     ![Screenshot of confirmed results after querying for the tables in the database.](../media/7-query-after-restore-2.png)
 
-You've now seen how you can restore a database if something unintended happens to the data. You've familiarized yourself with the restore process. You can now assure your organization that your backup and restore procedures are properly defined.
+You've now seen how you can restore a database if something unintended happens to the data. You've familiarized yourself with the restore process. You can now assure your organization that you've properly defined the backup and restore procedures.
