@@ -1,3 +1,4 @@
+
 Azure Backup provides independent and isolated backups to guard against unintended destruction of the data on your virtual machines. Administrators can implement Azure services to support their backup requirements, including the Microsoft Azure Recovery Services (MARS) agent for Azure Backup, the Microsoft Azure Backup Server (MABS), Azure managed disks snapshots, and Azure Site Recovery.
 
 In this module, suppose your company has several critical virtual machine workloads running on Azure. You're responsible for ensuring the company can recover these virtual machines if there's data loss or corruption. You're using the built-in capabilities of Azure Backup to help protect your virtual machines. Your configuration uses Azure Backup for both Azure and on-premises workloads.

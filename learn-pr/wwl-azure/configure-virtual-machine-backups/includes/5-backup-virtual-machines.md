@@ -1,3 +1,4 @@
+
 To use Azure Backup to protect your Azure virtual machines, you follow a simple three-step process: create a vault, define your backup options, and trigger the backup job.
 
 :::image type="content" source="../media/backup-steps-97429b0d.png" alt-text="Illustration that shows the three basic steps to back up an Azure virtual machine by using Azure Backup." border="false":::
