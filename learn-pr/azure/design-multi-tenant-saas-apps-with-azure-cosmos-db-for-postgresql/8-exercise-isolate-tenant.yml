@@ -4,7 +4,7 @@ title: Exercise - Isolate a tenant in a multi-tenant database
 metadata:
   title: exercise-isolate-tenant
   description: "In this exercise, you identify a noisy tenant and isolate it to a dedicated worker node to reduce resource contention and improve overall quality of service."
-  ms.date: 11/29/2022
+  ms.date: 02/22/2023
   author: kylebunting
   ms.author: jonels
   ms.topic: interactive-tutorial
