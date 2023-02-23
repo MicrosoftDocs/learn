@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.react-to-state-changes-using-event-grid.6-summary
+uid: learn.react-to-state-changes-using-event-grid.7-summary
 metadata:
   title: Summary
   description: Review what you have learned about Azure Event Grid.
-  ms.date: 04/30/2019
+  ms.date: 02/22/2023
   author: spelluru
   ms.author: spelluru
   ms.topic: interactive-tutorial
@@ -11,4 +11,4 @@ metadata:
 title: Summary
 durationInMinutes: 5
 content: |
-  [!include[](includes/6-summary.md)]
+  [!include[](includes/7-summary.md)]

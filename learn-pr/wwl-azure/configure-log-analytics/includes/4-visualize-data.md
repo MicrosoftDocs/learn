@@ -1,11 +1,32 @@
-Log Analytics provides a query syntax to quickly retrieve and consolidate data in the repository. You can create and save Log Searches to directly analyze data in the portal. You can also create log searches to run automatically and create an alert.
+Log Analytics in Azure Monitor supports the Kusto Query Language (KQL). The KQL syntax helps you quickly and easily create simple or complex queries to retrieve and consolidate your monitoring data in the repository. 
 
-This video shows how to write log queries in Azure Monitor. The next topic will review the query structure. 
+## Write KQL log queries for Azure Monitor
 
+Watch the following video to learn how to write KQL log queries with Log Analytics in Azure Monitor. The video covers the following concepts:
 
+- View table data in the Azure Monitor Logs repository
+- Create simple and complex queries
+- Filter and summarize search results
+- Add visualizations for search results
 
-<iframe width="854" height="480" src="https://www.youtube.com/embed/cAzlAg2L1Bg" title="How to write log queries in Azure Monitor" allowfullscreen></iframe><br/>
+<iframe width="854" height="480" src="https://www.youtube.com/embed/cAzlAg2L1Bg" title="Video that shows how to write KQL log queries for Azure Monitor." allowfullscreen></iframe><br>
 
+In the next unit, we take a closer look at how to structure a KQL query.
 
+### Things to consider when using KQL queries
 
-To give a quick graphical view of the health of your overall environment, you can add visualizations for saved log searches to your dashboard. To analyze data outside of Log Analytics, you can export the data from the repository into tools such as Power BI or Excel. You can also use the Log Search API to build custom solutions.
+Here are some of the many things you can accomplish with KQL log queries in Log Analytics:
+
+_Create and save searches of your data stored in the Azure Monitor Logs repository_.
+
+_Use your saved log searches to directly analyze your data in the Azure portal_.
+
+_Configure your saved log searches to run automatically_.
+
+_Configure your saved log searches to produce notification alerts_.
+
+_Add visualizations for your saved log searches to see graphical views of your environment health_.
+
+_Export your data from the repository into tools like Power BI or Excel to analyze your data outside of Log Analytics_.
+
+_Build custom query solutions with the [Log Analytics REST API](/rest/api/loganalytics/)_.
