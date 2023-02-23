@@ -25,20 +25,20 @@ levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/m
 roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
   - developer
 products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
-- azure
-- azure-cosmos-db-for-postgresql
+  - azure
+  - azure-cosmos-db
 subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
   - cloud-computing
 units:
-- learn.design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql.introduction
-- learn.design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql.prep-tables-for-multi-tenant-data-architecture
-- learn.design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql.exercise-prep-tables-for-distribution
-- learn.design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql.distribute-tables-with-minimal-app-disruption
-- learn.design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql.exercise-distribute-multi-tenant-tables
-- learn.design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql.monitor-tenants
-- learn.design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql.isolate-tenants
-- learn.design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql.exercise-isolate-tenant
-- learn.design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql.knowledge-check
-- learn.design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql.summary
+  - learn.design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql.introduction
+  - learn.design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql.prep-tables-for-multi-tenant-data-architecture
+  - learn.design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql.exercise-prep-tables-for-distribution
+  - learn.design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql.distribute-tables-with-minimal-app-disruption
+  - learn.design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql.exercise-distribute-multi-tenant-tables
+  - learn.design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql.monitor-tenants
+  - learn.design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql.isolate-tenants
+  - learn.design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql.exercise-isolate-tenant
+  - learn.design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql.knowledge-check
+  - learn.design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql.summary
 badge:
   uid: learn.design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql.badge

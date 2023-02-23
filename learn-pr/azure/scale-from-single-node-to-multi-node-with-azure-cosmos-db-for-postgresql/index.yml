@@ -24,19 +24,19 @@ levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/m
 roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
   - developer
 products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
-- azure
-- azure-cosmos-db-for-postgresql
+  - azure
+  - azure-cosmos-db
 subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
   - cloud-computing
 units:
-- learn.scale-from-single-node-to-multi-node-with-azure-cosmos-db-for-postgresql.introduction
-- learn.scale-from-single-node-to-multi-node-with-azure-cosmos-db-for-postgresql.use-cases-for-single-node
-- learn.scale-from-single-node-to-multi-node-with-azure-cosmos-db-for-postgresql.exercise-create-single-node-cluster
-- learn.scale-from-single-node-to-multi-node-with-azure-cosmos-db-for-postgresql.understand-architecture
-- learn.scale-from-single-node-to-multi-node-with-azure-cosmos-db-for-postgresql.exercise-scale-nodes
-- learn.scale-from-single-node-to-multi-node-with-azure-cosmos-db-for-postgresql.address-schema-concerns
-- learn.scale-from-single-node-to-multi-node-with-azure-cosmos-db-for-postgresql.distribute-tables
-- learn.scale-from-single-node-to-multi-node-with-azure-cosmos-db-for-postgresql.knowledge-check
-- learn.scale-from-single-node-to-multi-node-with-azure-cosmos-db-for-postgresql.summary
+  - learn.scale-from-single-node-to-multi-node-with-azure-cosmos-db-for-postgresql.introduction
+  - learn.scale-from-single-node-to-multi-node-with-azure-cosmos-db-for-postgresql.use-cases-for-single-node
+  - learn.scale-from-single-node-to-multi-node-with-azure-cosmos-db-for-postgresql.exercise-create-single-node-cluster
+  - learn.scale-from-single-node-to-multi-node-with-azure-cosmos-db-for-postgresql.understand-architecture
+  - learn.scale-from-single-node-to-multi-node-with-azure-cosmos-db-for-postgresql.exercise-scale-nodes
+  - learn.scale-from-single-node-to-multi-node-with-azure-cosmos-db-for-postgresql.address-schema-concerns
+  - learn.scale-from-single-node-to-multi-node-with-azure-cosmos-db-for-postgresql.distribute-tables
+  - learn.scale-from-single-node-to-multi-node-with-azure-cosmos-db-for-postgresql.knowledge-check
+  - learn.scale-from-single-node-to-multi-node-with-azure-cosmos-db-for-postgresql.summary
 badge:
   uid: learn.scale-from-single-node-to-multi-node-with-azure-cosmos-db-for-postgresql.badge
