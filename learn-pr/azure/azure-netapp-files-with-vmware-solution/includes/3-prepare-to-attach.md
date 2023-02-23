@@ -20,4 +20,4 @@ You can easily connect Azure NetApp Files to Azure VMware Solution. When creatin
 
 You must also [delegate a subnet](/azure/azure-netapp-files/azure-netapp-files-delegate-subnet) for your Azure NetApp Files volume. It's recommended you use a dedicated virtual network connected via ExpressRoute gateway.
 
-When delegating a subnet in Azure NetApp Files, it defaults to a /24 network mask, which provides for 251 available IP addresses. Subnet delegation should be Microsoft.NetApp/volumes. 
+When you delegate a subnet in Azure NetApp Files, it defaults to a /24 network mask, which provides for 251 available IP addresses. Subnet delegation should be Microsoft.NetApp/volumes. 

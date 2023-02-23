@@ -6,7 +6,7 @@ In this module, we explored the benefits of using Azure NetApp Files to extend y
 In addition to understanding why to use Azure NetApp Files with Azure VMware Solution, we've learned:
 
 * How to set up your Azure NetApp Files configuration
-* ow to connect your Azure NetApp Files volumes to an Azure VMware Solution VM
+* How to connect your Azure NetApp Files volumes to an Azure VMware Solution VM
 
 Implementing enterprise workloads requires storage performance, maximum availability, and the flexibility to meet any demand
 
