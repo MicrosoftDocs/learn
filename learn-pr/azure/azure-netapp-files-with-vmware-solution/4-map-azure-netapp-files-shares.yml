@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.azure-netapp-files-with-vmware-solution.prepare-to-attach
+uid: learn.azure.azure-netapp-files-with-vmware-solution.map-azure-netapp-files-shares
 title: Map Azure NetApp Files shares to a VM
 metadata:
   unitType: learning-content

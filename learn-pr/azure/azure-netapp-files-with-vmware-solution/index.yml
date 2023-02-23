@@ -36,8 +36,8 @@ units:
 - learn.azure.azure-netapp-files-with-vmware-solution.introduction
 - learn.azure.azure-netapp-files.what-is-azure-netapp-files
 - learn.azure.azure-netapp-files-with-vmware-solution.prepare-to-attach
-- learn.azure-netapp-files-with-vmware-solution.map-to-vm
-- learn.azure-netapp-files-with-vmware-solution.knowledge-check
-- learn.azure-netapp-files-with-vmware-solution.summary
+- learn.azure.azure-netapp-files-with-vmware-solution.map-to-vm
+- learn.azure.azure-netapp-files-with-vmware-solution.knowledge-check
+- learn.azure.azure-netapp-files-with-vmware-solution.summary
 badge:
   uid: http://via.placeholder.com/120x120
