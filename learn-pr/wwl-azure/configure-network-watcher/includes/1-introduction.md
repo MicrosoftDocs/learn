@@ -13,10 +13,9 @@ In this module, you learn how to:
 
 The content in the module helps you prepare for [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104). The module covers the following course concept requirements:
 
-Configure and manage virtual networking (25–30%)
+Configure and manage virtual networking (25-30%) 
 
 - Monitor and troubleshoot virtual networking.
-   - Configure and use Network Performance Monitor.
    - Configure Azure Network Watcher.
 
 ## Prerequisites
