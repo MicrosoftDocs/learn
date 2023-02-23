@@ -1,8 +1,8 @@
 In this exercise, you create the tables and seed the data for the sensors database. This is the single-node database:
 
 - `device_types` has a `device_type_id` field and a `name` field. `device_type_id` is its primary key.
-- `devices` has three fields - `device_id`, `device_type_id`, and `name`. The `device_id` field is the primary key. There is a foreign key relationship on the `device_type_id` field that references the `device_type_id` field on the `device_types` table.
-- `events` has three fields - `event_id`, `device_id`, and `payload`. The `event_id` is its primary key. There is a foreign key relation on the `device_id` that references the `device_id` field on the `devices` table.
+- `devices` has three fields - `device_id`, `device_type_id`, and `name`. The `device_id` field is the primary key. There's a foreign key relationship on the `device_type_id` field that references the `device_type_id` field on the `device_types` table.
+- `events` has three fields - `event_id`, `device_id`, and `payload`. The `event_id` is its primary key. There's a foreign key relation on the `device_id` that references the `device_id` field on the `devices` table.
 
 ![Diagram of the relationships between device types, devices, and events. The device_types table has two fields - device_type_id and name. device_type_id is its primary key. The devices table has three fields - device_id, device_type_id, and name. device_id is its primary key. The devices table has a foreign key relationship on device_type_id that references the device_type_id field on the device_types table. The events table has three fields - event_id, device_id, and payload. event_id is its primary key. The events table has a foreign key relationship on its device_id that references the device_id field on the devices table.](../media/normalized-database-erd.png)
 
@@ -18,7 +18,7 @@ For this module, you'll go through the process of minimal downtime. There are al
 
 Create an Azure Cosmos DB for PostgreSQL database with the following specifications:
 
-- One node with 4 vCores, 16 GiB RAM, and 512 GiB storage.
+- One node with 4 vCores, 16-GiB RAM, and 512-GiB storage.
 
 1. Open a web browser and navigate to the [Azure portal](https://portal.azure.com/).
 
@@ -65,7 +65,7 @@ Create an Azure Cosmos DB for PostgreSQL database with the following specificati
 
 Once the Azure Cosmos DB for PostgreSQL account is created, then you need to enable the resource to be accessible to other resources. You need to do this so that you can access the server via `psql` in Azure Cloud Shell.
 
-1. Once the account is created, select **Go to resource**. This will take you to the Azure Cosmos DB for PostgreSQL account.
+1. Once the account is created, select **Go to resource**. This takes you to the Azure Cosmos DB for PostgreSQL account.
 2. From the navigation, in the **Settings** section, select **Networking**.
 3. On the **Networking** blade, check the checkbox labeled **Allow public access from Azure services and resources within Azure to this cluster**.
 
@@ -134,7 +134,7 @@ Confirm that the tables were created by running the following command:
 \dt
 ```
 
-The output will look like this:
+The output looks like this:
 
 ```text
            List of relations
@@ -168,17 +168,17 @@ You should see something like this in the Indexes section:
 
 ### Confirm that the tables aren't yet distributed
 
-The `citus_tables` view will show any tables that are distributed. To ensure these newly created tables aren't yet distributed, run the following query:
+The `citus_tables` view shows any tables that are distributed. To ensure these newly created tables aren't yet distributed, run the following query:
 
 ```sql
 SELECT * FROM citus_tables;
 ```
 
-The results should show 0 rows. None of these tables are distributed.
+The results should show zero rows. None of these tables are distributed.
 
 ## Load the data
 
-As you are creating a demo environment to show the Wide World Importers tech leads how to handle the migration of their data, you can set up your environment with simulated data. Keep in mind that the chilly chocolates are best kept at 55-60 degrees Fahrenheit and 60-70 % humidity.
+As you're creating a demo environment to show the Wide World Importers tech leads how to handle the migration of their data, you can set up your environment with simulated data. Keep in mind that the chilly chocolates are best kept at 55-60 degrees Fahrenheit and 60-70 % humidity.
 
 Because of foreign key relationships, the tables will be loaded in the following order:
 
@@ -188,7 +188,7 @@ Because of foreign key relationships, the tables will be loaded in the following
 
 You'll create functions to create fake data.
 
-1. There are 2 device types. Use the following command to populate the `device_types` table:
+1. There are two device types. Use the following command to populate the `device_types` table:
 
     ```sql
     INSERT INTO device_types (device_type_id,device_type) VALUES (1,'delivery truck'),(2,'warehouse');
@@ -308,7 +308,7 @@ You'll create functions to create fake data.
     SELECT COUNT(*) FROM events;
     ```
 
-    The output will look like this:
+    The output looks like this:
 
     ```text
      count 
@@ -329,7 +329,7 @@ You'll create functions to create fake data.
 
 ## Query the data
 
-You want to look at the events for the devices to make sure they are keeping chilly chocolates in the right temperature and humidity values. The ideal environment for the chilly chocolates is 55-60 degrees Fahrenheit with humidity in the range of 60-70%. Run the following query to look for the problems:
+You want to look at the events for the devices to make sure they're keeping chilly chocolates in the right temperature and humidity values. The ideal environment for the chilly chocolates is 55-60 degrees Fahrenheit with humidity in the range of 60-70%. Run the following query to look for the problems:
 
 ```sql
 SELECT * FROM events 
@@ -349,7 +349,7 @@ GROUP BY device_id
 ORDER BY COUNT(event_id) DESC;
 ```
 
-The results will show many devices in the single digits. However, `device_id` 42 will have issues in the thousands. It is running out of the required ranges. Are these problems specific to temperature or humidity?
+The results show many devices in the single digits. However, `device_id` 42 has issues in the thousands. It's running out of the required ranges. Are these problems specific to temperature or humidity?
 
 Use the following query to get more insight:
 
@@ -372,7 +372,7 @@ In the generated sample, the results look like this:
            0 |         2739 |              0 |             601 |             599 |               2737
 ```
 
-This looks like the chilly chocolates near device 42 are on their way to becoming melted chocolates. Wide World Importers will need to handle the situation near device 42.
+This looks like the chilly chocolates near device 42 are on their way to becoming melted chocolates. Wide World Importers need to handle the situation near device 42.
 
 Suppose there was a growth in the number of sensors. Add another 50,000 records with the following command:
 
@@ -380,7 +380,7 @@ Suppose there was a growth in the number of sensors. Add another 50,000 records 
 CALL create_events(50000);
 ```
 
-Now re-run the query to inspect device 42's problems. What do the results look like?
+Now rerun the query to inspect device 42's problems. What do the results look like?
 
 They may look like this:
 
@@ -393,7 +393,7 @@ They may look like this:
 
 You can continue to use `create_events()` to generate more sample sensor data as needed.
 
-For this exercise, once you are done in psql, exit with the following command:
+For this exercise, once you're done in psql, exit with the following command:
 
 ```sql
 \q

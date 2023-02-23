@@ -2,11 +2,11 @@ Tailspin Toys tasked you with creating a solution for improving performance and 
 
 In this module, you learned how to efficiently migrate a single-node database for a multi-tenant SaaS application to a multi-node instance with minimal application disruption. You also examined how to prepare and distribute tables to work effectively in a multi-node database and how to use monitoring to identify "noisy" tenants and isolate them onto dedicated nodes in the cluster.
 
-In this module, you prepared tables in a single-node database for distribution and transitioned from a single-node to a multi-node database in Azure Cosmos DB for PostgreSQL. Using the multi-node database, you distributed multi-tenant tables across nodes, while ensuring the changes resulted in minimal application impact. You also monitored utilization of a multi-tenant database using multiple built in views and functions in Azure Cosmos DB for PostgreSQL.
+In this module, you prepared tables in a single-node database for distribution and transitioned from a single-node to a multi-node database in Azure Cosmos DB for PostgreSQL. Using the multi-node database, you distributed multi-tenant tables across nodes, while ensuring the changes resulted in minimal application impact. You also monitored utilization of a multi-tenant database using multiple built-in views and functions in Azure Cosmos DB for PostgreSQL.
 
 ## Clean up
 
-To ensure you are not charged for the configured capacity of the resources you created for the exercises in this module, it is essential that you clean up any provisioned resources. If you did not delete your resource group in Unit 8 - Exercise - Monitoring and Tenant Isolation, follow these instructions:
+To ensure you aren't charged for the configured capacity of the resources you created for the exercises in this module, it's essential that you clean up any provisioned resources. If you didn't delete your resource group in Unit 8 - Exercise - Monitoring and Tenant Isolation, follow these instructions:
 
 1. Open a web browser and navigate to the [Azure portal](https://portal.azure.com/).
 2. In the left-hand navigation menu, select **Resource Groups**, and then select the `learn-cosmosdb-postgresql` resource group you created as part of the exercise in Unit 3.

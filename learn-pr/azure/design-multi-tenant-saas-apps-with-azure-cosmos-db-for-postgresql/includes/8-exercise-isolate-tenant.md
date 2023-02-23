@@ -1,4 +1,4 @@
-To improve resource allocation and make guarantees of tenant quality of service in the Tailspin Toys multi-tenant SaaS application, you want to isolate the largest stores onto dedicated nodes in the cluster. In this exercise, you will add a new worker node to your cluster, separate the most prominent tenant's data into dedicated shards, and then move that store to the new worker node.
+To improve resource allocation and make guarantees of tenant quality of service in the Tailspin Toys multi-tenant SaaS application, you want to isolate the largest stores onto dedicated nodes in the cluster. In this exercise, you'll add a new worker node to your cluster, separate the most prominent tenant's data into dedicated shards, and then move that store to the new worker node.
 
 ## Add a new node to the cluster
 
@@ -10,11 +10,11 @@ Now that you have completed migrating Tailspin Toys' database to a multi-node in
 
     ![On the Azure Cosmos DB for PostgreSQL Cluster Scale blade in the Azure portal, the 3 nodes is selected for the node count and the save button is highlighted.](../media/cosmos-db-postgresql-scale-3-nodes.png)
 
-    Once your new node has been successfully added, it will be available in the system. However, no tenants are stored on it yet, and no queries will be run there. You will use built-in functions to relocate Tailspin Toys' most active tenant to the new worker node below.
+    Once your new node has been successfully added, it'll be available in the system. However, no tenants are stored on it yet, and no queries will be run there. You'll use built-in functions to relocate Tailspin Toys' most active tenant to the new worker node below.
 
 ## Connect to the database using psql in the Azure Cloud Shell
 
-You will use `psql` from the command line to make your database changes. `psql` is a command line tool that allows you to interactively issue queries to a PostgreSQL database and view the query results.
+You'll use `psql` from the command line to make your database changes. `psql` is a command line tool that allows you to interactively issue queries to a PostgreSQL database and view the query results.
 
 1. From your Azure Cosmos DB for PostgreSQL resource in the [Azure portal](https://portal.azure.com/), select **Connection strings** under **Settings** from the left-hand navigation menu, and then copy the connection string labeled **psql**.
 
@@ -26,7 +26,7 @@ You will use `psql` from the command line to make your database changes. `psql` 
 
     ![The Cloud Shell icon is highlighted on the Azure portal toolbar and a Cloud Shell dialog is open at the bottom of the browser window.](../media/azure-cloud-shell.png)
 
-    The Cloud Shell will open as an embedded panel at the bottom of your browser window. Alternatively, you can open the [Azure Cloud Shell](https://shell.azure.com/) in a different web browser.
+    The Cloud Shell opens as an embedded panel at the bottom of your browser window. Alternatively, you can open the [Azure Cloud Shell](https://shell.azure.com/) in a different web browser.
 
 4. In the Cloud Shell pane, ensure **Bash** is selected for the environment, then use the `psql` command-line utility to connect to your database. Paste your updated connection string (the one containing your correct password) at the prompt in the Cloud Shell, and then run the command, which should look similar to the following:
 
@@ -99,13 +99,13 @@ To help reduce resource contention in the database, Tailspin Toys has requested 
 
 Now that you've identified the tenant storing the most data and sending a high percentage of traffic into the Tailspin Toys database, you want to isolate that tenant into a dedicated shard.
 
-Use the `isolate_tenant_to_new_shard()` function to move the data for the tenant into a dedicated shard. The table has co-located data, so you are also required to use the `CASCADE` option to move co-located table data.
+Use the `isolate_tenant_to_new_shard()` function to move the data for the tenant into a dedicated shard. The table has co-located data, so you're also required to use the `CASCADE` option to move co-located table data.
 
 ```sql
 SELECT isolate_tenant_to_new_shard('orders', 5, 'CASCADE');
 ```
 
-The output from running `isolate_tenant_to_new_shard()` provides the id of the new shard into which the tenant was isolated.
+The output from running `isolate_tenant_to_new_shard()` provides the ID of the new shard into which the tenant was isolated.
 
 ```text
     isolate_tenant_to_new_shard 
@@ -131,7 +131,7 @@ To improve resource allocation and better provide guarantees of tenant quality o
     SELECT * from citus_get_active_worker_nodes() ORDER BY node_name;
     ```
 
-    The new node should have a name starting with "private-w2." If you do not see it, wait a minute or two and rerun the query.
+    The new node should have a name starting with "private-w2." If you don't see it, wait a minute or two and rerun the query.
 
 3. Finally, call the `citus_move_shard_placement()` function to move the shard to the new worker node you created for this tenant. Before executing the query below, you should replace the following tokens:
 
@@ -172,7 +172,7 @@ To improve resource allocation and better provide guarantees of tenant quality o
     ORDER BY table_name DESC;
     ```
 
-    In the query output, note the `shard_count` and `size` values. Your new node contains a single shard for each table, and each of those shards has data for store id `5` only.
+    In the query output, note the `shard_count` and `size` values. Your new node contains a single shard for each table, and each of those shards has data for store ID `5` only.
 
     ```text
     -[ RECORD 1 ]--------------------------------------------------------------------
@@ -203,7 +203,7 @@ To improve resource allocation and better provide guarantees of tenant quality o
 
 ## Stop scheduled jobs and disconnect from the database
 
-Congratulations! You have successfully isolated the largest tenant onto a dedicated node in Tailspin Toys' multi-tenant SaaS application's Azure Cosmos DB for PostgreSQL database.
+Congratulations! You've successfully isolated the largest tenant onto a dedicated node in Tailspin Toys' multi-tenant SaaS application's Azure Cosmos DB for PostgreSQL database.
 
 1. In the Cloud Shell, disable the task creating orders in the database by using the following command:
 
@@ -219,7 +219,7 @@ Congratulations! You have successfully isolated the largest tenant onto a dedica
 
 ## Clean up
 
-It is essential that you clean up any unused resources. You are charged for the configured capacity, not how much the database is used.
+It's essential that you clean up any unused resources. You're charged for the configured capacity, not how much the database is used.
 
 1. Open a web browser and navigate to the [Azure portal](https://portal.azure.com/).
 2. In the left-hand navigation menu, select **Resource Groups**, and then select the `learn-cosmosdb-postgresql` resource group you created as part of the exercise in Unit 3.

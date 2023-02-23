@@ -1,4 +1,4 @@
-Monitoring your database can provide valuable information about the types and frequency of queries being executed against your data, as well as who is running those queries. Data collected from monitoring can also help you troubleshoot and optimize your multi-tenant Azure Cosmos DB for PostgreSQL cluster.
+Monitoring your database can provide valuable information about the types and frequency of queries being executed against your data, and who is running those queries. Data collected from monitoring can also help you troubleshoot and optimize your multi-tenant Azure Cosmos DB for PostgreSQL cluster.
 
 Tailspin Toys requested that you devise a solution to monitor activity in the database and provide a mechanism for identifying which tenants are most active and using more resources than others. Tailspin Toys is interested in learning more about:
 
@@ -46,7 +46,7 @@ partition_key | 5
 calls         | 1
 ```
 
-Inspecting the output, you will see that each record includes the query executed and the `parition_key` (i.e., tenant id) executing the query. For cross-partition queries, the `partition_key` value will be empty. This information allows you to write queries against the `citus_stat_statements` table specific to individual tenants.
+Inspecting the output, you'll see that each record includes the query executed and the `parition_key` (that is, tenant ID) executing the query. For cross-partition queries, the `partition_key` value is empty. This information allows you to write queries against the `citus_stat_statements` table specific to individual tenants.
 
 ## Identify "noisy" tenants
 
@@ -79,7 +79,7 @@ This information provided by this query can help identify tenants to isolate, sh
 
 ## Identify tenants using the most storage space
 
-Determining the amount of storage space used per tenant in the Tailspin Toys database requires using several built-in citus functions. The example query below uses a common table expression or CTE to calculate the percentage of the `orders` table size comprised by each tenant. The CTE is then referenced to retrieve the `shardid` associated with each store and calculate the percentage of storage space used as a function of the overall `orders` table size. In addition, the percentage of storage used in the shard is determined.
+Determining the amount of storage space used per tenant in the Tailspin Toys database requires using several built-in Citus functions. The example query below uses a common table expression or CTE to calculate the percentage of the `orders` table size comprised by each tenant. The CTE is then referenced to retrieve the `shardid` associated with each store and calculate the percentage of storage space used as a function of the overall `orders` table size. In addition, the percentage of storage used in the shard is determined.
 
 ```sql
 -- Get the percentage of table and shard size per tenant
@@ -110,7 +110,7 @@ Using this query, you can find tenants occupying a high percentage of space with
 
 ## Monitor cross-shard versus single-shard queries
 
-In Tailspin Toys' multi-tenant database, you would expect most queries to target a single tenant and run on a single shard. Using `citus_stat_statements`, you can query for the percentage of queries that span across shards. Seeing too many multi-tenant (i.e., cross-shard) queries indicates the proper filters may not be applied to correctly match a single tenant, resulting in unnecessary network calls, slower performance, and possible security issues.
+In Tailspin Toys' multi-tenant database, you would expect most queries to target a single tenant and run on a single shard. Using `citus_stat_statements`, you can query for the percentage of queries that span across shards. Seeing too many multi-tenant (that is, cross-shard) queries indicates the proper filters may not be applied to correctly match a single tenant, resulting in unnecessary network calls, slower performance, and possible security issues.
 
 To view a breakdown of how many cross-shard versus single-shard queries are happening in the database, you can run the following:
 
@@ -126,7 +126,7 @@ FROM (
 ) AS t;
 ```
 
-For multi-tenant SaaS applications, there are typically a few cross-tenant queries executed by the SaaS provider. These are commonly used to collect internal statistics about customers and how they use the application. However, Tailspin Toys' tenant stores are prohibited from viewing each other's data, so monitoring the percentage of cross-shard queries can be a valuable tool in validating application queries are working as expected. A noteworthy increase in this ratio may indicate that queries are not filtering as expected.
+For multi-tenant SaaS applications, there are typically a few cross-tenant queries executed by the SaaS provider. These are commonly used to collect internal statistics about customers and how they use the application. However, Tailspin Toys' tenant stores are prohibited from viewing each other's data, so monitoring the percentage of cross-shard queries can be a valuable tool in validating application queries are working as expected. A noteworthy increase in this ratio may indicate that queries aren't filtering as expected.
 
 ```text
  cross_shard | shard  
@@ -134,7 +134,7 @@ For multi-tenant SaaS applications, there are typically a few cross-tenant queri
    7.14      |  92.86
 ```
 
-This query provides a clear view into the percentage of queries executed in the database that are cross-shard and could potentially be optimized. From here, you can determine a baseline for the percentage of cross-shard queries coming from your SaaS application and analytics and monitoring solutions. If you see an increase in cross-shard queries after application updates, you should raise errors or send alerts on cross-shard application queries and gradually start removing them from your app or modifying them accordingly.
+This query provides a clear view into the percentage of queries executed in the database that are cross-shard and could potentially be optimized. From here, you can determine a baseline for the percentage of cross-shard queries coming from your SaaS application and analytics and monitoring solutions. If you see an increase in cross-shard queries after application updates, you should raise errors or send alerts on cross-shard application queries, and gradually start removing them from your app or modifying them accordingly.
 
 ## Monitor skewness and rebalance shards
 
@@ -149,7 +149,7 @@ GROUP BY table_name, nodename
 ORDER BY table_name, size DESC;
 ```
 
-Looking at the shard size values for Tailspin Toys, one node for both `orders` and `line_items` is almost double the size of the other nodes. This size difference is a good indicator of skewness.
+Looking at the shard size values for Tailspin Toys, one node for both `orders` and `line_items` is almost twice the size of the other nodes. This size difference is a good indicator of skewness.
 
 ```text
  table_name |                              nodename                               |   size    
@@ -180,7 +180,7 @@ SELECT rebalance_table_shards('orders', rebalance_strategy:='by_disk_size');
 
 The function rebalances all tables in the same co-location group, so repeating the process for every distributed table is unnecessary.
 
-After initiating the shard rebalancer, you will see an output indicating which shards are being moved and to what node they are moving. Running the query against `citus_shards` again to view shard sizes per table reveals the total shard sizes on each node are more evenly distributed.
+After initiating the shard rebalancer, you'll see an output indicating which shards are being moved and to what node they're moving. Running the query against `citus_shards` again to view shard sizes per table reveals the total shard sizes on each node are more evenly distributed.
 
 ```text
  table_name |                              nodename                               |   size    
@@ -199,4 +199,4 @@ After initiating the shard rebalancer, you will see an output indicating which s
  line_items | private-w0.learn-cosmosdb-postgresql-kb.postgres.database.azure.com | 297762816
 ```
 
-It is important to note that standard shard rebalancing distributes shards to equalize node storage usage. It does not examine which tenants are allocated on each shard, so while it can improve overall performance, it may or may not enhance the mixing of large and small tenants.
+It's important to note that standard shard rebalancing distributes shards to equalize node storage usage. It doesn't examine which tenants are allocated on each shard, so while it can improve overall performance, it may or may not enhance the mixing of large and small tenants.

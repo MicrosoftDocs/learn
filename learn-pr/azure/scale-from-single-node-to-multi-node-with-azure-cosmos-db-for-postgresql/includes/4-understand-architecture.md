@@ -1,4 +1,4 @@
-Before distributing the data, it is important to understand the change of the architecture when going from a single-node cluster of Azure Cosmos DB for PostgreSQL to a multi-node cluster. Those changes also impact how queries are handled.
+Before distributing the data, it's important to understand the change of the architecture when going from a single-node cluster of Azure Cosmos DB for PostgreSQL to a multi-node cluster. Those changes also impact how queries are handled.
 
 ## The architecture of the single-node cluster
 
@@ -8,7 +8,7 @@ When working in a single-node cluster of Azure Cosmos DB for PostgreSQL, the sin
 
 ![This is a screenshot from the Scale blade of an Azure CosmosDB for PostgreSQL Cluster. This shows a circle split in half with a number 1 for the number of nodes. The circle is labeled 'Coordinator - Worker'.](../media/single-node-scale-page.png)
 
-A single node is a plain Postgres database with the Citus extension. In applications when your workload fits in 64 vCores, 256GB RAM, and 2TB storage, you can use a single-node Azure Cosmos DB for PostgreSQL cluster. This size is common for:
+A single node is a plain Postgres database with the Citus extension. In applications when your workload fits in 64 vCores, 256-GB RAM, and 2-TB storage, you can use a single-node Azure Cosmos DB for PostgreSQL cluster. This size is common for:
 
 - Small production databases
 - Test environments
@@ -58,7 +58,7 @@ Sample shard for device 928:
 | 5544107 |       928 | {"humidity": 68.6607868897564, "temperature": 56.5935687642908} | 2022-12-21 13:31:00.014786 |
 | 5537103 |       928 | {"humidity": 66.0234045588083, "temperature": 55.1323718123326} | 2022-12-21 13:30:00.013265 |
 
-These shards are hosted on and queried by worker nodes. In the case of going from a single-node cluster to a multi-node cluster, the coordinator can also host and query shards. The coordinator tracks the shard placements on the nodes in metadata tables. The `citus_shards` view can help you determine which shards are placed on which nodes. Where are these shards stored?
+These shards are hosted on and queried by worker nodes. When going from a single-node cluster to a multi-node cluster, the coordinator can also host and query shards. The coordinator tracks the shard placements on the nodes in metadata tables. The `citus_shards` view can help you determine which shards are placed on which nodes. Where are these shards stored?
 
 ```sql
 SELECT table_name, shardid, shard_name, nodename, shard_size 
@@ -66,7 +66,7 @@ FROM citus_shards
 WHERE table_name='events'::regclass;
 ```
 
-The output will look like this:
+The output looks like this:
 
 | table_name | shardid | shard_name   |                          nodename                          | shard_size |
 |------------|---------|----------------|------------------------------------------------------------|------------|
@@ -83,7 +83,7 @@ FROM citus_shards
 GROUP BY table_name, nodename;
 ```
 
-The output will look similar to this:
+The output looks similar to this:
 
 | table_name  |                     nodename  | count |    sum   |
 | --------------|------------------------------------------------------------|-------|-----------|
@@ -91,7 +91,7 @@ The output will look similar to this:
 | events       | private-w0.cosmos-sensors-data.postgres.database.azure.com |    11 | 216293376 |
 | events       | private-w1.cosmos-sensors-data.postgres.database.azure.com |    11 | 206503936 |
 
-The coordinator handles planning the queries and engages only the necessary nodes with the required shards. If the coordinator can't determine which shards need to be queried, it will engage all nodes to query all shards.
+The coordinator handles planning the queries and engages only the necessary nodes with the required shards. If the coordinator can't determine which shards need to be queried, it engages all nodes to query all shards.
 
 When data is distributed, this is how a query is processed:
 
@@ -113,7 +113,7 @@ When moving to a multiple-node configuration for the Azure Cosmos DB for Postgre
 
 The coordinator node handles planning query execution as well as storing the metadata and some tables. Each worker node contains shards of distributed tables. Each worker node processes its part of a query in parallel in a multi-node configuration rather than the serial processing in a single-node non-distributed environment. If the data is distributed in a logical manner that aligns with users' query patterns, the queries can perform quicker with parallel processing.
 
-For Wide World Importers' sensors data, the data can be sharded across multiple nodes. Since this is starting from a single-node configuration, the coordinator node will host shards.
+For Wide World Importers' sensors data, the data can be sharded across multiple nodes. Since this is starting from a single-node configuration, the coordinator node hosts shards.
 
 ![Diagram of the Coordinator Node and 2 Workers with shards split among all nodes. Each worker node and the coordinator node have multiple shards.](../media/coordinator-workers-with-shards.png)
 
@@ -134,9 +134,9 @@ SELECT device_id, COUNT((CASE WHEN (payload ->> 'humidity')::decimal < 60 THEN 1
     GROUP BY device_id;
 ```
 
-Since this query doesn't call out a specific device, the coordinator will engage all worker nodes to query all shards to find matching records.
+Since this query doesn't call out a specific device, the coordinator engages all worker nodes to query all shards to find matching records.
 
-You can query the coordinator for the query plan with the `EXPLAIN` keyword. The query plan will show how many shards are engaged through the count of tasks in the query plan header. This is the query plan header for the query above:
+You can query the coordinator for the query plan with the `EXPLAIN` keyword. The query plan shows how many shards are engaged through the count of tasks in the query plan header. This is the query plan header for the query above:
 
 ```text
 ---------------------------------------------------------------------------
@@ -149,7 +149,7 @@ How does shard placement impact query processing? This is what query processing 
 
 ![Animation showing query processing for the outliers query. The query is in a box. An animated arrow goes from the query box to the coordinator node. The coordinator node pulses to indicate activity. Then, arrows animate from the coordinator to 2 worker nodes. The worker nodes and the coordinator node pulse to indicate activity. Then, an arrow goes from the engaged worker nodes back to the coordinator node. The coordinator node pulses for more activity, then an arrow appears going from the coordinator node back to the query.](../media/query-nodes-all-devices.gif)
 
-As was previously discovered, device 42 has a problem. When a specific device is identified, run queries filtered for that device. When you run the following query, the coordinator will engage only the node that has the shard for device 42.
+As was previously discovered, device 42 has a problem. When a specific device is identified, run queries filtered for that device. When you run the following query, the coordinator engages only the node that has the shard for device 42.
 
 ```sql
 SELECT * FROM events 
@@ -171,7 +171,7 @@ The query plan header looks like this:
    Task Count: 1
 ```
 
-The query plan header indicates 1 task, which means only one shard will need to be queried. Only the worker node with that shard will process the query. No other worker nodes are engaged.
+The query plan header indicates one task, which means only one shard needs to be queried. Only the worker node with that shard will process the query. No other worker nodes are engaged.
 
 This is what the query processing looks like for events for a specific device.
 

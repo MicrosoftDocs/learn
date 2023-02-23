@@ -1,8 +1,8 @@
-Tailspin Toys has indicated that they host websites for toy stores of all sizes, and while most of them are small boutique toy stores serving tens to hundreds of thousands of customers, a few of the stores are very large, with millions of customers worldwide. The largest stores have significantly more traffic than other stores.
+Tailspin Toys has indicated that they host websites for toy stores of all sizes, and while most of them are small boutique toy stores serving tens to hundreds of thousands of customers, a few of the stores are large, with millions of customers worldwide. The largest stores have significantly more traffic than other stores.
 
 When distributing data in a multi-node database, Azure Cosmos DB for PostgreSQL places table rows into worker shards based on the hashed value of the rows’ distribution column. Every shard contains a range of hashed values, meaning multiple distribution column values can reside within the same shard. For multi-tenant SaaS applications, a single shard can host data for numerous tenants.
 
-Given the drastically varying sizes of stores hosting their websites in Tailspin Toys' SaaS app, you suspect some of the performance issues they have experienced are likely due to resource contention between large and small tenants residing in the same shards. To improve resource allocation and make guarantees of tenant quality of service, you are interested in isolating Tailspin Toys' largest tenants to dedicated nodes in the cluster.
+Given the drastically varying sizes of stores hosting their websites in Tailspin Toys' SaaS app, you suspect some of the performance issues they have experienced are likely due to resource contention between large and small tenants residing in the same shards. To improve resource allocation and make guarantees of tenant quality of service, you're interested in isolating Tailspin Toys' largest tenants to dedicated nodes in the cluster.
 
 There are two steps you must take to isolate a tenant to a specific node:
 
@@ -11,7 +11,7 @@ There are two steps you must take to isolate a tenant to a specific node:
 
 ## Isolate tenant data to a dedicated shard
 
-The `isolate_tenant_to_new_shard()` function is used to move tenant data into a new dedicated shard. To better understand how the procedure works, you want to use the most active tenant in Tailspin Toys' database, store id `5`, and the `orders` table as an example.
+The `isolate_tenant_to_new_shard()` function is used to move tenant data into a new dedicated shard. To better understand how the procedure works, you want to use the most active tenant in Tailspin Toys' database, store ID `5`, and the `orders` table as an example.
 
 ```sql
 SELECT isolate_tenant_to_new_shard('orders', 5);
@@ -19,11 +19,11 @@ SELECT isolate_tenant_to_new_shard('orders', 5);
 
 Invoking the function to isolate the tenant with `store_id` of `5` into a new shard happens in three steps:
 
-1. First, a new shard will be created exclusively for `orders` rows whose distribution column value equals `5`. The hash range for this shard includes only a single distribution column hash, so it excludes all other rows.
-2. Rows in the `orders` table whose distribution column value matches the specified tenant id are moved from their current shard to the new one.
+1. First, a new shard is created exclusively for `orders` rows whose distribution column value equals `5`. The hash range for this shard includes only a single distribution column hash, so it excludes all other rows.
+2. Rows in the `orders` table whose distribution column value matches the specified tenant ID are moved from their current shard to the new one.
 3. The old shard is split into two new fragments with hash ranges that abut the range of the new shard.
 
-You assigned the same distribution column for each table when distributing the Tailspin Toys table data. As a result, each tenant's data from all tables are co-located. As shown above, the `isolate_tenant_to_new_chard()` function will return an error and advise using the `CASCADE` option. This option instructs the process to isolate tenant rows of not just the table specified in the function call but of all co-located tables as well. Continuing the example from above, you need to rewrite the SQL command to be:
+You assigned the same distribution column for each table when distributing the Tailspin Toys table data. As a result, each tenant's data from all tables are co-located. As shown above, the `isolate_tenant_to_new_chard()` function returns an error and advise using the `CASCADE` option. This option instructs the process to isolate tenant rows of not just the table specified in the function call but of all co-located tables as well. Continuing the example from above, you need to rewrite the SQL command to be:
 
 ```sql
 SELECT isolate_tenant_to_new_shard('orders', 5, 'CASCADE');
