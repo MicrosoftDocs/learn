@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.guided-project-calculate-print-student-grades
+metadata:
+  title: Guided project - Calculate and print student grades
+  description: "<div|<span style=\"color:rgb(34, 34, 34);font-family:&quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, Verdana;font-size:12px;display:inline !important;\"|Learn to develop an application that will calculate and display results based on given data.</span|  </div|"
+  ms.date: 02/23/2023
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Guided project - Calculate and print student grades
+summary: Learn to develop an application that will calculate and display results based on given data.
+abstract: |
+  After you complete this module, you'll be able to:
+  * Learn to develop basic applications by breaking down the work into smaller parts
+  * Identify appropriate data types for storing and working with variables
+  * Perform mathematical operations to determine results
+  * Apply formatting techniques to display output
+prerequisites: |
+  * Beginner level experience with basic C# syntax rules
+  * Beginner level experience with displaying a message to a console using the Console.WriteLine() and Console.Write() methods
+  * Beginner level experience with creating literal values and declare variables of basic data types like string, int, and decimal
+  * Beginner level experience with string concatenation and string interpolation
+  * Beginner level experience with performing basic operations on numbers
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- dotnet
+- vs-code
+subjects:
+- development-tools
+units:
+- learn.wwl.guided-project-calculate-print-student-grades.introduction
+- learn.wwl.guided-project-calculate-print-student-grades.prepare
+- learn.wwl.guided-project-calculate-print-student-grades.exercise-store-data
+- learn.wwl.guided-project-calculate-print-student-grades.exercise-perform-division
+- learn.wwl.guided-project-calculate-print-student-grades.exercise-format-strings
+- learn.wwl.guided-project-calculate-print-student-grades.knowledge-check
+- learn.wwl.guided-project-calculate-print-student-grades.summary
+badge:
+  uid: learn.wwl.guided-project-calculate-print-student-grades.badge
