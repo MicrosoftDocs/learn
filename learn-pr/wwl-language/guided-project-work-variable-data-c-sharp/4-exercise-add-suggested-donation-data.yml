@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-work-variable-data-c-sharp.exercise-add-suggested-donation-data
+title: Exercise - Add suggestedDonation data
+metadata:
+  title: Exercise - Add suggestedDonation data
+  description: "Exercise - Add suggestedDonation data"
+  ms.date: 02/23/2023
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-exercise-add-suggested-donation-data.md)]

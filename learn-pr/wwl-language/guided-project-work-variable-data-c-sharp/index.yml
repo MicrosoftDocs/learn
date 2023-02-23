@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.guided-project-work-variable-data-c-sharp
+metadata:
+  title: Guided project - Work with variable data in C#
+  description: "Guided project - Work with variable data in C#"
+  ms.date: 02/23/2023
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Guided project - Work with variable data in C#
+summary: Demonstrate your ability to develop a console app that implements data formatting and using arrays to deliver a search feature.
+abstract: |
+  *   Apply iteration statements to gather data input
+  *   Use data processing
+  *   Format data output
+  *   Choose the correct data types and safely convert data types
+  *   Manipulate number, string and character arrays, as well as add, remove, and sort data
+  *   Modify and build complex strings from multiple data sources, and format data for display across regions
+prerequisites: |
+  - Experience using Visual Studio Code to develop, build, and run C# console applications that include console I/O and access the methods of .NET classes
+  - Experience using C# code to evaluate conditional expressions and manage variable scope inside and outside of code blocks
+  - Experience using if-elseif-else and switch-case statements in C# to match a variable or expression against several possible outcomes
+  - Experience using foreach and for statements in C# to loop through a block of code and access elements of array variables
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+- k-12-educator
+- student
+products:
+- dotnet-framework
+- vs-code
+units:
+- learn.wwl.guided-project-work-variable-data-c-sharp.introduction
+- learn.wwl.guided-project-work-variable-data-c-sharp.prepare
+- learn.wwl.guided-project-work-variable-data-c-sharp.exercise-review-starter-code
+- learn.wwl.guided-project-work-variable-data-c-sharp.exercise-add-suggested-donation-data
+- learn.wwl.guided-project-work-variable-data-c-sharp.exercise-add-search
+- learn.wwl.guided-project-work-variable-data-c-sharp.knowledge-check
+- learn.wwl.guided-project-work-variable-data-c-sharp.summary
+badge:
+  uid: learn.wwl.guided-project-work-variable-data-c-sharp.badge

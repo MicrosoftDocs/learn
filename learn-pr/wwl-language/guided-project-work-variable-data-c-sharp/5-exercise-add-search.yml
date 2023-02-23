@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-work-variable-data-c-sharp.exercise-add-search
+title: Exercise - Add dog search
+metadata:
+  title: Exercise - Add dog search
+  description: "Exercise - Add dog search"
+  ms.date: 02/23/2023
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-exercise-add-search.md)]
