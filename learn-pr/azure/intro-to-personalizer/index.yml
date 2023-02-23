@@ -3,7 +3,7 @@ uid: learn.azure.intro-to-personalizer
 metadata:
   title: Introduction to Personalizer
   description: Discover the Personalizer service that is part of the Azure Decision services offerings.
-  ms.date: 01/09/2021
+  ms.date: 02/23/2023
   author: gerryo
   ms.author: gerryo
   ms.topic: interactive-tutorial
@@ -19,6 +19,7 @@ prerequisites: |
   - Basic familiarity with Azure
   - Ability to navigate the Azure portal
   - Basic familiarity with Azure Cognitive Services
+  - Foundational knowledge of REST
 iconUrl: /training/achievements/intro-to-personalizer.svg
 levels:
 - beginner
