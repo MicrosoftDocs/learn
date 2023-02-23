@@ -10,5 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: None
+durationInMinutes: 7
 content: |
   [!include[](includes/3-azure-ad-application-scenarios.md)]
