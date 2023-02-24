@@ -1,3 +1,4 @@
+
 Ensure that your database is always encrypted.
 
 ### SQL Database Always Encrypted

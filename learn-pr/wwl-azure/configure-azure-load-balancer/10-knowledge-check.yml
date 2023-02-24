@@ -4,32 +4,17 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/31/2023
+  ms.date: 02/24/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/10-knowledge-check.md)]
 quiz:
   title: ""
-
   questions:
-  - content: "Which type of Azure load balancer can direct traffic to resources inside virtual networks?"
-    choices:
-    - content: "External load balancer"
-      isCorrect: false
-      explanation: "Incorrect. An external load balancer supports outside traffic only."
-    - content: "Internal load balancer"
-      isCorrect: true
-      explanation: "Correct. An internal load balancer directs traffic only to resources that are inside a virtual network, or to resources that use a VPN to access Azure infrastructure."
-    - content: "Public load balancer"
-      isCorrect: false
-      explanation: "Incorrect. A public load balancer maps the public IP address and port number of incoming traffic to the private IP address and port number of the virtual machine."
-
   - content: "What's the default distribution type for traffic through a load balancer?"
     choices:
     - content: "Source IP affinity"
@@ -41,7 +26,6 @@ quiz:
     - content: "Five-tuple hash"
       isCorrect: true
       explanation: "Correct. The load balancer uses a five-tuple (source IP, source port, destination IP, destination port, and protocol type) hash to map traffic to available servers."
-  
   - content: "Which configuration is required for an internal load balancer?"
     choices:
     - content: "Virtual machines must be in the same virtual network."
