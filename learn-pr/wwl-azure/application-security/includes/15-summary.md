@@ -11,7 +11,7 @@ You should be able to:
 
 Microsoft Learn provides a large number of self-paced learning paths. For this lesson, we recommend the following modules. You may search and find other modules that are of interest to you.
 
- -  [Authenticate apps to Azure services by using service principals and managed identities for Azure resources](/learn/modules/authenticate-apps-with-managed-identities/)
- -  [Secure your application by using OpenID Connect and Azure AD](/learn/modules/secure-app-with-oidc-and-azure-ad/)
- -  [Permissions and Consent Framework](/learn/modules/identity-permissions-consent/)
- -  [Application types in Microsoft identity](/learn/modules/identity-application-types/)
+ -  [Authenticate apps to Azure services by using service principals and managed identities for Azure resources](/training/modules/authenticate-apps-with-managed-identities/)
+ -  [Secure your application by using OpenID Connect and Azure AD](/training/modules/secure-app-with-oidc-and-azure-ad/)
+ -  [Permissions and Consent Framework](/training/modules/identity-permissions-consent/)
+ -  [Application types in Microsoft identity](/training/modules/identity-application-types/)

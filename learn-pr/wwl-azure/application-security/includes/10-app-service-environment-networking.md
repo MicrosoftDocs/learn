@@ -12,7 +12,7 @@ The size of the subnet can affect the scaling limits of the App Service plan ins
 
 If you use a smaller subnet, be aware of the following limitations:
 
- -  Any particular subnet has five addresses reserved for management purposes. In addition to the management addresses, App Service Environment dynamically scales the supporting infrastructure and uses between 4 and 27 addresses, depending on the configuration and load. You can use the remaining addresses for instances in the App Service plan. The minimal size of your subnet is a /27 address space (32 addresses).<br>
+ -  Any particular subnet has five addresses reserved for management purposes. In addition to the management addresses, App Service Environment dynamically scales the supporting infrastructure and uses between 4 and 27 addresses, depending on the configuration and load. You can use the remaining addresses for instances in the App Service plan. The minimal size of your subnet is a /27 address space (32 addresses).
  -  If you run out of addresses within your subnet, you can be restricted from scaling out your App Service plans in the App Service Environment. Another possibility is that you can experience increased latency during intensive traffic load if Microsoft can't scale the supporting infrastructure.
 
 ## Addresses
@@ -77,7 +77,7 @@ App Service Environment has the following network information at creation:
 :::row-end:::
 
 
-:::image type="content" source="../media/app-service-environment-networking-page-in-azure-f216027c.png":::
+:::image type="content" source="../media/app-service-environment-networking-page-in-azure-f216027c.png" alt-text="Screenshot showing App Service Environment IP address page.":::
 
 
-As you scale your App Service plans in your App Service Environment, you'll use more addresses from your subnet. The number of addresses you use varies based on the number of App Service plan instances you have and how much traffic there is. Apps in the App Service Environment don't have dedicated addresses in the subnet. The specific addresses an app uses in the subnet will change over time.<br>
+As you scale your App Service plans in your App Service Environment, you'll use more addresses from your subnet. The number of addresses you use varies based on the number of App Service plan instances you have and how much traffic there is. Apps in the App Service Environment don't have dedicated addresses in the subnet. The specific addresses an app uses in the subnet will change over time.

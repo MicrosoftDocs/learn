@@ -1,7 +1,7 @@
 
 Azure App Service Environment can be deployed across **availability zones (AZ)** to help you achieve resiliency and reliability for your business-critical workloads. This architecture is also known as zone redundancy.
 
-:::image type="content" source="../media/app-service-availability-zone-710690d2.png" alt-text="Image showing Azure region availability zones.":::
+:::image type="content" source="../media/app-service-availability-zone-710690d2.png" alt-text="Screenshot showing Azure region availability zones.":::
 
 
 When you configure it to be zone redundant, the platform automatically spreads the instances of the Azure App Service plan across three zones in the selected region. This means that the minimum App Service Plan instance count will always be three. If you specify a capacity larger than three, and the number of instances is divisible by three, the instances are spread evenly. Otherwise, **instance counts beyond 3\*N** are spread across the remaining one or two zones.

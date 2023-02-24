@@ -13,7 +13,7 @@ With the Microsoft identity platform, one can expand their reach to these kinds 
 
 You can use the Azure portal to register and configure your application and use the Microsoft Graph API for programmatic application configuration.
 
-### Microsoft identity platform<br>
+### Microsoft identity platform
 
 The following diagram depicts the Microsoft identity experience at a high level, including the app registration experience, software development kits (SDKs), endpoints, and supported identities.
 
@@ -125,6 +125,6 @@ The Microsoft Authentication Library can be used in many application scenarios, 
 :::row-end:::
 
 
-### Migrate apps that use ADAL to MSAL<br>
+### Migrate apps that use ADAL to MSAL
 
 Active Directory Authentication Library (ADAL) integrates with the Azure AD for developers (v1.0) endpoint, where MSAL integrates with the Microsoft identity platform. The v1.0 endpoint supports work accounts but not personal accounts. The v2.0 endpoint is unifying Microsoft personal accounts and works accounts into a single authentication system. Additionally, with MSAL, you can also get authentications for Azure AD B2C.
