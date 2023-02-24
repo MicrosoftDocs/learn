@@ -1,4 +1,4 @@
-Azure AD Connect will integrate your on-premises directories with Azure Active Directory. This allows you to provide a common identity for your users for Microsoft 365, Azure, and SaaS applications integrated with Azure **AD**.
+Azure AD Connect will integrate your on-premises directories with Azure Active Directory. This allows you to provide a common identity for your users for Microsoft 365, Azure, and SaaS applications integrated with Azure AD.
 
 :::image type="content" source="../media/az500-active-directory-connect-0d951381.png" alt-text="Azure AD Connect is shown connecting on-premises AD to Azure AD.":::
 
