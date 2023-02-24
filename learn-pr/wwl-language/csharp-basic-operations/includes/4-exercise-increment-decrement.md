@@ -4,7 +4,7 @@ The final basic operations you'll learn about in this module is how to increment
 
 ## Increment and decrement
 
-Frequently, you'll need to increment and/or decrement values, especially when you writing looping logic or code that interacts with a data structure.
+Frequently, you'll need to increment and/or decrement values, especially when you're writing looping logic or code that interacts with a data structure.
 
 The `+=` operator adds and assigns the value on the right of the operator to the value on the left of the operator. So, lines two and three in the following code snippet are the same:
 
