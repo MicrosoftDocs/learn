@@ -6,7 +6,7 @@ Use Visual Studio Code to develop a version of a C# console application. The app
 
 For the new features of the Contoso Pets application, the design specification provides details for the dog search and suggested donation features:
 
-1. Dog attribute search
+- Dog attribute search
 
     - Gather input for the pet characteristic search term
     - Loop through the animals array and identify "dogs"
@@ -14,7 +14,7 @@ For the new features of the Contoso Pets application, the design specification p
     - Search the combined description for the input term match
     - Output the dogs that have a term match
 
-2. Suggested donation data
+- Suggested donation data
 
     - Define `suggestedDonation` string
     - Expand the `ourAnimals` array to contain `suggestedDonation` and populate sample data for `suggestedDonation`
@@ -32,12 +32,12 @@ Initial starter code development is complete.
     - the code uses a for loop around an if-elseif-else construct to populate the ourAnimals array with a sample dataset
     - the code displays the following main menu options for user selection:
 
-    ```output
-    1. List all of our current pet information
-    2. Display all dogs with a specified characteristic
+        ```output
+        1. List all of our current pet information
+        2. Display all dogs with a specified characteristic
 
-    Enter menu item selection or type "Exit" to exit the program
-    ```
+        Enter menu item selection or type "Exit" to exit the program
+        ```
 
     - the code reads the user's menu item selection and displays a message echoing their selection
     - only selection "1. List all of our current pet information" functions using the starter code

@@ -172,7 +172,7 @@ The variable `suggestedDonation` is intended to be a numeric value, but is colle
 
 The addition of the `suggestedDonation` data created need for further updates. The menu option `"1. List all of our current pet information"` is missing the added data.
 
-1. Notice the code under comment #5, for the menu loop within `case 1.
+1. Notice the code under comment #5, for the menu loop within `case 1`.
 
     The inner loop "`for (int j = 0; j < `**`6`**`; j++)`" that prints the pet attributes needs to account for  `suggestedDonation` data added.
 

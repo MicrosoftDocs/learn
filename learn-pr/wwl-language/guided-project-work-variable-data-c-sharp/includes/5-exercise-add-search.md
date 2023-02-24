@@ -54,7 +54,7 @@ The tasks that you complete during this exercise are:
     - After `Console.ReadLine()` gathers user input as `dogCharacteristic` it ensures value isn't null, and sets the string to lowercase and trims the surrounding spaces.
     - If `dogCharacteristic` has a null value, then the loop repeats gathering input.
 
-1. Save your code, then compile by using `dotnet build` In the TERMINAL (you can refer to the steps in the previous exercise) and fix any errors.
+1. Save your code, then compile by using `dotnet build` in the TERMINAL (you can refer to the steps in the previous exercise) and fix any errors.
 
 1. Run the code by using `dotnet run`.
 
@@ -133,10 +133,12 @@ Now you add the search for `dogCharacteristic` in the combined data of `dogDescr
     }
     ```
 
-    Examine the previous code example, when the `if` statement finds a match for `dogCharacteristic` in `dogDescription a message about the dog match and description is output to the console. You still need to account for the "no matches found" message.
+    Examine the previous code example, when the `if` statement finds a match for `dogCharacteristic` in `dogDescription` a message about the dog match and description is output to the console. You still need to account for the "no matches found" message.
 
-1. Add the code `noMatchesDog = true` add the following code just before comment #6:
+1. Add the code `noMatchesDog = true`:
 
+    Add the following code just before comment #6:
+    
     ```csharp
     bool noMatchesDog = true;
     ```
