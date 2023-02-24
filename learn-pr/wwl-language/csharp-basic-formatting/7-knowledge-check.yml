@@ -1,57 +1,58 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-basic-formatting.knowledge-check
-title: Knowledge Check
+title: Knowledge check
 metadata:
-  title: Check your knowledge
-  description: Review what you've learned
-  ms.date: 09/17/2019
-  author: billwagner
-  ms.author: wiwagn
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: buzahid
   ms.topic: interactive-tutorial
-  ms.prod: learning-languages
+  ms.prod: learning-azure
 durationInMinutes: 3
 quiz:
-  title: Check your knowledge
   questions:
-  - content: "Which of the following escape sequences would you use to add double-quotes to your literal string?"
+  - content: "Which of the following escape sequences would you use to add double quotes to your literal string?"
     choices:
-    - content: "&#92;q"
+    - content: "\\q"
       isCorrect: false
-      explanation: "&#92;q isn't a valid escape sequence."
-    - content: "&#92;d"
+      explanation: "Incorrect. \\q isn't a valid escape sequence."
+    - content: "\\'"
       isCorrect: false
-      explanation: "&#92;d isn't a valid escape sequence."
-    - content: "&#92;'"
-      isCorrect: false
-      explanation: "&#92;' is the escape sequence for a single quote, not a double-quote."
-    - content: '&#92;"'
+      explanation: "Incorrect. \\' is the escape sequence for a single quote, not a double quote."
+    - content: "\\\""
       isCorrect: true
-      explanation: "Correct!"
+      explanation: "Correct. Correct!"
   - content: "Which of the following lines of code correctly uses string interpolation assuming that the variable `value` is a string?"
     choices:
-    - content: '`Console.WriteLine(@"My value: {value}");`'
+    - content: "'`Console.WriteLine(@\"My value: {value}\");`'"
       isCorrect: false
-      explanation: "This line uses the at `@` symbol instead of the dollar `$` symbol as the prefix for string interpolation."
-    - content: '`Console.WriteLine($"My value: {value}");`'
-      isCorrect: true
-      explanation: "Correct!"      
-    - content: '`Console.WriteLine(@"My value: [value]");`'
-      isCorrect: false
-      explanation: "This line uses the at `@` symbol instead of the dollar `$` symbol, and square brackets instead of curly braces for the interpolation expression."
-    - content: '`Console.WriteLine("My value: {value}");`'
-      isCorrect: false
-      explanation: "This line is missing the dollar `$` symbol prefix for string interpolation."
-  - content: "You embedded Unicode characters in your strings to present a special message in Thai, however the message is only displayed as question mark characters.  What happened?"
-    choices:
-    - content: "You're missing the &#92;u escape sequence for Unicode characters."
-      isCorrect: false
-      explanation: "If you don't use the &#92;u escape sequence for Unicode characters, you won't see question marks.  You'll see the numbers."
-    - content: "You used the wrong Unicode characters."
-      isCorrect: false
-      explanation: "This is unlikely.  It would only be true if all the Unicode characters were the same value representing a question mark -- &#92;u003F."
-    - content: "The user's console doesn't support Unicode characters."
+      explanation: "Incorrect. This line uses the at `@` symbol instead of the dollar `$` symbol as the prefix for string interpolation."
+    - content: "'`Console.WriteLine($\"My value: {value}\");`'"
       isCorrect: true
       explanation: "Correct!"
-    - content: "Thai can't be represented in Unicode."
+    - content: "'`Console.WriteLine(@\"My value: [value]\");`'"
       isCorrect: false
-      explanation: "This is incorrect.  Thai characters can be represented in Unicode."      
+      explanation: "Incorrect. This line uses the at `@` symbol instead of the dollar `$` symbol, and square brackets instead of curly braces for the interpolation expression."
+  - content: "You embedded Unicode characters in your strings to present a special message in Thai. However, the message is only displayed as question mark characters.  What happened?"
+    choices:
+    - content: "You're missing the \\u escape sequence for Unicode characters."
+      isCorrect: false
+      explanation: "Incorrect. If you don't use the \\u escape sequence for Unicode characters, you won't see question marks.  You see the numbers."
+    - content: "You used the wrong Unicode characters."
+      isCorrect: false
+      explanation: "Incorrect. This is unlikely.  It would only be true if all the Unicode characters were the same value representing a question mark--\\u003F."
+    - content: "The user's console doesn't support Unicode characters."
+      isCorrect: true
+      explanation: "Correct.Correct!"
+  - content: "Which of the following lines of code append a single `\\` to the string `directory`?"
+    choices:
+    - content: "'`directory = directory + \"\\\";`'"
+      isCorrect: false
+      explanation: "Incorrect. This line escapes the `\"` character and results in an error."
+    - content: "'`directory = directory + '\\';`'"
+      isCorrect: false
+      explanation: "Incorrect. This line escapes the `'` character and results in an error."
+    - content: "'`directory = directory + @\"\\\";`'"
+      isCorrect: true
+      explanation: "Correct. The `@` symbol creates a verbatim string where it is unnecessary to escape the `\\`."

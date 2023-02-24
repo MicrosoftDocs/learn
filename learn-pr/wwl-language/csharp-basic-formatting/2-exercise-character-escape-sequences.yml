@@ -1,16 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-basic-formatting.exercise-character-escape-sequences
-title: Exercise - Character Escape Sequences and Verbatim Strings
+title: Exercise - Combine strings using character escape sequences
 metadata:
-  title: Exercise - Character Escape Sequences and Verbatim Strings
-  description: Create strings that include special characters like double-quotes, tabs, new lines, and Unicode.
-  ms.date: 09/17/2019
-  author: billwagner
-  ms.author: wiwagn
+  title: Exercise - Combine strings using character escape sequences
+  description: "Exercise - Combine strings using character escape sequences"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: buzahid
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 10
-azureSandbox: false
 interactive: csharp
+durationInMinutes: 10
 content: |
   [!include[](includes/2-exercise-character-escape-sequences.md)]
