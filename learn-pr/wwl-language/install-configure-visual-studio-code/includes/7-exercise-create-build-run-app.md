@@ -78,7 +78,7 @@ In this task, you use the EXPLORER view to open your code project folder, custom
 
 1. In the Visual Studio Code EXPLORER view, right-click **TestProject**, and then select **Open in integrated Terminal**.
 
-    ![Screenshot showing a command being entered in the Visual Studio Code terminal panel](../media/visual-studio-code-explorer-view-open-in-integrated-terminal.png)
+    ![Screenshot showing a command being entered in the Visual Studio Code integrated terminal panel](../media/visual-studio-code-explorer-view-open-in-integrated-terminal.png)
 
     > [!IMPORTANT]
     > The command prompt in the integrated Terminal panel shows the folder location where the command will run. Before running a `build` or `run` command, you must ensure that the Terminal is open to your project folder.
