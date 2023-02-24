@@ -4,13 +4,12 @@ title: Manage connected sources for log analytics
 metadata:
   title: Manage connected sources for log analytics
   description: "Manage connected sources for log analytics"
-  ms.date: 01/12/2023
+  ms.date: 02/24/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  zone_pivot_groups: None
 durationInMinutes: 7
 content: |
   [!include[](includes/5-connected-sources.md)]
