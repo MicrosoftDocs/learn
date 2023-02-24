@@ -19,13 +19,13 @@ quiz:
     choices:
     - content: "A string variable."
       isCorrect: false
-      explanation: "Incorrect. An array is not thought of as a string variable, although an array variable can hold a set of strings."
+      explanation: "Incorrect. An array isn't thought of as a string variable, although an array variable can hold a set of strings."
     - content: "A sequence of individual data elements accessible through a single variable name."
       isCorrect: true
       explanation: "Correct. An array data structure with a single name and multiple data locations."
     - content: "A .NET Class Library."
       isCorrect: false
-      explanation: "Incorrect. Although the Array class is a part of the .NET Class Library, it is not a .NET Class Library itself."
+      explanation: "Incorrect. Although the Array class is a part of the .NET Class Library, it isn't a .NET Class Library itself."
   - content: "Which of these is a correct example of creating an array and initializing it?"
     choices:
     - content: "`string[] myarray = new string[3]; myarray = \"test1\"; myarray = \"test2\"; myarray = \"test3\";`."

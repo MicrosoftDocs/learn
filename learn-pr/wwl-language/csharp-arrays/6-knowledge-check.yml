@@ -20,7 +20,7 @@ quiz:
       explanation: "Incorrect. Remember - indexes are zero-based."
     - content: "`myArray[2]`."
       isCorrect: true
-      explanation: "Correct! Because indexes a zero based, 2 will return the third element in an array."
+      explanation: "Correct! Because indexes a zero based, 2 returns the third element in an array."
     - content: "`myArray{3}`."
       isCorrect: false
       explanation: "Incorrect. Make sure to use square brackets and zero-based indexes!"
@@ -28,7 +28,7 @@ quiz:
     choices:
     - content: "`int[] myArray = new int[3];`."
       isCorrect: true
-      explanation: "Correct! This is the correct way to create an array with 3 elements."
+      explanation: "Correct! This is the correct way to create an array with three elements."
     - content: "`int[] myArray = new int[2];`."
       isCorrect: false
       explanation: "Incorrect. Arrays indexes are zero based, but when declaring an array, specify the actual number of elements."
