@@ -15,11 +15,11 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "How do you find information on the .NET classes and methods you will be using?"
+  - content: "How do you find information on the .NET classes and methods you are using?"
     choices:
     - content: ".NET Class Library."
       isCorrect: false
-      explanation: "Incorrect. Although it is true that reference material on classes and methods are found in the .NET Class Library, this answer is not complete."
+      explanation: "Incorrect. Although it's true that reference material on classes and methods is found in the .NET Class Library, this answer isn't complete."
     - content: "Developer websites."
       isCorrect: false
       explanation: "Incorrect. Although partially correct, this answer is incomplete."
