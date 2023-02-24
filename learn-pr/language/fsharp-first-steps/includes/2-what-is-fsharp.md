@@ -1,11 +1,11 @@
 F# is an open-source, cross-platform programming language that makes it easy to write succinct, performant, robust, and practical code.
 
-F# runs anywhere .NET runs and in cases where your application needs to run in a JavaScript environment, there are various libraries you can use to convert your F# code into JavaScript.
+F# runs anywhere .NET runs. In cases where your application needs to run in a JavaScript environment, there are various libraries you can use to convert your F# code into JavaScript.
 
 F# has numerous features that include:
 
 - **Lightweight syntax:** Write low-ceremony code and focus on the core logic of your application.
-- **Type inference and automatic generalization:** Leverage the compiler to get the benefits of a statically typed language without explicitly defining your types.
+- **Type inference and automatic generalization:** Use the compiler to get the benefits of a statically typed language without explicitly defining your types.
 - **Immutable by default:** Apply predictable & repeatable transformations to your data without worrying about side-effects.
 - **Powerful data types:** Represent complex data & model domains using tuples, records, and discriminated unions.
 - **Pattern matching:** Enforce correctness in your application's behavior using the compiler.
@@ -15,14 +15,14 @@ F# has numerous features that include:
 
 There are many language features and aspects of the F# language that make it easy to be productive when writing code:
 
-- **Succinct:** You write less code with F# that's also expressed in a clear manner.
-- **Performant:** F# comes with built-in parallelism and concurrency. It also uses the fact that it's part of the .NET runtime to speed things up.
-- **Robust:**  There are language constructs that make the code fault tolerant and robust like immutable by default,  null value management and more.
+- **Succinct:** You write less code with F#, and it's also expressed in a clear manner.
+- **Performant:** F# comes with built-in parallelism and concurrency. It also uses the fact that it's part of the .NET runtime to speed up things.
+- **Robust:**  There are language constructs that make the code fault tolerant and robust like immutable by default, null value management and more.
 - **Supports multiple programming paradigms:** F# lets you choose the patterns and practices most effective for solving problems by providing strong support for functional and object programming paradigms.
 
 ### Succinct
 
-Writing less code not only cuts down on your development time, but it also makes your code easier to read and test.
+When you write less code, it not only cuts down on your development time, it also makes your code easier to read and test.
 
 - **Type inference**: As a result of its strong type system, the F# compiler is able to analyze your code and infer the data types you're working with without explicitly defining them.
 - **Lightweight syntax**: F# lets you be productive without writing too much boilerplate code. Its lightweight syntax lets you focus on the core components of your application.

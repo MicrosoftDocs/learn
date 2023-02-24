@@ -981,6 +981,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/react-to-state-changes-using-event-grid/6-summary.yml",                      
+      "redirect_url": "/training/modules/react-to-state-changes-using-event-grid/7-summary",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/deploy-configure-azure-arc-enabled-sql-managed-instance/1-introduction.yml",
       "redirect_url": "/training/modules/deploy-manage-azure-arc-enabled-sql-managed-instance",
       "redirect_document_id": false
@@ -16946,66 +16951,6 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "learn-pr/azure/visual-studio-github-push/1-introduction.md",
-      "redirect_url": "/visualstudio/version-control/?wt.mc_id=learnredirect_githubvscode_content_cnl_csaapp",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/azure/visual-studio-github-push/10-knowledge-check.md",
-      "redirect_url": "/visualstudio/version-control/?wt.mc_id=learnredirect_githubvscode_content_cnl_csaapp",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/azure/visual-studio-github-push/11-summary.md",
-      "redirect_url": "/visualstudio/version-control/?wt.mc_id=learnredirect_githubvscode_content_cnl_csaapp",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/azure/visual-studio-github-push/2-add-github-account.md",
-      "redirect_url": "/visualstudio/version-control/?wt.mc_id=learnredirect_githubvscode_content_cnl_csaapp",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/azure/visual-studio-github-push/3-exercise-add-github-account.md",
-      "redirect_url": "/visualstudio/version-control/?wt.mc_id=learnredirect_githubvscode_content_cnl_csaapp",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/azure/visual-studio-github-push/4-create-repo.md",
-      "redirect_url": "/visualstudio/version-control/?wt.mc_id=learnredirect_githubvscode_content_cnl_csaapp",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/azure/visual-studio-github-push/5-exercise-create-repo.md",
-      "redirect_url": "/visualstudio/version-control/?wt.mc_id=learnredirect_githubvscode_content_cnl_csaapp",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/azure/visual-studio-github-push/6-commit-changes.md",
-      "redirect_url": "/visualstudio/version-control/?wt.mc_id=learnredirect_githubvscode_content_cnl_csaapp",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/azure/visual-studio-github-push/7-exercise-commit-changes.md",
-      "redirect_url": "/visualstudio/version-control/?wt.mc_id=learnredirect_githubvscode_content_cnl_csaapp",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/azure/visual-studio-github-push/8-push-changes.md",
-      "redirect_url": "/visualstudio/version-control/?wt.mc_id=learnredirect_githubvscode_content_cnl_csaapp",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/azure/visual-studio-github-push/9-exercise-push-changes.md",
-      "redirect_url": "/visualstudio/version-control/?wt.mc_id=learnredirect_githubvscode_content_cnl_csaapp",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/azure/visual-studio-github-push/index.md",
-      "redirect_url": "/visualstudio/version-control/?wt.mc_id=learnredirect_githubvscode_content_cnl_csaapp",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "learn-pr/wwl-azure/prepare-for-azure-stack-hub-deployment/9-knowledge-check.md",
       "redirect_url": "/training/modules/prepare-for-azure-stack-hub-deployment/10-knowledge-check",
       "redirect_document_id": true
@@ -20414,6 +20359,101 @@
       "source_path": "learn-pr/paths/learn-business-value-of-azure/index.md",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
-    }
+    },
+    {
+      "source_path": "learn-pr/windows/build-simple-website/1-introduction.md",
+      "redirect_url": "/training/modules/get-started-with-web-development/1-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/build-simple-website/2-project-structure.md",
+      "redirect_url": "/training/modules/get-started-with-web-development/2-project-structure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/build-simple-website/3-html-basics.md",
+      "redirect_url": "/training/modules/get-started-with-web-development/3-html-basics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/build-simple-website/4-css-basics.md",
+      "redirect_url": "/training/modules/get-started-with-web-development/4-css-basics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/build-simple-website/5-javascript-basics.md",
+      "redirect_url": "/training/modules/get-started-with-web-development/5-javascript-basics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/build-simple-website/6-knowledge-check.md",
+      "redirect_url": "/training/modules/get-started-with-web-development/6-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/build-simple-website/7-summary.md",
+      "redirect_url": "/training/modules/get-started-with-web-development/7-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/build-simple-website/index.md",
+      "redirect_url": "/training/modules/get-started-with-web-development/",
+      "redirect_document_id": false
+    },
+    {
+       "source_path": "learn-pr/wwl-azure/configure-azure-alerts/2-manage-azure-monitor-alerts.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-azure-alerts/2b-manage-azure-monitor-alerts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-language/csharp-code-blocks/3-method-class-namespace.md",
+      "redirect_url": "/training/modules/csharp-code-blocks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-language/csharp-code-blocks/4-exercise-remove-code-block.md",
+      "redirect_url": "/training/modules/csharp-code-blocks/3-exercise-remove-if-statements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-language/csharp-code-blocks/5-challenge.md",
+      "redirect_url": "/training/modules/csharp-code-blocks/4-exercise-challenge-variable-scope",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-language/csharp-code-blocks/6-solution.md",
+      "redirect_url": "/training/modules/csharp-code-blocks/5-review-solution-variable-scope",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-language/csharp-code-blocks/7-knowledge-check.md",
+      "redirect_url": "/training/modules/csharp-code-blocks/6-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-language/csharp-code-blocks/8-summary.md",
+      "redirect_url": "/training/modules/csharp-code-blocks/7-summary",
+      "redirect_document_id": false
+    },
+    {
+       "source_path": "learn-pr/wwl-azure/application-security/8-demonstration.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/application-security/13-demonstration",
+      "redirect_document_id": false
+    },
+    {
+       "source_path": "learn-pr/wwl-azure/application-security/9-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/application-security/14-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+       "source_path": "learn-pr/wwl-azure/application-security/10-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/application-security/15-summary",
+      "redirect_document_id": false
+    },
+    {
+       "source_path": "learn-pr/wwl-azure/application-security/7-web-app-certificates.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/application-security/",
+      "redirect_document_id": false
+    }    
   ]
 }

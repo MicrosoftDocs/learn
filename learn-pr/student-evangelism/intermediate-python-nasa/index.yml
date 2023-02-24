@@ -3,8 +3,8 @@ uid: learn.student-evangelism.intermediate-python-nasa
 metadata:
   title: Code control statements in Python
   description: Learn more advanced topics of Python.
-  ms.date: 05/05/2021
-  author: drguthals
+  ms.date: 02/14/2023
+  author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -14,7 +14,7 @@ summary: Learn more advanced topics of Python using interactive Notebooks.
 abstract: |
   In this module, you'll learn:
   - How to write and when to use conditionals
-  - How to write and when to use while and for loops
+  - How to write and when to use `while` and for `loops`
   - How to make your own functions
   - How to call your own functions
   - How to use parameters and global variables

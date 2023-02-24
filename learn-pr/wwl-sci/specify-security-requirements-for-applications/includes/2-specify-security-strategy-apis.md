@@ -9,7 +9,7 @@ practices and tools.
 
 The DevOps model increases the organization's ability to rapidly
 address security concerns without waiting for a waterfall model's
-longer planning and testing cycle.
+longer planning and testing **cycle**.
 
 ## Deploy the DevOps and the application lifecycle
 

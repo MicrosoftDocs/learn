@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/19/2022
+  ms.date: 02/22/2023
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -35,18 +35,18 @@ quiz:
       explanation: "Correct. True alert is an option."
     - content: "High alert"
       isCorrect: false
-      explanation: "Incorrect. High alert is not an option."
+      explanation: "Incorrect. High alert isn't an option."
     - content: "Test alert"
       isCorrect: false
-      explanation: "Incorrect. Test alert is not an option."
+      explanation: "Incorrect. Test alert isn't an option."
   - content: "The Devices page shows information from which Defender product?"
     choices:
     - content: "Microsoft Cloud App Security"
       isCorrect: false
-      explanation: "Incorrect. The Devices page is not surfaced from Cloud App Security."
+      explanation: "Incorrect. The Devices page isn't surfaced from Cloud App Security."
     - content: "Microsoft Defender for Identity"
       isCorrect: false
-      explanation: "Incorrect. The Devices page is not surfaced from Defender for Identity."
+      explanation: "Incorrect. The Devices page isn't surfaced from Defender for Identity."
     - content: "Microsoft Defender for Endpoint"
       isCorrect: true
       explanation: "Correct.  Devices are based on Defender for Endpoint."

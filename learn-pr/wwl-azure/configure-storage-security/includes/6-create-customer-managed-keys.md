@@ -16,5 +16,5 @@ In the Azure portal, you can configure customer-managed encryption keys. You can
 
 :::image type="content" source="../media/customer-keys-b24acc48.png" alt-text="Screenshot that shows how to create a customer-managed key." border="false":::
 
-- **Encryption type**: Choose how the encryption key is managed: by Microsoft or by the yourself (customer).
+- **Encryption type**: Choose how the encryption key is managed: by Microsoft or by yourself (customer).
 - **Encryption key**: Specify an encryption key by entering a URI, or select a key from an existing key vault.
