@@ -10,7 +10,7 @@ Console.Write("the second ");
 Console.Write("line.");
 ```
 
-This code is just *one possible solution*, among many possible ways to achieve the same result. However, you should have used both the <xref:System.Console.WriteLine?displayProperty=nameWithType> and <xref:System.Console.Write?displayProperty=nameWithType> methods to produce the desired output.
+This code is just *one possible solution*, among many possible ways to achieve the same result. However, you should have used both the <xref:System.Console.WriteLine?displayProperty=nameWithType> and <xref:System.Console.Write(System.String)?displayProperty=nameWithType> methods to produce the desired output.
 
 ```Output
 This is the first line.
