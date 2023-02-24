@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-arrays-operations.exercise-sort-reverse
+title: Exercise - Discover Sort() and Reverse()
+metadata:
+  title: Exercise - Discover Sort() and Reverse()
+  description: "Exercise - Discover Sort() and Reverse()"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-exercise-sort-reverse.md)]
