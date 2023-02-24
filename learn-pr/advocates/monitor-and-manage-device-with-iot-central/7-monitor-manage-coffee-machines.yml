@@ -3,12 +3,15 @@ uid: learn.monitor-manage-device-with-iotcentral.monitor-manage-coffee-machines
 title: Monitor and manage the coffee machines
 metadata:
   title: Monitor and manage the coffee machines
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
-  ms.date: 2/16/2023
-  author: {{githubUsername}}
-  ms.author: {{msUser}}
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
-durationInMinutes: 1
+  description: This content is a part of Build your first IoT Central application to manage your coffee machines
+  ms.date: 01/13/2023
+  author: asergaz
+  ms.author: sergaz
+  ms.reviewer: adchukwu
+  manager: lizross
+  ms.custom: engagement-fy23
+  ms.topic: module-build-your-first
+  ms.prod: learning-azure
+durationInMinutes: 6
 content: |
   [!include[](includes/7-monitor-manage-coffee-machines.md)]
