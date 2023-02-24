@@ -1,16 +1,39 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-arrays.exercise-array-basics
-title: Exercise - Array Basics
+title: Exercise - Get started with array basics
 metadata:
-  title: Exercise - Array Basics
-  description: Use arrays to collect a sequence of data into a single data type.
-  ms.date: 09/19/2019
-  author: billwagner
-  ms.author: wiwagn
+  title: Exercise - Get started with array basics
+  description: "Exercise - Get started with array basics"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 12
-azureSandbox: false
-interactive: csharp
+durationInMinutes: 19
 content: |
   [!include[](includes/2-exercise-array-basics.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is an array?"
+    choices:
+    - content: "A string variable."
+      isCorrect: false
+      explanation: "Incorrect. An array isn't thought of as a string variable, although an array variable can hold a set of strings."
+    - content: "A sequence of individual data elements accessible through a single variable name."
+      isCorrect: true
+      explanation: "Correct. An array data structure with a single name and multiple data locations."
+    - content: "A .NET Class Library."
+      isCorrect: false
+      explanation: "Incorrect. Although the Array class is a part of the .NET Class Library, it isn't a .NET Class Library itself."
+  - content: "Which of these is a correct example of creating an array and initializing it?"
+    choices:
+    - content: "`string[] myarray = new string[3]; myarray = \"test1\"; myarray = \"test2\"; myarray = \"test3\";`."
+      isCorrect: false
+      explanation: "Incorrect. Although the array `myarray` is declared correctly, the code statements used to assign values to the array elements are missing the array index locations."
+    - content: "`string[] myarray = string[3]; myarray[0] = test1; myarray[1] = test2; myarray[2] = test3;`."
+      isCorrect: false
+      explanation: "Incorrect. The `new` operator is missing from the statement used to declare the array."
+    - content: "`int[] myarray = new int[3]; myarray[0] = 1; myarray[1] = 2; myarray[2] = 3;`."
+      isCorrect: true
+      explanation: "Correct! The array `myarray` is declared correctly and the code statements used to assign values to the array elements specify the array index locations."
