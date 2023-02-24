@@ -5,7 +5,7 @@ As we reviewed in the previous section, VPN gateway connections are available in
 
 The complete process to create a VPN gateway for a site-to-site connection can take up to 45 minutes.
 
-### Things to know about site-site configuration
+### Things to know about site-to-site configuration
 
 Before we start looking at the configuration details, there are few notes to review.
 
