@@ -1,5 +1,5 @@
 
-You'll be using Visual Studio Code to develop portions of a C# console application. You will be writing the code that performs various numeric calculations within a series of iteration and selection statements. The values must be calculated within the existing iteration and selection structures. In this Prepare unit, you'll review the overall goals of the project and how you'll build and test your application. You'll also complete a Setup section that describes how to set up your development environment, including a "Starter" code project.
+In this module, you'll use Visual Studio Code to develop portions of a C# console application. You'll begin by writing the code that performs various numeric calculations. All calculations must be completed within the existing iteration and selection structures. This Prepare unit provides you with the overall goals of the project and the requirements for your application. The Setup section describes how to set up your development environment, including a "Starter" code project.
 
 ## Project specification
 
@@ -18,7 +18,7 @@ The Starter code project for this module is a C# console application that implem
 
 Your goal in this challenge is to implement the coding updates required to produce the teacher's requested score report.
 
-The current score report lists the student's name followed by the calculated overall grade and letter grade. The existing report is formatted as follows:
+The current score report lists the student's name followed by the calculated overall grade and letter grade. Here is the existing report format:
 
 ```Output
 Student         Grade   Letter Grade
@@ -57,8 +57,6 @@ Use the following steps to prepare for the Challenge project exercises:
     1. Make note of the extracted folder location.
 
 1. Copy the extracted **GuidedProject** folder to your Windows Desktop folder.
-
-    This helps to ensure the folder path doesn't exceed path length limits (when you open the project in Visual Studio Code).
 
     > [!NOTE]
     > If a folder named **GuidedProject** already exists, you can select **Replace the files in the destination** to complete the copy operation.

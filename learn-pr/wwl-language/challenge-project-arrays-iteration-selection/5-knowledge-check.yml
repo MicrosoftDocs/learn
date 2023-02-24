@@ -12,25 +12,25 @@ metadata:
 durationInMinutes: 3
 quiz:
   questions:
-  - content: "A developer is working on a nested `foreach` structure that will iterate through the application's array data. The first array contains the names of 10 geographic regions. The remaining arrays are based on the 10 regions, and contain the population of every city in that region that has a population greater than 1 million. The values in the population arrays are ordered from largest to smallest. The application must report average population for the 25 most populated cities in each region. What can the developer do to ensure that the application knows when it has reached the 25th largest population?"
+  - content: "A developer is working on a nested `foreach` structure that iterates through the application's array data. The first array contains the names of 10 geographic regions. The remaining arrays are based on the 10 regions. Each regional array contains the population of cities that have a population over one million. The population values in the regional arrays go from largest to smallest. The application sums the 25 most populated cities in each region. How should the developer ensure that only the 25 largest populations are added to the sum?"
     choices:
-    - content: "The developer needs to insert a \"marker value\", such as a `0`, into each of the population arrays at index number 25, and then stop adding values to the sum once the marker value is detected."
+    - content: "The developer should insert a \"marker value\" into the population arrays. The \"marker value\" should be added at index position 25. When the marker value is detected, the application should stop adding values to the sum."
       isCorrect: false
       explanation: "Incorrect. The developer should not modify application data. There are ways to track the number of array elements that have been processed within a `foreach` loop."
-    - content: "The developer needs to check the index number of the current array element in the code block of the inner `foreach` loop and ensure it is less than 25 before adding the value to the sum."
+    - content: "The developer should check the index number of the current array element inside the `foreach` code block. The application should stop adding values to the sum when the index number reaches 25."
       isCorrect: false
       explanation: "Incorrect. A `foreach` loop does not have a mechanism for checking the index number of array elements."
-    - content: "The developer needs to increment a counter in the code block of the inner `foreach` loop that counts the population values that have been added to the sum and ensure that only the first 25 values are summed."
+    - content: "The developer should increment a counter inside the `foreach` code block. The application should stop adding values to the sum when the counter reaches 25."
       isCorrect: true
       explanation: "Correct! The developer should use a counter that increments inside the `foreach` loop."
   - content: "A developer is working with two other developers to update a collection of applications. The developers will use code comments during the update process. Which of the following describes an appropriate use of code comments?"
     choices:
-    - content: "The developers use line and block comments to identify each individual change so that the other developers know where changes have been made."
+    - content: "When updates are made, the developers use line and block comments to identify each individual code update."
       isCorrect: false
       explanation: "Incorrect. Code comments should not be used to describe individual code lines. In this case, it would be better to summarize changes in a single block comment at the top of the files that contain updates."
-    - content: "To ensure that historical information and context are not lost, the developers leave all existing code comments intact. New comments are added to indicate when old comments no longer apply."
+    - content: "When updates are made, the developers leave all existing code comments intact. New comments are added to indicate when old comments no longer apply."
       isCorrect: false
       explanation: "Incorrect. Old comments that no longer apply to the current application can be confusing and should not be retained. A history of the application should be documented in a change log."
-    - content: "The developers should summarize changes using block comments."
+    - content: "When updates are made, the developers summarize changes using block comments."
       isCorrect: true
       explanation: "Correct! Using a block comment to summarize the changes implemented during an update is a good use of code comments. A single block comment at the top of the files that contain updates is often sufficient."
