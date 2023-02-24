@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-log-analytics.visualize-data
-title: Visualize Log Analytics data
+title: Create Kusto (KQL) queries
 metadata:
-  title: Visualize Log Analytics data
-  description: "Visualize Log Analytics data"
-  ms.date: 11/18/2022
+  title: Create Kusto (KQL) queries
+  description: "Create Kusto (KQL) queries and quickly retrieve and consolidate your monitoring data."
+  ms.date: 02/22/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial

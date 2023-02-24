@@ -3,7 +3,7 @@ uid: learn.machinelearning.introduction-to-classical-machine-learning
 metadata:
   title: Build classical machine learning models with supervised learning
   description: Supervised learning is a form of machine learning where an algorithm learns from examples of data. We progressively paint a picture of how supervised learning automatically generates a model that can make predictions about the real world. We also touch on how these models are tested, and difficulties that can arise in training them.
-  ms.date: 05/25/2021
+  ms.date: 02/15/2023
   author: TomReidNZ
   ms.author: jasdeb
   manager: scottpolly

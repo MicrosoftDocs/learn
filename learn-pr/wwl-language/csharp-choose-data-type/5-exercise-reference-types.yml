@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-choose-data-type.exercise-reference-types
+title: Exercise - Discover reference types
+metadata:
+  title: Exercise - Discover reference types
+  description: "Exercise - Discover reference types"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-exercise-reference-types.md)]

@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-choose-data-type.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A piece of code must store whole numeric values between negative and positive `1,000,000`. Which data type should you choose?"
+    choices:
+    - content: "float"
+      isCorrect: false
+      explanation: "Incorrect. While `float` would work, its extra precision after the decimal doesn't fit the exact requirement of this scenario."
+    - content: "double"
+      isCorrect: false
+      explanation: "Incorrect. While `double` would work, its extra precision after the decimal doesn't fit the exact requirement of this scenario."
+    - content: "int"
+      isCorrect: true
+      explanation: "Correct. While `float` or `double` would work, their extra precision after the decimal doesn't fit the exact requirement of this scenario."
+  - content: "The code for a game needs to store lots of fractional values representing x, y, and z positions in a large 3D space. It will likely need to perform physics calculations for trajectories and so on. Absolute precision isn't required, but it's important that the program runs as efficiently as possible. Which data type is best?"
+    choices:
+    - content: "float"
+      isCorrect: true
+      explanation: "Correct. Unlike `int`, float can store fractional numbers, and unlike `decimal`, `float` doesn't require extra memory to store extra precision that isn't needed in this scenario."
+    - content: "decimal"
+      isCorrect: false
+      explanation: "Incorrect. While `decimal` can store large fractional numbers, they require more memory to store all the precision. Furthermore, they're less efficient than float or double. Finally, they can return precise calculated values, but the question says that's not a priority in this situation."
+    - content: "int"
+      isCorrect: false
+      explanation: "Incorrect. `int` can't store fractional numbers."
+  - content: "Which of the following statements is **true**?"
+    choices:
+    - content: "Reference types are stored in the stack."
+      isCorrect: false
+      explanation: "Incorrect. Reference types are stored in the heap."
+    - content: "Value types can only store numbers."
+      isCorrect: false
+      explanation: "Incorrect. While this module focused on integral and floating point data types, `char` is also a value type, and there are other non-numeric value types like struct and enum."
+    - content: "Use the `new` operator to create a new instance of a reference type and return its address to the variable."
+      isCorrect: true
+      explanation: "Correct. Use the `new` operator to create a new instance of a reference type and return its address to the variable."

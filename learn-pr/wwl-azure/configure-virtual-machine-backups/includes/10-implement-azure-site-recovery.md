@@ -1,3 +1,4 @@
+
 Azure Site Recovery helps ensure business continuity by keeping business applications and workloads running during outages. Site Recovery replicates workloads running on physical and virtual machines from a primary site to a secondary location. When an outage occurs at your primary site, Site Recovery implements a failover to the secondary location to allow continued access to your applications. After the primary location is running again, you can resume application access on the primary machine.
 
 The following illustration that shows two regions connected by Azure Traffic Manager. Azure Site Recovery is implemented to enable failover from region 1 to region 2.
@@ -18,7 +19,7 @@ Azure Site Recovery supports many configurations and complements various Azure s
 
 ### Things to consider when using Site Recovery
 
-There are many benefits to implementing Azure Site Recovery. As you review the following features, consider how the service can support your buniess rerequiremetns.
+There are many benefits to implementing Azure Site Recovery. As you review the following features, consider how the service can support your buniess requirements.
 
 | Feature | Description |
 | --- | --- |

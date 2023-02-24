@@ -1,4 +1,5 @@
-Data Discovery &amp; Classification is built into Azure SQL Database. It provides advanced capabilities for discovering, classifying, labeling, and reporting the sensitive data in your databases.
+
+Data Discovery & Classification is built into Azure SQL Database. It provides advanced capabilities for discovering, classifying, labeling, and reporting the sensitive data in your databases.
 
 Your most sensitive data might include business, financial, healthcare, or personal information. Discovering and classifying this data can play a pivotal role in your organization's information-protection approach. It can serve as infrastructure for:
 
@@ -6,7 +7,7 @@ Your most sensitive data might include business, financial, healthcare, or perso
  -  Various security scenarios, such as monitoring (auditing) and alerting on anomalous access to sensitive data.
  -  Controlling access to and hardening the security of databases that contain highly sensitive data.
 
-Data Discovery &amp; Classification is part of the Advanced Data Security offering, which is a unified package for advanced SQL security capabilities. You can access and manage Data Discovery &amp; Classification via the central **SQL Advanced Data Security** section of the Azure portal.
+Data Discovery & Classification is part of the Advanced Data Security offering, which is a unified package for advanced SQL security capabilities. You can access and manage Data Discovery & Classification via the central **SQL Advanced Data Security** section of the Azure portal.
 
 :::image type="content" source="../media/az500-database-class-f12d2e6e.png" alt-text="Screenshot of the Discovery and Classification page with classificiation choices, like Confidential, shown.":::
 

@@ -3,7 +3,7 @@ uid: learn.wwl.manage-cloud-security-posture-management
 metadata:
   title: Manage your cloud security posture management​
   description: "Manage your cloud security posture management​"
-  ms.date: 11/24/2022
+  ms.date: 02/22/2023
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
@@ -27,6 +27,7 @@ products:
 - defender-for-cloud
 subjects:
 - cloud-security
+- compliance
 - security
 units:
 - learn.wwl.manage-cloud-security-posture-management.introduction
