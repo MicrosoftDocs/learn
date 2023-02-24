@@ -1,16 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-basic-operations.exercise-add-numbers
-title: Exercise - Simple Addition and Implicit Data Conversion
+title: Exercise - Perform addition with implicit data conversion
 metadata:
-  title: Exercise - Simple Addition and Implicit Data Conversion
-  description: Use the overloaded + symbol to perform both addition and string concatenation.
-  ms.date: 09/03/2019
-  author: billwagner
-  ms.author: wiwagn
+  title: Exercise - Perform addition with implicit data conversion
+  description: "Exercise - Perform addition with implicit data conversion"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: buzahid
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 4
-azureSandbox: false
 interactive: csharp
+durationInMinutes: 10
 content: |
   [!include[](includes/2-exercise-add-numbers.md)]

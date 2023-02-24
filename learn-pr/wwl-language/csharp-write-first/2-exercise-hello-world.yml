@@ -1,16 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-write-first.exercise-hello-world
-title: Exercise - "Hello World!"
+title: Exercise - Write your first code
 metadata:
-  title: Exercise - "Hello World!"
-  description: Write your first line of code to output a message to a console window.
-  ms.date: 08/30/2019
-  author: billwagner
-  ms.author: wiwagn
+  title: Exercise - Write your first code
+  description: "Exercise - Write your first code"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: buzahid
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 5
-azureSandbox: false
 interactive: csharp
+durationInMinutes: 6
 content: |
   [!include[](includes/2-exercise-hello-world.md)]
