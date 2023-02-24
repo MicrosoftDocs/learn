@@ -1,16 +1,61 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-call-methods.return-values-input-parameters
-title: Work with return values and input parameters
+title: Exercise - Return values and input parameters of methods
 metadata:
-  title: Work with return values and input parameters
-  description: Learn how methods are designed to return values, accept multiple input parameters, and offer different versions with different signatures.
-  ms.date: 09/17/2019
-  author: billwagner
-  ms.author: wiwagn
+  title: Exercise - Return values and input parameters of methods
+  description: "Exercise - Return values and input parameters of methods"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 10
-azureSandbox: false
-interactive: csharp
+durationInMinutes: 18
 content: |
   [!include[](includes/4-return-values-input-parameters.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is a return value?"
+    choices:
+    - content: "It's a value type returned by a method."
+      isCorrect: true
+      explanation: "Correct! This is the correct definition of a return value."
+    - content: "An argument in a method call is referred to as a return value inside the method."
+      isCorrect: false
+      explanation: "Incorrect. A parameter of a method corresponds to an argument in the method call."
+    - content: "It's a string value."
+      isCorrect: false
+      explanation: "Incorrect. A return value could be a string, but it could also be an int32, a float, a custom type, or something else."
+  - content: "What are input parameters?"
+    choices:
+    - content: "Value types (or variables) inside a method."
+      isCorrect: true
+      explanation: "Correct! This is the correct definition of an input parameter."
+    - content: "Values returned by a method."
+      isCorrect: false
+      explanation: "Incorrect. Input values are passed into a method, not returned from a method."
+    - content: "The values passed into a method in the calling statement."
+      isCorrect: false
+      explanation: "Incorrect. The values passed to a method in the calling statement are referred to as arguments."
+  - content: "What is an overloaded method?"
+    choices:
+    - content: "A method that returns a value type."
+      isCorrect: false
+      explanation: "Incorrect. Returning a value does not make a method an overloaded method."
+    - content: "A method with more than five parameters."
+      isCorrect: false
+      explanation: "Incorrect. An overloaded method may include more than five parameters."
+    - content: "It is a method that supports several implementations of the method, each with a unique method signature."
+      isCorrect: true
+      explanation: "Correct! This is the correct definition of an overloaded method."
+  - content: "How does IntelliSense help developers?"
+    choices:
+    - content: "IntelliSense can help developers write code more quickly."
+      isCorrect: true
+      explanation: "Correct! IntelliSense can catch misspelling, incorrect usage, and suggest corrections. These things speed up the coding process."
+    - content: "IntelliSense helps developers refactor their code."
+      isCorrect: false
+      explanation: "Incorrect. While IntelliSense can help developers with their coding, it is not intended to be used as a code refactoring tool."
+    - content: "IntelliSense can change the \\\"theme\\\" of an IDE."
+      isCorrect: false
+      explanation: "Incorrect. IntelliSense is not used for this purpose."
