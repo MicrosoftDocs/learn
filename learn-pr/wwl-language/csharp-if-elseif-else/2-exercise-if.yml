@@ -1,16 +1,39 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-if-elseif-else.exercise-if
-title: Exercise - Use the if statement
+title: Exercise - Create decision logic with if statements
 metadata:
-  title: Exercise - Use the if statement
-  description: Build an application that evaluates a random number and performs different logic based on the value.
-  ms.date: 05/16/2022
-  author: billwagner
-  ms.author: wiwagn
+  title: Exercise - Create decision logic with if statements
+  description: "Exercise - Create decision logic with if statements"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 10
-azureSandbox: false
-interactive: csharp
+durationInMinutes: 19
 content: |
   [!include[](includes/2-exercise-if.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is a code block?"
+    choices:
+    - content: "A .NET Class Library."
+      isCorrect: false
+      explanation: "Incorrect. Although it is true that reference material on classes and methods are found in the .NET Class Library, this answer is not complete."
+    - content: "Lines of code that should be treated as a single unit."
+      isCorrect: true
+      explanation: "Correct! A code block is defined by curly braces `{ }`. It collects lines of code that should be treated as a single unit."
+    - content: "A block of code that is blocked from being accessed."
+      isCorrect: false
+      explanation: "Incorrect. A code block is not a block of code that is blocked."
+  - content: "What is a Boolean statement or expression?"
+    choices:
+    - content: "A modulus expression."
+      isCorrect: false
+      explanation: "Incorrect. A Boolean expression is not a modulus expression."
+    - content: "An ordinal term."
+      isCorrect: false
+      explanation: "Incorrect. A Boolean expression is not an ordinal term."
+    - content: "Code that returns either `true` or `false`."
+      isCorrect: true
+      explanation: "Correct! A Boolean expression is any code that returns a Boolean value, either `true` or `false`."

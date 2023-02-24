@@ -1,27 +1,26 @@
 ### YamlMime:Module
 uid: learn.languages.csharp-if-elseif-else
 metadata:
-  title: 'Add decision logic to your code using `if`, `else`, and `else if` statements in C#'
-  description: Learn to branch your code's execution path by evaluating Boolean expressions.
-  ms.date: 05/16/2022
-  author: billwagner
-  ms.author: wiwagn
+  title: Add decision logic to your code using `if`, `else`, and `else if` statements in C#
+  description: "Add decision logic to your code using `if`, `else`, and `else if` statements in C#"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Add decision logic to your code using `if`, `else`, and `else if` statements in C#
 summary: Learn to branch your code's execution path by evaluating Boolean expressions.
 abstract: |
   In this module, you will:
-  - Write code that evaluates conditions using `if`, `else`, and `else if` statements.
+  - Write code that evaluates conditions using if, else, and else if statements.
   - Build Boolean expressions to evaluate a condition.
   - Combine Boolean expressions using logical operators.
   - Nest code blocks within other code blocks.
 prerequisites: |
-  - Experience declaring, initializing, setting, and retrieving variables by using the `int` data type.
-  - Experience printing messages to output by using `Console.WriteLine()`.
+  - Experience declaring, initializing, setting, and retrieving variables by using the int data type.
+  - Experience printing messages to output by using Console.WriteLine().
   - Experience with string interpolation to combine variables into literal strings.
-  - Experience working with the `System.Random` class to generate random numbers.
-ratingEnabled: true
+  - Experience working with the System.Random class to generate random numbers.
 iconUrl: /training/achievements/csharp-if-elseif-else.svg
 levels:
 - beginner
@@ -30,6 +29,9 @@ roles:
 - student
 products:
 - dotnet
+- vs-code
+subjects:
+- development-tools
 units:
 - learn.languages.csharp-if-elseif-else.introduction
 - learn.languages.csharp-if-elseif-else.exercise-if
@@ -38,6 +40,5 @@ units:
 - learn.languages.csharp-if-elseif-else.solution
 - learn.languages.csharp-if-elseif-else.knowledge-check
 - learn.languages.csharp-if-elseif-else.summary
-
 badge:
   uid: learn.languages.csharp-if-elseif-else.badge
