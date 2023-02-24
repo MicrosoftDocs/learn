@@ -1,25 +1,25 @@
 
-You'll be using Visual Studio Code to develop a C# application that implements arrays, `foreach` statements, and `if` statements. You will create array variables that contain the data for your application. You'll also be using `foreach` and `if` statements to develop a nested looping and branching structure that implements your application design goals.
+In this guided project, you use Visual Studio Code to develop a C# application that implements arrays, `foreach` statements, and `if` statements. You begin by creating array variables that contain the data for your application. You complete the project by using `foreach` and `if` statements to develop a nested looping and branching structure that implements your application design goals.
 
 ## Project overview
 
-You are developing a Student Grading application that automates the calculation of grades for each student in a class. The parameters for your application are:
+You're developing a Student Grading application that automates the calculation of grades for each student in a class. The parameters for your application are:
 
-- The application will be a C# console application.
-- You start with four students. Each student has five exam scores.
-- Each exam score is expressed as an integer value, 0-100, where 100 represents 100% correct.
-- The overall exam score is calculated as an average of the five exam scores.
-- Your application needs to accommodate extra credit assignments.
+- Create a C# console application.
+- Start with four students. Each student has five exam scores.
+- Each exam score is an integer value, 0-100, where 100 represents 100% correct.
+- A student's overall exam score is the average of their five exam scores.
+- Criteria for extra credit assignments:
 
-    - Extra credit scores must be included in the student's scores array.
+    - Include extra credit assignment scores in the student's scores array.
     - Extra credit assignments are worth 10% of an exam score (when calculating the final numeric grade).
-    - Extra credit assignment scores must be added to the student's total exam score before calculating the final numeric grade.
+    - Add extra credit assignment scores to the student's total exam score before calculating the final numeric grade.
 
 - Your application needs to automatically assign letter grades based on the calculated final score for each student.
 - Your application needs to output/display each student’s name and formatted grade.
-- Your application needs to support adding additional students and scores with minimal impact to the code.
+- Your application needs to support adding other students and scores with minimal impact to the code.
 
-You have already completed an initial version of the application. The Starter code project for this Guided project module includes a Program.cs file that provides the following code features:
+You've already completed an initial version of the application. The Starter code project for this Guided project module includes a Program.cs file that provides the following code features:
 
 - The code declares variables used to define student names and individual exam scores for each student.
 - The code includes the variables and algorithms used to sum the exam scores and calculate the average exam score for each student.
@@ -86,8 +86,6 @@ Use the following steps to prepare for the Guided project exercises.
 
 1. Copy the extracted **GuidedProject** folder to your Windows Desktop folder.
 
-    This helps to ensure the folder path doesn't exceed path length limits (when you open the project in Visual Studio Code).
-
     > [!NOTE]
     > If a folder named **GuidedProject** already exists, you can select **Replace the files in the destination** to complete the copy operation.
 
@@ -100,4 +98,4 @@ Use the following steps to prepare for the Guided project exercises.
 
     The Visual Studio Code EXPLORER view should show the GuidedProject folder and two subfolders named Final and Starter.
 
-You are now ready to begin the Guided project exercises. Good luck!
+You're now ready to begin the Guided project exercises. Good luck!
