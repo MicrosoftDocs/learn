@@ -26,8 +26,10 @@ Microsoft Sentinel uses the MITRE ATT&CK framework to categorize and order queri
 
 :::image type="content" source="../media/3-attack-timeline.png" alt-text="Screenshot of the tactics timeline on the Hunting page in Microsoft Sentinel." :::
 
-Selecting any tactic will filter the available queries by the selected tactic. Tactics include:
+Selecting any tactic will filter the available queries by the selected tactic. The included Hunting tactics are from the ATT&CK Enterprise and ICS (Industrial Control Systems) matrices:
 
+- **Reconnaissance**. Tactics the adversary uses to find information they can use to plan future operations.
+- **Resource Development**. Tactics the adversary uses to establish resources they can use to support operations.Resources include infrastructure, accounts, or capabilities.
 - **Initial access**. Tactics that the adversary uses to gain entry to a network, by exploiting vulnerabilities or configuration weaknesses in public-facing systems. An example is targeted spear-phishing.
 - **Execution**. Tactics that result in an adversary running their code on a target system. For example, a malicious hacker might run a PowerShell script to download more attacker tools and/or scan other systems.
 - **Persistence**. Tactics that allow an adversary to maintain access to a target system, even after restarts and credential changes. An example of a persistence technique is an attacker who creates a scheduled task that runs their code at a specific time or on restart.
@@ -40,6 +42,9 @@ Selecting any tactic will filter the available queries by the selected tactic. T
 - **Command and control**. Tactics that an attacker uses to communicate with a system under their control. One example is an attacker communicating with a system over an uncommon or high-numbered port to evade detection by security appliances or proxies.
 - **Exfiltration**. Tactics used to move data from the compromised network to a system or network that's fully under control of the attacker.
 - **Impact**. Tactics that an attacker uses to affect the availability of systems, networks, and data. Methods in this category include denial-of-service attacks and disk-wiping or data-wiping software.
+- **Impair Process Control**. Tactics the adversary uses to manipulate, disable, or damage physical control processes.
+- **Inhibit Response Function**. Tactics the adversary uses to prevent your safety, protection, quality assurance, and operator intervention functions from responding to a failure, hazard, or unsafe state.
+- **None**
 
 ## Create custom queries to refine threat hunting
 
@@ -55,8 +60,9 @@ Custom queries enable you to define the following:
 |----------------------------------|------------------------------------------------------|
 | Name | Provide a name for the custom query. |
 | Description | Provide a description of your query's functionality. |
+| Custom query | Your KQL hunting query. |
 | Entity mapping | Map entity types to columns from your query result to populate your query results with more actionable information. You can also map entities by using code in your KQL query. |
-| Tactics | Specify the tactics that your query is designed to expose. |
+| Tactics & Techniques | Specify the tactics that your query is designed to expose. |
 
 Custom queries are listed alongside built-in queries for management.
 
