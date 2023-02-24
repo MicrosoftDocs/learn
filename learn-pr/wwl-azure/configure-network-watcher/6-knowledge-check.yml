@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/12/2021
+  ms.date: 02/24/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -16,37 +16,40 @@ content: |
   [!include[](includes/6-knowledge-check.md)]
 quiz:
   title: ""
+
   questions:
-  - content: "The infrastructure team thinks it would be helpful to get a visual representation of the company's networking elements. Which Network Watcher feature provides this capability?"
+  - content: "How does Azure Network Watcher support graphical visualizations for networks?"
     choices:
-    - content: "Network Watcher Next Hop"
+    - content: "Next hop"
       isCorrect: false
-      explanation: "That's incorrect. Next Hop helps determine if traffic is being directed to the intended destination."
-    - content: "Network Watcher Views"
+      explanation: "Incorrect. The next hop feature helps determine if traffic directs to the intended destination."
+    - content: "Views"
       isCorrect: false
-      explanation: "That's incorrect. Network Watcher Views is not a valid choice."
-    - content: "Network Watcher Topology"
+      explanation: "Incorrect. _Views_ isn't a valid feature of Azure Network Watcher."
+    - content: "Topology tool"
       isCorrect: true
-      explanation: "That's correct. Network Watcher Topology lets generates a visual diagram of the resources in a virtual network, and the relationships between the resources."
-  - content: "Users are reporting connectivity errors and timeouts. The help desk thinks a security rule may be blocking traffic to or from one of the virtual machines. To quickly troubleshoot the problem use which Network Watcher feature?"
+      explanation: "Correct. The Azure Network Watcher topology tool generates a visual diagram of the resources in a virtual network, and the relationships between the resources."
+
+  - content: "What Azure Network Watcher feature can help you quickly troubleshoot the issue reported by the help desk?"
     choices:
-    - content: "Connection Troubleshoot"
-      isCorrect: false
-      explanation: "That's incorrect. Connection Troubleshoot troubleshoots network performance and connectivity issues in Azure."
-    - content: "IP Flow Verify"
+    - content: "IP flow verify"
       isCorrect: true
-      explanation: "That's correct. IP Flow Verify quickly diagnose connectivity issues from or to the internet and from or to the on-premises environment. For example, confirming if a security rule is blocking ingress or egress traffic to or from a virtual machine."
+      explanation: "Correct. The IP flow verify feature can quickly diagnose connectivity issues from or to the internet, and from or to the on-premises environment. You can confirm if a security rule is blocking ingress or egress traffic to or from a virtual machine."  
+    - content: "Connection troubleshoot"
+      isCorrect: false
+      explanation: "Incorrect. The connection troubleshoot feature troubleshoots network performance and connectivity issues in Azure."
     - content: "Packet capture"
       isCorrect: false
-      explanation: "That's incorrect. Packet capture creates capture sessions to track traffic to and from a virtual machine."
-  - content: "Which of the following is a good use for Network Watcher?"
+      explanation: "Incorrect. The packet capture feature creates capture sessions to collect traffic to and from a virtual machine."
+  
+  - content: "Which scenario is a good use case for Azure Network Watcher?"
     choices:
-    - content: "Diagnose network traffic filtering problems to or from a virtual machine."
+    - content: "Log activity events"
+      isCorrect: false
+      explanation: "Incorrect. Network Watcher isn't designed to log activity events. A better choice for this use case is Azure Monitor."
+    - content: "Diagnose network traffic filtering problems to or from a virtual machine"
       isCorrect: true
-      explanation: "That's correct. Network Watcher could be used to diagnose network traffic filtering problems to or from a virtual machine."
-    - content: "Log activity events."
+      explanation: "Correct. Azure Network Watcher is ideal for diagnosing network traffic filtering problems to or from a virtual machine."
+    - content: "Provide PaaS monitoring and web analytics"
       isCorrect: false
-      explanation: "That's incorrect. Network Watcher is not designed to log activity events. A better choice would be Azure Monitor."
-    - content: "Provide PaaS monitoring and Web analytic."
-      isCorrect: false
-      explanation: "That's incorrect. Network Watcher is not intended for and will not work for PaaS monitoring or web analytics."
+      explanation: "Incorrect. Azure Network Watcher isn't designed to support PaaS monitoring or web analytics."
