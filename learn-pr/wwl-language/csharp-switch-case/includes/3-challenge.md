@@ -1,78 +1,92 @@
-Code challenges throughout these modules will reinforce what you've learned and help you gain some confidence before continuing on.
 
-The focus of this challenge is to rewrite the code in the .NET Editor to use a different technique to accomplish essentially the same task. This challenge will help you learn the strengths and weaknesses of the switch-case when compared to an if-elseif-else statement.
+Code challenges will reinforce what you've learned, and help you gain some confidence before continuing on.
 
-## Look up product by SKU challenge
+## Convert to switch statements challenge
 
-Suppose we work for a souvenir shop in a college town that sells t-shirts, sweatshirts, and other gifts with the school's logo and colors. A monthly sales report uses the full description, as well as the Stock Keeping Unit (SKU) of the products sold. We've been asked to rewrite certain portions of the code to make it more readable. One of the tasks is to simplify the conversion of a SKU into a description using the `switch` statement.
+In this challenge, you'll rewrite an `if-elseif-else` construct as a `switch` statement. This challenge should help you see the strengths/weaknesses of the `switch` statement when compared to an `if-elseif-else` construct. Good luck.
 
-### Step 1: Delete all of the code in the .NET Editor from the earlier exercise
+## Code challenge: rewrite if-elseif-else using a switch statement
 
-Select all of the code in the .NET Editor, then select the <kbd>Del</kbd> or <kbd>Backspace</kbd> key to delete it.
+You'll start with code that uses an `if-elseif-else` construct to evaluate the components of a product SKU. The SKU (Stock Keeping Unit) is formatted using three coded values: `<product #>-<2-letter color code>-<size code>`. For example, a SKU value of `01-MN-L` corresponds to (sweat shirt)-(maroon)-(large), and the code outputs a description that appears as "Product: Large Maroon Sweat shirt".
 
-### Step 2: Rewrite the code in the .NET editor to use the switch-case statement instead of the if-elseif-else statement
+Your challenge is to convert the `if` statement code to a `switch` statement that achieves the same result as the initial code.
 
-The following code converts a SKU into a long-form description (for example, the sku `01-MN-L` is a "large maroon sweat shirt").
+1. Ensure that you have an empty Program.cs file open in Visual Studio Code.
 
-Change the code in the .NET Editor to use a `switch` statement. The result should be the same.
+    If necessary, open Visual Studio Code, and then complete the following steps to prepare a Program.cs file in the Editor:
 
-```csharp-interactive
-// SKU = Stock Keeping Unit
-string sku = "01-MN-L";
+    1. On the **File** menu, select **Open Folder**.
 
-string[] product = sku.Split('-');
+    1. Use the Open Folder dialog to navigate to, and then open, the **CsharpProjects** folder.
 
-string type = "";
-string color = "";
-string size = "";
+    1. In the Visual Studio Code EXPLORER panel, select **Program.cs**.
 
-if (product[0] == "01")
-{
-    type = "Sweat shirt";
-} else if (product[0] == "02")
-{
-    type = "T-Shirt";
-} else if (product[0] == "03")
-{
-    type = "Sweat pants";
-}
-else
-{
-    type = "Other";
-}
+    1. On the Visual Studio Code **Selection** menu, select **Select All**, and then press the Delete key.
 
-if (product[1] == "BL")
-{
-    color = "Black";
-} else if (product[1] == "MN")
-{
-    color = "Maroon";
-} else
-{
-    color = "White";
-}
+1. Enter the following code into the Visual Studio Code Editor:
 
-if (product[2] == "S")
-{
-    size = "Small";
-} else if (product[2] == "M")
-{
-    size = "Medium";
-} else if (product[2] == "L")
-{
-    size = "Large";
-} else
-{
-    size = "One Size Fits All";
-}
+    ```c#
+    // SKU = Stock Keeping Unit. 
+    // SKU value format: <product #>-<2-letter color code>-<size code>
+    string sku = "01-MN-L";
+    
+    string[] product = sku.Split('-');
+    
+    string type = "";
+    string color = "";
+    string size = "";
+    
+    if (product[0] == "01")
+    {
+        type = "Sweat shirt";
+    } else if (product[0] == "02")
+    {
+        type = "T-Shirt";
+    } else if (product[0] == "03")
+    {
+        type = "Sweat pants";
+    }
+    else
+    {
+        type = "Other";
+    }
+    
+    if (product[1] == "BL")
+    {
+        color = "Black";
+    } else if (product[1] == "MN")
+    {
+        color = "Maroon";
+    } else
+    {
+        color = "White";
+    }
+    
+    if (product[2] == "S")
+    {
+        size = "Small";
+    } else if (product[2] == "M")
+    {
+        size = "Medium";
+    } else if (product[2] == "L")
+    {
+        size = "Large";
+    } else
+    {
+        size = "One Size Fits All";
+    }
+    
+    Console.WriteLine($"Product: {size} {color} {type}");
+    ```
 
-Console.WriteLine($"Product: {size} {color} {type}");
-```
+1. Update the code to use a `switch` statement in place of the `if-elseif-else` construct.
 
-No matter how you do it, your code should produce the following output:
+1. Verify that your output hasn't changed.
 
-```output
-Product: Large Maroon Sweat shirt
-```
+    No matter how you do it, your code should produce the following output:
+
+    ```Output
+    Product: Large Maroon Sweat shirt
+    ```
 
 Whether you get stuck and need to peek at the solution or you finish successfully, continue on to view a solution to this challenge.

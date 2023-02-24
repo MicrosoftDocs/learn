@@ -2,42 +2,35 @@
 uid: learn.languages.csharp-switch-case.knowledge-check
 title: Knowledge check
 metadata:
-  title: Check your knowledge
-  description: Review what you've learned
-  ms.date: 09/26/2019
-  author: billwagner
-  ms.author: wiwagn
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: cahowd
   ms.topic: interactive-tutorial
-  ms.prod: learning-languages
+  ms.prod: learning-azure
 durationInMinutes: 3
 quiz:
-  title: Check your knowledge
   questions:
   - content: "Which of the following statements about the `switch-case` construct is true?"
     choices:
     - content: "A single switch section can have multiple case labels."
       isCorrect: true
-      explanation: "Correct!"
+      explanation: "Correct! A single switch section can have multiple case labels."
     - content: "A switch construct must include a default switch section."
       isCorrect: false
-      explanation: "The default switch section is optional."
-    - content: "Two case labels can have the same matching pattern."
-      isCorrect: false
-      explanation: "Two case labels can't have the same matching pattern."
+      explanation: "Incorrect. The switch section that uses the default case is optional."
     - content: "The colon at the end of the case label is optional."
       isCorrect: false
-      explanation: "The colon isn't optional."
+      explanation: "Incorrect. The colon isn't optional."
   - content: "What is the purpose of the `break` keyword?"
     choices:
     - content: "The `break` keyword tells the runtime to continue evaluating other cases in the `switch` construct."
       isCorrect: false
-      explanation: "The `break` keyword doesn't instruct the runtime to continue evaluating other cases in the `switch` construct."
+      explanation: "Incorrect. The `break` keyword doesn't instruct the runtime to continue evaluating other cases in the `switch` construct."
     - content: "The `break` keyword tells the runtime to stop evaluating other cases in the `switch` construct."
       isCorrect: true
-      explanation: "Correct!"
+      explanation: "Correct! The `break` keyword prevents the code in one switch section from running into the next section."
     - content: "The `break` keyword tells the runtime to exit the application."
       isCorrect: false
-      explanation: "The `break` keyword doesn't instruct the runtime to exit the application."
-    - content: "The `break` keyword tells the runtime to exit the method."
-      isCorrect: false
-      explanation: "The `break` keyword doesn't instruct the runtime to exit the method."
+      explanation: "Incorrect. The `break` keyword doesn't instruct the runtime to exit the application."
