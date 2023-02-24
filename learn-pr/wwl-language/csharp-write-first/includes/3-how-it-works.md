@@ -45,7 +45,8 @@ Don't worry if all of these ideas and terms don't make sense. For now, all you n
 - Use the correct *punctuation* because it has a special role in C#
 - If you make a mistake, just spot it, fix it and re-run
 
-> [!TIP] Create a cheat sheet for yourself until you've memorized certain key commands.
+> [!TIP] 
+> Create a cheat sheet for yourself until you've memorized certain key commands.
 
 ## Understand the flow of execution
 
