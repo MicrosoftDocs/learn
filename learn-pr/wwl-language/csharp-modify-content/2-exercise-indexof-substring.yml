@@ -3,14 +3,12 @@ uid: learn.languages.csharp-modify-content.exercise-indexof-substring
 title: Exercise - Use the string's IndexOf() and Substring() helper methods
 metadata:
   title: Exercise - Use the string's IndexOf() and Substring() helper methods
-  description: Determine the position of characters, and extract a target string from a source string
-  ms.date: 11/05/2019
-  author: billwagner
-  ms.author: wiwagn
+  description: "Exercise - Use the string's IndexOf() and Substring() helper methods"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: eric
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 10
-azureSandbox: false
-interactive: csharp
+durationInMinutes: 25
 content: |
   [!include[](includes/2-exercise-indexof-substring.md)]
