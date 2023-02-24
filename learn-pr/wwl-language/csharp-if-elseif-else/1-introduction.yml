@@ -3,12 +3,12 @@ uid: learn.languages.csharp-if-elseif-else.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: A quick overview of the goals of this module.
-  ms.date: 05/16/2022
-  author: billwagner
-  ms.author: wiwagn
+  description: "Introduction"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1
+durationInMinutes: 3
 content: |
   [!include[](includes/1-introduction.md)]

@@ -1,155 +1,202 @@
-Suppose we work for a manufacturer and need to take an inventory of our warehouse to determine the current number of finished products we have that are ready to ship.  In addition to the total number of finished products, we may also want to print out a count and running total of each individual bin in our warehouse where our finished products are stored.  This running total printout would create an audit trail so we can double-check our work and identify shrinkage.
+
+Suppose you work for a manufacturing company. The company needs you to complete an inventory of your warehouse to determine the number of products that are ready to ship. In addition to the total number of finished products, you need to report the number of finished products stored in each individual bin in your warehouse, along with a running total. This running total will be used to create an audit trail so you can double-check your work and identify "shrinkage".
 
 ## Looping through an array using foreach
 
-The foreach statement loops through each element in an array, running the code block below its declaration, substituting the value in a temporary variable for the value of the array that the current loop represents.
+The `foreach` statement provides a simple, clean way to iterate through the elements of an array. T `foreach` statement processes array elements in increasing index order, starting with index 0 and ending with index Length - 1. It uses a temporary variable to hold the value of the array element associated with the current iteration. Each iteration will run the code block that's located below the `foreach` declaration.
 
 Here's a simple example:
 
-```csharp-interactive
-string[] names = { "Bob", "Conrad", "Grant" };
+```c#
+string[] names = { "Rowena", "Robin", "Bao" };
 foreach (string name in names)
 {
     Console.WriteLine(name);
 }
 ```
-Below the `foreach` keyword, the code block that contains the `Console.WriteLine(name);` will execute once for each element of the `names` array.  As the .NET runtime loops through each element of the array, the value stored in the current element of the `names` array is assigned to the temporary variable `name` for easy access inside of the code block.
 
-If you run the code, you would see the following result.
+Below the `foreach` keyword, the code block that contains the `Console.WriteLine(name);` will execute once for each element of the `names` array. As the .NET runtime loops through each element of the array, the value stored in the current element of the `names` array is assigned to the temporary variable `name` for easy access inside of the code block.
 
-```output
-Bob
-Conrad
-Grant
+If you ran the code, you would see the following result.
+
+```Output
+Rowena
+Robin
+Bao
 ```
 
-Let's use the foreach statement to create a sum of all the items on hand in each bin of our warehouse.
+Use the `foreach` statement to create a sum of all the items on hand in each bin of your warehouse.
 
-### Step 1 - Create and initialize an array of int
+### Create and initialize an array of int
 
-Delete or comment out any code from previous exercises and add the following code to create an array of `int` that will store the number of finished products in each bin.
+1. Ensure that you have an empty Program.cs file open in Visual Studio Code.
 
-```csharp-interactive
-int[] inventory = { 200, 450, 700, 175, 250 };
-```
+    If necessary, open Visual Studio Code, and then complete the following steps to prepare a Program.cs file in the Editor:
 
-### Step 2 - Add a foreach statement to iterate through the array
+    1. On the **File** menu, select **Open Folder**.
 
-Next, add a foreach statement that iterates through each element of the `inventory` array, temporarily assigning the value of the current element to the variable `items`. Your code should match the following listing.
+    1. Use the Open Folder dialog to navigate to, and then open, the **CsharpProjects** folder.
 
-```csharp-interactive
-int[] inventory = { 200, 450, 700, 175, 250 };
+    1. In the Visual Studio Code EXPLORER panel, select **Program.cs**.
 
-foreach (int items in inventory)
-{
+    1. On the Visual Studio Code **Selection** menu, select **Select All**, and then press the Delete key.
 
-}
-```
+1. To create an array of type `int` that stores the number of finished products in each bin, enter the following code:
 
-### Step 3 - Add a variable to sum the value of each element in the array
+    ```c#
+    int[] inventory = { 200, 450, 700, 175, 250 };
+    ```
 
-Define a new variable that represents the sum of all finished products in our warehouse.  Make sure to add it **outside** of the `foreach` statement.
+### Add a foreach statement to iterate through the array
 
-```csharp
-int sum = 0;
-```
+1. To create a `foreach` statement that iterates through each element of the `inventory` array, enter the following code:
 
-**Inside** of the `foreach` statement, add the following line of code that adds the current value stored in `items` to the `sum` variable.
+    ```c#
+    foreach (int items in inventory)
+    {
+    
+    }
+    ```
 
-```csharp
-sum += items;
-```
+    Notice that the `foreach` statement temporarily assigns the value of the current array element to an `int` variable named `items`.
 
-Make sure your code matches the following passage of code.
+1. Ensure that your code matches the following:
 
-```csharp-interactive
-int[] inventory = { 200, 450, 700, 175, 250 };
-int sum = 0;
-foreach (int items in inventory)
-{
+    ```c#
+    int[] inventory = { 200, 450, 700, 175, 250 };
+    
+    foreach (int items in inventory)
+    {
+    
+    }
+    ```
+
+### Add a variable to sum the value of each element in the array
+
+1. Position the cursor on the blank code line above the `foreach` statement.
+
+1. To declare a new variable that represents the sum of all finished products in your warehouse, enter the following code:
+
+    ```c#
+    int sum = 0;
+    ```
+
+    Ensure that you declare the variable **outside** of the `foreach` statement.
+
+1. Position the cursor inside the code block of the `foreach` statement.
+
+1. To add the current value stored in `items` to the `sum` variable, enter the following code:
+
+    ```c#
     sum += items;
-}
-```
+    ```
 
-### Step 4 - Display the final value of sum
+1. Ensure your code matches the following:
 
-**Below** the foreach statement's code block, add the following statement that prints the final sum of items in inventory.
+    ```c#
+    int[] inventory = { 200, 450, 700, 175, 250 };
+    int sum = 0;
+    foreach (int items in inventory)
+    {
+        sum += items;
+    }
+    ```
 
-```csharp
-Console.WriteLine($"We have {sum} items in inventory.");
-```
-Make sure your code matches the following passage of code.
+### Display the final value of sum
 
-```csharp-interactive
-int[] inventory = { 200, 450, 700, 175, 250 };
-int sum = 0;
-foreach (int items in inventory)
-{
-    sum += items;
-}
+1. Create a blank code line below the code block of the `foreach` statement.
 
-Console.WriteLine($"We have {sum} items in inventory.");
-```
+1. To report the final sum of items in your inventory, enter the following code:
 
-When you run the code, you should see the following output.
+    ```c#
+    Console.WriteLine($"We have {sum} items in inventory.");
+    ```
 
-```output
-We have 1775 items in inventory.
-```
+1. Ensure that your code matches the following:
 
-### Step 5 - Create a variable to hold the current bin number and display the running total
+    ```c#
+    int[] inventory = { 200, 450, 700, 175, 250 };
+    int sum = 0;
+    foreach (int items in inventory)
+    {
+        sum += items;
+    }
+    
+    Console.WriteLine($"We have {sum} items in inventory.");
+    ```
 
-To fulfill the final requirement, we'll need to create a variable that will hold the current iteration of the `foreach` statement so we can display the bin and the count of finished items in that bin, along with the running total of all items of bins accounted for so far.
+1. On the Visual Studio Code **File** menu, click **Save**.
 
-Above the `foreach` statement, declare and initialize a new variable of type `int` to store the current number of the bin whose inventory is being processed.
+1. In the EXPLORER panel, to open a Terminal at your TestProject folder location, right-click **TestProject**, and then select **Open in Integrated Terminal**.
 
-```csharp
-int bin = 0;
-```
+1. At the Terminal command prompt, type **dotnet run** and then press Enter.
 
-**Inside** of the `foreach` code block, increment the bin each time the code block is executed.
+    ```Output
+    We have 1775 items in inventory.
+    ```
 
-```csharp
-bin++;
-```
-The `++` operator increments the value of the variable by 1.  Its shortcut to writing `bin = bin + 1`.
+### Create a variable to hold the current bin number and display the running total
 
-Finally, inside of the foreach, display the bin, its count of finished products, and the running total of finished products in a nicely formatted message.
+To fulfill the final requirement of your inventory reporting project, you'll need to create a variable that will hold the current iteration of the `foreach` statement so you can display the bin and the count of finished items in that bin, along with the running total of all items of bins accounted for so far.
 
-```csharp
-Console.WriteLine($"Bin {bin} = {items} items (Running total: {sum})");
-```
-Make sure your code matches the following passage of code.
+1. Create a blank code line above the `foreach` statement.
 
-```csharp-interactive
-int[] inventory = { 200, 450, 700, 175, 250 };
-int sum = 0;
-int bin = 0;
-foreach (int items in inventory)
-{
-    sum += items;
+1. To declare `int` variable named `bin` that's initialized to `0`, enter the following code:
+
+    ```c#
+    int bin = 0;
+    ```
+
+    You will use `bin` to store the number of the bin whose inventory is currently being processed.
+
+1. Inside the `foreach` code block, to increment `bin` each time the code block is executed, enter the following code:
+
+    ```c#
     bin++;
+    ```
+
+    Notice that you use the `++` operator to increment the value of the variable by 1. This is a shortcut for `bin = bin + 1`.
+
+1. To report the bin number, the number of finished products in the bin, and the running total of finished products, enter the following code inside the `foreach` code block, after `bin++;`:
+
+    ```c#
     Console.WriteLine($"Bin {bin} = {items} items (Running total: {sum})");
-}
-Console.WriteLine($"We have {sum} items in inventory.");
-```
+    ```
 
-When you run the code, you should see the following output.
+    This code will use your counter variable `bin`, the temporary `foreach` variable `items`, and your `sum` variable to report the current state of your inventory in a nicely formatted message.
 
-```output
-Bin 1 = 200 items (Running total: 200)
-Bin 2 = 450 items (Running total: 650)
-Bin 3 = 700 items (Running total: 1350)
-Bin 4 = 175 items (Running total: 1525)
-Bin 5 = 250 items (Running total: 1775)
-We have 1775 items in inventory.
-```
+1. Ensure that your code matches the following:
+
+    ```c#
+    int[] inventory = { 200, 450, 700, 175, 250 };
+    int sum = 0;
+    int bin = 0;
+    foreach (int items in inventory)
+    {
+        sum += items;
+        bin++;
+        Console.WriteLine($"Bin {bin} = {items} items (Running total: {sum})");
+    }
+    Console.WriteLine($"We have {sum} items in inventory.");
+    ```
+
+1. Save the changes to your Program.cs file, and then run the application.
+
+    You should see the following output:
+
+    ```Output
+    Bin 1 = 200 items (Running total: 200)
+    Bin 2 = 450 items (Running total: 650)
+    Bin 3 = 700 items (Running total: 1350)
+    Bin 4 = 175 items (Running total: 1525)
+    Bin 5 = 250 items (Running total: 1775)
+    We have 1775 items in inventory.
+    ```
 
 ## Recap
 
-Here's a few things to remember about the `foreach` statement and other things we learned about in this unit.
+Here's a few things to remember about `foreach` statements and incrementing values that you learned in this unit:
 
 - Use the `foreach` statement to iterate through each element in an array, executing the associated code block once for each element in the array.
 - The `foreach` statement sets the value of the current element in the array to a temporary variable, which you can use in the body of the code block.
 - Use the `++` increment operator to add 1 to the current value of a variable.
-

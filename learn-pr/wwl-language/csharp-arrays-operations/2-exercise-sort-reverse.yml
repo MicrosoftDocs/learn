@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-arrays-operations.exercise-sort-reverse
-title: Exercise - Sort() and Reverse()
+title: Exercise - Discover Sort() and Reverse()
 metadata:
-  title: Exercise - Sort() and Reverse()
-  description: Use the `Sort()` and `Reverse()` helper methods to organize the data in your arrays.
-  ms.date: 10/14/2019
-  author: billwagner
-  ms.author: wiwagn
+  title: Exercise - Discover Sort() and Reverse()
+  description: "Exercise - Discover Sort() and Reverse()"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: eric
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 3
-azureSandbox: false
-interactive: csharp
+durationInMinutes: 10
 content: |
   [!include[](includes/2-exercise-sort-reverse.md)]

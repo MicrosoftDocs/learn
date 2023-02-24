@@ -1,51 +1,66 @@
-Previously, we set out to write code that would store Order IDs belonging to potentially fraudulent orders.  Our hope is to find fraudulent orders as early as possible and flag them for deeper analysis.  
 
-Our team found a pattern. Orders that start with the letter "B" encounter fraud 25 times the normal rate.  We will write new code that will output the Order ID of new orders where the Order ID starts with the letter "B".  This will be used by our fraud team to investigate further.
+Code challenges will reinforce what you've learned and help you gain some confidence before continuing on.
 
-### Step 1 - Delete the code from the previous exercises.
+## Fraudulent order challenge
 
-Select all of the code, then select the backspace or `del` key on your keyboard.
+Earlier in this module, you set out to write code that would store Order IDs belonging to potentially fraudulent orders. Your goal is to find fraudulent orders as early as possible and flag them for deeper analysis.
 
-### Step 2 - Declare and initialize a new array to hold fake Order IDs.
+## Code challenge - Report the Order IDs that need further investigation
 
-Here's the fake Order ID data that you should use to initialize your array.
+Your team has found a pattern. Orders that start with the letter "B" encounter fraud at a rate 25 times greater than the normal rate. You'll write new code that outputs the Order ID of new orders where the Order ID starts with the letter "B". This will be used by the fraud team to investigate further.
 
-```
-B123
-C234
-A345
-C15
-B177
-G3003
-C235
-B179
-```
+Use the following steps to complete this challenge.
 
-### Step 3 - Iterate through each element of the array.
+1. Ensure that you have an empty Program.cs file open in Visual Studio Code.
 
-Use a `foreach` statement to iterate through each element of the array you just declared and initialized.
+    If necessary, open Visual Studio Code, and then complete the following steps to prepare a Program.cs file in the Editor:
 
-### Step 4 - If the fake Order ID starts with "B", then print the Order ID to the output.
+    1. On the **File** menu, select **Open Folder**.
 
-Evaluate each element of the array.  Identify and print to output the potentially fraudulent Order IDs looking for those orders that start with the letter "B".  The output should match the following output:
+    1. Use the Open Folder dialog to navigate to, and then open, the **CsharpProjects** folder.
 
-```output
-B123
-B177
-B179
-```
+    1. In the Visual Studio Code EXPLORER panel, select **Program.cs**.
 
-To determine whether or not an element starts with the letter "B", use the `String.StartsWith()` method.  Here's a simple example of how to use the `String.StartsWith()` method so you can use it in your code:
+    1. On the Visual Studio Code **Selection** menu, select **Select All**, and then press the Delete key.
 
-```csharp-interactive
-string name = "Bob";
-if (name.StartsWith("B"))
-{
-    Console.WriteLine("The name starts with 'B'!");
-}
-```
+1. Declare an array and initialize it to contain the following elements:
 
-> [!IMPORTANT]
-> Here's a hint:  As you loop through each element in your array, you'll need an `if` statement.  The `if` statement will need to use a method on the string class to determine if a string starts with a specific letter.  If you're not sure how to use an `if` statement, please see the module "Add decision logic to your code using the if-elseif-else statement in C#".
+    ```Output
+    B123
+    C234
+    A345
+    C15
+    B177
+    G3003
+    C235
+    B179
+    ```
+
+    These values represent the fraudulent Order ID data that your application will use.
+
+1. Create a `foreach` statement to iterate through each element of your array.
+
+1. Report the Order IDs that start with the letter "B".
+
+    You will need to evaluate each element of the array. Report the potentially fraudulent Order IDs by detecting the orders that start with the letter "B". To determine whether or not an element starts with the letter "B", use the `String.StartsWith()` method. Here's a simple example of how to use the `String.StartsWith()` method that you can adapt for your code:
+
+    ```c#
+    string name = "Bob";
+    if (name.StartsWith("B"))
+    {
+        Console.WriteLine("The name starts with 'B'!");
+    }
+    ```
+
+    Your output should match the following:
+
+    ```Output
+    B123
+    B177
+    B179
+    ```
+
+> [!TIP]
+> Here's a hint: As you loop through each element in your array, you'll need an `if` statement. The `if` statement will need to use a method on the string class to determine if a string starts with a specific letter. If you're not sure how to use an `if` statement, please see the module "Add decision logic to your code using the if-elseif-else statement in C#".
 
 Whether you get stuck and need to peek at the solution or you finish successfully, continue on to view a solution to this challenge.
