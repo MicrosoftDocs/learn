@@ -16,7 +16,7 @@ quiz:
     choices:
     - content: "`Trim()`."
       isCorrect: false
-      explanation: "Incorrect. The `Trim()` method won't help to ignore case when comparing strings."
+      explanation: "Incorrect. The `Trim()` method don't help to ignore case when comparing strings."
     - content: "`Lower()`."
       isCorrect: false
       explanation: "Incorrect. `Lower()` isn't a method of the string class."
@@ -28,20 +28,20 @@ quiz:
     - content: "`Console.WriteLine(!value);`."
       isCorrect: true
       explanation: "Correct! Adding the `!` operator (the \"not-operator\") before a conditional expression checks to ensure the expression is false."
-    - content: "`Console.WriteLine(value != true);`."
+    - content: "`Console.WriteLine( value!= true);`."
       isCorrect: false
-      explanation: "Incorrect. Evaluating whether a value isn't equal to `true` is not an example of logical negation."
-    - content: "`Console.WriteLine(value != false);`."
+      explanation: "Incorrect. Evaluating whether a value isn't equal to `true` isn't an example of logical negation."
+    - content: "`Console.WriteLine( value!= false);`."
       isCorrect: false
-      explanation: "Incorrect. Evaluating whether a value isn't equal to `false` is not an example of logical negation."
+      explanation: "Incorrect. Evaluating whether a value isn't equal to `false` isn't an example of logical negation."
   - content: "Which of the following lines of code is a valid use of the conditional operator?"
     choices:
-    - content: "`int value = amount >= 10 ? 10 : 20;`."
+    - content: "`int value = amount >= 10? 10: 20;`."
       isCorrect: true
       explanation: "Correct! The syntax for a conditional operator is \"? (value 1) : (value 2)\"."
-    - content: "`int value = amount >= 10 : 10 ? 20;`."
+    - content: "`int value = amount >= 10: 10? 20;`."
       isCorrect: false
       explanation: "Incorrect. The conditional operator is reversed."
-    - content: "`int value = amount >= 10 ? 10 | 20;`."
+    - content: "`int value = amount >= 10? 10| 20;`."
       isCorrect: false
       explanation: "Incorrect. The pipe character isn't a component of the conditional operator syntax."
