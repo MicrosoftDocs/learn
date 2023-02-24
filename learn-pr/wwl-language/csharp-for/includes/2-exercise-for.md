@@ -84,7 +84,8 @@ This module includes hands-on activities that guide you through the process of b
 
 1. At the Terminal command prompt, to run your code, type **dotnet run** and then press Enter.
 
-    > [!NOTE] If you see a message saying "Couldn't find a project to run", ensure that the Terminal command prompt displays the expected TestProject folder location. For example: `C:\Users\someuser\Desktop\csharpprojects\TestProject>`
+    > [!NOTE] 
+    > If you see a message saying "Couldn't find a project to run", ensure that the Terminal command prompt displays the expected TestProject folder location. For example: `C:\Users\someuser\Desktop\csharpprojects\TestProject>`
 
     You should see the following output.
 
@@ -114,7 +115,8 @@ This module includes hands-on activities that guide you through the process of b
 
     Given our rules for naming variables, you may wonder if `i` is a valid name for the variable that holds the current iteration. In this case, `i` is considered by most to be valid. Other popular choices are `x` and `counter`. The name `j` is also used in those situations when you have an outer `for` statement that uses `i`, and need to create an iteration variable for an inner `for` statement.
 
-    > [!NOTE] All three sections (initializer, condition, and iterator) are optional. However, in practice, typically all three sections are used.
+    > [!NOTE] 
+    > All three sections (initializer, condition, and iterator) are optional. However, in practice, typically all three sections are used.
 
 ### Change the iteration conditions
 
@@ -272,7 +274,8 @@ A common usage for the `for` statement is to iterate through an array of element
     Alex
     ```
 
-    > [!NOTE] We could have iterated forward through the array elements by constructing the `for` statement as follows: `for (int i = 0; i < names.Length; i++)`.
+    > [!NOTE] 
+    > We could have iterated forward through the array elements by constructing the `for` statement as follows: `for (int i = 0; i < names.Length; i++)`.
 
 ### Examine the limitation of the foreach statement
 
