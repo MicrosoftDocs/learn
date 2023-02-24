@@ -1,3 +1,4 @@
+
 As a best practice, you shouldn't share storage account keys with external third-party applications. If these apps need access to your data, you'll need to secure their connections without using storage account keys.
 
 For untrusted clients, use a **shared access signature** (SAS). A shared access signature is a string that contains a security token that can be attached to a URI. Use a shared access signature to delegate access to storage objects and specify constraints, such as the permissions and the time range of access.
@@ -14,7 +15,11 @@ Additionally, a service SAS can reference a stored access policy that provides a
 
 One would typically use a shared access signature for a service where users read and write their data to your storage account. Accounts that store user data have two typical designs:
 
- -  Clients upload and download data through a front-end proxy service, which performs authentication. This front-end proxy service has the advantage of allowing validation of business rules. But if the service must handle large amounts of data or high-volume transactions, you might find it complicated or expensive to scale this service to match demand.<br>:::image type="content" source="../media/az500-shared-access-signature-1-0af67054.png" alt-text="Clients upload and download data through a front-end proxy service, which performs authentication.":::
-    <br>
- -  A lightweight service authenticates the client as needed. Then it generates a shared access signature. After receiving the shared access signature, the client can access storage account resources directly. The shared access signature defines the client's permissions and access interval. The shared access signature reduces the need to route all data through the front-end proxy service.<br>:::image type="content" source="../media/az500-shared-access-signature-2-3672ac29.png" alt-text="A lightweight service authenticates the client as needed. Then it generates a shared access signature.":::
-    <br>
+ -  Clients upload and download data through a front-end proxy service, which performs authentication. This front-end proxy service has the advantage of allowing validation of business rules. But if the service must handle large amounts of data or high-volume transactions, you might find it complicated or expensive to scale this service to match demand.
+    
+    :::image type="content" source="../media/az500-shared-access-signature-1-0af67054.png" alt-text="Clients upload and download data through a front-end proxy service, which performs authentication.":::
+    
+ -  A lightweight service authenticates the client as needed. Then it generates a shared access signature. After receiving the shared access signature, the client can access storage account resources directly. The shared access signature defines the client's permissions and access interval. The shared access signature reduces the need to route all data through the front-end proxy service.
+    
+    :::image type="content" source="../media/az500-shared-access-signature-2-3672ac29.png" alt-text="A lightweight service authenticates the client as needed. Then it generates a shared access signature.":::
+    
