@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-arrays-operations.challenge-1
-title: First challenge
+title: Exercise - Complete a challenge to reverse words in a sentence
 metadata:
-  title: First challenge
-  description: Use your knowledge of array helper methods to solve a coding challenge.
-  ms.date: 10/14/2019
-  author: billwagner
-  ms.author: wiwagn
+  title: Exercise - Complete a challenge to reverse words in a sentence
+  description: "Exercise - Complete a challenge to reverse words in a sentence"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: eric
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10
-azureSandbox: false
-interactive: csharp
 content: |
   [!include[](includes/5-challenge-1.md)]
