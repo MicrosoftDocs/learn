@@ -17,9 +17,9 @@ One would typically use a shared access signature for a service where users read
 
  -  Clients upload and download data through a front-end proxy service, which performs authentication. This front-end proxy service has the advantage of allowing validation of business rules. But if the service must handle large amounts of data or high-volume transactions, you might find it complicated or expensive to scale this service to match demand.
     
-    :::image type="content" source="../media/az500-shared-access-signature-1-0af67054.png" alt-text="Clients upload and download data through a front-end proxy service, which performs authentication.":::
+    :::image type="content" source="../media/az500-shared-access-signature-1-0af67054.png" alt-text="Screenshot of clients upload and download data through a front-end proxy service, which performs authentication.":::
     
  -  A lightweight service authenticates the client as needed. Then it generates a shared access signature. After receiving the shared access signature, the client can access storage account resources directly. The shared access signature defines the client's permissions and access interval. The shared access signature reduces the need to route all data through the front-end proxy service.
     
-    :::image type="content" source="../media/az500-shared-access-signature-2-3672ac29.png" alt-text="A lightweight service authenticates the client as needed. Then it generates a shared access signature.":::
+    :::image type="content" source="../media/az500-shared-access-signature-2-3672ac29.png" alt-text="Screenshot of a lightweight service authenticates the client as needed. Then it generates a shared access signature.":::
     
