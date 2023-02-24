@@ -157,7 +157,7 @@ Other simple Boolean expressions can be created by using operators to compare tw
 - and so on
 
 > [!NOTE]
-> The C# training series on Microsoft Learn devotes an entire module to Boolean expressions. There are many operators you can use to construct a Boolean expression, and you'll only cover a few of the basics here in this module. For more on Boolean expressions, see the module [Evaluate Boolean expressions to make decisions in C#](TBD).
+> The C# training series on Microsoft Learn devotes an entire module to Boolean expressions. There are many operators you can use to construct a Boolean expression, and you'll only cover a few of the basics here in this module. For more on Boolean expressions, see the module `[Evaluate Boolean expressions to make decisions in C#](TBD)`.
 
 In this example, you evaluated the Boolean expression `total > 14`. However, you could have chosen the Boolean expression `total >= 15` because in this case, they're the same. Given that the rules to the game specify "If the sum of the three dice, plus any bonuses, is 15 or greater, you win the game", you should probably implement the `>= 15` expression. You'll make that change in the next step of the exercise.
 
@@ -168,7 +168,7 @@ A code block is a collection of one or more lines of code that are defined by an
 You should also know that code blocks can contain other code blocks. In fact, it's common for one code block to be "nested" inside another code block in your applications. You'll begin nesting your own code blocks later in this module when you create one `if` statement inside the code block of another.
 
 > [!NOTE]
-> The C# training series on Microsoft Learn devotes an entire module to understanding code blocks. Code blocks are central to understanding code organization and structure, and they define the boundaries of variable scope. See the module [Control variable scope and logic using code blocks in C#](TBD).
+> The C# training series on Microsoft Learn devotes an entire module to understanding code blocks. Code blocks are central to understanding code organization and structure, and they define the boundaries of variable scope. See the module `[Control variable scope and logic using code blocks in C#](TBD)`.
 
 ## Add another if statement to implement the doubles bonus
 

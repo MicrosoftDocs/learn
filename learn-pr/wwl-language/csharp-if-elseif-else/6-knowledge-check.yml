@@ -16,18 +16,18 @@ quiz:
     choices:
     - content: "`x < 5`."
       isCorrect: false
-      explanation: "Incorrect. Since `x` is not less than 5, this expression will evaluate to **false**."
+      explanation: "Incorrect. Since `x` isn't less than 5, this expression evaluates to **false**."
     - content: "`x > 5`."
       isCorrect: false
-      explanation: "Incorrect. Since `x` is not greater than 5, this expression will evaluate to **false**."
+      explanation: "Incorrect. Since `x` isn't greater than 5, this expression evaluates to **false**."
     - content: "`x == 5`."
       isCorrect: true
-      explanation: "Correct! Since `x` is equal to 5, using the C# equality operator `==` in the expression will evaluate to **true**."
+      explanation: "Correct! Since `x` is equal to 5, using the C# equality operator `==` in the expression evaluates to **true**."
   - content: "Which of the choices below is *not* a valid operator in C#?"
     choices:
     - content: "`%%`."
       isCorrect: true
-      explanation: "Correct! The double percentage-sign symbol `%%` is not a valid C# operator."
+      explanation: "Correct! The double percentage-sign symbol `%%` isn't a valid C# operator."
     - content: "`&&`."
       isCorrect: false
       explanation: "Incorrect. `&&` is the C# logical AND operator."
@@ -39,9 +39,9 @@ quiz:
     - content: "The Boolean expression evaluated by an `if` statement is optional."
       isCorrect: false
       explanation: "Incorrect. A Boolean expression is a required component of an `if` statement."
-    - content: "An `else` statement cannot be placed before an `else if` statement."
+    - content: "An `else` statement can't be placed before an `else if` statement."
       isCorrect: true
-      explanation: "Correct! An `else` cannot be placed before an `else if` statement."
+      explanation: "Correct! An `else` can't be placed before an `else if` statement."
     - content: "The `else` statement is required when an `if` statement includes an `else if`."
       isCorrect: false
-      explanation: "Incorrect. The `else` statement is not required in order to create a valid `if` statement."
+      explanation: "Incorrect. The `else` statement isn't required in order to create a valid `if` statement."
