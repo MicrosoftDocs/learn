@@ -1,3 +1,4 @@
+
 Use this set of Try-This exercises to get some hands-on experience with Azure.
 
 In this demonstration, we will configure and test an app registration.
