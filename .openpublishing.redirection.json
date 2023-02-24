@@ -20456,11 +20456,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/advocates/monitor-and-manage-device-with-iot-central/index.md",
-      "redirect_url": "/training/modules/monitor-and-manage-device-with-iot-central/",
-      "redirect_document_id": true
-    },
-    {
       "source_path": "learn-pr/advocates/monitor-and-manage-device-with-iot-central/1-create-azure-iot-central-application.md",
       "redirect_url": "/training/modules/monitor-and-manage-device-with-iot-central/2-create-azure-iot-central-application",
       "redirect_document_id": true
