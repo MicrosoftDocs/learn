@@ -5,33 +5,33 @@ You'll be using Visual Studio Code to develop portions of a C# console applicati
 
 The Starter code project for this module includes a Program.cs file with the following code features:
 
-- the code declares variables used to collect and process pet data and menu item selections
-- the code declares the ourAnimals array that includes the following information for each animal in the array:
+- The code declares variables used to collect and process pet data and menu item selections
+- The code declares the ourAnimals array that includes the following information for each animal in the array:
 
-    - pet ID #
-    - pet species (cat or dog)
-    - pet age (years)
-    - a description of the pet's physical appearance
-    - a description of the pet's personality
-    - the pet's nickname
+    - Pet ID #.
+    - Pet species (cat or dog).
+    - Pet age (years).
+    - A description of the pet's physical appearance.
+    - A description of the pet's personality.
+    - The pet's nickname.
 
-- the code uses a for loop around a select-case construct to populate elements of the ourAnimals array  
-- the code includes a loop around a main menu that terminates when the user enters "exit". The main menu includes:
+- The code uses a for loop around a select-case construct to populate elements of the ourAnimals array.
+- The code includes a loop around a main menu that terminates when the user enters "exit". The main menu includes:
 
-    1. List all of our current pet information
-    1. Assign values to the ourAnimals array fields
-    1. Ensure animal ages and physical descriptions are complete
-    1. Ensure animal nicknames and personality descriptions are complete
-    1. Edit an animal’s age
-    1. Edit an animal’s personality description
-    1. Display all cats with a specified characteristic
-    1. Display all dogs with a specified characteristic
+    1. List all of our current pet information.
+    1. Assign values to the ourAnimals array fields.
+    1. Ensure animal ages and physical descriptions are complete.
+    1. Ensure animal nicknames and personality descriptions are complete.
+    1. Edit an animal’s age.
+    1. Edit an animal’s personality description.
+    1. Display all cats with a specified characteristic.
+    1. Display all dogs with a specified characteristic.
 
     Enter menu item selection or type "Exit" to exit the program
 
-- the code reads the user's menu item selection and uses a switch statement to branch the code for each menu item number
-- the code includes implementation for menu options 1 and 2.
-- the code displays an "under construction" message for menu options 3-8.  
+- The code reads the user's menu item selection and uses a switch statement to branch the code for each menu item number.
+- The code includes implementation for menu options 1 and 2.
+- The code displays an "under construction" message for menu options 3-8.  
 
 Your goal in this challenge is to create the app features aligned with menu options 3 and 4.
 
@@ -40,25 +40,25 @@ Your goal in this challenge is to create the app features aligned with menu opti
 
 To complete the feature that ensures animal ages and physical descriptions are complete, your code will need to:
 
-    - assign a valid numeric value to petAge for any animal that has been assigned data in the ourAnimals array but has not been assigned an age
-    - assign a valid string to petPhysicalDescription for any animal that has been assigned data in the ourAnimals array but has not been assigned a physical description
-    - a valid physical description cannot be null and cannot have zero characters, any further requirement is up to you
+    - Assign a valid numeric value to petAge for any animal that has been assigned data in the ourAnimals array but has not been assigned an age.
+    - Assign a valid string to petPhysicalDescription for any animal that has been assigned data in the ourAnimals array but has not been assigned a physical description.
+    - A valid physical description cannot be null and cannot have zero characters, any further requirement is up to you.
 
 To complete the feature that ensures animal nickname and personality descriptions are complete, your code will need to:
 
-    - assign a valid string to petNickname for any animal that has been assigned data in the ourAnimals array but has not been assigned a nickname
-    - assign a valid string to petPersonalityDescription for any animal that has been assigned data in the ourAnimals array but has not been assigned a personality description
-    - a valid nickname or personality description cannot be null and cannot have zero characters, any further requirement is up to you 
+    - Assign a valid string to petNickname for any animal that has been assigned data in the ourAnimals array but has not been assigned a nickname.
+    - Assign a valid string to petPersonalityDescription for any animal that has been assigned data in the ourAnimals array but has not been assigned a personality description.
+    - A valid nickname or personality description cannot be null and cannot have zero characters, any further requirement is up to you.
 
 ## Setup
 
 Use the following steps to prepare for the Challenge project exercises.
 
-1. Download a zip file containing the code folders for the LP2 Challenge project
+1. Download a zip file containing the code folders for the LP2 Challenge project.
 
     - In a browser, navigate to [Lab Files](https://github.com/MicrosoftLearning/Challenge-project-Develop-branching-and-looping-structures-in-CSharp/archive/refs/heads/main.zip) and download the zip file.
 
-1. Unzip the downloaded files locally (or in the sandbox if you aren't using a local dev environment)
+1. Unzip the downloaded files locally (or in the sandbox if you aren't using a local dev environment).
 
     1. On your local machine, navigate to your downloads folder.
     1. Right-click the Challenge-project-Develop-branching-and-looping-structures-in-CSharp.zip file, and then select **Extract all**.
@@ -66,7 +66,7 @@ Use the following steps to prepare for the Challenge project exercises.
     1. Select **Show extracted files when complete**, and then select **Extract**.
     1. Make note of the extracted folder location.
 
-1. Open the extracted **ChallengeProject** folder in VS Code
+1. Open the extracted **ChallengeProject** folder in VS Code.
 
     1. Open VS Code locally (or open MS Learn sandbox and open VS Code if you aren't using a local dev environment)
     1. In VS Code, on the **File** menu, select **Open Folder**

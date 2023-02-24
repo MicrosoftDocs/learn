@@ -1,6 +1,6 @@
 
-Your challenge was to build an application that implements a combination of selection and iteration statements to achieve the design goals of our application.
+Your goal was to demonstrate the ability to develop features of an application that achieve a design specification. You needed to choose and implement the appropriate iteration and selection statement types to meet the stated requirements.
 
-By creating nested combinations of iteration and selection statements, you built a user interface that enables the user to display pet data from the ourAnimals array, as well as enter characteristics of new pets that we validate and add to the ourAnimals array. The app user can continue making menu selections until they choose to exit the application.
+By creating nested combinations of iteration and selection statements, you built a user interface that enables the application user to enter valid pet data that filled gaps in the ourAnimals array.
 
-Having the ability to implement a variety of iteration and selection statements enables you to optimize your code.
+Your ability to implement features of the Contoso Pets application based on a design specification demonstrate your understanding of the iteration and selection statements.

@@ -11,16 +11,17 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 3
 quiz:
+  title: ""
   questions:
   - content: "A developer is writing an application in Visual Studio Code. They save changes to their Program.cs file, and then run the `dotnet build` command in the Terminal panel. What information can they find in reported Error and Warning messages?"
     choices:
-    - content: "one or more suggestions for how to fix any syntax issues detected"
+    - content: "One or more suggestions for how to fix any syntax issues detected."
       isCorrect: false
       explanation: "Incorrect. Error and Warning messages do not include suggested fixes."
-    - content: "the line number and information about what caused the error"
+    - content: "The line number and information about what caused the error."
       isCorrect: true
       explanation: "Correct. Error and Warning messages include a description of the issue and the line number where it occurs."
-    - content: "links to help documentation"
+    - content: "Links to help documentation."
       isCorrect: false
       explanation: "Incorrect. Error and Warning messages do not include links to documentation."
   - content: "If a developer is going to create a iteration statement, under which condition is it better create a `while` statement rather than a `do` statement?"
