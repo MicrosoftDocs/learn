@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-network-watcher.review-ip-flow-verify-diagnostics
-title: Review flow verify diagnostics
+title: Review IP flow verify diagnostics
 metadata:
-  title: Review flow verify diagnostics
-  description: "Review flow verify diagnostics"
-  ms.date: 10/12/2021
+  title: Review IP flow verify diagnostics
+  description: "Configure diagnostics with the IP flow verify feature in Azure Network Watcher."
+  ms.date: 02/24/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
