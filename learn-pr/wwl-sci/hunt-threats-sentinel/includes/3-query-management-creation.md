@@ -29,7 +29,7 @@ Microsoft Sentinel uses the MITRE ATT&CK framework to categorize and order queri
 Selecting any tactic will filter the available queries by the selected tactic. The included Hunting tactics are from the ATT&CK Enterprise and ICS (Industrial Control Systems) matrices:
 
 - **Reconnaissance**. Tactics the adversary uses to find information they can use to plan future operations.
-- **Resource Development**. Tactics the adversary uses to establish resources they can use to support operations.Resources include infrastructure, accounts, or capabilities.
+- **Resource Development**. Tactics the adversary uses to establish resources they can use to support operations. Resources include infrastructure, accounts, or capabilities.
 - **Initial access**. Tactics that the adversary uses to gain entry to a network, by exploiting vulnerabilities or configuration weaknesses in public-facing systems. An example is targeted spear-phishing.
 - **Execution**. Tactics that result in an adversary running their code on a target system. For example, a malicious hacker might run a PowerShell script to download more attacker tools and/or scan other systems.
 - **Persistence**. Tactics that allow an adversary to maintain access to a target system, even after restarts and credential changes. An example of a persistence technique is an attacker who creates a scheduled task that runs their code at a specific time or on restart.
