@@ -1,57 +1,48 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-arrays.knowledge-check
-title: Knowledge Check
+title: Knowledge check
 metadata:
-  title: Check your knowledge
-  description: Review what you've learned
-  ms.date: 09/19/2019
-  author: billwagner
-  ms.author: wiwagn
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: cahowd
   ms.topic: interactive-tutorial
-  ms.prod: learning-languages
+  ms.prod: learning-azure
 durationInMinutes: 3
 quiz:
-  title: Check your knowledge
+  title: "Check your knowledge"
   questions:
-  - content: "How do you access the third element in an array?"
+  - content: "Which of the following can be used to access the third element in an array?"
     choices:
-    - content: "`myArray[3]`"
+    - content: "`myArray[3]`."
       isCorrect: false
-      explanation: "Remember - indexes are zero-based."
-    - content: "`myArray[2]`"
+      explanation: "Incorrect. Remember - indexes are zero-based."
+    - content: "`myArray[2]`."
       isCorrect: true
-      explanation: "Correct!"
-    - content: "`myArray{3}`"
+      explanation: "Correct! Because indexes a zero based, 2 will return the third element in an array."
+    - content: "`myArray{3}`."
       isCorrect: false
-      explanation: "Make sure to use square brackets and zero-based indexes!"
-    - content: "`myArray{4}`"
-      isCorrect: false
-      explanation: "Make sure to use square brackets to access an element using an index."
-  - content: "Which of the following answers is the correct way to create a new array of int with three elements?"
+      explanation: "Incorrect. Make sure to use square brackets and zero-based indexes!"
+  - content: "Which of the following choices describes the correct way to create a new integer array with three elements?"
     choices:
-    - content: "`int[] myArray = new int[3];`"
+    - content: "`int[] myArray = new int[3];`."
       isCorrect: true
-      explanation: "Correct!"
-    - content: "`int[] myArray = new int[2];`"
+      explanation: "Correct! This is the correct way to create an array with 3 elements."
+    - content: "`int[] myArray = new int[2];`."
       isCorrect: false
-      explanation: "Indexes are zero based, but when creating a new array, use the actual number of elements you want to create."
-    - content: "`int myArray[] = new int[3];`"
+      explanation: "Incorrect. Arrays indexes are zero based, but when declaring an array, specify the actual number of elements."
+    - content: "`int myArray = new int[3];`."
       isCorrect: false
-      explanation: "The square brackets don't go there."
-    - content: "`int myArray = new int[3];`"
-      isCorrect: false
-      explanation: "Missing a set of square brackets."
-  - content: "Which of the following `foreach` statements is correct?"
+      explanation: "Incorrect. Missing a set of square brackets after the initial type specification, `int`."
+  - content: "Which of the following `foreach` statements is syntactically correct?"
     choices:
-    - content: "`foreach (int value in values)`"
+    - content: "`foreach (int value in values)`."
       isCorrect: true
-      explanation: "Correct!"
-    - content: "`foreach (int value of values)`"
+      explanation: "Correct! This `foreach` statement is defined using valid syntax."
+    - content: "`foreach (int value of values)`."
       isCorrect: false
-      explanation: "The `foreach` statement doesn't include an `of` keyword."
-    - content: "`foreach (int value with values)`"
+      explanation: "Incorrect. The `foreach` statement doesn't include an `of` keyword."
+    - content: "`foreach (int value with values)`."
       isCorrect: false
-      explanation: "The `foreach` statement doesn't include an `with` keyword."
-    - content: "`foreach (int value on values)`"
-      isCorrect: false
-      explanation: "The `foreach` statement doesn't include an `on` keyword."
+      explanation: "Incorrect. The `foreach` statement doesn't include an `with` keyword."
