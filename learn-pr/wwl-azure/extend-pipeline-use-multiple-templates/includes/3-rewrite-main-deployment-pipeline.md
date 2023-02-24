@@ -1,78 +1,233 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+Azure Pipelines allows you to define build and release processes using YAML templates. Templates are reusable and enable you to define your pipelines declaratively. It means you can define your pipelines as code, commit the code to your source control repository, and have it versioned and managed like any other code.
 
-    Goal: briefly summarize the key skill this unit will teach
+In this unit, you'll examine the template types to use YAML templates in Azure Pipelines and rewrite the main deployment pipeline with examples of template usage.
 
-    Heading: none
+## Template types and usage
 
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
+Azure Pipelines supports four types of templates:
 
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+- **Stage template** - You can use a stage template to define a stage you want to reuse in multiple pipelines. For example, you can specify a stage template that deploys an application to a specific environment. You can reuse the stage template in multiple pipelines to deploy the application to different environments.
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+- **Job template** - You can define a job template that builds a specific application. You can reuse the job template in multiple pipelines to build the application for different platforms.
 
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
+- **Step template** - You can define a step template that creates a resource group. You can reuse the step template in multiple pipelines to create a resource group for different applications.
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+- **Variable template** - You can define a variable template that establishes a connection string to a database. You can reuse the variable template in multiple pipelines to connect to the database.
 
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
+### Stage template
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
+You can define a set of stages in one file and use it multiple times in other files.
 
-    Goal: State concisely what's covered in this unit
+In this example, a stage is repeated twice for two testing regimes. The stage itself is specified only once.
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+```YAML
+# File: stages/test.yaml
 
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
+parameters:
+  name: ''
+  testFile: ''
 
-<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
+stages:
 
-    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
+- stage: Test_${{ parameters.name }}
+  jobs:
 
-    Heading: none
--->
-TODO: add a visual element
+  - job: ${{ parameters.name }}_Windows
+    pool:
+      vmImage: windows-latest
+    steps:
 
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
+    - script: npm install
+    - script: npm test -- --file=${{ parameters.testFile }}
 
-    Goal: Provide all the information the learner needs to perform this sub-task.
+  - job: ${{ parameters.name }}_Mac
+    pool:
+      vmImage: macOS-latest
+    steps:
 
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
+    - script: npm install
+    - script: npm test -- --file=${{ parameters.testFile }}
 
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=main)
--->
+```
 
-<!-- Pattern for simple chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
+Templated pipeline:
 
-<!-- Pattern for complex chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
+```YAML
+# File: stages/test.yaml
 
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+stages:
 
-<!-- Do not add a unit summary or references/links -->
+- template: stages/test.yaml # Template reference
+  parameters:
+    name: Mini
+    testFile: tests/miniSuite.js
+
+- template: stages/test.yaml
+  parameters:
+    name: Full
+    testFile: tests/fullSuite.js
+
+```
+
+### Job templates
+
+You can define a set of jobs in one file and use it multiple times in others.
+
+In this example, a single job is repeated on three platforms. The job itself is specified only once.
+
+```YAML
+# File: jobs/build.yaml
+
+parameters:
+  name: ''
+  pool: ''
+  sign: false
+
+jobs:
+
+- job: ${{ parameters.name }}
+  pool: ${{ parameters.pool }}
+  steps:
+
+  - script: npm install
+  - script: npm test
+
+  - ${{ if eq(parameters.sign, 'true') }}:
+    - script: sign
+
+```
+
+Templated pipeline:
+
+```YAML
+# File: azure-pipelines.yaml
+
+jobs:
+
+- template: jobs/build.yaml  # Template reference
+  parameters:
+    name: macOS
+    pool:
+      vmImage: 'macOS-latest'
+
+
+- template: jobs/build.yaml  # Template reference
+  parameters:
+    name: Linux
+    pool:
+      vmImage: 'ubuntu-latest'
+
+
+- template: jobs/build.yaml  # Template reference
+  parameters:
+    name: Windows
+    pool:
+      vmImage: 'windows-latest'
+    sign: true  # Extra step on Windows only
+
+```
+
+### Step templates
+
+You can define a set of steps in one file and use it multiple times in another.
+
+```YAML
+# File: steps/build.yaml
+
+steps:
+
+- script: npm install
+- script: npm test
+
+```
+
+Templated pipeline:
+
+```YAML
+# File: azure-pipelines.yaml
+
+jobs:
+
+- job: macOS
+  pool:
+    vmImage: 'macOS-latest'
+  steps:
+
+  - template: steps/build.yaml # Template reference
+
+
+- job: Linux
+  pool:
+    vmImage: 'ubuntu-latest'
+  steps:
+
+  - template: steps/build.yaml # Template reference
+
+
+- job: Windows
+  pool:
+    vmImage: 'windows-latest'
+  steps:
+
+  - template: steps/build.yaml # Template reference
+  - script: sign              # Extra step on Windows only
+
+```
+
+### Variable templates
+
+You can define a set of variables in one file and use it multiple times in other files.
+
+In this example, a set of variables is repeated across multiple pipelines. The variables are specified only once.
+
+```YAML
+# File: variables/build.yaml
+variables:
+
+- name: vmImage
+  value: windows-latest
+
+- name: arch
+  value: x64
+
+- name: config
+  value: debug
+
+```
+
+Templated pipelines:
+
+```YAML
+# File: component-x-pipeline.yaml
+variables:
+
+- template: variables/build.yaml  # Template reference
+pool:
+  vmImage: ${{ variables.vmImage }}
+steps:
+
+- script: build x ${{ variables.arch }} ${{ variables.config }}
+
+```
+
+```YAML
+# File: component-y-pipeline.yaml
+variables:
+
+- template: variables/build.yaml  # Template reference
+pool:
+  vmImage: ${{ variables.vmImage }}
+steps:
+
+- script: build y ${{ variables.arch }} ${{ variables.config }}
+
+```
+
+## Challenge yourself
+
+Create a reusable template for a common task in your organization's deployment pipeline. It can be anything from creating a resource group to deploying a specific application.
+
+For more information about templates and YAML pipelines, see:
+
+- [Security through templates](https://learn.microsoft.com/azure/devops/pipelines/security/templates)
+- [Template types & usage](https://learn.microsoft.com/azure/devops/pipelines/process/templates/)

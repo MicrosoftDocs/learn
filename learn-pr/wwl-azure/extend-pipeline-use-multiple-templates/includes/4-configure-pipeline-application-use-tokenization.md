@@ -1,78 +1,129 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+Azure Key Vault is a secure secret, key, and certificate store. Azure Key Vault can ensure that your tokens and secrets are stored securely and easily accessed by your pipeline without exposing them in plain text. Azure Pipelines provides built-in tasks that enable you to retrieve secrets from Azure Key Vault during pipeline execution.
 
-    Goal: briefly summarize the key skill this unit will teach
+In this unit, learn ways to use Azure Key Vault with YAML pipelines for security tokens and secrets management.
 
-    Heading: none
+Prerequisites:
 
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
+- Azure Key Vault, Service Principal and YAML Pipeline. Follow the steps to create the resources: [Use Azure Key Vault to secure secrets](/training/modules/configure-secure-access-azure-repos-from-pipelines/5-use-azure-key-vault-secure-secrets)
 
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+## Reference Azure Key Vault in a variable group
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+One way to use Azure Key Vault with YAML pipeline templates is to create a variable group that references the Key Vault. Here are the steps:
 
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
+1. In Azure DevOps, click on Library under Pipelines.
+2. Create a new variable group, or use existing groups.
+3. Give the variable group a name and description.
+4. Under Variables, add a new variable and set its value to `$(keyVaultSecret)`. Use this variable to retrieve the secret from Azure Key Vault.
+5. Under Link secrets, link the variable group to your Azure Key Vault and grant read access to the service principal that will be used to access the Key Vault.
+6. Save the variable group.
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+Now, you can reference the variable group in your YAML pipeline templates using the following syntax:
 
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
+```YAML
+variables:
+- group: <variable group name>
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
+steps:
+- task: AzureKeyVault@2
+  inputs:
+    azureSubscription: '<Azure subscription service connection>'
+    KeyVaultName: '<Key Vault name>'
+    SecretsFilter: '*'
+    RunAsPreJob: true
+```
 
-    Goal: State concisely what's covered in this unit
+## Pass Azure Key Vault secret as a parameter
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+Another way to use Azure Key Vault with YAML pipeline templates is to pass the secret as a parameter to the template.
 
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
+1. In Azure DevOps, create a new pipeline and choose YAML.
+2. In the pipeline, define a parameter for the secret:
 
-<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
+    ```YAML
+    parameters:
+      - name: keyVaultSecret
+        type: string
+    ```
 
-    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
+3. In the pipeline, use the AzureKeyVault task to retrieve the secret:
 
-    Heading: none
--->
-TODO: add a visual element
+    ```YAML
+    steps:
+    - task: AzureKeyVault@2
+      inputs:
+        azureSubscription: '<Azure subscription service connection>'
+        KeyVaultName: '<Key Vault name>'
+        SecretsFilter: '$(keyVaultSecret)'
+    ```
 
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
+4. In the pipeline, pass the secret as a parameter to the template:
 
-    Goal: Provide all the information the learner needs to perform this sub-task.
+    ```YAML
+    - template: template.yaml
+      parameters:
+        keyVaultSecret: $(keyVaultSecret)
+    ```
 
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
+Replace `<Azure subscription service connection>` and `<Key Vault name>` with your own values.
 
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=main)
--->
+## Use Azure Key Vault with variables and tokens
 
-<!-- Pattern for simple chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
+A third way to use Azure Key Vault with YAML pipeline templates is to combine variables, tokens, and Azure Key Vault.
 
-<!-- Pattern for complex chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
+1. Set the value of the variable to `$(keyVaultSecret)` and mark it as a secret. Use variable to retrieve the secret from Azure Key Vault.
+2. In your YAML pipeline template, use the `$(keyVaultSecret)` variable to retrieve the secret from Azure Key Vault:
 
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    ```YAML
+    steps:
+    - task: AzureKeyVault@2
+      inputs:
+        azureSubscription: '<Azure subscription service connection>'
+        KeyVaultName: '<Key Vault name>'
+        SecretsFilter: '$(keyVaultSecret)'
+    ```
 
-<!-- Do not add a unit summary or references/links -->
+3. To tokenize the value of the secret, use the `$(keyVaultSecret)` variable in your pipeline:
+
+    ```YAML
+    steps:
+    - script: |
+        echo $(keyVaultSecret)
+    ```
+
+    This outputs the value of the secret at runtime.
+
+4. If you want to use the secret as an environment variable in your pipeline, you can set the environment variable in a script step:
+
+    ```YAML
+    steps:
+    - task: AzureKeyVault@2
+      inputs:
+        azureSubscription: '<Azure subscription service connection>'
+        KeyVaultName: '<Key Vault name>'
+        SecretsFilter: '$(keyVaultSecret)'
+    - script: |
+        export MY_SECRET=$(keyVaultSecret)    
+    ```
+
+    This sets the `MY_SECRET` environment variable to the value of the secret.
+
+## Best practices for using Azure Key Vault with YAML pipelines
+
+1. Use a separate Key Vault for each environment. For example, use one Key Vault for production secrets and another for development secrets.
+2. Assign minimum required permissions to the service principal that accesses the Key Vault.
+3. Use the latest version of the AzureKeyVault task in your pipeline.
+4. Ensure Azure Key Vault soft delete is enabled to protect against accidental deletion of secrets and keys.
+
+## Challenge yourself
+
+Create a new YAML pipeline that deploys an Azure Resource Manager template that references a secret stored in Azure Key Vault. Use the AzureKeyVault task to retrieve the secret and pass it as a parameter to the template. Verify that the pipeline can successfully deploy the template without exposing the secret in plain text.
+
+**Suggested Lab:** [Integrate Azure Key Vault with Azure DevOps](https://learn.microsoft.com/training/modules/manage-application-configuration-data/11-integrate-azure-key-vault-with-azure-devops/)
+
+For more information about Azure Key Vault and YAML pipelines, see:
+
+- [Manage application configuration data](https://learn.microsoft.com/training/modules/manage-application-configuration-data/)
+- [Use Azure Key Vault secrets in Azure Pipelines](https://learn.microsoft.com/azure/devops/pipelines/release/azure-key-vaul/)
+- [Use Azure Key Vault in your YAML Pipeline](https://learn.microsoft.com/azure/devops/pipelines/release/key-vault-in-own-project/)
+- [Azure Key Vault recovery management with soft delete and purge protection](https://learn.microsoft.com/azure/key-vault/general/key-vault-recovery)
+- [Add & use variable groups](https://learn.microsoft.com/azure/devops/pipelines/library/variable-groups)
