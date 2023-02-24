@@ -8,7 +8,7 @@ The following diagram shows the five main work areas included in the Visual Stud
 ![Screenshot showing five areas of the Visual Studio Code interface](../media/visual-studio-code-user-interface-labels.png
 )
 
-**A** - The **Activity Bar** is the narrow vertical bar located on the far left-hand side of the window. The Activity bar lets you switch between views (such as Explorer or Extensions) and gives you additional context-specific indicators.
+**A** - The **Activity Bar** is the narrow vertical bar located on the far left-hand side of the window. The Activity bar lets you switch between views (such as Explorer or Extensions) and gives you other context-specific indicators.
 
 **B** - The **Side Bar** contains different views, such as EXPLORER and EXTENSIONS, that provide tools and resources while you're working on your project.
 

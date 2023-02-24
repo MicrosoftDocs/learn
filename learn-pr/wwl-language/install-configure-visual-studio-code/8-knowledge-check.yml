@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/23/2023
+  ms.date: 02/24/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
@@ -28,13 +28,13 @@ quiz:
     choices:
     - content: "Explorer."
       isCorrect: false
-      explanation: "Incorrect. The Explorer view enables you to select project files and folders."
+      explanation: "Incorrect. The Explorer view enables developers to select project files and folders."
     - content: "Extensions."
       isCorrect: false
-      explanation: "Incorrect. The Extensions view enables you to install tools that support software languages and help with all sorts of tasks."
+      explanation: "Incorrect. The Extensions view enables developers to install tools that support software languages and help with all sorts of tasks."
     - content: "Editor."
       isCorrect: true
-      explanation: "Correct! The Editor is the main area where you write code."
+      explanation: "Correct! The Editor is the main area where developers write code."
   - content: "Which of the following tools is required to run command line interface commands such as `dotnet run`?"
     choices:
     - content: "Visual Studio Code."

@@ -11,19 +11,15 @@ In this exercise, you open Visual Studio Code and complete a quick tour of the I
 
     Another option is to type Visual Studio Code in the Windows Search box on the launch tray at the bottom of the screen.
 
-1. Notice that Visual Studio Code opens with some "Get Started" information displayed in the Editor.
+1. Notice that Visual Studio Code opens to a "Welcome" page that includes some links and other information.
 
-    The first time that you open Visual Studio Code, the Get Started page displays some helpful tutorials, like the **Get Started with VS Code** content that you see now. You can examine this information at your leisure another time, but for now you can move on to a quick tour of the user interface.
-
-1. On the **Get Started** page, select **<** to show more choices on the "Welcome" page.
-
-    Notice that the tutorials are listed on the right side of the Get Started page. You can also access these tutorials from the Visual Studio Command Palette that is accessible from the View menu.
+    The first time that you open Visual Studio Code, the Welcome page displays some helpful walkthroughs, like the **Get Started with VS Code** content. You can examine this information at your leisure another time.
 
 1. Notice that **Show welcome page on startup** is selected (checked) at the bottom of the page.
 
-    Leave this checked for now so that you see this information each time Visual Studio Code opens.
+    Leave the checkbox selected for now so that you see this information each time Visual Studio Code opens.
 
-1. To close the Get Started page, select **X**.
+1. To close the Welcome page, select **X**.
 
     The Close button is the "X" located to the right of **Welcome**. If you hover the mouse pointer over the X, the word **Close** appears.
 

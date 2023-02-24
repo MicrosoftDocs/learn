@@ -23,7 +23,7 @@ Getting up and running with Visual Studio Code is quick and easy. It's a small d
 
 ## Install Visual Studio Code
 
-VS Code is lightweight and should run on most available hardware and platform versions. You can review the [System Requirements](https://code.visualstudio.com/docs/supporting/requirements) to check if your computer configuration is supported.
+VS Code is lightweight and should run on most available hardware and platform versions. You can review the [System Requirements](https://code.visualstudio.com/docs/supporting/requirements) to check whether your computer configuration is supported.
 
 1. On your PC, open a file explorer application, and then navigate to your computer’s downloads folder.
 
