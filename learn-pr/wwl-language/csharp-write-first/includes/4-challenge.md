@@ -1,18 +1,20 @@
+
+
 Code challenges throughout these modules will reinforce what you've learned and help you gain some confidence before continuing on.
 
-### Step 1: Delete all of the code in the .NET Editor from the earlier exercise
+### Challenge: Write code in the .NET Editor to display two messages
 
-Select all of the code in the .NET Editor, and press the <kbd>Del</kbd> or <kbd>Backspace</kbd> key on your keyboard to delete it.
+1. Select all of the code in the .NET Editor, and press <kbd>Delete</kbd> or <kbd>Backspace</kbd> to delete it.
 
-### Step 2: Write code in the .NET Editor to display two messages
+1. Write code that produces the following output:
 
-Use the two different techniques you learned to print the two lines of the output. In other words, you learned how to display a message in just one line of code, and you learned how to display a message using multiple lines of code. Use both techniques for this challenge. It doesn't matter which technique you apply to which line, and it doesn't matter how many ways you split one of the messages into multiple lines of code. That's your choice.
+    ```Output
+    This is the first line.
+    This is the second line.
+    ```
 
-No matter how you do it, your code should produce the following output:
+    In the previous unit, you learned how to display a message in just one line of code, and you learned how to display a message using multiple lines of code. Use both techniques for this challenge. It doesn't matter which technique you apply to which line, and it doesn't matter how many ways you split one of the messages into multiple lines of code. That's your choice.
 
-```output
-This is the first line.
-This is the second line.
-```
+    No matter how you do it, your code should produce the specified output.
 
 Whether you get stuck and need to peek at the solution or you finish successfully, continue to the next unit to view a solution to this challenge.
