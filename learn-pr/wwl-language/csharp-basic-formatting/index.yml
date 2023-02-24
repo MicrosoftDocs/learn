@@ -1,33 +1,32 @@
 ### YamlMime:Module
 uid: learn.languages.csharp-basic-formatting
 metadata:
-  title: 'Perform basic string formatting in C#'
-  description: Combine literal and variable text data that are filled with special characters, formatting, and Unicode into meaningful messages for the end user.
-  ms.date: 08/16/2022
-  author: billwagner
-  ms.author: wiwagn
+  title: Perform basic string formatting in C#
+  description: "Perform basic string formatting in C#"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: buzahid
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Perform basic string formatting in C#
-summary: Combine literal and variable text data that are filled with special characters, formatting, and Unicode into meaningful messages for the end user.
+summary: Combine literal and variable text data that contain special characters, formatting, and Unicode into meaningful messages for the end user.
 abstract: |
-  In this module, you will:
-  - Create string data containing tabs, new lines, and other special characters
-  - Create string data containing Unicode characters
-  - Combine string data into a new string value via concatenation
-  - Combine string data into a new string value via interpolation
+  After you complete this module, you'll be able to:
+  * Create string data containing tabs, new lines, and other special characters
+  * Create string data containing Unicode characters
+  * Combine string data into a new string value via concatenation
+  * Combine string data into a new string value via interpolation
 prerequisites: |
-  - Beginner level experience with displaying a message to a console using the Console.WriteLine() and Console.Write() methods.
-  - Beginner level experience with data types, declaring, initializing, setting, and retrieving values from variables.
-ratingEnabled: true
+  * Beginner level experience with displaying a message to a console using the Console.WriteLine() and Console.Write() methods.
+  * Beginner level experience with data types, declaring, initializing, setting, and retrieving values from variables.
 iconUrl: /training/achievements/csharp-basic-formatting.svg
 levels:
 - beginner
 roles:
 - developer
-- student
 products:
 - dotnet
+- vs-code
 subjects:
 - development-tools
 units:
@@ -39,6 +38,5 @@ units:
 - learn.languages.csharp-basic-formatting.solution
 - learn.languages.csharp-basic-formatting.knowledge-check
 - learn.languages.csharp-basic-formatting.summary
-
 badge:
   uid: learn.languages.csharp-basic-formatting.badge

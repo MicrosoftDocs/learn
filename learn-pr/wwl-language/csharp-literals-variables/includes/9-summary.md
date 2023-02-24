@@ -1,7 +1,5 @@
-Our goal was to display a formatted message using a combination of literal and variable values.
 
-Using basic C# syntax, we created literal values of several different data types. We declared variables, then set and retrieved values from those variables. We initialized variables and learned how to use the `var` keyword to implicitly type a variable by inferring the type from the initialization.
 
-Congratulations on taking another step towards building more sophisticated applications.
+Your goal was to display a formatted message using a combination of literal and variable values.
 
-[!include[](../../../includes/dotnet-summary.md)]
+Using basic C# syntax, you created literal values of several different data types. You declared variables, and also set and retrieved values from those variables. You also initialized variables, and learned how to use the `var` keyword to implicitly type a variable by inferring the type from the initialization.
