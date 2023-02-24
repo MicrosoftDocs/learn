@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-literals-variables.solution
-title: Solution
+title: Review the solution
 metadata:
-  title: Solution
-  description: Study a solution to the challenge issued in the previous unit.
-  ms.date: 09/03/2019
-  author: billwagner
-  ms.author: wiwagn
+  title: Review the solution
+  description: "Review the solution"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: buzahid
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1
-azureSandbox: false
-interactive: csharp
+durationInMinutes: 3
 content: |
   [!include[](includes/7-solution.md)]

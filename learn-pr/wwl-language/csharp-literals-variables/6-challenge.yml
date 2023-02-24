@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-literals-variables.challenge
-title: Challenge
+title: Complete the challenge
 metadata:
-  title: Challenge
-  description: 'Use what you just learned about C# to print a message using literal and variable values.'
-  ms.date: 09/03/2019
-  author: billwagner
-  ms.author: wiwagn
+  title: Complete the challenge
+  description: "Complete the challenge"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: buzahid
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 5
-azureSandbox: false
-interactive: csharp
+durationInMinutes: 6
 content: |
   [!include[](includes/6-challenge.md)]

@@ -3,14 +3,12 @@ uid: learn.languages.csharp-literals-variables.declaring-variables
 title: Declare variables
 metadata:
   title: Declare variables
-  description: Learn how to declare and name a variable.
-  ms.date: 09/03/2019
-  author: billwagner
-  ms.author: wiwagn
+  description: "Declare variables"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: buzahid
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 3
-azureSandbox: false
-interactive: csharp
+durationInMinutes: 6
 content: |
   [!include[](includes/3-declaring-variables.md)]
