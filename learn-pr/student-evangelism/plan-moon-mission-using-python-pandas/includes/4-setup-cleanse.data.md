@@ -1,4 +1,4 @@
-Before you continue, it's important to establish what information you want to use to make a recommendation to the astronauts. In this case, the more publicly available information that could affect the amount of sample that is *possible* to return is the type of aircraft used. 
+Before you continue, it's important to establish what information you want to use to make a recommendation to the astronauts. In this case, the more publicly available information that could affect the amount of sample that is *possible* to return is the type of spacecraft used. 
 
 ## Convert the sample weight
 

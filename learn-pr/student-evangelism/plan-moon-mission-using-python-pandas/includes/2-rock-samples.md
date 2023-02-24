@@ -12,6 +12,6 @@ This challenge is especially difficult for two reasons:
 
 Moon rock samples undergo a thorough analysis and cleansing by experts here on Earth, and it's the curators who develop an understanding of what samples they have, what requests for samples they get, and what is the most challenging part of ensuring that research can continue. 
 
-This module begins to explore how you can use data and a bit of Python coding to come up with an understanding of what we have, and make recommendations for what the next pair of astronauts should look for when they land on the Moon as part of the Artemis program in 2024. 
+This module begins to explore how you can use data and a bit of Python coding to come up with an understanding of what we have, and make recommendations for what the next pair of astronauts should look for when they land on the Moon as part of the Artemis program in 2025. 
 
 Before you continue, be sure to spend time going through the [Lunar Sample and Photo Catalog](https://curator.jsc.nasa.gov/lunar/samplecatalog/index.cfm?azure-portal=true). Although this module focuses on the weights, types, and number of samples for each Apollo mission, there are a lot of other details that you could use to expand on the analysis and to help you develop even better recommendations for the next team of astronauts. 

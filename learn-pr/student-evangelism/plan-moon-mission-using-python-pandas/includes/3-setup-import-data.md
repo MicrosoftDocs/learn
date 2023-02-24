@@ -2,7 +2,7 @@ Now it's time to get data from the [Lunar Sample and Photo Catalog](https://cura
 
 ## Set up your local environment
 
-This module will show you how to cleanse and manipulate data related to Moon rock samples. To do this, you need to set up some kind of Python notebook development environment. If you haven't done this before, we recommend following the steps we present here. The easiest way to do this is to install the [Visual Studio Code Coding pack for Python](https://aka.ms/LearnOnVSCode?azure-portal=true). Alternatively, you could follow the [Visual Studio Code data science setup docs](https://code.visualstudio.com/docs/python/data-science-tutorial?azure-portal=true). 
+This module will show you how to cleanse and manipulate data related to Moon rock samples. To do this, you need to set up some kind of Python notebook development environment. If you haven't done this before, we recommend following the steps we present here. The easiest way to do this is to follow the [Visual Studio Code data science setup docs](https://code.visualstudio.com/docs/python/data-science-tutorial?azure-portal=true). 
 
 The three things you need to set up first are:
 - Visual Studio Code
