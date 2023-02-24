@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-basic-formatting.exercise-string-concatenation
-title: Exercise - String Concatenation
+title: Exercise - Combine strings using string concatenation
 metadata:
-  title: Introduction
-  description: Combine variables and literals into new strings.
-  ms.date: 09/17/2019
-  author: billwagner
-  ms.author: wiwagn
+  title: Exercise - Combine strings using string concatenation
+  description: "Exercise - Combine strings using string concatenation"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: buzahid
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 4
-azureSandbox: false
-interactive: csharp
+durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-string-concatenation.md)]

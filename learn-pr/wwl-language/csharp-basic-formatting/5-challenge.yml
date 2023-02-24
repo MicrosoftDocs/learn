@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-basic-formatting.challenge
-title: Challenge
+title: Complete the challenge
 metadata:
-  title: Challenge
-  description: Use what you've learned about formatting strings in this coding challenge.
-  ms.date: 09/17/2019
-  author: billwagner
-  ms.author: wiwagn
+  title: Complete the challenge
+  description: "Complete the challenge"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: buzahid
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 6
-azureSandbox: false
-interactive: csharp
+durationInMinutes: 10
 content: |
   [!include[](includes/5-challenge.md)]
