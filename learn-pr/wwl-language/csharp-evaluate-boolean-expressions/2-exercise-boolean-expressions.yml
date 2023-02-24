@@ -1,16 +1,50 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-evaluate-boolean-expressions.exercise-boolean-expressions
-title: Exercise - Boolean Expressions
+title: Exercise - Evaluate an expression
 metadata:
-  title: Exercise - Boolean Expressions
-  description: Use various operators and techniques to build powerful Boolean expressions.
-  ms.date: 09/24/2019
-  author: billwagner
-  ms.author: wiwagn
+  title: Exercise - Evaluate an expression
+  description: "Exercise - Evaluate an expression"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 6
-azureSandbox: false
-interactive: csharp
+durationInMinutes: 11
 content: |
   [!include[](includes/2-exercise-boolean-expressions.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following is a list of valid comparison operators?"
+    choices:
+    - content: "`==`, `~=`, `>`, `<`, `>=`, and `<=`."
+      isCorrect: false
+      explanation: "That's incorrect. `~=` is not a valid comparison operator."
+    - content: "`==`, `<>`, `>`, `<`, `>=`, and `<=`."
+      isCorrect: false
+      explanation: "That's incorrect. `<>` is not a valid comparison operator."
+    - content: "`==`, `!=`, `>`, `<`, `>=`, and `<=`."
+      isCorrect: true
+      explanation: "That's correct. `==`, `!=`, `>`, `<`, `>=`, and `<=` are all valid comparison operators."
+  - content: "Which of the following code lines uses logical negation?"
+    choices:
+    - content: "`Console.WriteLine(myValue != true);`."
+      isCorrect: false
+      explanation: "Incorrect. Using the \"not equal\" operator is not an example of logical negation."
+    - content: "`Console.WriteLine(!myValue);`."
+      isCorrect: true
+      explanation: "Correct! Adding the `!` operator before a conditional expression is the correct way to implement logical negation."
+    - content: "`Console.WriteLine(myValue == false);`."
+      isCorrect: false
+      explanation: "Incorrect. Evaluating whether a value is equal to `false` is not an example of logical negation."
+  - content: "An application contains two string variables named `myValue1` and `myValue2`. The user enters the following two values for these variables: \"Y \" and \" y\". Which of the following expressions will return `false`?"
+    choices:
+    - content: "`(myValue1 != myValue2)`."
+      isCorrect: false
+      explanation: "Incorrect. This expression returns `true` because the two values are not equivalent."
+    - content: "`(myValue1.Trim().ToLower() != myValue2.Trim().ToLower())`."
+      isCorrect: true
+      explanation: "Correct! This expression returns `false` since the two values are equal and the inequality operator is being used."
+    - content: "`(myValue1.Trim().ToLower() == myValue2.Trim().ToLower())`."
+      isCorrect: false
+      explanation: "Incorrect. This expression returns `true` because the two values are equal, and the equality operator is being used."

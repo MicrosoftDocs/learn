@@ -1,24 +1,25 @@
-When adding decision logic to your application, you'll need to evaluate many different kinds of conditions. To express those conditions adequately, you'll need to have a full complement of operators.
 
-Suppose you need to determine whether one value is greater, equal to, or less than another value. Or, what if you need to ensure a user's input matches a specific value? Or, what if you need to make sure the value returned from a method does not indicate failure?
 
-In these cases, you use many different kinds of Boolean expressions that use a wide array of operators.
+Decision logic is based on expressions, know as Boolean expressions, that evaluate to "true" or "false". Developers use various types of operators to create Boolean expressions that meet their coding requirements. When the expressions are evaluated, the code execution branches based on the result. The C# language supports a wide range of operators (such as equality, comparison, and Boolean operators), each of which serves a specific purpose when implementing decision logic.
 
-In this module, you'll learn about Boolean expressions and use many different operators and techniques to test values for equality, inequality, and comparison. Finally, you'll learn how to use a special inline version of an `if` statement called the conditional operator for an "either/or" result.
+Suppose you've been selected to work on a series of C# console applications that will be used to process customer data and user supplied inputs. Each application will require you to implement decision logic that achieves data processing requirements and associated business rules. The data processing requirements and business rules will vary for each application. For example, applications that process customer orders may need to evaluate the status of the customer before taking any action. To prepare for this upcoming assignment, you will complete some practice activities that implement Boolean expressions and C# operators.
 
-By the end of this module, you'll write code that can more fully express your intent as you develop decision logic in your applications.
+In this module, you'll learn about Boolean expressions, and you'll use different types of operators to evaluate expressions for equality, inequality, and comparison. You'll also learn to use a special inline version of an `if` statement (a conditional operator) that produces an "either / or" result.
+
+By the end of this module, you'll be able to write code using any combination of C# operators to implement decision logic in your applications.
 
 ## Learning objectives
 
-In this module, you'll:
+In this module, you will:
 
 - Use operators to create Boolean expressions that test for comparison and equality.
-- Use built-in methods to the string class to perform better evaluations on strings.
+- Use built-in methods of the string class to perform better evaluations on strings.
 - Use the negation operator to test for the opposite of a given condition.
 - Use the conditional operator to perform an inline evaluation.
 
 ## Prerequisites:
 
-- Experience with the basics of variables, data types, and sending output to the console
-- Experience using the `if-elseif-else` construct
-- Experience using the `Random` class to generate a random number
+- Experience with basic coding tasks such as instantiating variables, using various data types, and sending output to a console window.
+- Experience using the `if-elseif-else` construct.
+- Experience using the `Random` class to generate a random number.
+- Experience using Visual Studio Code to create and run simple console applications.

@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-evaluate-boolean-expressions.solution-2
-title: Solution
+title: Review the solution to the Boolean expressions challenge activity
 metadata:
-  title: Solution
-  description: The solution to the "Complicated permissions challenge"
-  ms.date: 09/24/2019
-  author: billwagner
-  ms.author: wiwagn
+  title: Review the solution to the Boolean expressions challenge activity
+  description: "Review the solution to the Boolean expressions challenge activity"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 2
-azureSandbox: false
-interactive: csharp
+durationInMinutes: 5
 content: |
   [!include[](includes/7-solution-2.md)]
