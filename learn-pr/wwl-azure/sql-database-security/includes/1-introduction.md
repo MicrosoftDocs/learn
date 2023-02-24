@@ -1,3 +1,4 @@
+
 Databases are the most common places to store and process data. Security for your database and the data within it is required to keep your Azure solutions safe. Using data encryption, data masking, firewalls, and auditing you can protect your database from almost any attacks.
 
 ## Scenario
