@@ -4,13 +4,13 @@ title: Summary and resources
 metadata:
   title: Summary and resources
   description: "Summary and resources"
-  ms.date: 10/12/2021
+  ms.date: 02/24/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 2
 content: |
   [!include[](includes/7-summary-resources.md)]
