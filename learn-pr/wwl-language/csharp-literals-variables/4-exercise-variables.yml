@@ -3,14 +3,13 @@ uid: learn.languages.csharp-literals-variables.exercise-variables
 title: Exercise - Setting and getting values from variables
 metadata:
   title: Exercise - Setting and getting values from variables
-  description: Assign values to a variable and retrieve values from variables.
-  ms.date: 09/03/2019
-  author: billwagner
-  ms.author: wiwagn
+  description: "Exercise - Setting and getting values from variables"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: buzahid
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 5
-azureSandbox: false
 interactive: csharp
+durationInMinutes: 10
 content: |
   [!include[](includes/4-exercise-variables.md)]

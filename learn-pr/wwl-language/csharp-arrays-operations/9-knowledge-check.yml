@@ -1,44 +1,37 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-arrays-operations.knowledge-check
-title: Knowledge Check
+title: Knowledge check
 metadata:
-  title: Check your knowledge
-  description: Review what you've learned
-  ms.date: 10/14/2019
-  author: billwagner
-  ms.author: wiwagn
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-languages
+  ms.prod: learning-azure
 durationInMinutes: 2
 quiz:
-  title: Check your knowledge
+  title: "Check your knowledge"
   questions:
-  - content: "Which method will change the order of items in the array: (Hint: some of these methods do not actually exist!)"
+  - content: "Which method changes the order of items in an `string` array?"
     choices:
-    - content: "`myArray.Order()`"
+    - content: "`myArray.Resize()`"
       isCorrect: false
-      explanation: "There's no Order method."
-    - content: "`myArray.Reorder()`"
+      explanation: "Incorrect. `myArray.Resize()` changes the size, but not order, of the array."
+    - content: "`myArray.Clear()`"
       isCorrect: false
-      explanation: "There's no Reorder method."
+      explanation: "Incorrect. `myArray.Clear()` removes all items but it will not change the order."
     - content: "`Array.Sort()`"
       isCorrect: true
-      explanation: "Correct!"
-    - content: "`Array.Order()`"
-      isCorrect: false
-      explanation: "There's no Order method on the Array class."
+      explanation: "Correct. `Array.Sort()` places `string` array items in in ascending order."
   - content: "What is null?"
     choices:
     - content: "The same as an empty string."
       isCorrect: false
-      explanation: "Null isn't the same as an empty string."
+      explanation: "Incorrect. Null isn't the same as an empty string."
     - content: "The same as the value zero."
       isCorrect: false
-      explanation: "Null isn't the same as the value zero."
-    - content: "A value that indicates an empty value."
-      isCorrect: false
-      explanation: "Null isn't a value that indicates an empty value."
+      explanation: "Incorrect. Null isn't the same as the value zero."
     - content: "A value that indicates a variable points to nothing in memory."
       isCorrect: true
-      explanation: "Correct!"
-  
+      explanation: "Correct. Null isn't the same as an empty string or the value zero."

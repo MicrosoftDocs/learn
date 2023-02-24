@@ -4,7 +4,7 @@ title: Determine the VPN gateway type
 metadata:
   title: Determine the VPN gateway type
   description: "Determine the type of VPN gateway to implement, route-based or policy-based."
-  ms.date: 02/21/2023
+  ms.date: 02/24/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial

@@ -3,12 +3,12 @@ uid: learn.languages.csharp-if-elseif-else.summary
 title: Summary
 metadata:
   title: Summary
-  description: Quick review of the lessons learned from this module.
-  ms.date: 05/16/2022
-  author: billwagner
-  ms.author: wiwagn
+  description: "Summary"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1
+durationInMinutes: 2
 content: |
   [!include[](includes/7-summary.md)]

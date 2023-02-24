@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-arrays.exercise-foreach
-title: Exercise - foreach Statement
+title: Exercise - Implement the foreach statement
 metadata:
-  title: Exercise - foreach Statement
-  description: Use the foreach statement to iterate through each element of your arrays.
-  ms.date: 09/19/2019
-  author: billwagner
-  ms.author: wiwagn
+  title: Exercise - Implement the foreach statement
+  description: "Exercise - Implement the foreach statement"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 10
-azureSandbox: false
-interactive: csharp
+durationInMinutes: 12
 content: |
   [!include[](includes/3-exercise-foreach.md)]
