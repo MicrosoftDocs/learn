@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 6
 content: |
-  [!include[](includes/6-solution.md)]
+  [!include[](includes/5-review-solution-variable-scope.md)]

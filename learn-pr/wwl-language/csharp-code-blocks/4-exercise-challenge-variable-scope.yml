@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 6
 content: |
-  [!include[](includes/5-challenge.md)]
+  [!include[](includes/4-exercise-challenge-variable-scope.md)]
