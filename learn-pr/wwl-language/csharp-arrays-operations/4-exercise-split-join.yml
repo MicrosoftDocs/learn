@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-arrays-operations.exercise-split-join
-title: Exercise - Split() and Join()
+title: Exercise - Discover Split() and Join()
 metadata:
-  title: Exercise - Split() and Join()
-  description: Use the `Split()` and `Join()` methods to move between delimited strings to arrays.
-  ms.date: 10/14/2019
-  author: billwagner
-  ms.author: wiwagn
+  title: Exercise - Discover Split() and Join()
+  description: "Exercise - Discover Split() and Join()"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: eric
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 5
-azureSandbox: false
-interactive: csharp
+durationInMinutes: 10
 content: |
   [!include[](includes/4-exercise-split-join.md)]

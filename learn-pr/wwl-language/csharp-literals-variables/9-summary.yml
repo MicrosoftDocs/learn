@@ -3,10 +3,10 @@ uid: learn.languages.csharp-literals-variables.summary
 title: Summary
 metadata:
   title: Summary
-  description: A quick recap of what you learned in this module and what you should learn next.
-  ms.date: 09/03/2019
-  author: billwagner
-  ms.author: wiwagn
+  description: "Summary"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: buzahid
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1

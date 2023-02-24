@@ -1,16 +1,50 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-switch-case.exercise-switch-case
-title: Exercise - Use the switch case statement
+title: Exercise - Implement a switch statement
 metadata:
-  title: Exercise - Use the switch case statement
-  description: Use the switch statement to create cases to compare an expression against multiple possible values.
-  ms.date: 09/26/2019
-  author: billwagner
-  ms.author: wiwagn
+  title: Exercise - Implement a switch statement
+  description: "Exercise - Implement a switch statement"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 6
-azureSandbox: false
-interactive: csharp
+durationInMinutes: 11
 content: |
   [!include[](includes/2-exercise-switch-case.md)]
+quiz:
+  title: "Knowledge check"
+  questions:
+  - content: "A developer writes the code to implement a `switch-case` construct. What is the purpose of the `break` keyword?"
+    choices:
+    - content: "The `break` keyword tells the runtime to continue evaluating other cases in the `switch` construct."
+      isCorrect: false
+      explanation: "Incorrect. The `break` keyword doesn't instruct the runtime to continue evaluating other cases in the `switch` construct."
+    - content: "The `break` keyword tells the runtime to stop evaluating and prevents execution of other cases in the `switch` construct."
+      isCorrect: true
+      explanation: "Correct! The `break` keyword redirects code execution and prevents one switch section continuing into the next section."
+    - content: "The `break` keyword tells the runtime to exit the application."
+      isCorrect: false
+      explanation: "Incorrect. The `break` keyword doesn't instruct the runtime to exit the application."
+  - content: "A developer writes the code to implement a `switch-case` construct that evaluates a variable against many possible matching values. They include the `default` keyword as part of their `switch-case` construct. What is the purpose of the `default` keyword?"
+    choices:
+    - content: "The `default` keyword supplies the default value for the variable if the variable has not been initialized."
+      isCorrect: false
+      explanation: "Incorrect. The `default` keyword does not supply a default value for the variable being evaluated. An error will be generated if the variable has not been initialized."
+    - content: "The `default` keyword acts as the matching value when none of the supplied `case` values is a match."
+      isCorrect: true
+      explanation: "Correct. If there are no matching `case` value labels, the optional `default` label will be used as the matching value."
+    - content: "The `default` keyword supplies a default actions code block that is always executed regardless of the matching case value"
+      isCorrect: false
+      explanation: "Incorrect. The `default` keyword does not supply a code block that is always executed."
+  - content: "Which of the following statements about the `switch-case` construct is true?"
+    choices:
+    - content: "A single switch section can have multiple case labels."
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "A switch construct must include a default switch section."
+      isCorrect: false
+      explanation: "Incorrect. The default switch section is optional."
+    - content: "The colon at the end of the case label is optional."
+      isCorrect: false
+      explanation: "Incorrect. The colon isn't optional."

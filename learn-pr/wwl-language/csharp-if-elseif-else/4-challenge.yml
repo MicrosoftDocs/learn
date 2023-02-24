@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-if-elseif-else.challenge
-title: Challenge
+title: Exercise - Complete a challenge activity to apply business rules
 metadata:
-  title: Challenge
-  description: Put into practice what you learned about `if`, `else`, and `else if` statements.
-  ms.date: 05/16/2022
-  author: billwagner
-  ms.author: wiwagn
+  title: Exercise - Complete a challenge activity to apply business rules
+  description: "Exercise - Complete a challenge activity to apply business rules"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 6
-azureSandbox: false
-interactive: csharp
+durationInMinutes: 12
 content: |
   [!include[](includes/4-challenge.md)]
