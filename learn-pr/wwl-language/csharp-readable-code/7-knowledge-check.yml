@@ -3,55 +3,46 @@ uid: learn.languages.csharp-readable-code.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Review what you've learned by answering questions about the module.
-  ms.date: 09/23/2019
-  author: billwagner
-  ms.author: wiwagn
+  description: "Knowledge check"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: cahowd
   ms.topic: interactive-tutorial
-  ms.prod: learning-languages
+  ms.prod: learning-azure
 durationInMinutes: 3
 quiz:
-  title: Check your knowledge
+  title: "Check your knowledge"
   questions:
-  - content: "Which of the following variable names is a *good* variable name?"
+  - content: "Which of the following demonstrates recommended guidelines for naming a variable?"
     choices:
-    - content: "my-string"
+    - content: "`my-string`."
       isCorrect: false
-      explanation: "A variable can't contain the dash `-` character. Also, the name isn't descriptive of its purpose."
-    - content: "initialMessage$"
+      explanation: "Incorrect. A variable can't contain the dash `-` character. Also, the name isn't descriptive of its purpose."
+    - content: "`initialMessage$`."
       isCorrect: false
-      explanation: "A variable can't contain the dollar sign `$` character."
-    - content: "msg"
-      isCorrect: false
-      explanation: "While C# won't flag this one as an illegal variable name, you shouldn't use contractions."
-    - content: "initialMessage"
+      explanation: "Incorrect. A variable can't contain the dollar sign `$` character."
+    - content: "`initialMessage`."
       isCorrect: true
-      explanation: "Correct!"
+      explanation: "Correct! This is the appropriate camel case for a variable name and the name is descriptive."
   - content: "Which of the following is a bad reason to use a code comment?"
     choices:
-    - content: "Describing the high-level intent of the code."
+    - content: "To describe the high-level intent of the code."
       isCorrect: false
-      explanation: "Describing the high-level intent is a good reason to use a code comment."
-    - content: "You want to explain how a new C# keyword works."
+      explanation: "Incorrect. Describing the high-level intent is a good reason to use a code comment."
+    - content: "To explain how a new C# keyword works."
       isCorrect: true
-      explanation: "Correct!"
-    - content: "Temporarily comment out a line of code to implement the feature in a different way."
+      explanation: "Correct! Comments should not be used for this reason."
+    - content: "To temporarily comment out a line of code while evaluating a feature in a different way."
       isCorrect: false
-      explanation: "Temporarily commenting out a line of code before deleting it is a good reason to use a code comment."
-    - content: "Adding a TODO to your code so that you can look into a possible issue later."
-      isCorrect: false
-      explanation: "Adding a TODO is a good reason to add a code comment."
-  - content: "Which of the following is true about whitespace?"
+      explanation: "Incorrect. Temporarily commenting out a line of code before deleting it is a good reason to use a code comment."
+  - content: "Which of the following statements about using whitespace in code is true?"
     choices:
-    - content: "You should reduce the amount of whitespace in your code to improve your code's speed."
+    - content: "Reducing the amount of whitespace will improve code performance (execution speed)."
       isCorrect: false
-      explanation: "This isn't true. When you use it judiciously, whitespace can improve the readability of your code. It doesn't impact performance."
-    - content: "You should add a line of whitespace every two or three lines."
+      explanation: "Incorrect. Whitespace doesn't impact performance."
+    - content: "Whitespace should be used every two or three lines to separate code lines."
       isCorrect: false
-      explanation: "Arbitrarily adding whitespace every two or three lines won't necessarily improve the readability of your code."
-    - content: "You should add tabs to make important lines of code stand out."
-      isCorrect: false
-      explanation: "Adding tabs arbitrarily isn't the right way to improve the readability of your code."
-    - content: "You should add whitespace judiciously to improve the readability of your code."
+      explanation: "Incorrect. Arbitrarily adding whitespace every two or three lines won't necessarily improve the readability of your code."
+    - content: "Whitespace should be used judiciously to improve the readability of your code."
       isCorrect: true
-      explanation: "Correct!"
+      explanation: "Correct! Whitespace should be used to improve core readability."
