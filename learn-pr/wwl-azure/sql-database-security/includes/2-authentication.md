@@ -15,7 +15,7 @@ You can create user accounts in the master database, and grant permissions in al
 
 **Authorization** to access data and perform various actions are managed using database roles and explicit permissions. Authorization refers to the permissions assigned to a user, and determines what that user is allowed to do. Authorization is controlled by your user account's database role memberships and object-level permissions. As a best practice, you should grant users the least privileges necessary. As a best practice, your application should use a dedicated account to authenticate. This way, you can limit the permissions granted to the application and reduce the risks of malicious activity in case the application code is vulnerable to a SQL injection attack. The recommended approach is to create a contained database user, which allows your app to authenticate directly to the database.
 
-:::image type="content" source="../media/az500-database-authentication-e61f1571.png" alt-text="Data authentication flow for AAD and SQL server. An Azure AD database adminstrator and SQL database administrator are shown.":::
+:::image type="content" source="../media/az500-database-authentication-e61f1571.png" alt-text="Data authentication flow for AAD and SQL server. An Azure AD database administrator and SQL database administrator are shown.":::
 
 
 > [!IMPORTANT]
