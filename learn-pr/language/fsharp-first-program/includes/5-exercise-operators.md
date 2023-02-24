@@ -1,4 +1,4 @@
-In this exercise, you'll continue working on the calculator program you created in the first exercise. You'll take all that hard-earned knowledge and implement the remaining functionality like user input and apply an arithmetic operator.
+In this exercise, continue working on the calculator program that you created in the first exercise. Take all that hard-earned knowledge and implement the remaining functionality like user input and apply an arithmetic operator.
 
 ## Read from the console
 
