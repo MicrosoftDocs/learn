@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-basic-operations.exercise-math-operators
-title: Exercise - Math Operators
+title: Exercise - Perform math operations
 metadata:
-  title: Exercise - Math Operators
-  description: Perform addition, subtraction, multiplication, division, and cast data types.
-  ms.date: 09/03/2019
-  author: billwagner
-  ms.author: wiwagn
+  title: Exercise - Perform math operations
+  description: "Exercise - Perform math operations"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: buzahid
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 4
-azureSandbox: false
-interactive: csharp
+durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-math-operators.md)]

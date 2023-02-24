@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-basic-operations.exercise-increment-decrement
-title: Exercise - Increment and Decrement Values
+title: Exercise - Increment and decrement values
 metadata:
-  title: Exercise - Increment and Decrement Values
-  description: Use various operators to add or subtract value in a shortened form.
-  ms.date: 09/03/2019
-  author: billwagner
-  ms.author: wiwagn
+  title: Exercise - Increment and decrement values
+  description: "Exercise - Increment and decrement values"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: buzahid
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 3
-azureSandbox: false
-interactive: csharp
+durationInMinutes: 10
 content: |
   [!include[](includes/4-exercise-increment-decrement.md)]

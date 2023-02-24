@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-basic-operations.challenge
-title: Challenge
+title: Complete the challenge
 metadata:
-  title: Challenge
-  description: Convert a temperature from Fahrenheit to Celsius and print in a formatted message.
-  ms.date: 09/03/2019
-  author: billwagner
-  ms.author: wiwagn
+  title: Complete the challenge
+  description: "Complete the challenge"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: buzahid
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 5
-azureSandbox: false
-interactive: csharp
+durationInMinutes: 10
 content: |
   [!include[](includes/5-challenge.md)]
