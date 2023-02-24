@@ -1,25 +1,20 @@
-The C# programming language is similar to any human written or spoken language, in that you can choose different ways to express the same idea. Some words and phrases are more descriptive, accurate, or succinct than others. There are several ways to add branching logic in your application, and depending on the context, some are more expressive and succinct than others.
 
-Suppose we wanted to add a feature to our application that displayed an employee's title at the company next to their name. However, since the title names change occasionally, we only store the employee's level, which is a numeric equivalent of their title.
+The C# programming language is similar to any human written or spoken language. They each support different ways of expressing the same idea. In spoken languages, some words and phrases are more descriptive, accurate, or succinct than others. In the C# programming language, there is more than one way to create branching logic. For example, selections that use `if` statements and selections that use `switch` statements. Depending on the context of your application, one type of selection statement may be more expressive and succinct than the other.
 
-When we want to display their title, we need to evaluate the numeric level and return the title.
+Suppose working on applications that make extensive use of selections statements. In some cases, `if-elseif-else` constructs are used to produce succinct and expressive code that is easy to read and maintain. In other cases, the `if-elseif-else` constructs produce the required result, but are difficult to read and maintain. You have been tasked with reviewing the code and determining when it is suitable to use a `switch` statement rather than an `if` statement.
 
-There are several levels and matching titles. Occasionally, the company adds new levels and titles. If this happens before we can update our application, we need to use a generic title "Associate" until we can update our software.
+In this module, you'll investigate the use of a `switch` statement to implement branching logic as an alternative to an `if` statement. You'll also work on converting an `if-elseif-else` construct to a `switch-case` construct. During this process, you'll learn to recognize the benefits of choosing one type of selection statement over the other.
 
-In this scenario, we could easily use an `if-elseif-else` branching construct. However, if there are many possible levels and titles, the `switch` statement might be easier to read, understand, and modify.
-
-In this module, you'll use the `switch-case` construct to add branching logic where you must match one variable or expression against many possible values.
-
-By the end of this module, you'll be able to build simple applications that can accept user input, combine that input with literal text, and output the result to the user.
+By the end of this module, you'll be able to implement `switch` statements in your application, judge when to use a `switch` statement over an `if-elseif-else` construct, and covert `if-elseif-else` constructs to `switch` statements.
 
 ## Learning objectives
 
-In this module, you'll:
+In this module, you will:
 
 - Use the `switch-case` construct to match a variable or expression against several possible outcomes.
 - Convert code that uses an `if-elseif-else` construct into a `switch-case` construct.
 
 ## Prerequisites:
 
-- Experience using the `if-elseif-else` construct for adding branching logic
-- Experience working with variables, string interpolation, and printing output
+- Experience using the `if-elseif-else` construct for adding branching logic.
+- Experience working with variables, string interpolation, and printing output.
