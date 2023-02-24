@@ -1,7 +1,6 @@
-Our goal was to understand how code blocks impact lower-level and higher-level code constructs, and take the appropriate action to ensure that our variables, methods, and classes were visible as needed.
 
-In C#, we defined variables inside and outside the boundaries of code blocks. We removed code blocks when they were unnecessary to make code more readable. We learned how code is structured in applications through the use of namespaces, classes, and methods, all of which rely on code blocks. We learned how these higher-level code blocks affect the accessibility and visibility of our code, and how we were able to use an accessibility modifier like `public` to access functionality across code blocks. (Again, we'll learn more about accessibility modifiers in a different module.) We learned how to instruct the compiler to look in a given namespace when it needs to resolve the name of a class with the `using` statement.
+Your goal was to understand how code blocks impact access to variables and the actions required to ensure that variables are appropriately scoped, initialized, and accessible when they are needed within an application.
 
-The lessons we learned in this lesson begin our path to understanding higher-level structures, and to building real applications.
+You explored the impact of declaring variables inside and outside the boundaries of a code block. You also examined the impact that variable initialization can have on accessibility, and how removing unnecessary code blocks affects code readability.
 
-[!include[](../../../includes/dotnet-summary.md)]
+Without your understanding of variable scope and accessibility.

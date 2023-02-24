@@ -1,21 +1,24 @@
-When we use decision and iteration statements, we rely on code blocks to define units of code that should be skipped, executed, iterated over, and so on. However, these code blocks also impact variable declaration and accessibility. Code blocks are also used in higher-level constructs when we start building real applications.
 
-In this module, you'll define variables inside and outside the boundaries of code blocks. You'll remove code blocks in certain situations to make code more readable. You'll also learn how code is structured in applications using  namespaces, classes, and methods, all of which rely on code blocks. You'll learn how these higher-level code blocks affect the accessibility and visibility of your code, and use accessibility modifiers like `public` to access functionality across code blocks. You'll learn how to instruct the compiler to look in a given namespace when it needs to resolve the name of a class with the `using` statement.
+Selection and iteration statements use code blocks to group-together the code lines that should be executed, skipped, or iterated over. But that's not the only purpose for code blocks. Code blocks can also be used to control or limit variable accessibility. Variable "scope" refers to the portion of an application where a variable is accessible. Understanding how a code block affects variable scope is an important part of computer programming.
 
-By the end of this module, you'll use code blocks with more confidence, understanding how they impact the visibility and accessibility of both higher and lower-level constructs in your code.
+Suppose you're working on large application that uses nested iteration and selection statements to process array data. Your application uses variables to help accomplish common tasks throughout the application. Some variables serve the same purpose in different portions of the application, and you've made some attempt to reuse the variable names. As your application grows, you start seeing unexpected results for calculations, and errors that report a variable is uninitialized or doesn't exist. You need to improve the approach you're using to declare and access variables, and you need to improve your understanding of variable scope.
+
+In this module, you'll declare variables for use inside and outside the boundaries of code blocks. You'll remove code blocks in certain situations to make code more readable. You'll learn how code blocks affect the accessibility and visibility of your variables.
+
+By the end of this module, you'll be able to use code blocks with more confidence, understanding how they impact the visibility and accessibility of your code.
 
 ## Learning objectives
 
-In this module, you'll:
+In this module, you will:
 
 - Understand the impact of declaring and initializing variables inside and outside of code blocks.
-- Remove code blocks in `if` statements when there's only one line of code in the body of the code block to improve readability.
+- Improve the readability code blocks in `if` statements.
 - Identify namespaces, classes, and methods in your code.
-- Understand how moving methods into new classes, and classes into new namespaces impacts the visibility of the code.
 - Understand the use of the `using` statement to instruct the compiler where to look for classes referenced in your code.
 
 ## Prerequisites:
 
-- Experience declaring and initializing variables
-- Experience with the `if-elseif-else` statement
-- Experience calling methods of classes in the .NET Class Library
+- Experience declaring and initializing variables.
+- Experience with `if-elseif-else` selection statement structures.
+- Experience with `foreach` iteration statements.
+- Experience calling methods of classes in the .NET Class Library.

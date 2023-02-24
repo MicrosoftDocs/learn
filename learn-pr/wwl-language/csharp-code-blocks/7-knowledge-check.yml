@@ -1,57 +1,47 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-code-blocks.knowledge-check
-title: Knowledge Check
+title: Knowledge check
 metadata:
-  title: Check your knowledge
-  description: Review what you've learned
-  ms.date: 09/26/2019
-  author: billwagner
-  ms.author: wiwagn
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: cahowd
   ms.topic: interactive-tutorial
-  ms.prod: learning-languages
+  ms.prod: learning-azure
 durationInMinutes: 3
 quiz:
-  title: Check your knowledge
   questions:
-  - content: "The `using` statement ..."
+  - content: "Which of the following describes the affect of a `using` statement?"
     choices:
-    - content: "Affects only the first class in the code file."
+    - content: "Affects only the first code block in the code file."
       isCorrect: false
-      explanation: "The `using` statement applies to more than just the first class in the code file."
-    - content: "Affects only the first method in the code file."
+      explanation: "Incorrect. The `using` statement applies to more than just the first code block in the code file."
+    - content: "Affects only the current code block in the code file."
       isCorrect: false
-      explanation: "The `using` statement applies to more than just the first method in the code file."
-    - content: "Affects only the first namespace in the code file."
-      isCorrect: false
-      explanation: "The `using` statement applies to more than just the first namespace in the code file."
-    - content: "Affects all namespaces, classes, and methods in the code file."
+      explanation: "Incorrect. The `using` statement applies to more than just the current code block in the code file."
+    - content: "Affects all of the code in the code file."
       isCorrect: true
-      explanation: "Correct!"
-  - content: "Which of the following statements is true about namespaces?"
+      explanation: "Correct! The `using` statement applies to all of the code in a code file."
+  - content: "Which of the following statements is true about showing/removing the curly braces for code blocks associated with an `if` statement?"
     choices:
-    - content: "The same class can belong to two namespaces."
+    - content: "The curly braces can't be removed from the code block for `else if` and `else` statements."
       isCorrect: false
-      explanation: "While two classes may share the same name, and even have the same members, they would still be different classes."
-    - content: "A namespace disambiguates two classes with the same name."
+      explanation: "Incorrect. The curly braces can be removed from the `else if` and `else` statements if the contents of the code block contains a single line of code and if all associated `if`, `else if`, and `else` code blocks only have one line of code and the curly braces removed. All components of that `if-elseif-else` must be consistent in the use of curly braces"
+    - content: "If the curly braces are removed from the code blocks of an `if-elseif-else`, the white space must also be removed."
+      isCorrect: false
+      explanation: "Incorrect. The `if` statement can be separated from the next line of code. Always choose the option that is more readable."
+    - content: "Always choose a style that improves readability."
       isCorrect: true
-      explanation: "Correct!"
-    - content: "A namespace disambiguates two methods with the same name."
-      isCorrect: false
-      explanation: "Namespaces do not affect methods in itself.  Namespaces affect classes."
-    - content: "Namespaces must have children."
-      isCorrect: false
-      explanation: "Child namespaces are optional, but helpful in larger software projects."
-  - content: "Which of the following statements is true about code blocks and the `if` statement?"
+      explanation: "Correct! Code readability should always be a consideration when deciding whether to remove the curly braces from the code blocks associated with an `if` statement."
+  - content: "A developer writes some code that includes an if statement code block. They initialize one integer variable above (outside) of the code block and a second integer variable on the first line inside of the code block. On the next line inside the code block they added the value of the second variable to the value of the first variable. They write code to display the value of the first integer below the code block. What is the result when the code that is used to display the first integer is executed?"
     choices:
-    - content: "You can't remove code blocks from the `else if` and `else` statements."
-      isCorrect: false
-      explanation: "You can remove code blocks from the `else if` and `else` statements if the contents of the code block contains one line of code."
-    - content: "If you remove the code blocks, you must also remove the white space."
-      isCorrect: false
-      explanation: "You can keep the `if` statement separate from the next line of code if you want.  Always choose the option that is more readable."
-    - content: "You should never keep the code block symbols if you can remove them."
-      isCorrect: false
-      explanation: "Always choose the option that is more readable."
-    - content: "Always choose the style that improves readability."
+    - content: "No error is generated and the integer value is displayed. The value is the sum of the first and second integer."
       isCorrect: true
-      explanation: "Correct!"
+      explanation: "Correct! Since the first integer is initialized above the if statement code it is still in-scope after the code block. Also, since both integers are in-scope and initialized with values inside the code block, the addition of the values executes correctly. Finally, even though the second integer does not exist outside of the code block, the first integer retains any changes to its value that occurred inside the code block."
+    - content: "No error is generated and the integer value is displayed. The value is the initialized value from above the code block."
+      isCorrect: false
+      explanation: "Incorrect. The value is displayed as the sum of the two integers."
+    - content: "An error is generated because the first variable is not in-scope after the code block."
+      isCorrect: false
+      explanation: "Incorrect. No error is generated. The first variable was initialized above the code block and is still in-scope both inside and after the code block."

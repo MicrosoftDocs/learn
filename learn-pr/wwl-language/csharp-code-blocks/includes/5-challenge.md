@@ -1,40 +1,69 @@
-Code challenges throughout these modules will reinforce what you've learned and help you gain some confidence before continuing on.
 
-## Fix this code
+Code challenges will reinforce what you've learned and help you gain some confidence before continuing on.
 
-Use what you've learned in this module to fix this poorly written code. There are many improvements that you can make. Good luck!
+## Variable scope challenge
 
-### Step 1: Delete all of the code in the .NET Editor from the earlier exercise.
+In this challenge, you'll use what you've learned about code blocks and variable scope to fix the poorly written code sample provided. There are many improvements that you can make. Good luck!
 
-Select all of the code in the .NET Editor, then select the `del` or `backspace` key to delete it.
+## Code challenge: update problematic code in the code editor
 
-### Step 2: Rewrite and fix the problematic code in the .NET Editor
+1. Ensure that you have an empty Program.cs file open in Visual Studio Code.
 
-Retype the following code, or use the **Run** button or the **Copy** button to add the code to the .NET Editor.
+    If necessary, open Visual Studio Code, and then complete the following steps to prepare a Program.cs file in the Editor:
 
-```csharp-interactive
-int[] numbers = { 4, 8, 15, 16, 23, 42 };
-foreach (int number in numbers)
-{
-    int total;
-    total += number;
-    if (number == 42)
+    1. On the **File** menu, select **Open Folder**.
+
+    1. Use the Open Folder dialog to navigate to, and then open, the **CsharpProjects** folder.
+
+    1. In the Visual Studio Code EXPLORER panel, select **Program.cs**.
+
+    1. On the Visual Studio Code **Selection** menu, select **Select All**, and then press the Delete key.
+
+1. Type the following code into the Visual Studio Code Editor:
+
+    ```c#
+    using System;
+    
+    int[] numbers = { 4, 8, 15, 16, 23, 42 };
+    
+    foreach (int number in numbers)
     {
-       bool found = true;
+        int total;
+        
+        total += number;
+    
+        if (number == 42)
+        {
+           bool found = true;
+    
+        }
+    
     }
-}
-if (found) 
-{
-    Console.WriteLine("Set contains 42");
-}
-Console.WriteLine($"Total: {total}");
-```
+    
+    if (found) 
+    {
+        Console.WriteLine("Set contains 42");
+    
+    }
+    
+    Console.WriteLine($"Total: {total}");
+    ```
 
-Once you get it working, you should get the following output when you run the code:
+1. Review the intended output.
 
-```output
-Set contains 42
-Total: 108
-```
+    When you have completed the required code edits, your application should produce the following output:
+
+    ```Output
+    Set contains 42
+    Total: 108
+    ```
+
+1. Complete the code updates required so that the existing `Console.WriteLine()` statements produce the desired output.
+
+    Variable scope may need to be adjusted.
+
+1. Optimize your code for readability.
+
+    Depending on the amount of whitespace that you include and some other factors, you should have around 17 lines of code.  
 
 Whether you get stuck and need to peek at the solution or you finish successfully, continue on to view a solution to this challenge.

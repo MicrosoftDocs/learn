@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-code-blocks.challenge
-title: Challenge
+title: Exercise - Complete a challenge activity using variable scope
 metadata:
-  title: Challenge
-  description: Use the concepts you just learned about to solve a real world challenge in code.
-  ms.date: 09/26/2019
-  author: billwagner
-  ms.author: wiwagn
+  title: Exercise - Complete a challenge activity using variable scope
+  description: "Exercise - Complete a challenge activity using variable scope"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1
-azureSandbox: false
-interactive: csharp
+durationInMinutes: 6
 content: |
   [!include[](includes/5-challenge.md)]
