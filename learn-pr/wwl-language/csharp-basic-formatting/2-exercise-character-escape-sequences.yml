@@ -9,6 +9,7 @@ metadata:
   ms.author: buzahid
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+interactive: csharp
 durationInMinutes: 10
 content: |
   [!include[](includes/2-exercise-character-escape-sequences.md)]
