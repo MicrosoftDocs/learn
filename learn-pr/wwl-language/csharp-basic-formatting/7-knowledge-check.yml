@@ -38,14 +38,14 @@ quiz:
     choices:
     - content: "You're missing the \\u escape sequence for Unicode characters."
       isCorrect: false
-      explanation: "Incorrect. If you don't use the \\u escape sequence for Unicode characters, you won't see question marks.  You'll see the numbers."
+      explanation: "Incorrect. If you don't use the \\u escape sequence for Unicode characters, you won't see question marks.  You see the numbers."
     - content: "You used the wrong Unicode characters."
       isCorrect: false
-      explanation: "Incorrect. This is unlikely.  It would only be true if all the Unicode characters were the same value representing a question mark -- \\u003F."
+      explanation: "Incorrect. This is unlikely.  It would only be true if all the Unicode characters were the same value representing a question mark--\\u003F."
     - content: "The user's console doesn't support Unicode characters."
       isCorrect: true
       explanation: "Correct.Correct!"
-  - content: "Which of the following lines of code will append a single `\\` to the string `directory`?"
+  - content: "Which of the following lines of code append a single `\\` to the string `directory`?"
     choices:
     - content: "'`directory = directory + \"\\\";`'"
       isCorrect: false
