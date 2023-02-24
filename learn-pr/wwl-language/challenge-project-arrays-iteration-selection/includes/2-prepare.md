@@ -50,11 +50,11 @@ Use the following steps to prepare for the Challenge project exercises:
 
 1. Unzip the downloaded files locally (or in the sandbox if you aren't using a local dev environment).
 
-    - On your local machine, navigate to your downloads folder.
-    - Right-click the Challenge-project-Develop-foreach-and-if-elseif-else-structures-to-process-array-data-in-CSharp.zip file, and then select **Extract all**.
-    - Use the **Browse** button to specify the Windows Desktop folder as the extract location, and then select **Select Folder**.
-    - Select **Show extracted files when complete**, and then select **Extract**.
-    - Make note of the extracted folder location.
+    1. On your local machine, navigate to your downloads folder.
+    1. Right-click the Challenge-project-Develop-foreach-and-if-elseif-else-structures-to-process-array-data-in-CSharp.zip file, and then select **Extract all**.
+    1. Use the **Browse** button to specify the Windows Desktop folder as the extract location, and then select **Select Folder**.
+    1. Select **Show extracted files when complete**, and then select **Extract**.
+    1. Make note of the extracted folder location.
 
 1. Copy the extracted **GuidedProject** folder to your Windows Desktop folder.
 
@@ -65,10 +65,10 @@ Use the following steps to prepare for the Challenge project exercises:
 
 1. Open the new **GuidedProject** folder in VS Code.
 
-    - Open VS Code locally (or open MS Learn sandbox and open VS Code if you aren't using a local dev environment).
-    - In VS Code, on the **File** menu, select **Open Folder**.
-    - Navigate to the Windows Desktop folder and locate the "GuidedProject" folder.
-    - Select **GuidedProject** and then select **Select Folder**.
+    1. Open VS Code locally (or open MS Learn sandbox and open VS Code if you aren't using a local dev environment).
+    1. In VS Code, on the **File** menu, select **Open Folder**.
+    1. Navigate to the Windows Desktop folder and locate the "GuidedProject" folder.
+    1. Select **GuidedProject** and then select **Select Folder**.
 
         The Visual Studio Code EXPLORER view should show the **ChallengeProject** folder and two subfolders named **Final** and **Starter**.
 

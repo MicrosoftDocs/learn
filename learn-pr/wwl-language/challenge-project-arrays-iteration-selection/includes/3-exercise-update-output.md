@@ -34,11 +34,11 @@ To validate that your code satisfies the specified requirements for this exercis
 
 1. Verify that your application creates the following output:
 
-```Output
-Student         Exam Score      Overall Grade   Extra Credit
+    ```Output
+    Student         Exam Score      Overall Grade   Extra Credit
 
-Sophia          0               95.8    A       0 (0 pts)
-Andrew          0               91.2    A-      0 (0 pts)
-Emma            0               90.4    A-      0 (0 pts)
-Logan           0               93      A       0 (0 pts)
-```
+    Sophia          0               95.8    A       0 (0 pts)
+    Andrew          0               91.2    A-      0 (0 pts)
+    Emma            0               90.4    A-      0 (0 pts)
+    Logan           0               93      A       0 (0 pts)
+    ```
