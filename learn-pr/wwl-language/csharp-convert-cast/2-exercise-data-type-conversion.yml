@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-convert-cast.exercise-data-type-conversion
-title: Exercise - data type casting and conversion
+title: Exercise - Explore data type casting and conversion
 metadata:
-  title: Exercise - data type casting and conversion
-  description: Use casting and conversion operators and methods to convert one type into another.
-  ms.date: 10/03/2019
-  author: billwagner
-  ms.author: wiwagn
+  title: Exercise - Explore data type casting and conversion
+  description: "Exercise - Explore data type casting and conversion"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: eric
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 10
-azureSandbox: false
-interactive: csharp
+durationInMinutes: 30
 content: |
   [!include[](includes/2-exercise-data-type-conversion.md)]

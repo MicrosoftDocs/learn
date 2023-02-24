@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-convert-cast.exercise-tryparse
-title: Exercise - the TryParse() method
+title: Exercise - Examine the TryParse() method
 metadata:
-  title: Introduction
-  description: Use the TryParse() method as a safe way to convert a string into a numeric data type value.
-  ms.date: 10/03/2019
-  author: billwagner
-  ms.author: wiwagn
+  title: Exercise - Examine the TryParse() method
+  description: "Exercise - Examine the TryParse() method"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: eric
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 8
-azureSandbox: false
-interactive: csharp
+durationInMinutes: 12
 content: |
   [!include[](includes/3-exercise-tryparse.md)]
