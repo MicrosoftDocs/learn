@@ -1,3 +1,4 @@
+
 Two components of every secure database are authentication and authorization.
 
 **Authentication** is the process of proving the user is who they claim to be. A user connects to a database using a user account. When a user attempts to connect to a database, they provide a user account and authentication information. The user is authenticated using one of the following two authentication methods:

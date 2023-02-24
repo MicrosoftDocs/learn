@@ -1,3 +1,4 @@
+
 Give these Try-This exercises a test to gain some experience using Azure.
 
 > [!NOTE]
@@ -14,7 +15,7 @@ Skip this section if you already have a database to work with.
 1.  In the **Portal**, search for and a select **SQL databases**.
 2.  On the **Basics** tab, give your database a name, and create a new server.
 3.  On the **Additional settings** tab, select **Sample** for **Use existing data**. Also, **Enable advanced data security** and **Start free trial**.
-4.  **Review &amp; create**, and then **Create**.
+4.  **Review & create**, and then **Create**.
 5.  Wait for the database to deploy.
 
 ### Review Vulnerability Assessments
@@ -33,7 +34,7 @@ Skip this section if you already have a database to work with.
 ### Review Data Discovery and Classification
 
 1.  Return to the **Security** blade.
-2.  Select **Data Discovery &amp; Classification**.
+2.  Select **Data Discovery & Classification**.
 3.  On the **Classification** tab, select **Add classification**.
      -  Schema name: **SalesLT**
      -  Table name: **Customer**

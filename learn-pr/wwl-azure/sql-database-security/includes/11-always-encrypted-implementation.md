@@ -1,3 +1,4 @@
+
 A proper always encrypting implementation is important to a secure database.
 
 ### Configuring Always Encrypted
