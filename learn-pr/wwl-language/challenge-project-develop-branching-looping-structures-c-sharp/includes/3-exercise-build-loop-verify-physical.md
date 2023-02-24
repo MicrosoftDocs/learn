@@ -30,8 +30,8 @@ To validate that your code satisfies the specified requirements, complete the fo
 
 1. Use Visual Studio Code to build and run your app.
 
-> [!NOTE]
-> You can exit the verification test before completing all of the verification steps if see a result that does not satisfy the specification requirements. To force an exit from the running program, in the Terminal panel, press **Ctrl-C**. After exiting the running app, complete the edits that you believe will address the issue you are working on, save your updates to the Program.cs file, and then re-build and run your code.
+    > [!NOTE]
+    > You can exit the verification test before completing all of the verification steps if see a result that does not satisfy the specification requirements. To force an exit from the running program, in the Terminal panel, press **Ctrl-C**. After exiting the running app, complete the edits that you believe will address the issue you are working on, save your updates to the Program.cs file, and then re-build and run your code.
 
 1. At the Terminal command prompt, enter **3**
 

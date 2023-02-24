@@ -18,7 +18,7 @@ This feature must:
     - values cannot have zero characters.
     - any further restriction is up to the developer.
 
-- inform the application user when all data requirements are met, pausing the application to ensure the message can be seen and responded to
+- inform the application user when all data requirements are met, pausing the application to ensure the message can be seen and responded to.
 
 ## Check your work
 
