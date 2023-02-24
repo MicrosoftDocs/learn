@@ -1,18 +1,18 @@
 
-You'll be using Visual Studio Code to develop a C# application that implements arrays, `foreach` statements, and `if` statements. You will be creating array variables that contain the input data for the application. You'll also be using `foreach` and `if` statements to develop a nested looping and branching structure that implements your application design goals.
+You'll be using Visual Studio Code to develop a C# application that implements arrays, `foreach` statements, and `if` statements. You will create array variables that contain the data for your application. You'll also be using `foreach` and `if` statements to develop a nested looping and branching structure that implements your application design goals.
 
 ## Project overview
 
 You are developing a Student Grading application that automates the calculation of grades for each student in a class. The parameters for your application are:
 
 - The application will be a C# console application.
-- You start out with a short list of four students and their five exam scores.
+- You start with four students. Each student has five exam scores.
 - Each exam score is expressed as an integer value, 0-100, where 100 represents 100% correct.
-- Final scores are calculated as an average of the five exam scores.
+- The overall exam score is calculated as an average of the five exam scores.
 - Your application needs to accommodate extra credit assignments.
 
     - Extra credit scores must be included in the student's scores array.
-    - Extra credit assignments will be worth 10% of an exam score when applied toward the final numeric grade.
+    - Extra credit assignments are worth 10% of an exam score (when calculating the final numeric grade).
     - Extra credit assignment scores must be added to the student's total exam score before calculating the final numeric grade.
 
 - Your application needs to automatically assign letter grades based on the calculated final score for each student.
@@ -39,7 +39,7 @@ Your goal is to update the existing code to include the following features:
     - Your code must detect extra credit assignments based on the number of elements in the student's scores array.
     - Your code must apply the 10% weighting factor to extra credit assignments before adding extra credit scores to the sum of exam scores.
 
-The following list shows the letter grade corresponding to numeric scores:
+The following list shows the letter grade that corresponds to numeric scores:
 
 ```Output
 97 - 100   A+
@@ -57,7 +57,7 @@ The following list shows the letter grade corresponding to numeric scores:
 0  - 59    F
 ```
 
-The application needs to produce a formatted student grading report that appears as follows:
+The update application needs to produce a formatted student grading report that appears as follows:
 
 ```Output
 Student         Grade
@@ -78,11 +78,11 @@ Use the following steps to prepare for the Guided project exercises.
 
 1. Unzip the downloaded files locally (or in the sandbox if you aren't using a local dev environment).
 
-    - On your local machine, navigate to your downloads folder.
-    - Right-click the Guided-project-Develop-foreach-and-if-elseif-else-structures-to-process-array-data-in-CSharp.zip file, and then select **Extract all**.
-    - Use the **Browse** button to specify the Windows Desktop folder as the extract location, and then select **Select Folder**.
-    - Select **Show extracted files when complete**, and then select **Extract**.
-    - Make note of the extracted folder location.
+    1. On your local machine, navigate to your downloads folder.
+    1. Right-click the Guided-project-Develop-foreach-and-if-elseif-else-structures-to-process-array-data-in-CSharp.zip file, and then select **Extract all**.
+    1. Use the **Browse** button to specify the Windows Desktop folder as the extract location, and then select **Select Folder**.
+    1. Select **Show extracted files when complete**, and then select **Extract**.
+    1. Make note of the extracted folder location.
 
 1. Copy the extracted **GuidedProject** folder to your Windows Desktop folder.
 
@@ -93,10 +93,10 @@ Use the following steps to prepare for the Guided project exercises.
 
 1. Open the new **GuidedProject** folder in VS Code.
 
-    - Open VS Code locally (or open MS Learn sandbox and open VS Code if you aren't using a local dev environment).
-    - In VS Code, on the **File** menu, select **Open Folder**.
-    - Navigate to the Windows Desktop folder and locate the "GuidedProject" folder.
-    - Select **GuidedProject** and then select **Select Folder**.
+    1. Open VS Code locally (or open MS Learn sandbox and open VS Code if you aren't using a local dev environment).
+    1. In VS Code, on the **File** menu, select **Open Folder**.
+    1. Navigate to the Windows Desktop folder and locate the "GuidedProject" folder.
+    1. Select **GuidedProject** and then select **Select Folder**.
 
     The Visual Studio Code EXPLORER view should show the GuidedProject folder and two subfolders named Final and Starter.
 
