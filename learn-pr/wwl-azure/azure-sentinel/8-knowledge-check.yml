@@ -34,7 +34,7 @@ quiz:
       explanation: "Sentinel provides the ability to automate and orchestrate responses."
     - content: "A Sentinel playbook be run manually or set to run automatically when specific alerts are triggered."
       isCorrect: false
-      explanation: "The fact that Sentinel runs when an trigger is fired is a good topic to share."
+      explanation: "The fact that Sentinel runs when a trigger is fired is a good topic to share."
     - content: "A Sentinel playbook be created to handle several subscriptions at once."
       isCorrect: true
       explanation: "A security playbook is a collection of procedures that can be run from Azure Sentinel in response to an alert. A security playbook can help automate and orchestrate your response and can be run manually or set to run automatically when specific alerts are triggered. Each playbook is created for a specific subscription."
@@ -67,7 +67,7 @@ quiz:
       explanation: "A step-by-step playbook. A notebook is a step-by-step playbook that enables the ability to walk through the steps of an investigation and hunt. Other hunting techniques are described by the other choices: built-in query, bookmarks, and event tables."
     - content: "A table to query and locate actions like DNS events."
       isCorrect: false
-      explanation: "This is a event storage location."
+      explanation: "This is an event storage location."
     - content: "A saved item for the creation of an incident for investigation."
       isCorrect: false
       explanation: "A playbook is more than a single saved item."
