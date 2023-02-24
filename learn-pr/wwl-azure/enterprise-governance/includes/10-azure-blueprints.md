@@ -97,7 +97,7 @@ When creating a blueprint definition, you'll define where the blueprint is saved
 
 ## Blueprint parameters
 
-Blueprints can pass parameters to either a **policy/initiative** or an **ARM template**. When adding either ***artifact***to a blueprint, the author decides to provide a defined value for each blueprint assignment or to allow each blueprint assignment to provide a value at assignment time. This flexibility provides the option to define a pre-determined value for all uses of the blueprint or to enable that decision to be made at the time of assignment.
+Blueprints can pass parameters to either a **policy/initiative** or an **ARM template**. When adding either ***artifact*** to a blueprint, the author decides to provide a defined value for each blueprint assignment or to allow each blueprint assignment to provide a value at assignment time. This flexibility provides the option to define a pre-determined value for all uses of the blueprint or to enable that decision to be made at the time of assignment.
 
 > [!NOTE]
 > Assigning a blueprint definition to a management group means the assignment object exists in the management group. The deployment of artifacts still targets a subscription. To perform a management group assignment, the **Create** Or **Update REST API** must be used, and the request body must include a value for **properties.scope** to define the target subscription.
