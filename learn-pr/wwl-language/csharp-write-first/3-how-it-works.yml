@@ -1,16 +1,28 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-write-first.how-it-works
-title: How it works
+title: Learn how it works
 metadata:
-  title: How it works
-  description: Why does the exercise code work?  What do those words and symbols mean?
-  ms.date: 08/30/2019
-  author: billwagner
-  ms.author: wiwagn
+  title: Learn how it works
+  description: "Learn how it works"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: buzahid
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 4
-azureSandbox: false
-interactive: csharp
+durationInMinutes: 6
 content: |
   [!include[](includes/3-how-it-works.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the difference between `Console.Write` and `Console.WriteLine`?"
+    choices:
+    - content: "`Console.Write` prints the output on a new line."
+      isCorrect: false
+      explanation: "Incorrect. `Console.Write` prints the output on the existing line"
+    - content: "`Console.WriteLine` prints the output on a new line."
+      isCorrect: false
+      explanation: "Incorrect. `Console.WriteLine` prints the output on the existing line and appends a new line after it."
+    - content: "`Console.WriteLine` appends a new line after the output."
+      isCorrect: true
+      explanation: "Correct! `Console.WriteLine` prints the output on the existing line and appends a new line after it."
