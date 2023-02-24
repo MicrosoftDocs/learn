@@ -11,6 +11,6 @@ Prior to deploying a private mobile network, you should carefully consider your 
 
 ## Video: Azure Private 5G Core Deployment
 
-This video provides an overvewi of deploying a private mobile network with Azure Private 5G Core:
+This video provides an overview of deploying a private mobile network with Azure Private 5G Core:
 
 > [!VIDEO d42db8fa-eb2e-479a-9e6e-9fec8b684891]
