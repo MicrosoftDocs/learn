@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.languages.csharp-for.summary
+uid: learn.languages.csharp-code-blocks.summary
 title: Summary
 metadata:
   title: Summary
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 2
 content: |
-  [!include[](includes/6-summary.md)]
+  [!include[](includes/7-summary.md)]

@@ -20406,6 +20406,36 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/wwl-language/csharp-code-blocks/3-method-class-namespace.md",
+      "redirect_url": "/training/modules/csharp-code-blocks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-language/csharp-code-blocks/4-exercise-remove-code-block.md",
+      "redirect_url": "/training/modules/csharp-code-blocks/3-exercise-remove-if-statements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-language/csharp-code-blocks/5-challenge.md",
+      "redirect_url": "/training/modules/csharp-code-blocks/4-exercise-challenge-variable-scope",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-language/csharp-code-blocks/6-solution.md",
+      "redirect_url": "/training/modules/csharp-code-blocks/5-review-solution-variable-scope",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-language/csharp-code-blocks/7-knowledge-check.md",
+      "redirect_url": "/training/modules/csharp-code-blocks/6-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-language/csharp-code-blocks/8-summary.md",
+      "redirect_url": "/training/modules/csharp-code-blocks/7-summary",
+      "redirect_document_id": false
+    },
+    {
        "source_path": "learn-pr/wwl-azure/application-security/8-demonstration.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/application-security/13-demonstration",
       "redirect_document_id": false
