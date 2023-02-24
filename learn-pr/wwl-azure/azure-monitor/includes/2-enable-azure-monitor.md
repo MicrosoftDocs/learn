@@ -1,3 +1,4 @@
+
 Earlier, this course discussed Microsoft Azure Monitor. The following high-level diagram depicts the two fundamental data types that Azure Monitor uses, Metrics and Logs.
 
 :::image type="content" source="../media/az500-azure-monitor-1-bb53ff11.png" alt-text="Data sources create metrics and logs that are displayed by Azure Monitor.":::

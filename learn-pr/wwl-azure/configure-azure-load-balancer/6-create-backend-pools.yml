@@ -4,13 +4,11 @@ title: Create back-end pools
 metadata:
   title: Create back-end pools
   description: "Create back-end pools"
-  ms.date: 01/31/2023
+  ms.date: 02/24/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 2
 content: |
   [!include[](includes/6-create-backend-pools.md)]
