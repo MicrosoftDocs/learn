@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/29/2022
+  ms.date: 02/24/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -16,7 +16,6 @@ content: |
   [!include[](includes/10-knowledge-check.md)]
 quiz:
   title: ""
-
   questions:
   - content: "For the Sale department subnet range, which IP address can be dynamically assigned?"
     choices:
@@ -29,19 +28,17 @@ quiz:
     - content: "10.3.255.254"
       isCorrect: true
       explanation: "Correct. Any address in the range 10.3.0.4 through 10.3.255.254 is available for assignment."
-
   - content: "What feature can support the denial of traffic based on the IP address range?"
     choices:
     - content: "Statically assigned IP addresses"
       isCorrect: true
-      explanation: "Correct. In this situation, use statically assigned IP addresses to avoid having to change the firewall rules."    
+      explanation: "Correct. In this situation, use statically assigned IP addresses to avoid having to change the firewall rules."
     - content: "Dynamically assigned IP addresses"
       isCorrect: false
       explanation: "Incorrect. Dynamically assigned IP addresses require firewall rules to be changed."
     - content: "IP addresses in the reserved range"
       isCorrect: false
       explanation: "Incorrect. IP addresses in the reserved range can't be used."
-
   - content: "Which of the following statements about Azure Virtual Network is correct?"
     choices:
     - content: "Outbound communication with the internet must be configured for each resource on the virtual network."
