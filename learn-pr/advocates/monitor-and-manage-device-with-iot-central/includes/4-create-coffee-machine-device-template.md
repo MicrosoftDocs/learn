@@ -6,31 +6,31 @@ Here, you'll create and publish the **Connected Coffee Machine** device template
 
 ## Create a device template
 
-You already have a device capability model for the coffee machine defined in the `CoffeeMaker.json`, so you'll use that.
+You already have a device capability model for the coffee machine defined in the _CoffeeMaker.json_, so you'll use that.
 
 1. Browse to the URL for your IoT application that you created in the previous exercise, such as https://coffee-maker-1234.azureiotcentral.com.
 
-1. Select the icon for **Device templates** on the home page of your Azure IoT Central application in Azure IoT Central, and then select **+ New**.
+1. Select the icon for **Device templates** on the home page of your Azure IoT Central application, and then select **+ New**.
 
-1. On the **Select template type** page, select the **IoT device** tile, and then select **Next: Customize**.
+1. On the **Select type** page, select the **IoT device** tile, and then select **Next: Customize**.
 
 1. On the **Customize** page, enter _Connected Coffee Machine_ as the device template name, then select **Next: Review**, and then select **Create**.
 
 1. On the **Create a model** page, select the **Import a model** tile.
 
-1. Browse to the `CoffeeMaker.json` file you created previously, and select **Open**.
+1. Browse to the _CoffeeMaker.json_ file you created previously, and select **Open**.
 
 IoT Central displays the **Connected Coffee Maker** capability model that defines the telemetry, properties, and commands that the device supports.
 
-![Imported Connected Coffee Machine template.](../media/2-imported-template.png)
+![Imported Connected Coffee Machine template.](../media/4-imported-template.png)
 
 ## Add cloud properties
 
-To add the cloud properties that store the ideal water temperature range for coffee machine:
+To add the cloud properties that store the ideal water temperature range for the coffee machine:
 
 1. Navigate to the **Connected Coffee Machine** device template you created, and select  **Connected Coffee Maker** capability model.
 
-1. Add two cloud properties to the device template using the information in the following table; you might need to select the down icon to expand some of these values:
+1. Select **Add capability** and add two cloud properties to the device template using the information in the following table; you might need to select the down icon to expand some of these values:
 
     | Display name | Name |Capability type | Semantic type | Schema | Min value | Max value | Decimal places | Unit|
     | ------------ | ---- | ------------- | ------------- | ------ | --------- | --------- | -------------- | ---- |
@@ -39,7 +39,7 @@ To add the cloud properties that store the ideal water temperature range for cof
 
 1. Save your changes.
 
-    ![Connected Coffee Machine cloud properties.](../media/2-cloud-properties.png)
+    ![Connected Coffee Machine cloud properties.](../media/4-cloud-properties.png)
 
 ## Add views to your template
 
@@ -51,19 +51,19 @@ To create a view that lets you visualize the telemetry from your coffee machine:
 
 1. Select **Start with devices** and add the following tiles:
 
-    - Add a 2x1 tile called **Cup Detected** to show the last known value of the **Cup Detected** telemetry value.
+    - Select **Cup Detected** in **Telemetry** category and then **Add tile**. Change the tile visualization to **Last Known Value** and size to **2 x 1**.
 
-    - Add a 2x1 tile called **Brewing** to show the last known value of the **Brewing** telemetry value.
+    - Select **Brewing** in **Telemetry** category and then **Add tile**. Change the tile visualization to **Last Known Value** and size to **2 x 1**.
 
-    - Add a 3x3 tile called **Telemetry** that uses a line chart to plot the average values of **Water Temperature** and **Air Humidity** for the past 30 minutes.
+    - Select **Water Temperature** and **Air Humidity** in **Telemetry** category and then **Add tile**. Change the tile visualization to **Line chart** and size to **2 x 2** then select **Edit**. Change **Title** to _Telemetry_ and confirm the **Display range** is set to **Past 30 minutes**. Select **Update**.
 
-    - Add a 1x1 tile called **Water Temperature (Min)** that displays the minimum water temperature over the past 12 hours as a KPI.
+    - Select **Water Temperature** in **Telemetry** category and then **Add tile**. Change the tile visualization to **KPI** and size to **1 x 1** then select **Edit**. Change **Title** to _Water Temperature (Min)_ and select **Past 12 hours** in **Time range**. Select **Update**.
 
-    - Add a 1x1 tile called **Air Humidity (Max)** that displays the maximum air humidity over the past 12 hours as a KPI.
+    - Select **Air Humidity** in **Telemetry** category and then **Add tile**. Change the tile visualization to **KPI** and size to **1 x 1** then select **Edit**. Change **Title** to _Air Humidity (Max)_ and select **Past 12 hours** in **Time range**. Select **Update**.
 
 1. Save your changes.
 
-    ![Connected Coffee Machine telemetry view.](../media/2-telemetry-view.png)
+    ![Connected Coffee Machine telemetry view.](../media/4-telemetry-view.png)
 
 To create a view that lets you manage the properties of your coffee machine:
 
@@ -71,11 +71,11 @@ To create a view that lets you manage the properties of your coffee machine:
 
 1. Add a new **Editing device and cloud data** form called _Properties_.
 
-1. Add a section that includes both the **Optimal Temperature** and **Device Warranty Expired** properties and the **Coffee Maker Min Temperature** and **Coffee Maker Max Temperature** cloud properties, and then select **Add section**.
+1. Select both the **Optimal Temperature** and **Device Warranty Expired** properties and the **Coffee Maker Min Temperature** and **Coffee Maker Max Temperature** cloud properties, and then select **Add section**.
 
 1. Save your changes.
 
-    ![Connected Coffee Machine property view.](../media/2-properties-form.png)
+    ![Connected Coffee Machine property view.](../media/4-properties-form.png)
 
 ## Publish the Coffee Machine template
 
@@ -93,4 +93,4 @@ To verify that the device template was published and is ready to use:
 
 1. Check that the **Connected Coffee Machine** device is in the list of available device types:
 
-    ![Connected Coffee Machine published device template.](../media/2-published-template.png)
+    ![Connected Coffee Machine published device template.](../media/4-published-template.png)
