@@ -11,7 +11,7 @@ A security engineer uses application security to protect the usage of your appli
 
 ## Skills measured
 
-Locking down applications and data is a part of [Exam AZ-500: Microsoft Azure Security Engineer](/learn/certifications/exams/az-500).
+Locking down applications and data is a part of [Exam AZ-500: Microsoft Azure Security Engineer](/certifications/exams/az-500).
 
 Configure application security features (20-25%)
 

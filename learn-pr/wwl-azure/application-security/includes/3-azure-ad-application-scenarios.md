@@ -1,5 +1,5 @@
 
-Any application that outsources authentication to Azure AD needs to be registered in a directory. This step involves telling Azure AD about your application:, including:
+Any application that outsources authentication to Azure AD needs to be registered in a directory. This step involves telling Azure AD about your application, including:
 
 ### Azure AD application scenarios
 
