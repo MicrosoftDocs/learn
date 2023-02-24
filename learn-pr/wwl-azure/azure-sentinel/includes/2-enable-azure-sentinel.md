@@ -1,3 +1,4 @@
+
 Microsoft Sentinel is a scalable, cloud-native, security information event management (**SIEM**) and security orchestration automated response (**SOAR**) solution. Microsoft Sentinel delivers intelligent security analytics and threat intelligence across the enterprise, providing a single solution for alert detection, threat visibility, proactive hunting, and threat response.
 
 ### Value of a security information and event management tool
@@ -8,7 +9,7 @@ Security Operations (SecOps) teams are inundated with a high volume of alerts an
 
 Microsoft Sentinel offers nearly limitless cloud scale and speed to address your security needs. Think of Microsoft Sentinel as the first **SIEM-as-a-service** that brings the power of the cloud and artificial intelligence to help security operations teams efficiently identify and stop cyber-attacks before they cause harm. Microsoft Sentinel enriches your investigation and detection by providing both Microsoft's threat intelligence stream and external threat intelligence streams.
 
-Microsoft Sentinel integrates with Microsoft 365 solution and correlates millions of signals from different products such as Azure Identity Protection, Microsoft Cloud App Security, and soon Azure Advanced Threat Protection, Windows Advanced Threat Protection, O365 Advanced Threat Protection, Intune, and Azure Information Protection. It enables the following services:
+Microsoft Sentinel integrates with Microsoft 365 solution and correlates millions of signals from different products such as Azure Identity Protection, Microsoft Cloud App Security, and soon Azure Advanced Threat Protection, Windows Advanced Threat Protection, M365 Advanced Threat Protection, Intune, and Azure Information Protection. It enables the following services:
 
  -  **Collect data at cloud scale** across all users, devices, applications, and infrastructure, both on-premises and in multiple clouds.
  -  **Detect previously undetected threats**, and minimize false positives using Microsoft's analytics and unparalleled threat intelligence.
