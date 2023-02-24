@@ -3,7 +3,7 @@ uid: learn.monitor-manage-device-with-iotcentral.summary
 title: Summary
 metadata:
   title: Summary
-  description: This content is a part of Monitor and manage your coffee machine with Azure IoT Central
+  description: This content is a part of Build your first IoT Central application to manage your coffee machines
   ms.date: 01/13/2023
   author: asergaz
   ms.author: sergaz
@@ -14,4 +14,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 2
 content: |
-  [!include[](includes/9-summary.md)]
+  [!include[](includes/10-summary.md)]

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.monitor-manage-device-with-iotcentral.configure-rules-and-actions
-title: Configure rules and actions to monitor your coffee machine
+title: Exercise - Configure rules and actions to monitor your coffee machine
 metadata:
-  title: Configure rules and actions to monitor your coffee machine
-  description: This content is a part of Monitor and manage your coffee machine with Azure IoT Central
+  title: Exercise - Configure rules and actions to monitor your coffee machine
+  description: This content is a part of Build your first IoT Central application to manage your coffee machines
   ms.date: 01/13/2023
   author: asergaz
   ms.author: sergaz
@@ -14,4 +14,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 12
 content: |
-  [!include[](includes/7-configure-rules-and-actions.md)]
+  [!include[](includes/8-configure-rules-and-actions.md)]
