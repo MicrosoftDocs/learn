@@ -1,5 +1,5 @@
 
-In this first step of our development process, we'll review the code provided in the Starter project folder and then move on to some clean-up and preparatory tasks before we begin adding features to our app. Our code clean-up task involves updating the selection statement that's used when generating the sample data for our app. Our preparatory tasks will be to add a looping structure around our menu selection code, and to create a code branching structure that is based on the user's menu selections. The detailed tasks that we'll complete during this exercise are:
+In this first step of our development process, you'll review the code provided in the Starter project folder and then move on to some clean-up and preparatory tasks before you begin adding features to your app. Your code clean-up task involves updating the selection statement that's used when generating the sample data for your app. Your preparatory tasks will be to add a looping structure around your menu selection code, and to create a code branching structure that is based on the user's menu selections. The detailed tasks that you'll complete during this exercise are:
 
 1. Code review: review the contents of the Program.cs file.
 1. Sample data: convert the if-elseif-else structure to switch-case structure that improves readability.
@@ -10,7 +10,7 @@ In this first step of our development process, we'll review the code provided in
 
 ## Review the contents of the Program.cs file
 
-In this task, we'll review the code that's provided as a Starter project for this module. The Program.cs file contains a preliminary version of the application that we'll be working on. The code includes an initial attempt at generating sample data for the application, and it displays a list of menu options that define the main features of our application. Let's take a look.
+In this task, you'll review the code that's provided as a Starter project for this module. The Program.cs file contains a preliminary version of the application that you'll be working on. The code includes an initial attempt at generating sample data for the application, and it displays a list of menu options that define the main features of our application.
 
 1. Ensure that you have the **GuidedProject** folder open in Visual Studio Code.
 
@@ -46,9 +46,9 @@ In this task, we'll review the code that's provided as a Starter project for thi
     string[,] ourAnimals = new string[maxPets, 6];
     ```
 
-    The `using` statement enables us to write code that implements members of the `System` namespace without requiring us to specify `System`. For example, our code can use the `Console.WriteLine()` method without having to specify `System.Console.WriteLine()`. Among other things, the `using` statement makes our code easier to read.
+    The `using` statement enables you to write code that implements members of the `System` namespace without requiring us to specify `System`. For example, your code can use the `Console.WriteLine()` method without having to specify `System.Console.WriteLine()`. Among other things, the `using` statement makes your code easier to read.
 
-    Next, we see a comment line and a list of variables. These variables, `animalSpecies` through `animalNickname`, will be used to hold the values of the pet characteristics. A bit later in the code we will be assigning these values to a multidimensional string array named `ourAnimals`. Each of these variables is initialized to contain a zero length string `""`. The `ourAnimals` array is declared a little further down in the code (we'll get to it soon).
+    Next, you see a comment line and a list of variables. These variables, `animalSpecies` through `animalNickname`, will be used to hold the values of the pet characteristics. A bit later in the code you will be assigning these values to a multidimensional string array named `ourAnimals`. Each of these variables is initialized to contain a zero length string `""`. The `ourAnimals` array is declared a little further down in the code (you'll get to it soon).
 
     The next group of variables is a mix of `string` and `int` variables that will be used help generate sample data, read user input, and establish exit criteria for our main program loop. One interesting thing that you may have noticed is the code line `string? readResult;`. When used in a variable declaration like this, the `?` character is used to define a nullable type of the corresponding non-nullable variable type. When reading user entered values with the `Console.ReadLine()` method, it's best to use a nullable type.
 

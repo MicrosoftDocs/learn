@@ -1,8 +1,4 @@
 
-Instructions for a Prepare unit: Set expectations in the Prepare unit. Describe what they'll build and walk them through any required setup.
-
-- The first level-2 heading (H2) is "Project overview" and describes the project and how they'll build it at a high level.
-- The second H2 is "Setup" and walks them through the setup of all needed tools, installations, accounts, etc.
 
 You'll be using Visual Studio Code to develop the initial version of a C# console application. You will be writing code that evaluates boolean expressions, implements various selection and iteration statements (branching and looping structures), and declares variables within code blocks at the appropriate scoping level for the app. Here, we'll discuss the overall goals of the project and how you'll build and test your application. We'll also cover how to set up your development environment, including a "Starter" code project.
 
@@ -10,42 +6,42 @@ You'll be using Visual Studio Code to develop the initial version of a C# consol
 
 The design specification for the Contoso Pets application identifies the following:
 
-- the application will be a C# console application.
-- the application data will be accessible from a multidimensional string array named ourAnimals.
-- the ourAnimals array will include the following "pet characteristics" for each animal:
+- The application will be a C# console application.
+- The application data will be accessible from a multidimensional string array named ourAnimals.
+- The ourAnimals array will include the following "pet characteristics" for each animal:
 
-    - pet ID #.
-    - pet species (cat or dog).
-    - pet age (years).
-    - a description of the pet's physical condition/characteristics.
-    - a description of the pet's personality.
-    - the pet's nickname.
+    - Pet ID #.
+    - Pet species (cat or dog).
+    - Pet age (years).
+    - A description of the pet's physical condition/characteristics.
+    - A description of the pet's personality.
+    - The pet's nickname.
 
-- the application will load a sample dataset that represents dogs and cats currently in your care.
-- the application will present a list of menu options that enable an app user to access the main features of the application.
-- the application will include the following features:
+- The application will load a sample dataset that represents dogs and cats currently in your care.
+- The application will present a list of menu options that enable an app user to access the main features of the application.
+- The application will include the following features:
 
-    - list the pet information for all animals in the ourAnimals array.
-    - add new animals to the ourAnimals array (the following conditions apply):
+    - List the pet information for all animals in the ourAnimals array.
+    - Add new animals to the ourAnimals array (the following conditions apply):
 
-        - an animal's age and some physical characteristics for a pet may be unknown until a veterinarian's examination (for example: breed, neutered/spayed status).
-        - an animal's nickname and personality may be unknown when a pet first arrives.
-        - the pet species (dog or cat) must be entered when a new animal is added to the ourAnimals array.
-        - a pet ID must be programmatically generated when a new animal is added to the ourAnimals array.
+        - An animal's age and some physical characteristics for a pet may be unknown until a veterinarian's examination (for example: breed, neutered/spayed status).
+        - An animal's nickname and personality may be unknown when a pet first arrives.
+        - The pet species (dog or cat) must be entered when a new animal is added to the ourAnimals array.
+        - A pet ID must be programmatically generated when a new animal is added to the ourAnimals array.
 
-    - ensure animal ages and physical descriptions are complete (this action can occur after a veterinarian's examination).
-    - ensure animal nicknames and personality descriptions are complete (this action can occur after the team gets to know a pet).
-    - edit an animal’s age (if a pet's birth date is known and the pet has a birthday while in our care).
-    - edit an animal’s personality description (a pet may behave differently after spending more time in our care).
-    - display all cats that meet user specified physical characteristics.
-    - display all dogs that meet user specified physical characteristics.
+    - Ensure animal ages and physical descriptions are complete (this action can occur after a veterinarian's examination).
+    - Ensure animal nicknames and personality descriptions are complete (this action can occur after the team gets to know a pet).
+    - Edit an animal’s age (if a pet's birth date is known and the pet has a birthday while in our care).
+    - Edit an animal’s personality description (a pet may behave differently after spending more time in our care).
+    - Display all cats that meet user specified physical characteristics.
+    - Display all dogs that meet user specified physical characteristics.
 
 Some initial code development has already been completed. The Starter code project for this Guided project module includes a Program.cs file that provides the following code features:
 
-- the code declares variables used to collect and process pet data and menu item selections.
-- the code declares the ourAnimals array.
-- the code uses a for loop around an if-elseif-else construct to populate the ourAnimals array with a sample dataset.
-- the code displays the following main menu options for user selection:
+- The code declares variables used to collect and process pet data and menu item selections.
+- The code declares the ourAnimals array.
+- The code uses a for loop around an if-elseif-else construct to populate the ourAnimals array with a sample dataset.
+- The code displays the following main menu options for user selection:
 
     1. List all of our current pet information.
     1. Assign values to the ourAnimals array fields.
@@ -58,7 +54,7 @@ Some initial code development has already been completed. The Starter code proje
 
     Enter menu item selection or type "Exit" to exit the program
 
-- the code reads the user's menu item selection and displays a message echoing their selection.
+- The code reads the user's menu item selection and displays a message echoing their selection.
 
 Your goal is to update the existing code, and then develop app features in support of the first two menu options shown above. The key tasks that you'll need to accomplish are:
 

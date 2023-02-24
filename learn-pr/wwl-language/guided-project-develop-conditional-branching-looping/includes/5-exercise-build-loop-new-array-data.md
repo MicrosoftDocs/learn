@@ -1,5 +1,5 @@
 
-In this step of our development process, we will begin working on the feature of our application that enables the user to add new animals to the ourAnimals array. To get started, we will first work on calculating the initial values of our loop control variables. We will then focus on constructing the loop that enables our app to collect user specified data for the animals. The detailed tasks that we will complete during this exercise are:
+In this step of your development process, you will begin working on the feature of your application that enables the user to add new animals to the ourAnimals array. To get started, you will first work on calculating the initial values of your loop control variables. You will then focus on constructing the loop that enables your app to collect user specified data for the animals. The detailed tasks that you will complete during this exercise are:
 
 1. Calculate petCount: write code that counts the number of pets in the ourAnimals array that have assigned data.
 1. Conditional messages: write code to display message output when petCount is less than maxPets.
@@ -12,7 +12,7 @@ In this step of our development process, we will begin working on the feature of
 
 ## Count the number of pets in the ourAnimals array
 
-In this task, we will declare variables that establish the exit criteria for our data entry loop and we will create a `for` loop that we will use to count the number of pets in `ourAnimals` that have been assigned data. Let's get started.
+In this task, you will declare variables that establish the exit criteria for your data entry loop and you will create a `for` loop that you will use to count the number of pets in `ourAnimals` that have been assigned data.
 
 1. Ensure that you have Visual Studio Code open, and that your Program.cs file is visible in the Editor.
 

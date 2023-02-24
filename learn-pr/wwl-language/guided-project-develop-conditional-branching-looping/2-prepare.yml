@@ -9,6 +9,6 @@ metadata:
   ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 7
+durationInMinutes: 9
 content: |
   [!include[](includes/2-prepare.md)]

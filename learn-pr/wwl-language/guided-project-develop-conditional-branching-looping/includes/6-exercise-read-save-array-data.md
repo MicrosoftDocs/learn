@@ -1,5 +1,5 @@
 
-In this final step of our development process, we will develop the data entry validation loops for each pet characteristic and then store the new ourAnimals array data. The detailed tasks that we will complete during this exercise are:
+In this final step of your development process, you will develop the data entry validation loops for each pet characteristic and then store the new ourAnimals array data. The detailed tasks that you will complete during this exercise are:
 
 1. Read and validate species: build a loop and the inner code structure used to enter and validate the pet species.
 1. Construct pet ID: write the code that uses petCount and the species name to construct the petID value.
@@ -14,7 +14,7 @@ In this final step of our development process, we will develop the data entry va
 
 ## Build loop to read and validate the pet species
 
-In this task, we will create a `do` loop that iterates until the user enters a valid species name, either **dog** or **cat**. We will reuse our voidable string `readResult` to capture the `Console.ReadLine()` input and we will reuse the `animalSpecies` string variable that we used when generating our sample data. For the expression that's evaluated as an exit criteria for our `do` loop, we will add a new Boolean variable named `validEntry` to our app. Let's get started.
+In this task, you will create a `do` loop that iterates until the user enters a valid species name, either **dog** or **cat**. You will reuse your voidable string `readResult` to capture the `Console.ReadLine()` input and you will reuse the `animalSpecies` string variable that you used when generating your sample data. For the expression that's evaluated as an exit criteria for your `do` loop, you will add a new Boolean variable named `validEntry` to your app.
 
 1. Ensure that you have Visual Studio Code open, and that your Program.cs file is visible in the Editor.
 

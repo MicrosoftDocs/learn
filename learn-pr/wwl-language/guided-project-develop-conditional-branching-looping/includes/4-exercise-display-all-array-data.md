@@ -1,5 +1,5 @@
 
-In this step of our development process, we will write the nested looping structure and conditional code block that will be used to display all of the information in the ourAnimals array. The detailed tasks that we will complete during this exercise are:
+In this step of your development process, you will write the nested looping structure and conditional code block that will be used to display all of the information in the ourAnimals array. The detailed tasks that you will complete during this exercise are:
 
 1. Outer loop: build the outer loop that iterates through the animals in the ourAnimals array.
 1. Data check: write code that checks for existing pet data and displays the pet ID if data exists for a pet.
@@ -11,7 +11,7 @@ In this step of our development process, we will write the nested looping struct
 
 ## Build a loop to iterate through the ourAnimals array
 
-In this task, we will create the outer `for` loop that's used to iterate through the animals in the `ourAnimals` array. We will examine the relationship between the dimensions of our array and the parameters of our for loop, and we will consider the differences between using `for` statements and `foreach` statements when working with multidimensional arrays. Let's get started.
+In this task, you will create the outer `for` loop that's used to iterate through the animals in the `ourAnimals` array. You will examine the relationship between the dimensions of your array and the parameters of your `for` loop, and you will consider the differences between using `for` statements and `foreach` statements when working with multidimensional arrays.
 
 1. Ensure that you have Visual Studio Code open, and that your Program.cs file is visible in the Editor.
 
