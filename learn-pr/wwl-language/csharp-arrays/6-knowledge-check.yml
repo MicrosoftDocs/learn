@@ -20,7 +20,7 @@ quiz:
       explanation: "Incorrect. Remember - indexes are zero-based."
     - content: "`myArray[2]`."
       isCorrect: true
-      explanation: "Correct! Because indexes a zero based, 2 returns the third element in an array."
+      explanation: "Correct! Because indexes a zero based, two returns the third element in an array."
     - content: "`myArray{3}`."
       isCorrect: false
       explanation: "Incorrect. Make sure to use square brackets and zero-based indexes!"
