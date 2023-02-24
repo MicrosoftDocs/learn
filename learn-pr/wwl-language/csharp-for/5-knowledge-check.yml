@@ -2,42 +2,35 @@
 uid: learn.languages.csharp-for.knowledge-check
 title: Knowledge check
 metadata:
-  title: Check your knowledge
-  description: Review what you've learned
-  ms.date: 09/27/2019
-  author: billwagner
-  ms.author: wiwagn
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: cahowd
   ms.topic: interactive-tutorial
-  ms.prod: learning-languages
-durationInMinutes: 2
+  ms.prod: learning-azure
+durationInMinutes: 3
 quiz:
-  title: Check your knowledge
   questions:
   - content: "Which of the following `for` statements is correct?"
     choices:
     - content: "`for (int x = 20: x < 80: x++)`"
       isCorrect: false
-      explanation: "You can't use a colon in place of a semi-colon."
-    - content: "`for (int i == 0; i = 80; i++)`"
-      isCorrect: false
-      explanation: "The initializer section can't evaluate `i == 1`, and the condition section can't be set to `80`."
+      explanation: "Incorrect. A colon cannot be used as an end of statement operator."
     - content: "`for (int j = 0; j == 80; j + 1)`"
       isCorrect: false
-      explanation: "The iterator section `j + 1` causes a compilation error."
+      explanation: "Incorrect. The iterator section `j + 1` causes a compilation error."
     - content: "`for (int counter = 20; counter < 80; counter++)`"
       isCorrect: true
-      explanation: "Correct!"
-  - content: "Which statement can you use to exit out of the `for` loop?"
+      explanation: "Correct! This example show the correct syntax for initializer, condition, and iterator."
+  - content: "Which statement can be used to exit out of the `for` loop?"
     choices:
-    - content: "`end;`"
-      isCorrect: false
-      explanation: "`end` isn't a keyword in C#."
     - content: "`break;`"
       isCorrect: true
-      explanation: "Correct!"
+      explanation: "Correct! The `break` keyword can be used to exit a `for` loop."
     - content: "`exit;`"
       isCorrect: false
-      explanation: "`exit` isn't a keyword in C#."
+      explanation: "Incorrect. Exit isn't a keyword in C#."
     - content: "`return;`"
       isCorrect: false
-      explanation: "The `return` keyword would exit out of the entire method."         
+      explanation: "Incorrect. The `return` keyword would exit out of the entire method."
