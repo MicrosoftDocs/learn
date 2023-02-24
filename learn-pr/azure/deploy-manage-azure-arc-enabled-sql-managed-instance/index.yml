@@ -23,7 +23,6 @@ prerequisites: |
   -	Intermediate knowledge of Azure SQL Managed Instance.
 
 iconUrl: /learn/achievements/generic-badge.svg
-hidden: true
 levels:
   - beginner
 roles:
