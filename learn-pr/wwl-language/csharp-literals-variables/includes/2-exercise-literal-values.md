@@ -1,132 +1,168 @@
-In this exercise, you'll print out messages containing other types of data and learn why data types are so important in C#.
+
+
+In this exercise, you'll print messages containing other types of data and learn why data types are so important in C#.
 
 ## What is a literal value?
 
-A literal value is a hard-coded value that never changes. In a previous module, we displayed a literal string to the Output pane. In other words, we literally wanted that string of alphanumeric characters `H`, `e`, `l`, `l`, `o`, and so on, displayed in the Output window.
+A literal value is a constant value that never changes. Previously, you displayed a literal string to the output console. In other words, you literally wanted that string of alphanumeric characters `H`, `e`, `l`, `l`, `o`, and so on, displayed in the output console.
 
-The string data type is used whenever you have alphanumeric words, phrases, or data for presentation, not calculation; more about that in a moment.
+Use the string data type whenever you have alphanumeric words, phrases, or data for presentation, not calculation. What other kinds of literal data can you print to output?
 
-What other kinds of literal data can we print to the Output pane?
+## Exercise - Print different literal data types
 
-## Exercise - Print out different literal data types
-
-There are many data types in C#, but as you're getting started, you only need to know about five or six data types because they cover most scenarios. Let's display a literal instance of data type to the output pane.
+There are many data types in C#. But as you're getting started, you only need to know about five or six data types since they cover most scenarios. Let's display a literal instance of data type to output.
 
 > [!NOTE]
-> You may notice as you begin to work in the code window that it marks certain syntax in different colors to indicate keywords, operators, data types, and more. Begin to take notice of the colors. They can help you spot syntax errors as you enter characters, and can help you understand the code more effectively.
+> You may notice as you begin to work in the code window that it colors certain syntax in different colors to indicate keywords, operators, data types and more. Begin to take notice of the colors. It can help you spot syntax errors as you enter characters, and can help you understand the code more effectively.
 
-### Step 1: Write a char literal to the console
+### Use character literals
 
-If we only wanted a single alphanumeric character printed to screen, we could create a **char literal** by surrounding one alphanumeric character in single-quotes.
+If you only wanted a single alphanumeric character printed to screen, you could create a **char literal** by surrounding one alphanumeric character in single quotes. The term `char` is short for *character*. In C#, this data type is officially named "char", but frequently referred to as a "character".
 
-Add the following line of code in the code editor:
+1. Add the following line of code in the code editor:
 
-```csharp-interactive
-Console.WriteLine('b');
-```
+    ```csharp
+    Console.WriteLine('b');
+    ```
 
-If you run the code, you'll get the following output:
+1. Observe the code you entered. 
 
-```output
-b
-```
+    Notice that the letter `b` is surrounded with single quotation marks `'b'`. Single quotes create a character literal. Recall that using double quotation marks creates a `string` data type.
+
+1. Press the green Run button to run your code. You should see the following result in the output window:
+
+    ```Output
+    b
+    ```
 
 If you enter the following code:
 
-```csharp-interactive
+```csharp
 Console.WriteLine('Hello World!');
 ```
 
-You'd get the following error when you run the code:
+You would get the following error:
 
-```output
+```Output
 (1,19): error CS1012: Too many characters in character literal
 ```
 
-The C# compiler was expecting a single character (since you used the character literal syntax), but you supplied 12 characters instead!
+Notice the single quotation marks surrounding `Hello World!`. When you use single quotation marks, the C# compiler expects a single character. However, in this case, the character literal syntax was used, but 12 characters were supplied instead!
 
-Just like the string data type, you'll use `char` whenever you have a single alphanumeric character for presentation (not calculation).
+Just like the `string` data type, you use `char` whenever you have a single alphanumeric character for presentation (not calculation). 
 
-The term *char* is short for *character*. In C#, they're officially referred to as "char", but frequently referred to as a "character".
+### Use integer literals
 
-### Step 2: Write an int literal to the console
+If you want to display a numeric whole number (no fractions) value in the output console, you can use an **int literal**. The term `int` is short for integer, which you may recognize from studying math. In C#, this data type is officially named "int", but frequently referred to as "integer". An `int` literal requires no other operators like the `string` or `char`.
 
-If you want to print a numeric whole number (no fractions) value to Output, you can use an **int literal**. An `int` literal requires no additional operators like the `string` or `char`.
+1. Add the following line of code in the code editor:
 
-Add the following line of code in the code editor:
+    ```csharp
+    Console.WriteLine(123);
+    ```
 
-```csharp-interactive
-Console.WriteLine(123);
+1. Press the green Run button to run your code. You should see the following result in the output console:
+
+    ```Output
+    123
+    ```
+
+### Use floating-point literals
+
+A floating-point number is a number that contains a decimal, for example 3.14159. C# supports three data types to represent decimal numbers: `float`, `double`, and `decimal`. Each type supports varying degrees of precision.
+
+```Output
+Float Type    Precision
+----------------------------
+float         ~6-9 digits
+double        ~15-17 digits
+decimal        28-29 digits
 ```
 
-If you run the code, you'll get the following output:
+Here, precision reflects the number of digits past the decimal that are accurate.
 
-```output
-123
-```
+1. Add the following line of code in the code editor:
 
-The term *int* is short for integer, which you may recognize from studying math. In C#, they're officially referred to as "int", but frequently known by their alter ego "integer".
+    ```csharp
+    Console.WriteLine(0.25F);
+    ```
 
-### Step 3: Write a decimal literal to the console
+    To create a `float` literal, append the letter `F` after the number. In this context, the `F` is called a *literal suffix*. The literal suffix tells the compiler you wish to work with a value of `float` type. You can use either a lower-case `f` or upper-case `F` as the literal suffix for a `float`.
 
-If we wanted to print a number that includes values after the decimal point, we could use a **decimal literal**.
+1. Press the green Run button to run your code. You should see the following result in the output console:
 
-To create a decimal literal, append the letter `m` after the number. In this context, the `m` is called a *literal suffix*. The literal suffix tells the compiler you wish to work with a value of type `decimal`.
+    ```Output
+    0.25
+    ```
 
-Add the following line of code in the code editor:
+    Notice that the `float` data type is the least precise, so it's best to use this data type for fixed fractional values to avoid unexpected computation errors.
 
-```csharp-interactive
-Console.WriteLine(12.30m);
-```
+1. Add the following line of code in the code editor:
 
-If you run the code, you'll get the following output:
+    ```csharp
+    Console.WriteLine(2.625);
+    ```
+    
+    To create a `double` literal, just enter a decimal number. The compiler defaults to a `double` literal when a decimal number is entered without a literal suffix.
 
-```output
-12.30
-```
+1. Press the green Run button to run your code. You should see the following result in the output window:
 
-Without the literal suffix `m`, the decimal number in the previous example will be treated as type `double` by the compiler and the output will be `12.3`.
+    ```Output
+    2.625
+    ```
 
-> [!NOTE]
-> You can use either a lower-case `m` or upper-case `M` as the literal suffix for a decimal.
+1. Add the following line of code in the code editor:
 
-### Step 4: Write a bool literal to the console
+    ```csharp
+    Console.WriteLine(12.39816m);
+    ```
+    
+    To create a decimal literal, append the letter `m` after the number. In this context, the `m` is called a *literal suffix*. The literal suffix tells the compiler you wish to work with a value of `decimal` type. You can use either a lower-case `m` or upper-case `M` as the literal suffix for a `decimal`.
 
-If we wanted to print a value representing either `true` or `false`, we could use a **bool literal**.
 
-Add the following lines of code in the code editor:
+1. Press the green Run button to run your code. You should see the following result in the output console:
 
-```csharp-interactive
-Console.WriteLine(true);
-Console.WriteLine(false);
-```
+    ```Output
+    12.39816
+    ```
 
-This will produce the following output:
+### Use Boolean literals
 
-```output
-True
-False
-```
+If you wanted to print a value representing either `true` or `false`, you could use a **bool literal**.
 
-The term *bool* is short for *boolean*, which you may also recognize from studying math. In C#, they're officially referred to as "bool", but often developers use the term "boolean".
+The term `bool` is short for *Boolean*. In C#, they're officially referred to as "bool", but often developers use the term "Boolean".
 
-The bool literals represent the idea of truth and falsehood. We'll use bool values extensively when we start to add decision logic to our applications. We'll evaluate expressions to see whether the expression is true or false.
+1. Add the following lines of code in the code editor:
+
+    ```csharp
+    Console.WriteLine(true);
+    Console.WriteLine(false);
+    ```
+
+1. Press the green Run button to run your code. You should see the following result in the output console:
+
+    ```Output
+    True
+    False
+    ```
+
+The `bool` literals represent the idea of truth and falsehood. You'll use `bool` values extensively when you start to add decision logic to your applications. You'll evaluate expressions to see whether the expression is true or false.
 
 ### Why emphasize data types?
 
-Data types play a central role in C#. In fact, the emphasis on data types is one of the key distinguishing features of C# compared to other languages like Python and JavaScript. The designers of C# believed they could help developers avoid common software bugs by *enforcing* data types. You'll see this concept unfold as you learn more about C#.
+Data types play a central role in C#. In fact, the emphasis on data types is one of the key distinguishing features of C# compared to other languages like JavaScript. The designers of C# believed they can help developers avoid common software bugs by *enforcing* data types. You'll see this concept unfold as you learn more about C#.
 
-### Presentation versus calculation and evaluation
+### Data types define capabilities
 
-Earlier we said that `string`s and `char`s are used for "presentation, not calculation". If you need to perform a mathematical operation on numeric values, you should use an `int` or `decimal`. If you have data that's used for presentation or reference purposes only, you should use a `string` or `char` data type.
+Earlier, you saw that `string`s and `char`s are used for "presentation, not calculation". If you need to perform a mathematical operation on numeric values, you should use an `int` or `decimal`. If you have data that is used for presentation or text manipulation, you should use a `string` or `char` data type.
 
-Suppose you needed to collect data from a user, like a phone number or postal code. Depending on the country/region where you live, that data may consist of numeric characters. However, since you rarely perform mathematical calculations on phone numbers and postal codes, you should prefer to use a `string` data type when working with them.
+Suppose you needed to collect data from a user, like a phone number or postal code. Depending on the country where you live, that data may consist of numeric characters. However, since you rarely perform mathematical calculations on phone numbers and postal codes, you should prefer to use a `string` data type when working with them.
 
-We could say the same about `bool`. If you need to work with the words `"true"` and `"false"` in your application, you'd use a `string`. However, if you need to work with the concept of `true` or `false` when performing an evaluation, you'd use a `bool`. This should become clearer as we perform evaluations in other modules.
+The same can be said of `bool`. If you need to work with the words `"true"` and `"false"` in your application, you would use a `string`. However, if you need to work with the concept of `true` or `false` when performing an evaluation, you use a `bool`.
 
 It's important to know that these values may look like their string literal equivalents. In other words, you may think these statements are the same:
 
-```csharp-interactive
+```csharp
 Console.WriteLine("123");
 Console.WriteLine(123);
 
@@ -134,14 +170,14 @@ Console.WriteLine("true");
 Console.WriteLine(true);
 ```
 
-However, that's merely how they're printed to screen. The fact is that the kinds of things you can do with the underlying `int` or `bool` will be different than their `string` equivalent.
+However, it's only the displayed output that appears to be similar. The fact is that the kinds of things you can do with the underlying `int` or `bool` will be different than their `string` equivalent.
 
 ## Recap
 
-The main takeaway is that there are many data types, but we'll focus on just a few for now:
+The main takeaway is that there are many data types, but you'll focus on just a few for now:
 
 - `string` for words, phrases, or any alphanumeric data for presentation, not calculation
 - `char` for a single alphanumeric character
 - `int` for a whole number
-- `decimal` for a number with a decimal
-- `bool` for a true/false value
+- `decimal` for a number with a fractional component
+- `bool` for a `true`/`false` value

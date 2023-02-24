@@ -1,3 +1,4 @@
+
 In the world we live in today, there is always the chance that your system may be hacked. What do you do at this point to find and evaluate a breach? Microsoft Sentinel is a tool to help you locate a breach and track what the intruder did while on your systems.
 
 ## Scenario
@@ -15,7 +16,6 @@ Managing the secure operation of Azure is a part of [Exam AZ-500: Microsoft Azur
 Manage Security Operations (25-30%)
 
  -  Monitor security by using Microsoft Sentinel
-    
      -  Create and customize alerts
      -  Configure data sources to Microsoft Sentinel
      -  Evaluate results from Microsoft Sentinel

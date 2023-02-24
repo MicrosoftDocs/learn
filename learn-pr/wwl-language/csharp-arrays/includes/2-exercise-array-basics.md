@@ -1,245 +1,353 @@
-Suppose we work in the anti-fraud department of a company that matches online sellers with commission-based advertisers.  Our advertisers have notified us of a rash of recent credit card chargebacks.  These chargebacks occur a few months after commissions were paid out, long after the thieves have vanished. We've been asked to review several orders in hopes of identifying markers of fraud. Maybe our company can use those markers in the future to identify potential fraudulent purchases.
 
-We need to work with a sequence of Order IDs.  These orders are related inasmuch as we want to identify and analyze them looking for common characteristics. Because we don't always know in advance how many orders we'll need to review, we can't create individual variables to hold each Order ID. How can we create a data structure to hold multiple related values?
+Arrays can be used to store multiple values of the same type in a single variable. The values stored in an array are generally related. For example, a list of student names could be stored in a string array named `students`.
+
+Your work in the security department is focused on finding a pattern for fraudulent orders. Your code will review past customer orders to identify markers associated with fraudulent orders. Your company hopes the markers can be used to identify potential fraudulent purchase orders in the future before they are processed. Since you don't always know in advance how many orders you'll need to review, you can't create individual variables to hold each Order ID. How can you create a data structure to hold multiple related values?
+
+In this exercise, you will use arrays to store and analyze a sequence of Order IDs.
 
 ## What is an array?
 
-An array is a sequence of individual data elements accessible through a single variable name. You use a zero-based numeric index to access each element of an array. As you'll see, arrays allow us to collect together similar data that shares a common purpose or characteristics in a single data structure for easier processing.
+An array is a sequence of individual data elements accessible through a single variable name. You use a zero-based numeric index to access each element of an array. As you'll see, arrays allow you to collect together similar data that shares a common purpose or characteristics in a single data structure for easier processing.
 
-## Declaring arrays
+## Declaring arrays and accessing array elements
 
 An array is a special type of variable that can hold multiple values of the same data type. The declaration syntax is slightly different because you have to specify both the data type and the size of the array.
 
-### Step 1 - Declare a new array
+### Prepare your coding environment
 
-To declare a new array of strings that will hold three elements, type the following C# statement into the .NET Editor.
+This module includes hands-on activities that guide you through the process of building and running sample code. You are encouraged to complete these activities using Visual Studio Code as your development environment. Using Visual Studio Code for these activities will help you to become more comfortable writing and running code in a developer environment that's used by professionals worldwide.
 
-```csharp-interactive
-string[] fraudulentOrderIDs = new string[3];
-```
+1. Open Visual Studio Code.
 
-The `new` operator creates a new instance of an array in the computer's memory that can hold three string values. For more information about the `new` keyword, see the module "Call methods from the .NET Class Library using C#".
+    You can use the Windows Start menu (or equivalent resource for another OS) to open Visual Studio Code.
 
-Notice that the first set of square brackets `[]` merely tells the compiler that the variable named `fraudulentOrderIDs` will be an array, but the second set of square brackets `[3]` contains the number of elements that the array will hold.
+1. On the Visual Studio Code **File** menu, select **Open Folder**.
 
-> [!NOTE]
-> While this example only declares an array of strings, you can create an array of every data type including primitives like int and bool as well as more complex data types like classes. This example uses the simplicity of strings to minimize the number of new ideas you need to grasp as you're getting started.
+1. In the **Open Folder** dialog, navigate to the Windows Desktop folder.
 
-## Assigning Values to Elements of an Array
+    If you have a different folder location where you keep code projects, you can use that folder location instead. For this training, the important thing is to have a location that’s easy to locate and remember.
 
-At this point, we've declared an array of strings, but each element of the array is empty. To access an element of an array, you use a numeric zero-based index inside of square brackets.
+1. In the **Open Folder** dialog, select **Select Folder**.
 
-You assign a value using the `=` assignment value as if it were a regular variable.
+    If you see a security dialog asking if you trust the authors, select **Yes**.
 
-### Step 2 - Assign values to elements on an array
+1. On the Visual Studio Code **Terminal** menu, select **New Terminal**.
 
-Modify the code from Step 1 to match the following code snippet. The following code will assign Order IDs to each element of the array.
+    Notice that a command prompt in the Terminal panel displays the folder path for the current folder. For example:  
 
-```csharp-interactive
-string[] fraudulentOrderIDs = new string[3];
+    ```dos
+    C:\Users\someuser\Desktop>
+    ```
 
-fraudulentOrderIDs[0] = "A123";
-fraudulentOrderIDs[1] = "B456";
-fraudulentOrderIDs[2] = "C789";
-```
+    > [!NOTE]
+    > If you are working on your own PC rather than in a sandbox or hosted environment and you have completed other Microsoft Learn modules in this C# series, you may have already created a project folder for code samples. If that's the case, you can skip over the next step, which is used to create a console app in the TestProject folder.
 
-### Step 3 - Attempt to use an index that is out of bounds of the array
+1. At the Terminal command prompt, to create a new console application in a specified folder, type **dotnet new console -o ./CsharpProjects/TestProject** and then press Enter.
 
-It might not seem intuitive at first, but it's important to remember that we're declaring the count of elements in the array. However, we access each element of the array starting with zero. So, to access the second item in the array, we use index `1`.
+    This .NET CLI command uses a .NET program template to create a new C# console application project in the specified folder location. The command creates the CsharpProjects and TestProject folders for you, and uses TestProject as the name of your `.csproj` file.
 
-It's common for beginners to forget that arrays are zero based and attempt to access an element of the array that doesn't exist. When this happens, you'll experience a runtime exception that you attempted to access an element that is outside the boundary of the array.
+1. In the EXPLORER panel, expand the **CsharpProjects** folder.
 
-Let's intentionally break our application by attempting to access a fourth element of our array using the index `3`. Modify the code from Step 2 by adding the following line of code.
+    You should see the TestProject folder and two files, a C# program file named Program.cs and a C# project file named TestProject.csproj.
 
-```csharp
-fraudulentOrderIDs[3] = "D000";
-```
+1. In the EXPLORER panel, to view your code file in the Editor panel, select **Program.cs**.
 
-The entire code example should now match what you see that follows.
+1. Delete the existing code lines.
 
-```csharp-interactive
-string[] fraudulentOrderIDs = new string[3];
+    You'll be using this C# console project to create, build, and run code samples during this module.
 
-fraudulentOrderIDs[0] = "A123";
-fraudulentOrderIDs[1] = "B456";
-fraudulentOrderIDs[2] = "C789";
-fraudulentOrderIDs[3] = "D000";
-```
+1. Close the Terminal panel.
 
-When you run the app, you'll get a long error message. Focus on the first two lines. You'll see the following error message. Pay particular attention to the sentence that includes the word `array`.
+### Declare a new array
 
-```output
-System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.IndexOutOfRangeException: Index was outside the bounds of the array.
-```
+1. To declare a new array of strings that will hold three elements, enter the following code:
 
-Now, comment out the line of code you just added in this step.
+    ```c#
+    string[] fraudulentOrderIDs = new string[3];
+    ```
 
-```csharp
-// fraudulentOrderIDs[3] = "D000";
-```
+1. Take a minute to examine your code.
 
-## Getting Values of Elements in an Array
+    The `new` operator creates a new instance of an array in the computer's memory that can hold three string values. For more information about the `new` keyword, see the module "Call methods from the .NET Class Library using C#".
 
-You get a value from an element of an array in the same manner. Use the index of the element to retrieve its value.
+    Notice that the first set of square brackets `[]` merely tells the compiler that the variable named `fraudulentOrderIDs` will be an array, but the second set of square brackets `[3]` contains the number of elements that the array will hold.
 
-### Step 4 - Retrieve values of an array
+    > [!NOTE]
+    > This example demonstrates how to declare an array of strings, however, you can create an array of every data type including primitives like `int` and `bool` as well as more complex data types like classes. This example uses the simplicity of strings to minimize the number of new ideas you need to grasp as you're getting started.
 
-Modify the code from Step 3 to write out the value of each fraudulent Order ID using string interpolation. Your code should match the following passage of code.
+### Assign values to elements of an array
 
-```csharp-interactive
-string[] fraudulentOrderIDs = new string[3];
+At this point, you've declared an array of strings, but each element of the array is empty. To access an element of an array, you use a numeric zero-based index inside of square brackets. You can assign a value to an array element using the `=` as if it were a regular variable.
 
-fraudulentOrderIDs[0] = "A123";
-fraudulentOrderIDs[1] = "B456";
-fraudulentOrderIDs[2] = "C789";
-// fraudulentOrderIDs[3] = "D000";
+1. To assign Order ID values to your `fraudulentOrderIDs` array, update your code as follows:
 
-Console.WriteLine($"First: {fraudulentOrderIDs[0]}");
-Console.WriteLine($"Second: {fraudulentOrderIDs[1]}");
-Console.WriteLine($"Third: {fraudulentOrderIDs[2]}");
-```
+    ```c#
+    string[] fraudulentOrderIDs = new string[3];
+    
+    fraudulentOrderIDs[0] = "A123";
+    fraudulentOrderIDs[1] = "B456";
+    fraudulentOrderIDs[2] = "C789";
+    ```
 
-Run the code.  You should see the following output.
+1. Take a minute to examine your code.
 
-```output
-First: A123
-Second: B456
-Third: C789
-```
+    Notice that you're using the name of the array to access array elements. Each element is accessed individually by specifying zero-based index number inside the square brackets.
 
-### Step 5 - Reassign the value of an array
+    Since your array is declared as a string, the values that you assign must also be strings. In this scenario, you are assigning Order IDs to the elements of the array.
 
-The elements of an array are just like any other variable value inasmuch as you can assign, retrieve, and reassign a value to each element of the array.
+### Attempt to use an index that is out of bounds of the array
 
-Add the following lines of code inside to bottom of the .NET Editor. Here, you'll reassign the value of the first element in the array, then print it out.
+It might not seem intuitive at first, but it's important to remember that you're declaring the count of elements in the array. However, you access each element of the array starting with zero. So, to access the second item in the array, you use index `1`.
 
-```csharp
-fraudulentOrderIDs[0] = "F000";
+It's common for beginners to forget that arrays are zero-based and attempt to access an element of the array that doesn't exist. When this happens, you'll experience a runtime exception informing you that you attempted to access an element that is outside the boundary of the array.
 
-Console.WriteLine($"Reassign First: {fraudulentOrderIDs[0]}");
-```
+To intentionally "break" your application, attempt to access a fourth element of your array using index value of `3`.
 
-Your .NET Editor should match the following passage of code.
+1. At the bottom of your code file, enter the following code line:
 
-```csharp-interactive
-string[] fraudulentOrderIDs = new string[3];
+    ```c#
+    fraudulentOrderIDs[3] = "D000";
+    ```
 
-fraudulentOrderIDs[0] = "A123";
-fraudulentOrderIDs[1] = "B456";
-fraudulentOrderIDs[2] = "C789";
-// fraudulentOrderIDs[3] = "D000";
+1. Ensure that your code matches the following:
 
-Console.WriteLine($"First: {fraudulentOrderIDs[0]}");
-Console.WriteLine($"Second: {fraudulentOrderIDs[1]}");
-Console.WriteLine($"Third: {fraudulentOrderIDs[2]}");
+    ```c#
+    string[] fraudulentOrderIDs = new string[3];
+    
+    fraudulentOrderIDs[0] = "A123";
+    fraudulentOrderIDs[1] = "B456";
+    fraudulentOrderIDs[2] = "C789";
+    fraudulentOrderIDs[3] = "D000";
+    ```
 
-fraudulentOrderIDs[0] = "F000";
+1. On the Visual Studio Code **File** menu, click **Save**.
 
-Console.WriteLine($"Reassign First: {fraudulentOrderIDs[0]}");
-```
+1. In the EXPLORER panel, to open a Terminal at your TestProject folder location, right-click **TestProject**, and then select **Open in Integrated Terminal**.
 
-When you run the code, you should see the following output.
+    A Terminal panel should open, and should include a command prompt showing that the Terminal is open to your TestProject folder location.
 
-```output
-First: A123
-Second: B456
-Third: C789
-Reassign First: F000
-```
+1. At the Terminal command prompt, to compile your code, type **dotnet run** and then press Enter.
 
-## Initializing an Array
+    You should see the following message:
 
-Just like you can initialize a variable at the time you declare it, you can initialize a new array at the time you declare it using a special syntax featuring curly braces.
+    ```Output
+    Build succeeded.        
+        0 Warning(s)        
+        0 Error(s)
+    ```
 
-### Step 6 - Initialize an array
+1. At the Terminal command prompt, to run your code, type **dotnet run** and then press Enter.
 
-Use a multi-line comment (`/* ... */`) to comment out the lines where you declare the `fraudulentOrderIDs` variable and assign each of its elements a value. Then, add the following line that declares and initializes the array with the same values all in a single line of code.
+    When you run the app, you'll get the following runtime error message:
 
-```csharp
-string[] fraudulentOrderIDs = { "A123", "B456", "C789" };
-```
+    ```Output
+    Unhandled exception. System.IndexOutOfRangeException: Index was outside the bounds of the array.     
+       at Program.<Main>$(String[] args) in C:\Users\someuser\Desktop\CsharpProjects\TestProject\Program.cs:line 6
+    ```
 
-So, your code should now match what you see in the following passage.
+    Notice the following:
 
-```csharp-interactive
-/*
-string[] fraudulentOrderIDs = new string[3];
+    - Error message: `System.IndexOutOfRangeException: Index was outside the bounds of the array.`
+    - Error location: `Program.cs:line 6`
 
-fraudulentOrderIDs[0] = "A123";
-fraudulentOrderIDs[1] = "B456";
-fraudulentOrderIDs[2] = "C789";
-// fraudulentOrderIDs[3] = "D000";
-*/
+1. Comment out the line that generated the runtime error.
 
-string[] fraudulentOrderIDs = { "A123", "B456", "C789" };
+    ```c#
+    // fraudulentOrderIDs[3] = "D000";
+    ```
 
-Console.WriteLine($"First: {fraudulentOrderIDs[0]}");
-Console.WriteLine($"Second: {fraudulentOrderIDs[1]}");
-Console.WriteLine($"Third: {fraudulentOrderIDs[2]}");
+You've seen how to assign a value to an array element. Now look at how to access a value that's being stored in an array element.
 
-fraudulentOrderIDs[0] = "F000";
+### Retrieve values from elements of an array
 
-Console.WriteLine($"Reassign First: {fraudulentOrderIDs[0]}");
-```
+Accessing the value of an array element works the same way as assigning a value to an array element. You simply specify the index of the element whose value you want to retrieve.
 
-When you run the application, there will be no change to the output.
+1. To write the value of each fraudulent Order ID, update your code as follows:
 
-```output
-First: A123
-Second: B456
-Third: C789
-Reassign First: F000
-```
+    ```c#
+    string[] fraudulentOrderIDs = new string[3];
+    
+    fraudulentOrderIDs[0] = "A123";
+    fraudulentOrderIDs[1] = "B456";
+    fraudulentOrderIDs[2] = "C789";
+    // fraudulentOrderIDs[3] = "D000";
+    
+    Console.WriteLine($"First: {fraudulentOrderIDs[0]}");
+    Console.WriteLine($"Second: {fraudulentOrderIDs[1]}");
+    Console.WriteLine($"Third: {fraudulentOrderIDs[2]}");
+    ```
 
-## Getting the Size of an Array
+1. On the Visual Studio Code **File** menu, click **Save**.
+
+1. In the EXPLORER panel, to open a Terminal at your TestProject folder location, right-click **TestProject**, and then select **Open in Integrated Terminal**.
+
+1. At the Terminal command prompt, type **dotnet run** and then press Enter.
+
+    You should see the following message:
+
+    ```Output
+    First: A123
+    Second: B456
+    Third: C789
+    ```
+
+### Reassign the value of an array
+
+The elements of an array are just like any other variable value. You can assign, retrieve, and reassign a value to each element of the array.
+
+1. At the end of your code file, to reassign and then print the value of the first array element, enter the following code:
+
+    ```c#
+    fraudulentOrderIDs[0] = "F000";
+    
+    Console.WriteLine($"Reassign First: {fraudulentOrderIDs[0]}");
+    ```
+
+1. Ensure that your code matches the following:
+
+    ```c#
+    string[] fraudulentOrderIDs = new string[3];
+    
+    fraudulentOrderIDs[0] = "A123";
+    fraudulentOrderIDs[1] = "B456";
+    fraudulentOrderIDs[2] = "C789";
+    // fraudulentOrderIDs[3] = "D000";
+    
+    Console.WriteLine($"First: {fraudulentOrderIDs[0]}");
+    Console.WriteLine($"Second: {fraudulentOrderIDs[1]}");
+    Console.WriteLine($"Third: {fraudulentOrderIDs[2]}");
+    
+    fraudulentOrderIDs[0] = "F000";
+    
+    Console.WriteLine($"Reassign First: {fraudulentOrderIDs[0]}");
+    ```
+
+1. On the Visual Studio Code **File** menu, click **Save**.
+
+1. In the EXPLORER panel, to open a Terminal at your TestProject folder location, right-click **TestProject**, and then select **Open in Integrated Terminal**.
+
+1. At the Terminal command prompt, type **dotnet run** and then press Enter.
+
+    You should see the following message:
+
+    ```Output
+    First: A123
+    Second: B456
+    Third: C789
+    Reassign First: F000
+    ```
+
+### Initialize an array
+
+You can initialize an array during declaration just like would a regular variable. However, to initialize the elements of the array, you use a special syntax featuring curly braces.
+
+1. Comment out the lines where you declare the `fraudulentOrderIDs` variable.
+
+    You can use a multi-line comment (`/* ... */`) to comment out the declaration of `fraudulentOrderIDs` and the lines used to assign values to the array elements.
+
+1. To declare the array initialize values in a single statement, enter the following code:
+
+    ```c#
+    string[] fraudulentOrderIDs = { "A123", "B456", "C789" };
+    ```
+
+1. Ensure that your code matches the following:
+
+    ```c#
+    /*
+    string[] fraudulentOrderIDs = new string[3];
+    
+    fraudulentOrderIDs[0] = "A123";
+    fraudulentOrderIDs[1] = "B456";
+    fraudulentOrderIDs[2] = "C789";
+    // fraudulentOrderIDs[3] = "D000";
+    */
+    
+    string[] fraudulentOrderIDs = { "A123", "B456", "C789" };
+    
+    Console.WriteLine($"First: {fraudulentOrderIDs[0]}");
+    Console.WriteLine($"Second: {fraudulentOrderIDs[1]}");
+    Console.WriteLine($"Third: {fraudulentOrderIDs[2]}");
+    
+    fraudulentOrderIDs[0] = "F000";
+    
+    Console.WriteLine($"Reassign First: {fraudulentOrderIDs[0]}");
+    ```
+
+1. Take a minute to examine the declaration statement.
+
+    Notice that this syntax is both compact and easy to read. When you run the application, there should be no change to the output.
+
+1. On the Visual Studio Code **File** menu, click **Save**.
+
+1. In the EXPLORER panel, to open a Terminal at your TestProject folder location, right-click **TestProject**, and then select **Open in Integrated Terminal**.
+
+1. At the Terminal command prompt, type **dotnet run** and then press Enter.
+
+    You should see the same message as before:
+
+    ```Output
+    First: A123
+    Second: B456
+    Third: C789
+    Reassign First: F000
+    ```
+
+### Use the Length property of an array
 
 Depending on how the array is created, you may not know in advance how many elements an array contains. To determine the size of an array, you can use the `Length` property.
 
-### Step 7 - Print the number of fraudulent orders using the array's Length property
+> [!NOTE]
+> The `Length` property of an array is not zero-based.
 
-Modify the code from Step 6 adding the following line of code to the bottom of the .NET Editor.
+1. At the end of your code file, to report the number of fraudulent orders, enter the following code:
 
-```csharp
-Console.WriteLine($"There are {fraudulentOrderIDs.Length} fraudulent orders to process.");
-```
-Your code should now match the following code passage.
+    ```c#
+    Console.WriteLine($"There are {fraudulentOrderIDs.Length} fraudulent orders to process.");
+    ```
 
-```csharp-interactive
-/*
-string[] fraudulentOrderIDs = new string[3];
+    This code uses the array's `Length` property, an integer, to return the number of elements in your `fraudulentOrderIDs` array.
 
-fraudulentOrderIDs[0] = "A123";
-fraudulentOrderIDs[1] = "B456";
-fraudulentOrderIDs[2] = "C789";
-// fraudulentOrderIDs[3] = "D000";
-*/
+1. Ensure that your code matches the following:
 
-string[] fraudulentOrderIDs = { "A123", "B456", "C789" };
+    ```c#
+    /*
+    string[] fraudulentOrderIDs = new string[3];
+    
+    fraudulentOrderIDs[0] = "A123";
+    fraudulentOrderIDs[1] = "B456";
+    fraudulentOrderIDs[2] = "C789";
+    // fraudulentOrderIDs[3] = "D000";
+    */
+    
+    string[] fraudulentOrderIDs = { "A123", "B456", "C789" };
+    
+    Console.WriteLine($"First: {fraudulentOrderIDs[0]}");
+    Console.WriteLine($"Second: {fraudulentOrderIDs[1]}");
+    Console.WriteLine($"Third: {fraudulentOrderIDs[2]}");
+    
+    fraudulentOrderIDs[0] = "F000";
+    
+    Console.WriteLine($"Reassign First: {fraudulentOrderIDs[0]}");
+    
+    Console.WriteLine($"There are {fraudulentOrderIDs.Length} fraudulent orders to process.");
+    ```
 
-Console.WriteLine($"First: {fraudulentOrderIDs[0]}");
-Console.WriteLine($"Second: {fraudulentOrderIDs[1]}");
-Console.WriteLine($"Third: {fraudulentOrderIDs[2]}");
+1. Save the changes to your Program.cs file, and then run the application.
 
-fraudulentOrderIDs[0] = "F000";
+    You should see the following output:
 
-Console.WriteLine($"Reassign First: {fraudulentOrderIDs[0]}");
-
-Console.WriteLine($"There are {fraudulentOrderIDs.Length} fraudulent orders to process.");
-```
-
-When you run the code, you should see the following output:
-
-```output
-First: A123
-Second: B456
-Third: C789
-Reassign First: F000
-There are 3 fraudulent orders to process.
-```
+    ```Output
+    First: A123
+    Second: B456
+    Third: C789
+    Reassign First: F000
+    There are 3 fraudulent orders to process.
+    ```
 
 ## Recap
 
-Here's the most important things to remember when working with arrays.
+Here's the most important things to remember when working with arrays:
 
 - An array is a special variable that holds a sequence of related data elements.
 - You should memorize the basic format of an array variable declaration.

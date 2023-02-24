@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-switch-case.challenge
-title: Challenge
+title: Exercise - Complete a challenge activity using switch statements
 metadata:
-  title: Challenge
-  description: Use what you learned in this module to solve a real life coding challenge.
-  ms.date: 09/26/2019
-  author: billwagner
-  ms.author: wiwagn
+  title: Exercise - Complete a challenge activity using switch statements
+  description: "Exercise - Complete a challenge activity using switch statements"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 5
-azureSandbox: false
-interactive: csharp
+durationInMinutes: 9
 content: |
   [!include[](includes/3-challenge.md)]
