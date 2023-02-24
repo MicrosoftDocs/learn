@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.install-configure-visual-studio-code.exercise-download-install-vscode
+uid: learn.wwl.install-configure-visual-studio-code.exercise-download-install-visual-studio-code
 title: Exercise - Download and install Visual Studio Code
 metadata:
   title: Exercise - Download and install Visual Studio Code
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 4
 content: |
-  [!include[](includes/2-exercise-download-install-vscode.md)]
+  [!include[](includes/2-exercise-download-install-visual-studio-code.md)]

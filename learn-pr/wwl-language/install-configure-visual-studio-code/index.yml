@@ -30,10 +30,10 @@ subjects:
 - development-tools
 units:
 - learn.wwl.install-configure-visual-studio-code.introduction
-- learn.wwl.install-configure-visual-studio-code.exercise-download-install-vscode
+- learn.wwl.install-configure-visual-studio-code.exercise-download-install-visual-studio-code
 - learn.wwl.install-configure-visual-studio-code.examine-visual-studio-code-user-interface
 - learn.wwl.install-configure-visual-studio-code.exercise-explore-visual-studio-code-user-interface
-- learn.wwl.install-configure-visual-studio-code.exercise-configure-vscode
+- learn.wwl.install-configure-visual-studio-code.exercise-configure-visual-studio-code
 - learn.wwl.install-configure-visual-studio-code.exercise-install-dotnet
 - learn.wwl.install-configure-visual-studio-code.exercise-create-build-run-app
 - learn.wwl.install-configure-visual-studio-code.knowledge-check

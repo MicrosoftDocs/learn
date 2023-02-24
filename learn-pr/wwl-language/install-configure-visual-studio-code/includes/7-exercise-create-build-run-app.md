@@ -43,7 +43,7 @@ To begin, you create a console application in a folder location that's easy to f
 
 1. On the Visual Studio Code **Terminal** menu, select **New Terminal**.
 
-    ![Screenshot showing the command prompt in the Visual Studio Code terminal panel](../media/visual-studio-code-terminal-panel.png)
+    ![Screenshot showing the command prompt in the Visual Studio Code terminal panel.](../media/visual-studio-code-terminal-panel.png)
 
     Notice that a command prompt in the Terminal panel displays the folder path for the current folder. For example:  
 
@@ -53,7 +53,7 @@ To begin, you create a console application in a folder location that's easy to f
 
 1. At the Terminal command prompt, to create a new console application in a specified folder, type **dotnet new console -o ./CsharpProjects/TestProject** and then press Enter.
 
-    ![Screenshot showing a command being entered in the Visual Studio Code terminal panel](../media/visual-studio-code-terminal-command.png)
+    ![Screenshot showing a command being entered in the Visual Studio Code terminal panel.](../media/visual-studio-code-terminal-command.png)
 
     This .NET CLI command uses a .NET program template to create a new C# console application project in the specified folder location. The command creates the CsharpProjects and TestProject folders for you, and uses TestProject as the name of your `.csproj` file.
 
@@ -78,7 +78,7 @@ In this task, you use the EXPLORER view to open your code project folder, custom
 
 1. In the Visual Studio Code EXPLORER view, right-click **TestProject**, and then select **Open in integrated Terminal**.
 
-    ![Screenshot showing a command being entered in the Visual Studio Code integrated terminal panel](../media/visual-studio-code-explorer-view-open-in-integrated-terminal.png)
+    ![Screenshot showing a command being entered in the Visual Studio Code integrated terminal panel.](../media/visual-studio-code-explorer-view-open-in-integrated-terminal.png)
 
     > [!IMPORTANT]
     > The command prompt in the integrated Terminal panel shows the folder location where the command will run. Before running a `build` or `run` command, you must ensure that the Terminal is open to your project folder.
@@ -101,7 +101,7 @@ In this task, you use the EXPLORER view to open your code project folder, custom
     dotnet build
     ```
 
-    ![Screenshot showing the dotnet build command entered in the Visual Studio Code terminal panel](../media/visual-studio-code-terminal-command-dotnet-build.png)
+    ![Screenshot showing the dotnet build command entered in the Visual Studio Code terminal panel.](../media/visual-studio-code-terminal-command-dotnet-build.png)
 
     The `dotnet build` command builds the project and its dependencies into a set of binaries. The binaries include the project's code in Intermediate Language (IL) files with a .dll extension. Depending on the project type and settings, other files may also be included. If you're curious, you can find the TestProject.dll file in the EXPLORER panel at a folder location that's similar to the following path:
 

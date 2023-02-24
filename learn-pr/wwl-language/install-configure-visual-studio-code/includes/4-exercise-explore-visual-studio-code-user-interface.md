@@ -36,7 +36,7 @@ In this exercise, you open Visual Studio Code and complete a quick tour of the I
     - Accounts
     - Manage
 
-    ![Screenshot showing Visual Studio Code Activity bar](../media/visual-studio-code-activity-bar.png)
+    ![Screenshot showing Visual Studio Code Activity bar.](../media/visual-studio-code-activity-bar.png)
 
     And you should see that the five Activity bar buttons at the top left are as follows (from top to bottom):
 

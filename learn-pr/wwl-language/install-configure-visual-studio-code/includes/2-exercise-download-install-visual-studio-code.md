@@ -16,14 +16,14 @@ Getting up and running with Visual Studio Code is quick and easy. It's a small d
   
 1. Wait for the installer file to finish downloading.
 
-    The name of the installer file will be similar to the following (for a Windows PC): VSCodeUserSetup-x64-1.75.1.exe
+    The name of the installer file will be similar to the following (for a Windows PC): VSCodeUserSetup-x64-1.75.1.exe.
 
     > [!NOTE]
     > The file name depends on the current version of Visual Studio Code and your computer’s operating system.
 
 ## Install Visual Studio Code
 
-VS Code is lightweight and should run on most available hardware and platform versions. You can review the [System Requirements](https://code.visualstudio.com/docs/supporting/requirements) to check whether your computer configuration is supported.
+Visual Studio Code is lightweight and should run on most available hardware and platform versions. You can review the [System Requirements](https://code.visualstudio.com/docs/supporting/requirements) to check whether your computer configuration is supported.
 
 1. On your PC, open a file explorer application, and then navigate to your computer’s downloads folder.
 
@@ -33,11 +33,11 @@ VS Code is lightweight and should run on most available hardware and platform ve
 
     After a moment, the **Setup - Microsoft Visual Studio Code** dialog window will appear.
 
-    ![Screenshot showing Visual Studio Code installer](../media/visual-studio-code-installer.png)
+    ![Screenshot showing Visual Studio Code installer.](../media/visual-studio-code-installer.png)
 
 1. Select **I accept the license agreement**, and then continue following the online instructions to complete the installation.
 
-    Accept all defaults.
+    Accept the default options during the remainder of the installation.
 
     For detailed installation instructions, see the following Visual Studio Code documentation page: [https://code.visualstudio.com/docs/setup/windows](https://code.visualstudio.com/docs/setup/windows).
 

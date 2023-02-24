@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.install-configure-visual-studio-code.exercise-configure-vscode
+uid: learn.wwl.install-configure-visual-studio-code.exercise-configure-visual-studio-code
 title: Exercise - Configure Visual Studio Code Extensions
 metadata:
   title: Exercise - Configure Visual Studio Code Extensions
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 3
 content: |
-  [!include[](includes/5-exercise-configure-vscode.md)]
+  [!include[](includes/5-exercise-configure-visual-studio-code.md)]
