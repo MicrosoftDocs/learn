@@ -10,5 +10,5 @@ Techniques and tools for formatting strings and numeric data has a wide array of
 
 ## Resources
 
-- [String.Format Method](/dotnet/api/system.string.format?view=net-7.0)
+- [String.Format Method](/dotnet/api/system.string.format?view=net-7.0&preserve-view=true)
 - [Standard Numeric Format Strings](/dotnet/standard/base-types/standard-numeric-format-strings)

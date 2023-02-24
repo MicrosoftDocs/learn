@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-format-strings.solution
-title: 'Review a solution to '
+title: Review a solution to string interpolation
 metadata:
-  title: Review a solution to
-  description: "Review a solution to"
+  title: Review a solution to string interpolation
+  description: "Review a solution to string interpolation"
   ms.date: 02/24/2023
   author: wwlpublish
   ms.author: eric
