@@ -19,10 +19,10 @@ quiz:
     choices:
     - content: "No error is generated and the integer value is displayed. The value displayed is the sum of the first and second integer."
       isCorrect: true
-      explanation: "Correct! Since the first integer is initialized above the if statement code it is still in-scope after the code block. Also, since both integers are in-scope and initialized with values inside the code block, the addition of the values executes correctly. Finally, even though the second integer does not exist outside of the code block, the first integer retains any changes to its value that occurred inside the code block."
+      explanation: "Correct! Since the first integer is initialized above the if statement code, it's still in-scope after the code block. Also, since both integers are in-scope and initialized with values inside the code block, the addition of the values executes correctly. Finally, even though the second integer doesn't exist outside of the code block, the first integer retains any changes to its value that occurred inside the code block."
     - content: "No error is generated and the integer value is displayed. The value displayed is the initialized value from above the code block."
       isCorrect: false
       explanation: "Incorrect. The value is displayed as the sum of the two integers."
     - content: "An error is generated because the first variable is not in-scope after the code block."
       isCorrect: false
-      explanation: "Incorrect. No error is generated. The first variable was initialized above the code block and is still in-scope both inside and after the code block."
+      explanation: "Incorrect. No error is generated. The first variable was initialized above the code block and still is in-scope both inside and after the code block."
