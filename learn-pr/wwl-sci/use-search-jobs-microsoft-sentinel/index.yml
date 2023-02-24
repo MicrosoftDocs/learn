@@ -24,6 +24,8 @@ roles:
 products:
 - azure
 - microsoft-sentinel
+subjects:
+- data-analytics
 units:
 - learn.wwl.use-search-jobs-microsoft-sentinel.introduction
 - learn.wwl.use-search-jobs-microsoft-sentinel.hunt-search-job
