@@ -1,14 +1,28 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-readable-code.choose-variable-names
-title: Choose variable names that follow the rules and conventions
+title: Choose variable names that follow rules and conventions
 metadata:
-  title: Choose variable names that follow the rules and conventions
-  description: Learn the naming rules and conventions for your variables.
-  ms.date: 09/23/2019
-  author: billwagner
-  ms.author: wiwagn
+  title: Choose variable names that follow rules and conventions
+  description: "Choose variable names that follow rules and conventions"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 3
+durationInMinutes: 6
 content: |
   [!include[](includes/2-choose-variable-names.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following is an example of correct camel case formatting of a variable name?"
+    choices:
+    - content: "UserOption."
+      isCorrect: false
+      explanation: "Incorrect. In camel case formatting the first letter is lower case."
+    - content: "user Option."
+      isCorrect: false
+      explanation: "Incorrect. All variable names must have consecutive letters, no spaces."
+    - content: "userOption."
+      isCorrect: true
+      explanation: "Correct! This is the correct way to use camel case for a variable."
