@@ -1,30 +1,30 @@
-At this point, you should have all resources running and operational as individual technologies. In this part of the learning module, we will be bringing the pieces together.
+At this point, you should have all resources running and operational as individual technologies. In this part of the learning module, we'll be bringing the pieces together.
 
 ## ADLS Gen 2
 
 ## Investigating the data
 
-Download the following zip file [CluedIn.zip](ungodly zip file from the downloads center) and extract it to your local drive. You will find 7 files representing different sample datasets across common Master Data domains. 
+Download the following zip file [CluedIn.zip](ungodly zip file from the downloads center) and extract it to your local drive. You'll find seven files representing different sample datasets across common Master Data domains. 
 
 ### Companies.csv
 
-Notice in the data, that we have 10 rows of data containing a list of different companies. We have columns for an Id, Name, Website, Address and a Person_Id. 
+Notice in the data, that we have 10 rows of data containing a list of different companies. We have columns for an ID, Name, Website, Address and a Person_Id. 
 
 :::image type="content" source="../media/Copmanies_CSV_Sample.png" alt-text="Screenshot of sample data in Companies.csv.":::
 
-Notice that the addresses of many of the companies are very similar with e.g. "188, Quuen St Brisbane" and "188 queen street brisbane". These addresses are simply fictitous, but we can clearly see that there is a data quality issue that we are hoping to fix. 
+Notice that the addresses of many of the companies are similar with for example "188, Quuen St Brisbane" and "188 queen street brisbane". These addresses are fictitious, but we can clearly see that there's a data quality issue that we're hoping to fix. 
 
-The "person_id" column is referring to the identifier of an Employee of which is somewhere within one of the other files and hence we will be wanting to create what CluedIn calls "Edges" or "Relationships" between this column and the column of another Domain. 
+The "person_id" column is referring to the identifier of an Employee of which is somewhere within one of the other files and hence we'll be create what CluedIn calls "Edges" or "Relationships" between this column and the column of another Domain. 
 
 ### Contacts.csv
 
-Notice in the data, that we hav 10 rows of data containing 10 fictitious employees. We have columns for an Id, First_Name, Last_Name, Full_Name, Email, Job. 
+Notice in the data, that we have 10 rows of data containing 10 fictitious employees. We have columns for an ID, First_Name, Last_Name, Full_Name, Email, Job. 
 
 :::image type="content" source="../media/Contacts_CSV_Sample.png" alt-text="Screenshot of sample data in Contacts.csv.":::
 
-We can also clearly see that the Job column has a data quality issue in it where we are receiving data that has different ways to spell the different Job Titles of the employees. 
+We can also clearly see that the Job column has a data quality issue in it where we're receiving data that has different ways to spell the different Job Titles of the employees. 
 
-For the learning module, pay particular attention to Lorain Andrzej, as, as we start to look through the other files, there is no a single identifier that we can use to stitch her record together consistently. Most notable, notice her email address ends with "@wtb.gov.au" and she has an Id value of "1".
+For the learning module, pay particular attention to Lorain Andrzej, as, as we start to look through the other files, there's no a single identifier that we can use to stitch her record together consistently. Most notable, notice her email address ends with "@wtb.gov.au" and she has an ID value of "1".
 
 ### ContactsAddLater.csv
 
@@ -34,105 +34,163 @@ This file contains more employees, but contains some of the same data quality is
 
 ### Products.csv
 
-Notice in the data, we have 10 rows of data containing 10 fictitious products. We have columns for a SKU, Name and Size. One thing to notice as you look across the other Products.csv file from YellowSystems (under the YellowSystems folder) is that there is no Identifier that can be used to uniquely stitch the products together and we will need to use a fuzzy merging approach later in the exercise. 
+Notice in the data, we have 10 rows of data containing 10 fictitious products. We have columns for a SKU, Name and Size. One thing to notice as you look across the other Products.csv file from YellowSystems (under the YellowSystems folder) is that there's no Identifier that can be used to uniquely stitch the products together and we'll need to use a fuzzy merging approach later in the exercise. 
 
 :::image type="content" source="../media/Navision_Products_CSV_Sample.png" alt-text="Screenshot of sample data in Products.csv.":::
 
-### YellowSystems/Products.csv
+### YellowSystemsProducts.csv
 
-Notice that we have 10 rows of data containing the same 10 fictitious products mentioned in the Products.csv file under the Navision folder. However we can see that we don't have a SKU column that we may have been able to use to stitch the products together. Instead we have columns for an ItemId, Name and CompanyId. Most likely, we can use the CompanyId to connect to the companies mentiond in the Companies.csv above.
+Notice that we have 10 rows of data containing the same 10 fictitious products mentioned in the Products.csv file under the Navision folder. However we can see that we don't have a SKU column that we may have been able to use to stitch the products together. Instead we have columns for an ItemId, Name and CompanyId. Most likely, we can use the CompanyId to connect to the companies mentioned in the Companies.csv above.
 
 :::image type="content" source="../media/YellowSystems_Products_CSV_Sample.png" alt-text="Screenshot of sample data in the YellowSystems Products.csv.":::
 
 ### Employees.csv
 
-Notice in this file that we have the same 10 employees however we do have very different identifiers, column names and details. We have columns for FName, LName, Full, Email, Person_Id. If we take a look at Lorain Andrzej in this file, unfortunately we don't have an Identifiter of "1" or an email that ends in "wtb.gov.au" but rather we could assume that the email column and the person_id column could both be used to uniquely identify these employees. 
+Notice in this file that we have the same 10 employees however we do have different identifiers, column names and details. We have columns for FName, LName, Full, Email, Person_Id. If we take a look at Lorain Andrzej in this file, unfortunately we don't have an Identifier of "1" or an email that ends in "wtb.gov.au" but rather we could assume that the email column and the person_id column could both be used to uniquely identify these employees. 
 
 :::image type="content" source="../media/Salesforce_Employees_CSV_Sample.png" alt-text="Screenshot of sample data in Employees.csv.":::
 
-We can also see that the names of the columns, although similar to those in the Contacts.csv and ContactsAddLater.csv, that they are different. If we were to not address this, it would most likely lead to some quite confused downstream users of the data. 
+We can also see that the names of the columns, although similar to those in the Contacts.csv and ContactsAddLater.csv, that they're different. If we were to not address this, it would most likely lead to some confused downstream users of the data. 
 
 ### Persons.csv
 
-Finally, notice in the file that we have the same 10 employees however we once again have different identifiers, column names, and details. We have columns for Id, First, Last, Email, Full_Name, Gender, IP_Address and PID. 
+Finally, notice in the file that we have the same 10 employees however we once again have different identifiers, column names, and details. We have columns for ID, First, Last, Email, Full_Name, Gender, IP_Address and PID. 
 
 :::image type="content" source="../media/Xero_Persons_CSV_Sample.png" alt-text="Screenshot of sample data in Persons.csv.":::
 
-Once again, if we look at Lorain, we can see that this time her email ends with "yahoo.com". However we can see that she does have an identifier of "1" and a column called "pid" that has a value that we did see in the Employees.csv file above. It is most likely that we could use different identifiers from each file to stitch this together - however on the surface that would be quite a tricky SQL statement or Phython script to create. 
+Once again, if we look at Lorain, we can see that this time her email ends with "yahoo.com". However we can see that she does have an identifier of "1" and a column called "pid" that has a value that we did see in the Employees.csv file above. It's most likely that we could use different identifiers from each file to stitch this together - however on the surface that would be quite a tricky SQL statement or Python script to create. 
 
 ## Upload the data to the ADLS Gen2
 
-Navigate to the Storage Account that you created in the earlier part of the module and create a new folder called "Raw" to simulate that this is where Azure Data Factory would dump the data from operational systems on a regular basis. Navigate to your Container Storage in the left hand side menu of which you will be taken to a list of filesystems. If you don't already have a filesystem, create a new one called "cluedintrial". Navigate inside the filesystem and create your "Raw" folder. Inside the "Raw" folder, Create subfolders for the folders in the CluedIn.zip file e.g. Arca. To keep things simple, we will manually upload the data in the CluedIn.zip file above using the "Upload" button into their respective folder. 
+1. Navigate to the Storage Account that you created in the earlier part of the module.
+1. Navigate to your Container Storage in the left menu, and either select an existing Container, or create a new one called **cluedintrial**.
+1. Inside the cluedintrial container, create a new directory called **raw** upload the data from CluedIn.zip to the container using the **Upload** button.
 
 :::image type="content" source="../media/Upload_Data_To_Storage_Account.png" alt-text="Screenshot of the sample data being uploaded in ADLS Gen2":::
 
+1. Next, we'll grant Microsoft Purview access to the Storage Account by going to the Access Control (IAM) menu, and then select **+ Add** --> **Add role assignment**
+
+    :::image type="content" source="../media/register-adls-gen2-access-control.png" alt-text="Screenshot that shows the access control for the storage account":::
+
+1. Set the **Role** to **Storage Blob Data Reader** and enter your _Microsoft Purview account name_ or _[user-assigned managed identity](manage-credentials.md#create-a-user-assigned-managed-identity)_ under the **Select** input box. Then, select **Save** to give this role assignment to your Microsoft Purview account.
+
+    :::image type="content" source="../media/register-adls-gen2-assign-permissions.png" alt-text="Screenshot that shows the details to assign permissions for the Microsoft Purview account":::
+
+1. Go into your ADLS Gen2 storage account in [Azure portal](https://portal.azure.com)
+1. Navigate to **Security + networking > Networking**
+
+    :::image type="content" source="../media/register-adls-gen2-networking.png" alt-text="Screenshot that shows the details to provide firewall access":::
+
+1. Choose **Selected Networks** under **Allow access from**
+
+    :::image type="content" source="../media/register-adls-gen2-network-access.png" alt-text="Screenshot that shows the details to allow access to selected networks":::
+
+1. In the **Exceptions** section, select **Allow trusted Microsoft services to access this storage account** and hit **Save**
+
+    :::image type="content" source="../media/register-adls-gen2-permission-microsoft-services.png" alt-text="Screenshot that shows the exceptions to allow trusted Microsoft services to access the storage account":::
+
 ## Microsoft Purview
 
-1. Let's sign in to Microsoft Purview. You can do this by choosing the Microsoft Purview Account in your resource group and then selecting the Open Microsoft Purview Studio link. This will open Microsoft Purview in a new tab.
+1. Sign in to Microsoft Purview. You can do this by choosing the Microsoft Purview Account in your resource group and then selecting the Open Microsoft Purview Governance Portal button. This will open Microsoft Purview in a new tab.
 
-1. Select your Data Map on the left hand side menu and select Register. Choose ADLS Gen2 from the selection and in the drop-down, select the instance called Data Governance that was created in the previous step. 
+1. Select your Data Map on the left hand side menu and select Register. Choose ADLS Gen2 from the selection and in the drop-down, then select the instance that was created in the previous step.
 
-1. Next, set up a scan to scan the files every 1 hour and then trigger an initial scan. This will typically take many minutes to scan the files in the ADLS Gen2 instance.
+1. After registering your account, select the **New Scan** icon under the **ADLS Gen2 data source**.
 
-1. After the scan is complete, you should validate that everything was success by making sure that there are 10 assets in your Microsoft Purview instance.
+    :::image type="content" source="../media/register-adls-gen2-new-scan.png" alt-text="Screenshot that shows the screen to create a new scan":::
 
-    >[!NOTE] 
-    > A details guide to register your Storage Account in Microsoft Purview and setup a Scan to Run Once over the assets for the learning module is available here: https://learn.microsoft.com/en-us/azure/purview/register-scan-azure-multiple-sources
+1. Provide a **Name** for the scan, select the Microsoft Purview MSI under **Credential**, choose the appropriate collection for the scan, and select **Test connection**. On a successful connection, select **Continue**.
 
-1. If your scan has run successfully, you should se the Azure Data Lake Storage show up on your Microsoft Purview Data Map. 
+    :::image type="content" source="../media/register-adls-gen2-managed-identity.png" alt-text="Screenshot that shows the managed identity option to run the scan.":::
 
-    ![Purview_Data_Map](../media/Purview_Data_Map.png)
+1. Select the **cluedintrial** folder you created earlier to scan.
 
-1. If you search in Microsoft Purview for Contacts.csv then you should find your assets in Microsoft Purview.
+1. Choose the system default scan rule set.
 
-    ![Contacts_CSV_Purview](../media/Contacts_CSV_Purview.png)
+1. Set your scan to run once, and select **Continue**, then **Save and Run**. It will take only a few minutes to scan these files.
 
-1. Head over to the settings within Microsoft Purview and create a Data Factory connection to your Azure Data Factory instance. This will not only allow Microsoft Purview to create automated lineage for you based off the ADF scheduled pipelines you have for pulling in the data from the source systems into the raw folder on a regular basis, but also for the lineage that CluedIn will create as part of the process of processing the data as well. 
+1. After the scan is complete, you should validate that everything was success by making sure that there are nine assets in your Microsoft Purview instance.
 
-    ![Purview_Azure_Data_Factory](../media/Purview_Azure_Data_Factory.png)
+1. If your scan has run successfully, you should see the Azure Data Lake Storage appear in your Microsoft Purview Data Map.
 
-1. Next, you will need to create the credentials in Microsoft Purview so that CluedIn knows how to authenticate with the data sources when it comes time to copy the data from the Storage Accounts in CluedIn for processing. Create a new Key called "CluedInTrial" and use this to setup the credentials to access your Container Storage. 
+    :::image type="content" source="../media/Purview_Data_Map.png" alt-text="Screenshot of the data map showing the Azure data lake storage account registered.":::
 
-1. You will also need to setup the right access to CluedIn on the Collections so that they can properly read assets within Microsoft Purview. Under the Role Assignments, make sure that your Service Principal used for this learning module is a Collection Admin, Data Source Admin, Data Reader.
+1. If you search in Microsoft Purview for Contacts.csv, then you should find your assets in Microsoft Purview.
 
-    ![Purview_Collection_Credentials](../media/Purview_Collection_Credentials.png)
+    :::image type="content" source="../media/Contacts_CSV_Purview.png" alt-text="Screenshot of the Contacts.csv asset in Microsoft Purview.":::
+
+1. Select **Management** in the Microsoft Purview menu, then select **Data Factory** under **Lineage connections**. Select **New** and create a connection to your Data Factory.
+
+    :::image type="content" source="../media/Purview_Azure_Data_Factory.png" alt-text="Screenshot of a data factory connection in Microsoft Purview.":::
+
+    This won't only allow Microsoft Purview to create automated lineage for you based off the ADF scheduled pipelines you have for pulling in the data from the source systems into the raw folder regularly, but also for the lineage that CluedIn will create as part of the process of processing the data as well.
+
+1. You'll also need to set up the right access to CluedIn on the Collections so that they can properly read assets within Microsoft Purview. In the Microsoft Purview Data Map, select the collections, and select you registered your ADLSGen2 resource to (or the root collection) and add these permissions for your service principal:
+
+    * Collection Admin
+    * Data Source Admin
+    * Data Reader
+
+    :::image type="content" source="../media/Purview_Collection_Credentials.png" alt-text="Screenshot of the root collection showing role assignments and the Edit role assignments button.":::
 
 ## CluedIn
 
-1. You can now open your CluedIn instance by navigating to the CluedIn-AMA Managed Application. You would have also received an email from CluedIn with your Url to your CluedIn studio. Apart from that email, you can find this Url within the CluedIn application in the Azure portal. There will be a Parameters and Outputs menu option in the appliaction. Select that, scroll down to the bottom of the page and you'll see a Url to your own private instance of CluedIn. Copy that into a new browser tab and press enter.
+1. You can now open your CluedIn instance by navigating to the CluedIn-AMA Managed Application. You would have also received an email from CluedIn with your Url to your CluedIn studio. Apart from that email, you can find this Url within the CluedIn application in the Azure portal. There will be a Parameters and Outputs menu option in the application. Select that, scroll down to the bottom of the page and you'll see a Url to your own private instance of CluedIn. Copy that into a new browser tab and press enter.
 
-    ![CluedIn_Login](../media/CluedIn_Login.png)
+    :::image type="content" source="../media/CluedIn_Login.png" alt-text="Screenshot of the CluedIn log in page.":::
 
-1. Sign in with your credentials you used in the installation process and you'll be met with this home screen. 
+1. Sign in with your credentials you used in the installation process and you'll be met with this home screen.
 
-    ![CluedIn_Home_Screen](../media/CluedIn_Home_Screen.png)
+    :::image type="content" source="../media/CluedIn_Home_Screen.png" alt-text="Screenshot of the CluedIn home screen page.":::
 
 ### Connect CluedIn to Microsoft Purview
 
-1. In your CluedIn Studio, head to the Settings section, under Administration. You will notice that it will ask you to fill in different Microsoft Purview details, including the Client Id, Client Secret, Tenant Id and Microsoft Purview Url. For this, you will need to create an Enterprise Application (and you can find a guide to it here: https://learn.microsoft.com/en-us/azure/purview/tutorial-using-rest-apis) in your Azure Active Directory to generate these Client Id and Client Secret. 
+1. In your CluedIn Studio, go to **Settings** section, under **Administration**. Fill in your Microsoft Purview name into the Base URL, and provide the Client ID and Client Secret from the Service Principal you created earlier.
 
-    ![Purview_CluedIn_Settings](../media/Purview_CluedIn_Settings.png)
+    :::image type="content" source="../media/Purview_CluedIn_Settings.png" alt-text="Screenshot of the CluedIn home screen page.":::
 
-1. Once you have filled these details in, you will want to toggle on the setting for "Syncing Microsoft Purview Datasources" and "Poll Microsoft Purview Datasources". You will also notice a setting called "Search Filter for Datasources". 
+1. Toggle on the setting for **Syncing Microsoft Purview Datasources** and **Poll Microsoft Purview Datasources**. This will integrate the data sources from Microsoft Purview with CluedIn.
 
-    ![CluedIn_DataSources_Purview](../media/CluedIn_DataSources_Purview.png)
-
-1. Effectively, CluedIn will now be polling every 60 seconds to find Microsoft Purview assets that have been tagged with a Glossary Term that matches the filter in "Search Filter for Datasources". You can change this Search filter to something appropriate for you.
+1. You'll also notice a setting called **Search Filter for Datasources**. Set this to **CluedInSource**. CluedIn will now be polling every 60 seconds to find Microsoft Purview assets that have been tagged with a Glossary Term that matches the filter.
 
 ### Flagging assets that can sync with CluedIn
 
-1. Now with CluedIn talking to Microsoft Purview, head over the Microsoft Purview and tag all 7 files from the CluedIn.zip with the Glossary Term of "CluedInSource". You will need to wait up to 60 seconds to see the results. 
+1. Now with CluedIn talking to Microsoft Purview, return to Microsoft Purview and open the data catalog and select **Glossary**. Then select **New term**.
 
-1. Head to the Datasources section under Integration in CluedIn and you will notice that your 7 files are now showing in CluedIn. However, there will only be the metadata that is actually registered. 
+1. Select the System default template, and then create a new term **CluedInSource**. Set status to **Approved**, and select **Create**.
 
-1. Next, we will want to provide CluedIn with the credentials of our Azure Data Factory so CluedIn can also automate the construction of the Azure Data Factory pipelines as to also copy the data from those files in the Storage Account into CluedIn. 
+    :::image type="content" source="../media/new-glossary-term.png" alt-text="Screenshot of the Microsoft Data Catalog new glossary term page, showing a new CluedInSource term.":::
+
+1. Create a second glossary term called **CluedInADF** that we'll use later in this guide.
+
+1. Return to the data catalog, search for and select all seven assets. Then select **View selected**.
+
+    :::image type="content" source="../media/bulk-edit-assets.png" alt-text="Screenshot of the Microsoft Data Catalog browse, showing products.csv selected, and seven assets selected for bulk editing.":::
+
+1. Select **Bulk edit**.
+
+1. Set attribute to **Term**, operation to **Add** and new value to **CluedInSource**, then select **Apply**. Wait at least 60 seconds for CluedIn to poll for the filter we created.
+
+1. Add a second term attribute to add the **CluedInADF** glossary tag.
+
+1. Go to the **Datasources** section under **Integration** in CluedIn and you'll notice that your 7 files are now showing in CluedIn. However, there will only be the metadata that is registered.
+
+    :::image type="content" source="../media/CluedIn_DataSources_Purview.png" alt-text="Screenshot of the CluedIn integrations screen, showing the data sources.":::
 
 # Connect CluedIn to Azure Data Factory
 
-1. In your CluedIn Studio, head to the Settings section, under Administration. You will notice that it will ask you to fill in different Azure Data Factory details, including a Client Id and Client Secret. 
+Next, we'll provide CluedIn with the credentials of our Azure Data Factory so CluedIn can also automate the construction of the Azure Data Factory pipelines to copy the data into CluedIn.
 
-1. After you have filled in these details, you will want to toggle the setting for "Create Automatic Azure Data Factory Pipelines". You will also notice that there is a setting called "Search Filter for Azure Data Factory Pipelines" in which the default value is "CluedInADF". 
+1. In the Azure portal, open your Data Factory instance and select **Access Control IAM**. Grant your service principal the **Data Factory Contributor** role to allow it to create pipelines and triggers.
 
-1. Head over to Microsoft Purview and once again, tag all 7 files with a new glossary term called "CluedInADF". You will need to wait up to 60 seconds to see the results. 
+1. In your CluedIn Studio, select the **Settings** section, under **Administration**. Fill in the Azure Data Factory details, including the Client ID and Client Secret from the Service Principal you created earlier.
 
-1. Head back to the Datasources section under Integration in CluedIn and you will now notice that all of your items in the list now have a new entry under them, in which when you select them will take you through to a preview of the data we have for our scenario. 
+1. Toggle on the setting for **Create Automatic Azure Data Factory Pipelines**. This will use our Azure Data Factory instance to copy our data into CluedIn.
+
+1. You'll also notice that there's a setting called **Search Filter for Azure Data Factory Pipelines** in which the default value is **CluedInADF**. We tagged our resources for this earlier, but you'll need to wait at least 60 seconds after set up to see the results.
+
+1. Return to the **Datasources** section under **Integration** in CluedIn and you'll now notice that all of your items in the list now have a new entry under them. When you select them will take you through to a preview of the data we have for our scenario.
+
+## Congratulations!
+
+Great work! We've integrated all the pieces of our data technology stack! Give yourself a pat on the back before moving on to the next section.

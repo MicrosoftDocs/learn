@@ -38,7 +38,7 @@ In saying that, let's now onboard the data in the order within the datasources t
 
     ![Remove_PersonId_Code](../media/Remove_PersonId_Code.png)
 
-1. Select "Next" to head to the next section which is called "Edges".
+1. Select "Next" to go to the next section which is called "Edges".
 
     In this section we will specify if there are columns here that are referring to records that are not Companies, but rather are some type of relationship to another record. This could easily be a relationship to a Domain of the same type (Company) or in this case it seems to be referring to a Person (from the column name person_id). In saying this, we know already that although it is a person, we could also say that it is referring to an "Employee". The good part about CluedIn's mapping process, is that we can go with one type now and we can always come back and change this at a later point once we know more about our data and Cluedin will handle all the cleanup necessary. With this in mind, mapping just because even more easy as we don't even need to get the mapping correct at this point. 
 

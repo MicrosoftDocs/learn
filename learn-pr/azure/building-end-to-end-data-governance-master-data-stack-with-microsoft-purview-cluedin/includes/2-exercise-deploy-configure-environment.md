@@ -100,7 +100,7 @@ Once the new service principal is created, or if you're bringing your own, you n
 
 You can also install CluedIn directly through the Azure Marketplace or Azure portal. You'll need to make sure that you check and validate that you have all the prerequisites for installing the trial, available here: https://documentation.cluedin.net/deployment/azure-marketplace/preflight. 
 
-To install CluedIn, head to the Azure portal and follow the steps below:
+To install CluedIn, go to the Azure portal and follow the steps below:
 
 1. Search "CluedIn" in your Azure portal and select the application under the Marketplace section.
 

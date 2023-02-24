@@ -46,7 +46,7 @@ So far in the exercise, we have found that the majority of our records were able
 
     Head back to your search once you receive a notification that the process has finished and you will now find that you have 10 products in the system now, not 20. 
 
-1. Open the product called "MDM" and head to the Topology tab. You will see that CluedIn is telling us that the reason why the 2 products for MDM in each file were merged was because of the deduplication project that we just submitted.
+1. Open the product called "MDM" and go to the Topology tab. You will see that CluedIn is telling us that the reason why the 2 products for MDM in each file were merged was because of the deduplication project that we just submitted.
 
 >[!NOTE]
 > You can select any of these records an revert what has just been done if necessary. 
