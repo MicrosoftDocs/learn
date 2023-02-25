@@ -6,18 +6,15 @@ Maintaining the optimal access tier assignments is a continuous process because 
 
 ### Configure Azure Blob Storage lifecycle management
 
-Azure Storage lifecycle management consists of a JSON-formatted policy. This policy consists of custom-defined rules that determine the intended blob management tasks. Most commonly, those tasks evaluate when blobs were last modified or accessed and depending on the outcome of that evaluation, either retain the current access tier assignment, transition the blobs to a different tier, or delete them. Lifecycle management also integrates with blob versioning and snapshots. This enables you to automatically transition older versions of blobs and snapshots to Cool and Archive storage tiers and also delete them where appropriate to minimize costs. Rules can be scoped to specific containers based on the name prefixes or blob index tags.
+Azure Storage lifecycle management consists of a JSON-formatted policy. This policy consists of custom-defined rules that determine the intended blob management tasks. Most commonly, those tasks evaluate when blobs were last modified or accessed and depending on the outcome of that evaluation, either retain the current access tier assignment, transition the blobs to a different tier, or delete them. Lifecycle management also integrates with blob versioning and snapshots. This enables you to automatically transition older versions of blobs and snapshots to cool and archive storage tiers and also delete them where appropriate to minimize costs. Rules can be scoped to specific containers based on the name prefixes or blob index tags.
 
 To implement support for evaluations based on the last accessed date, you need to enable blob access time tracking. The last accessed date represents both read and write operations, unlike the last modified date, which designates writes only. The corresponding metadata is updated daily.
-
-> [!NOTE]
-> Enabling this setting does incur an additional cost.
 
 :::image type="content" source="../media/5-enable-access-tracking.png" alt-text="Screenshot of the Azure portal Lifecycle management pane has Enable access tracking selected." border="false" lightbox="../media/5-enable-access-tracking.png":::
 
 :::image type="content" source="../media/5-lifecycle-rule-move-to-cool-fifteen-days.png" alt-text="Screenshot of a lifecycle management rule in code view is designed to moves blobs to cool tier after 15 days after the last accessed date." border="false" lightbox="../media/5-lifecycle-rule-move-to-cool-fifteen-days.png":::
 
-A performance-related measure supported by the lifecycle management policy is the ability to transition blobs from the Cool to Hot tier as soon as they’re accessed. This is accomplished by setting the **enableAutoTierToHotFromCool** property to true within the policy rules.
+A performance-related measure supported by the lifecycle management policy is the ability to transition blobs from the cool to hot tier as soon as they’re accessed. This is accomplished by setting the **enableAutoTierToHotFromCool** property to true within the policy rules.
 
 > [!NOTE]
 > In this case as well, keep in mind the potential cost implications as a result of the early deletion charge.
