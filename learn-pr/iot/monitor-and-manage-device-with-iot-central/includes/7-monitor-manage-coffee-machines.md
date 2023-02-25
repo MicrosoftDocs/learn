@@ -1,2 +1,2 @@
-Use: https://learn.microsoft.com/en-us/azure/iot-central/core/overview-iot-central-operator
-Use: https://learn.microsoft.com/en-us/azure/iot-central/core/overview-iot-central-solution-builder
+<!-- Use: https://learn.microsoft.com/azure/iot-central/core/overview-iot-central-operator
+Use: https://learn.microsoft.com/azure/iot-central/core/overview-iot-central-solution-builder -->
