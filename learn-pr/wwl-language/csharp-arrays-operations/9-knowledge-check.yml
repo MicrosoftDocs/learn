@@ -23,7 +23,7 @@ quiz:
       explanation: "Incorrect. `myArray.Clear()` removes all items but it will not change the order."
     - content: "`Array.Sort()`"
       isCorrect: true
-      explanation: "Correct. `Array.Sort()` places `string` array items in in ascending order."
+      explanation: "Correct. `Array.Sort()` places `string` array items in ascending order."
   - content: "What is null?"
     choices:
     - content: "The same as an empty string."
