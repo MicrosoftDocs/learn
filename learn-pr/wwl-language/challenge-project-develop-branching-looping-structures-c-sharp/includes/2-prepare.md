@@ -1,5 +1,6 @@
 
-You'll be using Visual Studio Code to develop portions of a C# console application. You will be writing code that evaluates boolean expressions, implements various selection and iteration statements (branching and looping structures), and declares variables within code blocks at the appropriate scoping level for the app. Here, we'll discuss the overall goals of the project and how you'll build and test your application. We'll also cover how to set up your development environment, including a "Starter" code project.
+
+In this challenge project, you'll use Visual Studio Code to develop portions of a C# console application. You'll use boolean expressions, selection statements, and iteration statements to implement the features of a design specification. As you develop the application, you'll need to scope variables at the appropriate level.
 
 ## Project specification
 
@@ -36,19 +37,19 @@ The Starter code project for this module includes a Program.cs file with the fol
 Your goal in this challenge is to create the app features aligned with menu options 3 and 4.
 
 > [!NOTE]
-> New animals must be added to the ourAnimals array when the y arrive. However, an animal's age and some physical characteristics for a pet may be unknown until after a veterinarian's examination. In addition, an animal's nickname and personality may be unknown when a pet first arrives. The new features that you have volunteered to develop will be used to ensure that we have a completed dataset for each animal in the ourAnimals array.
+> New animals must be added to the ourAnimals array when they arrive. However, an animal's age and some physical characteristics for a pet may be unknown until after a veterinarian's examination. In addition, an animal's nickname and personality may be unknown when a pet first arrives. The new features that you're developing will ensure that a complete dataset exists for each animal in the ourAnimals array.
 
-To complete the feature that ensures animal ages and physical descriptions are complete, your code will need to:
+To ensure that animal ages and physical descriptions are complete, your code must:
 
     - Assign a valid numeric value to petAge for any animal that has been assigned data in the ourAnimals array but has not been assigned an age.
     - Assign a valid string to petPhysicalDescription for any animal that has been assigned data in the ourAnimals array but has not been assigned a physical description.
-    - A valid physical description cannot be null and cannot have zero characters, any further requirement is up to you.
+    - Verify that physical descriptions have an assigned value. Assigned values cannot have zero characters. Any further requirement is up to you.
 
-To complete the feature that ensures animal nickname and personality descriptions are complete, your code will need to:
+To ensure that animal nicknames and personality descriptions are complete, your code must:
 
     - Assign a valid string to petNickname for any animal that has been assigned data in the ourAnimals array but has not been assigned a nickname.
     - Assign a valid string to petPersonalityDescription for any animal that has been assigned data in the ourAnimals array but has not been assigned a personality description.
-    - A valid nickname or personality description cannot be null and cannot have zero characters, any further requirement is up to you.
+    - Verify that nicknames and personality descriptions have an assigned value. Assigned values cannot have zero characters. Any further requirement is up to you.
 
 ## Setup
 

@@ -4,14 +4,14 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/24/2023
+  ms.date: 02/25/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3
 quiz:
-  title: ""
+  title: "Check your knowledge"
   questions:
   - content: "A developer is writing an application in Visual Studio Code. They save changes to their Program.cs file, and then run the `dotnet build` command in the Terminal panel. What information can they find in reported Error and Warning messages?"
     choices:

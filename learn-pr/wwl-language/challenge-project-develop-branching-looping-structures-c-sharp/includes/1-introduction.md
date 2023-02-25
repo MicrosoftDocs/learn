@@ -1,16 +1,15 @@
 
-It's common for developers to begin a project by developing the features that import or generate application data. Once your application has access to the data it depends on, you can begin developing the features that process data and generate reports.  
 
-Suppose you are one of the developers working on the Contoso Pets application. Contoso Pets is used to help find new homes for pets that have been abandoned, or for cases when the owner cannot be located. The primary features of the application have already been specified. You've also made good progress on the code that creates the ourAnimals array data, which is the primary data source for the application. However, some information is not available when a pet is first entered into your system. Since some data may be missing, you need to develop the features that ensure a complete dataset exists for each animal in your case. You decide to develop an initial version of the new features.
+Applications often use a combination of selection and iteration statements to establish code execution paths. In addition, user input and calculations influence the flow through an application. Creating a user interface that implements a design specification can be challenging.
 
-This module challenges you to develop features of the Contoso Pets application.
+Suppose you're a developer working on the Contoso Pets application, an application that's used to find homes for stray or abandoned pets. Some of the development work has already been completed. For example, the application's main menu and the code used to store new pet information have been developed. However, certain information isn't always available when a pet is entered in your system. You need to develop the features that ensure a complete dataset exists for each animal in your care.
 
-In short, you need to:
+In this module, you'll to develop the following features of the Contoso Pets application:
 
-- Develop the feature that ensures animal ages and physical descriptions are complete.
-- Develop the feature that ensures animal nickname and personality descriptions are complete.
+- A feature that ensures animal ages and physical descriptions are complete.
+- A feature that ensures animal nickname and personality descriptions are complete.
 
-By the end of this module, you'll have an updated version of the Contoso Pets application that is able to ensure every pet in the ourAnimals array has a complete dataset.
+By the end of this module, your Contoso Pets application will ensure that every element in the ourAnimals array is complete.
 
 > [!NOTE]
 > This is a challenge project module where you’ll complete an end-to-end project from a specification. This module is intended to be a test of your skills; there’s little guidance and no step-by-step instructions.
