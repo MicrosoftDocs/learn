@@ -3,10 +3,10 @@ uid: learn.languages.csharp-format-strings.summary
 title: Summary
 metadata:
   title: Summary
-  description: Review what you learned and did in this module.
-  ms.date: 1/3/2020
-  author: billwagner
-  ms.author: wiwagn
+  description: "Summary"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: eric
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1

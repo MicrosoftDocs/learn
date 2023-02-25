@@ -1,17 +1,16 @@
 ### YamlMime:Module
 uid: learn.languages.csharp-convert-cast
 metadata:
-  title: 'Convert data types using casting and conversion techniques in C#'
-  description: Take control of the data in your applications, knowing when to apply the correct technique to change data types as needed.
-  ms.date: 01/27/2023
-  author: billwagner
-  ms.author: wiwagn
+  title: Convert data types using casting and conversion techniques in C#
+  description: "Convert data types using casting and conversion techniques in C#"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: eric
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Convert data types using casting and conversion techniques in C#
 summary: Take control of the data in your applications, knowing when to apply the correct technique to change data types as needed.
 abstract: |
-  In this module, you'll:
   - Use the casting operator to cast a value into a different data type.
   - Use conversion methods to convert a value into a different data type.
   - Guard against the loss of data when performing a cast or conversion operation.
@@ -19,18 +18,17 @@ abstract: |
 prerequisites: |
   - Experience using data types like `string`, `int`, `decimal`, `float`, and so on
   - Experience using arrays and the `foreach` iteration statement
-  - Experience using string interpolation to combine variable and literal values for output
-ratingEnabled: true
+  - Experience using *string interpolation* to combine *variable* and *literal* values for output
 iconUrl: /training/achievements/csharp-convert-cast.svg
 levels:
 - beginner
 roles:
 - developer
+- k-12-educator
 - student
 products:
-- dotnet
-subjects:
-- development-tools
+- dotnet-framework
+- vs-code
 units:
 - learn.languages.csharp-convert-cast.introduction
 - learn.languages.csharp-convert-cast.exercise-data-type-conversion
@@ -41,6 +39,5 @@ units:
 - learn.languages.csharp-convert-cast.solution-2
 - learn.languages.csharp-convert-cast.knowledge-check
 - learn.languages.csharp-convert-cast.summary
-
 badge:
   uid: learn.languages.csharp-convert-cast.badge
