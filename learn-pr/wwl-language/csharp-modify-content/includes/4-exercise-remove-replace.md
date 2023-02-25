@@ -73,12 +73,3 @@ Here's the most important things to remember from this unit:
 
 - The `Remove()` method works like the `Substring()` method, except that it deletes the specified characters in the string.
 - The `Replace()` method swaps all instances of a string with a new string.
-
-## Check your knowledge
-
-## Multiple Choice
-
-If the code `message = message.Replace("B", "D");` is run, where `string message = "Big Dog";`, what is the new value of `message`?
-( ) `"Big Dog"` {{Incorrect. `"B"` is replaced by `"D"`.}}
-( ) `"Big Bog"` {{Incorrect. `"B"` is replaced by `"D"`.}}
-(x) `"Dig Dog"` {{Correct. `"B"` is replaced by `"D"`.}}

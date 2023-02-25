@@ -201,12 +201,3 @@ Here's the most important things to remember:
 
 - `LastIndexOf()` returns the last position of a character or string inside of another string.
 - `IndexOfAny()` returns the first position of an array of `char` that occurs inside of another string.
-
-## Check your knowledge
-
-## Multiple Choice
-
-What method would you use to search for the first occurrence of a search term in a long string?
-(x) `IndexOfAny()` {{Correct. `IndexOfAny()` returns the first position of an array of `char` that occurs inside of another string.}}
-( ) `LastIndexOf()` {{Incorrect. `IndexOfAny()` returns the first position of an array of `char` that occurs inside of another string.}}
-( ) `Substring()` {{Incorrect. `Substring()` returns a string that is equivalent to the substring that begins at startIndex.}}
