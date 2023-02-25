@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.languages.csharp-arrays-operations.summary
+uid: learn.wwl.challenge-project-arrays-iteration-selection.summary
 title: Summary
 metadata:
   title: Summary
   description: "Summary"
-  ms.date: 02/25/2023
+  ms.date: 02/24/2023
   author: wwlpublish
-  ms.author: eric
+  ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1
+durationInMinutes: 2
 content: |
-  [!include[](includes/10-summary.md)]
+  [!include[](includes/6-summary.md)]
