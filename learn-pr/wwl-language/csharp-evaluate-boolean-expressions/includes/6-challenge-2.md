@@ -30,7 +30,7 @@ In this challenge, you'll implement decision logic based on a series of business
 
     Your application will be using a combination of `permission` and `level` to apply/evaluate the business rules in this challenge scenario. The full list of conditions for business rules is specified in the next step. Your completed solution must use `permission` and `level`.
 
-    > [!HINT]
+    > [!TIP]
     > To sufficiently test all of the combinations for `permission` and `level` that are described in the business rules below, you will need to assign additional values to these variables and run the application multiple times.
 
 ### Implement business rules

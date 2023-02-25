@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/24/2023
+  ms.date: 02/25/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
@@ -12,17 +12,6 @@ metadata:
 durationInMinutes: 3
 quiz:
   questions:
-  - content: "**TODO** remove this first QA developer wants to compare two strings ignoring their case.  Which string helper method should the developer use?"
-    choices:
-    - content: "`Trim()`."
-      isCorrect: false
-      explanation: "Incorrect. The `Trim()` method don't help to ignore case when comparing strings."
-    - content: "`Lower()`."
-      isCorrect: false
-      explanation: "Incorrect. `Lower()` isn't a method of the string class."
-    - content: "`ToLower()`."
-      isCorrect: true
-      explanation: "Correct! The ToLower() method is used to convert text to lower case."
   - content: "Which line of code uses logical negation?"
     choices:
     - content: "`Console.WriteLine(!value);`."
