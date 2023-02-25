@@ -26,7 +26,7 @@ Microsoft Sentinel uses the MITRE ATT&CK framework to categorize and order queri
 
 :::image type="content" source="../media/3-attack-timeline.png" alt-text="Screenshot of the tactics timeline on the Hunting page in Microsoft Sentinel." :::
 
-Selecting any tactic will filter the available queries by the selected tactic. The included Hunting tactics are from the ATT&CK Enterprise and ICS (Industrial Control Systems) matrices:
+Selecting any tactic filters the available queries by the selected tactic. The included Hunting tactics are from the ATT&CK Enterprise and ICS (Industrial Control Systems) matrices:
 
 - **Reconnaissance**. Tactics the adversary uses to find information they can use to plan future operations.
 - **Resource Development**. Tactics the adversary uses to establish resources they can use to support operations. Resources include infrastructure, accounts, or capabilities.
@@ -68,7 +68,7 @@ Custom queries are listed alongside built-in queries for management.
 
 ## Explore the Microsoft Sentinel repository on GitHub
 
-The Microsoft Sentinel repository contains out-of-the-box detections, exploration queries, hunting queries, workbooks, playbooks, and much more to help you secure your environment and hunt for threats. Microsoft and the Microsoft Sentinel community contribute to this repo.
+The Microsoft Sentinel repository contains out-of-the-box detections, exploration queries, hunting queries, workbooks, playbooks, and more to help you secure your environment and hunt for threats. Microsoft and the Microsoft Sentinel community contribute to this repo.
 
 The repo contains folders with contributed content for several areas of Microsoft Sentinel functionality, including hunting queries. You can use the code from these queries to create custom queries in your Microsoft Sentinel workspace.
 
