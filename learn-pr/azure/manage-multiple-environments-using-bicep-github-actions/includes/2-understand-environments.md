@@ -4,9 +4,9 @@ In this unit, you'll learn about how environments in GitHub Actions help you sup
 
 ## Why do you have multiple environments?
 
-Deployment processes make changes to your Azure resources, including resources in use. Changing resources involves some risk, because the changes that you deploy might not behave as you expect. You might even discover that the changes break your current setup. 
+Deployment processes make changes to your Azure resources, including resources in use. Changing resources involves some risk, because the changes that you deploy might not behave as you expect. You might even discover that the changes break your current setup.
 
-To minimize the risk of problems, it's a good practice to try out your changes in a safe way before you deploy them to your production environment. You do this by deploying the changes to a *non-production environment*.
+To minimize the risk of problems, it's a good practice to try out your changes in a safe way before you deploy them to your production environment. You do this by deploying the changes to a _non-production environment_.
 
 Many organizations take this further and set up multiple non-production environments where they progressively deploy their changes before releasing to production. Each non-production environment serves a specific purpose and often has specific quality gates that must be met to proceed to the next environment. If something goes wrong, like a test failing, the deployment stops. As your deployment moves through each environment, your confidence in the changes grows.
 
@@ -18,7 +18,7 @@ Common environments include:
 
   In some teams, you might even set up a separate development environment for each team member so that they don't get in each other's way while they're working on new features.
 
-  Development environments are sometimes also called *sandbox* environments.
+  Development environments are sometimes also called _sandbox_ environments.
 
 - **Test**: A test environment is designed to run manual or automated tests against your changes.
 
@@ -30,13 +30,13 @@ Common environments include:
 
   You might simulate end-to-end transactions in an integration environment. These tests often run automatically, but many organizations also perform manual testing against this environment.
 
-  Integration environments are sometimes also called *system integration test* (SIT) environments.
+  Integration environments are sometimes also called _system integration test_ (SIT) environments.
 
 - **User acceptance test**: A user acceptance test (UAT) environment is used for manual validation, usually by business stakeholders rather than developers. In manual validation, someone goes through the solution and verifies that it behaves as expected and that it achieves the necessary business requirements. That person then approves the changes so that the deployment can continue.
 
 - **Pre-production**: A pre-production environment is often a mirror of the production environment, with the same resource SKUs and configuration. It's used as a final check to verify how the production deployment will behave during and after the change is applied. It can also be used to verify whether to expect any downtime during the production deployment.
 
-  Pre-production environments are sometimes also called *staging* environments.
+  Pre-production environments are sometimes also called _staging_ environments.
 
 - **Production**: Your production environment is the one that end users of the application use. It's your live environment that you want to protect and keep up and running as much as possible.
 
@@ -46,13 +46,13 @@ Common environments include:
 
 ### Environments in your organization
 
-You might see variations of these environments. Some organizations use only a few environments, and some use many more. The number and type of environments that you use depend on the solution you're deploying, the size of the team that's building the solution, and the importance of the workload. 
+You might see variations of these environments. Some organizations use only a few environments, and some use many more. The number and type of environments that you use depend on the solution you're deploying, the size of the team that's building the solution, and the importance of the workload.
 
 Sometimes, a single environment takes the role of several of the environments listed earlier. Other times, you might have a very complex workflow that deploys to multiple environments, some in parallel and some in sequence. Some organizations even automatically delete or deprovision environments when they're no longer used, and then redeploy them when they're needed in the future.
 
 Whatever your organization chooses as its list of environments, the goal is to improve your confidence in a change as it progresses through your deployment workflow. When a change doesn't meet your quality requirements, you want to be able to stop the deployment of that change to any subsequent environments in the chain.
 
-In your toy company, you decide to start with a basic set of environments for your website. In addition to your production environment, you'll create one non-production environment named *Test*:
+In your toy company, you decide to start with a basic set of environments for your website. In addition to your production environment, you'll create one non-production environment named _Test_:
 
 :::image type="content" source="../media/2-environments.png" alt-text="Diagram that shows two environments: test and production." border="false":::
 
@@ -94,7 +94,7 @@ In the example above, the job named `deploy` is linked to the `Test` environment
 
 ## Environments and connections to Azure
 
-When you use multiple environments, you should make each environment independent from the others. For example, your development environment's website shouldn't be able to access a database within your production environment. 
+When you use multiple environments, you should make each environment independent from the others. For example, your development environment's website shouldn't be able to access a database within your production environment.
 
 The same principle also applies to the deployment workflow. You should create separate workload identities for each environment. Following this practice adds another layer of protection to ensure that your non-production deployments don't affect your production environment.
 
@@ -111,8 +111,8 @@ Apply Azure role assignments so that users and workload identities can access on
 
 ### Federated credentials for environments
 
-When your workload identity connects to Azure from your deployment workflow, it uses a *federated credential* to securely authenticate itself without any secrets or keys. In previous modules in this learning path, your federated credentials granted access to your deployment workflows when they deployed from the *main* branch of your Git repository.
+When your workload identity connects to Azure from your deployment workflow, it uses a _federated credential_ to securely authenticate itself without any secrets or keys. In previous modules in this learning path, your federated credentials granted access to your deployment workflows when they deployed from the _main_ branch of your Git repository.
 
 When you deploy to an environment within your workflow, you need to use a federated credential that's scoped to that environment.
 
-In this module, your workflow inludes several jobs, many of which connect and deploy to Azure. Some of the jobs use environments, and some don't. So, you create two federated credentials for each of your workload identities: one scoped to the environment and one scoped to the *main* branch.
+In this module, your workflow inludes several jobs, many of which connect and deploy to Azure. Some of the jobs use environments, and some don't. So, you create two federated credentials for each of your workload identities: one scoped to the environment and one scoped to the _main_ branch.
