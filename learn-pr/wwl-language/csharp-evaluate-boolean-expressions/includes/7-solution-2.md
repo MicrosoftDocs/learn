@@ -1,6 +1,7 @@
+
 The following code is one possible solution for the challenge from the previous unit.
 
-```csharp-interactive
+```c#
 string permission = "Admin|Manager";
 int level = 53;
 
@@ -32,13 +33,13 @@ else
 }
 ```
 
-This code is merely *one possible solution*, because in some cases it's possible to use different Boolean expressions to get the same result.
+This code is merely "*one possible solution*" because in some cases it's possible to use different Boolean expressions to get the same result.
 
-```output
+```Output
 Welcome, Admin user.
 ```
 
 If you were successful, congratulations! Continue on to the knowledge check in the next unit.
 
 > [!IMPORTANT]
-> If you had trouble completing this challenge, you should review the previous units before you continue on. All new ideas we discuss in other modules will depend on your understanding of the ideas that were presented in this module.
+> If you had trouble completing this challenge, maybe you should review the previous units before you continue on.
