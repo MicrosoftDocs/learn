@@ -1,5 +1,6 @@
 
-In this first step of our development process, you'll review the code provided in the Starter project folder and then move on to some clean-up and preparatory tasks before you begin adding features to your app. Your code clean-up task involves updating the selection statement that's used when generating the sample data for your app. Your preparatory tasks will be to add a looping structure around your menu selection code, and to create a code branching structure that is based on the user's menu selections. The detailed tasks that you'll complete during this exercise are:
+
+In this first step of the development process, you'll review the code provided in the Starter project folder and then move on to some clean-up and preparatory tasks before you begin adding features to your app. Your code clean-up task involves updating the selection statement that's used when generating the sample data for your app. Your preparatory tasks will be to add a looping structure around your menu selection code, and to create a code branching structure that is based on the user's menu selections. The detailed tasks that you'll complete during this exercise are:
 
 1. Code review: review the contents of the Program.cs file.
 1. Sample data: convert the if-elseif-else structure to switch-case structure that improves readability.
@@ -10,11 +11,11 @@ In this first step of our development process, you'll review the code provided i
 
 ## Review the contents of the Program.cs file
 
-In this task, you'll review the code that's provided as a Starter project for this module. The Program.cs file contains a preliminary version of the application that you'll be working on. The code includes an initial attempt at generating sample data for the application, and it displays a list of menu options that define the main features of our application.
+In this task, you'll review the code that's provided as a Starter project for this module. The Program.cs file contains a preliminary version of the application that you'll be working on. The code includes an initial attempt at generating sample data for the application, and it displays a list of menu options that define the main features of your application.
 
 1. Ensure that you have the **GuidedProject** folder open in Visual Studio Code.
 
-    The **Prepare** unit (the previous unit in this module) includes a Setup section that describes the process for downloading the initial starting point for our Guided project and opening the folder Visual Studio Code. If necessary, go back and follow the Setup instructions.
+    The previous unit includes a Setup section that describes how to open the Starter project. If necessary, go back and follow the Setup instructions.
 
 1. In the **EXPLORER** view, expand the **Starter** folder, then select **Program.cs**.
 
@@ -24,11 +25,9 @@ In this task, you'll review the code that's provided as a Starter project for th
 
 1. Take a few minutes to review the code in the Program.cs file.
 
-1. Notice that the top portion of your code begins with a `Using` statement and some variable declarations.  
+1. Notice that the top portion of your code begins with some variable declarations.  
 
     ``` c#
-    using System;
-
     // the ourAnimals array will store the following: 
     string animalSpecies = "";
     string animalID = "";
@@ -46,20 +45,18 @@ In this task, you'll review the code that's provided as a Starter project for th
     string[,] ourAnimals = new string[maxPets, 6];
     ```
 
-    The `using` statement enables you to write code that implements members of the `System` namespace without requiring us to specify `System`. For example, your code can use the `Console.WriteLine()` method without having to specify `System.Console.WriteLine()`. Among other things, the `using` statement makes your code easier to read.
+    At the top of the file, you see a comment line and a list of variables. These variables, `animalSpecies` through `animalNickname`, will be used to hold the values of the pet characteristics. A bit later in the code you will be assigning these values to a multidimensional string array named `ourAnimals`. Each of these variables is initialized to contain a zero length string `""`. The `ourAnimals` array is declared a little further down in the code (you'll get to it soon).
 
-    Next, you see a comment line and a list of variables. These variables, `animalSpecies` through `animalNickname`, will be used to hold the values of the pet characteristics. A bit later in the code you will be assigning these values to a multidimensional string array named `ourAnimals`. Each of these variables is initialized to contain a zero length string `""`. The `ourAnimals` array is declared a little further down in the code (you'll get to it soon).
+    The next group of variables is a mix of `string` and `int` variables that you'll use to generate sample data, read user input, and establish exit criteria for your main program loop. One interesting thing that you may have noticed is the code line `string? readResult;`. When used in a variable declaration like this, the `?` character defines a nullable type variable. When reading user entered values with the `Console.ReadLine()` method, it's best to use a nullable type.
 
-    The next group of variables is a mix of `string` and `int` variables that will be used help generate sample data, read user input, and establish exit criteria for our main program loop. One interesting thing that you may have noticed is the code line `string? readResult;`. When used in a variable declaration like this, the `?` character is used to define a nullable type of the corresponding non-nullable variable type. When reading user entered values with the `Console.ReadLine()` method, it's best to use a nullable type.
-
-    The final variable is our two-dimensional string array named `ourAnimals`. Since we're not initializing the array, we use the `new` operator. The number of rows is defined by maxPets, which has been initialized to 8. The number of characteristics that we're storing is six, the string variables that we examined above.  
+    The final variable is a two-dimensional string array named `ourAnimals`. Since you're not initializing the array, you use the `new` operator. The number of rows is defined by maxPets, which has been initialized to eight. The number of characteristics that you're storing is six, the string variables that you examined above.  
 
 1. Scroll down to examine the `for` loop that contains an `if-elseif-else` selection construct within its code block.
 
     > [!NOTE]
     > If you see a `switch` statement instead of an `if-elseif-else` inside the code block of your `for` loop, ensure that you are reviewing the Program.cs file in the Starter folder, not the Program.cs file in the Final folder. You don't want to make changes to the the code in the Final folder because you may need to use it as a reference later in this module.
 
-1. Notice that the `for` loop uses the `maxPets` variable to establish an upper bound on the number of iterations. Also notice that the `if-elseif-else` construct selectively branches our code so that we can define different pet characteristics for the pets in our sample data set.
+1. Notice that the `for` loop uses the `maxPets` variable to establish an upper bound on the number of iterations. Also notice that the `if-elseif-else` construct selectively branches your code so that you can define different pet characteristics for the pets in your sample data set.
 
     The `if-elseif-else` construct is used to define different values for the first four iterations of the `for` loop. After that fourth iteration, all characteristics are assigned an empty, or zero-length, string.
 
@@ -67,17 +64,17 @@ In this task, you'll review the code that's provided as a Starter project for th
 
 1. Scroll to the bottom of the code file, and then examine the code that's used to display the menu options and read the user selection.
 
-1. Notice that we assign the value returned by the `Console.ReadLine()` method to the nullable string `readResult`.
+1. Notice that you assign the value returned by the `Console.ReadLine()` method to the nullable string `readResult`.
 
-    Using a nullable string is best practice for capturing input from the ReadLine() method. Once we verify that the input value isn't null, we assign the value to a standard string variable named `menuSelection`, which we can evaluate without a concern that it may contain a null value. Many methods that accept strings as an input parameter will throw an error if they passed a null value. If we don't follow this input pattern, the code compiler is like to generate a warning when we build our project.
+    Using a nullable string is best practice for capturing input from the ReadLine() method. Once you verify that the input value isn't null, you assign the value to a standard string variable named `menuSelection`, which you can evaluate without a concern that it may contain a null value. Many methods that accept strings as an input parameter will throw an error if they passed a null value. If you don't follow this input pattern, the code compiler is like to generate a warning when you build your project.
 
-    The final lines of our Program.cs file echo the menu option selection and then pause execution until the Enter key is pressed.
+    The final lines of the Program.cs file echo the menu option selection and then pause execution until the Enter key is pressed.
 
 ## Convert if statement to switch statement
 
-In this task, we'll walk through the process of converting the existing `if-elseif-else` construct to a `switch-case` construct that improves the readability of our code. Let's get started.
+In this task, you'll walk through the process of converting the existing `if-elseif-else` construct to a `switch-case` construct. A `switch` statement improves the readability of your code.
 
-1. Scroll up to the start of the `for` loop that we use to generate our sample data.
+1. Scroll up to the start of the `for` loop that's used to generate your sample data.
 
 1. Notice that the `if-elseif-else` construct begins with the following `if` statement and code block:
 
@@ -113,7 +110,7 @@ In this task, we'll walk through the process of converting the existing `if-else
 
 1. Notice that a red squiggly line symbol now appears under the `;` at the end of the `break` statement.
 
-    We seem to have created a couple of issues, but do't worry, we'll fix them. Visual Studio Code helps us to spot issues in our code, so let's investigate what this squiggly line is alerting us to. First off, we haven't closed the code block for our `switch` statement. Also, we now have an `else if` without the `if`, which isn't allowed. We will fix each of these issues as we complete the process of converting to a `switch`.
+    Visual Studio Code uses a red squiggly line to help you to spot issues in your code. In this case, there are a few issues. First, you haven't closed the code block for your `switch` statement. Also, you have an `else if` without the `if`, which isn't allowed. You'll fix each of these issues as you complete the conversion from an `if` to a `switch`.
 
 1. Replace the `else if (i == 1)` statement and code block with the following code:
 
@@ -225,7 +222,7 @@ In this task, we'll walk through the process of converting the existing `if-else
     You can use the TERMINAL panel to run Command Line Interface (CLI) commands, such as `dotnet build` and `dotnet run`. The `dotnet build` command will compile your code and display error and warning messages related to your code syntax.
 
     > [!IMPORTANT]
-    > You need to ensure that terminal command prompt is open to the root of your project workspace. In our case, the root of our project workspace is the Starter folder, where our Starter.csproj and Program.cs files are located. When we run commands in the terminal, the commands will try to perform actions using current folder location. If we try to run the `dotnet build` or `dotnet run` commands from a folder location that does not contain our files, the commands will generate error messages.
+    > You need to ensure that terminal command prompt is open to the root of your project workspace. In this case, the root of your project workspace is the Starter folder, where your Starter.csproj and Program.cs files are located. When you run commands in the terminal, the commands will perform actions using current folder location. If you run the `dotnet build` or `dotnet run` command from a folder location that does not contain your files, the command will generate error messages.
 
 1. At the TERMINAL command prompt, to build your project code, enter the following command: `dotnet build`  
 
@@ -247,20 +244,20 @@ In this task, we'll walk through the process of converting the existing `if-else
 
     `C:\Users\someuser\Desktop\GuidedProject\Starter\Program.cs(53,18): error CS1002: ; expected [C:\Users\someuser\Desktop\GuidedProject\Starter\Starter.csproj]`
 
-    This message tells us the type of error that was detected and where to find it. In this case, the message tells us that our Program.cs file contains an error - `error CS1002: ; expected`. The `; expected` suggests that we forgot to include a `;` at the end of a statement. The `Program.cs(53,18)` portion of the message tells us that the error is located on code line 53, at a position 18 characters in from the left.
+    This message tells you the type of error that was detected and where to find it. In this case, the message tells you that the Program.cs file contains an error - `error CS1002: ; expected`. The `; expected` suggests that you forgot to include a `;` at the end of a statement. The `Program.cs(53,18)` portion of the message tells you that the error is located on code line 53, at a position 18 characters in from the left.
 
-    A syntax error like this prevents our Build from succeeding (Build FAILED). Some Build messages provide a "Warning" instead of an "Error", which means there's something to be concerned with, but we can try running the program anyway (Build succeeded).
+    A syntax error like this prevents your Build from succeeding (Build FAILED). Some Build messages provide a "Warning" instead of an "Error", which means there's something to be concerned with, but you can try running the program anyway (Build succeeded).
 
     Once you've fixed the issues and saved your updates, you can run the `dotnet build` command again. Continue until you have 0 Warning(s) and 0 Error(s).
 
     > [!NOTE]
-    > If you have trouble resolving an issue on your own, you can examine the Program.cs code in the Final folder that's included as part of the download that you completed during Setup. The Program.cs code in the Final folder represents the conclusion of all exercises in this module, so it will include code that you have not created yet. It may look considerably different than the Program.cs code that you have developed at this point in the Guided project. However, you can try examining the Program.cs code in Final to help you isolate and fix an issue in your code if you need to. Try not to use the code in the Final folder as a guide if you can avoid it. Remember that we learn from our mistakes and that every developer spends time finding and fixing errors.
+    > If you have trouble resolving an issue on your own, you can examine the Program.cs code in the Final folder that's included as part of the download that you completed during Setup. The Program.cs code in the Final folder represents the conclusion of all exercises in this module, so it will include code that you have not created yet. It may look considerably different than the Program.cs code that you have developed at this point in the Guided project. However, you can try examining the Program.cs code in Final to help you isolate and fix an issue in your code if you need to. Try not to use the code in the Final folder as a guide if you can avoid it. Remember that developers learn from their mistakes and that every developer spends time finding and fixing errors.
 
 1. Close the Terminal panel.
 
 ## Create program menu loop
 
-In this task, we'll build a `do` loop that surrounds the menu options and the code that reads the user's menu selection. This loop will ensure that the main menu is refreshed for the user after our code processes a user's menu selection. This loop will continue until the user chooses to exit the program. Let's get started.
+In this task, you'll build a `do` loop that surrounds the menu options and the code that reads the user's menu selection. This loop ensures that the main menu is refreshed for the user each time they make a menu selection. This loop will iterate until the user chooses to exit the program.
 
 1. In the Visual Studio Code Editor, at the top of the code that's used to display the menu options, locate the following Line Comment:
 
@@ -276,7 +273,7 @@ In this task, we'll build a `do` loop that surrounds the menu options and the co
 
     ```
 
-    By enclosing the program's menu options inside a `do` loop, we ensure that the user will see the menu options at least one time.
+    By enclosing the program's menu options inside a `do` loop, you ensure that the user will see the menu options at least one time.
 
 1. Scroll down to the bottom of the code file.
 
@@ -289,7 +286,7 @@ In this task, we'll build a `do` loop that surrounds the menu options and the co
     } while ();
     ```
 
-    Notice that we've closed the code block for the `do` loop, and that we've begun the construction of our while statement.
+    Notice that you've closed the code block for the `do` loop, and that you've begun the construction of your while statement.
 
 1. To specify the Boolean expression that will be evaluated by the while statement, update the while statement as follows:
 
@@ -297,9 +294,9 @@ In this task, we'll build a `do` loop that surrounds the menu options and the co
     while (menuSelection != "exit");
     ```
 
-    This expression will ensure that our `do` loop iterates, displaying the menu and reading the user selection, until the user chooses to "exit" the application.
+    This expression will ensure that your `do` loop iterates until the user chooses to "exit" the application. Each iteration will display the menu and read the user's menu selection.
 
-1. Notice that the code line indentation isn't what we expect to see inside the code block of our `do` loop.
+1. Notice that the code line indentation isn't what you expect to see inside the code block of your `do` loop.
 
 1. To have Visual Studio Code "fix" the indentation of your code lines, right-click inside the code Editor, and then select **Format Document**.
 
@@ -370,9 +367,9 @@ In this task, we'll build a `do` loop that surrounds the menu options and the co
 
     If your code stopped running after you entered 1, make sure that you saved your code updates. If you didn't, save your code now and then run the program again.
 
-    You may notice that you can enter any text or numeric value, or even a combination of letters and numbers. We'll address this issue when we develop the code that executes in response to the user's menu selections.
+    You may notice that you can enter any text or numeric value, or even a combination of letters and numbers. You'll address this issue when you develop the code that executes in response to the user's menu selections.
 
-1. At the Terminal command prompt, to verify that our loop's exit criteria is being evaluated correctly, enter either **Exit** or **exit**.
+1. At the Terminal command prompt, to verify that your loop's exit criteria is being evaluated correctly, enter either **Exit** or **exit**.
 
     When you enter either "Exit" or "exit", and then press Enter after the code echoes your selection, the while expression should evaluate to `false` and the code execution should end.
 
@@ -383,15 +380,15 @@ In this task, we'll build a `do` loop that surrounds the menu options and the co
 
 ## Write switch statement for menu selections
 
-In this task, we'll write the code for a `switch` statement that branches our code execution based on the value assigned to `menuSelection`. We'll create a switch label that corresponds to each menu item number so that each menu item is managed separately. A `switch` is exactly what we need in order to satisfy the intended logic of our application. Let's get started.
+In this task, you'll write the code for a `switch` statement that branches your code execution based on the value assigned to `menuSelection`. You'll create a `switch` label that corresponds to each menu item number so that each menu item is managed separately. A `switch` is exactly what you need in order to satisfy the intended logic of your application.
 
-1. In the Visual Studio Code Editor, locate the following `Console.WriteLine()` code line that's used to echo back our menu selection.
+1. In the Visual Studio Code Editor, locate the following `Console.WriteLine()` code line that's used to echo back the menu selection.
 
     ```c#
     Console.WriteLine($"You selected menu option {menuSelection}.");
     ```
 
-1. To comment-out the `Console.WriteLine()` and `Console.ReadLine()` statements at the bottom of our code file and to begin the development of our `switch` statement, update your code as follows:
+1. To begin the development of your `switch` statement, update your code as follows:
 
     ```c#
     //Console.WriteLine($"You selected menu option {menuSelection}.");
@@ -407,7 +404,7 @@ In this task, we'll write the code for a `switch` statement that branches our co
 
     ```
 
-1. To add the first `case` pattern to our `switch` statement, update your `switch` statement code as follows:
+1. To add the first `case` pattern to your `switch` statement, update your `switch` statement code as follows:
 
     ```c#
     switch(menuSelection)
@@ -418,7 +415,7 @@ In this task, we'll write the code for a `switch` statement that branches our co
     }
     ```
 
-    You may have noticed that the case pattern used here looks slightly different from the case pattern used when building our sample data earlier in our application (`case 1:` versus `case "1":`). The difference is that we were checking integer values previously and we're checking string values now.
+    You may have noticed that the case pattern used here looks slightly different from the case pattern used when building the sample data earlier in the application (`case 1:` versus `case "1":`). The difference is that you were checking integer values previously and you're checking string values now.
   
 1. To create selection branches in your `switch-case` construct for each of the remaining menu selection numbers, add additional `case` options as follows:
 
@@ -452,7 +449,7 @@ In this task, we'll write the code for a `switch` statement that branches our co
     }
     ```
 
-1. Notice that we can add the optional `default` case to the end of our selection list as follows:
+1. Notice that you can add the optional `default` case to the end of your selection list as follows:
 
     ```c#
     switch(menuSelection)
@@ -481,7 +478,7 @@ In this task, we'll write the code for a `switch` statement that branches our co
 
 ## Write placeholder code for each case of the switch statement
 
-In this task, we'll update the code execution paths created by our `switch` statement. When we're done, each switch section will provide feedback to the user that acknowledges the user's menu selection. Providing feedback that acknowledges user input is especially important since we won't be able to complete the code for all menu options during this module. The feedback lets the user know that the code recognized their input, even if the application isn't able to process the request. Let's get started.
+In this task, you'll update the code execution paths created by your `switch` statement. When you're done, each switch section will provide feedback to the user that acknowledges the user's menu selection. Providing feedback that acknowledges user input is especially important since you won't be able to complete the code for all menu options during this module. The feedback lets the user know that the code recognized their input, even if the application isn't able to process the request.
 
 1. In the Visual Studio Code Editor, locate the code line containing the `case "1":` selection:
 
@@ -580,7 +577,7 @@ In this task, we'll update the code execution paths created by our `switch` stat
 
 ## Check your work
 
-In this task, we'll run our application from the Integrated Terminal and verify that our `switch` statement is branching our code as intended and that the expected feedback messages are being displayed for each menu selection. We'll also retest the exit criteria of our main menu loop. Let's get started.
+In this task, you'll run your application from the Integrated Terminal and verify that your `switch` statement is branching your code as intended. You'll also verify that the expected feedback messages are being displayed for each menu selection. The exit criteria for your main menu loop will also be retested.
 
 1. If necessary, open Visual Studio Code's Integrated Terminal panel.
 
@@ -592,7 +589,7 @@ In this task, we'll run our application from the Integrated Terminal and verify 
 
 1. Repeat the previous step, entering each of the other menu option numbers to verify that the expected message is displayed in each case.
 
-1. At the Terminal command prompt, enter either **Exit** or **exit** to verify that our exit criteria is still being evaluated correctly.
+1. At the Terminal command prompt, enter either **Exit** or **exit** to verify that your exit criteria is still being evaluated correctly.
 
     > [!IMPORTANT]
     > If code execution does not stop as expected, you can press **Ctrl-C** in the Integrated Terminal to force execution to stop.  

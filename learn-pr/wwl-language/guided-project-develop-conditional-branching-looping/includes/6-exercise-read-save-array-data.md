@@ -1,4 +1,5 @@
 
+
 In this final step of your development process, you will develop the data entry validation loops for each pet characteristic and then store the new ourAnimals array data. The detailed tasks that you will complete during this exercise are:
 
 1. Read and validate species: build a loop and the inner code structure used to enter and validate the pet species.

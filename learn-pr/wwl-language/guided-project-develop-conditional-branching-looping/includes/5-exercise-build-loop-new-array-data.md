@@ -1,4 +1,5 @@
 
+
 In this step of your development process, you will begin working on the feature of your application that enables the user to add new animals to the ourAnimals array. To get started, you will first work on calculating the initial values of your loop control variables. You will then focus on constructing the loop that enables your app to collect user specified data for the animals. The detailed tasks that you will complete during this exercise are:
 
 1. Calculate petCount: write code that counts the number of pets in the ourAnimals array that have assigned data.

@@ -23,8 +23,9 @@ By the end of this module, you will be able to develop code that combines select
 
 In this module, you'll practice how to:
 
-- Use Visual Studio Code to develop a C# console application that uses a combination of selection and iteration statements to implement logical workflows in accordance with supplied application data and user interactions.
-- Evaluate the underlying conditions and make an informed decision when choosing between if-elseif-else and switch statements, and between foreach, for, while, and do iteration statements.
+- Use Visual Studio Code to develop a C# console application that uses a combination of selection and iteration statements to implement logical workflows.
+- Evaluate the underlying conditions in your application and make an informed decision between selection statement options.
+- Evaluate the underlying conditions in your application and make an informed decision between iteration statement options.
 - Scope variables at an appropriate level within an application.
 
 ## Prerequisites
