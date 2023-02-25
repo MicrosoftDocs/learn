@@ -1,14 +1,14 @@
 
 
-You'll be using Visual Studio Code to develop the initial version of a C# console application. You will be writing code that evaluates boolean expressions, implements various selection and iteration statements (branching and looping structures), and declares variables within code blocks at the appropriate scoping level for the app. Here, we'll discuss the overall goals of the project and how you'll build and test your application. We'll also cover how to set up your development environment, including a "Starter" code project.
+In this guided project, you'll use Visual Studio Code to develop the initial version of a C# application. Your application will use boolean expressions, selection statements, and iteration statements to implement the features of a design specification. As you develop the application, you'll need to scope variables at the appropriate level.
 
 ## Project overview
 
-The design specification for the Contoso Pets application identifies the following:
+You're working on the Contoso Pets application, an application that helps place pets in new homes. The specifications for your application are:
 
-- The application will be a C# console application.
-- The application data will be accessible from a multidimensional string array named ourAnimals.
-- The ourAnimals array will include the following "pet characteristics" for each animal:
+- Create a C# console application.
+- Store application data in a multidimensional string array named ourAnimals.
+- The ourAnimals array includes the following "pet characteristics" for each animal:
 
     - Pet ID #.
     - Pet species (cat or dog).
@@ -17,26 +17,26 @@ The design specification for the Contoso Pets application identifies the followi
     - A description of the pet's personality.
     - The pet's nickname.
 
-- The application will load a sample dataset that represents dogs and cats currently in your care.
-- The application will present a list of menu options that enable an app user to access the main features of the application.
-- The application will include the following features:
+- Implement a sample dataset that represents dogs and cats currently in your care.
+- Display menu options to access the main features of the application.
+- The main features enable the following tasks:
 
     - List the pet information for all animals in the ourAnimals array.
-    - Add new animals to the ourAnimals array (the following conditions apply):
+    - Add new animals to the ourAnimals array. The following conditions apply:
 
-        - An animal's age and some physical characteristics for a pet may be unknown until a veterinarian's examination (for example: breed, neutered/spayed status).
-        - An animal's nickname and personality may be unknown when a pet first arrives.
         - The pet species (dog or cat) must be entered when a new animal is added to the ourAnimals array.
         - A pet ID must be programmatically generated when a new animal is added to the ourAnimals array.
+        - Some physical characteristics for a pet may be unknown until a veterinarian's examination. For example: age, breed, and neutered/spayed status.
+        - An animal's nickname and personality may be unknown when a pet first arrives.
 
-    - Ensure animal ages and physical descriptions are complete (this action can occur after a veterinarian's examination).
+    - Ensure animal ages and physical descriptions are complete. This may be required after a veterinarian's examination.
     - Ensure animal nicknames and personality descriptions are complete (this action can occur after the team gets to know a pet).
     - Edit an animal’s age (if a pet's birth date is known and the pet has a birthday while in our care).
     - Edit an animal’s personality description (a pet may behave differently after spending more time in our care).
     - Display all cats that meet user specified physical characteristics.
     - Display all dogs that meet user specified physical characteristics.
 
-Some initial code development has already been completed. The Starter code project for this Guided project module includes a Program.cs file that provides the following code features:
+An initial version of the application has already been completed. The Starter code project for this Guided project module includes a Program.cs file that provides the following code features:
 
 - The code declares variables used to collect and process pet data and menu item selections.
 - The code declares the ourAnimals array.
@@ -56,7 +56,7 @@ Some initial code development has already been completed. The Starter code proje
 
 - The code reads the user's menu item selection and displays a message echoing their selection.
 
-Your goal is to update the existing code, and then develop app features in support of the first two menu options shown above. The key tasks that you'll need to accomplish are:
+Your goal is to develop the features that implement the first two menu options. To achieve this goal, you'll complete the following tasks:
 
 1. Update the code that's used to create the sample data for the app.
 1. Construct a loop around the main menu and create a selection statement that establishes a code branch for each menu option.
@@ -64,7 +64,7 @@ Your goal is to update the existing code, and then develop app features in suppo
 1. Build a loop for entering new ourAnimals array data (menu option 2 - part 1).
 1. Write code to read and save new ourAnimals array data (menu option 2 - part 2).
 
-You will use Visual Studio Code as your development environment, and you will test your application at each stage of your development process.
+You'll test your application at each stage of the development process.
 
 ## Setup
 
