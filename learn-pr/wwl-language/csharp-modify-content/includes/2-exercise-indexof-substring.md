@@ -176,7 +176,7 @@ Hardcoded strings like `"<span>"` in the previous code listing are known as "mag
 
 1. Review the previous code to consider how the code might break if you hardcoded the string `"<span>"` multiple times in your code, but misspelled one instance of it as `"<sapn>"`.
 
-    The compiler won't catch '"<sapn>"' at compile time because the value is in a string. The misspelling will likely cause problems at run time, and depending on the complexity of your code, it might be difficult to track down.
+    The compiler won't catch `"<sapn>"` at compile time because the value is in a string. The misspelling will likely cause problems at run time, and depending on the complexity of your code, it might be difficult to track down.
 
     Furthermore, if you change the string `"<span>"` to `"<div>"`, but forget to change the number `6`, then your code will produce undesirable results.
 
