@@ -64,12 +64,3 @@ Behind the scenes, however, a new instance of `System.String` is created and ini
 
 - Value types can hold smaller values and are stored in the stack. Reference types can hold large values, and a new instance of a reference type is created using the `new` operator. Reference type variables hold a reference (the memory address) to the actual value stored in the heap.
 - Reference types include arrays, strings, and classes.
-
-## Check your knowledge
-
-## Multiple Choice
-
-Which data type is disposed of immediately after a .NET program completes and closes?
-( ) reference {{That’s incorrect. When the stack frame has finished executing, the values in the stack are removed.}}
-(x) value {{That’s correct. When the stack frame has finished executing, the values in the stack are removed.}}
-( ) string {{That’s incorrect. When the stack frame has finished executing, the string values in the stack are removed.}}
