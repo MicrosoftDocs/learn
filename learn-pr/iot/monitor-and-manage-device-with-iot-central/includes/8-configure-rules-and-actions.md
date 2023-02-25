@@ -1,4 +1,4 @@
-So far, you've connected your coffee machine to the Azure IoT Central application, enabling the exchange of data that allows you to monitor and manage your coffee machine. In this unit, you create rules that trigger actions when the water temperature of the coffee machine is outside the normal range.
+So far, you've connected your coffee machine to the Azure IoT Central application, enabling the exchange of data that allows you to monitor and manage your coffee machine. Here, you create rules that trigger actions when the water temperature of the coffee machine is outside the normal range.
 
 ## Create rules in IoT Central with email as the action
 

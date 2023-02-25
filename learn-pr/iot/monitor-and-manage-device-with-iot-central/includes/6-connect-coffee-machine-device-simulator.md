@@ -4,7 +4,7 @@ In practice, you will connect Azure IoT Central to a physical device, such as an
 
 ## Add the coffee machine in IoT Central
 
-To add your coffee machine to your application, you use the **Connected Coffee Machine** device template you created in the previous unit.
+To add your coffee machine to your application, you use the **Connected Coffee Machine** device template you created before.
 
 1. To add a new device, first browse to the URL for your IoT application that you created in the previous exercise, such as https://coffee-maker-1234.azureiotcentral.com.
 
@@ -368,7 +368,7 @@ The following steps show you how to create a client application that implements 
 
 ## Validate your connection
 
-You've now worked with the Azure IoT Central application and connected the coffee machine to Azure IoT Central. You are well on your way to begin to monitor and manage your remote coffee machine. In this unit, you take a moment to validate your setup and connection by using the **Connected Coffee Machine** template that you defined earlier. You update the optimal temperature on the **Properties** form, run commands to update the state of your machine, and view your connected coffee machine telemetry.
+You've now worked with the Azure IoT Central application and connected the coffee machine to Azure IoT Central. You are well on your way to begin to monitor and manage your remote coffee machine. Here, you take a moment to validate your setup and connection by using the **Connected Coffee Machine** template that you defined earlier. You update the optimal temperature on the **Properties** form, run commands to update the state of your machine, and view your connected coffee machine telemetry.
 
 ## Update properties to sync your application with the coffee machine
 
