@@ -4,7 +4,7 @@ Applications often use a combination of selection and iteration statements to es
 
 Suppose you're a developer working on the Contoso Pets application, an application that's used to find homes for stray or abandoned pets. Some of the development work has already been completed. For example, the application's main menu and the code used to store new pet information have been developed. However, certain information isn't always available when a pet is entered in your system. You need to develop the features that ensure a complete dataset exists for each animal in your care.
 
-In this module, you'll to develop the following features of the Contoso Pets application:
+In this module, you'll develop the following features of the Contoso Pets application:
 
 - A feature that ensures animal ages and physical descriptions are complete.
 - A feature that ensures animal nickname and personality descriptions are complete.
@@ -18,8 +18,9 @@ By the end of this module, your Contoso Pets application will ensure that every 
 
 In this module, you'll demonstrate your ability to:
 
-- Use Visual Studio Code to develop a C# console application that uses a combination of selection and iteration statements to implement logical workflows in accordance with supplied application data and user interactions.
-- Evaluate the underlying conditions and make an informed decision when choosing between if-elseif-else and switch statements, and between foreach, for, while, and do iteration statements.
+- Use Visual Studio Code to develop a C# console application that uses a combination of selection and iteration statements to implement logical workflows.
+- Evaluate the underlying conditions in your application and make an informed decision between selection statement options.
+- Evaluate the underlying conditions in your application and make an informed decision between iteration statement options.
 - Scope variables at an appropriate level within an application.
 
 ## Prerequisites

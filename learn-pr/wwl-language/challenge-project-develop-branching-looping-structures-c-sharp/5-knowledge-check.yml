@@ -24,14 +24,14 @@ quiz:
     - content: "Links to help documentation."
       isCorrect: false
       explanation: "Incorrect. Error and Warning messages do not include links to documentation."
-  - content: "If a developer is going to create a iteration statement, under which condition is it better create a `while` statement rather than a `do` statement?"
+  - content: "If a developer needs to create an iteration statement, under which condition is a `while` statement a better choice than a `do` statement?"
     choices:
-    - content: "when, prior to the iteration code block, the code doesn't know the values for the expression that will be evaluated by iteration statement"
+    - content: "When the expression values being evaluated by the iteration statement are unknown prior to the iteration code block."
       isCorrect: false
       explanation: "Incorrect. A `do` statement would work well in this situation."
-    - content: "when, prior to the iteration code block, the code does know the values for the expression that will be evaluated by iteration statement"
+    - content: "When the expression values being evaluated by the iteration statement are known prior to the iteration code block."
       isCorrect: true
       explanation: "Correct. When the code is able to evaluate the loop expression prior to the loop, a `while` statement allows the code to implement 0 iterations."
-    - content: "when the developer has an outer `do` or `while` loop and needs to create one or more inner loops that use a `do` or `while` statement"
+    - content: "When the developer has an outer `do` or `while` loop and needs to create one or more inner loops that use a `do` or `while` statement."
       isCorrect: false
       explanation: "Incorrect. Nesting of loops is not a factor in this decision."
