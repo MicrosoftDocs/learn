@@ -17,21 +17,21 @@ quiz:
     choices:
     - content: "One or more suggestions for how to fix any syntax issues detected."
       isCorrect: false
-      explanation: "Incorrect. Error and Warning messages do not include suggested fixes."
+      explanation: "Incorrect. Error and Warning messages don't include suggested fixes."
     - content: "The line number and information about what caused the error."
       isCorrect: true
       explanation: "Correct. Error and Warning messages include a description of the issue and the line number where it occurs."
     - content: "Links to help documentation."
       isCorrect: false
-      explanation: "Incorrect. Error and Warning messages do not include links to documentation."
-  - content: "If a developer needs to create an iteration statement, under which condition is a `while` statement a better choice than a `do` statement?"
+      explanation: "Incorrect. Error and Warning messages don't include links to documentation."
+  - content: "A developer needs to create an iteration statement. Under what condition is a `while` statement a better choice than a `do` statement?"
     choices:
-    - content: "When the expression values being evaluated by the iteration statement are unknown prior to the iteration code block."
+    - content: "When the expression values evaluated by the iteration statement are unknown prior to the iteration code block."
       isCorrect: false
       explanation: "Incorrect. A `do` statement would work well in this situation."
-    - content: "When the expression values being evaluated by the iteration statement are known prior to the iteration code block."
+    - content: "When the expression values evaluated by the iteration statement are known prior to the iteration code block."
       isCorrect: true
-      explanation: "Correct. When the code is able to evaluate the loop expression prior to the loop, a `while` statement allows the code to implement 0 iterations."
-    - content: "When the developer has an outer `do` or `while` loop and needs to create one or more inner loops that use a `do` or `while` statement."
+      explanation: "Correct. When the code is able to evaluate the loop expression prior to the loop, a `while` statement allows the code to implement zero iterations."
+    - content: "When the developer creates nested `do` or `while` loops."
       isCorrect: false
-      explanation: "Incorrect. Nesting of loops is not a factor in this decision."
+      explanation: "Incorrect. Nesting loops isn't a factor in this decision."
