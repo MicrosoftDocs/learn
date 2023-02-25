@@ -1,5 +1,4 @@
 
-
 To finish this module, we're going to use the show card to demonstrate several Adaptive Card elements that we didn't use in the earlier units. These new elements include:
 
 - Rendering a video.

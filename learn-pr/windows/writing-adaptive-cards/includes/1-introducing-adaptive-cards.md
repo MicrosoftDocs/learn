@@ -1,6 +1,4 @@
 
-### Overview of Adaptive Cards
-
 Adaptive Cards communicate information at a glance, and their user interface allows users to view and interact with the cards. You can share Adaptive Cards with any number of contacts, across a variety of devices and platforms, including notifications on Windows, Android, and iOS. To create Adaptive Cards, you use JSON scripts.
 
 Adaptive Cards convey useful information and allow users to provide a quick response without having to open an app. These cards can enable greater engagement with your personal contacts: groups such as customers, company colleagues, club members, friends, and so on.
@@ -11,21 +9,21 @@ First, let's look at some sample JSON scripts for Adaptive Cards. Open another b
 
 [https://messagecardplayground.azurewebsites.net/](https://messagecardplayground.azurewebsites.net/)
 
-Use the **Select a sample** list to choose a sample, and then examine the JSON script and its visual interpretation. You can see that it was built by using simple graphics and a column type layout. Also note the types of applications you can create: weather updates, requests for approval, flight schedules, surveys, and so on. A singular focus is key to the successful use of Adaptive Cards.
+Use the **Select a sample** list to choose a sample, and then examine the JSON script and its visual interpretation. You can see that it was built by using simple graphics and a column type layout. Also note the types of applications you can create: requests for approval, flight schedules, surveys, and so on. A singular focus is key to the successful use of Adaptive Cards.
 
- ![Using the sample sandbox.](../media/cards-sandbox.png)
+ ![Screenshot showing how to use the sample sandbox.](../media/cards-sandbox.png)
 
 ### Adaptive Card layout
 
 The typical layout of an Adaptive Card consists of a title, perhaps some descriptive text, and then one or more columns of detail. This type of layout works in many situations. Because each column can contain other columns and containers, you can create cards of greater complexity by nesting objects inside each other. By varying the fonts, font sizes, colors, spacing, background images, and so on, you can create different results.
 
-| ![Adaptive Card column layout.](../media/show-card-action.svg) |
+| ![Screenshot of the an Adaptive Card column layout.](../media/show-card-action.svg) |
 |:--:|
 | _A three-column layout_ |
 
 Column and text sizes are mostly determined by the system that's rendering the card, and they aren't specifically stated. For example, the widths of the three columns in the previous image are determined by the width of the whole card, taking into account the specified *spacing* between each element. Spacing (and font size) is not specified in pixels, but by using enumerations with terms such as `"Small"`, `"Medium"`, and `"Large"`.
 
-| ![Submit action.](../media/submit-action.svg) | 
+| ![Screenshot showing a two-column adaptive card layout.](../media/submit-action.svg) | 
 |:--:|
 | _A two-column layout, with the title, description, and fact set in one column and an image in the other_ |
 
@@ -42,7 +40,7 @@ Within each column, elements are ordered vertically. These elements can be:
 
 For example, you can use the *Open URL* action to direct a user to a new or updated product page. The *Submit* action encapsulates data entered by the user and sends it back to your server. The *Show card* action helps you subdivide complex messages into easily understandable chunks. There's no limit to how many Adaptive Cards you can nest with the *Show card* action.
 
-Completing the following units will give you a good grasp of the column layout, the elements, the inputs, and the actions you can use to create Adaptive Cards.
+Completing the following units will give you a good grasp of the column layout, elements, inputs, and the actions you can use to create Adaptive Cards.
 
 #### Supported platforms and hosts
 

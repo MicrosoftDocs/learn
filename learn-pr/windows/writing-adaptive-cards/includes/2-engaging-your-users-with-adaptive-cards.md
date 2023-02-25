@@ -1,4 +1,3 @@
-## Create your own Adaptive Card
 
 One of the features of Adaptive Cards is that the API is small and concise. The code that we're going to write in this module incorporates all the main features into one app.
 
