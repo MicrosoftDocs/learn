@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-format-strings.exercise-string-methods-padding
-title: Exercise - padding and alignment
+title: Exercise - Discover padding and alignment
 metadata:
-  title: Exercise - padding and alignment
-  description: Use methods of the string data type to pad and align string and numeric data.
-  ms.date: 1/3/2020
-  author: billwagner
-  ms.author: wiwagn
+  title: Exercise - Discover padding and alignment
+  description: "Exercise - Discover padding and alignment"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: eric
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 8
-azureSandbox: false
-interactive: csharp
+durationInMinutes: 12
 content: |
   [!include[](includes/4-exercise-string-methods-padding.md)]

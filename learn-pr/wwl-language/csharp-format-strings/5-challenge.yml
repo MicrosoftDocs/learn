@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-format-strings.challenge
-title: Challenge
+title: Exercise - Complete a challenge to apply string interpolation to a form letter
 metadata:
-  title: Challenge
-  description: Build a personalized marketing message using customer data.
-  ms.date: 1/3/2020
-  author: billwagner
-  ms.author: wiwagn
+  title: Exercise - Complete a challenge to apply string interpolation to a form letter
+  description: "Exercise - Complete a challenge to apply string interpolation to a form letter"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: eric
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10
-azureSandbox: false
-interactive: csharp
 content: |
   [!include[](includes/5-challenge.md)]
