@@ -4,7 +4,7 @@ uid: learn-windows.writing-adaptive-cards.3-adding-video-galleries-factsets-to-a
 metadata:
   title: Add video, galleries, and fact sets to Adaptive Cards
   description: Learn how to render video, set up a gallery of images with associated actions, and add a fact set - a bulleted list - to your Adaptive Card.
-  ms.date: 02/27/2023
+  ms.date: 2/7/2019
   displayType: one-Column
   author: PeterTurcan
   ms.author: v-pettur

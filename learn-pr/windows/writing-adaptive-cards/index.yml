@@ -3,7 +3,7 @@ uid: learn-windows.writing-adaptive-cards
 metadata:
   title: Creating Adaptive Cards
   description: Find out about the capabilities of Adaptive Cards, try out the range of user input and action, and then extend the app with Adaptive Cards APIs. 
-  ms.date: 02/27/2023
+  ms.date: 2/7/2019
   author: PeterTurcan
   ms.author: v-pettur
   ms.topic: interactive-tutorial
