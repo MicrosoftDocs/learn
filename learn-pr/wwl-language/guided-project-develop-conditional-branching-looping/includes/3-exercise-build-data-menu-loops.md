@@ -1,6 +1,6 @@
 
 
-In this exercise, you'll review the code in the Starter project, perform some code clean-up tasks, and then start adding features to your application. The tasks that you'll complete during this exercise are:
+In this exercise, you review the code in the Starter project, perform some code clean-up tasks, and then start adding features to your application. The tasks that you complete during this exercise are:
 
 1. Code review: review the contents of the Program.cs file.
 1. Sample data: convert the if-elseif-else structure to switch-case structure that improves readability.
@@ -11,7 +11,7 @@ In this exercise, you'll review the code in the Starter project, perform some co
 
 ## Review the contents of the Program.cs file
 
-In this task, you'll complete a walkthrough of the Starter project code. The Program.cs file contains a preliminary version of the application that you'll be updating during this module. The existing code generates sample data for the application and displays a list of menu options. The menu options represent the main features of your application.
+In this task, you complete a walkthrough of the Starter project code. The Program.cs file contains a preliminary version of the application that you update during this module. The existing code generates sample data for the application and displays a list of menu options. The menu options represent the main features of your application.
 
 1. Ensure that you have the **GuidedProject** folder open in Visual Studio Code.
 
@@ -74,7 +74,7 @@ In this task, you'll complete a walkthrough of the Starter project code. The Pro
 
 ## Convert if statement to switch statement
 
-In this task, you'll convert the existing `if-elseif-else` construct to a `switch-case` construct. A `switch` statement improves the readability of your code.
+In this task, you convert the existing `if-elseif-else` construct to a `switch-case` construct. A `switch` statement improves the readability of your code.
 
 1. Scroll up to the start of the `for` loop that's used to generate your sample data.
 
@@ -261,7 +261,7 @@ In this task, you'll convert the existing `if-elseif-else` construct to a `switc
 
 ## Create program menu loop
 
-In this task, you'll build a `do` loop that surrounds the menu options and the code that reads user input. This loop ensures that the main menu is refreshed for the user each time they make a menu selection. This loop iterates until the user chooses to exit the program.
+In this task, you build a `do` loop that surrounds the menu options and the code that reads user input. This loop ensures that the main menu is refreshed for the user each time they make a menu selection. This loop iterates until the user chooses to exit the program.
 
 1. In the Visual Studio Code Editor, at the top of the code that's used to display the menu options, locate the following comment:
 
@@ -386,7 +386,7 @@ In this task, you'll build a `do` loop that surrounds the menu options and the c
 
 ## Write switch statement for menu selections
 
-In this task, you'll write the code for a `switch` statement that branches your code execution based on the value assigned to `menuSelection`. You'll create a `switch` label that corresponds to each menu item number. Creating separate `switch` labels ensures that each menu item is managed separately. A `switch` statement does a good job of implementing the intended logic of your application.
+In this task, you write the code for a `switch` statement that branches your code execution based on the value assigned to `menuSelection`. You create a `switch` label that corresponds to each menu item number. Creating separate `switch` labels ensures that each menu item is managed separately. A `switch` statement does a good job of implementing the intended logic of your application.
 
 1. In the Visual Studio Code Editor, locate the following `Console.WriteLine()` code line that's used to echo back the menu selection.
 
@@ -484,7 +484,7 @@ In this task, you'll write the code for a `switch` statement that branches your 
 
 ## Write placeholder code for each case of the switch statement
 
-In this task, you'll update the code execution paths created by your `switch` statement. When you're done, each `switch` section will provide feedback to the user that acknowledges their menu selection. Providing feedback that acknowledges user input is especially important since you won't be able to complete the code for all menu options during this module. The feedback lets the user know that the code recognized their input, even if the application isn't able to process the request.
+In this task, you update the code execution paths created by your `switch` statement. When you're done, each `switch` section will provide feedback to the user that acknowledges their menu selection. Providing feedback that acknowledges user input is especially important since you won't be able to complete the code for all menu options during this module. The feedback lets the user know that the code recognized their input, even if the application isn't able to process the request.
 
 1. In the Visual Studio Code Editor, locate the code line containing the `case "1":` selection:
 
@@ -583,7 +583,7 @@ In this task, you'll update the code execution paths created by your `switch` st
 
 ## Check your work
 
-In this task, you'll run your application from the Integrated Terminal and verify that your `switch` statement is branching your code as intended. You'll also verify that the expected feedback messages are being displayed for each menu selection. The exit criteria for your main menu loop will also be retested.
+In this task, you run your application from the Integrated Terminal and verify that your `switch` statement is branching your code as intended. You also verify that the expected feedback messages are being displayed for each menu selection. The exit criteria for your main menu loop will also be retested.
 
 1. If necessary, open Visual Studio Code's Integrated Terminal panel.
 

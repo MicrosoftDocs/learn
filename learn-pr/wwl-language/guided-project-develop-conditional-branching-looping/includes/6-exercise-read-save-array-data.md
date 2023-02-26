@@ -1,6 +1,6 @@
 
 
-In this final step of your development process, you will develop the data entry validation loops for each pet characteristic and then store the new ourAnimals array data. The detailed tasks that you will complete during this exercise are:
+In this exercise, you'll develop the data entry validation loops for each pet characteristic and then store the new `ourAnimals` array data. The detailed tasks that you complete during this exercise are:
 
 1. Read and validate species: build a loop and the inner code structure used to enter and validate the pet species.
 1. Construct pet ID: write the code that uses petCount and the species name to construct the petID value.
@@ -15,7 +15,7 @@ In this final step of your development process, you will develop the data entry 
 
 ## Build loop to read and validate the pet species
 
-In this task, you will create a `do` loop that iterates until the user enters a valid species name, either **dog** or **cat**. You will reuse your voidable string `readResult` to capture the `Console.ReadLine()` input and you will reuse the `animalSpecies` string variable that you used when generating your sample data. For the expression that's evaluated as an exit criteria for your `do` loop, you will add a new Boolean variable named `validEntry` to your app.
+In this task, you'll create a `do` loop that iterates until the user enters a valid species name, either **dog** or **cat**. You'll reuse your voidable string `readResult` to capture the `Console.ReadLine()` input, and you will reuse the `animalSpecies` string variable that you used when generating your sample data. For the expression that's evaluated as an exit criteria for your `do` loop, you'll add a new Boolean variable named `validEntry` to your app.
 
 1. Ensure that you have Visual Studio Code open, and that your Program.cs file is visible in the Editor.
 
@@ -439,11 +439,11 @@ In this task, we will run our application from the Integrated Terminal and verif
 
 1. Enter the following values at the Terminal command prompts and verify each subsequent prompt is displayed:
 
-    - At the **Enter 'dog' or 'cat' to begin a new entry** prompt, enter **dog**
-    - At the **Enter the pet's age or enter ? if unknown** prompt, enter **?**
-    - At the **Enter a physical description of the pet (size, color, gender, weight, housebroken)** prompt, press the Enter key
-    - At the **Enter a description of the pet's personality (likes or dislikes, tricks, energy level)** prompt, press the Enter key
-    - At the **Enter a nickname for the pet** prompt, press the Enter key
+    - At the `Enter 'dog' or 'cat' to begin a new entry` prompt, enter **dog**
+    - At the `Enter the pet's age or enter ? if unknown` prompt, enter **?**
+    - At the `Enter a physical description of the pet (size, color, gender, weight, housebroken)` prompt, press the Enter key.
+    - At the `Enter a description of the pet's personality (likes or dislikes, tricks, energy level)` prompt, press the Enter key.
+    - At the `Enter a nickname for the pet` prompt, press the Enter key.
 
     The Terminal panel should be updated as follows:
 
