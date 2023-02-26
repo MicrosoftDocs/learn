@@ -21,15 +21,15 @@ When traffic decreases to less than the applicable threshold, the mitigation is 
 
 The following diagram depicts the data flow through the DDoS Protection.
 
-:::image type="content" source="../media/mitigation.png" alt-text="Screenshot of a customer subscribing to DDoS Protection, which triggers a DDoS protection policy. " border="false":::
+:::image type="content" source="../media/mitigation.png" alt-text="Diagram of a customer subscribing to DDoS Protection, which triggers a DDoS protection policy. " border="false":::
 
 In the following diagram DDoS Network Protection is enabled on the virtual network of the Azure (internet) load balancer that has the public IP associated with it.
 
-:::image type="content" source="../media/ddos-network-protection-vm.png" alt-text="Screenshot of data traffic anomalies activate DDoS Protection for attack mitigation.. " border="false":::
+:::image type="content" source="../media/ddos-network-protection-vm.png" alt-text="Diagram of data traffic anomalies activate DDoS Protection for attack mitigation. " border="false":::
 
 In the following diagram DDoS IP Protection is enabled on the frontend public IP address of a public load balancer.
 
-:::image type="content" source="../media/ddos-ip-protection-virtual-machine.png" alt-text="Screenshot of data traffic anomalies activate DDoS Protection for attack mitigation.. " border="false":::
+:::image type="content" source="../media/ddos-ip-protection-virtual-machine.png" alt-text="Screenshot of data traffic anomalies activate DDoS Protection for attack mitigation. " border="false":::
 ### Azure DDoS Protection Adaptive Tuning
 
 Each Azure application has its own traffic pattern, which is unique like a human fingerprint. In DDoS protection, the process is to detect the attack and then stop the attack. DDoS Protection uses a proprietary machine learning algorithm, which identifies the traffic pattern (fingerprint) for your application and uses that pattern to build an application traffic profile.
