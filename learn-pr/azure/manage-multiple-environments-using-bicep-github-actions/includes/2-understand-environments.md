@@ -6,15 +6,15 @@ In this unit, you'll learn about how environments in GitHub Actions help you sup
 
 Deployment processes make changes to your Azure resources, including resources in use. Changing resources involves some risk, because the changes that you deploy might not behave as you expect. You might even discover that the changes break your current setup.
 
-To minimize the risk of problems, it's a good practice to try out your changes in a safe way before you deploy them to your production environment. You do this by deploying the changes to a _non-production environment_.
+To minimize the risk of problems, it's a good practice to try out your changes in a safe way before you deploy them to your production environment. You minimize risk by deploying the changes to a _non-production environment_.
 
-Many organizations take this further and set up multiple non-production environments where they progressively deploy their changes before releasing to production. Each non-production environment serves a specific purpose and often has specific quality gates that must be met to proceed to the next environment. If something goes wrong, like a test failing, the deployment stops. As your deployment moves through each environment, your confidence in the changes grows.
+Many organizations set up multiple non-production environments where they progressively deploy their changes before releasing to production. Each non-production environment serves a specific purpose and often has specific quality gates that must be met to proceed to the next environment. If something goes wrong, like a test failing, the deployment stops. As your deployment moves through each environment, your confidence in the changes grows.
 
 Common environments include:
 
 - **Development**: A development environment is typically used by developers to try their changes in, and to quickly iterate on their work.
 
-  Development environments often have minimal controls so that team members can easily try out ideas. You might use a development environment to test a certain configuration setting on a resource, or to see how you can set up a new website with a back-end database in a secure way. A lot of these changes and trials might not advance in your deployment process, because you're eliminating the ideas that don't succeed.
+  Development environments often have minimal controls so that team members can easily try out ideas. You might use a development environment to test a certain configuration setting on a resource, or to see how you can set up a new website with a back-end database in a secure way. Many of these changes and trials might not advance in your deployment process, because you're eliminating the ideas that don't succeed.
 
   In some teams, you might even set up a separate development environment for each team member so that they don't get in each other's way while they're working on new features.
 
@@ -48,7 +48,7 @@ Common environments include:
 
 You might see variations of these environments. Some organizations use only a few environments, and some use many more. The number and type of environments that you use depend on the solution you're deploying, the size of the team that's building the solution, and the importance of the workload.
 
-Sometimes, a single environment takes the role of several of the environments listed earlier. Other times, you might have a very complex workflow that deploys to multiple environments, some in parallel and some in sequence. Some organizations even automatically delete or deprovision environments when they're no longer used, and then redeploy them when they're needed in the future.
+Sometimes, a single environment takes the role of several of the environments listed earlier. Other times, you might have a complex workflow that deploys to multiple environments, some in parallel and some in sequence. Some organizations even automatically delete or deprovision environments when they're no longer used, and then redeploy them when they're needed in the future.
 
 Whatever your organization chooses as its list of environments, the goal is to improve your confidence in a change as it progresses through your deployment workflow. When a change doesn't meet your quality requirements, you want to be able to stop the deployment of that change to any subsequent environments in the chain.
 
@@ -90,7 +90,7 @@ In your deployment workflow definition, you can refer to an environment by using
 
 :::code language="yaml" source="code/2-environment-workflow.yml" highlight="3" :::
 
-In the example above, the job named `deploy` is linked to the `Test` environment.
+In this example, the job named `deploy` is linked to the `Test` environment.
 
 ## Environments and connections to Azure
 
@@ -115,4 +115,4 @@ When your workload identity connects to Azure from your deployment workflow, it 
 
 When you deploy to an environment within your workflow, you need to use a federated credential that's scoped to that environment.
 
-In this module, your workflow inludes several jobs, many of which connect and deploy to Azure. Some of the jobs use environments, and some don't. So, you create two federated credentials for each of your workload identities: one scoped to the environment and one scoped to the _main_ branch.
+In this module, your workflow includes several jobs, many of which connect and deploy to Azure. Some of the jobs use environments, and some don't. So, you create two federated credentials for each of your workload identities: one scoped to the environment and one scoped to the _main_ branch.

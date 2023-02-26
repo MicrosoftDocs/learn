@@ -27,7 +27,7 @@ quiz:
       explanation: Incorrect. Your deployment workflow needs to deploy to all environments, not just to production.
     - content: Create a new Azure role definition.
       isCorrect: false
-      explanation: Incorrect. You generally don't need to define custom Azure roles for your deployments, and this won't help to resolve the issue that this workflow uses a single identity to access multiple environments.
+      explanation: Incorrect. You generally don't need to define custom Azure roles for your deployments, and a custom role doesn't help resolve the issue that this workflow uses a single identity to access multiple environments.
 
   - content: |
       You need to add a new environment named *Integration* to the workflow. Which of these actions should you take as part of adding the new environment?
@@ -50,7 +50,7 @@ quiz:
       explanation: Incorrect. Workflow definition files are committed to your Git repository, so they're not a secure location for secret values like passwords.
     - content: Define a secret in the GitHub web interface.
       isCorrect: true
-      explanation: Correct. Secrets are designed to be used for secure data like passwords.
+      explanation: Correct. Secrets are designed for use with secure data like passwords.
     - content: Add the parameter to the *parameters.ENVIRONMENT_NAME.json* files.
       isCorrect: false
       explanation: Incorrect. Bicep parameter files are committed to your Git repository, so they're not a secure location for secret values like passwords.

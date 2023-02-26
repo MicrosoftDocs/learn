@@ -15,7 +15,7 @@ The lint job happens only once during the workflow run, regardless of how many e
 
 1. In Visual Studio Code, create a new file in the _.github/workflows_ folder named _lint.yml_.
 
-   :::image type="content" source="../media/5-visual-studio-code-lint-yml-file.png" alt-text="Screenshot of Visual Studio Code Explorer, with the dot github and workflows folders and the lint dot Y M L file.":::
+   :::image type="content" source="../media/5-visual-studio-code-lint-yml-file.png" alt-text="Screenshot of Visual Studio Code Explorer, with the dot github and workflows folders and the lint dot YML file.":::
 
 1. Paste the following workflow definition into the file:
 
@@ -23,7 +23,7 @@ The lint job happens only once during the workflow run, regardless of how many e
 
    The lint job is the same as the lint job already in the workflow, but now it's in a separate workflow file.
 
-1. Close the file and save your changes.
+1. Save your changes and close the file.
 
 ## Add a reusable workflow for deployment
 
@@ -31,9 +31,9 @@ Create a reusable workflow that defines all of the jobs required to deploy each 
 
 1. Create a new file in the _.github/workflows_ folder named _deploy.yml_.
 
-   :::image type="content" source="../media/5-visual-studio-code-deploy-yml-file.png" alt-text="Screenshot of Visual Studio Code Explorer, with the dot github and workflows folders and the deploy dot Y M L file.":::
+   :::image type="content" source="../media/5-visual-studio-code-deploy-yml-file.png" alt-text="Screenshot of Visual Studio Code Explorer, with the dot github and workflows folders and the deploy dot YML file.":::
 
-   This file will represent all of the deployment activities that run for each of your environments.
+   This file represents all of the deployment activities that run for each of your environments.
 
 1. Paste the following workflow name, trigger, inputs, and secrets into the file:
 
@@ -81,7 +81,7 @@ Create a reusable workflow that defines all of the jobs required to deploy each 
 
    :::code language="yaml" source="code/5-workflow.yml" range="14-18" highlight="5" :::
 
-1. Delete everything in the file below the lint job that you just updated.
+1. Delete everything in the file below the lint job that you updated.
 
 1. At the bottom of the file, add the following code to deploy to the test environment:
 
@@ -93,7 +93,7 @@ Create a reusable workflow that defines all of the jobs required to deploy each 
 
    Now, the workflow runs the lint job once. Then it uses the _deploy.yml_ called workflow twice: once per environment. This keeps the workflow definition clear and easy to understand. Also, the comments help explain what's happening.
 
-1. Verify that your _workflow.yml_ file looks like the following:
+1. Verify that your _workflow.yml_ file looks like the following example:
 
    :::code language="yaml" source="code/5-workflow.yml" :::
 

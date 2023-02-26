@@ -72,7 +72,7 @@ jobs:
         resourceGroupName: ${{ inputs.resourceGroupName }}
         template: ./deploy/main.bicep
         parameters: >
-           environmentType=${{ inputs.environmentType }}
+          environmentType=${{ inputs.environmentType }}
 
   smoke-test:
     runs-on: ubuntu-latest

@@ -1,16 +1,16 @@
-When you deploy your changes to multiple environments, the steps involved in deploying to each environment are usually very similar or even identical. In this unit, you'll learn how to design your workflows to avoid repetition and to allow for reuse of your workflow code.
+When you deploy your changes to multiple environments, the steps involved in deploying to each environment are similar or even identical. In this unit, you'll learn how to design your workflows to avoid repetition and to allow for reuse of your workflow code.
 
 ## Deployment to multiple environments
 
 After talking to your colleagues on the website team, you decide on the following workflow for your toy company's website:
 
-:::image type="content" source="../media/3-workflow.png" alt-text="Diagram that shows a series of workflow jobs, including those for test and production deployments." border="false":::
+:::image type="content" source="../media/3-workflow.png" alt-text="Diagram that shows a series of workflow jobs and includes test and production deployments." border="false":::
 
 1. The workflow runs the Bicep linter to check that the Bicep code is valid and follows best practices.
 
    Linting happens on the Bicep code without needing to connect to Azure, so it doesn't matter how many environments you're deploying to. It runs only once.
 
-1. The workflow deploys to the test environment. This requires:
+1. The workflow deploys to the test environment and requires:
 
    1. Running the Azure Resource Manager preflight validation.
    1. Deploying the Bicep code.
@@ -36,7 +36,7 @@ When you need to repeat steps in your workflow, you might try to copy and paste 
 
 ## Reusable workflows
 
-GitHub Actions enables you to create reusable sections of workflow definitions by creating a separate workflow YAML file that defines steps or jobs. You can create YAML files to reuse parts of a workflow multiple times within a single workflow, or even in multiple workflows. The workflow that you reuse is a _called workflow_, and the workflow that includes it is a _caller workflow_. Conceptually, you can think of them as being analogous to Bicep modules.
+GitHub Actions enables you to create reusable sections of workflow definitions by creating a separate workflow YAML file that defines steps or jobs. You can create YAML files to reuse parts of a workflow multiple times within a single workflow, or even in multiple workflows. The workflow that you reuse is a _called workflow_, and the workflow that includes it's a _caller workflow_. Conceptually, you can think of them as being analogous to Bicep modules.
 
 When you create a reusable workflow, you use the `workflow_call` trigger to tell GitHub Actions that the workflow can be called by other workflows. Here's a basic example of a reusable workflow, saved in a file named _script.yml_:
 
@@ -62,11 +62,11 @@ Inputs can have several properties, including:
 
 - The _name_ of the input, which you use to refer to the input in your workflow definitions.
 - The _type_ of the input. Inputs support _string_, _number_, and _Boolean_ values.
-- The _default value_ of the input. This is optional. If you don't specify a default value, then a value must be provided when the workflow is used in a caller workflow.
+- The _default value_ of the input, which is optional. If you don't specify a default value, then a value must be provided when the workflow is used in a caller workflow.
 
 Secrets have names, but they don't have types or default values.
 
-In the example above, the workflow defines a mandatory string input named `environmentType`, and three mandatory secrets named `AZURE_CLIENT_ID`, `AZURE_TENANT_ID`, and `AZURE_SUBSCRIPTION_ID`.
+In the example, the workflow defines a mandatory string input named `environmentType`, and three mandatory secrets named `AZURE_CLIENT_ID`, `AZURE_TENANT_ID`, and `AZURE_SUBSCRIPTION_ID`.
 
 In your workflow, you use a special syntax to refer to the value of the parameter, like in this example:
 
@@ -86,12 +86,12 @@ When you work with called workflows, you often define some of your deployment ac
 
 You can use workflow _conditions_ to specify whether a step or a job should run depending on a rule that you specify. You can combine inputs and workflow conditions to customize your deployment process for many different situations.
 
-For example, imagine you define a workflow that runs script steps. You plan to reuse the template for each of your environments. When you deploy your production environment, you want to run an additional step. Here's how you can achieve that by using the `if` condition on the step:
+For example, imagine you define a workflow that runs script steps. You plan to reuse the template for each of your environments. When you deploy your production environment, you want to run another step. Here's how you can achieve that by using the `if` condition on the step:
 
 :::code language="yaml" source="code/3-script-conditions.yml" range="15-24" highlight="10" :::
 
 The condition here translates to: _if the environmentType parameter's value is equal to 'Production', then run the step_.
 
-Although conditions are a way to add flexibility to your workflow, try not to use too many of them. They complicate your workflow and make it harder to understand its flow. If you see a lot of conditions in a called workflow, then a called workflow might not be the best solution for the deployment, and you might need to redesign your overall workflow.
+Although conditions are a way to add flexibility to your workflow, try not to use too many of them. They complicate your workflow and make it harder to understand its flow. If you have many conditions in a called workflow, then a called workflow might not be the best solution for the deployment, and you might need to redesign your overall workflow.
 
-Also, consider using YAML comments to explain the conditions that you use and any other aspects of your workflow that might need more explanation. Comments help make your workflow easy to understand and work with in the future. You'll see some example YAML comments in the exercises throughout this module.
+Also, consider using YAML comments to explain the conditions that you use and any other aspects of your workflow that might need more explanation. Comments help make your workflow easy to understand and work with in the future. There are some example YAML comments in the exercises throughout this module.

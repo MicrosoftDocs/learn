@@ -37,7 +37,7 @@ You decide to store the API keys in GitHub secrets, to ensure they're protected 
 
    :::code language="yaml" source="code/7-deploy.yml" range="3-23" highlight="10-12, 20-21" :::
 
-   Notice that you include the API URLs as inputs. These aren't secret values.
+   Notice that you include the API URLs as inputs because they aren't secret values.
 
 1. In the `validate` job, update the steps to include the new deployment parameters:
 

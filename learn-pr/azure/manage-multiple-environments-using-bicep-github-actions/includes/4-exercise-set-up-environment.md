@@ -34,7 +34,7 @@ On the GitHub site, follow these steps to create a repository from the template:
 
    :::image type="content" source="../media/4-template.png" alt-text="Screenshot of the GitHub interface showing the template repo, with the 'Use this template' button highlighted.":::
 
-1. Note the name of your GitHub username or organization. In the example above, the GitHub user name is _mygithubuser_. You'll need this name soon.
+1. Note the name of your GitHub username or organization. In the example, the GitHub user name is _mygithubuser_. You'll need this name soon.
 
 1. Enter a name for your new project, such as _toy-website-environments_.
 
@@ -124,7 +124,7 @@ Next, create two workload identities in Azure AD: one for your test environment 
 
 To create the workload identities, the Azure CLI commands use `jq` to parse data from JSON output. If you don't have `jq` installed, you can use Bash in [Azure Cloud Shell](https://shell.azure.com/) to create the workload identity, resource group and role assignment, and prepare the GitHub secrets.
 
-1. Run the code below to define variables for your GitHub username and your repository name. Ensure that you replace `mygithubuser` with your GitHub username, which you noted earlier in this exercise. Also ensure that you specify the correct GitHub repository name.
+1. Run the following code to define variables for your GitHub username and your repository name. Ensure that you replace `mygithubuser` with your GitHub username, which you noted earlier in this exercise. Also ensure that you specify the correct GitHub repository name.
 
    ```bash
    githubOrganizationName='mygithubuser'
@@ -147,7 +147,7 @@ To create the workload identities, the Azure CLI commands use `jq` to parse data
       --parameters "{\"name\":\"toy-website-environments-test-branch\",\"issuer\":\"https://token.actions.githubusercontent.com\",\"subject\":\"repo:${githubOrganizationName}/${githubRepositoryName}:ref:refs/heads/main\",\"audiences\":[\"api://AzureADTokenExchange\"]}"
    ```
 
-1. Run the code below, which creates a similar workload identity and federated credentials for the production environment:
+1. Run the following code that creates a similar workload identity and federated credentials for the production environment:
 
    ```bash
    productionApplicationRegistrationDetails=$(az ad app create --display-name 'toy-website-environments-production')
@@ -167,14 +167,14 @@ To create the workload identities, the Azure CLI commands use `jq` to parse data
 
 ::: zone pivot="powershell"
 
-1. Run the code below to define variables for your GitHub username and your repository name. Ensure that you replace `mygithubuser` with your GitHub username, which you noted earlier in this exercise. Also ensure that you specify the correct GitHub repository name.
+1. Run the following code to define variables for your GitHub username and your repository name. Ensure that you replace `mygithubuser` with your GitHub username, which you noted earlier in this exercise. Also ensure that you specify the correct GitHub repository name.
 
    ```azurepowershell
    $githubOrganizationName = 'mygithubuser'
    $githubRepositoryName = 'toy-website-environments'
    ```
 
-1. Run the code below, which creates a workload identity for the test environment and associates it with your GitHub repository:
+1. Run the following code that creates a workload identity for the test environment and associates it with your GitHub repository:
 
    ```azurepowershell
    $testApplicationRegistration = New-AzADApplication -DisplayName 'toy-website-environments-test'
@@ -192,7 +192,7 @@ To create the workload identities, the Azure CLI commands use `jq` to parse data
       -Subject "repo:$($githubOrganizationName)/$($githubRepositoryName):ref:refs/heads/main"
    ```
 
-1. Run the code below, which follows a similar process for the production environment:
+1. Run the following code, which follows a similar process for the production environment:
 
    ```azurepowershell
    $productionApplicationRegistration = New-AzADApplication -DisplayName 'toy-website-environments-production'
