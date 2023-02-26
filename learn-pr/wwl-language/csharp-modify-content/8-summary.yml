@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.languages.csharp-choose-data-type.summary
+uid: learn.languages.csharp-modify-content.summary
 title: Summary
 metadata:
   title: Summary
@@ -9,6 +9,6 @@ metadata:
   ms.author: eric
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1
+durationInMinutes: 2
 content: |
   [!include[](includes/8-summary.md)]
