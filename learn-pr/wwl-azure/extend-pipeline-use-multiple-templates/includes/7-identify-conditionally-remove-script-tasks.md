@@ -1,78 +1,63 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+Azure Pipelines allow the execution of custom scripts during pipeline run-through script tasks. However, certain conditions may require the removal of script tasks, such as the pipeline stage or the branch being built. It can streamline pipeline execution and reduce unnecessary overhead.
 
-    Goal: briefly summarize the key skill this unit will teach
+Script tasks in pipelines pose a security risk by allowing the execution of arbitrary code on the agent machine, potentially leading to sensitive information exposure and malicious code execution.
+Minimizing the risk of exposing sensitive information involves identifying and conditionally removing script tasks, for example, removing a script task altogether or replacing it with a more secure alternative when it includes a command that prints a password or a secret key.
 
-    Heading: none
+Setting up conditions for script tasks can further reduce the risk of exposing sensitive information. For instance, removing a script task that is unnecessary for a specific pipeline stage can limit the attack surface for potential attackers and decrease the likelihood of a security breach.
 
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
+This unit demonstrates how to identify and conditionally remove script tasks using Azure Pipelines and YAML pipelines.
 
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+## Identify the Script Tasks to be Removed
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+To start, you need to identify the script tasks that require removal based on specific conditions. You can accomplish this by utilizing expressions in the YAML pipeline.
 
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
+For instance, if a script task isn't necessary for a specific stage of the pipeline, you may want to remove it from that stage. To do this, you can use the "condition" property in the YAML pipeline to specify an expression that determines whether the script task should be executed.
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+```YAML
+jobs:
+- job: Build
+  steps:
+  - script: |
+      echo "This script task should only run during the Build stage"
+    condition: eq(variables['System.StageName'], 'Build')
+  - script: |
+      echo "This script task should run during all stages"
+```
 
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
+In this example, the first script task will only run if the stage name is "Build", while the second script task runs during all stages.
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
+It allows you to remove the first script task from the pipeline without removing the second script task. It also allows you to reuse the second script task in other pipeline stages. It's helpful to run the same script task in multiple stages. For example, you may want to run a script task to build a project in the "Build" stage and then run the same script task to deploy the project in the "Deploy" stage.
 
-    Goal: State concisely what's covered in this unit
+## Use the "condition" Property
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+To conditionally remove a script task, utilize the "condition" property in the YAML pipeline. This property empowers you to define an expression that determines whether the script task should execute.
 
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
+For instance, to remove a script task if a specific variable is unset, utilize the following expression:
 
-<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
+```YAML
+jobs:
+- job: Build
+  steps:
+  - script: |
+      echo "This script task will only run if MY_VARIABLE is set"
+    condition: ne(variables['MY_VARIABLE'], '')
+```
 
-    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
+In this example, the script task will only run if the `MY_VARIABLE` variable is set.
 
-    Heading: none
--->
-TODO: add a visual element
+## Test the Pipeline
 
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
+Once you have made changes to the YAML pipeline, it's crucial to test it to guarantee that the script tasks are correctly removed.
 
-    Goal: Provide all the information the learner needs to perform this sub-task.
+Testing the pipeline entails running it and validating that the script tasks aren't executed when they should be removed.
 
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
+## Challenge yourself
 
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=main)
--->
+Create a new YAML pipeline that conditionally removes a script task based on the branch being built. Verify that the script task isn't executed when building the specified branch.
 
-<!-- Pattern for simple chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
+For more information about pipeline conditions and decorators, see:
 
-<!-- Pattern for complex chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+- [Specify conditions](https://learn.microsoft.com/azure/devops/pipelines/process/conditions/)
+- [Pipeline decorator expression context](https://learn.microsoft.com/azure/devops/extend/develop/pipeline-decorator-context/)
+- [Runtime parameters](https://learn.microsoft.com/azure/devops/pipelines/process/runtime-parameters/)
+- [Expressions](https://learn.microsoft.com/azure/devops/pipelines/process/expressions/)

@@ -1,78 +1,81 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+When building and deploying applications with Azure Pipelines, it's crucial to ensure pipeline agents don't inadvertently log sensitive information like passwords, API keys, or other secrets. It can happen if sensitive information is printed to the console during the build or deployment process, leading to serious security risks.
 
-    Goal: briefly summarize the key skill this unit will teach
+In this unit, learn and review how to configure Azure Pipelines and YAML pipelines to restrict agent logging of secrets using best practices and secure methods.
 
-    Heading: none
+## Log of secrets
 
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
+Azure Pipelines attempts to scrub secrets from logs wherever possible. This filtering is on a best-effort basis and can't catch every way that secrets can be leaked. Avoid echoing secrets to the console, using them in command line parameters, or logging them to files.
 
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+## Use the audit service
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+Many pipeline events are recorded in the Auditing service. Review the audit log periodically to ensure no malicious changes have slipped past. Visit https://dev.azure.com/ORG-NAME/_settings/audit to get started.
 
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
+## Ways to restrict agent logging of secrets
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+When working with Azure Pipelines, it's common to use service connections, which add a new layer of security for sensitive information such as usernames, passwords, and API keys. If not using service connections or other best practices left unsecured, this information can be easily accessed and exposed in pipeline logs, leading to potential data breaches and security risks.
 
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
+By following these suggestions and the ones we covered in other units, you can ensure that your sensitive information is kept safe and your pipeline remains a trusted and reliable tool for your organization.
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
+- **Use Azure Key Vault:** Using Azure Key Vault, you can store sensitive information, such as passwords and API keys, separately from your pipeline. You can reference these secrets in your pipeline without revealing them in the pipeline logs. To use Azure Key Vault, you can create a new Azure Key Vault instance, add your secrets to the vault, and then reference them in your pipeline using the Azure Key Vault task.
+- **Use Variable Groups:** Variable Groups are a convenient way to store and manage variables used across multiple pipelines. You can create a new variable group, add sensitive information as variables, and then reference them in your pipeline. By marking these variables as "secret," you can ensure they aren't displayed in the pipeline logs.
+- **Use Environment Variables:** You can also use environment variables to store your sensitive information. Environment variables are a way to store data that can be accessed by processes running on the same machine. In Azure Pipelines, you can define pipeline, job, or task environment variables. By marking these variables as "secret," you can ensure they aren't displayed in the pipeline logs.
 
-    Goal: State concisely what's covered in this unit
+Regardless of your chosen method, it's crucial to ensure that your sensitive information isn't easily accessible in your pipeline logs.
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+## Use agent-level logging restrictions
 
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
+Another way to restrict agent logging of secrets is to use agent-level logging restrictions. These restrictions can prevent specific commands or log levels from being printed to the console, which can further reduce the risk of exposing sensitive information.
 
-<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
+To use agent-level logging restrictions, follow these steps:
 
-    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
+1. Edit your pipeline.
+2. Select Variables.
+3. Add a new variable with the name `System.Debug` and value true.
+    ![Screenshot of Azure Pipelines showing how to add a new system.debug=true variable.](../media/system-debug-true-variable.png)
+4. Save the new variable.
+5. Run your pipeline to see the logs.
 
-    Heading: none
--->
-TODO: add a visual element
+The setting `System.Debug=False` turns off verbose logs for all runs. With the Enable system diagnostics checkbox, you can also configure verbose logs for a single run. See For more information, see [Review logs to diagnose pipeline issues.](https://learn.microsoft.com/azure/devops/pipelines/troubleshooting/review-logs)
 
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
+## Use the issecret parameter
 
-    Goal: Provide all the information the learner needs to perform this sub-task.
+The `issecret` parameter allows you to mask secrets in the agent logs.
 
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
+To set a variable as a script with a logging command, you need to pass the `issecret` flag.
 
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=main)
--->
+When `issecret` is set to true, the value of the variable will be saved as secret and masked out from log.
 
-<!-- Pattern for simple chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
+Set the secret variable `mySecretVal`.
 
-<!-- Pattern for complex chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
+```YAML
+- powershell: |
+    Write-Host "##vso[task.setvariable variable=mySecretVal;issecret=true]secretvalue"
+```
 
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+Get the secret variable mySecretVal.
 
-<!-- Do not add a unit summary or references/links -->
+```YAML
+- powershell: |
+    Write-Host "##vso[task.setvariable variable=mySecretVal;issecret=true]secretvalue"
+- powershell: |
+    Write-Host $(mySecretVal)
+```
+
+Output of PowerShell variable.
+
+```CMD
+***
+Finishing: Powershell
+
+```
+
+## Challenge yourself
+
+Create a new YAML pipeline with a task that logs a secret variable to the agent logs. Configure the pipeline to mask the secret in the logs by using the `issecret` parameter.
+
+For more information about secrets, see:
+
+- [Set secret variables](https://learn.microsoft.com/azure/devops/pipelines/process/set-secret-variables)
+- [How to securely use variables and parameters in your pipeline](https://learn.microsoft.com/azure/devops/pipelines/security/inputs/)
+- [Plan how to secure your YAML pipelines](https://learn.microsoft.com/azure/devops/pipelines/security/approach/)
+- [Recommendations to securely structure projects in your pipeline](https://learn.microsoft.com/azure/devops/pipelines/security/projects/)

@@ -9,6 +9,6 @@ metadata:
   ms.author: lumac
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1
+durationInMinutes: 6
 content: |
   [!include[](includes/6-restrict-agent-logging.md)]
