@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.wwl.work-environments-azure-machine-learning
+metadata:
+  title: Work with environments in Azure Machine Learning
+  description: "Work with environments in Azure Machine Learning"
+  ms.date: 02/26/2023
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Work with environments in Azure Machine Learning
+summary: Learn how to use environments in Azure Machine Learning to run scripts on any compute target.
+abstract: |
+  In this module, you'll learn how to:
+  - Understand environments in Azure Machine Learning.
+  - Explore and use curated environments.
+  - Create and use custom environments.
+prerequisites: ""
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- data-scientist
+products:
+- azure-machine-learning
+subjects:
+- machine-learning
+units:
+- learn.wwl.work-environments-azure-machine-learning.introduction
+- learn.wwl.work-environments-azure-machine-learning.understand-environments
+- learn.wwl.work-environments-azure-machine-learning.explore-use-curated-environments
+- learn.wwl.work-environments-azure-machine-learning.create-use-custom-environments
+- learn.wwl.work-environments-azure-machine-learning.exercise
+- learn.wwl.work-environments-azure-machine-learning.knowledge-check
+- learn.wwl.work-environments-azure-machine-learning.summary
+badge:
+  uid: learn.wwl.work-environments-azure-machine-learning.badge
