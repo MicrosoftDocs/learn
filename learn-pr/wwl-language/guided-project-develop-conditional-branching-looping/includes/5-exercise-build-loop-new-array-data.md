@@ -1,43 +1,47 @@
 
 
-In this step of your development process, you will begin working on the feature of your application that enables the user to add new animals to the ourAnimals array. To get started, you will first work on calculating the initial values of your loop control variables. You will then focus on constructing the loop that enables your app to collect user specified data for the animals. The detailed tasks that you complete during this exercise are:
+In this exercise, you develop code that controls the input of new `ourAnimals` array data. You calculate the initial values of your loop control variables and construct the loop that collects user specified data for the animals. The detailed tasks that you complete during this exercise are:
 
-1. Calculate petCount: write code that counts the number of pets in the ourAnimals array that have assigned data.
-1. Conditional messages: write code to display message output when petCount is less than maxPets.
-1. Outer loop: build a loop structure that will be used for entering new ourAnimals array data.
+1. Calculate petCount: write code that counts the number of pets in the `ourAnimals` array that have assigned data.
+1. Conditional messages: write code to display message output when `petCount` is less than `maxPets`.
+1. Outer loop: build a loop structure that will be used for entering new `ourAnimals` array data.
 1. Exit criteria: write code that evaluates the exit condition for the "enter new ourAnimals array data" loop.
-1. Verification test: perform verification tests for the code that you have developed in this exercise.
+1. Verification test: perform verification tests for the code you develope in this exercise.
 
 > [!IMPORTANT]
 > You must complete the previous exercise in this module before starting this exercise.
 
 ## Count the number of pets in the ourAnimals array
 
-In this task, you will declare variables that establish the exit criteria for your data entry loop and you will create a `for` loop that you will use to count the number of pets in `ourAnimals` that have been assigned data.
+In this task, you establish the exit criteria for your data entry loop and you create a `for` loop that can be used to count the number of pets in `ourAnimals` that have assigned data.
 
-1. Ensure that you have Visual Studio Code open, and that your Program.cs file is visible in the Editor.
+1. Ensure that Visual Studio Code is open, and that your Program.cs file is visible in the Editor.
 
 1. Locate the `switch(menuSelection)` statement, and then find the `case "2":` code line.
 
 1. Locate the `Console.WriteLine()` statement that displays the "coming soon" message, and then replace it with a blank code line.
 
-1. On the blank code line that you just created, to declare (and initialize) the `anotherPet` and `petCount` variables, enter the following code:
+1. On the blank code line that you just created, to declare the `anotherPet` and `petCount` variables, enter the following code:
 
     ```c#
     string anotherPet = "y";
     int petCount = 0;
     ```
 
-    We will be using these two variables to control our (upcoming) while loop iterations when the user is entering new pet data. We initialize both variables as part of the declaration. Let's look at how they will be used.
+    These two variables control the iteration of a `while` loop that's used to enter new pet data. You initialize both variables as part of the declaration.
 
     - `anotherPet` is initialized with a value of `y` prior to the start of the `while` loop. It will receive a user assigned value, either `y` or `n` inside the `while` loop.
 
-    - `petCount` represents the number of animals with assigned pet characteristics. It will be assigned a calculated value outside of our `while` loop, and will be incremented by 1 inside the `while` loop each time a new animal is added to the ourAnimals array.
+    - `petCount` represents the number of animals with assigned pet characteristics. It will be assigned a calculated value outside of your `while` loop, and will be incremented by `1` inside the `while` loop each time a new animal is added to the `ourAnimals` array.
 
     > [!IMPORTANT]
-    > We could have chosen to declare `petCount` at the application level rather than scoping it to our `case "2":` selection. This would have enabled us to access `petCount` from anywhere in our Contoso Pets application. For example, if we had scoped `petCount` at the application level, we could have chosen to assign a value to `petCount` when we created our sample data, and then programmatically manage its value throughout the remainder of our code. We could have also maintained the value of `petCount` in the code that removes pets from the ourAnimals array (for example, when we find our pets a new home). The question is, at what level should we scope a variable (such as `petCount`) when we are considering whether we want to have access to the variable in other parts of our code? It might be tempting to scope `petCount` at the highest level of our application, just in case we decide to use it elsewhere. After all, that would ensure that `petCount` is available anywhere in our application. Maybe we should scope other variables at the application level as well. That way, they would never go out of scope and we would know that their value would be accessible when we need it. So why don't we just scope variables at the application level if we think that we might need again later? It's because scoping variables at a higher level than necessary can lead to serious problems for our app. For example, it will inflate the resource requirements for our application and may expose our application to unnecessary security risks. As your applications become larger and more complex, the resources that they require will increase. And as your applications become more "real-world", they will become more accessible, maybe accessible from the cloud or other applications. These days we tend to run lots of applications simultaneously, and since we also tend to leave our application running even when we aren't actively using them, keeping app's resource requirements under control and our app's security footprint as small as possible are both important. Sure, modern operating systems do a great job of managing resources and securing our applications, but it's still best practice to keep our variables scoped to the level where they are actually needed. In our Contoso Pets app, if we decide to use `petCount` more broadly within our application, we can update our code to scope our `petCount` variable at a higher level. The important thing to remember is to keep your variables scoped as narrowly as possible, and only increase their scope when it becomes necessary (not before).
+    > Always scope of your variables as narrowly as possible. In the Contoso Pets application, you could scope `petCount` at the application level rather than scoping to the `case "2":` code block. The larger scope would enable you to access `petCount` from anywhere in the application. If `petCount` was scoped at the application level, you could assign it a value when you create the sample data and programmatically manage its value throughout the remainder of the application. For example, when you find a home for a pet and remove the pet from the `ourAnimals` array, you could reduce `petCount` by `1`.
+    > The question is, at what level should you scope a variable when you're unsure whether it will be used in other parts of your application? In this case, it's tempting to scope `petCount` at the application level even though you aren't using it anywhere else. After all, scoping `petCount` at the application level ensures that it's available if you do decide to use it elsewhere. Maybe you could scope other variables at the application level as well. That way, your variables are always in scope and accessible. So why not scope variables at the application level when you think they might be used later in the application?
+    > Scoping variables at a higher level than necessary can lead to problems. Elevated scope inflates the resource requirements of your application and may expose your application to unnecessary security risks. As your applications grow larger and more complex, they require more resources. Phones and computers allocate memory for these resources when they're in scope. As your applications become more "real-world", they become more accessible. Applications are often accessible from the cloud or other applications. Compounding these issues, applications are often left running when they aren't being used.
+    > It's important to keep an application's resource requirements under control and the security footprint as small as possible. Although today's operating systems do a great job of managing resources and securing applications, it's still best practice to keep your variables scoped to the level where they are actually needed. In your Contoso Pets app, if you decide to use `petCount` more broadly within the application, you can update your code to scope `petCount`at a higher level.
+    > Remember to keep your variables scoped as narrowly as possible, and only increase their scope when it becomes necessary.
 
-1. On the code line below your variable declarations, to create a loop that iterates through the animals in the ourAnimals array, enter the following code:
+1. On the code line below your variable declarations, to create a loop that iterates through the animals in the `ourAnimals` array, enter the following code:
 
     ```c#
     for (int i = 0; i < maxPets; i++)
@@ -45,7 +49,7 @@ In this task, you will declare variables that establish the exit criteria for yo
     }
     ```
 
-    This code should look familiar. We will use this same `for` loop each time we need to iterate through the animals in the ourAnimals array.
+    This code should look familiar. You'll use this `for` loop each time you iterate through the `ourAnimals` array.
 
 1. Inside the code block of our `for` loop, to check whether pet characteristics data has been assigned to an animal, enter the following code:
 
@@ -55,7 +59,7 @@ In this task, you will declare variables that establish the exit criteria for yo
     }
     ```
 
-    Again, this code should look familiar. We will use this same `if` statement whenever we want to know if data has been assigned to an animal in the ourAnimals array.
+    Again, this code should look familiar. You'll use this `if` statement each time you check whether pet characteristics have been assigned.
 
 1. Inside the code block of the `if` that you just created, to increment `petCount` by 1, enter the following code:
 
@@ -65,7 +69,7 @@ In this task, you will declare variables that establish the exit criteria for yo
 
 1. Take a minute to examine your completed `for` loop.
 
-    Your completed `for` loop code should look like the following code:
+    Your completed `for` loop should look like the following code:
 
     ```c#
     for (int i = 0; i < maxPets; i++)
@@ -77,7 +81,7 @@ In this task, you will declare variables that establish the exit criteria for yo
     }
     ```
 
-    This code will loop through the ourAnimals array checking for assigned data. When it finds an animal with data assigned, it increments `petCounter`.
+    This code will loop through the `ourAnimals` array checking for assigned data. When it finds an animal with data assigned, it increments `petCounter`.
 
 1. On the Visual Studio Code **File** menu, select **Save**.
 
@@ -90,7 +94,7 @@ In this task, you will declare variables that establish the exit criteria for yo
 1. Fix any Build errors that you see reported before continuing.
 
     > [!NOTE]
-    > For now, you can ignore the Warning message about `anotherPet` being assigned but never used. We will add code that uses `anotherPet` later in this exercise.
+    > For now, you can ignore the Warning message about `anotherPet` being assigned but never used. You'll add code that uses `anotherPet` later in this exercise.
 
     If you have any build errors, remember that the Build error and warning messages tell you what the issue is and where you can find it. If you update your code, remember to save your changes before you rebuild.
 
@@ -98,7 +102,7 @@ In this task, you will declare variables that establish the exit criteria for yo
 
 ## Display message output when petCount is less than maxPets
 
-In this task, we will check to see if `petCount` is less than `maxPets` and if it is, we will display a message for the user. Let's get started.
+In this task, you check to see if `petCount` is less than `maxPets` and if it is, you display a message for the user.
 
 1. On a blank code line below the `for` loop that you just created, to see if `petCount` is less than `maxPets`, enter the following code:
 
@@ -114,9 +118,9 @@ In this task, we will check to see if `petCount` is less than `maxPets` and if i
     Console.WriteLine($"We currently have {petCount} pets that need homes. We can manage {(maxPets - petCount)} more.");
     ```
 
-    This message provides some important context to the app user as they are about to enter information for pets that will be added to the ourAnimals array.
+    Application users are about to enter pet characteristics. This message provides important context.
 
-1. Take a minute to review the code the `case "2":` code branch of your `switch` statement.
+1. Take a minute to review the `case "2":` code branch of your `switch` statement.
 
     At this point, your `case "2":` code branch should look like the following:
 
@@ -162,11 +166,11 @@ In this task, we will check to see if `petCount` is less than `maxPets` and if i
 
 1. At the Terminal command prompt, enter **2**
 
-    This should cause your `case "2":` code branch to run.
+    This value corresponds to your `case "2":` code branch.
 
 1. Verify that the following message is displayed in the Terminal.
 
-    ```txt
+    ```output
     We currently have 4 pets that need homes. We can manage 4 more.
     Press the Enter key to continue.
     ```
@@ -179,7 +183,7 @@ In this task, we will check to see if `petCount` is less than `maxPets` and if i
 
 ## Build a loop structure that will be used for entering new ourAnimals array data
 
-In this task, we will create a `while` loop that continues to iterate as long as `anotherPet` is equal to `y` AND `petCount` is less than `maxPets`. Let's get started.
+In this task, you create a `while` loop that continues to iterate as long as `anotherPet` is equal to `y` and `petCount` is less than `maxPets`.
 
 1. In the code Editor, create a blank code line below your `if (petCount < maxPets)` code block.
 
@@ -201,10 +205,10 @@ In this task, we will create a `while` loop that continues to iterate as long as
 
 ## Check exit condition for new pets loop
 
-In this task, we will add code inside our `while (anotherPet == "y" && petCount < maxPets)` loop that increments `petCount` and then checks whether `petCount` is still less than `maxPets`. If `petCount` is still less than `maxPets`, we will ask the user if they want to enter information for another pet, and ensure that their response is either `y` or `n`. Finally, after the end of our `while (anotherPet == "y" && petCount < maxPets)` code block, but before the `break;` statement that separates `case "2";` from `case "3";`, we will update the message to the user, making it conditional on the value of `petCount`. Let's get started.
+In this task, you update the `while (anotherPet == "y" && petCount < maxPets)` code block. The new code increments `petCount` and then checks whether `petCount` is less than `maxPets`. If `petCount` is less than `maxPets`, you ask the user if they want to enter information for another pet, and ensure the response is either `y` or `n`. After the `while (anotherPet == "y" && petCount < maxPets)` code block, you check the value of `petCount`. If `petCount` is equal to `maxPets`, you inform the user that no more pets can be added.
 
 > [!NOTE]
-> We are deliberately postponing the development of code that manages pet data entry by the user. We will develop that code in the next exercise. For now we will increment `petCount` as is data were being entered and saved to the ourAnimals array. This enables us to finish developing the code logic associated with our `while` loop.
+> The code used to enter pet data is developed in the next exercise. For now, `petCount` is incremented as if data were being entered and saved to the `ourAnimals` array. This enables you to finish developing the code logic associated with the `while` loop.
 
 1. Create a blank code line inside the code block of the `while (anotherPet == "y" && petCount < maxPets)` loop that you created in the previous task.
 
@@ -247,9 +251,11 @@ In this task, we will add code inside our `while (anotherPet == "y" && petCount 
 
 1. Locate the `break` statement that separates `case "2";` from `case "3";` in your `switch` statement.
 
-1. Notice the `Console.WriteLine()` message and `Console.ReadLine()` that are used to pause the app at the end of our `case "2";` code.
+1. Notice the `Console.WriteLine()` and `Console.ReadLine()` statements at the end of our `case "2";` code.
 
-1. To enclose the code that we're using to pause the app inside an `if` statement, update your code as follows:
+    This code displays a message to the user and then pauses the application.
+
+1. To enclose the `Console.WriteLine()` and `Console.ReadLine()` statements inside an `if` statement, update your code as follows:
 
     ```c#
 
@@ -264,7 +270,9 @@ In this task, we will add code inside our `while (anotherPet == "y" && petCount 
     case "3":
     ```
 
-1. To let the user know that the pet they just added puts Contoso Pets at their capacity limit, update your code as follows:
+    The value of `petCount` is incremented inside the `while` loop. If `petCount` is equal to `maxPets`, no more pets can be added to the `ourAnimals` array. You should let the user when this occurs.
+
+1. To inform the user that Contoso Pets has reached their capacity, update your code as follows:
 
     ```c#
 
@@ -280,9 +288,9 @@ In this task, we will add code inside our `while (anotherPet == "y" && petCount 
     case "3":
     ```
 
-1. Take a minute to review the code for your `while` loop and the user message that you've created.
+1. Take a minute to review the code in your `while` loop and the user message that you've created.
 
-    Your `while (anotherPet == "y" && petCount < maxPets)` loop and code that displays the user message should look like the following
+    Your `while (anotherPet == "y" && petCount < maxPets)` loop and code that displays the user message should look like the following:
 
     ```c#
     while (anotherPet == "y" && petCount < maxPets)
@@ -323,7 +331,7 @@ In this task, we will add code inside our `while (anotherPet == "y" && petCount 
 
 ## Check your work
 
-In this task, we will run our application from the Integrated Terminal and verify that the looping and branching logic that we've created works as expected. Let's get started.
+In this task, you run our application from the Integrated Terminal and verify that the looping and branching logic that you've created works as expected.
 
 1. If necessary, open Visual Studio Code's Integrated Terminal panel.
 
@@ -344,11 +352,11 @@ In this task, we will run our application from the Integrated Terminal and verif
 
     If your code logic is working as expected, you should see the main menu displayed in the Terminal.
 
-    If your code does not exit the loop when expected, press **Ctrl + C** in the Terminal to force execution to stop. You need to step through your code manually and trace the values of the exit criteria variables. Update your code if necessary to ensure that you exit the `while` loop when the user enters "n" (even when petCount < maxPets). Save your changes, rebuild your program, and run through the verification test to arrive back at this point.
+    If your code does not exit the loop when expected, press **Ctrl + C** in the Terminal to force execution to stop. You need to step through your code manually and trace the values of the exit criteria variables. Update your code if necessary to ensure that you exit the `while` loop when the user enters "n". Save your changes, rebuild your program, and run through the verification test to arrive back at this point.
 
 1. At the Terminal command prompt, enter **2**
 
-    Once again, you will see the following messages displayed:
+    Once again, you'll see the following messages displayed:
 
     ```txt
     We currently have 4 pets that need homes. We can manage 4 more.
@@ -357,30 +365,35 @@ In this task, we will run our application from the Integrated Terminal and verif
 
 1. At the Terminal command prompt, enter **y**
 
-1. Take a minute to consider how your code is assigning the value to `petCount` and how that value compares with the zero-based index number that is used to access/assign values of the `ourAnimals` array.
+1. Take a minute to consider how `petCount` is used in your code.
 
-    So, what do we know about the value assigned to `petCount` and why do we need consider how our code uses the value? Well, understanding the logic that's being implemented by our applications is important. Let's take a look at what we know and why it's important:
+    You need to understand your code logic before you can validate your code.
 
-    - We know that `petCount` is 4 when we enter the first iteration of the while loop (our code displays a message telling us that we have 4 pets that need homes).
-    - We also know that we increment `petCount` after we store new data to the array (we don't actually enter and store data yet, but that is our plan).  
-    - Let's consider how these two things affect our storage of data to the `ourAnimals` array:
+    In this case, your code logic relies on the relationship between `petCount` and `maxPets`. You know that `maxPets` is assigned a value of `8`, but what about `petCount`? The following items help to evaluate the logic you've implemented:
 
-        - We will store new data to the array when the value of `petCount` is 4. But we already have data for 4 pets. Do we have a problem? When we remember that the array elements are zero-based, our code logic makes sense. For example, `ourAnimals[0,0]` contains the value of the pet ID for animal 1. So it follows that `ourAnimals[3,0]` contains the value of the pet ID for animal 4. That means that we store data for pet 5 when petCount is 4. Perfect.
-        - Since our code will be storing pet data to the array before it increments `petCount`, and since the code increments `petCount` before prompting us if we want to enter data for another pet, when we see the **Do you want to enter info for another pet (y/n)** prompt for the first time, `petCount` is already set to 5.
+    - You know that `petCount` is `4` when you enter the first iteration of the `while` loop.
+    - You know that `petCount` is incremented each time the `while` loop iterates.
+    - You know that the value assigned to `petCount` and the way that `petCount` is incremented affect how data is stored in the `ourAnimals` array. The following items explain the relationship between `petCount` and the data stored in `ourAnimals`:
 
-    - So after we enter **y** at the command prompt (which we just did in our code verification test), we also know that:
+        - The application adds four pets to the `ourAnimals` array when it creates the sample data.
+        - The application stores new data to the `ourAnimals` array when the value of `petCount` is `4`. This isn't a bug. The code makes sense when you recall that array elements are zero-based. For example, `ourAnimals[0,0]` contains the pet ID for animal `1` and `ourAnimals[3,0]` contains the pet ID for animal `4`. Therefore, when `petCount` is `4` you're storing data for the fifth pet.
+        - The application will store pet data to the array before it increments `petCount`.
+        - The application increments `petCount` before it prompts the user about adding another pet.
+        - When the application displays the **Do you want to enter info for another pet (y/n)** prompt for the first time, `petCount` is already set to `5`.
 
-        - our `while (anotherPet == "y" && petCount < maxPets)` loop will iterate. We know that it will iterate because we know that `anotherPet == "y"` and `petCount < maxPets`.
-        - when our while loop iterates, the value assigned to `petCount` will be incremented.
-        - so we know that after we enter **y** the first time, the value assigned to `petCount` will be 6.
+    - If the user enters **y** at the first **Do you want to enter info for another pet (y/n)** prompt, you know that:
 
-    With all that in mind, let's continue our testing.
+        - The `while (anotherPet == "y" && petCount < maxPets)` loop will iterate. You know this because you know that `anotherPet == "y"` and `petCount < maxPets`.
+        - The value assigned to `petCount` will be incremented (when the `while` loop iterates).
+        - The value assigned to `petCount` will be `6` (after the user enters **y** the first time).
 
-1. Notice that the Terminal panel updates with the same "another pet?" message, but does not give us an updated `petCount`.
+    Keep this analysis of the code logic in mind as you continue testing the application.
 
-    The Terminal panel should have updated to show the following:
+1. Notice that the Terminal panel updates with the same "another pet?" message, but does not display an updated `petCount`.
 
-    ```txt
+    The Terminal panel should now show the following:
+
+    ```output
     We currently have 4 pets that need homes. We can manage 4 more.
     Do you want to enter info for another pet (y/n)
     y
@@ -389,13 +402,15 @@ In this task, we will run our application from the Integrated Terminal and verif
 
 1. At the Terminal command prompt, enter **y**
 
-    When we enter `y` a second time, `petCount` is incremented to 7. Still less than `maxPets`
+    When you enter `y` a second time, `petCount` is incremented to `7`. So `petCount` is still less than `maxPets`
 
 1. At the Terminal command prompt, enter **y**
 
-    When we enter `y` a third time, `petCount` is incremented to 8. So `petCount` is now equal to `maxPets`
+    When you enter `y` a third time, `petCount` is incremented to `8`. So `petCount` is now equal to `maxPets`
 
-1. Verify that your code exits the loop for entering new pets after you enter **y** the third time, and that the Terminal has updated as follows:
+1. Verify that your code exits the `while` loop when you enter **y** the third time.
+
+    The Terminal panel should now show the following:
 
     ```txt
     We currently have 4 pets that need homes. We can manage 4 more.

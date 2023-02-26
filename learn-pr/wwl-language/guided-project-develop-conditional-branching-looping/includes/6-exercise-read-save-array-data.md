@@ -15,9 +15,9 @@ In this exercise, you'll develop the data entry validation loops for each pet ch
 
 ## Build loop to read and validate the pet species
 
-In this task, you'll create a `do` loop that iterates until the user enters a valid species name, either **dog** or **cat**. You'll reuse your voidable string `readResult` to capture the `Console.ReadLine()` input, and you will reuse the `animalSpecies` string variable that you used when generating your sample data. For the expression that's evaluated as an exit criteria for your `do` loop, you'll add a new Boolean variable named `validEntry` to your app.
+In this task, you create a `do` loop that iterates until the user enters a valid species name, either **dog** or **cat**. You reuse your voidable string `readResult` to capture the `Console.ReadLine()` input. You also reuse the `animalSpecies` string variable that you used when generating your sample data. You add a new Boolean variable named `validEntry` to your app. You use `validEntry` in an expression that's evaluated as an exit criteria for your `do` loop.
 
-1. Ensure that you have Visual Studio Code open, and that your Program.cs file is visible in the Editor.
+1. Ensure that Visual Studio Code is open, and that your Program.cs file is visible in the Editor.
 
 1. Locate the `while (anotherPet == "y" && petCount < maxPets)` statement, and then add a blank code line at the top code block.
 
@@ -28,7 +28,7 @@ In this task, you'll create a `do` loop that iterates until the user enters a va
 
     ```
 
-1. On the line below the declaration of `validEntry`, to create a `do` loop for species data entry, enter the following code: 
+1. On the line below the declaration of `validEntry`, to create a `do` loop for species data entry, enter the following code:
 
     ```c#
     // get species (cat or dog) - string animalSpecies is a required field 
@@ -101,11 +101,11 @@ In this task, you'll create a `do` loop that iterates until the user enters a va
 
 ## Construct the animal ID value
 
-In this task, we will use the `animalSpecies` and `petCount` variables to create the value that we assign to `animalID`. Let's get started.
+In this task, you use the `animalSpecies` and `petCount` variables to create the value that you assign to `animalID`.
 
 1. Add a blank code line below the code block of your species name data entry loop.
 
-1. To create and assign the animalID value, enter the following code: 
+1. To create and assign the `animalID` value, enter the following code:
 
     ```c#
     // build the animal the ID number - for example C1, C2, D3 (for Cat 1, Cat 2, Dog 3)
@@ -117,7 +117,7 @@ In this task, we will use the `animalSpecies` and `petCount` variables to create
 
 ## Build loop to read and validate the pet's age
 
-In this task, we will create a `do` loop that iterates until the user enters either a `?` or a valid integer that represents the age of the pet in years. We will reuse our voidable string `readResult` to capture the `Console.ReadLine()` input and we will reuse the `animalAge` string variable that we used when generating our sample data. To test whether or not our `animalAge` string represents a valid integer, we use our `validEntry` Boolean and we add a new integer variable named `petAge` to our app. Once again, the `validEntry` Boolean is used in the expression that's evaluated as an exit criteria for our `do` loop. Let's get started.
+In this task, you create a `do` loop that iterates until the user enters either a `?` or a valid integer that represents the age of the pet in years. You reuse the voidable string `readResult` to capture the `Console.ReadLine()` input. You also reuse the `animalAge` string variable that you used when generating the sample data. To test whether or not the `animalAge` string represents a valid integer, you use the `validEntry` Boolean. You declare a new integer variable named `petAge` to store the numeric value. Once again, the `validEntry` Boolean is used in the expression that's evaluated as an exit criteria for our `do` loop.
 
 1. Add a blank code line below the line used to assign a value to our `animalID` variable.
 
@@ -138,7 +138,7 @@ In this task, we will create a `do` loop that iterates until the user enters eit
     
     ```
 
-1. On the line below the declaration of `petAge`, to create a display prompt and read the user input, enter the following code: 
+1. On the line below the declaration of `petAge`, to display a message prompt and read the user input, enter the following code:
 
     ```c#
     Console.WriteLine("Enter the pet's age or enter ? if unknown");
@@ -146,7 +146,7 @@ In this task, we will create a `do` loop that iterates until the user enters eit
     
     ```
 
-1. To ensure that the value of `readResult` is NOT null before assigning the value of `readResult` to `animalAge`, enter the following code:
+1. To ensure that the value of `readResult` isn't null before assigning the value of `readResult` to `animalAge`, enter the following code:
 
     ```c#
     if (readResult != null)
@@ -193,7 +193,7 @@ In this task, we will create a `do` loop that iterates until the user enters eit
 
 ## Build loop to read and validate the pet's physical description
 
-In this task, we will create a `do` loop that iterates until the user enters a string value that is intended to be a physical description of a pet. We will reuse our voidable string `readResult` to capture the `Console.ReadLine()` input and we will reuse the `animalPhysicalDescription` string variable that we used when generating our sample data. We will use the value assigned to `animalPhysicalDescription` in the expression that's evaluated as an exit criteria for our `do` loop. Let's get started.
+In this task, you create a `do` loop that iterates until the user enters a string value that represents a physical description of a pet. You reuse the voidable string `readResult` to capture the `Console.ReadLine()` input. You also reuse the `animalPhysicalDescription` string variable that you used when generating the sample data. You use the value assigned to `animalPhysicalDescription` in the expression that's evaluated as an exit criteria for our `do` loop.
 
 1. Add a blank code line below the code block of your age data entry loop.
 
@@ -215,7 +215,7 @@ In this task, we will create a `do` loop that iterates until the user enters a s
     
     ```
 
-1. To ensure that the value of `readResult` is NOT null before assigning the value of `readResult` to `animalPhysicalDescription`, enter the following code:
+1. To ensure that the value of `readResult` isn't null before assigning the value of `readResult` to `animalPhysicalDescription`, enter the following code:
 
     ```c#
     if (readResult != null)
@@ -261,7 +261,7 @@ In this task, we will create a `do` loop that iterates until the user enters a s
 
 ## Build loop to read and validate the pet's personality description
 
-In this task, we will create a `do` loop that iterates until the user enters a string value that is intended to be a description of a pet's personality. We will reuse our voidable string `readResult` to capture the `Console.ReadLine()` input and we will reuse the `animalPersonalityDescription` string variable that we used when generating our sample data. We will use the value assigned to `animalPersonalityDescription` in the expression that's evaluated as an exit criteria for our `do` loop. Let's get started.
+In this task, you create a `do` loop that iterates until the user enters a string value that represents a description of a pet's personality. You reuse the voidable string `readResult` to capture the `Console.ReadLine()` input. You also reuse the `animalPersonalityDescription` string variable that you used when generating the sample data. You use the value assigned to `animalPersonalityDescription` in the expression that's evaluated as an exit criteria for our `do` loop.
 
 1. Add a blank code line below the code block of your physical description data entry loop.
 
@@ -283,7 +283,7 @@ In this task, we will create a `do` loop that iterates until the user enters a s
     
     ```
 
-1. To ensure that the value of `readResult` is NOT null before assigning the value of `readResult` to `animalPersonalityDescription`, enter the following code:
+1. To ensure that the value of `readResult` isn't null before assigning the value of `readResult` to `animalPersonalityDescription`, enter the following code:
 
     ```c#
     if (readResult != null)
@@ -329,7 +329,7 @@ In this task, we will create a `do` loop that iterates until the user enters a s
 
 ## Build loop to read and validate the pet's nickname
 
-In this task, we will create a `do` loop that iterates until the user enters a string value that is intended to be a nickname for a pet. We will reuse our voidable string `readResult` to capture the `Console.ReadLine()` input and we will reuse the `animalNickname` string variable that we used when generating our sample data. We will use the value assigned to `animalNickname` in the expression that's evaluated as an exit criteria for our `do` loop. Let's get started.
+In this task, you create a `do` loop that iterates until the user enters a string value that represents a nickname for a pet. You reuse the voidable string `readResult` to capture the `Console.ReadLine()` input. You also reuse the `animalNickname` string variable that you used when generating the sample data. You use the value assigned to `animalNickname` in the expression that's evaluated as an exit criteria for our `do` loop.
 
 1. Add a blank code line below the code block of your personality description data entry loop.
 
@@ -351,7 +351,7 @@ In this task, we will create a `do` loop that iterates until the user enters a s
     
     ```
 
-1. To ensure that the value of `readResult` is NOT null before assigning the value of `readResult` to `animalNickname`, enter the following code:
+1. To ensure that the value of `readResult` isn't null before assigning the value of `readResult` to `animalNickname`, enter the following code:
 
     ```c#
     if (readResult != null)
@@ -397,7 +397,7 @@ In this task, we will create a `do` loop that iterates until the user enters a s
 
 ## Save the new pet information
 
-In this task, we will save the values entered for our pet characteristics to the `ourAnimals` array. Let's get started.
+In this task, you save the values entered for the pet characteristics to the `ourAnimals` array.
 
 1. Add a blank code line below the code block of your nickname data entry loop.
 
@@ -421,7 +421,7 @@ In this task, we will save the values entered for our pet characteristics to the
 
 ## Check your work
 
-In this task, we will run our application from the Integrated Terminal and verify that pet data entry is working correctly. Let's get started.
+In this task, you run your application from the Integrated Terminal and verify that pet data entry is working correctly.
 
 1. If necessary, open Visual Studio Code's Integrated Terminal panel.
 
@@ -431,13 +431,13 @@ In this task, we will run our application from the Integrated Terminal and verif
 
 1. Verify that the Terminal panel has updated to show the following:
 
-    ```txt
+    ```output
     We currently have 4 pets that need homes. We can manage 4 more.
 
     Enter 'dog' or 'cat' to begin a new entry
     ```
 
-1. Enter the following values at the Terminal command prompts and verify each subsequent prompt is displayed:
+1. Enter the following values at the Terminal command prompts and verify that each subsequent prompt is displayed:
 
     - At the `Enter 'dog' or 'cat' to begin a new entry` prompt, enter **dog**
     - At the `Enter the pet's age or enter ? if unknown` prompt, enter **?**
@@ -447,7 +447,7 @@ In this task, we will run our application from the Integrated Terminal and verif
 
     The Terminal panel should be updated as follows:
 
-    ```txt
+    ```output
     Enter 'dog' or 'cat' to begin a new entry
     dog
     Enter the pet's age or enter ? if unknown

@@ -5,7 +5,7 @@ In this exercise, you write the nested looping structure and selection code bloc
 1. Outer loop: build the outer loop that iterates through the animals in the ourAnimals array.
 1. Data check: write code that checks for existing pet data and displays the pet ID if data exists for a pet.
 1. Inner loop: build an inner loop that displays all of the pet characteristics for pets with data assigned.
-1. Verification test: perform verification tests for the code that you have developed in this exercise.
+1. Verification test: perform verification tests for the code that you've developed in this exercise.
 
 > [!IMPORTANT]
 > You must complete the previous exercise in this module before starting this exercise.
@@ -14,7 +14,7 @@ In this exercise, you write the nested looping structure and selection code bloc
 
 In this task, you create the outer `for` loop that's used to iterate through the animals in the `ourAnimals` array. You examine the relationship between the dimensions of your array and the parameters of your `for` loop. You also consider the differences between using `for` statements and `foreach` statements when working with multidimensional arrays.
 
-1. Ensure that you have Visual Studio Code open, and that your Program.cs file is visible in the Editor.
+1. Ensure that Visual Studio Code is open, and that your Program.cs file is visible in the Editor.
 
 1. Inside the code block for the `switch(menuSelection)` selection statement, locate the following code lines:
 
@@ -29,7 +29,7 @@ In this task, you create the outer `for` loop that's used to iterate through the
 
 1. Delete the `Console.WriteLine()` statement used to display the "coming soon" message, and leave a blank code line below the `// List all of our current pet information` code comment line.
 
-    The feedback message will not be needed because you will be displaying the contents of the `ourAnimals` array. As you develop the code corresponding to the other menu selections, those feedback messages will be updated as well.
+    The feedback message won't be needed because you'll be displaying the contents of the `ourAnimals` array. As you develop the code corresponding to the other menu selections, those feedback messages will be updated as well.
 
     Leave the message that says `Press the Enter key to continue.`
 
@@ -47,7 +47,7 @@ In this task, you create the outer `for` loop that's used to iterate through the
 
     In this case, the `for` loop is used to iterate through the `ourAnimals` array. You know that arrays are zero indexed, meaning that an array with `n` elements is indexed from `0` to `n-1`. You need the _for initializer_, _for condition_, and _for iterator_ to match dimensions of the array. In this case, you want the `for` loop to start at `0`, increment by `1`, and end at `maxPets-1`.
 
-    Your `ourAnimals` array is declared as follows: `string[,] ourAnimals = new string[maxPets, 6];`. You know that the value assigned to `maxPets` is `8`. In this declaration, `maxPets` specifies the number of elements in the first dimension of the array, not the zero-based index number that you use to reference elements in the array. Therefor, although `maxPets = 8`, the array index numbers range from `0` to `7`.
+    Your `ourAnimals` array is declared as follows: `string[,] ourAnimals = new string[maxPets, 6];`. You know that the value assigned to `maxPets` is `8`. In this declaration, `maxPets` specifies the number of elements in the first dimension of the array, not the zero-based index number that you use to reference elements in the array. Therefore, although `maxPets = 8`, the array index numbers range from `0` to `7`.
 
 1. To specify the control value of your `for` loop, update your code as follows:
 
@@ -65,7 +65,7 @@ In this task, you create the outer `for` loop that's used to iterate through the
 
     The reason why you don't use a `foreach` loop in this situation is because the `ourAnimals` array is multidimensional array. Since `ourAnimals` is a multidimensional string array, each element contained within `ourAnimals` is a separate item of type string. If you used a `foreach` loop to iterate through `ourAnimals`, the `foreach` would recognize each string as a separate item in a list of 48 string items (8 x 6 = 48). The `foreach` statement wouldn't process the two array dimensions separately. In other words, a `foreach` loop won't recognize `8` rows of string elements, where each row contains a column of `6` items. Since you want to work with one animal at a time, and process all six animal characteristics during a single iteration, a `foreach` statement isn't the right choice.
 
-    However, if the `ourAnimals` array was a jagged array configured as an array of string arrays, you could use a `foreach` statement. In this case, you would create a `foreach` for an outer loop and second `foreach` for an inner loop. The outer loop would iterate through the "string array" elements in the jagged array. The string arrays are the "rows" in the two dimensional array. The inner loop would iterate through the "string" elements contained in the string arrays. The string elements in the string arrays are the "columns" in the two dimensional array.
+    However, if the `ourAnimals` array was a jagged array configured as an array of string arrays, you could use a `foreach` statement. In this case, you would create a `foreach` for an outer loop and second `foreach` for an inner loop. The outer loop would iterate through the "string array" elements in the jagged array. The string arrays are the "rows" in the two-dimensional array. The inner loop would iterate through the "string" elements contained in the string arrays. The string elements in the string arrays are the "columns" in the two-dimensional array.
 
     The following code sample demonstrates the jagged array approach.
 
@@ -92,7 +92,7 @@ In this task, you create the outer `for` loop that's used to iterate through the
     }
     ```
 
-    In the case of the Contoso Pets application, it's probably easier to use a multidimensional string array and nested `for` loops rather than a jagged array and nested `foreach` loops. Now that you see how each option works, you can make your own choice in future coding projects.
+    For the Contoso Pets application, it's probably easier to use a multidimensional string array and nested `for` loops rather than a jagged array and nested `foreach` loops. Now that you see how each option works, you can make your own choice in future coding projects.
 
 1. On the Visual Studio Code **File** menu, select **Save**.
 
@@ -104,13 +104,13 @@ In this task, you create the outer `for` loop that's used to iterate through the
 
 1. Fix any build errors or warnings that you see reported before continuing.
 
-    Remember that the Build error and warning messages tell you what the issue is and where you can find it. When resolving issues, it is best to start with the issues that occur near the top of your code and work down.
+    Remember that the Build error and warning messages tell you what the issue is and where you can find it. When resolving issues, it's best to start with the issues that occur near the top of your code and work down.
 
 1. Close the Terminal panel.
 
 ## Check for existing pet data and display result
 
-In this task, you use an `if` statement to find each pet in the `ourAnimals` array that has been assigned pet characteristics data. When a pet with assigned data is found, you display the petID. When there is no data assigned, nothing is displayed. You run the code to verify that your `for` and `if` statements are working correctly.
+In this task, you use an `if` statement to find each pet in the `ourAnimals` array that has been assigned pet characteristics data. When a pet with assigned data is found, you display the petID. When there's no data assigned, nothing is displayed. You run the code to verify that your `for` and `if` statements are working correctly.
 
 1. Create a blank code line inside your `for` statement code block as follows:
 
@@ -183,9 +183,9 @@ In this task, you use an `if` statement to find each pet in the `ourAnimals` arr
     Press the Enter key to continue.
     ```
 
-    These are the IDs of the four pets that have been assigned data.
+    These IDs correspond to the pets that have assigned data.
 
-    If your code displays different output when you select menu option 1, review and update your code. Remember that you need to Save your Program.cs file after making updates before the changes will appear in your running program.
+    If your code displays different output when you select menu option 1, review and update your code. Remember that you need to Save your Program.cs file after making updates.
 
 1. Exit the application, and then close the Terminal panel.
 
@@ -220,7 +220,7 @@ In this task, you create a `for` loop inside the `if` statement code block that'
     }    
     ```
 
-    Notice that you now have a second `for` loop that's "nested" inside the code block of the first `for` loop. As you know, the outer loop iterates through the animals in the `outAnimals` array. The intention is for the inner loop to iterate through the characteristics of each animal. Since the animal data is stored in a multidimensional array, it'll be easy to access animal characteristics.
+    Notice that you now have a second `for` loop that's "nested" inside the code block of the first `for` loop. As you know, the outer loop iterates through the animals in the `outAnimals` array. The intention is for the inner loop to iterate through the characteristics of each animal. Since the animal data is stored in a multidimensional array, it will be easy to access animal characteristics.
   
 1. Take a minute to review the `for` statement that you just entered.
 
@@ -248,12 +248,12 @@ In this task, you create a `for` loop inside the `if` statement code block that'
 
     Notice that the value written to the console, `ourAnimals[i, j]`, uses the loop control variables from both the outer and inner `for` loops.
 
-    You know each of the following:
+    You know each of the following items:
 
     - The first dimension of the `ourAnimals` array corresponds to the different pets.
     - The second dimension of the `ourAnimals` array corresponds to the characteristics of each pet.
     - The `if` statement prevents the inner loop from running when there's no pet data assigned to the current pet.
-    - The inner loop will complete all of its iterations for each iteration of the outer loop.
+    - The inner loop completes all of its iterations for each iteration of the outer loop.
 
     Therefore, you know that each animal's characteristics will be displayed as intended.
 
