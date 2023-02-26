@@ -12,7 +12,7 @@ After completing this module, you’ll be able to:
 
 - Explain DDoS attack types and the components of an effective DDoS response strategy.
 
-- Compare Azure DDoS infrastructure protection and Azure DDoS Protection.
+- Compare Azure DDoS infrastructure protection and Azure DDoS Protection tiers.
 
 - Evaluate Azure DDoS Protection, its features, and architecture options.
 
