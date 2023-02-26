@@ -5,7 +5,7 @@ In this exercise, you write the nested looping structure and selection code bloc
 1. Outer loop: build the outer loop that iterates through the animals in the ourAnimals array.
 1. Data check: write code that checks for existing pet data and displays the pet ID if data exists for a pet.
 1. Inner loop: build an inner loop that displays all of the pet characteristics for pets with data assigned.
-1. Verification test: perform verification tests for the code that you've developed in this exercise.
+1. Verification test: perform verification tests for the code that you develop in this exercise.
 
 > [!IMPORTANT]
 > You must complete the previous exercise in this module before starting this exercise.
@@ -222,9 +222,9 @@ In this task, you create a `for` loop inside the `if` statement code block that'
 
     Notice that you now have a second `for` loop that's "nested" inside the code block of the first `for` loop. As you know, the outer loop iterates through the animals in the `outAnimals` array. The intention is for the inner loop to iterate through the characteristics of each animal. Since the animal data is stored in a multidimensional array, it will be easy to access animal characteristics.
   
-1. Take a minute to review the `for` statement that you just entered.
+1. Take a minute to review the `for` statement that you entered.
 
-    Notice that the loop control variable is named `j`. When nesting `for` loops, one conventional approach is to use `i` in the outer loop and `j` in the inner loop. Following conventions like this makes it easier for others to read your code.
+    Notice that the loop control variable is named `j`. When you nest `for` loops, one conventional approach is to use `i` in the outer loop and `j` in the inner loop. Following conventions like this makes it easier for others to read your code.
 
     Since six characteristics are stored for each animal, the _for initializer_ is `int j = 0;` and the _for condition_ is `j < 6;`. This combination of initializer and condition matches the array index range that you need, `0` - `5`.
 

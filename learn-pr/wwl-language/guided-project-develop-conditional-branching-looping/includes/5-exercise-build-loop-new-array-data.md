@@ -6,7 +6,7 @@ In this exercise, you develop code that controls the input of new `ourAnimals` a
 1. Conditional messages: write code to display message output when `petCount` is less than `maxPets`.
 1. Outer loop: build a loop structure that will be used for entering new `ourAnimals` array data.
 1. Exit criteria: write code that evaluates the exit condition for the "enter new ourAnimals array data" loop.
-1. Verification test: perform verification tests for the code you develope in this exercise.
+1. Verification test: perform verification tests for the code you develop in this exercise.
 
 > [!IMPORTANT]
 > You must complete the previous exercise in this module before starting this exercise.
@@ -21,7 +21,7 @@ In this task, you establish the exit criteria for your data entry loop and you c
 
 1. Locate the `Console.WriteLine()` statement that displays the "coming soon" message, and then replace it with a blank code line.
 
-1. On the blank code line that you just created, to declare the `anotherPet` and `petCount` variables, enter the following code:
+1. On the blank code line that you created, to declare the `anotherPet` and `petCount` variables, enter the following code:
 
     ```c#
     string anotherPet = "y";
@@ -61,7 +61,7 @@ In this task, you establish the exit criteria for your data entry loop and you c
 
     Again, this code should look familiar. You'll use this `if` statement each time you check whether pet characteristics have been assigned.
 
-1. Inside the code block of the `if` that you just created, to increment `petCount` by 1, enter the following code:
+1. Inside the code block of the `if` that you created, to increment `petCount` by 1, enter the following code:
 
     ```c#
     petCount += 1;
@@ -104,7 +104,7 @@ In this task, you establish the exit criteria for your data entry loop and you c
 
 In this task, you check to see if `petCount` is less than `maxPets` and if it is, you display a message for the user.
 
-1. On a blank code line below the `for` loop that you just created, to see if `petCount` is less than `maxPets`, enter the following code:
+1. On a blank code line below the `for` loop that you created, to see if `petCount` is less than `maxPets`, enter the following code:
 
     ```c#
     if (petCount < maxPets)
@@ -122,7 +122,7 @@ In this task, you check to see if `petCount` is less than `maxPets` and if it is
 
 1. Take a minute to review the `case "2":` code branch of your `switch` statement.
 
-    At this point, your `case "2":` code branch should look like the following:
+    At this point, your `case "2":` code branch should look like the following code:
 
     ```c#
     case "2":
@@ -154,7 +154,7 @@ In this task, you check to see if `petCount` is less than `maxPets` and if it is
 
 1. Fix any Build errors that you see reported before continuing.
 
-    Again, you can ignore the Warning message about `anotherPet` being assigned but never used. In the next task, you will start building the `while` loop that is used to enter the data for one or more pets. The expression that you create for the `while` loop will use `anotherPet` and this Warning message will go away.
+    Again, you can ignore the Warning message about `anotherPet` being assigned but never used. In the next task, you'll start building the `while` loop that is used to enter the data for one or more pets. The expression that you create for the `while` loop will use `anotherPet` and this Warning message will go away.
 
     Remember, warning messages are things that you should be concerned about, but they won't prevent you from running your program.
 
@@ -228,14 +228,14 @@ In this task, you update the `while (anotherPet == "y" && petCount < maxPets)` c
     }
     ```
 
-1. Inside the code block of the `if` statement that you just created, to ask the user whether they want to add another pet, enter the following code:
+1. Inside the code block of the `if` statement that you created, to ask the user whether they want to add another pet, enter the following code:
 
     ```c#
     // another pet?
     Console.WriteLine("Do you want to enter info for another pet (y/n)");
     ```
 
-1. Below the `WriteLine()` message that you just entered, to read the user response and ensure that the user entered "y" or "n", enter the following code:
+1. Below the `WriteLine()` message that you entered, to read the user response and ensure that the user entered "y" or "n", enter the following code:
 
     ```c#
     do
@@ -290,7 +290,7 @@ In this task, you update the `while (anotherPet == "y" && petCount < maxPets)` c
 
 1. Take a minute to review the code in your `while` loop and the user message that you've created.
 
-    Your `while (anotherPet == "y" && petCount < maxPets)` loop and code that displays the user message should look like the following:
+    Your `while (anotherPet == "y" && petCount < maxPets)` loop and code that displays the user message should look like the following code:
 
     ```c#
     while (anotherPet == "y" && petCount < maxPets)
@@ -341,7 +341,7 @@ In this task, you run our application from the Integrated Terminal and verify th
 
 1. Verify that you see the following messages:
 
-    ```txt
+    ```output
     We currently have 4 pets that need homes. We can manage 4 more.
     Do you want to enter info for another pet (y/n)
     ```
@@ -352,13 +352,13 @@ In this task, you run our application from the Integrated Terminal and verify th
 
     If your code logic is working as expected, you should see the main menu displayed in the Terminal.
 
-    If your code does not exit the loop when expected, press **Ctrl + C** in the Terminal to force execution to stop. You need to step through your code manually and trace the values of the exit criteria variables. Update your code if necessary to ensure that you exit the `while` loop when the user enters "n". Save your changes, rebuild your program, and run through the verification test to arrive back at this point.
+    If your code doesn't exit the loop when expected, press **Ctrl + C** in the Terminal to force execution to stop. You need to step through your code manually and trace the values of the exit criteria variables. Update your code if necessary to ensure that you exit the `while` loop when the user enters "n". Save your changes, rebuild your program, and run through the verification test to arrive back at this point.
 
 1. At the Terminal command prompt, enter **2**
 
     Once again, you'll see the following messages displayed:
 
-    ```txt
+    ```output
     We currently have 4 pets that need homes. We can manage 4 more.
     Do you want to enter info for another pet (y/n)
     ```
@@ -383,15 +383,15 @@ In this task, you run our application from the Integrated Terminal and verify th
 
     - If the user enters **y** at the first **Do you want to enter info for another pet (y/n)** prompt, you know that:
 
-        - The `while (anotherPet == "y" && petCount < maxPets)` loop will iterate. You know this because you know that `anotherPet == "y"` and `petCount < maxPets`.
+        - The `while (anotherPet == "y" && petCount < maxPets)` loop will iterate. You know the loop will iterate because `anotherPet == "y"` and `petCount < maxPets`.
         - The value assigned to `petCount` will be incremented (when the `while` loop iterates).
         - The value assigned to `petCount` will be `6` (after the user enters **y** the first time).
 
     Keep this analysis of the code logic in mind as you continue testing the application.
 
-1. Notice that the Terminal panel updates with the same "another pet?" message, but does not display an updated `petCount`.
+1. Notice that the Terminal panel updates with the same "another pet?" message, but you code doesn't display an updated `petCount`.
 
-    The Terminal panel should now show the following:
+    The Terminal panel should now show the following output:
 
     ```output
     We currently have 4 pets that need homes. We can manage 4 more.
@@ -410,9 +410,9 @@ In this task, you run our application from the Integrated Terminal and verify th
 
 1. Verify that your code exits the `while` loop when you enter **y** the third time.
 
-    The Terminal panel should now show the following:
+    The Terminal panel should now show the following output:
 
-    ```txt
+    ```output
     We currently have 4 pets that need homes. We can manage 4 more.
     Do you want to enter info for another pet (y/n)
     y
@@ -424,7 +424,7 @@ In this task, you run our application from the Integrated Terminal and verify th
     Press the Enter key to continue.
     ```
 
-    If your code does not exit the loop when expected, step through your code manually and trace the values of the exit criteria variables. Update your code if necessary to ensure that you exit the loop when petCount reaches a value that is equal to maxPets (keep answering "y" until you know that petCount is equal to maxPets, which has a default value of 8).
+    If your code doesn't exit the loop when expected, step through your code manually and trace the values of the exit criteria variables. Update your code to ensure that you exit the loop when `petCount` reaches a value equal to `maxPets`. Keep answering "y" until you know that `petCount` is equal to `maxPets`, which has a default value of `8`.
 
 1. At the Terminal command prompt, press Enter to continue running your application.
 

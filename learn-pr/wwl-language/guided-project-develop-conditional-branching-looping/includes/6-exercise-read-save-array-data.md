@@ -1,6 +1,6 @@
 
 
-In this exercise, you'll develop the data entry validation loops for each pet characteristic and then store the new `ourAnimals` array data. The detailed tasks that you complete during this exercise are:
+In this exercise, you develop the data entry validation loops for each pet characteristic and then store the new `ourAnimals` array data. The detailed tasks that you complete during this exercise are:
 
 1. Read and validate species: build a loop and the inner code structure used to enter and validate the pet species.
 1. Construct pet ID: write the code that uses petCount and the species name to construct the petID value.
@@ -8,7 +8,7 @@ In this exercise, you'll develop the data entry validation loops for each pet ch
 1. Read and validate physical description: build a loop and the inner code structure used to enter a physical description of the pet.
 1. Read and validate personality description: build a loop and the inner code structure used to enter a description of the pet's personality.
 1. Read and validate nickname: build a loop and the inner code structure used to enter a nickname for the pet.
-1. Verification test: perform verification tests for the code that you have developed in this exercise.
+1. Verification test: perform verification tests for the code that you develop in this exercise.
 
 > [!IMPORTANT]
 > You must complete the previous exercise in this module before starting this exercise.
@@ -21,7 +21,7 @@ In this task, you create a `do` loop that iterates until the user enters a valid
 
 1. Locate the `while (anotherPet == "y" && petCount < maxPets)` statement, and then add a blank code line at the top code block.
 
-1. On the blank code line that you just created, to declare `validEntry` with an initial value of `false`, enter the following code:
+1. On the blank code line that you created, to declare `validEntry` with an initial value of `false`, enter the following code:
 
     ```c#
     bool validEntry = false;
@@ -429,7 +429,7 @@ In this task, you run your application from the Integrated Terminal and verify t
 
 1. At the Terminal command prompt, enter **2**
 
-1. Verify that the Terminal panel has updated to show the following:
+1. Verify that the Terminal panel has updated to show the following output:
 
     ```output
     We currently have 4 pets that need homes. We can manage 4 more.
@@ -467,9 +467,9 @@ In this task, you run your application from the Integrated Terminal and verify t
 
 1. At the Terminal command prompt, enter **1**
 
-1. Verify that the Terminal panel has updated to show the following:
+1. Verify that the Terminal panel has updated to show the following output:
 
-    ```txt
+    ```output
     ID #: d1
     Species: dog
     Age: 2
@@ -507,10 +507,10 @@ In this task, you run your application from the Integrated Terminal and verify t
     Press the Enter key to continue
     ```
 
-    If your newly added pet information isn't displayed, check to be sure that you have included the code lines to save the data to the ourAnimals array, and check to be sure that you have included the code line to construct the petID.
+    If your newly added pet information isn't displayed, check to be sure that you've included the code lines to save the data to the ourAnimals array, and check to be sure that you've included the code line to construct the petID.
   
 1. Verify that you can create additional animal descriptions for dogs and cats and that animal characteristics are being saved to the `ourAnimals` array.
 
 1. Exit the application, and then close the Terminal panel.
 
-Congratulations on completing this Guided project! You've created an application that combines selection and iteration statements to achieve your application design goals. Your application includes over 300 lines and performs tasks that you might find in a professional application. Completing this project represents is a significant accomplishment. Keep up the great work!
+Congratulations on completing this Guided project! You've created an application that combines selection and iteration statements to achieve your application design goals. Your application includes over 300 lines and performs tasks that you might find in a professional application. Completing this project represents a significant accomplishment. Keep up the great work!
