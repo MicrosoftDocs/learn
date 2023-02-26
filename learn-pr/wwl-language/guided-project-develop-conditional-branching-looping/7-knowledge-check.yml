@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/25/2023
+  ms.date: 02/26/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
@@ -20,7 +20,7 @@ quiz:
       explanation: "Correct! When more than 2-3 `else if` code blocks are required, the code can become difficult to read, and the `switch-case` construct is preferable"
     - content: "A `switch-case` construct is appropriate when the number of `case` patterns is small."
       isCorrect: false
-      explanation: "Incorrect. If there are fewer than 2-3 `case` patterns in the selection list of a `switch` statement, an `if-elseif-else` construct may be the better choice."
+      explanation: "Incorrect. If fewer than 2-3 `case` patterns are included in the selection list of a `switch` statement, an `if-elseif-else` construct may be the better choice."
     - content: "A `switch-case` construct is appropriate when the selection statement is inside a loop."
       isCorrect: false
       explanation: "Incorrect. Being inside a loop doesn't affect the choice between a `switch-case` construct and a `if-elseif-else` construct."
@@ -39,7 +39,7 @@ quiz:
     choices:
     - content: "It ensures that a variable that's declared outside of a code block, can be accessed inside the code block before it's been assigned a value."
       isCorrect: false
-      explanation: "Incorrect. A variable that's declared outside a code block must be assigned a value before it can be accessed inside the code block. If the variable has not been initialized a build error occurs."
+      explanation: "Incorrect. A variable that's declared outside a code block must be assigned a value before it can be accessed inside the code block. If the variable hasn't been initialized a build error occurs."
     - content: "It ensures that application resources and the security footprint are kept small."
       isCorrect: true
       explanation: "Correct. Keeping variables scoped at the lowest necessary level enables better resource management and helps to minimize the attack profile of the application."

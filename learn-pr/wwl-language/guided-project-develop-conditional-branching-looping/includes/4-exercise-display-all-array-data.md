@@ -1,6 +1,6 @@
 
 
-In this step of your development process, you will write the nested looping structure and conditional code block that will be used to display all of the information in the ourAnimals array. The detailed tasks that you will complete during this exercise are:
+In this exercise, you'll write the nested looping structure and selection code block that's used to display the ourAnimals array information. The detailed tasks that you'll complete during this exercise are:
 
 1. Outer loop: build the outer loop that iterates through the animals in the ourAnimals array.
 1. Data check: write code that checks for existing pet data and displays the pet ID if data exists for a pet.
