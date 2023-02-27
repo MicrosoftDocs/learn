@@ -14,7 +14,6 @@ So let's set up our stream of data back into an ADLS Gen2 folder called **master
 
     1. Under key1, find the **Key value**. Select the **Copy** button to copy the account key.
 
-
 1. In CluedIn, navigate to your Export Targets, select **Add Export Target** and choose the Azure Data Lake Connector.
 
     :::image type="content" source="../media/Export_Target_Data_Lake.png" alt-text="Screenshot of the CluedIn Consume window, showing the Azure Data Lake Connector selected.":::
