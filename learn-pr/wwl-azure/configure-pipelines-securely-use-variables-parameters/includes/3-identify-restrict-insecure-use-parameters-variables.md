@@ -1,78 +1,35 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+In Azure Pipelines, parameters and variables can be used to pass runtime values to pipeline tasks and scripts and to define variables that can be used across different pipeline stages. However, if not correctly secured, parameters and variables can become a security vulnerability, as they can store sensitive information such as connection strings, API keys, and other credentials.
 
-    Goal: briefly summarize the key skill this unit will teach
+In this unit, identify and restrict insecure use of parameters and variables in Azure Pipelines.
 
-    Heading: none
+## Why is secure usage of parameters and variables important?
 
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
+Secure usage of parameters and variables is essential to ensure the security of your pipeline and the projects it supports. Insecure parameters and variables can lead to data breaches, unauthorized access, and other security risks. They can also lead to unexpected behavior or errors that can impact the reliability and stability of your pipeline.
 
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+### Identify insecure use of parameters and variables
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+Here are some steps to identify insecure use of parameters and variables in Azure Pipelines:
 
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
+- Check your pipeline YAML file for any parameters or variables storing sensitive information, such as connection strings or credentials.
+- Check that the values of these parameters or variables aren't hard-coded in the pipeline tasks or script used by your tasks, for example, bash, PowerShell, etc. Instead, they should be defined as secure pipeline inputs, such as a secure file or variable group.
+- Use the Azure DevOps Pipeline Audit log to monitor the usage of parameters and variables in your pipeline and identify any potential security risks or vulnerabilities.
+- Check your template files for any parameters or variables storing sensitive information.
+- Check your repository for any parameters or variables storing sensitive information, for example, `appconfig.json`, `appsettings.json`, `secrets.json`, etc.
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+### Restrict insecure use of parameters and variables
 
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
+Here are some steps to restrict the insecure use of parameters and variables in Azure Pipelines:
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
+- Define your parameters and variables as secure pipeline inputs, such as a secure file, secret variables or variable group.
+- Use Azure Key Vault to store sensitive data, such as connection strings or API keys, certificates and then reference them in your pipeline script.
+- Link your Azure Key Vault to your Azure DevOps organization and then use the Azure Key Vault task to retrieve the secrets from your Azure Key Vault and use them in your pipeline.
+- Use service connections with service principal authentication.
+- Restrict access to sensitive data by setting appropriate permissions and access control policies. For example, limit access to pipeline variables and parameters to specific users or groups.
 
-    Goal: State concisely what's covered in this unit
+## Challenge yourself
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+Create a YAML pipeline that deploys a web application to an Azure App Service. Add parameters and variables to the pipeline that define the target environment, database connection string, and other sensitive data. Use the steps described in this unit to ensure that the parameter and variable usage is secure and that sensitive data is securely stored and managed. Test the pipeline, and make sure that the pipeline executes as expected while maintaining the security of the sensitive data in your log and validating the Audit Log.
 
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
+For more information about variables and parameters, see:
 
-<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
-
-    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
-
-    Heading: none
--->
-TODO: add a visual element
-
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
-
-    Goal: Provide all the information the learner needs to perform this sub-task.
-
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
-
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=main)
--->
-
-<!-- Pattern for simple chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
-
-<!-- Pattern for complex chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+- [Securing Azure Pipelines.](https://learn.microsoft.com/azure/devops/pipelines/security/overview/)

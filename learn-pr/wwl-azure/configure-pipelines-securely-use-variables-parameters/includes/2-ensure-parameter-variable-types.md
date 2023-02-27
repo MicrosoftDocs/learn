@@ -90,7 +90,7 @@ A great way to practice ensuring parameter and variable types is to create a pip
 
 Also, try to create a YAML pipeline that includes a parameter with an incorrect type and run it. Then, correct the error by declaring the correct type for the parameter and rerunning the pipeline. It helps you understand the importance of retaining the type of parameters and variables in the pipeline code.
 
-For more information about templates and YAML pipelines, see:
+For more information about variables and parameters, see:
 
 - [Securing Azure Pipelines.](https://learn.microsoft.com/azure/devops/pipelines/security/overview/)
 - [How to securely use variables and parameters in your pipeline.](https://learn.microsoft.com/azure/devops/pipelines/security/inputs/)
