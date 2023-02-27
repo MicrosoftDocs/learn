@@ -389,7 +389,7 @@ In this task, you run our application from the Integrated Terminal and verify th
 
     Keep this analysis of the code logic in mind as you continue testing the application.
 
-1. Notice that the Terminal panel updates with the same "another pet?" message, but you code doesn't display an updated `petCount`.
+1. Notice that the Terminal panel updates with the same "another pet?" message, but your code doesn't display an updated `petCount`.
 
     The Terminal panel should now show the following output:
 
