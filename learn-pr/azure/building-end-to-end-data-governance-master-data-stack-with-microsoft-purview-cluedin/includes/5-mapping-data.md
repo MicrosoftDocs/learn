@@ -1,56 +1,54 @@
-Now that the data has been automatically onboarded into CluedIn in a staging area, we have to now map the data from its current form, into our new desired state. For this, we will map the data in the CluedIn Studio.
+Now that the data has been onboarded into CluedIn in a staging area, we have to map the data from its current form into the new desired state. For this, we'll map the data in the CluedIn Studio.
 
-Interestingly, CluedIn does not mandate that we onboard this data in any specific order. Rather, we could randomly onboard the data in any order and CluedIn will always achieve the exact same result in the end. This will dramatically simplify the process as we don't need to do any upfront planning in order to provide referential integrity on the way into the CluedIn platform.
+Interestingly, CluedIn doesn't mandate that we onboard this data in any specific order. This simplifies the process since we don't need to do any upfront planning in order to provide referential integrity on the way into the CluedIn platform.
 
-In saying that, let's now onboard the data in the order within the datasources tab.
+So, we can onboard the data in the order we find them in the datasources tab:
 
-1. Navigate through to the Arca folder, in which you will find an ingestion endpoint called Companies.csv. However it is worth mentioning that this is not a CSV file hosted in CluedIn but rather it is the raw data hosted in the staging area in CluedIn.
+1. Navigate through Integrations in CluedIn to the ingestion endpoint called Companies.csv. It's worth mentioning that this isn't a CSV file hosted in CluedIn; it's the raw data hosted in the staging area in CluedIn. You'll see a preview of 10 rows of data, including the companies in our original CSV file.
 
     :::image type="content" source="../media/Data_Preview_Arca.png" alt-text="Screenshot of the CluedIn window, showing the companies.csv window.":::
 
-    Selecting through to the ingestion point you will be met with a Preview of the 10 rows of data, including the companies that we originally had in our CSV file within the CluedIn.zip file.
+1. CluedIn may prompt you to map the data, in which case you'll select the **Create Mapping** button. If not, you can select the **Map** tab and then the **Map** data button.
 
-    CluedIn will be asking you to map the data, in which you will need to select the "Create Mapping" button. You will be prompted to choose either an Automated Mapping or a Manual Mapping.
+    :::image type="content" source="../media/Automapping_New_Employee.png" alt-text="Screenshot of the Create Mapping page in CluedIn, showing the configure tab.":::
 
-1. Choose "Automated Mapping".
+1. Choose **Automated Mapping**.
 
-    :::image type="content" source="../media/Automapping_New_Employee.png" alt-text="Screenshot of the Create Mapping page in Clued in, showing the configure tab.":::
+1. On the **Configure** tab, you'll choose **Entity Type**. Add **Company** here.
 
-1. On the next part of the wizard, you will be asked to choose 2 pieces, including an Entity Type and a Vocabulary.
+    An Entity Type in CluedIn can be thought of as the Domain of the data we're working with. This is typically some type of noun such as a Person, Company, Vendor, or Dog.
 
-    An Entity Type in CluedIn can be thought of as the Domain of the data we are working with. This is typically some type of Noun such as a Person, Company, Vendor, Dog.
+    The concept of a **Company** might not exist within CluedIn already, but that's expected. CluedIn provides all of the domains in the Microsoft Common Data Model by default and some of the domains you'll need to master won't always fall into the ones that already exist.
 
-    Because we are dealing with Companies in our scenario, type in "Company". You will find that the concept of an "Company" doesn't exist within CluedIn already, however this is expected to happen. CluedIn provides all of the Domains in the Microsoft Common Data Model by default and chances are that the domains you need to master won't always fall into the ones that exist.
+1. Next, we're going to create a new **Vocabulary**. Think of this as the structure or "schema" of the domain. In the vocabulary box, you can search **Company**, but we're going to create a new structure that matches our data. Follow the prompts to create a new vocabulary, and you'll see a preview of the new structure that contains all the columns names the CSV has.
 
-1. You will then to choose a Vocabulary. Think of this as the structure or "schema" of the Domain. Once again, as you start to type in "Company" here you will find that you can choose from a large array of existing structures. Let's not use the Vocabularies provided, but rather create a brand new one.
+    :::image type="content" source="../media/Automapping_Create_Vocabulary.png" alt-text="Screenshot of the Create Mapping page in CluedIn, showing the vocabulary selector on the configure tab.":::
 
-    :::image type="content" source="../media/Automapping_Create_Vocabulary.png" alt-text="Screenshot of the Create Mapping page in Clued in, showing the vocabulary selector on the configure tab.":::
+    Instead of creating the model of a **Company** upfront before ingesting data, we'll instead use the data to create our model and as we start to see more data on companies, we'll evolve and change the model as we need to. This agile approach yields an automated way for us to integrate the data - but also allows us to work with changes in model alongside the data.
 
-    You will then see a preview of the strucutre that will be created, which is essentially a structure that contains all of the column names of the data in the file. The idea here is simple, in that instead of creating the Model of an Employee upfront before ingesting data, we will instead use the data to create our model and as we start to see more data on Employees, we will evolve and change the model as we need to. Although this might feel a bit "foreign", you will soon find that this approach yields an automated way for us to integrate the data - but it also gets us into the momentum of being able to deal and work with changes in model and making it almost seemless to adapt to changes in data.
+1. Select **Create Mapping** to accept the default names. If you chose **Automated Mapping** as suggested, CluedIn will provide some automated *smarts* including the automated detection of potential unique identifiers of the data.
 
-1. Select "Create Mapping" to accept the default names.
+1. Let's investigate what CluedIn just did in the mapping, by selecting **Edit Mapping** on the lineage view.
 
-    If you chose "Automated Mapping" as suggested above, CluedIn will provide some automated "smarts" including the automated detection of what could be unique identifiers of the data.
+    1. On the first screen, we can see that CluedIn has mapped the incoming data into a new column or attribute name that includes the name of the domain. If this name isn't something that we would like to keep, select the dropdown of any of the fields and add a new mapping to a name that you would prefer.
 
-1. Let's investigate what CluedIn just did in the mapping, but selecting "Edit Mapping" on the lineage view.
+    1. Select the **Next** button and you will be taken to the entity mapping where we can see how CluedIn will interpret some of the data in its core properties.
 
-    On the first screen, we can see that CluedIn has mapped the incoming data into a new column or attribute name that includes the name of the domain in it. If this name is currently not something that we would like to keep, you can always select the dropdown of any of the fields and add a new mapping to a name that you would prefer. For some, let's keep the names as they are. Select the "Next" button and you will be taken to the Entity Mapping in which we see how CluedIn will interpret some of the data in its core properties. Notice that the Name of the Entity in CluedIn has automatched to use the Company Name and also notice under the Origin Code Accordian that CluedIn has chosen the Id column as the Origin Code (Primary Key) and it has also chosen that both the Id and the Email most likley can be used as ways to uniquely refer to or lookup each of the employees in this list. It has detected this correctly, but you may find that sometimes we need to change this if the system has not detected this properly.
+    1. Notice that the Name of the entity in CluedIn has automatched to use the Company Name. Notice under the Origin Code Accordian that CluedIn has chosen the ID column as the Origin Code (Primary Key) and it has also chosen that both the ID and the Email most likely can be used as ways to uniquely look up each of the employees in this list.
 
     :::image type="content" source="../media/Remove_PersonId_Code.png" alt-text="Screenshot of the general details of the map entity tab of companies.csv.":::
 
-1. Select "Next" to go to the next section which is called "Edges".
+1. Select **Next** to go to the next section that is called **Edges**.
 
-    In this section we will specify if there are columns here that are referring to records that are not Companies, but rather are some type of relationship to another record. This could easily be a relationship to a Domain of the same type (Company) or in this case it seems to be referring to a Person (from the column name person_id). In saying this, we know already that although it is a person, we could also say that it is referring to an "Employee". The good part about CluedIn's mapping process, is that we can go with one type now and we can always come back and change this at a later point once we know more about our data and Cluedin will handle all the cleanup necessary. With this in mind, mapping just because even more easy as we don't even need to get the mapping correct at this point.
+    In this section we'll specify if there are columns that refer to records that aren't Companies, but are some type of relationship to another record. This could easily be a relationship to a Domain of the same type (Company) or in this example, it seems to be referring to a Person (from the column name person_id). We already that although it's a person, we could also say that it's referring to an Employee. The good part about CluedIn's mapping process, is that we can choose one type now and we can always come back and change this later, once we know more about our data. CluedIn will handle all the cleanup necessary.
 
     :::image type="content" source="../media/Person_Edge_Create.png" alt-text="Screenshot of the Add Edge menu on CluedIn.":::
 
-    With this mapping in place, you will notice that your "Process" tab now becomes enabled as well as the Process button on this tab due to the fact that we have now mapped the CluedIn data to the point where it has all of its requirements fulfilled.
-
-1. Select the "Process" button to which you will see these 10 rows of data are submitted to the platform.
+1. Select the **Process** button where the 10 rows of data are submitted to the platform.
 
     :::image type="content" source="../media/Process_Companies.png" alt-text="Screenshot of the are you sure you want to process page in CluedIn.":::
 
-    >[!NOTE]
-    > For the next part of the learning module, you will need to repeat the process above with the other 6 files with their respective Domains, Vocabularies, Identifiers and more.
+1. Repeat the steps above for all the other files, until all the data is processed in the platform.
 
-1. Repeat the process above for the files in Experience, Salesforce, Navision and all folders until all data is processed in the platform.
+>[!NOTE]
+> For the next part of the learning module, you will need to repeat the process above with the other 6 files with their respective Domains, Vocabularies, Identifiers and more.
