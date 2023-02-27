@@ -122,8 +122,8 @@ Create a new YAML pipeline that deploys an Azure Resource Manager template that 
 
 For more information about Azure Key Vault and YAML pipelines, see:
 
-- [Manage application configuration data](https://learn.microsoft.com/training/modules/manage-application-configuration-data/)
-- [Use Azure Key Vault secrets in Azure Pipelines](https://learn.microsoft.com/azure/devops/pipelines/release/azure-key-vault/)
-- [Use Azure Key Vault in your YAML Pipeline](https://learn.microsoft.com/azure/devops/pipelines/release/key-vault-in-own-project/)
-- [Azure Key Vault recovery management with soft delete and purge protection](https://learn.microsoft.com/azure/key-vault/general/key-vault-recovery)
-- [Add & use variable groups](https://learn.microsoft.com/azure/devops/pipelines/library/variable-groups)
+- [Manage application configuration data.](https://learn.microsoft.com/training/modules/manage-application-configuration-data/)
+- [Use Azure Key Vault secrets in Azure Pipelines.](https://learn.microsoft.com/azure/devops/pipelines/release/azure-key-vault/)
+- [Use Azure Key Vault in your YAML Pipeline.](https://learn.microsoft.com/azure/devops/pipelines/release/key-vault-in-own-project/)
+- [Azure Key Vault recovery management with soft delete and purge protection.](https://learn.microsoft.com/azure/key-vault/general/key-vault-recovery)
+- [Add & use variable groups.](https://learn.microsoft.com/azure/devops/pipelines/library/variable-groups)

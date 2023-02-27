@@ -229,5 +229,5 @@ Create a reusable template for a common task in your organization's deployment p
 
 For more information about templates and YAML pipelines, see:
 
-- [Security through templates](https://learn.microsoft.com/azure/devops/pipelines/security/templates)
-- [Template types & usage](https://learn.microsoft.com/azure/devops/pipelines/process/templates/)
+- [Security through templates.](https://learn.microsoft.com/azure/devops/pipelines/security/templates)
+- [Template types & usage.](https://learn.microsoft.com/azure/devops/pipelines/process/templates/)

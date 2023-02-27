@@ -161,7 +161,7 @@ The last step is to run your release pipeline to build your application and repl
 
 For more information about file transformation and variables substitution in YAML pipelines, see:
 
-- [File transforms and variable substitution reference](https://learn.microsoft.com/azure/devops/pipelines/tasks/transforms-variable-substitution)
-- [FileTransform@1 - File transform v1 task](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/file-transform-v1)
-- [YAML schema reference for Azure Pipelines](https://learn.microsoft.com/azure/devops/pipelines/yaml-schema/)
-- [Customize your pipeline](https://learn.microsoft.com/azure/devops/pipelines/customize-pipeline)
+- [File transforms and variable substitution reference.](https://learn.microsoft.com/azure/devops/pipelines/tasks/transforms-variable-substitution)
+- [FileTransform@1 - File transform v1 task.](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/file-transform-v1)
+- [YAML schema reference for Azure Pipelines.](https://learn.microsoft.com/azure/devops/pipelines/yaml-schema/)
+- [Customize your pipeline.](https://learn.microsoft.com/azure/devops/pipelines/customize-pipeline)

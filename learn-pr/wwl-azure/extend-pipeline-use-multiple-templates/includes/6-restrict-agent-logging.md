@@ -75,7 +75,7 @@ Create a new YAML pipeline with a task that logs a secret variable to the agent 
 
 For more information about secrets, see:
 
-- [Set secret variables](https://learn.microsoft.com/azure/devops/pipelines/process/set-secret-variables)
-- [How to securely use variables and parameters in your pipeline](https://learn.microsoft.com/azure/devops/pipelines/security/inputs/)
-- [Plan how to secure your YAML pipelines](https://learn.microsoft.com/azure/devops/pipelines/security/approach/)
-- [Recommendations to securely structure projects in your pipeline](https://learn.microsoft.com/azure/devops/pipelines/security/projects/)
+- [Set secret variables.](https://learn.microsoft.com/azure/devops/pipelines/process/set-secret-variables)
+- [How to securely use variables and parameters in your pipeline.](https://learn.microsoft.com/azure/devops/pipelines/security/inputs/)
+- [Plan how to secure your YAML pipelines.](https://learn.microsoft.com/azure/devops/pipelines/security/approach/)
+- [Recommendations to securely structure projects in your pipeline.](https://learn.microsoft.com/azure/devops/pipelines/security/projects/)

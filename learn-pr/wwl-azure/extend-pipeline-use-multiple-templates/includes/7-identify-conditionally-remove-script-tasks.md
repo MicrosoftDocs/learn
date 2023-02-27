@@ -57,7 +57,7 @@ Create a new YAML pipeline that conditionally removes a script task based on the
 
 For more information about pipeline conditions and decorators, see:
 
-- [Specify conditions](https://learn.microsoft.com/azure/devops/pipelines/process/conditions/)
-- [Pipeline decorator expression context](https://learn.microsoft.com/azure/devops/extend/develop/pipeline-decorator-context/)
-- [Runtime parameters](https://learn.microsoft.com/azure/devops/pipelines/process/runtime-parameters/)
-- [Expressions](https://learn.microsoft.com/azure/devops/pipelines/process/expressions/)
+- [Specify conditions.](https://learn.microsoft.com/azure/devops/pipelines/process/conditions/)
+- [Pipeline decorator expression context.](https://learn.microsoft.com/azure/devops/extend/develop/pipeline-decorator-context/)
+- [Runtime parameters.](https://learn.microsoft.com/azure/devops/pipelines/process/runtime-parameters/)
+- [Expressions.](https://learn.microsoft.com/azure/devops/pipelines/process/expressions/)

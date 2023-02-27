@@ -11,11 +11,11 @@ You learned how to describe the benefits and usage of:
 
 ## Learn more
 
-- [Security through templates](https://learn.microsoft.com/azure/devops/pipelines/security/templates)
-- [Template types & usage](https://learn.microsoft.com/azure/devops/pipelines/process/templates/)
-- [Securing Azure Pipelines](https://learn.microsoft.com/azure/devops/pipelines/security/overview/)
-- [Recommendations to securely structure projects in your pipeline](https://learn.microsoft.com/azure/devops/pipelines/security/projects/)
-- [File transforms and variable substitution reference](https://learn.microsoft.com/azure/devops/pipelines/tasks/transforms-variable-substitution)
-- [Set secret variables](https://learn.microsoft.com/azure/devops/pipelines/process/set-secret-variables)
-- [How to securely use variables and parameters in your pipeline](https://learn.microsoft.com/azure/devops/pipelines/security/inputs/)
-- [Plan how to secure your YAML pipelines](https://learn.microsoft.com/azure/devops/pipelines/security/approach/)
+- [Security through templates.](https://learn.microsoft.com/azure/devops/pipelines/security/templates)
+- [Template types & usage.](https://learn.microsoft.com/azure/devops/pipelines/process/templates/)
+- [Securing Azure Pipelines.](https://learn.microsoft.com/azure/devops/pipelines/security/overview/)
+- [Recommendations to securely structure projects in your pipeline.](https://learn.microsoft.com/azure/devops/pipelines/security/projects/)
+- [File transforms and variable substitution reference.](https://learn.microsoft.com/azure/devops/pipelines/tasks/transforms-variable-substitution)
+- [Set secret variables.](https://learn.microsoft.com/azure/devops/pipelines/process/set-secret-variables)
+- [How to securely use variables and parameters in your pipeline.](https://learn.microsoft.com/azure/devops/pipelines/security/inputs/)
+- [Plan how to secure your YAML pipelines.](https://learn.microsoft.com/azure/devops/pipelines/security/approach/)
