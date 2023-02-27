@@ -1,9 +1,9 @@
 name: deploy-toy-website-environments
 concurrency: toy-company
 
-on: 
+on:
   push:
-    branches: 
+    branches:
       - main
   workflow_dispatch:
 
