@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-do-while.solution
-title: Solution
+title: Review the solution to the do and while challenge activity
 metadata:
-  title: Solution
-  description: One possible solution to the challenge in this module.
-  ms.date: 10/03/2019
-  author: billwagner
-  ms.author: wiwagn
+  title: Review the solution to the do and while challenge activity
+  description: "Review the solution to the do and while challenge activity"
+  ms.date: 02/27/2023
+  author: wwlpublish
+  ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1
-azureSandbox: false
-interactive: csharp
+durationInMinutes: 6
 content: |
   [!include[](includes/4-solution.md)]

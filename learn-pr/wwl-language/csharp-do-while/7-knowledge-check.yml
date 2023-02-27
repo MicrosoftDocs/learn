@@ -1,0 +1,37 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-do-while.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/27/2023
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A developer needs to iterate through an array of items to find one that matches a certain criteria.  Which is the best iteration statement for this purpose?"
+    choices:
+    - content: "`foreach`"
+      isCorrect: true
+      explanation: "Correct! It's possible to perform this operation using any of these iteration statements, however the `foreach` is the best suited for cases like this that process sequences."
+    - content: "`for`"
+      isCorrect: false
+      explanation: "Incorrect. It's possible to use the `for` statement, but the `foreach` statement was created for working with sequences."
+    - content: "`while`"
+      isCorrect: false
+      explanation: "Incorrect. It's possible to use the `while` statement, but the `foreach` statement was created for working with sequences."
+  - content: "A developer needs to capture a list of items from the user.  The user will enter the keyboard combination `ctrl + Esc` to exit.  Which is the best iteration statement for this purpose?"
+    choices:
+    - content: "foreach"
+      isCorrect: false
+      explanation: "Incorrect. It's remotely possible to use the `foreach` statement for this purpose, but it wouldn't be straight forward."
+    - content: "do-while"
+      isCorrect: true
+      explanation: "Correct!  The `do-while` will allow the code to check each entry by the user until they enter the special keyboard combination to exit."
+    - content: "while"
+      isCorrect: false
+      explanation: "Incorrect. It's possible to use the `while` statement, but the `do-while` will allow the user to enter a value before the code begins checking for the special keyboard combination."

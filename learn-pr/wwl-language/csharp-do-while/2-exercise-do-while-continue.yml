@@ -1,16 +1,39 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-do-while.exercise-do-while-continue
-title: Exercise - do-while, while, and continue statements
+title: Exercise - Create do and while iteration loops
 metadata:
-  title: Exercise - do-while, while, and continue statements
-  description: Use the `do-while` and `while` statements to add looping logic.  Use the `continue` statement to step directly to the Boolean evaluation.
-  ms.date: 10/03/2019
-  author: billwagner
-  ms.author: wiwagn
+  title: Exercise - Create do and while iteration loops
+  description: "Exercise - Create do and while iteration loops"
+  ms.date: 02/27/2023
+  author: wwlpublish
+  ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 8
-azureSandbox: false
-interactive: csharp
+durationInMinutes: 10
 content: |
   [!include[](includes/2-exercise-do-while-continue.md)]
+quiz:
+  title: "Knowledge check"
+  questions:
+  - content: "Which of the **following** correctly describes a difference between the `do-while` and the `while` iterative statements?"
+    choices:
+    - content: "Application code exits a `while` statement when an expression evaluates to false."
+      isCorrect: false
+      explanation: "Incorrect. Both the `do-while` statement and the `while` statement evaluate an expression to determine when to stop iterating."
+    - content: "A `while` statement executes a code block at least once."
+      isCorrect: false
+      explanation: "Incorrect. A `do-while` statement iterates through a code block at least once because the expression is evaluated at the end of the code block. The expression for a `while` statement is evaluated before the code block and therefore the code block may not be executed even once."
+    - content: "A `do-while` statement iterates through a code block until a condition is met."
+      isCorrect: true
+      explanation: "Correct! The `do-while` will iterate through a code block at least once."
+  - content: "A developer needs to capture user input inside a loop. The user enters the keyboard combination `ctrl + Esc` to exit the iteration when they're done entering information. Which is the best iteration statement for this purpose?"
+    choices:
+    - content: "while"
+      isCorrect: false
+      explanation: "Incorrect. It's possible to use the `while` statement for this purpose, but the `do-while` will has the user to enter information once before checking for the special keyboard combination that exist the iteration."
+    - content: "for"
+      isCorrect: false
+      explanation: "Incorrect. It's possible to use the `for` statement, but the `do-while` will allow the code to iterate indefinitely. The `do-while` will iterate until the user enters the special keyboard combination and doesn't require a `break` statement to exit the iteration."
+    - content: "do-while"
+      isCorrect: true
+      explanation: "Correct!  The `do-while` will allow the developer to check each entry by the user until they enter the special keyboard combination to exit."
