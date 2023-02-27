@@ -1,8 +1,3 @@
-<!-- Follow this: https://learn.microsoft.com/azure/iot-central/core/concepts-device-templates#device-models
-And this: https://learn.microsoft.com/azure/iot-central/core/concepts-device-implementation
-
-TODO: Add Node App code here!? -->
-
 The device developer must make sure that the device implements the behaviors defined in the device model so that Azure IoT Central can monitor and manage the device.
 
 In the IoT enabled coffee machines example you'll simulate a device to validate your scenario before connecting a physical device.
@@ -17,16 +12,15 @@ The [Azure IoT device SDKs](/azure/iot-hub/iot-hub-devguide-sdks) include suppor
 
 ## Review the code
 
-<!-- TODO: Can I download a file in a Module? -->
-
-:::code language="js" source="../resources/CoffeeMaker.js" range="1-26,239-255":::
+<!-- TODO: Add file to githubrepo https://github.com/Azure-Samples/iot-central-docs-samples -->
+You can open the *CoffeeMaker.js* file in a text editor to see the entire code.
 
 The `provisioningClient` object:
 
 - Sets the `dtmi:com:example:ConnectedCoffeeMaker;1` model ID before it registers the device.
 - Opens the connection in the `centralClient` object.
 
-<!-- TODO: Reference code to provisioningClient object -->
+:::code language="js" source="../resources/CoffeeMaker.js" id="providioningClient":::
 
 The `connectCallback` method:
 

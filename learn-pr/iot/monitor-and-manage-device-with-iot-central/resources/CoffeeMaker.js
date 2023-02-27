@@ -237,6 +237,7 @@ var connectCallback = (errorMessage) => {
     }
 };
 
+// <ProvisioningClient>
 // Start the device (register and connect to Azure IoT Central).
 provisioningClient.setProvisioningPayload(modelIdObject);
 provisioningClient.register((err, result) => {
@@ -252,4 +253,5 @@ provisioningClient.register((err, result) => {
         centralClient.setOptions(modelIdObject);
         centralClient.open(connectCallback);
     }
+// </provisioningClient>
 });
