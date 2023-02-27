@@ -17,7 +17,7 @@ quiz:
     choices:
     - content: "A default template for specific technologies and their dependencies."
       isCorrect: false
-      explanation: "Incorrect. Default templates do not automatically implement nested templates."
+      explanation: "Incorrect. Default templates don't automatically implement nested templates."
     - content: "A template that is designed to run only on specific agents."
       isCorrect: false
       explanation: "Incorrect. All templates can run in one or more agents based on the pipeline configuration."
@@ -34,7 +34,7 @@ quiz:
       explanation: "Correct. By using variable groups and defining secret variables. It ensures that the variable is securely stored and can be accessed by multiple pipelines."
     - content: "By defining the variable in a script and sharing it across multiple pipelines."
       isCorrect: false
-      explanation: "Incorrect. It is possible to use templates and implement variable groups to share cross pipelines, but not by using scripts sharing cross pipelines."
+      explanation: "Incorrect. It's possible to use templates and implement variable groups to share cross pipelines, but not by using scripts sharing cross pipelines."
   - content: "What is the purpose of conditionally removing script tasks from templates in Azure Pipelines?"
     choices:
     - content: "To improve security by preventing unnecessary execution of scripts."
@@ -42,7 +42,7 @@ quiz:
       explanation: "Correct. To improve security by preventing unnecessary execution of scripts. It helps reduce the pipeline's attack surface and prevent potential security vulnerabilities."
     - content: "To improve the performance of the pipeline."
       isCorrect: false
-      explanation: "False. Only removing script tasks from templates does not directly help improve security in the pipeline or improve performance."
+      explanation: "False. Only removing script tasks from templates doesn't directly help improve security in the pipeline or improve performance."
     - content: "To reduce the amount of code in templates."
       isCorrect: false
-      explanation: "False. Reducing the amount of code in templates is good to make it easy to manage and read, but do not directly help improve security."
+      explanation: "False. Reducing the amount of code in templates is good to make it easy to manage and read, but don't directly help improve security."
