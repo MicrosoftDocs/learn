@@ -2,7 +2,7 @@
 uid: learn.wwl.get-started-c-sharp-part-3
 metadata:
   title: Add logic to C# console applications (Get started with C#, Part 3)
-  description: Deepen your experience with C# logic and iteration statements, Boolean expressions, and code blocks in this Learning Path.
+  description: Examine the relationship between code blocks and variable scope, and deepen your C# coding experience with Boolean expressions, selection statements, and iteration statements.
   ms.date: 02/27/2023
   author: wwlpublish
   ms.author: cahowd
