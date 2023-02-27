@@ -253,5 +253,5 @@ provisioningClient.register((err, result) => {
         centralClient.setOptions(modelIdObject);
         centralClient.open(connectCallback);
     }
-// </provisioningClient>
+// </ProvisioningClient>
 });
