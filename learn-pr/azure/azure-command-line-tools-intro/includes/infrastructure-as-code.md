@@ -25,7 +25,7 @@ One of the most important factors in choosing an IaC tool is your cloud environm
 ## Imperative vs declarative IaC tools
 
 There are two types of IaC configuration tools. When using an imperative IaC tool, you write code
-that specifies how to configure your infrastructure step by step. Whereas, when using a declarative
+that specifies how to configure your infrastructure step by step. Whereas when using a declarative
 IaC tool, you write code that specifies the desired state for your infrastructure.
 
 - **Imperative IaC tools:** An imperative tool, or language, is one where the code explicitly

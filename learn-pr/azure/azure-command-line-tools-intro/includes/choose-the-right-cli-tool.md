@@ -38,9 +38,10 @@ resources. Both are cross-platform, installable on Windows, Linux, and macOS.
 **Azure CLI**
 
 - Cross-platform command-line interface, installable on Windows, Linux, and macOS
-- Runs in Azure Cloud Shell, PowerShell, `Cmd.exe`, or in a Docker container
+- Runs in Azure Cloud Shell, PowerShell, Bash, `Cmd.exe`, or in a Docker container
 - Is based on Python
-- Defaults to outputting a JSON string although other format options are available, such as table, yaml and tsv
+- Defaults to outputting a JSON string although other format options are available, such as table,
+  yaml and tsv
 - Allows you to query for command output using JMESPath query syntax
 - Commands are organized in _groups_, like `az vm`, and _subgroups_, like `az vm disk`
 - Syntax follows a simple `reference name -command -parameter -parameter value` pattern
@@ -74,7 +75,7 @@ managing cloud infrastructure. It codifies infrastructure in configuration files
 desired state for your topology. Terraform enables the management of any infrastructure, such as
 public clouds, private clouds, and SaaS services, by using Terraform providers.
 
-## Which Azure Automation tool is right for you?
+## Which Azure command-line tool is right for you?
 
 When picking a tool, consider your prior experience and current work environment.
 
@@ -83,10 +84,14 @@ Azure CLI syntax is similar to that of Bash scripting.
 Azure PowerShell is a PowerShell module. Commands follow a `Verb-Noun` naming scheme and data is
 returned as objects.
 
+Bicep is a domain-specific language (DSL) that uses declarative syntax to deploy Azure resources.
+
+Hashicorp Terraform is an open source Infrastructure-as-Code (IaC) tool for provisioning and
+managing cloud infrastructure.
+
 Choose the tool that uses your experience and shortens your learning curve. Being open-minded will
 only improve your abilities. Use a different tool when it makes sense.
 
 <!-- link references -->
 [1]: ../media/shared/check-mark-button_2705.svg
 [3]: ../media/shared/cross-mark_274c.svg
-[5]: ../media/azure-cloud-shell-bash-powershell.png
