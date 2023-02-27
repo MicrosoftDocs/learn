@@ -1,6 +1,6 @@
 Here, you'll learn how Azure SQL Edge works and whether it's suitable for your organization. You'll explore how Azure SQL Edge helps address challenges that developers face when developing IoT apps.
 
-Azure SQL Edge is a containerized Linux application that runs on a process that's based on ARM64 or x64. The Azure SQL Edge startup-memory footprint is less than 500 megabytes (MB). Within this small footprint, you can design and build apps that run on many IoT devices.
+Azure SQL Edge is a containerized Linux application that runs on a process that's based on ARM64 or x64 architecture. The Azure SQL Edge startup memory footprint is less than 500 megabytes (MB). Within this small footprint, you can design and build apps that run on many IoT devices.
 
 > [!TIP]
 > These devices can include battery-powered or solar-powered devices that you deploy in remote areas that have only occasional connectivity.
@@ -35,7 +35,7 @@ IoT sensors typically transmit time-sequenced measurements, or *time-series data
 The following graphic depicts:
 
 - The streaming data engine with native analytics.
-- A SQL database engine that contains built-in machine-learning capabilities.
+- An SQL database engine that contains built-in machine-learning capabilities.
 
 The graphic indicates that the local SQL database can aggregate the real-time streamed data that the streaming analytics engine ingests.
 
@@ -46,13 +46,13 @@ The graphic indicates that the local SQL database can aggregate the real-time st
 
 ## Integrate data
 
-IoT app developers previously recognized that edge data couldn't always be easily integrated in a comprehensive organizational data solution. This resulted in IoT device data at the edge being inaccessible in a proprietary solution. This isn't a problem anymore, because Azure SQL Edge uses the same codebase as SQL Server and SQL Database.
+IoT app developers previously recognized that edge data couldn't always be easily integrated in a comprehensive organizational data solution. This resulted in IoT device data at the edge being inaccessible in a proprietary solution. This isn't a problem anymore, because Azure SQL Edge uses the same codebase as SQL Server, Azure SQL Database, and Azure SQL Managed Instance.
 
 As the following graphic depicts, Azure SQL Edge offers compatibility with other Microsoft services and apps by providing:
 
 - Synchronization with Azure services such as:
 
-  - SQL Database.
+  - SQL Database and SQL Managed Instance.
   - SQL Server on an Azure virtual machine (VM).
   - Azure Cosmos DB.
 
@@ -68,10 +68,10 @@ As the following graphic depicts, Azure SQL Edge offers compatibility with other
 
 Edge scenarios often must run on different platforms. Azure SQL Edge provides you with the following options:
 
-- Architecture. Device architecture supports architectures based on ARM64 and x64.
-- Container OS. Choose either Windows or Linux as your container's host.
-- Container type. Choose either Kubernetes or Linux Docker containers to orchestrate your device infrastructure for better efficiency and automation.
-- Mode. Online or offline modes support various edge environments.
+- **Architecture.** Device architecture supports architectures based on ARM64 and x64.
+- **Container OS.** Choose either Windows or Linux as your container's host.
+- **Container type.** Choose either Kubernetes or Linux Docker containers to orchestrate your device infrastructure for better efficiency and automation.
+- **Mode.** Online or offline modes support various edge environments.
 
 ## Protect data at the edge
 
@@ -79,8 +79,8 @@ Security is a primary concern when deploying IoT apps to the edge. Any device th
 
 SQL Server is the most secure database platform available. Because Azure SQL Edge is based on SQL Server technology, it has the same security features of SQL Server Enterprise. The following table details these built-in security features.
 
-| Feature        | Description                                                  |
-| -------------- | ------------------------------------------------------------ |
-| RBAC and ABAC  | *Role-based access control* (RBAC) manages access to specific resources based on permissions assigned to the user requesting access (or a group to which they belong). *Attribute-based access control* (ABAC) manages access control based on rules that refer to the attributes of the user, target data, or resource. |
-| Encryption     | *Data protection with Transparent Data Encryption* (TDE) enables compliance with many security regulations. It does this by encrypting database and log files through an encryption key that is encrypted. *Always Encrypted* provides separation between users who own the data and those who manage it. This helps prevent users with administrator privileges to a database from accessing encrypted data they don't own in that database. |
+| Feature | Description |
+| --- | --- |
+| RBAC and ABAC | *Role-based access control* (RBAC) manages access to specific resources based on permissions assigned to the user requesting access (or a group to which they belong). *Attribute-based access control* (ABAC) manages access control based on rules that refer to the attributes of the user, target data, or resource. |
+| Encryption | *Data protection with Transparent Data Encryption* (TDE) enables compliance with many security regulations. It does this by encrypting database and log files through an encryption key that is encrypted. *Always Encrypted* provides separation between users who own the data and those who manage it. This helps prevent users with administrator privileges to a database from accessing encrypted data they don't own in that database. |
 | Classification | A feature that helps you comply with security regulations by allowing you to categorize it by sensitivity and business impact. Once you classify data, you can manage it in ways that help protect sensitive or important data from theft or loss. |
