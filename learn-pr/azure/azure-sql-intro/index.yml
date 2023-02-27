@@ -22,7 +22,6 @@ prerequisites: |
 iconUrl: /training/achievements/azure-sql-intro.svg
 levels:
 - beginner
-- intermediate
 roles:
 - solution-architect
 - database-administrator
