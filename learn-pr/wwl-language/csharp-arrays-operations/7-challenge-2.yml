@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-arrays-operations.challenge-2
-title: Second challenge
+title: Exercise - Complete a challenge to parse a string of orders, sort the orders and tag possible errors
 metadata:
-  title: Second Challenge
-  description: Use your knowledge of array helper methods to solve a coding challenge.
-  ms.date: 10/14/2019
-  author: billwagner
-  ms.author: wiwagn
+  title: Exercise - Complete a challenge to parse a string of orders, sort the orders and tag possible errors
+  description: "Exercise - Complete a challenge to parse a string of orders, sort the orders and tag possible errors"
+  ms.date: 02/25/2023
+  author: wwlpublish
+  ms.author: eric
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5
-azureSandbox: false
-interactive: csharp
 content: |
   [!include[](includes/7-challenge-2.md)]

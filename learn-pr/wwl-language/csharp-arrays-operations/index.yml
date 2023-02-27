@@ -1,34 +1,34 @@
 ### YamlMime:Module
 uid: learn.languages.csharp-arrays-operations
 metadata:
-  title: 'Perform operations on arrays using helper methods in C#'
-  description: Use powerful helper methods to manipulate and control the content of arrays.
-  ms.date: 02/07/2023
-  author: billwagner
-  ms.author: wiwagn
+  title: Perform operations on arrays using helper methods in C#
+  description: "Perform operations on arrays using helper methods in C#"
+  ms.date: 02/25/2023
+  author: wwlpublish
+  ms.author: eric
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Perform operations on arrays using helper methods in C#
 summary: Use powerful helper methods to manipulate and control the content of arrays.
 abstract: |
-  In this module, you will:
   - Sort and reverse the order of array elements.
   - Clear and resize the elements of an array.
-  - Split a string into an array of strings or characters (`char`s).
-  - Join array elements into a string.
+  - Split a string into an array of strings or characters (`chars`).
+  - Join array elements into a `string`.
 prerequisites: |
   - Introductory level experience with arrays
-  - Introductory level experience with the if statement
-  - Introductory level experience with built-in methods on data types (like `string`)
-ratingEnabled: true
+  - Introductory level experience with the `if` statement
+  - Introductory level experience with built-in methods on data types (like` string`)
 iconUrl: /training/achievements/csharp-arrays-operations.svg
 levels:
 - beginner
 roles:
 - developer
+- k-12-educator
 - student
 products:
-- dotnet
+- dotnet-framework
+- vs-code
 units:
 - learn.languages.csharp-arrays-operations.introduction
 - learn.languages.csharp-arrays-operations.exercise-sort-reverse
@@ -40,6 +40,5 @@ units:
 - learn.languages.csharp-arrays-operations.solution-2
 - learn.languages.csharp-arrays-operations.knowledge-check
 - learn.languages.csharp-arrays-operations.summary
-
 badge:
   uid: learn.languages.csharp-arrays-operations.badge

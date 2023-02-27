@@ -1,17 +1,28 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-choose-data-type.exercise-floating-point-types
-title: Exercise - Floating-point types
+title: Exercise - Discover floating-point types
 metadata:
-  title: Exercise - Floating-point types
-  description: Work with different floating-point types to learn the nuanced differences between each data type.
-  ms.date: 09/05/2019
-  author: billwagner
-  ms.author: wiwagn
+  title: Exercise - Discover floating-point types
+  description: "Exercise - Discover floating-point types"
+  ms.date: 02/25/2023
+  author: wwlpublish
+  ms.author: eric
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  show_latex: true
-durationInMinutes: 5
-azureSandbox: false
-interactive: csharp
+durationInMinutes: 8
 content: |
   [!include[](includes/4-exercise-floating-point-types.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which is the best data type to use to process banking deposits?"
+    choices:
+    - content: "decimal"
+      isCorrect: true
+      explanation: "Correct. Decimal has the precision required for many financial applications."
+    - content: "float"
+      isCorrect: false
+      explanation: "That’s incorrect. Decimal has the precision required for many financial applications."
+    - content: "double"
+      isCorrect: false
+      explanation: "That’s incorrect. Decimal has the precision required for many financial applications."

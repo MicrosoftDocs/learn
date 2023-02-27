@@ -1,16 +1,28 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-evaluate-boolean-expressions.exercise-conditional-operator
-title: Exercise - conditional operator
+title: Exercise - Implement the conditional operator
 metadata:
-  title: Exercise - conditional operator
-  description: Use the conditional operator to succinctly add branching logic.
-  ms.date: 09/24/2019
-  author: billwagner
-  ms.author: wiwagn
+  title: Exercise - Implement the conditional operator
+  description: "Exercise - Implement the conditional operator"
+  ms.date: 02/25/2023
+  author: wwlpublish
+  ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 6
-azureSandbox: false
-interactive: csharp
+durationInMinutes: 7
 content: |
   [!include[](includes/3-exercise-conditional-operator.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following lines of code is a valid use of the conditional operator?"
+    choices:
+    - content: "`int bonus = amount >= 100? 10: 5;`."
+      isCorrect: true
+      explanation: "Correct! This code line shows the correct syntax for a conditional operator `?:`."
+    - content: "`int bonus = amount >= 100: 10? 5;`."
+      isCorrect: false
+      explanation: "Incorrect. The conditional operator `?:` is reversed in this code line."
+    - content: "`int bonus = amount >= 100? 10, 5;`."
+      isCorrect: false
+      explanation: "Incorrect. The comma character `,` isn't part of a conditional operator."

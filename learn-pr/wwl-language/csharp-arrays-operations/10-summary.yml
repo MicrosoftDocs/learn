@@ -3,10 +3,10 @@ uid: learn.languages.csharp-arrays-operations.summary
 title: Summary
 metadata:
   title: Summary
-  description: Review the ideas you learned in this module.
-  ms.date: 10/14/2019
-  author: billwagner
-  ms.author: wiwagn
+  description: "Summary"
+  ms.date: 02/25/2023
+  author: wwlpublish
+  ms.author: eric
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1

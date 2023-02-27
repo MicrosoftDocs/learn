@@ -1,16 +1,28 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-choose-data-type.exercise-integral-types
-title: Exercise - Integral types
+title: Exercise - Discover integral types
 metadata:
-  title: Exercise - Integral types
-  description: Work with different integral types to learn the nuanced differences between each data type.
-  ms.date: 09/05/2019
-  author: billwagner
-  ms.author: wiwagn
+  title: Exercise - Discover integral types
+  description: "Exercise - Discover integral types"
+  ms.date: 02/25/2023
+  author: wwlpublish
+  ms.author: eric
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 8
-azureSandbox: false
-interactive: csharp
+durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-integral-types.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which data type has a range of whole numbers between 0 and 5000 in C# code?"
+    choices:
+    - content: "sbyte"
+      isCorrect: false
+      explanation: "That’s incorrect. ushort represents values 0 to 65535."
+    - content: "ushort"
+      isCorrect: true
+      explanation: "Correct. ushort represents values 0 to 65535."
+    - content: "ubyte"
+      isCorrect: false
+      explanation: "Incorrect. ushort represents values 0 to 65535."

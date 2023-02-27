@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-readable-code.exercise-use-whitespace
-title: Exercise - Use whitespace
+title: Exercise - Use whitespace to make your code easier to read
 metadata:
-  title: Exercise - Use whitespace
-  description: Whitespace can enhance the readability of your code.
-  ms.date: 09/23/2019
-  author: billwagner
-  ms.author: wiwagn
+  title: Exercise - Use whitespace to make your code easier to read
+  description: "Exercise - Use whitespace to make your code easier to read"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 6
-azureSandbox: false
-interactive: csharp
+durationInMinutes: 10
 content: |
   [!include[](includes/4-exercise-use-whitespace.md)]
