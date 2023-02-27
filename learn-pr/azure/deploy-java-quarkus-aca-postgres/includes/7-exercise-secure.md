@@ -85,7 +85,7 @@ az postgres flexible-server firewall-rule create \
     --end-ip-address "0.0.0.0"
 ```
 
-Setting the `start-ip-address` and the `end-ip-address` to `0.0.0.0` allows all the Azure-internal IP addresses but doesn't allow any external IP addresses. This is the best practice to secure the database.
+Setting the `start-ip-address` and the `end-ip-address` to `0.0.0.0` allows all Azure-internal IP addresses but doesn't allow any external IP addresses. This is the best practice to secure the database from external access.
 If you try to access the database from the CLI, it should fail:
 
 ```bash
@@ -98,10 +98,10 @@ az postgres flexible-server execute \
     --output table
 ```
 
-But if you try to retrieve the to-dos from the database from the Quarkus application, it will succeed:
+But if you try to retrieve the to-dos from the database from the Quarkus application running on Azure Container Apps, it will succeed:
 
 ```bash
 curl https://<value of $AZ_APP_URL>/api/todos
 ```
 
-This command returns the list of all to-do items from the database. The PostgreSQL server is still accessible from the Quarkus application but not from the outside.
+This command returns the list of all to-do items from the database. The PostgreSQL server is still accessible from the Quarkus application running on an Azure service, but not from outside of Azure.

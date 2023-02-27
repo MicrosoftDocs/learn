@@ -9,7 +9,7 @@ Let's take one of these Docker file (`Dockerfile.jvm`), rename it to `Dockerfile
 mv src/main/docker/Dockerfile.jvm ./Dockerfile
 ```
 
-You should have the following content:
+The dockerfile should have the following content:
 
 ```dockerfile
 FROM registry.access.redhat.com/ubi8/openjdk-11:1.14
@@ -79,7 +79,7 @@ Your container app ca-azure-deploy-quarkus has been created and deployed! Congra
 
 ## Check the deployment
 
-You can check the deployment has succeeded in several ways. The most obvious way is to check the [Azure portal](https://portal.azure.com). You should see the following:
+You can check the deployment has succeeded in several ways. The easiest way is to search for your resource group in the [Azure portal](https://portal.azure.com). You should see resources similar to the following:
 
 ![Screenshot showing the deployed application.](../media/azure-portal.png)
 

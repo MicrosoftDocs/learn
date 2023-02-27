@@ -116,7 +116,7 @@ public class Todo extends PanacheEntity {
 }
 ```
 
-To manage that class, update the `TodoResource` so that it can publish REST interfaces to store and retrieve data by using HTTP. Update the `TodoResource` class and add the following code:
+To manage that class, update the `TodoResource` so that it can publish REST interfaces to store and retrieve data by using HTTP. Open the `TodoResource` class and replace the code with the following:
 
 ```java
 package com.example.demo;
@@ -170,6 +170,7 @@ To execute the application in development mode, you need Docker to be up and run
 Make sure Docker is running locally on your machine and execute the to-do application by using the following command:
 
 ```bash
+cd todo
 ./mvnw quarkus:dev
 ```
 
@@ -198,7 +199,7 @@ Press [r] to resume testing, [o] Toggle test output, [:] for the terminal, [h] f
 
 To test the application, you can use `cURL`.
 
-First, create a new to-do item in the database with the following command (you should see the log in the Quarkus console):
+In a separate terminal, create a new to-do item in the database with the following command.  You should see the log in the Quarkus console:
 
 ```bash
 curl --header "Content-Type: application/json" \
@@ -239,7 +240,7 @@ This command returns the list of to-do items, including the items you created:
 
 ## Test the application
 
-To test the application, you can use the existing `TodoResourceTest` class. It needs to test the REST endpoint and for that it uses [RESTAssured](https://rest-assured.io/). Update the `TodoResourceTest` class and add the following code:
+To test the application, you can use the existing `TodoResourceTest` class. It needs to test the REST endpoint and for that it uses [RESTAssured](https://rest-assured.io/). Replace code in the `TodoResourceTest` class with the following code:
 
 ```java
 package com.example.demo;

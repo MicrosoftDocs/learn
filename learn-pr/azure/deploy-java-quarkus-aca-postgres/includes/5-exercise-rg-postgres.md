@@ -80,7 +80,9 @@ az postgres flexible-server show-connection-string \
 echo "POSTGRES_CONNECTION_STRING=$POSTGRES_CONNECTION_STRING"
 ```
 
-Then, you need to update the `application.properties` file in the `src/main/resources` folder of the project to configure the connection String to the PostgreSQL database. For that, set the `quarkus.datasource.jdbc.url` property with the value of the `$POSTGRES_CONNECTION_STRING` and append `&ssl=true&sslmode=require` to the end of the connection string to force the driver to use ssl. This is required for Azure Database for PostgreSQL.
+## Configure the Quarkus application to connect to the the PostgreSQL database
+
+Update the `application.properties` file in the `src/main/resources` folder of the project to configure the connection String to the PostgreSQL database. For that, set the `quarkus.datasource.jdbc.url` property with the value of the `$POSTGRES_CONNECTION_STRING` and append `&ssl=true&sslmode=require` to the end of the connection string to force the driver to use ssl. This is required for Azure Database for PostgreSQL.
 
 ```properties
 quarkus.hibernate-orm.database.generation=update
@@ -93,7 +95,7 @@ quarkus.datasource.jdbc.url=<the value of the POSTGRES_CONNECTION_STRING appende
 ./mvnw clean quarkus:dev
 ```
 
-Once Quarkus is up and running, create a few to-dos with the following `cURL` commands:
+Once Quarkus is up and running, create a few to-dos with the following `cURL` commands in a separate terminal window:
 
 ```bash
 curl --header "Content-Type: application/json" \
