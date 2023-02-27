@@ -239,6 +239,6 @@ In certain cases, we want to short-circuit the remainder of the code in the code
 
 There's a few important ideas you should take away from this unit:
 
-- The `do-while` statement iterates a through a code block at least once, and may continue to iterate based on a Boolean expression. The evaluation of the Boolean expression usually depends on some value generated or retrieved inside of the code block.
+- The `do-while` statement iterates through a code block at least once, and may continue to iterate based on a Boolean expression. The evaluation of the Boolean expression usually depends on some value generated or retrieved inside of the code block.
 - The `while` statement evaluates a Boolean expression first, and continues to iterate through the code block as long as the Boolean expression evaluates to `true`.
 - The `continue` keyword to step immediately to the Boolean expression.
