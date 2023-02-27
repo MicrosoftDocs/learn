@@ -1,0 +1,41 @@
+### YamlMime:LearningPath
+uid: learn.wwl.get-started-c-sharp-part-3
+metadata:
+  title: Add logic to C# console applications (Get started with C#, Part 3)
+  description: Deepen your experience with C# logic and iteration statements, Boolean expressions, and code blocks in this Learning Path.
+  ms.date: 02/27/2023
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Add logic to C# console applications (Get started with C#, Part 3)
+prerequisites: |
+  *   Assign and retrieve values by using variables, including array variables, in C#.
+  *   Manipulate variable data to modify its type and appearance in C#.
+  *   Execute built-in functionality available from code libraries in your C# applications.
+  *   Develop if-elseif-else and foreach statements in your C# applications.
+  *   Develop, build, and run C# code using Visual Studio Code.
+  *   Perform System.Console I/O operations.
+summary: |
+  Examine the relationship between code blocks and variable scope, and deepen your C# coding experience with Boolean expressions, selection statements, and iteration statements.
+iconUrl: /training/achievements/add-logic-c-sharp-console-applications.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- dotnet
+- dotnet-framework
+- vs-code
+subjects:
+- development-tools
+modules:
+- learn.languages.csharp-evaluate-boolean-expressions
+- learn.languages.csharp-code-blocks
+- learn.languages.csharp-switch-case
+- learn.languages.csharp-for
+- learn.languages.csharp-do-while
+- learn.wwl.guided-project-develop-conditional-branching-looping
+- learn.wwl.challenge-project-develop-branching-looping-structures-c-sharp
+trophy:
+  uid: learn.wwl.get-started-c-sharp-part-3.trophy
