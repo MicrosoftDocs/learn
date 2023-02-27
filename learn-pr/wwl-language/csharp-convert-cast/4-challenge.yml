@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-convert-cast.challenge
-title: First Challenge
+title: Exercise - Complete a challenge to combine string array values as strings and as integers
 metadata:
-  title: First Challenge
-  description: Use your new knowledge of data type casting and conversion to solve a programming challenge.
-  ms.date: 10/03/2019
-  author: billwagner
-  ms.author: wiwagn
+  title: Exercise - Complete a challenge to combine string array values as strings and as integers
+  description: "Exercise - Complete a challenge to combine string array values as strings and as integers"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: eric
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 6
-azureSandbox: false
-interactive: csharp
 content: |
   [!include[](includes/4-challenge.md)]
