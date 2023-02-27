@@ -29,7 +29,7 @@ Let's create a new Azure VM with PowerShell.
     - Create a public IP address name. You'll use this name to create and find your static IP address to sign in to the machine.
 
     ```powershell
-    New-AzVm -ResourceGroupName <rgn>[sandbox resource group name]</rgn> -Name "testvm-eus-01" -Credential (Get-Credential) -Location "East US" -Image Canonical:0001-com-ubuntu-server-focal:20_04-lts:latest -OpenPorts 22 -PublicIpAddressName "testvm-01"
+    New-AzVm -ResourceGroupName <rgn>[sandbox resource group name]</rgn> -Name "testvm-eus-01" -Credential (Get-Credential) -Location "eastus" -Image Canonical:0001-com-ubuntu-server-focal:20_04-lts:latest -OpenPorts 22 -PublicIpAddressName "testvm-01"
     ```
 
     [!include[](../../../includes/azure-cloudshell-copy-paste-tip.md)]
