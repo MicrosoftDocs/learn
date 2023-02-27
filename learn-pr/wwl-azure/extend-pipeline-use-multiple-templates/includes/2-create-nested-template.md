@@ -1,82 +1,78 @@
-In this unit, you learn how to create a nested template using YAML pipelines in Azure DevOps. A nested template is a reusable YAML file that contains a set of tasks that can be called from another YAML file. This approach can simplify the pipeline's maintenance and management over time and reduce the amount of duplication in the pipeline configuration.
+<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
 
-Using templates in YAML pipelines can provide several security advantages, such as:
+    Goal: briefly summarize the key skill this unit will teach
 
-- **Improved secret management:** Nested templates can help you abstract sensitive information such as credentials, secrets, and other configuration settings from the main deployment pipeline, making managing and securing these sensitive items easier. These can be stored in a more secure location or Azure Key Vault, reducing the exposure of sensitive information to unauthorized users and preventing unauthorized access to critical resources.
-- **Reduced risk of data breaches:** By abstracting sensitive information from the main deployment pipeline, you reduce the risk of data breaches that can occur when sensitive information is exposed to unauthorized users or stored in an insecure location.
-- **Easier permissions management and access:** With nested templates, you can better manage access control to the templates and configuration files, giving you granular control over who can access and modify specific pipeline components.
-- **Better pipeline version control:** Separating pipeline configuration into smaller, more manageable pieces makes it easier to manage changes and version control, which can help prevent errors and conflicts that can lead to security issues.
-- **Simplified pipeline maintenance:** By applying the power of nested templates, it's possible to reduce the duplication in the pipeline configuration, which can help simplify the pipeline's maintenance and management over time.
+    Heading: none
 
-In this unit, create a nested template that can be called from the main pipeline.
+    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
 
-## Create a YAML file for the nested template
+    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
+-->
+TODO: add your topic sentences(s)
 
-Create a YAML file in your Git repository called `secure-template.yaml`. This file contains the pipeline's tasks that you want to reuse in other YAML files.
+<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
 
-```YAML
-parameters:
-  message: ''
+    Goal: Describe the part of the scenario that will be solved by the content in this unit
 
-steps:
-- task: PowerShell@2
-  inputs:
-    targetType: Inline
-    script: |
-      Write-Host "${{ parameters.message }}"
-      Write-Host "$(Secure)"
+    Heading: none, combine this with the topic sentence into a single paragraph
 
-```
+    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
+-->
+TODO: add your scenario sub-task
 
-In this example, we define one parameter `message`, and a single PowerShell task that prints the values of the parameter. We also print the value of the `Secure` variable, which is a variable that we'll define in the next step.
+<!-- 3. Prose table-of-contents --------------------------------------------------------------------
 
-## Create a YAML file for the main pipeline
+    Goal: State concisely what's covered in this unit
 
-Create a YAML file called `main-pipeline.yaml` for the pipeline that calls the nested template. You can use the `template` property to call the nested template.
+    Heading: none, combine this with the topic sentence into a single paragraph
 
-```YAML
-name: 'Pipeline templates'
-stages:
-- stage: Build
-  displayName: 'Securing pipelines with templates'
-  jobs:
-  - job: Build
-    pool:
-      vmImage: windows-latest
-    variables:
-    - name: Secure
-      value: 'Secret!'
-    steps:
-    - template: '../.secure/secure-template.yaml'
-      parameters:
-        message: 'This is from the main template!'
+    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
+-->
+TODO: write your prose table-of-contents
 
-```
+<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
 
-In this example, we call the `secure-template.yaml` file from a ".secure" folder using the `template` property and pass the values of the `message` and `Secure` parameters to the nested template.
+    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
 
-## Create a new pipeline
+    Heading: none
+-->
+TODO: add a visual element
 
-Navigate to your Azure DevOps project and create a new pipeline. Select the repository and branch where you committed the changes. Select the YAML file for the main pipeline (`main-pipeline.yaml` in our example) and run the pipeline.
+<!-- 5. Chunked content-------------------------------------------------------------------------------------
 
-![Screenshot of Azure Pipelines showing how to create a new pipeline from existing template.](../media/create-new-pipeline-yaml.png)
+    Goal: Provide all the information the learner needs to perform this sub-task.
 
-Verify that the nested template is called and the values of the parameters are printed.
+    Structure: Break the content into 'chunks' where each chunk has three things:
+        1. An H2 or H3 heading describing the goal of the chunk
+        2. 1-3 paragraphs of text
+        3. Visual like an image, table, list, code sample, or blockquote.
 
-![Screenshot of Azure Pipelines showing the results from the main pipeline and nested template.](../media/pipeline-template-results.png)
+    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=main)
+-->
 
-## Challenge yourself
+<!-- Pattern for simple chunks (repeat as needed) -->
+## H2 heading
+Strong lead sentence; remainder of paragraph.
+Paragraph (optional)
+Visual (image, table, list, code sample, blockquote)
+Paragraph (optional)
+Paragraph (optional)
 
-Create a reusable template for a common task in your organization's deployment pipeline. It can be anything from creating a resource group to deploying a specific application.
+<!-- Pattern for complex chunks (repeat as needed) -->
+## H2 heading
+Strong lead sentence; remainder of paragraph.
+Visual (image, table, list)
+### H3 heading
+Strong lead sentence; remainder of paragraph.
+Paragraph (optional)
+Visual (image, table, list)
+Paragraph (optional)
+### H3 heading
+Strong lead sentence; remainder of paragraph.
+Paragraph (optional)
+Visual (image, table, list)
+Paragraph (optional)
 
-1. Identify a task that is performed frequently in your organization's deployment pipeline.
-2. Create a template that can be used to automate that task.
-3. Test the template by using it in a simple deployment pipeline.
-4. (Optional) Consider creating a new YAML pipeline that uses the template you created and configure it to use tokenization to secure sensitive information.
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
-For more information about templates and YAML pipelines, see:
-
-- [Security through templates](https://learn.microsoft.com/azure/devops/pipelines/security/templates)
-- [Template types & usage](https://learn.microsoft.com/azure/devops/pipelines/process/templates/)
-- [Securing Azure Pipelines](https://learn.microsoft.com/azure/devops/pipelines/security/overview/)
-- [Recommendations to securely structure projects in your pipeline](https://learn.microsoft.com/azure/devops/pipelines/security/projects/)
+<!-- Do not add a unit summary or references/links -->
