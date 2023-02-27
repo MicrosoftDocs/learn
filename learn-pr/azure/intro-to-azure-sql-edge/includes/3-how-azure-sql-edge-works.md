@@ -35,7 +35,7 @@ IoT sensors typically transmit time-sequenced measurements, or *time-series data
 The following graphic depicts:
 
 - The streaming data engine with native analytics.
-- A SQL database engine that contains built-in machine-learning capabilities.
+- An SQL database engine that contains built-in machine-learning capabilities.
 
 The graphic indicates that the local SQL database can aggregate the real-time streamed data that the streaming analytics engine ingests.
 
