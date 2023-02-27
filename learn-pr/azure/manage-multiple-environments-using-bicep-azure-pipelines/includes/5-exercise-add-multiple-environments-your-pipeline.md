@@ -35,7 +35,7 @@ Create a pipeline template that defines all of the stages required to deploy eac
 
    :::image type="content" source="../media/5-visual-studio-code-deploy-yml-file.png" alt-text="Screenshot of Visual Studio Code Explorer, with the pipeline-templates folder and the deploy dot YML file.":::
 
-   This file will represent all of the deployment activities that run for each of your environments.
+   This file represents all of the deployment activities that run for each of your environments.
 
 1. Paste the following pipeline template parameters into the file:
 
@@ -138,7 +138,7 @@ Create a pipeline template that defines all of the stages required to deploy eac
 
 1. Select the deployment, and select the **Changes** tab.
 
-   Notice that **Changes** tab shows you the list of commits included in the deployment. This helps you to see exactly what has changed in your environment over time.
+   Notice that **Changes** tab shows you the list of commits included in the deployment. This information helps you to see exactly what has changed in your environment over time.
 
    :::image type="content" source="../media/5-environment-commits.png" alt-text="Screenshot of Azure Pipelines that shows the production environment's deployment details, with a list of commits.":::
 

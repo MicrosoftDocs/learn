@@ -1,10 +1,10 @@
-When you deploy your changes to multiple environments, the steps involved in deploying to each environment are usually very similar or even identical. In this unit, you'll learn how to use pipeline templates to avoid repetition and to allow for reuse of your pipeline code.
+When you deploy your changes to multiple environments, the steps involved in deploying to each environment are similar or identical. In this unit, you'll learn how to use pipeline templates to avoid repetition and to allow for reuse of your pipeline code.
 
 ## Deployment to multiple environments
 
 After talking to your colleagues on the website team, you decide on the following pipeline for your toy company's website:
 
-:::image type="content" source="../media/3-stages.png" alt-text="Diagram that shows a series of pipeline stages, including those for test and production deployments." border="false":::
+:::image type="content" source="../media/3-stages.png" alt-text="Diagram that shows a series of pipeline stages that include test and production deployments." border="false":::
 
 1. The pipeline runs the Bicep linter to check that the Bicep code is valid and follows best practices.
 
@@ -70,9 +70,9 @@ Each pipeline template parameter has three properties:
 
 - The _name_ of the parameter, which you use to refer to the parameter in your template files.
 - The _type_ of the parameter. Parameters support several different types of data, including _string_, _number_, and _Boolean_. You can also define more complex templates that accept structured objects.
-- The _default value_ of the parameter. This is optional. If you don't specify a default value, then a value must be provided when the pipeline template is used.
+- The _default value_ of the parameter, which is optional. If you don't specify a default value, then a value must be provided when the pipeline template is used.
 
-In the example above, the pipeline defines a string parameter named `environmentType`, which has a default value of `Test`, and a mandatory parameter named `serviceConnectionName`.
+In the example, the pipeline defines a string parameter named `environmentType`, which has a default value of `Test`, and a mandatory parameter named `serviceConnectionName`.
 
 In your pipeline template, you use a special syntax to refer to the value of the parameter. Use the `${{parameters.YOUR_PARAMETER_NAME}}` macro, like in this example:
 
@@ -90,19 +90,19 @@ You can also use parameters when you assign identifiers to your jobs and stages 
 
 You can use pipeline _conditions_ to specify whether a step, a job, or even a stage should run depending on a rule that you specify. You can combine template parameters and pipeline conditions to customize your deployment process for many different situations.
 
-For example, imagine you define a pipeline template that runs script steps. You plan to reuse the template for each of your environments. When you deploy your production environment, you want to run an additional step. Here's how you can achieve that by using the `if` macro and the `eq` (_equals_) operator:
+For example, imagine you define a pipeline template that runs script steps. You plan to reuse the template for each of your environments. When you deploy your production environment, you want to run another step. Here's how you can achieve that by using the `if` macro and the `eq` (_equals_) operator:
 
 :::code language="yaml" source="code/3-script-conditions.yml" range="1-12" highlight="10" :::
 
 The condition here translates to: _if the environmentType parameter's value is equal to Production, then run the following steps_.
 
 > [!TIP]
-> Pay attention to the YAML file's indentation when you use conditions like in the example above. The steps that the condition applies to need to be indented by one extra level.
+> Pay attention to the YAML file's indentation when you use conditions like in the example. The steps that the condition applies to need to be indented by one extra level.
 
-You can also specify the `condition` property on a stage, job, or step. Here's an example that shows how you can use the `ne` (_not equals_) operator to specify a condition like _if the environmentType parameter's value is not equal to Production, then run the following steps_:
+You can also specify the `condition` property on a stage, job, or step. Here's an example that shows how you can use the `ne` (_not equals_) operator to specify a condition like _if the environmentType parameter's value isn't equal to Production, then run the following steps_:
 
 :::code language="yaml" source="code/3-script-conditions.yml" range="14-16" highlight="3" :::
 
-Although conditions are a way to add flexibility to your pipeline, try not to use too many of them. They complicate your pipeline and make it harder to understand its flow. If you see a lot of conditions in your pipeline template, the template might not be the best solution for the workflow that you plan to run, and you might need to redesign your pipeline.
+Although conditions are a way to add flexibility to your pipeline, try not to use too many of them. They complicate your pipeline and make it harder to understand its flow. If there are many conditions in your pipeline template, the template might not be the best solution for the workflow that you plan to run, and you might need to redesign your pipeline.
 
-Also, consider using YAML comments to explain the conditions that you use and any other aspects of your pipeline that might need more explanation. Comments help make your pipeline easy to understand and work with in the future. You'll see some example YAML comments in the exercises throughout this module.
+Also, consider using YAML comments to explain the conditions that you use and any other aspects of your pipeline that might need more explanation. Comments help make your pipeline easy to understand and work with in the future. There are example YAML comments in the exercises throughout this module.

@@ -28,7 +28,7 @@ It's a good idea to establish a consistent environment-naming strategy for param
 
 :::code language="yaml" source="code/6-parameter-file.yml" highlight="30" :::
 
-When you use parameter files, your pipeline YAML files don't need to contain a list of parameters that need to be passed to your deployment steps individually. This is especially helpful when you have a large number of parameters.
+When you use parameter files, your pipeline YAML files don't need to contain a list of parameters that need to be passed to your deployment steps individually. This is helpful when you have a large number of parameters.
 
 A parameter file keeps the parameter values together in a single JSON file. The parameter files are also part of your Git repository, so they can get versioned in the same way as all your other code.
 
@@ -81,7 +81,7 @@ You can link variable groups to Azure Key Vault. Secrets in the key vault are ma
 
 Key Vault makes the management of your secrets more secure. It also enables those values to be managed by your security team, and to separate the access to your pipelines from the secrets that it uses.
 
-Additional steps are required to link a variable group to a key vault. These steps include creating a service connection that has permission to read the secrets from the key vault. In the summary unit, we provide a link to more details about how to configure Key Vault variable groups.
+More steps are required to link a variable group to a key vault. These steps include creating a service connection that has permission to read the secrets from the key vault. In the summary unit, we provide a link to more details about how to configure Key Vault variable groups.
 
 ### Use variables in your pipeline
 
@@ -107,7 +107,7 @@ Also, keep in mind that parameters are often used in Bicep when resources need t
 
 ### Use variable groups for small sets of parameters
 
-If you have only a small number of parameters for your Bicep files, consider using a variable group. You can store both secret and non-secret values in variable groups.
+If you have only a few parameters for your Bicep files, consider using a variable group. You can store both secret and non-secret values in variable groups.
 
 ### Use parameter files for large sets of parameters
 
@@ -123,7 +123,7 @@ For secure parameters, remember to explicitly pass each parameter into your depl
 
 ### Combine approaches
 
-It's common to combine multiple approaches to handle your parameters. For example, you can store the majority of your parameter values in parameter files, and then just set secure values by using a variable group. The following example illustrates the combination:
+It's common to combine multiple approaches to handle your parameters. For example, you can store most of your parameter values in parameter files, and then set secure values by using a variable group. The following example illustrates the combination:
 
 :::code language="yaml" source="code/6-multiple.yml" highlight="1-2, 27-28" :::
 

@@ -115,7 +115,7 @@ Because you're adding more parameters that vary between each environment, you de
 
 1. Update the `appServiceApp` resource definition to provide the review API URL and key to the application, so that your website's code can use them:
 
-   :::code language="bicep" source="code/7-main.bicep" range="63-90" highlight="17-24" :::
+   :::code language="bicep" source="code/7-main.bicep" range="64-91" highlight="17-24" :::
 
 1. Save your changes to the file.
 

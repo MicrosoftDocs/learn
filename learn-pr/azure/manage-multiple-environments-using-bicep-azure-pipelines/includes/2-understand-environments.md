@@ -6,15 +6,15 @@ In this unit, you'll learn about how environments in Azure Pipelines help you su
 
 Deployment processes make changes to your Azure resources, including resources in use. Changing resources involves some risk, because the changes that you deploy might not behave as you expect. You might even discover that the changes break your current setup.
 
-To minimize the risk of problems, it's a good practice to try out your changes in a safe way before you deploy them to your production environment. You do this by deploying the changes to a _non-production environment_.
+To minimize the risk of problems, it's a good practice to try out your changes in a safe way before you deploy them to your production environment. For example, you can deploy the changes to a _non-production environment_.
 
-Many organizations take this further and set up multiple non-production environments where they progressively deploy their changes before releasing to production. Each non-production environment serves a specific purpose and often has specific quality gates that must be met to proceed to the next environment. If something goes wrong, like a test failing, the deployment stops. As your deployment moves through each environment, your confidence in the changes grows.
+Many organizations set up multiple non-production environments where they progressively deploy their changes before releasing to production. Each non-production environment serves a specific purpose and often has specific quality gates that must be met to proceed to the next environment. If something goes wrong, like a test failing, the deployment stops. As your deployment moves through each environment, your confidence in the changes grows.
 
 Common environments include:
 
 - **Development**: A development environment is typically used by developers to try their changes in, and to quickly iterate on their work.
 
-  Development environments often have minimal controls so that team members can easily try out ideas. You might use a development environment to test a certain configuration setting on a resource, or to see how you can set up a new website with a back-end database in a secure way. A lot of these changes and trials might not advance in your deployment process, because you're eliminating the ideas that don't succeed.
+  Development environments often have minimal controls so that team members can easily try out ideas. You might use a development environment to test a certain configuration setting on a resource, or to see how you can set up a new website with a back-end database in a secure way. Many of these changes and trials might not advance in your deployment process, because you're eliminating the ideas that don't succeed.
 
   In some teams, you might even set up a separate development environment for each team member so that they don't get in each other's way while they're working on new features.
 
@@ -48,7 +48,7 @@ Common environments include:
 
 You might see variations of these environments. Some organizations use only a few environments, and some use many more. The number and type of environments that you use depend on the solution you're deploying, the size of the team that's building the solution, and the importance of the workload.
 
-Sometimes, a single environment takes the role of several of the environments listed earlier. Other times, you might have a very complex pipeline that deploys to multiple environments, some in parallel and some in sequence. Some organizations even automatically delete or deprovision environments when they're no longer used, and then redeploy them when they're needed in the future.
+Sometimes, a single environment takes the role of several of the environments listed earlier. Other times, you might have a complex pipeline that deploys to multiple environments, some in parallel and some in sequence. Some organizations even automatically delete or deprovision environments when they're no longer used, and then redeploy them when they're needed in the future.
 
 Whatever your organization chooses as its list of environments, the goal is to improve your confidence in a change as it progresses through your deployment pipeline. When a change doesn't meet your quality requirements, you want to be able to stop the deployment of that change to any subsequent environments in the chain.
 
@@ -64,9 +64,9 @@ Azure Pipelines also has the concept of an environment. You create an Azure Pipe
 
 ### Checks and approvals
 
-An environment in Azure DevOps can have checks and approvals configured. Each time the environment is used in a job in your pipeline, Azure DevOps will make sure these checks and approvals succeed before the job starts running.
+An environment in Azure DevOps can have checks and approvals configured. Each time the environment is used in a job in your pipeline, Azure DevOps makes sure these checks and approvals succeed before the job starts running.
 
-For example, you can configure manual approvals on your production environment. Before a production deployment starts, the designated approver will receive an email notification. That person can manually verify that your policies and procedures are met before the deployment begins. For example, the approver might check that everything is working as they expect in the pre-production environment before they approve the deployment.
+For example, you can configure manual approvals on your production environment. Before a production deployment starts, the designated approver receives an email notification. That person can manually verify that your policies and procedures are met before the deployment begins. For example, the approver might check that everything is working as they expect in the pre-production environment before they approve the deployment.
 
 Additionally, you could run an automated check to review the logs and error rates in your pre-production environment after your last environment. If the check confirms that the number of errors hasn't substantially increased, it allows the deployment to proceed.
 
@@ -76,7 +76,7 @@ Azure Pipelines tracks the history of the deployments to an environment. This hi
 
 ### Security
 
-You can apply additional security controls to environments. You can restrict the pipelines that are allowed to use a specific environment, to prevent someone from accidentally creating a secondary pipeline that interacts with your production environment.
+You can apply other security controls to environments. You can restrict the pipelines that are allowed to use a specific environment. Or prevent someone from accidentally creating a secondary pipeline that interacts with your production environment.
 
 You can also apply user permissions to control the users who can manage environments. Specific permissions can allow users to create new environments, to modify environments, and to view environments and the history of deployments to them.
 
@@ -89,7 +89,7 @@ In your deployment pipeline definition, you create a `deployment` property to sp
 
 :::code language="yaml" source="code/2-environment-pipeline.yml" highlight="5" :::
 
-In the example above, the job named `DeployWebsite` is linked to the `Test` environment.
+In the example, the job named `DeployWebsite` is linked to the `Test` environment.
 
 > [!TIP]
 > Jobs also have other properties, including the _deployment strategy_, which are beyond the scope of this module. We link to more information in the summary unit.
