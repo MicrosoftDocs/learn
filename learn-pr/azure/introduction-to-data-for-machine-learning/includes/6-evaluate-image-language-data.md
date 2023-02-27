@@ -1,44 +1,44 @@
-So far, we’ve covered encoding continuous data (floating point numbers), ordinal data (usually integers), and binary categorical data such as survived/died, male/female.
+So far, we covered continuous data encoding (floating point numbers), ordinal data encoding (usually integers), and binary categorical data encoding (survived/died, male/female, etc.).
 
-Here we'll look at how to encode, and categorical data that have more than two classes. We also explore how decisions we make to improve our models can actually damage their performance.
+Now we'll learn how to encode data, and we'll explore categorical data resources that have more than two classes. We'll also explore the potentially harmful effects of our model improvement decisions on model performance.
 
 ## Categorical data aren't numerical
 
-Categorical data aren't numbers in the same way that other kinds of data are. With _ordinal_ or _continuous_ (numerical) data, higher values imply an increase in amount. For example, on the Titanic, a ticket price of £30 is more money than a ticket price of £12.
+Categorical data doesn't work with numbers the same way that other datatypes work with numbers. With _ordinal_ or _continuous_ (numerical) data, higher values imply an increase in amount. For example, on the Titanic, a ticket price of £30 is more money than a ticket price of £12.
 
-Trying to encode categorical features with more than two classes as numbers causes problems because categorical data has no logical order.
+In contrast, categorical data has no logical order. We'll have problems if we try to encode, as numbers, categorical features that have more than two classes.
 
-For example, Port of Embarkment has three values, C (Cherbourg), Q (Queenstown), and S (Southampton). There's no correct way to replace these symbols with numbers, because doing so implies that one of these ports is ‘less than’ the others, while another is ‘greater than’ the others. This doesn’t make sense.
+For example, Port of Embarkment has three values, C (Cherbourg), Q (Queenstown), and S (Southampton). We can't replace these symbols with numbers. If we do, it would imply that one of these ports is ‘less than’ the other ports, while another is ‘greater than’ the other ports. This replacement makes no sense.
 
 As an example of this problem, let’s throw caution to the wind and model the relationship between Port of Embarkment and Ticket Class, treating Port of Embarkment as a number. First, we set C < S < Q:
 
 ![Diagram of a graph showing a plot of PClass against PortAsNumber.](../media/3-6-a.png)
 
-In the above plot, the line predicts a Pclass of ~3 for Port Q.
+In this plot, the line predicts a Class of ~3 for Port Q.
 
-Now, setting S < C< Q we get a completely different trendline and prediction:
+Now, if we set S < C < Q, we get a different trendline and prediction:
 
 ![Diagram of a graph showing a plot of PClass against PortAsNumber with a flatter trend line.](../media/3-6-b.png)
 
-Neither of these trendlines are correct; it doesn't make sense to treat categories as continuous features. So, how do we work with categories?
+Neither of these trendlines are correct. It makes no sense to treat categories as continuous features. How then do we work with categories?
 
 ## One-hot encoding
 
-One-hot encoding is a way to encode categorical data that avoids the above problem. Each available category gets its own single column, and a given row only contains a single 1 in the category it belongs to.
+One-hot encoding can encode categorical data in a way that avoids this problem. Each available category gets its own single column, and a given row only contains a single **1** value in the category it belongs to.
 
-For example, our port would be encoded as three columns, one for Cherbourg, one for Queenstown, one for Southampton (the order isn't important). A person who boarded at Cherbourg would have a 1 in the Port_Cherbourg column, like so:
+For example, we can encode the port value in three columns, one for Cherbourg, one for Queenstown, one for Southampton (the exact order here has no relevance). Someone who boarded at Cherbourg would have a **1** in the Port_Cherbourg column, like this:
 
 |Port_Cherbourg|Port_Queenstown|Port_Southampton|
 |---|---|---|
 |1|0|0|
 
-A person who boarded at Queenstown would have a 1 in the second column:
+Someone who boarded at Queenstown would have a **1** in the second column:
 
 |Port_Cherbourg|Port_Queenstown|Port_Southampton|
 |---|---|---|
 |0|1|0|
 
-A person who boarded at Southampton would have a 1 in the third column
+Someone who boarded at Southampton would have a **1** in the third column
 
 |Port_Cherbourg|Port_Queenstown|Port_Southampton|
 |---|---|---|
@@ -46,17 +46,17 @@ A person who boarded at Southampton would have a 1 in the third column
 
 ## One-hot encoding, data cleaning, and statistical power
 
-Before using one-hot encoding, it's important to understand that its use can have positive or negative impacts on a model’s real-world performance.
+Before we use one-hot encoding, we should understand that its use can have positive or negative impacts on the real-world performance of a model.
 
 ### What is statistical power?
 
-Statistical power refers to a model’s ability to reliably identify real relationships between features and labels. For example, a powerful model might report a relationship between ticket price and survival rate with a high degree of certainty. By contrast, a model with low statistical power might not find this relationship or report it with a low degree of certainty.
+Statistical power refers to the ability of a model to reliably identify real relationships between features and labels. For example, a powerful model might report a relationship between ticket price and survival rate, with a high degree of certainty. By contrast, a model with low statistical power might report a relationship with a low degree of certainty, or might not even find this relationship at all.
 
-We’ll stay out of the maths, but it’s important to keep in mind that certain choices we make can affect how powerful our models are.
+We’ll avoid the math here, but remember that the choices we make can influence the power of our models.
 
 ### Removing data lowers statistical power
 
-We’ve talked several times about cleaning data by removing samples that are incomplete. An unfortunate side effect is that this also reduces statistical power. For example, let’s pretend that we want to be able to predict survival given the following data:
+We've mentioned several times that data cleaning - in part - involves removal of incomplete data samples. Unfortunately, data cleaning can reduce statistical power. For example, let’s pretend that we want to predict Titanic voyage survival, given the following data:
 
 |Ticket Price|Survival|
 |---|---|
@@ -65,7 +65,7 @@ We’ve talked several times about cleaning data by removing samples that are in
 |£10|1|
 |£25|1|
 
-From here we could guess that someone with a ticket worth £15 would survive, because people with tickets ≥£10 all survived. If we had less data though, this would be harder to guess:
+We could guess that someone with a ticket worth £15 would survive, because people with tickets ≥ £10 all survived. If we had less data, though, this guess would become more difficult:
 
 |Ticket Price|Survival|
 |---|---|
@@ -75,9 +75,9 @@ From here we could guess that someone with a ticket worth £15 would survive, be
 
 ### Worthless columns lower statistical power
 
-Statistical power can also hurt by providing models with features that have little value, particularly when the number of features (columns) begins to approach the number of samples (rows).
+Features that have little value can also damage statistical power, especially when the number of features (or **columns**) begins to approach the number of samples (or **rows**).
 
-For example, let’s pretend that we want to be able to predict survival given the following data:
+For example, say that we want to be able to predict survival with the following data:
 
 |Ticket Price|Survival|
 |---|---|
@@ -86,9 +86,9 @@ For example, let’s pretend that we want to be able to predict survival given t
 |£25|1|
 |£25|1|
 
-We could use this to confidently predict that a person with a ticket costing £25 for Cabin A would survive, because all people with £25 tickets survived.
+We could confidently predict that someone with a Cabin A ticket would survive, because everyone with £25 tickets survived.
 
-Imagine, however, that we have another feature (Cabin):
+However, now we have another feature (Cabin):
 
 |Ticket Price|Cabin|Survival|
 |---|---|---|
@@ -97,16 +97,16 @@ Imagine, however, that we have another feature (Cabin):
 |£25|B|1|
 |£25|B|1|
 
-Cabin doesn't provide useful information, because it simply corresponds to the ticket price. Now it'sn't clear if someone with a ticket costing £25 for Cabin A would survive – do they perish, like others from Cabin A, or survive like those with £25 tickets?
+Cabin doesn't provide useful information, because it simply corresponds to the ticket price. It isn't clear if someone with a £25 Cabin A ticket would survive – do they perish, like others from Cabin A, or survive like those with £25 tickets?
 
 ### One-hot encoding can reduce statistical power
 
-One-hot encoding reduces statistical power much more than continuous or ordinal data because it requires multiple columns–one for each possible categorical value. For example, one-hot encoding port of embarkation adds three model inputs (C, S, and Q).
+One-hot encoding reduces statistical power more than continuous or ordinal data, because it requires multiple columns – one for each possible categorical value. For example, one-hot encoding port of embarkation adds three model inputs (C, S, and Q).
 
-As a rule of thumb, a categorical variable is worth including if the number of categories is substantially lower than the number of samples (dataset rows) and this category provides information that isn't already available to the model through other inputs.
+A categorical variable becomes helpful if the number of categories is substantially less than the number of samples (dataset rows). A categorical variable also becomes helpful if it provides information not already available to the model through other inputs.
 
-For example, we saw that the likelihood of survival was different for people embarking at different ports. This probably just reflects that most people at the Queenstown port had third class tickets. So, embarkment is likely to slightly reduce statistical power without adding relevant information to our model.
+For example, we saw that the likelihood of survival differed for people who embarked at different ports. This probably reflects the fact that most people at the Queenstown port had third class tickets. Therefore, embarkment probably reduces statistical power to a slight degree, without adding relevant information to our model.
 
-By contrast, Cabin is likely to have a strong influence on survival, because the ship’s lower cabins would have filled with water before the cabins closer to the deck of the ship. That said, the Titanic dataset contains 147 different cabins, which will reduce our model’s statistical power if included. To find out if Cabin is useful on balance, we might have to experiment with including or excluding it from our model.
+By contrast, Cabin likely has a strong influence on survival, because the ship’s lower cabins would have filled with water, before the cabins closer to the upper deck of the ship filled with water. That said, the Titanic dataset contains 147 different cabins. This reduces the statistical power of our model if we include them. To see if Cabin data can help us, we might need to experiment with including it in our model, or excluding it from our model.
 
-In our next exercise, we finally build our model predicting survival on the Titanic, and practice one-hot encoding as we do so.
+In our next exercise, we finally build our model that predicts Titanic voyage survival, and we'll practice one-hot encoding as we do so.

@@ -1,4 +1,4 @@
-We’ve covered a lot. Let’s recap on some of the key messages.
+We covered a lot of ground. Let’s review some of the key messages.
 
 ## What are data?
 
@@ -7,7 +7,7 @@ Data fall into several conceptual categories. The most common are:
 * categorical data that have no order,
 * ordinal data, which can be treated as numbers or ordered categories.
 
-Data are stored on a computer as distinctive types, and we usually try to match the datatype to the kind of data that it is. For example, continuous data are best stored as floating-point numbers, because these allow fractions to be stored. By contrast, categorical data often arrive as strings (text) and must be converted to one-hot vectors for the computer to understand them properly.
+Computers store data as distinct types, and we usually try to match the datatype to the specific kind of data. For example, to store continuous data, floating-point numbers work best, because floating-point numbers allow the storage of fractions. By contrast, categorical data often arrive as strings (text) and must be converted to one-hot vectors for the computer to understand them properly.
 
 ## What makes a good dataset?
 
@@ -17,10 +17,10 @@ We learned that a dataset it helpful if it:
 * is complete,
 * is a good representation of the population (real-world).
 
-If data aren't complete, we can take steps to make sure that incomplete data doesn't cause big issues. When doing so, we need to be careful not to introduce new issues, such as making data no longer representative.
+If we must deal with incomplete data, we can take steps to make sure that incomplete data doesn't cause big issues. When doing so, we must avoid introduction of new issues, such as changes that would make the data no longer representative, for example.
 
 ## Thinking about data
 
-We showed how visualizing data can help to get an understanding of what might be useful in a model. Using different types of graphs, colors, and so on, can be fun and make complex information much more intuitive.
+We showed how data visualization can help to build an understanding of what might be useful in a model. Use of different types of graphs, colors, and so on, can be fun and make complex information much more intuitive.
 
-We learned that understanding our data lets us make better decisions about our models. In the final exercise, we improved our model by exploring how many cabins were on the ship and taking the time to consider why this information was helpful. Yet, overall found the could be improved through simplification into nine Deck labels.
+We learned that understanding our data lets us make better decisions about our models. In the final exercise, we improved our model as we explored the count of cabins on the Titanic, and considered how this information was helpful. Yet overall, we found that this could be improved through simplification into nine Deck labels.
