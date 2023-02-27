@@ -58,7 +58,7 @@ For more information, see [App Service overview](/azure/app-service/overview).
 
 ## Database migration
 
-The Azure App Service Migration Assistant does not migrate your database to Azure SQL Database. In fact, you're not required to migrate your database to Azure at all. In that case, the Migration Assistant can help you setup a hybrid connection to your on-premises database as an optional step.  
+The Azure App Service Migration Assistant doesn't migrate your database to Azure SQL Database. In fact, you're not required to migrate your database to Azure at all. In that case, the Migration Assistant can help you set up a hybrid connection to your on-premises database as an optional step.  
 
 Although you can use a hybrid connection in a production environment, you might want to consider the impact on performance. You might then think about a hybrid connection as a temporary, interim solution before you move your data to Azure SQL Database. Hybrid connections to your data might also be useful in a development or testing scenario.
 
@@ -85,7 +85,7 @@ Azure Migrate supports key migration scenarios like:
 - Migrating virtual desktops.
 - Migrating web apps by using the Azure App Service Migration Assistant.
 
-So, if you already have an Azure Migrate project set up, you can specify the name of the project during migration. This step will save the migration details and status in your Azure Migrate hub.
+So, if you already have an Azure Migrate project setup, you can specify the name of the project during migration. This step will save the migration details and status in your Azure Migrate hub.
 
 ## Recap
 
