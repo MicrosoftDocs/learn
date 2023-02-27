@@ -53,27 +53,31 @@ To ensure that animal nicknames and personality descriptions are complete, your 
 
 ## Setup
 
-Use the following steps to prepare for the Challenge project exercises.
+Use the following steps to prepare for the Challenge project exercises:
 
-1. Download a zip file containing the code folders for the LP2 Challenge project.
+1. To download a zip file containing the Starter project code, select the following link: [Lab Files](https://github.com/MicrosoftLearning/Challenge-project-branching-looping-CSharp/archive/refs/heads/main.zip).
 
-    - In a browser, navigate to [Lab Files](https://github.com/MicrosoftLearning/Challenge-project-Develop-branching-and-looping-structures-in-CSharp/archive/refs/heads/main.zip) and download the zip file.
+1. Unzip the download files.
 
-1. Unzip the downloaded files locally (or in the sandbox if you aren't using a local dev environment).
+    Unzip the files in your development environment. Consider using your PC as your development environment so that you have access to your code after completing this module. If you aren't using your PC as your development environment, you can unzip the files in a sandbox or hosted environment.
 
     1. On your local machine, navigate to your downloads folder.
-    1. Right-click the Challenge-project-Develop-branching-and-looping-structures-in-CSharp.zip file, and then select **Extract all**.
-    1. Use the **Browse** button to specify the Windows Desktop folder as the extract location, and then select **Select Folder**.
+    1. Right-click **Challenge-project-branching-looping-CSharp.main.zip**, and then select **Extract all**.
     1. Select **Show extracted files when complete**, and then select **Extract**.
     1. Make note of the extracted folder location.
 
-1. Open the extracted **ChallengeProject** folder in VS Code.
+1. Copy the extracted **ChallengeProject** folder to your Windows Desktop folder.
 
-    1. Open VS Code locally (or open MS Learn sandbox and open VS Code if you aren't using a local dev environment)
-    1. In VS Code, on the **File** menu, select **Open Folder**
-    1. Navigate to the folder that contains your extracted files, expand the folder structure to locate the folder named "ChallengeProject".
-    1. Select **ChallengeProject** and then select **Select Folder**
+    > [!NOTE]
+    > If a folder named **ChallengeProject** already exists, you can select **Replace the files in the destination** to complete the copy operation.
 
-        The Visual Studio Code EXPLORER view should show the **ChallengeProject** folder and two sub-folders named **Final** and **Starter**.
+1. Open the new **ChallengeProject** folder in Visual Studio Code.
 
-You are now ready to begin the Challenge project exercises. Good luck!
+    1. Open Visual Studio Code in your development environment.
+    1. In Visual Studio Code, on the **File** menu, select **Open Folder**.
+    1. Navigate to the Windows Desktop folder and locate the "ChallengeProject" folder.
+    1. Select **ChallengeProject** and then select **Select Folder**.
+
+        The Visual Studio Code EXPLORER view should show the **ChallengeProject** folder and two subfolders named **Final** and **Starter**.
+
+You're now ready to begin the Challenge project exercises. Good luck!
