@@ -1,78 +1,100 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+Parameters and variables are essential components for customizing pipeline behavior. These enable passing runtime values to pipeline tasks and scripts and defining variables for use across different pipeline stages. When using parameters and variables in pipelines, it's crucial to define their data types correctly to avoid any unexpected behavior that could affect the project's security or pipeline execution.
 
-    Goal: briefly summarize the key skill this unit will teach
+## Parameter and variable types
 
-    Heading: none
+Parameters and variables are critical to pipeline customization, as they allow for flexibility and enable pipeline scripts to be more dynamic. You can use it to store values such as connection strings, environment variables, and other sensitive data. Properly defining their data types is also essential to avoid unexpected errors or vulnerabilities arising from incorrect usage.
 
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
+### Add a parameter or variable to your pipeline
 
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+```YAML
+parameters:
+- name: myParameterName
+  type: myDataType
+  default: myDefaultValue
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+variables:
+- name: myReadOnlyVar
+  value: myValue
+  readonly: true
+```
 
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
+Replace `myParameterName`, `myDataType`, `myDefaultValue`, `myReadOnlyVar`, and `myValue` with your desired values.
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+Example:
 
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
+```YAML
+parameters:
+- name: image
+  displayName: Pool Image
+  type: string
+  default: ubuntu-latest
+  values:
+  - windows-latest
+  - ubuntu-latest
+  - macOS-latest
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
+variables:
+ - name: eShopOnWeb
+   value: myValue   
+```
 
-    Goal: State concisely what's covered in this unit
+### Use the correct data types when defining your parameters
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+Azure Pipelines supports the following data types:
 
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
+- string
+- boolean
+- number
+- object
+- step
 
-<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
+Unlike variables, pipeline parameters can't be changed by a pipeline while it's running. Parameters have data types such as `number` and `string`, and they can be restricted to a subset of values. Restricting the parameters is useful when a user-configurable part of the pipeline should take a value only from a constrained list. The setup ensures that the pipeline won't take arbitrary data.
 
-    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
+### Define secrets as secret variables or as a part of a variable group
 
-    Heading: none
--->
-TODO: add a visual element
+You can use Azure Key Vault to store secrets and then reference them in your pipeline script.
 
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
+Example:
 
-    Goal: Provide all the information the learner needs to perform this sub-task.
+```YAML
+variables:
+ - name: eShopOnWeb
+   value: myValue
 
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
+# You can define variable groups to reuse variables across pipelines
+# and to manage sensitive data centrally.
 
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=main)
--->
+variables:
+- group: eShopOnWeb
+- name: ConnectionStrings.CatalogConnection
+  value: '$(CatalogConnectionToken)'
 
-<!-- Pattern for simple chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
+```
 
-<!-- Pattern for complex chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
+### Use the `readonly` property to ensure that variables aren't changed by a pipeline while it's running
 
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+It's useful when you want to ensure that a variable isn't changed by a pipeline while it's running. For example, you can use this property to ensure that a variable isn't changed by a pipeline while it's running.
 
-<!-- Do not add a unit summary or references/links -->
+Example:
+
+```YAML
+variables:
+- name: eShopOnWeb
+  value: myValue
+  readonly: true
+```
+
+## Challenge yourself
+
+A great way to practice ensuring parameter and variable types is to create a pipeline that uses parameters and variables. Define your parameters and variables using the correct syntax and type-safe language. Then, use parameter validation to ensure that the pipeline runs correctly. Finally, use secure variable groups to protect any sensitive information. Test your pipeline to ensure it works as expected, and use the pipeline logs to troubleshoot any issues.
+
+Also, try to create a YAML pipeline that includes a parameter with an incorrect type and run it. Then, correct the error by declaring the correct type for the parameter and rerunning the pipeline. It helps you understand the importance of retaining the type of parameters and variables in the pipeline code.
+
+For more information about templates and YAML pipelines, see:
+
+- [Securing Azure Pipelines.](https://learn.microsoft.com/azure/devops/pipelines/security/overview/)
+- [How to securely use variables and parameters in your pipeline.](https://learn.microsoft.com/azure/devops/pipelines/security/inputs/)
+- [Recommendations to secure shared infrastructure in Azure Pipelines.](https://learn.microsoft.com/azure/devops/pipelines/security/infrastructure/)
+- [Runtime parameters.](https://learn.microsoft.com/azure/devops/pipelines/process/runtime-parameters/)
+- [Use a variable group's secret and nonsecret variables in an Azure Pipeline.](https://learn.microsoft.com/azure/devops/pipelines/scripts/cli/pipeline-variable-group-secret-nonsecret-variables)
+- [Define variables.](https://learn.microsoft.com/azure/devops/pipelines/process/variables/)
