@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-netapp-files-sap-hana.summary
+title: Summary
+metadata:
+  unitType: summary
+  title: Summary
+  description: In this guide, we have gone over the key points for using application volume groups including application volume group architecture, proximity placement groups, and Azure NetApp Files planning.       
+  ms.date: 02/27/2023
+  author: b-ahibbard
+  ms.author: anfdocs
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-summary.md)]
