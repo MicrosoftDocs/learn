@@ -5,11 +5,12 @@ Before you start to work on your toy company's website pipeline, you need to con
 To meet these objectives, you'll:
 
 > [!div class="checklist"]
-> * Set up an Azure DevOps project for this module.
-> * Clone the project's repository to your computer.
-> * Create two resource groups in Azure.
-> * Create two service connections and environments in Azure Pipelines.
-> * Remove the resources that you don't need in the pre-created Azure DevOps project.
+>
+> - Set up an Azure DevOps project for this module.
+> - Clone the project's repository to your computer.
+> - Create two resource groups in Azure.
+> - Create two service connections and environments in Azure Pipelines.
+> - Remove the resources that you don't need in the pre-created Azure DevOps project.
 
 ## Get the Azure DevOps project
 
@@ -25,13 +26,13 @@ The modules in this learning path are part of a progression. For learning purpos
 Run a template that sets up your Azure DevOps project.
 
 > [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=bicepenvironments&azure-portal=true)
+> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=bicepenvironments)
 
 On the Azure DevOps Demo Generator site, follow these steps:
 
 1. Select **Sign In** and accept the usage terms.
 
-1. On the **Create New Project** page, select your Azure DevOps organization. Then enter a project name, such as *toy-website-environments*.
+1. On the **Create New Project** page, select your Azure DevOps organization. Then enter a project name, such as _toy-website-environments_.
 
     :::image type="content" source="../media/4-create-new-project.png" alt-text="Screenshot that shows creating a project through the Azure DevOps Demo Generator.":::
 
@@ -41,7 +42,7 @@ On the Azure DevOps Demo Generator site, follow these steps:
 
 1. Select **Navigate to project** to go to your project in Azure DevOps.
 
-[!include[](../../includes/cleanup-steps.md)]
+[!INCLUDE [](../../includes/cleanup-steps.md)]
 
 ## Clone the repository
 
@@ -73,7 +74,7 @@ On the Azure DevOps Demo Generator site, follow these steps:
 
    :::image type="content" source="../../includes/media/open-cloned-repo.png" alt-text="Screenshot of Visual Studio Code that shows a prompt to open the cloned repository.":::
 
-[!include[](../../includes/azure-template-pipeline-sign-in.md)]
+[!INCLUDE [](../../includes/azure-template-pipeline-sign-in.md)]
 
 ## Create two resource groups in Azure
 
@@ -201,7 +202,7 @@ Next, create two service connections in Azure Pipelines: one for your test envir
 
 ## Delete the old environment
 
-In the previous versions of the pipeline, you used a single environment named *Website*. Now that you've created pipeline environments that represent your new environments, you'll delete the old pipeline environment.
+In the previous versions of the pipeline, you used a single environment named _Website_. Now that you've created pipeline environments that represent your new environments, you'll delete the old pipeline environment.
 
 1. Go to **Pipelines** > **Environments**.
 

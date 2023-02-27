@@ -1,4 +1,4 @@
-You've already learned about Bicep parameters. They help you specify values that can change between deployments of your Bicep files. 
+You've already learned about Bicep parameters. They help you specify values that can change between deployments of your Bicep files.
 
 Parameters are commonly used to support the differences between your environments. For example, in your non-production environments, you often want to deploy inexpensive SKUs of your Azure resources. In production, you want to deploy SKUs that have better performance. And you might want to use different names for resources in each environment.
 
@@ -24,11 +24,11 @@ Here's an example parameter file:
 
 Parameter files can be committed to your Git repository alongside your Bicep file. You can then refer to the parameter file in your pipeline template where you execute your deployment.
 
-It's a good idea to establish a consistent environment-naming strategy for parameter files. For example, you might name your parameter files *parameters.ENVIRONMENT_NAME.json*, like *parameters.Production.json*. Then, you can use a pipeline template parameter to automatically select the correct parameter file.
+It's a good idea to establish a consistent environment-naming strategy for parameter files. For example, you might name your parameter files _parameters.ENVIRONMENT_NAME.json_, like _parameters.Production.json_. Then, you can use a pipeline template parameter to automatically select the correct parameter file.
 
 :::code language="yaml" source="code/6-parameter-file.yml" highlight="30" :::
 
-When you use parameter files, your pipeline YAML files don't need to contain a list of parameters that need to be passed to your deployment steps individually. This is especially helpful when you have a large number of parameters. 
+When you use parameter files, your pipeline YAML files don't need to contain a list of parameters that need to be passed to your deployment steps individually. This is especially helpful when you have a large number of parameters.
 
 A parameter file keeps the parameter values together in a single JSON file. The parameter files are also part of your Git repository, so they can get versioned in the same way as all your other code.
 
@@ -37,7 +37,7 @@ A parameter file keeps the parameter values together in a single JSON file. The 
 
 ## Pipeline variables
 
-Azure Pipelines enables you to store *pipeline variables*, which are useful for values that might be different between environments. They're also useful for values that you want to define only once and then reuse throughout your pipeline. Azure Pipelines supports several ways to define variables.
+Azure Pipelines enables you to store _pipeline variables_, which are useful for values that might be different between environments. They're also useful for values that you want to define only once and then reuse throughout your pipeline. Azure Pipelines supports several ways to define variables.
 
 ### Variables defined in a YAML file
 
@@ -49,16 +49,16 @@ You can define variables by using the Azure DevOps web interface. You can change
 
 Variables defined through the web interface can be marked as secret, which tells Azure Pipelines to try to hide the variables' values in the pipeline logs. This means you can store values that your Bicep file then accepts as parameters with the `@secure()` decorator.
 
-[!include[Best-effort protection for secrets](../../includes/azure-devops-secret-best-effort.md)]
+[!INCLUDE [Best-effort protection for secrets](../../includes/azure-devops-secret-best-effort.md)]
 
 ### Variable groups
 
-You can also define *variable groups*, which are sets of variables. Like variables, you define these groups by using the Azure DevOps web interface. You can also use variable groups to safely store secrets. Variable groups can even be reused in multiple pipelines in the same Azure DevOps project.
+You can also define _variable groups_, which are sets of variables. Like variables, you define these groups by using the Azure DevOps web interface. You can also use variable groups to safely store secrets. Variable groups can even be reused in multiple pipelines in the same Azure DevOps project.
 
 Unlike other variables, you need to explicitly import a variable group into a pipeline by using the `group` keyword in a `variables` section, like this:
 
 ```yaml
-variables: 
+variables:
 - group: MyVariableGroup
 ```
 
@@ -77,7 +77,7 @@ Your pipeline template file uses the `{{ parameters.PARAMETER_NAME }}` macro to 
 
 ### Key Vault variable groups
 
-You can link variable groups to Azure Key Vault. Secrets in the key vault are made available as variables in the variable group. The secrets can then be used in your pipelines as if they're normal variables. 
+You can link variable groups to Azure Key Vault. Secrets in the key vault are made available as variables in the variable group. The secrets can then be used in your pipelines as if they're normal variables.
 
 Key Vault makes the management of your secrets more secure. It also enables those values to be managed by your security team, and to separate the access to your pipelines from the secrets that it uses.
 

@@ -12,32 +12,10 @@ Now, the team has asked you for help with updating its deployment pipeline. The 
 
 ## What will you be doing?
 
-In this module, you'll learn how you can extend a pipeline to deploy Bicep code to multiple Azure environments in a consistent way. You'll create separate service connections and service principals for each environment to support higher security and isolation. 
+In this module, you'll learn how you can extend a pipeline to deploy Bicep code to multiple Azure environments in a consistent way. You'll create separate service connections and service principals for each environment to support higher security and isolation.
 
 You'll use pipeline template files to define your deployment steps in a single place, and you'll use Bicep parameters to handle configuration differences between your environments. You'll also secure your parameter values so they don't accidentally leak secrets in your pipeline's logs.
 
 ## What is the main goal?
 
 After you complete this module, you'll be able to update your pipeline to target multiple environments. You'll know how to use pipeline templates to avoid repetition in your definitions, and you'll know how to provide parameters to your Bicep files for each environment.
-
-## Prerequisites
-
-You should be familiar with using:
-
-- Bicep, including creating and deploying basic files, parameter files, preflight validation, and the what-if operation.
-- Azure, including the Azure portal, subscriptions, resource groups, and resources.
-- Basic Git commands, including cloning, committing files, and pushing changes to Azure Repos.
-- YAML pipelines through Azure Pipelines, including multistage pipelines and service connections.
-
-To work through the exercises in the module, you'll need:
-
-- An Azure account that can create resource groups, Azure Active Directory applications, and service principals.
-- An Azure DevOps organization and account.
-
-You'll also need the following installed locally:
-
-- [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
-- The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep&azure-portal=true)
-- The [Azure Pipelines extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azure-devops.azure-pipelines)
-- The latest [Azure CLI](/cli/azure/install-azure-cli) tools *or* the latest [Azure PowerShell](/powershell/azure/install-az-ps) version
-- [Git](https://git-scm.com/download?azure-portal=true)
