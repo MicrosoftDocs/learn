@@ -20456,6 +20456,31 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/wwl-language/csharp-modify-content/3-exercise-replace-remove.md",
+      "redirect_url": "/training/modules/csharp-modify-content/4-exercise-remove-replace",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-language/csharp-modify-content/4-challenge.md",
+      "redirect_url": "/training/modules/csharp-modify-content/5-exercise-challenge-extract-replace-remove-data",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-language/csharp-modify-content/5-solution.md",
+      "redirect_url": "/training/modules/csharp-modify-content/6-review-solution-extract-replace-remove-data",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-language/csharp-modify-content/6-knowledge-check.md",
+      "redirect_url": "/training/modules/csharp-modify-content/7-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-language/csharp-modify-content/7-summary.md",
+      "redirect_url": "/training/modules/csharp-modify-content/8-summary",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "learn-pr/advocates/monitor-and-manage-device-with-iot-central/1-create-azure-iot-central-application.md",
       "redirect_url": "/training/modules/monitor-and-manage-device-with-iot-central/2-create-azure-iot-central-application",
       "redirect_document_id": true
@@ -20484,6 +20509,6 @@
       "source_path": "learn-pr/advocates/monitor-and-manage-device-with-iot-central/6-knowledge-check.md",
       "redirect_url": "/training/modules/monitor-and-manage-device-with-iot-central/9-knowledge-check",
       "redirect_document_id": true
-    }    
+    }   
   ]
 }
