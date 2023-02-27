@@ -17,7 +17,7 @@ quiz:
     choices:
     - content: "`foreach`"
       isCorrect: true
-      explanation: "Correct! It's possible to perform this operation using any of these iteration statements, however the `foreach` is the best suited for cases like this process sequences."
+      explanation: "Correct! It's possible to perform this operation using any of these iteration statements, however the `foreach` is the best suited for cases like this process sequence."
     - content: "`for`"
       isCorrect: false
       explanation: "Incorrect. It's possible to use the `for` statement, but the `foreach` statement was created for working with sequences."
