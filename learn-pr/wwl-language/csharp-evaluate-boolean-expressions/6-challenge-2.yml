@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-evaluate-boolean-expressions.challenge-2
-title: Challenge
+title: Exercise - Complete a challenge activity using Boolean expressions
 metadata:
-  title: Challenge
-  description: Test your knowledge by using the ideas in this module to solve a problem.
-  ms.date: 09/24/2019
-  author: billwagner
-  ms.author: wiwagn
+  title: Exercise - Complete a challenge activity using Boolean expressions
+  description: "Exercise - Complete a challenge activity using Boolean expressions"
+  ms.date: 02/25/2023
+  author: wwlpublish
+  ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 5
-azureSandbox: false
-interactive: csharp
+durationInMinutes: 10
 content: |
   [!include[](includes/6-challenge-2.md)]

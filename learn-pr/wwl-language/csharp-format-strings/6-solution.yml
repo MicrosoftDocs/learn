@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-format-strings.solution
-title: Solution
+title: Review a solution to string interpolation
 metadata:
-  title: Solution
-  description: Review a solution to the coding challenge in this module.
-  ms.date: 1/3/2020
-  author: billwagner
-  ms.author: wiwagn
+  title: Review a solution to string interpolation
+  description: "Review a solution to string interpolation"
+  ms.date: 02/25/2023
+  author: wwlpublish
+  ms.author: eric
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2
-azureSandbox: false
-interactive: csharp
 content: |
   [!include[](includes/6-solution.md)]
