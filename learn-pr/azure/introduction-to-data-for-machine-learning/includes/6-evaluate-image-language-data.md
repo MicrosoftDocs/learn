@@ -1,6 +1,6 @@
 So far, we covered continuous data encoding (floating point numbers), ordinal data encoding (usually integers), and binary categorical data encoding (survived/died, male/female, etc.).
 
-Now we'll learn how to encode data, and we'll explore categorical data resources that have more than two classes. We'll also explore the potentially harmful effects of our model improvement decisions on model performance.
+Now we learn how to encode data, and we'll explore categorical data resources that have more than two classes. We'll also explore the potentially harmful effects of our model improvement decisions on model performance.
 
 ## Categorical data aren't numerical
 
@@ -105,8 +105,8 @@ One-hot encoding reduces statistical power more than continuous or ordinal data,
 
 A categorical variable becomes helpful if the number of categories is substantially less than the number of samples (dataset rows). A categorical variable also becomes helpful if it provides information not already available to the model through other inputs.
 
-For example, we saw that the likelihood of survival differed for people who embarked at different ports. This probably reflects the fact that most people at the Queenstown port had third class tickets. Therefore, embarkment probably reduces statistical power to a slight degree, without adding relevant information to our model.
+For example, we saw that the likelihood of survival differed for people who embarked at different ports. This variation probably reflects the fact that most people at the Queenstown port had third class tickets. Therefore, embarkment probably reduces statistical power to a slight degree, without adding relevant information to our model.
 
-By contrast, Cabin likely has a strong influence on survival, because the ship’s lower cabins would have filled with water, before the cabins closer to the upper deck of the ship filled with water. That said, the Titanic dataset contains 147 different cabins. This reduces the statistical power of our model if we include them. To see if Cabin data can help us, we might need to experiment with including it in our model, or excluding it from our model.
+By contrast, Cabin likely has a strong influence on survival, because the ship’s lower cabins would have filled with water, before the cabins closer to the upper deck of the ship filled with water. That said, the Titanic dataset contains 147 different cabins. This reduces the statistical power of our model if we include them. We might need to experiment with including or excluding Cabin data in our model, to see if Cabin data can help us.
 
 In our next exercise, we finally build our model that predicts Titanic voyage survival, and we'll practice one-hot encoding as we do so.
