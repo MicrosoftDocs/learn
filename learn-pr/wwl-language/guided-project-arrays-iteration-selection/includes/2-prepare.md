@@ -1,5 +1,6 @@
 
-In this guided project, you use Visual Studio Code to develop a C# application that implements arrays, `foreach` statements, and `if` statements. You begin by creating array variables that contain the data for your application. You complete the project by using `foreach` and `if` statements to develop a nested looping and branching structure that implements your application design goals.
+
+In this guided project, you'll use Visual Studio Code to develop a C# application. The application will use arrays, `foreach` statements, and `if` statements to implement a list of design parameters. You'll begin by creating the array variables that contain your application data. To complete the project, you'll develop `foreach` and `if` statements that implement the application design goals.
 
 ## Project overview
 
@@ -72,15 +73,14 @@ Logan:          91.2    A-
 
 Use the following steps to prepare for the Guided project exercises.
 
-1. Download a zip file containing the code folders for the LP2 Guided project.
+1. To download a zip file containing the Starter project code, select the following link: [Lab Files](https://github.com/MicrosoftLearning/Guided-project-foreach-if-array-CSharp/archive/refs/heads/main.zip).
 
-    - In a browser, navigate to [Lab Files](https://github.com/MicrosoftLearning/Guided-project-Develop-foreach-and-if-elseif-else-structures-to-process-array-data-in-CSharp/archive/refs/heads/main.zip) and download the zip file.
+1. Unzip the download files.
 
-1. Unzip the downloaded files locally (or in the sandbox if you aren't using a local dev environment).
+    Unzip the files in your development environment. Consider using your PC as your development environment so that you have access to your code after completing this module. If you aren't using your PC as your development environment, you can unzip the files in a sandbox or hosted environment.
 
     1. On your local machine, navigate to your downloads folder.
-    1. Right-click the Guided-project-Develop-foreach-and-if-elseif-else-structures-to-process-array-data-in-CSharp.zip file, and then select **Extract all**.
-    1. Use the **Browse** button to specify the Windows Desktop folder as the extract location, and then select **Select Folder**.
+    1. Right-click **Guided-project-foreach-if-array-CSharp.main.zip**, and then select **Extract all**.
     1. Select **Show extracted files when complete**, and then select **Extract**.
     1. Make note of the extracted folder location.
 
@@ -89,10 +89,10 @@ Use the following steps to prepare for the Guided project exercises.
     > [!NOTE]
     > If a folder named **GuidedProject** already exists, you can select **Replace the files in the destination** to complete the copy operation.
 
-1. Open the new **GuidedProject** folder in VS Code.
+1. Open the new **GuidedProject** folder in Visual Studio Code.
 
-    1. Open VS Code locally (or open MS Learn sandbox and open VS Code if you aren't using a local dev environment).
-    1. In VS Code, on the **File** menu, select **Open Folder**.
+    1. Open Visual Studio Code in your development environment.
+    1. In Visual Studio Code, on the **File** menu, select **Open Folder**.
     1. Navigate to the Windows Desktop folder and locate the "GuidedProject" folder.
     1. Select **GuidedProject** and then select **Select Folder**.
 

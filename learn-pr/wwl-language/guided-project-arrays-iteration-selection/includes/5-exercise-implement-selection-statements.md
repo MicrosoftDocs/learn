@@ -15,7 +15,7 @@ In this task, you'll develop an `if-elseif-else` structure that can be used to a
 
 1. Ensure that you have the Program.cs file open in the Visual Studio Code Editor.
 
-1. Create a blank code line below the line used to declare `studentScores` array`.
+1. Create a blank code line below the line used to declare `studentScores` array.
 
 1. To create a string variable that can be used to hold the student's letter grade, enter the following code:
 

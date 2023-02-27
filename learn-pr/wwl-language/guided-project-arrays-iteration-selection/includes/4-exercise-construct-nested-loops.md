@@ -154,7 +154,7 @@ In this task, you'll relocate the code that calculates and reports Sophia's scor
 
 1. Update your code to display proper code line indentation.
 
-    > [!HINT]
+    > [!TIP]
     > Visual Studio Code provides a `Format Document` command that can be used to keep your code formatting updated. Right-click inside the Visual Studio Code Editor panel, and then select **Format Document** from the popup menu. The keyboard shortcut for this command is: `Shift + Alt + F`.
 
 1. Ensure that your updates match the following code:
@@ -212,7 +212,7 @@ In this task, you'll relocate the code that calculates and reports Sophia's scor
 
 1. Update your code to display proper code line indentation.
 
-    > [!HINT]
+    > [!TIP]
     > Visual Studio Code provides a `Format Document` command that can be used to keep your code formatting updated. Right-click inside the Visual Studio Code Editor panel, and then select **Format Document** from the popup menu. The keyboard shortcut for this command is: `Shift + Alt + F`.
 
 1. Take a minute to review your code.

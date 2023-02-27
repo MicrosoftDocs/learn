@@ -1,4 +1,5 @@
 
+
 Creating a code branch and iterating through a code block are essential capabilities for a developer. In C#, the `if` statement can be used to evaluate an expression and branch the execution path. The code block of a `foreach` statement can be used to iterate through each element of an array. Powerful and extensible applications can be created by combining the ability to iterate through an array with the ability to branch the execution path.
 
 Suppose you're a teacher's assistant at a school. You've been working with a teacher to create an application that automates the grading process. Your C# programming skills have increased since you completed the initial version of your application. The teacher has asked you to update your application. The updates focus on using arrays, `foreach` statements, and `if` statements. The teacher also wants you to include extra credit assignments in your calculations of the final grades.
@@ -10,7 +11,7 @@ By the end of this module, you'll have experience developing applications that u
 > [!NOTE]
 > This is a guided project module where you’ll complete an end-to-end project by following step-by-step instructions.
 
-## Learning Objectives
+## Learning objectives
 
 In this module, you'll practice how to:
 
