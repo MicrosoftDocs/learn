@@ -1,6 +1,6 @@
-In this unit, you'll open a sandbox environment. The exercises in this module will use a virtual machine to simulate an on-premises Windows Server installation running Internet Information Services (IIS) and an ASP.NET web app. The VM has the Azure App Service Migration Assistant preinstalled.
+In this unit, you'll open a sandbox environment. The exercises in this module use a virtual machine to simulate an on-premises Windows Server installation running Internet Information Services (IIS) and an ASP.NET web app. The VM has the Azure App Service Migration Assistant pre-installed.
 
-First, select the button above to activate the sandbox. It will take moment to open the sandbox environment.
+First, select the **Activate sandbox** button to activate the sandbox. It takes a moment to open the sandbox environment.
 
 Next, copy and paste the following script into Azure Cloud Shell on the right, and then run the script by pressing <kbd>Enter</kbd>.
 
