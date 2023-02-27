@@ -22,7 +22,6 @@ prerequisites: |
   - Experience with Azure, such as deploying and managing resources
 iconUrl: /training/achievements/azure-sql-secure-data.svg
 levels:
-- beginner
 - intermediate
 roles:
 - solution-architect
