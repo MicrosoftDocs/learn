@@ -59,8 +59,8 @@ comes preinstalled with Windows operating systems.
 You can use either PowerShell or Bash to manage your Azure resources. As a best practice, you should
 write your scripts for a specific shell as syntax elements are different between PowerShell and
 Bash. For example, for the line continuation character, Bash uses the backslash `\` while PowerShell
-uses the backtick `` ` ``. The differences in the shell environments doesn't change how the Azure
-CLI and Azure PowerShell operate. However, they do change your command-line experience.
+uses the backtick `` ` ``. The differences in the shell environments don't change how the Azure CLI
+and Azure PowerShell operate. However, they do change your command-line experience.
 
 <!-- link references -->
 [1]: ../media/shared/check-mark-button_2705.svg
