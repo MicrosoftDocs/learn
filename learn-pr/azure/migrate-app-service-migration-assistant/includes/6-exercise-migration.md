@@ -1,7 +1,7 @@
-The last step is to perform the migration. In this unit, you'll sign in to your Azure account and associate your Migration Assistant session. You'll fill out the details for migration, and then watch as the Migration Assistant goes to work. Finally, you'll observe the web app running in Azure App Service and view the settings of your new Azure App Service account.
+The last step is to perform the migration. In this unit, you sign in to your Azure account and associate your Migration Assistant session. Fill out the details for migration, and then watch as the Migration Assistant goes to work. Finally, you'll observe the web app running in Azure App Service and view the settings of your new Azure App Service account.
 
 > [!Important]
-> This module assumes you've successfully completed the steps in previous units. If you haven't, go back and complete the previous units before continuing.
+> This module assumes you've successfully completed the steps in the previous units. If you haven't, go back and complete the previous units before continuing.
 
 ## Exercise steps
 
@@ -9,23 +9,21 @@ Here you'll continue the exercise from the point where you left off in a previou
 
 1. Select **Next** to display the **Login to Azure** step. Here you'll use a special code to associate this assessment on your server to your Azure account.  
 
-    In the next few steps, you'll need to use the device code and then sign in to your Azure account by using your Azure credentials. You'll need to do this on your local computer. You'll copy the URL and the device code from your VM session and paste the URL and device code into a web browser on your local computer.
+    In the next few steps, you'll need to use the device code and sign in to your Azure account using your Azure credentials. You'll need to do this on your local computer. You'll copy the URL and the device code from your VM session and paste the URL and device code into a web browser on your local computer.
 
 2. In the Migration Assistant, you'll see the **Login to Azure** page with a device code and a button. Copy the device code to the clipboard.
 
     ![Screenshot of the screen where you can copy the device code.](../media/6-exercise-migration-01.png)
 
-3. Go to the [device login service](https://microsoft.com/devicelogin?azure-portal=true).
-
-    You should see the **Enter code** webpage on your local computer.
+3. Go to the [device login service](https://microsoft.com/devicelogin?azure-portal=true). You should see the **Enter code** webpage on your local computer.
 
     ![Screenshot of the webpage where you can paste the device code.](../media/6-exercise-migration-02.png)
 
-4. On your local computer, select **Next**. Sign in by using the same account that you used to sign in to Learn and activate the sandbox. This step might require you to use two-factor authentication.
+4. On your local computer, select **Next**. Sign in using the same account that you used to sign in to Learn and activate the sandbox. This step might require you to use two-factor authentication.
 
     After you sign in, you should see a confirmation message that you have successfully signed in to the Azure App Service Migration Assistant application on your device.
 
-5. Back in the Migration Assistant running in the remote VM, the step **Azure Options** is displayed. Here you'll enter details about the target App Service instance to which you'll move your app.  
+5. Back in the Migration Assistant running in the remote VM, the step **Azure Options** is displayed. Here, you'll enter details about the target App Service instance to which you'll move your app.  
 
     Select the link at the end of the text **Switch user directory**. Ensure that the **Microsoft Learn Sandbox** directory is selected.
 
@@ -38,7 +36,7 @@ Here you'll continue the exercise from the point where you left off in a previou
     | Subscription | Select **Concierge Subscription**. |
     | Resource Group | Select the **Use Existing** option. This should automatically select an existing resource group prefixed with the word "learn." |
     | Destination Site Name | Enter a valid name for the destination site. |
-    | App Service Plan | Select the **Use exiting** option. This will automatically select **Learn-Exercise-Plan**, which was created for you at the beginning of the exercise. |
+    | App Service Plan | Select the **Use exiting** option. This automatically selects **Learn-Exercise-Plan**, which was created for you at the beginning of the exercise. |
     | Azure Migrate Project | Leave this field empty. |
 
     > [!Note]

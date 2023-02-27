@@ -1,6 +1,7 @@
-The following code is one possible solution for the challenge from the previous unit:
 
-```csharp-interactive
+The following code is one possible solution for the challenge from the previous unit.
+
+```c#
 int hero = 10;
 int monster = 10;
 
@@ -23,11 +24,11 @@ do
 Console.WriteLine(hero > monster ? "Hero wins!" : "Monster wins!");
 ```
 
-This code is merely *one possible solution*, because there are many different ways to perform the attack logic.
+This code is merely "*one possible solution*" because there are many different ways to perform the attack logic.
 
 Regardless, your output should be similar to the following example output:
 
-```output
+```Output
 Monster was damaged and lost 1 health and now has 9 health.
 Hero was damaged and lost 2 health and now has 8 health.
 Monster was damaged and lost 1 health and now has 8 health.
@@ -40,4 +41,4 @@ Monster wins!
 If you were successful, congratulations! Continue on to the knowledge check in the next unit.
 
 > [!IMPORTANT]
-> If you had trouble completing this challenge, you should review the previous units before you continue on. All new ideas we discuss in other modules will depend on your understanding of the ideas that were presented in this module.
+> If you had trouble completing this challenge, maybe you should review the previous units before you continue on. All new ideas we discuss in other modules will depend on your understanding of the ideas that were presented in this module.

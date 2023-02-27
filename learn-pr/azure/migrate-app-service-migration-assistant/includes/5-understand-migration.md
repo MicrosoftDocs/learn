@@ -1,12 +1,12 @@
-Now that the assessment has determined that you can migrate your web app to Azure App Service, you'll complete the migration. But what does the Migration Assistant do? How does it work? And when it asks for you to choose various settings, what should you choose and why?
+Now that the assessment has determined that you can migrate your web app to Azure App Service, you can complete the migration. But what does the Migration Assistant do? How does it work? And when it asks for you to choose various settings, what should you choose and why?
 
 ## How the Migration Assistant migrates your web app
 
 The Migration Assistant begins the migration process by collecting key details from you about your Azure account and then performs the migration.  
 
-First, you'll sign in to your Azure account and associate your Migration Assistant session with your account by using a unique code. Next, you'll choose the subscription, the resource group, and the website's domain name. You can choose to create a new App Service plan to host the app, or select an existing plan. The choice affects the geographical region from which your app is hosted. You'll also have a chance to associate this migration effort with an existing Azure Migrate project. (We'll talk about this in a moment.) Finally, you can either choose to skip database setup or choose to set up a hybrid connection to enable a database connection.
+First, sign in to your Azure account and associate your Migration Assistant session with your account by using a unique code. Next, choose the subscription, the resource group, and the website's domain name. You can choose to create a new App Service plan to host the app, or select an existing plan. The choice affects the geographical region from which your app is hosted. You can also associate this migration effort with an existing Azure Migrate project. (We'll talk about this in a moment.) Finally, you can either choose to skip database setup or choose to set up a hybrid connection to enable a database connection.
 
-After the Migration Assistant collects and verifies your selections, it goes to work. It creates the needed App Service resources in the selected region and resource group. It zips up the web app's source files and uses the App Service deployment API to deploy them. Finally, it performs optional migration steps, like helping you set up a hybrid connection.
+After the Migration Assistant collects and verifies your selections, it gets to work. It creates the needed App Service resources in the selected region and resource group. It zips up the web app's source files and uses the App Service deployment API to deploy them. Finally, it performs optional migration steps, like helping you set up a hybrid connection.
 
 After a successful migration, you'll need to perform any post-migration tasks. They might include:
 
@@ -22,11 +22,11 @@ You might also decide to change the App Service hosting plan and other settings 
 
 The following diagram describes a typical web application that hosts an architecture where the web server is deployed in a perimeter network (also known as DMZ, demilitarized zone, and screened subnet). An application server (a web API accessible via HTTP) and a database server are hosted behind a firewall in an intranet zone.
 
-![Diagram of a typical web app deployment scenario with app services and data deployed in an intranet zone and a perimeter network.](../media/5-understand-migration-01.png)
+![A graphic representation of typical web app deployment scenario with app services and data deployed in an intranet zone and a perimeter network.](../media/5-understand-migration-01.png)
 
 After migration, the website and the web API would be hosted on a single App Service web app. The database would be moved to an Azure SQL Database instance. Both would be deployed to a single resource group.
 
-![Diagram of a web app migration to Azure App Service and Azure SQL Database.](../media/5-understand-migration-02.png)
+![A graphical representation of web app migration to Azure App Service and Azure SQL Database.](../media/5-understand-migration-02.png)
 
 As a result of the migration to Azure SQL Database, the customer would experience increased resiliency and redundancy.
 
@@ -42,7 +42,7 @@ If you're new to Azure App Service, it's important to understand key distinction
 The App Service hosting plans are divided into tiers based on the intended workloads that they were designed to support. Hosting plans affect:
 
 - The maximum number of virtual machine instances available to run your app, and the performance characteristics of those virtual machines.
-- Whether features like VPN hybrid connectivity, network isolation, and autoscale are available.
+- Availability of features like VPN hybrid connectivity, network isolation, and autoscale.
 - The service-level agreement (SLA).
 
 For example, the Free and Shared tiers are for small proofs of concept and testing, so there's no SLA and multiple apps share virtual machines. On the other end of the spectrum, the Isolated service plan is for mission-critical workloads that run in a private, dedicated virtual networked environment with state-of-the-art hardware, more RAM, and faster processors and SSD storage.
@@ -52,13 +52,13 @@ Within each hosting plan, you can select the instance size. Instance size affect
 - The number of cores, amount of RAM, and amount of disk storage.
 - Pricing.
 
-You can deploy multiple web apps to a single hosting plan (similar to running multiple web apps on a single instance of IIS). All will share the same VM instances.
+You can deploy multiple web apps to a single hosting plan (similar to running multiple web apps on a single instance of IIS). All web apps will share the same VM instances.
 
 For more information, see [App Service overview](/azure/app-service/overview).
 
 ## Database migration
 
-The Azure App Service Migration Assistant does not migrate your database to Azure SQL Database. In fact, you're not required to migrate your database to Azure at all. In that case, the Migration Assistant can help you set up a hybrid connection to your on-premises database as an optional step.  
+The Azure App Service Migration Assistant doesn't migrate your database to Azure SQL Database. In fact, you're not required to migrate your database to Azure at all. In that case, the Migration Assistant can help you set up a hybrid connection to your on-premises database as an optional step.  
 
 Although you can use a hybrid connection in a production environment, you might want to consider the impact on performance. You might then think about a hybrid connection as a temporary, interim solution before you move your data to Azure SQL Database. Hybrid connections to your data might also be useful in a development or testing scenario.
 
@@ -66,7 +66,7 @@ If you select the **Setup a hybrid connection** option, the Migration Assistant 
 
 The following diagram is a high-level overview of the relationship between your migrated web app, your on-premises database, Hybrid Connection Manager, and the Relay hybrid connection.
 
-![Diagram of a web app connected to a database endpoint via Hybrid Connection Manager on-premises and the Relay hybrid connection in Azure.](../media/5-understand-migration-03.png)
+![Pictorial representation of a web app connected to a database endpoint via Hybrid Connection Manager on-premises and the Relay hybrid connection in Azure.](../media/5-understand-migration-03.png)
 
 For more information, see [Azure App Service Hybrid Connections](/azure/app-service/app-service-hybrid-connections).
 
@@ -76,16 +76,16 @@ You might be interested in another Learn module, [Assess and convert SQL Server 
 
 ## What is an Azure Migrate project?
 
-Earlier, we said that you can associate your migration with an Azure Migrate project. Azure Migrate is a hub for matters related to migration. Organizations use Azure Migrate to capture information about all the servers and services that they hope to migrate to Azure. They can use this information as a form of discovery and assessment to determine the scope of their migration efforts. Then they can adequately plan, inform stakeholders, determine costs, track migration status, and so on.  
+Earlier, we mentioned that you can associate your migration with an Azure Migrate project. Azure Migrate is a hub for matters related to migration. Organizations use Azure Migrate to capture information about all the servers and services that they hope to migrate to Azure. They can use this information as a form of discovery and assessment to determine the scope of their migration efforts. They can adequately plan, inform stakeholders, determine costs, track migration status, and so on.  
 
 Azure Migrate supports key migration scenarios like:
 
-- Migrating Windows and Linux servers (whether those servers are VMs hosted in VMWare or Hyper-V, physical servers, or even other clouds).
+- Migrating Windows and Linux servers (whether those servers are VMs hosted in VMware or Hyper-V, physical servers, or even other clouds).
 - Migrating SQL Server and other databases, including the data.
 - Migrating virtual desktops.
 - Migrating web apps by using the Azure App Service Migration Assistant.
 
-So, if you already have an Azure Migrate project set up, you can specify the name of the project during migration. This step will save the migration details and status in your Azure Migrate hub.
+So, if you already have an Azure Migrate project setup, you can specify the name of the project during migration. This step will save the migration details and status in your Azure Migrate hub.
 
 ## Recap
 
