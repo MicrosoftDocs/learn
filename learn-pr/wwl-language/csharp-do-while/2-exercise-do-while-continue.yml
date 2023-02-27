@@ -30,7 +30,7 @@ quiz:
     choices:
     - content: "while"
       isCorrect: false
-      explanation: "Incorrect. It's possible to use the `while` statement for this purpose, but the `do-while` will has the user to enter information once before checking for the special keyboard combination that exists the iteration."
+      explanation: "Incorrect. It's possible to use the `while` statement for this purpose, but the `do-while` loop will require the user to enter information once before checking for the special keyboard combination that exists the iteration."
     - content: "for"
       isCorrect: false
       explanation: "Incorrect. It's possible to use the `for` statement, but the `do-while` will allow the code to iterate indefinitely. The `do-while` will iterate until the user enters the special keyboard combination and doesn't require a `break` statement to exit the iteration."
