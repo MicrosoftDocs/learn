@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-machine-learning-operations-solution.design-monitoring
+title: Design for monitoring
+metadata:
+  title: Design for monitoring
+  description: "Learn what you can monitor in an MLOps solution to optimize for performance."
+  ms.date: 02/27/2023
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 9
+content: |
+  [!include[](includes/3-design-monitoring.md)]
