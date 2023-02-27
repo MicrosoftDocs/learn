@@ -52,7 +52,9 @@ resource myStorageAccount 'Microsoft.Storage/storageAccounts@2022-09-01' = {
 }
 ```
 
-If you want to customize the storage account name, storage account names must be between 3 and 24 characters in length and may contain numbers and lowercase letters only. Your storage account name must be unique within Azure.
+If you want to customize the storage account name, storage account names must be between 3 and 24
+characters in length and may contain numbers and lowercase letters only. Your storage account name
+must be unique within Azure.
 
 To deploy Bicep files, use the Azure CLI or Azure PowerShell as shown in the following examples.
 After the command is executed, the deployment begins and the resources are created in the specified

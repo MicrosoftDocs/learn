@@ -82,7 +82,7 @@ defined resources.
 terraform apply main.tfplan
 ```
 
-## Verify the results
+## Verify the storage account
 
 To verify the Azure storage account, you can use the `terraform state show` command. This command
 shows the current state of the specified resource.
@@ -94,7 +94,7 @@ as a complete list of storage account attributes and their values.
 terraform state show 'azurerm_storage_account.example'
 ```
 
-## Destroy the resources
+## Clean up resources
 
 When you no longer need the resources created in this module, run `terraform apply` with the
 `-destroy` flag.

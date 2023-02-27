@@ -51,7 +51,7 @@ az storage account check-name --name <storage-account-name>
 # create the storage account
 az storage account create \
   --name <storage-account-name> \
-  --resource-group <resource-group-name> \
+  --resource-group storageaccountexamplerg \
   --location eastus \
   --sku Standard_RAGRS \
   --kind StorageV2
@@ -68,7 +68,7 @@ created in the previous step.
 az storage account list
 
 # Get a list of all storage accounts for a resource group
-az storage account list --resource-group <resource-group-name>
+az storage account list --resource-group storageaccountexamplerg
 ```
 
 ## Clean up resources

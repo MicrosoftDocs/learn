@@ -3,8 +3,8 @@ uid: learn.azure-command-line-tools-intro.intro-to-terraform
 metadata:
   title: Introduction to Terraform
   description: Overview of using Terraform to manage and provision Azure resources
-  ms.published: 02/06/2023
-  ms.date: 02/06/2023
+  ms.published: 02/27/2023
+  ms.date: 02/27/2023
   author: TomArcherMsft
   ms.author: tarcher
   ms.topic: module-choose-best-product

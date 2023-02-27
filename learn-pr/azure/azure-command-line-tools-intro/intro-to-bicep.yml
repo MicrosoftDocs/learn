@@ -3,8 +3,8 @@ uid: learn.azure-command-line-tools-intro.intro-to-bicep
 metadata:
   title: Introduction to Bicep
   description: Overview of using Bicep to manage and provision Azure resources
-  ms.published: 02/16/2023
-  ms.date: 02/16/2023
+  ms.published: 02/27/2023
+  ms.date: 02/27/2023
   author: tfitzmac
   ms.author: tomfitz
   ms.topic: module-choose-best-product

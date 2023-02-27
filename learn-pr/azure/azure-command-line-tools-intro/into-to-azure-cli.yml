@@ -3,8 +3,8 @@ uid: learn.azure-command-line-tools-intro.intro-to-azure-cli
 metadata:
   title: Introduction to the Azure CLI
   description: Overview of using the Azure CLI to manage and provision Azure resources
-  ms.published: 02/06/2023
-  ms.date: 02/06/2023
+  ms.published: 02/27/2023
+  ms.date: 02/27/2023
   author: dbradish-microsoft
   ms.author: dbradish
   ms.topic: module-choose-best-product
