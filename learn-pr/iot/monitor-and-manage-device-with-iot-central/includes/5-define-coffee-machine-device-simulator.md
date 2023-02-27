@@ -18,7 +18,8 @@ The [Azure IoT device SDKs](/azure/iot-hub/iot-hub-devguide-sdks) include suppor
 ## Review the code
 
 <!-- TODO: Can I download a file in a Module? -->
-You can open the [*CoffeeMaker.js*](../resources/CoffeeMaker.js) file in a text editor to see the entire code.
+
+:::code language="js" source="../resources/CoffeeMaker.js" range="1-26,239-255":::
 
 The `provisioningClient` object:
 
