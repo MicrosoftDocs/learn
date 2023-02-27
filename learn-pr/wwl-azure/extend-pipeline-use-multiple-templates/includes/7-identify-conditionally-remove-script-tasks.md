@@ -7,7 +7,7 @@ Setting up conditions for script tasks can further reduce the risk of exposing s
 
 This unit demonstrates how to identify and conditionally remove script tasks using Azure Pipelines and YAML pipelines.
 
-## Identify the Script Tasks to be Removed
+## Identify the script tasks to be removed
 
 To start, you need to identify the script tasks that require removal based on specific conditions. You can accomplish this by utilizing expressions in the YAML pipeline.
 
@@ -28,7 +28,7 @@ In this example, the first script task will only run if the stage name is "Build
 
 It allows you to remove the first script task from the pipeline without removing the second script task. It also allows you to reuse the second script task in other pipeline stages. It's helpful to run the same script task in multiple stages. For example, you may want to run a script task to build a project in the "Build" stage and then run the same script task to deploy the project in the "Deploy" stage.
 
-## Use the "condition" Property
+## Use the condition property
 
 To conditionally remove a script task, utilize the "condition" property in the YAML pipeline. This property empowers you to define an expression that determines whether the script task should execute.
 
@@ -45,7 +45,7 @@ jobs:
 
 In this example, the script task will only run if the `MY_VARIABLE` variable is set.
 
-## Test the Pipeline
+## Test the pipeline
 
 Once you have made changes to the YAML pipeline, it's crucial to test it to guarantee that the script tasks are correctly removed.
 

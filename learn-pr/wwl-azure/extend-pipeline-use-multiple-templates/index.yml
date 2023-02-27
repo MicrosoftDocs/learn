@@ -2,7 +2,7 @@
 uid: learn.wwl.extend-pipeline-use-multiple-templates
 metadata:
   title: Extend a pipeline to use multiple templates
-  description: "Extend a pipeline to use multiple templates."
+  description: "Fundamental concepts and best practices for creating nested templates, rewriting the main deployment pipeline, configuring the pipeline and the application to use tokenization, removing plain text secrets, restricting agent logging, and identifying and conditionally removing script tasks."
   ms.date: 1/25/2023
   author: LuizMacedo
   ms.author: lumac
