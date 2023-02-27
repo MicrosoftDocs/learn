@@ -8,7 +8,7 @@ You want to create a Quarkus application that hosts its logic in Azure Container
 
 ### Introduction to Azure Database for PostgreSQL
 
-[Azure Database for PostgreSQL](https://learn.microsoft.com/azure/postgresql) is a relational database service based on the open-source Postgres database engine. It's a fully managed database-as-a-service that can handle mission-critical workloads with predictable performance, security, high availability, and dynamic scalability.
+[Azure Database for PostgreSQL](https://azure.microsoft.com/products/postgresql/) is a relational database service based on the open-source Postgres database engine. It's a fully managed database-as-a-service that can handle mission-critical workloads with predictable performance, security, high availability, and dynamic scalability.
 
 ## Introduction to Quarkus
 
