@@ -28,11 +28,11 @@ Personalizer has two primary modes:
 The selection of the *best* item is accomplished by using the collective behavior and reward scores that have been accumulated across all users. An item is considered an action, and can be a product, a recommended movie, or a news article recommendation, for example. Personalizer evaluates features related to actions and context.
 
 - Action features provide metadata about that action. For example, if socks is the action (item), features might include foot, comfort, shoe accessories, cushioning, etc.
-- Context features can include a user's previous shopping history, their environment (mobile device or desktop browser), or the category they are shopping in (hiking, walking, swimming, etc.).
+- Context features can include a user's previous shopping history, their environment (mobile device or desktop browser), or the category they're shopping in (hiking, walking, swimming, etc.).
 
-## Rank
+## Ranking
 
-The Personalizer service will use a **Rank** call when working with action and context features. The **Rank** call considers the action and its features, along with the context features, to help select the top action item to display. The **Rank** call returns the ID of the best content item (action) to show to the user, in the *Reward Action ID* field. The action shown to the user is chosen with machine learning models that try to maximize the total number of rewards over time.
+The Personalizer service will use a **Rank** call when working with action and context features. The **Rank** call considers the action and its features, along with the context features, to help select the top action item to display. The **Rank** call returns the ID of the best content item (action) to show to the user, in the **Reward Action ID** field. The action shown to the user is chosen with machine learning models that try to maximize the total number of rewards over time.
 
 ## Scenarios
 
@@ -52,15 +52,15 @@ The following diagram shows the flow of an application's interaction with Person
 
 The preceding image depicts the following action sequences:
 
-1. User interacts with the site or application
-1. User information, context plus features, and actions to choose plus features are sent to the **Rank** API
-1. The Personalizer service will:
-    1. decide whether to exploit the current model
-    1. or explore new choices for the model
-1. The Personalizer service returns a rank response, in the form of a reward action ID.
+1. User interacts with the site or application.
+   1. User information, context plus features, and actions to choose plus features are sent to the **Rank** API.
+   1. The Personalizer service will:
+      1. decide whether to exploit the current model or
+      1. explore new choices for the model.
+1. The Personalizer service returns a *rank* response, in the form of a *reward action ID*.
     1. Your system presents that content and determines a reward score based on your own business rules.
-1. Your system returns the reward score to the learning loop using the following sequence
-    1. When Personalizer receives the reward, the reward is sent to EventHub
-    1. The rank and reward are correlated
-    1. The AI model is updated based on the correlation results
-    1. The inference engine is updated with the new model
+1. Your system returns the reward score to the learning loop using the following sequence:
+    1. When Personalizer receives the reward, the reward is sent to the event hub.
+    1. The rank and reward are correlated.
+    1. The AI model is updated based on the correlation results.
+    1. The inference engine is updated with the new model.

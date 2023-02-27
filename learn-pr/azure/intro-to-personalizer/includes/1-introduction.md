@@ -9,6 +9,6 @@ Your task is to devise a solution that provides appropriate recommendations to c
 After completing this module, you'll be able to:
 
 - Assess the benefits of Personalizer
-- Describe what Personalizer is
+- Describe the purpose of Personalizer
 - Define scenarios where you can apply Personalizer
 - Decide if Personalizer is the right choice for your scenario

@@ -17,32 +17,32 @@ quiz:
     choices:
     - content: "Rewarding the user for selecting the proper item."
       isCorrect: false
-      explanation: "Incorrect. Reinforcement learning is not intended to offer rewards for choices made."
+      explanation: "Incorrect. Reinforcement learning isn't intended to offer rewards for choices made."
     - content: "The act of retraining the model by adding new inputs."
       isCorrect: false
-      explanation: "Incorrect. You may want to retrain the model with new inputs if it is not performing as expected, but that is not a definition of reinforcement learning."
+      explanation: "Incorrect. You might want to retrain the model with new inputs if it's not performing as expected, but that's not a definition of reinforcement learning."
     - content: "Actions influence later inputs."
       isCorrect: true
-      explanation: "Correct. Applied to artificial intelligence, reinforcement learning is considered a closed-loop* model. The term refers to a model where the actions influence later inputs. The model learns behaviors to use based on feedback collected from its use."
-  - content: "What is Apprentice Mode?"
+      explanation: "Correct. Applied to artificial intelligence, reinforcement learning is considered a *closed-loop* model. The term refers to a model where the actions influence later inputs. The model learns behaviors to use based on feedback collected from its use."
+  - content: "What is Apprentice mode?"
     choices:
-    - content: "A learning behavior that helps warm-start a Personalizer model to train without impacting the applications outcomes and actions."
+    - content: "A learning behavior that helps warm-start a Personalizer model to train without impacting the application's outcomes and actions."
       isCorrect: true
-      explanation: "Correct. A learning behavior that helps warm-start a Personalizer model to train without impacting the applications outcomes and actions."
+      explanation: "Correct. Apprentice mode helps to mitigate the cold-tart problem with a new untrained model. It allows you to validate the action and context features that are sent to Personalizer."
     - content: "Setting up a staging environment to help train the model before pushing to release."
       isCorrect: false
-      explanation: "Incorrect. Apprentice mode is not concerned with staging environments for model training."
-    - content: "The default learning behavior for Personalizer where your learning loop, uses machine learning to build the model that predicts the top action for your content."
+      explanation: "Incorrect. Apprentice mode isn't concerned with staging environments for model training."
+    - content: "The default learning behavior for Personalizer, where your learning loop uses machine learning to build the model that predicts the top action for your content."
       isCorrect: false
-      explanation: "Incorrect. It is known as the Online mode."
+      explanation: "Incorrect. The default learning behavior is called Online mode."
   - content: "Why is it important to ensure you have clearly defined business goals for your Personalizer scenario?"
     choices:
     - content: "To satisfy business acceptance testing (BAT) needs."
       isCorrect: false
-      explanation: "Incorrect. While BAT may be necessary to validate the outcome of the use of Personalizer, it is not a reason to have clear business goals."
+      explanation: "Incorrect. While BAT may be necessary to validate the outcome of the using Personalizer, it's not a reason to have clear business goals."
     - content: "Clearly defined business goals are critical to ensuring Personalizer is a valid choice for the intended purpose."
       isCorrect: true
-      explanation: "Correct. Personalizer is not the right choice for all scenarios. Without clearly defined business goals, the application of Personalizer may not achieve the desired outcomes."
+      explanation: "Correct. Personalizer isn't the right choice for all scenarios. Without clearly defined business goals, the application of Personalizer may not achieve the desired outcomes."
     - content: "Personalizer can be used in any scenario so business goals are irrelevant."
       isCorrect: false
       explanation: "Incorrect. Just like careful planning for the service or application is critical to its success, business goals are a critical component of a Personalizer evaluation and implementation scenario."
