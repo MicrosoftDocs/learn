@@ -20479,6 +20479,16 @@
       "source_path": "learn-pr/wwl-language/csharp-modify-content/7-summary.md",
       "redirect_url": "/training/modules/csharp-modify-content/8-summary",
       "redirect_document_id": true
-    }   
+    },
+    {
+      "source_path": "learn-pr/wwl-language/csharp-do-while/5-knowledge-check.md",
+      "redirect_url": "/training/modules/csharp-do-while/7-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-language/csharp-do-while/6-summary.md",
+      "redirect_url": "/training/modules/csharp-do-while/8-summary",
+      "redirect_document_id": true
+    }  
   ]
 }
