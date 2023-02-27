@@ -22,7 +22,7 @@ Let's start by creating a project. You create a project from the command line by
    printfn "The sum is %i" sum
    ```
 
-   The first line welcomes the user of the program. On the second line, there's a comment that starts with "//" that shows code that you'll implement in the next exercise unit. Then you have `let sum = 0`. You'll create a `sum` variable that will hold the calculation result.
+   The first line welcomes the user of the program. On the second line, there's a comment that starts with "//" that shows code that you'll implement in the next exercise unit. Then you have `let sum = 0`. Finally, create a `sum` variable that holds the calculation result.
 
    Your `main()` function should now look like so:
 
@@ -53,7 +53,7 @@ Congratulations! You managed to scaffold a project, start on a larger project, a
 
 ## Correct the fault
 
-Part of learning to program in any language is learning how to recognize compilation errors and fix them. For this exercise, you'll scaffold a new project. Make sure you're one level up in the directory structure before you continue.
+Part of learning to program in any language is learning how to recognize compilation errors and fix them. For this exercise, you must scaffold a new project. Make sure you're one level up in the directory structure before you continue.
 
 1. Scaffold a new F# project by running `dotnet new`.
 
@@ -81,7 +81,7 @@ Part of learning to program in any language is learning how to recognize compila
    dotnet run
    ```
 
-   You'll get an error message similar to this text:
+   An error message displays that's similar to this text:
 
    ```output
    /<path>/Errors/Program.fs(8,34): error FS0001: This expression was expected to have type    'string'    but here has type    'int' [/<path>/Errors/Errors.fsproj]

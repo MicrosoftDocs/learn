@@ -2,56 +2,47 @@
 uid: learn.languages.csharp-format-strings.knowledge-check
 title: Knowledge check
 metadata:
-  title: Check your knowledge
-  description: Review what you've learned
-  ms.date: 1/3/2020
-  author: billwagner
-  ms.author: wiwagn
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/25/2023
+  author: wwlpublish
+  ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-languages
+  ms.prod: learning-azure
 durationInMinutes: 3
 quiz:
-  title: Check your knowledge
+  title: "Check your knowledge"
   questions:
-  - content: "Which of the following options would you use to output data in a tab-delimited format (in other words, using a tab between each data element)?"
+  - content: "For the C# code `Console.WriteLine(\"C110\".PadLeft(6, '0'));`, which is the expected output?"
     choices:
-    - content: "Use PadRight() equal to four blank spaces"
+    - content: "`C11000`"
       isCorrect: false
-      explanation: "Padding doesn't automatically create blank spaces if the value's length meets or exceeds the padding."
-    - content: "Use PadLeft() equal to four blank spaces"
+      explanation: "Incorrect. `.PadLeft(6, '0')` doesn't append zeros to the right side of the string."
+    - content: "`C110000000`"
       isCorrect: false
-      explanation: "Padding doesn't automatically create blank spaces if the value's length meets or exceeds the padding."
-    - content: "Use composite formatting."
-      isCorrect: false
-      explanation: "While composite formatting could be employed, it is not the mechanism that will add tabs into your strings."
-    - content: "Use \\t between the values"
+      explanation: "Incorrect. `.PadLeft(6, '0')` won't append zeros to the right side of a string and won't append after the string reaches six characters long."
+    - content: "`00C110`"
       isCorrect: true
-      explanation: "Correct!"
-  - content: 'Which format specifier would you use to present a decimal value with the following format to an en-US audience: `12,345.67`'
+      explanation: "Correct. `.PadLeft(6, '0')` appends zeros to the left side of a string until the string is six characters long."
+  - content: "Which format specifier presents a decimal value with the following format to an en-US audience: `12,345.67`"
     choices:
-    - content: '{0:C}'
+    - content: "`0:C`"
       isCorrect: false
-      explanation: 'Though it looks similar, the numeric value is not necessarily currency.'
-    - content: '{0:H}'
+      explanation: "Incorrect. Though it looks similar, the numeric value is not necessarily currency."
+    - content: "`0:H`"
       isCorrect: false
-      explanation: "`H` isn't a known format specifier."
-    - content: '{0:N2}'
+      explanation: "Incorrect. `H` isn't a known format specifier."
+    - content: "`0:N2`"
       isCorrect: true
-      explanation: '`N2` is the correct format specifier!'
-    - content: '{0:2}'
-      isCorrect: false
-      explanation: "`2` isn't a known format specifier."
-  - content: 'Which character must you use as a directive to perform string interpolation?'
+      explanation: "Correct. `N2` is the correct format specifier!"
+  - content: "Which character must be used as a directive to perform string interpolation?"
     choices:
-    - content: '$'
+    - content: "`$`"
       isCorrect: true
-      explanation: '`$` is the correct directive!'
-    - content: '@'
+      explanation: "Correct. The `$` directive is used to perform string interpolation."
+    - content: "`@`"
       isCorrect: false
-      explanation: '`@` is used to create a verbatim string literal, not to perform string interpolation.'
-    - content: '%'
+      explanation: "Incorrect. `@` is used to create a verbatim string literal, and doesn't perform string interpolation."
+    - content: "`%`"
       isCorrect: false
-      explanation: "`%` isn't a valid directive."
-    - content: '!'
-      isCorrect: false
-      explanation: "`!` isn't a valid directive."
+      explanation: "Incorrect. `%` is used for math to return the remainder (modulus), but isn't a valid directive for string interpolation."

@@ -1,16 +1,39 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-convert-cast.exercise-tryparse
-title: Exercise - the TryParse() method
+title: Exercise - Examine the TryParse() method
 metadata:
-  title: Introduction
-  description: Use the TryParse() method as a safe way to convert a string into a numeric data type value.
-  ms.date: 10/03/2019
-  author: billwagner
-  ms.author: wiwagn
+  title: Exercise - Examine the TryParse() method
+  description: "Exercise - Examine the TryParse() method"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: eric
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 8
-azureSandbox: false
-interactive: csharp
+durationInMinutes: 12
 content: |
   [!include[](includes/3-exercise-tryparse.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which technique should be used to change `myInput`, a `string` value `\"2.71828\"`, into a `decimal` variable `myInputDecimal`?"
+    choices:
+    - content: "`decimal myInputDecimal = (decimal)(myInput);`"
+      isCorrect: false
+      explanation: "Incorrect. A `string` can't be cast into a `decimal`."
+    - content: "`decimal myInputDecimal = myInput + 0;`"
+      isCorrect: false
+      explanation: "Incorrect. A `string` can't be implicitly converted into a `decimal`."
+    - content: "`decimal.TryParse(myInput, out myInputDecimal)`"
+      isCorrect: true
+      explanation: "Correct. Using `TryParse` (or `Parse()`) is a valid technique."
+  - content: "Which best describes the return type of `decimal.TryParse()`?"
+    choices:
+    - content: "`decimal`"
+      isCorrect: false
+      explanation: "Incorrect. `TryParse()` returns a `bool`"
+    - content: "`bool`"
+      isCorrect: true
+      explanation: "Correct. `TryParse()` returns a `bool`"
+    - content: "`out`"
+      isCorrect: false
+      explanation: "Incorrect. `TryParse()` returns a `bool`. `out` is a parameter used in `TryParse()` for signifying the output variable to use."
