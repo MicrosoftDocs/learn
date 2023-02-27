@@ -3,7 +3,7 @@ uid: learn.wwl.configure-network-watcher
 metadata:
   title: Configure Azure Network Watcher
   description: "Learn how to configure Azure Network Watcher and troubleshoot common networking problems."
-  ms.date: 02/24/2023
+  ms.date: 02/27/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial

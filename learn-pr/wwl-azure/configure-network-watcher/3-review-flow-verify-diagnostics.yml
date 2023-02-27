@@ -4,7 +4,7 @@ title: Review IP flow verify diagnostics
 metadata:
   title: Review IP flow verify diagnostics
   description: "Configure diagnostics with the IP flow verify feature in Azure Network Watcher."
-  ms.date: 02/24/2023
+  ms.date: 02/27/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
