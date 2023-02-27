@@ -44,7 +44,7 @@ The function `sendTelemetry` sends telemetry in the format that the device model
 
 ### Properties
 
-The model specifies the property names and data types to synchronize property values between the device and IoT Central via the device twin. The function `sendDeviceProperties` sends the `warrantyState` of the device and the function `handleSettings` handle `OptimalTemperature` changes that come from IoT Central.
+The model specifies the property names and data types to synchronize property values between the device and IoT Central via the device twin. The function `sendDeviceProperties` sends the `warrantyState` of the device and the function `handleSettings` handles `OptimalTemperature` changes that come from IoT Central.
 
 <!-- TODO: reference code to sendDeviceProperties and handleSettings functions -->
 

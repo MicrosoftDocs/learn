@@ -246,7 +246,6 @@ provisioningClient.register((err, result) => {
         console.log('Registration succeeded');
         console.log('Assigned hub=' + result.assignedHub);
         console.log('DeviceId=' + result.deviceId);
-        console.log('Payload=' + JSON.stringify(result.payload));
         var connectionString = 'HostName=' + result.assignedHub + ';DeviceId=' + result.deviceId + ';SharedAccessKey=' + symmetricKey;
         centralClient = Client.fromConnectionString(connectionString, iotHubTransport);
         
