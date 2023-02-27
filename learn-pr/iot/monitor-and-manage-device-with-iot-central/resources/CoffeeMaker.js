@@ -31,6 +31,7 @@ function niceNumber(value) {
     return number.substr(0, 2) + '.' + number.substr(2, 1);
 }
 
+// <Telemetry>
 // Send device simulated telemetry measurements
 function sendTelemetry() {
     // Simulate the telemetry values
@@ -88,7 +89,9 @@ function sendTelemetry() {
         }
     });
 }
+// </Telemetry>
 
+// <Properties>
 // Send device properties
 function sendDeviceProperties(deviceTwin) {
     var properties =
@@ -142,7 +145,9 @@ function handleSettings(deviceTwin) {
         }
     });
 }
+// </Properties>
 
+// <Commands>
 // Maintenance mode command
 function onCommandMaintenance(request, response) {
     // Display console info
@@ -197,7 +202,10 @@ function onCommandStartBrewing(request, response) {
         }
     });
 }
+// </Commands>
 
+
+// <ConnectCallback>
 // Handle device connection to Azure IoT Central
 var connectCallback = (errorMessage) => {
     // Connection error
@@ -236,6 +244,7 @@ var connectCallback = (errorMessage) => {
         });
     }
 };
+// </ConnectCallback>
 
 // <ProvisioningClient>
 // Start the device (register and connect to Azure IoT Central).
