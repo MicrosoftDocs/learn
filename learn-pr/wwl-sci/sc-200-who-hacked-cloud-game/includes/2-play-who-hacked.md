@@ -1,7 +1,7 @@
 
-<!--- Removing image for now
+## Play Episode One
+
 :::image type="content" source="../media/playing-the-game.png" alt-text="Images of a security professional and the Who Hacked? game leads.":::
---->
 
 Best for You Organics has been hacked!
 You're tasked with assisting the CIO in investigating the source of a confidential leaked file.
