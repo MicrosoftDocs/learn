@@ -10,7 +10,7 @@ Python code runs in the context of a *virtual environment* that defines the vers
 
 To improve portability, you usually create environments in Docker containers that are in turn hosted on compute targets, such as your development computer, virtual machines, or clusters in the cloud.
 
-:::image type="content" source="../media/05-compute-contexts.png" alt-text="Diagram of environments, in containers, in compute targets":::
+:::image type="content" source="../media/05-compute-contexts.png" alt-text="Diagram of environments, in containers, in compute targets.":::
 
 Azure Machine Learning builds environment definitions into Docker images and conda environments. When you use an environment, Azure Machine Learning builds the environment on the **Azure Container registry** associated with the workspace. 
 
