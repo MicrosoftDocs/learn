@@ -1,3 +1,4 @@
+
 Log Analytics in Azure Monitor supports the Kusto Query Language (KQL). The KQL syntax helps you quickly and easily create simple or complex queries to retrieve and consolidate your monitoring data in the repository. 
 
 ## Write KQL log queries for Azure Monitor
