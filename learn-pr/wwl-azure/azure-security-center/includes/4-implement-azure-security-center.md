@@ -3,7 +3,7 @@ Microsoft Defender for Cloud is a **Cloud Security Posture Management (CSPM)** a
 
 For an interactive overview of how to Manage your cloud security posture with Microsoft Defender for Cloud, click on the image below.<br>
 
-[:::image type="content" source="../media/manage-your-cloud-security-posture-with-microsoft-defender-for-cloud-landing-page-c30d6581.png" alt-text="Screenshot of the interactive guide landing page for Manage your cloud security posture with Microsoft Defender for Cloud.":::
+[:::image type="content" source="../media/manage-cloud-security-posture-microsoft-defender-cloud-landing-page-8605516a.png" alt-text="Screenshot of the interactive guide landing page for Manage your cloud security posture with Microsoft Defender for Cloud.":::
 ](https://mslearn.cloudguides.com/guides/Manage%20your%20cloud%20security%20posture%20with%20Microsoft%20Defender%20for%20Cloud)
 
 Microsoft Defender for Cloud is a **Cloud Security Posture Management (CSPM)** and **Cloud Workload Protection Platform (CWPP)** for all of your Azure, on-premises, and multi-cloud (Amazon AWS and Google GCP) resources. Defender for Cloud fills **three vital needs** as you manage the security of your resources and workloads in the cloud and on-premises:<br>

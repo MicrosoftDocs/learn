@@ -7,7 +7,7 @@ Defender for Cloud makes its security recommendations based on your chosen initi
 
 ### Example: Microsoft Defender for Cloud - All recommendations
 
-:::image type="content" source="../media/microsoft-defender-for-cloud-all-recommendations-page-in-the-azure-dashboard-d8a9e077.png" alt-text="Microsoft Defender for Cloud All recommendations page in the Azure dashboard.":::
+:::image type="content" source="../media/microsoft-defender-cloud-all-recommendations-page-azure-dashboard-dabf23fd.png" alt-text="Microsoft Defender for Cloud All recommendations page in the Azure dashboard.":::
 
 
 **Recommendations** are actions for you to take to secure and harden your resources. Each recommendation provides you with the following information:

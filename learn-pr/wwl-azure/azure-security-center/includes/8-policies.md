@@ -13,7 +13,7 @@ There are different types of policies in Azure Policy. Defender for Cloud mainly
 
 ### Example: Built-in security policy
 
-:::image type="content" source="../media/microsoft-defender-for-cloud-assign-policy-vms-basic-policy-definition-7a271105.png" alt-text="Screenshot showing Microsoft Defender for Cloud Assign Policy for VMs Policy Definition.":::
+:::image type="content" source="../media/microsoft-defender-cloud-assign-policy-vms-basic-policy-definition-66b7f423.png" alt-text="Screenshot showing Microsoft Defender for Cloud Assign Policy for VMs Policy Definition.":::
 
 
 ## What is a security initiative?
@@ -34,4 +34,4 @@ Defender for Cloud offers the following options for working with security initia
 
 ### Example: Builtin security initiative
 
-:::image type="content" source="../media/microsoft-defender-for-cloud-cis-initiative-definition-microsoft-azure-foundations-benchmark-v140-regulatory-compliance-4289e289.png" alt-text="Screenshot showing Center for Internet Security Controls and Microsoft  Azure Foundations Benchmark Initiatve  definition page in the Azure dashboard.":::
+:::image type="content" source="../media/cis-initiative-definition-microsoft-azure-foundations-benchmark-c5dcc77a.png" alt-text="Screenshot showing Center for Internet Security Controls and Microsoft  Azure Foundations Benchmark Initiatve  definition page in the Azure dashboard.":::
