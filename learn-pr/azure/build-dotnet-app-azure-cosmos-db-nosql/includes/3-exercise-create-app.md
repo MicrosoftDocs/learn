@@ -1,10 +1,10 @@
 As the first step to creating your project's application, you need to create a .NET project. Recall that the .NET project should use the **Microsoft.Azure.Cosmos** SDK to connect to the account you have already created. There are three key requirements at this time:
 
-01. Create a .NET project
-01. Add a package reference to the SDK
-01. Connect using the client classes
+- Create a .NET project
+- Add a package reference to the SDK
+- Connect using the client classes
 
-:::image type="content" source="../media/project-visual-app.svg" alt-text="Illustration of icons of an Azure Cosmos DB account and .NET application." lightbox="../media/project-visual-app.svg" border="false":::
+:::image type="content" source="../media/project-visual-app.svg" alt-text="Illustration of icons of an Azure Cosmos DB account and .NET application." border="false":::
 
 After you complete this exercise, you'll have a simple .NET application that successfully connects to your API for NoSQL account, but doesn't perform any operations yet.
 

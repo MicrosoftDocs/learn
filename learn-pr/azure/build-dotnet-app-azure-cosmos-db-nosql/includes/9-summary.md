@@ -2,7 +2,7 @@ Your developer team needed a .NET application that connects to Azure Cosmos DB f
 
 While there's a REST API for Azure Cosmos DB, developing using the REST API can be challenging for a team that's new to use the platform. Additionally, your application would need to implement a series of common best practices including fault handling logic, retry strategies, and even logic to convert C# expressions to valid API for NoSQL queries.
 
-:::image type="content" source="../media/project-visual.svg" alt-text="Illustration of icons indicating data being uploaded to the cloud and then queried using common search techniques." lightbox="../media/project-visual.svg" border="false":::
+:::image type="content" source="../media/project-visual.svg" alt-text="Illustration of icons indicating data being uploaded to the cloud and then queried using common search techniques." border="false":::
 
 You authored an application that used the .NET SDK for Azure Cosmos DB. The application created and managed databases, containers, and items. Your application also used the query language and LINQ method syntax to perform queries on items in Azure Cosmos DB.
 

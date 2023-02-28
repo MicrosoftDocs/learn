@@ -5,7 +5,7 @@ There are two key requirements at this time:
 01. Build a new query using LINQ syntax
 01. Convert the query to a feed iterator to get results
 
-:::image type="content" source="../media/project-visual-query-linq.svg" alt-text="Illustration of icons indicating data being queried using a LINQ expression." lightbox="../media/project-visual-query-linq.svg" border="false":::
+:::image type="content" source="../media/project-visual-query-linq.svg" alt-text="Illustration of icons indicating data being queried using a LINQ expression." border="false":::
 
 After you complete this exercise, your queries will now use the LINQ syntax to make it easier for developers to maintain your application moving forward.
 

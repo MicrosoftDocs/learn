@@ -5,7 +5,7 @@ Right now, you have a few key requirements:
 01. Create a database if it doesn't already exist
 01. Create a container if it doesn't already exist
 
-:::image type="content" source="../media/project-visual-resources.svg" alt-text="Illustration of icons indicating Azure Cosmos DB resources are created in the cloud." lightbox="../media/project-visual-resources.svg" border="false":::
+:::image type="content" source="../media/project-visual-resources.svg" alt-text="Illustration of icons indicating Azure Cosmos DB resources are created in the cloud." border="false":::
 
 After you complete this exercise, your project will create any databases, or containers it requires to execute.
 

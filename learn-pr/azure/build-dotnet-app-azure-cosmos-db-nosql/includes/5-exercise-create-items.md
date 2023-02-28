@@ -8,7 +8,7 @@ Right now, you have two key requirements:
 01. Create an item individually as a single operation
 01. Use a transactional batch to create multiple related items
 
-:::image type="content" source="../media/project-visual-upload.svg" alt-text="Illustration of icons indicating data being uploaded to the cloud." lightbox="../media/project-visual-upload.svg" border="false":::
+:::image type="content" source="../media/project-visual-upload.svg" alt-text="Illustration of icons indicating data being uploaded to the cloud." border="false":::
 
 After you complete this exercise, your project will have the logic to create items in your container either individually, or as a batch.
 

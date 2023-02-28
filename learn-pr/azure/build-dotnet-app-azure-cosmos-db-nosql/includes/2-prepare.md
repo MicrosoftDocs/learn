@@ -1,6 +1,6 @@
 You're building a .NET application that imports and queries data in an Azure Cosmos DB for NoSQL container. Here, we discuss the overall goals of the project and how you implement the import and query functionality. Additionally, we cover how to set up the API for NoSQL account that you need.
 
-:::image type="content" source="../media/project-visual-account.svg" alt-text="Illustration of the icon of an Azure Cosmos DB account." lightbox="../media/project-visual-account.svg" border="false":::
+:::image type="content" source="../media/project-visual-account.svg" alt-text="Illustration of the icon of an Azure Cosmos DB account." border="false":::
 
 ## Project overview
 
@@ -8,7 +8,9 @@ This project's goal is to build and validate a .NET console application that upl
 
 The following flowchart shows the business logic the app needs to perform:
 
-:::image type="content" source="../media/diagram-flowchart.png" alt-text="Diagram of a flowchart showing steps to authenticate the client. The flowchart then shows a batch creation step that combines the creation of four individual items. Finally, the flow chart shows the sequence to create, execute, and observe the results of a query." lightbox="../media/diagram-flowchart.png" border="false":::
+:::image type="complex" source="../media/diagram-flowchart.png" alt-text="Diagram of a flowchart showing steps to create and submit client batches." lightbox="../media/diagram-flowchart.png" border="false":::
+Diagram of a flowchart showing steps to authenticate the client. The flowchart then shows a batch creation step that combines the creation of four individual items. Finally, the flow chart shows the sequence to create, execute, and observe the results of a query.
+:::image-end:::
 
 The key tasks you need to do are:
 

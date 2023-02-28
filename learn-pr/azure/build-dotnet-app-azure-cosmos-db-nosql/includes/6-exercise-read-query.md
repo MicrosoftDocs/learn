@@ -6,7 +6,7 @@ There are three key requirements at this time:
 01. Create a query using a simple query string
 01. Paginate the results of the query using a feed iterator
 
-:::image type="content" source="../media/project-visual-query.svg" alt-text="Illustration of icons indicating data being queried using a query." lightbox="../media/project-visual-query.svg" border="false":::
+:::image type="content" source="../media/project-visual-query.svg" alt-text="Illustration of icons indicating data being queried using a query." border="false":::
 
 After you complete this exercise, your application will almost be ready. You have queries that can read the category and product items you previously created.
 

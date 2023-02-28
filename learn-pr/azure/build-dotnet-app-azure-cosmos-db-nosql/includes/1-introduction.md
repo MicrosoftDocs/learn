@@ -4,7 +4,7 @@ The .NET SDK for the Azure Cosmos DB for NoSQL enables client applications to co
 
 Suppose you're a developer at a sporting goods retail company. You're working on software to import new inventory into your database. Your application adds multiple items using the .NET SDK for Azure Cosmos DB for NoSQL. After you import your data, the application will run a query, and display the results so you can validate the correct items were added.
 
-:::image type="content" source="../media/project-visual.svg" alt-text="Illustration of icons indicating data being uploaded to the cloud and then queried using common search techniques." lightbox="../media/project-visual.svg" border="false":::
+:::image type="content" source="../media/project-visual.svg" alt-text="Illustration of icons indicating data being uploaded to the cloud and then queried using common search techniques." border="false":::
 
 ## What are we doing?
 
