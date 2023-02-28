@@ -28,7 +28,7 @@ quiz:
     choices:
     - content: "A learning behavior that helps warm-start a Personalizer model to train without impacting the application's outcomes and actions."
       isCorrect: true
-      explanation: "Correct. Apprentice mode helps to mitigate the cold-tart problem with a new untrained model. It allows you to validate the action and context features that are sent to Personalizer."
+      explanation: "Correct. Apprentice mode helps to mitigate the cold-start problem with a new untrained model. It allows you to validate the action and context features that are sent to Personalizer."
     - content: "Setting up a staging environment to help train the model before pushing to release."
       isCorrect: false
       explanation: "Incorrect. Apprentice mode isn't concerned with staging environments for model training."

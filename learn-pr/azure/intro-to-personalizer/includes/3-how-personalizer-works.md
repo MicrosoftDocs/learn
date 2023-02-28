@@ -7,21 +7,21 @@ To explore reinforcement learning further, consider an interaction with a web si
 1. The Personalizer service returns a *rank* response, which results in a set of products that's displayed to the user.
 1. When the user selects an item (action), it generates a reward score that's passed to the **Reward** API. Personalizer uses this information to train the model for future actions.
 
-Personalizer uses this model to *learn* how to map the appropriate item to display, based on users' actions to that item. The learning is realized when the reward score is highest. In other words, if a user is currently viewing hiking shoes on a web site, Personalizer might also display a suggestion for hiking socks and shoe laces. If users choose the socks item but not the laces item, the reward scores will be different for those items, leading to the socks item having a higher reward score.
+Personalizer uses this model to *learn* how to map the appropriate item to display, based on a user's actions to that item. The learning is realized when the reward score is highest. In other words, if a user is currently viewing hiking shoes on a web site, Personalizer might also display a suggestion for hiking socks and shoe laces. If users choose the socks item but not the laces item, the socks item will have a higher reward score.
 
 ## Terminology
 
 Consider the following terms:
 
-- Learning loop - a Personalizer resource created for each part of your application.
-- Model - the unit that captures all data learned about user behavior, getting training data from the combination of the arguments you send to **Rank** and **Reward** calls, and with a training behavior determined by the Learning Policy.
+- *Learning loop* - a Personalizer resource created for each part of your application.
+- *Model* - the unit that captures all data learned about user behavior, getting training data from the combination of the arguments you send to **Rank** and **Reward** calls, and with a training behavior determined by the Learning Policy.
 
 ## Modes
 
 Personalizer has two primary modes:
 
-- Online mode - The default learning behavior for Personalizer, where your learning loop uses machine learning to build the model that predicts the top action for your content.
-- Apprentice mode - A learning behavior that helps warm-start a Personalizer model to train without impacting the applications outcomes and actions.
+- **Online mode** - The default learning behavior for Personalizer, where your learning loop uses machine learning to build the model that predicts the top action for your content.
+- **Apprentice mode** - A learning behavior that helps warm-start a Personalizer model to train without impacting the applications outcomes and actions.
 
 ## Selecting the best item
 
