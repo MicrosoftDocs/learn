@@ -5,7 +5,7 @@ metadata:
   unitType: exercise
   title: Exercise - Configure the service provider
   description: "Configure the application properties for single sign-on at the service provider."
-  ms.date: 3/24/2023
+  ms.date: 2/15/2023
   author: davidmu1
   ms.author: davidmu
   ms.topic: interactive-tutorial
