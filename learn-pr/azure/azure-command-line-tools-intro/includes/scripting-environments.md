@@ -63,5 +63,5 @@ uses the backtick `` ` ``. The differences in the shell environments don't chang
 and Azure PowerShell operate. However, they do change your command-line experience.
 
 <!-- link references -->
-[1]: ../media/shared/check-mark-button_2705.svg
-[3]: ../media/shared/cross-mark_274c.svg
+[1]: ../media/shared/check-mark-button-2705.svg
+[3]: ../media/shared/cross-mark-274c.svg
