@@ -26,16 +26,16 @@ quiz:
       explanation: ""      
   - content: "What are protected apps?"
     choices:
-    - content: "Protected apps are all apps that end users may be using on their device that are managed by a mobile device management (MDM) service."
+    - content: "Protected apps are all apps that end users may be using on their device that is managed by a mobile device management (MDM) service."
       isCorrect: false
       explanation: "Protected apps incorporate special mobile app management capabilities using the Intune App Software Development Kit (SDK) or the App Wrapping Tool for either iOS or Android. Microsoft documentation lists the most commonly available protected apps."
     - content: "Protected apps incorporate special mobile app management capabilities using the Intune App Software Development Kit (SDK) or the App Wrapping Tool for either iOS or Android."
       isCorrect: true
       explanation: ""
-    - content: "Protected apps are the apps that can be run on an end user's device that are managed by a mobile device management (MDM) service."
+    - content: "Protected apps are the apps that can be run on an end user's device that is managed by a mobile device management (MDM) service."
       isCorrect: false
       explanation: "Protected apps incorporate special mobile app management capabilities using the Intune App Software Development Kit (SDK) or the App Wrapping Tool for either iOS or Android."  
-  - content: "Can app protection policies be deployed on devices that are not enrolled in any MDM service?"
+  - content: "Can app protection policies be deployed on devices that aren't enrolled in any MDM service?"
     choices:
     - content: "Yes. Your organization can use app protection policies as part of application management with and without using a mobile device management (MDM) service."
       isCorrect: true
