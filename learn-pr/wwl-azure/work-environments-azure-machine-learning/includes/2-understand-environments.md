@@ -1,6 +1,6 @@
 
 
-In an enterprise machine learning solution, where experiments may be run in various compute contexts, it can be important to be aware of the environments in which your experiment code is running. yOU CAN USE Azure Machine Learning **environments** to create environments and specify runtime configuration for an experiment.
+In an enterprise machine learning solution, where experiments may be run in various compute contexts, it can be important to be aware of the environments in which your experiment code is running. You can use Azure Machine Learning **environments** to create environments and specify runtime configuration for an experiment.
 
 When you create an Azure Machine Learning workspace, **curated** environments are automatically created and made available to you. Alternatively, you can create and manage your own **custom** environments and register them in the workspace. Creating and registering custom environments makes it possible to define consistent, reusable runtime contexts for your experiments - regardless of where the experiment script is run.
 
