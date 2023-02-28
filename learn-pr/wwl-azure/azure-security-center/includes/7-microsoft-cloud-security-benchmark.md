@@ -22,7 +22,7 @@ The **Microsoft cloud security benchmark (MCSB)** provides prescriptive best pra
 :::image type="content" source="../media/microsoft-cloud-security-benchmark-regulatory-compliance-0bc0ce96.png" alt-text="Screenshot showing the Microsoft cloud security benchmark regulatory compliance page in the Azure dashboard.":::
 
 
-**Azure guidance and security principles**: Azure security guidance, security principles, features, and capabilities.<br>
+**Azure guidance and security principles**: Azure security guidance, security principles, features, and capabilities.
 
 ## Controls
 
