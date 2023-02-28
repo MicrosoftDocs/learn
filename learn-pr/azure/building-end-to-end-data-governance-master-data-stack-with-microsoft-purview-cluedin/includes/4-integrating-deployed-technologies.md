@@ -80,7 +80,7 @@ Once again, if we look at Lorain, we can see that this time her email ends with 
 
     :::image type="content" source="../media/register-adls-gen2-access-control.png" alt-text="Screenshot that shows the access control for the storage account":::
 
-1. Set the **Role** to **Storage Blob Data Reader** and enter your _Microsoft Purview account name_ or _[user-assigned managed identity](manage-credentials.md#create-a-user-assigned-managed-identity)_ under the **Select** input box. Then, select **Save** to give this role assignment to your Microsoft Purview account.
+1. Set the **Role** to **Storage Blob Data Reader** and enter your _Microsoft Purview account name_ under the **Select** input box. Then, select **Save** to give this role assignment to your Microsoft Purview account.
 
     :::image type="content" source="../media/register-adls-gen2-assign-permissions.png" alt-text="Screenshot that shows the details to assign permissions for the Microsoft Purview account":::
 
@@ -155,7 +155,7 @@ Once again, if we look at Lorain, we can see that this time her email ends with 
 
 1. In your CluedIn Studio, go to **Settings** section, under **Administration**. Fill in your Microsoft Purview name into the Base URL, and provide the Client ID and Client Secret from the Service Principal you created earlier.
 
-    :::image type="content" source="../media/Purview_CluedIn_Settings.png" alt-text="Screenshot of the CluedIn home screen page.":::
+    :::image type="content" source="../media/Purview_CluedIn_Settings.png" alt-text="Screenshot of the CluedIn Administration page.":::
 
 1. Toggle on the setting for **Syncing Microsoft Purview Datasources** and **Poll Microsoft Purview Datasources**. This will integrate the data sources from Microsoft Purview with CluedIn.
 
@@ -201,4 +201,4 @@ Next, we'll provide CluedIn with the credentials of our Azure Data Factory so Cl
 
 ## Congratulations!
 
-Great work! We've integrated all the pieces of our data technology stack! Give yourself a pat on the back before moving on to the next section.
+Great work! We've integrated all the pieces of our data technology stack! Give yourself a pat on the back before moving on to the next section. This is the most difficult part-- everything else is just using the tools we've put in place.

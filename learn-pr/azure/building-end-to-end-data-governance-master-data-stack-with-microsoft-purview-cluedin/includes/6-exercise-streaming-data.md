@@ -20,7 +20,7 @@ So let's set up our stream of data back into an ADLS Gen2 folder called **master
 
 1. Enter the account details, including the storage account key you copied earlier.
 
-    :::image type="content" source="../media/Export_Target_Details.png" alt-text="Screenshot of the CluedIn Consume window, showing the Azure Data Lake Connector selected.":::
+    :::image type="content" source="../media/Export_Target_Details.png" alt-text="Screenshot of the CluedIn Consume window, showing the Azure Data Lake details added.":::
 
 1. After you've entered your connection information, select **Test Connection**. If you get a green light, you can move on! If not, check your firewall settings and account key value for your ADLS Gen2 account.
 

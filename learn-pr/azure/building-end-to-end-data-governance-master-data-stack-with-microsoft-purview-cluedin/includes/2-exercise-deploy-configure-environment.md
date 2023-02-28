@@ -35,8 +35,6 @@ You'll need to bring your own Microsoft Purview instance to the learning module,
     >[!TIP]
     > The list shows only locations that support the Microsoft Purview governance portal. The location you choose will be the region where your Microsoft Purview account and meta data will be stored. Sources can be housed in other regions.
 
-    To learn more about resource groups, see our article on [using resource groups to manage your Azure resources](../azure-resource-manager/management/manage-resource-groups-portal.md#what-is-a-resource-group).
-
 1. Select **Review & Create**, and then select **Create**.
 
 ## Create a service principal
@@ -94,11 +92,11 @@ Once the new service principal is created, or if you're bringing your own, you n
     * Collection Admin role to access Account Data Plane and Metadata policy Data Plane.
 
     > [!Note]
-    > Only members of the Collection Admin role can assign data plane roles in Microsoft Purview. For more information about Microsoft Purview roles, see [Access Control in Microsoft Purview](./catalog-permissions.md).
+    > Only members of the Collection Admin role can assign data plane roles in Microsoft Purview.
 
 ## Create a CluedIn instance
 
-You can also install CluedIn directly through the Azure Marketplace or Azure portal. You'll need to make sure that you check and validate that you have all the prerequisites for installing the trial, available here: https://documentation.cluedin.net/deployment/azure-marketplace/preflight. 
+You can also install CluedIn directly through the Azure Marketplace or Azure portal. You'll need to make sure that you check and validate that you have all the prerequisites for installing the trial, available here: https://documentation.cluedin.net/deployment/azure-marketplace/preflight.
 
 To install CluedIn, go to the Azure portal and follow the steps below:
 
