@@ -4,9 +4,9 @@ In this unit, you'll learn about branching strategies and how to protect the mai
 
 ## Why do you want to protect the main branch?
 
-The main branch is the source of truth for what gets deployed to your Azure environments. For many solutions, you'll have multiple environments, such as *development*, *quality assurance (QA)*, and *production*. In other scenarios, you might have only a production environment. Regardless of how many environments you use, the main branch is the branch that your team members contribute to. Their changes ultimately land on the main branch.
+The main branch is the source of truth for what gets deployed to your Azure environments. For many solutions, you'll have multiple environments, such as _development_, _quality assurance (QA)_, and _production_. In other scenarios, you might have only a production environment. Regardless of how many environments you use, the main branch is the branch that your team members contribute to. Their changes ultimately land on the main branch.
 
-A typical process might be the following: 
+A typical process might be the following:
 
 1. A team member clones your shared repository.
 1. They make local changes on a branch in their own local copy of the repository.
@@ -29,9 +29,9 @@ A better way of working is to keep your changes separate while you work on them.
 
 ## Feature branches
 
-A *feature branch* indicates a new piece of work you're starting. The work might be a change to the configuration of a resource defined in your Bicep file, or a new set of resources that you need to deploy. Every time you start a new piece of work, you create a new feature branch.
+A _feature branch_ indicates a new piece of work you're starting. The work might be a change to the configuration of a resource defined in your Bicep file, or a new set of resources that you need to deploy. Every time you start a new piece of work, you create a new feature branch.
 
-You create a feature branch from the main branch. By doing this, you ensure that you're starting from the current state of your Azure environment. Then, you make all your necessary changes. 
+You create a feature branch from the main branch. By doing this, you ensure that you're starting from the current state of your Azure environment. Then, you make all your necessary changes.
 
 Because all of the code changes are committed to the feature branch, they won't interfere with the main branch of the repository. If somebody else on your team needs to make an urgent change to the main branch, they can do that on another feature branch that's independent of yours.
 
@@ -61,7 +61,8 @@ When you work in this way, it can be helpful to use the `if` keyword to disable 
 You can use parameters to specify different values for the `storageAccountReady` variable in different environments. For example, you might set the parameter value to `true` for your test environment and `false` for your production environment. That way, you can try out the new storage account in your test environment.
 
 > [!NOTE]
-> When it's time to enable the feature in production, remember that you need to take both of the following steps for your change to take effect:
+> When it's time to enable the feature in production, remember that you need to take the following steps for your change to take effect:
+>
 > 1. Change the parameter value.
 > 1. Redeploy your Bicep file.
 
@@ -73,7 +74,7 @@ When you've finished working on a feature branch, you need to merge it into your
 
 ### Branch protections
 
-In GitHub, you can configure *branch protections* for the shared repository's main branch. Branch protections enforce rules like:
+In GitHub, you can configure _branch protections_ for the shared repository's main branch. Branch protections enforce rules like:
 
 - No change can be merged into the main branch except through a pull request.
 - Changes need to be reviewed by at least two other people.
@@ -86,7 +87,7 @@ If somebody tries to push a commit directly to a protected branch, the push will
 
 ### Branch policies
 
-In Azure DevOps, you can configure *branch policies* for the shared repository's main branch. Branch policies enforce rules like:
+In Azure DevOps, you can configure _branch policies_ for the shared repository's main branch. Branch policies enforce rules like:
 
 - No change can be merged into the main branch except through a pull request.
 - Changes need to be reviewed by at least two other people.
@@ -99,13 +100,13 @@ If somebody tries to push a commit directly to a protected branch, the push will
 
 When you collaborate on your Bicep code, you can use various branching strategies. Each branching strategy has benefits and drawbacks.
 
-The process you've learned about so far is a version of the *trunk-based development* strategy. In this branching strategy, work is done on short-lived feature branches and is then merged into a single main branch. You might automatically deploy the contents of the shared repository's main branch to production every time a change is merged. Or, you might batch changes and release them on a schedule, like every week. Trunk-based development is easy to understand, and it enables collaboration without much overhead.
+The process you've learned about so far is a version of the _trunk-based development_ strategy. In this branching strategy, work is done on short-lived feature branches and is then merged into a single main branch. You might automatically deploy the contents of the shared repository's main branch to production every time a change is merged. Or, you might batch changes and release them on a schedule, like every week. Trunk-based development is easy to understand, and it enables collaboration without much overhead.
 
-Some teams separate the work that they've completed from the work that they've deployed to production. They use a long-lived *development* branch as the target for merging their feature branches. They merge the *development* branch into their *main* branch when they release changes to production.
+Some teams separate the work that they've completed from the work that they've deployed to production. They use a long-lived _development_ branch as the target for merging their feature branches. They merge the _development_ branch into their _main_ branch when they release changes to production.
 
-Some other branching strategies require you to create *release branches*. When you have a set of changes ready to deploy to production, you create a release branch with the changes to deploy. These strategies can make sense when you deploy your Azure infrastructure on a regular cadence, or when you're integrating your changes with many other teams.
+Some other branching strategies require you to create _release branches_. When you have a set of changes ready to deploy to production, you create a release branch with the changes to deploy. These strategies can make sense when you deploy your Azure infrastructure on a regular cadence, or when you're integrating your changes with many other teams.
 
-Other branching strategies include Gitflow, GitHub Flow, and GitLab Flow. Some teams use GitHub Flow or GitLab Flow because it enables separating work from different teams, along with separating urgent bug fixes from other changes. These processes can also enable you to separate your commits into different releases of your solution, which is called *cherry picking*. However, they require more management to ensure that your changes are compatible with each other. The summary of this module provides links to more information on these branching strategies.
+Other branching strategies include Gitflow, GitHub Flow, and GitLab Flow. Some teams use GitHub Flow or GitLab Flow because it enables separating work from different teams, along with separating urgent bug fixes from other changes. These processes can also enable you to separate your commits into different releases of your solution, which is called _cherry picking_. However, they require more management to ensure that your changes are compatible with each other. The summary of this module provides links to more information on these branching strategies.
 
 The branching strategy that's right for your team depends on the way your team works, collaborates, and releases your changes. It's a good idea to start from a simple process, like trunk-based development. If you find that your team can't work effectively by using this process, gradually introduce additional layers of branching, or adopt a branching strategy. But be aware that as you add more branches, managing your repository will become more complex.
 

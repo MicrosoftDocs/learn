@@ -1,8 +1,9 @@
 You've completed the work to add a queue to your website. Now, the website development team is ready for you to merge the changes to your main branch. In this exercise, you'll create and merge a pull request for your changes.
 
-During the process, you'll: 
+During the process, you'll:
 
 > [!div class="checklist"]
+>
 > * Create a pull request.
 > * Review the pull request.
 > * Complete the pull request.
@@ -40,7 +41,7 @@ Because you can't push changes directly to your repository's main branch, you ne
 
 1. In your browser, go to **Repos** > **Files**.
 
-   Notice that Azure DevOps shows a banner that indicates there are changes in the *add-orders-queue* branch. The banner offers to create a pull request for those changes.
+   Notice that Azure DevOps shows a banner that indicates there are changes in the _add-orders-queue_ branch. The banner offers to create a pull request for those changes.
 
    :::image type="content" source="../media/5-repos-new-pull-request.png" alt-text="Screenshot of Azure DevOps that shows the repository's file list, including a banner that offers to create a pull request.":::
 
@@ -73,7 +74,7 @@ Normally, a pull request is reviewed by someone other than its author. For this 
    > [!TIP]
    > Imagine that you're reviewing this for your own team. Would you make any suggestions?
 
-1. In the *main.bicep* file that was changed, hover over line 18 and select the button with the plus sign (**+**).
+1. In the _main.bicep_ file that was changed, hover over line 18 and select the button with the plus sign (**+**).
 
    :::image type="content" source="../media/5-github-pull-request-review-line.png" alt-text="Screenshot of GitHub that shows changes to the main dot bicep file. The mouse is hovering over line 18, and the button for adding comments is highlighted.":::
 
@@ -107,7 +108,7 @@ Normally, a pull request is reviewed by someone other than its author. For this 
    > [!TIP]
    > Imagine that you're reviewing this for your own team. Would you make any suggestions?
 
-1. In the *main.bicep* file that was changed, hover over line 18 and select the comment button.
+1. In the _main.bicep_ file that was changed, hover over line 18 and select the comment button.
 
    :::image type="content" source="../media/5-repos-pull-request-review-line.png" alt-text="Screenshot of Azure DevOps that shows changes to the main dot bicep file. The mouse is hovering over line 18, and the button for adding a comment is highlighted.":::
 
@@ -207,7 +208,7 @@ Because this is your first time merging a pull request, it's a good idea to conf
 
 1. Go to **Code**.
 
-1. Go to the *deploy/main.bicep* file, and then to the *deploy/modules/appService.bicep* file.
+1. Go to the _deploy/main.bicep_ file, and then to the _deploy/modules/appService.bicep_ file.
 
    :::image type="content" source="../media/5-github-code-final.png" alt-text="Screenshot of GitHub that shows the repository's file list after the pull request is merged.":::
 
@@ -219,7 +220,7 @@ Because this is your first time merging a pull request, it's a good idea to conf
 
 1. Go to **Repos** > **Files**.
 
-1. Go to the *deploy/main.bicep* file, and then to the *deploy/modules/appService.bicep* file.
+1. Go to the _deploy/main.bicep_ file, and then to the _deploy/modules/appService.bicep_ file.
 
    Notice that the queue and your other changes are now in the files.
 
