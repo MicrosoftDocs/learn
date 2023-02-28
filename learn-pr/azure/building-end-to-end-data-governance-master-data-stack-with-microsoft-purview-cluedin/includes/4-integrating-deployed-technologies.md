@@ -4,7 +4,15 @@ At this point, you should have all resources running and operational as individu
 
 ## Investigating the data
 
-Download the following zip file [CluedIn.zip](ungodly zip file from the downloads center) and extract it to your local drive. You'll find seven files representing different sample datasets across common Master Data domains. 
+Download the following files it to your local drive. You'll find seven files representing different sample datasets across common Master Data domains:
+
+* [Companies.csv](https://download.microsoft.com/download/9/e/1/9e119d5d-9e2a-433c-a853-1cee0cfd1664/data/Arca/Companies.csv)
+* [Contacts.csv](https://download.microsoft.com/download/9/e/1/9e119d5d-9e2a-433c-a853-1cee0cfd1664/data/Experian/Contacts.csv)
+* [ContactsAddLater.csv](https://download.microsoft.com/download/9/e/1/9e119d5d-9e2a-433c-a853-1cee0cfd1664/data/Experian/ContactsAddLater.csv)
+* [Products.csv](https://download.microsoft.com/download/9/e/1/9e119d5d-9e2a-433c-a853-1cee0cfd1664/data/Navision/Products.csv)
+* [Employees.csv](https://download.microsoft.com/download/9/e/1/9e119d5d-9e2a-433c-a853-1cee0cfd1664/data/Salesforce/Employees.csv)
+* [Persons.csv](https://download.microsoft.com/download/9/e/1/9e119d5d-9e2a-433c-a853-1cee0cfd1664/data/Xero/Persons.csv)
+* [YellowSystems/Products.csv](https://download.microsoft.com/download/9/e/1/9e119d5d-9e2a-433c-a853-1cee0cfd1664/data/YellowSystems/Products.csv)
 
 ### Companies.csv
 
