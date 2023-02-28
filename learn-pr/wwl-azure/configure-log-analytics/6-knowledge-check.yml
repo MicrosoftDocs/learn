@@ -4,19 +4,16 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/22/2023
+  ms.date: 02/28/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/6-knowledge-check.md)]
 quiz:
   title: ""
-
   questions:
   - content: "How does Azure Monitor organize log data?"
     choices:
@@ -28,8 +25,7 @@ quiz:
       explanation: "Incorrect. Text files aren't an efficient way to organize log data."
     - content: "Tables"
       isCorrect: true
-      explanation: "Correct. Azure Monitor log data organizes data by using tables."      
-
+      explanation: "Correct. Azure Monitor log data organizes data by using tables."
   - content: "What KQL commands build an aggregation of input data and produce visuals for query results?"
     choices:
     - content: "`summarize` and `render`"
@@ -41,15 +37,14 @@ quiz:
     - content: "`count` and `project`"
       isCorrect: false
       explanation: "Incorrect. The `count` operator shows the number of records in an input record set. The `project` operator selects columns to include, drop, or insert."
-
   - content: "Log Analytics agents can run on which resource?"
-    choices: 
+    choices:
     - content: "Only on cloud computers"
       isCorrect: false
-      explanation: "Incorrect. Log Analytic agents can also run on on-premises computers."      
+      explanation: "Incorrect. Log Analytic agents can also run on on-premises computers."
     - content: "On multiple platforms including other cloud providers"
       isCorrect: true
-      explanation: "Correct. Log Analytics agents can run on many different platforms, including other providers."         
+      explanation: "Correct. Log Analytics agents can run on many different platforms, including other providers."
     - content: "Only on physical computers"
       isCorrect: false
       explanation: "Incorrect. Log Analytic agents can also run on virtual computers."

@@ -1,6 +1,6 @@
 Consider the following pipeline definition and pipeline template:
 
-*azure-pipelines.yml*:
+_azure-pipelines.yml_:
 
 ```yaml
 trigger: none
@@ -19,7 +19,7 @@ stages:
     environmentName: Production
 ```
 
-*deploy.yml*:
+_deploy.yml_:
 
 ```yaml
 parameters:
@@ -47,4 +47,4 @@ stages:
             --parameters deploy/parameters.${{parameters.environmentName}}.json
 ```
 
-The Git repository's *deploy* folder also contains the Bicep file and parameter files.
+The Git repository's _deploy_ folder also contains the Bicep file and parameter files.
