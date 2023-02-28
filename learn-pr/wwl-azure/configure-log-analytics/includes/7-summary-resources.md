@@ -1,3 +1,4 @@
+
 Azure Administrators work with Log Analytics in the Azure portal to run log queries on their data in Azure Monitor logs. Administrators can create Kusto Query Language (KQL) queries to consolidate and analyze their data.
 
 In this module, you identified the features and usage cases for Log Analytics in Azure Monitor. You created a Log Analytics workspace in the Azure portal. You reviewed how to use KQL to structure a Log Analytics query and review the results.
