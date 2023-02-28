@@ -1,4 +1,4 @@
-When you deploy your changes to multiple environments, the steps involved in deploying to each environment are similar or identical. In this unit, you'll learn how to use pipeline templates to avoid repetition and to allow for reuse of your pipeline code.
+When you deploy your changes to multiple environments, the steps involved in deploying to each environment are similar or identical. In this unit, you learn how to use pipeline templates to avoid repetition and to allow for reuse of your pipeline code.
 
 ## Deployment to multiple environments
 
@@ -18,7 +18,7 @@ After talking to your colleagues on the website team, you decide on the followin
 
 1. If any part of the pipeline fails, then the whole pipeline stops so you can investigate and resolve the issue. But if everything succeeds, your pipeline continues to deploy to your production environment:
 
-   1. The pipeline runs a preview stage, which runs the what-if operation on your production environment to list the changes that will be made to your production Azure resources. The preview stage also validates your deployment, so you don't need to run a separate validation stage for your production environment.
+   1. The pipeline runs a preview stage, which runs the what-if operation on your production environment to list the changes that would be made to your production Azure resources. The preview stage also validates your deployment, so you don't need to run a separate validation stage for your production environment.
    1. The pipeline pauses for manual validation.
    1. If approval is received, the pipeline runs the deployment and smoke tests against your production environment.
 
@@ -32,7 +32,7 @@ Some of these stages are repeated between your test and production environments,
 | Deploy | Both environments |
 | Smoke Test | Both environments |
 
-When you need to repeat steps in your pipeline, you might try to copy and paste your step definitions. However, this isn't a good practice. It's easy to accidentally make subtle mistakes or for things to get out of sync when you duplicate your pipeline's code. And in the future, when you need to make a change to the steps, you have to remember to apply the change in multiple places.
+When you need to repeat steps in your pipeline, you might try to copy and paste your step definitions. However, it's best to avoid that practice. It's easy to accidentally make subtle mistakes or for things to get out of sync when you duplicate your pipeline's code. And in the future, when you need to make a change to the steps, you have to remember to apply the change in multiple places.
 
 ## Pipeline templates
 

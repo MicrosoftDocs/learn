@@ -1,4 +1,4 @@
-Now you're ready to update your pipeline to deploy to both your test and production environments. In this unit, you'll update your pipeline to use templates so that you can reuse the stages across the environments.
+Now you're ready to update your pipeline to deploy to both your test and production environments. In this unit, you update your pipeline to use templates so that you can reuse the stages across the environments.
 
 During the process, you'll:
 
@@ -25,11 +25,11 @@ The lint stage happens only once during the pipeline run, regardless of how many
 
    The lint stage is the same as the lint stage already in the pipeline, but now it's in a separate pipeline template file.
 
-1. Close the file and save your changes.
+1. Save your changes and close the file.
 
 ## Add a pipeline template for deployment
 
-Create a pipeline template that defines all of the stages required to deploy each of your environments. You'll use template parameters to specify the settings that might differ between environments.
+Create a pipeline template that defines all of the stages required to deploy each of your environments. You use template parameters to specify the settings that might differ between environments.
 
 1. Create a new file in the _pipeline-templates_ folder named _deploy.yml_.
 
@@ -122,7 +122,7 @@ Create a pipeline template that defines all of the stages required to deploy eac
 
    Wait for the pipeline to finish running.
 
-1. Select the **Test** tab to show the test results from this pipeline run.
+1. Select the **Tests** tab to show the test results from this pipeline run.
 
    Notice that there are now four test results. The smoke test runs on both the test and production environments, so you see the results for both sets of tests.
 

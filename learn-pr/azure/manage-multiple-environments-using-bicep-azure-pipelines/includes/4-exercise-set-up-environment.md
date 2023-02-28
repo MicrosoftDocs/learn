@@ -158,7 +158,7 @@ Next, create two service connections in Azure Pipelines: one for your test envir
 
    :::image type="content" source="../media/4-environments-new-details-test.png" alt-text="Screenshot of the Azure DevOps page for a new environment named Test, with completed details and the Create button.":::
 
-   Before a pipeline can use the environment, you must grant it permission. For simplicity, you'll allow all pipelines to access the environment. In your own pipelines, you should restrict access to environments to just the pipelines that require it.
+   Before a pipeline can use the environment, you must grant it permission. For simplicity in this exercise, you allow all pipelines to access the environment. In your own pipelines, you should restrict access to environments to just the pipelines that require it.
 
 1. Select the button with three dots and select **Security**.
 
@@ -172,7 +172,7 @@ Next, create two service connections in Azure Pipelines: one for your test envir
 
 1. Select the left arrow twice to return to the environments list.
 
-   :::image type="content" source="../media/4-environment-back.png" alt-text="Screenshot of the Azure DevOps page for an environment named Test, including the arrow button..":::
+   :::image type="content" source="../media/4-environment-back.png" alt-text="Screenshot of the Azure DevOps page for an environment named Test, including the arrow button.":::
 
 1. Repeat the process to create another environment named **Production**. Remember to set it to open access.
 
@@ -194,7 +194,7 @@ Next, create two service connections in Azure Pipelines: one for your test envir
 
 1. Select the arrow button next to **Advanced**.
 
-   Notice that, by default, approvers are allowed to approve the runs that they've triggered. Because you're the only person who will work with this pipeline, leave this checkbox selected. In other organizations, you might need to specify a different approver to meet compliance requirements.
+   Notice that, by default, approvers are allowed to approve the runs that they've triggered. Because you're the only person who using this pipeline, leave this checkbox selected. In other organizations, you might need to specify a different approver to meet compliance requirements.
 
 1. Select **Create**.
 
@@ -202,7 +202,7 @@ Next, create two service connections in Azure Pipelines: one for your test envir
 
 ## Delete the old environment
 
-In the previous versions of the pipeline, you used a single environment named _Website_. Now that you've created pipeline environments that represent your new environments, you'll delete the old pipeline environment.
+In the previous versions of the pipeline, you used a single environment named _Website_. Now that you've created pipeline environments that represent your new environments, you can delete the old pipeline environment.
 
 1. Go to **Pipelines** > **Environments**.
 
@@ -218,7 +218,7 @@ In the previous versions of the pipeline, you used a single environment named _W
 
 ## Delete the old variables
 
-In the previous versions of the pipeline, you used a single set of variables to define the parameters and deployment configuration. Now that you're deploying to multiple environments, you'll delete these variables. You'll replace them with environment-specific sets of variables soon.
+In the previous versions of the pipeline, you used a single set of variables to define the parameters and deployment configuration. Now that you're deploying to multiple environments, you can delete those variables and replace them with environment-specific sets of variables soon.
 
 1. Go to **Pipelines** > **Pipelines**.
 

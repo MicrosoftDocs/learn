@@ -24,11 +24,11 @@ prerequisites: |
   - Basic Git commands, including cloning, committing files, and pushing changes to Azure Repos.
   - YAML pipelines through Azure Pipelines, including multistage pipelines and service connections.
 
-  To work through the exercises in the module, you'll need:
+  To work through the exercises in the module, you need:
   - An Azure account that can create resource groups, Azure Active Directory applications, and service principals.
   - An Azure DevOps organization and account.
 
-  You'll also need the following installed locally:
+  You also need the following installed locally:
 
   - [Visual Studio Code](https://code.visualstudio.com)
   - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep)

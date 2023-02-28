@@ -1,6 +1,6 @@
 Now that your pipeline deploys to both of your environments, you're ready to integrate with the third-party API for product reviews.
 
-Your website team has provided you with the API keys and URLs that your website should use to access the service. There are different values for your test and production environments to use. In this unit, you'll update your pipeline to configure each of your environments with the correct settings for the product review API.
+Your website team has provided you with the API keys and URLs that your website should use to access the service. There are different values for your test and production environments to use. In this unit, you update your pipeline to configure each of your environments with the correct settings for the product review API.
 
 During the process, you'll:
 
@@ -14,7 +14,7 @@ During the process, you'll:
 
 ## Add variable groups
 
-Because you're adding more parameters that vary between each environment, you decide to move away from adding your pipeline parameters directly into your pipeline YAML files. Instead, you'll use a variable group to keep the values for each environment together.
+Because you're adding more parameters that vary between each environment, you decide to move away from adding your pipeline parameters directly into your pipeline YAML files. Instead, you use a variable group to keep the values for each environment together.
 
 1. In your browser, go to **Pipelines** > **Library**.
 
@@ -33,7 +33,7 @@ Because you're adding more parameters that vary between each environment, you de
    | EnvironmentType | Test |
    | ResourceGroupName | ToyWebsiteTest |
 
-   Notice that you don't define the service connection name in the variable group. Service connection names have special rules about how they can be specified. In this module, you'll use pipeline template parameters.
+   Notice that you don't define the service connection name in the variable group. Service connection names have special rules about how they can be specified. In this module, you use pipeline template parameters.
 
    :::image type="content" source="../media/7-variable-group-test-v1.png" alt-text="Screenshot of the test variable group and variables.":::
 

@@ -1,6 +1,6 @@
 Deployment pipelines enable you to automate the steps in your deployment process. Often, you need to run the steps in multiple separate environments. In your toy company, you want to review the changes to your code before you deploy the changes to your production environment.
 
-In this unit, you'll learn about how environments in Azure Pipelines help you support your own workflow.
+In this unit, you learn about how environments in Azure Pipelines help you support your own workflow.
 
 ## Why do you have multiple environments?
 
@@ -52,15 +52,15 @@ Sometimes, a single environment takes the role of several of the environments li
 
 Whatever your organization chooses as its list of environments, the goal is to improve your confidence in a change as it progresses through your deployment pipeline. When a change doesn't meet your quality requirements, you want to be able to stop the deployment of that change to any subsequent environments in the chain.
 
-In your toy company, you decide to start with a basic set of environments for your website. In addition to your production environment, you'll create one non-production environment named _Test_:
+In your toy company, you decide to start with a basic set of environments for your website. In addition to your production environment, you create one non-production environment named _Test_:
 
 :::image type="content" source="../media/2-environments.png" alt-text="Diagram that shows two environments: test and production." border="false":::
 
-You'll update your pipeline to deploy your Bicep code to your test environment and run some basic tests against it. If that effort succeeds, you'll deploy to your production environment.
+You update your pipeline to deploy your Bicep code to your test environment and run some basic tests against it. If that effort succeeds, you deploy to your production environment.
 
 ## Pipeline environments
 
-Azure Pipelines also has the concept of an environment. You create an Azure Pipelines environment to represent the environment that you have in Azure. When you define your pipeline in a YAML file, you link your deployment jobs to a specific environment. By using environments, you get some additional features in your pipeline.
+Azure Pipelines also has the concept of an environment. You create an Azure Pipelines environment to represent the environment that you have in Azure. When you define your pipeline in a YAML file, you link your deployment jobs to a specific environment. By using environments, you get some other features in your pipeline.
 
 ### Checks and approvals
 
