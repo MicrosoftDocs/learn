@@ -20,7 +20,7 @@ The `provisioningClient` object:
 - Sets the `dtmi:com:example:ConnectedCoffeeMaker;1` model ID before it registers the device.
 - Opens the connection in the `centralClient` object.
 
-:::code language="js" source="../resources/CoffeeMaker.js" id="ProvisioningClient":::
+:::code language="js" source="~/../iot-central-docs-samples/monitor-manage-device-with-iotcentral/CoffeeMaker.js" id="ProvisioningClient":::
 
 The `connectCallback` method:
 
