@@ -38,9 +38,9 @@ You can customize the UI that IoT Central displays for managing and monitoring d
 
 ## Connected Coffee Maker model
 
-A device model is the part of the device template that defines the telemetry, properties, and commands that a device supports. You can store a device capability model in a JSON file and import it into IoT Central. The following JSON is the device capability model for the connected coffee machine. Copy the JSON and save it on your local machine in a file called *CoffeeMaker.json*:
+A device model is the part of the device template that defines the telemetry, properties, and commands that a device supports. You can store a device capability model in a JSON file and import it into IoT Central. The following JSON is the device capability model for the connected coffee machine.
 
-:::code language="json" source="../resources/CoffeeMaker.json":::
+:::code language="json" source="~/../iot-central-docs-samples/monitor-manage-device-with-iotcentral/CoffeeMaker.json":::
 
 - The `@id` field is the [Digital Twin Model Identifier (DTMI)](https://github.com/Azure/opendigitaltwins-dtdl/blob/master/DTDL/v2/DTDL.v2.md#digital-twin-model-identifier) for the model, in the format `dtmi:<domain>:<unique-model-identifier>;<model-version-number>`.
 - The `@type` identifies the kind of information being described. For example, `"@type": "Interface"` is used to indicate the type of the [Digital Twin Definition Language (DTDL)](/azure/digital-twins/concepts-models) entity. In this case, the entity is an `Interface`.
