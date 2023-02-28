@@ -4,7 +4,7 @@ For this, we will be using the CluedIn Data Steward tool - CluedIn Clean.
 
 1. In the left hand menu, select Preperation -> New Clean. 
 
-    ![New_Clean](../media/New_Clean.png)
+    :::image type="content" source="New_Clean.png" alt-text="<alt text>":::
 
 1. Select "Create Project" in which CluedIn will then ask you to specify what records and what columns you would like to clean.
 
@@ -17,7 +17,7 @@ For this, we will be using the CluedIn Data Steward tool - CluedIn Clean.
 
 1. On the person.job header, select the drop down and select "Text Facet".
 
-    ![Clean_Text_Facet](../media/Clean_Text_Facet.png)
+    :::image type="content" source="Clean_Text_Facet.png" alt-text="<alt text>":::
 
     On the left hand side you will see that CluedIn shows an aggregation of all of the unique values of that column and then a count next to each item to reflect how many rows share a column value. 
 
@@ -25,7 +25,7 @@ For this, we will be using the CluedIn Data Steward tool - CluedIn Clean.
 
     From the dropdown, choose the "Keying function" option and the the subsequent dropdown, choose the "metaphone3" option. 
 
-    ![CleaN_Keying_Function](../media/CleaN_Keying_Function.png)
+    :::image type="content" source="CleaN_Keying_Function.png" alt-text="<alt text>":::
 
     You will notice that CluedIn is recommending that all of the different spelling of Accounting on the left and proposing that they are all normalised into "Accounting" on the right. Accept this suggestion and the one for Software Dev and then change cycle through all the other Keying functions and their suggestions until all the values are normalised and that there are now only 2 permutations of the Job titles that we had in the origianl raw data. 
 
@@ -44,7 +44,7 @@ This exercise above has yielded a few elements, including:
 
 1. Head back to the automated rules that were constructed and select them all and toggle to activate them. 
 
-    ![Rules_Created](../media/Rules_Created.png)
+    :::image type="content" source="Rules_Created.png" alt-text="<alt text>":::
 
 1. Head back to the datasources in CluedIn, and map the final file called ContactsAddLater.csv that had the same data quality issues in it, but this time, just process the data directly and don't clean it at all. 
 
