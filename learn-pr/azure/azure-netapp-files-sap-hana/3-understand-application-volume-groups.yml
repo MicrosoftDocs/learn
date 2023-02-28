@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-what-is-azure-netapp-files.md)]
+  [!include[](includes/3-understand-application-volume-groups.md)]
