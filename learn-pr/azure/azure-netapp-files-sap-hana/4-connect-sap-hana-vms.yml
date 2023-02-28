@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.azure-netapp-files-sap-hana.connect-sap-hana-vms
+uid: learn.azure.azure-netapp-files-sap-hana.connect-sap-hana-vms.yml
 title: Connect SAP HANA VMs to Azure NetApp Files
 metadata:
   unitType: learning-content

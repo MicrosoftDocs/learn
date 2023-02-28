@@ -1,4 +1,4 @@
-Azure NetApp Files is an enterprise-class, high-performance, fully managed NAS service for shared file storage. It is a first-party service, meaning you deploy and manage it through the Azure portal.
+Azure NetApp Files is an enterprise-class, high-performance, fully managed NAS service for shared file storage. It's a first-party service, meaning you deploy and manage it through the Azure portal.
 
 ## Performance
 
@@ -41,7 +41,7 @@ You can create up to 255 snapshots per volume. Creating a snapshot doesn't impac
 
 ### Cross-region replication
 
-Azure NetApp Files replication functionality provides data protection through cross-region volume replication. You can asynchronously replicate data from an Azure NetApp Files volume (source) in one region to another Azure NetApp Files volume (destination) in another region. This capability enables you to failover your critical application in case of a region-wide outage or disasters.
+Azure NetApp Files replication functionality provides data protection through cross-region volume replication. You can asynchronously replicate data from an Azure NetApp Files volume (source) in one region to another Azure NetApp Files volume (destination) in another region. This capability enables you to failover your critical application in the event of a region-wide outage or disasters.
 
 ### Data recovery
 

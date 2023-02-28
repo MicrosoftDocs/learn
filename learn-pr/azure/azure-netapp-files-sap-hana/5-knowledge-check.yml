@@ -14,11 +14,11 @@ durationInMinutes: 5
 content: |
 quiz:
   questions:
-  - content: Which of the following is not a benefit of using application volume groups for Azure NetApp Files?
+  - content: Which of the following options isn't a benefit of using application volume groups for Azure NetApp Files?
     choices:
     - content: One step deployment of your single-host SAP HANA system
       isCorrect: false
-      explanation: Incorrect. In addition to low latency and high-provisioning, one-step deployment of your single-host SAP HANA system is a key benefits of using application volume groups. 
+      explanation: Incorrect. In addition to low latency and high-provisioning, one-step deployment of your single-host SAP HANA system is a key benefit of using application volume groups. 
     - content: Automatic QoS provisioning
       isCorrect: true
       explanation: Correct. You must use manual QoS with application volume groups. 
@@ -29,13 +29,13 @@ quiz:
     choices: 
     - content: Determine throughput limits on your SAP HANA system
       isCorrect: false 
-      explanation: Incorrect. Although application volume groups help you configure throughput options, they do not configure limits. 
+      explanation: Incorrect. Although application volume groups help you configure throughput options, they don't configure limits. 
     - content: Ensure compute resources are placed adjacently to ensure compute
       isCorrect: true 
       explanation: Correct. Due to the low latency and performance requirements, application volume groups ensure 
     - content: Determine the region of your Azure NetApp Files deployment
       isCorrect: false
-      explanation: Incorrect. Application volume groups ensure compute resources are placed adjacently. You will select the region of deployment. 
+      explanation: Incorrect. Application volume groups ensure compute resources are placed adjacently. You select the region of deployment. 
   - content: Before requesting a proximity placement group, you must first.
     choices: 
     - content: Create a volume
@@ -58,7 +58,7 @@ quiz:
     - content: Auto 
       isCorrect: false 
       explanation: Incorrect. Capacity pools for application volume groups must be configured with manual QoS.
-  - content: When delegating a subnet for you application volume group, what size should you use?
+  - content: When delegating a subnet for your application volume group, what size should you use?
     choices: 
     - content: /24
       isCorrect: true 
