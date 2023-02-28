@@ -1,4 +1,4 @@
-Now you're ready to update your pipeline to deploy to both your test and production environments. In this unit, you update your pipeline to use templates so that you can reuse the stages across the environments.
+Now you're ready to update your pipeline to deploy to both your test and production environments. In this unit, you'll update your pipeline to use templates so that you can reuse the stages across the environments.
 
 During the process, you'll:
 

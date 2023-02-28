@@ -1,4 +1,4 @@
-When you deploy your changes to multiple environments, the steps involved in deploying to each environment are similar or identical. In this unit, you learn how to use pipeline templates to avoid repetition and to allow for reuse of your pipeline code.
+When you deploy your changes to multiple environments, the steps involved in deploying to each environment are similar or identical. In this unit, you'll learn how to use pipeline templates to avoid repetition and to allow for reuse of your pipeline code.
 
 ## Deployment to multiple environments
 

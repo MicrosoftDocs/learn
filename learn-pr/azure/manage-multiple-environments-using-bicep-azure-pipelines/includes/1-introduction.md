@@ -1,4 +1,4 @@
-Pipelines enable you to deploy your Azure resources in a repeatable way. In this module, you learn how to extend a deployment pipeline to work with multiple environments. Your pipeline helps you validate and test your changes without adding risk to your production environment. After you validate your changes, your pipeline will use the same process to deploy to your production environment.
+Pipelines enable you to deploy your Azure resources in a repeatable way. In this module, you'll learn how to extend a deployment pipeline to work with multiple environments. Your pipeline will help you validate and test your changes without adding risk to your production environment. After you validate your changes, your pipeline will use the same process to deploy to your production environment.
 
 ## Example scenario
 
@@ -12,9 +12,9 @@ Now, the team has asked you for help with updating its deployment pipeline. The 
 
 ## What will you be doing?
 
-In this module, you learn how you can extend a pipeline to deploy Bicep code to multiple Azure environments in a consistent way. You create separate service connections and service principals for each environment to support higher security and isolation.
+In this module, you'll learn how you can extend a pipeline to deploy Bicep code to multiple Azure environments in a consistent way. You'll create separate service connections and service principals for each environment to support higher security and isolation.
 
-You use pipeline template files to define your deployment steps in a single place, and you use Bicep parameters to handle configuration differences between your environments. You also secure your parameter values so they don't accidentally leak secrets in your pipeline's logs.
+You'll use pipeline template files to define your deployment steps in a single place, and use Bicep parameters to handle configuration differences between your environments. And secure your parameter values so they don't accidentally leak secrets in your pipeline's logs.
 
 ## What is the main goal?
 

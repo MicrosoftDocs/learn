@@ -2,7 +2,7 @@ You've already learned about Bicep parameters. They help you specify values that
 
 Parameters are commonly used to support the differences between your environments. For example, in your non-production environments, you often want to deploy inexpensive SKUs of your Azure resources. In production, you want to deploy SKUs that have better performance. And you might want to use different names for resources in each environment.
 
-When you deploy your Bicep file, you provide values for each parameter. There are several options for how you specify the values for each parameter from your pipeline, and how you specify separate values for each environment. In this unit, you learn about the approaches for specifying Bicep parameter values in a deployment pipeline.
+When you deploy your Bicep file, you provide values for each parameter. There are several options for how you specify the values for each parameter from your pipeline, and how you specify separate values for each environment. In this unit, you'll learn about the approaches for specifying Bicep parameter values in a deployment pipeline.
 
 ## Parameter files
 

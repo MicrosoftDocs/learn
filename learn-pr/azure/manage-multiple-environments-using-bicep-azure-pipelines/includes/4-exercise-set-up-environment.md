@@ -158,7 +158,7 @@ Next, create two service connections in Azure Pipelines: one for your test envir
 
    :::image type="content" source="../media/4-environments-new-details-test.png" alt-text="Screenshot of the Azure DevOps page for a new environment named Test, with completed details and the Create button.":::
 
-   Before a pipeline can use the environment, you must grant it permission. For simplicity in this exercise, you allow all pipelines to access the environment. In your own pipelines, you should restrict access to environments to just the pipelines that require it.
+   Before a pipeline can use the environment, you must grant it permission. For simplicity, you allow all pipelines to access the environment. In your own pipelines, you should restrict access to environments to just the pipelines that require it.
 
 1. Select the button with three dots and select **Security**.
 
@@ -194,7 +194,7 @@ Next, create two service connections in Azure Pipelines: one for your test envir
 
 1. Select the arrow button next to **Advanced**.
 
-   Notice that, by default, approvers are allowed to approve the runs that they've triggered. Because you're the only person who using this pipeline, leave this checkbox selected. In other organizations, you might need to specify a different approver to meet compliance requirements.
+   Notice that, by default, approvers are allowed to approve the runs that they've triggered. Because you're the only person using this pipeline, leave this checkbox selected. In other organizations, you might need to specify a different approver to meet compliance requirements.
 
 1. Select **Create**.
 

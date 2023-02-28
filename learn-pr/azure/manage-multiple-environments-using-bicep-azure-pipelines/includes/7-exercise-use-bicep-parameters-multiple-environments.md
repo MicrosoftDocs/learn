@@ -1,6 +1,6 @@
 Now that your pipeline deploys to both of your environments, you're ready to integrate with the third-party API for product reviews.
 
-Your website team has provided you with the API keys and URLs that your website should use to access the service. There are different values for your test and production environments to use. In this unit, you update your pipeline to configure each of your environments with the correct settings for the product review API.
+Your website team has provided you with the API keys and URLs that your website should use to access the service. There are different values for your test and production environments to use. In this unit, you'll update your pipeline to configure each of your environments with the correct settings for the product review API.
 
 During the process, you'll:
 
@@ -14,7 +14,7 @@ During the process, you'll:
 
 ## Add variable groups
 
-Because you're adding more parameters that vary between each environment, you decide to move away from adding your pipeline parameters directly into your pipeline YAML files. Instead, you use a variable group to keep the values for each environment together.
+Because you're adding more parameters that vary between each environment, you decide to move away from adding your pipeline parameters directly into your pipeline YAML files. Instead, you'll use a variable group to keep the values for each environment together.
 
 1. In your browser, go to **Pipelines** > **Library**.
 
