@@ -93,5 +93,5 @@ Choose the tool that uses your experience and shortens your learning curve. Bein
 only improve your abilities. Use a different tool when it makes sense.
 
 <!-- link references -->
-[1]: ../media/shared/check-mark-button_2705.svg
-[3]: ../media/shared/cross-mark_274c.svg
+[1]: ../media/shared/check-mark-button-2705.svg
+[3]: ../media/shared/cross-mark-274c.svg
