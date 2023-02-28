@@ -1,78 +1,90 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+In Azure Pipelines, you can use YAML files to define your pipeline's configuration as code. Parameters in YAML files help you to reuse the pipeline and keep the code clean. In this unit, you'll learn how to move parameters into a YAML file.
 
-    Goal: briefly summarize the key skill this unit will teach
+## Why use parameters in YAML files?
 
-    Heading: none
+Benefits of using parameters in YAML files:
 
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
+- It helps in reusing the pipeline configuration.
+- It enables you to define the pipeline as code, allowing you to track pipeline changes over time.
+- It keeps the code clean and organized.
 
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+## Move parameters into a YAML file
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+You can enforce that a pipeline extends from a particular template to increase security.
 
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
+In the following example, the file parameters.yml defines the parameter buildSteps, which is then used in the pipeline azure-pipelines.yml. In parameters.yml, if a buildStep gets passed with a script step, it's rejected, and the pipeline build fails.
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+Create a file named `parameters.yml` in your repository, or other repository specific for your templates.
 
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
+Define your parameters in this file using the YAML syntax:
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
+```YAML
+# File: parameters.yml
+parameters:
+- name: buildSteps # the name of the parameter is buildSteps
+  type: stepList # data type is StepList
+  default: [] # default value of buildSteps
+stages:
+- stage: secure_buildstage
+  pool:
+    vmImage: windows-latest
+  jobs:
+  - job: secure_buildjob
+    steps:
+    - script: echo This happens before code 
+      displayName: 'Base: Pre-build'
+    - script: echo Building
+      displayName: 'Base: Build'
 
-    Goal: State concisely what's covered in this unit
+    - ${{ each step in parameters.buildSteps }}:
+      - ${{ each pair in step }}:
+          ${{ if ne(pair.value, 'CmdLine@2') }}:
+            ${{ pair.key }}: ${{ pair.value }}       
+          ${{ if eq(pair.value, 'CmdLine@2') }}: 
+            # Step is rejected by raising a YAML syntax error: Unexpected value 'CmdLine@2'
+            '${{ pair.value }}': error         
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+    - script: echo This happens after code
+      displayName: 'Base: Signing'
+```
 
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
+Create a file named `azure-pipelines.yml`, and reference the `parameters.yml` file:
 
-<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
+```YAML
+# File: azure-pipelines.yml
+trigger:
+- main
 
-    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
+extends:
+  template: parameters.yml
+  parameters:
+    buildSteps:  
+      - bash: echo Test #Passes
+        displayName: succeed
+      - bash: echo "Test"
+        displayName: succeed
+      # Step is rejected by raising a YAML syntax error: Unexpected value 'CmdLine@2'
+      - task: CmdLine@2
+        inputs:
+          script: echo "Script Test"
+      # Step is rejected by raising a YAML syntax error: Unexpected value 'CmdLine@2'
+      - script: echo "Script Test"
+```
 
-    Heading: none
--->
-TODO: add a visual element
+Here you can see that the pipeline is extended from the template `parameters.yml`. The parameter `buildSteps` is passed to the template. The template checks if the value of the parameter `buildSteps` is a `stepList` type. If it is, the pipeline continues. If it isn't, the pipeline fails.
 
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
+Try to run the pipeline. You should see the following error:
 
-    Goal: Provide all the information the learner needs to perform this sub-task.
+![Screenshot of Azure Pipelines showing the step rejected by raising a YAML syntax error unexpected value.](../media/secure-parameter-template.png)
 
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
+You can increase security by adding a [required template approval](https://learn.microsoft.com/azure/devops/pipelines/security/templates) when extending from a template.
 
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=main)
--->
+## Challenge yourself
 
-<!-- Pattern for simple chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
+Create a pipeline using parameters from a YAML template file that deploys a web app to different regions based on a user's choice of environment.
 
-<!-- Pattern for complex chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
+For more information about parameters and templates, see:
 
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+- [Securing Azure Pipelines.](https://learn.microsoft.com/azure/devops/pipelines/security/overview/)
+- [Runtime parameters.](https://learn.microsoft.com/azure/devops/pipelines/process/runtime-parameters/)
+- [Template types & usage.](https://learn.microsoft.com/azure/devops/pipelines/process/templates)

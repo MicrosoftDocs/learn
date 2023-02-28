@@ -33,3 +33,5 @@ Create a YAML pipeline that deploys a web application to an Azure App Service. A
 For more information about variables and parameters, see:
 
 - [Securing Azure Pipelines.](https://learn.microsoft.com/azure/devops/pipelines/security/overview/)
+- [Runtime parameters.](https://learn.microsoft.com/azure/devops/pipelines/process/runtime-parameters/)
+- [Security best practices.](https://learn.microsoft.com/azure/devops/organizations/security/security-best-practices/)
