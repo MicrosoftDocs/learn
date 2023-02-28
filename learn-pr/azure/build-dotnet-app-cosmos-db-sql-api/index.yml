@@ -29,7 +29,7 @@ prerequisites: |
   - Ability to execute scripts with Azure CLI
   - Experience with top-level statement projects in .NET 6 or later
   - Ability to write C# at an intermediate level
-iconUrl: /training/achievements/build-dotnet-app-cosmos-db-nosql-api.svg
+iconUrl: /training/achievements/build-dotnet-app-cosmos-db-sql-api.svg
 levels:
   - beginner
 roles:
