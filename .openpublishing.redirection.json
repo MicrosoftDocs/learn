@@ -20481,6 +20481,16 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "learn-pr/wwl-language/csharp-do-while/5-knowledge-check.md",
+      "redirect_url": "/training/modules/csharp-do-while/7-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-language/csharp-do-while/6-summary.md",
+      "redirect_url": "/training/modules/csharp-do-while/8-summary",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "learn-pr/advocates/monitor-and-manage-device-with-iot-central/1-create-azure-iot-central-application.md",
       "redirect_url": "/training/modules/monitor-and-manage-device-with-iot-central/2-create-azure-iot-central-application",
       "redirect_document_id": true
@@ -20509,6 +20519,6 @@
       "source_path": "learn-pr/advocates/monitor-and-manage-device-with-iot-central/6-knowledge-check.md",
       "redirect_url": "/training/modules/monitor-and-manage-device-with-iot-central/9-knowledge-check",
       "redirect_document_id": true
-    }   
+    }  
   ]
 }
