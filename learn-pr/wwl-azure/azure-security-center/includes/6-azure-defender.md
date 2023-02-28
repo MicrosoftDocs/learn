@@ -1,14 +1,26 @@
+
 ## Basic and enhanced security features
 
-### Basic features
+## Basic features
 
-When you open Defender for Cloud in the Azure portal for the first time or if you enable it through the Application Programming Interface (API), Defender for Cloud is enabled for free on all your Azure subscriptions. Defender for Cloud provides foundational cloud security and posture management (CSPM) features by default. The foundational CSPM includes secure score, security policy and basic recommendations, and network security assessment to help you protect your Azure resources.
+When you open Defender for Cloud in the Azure portal for the first time or if you enable it through the Application Programming Interface (API), Defender for Cloud is **enabled for free on all your Azure subscriptions**. Defender for Cloud provides foundational **cloud security and posture management (CSPM)** features by default. The foundational CSPM includes a **secure score**, **security policy and basic recommendations**, and **network security assessment** to help you **protect your Azure resources**.
 
-### Enhanced features<br>
+## Defender Cloud Security Posture Management (CSPM) plan options
+
+Defender for cloud offers foundational multi-cloud CSPM capabilities for free. These capabilities are automatically enabled by default on any subscription or account that has been onboarded to Defender for Cloud. The foundational CSPM includes asset discovery, continuous assessment and security recommendations for posture hardening, compliance with Microsoft Cloud Security Benchmark (MCSB), and a Secure score which measure the current status of your organization’s posture.
+
+The optional Defender CSPM plan provides advanced posture management capabilities such as Attack path analysis, Cloud security explorer, advanced threat hunting, security governance capabilities, and also tools to assess your security compliance with a wide range of benchmarks, regulatory standards, and any custom security policies required in your organization, industry, or region.
+
+The following table summarizes each plan and its cloud availability.
+
+:::image type="content" source="../media/defender-cspm-plans-f0ad4520.png" alt-text="Screenshot showing Defender Cloud Security Poster Management plan options.":::
+
+
+## Enhanced features
 
 If you want to try out the enhanced security features, enable enhanced security features for free for the first 30 days. At the end of 30 days, if you decide to continue using the service, we'll automatically start charging for usage.
 
-### Prerequisites
+## Prerequisites
 
 To get started with Defender for Cloud, you'll need a Microsoft Azure subscription with Defender for Cloud enabled. If you don't have an Azure subscription, you can sign up for a free subscription.
 
@@ -23,7 +35,7 @@ Microsoft Defender for Cloud uses monitoring components to collect data from you
 
 The Defender plans show you the monitoring coverage for each Defender plan. If the monitoring coverage is Full, all of the necessary extensions are installed. If the monitoring coverage is Partial, the information tooltip tells you what extensions are missing. For some plans, you can configure specific monitoring settings.
 
-### Enhanced features
+## Enhanced features
 
 When you enable the enhanced security features (paid), Defender for Cloud can provide unified security management and threat protection across your hybrid cloud workloads, including:
 
@@ -36,10 +48,16 @@ When you enable the enhanced security features (paid), Defender for Cloud can pr
  -  **Access and application controls** \- Block malware and other unwanted applications by applying machine learning-powered recommendations adapted to your specific workloads to create allowlists and blocklists. Reduce the network attack surface with just-in-time, controlled access to management ports on Azure VMs. Access and application control drastically reduce exposure to brute force and other network attacks.
  -  **Container security features** \- Benefit from vulnerability management and real-time threat protection in your containerized environments. Charges are based on the number of unique container images pushed to your connected registry. After an image has been scanned once, you won't be charged for it again unless it's modified and pushed once more.
  -  **Breadth threat protection for resources connected to Azure** \- Cloud-native threat protection for the Azure services common to all of your resources: Azure Resource Manager, Azure Domain Name System (DNS), Azure network layer, and Azure Key Vault. Defender for Cloud has unique visibility into the Azure management layer and the Azure DNS layer and can therefore protect cloud resources that are connected to those layers.
- -  **Manage your Cloud Security Posture Management (CSPM)** \- CSPM offers you the ability to remediate security issues and review your security posture through the tools provided. These tools include:
+ -  **Manage your Cloud Security Posture Management (CSPM)** \- CSPM offers you the ability to remediate security issues and review your security posture through the tools provided.
+    
+    These tools include:
     
     
      -  Security governance and regulatory compliance
+         -  What is **Security governance** and **regulatory compliance**? Security governance and regulatory compliance refer to the policies and processes which organizations have in place to ensure that they comply with laws, rules, and regulations put in place by external bodies (government) that control activity in a given jurisdiction. Defender for Cloud allows you to view your regulatory compliance through the regulatory compliance dashboard. Defender for Cloud continuously assesses your hybrid cloud environment to analyze the risk factors according to the controls and best practices in the standards you've applied to your subscriptions. The dashboard reflects the status of your compliance with these standards.
      -  Cloud security graph
+         -  What is cloud security graph? The cloud security graph is a **graph-based context engine** that exists within Defender for Cloud. The cloud security graph collects data from your multi-cloud environment and other data sources. For example, the cloud assets inventory, connections and lateral movement possibilities between resources, exposure to the internet, permissions, network connections, vulnerabilities, and more. The data collected is then used to build a graph representing your multi-cloud environment. Defender for Cloud then uses the generated graph to perform an attack path analysis and find the issues with the highest risk that exist within your environment. You can also query the graph using the cloud security explorer.
      -  Attack path analysis
+         -  What is Attack path analysis? Attack path analysis helps you to **address the security issues that pose immediate threats with the greatest potential of being exploited in your environment**. Defender for Cloud analyzes which security issues are part of potential attack paths that attackers could use to breach your environment. It also highlights the security recommendations that need to be resolved in order to mitigate the issue.
      -  Agentless scanning for machines
+         -  What is agentless scanning for machines? Microsoft Defender for Cloud maximizes coverage on OS posture issues and extends beyond the reach of agent-based assessments. With agentless scanning for VMs, you can get frictionless, wide, and instant visibility on actionable posture issues without installed agents, network connectivity requirements, or machine performance impact. **Agentless scanning for VMs provides vulnerability assessment and software inventory** powered by Defender vulnerability management in Azure and Amazon AWS environments. Agentless scanning is available in Defender Cloud Security Posture Management (CSPM) and Defender for Servers.

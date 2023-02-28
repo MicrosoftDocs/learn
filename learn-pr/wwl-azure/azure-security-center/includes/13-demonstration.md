@@ -1,3 +1,4 @@
+
 Use this try-this exercise to gain some hands-on experience with Azure.
 
 ## Task 1: Microsoft Defender for Cloud overview and recommendations

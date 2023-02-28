@@ -1,4 +1,5 @@
-Maintaining your security with Microsoft Defender for Cloud, and Secure Score are the keys to keeping your solutions and data secure.
+
+Microsoft Defender for Cloud and Secure Score is the keys to keeping your solutions and data secure.
 
 You should be able to:
 
@@ -16,4 +17,4 @@ Microsoft Learn provides a large number of self-paced learning paths. For this l
  -  [Resolve security threats with Microsoft Defender for Cloud](/learn/modules/resolve-threats-with-azure-security-center)
  -  [Protect your servers and VMs from brute-force and malware attacks with Microsoft Defender for Cloud](/learn/modules/secure-vms-with-azure-security-center/)
  -  [Create security baselines](/learn/modules/create-security-baselines/)
- -  [Top 5 security items to consider before pushing to production](/learn/modules/top-5-security-items-to-consider/)
+ -  [Top five security items to consider before pushing to production](/learn/modules/top-5-security-items-to-consider/)

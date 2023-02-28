@@ -4,13 +4,12 @@ title: Explore secure score
 metadata:
   title: Explore secure score
   description: "Explore secure score"
-  ms.date: 02/09/2023
+  ms.date: 02/28/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  zone_pivot_groups: None
 durationInMinutes: 7
 content: |
-  [!include[](includes/6-secure-score.md)]
+  [!include[](includes/10-secure-score.md)]

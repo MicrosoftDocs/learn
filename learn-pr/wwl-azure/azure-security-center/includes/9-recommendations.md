@@ -1,8 +1,14 @@
+
 ## What is a security recommendation?
 
-Using the policies, Defender for Cloud periodically analyzes the compliance status of your resources to identify potential security misconfigurations and weaknesses. It then provides you with recommendations on how to remediate those issues. Recommendations are the result of assessing your resources against the relevant policies and identifying resources that aren't meeting your defined requirements.<br>
+Using the policies, Defender for Cloud periodically analyzes the compliance status of your resources to identify potential security misconfigurations and weaknesses. It then provides you with recommendations on how to remediate those issues. Recommendations result from assessing your resources against the relevant policies and identifying resources that aren't meeting your defined requirements.
 
 Defender for Cloud makes its security recommendations based on your chosen initiatives. When a policy from your initiative is compared against your resources and finds one or more that aren't compliant, it is presented as a recommendation in Defender for Cloud.
+
+### Example: Microsoft Defender for Cloud - All recommendations
+
+:::image type="content" source="../media/microsoft-defender-for-cloud-all-recommendations-page-in-the-azure-dashboard-d8a9e077.png" alt-text="Microsoft Defender for Cloud All recommendations page in the Azure dashboard.":::
+
 
 **Recommendations** are actions for you to take to secure and harden your resources. Each recommendation provides you with the following information:
 
