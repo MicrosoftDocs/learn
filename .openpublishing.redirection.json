@@ -20491,6 +20491,56 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/6-secure-score.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/10-secure-score",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/8-brute-force-attacks.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/11-brute-force-attacks",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/9-just-time-virtual-machine-access.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/12-just-time-virtual-machine-access",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/10-demonstration.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/13-demonstration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/11-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/14-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/12-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/15-summary",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/3-implement-azure-security-center.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/4-implement-azure-security-center",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/7-azure-defender.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/6-azure-defender",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/4-policies.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/8-policies",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/5-recommendations.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/9-recommendations",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "learn-pr/advocates/monitor-and-manage-device-with-iot-central/1-create-azure-iot-central-application.md",
       "redirect_url": "/training/modules/monitor-and-manage-device-with-iot-central/2-create-azure-iot-central-application",
       "redirect_document_id": true

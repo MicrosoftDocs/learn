@@ -5,7 +5,7 @@ metadata:
   unitType: exercise
   title: Exercise - Add multiple environments to your pipeline
   description: Update a deployment pipeline to deploy to two environments, and use a pipeline template with parameters.
-  ms.date: 10/18/2021
+  ms.date: 02/27/2023
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial

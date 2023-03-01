@@ -1,6 +1,7 @@
 
 
 
+
 In this exercise you'll learn how to:
 
 * Create a Service Bus namespace, and queue, using the Azure CLI.
@@ -96,12 +97,6 @@ In this section you'll open your terminal and create some variables that will be
 1. Add the following code below the variables you just added. See code comments for details.
 
     ```csharp
-    // the client that owns the connection and can be used to create senders and receivers
-    ServiceBusClient client;
-    
-    // the sender used to publish messages to the queue
-    ServiceBusSender sender;
-    
     // the client that owns the connection and can be used to create senders and receivers
     ServiceBusClient client;
     
