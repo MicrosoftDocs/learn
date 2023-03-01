@@ -1,6 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.monitor-manage-device-with-iotcentral.create-azure-iot-central-application
 title: Exercise - Create an Azure IoT Central application
+sandbox: true
 metadata:
   title: Exercise - Create an Azure IoT Central application
   description: This content is a part of Build your first IoT Central application to manage your coffee machines

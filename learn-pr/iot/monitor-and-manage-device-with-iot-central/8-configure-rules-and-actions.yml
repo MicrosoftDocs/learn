@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.monitor-manage-device-with-iotcentral.configure-rules-and-actions
 title: Exercise - Configure rules and actions to monitor your coffee machine
+sandbox: true
+interactive: bash
 metadata:
   title: Exercise - Configure rules and actions to monitor your coffee machine
   description: This content is a part of Build your first IoT Central application to manage your coffee machines
