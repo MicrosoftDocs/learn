@@ -57,9 +57,9 @@ To create a view that lets you visualize the telemetry from your coffee machine:
 
     - Select **Water Temperature** and **Air Humidity** in **Telemetry** category and then **Add tile**. Change the tile visualization to **Line chart** and size to **2 x 2** then select **Edit**. Change **Title** to *Telemetry* and confirm the **Display range** is set to **Past 30 minutes**. Select **Update**.
 
-    - Select **Water Temperature** in **Telemetry** category and then **Add tile**. Change the tile visualization to **KPI** and size to **1 x 1** then select **Edit**. Change **Title** to *Water Temperature (Min)* and select **Past 12 hours** in **Time range**. Select **Update**.
+    - Select **Water Temperature** in **Telemetry** category and then **Add tile**. Change the tile visualization to **KPI** and size to **1 x 1** then select **Edit**. Change **Title** to *Water Temperature* and select **Past 12 hours** in **Time range**. Select **Update**.
 
-    - Select **Air Humidity** in **Telemetry** category and then **Add tile**. Change the tile visualization to **KPI** and size to **1 x 1** then select **Edit**. Change **Title** to *Air Humidity (Max)* and select **Past 12 hours** in **Time range**. Select **Update**.
+    - Select **Air Humidity** in **Telemetry** category and then **Add tile**. Change the tile visualization to **KPI** and size to **1 x 1** then select **Edit**. Change **Title** to *Air Humidity* and select **Past 12 hours** in **Time range**. Select **Update**.
 
 1. Save your changes.
 
