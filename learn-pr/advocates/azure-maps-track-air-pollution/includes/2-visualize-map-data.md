@@ -44,6 +44,6 @@ Here are some of the layer types you can use with a map:
 
 - **Heat map**: Heat map layers represent data density. A heat map uses a range of colors to show "hot spot" areas on a map. For example, you might use a heat map to show the relative risk of an earthquake occurring at a location based on the number and strength of earthquakes at that location in the past.
 
-Feature locations in a layer are defined by a data source. The data source might also provide data that you can use to configure controls on the layer, like what image to display or how large to make a bubble.
+A data source defines the feature locations in a layer. The data source might also provide data that you can use to configure controls on the layer. For example, what image to display or how large to make a bubble.
 
 In this unit, you learned about the Azure Maps web SDK, including styles, navigation, and layers. Next, you'll create an Azure Maps account, so you can use the web SDK in a web app.

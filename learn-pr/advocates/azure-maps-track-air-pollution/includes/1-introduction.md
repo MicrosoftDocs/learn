@@ -17,7 +17,7 @@ In this module, you'll get air pollution data by using a free API, and then use 
 
 Azure Maps is a collection of geospatial services that use fresh mapping data to provide geographic context in web and mobile applications. The services include APIs for maps, vehicle routing, weather, and geofencing. Azure Maps also has a web SDK that you can use to display a map on a webpage.
 
-The app you'll create will look like this example:
+The app that you create will look like this example:
 
 :::image type="content" source="../media/final-output.png" alt-text="Image of a map of the world that shows pollution data as colored circles.":::
 
