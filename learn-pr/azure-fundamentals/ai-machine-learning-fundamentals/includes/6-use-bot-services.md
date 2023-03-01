@@ -10,10 +10,10 @@ Once again, apply the decision criteria you're now familiar with to find the rig
 
 First, is Tailwind Traders building a virtual agent that interfaces with humans via natural language? Yes, it is. Azure Bot Service should be used in this scenario to implement a virtual agent chat experience. Bot Service could benefit from the information on the website's Frequently Asked Questions page, along with thousands of chat sessions that have been stored between shoppers and customer service representatives. Customer Service supervisors can test and tweak the answers to continue to refine the chat experience.
 
-Even though you've likely found the best option for this scenario, keep applying the decision criteria to see whether any additional options might work.
+Even though you've likely found the best option for this scenario, keep applying the decision criteria to see whether any other options might work.
 
 Second, does Tailwind Traders need a service that can understand the content and meaning of images, video, audio, or translate text into a different language? Possibly, yes. In this scenario, Azure Cognitive Services could be used along with Bot Service to build the solution. To expedite implementation, the developers could explore using prebuilt solutions, such as QnA Maker (part of Cognitive Services) or Power Virtual Agents. Also, any Azure Bot solution would likely implement several Azure Cognitive Services, such as Language Understanding (LUIS) and possibly Translator, to translate from the shopper's language to English and back again.
 
-Third, does Tailwind Traders need to predict user behavior or provide users with personalized recommendations? No, it doesn't. Azure Cognitive Services Personalizer is not a good candidate for this scenario.
+Third, does Tailwind Traders need to predict user behavior or provide users with personalized recommendations? No, it doesn't. Azure Cognitive Services Personalizer isn't a good candidate for this scenario.
 
-Finally, will the Tailwind Traders app need to predict future outcomes based on private historical data? No. Although Tailwind Traders *does* have historical data to feed into a model, which would make it possible to use Azure Machine Learning to create a chat solution, another option is already tailored for the chat bot experience.
+Finally, will the Tailwind Traders app need to predict future outcomes based on private historical data? No. Tailwind Traders *does* have historical data to feed into a model, which would make it possible to use Azure Machine Learning to create a chat solution. However, another option is already tailored for the chat bot experience.

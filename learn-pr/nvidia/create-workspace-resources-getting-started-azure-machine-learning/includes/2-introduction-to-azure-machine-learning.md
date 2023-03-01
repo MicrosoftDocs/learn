@@ -2,7 +2,7 @@ Azure Machine Learning  is a platform for creating and managing the end-to-end l
 
 ## Introduction to Azure Machine Learning 
 
-Azure Machine Learning  enables users familiar with Machine Learning  frameworks to quickly train and deploy models using code, while giving others powerful visual tools. All your training scripts, models, logs, and computes are centralized in a shared Workspace in Azure Machine Learning , which assists you in every step of building and deploying machine learning systems—meaning you can focus on models while Azure Machine Learning  does the rest.
+Azure Machine Learning  enables users familiar with Machine Learning  frameworks to quickly train and deploy models using code, while giving others powerful visual tools. All your training scripts, models, logs, and computes are centralized in a shared Workspace in Azure Machine Learning, which assists you in every step of building and deploying machine learning systems—meaning you can focus on models while Azure Machine Learning  does the rest.
 
 Azure Machine Learning  has a comprehensive suite of features to support logging, monitoring, and governance of datasets and models, ensuring your models are performing as intended and effectively communicated to stakeholders.
 
@@ -20,19 +20,18 @@ Models can be created in Azure Machine Learning  in several ways. Training can t
 
 _Automated Machine Learning (AutoML)_ automates creating the best machine learning models, helping users find the best model for their data—no matter their data science expertise. **Specializing in classification, regression, and time-series forecasting,** AutoML experiments with different features, algorithms, and parameters depending on the task—then provides scores on models it thinks are the best fit. These models can then be exported to an ONNX format that can run on various platforms and devices. AutoML’s versatility and speed mean it’s often used as a starting point by both experienced and novice data scientists.
 
-In the image below, we can see an overview of the AutoML pipeline building and recommending a model.
+In the following image, there's an overview of the AutoML pipeline building and recommending a model.
 
-![An azure machine learning automl pipeline is displayed.](../media/2-pipeline.gif)
+![An Azure machine learning automl pipeline is displayed.](../media/2-pipeline.gif)
 
 ## Compute
 
-The computing resources you need for your Machine Learning  environment can be allocated or attached through Azure Machine Learning . From the compute that powers your Jupyter notebooks for exploratory data analysis, to the clusters you'll use for training and the kubernetes clusters you'll deploy to for production inferencing at scale, it can be managed through Azure Machine Learning .
+The computing resources you need for your Machine Learning environment can be allocated or attached through Azure Machine Learning. From the compute that powers your Jupyter notebooks for exploratory data analysis, to the clusters you'll use for training and the kubernetes clusters you'll deploy to for production inferencing at scale, it can be managed through Azure Machine Learning.
 
 ## Managing data
 
-With Azure Machine Learning , the time-intensive process of data preparation and ingestion can be streaMachine Learning ined and collaboratively worked on. The platform smoothly integrates with _Azure Synapse, Azure Databricks,_ and a suite of other Azure services to assist data engineering pipelines to extract, transform, and load (ETL) raw data into datastores.
+With Azure Machine Learning, you can streamline and collaboratively work on the time-intensive process of data preparation and ingestion. The platform smoothly integrates with _Azure Synapse, Azure Databricks,_ and a suite of other Azure services to assist data engineering pipelines to extract, transform, and load (ETL) raw data into datastores.
 
 ### Datastores and labeling
 
-Azure Machine Learning  securely stores your raw data in the datastore, so you don’t have to rely on external sources for your scripts, and your training sets can be experimented upon without risking the integrity of the original raw data. Once stored, you can clean, transform, and label data to create training sets from the datastore. Azure Machine Learning  offers tools to help label tabular, image, and text data—with built-in machine learning systems that can suggest labels or fully automate data labeling. The example below shows a human led multi-label classification project underway in the Azure Machine Learning  studio.
-
+Azure Machine Learning  securely stores your raw data in the datastore, so you don’t have to rely on external sources for your scripts, and your training sets can be experimented upon without risking the integrity of the original raw data. Once stored, you can clean, transform, and label data to create training sets from the datastore. Azure Machine Learning  offers tools to help label tabular, image, and text data—with built-in machine learning systems that can suggest labels or fully automate data labeling.

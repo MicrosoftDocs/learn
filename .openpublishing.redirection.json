@@ -981,6 +981,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/react-to-state-changes-using-event-grid/6-summary.yml",                      
+      "redirect_url": "/training/modules/react-to-state-changes-using-event-grid/7-summary",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/deploy-configure-azure-arc-enabled-sql-managed-instance/1-introduction.yml",
       "redirect_url": "/training/modules/deploy-manage-azure-arc-enabled-sql-managed-instance",
       "redirect_document_id": false
@@ -1628,6 +1633,76 @@
     {
       "source_path": "learn-pr/student-evangelism/build-ml-model-with-azure-stream-analytics/13-summary.md",
       "redirect_url": "/training/modules/build-ml-model-with-azure-stream-analytics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/train-package-module-iot-edge/index.md",
+      "redirect_url": "/training/paths/ai-edge-engineer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/train-package-module-iot-edge/1-introduction.md",
+      "redirect_url": "/training/paths/ai-edge-engineer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/train-package-module-iot-edge/2-how-create-deploy-azure-ml-modules.md",
+      "redirect_url": "/training/paths/ai-edge-engineer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/train-package-module-iot-edge/3-exercise-create-deploy-azure-ml-module.md",
+      "redirect_url": "/training/paths/ai-edge-engineer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/train-package-module-iot-edge/4-how-view-container-repository.md",
+      "redirect_url": "/training/paths/ai-edge-engineer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/train-package-module-iot-edge/5-exercise-view-container-repository.md",
+      "redirect_url": "/training/paths/ai-edge-engineer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/train-package-module-iot-edge/6-how-view-generated-data.md",
+      "redirect_url": "/training/paths/ai-edge-engineer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/train-package-module-iot-edge/7-exercise-view-generated-data.md",
+      "redirect_url": "/training/paths/ai-edge-engineer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/train-package-module-iot-edge/8-clean-up-resources.md",
+      "redirect_url": "/training/paths/ai-edge-engineer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/train-package-module-iot-edge/9-knowledge-check.md",
+      "redirect_url": "/training/paths/ai-edge-engineer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/train-package-module-iot-edge/10-summary.md",
+      "redirect_url": "/training/paths/ai-edge-engineer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/train-package-module-iot-edge/11-what-is-virtual-machine.md",
+      "redirect_url": "/training/paths/ai-edge-engineer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/train-package-module-iot-edge/12-how-setup-communication.md",
+      "redirect_url": "/training/paths/ai-edge-engineer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/train-package-module-iot-edge/13-exercise-setup-communication.md",
+      "redirect_url": "/training/paths/ai-edge-engineer",
       "redirect_document_id": false
     },
     {
@@ -9174,6 +9249,61 @@
       "source_path": "learn-pr/student-evangelism/web-development-101/accessibility/7-summary.md",
       "redirect_url": "/training/modules/web-development-101-accessibility/7-summary",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/advanced-modeling-patterns-azure-cosmos-db/index.md",
+      "redirect_url": "/training/modules/design-data-partitioning-strategy/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/advanced-modeling-patterns-azure-cosmos-db/1-introduction.md",
+      "redirect_url": "/training/modules/design-data-partitioning-strategy/1-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/advanced-modeling-patterns-azure-cosmos-db/2-denormalizing-data.md",
+      "redirect_url": "/training/modules/design-data-partitioning-strategy/2-denormalize-data-your-model",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/advanced-modeling-patterns-azure-cosmos-db/3-exercise-set-up-environment.md",
+      "redirect_url": "/training/modules/design-data-partitioning-strategy/7-exercise-advanced-modeling-patterns",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/advanced-modeling-patterns-azure-cosmos-db/4-manage-referential-integrity-with-change-feed.md",
+      "redirect_url": "/training/modules/design-data-partitioning-strategy/3-manage-referential-integrity-by-using-change-feed",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/advanced-modeling-patterns-azure-cosmos-db/5-exercise-use-change-feed.md",
+      "redirect_url": "/training/modules/design-data-partitioning-strategy/7-exercise-advanced-modeling-patterns",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/advanced-modeling-patterns-azure-cosmos-db/6-combine-different-entities.md",
+      "redirect_url": "/training/modules/design-data-partitioning-strategy/5-denormalize-aggregates-same-container",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/advanced-modeling-patterns-azure-cosmos-db/7-denormalizing-aggregates.md",
+      "redirect_url": "/training/modules/design-data-partitioning-strategy/5-denormalize-aggregates-same-container",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/advanced-modeling-patterns-azure-cosmos-db/8-exercise-denormalizing-aggregates.md",
+      "redirect_url": "/training/modules/design-data-partitioning-strategy/7-exercise-advanced-modeling-patterns",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/advanced-modeling-patterns-azure-cosmos-db/9-finalize-data-model.md",
+      "redirect_url": "/training/modules/design-data-partitioning-strategy/6-finalize-data-model",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/advanced-modeling-patterns-azure-cosmos-db/10-summary.md",
+      "redirect_url": "/training/modules/design-data-partitioning-strategy/9-summary",
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/arm-template-test/2-what-if.md",
@@ -16821,66 +16951,6 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "learn-pr/azure/visual-studio-github-push/1-introduction.md",
-      "redirect_url": "/visualstudio/version-control/?wt.mc_id=learnredirect_githubvscode_content_cnl_csaapp",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/azure/visual-studio-github-push/10-knowledge-check.md",
-      "redirect_url": "/visualstudio/version-control/?wt.mc_id=learnredirect_githubvscode_content_cnl_csaapp",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/azure/visual-studio-github-push/11-summary.md",
-      "redirect_url": "/visualstudio/version-control/?wt.mc_id=learnredirect_githubvscode_content_cnl_csaapp",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/azure/visual-studio-github-push/2-add-github-account.md",
-      "redirect_url": "/visualstudio/version-control/?wt.mc_id=learnredirect_githubvscode_content_cnl_csaapp",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/azure/visual-studio-github-push/3-exercise-add-github-account.md",
-      "redirect_url": "/visualstudio/version-control/?wt.mc_id=learnredirect_githubvscode_content_cnl_csaapp",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/azure/visual-studio-github-push/4-create-repo.md",
-      "redirect_url": "/visualstudio/version-control/?wt.mc_id=learnredirect_githubvscode_content_cnl_csaapp",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/azure/visual-studio-github-push/5-exercise-create-repo.md",
-      "redirect_url": "/visualstudio/version-control/?wt.mc_id=learnredirect_githubvscode_content_cnl_csaapp",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/azure/visual-studio-github-push/6-commit-changes.md",
-      "redirect_url": "/visualstudio/version-control/?wt.mc_id=learnredirect_githubvscode_content_cnl_csaapp",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/azure/visual-studio-github-push/7-exercise-commit-changes.md",
-      "redirect_url": "/visualstudio/version-control/?wt.mc_id=learnredirect_githubvscode_content_cnl_csaapp",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/azure/visual-studio-github-push/8-push-changes.md",
-      "redirect_url": "/visualstudio/version-control/?wt.mc_id=learnredirect_githubvscode_content_cnl_csaapp",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/azure/visual-studio-github-push/9-exercise-push-changes.md",
-      "redirect_url": "/visualstudio/version-control/?wt.mc_id=learnredirect_githubvscode_content_cnl_csaapp",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/azure/visual-studio-github-push/index.md",
-      "redirect_url": "/visualstudio/version-control/?wt.mc_id=learnredirect_githubvscode_content_cnl_csaapp",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "learn-pr/wwl-azure/prepare-for-azure-stack-hub-deployment/9-knowledge-check.md",
       "redirect_url": "/training/modules/prepare-for-azure-stack-hub-deployment/10-knowledge-check",
       "redirect_document_id": true
@@ -19886,6 +19956,51 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/model-partition-data-azure-cosmos-db/index.md",
+      "redirect_url": "/training/modules/implement-non-relational-data-model/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/model-partition-data-azure-cosmos-db/1-introduction.md",
+      "redirect_url": "/training/modules/implement-non-relational-data-model/1-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/model-partition-data-azure-cosmos-db/2-nosql-versus-relational.md",
+      "redirect_url": "/training/modules/implement-non-relational-data-model/2-whats-difference-between-nosql-relational-databases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/model-partition-data-azure-cosmos-db/3-identify-access-patterns.md",
+      "redirect_url": "/training/modules/implement-non-relational-data-model/3-identify-access-patterns-for-your-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/model-partition-data-azure-cosmos-db/4-embed-or-reference-data.md",
+      "redirect_url": "/training/modules/implement-non-relational-data-model/4-when-to-embed-reference-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/model-partition-data-azure-cosmos-db/5-exercise-measure-performance.md",
+      "redirect_url": "/training/modules/implement-non-relational-data-model/5-exercise-measure-performance-for-customer-entities",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/model-partition-data-azure-cosmos-db/6-choosing-a-partition-key.md",
+      "redirect_url": "/training/modules/implement-non-relational-data-model/6-choose-partition-key",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/model-partition-data-azure-cosmos-db/7-modeling-small-lookup-tables.md",
+      "redirect_url": "/training/modules/implement-non-relational-data-model/7-model-small-lookup-entities",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/model-partition-data-azure-cosmos-db/8-summary.md",
+      "redirect_url": "/training/modules/implement-non-relational-data-model/9-summary",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-azure/get-tips-tricks-teach-az-900-microsoft-azure-ai-fundamentals/9-bring-it-together.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-az-900-microsoft-azure-ai-fundamentals/10-bring-it-all-together",
       "redirect_document_id": false
@@ -20246,6 +20361,186 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/windows/build-simple-website/1-introduction.md",
+      "redirect_url": "/training/modules/get-started-with-web-development/1-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/build-simple-website/2-project-structure.md",
+      "redirect_url": "/training/modules/get-started-with-web-development/2-project-structure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/build-simple-website/3-html-basics.md",
+      "redirect_url": "/training/modules/get-started-with-web-development/3-html-basics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/build-simple-website/4-css-basics.md",
+      "redirect_url": "/training/modules/get-started-with-web-development/4-css-basics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/build-simple-website/5-javascript-basics.md",
+      "redirect_url": "/training/modules/get-started-with-web-development/5-javascript-basics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/build-simple-website/6-knowledge-check.md",
+      "redirect_url": "/training/modules/get-started-with-web-development/6-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/build-simple-website/7-summary.md",
+      "redirect_url": "/training/modules/get-started-with-web-development/7-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/build-simple-website/index.md",
+      "redirect_url": "/training/modules/get-started-with-web-development/",
+      "redirect_document_id": false
+    },
+    {
+       "source_path": "learn-pr/wwl-azure/configure-azure-alerts/2-manage-azure-monitor-alerts.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-azure-alerts/2b-manage-azure-monitor-alerts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-language/csharp-code-blocks/3-method-class-namespace.md",
+      "redirect_url": "/training/modules/csharp-code-blocks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-language/csharp-code-blocks/4-exercise-remove-code-block.md",
+      "redirect_url": "/training/modules/csharp-code-blocks/3-exercise-remove-if-statements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-language/csharp-code-blocks/5-challenge.md",
+      "redirect_url": "/training/modules/csharp-code-blocks/4-exercise-challenge-variable-scope",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-language/csharp-code-blocks/6-solution.md",
+      "redirect_url": "/training/modules/csharp-code-blocks/5-review-solution-variable-scope",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-language/csharp-code-blocks/7-knowledge-check.md",
+      "redirect_url": "/training/modules/csharp-code-blocks/6-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-language/csharp-code-blocks/8-summary.md",
+      "redirect_url": "/training/modules/csharp-code-blocks/7-summary",
+      "redirect_document_id": false
+    },
+    {
+       "source_path": "learn-pr/wwl-azure/application-security/8-demonstration.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/application-security/13-demonstration",
+      "redirect_document_id": false
+    },
+    {
+       "source_path": "learn-pr/wwl-azure/application-security/9-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/application-security/14-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+       "source_path": "learn-pr/wwl-azure/application-security/10-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/application-security/15-summary",
+      "redirect_document_id": false
+    },
+    {
+       "source_path": "learn-pr/wwl-azure/application-security/7-web-app-certificates.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/application-security/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-language/csharp-modify-content/3-exercise-replace-remove.md",
+      "redirect_url": "/training/modules/csharp-modify-content/4-exercise-remove-replace",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-language/csharp-modify-content/4-challenge.md",
+      "redirect_url": "/training/modules/csharp-modify-content/5-exercise-challenge-extract-replace-remove-data",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-language/csharp-modify-content/5-solution.md",
+      "redirect_url": "/training/modules/csharp-modify-content/6-review-solution-extract-replace-remove-data",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-language/csharp-modify-content/6-knowledge-check.md",
+      "redirect_url": "/training/modules/csharp-modify-content/7-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-language/csharp-modify-content/7-summary.md",
+      "redirect_url": "/training/modules/csharp-modify-content/8-summary",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-language/csharp-do-while/5-knowledge-check.md",
+      "redirect_url": "/training/modules/csharp-do-while/7-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-language/csharp-do-while/6-summary.md",
+      "redirect_url": "/training/modules/csharp-do-while/8-summary",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/6-secure-score.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/10-secure-score",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/8-brute-force-attacks.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/11-brute-force-attacks",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/9-just-time-virtual-machine-access.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/12-just-time-virtual-machine-access",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/10-demonstration.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/13-demonstration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/11-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/14-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/12-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/15-summary",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/3-implement-azure-security-center.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/4-implement-azure-security-center",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/7-azure-defender.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/6-azure-defender",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/4-policies.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/8-policies",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/5-recommendations.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/9-recommendations",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "learn-pr/azure/sustainable-software-engineering-overview/3-carbon.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/sustainable-software-engineering-overview/3-carbon-efficiency/",
       "redirect_document_id": false
@@ -20254,6 +20549,6 @@
       "source_path": "learn-pr/azure/sustainable-software-engineering-overview/5-carbon-intensity.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/sustainable-software-engineering-overview/3-carbon-efficiency/",
       "redirect_document_id": false
-    }
+    }  
   ]
 }

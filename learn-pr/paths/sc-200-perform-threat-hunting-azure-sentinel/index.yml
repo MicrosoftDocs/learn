@@ -29,5 +29,6 @@ modules:
 - learn.azure.hunt-threats-sentinel
 - learn.wwl.use-search-jobs-microsoft-sentinel
 - learn.wwl.perform-threat-hunting-sentinel-with-notebooks
+- learn.wwl.sc-200-who-hacked-cloud-game
 trophy:
   uid: learn.wwl.sc-200-perform-threat-hunting-azure-sentinel.trophy

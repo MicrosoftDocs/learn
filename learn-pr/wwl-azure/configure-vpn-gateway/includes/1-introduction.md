@@ -1,3 +1,4 @@
+
 Organizations use a virtual private network (VPN) to create a private, encrypted connection for their resources and users to the internet. A VPN enables a true IP address to be changed or hidden to help prevent against unwanted access and malicious attacks. Azure VPN Gateway supports encrypted traffic between Azure virtual networks and on-premises locations over the internet, or between Azure virtual networks over the Microsoft network. 
 
 In this module, suppose you work as an IT administrator for a healthcare association. The company wants to connect their datacenter and other larger regional facilities to Azure. The infrastructure implementation requires secure connectivity to ensure private patient health data is protected while it's crossing the network. The current configuration doesn't have the bandwidth requirements to support a dedicated circuit.

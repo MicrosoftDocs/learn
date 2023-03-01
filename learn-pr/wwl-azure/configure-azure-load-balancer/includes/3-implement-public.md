@@ -1,3 +1,4 @@
+
 Administrators use public load balancers to map the public IP addresses and port numbers of incoming traffic to the private IP addresses and port numbers of virtual machines. The mapping can also be configured for response traffic from the virtual machines.
 
 Load-balancing rules are used to specify how to distribute specific types of traffic across multiple virtual machines or services. You can use this approach to share the load of incoming web request traffic across multiple web servers.

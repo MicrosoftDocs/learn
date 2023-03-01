@@ -1,3 +1,4 @@
+
 Every organization has data. That data needs to be protected at rest, in transit, and while it's being used within an application. Azure provides a set of security features to protect your data, no matter where it's located.
 
 ## Scenario

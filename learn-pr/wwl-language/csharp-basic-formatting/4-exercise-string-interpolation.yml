@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-basic-formatting.exercise-string-interpolation
+title: Exercise - Combine strings using string interpolation
+metadata:
+  title: Exercise - Combine strings using string interpolation
+  description: "Exercise - Combine strings using string interpolation"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+interactive: csharp
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-exercise-string-interpolation.md)]

@@ -1,0 +1,28 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-modify-content.exercise-lastindexof-indexofany
+title: Exercise - Use the string's IndexOfAny() and LastIndexOf() helper methods
+metadata:
+  title: Exercise - Use the string's IndexOfAny() and LastIndexOf() helper methods
+  description: "Exercise - Use the string's IndexOfAny() and LastIndexOf() helper methods"
+  ms.date: 02/25/2023
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 25
+content: |
+  [!include[](includes/3-exercise-lastindexof-indexofany.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What method would you use to search for the first occurrence of a search term in a long string?"
+    choices:
+    - content: "`IndexOfAny()`"
+      isCorrect: true
+      explanation: "Correct. `IndexOfAny()` returns the first position of an array of `char` that occurs inside of another string."
+    - content: "`LastIndexOf()`"
+      isCorrect: false
+      explanation: "Incorrect. `IndexOfAny()` returns the first position of an array of `char` that occurs inside of another string."
+    - content: "`Substring()`"
+      isCorrect: false
+      explanation: "Incorrect. `Substring()` returns a string that is equivalent to the substring that begins at startIndex."
