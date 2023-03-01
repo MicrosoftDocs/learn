@@ -20574,6 +20574,11 @@
       "source_path": "learn-pr/azure/sustainable-software-engineering-overview/8-network-efficiency.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/sustainable-software-engineering-overview/6-hardware-efficiency/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/sustainable-software-engineering-overview/10-optimization.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/sustainable-software-engineering-overview/",
+      "redirect_document_id": false
     }
   ]
 }
