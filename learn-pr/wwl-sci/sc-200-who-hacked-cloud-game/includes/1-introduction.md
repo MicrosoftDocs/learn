@@ -1,9 +1,8 @@
 
 # Test your skills by playing Who Hacked?
 
-<!--- Removing image for now
 :::image type="content" source="../media/keeping-up-appearances.png" alt-text="Image of six professionals and a mysterious shadow figure, with the Who Hacked? title on a magnifying glass.":::
--->
+
 
 You're a Security Operations Analyst working at a company that has implemented Microsoft Sentinel, Microsoft 365 Defender, Microsoft Purview and other Microsoft Cloud security products. You've recently completed the Microsoft Security Operations Analyst training and want to test your skills.
 

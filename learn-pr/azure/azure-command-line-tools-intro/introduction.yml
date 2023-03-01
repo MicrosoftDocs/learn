@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-command-line-tools-intro.introduction
+metadata:
+  title: Introduction
+  description: Introduction
+  ms.published: 02/27/2023
+  ms.date: 02/27/2023
+  author: mikefrobbins
+  ms.author: mirobb
+  ms.topic: module-choose-best-product
+  ms.prod: learning-azure
+title: Introduction
+durationInMinutes: 2
+content: |
+  [!include[](includes/introduction.md)]

@@ -1,6 +1,7 @@
 
 
 
+
 You've been asked to help secure information being transmitted between your companies app and the customer. Azure App Service has tools that let you  create, upload, or import a private certificate or a public certificate into App Service.
 
 A certificate uploaded into an app is stored in a deployment unit that is bound to the app service plan's resource group and region combination (internally called a *webspace*). This makes the certificate accessible to other apps in the same resource group and region combination.
@@ -47,7 +48,7 @@ The free certificate comes with the following limitations:
 
 If you purchase an App Service Certificate from Azure, Azure manages the following tasks:
 
-* Takes care of the purchase process from GoDaddy.
+* Takes care of the purchase process from certificate provider.
 * Performs domain verification of the certificate.
 * Maintains the certificate in Azure Key Vault.
 * Manages certificate renewal.
