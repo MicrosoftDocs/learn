@@ -20,7 +20,7 @@ The first step is to create a project that contains your unit tests, and add it 
 
 1. Select **Next**. The **Additional information** window appears.
 
-1. Under **Target Framework**. accept the default value of **.NET Core 3.1 (Long-term support)**.
+1. Under **Target Framework**. accept the default value of **.NET 6.0 (Long-term support)**.
 
 1. Select **Create**.
 
