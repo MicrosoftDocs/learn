@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.sustainable-software-engineering-overview.4-electricity
-title: "Principle 2: Electricity"
+uid: learn.azure.sustainable-software-engineering-overview.4-energy-efficiency
+title: "Principle 2: Energy efficiency"
 metadata:
-  title: "Principle 2: Electricity"
+  title: "Principle 2: Energy efficiency"
   description: The second principle of sustainable software engineering is to build applications that are energy efficient. In this unit, you'll learn about electricity, its relationship to carbon emissions, and its units of measurement.
   ms.date: 03/01/2023
   author: Zimmergren
