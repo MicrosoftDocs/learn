@@ -180,4 +180,5 @@ This is what the query processing looks like for events for a specific device.
 
 While you can run this distributed environment on a single node, it makes more sense to take advantage of storage distribution and parallel processing with a multi-node cluster. Now, you can take the first step in upgrading to a distributed environment by scaling your Azure Cosmos DB for PostgreSQL cluster from a single node to a multi-node cluster.
 
->**Note**: Adding nodes doesn't distribute data to the new nodes. You'll see this in the next exercise.
+> [!Note]
+> Adding nodes doesn't distribute data to the new nodes. You'll see this in the next exercise.
