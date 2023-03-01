@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.roles-and-responsibilities
-title: Prepare
+title: Roles and responsibilities
 metadata:
-  title: Prepare
-  description: "Project overview and setup requirements."
-  ms.date: 1/17/2023
+  title: Roles and responsibilities
+  description: "Overview of the roles and responsibilities of each product in our data governance and master data management stack. This includes Azure Data Lake Storage (ADLS) Gen2, Microsoft Purview, CluedIn, and Azure Data Factory (ADF)."
+  ms.date: 03/01/2023
   author: whhender
   ms.author: whhender
   ms.topic: interactive-tutorial

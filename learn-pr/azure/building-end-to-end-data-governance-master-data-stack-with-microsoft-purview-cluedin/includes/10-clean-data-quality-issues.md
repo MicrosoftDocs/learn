@@ -1,4 +1,4 @@
-Now that we've addressed the duplicate records in the system,  we need to fix the data quality issues that we detected when we looked at the raw data. 
+Now that we've addressed the duplicate records in the system, we need to fix the data quality issues that we detected when we looked at the raw data. 
 
 For this, we'll be using the CluedIn data steward tool: CluedIn Clean.
 

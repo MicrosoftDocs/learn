@@ -25,7 +25,3 @@ Azure Data Factory will be utilized to pull the data assets that are registered 
 ### Azure Data Factory
 
 Azure Data Factory (ADF) will be utilized as a generic data integration and data movement pipeline. It will copy data from the ADLS Gen2 storage account to CluedIn. It can also optionally be used as a data transformation service when necessary.
-
-### Azure Synapse
-
-Azure Synapse will be used to act as one of the downstream systems that is consuming data from the data landing zone that we're building as part of this learning module.

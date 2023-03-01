@@ -1,49 +1,51 @@
 ### YamlMime:Module
 uid: learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin
 metadata:
-  title: Building an end to end Data Governance and Master Data stack with Microsoft Purview and CluedIn
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the module; include relevant search keywords."
-  ms.date: 1/17/2023
+  title: Build an end to end data governance and master data management stack with Microsoft Purview and CluedIn.
+  description: "This training module will build a complete master data management and data governance stack end to end with Microsoft Purview and CluedIn. It includes developing golden records, deduplication, data lineage, and data quality strategies."
+  ms.date: 03/01/2023
   author: whhender
   ms.author: whhender
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
-title: Building an end to end Data Governance and Master Data stack with Microsoft Purview and CluedIn
+  ms.prod: learning-azure
+title: Build an end to end data governance and master data management stack with Microsoft Purview and CluedIn
 summary: |
-  TODO 2 sentences, 20-35 words, don't teach or motivate, avoid using 'learn', don't duplicate the title, include the note below; see https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main
-  > [!NOTE]
-  > This is a **_Guided Project_** module where you complete an end-to-end project by following step-by-step instructions.
+  Deploy a data technology stack that provides data governance, data quality, data lineage, data enrichment, and data standardization layers to your Azure ecosystem.
+  >[!NOTE]
+  >This is a **_Guided Project_** module where you complete an end-to-end project by following step-by-step instructions.
 abstract: |
-   In this module, you'll practice how to:
-    - "TODO learning objective 1"
-    - "TODO learning objective 2"
-    - "TODO learning objective 3 (if needed; see https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=main)"
+   In this module, you'll:
+    - Set up automated scans on Azure Data Lake Store Gen2 (ADLS Gen2) into Microsoft Purview.
+    - Set up automated data pipelines from Azure Data Factory to CluedIn through assets registered in Microsoft Purview.
+    - Stream data from CluedIn to ADLS Gen2.
+    - Standardize, clean, deduplicate, and enrich your data in CluedIn.
 prerequisites: |
-  - "TODO prerequisite 1"
-  - "TODO prerequisite 2"
-  - "TODO prerequisite 3 (if needed; see https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=main"
+  - An Azure account with an active subscription to complete. If you don't have one, you can follow [this link to create a free subscription](https://azure.microsoft.com/free/).
+  - Ability to navigate the Azure portal
+  - Familiarity with Azure Data Factory
+  - Familiarity with high-level concepts of Microsoft Purview
 iconUrl: /learn/achievements/generic-badge.svg
-levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
+levels:
   - beginner
-roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
+  - intermediate
+roles:
   - developer
-products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
+products:
 - microsoft-purview
-subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
+subjects:
   - cloud-computing
 units:
 - learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.introduction
 - learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.exercise-deploy-configure-environment
 - learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.roles-and-responsibilities
-- learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.integrating-deployed-technologies
-- learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.mapping-data
-- learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.exercise-streaming-data
-- learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.exploring-the-results
+- learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.integrate-deployed-technologies
+- learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.map-data
+- learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.stream-data
+- learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.explore-the-results
 - learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.exercise-fix-duplicate-records
 - learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.exercise-validate-microsoft-purview-scan
-- learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.cleaning-data-quality-issues
+- learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.clean-data-quality-issues
 - learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.exercise-incrementally-increase-readiness
-- learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.knowledge-check
 - learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.summary
 badge:
   uid: learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.badge

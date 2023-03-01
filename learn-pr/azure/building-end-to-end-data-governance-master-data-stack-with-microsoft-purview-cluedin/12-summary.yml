@@ -2,13 +2,13 @@
 uid: learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.summary
 title: Summary
 metadata:
-  title: summary
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
-  ms.date: 1/17/2023
+  title: Summary
+  description: "Delivering high quality data throughout the business is no small feat, but in this module we were able to complete an agile data pipeline to provide good, quality data to our end users."
+  ms.date: 03/01/2023
   author: whhender
   ms.author: whhender
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 1
 content: |
-  [!include[](includes/13-summary.md)]
+  [!include[](includes/12-summary.md)]
