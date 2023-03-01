@@ -38,12 +38,12 @@ To create an IoT Central application, you need an Azure Subscription. In this se
 
 1. Choose **Review + Create**.
 
-1. If validation passes, click **Create** to create your application.
+1. If validation passes, select **Create** to create your application.
 
-1. When your application has been created, click **Go to resource**.
+1. When your application has been created, select **Go to resource**.
 
 ## Check your work
 
 Your IoT Central custom application is now live and ready to connect to IoT Devices.
 
-1. Click the link for your **IoT Central Application URL**, such as https://coffee-maker-1234.azureiotcentral.com.
+1. Select the link for your **IoT Central Application URL**, such as https://coffee-maker-1234.azureiotcentral.com.

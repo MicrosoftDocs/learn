@@ -62,9 +62,9 @@ The following steps show you how to create a client application that implements 
 
 1. Copy and paste the following code into the empty editor window:
 
-:::code language="js" source="~/../iot-central-docs-samples/monitor-manage-device-with-iotcentral/CoffeeMaker.js":::
+    :::code language="js" source="~/../iot-central-docs-samples/monitor-manage-device-with-iotcentral/CoffeeMaker.js":::
 
-1. Update the placeholders `{ID scope}`, `{Device ID}`, and `{Device Primary key}` at the top of this code with the connection information you made a note of previously.
+1. Update the placeholders *`{ID scope}`*, *`{Device ID}`*, and *`{Device Primary key}`* at the top of this code with the connection information you made a note of previously.
 
 1. Select the three dots `...` to the top right of the editor to expand the editor menu. Then select **Save** to save the edits you made to *CoffeeMaker.js*
 
@@ -74,9 +74,11 @@ The following steps show you how to create a client application that implements 
     node CoffeeMaker.js
     ```
 
-1. Verify that the app starts in the Cloud Shell window with the message *Device successfully connected to Azure IoT Central* along with *Telemetry send:* messages. Congratulations! Your app is up and running and communicating with IoT Central!
+1. Verify that the app starts in the Cloud Shell window with the message *Device successfully connected to Azure IoT Central* along with *Telemetry send:* messages. 
 
-## Validate your connection
+Congratulations! Your app is up and running and communicating with IoT Central!
+
+## Check your work
 
 You've now worked with the Azure IoT Central application and connected the coffee machine to Azure IoT Central. You are well on your way to begin to monitor and manage your remote coffee machine. Here, you take a moment to validate your setup and connection by using the **Connected Coffee Machine** template that you defined earlier. You update the optimal temperature on the **Properties** form, run commands to update the state of your machine, and view your connected coffee machine telemetry.
 
@@ -86,7 +88,7 @@ Use the **Properties** form you defined in the device template to send configura
 
 1. Navigate to the **Devices** page in your Azure IoT Central application.
 
-1. Click on **ccm-001** in the list of devices to view the device details.
+1. Select **ccm-001** from the list of devices to view the device details.
 
 1. Select **Properties** to view the form.
 
@@ -103,7 +105,7 @@ Use the **Properties** form you defined in the device template to update configu
 
 1. Navigate to the **Devices** page in your Azure IoT Central application.
 
-1. Click on **ccm-001** in the list of devices to view the device details.
+1. Select **ccm-001** from the list of devices to view the device details.
 
 1. Select **Properties** to view the form.
 
@@ -168,11 +170,11 @@ Navigate to the **Commands** page for your device for the following exercise. To
     Telemetry send: Temperature: 93.8 Humidity: 64.4% Cup Detected: Y Brewing: N Maintenance Mode: Y
     ```
 
-> [!IMPORTANT]
-> It's recommended that you run the Node.js application no more than 60 minutes or so to prevent the application from sending you unwanted notifications/emails. Stopping the application when you're not working on the module also prevents you from exhausting the daily message quota.
-
 ### View the coffee machine telemetry
 
 Navigate to the **Telemetry** page for the coffee machine. You defined this page when you created the device template:
 
 ![Screenshot showing the Telemetry page for the connected coffee machine device template.](../media/6-telemetry.png)
+
+> [!IMPORTANT]
+> It's recommended that you run the Node.js application no more than 60 minutes or so to prevent the application from sending you unwanted notifications/emails. Stopping the application when you're not working on the module also prevents you from exhausting the daily message quota.

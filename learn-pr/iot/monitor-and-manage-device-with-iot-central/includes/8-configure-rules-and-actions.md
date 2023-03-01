@@ -26,4 +26,6 @@ Azure IoT Central can use email to send notifications. In this scenario, if the 
 
 1. Select **Done**. Then select **Save**. Your rule is listed on the **Rules** page.
 
+## Check your work
+
 To trigger the rule, set the optimal temperature on the **Properties** page for your device to _92_. Once you're done with the validation, turn off the rules to avoid flooding your inbox with emails.
