@@ -5,7 +5,7 @@ Before you can write Windows 10 apps on your computer, there's one more thing to
 
 Before Developer Mode is enabled, opening a project in Visual Studio opens the **For developers** page in **Settings** or opens the **Enable Developer Mode for Windows 10** window in Visual Studio:
 
-!["Enable Developer Mode for Windows 10" window in Visual Studio.](../media/latestenabledialog.png)
+![Screenshot showing the "Enable Developer Mode for Windows 10" window in Visual Studio.](../media/latestenabledialog.png)
 
 In this window, to open the **For developers** page, select the **settings for developers** link.
 
@@ -23,7 +23,7 @@ To enable Developer Mode or related settings:
 
 Here's the settings page on the desktop device family:
 
-![The "For developers" page](../media/devmode-pc-options.png)
+![Screenshot showing the "For developers" page](../media/devmode-pc-options.png)
 
 ## Developer Mode features
 

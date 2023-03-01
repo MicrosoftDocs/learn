@@ -7,7 +7,7 @@ To ensure that you're running the latest version of Windows:
 1. Go to **Settings**.
 1. Select **Update & Security**.
 
-   ![Windows Update.](../media/windows-update.png)
+   ![Screenshot showing a successful Windows update.](../media/windows-update.png)
 1. Select **Check for updates**.
 1. Let any updates get installed.
 
@@ -15,11 +15,11 @@ To ensure that you're running the latest version of Windows:
 
 1. In Microsoft Edge, go to [Scripts to simplify setting up a Windows developer box](https://github.com/Microsoft/windows-dev-box-setup-scripts) on GitHub.
 
-   ![Scripts to simplify setting up a Windows developer box.](../media/github-page.png)
+   ![Screenshot showing the scripts to simplify setting up a Windows developer box.](../media/github-page.png)
 
 1. Scroll down to the "How to run the scripts" table:
 
-   !["How to run the scripts" table](../media/run-scripts.png)
+   ![Screenshot showing the "how to run the scripts" table.](../media/run-scripts.png)
 
 1. Select the **Full Desktop App** link.
 1. Follow the instructions.
