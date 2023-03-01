@@ -20549,6 +20549,16 @@
       "source_path": "learn-pr/azure/sustainable-software-engineering-overview/5-carbon-intensity.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/sustainable-software-engineering-overview/3-carbon-efficiency/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/sustainable-software-engineering-overview/4-electricity.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/sustainable-software-engineering-overview/4-energy-efficiency/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/sustainable-software-engineering-overview/7-energy-proportionality.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/sustainable-software-engineering-overview/4-energy-efficiency/",
+      "redirect_document_id": false
     }  
   ]
 }

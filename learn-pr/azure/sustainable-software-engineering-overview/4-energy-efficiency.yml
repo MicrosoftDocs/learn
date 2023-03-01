@@ -15,4 +15,4 @@ metadata:
   - simont
 durationInMinutes: 2
 content: |
-  [!include[](includes/4-electricity.md)]
+  [!include[](includes/4-energy-efficiency.md)]

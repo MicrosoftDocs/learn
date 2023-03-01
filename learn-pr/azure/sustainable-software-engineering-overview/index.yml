@@ -44,11 +44,10 @@ subjects:
 units:
 - learn.azure.sustainable-software-engineering-overview.1-introduction
 - learn.azure.sustainable-software-engineering-overview.2-overview
-- learn.azure.sustainable-software-engineering-overview.3-carbon
-- learn.azure.sustainable-software-engineering-overview.4-electricity
-- learn.azure.sustainable-software-engineering-overview.5-carbon-intensity
+- learn.azure.sustainable-software-engineering-overview.3-carbon-efficiency
+- learn.azure.sustainable-software-engineering-overview.4-energy-efficiency
+
 - learn.azure.sustainable-software-engineering-overview.6-embodied-carbon
-- learn.azure.sustainable-software-engineering-overview.7-energy-proportionality
 - learn.azure.sustainable-software-engineering-overview.8-network-efficiency
 - learn.azure.sustainable-software-engineering-overview.9-demand-shaping
 - learn.azure.sustainable-software-engineering-overview.10-optimization
