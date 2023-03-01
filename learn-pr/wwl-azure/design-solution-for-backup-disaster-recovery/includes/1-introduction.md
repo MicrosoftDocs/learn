@@ -36,7 +36,7 @@ Design business continuity solutions
 
 - Design a solution for backup and disaster recovery
 
-### Prerequisites
+## Prerequisites
 
 - Conceptual knowledge of business continuity and disaster recovery solutions.
 
