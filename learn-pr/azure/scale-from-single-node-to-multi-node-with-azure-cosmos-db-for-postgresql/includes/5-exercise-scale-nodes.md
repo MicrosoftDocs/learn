@@ -72,7 +72,8 @@ Since Wide World Importers is experiencing a growth in data, you need to add wor
     - **Compute per node**: **4 vCores, 32 GiB RAM**
     - **Storage per node**: **512 GiB**
 
-    > **Note**: The worker node dropdowns apply to **each** worker node, not split among the worker nodes.
+    > [!NOTE]
+    > The worker node dropdowns apply to **each** worker node, not split among the worker nodes.
 
 4. Confirm the **Coordinator** section is already populated with the following values:
     - **Coordinator compute**: **4 vCores, 16 GiB RAM**

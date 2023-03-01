@@ -92,7 +92,8 @@ If you want to monitor the job runs, you can view their statuses and details wit
 SELECT * FROM cron.job_run_details;
 ```
 
-> **Note**: If you want to look at the 5 most recent job runs, run the following command: `SELECT * FROM cron.job_run_details ORDER BY start_time DESC LIMIT 5;`
+> [!NOTE]
+> If you want to look at the 5 most recent job runs, run the following command: `SELECT * FROM cron.job_run_details ORDER BY start_time DESC LIMIT 5;`
 
 ## Get a baseline understanding of the query in a non-distributed configuration
 
@@ -183,7 +184,8 @@ Here's how to accomplish these steps:
     COMMIT
     ```
 
-    > **Note**: If you're typing these commands and run into this error: 'DETAIL: Cannot create a primary key or unique constraint using such an index.', you may have left the `UNIQUE` out of the concurrent index creation. If you find yourself in this situation, you can get out of that by running `DROP INDEX CONCURRENTLY events_devices_idx` and then start again at step 1 for this section.
+    > [!NOTE]
+    > If you're typing these commands and run into this error: 'DETAIL: Cannot create a primary key or unique constraint using such an index.', you may have left the `UNIQUE` out of the concurrent index creation. If you find yourself in this situation, you can get out of that by running `DROP INDEX CONCURRENTLY events_devices_idx` and then start again at step 1 for this section.
 
 Confirm the new primary key is set by running the following command:
 
@@ -273,7 +275,8 @@ You may see the following notice as a response:
 NOTICE:  removing table public.events from metadata as it is not connected to any reference tables via foreign keys
 ```
 
-> **Note**: If you run into an error while dropping the constraint, try running the query again.
+> [!NOTE]
+> If you run into an error while dropping the constraint, try running the query again.
 
 If you run the query to check `citus_tables`, you'll notice that the events table is missing from the list. This isn't concerning as events will be distributed and in the metadata again soon.
 

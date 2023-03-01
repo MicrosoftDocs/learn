@@ -8,7 +8,7 @@ In this exercise, you create the tables and seed the data for the sensors databa
 
 ## Create an Azure Cosmos DB for PostgreSQL account
 
-> Important
+> [!IMPORTANT]
 >
 > Planning for future growth when initially selecting the size of your single-node cluster can help avoid downtime when the need to scale arises.
 >
@@ -30,7 +30,7 @@ Create an Azure Cosmos DB for PostgreSQL database with the following specificati
 
     ![Screenshot of the Azure Cosmos DB API options. The PostgreSQL option is highlighted.](../media/cosmos-db-select-api-option.png)
 
-    > The portal will display an Azure Cosmos DB for PostgreSQL configuration screen.
+    The portal will display an Azure Cosmos DB for PostgreSQL configuration screen.
 
 4. On the **Basics** tab, enter the following information. (Note the server name and password for later use.)
 
