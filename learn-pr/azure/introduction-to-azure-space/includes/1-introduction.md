@@ -1,4 +1,4 @@
-[!VIDEO d22e6b0e-bcb3-4ddf-a0aa-7d905259f0af] 
+> [!VIDEO d22e6b0e-bcb3-4ddf-a0aa-7d905259f0af] 
 
 Space is one of the fastest growing industries today. There are more satellites orbiting the earth than ever before. These satellites can be categorized into two broad categories: satellites that enable space-based communication and satellites that collect valuable data that can be used on earth.
 
