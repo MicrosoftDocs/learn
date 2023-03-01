@@ -20,7 +20,6 @@ prerequisites: |
   - Intermediate knowledge of containerization and container orchestration by using Kubernetes.
   - Intermediate knowledge of Azure SQL Managed Instance.
 iconUrl: /learn/achievements/generic-badge.svg
-hidden: true
 levels:
   - intermediate
 roles:

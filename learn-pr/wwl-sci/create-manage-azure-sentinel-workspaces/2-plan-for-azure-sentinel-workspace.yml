@@ -6,7 +6,7 @@ metadata:
   description: "Plan for the Microsoft Sentinel workspace"
   ms.date: 11/11/2022
   author: wwlpublish
-  ms.author: bneeb
+  ms.author: kelawson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false

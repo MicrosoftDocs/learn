@@ -1,3 +1,4 @@
+
 When you capture logs and data in Azure Monitor, Azure stores the collected information in a Log Analytics workspace. Your Log Analytics workspace is the basic management environment for Azure Monitor Logs.
 
 :::image type="content" source="../media/create-workspace-f37a5b11.png" alt-text="Screenshot that shows how to create a Log Analytics workspace in the Azure portal.":::
