@@ -169,48 +169,6 @@ In our sample application, your slow query logs are set up to be piped to Azure 
       | order by TimeGenerated desc
       ```
 
-## Query Store and Performance Insights
-
-Query Store is a feature that keeps track of query performance over time including query runtime statistics and wait events.
-
-Query Performance Insight works with Query Store to provide visualizations accessible from the Azure portal. These charts enable you to identify key queries that affect performance. Query Performance Insight is accessible in the Intelligent Performance section of your Azure Database for MySQL server's portal page.
-
-Query Performance Insight helps you to quickly identify what your longest running queries are, how they change over time, and what waits are affecting them.
-
-### Viewing performance insights
-
-The Query Performance Insight view in the Azure portal will surface visualizations on key information from Query Store.
-
-1. Sign in to the Azure portal.
-2. Select your Azure Database for MySQL server you use for your Azure Spring Apps
-3. In the portal page of your Azure Database for MySQL server, select **Query Performance Insight** under the **Intelligent Performance** section of the menu bar.
-
-### Long running queries
-
-The **Long running queries tab** shows the top 5 queries by average duration per execution, aggregated in 15-minute intervals
-
-> [!NOTE]
-> As part of the setup script, your Azure Spring Apps sample application activated Query Performance Insights for Long running queries for your MySQL instance.
-> For Query Performance Insight to function, data must exist in the Query Store and can take a few minutes to reflect.
-
-:::image type="content" source="../media/8-query-performance.jpg" alt-text="Screenshot showing Long running queries view for MySQL server" lightbox="../media/8-query-performance.jpg":::
-
-### Wait statistics
-
-Wait statistics provides a view of the wait events that occur during the execution of a specific query.
-Select the **Wait Statistics** tab to view the corresponding visualizations on waits in the server.
-
-> [!NOTE]
-> Wait statistics are meant for troubleshooting query performance issues. By default Wait Statistics is not switched on as it is recommended to be turned on only for troubleshooting purposes.
-
-## Performance Recommendations
-
-The Performance Recommendations feature analyzes workloads across your server to identify indexes with the potential to improve performance.
-Open Performance Recommendations from the **Intelligent Performance** section of the menu bar on the Azure portal page for your MySQL server.
-
-> [!NOTE]
-> For more information on Database Monitoring, see the **Summary** unit at the end of this training.
-
 ## UI monitoring
 
 If you add Application Insights to your page script, you get timings of page loads and AJAX calls, counts, and details of browser exceptions and AJAX failures, also users and session counts. All these metrics can be segmented by page, client OS and browser version, geo location, and other dimensions. You can set alerts on failure counts or slow page loading. And by inserting trace calls in your JavaScript code, you can track how the different features of your web page application are used.
