@@ -4,15 +4,15 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: This module will check the knowledge gained so far.
-  ms.date: 10/26/2020
-  author: ashussai
-  ms.author: ashussai
+  ms.date: 03/01/2023
+  author: Zimmergren
+  ms.author: tozimmergren
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom:
-  - team=cloud_advocates
   ms.contributors:
-  - ashussai-01042022
+  - tozimmergren
+  - vknight
+  - simont
 durationInMinutes: 3
 content: |
   [!include[](includes/11-knowledge-check.md)]

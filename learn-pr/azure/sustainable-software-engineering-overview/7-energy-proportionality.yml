@@ -4,15 +4,15 @@ title: "Principle 5: Energy proportionality"
 metadata:
   title: "Principle 5: Energy proportionality"
   description: The fifth principle of sustainable software engineering is to maximize the energy efficiency of hardware. In this unit, you'll learn why the relationship between energy consumption and useful output for hardware is non-linear.
-  ms.date: 10/26/2020
-  author: ashussai
-  ms.author: ashussai
+  ms.date: 03/01/2023
+  author: Zimmergren
+  ms.author: tozimmergren
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom:
-  - team=cloud_advocates
   ms.contributors:
-  - ashussai-11102020
+  - tozimmergren
+  - vknight
+  - simont
 durationInMinutes: 3
 content: |
   [!include[](includes/7-energy-proportionality.md)]
