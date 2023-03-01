@@ -32,9 +32,9 @@ You can set map navigation in your app code. For example, you can set the view t
 
 ## Layers
 
-You can augment maps by adding layers. A layer visualizes a data object on top of a map. In the app you create, you'll use a layer on a map to visualize air quality data.
+You can augment maps by adding layers. A layer visualizes a data object on top of a map. In the app you create, you use a layer on a map to visualize air quality data.
 
-When you create an app that uses a map control, you can choose from different layer types. All layer types render data sources that contain either GeoJSON data or [Mapbox vector tiles](https://github.com/mapbox/vector-tile-spec?azure-portal=true). We'll talk about GeoJSON later in this module.
+When you create an app that uses a map control, you can choose from different layer types. All layer types render data sources that contain either GeoJSON data or [Mapbox vector tiles](https://github.com/mapbox/vector-tile-spec?azure-portal=true). We discuss GeoJSON later in this module.
 
 Here are some of the layer types you can use with a map:
 
@@ -42,8 +42,8 @@ Here are some of the layer types you can use with a map:
 
 - **Bubble layer**: Bubble layers place circular bubbles at locations on a map. You can configure bubbles to represent data by changing their appearance, like size and color. For example, during a pandemic, different bubble sizes might indicate the number of people who have contracted an illness, with colors that reflect different mortality rates.
 
-- **Heat map**: Heat map layers represent data density. A heat map uses a range of colors to show "hot spot" areas on a map. For example, you might use a heat map to show the relative risk of an earthquake occurring at a location based on the number and strength of earthquakes at that location in the past.
+- **Heat map**: Heat map layers represent data density. A heat map uses a range of colors to show "hot spot" areas on a map. For example, you might use a heat map to show the relative risk of an earthquake occurring at a location. The "heat" for the location would be based on the number and strength of earthquakes at that location in the past.
 
 A data source defines the feature locations in a layer. The data source might also provide data that you can use to configure controls on the layer. For example, what image to display or how large to make a bubble.
 
-In this unit, you learned about the Azure Maps web SDK, including styles, navigation, and layers. Next, you'll create an Azure Maps account, so you can use the web SDK in a web app.
+In this unit, you learned about the Azure Maps web SDK, including styles, navigation, and layers. Next, you create an Azure Maps account, so you can use the web SDK in a web app.
