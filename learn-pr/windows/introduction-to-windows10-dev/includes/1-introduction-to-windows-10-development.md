@@ -1,4 +1,3 @@
-## Welcome to Windows 10 development
 
 Windows 10 is used on millions of desktop, laptop, and tablet computers worldwide. All these devices run apps that developers created with the same tools and frameworks. In this module, you'll learn about the various options for creating Windows 10 apps, their relative strengths, and the tools required to use them. By the time you finish, you'll be ready to start writing your own apps.
 
@@ -14,7 +13,7 @@ That's where this module comes in. It will help set the scene and get you comfor
 
 ## Windows development tools and platforms
 
-Most developers who write software for Windows use Visual Studio, the development environment that supports code editing, designing, building and debugging. Visual Studio is your toolbox, and where you'll spend your time honing your apps. But you can't create anything with Visual Studio alone, so you'll need to make use of software development kits (SDKs) and platforms such as .NET to make a working app. 
+Most developers who write software for Windows use Visual Studio, the development environment that supports code editing, designing, building and debugging. Visual Studio is your toolbox, and where you'll spend your time honing your apps. But you can't create anything with Visual Studio alone, so you'll need to make use of software development kits (SDKs) and platforms such as .NET to make a working app.
 
 As needs and technologies change over the years, a variety of platforms and frameworks have been created to help developers write apps. Different types of application use different tools, and different developers prefer some tools over others. There is no "one size fits all" rule. In this module, we explain your choices and then walk you through building an app by using some popular options.
 
