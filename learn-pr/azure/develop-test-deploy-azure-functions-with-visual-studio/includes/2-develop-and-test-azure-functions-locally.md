@@ -5,7 +5,7 @@ In the online luxury watch scenario, developers are already familiar with Visual
 In this unit, you'll learn to use tools available in Visual Studio for building and testing an Azure Function on your local computer.
 
 >[!IMPORTANT]
->This article supports .NET class library functions that run in-process with the runtime. Your C# functions can also run out-of-process and isolated from the Functions runtime. The isolated worker process model is the only way to run non-LTS versions of .NET and .NET Framework apps in current versions of the Functions runtime. To learn more, see [.NET isolated worker process functions](dotnet-isolated-process-guide.md).
+>This article supports .NET class library functions that run in-process with the runtime. Your C# functions can also run out-of-process and isolated from the Functions runtime. The isolated worker process model is the only way to run non-LTS versions of .NET and .NET Framework apps in current versions of the Functions runtime. To learn more, see [.NET isolated worker process functions](/azure/azure-functions/dotnet-isolated-process-guide).
 
 ## Modify Visual Studio Install
 
