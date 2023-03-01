@@ -10,31 +10,31 @@ Azure Architects address several points as they plan for backup and recovery of 
    - Resilient to component failure
    - Highly available (can run in a healthy state with no significant downtime)
 
-- To achieve your desired level of resilience and high availability, you need to accurately define your requirements:
-   - Identify your business needs
-   - Build your resiliency plan to address all of your business needs
+- To achieve the desired level of resilience and high availability, the plan must accurately define the requirements:
+   - Identify the business needs
+   - Build the resiliency plan to address all business needs
 
    > [!NOTE]
    > In this module, _resiliency_ is the ability of a system to gracefully handle and recover from failures, both inadvertent and malicious.
 
-- Requirements must be defined for each workload to back up, along with their usage patterns:
+- Requirements are defined for each workload to back up, along with workload usage patterns:
 
    - A **workload** is a distinct capability or task that's logically separated from other tasks in terms of business logic and data storage requirements. Each workload can have different requirements.
    
    - The **usage patterns** for a workload reveal differences in requirements to support the workload. Usage patterns can show how workload usage might change based on the time of day/week or region/geographic location.
 
-- Calculate the availability metrics for your infrastructure components:
+- Availability metrics are calculated for the infrastructure components:
 
    - **Mean time to recovery (MTTR)**: Determine the average time it takes to restore a component after a failure. 
    - **Mean time between failures (MTBF)**: Identify how long a component can reasonably expect to last between outages.
 
-- Account for the cost and risk of downtime or data loss, and calculate your recovery metrics:
+- The cost and risk of potential downtime or data loss are calculated by using recovery metrics:
 
-   - **Recovery time objective (RTO)**: Set the maximum acceptable time one of your apps can be unavailable following an incident.
+   - **Recovery time objective (RTO)**: Set the maximum acceptable time one of the apps can be unavailable following an incident.
    - **Recovery point objective (RPO)**: Set the maximum duration of data loss that's acceptable during a disaster.
-   - **Recovery level objective (RLO)**: Specify the granularity of your required recovery, such as recovering a web app, a website, or a specific resource. 
+   - **Recovery level objective (RLO)**: Specify the granularity of the required recovery, such as recovering a web app, a website, or a specific resource. 
 
-- Take into consideration documented service-level agreements (SLAs) along with your desired target SLAs for each workload.
+- Documented service-level agreements (SLAs) are considered, along with desired target SLAs for each workload.
 
 ### Things to consider when planning for backup and recovery
 
