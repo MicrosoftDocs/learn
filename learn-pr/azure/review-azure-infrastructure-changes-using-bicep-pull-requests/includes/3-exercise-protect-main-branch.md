@@ -1,6 +1,6 @@
 Your team is working on a Bicep template that already contains a website and a database. You've deployed the components to your production environment. Now, you need to update your Bicep template to add your order processing queue.
 
-In this exercise, you'll create a feature branch for your change. You'll also protect your main branch and only allow changes to be merged to the main branch after they've been reviewed. Before that, though, you need to make sure that your GitHub environment is set up to complete the rest of this module.
+In this exercise, you'll create a feature branch for your change. You'll also protect your main branch and only allow changes to be merged to the main branch after they've been reviewed. Before that, though, you need to make sure that your environment is set up to complete the rest of this module.
 
 During the process, you'll:
 
@@ -47,7 +47,7 @@ On the GitHub site, follow these steps to create a repository from the template:
 
    :::image type="content" source="../media/3-template.png" alt-text="Screenshot of the GitHub interface that shows the template repo, with the button for using the current template highlighted.":::
 
-1. Enter a name for your new project, such as **toy-website-review**.
+1. Enter a name for your new project, such as _toy-website-review_.
 
 1. Select the **Public** option.
 
@@ -72,7 +72,7 @@ On the Azure DevOps Demo Generator site, follow these steps:
 
 1. Select **Sign In** and accept the usage terms.
 
-1. On the **Create New Project** page, select your Azure DevOps organization. Then enter a project name, such as **toy-website-review**.
+1. On the **Create New Project** page, select your Azure DevOps organization. Then enter a project name, such as _toy-website-review_.
 
     :::image type="content" source="../media/3-create-new-project.png" alt-text="Screenshot that shows creating a project through the Azure DevOps Demo Generator.":::
 
@@ -104,7 +104,7 @@ You now have a copy of the template repository in your own account. Clone this r
    cd toy-website-review
    ```
 
-1. Type `git clone` and paste the URL that you copied earlier, and then run the command. The command looks something like this:
+1. Type `git clone` and paste the URL that you copied earlier, and then run the command. The command looks like this:
 
    ```bash
    git clone https://github.com/mygithubuser/toy-website-review.git
@@ -164,7 +164,7 @@ Configure your Git repository to prevent direct pushes to the main branch.
 
    :::image type="content" source="../media/3-github-branch-protections.png" alt-text="Screenshot of GitHub that shows the page for adding branch protection rules, with the button for adding a rule highlighted.":::
 
-1. In the **Branch name pattern** text box, enter **main**.
+1. In the **Branch name pattern** text box, enter _main_.
 
 1. Select **Require a pull request before merging**.
 
@@ -290,7 +290,7 @@ You've learned why it's not advisable to push directly to the main branch. Here,
    git push
    ```
 
-   Notice that your push fails with an error message that looks similar to this one:
+   Notice that your push fails with an error message that looks like this one:
 
    :::code language="plaintext" source="code/3-merge-error-github.txt" highlight="3" :::
 
@@ -325,7 +325,7 @@ You've learned why it's not advisable to push directly to the main branch. Here,
    git push
    ```
 
-   Notice that your push fails with an error message that looks similar to this one:
+   Notice that your push fails with an error message that looks like this one:
 
    :::code language="plaintext" source="code/3-merge-error-azure-repos.txt" highlight="3" :::
 

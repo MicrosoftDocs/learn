@@ -29,7 +29,7 @@ Because you can't push changes directly to your repository's main branch, you ne
 
    Update the description to the following text:
 
-   **This PR adds a new Azure Storage queue for processing orders, and updates the website configuration to include the storage account and queue information.**
+   _This PR adds a new Azure Storage queue for processing orders, and updates the website configuration to include the storage account and queue information._
 
 1. Select **Create pull request**.
 
@@ -51,7 +51,7 @@ Because you can't push changes directly to your repository's main branch, you ne
 
    Update the description to the following text:
 
-   **This PR adds a new Azure Storage queue for processing orders, and updates the website configuration to include the storage account and queue information.**
+   _This PR adds a new Azure Storage queue for processing orders, and updates the website configuration to include the storage account and queue information._
 
 1. Select **Create**.
 
@@ -78,7 +78,7 @@ Normally, a pull request is reviewed by someone other than its author. For this 
 
    :::image type="content" source="../media/5-github-pull-request-review-line.png" alt-text="Screenshot of GitHub that shows changes to the main dot bicep file. The mouse is hovering over line 18, and the button for adding comments is highlighted.":::
 
-1. In the comment box, enter the following text: **Should this be capitalized?**
+1. In the comment box, enter the following text: _Should this be capitalized?_
 
 1. Select **Start a review**.
 
@@ -112,7 +112,7 @@ Normally, a pull request is reviewed by someone other than its author. For this 
 
    :::image type="content" source="../media/5-repos-pull-request-review-line.png" alt-text="Screenshot of Azure DevOps that shows changes to the main dot bicep file. The mouse is hovering over line 18, and the button for adding a comment is highlighted.":::
 
-1. In the comment box, enter the following text: **Should this be capitalized?**
+1. In the comment box, enter the following text: _Should this be capitalized?_
 
 1. Select **Comment**.
 
@@ -134,7 +134,7 @@ When you create or review a pull request, you can participate in a conversation 
 
 ::: zone pivot="github"
 
-1. Respond to the review of the pull request with the following comment: **No, storage queues must have lowercase names.**
+1. Respond to the review of the pull request with the following comment: _No, storage queues must have lowercase names._
 
 1. Select **Comment**, and then select **Resolve conversation** to indicate that the discussion on the line is over.
 
@@ -148,7 +148,7 @@ When you create or review a pull request, you can participate in a conversation 
 
    :::image type="content" source="../media/5-repos-pull-request-overview.png" alt-text="Screenshot of Azure DevOps that shows the Overview tab.":::
 
-1. Now, imagine that you're the author of this file. Respond to the review of the pull request with the following comment: **No, storage queues must have lowercase names.**
+1. Now, imagine that you're the author of this file. Respond to the review of the pull request with the following comment: _No, storage queues must have lowercase names._
 
 1. Select **Reply & resolve** to indicate that the discussion on the line is over.
 
@@ -194,7 +194,7 @@ Your pull request has been approved. Your website's development team has confirm
 
    :::image type="content" source="../media/5-repos-pull-request-complete.png" alt-text="Screenshot of Azure DevOps that shows the Complete button for a pull request.":::
 
-1. From **Complete pull request**, leave all the default settings. Select **Complete merge**.
+1. From **Complete pull request**, use the default settings. Select **Complete merge**.
 
    :::image type="content" source="../media/5-repos-pull-request-complete-merge.png" alt-text="Screenshot of Azure DevOps that shows the pull request completion panel, with the button for completing a merge highlighted.":::
 

@@ -62,7 +62,7 @@ Even after you've created a pull request, you can keep making changes to the cod
 
 ## Review a pull request
 
-When you're reviewing a pull request, you can easily see all of the changes. You can comment on the entire pull request or just on specific parts of the files that have been changed. The pull request author can respond to comments, and other reviewers can participate in discussions. These commenting features make collaborating on pull requests an interactive experience.
+When you review a pull request, you can see all of the changes. You can comment on the entire pull request or just on specific parts of the files that have been changed. The pull request author can respond to comments, and other reviewers can participate in discussions. These commenting features make collaborating on pull requests an interactive experience.
 
 When you review Bicep code, look for these key elements:
 

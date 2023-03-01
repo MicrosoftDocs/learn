@@ -52,7 +52,7 @@ Aim for short-lived feature branches. This approach helps you avoid merge confli
 
 Split up large pieces of work into smaller pieces and create a feature branch for each one. The bigger the feature, the longer someone needs to work on it and the longer the feature branch will live. You can deploy the smaller changes to production as you merge each feature branch and gradually build up the broader work.
 
-Imagine that you're making some changes to a set of Bicep code. You're moving some resource definitions into modules. You also need to add some new resources to your Bicep files. It might be a good idea to do all of your module refactoring first, on its own branch. After the modules are merged, you can start to work on the additions to your Bicep files. By separating your changes, you keep each change - and its branch - small and easy to understand.
+Imagine that you're making some changes to a set of Bicep code. You're moving some resource definitions into modules. You also need to add some new resources to your Bicep files. It might be a good idea to do all of your module refactoring first, on its own branch. After the modules are merged, you can start to work on the additions to your Bicep files. By separating your changes, you keep each change, and its branch, small and easy to understand.
 
 When you work in this way, it can be helpful to use the `if` keyword to disable the deployment of resources until they're ready. The following example code shows how you would use the `if` keyword to create a Bicep file that defines a storage account but disables the storage account's deployment until you're done with all of the changes.
 
