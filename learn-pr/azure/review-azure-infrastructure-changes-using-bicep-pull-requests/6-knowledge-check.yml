@@ -45,7 +45,7 @@ quiz:
       explanation: Correct. It's a good practice to add a comment to notify the author that their file has an error. They can revise the code and update the pull request. After the change is made, you can approve the pull request.
     - content: Reject the pull request.
       isCorrect: false
-      explanation: Incorrect. That's not the best way to communicate that the file has an error.
+      explanation: Incorrect. Rejecting a pull request isn't the best way to communicate that the file has an error.
     - content: Approve the pull request. The author will notice the problem when they deploy the Bicep file.
       isCorrect: false
       explanation: Incorrect. The pull request process is designed to stop these kinds of issues before changes are merged.

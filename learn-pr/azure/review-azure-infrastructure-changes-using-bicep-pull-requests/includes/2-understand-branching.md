@@ -18,9 +18,9 @@ The following diagram illustrates this process.
 
 :::image type="content" source="../media/2-basic-process.png" alt-text="Diagram that shows the process of making local changes, pushing changes to the remote main branch, and triggering a pipeline." border="false":::
 
-Suppose the team member's changes introduced a subtle bug. After the complete process runs, the bug is now on the main branch of the project. This is the branch that gets deployed to production. You might not discover it until you try to deploy it and get an error. Or, for other types of bugs, the deployment might succeed but cause subtle problems later.
+Suppose the team member's changes introduced a subtle bug. After the complete process runs, the bug is now on the main branch of the project and gets deployed to production. You might not discover it until you try to deploy it and get an error. Or, for other types of bugs, the deployment might succeed but cause subtle problems later.
 
-In another scenario, suppose a team member is working on a feature and pushes half of the finished work of the feature to the shared repository's main branch. You now have changes on the main branch that aren't completely finished or tested. These changes probably shouldn't be deployed to your production environment. Deployments to production might need to be blocked until the feature is finished. If newly finished features are on the main branch, you might not be able to deploy them to your customers.
+In another scenario, suppose a team member is working on a feature and pushes half of the finished work of the feature to the shared repository's main branch. You now have changes on the main branch that aren't finished or tested. These changes probably shouldn't be deployed to your production environment. Deployments to production might need to be blocked until the feature is finished. If newly finished features are on the main branch, you might not be able to deploy them to your customers.
 
 > [!TIP]
 > These problems are particularly difficult for large teams, where multiple people contribute to the same code. But the guidance in this module is valuable as soon as you collaborate with more than one person. The guidance is valuable even when it's just you working on a project, and you're working on multiple features at the same time.
@@ -31,15 +31,15 @@ A better way of working is to keep your changes separate while you work on them.
 
 A _feature branch_ indicates a new piece of work you're starting. The work might be a change to the configuration of a resource defined in your Bicep file, or a new set of resources that you need to deploy. Every time you start a new piece of work, you create a new feature branch.
 
-You create a feature branch from the main branch. By doing this, you ensure that you're starting from the current state of your Azure environment. Then, you make all your necessary changes.
+You create a feature branch from the main branch. When you create a branch, you ensure that you're starting from the current state of your Azure environment. Then, you make all your necessary changes.
 
-Because all of the code changes are committed to the feature branch, they won't interfere with the main branch of the repository. If somebody else on your team needs to make an urgent change to the main branch, they can do that on another feature branch that's independent of yours.
+Because all of the code changes are committed to the feature branch, they don't interfere with the main branch of the repository. If somebody else on your team needs to make an urgent change to the main branch, they can do that on another feature branch that's independent of yours.
 
 You can collaborate on feature branches, too. By publishing and pushing your feature branch to the shared repository, you and your team members can work together on a change. Or, you can hand over a feature to someone else to complete when you go on vacation.
 
 ### Update your feature branches
 
-While your feature branch is underway, other features might be merged into the main branch of your repository. This means that your feature branch and the main branch of your project will drift apart. The farther they drift apart, the harder it will be to merge the two branches again at a later point, and the more merge conflicts you might encounter.
+While your feature branch is underway, other features might be merged into the main branch of your repository. The result is that your feature branch and the main branch of your project will drift apart. The further they drift apart, the more difficult it becomes to merge the two branches again at a later point, and the more merge conflicts you might encounter.
 
 You should update your feature branch regularly so that you incorporate any changes that have been made to the main branch of the repository. It's also a good idea to update your feature branch before you start to merge the feature branch back into the main branch. This way, you make sure that your new changes can be merged into the main branch easily.
 
@@ -50,9 +50,9 @@ You should update your feature branch regularly so that you incorporate any chan
 
 Aim for short-lived feature branches. This approach helps you avoid merge conflicts by reducing the amount of time that your branches might get out of sync. This approach also makes it easier for your colleagues to understand the changes that have been made, which is helpful when you need someone to review your changes.
 
-Split up large pieces of work into smaller pieces and create a feature branch for each one. The bigger the feature, the longer someone will need to work on it and the longer the feature branch will live. You can deploy the smaller changes to production as you merge each feature branch and gradually build up the broader work.
+Split up large pieces of work into smaller pieces and create a feature branch for each one. The bigger the feature, the longer someone needs to work on it and the longer the feature branch will live. You can deploy the smaller changes to production as you merge each feature branch and gradually build up the broader work.
 
-Imagine that you're making some changes to a set of Bicep code. You're moving some resource definitions into modules. You also need to add some new resources to your Bicep files. It might be a good idea to do all of your module refactoring first, on its own branch. After this is merged, you can start to work on the additions to your Bicep files. By separating your changes, you keep each change - and its branch - small and easy to understand.
+Imagine that you're making some changes to a set of Bicep code. You're moving some resource definitions into modules. You also need to add some new resources to your Bicep files. It might be a good idea to do all of your module refactoring first, on its own branch. After the modules are merged, you can start to work on the additions to your Bicep files. By separating your changes, you keep each change - and its branch - small and easy to understand.
 
 When you work in this way, it can be helpful to use the `if` keyword to disable the deployment of resources until they're ready. The following example code shows how you would use the `if` keyword to create a Bicep file that defines a storage account but disables the storage account's deployment until you're done with all of the changes.
 
@@ -79,7 +79,7 @@ In GitHub, you can configure _branch protections_ for the shared repository's ma
 - No change can be merged into the main branch except through a pull request.
 - Changes need to be reviewed by at least two other people.
 
-If somebody tries to push a commit directly to a protected branch, the push will fail. You'll learn how to apply branch protections in the next unit.
+If somebody tries to push a commit directly to a protected branch, the push fails. You'll learn how to apply branch protections in the next unit.
 
 ::: zone-end
 
@@ -92,7 +92,7 @@ In Azure DevOps, you can configure _branch policies_ for the shared repository's
 - No change can be merged into the main branch except through a pull request.
 - Changes need to be reviewed by at least two other people.
 
-If somebody tries to push a commit directly to a protected branch, the push will fail. You'll learn how to apply branch policies in the next unit.
+If somebody tries to push a commit directly to a protected branch, the push fails. You'll learn how to apply branch policies in the next unit.
 
 ::: zone-end
 
@@ -108,7 +108,7 @@ Some other branching strategies require you to create _release branches_. When y
 
 Other branching strategies include Gitflow, GitHub Flow, and GitLab Flow. Some teams use GitHub Flow or GitLab Flow because it enables separating work from different teams, along with separating urgent bug fixes from other changes. These processes can also enable you to separate your commits into different releases of your solution, which is called _cherry picking_. However, they require more management to ensure that your changes are compatible with each other. The summary of this module provides links to more information on these branching strategies.
 
-The branching strategy that's right for your team depends on the way your team works, collaborates, and releases your changes. It's a good idea to start from a simple process, like trunk-based development. If you find that your team can't work effectively by using this process, gradually introduce additional layers of branching, or adopt a branching strategy. But be aware that as you add more branches, managing your repository will become more complex.
+The branching strategy that's right for your team depends on the way your team works, collaborates, and releases your changes. It's a good idea to start from a simple process, like trunk-based development. If you find that your team can't work effectively by using this process, gradually introduce other layers of branching, or adopt a branching strategy. But be aware that as you add more branches, managing your repository becomes more complex.
 
 > [!TIP]
 > Regardless of the branching strategy that you use, it's good to use branch policies to protect the main branch, and to use pull requests to review your changes. Other branching strategies also introduce important branches that you should protect.

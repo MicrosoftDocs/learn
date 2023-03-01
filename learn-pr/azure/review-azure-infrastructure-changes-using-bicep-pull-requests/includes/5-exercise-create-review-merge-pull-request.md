@@ -25,7 +25,7 @@ Because you can't push changes directly to your repository's main branch, you ne
 
    :::image type="content" source="../media/5-github-new-pull-request.png" alt-text="Screenshot of GitHub that shows the branch list. The button for a new pull request is highlighted for the add-orders-queue branch.":::
 
-1. On the page for creating a pull request, notice that GitHub automatically used the Git commit message as the pull request title.
+1. When you created the pull request, notice that GitHub automatically used the Git commit message as the pull request's title.
 
    Update the description to the following text:
 
@@ -65,7 +65,7 @@ Normally, a pull request is reviewed by someone other than its author. For this 
 
 ::: zone pivot="github"
 
-1. On the pull request page, select the **Files changed** tab.
+1. From the pull request page, select the **Files changed** tab.
 
    :::image type="content" source="../media/5-github-pull-request-review-files-changed.png" alt-text="Screenshot of GitHub that shows the tab for changed files in a pull request.":::
 
@@ -99,7 +99,7 @@ Normally, a pull request is reviewed by someone other than its author. For this 
 
 ::: zone pivot="azurerepos"
 
-1. On the pull request page, select the **Files** tab.
+1. From the pull request page, select the **Files** tab.
 
    :::image type="content" source="../media/5-repos-pull-request-review-files-changed.png" alt-text="Screenshot of Azure DevOps that shows the files changed in the pull request.":::
 
@@ -118,6 +118,10 @@ Normally, a pull request is reviewed by someone other than its author. For this 
 
    :::image type="content" source="../media/5-repos-pull-request-review-comment.png" alt-text="Screenshot of Azure DevOps that shows the comment field, with the Comment button highlighted.":::
 
+1. Close the **Discussion** window.
+
+   :::image type="content" source="../media/5-repos-pull-request-close-discussion.png" alt-text="Screenshot of Azure DevOps that shows the discussion window, with the close button highlighted.":::
+
 1. Select **Approve**.
 
    :::image type="content" source="../media/5-repos-pull-request-approve.png" alt-text="Screenshot of Azure DevOps that shows the Approve button for the pull request.":::
@@ -130,7 +134,7 @@ When you create or review a pull request, you can participate in a conversation 
 
 ::: zone pivot="github"
 
-1. Respond to the review on the pull request with the following comment: **No, storage queues must have lowercase names.**
+1. Respond to the review of the pull request with the following comment: **No, storage queues must have lowercase names.**
 
 1. Select **Comment**, and then select **Resolve conversation** to indicate that the discussion on the line is over.
 
@@ -144,7 +148,7 @@ When you create or review a pull request, you can participate in a conversation 
 
    :::image type="content" source="../media/5-repos-pull-request-overview.png" alt-text="Screenshot of Azure DevOps that shows the Overview tab.":::
 
-1. Now, imagine that you're the author of this file. Respond to the review on the pull request with the following comment: **No, storage queues must have lowercase names.**
+1. Now, imagine that you're the author of this file. Respond to the review of the pull request with the following comment: **No, storage queues must have lowercase names.**
 
 1. Select **Reply & resolve** to indicate that the discussion on the line is over.
 
@@ -178,7 +182,7 @@ Your pull request has been approved. Your website's development team has confirm
 
    Your pull request is merged, and your new feature is now in the main branch of your repository.
 
-1. It's a good practice to delete your feature branches when you're done with them. This helps you avoid confusing team members in the future about which work is still in progress. Select **Delete branch**.
+1. It's a good practice to delete your feature branches when you're done with them. Deleting branches helps you avoid confusing team members in the future about which work is still in progress. Select **Delete branch**.
 
    :::image type="content" source="../media/5-github-pull-request-merge-delete.png" alt-text="Screenshot of GitHub that shows a pull request with the button for deleting a branch highlighted.":::
 
@@ -190,19 +194,19 @@ Your pull request has been approved. Your website's development team has confirm
 
    :::image type="content" source="../media/5-repos-pull-request-complete.png" alt-text="Screenshot of Azure DevOps that shows the Complete button for a pull request.":::
 
-1. In the slide-out window, leave all the default settings. Select **Complete merge**.
+1. From **Complete pull request**, leave all the default settings. Select **Complete merge**.
 
    :::image type="content" source="../media/5-repos-pull-request-complete-merge.png" alt-text="Screenshot of Azure DevOps that shows the pull request completion panel, with the button for completing a merge highlighted.":::
 
    Your pull request is merged, and your new feature is now in the main branch of your repository.
 
-   Azure DevOps automatically deleted the feature branch when you merged the pull request. It's a good practice to delete your feature branches when you're done with them. This helps you avoid confusing team members in the future about which work is still in progress.
+   Azure DevOps automatically deleted the feature branch when you merged the pull request. It's a good practice to delete your feature branches when you're done with them. Deleting branches helps you avoid confusing team members in the future about which work is still in progress.
 
 ::: zone-end
 
 ## Verify the changes
 
-Because this is your first time merging a pull request, it's a good idea to confirm that the changes have been merged successfully.
+After you merge a pull request, it's a good idea to confirm that the changes were merged successfully.
 
 ::: zone pivot="github"
 

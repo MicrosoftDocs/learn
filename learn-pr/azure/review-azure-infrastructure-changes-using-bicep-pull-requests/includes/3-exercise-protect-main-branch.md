@@ -174,7 +174,7 @@ Configure your Git repository to prevent direct pushes to the main branch.
 
    You select this setting as an example to show how `git push` to `main` fails later in this exercise. In a production environment, you might not want to restrict direct merges to `main` for administrators or repository owners.
 
-1. Near the bottom of the page, select **Save changes**.
+1. Near the bottom of the page, select **Create**.
 
    :::image type="content" source="../media/3-github-branch-protections-add.png" alt-text="Screenshot of GitHub that shows the Create button.":::
 
