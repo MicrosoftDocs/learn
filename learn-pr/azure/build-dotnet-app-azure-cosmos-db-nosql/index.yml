@@ -10,7 +10,7 @@ metadata:
   manager: jroth
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.date: 7/11/2022
+  ms.date: 3/1/2023
 title: Guided project - Build a .NET app with Azure Cosmos DB for NoSQL
 summary: |
   Connect to an Azure Cosmos DB for NoSQL account using C# and .NET to perform common operations. Your code creates resources, coordinate multiple operations, and query items.
