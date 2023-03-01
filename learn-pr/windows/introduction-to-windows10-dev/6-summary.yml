@@ -19,13 +19,13 @@ quiz:
     - content: What is the name of the tool you should use to write Windows 10 apps?
       choices:
       - content: XCode
-        explanation: Incorrect. XCode is not used for Windows development.
+        explanation: Incorrect. XCode isn't used for Windows development.
         isCorrect: false
       - content: Visual Studio
         explanation: Correct. You'll use Visual Studio 2017 to write Windows 10 apps.
         isCorrect: true
       - content: Android Studio
-        explanation: Incorrect. Android Studio is not used for Windows development.
+        explanation: Incorrect. Android Studio isn't used for Windows development.
         isCorrect: false
       - content: Text Editor & Command Line
         explanation: Incorrect. We strongly recommend using an IDE for Windows app development.
@@ -58,10 +58,10 @@ quiz:
         explanation: Incorrect. A developer account isn't required to create Windows apps.
         isCorrect: false
       - content: Join the Windows Insider Program.
-        explanation: Incorrect. A Microsoft account is required to become a Windows Insider. A developer account is not.
+        explanation: Incorrect. A Microsoft account is required to become a Windows Insider. A developer account isn't.
         isCorrect: false
       - content: Enable Developer Mode on your machine.
-        explanation: Incorrect. Developer Mode can be enabled by anyone, regardless of their account.
+        explanation: Incorrect. Anyone can enable Developer Mode, regardless of their account.
         isCorrect: false
       - content: Submit your app to the Windows Store.
         explanation: Correct. You require a developer account to submit your app to the Windows Store, and to make money from it.
