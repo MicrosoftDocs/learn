@@ -3,7 +3,7 @@ uid: learn.azure.azure-sentinel-deploy-connect.3-permissions-roles
 metadata:
   title: Describe Microsoft Sentinel permissions and roles
   description: Describe Microsoft Sentinel permissions and roles
-  ms.date: 02/27/2023
+  ms.date: 03/01/2023
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial

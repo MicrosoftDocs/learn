@@ -3,7 +3,7 @@ uid: learn.azure.azure-sentinel-deploy-connect.4-connect-data-sources
 metadata:
   title: Connect data sources
   description: Connect data sources
-  ms.date: 02/27/2023
+  ms.date: 03/01/2023
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
