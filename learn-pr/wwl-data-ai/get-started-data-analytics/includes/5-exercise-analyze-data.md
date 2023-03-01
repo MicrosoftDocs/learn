@@ -46,7 +46,7 @@ PivotTables are an excellent way to *slice and dice* data, summarizing numeric m
 
 ### Create a PivotTable
 
-1. If you havn't already done so, in your web browser, navigate to [https://onedrive.live.com](https://onedrive.live.com), and sign in using your Microsoft account credentials. Then open the **Lemonade.xlsx** workbook in the folder where you uploaded it in the **Before you start** section. Your workbook should look like this:
+1. If you haven't already done so, in your web browser, navigate to [https://onedrive.live.com](https://onedrive.live.com), and sign in using your Microsoft account credentials. Then open the **Lemonade.xlsx** workbook in the folder where you uploaded it in the **Before you start** section. Your workbook should look like this:
 
     :::image type="content" source="../media/conditional-bottom-ten.png" alt-text="Screenshot of Lemonade workbook in Excel Online.":::
 
