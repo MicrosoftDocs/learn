@@ -20579,6 +20579,16 @@
       "source_path": "learn-pr/azure/sustainable-software-engineering-overview/10-optimization.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/sustainable-software-engineering-overview/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/sustainable-software-engineering-overview/11-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/sustainable-software-engineering-overview/9-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/sustainable-software-engineering-overview/12-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/sustainable-software-engineering-overview/10-summary",
+      "redirect_document_id": false
     }
   ]
 }

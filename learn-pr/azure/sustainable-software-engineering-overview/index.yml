@@ -46,12 +46,11 @@ units:
 - learn.azure.sustainable-software-engineering-overview.2-overview
 - learn.azure.sustainable-software-engineering-overview.3-carbon-efficiency
 - learn.azure.sustainable-software-engineering-overview.4-energy-efficiency
-
-- learn.azure.sustainable-software-engineering-overview.6-embodied-carbon
-- learn.azure.sustainable-software-engineering-overview.8-network-efficiency
-- learn.azure.sustainable-software-engineering-overview.9-demand-shaping
-- learn.azure.sustainable-software-engineering-overview.10-optimization
-- learn.azure.sustainable-software-engineering-overview.11-knowledge-check
-- learn.azure.sustainable-software-engineering-overview.12-summary
+- learn.azure.sustainable-software-engineering-overview.5-carbon-awareness
+- learn.azure.sustainable-software-engineering-overview.6-hardware-efficiency
+- learn.azure.sustainable-software-engineering-overview.7-measurement
+- learn.azure.sustainable-software-engineering-overview.8-climate-commitments
+- learn.azure.sustainable-software-engineering-overview.9-knowledge-check
+- learn.azure.sustainable-software-engineering-overview.10-summary
 badge:
   uid: learn.azure.sustainable-software-engineering-overview.badge

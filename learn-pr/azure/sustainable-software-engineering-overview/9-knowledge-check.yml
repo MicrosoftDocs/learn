@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.sustainable-software-engineering-overview.11-knowledge-check
+uid: learn.azure.sustainable-software-engineering-overview.9-knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: This module will check the knowledge gained so far.
+  description: This module checks the knowledge gained so far.
   ms.date: 03/01/2023
   author: Zimmergren
   ms.author: tozimmergren
@@ -15,7 +15,7 @@ metadata:
   - simont
 durationInMinutes: 3
 content: |
-  [!include[](includes/11-knowledge-check.md)]
+  [!include[](includes/9-knowledge-check.md)]
 quiz:
   title: Check your knowledge
   questions:

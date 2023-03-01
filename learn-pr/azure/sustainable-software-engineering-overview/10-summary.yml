@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.sustainable-software-engineering-overview.12-summary
+uid: learn.azure.sustainable-software-engineering-overview.10-summary
 title: Summary
 metadata:
   title: Summary
@@ -15,4 +15,4 @@ metadata:
   - simont
 durationInMinutes: 2
 content: |
-  [!include[](includes/12-summary.md)]
+  [!include[](includes/10-summary.md)]
