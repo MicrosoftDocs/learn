@@ -1,16 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-solution-for-backup-disaster-recovery.design-for-azure-blob-backup-recovery
-title: Design for Azure blob backup and recovery
+title: Design for Azure Blob Storage backup and recovery
 metadata:
-  title: Design for Azure blob backup and recovery
-  description: "Design for Azure blob backup and recovery"
-  ms.date: 11/18/2022
+  title: Design for Azure Blob Storage backup and recovery
+  description: "Design backup and recovery for Azure blobs with operational backup for Azure Blob Storage."
+  ms.date: 03/07/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 4
 content: |
   [!include[](includes/4-design-for-azure-blob-backup-recovery.md)]

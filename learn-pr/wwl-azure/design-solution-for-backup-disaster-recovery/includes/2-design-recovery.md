@@ -6,11 +6,11 @@ It's also vital that any mission-critical application and its associated data ar
 
 Azure Architects address several points as they plan for backup and recovery of their infrastructure. Let's review some of the common concepts and prominent considerations.
 
-- A primary goal for backup and recovery is to ensure your business applications are reliable:
-   - Resilient to component failure
-   - Highly available (can run in a healthy state with no significant downtime)
+- A primary goal for backup and recovery is to ensure business applications are reliable:
+   - Apps must be resilient to component failure
+   - Apps must be highly available, which means they can run in a healthy state with no significant downtime
 
-- To achieve the desired level of resilience and high availability, the plan must accurately define the requirements:
+- To achieve the desired level of resilience and high availability, a backup and recovery plan must accurately define the requirements:
    - Identify the business needs
    - Build the resiliency plan to address all business needs
 
@@ -23,18 +23,18 @@ Azure Architects address several points as they plan for backup and recovery of 
    
    - The **usage patterns** for a workload reveal differences in requirements to support the workload. Usage patterns can show how workload usage might change based on the time of day/week or region/geographic location.
 
-- Availability metrics are calculated for the infrastructure components:
+- The recovery plan includes availability metrics that are calculated for the infrastructure components:
 
-   - **Mean time to recovery (MTTR)**: Determine the average time it takes to restore a component after a failure. 
-   - **Mean time between failures (MTBF)**: Identify how long a component can reasonably expect to last between outages.
+   - **Mean time to recovery (MTTR)**: Determines the average time it takes to restore a component after a failure. 
+   - **Mean time between failures (MTBF)**: Identifies how long a component can reasonably expect to last between outages.
 
-- The cost and risk of potential downtime or data loss are calculated by using recovery metrics:
+- The cost and risk of downtime or data loss are represented in the plan by using calculated recovery metrics:
 
-   - **Recovery time objective (RTO)**: Set the maximum acceptable time one of the apps can be unavailable following an incident.
-   - **Recovery point objective (RPO)**: Set the maximum duration of data loss that's acceptable during a disaster.
-   - **Recovery level objective (RLO)**: Specify the granularity of the required recovery, such as recovering a web app, a website, or a specific resource. 
+   - **Recovery time objective (RTO)**: Defines the maximum acceptable time one of the apps can be unavailable following an incident.
+   - **Recovery point objective (RPO)**: Defines the maximum duration of data loss that's acceptable during a disaster.
+   - **Recovery level objective (RLO)**: Specifies the granularity of the required recovery, such as recovering a web app, a website, or a specific resource. 
 
-- Documented service-level agreements (SLAs) are considered, along with desired target SLAs for each workload.
+- The plan should include the documented service-level agreements (SLAs), and the desired target SLAs for each workload.
 
 ### Things to consider when planning for backup and recovery
 

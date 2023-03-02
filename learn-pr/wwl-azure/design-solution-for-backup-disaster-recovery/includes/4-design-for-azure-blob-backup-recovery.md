@@ -1,49 +1,59 @@
-[Operational backup for blobs](/azure/backup/blob-backup-overview) is a local backup solution. The backup data isn't transferred to the Backup vault but is stored in the source storage account itself. This is a **continuous backup** solution. You don’t need to schedule any backups. All changes will be retained and restorable from a selected point in time. 
+Azure Backup provides [operational backup for Azure blobs](/azure/backup/blob-backup-overview), which is a local backup solution for Azure Blob Storage. In this backup method, your backup data is stored in your source Azure storage account rather than being transferred to an Azure Backup storage vault. 
 
+### Things to know about Azure blobs backup and recovery
+
+Here are some of the prominent features available for backup and recovery of Azure blobs.
+
+- Operational backup for Azure blobs provides you with a _continuous backup_ solution. You don't need to schedule any backups.
+
+- All changes in an operational blob backup are retained for a specified period of time, and restorable from a selected point in time.
+
+- The _soft delete_ feature lets you protect your data from accidental deletion or corruption. During the retention period, you can restore a soft-deleted blob object to its state at the time it was deleted. Soft delete is available for blobs and containers.
+
+- The retention period for deleted blobs or containers can be specified between 1 and 365 days. The default period is seven days.
+
+- The operational backup solution supports [blob versioning](/azure/storage/blobs/versioning-enable). You can restore an earlier version of a blob, or recover your data after incorrect modification or deletion.
+
+- The [point-in-time restore feature for block blobs](/azure/storage/blobs/point-in-time-restore-overview) lets you protect against accidental deletion or corruption. During the retention period, you can restore block blobs from the present state to a state at a previous time.
+
+- The [resource lock](/azure/azure-resource-manager/management/lock-resources) feature prevents resources from being accidentally deleted or changed. You can set the resource lock to prohibit deletion or allow reading only.
  
-### Take advantage of blob soft delete and versioning
+Let's examine some of these features in more detail. As you review these options, consider which features can benefit the Tailwind Traders solution.
 
-Soft delete protects an individual blob, snapshot, container, or version from accidental deletes or overwrites. Soft delete maintains the deleted data in the system for a specified retention period. During the retention period, you can restore a soft-deleted object to its state at the time it was deleted.
+### Things to consider when using soft delete and versioning
 
-:::image type="content" source="../media/soft-delete.png" alt-text="An image of a container with blobs and blobs versions.":::
+You can implement the soft delete feature to protect an individual blob, snapshot, container, or blob version from accidental deletes or overwrites. Soft delete maintains the deleted data in the system for your specified retention period. During the retention period, you can restore a soft-deleted object to its state at the time it was deleted.
 
+The following diagram shows a high-level view of the soft delete feature for containers and blobs, and blob versions.
 
-- [**Container** soft delete](/azure/storage/blobs/soft-delete-container-enable) can restore a container and its contents at the time of deletion. The retention period for deleted containers is between 1 and 365 days. The default retention period is seven days.
+:::image type="content" source="../media/soft-delete.png" alt-text="Image that shows a high-level view of the soft delete feature as described in the text." border="false":::
 
-- [**Blob** soft delete](/azure/storage/blobs/soft-delete-blob-enable) can restore a blob, snapshot, or version that has been deleted. Blob soft delete is useful for restoring specific files. The retention period for deleted blobs is also between 1 and 365 days.
+There are different options for implementing soft delete and blob versioning:
 
-- [Blob versioning](/azure/storage/blobs/versioning-enable) works to automatically maintain previous versions of a blob. When blob versioning is enabled, you can restore an earlier version of a blob. Versioning lets you recover your data if it’s incorrectly modified or deleted. Blob versioning is useful if you have multiple authors editing files and need to maintain or restore their individual changes. 
+- Implement [blob soft delete](/azure/storage/blobs/soft-delete-blob-enable) to restore a specific deleted file, such as a blob, snapshot, or blob version.
 
- 
+- Use [container soft delete](/azure/storage/blobs/soft-delete-container-enable) to restore a container and its contents.
 
-> [!TIP]
-> Container soft delete doesn’t protect against the deletion of a storage account, but only against the deletion of containers in that account. 
+   > [!Note]
+   > Container soft delete doesn't protect against the deletion of a storage account, but only against the deletion of containers in a storage account. 
 
- 
+- Add [blob versioning](/azure/storage/blobs/versioning-enable) to automatically maintain previous versions of a blob. You can restore an earlier version of a blob, or use the feature to recover your data. Blob versioning is useful when you have multiple authors editing the same files. Implement blob versioning to maintain or restore individual changes from each author. 
 
-### Consider point-in-time restore for block blobs
+### Things to consider when using point-in-time restore
 
-Like soft delete, [point-in-time restore for block blobs](/azure/storage/blobs/point-in-time-restore-overview) also protects against accidental deletion or corruption. For this feature, you create a management policy for the storage account and specify a retention period. During the retention period, you can restore block blobs from the present state to a state at a previous time.
+Like soft delete, [point-in-time restore for block blobs](/azure/storage/blobs/point-in-time-restore-overview) also protects against accidental deletion or corruption. Create a management policy for the source storage account and specify your retention period. During the retention period, you can restore block blobs from the present state to a state at a previous time.
 
-The following diagram shows how point-in-time restore works. One or more containers or blob ranges is restored to its previous state. The effect is to revert write and delete operations that happened during the retention period. 
+The following diagram shows how point-in-time restore works. One or more containers or blob ranges is restored to its previous state. The result of the process is to revert write and delete operations that occurred during the retention period. 
 
-:::image type="content" source="../media/blob-point-restore.png" alt-text="A storage account restores containers to a previous point in time.":::
-
- 
-
+:::image type="content" source="../media/blob-point-restore.png" alt-text="Image that shows how point-in-time restore works as described in the text." border="false":::
 
 > [!NOTE]
 > Point-in-time restore enables testing scenarios that require reverting a data set to a known state before running further tests.
 
-### Prevent accidental changes by using resource locks
+### Things to consider when using resource locks
 
-A [resource lock](/azure/azure-resource-manager/management/lock-resources) prevents resources from being accidentally deleted or changed. Consider using resources locks to protect your data. You can set the lock level to **CanNotDelete** or **ReadOnly**.
+You can protect your data and avoid accidental changes by using [resource locks](/azure/azure-resource-manager/management/lock-resources). This feature prevents resources from being accidentally deleted or changed. There are two lock levels: CanNotDelete and ReadOnly.
 
-- **CanNotDelete** means authorized people can still read and modify a resource, but they can't delete the resource without first removing the lock.
+- **CanNotDelete** permits authorized users to read and modify a resource, but they can't delete the resource without first removing the lock.
 
-- **ReadOnly** means authorized people can read a resource, but they can't delete or change the resource. Applying this lock is like restricting all authorized users to the permissions granted by the **Reader** role in Azure RBAC.
-
- 
-
-> [!TIP]
-> Consider the storage protection features you’ve learned about. Which ones do you think would be most useful? In what scenarios will you use these features?
+- **ReadOnly** allows authorized users to read a resource, but they can't delete or change the resource. Applying this lock is like restricting all authorized users to the permissions granted by the _Reader_ role in Azure RBAC.

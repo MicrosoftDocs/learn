@@ -15,7 +15,7 @@ Azure Backup offers multiple components that you can download and deploy on the 
 | **SAP HANA databases in Azure virtual machines** | Back up SAP HANA databases running on Azure virtual machines. |
 | **Microsoft cloud** | Azure Backup can replace your existing on-premises or off-site backup solution with a cloud-based solution that's reliable, secure, and cost-competitive. |
 
-#### Backup storage vaults
+#### Azure Backup storage vaults
 
 Azure Backup organizes your backup data in a storage entity called a _vault_. A storage vault stores backup copies, recovery points, and backup policies. There are two types of vaults: backup and recovery services. The primary differences are the types of supported data sources and Azure products. 
 
