@@ -25,7 +25,7 @@ quiz:
     - content: 'Quantum computers are an expensive technology, we need to estimate how much a certain algorithm will cost in order to make the best economic decision.'
       isCorrect: false
       explanation: "The estimation of resources doesn't refer to monetary cost."
-    - content: 'c)	Resource estimation allows us to refine quantum solutions to run on future quantum computers, by making choices about architectural design and quantum error correction schemes.'
+    - content: 'Resource estimation allows us to refine quantum solutions to run on future quantum computers, by making choices about architectural design and quantum error correction schemes.'
       isCorrect: true
       explanation: "Correct. With resource estimation we can understand how many qubits we need, how long a quantum algorithm will take to run, and which qubit technologies are better suited to solving a specific problem."
 
