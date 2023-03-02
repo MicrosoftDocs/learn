@@ -1,6 +1,6 @@
 Azure Backup provides [operational backup for Azure blobs](/azure/backup/blob-backup-overview), which is a local backup solution for Azure Blob Storage. In this backup method, your backup data is stored in your source Azure storage account rather than being transferred to an Azure Backup storage vault. 
 
-### Things to know about Azure blobs backup and recovery
+### Things to know about Azure blob backup and recovery
 
 Here are some of the prominent features available for backup and recovery of Azure blobs.
 
@@ -8,7 +8,7 @@ Here are some of the prominent features available for backup and recovery of Azu
 
 - All changes in an operational blob backup are retained for a specified period of time, and restorable from a selected point in time.
 
-- The _soft delete_ feature lets you protect your data from accidental deletion or corruption. During the retention period, you can restore a soft-deleted blob object to its state at the time it was deleted. Soft delete is available for blobs and containers.
+- The [soft delete feature](/azure/backup/backup-azure-security-feature-cloud) lets you protect your data from accidental deletion or corruption. During the retention period, you can restore a soft-deleted blob object to its state at the time it was deleted. Soft delete is available for blobs and containers.
 
 - The retention period for deleted blobs or containers can be specified between 1 and 365 days. The default period is seven days.
 
@@ -41,14 +41,11 @@ There are different options for implementing soft delete and blob versioning:
 
 ### Things to consider when using point-in-time restore
 
-Like soft delete, [point-in-time restore for block blobs](/azure/storage/blobs/point-in-time-restore-overview) also protects against accidental deletion or corruption. Create a management policy for the source storage account and specify your retention period. During the retention period, you can restore block blobs from the present state to a state at a previous time.
+Like soft delete, [point-in-time restore for block blobs](/azure/storage/blobs/point-in-time-restore-overview) also protects against accidental deletion or corruption. Create a management policy for the source storage account and specify your retention period. During the retention period, you can restore block blobs from the present state to a state at a previous time. Point-in-time restore lets you test scenarios that require reverting a data set to a known state before you run further tests.
 
 The following diagram shows how point-in-time restore works. One or more containers or blob ranges is restored to its previous state. The result of the process is to revert write and delete operations that occurred during the retention period. 
 
 :::image type="content" source="../media/blob-point-restore.png" alt-text="Image that shows how point-in-time restore works as described in the text." border="false":::
-
-> [!NOTE]
-> Point-in-time restore enables testing scenarios that require reverting a data set to a known state before running further tests.
 
 ### Things to consider when using resource locks
 

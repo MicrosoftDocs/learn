@@ -2,7 +2,7 @@ Azure Files provides the capability to take [share snapshots of file shares](/az
 
 :::image type="content" source="../media/file-share-backup.png" alt-text="Diagram of Azure file shares snapshots stored in a Recovery Services vault." border="false":::
 
-### Things to know about Azure file shares backup and recovery
+### Things to know about Azure file share backup and recovery
 
 Let's review some of the characteristics regarding backup and recovery of Azure file shares.
 
@@ -43,7 +43,7 @@ Take a moment to review some considerations for creating and recovering from fil
 
 - **Consider alerts and reporting**. You can configure alerts for backup and restore failures and use the reporting solution provided by Azure Backup. These reports provide insights on file share backups.
 
-- **Consider self-service restore**. Azure Backup uses server endpoint Volume Shadow Copy Service (VSS) snapshots. Consider giving advanced users the ability to restore files themselves. 
+- **Consider self-service restore**. Azure Backup uses server endpoint Windows Volume Shadow Copy Service (VSS) snapshots. You might consider giving advanced users the ability to restore files themselves. 
 
 - **Consider on-demand backups**. Azure Backup policies are limited to scheduling a backup once a day. If a user creates a file in the morning and works on it all day, a nightly backup doesn't include the new file. For these reasons, consider on-demand backups for the most critical file shares. 
 
