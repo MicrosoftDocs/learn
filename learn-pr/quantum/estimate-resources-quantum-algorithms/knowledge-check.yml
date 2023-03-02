@@ -1,0 +1,54 @@
+### YamlMime:ModuleUnit
+uid: learn.quantum.estimate-resources-quantum-algorithms.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your understanding so far.
+  author: SoniaLopezBravo
+  ms.author: sonialopez
+  ms.date: 01/25/2023
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  show_latex: true
+durationInMinutes: 3
+content: |
+  [!include[](includes/knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'Why is it important to estimate the resources required to run a quantum algorithm?'
+    choices:
+    - content: 'Quantum computers can only run a limited number of algorithms at a time, so we need to discard those algorithms that require many resources.'
+      isCorrect: false
+      explanation: "An algorithm doesn't have a unique resource consumption, the required resources will depend on the technology of the quantum computer, making certain technologies more suitable for certain algorithms. "
+    - content: 'Quantum computers are an expensive technology, we need to estimate how much a certain algorithm will cost in order to make the best economic decision.'
+      isCorrect: false
+      explanation: "The estimation of resources doesn't refer to monetary cost."
+    - content: 'c)	Resource estimation allows us to refine quantum solutions to run on future quantum computers, by making choices about architectural design and quantum error correction schemes.'
+      isCorrect: true
+      explanation: "Correct. With resource estimation we can understand how many qubits we need, how long a quantum algorithm will take to run, and which qubit technologies are better suited to solving a specific problem."
+
+  - content: 'The Azure Quantum Resource Estimator takes a physical qubit model, `"qubitParams"`, as input parameter. Which of the following statements is true?'
+    choices:
+    - content: 'You can pick from six pre-defined qubit models, and each of their values can be updated, meaning that you can modify the existing models and create new ones.'
+      isCorrect: true
+      explanation: 'Correct. The Resource Estimator provides four gate-based and two Majorana-based qubit models, and they can be customized by specifying the name of the qubit model and updating any of the values.'
+    - content: 'You can pick from two pre-defined qubit models, that are the Surface code and the Floquet code.'
+      isCorrect: false
+      explanation: 'The Resource Estimator provides four gate-based and two Majorana-based qubit models. Surface and Floquet code are quantum error correction codes.'
+    - content: "You can pick from six pre-defined qubit models, but they don't allow customization of their parameters."
+      isCorrect: false
+      explanation: 'The pre-defined qubit models can be customized by specifying the name of the qubit model and then updating any of the values.'
+      
+  - content: 'The Resource Estimator evaluates the resource estimates of a requested QIR quantum algorithm. What is the output of the resource estimation job?'
+    choices:
+    - content: 'The Resource Estimator outputs the estimated economic cost of running the algorithm and its runtime.'
+      isCorrect: false
+      explanation: "The Resource Estimator doesn't estimate how much an algorithm would cost to run."
+    - content: "The Resource Estimator outputs the number of physical qubits and the runtime of a quantum algorithm for each of the quantum hardware providers available in Azure Quantum."
+      isCorrect: false
+      explanation: "The Resource Estimator doesn't compare quantum hardware providers."
+    - content: "The Resource Estimator outputs physical and logical estimates, such as number of rotation gates, quantum error correction estimates, T factory parameters, and total physical qubits and runtime."
+      isCorrect: true
+      explanation: "Correct. The Resource Estimator computes pre- and post-layout logical and physical estimation for a given quantum technology and an error correction scheme."
