@@ -19,40 +19,40 @@ quiz:
     - content: "A single codebase where all the different functionalities reside."
       isCorrect: false
       explanation: "Incorrect. A single codebase would indicate a monolithic approach. A cloud-native approach separates different functionality."
-    - content: "Architectural modularity, using pre-built cloud services and container technologies where suited."
+    - content: "Architectural modularity, using pre-built cloud services and container technologies where they're best suited."
       isCorrect: true
-      explanation: "Correct. A cloud-native architecture focuses on having individual, separated components that form different services. CNAs are built to leverage cloud-based services to handle aspects like security where appropriate."
+      explanation: "Correct. A cloud-native architecture focuses on having individual, separated components that form different services. CNAs are built to use cloud-based services to handle aspects like security where appropriate."
     - content: "A hybrid-cloud approach."
       isCorrect: false
-      explanation: "Incorrect. While a hybrid-cloud approach may be part of some cloud-native architectures, not all cloud-native architectures will use a hybrid cloud approach."
+      explanation: "Incorrect. While a hybrid-cloud approach may be part of some cloud-native architectures, not all cloud-native architectures use a hybrid cloud approach."
     - content: "Smart fridges."
       isCorrect: false
       explanation: "Incorrect. Smart fridges are our scenario, not all cloud-native apps focus on smart fridges."
-  - content: 'Containers provide a reliable environment that works the same on different machines. Why is this?'
+  - content: 'How do containers provide a reliable environment that works the same on different machines?'
     choices:
     - content: "Containers contain an image of a virtual machine OS - once loaded, the virtual machine always runs the same."
       isCorrect: false
-      explanation: "Incorrect. Containers do not contain a virtual machine OS - they are lightweight and encapsulate dependencies, but not an operating system."
-    - content: "Containers are managed by container orchestrators that replace hardware as needed"
+      explanation: "Incorrect. Containers don't contain a virtual machine OS - they're lightweight and encapsulate dependencies, but not an operating system."
+    - content: "Container orchestrators manage containers that replace hardware as needed."
       isCorrect: false
-      explanation: "Incorrect. While containers are managed by container orchestrators, the container orchestrators do not replace hardware as needed."
-    - content: "Containers leverage a hybrid-development approach where you set new parameters every time you deploy"
+      explanation: "Incorrect. While container orchestrators do manage containers, they don't replace hardware as needed."
+    - content: "Containers use a hybrid-development approach where you set new parameters every time you deploy."
       isCorrect: false
-      explanation: "Incorrect. Containers use exact same container image when deployed - you do not have to set new parameters every time you deploy."
-    - content: "Containers are self-contained and encapsulate their own code, configuration, and dependencies, including references to the OS they'll run on."
+      explanation: "Incorrect. Containers use the exact same container image when deployed. You don't have to set new parameters every time you deploy."
+    - content: "Containers are self-contained and encapsulate their own code, configuration, and dependencies, including references to the OS they run on."
       isCorrect: true
-      explanation: "Correct. As containers are self-contained, and have the exact same container image when they are deployed, they reliably function the same on different machines."
+      explanation: "Correct. Containers are self-contained and have the exact same container image when deployed. They reliably function the same on different machines."
   - content: 'How can cloud-native apps help to create business value?'
     choices:
     - content: "A cloud-native approach allows rapid incorporation of user feedback."
       isCorrect: false
-      explanation: "Incorrect. While rapid incorporation of user feedback can be provided by a cloud-native approach, there are other ways cloud-native apps help to create business value."
+      explanation: "Incorrect. While a cloud-native approach can provide rapid incorporation of user feedback, there are other ways cloud-native apps help to create business value."
     - content: "Cloud services have built in tools and integrations for automation, such as constant integration (CI) and constant deployment (CD) pipelines. Therefore, cloud-native apps are more likely to have robust DevOps procedures, which can decrease costs and increase reliability."
       isCorrect: false
       explanation: "Incorrect. While automation is a benefit of cloud native processes, there are other ways cloud-native apps help to create business value"
     - content: "A Cloud Native architecture allows individual services to be updated and deployed without downtime for other services."
       isCorrect: false
-      explanation: "Incorrect. While there is significant business value from being able to update a service with no downtime for other services, there are other ways cloud-native apps help to create business value"
-    - content: "All of the above"
+      explanation: "Incorrect. While there's significant business value from being able to update a service with no downtime for other services, there are other ways cloud-native apps help to create business value"
+    - content: "All of the above."
       isCorrect: true
       explanation: "Correct. Rapid incorporation of user feedback increases business agility for constant improvement, automation can decrease costs and increase reliability, and individual services being able to update a service with no downtime for other services all provide real business value."
