@@ -1,4 +1,4 @@
-F# is an open-source, cross-platform programming language that makes it easy to write succinct, performant, robust, and practical code. An important goal with programs you write is being able to work on input, process the input, and output it. In this module, you'll learn concepts and perform tasks that will teach you how to work with variables, input, and output.
+F# is an open-source, cross-platform programming language that makes it easy to write succinct, performant, robust, and practical code. An important goal with programs you write is being able to work on input, process the input, and output it. In this module, you'll learn concepts and perform tasks that teach you how to work with variables, input, and output.
 
 ## What you'll be doing
 

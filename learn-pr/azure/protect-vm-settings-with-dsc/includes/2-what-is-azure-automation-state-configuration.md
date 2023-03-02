@@ -1,4 +1,4 @@
-You use Azure Automation State Configuration to make sure that the virtual machines (VMs) in a cluster are in a consistent state, with the same software installed and the same configurations.
+You use Azure Automation State Configuration to make sure that the virtual machines (VMs) in a cluster area in a consistent state, with the same software installed and the same configurations.
 
 In this unit, you'll learn about the features and capabilities of Azure Automation. You'll review the declarative model of PowerShell Desired State Configuration (DSC), and you'll explore its benefits.
 

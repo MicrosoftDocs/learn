@@ -147,12 +147,3 @@ Here's a few things to remember when working with strings and arrays:
 
 - Use methods like `ToCharArray()` and `Split()` to create an array
 - Use methods like `Join()`, or create a new string passing in an array of `char` to turn the array back into a single string
-
-## Check your knowledge
-
-## Multiple Choice
-
-`String.Join("-", myArray);` is an example of a Join. Which explanation best fits this example?
-( ) Constructs a character array from items in `myArray` connected with `,` (commas). {{Incorrect. `String.Join` constructs strings from the elements of `myArray`)}}
-(x) Constructs a string from items in `myArray` connected with `-` (dashes). {{Correct. `String.Join` constructs strings from the elements of `myArray`)}}
-( ) Constructs a string named `myArray` connected with `-` (dashes). {{Incorrect. `String.Join` constructs strings from the elements of `myArray`)}}

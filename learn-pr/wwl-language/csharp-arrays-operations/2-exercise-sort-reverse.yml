@@ -4,7 +4,7 @@ title: Exercise - Discover Sort() and Reverse()
 metadata:
   title: Exercise - Discover Sort() and Reverse()
   description: "Exercise - Discover Sort() and Reverse()"
-  ms.date: 02/24/2023
+  ms.date: 02/25/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
@@ -12,3 +12,17 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/2-exercise-sort-reverse.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which best describes the code `Array.Sort(pallets);` where `pallets` is a `string` array?"
+    choices:
+    - content: "`Sort` represents a cast operation"
+      isCorrect: false
+      explanation: "Incorrect. `Sort` is a method of arrays that sorts alphanumerically."
+    - content: "`Sort` is a method of Arrays."
+      isCorrect: true
+      explanation: "Correct. `Sort` is a method of Arrays."
+    - content: "`Sort` is used to sort array amount of precision."
+      isCorrect: false
+      explanation: "Incorrect. `Sort` is a method of arrays that sorts alphanumerically."

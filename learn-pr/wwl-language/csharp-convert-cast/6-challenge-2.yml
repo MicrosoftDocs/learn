@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-convert-cast.challenge-2
-title: Second Challenge
+title: Exercise - Complete a challenge to output math operations as specific number types
 metadata:
-  title: Second Challenge
-  description: Here's a second change to use data type casting and conversion to solve a programming challenge.
-  ms.date: 10/03/2019
-  author: billwagner
-  ms.author: wiwagn
+  title: Exercise - Complete a challenge to output math operations as specific number types
+  description: "Exercise - Complete a challenge to output math operations as specific number types"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: eric
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 6
-azureSandbox: false
-interactive: csharp
 content: |
   [!include[](includes/6-challenge-2.md)]

@@ -4,6 +4,12 @@ In this module, we'll introduce you to Azure Private 5G Core routine management 
 
 At the end of this module, you'll take the Knowledge Check to ensure that you've successfully understood the material. With the knowledge taught in this module, you should be able to manage an Azure Private 5G Core powered private mobile network on a routine basis.
 
+## Video: Azure Private 5G Core Management
+
+This video outlines routine management tasks for Azure Private 5G Core:
+
+> [!VIDEO 9db04eac-a090-486a-98c4-8cbd125268c3]
+
 ## Methods for completing management tasks
 
 You can complete many management tasks by using either the Azure portal or an [Azure Resource Manager template](/azure/azure-resource-manager/templates/overview) (ARM template). An ARM template is a JavaScript Object Notation (JSON) file that defines the infrastructure and configuration for a project.

@@ -42,7 +42,7 @@ As briefly mentioned earlier, the cost of Azure Blob Storage also depends on the
 > [!NOTE]
 > Premium block blob storage accounts support only LRS and ZRS replication options.
 
-Another important factor that affects storage cost is the access tier, which is either inherited or explicitly assigned to individual blobs. Your choices include Hot, Cool, and Archive tiers. Access tiers allow you to choose the pricing model that reflects your current and expected storage usage patterns. The Hot tier minimizes the retrieval time and the cost of storage operations, whereas the Archive tier minimizes per-gigabyte storage cost but imposes a wait time during data retrieval. The Cool tier provides the same retrieval time as the Hot tier and offers mid-range per-gigabyte pricing in exchange for higher access charges. 
+Another important factor that affects storage cost is the access tier, which is either inherited or explicitly assigned to individual blobs. Your choices include hot, cool, and archive tiers. Access tiers allow you to choose the pricing model that reflects your current and expected storage usage patterns. The hot tier minimizes the retrieval time and the cost of storage operations, whereas the archive tier minimizes per-gigabyte storage cost but imposes a wait time during data retrieval. The cool tier provides the same retrieval time as the hot tier and offers mid-range per-gigabyte pricing in exchange for higher access charges. 
 
 > [!NOTE]
 > Moving blobs between tiers incurs an extra cost.
@@ -59,7 +59,7 @@ Understanding your access patterns and correlating them with your durability and
 
 - Desired durability (the replication scope)
 
-- Access tier (Premium, Hot, Cool, or Archive)
+- Access tier (Premium, hot, cool, or archive)
 
 - The current amount of storage
 
@@ -87,6 +87,6 @@ As you progress through your estimate, keep in mind the following information:
 
 - Data storage, metadata, and encryption scopes are billed per month. If you anticipate that their usage will be shorter, prorate the charges by calculating their daily cost.
 
-- To identify unit pricing, refer to the Azure Block Storage pricing page, or if you intend to use hierarchical namespaces, to the Azure Data Lake Storage Gen2 pricing page. Note that their capacity pricing is the same, but the transaction pricing differs.
+- To identify unit pricing, refer to the Azure Block Storage pricing page. If you enable hierarchical namespaces on the account, make sure that the **File Structure** drop-down list is set to **Hierarchical Namespace (NFS v3.0, SFTP Protocol)**. If you enable hierarchical namespaces on the account and intend use the Data Lake Storage endpoint, refer to the Azure Data Lake Storage Gen2 pricing page. Transaction prices differ between these two pages but the cost of storage is nearly identical.
 
 - Use the redundancy, region, and currency filters to determine the extent to which they affect the final cost.

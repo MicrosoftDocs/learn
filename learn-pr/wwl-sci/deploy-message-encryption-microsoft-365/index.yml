@@ -24,6 +24,7 @@ roles:
 - ip-admin
 - risk-practitioner
 products:
+- microsoft-purview
 - office-365
 - m365-information-protection
 subjects:

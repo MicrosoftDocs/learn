@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-arrays-iteration-selection.exercise-construct-nested-loops
+title: Exercise - Construct a nested loop structure for student grade calculations
+metadata:
+  title: Exercise - Construct a nested loop structure for student grade calculations
+  description: "Exercise - Construct a nested loop structure for student grade calculations"
+  ms.date: 02/27/2023
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 25
+content: |
+  [!include[](includes/4-exercise-construct-nested-loops.md)]
