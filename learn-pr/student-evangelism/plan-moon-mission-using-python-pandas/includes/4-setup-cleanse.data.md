@@ -12,7 +12,7 @@ rock_samples.rename(columns={'Weight (g)':'Weight (kg)'}, inplace=True)
 rock_samples.head()
 ```
 
-|   | ID | Mission | Type | Subtype | Weight (g) | Pristine (%) |
+|   | ID | Mission | Type | Subtype | Weight (kg) | Pristine (%) |
 |---|---|---|---|---|---|---|
 | **0** | 10001 | Apollo11 | Soil | Unsieved | 0.125 | 88.36 |
 | **1** | 10002 | Apollo11 | Soil | Unsieved | 5.6290 | 93.73 |
@@ -142,8 +142,8 @@ missions
 
 This Python code did the following:
 - Looked only at the **Weight diff** column in the `missions` DataFrame
-- Filled all "na" (or null) values with a certain value 
-- The value to fill in the na values is 0
+- Filled all `NaN` (or null) values with a certain value
+- The value to fill in the `NaN` values is 0
 - Saved the modified list of values for that column back into the column
 
 This last step is important. Pandas is a library that is designed to let us explore data, which means that some of the functions will provide insight into the data, but not directly modify it. When in doubt, read the docs and test!
