@@ -16,16 +16,16 @@ quiz:
   questions:
   - content: 'A cloud-native architecture has a focus on:'
     choices:
-    - content: "A single codebase where all the different functionalities reside"
+    - content: "A single codebase where all the different functionalities reside."
       isCorrect: false
-      explanation: "Incorrect. A single codebase would indicate a monolithic approach, whereas different functionality would be separated with a cloud-native approach."
+      explanation: "Incorrect. A single codebase would indicate a monolithic approach. A cloud-native approach separates different functionality."
     - content: "Architectural modularity, using pre-built cloud services and container technologies where suited."
       isCorrect: true
       explanation: "Correct. A cloud-native architecture focuses on having individual, separated components that form different services. CNAs are built to leverage cloud-based services to handle aspects like security where appropriate."
-    - content: "Hybrid-cloud approach"
+    - content: "A hybrid-cloud approach."
       isCorrect: false
       explanation: "Incorrect. While a hybrid-cloud approach may be part of some cloud-native architectures, not all cloud-native architectures will use a hybrid cloud approach."
-    - content: "Smart fridges"
+    - content: "Smart fridges."
       isCorrect: false
       explanation: "Incorrect. Smart fridges are our scenario, not all cloud-native apps focus on smart fridges."
   - content: 'Containers provide a reliable environment that works the same on different machines. Why is this?'
