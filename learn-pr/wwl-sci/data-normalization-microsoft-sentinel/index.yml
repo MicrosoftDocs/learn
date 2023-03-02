@@ -25,6 +25,9 @@ roles:
 products:
 - azure
 - microsoft-sentinel
+- azure-monitor
+subjects:
+  - cloud-security
 units:
 - learn.wwl.data-normalization-microsoft-sentinel.introduction
 - learn.wwl.data-normalization-microsoft-sentinel.understand
