@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-convert-cast.challenge-2
+title: Exercise - Complete a challenge to output math operations as specific number types
+metadata:
+  title: Exercise - Complete a challenge to output math operations as specific number types
+  description: "Exercise - Complete a challenge to output math operations as specific number types"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-challenge-2.md)]

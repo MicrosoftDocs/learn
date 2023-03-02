@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-format-strings.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/25/2023
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "For the C# code `Console.WriteLine(\"C110\".PadLeft(6, '0'));`, which is the expected output?"
+    choices:
+    - content: "`C11000`"
+      isCorrect: false
+      explanation: "Incorrect. `.PadLeft(6, '0')` doesn't append zeros to the right side of the string."
+    - content: "`C110000000`"
+      isCorrect: false
+      explanation: "Incorrect. `.PadLeft(6, '0')` won't append zeros to the right side of a string and won't append after the string reaches six characters long."
+    - content: "`00C110`"
+      isCorrect: true
+      explanation: "Correct. `.PadLeft(6, '0')` appends zeros to the left side of a string until the string is six characters long."
+  - content: "Which format specifier presents a decimal value with the following format to an en-US audience: `12,345.67`"
+    choices:
+    - content: "`0:C`"
+      isCorrect: false
+      explanation: "Incorrect. Though it looks similar, the numeric value is not necessarily currency."
+    - content: "`0:H`"
+      isCorrect: false
+      explanation: "Incorrect. `H` isn't a known format specifier."
+    - content: "`0:N2`"
+      isCorrect: true
+      explanation: "Correct. `N2` is the correct format specifier!"
+  - content: "Which character must be used as a directive to perform string interpolation?"
+    choices:
+    - content: "`$`"
+      isCorrect: true
+      explanation: "Correct. The `$` directive is used to perform string interpolation."
+    - content: "`@`"
+      isCorrect: false
+      explanation: "Incorrect. `@` is used to create a verbatim string literal, and doesn't perform string interpolation."
+    - content: "`%`"
+      isCorrect: false
+      explanation: "Incorrect. `%` is used for math to return the remainder (modulus), but isn't a valid directive for string interpolation."
