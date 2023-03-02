@@ -17,11 +17,11 @@ Azure Backup offers multiple components that you can download and deploy on the 
 
 #### Azure Backup storage vaults
 
-Azure Backup organizes your backup data in a storage entity called a _vault_. A storage vault stores backup copies, recovery points, and backup policies. There are two types of vaults: backup and recovery services. The primary differences are the types of supported data sources and Azure products. 
+Azure Backup organizes your backup data in a storage entity called a _vault_. A storage vault stores backup copies, recovery points, and backup policies. There are two types of vaults: Azure Backup and Azure Recovery Services. The primary differences are the types of supported data sources and Azure products. 
 
-- **Backup vault**: Backup vaults are used with Azure Backup only. Supported data sources include Azure Database for PostgreSQL servers, Azure blobs, and Azure disks.
+- **Azure Backup vault**: Azure Backup vaults are used with Azure Backup only. Supported data sources include Azure Database for PostgreSQL servers, Azure blobs, and Azure disks.
 
-- **Recovery services vault**: Recovery services vaults can be used with Azure Backup or Azure Site Recovery. Supported data sources include Azure virtual machines, SQL or SAP HANA in an Azure virtual machine, and Azure file shares. You can back up data to a recovery services vault from Azure Backup Server, Azure Backup Agent, and System Center Data Protection Manager.
+- **Azure Recovery Services vault**: Azure Recovery Services vaults can be used with Azure Backup or Azure Site Recovery. Supported data sources include Azure virtual machines, SQL or SAP HANA in an Azure virtual machine, and Azure file shares. You can back up data to a Recovery Services vault from Azure Backup Server, Azure Backup Agent, and System Center Data Protection Manager.
 
 ### Things to consider when using storage vaults
 
