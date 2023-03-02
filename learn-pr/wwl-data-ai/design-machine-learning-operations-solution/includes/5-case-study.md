@@ -7,7 +7,7 @@ Welcome to Proseware! You've been hired as the *lead data scientist* to help us 
 
 ## Understand the problem
 
-:::image type="content" source="../media/mock-up-app.png" alt-text="Show the mobile application." lightbox="../media/mock-up-app.png":::
+:::image type="content" source="../media/mock-up-app.png" alt-text="Screenshot of the mobile application to diagnose patients with diabetes." lightbox="../media/mock-up-app.png":::
 
 At Proseware, we're developing a **mobile application** that helps doctors diagnose diseases in patients faster. A doctor can enter the patient's medical data into the app to get a diagnosis for the patient. 
 

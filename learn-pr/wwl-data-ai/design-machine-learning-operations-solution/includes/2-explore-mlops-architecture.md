@@ -38,7 +38,7 @@ Having separate environments makes it easier to control access to resources. Eac
 
 Within Azure, you use role-based access control (RBAC) to give colleagues the right level of access to the subset of resources they need to work with.
 
-Alternatively, you can use only one Azure Machine Learning workspace. When you use one workspace for development and production, you have a smaller Azure footprint and less management overhead. However, RBAC applies to both dev and prod, which may mean that you're giving people too little or too much access to resources.
+Alternatively, you can use only one Azure Machine Learning workspace. When you use one workspace for development and production, you have a smaller Azure footprint and less management overhead. However, RBAC applies to both dev and prod environments, which may mean that you're giving people too little or too much access to resources.
 
 > [!TIP]
 > Learn more about [best practices to organize Azure Machine Learning resources](/azure/cloud-adoption-framework/ready/azure-best-practices/ai-machine-learning-resource-organization).

@@ -4,7 +4,7 @@ When preparing your model for production in a machine learning operations (MLOps
 
 Generally, there are two approaches to when you want to retrain a model:
 
-- Based on a **schedule**: when you know you always need the most up to date model, you can decide to retrain your model every week, or every month, based on a schedule.
+- Based on a **schedule**: when you know you always need the latest version of the model, you can decide to retrain your model every week, or every month, based on a schedule.
 - Based on **metrics**: if you only want to retrain your model when necessary, you can monitor the model's performance and data drift to decide when you need to retrain the model.
 
 In either case, you need to design for retraining. To easily retrain your model, you should prepare your code for automation.
@@ -13,7 +13,7 @@ In either case, you need to design for retraining. To easily retrain your model,
 
 Ideally, you should train models with **scripts** instead of notebooks. Scripts are better suited for automation. You can add **parameters** to a script and change input parameters like the training data or hyperparameter values. When you parameterize your scripts, you can easily retrain the model on new data if needed.
 
-Another important thing to prepare your code, is to host the code in a central repository. A repository refers to a location where all relevant files to a project are stored. With machine learning projects, Git-based repositories are ideal to achieve **source control**.
+Another important thing to prepare your code is to host the code in a central repository. A repository refers to a location where all relevant files to a project are stored. With machine learning projects, Git-based repositories are ideal to achieve **source control**.
 
 When you apply source control to your project, you can easily collaborate on a project. You can assign someone to improve the model by updating the code. You'll be able to see past changes, and you can review changes before they're committed to the main repository.
 
