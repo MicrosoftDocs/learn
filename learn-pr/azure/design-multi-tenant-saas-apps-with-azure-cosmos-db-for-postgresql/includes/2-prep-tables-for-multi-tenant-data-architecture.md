@@ -32,13 +32,13 @@ Now that you've identified the `store_id` column as the logical distribution key
 
 When working with tables in a single-node multi-tenant SaaS database, they'll generally fall into one of the following categories:
 
-1. **Ready for distribution**. These tables already contain the distribution key and are ready to be distributed without changes. Looking at the schema provided, the `stores`, `orders`, and `products` tables already contain the `store_id` column and fall into this category.
+* **Ready for distribution**. These tables already contain the distribution key and are ready to be distributed without changes. Looking at the schema provided, the `stores`, `orders`, and `products` tables already contain the `store_id` column and fall into this category.
 
-2. **Needs backfill**. These tables can be logically distributed by the chosen key but don't contain a column directly referencing it. Tables in this category require modification to add the selected distribution column. Tailspin Toys' `line_items` table can be linked to the `store` table by joining through the `orders` or `products` tables, but it doesn't contain the `store_id` column. To enable table data to be distributed across worker nodes and co-located for maximum query efficiency, this table needs to be denormalized to include the `store_id` column, and the new column must be populated with the appropriate `store_id` for each line item.
+* **Needs backfill**. These tables can be logically distributed by the chosen key but don't contain a column directly referencing it. Tables in this category require modification to add the selected distribution column. Tailspin Toys' `line_items` table can be linked to the `store` table by joining through the `orders` or `products` tables, but it doesn't contain the `store_id` column. To enable table data to be distributed across worker nodes and co-located for maximum query efficiency, this table needs to be denormalized to include the `store_id` column, and the new column must be populated with the appropriate `store_id` for each line item.
 
-3. **Reference table**. These tables are typically small, don't contain the distribution key, are commonly joined by distributed tables, and are shared across tenants. A full copy of each reference table's data is duplicated and maintained on every node in the cluster, available for quick access by queries on any node.
+* **Reference table**. These tables are typically small, don't contain the distribution key, are commonly joined by distributed tables, and are shared across tenants. A full copy of each reference table's data is duplicated and maintained on every node in the cluster, available for quick access by queries on any node.
 
-4. **Local table**. These are typically not joined to other tables and don't contain the distribution key. They're maintained exclusively on the coordinator node and are often used for administrative purposes, such as user authentication.
+* **Local table**. These are typically not joined to other tables and don't contain the distribution key. They're maintained exclusively on the coordinator node and are often used for administrative purposes, such as user authentication.
 
 ## Backfill tables
 
