@@ -23,7 +23,7 @@ In this scenario, you use a *writeable* property to set the optimal water temper
 
 You can use *read-only* properties to enable a device to send values to your application. Read-only properties can only be changed by the device. In this scenario, you define a read-only device property called `Device Warranty Expired` in the device template. The `Device Warranty Expired` field remains empty until the coffee machine is connected to IoT Central. Once connected, the coffee machine sends the warranty status to the application.
 
-Cloud properties are device metadata that's associated with the device. Use cloud properties to record information about your device in your IoT Central application. In this scenario, you use cloud properties to record the ideal water temperature range of the coffee machine. Cloud properties are stored in the IoT Central application and don't synchronize with the device. Cloud properties are not part of an interface definition.
+Cloud properties are device metadata that's associated with the device. Use cloud properties to record information about your device in your IoT Central application. In this scenario, you use cloud properties to record the ideal water temperature range of the coffee machine. Cloud properties are stored in the IoT Central application and don't synchronize with the device.
 
 ### Commands
 
@@ -48,5 +48,6 @@ A device model is the part of the device template that defines the telemetry, pr
 - Each telemetry field represent measurements or events, and are often used to describe device sensor readings. For example, `Water Temperature` has a `schema` of `double` and a `unit` of `degreeCelsius`. The `decimalPlaces`, `maxValue`, and `minValue` fields specify additional details about the telemetry data.
 - Each property field represents the state of an entity. For example, `Device Warranty Expired` is of type boolean and can have its state set by the connected device as true or false.
 - The `writable` field specifies whether the property can be set from the IoT Central application. In this case, `Optimal Temperature` can be set from the application UI, while `Device Warranty Expired` cannot.
+- If a property has `Cloud` in the list of types, then it is a Cloud Property. In this case, `Coffee Maker Min Temperature` and `Coffee Maker Max Temperature` are cloud properties.
 - Each command field describes an action that the device can perform. For example, `Start Brewing` is a command that the cloud can send to the device to begin brewing coffee.
 - The `commandType` field specifies whether a command is synchronous (waits for a response) or asynchronous (does not wait for a response).

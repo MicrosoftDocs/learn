@@ -24,23 +24,6 @@ IoT Central displays the **Connected Coffee Maker** capability model that define
 
 ![Imported Connected Coffee Machine template.](../media/4-imported-template.png)
 
-## Add cloud properties
-
-To add the cloud properties that store the ideal water temperature range for the coffee machine:
-
-1. Navigate to the **Connected Coffee Machine** device template you created, and select  **Connected Coffee Maker** capability model.
-
-1. Select **Add capability** and add two cloud properties to the device template using the information in the following table; you might need to select the down icon to expand some of these values:
-
-    | Display name | Name |Capability type | Semantic type | Schema | Min value | Max value | Decimal places | Unit|
-    | ------------ | ---- | ------------- | ------------- | ------ | --------- | --------- | -------------- | ---- |
-    | Coffee Maker Min Temperature | CoffeeMakerMinTemperature | Cloud Property | Temperature | Double | 88 | 92 | 1 | Degree celsius |
-    | Coffee Maker Max Temperature | CoffeeMakerMaxTemperature | Cloud Property | Temperature | Double | 96 | 99 | 1 | Degree celsius |
-
-1. Save your changes.
-
-    ![Connected Coffee Machine cloud properties.](../media/4-cloud-properties.png)
-
 ## Add views to your template
 
 To create a view that lets you visualize the telemetry from your coffee machine:
