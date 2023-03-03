@@ -34,7 +34,6 @@ subjects:
 - architecture
 units:
 - learn.wwl.design-for-high-availability.recommend-solution-for-relational-data-storage
-- learn.wwl.design-for-high-availability.recommend-solution-for-non-relational-data-storage
 - learn.wwl.design-for-high-availability.summary-resources
 badge:
   uid: learn.wwl.design-for-high-availability.badge
