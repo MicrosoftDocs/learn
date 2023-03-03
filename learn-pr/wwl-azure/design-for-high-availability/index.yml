@@ -35,7 +35,6 @@ subjects:
 units:
 - learn.wwl.design-for-high-availability.introduction
 - learn.wwl.design-for-high-availability.identify-availability-requirements-of-azure-resources
-- learn.wwl.design-for-high-availability.azure-front-door
 - learn.wwl.design-for-high-availability.azure-traffic-manager
 - learn.wwl.design-for-high-availability.recommend-solution-for-compute
 - learn.wwl.design-for-high-availability.recommend-solution-for-relational-data-storage
