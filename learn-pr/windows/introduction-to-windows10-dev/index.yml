@@ -16,7 +16,7 @@ abstract:  |
   - Be introduced to the Windows Insider Program.
 iconUrl: /training/achievements/introduction-to-windows-10-development.svg
 prerequisites: |
- - A computer that's running the current release of Windows 10. To verify that you're running the latest version, go to Settings > Windows Update.
+ - A computer that's running Windows 10. To verify that you're running the latest version, go to Settings > Windows Update.
 levels:
 - beginner
 roles:

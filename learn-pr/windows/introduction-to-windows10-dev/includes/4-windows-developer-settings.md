@@ -1,7 +1,7 @@
-Before you can write Windows 10 apps on your computer, there's one more thing to do: enable Developer Mode on any Windows computer you're using to write apps, and on any devices you'll use to test your code. If you've already enabled Developer Mode for a previous project, you can skip this step.
+Before you can write Windows 10 apps on your computer, there's one more thing to do: enable Developer Mode on the Windows computer you're using to write apps, and on any devices you'll use to test your code. If you've already enabled Developer Mode for a previous project, you can skip this step.
 
-> [!NOTE]
-> To enable Developer Mode, you need administrator access. If your device is owned by an organization, this option might be disabled. If you can't activate Developer Mode on your computer, you need to use a virtual machine to develop Windows apps.
+> [!IMPORTANT]
+> To enable Developer Mode, you need administrator access. If your device is owned by an organization, this option might be disabled. If you can't activate Developer Mode on your computer, you need to [use a virtual machine](../../../wwl-azure/configure-virtual-machines/index.yml) to develop Windows apps.
 
 Before Developer Mode is enabled, opening a project in Visual Studio opens the **For developers** page in **Settings** or opens the **Enable Developer Mode for Windows 10** window in Visual Studio:
 
@@ -33,7 +33,7 @@ When you enable Developer Mode on a desktop computer that's running Windows 10, 
 
 Network or administrative issues might prevent the Developer Mode package from being installed properly, which prevents the use of remote deployment and the WDP. Even in this case, you can test and deploy your app locally by using Visual Studio.
 
-> [!NOTE]
+> [!TIP]
 > If the Developer Mode package isn't installed correctly, we encourage you to file a feedback request. In the **Feedback Hub** app, select **Add new feedback**, and then choose the **Developer Platform** category and the **Developer Mode** subcategory. We appreciate your feedback, which helps Microsoft resolve the issue you encountered.
 
 ## Create a developer account

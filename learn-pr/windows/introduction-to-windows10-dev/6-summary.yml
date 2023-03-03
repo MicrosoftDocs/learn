@@ -3,7 +3,7 @@ title: Summary
 uid: learn-windows.introduction-w10-dev.6-summary
 metadata:
   title: Summary
-  description: Summary
+  description: Summary and knowledge check. 
   ms.date: 03/03/2023
   author: QuinnRadich
   ms.author: quradic
@@ -22,7 +22,7 @@ quiz:
         explanation: Incorrect. XCode isn't used for Windows development.
         isCorrect: false
       - content: Visual Studio
-        explanation: Correct. You'll use Visual Studio 2017 to write Windows 10 apps.
+        explanation: Correct. You should use Visual Studio 2017 to write Windows 10 apps.
         isCorrect: true
       - content: Android Studio
         explanation: Incorrect. Android Studio isn't used for Windows development.
