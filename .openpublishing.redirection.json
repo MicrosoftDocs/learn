@@ -20539,6 +20539,61 @@
       "source_path": "learn-pr/wwl-azure/azure-security-center/5-recommendations.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/9-recommendations",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/9-recommendations.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/11-recommendations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/10-secure-score.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/12-secure-score",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/11-brute-force-attacks.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/13-brute-force-attacks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/12-just-time-virtual-machine-access.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/14-just-time-virtual-machine-access",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/13-demonstration.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/15-demonstration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/14-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/16-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/15-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/17-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/6-azure-defender.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/5-azure-defender",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/5-azure-arc.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/6-azure-arc",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/7-microsoft-cloud-security-benchmark.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/8-microsoft-cloud-security-benchmark",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/8-policies.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/9-policies",
+      "redirect_document_id": false
     }  
   ]
 }
