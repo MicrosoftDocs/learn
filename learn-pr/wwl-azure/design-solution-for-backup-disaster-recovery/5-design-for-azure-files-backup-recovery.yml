@@ -11,6 +11,6 @@ metadata:
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 4
+durationInMinutes: 3
 content: |
   [!include[](includes/5-design-for-azure-files-backup-recovery.md)]
