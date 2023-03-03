@@ -20594,6 +20594,56 @@
       "source_path": "learn-pr/wwl-azure/azure-security-center/8-policies.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/9-policies",
       "redirect_document_id": false
-    }  
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-for-high-availability/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-high-availability-disaster-recovery-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-for-high-availability/3-azure-front-door.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-high-availability-disaster-recovery-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-for-high-availability/4-azure-traffic-manager.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-high-availability-disaster-recovery-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-for-high-availability/2-identify-availability-requirements-of-azure-resources.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-high-availability-disaster-recovery-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-for-high-availability/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-high-availability-disaster-recovery-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-for-high-availability/8-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-high-availability-disaster-recovery-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-for-high-availability/5-recommend-solution-for-compute.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-high-availability-disaster-recovery-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-for-high-availability/7-recommend-solution-for-non-relational-data-storage.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-high-availability-disaster-recovery-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-for-high-availability/6-recommend-solution-for-relational-data-storage.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-high-availability-disaster-recovery-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-for-high-availability/9-summary-resources.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-high-availability-disaster-recovery-strategies/",
+      "redirect_document_id": false
+    }
   ]
 }
