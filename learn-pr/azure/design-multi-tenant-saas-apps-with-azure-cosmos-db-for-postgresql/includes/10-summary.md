@@ -15,7 +15,7 @@ To ensure you aren't charged for the configured capacity of the resources you cr
 
 ## References
 
-> Tip
+> [!TIP]
 >
 > To open a hyperlink, right-click and choose **Open in new tab or window**. That way, you can see the resource and quickly return to the module.
 
