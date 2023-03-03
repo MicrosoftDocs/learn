@@ -20,7 +20,7 @@ Defender for Cloud continually assesses your cross-cloud resources for security 
 :::image type="content" source="../media/single-secure-score-via-mobile1a-0a8df228.png" alt-text="Screenshot showing secure score results.":::
 
 
-To increase your security, review Defender for Cloud's **recommendations page** and remediate the recommendation by implementing the remediation instructions for each issue. **Recommendations are grouped into security controls**. Each control is a logical group of related security recommendations and reflects your vulnerable attack surfaces. Your score only improves when you remediate ***all*** of the recommendations for a single resource within a control. To see how well your organization is securing each individual attack surface, review the scores for each security control.
+To increase your security, review Defender for Cloud's **recommendations page** and remediate the recommendation by implementing the remediation instructions for each issue. **Recommendations are grouped into security controls**. Each control is a **logical group of related security recommendations** and **reflects your vulnerable attack surfaces**. Your score only improves when you ***remediate all*** of the recommendations for a ***single resource within a control***. To see how well your organization is securing each individual attack surface, review the scores for each security control.
 
 ## How your secure score is calculated
 

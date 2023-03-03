@@ -17,9 +17,11 @@ The **Microsoft cloud security benchmark (MCSB)** provides prescriptive best pra
 :::image type="content" source="../media/mcsb-vs-other-frameworks-7167558f.png" alt-text="Screenshot showing the Microsoft cloud security benchmark versus other Cloud for Internet Security framework.":::
 
 
-**Automated control monitoring for AWS in Microsoft Defender for Cloud:** You can use Microsoft Defender for Cloud Regulatory Compliance Dashboard to monitor your AWS environment against **Microsoft cloud security benchmark (MCSB)**, just like how you monitor your Azure environment. We developed approximately **180 AWS checks** for the new AWS security guidance in MCSB, allowing you to monitor your AWS environment and resources in Microsoft Defender for Cloud.
+**Automated control monitoring for AWS in Microsoft Defender for Cloud:** You can use **Microsoft Defender for Cloud Regulatory Compliance Dashboard** to monitor your AWS environment against **Microsoft cloud security benchmark (MCSB)**, just like how you monitor your Azure environment. We developed approximately **180 AWS checks** for the new AWS security guidance in MCSB, allowing you to monitor your AWS environment and resources in Microsoft Defender for Cloud.
 
-:::image type="content" source="../media/microsoft-cloud-security-benchmark-regulatory-compliance-0bc0ce96.png" alt-text="Screenshot showing the Microsoft cloud security benchmark regulatory compliance page in the Azure dashboard.":::
+**Example: Microsoft Defender for Cloud - Regulatory compliance dashboard**
+
+:::image type="content" source="../media/microsoft-cloud-security-benchmark-regulatory-compliance-dashboard-7d983321.png" alt-text="Screenshot showing example of the Regulatory compliance dashboard.":::
 
 
 **Azure guidance and security principles**: Azure security guidance, security principles, features, and capabilities.
