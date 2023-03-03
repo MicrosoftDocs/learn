@@ -6,13 +6,17 @@ It's also vital that any mission-critical application and its associated data ar
 
 Azure Architects address several points as they plan for backup and recovery of their infrastructure. Let's review some of the common concepts and prominent considerations.
 
-- A primary goal for backup and recovery is to ensure business applications are reliable:
-   - Apps must be resilient to component failure
-   - Apps must be highly available, which means they can run in a healthy state with no significant downtime
+- Architects use Azure backup services to design solutions that support business continuity (BC) and disaster recovery (DR), or _BCDR_.
 
-- To achieve the desired level of resilience and high availability, a backup and recovery plan must accurately define the requirements:
-   - Identify the business needs
-   - Build the resiliency plan to address all business needs
+- A primary goal for BCDR is to ensure business applications are reliable.
+
+   - Applications must be resilient to component failure.
+   - Applications must be highly available, which means they can run in a healthy state with no significant downtime.
+
+- To achieve the desired level of resilience and high availability, a BCDR plan must accurately define the requirements:
+
+   - Identify the business needs.
+   - Build a resiliency plan to address all business needs.
 
    > [!NOTE]
    > In this module, _resiliency_ is the ability of a system to gracefully handle and recover from failures, both inadvertent and malicious.
@@ -20,15 +24,14 @@ Azure Architects address several points as they plan for backup and recovery of 
 - Requirements are defined for each workload to back up, along with workload usage patterns:
 
    - A **workload** is a distinct capability or task that's logically separated from other tasks in terms of business logic and data storage requirements. Each workload can have different requirements.
-   
    - The **usage patterns** for a workload reveal differences in requirements to support the workload. Usage patterns can show how workload usage might change based on the time of day/week or region/geographic location.
 
-- The recovery plan includes availability metrics that are calculated for the infrastructure components:
+- Availability metrics are calculated for the infrastructure components:
 
    - **Mean time to recovery (MTTR)**: Determines the average time it takes to restore a component after a failure. 
    - **Mean time between failures (MTBF)**: Identifies how long a component can reasonably expect to last between outages.
 
-- The cost and risk of downtime or data loss are represented in the plan by using calculated recovery metrics:
+- The cost and risk of downtime or data loss are represented by using calculated recovery metrics:
 
    - **Recovery time objective (RTO)**: Defines the maximum acceptable time one of the apps can be unavailable following an incident.
    - **Recovery point objective (RPO)**: Defines the maximum duration of data loss that's acceptable during a disaster.
@@ -59,4 +62,4 @@ Now that you understand the prominent characteristics of planning for backup and
 
 By including these considerations in your planning, you can define appropriate target SLAs for each workload in your solution. These targets help to ensure the architecture meets your business requirements. Suppose you have a workload that requires 99.99 percent uptime, but depends on a service with a 99.9 percent SLA. In this case, you can determine that the dependent service can't be a single point of failure in your system.
 
-After you define your backup and recovery requirements, you're ready to select a suitable recovery technology.
+After you define your BCDR requirements, you're ready to select a suitable recovery technology.

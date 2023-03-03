@@ -37,7 +37,7 @@ You can automate and manage your Azure file shares snapshots. Automating snapsho
 
 ### Things to consider when using file share backups
 
-Take a moment to review some considerations for creating and recovering from file share backups. Think about how you can use this approach to support the Tailwind Traders requirements.
+Take a moment to review some considerations for creating and recovering from file share backups. Think about how you can use this approach to support the Tailwind Traders BCDR requirements.
 
 - **Consider instant restore.** Azure file share backup uses file share snapshots. You can select just the files you want to restore instantly.
 

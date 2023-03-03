@@ -29,7 +29,7 @@ The following image shows a high-level view of how Azure virtual machines are ba
  
 ### Things to consider when using virtual machine backup and recovery
 
-Here are some things to review when planning backup and recovery for your virtual machines. Consider how you can use Azure virtual machine backups in the Tailwind Traders solution. 
+Here are some things to review when planning backup and recovery for your virtual machines. Consider how you can use Azure virtual machine backups in the Tailwind Traders BCDR solution. 
 
 - **Consider your backup schedule**. Identify the best backup schedule for your business needs. To distribute backup traffic, consider backing up different virtual machines at different times of the day, and make sure the backup times don't overlap. Ensure your backup scheduled start time is during non-peak production application times.
 

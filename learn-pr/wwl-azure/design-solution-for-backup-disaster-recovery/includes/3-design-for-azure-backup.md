@@ -25,7 +25,7 @@ Azure Backup organizes your backup data in a storage entity called a _vault_. A 
 
 ### Things to consider when using storage vaults
 
-In your planning for Azure Backup and vault storage, consider the following points. Think about how you can use Azure Backup and storage vaults to support the Tailwind Traders requirements.
+In your planning for Azure Backup and vault storage, consider the following points. Think about how you can use Azure Backup and storage vaults to support the Tailwind Traders BCDR requirements.
 
 - **Consider vault organization**. Think about how you want to organize your storage vaults. If all your workloads are managed from a single subscription and single resource, you can use a single vault. If your workloads are spread across subscriptions, you can create multiple vaults. Use separate vaults for Azure Backup and Azure Site Recovery.
 
