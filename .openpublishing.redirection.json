@@ -20599,6 +20599,11 @@
       "source_path": "learn-pr/wwl-azure/design-for-high-availability/index.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/describe-high-availability-disaster-recovery-strategies/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-for-high-availability/3-azure-front-door.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-high-availability-disaster-recovery-strategies/",
+      "redirect_document_id": false
     }
   ]
 }
