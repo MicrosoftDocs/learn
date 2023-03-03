@@ -5,7 +5,6 @@ A device template includes the following sections:
     - *Root component*. The root component's interface describes capabilities that are specific to the device model.
     - *Components*. A device model may include components in addition to the root component to describe device capabilities. In this scenario, you will only use the root component to define the *Connected Coffee Maker* model.
     - *Inherited interfaces*. A device model contains one or more interfaces that extend the capabilities of the root component. In this scenario, you will define only one interface.
-- *Cloud properties*. This part of the device template lets you specify the ideal water temperature range for the coffee machine. Cloud properties are never synchronized with devices and only exist in the application.
 - *Views*. This part of the device template lets you define visualizations to view data from the device, and forms to manage and control the coffee machine.
 
 After you create a device template, you can connect a simulated device. The simulated device generates telemetry so you can test the behavior of your application before connecting a real device.
@@ -24,13 +23,11 @@ In this scenario, you use a *writeable* property to set the optimal water temper
 
 You can use *read-only* properties to enable a device to send values to your application. Read-only properties can only be changed by the device. In this scenario, you define a read-only device property called `Device Warranty Expired` in the device template. The `Device Warranty Expired` field remains empty until the coffee machine is connected to IoT Central. Once connected, the coffee machine sends the warranty status to the application.
 
+Cloud properties are device metadata that's associated with the device. Use cloud properties to record information about your device in your IoT Central application. In this scenario, you use cloud properties to record the ideal water temperature range of the coffee machine. Cloud properties are stored in the IoT Central application and don't synchronize with the device. Cloud properties are not part of an interface definition.
+
 ### Commands
 
 Use commands to remotely manage your device from your application. You can directly run commands on the device from the cloud to control the device. In this scenario, you run commands on your coffee machine to set it to maintenance mode or to start brewing.
-
-### Cloud properties
-
-Cloud properties are device metadata that's associated with the device. Use cloud properties to record information about your device in your IoT Central application. In this scenario, you use cloud properties to record the ideal water temperature range of the coffee machine. Cloud properties are stored in the IoT Central application and don't synchronize with the device. Cloud properties are not part of an interface definition.
 
 ### Views
 

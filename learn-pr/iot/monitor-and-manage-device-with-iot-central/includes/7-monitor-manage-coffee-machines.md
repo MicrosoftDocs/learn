@@ -23,7 +23,7 @@ To learn more, see [Monitor application health](/azure/iot-central/core/howto-ma
 To automate device management tasks, you can use:
 
 - Rules to trigger actions automatically when device data that you're monitoring reaches predefined thresholds. To learn more, see [Configure rules](/azure/iot-central/core/howto-configure-rules).
-- [Job scheduling](/azure/iot-central/core/howto-manage-devices-in-bulk#create-and-run-a-job) for regular device management tasks.
+- [Job scheduling](/azure/iot-central/core/howto-manage-devices-in-bulk) for regular device management tasks.
 - The Azure CLI to manage your devices from a scripting environment. To learn more, see [az iot central](/cli/azure/iot/central).
 - The IoT Central REST API to manage your devices programmatically. To learn more, see [How to use the IoT Central REST API to manage devices](/azure/iot-central/core/howto-manage-devices-with-rest-api).
 Rules, CLI, REST API, job schedule

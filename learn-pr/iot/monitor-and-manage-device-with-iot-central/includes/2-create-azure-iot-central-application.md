@@ -6,7 +6,7 @@ You'll begin by creating an IoT Central custom application that defines the data
 
 ## Create the Coffee Maker application
 
-To create an IoT Central application, you need an Azure Subscription. In this section we activate the Azure sandbox, sign in to Azure IoT Central and create a new custom application using a standard pricing plan. Your personal subscription won't be charged. All resources created in the sandbox are free for use in this module.
+In this section we activate the Azure sandbox, sign in to Azure IoT Central and create a new custom application using a standard pricing plan. All resources created in the sandbox are free for use in this module.
 
 1. Start by **activating the Azure sandbox above**.
 
@@ -38,7 +38,7 @@ To create an IoT Central application, you need an Azure Subscription. In this se
 
 1. Choose **Review + Create**.
 
-1. If validation passes, select **Create** to create your application.
+1. When the validation step is complete, select **Create** to create your application.
 
 1. When your application has been created, select **Go to resource**.
 

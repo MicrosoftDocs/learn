@@ -53,7 +53,7 @@ The following steps show you how to create a client application that implements 
     ```azurecli
     npm install azure-iot-device azure-iot-device-mqtt azure-iot-provisioning-device-mqtt azure-iot-security-symmetric-key --save
     ```
-
+<!-- TODO: If you modify the sample to use environment variables, there's no need to use an editor. You can just download the source by using wget or curl. -->
 1. Create and open a file called *CoffeeMaker.js* in the integrated Cloud Shell code editor by executing the following command:
 
      ```azurecli
