@@ -9,7 +9,7 @@ A device template includes the following sections:
 
 After you create a device template, you can connect a simulated device. The simulated device generates telemetry so you can test the behavior of your application before connecting a real device.
 
-Here, you'll see how telemetry, properties and commands definitions are specified in the device model, and the cloud properties and views needed to manage and control the devices in the IoT enabled coffee machines example.
+Here, you'll see how telemetry, properties, and commands definitions are specified in the device model, and the cloud properties and views needed to manage and control the devices in the IoT enabled coffee machines example.
 
 ### Telemetry
 

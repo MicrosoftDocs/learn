@@ -1,4 +1,4 @@
-Azure IoT Central applications can be customized for each case.
+You can customize an Azure IoT Central application for your specific scenario.
 
 Recall that in the IoT enabled coffee machines example, there would be one application to monitor and manage your devices spread around the world.
 
