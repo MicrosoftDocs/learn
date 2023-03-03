@@ -2,7 +2,7 @@
 Azure Quantum has a resource estimation tool that computes and outputs the resources required for a quantum algorithm, assuming it is executed on a fault-tolerant error-corrected quantum computer. The Azure Quantum Resource Estimator allows you to assess architectural decisions, compare qubit technologies, and determine the resources needed to execute a given quantum algorithm. You can see the total number of physical qubits, wall clock time, the computational resources required, and the details of the formulas and values used for each estimate. 
 
 > [!NOTE]
-> To date, available quantum computers aren't fault-tolerant, error-correcting quantum computers. The current state of quantum computers is defined as noisy intermediate-scale quantum computers, or NISQ. The Azure Quantum Resource Estimator assumes execution on a fault-tolerant quantum computer, thus it doesn't work on NISQ machines.
+> To date, available quantum computers aren't fault-tolerant, error-correcting quantum computers. The current state of quantum computers is defined as noisy intermediate-scale quantum computers, or NISQ. The Azure Quantum Resource Estimator assumes execution on a fault-tolerant quantum computer, thus it doesn't apply to NISQ machines.
 
 The Azure Quantum Resource Estimator takes a [Quantum Intermediate Representation (QIR)](/azure/quantum/concepts-qir) program as input, so it supports any language that translates to QIR, such as Q# and Qiskit.
 
@@ -22,12 +22,12 @@ You can choose from six pre-defined qubit parameters, four of which have gate-ba
 
 | Pre-defined qubit parameters | Instruction set | References                                                                                                 |
 |------------------------------|-----------------|------------------------------------------------------------------------------------------------------------|
-| `\"qubit_gate_ns_e3\"`         | gate-based      | [arXiv:2003.00024](https://arxiv.org/abs/2003.00024), [arXiv:2111.11937](https://arxiv.org/abs/2111.11937) |
-| `\"qubit_gate_ns_e4\"`         | gate-based      | [arXiv:2003.00024](https://arxiv.org/abs/2003.00024), [arXiv:2111.11937](https://arxiv.org/abs/2111.11937) |
-| `\"qubit_gate_us_e3\"`         | gate-based      | [arXiv:1701.04195](https://arxiv.org/abs/1701.04195)                                                       |
-| `\"qubit_gate_us_e4\"`         | gate-based      | [arXiv:1701.04195](https://arxiv.org/abs/1701.04195)                                                       |
-| `\"qubit_maj_ns_e4\"`          | Majorana        | [arXiv:1610.05289](https://arxiv.org/abs/1610.05289)                                                       |
-| `\"qubit_maj_ns_e6\"`          | Majorana        | [arXiv:1610.05289](https://arxiv.org/abs/1610.05289)                                                       |
+| `"qubit_gate_ns_e3"`         | gate-based      | [arXiv:2003.00024](https://arxiv.org/abs/2003.00024), [arXiv:2111.11937](https://arxiv.org/abs/2111.11937) |
+| `"qubit_gate_ns_e4"`         | gate-based      | [arXiv:2003.00024](https://arxiv.org/abs/2003.00024), [arXiv:2111.11937](https://arxiv.org/abs/2111.11937) |
+| `"qubit_gate_us_e3"`         | gate-based      | [arXiv:1701.04195](https://arxiv.org/abs/1701.04195)                                                       |
+| `"qubit_gate_us_e4"`         | gate-based      | [arXiv:1701.04195](https://arxiv.org/abs/1701.04195)                                                       |
+| `"qubit_maj_ns_e4"`          | Majorana        | [arXiv:1610.05289](https://arxiv.org/abs/1610.05289)                                                       |
+| `"qubit_maj_ns_e6"`          | Majorana        | [arXiv:1610.05289](https://arxiv.org/abs/1610.05289)                                                       |
 
 Pre-defined qubit parameters can be selected by specifying the `name` field in the `qubitParams`. Pre-defined qubit parameters can also be customized by specifying the name and then updating any of the other values. For example, to decrease the error rate of two-qubit joint measurement in `"qubit_maj_ns_e4"`, write:
 
