@@ -38,7 +38,7 @@ Because both the cloud-hosted and on-premises components initiate the connection
 
 The following diagram shows how the connection is made:
 
-![How Azure Relay exchanges messages.](../media/2-how-relay-works.png)
+:::image type="content" source="../media/2-how-relay-works.png" alt-text="Diagram showing how Azure Relay exchanges messages.":::
 
 1. A listener requests a connection to Azure Relay. The request is sent to a relay gateway by Azure Load Balancer.
 1. The gateway creates an Azure relay in the gateway store. At this point, the listener is ready to receive messages.

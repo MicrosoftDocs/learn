@@ -12,7 +12,7 @@ Let's start by creating a new Azure Relay namespace.
 
 1. In the **Search the Marketplace** search box, search for and select **Relay**. Select the marketplace card for **Relay**, and the **Relay** panel appears.
 
-   ![Screenshot showing the top portion of the Relay panel with the logo and Create button.](../media/3-relay-panel.png)
+   :::image type="content" source="../media/3-relay-panel.png" alt-text="Screenshot showing the top portion of the Relay panel with the logo and Create button.":::
 
 1. Select **Create**. The **Create namespace** panel appears.
 
@@ -40,7 +40,7 @@ Azure Relay helps maintain security by requiring applications to supply an acces
 
 1. In the left menu pane, under **Settings**, select **Shared access policies**, and then select the **RootManageSharedAccessKey** policy. The **SAS Policy: RootManageSharedAccessKey** panel appears.
 
-    ![Screenshot of getting the access key for the relay.](../media/3-obtain-access-key.png)
+   :::image type="content" source="../media/3-obtain-access-key.png" alt-text="Screenshot of the SAS Policy: RootManageSharedAccessKey panel showing how to get the access key  connection string for the relay.":::
 
 1. To save the primary key and primary connection string, follow these steps:
   
@@ -58,6 +58,6 @@ For your credit-checking web service, you want to use hybrid connections, not Wi
 
 1. Select **+ Hybrid Connection**. The **Create Hybrid Connection** panel appears.
 
-1. In the **Name** box, enter **creditcheckconnection**. Leave **Requires Client Authentication** selected, and then select **Create**.
+1. In the **Name** box, enter **CreditCheckConnection**. Leave **Requires Client Authentication** selected, and then select **Create**.
 
 You've completed the configuration of the relay in Azure. Apps can exchange messages through the relay when they make the right connection to it.
