@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.design-machine-learning-operations-solution.explore-mlops-architecture
+uid: learn.wwl.design-machine-learning-operations-solution.explore-machine-learning-operations-solution-architecture
 title: Explore an MLOps architecture
 metadata:
   title: Explore an MLOps architecture
   description: "Explore how to prepare a machine learning model for production through an MLOps architecture."
-  ms.date: 03/02/2023
+  ms.date: 03/03/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-explore-mlops-architecture.md)]
+  [!include[](includes/2-explore-machine-learning-operations-solution-architecture.md)]

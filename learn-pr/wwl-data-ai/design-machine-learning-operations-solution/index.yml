@@ -2,8 +2,8 @@
 uid: learn.wwl.design-machine-learning-operations-solution
 metadata:
   title: Design a machine learning operations solution
-  description: "Azure Machine Learning Python SDK v2"
-  ms.date: 03/02/2023
+  description: "Design machine learning operations MLOps solution with Azure Machine Learning Python SDK v2"
+  ms.date: 03/03/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
@@ -27,7 +27,7 @@ subjects:
 - machine-learning
 units:
 - learn.wwl.design-machine-learning-operations-solution.introduction
-- learn.wwl.design-machine-learning-operations-solution.explore-mlops-architecture
+- learn.wwl.design-machine-learning-operations-solution.explore-machine-learning-operations-solution-architecture
 - learn.wwl.design-machine-learning-operations-solution.design-monitoring
 - learn.wwl.design-machine-learning-operations-solution.design-retraining
 - learn.wwl.design-machine-learning-operations-solution.case-study
