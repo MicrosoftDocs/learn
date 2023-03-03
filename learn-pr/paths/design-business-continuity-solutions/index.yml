@@ -27,7 +27,6 @@ subjects:
 - devops
 - business-continuity
 modules:
-- learn.wwl.design-for-high-availability
 - learn.wwl.design-solution-for-backup-disaster-recovery
 trophy:
   uid: learn.wwl.design-business-continuity-solutions.trophy
