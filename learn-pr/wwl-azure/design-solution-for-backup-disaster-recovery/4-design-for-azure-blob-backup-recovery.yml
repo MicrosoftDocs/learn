@@ -4,7 +4,7 @@ title: Design for Azure blobs backup and recovery
 metadata:
   title: Design for Azure blobs backup and recovery
   description: "Design backup and recovery for Azure blobs with operational backup for Azure Blob Storage."
-  ms.date: 03/07/2023
+  ms.date: 03/03/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial

@@ -4,7 +4,7 @@ title: Design for Azure Backup
 metadata:
   title: Design for Azure Backup
   description: "Design a backup and disaster recovery solution by using Azure Backup and storage vaults."
-  ms.date: 03/07/2023
+  ms.date: 03/03/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
