@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.work-compute-resources-azure-machine-learning.exercise
+title: Exercise - Work with compute resources
+metadata:
+  title: Exercise - Work with compute resources
+  description: "Explore how to work with compute targets in Azure Machine Learning through hands-on exercises."
+  ms.date: 01/17/2023
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-exercise.md)]

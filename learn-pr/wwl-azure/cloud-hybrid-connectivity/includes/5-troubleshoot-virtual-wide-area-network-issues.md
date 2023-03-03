@@ -119,7 +119,7 @@ When you troubleshoot issues with secured virtual hubs, be aware of the followin
 
 - The secure hub firewall goes into a failed state if you add multiple public IP addresses.
 
-- DDoS Protection Standard isn't supported with secured virtual hubs.
+- DDoS Protection isn't supported with secured virtual hubs.
 
 - Activity logs are not fully supported.
 

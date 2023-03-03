@@ -1,7 +1,7 @@
 > [!NOTE] 
 > To complete this exercise, you will need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at https://azure.com/free.
 
-In this exercise, you will create a Virtual WAN for Contoso.
+In this exercise, you'll create a Virtual WAN for Contoso.
 
 In this exercise, you will:
 
@@ -23,7 +23,7 @@ In this exercise, you will:
     
      -  **Subscription:** Use the existing subscription
      -  **Resource group:** ContosoResourceGroup
-     -  **Resource group location:** Choose a resource location from the dropdown. A WAN is a global resource and does not live in a particular region. However, you must select a region to manage and locate the WAN resource that you create.
+     -  **Resource group location:** Choose a resource location from the dropdown. A WAN is a global resource and doesn't live in a particular region. However, you must select a region to manage and locate the WAN resource that you create.
      -  **Name:** ContosoVirtualWAN
      -  **Type:** Standard
 5.  When you have finished filling out the fields, select **Review +Create**.
@@ -36,20 +36,20 @@ A hub contains gateways for site-to-site, ExpressRoute, or point-to-site functio
 1.  Locate the Virtual WAN that you created.
 2.  On the Virtual WAN page, under **Connectivity**, select **Hubs**.
 3.  On the Hubs page, select **+New Hub** to open the Create virtual hub page. 
-:::image type="content" source="../media/create-vwan-hub-fcc2ec0d.png" alt-text="Create Virtual Hub, Basics tab.":::
+:::image type="content" source="../media/create-vwan-hub.png" alt-text="Screenshot showing the Create virtual hub Basics tab.":::
     
 4.  On the Create virtual hub page **Basics** tab, complete the following fields:
     
      -  **Region:** West US
      -  **Name:** ContosoVirtualWANHub-WestUS
      -  **Hub private address space:** 10.60.0.0/24
-     -  **Virtual hub capacity:** 2 Routing infrastructure units
+     -  **Virtual hub capacity:** Two Routing infrastructure units
 5.  Select **Next: Site-to-site**.
 6.  On the **Site-to-site** tab, complete the following fields:
     
      -  **Do you want to create a Site to site (VPN gateway)?:** Yes
-     -  The **AS Number** field cannot be edited.
-     -  **Gateway scale units:** 1 scale unit = 500 Mbps
+     -  The **AS Number** field can't be edited.
+     -  **Gateway scale units:** One scale unit = 500 Mbps
 7.  Select **Review + Create** to validate.
 8.  Select **Create** to create the hub.
 9.  After 30 minutes, **Refresh** to view the hub on the Hubs page.
@@ -74,7 +74,7 @@ A hub contains gateways for site-to-site, ExpressRoute, or point-to-site functio
      -  **Associate Route Table:** Default
 5.  Select **Create**.
 
-Congratulations! You have created a Virtual WAN and a Virtual WAN Hub and connected the ResearchVNet to the hub.
+Congratulations! You've created a Virtual WAN and a Virtual WAN Hub and connected the ResearchVNet to the hub.
 
 ## Task 4: Clean up resources
 

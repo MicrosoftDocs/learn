@@ -3,7 +3,7 @@ uid: learn.wwl.sc-200-mitigate-threats-using-microsoft-365-defender
 metadata:
   title: 'SC-200: Mitigate threats using Microsoft 365 Defender'
   description: 'SC-200: Mitigate threats using Microsoft 365 Defender'
-  ms.date: 06/24/2022
+  ms.date: 02/17/2023
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
@@ -20,8 +20,19 @@ levels:
 roles:
 - security-operations-analyst
 products:
+- defender-for-cloud-apps
+- defender-identity
+- defender-office365
 - m365
+- mdatp
+- microsoft-purview
+- microsoft-defender
 subjects:
+- cloud-security
+- compliance
+- information-protection-governance
+- insider-risk
+- security
 - threat-protection
 modules:
 - learn.wwl.introduction-microsoft-365-threat-protection

@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.analyze-data-in-sentinel.7-manage-analytics-rules
+title: Manage analytics rules
+metadata:
+  title: Manage analytics rules
+  description: "Describes how to manage and modify analytics rules."
+  ms.date: 01/27/2023
+  author: wwlpublish
+  ms.author: kelawson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-manage-analytics-rules.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Due to ongoing maintenance activity, you need to stop receiving alerts from analytic rules temporarily. Which action should you enable on the rule to achieve that configuration?"
+    choices:
+    - content: "Delete"
+      isCorrect: false
+      explanation: "Deleting the rule will permanently stop receiving alerts from the analytic rule."
+    - content: "Disable"
+      isCorrect: true
+      explanation: "Disabled rules retain all the configuration and will temporary stop creating the alerts from the configured detections, while the rule is disabled."
+    - content: "Duplicate"
+      isCorrect: false
+      explanation: "Duplicating the rule will have the same logic as the original analytic rule and will continue to generate the alerts."
+  - content: "What is the most efficient way to edit an existing analytic rule?"
+    choices:
+    - content: "Delete and recreate the alert with the new logic."
+      isCorrect: false
+      explanation: "Deleting the analytic rule will require more effort to build the same query logic and tune accordingly."
+    - content: "Duplicate the rule and modify to achieve the necessary changes."
+      isCorrect: true
+      explanation: "When you duplicate the rule, you have a startup configuration provided from the original rule, which you can further modify."
+    - content: "Create a new rule."
+      isCorrect: false
+      explanation: "Creation of the new analytic rule will require you to provide more inputs to achieve the required customization, instead of simply duplicating the rule."

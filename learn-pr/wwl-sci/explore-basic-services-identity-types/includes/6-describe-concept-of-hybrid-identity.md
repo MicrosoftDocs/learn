@@ -1,3 +1,4 @@
+
 Many organizations are a mixture of both cloud and on-premises applications. Regardless of whether an application is hosted on-premises or in the cloud, users expect and require easy access.
 Microsoft’s identity solutions span on-premises and cloud-based capabilities. These solutions create a common user identity for authentication and authorization to all resources, regardless of location. We call this **hybrid identity**.  
 

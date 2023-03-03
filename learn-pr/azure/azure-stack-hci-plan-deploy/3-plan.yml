@@ -20,14 +20,14 @@ quiz:
   - content: "What is the minimum number of servers in an Azure Stack HCI cluster?"
     choices:
     - content: "1"
-      isCorrect: false
-      explanation: "That's incorrect. The number of servers in an Azure Stack HCI cluster must be between 2 and 16."
-    - content: "2"
       isCorrect: true
-      explanation: "That's correct. The number of servers in an Azure Stack HCI cluster must be between 2 and 16."
+      explanation: "That's correct. The number of servers in an Azure Stack HCI cluster must be between 1 and 16."
+    - content: "2"
+      isCorrect: false
+      explanation: "That's incorrect. The number of servers in an Azure Stack HCI cluster must be between 1 and 16."
     - content: "4"
       isCorrect: false
-      explanation: "That's incorrect. The number of servers in an Azure Stack HCI cluster must be between 2 and 16."
+      explanation: "That's incorrect. The number of servers in an Azure Stack HCI cluster must be between 1 and 16."
 
   - content: "What does Network ATC do?"
     choices:

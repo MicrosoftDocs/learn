@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.visualize-real-time-data-azure-stream-analytics-power-bi.power-bi-output
+title: Use a Power BI output in Azure Stream Analytics
+metadata:
+  title: Use a Power BI output in Azure Stream Analytics
+  description: "Use a Power BI output in Azure Stream Analytics"
+  ms.date: 12/30/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: stream-analytics
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-power-bi-output.md)]

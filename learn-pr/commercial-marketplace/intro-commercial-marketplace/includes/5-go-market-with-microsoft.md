@@ -8,9 +8,9 @@ If you’re engaging customers through a **Contact Me** listing, Microsoft’s M
 
 If you’re engaging customers by offering a **Free trial** listing, enabling deployments through a **BYOL** offer, or making sales through a **transact** listing, Microsoft will support your growth with increasing demand generation and sales activities.
 
-![Overview of Marketplace Rewards benefits increasing by investment represented by offer type.](..\media\14-more-you-engage-marketplace-rewards.png)
+![Diagram showing an overview of Marketplace Rewards benefits increasing by investment represented by offer type.](..\media\14-more-you-engage-marketplace-rewards.png)
 
-You can also earn higher tiers of Marketplace Rewards benefits when your commercial marketplace offer hits certain revenue milestones, which are reached when customers buy your solution through Microsoft AppSource, Azure Marketplace, our network of resellers, and the myriad in-product experiences. Hitting these revenue tiers requires that you have a **transact** offer in the commercial marketplace.
+You can also earn higher tiers of Marketplace Rewards benefits when your commercial marketplace offer hits certain revenue milestones. You'll reach these tiers when customers buy your solution through Microsoft AppSource, Azure Marketplace, our network of resellers, and the myriad in-product experiences. Hitting these revenue tiers requires that you have a **transact** offer in the commercial marketplace.
 
 The Marketplace Rewards program is designed to support you at your business’ stage of growth, starting with awareness activities to help you get your first customers and shifting to more advanced sales and technical benefits as you sell more through Microsoft. These benefits are available to all partners with active commercial marketplace offers.
 

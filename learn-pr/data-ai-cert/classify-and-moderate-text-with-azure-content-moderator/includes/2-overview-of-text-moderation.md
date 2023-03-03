@@ -10,7 +10,7 @@ The response from the Text Moderation API includes the following information:
 
 - A list of potentially unwanted words found in the text.
 - What type of potentially unwanted words were found.
-- Possible personally identifiable information (PII) found in the text.
+- Possible personal data found in the text.
 
 ## Profanity
 
@@ -55,9 +55,9 @@ Each category is also returned with a score between 0 and 1 to indicate the pred
 }
 ```
 
-## Personally identifiable information
+## Personal data
 
-Personally identifiable information (PII) is of critical importance in many applications. This feature of the API can help you detect if any values in the text might be considered PII before you release it publicly. Key aspects that are detected include:
+Personal data is of critical importance in many applications. This feature of the API can help you detect if any values in the text might be considered personal data before you release it publicly. Key aspects that are detected include:
 
 - Email addresses
 - US mailing addresses
@@ -66,7 +66,7 @@ Personally identifiable information (PII) is of critical importance in many appl
 - UK phone numbers
 - Social Security numbers
 
-If possible PII values are found, the JSON response includes relevant information about the text and the index location within the text. A sample JSON response is shown here:
+If possible personal data values are found, the JSON response includes relevant information about the text and the index location within the text. A sample JSON response is shown here:
 
 ```json
 "PII": {

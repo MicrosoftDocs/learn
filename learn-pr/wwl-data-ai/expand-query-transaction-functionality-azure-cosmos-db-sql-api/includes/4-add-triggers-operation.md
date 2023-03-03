@@ -36,7 +36,7 @@ Let's walk through a simple example where a JSON item is ready to be created in 
 In this example, a pre-trigger will be created that runs before an HTTP POST operation. This trigger will check for the existence of a **label** property. If it does not exist, it will add the label property with a value of **new**. The JavaScript code for this function uses the ``getContext()`` and ``getRequest()`` methods to get the current HTTP request, and then the request body.
 
 ```javascript
-function addLabel(item) {
+function addLabel() {
     var context = getContext();
     var request = context.getRequest();
     
@@ -56,7 +56,7 @@ request.setBody(pendingItem);
 The final pre-trigger function contains the following code:
 
 ```javascript
-function addLabel(item) {
+function addLabel() {
     var context = getContext();
     var request = context.getRequest();
     

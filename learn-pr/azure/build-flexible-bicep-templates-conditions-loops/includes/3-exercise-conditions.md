@@ -28,7 +28,7 @@ During the process, you'll:
 
    ::: code language="bicep" source="code/3-template.bicep" range="1-16, 27-29, 32-47" :::
 
-   Notice that all of the parameters include `@description` decorators, which helps to make them easier to work with. Also notice that the `sqlServerAdministratorLogin` and `sqlServerAdministratorLoginPassword` parameters have the `@secure` decorator applied to them. This tells Bicep that these parameter values are sensitive. Azure doesn't print sensitive values to logs.
+   Notice that all of the parameters include `@description` decorators, which help to make them easier to work with. Also notice that the `sqlServerAdministratorLogin` and `sqlServerAdministratorLoginPassword` parameters have the `@secure` decorator applied to them. This tells Bicep that these parameter values are sensitive. Azure doesn't print sensitive values to logs.
 
 ## Add a storage account
 
@@ -100,13 +100,13 @@ New-AzResourceGroupDeployment -TemplateFile main.bicep -location westus3
 
 ::: zone-end
 
-You're prompted to enter the values for `sqlServerAdministratorLogin` and `sqlServerAdministratorPassword` parameters when you execute the deployment.
+You're prompted to enter the values for `sqlServerAdministratorLogin` and `sqlServerAdministratorLoginPassword` parameters when you execute the deployment.
 
 > [!TIP]
 > When you enter the secure parameters, the values you choose must follow certain rules:
 > 
 > - `sqlServerAdministratorLogin` must not be an easily guessable login name such as `admin` or `root`. It can contain only alphanumeric characters and must start with a letter.
-> - `sqlServerAdministratorPassword` must be at least eight characters long and include lowercase letters, uppercase letters, numbers, and symbols. For more information about password complexity, see the [SQL Azure password policy](/sql/relational-databases/security/password-policy#password-complexity).
+> - `sqlServerAdministratorLoginPassword` must be at least eight characters long and include lowercase letters, uppercase letters, numbers, and symbols. For more information about password complexity, see the [SQL Azure password policy](/sql/relational-databases/security/password-policy#password-complexity).
 >
 > If the parameter values don't meet the requirements, Azure SQL won't deploy your logical server.
 > 
@@ -191,7 +191,7 @@ To complete this exercise, verify that the redeployment has finished successfull
 
     :::image type="content" source="../media/3-production-deployment.png" alt-text="Screenshot of the Azure portal resource group overview pane, showing that a storage account is deployed for auditing." border="true":::
 
-1. Select your logical server (look for the resource with type **Microsoft.Sql/servers**).
+1. Select your logical server (look for the resource with type **SQL server**).
 
 1. In the search field, enter **Auditing**. Under **Security**, select **Auditing**.
 

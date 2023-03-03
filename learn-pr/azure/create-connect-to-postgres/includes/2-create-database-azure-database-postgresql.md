@@ -18,11 +18,7 @@ The Single Server deployment option of Azure Database for PostgreSQL has three d
 
 Full compute and storage details for the different pricing tiers are available in Unit 9 - Summary.
 
-> [!NOTE]
-> Consider the Hyperscale deployment option for databases over 100GB, high-performance applications, and to scale across multiple regions.
-
-For our payment app scenario, the Basic tier is suitable while the app undergoes development. For a trial, either the General Purpose or Memory Optimized tiers would be suitable. When the app is ready to be released to a wider audience, Hyperscale will enable the app to scale across regions.
-
+For our payment app scenario, the Basic tier is suitable while the app undergoes development. For a trial, either the General Purpose or Memory Optimized tiers would be suitable.
 ## Scale up compute or storage needs
 
 You can adjust your compute (vCore) and storage needs at any time through the Azure portal or Azure CLI.

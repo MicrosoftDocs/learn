@@ -4,7 +4,7 @@ metadata:
   moduleType: introduction        
   title: Introduction to Azure Cloud Shell
   description: In this module you'll learn what Azure Cloud Shell does, how it works, and when you should choose to use Azure Cloud Shell as a solution to meet your organization’s needs. 
-  ms.date: 08/05/2022
+  ms.date: 01/17/2023
   author: vrapolinario
   ms.author: viniap
   ms.topic: interactive-tutorial
@@ -18,10 +18,10 @@ abstract: |
     - Determine whether Azure Cloud Shell meets the needs of your organization.
     - Recognize how to use Azure Cloud Shell and persist files for multiple sessions.
 prerequisites: |
-  - Experience with Azure virtual machines (VMs).
-  - Experience with Azure virtual networks.
-  - Experience with routing and routing protocols.
-  - The ability to navigate the Azure portal and use Azure PowerShell.
+  - Experience with Azure virtual machines (VMs)
+  - Experience with Azure virtual networks
+  - Experience with routing and routing protocols
+  - The ability to navigate the Azure portal and use Azure PowerShell
 iconUrl: /training/achievements/introduction-to-azure-cloud-shell.svg
 levels:
 - beginner

@@ -130,7 +130,7 @@ You can close the **Extension: C#** tab to focus on the code we'll be writing.
     dotnet run
     ```
 
-    You should see the following output.
+    You should get the following output:
 
     ```output
     Quantities:

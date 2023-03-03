@@ -1,14 +1,14 @@
-In this module, the **Azure AD SAML Toolkit** application represents the application that was requested by the team in the organization to help with company promotion.
+In this module, the **Azure AD SAML Toolkit** application represents the application that the team in the commercial bank requested to help with company promotions.
 
-The administrator reviews the application for single sign-on support and if appropriate, adds it to the Azure AD tenant from the Azure AD application gallery. It's possible that not all applications that an organization uses are in the gallery. This module focuses on one that is.
+As the administrator, you review the application for single sign-on support and, if appropriate, add it to the Azure AD tenant from the Azure AD application gallery. It's possible that not all applications that an organization uses are in the gallery. This module focuses on one that is.
 
-The administrator then creates a user account in the Azure AD tenant and assigns it to the application to test single sign-on between the identity provider and the service provider.
+You then create a user account in the Azure AD tenant and assign it to the application to test single sign-on between the identity provider and the service provider.
 
-## Access the application gallery
+## Access the Azure AD application gallery
 
-The Azure AD application gallery contains pre-integrated software as a service (SaaS) applications that can be added to a tenant. Applications that the retail company uses are probably already in the gallery. Locate the gallery from the Azure portal.
+The Azure AD application gallery contains pre-integrated software as a service (SaaS) applications that can be added to a tenant. Applications that the commercial bank uses are probably already in the gallery. Locate the gallery from the Azure portal.
 
-1. Sign in to the [Azure portal](https://portal.azure.com/) using one of the roles listed in the prerequisites.
+1. Sign in to the [Azure portal](https://portal.azure.com/) using one of the roles listed in the prerequisites and select **All services**.
 1. Select **Identity**, and then select **Azure Active Directory**.
 
     :::image type="content" source="../media/select-azure-ad.png" alt-text="Screenshot showing where to find Azure Active Directory in the Azure portal." border="false":::
@@ -36,7 +36,7 @@ Search for the **Azure AD SAML Toolkit** application and add it to the tenant.
 When setting up single sign-on for an application, test the configuration between the identity provider and the service provider before making it available to employees. Create a user account for the purposes of testing the configuration.
 
 1. On the **Azure Active Directory** pane, under **Manage**, select **Users**.
-1. Select **New user** at the top of the pane.
+1. Select **New user** at the top of the pane, then select **Create new user**.
 1. In the **User name** field, enter the username of the user account. For example, `contosouser1@contoso.com`. Be sure to change `contoso.com` to the name of the tenant domain.
 1. In the **Name** field, enter the name of the user of the account. For example, `contosouser1`.
 1. Leave **Auto-generate password** selected, and then select **Show password**. Write down the value that's displayed in the **Password** box.

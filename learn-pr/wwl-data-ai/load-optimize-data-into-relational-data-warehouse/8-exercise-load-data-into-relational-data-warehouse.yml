@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.load-data-into-relational-data-warehouse.exercise-load-data-into-relational-data-warehouse
+title: Exercise - load data into a relational data warehouse
+metadata:
+  title: Exercise - load data into a relational data warehouse
+  description: "Exercise - load data into a relational data warehouse"
+  ms.date: 02/21/2023
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: synapse-analytics
+durationInMinutes: 40
+content: |
+  [!include[](includes/8-exercise-load-data-into-relational-data-warehouse.md)]

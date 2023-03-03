@@ -4,14 +4,14 @@ The following code is one possible solution to the challenge in the preceding un
 $date = Read-Host "What is today's date"
 $name = Read-Host "Please enter your name"
 Write-Output "Today's date is $date."
-Write-Output "Today is the day $name began their PowerShell programming journey."
+Write-Output "Today is the day $name began a PowerShell programming journey."
 ```
 
 This code is only _one possible solution_. Your code could look different. However you wrote the code, you should have used `Read-Host` and `Write-Output` to produce the desired output.
 
 ```output
 Today's date is 02/05/2021.
-Today is the day Chase began their PowerShell programming journey.
+Today is the day Chase began a PowerShell programming journey.
 ```
 
 If you were successful, congratulations! Continue on to the knowledge check in the next unit.

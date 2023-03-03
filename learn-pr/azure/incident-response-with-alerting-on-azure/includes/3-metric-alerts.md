@@ -1,4 +1,4 @@
-Azure Monitor can use thresholds to monitor specific resources. In an organization, it's far more useful to be notified when the free disk space on a server is less than 5 percent, instead of being alerted every time a file is saved.
+Azure Monitor can use thresholds to monitor specific resources. In an organization, it's far more useful to be notified when the free disk space on a server is less than 5 percent instead of being alerted every time a file is saved.
 
 As a solution architect, you want to implement regular threshold monitoring for many of your target resources and instances. Monitoring will help to head off potential issues before they can affect your customers.
 

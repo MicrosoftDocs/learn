@@ -4,13 +4,11 @@ title: Explore event delivery durability
 metadata:
   title: Explore event delivery durability
   description: "Explore event delivery durability"
-  ms.date: 10/18/2022
+  ms.date: 02/14/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/4-event-grid-delivery-retry.md)]

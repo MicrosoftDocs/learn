@@ -10,16 +10,16 @@ If you're building Bicep code to deploy an application or another solution, it's
 
 Planning your folder structure also makes it easier to deploy your solution from a pipeline. You'll learn about pipelines in a future module.
 
-Different teams have different conventions for how they set up their repository folders and files. Even if you aren't working with a team, it's still a good idea to decide on a convention to follow. This will help anyone who has to work with your code in future.
+Different teams have different conventions for how they set up their repository folders and files. Even if you aren't working with a team, it's still a good idea to decide on a convention to follow. A good file and folder structure will help anyone who has to work with your code in future.
 
 If your team doesn't already have a preference, here's a suggestion for how you might do it:
 
-- At the root of your repository, create a _README.md_ file. This Markdown (text) file describes what's in the repository and gives instructions to help team members set things up.
+- At the root of your repository, create a _README.md_ file. This text file, written in Markdown, describes the repository's contents and gives instructions to help team members work in the repository.
 - At the root of your repository, create a _deploy_ folder. Inside the folder:
   - Store your main Bicep template, named _main.bicep_.
   - Create a _modules_ subfolder, to store your Bicep modules.
   - If you have other scripts or files that are used during deployments, store them in the _deploy_ folder.
-- At the root of your repository, create an _src_ folder. Use it to store application code.
+- At the root of your repository, create a _src_ folder for source code. Use it to store application code.
 - At the root of your repository, create a _docs_ folder. Use it to store documentation about your solution.
 
 Here's an illustration of how this structure might look for your toy company's website:
@@ -28,14 +28,14 @@ Here's an illustration of how this structure might look for your toy company's w
 
 ## Stage your changes
 
-After you make changes to a file or files, you need to _stage_ them. Staging tells Git that you consider the changes important enough to keep. It might seem like an unnecessary step, but staging gives you a lot of flexibility as you work. For example, you might make changes to several files but want to keep only one of them. Or, you might want to keep only some of the changes that you've made to a file.
+After you make changes to a file or files, you need to _stage_ them. Staging tells Git that you consider the changes important enough to keep. It might seem like an unnecessary step, but staging gives you flexibility as you work. For example, you might make changes to several files but want to keep only one of them. Or, you might want to keep only some of the changes that you've made to a file.
 
-To stage a file, you use the `git add` command and specify the file name or folder name that you want to stage. After you do this, Git knows that you might want to commit the changes. When you query the repository status by using `git status`, you see the staged changes.
+To stage a file, you use the `git add` command and specify the file name or folder name that you want to stage. After you stage a file, Git knows that you might want to commit the changes. When you query the repository status by using `git status`, you see the staged changes.
 
 > [!IMPORTANT]
-> After you stage a file, if you make any further changes to it before you commit, Git won't record those changes. You need to stage the file again for Git to catch the most recent changes.
+> After you stage a file, if you make any further changes to it before you commit, Git won't record those changes. You need to stage the file again for Git to include the most recent changes.
 
-For example, imagine you've just created a Bicep module to define an Azure Cosmos DB account. It's named _cosmos-db.bicep_, and you saved it in the *deploy/modules* folder. Here's how you could stage the file:
+For example, imagine you've created a Bicep module to define an Azure Cosmos DB account. It's named _cosmos-db.bicep_, and you saved it in the _deploy/modules_ folder. Here's how you could stage the file:
 
 ```bash
 git add deploy/modules/cosmos-db.bicep
@@ -54,7 +54,7 @@ A _commit_ represents a set of changes to one or more files in your repository. 
 Here's an example that shows how you commit the staged changes shown earlier:
 
 ```bash
-git commit --message "Add Cosmos DB account definition."
+git commit --message "Add Cosmos DB account definition"
 ```
 
 > [!NOTE]

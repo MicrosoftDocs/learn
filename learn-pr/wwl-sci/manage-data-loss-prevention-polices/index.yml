@@ -5,13 +5,13 @@ metadata:
   description: "Manage data loss prevention policies and reports in Microsoft 365"
   ms.date: 06/14/2022
   author: wwlpublish
-  ms.author: bneeb
+  ms.author: riswinto
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
 title: Manage data loss prevention policies and reports in Microsoft 365
 summary: Learn how to manage data loss prevention policies and mitigate data loss prevention policy violations.
 abstract: |
-  After completing this module you will be able to:
+  After completing this module, you'll be able to:
   - Review and analyze DLP reports.
   - Manage permissions for DLP reports.
   - Identify and mitigate DLP policy violations.
@@ -26,6 +26,7 @@ roles:
 - ip-admin
 - risk-practitioner
 products:
+- microsoft-purview
 - m365
 - m365-information-protection
 subjects:

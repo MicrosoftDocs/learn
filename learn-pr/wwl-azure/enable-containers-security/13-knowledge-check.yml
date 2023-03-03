@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/04/2022
+  ms.date: 02/03/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
@@ -30,13 +30,13 @@ quiz:
       explanation: "There is no need to have global admin privileges for AKS."
   - content: "When using Azure Kubernetes Service (AKS) and there is a need to control the flow of traffic between pods and block traffic directly to the backend application; what is the best way to configure this?"
     choices:
-    - content: "Create a AKS network policy"
+    - content: "Create an AKS network policy"
       isCorrect: true
-      explanation: "Create a AKS network policy. The principle of least privilege should be applied to how traffic can flow between pods in an Azure Kubernetes Service (AKS) cluster. The Network Policy feature in Kubernetes defines rules for ingress and egress traffic between pods in a cluster."
+      explanation: "Create an AKS network policy. The principle of least privilege should be applied to how traffic can flow between pods in an Azure Kubernetes Service (AKS) cluster. The Network Policy feature in Kubernetes defines rules for ingress and egress traffic between pods in a cluster."
     - content: "Create an application gateway"
       isCorrect: false
       explanation: "Use a network policy to block traffic between pods."
-    - content: "Create a Azure firewall"
+    - content: "Create an Azure firewall"
       isCorrect: false
       explanation: "The Azure Firewall does not block access between pods."
   - content: "The organization is defining RBAC rules for the Azure Kubernetes security team. What is the best solution to grant permissions across the entire cluster?"

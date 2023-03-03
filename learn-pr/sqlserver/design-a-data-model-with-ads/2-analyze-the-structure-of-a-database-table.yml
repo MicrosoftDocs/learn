@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.design-a-data-model-with-ads.analyze-the-structure-of-a-database-table
+title: Analyze the structure of a database table
+metadata:
+  title: Analyze the structure of a database table
+  description: "Learn what a relational database table is, how data types are used and how Azure SQL DB stores tables."
+  ms.date: 12/29/2022
+  author: JetterMcTedder
+  ms.author: bspendolini
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+content: |
+  [!include[](includes/2-analyze-the-structure-of-a-database-table.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: A global application requires times to be stored with timezone information. Which data type would be used?
+    choices:
+    - content: datatime2
+      isCorrect: false
+      explanation: While datatime2 is a data type that gives the database the ability to store a date to the fraction of a second, it doesn't contain timezone information.
+    - content: datetimeoffset
+      isCorrect: true
+      explanation: The datetimeoffset data type does give the Azure SQL Database the ability to store timezone information in the format YYYY-MM-DD hh:mm:ss[.nnnnnnn] [+|-]hh:mm
+    - content: nvarchar
+      isCorrect: false
+      explanation: While you could store timezone information in a nvarchar data type, you would have to create functions to convert dates to strings and strings to date and isn't the best choice.
+
+  - content: How large are the page files that store table data?
+    choices:
+    - content: 8 bits (b)
+      isCorrect: false
+      explanation: A bit is the basic unit of storage for computing and would require 64,000 files to be the same as a single 8 kilobyte (KB) file.
+    - content: 8 Kilobytes (KB)
+      isCorrect: true
+      explanation: Correct and remember extents hold eight contiguous pages
+    - content: 8 Megabytes (MB)
+      isCorrect: false
+      explanation: An extent holds eight contiguous pages and there are 16 extents per megabyte so 8 megabytes is too large.

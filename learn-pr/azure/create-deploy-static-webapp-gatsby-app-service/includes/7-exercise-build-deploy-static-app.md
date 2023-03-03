@@ -12,25 +12,25 @@ Run the following command from your project directory:
 gatsby build
 ```
 
-This command will create a *production build*. All your files will end up in a sub directory `public/`.
+This command will create a *production build*. All your files will end up in a sub-directory `public/`.
 
 Once the process finishes building, you can go to your `public/` directory and open up the files in a browser. You can explore your build as it would be hosted in the web with `http-server`, a command-line tool that serves up local files over HTTP so you can see them in a browser.  
 
-Now you'll serve up the whole application from a local web server. `cd` your terminal to the `public/` directory and type the following command:
+Now you'll host the whole application from a local web server. `cd` in your terminal to the `public/` directory and type the following command:
 
 ```bash
 npx http-server -p 5000
 ```
 
-Go to the browser on `http://localhost:5000`.
+Browse to `http://localhost:5000`.
 
 You should now see the following content rendered:
 
-:::image type="content" source="../media/built-site.png" alt-text="Our built app.":::
+:::image type="content" source="../media/welcome-page-gatsby.png" alt-text="Screenshot showing your built app.":::
 
 You've built your site and taken it from being a Gatsby app to a set of static pages containing nothing but HTML, CSS, and JavaScript!
 
-Going into your `public/` directory now locate your rendered `about` component at `public/about/index.html`. Because of an optimization process, all whitespace have been removed and the page is represented as one long line. However you should be able to locate the rendered title and description and it should look like this:
+From VS Code, navigate into your `public/` directory, locate your rendered `about` component at `public/about/index.html`. Because of the optimization process, all whitespace has been removed and the page is represented as one long line. However, you should be able to locate the rendered title and description and it should look like this:
 
 ```html
 // excerpt from about/index.html
@@ -42,12 +42,12 @@ Going into your `public/` directory now locate your rendered `about` component a
 
 To prepare the app for deployment, we need to take the following steps:
 
-1. Initialize a Git repository
-2. Create a GitHub repository and push to the local Git repository to it
+1. Initialize a Git repository.
+2. Create a GitHub repository and push the local Git repository to it.
 
 ### Add the About page
 
-In the console, navigate to root of your project, then add the code to the repository index and commit it.
+In the terminal, navigate to the root of your project, then add the code to the repository index and commit it.
 
 ```bash
 git add .
@@ -56,24 +56,28 @@ git commit -m "adding About page to site"
 
 ### Create a GitHub repo and push the code
 
-1. Go to GitHub and log on. You should now be on a URL like so `https://github.com/<your username>?tab=repositories`
+1. Go to GitHub and log in.
 
-2. Now click the `new` button as indicated below:
+1. Navigate to the repositories page.
 
-   :::image type="content" source="../media/create-github-repo.png" alt-text="Create new GitHub repo.":::
+   :::image type="content" source="../media/repositories.png" alt-text="Screenshot of the repository button in GitHub.":::
 
-3. Name your repository `gatsby-app` and click `Create repository` as indicated below:
+1. Now click the **new** button as indicated below:
 
-   :::image type="content" source="../media/github-naming.png" alt-text="GitHub naming.":::
+   :::image type="content" source="../media/create-github-repo.png" alt-text="Screenshot of the create a new GitHub repo button.":::
 
-4. Finally, add your GitHub repository as a remote and push. Type the following commands to accomplish that (Replace the `<user>` part with your GitHub user name):
+1. Name your repository **gatsby-app** and click create repository as indicated below:
+
+   :::image type="content" source="../media/github-naming.png" alt-text="Screenshot showing how to name GitHub repository.":::
+
+1. Finally, add your GitHub repository as a remote and push. Type the following commands to accomplish that (Replace the `<user>` part with your GitHub user name):
 
    ```bash
    git remote add origin https://github.com/<user>/gatsby-app.git
-   git push -u origin main
+   git push -u origin master
    ```
 
-You are now ready to deploy to Azure Static Web Apps!
+You're now ready to deploy to Azure Static Web Apps!
 
 ## Create a Static Web App
 
@@ -105,14 +109,14 @@ Next, configure your new app and link it to your GitHub repository.
    | _Region_ | Select Region closest to you                                                  |
    | _SKU_    | **Free**                                                                      |
 
-1. Click the **Sign-in with GitHub** button and authenticate with GitHub
+1. If prompted, click the **Sign-in with GitHub** button and authenticate with GitHub
 1. Enter the **Deployment Details**
 
    | Setting        | Value                                                    |
    | -------------- | -------------------------------------------------------- |
    | _Organization_ | Select the Organization where you created the repository |
    | _Repository_   | **gatsby-app**                              |
-   | _Branch_       | **main**                                               |
+   | _Branch_       | **main or master**                                               |
 
 1. Use the **Build Details** drop down list to select **Gatsby** to populate the build information.
 
@@ -124,7 +128,7 @@ Next, configure your new app and link it to your GitHub repository.
 
 1. Click the **Review + create** button
 
-:::image type="content" source="../media/review-create-button.png" alt-text="Click review + create":::
+   :::image type="content" source="../media/review-create-button.png" alt-text="Screenshot showing the review and create button.":::
 
 ### Review + create
 
@@ -132,19 +136,19 @@ Continue to create the application.
 
 1. Click the **Create** button
 
-   :::image type="content" source="../media/create-button.png" alt-text="Click create button.":::
+   :::image type="content" source="../media/create-button.png" alt-text="Screenshot showing the click create button.":::
 
 1. Once the deployment is complete, click the **Go to resource** button
 
-   :::image type="content" source="../media/go-to-resource-button.png" alt-text="Go to resource.":::
+   :::image type="content" source="../media/go-to-resource-button.png" alt-text="Screenshot showing the Go to resource button.":::
 
 ### Review the GitHub Action
 
-At this stage, your Static Web Apps instance is created in Azure, but your app not yet deployed. The GitHub Action that Azure creates in your repository will run automatically to perform the first build and deployment of your app, but it takes a couple minutes to finish.
+At this stage, your Static Web Apps instance is created in Azure, but your app is not yet deployed. The GitHub Action that Azure creates in your repository will run automatically to perform the first build and deployment of your app, but it takes a couple minutes to finish.
 
 You can check the status of your build and deploy action by clicking the link shown below:
 
-:::image type="content" source="../media/static-app-portal.png" alt-text="Browser to see the progress of the GitHub Action.":::
+:::image type="content" source="../media/static-app-portal.png" alt-text="Screenshot showing how to browse to see the progress of the GitHub Action." lightbox="../media/static-app-portal.png":::
 
 ### View website
 
@@ -152,13 +156,9 @@ Once your GitHub Action finishes building and publishing your web app, you can b
 
 Click on the _URL_ link in the Azure portal to visit your app in the browser.
 
-:::image type="content" source="../media/static-app-portal-finished.png" alt-text="Screenshot that shows the Azure portal with a link to the URL for the app.":::
-
-:::image type="content" source="../media/published.png" alt-text="Screenshot that shows the published app in the browser.":::
-
-Congratulations! You've deployed your first app to Azure Static Web Apps!
+:::image type="content" source="../media/static-app-portal-finished.png" alt-text="Screenshot that shows the Azure portal with a link to the URL for the app." lightbox="../media/static-app-portal-finished.png":::
 
 > [!NOTE]
 > Don't worry if you see a web page that says the app hasn't been built and deployed yet. Try refreshing the browser in a minute. The GitHub Action runs automatically when the Azure Static Web Apps is created. So if you see the splash page, the app is still being deployed.
 
-You did it! You've deployed your Gatsby app to the cloud.
+Congratulations! You've deployed your first Gatsby app to the cloud using Azure Static Web Apps.

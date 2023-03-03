@@ -24,7 +24,7 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
     | **Instance Details** |
     | Name | *Enter a unique name* | The name of your web app. This name will be part of the app's URL: *appname*.azurewebsites.net.  The name you choose must be unique among all Azure web apps. |
     | Publish | Code | The method you want to use to publish your application. When publishing an application as code, you also must configure **Runtime stack** to prepare App Service resources to run your app. |
-    | Runtime stack | .NET Core 3.1 (LTS) | The platform on which your application will run. Your choice may affect whether you have a choice of operating system - for some runtime stacks, App Service supports only one operating system. |
+    | Runtime stack | .NET 6 (LTS) | The platform on which your application will run. Your choice may affect whether you have a choice of operating system - for some runtime stacks, App Service supports only one operating system. |
     | Operating System | Linux | The operating system used on the virtual servers that will run your app. |
     | Region | Central US | The geographical region from which your app will be hosted. |
     | **App Service Plan** |

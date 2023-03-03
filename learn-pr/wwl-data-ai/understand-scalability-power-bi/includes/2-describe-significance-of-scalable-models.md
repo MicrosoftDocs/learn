@@ -32,3 +32,7 @@ At the most basic level, it's important to understand that Premium capacities re
 
 > [!TIP]
 > Review [Power BI license types and capabilities](/power-bi/enterprise/service-admin-licensing-organization#license-types-and-capabilities). If you're not sure which license type your organization has, check with the Power BI administrator.
+
+
+
+

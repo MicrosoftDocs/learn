@@ -9,12 +9,14 @@ In this module, you'll learn how to:
 ## Prerequisites
 
 Knowledge:
+
 - Basic understanding of Vue.js
 - Knowledge of HTML and CSS
 - Knowledge of JavaScript
 - Familiarity with Vue.js and directives
 
 Tools:
+
 - [Git](https://git-scm.com?azure-portal=true)
 - [Visual Studio Code](https://code.visualstudio.com/?azure-portal=true)
 - [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer&azure-portal=true) extension

@@ -24,7 +24,6 @@ products:
   - vs
   - dotnet
   - aspnet-core
-  - vs-code
 subjects:
 - custom-app-development
 modules:

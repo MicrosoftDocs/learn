@@ -112,7 +112,6 @@ Depending on your scenario, Model Builder supports loading data from the followi
 - Delimited files (comma, semicolon, and tab)
 - Local and remote SQL Server databases
 - Images (*.jpg* and *.png*)
-- [Visual Object Tagging Tool (VOTT)](https://github.com/Microsoft/VoTT?azure-portal=true) for object detection scenarios
 
 ### Provide the location of your data
 

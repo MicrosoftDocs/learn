@@ -1,10 +1,10 @@
-Let's explore the different data types TypeScript makes available, and the impact they have on our code.
+Let's explore the different data types TypeScript makes available, and the effect they have on our code.
 
 ## The enum type
 
 A helpful addition to the standard set of datatypes from JavaScript is the enumeration type, or `enum`.
 
-Enumerations offer an easy way to work with sets of related constants. An `enum`, is a symbolic name for a set of values. Enumerations are treated as data types, and you can use them to create sets of constants for use with variables and properties.
+Enumerations offer an easy way to work with sets of related constants. An `enum` is a symbolic name for a set of values. Enumerations are treated as data types, and you can use them to create sets of constants for use with variables and properties.
 
 Whenever a procedure accepts a limited set of variables, consider using an enumeration. Enumerations make for clearer and more readable code, particularly when meaningful names are used.
 
@@ -12,15 +12,15 @@ Using enumerations:
 
 - Helps reduce errors caused by transposing or mistyping numbers.
 - Makes it easy to change values in the future.
-- Makes code easier to read, which means it is less likely that errors will creep into it.
-- Ensures forward compatibility. With enumerations, your code is less likely to fail if in the future someone changes the values corresponding to the member names.
+- Makes code easier to read, which means it's less likely that errors will creep into it.
+- Ensures forward compatibility. With enumerations, your code is less likely to fail if someone changes the values corresponding to the member names in the future.
 
 ## Creating an enum
 
-Enums allow you to specify a list of available options. They're extremely useful when you have a set of values a particular variable type may take. Let's imagine you have field in a external database called **ContractStatus**, which contains numbers 1, 2, or 3, that represent the following contact statuses: **Permanent**, **Temp**, and **Apprentice**. We will create an enum with these values, and explore the TypeScript support.
+Enums allow you to specify a list of available options. They're especially useful when you have a set of values that a particular variable type may take. Let's imagine you have field in an external database called **ContractStatus**, which contains the numbers 1, 2, or 3, that represent the following contact statuses: **Permanent**, **Temp**, and **Apprentice**. We'll create an enum with these values, and explore the TypeScript support.
 
 1. Open the [Playground](https://www.typescriptlang.org/play?azure-portal=true) and remove any existing code
-1. Create an `enum` to represent our scenario by entering the following:
+1. Enter the following code to create an `enum` that represents our scenario:
 
     ```typescript
     enum ContractStatus {
@@ -49,10 +49,10 @@ Enums allow you to specify a list of available options. They're extremely useful
     ```
 
 1. Rerun the code by selecting **Run**. Notice the value displayed is now **2**.
-1. To display the name associated with the enum, we can use the indexer provided. Add the following to the bottom of your code:
+1. To display the name associated with the enum value, we can use the provided indexer. Add the following to the bottom of your code:
 
     ```typescript
     console.log(ContractStatus[employeeStatus]);
     ```
 
-1. Run the code. Notice the value **Temp** is displayed, which is the name of the enum for **Temp** or **2**.
+1. Run the code. Notice the value **Temp** is displayed, which is the name associated with the enum value **2**.

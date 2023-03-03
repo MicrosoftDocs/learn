@@ -1,4 +1,4 @@
-Register the user account at the service provider that matches the account that was created at the identity provider, and then configure single sign-on for the account.
+Here, you'll register the user account at the service provider that matches the account that was created at the identity provider, then configure single sign-on for the account.
 
 ## Register an account
 
@@ -23,7 +23,7 @@ Use the values that were recorded in the previous unit to configure single sign-
 
 To configure SAML settings for the application:
 
-1. Signed in with the credentials of the user account that you registered, and then select **SAML Configuration** at the upper-left corner of the page.
+1. Once you've signed in with the credentials of the user account that you registered, select **SAML Configuration** at the upper-left corner of the page.
 1. Select **Create** in the middle of the page.
 
     :::image type="content" source="../media/saml-config-host.png" alt-text="Screenshot showing where to configure single sign-on at the service provider." border="true":::
@@ -32,11 +32,11 @@ To configure SAML settings for the application:
 1. Select **Choose file** to upload the certificate that you previously downloaded.
 1. Select **Create**.
 
-    :::image type="content" source="../media/saml-add-urls-sp.png" alt-text="Screenshot showing the U R L's to add for single sign-on at the service provider." border="true":::
+    :::image type="content" source="../media/saml-add-urls-sp.png" alt-text="Screenshot showing the URLs to add for single sign-on at the service provider." border="true":::
 
 1. Copy the values of the **SP Initiated Login URL** and the **Assertion Consumer Service (ACS) URL** to be used in the next section.
 
-    :::image type="content" source="../media/saml-record.png" alt-text="Screenshot showing the U R L's to record for single sign-on at the identity provider." border="true":::
+    :::image type="content" source="../media/saml-record.png" alt-text="Screenshot showing the URLs to record for single sign-on at the identity provider." border="true":::
 
 ## Update the identity provider
 
@@ -45,8 +45,8 @@ Update the temporary values that were previously defined for **Reply URL (Assert
 1. Sign in to the [Azure portal](https://portal.azure.com/) using one of the roles listed in the prerequisites.
 1. Select **Identity**, and then select **Azure Active Directory**.
 1. On the **Azure Active Directory** pane, under **Manage**, select **Enterprise applications**.
-1. In the **Search application** box, enter **Azure AD SAML Toolkit**, and then select the application in the list.
+1. In the **Search application** box, enter **Azure AD SAML Toolkit**, then select the application in the list.
 1. Select **Single sign-on**, and then select **Edit** in the **Basic SAML Configuration** box.
-1. For **Reply URL (Assertion Consumer Service URL)**, enter the **Assertion Consumer Service (ACS) URL** value that was recorded in the last section.
-1. For **Sign on URL**, enter the **SP Initiated Login URL** value that was recorded in the last section.
+1. For **Reply URL (Assertion Consumer Service URL)**, enter the **Assertion Consumer Service (ACS) URL** value you recorded in the last section.
+1. For **Sign on URL**, enter the **SP Initiated Login URL** value you recorded in the last section.
 1. Select **Save**.

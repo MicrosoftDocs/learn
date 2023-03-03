@@ -6,7 +6,7 @@ For governments and the public sector industry worldwide, Microsoft provides [Az
 
 A hyperscale public cloud provides resiliency in time of natural disaster and warfare. The cloud allows for failover redundancy and gives sovereign nations flexibility with global resiliency planning. Hyperscale public cloud also offers many features that incorporate the latest cloud innovations. These features, such as artificial intelligence, machine learning, IoT services, intelligent edge, help government customers increase efficiency and unlock insights into their operations and performance.
 
-Using Azure's public cloud capabilities, customers benefit from rapid feature growth, resiliency, and the cost-effective operation of the hyperscale cloud. The cloud also provides the levels of isolation, security, and confidence required to handle workloads across a broad spectrum of data classifications, including unclassified and classified data.
+By using Azure's public cloud capabilities, customers benefit from rapid feature growth, resiliency, and the cost-effective operation of the hyperscale cloud. The cloud also provides the levels of isolation, security, and confidence required to handle workloads across a broad spectrum of data classifications, including unclassified and classified data.
 
 ## Safeguard data with Azure
 
@@ -14,7 +14,7 @@ A multi-tenant cloud platform implies that multiple customer applications and da
 
 Azure provides strong customer commitments for data residency and transfer policies. Most Azure services allow the customer to specify the deployment region. For those services, Microsoft won't store customer data outside the customer specified geography. Customers can use extensive and robust data encryption options to safeguard their data in Azure and control who can access it.
 
-Some of the options available to customers to safeguard their data in Azure are listed below:
+Here are some of the options available to customers to safeguard their data in Azure:
 
 * Customers can choose to store their most sensitive customer content in services that store customer data at rest in Geo.
 * Customers can further protect their data by encrypting it with their own key using Azure Key Vault.

@@ -1,3 +1,4 @@
+
 The first part of your organization's secure Azure tenant is set up, but you need to monitor and maintain it. Enterprise Governance is the process of setting strategic tools, systems, and process into motion to keep your systems secure and running well.
 
 ## Scenario
@@ -15,7 +16,6 @@ Azure Active Directory is a part of [Exam AZ-500: Microsoft Azure Security Engin
 Manage identity and access (30-35%)
 
  -  Manage access control
-    
      -  configure subscription and resource permissions
      -  configure resource group permissions
      -  configure custom RBAC roles

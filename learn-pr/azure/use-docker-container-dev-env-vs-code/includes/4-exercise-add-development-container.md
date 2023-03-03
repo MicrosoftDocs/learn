@@ -11,17 +11,19 @@ In this exercise, you'll add a dev container and open the Products Dashboard pro
 
    | Option                                      | Value       |
    | ------------------------------------------- | ----------- |
-   | Select a container configuration definition | Python 3    |
-   | Python version                              | 3.10         |
-   | Install Node.js                             | none        |
-   | Add Features                                | Select "OK" |
+   | Select a container configuration template   | Python 3    |
+   | Python version                              | 3.11        |
+   | Select additional features to install       | Select "OK" |
+
+> [!IMPORTANT]
+> In the first step when selecting a configuration template, you may need to select "Show All Definitions..." from the list, and then select Python once the full set of templates loads.
 
 A Dev Container configuration will be added to your project. Visual Studio Code will notify you that you can now open the project in a container. For now, dismiss this notification.
 
 ## Inspect configuration files
 
 1. Notice that a new folder called _'.devcontainer'_ has been added to the project.
-1. Expand that folder and notice that it contains both a Dockerfile and a devcontainer.json file.
+1. Expand that folder and notice that it contains a devcontainer.json file.
 
 ## Open the project in a container
 

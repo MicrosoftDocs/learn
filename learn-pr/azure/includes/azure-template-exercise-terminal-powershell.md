@@ -2,7 +2,7 @@
 author: davidsmatlak
 ms.prod: learning-azure
 ms.topic: include
-ms.date: 10/10/2022
+ms.date: 11/09/2022
 ms.author: davidsmatlak
 ---
 
@@ -20,7 +20,7 @@ ms.author: davidsmatlak
 
    :::image type="content" source="media/select-powershell.png" alt-text="Screenshot of the Visual Studio Code terminal window, with the PowerShell terminal selected.":::
 
-1. In the terminal, go to the directory where you saved your template. For example, if you saved your template in the *templates* folder, you can use this command:
+1. In the terminal, go to the directory where you saved your template. For example, if you saved your template in the _templates_ folder, you can use this command:
 
    ```azurepowershell
    Set-Location -Path templates

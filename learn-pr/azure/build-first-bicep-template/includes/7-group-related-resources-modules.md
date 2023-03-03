@@ -2,7 +2,7 @@ You've started to use Bicep templates for some recent product launches, and they
 
 The IT manager can see your Bicep code is becoming more complex and has an increasing number of resources defined, so they've asked if you can make the code more _modularized_. You can create individual Bicep files, called modules, for different parts of your deployment. The main Bicep template can reference these modules. Behind the scenes, modules are transpiled into a single JSON template for deployment.
 
-Modules are also a way to make Bicep code even more reusable. You can have a single Bicep module that lots of Bicep templates use.
+Modules are also a way to make Bicep code even more reusable. You can have a single Bicep module that many other Bicep templates use.
 
 You also will often need to emit _outputs_ from the Bicep modules and templates. Outputs are a way for your Bicep code to send data back to whoever or whatever started the deployment. Let's look at outputs first.
 

@@ -54,7 +54,7 @@ quiz:
       explanation: "Correct! You can use those two methods to verify the existence of a word in a string."
     - content: "The `.search()` and `.count()`methods."
       isCorrect: false
-      explanation: "Incorrect. Although `.count()` is a valid method for searching, `.search()` is not part of the string object."
+      explanation: "Incorrect. Although `.count()` is a valid method for searching, `.search()` isn't part of the string object."
     - content: "The `.check()` and `.search()` methods."
       isCorrect: false
       explanation: "Incorrect. Neither `.check()` nor `.search()` exists as a method of the string object."
@@ -62,7 +62,7 @@ quiz:
     choices:
     - content: "When many replacements are needed, it can make a program slower."
       isCorrect: false
-      explanation: "Incorrect. Although `%` formatting is not the fastest, slowness isn't a result of the replacements."
+      explanation: "Incorrect. Although `%` formatting isn't the fastest, slowness isn't a result of the replacements."
     - content: "When many replacements are needed, it can make the code harder to read."
       isCorrect: true
       explanation: "Correct! Using `%` can become verbose with many replacements."
@@ -79,7 +79,7 @@ quiz:
       explanation: "Correct! Code execution is allowed within an f-string."
     - content: "You can't round a number when you use f-strings. You must round it before you use it in a string."
       isCorrect: false
-      explanation: "Incorrect. Although you can round a number before you use it in a string, there is a way to do so within the f-string."
+      explanation: "Incorrect. Although you can round a number before you use it in a string, there's a way to do so within the f-string."
       
       
       

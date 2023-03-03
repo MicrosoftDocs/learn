@@ -26,7 +26,7 @@ The **Output location** is a relative path to the publish directory of your appl
 
 ### From source code to static assets with GitHub Actions
 
-Your GitHub repo contains source code, not static assets, and so it needs to be built before it can be published.
+Your GitHub repo contains source code, not static assets, so it needs to be built before it can be published.
 
 When you create a Static Web Apps instance, Azure creates a GitHub Actions workflow in your repository. Every time you push changes or create a pull request against the branch you release from, the workflow builds your app, turning your source code into static assets that can be served by Azure. After the build is complete, the action deploys the assets.
 

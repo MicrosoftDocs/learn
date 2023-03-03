@@ -27,7 +27,7 @@ As an IT administrator, you were unable to keep track of admin consent requests 
 
 1. Act on pending requests
 
-   - **Approve the application** - Select **Review permissions and consent** under details to review the application’s permissions and grant admin consent. Granting admin consent to the application will add it to your tenant and all users will be able to access it unless you restrict access to the application. Only designated reviewers will be able to perform this action from the **My Pending** tab.
+   - **Approve the application** - Select **Review permissions and consent** under details to review the application’s permissions and grant admin consent from the consent prompt screen. Granting admin consent to the application will add it to your tenant and all users will be able to access it unless you restrict access to the application. Only designated reviewers will be able to perform this action from the **My Pending** tab.
 
      > [!NOTE]
      > To be able to approve a request, you should sign in with a global administrator role.

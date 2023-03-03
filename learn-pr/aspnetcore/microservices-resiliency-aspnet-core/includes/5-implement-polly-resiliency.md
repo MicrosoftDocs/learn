@@ -13,7 +13,7 @@ In this section, you'll modify the app to automatically retry a failing operatio
 When validating a discount coupon, the HTTP request is sent to the web shopping aggregator. The web shopping aggregator is responsible for routing the request to the coupon service. This is an implementation of the [Backends For Frontends pattern](https://samnewman.io/patterns/architectural/bff) (BFF). The BFF implementation:
 
 * Sends another HTTP request to the coupon service to get the required information.
-* Handles resiliency using [IHttpClientFactory](/aspnet/core/fundamentals/http-requests) and [Polly](https://dotnetfoundation.org/projects/polly).
+* Handles resiliency using [IHttpClientFactory](/aspnet/core/fundamentals/http-requests) and [Polly](https://old.dotnetfoundation.org/projects/polly).
 
 To make the coupon service resilient, you'll implement a Retry and a Circuit Breaker policy to handle failure within the web shopping aggregator. Using Polly with `IHttpClientFactory` to add resiliency to web apps is one of the archetypical failure handling solutions. The `IHttpClientFactory` is responsible for creating instances of `HttpClient`.
 

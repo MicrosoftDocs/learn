@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-model-batch-endpoint.deploy-your-mlflow-model-batch-endpoint
+title: Deploy your MLflow model to a batch endpoint
+metadata:
+  title: Deploy your MLflow model to a batch endpoint
+  description: "Deploy your MLflow model to a batch endpoint"
+  ms.date: 11/24/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-deploy-your-mlflow-model-batch-endpoint.md)]

@@ -28,7 +28,7 @@ quiz:
       explanation: "Incorrect. Directly accessing an array element through index notation will cause a panic if the index is out of bounds."
     - content: "Accessing a non-existent key of a hash map with `HashMap[key]` notation."
       isCorrect: false
-      explanation: "Incorrect. Directly accessing a hash map value through index notation might cause a panic if the key does not exist in the hash map."
+      explanation: "Incorrect. Directly accessing a hash map value through index notation might cause a panic if the key doesn't exist in the hash map."
   - content: "How can you represent the possibility of absence of a value of a given type, `T`, in Rust?"
     choices:
     - content: "The `Option<T>` type."

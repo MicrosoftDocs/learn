@@ -1,4 +1,4 @@
-You’ve learned how Azure Stack HCI tenant networking and RAS Gateway functionality can address the needs of your company's customers by providing simplified implementation and maintenance of isolated tenant workloads, and more secure and resilient connectivity to external resources.
+You’ve learned how Azure Stack HCI tenant networking and RAS Gateway functionality can address the needs of your company's customers by providing simplified implementation and maintenance of isolated tenant workloads, as well as more secure and resilient connectivity to external resources.
 
 You’ve explored the various considerations for implementing Azure Stack HCI tenant networking and RAS Gateway, including their prerequisites. You’ve also learned how to use RAS Gateway and Route Reflector to facilitate operating in a multitenant environment.
 

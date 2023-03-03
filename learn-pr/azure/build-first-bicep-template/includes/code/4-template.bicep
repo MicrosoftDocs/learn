@@ -1,4 +1,4 @@
-resource storageAccount 'Microsoft.Storage/storageAccounts@2022-05-01' = {
+resource storageAccount 'Microsoft.Storage/storageAccounts@2022-09-01' = {
   name: 'toylaunchstorage'
   location: 'westus3'
   sku: {

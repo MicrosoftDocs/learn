@@ -107,39 +107,36 @@ In this exercise, you'll create an XML file that contains Speech Synthesis Marku
 
 ## Update the code for your text-to-speech application for SSML
 
-1. In the Cloud Shell on the right, open the *Program.cs* file in Visual Studio Code.
+1. In the Cloud Shell on the right, open the *Program.cs* file.
 
     ```dotnetcli
     code Program.cs
     ```
 
-1. Leave the existing `using` statements unmodified, but replace the `Main()` function with the following code, which will modify the application to use the contents of an SSML file instead of a text file.
+1. Leave the existing `using` statements unmodified, but replace the rest with the following code, which will modify the application to use the contents of an SSML file instead of a text file.
 
     ```csharp
-    static async Task Main(string[] args)
-    {
-        string azureKey = "ENTER YOUR KEY FROM THE FIRST EXERCISE";
-        string azureLocation = "ENTER YOUR LOCATION FROM THE FIRST EXERCISE";
-        string ssmlFile = "Shakespeare.xml";
-        string waveFile = "Shakespeare.wav";
+    string azureKey = "ENTER YOUR KEY FROM THE FIRST EXERCISE";
+    string azureLocation = "ENTER YOUR LOCATION FROM THE FIRST EXERCISE";
+    string ssmlFile = "Shakespeare.xml";
+    string waveFile = "Shakespeare.wav";
 
-        try
+    try
+    {
+        FileInfo fileInfo = new FileInfo(ssmlFile);
+        if (fileInfo.Exists)
         {
-            FileInfo fileInfo = new FileInfo(ssmlFile);
-            if (fileInfo.Exists)
-            {
-                string ssmlContent = File.ReadAllText(fileInfo.FullName);
-                var speechConfig = SpeechConfig.FromSubscription(azureKey, azureLocation);
-                using var speechSynthesizer = new SpeechSynthesizer(speechConfig, null);
-                var speechResult = await speechSynthesizer.SpeakSsmlAsync(ssmlContent);
-                using var audioDataStream = AudioDataStream.FromResult(speechResult);
-                await audioDataStream.SaveToWaveFileAsync(waveFile);       
-            }
+            string ssmlContent = File.ReadAllText(fileInfo.FullName);
+            var speechConfig = SpeechConfig.FromSubscription(azureKey, azureLocation);
+            using var speechSynthesizer = new SpeechSynthesizer(speechConfig, null);
+            var speechResult = await speechSynthesizer.SpeakSsmlAsync(ssmlContent);
+            using var audioDataStream = AudioDataStream.FromResult(speechResult);
+            await audioDataStream.SaveToWaveFileAsync(waveFile);       
         }
-        catch (Exception ex)
-        {
-            Console.WriteLine(ex.Message);
-        }
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine(ex.Message);
     }
     ```
 
@@ -148,47 +145,36 @@ In this exercise, you'll create an XML file that contains Speech Synthesis Marku
 1. When you've finished modifying the code, your file should resemble the following example.
 
     ```csharp
-    using System;
-    using System.IO;
     using System.Text;
-    using System.Threading.Tasks;
     using Microsoft.CognitiveServices.Speech;
     using Microsoft.CognitiveServices.Speech.Audio;
     
-    namespace text_to_speech
+    string azureKey = "ENTER YOUR KEY FROM THE FIRST EXERCISE";
+    string azureLocation = "ENTER YOUR LOCATION FROM THE FIRST EXERCISE";
+    string ssmlFile = "Shakespeare.xml";
+    string waveFile = "Shakespeare.wav";
+    
+    try
     {
-        class Program
+        FileInfo fileInfo = new FileInfo(ssmlFile);
+        if (fileInfo.Exists)
         {
-            static async Task Main(string[] args)
-            {
-                string azureKey = "ENTER YOUR KEY FROM THE FIRST EXERCISE";
-                string azureLocation = "ENTER YOUR LOCATION FROM THE FIRST EXERCISE";
-                string ssmlFile = "Shakespeare.xml";
-                string waveFile = "Shakespeare.wav";
-                try
-                {
-                    FileInfo fileInfo = new FileInfo(ssmlFile);
-                    if (fileInfo.Exists)
-                    {
-                        string ssmlContent = File.ReadAllText(fileInfo.FullName);
-                        var speechConfig = SpeechConfig.FromSubscription(azureKey, azureLocation);
-                        using var speechSynthesizer = new SpeechSynthesizer(speechConfig, null);
-                        var speechResult = await speechSynthesizer.SpeakSsmlAsync(ssmlContent);
-                        using var audioDataStream = AudioDataStream.FromResult(speechResult);
-                        await audioDataStream.SaveToWaveFileAsync(waveFile);       
-                    }
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine(ex.Message);
-                 
-                }
-            }
+            string ssmlContent = File.ReadAllText(fileInfo.FullName);
+            var speechConfig = SpeechConfig.FromSubscription(azureKey, azureLocation);
+            using var speechSynthesizer = new SpeechSynthesizer(speechConfig, null);
+            var speechResult = await speechSynthesizer.SpeakSsmlAsync(ssmlContent);
+            using var audioDataStream = AudioDataStream.FromResult(speechResult);
+            await audioDataStream.SaveToWaveFileAsync(waveFile);       
         }
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine(ex.Message);
+                 
     }
     ```
 
-    As you did with the previous exercise, make sure that you update the values for the `azureKey` and `azureLocation` variables with your key and location from the first exercise.
+    As with the previous exercise, make sure that you update the values for the `azureKey` and `azureLocation` variables with your key and location from the first exercise.
 
 1. To save your changes, press `Ctrl-S` to save the file, and then press `Ctrl-Q` to exit the editor.
 

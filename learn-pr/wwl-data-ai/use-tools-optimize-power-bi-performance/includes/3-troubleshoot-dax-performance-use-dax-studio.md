@@ -54,7 +54,7 @@ After experimenting, you clear the cache and run the query again with the update
 >[!IMPORTANT]
 >The storage engine caches the results in memory for reuse. Because of this cache, it is critical to **clear the cache** prior to running queries in DAX Studio.
 
-### View model metrics using VertPaq Analyzer
+### View model metrics using VertiPaq Analyzer
 
 Viewing the *VertiPaq Analyzer Metrics* in DAX Studio is a great way to get an overall view of what's going on in your data model. VertiPaq Analyzer reports the memory consumption of the data model and can be used to quickly identify where you're spending the most memory. In short - you can use VertiPaq Analyzer to make memory gobbling offenders obvious, rectify them in Power BI, and then rerun VertiPaq Analyzer to see the immediate benefits of your data model updates.
 
@@ -67,7 +67,7 @@ To view model metrics, launch DAX Studio from the external tools tab of the Powe
 
 ![Screenshot of Advanced tab in DAX Studio with cursor over View Metrics button.](../media/view-model-metrics.png)
 
-VertiPaq analyzer displays a number of important metrics about your model. We're going to focus specifically on memory consumption and cardinality. For a complete list of what each of these columns mean, consult the [DAX Studio documentation](https://daxstudio.org/documentation/).
+VertiPaq analyzer displays a number of important metrics about your model. We're going to focus specifically on memory consumption and cardinality. For a complete list of what each of these columns mean, consult the [DAX Studio documentation](https://daxstudio.org/docs/intro/).
 
 Viewing metrics in DAX Studio helps you immediately find and fix problems. In this case, you can see that the problem is a column with high cardinality. You can then fix that issue back in Power BI, refresh the metrics, and immediately see the effects of your changes on the model.
 

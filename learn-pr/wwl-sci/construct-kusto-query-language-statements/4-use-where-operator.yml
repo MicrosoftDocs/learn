@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.construct-kql-statements.use-where-operator
+title: Use the where operator
+metadata:
+  title: Use the where operator
+  description: "Use the where operator"
+  ms.date: 02/23/2023
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-use-where-operator.md)]

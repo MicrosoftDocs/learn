@@ -1,6 +1,5 @@
 Now that you understand the classical problem that you're trying to solve, let's see how to convert this problem description into a quantum operation that can be used by Grover's search algorithm and run on a quantum computer.
 
-
 ## How to do computations on a superposition state?
 
 One of the key properties of quantum computing is the ability to perform calculations not only on individual inputs but also on superpositions of inputs. When we work with a search problem and a specific function $f(x)$ that describes the instance of a search problem we're trying to solve, we need to be able to compute this function on a superposition of inputs as well.
@@ -14,7 +13,7 @@ One of the key properties of quantum computing is the ability to perform calcula
 
 There are two common ways to encode the effects of computing a function for a superposition state - using a *phase oracle*, or using a *marking oracle*. 
 
-Let's say that we want to implement a quantum operator $U$ that computes a function $f(x)$, which takes a single bit as an input and produces a single bit as an output. We start with a superposition state $a_0 |0\rangle + a_1 |1\rangle$.
+Let's say that we want to implement a quantum operator $U$ that computes a function $f(x)$. The function takes a single bit as an input and produces a single bit as an output. We start with a superposition state $a_0 |0\rangle + a_1 |1\rangle$.
 
 * We can encode the values $f(0)$ and $f(1)$ in the *relative phases* of basis states $|0\rangle$ and $|1\rangle$, respectively.  
 In this case, applying the operator $U_\textrm{phase}$ converts the state $a_0 |0\rangle + a_1 |1\rangle$ into a state $(-1)^{f(0)} a_0 |0\rangle + (-1)^{f(1)} a_1 |1\rangle$. In other words, the operator $U_\textrm{phase}$ doesn't change the phase of the basis states for which $f(x) = 0$, but multiplies the phase of the basis states for which $f(x) = 1$ by $-1$.  
@@ -37,7 +36,7 @@ The best way to represent classical computations in a quantum algorithm depends 
 
 * Many quantum algorithms call for using the first approach, encoding the classical function values in phases of basis states, since this approach simplifies expressing the algorithm. 
 * The second approach, encoding the classical function values in the states of extra qubits, makes implementing the classical computations easier.
-* In practice, we'll often see a marking oracle used to implement the classical computations, and then converted to a phase oracle as the last step before the operation is plugged into the rest of the quantum algorithm.
+* In practice, we'll often use a marking oracle used to implement the classical computations. Then, convert to a phase oracle as the last step before the operation is plugged into the rest of the quantum algorithm.
 
 A branch of classical computer science called *reversible computing* gives us the techniques we need to implement classical computations on a quantum computer. In the final unit of this module, we return to the question of implementing quantum oracles efficiently when we discuss the types of problems that can benefit from Grover's algorithm.
 

@@ -4,12 +4,11 @@ title: Counting semaphore versus mutex comparison
 metadata:
   title: Counting semaphore versus mutex comparison
   description: Compare performance measures of mutexes and counting semaphores.
-  ms.date: 01/27/2022
+  ms.date: 04/19/2022
   author: timlt
   ms.author: timlt
   ms.reviewer: liydu
   manager: lizross
-  ms.custom: engagement-fy23
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

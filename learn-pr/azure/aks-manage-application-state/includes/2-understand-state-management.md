@@ -1,4 +1,4 @@
-When we talk about applications in general, you'll hear the words *application state* often. First, you need to understand what the state is and what the types of states are so you can better prepare your application for handling that.
+When we talk about applications in general, you'll often hear about *application state*. First, you need to understand what state is and what the types of states are so you can better prepare your application for handling them.
 
 ## State
 
@@ -14,17 +14,17 @@ There are two types of application states. The first type is the *ephemeral stat
 
 Containers have an ephemeral state. All of the data that's stored within their bounds is instantly lost when a container is deleted. Some applications can work with that alone, because they can regenerate the state from other sources and don't need the state to be stored locally. Those applications are called *:::no-loc text="stateless"::: applications*.
 
-In contrast, all the state that isn't ephemeral is called *persistent state*. It continues to exist after the life cycle of a container. Most container technologies that we use (like Docker) have the concept of *volume*, an in-disk location where the state exists. Even if you remove the container and then turn it back on, the state remains stored in a safe location and can be used again.
+In contrast, all the state that isn't ephemeral is called *persistent state*. It continues to exist after the life cycle of a container. Most container technologies that we use (like Docker) have the concept of *volume*, an in-disk location where the state exists. Even if you remove the container and turn it back on, the state remains stored in a safe location and can be used again.
 
 Applications that rely on an external state to be retrieved are called *:::no-loc text="stateful"::: applications*.
 
 ## States and Kubernetes
 
-Kubernetes has ways to deal both with stateless and stateful applications. Dealing with stateless apps is easier because we can focus only on the application itself and not on its state (which doesn't exist).
+Kubernetes has ways to deal with both stateless and stateful applications. Dealing with stateless apps is easier because we can focus only on the application itself and not on its state (which doesn't exist).
 
 For most stateless applications, a simple deployment workload with a pod would be enough for you to have a fully functioning system and to make the most of your cluster.
 
-Dealing with stateful applications is the opposite. In these cases, you'll need to worry about both the application and its state, where the state is stored, and how can you store the state securely and reliably.
+Dealing with stateful applications is the opposite. In these cases, you'll need to consider both the application and its state, where the state is stored, and how you can store the state securely and reliably.
 
 This is why Kubernetes also has the concept of *:::no-loc text="PersistentVolumes":::* (PVs) and *:::no-loc text="PersistentVolumeClaims":::* (PVCs).
 
@@ -59,6 +59,6 @@ On every database change, the state needs to be synchronized so that all disks c
 
 ### Externalizing the state
 
-To solve both of these problems, Azure has platform as a service (PaaS) solutions like Azure Cosmos DB. These solutions are both highly available and scalable, solving most of the state management problems for us.
+To solve both of these problems, Azure has platform as a service (PaaS) solutions like Azure Cosmos DB. These solutions are both highly available and scalable, solving most of the state management problems for you.
 
 Storing state externally and removing the need for maintenance can help you to focus on the application and reduce the overhead of dealing with data integrity in your infrastructure.

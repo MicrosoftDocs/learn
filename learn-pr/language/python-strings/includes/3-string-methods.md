@@ -1,6 +1,6 @@
-Strings are one of the most common method types in Python. You'll often need to manipulate them to extract information or fit a certain format. Python includes several string methods that are designed to do the most common and useful transformations.
+String methods are one of the most common method types in Python. You'll often need to manipulate strings to extract information or fit a certain format. Python includes several string methods that are designed to do the most common and useful transformations.
 
-String methods are part of the `str` type. This means that the methods exist as string variables, or part of the string directly. For example, the method `.title()` can be used with a string directly: 
+String methods are part of the `str` type. This means that the methods exist as string variables, or part of the string directly. For example, the method `.title()` can be used with a string directly:
 
 ```python
 >>> "temperatures and facts about the moon".title()
@@ -33,13 +33,13 @@ In this example, you're dealing with multiple lines, so the (implicit) newline c
 ['Daylight: 260 F', 'Nighttime: -280 F']
 ```
 
-This type of splitting becomes handy when you need a loop to process or extract information, or when you're loading data from a text file or another resource.
+This type of splitting becomes handy when you need a loop to process or extract information, or when you're loading data from a text file.
 
 ## Search for a string
 
-Aside from using a loop, some string methods can look for content before processing, without the need for a loop. Let's assume that you have two sentences that discuss temperatures on various planets and moons, but you're interested only in temperatures that are related to our Moon. That is, if the sentences aren't talking about the Moon, they shouldn't be processed to extract information.
+Some string methods can look for content before processing, without using a loop. Let's assume that you have two sentences that discuss temperatures on various planets and moons. However, you're interested only in temperatures that are related to our Moon. That is, if the sentences aren't talking about the Moon, they shouldn't be processed to extract information.
 
-The simplest way to discover whether a given word, character, or group of characters exists in a string is _without_ using a method:
+The simplest way to discover whether a given word, character, or group of characters exists in a string is to use the `in` operator:
 
 ```python
 >>> "Moon" in "This text will describe facts and challenges with space travel"
@@ -57,7 +57,7 @@ An approach to finding the position of a specific word in a string is to use the
 -1
 ```
 
-The `.find()` method returns a `-1` when the word isn't found, or it returns the index (the number representing the place in the string). This is how it would behave if you're searching for the word _Mars_:
+The `.find()` method returns a `-1` when the word isn't found, or it returns the index (the number representing the place in the string). This is how it would behave if you're searching for the word *Mars*:
 
 ```python
 >>> temperatures.find("Mars")
@@ -94,7 +94,7 @@ Similar to the `.lower()` method, strings have an `.upper()` method that does th
 
 ## Check content
 
-There are times when you'll process text to extract information that's irregular in its presentation. For example, the following string is simpler to process than an unstructured paragraph: 
+There are times when you'll process text to extract information that's irregular in its presentation. For example, the following string is simpler to process than an unstructured paragraph:
 
 ```python
 >>> temperatures = "Mars Average Temperature: -60 C"
@@ -110,7 +110,7 @@ To extract the average temperature on Mars, you can do well with the following m
 ' -60 C'
 ```
 
-The preceding methods blindly trust that everything after the colon (`:`) is a temperature. The string is split at `:`, which produces a list of two items. Using `[-1]` on the list returns the last item, which is the temperature in this example.
+The preceding code trusts that everything after the colon (`:`) is a temperature. The string is split at `:`, which produces a list of two items. Using `[-1]` on the list returns the last item, which is the temperature in this example.
 
 If the text is irregular, you can't use the same splitting methods to get the value. You must loop over the items and check to see whether the values are of a certain type. Python has methods that help check the type of string:
 
@@ -145,7 +145,7 @@ Similarly, the `.endswith()` method helps with verifying the last character of a
 
 ## Transform text
 
-There are other methods that help in situations where text needs to be transformed into something else. So far, you've seen strings that can use _C_ for _Celsius_ and _F_ for _Fahrenheit_. You can use the `.replace()` method to find and replace occurrences of a character or group of characters:
+There are other methods that help in situations where text needs to be transformed into something else. So far, you've seen strings that can use *C* for *Celsius* and *F* for *Fahrenheit*. You can use the `.replace()` method to find and replace occurrences of a character or group of characters:
 
 ```python
 >>> "Saturn has a daytime temperature of -170 degrees Celsius, while Mars has -28 Celsius.".replace("Celsius", "C")
@@ -162,9 +162,9 @@ False
 True
 ```
 
-You might not need to do case-insensitive verification all the time, but lowercasing every letter is a good approach when the text uses mixed casing. 
+You might not need to do case-insensitive verification all the time, but lowercasing every letter is a good approach when the text uses mixed casing.
 
-After you've split the text and performed the transformations, you might need to put all the parts back together again. Just as the `.split()` method can separate characters, the `.join()` method can put them back together. 
+After you've split the text and performed the transformations, you might need to put all the parts back together again. Just as the `.split()` method can separate characters, the `.join()` method can put them back together.
 
 The `.join()` method requires an iterable (such as a Python list) as an argument, so its usage looks different from other string methods:
 

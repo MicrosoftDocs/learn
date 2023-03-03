@@ -1,4 +1,4 @@
-You've now learned about pipeline stages, and how you can add a pipeline stage to validate your Bicep code. The next step in building confidence with your deployment is to add another stage to check exactly what your deployment will change.
+You've now learned about pipeline stages and how you can add a pipeline stage to validate your Bicep code. The next step in building confidence with your deployment is to add another stage to check exactly what your deployment will change.
 
 In this unit, you'll learn about using the what-if command in a pipeline. You'll also learn about adding approvals so that you have the opportunity to manually verify the command's output before the deployment runs.
 
@@ -8,24 +8,24 @@ A Bicep file describes the state that you want your Azure environment to be in a
 
 A deployment can result in new resources being deployed into your environment, or existing resources being updated. When you run a deployment in complete mode, it can even result in the deletion of existing resources.
 
-Anytime resources are created, updated, or deleted, there's a risk that things can change in a way you didn't expect. It's a good practice to add an extra step to verify what exactly will be created, updated, and deleted. This verification adds value to your automation process. When you're deploying to a production environment, it's important to confirm any changes that will happen to your environment.
+Any time resources are created, updated, or deleted, there's a risk that things can change in a way you didn't expect. It's a good practice to add an extra step to verify what exactly will be created, updated, and deleted. This verification adds value to your automation process. When you're deploying to a production environment, it's important to confirm any changes that will happen to your environment.
 
 Resource Manager provides the what-if operation, which you can run on your Bicep file within your pipeline stage:
 
 :::image type="content" source="../media/6-stages-preview.png" alt-text="Diagram of a pipeline that includes Lint, Validate, and Preview stages. The Preview stage executes a what-if operation against Azure." border="false":::
 
-You use the `az deployment group what-if` Azure CLI command from within your pipeline definition to run the what-if step:
+You can use the `az deployment group what-if` Azure CLI command from within your pipeline definition to run the what-if step:
 
 :::code language="yaml" source="code/6-what-if.yml" highlight="13-15" :::
 
 ::: zone pivot="powershell"
 
 > [!TIP]
-> In this module, we use the Azure CLI to run the what-if operation. If you build your own PowerShell-based pipeline, you can use the `New-AzResourceGroupDeployment` cmdlet with the `-Whatif` switch, or you can use the `Get-AzResourceGroupDeploymentWhatIfResult` cmdlet.
+> In this module, we'll use the Azure CLI to run the what-if operation. If you build your own PowerShell-based pipeline, you can use the `New-AzResourceGroupDeployment` cmdlet with the `-Whatif` switch, or you can use the `Get-AzResourceGroupDeploymentWhatIfResult` cmdlet.
 
 ::: zone-end
 
-The what-if operation doesn't make any changes to your environment. Instead, it describes the resources that will be created, the resource properties that will be updated, and the resources that will be deleted.
+The what-if operation doesn't make any changes to your environment. Instead, it describes the resources that'll be created, the resource properties that'll be updated, and the resources that'll be deleted.
 
 What-if sometimes shows that a resource will change when actually no change will happen. This feedback is called _noise_. We're working to reduce these problems, but we need your help to [report these problems](https://aka.ms/whatifissues).
 

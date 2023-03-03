@@ -1,10 +1,10 @@
 In this exercise, you'll use GitHub Learning Lab to plan and execute the successful migration of a project to GitHub from a legacy version-control provider.
 
-GitHub Learning Lab is an integrated experience that's easy to use. You get feedback and instructions throughout the lab as you work in your GitHub repository.
+GitHub Learning Lab is an integrated experience that's easy to use. You'll get feedback and instructions throughout the lab as you work in your GitHub repository.
 
-Here are a few suggestions to make the Learning Lab exercise more enjoyable.
+Here are a few suggestions to make the Learning Lab exercise more enjoyable:
 
-- GitHub Learning Lab is installed on your account in the first step of this lab. If you're asked, be sure to *install it on all repositories*. This won't affect the organizations you're a member of, just the personal repositories the lab creates for you.
+- GitHub Learning Lab is installed on your account in the first step of this lab. If you're asked, be sure to *install it on all repositories*. This won't affect the organizations of which you're a member, just the personal repositories the lab creates for you.
 - After the install, you may be returned to the main page. To get back to your lab, just use the button on the bottom of this page.
 - GitHub will create a repository for you to use. Give permissions to GitHub Learning Lab.
 - GitHub Learning Lab will set itself as a reviewer on your pull requests so it can give you the next steps just in time. Sometimes reviewing your pull request will take a few minutes.
@@ -19,4 +19,5 @@ When you've finished the exercise in GitHub, return here for:
 > * To earn a badge for completing this module
 
 > [!div class="nextstepaction"]
-> [Start the learning lab on GitHub](https://lab.github.com/githubtraining/migrating-your-repository-to-github?azure-portal=true)
+> [Start the learning lab on GitHub](https://github.com/githubtraining/migrating-your-repository)
+

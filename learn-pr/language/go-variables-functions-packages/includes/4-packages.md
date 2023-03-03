@@ -6,7 +6,7 @@ In this section, you'll learn what a package is. You'll also learn how to create
 
 As you might have noticed, even the most straightforward program in Go has to be part of a package. Usually, the default package is the `main` package, the one we've been using so far. If a program is part of the `main` package, Go generates a binary file. When that file runs, it calls the `main()` function.
 
-In other words, when you use the `main` package, your program will produce a standalone executable. But when a program is part of a package other than `main`, Go doesn't generate a binary file. It generates a package archive file (a file that has the ".a" extension).
+In other words, when you use the `main` package, your program will produce a standalone executable. But when a program is part of a package other than `main`, Go doesn't generate a binary file. It generates a package archive file (a file that has the `.a` extension).
 
 In Go, package names follow a convention. A package uses the last part of its import path as its name. For example, the Go standard library contains a package called `math/cmplx`, which provides useful code for working with complex numbers. The import path of this package is `math/cmplx`, and you import it like this:
 
@@ -146,7 +146,7 @@ If you try to run the program now, it won't work. You need to tell Go that you'r
 go mod init helloworld
 ```
 
-In the above command, `helloworld` is the name of the project. This command creates a new `go.mod` file, so now the tree directory looks like this:
+In the previous command, `helloworld` is the name of the project. This command creates a new `go.mod` file, so now the tree directory looks like this:
 
 ```output
 src/
@@ -216,7 +216,7 @@ What happens if you try to call the `logMessage` variable or the `internalSum` f
 
 ### Publish a package
 
-[Publishing a Go package](https://github.com/golang/go/wiki/PackagePublishing?azure-portal=true) is fairly easy. You just need to make the package source code publicly available. Most developers use GitHub to make packages available to the public. That's why you'll sometimes find references to `github.com` in import statements.
+[Publishing a Go package](https://github.com/golang/go/wiki/PackagePublishing?azure-portal=true) is fairly easy. You just need to make the package source code publicly available. Most developers use GitHub to make packages available to the public, which is why you'll sometimes find references to `github.com` in import statements.
 
 For example, if you want to publish your `calculator` package to your GitHub account, you need to create a repository named `calculator`. The URL should look similar to this one:
 

@@ -1,4 +1,4 @@
-Your toy company's security team has asked you to verify that your website is accessible only through HTTPS. In this exercise, you configure your pipeline to run a smoke test that checks the security team's requirement.
+Your toy company's security team has asked you to verify that your website is accessible only through HTTPS. In this exercise, you'll configure your pipeline to run a smoke test that checks the security team's requirement.
 
 During the process, you'll:
 
@@ -10,7 +10,7 @@ During the process, you'll:
 
 ## Add a test script
 
-Here, you add a test script to verify that the website is accessible when HTTPS is used and not accessible when the nonsecure HTTP protocol is used.
+Here, you'll add a test script to verify that the website is accessible when HTTPS is used and not accessible when the nonsecure HTTP protocol is used.
 
 1. In Visual Studio Code, create a new file in the _deploy_ folder named _Website.Tests.ps1_.
 
@@ -24,7 +24,7 @@ Here, you add a test script to verify that the website is accessible when HTTPS 
    - Try to connect to the website over HTTPS. The test passes if the server responds with an HTTP response status code between 200 and 299, which indicates a successful connection.
    - Try to connect to the website over HTTP. The test passes if the server responds with an HTTP response status code of 300 or higher.
 
-   For the purposes of this exercise, it's not important that you understand the details of the test file and how it works. We provide links in the summary so you can learn more if you're interested.
+   For the purposes of this exercise, it's not important that you understand the details of the test file and how it works. We'll provide links in the summary so you can learn more if you're interested.
 
 ## Publish your Bicep file's output as a stage output variable
 
@@ -145,7 +145,7 @@ Now that you've identified that your Bicep definition doesn't meet your security
 
    Wait until the pipeline completes the **Lint**, **Validate**, and **Preview** stages. Although Azure Pipelines automatically updates the page with the latest status, it's a good idea to refresh your page occasionally.
 
-1. Select the **Preview** stage, and review the what-if results again.
+1. Select the **Preview** stage and review the what-if results again.
 
    Notice that the what-if command has detected the change in the `httpsOnly` property's value:
 
@@ -153,7 +153,7 @@ Now that you've identified that your Bicep definition doesn't meet your security
 
 1. Go back to the pipeline run.
 
-1. Select the **Review** button and then select **Approve**.
+1. Select the **Review** button, then select **Approve**.
 
    Wait for the pipeline run to finish.
 

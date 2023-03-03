@@ -1,12 +1,12 @@
-There are a few basic operations that you will need to perform anytime you create any Azure Cosmos DB SQL API account resource in Azure.
+There are a few basic operations that you will need to perform anytime you create any Azure Cosmos DB for NoSQL account resource in Azure.
 
 ## Creating a new account
 
 The first step to getting started with Azure Cosmos DB is to create a new account.
 
-When creating a new account in the portal, you must first select an API for your workload. The API selection cannot be changed after the account is created. For the remainder of this section, we will assume that the SQL API has been selected.
+When creating a new account in the portal, you must first select an API for your workload. The API selection cannot be changed after the account is created. For the remainder of this section, we will assume that the NoSQL API has been selected.
 
-[![Select API option in the portal with a list of all current APIs including SQL, MongoDB, Graph, Table, and Cassandra](../media/3-select-api.png)](../media/3-select-api.png#lightbox)
+[![Screenshot showing the select API option in the portal with a list of all current APIs including SQL, MongoDB, Graph, Table, and Cassandra.](../media/3-select-api.png)](../media/3-select-api.png#lightbox)
 
 Next, the Azure portal will use a step-by-step wizard with tabs for various configuration options. Here you can configure options such as:
 
@@ -14,21 +14,21 @@ Next, the Azure portal will use a step-by-step wizard with tabs for various conf
 - The location (Azure region) for the account
 - Capacity mode (provisioned throughput or serverless)
 
-[![Wizard with various tabs and options for creating a new Azure Cosmos DB SQL API account](../media/3-account-wizard.png)](../media/3-account-wizard.png#lightbox)
+[![Screenshot showing the wizard with various tabs and options for creating a new Azure Cosmos DB for NoSQL account.](../media/3-account-wizard.png)](../media/3-account-wizard.png#lightbox)
 
 > [!NOTE]
 > Only the options in the **Basics** tab are required to create an Azure Cosmos DB account.
 
 ## Creating a new database
 
-Databases are logical units of management in Azure Cosmos DB SQL API, and don't require much to create. You only need a unique database name within the account to create a new database.
+Databases are logical units of management in Azure Cosmos DB for NoSQL, and don't require much to create. You only need a unique database name within the account to create a new database.
 
 > [!NOTE]
-> However, if you choose to provision throughput at the database level, configuring the database may require additional steps. This is explored deeper in other Azure Cosmos DB SQL API topics.
+> However, if you choose to provision throughput at the database level, configuring the database may require additional steps. This is explored deeper in other Azure Cosmos DB for NoSQL topics.
 
 ## Creating a new container
 
-Containers are the primary unit of scalability in Azure Cosmos DB SQL API. When creating a container, you should specify:
+Containers are the primary unit of scalability in Azure Cosmos DB for NoSQL. When creating a container, you should specify:
 
 - The parent database
 - A unique name for the container with the database
@@ -39,7 +39,7 @@ The Azure Cosmos DB service will automatically and transparently partition your 
 
 ## Creating simple items
 
-Once the database and container resources exist, you are ready to create your first item. In Azure Cosmos DB SQL API, an item is a JSON document.
+Once the database and container resources exist, you are ready to create your first item. In Azure Cosmos DB for NoSQL, an item is a JSON document.
 
 > [!NOTE]
 > JavaScript Object Notation (JSON) is an open standard file format, and data interchange format, that uses human-readable text to store and transmit data objects consisting of attribute–value pairs and array data types (or any other serializable value)

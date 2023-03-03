@@ -2,9 +2,9 @@ Suppose you're a developer who works for a medical transcription company. Your c
 
 Your company has to maintain a large staff of transcribers, and these two types of audio files present interesting challenges for your company:
 
-- Your company's transcribers require a great deal of time to process the volume of brief memos from your clients, so it is difficult for your company to return the transcriptions within the timeframe that is defined in your company's service level agreement.
+- Your company's transcribers require a great deal of time to process the volume of brief memos from your clients, so it's difficult for your company to return the transcriptions within the timeframe that is defined in your company's service level agreement.
 
-- The longer dictations often cannot be transcribed in a single session, and your company's transcribers have difficultly remembering where they left off during their previous session.
+- The longer dictations often can't be transcribed in a single session, and your company's transcribers have difficultly remembering where they left off during their previous session.
 
 You've heard that Microsoft's Azure Cognitive Services provide developers with APIs to create applications that take advantage of Azure's speech-to-text features, and your manager has asked you to research a way where you can use Azure Cognitive Services' speech-to-text features to create an application that you can use to offset some of the transcription tasks, thereby alleviating some of your operating costs and service level agreement issues.
 

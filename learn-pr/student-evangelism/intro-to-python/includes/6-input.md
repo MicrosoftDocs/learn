@@ -1,15 +1,15 @@
-Many programs are interactive. Supporting interactivity means you have a program that runs differently depending on the input. The one inputting data to a program is usually a user, but it can be another program. There are many ways to send input to a program; two common ways are via a graphical interface or a console. 
+Many programs are interactive. Supporting interactivity means you have a program that runs differently depending on the input. The person inputting data to a program is usually a user, but it can be another program. There are many ways to send input to a program; two common ways are via a graphical interface or a console. 
 
 ## User input
 
-For reading input from the keyboard, Python provides the `input()` function. `input()` reads what the user types on the keyboard and returns it as a string. Here is an example that combines `input()` and `print()` to capture a person's name and display it on the screen:
+For reading input from the keyboard, Python provides the `input()` function. `input()` reads what the user types on the keyboard and returns it as a string. Here's an example that combines `input()` and `print()` to capture a person's name and display it on the screen:
 
 ```python
 name = input('Enter your name:')
 print(name)
 ```
 
-The string passed as an argument to the `input` function is the prompt the user will see. In this example, you are asking the user to type their name ('Enter your name'). Once the user types a name and presses <kbd>Enter</kbd>, the `input` function will return. The function's return value is the text the user typed, and that text is assigned to the variable named `name`. The `name` variable is then used as an input or argument to the `print` function, which will output the name the user entered.
+The string passed as an argument to the `input` function is the prompt the user will see. In this example, you're asking the user to type their name ('Enter your name'). Once the user types a name and presses <kbd>Enter</kbd>, the `input` function will return. The function's return value is the text the user typed, and that text is assigned to the variable named `name`. The `name` variable is then used as an input or argument to the `print` function, which will output the name the user entered.
 
 You can also call the `input` function without a parameter:
 

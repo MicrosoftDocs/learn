@@ -4,13 +4,12 @@ title: Configure Azure storage access
 metadata:
   title: Configure Azure storage access
   description: "Configure Azure storage access"
-  ms.date: 09/06/2022
+  ms.date: 02/24/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  zone_pivot_groups: None
 durationInMinutes: 7
 content: |
   [!include[](includes/3-azure-storage-access.md)]

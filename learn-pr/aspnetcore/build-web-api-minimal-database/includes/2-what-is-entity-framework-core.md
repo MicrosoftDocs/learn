@@ -1,4 +1,4 @@
-Most non-trivial web applications will need to reliably run create, read, update, and delete (CRUD) operations on data. They'll also need to persist these changes between application restarts. Although there are various options for persisting data in .NET applications, Entity Framework (EF) Core is a user-friendly solution and a great fit for many .NET applications.
+Most non-trivial web applications will need to reliably run operations on data, such as create, read, update, and delete (CRUD). They'll also need to persist any changes made by these operations between application restarts. Although there are various options for persisting data in .NET applications, Entity Framework (EF) Core is a user-friendly solution and a great fit for many .NET applications.
 
 ## Understand EF Core
 
@@ -88,4 +88,4 @@ await db.SaveChangesAsync();
 
 ## Use the EF Core in-memory database
 
-EF Core includes an in-memory database provider that can be used to test your application. The in-memory database provider is useful for testing and development, but it should not be used in production. In the next unit, you'll use the in-memory database provider to create a database and perform CRUD operations on it.
+EF Core includes an in-memory database provider that can be used to test your application. The in-memory database provider is useful for testing and development, but it shouldn't be used in production. In the next unit, you'll use the in-memory database provider to create a database and perform CRUD operations on it.

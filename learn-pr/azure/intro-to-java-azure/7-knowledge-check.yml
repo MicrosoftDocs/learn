@@ -24,9 +24,9 @@ quiz:
     - content: "VM"
       isCorrect: false
       explanation: "Even though it's possible to deploy the packaged Spring Boot Application on a VM in Azure, it's not the preferred way to do so. Azure provides more support with other services."
-    - content: "Spring Cloud"
+    - content: "Azure Spring Apps"
       isCorrect: false
-      explanation: "Spring Cloud is the home of distributed Spring Boot services."
+      explanation: "Azure Spring Apps is the home of distributed Spring Boot services."
     - content: "All the above"
       isCorrect: true
       explanation: "Whether you're at the beginning of a _lift and shift_ migration toward the cloud or you start cloud native, Azure provides various services that you can choose from."

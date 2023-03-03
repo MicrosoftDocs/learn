@@ -10,9 +10,9 @@ This module focuses on the core build and deployment tasks, but it's important t
 
 After completing this module, you'll be able to:
 
-- Explain the benefits of Azure Functions and when to use them
-- Extend a basic release pipeline to also deploy an Azure Function app
-- Monitor the build, release, and deployment of your project
+- Explain the benefits of Azure Functions and when to use them.
+- Extend a basic release pipeline to also deploy an Azure Function app.
+- Monitor the build, release, and deployment of your project.
 
 ## Prerequisites
 
@@ -25,7 +25,7 @@ We also recommend you start at the beginning of this learning path: [Deploy appl
 
 [!INCLUDE [](../../shared/includes/project-details-note.md)]
 
-This module also assumes you have basic familiarity with Azure Functions, although that knowledge is not required to complete it. If you are new to the topic, it is recommended that you complete the [Create serverless applications](../../../paths/create-serverless-applications/index.yml?azure-portal=true) learning path first.
+This module also assumes you have basic familiarity with Azure Functions, although that knowledge is not required to complete it. If you're new to the topic, we recommend that you complete the [Create serverless applications](../../../paths/create-serverless-applications/index.yml?azure-portal=true) learning path first.
 
 ## Meet the team
 

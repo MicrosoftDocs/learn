@@ -30,7 +30,6 @@ roles:
 - data-scientist
 products:
 - azure
-- vs-code
 subjects:
 - data-analytics
 units:

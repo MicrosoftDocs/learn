@@ -56,7 +56,7 @@ The XML document in the request body contains the following elements:
 | `AllowedHeaders` | Specifies a comma-separated list of headers allowed to be part of the CORS request.<ul><li>This list is limited to 64 defined headers and two prefixed headers.</li><li>Each header is limited to 256 characters.</li></ul> |
 | `AllowedMethods` | Specifies a comma-separated list of HTTP methods that the origin is permitted to use. For Azure Storage, the permitted methods are: DELETE, GET, HEAD, MERGE, PATCH, POST, OPTIONS, and PUT. |
   
-As an example, the following CORS rule enables CORS for GET and PUT requests that are received from the domains www.fabrikam.com and www.contoso.com:
+As an example, the following CORS rule enables CORS for GET and PUT requests that are received from the domains `www.fabrikam.com` and `www.contoso.com`:
 
 ```XML
 <Cors>  

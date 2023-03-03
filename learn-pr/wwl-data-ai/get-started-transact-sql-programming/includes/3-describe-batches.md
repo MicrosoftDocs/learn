@@ -1,6 +1,6 @@
 T-SQL batches are collections of one or more T-SQL statements that are submitted to SQL Server by a client as a single unit. SQL Server operates on all the statements in a batch at the same time when parsing, optimizing, and executing the code.
 
-If you're a report writer who typically writes queries using SELECT statements and not procedures, it's still important to understand batch boundaries. These boundaries will affect your work with variables and parameters in stored procedures and other routines. For example, a variable must be declare in the same batch in which it's referenced. It's important, therefore, to recognize what is contained in a batch.
+If you're a report writer who typically writes queries using SELECT statements and not procedures, it's still important to understand batch boundaries. These boundaries will affect your work with variables and parameters in stored procedures and other routines. For example, a variable must be declared in the same batch in which it's referenced. It's important, therefore, to recognize what is contained in a batch.
 
 Batches are delimited by the client application. How you mark the end of a batch depends on the settings of your client. For Microsoft clients including SQL Server Management Studio (SSMS), Azure Data Studio and SQLCMD the keyword is GO.
 

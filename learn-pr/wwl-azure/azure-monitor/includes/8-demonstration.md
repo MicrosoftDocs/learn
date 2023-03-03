@@ -1,3 +1,4 @@
+
 Complete these try-this exercises to get some hands-on on experience with Azure.
 
 ## Task 1 - Activity Logs and Alerts
@@ -6,7 +7,7 @@ In this task, we will configure an alert.
 
 1.  Sign into the **Portal**.
 2.  Search for and launch **Monitor**.
-3.  Review the capabilities of Monitor: **Monitor &amp; Visualize Metrics**, **Query &amp; Analyze Logs**, and **Setup Alerts &amp; Actions**.
+3.  Review the capabilities of Monitor: **Monitor & Visualize Metrics**, **Query & Analyze Logs**, and **Setup Alerts & Actions**.
 4.  Select **Activity log**.
 5.  Under the filters, click **Timespan** and review the drop-down choices.
 6.  Open an event and discuss.
@@ -47,6 +48,3 @@ In this task, we will configure Log Analytics and run a query.
 16. Review how log data is stored in tables and can be queried.
 17. Select the **Event** table and then click **Run**.
 18. Review the results.
-19. There is a [Log Analytics Querying Demonstration](https://portal.loganalytics.io/demo) page.
-20. This page provides a live demonstration workspace where you can run and test queries.
-21. As you have time, review the log query demonstration environment.

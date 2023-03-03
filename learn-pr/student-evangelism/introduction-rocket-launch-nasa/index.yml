@@ -28,7 +28,7 @@ roles:
 - student
 - data-scientist
 products:
-- vs-code
+- azure
 subjects:
 - machine-learning
 units:

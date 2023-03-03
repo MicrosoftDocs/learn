@@ -1,3 +1,4 @@
+
 > [!NOTE]
 >  Microsoft 365 compliance is now called Microsoft Purview and the solutions within the compliance area have been rebranded. Microsoft 365 Audit is now Microsoft Purview Audit (Standard). Microsoft 365 Advanced Audit is now Microsoft Purview Audit (Premium). For more information about Microsoft Purview, see the [blog announcement](https://www.microsoft.com/security/blog/2022/04/19/the-future-of-compliance-and-data-governance-is-here-introducing-microsoft-purview/)
 

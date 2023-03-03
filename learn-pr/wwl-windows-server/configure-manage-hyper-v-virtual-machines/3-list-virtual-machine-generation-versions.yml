@@ -4,12 +4,12 @@ title: List the virtual machine generation versions
 metadata:
   title: List the virtual machine generation versions
   description: "List the virtual machine generation versions"
-  ms.date: 02/26/2021
+  ms.date: 12/12/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
 azureSandbox: false
+labModal: false
 durationInMinutes: 5
 content: |
   [!include[](includes/3-list-virtual-machine-generation-versions.md)]
@@ -20,10 +20,10 @@ quiz:
     choices:
     - content: "Generation 1"
       isCorrect: false
-      explanation: "That's incorrect. Generation 1 VMs do not support Secure Boot."
+      explanation: "That's incorrect. Generation 1 VMs don't support Secure Boot."
     - content: "Generation 2"
       isCorrect: true
       explanation: "That's correct. Generation 2 VMs support Secure Boot."
     - content: "Configuration Version 9.0"
       isCorrect: false
-      explanation: "That's incorrect. This is a configuration version, not a Generation version. Additionally, configuration version 9.0 is not specifically required to support Secure Boot functionality in Hyper-V, whereas Generation 2 is required."
+      explanation: "That's incorrect. This is a configuration version, not a Generation version. Additionally, configuration version 9.0 isn't required to support Secure Boot functionality in Hyper-V, whereas Generation 2 is required."

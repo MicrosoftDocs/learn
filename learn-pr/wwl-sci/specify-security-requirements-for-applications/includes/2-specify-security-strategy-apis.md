@@ -9,7 +9,7 @@ practices and tools.
 
 The DevOps model increases the organization's ability to rapidly
 address security concerns without waiting for a waterfall model's
-longer planning and testing cycle.
+longer planning and testing **cycle**.
 
 ## Deploy the DevOps and the application lifecycle
 
@@ -84,3 +84,7 @@ Most modern web applications expose APIs that clients can use to interact with t
 * Service evolution. The web API should be able to evolve and add functionality independently from client applications. As the API evolves, existing client applications should continue to function without modification. All functionality should be discoverable so that client applications can fully use it.
 
 Focus on the business entities that the web API exposes. For example, in an e-commerce system, the primary entities might be customers and orders. Creating an order can be achieved by sending an HTTP POST request that contains the order information. The HTTP response indicates whether the order was placed successfully or not. When possible, resource URIs should be based on nouns (the resource) and not verbs (the operations on the resource).
+
+For a walkthrough of using Microsoft Defender for Cloud to unify DevOps security, view the following interactive guide.
+
+[:::image type="content" source="../media/unify-devops-security-management-defender-cloud-interactive-guide.png" alt-text="Screenshot of an interactive guide with the title 'Manage your cloud security posture with Microsoft Defender for Cloud'." border="true":::](https://mslearn.cloudguides.com/guides/Unify%20DevOps%20security%20management%20with%20Microsoft%20Defender%20for%20Cloud)

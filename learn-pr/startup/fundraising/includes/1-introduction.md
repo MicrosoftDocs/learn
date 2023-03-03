@@ -8,7 +8,7 @@ We're then going to discuss different types of investors and what each is lookin
 
 Finally, we'll cover some practical aspects of how to raise a funding round and discuss some of the pitfalls that you should avoid.
 
-One aspect of fundraising is the ability to pitch your company to investors. But that subject is outside the scope of this module.
+One aspect of fundraising is the ability to pitch your company to investors, but that subject is outside the scope of this module.
 
 > [!NOTE]
 > This module aims to cover high-level concepts only. There are significant variations in the investor landscape, funding availability, and deal structures in different regions. We encourage you to familiarize yourself with your local funding environment before you set out to raise external funding.

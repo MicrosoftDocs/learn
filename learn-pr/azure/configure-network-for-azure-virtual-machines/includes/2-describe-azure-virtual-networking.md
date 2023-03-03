@@ -131,7 +131,7 @@ You'll configure the following settings for a basic virtual network:
 
 - **Distributed Denial of Service (DDoS) protection**
 
-    You can select either Basic or Standard DDoS protection. Standard DDoS Protection is a premium service. The [Azure DDoS Protection Standard](/azure/virtual-network/ddos-protection-overview) provides more information about Standard DDoS protection.
+    You can select either Basic or Standard DDoS protection. Standard DDoS Protection is a premium service. The [Azure DDoS Protection](/azure/virtual-network/ddos-protection-overview) provides more information about DDoS Protection.
 
 - **Service Endpoints**
 

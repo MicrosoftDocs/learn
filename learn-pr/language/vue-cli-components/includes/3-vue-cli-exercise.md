@@ -39,13 +39,12 @@ The fastest way to bootstrap a Vue application is through Vue CLI. We'll now cre
 
     ![Screenshot of selected feature options.](../media/features.png)
 
-1. Ensure that **Choose Vue version** is selected.
 1. Select the <kbd>Enter</kbd> key to confirm the feature choice.
 
     > [!NOTE]
     > For production projects, you might decide to add more features. These features are outside the scope of this module.
 
-1. When you're prompted to choose a version of Vue.js, use the arrow keys to move to **3.x (Preview)**, and then select the <kbd>Enter</kbd> key.
+1. When you're prompted to choose a version of Vue.js, use the arrow keys to move to **3.x**, and then select the <kbd>Enter</kbd> key.
 
     ![Screenshot of the selected version Vue version.](../media/version.png)
 
@@ -69,10 +68,10 @@ Let's explore the code that Vue CLI has created.
     ```
 
 1. In Visual Studio Code, open *package.json*.
-1. Note that `vue` is listed as a dependency, and `@vue/cli-service` is listed as a `devDependency`.
+1. `vue` is listed as a dependency, and `@vue/cli-service` is listed as a `devDependency`.
     > [!NOTE]
     > The `@vue/cli-service` part is responsible for building your application and running the development server.
-1. Note the two scripts: 
+1. Note the two scripts:
 
    - The `serve` script will start the development server.
    - The `build` script will create the JavaScript, HTML, or CSS when you're ready to publish your project.

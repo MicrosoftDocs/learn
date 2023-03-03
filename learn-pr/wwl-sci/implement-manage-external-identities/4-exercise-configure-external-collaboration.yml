@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-manage-external-identities.exercise-configure-external-collaboration
+title: Exercise - configure external collaboration
+metadata:
+  title: Exercise - configure external collaboration
+  description: "Exercise - configure external collaboration"
+  ms.date: 02/03/2023
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-exercise-configure-external-collaboration.md)]

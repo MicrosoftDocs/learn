@@ -1,5 +1,5 @@
 Microsoft Endpoint Manager meets organizations where they are in their cloud journey. It lets you secure, deploy, and manage all users, apps, and devices without disruption to existing processes.
- 
+
 Microsoft Endpoint Manager provides flexible support for diverse device scenarios while increasing productivity and collaboration.
 
 ## Unified management
@@ -15,8 +15,8 @@ Manage your PCs, Macs, and mobile devices in one place.
 
 With Microsoft Endpoint Manager, you can simplify software updates and provisioning for all devices. By using Windows Autopilot, Android Enterprise, Apple DEP, and Samsung Knox Mobile Enrollment, you can:
 
-- Decrease the cost of your device image creation workload when provisioning machines.
+- Decrease the cost of your device-image creation workload when provisioning machines.
 - Provide self-service provisioning directly by the end users.
-- Provide end user productivity more quickly when provisioning machines.
+- Provide end-user productivity more quickly when provisioning machines.
 - Ensure out-of-the-box security for new and updated machines.
 - Lower the costs for keeping your device hardware current.

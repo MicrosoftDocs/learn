@@ -5,15 +5,16 @@ Before you start to work on your toy company's website workflow, you need to con
 To meet these objectives, you'll:
 
 > [!div class="checklist"]
-> * Set up a GitHub repository for this module.
-> * Clone the project's repository to your computer.
-> * Create two workload identities in Azure Active Directory.
-> * Create two resource groups in Azure.
-> * Create secrets and environments in GitHub.
+>
+> - Set up a GitHub repository for this module.
+> - Clone the project's repository to your computer.
+> - Create two workload identities in Azure Active Directory.
+> - Create two resource groups in Azure.
+> - Create secrets and environments in GitHub.
 
 ## Get the GitHub repository
 
-Here you make sure that your GitHub repository is set up to complete the rest of this module. You set it up by creating a new repository based on a template repository. The template repository contains the files you need to get started for this module. 
+Here you make sure that your GitHub repository is set up to complete the rest of this module. You set it up by creating a new repository based on a template repository. The template repository contains the files you need to get started for this module.
 
 The modules in this learning path are part of a progression. For learning purposes, each module has an associated GitHub template repository.
 
@@ -25,37 +26,37 @@ The modules in this learning path are part of a progression. For learning purpos
 Run a template that sets up your GitHub repository.
 
 > [!div class="nextstepaction"]
-> [Run the template](https://github.com/MicrosoftDocs/mslearn-manage-end-end-deployment-scenarios-using-bicep-github-actions?azure-portal=true)
+> [Run the template](https://github.com/MicrosoftDocs/mslearn-manage-end-end-deployment-scenarios-using-bicep-github-actions)
 
 On the GitHub site, follow these steps to create a repository from the template:
 
-1. Select **Use this template**. 
+1. Select **Use this template** > **Create a new repository**.
 
    :::image type="content" source="../media/4-template.png" alt-text="Screenshot of the GitHub interface showing the template repo, with the 'Use this template' button highlighted.":::
 
-1. Note the name of your GitHub username or organization. In the example above, the GitHub user name is *mygithubuser*. You'll need this name soon.
+1. Select your GitHub username from the **Owner** drop-down list.
 
-1. Enter a name for your new project, such as *toy-website-end-to-end*.
+1. Enter a repository name for your new project, such as _toy-website-end-to-end_.
 
 1. Select the **Public** option.
 
    When you create your own repositories, you might want to make them private. In this module, you'll work with some features of GitHub that only work with public repositories and with GitHub Enterprise accounts.
 
-1. Select **Create repository from template**. 
+1. Select **Create repository from template**.
 
    :::image type="content" source="../media/4-repo-settings.png" alt-text="Screenshot of the GitHub interface showing the repo creation page.":::
 
-[!include[](../../includes/cleanup-steps.md)]
+[!INCLUDE [](../../includes/cleanup-steps.md)]
 
 ## Clone the repository
 
-You now have a copy of the template repository in your own account. You will now clone this repository locally so you can start work in it. 
+You now have a copy of the template repository in your own account. You'll now clone this repository locally so you can start work in it.
 
 1. Select **Code** and select the copy icon.
 
    :::image type="content" source="../media/4-github-repository-clipboard.png" alt-text="Screenshot of the GitHub interface showing the new repository, with the repository U R L copy button highlighted.":::
 
-1. Open Visual Studio Code. 
+1. Open Visual Studio Code.
 
 1. Open a Visual Studio Code terminal window by selecting **Terminal** > **New Terminal**. The window usually opens at the bottom of the screen.
 
@@ -81,11 +82,11 @@ You now have a copy of the template repository in your own account. You will now
 
 ::: zone pivot="cli"
 
-To work with resource groups in Azure, sign in to your Azure account from the Visual Studio Code terminal. Be sure that you've installed the [Azure CLI](/cli/azure/install-azure-cli?azure-portal=true) tools.
+To work with resource groups in Azure, sign in to your Azure account from the Visual Studio Code terminal. Be sure that you've installed the [Azure CLI](/cli/azure/install-azure-cli) tools.
 
-[!include[](../../includes/azure-exercise-terminal-cli.md)]
+[!INCLUDE [](../../includes/azure-exercise-terminal-cli.md)]
 
-### Sign in to Azure by using the Azure CLI
+### Sign in to Azure by using Azure CLI
 
 1. In the Visual Studio Code terminal, run the following command to sign in to Azure:
 
@@ -99,9 +100,9 @@ To work with resource groups in Azure, sign in to your Azure account from the Vi
 
 ::: zone pivot="powershell"
 
-To work with resource groups in Azure, sign in to your Azure account from the Visual Studio Code terminal. Be sure that you've [installed Azure PowerShell](/powershell/azure/install-az-ps?azure-portal=true).
+To work with resource groups in Azure, sign in to your Azure account from the Visual Studio Code terminal. Be sure that you've [installed Azure PowerShell](/powershell/azure/install-az-ps).
 
-[!include[](../../includes/azure-exercise-terminal-powershell.md)]
+[!INCLUDE [](../../includes/azure-exercise-terminal-powershell.md)]
 
 ### Sign in to Azure by using Azure PowerShell
 
@@ -121,14 +122,14 @@ Next, create two workload identities in Azure AD: one for your test environment 
 
 ::: zone pivot="cli"
 
-1. Run the code below to define variables for your GitHub username and your repository name. Ensure that you replace `mygithubuser` with your GitHub username, which you noted earlier in this exercise. Also ensure that you specify the correct GitHub repository name.
+1. Run the following code to define variables for your GitHub username and your repository name. Ensure that you replace `mygithubuser` with your GitHub username, which you noted earlier in this exercise. Also ensure that you specify the correct GitHub repository name.
 
    ```bash
    githubOrganizationName='mygithubuser'
    githubRepositoryName='toy-website-end-to-end'
    ```
 
-1. Create a workload identity for deployments to your test environment. The workload identity needs two federated credentials: one is used when the workflow runs the *validate* job, because this job isn't associated with a GitHub environment. The second is used when the workflow runs the *deploy* job, which runs against the *Test* GitHub environment.
+1. Create a workload identity for deployments to your test environment. The workload identity needs two federated credentials: one is used when the workflow runs the _validate_ job, because this job isn't associated with a GitHub environment. The second is used when the workflow runs the _deploy_ job, which runs against the _Test_ GitHub environment.
 
    ```bash
    testApplicationRegistrationDetails=$(az ad app create --display-name 'toy-website-end-to-end-test')
@@ -144,7 +145,7 @@ Next, create two workload identities in Azure AD: one for your test environment 
       --parameters "{\"name\":\"toy-website-end-to-end-test-branch\",\"issuer\":\"https://token.actions.githubusercontent.com\",\"subject\":\"repo:${githubOrganizationName}/${githubRepositoryName}:ref:refs/heads/main\",\"audiences\":[\"api://AzureADTokenExchange\"]}"
    ```
 
-1. Run the code below, which creates a similar workload identity and federated credentials for the production environment:
+1. Run the following code, which creates a similar workload identity and federated credentials for the production environment:
 
    ```bash
    productionApplicationRegistrationDetails=$(az ad app create --display-name 'toy-website-end-to-end-production')
@@ -164,24 +165,24 @@ Next, create two workload identities in Azure AD: one for your test environment 
 
 ::: zone pivot="powershell"
 
-1. Run the code below to define variables for your GitHub username and your repository name. Ensure that you replace `mygithubuser` with your GitHub username, which you noted earlier in this exercise. Also ensure that you specify the correct GitHub repository name.
+1. Run the following code to define variables for your GitHub username and your repository name. Ensure that you replace `mygithubuser` with your GitHub username, which you noted earlier in this exercise. Also ensure that you specify the correct GitHub repository name.
 
    ```azurepowershell
    $githubOrganizationName = 'mygithubuser'
    $githubRepositoryName = 'toy-website-end-to-end'
    ```
 
-1. Run the code below, which creates a workload identity for the test environment and associates it with your GitHub repository:
+1. Run the following code, which creates a workload identity for the test environment and associates it with your GitHub repository:
 
    ```azurepowershell
    $testApplicationRegistration = New-AzADApplication -DisplayName 'toy-website-end-to-end-test'
-   New-AzADAppFederatedIdentityCredential `
+   New-AzADAppFederatedCredential `
       -Name 'toy-website-end-to-end-test' `
       -ApplicationObjectId $testApplicationRegistration.Id `
       -Issuer 'https://token.actions.githubusercontent.com' `
       -Audience 'api://AzureADTokenExchange' `
       -Subject "repo:$($githubOrganizationName)/$($githubRepositoryName):environment:Test"
-   New-AzADAppFederatedIdentityCredential `
+   New-AzADAppFederatedCredential `
       -Name 'toy-website-end-to-end-test-branch' `
       -ApplicationObjectId $testApplicationRegistration.Id `
       -Issuer 'https://token.actions.githubusercontent.com' `
@@ -189,17 +190,17 @@ Next, create two workload identities in Azure AD: one for your test environment 
       -Subject "repo:$($githubOrganizationName)/$($githubRepositoryName):ref:refs/heads/main"
    ```
 
-1. Run the code below, which follows a similar process for the production environment:
+1. Run the following code, which follows a similar process for the production environment:
 
    ```azurepowershell
    $productionApplicationRegistration = New-AzADApplication -DisplayName 'toy-website-end-to-end-production'
-   New-AzADAppFederatedIdentityCredential `
+   New-AzADAppFederatedCredential `
       -Name 'toy-website-end-to-end-production' `
       -ApplicationObjectId $productionApplicationRegistration.Id `
       -Issuer 'https://token.actions.githubusercontent.com' `
       -Audience 'api://AzureADTokenExchange' `
       -Subject "repo:$($githubOrganizationName)/$($githubRepositoryName):environment:Production"
-   New-AzADAppFederatedIdentityCredential `
+   New-AzADAppFederatedCredential `
       -Name 'toy-website-end-to-end-production-branch' `
       -ApplicationObjectId $productionApplicationRegistration.Id `
       -Issuer 'https://token.actions.githubusercontent.com' `
@@ -218,7 +219,7 @@ Next, create a resource group for each environment. This process also grants the
 1. To create the test environment's resource group and grant the workload identity access to it, run the following Azure CLI commands in the Visual Studio Code terminal:
 
    ```bash
-   testResourceGroupResourceId=$(az group create --name ToyWebsiteTest --location eastus --query id --output tsv)
+   testResourceGroupResourceId=$(az group create --name ToyWebsiteTest --location westus3 --query id --output tsv)
 
    az ad sp create --id $testApplicationRegistrationObjectId
    az role assignment create \
@@ -230,7 +231,7 @@ Next, create a resource group for each environment. This process also grants the
 1. Run a similar process to create the production environment's resource group:
 
    ```bash
-   productionResourceGroupResourceId=$(az group create --name ToyWebsiteProduction --location eastus --query id --output tsv)
+   productionResourceGroupResourceId=$(az group create --name ToyWebsiteProduction --location westus3 --query id --output tsv)
 
    az ad sp create --id $productionApplicationRegistrationObjectId
    az role assignment create \
@@ -246,7 +247,7 @@ Next, create a resource group for each environment. This process also grants the
 1. To create the test environment's resource group and grant the workload identity access to it, run the following Azure PowerShell commands in the Visual Studio Code terminal:
 
    ```azurepowershell
-   $testResourceGroup = New-AzResourceGroup -Name ToyWebsiteTest -Location eastus
+   $testResourceGroup = New-AzResourceGroup -Name ToyWebsiteTest -Location westus3
 
    New-AzADServicePrincipal -AppId $($testApplicationRegistration.AppId)
    New-AzRoleAssignment `
@@ -258,7 +259,7 @@ Next, create a resource group for each environment. This process also grants the
 1. Run a similar process to create the production environment's resource group:
 
    ```azurepowershell
-   $productionResourceGroup = New-AzResourceGroup -Name ToyWebsiteProduction -Location eastus
+   $productionResourceGroup = New-AzResourceGroup -Name ToyWebsiteProduction -Location westus3
 
    New-AzADServicePrincipal -AppId $($productionApplicationRegistration.AppId)
    New-AzRoleAssignment `
@@ -271,7 +272,7 @@ Next, create a resource group for each environment. This process also grants the
 
 ## Prepare GitHub secrets
 
-Run the following code to show you the values you need to create as GitHub secrets:
+Run the following code to output the values you need to create as GitHub secrets:
 
 ::: zone pivot="cli"
 
@@ -308,15 +309,15 @@ You've created two workload identities, and resource groups that they can deploy
 
    :::image type="content" source="../../includes/media/github-create-repository-secret.png" alt-text="Screenshot of the GitHub interface showing the 'Secrets' page, with the 'Create repository secret' button highlighted." border="true":::
 
-1. Name the secret *AZURE_CLIENT_ID_TEST*.
+1. Name the secret _AZURE_CLIENT_ID_TEST_.
 
 1. In the **Value** field, paste the GUID from the first line of the terminal output. Don't include `AZURE_CLIENT_ID_TEST`, the colon, or any spaces in the value.
 
-1. Select **Add secret**. 
+1. Select **Add secret**.
 
    :::image type="content" source="../../includes/media/github-create-repository-secret-details-test-environment.png" alt-text="Screenshot of the GitHub interface showing the 'New Secret' page, with the name and value completed and the 'Add secret' button highlighted." border="true":::
 
-1. Repeat the process to create the secrets for *AZURE_CLIENT_ID_PRODUCTION*, *AZURE_TENANT_ID*, and *AZURE_SUBSCRIPTION_ID*, copying the values from the corresponding fields in the terminal output.
+1. Repeat the process to create the secrets for _AZURE_CLIENT_ID_PRODUCTION_, _AZURE_TENANT_ID_, and _AZURE_SUBSCRIPTION_ID_, copying the values from the corresponding fields in the terminal output.
 
 1. Verify that your list of secrets now shows all four secrets.
 
@@ -330,7 +331,7 @@ You've created two workload identities, and resource groups that they can deploy
 
    :::image type="content" source="../media/4-environments-new.png" alt-text="Screenshot of the GitHub interface that shows the Environments page and the button for creating an environment.":::
 
-1. Enter **Test** as the environment name.
+1. Enter _Test_ as the environment name.
 
    :::image type="content" source="../media/4-environments-new-details-test.png" alt-text="Screenshot of the GitHub page for a new environment named Test, with the Configure environment button.":::
 
@@ -340,7 +341,7 @@ You've created two workload identities, and resource groups that they can deploy
 
    :::image type="content" source="../media/4-environments-new-configure-test.png" alt-text="Screenshot of the GitHub page for a new environment named Test, with the Environment link.":::
 
-1. Repeat the process to create another environment named **Production**.
+1. Repeat the process to create another environment named _Production_.
 
 > [!NOTE]
 > In previous modules in this learning path, you added a protection rule to your production environment. In this module, for simplicity, you're skipping the protection rule. However, you can add the protection rule yourself if you'd like.

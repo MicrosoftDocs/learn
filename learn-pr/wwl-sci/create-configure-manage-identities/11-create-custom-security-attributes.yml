@@ -3,8 +3,8 @@ uid: learn.wwl.create-configure-manage-identities.create-custom-security-attribu
 title: Create custom security attributes
 metadata:
   title: Create custom security attributes
-  description: "Create custom security attributes to better control and track usage of application and data."
-  ms.date: 08/30/2022
+  description: "Create custom security attributes"
+  ms.date: 02/03/2023
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial

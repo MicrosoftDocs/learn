@@ -1,8 +1,8 @@
 The goal of this module was to introduce the different GitHub Advanced Security features, show where they fit in your software development lifecycle, and how to leverage them.
 
-Throughout the module, you learned which security features are available with a GitHub Advanced Security license, and at which step these can be integrated in your software development lifecycle. You have also learned how to enable GitHub Advanced Security according to your enterprise plan and how to set up access to the Advanced Security features across your organizations and repositories.
+Throughout the module, you learned which security features are available with a GitHub Advanced Security license, and at which step these can be integrated in your software development lifecycle. You've also learned how to enable GitHub Advanced Security according to your enterprise plan, and how to set up access to the Advanced Security features across your organizations and repositories.
 
-Finally, you saw how to make the most of GitHub Advanced Security by using the Security Overview and the Advanced Security endpoints. You are now ready to roll out GitHub Advanced Security in your organization!
+Finally, you learned how to make the most of GitHub Advanced Security by using the Security Overview and the Advanced Security endpoints. You're now ready to roll out GitHub Advanced Security in your organization!
 
 ## Learn more
 

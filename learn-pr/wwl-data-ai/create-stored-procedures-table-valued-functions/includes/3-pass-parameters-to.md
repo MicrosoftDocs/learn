@@ -57,7 +57,7 @@ You can query a system catalog view such as **sys.parameters** to retrieve param
 
 If a parameter was declared with a default value, you don't have to pass value when the stored procedure is run. If a value is passed it will be used, but if no value is passed, then the default is used.
 
-When the stored procedure is created, paramters are given default values using the = operator, such as:
+When the stored procedure is created, parameters are given default values using the = operator, such as:
 
 ```sql
 CREATE PROCEDURE Sales.SalesYTD  

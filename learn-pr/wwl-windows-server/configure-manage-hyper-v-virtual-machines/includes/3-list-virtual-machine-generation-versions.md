@@ -7,7 +7,7 @@ When you create a new VM, one of the options presented is whether to create a Ge
 When you create a Generation 1 VM, the following features are supported:
 
 |Feature|Description|
-|||
+|---|---|
 |Guest operating systems|Generation 1 VMs support both 32-bit and 64-bit Windows versions. Generation 1 also supports CentOS/Red Hat Linux, Debian, FreeBSD, Oracle Linux, SUSE Linux, and Ubuntu guest operating systems.|
 |VM boot|Generation 1 VMs can boot from a virtual floppy disk (.VFD), integrated drive electronics (IDE) Controller VHD, IDE Controller virtual DVD, or PXE boot by using a legacy network adapter. Generation 1 boot volumes only support a maximum of 2 TB with four partitions.|
 |Boot Volume|For Generation 1 virtual machines, the maximum boot volume is 2TB for a .vhdx and 2040GB for a .vhd| 
@@ -18,7 +18,7 @@ When you create a Generation 1 VM, the following features are supported:
 When you create a Generation 2 VM, the following features are supported:
 
 |Feature|Description|
-|||
+|---|---|
 |Guest operating systems|Generation 2 VMs support only 64-bit Windows versions (excluding Windows Server 2008 and Windows 7). Generation 2 also supports current versions of CentOS/Red Hat Linux, Debian, Oracle Linux, SUSE Linux, and Ubuntu guest operating systems.|
 |VM boot|Generation 2 VMs can only boot from a SCSI Controller VHD, SCSI Controller virtual DVD, or PXE boot by using a standard network adapter.|
 |Secure Boot|Generation 2 VMs support Secure Boot and Secure Boot is enabled by default in Generation 2 VMs. This feature verifies that the boot loader is signed by a trusted authority in the Unified Extensible Firmware Interface (UEFI) database. It can prevent unauthorized firmware, operating systems, or UEFI drivers from running at boot time.|
@@ -27,7 +27,7 @@ When you create a Generation 2 VM, the following features are supported:
 |Firmware support|UEFI.|
 
 > [!NOTE]
-> Generation 2 VMs do not have a DVD drive by default, but you can add a DVD drive after you create the VM. Also, Generation 2 VMs don't support a virtual floppy disk controller.
+> Generation 2 VMs don't have a DVD drive by default, but you can add a DVD drive after you create the VM. Also, Generation 2 VMs don't support a virtual floppy disk controller.
 
 > [!CAUTION]
 > It's important to understand the impact and considerations of your generation selection, because you can't change the generation after you've created it.
@@ -57,4 +57,10 @@ The main steps in the process are:
 > [!IMPORTANT]
 > When using the `New-VM` Windows PowerShell cmdlet to create a new VM, Generation 2 VMs do not support Floppy, LegacyNetworkAdapter, or IDE. Using these values in a Windows PowerShell cmdlet causes an error.
 
- >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MC7h]
+ > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MC7h]
+
+---
+
+
+
+---
