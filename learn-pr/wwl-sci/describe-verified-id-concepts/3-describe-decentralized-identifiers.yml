@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.describe-verified-id-concepts.describe-decentralized-identifiers
+title: Enter exercise title
+metadata:
+  title: exercise
+  description: "Describe decentralized identifiers (DIDs)."
+  ms.date: 1/12/2023
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-describe-decentralized-identifiers.md)]
