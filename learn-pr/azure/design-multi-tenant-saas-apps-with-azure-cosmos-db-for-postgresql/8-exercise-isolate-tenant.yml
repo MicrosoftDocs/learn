@@ -2,7 +2,7 @@
 uid: learn.design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql.exercise-isolate-tenant
 title: Exercise - Isolate a tenant in a multi-tenant database
 metadata:
-  title: exercise-isolate-tenant
+  title: Exercise - Isolate a tenant in a multi-tenant database
   description: "In this exercise, you identify a noisy tenant and isolate it to a dedicated worker node to reduce resource contention and improve overall quality of service."
   ms.date: 02/22/2023
   author: kylebunting

@@ -2,7 +2,7 @@
 uid: learn.design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql.exercise-distribute-multi-tenant-tables
 title: Exercise - Distribute multi-tenant tables
 metadata:
-  title: exercise-distribute-multi-tenant-tables
+  title: Exercise - Distribute multi-tenant tables
   description: "In this exercise, you scale a single-node Azure Cosmos DB for PostgreSQL database to a multi-node cluster and distribute the tables in the database across worker nodes."
   ms.date: 02/22/2023
   author: kylebunting
