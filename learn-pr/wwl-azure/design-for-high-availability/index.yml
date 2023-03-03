@@ -33,6 +33,5 @@ products:
 subjects:
 - architecture
 units:
-- learn.wwl.design-for-high-availability.summary-resources
 badge:
   uid: learn.wwl.design-for-high-availability.badge
