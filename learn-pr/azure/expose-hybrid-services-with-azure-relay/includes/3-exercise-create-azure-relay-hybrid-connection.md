@@ -2,7 +2,7 @@ Before your apps can use Azure Relay to exchange messages, you must create and c
 
 In your financial organization, for the credit-checking service, your developers use hybrid connections. You want to create a relay that supports these connections. You also want to obtain the security credentials that your apps need to connect.
 
-In this unit, you'll create an Azure Relay namespace and then store the primary key and connection string for later use in your app code.
+In this unit, you create an Azure Relay namespace and then store the primary key and connection string for later use in your app code.
 
 ## Create a namespace in Azure Relay
 
@@ -10,7 +10,9 @@ Let's start by creating a new Azure Relay namespace.
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), in the left pane, select **Create a resource**.
 
-1. In the **Search the Marketplace** search box, search for and select **Relays**. The **Relays** panel appears.
+1. In the **Search the Marketplace** search box, search for and select **Relay**. Select the marketplace card for **Relay**, and the **Relay** panel appears.
+
+   ![Screenshot showing the top portion of the Relay panel with the logo and Create button.](../media/3-relay-panel.png)
 
 1. Select **Create**. The **Create namespace** panel appears.
 
@@ -40,7 +42,7 @@ Azure Relay helps maintain security by requiring applications to supply an acces
 
     ![Screenshot of getting the access key for the relay.](../media/3-obtain-access-key.png)
 
-1. To save the primary key and primary connection string, do the following:
+1. To save the primary key and primary connection string, follow these steps:
   
    a. On the **Primary Key** box, select the **Copy to clipboard** button.  
    b. In Notepad or another text editor, paste the key.  
