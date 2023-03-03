@@ -170,7 +170,7 @@ Looking at the shard size values for Tailspin Toys, one node for both `orders` a
 
 You can also use the Azure portal to inspect skewness and get a recommendation about whether rebalancing is recommended.
 
-![The Shard rebalancer page of the Azure CosmosDB for PostgreSQL Cluster is displayed, with the Shard rebalancer menu selected and highlighted. The Rebalancing is recommended header is highlighted, as are the node sizes for each cluster.](../media/cosmos-db-postgresql-shard-rebalancer.png)
+![Screenshot of the Shard rebalancer page of the Azure CosmosDB for PostgreSQL Cluster, with the Shard rebalancer menu selected and highlighted. The Rebalancing is recommended header is highlighted, as are the node sizes for each cluster.](../media/cosmos-db-postgresql-shard-rebalancer.png)
 
 Rebalancing moves shards between nodes, more evenly distributing data. The shard rebalancer handles this process without downtime or disruption to the database. You can run the rebalancer by executing the `rebalance_table_shards()` function.
 

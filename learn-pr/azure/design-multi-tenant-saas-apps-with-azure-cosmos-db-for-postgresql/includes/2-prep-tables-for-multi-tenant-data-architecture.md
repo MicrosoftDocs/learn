@@ -2,7 +2,7 @@ To accommodate the recent increase in toy stores hosting their websites in Tails
 
 Tailspin Toys has provided the following diagram, representing the structure and relationships between tables in their current single-node database. Bolded fields with a light blue background represent primary keys, and italicized items are foreign keys.
 
-![The single-node schemas of and relationships between the stores, products, orders, and line_items tables are displayed.](../media/table-schema-single-node.png)
+![Diagram of the single-node schemas of and relationships between the stores, products, orders, and line_items tables.](../media/table-schema-single-node.png)
 
 You can reference this diagram as you evaluate the best way to distribute their table data across multiple nodes.
 
@@ -176,4 +176,4 @@ Another technique to avoid worrying about foreign key relationships defined in o
 
 By modifying each of Tailspin Toys' tables in this manner, the schema for the multi-node distributed database should now resemble the following diagram, which highlights the new `store_id` column in the `line_items` table and the newly defined foreign key relationship with `stores` in green. Bolded fields with a light blue background represent primary keys, and italicized items are foreign keys.
 
-![The multi-node schemas of and relationships between the stores, products, orders, and line_items tables are displayed. The new store_id column on the line_items table and the relationship between stores and line_items are highlighted in green.](../media/table-schema-multi-node.png)
+![Diagram of the multi-node schemas of and relationships between the stores, products, orders, and line_items tables. The new store_id column on the line_items table and the relationship between stores and line_items are highlighted in green.](../media/table-schema-multi-node.png)

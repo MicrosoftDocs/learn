@@ -8,13 +8,13 @@ Scaling an Azure Cosmos DB for PostgreSQL database can be done quickly via the A
 
 2. On the **Azure Cosmos DB for PostgreSQL Cluster** page, select **Scale** under **Settings** in the left-hand navigation menu, expand the **Node count** dropdown on the **Scale** blade, and select **2 nodes** from the list.
 
-    ![The Scale menu item is highlighted and selected. On the Scale blade, the Node count dropdown is expanded, and 2 nodes is highlighted.](../media/cosmos-db-postgresql-scale.png)
+    ![Screenshot showing the Scale menu item highlighted and selected. On the Scale blade, the Node count dropdown is expanded, and 2 nodes is highlighted.](../media/cosmos-db-postgresql-scale.png)
 
     Migrating to a multi-node cluster splits the coordinator and workers onto separate nodes. The node count dropdown indicates the number of worker nodes, so selecting **2 nodes** create two worker nodes in addition to the coordinator node.
 
 3. Select **Save** to transition the database from a single-node to a multi-node cluster.
 
-    ![The Save button is highlighted on the Scale blade. The cluster configuration diagram shows one coordinator node and two worker nodes.](../media/cosmos-db-postgresql-scale-multi-node-save.png)
+    ![Screenshot showing the Save button highlighted on the Scale blade. The cluster configuration diagram shows one coordinator node and two worker nodes.](../media/cosmos-db-postgresql-scale-multi-node-save.png)
 
     The compute and storage sizes you selected when setting up the development database for Tailspin Toys are compatible with a multi-node cluster, so scaling the database won't cause any database downtime. The scaling process takes several minutes to complete, so you can move on to the next task while it is in progress.
 
@@ -32,7 +32,7 @@ Queries statistics against PostgreSQL databases are maintained in the `pg_stat_s
 
 2. On your **Azure Cosmos DB for PostgreSQL Cluster** page in the Azure portal, select **Coordinator node parameters** under **Settings** in the left-hand navigation menu. On the Coordinator node parameters page, enter "citus.stat" into the filter box and change the value of `citus.stat_statements_track` to **ALL**. If the value is already **ALL**, select **None**, then choose **ALL** again to enable the **Save** button.
 
-    ![On the Coordinator node parameters page on the Azure Cosmos DB for PostgreSQL Cluster, the Coordinator node parameters menu is selected and highlighted. Citus.stat is highlighted in the filter box. The value dropdown for citus.stat_statements_track is highlighted with a value of ALL, and the Save button is highlighted.](../media/cosmos-db-postgresql-parameters-citus-stat-statements-track.png)
+    ![Screenshot of the Coordinator node parameters page on the Azure Cosmos DB for PostgreSQL Cluster with the Coordinator node parameters menu selected and highlighted.](../media/cosmos-db-postgresql-parameters-citus-stat-statements-track.png)
 
 3. Select **Save**.
 
@@ -56,13 +56,13 @@ You'll use `psql` from the command line to distribute the tables in your databas
 
 1. From your Azure Cosmos DB for PostgreSQL resource in the [Azure portal](https://portal.azure.com/), select **Connection strings** under **Settings** from the left-hand navigation menu, and then copy the connection string labeled **psql**.
 
-    ![The Connection strings page of the Azure Cosmos DB Cluster resource is highlighted. On the Connection strings page, the copy to clipboard button to the right of the psql connection string is highlighted.](../media/cosmos-db-for-postgresql-connection-strings-psql.png)
+    ![Screenshot of the Connection strings page of the Azure Cosmos DB Cluster resource. On the Connection strings page, the copy to clipboard button to the right of the psql connection string is highlighted.](../media/cosmos-db-for-postgresql-connection-strings-psql.png)
 
 2. Paste the connection string into a text editor, such as Notepad.exe, and replace the `{your_password}` token with the password you assigned to the `citus` user when creating your cluster. Copy the updated connection string for use below.
 
 3. From the **Connection strings** page in the Azure portal, open an Azure Cloud Shell dialog by selecting the Cloud Shell icon on the toolbar in the Azure portal.
 
-    ![The Cloud Shell icon is highlighted on the Azure portal toolbar and a Cloud Shell dialog is open at the bottom of the browser window.](../media/azure-cloud-shell.png)
+    ![Screenshot of the Azure portal toolbar, with the Cloud Shell icon is highlighted and a Cloud Shell dialog open at the bottom of the browser window.](../media/azure-cloud-shell.png)
 
     The Cloud Shell opens as an embedded panel at the bottom of your browser window. Alternatively, you can open the [Azure Cloud Shell](https://shell.azure.com/) in a different web browser.
 

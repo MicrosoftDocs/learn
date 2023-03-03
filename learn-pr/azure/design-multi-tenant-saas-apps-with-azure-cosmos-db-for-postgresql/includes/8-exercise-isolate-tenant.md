@@ -8,7 +8,7 @@ Now that you have completed migrating Tailspin Toys' database to a multi-node in
 
 2. On the **Azure Cosmos DB for PostgreSQL Cluster** page, select **Scale** under **Settings** in the left-hand navigation menu, expand the **Node count** dropdown on the **Scale** blade, and increase the node count **3 nodes**, then select **Save**.
 
-    ![On the Azure Cosmos DB for PostgreSQL Cluster Scale blade in the Azure portal, the 3 nodes is selected for the node count and the save button is highlighted.](../media/cosmos-db-postgresql-scale-3-nodes.png)
+    ![Screenshot of the Azure Cosmos DB for PostgreSQL Cluster Scale blade in the Azure portal. Three nodes are selected for the node count and the save button is highlighted.](../media/cosmos-db-postgresql-scale-3-nodes.png)
 
     Once your new node has been successfully added, it will be available in the system. However, no tenants are stored on it yet, and no queries will be run there. You'll use built-in functions to relocate Tailspin Toys' most active tenant to the new worker node below.
 
@@ -18,13 +18,13 @@ You'll use `psql` from the command line to make your database changes. `psql` is
 
 1. From your Azure Cosmos DB for PostgreSQL resource in the [Azure portal](https://portal.azure.com/), select **Connection strings** under **Settings** from the left-hand navigation menu, and then copy the connection string labeled **psql**.
 
-    ![The Connection strings page of the Azure Cosmos DB Cluster resource is highlighted. On the Connection strings page, the copy to clipboard button to the right of the psql connection string is highlighted.](../media/cosmos-db-for-postgresql-connection-strings-psql.png)
+    ![Screenshot of the Connection strings page of the Azure Cosmos DB Cluster resource. On the Connection strings page, the copy to clipboard button to the right of the psql connection string is highlighted.](../media/cosmos-db-for-postgresql-connection-strings-psql.png)
 
 2. Paste the connection string into a text editor, such as Notepad.exe, and replace the `{your_password}` token with the password you assigned to the `citus` user when creating your cluster. Copy the updated connection string for use below.
 
 3. From the **Connection strings** page in the Azure portal, open an Azure Cloud Shell dialog by selecting the Cloud Shell icon on the toolbar in the Azure portal.
 
-    ![The Cloud Shell icon is highlighted on the Azure portal toolbar and a Cloud Shell dialog is open at the bottom of the browser window.](../media/azure-cloud-shell.png)
+    ![Screenshot of the Azure portal toolbar, with the Cloud Shell icon is highlighted, and a Cloud Shell dialog open at the bottom of the browser window.](../media/azure-cloud-shell.png)
 
     The Cloud Shell opens as an embedded panel at the bottom of your browser window. Alternatively, you can open the [Azure Cloud Shell](https://shell.azure.com/) in a different web browser.
 

@@ -8,11 +8,11 @@ To ensure you can modify the Tailspin Toys database and measure the impact those
 
 2. In the Azure portal, select **Create a resource**, **Databases**, and **Azure Cosmos DB**. You can also use the **Search** functionality to find the resource.
 
-    ![On the Azure portal's Create a resource screen, Databases and Azure Cosmos DB are highlighted.](../media/cosmos-db-create.png)
+    ![Screenshot of the Azure portal's Create a resource screen. Databases and Azure Cosmos DB are highlighted.](../media/cosmos-db-create.png)
 
 3. On the **Which API best suits your workload?** screen, select **Create** within the **Azure Cosmos DB for PostgreSQL** tile.
 
-    ![The PostgreSQL tile is highlighted on the Azure Cosmos DB Select API option dialog.](../media/cosmos-db-select-api-option.png)
+    ![Screenshot showing the PostgreSQL tile highlighted on the Azure Cosmos DB Select API option dialog.](../media/cosmos-db-select-api-option.png)
 
     After selecting **Create**, the portal will display a resource configuration screen.
 
@@ -32,7 +32,7 @@ To ensure you can modify the Tailspin Toys database and measure the impact those
     | Admin username  | This is set to `citus` and can't be edited. |
     | Password        | Enter and confirm a strong password. |
 
-    ![The Basics tab of the Create an Azure Cosmos DB - PostgreSQL cluster dialog is displayed, and the fields are populated with the values specified in the exercise.](../media/cosmos-db-for-postgresql-basics-tab.png)
+    ![Screenshot of the Basics tab of the Create an Azure Cosmos DB - PostgreSQL cluster dialog. The fields are populated with the values specified in the exercise.](../media/cosmos-db-for-postgresql-basics-tab.png)
 
     Make a note of the password you assign, as you need it later to connect to the database.
 
@@ -47,11 +47,11 @@ To ensure you can modify the Tailspin Toys database and measure the impact those
 
     The high availability and automatic failover capabilities are out of scope for this exercise, so leave the **High availability** checkbox unchecked.
 
-    ![The node configuration specified in the exercise is selected on the Create an Azure Cosmos DB - PostgreSQL cluster configuration dialog.](../media/cosmos-db-for-postgresql-cluster-config.png)
+    ![Screenshot of the Create an Azure Cosmos DB - PostgreSQL cluster configuration dialog. The node configuration specified in the exercise is selected.](../media/cosmos-db-for-postgresql-cluster-config.png)
 
 6. Select the **Review + create** button, and on the review screen, select **Create** to provision your cluster. If the **Configure IP address in firewall rules** message appears, select **Create cluster without firewall rules**.
 
-    ![The Configure IP address in firewall rules dialog is displayed with the warning message, 'You need to configure at least one IP address in Public access (allowed IPs) to enable access to this cluster. If you continue without configuring the IP address then you must configure the IP address later to allow access to this cluster.' The 'Create cluster without firewall rules' button is highlighted.](../media/configure-ip-rules-warning.png)
+    ![Screenshot showing the Configure IP address in firewall rules dialog, with a warning message.](../media/configure-ip-rules-warning.png)
 
     It can take 10-15 minutes for your cluster to provision.
 
@@ -59,7 +59,7 @@ To ensure you can modify the Tailspin Toys database and measure the impact those
 
 8. Select **Networking** under **Settings** from the left-hand navigation menu. On the networking blade, check the box to **Allow public access from Azure services and resources within Azure to this cluster** and select **Save** on the toolbar.
 
-    ![In the Azure portal, the Networking menu is selected and highlighted for the Azure Cosmos DB for PostgreSQL cluster resource. The checkbox for Allow public access from Azure services and resources within Azure to this cluster is checked and highlighted, and the Save button on the toolbar is highlighted.](../media/cosmos-db-for-postgresql-networking.png)
+    ![Screenshot of the Azure Cosmos DB for PostgreSQL cluster resource in the Azure portal. The Networking menu is selected and highlighted.](../media/cosmos-db-for-postgresql-networking.png)
 
 ## Connect to the database using psql in the Azure Cloud Shell
 
@@ -67,23 +67,23 @@ You'll use `psql` from the command line to make your database changes. `psql` is
 
 1. From your Azure Cosmos DB for PostgreSQL Cluster page in the Azure portal, select **Connection strings** under **Settings** in the left-hand navigation menu, then copy the connection string labeled **psql**.
 
-    ![The Connection strings page of the Azure Cosmos DB Cluster resource is highlighted. On the Connection strings page, the copy to clipboard button to the right of the psql connection string is highlighted.](../media/cosmos-db-for-postgresql-connection-strings-psql.png)
+    ![Screenshot of the Connection strings page of the Azure Cosmos DB Cluster resource.](../media/cosmos-db-for-postgresql-connection-strings-psql.png)
 
 2. Paste the connection string into a text editor, such as Notepad.exe, and replace the `{your_password}` token with the password you assigned to the `citus` user when creating your cluster. Copy the updated connection string for use below.
 
 3. From the **Connection strings** page in the Azure portal, open an Azure Cloud Shell dialog by selecting the Cloud Shell icon on the toolbar in the Azure portal.
 
-    ![The Cloud Shell icon is highlighted on the Azure portal toolbar and a Cloud Shell dialog is open at the bottom of the browser window.](../media/azure-cloud-shell.png)
+    ![Screenshot showing the Cloud Shell icon on the Azure portal toolbar, and a Cloud Shell dialog open at the bottom of the browser window.](../media/azure-cloud-shell.png)
 
     The Cloud Shell opens as an embedded panel at the bottom of your browser window. Alternatively, you can open the [Azure Cloud Shell](https://shell.azure.com/) in a different web browser.
 
 4. If necessary, select **Bash** as the environment in the Cloud Shell window.
 
-    ![The welcome page of Azure Cloud Shell with a prompt to choose an environment between Bash or PowerShell is displayed. Bash is highlighted.](../media/azure-cloud-shell-welcome.png)
+    ![Screenshot of the welcome page of Azure Cloud Shell with a prompt to choose an environment between Bash or PowerShell. Bash is highlighted.](../media/azure-cloud-shell-welcome.png)
 
 5. If this is the first time you open the Cloud Shell, you may be prompted to mount a storage account. Select the subscription you used for your database account, then select **Create storage**.
 
-    ![The Azure Cloud Shell wizard showing no storage mounted is displayed. Azure Subscription (the current subscription) is showing in the Subscription dropdown.](../media/azure-cloud-shell-mount-storage.png)
+    ![Screenshot of the Azure Cloud Shell wizard showing no storage mounted. Azure Subscription (the current subscription) is showing in the Subscription dropdown.](../media/azure-cloud-shell-mount-storage.png)
 
 6. Now, use the `psql` command-line utility to connect to your database. Paste your updated connection string (the one containing your correct password) at the prompt in the Cloud Shell, and then run the command, which should look similar to the following:
 
