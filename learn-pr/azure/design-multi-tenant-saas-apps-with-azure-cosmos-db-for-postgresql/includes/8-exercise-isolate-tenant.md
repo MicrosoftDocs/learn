@@ -10,7 +10,7 @@ Now that you have completed migrating Tailspin Toys' database to a multi-node in
 
     ![On the Azure Cosmos DB for PostgreSQL Cluster Scale blade in the Azure portal, the 3 nodes is selected for the node count and the save button is highlighted.](../media/cosmos-db-postgresql-scale-3-nodes.png)
 
-    Once your new node has been successfully added, it'll be available in the system. However, no tenants are stored on it yet, and no queries will be run there. You'll use built-in functions to relocate Tailspin Toys' most active tenant to the new worker node below.
+    Once your new node has been successfully added, it will be available in the system. However, no tenants are stored on it yet, and no queries will be run there. You'll use built-in functions to relocate Tailspin Toys' most active tenant to the new worker node below.
 
 ## Connect to the database using psql in the Azure Cloud Shell
 

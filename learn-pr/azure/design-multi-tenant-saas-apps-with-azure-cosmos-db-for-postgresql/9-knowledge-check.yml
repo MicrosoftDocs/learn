@@ -27,7 +27,7 @@ durationInMinutes: 3
 content: |
 quiz:
   questions:
-  - content: "When preparing multi-tenant tables for migration from a single-node to a multi-node cluster, what classification is applied to tables that can be logically distributed by the chosen distribution column, but do not contain a column directly referencing it?"
+  - content: "When preparing multi-tenant tables for migration from a single-node to a multi-node cluster, what classification is applied to tables that can be logically distributed by the chosen distribution column, but don't contain a column directly referencing it?"
     choices:
     - content: "Ready for distribution"
       isCorrect: false
@@ -37,15 +37,15 @@ quiz:
       explanation: "Correct! Tables in this category require denormalization to add the selected distribution column, which must then be backfilled with the appropriate value."
     - content: "Reference table"
       isCorrect: false
-      explanation: "Try again. Reference tables are typically small, do not contain the distribution key, are commonly joined by distributed tables, and are shared across tenants."
+      explanation: "Try again. Reference tables are typically small, don't contain the distribution key, are commonly joined by distributed tables, and are shared across tenants."
     - content: "Local table"
       isCorrect: false
-      explanation: "Try again. Local tables are typically not joined to other tables and do not contain the distribution key."
+      explanation: "Try again. Local tables are typically not joined to other tables and don't contain the distribution key."
   - content: "Which distribution function is the safest to use for write-intensive tables when migrating a production multi-tenant database from a single-node to a multi-node cluster?"
     choices:
     - content: "concurrently_distribute_table()"
       isCorrect: false
-      explanation: "Try again. This function does not exist."
+      explanation: "Try again. This function doesn't exist."
     - content: "create_distributed_table()"
       isCorrect: false
       explanation: "Try again. This method results in table locking and can prevent writes against the table until the distribution process completes."
@@ -62,4 +62,4 @@ quiz:
       explanation: "Try again. The citus_dist_stat_activity view shows the distributed queries that are executing on all nodes."
     - content: "pg_stat_statements"
       isCorrect: false
-      explanation: "Try again. The pg_stat_statements view tracks queries issues against the database and provides query timing details, but it does not capture the tenant id associated with each query."
+      explanation: "Try again. The pg_stat_statements view tracks queries issues against the database and provides query timing details, but it doesn't capture the tenant ID associated with each query."

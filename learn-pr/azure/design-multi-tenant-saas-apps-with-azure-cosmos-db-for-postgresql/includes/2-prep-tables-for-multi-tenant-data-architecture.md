@@ -56,7 +56,7 @@ Tailspin Toys requested that you look for methods that minimize any operational 
 
 To fulfill Tailspin Toys' request to horizontally scale the database with _minimal disruption_, you've decided to take a more conservative approach and update the `line_items` table in small batches. To accomplish this, you'll use the `pg_cron` extension, which allows you to schedule a user-defined function to run on a recurring schedule until the table has been completely updated.
 
-You determine you can safely update one hundred thousand rows at a time without causing any noticeable database impact and define the update function as follows:
+You determine you can safely update 100,000 rows at a time without causing any noticeable database impact and define the update function as follows:
 
 ```sql
 CREATE OR REPLACE FUNCTION backfill_batch(batch_size bigint)
