@@ -11,7 +11,7 @@ To register for the program:
 > [!IMPORTANT]
 > To view the **Windows Insider Program** tab and to install the prerelease features it provides, you must have administrator rights to your computer.
 
-![Screenshot showing the Windows Insider Program "Get started" button](../media/insider-program-join.png)
+![Screenshot showing the Windows Insider Program "Get started" button.](../media/insider-program-join.png)
 
 If you've already registered for the Windows Insider Program, you still need to sign in to the registered Microsoft account to receive prerelease builds of Windows on a new computer.
 
