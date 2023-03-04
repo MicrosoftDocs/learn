@@ -12,7 +12,7 @@ To host a MySQL database in Azure, you can use either the Single Server or Flexi
 
 ## Commands for deploying a Flexible Server instance
 
-The steps in this Unit illustrate deploying a Flexible Server instance. You will actually execute these steps in the next Unit.
+The steps in this Unit illustrate deploying a Flexible Server instance. You'll actually execute these steps in the next Unit.
 
 To deploy a Flexible Server instance of Azure Database for MySQL, you first create a resource group. You then create the instance in the resource group. Finally, to access the instance, you configure a firewall rule.
 
@@ -34,7 +34,7 @@ The following steps outline the commands for those tasks:
 
 1. Create a Flexible Server instance of Azure Database for MySQL. 
 
-   `MYSQL_SERVER_NAME` must be unique within the resource group. The name can contain only lowercase letters, numbers, and the hyphen (-) character. Minimum 3 characters and maximum 63 characters. For simplicity you can usually just use the value of `MYSQL_RES_GRP_NAME`. `MYSQL_PASSWORD` is the password of the administrator. Minimum 8 characters and maximum 128 characters. Password must contain characters from three of the following categories: English uppercase letters, English lowercase letters, numbers, and non-alphanumeric characters. `PUBLIC_IP` is the public IP address of the host name from which you want to allow connections outside of Azure. This is used for testing of the database from your local host.
+   `MYSQL_SERVER_NAME` must be unique within the resource group. The name can contain only lowercase letters, numbers, and the hyphen (-) character. Minimum three characters and maximum 63 characters. For simplicity you can just use the value of `MYSQL_RES_GRP_NAME`. `MYSQL_PASSWORD` is the password of the administrator. Minimum eight characters and maximum 128 characters. Password must contain characters from three of the following categories: English uppercase letters, English lowercase letters, numbers, and non-alphanumeric characters. `PUBLIC_IP` is the public IP address of the host name from which you want to allow connections outside of Azure. This is used for testing of the database from your local host.
 
    ```azurecli
    az mysql flexible-server create \
@@ -62,4 +62,4 @@ The following steps outline the commands for those tasks:
 
 ## Unit summary
 
-You've been shown the basic commands to create an Azure Database for MySQL. In the next unit, you'll perform the steps to actually create and configure the databes for use in your Jakarta EE application.
+You've been shown the basic commands to create an Azure Database for MySQL. In the next unit, you'll perform the steps to actually create and configure the database for use in your Jakarta EE application.

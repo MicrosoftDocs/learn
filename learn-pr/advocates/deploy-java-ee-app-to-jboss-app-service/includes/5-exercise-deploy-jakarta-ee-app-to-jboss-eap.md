@@ -1,4 +1,4 @@
-In this exercise, you'll deploy a Java EE (Jakarta EE) application to JBoss EAP on Azure App Service. You'll use the Maven plug-in to configure the project, compile and deploy the application, and configure a data source.
+In this exercise, you deploy a Java EE (Jakarta EE) application to JBoss EAP on Azure App Service. You use the Maven plug-in to configure the project, compile and deploy the application, and configure a data source.
 
 ## Configure the app with the Maven Plugin for Azure App Service
 
@@ -130,7 +130,7 @@ After the command finishes, you can see that following entry is added in your Ma
 > Check the `<region>` element. If it's not the same installation location as MySQL, change it to the same location.
 
 After adding the above configuration for deploying to the Azure, add the following XML entries to deploy the startup file.  
-The resource `<type>startup</type>` will deploy the specified script as `startup.sh` (Linux) or `startup.cmd` (Windows) to `/home/site/scripts/`. We will configure the startup script in the following step.
+The resource `<type>startup</type>` deploys the specified script as `startup.sh` (Linux) or `startup.cmd` (Windows) to `/home/site/scripts/`. We configure the startup script in the following step.
 
 ```xml
               <!-- Please add following lines -->
@@ -164,7 +164,7 @@ Now, check the values for the resource group name and application name from the 
 <appName>jakartaee-app-on-jboss-1625038814881</appName>
 ```
 
-If you are using bash, configure the environment variables with the following command. These values will be used later.
+If you're using bash, configure the environment variables with the following command. These values are used later.
 
 ```bash
 export RESOURCEGROUP_NAME=jakartaee-app-on-jboss-1625038814881-rg
@@ -233,7 +233,7 @@ Note down the URL of the deployed application, particularly the following line i
 
 ## Configure a database connection
 
-The sample application will connect to your MySQL Database and display data.
+The sample application connects to your MySQL Database and display data.
 
 In the Maven project configuration in `pom.xml`, we specified the MySQL JDBC driver as follows:
 
@@ -260,7 +260,7 @@ To create a MySQL `DataSource` object in JBoss EAP, we created the following sta
 > [!NOTE]
 > In the script, we bind the MySQL DataSource by using a JBoss CLI command. The connection string, username, and password use the environment variables `MYSQL_CONNECTION_URL`, `MYSQL_USER`, and `MYSQL_PASSWORD`.
 
-The source of the script file is shown next.  This script file has already been uploaded to App Service, but it has not yet been configured to be invoked.
+The source of the script file is shown next.  This script file has already been uploaded to App Service, but it hasn't yet been configured to be invoked.
 
 ```shell
 #!/usr/bin/bash
@@ -461,4 +461,4 @@ $ curl https://${WEBAPP_NAME}.azurewebsites.net/countries/JPN | jq '.[].name'
 
 You've now validated the application REST endpoints and tested that your application can get data from your MySQL database.
 
-In the next unit, you learn one way exmaine the server logs.
+In the next unit, exmaine the server logs.
