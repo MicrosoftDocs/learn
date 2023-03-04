@@ -22,13 +22,17 @@ The following steps outline the commands for those tasks:
    az login
    ```
 
-1. Create an Azure resource group:
+1. Create an Azure resource group. 
+
+   `MYSQL_RES_GRP_NAME` must by unique within your subscription. `MYSQL_LOCATION` must be one of the values returned in the `Name` column when you run the command `az account list-locations --output table`.
 
    ```azurecli
    az group create --name $MYSQL_RES_GRP_NAME --location $MYSQL_LOCATION
    ```
 
-1. Create a Flexible Server instance of Azure Database for MySQL:
+1. Create a Flexible Server instance of Azure Database for MySQL. 
+
+   `MYSQL_SERVER_NAME` must be unique within the resource group. The name can contain only lowercase letters, numbers, and the hyphen (-) character. Minimum 3 characters and maximum 63 characters. For simplicity you can usually just use the value of `MYSQL_RES_GRP_NAME`. `MYSQL_PASSWORD` is the password of the administrator. Minimum 8 characters and maximum 128 characters. Password must contain characters from three of the following categories: English uppercase letters, English lowercase letters, numbers, and non-alphanumeric characters. `PUBLIC_IP` is the public IP address of the host name from which you want to allow connections outside of Azure. This is used for testing of the database from your local host.
 
    ```azurecli
    az mysql flexible-server create \

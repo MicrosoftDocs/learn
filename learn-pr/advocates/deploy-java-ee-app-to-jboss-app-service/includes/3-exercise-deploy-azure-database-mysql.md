@@ -51,7 +51,7 @@ After you clone the project, you'll see the following directories and files:
 
 ## Sign in to Azure
 
-Next, sign in to Azure:
+If you haven't already done so, sign in to Azure:
 
 ```azurecli
 az login
@@ -59,11 +59,14 @@ az login
 
 ## Set up a default installation location
 
-Specify the Azure datacenter region for your Flexible Server database instance. The following regions are available: `eastus2`, `westus2`, `brazilsouth`, `southeastasia`, `northeurope`, `australiaeast`, `japaneast`, `koreacentral`, `uksouth`, `westeurope`, `canadacentral`, `centralus`, and `eastus`.
+The commands executed by the script used in this module expect a `--location` option. You can specify a default value for this option with the following command.
 
 ```azurecli
 az configure --defaults location=japaneast
 ```
+
+Please use the same location as you used in the previous Unit.
+
 
 > [!NOTE]
 > We advise you to change to the same region for deploying your Java EE application.
