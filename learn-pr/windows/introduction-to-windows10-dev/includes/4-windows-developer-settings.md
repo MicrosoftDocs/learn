@@ -23,7 +23,7 @@ To enable Developer Mode or related settings:
 
 Here's the settings page on the desktop device family:
 
-![Screenshot showing the "For developers" page](../media/devmode-pc-options.png)
+![Screenshot showing the "For developers" page.](../media/devmode-pc-options.png)
 
 ## Developer Mode features
 
