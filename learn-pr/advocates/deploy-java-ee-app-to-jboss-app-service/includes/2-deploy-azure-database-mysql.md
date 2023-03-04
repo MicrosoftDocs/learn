@@ -12,6 +12,8 @@ To host a MySQL database in Azure, you can use either the Single Server or Flexi
 
 ## Commands for deploying a Flexible Server instance
 
+The steps in this Unit illustrate deploying a Flexible Server instance. You will actually execute these steps in the next Unit.
+
 To deploy a Flexible Server instance of Azure Database for MySQL, you first create a resource group. You then create the instance in the resource group. Finally, to access the instance, you configure a firewall rule.
 
 The following steps outline the commands for those tasks:
@@ -57,3 +59,7 @@ The following steps outline the commands for those tasks:
          --start-ip-address 0.0.0.0 \
          --end-ip-address 255.255.255.255
    ```
+
+## Unit summary
+
+You've been shown the basic commands to create an Azure Database for MySQL. In the next unit, you'll perform the steps to actually create and configure the databes for use in your Jakarta EE application.
