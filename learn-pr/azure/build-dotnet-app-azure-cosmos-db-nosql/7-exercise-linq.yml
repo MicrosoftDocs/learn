@@ -5,7 +5,7 @@ metadata:
   unitType: exercise
   title: Exercise - Enumerate items using language-integrated query (LINQ)
   description: |
-    Use the Microsoft.Azure.Cosmos .NET SDK library to build queries using the C# LINQ method syntax.
+    Use the Microsoft.Azure.Cosmos .NET SDK library from NuGet to build queries using the C# LINQ method syntax.
   sandbox: true
   interactive: bash-editor
   author: seesharprun

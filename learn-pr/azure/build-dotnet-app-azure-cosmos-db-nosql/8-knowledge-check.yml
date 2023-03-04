@@ -5,7 +5,7 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: |
-    Knowledge check
+    Check your knowledge on creating, managing, and querying items and resources in an Azure Cosmos DB for NoSQL account using the .NET SDK library from NuGet.
   author: seesharprun
   ms.author: sidandrews
   ms.topic: interactive-tutorial
