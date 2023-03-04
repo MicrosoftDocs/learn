@@ -29,5 +29,3 @@ Azure Event Grid orchestrates the solution. It receives images from cameras in t
 | Save successfully processed images for further training      | Event Grid: Event Grid is used to read an image from another Azure function marked as faulty or non-faulty with high confidence. Image is stored in queue for use in future training | Message queue | Cosmos DB                                |
 | Save images marked for review                                | Event Grid: Event Grid is used to read an image from another Azure function marked as faulty or non-faulty with low confidence. Image is stored in queue for manual review | Message Queue | Blob storage                             |
 | Process incoming images and extract products in them for fault detection | Event Grid: Event Grid is used to read an image from Blob Storage | Blob storage  | Computer Vision API and SendGrid (email) |
-
-
