@@ -3,7 +3,7 @@ uid: learn.wwl.design-business-continuity-solutions
 metadata:
   title: 'AZ-305: Design business continuity solutions'
   description: 'AZ-305: Design business continuity solutions'
-  ms.date: 12/08/2021
+  ms.date: 03/03/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -24,10 +24,10 @@ roles:
 products:
 - azure
 subjects:
-- devops
 - business-continuity
+- devops
 modules:
-- learn.wwl.design-for-high-availability
+- learn.wwl.describe-high-availability-disaster-recovery-strategies
 - learn.wwl.design-solution-for-backup-disaster-recovery
 trophy:
   uid: learn.wwl.design-business-continuity-solutions.trophy
