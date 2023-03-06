@@ -58,8 +58,7 @@ root@127.0.0.1's password:
 
 Documentation: https://aka.ms/appservice
 
-> [!NOTE]
-> No files or system changes outside of /home will persist beyond your application's current session. /home is your application's persistent storage and is shared across all the server instances.
+**NOTE**: No files or system changes outside of /home will persist beyond your application's current session. /home is your application's persistent storage and is shared across all the server instances.
 ```
 
 ## Run the JBoss CLI command
