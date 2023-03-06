@@ -41,8 +41,8 @@ Click **+ Code** to add a new cell, then add and run the following code:
 import qsharp
 import qsharp.azure  # Connect to your Azure Quantum workspace
 targets = qsharp.azure.connect(
-   resourceId="", # Fill in with the resourceID of your workspace
-   location="") # Fill in with the location of your workspace (for example "westus")
+   resourceId="<your resourceID>", # Fill in with the resourceID of your workspace
+   location="<your location>") # Fill in with the location of your workspace (for example "westus")
 
 qsharp.packages.add("Microsoft.Quantum.Numerics") #Import Microsoft.Quantum.Numerics package 
 qsharp.azure.target("microsoft.estimator") # Select the Azure Quantum Resource Estimator as target
@@ -78,6 +78,8 @@ operation EstimateMultiplication(bitwidth : Int) : Unit {
 
 In order to estimate an operation using the Azure Quantum Resource Estimator target, it must have a `Unit` return value. We can simply create a new instance for a specific bit width, for example 8 in this case.
 
+Click **+ Code** to add a new cell.
+
 ```python
 %%qsharp
 
@@ -90,6 +92,8 @@ operation EstimateMultiplication8() : Unit {
 
 Let's now estimate the physical resources for this operation using the default assumptions. We can submit the operation to the resource estimation target using the `qsharp.azure.execute` function. This will output a table with the overall physical resource counts. You can further inspect more details about the resource estimates by collapsing various groups, which have more information.
 
+Click **+ Code** to add a new cell.
+
 ```python
 
 result = qsharp.azure.execute(EstimateMultiplication8)
@@ -100,7 +104,7 @@ For example, if you collapse the *Logical qubit parameters* group, you can see t
 
 ## Customizing input parameters
 
-Let's rerun resource estimation for our running example on the Majorana-based qubit parameters `"qubit_maj_ns_e6"`.
+Let's rerun resource estimation for our running example on the Majorana-based qubit parameters `"qubit_maj_ns_e6"`. Click **+ Code** to add a new cell.
 
 ```python
 
@@ -113,10 +117,7 @@ result
 ```
 You can inspect the result and compare both qubit technologies. For example, notice that now the quantum error correction (QEC) code distance is 5, and the number of physical qubits has decreased from 173592 to 8160. Conversely, the runtime is 6 ms, compared to 3 ms using the previous approach. 
 
-
-
-We can update the error correction code too. Let's rerun the resource estimation job on the Majorana-based qubit parameters using Floquet code as the error correction scheme.
-
+We can update the error correction code too. Click **+ Code** to add a new cell and rerun the resource estimation job on the Majorana-based qubit parameters using Floquet code as the error correction scheme. 
 
 ```python
 result_maj_floquet = qsharp.azure.execute(EstimateMultiplication8,
@@ -132,9 +133,7 @@ result_maj_floquet
 ```
 Notice that now we need 26208 physical qubits, but the runtime is 0.547 ms. 	
 
-
-
-Finally, we can set the error budget to 10%. 
+Finally, we can set the error budget to 10%. Click **+ Code** to add a new cell. 
 
 ```python
 result_maj_floquet_e1 = qsharp.azure.execute(EstimateMultiplication8,
