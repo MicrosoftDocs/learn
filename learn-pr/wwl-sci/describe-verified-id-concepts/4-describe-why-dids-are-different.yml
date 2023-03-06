@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn-wwl.describe-verified-id-concepts.describe-why-dids-are-different
-title: Describe what makes DID’s different than other identifiers
+title: Describe what makes DIDs different than other identifiers
 metadata:
-  title: Describe what makes DID’s different than other identifiers
-  description: "Describe what makes DID’s different than other identifiers."
-  ms.date: 1/12/2023
+  title: Describe what makes DIDs different than other identifiers
+  description: "Describe what makes DIDs different than other identifiers."
+  ms.date: 03/06/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial

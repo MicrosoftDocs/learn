@@ -1,4 +1,4 @@
-In this module, you've learned about the current challenges with digital identities and how a decentralized identity model can address those challenges.  You also learned about a decentralized identifiiers (DIDs), a new type of identifier that enables a decentralized identity model where users and organizations can control how their identities or credentials are shared.
+In this module, you've learned about the current challenges with digital identities and how a decentralized identity model can address those challenges.  You also learned about a decentralized identifiers (DIDs), a new type of identifier that enables a decentralized identity model where users and organizations can control how their identities or credentials are shared.
 
 Now that you've completed, you should be able to:
 

@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check on DIDs and verifiable credentials."
-  ms.date: 1/12/2023
+  ms.date: 03/06/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -42,7 +42,7 @@ quiz:
     choices:
     - content: "Public keys and service endpoints"
       isCorrect: true
-      explanation: "Correct.  The DID' public keys and service endpoints are important pieces of information commonly contained in the DID document."
+      explanation: "Correct.  The public keys and service endpoints associated with a DID are important pieces of information commonly contained in the DID document."
     - content: "Private keys and service endpoints"
       isCorrect: false
       explanation: "Incorrect.  Private keys are never shared. A DID document will typically include public keys and service endpoints."
