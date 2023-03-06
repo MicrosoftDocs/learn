@@ -2,14 +2,14 @@
 uid: learn-wwl.describe-verified-id-concepts
 metadata:
   title: describe-verified-id-concepts
-  description: "Describe the core concepts behind Microsoft Entra Verified ID. Gain an understanding of decentralized identifiers and how they are used to issue and verify credentials."
+  description: "Describe the core concepts behind Microsoft Entra Verified ID. Gain an understanding of decentralized identifiers and how they're used to issue and verify credentials."
   ms.date: 1/12/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: describe-verified-id-concepts
-summary: "Gain an understanding of decentralized identifiers and how they are used to issue and verify credentials, in a way that delivers on the promise of a decentralized identity system where users control their identities."
+summary: "Gain an understanding of decentralized identifiers and how they're used to issue and verify credentials, in a way that delivers on the promise of a decentralized identity system where users control their identities."
 abstract: |
   By the end of this module, you'll be able to:
     - Describe the challenge with current digital identities and credentials.

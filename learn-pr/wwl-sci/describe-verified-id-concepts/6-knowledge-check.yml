@@ -34,11 +34,11 @@ quiz:
       explanation: "Correct. A DID is the first new identifier to meet all four of these properties: persistent, resolvable, cryptographically verifiable, and decentralized."
     - content: "Ephemeral, resolvable, verifiable through a certificate authority, and decentralized"
       isCorrect: false
-      explanation: "Incorrect.  While DIDs are resolvable, cryptographically verifiable, and decentralized, they are not ephemeral. DIDs are persistent."
+      explanation: "Incorrect.  While DIDs are resolvable, cryptographically verifiable, and decentralized, they aren't ephemeral. DIDs are persistent."
     - content: "Persistent, resolvable, cryptographically verifiable, and centralized"
       isCorrect: false
-      explanation: "Incorrect.  While DIDs are persistent, resolvable, and cryptographically verifiable, they are not centralized. A DID is decentralized."
-  - content: "What are two key pieces of information, that are typically included in a DID document?"
+      explanation: "Incorrect.  While DIDs are persistent, resolvable, and cryptographically verifiable, they aren't centralized. A DID is decentralized."
+  - content: "What are two key pieces of information that are typically included in a DID document?"
     choices:
     - content: "Public keys and service endpoints"
       isCorrect: true
@@ -48,7 +48,7 @@ quiz:
       explanation: "Incorrect.  Private keys are never shared. A DID document will typically include public keys and service endpoints."
     - content: "The root certificate authority and the public key"
       isCorrect: false
-      explanation: "Incorrect. DIDs do not use certificate authorities. A DID document will typically include public keys and service endpoints."
+      explanation: "Incorrect. DIDs don't use certificate authorities. A DID document will typically include public keys and service endpoints."
   - content: "Which of the following statements is true regarding verifiable credentials"
     choices:
     - content: "When a verifier validates the issuer's signature, the verifier can resolve the issuer's DID to obtain the public key, without having to contact the issuer directly."
@@ -56,7 +56,7 @@ quiz:
       explanation: ""
     - content: "The verifier must establish a direction connection with the issuer of the credential to verify the credential's validity."
       isCorrect: false
-      explanation: "Incorrect.  The verifier does not need to contact the issuer to validate the credential. The verifier can resolve the issuer's DID to obtain the public key, without having to contact the issuer directly."
+      explanation: "Incorrect.  The verifier doesn't need to contact the issuer to validate the credential. The verifier can resolve the issuer's DID to obtain the public key, without having to contact the issuer directly."
     - content: "The issuer of the verifiable credential presents the verifiable credential to the verifier."
       isCorrect: false
       explanation: "Incorrect. In a verifiable credential transaction, the holder of the credential (the user) controls the presentation of the credential to the verifier."
