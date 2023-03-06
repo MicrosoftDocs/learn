@@ -21,7 +21,7 @@ Create a new Notebook in your workspace as you did in the previous step.
 1. In **Kernel Type**, select **IPython**.
 1. Type a name for the file, for example *factoringResourceEstimator.ipynb*, and click **Create file**.
 
-First, we need to import several Python classes and functions from `azure.quantum` and `qiskit`. We aren't using Qiskit to build quantum circuits, however, we're using `AzureQuantumJob` and `job_monitor`, which are built on top of the Qiskit ecosystem.
+First, we need to import several Python classes and functions from `azure.quantum` and `qiskit`. We aren't using Qiskit to build quantum circuits, however, we're using `AzureQuantumJob` and `job_monitor`, which are built on top of the Qiskit ecosystem. Click **+ Code** to add a new cell. 
 
 ```python
 from azure.quantum.qiskit import AzureQuantumProvider
@@ -30,7 +30,7 @@ from azure.quantum.qiskit.job import AzureQuantumJob
 from qiskit.tools.monitor import job_monitor
 ```
 
-We connect to the Azure Quantum workspace.
+We connect to the Azure Quantum workspace. Click **+ Code** to add a new cell.  
 
 ```python
 provider = AzureQuantumProvider (
@@ -43,6 +43,7 @@ provider = AzureQuantumProvider (
 
 Let's implement a generic function that takes as input the Azure Quantum provider and the QIR bitcode of the quantum program. It returns as a result an Azure Quantum job. Resource Estimation input parameters can be passed via keyword arguments to the function. 
 
+For every code snippet in this example, click **+ Code** to add a new cell and copy the code. 
 
 ```python
 from azure.quantum.qiskit import AzureQuantumProvider
