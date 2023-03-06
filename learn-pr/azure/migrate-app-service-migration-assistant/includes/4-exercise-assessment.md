@@ -1,19 +1,19 @@
-Now that you've deployed the virtual machine that contains your web application to the sandbox environment, you'll use the Azure App Service Migration Assistant to perform an assessment and migration to Azure App Service.
+Now that you've deployed the virtual machine that contains your web application to the sandbox environment, you can use the Azure App Service Migration Assistant to perform an assessment and migration to Azure App Service.
 
 > [!Important]
 > This module assumes you've successfully completed the steps in unit 2 and have activated the sandbox and run the first setup script. If you haven't, go back and complete the unit titled "Exercise - Set up the environment" before continuing.
 
 ## Exercise steps
 
-In this exercise, you'll complete the setup steps, sign in to your Azure account, and work in a sandbox environment provisioned for you. You'll remotely connect to the VM that was set up for this exercise, and perform an assessment by using the Azure App Service Migration Assistant already installed on the VM.
+In this exercise, you'll complete the setup steps, sign in to your Azure account, and work in a sandbox environment provisioned for you. Connect remotely to the VM that was set up for this exercise, and perform an assessment by using the Azure App Service Migration Assistant already installed on the VM.
 
-1. Copy and paste the following script into Azure Cloud Shell on the right, and then run the script by pressing <kbd>Enter</kbd>.
+1. Copy and paste the following script into Azure Cloud Shell on the right, and run the script by pressing <kbd>Enter</kbd>.
 
     ```bash
     ./finish.sh
     ```
 
-    This script will wait for the previous script (from the second unit) to finish, so you might see the following message:
+    This script waits for the previous script (from the second unit) to finish, so you might see the following message:
 
     "Waiting for provisioning to complete ..."
 
@@ -39,9 +39,9 @@ In this exercise, you'll complete the setup steps, sign in to your Azure account
 
     The file webvm.rdp is downloaded to your local computer.
 
-6. Open the webvm.rdp file. You'll be prompted for the VM's security credentials in the **Windows Security** dialog box. Select **Use a different account**. Copy and paste the username and password from step 1 into the dialog box, and select **OK**.
+6. Open the webvm.rdp file. You are prompted for the VM's security credentials in the **Windows Security** dialog box. Select **Use a different account**. Copy and paste the username and password from step 1 into the dialog box, and select **OK**.
 
-   When the **Remote Desktop Connection** dialog box appears, and warns you about the remote computer's security certificate, select **Yes**. The remote desktop will open for the VM.
+   When the **Remote Desktop Connection** dialog box appears, and warns you about the remote computer's security certificate, select **Yes**. The remote desktop opens for the VM.
 
 7. On the remote desktop, open Internet Explorer, and go to `http://localhost`. Confirm that the Parts Unlimited website is successfully running. This site is hosted in IIS in the virtual machine, and connects to an Azure SQL database. Over the course of this exercise, you'll perform a migration assessment on this site and then migrate it to App Service.
 
@@ -53,10 +53,10 @@ In this exercise, you'll complete the setup steps, sign in to your Azure account
 
     ![Screenshot of the first page of the Migration Assistant with a callout highlighting the option next to Default Web Site.](../media/4-exercise-assessment-05.png)
 
-    Then, select **Next** at the bottom of the dialog box. This will begin the assessment of the site.
+    Then, select **Next** at the bottom of the dialog box. This begins the assessment of the site.
 
 10. After a moment, the assessment report step should finish. You should see that all 13 assessments were successful with no warnings or errors. 
 
-    You might take a moment to expand the chevron icon next to the label **Success (13)** to see the types of assessments that the Migration Assistant performed. We covered some of these in an earlier unit.
+    You might take a moment to expand the chevron icon next to the label **Success (13)** to see the types of assessments that the Migration Assistant performed. We covered some of these assessments in an earlier unit.
 
-You have successfully completed the exercise setup and the assessment of the website. Next, you'll learn about migration.
+You've successfully completed the exercise setup and the assessment of the website. Next, you'll learn about migration.
