@@ -2,7 +2,6 @@ In [Create your first Q# program by using the Quantum Development Kit](/training
 
 However, there are more ways to create secure passwords and conceal confidential information. Cryptography is the technique by using physical or mathematical means, such as using a computational difficulty of solving a particular task. A popular cryptographic protocol is the [Rivest–Shamir–Adleman (RSA) scheme](https://wikipedia.org/wiki/RSA_(cryptosystem)?azure-portal=true), which is based on the practical difficulty of factoring prime numbers by using a classical computer.
 
-
 One quantum algorithm with superquadratic speedup and for which the cost of error correction is well studied is Shor’s factoring algorithm. In [Explore the key concepts of quantum computing by using Q#](/training/modules/qsharp-explore-key-concepts-quantum-computing/8-introduction-quantum-algorithms/?azure-portal=true) module, you can find an overview of Shor's algorithm application in cryptography.
 
 Some of today’s classical cryptographic schemes that are based on assumptions of the difficulty of factoring large numbers. Estimating the resources required for Shor’s algorithm is important for assessing the vulnerability of such cryptographic schemes. 
@@ -21,7 +20,7 @@ Create a new Notebook in your workspace as you did in the previous step.
 1. In **Kernel Type**, select **IPython**.
 1. Type a name for the file, for example *factoringResourceEstimator.ipynb*, and click **Create file**.
 
-First, we need to import several Python classes and functions from `azure.quantum` and `qiskit`. We aren't using Qiskit to build quantum circuits, however, we're using `AzureQuantumJob` and `job_monitor`, which are built on top of the Qiskit ecosystem.
+First, we need to import several Python classes and functions from `azure.quantum` and `qiskit`. We aren't using Qiskit to build quantum circuits, however, we're using `AzureQuantumJob` and `job_monitor`, which are built on top of the Qiskit ecosystem. Click **+ Code** to add a new cell. 
 
 ```python
 from azure.quantum.qiskit import AzureQuantumProvider
@@ -30,7 +29,7 @@ from azure.quantum.qiskit.job import AzureQuantumJob
 from qiskit.tools.monitor import job_monitor
 ```
 
-We connect to the Azure Quantum workspace.
+We connect to the Azure Quantum workspace. Click **+ Code** to add a new cell.  
 
 ```python
 provider = AzureQuantumProvider (
@@ -43,6 +42,7 @@ provider = AzureQuantumProvider (
 
 Let's implement a generic function that takes as input the Azure Quantum provider and the QIR bitcode of the quantum program. It returns as a result an Azure Quantum job. Resource Estimation input parameters can be passed via keyword arguments to the function. 
 
+For every code snippet in this unit, click **+ Code** to add a new cell and copy the code. 
 
 ```python
 from azure.quantum.qiskit import AzureQuantumProvider

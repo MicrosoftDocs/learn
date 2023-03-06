@@ -1,4 +1,4 @@
-So far, you've taken repetitious expressions and put those expressions in functions. Your code now looks better and is easier to read. As you get more used to using functions, it's worth starting to look at some powerful patterns that exist in this space. By using these patterns, you'll get code that's easier to read and maintain.
+So far, you've taken repetitious expressions and put those expressions in functions. Your code now looks better and is easier to read. As you get more used to using functions, it's worth starting to look at some powerful patterns that exist in this space. By using these patterns, you get code that's easier to read and maintain.
 
 ## Declarative vs. imperative
 
@@ -12,7 +12,7 @@ FROM Students s
 WHERE s.Location = "Ohio" 
 ```
 
-What makes this code declarative is that you ask for _what_ you want, but you don't specify _how_ you want the problem solved. You leave the _how_ to SQL.
+What makes this code declarative is that you ask for *what* you want, but you don't specify *how* you want the problem solved. You leave the *how* to SQL.
 
 You can also apply this approach to F#. The following code uses a declarative approach:
 
@@ -26,7 +26,7 @@ In the preceding code, you operate on data and ask for what you want without bei
 
 ## Functional patterns
 
-There are some useful patterns in F# that you can use to take on a more _functional_ approach. We'll cover the following patterns:
+There are some useful patterns in F# that you can use to take on a more *functional* approach. We'll cover the following patterns:
 
 - **Composition**: A composition combines multiple functions together into one function.
 - **Pipeline**: A pipeline starts with a value and then sequentially calls multiple functions by using the output from one function as the input for the next function.
