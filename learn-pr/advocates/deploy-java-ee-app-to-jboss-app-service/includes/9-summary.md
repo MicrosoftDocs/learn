@@ -9,7 +9,7 @@ az group delete --name <name of your MySQL resource>
 az group delete --name <name of your JBoss EAP on Azure App Service resource>
 ```
 
-Clear out any defaults configured with `az configure` that you no longer want to keep as defaults. For example, the default location configured in a previous unit.
+Clear out any defaults configured with `az configure` that you no longer want to keep as defaults - for example, the default location configured in a previous unit.
 
 ```azurecli
 az configure --defaults location=''

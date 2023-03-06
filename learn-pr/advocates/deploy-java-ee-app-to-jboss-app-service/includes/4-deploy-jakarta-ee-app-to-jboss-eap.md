@@ -1,4 +1,4 @@
-The steps in this Unit illustrate how to deploy your Java EE application to JBoss EAP on Azure App Service, and how to connect to the database. You will actually execute these steps in the next Unit.
+The steps in this unit illustrate how to deploy your Java EE application to JBoss EAP on Azure App Service, and how to connect to the database. You will actually execute these steps in the next unit.
 
 ## Create a Java EE (Jakarta EE) application
 
@@ -28,7 +28,7 @@ Microsoft provides the Maven Plugin for Azure App Service to deploy your Java we
 |  `runtime` `javaVersion` | Java virtual machine version for the web container (Java 8)|
 |  `runtime` `webContainer` | Web container (JBoss EAP 7)|
 
-In this module, you'll deploy an application to the JBoss EAP environment. Select `Java 8` for the Java version and `Jbosseap 7.4` for the runtime web container.
+In this module, you deploy an application to the JBoss EAP environment. Select `Java 8` for the Java version and `Jbosseap 7.4` for the runtime web container.
 
 ## Build the WAR package
 

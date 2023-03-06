@@ -65,7 +65,7 @@ The commands executed by the script used in this module expect a `--location` op
 az configure --defaults location=<desired location>
 ```
 
-Please use the same location as indicated in creating the resource group in the previous Unit.
+Use the same location that you used when creating the resource group in the previous unit.
 
 > [!NOTE]
 > We advise you to change to the same region for deploying your Java EE application.
@@ -285,4 +285,4 @@ Now you can view the contents of the `world` database.
 ## Unit summary
 
 You've now completed the setup and preparation for your MySQL Server.
-In the next unit, you'll see the steps to deploy the Java EE (Jakarta EE) application to JBoss EAP on Azure App Service and configure it.
+In the next unit, you see the steps to deploy the Java EE (Jakarta EE) application to JBoss EAP on Azure App Service and configure it.

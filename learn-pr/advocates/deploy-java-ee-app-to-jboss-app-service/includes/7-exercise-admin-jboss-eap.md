@@ -40,7 +40,7 @@ ssh root@127.0.0.1 -L 9990:localhost:9990 -p $PORT_NUMBER
 > [!TIP]
 > If you want to access to the JBoss EAP admin web console, specify the `-L 9990:localhost:9990` option. Then access `http://localhost:9990/console` for the JBoss web console. If you don't need to sign in to the JBoss web console, you can remove the "-L" option.
 
-You see following messages when you sign in to the server.
+You see the following messages when you sign in to the server.
 
 ```bash
 The authenticity of host '[127.0.0.1]:59445 ([127.0.0.1]:59445)' can't be established.
@@ -58,7 +58,8 @@ root@127.0.0.1's password:
 
 Documentation: https://aka.ms/appservice
 
-**NOTE**: No files or system changes outside of /home will persist beyond your application's current session. /home is your application's persistent storage and is shared across all the server instances.
+> [!NOTE]
+> No files or system changes outside of /home will persist beyond your application's current session. /home is your application's persistent storage and is shared across all the server instances.
 ```
 
 ## Run the JBoss CLI command
@@ -124,7 +125,6 @@ Exit from the JBoss EAP CLI.
 ```bash
 exit
 ```
-
 
 ## Access the JBoss EAP admin web console
 

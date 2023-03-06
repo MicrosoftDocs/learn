@@ -164,7 +164,7 @@ Now, check the values for the resource group name and application name from the 
 <appName>jakartaee-app-on-jboss-1625038814881</appName>
 ```
 
-If you're using bash, configure the environment variables with the following command. These values are used later.
+If you're using Bash, configure the environment variables with the following command. These values are used later.
 
 ```bash
 export RESOURCEGROUP_NAME=jakartaee-app-on-jboss-1625038814881-rg
