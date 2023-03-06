@@ -41,15 +41,15 @@ Click **+ Code** to add a new cell, then add and run the following code:
 import qsharp
 import qsharp.azure  # Connect to your Azure Quantum workspace
 targets = qsharp.azure.connect(
-   resourceId="", # The resourceID of your workspace
-   location="") # The location of your workspace (for example "westus")
+   resourceId="", # Fill in with the resourceID of your workspace
+   location="") # Fill in with the location of your workspace (for example "westus")
 
 qsharp.packages.add("Microsoft.Quantum.Numerics") #Import Microsoft.Quantum.Numerics package 
 qsharp.azure.target("microsoft.estimator") # Select the Azure Quantum Resource Estimator as target
 ```
 
 > [!NOTE]
-> The location and resource ID of your workspcae can be found in the **Overview** tab of your Azure Quantum workspace. 
+> The location and resource ID of your workspace can be found in the **Overview** tab of your Azure Quantum workspace. 
 >  :::image type="content" source="../media/azure-quantum-resource-id.png" alt-text="Screenshot of the overview blade of a workspace in Azure portal. Location and resource ID are marked inside a red rectangle.":::
 
 As we said, as a running example you're creating a multiplier using the [MultiplyI](/qsharp/api/qsharp/microsoft.quantum.arithmetic.multiplyi) operation. You can configure the size of the multiplier with a bit width parameter. The operation has two input registers with that bit width, `factor1` and `factor2`, and one output register with the size of twice the bit width, `product`.
