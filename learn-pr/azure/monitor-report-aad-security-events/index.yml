@@ -2,14 +2,14 @@
 uid: learn.monitor-report-aad-security-events
 metadata:
   title: Monitor and report on security events in Azure Active Directory
-  description: Keep tabs on security events in your Azure Active Directory resources by using built-in reporting and monitoring capabilities. Respond to events as they happen, and address security risks before they become a problem.
-  ms.date: 04/22/2022
+  description: Monitor Azure Active Directory security events with built-in reporting and monitoring capabilities to prevent unauthorized access and potential data loss.
+  ms.date: 03/01/2023
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Monitor and report on security events in Azure Active Directory
-summary: Keep tabs on security events in your Azure Active Directory resources by using built-in reporting and monitoring capabilities. Respond to events as they happen, and address security risks before they become a problem.
+summary: Monitor Azure Active Directory security events with built-in reporting and monitoring capabilities to prevent unauthorized access and potential data loss.
 abstract: | 
   In this module, you will:
   - Store Azure audit logs and sign-in activity logs in a Log Analytics workspace.

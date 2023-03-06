@@ -1,6 +1,7 @@
 
 
-In this exercise, you'll review the Starter project code and then begin updating the application. Your first code update task will be creating the arrays to hold student exam scores. With the assignment scores now available in arrays, you'll begin working on a `foreach` loop that can be used to sum student grades. The detailed tasks that you'll complete during this exercise are:
+
+In this exercise, you'll review the Starter project code and then begin updating the application. Your first coding task will be creating the arrays that hold student exam scores. Once your application data is available in arrays, you'll begin working on a `foreach` loop that can be used to sum student grades. The detailed tasks that you'll complete during this exercise are:
 
 1. Code review: review the contents of the Program.cs file.
 
@@ -68,7 +69,7 @@ In this task, you'll review the code that's provided as a Starter project for th
 
     Next, you see a comment line followed by a list of variables that are used to hold the scores of graded assignments for each student. Your first variable, `currentAssignments` is used to hold the number of exams that have been scored.
 
-    This appears to be a great opportunity to use arrays!
+    The assignment score variables represent a great opportunity to use arrays!
 
 1. Scroll down and review the two groups of variable declaration code lines.
 
@@ -90,7 +91,7 @@ In this task, you'll review the code that's provided as a Starter project for th
 
     Notice that you were using a unique variable for each student. This may provide another opportunity to slim down the number of code lines in your updated application.
 
-    It looks like the starter code begins working on the score calculations next.
+    It looks like the starter code begins score calculations next.
 
 1. Scroll down a bit further and take a minute to review the following code:
 
@@ -123,9 +124,9 @@ In this task, you'll review the code that's provided as a Starter project for th
     Console.ReadLine();
     ```
 
-    This section prints your formatted output in accordance with the teacher's guidelines. The first line is a header line with column titles, followed by the names and scores for each student.
+    This section prints the formatted output in accordance with the teacher's guidelines. The first line is a header line with column titles, followed by the names and scores for each student.
 
-    The Console.ReadLine() statement will pause the application so that the application user can review the output.
+    The `Console.ReadLine()` statement will pause the application so that the application user can review the output.
 
 1. In the Visual Studio Code EXPLORER panel, right-click **Starter**, and then select **Open in Integrated Terminal**.
 
@@ -154,6 +155,9 @@ In this task, you'll review the code that's provided as a Starter project for th
 
     The `dotnet run` command will instruct the compiler to build your application and then, as long as there were no build errors, it will run your compiled code.
 
+    > [!IMPORTANT]
+    > The Starter project targets version 7.0 of the .NET Framework. If you don't have .NET 7 installed, the `dotnet run` command will generate an error. You can either install the .NET 7 SDK (recommended), or you can change the target framework in the Starter.csproj file to align with the version of .NET that you chave installed in your environment.
+
 1. Verify that your application produced the following output:
 
     ```Output
@@ -180,7 +184,7 @@ It's time to get started on your updates!
 
 In this task, you'll replace the variables that hold the individual scores with arrays that hold the graded assignment scores for each student.
 
-1. In the Visual Studio Code Editor panel, scroll to the top of the Program.cs file.
+1. In the Visual Studio Code Editor, scroll to the top of the Program.cs file.
 
 1. Create a blank code line below the line used to declare the `currentAssignments` variable.
 
@@ -190,7 +194,7 @@ In this task, you'll replace the variables that hold the individual scores with 
     int[] sophiaScores = new int[5];
     ```
 
-    Notice that this code uses the `new` operator to specify that you're creating a new instance of an array. The first set of square brackets `[]` tells the compiler that `sophiaScores` will be an integer array, while the second set is used to specify the number of elements in the array.
+    Notice that this code uses the `new` operator to specify that you're creating a new instance of an array. The set of square brackets in `int[]` tells the compiler that `sophiaScores` will be an integer array, while the set of square brackets in `int[5]` is used to specify the number of elements in the array.
 
     You may recall that you have the option to assign array values as part of the declaration.
 

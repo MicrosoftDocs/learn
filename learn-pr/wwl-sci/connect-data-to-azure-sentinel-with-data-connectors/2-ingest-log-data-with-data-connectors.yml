@@ -6,7 +6,7 @@ metadata:
   description: "Ingest log data with data connectors"
   ms.date: 06/21/2022
   author: wwlpublish
-  ms.author: bneeb
+  ms.author: kelawson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
