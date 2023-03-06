@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.build-dotnet-app-azure-cosmos-db-nosql.exercise-create-app
+title: Exercise - Create .NET app and reference SDK
+metadata:
+  unitType: exercise
+  title: Exercise - Create .NET app and reference SDK
+  description: |
+    Create a new .NET console application and add a package reference to the Microsoft.Azure.Cosmos .NET SDK library from NuGet.
+  sandbox: true
+  interactive: bash-editor
+  author: seesharprun
+  ms.author: sidandrews
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.date: 3/1/2023
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-exercise-create-app.md)]
