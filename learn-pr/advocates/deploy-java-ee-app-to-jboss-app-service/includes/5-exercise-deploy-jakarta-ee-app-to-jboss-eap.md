@@ -461,4 +461,4 @@ $ curl https://${WEBAPP_NAME}.azurewebsites.net/countries/JPN | jq '.[].name'
 
 You've now validated the application REST endpoints and tested that your application can get data from your MySQL database.
 
-In the next unit, exmaine the server logs.
+In the next unit, examine the server logs.

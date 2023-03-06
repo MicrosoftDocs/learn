@@ -26,7 +26,7 @@ You get the following information from the command result:
 |  `username`  |  `root`  |
 |  `password`  |  `Docker!`  |
 
-Take note of the password and the port number. You need the both in the next section.
+Take note of the password and the port number. These two values are used in the next section.
 
 ## Sign in by using SSH and the TCP tunnel
 
