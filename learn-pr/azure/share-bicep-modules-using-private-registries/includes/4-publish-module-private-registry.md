@@ -10,28 +10,28 @@ Here's an example path for a module in a private Azure container registry:
 
 The path contains four segments:
 
-- **Scheme**: Bicep supports several module types, which are called *schemes*. When you work with Bicep registries, the scheme is `br`.
-- **Registry**: This is the name of the registry that contains the module you want to use. In the preceding example, the registry name is `toycompany.azurecr.io`, which is the name of the container registry.
-- **Module identifier**: This is the full path to the module within the registry.
+- **Scheme**: Bicep supports several module types, which are called _schemes_. When you work with Bicep registries, the scheme is `br`.
+- **Registry**: The name of the registry that contains the module you want to use. In the preceding example, the registry name is `toycompany.azurecr.io`, which is the name of the container registry.
+- **Module identifier**: The full path to the module within the registry.
 - **Tag**: Tags typically represent versions of modules, because a single module can have multiple versions published. You'll learn more about tags and versions shortly.
 
-When you publish your own module identifier, use a meaningful identifier that indicates the purpose of the module. You can optionally use *namespaces*, where you use slashes (`/`) to distinguish between parts of a name. However, Azure Container Registry and Bicep don't understand a hierarchy. They treat the module identifier as a single value.
+When you publish your own module identifier, use a meaningful identifier that indicates the purpose of the module. You can optionally use _namespaces_, where you use slashes (`/`) to distinguish between parts of a name. However, Azure Container Registry and Bicep don't understand a hierarchy. They treat the module identifier as a single value.
 
 ## Tags and versions
 
-A tag represents the version of a module. A single module in a registry can have multiple versions. All of the versions share a module identifier, but they have different tags. When you use a module, you need to use a tag to specify the version that you want to use, so that Bicep knows which module file to retrieve. 
+A tag represents the version of a module. A single module in a registry can have multiple versions. All of the versions share a module identifier, but they have different tags. When you use a module, you need to use a tag to specify the version that you want to use, so that Bicep knows which module file to retrieve.
 
-It's a good idea to carefully plan how you'll version your modules. Two key decisions that you need to make are the *versioning scheme* and the *versioning policy* to use.
+It's a good idea to carefully plan how you'll version your modules. Two key decisions that you need to make are the _versioning scheme_ and the _versioning policy_ to use.
 
 ### Versioning schemes
 
 Your versioning scheme determines how you generate version numbers. Common versioning schemes include:
 
-- *Basic integers* can be used as version numbers. For example, your first version might be called `1`, your second version `2`, and so forth. Or, you might add a prefix to each version number, such as `v1` and `v2`.
-- *Dates* also make good version numbers. For example, if you publish the first version of your module on January 16, 2022, you might name the version `2022-01-16` (using *yyyy-mm-dd* format). When you publish another version on March 3, you could name it `2022-03-03`.
-- *Semantic versioning* is a versioning system often used in software, where a single version number contains multiple parts. Each part signals different information about the nature of the change.
+- _Basic integers_ can be used as version numbers. For example, your first version might be called `1`, your second version `2`, and so forth. Or, you might add a prefix to each version number, such as `v1` and `v2`.
+- _Dates_ also make good version numbers. For example, if you publish the first version of your module on January 16, 2022, you might name the version `2022-01-16` (using _yyyy-mm-dd_ format). When you publish another version on March 3, you could name it `2022-03-03`.
+- _Semantic versioning_ is a versioning system often used in software, where a single version number contains multiple parts. Each part signals different information about the nature of the change.
 
-Although you can use any versioning scheme you like, it's a good idea to choose something that will be sorted into a meaningful order. That's why numbers and dates are often good choices.
+Although you can use any versioning scheme you like, it's a good idea to choose something that can be sorted into a meaningful order. Numbers and dates are often good choices.
 
 > [!NOTE]
 > Azure Container Registry stores the date that each tag is created. Even if you don't use date-based versioning, you can still see this information.
@@ -53,7 +53,7 @@ Here's a versioning policy that often works well:
 
 ## Publish your module
 
-When you create a Bicep module that you want to share, you author the Bicep file as normal. You then *publish* the file to a registry by using the `bicep publish` command. When you publish, you need to specify the module path to save the module to:
+When you create a Bicep module that you want to share, you author the Bicep file as normal. You then _publish_ the file to a registry by using the `bicep publish` command. When you publish, you need to specify the module path to save the module to:
 
 ::: zone pivot="cli"
 

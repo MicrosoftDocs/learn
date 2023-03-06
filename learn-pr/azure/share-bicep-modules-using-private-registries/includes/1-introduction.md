@@ -1,4 +1,4 @@
-Bicep modules enable you to create composable, reusable files that define a set of related resources. You then use those modules in your deployment templates. 
+Bicep modules enable you to create composable, reusable files that define a set of related resources. You then use those modules in your deployment templates.
 
 When you work with Bicep code in your own organization, you often create reusable modules that your colleagues would benefit from. These modules can create resources in a way that fits your organization's requirements. For example, the modules can use your defined naming conventions and configure your resources so that they meet your security requirements. Private Bicep registries provide an easy way for you to share these modules within your organization.
 
@@ -19,16 +19,3 @@ In this module, you'll learn about private registries for sharing modules. You'l
 ## What is the main goal?
 
 By the end of this module, you'll be able to create private registries, publish modules to them, and consume modules from them.
-
-## Prerequisites
-
-You should be familiar with using:
-
-- Bicep, including how to use modules and parameters, and how to deploy Bicep files to Azure.
-- Azure, including the Azure portal, subscriptions, resource groups, and resources.
-
-To work through the exercises, you also need the following items installed locally:
-
-- [Visual Studio Code](https://code.visualstudio.com?azure-portal=true).
-- The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep&azure-portal=true).
-- The latest [Azure CLI](/cli/azure/install-azure-cli) tools *or* the latest [Azure PowerShell](/powershell/azure/install-az-ps) version.

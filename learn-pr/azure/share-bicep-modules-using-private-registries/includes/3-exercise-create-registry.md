@@ -1,12 +1,13 @@
 [!INCLUDE [Sandbox explanation](../../includes/azure-template-exercise-sandbox-subscription.md)]
 
-Before you can publish the Bicep modules for the CDN and website, you need to create a registry for your organization. You'll publish the shared modules to the registry. Other teams can then create deployments that include the shared modules. 
+Before you can publish the Bicep modules for the CDN and website, you need to create a registry for your organization. You'll publish the shared modules to the registry. Other teams can then create deployments that include the shared modules.
 
 In this exercise, you will:
 
 > [!div class="checklist"]
-> * Deploy a new private registry for your toy company to use.
-> * Connect to your registry to verify that it was created successfully.
+>
+> - Deploy a new private registry for your toy company to use.
+> - Connect to your registry to verify that it was created successfully.
 
 ::: zone pivot="cli"
 
@@ -38,7 +39,7 @@ Here, you create a new registry to store and share your Bicep modules. You'll us
 
 ::: zone pivot="cli"
 
-1. Decide on a unique name for your container registry. The name can't be used by any other Azure customers. Choose one that's 5 to 50 characters in length and that contains letters and numbers. You'll use it in subsequent steps.
+1. Decide on a unique name for your container registry. The name must be globally unique across Azure. Choose one that's 5 to 50 characters in length and that contains letters and numbers. You'll use it in subsequent steps.
 
 1. Create a container registry by running this command in the Visual Studio Code terminal. Replace the `YOUR_CONTAINER_REGISTRY_NAME` placeholder with the name that you selected in the preceding step.
 
