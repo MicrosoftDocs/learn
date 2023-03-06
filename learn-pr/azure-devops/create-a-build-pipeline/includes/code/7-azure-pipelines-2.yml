@@ -2,9 +2,7 @@ trigger:
 - '*'
 
 pool:
-  vmImage: 'ubuntu-20.04'
-  demands:
-  - npm
+  vmImage: 'ubuntu-22.04'
 
 variables:
   buildConfiguration: 'Release'

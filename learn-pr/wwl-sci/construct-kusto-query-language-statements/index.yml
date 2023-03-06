@@ -3,7 +3,7 @@ uid: learn.wwl.construct-kql-statements
 metadata:
   title: Construct KQL statements for Microsoft Sentinel
   description: "Construct KQL statements for Microsoft Sentinel"
-  ms.date: 12/15/2022
+  ms.date: 02/23/2023
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
@@ -24,7 +24,9 @@ roles:
 - security-operations-analyst
 products:
 - azure
-- azure-sentinel
+- azure-data-explorer
+- azure-log-analytics
+- microsoft-sentinel
 subjects:
 - threat-protection
 units:

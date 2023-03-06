@@ -24,6 +24,8 @@ roles:
 products:
 - azure
 - microsoft-sentinel
+subjects:
+  - automation
 units:
 - learn.wwl.automation-microsoft-sentinel.introduction
 - learn.wwl.automation-microsoft-sentinel.understand-automation-options

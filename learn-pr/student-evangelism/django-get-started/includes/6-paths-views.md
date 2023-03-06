@@ -11,7 +11,7 @@ In a web application, user requests are made by:
 - Selecting a link.
 - Tapping a button.
 
-A route tells Django if the user makes a request for a particular URL, or path, what function to execute.
+A route tells Django what function to execute if the user makes a request for a particular URL, or path.
 
 A URL like `https://adventure-works.com/about` might execute a function called **about**. The URL `https://adventure-works.com/login` might execute a function called **authenticate**.
 

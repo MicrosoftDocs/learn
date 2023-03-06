@@ -116,7 +116,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
 1. Select **Settings** for the repository.
 
-1. Select **Secrets** > **New repository secret** and enter the following items:
+1. Select **Secrets and variables** > **Actions**, and then **New repository secret**. Enter the following items:
     1. *Name*: **AZURE_SQL_CONNECTION_STRING**
     1. *Value*: **Connection string from prior step**
 

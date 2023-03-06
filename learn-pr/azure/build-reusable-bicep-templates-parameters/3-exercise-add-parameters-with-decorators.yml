@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.build-reusable-bicep-templates-parameters.exercise-add-parameters-with-decorators  
+uid: learn.azure.build-reusable-bicep-templates-parameters.exercise-add-parameters-with-decorators
 title: Exercise - Add parameters and decorators
 sandbox: true
 metadata:
-  unitType: exercise  
+  unitType: exercise
   title: Exercise - Add parameters and decorators
   description: Learn about parameters and types and how to apply decorators to document and restrict the values of your parameters.
-  ms.date: 10/29/2021
+  ms.date: 01/03/2023
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial

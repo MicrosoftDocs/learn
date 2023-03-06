@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-convert-cast.solution
+title: 'Review a solution for combining string array values as strings and as integers challenge '
+metadata:
+  title: Review a solution for combining string array values as strings and as integers challenge
+  description: "Review a solution for combining string array values as strings and as integers challenge"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-solution.md)]

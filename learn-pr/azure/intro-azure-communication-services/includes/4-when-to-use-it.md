@@ -45,21 +45,11 @@ If your business/application/idea intends to use languages or devices/browsers t
 
 ### Geographic region
 
-Some features of Azure Communication Services are only available in certain countries, regions, or locations. Additionally, certain countries, regions, or locations may have restrictions on features. These restrictions (or gaps) in Azure Communication Services' support across the world can be caused by legal or regulatory matters, or by Azure Communication Services simply not supporting a region yet. When considering if Azure Communication Services is right for you, ensure that you factor this into your current business, as well as any potential expansion of your business.
+Some features of Azure Communication Services are only available in certain countries/regions or locations. Additionally, certain countries/regions or locations may have restrictions on features. These restrictions (or gaps) in Azure Communication Services' support across the world can be caused by legal or regulatory matters, or by Azure Communication Services simply not supporting a region yet. When considering if Azure Communication Services is right for you, ensure that you factor this into your current business, as well as any potential expansion of your business.
 
 Of particular mention in this area are telephony and SMS features. As telephone networks in different countries/regions vary in terms of structure and regulatory/legal matters, it's very important to ensure that Azure Communication Services supports your target location. Additionally, your billing location also affects this. For example, to make calls or send SMS messages to a UK number, you'll need a billing address in the UK.
 
-SMS and Telephony are currently only available in the following locations:
-
-* UK
-* USA
-* Ireland
-* Denmark
-* Canada
-* Italy
-* Sweden
-
-You can read additional information about regional differences in offerings of Azure Communication Services features in the [Azure Communication Services documentation](/azure/communication-services/).
+SMS and Telephony are available in number of locations. You can find all the supported regions, number types and available capabilities in the [Azure Communication Services documentation](https://aka.ms/CountryAvailability)
 
 ### Suitability
 

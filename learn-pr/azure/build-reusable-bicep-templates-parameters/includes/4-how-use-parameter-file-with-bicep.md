@@ -1,6 +1,6 @@
 In the previous units, you provided the parameter values on the command line when you created a deployment. This approach works well when you're writing and testing your Bicep files, but it doesn't work well when you have many parameters or when you need to automate your deployments. In this unit, you'll learn about different ways that parameter values can be specified.
 
-[!include[Note - don't run commands](../../../includes/dont-run-commands.md)]
+[!INCLUDE [Note - don't run commands](../../../includes/dont-run-commands.md)]
 
 ## Create parameter files
 
@@ -43,7 +43,7 @@ Let's look at each part of the parameter file in more detail:
 - `contentVersion` is a property that you can use to keep track of significant changes in your parameter file if you want. Usually, it's set to its default value of `1.0.0.0`.
 - The `parameters` section lists each parameter and the value you want to use. The parameter value must be specified as an object. The object has a property called `value` that defines the actual parameter value to use.
 
-Generally, you'll create a parameter file for each environment. It's a good practice to include the environment name in the name of the parameter file. For example, you might have a parameter file named *main.parameters.dev.json* for your development environment and one named *main.parameters.production.json* for your production environment.
+Generally, you'll create a parameter file for each environment. It's a good practice to include the environment name in the name of the parameter file. For example, you might have a parameter file named _main.parameters.dev.json_ for your development environment and one named _main.parameters.production.json_ for your production environment.
 
 > [!NOTE]
 > Make sure you only specify values for parameters that exist in your Bicep template. When you create a deployment, Azure checks your parameters and gives you an error if you've tried to specify a value for a parameter that isn't in the Bicep file.

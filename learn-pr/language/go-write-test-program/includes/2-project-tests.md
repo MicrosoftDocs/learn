@@ -74,7 +74,8 @@ When you run the `go test -v` command, you should see a failing test in the outp
 
 ```output
 # github.com/msft/bank [github.com/msft/bank.test]
-./bank_test.go:6:13: undefined: Account
+.\bank_test.go:6:13: undefined: Account
+.\bank_test.go:7:13: undefined: Customer
 FAIL    github.com/msft/bank [build failed]
 ```
 

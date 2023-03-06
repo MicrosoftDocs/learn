@@ -3,14 +3,14 @@ uid: learn.wwl.configure-network-routing-endpoints.determine-service-endpoint-se
 title: Determine service endpoint services
 metadata:
   title: Determine service endpoint services
-  description: "Determine service endpoint services"
-  ms.date: 11/15/2022
+  description: "Determine Azure services that can work with service endpoints."
+  ms.date: 01/26/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 2
 content: |
   [!include[](includes/5-determine-service-endpoint-services.md)]

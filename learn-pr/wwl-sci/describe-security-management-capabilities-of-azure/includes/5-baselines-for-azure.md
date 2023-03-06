@@ -1,3 +1,5 @@
+
+
 > [!NOTE]
 > Microsoft cloud security benchmark is the successor of Azure Security Benchmark (ASB), which was rebranded in October 2022. It is currently in public preview.
 

@@ -49,8 +49,8 @@ Go has support for the slice operator `s[i:p]`, where:
 - `s` represents the array.
 - `i` represents the pointer to the first element of the underlying array (or another slice) to add to the new slice. The variable `i` corresponds to the element at index location `i` in the array, `array[i]`. Remember this element isn't necessarily the underlying array's first element, `array[0]`. 
 - `p` represents the number of elements in the underlying array to use when creating the new slice. The variable `p` corresponds to the last element in the underlying array that can be used in the new slice. The element at position `p` in the underlying array is found at the location `array[i+1]`. Notice that this element isn't necessarily the underlying array's last element, `array[len(array)-1]`.
- 
-As you can see, a slice can refer only to a subset of elements.
+
+As you can see, a slice could refer to only a subset of elements.
 
 Let's say that you want four variables to represent each quarter of the year, and you have a slice of `months` with 12 elements. The following image illustrates how to slice `months` into four new `quarter` slices:
 
@@ -110,7 +110,7 @@ When you run the preceding code, you get the following output:
 [April May June July] 4 9
 ```
 
-Notice that when you declare the `quarter2Extended` variable, you don't have to specify the initial position (`[:4]`). When you do that, Go assumes that you want the first position of the slice. You can do the same for the last position (`[1:]`). Go will assume that you want to reference all the elements up to the latest position of a slice (`len()-1`).
+Notice that when you declare the `quarter2Extended` variable, you don't have to specify the initial position (`[:4]`). When you do that, Go assumes that you want the first position of the slice. You can do the same for the last position (`[1:]`). Go will assume that you want to reference all the elements up to the last position of a slice (`len()-1`).
 
 ## Append items
 
@@ -183,7 +183,7 @@ func main() {
 When you run the preceding code, you get the following output:
 
 ```output
-Before [A B C D E]
+Before [A B C D E] Remove  C
 After [A B D E]
 ```
 

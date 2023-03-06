@@ -1,8 +1,8 @@
-You can define function types and then use them in your functions. This is useful if you want to apply the same function type signature to more than one function.
+You can define function types and then use them when creating your functions. This design is useful if you want to apply the same function type signature to more than one function.
 
-You can define a function type using a type alias or an interface. Both approaches work essentially the same so it's up to you to decide which is best. An interface is a better if you want to have the option of extending the function type. A type alias is better if you want to use unions or tuples.
+You can define a function type using a type alias or an interface. Both approaches work essentially the same so it's up to you to decide which is best. An interface is better if you want to have the option of extending the function type. A type alias is better if you want to use unions or tuples.
 
-Let's assume that you are creating a function that performs an add operation or a subtract operation depending on the value of a parameter that is passed to it. Both the add and subtract operations accept two numbers, `x` and `y`, and return the result as a number.
+Let's create a function that performs an add operation or a subtract operation depending on the value of a parameter that is passed to it. Both the add and subtract operations accept two numbers, `x` and `y`, and return the result as a number.
 
 1. Open the [Playground](https://www.typescriptlang.org/play?azure-portal=true) and remove any existing code.
 1. Define a function type called `calculator` using a type alias. The type signature has a parameter list `(x: number, y: number)` and returns a `number`, separated by an arrow (`=>`) operator. (Notice that the syntax of the type signature is the same as an arrow function.)
@@ -45,9 +45,9 @@ Let's assume that you are creating a function that performs an add operation or 
 
 ## Function type inference
 
-When defining a function, the names of the function parameters do not need to match those in the function type. While you are required to name the parameters in the type signature in both places, the names are ignored when checking if two function types are compatible.
+When you define a function, the names of the function parameters don't need to match the names in the function type. While you're required to name the parameters in the type signature in both places, the names are ignored when checking if two function types are compatible.
 
-You can also leave off the parameter types and return type because TypeScript will infer these from the function type.
+You can also leave off the parameter types and return type because TypeScript will infer these types from the function type definition.
 
 As far as TypeScript is concerned, these three statements are identical.
 

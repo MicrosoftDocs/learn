@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Interactive questions that validate whether the learner achieved the learning objectives.
-  ms.date: 01/27/2022
+  ms.date: 04/19/2022
   author: timlt
   ms.author: timlt
   ms.reviewer: liydu
@@ -15,58 +15,58 @@ durationInMinutes: 3
 content: |
 quiz:
   questions:
-  - content: "How many threads will leave suspension when the specified event flags are satisfied?"
-    choices:
-    - content: "2"
-      isCorrect: false
-      explanation: "Incorrect. 2 isn't the number of threads that will leave suspension when the specified event flags are satisfied."
-    - content: "32"
-      isCorrect: false
-      explanation: "Incorrect. 32 isn't the number of threads that will leave suspension when the specified event flags are satisfied."
-    - content: "All suspended threads that satisfy the specified event flags will leave suspension."
-      isCorrect: true
-      explanation: "Correct! All suspended threads that satisfy specified event flags leave suspension."
-  - content: "At what point in time is an event flags group initialized to zero?"
-    choices:
-    - content: "When the event flags group is created."
-      isCorrect: true
-      explanation: "Correct! An event flags group is initialized to zero when the event flags group is created."
-    - content: "When the first get operation occurs."
-      isCorrect: false
-      explanation: "Incorrect. An event flags group isn't initialized to zero when the first get operation occurs."
-    - content: "When the event flags group is satisfied."
-      isCorrect: false
-      explanation: "Incorrect. An event flags group isn't initialized to zero when the event flags group is satisfied."
-  - content: "Which of the following ThreadX service calls will always succeed?"
-    choices:
-    - content: "tx_event_flags_set(&my_flags, 0x101, TX_OR);"
-      isCorrect: true
-      explanation: "Correct! The service call tx_event_flags_set(&my_flags, 0x101, TX_OR); will always succeed."
-    - content: "tx_event_flags_get(&my_flags, 0x110, TX_OR, &actual_TX_WAIT_FOREVER);"
-      isCorrect: false
-      explanation: "Incorrect. This isn't a ThreadX service call that will always succeed."
-    - content: "tx_event_flags_get(&my_flags, 0x110, TX_AND_CLEAR, &actual_TX_WAIT_FOREVER);"
-      isCorrect: false
-      explanation: "Incorrect. This isn't a ThreadX service call that will always succeed."
-  - content: "Suppose that the event flags group contains 0x111. What will be the result of this valid service call: tx_event_flags_set(&my_flags, 0x101, TX_AND);"
-    choices:
-    - content: "The new value of the event flags group is 0x111."
-      isCorrect: false
-      explanation: "Incorrect. The new value of the event flags group won't be 0x111 as a result of this service call."
-    - content: "The new value of the event flags group is 0x101."
-      isCorrect: true
-      explanation: "Correct! The new value of the event flags group is 0x101."
-    - content: "The new value of the event flags group is 0x010."
-      isCorrect: false
-      explanation: "Incorrect. The new value of the event flags group won't be 0x010 as a result of this service call."
-  - content: "Suppose that the event flags group contains 0x101. What will be the result of this valid service call: tx_event_flags_get(&my_flags, 0x101, TX_OR_CLEAR, &actual, TX_WAIT_FOREVER);"
-    choices:
-    - content: "The specified flags are satisfied and the new value of the event flags group is 0x101."
-      isCorrect: false
-      explanation: "Incorrect. The new value of the event flags group won't be 0x101 as a result of this service call."
-    - content: "The specified flags are satisfied and the new value of the event flags group is 0x100"
-      isCorrect: false
-      explanation: "Incorrect. The new value of the event flags group won't be 0x100 as a result of this service call."
-    - content: "The specified flags are satisfied and the new value of the event flags group is 0x000."
-      isCorrect: true
-      explanation: "Correct! The specified flags are satisfied and the new value of the event flags group is 0x000."
+    - content: 'How many threads will leave suspension when the specified event flags are satisfied?'
+      choices:
+        - content: '2'
+          isCorrect: false
+          explanation: "Incorrect. 2 isn't the number of threads that will leave suspension when the specified event flags are satisfied."
+        - content: '32'
+          isCorrect: false
+          explanation: "Incorrect. 32 isn't the number of threads that will leave suspension when the specified event flags are satisfied."
+        - content: 'All suspended threads that satisfy the specified event flags will leave suspension.'
+          isCorrect: true
+          explanation: 'Correct! All suspended threads that satisfy specified event flags leave suspension.'
+    - content: 'At what point in time is an event flags group initialized to zero?'
+      choices:
+        - content: 'When the event flags group is created.'
+          isCorrect: true
+          explanation: 'Correct! An event flags group is initialized to zero when the event flags group is created.'
+        - content: 'When the first get operation occurs.'
+          isCorrect: false
+          explanation: "Incorrect. An event flags group isn't initialized to zero when the first get operation occurs."
+        - content: 'When the event flags group is satisfied.'
+          isCorrect: false
+          explanation: "Incorrect. An event flags group isn't initialized to zero when the event flags group is satisfied."
+    - content: 'Which of the following ThreadX service calls will always succeed?'
+      choices:
+        - content: 'tx_event_flags_set(&my_flags, 0x101, TX_OR);'
+          isCorrect: true
+          explanation: 'Correct! The service call tx_event_flags_set(&my_flags, 0x101, TX_OR); will always succeed.'
+        - content: 'tx_event_flags_get(&my_flags, 0x110, TX_OR, &actual_TX_WAIT_FOREVER);'
+          isCorrect: false
+          explanation: "Incorrect. This isn't a ThreadX service call that will always succeed."
+        - content: 'tx_event_flags_get(&my_flags, 0x110, TX_AND_CLEAR, &actual_TX_WAIT_FOREVER);'
+          isCorrect: false
+          explanation: "Incorrect. This isn't a ThreadX service call that will always succeed."
+    - content: 'Suppose that the event flags group contains 0x111. What will be the result of this valid service call: tx_event_flags_set(&my_flags, 0x101, TX_AND);'
+      choices:
+        - content: 'The new value of the event flags group is 0x111.'
+          isCorrect: false
+          explanation: "Incorrect. The new value of the event flags group won't be 0x111 as a result of this service call."
+        - content: 'The new value of the event flags group is 0x101.'
+          isCorrect: true
+          explanation: 'Correct! The new value of the event flags group is 0x101.'
+        - content: 'The new value of the event flags group is 0x010.'
+          isCorrect: false
+          explanation: "Incorrect. The new value of the event flags group won't be 0x010 as a result of this service call."
+    - content: 'Suppose that the event flags group contains 0x101. What will be the result of this valid service call: tx_event_flags_get(&my_flags, 0x101, TX_OR_CLEAR, &actual, TX_WAIT_FOREVER);'
+      choices:
+        - content: 'The specified flags are satisfied and the new value of the event flags group is 0x101.'
+          isCorrect: false
+          explanation: "Incorrect. The new value of the event flags group won't be 0x101 as a result of this service call."
+        - content: 'The specified flags are satisfied and the new value of the event flags group is 0x100'
+          isCorrect: false
+          explanation: "Incorrect. The new value of the event flags group won't be 0x100 as a result of this service call."
+        - content: 'The specified flags are satisfied and the new value of the event flags group is 0x000.'
+          isCorrect: true
+          explanation: 'Correct! The specified flags are satisfied and the new value of the event flags group is 0x000.'

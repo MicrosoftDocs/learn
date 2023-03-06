@@ -2,7 +2,7 @@ In this unit, you'll create a form in the *RazorPagesPizza* project using Razor 
 
 ## Create a page
 
-The *RazorPagesPizza* project directory is currently open in the Visual Studio Code. Run the following .NET CLI command in the terminal:
+With the *RazorPagesPizza* project directory open in Visual Studio Code, run the following .NET CLI command in the terminal:
 
 ```dotnetcli
 dotnet new page --name Pizza --namespace RazorPagesPizza.Pages --output Pages
@@ -15,7 +15,7 @@ The preceding command:
   * *Pizza.cshtml.cs*&mdash;The accompanying `PageModel` class
 * Stores both files in the project's *Pages* directory.
 
-Note that there's nothing magical about using the CLI to create these files. You can also create the files manually; the CLI command is just a shortcut for doing so.
+There's nothing magical about using the CLI to create these files. You can also create the files manually; the CLI command is just a shortcut for doing so.
 
 ## Examine the Razor page's structure
 
@@ -49,7 +49,7 @@ A Razor page supports Razor syntax, which is HTML and C# combined. The C# code d
 
 Before you start to implement the form to manage pizzas, you need to have a data store that you can perform operations on.
 
-A *model* class is needed to represent a pizza in inventory. The model contains properties that represent the characteristics of a pizza. The model is used to pass data in the web app and to persist pizza options in the data store. In this unit, that data store will be a simple local in-memory caching service. In a real-world application, you would consider using a database, such as SQL Server, with Entity Framework Core.
+A *model* class is needed to represent a pizza in inventory. The model contains properties that represent the characteristics of a pizza. The model is used to pass data in the web app and to persist pizza options in the data store. In this unit, that data store will be a local in-memory caching service. In a real-world application, you would consider using a database, such as SQL Server, with Entity Framework Core.
 
 ## Create a pizza model
 
@@ -61,7 +61,7 @@ A *model* class is needed to represent a pizza in inventory. The model contains 
 
     Select the `Models` folder in the file explorer and add a new File called `Pizza.cs`.
 
-    The project root now contains a *Models* directory with an empty *Pizza.cs* file. The directory name *Models* is a convention.
+    The project root now contains a *Models* directory with an empty *Pizza.cs* file. The *Models* directory name is a convention.
 
 1. Add the following code to *Models/Pizza.cs* to define a pizza. Save your changes.
 
@@ -110,8 +110,8 @@ A *model* class is needed to represent a pizza in inventory. The model contains 
         {
             Pizzas = new List<Pizza>
                     {
-                        new Pizza { Id = 1, Name = "Classic Italian", Price=20.00M, Size=PizzaSize.    Large, IsGlutenFree = false },
-                        new Pizza { Id = 2, Name = "Veggie", Price=15.00M, Size=PizzaSize.Small,     IsGlutenFree = true }
+                        new Pizza { Id = 1, Name = "Classic Italian", Price=20.00M, Size=PizzaSize.Large, IsGlutenFree = false },
+                        new Pizza { Id = 2, Name = "Veggie", Price=15.00M, Size=PizzaSize.Small, IsGlutenFree = true }
                     };
         }
 
@@ -211,7 +211,7 @@ The *Pizza* Razor page uses HTML and Razor to support a product creation form. T
 
 ## Review Razor Tag Helpers
 
-Tag Helpers address the inefficiencies of context switching between HTML and C#. Most of ASP.NET Core's built-in Tag Helpers extend standard HTML elements. Tag Helpers provide additional server-side attributes for HTML elements, making the elements more robust.
+Tag Helpers address the inefficiencies of context switching between HTML and C#. Most of ASP.NET Core's built-in Tag Helpers extend standard HTML elements. Tag Helpers provide extra server-side attributes for HTML elements, making the elements more robust.
 
 There are four Tag Helpers on this page:
 
@@ -260,7 +260,7 @@ The Input Tag Helper:
 * Adds an `id` and `name` HTML attribute based on that property.
 * Sets the input type appropriately. For example, if the specified property type is `bool`, an input type of `checkbox` is used in the generated HTML. In this case, the `NewPizza.Name` property type is `string`. The `NewPizza.Name` property is set by the model's data annotation attributes, which will be reviewed later in this module.
 * Provides client-side validation using jQuery, based on the model's data annotation attributes provided through the `PageModel`.
-* Prompts the Razor engine to provide additional, more robust server-side validation, if client-side validation was successful. The *Pizza* Razor page's HTTP POST event lifecycle, which includes client-side and server-side input validation, is walked through later in this module.
+* Prompts the Razor engine to provide more robust server-side validation, if client-side validation was successful. The *Pizza* Razor page's HTTP POST event lifecycle, which includes client-side and server-side input validation, is walked through later in this module.
 
 The following HTML output is generated from the Input Tag Helper located in the *Pizza* page:
 
@@ -286,4 +286,4 @@ The following HTML is rendered by the Validation Summary Tag Helper:
 
 The `type`, `data-val-range-min`, `data-val-range-max`, and error response are dynamically set by the model's data annotations for the model's `Product.Price` property.
 
-The product creation Razor page has been created. In order to process form interactions, you'll need to modify the `PageModel` class to handle the form's HTTP POST request. Let's explore `PageModel` interactions next.
+In this unit, you built most of the product creation Razor page, but it's not done yet. In order to process form interactions, you'll need to modify the `PageModel` class to handle the form's HTTP POST request. Let's explore `PageModel` interactions next.

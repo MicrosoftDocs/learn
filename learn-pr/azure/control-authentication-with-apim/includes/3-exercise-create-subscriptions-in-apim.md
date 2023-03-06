@@ -58,7 +58,7 @@ The next step in this exercise is to create an API gateway in the Azure portal. 
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. On the Azure resource menu, or from the **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
+1. On the Azure resource menu or from the **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
 1. In the *Search services and marketplace* search bar, enter **API Management**, and press <kbd>Enter</kbd>. The **API Management** pane appears.
 
@@ -72,7 +72,7 @@ The next step in this exercise is to create an API gateway in the Azure portal. 
     | Subscription | Concierge Subscription (default)|
     | Resource group | From the dropdown list, select **<rgn>[sandbox resource group name]</rgn>**. |
     | **Instance details** |
-    | Region | Select from one of the following: North Central US, West US, West Europe, North Europe, Southeast Asia, and Australia East. The Consumption tier used in this exercise is only available in these regions. |
+    | Region | Select from one of the following regions: North Central US, West US, West Europe, North Europe, Southeast Asia, and Australia East. The Consumption tier used in this exercise is only available in these regions. |
     | Resource name | Enter `apim-WeatherData<random number>`; the random number is to ensure that the name is globally unique. Make a note of this resource name; it will be the API gateway name that you'll need it later in this exercise. |
     | Organization name | Enter `Weather-Company`. |
     | Administrator email | Enter your own email address. |
@@ -135,7 +135,7 @@ The final step is to add a subscription key for the Weather Data API.
 
 The API is secured with a key. Now, we'll test the API without and with the key to demonstrate secure access.
 
-1. To make a request without passing a subscription key, in Azure Cloud Shell (to the right), run the following cURL command, substituting the *[Name Of Gateway]* placeholder with the resource name for the API gateway (apim-WeatherDataNNNN) that you created in the previous task.
+1. Make a request without passing a subscription key. In Azure Cloud Shell, run the following cURL command. Substitute the *[Name Of Gateway]* placeholder with the resource name for the API gateway (apim-WeatherDataNNNN) that you created in the previous task.
 
    ```bash
    curl -X GET https://[Name Of Gateway].azure-api.net/api/Weather/53/-1
@@ -147,7 +147,7 @@ The API is secured with a key. Now, we'll test the API without and with the key 
    { "statusCode": 401, "message": "Access denied due to missing subscription key. Make sure to include subscription key when making requests to an API." }
    ```
 
-1. Now, run the following command, substituting the *Name Of Gateway* placeholder with the resource name for the API gateway (apim-WeatherDataNNNN), and substituting the *Primary Key* placeholder with the primary key you copied from the show/hide step.
+1. Now, run the following command. Substitute the *Name Of Gateway* placeholder with the resource name for the API gateway (apim-WeatherDataNNNN). Also, substitute the *Primary Key* placeholder with the primary key you copied from the show/hide step.
 
    ```Azure Cloud Shell
    curl -X GET https://[Name Of Gateway].azure-api.net/api/Weather/53/-1 \

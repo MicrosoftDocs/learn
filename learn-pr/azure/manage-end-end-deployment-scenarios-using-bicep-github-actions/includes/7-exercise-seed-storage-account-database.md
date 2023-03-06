@@ -126,11 +126,11 @@ You need to securely store your Azure SQL logical server's administrator passwor
 
 1. In the _deploy-test_ definition, define a value for the `sqlServerAdministratorLogin` input, and propagate the value for the `sqlServerAdministratorLoginPassword` secret:
 
-   :::code language="yaml" source="code/7-workflow.yml" range="20-34" highlight="9, 15" :::
+   :::code language="yaml" source="code/7-workflow.yml" range="24-38" highlight="9, 15" :::
 
 1. Repeat the process in the _deploy-production_ definition, with the production environment's values:
 
-   :::code language="yaml" source="code/7-workflow.yml" range="36-53" highlight="12, 18" :::
+   :::code language="yaml" source="code/7-workflow.yml" range="40-57" highlight="12, 18" :::
 
 1. Save your changes to the file.
 
@@ -142,19 +142,19 @@ The Bicep file now has two new mandatory parameters: `sqlServerAdministratorLogi
 
 1. Update the _validate_ job's _Run preflight validation_ step to add the new parameters:
 
-   :::code language="yaml" source="code/7-deploy.yml" range="34-58" highlight="23-24" :::
+   :::code language="yaml" source="code/7-deploy.yml" range="30-54" highlight="23-24" :::
 
 1. Update the _Run what-if_ step to add the new parameters:
 
-   :::code language="yaml" source="code/7-deploy.yml" range="59-72" highlight="12-13" :::
+   :::code language="yaml" source="code/7-deploy.yml" range="55-68" highlight="12-13" :::
 
 1. Update the _deploy_ job's _Deploy Bicep file_ step to add the new parameters:
 
-   :::code language="yaml" source="code/7-deploy.yml" range="74-80, 85-106" highlight="28-29" :::
+   :::code language="yaml" source="code/7-deploy.yml" range="70-76, 81-102" highlight="28-29" :::
 
 1. In the _deploy_ job's definition, add new outputs for the Bicep file's outputs:
 
-   :::code language="yaml" source="code/7-deploy.yml" range="74-84" highlight="8-11" :::
+   :::code language="yaml" source="code/7-deploy.yml" range="70-80" highlight="8-11" :::
 
 ## Add database and data seed jobs
 
@@ -162,17 +162,17 @@ In this section, you define the steps that are required to deploy the database c
 
 1. Below the _deploy-website_ job, add a new job to deploy the DACPAC file:
 
-   :::code language="yaml" source="code/7-deploy.yml" range="126-143" :::
+   :::code language="yaml" source="code/7-deploy.yml" range="122-139" :::
 
 1. Below the job you just added, and above the _smoke-test_ job, define a new job to seed the database with sample data.
 
-   :::code language="yaml" source="code/7-deploy.yml" range="145-165" :::
+   :::code language="yaml" source="code/7-deploy.yml" range="141-161" :::
 
    Notice that the _Add test data to database_ step has a condition applied to it. That is, it runs only for non-production environments. The condition is applied to the step, not to the whole job, so that later jobs can depend on this job regardless of the environment type.
 
 1. Below the job you just added, and above the _smoke-test_ job, define another job to upload some sample toy images to the blob container by using Azure CLI:
 
-   :::code language="yaml" source="code/7-deploy.yml" range="167-187" :::
+   :::code language="yaml" source="code/7-deploy.yml" range="163-183" :::
 
    Notice that this job uses an Ubuntu runner, because the `azure/cli` action requires Linux to run. But the `build-database` job you defined earlier uses a Windows runner to build the database project. This workflow is a good example of using various operating systems to achieve your requirements.
 
@@ -180,7 +180,7 @@ In this section, you define the steps that are required to deploy the database c
 
 1. Update the _smoke-test_ job's dependencies to ensure it runs after all of the deployment steps are completed:
 
-   :::code language="yaml" source="code/7-deploy.yml" range="189-207" highlight="3-8" :::
+   :::code language="yaml" source="code/7-deploy.yml" range="185-203" highlight="3-8" :::
 
 1. Save your changes to the file.
 
@@ -194,7 +194,7 @@ In this section, you define the steps that are required to deploy the database c
 
 1. Verify that your _deploy.yml_ file looks like this:
 
-   :::code language="yaml" source="code/7-deploy.yml" highlight="15-17, 27-28, 56-57, 70-71, 81-84, 105-106, 126-187, 191-196" :::
+   :::code language="yaml" source="code/7-deploy.yml" highlight="15-17, 27-28, 52-53, 66-67, 77-80, 101-102, 122-183, 187-192" :::
 
    If it doesn't, update it to match the file contents.
 

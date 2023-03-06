@@ -4,7 +4,7 @@ title: Design and implement Azure VPN Gateway
 metadata:
   title: Design and implement Azure VPN Gateway
   description: "Design and implement Azure VPN Gateway"
-  ms.date: 11/09/2022
+  ms.date: 01/05/2023
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
@@ -35,7 +35,7 @@ quiz:
       explanation: "Correct, Every Azure VPN gateway consists of two instances in an active-standby configuration."
     - content: "Active-active"
       isCorrect: false
-      explanation: "Incorrect, You can create an Azure VPN gateway in an active-active configuration, but this is not the default."
+      explanation: "Incorrect, You can create an Azure VPN gateway in an active-active configuration, but this configuration isn't the default."
     - content: "Dual-redundancy"
       isCorrect: false
-      explanation: "Incorrect, This is the most reliable option, combining the active-active gateways on both your network and Azure, but it is not the default."
+      explanation: "Incorrect, This is the most reliable option, combining the active-active gateways on both your network and Azure, but it isn't the default."

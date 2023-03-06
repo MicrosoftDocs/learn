@@ -3,7 +3,7 @@ uid: learn.language.go-concurrency
 metadata:
   title: Learn how concurrency works in Go
   description: Understand more about concurrency, one of the most unique features in Go.
-  ms.date: 06/17/2021
+  ms.date: 01/23/2023
   author: danmabee
   ms.author: chnoring
   ms.topic: interactive-tutorial

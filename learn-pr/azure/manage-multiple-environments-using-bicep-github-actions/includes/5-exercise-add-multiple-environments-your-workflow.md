@@ -1,20 +1,21 @@
 Now you're ready to update your workflow to deploy to both your test and production environments. In this unit, you'll update your workflow to use called workflows so that you can reuse the jobs across the environments.
 
-During the process, you'll: 
+During the process, you'll:
 
 > [!div class="checklist"]
-> * Add a reusable workflow for the lint job.
-> * Add a reusable workflow that defines the jobs required to deploy to any environment.
-> * Update your workflow to use the called workflows.
-> * Run your workflow and view the results.
+>
+> - Add a reusable workflow for the lint job.
+> - Add a reusable workflow that defines the jobs required to deploy to any environment.
+> - Update your workflow to use the called workflows.
+> - Run your workflow and view the results.
 
 ## Add a reusable workflow for the lint job
 
 The lint job happens only once during the workflow run, regardless of how many environments the workflow deploys to. So, you don't really need to use a called workflow for the lint job. But to keep your main workflow definition file simple and easy to read, you decide to define the lint job in a separate workflow file.
 
-1. In Visual Studio Code, create a new file in the *.github/workflows* folder named *lint.yml*.
+1. In Visual Studio Code, create a new file in the _.github/workflows_ folder named _lint.yml_.
 
-   :::image type="content" source="../media/5-visual-studio-code-lint-yml-file.png" alt-text="Screenshot of Visual Studio Code Explorer, with the dot github and workflows folders and the lint dot Y M L file.":::
+   :::image type="content" source="../media/5-visual-studio-code-lint-yml-file.png" alt-text="Screenshot of Visual Studio Code Explorer, with the dot github and workflows folders and the lint dot YML file.":::
 
 1. Paste the following workflow definition into the file:
 
@@ -22,21 +23,21 @@ The lint job happens only once during the workflow run, regardless of how many e
 
    The lint job is the same as the lint job already in the workflow, but now it's in a separate workflow file.
 
-1. Close the file and save your changes.
+1. Save your changes and close the file.
 
 ## Add a reusable workflow for deployment
 
 Create a reusable workflow that defines all of the jobs required to deploy each of your environments. You'll use inputs and secrets to specify the settings that might differ between environments.
 
-1. Create a new file in the *.github/workflows* folder named *deploy.yml*.
+1. Create a new file in the _.github/workflows_ folder named _deploy.yml_.
 
-   :::image type="content" source="../media/5-visual-studio-code-deploy-yml-file.png" alt-text="Screenshot of Visual Studio Code Explorer, with the dot github and workflows folders and the deploy dot Y M L file.":::
+   :::image type="content" source="../media/5-visual-studio-code-deploy-yml-file.png" alt-text="Screenshot of Visual Studio Code Explorer, with the dot github and workflows folders and the deploy dot YML file.":::
 
-   This file will represent all of the deployment activities that run for each of your environments.
+   This file represents all of the deployment activities that run for each of your environments.
 
-1. Paste the following workflow name, trigger, permissions, inputs, and secrets into the file:
+1. Paste the following workflow name, trigger, inputs, and secrets into the file:
 
-   :::code language="yaml" source="code/5-deploy.yml" range="1-22" :::
+   :::code language="yaml" source="code/5-deploy.yml" range="1-18" :::
 
    > [!NOTE]
    > When you start to work with your YAML file in Visual Studio Code, you might see some red squiggly lines telling you there's a problem. This is because the Visual Studio Code extension for YAML files sometimes incorrectly guesses the file's schema.
@@ -47,9 +48,9 @@ Create a reusable workflow that defines all of the jobs required to deploy each 
    > # yaml-language-server: $schema=./deploy.yml
    > ```
 
-1. Below the permissions, paste the definition of the validation job:
+1. Below the secrets, paste the definition of the validation job:
 
-   :::code language="yaml" source="code/5-deploy.yml" range="24-54" :::
+   :::code language="yaml" source="code/5-deploy.yml" range="20-50" :::
 
    Notice that a condition is applied to the jobs. The preflight validation runs only for non-production environments. The what-if operation runs only for the production environment. In the previous module in the learning path, you used separate jobs for these operations, but here you combine them to simplify the workflow.
 
@@ -58,13 +59,13 @@ Create a reusable workflow that defines all of the jobs required to deploy each 
 
 1. Below the validation job, paste the definition of the deploy job:
 
-   :::code language="yaml" source="code/5-deploy.yml" range="56-79" :::
+   :::code language="yaml" source="code/5-deploy.yml" range="52-75" :::
 
 1. Below the deploy job, paste the definition of the smoke test job:
 
-   :::code language="yaml" source="code/5-deploy.yml" range="81-94" :::
+   :::code language="yaml" source="code/5-deploy.yml" range="77-90" :::
 
-1. Verify that your *deploy.yml* file now looks like the following example:
+1. Verify that your _deploy.yml_ file now looks like the following example:
 
    :::code language="yaml" source="code/5-deploy.yml" :::
 
@@ -72,29 +73,27 @@ Create a reusable workflow that defines all of the jobs required to deploy each 
 
 ## Update the workflow definition to use the templates
 
-1. Open the *workflow.yml* file in the *.github/workflows* folder.
-
-1. Remove the `permissions` section. Your *deploy.yml* file declares the permissions your workflow needs now.
+1. Open the _workflow.yml_ file in the _.github/workflows_ folder.
 
 1. Remove the contents of the `env:` section, including the two environment variables. You'll replace these with environment-specific variables soon.
 
-1. Remove the contents of the `lint:` job definition and replace it with the following code to use the *lint.yml* file you created earlier:
+1. Remove the contents of the `lint:` job definition and replace it with the following code to use the _lint.yml_ file you created earlier:
 
-   :::code language="yaml" source="code/5-workflow.yml" range="10-14" highlight="5" :::
+   :::code language="yaml" source="code/5-workflow.yml" range="14-18" highlight="5" :::
 
-1. Delete everything in the file below the lint job that you just updated.
+1. Delete everything in the file below the lint job that you updated.
 
 1. At the bottom of the file, add the following code to deploy to the test environment:
 
-   :::code language="yaml" source="code/5-workflow.yml" range="16-26" :::
+   :::code language="yaml" source="code/5-workflow.yml" range="20-30" :::
 
 1. Below the code you just added, add the following code to deploy to the production environment:
 
-   :::code language="yaml" source="code/5-workflow.yml" range="28-38" :::
+   :::code language="yaml" source="code/5-workflow.yml" range="32-42" :::
 
-   Now, the workflow runs the lint job once. Then it uses the *deploy.yml* called workflow twice: once per environment. This keeps the workflow definition clear and easy to understand. Also, the comments help explain what's happening.
+   Now, the workflow runs the lint job once. Then it uses the _deploy.yml_ called workflow twice: once per environment. This keeps the workflow definition clear and easy to understand. Also, the comments help explain what's happening.
 
-1. Verify that your *workflow.yml* file looks like the following:
+1. Verify that your _workflow.yml_ file looks like the following example:
 
    :::code language="yaml" source="code/5-workflow.yml" :::
 
@@ -120,7 +119,7 @@ Create a reusable workflow that defines all of the jobs required to deploy each 
 
 1. In your browser, go to **Actions**.
 
-   The first run of your workflow, labeled *Initial commit*, is shown as a failure. GitHub automatically ran the workflow when you created the repository. It failed because the secrets weren't ready at that time. You can ignore this failure.
+   The first run of your workflow, labeled _Initial commit_, is shown as a failure. GitHub automatically ran the workflow when you created the repository. It failed because the secrets weren't ready at that time. You can ignore this failure.
 
 1. Select the **deploy-toy-website-environments** workflow.
 
@@ -158,7 +157,7 @@ Create a reusable workflow that defines all of the jobs required to deploy each 
 
    :::image type="content" source="../media/5-environment-commits.png" alt-text="Screenshot of GitHub that shows the production environment's deployment details, with a list of commits.":::
 
-1. In your browser, go to the [Azure portal](https://portal.azure.com?azure-portal=true). 
+1. In your browser, go to the [Azure portal](https://portal.azure.com).
 
 1. Go to the **ToyWebsiteProduction** resource group.
 

@@ -4,7 +4,7 @@ title: Manage authentication in Static Web Apps
 metadata:
   title: Manage authentication in Static Web Apps
   description: Learn how to manage authentication in Static Web Apps
-  ms.date: 06/17/2021
+  ms.date: 12/20/2022
   author: sinedied
   ms.author: yolasors
   ms.topic: interactive-tutorial
@@ -24,13 +24,13 @@ quiz:
       choices:
         - content: '/auth/login/<PROVIDER_NAME>'
           isCorrect: false
-          explanation: 'The `/.auth` system folder provides access to all authentication-related APIs. '
+          explanation: Incorrect. The `/.auth` system folder provides access to all authentication-related APIs. 
         - content: '/.auth/signin/<PROVIDER_NAME>'
           isCorrect: false
-          explanation: 'You can expose a provider-specific link on your website for aliases such as `signin`, but by default `login` will log you in.'
+          explanation: Incorrect. You can expose a provider-specific link on your website for aliases such as `signin`, but by default `login` will log you in.
         - content: '/.auth/login/<PROVIDER_NAME>'
           isCorrect: true
-          explanation: 'The `/.auth` system folder to provide access to authorization-related APIs, followed by `login` and the provider name'
+          explanation: Correct. The `/.auth` system folder to provide access to authorization-related APIs, followed by `login` and the provider name.
         - content: '/auth/logout'
           isCorrect: false
-          explanation: 'The `/.auth/logout` route logs users out from the website.'
+          explanation: Incorrect. The `/.auth/logout` route logs users out from the website.

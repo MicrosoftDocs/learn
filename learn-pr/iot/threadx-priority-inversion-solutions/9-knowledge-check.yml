@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Interactive questions that validate whether the learner achieved the learning objectives.
-  ms.date: 01/27/2022
+  ms.date: 04/19/2022
   author: timlt
   ms.author: timlt
   ms.reviewer: liydu
@@ -15,58 +15,58 @@ durationInMinutes: 3
 content: |
 quiz:
   questions:
-  - content: "Suppose that T1, T2, and T3 are threads that have priorities 1, 2, and 3, respectively. T1 and T2 share mutex M. Which of these statements describes a priority inversion problem?"
-    choices:
-    - content: "T1 owns M, T3 attempts to get M, T2 preempts T3."
-      isCorrect: false
-      explanation: "Incorrect. This answer doesn't describe a priority inversion scenario."
-    - content: "T2 preempts T3, T1 gets M, T3 attempts to get M."
-      isCorrect: false
-      explanation: "Incorrect. This answer doesn't describe a priority inversion scenario."
-    - content: "T3 owns M, T2 preempts T3, T1 attempts to get M."
-      isCorrect: true
-      explanation: "Correct! This answer describes a priority inversion scenario."
-  - content: "What danger does the priority inversion problem present?"
-    choices:
-    - content: "It leads to a nondeterministic situation that might cause system failure."
-      isCorrect: true
-      explanation: "Correct! Priority inversion leads to a nondeterministic situation that might cause system failure."
-    - content: "It leads to a confusing situation because priorities aren't correct."
-      isCorrect: false
-      explanation: "Incorrect. This answer doesn't describe the primary danger posed by priority inversion."
-    - content: "The scheduler might incorrectly schedule threads."
-      isCorrect: false
-      explanation: "Incorrect. This answer doesn't describe the primary danger posed by priority inversion."
-  - content: "What is another name for preemption threshold?"
-    choices:
-    - content: "Priority ceiling."
-      isCorrect: true
-      explanation: "Correct! Another name for preemption threshold is priority ceiling."
-    - content: "Preemption preventor."
-      isCorrect: false
-      explanation: "Incorrect. Preemption preventor is not another name for preemption threshold."
-    - content: "Priority blocker."
-      isCorrect: false
-      explanation: "Incorrect. Priority blocker is not another name for preemption threshold."
-  - content: "Suppose thread N has a priority of 20 and a preemption threshold of 15. Which of the following statements is true?"
-    choices:
-    - content: "Thread N can preempt a thread that has a priority greater than 15."
-      isCorrect: false
-      explanation: "Incorrect. In this scenario, thread N can't preempt a thread that has a priority greater than 15."
-    - content: "Thread N can be preempted only by a thread that has a priority greater than 15."
-      isCorrect: true
-      explanation: "Correct! In this scenario, thread N can be preempted only by a thread that has a priority greater than 15."
-    - content: "Thread N can be preempted by a thread that has a prioriy less than 14."
-      isCorrect: false
-      explanation: "Incorrect. In this scenario, thread N can't be preempted by a thread that has a priority less than 14."
-  - content: "Which of the following statements is true about preemption threshold?"
-    choices:
-    - content: "Preemption threshold uses more overhead than priority inheritance."
-      isCorrect: false
-      explanation: "Incorrect. Preemption threshold uses less overhead than priority inheritance."
-    - content: "Preemption threshold uses more context switches than priority inheritance."
-      isCorrect: false
-      explanation: "Incorrect. Preemption threshold uses fewer context switches than priority inheritance."
-    - content: "Preemption threshold is a feature that's unique to Azure RTOS ThreadX."
-      isCorrect: true
-      explanation: "Correct! Only ThreadX uses preemption threshold to solve the priority inversion problem."
+    - content: 'Suppose that T1, T2, and T3 are threads that have priorities 1, 2, and 3, respectively. T1 and T2 share mutex M. Which of these statements describes a priority inversion problem?'
+      choices:
+        - content: 'T1 owns M, T3 attempts to get M, T2 preempts T3.'
+          isCorrect: false
+          explanation: "Incorrect. This answer doesn't describe a priority inversion scenario."
+        - content: 'T2 preempts T3, T1 gets M, T3 attempts to get M.'
+          isCorrect: false
+          explanation: "Incorrect. This answer doesn't describe a priority inversion scenario."
+        - content: 'T3 owns M, T2 preempts T3, T1 attempts to get M.'
+          isCorrect: true
+          explanation: 'Correct! This answer describes a priority inversion scenario.'
+    - content: 'What danger does the priority inversion problem present?'
+      choices:
+        - content: 'It leads to a nondeterministic situation that might cause system failure.'
+          isCorrect: true
+          explanation: 'Correct! Priority inversion leads to a nondeterministic situation that might cause system failure.'
+        - content: "It leads to a confusing situation because priorities aren't correct."
+          isCorrect: false
+          explanation: "Incorrect. This answer doesn't describe the primary danger posed by priority inversion."
+        - content: 'The scheduler might incorrectly schedule threads.'
+          isCorrect: false
+          explanation: "Incorrect. This answer doesn't describe the primary danger posed by priority inversion."
+    - content: 'What is another name for preemption threshold?'
+      choices:
+        - content: 'Priority ceiling.'
+          isCorrect: true
+          explanation: 'Correct! Another name for preemption threshold is priority ceiling.'
+        - content: 'Preemption preventor.'
+          isCorrect: false
+          explanation: 'Incorrect. Preemption preventor is not another name for preemption threshold.'
+        - content: 'Priority blocker.'
+          isCorrect: false
+          explanation: 'Incorrect. Priority blocker is not another name for preemption threshold.'
+    - content: 'Suppose thread N has a priority of 20 and a preemption threshold of 15. Which of the following statements is true?'
+      choices:
+        - content: 'Thread N can preempt a thread that has a priority greater than 15.'
+          isCorrect: false
+          explanation: "Incorrect. In this scenario, thread N can't preempt a thread that has a priority greater than 15."
+        - content: 'Thread N can be preempted only by a thread that has a priority greater than 15.'
+          isCorrect: true
+          explanation: 'Correct! In this scenario, thread N can be preempted only by a thread that has a priority greater than 15.'
+        - content: 'Thread N can be preempted by a thread that has a prioriy less than 14.'
+          isCorrect: false
+          explanation: "Incorrect. In this scenario, thread N can't be preempted by a thread that has a priority less than 14."
+    - content: 'Which of the following statements is true about preemption threshold?'
+      choices:
+        - content: 'Preemption threshold uses more overhead than priority inheritance.'
+          isCorrect: false
+          explanation: 'Incorrect. Preemption threshold uses less overhead than priority inheritance.'
+        - content: 'Preemption threshold uses more context switches than priority inheritance.'
+          isCorrect: false
+          explanation: 'Incorrect. Preemption threshold uses fewer context switches than priority inheritance.'
+        - content: "Preemption threshold is a feature that's unique to Azure RTOS ThreadX."
+          isCorrect: true
+          explanation: 'Correct! Only ThreadX uses preemption threshold to solve the priority inversion problem.'

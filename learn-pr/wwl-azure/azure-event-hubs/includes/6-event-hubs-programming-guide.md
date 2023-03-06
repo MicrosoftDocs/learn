@@ -1,3 +1,4 @@
+
 This unit contains examples of common operations you can perform with the Event Hubs client library (`Azure.Messaging.EventHubs`) to interact with an Event Hub.
 
 ## Inspect an Event Hub

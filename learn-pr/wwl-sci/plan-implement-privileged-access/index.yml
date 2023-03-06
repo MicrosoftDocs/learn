@@ -2,8 +2,8 @@
 uid: learn.wwl.plan-implement-privileged-access
 metadata:
   title: Plan and implement privileged access
-  description: "Plan and implement privileged access"
-  ms.date: 12/13/2022
+  description: "Ensuring that administrative roles are protected and managed to increase your Azure solution security is a must. Explore how to use PIM to protect your data and resources."
+  ms.date: 02/07/2023
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
@@ -31,6 +31,10 @@ roles:
 products:
 - azure
 - azure-active-directory
+- azure-active-directory-domain
+- azure-active-directory-priviledged-identity-management
+- entra
+- entra-identity-governance
 subjects:
 - identity-access
 units:

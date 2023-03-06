@@ -4,13 +4,11 @@ title: Explore managed identities
 metadata:
   title: Explore managed identities
   description: "Explore managed identities"
-  ms.date: 11/22/2022
+  ms.date: 02/09/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/2-managed-identities-overview.md)]

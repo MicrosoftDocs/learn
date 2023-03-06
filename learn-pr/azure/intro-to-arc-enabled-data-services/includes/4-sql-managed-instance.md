@@ -36,11 +36,11 @@ Azure SQL Managed Instance uses gateway servers to abstract the application from
 
 Like Azure SQL Managed Instance, you can deploy Azure Arc-enabled SQL Managed instance with two deployment options called service tiers:
 
-- **General purpose** - As its name implies, this service tier is for most workloads. This service tier has a limit for resources such as core and memory but comes with built-in basic high availability through Kubernetes and shared storage. Instances in the general purpose tier map to features supported in SQL Server Standard Edition.
+- **General Purpose** - As its name implies, this service tier is for most workloads. This service tier has a limit for resources such as core and memory but comes with built-in basic high availability through Kubernetes and shared storage. Instances in the general purpose tier map to features supported in SQL Server Standard Edition.
 
-- **Business critical (preview)** - This service tier is designed for workloads that require the best performance and highest level of availability. This service tier has no limits for memory or cores and uses availability groups to provide high availability with read scale-out. Instances in the business critical tier map to features supported in SQL Server Enterprise Edition.
+- **Business Critical** - This service tier is designed for workloads that require the best performance and highest level of availability. This service tier has no limits for memory or cores and uses availability groups to provide high availability with read scale-out. Instances in the Business Critical tier map to features supported in SQL Server Enterprise Edition.
 
-Both service tiers are billed on a per core basis but also include the ability to use Azure Hybrid Benefit licensing and a developer option for no cost. Business critical service tier is currently under preview so won't incur any charges for use. You can learn more about [service tiers](/azure/azure-arc/data/service-tiers) in the Microsoft documentation.
+Both service tiers are billed on a per core basis but also include the ability to use Azure Hybrid Benefit licensing and a developer option for no cost. Business Critical service tier is currently under preview so won't incur any charges for use. You can learn more about [service tiers](/azure/azure-arc/data/service-tiers) in the Microsoft documentation.
 
 ### Azure integration
 
@@ -86,7 +86,7 @@ One of the benefits of using a managed service like Azure Arc-enabled SQL Manage
 
 For the General Purpose service tier, the built-in high availability of Kubernetes StatefulSets is used with shared storage.
 
-For the Business Critical service tier (Preview), built in high availability is provided using a combination of Kubernetes StatefulSets and SQL Server Always On Availability Group replicas. Availability Group replicas are automatically deployed and configured for the user. Like Azure SQL Managed Instance, a read-only replica is available to offload read workloads. System databases such as master and model are part of the availability group. System level objects such as SQL Agent jobs will automatically be available after a failover event.
+For the Business Critical service tier, built in high availability is provided using a combination of Kubernetes StatefulSets and SQL Server Always On Availability Group replicas. Availability Group replicas are automatically deployed and configured for the user. Like Azure SQL Managed Instance, a read-only replica is available to offload read workloads. System databases such as master and model are part of the availability group. System level objects such as SQL Agent jobs will automatically be available after a failover event.
 
 Kubernetes LoadBalancers and NodePorts provide connection abstraction for the application should the instance move within the cluster. In addition, a read-only connection abstraction point is provided for Business Critical service tiers.
 
@@ -114,7 +114,7 @@ The following interfaces can be used with Azure Arc-enabled SQL Managed Instance
 
 ### Azure Data Studio (ADS)
 
-[Azure Data Studio](https://azure.microsoft.com/services/developer-tools/data-studio/) (ADS) is a multi-platform tool that can query and manage an Azure Arc-enabled SQL Managed Instance. ADS supports queries using T-SQL along with T-SQL notebooks. Also, you can use the ADS Azure Arc extension (Preview) to create and manage Azure Arc-enabled data services resources such as the data controller, SQL Managed Instance, and PostgreSQL Hyperscale.
+[Azure Data Studio](https://azure.microsoft.com/services/developer-tools/data-studio/) (ADS) is a multi-platform tool that can query and manage an Azure Arc-enabled SQL Managed Instance. ADS supports queries using T-SQL along with T-SQL notebooks. Also, you can use the ADS Azure Arc extension to create and manage Azure Arc-enabled data services resources such as the data controller, SQL Managed Instance, and PostgreSQL server (preview).
 
 ### SQL command-line tools
 

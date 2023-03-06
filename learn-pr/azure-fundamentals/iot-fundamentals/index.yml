@@ -5,7 +5,7 @@ metadata:
   description: "Examine Azure IoT services, and choose the right service for your scenario. Prepare for AZ-900."
   ms.date: 08/18/2021
   author: wwlpublish
-  ms.author: rknapp
+  ms.author: robbarefoot
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Choose the best Azure IoT service for your application

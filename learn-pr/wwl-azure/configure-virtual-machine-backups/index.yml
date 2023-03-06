@@ -2,21 +2,21 @@
 uid: learn.wwl.configure-virtual-machine-backups
 metadata:
   title: Configure virtual machine backups
-  description: "You will learn how to configure virtual machine backups including restore operations."
-  ms.date: 11/01/2022
+  description: "Learn how to configure virtual machine backups including restore operations."
+  ms.date: 02/23/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Configure virtual machine backups
-summary: You will learn how to configure virtual machine backups including restore operations.
+summary: Learn how to configure virtual machine backups including restore operations.
 abstract: |
-  After completing this module, you will be able to:
+  In this module, you learn how to:
   - Identify features and usage cases for different Azure backup methods.
   - Configure virtual machine snapshots and backup options.
   - Implement virtual machine backup and restore, including soft delete.
-  - Compare the Azure Backup (MARS) agent to the Azure Backup Server (MABS).
   - Perform site-to-site recovery by using Azure Site Recovery.
+  - Compare the Azure Backup agent to the Microsoft Azure Backup Server.
 prerequisites: |
   None
 iconUrl: /training/achievements/virtual-machines-configure-backup.svg

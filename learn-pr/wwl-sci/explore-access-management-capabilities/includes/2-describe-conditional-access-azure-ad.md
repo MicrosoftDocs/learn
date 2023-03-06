@@ -1,3 +1,4 @@
+
 Conditional Access is a feature of Azure AD that provides an extra layer of security before allowing authenticated users to access data or other assets. Conditional Access is implemented through policies that are created and managed in Azure AD. A Conditional Access policy analyses signals including user, location, device, application, and risk to automate decisions for authorizing access to  resources (apps and data).
 
 :::image type="content" source="../media/2-conditional-access-policies.png" alt-text="Conditional Access policies use signals to decide whether to allow or block access":::

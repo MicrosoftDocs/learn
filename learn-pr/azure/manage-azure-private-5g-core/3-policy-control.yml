@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.manage-azure-private-5g-core.policy-control
+title: Policy control
+metadata:
+  title: Policy control
+  description: Describes the tasks for using services and SIM policies to control the network traffic in a private mobile network.
+  ms.date: 11/29/2022
+  author: michael-weizhong-shan
+  ms.author: michaelshan
+  ms.topic: interactive-tutorial
+  ms.service: learning-private-5g-core
+durationInMinutes: 12
+content: |
+  [!include[](includes/3-policy-control.md)]

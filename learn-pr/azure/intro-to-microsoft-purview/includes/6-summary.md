@@ -8,7 +8,7 @@ Our goal was to help you evaluate if Microsoft Purview was the right choice to h
 
 We covered how you can use the Microsoft Purview governance portal to register data sources and create a data map. Setting up scanning caused Microsoft Purview to scan through the selected data types in the sources and list metadata associated with those sources. This metadata helps data consumers discover what's contained in the data sources, documenting the expected usage. We also showed how the metadata includes classification information to help identify sensitive data.
 
-The criteria help you evaluate how Microsoft Purview can help your business-catalog data for users and data producers. It also showed how Microsoft Purview can help your company meet its data governance needs by using the metadata and classification features.
+The criteria help you evaluate how Microsoft Purview can help your business-catalog data for users and data producers. We also showed how Microsoft Purview can help your company meet its data governance needs by using the metadata and classification features.
 
 ## References for more information
 

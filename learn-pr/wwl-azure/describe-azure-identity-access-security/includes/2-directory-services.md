@@ -44,7 +44,7 @@ You don't need to manage, configure, or update these DCs. The Azure platform han
 
 ### Is information synchronized?
 
-A managed domain is configured to perform a one-way synchronization from Azure AD to Azure AD DS. You can create resources directly in the managed domain, but they aren't synchronized back to Azure AD. In a hybrid environment with an on-premises AD DS environment, on-premises Azure AD Connect synchronizes identity information with Azure AD, which is then synchronized to the managed domain.
+A managed domain is configured to perform a one-way synchronization from Azure AD to Azure AD DS. You can create resources directly in the managed domain, but they aren't synchronized back to Azure AD. In a hybrid environment with an on-premises AD DS environment, Azure AD Connect synchronizes identity information with Azure AD, which is then synchronized to the managed domain.
 
 :::image type="content" source="../media/azure-active-directory-sync-topology-7359f2b8.png" alt-text="Diagram of Azure AD Connect Sync synchronizing information back to the Azure AD tenant from on-premises AD.":::
 

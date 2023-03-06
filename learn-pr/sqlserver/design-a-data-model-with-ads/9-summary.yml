@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.design-a-data-model-with-ads.summary
+title: Summary
+metadata:
+  title: summary
+  description: "Summary for create a data model with Azure Data Studio covering data types, Azure sql database, data modeling, indexes, constraints, and basic table design."
+  ms.date: 12/29/2022
+  author: JetterMcTedder
+  ms.author: bspendolini
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/9-summary.md)]

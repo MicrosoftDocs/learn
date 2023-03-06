@@ -1,3 +1,4 @@
+
 The traditional network security perimeter protects your organization's assets, resources, where data is essential. Azure offers a wide range of configurable security tools that are customized to give the security and control to meet your organization's needs.
 
 You’ve explored the different service offerings provided by Microsoft Azure, including DDoS protection, Azure Firewall, network security groups, Bastion, and others to protect access to your systems. You now understand the importance and use of encryption of data not only when stored, but also when in transit.

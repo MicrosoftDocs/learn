@@ -1,6 +1,6 @@
-In this exercise, you'll learn to build a calculator. A calculator takes input and presents the result on the screen.
+In this exercise, you'll learn to build a calculator. A calculator takes input and presents the result on the screen. After activating the sandbox, **refresh the page** to restart the Cloud Shell console.
 
-1. Start the REPL by typing `python`:
+1. Start the REPL by typing `python` in the Cloud Shell console:
 
    ```python
    python

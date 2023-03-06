@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+title: Exercise - Set up the structure of your web app
+uid: learn-windows.introduction-to-web-development.2-project-structure
+metadata:
+  title: Exercise - Set up the structure of your web app
+  description: Set up the basic files you'll need to expand on to create your web app.
+  ms.date: 2/8/2023
+  author: mmpadget
+  ms.author: quradic
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows
+durationInMinutes: 5
+content: |
+    [!include[](includes/2-project-structure.md)]

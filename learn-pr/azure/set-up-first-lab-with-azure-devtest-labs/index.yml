@@ -22,6 +22,7 @@ prerequisites: |
   - Experience creating and managing Azure virtual machine resources using the Azure portal at the beginner level
   - Remote Desktop client installed. Get a [Remote Desktop client](/windows-server/remote/remote-desktop-services/clients/remote-desktop-clients)
 iconUrl: /training/achievements/set-up-first-lab-with-azure-devtest-labs.svg
+hidden: true
 levels: 
   - beginner
 roles: 

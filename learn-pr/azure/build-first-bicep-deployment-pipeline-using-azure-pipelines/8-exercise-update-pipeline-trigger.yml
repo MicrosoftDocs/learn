@@ -5,7 +5,7 @@ metadata:
   unitType: exercise
   title: Exercise - Update your pipeline's trigger
   description: Update your Bicep file to test a branch trigger in your Bicep deployment pipeline.
-  ms.date: 08/30/2021
+  ms.date: 01/30/2023
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial

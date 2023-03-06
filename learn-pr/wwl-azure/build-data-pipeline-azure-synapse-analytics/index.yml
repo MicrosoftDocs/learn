@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.build-data-pipeline-azure-synapse-analytics
+metadata:
+  title: Build a data pipeline in Azure Synapse Analytics
+  description: "Build a data pipeline in Azure Synapse Analytics"
+  ms.date: 02/03/2023
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: synapse-analytics
+title: Build a data pipeline in Azure Synapse Analytics
+summary: Pipelines are the lifeblood of a data analytics solution. Learn how to use Azure Synapse Analytics pipelines to build integrated data solutions that extract, transform, and load data across diverse systems.
+abstract: |
+  In this module, you will learn how to:
+  - Describe core concepts for Azure Synapse Analytics pipelines.
+  - Create a pipeline in Azure Synapse Studio.
+  - Implement a data flow activity in a pipeline.
+  - Initiate and monitor pipeline runs.
+prerequisites: |
+  Before starting this module, you should be familiar with Azure Synapse Analytics and data analytics solutions in general. Consider completing the [Introduction to Azure Synapse Analytics](/training/modules/introduction-azure-synapse-analytics/) module first.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+products:
+- azure-data-factory
+- azure-synapse-analytics
+subjects:
+- data-engineering
+units:
+- learn.wwl.build-data-pipeline-azure-synapse-analytics.introduction
+- learn.wwl.build-data-pipeline-azure-synapse-analytics.understand-pipelines-azure-synapse-analytics
+- learn.wwl.build-data-pipeline-azure-synapse-analytics.create-pipeline-azure-synapse-studio
+- learn.wwl.build-data-pipeline-azure-synapse-analytics.define-data-flows
+- learn.wwl.build-data-pipeline-azure-synapse-analytics.run-pipelines
+- learn.wwl.build-data-pipeline-azure-synapse-analytics.exercise-build-data-pipeline-azure-synapse-analytics
+- learn.wwl.build-data-pipeline-azure-synapse-analytics.knowledge-check
+- learn.wwl.build-data-pipeline-azure-synapse-analytics.summary
+badge:
+  uid: learn.wwl.build-data-pipeline-azure-synapse-analytics.badge

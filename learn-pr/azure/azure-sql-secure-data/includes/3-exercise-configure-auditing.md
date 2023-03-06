@@ -123,25 +123,25 @@ These scripts should take three to five minutes to complete. Be sure to note you
     | Region | Select a location closest to you from the following list |
 
     [!INCLUDE [](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)] 
-    
-1.  Select **Review + create**, wait until your inputs have been validated, and then select **Create**. Wait until the resource is deployed. 
+
+1. Select **Review + create**, wait until your inputs have been validated, and then select **Create**. Wait until the resource is deployed.
   
-1.  Select **Go to resource**. The **Overview** pane for your Logic App appears.
+1. Select **Go to resource**. The **Overview** pane for your Log Analytics workspace appears.
 
 1. In the Azure portal, go to your **AdventureWorks** SQL Database.
 
 1. On the menu, under **Security**, select **Auditing**. Review the options.
 
-    You can apply auditing at the server level, which applies to all databases within the Azure SQL Database logical server. If you also apply auditing at the database level (which you will do in this unit), both audits occur in parallel; one does not override the other. 
+    You can apply auditing at the server level, which applies to all databases within the Azure SQL Database logical server. If you also apply auditing at the database level (which you will do in this unit), both audits occur in parallel; one does not override the other.
 
-1. Select the slide toggle to **Enable Azure SQL Auditing**. 
+1. Select the slide toggle to **Enable Azure SQL Auditing**.
 
-1. Select the  **Storage** check box, and then complete the required fields. 
+1. Select the  **Storage** check box, and then complete the required fields.
      - For **Subscription**, from the dropdown list, select the Concierge Subscription.
-     - For **Storage Account**, from the dropdown list, select the account that starts with **sqlva** followed by a random string of letters and numbers. 
- 
+     - For **Storage Account**, from the dropdown list, select the account that starts with **sqlva** followed by a random string of letters and numbers.
+
    The **sqlva** storage account will be used to collect XEvent log files, which are saved as a collection of blob files within a container named **sqldbauditlogs**. In a later activity, you'll review the container to learn how log files differ from Log Analytics.
-   
+
     > [!TIP]
     > If you do not see any storage accounts, create a new account. You may need to refresh your page after a couple minutes before it shows up.  
 
@@ -158,13 +158,12 @@ These scripts should take three to five minutes to complete. Be sure to note you
      - For **Subscription**, select the Concierge Subscription from the dropdown list.
      - For **Log Analytics**, select the Log Analytics workspace you created earlier in this exercise (asuresql-laNNN).
 
-
 1. From the command bar, select **Save**.  
 
     It may take a few minutes for the configuration to process. 
-    
+
 1. Select **OK** to save your configuration.
-    
+
     After the configuration is saved, in the breadcrumbs, select AdventureWorks to close the Audit pane.  
 
 You've now enabled auditing for a storage account and an Azure Log Analytics workspace. Later, you'll dive deeper into the auditing capabilities in Azure SQL. You'll see how to analyze the audit logs to view all the changes you've made throughout the module, as well as some other interesting use cases.  
