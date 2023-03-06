@@ -2,8 +2,8 @@
 uid: learn.wwl.design-data-integration
 metadata:
   title: Design data integration
-  description: "Design data integration"
-  ms.date: 01/31/2023
+  description: "<div|<span style=\"color:rgb(34, 34, 34);font-family:&quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, Verdana;font-size:12px;display:inline !important;\"|Azure Architects design and recommend data integration solutions.</span| </div|"
+  ms.date: 03/06/2023
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
