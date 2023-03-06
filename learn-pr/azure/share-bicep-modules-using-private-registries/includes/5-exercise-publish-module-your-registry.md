@@ -78,10 +78,10 @@ Similar to the previous steps, you save a precreated module file so that you can
 1. In the Visual Studio Code terminal, run the following commands. Replace `YOUR_CONTAINER_REGISTRY_NAME` with the name of your private registry.
 
    ```bash
-   bicep publish website.bicep \
+   bicep publish website.bicep `
      --target 'br:YOUR_CONTAINER_REGISTRY_NAME.azurecr.io/website:v1'
 
-   bicep publish cdn.bicep \
+   bicep publish cdn.bicep `
      --target 'br:YOUR_CONTAINER_REGISTRY_NAME.azurecr.io/cdn:v1'
    ```
 
@@ -102,4 +102,4 @@ Similar to the previous steps, you save a precreated module file so that you can
 
 ::: zone-end
 
-   You can also use the Azure portal to list the modules in your registry.
+You can also use the Azure portal to list the modules in your registry. From your resource group's **Overview** tab, select YOUR_CONTAINER_REGISTRY_NAME and then select **Repositories**.
