@@ -1,4 +1,4 @@
-In this unit, you'll make sure the PostgreSQL database can only be access by the Quarkus application, not other external client. At the moment, we can access the database from any client (using Azure CLI and running Quarkus locally), which isn't secure. So we'll add a firewall rule to only allow IP addresses within the Azure Container Apps environment to access the database server.
+In this unit, you make sure the PostgreSQL database can only be access by the Quarkus application, not other external client. At the moment, we can access the database from any client (using Azure CLI and running Quarkus locally), which isn't secure. So we need to add a firewall rule to only allow IP addresses within the Azure Container Apps environment to access the database server.
 
 ## Access the PostgreSQL server from the CLI
 
@@ -16,7 +16,7 @@ az postgres flexible-server execute \
 
 You should be able to see the content of the database. That means the database is accessible from the outside.
 
-## Remove the Permissive Firewall Rule
+## Remove the permissive firewall rule
 
 Azure Database for PostgreSQL is secured by default. Its firewall usually doesn't allow incoming connections. But when we previously created the PostgreSQL server, we specified the `--public all` parameter to enable external access. This means that the firewall is open to the public.
 
@@ -66,13 +66,13 @@ After a period of time, the call times out, and you should see:
 Unable to connect to flexible server: connection to server failed: Operation timed out
 ```
 
-Because we've removed all the firewall rules, even the Quarkus application has no access to the database now. If you try to retrieve the to-dos from the database, it will fail. Execute the following `cURL` request:
+Because we've removed all the firewall rules, even the Quarkus application has no access to the database now. If you try to retrieve the to-dos from the database, it fails. Execute the following `cURL` request:
 
 ```bash
 curl https://<value of $AZ_APP_URL>/api/todos
 ```
 
-## Add a New Firewall Rule
+## Add a new firewall rule
 
 We need to configure the firewall to only accept the access from the Quarkus application. To do that, we need to add a new firewall rule. To do that, execute the following command:
 
@@ -98,7 +98,7 @@ az postgres flexible-server execute \
     --output table
 ```
 
-But if you try to retrieve the to-dos from the database from the Quarkus application running on Azure Container Apps, it will succeed:
+But if you try to retrieve the to-dos from the database from the Quarkus application running on Azure Container Apps, it succeeds:
 
 ```bash
 curl https://<value of $AZ_APP_URL>/api/todos

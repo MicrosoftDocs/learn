@@ -13,7 +13,7 @@ metadata:
 title: Deploy a Quarkus application to Azure Container Apps
 summary: Create a Quarkus application, connect it to a PostgreSQL database, and then deploy to Azure Container Apps.
 abstract: |
-  In this module, you will:
+  In this module, you:
   - Develop a Quarkus application.
   - Connect your application to an Azure for PostgreSQL database.
   - Deploy the application to Azure Container Apps.

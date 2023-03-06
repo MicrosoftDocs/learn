@@ -1,4 +1,4 @@
-In this unit, you'll create the Azure Container Apps environment using the Azure CLI. Then, you'll containerize the Quarkus application into a Docker image, push it to Azure Registry and deploy the image to Azure Container Apps.
+In this unit, you create the Azure Container Apps environment using the Azure CLI. Then, you containerize the Quarkus application into a Docker image, push it to Azure Registry and deploy the image to Azure Container Apps.
 
 ## Set up the Dockerfile for the Quarkus application
 
@@ -36,9 +36,9 @@ This Dockerfile expects the Quarkus application to be packaged as a `quarkus-run
 ./mvnw package
 ```
 
-This command will package the Quarkus application into a `jar` file and generate a `quarkus-run.jar` file in the `target/quarkus-app` folder.
+This command packages the Quarkus application into a `jar` file and generate a `quarkus-run.jar` file in the `target/quarkus-app` folder.
 
-## Create the Azure Container App Environment and Deploy the container
+## Create the Azure Container App Environment and deploy the container
 
 Now that we've the Dockerfile at the right location, we can create the Azure Container App environment and deploy the container in a single Azure CLI command. Execute the following command at the root of the project:
 

@@ -13,4 +13,4 @@ metadata:
   ms.contributors: antoniomanug
 durationInMinutes: 10
 content: |
-  [!include[](includes/6-exercise-aca.md)]
+  [!include[](includes/6-exercise-azure-container-apps.md)]

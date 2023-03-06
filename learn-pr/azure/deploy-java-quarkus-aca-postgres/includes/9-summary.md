@@ -16,7 +16,7 @@ You're now confident that you can recommend executing your Quarkus application t
 
 ## Clean up resources
 
-In this module, you created Azure resources in a resource group. If you won't need these resources later, delete the resource group from the portal. Or run the following command:
+In this module, you created Azure resources in a resource group. If you don't need these resources later, delete the resource group from the portal. Or run the following command:
 
 ```bash
 az group delete \

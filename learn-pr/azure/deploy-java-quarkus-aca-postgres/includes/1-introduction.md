@@ -2,11 +2,11 @@ Imagine you're a Java developer working for a company that creates Quarkus appli
 
 You want to build a to-do list application that uses a PostgreSQL database. You've decided to build this Quarkus application from scratch.
 
-In this module, you'll first scaffold a Quarkus web application by using the Quarkus Maven plugin. The Quarkus Maven plugin generates a Quarkus project that includes just what you need to start quickly. This scaffold gives you a base to work from.
+In this module, you first scaffold a Quarkus web application by using the Quarkus Maven plugin. The Quarkus Maven plugin generates a Quarkus project that includes just what you need to start quickly. This scaffold gives you a base to work from.
 
-You'll then code a to-do application that stores tasks in a relational database. The tasks will need a PostgreSQL database, so you'll create and host by using Azure Database for PostgreSQL.
+You then code a to-do application that stores tasks in a relational database. These tasks are stored in a PostgreSQL database, so you need create an Azure Database for PostgreSQL.
 
-Next you'll build the application and also configure it to connect to the PostgreSQL database. Before you deploy, you'll confirm the application can run locally. You'll then deploy through Azure CLI and host on Azure Container Apps.
+Next you build the application and also configure it to connect to the PostgreSQL database. Before you deploy it to Azure, you need to confirm the application can run locally. You then deploy through Azure CLI and host on Azure Container Apps.
 
 By the end of this module, you'll be able to incorporate Quarkus applications into Azure Container Apps and integrate with a relational database.
 

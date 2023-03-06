@@ -1,4 +1,5 @@
-In this unit, you'll create the Azure Resource Group that will contain all our resources, and set up the PostgreSQL database using the Azure CLI. Then, you'll configure the Quarkus application to access the remote PostgreSQL database. Use a terminal of your choice to run the commands.
+In this unit, you create the Azure Resource Group that contains all our resources, and set up the PostgreSQL database using the Azure CLI.
+Then, you configure the Quarkus application to access the remote PostgreSQL database. Use a terminal of your choice to run the commands.
 
 ## Prepare the working environment
 
@@ -25,7 +26,7 @@ Make sure to replace the placeholders when needed. These environment variables a
 |-|-|
 | `AZ_PROJECT` | The name of the project |
 | `AZ_RESOURCE_GROUP` | The name of the group holding all the other resources |
-| `AZ_LOCATION` | The Azure region you'll use. We recommend that you use a region close to where you live. To see the full list of available regions, enter `az account list-locations` |
+| `AZ_LOCATION` | The Azure region you use. We recommend that you use a region close to where you live. To see the full list of available regions, enter `az account list-locations` |
 | `AZ_CONTAINERAPP` | The name of the Azure Container Apps holding all the containers |
 | `AZ_CONTAINERAPP_ENV` | The name of the Azure Container Apps environment |
 | `AZ_POSTGRES_SERVER_NAME` | The name of your PostgreSQL server (nonalphanumeric characters aren't allowed (-, _, !, $, #, %)). It **should be unique across Azure make sure to use a unique-identifier** |
@@ -43,7 +44,7 @@ az group create \
 
 ## Create an instance of Azure Database for PostgreSQL
 
-Now you'll create a managed PostgreSQL server. Run the following command to create a small instance of Azure Database for PostgreSQL.
+Now you create a managed PostgreSQL server. Run the following command to create a small instance of Azure Database for PostgreSQL.
 
 ```bash
 az postgres flexible-server create \
@@ -64,7 +65,7 @@ This command creates a small PostgreSQL server that uses the variables you set u
 
 ## Configure Quarkus to access the PostgreSQL database
 
-Now let's connect the Quarkus application to the PostgreSQL database. To do this, you'll first need to know the connection String of the database. For that, execute the following command:
+Now let's connect the Quarkus application to the PostgreSQL database. To do this, you first need to know the connection String of the database. For that, execute the following command:
 
 ```bash
 POSTGRES_CONNECTION_STRING=$(
@@ -80,7 +81,7 @@ az postgres flexible-server show-connection-string \
 echo "POSTGRES_CONNECTION_STRING=$POSTGRES_CONNECTION_STRING"
 ```
 
-## Configure the Quarkus application to connect to the the PostgreSQL database
+## Configure the Quarkus application to connect to the PostgreSQL database
 
 Update the `application.properties` file in the `src/main/resources` folder of the project to configure the connection String to the PostgreSQL database. For that, set the `quarkus.datasource.jdbc.url` property with the value of the `$POSTGRES_CONNECTION_STRING` and append `&ssl=true&sslmode=require` to the end of the connection string to force the driver to use ssl. This is required for Azure Database for PostgreSQL.
 

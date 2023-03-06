@@ -25,7 +25,7 @@ quiz:
     - content: Entity
       isCorrect: false
       explanation: "A JPA entity object maps Java classes to database tables."
-  - content: "Which Azure CLI command will create an Azure Container Apps environment, an Azure registry, build a Docker image and deploy it to Azure?"
+  - content: "Which Azure CLI command creates an Azure Container Apps environment, an Azure registry, build a Docker image and deploy it to Azure?"
     choices:
     - content: "az containerapp create"
       isCorrect: false

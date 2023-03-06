@@ -1,18 +1,18 @@
-In this unit, you'll create a basic Quarkus application. You'll use Maven to bootstrap the application and an integrated development environment (IDE) of your choice to edit the code. Use a terminal of your choice to run the code. You'll use Docker to start a local PostgreSQL database so you can run and test your to-do application locally.
+In this unit, you create a basic Quarkus application. You use Maven to bootstrap the application and an integrated development environment (IDE) of your choice to edit the code. Use a terminal of your choice to run the code. You use Docker to start a local PostgreSQL database so you can run and test your to-do application locally.
 
 ## Generate the Quarkus application using Maven
 
 There are different ways to generate a Quarkus project structure for you. You can use the [Quarkus web interface](https://code.quarkus.io), an IDE plugin, or the Quarkus Maven plugin. Let's use the Maven plugin to generate the project structure.
 
-You'll generate your application scaffold with several dependencies:
+You generate your application with several dependencies:
 
-* You'll use the `resteasy` dependency to expose a REST endpoint,
+* the `resteasy` dependency to expose a REST endpoint,
 * the `jackson` dependency to serialize and deserialize JSON,
 * the `hibernate` dependency to interact with the database,
 * the `postgresql` dependency to connect to the PostgreSQL database,
 * and the `docker` dependency to build a Docker image.
 
-You don't need to specify Azure dependencies because you'll run your application locally first, and then deploy a containerized version of the application to Azure Container Apps.
+You don't need to specify Azure dependencies because you run your application locally first, and then deploy a containerized version of the application to Azure Container Apps.
 
 At a command prompt, generate the to-do application:
 
@@ -78,7 +78,7 @@ This command creates a new Quarkus project. Despite generating a Maven directory
 
 Next, create a new `Todo` Java class and add the following Java code. It uses Java Persistence API (`javax.persistence.Entity` package) to store and retrieve data from your PostgreSQL server. It also uses [Hibernate ORM with Panache](https://quarkus.io/guides/hibernate-orm-panache) (inheriting from `io.quarkus.hibernate.orm.panache.PanacheEntity`) to simplify the persistence layer.
 
-You'll use a JPA entity (`@Entity`) to map the Java `Todo` object directly to the PostgreSQL `Todo` table. Then, the `TodoResource` REST endpoint will create a new `Todo` entity class and persist it. This class is a domain model that's mapped on the `Todo` table. The table will be automatically created by JPA.
+You use a JPA entity (`@Entity`) to map the Java `Todo` object directly to the PostgreSQL `Todo` table. Then, the `TodoResource` REST endpoint creates a new `Todo` entity class and persist it. This class is a domain model that's mapped on the `Todo` table. The table will be automatically created by JPA.
 
 By extending `PanacheEntity`, you get a bunch of generic create, read, update, and delete (CRUD) methods for your type. So you can do things like saving and deleting `Todo` objects in just one line of Java code.
 
