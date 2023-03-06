@@ -3,7 +3,7 @@ Microsoft Entra Verified ID is a managed verifiable credentials service that ena
 The objective of this module is to provide the reader with an understanding of decentralized identifiers and how they're used to issue and verify credentials, in a way that delivers on the promise of decentralized identity system where users control their identities.
 
 After completing this module, you'll be able to:
-    - Describe the challenge with current digital identities and credentials.
-    - Describe decentralized identifiers.
-    - Describe what makes DIDs different than other identifiers.
-    - Describe How Verifiable credentials work.
+- Describe the challenge with current digital identities and credentials.
+- Describe decentralized identifiers.
+- Describe what makes DIDs different than other identifiers.
+- Describe How Verifiable credentials work.
