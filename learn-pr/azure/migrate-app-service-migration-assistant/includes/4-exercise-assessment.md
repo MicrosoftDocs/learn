@@ -55,7 +55,7 @@ In this exercise, you'll complete the setup steps, sign in to your Azure account
 
     Then, select **Next** at the bottom of the dialog box. This will begin the assessment of the site.
 
-10. After a moment, the assessment report step should finish. You should see that all 13 assessments were successful with no warnings or errors.
+10. After a moment, the assessment report step should finish. You should see that all 13 assessments were successful with no warnings or errors. 
 
     You might take a moment to expand the chevron icon next to the label **Success (13)** to see the types of assessments that the Migration Assistant performed. We covered some of these in an earlier unit.
 
