@@ -48,9 +48,9 @@ Go has support for the slice operator `s[i:p]`, where:
 
 - `s` represents the array.
 - `i` represents the pointer to the first element of the underlying array (or another slice) to add to the new slice. The variable `i` corresponds to the element at index location `i` in the array, `array[i]`. Remember this element isn't necessarily the underlying array's first element, `array[0]`. 
-- `p` represents the number of elements in the underlying array to use when creating the new slice. The variable `p` corresponds to the last element in the underlying array that can be used in the new slice. The element at position `p` in the underlying array is found at the location `array[i+1]`. Notice that this element isn't necessarily the underlying array's last element, `array[len(array)-1]`.
+- `p` represents the number of elements in the underlying array to use when creating the new slice, and also the element position. The variable `p` corresponds to the last element in the underlying array that can be used in the new slice. The element at position `p` in the underlying array is found at the location `array[i+1]`. Notice that this element isn't necessarily the underlying array's last element, `array[len(array)-1]`.
 
-As you can see, a slice could refer to only a subset of elements.
+Therefore, a slice could refer to only a subset of elements.
 
 Let's say that you want four variables to represent each quarter of the year, and you have a slice of `months` with 12 elements. The following image illustrates how to slice `months` into four new `quarter` slices:
 
