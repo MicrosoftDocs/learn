@@ -1,0 +1,36 @@
+### YamlMime:LearningPath
+uid: learn.wwl.design-machine-learning-solution
+metadata:
+  title: Design a machine learning solution
+  description: Design a machine learning solution with Azure Machine Learning v2
+  ms.date: 03/07/2023
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Design a machine learning solution
+prerequisites: |
+  None
+summary: |
+  There are many options on Azure to train and consume machine learning models. Which service best fits your scenario can depend on a myriad of factors. Learn how to identify important requirements and when to use which service when you want to use machine learning models.
+iconUrl: /training/achievements/design-machine-learning-solution.svg
+levels:
+- beginner
+roles:
+- data-scientist
+products:
+- azure-cognitive-services
+- azure-databricks
+- azure-devops
+- azure-machine-learning
+- azure-synapse-analytics
+- github
+subjects:
+- machine-learning
+modules:
+- learn.wwl.design-data-ingestion-strategy-for-machine-learning-projects
+- learn.wwl.design-machine-learning-model-training-solution
+- learn.wwl.design-model-deployment-solution
+- learn.wwl.design-machine-learning-operations-solution
+trophy:
+  uid: learn.wwl.design-machine-learning-solution.trophy
