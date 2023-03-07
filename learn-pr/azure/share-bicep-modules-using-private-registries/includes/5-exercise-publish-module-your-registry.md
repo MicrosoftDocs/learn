@@ -102,4 +102,4 @@ Similar to the previous steps, you save a precreated module file so that you can
 
 ::: zone-end
 
-You can also use the Azure portal to list the modules in your registry. From your resource group's **Overview** tab, select YOUR_CONTAINER_REGISTRY_NAME and then select **Repositories**.
+You can also use the Azure portal to list the modules in your registry. From your resource group's **Overview** tab, select `YOUR_CONTAINER_REGISTRY_NAME` and then select **Repositories**. You connect to the Azure portal later in this module.

@@ -52,7 +52,7 @@ Here, you build the Bicep file to a JSON ARM template. You don't normally need t
 
 1. Open the _main.json_ file.
 
-   Notice that in the `resources` section of the JSON ARM template, starting at around line 134, some resources have the type `Microsoft.Resources/deployments`. These resources represent the module deployments. Within each deployment, you'll see the resources that were defined in the module you added from the registry.
+   Notice that in the `resources` section of the JSON ARM template, starting at around line 134, some resources have the type `Microsoft.Resources/deployments`. These resources represent the module deployments that were defined in the module you added from the registry.
 
 ::: zone-end
 
@@ -68,7 +68,7 @@ Here, you build the Bicep file to a JSON ARM template. You don't normally need t
 
 1. Open the _main.json_ file.
 
-   Notice that in the `resources` section of the JSON ARM template, starting at around line 134, some resources have the type `Microsoft.Resources/deployments`. These resources represent the module deployments. Within each deployment, you'll see the resources that were defined in the module you added from the registry.
+   Notice that in the `resources` section of the JSON ARM template, starting at around line 134, some resources have the type `Microsoft.Resources/deployments`. These resources represent the module deployments that were defined in the module you added from the registry.
 
 ::: zone-end
 
@@ -113,7 +113,7 @@ If the file doesn't match, copy the example or adjust your template to match the
 
 ## Deploy to Azure
 
-In the Visual Studio Code terminal, deploy the template to Azure by running the following command. This process can take a couple of minutes to complete, and then you'll have a successful deployment.
+In the Visual Studio Code terminal, deploy the template to Azure by running the following command. This process can take a couple of minutes to complete a successful deployment.
 
 ::: zone pivot="cli"
 
@@ -149,8 +149,8 @@ New-AzResourceGroupDeployment -TemplateFile main.bicep
 
    Notice that three deployments are listed:
 
-   - **main**, which represents the deployment of your parent Bicep file
-   - **cdn** and **website**, which represent the modules that you included in your _main.bicep_ file
+   - **main** represents the deployment of your parent Bicep file.
+   - **toy-dog-cdn** and **toy-dog-website** represent the modules that you included in your _main.bicep_ file.
 
 1. Select the **main** deployment and expand **Deployment details**.
 

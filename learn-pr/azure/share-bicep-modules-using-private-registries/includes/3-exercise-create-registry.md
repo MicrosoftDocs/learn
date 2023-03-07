@@ -1,6 +1,6 @@
 [!INCLUDE [Sandbox explanation](../../includes/azure-template-exercise-sandbox-subscription.md)]
 
-Before you can publish the Bicep modules for the CDN and website, you need to create a registry for your organization. You'll publish the shared modules to the registry. Other teams can then create deployments that include the shared modules.
+Before you can publish the Bicep modules for the CDN and website, you need to create a registry for your organization. Then publish the shared modules to the registry. Other teams can then create deployments that include the shared modules.
 
 In this exercise, you will:
 
@@ -35,11 +35,11 @@ To deploy resources to Azure, you need to sign in to your Azure account from the
 
 ## Create a container registry
 
-Here, you create a new registry to store and share your Bicep modules. You'll use Azure Container Registry.
+Here, you create a new registry to store and share your Bicep modules. This example uses Azure Container Registry.
 
 ::: zone pivot="cli"
 
-1. Decide on a unique name for your container registry. The name must be globally unique across Azure. Choose one that's 5 to 50 characters in length and that contains letters and numbers. You'll use it in subsequent steps.
+1. Select a unique name for your container registry. The name must be globally unique across Azure. Choose one that's 5 to 50 characters in length and that contains letters and numbers. You use the name in subsequent steps.
 
 1. Create a container registry by running this command in the Visual Studio Code terminal. Replace the `YOUR_CONTAINER_REGISTRY_NAME` placeholder with the name that you selected in the preceding step.
 
@@ -57,7 +57,7 @@ Here, you create a new registry to store and share your Bicep modules. You'll us
 
 ::: zone pivot="powershell"
 
-1. Decide on a unique name for your container registry. The name can't be used by any other Azure customers. Choose one that's 5 to 50 characters in length and that contains letters and numbers. You'll use it in subsequent steps.
+1. Select a unique name for your container registry. The name must be globally unique across Azure. Choose one that's 5 to 50 characters in length and that contains letters and numbers. You use the name in subsequent steps.
 
 1. Create a container registry by running this command in the Visual Studio Code terminal. Replace the `YOUR_CONTAINER_REGISTRY_NAME` placeholder with the name that you selected in the preceding step.
 
@@ -111,6 +111,6 @@ Now that you've created your registry, you can connect to it to verify that it's
 
 1. The Azure PowerShell cmdlet shows no output.
 
-   You see no results because you haven't published any modules yet. You'll learn more about publishing modules in the next unit.
+   There are no results because you haven't published any modules yet. You learn more about publishing modules in the next unit.
 
 ::: zone-end

@@ -11,7 +11,7 @@ A Bicep _registry_ is the place where modules are stored and shared. Anyone can 
 > [!TIP]
 > Microsoft maintains a public Bicep module registry. The public registry contains modules that anybody in the community can use. Over time, the public registry will contain modules to help to achieve some common scenarios in Bicep.
 >
-> This Learn module focuses on sharing your own modules by using private registries. For more information on the public registry, see the summary unit.
+> This Learn module focuses on sharing your own modules by using private registries. The summary unit has a link to more information about the public registry.
 
 ## How do registries compare to template specs?
 
@@ -33,7 +33,7 @@ If your organization uses Kubernetes or another containerization technology, you
 
 Currently, Bicep supports Azure Container Registry. In the future, Microsoft plans to support other registries, such as Docker Hub.
 
-Azure Container Registry provides multiple service tiers, with different capabilities and limits. When you provision your own registry, you'll need to select the tier that suits your requirements. You'll get links to more information in the summary unit.
+Azure Container Registry provides multiple service tiers, with different capabilities and limits. When you provision your own registry, you'll need to select the tier that suits your requirements. There are links to more information in the summary unit.
 
 Soon, you'll learn how to publish modules to a registry.
 
@@ -44,6 +44,6 @@ Soon, you'll learn how to publish modules to a registry.
 
 Because Azure Container Registry provides a private registry for your organization, you can control who has access to it. Azure Container Registry provides several options for managing access, including Azure Active Directory (Azure AD) and keys that you issue to individual users.
 
-When you work with Bicep, the easiest approach is to use Azure AD authentication. Bicep automatically detects the Azure AD identity that you use in the Azure CLI or Azure PowerShell, so you don't need to sign in again. You'll see how authentication works in the next exercise. When you use a Bicep module registry from a pipeline, you'll use a special type of identity called a _service principal_.
+When you work with Bicep, the easiest approach is to use Azure AD authentication. Bicep automatically detects the Azure AD identity that you use in the Azure CLI or Azure PowerShell, so you don't need to sign in again. You'll see how authentication works in the next exercise. When you use a Bicep module registry from a pipeline, you use a special type of identity called a _service principal_.
 
 You can separately control who has permission to write modules to your registry and who has permission to read modules.

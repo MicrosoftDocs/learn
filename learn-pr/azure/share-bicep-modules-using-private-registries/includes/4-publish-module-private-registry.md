@@ -6,14 +6,14 @@ When you've worked with modules in the past, you've probably used the module's f
 
 Here's an example path for a module in a private Azure container registry:
 
-:::image type="content" source="../media/4-private-module-path.png" alt-text="Diagram that shows a module path." border="false":::
+:::image type="content" source="../media/4-private-module-path.png" alt-text="Diagram that shows the syntax for a module path." border="false":::
 
 The path contains four segments:
 
 - **Scheme**: Bicep supports several module types, which are called _schemes_. When you work with Bicep registries, the scheme is `br`.
 - **Registry**: The name of the registry that contains the module you want to use. In the preceding example, the registry name is `toycompany.azurecr.io`, which is the name of the container registry.
 - **Module identifier**: The full path to the module within the registry.
-- **Tag**: Tags typically represent versions of modules, because a single module can have multiple versions published. You'll learn more about tags and versions shortly.
+- **Tag**: Tags typically represent versions of modules, because a single module can have multiple versions published. You learn more about tags and versions in the next section.
 
 When you publish your own module identifier, use a meaningful identifier that indicates the purpose of the module. You can optionally use _namespaces_, where you use slashes (`/`) to distinguish between parts of a name. However, Azure Container Registry and Bicep don't understand a hierarchy. They treat the module identifier as a single value.
 
@@ -67,9 +67,8 @@ az bicep publish \
 
 ::: zone pivot="powershell"
 
-```cmd
-bicep publish `
-   module.bicep `
+```azurepowershell
+bicep publish module.bicep `
    --target 'br:toycompany.azurecr.io/mymodules/modulename:moduleversion'
 ```
 
