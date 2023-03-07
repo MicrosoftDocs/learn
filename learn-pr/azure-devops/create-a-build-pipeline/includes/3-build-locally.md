@@ -1,51 +1,25 @@
 Get ready to start building a CI pipeline with Microsoft Azure Pipelines. The first step is to build and run the *Space Game* web app on your local machine. Understanding how to build software locally will prepare you to repeat the process in the pipeline.
 
-Mara is going to do exactly that, and by following the procedures, you can do the same thing. Everyone on the team, including Mara, uses Visual Studio Code to build and run apps. But the team uses a centralized version control system for its code, and Mara is more comfortable with GitHub, so she's going to use that. If you've never used GitHub, don't worry. Just follow along for now. All will be explained here and in later modules.
+Mara is going to do exactly that, and by following the procedures, you can do the same thing.
 
-## Prepare Visual Studio Code
+You'll use an Azure DevOps Linux self-hosted agent for this module instead of a Microsoft-hosted agent. The advantage of using a self-hosted agent is that you won't run into any parallel-job limits. By default, new Azure DevOps organization accounts do not include parallel jobs. To learn more about parallel jobs, see [Check your parallel jobs and request a free grant](/azure/devops/pipelines/troubleshooting/troubleshooting?view=azure-devops#check-for-available-parallel-jobs).
 
-First, you'll set up Visual Studio Code so you can build the website locally and work with source files.
+## Create an Azure DevOps personal access token
 
-Visual Studio Code comes with an integrated terminal, so you can edit files and work from the command line all in one place.
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+  
+1. From your home page, open user settings :::image type="icon" source="../media/3-user-settings-gear.png" border="false"::: and select **Personal access tokens**.
 
-1. Start Visual Studio Code.
-1. On the **View** menu, select **Terminal**.
-1. In the dropdown, select **bash**:
+1. Select **+ New Token**.
 
-    :::image type="content" source="../../shared/media/vscode-terminal-bash.png" alt-text="Screenshot of selecting the Bash shell in Visual Studio Code.":::
+1. Name your token, select the organization where you want to use the token, and then set your token to automatically expire after a set number of days.
 
-    The terminal window lets you select any shell that's installed on your system, like Bash, Zsh, and PowerShell.
+1. Select the following scopes: **Agent Pools (Read & manage)** and **Deployment Groups (Read & manage)**.
 
-    Here, you'll use Bash. Git for Windows provides Git Bash, which makes it easy to run Git commands.
+1. When you're done, copy the token and store it in a secure location. For your security, it won't be shown again.
 
-    [!include[](../../shared/includes/troubleshoot-code-terminal.md)]
-
-1. To navigate to the directory you want to work from, like your home directory (`~`), run the `cd` command. You can select a different directory if you want.
-
-    ```bash
-    cd ~
-    ```
-
-## Configure Git
-
-If you're new to Git and GitHub, to associate your identity with Git and authenticate with GitHub, you'll first need to run a few commands.
-
-[Set up Git](https://help.github.com/articles/set-up-git?azure-portal=true) explains the process in greater detail.
-
-At a minimum, you'll need to complete the following steps. From the Visual Studio Code integrated terminal, run these commands.
-
-1. [Set your username](https://help.github.com/articles/setting-your-username-in-git?azure-portal=true).
-1. [Set your commit email address](https://help.github.com/articles/setting-your-commit-email-address-in-git?azure-portal=true).
-1. [Cache your GitHub password](https://help.github.com/articles/caching-your-github-password-in-git?azure-portal=true).
-
-> [!NOTE]
-> If you're already using two-factor authentication with GitHub, [create a personal access token](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line?azure-portal=true), and use your token in place of your password when prompted later.
->
-> Treat your access token like you would a password. Keep it in a safe place.
-
-## Get the source code
-
-Now, you'll get the source code from GitHub and set up Visual Studio Code so that you can run the app and work with source code files.
+> [!WARNING]
+> Treat and use a PAT like your password and keep it a secret.
 
 ### Create a fork
 
@@ -57,7 +31,7 @@ Let's fork the *Space Game* web project into your GitHub account:
 
 1. In a web browser, go to [GitHub](https://github.com?azure-portal=true), and sign in.
 
-1. Go to the [Space Game](https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web?azure-portal=true) web project.
+1. Go to the [Space Game](https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web?azure-portal=true) web project. (Temp URL: https://github.com/juliakm/pipelines-codespaces-tailspin)
 
 1. Select **Fork**:
 
@@ -65,31 +39,41 @@ Let's fork the *Space Game* web project into your GitHub account:
 
 1. To fork the repository into your account, follow the instructions.
 
-### Clone your fork locally
 
-Now that you have a copy of the *Space Game* web project in your GitHub account, you can download, or *clone*, a copy to your computer so you can work with it locally.
+## Set up secrets for self-hosted agent
 
-A clone, like a fork, is a copy of a repository. When you clone a repository, you can make changes, verify they work as you expect, and then upload those changes back to GitHub. You can also synchronize your local copy with changes other authenticated users have made to GitHub's copy of your repository.
+Before you create your Codespace, you'll create three passwords that help your self-hosted Azure DevOps agent run. In production, you wouldn't want to use a self-hosted agent in a Codespaces. However, since your team is using Codespaces for testing, this is a good temporary solution when you are building your pipelines.  
 
-To clone the *Space Game* web project to your computer:
+1. In your GitHub repository, select **Settings** > **Secrets and variables** > **Codespaces**.
 
-1. Go to your fork of the *Space Game* web project on GitHub.
+    :::image type="content" source="../media/3-add-codespaces-secret.png" alt-text="Screenshot of GitHub Codespaces secrets. ":::
 
-1. In the command bar, select **Code**. A pane displays showing the Clone option with tabs for types of cloning. From the **HTTPS** tab, select the copy icon next to the URL to copy the URL to your clipboard.
+1. Create three new Codespaces secrets.
+    
+    |Name  |Value  |
+    |---------|---------|
+    |ADO_ORG     |   Name of the Azure DevOps organization (Example: `fabrikam`)     |
+    |ADO_PAT     |   Personal Access Token value      |
+    |ADO_POOL_NAME     |   Name of agent pool (Example: `codespaces-agent-pool`)      | 
+    
+## Set up Codespaces
 
-    :::image type="content" source="../../shared/media/github-clone-button.png" alt-text="Screenshot of locating the URL and copy button from the GitHub repository.":::
+Next, you'll set up Codespaces so that you can build the website, work with source files, and set up a self-hosted agent.
 
-1. In Visual Studio Code, go to the terminal window and enter `git clone`, then paste the URL from your clipboard. It should look similar to:
 
-    ```bash
-    git clone https://github.com/username/mslearn-tailspin-spacegame-web.git
-    ```
+1. In your forked GitHub repository, select **Code**.
 
-1. After the `Cloning 'mslearn-tailspin-spacegame-web'...` operation completes, enter the following command to change to the `mslearn-tailspin-spacegame-web`directory. This is the root directory of your repository.
+1. Select the **Codespaces** tab.
 
-    ```bash
-    cd mslearn-tailspin-spacegame-web
-    ```
+1. Press **...** to create a new Codespace with options.
+
+    :::image type="content" source="../media/3-create-new-options-codespaces.png" alt-text="Screenshot of create a new Codespace with options. ":::
+
+1. Select the `AzurePipelines` Codespace option at `.devcontainer/ADOagent/devcontainer.json` and **Create codespace**. Leave the other default options. 
+
+    :::image type="content" source="../media/3-select-azdo-codespace-option.png" alt-text="Screenshot of select Azure DevOps codespace as a configuration.":::
+
+1. Wait for your Codespace to build. When the build completes, you'll be redirected to an online version of Visual Studio Code. 
 
 ### Set the upstream remote
 
