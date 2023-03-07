@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.automate-deployment-of-sap-azure.exercise-define-terraform-deployment-for-azure-virtual-machine
+uid: learn.wwl.automate-deployment-of-sap-azure.exercise-terraform-deployment-for-infrastructure
 title: Exercise - Define a Terraform deployment for an Azure VM
 metadata:
   title: Exercise - Define a Terraform deployment for an Azure VM

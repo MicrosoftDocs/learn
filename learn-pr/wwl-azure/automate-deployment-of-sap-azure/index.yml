@@ -2,7 +2,7 @@
 uid: learn.wwl.automate-deployment-of-sap-azure
 metadata:
   title: Automate Deployment of SAP on Azure
-  description: "<div|<span style=\"color:rgb(34, 34, 34);font-family:&quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, Verdana;font-size:12px;display:inline !important;\"|After this module, you will be able to run automated deployments of SAP on Azure infrastructure.</span| </div|"
+  description: "After this module, you will be able to run automated deployments of SAP on Azure infrastructure."
   ms.date: 03/07/2023
   author: wwlpublish
   ms.author: eric
@@ -36,10 +36,10 @@ subjects:
 - cloud-computing
 units:
 - learn.wwl.automate-deployment-of-sap-azure.introduction
-- learn.wwl.automate-deployment-of-sap-azure.explore-azure-resource-manager-automation-for-sap
-- learn.wwl.automate-deployment-of-sap-azure.exercise-deploy-infrastructure-azure-resource-manager-template-for-sap
-- learn.wwl.automate-deployment-of-sap-azure.exercise-define-terraform-deployment-for-azure-virtual-machine
-- learn.wwl.automate-deployment-of-sap-azure.explore-ansible-for-sap
+- learn.wwl.automate-deployment-of-sap-azure.explore-azure-integrated-automation-for
+- learn.wwl.automate-deployment-of-sap-azure.use-external-tools-to-deploy
+- learn.wwl.automate-deployment-of-sap-azure.exercise-terraform-deployment-for-infrastructure
+- learn.wwl.automate-deployment-of-sap-azure.install-sap-software-azure
 - learn.wwl.automate-deployment-of-sap-azure.knowledge-check
 - learn.wwl.automate-deployment-of-sap-azure.summary
 badge:
