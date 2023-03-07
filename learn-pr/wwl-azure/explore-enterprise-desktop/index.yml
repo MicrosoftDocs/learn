@@ -1,0 +1,50 @@
+### YamlMime:Module
+uid: learn.wwl.explore-enterprise-desktop
+metadata:
+  title: MD-102 Explore the Enterprise Desktop
+  description: "This module teaches students modern endpoint management and the enterprise desktop lifecycle. They will learn about planning, deployment, and maintenance stages. By the end, they'll have a basic understanding to prepare for future learning in this course."
+  ms.date: 03/07/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Explore the Enterprise Desktop
+summary: In this module, students will learn about the fundamental concepts of modern endpoint management and the enterprise desktop lifecycle. Additionally, students will gain an understanding of the different stages of the enterprise desktop lifecycle, such as planning, deployment, and maintenance. By the end of this module, students will have a basic understanding of endpoint management and the enterprise desktop lifecycle, which will prepare them for future learning paths in this course.
+abstract: |
+  After completing this module, you'll be able to:
+  - Describe the benefits of Modern Management.
+  - Explain the enterprise desktop life-cycle model.
+  - Describe considerations for planning hardware strategies.
+  - Describe considerations for post-deployment and retirement.
+prerequisites: |
+  - Strong technical skills installing, maintaining, and troubleshooting the Windows 11 OS or later.
+  - Strong understanding of computer networking, client security, and application concepts.
+  - Experience using Active Directory Domain Services.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure-virtual-desktop
+- m365
+- mem
+- windows
+- windows-10
+- windows-365
+- windows-11
+- intune
+subjects:
+- it-management-monitoring
+units:
+- learn.wwl.explore-enterprise-desktop.introduction
+- learn.wwl.explore-enterprise-desktop.examine-benefits-modern-management
+- learn.wwl.explore-enterprise-desktop.examine-enterprise-desktop-life-cycle-model
+- learn.wwl.explore-enterprise-desktop.examine-planning-purchasing
+- learn.wwl.explore-enterprise-desktop.examine-desktop-deployment
+- learn.wwl.explore-enterprise-desktop.plan-application-deployment
+- learn.wwl.explore-enterprise-desktop.plan-upgrades-retirement
+- learn.wwl.explore-enterprise-desktop.knowledge-check
+- learn.wwl.explore-enterprise-desktop.summary
+badge:
+  uid: learn.wwl.explore-enterprise-desktop.badge
