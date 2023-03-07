@@ -110,7 +110,7 @@ Examine the Resource Manager template to get a better understanding of its struc
 
 5. Alternatively, select **Deploy** and deploy your custom template based on the Azure Marketplace **Infrastructure for SAP NetWeaver and SAP HANA** item.
  
-    :::image type="content" source="../media/marketplace-8b-cropped.png" alt-text="Edit template displaying JSON." lightbox="../media/marketplace-8b.png":::
+    :::image type="content" source="../media/marketplace-8-b-cropped.png" alt-text="Edit template displaying JSON." lightbox="../media/marketplace-8-b.png":::
 
 ## Generating Azure Resource Manager Templates from deployments
 
