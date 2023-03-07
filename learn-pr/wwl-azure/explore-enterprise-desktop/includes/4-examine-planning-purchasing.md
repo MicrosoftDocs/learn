@@ -7,12 +7,12 @@ The Planning stage includes:
 - **Computer strategy:** This planning stage includes policies such as image and hardware standardization, environment design, replacement frequency, mobile device versus desktop usage, and Bring-Your-Own-Device (BYOD) policies.
 - **Computer selection:** This process involves choosing hardware, software, and peripherals. It includes design configuration and application compatibility testing.
 - **Deployment methods:** Each deployment method includes inherent costs to support that method. Often, IT professionals can use multiple deployment methods to accommodate different scenarios. You should determine whether a cloud-based solution addresses your deployment requirements or what requirements you needed for a device to enroll.
-- **Demand forecasting:** This stage is the organization’s attempt at predicting its future computing resource requirements to determine the resources it will need to purchase.
-- **Design configuration:** This process determines which new features you'll use and how to incorporate them into the overall plan. The new tools, resources, and settings can dramatically simplify configuration processes.
+- **Demand forecasting:** This stage is the organization’s attempt at predicting its future computing resource requirements to determine the resources it needs to purchase.
+- **Design configuration:** This process determines which new features you use and how to incorporate them into the overall plan. The new tools, resources, and settings can dramatically simplify configuration processes.
 
 Purchasing involves getting personnel, material, services, or property from a vendor through allowed means. It's the action or process of acquiring items at the operational level. The purchasing process includes negotiation, contracts, vendor management, shipping, and disposal of packaging materials.
 
-During the Purchasing stage, several decision points will affect the overall cost of the deployment:
+During the Purchasing stage, several decision points affect the overall cost of the deployment:
 
 - **Hardware:** Hardware typically represents approximately half the costs in the purchase phase of the computer life cycle.
 - **Software:** Software costs include productivity applications, antivirus software, and communication tools.
