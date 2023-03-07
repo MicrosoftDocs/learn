@@ -9,8 +9,6 @@ Here, you will:
 - Expose the Census API through the gateway endpoint.
 - Remove headers from the response.
 
-[!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
-
 ## Deploy the Census Web API
 
 You've developed a .NET Core app that returns sensitive census information. The app includes Swashbuckle to generate OpenAPI documentation.
@@ -61,7 +59,7 @@ The next step in this exercise is to create an API gateway in the Azure portal. 
 
 1. On the Azure portal menu or from the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the left menu pane, select **Integration**, and then search for *API Management* in the **Search services and marketplace** search box. Select the **API Management** card in the results, and select **Create** to open the **Create API Management service** screen.
+1. In the left menu pane, select **Integration**, and then enter *API Management* in the **Search services and marketplace** search box. Select the **API Management** card in the results, and select **Create** to open the **Create API Management service** screen.
  
 1. On the **Basics** tab, enter the following values for each setting.
 
