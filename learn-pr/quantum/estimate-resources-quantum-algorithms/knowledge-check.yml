@@ -29,7 +29,7 @@ quiz:
       isCorrect: true
       explanation: "Correct. With resource estimation we can understand how many qubits we need, how long a quantum algorithm will take to run, and which qubit technologies are better suited to solving a specific problem."
 
-  - content: 'The Azure Quantum Resource Estimator takes a physical qubit model, `"qubitParams"`, as input parameter. Which of the following statements is true?'
+  - content: 'The Azure Quantum Resource Estimator takes a physical qubit model, `"qubitParams"`, as target parameter. Which of the following statements is true?'
     choices:
     - content: 'You can pick from six pre-defined qubit models, and each of their values can be updated, meaning that you can modify the existing models and create new ones.'
       isCorrect: true
