@@ -66,4 +66,4 @@ Now let's see if the throttling policy is working:
 
 1. Upon sending the request the third time, you should get a **429 error (too many requests)** response:
 
-   :::image type="content" source="../media/7-too-many-requests.png" alt-text="Screenshot of a HTTP response showing a 429 Too Many Requests error.":::
+   :::image type="content" source="../media/7-too-many-requests.png" alt-text="Screenshot of an HTTP response showing a 429 Too Many Requests error.":::

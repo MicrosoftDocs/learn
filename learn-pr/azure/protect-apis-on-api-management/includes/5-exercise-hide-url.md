@@ -40,4 +40,4 @@ We can use the **Test** tool in the Azure portal to check that the policy behave
 
 You should now see how the **Mask URL** transformation policy has altered the links within the response body to the API Management endpoints.
 
-:::image type="content" source="../media/5-test-results.png" alt-text="Screenshot of a HTTP response with the href value highlighted, showing that the URL has been masked.":::
+:::image type="content" source="../media/5-test-results.png" alt-text="Screenshot of an HTTP response with the href value highlighted, showing that the URL has been masked.":::
