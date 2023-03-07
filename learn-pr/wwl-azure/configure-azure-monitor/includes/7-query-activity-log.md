@@ -1,3 +1,4 @@
+
 In the Azure portal, you can filter your Azure Monitor activity logs so you can view specific information. The filters enable you to review only the activity log data that meets your criteria. You might set filters to review monitoring data about critical events for your primary subscription and production virtual machine during peak business hours.
 
 :::image type="content" source="../media/query-activity-log-a92271d9.png" alt-text="Screenshot that shows filter options for activity logs in the Azure portal.":::

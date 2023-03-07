@@ -1,12 +1,12 @@
 Code in client apps has to connect to and authenticate with Azure Relay before the apps can send and receive messages.
 
-You've created a relay for your credit-checking service. Now you want to enable your on-premises listener component to connect to the relay, so that it can receive requests and send responses. You also want to complete the code in the client app, which will send credit-check requests to the relay and wait for responses. By connecting to the relay service in this way, you expose the service to components in the cloud, without having to open a port on your on-premises firewall. This approach helps protect the credit-checking service.
+You've created a relay for your credit-checking service. Now you want to enable your on-premises listener component to connect to the relay, so that it can receive requests and send responses. You also want to complete the code in the client app, which sends credit-check requests to the relay and wait for responses. By connecting to the relay service in this way, you expose the service to components in the cloud, without having to open a port on your on-premises firewall. This approach helps protect the credit-checking service.
 
-In this unit, you'll write the Azure Relay code in both the sender and listener applications.
+In this unit, you write the Azure Relay code in both the sender and listener applications.
 
 ## Clone the sample apps
 
-You have two command-line apps that will send messages to and listen for messages from the relay that you created earlier. Most of the code is finished, but you must add the Azure Relay code to the apps. Let's start by obtaining the code:
+You have two command-line apps that send messages to and listen for messages from the relay that you created earlier. Most of the code is finished, but you must add the Azure Relay code to the apps. Let's start by obtaining the code:
 
 - In Azure Cloud Shell at the right, use `git` to clone the sample apps:
 
@@ -137,7 +137,7 @@ To request a credit check, the sender app sends a name in an HTTP GET request to
 
 ## Start the apps
 
-The listener and sender apps are complete. You can now run both apps, use the sender to request a credit check, and then observe the results in both apps. To run both apps at once, you'll use a second instance of Cloud Shell to host the sender.
+The listener and sender apps are complete. You can now run both apps, use the sender to request a credit check, and then observe the results in both apps. To run both apps at once, use a second instance of Cloud Shell to host the sender.
 
 1. In Cloud Shell, to build and run the listener app, run these commands:
 

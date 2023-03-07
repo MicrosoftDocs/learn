@@ -15,7 +15,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which is the output of `Console.WriteLine($\"Tax rate: {tax:P2}\");`, where `tax` is defined by `decimal tax = .12051m;`?"
+  - content: "Which is the output of `Console.WriteLine($\"Tax rate: {tax:P1}\");`, where `tax` is defined by `decimal tax = .12051m;`?"
     choices:
     - content: "`Tax rate: 12.05 %`"
       isCorrect: false

@@ -15,11 +15,11 @@ By the end of this module, you'll have experience developing applications that u
 
 In this module, you'll practice how to:
 
-- Use Visual Studio Code to develop a C# console application that uses foreach loops to access array data.
-- Use if statements to evaluate conditions and create code branches.
+- Use Visual Studio Code to develop a C# console application that uses `foreach` loops to access array data.
+- Use `if` statements to evaluate expressions and create code branches.
 
 ## Prerequisites
 
 - Experience using Visual Studio Code to develop, build, and run C# console applications that include console I/O and access the methods of .NET classes.
-- Experience using if statements in C# to evaluate an expression and branch code accordingly.
-- Experience using a foreach loop to access elements of array variables.
+- Experience using `if` statements in C# to evaluate an expression and branch code accordingly.
+- Experience using a `foreach` loop to access elements of array variables.
