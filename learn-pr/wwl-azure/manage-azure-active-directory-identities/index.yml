@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.manage-azure-active-directory-identities
+metadata:
+  title: Manage Azure Active Directory identities
+  description: "This module enables you to handle Azure AD tasks, including RBAC, user/group management, PowerShell cmdlets, and AD DS object synchronization. You'll effectively utilize and manage Azure AD in your organization after completing this module."
+  ms.date: 03/07/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+title: Manage Azure Active Directory identities
+summary: Upon completing this module, you'll be able to perform various tasks related to Azure Active Directory (AD). You will be able to explain the concept of role-based access control (RBAC) and user roles within Azure AD. Additionally, you will learn how to create and manage users and groups in Azure AD. You will also learn to use Windows PowerShell cmdlets to manage Azure AD. Finally, you have the ability to describe how to synchronize objects from Active Directory Domain Services (AD DS) to Azure AD. These skills will allow you to manage and utilize Azure AD in your organization effectively.
+abstract: |
+  After this module, you should be able to:
+  - Describe RBAC and user roles in Azure AD.
+  - Create and manage users in Azure AD.
+  - Create and manage groups in Azure AD.
+  - Use Windows PowerShell cmdlets to manage Azure AD.
+  - Describe how you can synchronize objects from AD DS to Azure AD.
+prerequisites: |
+  - Strong technical skills installing, maintaining, and troubleshooting the Windows 11 OS or later.
+  - Strong understanding of computer networking, client security, and application concepts.
+  - Experience using Active Directory Domain Services.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- identity-access-admin
+- support-engineer
+products:
+- azure-powershell
+- mem
+- mem-configuration-manager
+- mem-intune
+- active-directory
+- azure-active-directory-connect
+units:
+- learn.wwl.manage-azure-active-directory-identities.introduction
+- learn.wwl.manage-azure-active-directory-identities.examine-rbac-user-roles-azure-ad
+- learn.wwl.manage-azure-active-directory-identities.create-manage-users-azure-ad
+- learn.wwl.manage-azure-active-directory-identities.create-manage-groups-azure-ad
+- learn.wwl.manage-azure-active-directory-identities.manage-azure-ad-objects-powershell
+- learn.wwl.manage-azure-active-directory-identities.synchronize-objects-ad-ds-azure-ad
+- learn.wwl.manage-azure-active-directory-identities.knowledge-check
+- learn.wwl.manage-azure-active-directory-identities.summary
+badge:
+  uid: learn.wwl.manage-azure-active-directory-identities.badge
