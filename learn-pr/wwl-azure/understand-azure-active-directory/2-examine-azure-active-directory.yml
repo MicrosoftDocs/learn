@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-azure-active-directory.examine-azure-active-directory
+title: Examine Azure Active Directory
+metadata:
+  title: Examine Azure Active Directory
+  description: "Examine Azure Active Directory"
+  ms.date: 03/07/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-examine-azure-active-directory.md)]
