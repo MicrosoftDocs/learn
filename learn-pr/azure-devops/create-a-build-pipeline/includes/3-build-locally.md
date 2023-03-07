@@ -2,7 +2,7 @@ Get ready to start building a CI pipeline with Microsoft Azure Pipelines. The fi
 
 Mara is going to do exactly that, and by following the procedures, you can do the same thing.
 
-You'll use an Azure DevOps Linux self-hosted agent for this module instead of a Microsoft-hosted agent. The advantage of using a self-hosted agent is that you won't run into any parallel-job limits. By default, new Azure DevOps organization accounts do not include parallel jobs. To learn more about parallel jobs, see [Check your parallel jobs and request a free grant](/azure/devops/pipelines/troubleshooting/troubleshooting?view=azure-devops#check-for-available-parallel-jobs).
+You'll use an Azure DevOps Linux self-hosted agent for this module instead of a Microsoft-hosted agent. The advantage of using a self-hosted agent is that you won't run into any parallel-job limits. By default, new Azure DevOps organization accounts do not include parallel jobs. To learn more about parallel jobs, see [Check your parallel jobs and request a free grant](/azure/devops/pipelines/troubleshooting/troubleshooting#check-for-available-parallel-jobs).
 
 ## Create an Azure DevOps personal access token
 
