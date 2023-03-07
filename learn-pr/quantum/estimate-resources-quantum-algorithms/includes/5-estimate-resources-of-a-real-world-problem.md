@@ -119,7 +119,14 @@ def resource_estimation_job_from_logical_counts(
 
 ### Running experiments
 
-As configurations for the experiment we use all six pre-defined qubit parameters. As pre-defined QEC scheme we use `surface_code` with gate-based qubit parameters, and `floquet_code` with Majorana based qubit parameters. For all experiments, we assume an error budget of 1/3.
+A resource estimation job consist of two types of job parameters: 
+
+- [Target parameters](xref:microsoft.quantum.overview.resources-estimator#target-parameters): qubit model, QEC schemes, and error budget.
+- Operation arguments (optional): arguments that can be passed to the QIR program. 
+
+The Azure Quantum Resource Estimator allows you to submit jobs with multiple configurations of job parameters, or multiple *items*, as a single job to avoid rerunning multiple jobs on the same quantum program.
+
+As configurations for our experiment, we use all six pre-defined qubit parameters. As pre-defined QEC scheme we use `surface_code` with gate-based qubit parameters, and `floquet_code` with Majorana based qubit parameters. For all experiments, we assume an error budget of 1/3. Therefore, we have six different items of configurations.
 
 ```python
 labels = ["Gate-based µs, 10⁻³", "Gate-based µs, 10⁻⁴", "Gate-based ns, 10⁻³", "Gate-based ns, 10⁻⁴", "Majorana ns, 10⁻⁴", "Majorana ns, 10⁻⁶"]
