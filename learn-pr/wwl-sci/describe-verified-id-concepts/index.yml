@@ -27,6 +27,7 @@ roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/met
   - business-user
   - student
 products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
+- entra
 - entra-verified-id
 subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
   - identity-access
