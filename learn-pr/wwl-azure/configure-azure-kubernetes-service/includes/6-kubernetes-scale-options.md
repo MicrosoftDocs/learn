@@ -38,7 +38,7 @@ Now let's consider the details for working with the cluster autoscaler.
    
    When the cluster autoscaler notices pods that can't be scheduled due to node pool resource constraints, the number of nodes within the node pool is increased to provide the extra compute resources. When the extra nodes are successfully deployed and available for use within the node pool, the pods are then scheduled to run on them.
 
-- **Consider burst scaling to Azure Container Instances**. If your application needs to scale rapidly, some pods might remain in a state waiting to be scheduled until the new nodes deployed by the cluster autoscaler can accept the scheduled pods. For applications that have high burst demands, you can scale with virtual nodes and Azure Container Instances. We take a closer at rapid burst scaling in the next section.
+- **Consider burst scaling to Azure Container Instances**. If your application needs to scale rapidly, some pods might remain in a state waiting to be scheduled until the new nodes deployed by the cluster autoscaler can accept the scheduled pods. For applications that have high burst demands, you can scale with virtual nodes and Azure Container Instances. We take a closer look at rapid burst scaling in the next section.
 
 - **Consider scale-in events**. The cluster autoscaler monitors the pod scheduling status for nodes that haven't recently received new scheduling requests. This scenario indicates that the node pool has more compute resources than required, so the number of nodes can be decreased.
 
