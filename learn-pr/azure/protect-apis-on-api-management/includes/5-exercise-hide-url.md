@@ -1,14 +1,14 @@
-If an API that you host includes its original URL in responses, clients may be able to bypass your API Management policies by connecting directly to the API. You can prevent that by masking the original URL in API responses.
+If you host an API that includes its original URL in responses, clients may be able to bypass your API Management policies by connecting directly to the API. You can prevent that by masking the original URL in API responses.
 
 The government census API includes its URL in this way. You want to make sure that all requests go through API Management.
 
-In this unit, you will mask some of the data returned in the body of the census API. You will learn how to use a transformation policy to rewrite the URL data exposed in the body of the response.
+In this unit, you learn how to mask some of the data returned in the body of the census API. You use a transformation policy to rewrite the URL data exposed in the body of the response.
 
 ## Mask URLs
 
-The following exercise will demonstrate how to apply the **Mask URL** transformation policy within API Management.
+The following exercise demonstrates how to apply the **Mask URL** transformation policy within API Management.
 
-![Overview of API management.](../media/3-remove-header.png)
+:::image type="content" source="../media/3-remove-header.png" alt-text="Overview of API management.":::
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
@@ -36,8 +36,8 @@ We can use the **Test** tool in the Azure portal to check that the policy behave
 
 1. Select **GetLatestCensus**, and then select **Send**.
 
-    ![Mask URL Policy.](../media/5-test-mask-url.png)
+   :::image type="content" source="../media/5-test-mask-url.png" alt-text="Screenshot showing the Mask URL Policy.":::
 
 You should now see how the **Mask URL** transformation policy has altered the links within the response body to the API Management endpoints.
 
-![Mask URL Transformation Policy altered links.](../media/5-test-results.png)
+:::image type="content" source="../media/5-test-results.png" alt-text="[Mask URL Transformation Policy altered links.":::
