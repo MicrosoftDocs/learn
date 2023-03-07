@@ -8,7 +8,7 @@ The Azure Quantum Resource Estimator takes a [Quantum Intermediate Representatio
 
 ## How does the Azure Quantum Resource Estimator work? 
 
-The Azure Quantum Resource Estimator takes a set of three inputs, with pre-defined values to easily get you started: 
+The Azure Quantum Resource Estimator takes a set of three inputs known as **target parameters** with pre-defined values to easily get you started: 
 
 - A physical qubit model, `qubitParams`.
 - A Quantum Error Correction (QEC) scheme, `qecScheme`.
@@ -77,8 +77,7 @@ For more information, see [Error budget in the Azure Quantum Resource Estimator]
 
 ## What is the result of a resource estimation job?
 
-The Azure Quantum Resource Estimator takes the optional job parameters `{qubitParams, qecScheme, errorBudget}` and a QIR algorithm, and computes pre- and post-layout estimation of the logical resources required to run such an algorithm in such a computational scenario. 
-
+The Azure Quantum Resource Estimator takes the target parameters `{qubitParams, qecScheme, errorBudget}` and a QIR algorithm, and computes pre- and post-layout estimation of the logical resources required to run such an algorithm in such a computational scenario. 
 
 The Resource Estimator computes logical and physical estimation of the algorithm. It calculates the QEC code distance, and from it, the number of physical qubits needed to encode one logical qubit. It calculates the number of logical qubits, T gates, rotation gates, control gates, measurements, T factory physical values, and total runtime, among others. 
 
