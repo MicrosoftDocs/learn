@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn-wwl.describe-verified-id-concepts
 metadata:
-  title: Describe verified ID concepts
+  title: Describe the concepts behind Microsoft Entra Verified ID
   description: "Describe the core concepts behind Microsoft Entra Verified ID. Gain an understanding of decentralized identifiers and how they're used to issue and verify credentials."
   ms.date: 03/06/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Describe verified ID concepts
+title: Describe the concepts behind Microsoft Entra Verified ID
 summary: "Gain an understanding of decentralized identifiers and how they're used to issue and verify credentials, in a way that delivers on the promise of a decentralized identity system where users control their identities."
 abstract: |
   By the end of this module, you'll be able to:
@@ -27,6 +27,7 @@ roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/met
   - business-user
   - student
 products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
+- entra
 - entra-verified-id
 subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
   - identity-access
