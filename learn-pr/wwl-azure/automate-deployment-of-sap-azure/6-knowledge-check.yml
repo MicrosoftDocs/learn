@@ -4,13 +4,11 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/10/2021
+  ms.date: 03/07/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/6-knowledge-check.md)]
@@ -21,14 +19,14 @@ quiz:
     choices:
     - content: "Policies applied to a management level are automatically applied to all higher levels as well."
       isCorrect: false
-      explanation: "Incorrect. \"Idempotent\" means that you can deploy the same template many times and get the same resource types in the same state."
+      explanation: "Incorrect. \"Idempotent\" means that the same template can be deployed many times and gives the same resource types in the same state."
     - content: "Azure Resource Manager templates can be created and edited only through the Azure portal."
       isCorrect: false
-      explanation: "Incorrect. \"Idempotent\" means that you can deploy the same template many times and get the same resource types in the same state."
-    - content: "You can deploy the same template many times and get the same resource types in the same state."
+      explanation: "Incorrect. \"Idempotent\" means that the same template can be deployed many times and gives the same resource types in the same state."
+    - content: "The same template can be deployed many times and gives the same resource types in the same state."
       isCorrect: true
-      explanation: "That is correct. \"Idempotent\" means that you can deploy the same template many times and get the same resource types in the same state."
-  - content: "Which of the following is one of the four basic Terraform commands used when creating and applying a Terraform execution plan to your cloud infrastructure?"
+      explanation: "That is correct. \"Idempotent\" means that the same template can be deployed many times and gives the same resource types in the same state."
+  - content: "Which of the following is one of the four basic Terraform commands used when creating and applying a Terraform execution plan to a cloud infrastructure?"
     choices:
     - content: "Check"
       isCorrect: false
@@ -43,10 +41,10 @@ quiz:
     choices:
     - content: "One"
       isCorrect: true
-      explanation: "That is correct. You only need to install Ansible on one machine, which could be a local workstation or VM. You can manage an entire fleet of remote machines from that central point."
+      explanation: "That is correct. Ansible needs to be installed on only one machine, which could be a local workstation or VM. An entire fleet of remote machines can be managed from that central point."
     - content: "Two"
       isCorrect: false
-      explanation: "Incorrect. You only need to install Ansible on one machine, which could be a workstation or VM. You can manage an entire fleet of remote machines from that central point."
+      explanation: "Incorrect. Ansible needs to be installed on only one machine, which could be a local workstation or VM. An entire fleet of remote machines can be managed from that central point."
     - content: "All"
       isCorrect: false
-      explanation: "Incorrect. You only need to install Ansible on one machine, which could be a workstation or VM. You can manage an entire fleet of remote machines from that central point."
+      explanation: "Incorrect. Ansible needs to be installed on only one machine, which could be a local workstation or VM. An entire fleet of remote machines can be managed from that central point."

@@ -1,3 +1,5 @@
+
+
 [Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html) is an open-source platform by Red Hat that automates cloud provisioning, configuration management, and application deployments. Using Ansible, you can provision VMs, containers, and your entire cloud infrastructure. In addition to provisioning and configuring applications and their environments, Ansible enables you to automate deployment and configuration of resources in your environment such as virtual networks, storage, subnets, and resources groups. Ansible is also combined with other deployment tools such as Terraform. Terraform calls Ansible in the [SAP on Azure Deployment Automation Framework](https://github.com/Azure/sap-hana/blob/beta/documentation/SAP_Automation_on_Azure/table_of_contents.md) where Ansible is used after infrastructure deployment to install the SAP software. 
 
 ## Ansible components
@@ -32,7 +34,7 @@ Ansible is designed for multiple tier deployments, meaning you don't have to ins
 
 The following workflow and component diagram outlines how playbooks can run in different circumstances, one after another. 
 
-![Workflow and component diagram outlining how playbooks can run in different circumstances.](../media/ansible-workflow.png)
+:::image type="content" source="../media/ansible-workflow.png" alt-text="Workflow and component diagram outlining how playbooks can run in different circumstances.":::
 
 In the workflow, Ansible playbooks:
 
@@ -289,7 +291,7 @@ The following steps outline how to create a resource group in Azure using Ansibl
 
 10. Verify that you receive output like the following code:
 
-    ```yml
+    ```output
     PLAY [localhost] *********************************************************************************
     
     TASK [Gathering Facts] ***************************************************************************

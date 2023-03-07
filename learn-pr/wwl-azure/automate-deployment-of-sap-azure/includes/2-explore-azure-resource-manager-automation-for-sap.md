@@ -1,3 +1,5 @@
+
+
 In this unit, you’ll learn about the native Azure tools for using Azure Resource Manager and Azure Resource Manager Templates to start deploying SAP on Azure infrastructure. Azure Resource Manager templates are an important step on the journey towards understanding how to gain the advantages of infrastructure as code (IaC). These advantages include:
 
 - Consistent configurations
@@ -24,13 +26,13 @@ When a user sends a request from any of the Azure tools, APIs, or SDKs, Resource
 
 The following image shows the role Azure Resource Manager plays in handling Azure requests.
  
-![Resource Manager request model.](../media/consistent-management-layer.png)
+:::image type="content" source="../media/consistent-management-layer-d65508b4.png" alt-text="Resource Manager request model.":::
 
 All capabilities that are available in the portal are also available through PowerShell, Azure CLI, REST APIs, and client SDKs. Functionality initially released through APIs will be represented in the portal within 180 days of initial release.
   
 Azure provides four levels of scope: management groups, subscriptions, resource groups, and resources. The following image shows an example of these layers.
  
-![Management levels.](../media/scope-levels.png)
+:::image type="content" source="../media/scope-levels.png" alt-text="Management levels.":::
 
 You can apply management settings at any of these levels of scope. The level you select determines how widely the setting is applied. Lower levels inherit settings from higher levels. For example, when you apply a policy to the subscription, the policy is applied to all resource groups and resources in your subscription. When you apply a policy on the resource group, that policy is applied to the resource group and all its resources. However, that policy assignment doesn’t apply to other resource groups.
  
