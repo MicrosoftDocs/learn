@@ -1,13 +1,13 @@
-To provide an end to end data technology stack, we'll be creating many resources and integrating them together to create a flow of data. This exercise includes setting up Azure Data Factory, Microsoft Purview, CluedIn, a Service Principal, and an Azure Storage account. If you have these components already, you can move on to the next section. 
+To provide an end to end data technology stack, we'll be creating many resources and integrating them together to create a flow of data. This exercise includes setting up Azure Data Factory, Microsoft Purview, CluedIn, a service principal, and an Azure Storage account. If you have these components already, you can move on to the next section. 
 
 >[!TIP]
 >Even if you already have a security principal, confirm you have the correct permissions in the [set up authentication using a service principal](#set-up-authentication-using-service-principal) section.
 
 ## Create an Azure Data Factory
 
-We'll be using Azure Data Factory as our mechanism to pull data from source systems into storage accounts, but will also be using it as the mechanism to pull data registered in Microsoft Purview to CluedIn to be processed.
+We'll be using Azure Data Factory as our mechanism to pull data from source systems into storage accounts, and pull data registered in Microsoft Purview to CluedIn to be processed.
 
-If you don't have a data factory instance, you can use the following guide to create one:
+If you don't have an Azure Data Factory instance, you can use the following guide to create one:
 
 1. Launch a **Microsoft Edge** or **Google Chrome** web browser. Currently, only Microsoft Edge and Google Chrome web browsers support the Azure Data Factory UI.
 1. Go to the [Azure Data Factory Studio](https://adf.azure.com) and choose the **Create a new data factory** radio button.
@@ -18,7 +18,6 @@ If you don't have a data factory instance, you can use the following guide to cr
 ## Create a Microsoft Purview instance
 
 You'll need to bring your own Microsoft Purview instance to the learning module, or you can create one using these steps:
-
 
 1. Search for **Microsoft Purview** in the [Azure portal](https://portal.azure.com) and select **Create** to create a new Microsoft Purview account.
 

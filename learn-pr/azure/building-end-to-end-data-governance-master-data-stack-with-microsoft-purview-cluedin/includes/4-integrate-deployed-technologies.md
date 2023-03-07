@@ -4,7 +4,7 @@ At this point, you should have all resources running and operational as individu
 
 ## Investigating the data
 
-Download the following files it to your local drive. You'll find seven files representing different sample datasets across common Master Data domains:
+Download the following files it to your local drive. You'll find seven files representing different sample datasets across common master data domains:
 
 * [Companies.csv](https://download.microsoft.com/download/9/e/1/9e119d5d-9e2a-433c-a853-1cee0cfd1664/data/Arca/Companies.csv)
 * [Contacts.csv](https://download.microsoft.com/download/9/e/1/9e119d5d-9e2a-433c-a853-1cee0cfd1664/data/Experian/Contacts.csv)
@@ -80,20 +80,16 @@ Once again, if we look at Lorain, we can see that this time her email ends with 
 
     :::image type="content" source="../media/register-adls-gen2-access-control.png" alt-text="Screenshot that shows the access control for the storage account":::
 
-1. Set the **Role** to **Storage Blob Data Reader** and enter your _Microsoft Purview account name_ under the **Select** input box. Then, select **Save** to give this role assignment to your Microsoft Purview account.
-
-    :::image type="content" source="../media/register-adls-gen2-assign-permissions.png" alt-text="Screenshot that shows the details to assign permissions for the Microsoft Purview account":::
-
-1. Go into your ADLS Gen2 storage account in [Azure portal](https://portal.azure.com)
-1. Navigate to **Security + networking > Networking**
+1. Set the **Role** to **Storage Blob Data Reader** and select **Next**.
+1. Select the **Managed identity** option and select **Select members**.
+1. Select **Microsoft Purview account**, select your account, then select **Select**.
+1. Then, select **Review and assign** to give this role assignment to your Microsoft Purview account.
+1. Navigate to **Security + networking > Networking** in your ADLS Gen2 account.
 
     :::image type="content" source="../media/register-adls-gen2-networking.png" alt-text="Screenshot that shows the details to provide firewall access":::
 
-1. Choose **Selected Networks** under **Allow access from**
-
-    :::image type="content" source="../media/register-adls-gen2-network-access.png" alt-text="Screenshot that shows the details to allow access to selected networks":::
-
-1. In the **Exceptions** section, select **Allow trusted Microsoft services to access this storage account** and hit **Save**
+1. Choose **Enabled from selected virtual networks** under **Public network access**.
+1. In the **Exceptions** section, select **Allow trusted Microsoft services to access this storage account** and select **Save**.
 
     :::image type="content" source="../media/register-adls-gen2-permission-microsoft-services.png" alt-text="Screenshot that shows the exceptions to allow trusted Microsoft services to access the storage account":::
 
@@ -102,6 +98,8 @@ Once again, if we look at Lorain, we can see that this time her email ends with 
 1. Sign in to Microsoft Purview. You can do this by choosing the Microsoft Purview Account in your resource group and then selecting the Open Microsoft Purview Governance Portal button. This will open Microsoft Purview in a new tab.
 
 1. Select your Data Map on the left hand side menu and select Register. Choose ADLS Gen2 from the selection and in the drop-down, then select the instance that was created in the previous step.
+
+1. Select **Register**.
 
 1. After registering your account, select the **New Scan** icon under the **ADLS Gen2 data source**.
 
@@ -117,11 +115,9 @@ Once again, if we look at Lorain, we can see that this time her email ends with 
 
 1. Set your scan to run once, and select **Continue**, then **Save and Run**. It will take only a few minutes to scan these files.
 
-1. After the scan is complete, you should validate that everything was success by making sure that there are nine assets in your Microsoft Purview instance.
+1. You can check the scan by selecting your ADLS Gen2 resource in the data map, and looking at the **Last run status** of the most recent scan. Wait until it is completed.
 
-1. If your scan has run successfully, you should see the Azure Data Lake Storage appear in your Microsoft Purview Data Map.
-
-    :::image type="content" source="../media/Purview_Data_Map.png" alt-text="Screenshot of the data map showing the Azure data lake storage account registered.":::
+1. After the scan is complete, you should validate that everything was success by selecting your ADLS Gen2 resource in Microsoft Purview and making sure that there are ten assets discovered.
 
 1. If you search in Microsoft Purview for Contacts.csv, then you should find your assets in Microsoft Purview.
 
@@ -131,19 +127,11 @@ Once again, if we look at Lorain, we can see that this time her email ends with 
 
     :::image type="content" source="../media/Purview_Azure_Data_Factory.png" alt-text="Screenshot of a data factory connection in Microsoft Purview.":::
 
-    This won't only allow Microsoft Purview to create automated lineage for you based off the ADF scheduled pipelines you have for pulling in the data from the source systems into the raw folder regularly, but also for the lineage that CluedIn will create as part of the process of processing the data as well.
-
-1. You'll also need to set up the right access to CluedIn on the Collections so that they can properly read assets within Microsoft Purview. In the Microsoft Purview Data Map, select the collections, and select you registered your ADLSGen2 resource to (or the root collection) and add these permissions for your service principal:
-
-    * Collection Admin
-    * Data Source Admin
-    * Data Reader
-
-    :::image type="content" source="../media/Purview_Collection_Credentials.png" alt-text="Screenshot of the root collection showing role assignments and the Edit role assignments button.":::
+    This allows Microsoft Purview to create automated lineage for you based off the ADF scheduled pipelines you have for pulling in the data from the source systems into the raw folder regularly, and also allows the lineage that CluedIn will create during data processing.
 
 ## CluedIn
 
-1. You can now open your CluedIn instance by navigating to the CluedIn-AMA Managed Application. You would have also received an email from CluedIn with your Url to your CluedIn studio. Apart from that email, you can find this Url within the CluedIn application in the Azure portal. There will be a Parameters and Outputs menu option in the application. Select that, scroll down to the bottom of the page and you'll see a Url to your own private instance of CluedIn. Copy that into a new browser tab and press enter.
+1. You can now open your CluedIn instance by navigating to the CluedIn-AMA Managed Application. You can find the URL for your CluedIn instance either from the email you received from CluedIn, or by opening CluedIn in the Azure portal and selecting **Parameters and Outputs** and finding the **cluedInInstanceAddress**. Copy that into a new browser tab and press enter.
 
     :::image type="content" source="../media/CluedIn_Login.png" alt-text="Screenshot of the CluedIn log in page.":::
 
@@ -153,13 +141,19 @@ Once again, if we look at Lorain, we can see that this time her email ends with 
 
 ### Connect CluedIn to Microsoft Purview
 
-1. In your CluedIn Studio, go to **Settings** section, under **Administration**. Fill in your Microsoft Purview name into the Base URL, and provide the Client ID and Client Secret from the Service Principal you created earlier.
+1. In your CluedIn Studio, go to **Settings** section, under **Administration**. 
+
+1. In the middle of the page, fill in these values:
+    1. Purview BaseUrl - which will be formatted like `https://<your purview instance>.purview.azure.com`
+    1. Purview ClientId - which is the Application (client) ID from your service principal
+    1. Purview ClientSecret - which is the client secret value from setting up your service principal.
+    1. Purview TenantId - the Azure Tenant ID where your Microsoft Purview account lives.
 
     :::image type="content" source="../media/Purview_CluedIn_Settings.png" alt-text="Screenshot of the CluedIn Administration page.":::
 
-1. Toggle on the setting for **Syncing Microsoft Purview Datasources** and **Poll Microsoft Purview Datasources**. This will integrate the data sources from Microsoft Purview with CluedIn.
+1. Toggle on the settings for **Purview SyncDataSources** and **Purview PollDataSources**. This will integrate the data sources from Microsoft Purview with CluedIn.
 
-1. You'll also notice a setting called **Search Filter for Datasources**. Set this to **CluedInSource**. CluedIn will now be polling every 60 seconds to find Microsoft Purview assets that have been tagged with a Glossary Term that matches the filter.
+1. You'll also notice a setting called **Purview SyncDataSources Keywords**. Set this to **CluedInSource**. CluedIn will now be polling every 60 seconds to find Microsoft Purview assets that have been tagged with a Glossary Term that matches the filter.
 
 ### Flagging assets that can sync with CluedIn
 
