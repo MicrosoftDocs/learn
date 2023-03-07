@@ -122,45 +122,32 @@ def resource_estimation_job_from_logical_counts(
 As configurations for the experiment we use all six pre-defined qubit parameters. As pre-defined QEC scheme we use `surface_code` with gate-based qubit parameters, and `floquet_code` with Majorana based qubit parameters. For all experiments, we assume an error budget of 1/3.
 
 ```python
-experiments = [
-    ("Gate-based µs, 10⁻³", {"qubitParams": {"name": "qubit_gate_us_e3"}, "errorBudget": 0.333}),
-    ("Gate-based µs, 10⁻⁴", {"qubitParams": {"name": "qubit_gate_us_e4"}, "errorBudget": 0.333}),
-    ("Gate-based ns, 10⁻³", {"qubitParams": {"name": "qubit_gate_ns_e3"}, "errorBudget": 0.333}),
-    ("Gate-based ns, 10⁻⁴", {"qubitParams": {"name": "qubit_gate_ns_e4"}, "errorBudget": 0.333}),
-    ("Majorana ns, 10⁻⁴", {"qecScheme": {"name": "floquet_code"}, "qubitParams": {"name": "qubit_maj_ns_e4"}, "errorBudget": 0.333}),
-    ("Majorana ns, 10⁻⁶", {"qecScheme": {"name": "floquet_code"}, "qubitParams": {"name": "qubit_maj_ns_e6", "tGateErrorRate": 0.01}, "errorBudget": 0.333})
+labels = ["Gate-based µs, 10⁻³", "Gate-based µs, 10⁻⁴", "Gate-based ns, 10⁻³", "Gate-based ns, 10⁻⁴", "Majorana ns, 10⁻⁴", "Majorana ns, 10⁻⁶"]
+
+items = [
+    {"qubitParams": {"name": "qubit_gate_us_e3"}, "errorBudget": 0.333},
+    {"qubitParams": {"name": "qubit_gate_us_e4"}, "errorBudget": 0.333},
+    {"qubitParams": {"name": "qubit_gate_ns_e3"}, "errorBudget": 0.333},
+    {"qubitParams": {"name": "qubit_gate_ns_e4"}, "errorBudget": 0.333},
+    {"qecScheme": {"name": "floquet_code"}, "qubitParams": {"name": "qubit_maj_ns_e4"}, "errorBudget": 0.333},
+    {"qecScheme": {"name": "floquet_code"}, "qubitParams": {"name": "qubit_maj_ns_e6", "tGateErrorRate": 0.01}, "errorBudget": 0.333}
 ]
 ```
 
-Next, we're creating a resource estimation job based on logical resource counts that we have extracted for the pre-computed for the 2048-bit factoring instance. We wait for each job to finish and push the extracted resource estimation results into the `experiment_results list`.
+Next, we're creating a resource estimation job for all items based on logical resource counts that we have extracted for the pre-computed for the 2048-bit factoring instance.
 
 ```python
-from ipywidgets import IntProgress, Layout
-from IPython.display import display
-
-experiment_results = []
-
-progress_bar = IntProgress(value=1, min=1, max=len(experiments), style={'description_width': 'initial'}, layout=Layout(width='75%'))
-display(progress_bar)
-
-for idx, (name, params) in enumerate(experiments):
-    progress_bar.description = f"{idx + 1}. {name}"
-
-    job = resource_estimation_job_from_logical_counts(provider,
-        qubit_count=12581,
-        t_count=12,
-        rotation_count=12,
-        rotation_depth=12,
-        ccz_count=3731607428,
-        measurement_count=1078154040,
-        **params # use parameters from experiment configuration
-    )
-    job_monitor(job)
-    result = job.result()
-
-    experiment_results.append((name, result))
-
-    progress_bar.value += 1
+job = resource_estimation_job_from_logical_counts(provider,
+    qubit_count=12581,
+    t_count=12,
+    rotation_count=12,
+    rotation_depth=12,
+    ccz_count=3731607428,
+    measurement_count=1078154040,
+    items=items
+)
+job_monitor(job)
+results = job.result()
 ```
 
 ### Understanding the results
@@ -168,7 +155,7 @@ for idx, (name, params) in enumerate(experiments):
 Finally, we're presenting the experimental results using built-in resource estimation tables and a custom summary table. For this purpose, we write a reusable `dashboard` function that creates an HTML display from a pandas data frame and the resource estimation tables.
 
 ```python
-def dashboard(experiment_results):
+def dashboard(results):
     def get_row(result):
         # Extract raw data from result dictionary
         logical_qubits = result["physicalCounts"]["breakdown"]["algorithmicLogicalQubits"]
@@ -205,30 +192,22 @@ def dashboard(experiment_results):
         # Append all extracted and formatted data to data array
         return (logical_qubits, logical_depth_formatted, num_tstates_formatted, code_distance, num_tfactories, tfactory_fraction_formatted, physical_qubits_formatted, runtime_formatted)
 
-    index, data = zip(*[(name, get_row(result.data())) for (name, result) in experiment_results])
+    data = [get_row(results.data(index)) for index in range(len(results))]
 
     # Create data frame with explicit column names and configuration names extracted from array
     import pandas as pd
-    df = pd.DataFrame(data, columns=["Logical qubits", "Logical depth", "T states", "Code distance", "T factories", "T factory fraction", "Physical qubits", "Physical runtime"], index=index)
+    df = pd.DataFrame(data, columns=["Logical qubits", "Logical depth", "T states", "Code distance", "T factories", "T factory fraction", "Physical qubits", "Physical runtime"], index=labels)
 
     from IPython.display import HTML
 
-    detailed_html = [f"""
-    
-      {name}
-      {result.summary._repr_html_()}
-    """ for (name, result) in experiment_results]
-
     html = f"""
     Summary{df.to_html()}
-    
-      {"".join(detailed_html)}
-    
+    Details{results._repr_html_()}
     """
     
     return HTML(html)
 
-dashboard(experiment_results)
+dashboard(results)
 ```
 
 **Summary**
