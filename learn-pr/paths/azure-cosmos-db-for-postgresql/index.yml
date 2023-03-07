@@ -31,6 +31,6 @@ modules:
   - learn.ingest-query-data-using-azure-cosmos-db-postgresql
   - learn.extend-functionality-of-azure-cosmos-db-postgresql-using-extensions
   - learn.manage-performance-availability-azure-cosmos-db-postgresql
-  - learn.scale-from-single-node-to-multi-node-with-azure-cosmos-db-for-postgresql
+  - learn.design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql
 trophy:
   uid: learn.azure-cosmos-db-for-postgresql.trophy
