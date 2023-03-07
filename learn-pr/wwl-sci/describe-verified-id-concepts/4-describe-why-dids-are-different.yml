@@ -9,6 +9,6 @@ metadata:
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1
+durationInMinutes: 6
 content: |
   [!include[](includes/4-describe-why-dids-are-different.md)]
