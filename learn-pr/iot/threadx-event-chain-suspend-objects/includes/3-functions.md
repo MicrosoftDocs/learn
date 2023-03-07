@@ -2,7 +2,7 @@
 
 The key to using event-chaining is registering the notification callback function(s). There are several possible notification registrations as follows:
 
-- `tx_queue_send_notify (&my_queue, my_queue_notify);` : Registers the `my_queue_send_notify` notification function.
+- `tx_queue_send_notify (&my_queue, my_queue_notify);` : Registers the `my_queue_notify` notification function.
 - `tx_event_flags_set_notify (&my_group, my_event_flags_set_notify);` : Registers the `my_event_flags_set_notify` notification function.
 - `tx_semaphore_put_notify (&my_semaphore, my_semaphore_put_notify);` : Registers the `my_semaphore_put_notify` notification function.
 - `tx_thread_entry_exit_notify (&my_thread, my_entry_exit_notify);` : Registers the `my_entry_exit_notify` notification function.
