@@ -8,7 +8,7 @@ In this unit, you learn how to mask some of the data returned in the body of the
 
 The following exercise demonstrates how to apply the **Mask URL** transformation policy within API Management.
 
-:::image type="content" source="../media/3-remove-header.png" alt-text="Overview of API management.":::
+:::image type="content" source="../media/3-remove-header.png" alt-text="Screenshot of the Design tab with the Policies icon highlighted in the Outbound processing section.":::
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
@@ -36,8 +36,8 @@ We can use the **Test** tool in the Azure portal to check that the policy behave
 
 1. Select **GetLatestCensus**, and then select **Send**.
 
-   :::image type="content" source="../media/5-test-mask-url.png" alt-text="Screenshot showing the Mask URL Policy.":::
+   :::image type="content" source="../media/5-test-mask-url.png" alt-text="Screenshot of the test screen for the GetLatestCensus operation of the Census Data API. The Send button is  highlighted.":::
 
 You should now see how the **Mask URL** transformation policy has altered the links within the response body to the API Management endpoints.
 
-:::image type="content" source="../media/5-test-results.png" alt-text="[Mask URL Transformation Policy altered links.":::
+:::image type="content" source="../media/5-test-results.png" alt-text="Screenshot of a HTTP response with the href value highlighted, showing that the URL has been masked.":::

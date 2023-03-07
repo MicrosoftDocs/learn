@@ -47,7 +47,7 @@ To save time, let's start by running a script to host our RESTful API in Azure. 
     - **api/census/{censusYear}**, which returns a census and associated people for the specified year
     - **api/people/{reference}**, which returns detailed information about a specific person
 
-    :::image type="content" source="../media/3-swagger-home.png" alt-text="Swagger view." loc-scope="third-party"::: <!-- Swagger, no-loc -->
+    :::image type="content" source="../media/3-swagger-home.png" alt-text="Screenshot of the Swagger page for the API, showing the RESTful endpoints." loc-scope="third-party"::: <!-- Swagger, no-loc -->
 
 1. Finally, copy the last URL from Cloud Shell output. This URL is the swagger JSON URL, which you need later in this exercise.
 
@@ -77,7 +77,7 @@ The next step in this exercise is to create an API gateway in the Azure portal. 
     | Pricing tier | Select `Consumption (99.95% SLA)` from the dropdown list. |
     | | |
 
-    :::image type="content" source="../media/3-create-apim-gateway.png" alt-text="Creating an API Management gateway.":::
+    :::image type="content" source="../media/3-create-apim-gateway.png" alt-text="Screenshot of the completed settings on the Basics tab of the Create API Management service screen.":::
 
     > [!NOTE]
     > You're using the consumption plan because it is much faster to create while testing. The overall experience is very similar to the other pricing tiers.
@@ -96,7 +96,7 @@ Now, import the Census API into the API Management gateway:
 
 1. In the **OpenAPI specification** field, paste the swagger JSON URL that you saved earlier in the exercise.
 
-   :::image type="content" source="../media/3-import-api.png" alt-text="Importing the API.":::
+   :::image type="content" source="../media/3-import-api.png" alt-text="Screenshot of the Create from OpenAPI specification dialog box with the swagger JSON URL entered.":::
 
    > [!NOTE]
    > You will notice that, when you tab out of the box, some of the other fields will be populated for you, this is because you have used OpenAPI which specifies all of the required connection details.
@@ -115,7 +115,7 @@ Let's see what data is returned in from the API by default:
 
 1. Select **Send**.
 
-   :::image type="content" source="../media/3-default-test-results.png" alt-text="Default test results.":::
+   :::image type="content" source="../media/3-default-test-results.png" alt-text="Screenshot of the test results for the GetLatestCensus operation, showing the default Response content.":::
 
 1. Notice that **x-powered-by** appears in the response, and shows that the framework is ASP.NET.
 
@@ -127,7 +127,7 @@ Now we add a policy to remove the **x-powered-by** header from responses sent by
 
 1. Select **All operations**, and in the **Outbound processing** section, select the **</>** icon.
 
-   :::image type="content" source="../media/3-remove-header.png" alt-text="Alter Policy.":::
+   :::image type="content" source="../media/3-remove-header.png" alt-text="Screenshot of the Design tab with the Policies icon highlighted in the Outbound processing section.":::
 
 1. Replace the default `<outbound>` tag with this code:
 
@@ -148,6 +148,6 @@ You should now be able to run a test to demonstrate that the headers are removed
 
 1. Select the **GetLatestCensus** operation, and then select **Send**.
 
-   :::image type="content" source="../media/3-headers-removed.png" alt-text="Headers Removed Test.":::
+   :::image type="content" source="../media/3-headers-removed.png" alt-text="Screenshot of the test results for the GetLatestCensus operation, showing the headers removed in the Response.":::
 
 1. The **x-powered-by** header shouldn't be in the HTTP response.

@@ -8,7 +8,7 @@ Here, you learn how to use API Management policies that manipulate the content o
 
 The response body of an API call contains the data that is being requested. In the Census API, for example, the response body contains the JSON data for the respondents. You can also see how the body contains URL links to view individual people:
 
-:::image type="content" source="../media/4-links-in-body.png" alt-text="Links in Response Body.":::
+:::image type="content" source="../media/4-links-in-body.png" alt-text="Screenshot of a default HTTP response with the href value highlighted, showing an unmasked URL link.":::
 
 These links are based on the Census API endpoints and need to be masked to show the API Management URLs instead.
 

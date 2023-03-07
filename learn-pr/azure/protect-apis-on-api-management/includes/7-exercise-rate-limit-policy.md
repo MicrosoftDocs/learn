@@ -18,7 +18,7 @@ To apply a **throttling** policy within API Management, follow these steps:
 
 1. In the **Inbound processing** section, select the **</>** icon.
 
-   :::image type="content" source="../media/7-apply-throttling-policy.png" alt-text="Overview of API management.":::
+   :::image type="content" source="../media/7-apply-throttling-policy.png" alt-text="Screenshot of the Design tab with the Policies icon highlighted in the Inbound processing section.":::
 
 1. Replace the entire `<inbound>` element with the following code:
 
@@ -66,4 +66,4 @@ Now let's see if the throttling policy is working:
 
 1. Upon sending the request the third time, you should get a **429 error (too many requests)** response:
 
-   :::image type="content" source="../media/7-too-many-requests.png" alt-text="Mask URL Policy.":::
+   :::image type="content" source="../media/7-too-many-requests.png" alt-text="Screenshot of a HTTP response showing a 429 Too Many Requests error.":::
