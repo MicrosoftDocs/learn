@@ -34,7 +34,7 @@ If you want to start with this learning path, you need to set up a development e
 [!include[](../../shared/includes/prerequisites.md)]
 
 > [!IMPORTANT]
-> This module uses GitHub Codespaces instead o a Microsoft-hosted agent. If you'd like to use a Microsoft-hosted agent instead, [check your parallel jobs and request a free grant](/azure/devops/pipelines/troubleshooting/troubleshooting#check-for-available-parallel-jobs).
+> This module includes the option to use [GitHub Codespaces](https://github.com/features/codespaces) or a [Microsoft-hosted agent](/azure/devops/pipelines/agents/hosted). If you'd like to use a Microsoft-hosted agent, [check your parallel jobs and request a free grant](/azure/devops/pipelines/troubleshooting/troubleshooting#check-for-available-parallel-jobs).
 
 If your company's policy doesn't allow you to create an Azure DevOps organization, you can create your own personal account. You can get started with Azure DevOps for free.
 
