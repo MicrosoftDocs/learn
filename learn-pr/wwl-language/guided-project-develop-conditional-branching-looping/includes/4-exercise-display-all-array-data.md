@@ -311,7 +311,7 @@ In this task, you run your application from the Integrated Terminal and verify t
     ID #: c3
     Species: cat
     Age: 1
-    Nickname: Puss
+    Nickname: Daisy
     Physical description: small white female weighing about 8 pounds. litter box trained.
     Personality: friendly
 
