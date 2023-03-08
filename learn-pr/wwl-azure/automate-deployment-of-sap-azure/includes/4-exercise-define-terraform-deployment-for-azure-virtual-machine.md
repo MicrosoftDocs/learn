@@ -1,4 +1,6 @@
-[Hashicorp Terraform](https://www.terraform.io/) is an open-source tool for provisioning and managing cloud infrastructure. It codifies infrastructure in configuration files that describe the topology of cloud resources. These resources include virtual machines, storage accounts, and networking interfaces. The Terraform CLI provides a simple mechanism to deploy and version the configuration files to Azure. Understanding Terraform deployment, along with Azure Resource Manager templates and Ansible software install and configuration, will assist you in adopting Infrastructure as Code (IaC) practices like those provided in the **SAP on Azure Deployment Automation Framework**. The [SAP on Azure Deployment Automation Framework repository](https://github.com/Azure/sap-hana/blob/beta/documentation/SAP_Automation_on_Azure/table_of_contents.md) contains tooling designed to enable automated deployment for SAP on Azure. 
+
+
+[Hashicorp Terraform](https://www.terraform.io/) is an open-source tool for provisioning and managing cloud infrastructure. It codifies infrastructure in configuration files that describe the topology of cloud resources. These resources include virtual machines, storage accounts, and networking interfaces. The Terraform CLI provides a simple mechanism to deploy and version the configuration files to Azure. Understanding Terraform deployment, along with Azure Resource Manager templates and Ansible software install and configuration, will assist you in adopting Infrastructure as Code (IaC) practices like those provided in the **SAP on Azure Deployment Automation Framework**. The [SAP on Azure Deployment Automation Framework](/azure/sap/automation/deployment-framework) contains tooling designed to enable automated deployment for SAP on Azure. 
  
 ## Using Terraform
 
@@ -15,7 +17,7 @@ Automated tools that deploy or use Azure services such as Terraform should alway
 Enter the following command, replacing `<subscription_id>` with the ID of the subscription account you want to use:
  
 ```azurecli
-az ad sp create-for-rbac --role Contributor --scopes /subscriptions/{SubID}
+az ad sp create-for-rbac --role Contributor --scopes /subscriptions/<subscription_id>
 ```
 
 > [!IMPORTANT]
@@ -34,7 +36,7 @@ az login --service-principal -u <service_principal_name> -p "<service_principal_
 
 Terraform HCL (HashiCorp Configuration Language) is designed to be readable.
 
-![Example of Azure Resource Manager Template Syntax vs HCL Syntax.](../media/example-azure-resource-manager-template-syntax-hcl-syntax.png)
+    :::image type="content" source="../media/example-azure-resource-manager-template-syntax-hcl-syntax.png" alt-text="Screenshoot of Azure Resource Manager (ARM) Template Syntax vs HashiCorp Configuration Language (HCL) Syntax.":::
 
 ## Sample Linux VM Azure Terraform configuration file
 
@@ -267,7 +269,7 @@ To see Terraform in action using the commands introduced in the next section, cr
 
 In this section, you learn how to create an execution plan and apply it to your cloud infrastructure.
 
-![Basic Terraform commands: Init, Plan, Apply, Destroy.](../media/basic-terraform-commands.png)
+    :::image type="content" source="../media/basic-terraform-commands.png" alt-text="Diagram emphasizing basic Terraform commands for: Init (initialize), Plan, Apply, Destroy.":::
  
 With your Terraform template created, the next steps are: 
 
