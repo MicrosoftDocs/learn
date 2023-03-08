@@ -139,7 +139,7 @@ A *remote* is a Git repository where team members collaborate (similar to a repo
 
 In development mode, the *Space Game* website is configured to run on port 5000.
 
-You'll see a new message in the Visual Studio editor that your application is running on port 5000 is available. Select **Open in Browser** to the app running.
+You'll see a new message in the Visual Studio editor that your application is running on port 5000 is available. Select **Open in Browser** to go to the app running.
 
 :::image type="content" source="../media/3-port-forwarding-message.png" alt-text="Screenshot of port forwarding Codespaces message. ":::
 
