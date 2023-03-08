@@ -25,7 +25,7 @@ The *Normalized Size* and *Recommended Quantity Normalized* values help you norm
 
 ## VM RI Coverage (single recommendation)
 
-The report provides recommendations for VM RI purchases at a single subscription scope, even if you haven't make any reservation purchases. The report is split between on-demand VM usage and RI VM usage over the selected time period.
+The report provides recommendations for VM RI purchases at a single subscription scope, even if you haven't made any reservation purchases. The report is split between on-demand VM usage and RI VM usage over the selected time period.
 
 For details about how to use the report, see the previous VM RI Coverage (shared recommendation) section.
 
