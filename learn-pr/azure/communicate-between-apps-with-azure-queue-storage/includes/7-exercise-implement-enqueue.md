@@ -62,7 +62,7 @@ The sample program contains a `SendMessageAsync` method. In this step, you will 
 
 You are now ready to build and run the program to send your first message to the queue.
 
-1. Make sure you have saved the file in the code editor and then use the `dotnet build` command in the Cloud Shell to to build the application.
+1. Make sure you have saved the file in the code editor and then use the `dotnet build` command in the Cloud Shell to build the application.
 
     ```dotnetcli
     dotnet build
