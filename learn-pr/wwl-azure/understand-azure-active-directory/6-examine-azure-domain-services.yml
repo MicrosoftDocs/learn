@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.understand-azure-active-directory.examine-azure-ad-domain-services
+uid: learn.wwl.understand-azure-active-directory.examine-azure-domain-services
 title: Examine Azure AD Domain Services
 metadata:
   title: Examine Azure AD Domain Services
   description: "Examine Azure AD Domain Services"
-  ms.date: 03/07/2023
+  ms.date: 03/08/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
 durationInMinutes: 4
 content: |
-  [!include[](includes/6-examine-azure-ad-domain-services.md)]
+  [!include[](includes/6-examine-azure-domain-services.md)]

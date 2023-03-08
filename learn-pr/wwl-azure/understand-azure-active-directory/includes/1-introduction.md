@@ -9,4 +9,4 @@ This module aims to equip you with a comprehensive understanding of the followin
  -  Describe Azure AD Premium P1 and P2.
  -  Describe Azure AD Domain Services.
 
- Whether you're a beginner or an experienced IT professional, this module will provide you with the knowledge and skills necessary to understand Azure AD effectively. So, let's explore the exciting world of Azure Active Directory!
+ Whether you're a beginner or an experienced IT professional, this module provides you with the knowledge and skills necessary to understand Azure AD effectively. So, let's explore the exciting world of Azure Active Directory!
