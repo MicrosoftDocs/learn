@@ -1,4 +1,4 @@
-To better evaluate whether Contoso should upgrade to DDoS Protection, you need to understand how the service works. In this unit, you’ll learn about the features of DDoS Protection and how it works.
+After reviewing the previous chapter, you identified Contoso will benefit from the additional safeguards that the DDoS Protection service provides over the infrastructure protection service. In this unit, you’ll learn about the features of DDoS Protection and how it works.
 
 ## Features of DDoS Protection
 

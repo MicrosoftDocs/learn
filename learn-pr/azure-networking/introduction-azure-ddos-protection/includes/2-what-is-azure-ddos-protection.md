@@ -41,6 +41,10 @@ Azure DDoS infrastructure protection provides:
 - Automatic attack mitigation. Once the attack is detected, it’s mitigated.
 - The DDoS infrastructure protection service level agreement (SLA), which is based on the Azure region with best-effort support.
 
+Services running on Azure are inherently protected by the default infrastructure-level DDoS protection. However, the protection that safeguards the infrastructure have a much higher threshold than most applications have the capacity to handle, and does not provide telemetry or alerting, so while a traffic volume may be perceived as harmless by the platform, it can be devastating to the application that receives it.
+
+By onboarding to the Azure DDoS Protection service, the application gets dedicated monitoring to detect attacks and application specific thresholds. A service will be protected with a profile that is tuned to its expected traffic volume, providing a much tighter defense against DDoS attacks.
+
 ### Azure DDoS Network Protection
 
 DDoS Network Protection provides enhanced DDoS mitigation features to defend against DDoS attacks. It's automatically tuned to help protect your specific Azure resources in a virtual network.
@@ -85,3 +89,5 @@ You can notify the team by opening a support request on the Azure portal. Contac
 - Your company is planning a virtual event that's expected to significantly increase your network traffic.
 - There's an attack that's severely degrading the performance of a protected critical business system.
 - Your security team determines that protected resources are under attack, but DDoS Protection isn’t mitigating the attack effectively.
+
+

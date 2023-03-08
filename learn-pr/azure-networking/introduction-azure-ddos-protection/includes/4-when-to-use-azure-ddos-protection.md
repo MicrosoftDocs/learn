@@ -1,4 +1,4 @@
-Here we compare the DDoS infrastructure protection and DDoS Protection tiers to get a better idea of the benefits of upgrading. In this unit, you’ll learn more about the key differences between these tiers and about building resiliency against DDoS attacks into your applications.
+Here we compare the DDoS infrastructure protection service and DDoS Protection service to get a better idea of the benefits of upgrading. In this unit, you’ll learn more about the key differences between the DDoS Protection SKUs and about building resiliency against DDoS attacks into your applications. You will use this information to decide on which SKU is right for Contoso.
 
 ## Build DDoS-resilient services on Azure
 
@@ -37,3 +37,5 @@ With DDoS Protection, the traffic always remains within the Azure datacenter. Ke
 Microsoft uses this defense-in-depth strategy to protect your backend services and your Azure services such as Azure Front Door and Azure Application Gateway.
 
 DDoS Protection offers more features than DDoS infrastructure protection. If you determine that certain applications are critical; for example, a high-volume, revenue-generating Ecommerce website, then DDoS Protection is the recommended choice.
+
+You decided that the DDoS IP Protection SKU is perfect for your small organization as it is a pay-per-IP service. You know that you can switch to the DDoS Network Protection SKU for virtual network protection, DDoS Rapid Response support, and cost guarantee once Contoso expands it's services.
