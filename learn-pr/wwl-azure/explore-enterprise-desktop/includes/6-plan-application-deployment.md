@@ -14,7 +14,7 @@ Newer applications might supersede many older applications that provide similar 
 Application packaging and automated installation involve using silent installation commands from vendors. You can find these commands in installation guides, on Internet forums, or by launching the setup application with the /help or /? Command-line options.
 Silent installation commands may not be available for applications that you develop in-house. If this occurs, you'll either need to package or repackage those applications if the installer package doesn't work. You can create Windows Installer packages. Microsoft Application Virtualization (App-V) provides a packaging mechanism with the application sequencing it uses to create virtual applications. 
  
->[Note!]
+>[!Note]
 >Application Virtualization will be **end of life in April 2026**. We recommend looking at Azure Virtual Desktop with MSIX app attach. We'll cover Azure virtual Desktop later in this course.
 
 ### **Application life-cycle support**
@@ -34,5 +34,5 @@ Microsoft Intune is a suite of centralized device deployment and management tool
 ### **Virtual Application Delivery**
 Virtual application delivery can be beneficial when the client can't run the application. Applications are installed on a server or Cloud PC and delivered remotely. Azure Virtual Desktop and Windows 365 can provide a client desktop experience. These solutions are excellent in scenarios where installing the application could be more practical or desired, such as providing temporary access to a contractor.
 
->[NOTE!]
+>[!Note]
 >Azure Virtual Desktop and Windows 365 will be covered in more detail later in this course.

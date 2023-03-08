@@ -2,14 +2,14 @@
 uid: learn.wwl.explore-enterprise-desktop
 metadata:
   title: MD-102 Explore the Enterprise Desktop
-  description: "This module teaches students modern endpoint management and the enterprise desktop lifecycle. They will learn about planning, deployment, and maintenance stages. By the end, they'll have a basic understanding to prepare for future learning in this course."
+  description: "This module covers modern endpoint management and enterprise desktop lifecycle concepts. It teaches the stages of the lifecycle (planning, deployment, maintenance) and provides a foundation for future learning."
   ms.date: 03/08/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Explore the Enterprise Desktop
-summary: In this module, students will learn about the fundamental concepts of modern endpoint management and the enterprise desktop lifecycle. Additionally, students will gain an understanding of the different stages of the enterprise desktop lifecycle, such as planning, deployment, and maintenance. By the end of this module, students will have a basic understanding of endpoint management and the enterprise desktop lifecycle, which will prepare them for future learning paths in this course.
+summary: This module covers modern endpoint management and enterprise desktop lifecycle concepts. It teaches the stages of the lifecycle (planning, deployment, maintenance) and provides a foundation for future learning.
 abstract: |
   After completing this module, you'll be able to:
   - Describe the benefits of Modern Management.

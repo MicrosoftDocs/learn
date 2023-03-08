@@ -31,5 +31,5 @@ Even with a successful deployment, data loss is almost always unacceptable. Many
 - **Use in-place upgrades when possible.** This process is the recommended practice for deploying upgrades. While re-imaging devices were historically recommended in the past, this is only the case today if there’s a scenario where in-place upgrades aren’t supported.
 - **Use the User State Migration tool** The User State Migration Tool is used when local data or application settings migration is necessary. You can use User State Migration Tool (USMT) 10.0 to streamline and simplify user state migration during large deployments of Windows operating systems. USMT captures user accounts, user files, operating system settings, and application settings and migrates them to a new Windows installation. You can use USMT for both PC replacement and PC refresh migrations.
 
->[Note!]
+>[!Note]
 >For more information, see Common migration scenarios. "https://learn.microsoft.com/windows/deployment/usmt/usmt-common-migration-scenarios"
