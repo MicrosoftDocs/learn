@@ -1,13 +1,13 @@
 
 Arrays can be used to store multiple values of the same type in a single variable. The values stored in an array are generally related. For example, a list of student names could be stored in a string array named `students`.
 
-Your work in the security department is focused on finding a pattern for fraudulent orders. Your code will review past customer orders to identify markers associated with fraudulent orders. Your company hopes the markers can be used to identify potential fraudulent purchase orders in the future before they're processed. Since you don't always know in advance how many orders you need to review, you can't create individual variables to hold each Order ID. How can you create a data structure to hold multiple related values?
+Your work in the security department is focused on finding a pattern for fraudulent orders. You want your code to review past customer orders and identify markers associated with fraudulent orders. Your company hopes the markers can be used to identify potential fraudulent purchase orders in the future before they're processed. Since you don't always know in advance how many orders you need to review, you can't create individual variables to hold each Order ID. How can you create a data structure to hold multiple related values?
 
-In this exercise, you'll use arrays to store and analyze a sequence of Order IDs.
+In this exercise, you use arrays to store and analyze a sequence of Order IDs.
 
 ## What is an array?
 
-An array is a sequence of individual data elements accessible through a single variable name. You use a zero-based numeric index to access each element of an array. As you'll see, arrays allow you to collect together similar data that shares a common purpose or characteristics in a single data structure for easier processing.
+An array is a sequence of individual data elements accessible through a single variable name. You use a zero-based numeric index to access each element of an array. As you can see, arrays allow you to collect together similar data that shares a common purpose or characteristics in a single data structure for easier processing.
 
 ## Declaring arrays and accessing array elements
 
@@ -54,13 +54,13 @@ This module includes hands-on activities that guide you through the process of b
 
 1. Delete the existing code lines.
 
-    You'll use this C# console project to create, build, and run code samples during this module.
+    You can use this C# console project to create, build, and run code samples during this module.
 
 1. Close the Terminal panel.
 
 ### Declare a new array
 
-1. To declare a new array of strings that will hold three elements, enter the following code:
+1. To declare a new array of strings that can hold three elements, enter the following code:
 
     ```c#
     string[] fraudulentOrderIDs = new string[3];
@@ -70,7 +70,7 @@ This module includes hands-on activities that guide you through the process of b
 
     The `new` operator creates a new instance of an array in the computer's memory that can hold three string values. For more information about the `new` keyword, see the module "Call methods from the .NET Class Library using C#".
 
-    Notice that the first set of square brackets `[]` merely tells the compiler that the variable named `fraudulentOrderIDs` will be an array, but the second set of square brackets `[3]` contains the number of elements that the array will hold.
+    Notice that the first set of square brackets `[]` merely tells the compiler that the variable named `fraudulentOrderIDs` is an array, but the second set of square brackets `[3]` indicates the number of elements that the array can hold.
 
     > [!NOTE]
     > This example demonstrates how to declare an array of strings, however, you can create an array of every data type including primitives like `int` and `bool` as well as more complex data types like classes. This example uses the simplicity of strings to minimize the number of new ideas you need to grasp as you're getting started.
@@ -99,7 +99,7 @@ At this point, you've declared an array of strings, but each element of the arra
 
 It might not seem intuitive at first, but it's important to remember that you're declaring the count of elements in the array. However, you access each element of the array starting with zero. So, to access the second item in the array, you use index `1`.
 
-It's common for beginners to forget that arrays are zero-based and attempt to access an element of the array that doesn't exist. When this happens, you'll experience a runtime exception informing you that you attempted to access an element that is outside the boundary of the array.
+It's common for beginners to forget that arrays are zero-based and attempt to access an element of the array that doesn't exist. If you make this mistake, a runtime exception occurs informing you that you attempted to access an element that is outside the boundary of the array.
 
 To intentionally "break" your application, attempt to access a fourth element of your array using index value of `3`.
 
