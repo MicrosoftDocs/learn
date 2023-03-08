@@ -23,7 +23,7 @@ You use the tenant administrator account to sign up for a new trial or paid subs
 
 You can only manage Azure AD if you're a Global Administrator of the Azure AD instance. You can only sign in to an Azure portal if you’re the tenant administrator or if the tenant administrator has configured an organizational account to be a co-administrator. 
 
-> [Note!] Tenant administrators and co-administrators can manage Azure AD by using the Azure portal because by default these accounts automatically are granted the Global Administrator role in the Active Directory instance that is associated with the subscription.
+> [!Note] Tenant administrators and co-administrators can manage Azure AD by using the Azure portal because by default these accounts automatically are granted the Global Administrator role in the Active Directory instance that is associated with the subscription.
 
 Within Azure AD, you can configure users with the following roles:
 
