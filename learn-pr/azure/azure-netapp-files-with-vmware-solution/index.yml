@@ -34,7 +34,7 @@ subjects:
 - migration
 units:
 - learn.azure.azure-netapp-files-with-vmware-solution.introduction
-- learn.azure.azure-netapp-files.what-is-azure-netapp-files
+- learn.azure.azure-netapp-files-with-vmware-solution.what-is-azure-netapp-files
 - learn.azure.azure-netapp-files-with-vmware-solution.prepare-to-attach
 - learn.azure.azure-netapp-files-with-vmware-solution.map-azure-netapp-files-shares
 - learn.azure.azure-netapp-files-with-vmware-solution.knowledge-check
