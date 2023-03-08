@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-exception-handling-c-sharp.exercise-try-catch
+title: 'Exercise - Implement try-catch exception handling '
+metadata:
+  title: Exercise - Implement try-catch exception handling
+  description: "Exercise - Implement try-catch exception handling"
+  ms.date: 03/08/2023
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-exercise-try-catch.md)]

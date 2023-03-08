@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-exception-handling-c-sharp.examine-compiler-generated-exceptions
+title: 'Examine compiler-generated exceptions '
+metadata:
+  title: Examine compiler-generated exceptions
+  description: "Examine compiler-generated exceptions"
+  ms.date: 03/08/2023
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-examine-compiler-generated-exceptions.md)]
