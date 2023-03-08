@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.wwl.review-principles-code-debugging-exception-handling-c-sharp
+metadata:
+  title: Review the principles of code debugging and exception handling
+  description: "Review the principles of code debugging and exception handling"
+  ms.date: 03/08/2023
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+title: Review the principles of code debugging and exception handling
+summary: Examine the code debugging process and the benefits provided by code debuggers, and learn what an exception is and how exceptions are used in an application.
+abstract: |
+  - Review the responsibilities for software testing, debugging, and exception handling.
+  - Examine the code debugging process and the benefits provided by code debugger tools.
+  - Examine what an exception is and the options for managing exceptions in your code.
+prerequisites: |
+  - An installation of Visual Studio Code that's configured for C# application development.
+  - Ability to develop C# console applications that implement business logic using iteration statements, selection statements, and custom methods.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- dotnet
+- dotnet-framework
+- vs-code
+subjects:
+- development-tools
+units:
+- learn.wwl.review-principles-code-debugging-exception-handling-c-sharp.introduction
+- learn.wwl.review-principles-code-debugging-exception-handling-c-sharp.get-started-test-debug-exception
+- learn.wwl.review-principles-code-debugging-exception-handling-c-sharp.examine-code-debug
+- learn.wwl.review-principles-code-debugging-exception-handling-c-sharp.examine-code-exception
+- learn.wwl.review-principles-code-debugging-exception-handling-c-sharp.knowledge-check
+- learn.wwl.review-principles-code-debugging-exception-handling-c-sharp.summary
+badge:
+  uid: learn.wwl.review-principles-code-debugging-exception-handling-c-sharp.badge
