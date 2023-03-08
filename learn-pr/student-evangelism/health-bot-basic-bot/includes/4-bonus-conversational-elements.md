@@ -4,7 +4,7 @@ This unit describes more elements for flow control and advanced functionality to
 
 From sending prompt messages to getting answers from the user to specific questions, interaction with users is a mandatory functionality in any chat bot conversation. Azure Health Bot provides a simple interface to allow communication with the user in scenarios and data flows.
 
-:::image type="content" source="../media/4-conversational-elements.png" alt-text="Screenshot that shows the three conversational elements: Prompt, Yes or No, and Statement.":::
+:::image type="content" source="../media/4-health-bot-conversational-elements.png" alt-text="Screenshot that shows the three conversational elements: Prompt, Yes or No, and Statement.":::
 
 ### Prompt
 
@@ -30,7 +30,7 @@ A statement triggers an output from the health bot instance with no expectation 
 
 The data flow components are responsible for constructing, executing, and controlling scenario logic and data flow.
 
-:::image type="content" source="../media/4-flow-control.png" alt-text="Screenshot that shows the five elements of flow control: Branch, Switch, Begin, Replace, and End.":::
+:::image type="content" source="../media/4-health-bot-flow-control-elements.png" alt-text="Screenshot that shows the five elements of flow control: Branch, Switch, Begin, Replace, and End.":::
 
 ### Branch
 
@@ -42,17 +42,17 @@ The switch element defines a multi-way split in the flow of the scenario accordi
 
 Sharing the same functionality between different scenarios is common. It's possible to create a scenario that can be called throughout the project. It can receive input parameters and return output to the calling scenario, making it reusable. The variables defined in such a scenario are local to the scope of the instance. So they won't affect other variables, even variables with the same name.
 
-### Begin
+### Begin Scenario
 
 The begin element invokes a sub-scenario. Sub-scenario is another smaller scenario which is connected to the main scenario through a keyword or action. Execution of the current scenario is resumed after the sub-scenario ends.
 
 Select the relevant scenario trigger value from the dropdown menu. Define the arguments with either a literal or a variable object. Define the output variable name with the return value from the called scenario.
 
-### Replace
+### Replace Scenario
 
 When you want to completely replace a scenario and end the current scenario, you can use the **Replace Scenario** option.
 
-### End
+### End Scenario
 
 When you're ready to return from the called scenario, place an end object from the end scenario with the result element in the sub-scenario.
 
@@ -65,9 +65,9 @@ The scope of the end object is as follows:
 
 The Health Bot service is a highly configurable and extensible bot-building platform. It allows integration with other services and resources into your scenarios and flows. This capability has the potential to enhance conversations and provide an engaging experience to the user.
 
-:::image type="content" source="../media/4-advanced-functionalities.png" alt-text="Screenshot that shows the four advanced functionalities: Data Connections, Global, Action, and L U.":::
+:::image type="content" source="../media/4-health-bot-advanced-control-elements.png" alt-text="Screenshot that shows the four advanced functionalities: Data Connections, Global, Action, and L U.":::
 
-### Data connections
+### Data Connection
 
 To integrate external data resources, you can use a data connections object. This object allows you to make HTTPS calls to API providers or to your own API endpoints.
 
@@ -76,9 +76,17 @@ You can define data connections at two levels:
 - **Connection-level configuration**: These configuration details set the baseline for the data connection. They're included in all the calls to the connection endpoints.
 - **Step-level configuration**: This configuration can extend or override the connection-level details. They're used at specific scenario steps and don't apply to every call made to the connection.
 
-### Global variables
+### Skill
+
+Extend your bot by using [Bot Framework Skills](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0). Bot Framework Skills are reusable conversational skill building-blocks that cover conversational use-cases. They enable you to add extensive functionality to a Bot within minutes.
+
+### Global
 
 By using the global variables element, you can set and get variables to use throughout your scenarios. Variables set in this way (unlike variables that use the $, @, & notations) maintain their context. They're persistent and available in all scenarios and for all users.
+
+### Assign
+
+Instead of writing JavaScript code to assign variables, you can use Assign, which allows the same functionality without any code.
 
 ### Action
 
@@ -88,6 +96,6 @@ Use actions to take control of the Bot Framework APIs, so that you can modify an
 
 You can use the wait element to temporarily pause and suspend the scenario execution. The user sets the time period.
 
-### LU
+### Language Understanding
 
 You can set HTTPS calls to the Language Understanding (LUIS) service. Interactions with LUIS automatically enforce a no-storage policy.

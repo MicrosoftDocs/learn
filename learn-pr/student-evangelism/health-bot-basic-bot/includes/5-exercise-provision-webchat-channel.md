@@ -2,13 +2,13 @@ Web chat is a simple web page that allows users to communicate with your Azure H
 
 ## Create the web chat channel
 
-1. Sign in to the Health Bot management portal. On the left menu, under **Integration** select **Secrets**.
+1. Sign in to the Health Bot management portal. On the left menu, under **Integration**, select **Secrets & Keys**.
 
-   :::image type="content" source="../media/5-secrets.png" alt-text="Screenshot that shows Azure Health Bot Secrets.":::
+   :::image type="content" source="../media/5-health-bot-access-secrets.png" alt-text="Screenshot that shows Azure Health Bot Secrets.":::
 
 1. You use secrets to connect the bot to a web page. Copy the values for **APP_SECRET** and **WEBCHAT_SECRET**.
 
-   :::image type="content" source="../media/5-web-chat-app-secret.png" alt-text="Screenshot that shows APP_SECRET and WEBCHAT_SECRET.":::
+   :::image type="content" source="../media/5-health-bot-secrets.png" alt-text="Screenshot that shows APP_SECRET and WEBCHAT_SECRET.":::
 
 1. Go to the [web chat container sample repository](https://github.com/Microsoft/HealthBotContainerSample/tree/live_agent_handoff), and select **Deploy to Azure**.
 
@@ -19,17 +19,17 @@ Web chat is a simple web page that allows users to communicate with your Azure H
    - **App Secret**: Use the APP_SECRET value copied in step 2.
    - **Webchat Secret**: Use the WEBCHAT_SECRET value copied in step 2.
 
-   :::image type="content" source="../media/5-web-chat-deployment.png" alt-text="Screenshot that shows the web chat deployment window in the Azure portal.":::
+   :::image type="content" source="../media/5-health-bot-web-chat-deployment.png" alt-text="Screenshot that shows the web chat deployment window in the Azure portal.":::
 
-1. Select **Review + create**.
+1. Select **Review + create**, and then select **Create**.
 
-1. Select the resource group that you created in step 4, and select the new App Service.
+1. After the deployment completes, select **Go to resource group**, and then select the new App Service.
 
-1. On the **Overview** page, open the **URL**.
+1. On the **Overview** page, open the **Default domain**.
 
-   :::image type="content" source="../media/5-web-chat-overview.png" alt-text="Screenshot that shows the web chat overview page in the Azure portal." lightbox="../media/5-web-chat-overview.png":::
+   :::image type="content" source="../media/5-health-bot-web-chat-overview.png" alt-text="Screenshot that shows the web chat overview page in the Azure portal." lightbox="../media/5-health-bot-web-chat-overview.png":::
 
-1. Test the connection to your bot instance by entering a few commands in web chat.
+1. Test the connection to your bot instance by entering a few commands in the web chat.
 
    :::image type="content" source="../media/5-web-chat-ux.png" alt-text="Screenshot that shows the web chat user experience.":::
 
@@ -39,9 +39,9 @@ Web chat is a simple web page that allows users to communicate with your Azure H
 
 1. In the management portal for your Health Bot instance, go to **Configuration** > **Conversation** > **Human Handoff**. Enable the human handoff feature, and select **Save**.
 
-   :::image type="content" source="../media/5-human-handoff.png" alt-text="Screenshot that shows the Human Handoff tab." lightbox="../media/5-human-handoff.png":::
+   :::image type="content" source="../media/5-health-bot-human-handoff.png" alt-text="Screenshot that shows the Human Handoff tab." lightbox="../media/5-health-bot-human-handoff.png":::
 
-1. To access the sample web chat, open the web chat URL that you created in step 7 and request the */agent.html* path. A sign-in page loads that illustrates the agent experience. You can enter any values to access the agent portal. Within the agent portal, you can issue agent commands to interact with users who are talking with your bot.
+1. To access the sample web chat, open the web chat URL that you created in step 7 and add */agent.html* to the URL. A sign-in page loads that illustrates the agent experience. You can enter any values to access the agent portal. Within the agent portal, you can issue agent commands to interact with users who are talking with your bot.
 
    :::image type="content" source="../media/5-agent-web-chat.png" alt-text="Screenshot that shows Agent Webchat." lightbox="../media/5-agent-web-chat.png":::
 
