@@ -38,7 +38,7 @@ The following workflow and component diagram outlines how playbooks can run in d
 
 In the workflow, Ansible playbooks:
 
-1. **Provision resources**. Playbooks can provision resources. In the diagram, playbooks create load-balancer virtual networks, network security groups, and virtual machine scale sets on Azure.
+1. **Provision resources**. Playbooks can provision resources. In the diagram, playbooks create load-balancer virtual networks, network security groups, and Virtual Machine Scale Sets on Azure.
 
 2. **Configure the application**. Playbooks can deploy applications to run services, such as installing Apache Tomcat on a Linux machine to allow you to run a web application.
 

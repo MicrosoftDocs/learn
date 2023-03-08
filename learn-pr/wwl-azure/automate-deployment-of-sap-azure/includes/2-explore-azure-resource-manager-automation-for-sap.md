@@ -17,7 +17,7 @@ The Azure CLI cross-platform command-line tool is used to connect to Azure and e
  
 ### PowerShell
 
-The [Azure AZ PowerShell module](/powershell/azure/new-azureps-module-az) is a set of cmdlets for managing Azure resources directly from PowerShell and is included in Azure Cloud Shell PowerShell.
+The [Azure Az PowerShell module](/powershell/azure/new-azureps-module-az) is a set of cmdlets for managing Azure resources directly from PowerShell and is included in Azure Cloud Shell PowerShell.
  
 > [!NOTE]
 > This module focuses on using Bash for CLI commands and uses Bash for running Azure Resource Manager Templates, and in later units for working with Terraform and Ansible templates.
@@ -26,13 +26,13 @@ When a user sends a request from any of the Azure tools, APIs, or SDKs, Resource
 
 The following image shows the role Azure Resource Manager plays in handling Azure requests.
  
-:::image type="content" source="../media/consistent-management-layer-d65508b4.png" alt-text="Resource Manager request model.":::
+:::image type="content" source="../media/consistent-management-layer-d65508b4.png" alt-text="Diagram showing Azure Resource Manager request model.":::
 
 All capabilities that are available in the portal are also available through PowerShell, Azure CLI, REST APIs, and client SDKs. Functionality initially released through APIs will be represented in the portal within 180 days of initial release.
   
 Azure provides four levels of scope: management groups, subscriptions, resource groups, and resources. The following image shows an example of these layers.
  
-:::image type="content" source="../media/scope-levels.png" alt-text="Management levels.":::
+:::image type="content" source="../media/scope-levels.png" alt-text="Diagram showing Management levels scope from, Management Groupds, to subscriptions, resource groups, and then resources.":::
 
 You can apply management settings at any of these levels of scope. The level you select determines how widely the setting is applied. Lower levels inherit settings from higher levels. For example, when you apply a policy to the subscription, the policy is applied to all resource groups and resources in your subscription. When you apply a policy on the resource group, that policy is applied to the resource group and all its resources. However, that policy assignment doesn’t apply to other resource groups.
  

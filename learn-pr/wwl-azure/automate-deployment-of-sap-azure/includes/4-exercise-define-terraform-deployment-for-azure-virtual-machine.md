@@ -36,7 +36,7 @@ az login --service-principal -u <service_principal_name> -p "<service_principal_
 
 Terraform HCL (HashiCorp Configuration Language) is designed to be readable.
 
-:::image type="content" source="../media/example-azure-resource-manager-template-syntax-hcl-syntax.png" alt-text="Example of Azure Resource Manager Template Syntax vs HCL Syntax.":::
+    :::image type="content" source="../media/example-azure-resource-manager-template-syntax-hcl-syntax.png" alt-text="Screenshoot of Azure Resource Manager (ARM) Template Syntax vs HashiCorp Configuration Language (HCL) Syntax.":::
 
 ## Sample Linux VM Azure Terraform configuration file
 
@@ -269,7 +269,7 @@ To see Terraform in action using the commands introduced in the next section, cr
 
 In this section, you learn how to create an execution plan and apply it to your cloud infrastructure.
 
-:::image type="content" source="../media/basic-terraform-commands.png" alt-text="Basic Terraform commands: Init, Plan, Apply, Destroy.":::
+    :::image type="content" source="../media/basic-terraform-commands.png" alt-text="Diagram emphasizing basic Terraform commands for: Init (initialize), Plan, Apply, Destroy.":::
  
 With your Terraform template created, the next steps are: 
 

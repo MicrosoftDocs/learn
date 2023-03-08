@@ -14,7 +14,7 @@ If you start a deployment of a Marketplace item, you can use and modify the exis
 
 3. From the list of results, select **Infrastructure for SAP NetWeaver and SAP HANA**.
 
-    :::image type="content" source="../media/marketplace-0-cropped.png" alt-text="Azure Marketplace search results." lightbox="../media/marketplace-0.png":::
+    :::image type="content" source="../media/marketplace-0-cropped.png" alt-text="Screenshot of Azure Marketplace search results." lightbox="../media/marketplace-0.png":::
 
 ### Basics tab
 
@@ -31,7 +31,7 @@ If you start a deployment of a Marketplace item, you can use and modify the exis
 
 4. Go to the next tab: **SAP Configuration**.
  
-    :::image type="content" source="../media/marketplace-1.png" alt-text="Create infrastructure for SAP NetWeaver and SAP HANA, basics tab." lightbox="../media/marketplace-1.png":::
+    :::image type="content" source="../media/marketplace-1.png" alt-text="Screenshot of Azure portal, creating infrastructure for SAP NetWeaver and SAP HANA, basics tab." lightbox="../media/marketplace-1.png":::
 
 ### SAP Configuration tab
 
@@ -41,7 +41,7 @@ If you start a deployment of a Marketplace item, you can use and modify the exis
 
 3. Go to the next tab: **VM Sizes Configuration**.
 
-    :::image type="content" source="../media/marketplace-2.png" alt-text="Create infrastructure for SAP NetWeaver and SAP HANA, SAP Configuration tab.":::
+    :::image type="content" source="../media/marketplace-2.png" alt-text="Screenshot of Azure portal, creating infrastructure for SAP NetWeaver and SAP HANA, SAP Configuration tab.":::
 
 ### VM Sizes Configuration tab
 
@@ -52,7 +52,7 @@ If you start a deployment of a Marketplace item, you can use and modify the exis
 
 2. Go to the next tab: **Network Configuration**.
 
-    :::image type="content" source="../media/marketplace-3.png" alt-text="Create infrastructure for SAP NetWeaver and SAP HANA, VM Sizes Configuration tab.":::
+    :::image type="content" source="../media/marketplace-3.png" alt-text="Screenshot of Azure portal, creating infrastructure for SAP NetWeaver and SAP HANA, VM Sizes Configuration tab.":::
 
 ### Network Configuration tab
 
@@ -63,7 +63,7 @@ If you start a deployment of a Marketplace item, you can use and modify the exis
 
 2. Go to the next tab: **Review + create**.
 
-    :::image type="content" source="../media/marketplace-4.png" alt-text="Create infrastructure for SAP NetWeaver and SAP HANA, Network Configuration tab.":::
+    :::image type="content" source="../media/marketplace-4.png" alt-text="Screenshot of Azure portal, creating infrastructure for SAP NetWeaver and SAP HANA, Network Configuration tab.":::
 
 ### Validation
 
@@ -71,7 +71,7 @@ If you start a deployment of a Marketplace item, you can use and modify the exis
 
 2. Select **Download a template for automation**.
 
-    :::image type="content" source="../media/marketplace-5.png" alt-text="Create infrastructure for SAP NetWeaver and SAP HANA, Validation." lightbox="../media/marketplace-5.png":::
+    :::image type="content" source="../media/marketplace-5.png" alt-text="Screenshot of Azure portal, creating infrastructure for SAP NetWeaver and SAP HANA, Validation." lightbox="../media/marketplace-5.png":::
 
 ## Review the updated template 
 
@@ -85,13 +85,13 @@ Examine the Resource Manager template to get a better understanding of its struc
 | 2 | Allowed `osType` |
 | 3 | Allowed `size` |
 
-1. Read through the template to identify any items that an administrator might want to changed. For example, the default value for `hanaVMSize`. 
+1. Read through the template to identify any items that an administrator might want to change. For example, the default value for `hanaVMSize`. 
 
 2. Select **Deploy**. This updates the original Marketplace template, with the information you provided in the Azure portal.
 
 3. Alternatively, if you want to store the updated template stored locally, select **Download**.
 
-    :::image type="content" source="../media/marketplace-8.png" alt-text="Example of a value, in this case, hanaVMSize, that can be manually edited in the template.":::
+    :::image type="content" source="../media/marketplace-8.png" alt-text="Screenshot of a template with example of a value, hanaVMSize, that can be manually edited in the template.":::
 
 ## Edit template 
 
@@ -100,7 +100,7 @@ Examine the Resource Manager template to get a better understanding of its struc
     > [!NOTE]
     > You can also select **Edit parameters**.
     
-    :::image type="content" source="../media/marketplace-9-cropped.png" alt-text="Project details." lightbox="../media/marketplace-9.png":::
+    :::image type="content" source="../media/marketplace-9-cropped.png" alt-text="Screenshot of Azure portal template, project details." lightbox="../media/marketplace-9.png":::
 
 2. On the **Edit template** page, make any changes that you want to the Azure Resource Manager template and parameters JSON. For example, remove **Large** from the `allowedValues` under `size`.
 
@@ -110,13 +110,13 @@ Examine the Resource Manager template to get a better understanding of its struc
 
 5. Alternatively, select **Deploy** and deploy your custom template based on the Azure Marketplace **Infrastructure for SAP NetWeaver and SAP HANA** item.
  
-    :::image type="content" source="../media/marketplace-8-b-cropped.png" alt-text="Edit template displaying JSON." lightbox="../media/marketplace-8-b.png":::
+    :::image type="content" source="../media/marketplace-8-b-cropped.png" alt-text="Screenshot of Azure portal, editing template displaying JSON." lightbox="../media/marketplace-8-b.png":::
 
 ## Generating Azure Resource Manager Templates from deployments
 
 To access Azure Resource Manager Templates for your previous deployments, navigate to **Settings** > **Deployments**, select your resource group, and select a deployment from the list. You will see an overview of the deployment resources and can select **Template** to download the Template and Parameters or deploy the template in the portal.
 
-:::image type="content" source="../media/marketplace-11.png" alt-text="Deployments.":::
+    :::image type="content" source="../media/marketplace-11.png" alt-text="Screenshot of Azure portal, template deployment.":::
 
 ## Deploying Azure Resource Manager using the CLI
 
