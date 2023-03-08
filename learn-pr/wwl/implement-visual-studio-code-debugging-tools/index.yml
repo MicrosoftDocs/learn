@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.implement-visual-studio-code-debugging-tools
+metadata:
+  title: Implement the Visual Studio Code debugging tools for C#
+  description: "Implement the Visual Studio Code debugging tools for C#"
+  ms.date: 03/08/2023
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+title: Implement the Visual Studio Code debugging tools for C#
+summary: In this module, you'll learn how to effectively debug C# programs in Visual Studio Code.
+abstract: |
+  - Configure the Visual Studio Code debugger for a C# program.
+  - Create breakpoints and step through your code to isolate issues.
+  - Inspect your program state at any execution step.
+  - Use the call stack to find the source of an exception.
+prerequisites: |
+  - An installation of Visual Studio Code that's configured for C# application development.
+  - Ability to develop C# console applications that implement business logic using iteration statements, selection statements, and custom methods.
+  - A basic understanding of code debuggers and the debug process.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- dotnet
+- dotnet-framework
+- vs-code
+subjects:
+- development-tools
+units:
+- learn.wwl.implement-visual-studio-code-debugging-tools.introduction
+- learn.wwl.implement-visual-studio-code-debugging-tools.examine-visual-studio-code-debugger
+- learn.wwl.implement-visual-studio-code-debugging-tools.exercise-run-code-debug-environment
+- learn.wwl.implement-visual-studio-code-debugging-tools.examine-breakpoint-configuration
+- learn.wwl.implement-visual-studio-code-debugging-tools.exercise-set-breakpoints
+- learn.wwl.implement-visual-studio-code-debugging-tools.examine-launch-configurations
+- learn.wwl.implement-visual-studio-code-debugging-tools.exercise-configure-conditional-breakpoints
+- learn.wwl.implement-visual-studio-code-debugging-tools.exercise-monitor-variables-execution-flow
+- learn.wwl.implement-visual-studio-code-debugging-tools.exercise-challenge-debug-code
+- learn.wwl.implement-visual-studio-code-debugging-tools.review-solution-for-debugger-challenge
+- learn.wwl.implement-visual-studio-code-debugging-tools.knowledge-check
+- learn.wwl.implement-visual-studio-code-debugging-tools.summary
+badge:
+  uid: learn.wwl.implement-visual-studio-code-debugging-tools.badge

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-visual-studio-code-debugging-tools.examine-breakpoint-configuration
+title: Examine breakpoint configuration options
+metadata:
+  title: Examine breakpoint configuration options
+  description: "Examine breakpoint configuration options"
+  ms.date: 03/08/2023
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-examine-breakpoint-configuration.md)]
