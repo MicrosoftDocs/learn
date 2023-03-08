@@ -6,8 +6,8 @@ metadata:
   description: Discover how Azure Boards can help you plan the work that needs to be done, and learn about the four processes you can choose from.
   ms.date: 06/22/2022
   ms.custom: devdivchpfy22
-  author: kathrynee
-  ms.author: kaelli
+  author: chcomley
+  ms.author: chcomley
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 15

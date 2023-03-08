@@ -6,8 +6,8 @@ metadata:
   description: See how the team performs against a value-stream-mapping exercise.
   ms.date: 06/14/2022
   ms.custom: devdivchpfy22
-  author: kathrynee
-  ms.author: kaelli
+  author: chcomley
+  ms.author: chcomley
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   show_latex: true
