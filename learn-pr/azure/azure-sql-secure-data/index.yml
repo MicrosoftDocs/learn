@@ -36,7 +36,7 @@ subjects:
 units:
 - learn.azure-sql-secure-data.1-introduction
 - learn.azure-sql-secure-data.2-security-capabilities
-- learn.azure-sql-secure-data.3-exercise-configure-auditing
+- learn.azure-sql-secure-data.exercise-configure-sql-database
 - learn.azure-sql-secure-data.4-exercise-network-security
 - learn.azure-sql-secure-data.5-exercise-configure-authentication
 - learn.azure-sql-secure-data.6-data-protection

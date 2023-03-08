@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-sql-secure-data.exercise-configure-sql-database
+metadata:
+  title: Exercise - Configure Azure SQL Database
+  description: Exercise - Configure Azure SQL Database
+  ms.date: 02/28/2023
+  author: VanMSFT
+  ms.author: vanto
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Configure Azure SQL Database
+durationInMinutes: 10
+interactive: powershell
+azureSandbox: true
+content: |
+  [!include[](includes/3-exercise-configure-sql-database.md)]
