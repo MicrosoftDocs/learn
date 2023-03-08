@@ -6,6 +6,42 @@ When you don't provide an initial YAML file for your project, Azure Pipelines ca
 
 ## Create the pipeline
 
+#### [GitHub Codespaces](#tab/codespaces)
+
+1. In Azure DevOps, go to your project.
+
+1. Either from the project page or from the left pane, select **Pipelines**.
+
+1. Select **Create Pipeline** (or **New pipeline** if this isn't the first pipeline in the project).
+
+1. On the **Connect** tab, select **GitHub**.
+
+    When prompted, enter your GitHub credentials.
+
+1. On the **Select** tab, select your **mslearn-tailspin-spacegame-web** repository.
+
+1. To install the Azure Pipelines app, you might be redirected to GitHub. If so, scroll to the bottom, and select **Approve & Install**.
+
+1. On the **Configure** tab, select **ASP.NET Core**. 
+   
+    > [!NOTE]
+    > If you don't see this option, select **Show more**. Don't select **ASP.NET Core (.NET Framework)**.
+
+     :::image type="content" source="../media/6-configure-app-type.png" alt-text="Screenshot of locating ASP.NET Core from the list of provided application types.":::
+
+1. On the **Review** tab, note the initial build configuration.
+
+    :::image type="content" source="../media/6-initial-pipeline-yml.png" alt-text="Screenshot of Azure Pipelines showing the initial build configuration.":::
+
+    This is a very basic configuration that Azure DevOps provides for you based on your app type, ASP.NET Core.
+
+1. On the the **Review** tab, replace the text `vmImage: ubuntu-latest` with `name: Default`. You set the name of your agent pool as a GitHub secret earlier (example: `Default`).
+
+1. Select **Save and run**. Next, to commit your changes to GitHub and start the build, select **Save and run** a second time.
+
+
+#### [Microsoft-hosted agent](#tab/hosted-agent)
+
 1. In Azure DevOps, go to your project.
 
 1. Either from the project page or from the left pane, select **Pipelines**.
@@ -35,12 +71,20 @@ When you don't provide an initial YAML file for your project, Azure Pipelines ca
 
 1. On the **Review** tab, select **Save and run**. Next, to commit your changes to GitHub and start the build, select **Save and run** a second time.
 
+1. In Visual Studio Code edit within Codespaces, use `git pull` in the Terminal window to pull down the new `azure-pipelines.yml` file.  
+
+    > [!NOTE]
+    > If your pipeline does not start quickly, verify that Codespaces is still running. Codespaces will shutdown after 30 minutes and may need to be restarted.
+
+----
+
+
 ## Watch the pipeline run
 
 Under **Jobs**, select **Job**. Next, trace the build process through each of the steps. To see the job output as a text file when the build completes, you can also select **View raw log**.
 
 > [!NOTE]
-> If your pipeline status remains **Queued** and does not transition to **Running** after a few moments, check your parallel jobs. This module uses a Microsoft-hosted agent and requires a parallel job. [Check your parallel jobs and request a free grant](/azure/devops/pipelines/troubleshooting/troubleshooting#check-for-available-parallel-jobs).
+> If your pipeline status remains **Queued** and does not transition to **Running** after a few moments, [Check your parallel jobs and request a free grant](/azure/devops/pipelines/troubleshooting/troubleshooting#check-for-available-parallel-jobs). If you do not have access to parallel jobs, you can start the module over with Codespaces. 
 
 Here, you see the steps that the build definition created. It prepares the VM, fetches the latest source code from GitHub, and then builds the app.
 
@@ -82,6 +126,34 @@ In practice, you might add build tasks one at a time, push up your changes, and 
 
 1. In Visual Studio Code, change *azure-pipelines.yml* as you see here:
 
+    #### [GitHub Codespaces](#tab/codespaces)
+
+    [!code-yml[](code/6-codespaces-azure-pipelines.yml)]
+
+    Under the `steps` section, you see the build tasks that map to each of the script commands that we identified earlier.
+
+    Azure Pipelines provides built-in build tasks that map to many common build activities. For example, the `DotNetCoreCLI@2` task maps to the `dotnet` command-line utility. The pipeline uses `DotNetCoreCLI@2` two times: one time to restore, or install, the project's dependencies, and one time to build the project.
+
+    Remember that not all build activities map to a built-in task. For example, there's no built-in task that runs the node-Sass utility, or writes build info to a text file. To run general system commands, you use the `CmdLine@2` or `script` task. The pipeline uses the `script` task because it's a common shortcut for `CmdLine@2`.
+
+    In the build step that writes information about the build to a file, notice these elements:
+
+    * `$(Build.DefinitionName)`
+    * `$(Build.BuildId)`
+    * `$(Build.BuildNumber)`
+
+    These elements are built-in variables that the system provides for use in your pipelines:
+
+    * `$(Build.DefinitionName)` is the name of the build pipeline. For example, "SpaceGame-Web-CI."
+    * `$(Build.BuildId)` is a numeric identifier for the completed build, like 115.
+    * `$(Build.BuildNumber)` is the name of the completed build. You can configure the format, but by default, the build number includes the current date followed by the build number for that day. An example build number is "20190329.1."
+
+    You can also define your own variables, which you'll do soon.
+
+    You might have also noticed the `UseDotNet@2` task, which is the first build step. Mara remembered that her build script didn't install the required build tools. Although the build agent comes with several .NET SDK versions, this task lets her easily specify the version she needs to use on the build agent.
+
+    #### [Microsoft-hosted agent](#tab/hosted-agent)
+
     [!code-yml[](code/6-azure-pipelines.yml)]
 
     Under the `steps` section, you see the build tasks that map to each of the script commands that we identified earlier.
@@ -106,6 +178,7 @@ In practice, you might add build tasks one at a time, push up your changes, and 
 
     You might have also noticed the `UseDotNet@2` task, which is the first build step. Mara remembered that her build script didn't install the required build tools. Although the build agent comes with several .NET SDK versions, this task lets her easily specify the version she needs to use on the build agent.
 
+    ---
 1. From the integrated terminal, to add *azure-pipelines.yml* to the index, commit the change, and push the change up to GitHub, run the following Git commands. These steps are similar to the steps you performed earlier.
 
     > [!TIP]
@@ -143,3 +216,4 @@ In practice, you might add build tasks one at a time, push up your changes, and 
 1. After your build is completed, select any of the steps to see the overall progression of the build. From there, you can jump to the build logs or the associated change on GitHub.
 
     :::image type="content" source="../media/6-build-summary.png" alt-text="Screenshot of Azure Pipelines showing the complete list of build tasks. The Run gulp tasks task is selected.":::
+

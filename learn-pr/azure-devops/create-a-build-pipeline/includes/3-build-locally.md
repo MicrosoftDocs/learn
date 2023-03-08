@@ -59,7 +59,7 @@ Before you create your Codespace, you'll create three passwords that help your s
     |---------|---------|
     |ADO_ORG     |   Name of the Azure DevOps organization (Example: `fabrikam`)     |
     |ADO_PAT     |   Personal Access Token value      |
-    |ADO_POOL_NAME     |   Name of agent pool (Example: `codespaces-agent-pool`)      | 
+    |ADO_POOL_NAME     |   Name of agent pool (Example: `Default`). If you use a name other than `Default`, you need to [create a new agent pool](azure/devops/pipelines/agents/pools-queues) before running your first pipeline.   | 
     
 ## Set up Codespaces
 
