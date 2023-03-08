@@ -1,25 +1,25 @@
-Azure Advisor scans your Azure configuration, through analysis of your resource configuration and usage telemetry. Advisor will then provide recommendations and proposed actions.
+Azure Advisor scans and analyses your Azure resource configuration and usage telemetry to provide recommendations and proposed actions.
 
-## Access recommendations
+## Access Advisor's recommendations
 
-You can access Advisor through the Azure portal. Sign in to the portal and locate Advisor in the navigation menu. You can also search for it in the **All services** menu. Once you open Advisor, you will be able to see the recommendations. Advisor divides the recommendations into five categories: **cost**, **security**, **reliability**, **operational excellence**, and **performance**.
+You can access Advisor through the Azure portal. Sign in to the portal and locate Advisor in the navigation menu or search for it in the **All services** menu. Open Advisor to see the recommendations, which are divided into five categories: **Cost**, **Security**, **Reliability**, **Operational excellence**, and **Performance**.
 
 For all recommendations provided, you can postpone the display, for a specific time period (one day, one week, one month, three months), or indefinitely. You also can choose to dismiss the recommendation.
 
-Azure Advisor is only available through the proper permissions when being a member of Owner, Contributor, or Reader for the subscription, Resource group, or Resource.
+You need to be an *Owner*, *Contributor*, or *Reader* for the subscription, resource group, or resource, to have permissions to access Advisor.
 
-## Configure recommendations
+## Configure Advisor's recommendations
 
-It's possible to choose which Subscriptions and Resource Groups you want to receive recommendations on. Advisor provides this functionality through the **Configuration** option, under **Settings**.
+It's possible to choose which subscriptions and resource groups you want to receive recommendations on. Advisor provides this functionality through the **Configuration** option, under **Settings**.
 
-:::image type="content" source="../media/3-advisor-configuration.png" alt-text=" A screen shot depicting the Configuration pane of Azure Advisor.":::
+:::image type="content" source="../media/3-advisor-configuration.png" alt-text=" Screenshot showing the Configuration pane in Azure Advisor.":::
 
 Under  the **Rules** option, it is possible to configure the average CPU utilization rule for the low usage virtual machine recommendation. The CPU utilization rule can be set to 5%, 10%, 15%, or 20%.
 
 > [!Note]
 > To adjust the average CPU utilization rule for identifying low usage virtual machines, you must be a subscription Owner. If you do not have the required permissions for a subscription or resource group, the option to include or exclude it will be disabled in the user interface.
 
-## Download recommendations
+## Download Advisor's recommendations
 
 You can download a summary of the recommendations from Advisor in a CSV or PDF format. Downloading the file makes easy to share with your coworkers, or you can perform your own analysis. You can choose to download only data for specific recommendations or categories that you are viewing. It can help you target actions that may be necessary on specific areas of your subscription.
 
