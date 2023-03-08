@@ -8,7 +8,7 @@ metadata:
   ms.author: rstearman
   ms.topic: interactive-tutorial
 title: Manage Azure Active Directory identities
-summary: Upon completing this module, you'll be able to perform various tasks related to Azure Active Directory (AD). You will be able to explain the concept of role-based access control (RBAC) and user roles within Azure AD. Additionally, you will learn how to create and manage users and groups in Azure AD. You will also learn to use Windows PowerShell cmdlets to manage Azure AD. Finally, you have the ability to describe how to synchronize objects from Active Directory Domain Services (AD DS) to Azure AD. These skills will allow you to manage and utilize Azure AD in your organization effectively.
+summary: This module teaches how to use Azure AD effectively. You'll learn about RBAC, user roles, creating and managing users and groups, using PowerShell cmdlets, and synchronizing objects from AD DS to Azure AD. These skills are essential for managing Azure AD in your organization.
 abstract: |
   After this module, you should be able to:
   - Describe RBAC and user roles in Azure AD.
