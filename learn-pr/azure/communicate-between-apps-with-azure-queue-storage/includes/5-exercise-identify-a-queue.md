@@ -66,8 +66,8 @@ Before you can send or receive messages from your queue, you need to create the 
 
 The `CreateIfNotExistsAsync` method on the `QueueClient` class is used to create a queue.  This method will first check to see if the named queue for the `QueueClient` object exists and if not, create it.
 
-Add the following line of code to the main method of your `Program.cs` file just after the line that creates the `QueueClient` object
-The `QueueClient` contains a method `CreateIfNotExistsAsync`
+Add the following line of code to the main method of your `Program.cs` file just after the line that creates the `QueueClient` object.
+The `QueueClient` contains a method `CreateIfNotExistsAsync`.
 
 ```csharp
 await queueClient.CreateIfNotExistsAsync();
