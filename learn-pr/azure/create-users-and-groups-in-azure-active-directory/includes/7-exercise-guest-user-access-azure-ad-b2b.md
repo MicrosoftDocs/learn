@@ -6,7 +6,7 @@ After you add a guest user to the organization, send them a direct link to a sha
 
 ## Add guest users to the organization
 
-1. Sign in to the [Azure portal](<https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true>), and under **Azure services**, select **Azure Active Directory**. The **Overview** pane for your Azure AD appears.
+1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true), and under **Azure services**, select **Azure Active Directory**. The **Overview** pane for your Azure AD appears.
 
 1. In the left menu pane, under **Manage**, select **Users**. The **All users** pane appears.
 

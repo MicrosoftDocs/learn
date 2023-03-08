@@ -6,7 +6,23 @@ In this exercise, you'll configure an application to authenticate users against 
 
 ## Configure and deploy the application that uses OpenID Connect to authenticate users
 
-1. Run the following command in Azure Cloud Shell to the right to clone the repo that contains the source for your app.
+1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
+
+1. From the top right-hand side of the Azure portal, select **Cloud Shell**.
+
+1. In Cloud Shell, select **Bash**.
+
+1. Create a resource group by running the following command where you replace the placeholders with a location like centralus and resource group name like learn-openid-connect-rg.
+
+    ```azurecli
+    LOCATION=<region>
+    RESOURCEGROUP=<resource-group-name>
+    az group create \
+    --name $RESOURCEGROUP \
+    --location $LOCATION
+   ```
+
+1. Run the following command in Azure Cloud Shell to clone the repo that contains the source for your app.
 
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-secure-app-with-oidc-and-azure-ad.git
@@ -58,7 +74,7 @@ In this exercise, you'll configure an application to authenticate users against 
 
     ```azurecli
     az webapp up \
-        --resource-group <rgn>[Sandbox resource group]</rgn> \
+        --resource-group <rgn>[resource group]</rgn> \
         --location centralus \
         --sku F1 \
         --name educationapp-$RANDOM
@@ -70,7 +86,7 @@ In this exercise, you'll configure an application to authenticate users against 
 
 Now let's configure the app registration to authorize the URL for the web service.
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), verify that you are signed in to **Learn Module AAD Tenant**. If not, select your user name in the upper-right corner, select **Switch directory**, and then select the **Learn Module AAD Tenant** directory that you created earlier. Sign in if you're prompted.
+1. In the [Azure portal](https://portal.azure.com?azure-portal=true), verify that you are signed in to **Learn Module AAD Tenant**. If not, select your user name in the upper-right corner, select **Switch directory**, and then select the **Learn Module AAD Tenant** directory that you created earlier. Sign in if you're prompted.
 
 1. From the **Home** page or the resource menu, select **Azure Active Directory**. The **Learn Module AAD Tenant** Azure Active Directory Overview pane appears.
 
