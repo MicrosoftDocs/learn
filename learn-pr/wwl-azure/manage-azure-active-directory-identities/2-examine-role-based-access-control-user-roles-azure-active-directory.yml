@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.manage-azure-active-directory-identities.examine-rbac-user-roles-azure-ad
+uid: learn.wwl.manage-azure-active-directory-identities.examine-role-based-access-control-user-roles-azure-active-directory
 title: Examine RBAC and user roles in Azure AD
 metadata:
   title: Examine RBAC and user roles in Azure AD
   description: "Examine RBAC and user roles in Azure AD"
-  ms.date: 03/07/2023
+  ms.date: 03/08/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
 durationInMinutes: 6
 content: |
-  [!include[](includes/2-examine-rbac-user-roles-azure-ad.md)]
+  [!include[](includes/2-examine-role-based-access-control-user-roles-azure-active-directory.md)]

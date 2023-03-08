@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.manage-azure-active-directory-identities.synchronize-objects-ad-ds-azure-ad
+uid: learn.wwl.manage-azure-active-directory-identities.synchronize-objects-active-directory-domain-services
 title: Synchronize objects from AD DS to Azure AD
 metadata:
   title: Synchronize objects from AD DS to Azure AD
   description: "Synchronize objects from AD DS to Azure AD"
-  ms.date: 03/07/2023
+  ms.date: 03/08/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
 durationInMinutes: 5
 content: |
-  [!include[](includes/6-synchronize-objects-ad-ds-azure-ad.md)]
+  [!include[](includes/6-synchronize-objects-active-directory-domain-services.md)]

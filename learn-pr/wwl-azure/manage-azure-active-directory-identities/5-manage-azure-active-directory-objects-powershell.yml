@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.manage-azure-active-directory-identities.manage-azure-ad-objects-powershell
+uid: learn.wwl.manage-azure-active-directory-identities.manage-azure-active-directory-objects-powershell
 title: Manage Azure AD objects with Powershell
 metadata:
   title: Manage Azure AD objects with Powershell
   description: "Manage Azure AD objects with Powershell"
-  ms.date: 03/07/2023
+  ms.date: 03/08/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
 durationInMinutes: 2
 content: |
-  [!include[](includes/5-manage-azure-ad-objects-powershell.md)]
+  [!include[](includes/5-manage-azure-active-directory-objects-powershell.md)]
