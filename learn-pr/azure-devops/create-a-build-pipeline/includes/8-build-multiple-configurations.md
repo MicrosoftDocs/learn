@@ -71,11 +71,23 @@ You'll now call the template that you just built from the pipeline. You'll do so
 
 1. In Visual Studio Code, modify *azure-pipelines.yml* as you see here:
 
+    #### [GitHub Codespaces](#tab/codespaces)
+
+    [!code-yml[](code/8-codespaces-azure-pipelines.yml?highlight=41-43, 45-47)]
+
+    This file looks like the original, except that it replaces the build and publishes tasks with calls to the template that does the same tasks.
+
+    You'll see that the template is called one time for each configuration. To pass the configuration name to the template, each `template` task uses the `parameters` argument.
+
+    #### [Microsoft-hosted agent](#tab/hosted-agent)
+
     [!code-yml[](code/8-azure-pipelines.yml?highlight=41-43, 45-47)]
 
     This file looks like the original, except that it replaces the build and publishes tasks with calls to the template that does the same tasks.
 
     You'll see that the template is called one time for each configuration. To pass the configuration name to the template, each `template` task uses the `parameters` argument.
+
+    ---
 
 ## Run the pipeline
 

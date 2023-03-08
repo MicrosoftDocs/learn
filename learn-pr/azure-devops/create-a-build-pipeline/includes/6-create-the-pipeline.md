@@ -29,15 +29,11 @@ When you don't provide an initial YAML file for your project, Azure Pipelines ca
 
      :::image type="content" source="../media/6-configure-app-type.png" alt-text="Screenshot of locating ASP.NET Core from the list of provided application types.":::
 
-1. On the **Review** tab, note the initial build configuration.
+1. On the **Review** tab, note the initial build configuration. This is a very basic configuration that Azure DevOps provides for you based on your app type, ASP.NET Core. The default configuration uses a Microsoft-hosted agent. 
 
-    :::image type="content" source="../media/6-initial-pipeline-yml.png" alt-text="Screenshot of Azure Pipelines showing the initial build configuration.":::
+1. On the the **Review** tab, replace the text `vmImage: ubuntu-latest` with `name: Default` (or the name of your agent pool). You set the name of your agent pool as a GitHub secret earlier.
 
-    This is a very basic configuration that Azure DevOps provides for you based on your app type, ASP.NET Core.
-
-1. On the the **Review** tab, replace the text `vmImage: ubuntu-latest` with `name: Default`. You set the name of your agent pool as a GitHub secret earlier (example: `Default`).
-
-1. Select **Save and run**. Next, to commit your changes to GitHub and start the build, select **Save and run** a second time.
+1. Select **Save and run** to commit your changes to GitHub and start the build.
 
 
 #### [Microsoft-hosted agent](#tab/hosted-agent)
