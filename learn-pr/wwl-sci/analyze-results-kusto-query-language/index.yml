@@ -24,10 +24,11 @@ roles:
 - security-operations-analyst
 products:
 - azure
-- azure-sentinel
+- microsoft-sentinel
+- azure-log-analytics
 subjects:
 - data-analytics
-- security
+- cloud-security
 units:
 - learn.wwl.analyze-results-kql.introduction
 - learn.wwl.analyze-results-kql.use-summarize-operator

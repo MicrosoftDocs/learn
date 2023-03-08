@@ -1,19 +1,19 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.incident-management-sentinel.5-manage-incidents
+title: Manage incidents
 metadata:
   title: Manage incidents
-  description: Manage incidents in Microsoft Sentinel
-  ms.date: 12/15/2020
-  author: cwatson-cat
-  ms.author: cwatson
+  description: "Manage incidents in Microsoft Sentinel"
+  ms.date: 01/26/2023
+  author: wwlpublish
+  ms.author: kelawson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Manage incidents
 durationInMinutes: 5
 content: |
   [!include[](includes/5-manage-incidents.md)]
 quiz:
-  title: Check your knowledge
+  title: "Check your knowledge"
   questions:
   - content: "A member of Contoso's security team wants to escalate an incident to a member of the Contoso tier 2 security team. Which incident parameter should you change?"
     choices:

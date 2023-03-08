@@ -36,8 +36,8 @@ Azure Arc-enabled servers expand support to server-based resources that run outs
 Using Azure Arc, organizations can connect Kubernetes clusters located anywhere to Azure. You can manage clusters in a consistent way. Azure Arc enabled Kubernetes lets you control the cluster configuration and workloads at scale, using git repositories for the clusters. It also lets organizations use management capabilities in Azure for cluster management needs such as inventory, monitoring, policy compliance, security, user access, and more.
 
 ### SQL Server on Azure Arc-enabled servers
-SQL Server on Azure Arc-enabled servers extends Azure services to existing SQL Server instances hosted outside of Azure in the customer’s datacenter, on the edge, or in a multi-cloud environment.
+SQL Server on Azure Arc-enabled servers extends Azure services to existing SQL Server instances hosted outside of Azure in the customer’s datacenter, on the edge, or in a multicloud environment.
 
 ### Azure Arc-enabled data services
-Azure Arc-enabled data services make it possible to run Azure data services such as Azure Arc-enabled-SQL Managed Instance and Azure Arc enabled PostgreSQL Hyperscale. You can run these systems on-premises, at the edge, in Azure and in other public clouds. 
+Azure Arc-enabled data services make it possible to run Azure data services such as Azure Arc-enabled-SQL Managed Instance. You can run these systems on-premises, at the edge, in Azure and in other public clouds. 
 Using Kubernetes allows you to use the infrastructure of your choice. You get an always-current, elastically scaled, self-provisioning deployment. You also get a unified command-line and graphical management and monitoring system. Azure Arc-enabled data services have both direct and indirect connected modes. Azure Arc-enabled data services also provide deep security and compliance monitoring.

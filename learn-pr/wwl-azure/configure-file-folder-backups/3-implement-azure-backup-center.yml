@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-file-folder-backups.implement-azure-backup-center
-title: Implement Azure backup center
+title: Implement Backup center for Azure Backup
 metadata:
-  title: Implement Azure backup center
-  description: "Implement Azure backup center"
-  ms.date: 12/01/2022
+  title: Implement Backup center for Azure Backup
+  description: "Implement Backup center for Azure Backup"
+  ms.date: 03/06/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 3
+durationInMinutes: 2
 content: |
   [!include[](includes/3-implement-azure-backup-center.md)]

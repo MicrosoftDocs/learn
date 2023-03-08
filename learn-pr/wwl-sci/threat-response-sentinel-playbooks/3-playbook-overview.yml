@@ -1,19 +1,19 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.threat-response-sentinel-playbooks.3-playbook-overview
+title: What are Microsoft Sentinel playbooks?
 metadata:
   title: What are Microsoft Sentinel playbooks?
-  description: Explore Microsoft Sentinel playbooks.
-  ms.date: 12/17/2020
-  author: cwatson-cat
-  ms.author: cwatson
+  description: "Explore Microsoft Sentinel playbooks."
+  ms.date: 01/25/2023
+  author: wwlpublish
+  ms.author: kelawson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: What are Microsoft Sentinel playbooks?
 durationInMinutes: 10
 content: |
   [!include[](includes/3-playbook-overview.md)]
 quiz:
-  title: Check your knowledge
+  title: "Check your knowledge"
   questions:
   - content: "An administrator needs to create a Microsoft Sentinel playbook. The administrator creates a logic app and starts Logic Apps Designer. Which of the following connector should the administrator use as a trigger to your playbook?"
     choices:

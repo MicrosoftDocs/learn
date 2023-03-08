@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.azure.secure-monitor-azure-arc-enabled-sql-managed-instance
+metadata:
+  title: Enhance security and implement monitoring of Azure Arc-enabled SQL Managed Instance
+  description: Learn how to enhance security and implement monitoring of Azure Arc-enabled SQL Managed Instance
+  ms.date: 12/23/2022
+  author: tchristiani
+  ms.author: terrychr
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Monitor Azure Arc-enabled SQL Managed Instance security performance
+summary: Azure Arc-enabled SQL Managed Instance offers a secure and performant solution for deploying the SQL Server database engine in a wide range of hybrid scenarios.
+abstract: |
+  By the end of this module, you'll be able to:
+    - Enhance the security of Azure Arc-enabled SQL Managed Instance.
+    - Monitor the performance of Azure Arc-enabled SQL Managed Instance.
+roles: 
+  - administrator
+  - data-engineer
+  - database-administrator
+  - devops-engineer
+  - solution-architect
+  - student
+  - technology-manager
+  - security-engineer
+prerequisites: |
+  - Experience implementing and managing Platform-as-a-Service (PaaS) services in Microsoft Azure.
+  - Intermediate knowledge of Azure management, including the ability to navigate the Azure portal and run Azure CLI commands.
+  - Intermediate knowledge of containerization and container orchestration by using Kubernetes.
+  - Intermediate knowledge of Azure SQL Managed Instance.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - intermediate
+products:
+  - azure-arc
+  - azure-sql-managed-instance
+subjects:
+  - cloud-computing
+units:
+- learn.azure.secure-monitor-azure-arc-enabled-sql-managed-instance.introduction
+- learn.azure.secure-monitor-azure-arc-enabled-sql-managed-instance.explore-security-azure-arc-enabled-sql-managed-instance
+- learn.azure.secure-monitor-azure-arc-enabled-sql-managed-instance.monitor-azure-arc-enabled-sql-managed-instance
+- learn.azure.secure-monitor-azure-arc-enabled-sql-managed-instance.exercise-monitor-azure-arc-enabled-sql-managed-instance
+- learn.azure.secure-monitor-azure-arc-enabled-sql-managed-instance.knowledge-check
+- learn.azure.secure-monitor-azure-arc-enabled-sql-managed-instance.summary
+badge:
+  uid: learn.azure.secure-monitor-azure-arc-enabled-sql-managed-instance.badge
+  

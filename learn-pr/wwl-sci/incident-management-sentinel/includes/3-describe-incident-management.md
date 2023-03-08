@@ -1,3 +1,4 @@
+
 Like any business, Contoso faces technology-related threats to its organization. Microsoft Sentinel can help Contoso's IT team organize, investigate, and track these threats from creation to resolution. The threats are called *incidents*.
 
 ## Key concepts
@@ -8,7 +9,7 @@ Before you begin managing incidents, it's important to understand the following 
 - **Events**. Microsoft Sentinel stores events in a Log Analytics workspace. These events contain the details of security-related activity that you want to monitor with Microsoft Sentinel.
 - **Analytic rules**. You can create analytics rules to detect important security events and generate alerts. You can create analytics rules by using built-in templates or by using custom Kusto Query Language (KQL) queries against Log Analytics workspaces in Sentinel.
 - **Alerts**. Analytics rules generate alerts when they detect important security events. You can also configure alerts to generate incidents.
-- **Incidents**. Microsoft Sentinel creates incidents from analytics rule alerts. Incidents can contain multiple related alerts. You will use each incident as a starting point and tracking mechanism for investigation into security concerns in your environment.
+- **Incidents**. Microsoft Sentinel creates incidents from analytics rule alerts. Incidents can contain multiple related alerts. You'll use each incident as a starting point and tracking mechanism for investigation into security concerns in your environment.
 
 ## Incident management in Microsoft Sentinel
 

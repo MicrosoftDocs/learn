@@ -1,10 +1,11 @@
+
 As a security engineer working for Contoso, you notice suspicious activities in your Azure subscription and you decide to analyze this activity by using Microsoft Sentinel workbooks.
 
 ## Exercise: Query and visualize data with Microsoft Sentinel Workbooks
 
 You want to analyze the logs in Microsoft Sentinel from the Azure Activity connector. You want to then further implement visualization of this data and save it in a customized workbook.
 
-In this exercise, you will explore logs and Microsoft Sentinel Workbooks. You will perform the following tasks:
+In this exercise, you'll explore logs and Microsoft Sentinel Workbooks. You'll perform the following tasks:
 
 - Interact with logs data in the Microsoft Sentinel **Logs** page.
 - Create and edit a custom workbook to visualize important data.
@@ -31,7 +32,7 @@ In this exercise, you will explore logs and Microsoft Sentinel Workbooks. You wi
 
     :::image type="content" source="../media/07-query-result.png" alt-text="Screenshot of the Query results with the previous items called out." border="true":::
 
-8. Select **Queries** tab in the left pane. This pane includes example queries that you can add to the query window. If you're using your own workspace, you should have a variety of queries in multiple categories, but if you're using the demonstration environment, you might only see a single **Log Analytics workspaces** category.
+8. Select **Queries** tab in the left pane. This pane includes example queries that you can add to the query window. If you're using your own workspace, you should have various queries in multiple categories, but if you're using the demonstration environment, you might only see a single **Log Analytics workspaces** category.
 
     > [!NOTE]
     > You can try to practice writing queries in the following [demonstration environment](https://ms.portal.azure.com/#blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade).
@@ -52,7 +53,7 @@ In this exercise, you will explore logs and Microsoft Sentinel Workbooks. You wi
 9. Scroll down to the **Caller activities** table, which displays the activities run by your users or security principals. Sort the table data in each column by selecting the arrows in the column header.
 10. Scroll up to the header bar in the **Azure Activity-** *sentinelname* page. Select the **Edit** option to switch the workbook to the editing mode. Observe the various **Edit** options that display on the page.
 11. Select the first **Edit** option. That will display the editing pane for one of the steps in the workbook. You can further customize the presentation of the elements by adjusting the style and reordering them in different order.
-12. You can add additional parameters with different types such as text, drop-down, multi-values, or similar.
+12. You can add other parameters with different types such as text, drop-down, multi-values, or similar.
 13. Select **Add parameter**.
 14. In the **New Parameter** page, enter the following values:
 
@@ -63,7 +64,7 @@ In this exercise, you will explore logs and Microsoft Sentinel Workbooks. You wi
     |**Parameter type**| From the drop-down menu, select **Drop down**|
     |**Required?**| Select this check box.|
     |**Allow multiple selections**| Select this check box.|
-    |**Limit multiple selections**| Do not select this check box.|
+    |**Limit multiple selections**| Don't select this check box.|
     |**Delimiter**| Retain the default values.|
     |**Quote with**| Retain the default values.|
     |**Explanation**| This parameter will filter the events based on the level.|
@@ -99,3 +100,4 @@ In this exercise, you will explore logs and Microsoft Sentinel Workbooks. You wi
 2. Select **azure-sentinel-rg**.
 3. On the header bar, select **Delete resource group**.
 4. In the **TYPE THE RESOURCE GROUP NAME:** field, enter the name of the resource group **azure-sentinel-rg** and select **Delete**.
+

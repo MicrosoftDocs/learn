@@ -3,9 +3,9 @@ uid: learn.wwl.classify-images-custom-vision
 metadata:
   title: Classify images with the Custom Vision service
   description: "Classify images with the Custom Vision service"
-  ms.date: 01/19/2023
+  ms.date: 01/27/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: sheryang
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Classify images with the Custom Vision service

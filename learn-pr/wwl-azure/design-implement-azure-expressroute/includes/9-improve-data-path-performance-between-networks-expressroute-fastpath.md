@@ -146,6 +146,6 @@ To redeem a connection authorization
 
 **Clean up resources**
 
-You can delete a connection and unlink your VNet to an ExpressRoute circuit by selecting the **Delete** icon on the page for your connection.
+1. You can delete a connection and unlink your VNet to an ExpressRoute circuit by selecting the **Delete** icon on the page for your connection.
 
     :::image type="content" source="../media/delete-connection-cf82781a.png" alt-text="Azure portal - delete connection":::

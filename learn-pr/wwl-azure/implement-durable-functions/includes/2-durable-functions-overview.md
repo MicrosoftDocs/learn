@@ -1,14 +1,11 @@
+
+
+
  The *durable functions* extension lets you define stateful workflows by writing  *orchestrator functions* and stateful entities by writing  *entity functions* using the Azure Functions programming model. Behind the scenes, the extension manages state, checkpoints, and restarts for you, allowing you to focus on your business logic.
 
 ## Supported languages
 
-Durable Functions currently supports the following languages:
-
-* **C#**: both precompiled class libraries and C# script.
-* **JavaScript**: supported only for version 2.x of the Azure Functions runtime. Requires version 1.7.0 of the Durable Functions extension, or a later version.
-* **Python**: requires version 2.3.1 of the Durable Functions extension, or a later version.
-* **F#**: precompiled class libraries and F# script. F# script is only supported for version 1.x of the Azure Functions runtime.
-* **PowerShell**: Supported only for version 3.x of the Azure Functions runtime and PowerShell7. Requires version 2.x of the bundle extensions.
+Durable Functions is designed to work with all Azure Functions programming languages but may have different minimum requirements for each language. Follow this link for the list of currently [supported languages](/azure/azure-functions/durable/durable-functions-overview?tabs=csharp-inproc#language-support).
 
 ## Application patterns
 

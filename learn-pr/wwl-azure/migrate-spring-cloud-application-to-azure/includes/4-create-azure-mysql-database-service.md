@@ -11,18 +11,19 @@ You'll also need to update the config for your applications to use the newly pro
     
     ```Bash
     SQL_SERVER_NAME=springappsmysql$RANDOM$
+    MYSQL_ADMIN_USERNAME=myadmin
     RANDOM SQL_ADMIN_PASSWORD=<myadmin_password>
     DATABASE_NAME=petclinic
     
     az mysql server create \
         --admin-user myadmin \
         --admin-password ${SQL_ADMIN_PASSWORD} \
-        --name ${SQL_SERVER_NAME} \
+        --name ${SQL_SERVER_NAME} \.
         --resource-group ${RESOURCE_GROUP} \
-        --sku-name GP_Gen5_2 \
-        --version 5.7 \
-        --storage-size 5120
     ```
+    
+    > [!NOTE]
+    > You'll be asked if access to your IP address and access for all IP addresses should be added. Answer no on both questions.
     
     > [!NOTE]
     > Provisioning might take about 3 minutes.
@@ -41,14 +42,14 @@ You'll also need to update the config for your applications to use the newly pro
     
     ```Bash
     az mysql server firewall-rule create \
-        --name allAzureIPs \
-        --server ${SQL_SERVER_NAME} \
+        --rule-name allAzureIPs \
+        --name ${MYSQL_SERVER_NAME} \.
         --resource-group ${RESOURCE_GROUP} \
         --start-ip-address 0.0.0.0 \
         --end-ip-address 0.0.0.0
     ```
 
-5.  From the Git Bash window, in the config repository you cloned locally, use your favorite text editor to open the application.yml file. Change the entries in lines 82, 83, and 84 that contain the values of the target datasource endpoint, the corresponding admin user account, and its password. Set these values by using the information in the Azure Database for MySQL Single Server connection string you recorded earlier in this task. Your configuration should look like this:
+5.  From the Git Bash window, in the config repository you cloned locally, use your favorite text editor to open the application.yml file. Change the entries in lines 82, 83, and 84 that contains the values of the target datasource endpoint, the corresponding admin user account, and its password. Set these values by using the information in the Azure Database for MySQL Single Server connection string you recorded earlier in this task. Your configuration should look like this:
     
     > [!NOTE]
     > The original content of these three lines in the application.yml file has the following format:
@@ -59,14 +60,12 @@ You'll also need to update the config for your applications to use the newly pro
     password: petclinic
     ```
     
-    > [!NOTE]
-    > The updated content of these three lines in the application.yml file should have the following format (where the *mysql-server-name* and *myadmin-password* placeholders represent the name of the Azure Database for MySQL Single Server instance and the password you assigned to the myadmin account during its provisioning,
+    The updated content of these three lines in the application.yml file should have the following format (where the *mysql-server-name* and *myadmin-password* placeholders represent the name of the Azure Database for MySQL Single Server instance and the password you assigned to the myadmin account during its provisioning,
     
     ```
-    url: jdbc:mysql://localhost:3306/db?useSSL=false
-    url: jdbc:mysql://<mysql-server-name>.mysql.database.azure.com:3306/db?useSSL=true
-    username: myadmin@<mysql-server-name>
-    password: <myadmin-password>
+    url: jdbc:mysql://<mysql-server-name>.mysql.database.azure.com:3306/<mysql-database-name>?useSSL=true
+    username: myadmin
+    password: <myadmin-password> 
     ```
     
     > [!NOTE]

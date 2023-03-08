@@ -1,10 +1,11 @@
 You've created a private registry for your toy company to use. In this exercise, you will:
 
 > [!div class="checklist"]
-> * Create a module for the website resources.
-> * Create another module for the resources in the CDN.
-> * Publish the modules to your registry.
-> * List the modules in the registry.
+>
+> - Create a module for the website resources.
+> - Create another module for the resources in the CDN.
+> - Publish the modules to your registry.
+> - List the modules in the registry.
 
 [!INCLUDE [Install the Bicep extension for Visual Studio Code](../../includes/azure-template-bicep-exercise-vscode-extension.md)]
 
@@ -14,23 +15,23 @@ You previously created a module that deploys a website. Here, you save the modul
 
 1. Open Visual Studio Code.
 
-1. Create a new file named *website.bicep*.
+1. Create a new file named _website.bicep_.
 
-1. Paste the following code into the *website.bicep* file:
+1. Paste the following code into the _website.bicep_ file:
 
    ::: code language="bicep" source="code/5-website.bicep" :::
 
 1. Save the file.
 
-   You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> on Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you save the file. For example, you might want to create a *templates* folder to save it in.
+   You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> on Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you save the file. For example, you might want to create a _templates_ folder to save it in.
 
 ## Create a module for a CDN
 
 Similar to the previous steps, you save a precreated module file so that you can publish it soon.
 
-1. Create a new file named *cdn.bicep*.
+1. Create a new file named _cdn.bicep_.
 
-1. Paste the following code into the *cdn.bicep* file:
+1. Paste the following code into the _cdn.bicep_ file:
 
    ::: code language="bicep" source="code/5-cdn.bicep" :::
 
@@ -77,10 +78,10 @@ Similar to the previous steps, you save a precreated module file so that you can
 1. In the Visual Studio Code terminal, run the following commands. Replace `YOUR_CONTAINER_REGISTRY_NAME` with the name of your private registry.
 
    ```bash
-   bicep publish website.bicep \
+   bicep publish website.bicep `
      --target 'br:YOUR_CONTAINER_REGISTRY_NAME.azurecr.io/website:v1'
 
-   bicep publish cdn.bicep \
+   bicep publish cdn.bicep `
      --target 'br:YOUR_CONTAINER_REGISTRY_NAME.azurecr.io/cdn:v1'
    ```
 
@@ -101,4 +102,4 @@ Similar to the previous steps, you save a precreated module file so that you can
 
 ::: zone-end
 
-   You can also use the Azure portal to list the modules in your registry.
+You can also use the Azure portal to list the modules in your registry. From your resource group's **Overview** tab, select `YOUR_CONTAINER_REGISTRY_NAME` and then select **Repositories**. You connect to the Azure portal later in this module.

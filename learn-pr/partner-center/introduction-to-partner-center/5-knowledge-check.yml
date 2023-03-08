@@ -8,6 +8,7 @@ metadata:
   ms.date: 11/14/2022
   author: JulCsc
   ms.author: juliacawthra
+  manager: jasonh
   ms.topic: interactive-tutorial
   ms.service: partner-dashboard
 durationInMinutes: 5
@@ -48,14 +49,4 @@ quiz:
     - content: "With the indirect model, CSPs won't purchase products directly from or be invoiced directly by Microsoft. Instead, they work with indirect providers (also known as distributors) who transact directly with Microsoft."
       isCorrect: true
       explanation: "This is correct. With the indirect model, you can purchase from an indirect provider who can collaborate with you for customer support and billing. In the direct-bill model, partners purchase Microsoft products and subscriptions directly from Microsoft and sell them directly to their customers through their in-house sales staff."
-  - content: "Before you can order CSP offers on behalf of a customer, the customer must sign the ______."
-    choices:
-    - content: "1042-S tax form"
-      isCorrect: false
-      explanation: "Incorrect. Before you can order CSP offers on behalf of a customer, the customer must sign the Microsoft Customer Agreement."
-    - content: "Microsoft Customer Agreement"
-      isCorrect: true
-      explanation: "This is correct. Before you can order CSP offers on behalf of a customer, the customer must sign the Microsoft Customer Agreement."
-    - content: "claim submission form"
-      isCorrect: false
-      explanation: "Incorrect. Before you can order CSP offers on behalf of a customer, the customer must sign the Microsoft Customer Agreement."
+  

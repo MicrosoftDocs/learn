@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.load-data-into-relational-data-warehouse.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/21/2023
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: synapse-analytics
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "In which order should you load tables in the data warehouse?"
+    choices:
+    - content: "Staging tables, then dimension tables, then fact tables"
+      isCorrect: true
+      explanation: "That's correct. The correct order of operations is stage, populate dimensions to transform keys and SCDs, then load facts with numeric values."
+    - content: "Staging tables, then fact tables, then dimension tables"
+      isCorrect: false
+      explanation: "That's incorrect. Fact tables should be loaded last with the appropriate surrogate keys from dimensions."
+    - content: "Dimension tables, then staging tables, then fact tables"
+      isCorrect: false
+      explanation: "That's incorrect. This approach could cause corruption if there were changes to a dimension."
+  - content: "Which command should you use to load a staging table with data from files in the data lake?"
+    choices:
+    - content: "COPY"
+      isCorrect: true
+      explanation: "That's Correct. With existing tables, the copy command is the most efficient way to populate the warehouse from the data lake."
+    - content: "LOAD"
+      isCorrect: false
+      explanation: "That's incorrect. Load isn't a valid operation in this context"
+    - content: "INSERT"
+      isCorrect: false
+      explanation: "That's incorrect. Although INSERT is an option, it doesn't perform as well as the COPY command."
+  - content: "When a customer changes their phone number, the change should be made in the existing row for that customer in the dimension table. What type of slowly changing dimension does this scenario require?"
+    choices:
+    - content: "Type 0"
+      isCorrect: false
+      explanation: "That's incorrect. We'll want the new phone number stored."
+    - content: "Type 1"
+      isCorrect: true
+      explanation: "That's correct. In this case, simply changing the number with no history is appropriate."
+    - content: "Type 2"
+      isCorrect: false
+      explanation: "That's incorrect. There should be no historical context for storing an old phone number."

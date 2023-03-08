@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-file-folder-backups.setup-recovery-service-vault-backup-options
-title: Setup recovery service vault backup options
+title: Configure Azure Recovery Services vault backup options
 metadata:
-  title: Setup recovery service vault backup options
-  description: "Setup recovery service vault backup options"
-  ms.date: 12/01/2022
+  title: Configure Azure Recovery Services vault backup options
+  description: "Configure Azure Recovery Services vault backup options"
+  ms.date: 03/06/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/4-setup-recovery-service-vault-backup-options.md)]

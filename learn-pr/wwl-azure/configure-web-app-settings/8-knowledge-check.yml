@@ -4,18 +4,16 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/26/2022
+  ms.date: 02/28/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "In which of the app configuration settings categories below would you set the language and SDK version?"
+  - content: "In which of the following app configuration settings categories would you set the language and SDK version?"
     choices:
     - content: "Application settings"
       isCorrect: false

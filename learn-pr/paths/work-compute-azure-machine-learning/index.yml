@@ -1,0 +1,29 @@
+### YamlMime:LearningPath
+uid: learn.wwl.work-compute-azure-machine-learning
+metadata:
+  title: Work with compute in Azure Machine Learning
+  description: Azure Machine Learning compute targets and environments with Python SDK v2
+  ms.date: 03/01/2023
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Work with compute in Azure Machine Learning
+prerequisites: |
+  None
+summary: |
+  Learn how to work with compute targets and environments in the Azure Machine Learning workspace.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- data-scientist
+products:
+- azure-machine-learning
+subjects:
+- machine-learning
+modules:
+- learn.wwl.work-compute-resources-azure-machine-learning
+- learn.wwl.work-environments-azure-machine-learning
+trophy:
+  uid: learn.wwl.work-compute-azure-machine-learning.trophy

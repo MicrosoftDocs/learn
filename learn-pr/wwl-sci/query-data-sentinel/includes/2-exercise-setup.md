@@ -1,3 +1,4 @@
+
 The Query and visualize data in Microsoft Sentinel exercise in this module is an optional unit. However, if you want to perform this exercise, you need access to an Azure subscription where you can create Azure resources. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
 
 To deploy the prerequisites for the exercise, perform the following tasks.
@@ -50,7 +51,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 
 ## Task 3: Configure Microsoft Sentinel connectors
 
-In this task, you will deploy a Microsoft Sentinel connector to Azure Activity.
+In this task, you'll deploy a Microsoft Sentinel connector to Azure Activity.
 
 1. In the Azure portal, search for and select **Microsoft Sentinel**, and then select the previously created Microsoft Sentinel workspace.
 2. On the **Microsoft Sentinel** page, on the menu bar, in the **Configuration** section, select **Data connectors**.
@@ -64,3 +65,4 @@ In this task, you will deploy a Microsoft Sentinel connector to Azure Activity.
 
 > [!NOTE]
 > The connector for Azure Activity could take 15 minutes to deploy. You can proceed with the rest of the steps in the exercise and with the subsequent units in this module.
+

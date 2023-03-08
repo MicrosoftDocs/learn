@@ -3,7 +3,7 @@ uid: learn.wwl.explore-provision-deploy-non-relational-data-services-azure
 metadata:
   title: Explore Azure Storage for non-relational data
   description: "Explore Azure Storage for non-relational data"
-  ms.date: 08/31/2022
+  ms.date: 01/25/2023
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -19,7 +19,7 @@ abstract: |
   - Provision and use an Azure Storage account
 prerequisites: |
   Before starting this module, you should have some familiarity with Microsoft Azure concepts and the Azure portal.
-iconUrl: /training/achievements/explore-provision-deploy-non-relational-data-services-azure.svg
+iconUrl: /learn/achievements/explore-provision-deploy-non-relational-data-services-azure.svg
 levels:
 - beginner
 roles:

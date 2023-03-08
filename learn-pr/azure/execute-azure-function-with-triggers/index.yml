@@ -3,7 +3,7 @@ uid: learn.execute-azure-function-with-triggers
 metadata:
   title: Execute an Azure Function with triggers
   description: This module demos some of the most common types of triggers for executing Azure Functions and how to configure them to execute your logic.
-  ms.date: 04/05/2022
+  ms.date: 02/02/2023
   author: ggailey777
   ms.author: glenga
   ms.topic: interactive-tutorial
@@ -19,7 +19,7 @@ abstract:  |
   - Create a blob trigger to invoke a function when a blob is created or updated in Azure Storage
 prerequisites: None
 iconUrl: /training/achievements/execute-azure-function-with-triggers.svg
-hidden: true
+hidden: false
 levels: 
 - beginner
 roles: 

@@ -26,6 +26,6 @@ Microsoft's implementation of a CIEM with Entra Permissions Management plays a k
 
 ### Use Microsoft Entra Permissions Management in your organization ###
 
-Interested in trying out Microsoft Entra Permissions Management for your organization? You can [enroll in a 45-day free trial](https://signup.microsoft.com/get-started/signup?products=4ca08d64-d9c6-436f-a1ec-80c0c127a717&culture=en-us&country=US&ali=1) and run a risk assessment across your multicloud environment.
+Interested in trying out Microsoft Entra Permissions Management for your organization? You can [enroll in a 45-day free trial](https://aka.ms/TryPermissionsManagement) and run a risk assessment across your multicloud environment.
 
 For more information on how to buy Permissions Management, [register with Microsoft](https://signup.microsoft.com/get-started/signup?products=47b5bd00-3996-47f2-848d-ba075eaddBe8&ali=1&bac=1).

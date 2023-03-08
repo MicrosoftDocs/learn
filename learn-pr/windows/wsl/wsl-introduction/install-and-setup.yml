@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wsl-introduction.install-and-setup
-title: Install and set up Linux on Windows with WSL
+title: Exercise - Install and set up Linux on Windows with WSL
 metadata:
   unitType: exercise
   title: exercise
-  description: "Install a Linux distribution on Windows using WSL, set up a Linux username and password, gain an understanding of what the wsl install command accomplishes and how to install manually if necessary."
-  ms.date: 11/09/2022
+  description: Install a Linux distribution on Windows using WSL, set up a Linux username and password, gain an understanding of how to use the wsl install command.
+  ms.date: 01/27/2023
   author: mattwojo
   ms.author: mattwoj
   ms.topic: interactive-tutorial
   ms.prod: learning-windows
-durationInMinutes: 1
+durationInMinutes: 10
 content: |
   [!include[](includes/3-install-and-setup.md)]

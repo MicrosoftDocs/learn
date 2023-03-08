@@ -1,3 +1,4 @@
+
 ## Resolution of module problem
 
 Contoso SecOps wanted to improve their response time to security incidents and prevent future incidents. Contoso decides to use Microsoft Sentinel playbooks, which are based on Logic Apps with a Microsoft Sentinel connector to provide near real-time responses.
@@ -24,3 +25,4 @@ You can learn more by reviewing the following documents.
 
 - [Tutorial: Detect threats out-of-the-box](/azure/sentinel/tutorial-detect-threats-built-in?azure-portal=true)
 - [Connect data sources](/azure/sentinel/connect-data-sources?azure-portal=true)
+
