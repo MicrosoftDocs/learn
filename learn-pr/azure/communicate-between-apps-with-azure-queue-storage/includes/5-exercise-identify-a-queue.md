@@ -34,13 +34,13 @@ Your application needs a connection string to be able to connect to your storage
 The following code uses the Azure CLI to retrieve the storage connection string and place it in an environment variable. The application will then read this environment variable to get the connection string and connect to the storage queue. Be sure to substitute in the name of your storage account in the command below.
 
 ```bash
-export STORAGE_CONNECTION_STRING=`az storage account show-connection-string -g <rgn>[sandbox resource group name]</rgn> -n <storage account name> --output tsv`
+export MY_STORAGE_CONNECTION_STRING=`az storage account show-connection-string -g <rgn>[sandbox resource group name]</rgn> -n <storage account name> --output tsv`
 ```
 
 You can verify that you have a connection string set in your environment variable by running the following command to view the connection string:
 
 ```bash
-echo $STORAGE_CONNECTION_STRING
+echo $MY_STORAGE_CONNECTION_STRING
 ```
 
 ## Add code to create a QueueClient
@@ -56,7 +56,7 @@ To create a `QueueClient` object, you need both the storage connection string an
 1. At the beginning of the main method, add the following code.
 
     ```csharp
-    string connectionString = Environment.GetEnvironmentVariable("STORAGE_CONNECTION_STRING");
+    string connectionString = Environment.GetEnvironmentVariable("MY_STORAGE_CONNECTION_STRING");
     QueueClient queueClient = new QueueClient(connectionString, "newsqueue");
     ```
 
@@ -79,7 +79,7 @@ The full main method should now look like this:
 static async Task Main(string[] args)
 {
     // Add code to create QueueClient and Storage Queue Here
-    string connectionString = Environment.GetEnvironmentVariable("STORAGE_CONNECTION_STRING");
+    string connectionString = Environment.GetEnvironmentVariable("MY_STORAGE_CONNECTION_STRING");
     QueueClient queueClient = new QueueClient(connectionString, "newsqueue");
     await queueClient.CreateIfNotExistsAsync();
 

@@ -107,7 +107,7 @@ You can check queues in the Azure portal using the Azure CLI, or using Azure Pow
 Run the following command in the Cloud Shell environment.\
 
 ```azurecli
-az storage message peek --queue-name newsqueue --connection-string $STORAGE_CONNECTION_STRING 
+az storage message peek --queue-name newsqueue --connection-string $MY_STORAGE_CONNECTION_STRING 
 ```
 
 This should dump the information for your message, which will look something like this:
