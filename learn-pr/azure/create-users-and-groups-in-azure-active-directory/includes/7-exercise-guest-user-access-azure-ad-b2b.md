@@ -14,7 +14,7 @@ After you add a guest user to the organization, send them a direct link to a sha
 
    :::image type="content" source="../media/7-new-guest-user.png" alt-text="Screenshot that shows the New guest user button.":::
 
-   The **New user** pane appears.
+   The **New user** pane opens.
 
 1. Confirm **Invite user** is selected.
 
