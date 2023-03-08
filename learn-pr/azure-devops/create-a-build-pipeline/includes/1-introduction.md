@@ -29,12 +29,23 @@ The modules in this learning path and previous learning path form a progression.
 
 To follow the progression from the beginning, be sure to first complete the [Get started with Azure DevOps](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true) learning path.
 
+This module includes the option to use [GitHub Codespaces](https://github.com/features/codespaces) or a [Microsoft-hosted agent](/azure/devops/pipelines/agents/hosted). If you'd like to use a Microsoft-hosted agent, [check your parallel jobs and request a free grant](/azure/devops/pipelines/troubleshooting/troubleshooting#check-for-available-parallel-jobs).
+
+The prerequisites for this learning path vary depending on which option you select.
+
+#### [GitHub Codespaces](#tab/codespaces)
+
+- An [Azure DevOps organization](/azure/devops/pipelines/get-started/pipelines-sign-up)
+- An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true)
+- A [GitHub](https://github.com/join?azure-portal=true) account
+
+#### [Microsoft-hosted agent](#tab/hosted-agent)
+
 If you want to start with this learning path, you need to set up a development environment on your Windows, macOS, or Linux system. You need:
 
 [!include[](../../shared/includes/prerequisites.md)]
 
-> [!IMPORTANT]
-> This module includes the option to use [GitHub Codespaces](https://github.com/features/codespaces) or a [Microsoft-hosted agent](/azure/devops/pipelines/agents/hosted). If you'd like to use a Microsoft-hosted agent, [check your parallel jobs and request a free grant](/azure/devops/pipelines/troubleshooting/troubleshooting#check-for-available-parallel-jobs).
+---
 
 If your company's policy doesn't allow you to create an Azure DevOps organization, you can create your own personal account. You can get started with Azure DevOps for free.
 
