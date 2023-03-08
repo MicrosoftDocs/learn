@@ -39,7 +39,7 @@ Credential Access consists of techniques for **stealing credentials** like **acc
 
 **Discovery**: The adversary is trying to figure out your environment.
 
-Discovery consists of techniques an adversary may use to learn about the system and internal network. These techniques help adversaries observe the environment and orient themselves before deciding how to act. They also allow adversaries to explore what they can control and what’s around their entry point in order to discover how it could benefit their current objective. Native operating system tools are used toward this post-compromise information-gathering objective.
+Discovery consists of techniques an adversary may use to learn about the system and internal network. These techniques help adversaries observe the environment and familiarize themselves before deciding how to act. They also allow adversaries to explore what they can control and what’s around their entry point in order to discover how it could benefit their current objective. Native operating system tools are used toward this post-compromise information-gathering objective.
 
 **Lateral Movement**: The adversary is trying to move through your environment.
 

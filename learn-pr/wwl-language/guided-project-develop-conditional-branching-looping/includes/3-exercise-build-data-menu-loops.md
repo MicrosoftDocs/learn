@@ -137,7 +137,7 @@ In this task, you convert the existing `if-elseif-else` construct to a `switch-c
         animalAge = "1";
         animalPhysicalDescription = "small white female weighing about 8 pounds. litter box trained.";
         animalPersonalityDescription = "friendly";
-        animalNickname = "Puss";
+        animalNickname = "Daisy";
         break;
 
     ```
