@@ -8,7 +8,7 @@ metadata:
   ms.author: rstearman
   ms.topic: interactive-tutorial
 title: Understand Azure Active Directory
-summary: Upon completing this module, you will acquire the necessary knowledge to describe Azure AD, a cloud-based identity and access management service that allows organizations to manage their users, groups, and applications. You will also be able to compare Azure AD with Active Directory Domain Services (AD DS) and understand how Azure AD serves as a directory for cloud services. In addition, you will learn about Azure AD Premium P1 and P2, which provide enhanced security features and identity protection. Finally, you will gain an understanding of Azure AD Domain Services, which enables organizations to use Azure AD to manage domain-joined devices and legacy applications in the cloud.
+summary: This module explains Azure AD, a cloud-based identity and access management service for managing users, groups, and apps. You'll compare Azure AD to AD DS, learn about Azure AD Premium P1 and P2, and explore Azure AD Domain Services for managing domain-joined devices and legacy apps in the cloud.
 abstract: |
   After this module, you should be able to:
   - Describe Azure AD.
