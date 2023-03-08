@@ -2,7 +2,7 @@ Now that all the requirements are in place, you can write code that creates a ne
 
 ## Add code to send a message
 
-The sample program contains a `SendMessageAsync` method. In this step, you will write code to implement this method.
+The sample program contains a `SendMessageAsync` method. In this step, you'll write code to implement this method.
 
 1. Locate the `SendMessageAsync` method.
 
@@ -28,7 +28,7 @@ The sample program contains a `SendMessageAsync` method. In this step, you will 
     SendReceipt sendReceipt = response.Value;
     ```
 
-1. Finally, we are going to print out to the console some information about the `SendReceipt` that was included in the response from sending the message. For our application, these fields purely informational, but could be used in an actual application to log or track data about the message submitted to the queue.
+1. Finally, we're going to print out to the console some information about the `SendReceipt` that was included in the response from sending the message. For our application, these fields purely informational, but could be used in an actual application to log or track data about the message submitted to the queue.
 
     ```csharp
     Console.WriteLine($"Message sent.  Message id={sendReceipt.MessageId}  Expiration time={sendReceipt.ExpirationTime}");
@@ -62,7 +62,7 @@ The sample program contains a `SendMessageAsync` method. In this step, you will 
 
 You are now ready to build and run the program to send your first message to the queue.
 
-1. Make sure you have saved the file in the code editor and then use the `dotnet build` command in the Cloud Shell to build the application.
+1. Make sure you've saved the file in the code editor and then use the `dotnet build` command in the Cloud Shell to build the application.
 
     ```dotnetcli
     dotnet build
