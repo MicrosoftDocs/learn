@@ -119,42 +119,13 @@ A *remote* is a Git repository where team members collaborate (similar to a repo
     upstream        https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web.git (fetch)
     ```
 
-### Open the project in the file explorer
-
-In Visual Studio Code, your terminal window points to the root directory of the *Space Game* web project. Let's open the project to view its structure and work with files.
-
-1. The easiest way to open the project is to reopen Visual Studio Code in the current directory. To do so, run the following command from the integrated terminal:
-
-    ```bash
-    code -r .
-    ```
-
-    You see the directory and file tree in the file explorer.
-    
-1. Reopen the integrated terminal. The terminal places you at the root of your web project.
-
-If the `code` command fails, you need to add Visual Studio Code to your system PATH. To do so:
-
-1. In Visual Studio Code, select <kbd>F1</kbd> or select **View** > **Command Palette** to access the command palette.
-
-1. In the command palette, enter *Shell Command: Install 'code' command in PATH*.
-
-1. Repeat the previous procedure to open the project in the file explorer.
-
 ## Build and run the web app
 
-Now that you have the web app, you can build and run it locally.
-
-1. In Visual Studio Code, navigate to the terminal window, and to build the app, run this `dotnet build` command:
+1. In the Visual Studio Code online editor, navigate to the terminal window, and to build the app, run this `dotnet build` command:
 
     ```dotnetcli
     dotnet build --configuration Release
     ```
-
-    > [!NOTE]
-    > If the `dotnet` command isn't found, review the prerequisites at the start of this module. You might need to install the .NET SDK.
-
-    .NET projects typically come with two build configurations: Debug and Release. Debug builds aren't optimized for performance. They make it easier for you to trace through your program and troubleshoot issues. Here, you select the Release configuration just to see the web app in action.
 
 1. From the terminal window, to run the app, run this `dotnet run` command:
 
@@ -168,18 +139,13 @@ Now that you have the web app, you can build and run it locally.
 
 In development mode, the *Space Game* website is configured to run on port 5000.
 
-From a new browser tab, to see the running app, navigate to `http://localhost:5000`.
+You'll see a new message in the Visual Studio editor that your application is running on port 5000 is available. Select **Open in Browser** to the app running.
 
-You see this:
+    :::image type="content" source="../media/3-port-forwarding-message.png" alt-text="Screenshot of port forwarding Codespaces message. ":::
+
+In the new browser window, you'll see this:
 
 :::image type="content" source="../media/3-space-game-top.png" alt-text="Screenshot of a web browser showing the Space Game web site.":::
-
-> [!TIP]
-> If you see an error in your browser that's related to a privacy or certificate error, to stop the running app, select Ctrl+C from your terminal.
-> 
-> Next, run `dotnet dev-certs https --trust` and select **Yes** when prompted. For more information, [see this blog post](https://www.hanselman.com/blog/DevelopingLocallyWithASPNETCoreUnderHTTPSSSLAndSelfSignedCerts.aspx?azure-portal=true).
->
-> After your computer trusts your local SSL certificate, to see the running app, run the `dotnet run` command a second time and go to `http://localhost:5000` from a new browser tab.
 
 You can interact with the page, including the leaderboard. When you select a player's name, you see details about that player:
 
