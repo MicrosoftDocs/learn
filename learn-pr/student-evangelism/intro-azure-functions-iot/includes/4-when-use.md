@@ -6,7 +6,7 @@ Developers write the application as functions. Typically, these functions are st
 
 ## Business considerations
 
-The key business considerations for using Azure function for IoT are to create scalable applications where you're charged only for the resources you use. Your solution can scale up or down dynamically and instantly depending on the business requirements. You don't have to manage the infrastructure or allocate the resources in advance. Other business advantages include faster time to market and the flexibility to use multiple programming languages.  
+The key business considerations for using Azure function for IoT are to create scalable applications where you're charged only for the resources you use. Your solution can scale up or down dynamically depending on the business requirements. You don't have to manage the infrastructure or allocate the resources in advance. Other business advantages include faster time to market and the flexibility to use multiple programming languages.  
 
 ## Considerations for IoT
 

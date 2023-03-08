@@ -25,17 +25,17 @@ quiz:
     - content: "Azure Functions for IoT can manage large volumes of data."
       isCorrect: false
       explanation: "Incorrect. In themselves, IoT functions aren't related to managing large data volumes"
-  - content: "An Azure Function has two parts - Triggers and Bindings.  Collectively, what do Triggers and Bindings achieve?"
+  - content: "An Azure Function has two parts - triggers and bindings.  Collectively, what do triggers and bindings achieve?"
     choices:
-    - content: "Triggers and Bindings help to create a scalable solution."
+    - content: "Triggers and bindings help to create a scalable solution."
       isCorrect: false
       explanation: "Incorrect. Scalable solutions are a feature of Azure solutions but aren't uniquely related to Triggers and Bindings."
     - content: "Triggers and bindings help you to avoid hardcoding access to other services."
       isCorrect: true
       explanation: "Correct. The trigger invokes the function and provides data needed by the function. Bindings connect resources to the function. Data from bindings is provided to the function as parameters. Thus, Triggers and bindings help you to avoid hardcoding access to other services."
-    - content: "Triggers and Bindings provide a rapid response to events."
+    - content: "Triggers and bindings provide a rapid response to events."
       isCorrect: false
-      explanation: "Incorrect. Triggers and Bindings aren't uniquely responsible for providing a rapid response to events."
+      explanation: "Incorrect. Triggers and bindings aren't uniquely responsible for providing a rapid response to events."
   - content: "Identify the feature of Azure Functions for IoT that ensure that you're charged only for the resources you use?"
     choices:
     - content: "Azure Functions for IoT are faster hence they use less resources."
@@ -46,4 +46,4 @@ quiz:
       explanation: "Incorrect. The existence of a dashboard doesn't impact the cost."
     - content: "You don't have to pre-allocate the resources in advance."
       isCorrect: true
-      explanation: "Correct. You're charged only for the resources you use. Your solution can scale up or down dynamically and instantly depending on the business requirements. You don't have to manage the infrastructure and to allocate the resources in advance. The system does that for you."
+      explanation: "Correct. You're charged only for the resources you use. You don't have to manage the infrastructure and to allocate the resources in advance. The system does that for you."

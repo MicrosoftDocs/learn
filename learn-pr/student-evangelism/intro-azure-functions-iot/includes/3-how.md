@@ -24,7 +24,7 @@ The solution uses:
 
 Azure Event Grid orchestrates the solution. It receives images from cameras in the production line. The function “Process incoming images and extract products in them for fault detection” uses Azure Cognitive APIs to check if the images have faults. If a fault is detected, then a notification is sent by email. Some images are sent for review by the “Save images marked for review” function. Finally, the images successfully processed are saved by the “Save successfully processed images for further training" function.
 
-## The Triggers and Bindings used are listed below
+## Triggers and Bindings
 
 | Azure Functions                                              | Triggers                                                     | Input Binding | Output Binding                           |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------- | ---------------------------------------- |
