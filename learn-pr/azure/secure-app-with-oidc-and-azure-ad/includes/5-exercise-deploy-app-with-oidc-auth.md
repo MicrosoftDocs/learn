@@ -42,7 +42,7 @@ In this exercise, you'll configure an application to authenticate users against 
 
 1. In the code editor, replace the values shown below to configure the application to communicate with Azure AD:
 
-    |  Existing value | New vaue |
+    |  Existing value | New value |
     | --- | --- |
     | `<domain-name>` | Your Azure AD tenant name (the user-facing display name you used when you registered your application: WebApp-OpenIDConnect-DotNet). |
     | `<ClientID-GUID>` | The application (client) ID that you copied in the previous exercise. |
