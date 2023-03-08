@@ -1,3 +1,4 @@
+
 All data collected by Azure Monitor fits into one of two fundamental types, [metrics and logs](/azure/azure-monitor/platform/data-collection):
 
 **Metrics** are numerical values that describe some aspect of a system at a particular point in time. Metrics are lightweight and capable of supporting near real-time scenarios.
@@ -12,7 +13,7 @@ Let's examine how to work with Azure Monitor metrics in the Azure portal.
 
 - You can use Azure Monitor **metrics explorer** to view the metrics for your Azure services and resources.
 
-- In the Azure portal, select any graph for a resource to open the associated metrics data in metrics explorer. The tool lets you can chart the values of multiple metrics over time. You can work with the charts interactively or pin them to a dashboard to view them with other visualizations.
+- In the Azure portal, select any graph for a resource to open the associated metrics data in metrics explorer. The tool lets you chart the values of multiple metrics over time. You can work with the charts interactively or pin them to a dashboard to view them with other visualizations.
 
 :::image type="content" source="../media/monitor-data-platform-7dbebda9.png" alt-text="Illustration that depicts Azure Monitor metrics data graphs providing information to Metric Analytics in the Azure portal." border="false":::
 

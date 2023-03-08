@@ -3,7 +3,7 @@ uid: learn.wwl.get-started-data-concepts
 metadata:
   title: Get started with data concepts
   description: "Businesses rely on data. Understanding data is key to many business operations. This module covers what data is, when to sort and filter data and when to calculate derived values from data."
-  ms.date: 09/16/2022
+  ms.date: 03/01/2023
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -11,11 +11,11 @@ metadata:
 title: Get started with data concepts
 summary: Businesses rely on data. Understanding data is key to many business operations. This module covers what data is, when to sort and filter data, and when to calculate derived values from data.
 abstract: |
-  By the end of this module, you will be able to:
-  - Describe data
-  - Describe the need to sort and filter data
-  - Describe the need to calculate derived values
-  - Describe the need to highlight data
+  By the end of this module, you'll be able to:
+  - Describe data.
+  - Describe the need to sort and filter data.
+  - Describe the need to calculate derived values.
+  - Describe the need to highlight data.
 prerequisites: |
   - You should be familiar with basic computing concepts and terminology.
 iconUrl: /training/achievements/get-started-data-concepts.svg

@@ -3,7 +3,7 @@ uid: learn.wwl.configure-file-folder-backups
 metadata:
   title: Configure file and folder backups
   description: "Configure file and folder backups"
-  ms.date: 02/07/2023
+  ms.date: 03/06/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -14,7 +14,7 @@ abstract: |
   In this module, you learn how to:
   - Identify features and usage cases for Azure Backup.
   - Configure Azure Recovery Services vault backup options.
-  - Configure the Microsoft Azure Recovery Services (MARS) agent for Azure Backup.  
+  - Configure the Microsoft Azure Recovery Services (MARS) agent for Azure Backup.
   - Implement on-premises file and folder backups.
 prerequisites: |
   None
