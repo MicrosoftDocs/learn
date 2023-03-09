@@ -1,4 +1,4 @@
-In this module, you have learned about API Management and how policies can be used to secure all your endpoints. You have also learned how policies can be divided into granular levels of restrictions, offering different security mechanisms to different clients.
+In this module, you've learned about API Management and how policies can be used to secure all your endpoints. You've also learned how policies can be divided into granular levels of restrictions, offering different security mechanisms to different clients.
 
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
 

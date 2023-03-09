@@ -3,8 +3,8 @@ title: Summary
 uid: learn-windows.introduction-w10-dev.6-summary
 metadata:
   title: Summary
-  description: Summary
-  ms.date: 12/10/2018
+  description: Summary and knowledge check. 
+  ms.date: 03/03/2023
   author: QuinnRadich
   ms.author: quradic
   ms.topic: interactive-tutorial
@@ -19,61 +19,51 @@ quiz:
     - content: What is the name of the tool you should use to write Windows 10 apps?
       choices:
       - content: XCode
-        explanation: XCode is not used for Windows development.
+        explanation: Incorrect. XCode isn't used for Windows development.
         isCorrect: false
       - content: Visual Studio
-        explanation: You'll use Visual Studio 2017 to write Windows 10 apps.
+        explanation: Correct. You should use Visual Studio 2017 to write Windows 10 apps.
         isCorrect: true
       - content: Android Studio
-        explanation: Android Studio is not used for Windows development.
+        explanation: Incorrect. Android Studio isn't used for Windows development.
         isCorrect: false
       - content: Text Editor & Command Line
-        explanation: We strongly recommend using an IDE for Windows app development.
+        explanation: Incorrect. We strongly recommend using an IDE for Windows app development.
         isCorrect: false
     - content: When will you use the XAML markup language in Windows app development?
       choices:
       - content: To define user interfaces in UWP and WPF apps.
-        explanation: Correct! XAML is used in UWP and WPF to create the user interface for your app.
+        explanation: Correct. XAML is used in UWP and WPF to create the user interface for your app.
         isCorrect: true
       - content: To render visual elements in all apps using .NET.
-        explanation: XAML and .NET are independent technologies.
+        explanation: Incorrect. XAML and .NET are independent technologies.
         isCorrect: false
       - content: XAML is auto-generated, and you'll never directly interact with it.
-        explanation: Visual Studio has tools to help you write your XAML, but you'll still need to work with it directly.
+        explanation: Incorrect. Visual Studio has tools to help you write your XAML, but you'll still need to work with it directly.
         isCorrect: false
     - content: "You need to install .NET workloads if you're developing the following types of apps:"
       choices:
       - content: UWP and WinForms
-        explanation: UWP development doesn't require .NET.
+        explanation: Incorrect. UWP development doesn't require .NET.
         isCorrect: false
       - content: WPF only
-        explanation: WPF apps require .NET, but they're not the only type of Windows app that does.
+        explanation: Incorrect. WPF apps require .NET, but they're not the only type of Windows app that does.
         isCorrect: false
       - content: WPF and WinForms
-        explanation: WPF and WinForms development both require .NET workloads to be installed. UWP development does not.
+        explanation: Correct. WPF and WinForms development both require .NET workloads to be installed. UWP development does not.
         isCorrect: true
     - content: What does a Windows developer account allow you to do?
       choices:
       - content: Download and use Visual Studio.
-        explanation: A developer account isn't required to create Windows apps.
+        explanation: Incorrect. A developer account isn't required to create Windows apps.
         isCorrect: false
       - content: Join the Windows Insider Program.
-        explanation: A Microsoft account is required to become a Windows Insider. A developer account is not.
+        explanation: Incorrect. A Microsoft account is required to become a Windows Insider. A developer account isn't.
         isCorrect: false
       - content: Enable Developer Mode on your machine.
-        explanation: Developer Mode can be enabled by anyone, regardless of their account.
+        explanation: Incorrect. Anyone can enable Developer Mode, regardless of their account.
         isCorrect: false
       - content: Submit your app to the Windows Store.
-        explanation: You require a developer account to submit your app to the Windows Store, and to make money from it.
+        explanation: Correct. You require a developer account to submit your app to the Windows Store, and to make money from it.
         isCorrect: true
-    - content: What is NOT true about the Windows Insider Program?
-      choices:
-      - content: The Windows Insider Program is for active developers only.
-        explanation: Anyone can be a Windows Insider if they're interested in testing the latest and upcoming versions of Windows. However, the program is intended primarily for a developer audience.
-        isCorrect: true
-      - content: Prerelease builds might be unstable.
-        explanation: Insider builds are not in a final release state, and you might encounter issues while using them. If your machine receives builds at the *Windows Insider Slow* pace, this risk can be mitigated.
-        isCorrect: false
-      - content: Microsoft will collect information from your device, to help identify issues and improve the user experience.
-        explanation: The Windows Insider Program agreement details what sort of information Microsoft collects from Windows Insiders.
-        isCorrect: false
+
