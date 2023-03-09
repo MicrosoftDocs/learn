@@ -14,7 +14,9 @@ At the server level, you can also choose to use a **Service-managed key** or use
 
 :::image type="content" source="../media/6-transparent-data-encryption-key.png" alt-text="Server view of TDE options.":::  
 
-You can, alternately, use BYOK and take advantage of an Azure key vault. The advantages of using customer-managed keys are:
+### Customer-managed keys with TDE
+
+You can alternately use BYOK and take advantage of an Azure key vault. The advantages of using customer-managed keys are:
 
 - Full and granular control over usage and management of the TDE protector
 - Transparency of the TDE protector usage
@@ -22,6 +24,13 @@ You can, alternately, use BYOK and take advantage of an Azure key vault. The adv
 - Key Vault administrator can revoke key access permissions to make encrypted database inaccessible
 - Central management of keys in AKV
 - Greater trust from your end customers, since AKV is designed such that Microsoft can't see nor extract encryption keys
+
+You can also take advantage of using a [user-assigned managed identity (UMI)](/azure/azure-sql/database/authentication-azure-ad-user-assigned-managed-identity) with customer-managed keys for TDE, which:
+
+- Enables the ability to pre-authorize key vault access for Azure SQL logical servers by creating a user-assigned managed identity, and granting it access to key vault, even before the server or database has been created
+- Allows creation of an Azure SQL logical server with TDE and CMK enabled
+- Enables the same user-assigned managed identity to be assigned to multiple servers, eliminating the need to individually turn on system-assigned managed identity for each Azure SQL logical server, and providing it access to key vault
+- Provides the capability to enforce CMK at server creation time with an available built-in Azure policy
 
 [Automatic key rotation](/azure/azure-sql/database/transparent-data-encryption-byok-key-rotation#automatic-key-rotation) has been introduced for customer-managed keys using TDE. When enabled, the server will continuously check the key vault for any new versions of the key being used as the TDE protector. If a new version of the key is detected, the TDE protector on the server will be automatically rotated to the latest key version within 60 minutes.
 
