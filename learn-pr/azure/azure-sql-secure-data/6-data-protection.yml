@@ -22,7 +22,7 @@ quiz:
         explanation: "Review the Dynamic Data Masking section."
       - content: "You can `GRANT` or `REVOKE` the `UNMASK` capability with T-SQL."
         isCorrect: true
-        explanation: "That's correct. By using `GRANT UNMASK` you can allow certain users or roles access to view data."
+        explanation: "That's correct. By using `GRANT UNMASK`, you can allow certain users or roles access to view data."
       - content: "Anyone who can query masked data can view masked data."
         isCorrect: false
         explanation: "Review the Dynamic Data Masking section."

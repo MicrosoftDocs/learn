@@ -1,13 +1,13 @@
 In this exercise, you'll review and manage your firewall rules by using the Azure portal. You'll also configure the most secure connection while you're using the public endpoint.
 
-Open the Azure portal using the following button if you have not already done so.
+Open the Azure portal using the following button if you haven't already done so.
 
 > [!div class="nextstepaction"]
 > [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
 
 ## Secure the network
 
-When you deployed your database in Azure SQL Database, the script you ran enabled **Allow Azure services and resources access to this server**, which allows any resource from any region or subscription access to your resource. It is important to uncheck the setting to ensure the most secure configuration of the public endpoint. When the setting **Allow Azure services and resources access to this server** is unchecked, it will block all connections and networks other than the ones you've added.
+When you deployed your database in Azure SQL Database, the script you ran enabled **Allow Azure services and resources access to this server**, which allows any resource from any region or subscription access to your resource. It's important to uncheck the setting to ensure the most secure configuration of the public endpoint. When the setting **Allow Azure services and resources access to this server** is unchecked, it will block all connections and networks other than the ones you've added.
 
 In this exercise, you'll see how to view and edit firewall rules. Setting up firewall rules can be complicated, because you'll need to specify a range of IP addresses for all your connections, which can sometimes use dynamic IP addresses. Alternative methods for securing your network are provided in a demonstration video at the end of this exercise.  
 

@@ -45,7 +45,7 @@ In this exercise, you'll create logins, users, and admins, and you'll grant Azur
 
 ## Grant access to other Azure AD users  
 
-You can create logins from Azure AD accounts as a contained database user using the `CREATE USER [anna@contoso.com] FROM EXTERNAL PROVIDER` T-SQL syntax. A contained database user maps to an identity in the Azure AD directory associated with the database and has no login in the master database.
+You can create logins from Azure AD accounts as a contained database user using the `CREATE USER [anna@contoso.com] FROM EXTERNAL PROVIDER` T-SQL syntax. A contained database user maps to an identity in the Azure AD directory associated with the database and has no login in the `master` database.
 
 With the introduction of Azure AD server logins in Azure SQL Database, you can create logins from Azure AD principals in the virtual `master` database of a SQL Database. Azure AD logins can be created from Azure AD *users, groups, and service principals*. For more information, see [Azure Active Directory server principals](/azure/azure-sql/database/authentication-azure-ad-logins)
 

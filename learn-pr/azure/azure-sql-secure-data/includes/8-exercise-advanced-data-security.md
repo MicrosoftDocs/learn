@@ -68,11 +68,11 @@ In this exercise, you'll confirm that Microsoft Defender for Cloud is enabled, a
 
     :::image type="content" source="../media/8-va2065-passed.png" alt-text="Screenshot of the VA2109 security risk being passed." lightbox="../media/8-va2065-passed.png":::
 
-    If you click into the preceding passed security check, you should be able to see the baseline you configured. If anything changes in the future, Vulnerability Assessment scans will pick it up and the security check will fail.  
+    If you select the preceding passed security check, you should be able to see the baseline you configured. If anything changes in the future, Vulnerability Assessment scans will pick it up and the security check will fail.  
 
 ## Advanced Threat Protection
 
-1. Select the **X** at the upper right to close the Vulnerability Assessment pane and return to the **Microsoft Defender for Cloud** dashboard for your database. Under **Security incidents and alerts**, you shouldn't see any items. This means **Advanced Threat Protection** has not detected any issues. Advanced Threat Protection detects anomalous activities that indicate unusual and potentially harmful attempts to access or exploit databases.  
+1. Select the **X** at the upper right to close the Vulnerability Assessment pane and return to the **Microsoft Defender for Cloud** dashboard for your database. Under **Security incidents and alerts**, you shouldn't see any items. This means **Advanced Threat Protection** hasn't detected any issues. Advanced Threat Protection detects anomalous activities that indicate unusual and potentially harmful attempts to access or exploit databases.  
 
     You aren't expected to see any security alerts at this stage. In the next step, you'll run a test that will trigger an alert so that you can review the results in Advanced Threat Protection.  
 
@@ -111,7 +111,7 @@ In this exercise, you'll confirm that Microsoft Defender for Cloud is enabled, a
     SELECT * FROM sys.databases WHERE database_id like '' or 1 = 1 --' and family = 'test1';
     ```
 
-    Within a few minutes, if you were able to configure the email settings (which you can't in the sandbox), you would receive an email message that's similar to the following:  
+    Within a few minutes, if you were able to configure the email settings (which you can't do in the sandbox), you would receive an email message that's similar to the following:  
 
     :::image type="content" source="../media/8-advanced-threat-protection-email.png" alt-text="Screenshot of an Advanced Threat Protection threat detected email.":::
 

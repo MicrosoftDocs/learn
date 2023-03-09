@@ -33,9 +33,9 @@ Your next option is to apply firewall rules. Your results might be similar to th
 
 :::image type="content" source="../media/2-firewall-rules.png" alt-text="Diagram of firewall rules." border="false":::
 
-To get connectivity in Azure, you can also allow access to Azure services and then add firewall rules for on-premises connectivity only. As previously mentioned, **Allow Azure services and resources access to this server** is not as secure, because it allows all Azure traffic. We recommend that you use firewall rules exclusively.
+To get connectivity in Azure, you can also allow access to Azure services and then add firewall rules for on-premises connectivity only. As previously mentioned, **Allow Azure services and resources access to this server** isn't as secure, because it allows all Azure traffic. We recommend that you use firewall rules exclusively.
 
-Let's look at the preceding example with firewall rules configured. From a tool that supports Transact-SQL (T-SQL) like SQL Server Management Studio (SSMS), you could run the following query from your Azure VM in the virtual network SQLDBVNET-EUS:
+Let's look at the preceding example with the firewall rules configured. From a tool that supports Transact-SQL (T-SQL) like SQL Server Management Studio (SSMS), you could run the following query from your Azure VM in the virtual network SQLDBVNET-EUS:
 
 ```sql
 SELECT client_net_address FROM sys.dm_exec_connections WHERE session_id=@@SPID;
@@ -45,7 +45,7 @@ The result would be `174.17.218.16`. This IP address is the public IP address of
 
 ### Virtual network rules
 
-If you want to use only firewall rules, setting this up can be complicated. It means that you'll have to specify a range of IP addresses for all your connections, which can sometimes have dynamic IP addresses. A much easier alternative is to use [virtual network rules](/azure/azure-sql/database/vnet-service-endpoint-rule-overview) to establish and manage access from specific networks that contain VMs or other services that need to access the data.
+If you want to use only firewall rules, setting this up can be complicated. It means that you have to specify a range of IP addresses for all your connections, which can sometimes have dynamic IP addresses. A much easier alternative is to use [virtual network rules](/azure/azure-sql/database/vnet-service-endpoint-rule-overview) to establish and manage access from specific networks that contain VMs or other services that need to access the data.
 
 If you configure access from a virtual network with a virtual network rule, any resources in that virtual network can access the Azure SQL Database logical server. This can simplify the challenge of configuring access to all static and dynamic IP addresses that need to access the data. By using virtual network rules, you can specify one or more virtual networks, encompassing all the resources within them. You can also start to apply virtual network technologies to connect networks across regions in both Azure and on-premises.  
 
@@ -91,11 +91,11 @@ Although the connection through SSMS comes through the private IP address of the
 
 ### Private Link for an Azure SQL Database
 
-You've seen how to configure the most secure network by using your database in Azure SQL Database with the public endpoint. This method of securing a database in SQL Database has been used for years. However, in 2019, Azure began moving toward a concept of a private link, which is more like the way that Azure SQL Managed Instance is deployed. With Azure Private Link, you can connect to your database in SQL Database and several other platform as a service offerings by using a private endpoint. This means that it has a private IP address within a specific virtual network.  
+You've seen how to configure the most secure network by using your database in Azure SQL Database with the public endpoint. This method of securing a database in SQL Database has been used for years. However, in 2019, Azure began moving toward a concept of a private link, which is more like the way that Azure SQL Managed Instance is deployed. With Azure Private Link, you can connect to your database in SQL Database and several other platform as a Service offerings by using a private endpoint. This means that it has a private IP address within a specific virtual network.  
 
 :::image type="content" source="../media/2-private-endpoint.png" alt-text="Diagram of a private endpoint connection." border="false":::
 
-In the preceding example, you'll notice that the general networking infrastructure did not change and you can still apply the virtual network connectivity strategies from the virtual network rules. However, you won't have to create virtual network rules. Resources that need to connect to the database server must have access to the virtual network where the endpoint resides. In the example, the endpoint is `SQLDBVNet-EUS`. Only connections that go through the private endpoint have access, and all other connections (for example, from the internet) are denied.
+In the preceding example, you'll notice that the general networking infrastructure didn't change and you can still apply the virtual network connectivity strategies from the virtual network rules. However, you won't have to create virtual network rules. Resources that need to connect to the database server must have access to the virtual network where the endpoint resides. In the example, the endpoint is `SQLDBVNet-EUS`. Only connections that go through the private endpoint have access, and all other connections (for example, from the internet) are denied.
 
 As you continue with this example, on the Azure VM in virtual network `SQLDBVNet-EUS`, you could once again run the following T-SQL command:
 
@@ -181,7 +181,7 @@ For Azure SQL Database, there are a few nuances. You can have logins that exist 
 - **loginmanager**: A database-level role that allows members to create logins for the database server.
 - **dbmanager**: A database-level role that allows members to create and delete databases for the database server.
 
-Here is a list of [server-level roles](/azure/azure-sql/database/security-server-roles#fixed-server-level-roles) in Azure SQL Database:
+Here's a list of [server-level roles](/azure/azure-sql/database/security-server-roles#fixed-server-level-roles) in Azure SQL Database:
 
 - **##MS_DatabaseConnector##**
 - **##MS_DatabaseManager##**

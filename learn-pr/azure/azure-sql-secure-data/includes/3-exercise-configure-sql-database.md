@@ -44,8 +44,6 @@ These scripts should take three to five minutes to complete. Be sure to note you
 1. Run the following script to deploy an Azure SQL Database logical server with the `AdventureWorks` sample, as well as a ledger database that we will discuss in future units. The script will also add your IP address as a firewall rule, enable [Microsoft Defender for SQL](/azure/azure-sql/database/azure-defender-for-sql), and create a storage account for use in future units. Allow several minutes for this script to complete.
 
     ```powershell
-    # The logical server name has to be unique in the system
-    $serverName = "aw-server$($uniqueID)"
     # The sample database name
     $databaseName = "AdventureWorks"
     # The ledger database name

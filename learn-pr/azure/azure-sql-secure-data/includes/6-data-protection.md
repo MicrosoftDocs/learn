@@ -2,7 +2,7 @@ Now that your network and identity access are configured and secure, let's consi
 
 ## Data encryption
 
-Encrypted connections are forced by Azure SQL Database, with the option to additionally specify the inbound Transport Layer Security (TLS) required minimum version (>1.0, >1.1, or >1.2). The recommended task is to force encryption on the client to avoid server negotiation, as well as to not trust the server certificate as a best practice.
+Encrypted connections are forced by Azure SQL Database, with the option to additionally specify the inbound Transport Layer Security (TLS) required minimum version (>1.0, >1.1, or >1.2). The recommended task is to force encryption on the client to avoid server negotiation, and to not trust the server certificate as a best practice.
 
 ## Transparent data encryption
 
@@ -36,7 +36,7 @@ You can also take advantage of using a [user-assigned managed identity (UMI)](/a
 
 ## Always Encrypted
 
-You can also take advantage of column-level encryption, which is supported in Azure SQL just as it is in SQL Server. This process involves using client-side encryption of sensitive data, which uses keys that are never given to the database system. Additionally, the client driver transparently encrypts query parameters and decrypts the encrypted results. There is currently support on encrypted data for equality comparison, including `JOIN`, `GROUP BY`, and `DISTINCT` operators by deterministic encryption.
+You can also take advantage of column-level encryption, which is supported in Azure SQL just as it is in SQL Server. This process involves using client-side encryption of sensitive data, which uses keys that are never given to the database system. Additionally, the client driver transparently encrypts query parameters and decrypts the encrypted results. There's currently support on encrypted data for equality comparison, including `JOIN`, `GROUP BY`, and `DISTINCT` operators by deterministic encryption.
 
 [Always Encrypted with secure enclaves](/sql/relational-databases/security/encryption/always-encrypted-enclaves) expands confidential computing capabilities of Always Encrypted by enabling in-place encryption and richer confidential queries. The Always Encrypted feature with secure enclaves is now available for Azure SQL Database, but not yet supported for Azure SQL Managed Instance.
 
@@ -46,7 +46,7 @@ On occasion, you'll want to mask or modify certain data so that nonprivileged us
 
 :::image type="content" source="../media/6-mask-recommendations.png" alt-text="Screenshot of Dynamic Data Masking recommendations in the Azure portal.":::
 
-Let's take a look at an example where the data includes sensitive information, such as names and email addresses. You can apply a mask to those columns in the Azure portal by selecting the **Dynamic Data Masking** blade under **Security** in your **SQL database** configuration pane, or by using the following T-SQL commands:
+Let's take a look at an example where the data includes sensitive information, such as names and email addresses. You can apply a mask to those columns in the Azure portal by selecting the **Dynamic Data Masking** menu under **Security** in your **SQL database** configuration pane, or by using the following T-SQL commands:
 
 ```sql
 ALTER TABLE Data.Membership ALTER COLUMN FirstName
@@ -79,7 +79,7 @@ With the introduction to granular dynamic data masking permissions, you can gran
 
 To set up and configure data protection, you should:
 
-- Ensure that your applications force connection encryption, and use the highest TLS version that are compatible with your application, clients, and drivers.
+- Ensure that your applications force connection encryption, and use the highest TLS version that is compatible with your application, clients, and drivers.
 - Evaluate and enable [TDE](/azure/azure-sql/database/transparent-data-encryption-tde-overview). This is the default setting for new databases but, if you migrate, you might need to enable it.
 - Take advantage of [Dynamic Data Masking](/azure/azure-sql/database/dynamic-data-masking-overview).
 - For advanced protection, you can configure the [Always Encrypted with secure enclaves](/azure/azure-sql/database/always-encrypted-enclaves-enable) feature.
