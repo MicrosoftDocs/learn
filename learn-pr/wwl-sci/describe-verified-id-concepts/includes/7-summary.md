@@ -13,4 +13,5 @@ To find out more about any of the topics covered in this module, please visit th
 - [W3C Recommendation: Decentralized Identifiers (DIDs) v1.0 Core architecture, data model, and representations](https://www.w3.org/TR/did-core/)
 - [W3C Recommendation: Verifiable Credentials Data Model v1.1](https://www.w3.org/TR/vc-data-model/)
 - [Decentralized identifiers (DIDs) fundamentals – IdentityBook.info – Drummond Reed & Markus Sabadello – Webinar 46](https://ssimeetup.org/decentralized-identifiers-dids-fundamentals-identitybook-info-drummond-reed-markus-sabadello-webinar-46/)
+- [Describe concepts of cryptography](/training/modules/describe-concepts-of-cryptography/)
 - [Introduction to Microsoft Entra Verified ID](/azure/active-directory/verifiable-credentials/decentralized-identifier-overview)
