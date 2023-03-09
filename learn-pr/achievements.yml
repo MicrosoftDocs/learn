@@ -1562,3 +1562,18 @@ achievements:
   title: Design for high availability
   summary: Azure Architects design and recommend highly available solutions.
   iconUrl: /training/achievements/availability-design.svg
+- uid: learn.languages.csharp-data.trophy
+  type: trophy
+  title: Work with data in C#
+  summary: >-
+    Dive deeper into data and types, learning how to manipulate string and numeric data.
+  
+  
+    In this learning path, you'll:
+      - Choose the correct data type for the type of data you need to work with
+      - Cast and convert data from one type to another
+      - Modify string data, formatting it for display or changing the content of the string
+      - Manipulate arrays, adding, removing, and sorting data
+  
+    Once you complete this learning path, you'll take firm control of the data in your code.
+  iconUrl: /training/achievements/csharp-data.svg
