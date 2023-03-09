@@ -25,13 +25,13 @@ quiz:
       explanation: "This role lets you view resources in a cluster/namespace, but doesn't allow you to connect a Kubernetes cluster to Azure Arc."
     - content: "Azure Connected Machine Onboarding"
       isCorrect: false
-      explanation: "This role lets you onboard a physical server or virtual machine to Azure Arc-enabled servers, but doesn't allow you to connect a Kubernetes cluster to Azure Arc"
+      explanation: "This role lets you onboard a physical server or virtual machine to Azure Arc-enabled servers, but doesn't allow you to connect a Kubernetes cluster to Azure Arc."
     - content: "Kubernetes Cluster - Azure Arc Onboarding"
       isCorrect: true
       explanation: "This role lets you connect a Kubernetes cluster to Azure Arc."
     - content: "Azure Kubernetes Service Contributor Role"
       isCorrect: false
-      explanation: "This role allows read and write access to Azure Kubernetes Service (AKS) clusters, but doesn't allow you to connect a Kubernetes cluster to Azure Arc"
+      explanation: "This role allows read and write access to Azure Kubernetes Service (AKS) clusters, but doesn't allow you to connect a Kubernetes cluster to Azure Arc."
   - content: "Which of the following is NOT required to connect a Kubernetes cluster to Azure Arc?"
     choices:
     - content: "Multiple Azure subscriptions"
