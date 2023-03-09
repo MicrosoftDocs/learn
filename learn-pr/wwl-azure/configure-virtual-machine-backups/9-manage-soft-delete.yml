@@ -4,7 +4,7 @@ title: Implement soft delete for your virtual machines
 metadata:
   title: Implement soft delete for your virtual machines
   description: "Implement the soft-delete feature in Azure Backup for your virtual machines."
-  ms.date: 02/23/2023
+  ms.date: 03/09/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
