@@ -11,7 +11,7 @@ When enabling DDoS Protection, the first step is to associate virtual networks o
 > [!NOTE]
 > To simplify deployment, you can configure DDOS Network Protection for your organization and link virtual networks from multiple subscriptions to the same plan.
 
-After configuring DDoS Network Protection, you need to add protected resources. You can select the services that will get DDoS Protection by using your user-defined Azure Resource Groups, Management Groups, or Subscriptions. Alternatively, you can enabled DDoS IP protection on a singular IP address. This is useful if you require protection for less than 100 IP addresses or you are testing DDoS Protection in your environment.
+After configuring DDoS Network Protection, you need to add protected resources. You can select the services that will get DDoS Protection by using your user-defined Azure Resource Groups, Management Groups, or Subscriptions. Alternatively, you can enable DDoS IP protection on a singular IP address. This is useful if you require protection for less than 100 IP addresses or you are testing DDoS Protection in your environment.
 
 Your DDoS policy is generated when you enable DDoS Protection. It's auto-configured and optimized by applying machine learning algorithms and using specific network traffic monitoring.
 

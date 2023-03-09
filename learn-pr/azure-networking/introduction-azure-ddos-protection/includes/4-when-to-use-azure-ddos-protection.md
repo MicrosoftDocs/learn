@@ -38,4 +38,4 @@ Microsoft uses this defense-in-depth strategy to protect your backend services a
 
 DDoS Protection offers more features than DDoS infrastructure protection. If you determine that certain applications are critical; for example, a high-volume, revenue-generating Ecommerce website, then DDoS Protection is the recommended choice.
 
-You decided that the DDoS IP Protection SKU is perfect for your small organization as it is a pay-per-IP service. You know that you can switch to the DDoS Network Protection SKU for virtual network protection, DDoS Rapid Response support, and cost guarantee once Contoso expands it's services.
+You decided that the DDoS IP Protection SKU is perfect for your small organization as it is a pay-per-IP service. You know that you can switch to the DDoS Network Protection SKU for virtual network protection, DDoS Rapid Response support, and cost guarantee once Contoso expands its services.
