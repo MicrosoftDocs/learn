@@ -1577,3 +1577,18 @@ achievements:
   
     Once you complete this learning path, you'll take firm control of the data in your code.
   iconUrl: /training/achievements/csharp-data.svg
+- uid: learn.languages.csharp-first-steps.trophy
+  type: trophy
+  title: Take your first steps with C#
+  summary: >-
+    Interested in learning a programming language but aren't sure where to start?  Start here!  Learn the basic syntax and thought processes required to build simple applications using C#.
+  
+  
+    In this learning path, you'll:
+      - Write your first lines of C# code
+      - Store and manipulate data to modify its type and appearance
+      - Execute built-in functionality available from libraries of code
+      - Add logic to your code to enable complex business functionality
+  
+    Once you complete this learning path, you will have a great foundation to build upon in subsequent C# Learning Paths.
+  iconUrl: /training/achievements/csharp-first-steps.svg
