@@ -10,9 +10,9 @@ metadata:
   ms.prod: learning-azure
 title: Create conversational AI solutions
 prerequisites: |
-  Before starting this learning path, you will need
+  Before starting this learning path, you'll need
   - Familiarity with Microsoft Azure and the Azure portal.
-  - Experience programming with C# or Python. If you are new to programming, consider completing the [Take your first steps with C#](../get-started-c-sharp-part-1/index.yml) or [Python for beginners](../beginner-python/index.yml) learning path first.
+  - Experience programming with C# or Python. If you're new to programming, consider completing the [Take your first steps with C#](../get-started-c-sharp-part-1/index.yml) or [Python for beginners](../beginner-python/index.yml) learning path first.
 summary: |
   Conversational AI solutions are based on interactions between human users and AI agents called _bots_. In this learning path, you'll learn how to build bots that can be delivered on Microsoft Azure.
 iconUrl: /training/achievements/create-conversational-ai-solutions.svg
