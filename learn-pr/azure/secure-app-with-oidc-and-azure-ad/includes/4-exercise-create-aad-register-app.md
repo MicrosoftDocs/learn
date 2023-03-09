@@ -1,12 +1,12 @@
 To use Azure Active Directory (Azure AD) as an authentication provider for your application, you must register that application in Azure AD. Suppose you want to use Azure AD as the authentication provider for your scheduling application. You have an ASP.NET Core web app, and you want to configure Azure AD as the identity provider.
 
-Here, you'll create and configure an application registration. You must activate the sandbox in order to have access to the subscription and resources you need to complete the exercises in this module.
+Here, you'll create and configure an application registration in your subscription. 
 
 ## Create an Azure AD tenant
 
 To start, you'll use the Azure portal to create a new Azure AD tenant.
 
-1. Log into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
+1. Log into the [Azure portal](https://portal.azure.com?azure-portal=true) using the same account you used to activate the sandbox.
 
 1. From the resource menu or from the **Home** page, select **Create a resource**. The **Create a resource** page appears.
 

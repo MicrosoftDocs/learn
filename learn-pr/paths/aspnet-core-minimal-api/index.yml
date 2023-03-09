@@ -1,18 +1,18 @@
 ### YamlMime:LearningPath
 uid: learn.aspnet-core-minimal-api
 metadata:
-  title: Create web apps and services with ASP.NET Core, minimal API, and .NET 6
-  description: With minimal API, you can create an API in just four lines of code while using the latest features of .NET 6.
+  title: Create web apps and services with ASP.NET Core, minimal API, and .NET
+  description: With minimal API, you can create an API in just four lines of code while using the latest features of .NET.
   ms.date: 10/26/2021
   author: softchris
   ms.author: chnoring
   ms.custom: team=nextgen
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Create web apps and services with ASP.NET Core, minimal API, and .NET 6
-summary: .NET is a free, cross-platform, open-source developer platform for building many different types of applications. With minimal API, you can create an API in just four lines of code, while using the latest features of .NET 6.
+title: Create web apps and services with ASP.NET Core, minimal API, and .NET 
+summary: .NET is a free, cross-platform, open-source developer platform for building many different types of applications. With minimal API, you can create an API in just four lines of code, while using the latest features of .NET.
 prerequisites: |
-  - Recommended familiarity with .NET 6.
+  - Recommended familiarity with .NET.
   - Having a basic understanding what an API is.
 iconUrl: /training/achievements/aspnet-core-minimal-api.svg
 levels:
