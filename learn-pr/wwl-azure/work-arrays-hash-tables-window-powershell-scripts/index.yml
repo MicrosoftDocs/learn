@@ -37,7 +37,6 @@ products:
 - azure-cloud-shell
 - azure-powershell
 - m365
-- vs-code
 subjects:
 - architecture
 - development-tools

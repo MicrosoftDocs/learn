@@ -1,31 +1,30 @@
-## Scenario
 
-Many apps need to be resilient to failure and scale easily when demand increases. You can address those needs by using Azure Load Balancer.
+Many applications need to be resilient to failure and scale easily when demand increases. Administrators can address these requirements by using Azure Load Balancer.
 
-Suppose you work for a healthcare organization that's launching a new portal application in which patients can schedule appointments. The application has a patient portal and web application front end and a business tier database. The database is used by the front end to retrieve and save patient information.
+In this module, suppose your healthcare organization is launching a new portal application for patients to schedule appointments. The application has a patient portal, web application frontend, and business tier database. The database is used by the frontend to retrieve and save patient information.
 
-The new portal needs to be available around the clock to handle failures. The portal must adjust to fluctuations in load by adding and removing resources to match the load. The organization needs a solution that distributes work to virtual machines across the system as virtual machines are added. The solution should detect failures and reroute jobs to virtual machines as needed. Improved resiliency and scalability helps ensure that patients can schedule appointments from any location.
+The new portal needs to be available around the clock to handle failures. The portal must adjust to fluctuations in load by adding and removing resources to match the load. You need a solution to distribute work to virtual machines across the system as virtual machines are added. The solution should detect failures and reroute jobs to virtual machines as needed. Improved resiliency and scalability are required to help ensure patients can schedule appointments from any location.
 
-You must distribute incoming network traffic across a group of back-end resources or services such as virtual machines (VMs). You must scale your applications while maintaining throughput and keeping response times low.
-
-## Skills measured
-
-Configuring load-balancing is part of [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104).
-
-Configure and manage virtual networking (25–30%)
-
-Configure load balancing
-
- -  Configure an internal or public load balancer.
- -  Troubleshoot load-balancing.
+You're responsible for configuring the load balancers to distribute incoming network traffic across a group of back-end resources or services such as virtual machines. You need to scale your applications while maintaining throughput and keeping response times low.
 
 ## Learning objectives
 
-In this module, you will learn how to:
+In this module, you learn how to:
 
- -  Identify features and usage cases for Azure load balancer.
- -  Implement public and internal Azure load balancers.
- -  Configure load balancer SKUs, backend pools, session persistence, and health probes.
+- Identify features and usage cases for Azure Load Balancer.
+- Implement public and internal Azure load balancers.
+- Compare features of load balancer SKUs and configuration differences.
+- Configure back-end pools, load-balancing rules, session persistence, and health probes.
+
+## Skills measured
+
+The content in the module helps you prepare for [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104). The module concepts are covered in:
+
+Configure and manage virtual networking (25–30%)
+
+- Configure load balancing.
+   - Configure an internal or public load balancer.
+   - Troubleshoot load balancing.
 
 ## Prerequisites
 

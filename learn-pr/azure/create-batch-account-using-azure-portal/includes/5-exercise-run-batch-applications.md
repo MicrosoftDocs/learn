@@ -16,21 +16,21 @@ In the Azure portal, application packages can be uploaded and managed in more fe
 
 1. Enter the following information:
 
-    * **Application Id**: Enter **ffmpeg** as the ID for your new application.
+    - **Application Id**: Enter **ffmpeg** as the ID for your new application.
 
-    * **Version**: Enter **4.3.1** as the version for the application package that you're uploading.
+    - **Version**: Enter **4.3.1** as the version for the application package that you're uploading.
 
-    * **Application package**: Use the .zip file that you downloaded earlier.
+    - **Application package**: Use the .zip file that you downloaded earlier.
 
     The application ID and version that you enter must follow these requirements:
 
-    * On Windows nodes, the ID can contain any combination of alphanumeric characters, hyphens, and underscores. On Linux nodes, only alphanumeric characters and underscores are permitted.
+    - On Windows nodes, the ID can contain any combination of alphanumeric characters, hyphens, and underscores. On Linux nodes, only alphanumeric characters and underscores are permitted.
 
-    * The ID can't contain more than 64 characters.
+    - The ID can't contain more than 64 characters.
 
-    * The ID must be unique within the Batch account.
+    - The ID must be unique within the Batch account.
 
-    * IDs are case-preserving and case-insensitive.
+    - IDs are case-preserving and case-insensitive.
 
 1. When you've entered all of the information for your application, select **Submit**.
 
@@ -38,7 +38,7 @@ After the .zip file has been uploaded to your Azure storage account, the portal 
 
 To add more application package versions for an existing application, select the application in the **Applications** section of your Batch account, and then select **Add**. As you did for the new application, specify the **Version** value for your new package, upload your .zip file in the **Application package** box, and then select **Submit**.
 
-### Run a task by using an application package in the Azure portal 
+### Run a task by using an application package in the Azure portal
 
 In the Azure portal, Batch tasks can run directly on virtual machines in a Batch pool. These tasks can use application packages to simplify environment setup.
 
@@ -62,7 +62,7 @@ In the Azure portal, Batch tasks can run directly on virtual machines in a Batch
 
     :::image type="content" source="../media/5-diagram-2.png" alt-text="Screenshot of the page for adding a job in the Azure portal.":::
 
-1. Select the job that you just created, and then select **Tasks** under the **General** header on the sidebar.
+1. Select the job that you created, and then select **Tasks** under the **General** header on the sidebar.
 
 1. Select **Add** to create a new task, and then:
 
@@ -76,11 +76,11 @@ In the Azure portal, Batch tasks can run directly on virtual machines in a Batch
 
     1. Under **Advanced settings**:
     
-        - For **Resource files**, select the video that you uploaded previously by selecting **Pick storage blob**. Select **Include SAS** > **OK**. Go to your storage account, select the **input-data** container, and select the file that you uploaded.
+      - For **Resource files**, select the video that you uploaded previously by selecting **Pick storage blob**. Check the box for **Include SAS**, and leave the default **Expires in** value for seven days. Select **OK**. Go to your storage account, select the **input-data** container, and select the file that you uploaded.
 
            :::image type="content" source="../media/5-select-resource-file.png" alt-text="Screenshot of selecting the resource file in the Azure portal.":::
 
-        - For **Application packages**, select the application package that you added previously.
+      - For **Application packages**, select the application package that you added previously.
 
     1. Select **Submit**.
 

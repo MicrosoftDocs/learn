@@ -1,14 +1,14 @@
 We've used a meteorological dataset to aggregation and visualize data. Here, you'll learn how to use `let` statements to introduce variables and organize complex queries.
 
-`let` statements are useful for breaking up a complex expression into multiple parts, defining constants outside of the query body for readability, or defining a variable once and using it multiple times within a query. `let` statements can be used to create well-organized complex queries. You can use multiple let statements; each statement must be followed by a semicolon (`;`).
+`let` statements are useful for breaking up a complex expression into multiple parts, defining constants outside of the query body for readability, or defining a variable once and using it multiple times within a query. You can use `let` statements to create well-organized complex queries. You can use multiple `let` statements; each statement must be followed by a semicolon (`;`).
 
-`let` statements can be used in different kinds of situations. On the simplest level, you can define scalar values that will later be referenced in a query, such as an int, string, date/time, or any other value. You can create a tabular filtered view of a table that will be used as the tabular input for the query. You can also create a function using a `let` statement.
+You can use `let` statements in different kinds of situations. On the simplest level, you can define scalar values that will later be referenced in a query, such as an int, string, date/time, or any other value. You can create a tabular filtered view of a table that will be used as the tabular input for the query. You can also create a function using a `let` statement.
 
 ## Define a scalar with a `let` statement
 
 Recall that previous queries filtered on locations or minimum damage. Let's define these boundary values using a `let` statement at the beginning of the query.
 
-The following query uses two `let` statements to define scalar values that will later be used as input parameters in the query. The first defined value is a number and the second is a string. The `let` statements end with a semicolon.
+The following query uses two `let` statements to define scalar values that'll later be used as input parameters in the query. The first defined value is a number and the second is a string. The `let` statements end with a semicolon.
 
 Notice the commented-out portions of the query that begin with double forward slashes (`//`). Double forward slashes indicate a beginning of a comment until the end of the line. These are comments that are ignored when running queries.
 
@@ -63,7 +63,7 @@ let MostFrequentEventType = toscalar(
     | project EventType);
 ```
 
-Notice that this statement by itself isn't a valid query, because a valid query must contain at least one statement that's not a `let` statement. You can, however, use this stored scalar value in a query. Recall that you want to look at a count of the most frequent event time as a function of time. You'll filter on *MostFrequentEventType*, and then summarize the count by a certain time bin.
+Notice that this statement by itself isn't a valid query, because a valid query must contain at least one statement that's not a `let` statement. You can, however, use this stored scalar value in a query. Recall that you want to look at a count of the most frequent event time as a function of time. You'll filter on *MostFrequentEventType*, then summarize the count by a certain time bin.
 
 In this case, let's look at the results per month. You'll use the `startofmonth()` function, which returns a datetime representing the start of the month for the given date value. In this query, you'll use the *StartTime* column as the input for the `startofmonth()` function.
 

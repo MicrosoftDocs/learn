@@ -3,7 +3,7 @@ uid: learn.provision-azure-sql-db
 metadata:
   title: Provision an Azure SQL database to store application data
   description: Find out what makes Azure SQL Database a good choice for your relational database, how to create the database from the portal and connect with Azure Cloud Shell.
-  ms.date: 09/24/2018
+  ms.date: 01/18/2023
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   manager: jroth

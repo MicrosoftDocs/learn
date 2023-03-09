@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-partner-center.introduction
+title: Introduction
+metadata:
+  unitType: introduction
+  title: Introduction to Partner Center
+  description: "Microsoft Partner Center can help drive customer purchasing when selling through the Microsoft commercial marketplace, build partner-to-partner sales channels, and use sales tools and resources. This module will explain how Partner Center program offerings work to manage every aspect of business relationships."
+  ms.date: 11/14/2022
+  author: JulCsc
+  ms.author: juliacawthra
+  manager: jasonh
+  ms.topic: interactive-tutorial
+  ms.service: partner-dashboard
+durationInMinutes: 5
+content: |
+  [!include[](includes/1-introduction.md)]

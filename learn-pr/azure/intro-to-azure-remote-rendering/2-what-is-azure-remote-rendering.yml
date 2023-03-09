@@ -6,8 +6,8 @@ metadata:
   title: What is Azure Remote Rendering? 
   description: What is Azure Remote Rendering?
   ms.date: 06/15/2021
-  author: nickwalkmsft
-  ms.author: nickwalk  
+  author: DrewLonMS
+  ms.author: oliverlondon
   ms.topic: interactive-tutorial 
   ms.prod: learning-azure
 durationInMinutes: 6

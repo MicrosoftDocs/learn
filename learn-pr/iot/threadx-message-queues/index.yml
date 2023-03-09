@@ -3,48 +3,46 @@ uid: learn.iot.threadx-message-queues
 metadata:
   title: Use message queues for inter-thread communication in Azure RTOS ThreadX
   description: Learn how to have threads send messages to other threads.
-  ms.date: 01/27/2022
+  ms.date: 04/19/2022
   author: timlt
   ms.author: timlt
   ms.reviewer: liydu
   manager: lizross
-  ms.custom: engagement-fy23
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Use message queues for inter-thread communication in Azure RTOS ThreadX
 summary: Learn how to have threads send messages to other threads.
-abstract:  | 
-   In this module, you'll:
-   - Understand how to send messages from one thread to another thread by using a message queue.
-   - Understand how to receive messages from a queue.
-   - Understand how to send a message to the front of a queue, rather than to the rear of the queue.
-   - Design and debug the ThreadX solution using a hands-on approach with GitHub Codespace or Visual Studio.
+abstract: |
+  In this module, you'll:
+  - Understand how to send messages from one thread to another thread by using a message queue.
+  - Understand how to receive messages from a queue.
+  - Understand how to send a message to the front of a queue, rather than to the rear of the queue.
+  - Design and debug the ThreadX solution using a hands-on approach with GitHub Codespace or Visual Studio.
 prerequisites: |
   - [Set up your environment](/training/modules/introduction-azure-rtos/2-set-up-environment)
   - Working knowledge of C or C++, GitHub and Visual Studio
   - Previous modules in this [learning path](/training/paths/azure-rtos-threadx)
 iconUrl: /training/achievements/iot/threadx-message-queues.svg
 levels:
-- beginner
+  - beginner
 roles:
-- developer
+  - developer
 products:
-- azure
-- azure-iot
-- azure-rtos
+  - azure
+  - azure-iot
+  - azure-rtos
 subjects:
-- iot
+  - iot
 units:
-- learn.iot.threadx-message-queues.introduction
-- learn.iot.threadx-message-queues.message-queues
-- learn.iot.threadx-message-queues.scenario
-- learn.iot.threadx-message-queues.activities
-- learn.iot.threadx-message-queues.design
-- learn.iot.threadx-message-queues.building-blocks
-- learn.iot.threadx-message-queues.exercise-build-debug
-- learn.iot.threadx-message-queues.knowledge-check
-- learn.iot.threadx-message-queues.summary
-
+  - learn.iot.threadx-message-queues.introduction
+  - learn.iot.threadx-message-queues.message-queues
+  - learn.iot.threadx-message-queues.scenario
+  - learn.iot.threadx-message-queues.activities
+  - learn.iot.threadx-message-queues.design
+  - learn.iot.threadx-message-queues.building-blocks
+  - learn.iot.threadx-message-queues.exercise-build-debug
+  - learn.iot.threadx-message-queues.knowledge-check
+  - learn.iot.threadx-message-queues.summary
 
 badge:
   uid: learn.iot.threadx-message-queues.badge

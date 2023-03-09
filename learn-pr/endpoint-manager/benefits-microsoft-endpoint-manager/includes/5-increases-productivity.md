@@ -2,6 +2,6 @@ By implementing a management infrastructure, you can provide IT services, apps, 
 
 In addition, you can increase end-user productivity by using endpoint analytics. Endpoint analytics aims to improve user productivity and reduce IT support costs by providing insights into how your organization is working, as well as the quality of the experience you're delivering to your end users. Endpoint Analytics can help identify configuration or hardware issues that may be slowing down devices, provide recommended actions to remediate them, and proactively make changes without disrupting end users or generating a help-desk ticket.
 
-Endpoint analytics is also a part of the [Microsoft Productivity Score](/microsoft-365/admin/productivity/productivity-score?azure-portal=true). The Productivity Score provides productivity data, insights, and recommendations for your end users' experience and your organization's overall technology experience.
+Endpoint analytics is also a part of the [Microsoft Adoption Score](/microsoft-365/admin/adoption/adoption-score). The Adoption Score provides productivity data, insights, and recommendations for your end users' experience and your organization's overall technology experience.
 
-[ ![Screenshot of Endpoint analytics in Microsoft Endpoint Manager.](../media/intro-to-endpoint-manager-11.png) ](../media/intro-to-endpoint-manager-11.png#lightbox)
+![Screenshot of Endpoint analytics in Microsoft Endpoint Manager.](../media/intro-to-endpoint-manager-11.png) ](../media/intro-to-endpoint-manager-11.png#lightbox)

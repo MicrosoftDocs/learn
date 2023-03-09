@@ -10,6 +10,6 @@ For learning purposes, you don't need to change any of these settings right now.
 
 Later, you can use these resources to help you decide which option is best for your project:
 
-* [Use private and public projects](/azure/devops/organizations/projects/about-projects.md#use-private-and-public-projects)
+* [Use private and public projects](/azure/devops/organizations/projects/about-projects#use-private-and-public-projects)
 * [Quickstart: Make your private project public](/azure/devops/organizations/public/make-project-public)
 * [Setting repository visibility](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/setting-repository-visibility#changing-a-repositorys-visibility)

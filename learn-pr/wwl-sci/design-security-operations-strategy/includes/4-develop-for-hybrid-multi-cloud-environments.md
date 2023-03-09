@@ -14,9 +14,9 @@ services. Reducing latency by moving workloads to the edge, devices
 spend less time communicating with the cloud and can operate reliably in
 extended offline periods.
 
-Multi-cloud computing uses multiple cloud computing services from more
+Multicloud computing uses multiple cloud computing services from more
 than one cloud provider (including private and public clouds) in a
-heterogeneous environment. A multi-cloud strategy provides greater
+heterogeneous environment. A multicloud strategy provides greater
 flexibility and mitigates risk. This strategy allows you to choose services from different cloud
 providers best suited for a specific task or take advantage of services
 offered by a particular cloud provider in a specific location.
@@ -32,7 +32,7 @@ The following video provides a good background on hybrid and multicloud strategy
 The primary objective of unified operations is to create as much process
 consistency as possible across deployments. No cloud service provider
 will be able to reach 100% feature parity across all hybrid,
-multi-cloud, and edge deployments. However, the provider should be able
+multicloud, and edge deployments. However, the provider should be able
 to deliver baseline feature sets common across all deployments so that
 your [governance](/azure/cloud-adoption-framework/scenarios/hybrid/govern) and 
 [operations management](/azure/cloud-adoption-framework/scenarios/hybrid/manage) 
@@ -64,7 +64,7 @@ to be able to scale to meet these common processes specified below.
 -   **[Platform operations](/azure/cloud-adoption-framework/manage/azure-management-guide/platform-specialization):** Specialized operations for common technology platforms such as SQL databases, virtual desktops, and SAP (for medium to high criticality workloads).
 -   **[Workload operations](/azure/cloud-adoption-framework/manage/azure-management-guide/workload-specialization):**  Specialized operations (for high priority/mission-critical workloads) with greater operations requirements.
 
-Your primary cloud platform should be able to provide the required technical capabilities and tools to automate processes and reach the goals above for governance and operations management. Your unified operations solution should enable you to extend these processes across all hybrid, multi-cloud, and edge deployments.
+Your primary cloud platform should be able to provide the required technical capabilities and tools to automate processes and reach the goals above for governance and operations management. Your unified operations solution should enable you to extend these processes across all hybrid, multicloud, and edge deployments.
 
 ## Azure Security Operation services
 
@@ -109,7 +109,7 @@ a comprehensive identity service that:
     - Supports integrated access management for [thousands of applications](https://azuremarketplace.microsoft.com/marketplace/apps/Microsoft.AzureActiveDirectory) in the Azure Marketplace, including Salesforce, Google Apps, Box, and Concur.
 - [Microsoft Defender for Cloud](/azure/security-center/security-center-introduction) helps prevent, detect, and respond to threats with increased visibility into (and control over) the security of your Azure resources. It provides integrated security monitoring and policy management across subscriptions. It helps detect threats that might otherwise go unnoticed, and it works with a broad ecosystem of security solutions.
 
-## Example security architecture for hybrid and multicloud
+## Example security architecture for hybrid and multi-cloud
 
 This reference architecture illustrates how to use Microsoft Defender for Cloud and Microsoft Sentinel to monitor the security configuration and telemetry of on-premises and Azure operating system workloads. This includes Azure Stack.
 
@@ -124,9 +124,13 @@ The architecture consists of the following workflow:
 - **Azure Stack**. Is a portfolio of products that extend Azure services and capabilities to your environment of choice, from the datacenter to edge locations and remote offices. Systems that you integrate with Azure Stack typically utilize racks of four to sixteen servers, built by trusted hardware partners and delivered straight to your datacenter.
 - **Azure Monitor**. Collects monitoring telemetry from a variety of on-premises and Azure sources. Management tools, such as those in Microsoft Defender for Cloud and Azure Automation, also push log data to Azure Monitor.
 - **Log Analytics workspace**. Azure Monitor stores log data in a Log Analytics workspace, which is a container that includes data and configuration information.
-- **Log Analytics agent**. The Log Analytics agent collects monitoring data from the guest operating system and VM workloads in Azure, other cloud providers, and on-premises. The Log Analytics Agent supports Proxy configuration and, typically in this scenario, a Microsoft Operations Management Suite (OMS) Gateway acts as proxy.
+- **Azure Monitoring Agent**. The Azure Monitoring Agent collects monitoring data from the guest operating system and VM workloads in Azure, other cloud providers, and on-premises. The Azure Monitoring Agent supports Proxy configuration and, typically in this scenario, a Microsoft Operations Management Suite (OMS) Gateway acts as proxy.
 - **On-premises network**. This is the firewall configured to support HTTPS egress from defined systems.
-- **On-premises Windows and Linux systems**. Systems with the Log Analytics Agent installed.
+- **On-premises Windows and Linux systems**. Systems with the Azure Monitoring Agent installed.
 - **Azure Windows and Linux VMs**. Systems on which the Microsoft Defender for Cloud monitoring agent is installed.
 
 For full details on this reference architecture, see [Monitor hybrid security using Microsoft Defender for Cloud and Microsoft Sentinel](/azure/architecture/hybrid/hybrid-security-monitoring)
+
+For an overview of some technologies which can help you secure hybrid and multicloud environments, view the following interactive guide.
+
+[:::image type="content" source="../media/secure-azure-hybrid-multi-cloud-interactive-guide.png" alt-text="Screenshot of an interactive guide with the title 'Secure your Azure, hybrid, and multicloud environment'." border="true":::](https://mslearn.cloudguides.com/guides/Secure%20your%20Azure%20hybrid%20and%20multi-cloud%20environment)

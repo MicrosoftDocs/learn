@@ -48,7 +48,7 @@ quiz:
     - content: "Azure Front Door Standard"
       isCorrect: false
       explanation: "Incorrect. Azure Front Door Standard doesn't support this integration."
-  - content: With Azure Front Door, how can you help guarantee that the front-end hosts ensure requests from the same user are forwarded to the same backend?"
+  - content: "With Azure Front Door, how can you help guarantee that the front-end hosts ensure requests from the same user are forwarded to the same backend?"
     choices:
     - content: "This is not a feature of Azure Front Door."
       isCorrect: false

@@ -17,10 +17,10 @@ After you have an account, sign in and create a new repository where you'll keep
 
 1. Enter a short, memorable name for your repository. For example, use **Deploy-ARM-Template**. Optionally, add a description of your repository. For example, use **Deploying my first ARM template with GitHub Actions**.
 1. Choose a repository visibility setting. Public repositories are accessible to everyone on the internet. Private repositories are accessible only to you and to people you explicitly share access with. (Either will work with this exercise.)
-1. Select **Initialize this repository with a README**.
+1. Under **Initialize this repository with:**, select **Add a README file**.
 1. Select **Create repository**.
 
-    :::image type="content" source="../media/9-github-repo-creation-2.png" alt-text="Screenshot that shows the creation of new repo details.":::
+    :::image type="content" source="../media/7-github-repo-creation.png" alt-text="Screenshot that shows the creation of new repo details.":::
 
 You've created your repository and initialized it with a README file. It's time to commit a template and a template parameter file to the repo.
 
@@ -140,12 +140,12 @@ In the shell, use the preceding code to create the service principal.  You'll ge
 
 :::image type="content" source="../media/9-github-spn-creation.png" alt-text="Screenshot that shows results for creating a service principal in Azure.":::
 
-Copy the JSON output and store it as a GitHub secret within your GitHub repository. To do this, from your GitHub repository, select the **Settings** tab and then select **Secrets** from the left menu.
+Copy the JSON output and store it as a GitHub secret within your GitHub repository. To do this, from your GitHub repository, select the **Settings** tab. From the left menu, select the **Secrets** drop-down, and then select **Codespaces**.
 
 Enter the following values and then select **Add secret**:
 
 * **Name**: Enter **AZURE_CREDENTIALS**.
-* **Value**: Paste the JSON output that you copied earlier.
+* **Secret**: Paste the JSON output that you copied earlier.
 
 ![Screenshot that shows adding new service principal secret info to a GitHub secret.](../media/9-create-github-sp-2.gif)
 

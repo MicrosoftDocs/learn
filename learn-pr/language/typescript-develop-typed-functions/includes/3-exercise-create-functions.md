@@ -45,7 +45,7 @@ In this exercise, you'll create two named functions with strongly typed paramete
             }
             total += Number(input[count]);
         }
-    return total;
+        return total;
     }
     ```
 

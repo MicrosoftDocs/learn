@@ -19,7 +19,7 @@ It's difficult to make sense of unordered data. Let's make it a bit easier to un
 
     :::image type="content" source="../media/6-sort-1.png" alt-text="Screenshot of query results for the sort operator.":::
 
-1. Notice that the results start from the highest property-damage value and decrease. In fact, the query sorts in descending order by default, so you can leave out the `desc` and get the same results. The state and event types aren't ordered in any way. 
+1. Notice that the results start from the highest property-damage value and decrease. In fact, the query sorts in descending order by default, so you can leave out the `desc` and get the same results. The state and event types aren't ordered in any way.
 
 ## Sort on more than one expression
 
@@ -44,10 +44,10 @@ Each region has unique weather patterns, so now you want to know which events in
 
 ## Use the `top` operator
 
-Instead of sorting and scanning the top for a certain number of results, you can use the `top` operator to show the a specific number of top results. In fact, the `top` operator is more performant, so it's the preferred choice when you just want a certain number of top results.
+Instead of sorting and scanning the top for a certain number of results, you can use the `top` operator to show a specific number of top results. In fact, the `top` operator is more performant, so it's the preferred choice when you just want a certain number of top results.
 
 1. Run the following query:
-    
+
     <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKM9ILUpVCC5JLElVsLVVUHLz8Q/ydHFUAkqV5BcoGBooJFUquCTmJqanBhTlF6QWlVQCpQqK8rNSk0sg+nQUwKaFVBYAmahKAYKJ63RsAAAA" target="_blank">Run the query</a>
 
     ```kusto

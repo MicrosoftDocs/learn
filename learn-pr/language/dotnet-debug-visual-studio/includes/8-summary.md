@@ -1,4 +1,4 @@
-You experienced how using debuggers can be an effective strategy to debug issues in your .NET programs. With either the built-in debugger for quick sessions or the Visual Studio Code debugger for more complex projects, you saw how to locate and fix those bugs. You learned how to do it even without knowing the code you're debugging beforehand.
+In this module, you experienced how using debuggers can be an effective strategy to debug issues in your .NET programs. With either the built-in debugger for quick sessions or the Visual Studio Code debugger for more complex projects, you learned how to locate and fix those bugs. You also learned how to do it even without knowing the code you're debugging beforehand.
 
 In this module, you learned how to:
 

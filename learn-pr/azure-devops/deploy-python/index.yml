@@ -17,7 +17,7 @@ abstract: |
   - Trigger the pipeline and see your application be built and deployed to Azure
 prerequisites: |
   - An Azure subscription
-  - An Azure DevOps organization
+  - An Azure DevOps organization with access to **Microsoft-hosted** parallel jobs. [Check your parallel jobs and request a free grant](/azure/devops/pipelines/troubleshooting/troubleshooting#check-for-available-parallel-jobs).
   - A GitHub account
 iconUrl: /training/achievements/azure-devops/deploy-python.svg
 levels:

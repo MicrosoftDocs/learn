@@ -1,10 +1,30 @@
-It's important to understand the difference between DNS record sets and individual DNS records. A record set is a collection of records in a zone that have the same name and are the same type.
+It's important to understand the difference between **DNS record sets** and individual DNS records. A DNS record set (also known as a _resource record set_) is a collection of records in a DNS zone.
 
-:::image type="content" source="../media/record-sets-470ec9d5.png" alt-text="Screenshot of the Add a record set page.":::
+You define record sets in the Azure portal. The configuration settings depend on the record type for the set to create.
 
+Suppose you choose to create a set of `A` records (or _Address record_) to identify IP addresses associated with your domain. To create the `A` records, you need to provide the TTL (time to live) and the IP addresses. The TTL value specifies how long each record is cached by clients.
 
-A record set cannot contain two identical records. Empty record sets (with zero records) can be created, but do not appear on the Azure DNS name servers. Record sets of type CNAME can contain one record at most.
+:::image type="content" source="../media/add-record-sets-e5e85778.png" alt-text="Screenshot that shows how to add a DNS record set in the Azure portal.":::
 
-The **Add record set** page will change depending on the type of record you select. For an A record, you will need the TTL (Time to Live) and IP address. The time to live, or TTL, specifies how long each record is cached by clients.
+### Things to know about DNS record sets
 
-:::image type="content" source="../media/add-record-sets-e5e85778.png" alt-text="Screenshot of the Add a record page.":::
+Let's examine some characteristics of DNS record sets.
+
+- All records in a DNS record set must have the same name and the same record type.
+
+   Consider the following example where we have two records in a record set. All records have the same name, `www.contoso.com.`. All records have the same record type, `A`. Each record in the set has a different value. In this case, each record provides a different IP address.
+
+   ```console
+   www.contoso.com.        3600    IN    A     134.170.185.46
+   www.contoso.com.        3600    IN    A     134.170.188.221
+   ```
+
+- A DNS record set can't contain two identical records.
+
+- A record set of type `CNAME` can contain only one record.
+
+   A `CNAME` record (or _Canonical name record_) provides an alias of one domain name to another. This record is used to provide another name for your domain. The DNS `lookup` operation tries to find your domain by retrying the `lookup` with the other name specified in the `CNAME` record.
+
+- You can create a record set that doesn't have any records. This set is called an _empty record set_.
+
+- If you have an empty record set for your domain, this set doesn't appear on your Azure DNS name servers.

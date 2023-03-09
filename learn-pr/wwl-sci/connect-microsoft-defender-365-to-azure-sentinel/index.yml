@@ -25,9 +25,12 @@ roles:
 - security-operations-analyst
 products:
 - azure
-- azure-sentinel
+- microsoft-sentinel
+- defender-for-cloud
+- defender-for-iot
 subjects:
 - threat-protection
+- cloud-security
 units:
 - learn.wwl.connect-microsoft-defender-365-to-azure-sentinel.introduction
 - learn.wwl.connect-microsoft-defender-365-to-azure-sentinel.plan-for-microsoft-365-defender-connectors

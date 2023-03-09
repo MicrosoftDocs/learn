@@ -4,13 +4,11 @@ title: Explore Azure Service Bus
 metadata:
   title: Explore Azure Service Bus
   description: "Explore Azure Service Bus"
-  ms.date: 10/20/2022
+  ms.date: 03/01/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/3-azure-service-bus-overview.md)]

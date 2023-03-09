@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-model-deployment-solution.decide-real-time-batch-deployment
+title: Decide on real-time or batch deployment
+metadata:
+  title: Decide on real-time or batch deployment
+  description: "Decide on real-time or batch deployment"
+  ms.date: 01/03/2023
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-decide-real-time-batch-deployment.md)]

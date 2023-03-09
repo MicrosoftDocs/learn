@@ -3,7 +3,7 @@ uid: learn.quantum.qsharp-create-first-quantum-development-kit
 metadata:
   title: Create your first Q# program by using the Quantum Development Kit
   description: Get started with Q# programming by building a quantum random number generator.
-  ms.date: 05/19/2020
+  ms.date: 12/14/2022
   author: KittyYeungQ
   ms.author: kitty
   ms.topic: tutorial

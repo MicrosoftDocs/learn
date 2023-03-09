@@ -3,9 +3,9 @@ uid: learn.azure.create-your-first-speech-to-text-app
 metadata:
   title: Create your first Azure Cognitive Services Speech-to-Text application
   description: In this module, you'll learn how to use Azure Cognitive Services to create a speech-to-text application.
-  ms.date: 09/15/2022
-  author: rmcmurray
-  ms.author: robmcm
+  ms.date: 12/28/2022
+  author: eric-urban
+  ms.author: eur
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Create your first Azure Cognitive Services Speech-to-Text application

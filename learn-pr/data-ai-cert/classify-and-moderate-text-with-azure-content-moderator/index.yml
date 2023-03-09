@@ -3,7 +3,7 @@ uid: learn.data-ai.classify-and-moderate-text-with-azure-content-moderator
 metadata:
   title: Classify and moderate text with Azure Content Moderator
   description: In this module, we'll introduce you to Azure Content Moderator and show how to use it for text moderation
-  ms.date: 1/28/2019
+  ms.date: 12/19/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial

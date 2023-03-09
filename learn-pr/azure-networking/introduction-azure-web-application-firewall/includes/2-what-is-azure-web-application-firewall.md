@@ -1,12 +1,12 @@
-Here, you learn the basics of Azure Web Application Firewall. This overview will help you evaluate whether Azure Web Application Firewall is a useful tool to add to Contoso's overall network security strategy.
+Here, you'll learn the basics of Azure Web Application Firewall. This overview will help you evaluate whether Azure Web Application Firewall is a useful tool to add to Contoso's overall network-security strategy.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWCwkM]
 
 ## Overview of Azure Web Application Firewall
 
-You might you think malicious users won't bother with your web apps. However, tests have indicated that bots or malicious actors probe new web apps for weaknesses within minutes of deployment. If you put an app on the web, assume that threat actors will test the app for vulnerabilities almost immediately. You can also assume such probes will continue for the lifetime of the app.
+You might think malicious users won't bother with your web apps. However, tests have indicated that bots or malicious actors probe new web apps for weaknesses within minutes of deployment. If you put an app on the web, assume that threat actors will test the app for vulnerabilities almost immediately. You can also assume such probes will continue for the lifetime of the app.
 
-Most malicious tests of web apps check for the presence of one or more common vulnerabilities. If found, a threat actor could use these vulnerabilities to run attacks such as the following exploits:
+Most malicious tests of web apps check for the presence of one or more common vulnerabilities. If found, a threat actor could use these vulnerabilities to run attacks like the following exploits:
 
 - SQL injection
 - Cross-site scripting
@@ -25,17 +25,17 @@ You can deploy Azure Web Application Firewall in minutes. Your web apps immediat
 
 To help you evaluate Azure Web Application Firewall, here are some of its important features:
 
-- Managed rules. The rules that Azure Web Application Firewall uses to detect and prevent common exploits are created, maintained, and updated by Microsoft's security team. If a rule changes, or a core rule set (refer to the following description) is modified, Microsoft updates Azure Web Application Firewall automatically and seamlessly.
+- **Managed rules**: The rules that Azure Web Application Firewall uses to detect and prevent common exploits are created, maintained, and updated by Microsoft's security team. If a rule changes, or a core rule set (refer to the following description) is modified, Microsoft updates Azure Web Application Firewall automatically and seamlessly.
 
     > [!NOTE]
     > You can't modify or delete the managed rules offered by Azure Web Application Firewall. However, if a particular rule is problematic for your environment—for example, it blocks legitimate traffic to your web app—you can disable the rule.
 
-- Custom rules. If the managed rules offered by Azure Web Application Firewall don't cover a specific threat to your web application, you can create a custom rule.
-- Modes. Azure Web Application Firewall can operate in one of two modes: detection mode only logs requests that violate a rule, while prevention mode both logs and blocks requests that violate a rule.
-- Exclusion lists. You can configure Azure Web Application Firewall to ignore specific attributes when it checks requests.
-- Policies. You can combine a set of managed rules, custom rules, exclusions, and other Azure Web Application Firewall settings into a single element called an Azure Web Application Firewall policy. You can then apply that policy to multiple web apps for easy management and maintenance.
-- Request size limits. You can configure Azure Web Application Firewall to flag requests that are either too small or too large.
-- Alerts. Azure Web Application Firewall integrates with Azure Monitor. This integration gives you near real-time alerts when the firewall detects a threat.
+- **Custom rules**: If the managed rules offered by Azure Web Application Firewall don't cover a specific threat to your web application, you can create a custom rule.
+- **Modes**: Azure Web Application Firewall can operate in one of two modes: detection mode only logs requests that violate a rule, while prevention mode both logs and blocks requests that violate a rule.
+- **Exclusion lists**: You can configure Azure Web Application Firewall to ignore specific attributes when it checks requests.
+- **Policies**: You can combine a set of managed rules, custom rules, exclusions, and other Azure Web Application Firewall settings into a single element called an Azure Web Application Firewall policy. You can then apply that policy to multiple web apps for easy management and maintenance.
+- **Request size limits**: You can configure Azure Web Application Firewall to flag requests that are either too small or too large.
+- **Alerts**: Azure Web Application Firewall integrates with Azure Monitor. This integration gives you near-real-time alerts when the firewall detects a threat.
 
 ## Common attacks prevented by Azure Web Application Firewall
 
@@ -52,6 +52,6 @@ The following table describes the most common types of malicious threats that Az
 |Session fixation|An attacker exploits a web app vulnerability that allows the attacker to obtain a valid session ID. The attacker deceives a user into authenticating a new session with that ID. The attacker then hijacks this user-validated session.|
 |SQL injection|In a web form field, the attacker inserts (or "injects") text specially configured to trick the server into running SQL commands. These commands allow the attacker to access sensitive data, insert, update, or delete data, or run SQL operations.|
 
-All the exploits listed in the previous table are only possible when the server trusts the input it receives. Writing code that checks for and sanitizes just these exploits would be difficult and time-consuming. Only a small fraction of the possible exploits a web app can face are represented in the previous table. Azure Web Application Firewall is designed to prevent these attacks and many more.
+All the exploits listed in the preceding table are only possible when the server trusts the input it receives. Writing code that checks for and sanitizes just these exploits would be difficult and time-consuming. Only a small fraction of the possible exploits a web app can face are represented in the previous table. Azure Web Application Firewall is designed to prevent these attacks and many more.
 
 <!-- Insert concept video here -->

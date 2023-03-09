@@ -12,17 +12,17 @@ There are eight different eviction policies provided by Azure Cache for Redis. A
 
 * **noeviction**: *No eviction* policy. Returns an error message if you attempt to insert data.
 
-* **allkeys-lru**: Removes the *least recently used* key.
+* **allkeys-lru**: Removes the *least recently used* keys.
 
-* **allkeys-random**: Removes a *random* key.
+* **allkeys-random**: Removes *random* keys.
 
 * **allkeys-lfu**: Evicts the *least frequently used* keys out of all keys.
 
-* **volatile-lru**: Removes the *least recently used* key out of all the keys with an expiration set.
+* **volatile-lru**: Removes the *least recently used* keys out of all the keys with an expiration set.
 
-* **volatile-ttl**: Removes the key with the shortest *time to live* based on the expiration set for it.
+* **volatile-ttl**: Removes the keys with the shortest *time to live* based on the expiration set for them.
 
-* **volatile-random**: Removes a *random* key that has an expiration set.
+* **volatile-random**: Removes *random* keys that have an expiration set.
 
 * **volatile-lfu**: Evicts the *least frequently used* keys out of all keys with an *expire* field set.
 

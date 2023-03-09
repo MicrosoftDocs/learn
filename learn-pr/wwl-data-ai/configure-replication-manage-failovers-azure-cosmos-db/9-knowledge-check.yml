@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/17/2022
+  ms.date: 12/06/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
@@ -14,7 +14,7 @@ labModal: false
 durationInMinutes: 5
 quiz:
   questions:
-  - content: "You've created a brand new Azure Cosmos DB account with a write region in **West US** and two read regions in **UK South** and **Japan East**. You have made no further configuration changes from the default configuration for a new account. There's a current data center in **West US**. What will Azure Cosmos DB do as a failover action?"
+  - content: "You've created a brand new Azure Cosmos DB account with a write region in **West US** and two read regions in **UK South** and **Japan East**. You have made no further configuration changes from the default configuration for a new account. There's a current data center outage in **West US**. What will Azure Cosmos DB do as a failover action?"
     choices:
     - content: "Failover to **UK South**"
       isCorrect: false

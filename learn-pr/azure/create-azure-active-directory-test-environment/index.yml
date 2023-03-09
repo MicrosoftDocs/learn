@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.create-azure-active-directory-test-environment
+metadata:
+  title: Set up a test environment for application testing in Azure Active Directory
+  description: Evaluate whether you need a dedicated test tenant for your application test environment or whether you can use a production tenant. Create a dedicated Azure AD tenant for application testing.
+  ms.date: 12/08/2022
+  author: rwike77
+  ms.author: ryanwi
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+title: Set up a test environment for application testing in Azure Active Directory
+summary: Evaluate whether you need a dedicated test tenant for your application test environment. Create a test tenant in Azure Active Directory (Azure AD) for use in a continuous integration/continuous deployment (CI/CD) pipeline or for testing applications.
+abstract: |
+  By the end of this module, you'll be able to:
+    - Evaluate whether you need a dedicated test Azure AD tenant or production tenant for your application test environment.
+    - Set up a test environment in a separate tenant  
+prerequisites: |
+  - Experience navigating the Azure portal.
+  - Knowledge of Azure AD tenants, app registrations, service principals, and users at the beginner level.
+  - Knowledge of app permissions and consent in Microsoft identity platform at the beginner level.
+  - To complete the exercise in this module, you'll need an Azure account with an active subscription. Create an [account for free](https://azure.microsoft.com/free/).
+iconUrl: /learn/achievements/generic-badge.svg
+levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
+  - intermediate
+roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
+  - developer 
+  - identity-access-admin
+  - administrator
+products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
+- azure
+- azure-active-directory
+subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
+  - cloud-computing
+units:
+- learn.create-azure-active-directory-test-environment.introduction
+- learn.create-azure-active-directory-test-environment.plan-your-azure-active-directory-test-environment
+- learn.create-azure-active-directory-test-environment.exercise-set-up-azure-active-directory-test-environment
+- learn.create-azure-active-directory-test-environment.knowledge-check
+- learn.create-azure-active-directory-test-environment.summary
+badge:
+  uid: learn.create-azure-active-directory-test-environment.badge

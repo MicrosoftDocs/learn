@@ -2,8 +2,8 @@
 uid: learn.wwl.configure-replication-manage-failovers-azure-cosmos-db
 metadata:
   title: Configure replication and manage failovers in Azure Cosmos DB
-  description: "Replicate data across the globe and manage automatic or manual failovers in Azure Cosmos DB."
-  ms.date: 10/17/2022
+  description: "Configure replication and manage failovers in Azure Cosmos DB"
+  ms.date: 12/06/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial

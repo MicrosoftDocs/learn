@@ -1,4 +1,4 @@
-What are cloud models? The cloud models define the deployment type of cloud resources. The three main cloud models are: private, public, and hybrid.
+What are cloud models? The cloud models define the deployment type of cloud resources. The three main cloud models are: private, public, and hybrid.<br>
 
 ## Private cloud
 

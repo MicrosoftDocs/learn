@@ -1,4 +1,4 @@
-Structured exception handing uses the TRY/CATCH construct to test for errors, and handle errors. When using exception handling with transactions, it is important to place the COMMIT or ROLLBACK keywords in the correct place in relation to the TRY/CATCH blocks.
+Structured exception handling uses the TRY/CATCH construct to test for errors, and handle errors. When using exception handling with transactions, it is important to place the COMMIT or ROLLBACK keywords in the correct place in relation to the TRY/CATCH blocks.
 
 ## Commit transactions
 

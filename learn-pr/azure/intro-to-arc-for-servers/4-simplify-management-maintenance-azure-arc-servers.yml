@@ -4,7 +4,7 @@ title: What are the security and monitoring capabilities of Azure Arc-enabled se
 metadata:
   title: What are the security and monitoring capabilities of Azure Arc-enabled servers?
   description: What are the security and monitoring capabilities of Azure Arc-enabled servers?
-  ms.date: 12/01/2021
+  ms.date: 01/04/2023
   author: JnHs
   ms.author: jenhayes
   ms.topic: interactive-tutorial
@@ -24,7 +24,7 @@ quiz:
     - content: "Use Windows Admin Center to connect to each server."
       isCorrect: false
       explanation: "Incorrect. While it is possible to identify the required information, this would require extra administrative effort."
-    - content: "Use the Azure Arc enabled servers blade in the Azure portal."
+    - content: "Use the Azure Arc-enabled servers blade in the Azure portal."
       isCorrect: true
       explanation: "Correct. The blade allows the administrator to readily identify the OS build and OS version. The blade also includes server name, manufacturer, model, serial number, the number of CPU cores, and the amount of memory."
   - content: "What is the primary Azure Monitor-related benefit of Azure Arc-enabled servers compared with non Azure Arc-enabled servers?"

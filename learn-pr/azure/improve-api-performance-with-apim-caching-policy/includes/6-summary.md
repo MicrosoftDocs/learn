@@ -1,4 +1,4 @@
-In this module, you've seen how you can use Azure API Management to modify the behavior of an API without rewriting any code. As the developer at the Board gaming company, you were able to apply a caching policy to a GET operation to enable a more speedy response to identical queries.
+In this module, you've learned how you can use Azure API Management to modify the behavior of an API without rewriting any code. As the developer at the Board gaming company, you were able to apply a caching policy to a GET operation to enable a more speedy response to identical queries.
 
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
 

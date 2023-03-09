@@ -8,15 +8,15 @@ In this unit, you'll understand how using log data can improve resilience in you
 
 Log alerts use log data to assess the rule logic and, if necessary, trigger an alert. This data can come from any Azure resource: server logs, application server logs, or application logs.
 
-By its nature, log data is historical. So usage is focused on analytics and trends.
+By its nature, log data is historical, so usage is focused on analytics and trends.
 
-You use these types of logs to assess if any of your servers have exceeded their CPU utilization by a given threshold during the last 30 minutes, or you can evaluate response codes issued on your web application server in the last hour.
+You can use these types of logs to assess if any of your servers have exceeded their CPU utilization by a given threshold during the last 30 minutes, or you can evaluate response codes issued on your web application server in the last hour.
 
 ## How log alerts work
 
 Log alerts behave in a slightly different way from other alert mechanisms. The first part of a log alert defines the log search rule. The rule defines how often it should run, the time period under evaluation, and the query to be run.
 
-When a log search evaluates as positive, an alert record is created, and any associated actions are triggered.
+When a log search evaluates as positive, an alert record is created and any associated actions are triggered.
 
 ## Composition of log search rules
 

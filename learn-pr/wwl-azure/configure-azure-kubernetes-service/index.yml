@@ -2,17 +2,17 @@
 uid: learn.wwl.configure-azure-kubernetes-service
 metadata:
   title: Configure Azure Kubernetes Service
-  description: "You will learn how to configure Azure Kubernetes including networking, storage, and scaling."
-  ms.date: 10/21/2022
+  description: "Learn how to configure Azure Kubernetes Service including networking, storage, and scaling."
+  ms.date: 03/06/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Configure Azure Kubernetes Service
-summary: You will learn how to configure Azure Kubernetes including networking, storage, and scaling.
+summary: Learn how to configure Azure Kubernetes Service including networking, storage, and scaling.
 abstract: |
-  After completing this module, you will be able to:
-  - Identify AKS components including pods, clusters, and nodes.
+  In this module, you learn how to:
+  - Identify Azure Kubernetes Service (AKS) components including pods, clusters, and nodes.
   - Configure network connections for AKS.
   - Configure storage options for AKS.
   - Implement security options for AKS.

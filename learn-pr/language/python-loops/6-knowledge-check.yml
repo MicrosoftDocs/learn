@@ -22,7 +22,7 @@ quiz:
       explanation: "Incorrect. Python uses the word `for`, not `for each`."
     - content: "`for item in collection:`"
       isCorrect: true
-      explanation: "Correct! Using the `for` variable in the sequence is the right syntax."
+      explanation: "Correct! Using `for` *variable* `in` *sequence* is the right syntax."
     - content: "`for collection in item:`"
       isCorrect: false
       explanation: "Incorrect. The variable to assign comes first, and `collection` comes after the `in` keyword."

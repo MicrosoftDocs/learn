@@ -93,4 +93,4 @@ Next, configure your project to use Swagger.
 
 1. In the terminal, press **Ctrl+C** to terminate the program.
 
-You've successfully added Open API support to your minimal API using Swagger!
+You've successfully added OpenAPI support to your minimal API using Swagger!

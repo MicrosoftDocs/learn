@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.design-a-data-model-with-ads.table-constraints
+title: Table constraints
+metadata:
+  title: Table constraints
+  description: "Use primary keys, foreign keys, and table constraints on relational database tables for identity, default values, and restrict data values"
+  ms.date: 12/29/2022
+  author: JetterMcTedder
+  ms.author: bspendolini
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-table-constraints.md)]
+quiz:
+  title: Check your knowledge
+
+  questions:
+  - content: A foreign key reference what type of column in another table?
+    choices:
+    - content: A column that can have nulls
+      isCorrect: false
+      explanation: Foreign keys reference primary keys, which can't have nulls.
+    - content: A column that is also a foreign key
+      isCorrect: false
+      explanation: Foreign keys can't reference other foreign keys. They can only reference primary keys.
+    - content: A column that is a primary key
+      isCorrect: true
+      explanation: Foreign keys create a link, or reference, back to another table's primary key ensuring data continuity.
+
+  - content: What type of constraint would you use to limit the values that are accepted by one or more columns in a table to a specified range using logical expressions?
+    choices:
+    - content: Check
+      isCorrect: true
+      explanation: Check constraints can help limit values entered using logical expressions that return TRUE or FALSE.
+    - content: Unique
+      isCorrect: false
+      explanation: Unique constraints would be used to ensure no duplicate values are entered into a column.
+    - content: Foreign keys
+      isCorrect: false
+      explanation: Foreign keys are used to establish and enforce a link between the data in two tables. While a foreign key does restrict what data can be entered, it isn't using logical expressions.

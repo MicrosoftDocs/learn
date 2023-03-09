@@ -1,7 +1,7 @@
 
 In the previous units, you learned about the search problem and to implement its instances as quantum oracles. 
 
-Preliminaries are over! Prepare yourself for your first real mission! In this unit, you'll implement Grover's search algorithm. It isn't necessary to dive deep into the gate-level implementation details but you'll focus the discussion on the high-level logic instead.
+Preliminaries are over! Prepare yourself for your first real mission! In this unit and the next, you'll outline, visualize, and implement Grover's search algorithm. At this point, it isn't necessary to dive deep into the gate-level implementation details. Instead, you'll focus on the high-level logic.
 
 For effectiveness, you have to make sure that two connected stations don't use the same bandwidth.
 
@@ -22,7 +22,6 @@ Let's start with an outline of the algorithm and then discuss each step in detai
 
 3. Finally, we measure the state of the system. Repeating the iteration several times introduces significant differences between the two types of amplitudes so the measurement yields the answer with a high probability.
 
-
 ## Algorithm visualization
 
 Now, let's take a look at Grover's algorithm from a slightly different angle, visualizing the system state at each step.
@@ -38,7 +37,7 @@ We'll define two state vectors:
 
   $$|\textrm{bad}\rangle = \frac{1}{\sqrt{N-M}} \sum_{x : f(x) = 0} |x\rangle$$
 
-The algorithm never distinguishes different "good" or different "bad" states until the final measurement, so all amplitudes of "good" states remain equal to each other, and all amplitudes of "bad" states remain equal to each other.
+The algorithm never distinguishes different "good" or different "bad" states until the final measurement. So, all amplitudes of "good" states remain equal to each other, and all amplitudes of "bad" states remain equal to each other.
 This means that we can always represent the overall system state as a superposition of the states $|\textrm{good}\rangle$ and $|\textrm{bad}\rangle$.
 
 1. We start with an equal superposition of all basis states, both "good" and "bad". This state is represented as follows:

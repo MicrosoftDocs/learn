@@ -3,7 +3,7 @@ uid: learn.wwl.design-strategy-for-secure-server-client-endpoints
 metadata:
   title: Design a strategy for securing server and client endpoints
   description: "Design a strategy for securing server and client endpoints"
-  ms.date: 11/22/2022
+  ms.date: 12/21/2022
   author: wwlpublish
   ms.author: hrasheed
   ms.topic: interactive-tutorial
@@ -13,7 +13,7 @@ summary: Learn how to design a cybersecurity strategy to secure server and clien
 abstract: |
   Upon completion of this module, the learner will be able to:
   - Design a logging and auditing security strategy.
-  - Develop security operations for hybrid and multi-cloud environments.
+  - Develop security operations for hybrid and multicloud environments.
   - Design a strategy for Security Information and Event Management (SIEM) and Security Orchestration, Automation, and Response (SOAR).
   - Evaluate security workflows.
   - Review security strategies for incident management.
@@ -31,6 +31,7 @@ roles:
 products:
 - azure
 - active-directory
+- azure-sentinel
 subjects:
 - architecture
 - security

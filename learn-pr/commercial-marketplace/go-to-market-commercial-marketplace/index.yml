@@ -3,19 +3,20 @@ uid: learn.go-to-market-commercial-marketplace
 metadata:
   title: Go to market through the commercial marketplace
   description: This module provides tips and best practices to help organizations create their business plan for success in the commercial marketplace
-  ms.date: 07/07/2022
+  ms.date: 12/09/2022
   author: marleva
   ms.author: maevan
+  manager: jasonh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Go to market through the commercial marketplace
 summary: This module provides tips and best practices to help you create your organization's unique plan for success in the commercial marketplace
 abstract: |
-  In this module, you will:
-  - Identify ways to align the different departments in your organization
-  - Learn best practices for optimizing your commercial marketplace offer
-  - Learn about commercial marketplace sales channels
-  - Learn how to access Marketplace Rewards benefits in Partner Center
+  In this module, you'll:
+  - Identify ways to align the different departments in your organization.
+  - Learn best practices for optimizing your commercial marketplace offer.
+  - Learn about commercial marketplace sales channels.
+  - Learn how to access Marketplace Rewards benefits in Partner Center.
 iconUrl: /training/achievements/ccc-commercial-marketplace/go-to-market-commercial-marketplace.svg
 levels:
 - beginner

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-data-pipeline-azure-synapse-analytics.define-data-flows
+title: Define data flows
+metadata:
+  title: Define data flows
+  description: "Define data flows"
+  ms.date: 02/03/2023
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: synapse-analytics
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-define-data-flows.md)]

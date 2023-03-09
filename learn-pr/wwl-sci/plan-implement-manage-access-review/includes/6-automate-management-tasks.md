@@ -12,10 +12,10 @@ Use Access Reviews to review and clean up collaboration partners’ identities f
 
 External identities can be granted access to company resources through one of the following actions:
 
-- Added to a group.
-- Invited to Teams.
-- Assigned to an enterprise application or access package.
-- Assigned a privileged role in Azure AD or in an Azure subscription.
+ -  Added to a group.
+ -  Invited to Teams.
+ -  Assigned to an enterprise application or access package.
+ -  Assigned a privileged role in Azure AD or in an Azure subscription.
 
 This [sample script](https://github.com/microsoft/access-reviews-samples/tree/master/ExternalIdentityUse) shows where external identities invited into the tenant are used. You can see external users' group membership, role assignments, and application assignments in Azure AD. The script won't show any assignments outside of Azure AD, such as direct rights assignment to SharePoint resources, without the use of groups.
 

@@ -1,4 +1,4 @@
-Python strings are one of the main and most common types in the language. Interacting with strings, including formatting and replacing text, is an essential skill to develop for working with Python code.
+Python strings are one of the most important and common types in the language. Learning how to interact with strings, including formatting and replacing text, is an essential skill to develop for working with Python code.
 
 ## Scenario: Create a program to describe facts about the Moon
 

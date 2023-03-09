@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-spark-notebooks-azure-synapse-pipeline.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/07/2023
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: synapse-analytics
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What kind of pool is required to run a Synapse notebook in a pipeline?"
+    choices:
+    - content: "A *Dedicated* SQL pool"
+      isCorrect: false
+      explanation: "Incorrect: A dedicated SQL pool is used to host a relational data warehouse."
+    - content: "A *Data Explorer* pool"
+      isCorrect: false
+      explanation: "Incorrect: A Data Explorer pool is used to run Kusto queries."
+    - content: "An *Apache Spark* pool"
+      isCorrect: true
+      explanation: "Correct: Notebooks are run in an Apache Spark pool."
+  - content: "What kind of pipeline activity encapsulates a Synapse notebook?"
+    choices:
+    - content: "Notebook activity"
+      isCorrect: true
+      explanation: "Correct: Use a Notebook activity to run a Synapse notebook"
+    - content: "HDInsight Spark activity"
+      isCorrect: false
+      explanation: "Incorrect: An HDInsight Spark activity is used to run a Spark job on an Azure HDInsight cluster"
+    - content: "Script activity"
+      isCorrect: false
+      explanation: "Incorrect: A Script activity is used to run a script."
+  - content: "A notebook cell contains variable declarations. How can you use them as parameters?"
+    choices:
+    - content: "Add a %%Spark magic at the beginning of the cell"
+      isCorrect: false
+      explanation: "Incorrect: a %%Spark magic would configure the cell to be run as Scala code."
+    - content: "Toggle the *Parameters cell* setting for the cell"
+      isCorrect: true
+      explanation: "Correct: Toggle the Parameters cell option to use variables as parameters."
+    - content: "Use the *var* keyword for each variable declaration"
+      isCorrect: false
+      explanation: "Incorrect: The var keyword is used to declare variables in Scala."

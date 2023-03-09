@@ -43,7 +43,7 @@ The structure of our example graph can be represented as follows:
 We'll describe our graph coloring by an array of `nVertices` colors. 
 For our example, we'll look for a four-coloring of the graph - a coloring that uses at most four colors, encoded with integers 0 through 3. 
 
-We need to represent our coloring in a bit string, so we'll use a bit string of length 2 * `nVertices`, with the first pair of bits encoding the color of vertex 0, the second pair - the color of vertex 1, and so on. We'll store our bits as Boolean values, with 0 and 1 bits encoded as `false` and `true`, respectively. The pair of bits will encode an integer color index using little-endian notation, this is, an integer 1 is encoded as 10, with the least significant bit stored first.
+We need to represent our coloring in a bit string, so we'll use a bit string of length 2 * `nVertices`, with the first pair of bits encoding the color of vertex 0, the second pair - the color of vertex 1, and so on. We'll store our bits as Boolean values, with 0 and 1 bits encoded as `false` and `true`, respectively. The pair of bits will encode an integer color index using little-endian notation, that is, an integer 1 is encoded as 10, with the least significant bit stored first.
 
 Here's how the coloring of our example graph will be encoded and interpreted:
 
@@ -82,10 +82,10 @@ Let's see how this approach works for our vertex coloring problem!
 
 ### Step 1. Check whether the colors of two vertices are the same
 
-The smallest building block for checking whether the given graph coloring is valid is taking a pair of vertices connected by an edge and checking whether their assigned colors are the same or different.
+The smallest building block for checking whether the given graph coloring is valid, is taking a pair of vertices connected by an edge and checking whether their assigned colors are the same or different.
 
 The operation that implements this check (`MarkColorEquality`) has to take two 2-qubit arrays as inputs, representing the colors of the vertices, and a qubit that we'll use to mark the result of the comparison by flipping its state if the colors are the same.
-To compare the qubit arrays, we compare their corresponding bits to each other; if all pairs of bits are the same, then the arrays are the same, and the colors of the vertices stored in those arrays are the same.
+To compare the qubit arrays, we compare their corresponding bits to each other. If all pairs of corresponding bits are the same, then the arrays are the same, and the colors of the vertices stored in those arrays are the same.
 To compare a pair of bits, we can compute their XOR: if the result is 0, the bits are the same; otherwise they're different.
 
 Here's the Q# code that implements this check and uses it to compare two qubit arrays: the first one in the $|00\rangle$ state and the second one in an equal superposition of all basis states.
@@ -133,14 +133,14 @@ $$|00\rangle\_\textrm{c0} \otimes \frac12\big(|00\rangle + |10\rangle + |01\rang
 
 After we apply the equality check, the state of the register `c0` doesn't change (you can verify this by adding another `DumpRegister` call), but the amplitudes of the combined state of the register `c1` and the `target` qubit change.
 The amplitude of the $|00\rangle\_\textrm{c1} \otimes |0\rangle\_\textrm{target}$ state becomes 0, and the amplitude of the $|00\rangle\_\textrm{c1} \otimes |1\rangle\_\textrm{target}$ state becomes $0.25$. 
-Note that the two amplitude values not only change but are swapped as the result of applying this check.
+The two amplitude values not only change but are swapped as the result of applying this check.
 
 Indeed, since the colors encoded in the state $|00\rangle\_\textrm{c0} \otimes |00\rangle\_\textrm{c1} \otimes |0\rangle\_\textrm{target}$ are equal, the state of the `target` qubit for this basis state gets flipped, giving us the resulting state
 
 $$|00\rangle_\textrm{c0} \otimes \frac12\big(|00\rangle_\textrm{c1} \otimes |1\rangle_\textrm{target} + |10\rangle_\textrm{c1} \otimes |0\rangle_\textrm{target} + |01\rangle_\textrm{c1} \otimes |0\rangle_\textrm{target} + |11\rangle_\textrm{c1} \otimes |0\rangle_\textrm{target} \big).$$
 
 > [!NOTE]
-> Note that the `target` qubit becomes entangled with the register `c1`: you can no longer separate their states!
+> The `target` qubit becomes entangled with the register `c1`: you can no longer separate their states!
 > If the value of the function we're evaluating is the same for all inputs, the target qubit will remain unentangled from the input register, storing this value instead. 
 > In our case, some inputs yield $f(x) = 0$ and some yield $f(x) = 1$, so you cannot separate the information about the inputs from the information about the output any longer.
 
@@ -153,7 +153,7 @@ Now that we know how to check that the colors of any two vertices are different,
 3. If all pairs of vertices satisfy this condition, the coloring is valid.
 
 To implement these steps as a quantum operation, we'll need to allocate extra qubits to store the results of pairwise color comparisons, one qubit per edge. 
-We start with those qubits in $|0\rangle$ state and compare colors of vertices in each pair using the `MarkColorEquality` operation we've seen above; it flips the state of the qubit to $|1\rangle$ if the colors of the corresponding pair of vertices are the same.
+We start with those qubits in $|0\rangle$ state and compare colors of vertices in each pair using the `MarkColorEquality` operation we've seen previously; it flips the state of the qubit to $|1\rangle$ if the colors of the corresponding pair of vertices are the same.
 
 Lastly, we compute the final result. If all the extra qubits allocated are in the $|0\rangle$ state, we flip the state of our target qubit to indicate that the vertex coloring is valid.
 
@@ -193,7 +193,7 @@ What happens to the register that encodes the coloring at this step?
 If you apply these steps to a basis state, you won't be able to tell the difference - the global phase won't be observable. 
 But if you apply these steps to a superposition state, you'll see that the basis states that encode valid colorings acquire the $-1$ relative phase - exactly the effect we need the phase operation to have!
 
-Here's what the phase kickback trick looks like in Q#. We'll use the operation that implements color check, which makes the effects easier to see in the output, but you can use the same trick on any operation that implements a marking oracle.
+Here's what the phase kickback trick looks like in Q#. We'll use the operation that implements color check, which makes the effects easier to see in the output. But you can use the same trick on any operation that implements a marking oracle.
 
 :::code language="qsharp" source="code/4-program-5.qs":::
 

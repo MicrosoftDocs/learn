@@ -40,6 +40,6 @@ EXEC sp_procoption @ProcName = myProcedure
     , @OptionValue = 'on';
 ```
 
-To execute multiple procedures that doesn't need to execute them in parallel, make one procedure the startup procedure and call the other procedures from the startup procedure. This will uses only one worker thread.
+To execute multiple procedures that don't need to execute them in parallel, make one procedure the startup procedure and call the other procedures from the startup procedure. This will use only one worker thread.
 
 Startup procedures must be in the master database. 

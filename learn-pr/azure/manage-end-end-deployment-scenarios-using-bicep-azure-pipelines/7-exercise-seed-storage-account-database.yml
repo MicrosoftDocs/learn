@@ -5,7 +5,7 @@ metadata:
   unitType: exercise
   title: Exercise - Seed a storage account and database
   description: In this unit, you update a Bicep deployment pipeline to connect to a database, deploy a DACPAC file and sample data, and upload blobs to a storage account.
-  ms.date: 10/10/2021
+  ms.date: 12/12/2022
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial

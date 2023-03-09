@@ -1,8 +1,8 @@
 Azure Web Application Firewall is an Azure service that protects web applications from common attacks such as SQL injection and cross-site scripting.
 
-Suppose you work for Contoso, Ltd., a financial services company in Seattle with major offices located throughout the world. Contoso's compute environment runs as Azure virtual network resources. These resources include several existing and planned web applications that serve customers, vendors, and employees.
+Suppose you work for Contoso, Ltd., a financial-services company in Seattle with major offices located throughout the world. Contoso's compute environment runs as Azure virtual network resources. These resources include several existing and planned web applications that serve customers, vendors, and employees.
 
-Contoso IT staff are concerned that their web applications might be targeted by malicious attacks using common exploits, such as SQL injection. IT wants to protect their apps. However, their web development team lacks the expertise, time, and budget to write the necessary protection code.
+Contoso IT staff are concerned that their web applications might be targeted by malicious attacks using common exploits such as SQL injection. IT wants to protect their apps. However, their web development team lacks the expertise, time, and budget to write the necessary protection code.
 
 Suppose you're a senior Contoso web developer. You're responsible for researching and recommending a way to protect Contoso's web applications. You've been asked to evaluate whether Azure Web Application Firewall can protect your web apps from attacks that use common exploits.
 

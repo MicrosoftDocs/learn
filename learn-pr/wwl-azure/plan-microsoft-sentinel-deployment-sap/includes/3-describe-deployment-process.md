@@ -1,3 +1,5 @@
+
+
 As part of your planning process, you want to understand the steps that the cross-functional team will need to follow. Here’s an overview.
 
 ## Verify deployment prerequisites
@@ -39,7 +41,7 @@ You’ve reviewed the prerequisites and understand that you’ll need to modify 
 
 ### Deploy the data connector agent
 
-The data connector agent runs as a Docker container on a Linux virtual machine. This virtual machine can be hosted in Azure, in a third-party cloud, or on-premises. You can install and configure this container by using a kickstart script (recommended); alternatively, you can [deploy the container manually](https://learn.microsoft.com/azure/sentinel/sap/deploy-data-connector-agent-container?tabs=deploy-manually#deploy-the-data-connector-agent-container).
+The data connector agent runs as a Docker container on a Linux virtual machine. This virtual machine can be hosted in Azure, in a third-party cloud, or on-premises. You can install and configure this container by using a kickstart script (recommended); alternatively, you can [deploy the container manually](/azure/sentinel/sap/deploy-data-connector-agent-container?tabs=deploy-manually#deploy-the-data-connector-agent-container).
 
 In either model, you must transfer the SAP NetWeaver SDK to the virtual machine or operating system where you plan to install the agent.
 

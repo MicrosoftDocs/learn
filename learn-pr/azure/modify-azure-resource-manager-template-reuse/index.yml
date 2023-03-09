@@ -34,7 +34,6 @@ roles:
 - solution-architect
 products:
 - azure
-- vs-code
 - azure-resource-manager
 - azure-storage-accounts
 subjects:

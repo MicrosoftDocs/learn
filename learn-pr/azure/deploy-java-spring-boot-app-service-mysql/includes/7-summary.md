@@ -39,4 +39,6 @@ For more information about Application Insights for monitoring, see [Azure Appli
 
 For more information about using Azure with Java, see [Azure for Java developers](/azure/developer/java/?WT.mc_id=java-10785-ropreddy&azure-portal=true) and [Working with Azure DevOps and Java](/azure/devops/pipelines/ecosystems/java?WT.mc_id=java-10785-ropreddy&azure-portal=true).
 
+For more information about comparing java options on Azure, see [Compare Java application hosting options on Azure](/azure/architecture/guide/technology-choices/service-for-java-comparison).
+
 For more information about creating MySQL servers, see [Create an Azure Database for MySQL server by using the Azure portal](/azure/mysql/quickstart-create-mysql-server-database-using-azure-portal/?WT.mc_id=java-10785-ropreddy&azure-portal=true).

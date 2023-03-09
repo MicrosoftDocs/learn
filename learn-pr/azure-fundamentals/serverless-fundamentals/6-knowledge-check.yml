@@ -25,7 +25,7 @@ quiz:
     choices:
     - content: "Azure Functions"
       isCorrect: false
-      explanation: "Azure Functions could be used, but it might require more effort to research the APIs, write the code, and manually orchestrate the services.  In this scenario, Functions is not the best option."
+      explanation: "Azure Functions could be used, but it might require more effort to research the APIs, write the code, and manually orchestrate the services.  In this scenario, Azure Functions isn't the best option."
     - content: "Azure Logic Apps"
       isCorrect: true
       explanation: "Azure Logic Apps makes it easy to create a workflow across well-known services with less effort than writing code and manually orchestrating all the steps yourself."
@@ -33,7 +33,7 @@ quiz:
     choices:
     - content: "Azure Functions"
       isCorrect: false
-      explanation: "Azure Functions is best suited for software developers. Functions is not the best option in this scenario."
+      explanation: "Azure Functions is best suited for software developers, so it isn't the best option in this scenario."
     - content: "Azure Logic Apps"
       isCorrect: true
       explanation: "Azure Logic Apps is best suited for users who are more comfortable in a visual environment that allows them to automate their business processes. Logic Apps is the best option in this scenario."

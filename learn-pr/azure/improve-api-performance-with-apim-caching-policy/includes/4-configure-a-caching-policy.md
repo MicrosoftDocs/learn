@@ -27,7 +27,7 @@ To set up a cache, you use an outbound policy named `cache-store` to store respo
 </policies>
 ```
 
-It's also possible to store individual values in the cache, instead of a complete response. Use the `cache-store-value` policy to add the value, with an identifying key. Retrieve the value from the cache by using the `cache-lookup-value` policy. If you want to remove a value before it expires, use the `cache-remove-value` policy:
+It's also possible to store individual values in the cache instead of a complete response. Use the `cache-store-value` policy to add the value, with an identifying key. Retrieve the value from the cache by using the `cache-lookup-value` policy. If you want to remove a value before it expires, use the `cache-remove-value` policy:
 
 ```xml
 <policies>
@@ -60,13 +60,13 @@ It's important to ensure that, if you serve a response from the cache, it's rele
 
 `http://<boardgames.domain>/stock/api/product?partnumber=3416&customerid=1128`
 
-This request is intended to check the stock levels for a product with part number 3416. The customer ID is used by a separate policy, and doesn't alter the response. Subsequent requests for the same part number can be served from the cache, as long as the record hasn't expired. So far so good.
+This request is intended to check the stock levels for a product with part number 3416. The customer ID is used by a separate policy, and doesn't alter the response. Subsequent requests for the same part number can be served from the cache, as long as the record hasn't expired. So far, so good.
 
 Now suppose that a different customer requests the same product:
 
 `http://<boardgames.domain>/stock/api/product?partnumber=3416&customerid=5238`
 
-By default, the response can't be served from the cache, because the customer ID is different. 
+By default, the response can't be served from the cache, because the customer ID is different.
 
 However, the developers point out that the customer ID doesn't alter the response. It would be more efficient if requests for the same product from different customers could be returned from the cache. Customers would still see the correct information.
 
@@ -109,4 +109,4 @@ You might choose to use an external cache because:
 - You want to have greater control over the cache configuration than the internal cache allows.
 - You want to cache more data than can be stored in the internal cache.
 
-Another reason to configure an external cache is that you want to use caching with the consumption pricing tier. This tier follows serverless design principles and you should use it with serverless web APIs. For this reason, it has no internal cache. If you want to use caching with an API Management instance in the consumption tier, you must use an external cache.
+Another reason to configure an external cache is that you want to use caching with the consumption pricing tier. This tier follows serverless design principles, and you should use it with serverless web APIs. For this reason, it has no internal cache. If you want to use caching with an API Management instance in the consumption tier, you must use an external cache.

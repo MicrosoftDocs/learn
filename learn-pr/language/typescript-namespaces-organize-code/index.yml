@@ -33,7 +33,6 @@ roles:
 - developer
 products:
 - azure
-- vs-code
 subjects:
 - development-tools
 units:

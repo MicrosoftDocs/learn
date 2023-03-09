@@ -23,19 +23,19 @@ So, you can now approach the team responsible for network allocation in your org
 
 ## Selecting a Kubernetes service address range
 
-With the node and pod subnet selected there's only one more address range to select and that's the address range used by Kubernetes Services. As described previously, services provide a static virtual IP address that allows traffic to be routed to your pods. This address range is only ever used for routing traffic inside your cluster. It's never used or exposed outside of the cluster. So you need to select a private network address range that's not in use elsewhere in Azure or your on-premises networks.
+With the node and pod subnet selected, there's only one more address range to select, and that's the address range used by Kubernetes Services. As described previously, services provide a static virtual IP address that allows traffic to be routed to your pods. This address range is only ever used for routing traffic inside your cluster. It's never used or exposed outside of the cluster, so you need to select a private network address range that's not in use elsewhere in Azure or your on-premises networks.
 
 > [!TIP]
-> Because the Kubernetes service address range is never used outside of the cluster, it's possible to re-use this address range across multiple clusters
+> Because the Kubernetes service address range is never used outside of the cluster, it's possible to re-use this address range across multiple clusters.
 
-The rules for selecting a service address range are straightforward.
+The rules for selecting a service address range are straightforward:
 
-- It must not be within the IP address range of the virtual network used for your cluster
+- It must not be within the IP address range of the virtual network used for your cluster.
 - It must not be within the IP address range of any other virtual networks that are peered to the cluster network.
-- It must not overlap with any IP address range you use in on-premises networks
-- It must not be in the IP address ranges 169.254.0.0/16, 172.30.0.0/16, 172.31.0.0/16, or 192.0.2.0/24
+- It must not overlap with any IP address range you use in on-premises networks.
+- It must not be in the IP address ranges 169.254.0.0/16, 172.30.0.0/16, 172.31.0.0/16, or 192.0.2.0/24.
 
-You don't normally need many IP addresses for services within a cluster. Typically you'll have one service in front of a group of pods that run multiple replicas of an application. In our case, we have eight different services that form our application, so we'll only need eight service IP addresses. 
+You don't normally need many IP addresses for services within a cluster. Typically, you'll have one service in front of a group of pods that run multiple replicas of an application. In our case, we have eight different services that form our application, so we'll only need eight service IP addresses.
 
 Other services running in your cluster, such as an Ingress Controller or a Service Mesh might consume more service IP addresses. It's best to factor in some room for other services you could be using now or in the future.
 

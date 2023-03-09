@@ -1,0 +1,75 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.build-a-udp-echo-client.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Interactive questions that validate whether the learner achieved the learning objectives.
+  ms.date: 01/23/2023
+  author: edlamie80
+  ms.author: liydu
+  manager: lizross
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+quiz:
+  questions:
+    - content: 'Which of the following statements is an advantage of the User Datagram Protocol (UDP)?'
+      choices:
+        - content: 'It doesn’t need to use data packets.'
+          isCorrect: false
+          explanation: 'Incorrect, UDP provides the simplest form of data transfer between network devices.'
+        - content: 'It provides the simplest form of data transfer between network devices'
+          isCorrect: true
+          explanation: 'Correct, UDP provides the simplest form of data transfer between network devices.'
+        - content: 'Its sockets do not require a corresponding port.'
+          isCorrect: false
+          explanation: 'Incorrect, UDP provides the simplest form of data transfer between network devices.'
+        - content: 'Using UDP does not require that it is first enabled.'
+          isCorrect: false
+          explanation: 'Incorrect, UDP provides the simplest form of data transfer between network devices.'
+
+    - content: 'Which of the following statements is most correct?'
+      choices:
+        - content: 'A UDP port is a logical end point in the UDP protocol.'
+          isCorrect: false
+          explanation: 'Incorrect, all of the statements are correct.'
+        - content: 'To send or receive UDP data, the application must first create a UDP socket.'
+          isCorrect: false
+          explanation: 'Incorrect, all of the statements are correct.'
+        - content: 'A socket is made up of an IP Address and a port number.'
+          isCorrect: false
+          explanation: 'Incorrect, all of the statements are correct.'
+        - content: 'All of the above statements are correct.'
+          isCorrect: true
+          explanation: 'Correct, all of the above statements are correct.'
+
+    - content: 'When you built and ran ProjectUDPEchoClient, which output did you receive?'
+      choices:
+        - content: 'The ABCs were displayed repeatedly.'
+          isCorrect: true
+          explanation: 'Correct, the ABCs were displayed repeatedly.'
+        - content: 'The ABCs were displayed 20 times and then stopped.'
+          isCorrect: false
+          explanation: 'Incorrect, the ABCs were displayed repeatedly.'
+        - content: "The message 'This is a test' was displayed repeatedly."
+          isCorrect: false
+          explanation: 'Incorrect, the ABCs were displayed repeatedly.'
+        - content: "The message 'This is a test' was displayed 15 times and then stopped."
+          isCorrect: false
+          explanation: 'Incorrect, the ABCs were displayed repeatedly.'
+
+    - content: 'Which of the following services is used to send data?'
+      choices:
+        - content: "'nx_udp_socket_bind()'"
+          isCorrect: false
+          explanation: "Incorrect, 'nxd_udp_socket_send()' is used to send data."
+        - content: "'nxd_udp_socket_send()'"
+          isCorrect: true
+          explanation: "Correct, 'nxd_udp_socket_send()' is used to send data."
+        - content: "'nx_udp_port_send()'"
+          isCorrect: false
+          explanation: "Incorrect, 'nxd_udp_socket_send()' is used to send data."
+        - content: "'nx_udp_port_notify()'"
+          isCorrect: false
+          explanation: "Incorrect, 'nxd_udp_socket_send()' is used to send data."

@@ -4,9 +4,9 @@ In this Learn module, you'll deploy an Express.js (Node.js) app to Azure App Ser
 
 Suppose you're a web developer or DevOps engineer who needs to deploy a web app to Azure. You're an experienced developer, but you're new to Azure.
 
-You'll learn how to deploy and configure the Azure resources you need to securely deploy a web app. The web app is a rental property app used by a company to help its employees relocate when needed. The app displays properties, images of the properties, and property information.
+You'll learn how to deploy and configure the Azure resources you need to securely deploy a web app. The web app is a rental-property app a company uses to help its employees relocate when needed. The app displays properties, images of the properties, and property information.
 
-:::image type="content" source="../media/rental-app-website-browser.png" alt-text="Web browser that shows the main listings of a rental app.":::
+:::image type="content" source="../media/rental-app-website-browser.png" alt-text="Screenshot of a web browser that shows the main listings of a rental app.":::
 
 The rental property web app is built with Express.js. The user interface is created with simple JavaScript and served from the Express.js server. The web app uses fake data stored in a JSON file. The data is read in at runtime and kept in memory. The images are randomly generated.
 

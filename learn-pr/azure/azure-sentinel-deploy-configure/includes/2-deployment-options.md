@@ -16,7 +16,7 @@ Microsoft Sentinel uses machine learning and AI to perform:
 
 To onboard Microsoft Sentinel, you need to enable it, and then connect your data sources.
 
-Microsoft Sentinel comes with a number of connectors for Microsoft and other solutions that are available out of the box. There are connectors for:
+Microsoft Sentinel comes with several connectors for Microsoft and other solutions that are available out of the box. There are connectors for:
 
 - Defender for Cloud
 - Microsoft 365 sources, including Office 365
@@ -49,7 +49,7 @@ Follow these steps to enable Microsoft Sentinel:
 1. Sign in to the Azure portal.
 
 1. Select the subscription that Microsoft Sentinel is to be created in. This account should have:
-    
+
     1. Contributor permissions to the subscription where the Microsoft Sentinel workspace will be created.
 
     1. Contributor or Reader permissions on the resource group that the Microsoft Sentinel workspace will belong to.
@@ -70,16 +70,15 @@ Follow these steps to enable Microsoft Sentinel:
     | **Instance Details** |
     | Name  | A unique name you want to use for the Log Analytics workspace |
     | Region | From the dropdown list, select the geographical location that applies to the Sentinel service subscription |
-    
 
 1. Select **Next : Pricing tier**
-      
+
 1. Select the Pricing tier.
 
 1. Select **Review + Create**, wait for Azure to validate the settings for your Log Analytics workspace, and then select **Create**.
 
-1. It may take some time for your workspace to be created. When the workspace has deployed to your resource group, you will receive a notification, and the name of your workspace appears in the Workspace list. Select the Notification icon in the top right of the Azure toolbar, and then select **Pin to dashboard**.
- 
+1. It may take some time for your workspace to be created. When the workspace has deployed to your resource group, you'll receive a notification, and the name of your workspace appears in the Workspace list. Select the Notification icon in the top right of the Azure toolbar, and then select **Pin to dashboard**.
+
 1. On the **Pin to dashboard pane**, select **Create new**, provide a name for your dashboard, and then select **Add** at the bottom of the pane. The Microsoft Sentinel dashboard  for your workspace appears.
 
 1. In the left menu, select **Overview**.
@@ -88,7 +87,7 @@ Follow these steps to enable Microsoft Sentinel:
 
 The lead system engineer at Contoso discovered that after you connect security sources, you can monitor data feeds. 
 
-Let's look at the basic structure of this Sentinel workspace. Sentinel is a cloud-native real-time Security Information And Event Management (SIEM) engine with predefined charts, graphs, and automation tools. The layout provides a top row with a summary count of monitored events, alerts, and incidents and a drop-down selection to dynamically change reporting range. Below are 3 panels with predefined graphical charts for events and incidents. The left menu, described in the table below, has a rich assortment of built-in tools for customizing and configuring data connections.
+Let's look at the basic structure of this Sentinel workspace. Sentinel is a cloud-native real-time Security Information And Event Management (SIEM) engine with predefined charts, graphs, and automation tools. The layout provides a top row with a summary count of monitored events, alerts, and incidents and a drop-down selection to dynamically change the reporting range. Below are three panels with predefined graphical charts for events and incidents. The left menu, described in the table below, has a rich assortment of built-in tools for customizing and configuring data connections.
 
 |Menu Item|Description|
 |---|---|
@@ -97,7 +96,7 @@ Let's look at the basic structure of this Sentinel workspace. Sentinel is a clou
 |Logs|Predefined queries you can run for all aspects of your Azure workspace, from applications to virtual machines to virtual networks.|
 |News & guides|The starter pack for creating data connections, security alerts, and automation via built-in playbooks.|
 | **Threat management**  |
-|Incidents|Hands-on access to view all or selected the alerts and incidents you've configured.|
+|Incidents|Hands-on access to view all, or a selected group of the alerts and incidents you've configured.|
 |Workbooks|Monitor data by using Microsoft Sentinel workbooks.|
 |Hunting|Use the powerful hunting search-and-query tools that are based on the MITRE ATT&CK framework. Use these tools to proactively hunt for security threats across your organization's data sources.|
 |Notebooks|Select from dozens of community-supplied tutorials and templates in all categories of SIEM and create your own library.|
@@ -113,4 +112,4 @@ Let's look at the basic structure of this Sentinel workspace. Sentinel is a clou
 
 The following screenshot shows the **Microsoft Sentinel - Overview** pane. Microsoft Sentinel can display real time charts and graphs to help you understand events, alerts, and incidents for security operations.
 
-:::image type="content" source="../media/azure-sentinel-dashboard.png" alt-text="Screenshot of Microsoft Sentinel - Overview pane with several graphs and charts, including events and alerts over time, recent incidents, potential malicious events, and the total number of events, alerts, and incidents." lightbox="../media/azure-sentinel-dashboard.png"border="false":::
+:::image type="content" source="../media/azure-sentinel-dashboard.png" alt-text="Screenshot of Microsoft Sentinel showing events and alerts over time, recent incidents, potential malicious events, and the total number of events, alerts, and incidents." lightbox="../media/azure-sentinel-dashboard.png"border="false":::

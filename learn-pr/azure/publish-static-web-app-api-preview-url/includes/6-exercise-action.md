@@ -35,8 +35,11 @@ You can stay in your browser on your repository and watch the GitHub Action's pr
 
 1. Click on the **Actions** menu
 1. Under the Workflows menu, click on the **Azure Static Web Apps CI/CD** workflow item
-1. Select the latest (top) link in the action runs to the right
+:::image type="content" source="../media/track-actions-workflow.png" alt-text="Screenshot showing how to find the correct workflow.":::
+1. Select the top link in the action runs to the right
 1. Click the **Build and Deploy Job** link
+
+:::image type="content" source="../media/build-and-deploy-job.png" alt-text="Screenshot showing the build and deploy button on the workflow page.":::
 
 You can see the progress of your GitHub Action as it builds and publishes your web app and API.
 
@@ -52,25 +55,25 @@ Notice that the preview URL contains a hyphen followed by a number. The number m
 
 ::: zone pivot="angular"
 
-:::image type="content" source="../media/my-shopping-list-app-angular.png" alt-text="Your angular web app.":::
+:::image type="content" source="../media/my-shopping-list-app-angular.png" alt-text="Screenshot showing your angular web app.":::
 
 ::: zone-end
 
 ::: zone pivot="react"
 
-:::image type="content" source="../media/my-shopping-list-app-react.png" alt-text="Your react web app.":::
+:::image type="content" source="../media/my-shopping-list-app-react.png" alt-text="Screenshot showing your react web app.":::
 
 ::: zone-end
 
 ::: zone pivot="svelte"
 
-:::image type="content" source="../media/my-shopping-list-app-svelte.png" alt-text="Your svelte web app.":::
+:::image type="content" source="../media/my-shopping-list-app-svelte.png" alt-text="Screenshot showing your svelte web app.":::
 
 ::: zone-end
 
 ::: zone pivot="vue"
 
-:::image type="content" source="../media/my-shopping-list-app-vue.png" alt-text="Your vue web app.":::
+:::image type="content" source="../media/my-shopping-list-app-vue.png" alt-text="Screenshot showing your vue web app.":::
 
 ::: zone-end
 

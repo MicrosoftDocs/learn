@@ -9,7 +9,7 @@ metadata:
   author: warrenaj
   ms.author: v-anwarr  
   ms.topic: interactive-tutorial 
-  ms.prod: learning-bonsai
+  ms.service: bonsai
 durationInMinutes: 9
 content: |
   [!include[](includes/3-how-project-bonsai-works.md)]

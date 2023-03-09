@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan-implement-privileged-access.analyze-privileged-identity-management-audit-history-reports
+title: Analyze Privileged Identity Management audit history and reports
+metadata:
+  title: Analyze Privileged Identity Management audit history and reports
+  description: "Analyze Privileged Identity Management audit history and reports"
+  ms.date: 02/07/2023
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/8-analyze-privileged-identity-management-audit-history-reports.md)]

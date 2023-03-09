@@ -19,7 +19,6 @@ Security Center reports the following endpoint protection issues:
  -  **Endpoint protection not installed on Azure VMs** \- A supported antimalware solution isn’t installed on these Azure VMs.
  -  **Endpoint protection not installed on non-Azure computers** \- A supported antimalware solution isn’t installed on these non-Azure computers.
  -  Endpoint protection health issues:
-    
      -  **Signature out of date**. An antimalware solution is installed on these VMs and computers, but the solution doesn’t have the latest antimalware signatures.
      -  **No real time protection**. An antimalware solution is installed on these VMs and computers, but it isn’t configured for real-time protection. The service might be disabled, or Security Center might be unable to obtain the status because the solution isn’t supported.
      -  **Not reporting**. An antimalware solution is installed but not reporting data.

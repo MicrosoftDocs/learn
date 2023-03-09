@@ -3,9 +3,9 @@ uid: learn.azure.intro-to-arc-enabled-kubernetes.4-connect-kubernetes-arc
 metadata:
   title: Connect Kubernetes clusters to Azure Arc
   description: In this unit, you'll learn how to connect an Azure Arc-enabled Kubernetes cluster.
-  ms.date: 05/24/2022
-  author: micrum
-  ms.author: micrum
+  ms.date: 01/05/2023
+  author: JnHs
+  ms.author: jenhayes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom:
@@ -18,31 +18,31 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which version of Helm is required on your management computer to connect a Kubernetes cluster to Azure Arc?"
+  - content: "Which Azure RBAC built-in role allows you to connect a Kubernetes cluster to Azure Arc?"
     choices:
-    - content: "1"
+    - content: "Azure Arc Kubernetes Viewer"
       isCorrect: false
-      explanation: "The administrator needs to use Helm 3."
-    - content: "2"
+      explanation: "This role lets you view resources in a cluster/namespace, but doesn't allow you to connect a Kubernetes cluster to Azure Arc."
+    - content: "Azure Connected Machine Onboarding"
       isCorrect: false
-      explanation: "The administrator needs to use Helm 3."
-    - content: "3"
+      explanation: "This role lets you onboard a physical server or virtual machine to Azure Arc-enabled servers, but doesn't allow you to connect a Kubernetes cluster to Azure Arc"
+    - content: "Kubernetes Cluster - Azure Arc Onboarding"
       isCorrect: true
-      explanation: "The administrator needs to use Helm 3."
-    - content: "4"
+      explanation: "This role lets you connect a Kubernetes cluster to Azure Arc."
+    - content: "Azure Kubernetes Service Contributor Role"
       isCorrect: false
-      explanation: "This version isn't available yet."
-  - content: "What is the minimum version of Azure CLI required on your management computer to connect a Kubernetes cluster to Azure Arc?"
+      explanation: "This role allows read and write access to Azure Kubernetes Service (AKS) clusters, but doesn't allow you to connect a Kubernetes cluster to Azure Arc"
+  - content: "Which of the following is NOT required to connect a Kubernetes cluster to Azure Arc?"
     choices:
-    - content: "2.15"
+    - content: "Multiple Azure subscriptions"
       isCorrect: true
-      explanation: "You need Azure CLI version 2.15 or newer installed on your management computer in order to install the Azure Arc-enabled Kubernetes CLI extensions."
-    - content: "1.15"
+      explanation: "You don't need more than one Azure subscription in order to connect a Kubernetes cluster to Azure Arc."
+    - content: "An existing Kubernetes cluster"
       isCorrect: false
-      explanation: "You need at least version 2.15 of Azure CLI."
-    - content: "2.0"
+      explanation: "The Kubernetes cluster must already exist before you connect it to Azure Arc."
+    - content: "Outbound connectivity from the Kubernetes cluster"
       isCorrect: false
-      explanation: "You need at least version 2.15 of Azure CLI."
-    - content: "3.0"
+      explanation: "To connect a Kubernetes cluster to Azure Arc, the cluster must be able to connect to Azure and to the Microsoft container registry."
+    - content: "Helm 3"
       isCorrect: false
-      explanation: "You need at least version 2.15 of Azure CLI."
+      explanation: "Helm 3 must be installed on the management computer in order to connect a Kubernetes cluster to Azure Arc."

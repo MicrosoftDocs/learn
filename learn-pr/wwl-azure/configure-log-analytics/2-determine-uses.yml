@@ -3,14 +3,12 @@ uid: learn.wwl.configure-log-analytics.determine-uses
 title: Determine Log Analytics uses
 metadata:
   title: Determine Log Analytics uses
-  description: "Determine Log Analytics uses"
-  ms.date: 11/18/2022
+  description: "Determine Log Analytics uses and features"
+  ms.date: 02/28/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/2-determine-uses.md)]

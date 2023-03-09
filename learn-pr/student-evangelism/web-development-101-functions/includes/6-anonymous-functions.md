@@ -1,6 +1,6 @@
 As you've seen, you can call a function on demand by using its name and passing in any appropriate parameters. But sometimes you might want to allow another process to execute the functions you've created.
 
-Imagine creating a webpage with several timers. When a timer finishes, you want to run code to display a message. The problem is that you know the timer will expire but, because the timer length might change, you don't know exactly *when* it will expire. Consequently, you don't know exactly *when* you want your code to run. To support this type of a scenario, you can use a *callback*.
+Imagine creating a webpage with several timers. When a timer finishes, you want to run code to display a message. The problem is that you know the timer will expire but, because the timer length might change, you don't know exactly *when* it will expire. Therefore, you don't know exactly *when* you want your code to run. To support this type of a scenario, you can use a *callback*.
 
 ## Introducing callbacks
 
@@ -12,7 +12,7 @@ In programming, this situation can be represented by a callback. You've given yo
 
 You might have picked up on another key component about the timing of execution: you know your friend will complete the task, but you don't necessarily know *when*.
 
-Callbacks are frequently used in a variety of frameworks and libraries to indicate the code that you want to run when something happens or finishes. You'll use a callback to indicate what should happen when, for example, a user selects a button, a long-running operation finishes, or a timer expires.
+Callbacks are frequently used in various frameworks and libraries to indicate the code that you want to run when something happens or finishes. You'll use a callback to indicate what should happen when, for example, a user selects a button, a long-running operation finishes, or a timer expires.
 
 ## Use a callback
 

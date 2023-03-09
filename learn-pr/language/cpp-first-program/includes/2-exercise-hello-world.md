@@ -10,7 +10,7 @@ Later, you can use either the Visual Studio Code editor or the full Visual Studi
 
 1. In the terminal, run `code .` to open an editor.
 
-2. In the editor that opens on the right, write or paste in this code:
+2. In the sandbox editor that opens, write or paste in this code:
 
     ```cpp
     #include <iostream>
@@ -79,7 +79,7 @@ Next, you'll run the executable file the compiler created. You'll use a few line
    ```
 
    You should see the output "Hello World!".
-   
+
    ```output
    <user>@Azure:~$ code hello.cpp
    <user>@Azure:~$ g++ hello.cpp
@@ -100,7 +100,7 @@ Part of your code prints a line of output after it runs.
 1. Inside `main` in your code, add `//` at the start of the line of code you wrote. This syntax turns the line into a *code comment*, which the compiler ignores. Then, create these lines of code or paste in the following snippet:
 
     > [!TIP]
-    > To edit the previous hello.cpp, type `code hello.cpp` in the terminal.
+    > To edit the previous hello.cpp, type `code hello.cpp` in the terminal. After you are done editing the file, be sure and save your changes.
 
     ```cpp
     #include <iostream>
@@ -115,7 +115,7 @@ Part of your code prints a line of output after it runs.
     }
     ```
 
-1. Run the code again. This time, you should see the following output:
+1. Build and run the code again. This time, you should see the following output:
 
     ```output
     <user>@Azure:~$ code hello.cpp
