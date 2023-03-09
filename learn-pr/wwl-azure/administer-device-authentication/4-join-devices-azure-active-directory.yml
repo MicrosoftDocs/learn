@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.administer-device-authentication.join-devices-azure-ad
+uid: learn.wwl.administer-device-authentication.join-devices-azure-active-directory
 title: Join devices to Azure AD
 metadata:
   title: Join devices to Azure AD
   description: "Join devices to Azure AD"
-  ms.date: 03/07/2023
+  ms.date: 03/09/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
 durationInMinutes: 2
 content: |
-  [!include[](includes/4-join-devices-azure-ad.md)]
+  [!include[](includes/4-join-devices-azure-active-directory.md)]

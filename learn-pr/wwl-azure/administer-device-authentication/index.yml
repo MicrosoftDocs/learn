@@ -3,7 +3,7 @@ uid: learn.wwl.administer-device-authentication
 metadata:
   title: Manage device authentication
   description: "In this module, you will learn about device authentication and management in Azure Active Directory. MD-102"
-  ms.date: 03/07/2023
+  ms.date: 03/09/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
@@ -28,10 +28,10 @@ products:
 - azure
 units:
 - learn.wwl.administer-device-authentication.introduction
-- learn.wwl.administer-device-authentication.describe-azure-ad-join
-- learn.wwl.administer-device-authentication.examine-azure-ad-join-prerequisites-limitations-benefits
-- learn.wwl.administer-device-authentication.join-devices-azure-ad
-- learn.wwl.administer-device-authentication.manage-devices-joined-azure-ad
+- learn.wwl.administer-device-authentication.describe-azure-active-directory-join
+- learn.wwl.administer-device-authentication.examine-azure-active-directory-join-prerequisites-limitations-benefits
+- learn.wwl.administer-device-authentication.join-devices-azure-active-directory
+- learn.wwl.administer-device-authentication.manage-devices-joined-azure-active-directory
 - learn.wwl.administer-device-authentication.knowledge-check
 - learn.wwl.administer-device-authentication.summary
 badge:
