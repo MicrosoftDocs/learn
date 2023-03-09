@@ -20704,6 +20704,11 @@
       "source_path": "learn-pr/paths/csharp-first-steps/index.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/get-started-c-sharp-part-1/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/csharp-logic/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/get-started-c-sharp-part-3/",
+      "redirect_document_id": false
     }
   ]
 }
