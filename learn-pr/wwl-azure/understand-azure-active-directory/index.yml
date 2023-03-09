@@ -3,7 +3,7 @@ uid: learn.wwl.understand-azure-active-directory
 metadata:
   title: Understand Azure Active Directory
   description: "This module equips learners to describe Azure AD - a cloud-based identity and access management service. They'll compare it with AD DS, understand its role as a directory for cloud services, and learn about its security features. They'll also learn about Azure AD Domain Services."
-  ms.date: 03/08/2023
+  ms.date: 03/09/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
