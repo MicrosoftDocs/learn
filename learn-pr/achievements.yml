@@ -1592,3 +1592,18 @@ achievements:
   
     Once you complete this learning path, you will have a great foundation to build upon in subsequent C# Learning Paths.
   iconUrl: /training/achievements/csharp-first-steps.svg
+- uid: learn.languages.csharp-logic.trophy
+  type: trophy
+  title: Add logic to your applications with C#
+  summary: >-
+    Deepen your experience with C# logic and iteration statements, Boolean expressions, and code blocks in this Learning Path.
+  
+  
+    In this learning path, you'll:
+      - Build more complex and expressive Boolean expressions
+      - Use code blocks to control variable scope and the execution path of your code
+      - Branch the flow of code using the `switch-case` statement
+      - Iterate through a code block with the `for`, `while` and `do-while` statements
+  
+    Once you complete this learning path, you'll have a stronger grasp of implementing logic in your C# code.
+  iconUrl: /training/achievements/csharp-logic.svg
