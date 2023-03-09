@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Check your knowledge.
-  ms.date: 10/12/2022
+  ms.date: 03/08/2023
   author: AbdullahBell
   ms.author: abell
   ms.topic: interactive-tutorial
@@ -28,15 +28,15 @@ quiz:
       explanation: "That's incorrect. A DDoS Protocol attack doesn't target the L5 and L6 layers."
   - content: "Which Azure DDoS Protection service offers DDoS rapid response support?"
     choices:
-    - content: "DDoS Protection"
+    - content: "Azure DDoS Network Protection"
       isCorrect: true
-      explanation: "That's correct. DDoS Protection includes DDoS rapid response support."
+      explanation: "That's correct. DDoS Network Protection includes DDoS rapid response support."
     - content: "Azure DDoS infrastructure protection"
       isCorrect: false
       explanation: "That's incorrect. Azure DDoS infrastructure protection doesn't include DDoS rapid response support."
-    - content: "This service isn't offered with Azure DDoS infrastructure protection or DDoS Protection."
+    - content: "Azure DDoS IP Protection."
       isCorrect: false
-      explanation: "That's incorrect. DDoS Protection includes DDoS rapid response support."
+      explanation: "That's incorrect. Azure DDoS IP Protection doesn't include DDoS rapid response support."
   - content: "What should an administrator do with the data logged during a DDoS attack?" 
     choices:
     - content: "Discard this data when the attack is over."
