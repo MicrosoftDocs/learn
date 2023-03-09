@@ -40,7 +40,7 @@ Alerts are driven by conditions. Here you have two mutually exclusive options:
 * **Category and impact level**: In this option, you can choose between the categories of *Cost*, *Performance*, *Reliability*, and *Operational excellence*, with an impact level of (*High*, *Medium*, or *Low*). Both of these are optional configurations.
 * **Recommendation Type**: If you select recommendation type, you can choose the most appropriate option for your needs from the dropdown list. 
 
-:::image type="content" source="../media/3-create-alerts-scope-condition.png" alt-text="Screenshot showing the scope and condition sections of the dialog for creating an Advisor alert." lightbox="../media/3-advisor-alerts-scope-condition.png":::
+:::image type="content" source="../media/3-create-alerts-scope-condition.png" alt-text="Screenshot showing the scope and condition sections of the dialog for creating an Advisor alert." lightbox="../media/3-create-alerts-scope-condition.png":::
 
 You can also configure action groups. An action group is a collection of notification preferences defined by the *owner* of an Azure subscription. Azure Monitor, Azure Service Health and Azure Advisor use action groups to notify users that an alert has been triggered.
 
