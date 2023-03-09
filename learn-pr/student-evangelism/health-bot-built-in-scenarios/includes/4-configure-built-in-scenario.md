@@ -51,9 +51,9 @@ You can configure symptom checking and triage questions.
 
 You can configure title text for suggested care and possible causes.
 
-:::image type="content" source="../media/4-health-bot-medical-information.png" alt-text="Screenshot that shows the Medical Information tab.":::
-
 On the **Medical Information** tab, you can edit the responses for questions about conditions, symptoms, and online resources.
+
+:::image type="content" source="../media/4-health-bot-medical-information.png" alt-text="Screenshot that shows the Medical Information tab.":::
 
 ## Compliance
 
