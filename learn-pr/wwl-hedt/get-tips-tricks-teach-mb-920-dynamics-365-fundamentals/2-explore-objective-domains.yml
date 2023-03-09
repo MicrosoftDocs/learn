@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-tips-tricks-teach-mb-920-dynamics-365-fundamentals.explore-objective-domains
+title: Explore objective domains
+metadata:
+  title: Explore objective domains
+  description: "Explore objective domains"
+  ms.date: 03/09/2023
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+  ms.prod: dynamics-365
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-explore-objective-domains.md)]

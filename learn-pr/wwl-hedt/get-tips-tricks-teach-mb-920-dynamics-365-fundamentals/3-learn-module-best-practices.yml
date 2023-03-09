@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-tips-tricks-teach-mb-920-dynamics-365-fundamentals.learn-module-best-practices
+title: Learn module best practices
+metadata:
+  title: Learn module best practices
+  description: "Learn module best practices"
+  ms.date: 03/09/2023
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+  ms.prod: dynamics-365
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-learn-module-best-practices.md)]
