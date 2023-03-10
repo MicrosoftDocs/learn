@@ -38,7 +38,7 @@ This module and other Learn modules always assume the use of Helm v3. You can ru
 
 ## What is a Helm Chart?
 
-A Helm chart is a templated deployment package that describe a related set of Kubernetes resources. It contains all the information required to build and deploy the manifest files for an application to run on a Kubernetes cluster.
+A Helm chart is a templated deployment package that describes a related set of Kubernetes resources. It contains all the information required to build and deploy the manifest files for an application to run on a Kubernetes cluster.
 
 A Helm chart consists of several files and folders to describe the chart. Some of the components are required, and some are optional. What you choose to include is based on the apps configuration requirements. Here is a list of files and folders with the required items in bold.
 
