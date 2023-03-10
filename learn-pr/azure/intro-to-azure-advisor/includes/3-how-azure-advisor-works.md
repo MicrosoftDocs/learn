@@ -33,7 +33,7 @@ When Advisor detects a new recommendation, it's stored in the Azure activity log
 
 :::image type="content" source="../media/3-advisor-alert.png" alt-text="Screenshot showing the Alerts option in the main menu and the option to create a new advisor alert." lightbox="../media/3-advisor-alert.png":::
 
-You'll need to define a scope by selecting a subscription and, optionally, a resource group. 
+You need to define a scope by selecting a subscription and, optionally, a resource group. 
 
 Alerts are driven by conditions. Here you have two mutually exclusive options:
 
@@ -46,7 +46,7 @@ You can also configure action groups. An action group is a collection of notific
 
 Finally, you can also specify some important details such as an alert rule name and an optional description (optional). You can also choose whether the alert is enabled or not when you create it, and specify a resource group where the alert will be saved.
 
-:::image type="content" source="../media/3-create-alerts-action-groups.png" alt-text="Screenshot showing the action groups and alert details sections of the dialog for creating an Advisor alert.":::
+:::image type="content" source="../media/3-create-alerts-action-groups.png" alt-text="Screenshot showing the action groups and alert details sections of the dialog for creating an Advisor alert." lightbox="../media/3-create-alerts-action-groups.png":::
 
 ## Configure the recommendations summary
 
@@ -62,7 +62,7 @@ Choose a subscription and select the frequency, recommendation category, and lan
 * Recommendation category: Choose all or some of the categories *Reliability*, *Security*, *Performance*, *Operational excellence*, and *Cost*.
 * Language: Choose your preferred language from the dropdown list.
 
-You can also select an existing action group, or create a new one, in which the recommendations will be received. The last option allows you to name your digest and determine whether it's enabled or not. You can disable a recommendation digest if you want to pause the summaries.
+You can associate the digest with an existing action group, or create a new one, and give the digest a name. You can disable a recommendation digest if you want to pause the summaries.
 
 :::image type="content" source="../media/3-create-recommendation-digests.png" alt-text="Screenshot depicting the available options for configuring a recommendation digest." lightbox="../media/3-create-recommendation-digests.png":::
 
@@ -70,47 +70,49 @@ You can also select an existing action group, or create a new one, in which the 
 
 Let's explore the recommendation types in a little more detail.
 
-### Costs Recommendations
+### Costs recommendations
 
-Azure Advisor helps to identify idle and underutilized resources. You can get cost recommendations from the Cost tab on the Advisor dashboard. As an example, consider usage surrounding virtual machines. Advisor can make recommendations such as:
+Azure Advisor helps you to identify idle and underutilized resources. You can get cost recommendations from the **Cost** tab on the Advisor dashboard. As an example, consider usage surrounding virtual machines. Advisor can make recommendations such as:
 
-* Shut down of a virtual machine (VM) if it is not being utilized. Advisor can make this recommendation if it detects network utilization less than 2% over a seven-day period or a P95th of the maximum value of CPU utilization less than 3%.
-* Resize the VM to save resource utilization. Advisor will recommend a resize if the current load doesn't go above 80% utilization for non-user facing workloads. For user-facing workloads, the threshold is measured at above 40%.
+* Shutdown of a virtual machine (VM) if it's not being utilized. Advisor can make this recommendation if: 
+  * Network utilization is less than 2% over a seven-day period.
+  * P95th of the maximum value of CPU utilization summed across all cores is less than 3%.
+  * P100 of average CPU in last three days summed over all cores is less than or equal to 2%.
+* Resize the VM to save resource utilization. Advisor will recommend a resize if:
+  * The current load doesn't go above 80% utilization for non user-facing workloads.
+  * The current load doesn't go above 40% utilization for user-facing workloads.
 
-The estimate cost savings will be displayed for the recommended actions to help you make a decision on the recommended action.
+The estimated cost savings will be displayed for the recommended actions, to help you make a decision.
 
-### Security Recommendations
+### Security recommendations
 
-Security recommendations are integrated with Microsoft Defender for Cloud. You can get security recommendations from the Security tab on the Advisor dashboard.
+Security recommendations are integrated with Microsoft Defender for Cloud. You can get security recommendations from the **Security** tab on the Advisor dashboard.
 
-:::image type="content" source="../media/3-advisor-security.png" alt-text="A screenshot depicting some security recommendations for a subscription. Displayed information indicates impact (high, medium, or low), a description of the recommendation, the impacted resource, and a date-time stamp for when the recommendation was last updated.":::
+:::image type="content" source="../media/3-advisor-security.png" alt-text="Screenshot showing security recommendations for a subscription, with impact rated high, medium, or low." lightbox="../media/3-advisor-security.png:::
 
-### Reliability Recommendations
+### Reliability recommendations
 
-Azure Advisor helps you ensure and improve the continuity of your business-critical applications. You can get reliability recommendations from Advisor on the **Reliability** tab of the Advisor dashboard. Some of the reliability recommendations available with Advisor are:
+Azure Advisor helps you ensure and improve the continuity of your business-critical applications. You can get reliability recommendations from Advisor on the **Reliability** tab of the Advisor dashboard. Reliability checks include:
 
-* Check Point virtual network appliance - Advisor can check if your VM is running this image.
-* Ensuring application gateway fault tolerance.
-* Protection from accidental VM deletion.
-* Create Azure Service Health alerts.
-* Configure Traffic Manager endpoints for resiliency.
-* See the full list on the [Reliability Guide](/azure/advisor/advisor-high-availability-recommendations)
+* Version of Check Point network virtual appliance image.
+* Application gateway fault tolerance.
+* Virtual machines with no backup enabled.
+* Subscriptions without Azure Service Health alerts configured.
+* Traffic Manager profiles with only one endpoint.
+* See the full list in the [reliability guide](/azure/advisor/advisor-high-availability-recommendations)
 
-### Operational excellence Recommendations
+### Operational excellence recommendations
 
-Operational excellence recommendations in Azure Advisor can help you with:
+Operational excellence recommendations can be found on the **Operational excellence** tab of the Advisor dashboard. Operational excellence recommendations can help you with:
 
 * Process and workflow efficiency.
 * Resource manageability.
 * Deployment best practices.
-* You can get these recommendations on the Operational Excellence tab of the Advisor dashboard.
 
-Recommendations to ensure operational excellence on my subscriptions:
+:::image type="content" source="../media/3-advisor-operational-excellence.png" alt-text="Screenshot showing operational excellence recommendations for a subscription, with impact rated high, medium, or low." lightbox="../media/3-advisor-operational-excellence.png:::
 
-:::image type="content" source="../media/3-advisor-operational-excellence.png" alt-text="Screenshot depicting some operational excellence recommendations. These recommendations include the impact level, a description, the benefit of choosing the recommendation, and the impacted resources.":::
+### Performance recommendations
 
-### Performance Recommendations
+The performance recommendations, on the **Performance** tab, can help you improve the speed and responsiveness of your business-critical applications. 
 
-The performance recommendations in Azure Advisor can help improve the speed and responsiveness of your business-critical applications. You can get performance recommendations from Advisor on the Performance tab of the Advisor dashboard.
-
-Many of these recommendations are concerned with Traffic Manager performance, database performance for SQL Database, app service performance reliability, and managed disk I/O throttling, among many others. The entire list is available on the [Performance efficiency recommendation page](/azure/advisor/advisor-performance-recommendations).
+Many of these recommendations are concerned with Traffic Manager performance, database performance for SQL Database, app service performance and reliability, and managed disk I/O throttling. The full list is available on the [performance efficiency recommendation page](/azure/advisor/advisor-performance-recommendations).

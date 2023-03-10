@@ -1,6 +1,6 @@
 In a cloud environment, it's easy to create resources, explore features, and try everything that's offered. In the same way, it becomes easy to create these environments without taking into consideration some important best practices.
 
-The [Azure Well-Architected Framework](https://learn.microsoft.com/azure/architecture/framework/) describes five pillars of architectural excellence: reliability, security, cost optimization, operational excellence, and performance efficiency. Azure Advisor is a tool that can give you proactive, actionable, and personalized recommendations to help you track your cloud environment and usage, and follow best practices for the five pillars.
+The [Azure Well-Architected Framework](/azure/architecture/framework/index) describes five pillars of architectural excellence: reliability, security, cost optimization, operational excellence, and performance efficiency. Azure Advisor is a tool that can give you proactive, actionable, and personalized recommendations to help you track your cloud environment and usage, and follow best practices for the five pillars.
 
 :::image type="content" source="../media/1-advisor-overview.png" alt-text="Screenshot of the Azure portal showing the overview of cost, security, reliability, operational excellence and performance in Azure Advisor." lightbox="../media/1-advisor-overview.png":::
 
@@ -8,7 +8,7 @@ The [Azure Well-Architected Framework](https://learn.microsoft.com/azure/archite
 
 Imagine you're running a critical workload composed of different types of Infrastructure as a Service (IaaS) resources. The resources might include virtual machines and/or database servers. You might also have Platform as a Service (PaaS) resources like storage accounts, bastion hosts, DNS, or application gateways. The following diagram illustrates such an architecture:
 
-:::image type="content" source="../media/1-arch-iaas.png" alt-text="Diagram of an Azure reference architecture with DNS, storage account, and a virtual network hosting a web tier, data tier, and application gateway." lightbox="../media/1-arch-iaas.png" border="false":::
+:::image type="content" source="../media/1-arch-iaas.png" alt-text="Diagram of an Azure reference architecture with DNS, storage account, and a virtual network hosting a web tier, data tier, and application gateway." border="false":::
 
 ## What will we be doing?
 
