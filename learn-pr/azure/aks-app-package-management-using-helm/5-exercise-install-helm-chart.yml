@@ -2,7 +2,7 @@
 uid: learn.app-package-management-using-helm.exercise-install-helm-chart
 title: Exercise - Install a Helm chart
 metadata:
-  description: In this exercise, you'll install a pre-configured Helm chart for an ASP.NET Core web application.
+  description: In this exercise, you install a preconfigured Helm chart for an ASP.NET Core web application.
   title: Exercise - Install a Helm chart
   author: zr-msft
   ms.author: zarhoads
