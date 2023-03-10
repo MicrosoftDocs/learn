@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.execute-device-profiles.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "This unit is the knowledge check for the module, execute device profiles."
+  ms.date: 03/10/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "When a policy or an app deploys, Microsoft Intune performs a device check with Microsoft Intune services. If a device doesn't check in to get the policy after the first notification, how many attempts do a device have before being non-compliant?"
+    choices:
+    - content: "Five more times, then every 3 minutes for 30-minutes"
+      isCorrect: false
+      explanation: "Incorrect. This check-in frequency is for Windows PCs as enrolled devices. Try again."
+    - content: "Five more times, then every 15 minutes for six hours"
+      isCorrect: false
+      explanation: "Incorrect. This check-in frequency is for iOS devices. Try again."
+    - content: "Three more attempts, then follow the check-in frequency scheduled based on the device"
+      isCorrect: true
+      explanation: "Correct. If a device doesn't check in to get a policy, Intune will try three more times. If the device is offline, the device gets the policy during the next scheduled check-in frequency based on the platform."
+  - content: "Contoso's IT department has updated the Microsoft Intune policy settings to help ensure devices are correctly configured in order to access e-mail services. They've deployed this policy change across all devices. Which Microsoft Intune policy best defines this setting?"
+    choices:
+    - content: "Conditional Access Policies"
+      isCorrect: true
+      explanation: "Correct. With Conditional Access Policies, Contoso's IT department defines conditions and requirements, which the device must meet before it can access specified services."
+    - content: "Configuration Policies"
+      isCorrect: false
+      explanation: "Incorrect. With Configuration Policies, Contoso's IT department manages security settings and features on the device. Try again."
+    - content: "Corporate Device Enrollment Policies"
+      isCorrect: false
+      explanation: "Incorrect. With Corporate Device Enrollment Policies, Contoso's IT department defines enrollment of corporate owned devices. Try again."

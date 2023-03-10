@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.execute-device-profiles.create-device-profiles
+title: Create device profiles
+metadata:
+  title: Create device profiles
+  description: "This unit covers the process to create device profiles."
+  ms.date: 03/10/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-create-device-profiles.md)]

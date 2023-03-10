@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.execute-device-profiles.create-custom-device-profile
+title: Create a custom device profile
+metadata:
+  title: Create a custom device profile
+  description: "This unit covers how to create a custom device profile."
+  ms.date: 03/10/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-create-custom-device-profile.md)]
