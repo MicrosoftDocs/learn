@@ -1,4 +1,4 @@
-You're familiar with the basic features and benefits of Azure Web Application Firewall. Now let's examine how Azure Web Application Firewall works. In particular, let's consider how features such as core rule sets and rule groups allow Azure Web Application Firewall to help protect web apps from common exploits. This information will help you evaluate whether Azure Web Application Firewall is the right solution for your company.
+You're familiar with the basic features and benefits of Azure Web Application Firewall. Now let's examine how Azure Web Application Firewall works. In particular, let's consider how features such as core rule sets and rule groups allow Azure Web Application Firewall to help protect web apps from common exploits. This information helps you evaluate whether Azure Web Application Firewall is the right solution for your company.
 
 ## Sanitizing input
 
@@ -14,7 +14,7 @@ When an authorized user fills in the form and selects **Sign In**, a web app scr
 
 `sql = "SELECT * FROM users WHERE username='" + userName + "' AND password='" + userPassword + "'"`
 
-For example, if the username is `support` and the password is `1234ABCD`, then the `sql` variable will have the following value:
+For example, if the username is `support` and the password is `1234ABCD`, then the `sql` variable has the following value:
 
 `SELECT * FROM users WHERE username='support' AND password='1234ABCD'`
 
@@ -28,13 +28,13 @@ On many SQL systems, the double dashes (`--`) mark the start of a comment. Every
 
 `SELECT * FROM users WHERE username='admin'`
 
-Assuming there's a user named `admin`, this command will sign in the attacker as the admin user; a serious breach!
+Assuming there's a user named `admin`, this command signs in the attacker as the admin user; a serious breach!
 
 :::image type="content" source="../media/3-how-web-application-firewall-works.png" alt-text="Network diagram depicting two sign-in attempts, with Azure Web Application Firewall allowing the authorized sign-in and denying the unauthorized sign-in." border="false":::
 
 The preceding example is an instance of an exploit called *SQL injection*. Attackers can take advantage of SQL injection and other exploits in web apps that trust all input.
 
-Azure Web Application Firewall creates a barrier of non-trust between a web app and its user input. Azure Web Application Firewall assumes that all input is potentially malicious, so it *sanitizes* that input.
+Azure Web Application Firewall creates a barrier of nontrust between a web app and its user input. Azure Web Application Firewall assumes that all input is potentially malicious, so it *sanitizes* that input.
 
 Sanitizing the input means different things depending on the context. For example, sanitizing the input can mean removing clearly dangerous text elements, such as SQL comment indicators. However sanitization occurs, the result is input that can do no harm to the web app or its backend data.
 
@@ -51,7 +51,7 @@ Sanitizing the input means different things depending on the context. For exampl
 
 Azure Web Application Firewall thwarts known exploits by applying rules to an app's incoming HTTP/HTTPS requests. A rule is a firewall code designed to recognize and prevent a particular threat.
 
-The rules that Azure Web Application Firewall uses to detect and block common vulnerabilities are mostly managed rules that belong to various rule groups. Each rule group is a collection of rules and a managed rule set is collection of rule groups. Managed rule sets include Microsoft Threat Intelligence based rule groups, CVE( Common Vulnerabilities and Exposures) rulegroups, and core rule groups (CRS).
+The rules that Azure Web Application Firewall uses to detect and block common vulnerabilities are mostly managed rules that belong to various rule groups. Each rule group is a collection of rules and a managed rule set is collection of rule groups. Managed rule sets include Microsoft Threat Intelligence based rule groups, CVE (Common Vulnerabilities and Exposures) rule groups, and core rule groups (CRS).
 
 The CRS rules are defined by the Open Web Application Security Project (OWASP).
 Microsoft's team of security experts codes, maintains, and updates managed rules. The rules are modified or added to as needed. When a managed rule changes, Microsoft updates Azure Web Application Firewall automatically and without app downtime.
@@ -68,7 +68,7 @@ Bot rules identify bad bots, good bots, and unknown bots based on Microsoft Thre
 
 ## Custom rules
 
-The managed rules Azure Web Application Firewall offers might not cover a specific threat that your web applications are experiencing. If this is the case, you can create a custom rule. You can build custom rules by creating conditions that include the following components:
+The managed rules Azure Web Application Firewall offers might not cover a specific threat that your web applications are experiencing. If so, you can create a custom rule. You can build custom rules by creating conditions that include the following components:
 
 - Match type such as geo location, IP address, size, string
 - Match variables such as RequestHeader, QueryString, RequestUri, RequestBody, Cookies, or PostArgs
@@ -90,13 +90,13 @@ Azure Web Application Firewall custom rules control access to web applications b
 
 The IP restriction custom rule lets you control access to your web applications. It does this by specifying an IP address or an IP address range in Classless Inter-Domain Routing(CIDR) format.
 
-By default, your web application is accessible from the Internet. However sometimes, you want to limit access to clients from a list of known IP address or IP address ranges. You can achieve this by creating an IP matching rule that blocks access to your web app from Ips not listed in the custom rule.
+By default, your web application is accessible from the Internet. However sometimes, you want to limit access to clients from a list of known IP address or IP address ranges. You can achieve this by creating an IP matching rule that blocks access to your web app from IP addresses s not listed in the custom rule.
 
 ## Rate limiting
 
 Azure Web Application Firewall custom rules support rate limiting to control access based on matching conditions and the rates of incoming requests.
 
-This custom rule enables you to detect abnormally high levels of traffic and block some types of application layer denial of service attacks. Rate limiting also protects you against clients that have accidentally been misconfigured to send large volumes of requests in a short time period. The custom rule is defined by the rate limit counting duration (either one minute or five minute intervals) and the rate limit threshold (the maximum number of requests allowed in the rate limit duration).
+This custom rule enables you to detect abnormally high levels of traffic and block some types of application layer denial of service attacks. Rate limiting also protects you against clients that have accidentally been misconfigured to send large volumes of requests in a short time period. The custom rule is defined by the rate limit counting duration (either one minute or five-minute intervals) and the rate limit threshold (the maximum number of requests allowed in the rate limit duration).
 
 ## Detection mode vs prevention mode
 
@@ -110,11 +110,11 @@ In detection mode:
 - **False positives**: Legitimate requests that the firewall flags as malicious.
 - **False negatives**: Malicious requests that the firewall allows.
 
-Once the app is ready to be deployed, you'll switch to prevention mode.
+Once the app is ready to be deployed, you switch to prevention mode.
 
 ## Using Microsoft Sentinel with Azure WAF
 
-Azure WAF combined with Microsoft Sentinel can provide security information event management for WAF resources.  Using Microsoft Sentinel, you can access the WAF data connector to Sentinel using Log Analytics.  The WAF workbooks shows analytics for WAF on Azure Front Door and WAF on Application Gateway. The WAF analytic rules detect SQLi and XSS attacks from AFD and Application Gateway logs. The WAF Notebook allows investigation of SQL injection incidents on Azure Front Door.
+Azure WAF combined with Microsoft Sentinel can provide security information event management for WAF resources.  Using Microsoft Sentinel, you can access the WAF data connector to Sentinel using Log Analytics.  The WAF workbooks show analytics for WAF on Azure Front Door and WAF on Application Gateway. The WAF analytic rules detect SQLi and XSS attacks from AFD and Application Gateway logs. The WAF Notebook allows investigation of SQL injection incidents on Azure Front Door.
 
 :::image type="content" source="../media/3-waf-sentinel-1.png" alt-text="Screenshot showing Sentinel WAF settings.":::
 
