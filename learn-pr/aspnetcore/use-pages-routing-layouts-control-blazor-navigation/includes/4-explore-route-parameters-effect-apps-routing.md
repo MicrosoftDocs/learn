@@ -112,7 +112,7 @@ Now suppose the user tried to specify two favorites by requesting the URI `http:
 
 <h1>Choose a Pizza</h1>
 
-<p>Your favorites pizza are: @Favorites</p>
+<p>Your favorite pizzas are: @Favorites</p>
 
 @code {
 	[Parameter]
