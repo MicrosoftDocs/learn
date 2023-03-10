@@ -1,0 +1,37 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-modify-content.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/25/2023
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which method finds the next index of either the `-` char, the `=` char, or the `_` char?"
+    choices:
+    - content: "`IndexOfAny()`"
+      isCorrect: true
+      explanation: "Correct. Use `IndexOfAny()` to retrieve the next index for any of several chars in a string."
+    - content: "`Remove()`"
+      isCorrect: false
+      explanation: "Incorrect. `Remove()` method won't find an index."
+    - content: "`IndexOf()`"
+      isCorrect: false
+      explanation: "Incorrect. `IndexOf()` could be used to find the position of a single char in a string, but not any of several chars."
+  - content: "What is a constant variable?"
+    choices:
+    - content: "A magic string or number."
+      isCorrect: false
+      explanation: "Incorrect. A constant might be used to replace a magic string or number, but they aren't the same thing."
+    - content: "A variable whose name must match its value."
+      isCorrect: false
+      explanation: "Incorrect. A constant's value is not constrained by its name."
+    - content: "A value that once initialized can never be changed."
+      isCorrect: true
+      explanation: "Correct. A constant variable can never be changed, once initialized."

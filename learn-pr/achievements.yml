@@ -1412,6 +1412,11 @@ achievements:
   title: Introduction to Speech-to-text
   summary: Speech-to-text enables the real-time transcription of audio streams into text.
   iconUrl: /training/achievements/intro-to-speech-to-text.svg
+- uid: learn.build-dotnet-app-cosmos-db-sql-api.badge
+  type: badge
+  title: Guided project - Build an app that queries and adds data to Azure Cosmos DB SQL API
+  summary: This module walks through connecting to Azure Cosmos DB SQL API to create and query container items from a .NET console application.
+  iconUrl: /training/achievements/build-dotnet-app-cosmos-db-sql-api.svg
 - uid: learn.azure.intro-to-text-to-speech.badge
   type: badge
   title: Introduction to Text-to-speech
@@ -1552,3 +1557,53 @@ achievements:
   
     - Meeting a broad set of regulatory and compliance standards on a trusted cloud platform.
   iconUrl: /training/achievements/azure-sfa-generalist-path.svg
+- uid: learn.wwl.design-for-high-availability.badge
+  type: badge
+  title: Design for high availability
+  summary: Azure Architects design and recommend highly available solutions.
+  iconUrl: /training/achievements/availability-design.svg
+- uid: learn.languages.csharp-data.trophy
+  type: trophy
+  title: Work with data in C#
+  summary: >-
+    Dive deeper into data and types, learning how to manipulate string and numeric data.
+  
+  
+    In this learning path, you'll:
+      - Choose the correct data type for the type of data you need to work with
+      - Cast and convert data from one type to another
+      - Modify string data, formatting it for display or changing the content of the string
+      - Manipulate arrays, adding, removing, and sorting data
+  
+    Once you complete this learning path, you'll take firm control of the data in your code.
+  iconUrl: /training/achievements/csharp-data.svg
+- uid: learn.languages.csharp-first-steps.trophy
+  type: trophy
+  title: Take your first steps with C#
+  summary: >-
+    Interested in learning a programming language but aren't sure where to start?  Start here!  Learn the basic syntax and thought processes required to build simple applications using C#.
+  
+  
+    In this learning path, you'll:
+      - Write your first lines of C# code
+      - Store and manipulate data to modify its type and appearance
+      - Execute built-in functionality available from libraries of code
+      - Add logic to your code to enable complex business functionality
+  
+    Once you complete this learning path, you will have a great foundation to build upon in subsequent C# Learning Paths.
+  iconUrl: /training/achievements/csharp-first-steps.svg
+- uid: learn.languages.csharp-logic.trophy
+  type: trophy
+  title: Add logic to your applications with C#
+  summary: >-
+    Deepen your experience with C# logic and iteration statements, Boolean expressions, and code blocks in this Learning Path.
+  
+  
+    In this learning path, you'll:
+      - Build more complex and expressive Boolean expressions
+      - Use code blocks to control variable scope and the execution path of your code
+      - Branch the flow of code using the `switch-case` statement
+      - Iterate through a code block with the `for`, `while` and `do-while` statements
+  
+    Once you complete this learning path, you'll have a stronger grasp of implementing logic in your C# code.
+  iconUrl: /training/achievements/csharp-logic.svg

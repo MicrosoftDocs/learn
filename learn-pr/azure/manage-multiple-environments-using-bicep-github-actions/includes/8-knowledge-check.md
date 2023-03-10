@@ -1,13 +1,13 @@
 Consider the following workflow definition:
 
-*.github/workflows/workflow.yml*:
+_.github/workflows/workflow.yml_:
 
 ```yaml
 name: workflow
 
-on: 
+on:
   push:
-    branches: 
+    branches:
       - main
   workflow_dispatch:
 
@@ -32,7 +32,7 @@ jobs:
       subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 ```
 
-*.github/workflows/deploy.yml*:
+_.github/workflows/deploy.yml_:
 
 ```yaml
 name: deploy
@@ -56,7 +56,7 @@ jobs:
     environment: ${{ inputs.environmentType }}
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - uses: azure/login@v1
       with:
         client-id: ${{ secrets.AZURE_CLIENT_ID }}
@@ -71,4 +71,4 @@ jobs:
         parameters: deploy/parameters.${{ inputs.environmentName }}.json
 ```
 
-The Git repository's *deploy* folder also contains the Bicep file and parameter files.
+The Git repository's _deploy_ folder also contains the Bicep file and parameter files.

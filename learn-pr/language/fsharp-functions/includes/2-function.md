@@ -77,7 +77,7 @@ let add a b = a + b
 let concat = add "hello" "world" // will work
 ```
 
-The compiler sees that the first use of the function is made with strings and concludes that the parameter type is string. So, the type is inferred by context and first use.
+The compiler sees that the first use of the function is made with strings and concludes that the parameter type is string. So, context and first use infer the type.
 
 ### Explicit types
 
@@ -104,4 +104,4 @@ let convert (a:string) :int =
     int a
 ```
 
-Now the parameter is enclosed by parentheses, as shown in `(a:string)`. The return type is the last `:<type>` annotation to happen, which is `:int`. F# is clever enough to figure out most scenarios, but sometimes you need to help the code by being more explicit. Another benefit to adding types is that it makes it easier for another developer to figure out what's going on.
+Now parentheses enclose the parameter, as shown in `(a:string)`. The return type is the last `:<type>` annotation to happen, which is `:int`. F# is clever enough to figure out most scenarios, but sometimes you need to help the code by being more explicit. Another benefit to adding types is that it makes it easier for another developer to figure out what's going on.

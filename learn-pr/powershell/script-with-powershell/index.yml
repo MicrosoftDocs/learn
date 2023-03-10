@@ -22,7 +22,7 @@ levels:
 roles:
   - developer
 products:
-  - vs
+  - azure-powershell
 prerequisites: |
   - Basic familiarity with using a command-line shell like Command Prompt or Git Bash
   - Visual Studio Code 

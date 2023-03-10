@@ -4,10 +4,11 @@ title: Exercise - Work with data to predict missing values
 metadata:
   title: Exercise - Work with data to predict missing values
   description: Exercise unit about predicting missing values in machine learning
-  ms.date: 05/25/2021
+  ms.date: 02/27/2023
   author: TomReidNZ
   ms.author: jasdeb
   ms.topic: interactive-tutorial
+  ms.reviewer: franksolomon
   ms.prod: learning-azure
 durationInMinutes: 8
 sandbox: true

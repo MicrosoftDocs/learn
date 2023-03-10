@@ -20,7 +20,7 @@ Recognizing the economic transformation potential of AI, many governments have a
 
 The recommendations, developed by an AI expert group that included representatives from academia, civil society, trade unions, business, and governments from around the world, clearly demonstrated the value of multistakeholder consultation in policy development. These recommendations are high-level principles, intended to foster trust and shape the continuing development of AI to be more trustworthy. They aren't prescriptive in ways that can restrict innovation.
 
-As more countries adopt the principles, it's hoped they'll lead to development of AI systems that warrant the trust of individuals and society, enabling broader adoption and realization of the transformative potential of AI. The OECD also included five recommendations on national policies and international cooperation for trustworthy AI.
+As more countries/regions adopt the principles, it's hoped they'll lead to development of AI systems that warrant the trust of individuals and society, enabling broader adoption and realization of the transformative potential of AI. The OECD also included five recommendations on national policies and international cooperation for trustworthy AI.
 
 The EU High Level Expert Group on AI also published its Ethics Guidelines on Artificial Intelligence in June 2019 and recommendations to update the joint coordinated plan on AI at the end of 2019.<sup>8</sup>
 

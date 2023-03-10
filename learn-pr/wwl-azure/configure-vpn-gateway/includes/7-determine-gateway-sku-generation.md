@@ -1,3 +1,4 @@
+
 When you create a virtual network gateway, you need to specify the gateway SKU to use. Select a SKU that meets your business requirements. Consider criteria such as the types of workloads you need to support, your expected throughputs, the necessary features, and your desired SLAs.
 
 The following tables provide sample gateway SKUs that are available for implementation. Because the Basic SKU is considered a legacy SKU, samples aren't shown for this option. The tables identify the following information for each SKU type and generation:

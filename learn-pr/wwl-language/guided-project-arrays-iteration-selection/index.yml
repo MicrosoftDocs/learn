@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.wwl.guided-project-arrays-iteration-selection
+metadata:
+  title: Guided project - Develop foreach and if-elseif-else structures to process array data in C#
+  description: "Gain experience developing a console app that implements arrays, foreach loops, and if statements to achieve app specifications."
+  ms.date: 03/06/2023
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Guided project - Develop foreach and if-elseif-else structures to process array data in C#
+summary: Gain experience developing a console app that implements arrays, foreach loops, and if statements to achieve app specifications.
+abstract: |
+  In this module, you'll practice how to:
+  - Use Visual Studio Code to develop a C# console application that uses foreach loops to access array data.
+  - Use if statements to evaluate conditions and create code branches.
+prerequisites: |
+  *   Experience using Visual Studio Code to develop, build, and run C# console applications that include console I/O and access the methods of .NET classes.
+  *   Experience using if statements in C# to evaluate an expression and branch code accordingly.
+  *   Experience using a foreach loop to access elements of array variables.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- dotnet
+- vs-code
+subjects:
+- development-tools
+units:
+- learn.wwl.guided-project-arrays-iteration-selection.introduction
+- learn.wwl.guided-project-arrays-iteration-selection.prepare
+- learn.wwl.guided-project-arrays-iteration-selection.exercise-create-arrays-foreach-loops
+- learn.wwl.guided-project-arrays-iteration-selection.exercise-construct-nested-loops
+- learn.wwl.guided-project-arrays-iteration-selection.exercise-implement-selection-statements
+- learn.wwl.guided-project-arrays-iteration-selection.knowledge-check
+- learn.wwl.guided-project-arrays-iteration-selection.summary
+badge:
+  uid: learn.wwl.guided-project-arrays-iteration-selection.badge

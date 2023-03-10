@@ -1,3 +1,4 @@
+
 Another option for backing up your virtual machines is to use System Center Data Protection Manager (DPM) or Microsoft Azure Backup Server (MABS). You can use these services to back up specialized workloads, virtual machines, or files, folders, and volumes. Specialized workloads can include data from Microsoft SharePoint, Microsoft Exchange, and SQL Server.
 
 :::image type="content" source="../media/system-center-76153528.png" alt-text="Illustration that shows workloads, virtual machines, and files being backed up to Azure by using System Center DPM or MABS." border="false":::

@@ -1,3 +1,4 @@
+
 Azure Backup provides independent and isolated backups to guard against unintended destruction of the data on your virtual machines.
 
 In this module, you identified features and usage cases for different Azure backup methods. You learned how to configure Azure managed disks snapshots and Azure Backup options. You explored how to implement Azure virtual machine backup and restore, including _soft delete_. You discovered how to complete site-to-site recovery by using Azure Site Recovery. You compared the Microsoft Azure Recovery Services (MARS) agent for Azure Backup and the Microsoft Azure Backup Server (MABS).

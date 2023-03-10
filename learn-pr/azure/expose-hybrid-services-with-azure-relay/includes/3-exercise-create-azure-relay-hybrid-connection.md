@@ -2,7 +2,7 @@ Before your apps can use Azure Relay to exchange messages, you must create and c
 
 In your financial organization, for the credit-checking service, your developers use hybrid connections. You want to create a relay that supports these connections. You also want to obtain the security credentials that your apps need to connect.
 
-In this unit, you'll create an Azure Relay namespace and then store the primary key and connection string for later use in your app code.
+In this unit, you create an Azure Relay namespace and then store the primary key and connection string for later use in your app code.
 
 ## Create a namespace in Azure Relay
 
@@ -10,7 +10,9 @@ Let's start by creating a new Azure Relay namespace.
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), in the left pane, select **Create a resource**.
 
-1. In the **Search the Marketplace** search box, search for and select **Relays**. The **Relays** panel appears.
+1. In the **Search the Marketplace** search box, search for and select **Relay**. Select the marketplace card for **Relay**, and the **Relay** panel appears.
+
+   :::image type="content" source="../media/3-relay-panel.png" alt-text="Screenshot showing the top portion of the Relay panel with the logo and Create button.":::
 
 1. Select **Create**. The **Create namespace** panel appears.
 
@@ -38,9 +40,9 @@ Azure Relay helps maintain security by requiring applications to supply an acces
 
 1. In the left menu pane, under **Settings**, select **Shared access policies**, and then select the **RootManageSharedAccessKey** policy. The **SAS Policy: RootManageSharedAccessKey** panel appears.
 
-    ![Screenshot of getting the access key for the relay.](../media/3-obtain-access-key.png)
+   :::image type="content" source="../media/3-obtain-access-key.png" alt-text="Screenshot of the SAS Policy: RootManageSharedAccessKey panel showing how to get the access key  connection string for the relay.":::
 
-1. To save the primary key and primary connection string, do the following:
+1. To save the primary key and primary connection string, follow these steps:
   
    a. On the **Primary Key** box, select the **Copy to clipboard** button.  
    b. In Notepad or another text editor, paste the key.  
@@ -56,6 +58,6 @@ For your credit-checking web service, you want to use hybrid connections, not Wi
 
 1. Select **+ Hybrid Connection**. The **Create Hybrid Connection** panel appears.
 
-1. In the **Name** box, enter **creditcheckconnection**. Leave **Requires Client Authentication** selected, and then select **Create**.
+1. In the **Name** box, enter **CreditCheckConnection**. Leave **Requires Client Authentication** selected, and then select **Create**.
 
 You've completed the configuration of the relay in Azure. Apps can exchange messages through the relay when they make the right connection to it.

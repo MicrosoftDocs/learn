@@ -1,13 +1,13 @@
-Now let's put some of the data analysis principles and techniques you've learned into action. In this lab you'll use Excel Online to analyze and visualize data.
+Now let's put some of the data analysis principles and techniques you've learned into action. In this lab, you'll use Excel Online to analyze and visualize data.
 
-In this lab, you will analyze Rosie's lemonade sales, and create visualizations to help you gain insights from the data.
+In this lab, you analyze Rosie's lemonade sales, and create visualizations to help you gain insights from the data.
 
 ## Before you start
 
 > [!NOTE]
 > If you have completed the previous module in this learning path, you can skip the **Before you start** section.
 
-If you do not already have a Microsoft account (for example a `hotmail.com`, `live.com`. or `outlook.com` account), sign up for one at [https://signup.live.com](https://signup.live.com).
+If you don't already have a Microsoft account (for example a `hotmail.com`, `live.com`. or `outlook.com` account), sign up for one at [https://signup.live.com](https://signup.live.com).
 
 ### Upload the workbook to OneDrive
 
@@ -15,7 +15,7 @@ If you do not already have a Microsoft account (for example a `hotmail.com`, `li
 
     :::image type="content" source="../media/one-drive.png" alt-text="Screenshot of One Drive My Files folder." lightbox="../media/one-drive.png":::
 
-2. On the **&#65291; New** menu, click **Folder** to create a new folder. You can name this anything you like, for example **DAT101**. When your new folder appears, click it to open it.
+2. On the **&#65291; New** menu, select **Folder** to create a new folder. You can name this anything you like, for example **DAT101**. When your new folder appears, select it to open it.
 3. In your new empty folder, on the **&#10514; Upload** menu, click **Files**. Then when prompted, in the **File name** box, enter the following address (you can copy and paste it from here!):
 
     ```
@@ -36,17 +36,17 @@ If you do not already have a Microsoft account (for example a `hotmail.com`, `li
 
     :::image type="content" source="../media/lemonade-workbook.png" alt-text="Screenshot of Lemonade workbook in Excel." lightbox="../media/lemonade-workbook.png":::
 
-2. The dates in column **A** may be too wide to be displayed, so the cells may contain ***#######*** as shown above. To see the dates, double-click the line between the **A** and **B** column headers. The dates will then be shown in the format for the locale associated with your Microsoft account. For example, in the following image, the dates are shown in UK format (*dd/MM/yyyy*).
+2. The dates in column **A** may be too wide to be displayed, so the cells may contain ***#######*** as previously shown. To see the dates, double-click the line between the **A** and **B** column headers. The dates are now shown in the format for the locale associated with your Microsoft account. For example, in the following image, the dates are shown in UK format (*dd/MM/yyyy*).
 
     :::image type="content" source="../media/widened-column.png" alt-text="Screenshot of column A widened to show dates." lightbox="../media/widened-column.png":::
 
 ## Exercise 1: Analyze data with a PivotTable
 
-PivotTables are an excellent way to *slice and dice* data, summarizing numeric measures by one or more dimensions. In this exercise, you will use a PivotTable to view the lemonade data, aggregated in various ways.
+PivotTables are an excellent way to *slice and dice* data, summarizing numeric measures by one or more dimensions. In this exercise, you'll use a PivotTable to view the lemonade data, aggregated in various ways.
 
 ### Create a PivotTable
 
-1. If you have not already done so, in your web browser, navigate to [https://onedrive.live.com](https://onedrive.live.com), and sign in using your Microsoft account credentials. Then open the **Lemonade.xlsx** workbook in the folder where you uploaded it in the **Before you start** section. Your workbook should look like this:
+1. If you haven't already done so, in your web browser, navigate to [https://onedrive.live.com](https://onedrive.live.com), and sign in using your Microsoft account credentials. Then open the **Lemonade.xlsx** workbook in the folder where you uploaded it in the **Before you start** section. Your workbook should look like this:
 
     :::image type="content" source="../media/conditional-bottom-ten.png" alt-text="Screenshot of Lemonade workbook in Excel Online.":::
 
@@ -120,7 +120,7 @@ It can often be easier to identify trends and relationships in data by creating 
 
     :::image type="content" source="../media/new-sheet-sales-date-temp.png" alt-text="Screenshot of a new worksheet showing sales and temperature totals by date.":::
 
-7. Select the **Date** and **Sales** data, including the headers (but **not** the temperature data). Then on the **Insert** tab of the ribbon, in the **Line** drop-down list, click the first line chart format. Excel inserts a line chart like this:
+7. Select the **Date** and **Sales** data, including the headers (but **not** the temperature data). Then on the **Insert** tabs of the ribbon, in the Line drop-down list, click the first line chart format. Excel inserts a line chart like this:
 
     :::image type="content" source="../media/sales-line-chart.png" alt-text="Screenshot of a line chart showing sales by date.":::
 
@@ -156,7 +156,7 @@ It can often be easier to identify trends and relationships in data by creating 
 
     :::image type="content" source="../media/average-revenue-column-chart.png" alt-text="Screenshot of a column chart showing average revenue by day.":::
 
-    At first glance this chart appears to show some significant variation between average revenue of different days of the week; with revenue on Thursdays much higher than on Sundays. However, look more closely at the scale on the vertical (Y) axis – The difference is less than 30 cents.
+    At first glance, this chart appears to show some significant variation between average revenue of different days of the week; with revenue on Thursdays much higher than on Sundays. However, look more closely at the scale on the vertical (Y) axis – The difference is less than 30 cents.
 
 5. Select the column chart, and on the **Chart** tab of the ribbon, in the **Pie** drop-down list select the **2D Pie chart** format. The chart changes to a pie chart like this:
 
@@ -201,7 +201,7 @@ It can often be easier to identify trends and relationships in data by creating 
 
     :::image type="content" source="../media/rainfall-sales-scatter-plot.png" alt-text="Screenshot of a scatter plot showing total rainfall by sales.":::
  
-    This plot seems to indicate some kind of relationship between rainfall and sales, with sales falling as rainfall increases. However, the line formed by the plots is curved. This often means there is a non-linear, possibly logarithmic relationship.
+    This plot seems to indicate some kind of relationship between rainfall and sales, with sales falling as rainfall increases. However, the line formed by the plots is curved. This often means there's a non-linear, possibly logarithmic relationship.
 
 4. Delete the chart so you can see the empty **D** and **E** columns after the daily rainfall and sales data.
 5. In **D1**, add the column header **LogRainfall**, and then select cell **D2** and enter the following formula in the ***fx*** box above the worksheet to calculate the base 10 log of the rainfall value:
@@ -222,9 +222,9 @@ It can often be easier to identify trends and relationships in data by creating 
 
     :::image type="content" source="../media/log-rainfall-sales-scatter-plot.png" alt-text="Screenshot of a scatter plot showing log rainfall by log sales.":::
  
-    Note that this plot shows a linear relationship between the log of rainfall and the log of sales. This is potentially useful as we explore relationships in the data, as it is easier to calculate a linear equation that relates rainfall to sales than to define a logarithmic equation to do the same.
+    Note that this plot shows a linear relationship between the log of rainfall and the log of sales. This is potentially useful as we explore relationships in the data, as it's easier to calculate a linear equation that relates rainfall to sales than to define a logarithmic equation to do the same.
 
 ### Challenge: Visualizing data
 
-1. Create a column chart showing the sum of flyers distributed on each day of the week and note the days on which the highest and lowest number of flyers were distributed.
+1. Create a column chart showing the sum of flyers distributed on each day of the week, and note the days on which the highest and lowest number of flyers were distributed.
 2. Create a scatter plot showing daily temperature and rainfall and examine the apparent relationship between these fields.
