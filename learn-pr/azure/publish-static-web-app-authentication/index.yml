@@ -23,7 +23,7 @@ levels:
 roles:
   - developer
 products:
-  - vs
+  - vs-code
   - azure
   - azure-functions
   - azure-app-service
