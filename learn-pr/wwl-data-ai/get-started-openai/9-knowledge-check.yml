@@ -3,13 +3,13 @@ uid: learn.wwl.get-started-openai.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: "This unit contains a knowledge check which can help learners reinforce their understanding of the material."
   ms.date: 2/27/2023
-  author: ivorb
-  ms.author: berryivor
+  author: sherzyang
+  ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
-durationInMinutes: 1
+  ms.prod: learning-azure 
+durationInMinutes: 3
 ###########################################################################
 ###
 ### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
