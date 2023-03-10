@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.maintain-user-profiles
+metadata:
+  title: Manage user profiles
+  description: "Students will learn about the benefits of various Windows user profiles, how to manage them, and how to facilitate profile data synchronization across multiple devices."
+  ms.date: 03/10/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+title: Manage user profiles
+summary: Students will learn about the benefits of various Windows user profiles, how to manage them, and how to facilitate profile data synchronization across multiple devices.
+abstract: |
+  After completing this module, you will be able to:
+  *   Explain the various user profile types that exist in Windows.
+  *   Describe how a user profile works.
+  *   Configure user profiles to conserve space.
+  *   Explain how to deploy and configure Folder Redirection.
+  *   Explain Enterprise State Roaming.
+  *   Configure Enterprise State Roaming for Azure AD devices.
+prerequisites: |
+  *   Strong technical skills installing, maintaining, and troubleshooting the Windows 10 OS or later.
+  *   Strong understanding of computer networking, client security, and application concepts.
+  *   Experience using Active Directory Domain Services.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- windows
+- configuration-manager
+- intune
+subjects:
+- identity-access
+- storage
+units:
+- learn.wwl.maintain-user-profiles.introduction
+- learn.wwl.maintain-user-profiles.examine-user-profile
+- learn.wwl.maintain-user-profiles.explore-user-profile-types
+- learn.wwl.maintain-user-profiles.examine-options-minimizing-user-profile-size
+- learn.wwl.maintain-user-profiles.deploy-configure-folder-redirection
+- learn.wwl.maintain-user-profiles.sync-user-state-enterprise-state-roaming
+- learn.wwl.maintain-user-profiles.configure-enterprise-state-roaming-azure
+- learn.wwl.maintain-user-profiles.knowledge-check
+- learn.wwl.maintain-user-profiles.summary
+badge:
+  uid: learn.wwl.maintain-user-profiles.badge

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.maintain-user-profiles.examine-user-profile
+title: Examine user profile
+metadata:
+  title: Examine user profile
+  description: "This unit explains how to examine user profiles."
+  ms.date: 03/10/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-examine-user-profile.md)]
