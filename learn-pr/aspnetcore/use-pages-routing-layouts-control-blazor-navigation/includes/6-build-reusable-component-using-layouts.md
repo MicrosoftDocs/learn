@@ -4,6 +4,9 @@ Suppose you're working in the pizza delivery company's website and you've create
 
 Here, you'll learn how to use layout components in Blazor to render common HTML on multiple pages.
 
+> [NOTE!]
+> The code blocks in this unit are illustrative examples. You'll write your own code in the next unit.
+
 ## What are Blazor layouts?
 
 In most websites, the arrangement of UI elements is shared across multiple pages. For example, there might be a branded banner at the top of the page, the main site navigation links down the left side, and a legal disclaimer at the bottom. After you've coded these common UI elements in one page, it's tedious to copy and paste them into the code for all the other pages. Worse, if there's a change later, such as a new major section of the site to link to or a site rebranding, you'll have to make the same changes repeat in all the individual components. Instead, use a *layout component* to streamline and reuse common UI elements.

@@ -2,7 +2,10 @@ Blazor's routing system provides flexible options that you can use to ensure tha
 
 Suppose you're working on the pizza delivery company's website. You want to set up the site so that requests for pizza details and custom-topping details are both handled by the same component. You've completed this phase, but your testing shows that the topping requests are receiving an error message. You need to fix this problem.
 
-Here, you'll learn how to configure routes in Blazor by using the `@page` directive.
+Here, you'll learn how to configure routes in Blazor by using the `@page` directive. 
+
+> [NOTE!]
+> The code blocks in this unit are illustrative examples. You'll write your own code in the next unit.
 
 ## Using route templates
 
@@ -39,7 +42,7 @@ In a Blazor component, the `@page` directive specifies that the component should
 @page "/Pizzas"
 ```
 
-If you want to specify more than one route to the component, use two or more `@page` directives:
+If you want to specify more than one route to the component, use two or more `@page` directives, like in this example:
 
 ```razor
 @page "/Pizzas"
@@ -77,7 +80,7 @@ You can use a `NavigationManager` object to obtain all these values. You must in
 	
 	protected override void OnInitialized()
 	{
-		HomePageURI = NavManager.BaseUri
+		HomePageURI = NavManager.BaseUri;
 	}
 }
 ```
@@ -103,9 +106,8 @@ To access the query string, you must parse the full URI. Use the `QueryHelpers` 
 	
 	protected override void OnInitialized()
 	{
-		StringValues extraTopping;
 		var uri = NavManager.ToAbsoluteUri(NavManager.Uri);
-		if (QueryHelpers.ParseQuery(uri.Query).TryGetValue("extratopping", out extraTopping))
+		if (QueryHelpers.ParseQuery(uri.Query).TryGetValue("extratopping", out var extraTopping))
 		{
 			ToppingName = System.Convert.ToString(extraTopping);
 		}
@@ -157,7 +159,7 @@ When you use **NavLink**, the home page link example looks like the following co
 
 <p>I want to order a: @PizzaName</p>
 
-<NavLink href=@HomePageUri Match="NavLinkMatch.All">Home Page</NavLink>
+<NavLink href=@HomePageURI Match="NavLinkMatch.All">Home Page</NavLink>
 
 @code {
 	[Parameter]
@@ -167,7 +169,7 @@ When you use **NavLink**, the home page link example looks like the following co
 	
 	protected override void OnInitialized()
 	{
-		HomePageURI = NavManager.BaseUri
+		HomePageURI = NavManager.BaseUri;
 	}
 }
 ```
