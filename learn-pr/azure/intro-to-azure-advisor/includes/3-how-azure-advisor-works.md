@@ -88,7 +88,7 @@ The estimated cost savings will be displayed for the recommended actions, to hel
 
 Security recommendations are integrated with Microsoft Defender for Cloud. You can get security recommendations from the **Security** tab on the Advisor dashboard.
 
-:::image type="content" source="../media/3-advisor-security.png" alt-text="Screenshot showing security recommendations for a subscription, with impact rated high, medium, or low." lightbox="../media/3-advisor-security.png:::
+:::image type="content" source="../media/3-advisor-security.png" alt-text="Screenshot showing security recommendations for a subscription, with impact rated high, medium, or low." lightbox="../media/3-advisor-security.png":::
 
 ### Reliability recommendations
 
@@ -109,7 +109,7 @@ Operational excellence recommendations can be found on the **Operational excelle
 * Resource manageability.
 * Deployment best practices.
 
-:::image type="content" source="../media/3-advisor-operational-excellence.png" alt-text="Screenshot showing operational excellence recommendations for a subscription, with impact rated high, medium, or low." lightbox="../media/3-advisor-operational-excellence.png:::
+:::image type="content" source="../media/3-advisor-operational-excellence.png" alt-text="Screenshot showing operational excellence recommendations for a subscription, with impact rated high, medium, or low." lightbox="../media/3-advisor-operational-excellence.png":::
 
 ### Performance recommendations
 
