@@ -38,47 +38,52 @@ Azure Web Application Firewall creates a barrier of non-trust between a web app 
 
 Sanitizing the input means different things depending on the context. For example, sanitizing the input can mean removing clearly dangerous text elements, such as SQL comment indicators. However sanitization occurs, the result is input that can do no harm to the web app or its backend data.
 
-## Rules, core rule sets, and rule groups
+## Deployment options
 
-Azure Web Application Firewall thwarts known exploits by applying rules to an app's incoming HTTP/HTTPS requests. A *rule* is firewall code designed to recognize and prevent a particular threat.
 
-The rules that Azure Web Application Firewall uses to detect and block common vulnerabilities are mostly *managed rules*. Microsoft's team of security experts codes, maintains, and updates managed rules. Managed rules are modified or added to as needed. When a managed rule changes, Microsoft updates Azure Web Application Firewall automatically and without app downtime.
-
-Collections of related rules are gathered into a *core rule set* (CRS). These collections are based on the sets defined by the Open Web Application Security Project (OWASP). Currently there are three sets available when you deploy Azure Web Application Firewall: CRS 3.1, CRS 3.0, and CRS 2.2.9.
-
-> [!IMPORTANT]
-> The CRS 3 rule sets are a big improvement over CRS 2, because they reduce false positives by more than 90 percent and include many new exploits. Therefore, you should select a CRS 3 rule set when you deploy Azure Web Application Firewall.
-
-The following table lists the groups in CRS 3.1. This table should give you a sense of the depth of protection offered by Azure Web Application Firewall.
-
-|Rule group|Description|
+|Service  |Description  |
 |---------|---------|
-|REQUEST-911-METHOD-ENFORCEMENT|Disables some request methods (for example, PUT and PATCH).|
-|REQUEST-913-SCANNER-DETECTION|Detects security (port and environment) scanners, web crawlers, and bots.|
-|REQUEST-920-PROTOCOL-ENFORCEMENT|Protects against protocol and encoding exploits by validating HTTP/HTTPS requests.|
-|REQUEST-921-PROTOCOL-ATTACK|Detects protocol-related attacks, such as HTTP/HTTPS header injection, HTTP/HTTPS request smuggling, and HTTP/HTTPS response splitting.|
-|REQUEST-930-APPLICATION-ATTACK-LFI|Detects application exploits that use local file inclusion (LFI) attacks.|
-|REQUEST-931-APPLICATION-ATTACK-RFI|Detects application exploits that use remote file inclusion (RFI) attacks.|
-|REQUEST-932-APPLICATION-ATTACK-RCE|Detects application exploits that use remote code execution (RCE) attacks.|
-|REQUEST-933-APPLICATION-ATTACK-PHP|Detects application exploits that use PHP-injection attacks.|
-|REQUEST-941-APPLICATION-ATTACK-XSS|Detects application exploits that use cross-site scripting (XSS) attacks.|
-|REQUEST-942-APPLICATION-ATTACK-SQLI|Detects application exploits that use SQL-injection (SQLi) attacks.|
-REQUEST-943-APPLICATION-ATTACK-SESSION-FIXATION|Detects application exploits that use session-fixation attacks.|
-REQUEST-944-APPLICATION-ATTACK-SESSION-JAVA     |Detects application exploits that use JAVA attacks.|
+|Azure Front Door     |When you create your Azure Web Application Firewall policy, you associate it with an existing Azure Front Door profile.|
+|Azure Application Gateway     |You configure your application gateway to use Azure Web Application Firewall. You can choose a Web Application Firewall tier when you create your application gateway. Alternatively, you can upgrade an existing application gateway to use a Web Application Firewall tier. You then associate your Web Application Firewall policy with your application gateway.
+|
 
-Each group is a collection of rules designed to detect and thwart a specific exploit. For example, the REQUEST-942-APPLICATION-ATTACK-SQLI rule group of CRS 3.1 contains more than two dozen rules that enable Azure Web Application Firewall to detect and prevent various SQL injection exploits. Each of those rules are managed rules that Microsoft creates, maintains, and updates.
+## Microsoft managed rule sets, rule groups, and rules
 
+Azure Web Application Firewall thwarts known exploits by applying rules to an app's incoming HTTP/HTTPS requests. A rule is a firewall code designed to recognize and prevent a particular threat.
+
+The rules that Azure Web Application Firewall uses to detect and block common vulnerabilities are mostly managed rules that belong to various rule groups. Each rule group is a collection of rules and a managed rule set is collection of rule groups. Managed rule sets include Microsoft Threat Intelligence based rule groups, CVE( Common Vulnerabilities and Exposures) rulegroups, and core rule groups (CRS).
+
+The CRS rules are defined by the Open Web Application Security Project (OWASP).
+Microsoft's team of security experts codes, maintains, and updates managed rules. The rules are modified or added to as needed. When a managed rule changes, Microsoft updates Azure Web Application Firewall automatically and without app downtime.
+
+The following screenshot shows some of the rules and rule groups in Microsoft Default Rule set 2.1 (DRS2.1). This should give you a sense of the depth of protection offered by Azure Web Application Firewall.
+
+:::image type="content" source="../media/3-waf-rule-sets.png" alt-text="Screen shot show WAF managed rules.":::
+
+## Bot rules
+
+Bot rules identify bad bots, good bots, and unknown bots based on Microsoft Threat Intelligence and proprietary WAF rules.
+
+:::image type="content" source="../3-waf-bot-rules.png" alt-text="Screenshot showing WAF bot rules.":::
 ## Custom rules
 
 The managed rules Azure Web Application Firewall offers might not cover a specific threat that your web applications are experiencing. If this is the case, you can create a custom rule. You can build custom rules by creating conditions that include the following components:
 
-- Variables such as RequestHeader or QueryString
+- Variables such as RequestHeader, QueryString, RequestUri, RequestBody, Cookies, or PostArgs
 - HTTP/HTTPS request methods such as POST or PUT
-- Operators such as **Equal** or **Contains**
-- An action such as **Allow** or **Block**
+- Operators such as **Equal** **Contains**, **Regex**, **Begins with**, **Any**, **Ends with**
+- An action such as **Allow**, **Block**, **Log or Redirect**
+- Size match
 
-> [!TIP]
-> Azure Web Application Firewall custom rules support a GeoMatch operator, which you can use to match the two-letter country/region code of the requesting entity.
+Azure Web Application Firewall custom rules support a geo filtering operator, which you can use to match the two-letter country/region code of the requesting entity.
+
+## IP restriction
+
+Azure Web Application Firewall custom rules control access to web applications by specifying a list of IP addresses or IP address ranges.
+
+## Rate limiting
+
+Azure Web Application Firewall custom rules support rate limiting to control access based on matching conditions and the rates of incoming requests.
 
 ## Detection mode vs prevention mode
 
@@ -87,25 +92,9 @@ Azure Web Application Firewall can operate in one of two modes. The mode you cho
 - **Detection mode**: Logs the request but allows the request to go through.
 - **Prevention mode**: Logs the request but doesn't allow the request to go through.
 
-A common scenario is to run Azure Web Application Firewall in detection mode when you're testing an app. In detection mode, you can check for two types of problems:
+In detection mode:
 
 - **False positives**: Legitimate requests that the firewall flags as malicious.
 - **False negatives**: Malicious requests that the firewall allows.
 
 Once the app is ready to be deployed, you'll switch to prevention mode.
-
-## Deployment options
-
-You can deploy Azure Web Application Firewall as part of an Azure front-end solution for your web apps. You'll begin by creating an Azure Web Application Firewall policy, which includes the following settings:
-
-- Which managed rule set you want to use
-- Which rules within that rule set you want to disable
-- Any custom rules you want to add
-- Which mode you want to use
-
-For deployment, you can use either of the services listed in the following table.
-
-|Service  |Description  |
-|---------|---------|
-|Azure Front Door  |When you create your Azure Web Application Firewall policy, you associate it with an existing Azure Front Door profile.|
-|Azure Application Gateway |You configure your application gateway to use Azure Web Application Firewall. You can choose a Web Application Firewall tier when you create your application gateway. Alternatively, you can upgrade an existing application gateway to use a Web Application Firewall tier. You then associate your Web Application Firewall policy with your application gateway.|

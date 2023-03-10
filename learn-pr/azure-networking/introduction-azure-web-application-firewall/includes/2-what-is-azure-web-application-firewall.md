@@ -10,8 +10,10 @@ Most malicious tests of web apps check for the presence of one or more common vu
 
 - SQL injection
 - Cross-site scripting
-- HTTP/HTTPS request smuggling
 - Local and remote file inclusion
+- HTTP/HTTPS floods
+- HTTP/HTTPS request smuggling
+
 
 A common task in the web app development cycle involves writing code to close the most common security holes. Writing the security code requires time, expertise, and testing.
 
@@ -28,14 +30,16 @@ To help you evaluate Azure Web Application Firewall, here are some of its import
 - **Managed rules**: The rules that Azure Web Application Firewall uses to detect and prevent common exploits are created, maintained, and updated by Microsoft's security team. If a rule changes, or a core rule set (refer to the following description) is modified, Microsoft updates Azure Web Application Firewall automatically and seamlessly.
 
     > [!NOTE]
-    > You can't modify or delete the managed rules offered by Azure Web Application Firewall. However, if a particular rule is problematic for your environment—for example, it blocks legitimate traffic to your web app—you can disable the rule.
+    > You can't modify or delete the managed rules offered by Azure Web Application Firewall. However, if a particular rule is problematic for your environment (for example, it blocks legitimate traffic to your web app) you can create exclusions or disable the rule, rule group, or rule set. You can also create custom rules to overwrite the default behavior.
+
+- **Bot rules**: The bot rules identify good bots and protects from bad bots. Bad bots are detected based on Microsoft Threat Intelligence.
 
 - **Custom rules**: If the managed rules offered by Azure Web Application Firewall don't cover a specific threat to your web application, you can create a custom rule.
 - **Modes**: Azure Web Application Firewall can operate in one of two modes: detection mode only logs requests that violate a rule, while prevention mode both logs and blocks requests that violate a rule.
 - **Exclusion lists**: You can configure Azure Web Application Firewall to ignore specific attributes when it checks requests.
 - **Policies**: You can combine a set of managed rules, custom rules, exclusions, and other Azure Web Application Firewall settings into a single element called an Azure Web Application Firewall policy. You can then apply that policy to multiple web apps for easy management and maintenance.
 - **Request size limits**: You can configure Azure Web Application Firewall to flag requests that are either too small or too large.
-- **Alerts**: Azure Web Application Firewall integrates with Azure Monitor. This integration gives you near-real-time alerts when the firewall detects a threat.
+- **Alerts**: Azure Web Application Firewall integrates with Azure Monitor. This integration gives you near-real-time alerts when the WAF detects a threat.
 
 ## Common attacks prevented by Azure Web Application Firewall
 
