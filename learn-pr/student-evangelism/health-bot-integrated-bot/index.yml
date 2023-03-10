@@ -23,7 +23,7 @@ roles:
   - developer
   - student
 products:
-  - vs
+  - azure
 prerequisites: Complete the module titled "Enhanced health bot."
 subjects:
 - chatbot
