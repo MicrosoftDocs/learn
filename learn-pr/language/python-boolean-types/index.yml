@@ -25,7 +25,7 @@ roles:
   - developer
   - student
 products:
-  - vs
+  - azure
 units:
 - learn.beginner-python.use-boolean-types.introduction
 - learn.beginner-python.use-boolean-types.what-are-if-statements
