@@ -21,7 +21,7 @@ For organizations that buy devices for their users, Intune supports the followin
 
 The Apple Device Enrollment Program (DEP) is an online service that automates the enrollment and configuration of Apple iOS devices to MDM. Apple DEP is only available for devices that an organization purchases through either Apple or authorized resellers to provide to employees.
 
-To enable DEP enrollment, you use both the Intune and Apple DEP portals. A list of serial numbers or a purchase order number is required so you can assign devices to Intune for management. On the Apple DEP website, an administrator can preconfigure device settings, including what applications and company services each device can access, and set devices to automatically enroll to MDM. iOS devices enrolled in DEP do not require manual configuration, and users never have to select on MDM links or install the Company Portal app to enroll the device.
+To enable DEP enrollment, you use both the Intune and Apple DEP portals. A list of serial numbers or a purchase order number is required so you can assign devices to Intune for management. On the Apple DEP website, an administrator can preconfigure device settings, including what applications and company services each device can access, and set devices to automatically enroll to MDM. iOS devices enrolled in DEP don't require manual configuration, and users never have to select on MDM links or install the Company Portal app to enroll the device.
 
 If an organization allows its users to bring their own devices, the users should perform the regular iOS enrollment. But if the company provides employees with iOS devices that are part of the Device Enrollment Program, users can enroll those devices to MDM by performing following steps:
 

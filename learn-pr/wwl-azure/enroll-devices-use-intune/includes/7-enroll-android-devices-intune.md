@@ -17,6 +17,6 @@ Android Enterprise management makes it easier to define the scope of management 
  -  **Android Enterprise dedicated.** For corporate-owned, single use devices, such as digital signage, ticket printing, or inventory management. Admins lock down the usage of a device for a limited set of apps and web links. It also prevents users from adding other apps or taking other actions on the device.
  -  **Android Enterprise fully managed.** For corporate-owned, single user devices used exclusively for work and not personal use. Admins can manage the entire device and enforce policy controls unavailable to work profiles.
 
-To set up Android Enterprise, you must connect your Intune tenant account to your Managed Google Play account and setup a enrollment profile based on what method of management is being used.
+To set up Android Enterprise, you must connect your Intune tenant account to your Managed Google Play account and set up an enrollment profile based on what method of management is being used.
 
 For more information, refer to [Enroll Android devices](https://aka.ms/AA6du6k).

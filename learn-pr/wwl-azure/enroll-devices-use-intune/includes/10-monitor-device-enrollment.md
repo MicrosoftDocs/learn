@@ -17,19 +17,19 @@ The Devices workload gives you insights into the devices you manage, and lets yo
         :::image type="content" source="../media/endpoint-manage-admin-center-all-devices-f210129c.png" alt-text="Screenshot of the Devices, All devices screen.":::
         
         
-         -  Use the Export feature to create a .csv list of all the devices, in increments of 10,000 (Internet Explorer) or 30,000 (Edge, Chrome).
+         -  Use the Export feature to create a .csv list of all the devices, in increments of 10,000 (Internet Explorer) or 30,000 (Microsoft Edge, Chrome).
          -  Select any device to view additional details about that device, including hardware details, installed apps, its compliance policy status, and more.
      -  **Monitor** provides several reports related to the status of devices.
         
         :::image type="content" source="../media/intune-monitor-enrollment-failures-0d6af6b0.png" alt-text="Screenshot of the Devices, Monitor Overview, Enrollment failures screen.":::
         
         
-         -  Enrollment failures. Provides views of devices which include the type of failure and method of enrollment.
+         -  Enrollment failures. Provides views of devices, which include the type of failure and method of enrollment.
          -  Incomplete user enrollments. Using this information, you can update your onboarding documents to help users complete enrollment. For example, if many users are quitting at the Terms of Use, you might investigate that area and make it more intuitive for users.
 
 #### Monitoring Azure AD-joined devices
 
-Not all devices will be necessarily listed in the Endpoint Manager admin center, only devices that are enrolled in Intune. For devices that are simply joined to the domain, but have not been enrolled in Intune, you can view these devices in the Azure portal.
+Not all devices will be necessarily listed in the Endpoint Manager admin center, only devices that are enrolled in Intune. For devices that are joined to the domain, but haven't been enrolled in Intune, you can view these devices in the Azure portal.
 
 1.  Sign in to the Azure portal.
 2.  Select **Azure Active Directory**, and then select **Devices**.
@@ -40,7 +40,7 @@ Not all devices will be necessarily listed in the Endpoint Manager admin center,
         
      -  **Device Settings** includes settings which users can join devices to Azure AD, local administrator accounts, allowing users to register personal devices, and whether to require MFA.
      -  **Enterprise State Roaming** defines which groups may sync settings and app data across devices.
-     -  **Audit Logs** log all activities that generated changes in Microsoft Intune. Audit logs include activities such as create, update, delete, and assign. You can review audit logs for most Intune workloads. Auditing is enabled by default, and it cannot be disabled. As there can be many audit events, you can filter them based on several criteria or use Graph API to retrieve up to one year of audit events.
+     -  **Audit Logs** log all activities that generated changes in Microsoft Intune. Audit logs include activities such as create, update, delete, and assign. You can review audit logs for most Intune workloads. Auditing is enabled by default, and it can't be disabled. As there can be many audit events, you can filter them based on several criteria or use Graph API to retrieve up to one year of audit events.
         
         :::image type="content" source="../media/intune-monitor-enrollment-failures-0d6af6b0.png" alt-text="Screenshot of the Devices, Overview screen.":::
         

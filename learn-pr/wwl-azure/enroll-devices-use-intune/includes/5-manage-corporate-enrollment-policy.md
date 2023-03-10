@@ -3,7 +3,7 @@ When your organization signs up for a Microsoft cloud-based service like Intune,
 
 Before you create user accounts or synchronize your on-premises Active Directory, we strongly recommend that you add one or more of your custom domain names. This will simplify user management and lets users sign in with the credentials they use to access other domain resources.
 
-You can decide to use only the **.onmicrosoft.com** domain if you want to, but it should really only be used for the initial setup or when you are testing. You cannot rename or remove the initial **onmicrosoft.com** domain name. You can add, verify or remove custom domain names used with Intune to keep your business identity clear.
+You can decide to use only the **.onmicrosoft.com** domain if you want to, but it should only be used for the initial setup or when you're testing. You can't rename or remove the initial **onmicrosoft.com** domain name. You can add, verify or remove custom domain names used with Intune to keep your business identity clear.
 
 #### To add and verify your custom domain
 
@@ -46,7 +46,7 @@ Automatic enrollment lets users enroll their Windows devices in Intune. To enrol
 
 #### Simplify Manual Enrollment (Optional)
 
-If you do not have Azure AD Premium, you can create a domain name server (DNS) alias (CNAME record type) that redirects enrollment requests to Intune servers. While optional, if no CNAME record is found, users are prompted to manually enter the MDM server name, enrollment.manage.microsoft.com.
+If you don't have Azure AD Premium, you can create a domain name server (DNS) alias (CNAME record type) that redirects enrollment requests to Intune servers. While optional, if no CNAME record is found, users are prompted to manually enter the MDM server name, enrollment.manage.microsoft.com.
 
 ##### Step 1: Create CNAME records
 
