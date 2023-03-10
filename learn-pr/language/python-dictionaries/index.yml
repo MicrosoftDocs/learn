@@ -28,7 +28,7 @@ roles:
   - student
   - developer
 products:
-  - vs
+  - azure
 subjects:
 - development-tools
 units:
