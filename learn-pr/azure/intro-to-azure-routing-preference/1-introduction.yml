@@ -3,7 +3,7 @@ uid: learn.intro-to-azure-routing-preference.introduction
 title: Introduction
 metadata:
   title: introduction
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: "This training module is designed to help Network Engineers understand the concept of Routing Preference and Routing Preference Metered and how it can be used to achieve cost savings in their Azure subscription."
   ms.date: 2/8/2023
   author: asudbring
   ms.author: allensu
