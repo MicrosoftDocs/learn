@@ -4,10 +4,11 @@ title: Introduction
 metadata:
   title: Introduction
   description: "Introduction"
-  ms.date: 03/09/2023
+  ms.date: 03/10/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
+  ms.prod: configuration-manager
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
