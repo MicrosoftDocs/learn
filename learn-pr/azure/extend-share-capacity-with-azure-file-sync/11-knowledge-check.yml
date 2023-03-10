@@ -5,8 +5,8 @@ metadata:
   title: Check your knowledge
   description: Review what you've learned.
   ms.date: 05/18/2020
-  author: roygara
-  ms.author: rogarana
+  author: khdownie
+  ms.author: kendownie
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5
