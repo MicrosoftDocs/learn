@@ -64,7 +64,8 @@ The following screenshot shows some of the rules and rule groups in Microsoft De
 
 Bot rules identify bad bots, good bots, and unknown bots based on Microsoft Threat Intelligence and proprietary WAF rules.
 
-:::image type="content" source="../3-waf-bot-rules.png" alt-text="Screenshot showing WAF bot rules.":::
+:::image type="content" source="../media/3-waf-bot-rules.png" alt-text="Screenshot showing WAF bot rules.":::
+
 ## Custom rules
 
 The managed rules Azure Web Application Firewall offers might not cover a specific threat that your web applications are experiencing. If this is the case, you can create a custom rule. You can build custom rules by creating conditions that include the following components:
@@ -75,11 +76,22 @@ The managed rules Azure Web Application Firewall offers might not cover a specif
 - An action such as **Allow**, **Block**, **Log or Redirect**
 - Size match
 
-Azure Web Application Firewall custom rules support a geo filtering operator, which you can use to match the two-letter country/region code of the requesting entity.
+## Geo-filtering
+
+By default, WAF responds to all user requests regardless of location where the request is coming from. In some scenarios, you may want to restrict the access to your web application by countries/regions. The geo-filtering custom rule enables you to define a specific path on your endpoint to either allow or block access from specified countries/regions. The geo-filtering rule uses a two-letter country/region code of interest.
+
+For a geo-filtering rule, a match variable is either RemoteAddr or SocketAddr. RemoteAddr is the original client IP address that is usually sent via X-Forwarded-For request header. SocketAddr is the source IP address that WAF sees. If your user is behind a proxy, SocketAddr is often the proxy server address.
+
+You can combine a GeoMatch condition and a REQUEST_URI string match condition to create a path-based geo-filtering rule.
 
 ## IP restriction
 
 Azure Web Application Firewall custom rules control access to web applications by specifying a list of IP addresses or IP address ranges.
+
+The IP restriction custom rule lets you control access to your web applications. It does this by specifying an IP address or an IP address range in Classless Inter-Domain Routing(CIDR) format.
+
+By default, your web application is accessible from the Internet. However sometimes, you want to limit access to clients from a list of known IP address or IP address ranges. You can achieve this by creating an IP matching rule that blocks access to your web app from Ips not listed in the custom rule.
+
 
 ## Rate limiting
 
