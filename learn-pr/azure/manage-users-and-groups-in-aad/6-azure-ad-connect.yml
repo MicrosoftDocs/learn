@@ -4,11 +4,14 @@ title: Connect Active Directory to Azure AD with Azure AD Connect
 metadata:
   title: Connect Active Directory to Azure AD with Azure AD Connect
   description: Connect Active Directory to Azure AD with Azure AD Connect
-  ms.date: 09/30/2019
-  author: curtand
-  ms.author: curtand
+  ms.date: 03/10/2023
+  author: shlipsey3
+  ms.author: sarahlipsey
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.manager: amycollanino
+  ms.service: active-directory
+  ms.subservice: fundamentals
 durationInMinutes: 8
 content: |
   [!include[](includes/6-azure-ad-connect.md)]
