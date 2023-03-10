@@ -4,7 +4,7 @@ Batch Transcription is a Cognitive Service that allows you to transcribe large a
 
 Spoken word will always be our primary means of communication. We can identify ourselves, express ideas, convey sentiment, and make requests. Further, the use of audio is often required for business reasons, such as keeping records of conversations for legal purposes, whether they be in person, or over a video or audio call.
 
-While having an audio record of a conversation is nice, searching through audio recordings for information can be very inefficient. Transcribing audio into text allows for almost instantaneous searching for key words or phrases, easier documentation, and better record keeping.
+While having an audio record of a conversation is nice, searching through audio recordings for information can be time consuming and inefficient. Transcribing audio into text allows for almost instantaneous searching for key words or phrases, easier documentation, and better record keeping.
 
 ### Powerful and cost effective transcription
 
