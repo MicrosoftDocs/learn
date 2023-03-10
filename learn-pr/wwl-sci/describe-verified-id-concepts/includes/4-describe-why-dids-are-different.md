@@ -1,11 +1,11 @@
-As described in the [SSI Meetup Webinar: Decentralized Identifiers (DIDs) fundamentals by Drummond Reed and Markus Sabadello](https://ssimeetup.org/decentralized-identifiers-dids-fundamentals-identitybook-info-drummond-reed-markus-sabadello-webinar-46/), there are four properties associated with a DID:
+As referenced during the W3C DID Working Group meeting in Fukuoka, Japan in September 2019, there were four reasons attributed to the funding for the development of the DID specification which is currently published as the [W3C recommendation for Decentralized Identifiers (DIDs) v1.0 Core architecture, data model, and representations](https://www.w3.org/TR/did-core/).
 
-- Persistence - A DID is designed to be persistent.  In the [W3C recommendation for Decentralized Identifiers (DIDs) v1.0 Core architecture, data model, and representations](https://www.w3.org/TR/did-core/) persistence means, “a DID cannot be removed or made inoperable by a third-party without the consent of the DID’s controller.”
-- Resolvable - A DID is a resolvable identifier, meaning that you can look it up to discover something associated with that DID, for example to discover its metadata. The information the DID resolves to is a DID document.
-- Cryptographically verifiable - A DID is a cryptographically verifiable identifier, meaning that the entity that controls the DID, the DID Controller, can prove control of the identifier using cryptography.
-- Decentralized - A DID is a decentralized identifier. This means there's no single registration authority to create and manage DIDs.  DIDs use decentralized networks, also referred to as verifiable data registries, to register and record transactions.  These registries can be distributed ledgers, blockchains, distributed file systems, or other trusted data storage. There are many different types of verifiable data registries that DIDs can use. The approach employed is dependent on the DID method.
+- "A permanent (persistent) identifier" - A DID is designed to be persistent.  Persistence means, “a DID cannot be removed or made inoperable by a third-party without the consent of the DID’s controller.”
+- "A resolvable identifier" - A DID is a resolvable identifier, meaning that you can look it up to discover something associated with that DID, for example to discover its metadata. The information the DID resolves to is a DID document.
+- "A cryptographically-verifiable identifier" - A DID is a cryptographically verifiable identifier, meaning that the entity that controls the DID, the DID Controller, can prove control of the identifier using cryptography.
+- "A decentralized identifier" - A DID is a decentralized identifier. This means there's no single registration authority to create and manage DIDs.  DIDs use decentralized networks, also referred to as verifiable data registries, to register and record transactions.  These registries can be distributed ledgers, blockchains, distributed file systems, or other trusted data storage. There are many different types of verifiable data registries that DIDs can use. The approach employed is dependent on the DID method.
 
-Although there are existing identifiers that can meet some of these properties, a DID is the first new type of identifier to meet all four of these properties.
+These four reasons form foundational properties of DIDs. Although there are existing identifiers that can meet some of these properties, a DID is the first new type of identifier to meet all four of these properties.
 
 ## Resolvable DID and DID Documents
 
