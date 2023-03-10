@@ -253,7 +253,7 @@ The `aspnet-core` Helm chart has an extensive set of configuration options avail
 
 ## Review the `deployment.yaml` and `ingress.yaml` template files
 
-The values in the `values.yaml` file, is combined with the templates in the chart's `templates/` folder to create the final manifest files. It's helpful to review the contents of the `deployment.yaml` and the `ingress.yaml` files to get an overview of the deployment.
+The values in the `values.yaml` file are combined with the templates in the chart's `templates/` folder to create the final manifest files. It's helpful to review the contents of the `deployment.yaml` and the `ingress.yaml` files to get an overview of the deployment.
 
 1. Open the `templates/deployment.yaml` in the Cloud Shell editor:
 
