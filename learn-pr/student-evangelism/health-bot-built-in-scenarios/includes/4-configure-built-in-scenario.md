@@ -12,7 +12,7 @@ Let's start with the configuration of the built-in medical **Triage and symptom 
 
 :::image type="content" source="../media/4-health-bot-infermedica-settings.png" alt-text="Screenshot that shows the Infermedica Settings section.":::
 
-### Content Providers
+### Content providers
 
 Depending on your needs, you can select Infermedica or Capita as your content provider. There are different settings options for each one. For the purposes of this module, only the Infermedica settings are detailed.
 
@@ -117,7 +117,7 @@ On the **Spelling** tab, you can configure the:
 
    :::image type="content" source="../media/3-correction.png" alt-text="Screenshot that shows Spelling correction.":::
 
-### Human Handoff
+### Human handoff
 
 Health Bot can be used to provide users with chat support from live agents. In some cases, it's preferable to transfer users from a bot interaction to a human conversation. For example:
 
