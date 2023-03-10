@@ -1,6 +1,3 @@
->[!NOTE]
-> The Learn sandbox system that enables you to complete these modules without using your own subscription is currently down for maintenance. This module can still be completed using a subscription you own, but please be aware that the steps might skip some instructions necessary for you to deploy, such as logging into your subscription or cleaning up the deployment at the end of the module. Let's go!
-
 Helm charts make it easy to install, upgrade, roll back, and delete an application on a Kubernetes cluster. Earlier, the team was successful in installing the pre-configured Helm chart from the Azure Marketplace Helm repository.
 
 To test the management of release upgrades and rollbacks, the team decides to simulate the experience by installing a basic .NET Core Blazor Server application.
@@ -13,13 +10,13 @@ This exercise uses the `aspnet-core` Helm chart you installed earlier from the A
 
 If you completed previous exercise, you'll find a cache copy of the Helm chart in the `$HOME/.cache/helm/repository` folder in the Cloud Shell.
 
-1. List the contents of the `$HOME/.cache/helm/repository` folder to locate the `aspnet-core-1.3.18.tgz` file.
+1. List the contents of the `$HOME/.cache/helm/repository` folder to locate the `aspnet-core-1.3.18.tgz` file:
 
     ```bash
     ls $HOME/.cache/helm/repository -l
     ```
 
-    The command should return a result similar to the following output.
+    The command should return a result similar to the following output:
 
     ```output
     -rw-r--r-- 1 user user   30621 Oct 11 17:25 aspnet-core-1.3.18.tgz
@@ -27,18 +24,18 @@ If you completed previous exercise, you'll find a cache copy of the Helm chart i
     -rw-r--r-- 1 user user 4834112 Oct 11 17:04 azure-marketplace-index.yaml
     ```
 
-    All Helm charts install from repositories are cached in this folder. If you're interested inspecting or modifying the contents of a chart, you can extract the zipped package from the cache folder and install the chart as a local chart.
+    All Helm charts installed from repositories are cached in this folder. If you're interested inspecting or modifying the contents of a chart, you can extract the zipped package from the cache folder and install the chart as a local chart.
 
     For this exercise, the chart is already unpacked and available in the `~clouddrive/mslearn-aks/modules/learn-helm-deploy-aks/src/drone-webapp-chart` folder.
 
-1. Inspect the existing Helm chart by recursively listing all contents of the drone-webapp-chart folder.
+1. Inspect the existing Helm chart by recursively listing all contents of the drone-webapp-chart folder:
 
     ```bash
     cd ~/clouddrive/mslearn-aks/modules/learn-helm-deploy-aks/src
     find drone-webapp-chart/ -print
     ```
 
-    The command should return a result similar to the following output.
+    The command should return a result similar to the following output:
 
     ```output
     drone-webapp-chart/
@@ -65,13 +62,13 @@ If you completed previous exercise, you'll find a cache copy of the Helm chart i
     - a `values.yaml` file (`drone-webapp-chart/values.yaml`)
     - a number of templates on the `templates/` folder (`drone-webapp-chart/templates`)
 
-1. Open the `drone-webapp-chart/Chart.yaml` to review the chart's dependencies by using the built-in Cloud Shell editor.
+1. Open the `drone-webapp-chart/Chart.yaml` to review the chart's dependencies by using the built-in Cloud Shell editor:
 
     ```bash
     code drone-webapp-chart/Chart.yaml
     ```
 
-    The editor will show the following YAML.
+    The editor will show the following YAML:
 
     ```yml
     apiVersion: v2
@@ -102,13 +99,13 @@ If you completed previous exercise, you'll find a cache copy of the Helm chart i
 
     Notice the dependencies section at the bottom of the file. This information shows you that there's a subchart to the main chart.
 
-1. Run the `helm dependency build` command to download and update all chart dependencies.
+1. Run the `helm dependency build` command to download and update all chart dependencies:
 
     ```bash
     helm dependency build ./drone-webapp-chart
     ```
 
-    The command should return a result similar to the following output.
+    The command should return a result similar to the following output:
 
     ```output
     Hang tight while we grab the latest from your chart repositories...
@@ -140,14 +137,14 @@ If you completed previous exercise, you'll find a cache copy of the Helm chart i
 
     An updated subchart named `common` is now available in the `charts/` folder. You can extract the contents of the `common-1.10.0.tgz` package if you're interested in its contents. However, unpacking the file isn't required to complete the installation of the chart.
 
-    Here is the command to unpack the file and list the folder contents:
+    Here's the command to unpack the file and list the folder contents:
 
     ```bash
     gzip -dc ./drone-webapp-chart/charts/common-1.10.0.tgz | tar -xf - -C ./drone-webapp-chart/charts/
     find drone-webapp-chart/ -print
     ```
 
-    The command should return a result similar to the following output. The output is shortened for brevity.
+    The command should return a result similar to the following output. We've shortened the output for brevity:
 
     ```bash
     drone-webapp-chart/
@@ -172,7 +169,7 @@ If you completed previous exercise, you'll find a cache copy of the Helm chart i
 
     Notice how the subchart also replicates the standard chart structure. It has a `Chart.yaml` file, a `values.yaml` file, and a `templates/` folder. However, there's a difference. All of the files in the templates folder end with the `.tpl` extension. These files contain custom functions used in the main chart.
 
-    Recall, a chart dependency isn't limited to other applications. You may decide to reuse template logic across your charts and create a dependency specific to manage this logic as a chart dependency.
+    Recall that a chart dependency isn't limited to other applications. You might decide to reuse template logic across your charts and create a dependency specific to manage this logic as a chart dependency.
 
 ## Review the chart `values.yaml` file
 
@@ -186,7 +183,7 @@ The `aspnet-core` Helm chart has an extensive set of configuration options avail
 
     There are a number of sections that are of interest in this file. Let's review two sections and how they impact the final deployed app.
 
-1. Search for the `image` value to see which image is used for the web app.
+1. Search for the `image` value to see which image is used for the web app:
 
     ```yaml
     ...
@@ -200,7 +197,7 @@ The `aspnet-core` Helm chart has an extensive set of configuration options avail
 
     Notice the `bitnami/aspnet-core` Docker image. This image is the app's base image and contains an installation of [ASP.NET Core](https://dotnet.microsoft.com/apps/aspnet).
 
-1. Search for the `appFromExternalRepo` value. You'll use these values you to generate the `deployment.yaml` manifest file. Here is an extract of the `appFromExternalRepo` section in the `values.yaml` file.
+1. Search for the `appFromExternalRepo` value. You'll use these values you to generate the `deployment.yaml` manifest file. Here's an extract of the `appFromExternalRepo` section in the `values.yaml` file:
 
     ```yml
     appFromExternalRepo:
@@ -227,7 +224,7 @@ The `aspnet-core` Helm chart has an extensive set of configuration options avail
         startCommand: ["dotnet", "drone-webapp.dll"]
     ```
 
-    There are several items specified in this section to note.
+    There are several items specified in this section to note:
 
     - The `bitnami/git` image
 
@@ -239,7 +236,7 @@ The `aspnet-core` Helm chart has an extensive set of configuration options avail
 
     Each of these values is used in the `templates/deployment.yaml` file.
 
-1. Next, search for the `ingress` value in the `values.yaml` file. You'll use these values to generate the `ingress.yaml` manifest file. Here is an extract of the `ingress` section in the `values.yaml` file.
+1. Next, search for the `ingress` value in the `values.yaml` file. You'll use these values to generate the `ingress.yaml` manifest file. Here's an extract of the `ingress` section in the `values.yaml` file:
 
     ```yml
     ingress:
@@ -258,13 +255,13 @@ The `aspnet-core` Helm chart has an extensive set of configuration options avail
 
 The values in the `values.yaml` file, is combined with the templates in the chart's `templates/` folder to create the final manifest files. It's helpful to review the contents of the `deployment.yaml` and the `ingress.yaml` files to get an overview of the deployment.
 
-1. Open the `templates/deployment.yaml` in the Cloud Shell editor.
+1. Open the `templates/deployment.yaml` in the Cloud Shell editor:
 
     ```bash
     code ./drone-webapp-chart/templates/deployment.yaml
     ```
 
-    Here is an extract of the files contents. The output is shortened for brevity.
+    Here's an extract of the files contents. We've shortened the output for brevity.
 
     ```yml
     apiVersion: {{ include "common.capabilities.deployment.apiVersion" . }}
@@ -311,9 +308,9 @@ The values in the `values.yaml` file, is combined with the templates in the char
           ...
     ```
 
-    Notice that this file has the structure of a Deployment manifest, but the final information that goes into the file, is dependent on values from the `values.yaml` file and template control flow logic.
+    Notice that this file has the structure of a Deployment manifest, but the final information that goes into the file is dependent on values from the `values.yaml` file and template control flow logic.
 
-    For example, the `spec.replicas` for this deployment is defined by `{{ .Values.replicaCount }}` and how container initialization is determined by the `.Values.appFromExternalRepo.enabled` value in the `{{- if .Values.appFromExternalRepo.enabled }}` statement. 
+    For example, the `spec.replicas` for this deployment is defined by `{{ .Values.replicaCount }}` and how container initialization is determined by the `.Values.appFromExternalRepo.enabled` value in the `{{- if .Values.appFromExternalRepo.enabled }}` statement.
 
     The rest of this section then makes use of the Git image and repository values to clone the repo and build the web app.
 
@@ -323,7 +320,7 @@ The values in the `values.yaml` file, is combined with the templates in the char
     code ./drone-webapp-chart/templates/ingress.yaml
     ```
 
-    Here is an extract of the files contents. The output is shortened for brevity.
+    Here's an extract of the file's contents. We've shortened the output for brevity.
 
     ```yml
     {{- if .Values.ingress.enabled -}}
@@ -346,25 +343,25 @@ The values in the `values.yaml` file, is combined with the templates in the char
 
 You're now ready to deploy the web app. You'll run the `helm install` command, which runs the template engine to create the various manifest files and deploy the chart release.
 
-1. Deploy the drone-webapp Helm chart by using the `helm install` command.
+1. Deploy the drone-webapp Helm chart by using the `helm install` command:
 
     ```bash
     helm install drone-webapp ./drone-webapp-chart
     ```
 
-    You can view the installation process by running the `kubectl get pods` command with the wait parameter. This parameter polls the result of the command and continuously updates the output. Use `Ctrl+c` to exit the command.
+    You can view the installation process by running the `kubectl get pods` command with the wait parameter. This parameter polls the result of the command and continuously updates the output. Use <kbd> Ctrl + C</kbd> to exit the command.
 
     ```bash
     kubectl get pods -w
     ```
 
-1. Once the web app is running, open die cluster's load balancer IP address in a browser to see the web app running. List the content of the `create-aks-exports.txt` file to find the IP address of the load balancer.
+1. Once the web app is running, open the cluster's load balancer IP address in a browser to see the web app running. List the content of the `create-aks-exports.txt` file to find the load balancer's IP address:
 
     ```bash
     cat ~/clouddrive/mslearn-aks/create-aks-exports.txt
     ```
 
-    Here is an example of the app running in a web browser.
+    Here's an example of the app running in a web browser.
 
     :::image type="content" source="../media/7-web-app-browser.png" alt-text="{alt-text}":::
 
@@ -372,20 +369,20 @@ You're now ready to deploy the web app. You'll run the `helm install` command, w
 
 The development team updated the source code of the web app. To deploy a new version, you'll use the `helm upgrade` command to create a delta of the latest changes to the app.
 
-1. Your first step is to list all Helm deployments by using the `helm list` command. This command allows you to see what the current revision count for all Helm releases.
+1. Your first step is to list all Helm deployments by using the `helm list` command. This command allows you to see what the current revision count for all Helm releases:
 
     ```bash
     helm list
     ```
 
-    The command should return a result similar to the following output.
+    The command should return a result similar to the following output:
 
     ```output
     NAME            NAMESPACE       REVISION        UPDATED                                 STATUS          CHART                   APP VERSION
     drone-webapp    default         1               2021-10-11 19:10:08.848253892 +0000 UTC deployed        aspnet-core-1.3.18      0.0.1
     ```
 
-1. Run the `helm history` command to view the history information about the drone-webapp.
+1. Run the `helm history` command to view the history information about the drone-webapp:
 
     ```bash
     helm history drone-webapp
@@ -402,7 +399,7 @@ The development team updated the source code of the web app. To deploy a new ver
     code ./drone-webapp-chart/Chart.yaml
     ```
 
-    Update the `appVersion` number to version `0.0.2` and run the following `helm upgrade` command.
+    Update the `appVersion` number to version `0.0.2`. Use <kbd>Ctrl + S</kbd> to save the change, then run the following `helm upgrade` command:
 
     ```bash
     helm upgrade drone-webapp ./drone-webapp-chart
@@ -414,7 +411,7 @@ The development team updated the source code of the web app. To deploy a new ver
     helm history drone-webapp
     ```
 
-    The command should return a result similar to the following output.
+    The command should return a result similar to the following output:
 
     ```output
     REVISION        UPDATED                         STATUS          CHART                   APP VERSION     DESCRIPTION
@@ -426,19 +423,19 @@ The development team updated the source code of the web app. To deploy a new ver
 
 Since the upgrade of the release, a number of customers reported errors on the website. The team asks you to roll back the release to the previous stable version of the app. You'll use the `helm rollback` command to roll back the app.
 
-1. Roll back the Helm release by using the `helm rollback` command and specifying the revision number of the release you're targeting.
+1. Roll back the Helm release by using the `helm rollback` command and specifying the revision number of the release you're targeting:
 
     ```bash
     helm rollback drone-webapp 1
     ```
 
-1. Once rollback is complete, view the Helm deployment history by using the `helm history` command.
+1. Once rollback is complete, view the Helm deployment history by using the `helm history` command:
 
     ```bash
     helm history drone-webapp
     ```
 
-    The command should return a result similar to the following output.
+    The command should return a result similar to the following output:
 
     ```output
     REVISION        UPDATED                         STATUS          CHART                   APP VERSION     DESCRIPTION

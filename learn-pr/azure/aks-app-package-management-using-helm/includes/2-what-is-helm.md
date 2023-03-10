@@ -1,8 +1,8 @@
-The deployment, versioning, and updating of any application usually require planning and management to ensure the correct versions of software libraries and configuration settings are deployed so that the deployed application functions as expected.
+The deployment, versioning, and updating of any application usually requires planning and management to ensure the correct versions of software libraries and configuration settings are deployed so that the deployed application functions as expected.
 
 :::image type="content" source="../media/2-deploy-with-yaml-files.svg" border="false" alt-text="A diagram that shows a container deployed to a Kubernetes node using a deployment, a service, and an ingress YAML file.":::
 
-Assume your development team decides to deploy your drone tracking company website to Kubernetes. As part of the process, your team creates deployment, service, and ingress YAML-based files. The information in each file is hardcoded for each target environment and maintained by hand. Maintaining three files for each environment is cumbersome and increases in complexity as the application grows.
+Assume your development team decides to deploy your drone-tracking company website to Kubernetes. As part of the process, your team creates deployment, service, and ingress YAML-based files. The information in each file is hardcoded for each target environment and maintained by hand. Maintaining three files for each environment is cumbersome and increases in complexity as the application grows.
 
 You can use Helm to simplify the application deployment process and avoid hardcoded deployment variables and settings.
 
