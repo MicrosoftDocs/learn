@@ -6,6 +6,7 @@ metadata:
   ms.date: 12/27/2022
   author:  eric-urban
   ms.author: eur
+  manager: nitinme
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Create your first Azure Cognitive Services text-to-speech application
