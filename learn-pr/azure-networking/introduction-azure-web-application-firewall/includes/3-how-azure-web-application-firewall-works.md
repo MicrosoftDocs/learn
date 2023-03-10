@@ -92,10 +92,11 @@ The IP restriction custom rule lets you control access to your web applications.
 
 By default, your web application is accessible from the Internet. However sometimes, you want to limit access to clients from a list of known IP address or IP address ranges. You can achieve this by creating an IP matching rule that blocks access to your web app from Ips not listed in the custom rule.
 
-
 ## Rate limiting
 
 Azure Web Application Firewall custom rules support rate limiting to control access based on matching conditions and the rates of incoming requests.
+
+This custom rule enables you to detect abnormally high levels of traffic and block some types of application layer denial of service attacks. Rate limiting also protects you against clients that have accidentally been misconfigured to send large volumes of requests in a short time period. The custom rule is defined by the rate limit counting duration (either one minute or five minute intervals) and the rate limit threshold (the maximum number of requests allowed in the rate limit duration).
 
 ## Detection mode vs prevention mode
 
