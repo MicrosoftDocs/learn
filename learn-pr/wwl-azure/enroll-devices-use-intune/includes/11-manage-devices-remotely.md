@@ -15,7 +15,7 @@ The **Overview** page is displayed by default. It shows the device name, and lis
      -  **Sync**. Forces the selected device to immediately check-in with Intune and immediately receives any pending actions or policies that have been assigned to it. This feature can help you immediately validate and troubleshoot policies you've assigned, without waiting for the next scheduled check-in.
      -  **Reset passcode (iOs/Android)**. A device level rest of the passcode for the entire device.
      -  **Restart**. Causes the device you choose to be restarted (within 5 minutes). The device owner isn't automatically notified of the restart, and they might lose work. Not supported for macOS or Android work profile devices.
-     -  **Fresh Start (Windows 10 and later only)**. Removes any apps that are installed on a PC. Fresh Start helps remove pre-installed (OEM) apps that are typically installed with a new PC.
+     -  **Fresh Start (Windows 10 and later only)**. Removes any apps that are installed on a PC. Fresh Start helps remove preinstalled (OEM) apps that are typically installed with a new PC.
      -  **AutoPilot Reset (Windows 10 and later only)**. Initiates the reset process, avoiding the need for IT staff or other administrators to visit each machine to initiate the process. Not supported on devices that were enrolled using Autopilot self-deploying mode.
      -  **Quick scan (Windows 10 and later only)**. Performs a Microsoft Defender quick scan. Looks at common locations where there could be malware registered, such as registry keys and known Windows startup folders.
      -  **Full scan (Windows 10 and later only)**. Performs a Microsoft Defender full scan.

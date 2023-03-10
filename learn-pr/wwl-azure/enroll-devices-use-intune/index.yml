@@ -7,6 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 title: Enroll devices using Microsoft Intune
 summary: Students will learn how to configure and setup Intune to more easily manage Windows, Android, and iOS devices.
 abstract: |

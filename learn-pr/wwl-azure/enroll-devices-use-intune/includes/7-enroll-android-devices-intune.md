@@ -10,7 +10,7 @@ To enroll an Android device using the Company Portal, perform the following step
 
 #### Android Enterprise
 
-Android Enterprise management makes it easier to define the scope of management for a particular device. This is helpful is balancing what information is managed by IT and what is managed by the device user or owner.
+Android Enterprise management makes it easier to define the scope of management for a particular device. This is helpful in balancing what information is managed by IT and what is managed by the device user or owner.
 
 **Android Enterprise work profile**. Intune helps you deploy apps and settings to Android work profile devices to ensure work and personal information are separate. After enrollment, management capabilities only affect the work profile that is created on the device during enrollment. Users can install any app they choose to the personal side of the device. Administrators can manage and monitor apps and actions scoped to the work profile. Note that Android work profiles are supported on only certain Android devices.
 
