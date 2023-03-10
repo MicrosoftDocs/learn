@@ -4,7 +4,7 @@ Suppose you're working in the pizza delivery company's website and you've create
 
 Here, you'll learn how to use layout components in Blazor to render common HTML on multiple pages.
 
-> [NOTE!]
+> [!NOTE]
 > The code blocks in this unit are illustrative examples. You'll write your own code in the next unit.
 
 ## What are Blazor layouts?

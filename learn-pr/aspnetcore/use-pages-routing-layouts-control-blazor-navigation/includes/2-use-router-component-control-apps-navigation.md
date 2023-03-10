@@ -4,7 +4,7 @@ Suppose you're working on the pizza delivery company's website. You want to set 
 
 Here, you'll learn how to configure routes in Blazor by using the `@page` directive. 
 
-> [NOTE!]
+> [!NOTE]
 > The code blocks in this unit are illustrative examples. You'll write your own code in the next unit.
 
 ## Using route templates
