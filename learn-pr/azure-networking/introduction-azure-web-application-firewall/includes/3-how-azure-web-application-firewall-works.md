@@ -70,11 +70,11 @@ Bot rules identify bad bots, good bots, and unknown bots based on Microsoft Thre
 
 The managed rules Azure Web Application Firewall offers might not cover a specific threat that your web applications are experiencing. If this is the case, you can create a custom rule. You can build custom rules by creating conditions that include the following components:
 
-- Variables such as RequestHeader, QueryString, RequestUri, RequestBody, Cookies, or PostArgs
+- Match type such as geo location, IP address, size, string
+- Match variables such as RequestHeader, QueryString, RequestUri, RequestBody, Cookies, or PostArgs
 - HTTP/HTTPS request methods such as POST or PUT
 - Operators such as **Equal** **Contains**, **Regex**, **Begins with**, **Any**, **Ends with**
 - An action such as **Allow**, **Block**, **Log or Redirect**
-- Size match
 
 ## Geo-filtering
 
@@ -111,3 +111,11 @@ In detection mode:
 - **False negatives**: Malicious requests that the firewall allows.
 
 Once the app is ready to be deployed, you'll switch to prevention mode.
+
+## Using Microsoft Sentinel with Azure WAF
+
+Azure WAF combined with Microsoft Sentinel can provide security information event management for WAF resources.  Using Microsoft Sentinel, you can access the WAF data connector to Sentinel using Log Analytics.  The WAF workbooks shows analytics for WAF on Azure Front Door and WAF on Application Gateway. The WAF analytic rules detect SQLi and XSS attacks from AFD and Application Gateway logs. The WAF Notebook allows investigation of SQL injection incidents on Azure Front Door.
+
+:::image type="content" source="../media/3-waf-sentinel-1.png" alt-text="Screenshot showing Sentinel WAF settings.":::
+
+:::image type="content" source="../media/3-waf-events.png" alt-text="Screenshot showing WAF events.":::
