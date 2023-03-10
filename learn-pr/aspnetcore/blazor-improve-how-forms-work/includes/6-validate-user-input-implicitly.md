@@ -86,7 +86,7 @@ To configure your form to use data annotation validation, first make sure you've
     <InputText id="chefemail" @bind-Value="pizza.ChefEmail" />
     <ValidationMessage For="@(() => pizza.ChefEmail)" />
     
-    <InputText id="price" @bind-Value="pizza.Price" />
+    <InputNumber id="price" @bind-Value="pizza.Price" />
     <ValidationMessage For="@(() => pizza.Price)" />
 </EditForm>
 
@@ -195,7 +195,7 @@ If you use `OnSubmit`, the other two events will not fire. Instead you can use t
     <InputText id="chefemail" @bind-Value="pizza.ChefEmail" />
     <ValidationMessage For="@(() => pizza.ChefEMail)" />
     
-    <InputText id="price" @bind-Value="pizza.Price" />
+    <InputNumber id="price" @bind-Value="pizza.Price" />
     <ValidationMessage For="@(() => pizza.Price" />
 </EditForm>
 
@@ -232,7 +232,7 @@ If you use `OnValidSubmit` and `OnInvalidSubmit` instead, you don't have to chec
     <InputText id="chefemail" @bind-Value="pizza.ChefEmail" />
     <ValidationMessage For="@(() => pizza.ChefEMail)" />
     
-    <InputText id="price" @bind-Value="pizza.Price" />
+    <InputNumber id="price" @bind-Value="pizza.Price" />
     <ValidationMessage For="@(() => pizza.Price" />
 </EditForm>
 
