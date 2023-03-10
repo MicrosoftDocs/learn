@@ -23,7 +23,7 @@ roles:
   - developer
   - student
 products:
-  - vs
+  - vs-code
 prerequisites: |
   - Basic knowledge of Python - syntax, writing and invoking functions, creating variables, reading inputs, and generating outputs from the Python console
   - Familiarity with using a text editor or IDE  

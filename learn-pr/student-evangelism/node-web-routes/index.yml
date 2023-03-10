@@ -20,7 +20,7 @@ levels:
 roles:
   - developer
 products:
-  - vs
+  - azure
 prerequisites: |
   - [Git](https://git-scm.com/?azure-portal=true) and [Node.js](https://nodejs.org/en/?azure-portal=true) installed
   on your computer
