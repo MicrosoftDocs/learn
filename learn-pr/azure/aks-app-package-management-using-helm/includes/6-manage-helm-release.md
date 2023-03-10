@@ -134,7 +134,7 @@ spec:
 
 When you have values defined several layers deep, your syntax can become lengthy and cumbersome when including these values in a template. The `with` action allows you to limit the scope of variables in a template.
 
-Recall, the `.` used in a Helm template references the current scope. For example, the `.Values` instructs the template engine to find the Values object in the current scope. Assume you're using the `values.yaml` file form earlier to create a configuration map manifest file.
+Recall, the `.` used in a Helm template references the current scope. For example, the `.Values` instructs the template engine to find the Values object in the current scope. Assume you're using the `values.yaml` file from earlier to create a configuration map manifest file.
 
 ```yml
 ingress:
@@ -187,7 +187,7 @@ A chart allows for the declaration of dependencies to support the main applicati
 
 :::image type="content" source="../media/6-helm-deploy-subchart-dependencies.svg" border="false" alt-text="A diagram shows how Helm deploys all subcharts as dependencies of the main chart to a Kubernetes cluster.":::
 
-You can either create a subchart using the `helm create` command, specifying the new chart's location in the `/charts` folder, or use the `helm dependency` command.  Recall from earlier that the `/charts` folder may contains subcharts deployed as part of the main chart's release.
+You can either create a subchart using the `helm create` command, specifying the new chart's location in the `/charts` folder, or use the `helm dependency` command.  Recall from earlier that the `/charts` folder may contain subcharts deployed as part of the main chart's release.
 
 The `helm dependency` command allows you to manage dependencies included from a Helm repository. The command uses metadata defined in the `dependencies` section of your chart's values file. You specify the name, version number, and the repository from where to install the sub chart. Here's an extract of a `values.yaml` file that has a MongoDB chart listed as a dependency:
 
