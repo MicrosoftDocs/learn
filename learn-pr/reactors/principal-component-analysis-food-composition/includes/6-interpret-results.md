@@ -135,8 +135,6 @@ Our second group is foods that are high in fiber and folic acid and low in chole
 
 Find the sorted output for $c_{3}$, $c_{4}$, and $c_{5}$.
 
-<br />
-
 <details>
 
   <summary>Hint <i>(expand to reveal)</i></summary>
@@ -161,8 +159,6 @@ Find the sorted output for $c_{3}$, $c_{4}$, and $c_{5}$.
   ```
 
 </details>
-
-<br /><br />
 
 ***
 
@@ -209,11 +205,10 @@ Soups, Sauces, and Gravies      1
 Poultry Products                1
 Name: FoodGroup, dtype: int64
 ```
+
 ### Try it yourself
 
 Repeat this process for $c_{3}$, $c_{4}$, and $c_{5}$.
-
-<br />
 
 <details>
 
@@ -233,10 +228,7 @@ Repeat this process for $c_{3}$, $c_{4}$, and $c_{5}$.
 
 </details>
 
-<br /><br />
-
 ***
-
 
 > [!NOTE]
 > The category **Baby Foods** and some other categories might seem to dominate the output. This is a result of all the rows we had to drop because they had `NaN` values. If we look at all of the value counts for the category **FoodGroup**, we'll see that they aren't evenly distributed. Some categories are far more represented than others.

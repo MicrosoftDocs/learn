@@ -65,8 +65,6 @@ mean:  -0.0
 
 Find the standard deviation for <code>nutr_df_TF</code>. If you need a hint for which method to use, see the [pandas documentation](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.std.html?azure-portal=true).
 
-<br />
-
 <details>
 
   <summary>Hint <i>(expand to reveal)</i></summary>
@@ -80,7 +78,3 @@ Find the standard deviation for <code>nutr_df_TF</code>. If you need a hint for 
   ```
 
 </details>
-
-<br /><br />
-
-***

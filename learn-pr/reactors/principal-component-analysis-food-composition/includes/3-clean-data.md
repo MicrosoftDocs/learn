@@ -27,8 +27,6 @@ Drop rows from the DataFrame that contain `NaN` values.
 
 </details>
 
-<br /><br />
-
 ***
 
 Now, let's see how many rows we have left:
@@ -88,8 +86,6 @@ The output is:
 
 Why was it necessary to structure the `iloc` method call the way we did in the preceding code? What did it accomplish? Why was it necessary to set the `desc_df` index to `NDB_No`?
 
-<br />
-
 <details>
 
   <summary>Hint <i>(expand to reveal)</i></summary>
@@ -109,16 +105,11 @@ Why was it necessary to structure the `iloc` method call the way we did in the p
 
 </details>
 
-<br /><br />
-
 ***
 
 ### Try it yourself
 
 Now, set the index of `nutr_df` to use `NDB_No`.
-
-
-<br />
 
 <details>
 
@@ -129,8 +120,6 @@ Now, set the index of `nutr_df` to use `NDB_No`.
   ```
 64325ab491d4e3f74988dda20972166c820afd
 </details>
-
-<br /><br />
 
 ***
 

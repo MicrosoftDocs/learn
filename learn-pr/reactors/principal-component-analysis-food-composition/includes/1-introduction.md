@@ -4,7 +4,7 @@ One way to reduce the number of dimensions is to reduce the number of features c
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you'll:
 
 - Learn the terms *principal component analysis (PCA)* and *eigenvector* and understand their functions in machine learning.
 - Learn about PCA theory, and then apply PCA to a food composition dataset.

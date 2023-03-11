@@ -113,8 +113,6 @@ memory usage: 3.7+ MB
 
 Can you think of a more concise way to check the number of rows and columns in a DataFrame?
 
-<br />
-
 <details>
 
   <summary>Hint <i>(expand to reveal)</i></summary>
@@ -145,7 +143,3 @@ Can you think of a more concise way to check the number of rows and columns in a
   ```
 
 </details>
-
-<br /><br />
-
-***
