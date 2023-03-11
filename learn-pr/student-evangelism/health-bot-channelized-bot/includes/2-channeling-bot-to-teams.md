@@ -13,7 +13,7 @@ A “Trigger” is responsible in order to carry out a specific operation. In th
 
 1. Select **Models** under **Language** in the left pane.
 
-2. Select the **Greetings** model.
+2. Select edit for the **Greetings** model.
 
 3. Change the **Intent Mapping** to **bot1** (the basic bot you created in the previous module) and then select **Save**:
 
