@@ -33,7 +33,7 @@ All capabilities that are available in the portal are also available through Pow
   
 Azure provides four levels of scope: management groups, subscriptions, resource groups, and resources. The following image shows an example of these layers.
  
-:::image type="content" source="../media/scope-levels.png" alt-text="Diagram showing Management levels scope from, Management Groupds, to subscriptions, resource groups, and then resources.":::
+:::image type="content" source="../media/scope-levels.png" alt-text="Diagram showing Management levels scope from, Management Groups, to subscriptions, resource groups, and then resources.":::
 
 You can apply management settings at any of these levels of scope. The level you select determines how widely the setting is applied. Lower levels inherit settings from higher levels. For example, when you apply a policy to the subscription, the policy is applied to all resource groups and resources in your subscription. When you apply a policy on the resource group, that policy is applied to the resource group and all its resources. However, that policy assignment doesn’t apply to other resource groups.
  
