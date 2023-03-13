@@ -1,5 +1,6 @@
 
 
+
 In this unit, you’ll learn about the native Azure tools for using Azure Resource Manager and Azure Resource Manager Templates to start deploying SAP on Azure infrastructure. Azure Resource Manager templates are an important step on the journey towards understanding how to gain the advantages of infrastructure as code (IaC). These advantages include:
 
 - Consistent configurations
