@@ -69,7 +69,3 @@ quiz:
     - content: /26 
       isCorrect: false 
       explanation: Incorrect. You should use a /24 setting. 
-
-
-
-  
