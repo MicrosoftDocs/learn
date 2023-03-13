@@ -12,11 +12,11 @@ metadata:
 durationInMinutes: 3
 quiz:
   questions:
-  - content: "Which of the following escape sequences would you use to add double quotes to your literal string?"
+  - content: "Which of the following escape sequences (without the space between the \\ and the character) would you use to add double quotes to your literal string?"
     choices:
     - content: "\\q"
       isCorrect: false
-      explanation: "Incorrect. \\q isn't a valid escape sequence."
+      explanation: "Incorrect. \\ q isn't a valid escape sequence."
     - content: "\\ '"
       isCorrect: false
       explanation: "Incorrect. \\ ' is the escape sequence for a single quote, not a double quote."
