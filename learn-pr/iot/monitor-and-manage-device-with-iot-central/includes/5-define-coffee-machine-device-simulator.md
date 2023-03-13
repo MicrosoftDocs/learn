@@ -19,7 +19,7 @@ In *Program.cs*, the `Main` method calls *SetupDeviceClientAsync* to:
 - Provision the device and send the `dtmi:com:example:ConnectedCoffeeMaker;1` model ID as payload.
 - Create a device client instance to connect to IoT Central.
 
-:::code language="cs" source="~/../iot-central-docs-samples/monitor-manage-device-with-iotcentral/Program.cs" id="Provisioning":::
+:::code language="csharp" source="~/../iot-central-docs-samples/monitor-manage-device-with-iotcentral/Program.cs" id="Provisioning":::
 
 The main method then creates a **CoffeeMaker** instance and calls the `PerformOperationsAsync` method to handle the interactions with IoT Central.
 
@@ -30,25 +30,25 @@ In *CoffeeMaker.cs*, the `PerformOperationsAsync` method:
 - Updates `DeviceWarrantyExpired` device twin reported property on the initial startup.
 - Starts a loop to send temperature and humidity telemetry, whether it's currently brewing and when a cup is detected every 1 second.
 
-:::code language="cs" source="~/../iot-central-docs-samples/monitor-manage-device-with-iotcentral/CoffeeMaker.cs" id="Workflow":::
+:::code language="csharp" source="~/../iot-central-docs-samples/monitor-manage-device-with-iotcentral/CoffeeMaker.cs" id="Workflow":::
 
 ### Telemetry
 
 The `SendTelemetryAsync` method sends telemetry in the format that the device model specifies.
 
-:::code language="cs" source="~/../iot-central-docs-samples/monitor-manage-device-with-iotcentral/CoffeeMaker.cs" id="Telemetry":::
+:::code language="csharp" source="~/../iot-central-docs-samples/monitor-manage-device-with-iotcentral/CoffeeMaker.cs" id="Telemetry":::
 
 ### Properties
 
 The model specifies the property names and data types to synchronize property values between the device and IoT Central via the device twin. The method `UpdateDeviceWarranty` sends the `DeviceWarrantyExpired` state of the device and the method `OptimalTemperatureUpdateCallbackAsync` handles `OptimalTemperature` changes that come from IoT Central.
 
-:::code language="cs" source="~/../iot-central-docs-samples/monitor-manage-device-with-iotcentral/CoffeeMaker.cs" id="Properties":::
+:::code language="csharp" source="~/../iot-central-docs-samples/monitor-manage-device-with-iotcentral/CoffeeMaker.cs" id="Properties":::
 
 ### Commands
 
 The model specifies the command names and parameters that the device should use. The methods `HandleMaintenanceModeCommand` and `HandleStartBrewingCommand` handle the commands sent from IoT Central.
 
-:::code language="cs" source="~/../iot-central-docs-samples/monitor-manage-device-with-iotcentral/CoffeeMaker.cs" id="Commands":::
+:::code language="csharp" source="~/../iot-central-docs-samples/monitor-manage-device-with-iotcentral/CoffeeMaker.cs" id="Commands":::
 
 ### Cloud properties and Views
 

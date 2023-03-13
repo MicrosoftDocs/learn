@@ -2,11 +2,12 @@ To validate your scenario before connecting a physical device you use use a devi
 
 Recall that in the IoT enabled coffee machines example, you'll connect a coffee machine simulator to IoT Central for monitoring telemetry such as water temperature and humidity, observe the state of the machine, set optimal temperature, receive warranty status, and send commands.
 
-Here, you'll simulate a device with a Node.js application and connect it to the Azure IoT Central application.
+Here, you'll simulate a device with a C# application and connect it to the Azure IoT Central application.
 
 ![An illustration showing a Coffee machine.](../media/6-coffee-machine.png)
 
 ## Get connection information
+<!-- TODO: Alternative approach. Device is registered in IoT Central but left unassigned. Device needs the ID Scope, Device ID, and key - all found in the IoT Central UI. Device must implement the DTDL model, sending the model ID is required to automatically assign the device to a device template. https://github.com/MicrosoftDocs/learn-pr/pull/29726/files#r1126320464 -->
 
 To run the Node.js application, you need the following configuration values:
 
@@ -25,7 +26,8 @@ To run the Node.js application, you need the following configuration values:
 
     ![Device connection information.](../media/6-device-connection.png)
 
-## Create a Node.js application
+<!-- TODO: Change to using a Csharp App -->
+## Create a C# application
 
 The following steps show you how to create a client application that implements the coffee machine device simulator.
 
@@ -62,7 +64,7 @@ The following steps show you how to create a client application that implements 
 
 1. Copy and paste the following code into the empty editor window:
 
-    :::code language="js" source="~/../iot-central-docs-samples/monitor-manage-device-with-iotcentral/CoffeeMaker.js":::
+    <!-- :::code language="js" source="~/../iot-central-docs-samples/monitor-manage-device-with-iotcentral/CoffeeMaker.js"::: -->
 
 1. Update the placeholders *`{ID scope}`*, *`{Device ID}`*, and *`{Device Primary key}`* at the top of this code with the connection information you made a note of previously.
 
@@ -177,4 +179,4 @@ Navigate to the **Telemetry** page for the coffee machine. You defined this page
 ![Screenshot showing the Telemetry page for the connected coffee machine device template.](../media/6-telemetry.png)
 
 > [!IMPORTANT]
-> It's recommended that you run the Node.js application no more than 60 minutes or so to prevent the application from sending you unwanted notifications/emails. Stopping the application when you're not working on the module also prevents you from exhausting the daily message quota.
+> It's recommended that you run the C# application no more than 60 minutes or so, to prevent the application from sending you unwanted notifications/emails. Stopping the application when you're not working on the module also prevents you from exhausting the daily message quota. You can add the flag `-n [TimeInSeconds]` to define the running time of the application.
