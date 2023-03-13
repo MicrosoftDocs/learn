@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/02/2022
+  ms.date: 03/13/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -16,7 +16,6 @@ content: |
   [!include[](includes/10-knowledge-check.md)]
 quiz:
   title: ""
-
   questions:
   - content: "Which Azure solution can supply transaction processing for the game?"
     choices:
@@ -29,7 +28,6 @@ quiz:
     - content: "Azure Service Bus topics"
       isCorrect: false
       explanation: "Incorrect. Azure Service Bus topics is better for multiple receivers with multiple destinations."
-  
   - content: "What option do you recommend for the software requirements?"
     choices:
     - content: "Azure Resource Manager (ARM) templates"
@@ -41,7 +39,6 @@ quiz:
     - content: "Azure Automation"
       isCorrect: true
       explanation: "Correct. Azure Automation gives you complete control of update management."
-  
   - content: "How should the events be handled in the game?"
     choices:
     - content: "Azure Event Hubs"
