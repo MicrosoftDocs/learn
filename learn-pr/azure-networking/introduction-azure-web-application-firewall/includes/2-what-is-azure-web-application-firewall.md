@@ -31,7 +31,7 @@ To help you evaluate Azure Web Application Firewall, here are some of its import
     > [!NOTE]
     > You can't modify or delete the managed rules offered by Azure Web Application Firewall. However, if a particular rule is problematic for your environment (for example, it blocks legitimate traffic to your web app) you can create exclusions or disable the rule, or rule set. You can also create custom rules to overwrite the default behavior.
 
-- **Bot rules**: The bot rules identify good bots and protects from bad bots. Bad bots are detected based on Microsoft Threat Intelligence.
+- **Bot rules**: The bot rules identify good bots and protect from bad bots. Bad bots are detected based on Microsoft Threat Intelligence.
 
 - **Custom rules**: If the managed rules offered by Azure Web Application Firewall don't cover a specific threat to your web application, you can create a custom rule.
 - **Modes**: Azure Web Application Firewall can operate in one of two modes: detection mode only logs requests that violate a rule, while prevention mode both logs and blocks requests that violate a rule.
