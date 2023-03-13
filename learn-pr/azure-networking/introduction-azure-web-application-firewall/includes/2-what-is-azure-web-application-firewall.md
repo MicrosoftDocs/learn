@@ -12,7 +12,7 @@ Most malicious tests of web apps check for the presence of one or more common vu
 - Cross-site scripting
 - Local and remote file inclusion
 - HTTP/HTTPS floods
-- HTTP/HTTPS request smuggling
+- Malicious bot attacks
 
 
 A common task in the web app development cycle involves writing code to close the most common security holes. Writing the security code requires time, expertise, and testing.
@@ -27,7 +27,7 @@ You can deploy Azure Web Application Firewall in minutes. Your web apps immediat
 
 To help you evaluate Azure Web Application Firewall, here are some of its important features:
 
-- **Managed rules**: The rules that Azure Web Application Firewall uses to detect and prevent common exploits are created, maintained, and updated by Microsoft's security team. If a rule changes, or a core rule set (refer to the following description) is modified, Microsoft updates Azure Web Application Firewall automatically and seamlessly.
+- **Managed rules**: The rules that Azure Web Application Firewall uses to detect and prevent common exploits are created, maintained, and updated by Microsoft's security team. If a rule changes, or a rule set (refer to the following description) is modified, Microsoft updates Azure Web Application Firewall automatically and seamlessly.
 
     > [!NOTE]
     > You can't modify or delete the managed rules offered by Azure Web Application Firewall. However, if a particular rule is problematic for your environment (for example, it blocks legitimate traffic to your web app) you can create exclusions or disable the rule, or rule set. You can also create custom rules to overwrite the default behavior.
@@ -57,5 +57,15 @@ The following table describes the most common types of malicious threats that Az
 |SQL injection|In a web form field, the attacker inserts (or "injects") text specially configured to trick the server into running SQL commands. These commands allow the attacker to access sensitive data, insert, update, or delete data, or run SQL operations.|
 
 All the exploits listed in the preceding table are only possible when the server trusts the input it receives. Writing code that checks for and sanitizes just these exploits would be difficult and time-consuming. Only a small fraction of the possible exploits a web app can face are represented in the previous table. Azure Web Application Firewall is designed to prevent these attacks and many more.
+
+## Sanitizing input
+
+The threats faced by modern web apps are varied and sophisticated. However, in most cases the reason exploits are possible is that the web app implicitly trusts the input it receives.
+
+For example, consider a web form that lets an authorized web app user sign in to the user's account. The form consists of just three elements:
+
+- A **Username** text box
+- A **Password** text box
+- A **Sign In** button
 
 <!-- Insert concept video here -->
