@@ -14,7 +14,7 @@ It's possible to choose which subscriptions and resource groups you want to rece
 
 :::image type="content" source="../media/3-advisor-configuration.png" alt-text=" Screenshot showing the Configuration pane in Azure Advisor." lightbox="../media/3-advisor-configuration.png":::
 
-You can configure the CPU utilization rule by subscription from the **VM right sizing** tab. Select the subscription to configure and choose **Edit**. You can set the CPU utilization rule to 5%, 10%, 15%, or 20%.
+You can configure the CPU utilization rule by subscription, from the **VM right sizing** tab. Select the subscription to configure and choose **Edit**. You can set the CPU utilization rule to 5%, 10%, 15%, or 20%.
 
 :::image type="content" source="../media/3-configure-vm-right-sizing.png" alt-text=" Screenshot showing the VM right sizing tab and the option to edit the CPU utilization rule." lightbox="../media/3-configure-vm-right-sizing.png":::
 
@@ -44,7 +44,7 @@ Alerts are driven by conditions. Here you have two mutually exclusive options:
 
 You can also configure action groups. An action group is a collection of notification preferences defined by the *owner* of an Azure subscription. Azure Monitor, Azure Service Health and Azure Advisor use action groups to notify users that an alert has been triggered.
 
-Finally, you can also specify some important details such as an alert rule name and an optional description (optional). You can also choose whether the alert is enabled or not when you create it, and specify a resource group where the alert will be saved.
+Finally, you can also specify some important details such as an alert rule name and an optional description. You can also choose whether the alert is enabled or not when you create it, and specify a resource group where the alert will be saved.
 
 :::image type="content" source="../media/3-create-alerts-action-groups.png" alt-text="Screenshot showing the action groups and alert details sections of the dialog for creating an Advisor alert." lightbox="../media/3-create-alerts-action-groups.png":::
 
@@ -58,9 +58,9 @@ You can configure e-mail reports in the **Recommendation digests** option, under
 
 Choose a subscription and select the frequency, recommendation category, and language options for your first digest.
 
-* Frequency: Choose from *Weekly*, *Bi-weekly*, and *Monthly*.
-* Recommendation category: Choose all or some of the categories *Reliability*, *Security*, *Performance*, *Operational excellence*, and *Cost*.
-* Language: Choose your preferred language from the dropdown list.
+* **Frequency**: Choose from *Weekly*, *Bi-weekly*, and *Monthly*.
+* **Recommendation** category: Choose all or some of the categories *Reliability*, *Security*, *Performance*, *Operational excellence*, and *Cost*.
+* **Language**: Choose your preferred language from the dropdown list.
 
 You can associate the digest with an existing action group, or create a new one, and give the digest a name. You can disable a recommendation digest if you want to pause the summaries.
 

@@ -21,7 +21,7 @@ quiz:
       explanation: "Incorrect. Azure Advisor can help on security issues, but isn't limited to them."
     - content: "Azure Advisor scans your Azure configuration and recommends changes to optimize deployments, increase security, and save you money."
       isCorrect: true
-      explanation: "Correct. Azure Advisor is like a cloud consultant working for you. Azure Advisor helps you follow best practices to optimize your Azure deployments."
+      explanation: "Correct. Azure Advisor is a personalized cloud consultant. Azure Advisor helps you follow best practices to optimize your Azure deployments."
     - content: "Azure Advisor is a monitoring tool for your environment."
       isCorrect: false
       explanation: "Incorrect. Azure Advisor isn't a monitoring tool."
@@ -32,10 +32,10 @@ quiz:
       explanation: "Correct. Azure Advisor aligns recommendations with the five pillars of architectural excellence described in the Azure Well-Architected Framework."
     - content: "Cost, Interoperability, Availability, Performance"
       isCorrect: false
-      explanation: "Incorrect. Those aren't the pillars for which Azure Advisor provide recommendations."
+      explanation: "Incorrect. Those aren't the pillars for which Azure Advisor provides recommendations."
     - content: "Security, Performance, Spend, Business Continuity, Availability"
       isCorrect: false
-      explanation: "Incorrect. Those aren't the cloud pillars for which Azure Advisor provide recommendations."
+      explanation: "Incorrect. Those aren't the cloud pillars for which Azure Advisor provides recommendations."
   - content: "Azure Advisor is capable of:"
     choices:
     - content: "Providing recommendations over all Azure Services."
