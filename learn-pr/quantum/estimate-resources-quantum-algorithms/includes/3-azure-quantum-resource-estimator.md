@@ -58,8 +58,6 @@ The Azure Quantum Resource Estimator provides three pre-defined QEC schemes: two
 
 Pre-defined QEC schemes can be selected by specifying the `name` field in the `qecScheme`. Pre-defined QEC schemes can also be customized by specifying the name and then updating any of the other values. For example, you can update the time to execute a single logical operation, which depends on the code distance and the physical operation time assumptions of the underlying physical qubits. To update `"logicalCycleTime"`, write:
 
-to increase the crossing pre-factor in the floquet code, write:
-
 ```JSON
 {
     "qecScheme": {
