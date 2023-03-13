@@ -16,7 +16,7 @@ abstract: |
   - Make an informed decision about securing your network.
   - Manage and deliver access management and authorization.  
   - Protect, encrypt, and mask data.
-  - Manage and monitor security for your Azure SQL Database instance and Azure SQL managed instance.
+  - Manage and monitor security for your Azure SQL Database.
 prerequisites: | 
   - Experience working with, maintaining, and developing with SQL Server
   - Experience with Azure, such as deploying and managing resources
@@ -30,7 +30,6 @@ roles:
 products:
 - azure
 - azure-sql-database
-- azure-sql-managed-instance
 subjects:
 - cloud-security
 units:
