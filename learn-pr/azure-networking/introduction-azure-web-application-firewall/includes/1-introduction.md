@@ -1,4 +1,4 @@
-Azure Web Application Firewall is an Azure service that protects web applications from common attacks such as SQL injection and cross-site scripting. The protection extends beyond OWASP top 10 attacks using Microsoft Threat Intelligence.  It can also detect malicious bot attacks, API attacks, and application layer DDoS attacks.
+Azure Web Application Firewall is an Azure service that protects web applications from common attacks such as SQL injection and cross-site scripting. The protection extends beyond OWASP (Open Worldwide Application Security Project) top 10 attacks.  It can also detect malicious bot attacks, API attacks, and application layer DDoS attacks.
 
 Suppose you work for Contoso, Ltd., a financial-services company in Seattle with major offices located throughout the world. Contoso's compute environment runs as Azure virtual network resources. These resources include several existing and planned web applications that serve customers, vendors, and employees.
 
