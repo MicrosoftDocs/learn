@@ -2,7 +2,7 @@ The device developer must make sure that the device implements the behaviors def
 
 In the IoT enabled coffee machines example you'll simulate a device to validate your scenario before connecting a physical device.
 
-Here, you'll see how a device developer uses the device model defined in the *CoffeeMaker.json*, to write a Node.js application that will simulate a coffee machine.
+Here, you'll see how a device developer uses the device model defined in the *CoffeeMaker.json*, to write a C# application that will simulate a coffee machine.
 
 ## IoT Plug and Play conventions
 
@@ -12,41 +12,43 @@ The [Azure IoT device SDKs](/azure/iot-hub/iot-hub-devguide-sdks) include suppor
 
 ## Review the code
 
-The [Sample code for Azure IoT Central Documentation](https://github.com/Azure-Samples/iot-central-docs-samples) GitHub repository contains the sample code. You can open the [CoffeeMaker.js](https://github.com/Azure-Samples/iot-central-docs-samples/blob/main/monitor-manage-device-with-iotcentral/CoffeeMaker.js) file to see the entire code.
+The [Sample code for Azure IoT Central Documentation](https://github.com/Azure-Samples/iot-central-docs-samples) GitHub repository contains the sample code. You can open the [CoffeeMaker.cs](https://github.com/Azure-Samples/iot-central-docs-samples/blob/main/monitor-manage-device-with-iotcentral/CoffeeMaker.cs), [Program.cs](https://github.com/Azure-Samples/iot-central-docs-samples/blob/main/monitor-manage-device-with-iotcentral/Program.cs) and [Parameters.cs](https://github.com/Azure-Samples/iot-central-docs-samples/blob/main/monitor-manage-device-with-iotcentral/Parameters.cs) files to see the entire code.
 
-The `provisioningClient` object:
+In *Program.cs*, the `Main` method calls *SetupDeviceClientAsync* to:
 
-- Sets the `dtmi:com:example:ConnectedCoffeeMaker;1` model ID before it registers the device.
-- Opens the connection in the `centralClient` object.
+- Provision the device and send the `dtmi:com:example:ConnectedCoffeeMaker;1` model ID as payload.
+- Create a device client instance to connect to IoT Central.
 
-:::code language="js" source="~/../iot-central-docs-samples/monitor-manage-device-with-iotcentral/CoffeeMaker.js" id="ProvisioningClient":::
+:::code language="cs" source="~/../iot-central-docs-samples/monitor-manage-device-with-iotcentral/Program.cs" id="Provisioning":::
 
-The `connectCallback` method:
+The main method then creates a **CoffeeMaker** instance and calls the `PerformOperationsAsync` method to handle the interactions with IoT Central.
 
+In *CoffeeMaker.cs*, the `PerformOperationsAsync` method:
+
+- Sets handlers to receive `SetMaintenanceMode` and `StartBrewing` command callbacks.
+- Sets handler to handle `OptimalTemperature` desired property changes on device twin.
+- Updates `DeviceWarrantyExpired` device twin reported property on the initial startup.
 - Starts a loop to send temperature and humidity telemetry, whether it's currently brewing and when a cup is detected every 1 second.
-- Creates command handlers for two commands: `SetMaintenanceMode` and `StartBrewing`.
-- Sends device properties via the device twin `DeviceWarrantyExpired` *read-only* property.
-- Creates a *writable* property handler - `handleSettings`,  to set the optimal water temperature that comes from IoT Central via the device twin.
 
-:::code language="js" source="~/../iot-central-docs-samples/monitor-manage-device-with-iotcentral/CoffeeMaker.js" id="ConnectCallback":::
+:::code language="cs" source="~/../iot-central-docs-samples/monitor-manage-device-with-iotcentral/CoffeeMaker.cs" id="Workflow":::
 
 ### Telemetry
 
-The function `sendTelemetry` sends telemetry in the format that the device model specifies.
+The `SendTelemetryAsync` method sends telemetry in the format that the device model specifies.
 
-:::code language="js" source="~/../iot-central-docs-samples/monitor-manage-device-with-iotcentral/CoffeeMaker.js" id="Telemetry":::
+:::code language="cs" source="~/../iot-central-docs-samples/monitor-manage-device-with-iotcentral/CoffeeMaker.cs" id="Telemetry":::
 
 ### Properties
 
-The model specifies the property names and data types to synchronize property values between the device and IoT Central via the device twin. The function `sendDeviceProperties` sends the `warrantyState` of the device and the function `handleSettings` handles `OptimalTemperature` changes that come from IoT Central.
+The model specifies the property names and data types to synchronize property values between the device and IoT Central via the device twin. The method `UpdateDeviceWarranty` sends the `DeviceWarrantyExpired` state of the device and the method `OptimalTemperatureUpdateCallbackAsync` handles `OptimalTemperature` changes that come from IoT Central.
 
-:::code language="js" source="~/../iot-central-docs-samples/monitor-manage-device-with-iotcentral/CoffeeMaker.js" id="Properties":::
+:::code language="cs" source="~/../iot-central-docs-samples/monitor-manage-device-with-iotcentral/CoffeeMaker.cs" id="Properties":::
 
 ### Commands
 
-The model specifies the command names and parameters that the device should use. The functions `onCommandMaintenance` and `onCommandStartBrewing` handle the commands sent from IoT Central.
+The model specifies the command names and parameters that the device should use. The methods `HandleMaintenanceModeCommand` and `HandleStartBrewingCommand` handle the commands sent from IoT Central.
 
-:::code language="js" source="~/../iot-central-docs-samples/monitor-manage-device-with-iotcentral/CoffeeMaker.js" id="Commands":::
+:::code language="cs" source="~/../iot-central-docs-samples/monitor-manage-device-with-iotcentral/CoffeeMaker.cs" id="Commands":::
 
 ### Cloud properties and Views
 
