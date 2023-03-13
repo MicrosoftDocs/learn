@@ -15,7 +15,7 @@ Joining a device to Azure AD is not a complicated procedure. You can do it right
 
 5.  Enter the credentials that were provided to you by your organization, and then select **Sign in**.
     
-    :::image type="content" source="../media/work-account-sign-419af822.png" alt-text="Screenshot of the Sign in screen":::
+    :::image type="content" source="../media/work-account-sign-419af822.png" alt-text="Screenshot of the Sign in screen.":::
     
 
 6.  Your device locates a matching tenant in Azure AD. If you’re in a federated domain, you’re redirected to your on-premises Secure Token Service (STS) server, for example, Active Directory Federation Services (AD FS).
