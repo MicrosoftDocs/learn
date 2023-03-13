@@ -3,11 +3,11 @@ Congratulations! You've saved the space fleet against invaders by estimating the
 In this module, you've learned:
 
 - What resource estimation is
-- How to enable the Azure Quantum Resource Estimator in your workspace
-- How to submit a resource estimation job to Azure Quantum
-- How to customize the input parameters of a resource estimation job
-- How to get the most out of the Azure Quantum Resource Estimator
-- How to estimate the resources of a quantum algorithm, and compare different qubit technologies and architectures
+- How to enable the Azure Quantum Resource Estimator in your workspace.
+- How to submit a resource estimation job to Azure Quantum.
+- How to customize the input parameters of a resource estimation job.
+- How to get the most out of the Azure Quantum Resource Estimator.
+- How to estimate the resources of a quantum algorithm, and compare different qubit technologies and architectures.
 
 
 ## Next steps
@@ -22,6 +22,6 @@ Now that you understand resource estimation,  you can perform a number of experi
 ## Learn more
 
 - Check the [Resource Estimator sample gallery](https://github.com/microsoft/Quantum/tree/main/samples/azure-quantum/resource-estimation) for more resource estimation sample notebooks. 
-- [Learn how the Resource Estimator works](/azure/quantum/learn-how-the-resource-estimator-works)
-- [Get the most out of the Azure Quantum Resource Estimator](/azure/quantum/how-to-work-with-re)
-- [Resource estimation with QIR](/azure/quantum/tutorial-resource-estimator-qir)
+- [Learn how the Resource Estimator works](/azure/quantum/learn-how-the-resource-estimator-works).
+- [Get the most out of the Azure Quantum Resource Estimator](/azure/quantum/how-to-work-with-re).
+- [Resource estimation with QIR](/azure/quantum/tutorial-resource-estimator-qir).

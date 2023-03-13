@@ -6,7 +6,7 @@
 
 **Initial Access**: The adversary is trying to get into your network.
 
-Initial Access consists of techniques that use various entry vectors to gain their initial foothold within a network. Techniques used to gain a foothold include targeted spear phishing and exploiting weaknesses on public-facing web servers. Footholds gained through initial access may allow for continued access, like valid accounts and use of external remote services, or maybe limited use due to changing passwords.
+Initial Access consists of techniques that use various entry vectors to gain their initial foothold within a network. Techniques used to gain a foothold include **targeted spear phishing** and **exploiting weaknesses** on **public-facing web servers**. Footholds gained through initial access may allow for continued access, like valid accounts and use of external remote services, or maybe limited use due to changing passwords.
 
 **Execution**: The adversary is trying to run malicious code.
 
@@ -31,23 +31,23 @@ These techniques often overlap with Persistence techniques, as Operating System 
 
 **Defense Evasion**: The adversary is trying to avoid detection.
 
-Defense Evasion consists of techniques that adversaries use to avoid detection throughout their compromise. Techniques used for defense evasion include uninstalling/disabling security software or obfuscating/encrypting data and scripts. Adversaries also apply and abuse trusted processes to hide and masquerade their malware. Other tactics’ techniques are cross-listed when those techniques include the added benefit of subverting defenses.
+Defense Evasion consists of techniques that adversaries use to avoid detection throughout their compromise. Techniques used for defense evasion include **uninstalling/disabling security software** or **obfuscating/encrypting data** and **scripts**. Adversaries also apply and abuse trusted processes to hide and masquerade their malware. Other tactics’ techniques are cross-listed when those techniques include the added benefit of subverting defenses.
 
 **Credential Access**: The adversary is trying to steal account names and passwords.
 
-Credential Access consists of techniques for stealing credentials like account names and passwords. Techniques used to get credentials include keylogging or credential dumping. Using legitimate credentials can give adversaries access to systems, make them harder to detect, and provide the opportunity to create more accounts to help achieve their goals.
+Credential Access consists of techniques for **stealing credentials** like **account names** and **passwords**. Techniques used to get credentials include keylogging or credential dumping. Using legitimate credentials can give adversaries access to systems, make them harder to detect, and provide the opportunity to create more accounts to help achieve their goals.
 
 **Discovery**: The adversary is trying to figure out your environment.
 
-Discovery consists of techniques an adversary may use to learn about the system and internal network. These techniques help adversaries observe the environment and orient themselves before deciding how to act. They also allow adversaries to explore what they can control and what’s around their entry point in order to discover how it could benefit their current objective. Native operating system tools are used toward this post-compromise information-gathering objective.
+Discovery consists of techniques an adversary may use to learn about the system and internal network. These techniques help adversaries observe the environment and familiarize themselves before deciding how to act. They also allow adversaries to explore what they can control and what’s around their entry point in order to discover how it could benefit their current objective. Native operating system tools are used toward this post-compromise information-gathering objective.
 
 **Lateral Movement**: The adversary is trying to move through your environment.
 
-Lateral Movement consists of techniques that adversaries use to enter and control remote systems on a network. Following through on their primary objective often requires exploring the network to find their target and later gaining access to it. Reaching their objective often involves pivoting through multiple systems and accounts to gain. Adversaries might install their own remote access tools to accomplish Lateral Movement or use legitimate credentials with native network and operating system tools, which may be stealthier.
+Lateral Movement consists of techniques that adversaries use to **enter and control remote systems on a network**. Following through on their primary objective often requires exploring the network to find their target and later gaining access to it. Reaching their objective often involves pivoting through multiple systems and accounts to gain. Adversaries might install their own remote access tools to accomplish Lateral Movement or use legitimate credentials with native network and operating system tools, which may be stealthier.
 
 **Collection**: The adversary is trying to gather data of interest to their goal.
 
-The collection consists of techniques adversaries may use to gather information and the sources information is collected from **that** **'s** relevant to following through on the adversary's objectives. Frequently, the next goal after collecting data is to steal (exfiltrate) the data. Common target sources include various drive types, browsers, audio, video, and email. Common collection methods include capturing screenshots and keyboard input.
+The collection consists of techniques adversaries may use to gather information and the sources information is collected from that's relevant to following through on the adversary's objectives. Frequently, the next goal after collecting data is to steal (**exfiltrate**) the data. Common target sources include various drive types, browsers, audio, video, and email. Common collection methods include capturing screenshots and keyboard input.
 
 **Command-and-Control**: The adversary is trying to communicate with compromised systems to control them.
 

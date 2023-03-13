@@ -4,12 +4,11 @@ title: Exercise - Customize directory branding
 metadata:
   title: Exercise - Customize directory branding
   description: In this exercise, you'll apply a custom background and logo to the Azure sign-in page.
-  ms.date: 11/18/2019
+  ms.date: 03/08/2022
   author: Justinha
   ms.author: justinha
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5
-azureSandbox: true
 content: |
   [!include[](includes/5-exercise-customize-directory-branding.md)]

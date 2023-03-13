@@ -63,7 +63,7 @@ quiz:
     - content: "When many replacements are needed, it can make a program slower."
       isCorrect: false
       explanation: "Incorrect. Although `%` formatting isn't the fastest, slowness isn't a result of the replacements."
-    - content: "When many replacements are needed, it can make the code harder to read."
+    - content: "The code can be harder to read when many replacements are needed."
       isCorrect: true
       explanation: "Correct! Using `%` can become verbose with many replacements."
     - content: "It isn't possible to replace more than nine variables."

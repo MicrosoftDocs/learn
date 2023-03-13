@@ -4,7 +4,7 @@ metadata:
   moduleType: standard
   title: Share Bicep modules by using private registries
   description: Work with reusable Bicep modules by using Bicep registries. Create a private registry for your organization. Publish and consume modules by using your organization's registry.
-  ms.date: 02/10/2022
+  ms.date: 03/06/2023
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial
@@ -23,10 +23,10 @@ prerequisites: |
   - Bicep, including how to use modules and parameters, and how to deploy Bicep files to Azure.
   - Azure, including the Azure portal, subscriptions, resource groups, and resources.
 
-  To work through the exercises, you'll also need the following installed locally:
-  
-  - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true).
-  - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep&azure-portal=true).
+  To work through the exercises, you also need the following items installed locally:
+
+  - [Visual Studio Code](https://code.visualstudio.com).
+  - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep).
   - The latest [Azure CLI](/cli/azure/install-azure-cli) tools *or* the latest [Azure PowerShell](/powershell/azure/install-az-ps) version.
 iconUrl: /training/achievements/bicep/share-bicep-modules-using-private-registries.svg
 levels:

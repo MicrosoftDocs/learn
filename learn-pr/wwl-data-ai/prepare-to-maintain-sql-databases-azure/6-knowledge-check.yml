@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/21/2023
+  ms.date: 03/06/2023
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: interactive-tutorial
@@ -22,7 +22,7 @@ quiz:
     - content: "Premium SSD"
       isCorrect: false
       explanation: "Incorrect. Premium SSD doesn't offer the lowest latency of the three storage types."
-    - content: "Untra disks"
+    - content: "Ultra disks"
       isCorrect: true
       explanation: "Correct. Ultra Disk offers the lowest latency of the three storage types."
     - content: "Standard SSD"
