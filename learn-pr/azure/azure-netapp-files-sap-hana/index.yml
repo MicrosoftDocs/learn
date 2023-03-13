@@ -18,7 +18,8 @@ abstract: |
     - Steps for connecting the SAP HANA VM with Azure NetApp Files 
 prerequisites: |
   - Basic understanding of Azure virtual machines.
-  -	Basic understanding of Linux virtual machines in Azure. - Basic understanding of Azure NetApp Files and file shares. 
+  - Basic understanding of Linux virtual machines in Azure. 
+  - Basic understanding of Azure NetApp Files and file shares. 
 iconUrl: /training/achievements/introduction-to-azure-netapp-files.svg
 levels:
   - intermediate
