@@ -21,7 +21,7 @@ abstract: |
 prerequisites: | 
   - An Azure subscription
   - Local installations of Java JDK (11 or later), Maven (3.8 or later), Docker Desktop, and the Azure CLI (2.40 or later)
-iconUrl: /training/achievements/deploy-java-quarkus-aca-postgres.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
 roles:
