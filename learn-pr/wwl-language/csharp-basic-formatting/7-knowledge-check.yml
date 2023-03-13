@@ -14,13 +14,13 @@ quiz:
   questions:
   - content: "Which of the following escape sequences would you use to add double quotes to your literal string?"
     choices:
-    - content: "\\q"
+    - content: "`\\q`"
       isCorrect: false
       explanation: "Incorrect. \\q isn't a valid escape sequence."
-    - content: "`\'"
+    - content: "`\\'`"
       isCorrect: false
       explanation: "Incorrect. \\' is the escape sequence for a single quote, not a double quote."
-    - content: "`\\""
+    - content: "`\\"`"
       isCorrect: true
       explanation: "Correct!"
   - content: "Which of the following lines of code correctly uses string interpolation assuming that the variable `value` is a string?"
