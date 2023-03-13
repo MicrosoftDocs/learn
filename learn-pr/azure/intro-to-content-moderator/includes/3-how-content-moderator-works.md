@@ -12,11 +12,13 @@ The Content Moderator service can be accessed through REST or by using the appro
 
 ## Moderating text
 
-You can call a single method in the API, **ModerateText**, to scan text in a file. You specify the input file and an output file in the method call. The service will scan the text in the file and return the results in the output file. The API will return a JSON formatted result back to the calling application. Using a sample text input of:
+You can call a single method in the API, **ModerateText**, to scan text in a file. You specify the input file and an output file in the method call. The service scans the text in the file and returns the results in the output file. The API returns a JSON formatted result back to the calling application. Using a sample text input of:
 
+```text
 "Is this a janky email abcdef@abcd.com, phone: 6657789887, IP: 255.255.255.255, 1 Microsoft Way, Redmond, WA 98052"
+```
 
-The service will identify some personal data (email, phone, IP, and address). It will also classify the text with a review recommendation.
+The service identifies some personal data (email, phone, IP, and address), and then classifies the text with a review recommendation.
 
 ```json
 {
@@ -76,7 +78,7 @@ The service will identify some personal data (email, phone, IP, and address). It
 
 ## Moderating images
 
-Using the service for image moderation requires the images to be accessible through a URL. If you have multiple images, you would place the URLs for each image as a separate line item in a text file and send that to the service.  Each image will be evaluated separately by the service.
+Using the service for image moderation requires the images to be accessible through a URL. If you have multiple images, you place the URLs for each image as a separate line item in a text file and send that to the service. The service evaluates each image separately.
 
 When the image has been evaluated, a JSON result is returned indicating a score and classification for the adult and racy categories.
 
@@ -103,4 +105,4 @@ When the image has been evaluated, a JSON result is returned indicating a score 
 }
 ```
 
-The image API also offers the ability to run the face detection, perform OCR to scan text in the image, or performing image matching against a custom image list.  Each API call is a separate function.
+The image API also offers the ability to run face detection, perform OCR to scan text in the image, or perform image matching against a custom image list. Each API call is a separate function.
