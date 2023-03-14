@@ -35,7 +35,7 @@ export DEVICE_KEY=<The Primary key you made a note of previously>
 
 Print the environment variables and confirm they are correctly defined.
 
-```azurecli-interactive
+```azurecli
 printenv ID_SCOPE DEVICE_ID DEVICE_KEY
 ```
 
@@ -55,7 +55,7 @@ The following steps show you how to create a client application that implements 
 
 1. Execute the following command in the Cloud Shell to download the source files in your `coffee-maker` folder:
 
-    ```azurecli-interactive
+    ```azurecli
     wget https://raw.githubusercontent.com/Azure-Samples/iot-central-docs-samples/main/monitor-manage-device-with-iotcentral/CoffeeMaker-csharp.csproj
     wget https://raw.githubusercontent.com/Azure-Samples/iot-central-docs-samples/main/monitor-manage-device-with-iotcentral/CoffeeMaker.cs
     wget https://raw.githubusercontent.com/Azure-Samples/iot-central-docs-samples/main/monitor-manage-device-with-iotcentral/Parameters.cs
