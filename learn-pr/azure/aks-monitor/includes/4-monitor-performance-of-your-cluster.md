@@ -1,10 +1,10 @@
 Once you enable Container insights on a cluster, you can monitor the performance and health status of the cluster components and their workloads. Start with a summary view of all of your monitored clusters and then drill into the details of a particular cluster using built-in workbooks.
 
-    :::image type="content" source="../media/image4.png" lightbox="../media/image4.png" alt-text="Screenshot of a list of all containers and their status in Container insights." border="true":::
+   :::image type="content" source="../media/monitored-clusters.png" lightbox="../media/monitored-clusters.png" alt-text="Screenshot of a list of all containers and their status in Container insights." border="true":::
 
-On the **Monitored clusters** tab, you learn the following for each of your monitored clusters:
+The **Monitored clusters** tab presents the following information for each of your monitored clusters:
 
-- How many clusters are in a critical or unhealthy state, versus how many are healthy or not reporting.
+- Custer status summary, showing a count of clusters for each status.
 - Whether all of the AKS deployments are healthy.
 - How many nodes and user and system pods are deployed per cluster.
 - How much disk space is available and if there's a capacity issue.

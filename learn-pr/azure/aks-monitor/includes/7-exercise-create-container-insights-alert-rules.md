@@ -3,25 +3,34 @@ In this exercise, you’ll enable an alert rule and action group to send you a t
 ## Create alert rule for Node CPU
 
 1. From your AKS cluster, select **Insights**.
-1. At the top of the screen, select **Recommended alerts**. This displays a list of recommended alert rules. 
-   
-   :::image type="content" source="../media/image16.png" lightbox="../media/image16.png" alt-text="Screenshot to select recommended alerts" border="true":::
+1. At the top of the screen, select **Recommended alerts**.  
+1. Select **Enable** to enable metrics on your cluster. if the button appears
 
-2. Locate the alert with the **Rule Name** _Node CPU%_. Click the slider in the **Status** column to change its status to _Enabled_.
-3. Click on the _Node CPU%_ name. This will allow you to view the details of the alert rule. 
-4. Notice the **Condition** section. It contains a description of the details condition _Whenever the average cpuusagepercentage is greater than 80%_. This means that the alert will fire when the CPU of the node exceeds 80%. The alert will be resolved when the CPU drops below this value.
-5. You can click on the condition to modify the threshold if you want, but we’ll leave it at the default. 
+    >[!Note]
+    > It may take 60 minutes for the required permissions to propagate after you enable metrics. 
+
+1. Locate the alert with the *Node CPU%* rule. Select the switch in the **Status** column to change the status to *Enabled*.
+1. Select  the *Node CPU%* title to view the details of the alert rule.  
+  :::image type="content" source="../media/container-insights-recommended-alerts.png" lightbox="../media/container-insights-recommended-alerts.png" alt-text="A screenshot showing the insights page on an AKS cluster" border="true":::
+
+1. Notice the **Condition** section. It contains a description of the details condition *Whenever the average cpuusagepercentage is greater than 80%*. This means that the alert will fire when the CPU of the node exceeds 80%. The alert will be resolved when the CPU drops below this value.
+1. You can select the condition to modify the threshold, but for this exercise, we’ll leave it at the default. 
+
 
 ## Create action group
 
-1. Click the message **No action group assigned** to create an action group and assign it to the rule that you just enabled.
-1. Click **Create action group** to create a new one.
-1. Provide an **Action group name** and **Display name** for the new action group and then click on the **Notifications** tab.
-1. Select a **Notification type** of _Email/SMS message/Push/Voice_. 
+1. Select the message **No action group assigned** to create an action group and assign it to the rule that you just enabled.
+
+1. Select **Create action group** to create a new one.
+1. Provide an **Action group name** and **Display name** for the new action group and then click on the **Notifications** tab.  
+    :::image type="content" source="../media/create-action-group-basics.png" lightbox="../media/create-action-group-basics.png" alt-text="A screen shot showing the create action group basics tab.":::
+1. Select a **Notification type** of *Email/SMS message/Push/Voice*.
 1. Select **SMS** and then type in your phone number to receive the text message.
+   :::image type="content" source="../media/action-group-notifications.png" lightbox="../media/action-group-notifications.png" alt-text="A screen shot showing the notifications tab of the create action group page.":::
 1. Provide a **Name** for the entry and then click **Review + create** to save the action group.
-1. You should receive a text message confirming that your phone is included in the action group.
-1. In the **Action Groups** list, select your new action group and select **Apply to rule**.
+1. A text message is sent to your phone confirming that it is included in the action group.
+1. In the **Action Groups** list, select your new action group and select **Apply to rule**.  
+    :::image type="content" source="../media/actions-groups-apply.png" lightbox="../media/actions-groups-apply.png" alt-text="A screen shot showing the action group to apply to the alert rule.":::
 
 ## Create alert rule for restarting container
 
@@ -29,25 +38,25 @@ The Node CPU alert will be difficult to simulate for a test application, so enab
 
 1. Locate the alert with the **Rule Name** _Restarting container count_. Click the slider in the **Status** column to change its status to _Enabled_.
 
-   :::image type="content" source="../media/image17.png" lightbox="../media/image17.png" alt-text="Screenshot enable restarting container count alert rule"  border="true":::
+   :::image type="content" source="../media/restarting container-alert.png" lightbox="../media/image17.png" alt-text="Screenshot enable restarting container count alert rule"  border="true":::
 
 1. Click the message **No action group assigned** to create an action group and assign it to the rule that you just enabled.
 1. Select the action group that you created and click **Apply to rule**.
 
 ### Test alert
 
-To test the alert rule, trigger a container restart by stopping the primary process in the deployment. Use _kubectl_ to run a shell command in the container to stop the process.
+To test the alert rule, trigger a container restart by stopping the primary process in the deployment. Use `kubectl` to run a shell command in the container to stop the process.
 
 1. In the Azure portal, select the button to launch Cloud Shell.
 1. Run the following command to get a command line:
 
-   ```
+   ```bash
    kubectl exec -it deploy/contoso-website -- /bin/sh
    ```
 
 1. From the command line, run the following command:
 
-   ```
+   ```bash
    # kill 1
    ```
 
