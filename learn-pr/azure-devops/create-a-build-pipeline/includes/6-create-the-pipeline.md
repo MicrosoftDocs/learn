@@ -31,10 +31,9 @@ When you don't provide an initial YAML file for your project, Azure Pipelines ca
 
 1. On the **Review** tab, note the initial build configuration. This is a very basic configuration that Azure DevOps provides for you based on your app type, ASP.NET Core. The default configuration uses a Microsoft-hosted agent. 
 
-1. On the the **Review** tab, replace the text `vmImage: ubuntu-latest` with `name: Default` (or the name of your agent pool). You set the name of your agent pool as a GitHub secret earlier.
+1. On the the **Review** tab, replace the text `vmImage: ubuntu-latest` with `name: Default` (or the name of your agent pool if you didn't specify `Default` when setting up the Codespaces Repository secrets). You set the name of your agent pool as a GitHub secret earlier.
 
-1. Select **Save and run** to commit your changes to GitHub and start the build.
-
+1. Select **Save and run** to commit your changes to GitHub and start the build. Choose **Commit directly to the main branch**. If prompted to grant permission with a message like `This pipeline needs permission to access a resource before this run can continue`, choose **View** and follow the prompts to permit access.
 
 #### [Microsoft-hosted agent](#tab/hosted-agent)
 
@@ -65,12 +64,7 @@ When you don't provide an initial YAML file for your project, Azure Pipelines ca
 
     This is a very basic configuration that Azure DevOps provides for you based on your app type, ASP.NET Core.
 
-1. On the **Review** tab, select **Save and run**. Next, to commit your changes to GitHub and start the build, select **Save and run** a second time.
-
-1. In Visual Studio Code edit within Codespaces, use `git pull` in the Terminal window to pull down the new `azure-pipelines.yml` file.  
-
-    > [!NOTE]
-    > If your pipeline does not start quickly, verify that Codespaces is still running. Codespaces will shutdown after 30 minutes and may need to be restarted.
+1. On the **Review** tab, select **Save and run**. Next, to commit your changes to GitHub and start the build, select **Save and run** a second time.If prompted to grant permission with a message like`This pipeline needs permission to access a resource before this run can continue`, choose **View** and follow the prompts to permit access.
 
 ----
 
@@ -79,8 +73,15 @@ When you don't provide an initial YAML file for your project, Azure Pipelines ca
 
 Under **Jobs**, select **Job**. Next, trace the build process through each of the steps. To see the job output as a text file when the build completes, you can also select **View raw log**.
 
-> [!NOTE]
-> If your pipeline status remains **Queued** and does not transition to **Running** after a few moments, [Check your parallel jobs and request a free grant](/azure/devops/pipelines/troubleshooting/troubleshooting#check-for-available-parallel-jobs). If you do not have access to parallel jobs, you can start the module over with Codespaces. 
+#### [GitHub Codespaces](#tab/codespaces)
+
+If your pipeline does not start quickly, verify that Codespaces is still running. Codespaces will shutdown after 30 minutes and may need to be restarted.
+
+#### [Microsoft-hosted agent](#tab/hosted-agent)
+
+If your pipeline status remains **Queued** and does not transition to **Running** after a few moments, [Check your parallel jobs and request a free grant](/azure/devops/pipelines/troubleshooting/troubleshooting#check-for-available-parallel-jobs). If you do not have access to parallel jobs, you can start the module over with Codespaces. 
+
+---
 
 Here, you see the steps that the build definition created. It prepares the VM, fetches the latest source code from GitHub, and then builds the app.
 
@@ -104,7 +105,7 @@ In practice, you might add build tasks one at a time, push up your changes, and 
 > [!NOTE]
 > You're about to run a few Git commands. Don't worry if you're new to Git. We'll show you what to do. We'll also go into more detail about Git in future modules.
 
-1. In Visual Studio Code, go to the integrated terminal. Ensure you go to the `main` branch in your repo and then go through the steps.
+1. In Visual Studio Code (or Visual Studio Code online if you are using GitHub Codespaces), go to the integrated terminal. Ensure you go to the `main` branch in your repo and then go through the steps.
 
 1. To fetch the latest changes from GitHub and update your `main` branch, run this `git pull` command.
 
