@@ -19,7 +19,7 @@ You have two options for completing this module.
 
 1. Name your token, select the organization where you want to use the token, and then set your token to automatically expire after a set number of days.
 
-1. Select the following scopes: **Agent Pools (Read & manage)** and **Deployment Groups (Read & manage)**.
+1. Choose **Show all scopes**, select the following scope: **Agent Pools (Read & manage)**, and choose **Create**.
 
 1. When you're done, copy the token and store it in a secure location. For your security, it won't be shown again.
 
@@ -83,6 +83,10 @@ Next, you'll set up Codespaces so that you can build the website, work with sour
 ### Set the upstream remote
 
 A *remote* is a Git repository where team members collaborate (similar to a repository on GitHub). Let's list your remotes and add a remote that points to Microsoft's copy of the repository so you can get the latest sample code.
+
+1. In the Visual Studio Code online editor, navigate to the terminal window, and choose **bash** from the right-hand side.
+
+    :::image type="content" source="../media/3-terminal-window.png" alt-text="Screenshot of terminal window in Visual Studio Code online editor. ":::
 
 1. To list your remotes, run the `git remote` command:
 
