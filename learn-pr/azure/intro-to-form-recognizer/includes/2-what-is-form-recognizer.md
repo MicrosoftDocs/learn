@@ -10,11 +10,11 @@ Form Recognizer Layout API can extract text, selection marks, and table structur
 
 ## Prebuilt models
 
-Form Recognizer Pre-built models are available for four applications: invoices, sales receipts, identifications, and business cards.
+Form Recognizer Prebuilt models are available for four applications: invoices, sales receipts, identifications, and business cards.
 
 ### Prebuilt Invoice model
 
-The Pre-built Invoice model extracts data from invoices in various formats and returns structured data. This model extracts key information such as invoice ID, customer and vendor details, shipping and billing information, price totals, and tax amounts.
+The Prebuilt Invoice model extracts data from invoices in various formats and returns structured data. This model extracts key information such as invoice ID, customer and vendor details, shipping and billing information, price totals, and tax amounts.
 
 The Invoice model can extract full line items and component parts – description, amount, quantity, product ID, date, and more. What’s more, this model is designed to analyze and return all of the text and tables in structured data to automate the invoice process.
 
@@ -22,7 +22,7 @@ The Invoice model can extract full line items and component parts – descriptio
 
 ### Prebuilt Receipt model
 
-This model is used to analyze English sales receipts from restaurants, retail, gas stations and more, from Australia, Canada, United Kingdom, India, and the United States. The Prebuilt receipt model extracts the information you need, such as the time and date of the transaction, merchant information, and the tax and total amounts. The data can be extracted from different kinds of receipts, in both scanned copies or phone images.
+This model is used to analyze English sales receipts from restaurants, retail, gas stations and more. Receipts from Australia, Canada, United Kingdom, India, and the United States, can be analyzed. The Prebuilt receipt model extracts the information you need, such as the time and date of the transaction, merchant information, and the tax and total amounts. The data can be extracted from different kinds of receipts, in both scanned copies or phone images.
 
 ![Prebuilt receipt example.](../media/overview-receipt.jpeg)
 
