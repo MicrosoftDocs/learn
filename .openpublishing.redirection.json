@@ -20451,6 +20451,11 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "learn-pr/azure/azure-sql-secure-data/3-exercise-configure-auditing.md",
+      "redirect_url": "/training/modules/azure-sql-secure-data/3-exercise-configure-sql-database",
+      "redirect_document_id": true
+    },
+    {
        "source_path": "learn-pr/wwl-azure/configure-azure-alerts/2-manage-azure-monitor-alerts.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/configure-azure-alerts/2b-manage-azure-monitor-alerts",
       "redirect_document_id": false

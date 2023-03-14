@@ -1,51 +1,13 @@
-You're familiar with the basic features and benefits of Azure Web Application Firewall. Now let's examine how Azure Web Application Firewall works. In particular, let's consider how features such as core rule sets and rule groups allow Azure Web Application Firewall to help protect web apps from common exploits. This information helps you evaluate whether Azure Web Application Firewall is the right solution for your company.
-
-## Sanitizing input
-
-The threats faced by modern web apps are varied and sophisticated. However, in most cases the reason exploits are possible is that the web app implicitly trusts the input it receives.
-
-For example, consider a web form that lets an authorized web app user sign in to the user's account. The form consists of just three elements:
-
-- A **Username** text box
-- A **Password** text box
-- A **Sign In** button
-
-When an authorized user fills in the form and selects **Sign In**, a web app script stores the username and password in variables. Suppose those variables are named `userName` and `userPassword`, respectively. The script would then execute the following statement:
-
-`sql = "SELECT * FROM users WHERE username='" + userName + "' AND password='" + userPassword + "'"`
-
-For example, if the username is `support` and the password is `1234ABCD`, then the `sql` variable has the following value:
-
-`SELECT * FROM users WHERE username='support' AND password='1234ABCD'`
-
-The web app executes this SQL statement. If a record is returned from the query, the web app signs the user in.
-
-Now suppose that an attacker enters `admin'--` in the **Username** field and leaves the **Password** field blank. In this case, here's the resulting SQL statement:
-
-`SELECT * FROM users WHERE username='admin'--' AND password=''`
-
-On many SQL systems, the double dashes (`--`) mark the start of a comment. Everything after `--` is ignored, so the previous statement is equivalent to the following code:
-
-`SELECT * FROM users WHERE username='admin'`
-
-Assuming there's a user named `admin`, this command signs in the attacker as the admin user; a serious breach!
-
-:::image type="content" source="../media/3-how-web-application-firewall-works.png" alt-text="Network diagram depicting two sign-in attempts, with Azure Web Application Firewall allowing the authorized sign-in and denying the unauthorized sign-in." border="false":::
-
-The preceding example is an instance of an exploit called *SQL injection*. Attackers can take advantage of SQL injection and other exploits in web apps that trust all input.
-
-Azure Web Application Firewall creates a barrier of nontrust between a web app and its user input. Azure Web Application Firewall assumes that all input is potentially malicious, so it *sanitizes* that input.
-
-Sanitizing the input means different things depending on the context. For example, sanitizing the input can mean removing clearly dangerous text elements, such as SQL comment indicators. However sanitization occurs, the result is input that can do no harm to the web app or its backend data.
+You're familiar with the basic features and benefits of Azure Web Application Firewall. Now let's examine how Azure Web Application Firewall works. In particular, let's consider how features such as rule sets and rule groups allow Azure Web Application Firewall to help protect web apps from common exploits. This information helps you evaluate whether Azure Web Application Firewall is the right solution for your company.
 
 ## Deployment options
 
+You can deploy Azure Web Application Firewall as part of an Azure front-end solution for your web apps. You'll begin by creating an Azure Web Application Firewall policy, which includes the following settings:
 
-|Service  |Description  |
-|---------|---------|
-|Azure Front Door     |When you create your Azure Web Application Firewall policy, you associate it with an existing Azure Front Door profile.|
-|Azure Application Gateway     |You configure your application gateway to use Azure Web Application Firewall. You can choose a Web Application Firewall tier when you create your application gateway. Alternatively, you can upgrade an existing application gateway to use a Web Application Firewall tier. You then associate your Web Application Firewall policy with your application gateway.
-|
+- Which product integration you want to use
+- Which managed rule set you want to use
+- Any custom rules you want to add
+- Which mode you want to use
 
 ## Microsoft managed rule sets, rule groups, and rules
 
@@ -105,7 +67,7 @@ Azure Web Application Firewall can operate in one of two modes. The mode you cho
 - **Detection mode**: Logs the request but allows the request to go through.
 - **Prevention mode**: Logs the request but doesn't allow the request to go through.
 
-In detection mode:
+A common scenario is to run Azure Web Application Firewall in detection mode when you're testing an app. In detection mode, you can check for two types of problems:
 
 - **False positives**: Legitimate requests that the firewall flags as malicious.
 - **False negatives**: Malicious requests that the firewall allows.
