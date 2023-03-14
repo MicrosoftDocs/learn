@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.azure.deploy-java-quarkus-aca-postgres
+uid: learn.azure.deploy-java-quarkus-azure-container-app-postgres
 metadata:
   title: Deploy a Quarkus application to Azure Container Apps
   description: Create a Quarkus application, connect it to a PostgreSQL database, and then deploy to Azure Container Apps.
@@ -33,14 +33,14 @@ products:
 subjects:
 - custom-app-development
 units:
-- learn.azure.deploy-java-quarkus-aca-postgres.1-introduction
-- learn.azure.deploy-java-quarkus-aca-postgres.2-build
-- learn.azure.deploy-java-quarkus-aca-postgres.3-exercise-build
-- learn.azure.deploy-java-quarkus-aca-postgres.4-aca
-- learn.azure.deploy-java-quarkus-aca-postgres.5-exercise-rg-postgres
-- learn.azure.deploy-java-quarkus-aca-postgres.6-exercise-aca
-- learn.azure.deploy-java-quarkus-aca-postgres.7-exercise-secure
-- learn.azure.deploy-java-quarkus-aca-postgres.8-knowledge-check
-- learn.azure.deploy-java-quarkus-aca-postgres.9-summary
+- learn.azure.deploy-java-quarkus-azure-container-app-postgres.1-introduction
+- learn.azure.deploy-java-quarkus-azure-container-app-postgres.2-build
+- learn.azure.deploy-java-quarkus-azure-container-app-postgres.3-exercise-build
+- learn.azure.deploy-java-quarkus-azure-container-app-postgres.4-aca
+- learn.azure.deploy-java-quarkus-azure-container-app-postgres.5-exercise-rg-postgres
+- learn.azure.deploy-java-quarkus-azure-container-app-postgres.6-exercise-aca
+- learn.azure.deploy-java-quarkus-azure-container-app-postgres.7-exercise-secure
+- learn.azure.deploy-java-quarkus-azure-container-app-postgres.8-knowledge-check
+- learn.azure.deploy-java-quarkus-azure-container-app-postgres.9-summary
 badge:
-  uid: learn.azure.deploy-java-quarkus-aca-postgres.badge
+  uid: learn.azure.deploy-java-quarkus-azure-container-app-postgres.badge
