@@ -6,25 +6,32 @@ Here, you'll simulate a device with a C# application and connect it to the Azure
 
 ![An illustration showing a Coffee machine.](../media/6-coffee-machine.png)
 
+## Add the coffee machine to IoT Central
+
+First we will register the device:
+
+1. In your IoT Central application, navigate to **Devices** and then **+ New**.
+1. On the **Create a new device form**, change the **Device ID** to *ccm-001* and **Device name** to *Connected Coffee Machine - 001*. Make sure that **Device template** is *Unassigned* and **Simulate this device?** is *No*, and then select Create.
+
+The **Connected Coffee Machine - 001** device now shows in the list of devices with a status of **Registered** and template **Unassigned**. In the previous unit we looked at the C# application code and confirmed that the model ID is sent when provisioning the device. That will allow IoT Central to assign the correct device template the first time the device connects.
+
 ## Get connection information
-<!-- TODO: Alternative approach. Device is registered in IoT Central but left unassigned. Device needs the ID Scope, Device ID, and key - all found in the IoT Central UI. Device must implement the DTDL model, sending the model ID is required to automatically assign the device to a device template. https://github.com/MicrosoftDocs/learn-pr/pull/29726/files#r1126320464 -->
 
-To run the Node.js application, you need the following configuration values:
+To run the C# application, you need the following configuration values:
 
-- *`{ID Scope}`*: In your IoT Central application that you created in the previous exercise, navigate to **Permissions > Device connection groups**. Make a note of the **ID scope** value.
-- *`{Device ID}`*: Define a device id, such as `ccm-001`.
-- *`{Device Primary Key}`*: In your IoT Central application, navigate to **Permissions > Device connection groups > SAS-IoT-Devices**. Make a note of the shared access signature **Primary key** value.
+1. Select **Connected Coffee Machine - 001** in the list of devices to view the device details.
+1. Select **Connect** to open the **Device connection groups** panel.
+1. Either keep this page open, or make a note of the **ID scope**, **Device ID**, and **Primary key** values.
 
-    Use the Azure Cloud Shell to generate a device key. Replace the placeholder text *`<the device id>`* with the one you defined above and *`<the group primary key value>`* with the shared access signature **Primary key** value:
+ ![Device connection information.](../media/6-device-connection.png)
 
-    ```azurecli-interactive
-    az extension add --name azure-iot
-    az iot central device compute-device-key --device-id <the device id> --pk <the group primary key value>
-    ```
+Use the Azure Cloud Shell to set the environment variables used by the C# application.
 
-    Make a note of the generated device key, this is used to update the *CoffeeMaker.js* placeholder *`{Device Primary key}`*.
-
-    ![Device connection information.](../media/6-device-connection.png)
+```azurecli-interactive
+export ID_SCOPE=<The ID scope you made a note of previously>
+export DEVICE_ID=<The Device ID you made a note of previously>
+export DEVICE_KEY=<The Primary key you made a note of previously>
+```
 
 <!-- TODO: Change to using a Csharp App -->
 ## Create a C# application
@@ -32,54 +39,35 @@ To run the Node.js application, you need the following configuration values:
 The following steps show you how to create a client application that implements the coffee machine device simulator.
 
 > [!TIP]
-> In this exercise, you create the Node.js app in the Azure Cloud Shell so that you don't have to install anything on your local machine.
+> In this exercise, you create the C# app in the Azure Cloud Shell so that you don't have to install anything on your local machine.
 
 1. Execute the following command in the Azure Cloud Shell to create a `coffee-maker` folder and navigate to it:
 
-    ```azurecli
+    ```azurecli-interactive
     mkdir ~/coffee-maker
     cd ~/coffee-maker
     ```
 
-1. Execute the following command in the Cloud Shell to initialize a Node.js project in your `coffee-maker` folder:
+1. Execute the following command in the Cloud Shell to download the source files in your `coffee-maker` folder:
 
-    ```azurecli
-    npm init
+    ```azurecli-interactive
+    wget https://raw.githubusercontent.com/Azure-Samples/iot-central-docs-samples/main/monitor-manage-device-with-iotcentral/CoffeeMaker-csharp.csproj
+    wget https://raw.githubusercontent.com/Azure-Samples/iot-central-docs-samples/main/monitor-manage-device-with-iotcentral/CoffeeMaker.cs
+    wget https://raw.githubusercontent.com/Azure-Samples/iot-central-docs-samples/main/monitor-manage-device-with-iotcentral/Parameters.cs
+    wget https://raw.githubusercontent.com/Azure-Samples/iot-central-docs-samples/main/monitor-manage-device-with-iotcentral/Program.cs
     ```
-
-    > [!NOTE]
-    > The init script prompts you to enter project properties. For this exercise, press ENTER to accept all the default values.
-
-1. To install the necessary packages, run the following command in the `coffee-maker` folder:
-
-    ```azurecli
-    npm install azure-iot-device azure-iot-device-mqtt azure-iot-provisioning-device-mqtt azure-iot-security-symmetric-key --save
-    ```
-<!-- TODO: If you modify the sample to use environment variables, there's no need to use an editor. You can just download the source by using wget or curl. -->
-1. Create and open a file called *CoffeeMaker.js* in the integrated Cloud Shell code editor by executing the following command:
-
-     ```azurecli
-    code CoffeeMaker.js
-    ```
-
-1. Copy and paste the following code into the empty editor window:
-
-    <!-- :::code language="js" source="~/../iot-central-docs-samples/monitor-manage-device-with-iotcentral/CoffeeMaker.js"::: -->
-
-1. Update the placeholders *`{ID scope}`*, *`{Device ID}`*, and *`{Device Primary key}`* at the top of this code with the connection information you made a note of previously.
-
-1. Select the three dots `...` to the top right of the editor to expand the editor menu. Then select **Save** to save the edits you made to *CoffeeMaker.js*
 
 1. Execute the following command in the Cloud Shell to start the app:
 
     ```azurecli
-    node CoffeeMaker.js
+    dotnet run
     ```
 
 1. Verify that the app starts in the Cloud Shell window with the message *Device successfully connected to Azure IoT Central* along with *Telemetry send:* messages. 
 
 Congratulations! Your app is up and running and communicating with IoT Central!
 
+<!-- TODO: Review this part -->
 ## Check your work
 
 You've now worked with the Azure IoT Central application and connected the coffee machine to Azure IoT Central. You are well on your way to begin to monitor and manage your remote coffee machine. Here, you take a moment to validate your setup and connection by using the **Connected Coffee Machine** template that you defined earlier. You update the optimal temperature on the **Properties** form, run commands to update the state of your machine, and view your connected coffee machine telemetry.
@@ -176,6 +164,7 @@ Navigate to the **Commands** page for your device for the following exercise. To
 
 Navigate to the **Telemetry** page for the coffee machine. You defined this page when you created the device template:
 
+<!-- TODO: Take a new screenshot to remove the Organization coffee-maker-sergaz -->
 ![Screenshot showing the Telemetry page for the connected coffee machine device template.](../media/6-telemetry.png)
 
 > [!IMPORTANT]
