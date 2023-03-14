@@ -17,25 +17,25 @@ quiz:
     choices:
     - content: "Having a panel of experts review content in real-time."
       isCorrect: false
-      explanation: "Incorrect. This would be an expensive option and take considerable resources. It can be done, but is not truly representative of content moderation."
+      explanation: "Incorrect. That option would be an expensive and take considerable resources. It can be done, but isn't truly representative of content moderation."
     - content: "Only allowing limited amounts of information to be published for time constraints."
       isCorrect: false
-      explanation: "Incorrect. While you may consider moderation as a means to limit content, time constraints are not real factors in content moderation."
-    - content: "Content moderation is a process that involves reviewing, monitoring, and interpreting content before it is released for general consumption."
+      explanation: "Incorrect. While you may consider moderation as a means to limit content, time constraints aren't real factors in content moderation."
+    - content: "Content moderation is a process that involves reviewing, monitoring, and interpreting content before it's released for general consumption."
       isCorrect: true
-      explanation: "Correct. Content moderation is a process that involves simple steps. Reviewing, monitoring, and interpretation of content before it is displayed or released for general consumption."
+      explanation: "Correct. Content moderation is a process that involves simple steps. Reviewing, monitoring, and interpretation of content before it's displayed or released for general consumption."
   - content: "What is the purpose of a custom term list?"
     choices:
-    - content: "A list of terms that you have created to block or allow content based on your organization's content policies."
+    - content: "A list of terms that you've created to block or allow content based on your organization's content policies."
       isCorrect: true
-      explanation: "Correct. Custom term list is a list of terms that you have created. You can use the list to block or allow content based on your organization's content policies."
+      explanation: "Correct. A custom term list is a list of terms that you've created. You can use the list to block or allow content based on your organization's content policies."
     - content: "To automatically trigger the Review Tool."
       isCorrect: false
-      explanation: "Incorrect. You may decide to implement the Review Tool for human review actions but custom term lists do not automatically trigger the Review Tool."
+      explanation: "Incorrect. You may decide to implement the Review Tool for human review actions but custom term lists don't automatically trigger the Review Tool."
     - content: "To allow users to enter acceptable terms for online forum discussions, based on their region."
       isCorrect: false
-      explanation: "Incorrect. Acceptable content should not be controlled by end users so allowing them to change custom term lists is not a good practice."
-  - content: "What is a possible scenario where content moderator can help?"
+      explanation: "Incorrect. It's not a good policy to allow end users to control acceptable content. So, allowing them to change custom term lists isn't a good practice."
+  - content: "What is a possible scenario where Content Moderator can help?"
     choices:
     - content: "To test your marketing campaign's content effectiveness in reaching the target audience."
       isCorrect: false
@@ -45,4 +45,4 @@ quiz:
       explanation: "Correct. The service can scan video content and return time markers where the offensive content was found."
     - content: "Scanning web sites that show a blocklist of URLs to determine if your web site is found there."
       isCorrect: false
-      explanation: "Incorrect. The Content Moderator can scan the content of these web sites, and you may use custom term lists to determine if specific words are present, but this is not a viable scenario for the Content Moderator service."
+      explanation: "Incorrect. Content Moderator can scan the content of these web sites, and you may use custom term lists to determine if specific words are present. But, using the Content Moderator service in this way, isn't a viable scenario."
