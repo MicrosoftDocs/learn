@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.administer-endpoint-applications
+metadata:
+  title: MD-102 Administer endpoint applications
+  description: "In this module, you will be introduced to managing apps on Intune managed devices. The module will then conclude with an overview of how to use IE Mode with Microsoft Edge."
+  ms.date: 03/14/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+title: Administer endpoint applications
+summary: In this module, you will be introduced to managing apps on Intune managed devices. The module will then conclude with an overview of how to use IE Mode with Microsoft Edge.
+abstract: |
+  After this module, you should be able to:
+  - Explain how to manage apps in Intune
+  - Understand how to manage apps on non-enrolled devices
+  - Understand how to deploy Microsoft 365 Apps using Intune
+  - Learn how to configure and manage IE mode in Microsoft Edge
+  - Learn about app inventory options in Intune
+prerequisites: |
+  - Strong technical skills installing, maintaining, and troubleshooting the Windows 11 OS or later.
+  - Strong understanding of computer networking, client security, and application concepts.
+  - Experience using Active Directory Domain Services.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- microsoft-edge
+- windows
+- configuration-manager
+- intune
+subjects:
+- device-management
+units:
+- learn.wwl.administer-endpoint-applications.introduction
+- learn.wwl.administer-endpoint-applications.manage-apps-intune
+- learn.wwl.administer-endpoint-applications.manage-apps-non-enrolled-devices
+- learn.wwl.administer-endpoint-applications.deploy-microsoft-365-apps-intune
+- learn.wwl.administer-endpoint-applications.additional-microsoft-365-apps-deployment-tools
+- learn.wwl.administer-endpoint-applications.configure-microsoft-edge-internet-explorer-mode
+- learn.wwl.administer-endpoint-applications.app-inventory-review
+- learn.wwl.administer-endpoint-applications.knowledge-check
+- learn.wwl.administer-endpoint-applications.summary
+badge:
+  uid: learn.wwl.administer-endpoint-applications.badge

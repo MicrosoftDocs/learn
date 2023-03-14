@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.administer-endpoint-applications.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/14/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Microsoft Intune Mobile Application Manager (MAM) provides added capabilities to protect managed apps. What is the lifecycle for an Intune managed app?"
+    choices:
+    - content: "Deploy the app, Manage app security policies, Monitor app installations, Selectively wipe the entire app"
+      isCorrect: false
+      explanation: "Incorrect. These items aren't the lifecycle phases for an Intune managed app. Try again."
+    - content: "Deploy the app, Manage app updates, Monitor app security, Selectively wipe the entire app"
+      isCorrect: false
+      explanation: "Incorrect. These items aren't the lifecycle phases for an Intune managed app. Try again."
+    - content: "Deploy the app, Manage app updates, Monitor app installations, Selectively wipe the entire app"
+      isCorrect: true
+      explanation: "Correct: Intune supports additional level of management for managed apps that are integrated with the Intune App SDK or the Intune App Wrapping Tool."
+  - content: "Contoso's IT department is wanting to assign an app to a device. What is a requirement they must meet before the app can be assigned to a device?"
+    choices:
+    - content: "The device must first be enrolled in Intune"
+      isCorrect: true
+      explanation: "Correct. The options for how apps can be assigned will depend on enrollment status of the device with Intune. Using Intune, IT professionals have the ability to assign an app to a device."
+    - content: "The app must be added to Google Play Store or Apple App Store"
+      isCorrect: false
+      explanation: "Incorrect. This item isn't a requirement that must be met before the app can be assigned to a device. Try again."
+    - content: "Azure AD groups must be created for the device"
+      isCorrect: false
+      explanation: "Incorrect. This item isn't a requirement that must be met before the app can be assigned to a device. Try again."
