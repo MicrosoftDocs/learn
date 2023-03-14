@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.sql-server-2022-data-virtualization.learning-content
+title: Enter learning content title
+metadata:
+  title: learning-content
+  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  ms.date: 03/14/2023
+  author: HugoMSFT
+  ms.author: hudequei
+  ms.topic: interactive-tutorial
+  ms.prod: learning-sqlserver
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-learning-content.md)]
