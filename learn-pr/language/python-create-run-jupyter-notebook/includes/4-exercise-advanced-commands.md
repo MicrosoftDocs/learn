@@ -43,7 +43,7 @@ Build a bar chart with some mock data to show how you could plot oxygen levels i
 1. Run the code.
 
    > [!TIP]
-   > You might need change presentation to image/png to render the image in the notebook.
+   > You might need to change presentation to image/png to render the image in the notebook.
    >
    > :::image type="content" source="../media/change-presentation-output-jupyter-notebook.png" alt-text="Screenshot that shows the Change Presentation option in the notebook."::: 
 
