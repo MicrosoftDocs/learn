@@ -2,9 +2,9 @@ In this module, you learned about Immersive Reader, a cognitive service availabl
 
 Now that you've reviewed this module, you should be able to:
 
-* Assess the benefits of Immersive Reader
-* Describe what Immersive Reader is
-* Define scenarios where Immersive Reader can be applied
+* Assess the benefits of Immersive Reader.
+* Describe what Immersive Reader is.
+* Define scenarios where Immersive Reader can be applied.
 
 ## Use these resources to discover more
 

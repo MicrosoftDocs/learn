@@ -5,8 +5,7 @@ In this exercise, you'll access the JBoss administration tools and stream the ap
 To access the remote server, you need to create a TCP tunnel between your remote server and your local machine. Run the following command:
 
 ```azcli
-az webapp create-remote-connection -n jakartaee-app-on-jboss-1606464084546 \
-  -g jakartaee-app-on-jboss-1606464084546-rg
+az webapp create-remote-connection -n ${WEBAPP_NAME} -g ${RESOURCEGROUP_NAME}
 ```
 
 The command returns the following result:
@@ -27,40 +26,39 @@ You get the following information from the command result:
 |  `username`  |  `root`  |
 |  `password`  |  `Docker!`  |
 
+Take note of the password and the port number. These two values are used in the next section.
+
 ## Sign in by using SSH and the TCP tunnel
 
 You now need to sign in to the server by using an `ssh` command. Open a new command terminal and run the following command:
 
 ```bash
-ssh root@127.0.0.1 -L 9990:localhost:9990 -p $PORT_NUMBER (ex. 59445)
+export PORT_NUMBER=<the port number from above>
+ssh root@127.0.0.1 -L 9990:localhost:9990 -p $PORT_NUMBER 
 ```
 
 > [!TIP]
 > If you want to access to the JBoss EAP admin web console, specify the `-L 9990:localhost:9990` option. Then access `http://localhost:9990/console` for the JBoss web console. If you don't need to sign in to the JBoss web console, you can remove the "-L" option.
 
-You see following messages when you sign in to the server:
+You see the following messages when you sign in to the server.
 
 ```bash
 The authenticity of host '[127.0.0.1]:59445 ([127.0.0.1]:59445)' can't be established.
 ECDSA key fingerprint is SHA256:vHsp1b3+7NtnHISvZ6aKS82pww+e5L6CUc9fKaPZGDQ.
 Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 Warning: Permanently added '[127.0.0.1]:59445' (ECDSA) to the list of known hosts.
-root@127.0.0.1's password: 
-Last login: Fri Nov 27 06:41:33 2020 from yoshio-jbosseap_kudu_1_d7fdf00b.yoshio-jbosseap_nw
-  _____                               
-  /  _  \ __________ _________   ____  
- /  /_\  \___   /  |  \_  __ \_/ __ \ 
-/    |    \/    /|  |  /|  | \/\  ___/ 
-\____|__  /_____ \____/ |__|    \___  >
-        \/      \/                  \/ 
-A P P   S E R V I C E   O N   L I N U X
+root@127.0.0.1's password:
+   _|_|
+ _|    _|  _|_|_|_|  _|    _|  _|  _|_|    _|_|
+ _|_|_|_|      _|    _|    _|  _|_|      _|_|_|_|
+ _|    _|    _|      _|    _|  _|        _|
+ _|    _|  _|_|_|_|    _|_|_|  _|          _|_|_|
 
-Documentation: http://aka.ms/webapp-linux
+     J A V A   O N   A P P   S E R V I C E
+
+Documentation: https://aka.ms/appservice
 
 **NOTE**: No files or system changes outside of /home will persist beyond your application's current session. /home is your application's persistent storage and is shared across all the server instances.
-
-
--bash-4.2# 
 ```
 
 ## Run the JBoss CLI command
@@ -70,7 +68,7 @@ After you sign in to the remote server, you can run the JBoss EAP admin CLI tool
 Connect to JBoss EAP by using the following command:
 
 ```bash
--bash-4.2# /opt/eap/bin/jboss-cli.sh --connect
+/opt/eap/bin/jboss-cli.sh --connect
 Picked up JAVA_TOOL_OPTIONS: -Xmx2402M -Djava.net.preferIPv4Stack=true 
 ```
 
@@ -81,37 +79,34 @@ After you connect to the JBoss EAP Server, run the JBoss CLI command and get the
 {
     "outcome" => "success",
     "result" => [{"summary" => {
-        "host-name" => "05b2037f748e",
-        "instance-identifier" => "895f0c88-5c7d-440f-9e45-e972f5cc14a5",
+        "host-name" => "295cf7c97684",
+        "instance-identifier" => "24bb4e37-ac89-42bc-b87e-d635d37a56f3",
         "product-name" => "JBoss EAP",
-        "product-version" => "7.2.9.GA",
+        "product-version" => "7.4.2.GA",
         "product-community-identifier" => "Product",
         "product-home" => "/opt/eap",
-        "last-update-date" => "8/27/20 1:09 PM",
+        "last-update-date" => "4/26/22, 10:29 PM",
         "standalone-or-domain-identifier" => "STANDALONE_SERVER",
-        "host-operating-system" => "Red Hat Enterprise Linux Server 7.8 (Ma
-ipo)",
+        "host-operating-system" => "Ubuntu 20.04.4 LTS",
         "host-cpu" => {
             "host-cpu-arch" => "amd64",
-            "host-core-count" => 1
+            "host-core-count" => 2
         },
         "jvm" => {
             "name" => "OpenJDK 64-Bit Server VM",
-            "java-version" => "1.8",
-            "jvm-version" => "1.8.0_262",
-            "jvm-vendor" => "Oracle Corporation",
-            "java-home" => "/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.262.b10-0
-.el7_8.x86_64/jre"
+            "java-version" => "11",
+            "jvm-version" => "11.0.14.1",
+            "jvm-vendor" => "Microsoft",
+            "java-home" => "/usr/lib/jvm/msopenjdk-11-amd64"
         }
     }}]
-}
 ```
 
 You can get all the deployed applications from the following command:
 
 ```bash
 [standalone@localhost:9990 /] ls deployment
-ROOT.war          activemq-rar.rar  
+ROOT.war
 ```
 
 Next, test the database connection by running the following command:
@@ -124,6 +119,12 @@ Next, test the database connection by running the following command:
 }
 ```
 
+Exit from the JBoss EAP CLI.
+
+```bash
+exit
+```
+
 ## Access the JBoss EAP admin web console
 
 Next, let's access the JBoss admin web console.
@@ -131,7 +132,15 @@ Next, let's access the JBoss admin web console.
 First, create an admin user and password for authentication:
 
 ```bash
--bash-4.2# /opt/eap/bin/add-user.sh -u admin -p admin -r ManagementRealm
+/opt/eap/bin/add-user.sh -u admin -p admin -r ManagementRealm
+```
+
+You should see output similar to the following.
+
+```bash
+Picked up JAVA_TOOL_OPTIONS: -Xmx5480M -Djava.net.preferIPv4Stack=true
+Updated user 'admin' to file '/opt/eap/standalone/configuration/mgmt-users.properties'
+Updated user 'admin' to file '/opt/eap/domain/configuration/mgmt-users.properties'
 ```
 
 Now you can access the web console from your local environment. By using a browser, access the following URL:
@@ -166,8 +175,7 @@ Next, let's sign in to the server and access the application logs.
 You can access the logs by signing in your local machine through the following command:
 
 ```azurecli
-az webapp log tail --name ${WEBAPP_NAME} \
- --resource-group ${RESOURCEGROUP_NAME}
+az webapp log tail --name ${WEBAPP_NAME} --resource-group ${RESOURCEGROUP_NAME}
 ```
 
 After you run the command, you get your log output:

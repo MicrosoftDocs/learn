@@ -3,7 +3,7 @@ uid: learn.wwl.explore-relational-data-offerings
 metadata:
   title: Explore fundamental relational data concepts
   description: "Explore fundamental relational data concepts"
-  ms.date: 09/01/2022
+  ms.date: 03/08/2023
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -11,7 +11,7 @@ metadata:
 title: Explore fundamental relational data concepts
 summary: Relational database systems are a common way to store and manage transactional and analytical data in organizations of any size around the world.
 abstract: |
-  In this module you will learn how to:
+  In this module you'll learn how to:
   - Identify characteristics of relational data
   - Define normalization
   - Identify types of SQL statement

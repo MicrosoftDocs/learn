@@ -19,7 +19,7 @@ At this point, you have a front-end app with static data inside of the app. You 
 
    ```json
    {
-     "pizza" : [{
+     "pizzas" : [{
         "id": 1, 
         "name": "Cheese pizza", 
         "description": "very cheesy"
@@ -44,7 +44,7 @@ At this point, you have a front-end app with static data inside of the app. You 
       }, [])
       
       function fetchData() {
-        fetch("/pizza")
+        fetch("/pizzas")
           .then(response => response.json())
           .then(data => setPizzas(data)) 
       }
@@ -84,7 +84,7 @@ At this point, you have a front-end app with static data inside of the app. You 
    Done
     
    Resources
-   http://localhost:5000/pizza
+   http://localhost:5000/pizzas
     
    Home
    http://localhost:5000

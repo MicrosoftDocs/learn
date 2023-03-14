@@ -1,31 +1,31 @@
-In this exercise, you'll deploy a Java EE (Jakarta EE) application to JBoss EAP on Azure App Service. You'll use the Maven plug-in to configure the project, compile and deploy the application, and configure a data source.
+In this exercise, you deploy a Java EE (Jakarta EE) application to JBoss EAP on Azure App Service. You use the Maven plug-in to configure the project, compile and deploy the application, and configure a data source.
 
 ## Configure the app with the Maven Plugin for Azure App Service
 
 Let's configure the application by executing the configuration goal in the Maven Plugin for Azure App Service.
 
 ```bash
-./mvnw com.microsoft.azure:azure-webapp-maven-plugin:2.5.0:config
+./mvnw com.microsoft.azure:azure-webapp-maven-plugin:2.9.0:config
 ```
 
 > [!IMPORTANT]  
 > If you change the region of your MySQL server, you should also change to the same region for your Java EE application server to minimize latency delays.  
-> In the command, select Java 8 for Java version and JBoss EAP 7.2 for runtime stack.
+> In the command, select Java 11 for Java version and JBoss EAP 7 for runtime stack.
 
 |  Input element  |  Value  |
 | ---- | ---- |
 |  `Available subscriptions:` | `Your appropriate subsctioption` |
 |  `Choose a Web Container Web App [\<create\>]:` |  `1: <create>`  |
 |  `Define value for OS [Linux]:`  |  `Linux`  |
-|  `Define value for javaVersion [Java 8]:`  |  `1: Java 8`  |
-|  `Define value for runtimeStack:`  |  `1: Jbosseap 7.2`  |
+|  `Define value for javaVersion [Java 17]:`  |  `2: Java 11`  |
+|  `Define value for runtimeStack:`  |  `1: Jbosseap 7`  |
 |  `Define value for pricingTier [P1v3]:`  |  `P1v3`  |
 |  `Confirm (Y/N) [Y]:` | `Y` |
 
 After you run the command, you'll see look like the following messages in the terminal.
 
 ```bash
-$ ./mvnw com.microsoft.azure:azure-webapp-maven-plugin:2.5.0:config
+$ ./mvnw com.microsoft.azure:azure-webapp-maven-plugin:2.9.0:config
 [INFO] Scanning for projects...
 [INFO] 
 [INFO] ---------< com.microsoft.azure.samples:jakartaee-app-on-jboss >---------
@@ -87,55 +87,50 @@ $
 After the command finishes, you can see that following entry is added in your Maven `pom.xml` file.
 
 ```xml
- <build> 
-    <finalName>ROOT</finalName>  
+  <build>
+    <finalName>ROOT</finalName>
     <plugins>
       <plugin>
-        <groupId>com.microsoft.azure</groupId>
-        <artifactId>azure-webapp-maven-plugin</artifactId>
-        <version>2.5.0</version>
-        <configuration>
-          <schemaVersion>v2</schemaVersion>
-          <subscriptionId>********-****-****-****-************</subscriptionId>
-          <resourceGroup>jakartaee-app-on-jboss-1625038814881-rg</resourceGroup>
-          <appName>jakartaee-app-on-jboss-1625038814881</appName>
-          <pricingTier>P1v3</pricingTier>
-          <region>japaneast</region>
-          <runtime>
-            <os>Linux</os>
-            <javaVersion>Java 8</javaVersion>
-            <webContainer>Jbosseap 7</webContainer>
-          </runtime>
-          <deployment>
-            <resources>
-              <resource>
-                <directory>${project.basedir}/target</directory>
-                <includes>
-                  <include>*.war</include>
-                </includes>
-              </resource>
-              <!-- Please add following lines -->
-              <resource>
-                <type>startup</type>
-                <directory>${project.basedir}/src/main/webapp/WEB-INF/</directory>
-                <includes>
-                  <include>createMySQLDataSource.sh</include>
-                </includes>
-              </resource>
-              <!-- Please add following lines -->
-            </resources>
-          </deployment>
-        </configuration>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.3.2</version>
       </plugin>
+        <plugin>
+            <groupId>com.microsoft.azure</groupId>
+            <artifactId>azure-webapp-maven-plugin</artifactId>
+            <version>2.9.0</version>
+            <configuration>
+                <schemaVersion>v2</schemaVersion>
+                <resourceGroup>jakartaee-app-on-jboss-1625038814881-rg</resourceGroup>
+                <appName>jakartaee-app-on-jboss-1625038814881</appName>
+                <pricingTier>P1v3</pricingTier>
+                <region>centralus</region>
+                <runtime>
+                    <os>Linux</os>
+                    <javaVersion>Java 11</javaVersion>
+                    <webContainer>Jbosseap 7</webContainer>
+                </runtime>
+                <deployment>
+                    <resources>
+                        <resource>
+                            <directory>${project.basedir}/target</directory>
+                            <includes>
+                                <include>*.war</include>
+                            </includes>
+                        </resource>
+                    </resources>
+                </deployment>
+            </configuration>
+        </plugin>
     </plugins>
-  </build> 
+  </build>
 ```
 
 > [!IMPORTANT]
 > Check the `<region>` element. If it's not the same installation location as MySQL, change it to the same location.
 
 After adding the above configuration for deploying to the Azure, add the following XML entries to deploy the startup file.  
-The resource `<type>startup</type>` will deploy the specified script as `startup.sh` (Linux) or `startup.cmd` (Windows) to `/home/site/scripts/`. We will configure the startup script in the following step.
+The resource `<type>startup</type>` deploys the specified script as `startup.sh` (Linux) or `startup.cmd` (Windows) to `/home/site/scripts/`. We configure the startup script in the following step.
 
 ```xml
               <!-- Please add following lines -->
@@ -150,8 +145,8 @@ The resource `<type>startup</type>` will deploy the specified script as `startup
 ```
 
 > [!NOTE]  
-> You can specify the following resource to deploy in the XML.  
-> - `type=<war|jar|ear|lib|startup|static|zip>`  
+> You can specify the following resource to deploy in the XML.
+> - `type=<war|jar|ear|lib|startup|static|zip>`
 > 
 >    - `type=war` will deploy the war file to `/home/site/wwwroot/app.war` if `path` is _not_ specified  
 >    - `type=war&path=webapps/<appname>\` will behave exactly like wardeploy by unzipping app to /home/site/wwwroot/webapps/\<appname\>  
@@ -169,11 +164,11 @@ Now, check the values for the resource group name and application name from the 
 <appName>jakartaee-app-on-jboss-1625038814881</appName>
 ```
 
-If you are using the bash, configure the environment variables with the following command.
+If you're using Bash, configure the environment variables with the following command. These values are used later.
 
 ```bash
-export WEBAPP_NAME=jakartaee-app-on-jboss-1625038814881
 export RESOURCEGROUP_NAME=jakartaee-app-on-jboss-1625038814881-rg
+export WEBAPP_NAME=jakartaee-app-on-jboss-1625038814881
 ```
 
 ## Compile and build the Java EE app
@@ -197,8 +192,8 @@ The following output appears in the terminal:
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  10.616 s
-[INFO] Finished at: 2021-07-02T13:08:15+09:00
+[INFO] Total time:  7.656 s
+[INFO] Finished at: 2023-03-04T12:35:43-05:00
 [INFO] ------------------------------------------------------------------------
 ```
 
@@ -225,8 +220,8 @@ The following message appears in the terminal:
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  03:30 min
-[INFO] Finished at: 2021-07-02T13:12:15+09:00
+[INFO] Total time:  02:11 min
+[INFO] Finished at: 2023-03-04T12:38:39-05:00
 [INFO] ------------------------------------------------------------------------
 ```
 
@@ -238,7 +233,7 @@ Note down the URL of the deployed application, particularly the following line i
 
 ## Configure a database connection
 
-The sample application will connect to your MySQL Database and display data.
+The sample application connects to your MySQL Database and display data.
 
 In the Maven project configuration in `pom.xml`, we specified the MySQL JDBC driver as follows:
 
@@ -264,6 +259,8 @@ To create a MySQL `DataSource` object in JBoss EAP, we created the following sta
 
 > [!NOTE]
 > In the script, we bind the MySQL DataSource by using a JBoss CLI command. The connection string, username, and password use the environment variables `MYSQL_CONNECTION_URL`, `MYSQL_USER`, and `MYSQL_PASSWORD`.
+
+The source of the script file is shown next.  This script file has already been uploaded to App Service, but it hasn't yet been configured to be invoked.
 
 ```shell
 #!/usr/bin/bash
@@ -351,7 +348,7 @@ Access the following file:
 ```
 
 Check if the `DataSource` name matches the name used in the configuration.
-In an earlier step, you created the JNDI name as `java:jboss/datasources/JPAWorldDataSource`. So, add a `DataSource` reference as `java:jboss/datasources/JPAWorldDataSource` in the `<jta-data-source>` XML element as follows:
+The code already created the JNDI name as `java:jboss/datasources/JPAWorldDataSource`:
 
 ```xml
   <persistence-unit name="JPAWorldDatasourcePU" transaction-type="JTA">
@@ -359,6 +356,7 @@ In an earlier step, you created the JNDI name as `java:jboss/datasources/JPAWorl
     <exclude-unlisted-classes>false</exclude-unlisted-classes>
     <properties>
       <property name="hibernate.generate_statistics" value="true" />
+      <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />
     </properties>
   </persistence-unit>
 </persistence>
@@ -392,7 +390,10 @@ Run the following command to get all the continent information in JSON format.
 :::image type="content" source="../media/rest-endpoint-area.png" alt-text="Screenshot that shows area as the REST endpoint.":::
 
 ```bash
-$ curl https://jakartaee-app-on-jboss-1606464084546.azurewebsites.net/area
+$ curl https://${WEBAPP_NAME}.azurewebsites.net/area
+```
+
+```bash
 ["North America","Asia","Africa","Europe","South America","Oceania","Antarctica"]$ 
 ```
 
@@ -401,7 +402,10 @@ And if you specify the continent in the URL, you can get all the countries in th
 :::image type="content" source="../media/rest-endpoint-continent.png" alt-text="Screenshot that shows continent as the REST endpoint.":::
 
 ```bash
-$ curl https://jakartaee-app-on-jboss-1606464084546.azurewebsites.net/area/Asia | jq '.[] | { name: .name, code: .code }'
+$ curl https://${WEBAPP_NAME}.azurewebsites.net/area/Asia | jq '.[] | { name: .name, code: .code }'
+```
+
+```bash
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--   100 16189  100 16189    0     0  65278      0 --:--:-- --:--:-- --:--:-- 65542
@@ -433,7 +437,10 @@ Finally, if you specify a country code after `/countries`, you can get all the c
 :::image type="content" source="../media/rest-endpoint-cities.png" alt-text="Screenshot that shows cities as the REST endpoint.":::
 
 ```bash
-$ curl https://jakartaee-app-on-jboss-1606464084546.azurewebsites.net/countries/JPN | jq '.[].name'
+$ curl https://${WEBAPP_NAME}.azurewebsites.net/countries/JPN | jq '.[].name'
+```
+
+```bash
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--   100   788  100   788    0     0   2671      0 --:--:-- --:--:-- --:--:--  2662
@@ -453,3 +460,5 @@ $ curl https://jakartaee-app-on-jboss-1606464084546.azurewebsites.net/countries/
 ## Exercise summary
 
 You've now validated the application REST endpoints and tested that your application can get data from your MySQL database.
+
+In the next unit, examine the server logs.
