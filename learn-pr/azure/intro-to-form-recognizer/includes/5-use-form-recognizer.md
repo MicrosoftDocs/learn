@@ -1,4 +1,4 @@
-In this exercise, you can see Form Recognizer in action by deploying a Form Recognizer resource and a webapp that uses it-just by **copying and pasting one Azure CLI command**.
+In this exercise, you can see Form Recognizer in action by deploying a Form Recognizer resource and a webapp that uses it – just by **copying and pasting one Azure CLI command**.
   
 To start, you need to activate the Sandbox – just select the **Activate sandbox** button and sign in, no payment or Azure subscription required. Despite having full administrative access to the website and Azure resources, the resources in this exercise are created on Microsoft's subscription, so they don't cost you anything.
 
@@ -20,9 +20,9 @@ To create the Form Recognizer resource and deploy the webapp, complete the follo
     curl -s https://raw.githubusercontent.com/MicrosoftDocs/mslearn-intro-to-form-recognizer/main/scripts/deploy-in-sandbox.sh | bash 
     ```
   
-2. Wait several minutes for the command to run. You may finish reading this page and navigate to other pages within this module - it doesn't affect the running script.
+1. Wait several minutes for the command to run. You may finish reading this page and navigate to other pages within this module - it doesn't affect the running script.
   
-3. Select the link to the URL displayed at the bottom of the shell. The web app opens and lets you use Form Recognizer. You can also cut and paste the URL from here, but remember, it doesn't work until the script finishes running: https://fr-<rgn>[sandboxName]</rgn>.azurewebsites.net
+1. Select the link to the URL displayed at the bottom of the shell. The web app opens and lets you use Form Recognizer. You can also cut and paste the URL from here, but remember, it doesn't work until the script finishes running: https://fr-<rgn>[sandboxName]</rgn>.azurewebsites.net
   
 After you run the code, you can play around with Form Recognizer at your own pace.
 
