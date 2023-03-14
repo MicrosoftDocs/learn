@@ -23,7 +23,7 @@ To run the C# application, you need the following configuration values:
 1. Select **Connect** to open the **Device connection groups** panel.
 1. Either keep this page open, or make a note of the **ID scope**, **Device ID**, and **Primary key** values.
 
- ![Device connection information.](../media/6-device-connection.png)
+    ![Device connection information.](../media/6-device-connection.png)
 
 Use the Azure Cloud Shell to set the environment variables used by the C# application.
 
@@ -33,7 +33,12 @@ export DEVICE_ID=<The Device ID you made a note of previously>
 export DEVICE_KEY=<The Primary key you made a note of previously>
 ```
 
-<!-- TODO: Change to using a Csharp App -->
+Print the environment variables and confirm they are correctly defined.
+
+```azurecli-interactive
+printenv ID_SCOPE DEVICE_ID DEVICE_KEY
+```
+
 ## Create a C# application
 
 The following steps show you how to create a client application that implements the coffee machine device simulator.
@@ -67,7 +72,6 @@ The following steps show you how to create a client application that implements 
 
 Congratulations! Your app is up and running and communicating with IoT Central!
 
-<!-- TODO: Review this part -->
 ## Check your work
 
 You've now worked with the Azure IoT Central application and connected the coffee machine to Azure IoT Central. You are well on your way to begin to monitor and manage your remote coffee machine. Here, you take a moment to validate your setup and connection by using the **Connected Coffee Machine** template that you defined earlier. You update the optimal temperature on the **Properties** form, run commands to update the state of your machine, and view your connected coffee machine telemetry.
@@ -120,21 +124,25 @@ Navigate to the **Commands** page for your device for the following exercise. To
     Look for confirmation messages in the console log of the simulated coffee machine.
 
     ```
+    Set up the device client.
     Device successfully connected to Azure IoT Central
-    Device Twin successfully retrieved from Azure IoT Central
-     * Property - Warranty State: false
-     * Received setting: OptimalTemperature: 95
-     * Sent device properties (success)
-    Telemetry send: Temperature: 96.1 Humidity: 75.9% Cup Detected: Y Brewing: N Maintenance Mode: N
-     * Sent setting update for OptimalTemperature (success)
-    Telemetry send: Temperature: 93.7 Humidity: 20.8% Cup Detected: Y Brewing: N Maintenance Mode: N
-    Telemetry send: Temperature: 93.9 Humidity: 51.1% Cup Detected: Y Brewing: N Maintenance Mode: N
-    Telemetry send: Temperature: 95.3 Humidity: 28.1% Cup Detected: Y Brewing: N Maintenance Mode: N
-    Telemetry send: Temperature: 95.2 Humidity: 49.6% Cup Detected: Y Brewing: N Maintenance Mode: N
-    Telemetry send: Temperature: 96.2 Humidity: 74.9% Cup Detected: Y Brewing: N Maintenance Mode: N
-     * Brewing command received
-    Telemetry send: Temperature: 95.2 Humidity: 85.8% Cup Detected: Y Brewing: Y Maintenance Mode: N
-    Telemetry send: Temperature: 97.0 Humidity: 29.3% Cup Detected: Y Brewing: Y Maintenance Mode: N
+    - Set handler for "SetMaintenanceMode" command.
+    - Set handler for "StartBrewing" command.
+    - Set handler to receive "OptimalTemperature" updates.
+    - Update "DeviceWarrantyExpired" reported property on the initial startup.
+     * Property: Update - { "DeviceWarrantyExpired": True } is Completed.
+    Telemetry send: Temperature: 97ºC Humidity: 25.4% Cup Detected: Y Brewing: N Maintenance Mode: N
+    Telemetry send: Temperature: 94.3ºC Humidity: 22.4% Cup Detected: Y Brewing: N Maintenance Mode: N
+     * Property: Received - { "OptimalTemperature": 95°C }.
+     * Property: Update - {"OptimalTemperature ": 95°C } is InProgress.
+    Telemetry send: Temperature: 96.2ºC Humidity: 53.5% Cup Detected: N Brewing: N Maintenance Mode: N
+     * Property: Update - {"OptimalTemperature ": 95°C } is Completed.
+    Telemetry send: Temperature: 95.9ºC Humidity: 35.3% Cup Detected: N Brewing: N Maintenance Mode: N
+    Telemetry send: Temperature: 96.4ºC Humidity: 75.5% Cup Detected: N Brewing: N Maintenance Mode: N
+     * Start brewing command received
+    Telemetry send: Temperature: 94.2ºC Humidity: 86.3% Cup Detected: Y Brewing: Y Maintenance Mode: N
+    Telemetry send: Temperature: 94.8ºC Humidity: 85.4% Cup Detected: Y Brewing: Y Maintenance Mode: N
+    Telemetry send: Temperature: 96.7ºC Humidity: 93.7% Cup Detected: Y Brewing: Y Maintenance Mode: N
     ```
 
 1. Set maintenance mode by choosing **Run** on the **Commands** page. The coffee machine will set to maintenance if it's *not* already in maintenance.
@@ -145,27 +153,32 @@ Navigate to the **Commands** page for your device for the following exercise. To
     > As in real life, when the technician takes the machine offline to perform necessary repairs before switching it back online, the coffee machine continues to stay in the maintenance mode until you reboot the client code.
 
     ```
+    Set up the device client.
     Device successfully connected to Azure IoT Central
-    Device Twin successfully retrieved from Azure IoT Central
-     * Property - Warranty State: true
-     * Received setting: OptimalTemperature: 95
-     * Sent device properties (success)
-    Telemetry send: Temperature: 94.9 Humidity: 49.2% Cup Detected: Y Brewing: N Maintenance Mode: N
-     * Sent setting update for OptimalTemperature (success)
-    Telemetry send: Temperature: 96.7 Humidity: 64.4% Cup Detected: Y Brewing: N Maintenance Mode: N
-    Telemetry send: Temperature: 95.7 Humidity: 32.4% Cup Detected: Y Brewing: N Maintenance Mode: N
-    Telemetry send: Temperature: 94.7 Humidity: 98.6% Cup Detected: Y Brewing: N Maintenance Mode: N
+    - Set handler for "SetMaintenanceMode" command.
+    - Set handler for "StartBrewing" command.
+    - Set handler to receive "OptimalTemperature" updates.
+    - Update "DeviceWarrantyExpired" reported property on the initial startup.
+     * Property: Update - { "DeviceWarrantyExpired": False } is Completed.
+    Telemetry send: Temperature: 96.8ºC Humidity: 39.2% Cup Detected: Y Brewing: N Maintenance Mode: N
+    Telemetry send: Temperature: 96.8ºC Humidity: 57.7% Cup Detected: Y Brewing: N Maintenance Mode: N
+    Telemetry send: Temperature: 97.2ºC Humidity: 45.2% Cup Detected: Y Brewing: N Maintenance Mode: N
      * Maintenance command received
-    Telemetry send: Temperature: 93.2 Humidity: 61.5% Cup Detected: Y Brewing: N Maintenance Mode: Y
-    Telemetry send: Temperature: 93.8 Humidity: 64.4% Cup Detected: Y Brewing: N Maintenance Mode: Y
+    Telemetry send: Temperature: 96ºC Humidity: 54.7% Cup Detected: Y Brewing: N Maintenance Mode: Y
+    Telemetry send: Temperature: 95.6ºC Humidity: 22.1% Cup Detected: Y Brewing: N Maintenance Mode: Y
+    Telemetry send: Temperature: 95.3ºC Humidity: 92% Cup Detected: Y Brewing: N Maintenance Mode: Y
+     * Start brewing command received
+     - Warning: The device is in maintenance mode.
+    Telemetry send: Temperature: 94.5ºC Humidity: 85.5% Cup Detected: Y Brewing: N Maintenance Mode: Y
+    Telemetry send: Temperature: 96.9ºC Humidity: 62.7% Cup Detected: Y Brewing: N Maintenance Mode: Y
+    Telemetry send: Temperature: 97.6ºC Humidity: 47.3% Cup Detected: Y Brewing: N Maintenance Mode: Y
     ```
 
 ### View the coffee machine telemetry
 
 Navigate to the **Telemetry** page for the coffee machine. You defined this page when you created the device template:
 
-<!-- TODO: Take a new screenshot to remove the Organization coffee-maker-sergaz -->
 ![Screenshot showing the Telemetry page for the connected coffee machine device template.](../media/6-telemetry.png)
 
 > [!IMPORTANT]
-> It's recommended that you run the C# application no more than 60 minutes or so, to prevent the application from sending you unwanted notifications/emails. Stopping the application when you're not working on the module also prevents you from exhausting the daily message quota. You can add the flag `-n [TimeInSeconds]` to define the running time of the application.
+> It's recommended that you run the C# application no more than 60 minutes or so, to prevent the application from sending you unwanted notifications/emails. Stopping the application when you're not working on the module also prevents you from exhausting the daily message quota. You can add a flag to define the running time of the application: `dotnet run -n [TimeInSeconds]`.
