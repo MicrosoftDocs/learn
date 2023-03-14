@@ -1,13 +1,13 @@
 ### YamlMime:Module
 uid: learn.wwl.oversee-device-profiles
 metadata:
-  title: Monitor device profiles
+  title: Oversee device profiles
   description: "This module introduces students to monitoring profiles to ensure correct assignments and resolving conflicts when multiple profiles are applied."
-  ms.date: 03/13/2023
+  ms.date: 03/14/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
-title: Monitor device profiles
+title: Oversee device profiles
 summary: This module introduces students to monitoring profiles to ensure correct assignments and resolving conflicts when multiple profiles are applied.
 abstract: |
   After completing this module, you will be able to:

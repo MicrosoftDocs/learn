@@ -1,5 +1,5 @@
 
-You must sync your devices with Intune to update them with the latest policies and actions. The **Sync device** action forces the selected device to immediately check-in with Intune. When a device checks in, it immediately receives any pending actions or policies that have been assigned to it. This feature can help you immediately validate and troubleshoot policies you’ve assigned, without waiting for the next scheduled check-in.
+You must sync your devices with Intune to update them with the latest policies and actions. The **Sync device** action forces the selected device to immediately check in with Intune. When a device checks in, it immediately receives any pending actions or policies that have been assigned to it. This feature can help you immediately validate and troubleshoot policies you’ve assigned, without waiting for the next scheduled check-in.
 
 Complete the following steps to sync a device:
 
