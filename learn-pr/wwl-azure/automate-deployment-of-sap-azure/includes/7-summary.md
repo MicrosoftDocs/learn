@@ -1,5 +1,6 @@
 
 
+
 Now that you have reviewed this module, you should be able to:
 
 - Describe Azure built-in and external tools and methods to deploy SAP infrastructure on Azure.
