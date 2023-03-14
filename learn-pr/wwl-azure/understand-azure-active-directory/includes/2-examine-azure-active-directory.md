@@ -19,7 +19,7 @@ You can use Azure AD to provide more secure access to cloud-based resources for 
  -  Configuring Application Proxy for cloud and local applications
  -  Configuring Conditional Access for users and devices
 
-:::image type="content" source="../media/azure-active-directory-connect-stack-f1aae359.png" alt-text="Azure AD Connect Stack":::
+:::image type="content" source="../media/azure-active-directory-connect-stack-f1aae359.png" alt-text="Diagram that show the Azure AD Connect Stack":::
 
 
 Azure AD constitutes a separate Azure service. Its most elementary form, which any new Azure subscription includes automatically, doesn't incur any extra cost and is referred to as the Free tier. If you subscribe to any Microsoft Online business services (for example, Microsoft 365 or Microsoft Intune), you automatically get Azure AD with access to all the Free features.
