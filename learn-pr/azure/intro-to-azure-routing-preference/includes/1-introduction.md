@@ -8,7 +8,7 @@ After completing this module, you'll know more about routing preference and how 
 
 ## What will we be doing?
 
-In this module you'll learn about how routing from Azure to the public Internet works by default. You'll learn about routing preference and how you can change how traffic is transferred between the Azure and the Internet. You'll explore scenarios where it may be appropriate to change how data is transferred between Azure and the Internet. Finally, we'll discuss routing preference metered and how it differs from routing preference.
+In this module you'll learn about how routing from Azure to the public Internet works by default. You'll learn about routing preference and how you can change how traffic is transferred between the Azure and the Internet. You'll explore scenarios where it may be appropriate to change how data is transferred between Azure and the Internet. Finally, we'll discuss routing preference unmetered and how it differs from routing preference.
 
 ## What is the main goal?
 
