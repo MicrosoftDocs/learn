@@ -3,7 +3,7 @@ In most organizations today, line-of-business (LOB) applications are deployed on
 
 Microsoft provides Azure AD Domain Services as an alternative to these approaches. This service, which runs as part of the Azure AD Premium tier, provides domain services such as Group Policy management, domain joining, and Kerberos authentication to your Azure AD tenant. These services are fully compatible with locally deployed AD DS, so you can use them without deploying and managing additional domain controllers in the cloud.
 
-:::image type="content" source="../media/azure-active-directory-virtual-network-340081c4.png" alt-text=""Diagram that shows the Azure AD Domain Services Overview.":::
+:::image type="content" source="../media/azure-active-directory-virtual-network-340081c4.png" alt-text="Diagram that shows the Azure AD Domain Services Overview.":::
 
 
 Because Azure AD can integrate with your local AD DS, when you implement Azure AD Connect, users can utilize organizational credentials in both on-premises AD DS and in Azure AD Domain Services. Even if you don’t have AD DS deployed locally, you can choose to use Azure AD Domain Services as a cloud-only service. This enables you to have similar functionality of locally deployed AD DS without having to deploy a single domain controller on-premises or in the cloud. For example, an organization can choose to create an Azure AD tenant and enable Azure AD Domain Services, and then deploy a virtual network between its on-premises resources and the Azure AD tenant. You can enable Azure AD Domain Services for this virtual network so that all on-premises users and services can use domain services from Azure AD.
