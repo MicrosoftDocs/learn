@@ -4,6 +4,9 @@ Mara is going to do exactly that, and by following the procedures, you can do th
 
 You have two options for completing this module.
 
+* **GitHub Codespaces** - Choose **GitHub codespaces** to follow the steps of this module using a development environment provided in GitHub Codespaces. You won't need to install any development tools on your local machine, and the GitHib Codespaces environment also hosts the agent to run your pipeline.
+* **Microsoft-hosted agent** - Choose **Microsoft-hosted agent** to follow the steps of this module using your local development environment and a Microsoft-hosted agent. Before starting, [check your parallel jobs](/azure/devops/pipelines/troubleshooting/troubleshooting#check-for-available-parallel-jobs), and if you don't have any, [request a free grant](https://aka.ms/azpipelines-parallelism-request). The approval process for the free grant typically takes 2-3 business days.
+
 * Use an Azure DevOps Linux self-hosted agent and build with GitHub Codespaces. The advantage of using a self-hosted agent is that you won't run into any parallel-job limits.
 * Build locally with Visual Studio Code and use a Microsoft-hosted agent. Before you choose this approach, [check your parallel jobs](/azure/devops/pipelines/troubleshooting/troubleshooting#check-for-available-parallel-jobs).
 
