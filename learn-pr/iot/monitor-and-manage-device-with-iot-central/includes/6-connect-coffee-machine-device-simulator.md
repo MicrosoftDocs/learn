@@ -11,7 +11,7 @@ Here, you'll simulate a device with a C# application and connect it to the Azure
 First we will register the device:
 
 1. In your IoT Central application, navigate to **Devices** and then **+ New**.
-1. On the **Create a new device form**, change the **Device ID** to *ccm-001* and **Device name** to *Connected Coffee Machine - 001*. Make sure that **Device template** is *Unassigned* and **Simulate this device?** is *No*, and then select Create.
+1. On the **Create a new device form**, change the **Device ID** to *ccm-001* and **Device name** to *Connected Coffee Machine - 001*. Make sure that **Device template** is *Unassigned* and **Simulate this device** is *No*, and then select Create.
 
 The **Connected Coffee Machine - 001** device now shows in the list of devices with a status of **Registered** and template **Unassigned**. In the previous unit we looked at the C# application code and confirmed that the model ID is sent when provisioning the device. That will allow IoT Central to assign the correct device template the first time the device connects.
 
