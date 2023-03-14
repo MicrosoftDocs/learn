@@ -2,7 +2,7 @@
 uid: learn.wwl.execute-device-enrollment
 metadata:
   title: MD-102 Execute device enrollment
-  description: This learning path will cover Azure AD join and will introduce Microsoft Endpoint Manager. We will also discuss how to configure policies for enrolling devices to Configuration Manager and Microsoft Intune.
+  description: This learning path will cover Azure AD join and will introduce Microsoft Endpoint Manager. We'll also discuss how to configure policies for enrolling devices to Configuration Manager and Microsoft Intune.
   ms.date: 03/14/2023
   author: wwlpublish
   ms.author: rstearman
@@ -14,7 +14,7 @@ prerequisites: |
   - Strong understanding of computer networking, client security, and application concepts.
   - Experience using Active Directory Domain Services.
 summary: |
-  This learning path will cover Azure AD join and will introduce Microsoft Endpoint Manager. We will also discuss how to configure policies for enrolling devices to Configuration Manager and Microsoft Intune.
+  This learning path will cover Azure AD join and will introduce Microsoft Endpoint Manager. We'll also discuss how to configure policies for enrolling devices to Configuration Manager and Microsoft Intune.
 iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - intermediate
