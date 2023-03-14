@@ -1,15 +1,15 @@
-Routing Preference in Azure controls how traffic flows from Azure to the public Intenet. With Routing Preference, data transfer traffic is routed over the Microsoft global network or over the public Internet.
+Routing preference in Azure controls how traffic flows from Azure to the public Internet. With routing preference, data transfer traffic is routed over the Microsoft global network or over the public Internet.
 
 ## Example scenario
 
 You are a network engineer for a multi-national car manufacturer. The factory application developers have deployed an application in the Central US Azure region. This application is used by one of the company's factories in Singapore. Recently, the cost of traffic from the Singapore factory to the Central US region across the Microsoft backbone network has significantly increased. You have been tasked with creating a plan to alleviate some of the cost of the network traffic from Singapore to the application in Azure.
 
-After completing this module, you'll know more about Routing Preference and how determining the routing will affect the data transfer costs in your Azure subscription.
+After completing this module, you'll know more about routing preference and how determining the routing will affect the data transfer costs in your Azure subscription.
 
 ## What will we be doing?
 
-In this module you'll learn about how routing from Azure to the public Internet works by default. You'll learn about Routing Preference and how you can change how traffic is transferred between the Azure and the Internet. You'll explore scenarios where it may be appropriate to change how data is transferred between Azure and the Internet. Finally, we'll discuss Routing Preference Metered and how it differs from Routing Preference.
+In this module you'll learn about how routing from Azure to the public Internet works by default. You'll learn about routing preference and how you can change how traffic is transferred between the Azure and the Internet. You'll explore scenarios where it may be appropriate to change how data is transferred between Azure and the Internet. Finally, we'll discuss routing preference metered and how it differs from routing preference.
 
 ## What is the main goal?
 
-By the end of this session, you'll be able to decide whether Routing Preference is a good choice for savings in your data transfer costs.
+By the end of this session, you'll be able to decide whether routing preference is a good choice for savings in your data transfer costs.

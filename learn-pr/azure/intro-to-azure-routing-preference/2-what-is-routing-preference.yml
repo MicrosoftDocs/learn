@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-routing-preference.what-is-routing-preference
+title: What is routing preference?
+metadata:
+  title: what-is-routing-preference
+  description: "This unit for routing preference explains what routing preference is and the routing difference between the options of Internet and Microsoft Network."
+  ms.date: 03/13/2023
+  author: asudbring
+  ms.author: allensu
+  ms.topic: interactive-tutorial
+  ms.prod: virtual-network
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-what-is-routing-preference.md)]

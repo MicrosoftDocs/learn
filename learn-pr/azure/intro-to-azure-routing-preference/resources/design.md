@@ -74,11 +74,11 @@ Add more units as needed for your content
 
         * Describe why you would use Routing Preference in Azure.
 
-    * Overview of Routing Preference Metered
+    * Overview of Routing Preference Unmetered
 
-        * Describe what Routing Preference Metered is.
+        * Describe what Routing Preference Unmetered is.
 
-        * Describe why you would use Routing Preference Metered.
+        * Describe why you would use Routing Preference Unmetered.
 
     **Knowledge check**
 

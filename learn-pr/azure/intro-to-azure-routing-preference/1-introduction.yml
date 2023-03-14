@@ -3,12 +3,12 @@ uid: learn.intro-to-azure-routing-preference.introduction
 title: Introduction
 metadata:
   title: introduction
-  description: "This training module is designed to help Network Engineers understand the concept of Routing Preference and Routing Preference Metered and how it can be used to achieve cost savings in their Azure subscription."
+  description: "This training module is designed to help Network Engineers understand the concept of routing preference and routing preference metered and how it can be used to achieve cost savings in their Azure subscription."
   ms.date: 2/8/2023
   author: asudbring
   ms.author: allensu
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.prod: virtual-network # Edit as appropriate for your portfolio area
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
