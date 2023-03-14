@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-call-methods.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/8-summary.md)]

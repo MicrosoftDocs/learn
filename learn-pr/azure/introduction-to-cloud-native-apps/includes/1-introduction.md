@@ -1,6 +1,6 @@
 Cloud-native apps represent a modern approach to app development, where software systems are designed with cloud technologies in mind. Unlike apps that were originally designed to run on premises, cloud-native apps can take full advantage of the many services Azure has to offer.
 
-When designing cloud-native apps, many cloud architects choose to leverage Open-Source Software (OSS) like Kubernetes and Docker, but turn to proprietary offerings like Cosmos DB when the benefit is overwhelming. Because of this, cloud-native apps make the end-to-end process of building an application easier, with a focus on **architectural modularity**, rather than monolithic, all-in-one applications. You can utilize the technologies that suit your skillset and situation, without being locked into technology choices.
+Many cloud architects opt for Open-Source Software (OSS) like Kubernetes and Docker when designing cloud-native apps, but turn to proprietary offerings like Cosmos DB when the benefit is overwhelming. Because of this, cloud-native apps make the end-to-end process of building an application easier, with a focus on **architectural modularity**, rather than monolithic, all-in-one applications. You can utilize the technologies that suit your skill set and situation, without being locked into technology choices.
 
 ## Scenario: Smart fridges, smarter service, at scale
 

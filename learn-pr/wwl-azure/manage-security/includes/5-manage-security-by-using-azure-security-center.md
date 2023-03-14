@@ -1,3 +1,5 @@
+
+
 One thing that makes cloud services different from traditional on-premises virtual desktop infrastructures (VDIs) is how they handle security responsibilities.
 
 When you use Azure Virtual Desktop, it’s important to understand that while some components come already secured for your environment, you'll need to configure other areas yourself to fit your organization’s security needs.

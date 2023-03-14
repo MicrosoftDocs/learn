@@ -1,7 +1,8 @@
+
 > [!NOTE]
 >  Microsoft 365 compliance is now called Microsoft Purview and the solutions within the compliance area have been rebranded. Office 365 core eDiscovery is now Microsoft Purview eDiscovery (Standard). Office 365 Advanced eDiscovery is now Microsoft Purview eDiscovery (Premium). For more information about Microsoft Purview, see the [blog announcement](https://www.microsoft.com/security/blog/2022/04/19/the-future-of-compliance-and-data-governance-is-here-introducing-microsoft-purview/)
 
-Electronic discovery, or eDiscovery, is the **process** of identifying and delivering electronic information that can be used as evidence in legal cases. You can use eDiscovery tools in Microsoft Purview to search for content in Exchange Online, OneDrive for Business, SharePoint Online, Microsoft Teams, Microsoft 365 Groups, and Yammer teams. You can search mailboxes and sites in the same eDiscovery search, and then export the search results. You can use eDiscovery cases to identify, hold, and export content found in mailboxes and sites.
+Electronic discovery, or eDiscovery, is the process of identifying and delivering electronic information that can be used as evidence in legal cases. You can use eDiscovery tools in Microsoft Purview to search for content in Exchange Online, OneDrive for Business, SharePoint Online, Microsoft Teams, Microsoft 365 Groups, and Yammer teams. You can search mailboxes and sites in the same eDiscovery search, and then export the search results. You can use eDiscovery cases to identify, hold, and export content found in mailboxes and sites.
 
 Microsoft Purview provides three eDiscovery solutions: Content search, eDiscovery (Standard), and eDiscovery (Premium).
 

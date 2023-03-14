@@ -1,3 +1,4 @@
+
 The last step in the site-to-site connection process is to establish the connection between your VPN gateways. If your virtual networks are in the same subscription, you can use the Azure portal to create the connection. Several parameters need to be configured to create the connection. 
 
 ### Things to know about creating your VPN connection

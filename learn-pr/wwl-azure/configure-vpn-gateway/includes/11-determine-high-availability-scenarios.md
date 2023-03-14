@@ -1,3 +1,4 @@
+
 You can implement a highly available VPN gateway to support cross-premises and VNet-to-VNet connections and configurations with multiple on-premises VPN devices. In these scenarios, the Azure VPN gateway consists of two instances in an _active-standby_ configuration.
 
 You can also create an Azure VPN gateway in an _active-active_ configuration. Both instances of the gateway virtual machines establish site-to-site VPN tunnels to your on-premises VPN device. You can support an active-active configuration for Azure VPN gateways only, or in combination with multiple on-premises VPN devices.

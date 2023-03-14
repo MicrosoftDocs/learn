@@ -1,6 +1,4 @@
-# Stay ahead of the curve
-
-The Windows Insider Program is a free service that provides prerelease access to the latest builds of Windows 10 and development SDKs. Through the Program, you can test upcoming Windows 10 features and APIs before they're released to the public, and you can keep up to date with the latest in Windows development.
+The Windows Insider Program is a free service that provides prerelease access to the latest builds of Windows 10 and development SDKs. Through the program, you can test upcoming Windows 10 features and APIs before they're released to the public, and you can keep up to date with the latest in Windows development.
 
 ## Join the Windows Insider Program
 
@@ -10,28 +8,31 @@ To register for the program:
 1. In the **Settings** app, select **Update & Security**, and then select **Windows Insider Program**. 
 1. Select **Get started**.
 
-> [!NOTE]
+> [!IMPORTANT]
 > To view the **Windows Insider Program** tab and to install the prerelease features it provides, you must have administrator rights to your computer.
 
-![The Windows Insider Program "Get started" button](../media/insider-program-join.png)
+![Screenshot showing the Windows Insider Program "Get started" button.](../media/insider-program-join.png)
 
 If you've already registered for the Windows Insider Program, you still need to sign in to the registered Microsoft account to receive prerelease builds of Windows on a new computer.
 
-![Choose your account for the Windows Insider Program.](../media/insider-program-account.png)
+![Screenshot showing how to choose your account for the Windows Insider Program.](../media/insider-program-account.png)
 
 ## Install preview builds
 
-After your registration and sign-in are complete, you're prompted to choose the prerelease content and release pace that fits your needs. These options can be changed later if your requirements change.
+After your registration and sign-in are complete, you're prompted to choose the prerelease content and release pace that fits your needs. 
 
 We recommend that developers select **Active development of Windows** as their content type.
 
-![Choose your content type.](../media/insider-program-content-choice.png)
+![Screenshot showing how to choose your content type.](../media/insider-program-content-choice.png)
 
 If you're unfamiliar with working on prerelease builds, we recommend that you choose **Windows Insider Slow** as the pace. This will ensure access to prerelease features with minimal disruption to your computer.
 
-![Choose your build pace.](../media/insider-program-pace.png)
+![Screenshot showing how to choose your build pace.](../media/insider-program-pace.png)
 
-After you've chosen your content type and pace, read and accept the privacy statement and the program agreement. Microsoft collects information from computers that run the Windows Insider Program. The company uses this information to help identify issues and improve the user experience of prerelease Windows builds before they're released to the general public.
+After you've chosen your content type and pace, read and accept the privacy statement and the program agreement. These options can be changed later if your requirements change.
+
+> [!NOTE]
+> Microsoft collects information from computers that run the Windows Insider Program. The company uses this information to help identify issues and improve the user experience of prerelease Windows builds before they're released to the general public.
 
 ## Provide feedback
 

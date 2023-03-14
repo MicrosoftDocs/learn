@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-virtual-machine-backups.setup-recovery-services-vault-backup-options
-title: Setup recovery services vault backup options
+title: Set up Azure Recovery Services vault backup options
 metadata:
-  title: Setup recovery services vault backup options
-  description: "Setup recovery services vault backup options"
-  ms.date: 11/01/2022
+  title: Set up Azure Recovery Services vault backup options
+  description: "Set up Azure Recovery Services vault backup options for a virtual machine."
+  ms.date: 03/09/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 3
+durationInMinutes: 2
 content: |
   [!include[](includes/4-setup-recovery-services-vault-backup-options.md)]

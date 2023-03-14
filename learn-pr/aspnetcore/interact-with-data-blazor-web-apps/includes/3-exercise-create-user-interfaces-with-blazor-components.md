@@ -102,7 +102,7 @@ The team has also created classes to represent the models in the app. Review the
     }    
     ```
 
-   Note that a pizza order has a `Name`, `BasePrice`, `Description`, and `ImageUrl`.
+   Notice that a pizza order has a `Name`, `BasePrice`, `Description`, and `ImageUrl`.
 1. In the file explorer, expand **Pages** and then select **Index.razor**.
 
     ```razor

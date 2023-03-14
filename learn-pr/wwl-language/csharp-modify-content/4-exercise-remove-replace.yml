@@ -1,0 +1,28 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-modify-content.exercise-replace-remove
+title: Exercise - Use the Remove() and Replace() methods
+metadata:
+  title: Exercise - Use the Remove() and Replace() methods
+  description: "Exercise - Use the Remove() and Replace() methods"
+  ms.date: 02/25/2023
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-exercise-remove-replace.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "If the code `message = message.Replace(\"B\", \"D\");` is run, where `string message = \"Big Dog\";`, what is the new value of `message`?"
+    choices:
+    - content: "`\"Big Dog\"`"
+      isCorrect: false
+      explanation: "Incorrect. `\"B\"` is replaced by `\"D\"`."
+    - content: "`\"Big Bog\"`"
+      isCorrect: false
+      explanation: "Incorrect. `\"B\"` is replaced by `\"D\"`."
+    - content: "`\"Dig Dog\"`"
+      isCorrect: true
+      explanation: "Correct. `\"B\"` is replaced by `\"D\"`."

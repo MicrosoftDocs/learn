@@ -1,4 +1,4 @@
-Immersive Reader embeds text reading and cognition capabilities on top of existing web applications, using an iframe. Immersive Reader is a cognitive service designed in accordance with the latest education research, that creates an inclusive learning environment designed to increase comprehension, attention, and confidence. **Immersive Reader is free to educators and students**, and is built into all Office 365 products.
+Immersive Reader embeds text reading and cognition capabilities on top of existing web applications, by using an iframe. Immersive Reader is a cognitive service designed in accordance with the latest education research. It creates an inclusive learning environment designed to increase comprehension, attention, and confidence. **Immersive Reader is free to educators and students**, and is built into all Office 365 products.
 
 ## Reading
 
@@ -19,7 +19,7 @@ Dictation is built into Immersive Reader, which can help people who struggle wit
 :::row:::
 :::column span="1":::
 
-Immersive reader is also available for anyone who finds math difficult. By combining with Math Assistant, learners can have problems, equations, and solutions read aloud to them step by step. **Immersive Reader’s other functions, like line focus, focus mode, and spacing, all work with Math Assistant** to make math more accessible.
+Immersive reader is also available for anyone who finds math difficult. When Immersive reader is combined with Math Assistant, learners can have problems, equations, and solutions read aloud to them step by step. **Immersive Reader’s other functions, like line focus, focus mode, and spacing, all work with Math Assistant** to make math more accessible.
 
 :::column-end:::
 :::column span="1":::

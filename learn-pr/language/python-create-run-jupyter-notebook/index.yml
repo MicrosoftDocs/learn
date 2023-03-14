@@ -26,7 +26,7 @@ roles:
   - developer
   - student
 products:
-  - vs
+  - vs-code
 subjects:
 - knowledge-management
 units:

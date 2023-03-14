@@ -3,7 +3,7 @@ uid: learn.wwl.manage-user-authentication
 metadata:
   title: Manage user authentication
   description: "There are multiple options for authentication in Azure AD. Learn how to implement and manage the right authentications for users based on business needs."
-  ms.date: 02/03/2023
+  ms.date: 02/14/2023
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial

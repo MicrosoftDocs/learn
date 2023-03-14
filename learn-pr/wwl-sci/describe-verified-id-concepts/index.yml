@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn-wwl.describe-verified-id-concepts
+metadata:
+  title: Describe the concepts behind Microsoft Entra Verified ID
+  description: "Describe the core concepts behind Microsoft Entra Verified ID. Gain an understanding of decentralized identifiers and how they're used to issue and verify credentials."
+  ms.date: 03/06/2023
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Describe the concepts behind Microsoft Entra Verified ID
+summary: "Gain an understanding of decentralized identifiers and how they're used to issue and verify credentials, in a way that delivers on the promise of a decentralized identity system where users control their identities."
+abstract: |
+  By the end of this module, you'll be able to:
+    - Describe the challenges with current digital identities and credentials.
+    - Describe decentralized identifiers (DIDs).
+    - Describe what makes DIDs different than other identifiers.
+    - Describe how verifiable credentials work.
+prerequisites: |
+  - A general understanding of asymmetric cryptography (public-key cryptography) as described in [Describe the concepts of cryptography](/training/modules/describe-concepts-of-cryptography/).
+iconUrl: /learn/achievements/generic-badge.svg
+levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
+  - beginner
+  - intermediate
+roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
+  - identity-access-admin
+  - business-user
+  - student
+products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
+- entra
+- entra-verified-id
+subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
+  - identity-access
+units:
+- learn-wwl.describe-verified-id-concepts.introduction
+- learn-wwl.describe-verified-id-concepts.describe-challenges-with-digital-identities-credentials
+- learn-wwl.describe-verified-id-concepts.describe-decentralized-identifiers
+- learn-wwl.describe-verified-id-concepts.describe-why-dids-are-different
+- learn-wwl.describe-verified-id-concepts.describe-how-verifiable-credentials-work
+- learn-wwl.describe-verified-id-concepts.knowledge-check
+- learn-wwl.describe-verified-id-concepts.summary
+badge:
+  uid: learn-wwl.describe-verified-id-concepts.badge
