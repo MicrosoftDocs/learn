@@ -40,8 +40,8 @@ This model extracts key information, such as names and contact numbers, and comp
 
 ## Custom models
 
-Form Recognizer offers custom data extraction ‘models’ that can be tailored to your specific forms to extract text, key/value pairs, selection marks, and table data. The models are trained from the data you provide, improving the data extraction and outputting structured data in a customizable format. Custom models are perfect for forms that you use repeatedly, such as documents specific to your organization or industry.
+Form Recognizer offers custom data extraction *models* that can be tailored to your specific forms to extract text, key/value pairs, selection marks, and table data. The models are trained from the data you provide, improving the data extraction and outputting structured data in a customizable format. Custom models are perfect for forms that you use repeatedly, such as documents specific to your organization or industry.
 
-You can create a custom model by uploading examples of your documents in the Azure portal. You can even create a highly accurate model by ‘labeling’ the correct data to extract from your examples.
+You can create a custom model by uploading examples of your documents in the Azure portal. You can even create a highly accurate model by *labeling* the correct data to extract from your examples.
 
 ![Custom model example.](../media/overview-custom.png)
