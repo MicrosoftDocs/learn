@@ -28,7 +28,7 @@ Use the Microsoft Intune custom profile for Windows 10 and later to deploy Open 
 
 In the following example for Windows, the **Connectivity/AllowVPNOverCellular** setting is enabled. This setting allows a Windows device to open a VPN connection when on a cellular network.
 
-:::image type="content" source="../media/custom-profile-1c31fa8a.png" alt-text="Create profile screen, with Settings tab selected and Custom OMA-URI Settings window shown.":::
+:::image type="content" source="../media/custom-profile-1c31fa8a.png" alt-text="Screenshot of the create profile screen, with Settings tab selected and Custom OMA-URI Settings window shown.":::
 
 
 Not all settings are compatible with all Windows versions. The configuration service provider reference tells you which versions are supported for each CSP. Additionally, Intune doesn't support all the settings listed. To find out if Intune supports the setting you want, open the article for that setting. Each setting page shows its supported operation. To work with Intune, the setting must support the Add or Replace operations.

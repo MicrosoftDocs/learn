@@ -1,13 +1,13 @@
 ### YamlMime:Module
 uid: learn.wwl.execute-device-profiles
 metadata:
-  title: Implement device profiles
+  title: Execute device profiles
   description: "Students learn about the various types of device profiles, and how to create and manage them."
-  ms.date: 03/13/2023
+  ms.date: 03/14/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
-title: Implement device profiles
+title: Execute device profiles
 summary: Students learn about the various types of device profiles, and how to create and manage them.
 abstract: |
   After completing this module, you will be able to:
