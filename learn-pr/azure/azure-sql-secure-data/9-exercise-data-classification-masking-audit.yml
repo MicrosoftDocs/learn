@@ -3,7 +3,7 @@ uid: learn.azure-sql-secure-data.9-exercise-data-classification-masking-audit
 metadata:
   title: Exercise - Data classification, dynamic data masking, and SQL audit
   description: Exercise - Data classification, dynamic data masking, and SQL audit
-  ms.date: 08/05/2020
+  ms.date: 02/28/2023
   author: VanMSFT
   ms.author: vanto
   ms.topic: interactive-tutorial
