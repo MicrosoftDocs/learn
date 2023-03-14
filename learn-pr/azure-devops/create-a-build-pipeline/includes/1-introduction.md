@@ -31,12 +31,18 @@ To follow the progression from the beginning, be sure to first complete the [Get
 
 This module includes the option to use [GitHub Codespaces](https://github.com/features/codespaces) or a [Microsoft-hosted agent](/azure/devops/pipelines/agents/hosted). If you'd like to use a Microsoft-hosted agent, [check your parallel jobs and request a free grant](/azure/devops/pipelines/troubleshooting/troubleshooting#check-for-available-parallel-jobs).
 
+* **GitHub Codespaces** - Choose **GitHub codespaces** to follow the steps of this module using a development environment provided in GitHub Codespaces. You won't need to install any development tools on your local machine, and the GitHib Codespaces environment also provides the agent to run your pipeline.
+* **Microsoft-hosted agent** - Choose **Microsoft-hosted agent** to follow the steps of this module using your local development environment and a Microsoft-hosted agent. Before starting, [check your parallel jobs](/azure/devops/pipelines/troubleshooting/troubleshooting#check-for-available-parallel-jobs), and if you don't have any, [request a free grant](https://aka.ms/azpipelines-parallelism-request). The approval process for the free grant typically takes 2-3 business days.
+
+> [!IMPORTANT]
+> You can't switch between **GitHub codespaces** and **Microsoft-hosted agent** when completing the training module.
+
 The prerequisites for this learning path vary depending on which option you select.
 
 #### [GitHub Codespaces](#tab/codespaces)
 
-- An [Azure DevOps organization](/azure/devops/pipelines/get-started/pipelines-sign-up)
-- An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true)
+- An [Azure DevOps organization](/azure/devops/pipelines/get-started/pipelines-sign-up). If you don't already have an Azure DevOps organization, create a [free organization](/azure/devops/pipelines/get-started/pipelines-sign-up) before you begin.
+- An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true). If you don't already have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
 - A [GitHub](https://github.com/join?azure-portal=true) account
 
 #### [Microsoft-hosted agent](#tab/hosted-agent)
