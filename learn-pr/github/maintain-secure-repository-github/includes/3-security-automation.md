@@ -2,7 +2,7 @@ Here, we'll discuss some ways you can automate security checks in a repository t
 
 ## Detect and fix outdated dependencies with security vulnerabilities
 
-Virtually every project these days takes dependencies on external packages. While these components can offer substantial benefits in productivity, they can introduce other security risks. Staying on top of these packages and their vulnerability status can be time consuming, especially given how each dependency may have its own dependencies that can become difficult to track and maintain. About the dependency graphFortunately, GitHub provides features that reduce this workload.
+Virtually every project these days takes dependencies on external packages. While these components can offer substantial benefits in productivity, they can introduce other security risks. Staying on top of these packages and their vulnerability status can be time consuming, especially given how each dependency may have its own dependencies that can become difficult to track and maintain. Fortunately, GitHub provides features that reduce this workload.
 
 ### Repository dependency graphs
 
