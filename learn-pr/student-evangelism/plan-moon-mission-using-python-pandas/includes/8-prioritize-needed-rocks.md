@@ -76,7 +76,7 @@ rock_samples.Type.unique()
 array(['Soil', 'Basalt', 'Core', 'Breccia', 'Special', 'Crustal'], dtype=object)
 ```
 
-We can see that, although six unique types were collected across all samples, the samples that are running low are from only four unique types. But this doesn't tell us everything about the samples we might want to focus on. For example, in our `low_samples` DatFrame, how many of each type are considered low?
+We can see that, although six unique types were collected across all samples, the samples that are running low are from only four unique types. But this doesn't tell us everything about the samples we might want to focus on. For example, in our `low_samples` DataFrame, how many of each type are considered low?
 
 ```python
 low_samples.groupby('Type')['Weight (kg)'].count()
