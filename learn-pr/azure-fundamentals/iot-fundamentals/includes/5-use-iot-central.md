@@ -16,7 +16,7 @@ The company would prefer a prebuilt solution to collect the sensor and vehicle c
 
 Here again, apply the decision criteria that you learned about earlier.
 
-First, is it critical to ensure that the device isn't compromised? Ideally, each sensor and vehicle computer would be impervious to interference. However, security wasn't mentioned as a critical concern at this point. The vehicle computers and sensors are built by a third-party vendor. So, Tailwind Traders is forced to use hardware that's already available, unless it wants to manufacture its own devices.
+First, is it critical to ensure that the device isn't compromised? Ideally, each sensor and vehicle computer would be impervious to interference. However, security wasn't mentioned as a critical concern at this point. A third-party vendor builds the vehicle computers and sensors. So, unless the company wants to manufacture its own devices (which it doesn't), Tailwind Traders is forced to use hardware that's already available.
 
 Second, does Tailwind Traders need a dashboard for reporting and management? Yes, a reporting and management dashboard is a requirement.
 

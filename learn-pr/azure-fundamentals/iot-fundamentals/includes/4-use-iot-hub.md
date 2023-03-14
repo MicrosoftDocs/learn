@@ -18,7 +18,7 @@ So, given the responses to the decision criteria, Azure IoT Hub is the best choi
 
 ## Why not use Azure IoT Central?
 
-Azure IoT Central provides a dashboard that allows companies to manage IoT devices individually and as an aggregate, view reports, and set up error notifications via a GUI. But, in this scenario, Tailwind Traders wants to integrate the telemetry it collects and other analysis functionality into an existing software application. Furthermore, the company's appliances are collecting data via sensors only and don't need the ability to update settings or software remotely. Therefore, the company doesn't need Azure IoT Central.
+Azure IoT Central provides a dashboard that allows companies to manage IoT devices individually and as a whole, view reports, and set up error notifications via a GUI. However, the company wants to integrate the telemetry data it collects and other analysis functionality into an existing software application. Furthermore, Tailwind Traders' appliances are collecting data via sensors only and don't need the ability to update settings or software remotely. Therefore, the company doesn't need to use Azure IoT Central.
 
 ## Why not use Azure Sphere?
 
