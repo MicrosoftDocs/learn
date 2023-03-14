@@ -1,4 +1,11 @@
 
+Enrolling personal and organization-owned devices in Intune can significantly enhance your organization's security and device management capabilities. Enrolling a device establishes a connection between the device and Intune, allowing you to manage and control the device remotely.
+
+Once enrolled, the device will receive the policies and profiles you created, including email, Wi-Fi, security settings, and more configurations. These policies and profiles can be customized to meet your organization's specific needs, ensuring that your devices are configured and secured in accordance with your policies.
+
+Enrolling personal devices in Intune can be particularly useful for organizations allowing employees to use their own devices for work purposes. With Intune, you can ensure that these devices are configured and secured properly without taking full control of the device or accessing personal data. This helps to maintain a balance between work and personal use of the device.
+Overall, enrolling personal and organization-owned devices in Intune is a powerful tool for device management and security, allowing organizations to maintain control over their devices and protect their data.
+
 #### Enrolling Windows devices
 
 Enrolling Windows devices into Microsoft Intune for device management has many ways. Some are user-driven, and IT administrators control some. Some exist to support BYOD programs, and others to streamline modern provisioning scenarios and management for corporate-owned devices. Each enrollment method can have different setup requirements and behaviors. The following methods can be utilized to complete Intune enrollment:
