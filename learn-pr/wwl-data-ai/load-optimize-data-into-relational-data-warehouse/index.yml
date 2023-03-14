@@ -3,7 +3,7 @@ uid: learn.wwl.load-data-into-relational-data-warehouse
 metadata:
   title: Load data into a relational data warehouse
   description: "Learn how to load tables in a relational data warehouse that is hosted in a dedicated SQL pool in Azure Synapse Analytics."
-  ms.date: 02/21/2023
+  ms.date: 03/14/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
