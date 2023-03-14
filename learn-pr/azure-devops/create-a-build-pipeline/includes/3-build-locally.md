@@ -11,7 +11,7 @@ You have two options for completing this module.
 
 ## Create an Azure DevOps personal access token
 
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```). If you don't already have an Azure DevOps organization, create a [free organization](/azure/devops/pipelines/get-started/pipelines-sign-up) before you begin.
   
 1. From your home page, open user settings :::image type="icon" source="../media/3-user-settings-gear.png" border="false"::: and select **Personal access tokens**.
 
@@ -59,11 +59,11 @@ Before you create your Codespace, you'll create three passwords that help your s
     |---------|---------|
     |ADO_ORG     |   Name of the Azure DevOps organization (Example: `fabrikam`)     |
     |ADO_PAT     |   Personal Access Token value      |
-    |ADO_POOL_NAME     |   Name of agent pool (Example: `Default`). If you use a name other than `Default`, you need to [create a new agent pool](/azure/devops/pipelines/agents/pools-queues) before running your first pipeline.   | 
+    |ADO_POOL_NAME     |   Name of agent pool. Specify `Default` to use the default agent pool. If you use a name other than `Default`, you need to [create a new agent pool](/azure/devops/pipelines/agents/pools-queues) before running your first pipeline. | 
     
 ## Set up Codespaces
 
-Next, you'll set up Codespaces so that you can build the website, work with source files, and set up a self-hosted agent.
+Next, you'll set up Codespaces so that you can build the website, work with source files, and run your pipeline using a self-hosted agent.
 
 
 1. In your forked GitHub repository, select **Code**.
