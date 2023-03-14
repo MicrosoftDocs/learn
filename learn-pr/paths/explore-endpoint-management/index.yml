@@ -1,14 +1,14 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.explore-endpoint-management
 metadata:
-  title: MD-102 Explore Endpoint Management
+  title: MD-102 Explore endpoint management
   description: This learning path explains the concepts of supporting the desktop through its entire lifecycle. Students will also be introduced to Azure Active Directory and learn the similarities and differences between Azure AD and Active Directory DS and how to synchronize between the two.
   ms.date: 03/14/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: MD-102 Explore Endpoint Management
+title: MD-102 Explore endpoint management
 prerequisites: |
   - Strong technical skills installing, maintaining, and troubleshooting the Windows 10 OS or later.
   - Strong understanding of computer networking, client security, and application concepts.
