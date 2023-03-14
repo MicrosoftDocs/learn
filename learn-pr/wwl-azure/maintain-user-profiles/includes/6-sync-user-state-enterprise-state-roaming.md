@@ -5,7 +5,7 @@ Windows offers advanced techniques for managing user profiles and data. By using
 
 Windows 8 introduced the Sync your settings feature, which uses Microsoft accounts to sync settings with Microsoft OneDrive. Enterprise State Roaming offers similar functionality, but it's targeted to enterprises, because it requires Azure AD Premium and it syncs Windows settings with Azure. Enterprise State Roaming can sync only settings and not data. However, you should note that Enterprise State Roaming can only sync the settings of the Universal Windows Platform (UWP) apps and Windows settings, and that it can't sync desktop-application settings. You can use the Settings app, Group Policy or mobile device management (MDM) to control which settings will be synced.
 
-:::image type="content" source="../media/enterprise-sync-settings-c2bf2ecc.png" alt-text="Screenshot of two Windows 10 computers that are connected to Azure AD Premium illustrating that Enterprise State Roaming can sync Windows 10":::
+:::image type="content" source="../media/enterprise-sync-settings-c2bf2ecc.png" alt-text="Screenshot of two Windows 10 computers that are connected to Azure AD Premium illustrating that Enterprise State Roaming can sync Windows 10.":::
 
 
 Enterprise State Roaming syncs settings across Azure AD joined devices and provides users with the same experience across their devices. Enterprise State Roaming provides the following benefits:
