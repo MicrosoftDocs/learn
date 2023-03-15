@@ -5,7 +5,7 @@ metadata:
   unitType: introduction  
   title: Introduction
   description: In this module, you will build an app to obtain, store, and process real-time bus data with Azure.
-  ms.date: 3/24/2021  
+  ms.date: 3/25/2023  
   author: amthomas46
   ms.author: antho
   ms.topic: interactive-tutorial
