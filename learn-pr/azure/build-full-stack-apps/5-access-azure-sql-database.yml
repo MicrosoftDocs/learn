@@ -23,13 +23,13 @@ quiz:
         explanation: "Correct!"
       - content: "`rid` and `gid` represent the specific route and group of buses to be displayed on the map"
         isCorrect: false
-        explanation: "That's not what `gid` references."
+        explanation: "This description isn't what `gid` references."
       - content: "`rid` and `gid` represent all the routes and geofences"
         isCorrect: false
         explanation: "These parameters don't represent all of them, only what is specified."
       - content: "`rid` and `gid` represent all the routes and groups of buses"
         isCorrect: false
-        explanation: "That's not what `gid` references, and these parameters don't represent all of them, only what is specified."
+        explanation: "This description isn't what `gid` references, and these parameters don't represent all of them, only what is specified."
     - content: "What is the order of serving data to the front end?"
       choices:
       - content: "The client application obtains the parameters and passes them to Azure SQL Database, which returns the relevant data to the Azure Function."
@@ -43,4 +43,4 @@ quiz:
         explanation: "Correct!"
       - content: "Azure SQL Database obtains the parameters and passes them to the Azure Function, then the Azure Function gets the relevant data from the client application and returns it to Azure SQL Database."
         isCorrect: false
-        explanation: "Azure SQL Database is not parsing the URL parameters. It must be called with a stored procedure or query including the parameters."
+        explanation: "Azure SQL Database isn't parsing the URL parameters. It must be called with a stored procedure or query including the parameters."

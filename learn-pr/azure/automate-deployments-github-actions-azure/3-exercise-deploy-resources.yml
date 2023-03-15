@@ -4,7 +4,7 @@ title: Exercise - Deploy and configure Azure resources
 metadata:
   unitType: exercise  
   title: Exercise - Deploy and configure Azure resources
-  description: In this exercise, you will deploy all of the necessary resources with scripts and configure the Logic Apps connection to Outlook.
+  description: In this exercise, you'll deploy all of the necessary resources with scripts and configure the Logic Apps connection to Outlook.
   ms.date: 3/15/2023  
   author: amthomas46
   ms.author: chnoring
