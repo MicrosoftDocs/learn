@@ -4,7 +4,7 @@ title: Exercise - Configure and monitor the solution built on Azure Static Web A
 metadata:
   unitType: exercise
   title: Exercise - Configure and monitor the solution built on Azure Static Web Apps
-  description: In this unit, you'll configure your Azure Static Web App and monitored the published application. You will also review the GitHub history to understand how the solution was built.
+  description: In this unit, you'll configure your Azure Static Web App and monitored the published application. You'll also review the GitHub history to understand how the solution was built.
   ms.date: 3/15/2023 
   author: amthomas46
   ms.author: antho
