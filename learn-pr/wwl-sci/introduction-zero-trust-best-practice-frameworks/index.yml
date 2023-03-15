@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.introduction-zero-trust-best-practice-frameworks
+metadata:
+  title: Introduction to Zero Trust and best practice frameworks
+  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the module; include relevant search keywords."
+  ms.date: 04/05/2023
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+title: Introduction to Zero Trust and best practice frameworks
+summary: "You'll learn what best practices are and how cybersecurity architects use them as well as some key best practice frameworks for Microsoft cybersecurity capabilities. You'll also learn about the concept of Zero Trust, and how to get started with Zero Trust in an organization."
+abstract: |
+  By the end of this module, you'll be able to:
+    - "Understand how to use best practices as a cybersecurity architect."
+    - "Understand the concept of Zero Trust and how it can be used to modernize an organizations cybersecurity."
+    - "Understand when to use different best practice frameworks like MCRA, CAF and WAF."
+prerequisites: |
+  - "Conceptual knowledge of security policies, requirements, zero trust architecture, and management of hybrid environments."
+  - "Working experience with zero trust strategies, applying security policies, and developing security requirements based on business goals."
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- security-engineer
+- solution-architect
+products:
+- azure
+- defender-for-cloud
+- defender-for-cloud-apps
+- defender-identity
+- microsoft-sentinel
+subjects:
+  - security
+  - cloud-security
+units:
+- learn.introduction-zero-trust-best-practice-frameworks.introduction-to-best-practices
+- learn.introduction-zero-trust-best-practice-frameworks.introduction-to-zero-trust
+- learn.introduction-zero-trust-best-practice-frameworks.zero-trust-initiatives
+- learn.introduction-zero-trust-best-practice-frameworks.zero-trust-technology-pillars1
+- learn.introduction-zero-trust-best-practice-frameworks.zero-trust-technology-pillars2
+- learn.introduction-zero-trust-best-practice-frameworks.exercise
+- learn.introduction-zero-trust-best-practice-frameworks.knowledge-check
+- learn.introduction-zero-trust-best-practice-frameworks.summary
+badge:
+  uid: learn.introduction-zero-trust-best-practice-frameworks.badge
