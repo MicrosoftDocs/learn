@@ -1,24 +1,23 @@
-In this section, you make sure that your Azure DevOps organization is set up to complete the rest of this module. You also create the Azure App Service environment that you'll deploy to.
+In this section, you will lean how to set up your Azure DevOps organization and create the Azure App Service environment that you'll deploy to.
 
-To accomplish these goals, you:
+You will learn how to:
 
 > [!div class="checklist"]
-> * Add a user to ensure Azure DevOps can connect to your Azure subscription.
-> * Set up an Azure DevOps project for this module.
-> * On Azure Boards, move the work item for this module to the **Doing** column.
-> * Create an Azure Container Registry and an Azure App Service Web App using the Azure CLI in Azure Cloud Shell.
-> * Create pipeline variables that define the names of your Azure resources.
-> * Create a service connection that enables Azure Pipelines to securely access your Azure subscription.
+> * Set up your Azure DevOps project.
+> * Manage your work items with Azure Boards.
+> * Create your Azure App Service environment.
+> * Create pipeline variables in Azure Pipelines.
+> * Create a service connection to authenticate with your Azure subscription.
 
 ## Add a user to Azure DevOps
 
 To complete this module, you need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true). You can get started with Azure for free.
 
-You don't need an Azure subscription to work with Azure DevOps, but here you'll use Azure DevOps to deploy to Azure resources that exist in your Azure subscription. To simplify the process, use the same Microsoft account to sign in to both your Azure subscription and your Azure DevOps organization.
+You don't need an Azure subscription to work with Azure DevOps, but in this module you'll use Azure DevOps to deploy to Azure resources. To simplify the process, use the same Microsoft account to sign in to both Azure and Azure DevOps.
 
-If you use different Microsoft accounts to sign in to Azure and Azure DevOps, add a user to your DevOps organization under the Microsoft account that you use to sign in to Azure. For more information, see [Add users to your organization or project](/azure/devops/organizations/accounts/add-organization-users?azure-portal=true&tabs=browser). When you add the user, choose the **Basic** access level.
+If you use different Microsoft accounts to sign in to Azure and Azure DevOps, add a user with **Basic** access level to your DevOps organization under the Microsoft account that you use to sign in to Azure. See [Add users to your organization or project](/azure/devops/organizations/accounts/add-organization-users?azure-portal=true&tabs=browser) dor more details.
 
-Then sign out of Azure DevOps and sign in. Use the Microsoft account that you use to sign in to your Azure subscription.
+Then sign out of Azure DevOps and sign back in using the same account you used to sign in to your Azure subscription.
 
 ## Get the Azure DevOps project
 
@@ -36,20 +35,17 @@ Run a template that sets up your Azure DevOps organization:
 From the Azure DevOps Demo Generator site, follow these steps to run the template:
 
 1. Select **Sign In** and accept the usage terms.
+
 1. On the **Create New Project** page, select your Azure DevOps organization. Enter a project name such as *Space Game - web - Docker*.
 
     :::image type="content" source="../media/3-create-new-project.png" alt-text="Screenshot of creating a project through Azure DevOps Demo Generator.":::
 
-1. Select **Yes, I want to fork this repository** > **Authorize**.
-
-    If a window appears, authorize access to your GitHub account.
+1. Select **Yes, I want to fork this repository** > **Authorize**. If prompted, authorize access to your GitHub account.
 
     > [!IMPORTANT]
-    > You need to select this option so the template will connect to your GitHub repository. Select it even if you've already forked the _Space Game_ website project. The template uses your existing fork.
+    > You need to select this option so the template can connect to your GitHub repository. Make sure to select the checkbox even if you've already forked the *Space Game* repository. The template will use your existing fork.
 
 1. Select **Create Project**.
-
-    The template takes a few moments to run.
 
 1. Select **Navigate to project** to go to your project in Azure DevOps.
 

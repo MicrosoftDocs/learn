@@ -4,7 +4,7 @@ title: Why are containers important?
 metadata:
   title: Why are containers important?
   description: Understand the benefits of Docker containers and when to use them.
-  ms.date: 08/04/2022
+  ms.date: 03/15/2023
   author: ramiMSFT
   ms.author: rabououn
   ms.custom: devdivchpfy22
@@ -16,7 +16,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which of the following is not a good reason to use Docker?"
+  - content: "Which of the following options is not a good reason to use Docker?"
     choices:
     - content: "You build mobile apps and want a single mobile container to run across different operating systems."
       isCorrect: true
@@ -24,7 +24,7 @@ quiz:
     - content: "Your application has very specific dependency requirements and you want to package them along with the app itself for deployment."
       isCorrect: false
       explanation: "With containers, you can ensure your application runs with the exact dependencies it needs because they are included as part of the deployment."
-    - content: "You want the different stages of your CI/CD pipeline to use the same application environment to be used in production."
+    - content: "You want the different stages of your pipeline to use the same environment used in production."
       isCorrect: false
       explanation: "Container immutability ensures that all copies of the same container work from the same source build and dependencies wherever loaded."
   - content: "How are containers and virtual machines similar?"
