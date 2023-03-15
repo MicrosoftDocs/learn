@@ -21,21 +21,21 @@ quiz:
     choices:
     - content: "Enterprises that want to reduce their datacenter footprint"
       isCorrect: true
-      explanation: "Enterprises that want to get out of the datacenter business can use Azure as a way to enable decommissioning of legacy infrastructure."
+      explanation: "Correct. Enterprises that want to get out of the datacenter business can use Azure as a way to enable decommissioning of legacy infrastructure."
     - content: "Organizations that don't want to use cloud services"
       isCorrect: false
-      explanation: "Azure VMware Solution isn't for customers who don't want to use cloud services."
+      explanation: "Incorrect. Azure VMware Solution isn't for customers who don't want to use cloud services."
     - content: "Customers who don't want a fast path to the cloud by migrating existing assets 'as is'"
       isCorrect: false
-      explanation: "Azure VMware Solution is well suited for customers who want a fast path to the cloud by migrating existing assets 'as is'."
+      explanation: "Incorrect. Azure VMware Solution is well suited for customers who want a fast path to the cloud by migrating existing assets 'as is'."
   - content: "Which scenario isn't a good option for Azure VMware Solution?"
     choices:
     - content: "Customers who can't move to cloud services"
       isCorrect: true
-      explanation: "Azure VMware Solution isn't suited for customers who can't move to the cloud."
+      explanation: "Correct. Azure VMware Solution isn't suited for customers who can't move to the cloud."
     - content: "Customers who want to modernize with native Azure services"
       isCorrect: false
-      explanation: "Native Azure services aren't suited for customers who can't move to cloud services."
+      explanation: "Incorrect. Native Azure services aren't suited for customers who can't move to cloud services."
     - content: "Customers who want more disaster recovery and business continuity options with Azure"
       isCorrect: false
-      explanation: "Azure services aren't suited for customers who can't move to cloud services."
+      explanation: "Incorrect. Azure services aren't suited for customers who can't move to cloud services."

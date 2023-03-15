@@ -21,22 +21,22 @@ quiz:
     choices:
     - content: "Customers can seamlessly modernize apps over time with Azure services."
       isCorrect: true
-      explanation: "Customers can modernize applications running on VMware over time through integration with Azure native management, security, and services."
+      explanation: "Correct. Customers can modernize applications running on VMware over time through integration with Azure native management, security, and services."
     - content: "Customers manage all components of Azure VMware Solution."
       isCorrect: false
-      explanation: "Microsoft manages the platform for the customer."
+      explanation: "Incorrect. Microsoft manages the platform for the customer."
     - content: "Azure VMware Solution is the fastest way to force a move off Azure-centric operational processes."
       isCorrect: false
-      explanation: "Azure VMware Solution provides a fast path to cloud."
+      explanation: "Incorrect. Azure VMware Solution provides a fast path to cloud."
   - content: "Which native Azure service can be used to mount VM file shares using SMB or NFS?"
     choices:
     - content: "Azure Databricks"
       isCorrect: false
-      explanation: "Azure Databricks is a data solution available to integrate with Azure VMware Solution."
+      explanation: "Incorrect. Azure Databricks is a data solution available to integrate with Azure VMware Solution."
     - content: "Azure Monitor"
       isCorrect: false
-      explanation: "Azure Monitor can be integrated to monitor VMs on Azure and on Azure VMware Solution."
+      explanation: "Incorrect. Azure Monitor can be integrated to monitor VMs on Azure and on Azure VMware Solution."
     - content: "Azure NetApp Files"
       isCorrect: true
-      explanation: "Azure NetApp Files supports mounting volumes using SMB or NFS on VMs."
+      explanation: "Correct. Azure NetApp Files supports mounting volumes using SMB or NFS on VMs."
   

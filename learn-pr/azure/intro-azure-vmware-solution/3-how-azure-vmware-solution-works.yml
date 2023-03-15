@@ -21,33 +21,33 @@ quiz:
     choices:
     - content: "Tier 1 gateways"
       isCorrect: false
-      explanation: "The customer manages tier 1 gateways."
+      explanation: "Incorrect. The customer manages tier 1 gateways."
     - content: "Lifecycle management of VMware software (ESXi, vCenter, and vSAN)"
       isCorrect: true
-      explanation: "Microsoft, in partnership with VMware, supports and maintains the lifecycle management of VMware software (ESXi, vCenter, and vSAN)."
+      explanation: "Correct. Microsoft, in partnership with VMware, supports and maintains the lifecycle management of VMware software (ESXi, vCenter, and vSAN)."
     - content: "Virtual machines"
       isCorrect: false
-      explanation: "Microsoft doesn't manage the virtual machines."
+      explanation: "Incorrect. Microsoft doesn't manage the virtual machines."
   - content: "Shannon wants to start migrating to Azure VMware Solution. What minimum number of nodes must Shannon have to get started?"
     choices:
     - content: "3 nodes"
       isCorrect: true
-      explanation: "The minimum number of nodes required in a cluster is 3."
+      explanation: "Correct. The minimum number of nodes required in a cluster is 3."
     - content: "24 nodes"
       isCorrect: false
-      explanation: "The minimum number of nodes required in a cluster is 3."
+      explanation: "Incorrect. The minimum number of nodes required in a cluster is 3."
     - content: "16 nodes"
       isCorrect: false
-      explanation: "The maximum number of nodes in a cluster is 16."
+      explanation: "Incorrect. The maximum number of nodes in a cluster is 16."
   - content: "What does the cloudAdmin role in the Azure VMware Solution vCenter do?"
     choices:
     - content: "The local cloudadmin user sets up users in Active Directory."
       isCorrect: false
-      explanation: "The cloudadmin user is a member of the cloudAdmin role."
+      explanation: "Incorrect. The cloudadmin user is a member of the cloudAdmin role."
     - content: "The cloudAdmin role creates and manages workloads in your private cloud."
       isCorrect: true
-      explanation: "The cloudAdmin role creates and manages workloads in your private cloud."
+      explanation: "Correct. The cloudAdmin role creates and manages workloads in your private cloud."
     - content: "The cloudAdmin role has access to the ESXi hosts in Azure."
       isCorrect: false
-      explanation: "The cloudAdmin role doesn't have access to, and can't configure, specific management components that Microsoft supports and manages."
+      explanation: "Incorrect. The cloudAdmin role doesn't have access to, and can't configure, specific management components that Microsoft supports and manages."
   
