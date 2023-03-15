@@ -16,6 +16,7 @@ Routing preference helps alleviate network traffic costs in your subscription. T
 | **Cost savings** | Will changing the routing preference to "Internet" result in network traffic cost savings? </br> Ingress and egress traffic with "Internet" routing preference is cheaper than the routing preference of "Microsoft network". |
 | **Performance** | Does performance of the network traffic a concern? Traffic routed over the public Internet has performance comparable to other cloud providers. The optimal performance will always be with the default routing preference of "Microsoft network". |
 
+## Apply the criteria
 
 
 
