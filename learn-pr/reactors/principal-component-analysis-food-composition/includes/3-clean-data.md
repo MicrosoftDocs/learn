@@ -98,7 +98,6 @@ Now, set the index of `nutr_df` to use `NDB_No`.
   ```python
   nutr_df.set_index('NDB_No', inplace=True)
   ```
-64325ab491d4e3f74988dda20972166c820afd
 
 Let's take a look at `nutr_df` now, and see how it's changed:
 

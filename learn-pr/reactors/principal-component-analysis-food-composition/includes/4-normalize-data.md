@@ -18,8 +18,7 @@ There's no bell curve in sight. Worse, a lot of the data is clustered at or arou
 nutr_df = nutr_df + 1
 ```
 
-
-Now for the transformation. The Box-Cox Transformation performs the transformation $y(\lambda) = \dfrac{y^{\lambda}-1}{\lambda}$ for $\lambda \neq 0$ and $y(\lambda) = log y$ for $\lambda = 0$ for all values $y$ in a column. SciPy has a particularly useful `boxcox()` function that can automatically calculate the $\lambda$ for each column that best normalizes the data in that column. 
+Now for the transformation. The Box-Cox Transformation performs the transformation $y(\lambda) = \dfrac{y^{\lambda}-1}{\lambda}$ for $\lambda \neq 0$ and $y(\lambda) = log y$ for $\lambda = 0$ for all values $y$ in a column. SciPy has a particularly useful `boxcox()` function that can automatically calculate the $\lambda$ for each column that best normalizes the data in that column.
 
  > [!NOTE]
  > The transformation doesn't support `NaN` values. The scikit-learn library has a comparable `boxcox()` function that is `NaN`-safe. But that function is not available on the version of scikit-learn that you likely installed with your Jupyter Notebooks with Visual Studio Code.
@@ -63,11 +62,7 @@ mean:  -0.0
 
 ### Try it yourself
 
-Find the standard deviation for <code>nutr_df_TF</code>. If you need a hint for which method to use, see the [pandas documentation](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.std.html?azure-portal=true).
-
-<details>
-
-  <summary>Hint <i>(expand to reveal)</i></summary>
+Find the standard deviation for `nutr_df_TF`. If you need a hint for which method to use, see the [pandas documentation](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.std.html?azure-portal=true).
 
   The correct code to use here is `print("s.d.: ", np.round(nutr_df_TF.std(), 2))`.
 
@@ -76,5 +71,3 @@ Find the standard deviation for <code>nutr_df_TF</code>. If you need a hint for 
   ```Output
   s.d.:  1.0
   ```
-
-</details>

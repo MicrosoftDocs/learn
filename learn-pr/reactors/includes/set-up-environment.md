@@ -5,7 +5,7 @@ To learn most effectively throughout this module, we recommend that you set up y
 Complete these steps to set up your environment:
 
 1. Download and install [Visual Studio Code](https://code.visualstudio.com?azure-portal=true). This is free and works on Windows, Mac, and Linux. Select the stable build for your platform.
-2. Download and install the [Python extension for Visual Studio code](https://marketplace.visualstudio.com/items?itemName=ms-python.python). This will include first installing a supported version of Python.
+2. Download and install the [Python extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python). This will include first installing a supported version of Python.
 3. Activate the [Anaconda environment](https://code.visualstudio.com/docs/python/jupyter-support?azure-portal=true) to be able to run Jupyter notebooks.
 4. Set up a [Data Science environment](https://code.visualstudio.com/docs/python/data-science-tutorial?azure-portal=true) to be able to use NumPy and Pandas.
 
