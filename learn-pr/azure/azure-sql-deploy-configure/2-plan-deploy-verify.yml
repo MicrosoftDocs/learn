@@ -36,10 +36,10 @@ quiz:
         explanation: "This is supported in all Azure SQL and SQL Server options."
       - content: "SELECT * FROM sys.dm_user_db_resource_governance"
         isCorrect: true
-        explanation: "This query will return the configuration and capacity settings used by resource governance mechanisms in the current database or elastic pool."
+        explanation: "This query returns the configuration and capacity settings used by resource governance mechanisms in the current database or elastic pool."
       - content: "SELECT * FROM sys.dm_exec_requests"
         isCorrect: false
         explanation: "This is supported in all Azure SQL and SQL Server options."
       - content: "SELECT * FROM sys.dm_os_process_memory"
         isCorrect: false
-        explanation: "This is not supported in Azure SQL Database."
+        explanation: "This isn't supported in Azure SQL Database."

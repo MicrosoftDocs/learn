@@ -19,17 +19,17 @@ quiz:
       choices:
       - content: "SQL Server on an Azure VM"
         isCorrect: false
-        explanation: "Yes, it's just SQL Server. But are there other options?"
+        explanation: "Yes, this choice is just SQL Server. But are there other options?"
       - content: "Azure SQL Managed Instance"
         isCorrect: false
         explanation: "Azure SQL Managed Instance does support native restore (from a URL). But are there other options?"
       - content: "Azure SQL Database"
         isCorrect: false
-        explanation: "This capability is not currently supported in Azure SQL Database."
+        explanation: "This capability isn't currently supported in Azure SQL Database."
       - content: "SQL Server on an Azure VM and Azure SQL Managed Instance"
         isCorrect: true
-        explanation: "In an Azure VM, it's just SQL Server, so it is supported. In Azure SQL Managed Instance, native restore from a URL is supported."
-    - content: "What is not an example of how you can more efficiently load data into Azure SQL Database and Azure SQL Managed Instance?"
+        explanation: "In an Azure VM, it's just SQL Server, so it's supported. In Azure SQL Managed Instance, native restore from a URL is supported."
+    - content: "What isn't an example of how you can more efficiently load data into Azure SQL Database and Azure SQL Managed Instance?"
       choices:
       - content: "Use clustered columnstore indexes"
         isCorrect: false
@@ -39,7 +39,7 @@ quiz:
         explanation: "Loading in batches can help decrease network latency, but they need to be sized appropriately so they don't trigger log governance limits."
       - content: "Use simple recovery mode"
         isCorrect: true
-        explanation: "This capability is not currently supported in Azure SQL Database or Azure SQL Managed Instance. Full recovery mode is required to meet the SLA."
+        explanation: "This capability isn't currently supported in Azure SQL Database or Azure SQL Managed Instance. Full recovery mode is required to meet the SLA."
       - content: "All of the above will help in Azure SQL Database and Azure SQL Managed Instance"
         isCorrect: false
-        explanation: "One of the options is not supported in Azure SQL Database or Azure SQL Managed Instance."
+        explanation: "One of the options isn't supported in Azure SQL Database or Azure SQL Managed Instance."

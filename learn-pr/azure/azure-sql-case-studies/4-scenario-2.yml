@@ -33,13 +33,13 @@ quiz:
       choices:
       - content: "Geo-replication"
         isCorrect: false
-        explanation: "Although geo-replication and auto-failover groups are both options here, auto-failover groups will enable the customer to fail over if it's required, without changing any connection strings. This setup can potentially help in reducing downtime to update applications, because it won't be needed. You can also configure monitoring queries to check the status. If something goes wrong, you can even force a failover."
+        explanation: "Although geo-replication and auto-failover groups are both options here, auto-failover groups enable the customer to fail over if it's required, without changing any connection strings. This setup can potentially help in reducing downtime to update applications, because it won't be needed. You can also configure monitoring queries to check the status. If something goes wrong, you can even force a failover."
       - content: "Auto-failover groups"
         isCorrect: true
-        explanation: "Although geo-replication and auto-failover groups are both options here, auto-failover groups will enable the customer to fail over if it's required, without changing any connection strings. This setup can potentially help in reducing downtime to update applications, because it won't be needed. You can also configure monitoring queries to check the status. If something goes wrong, you can even force a failover."
+        explanation: "Although geo-replication and auto-failover groups are both options here, auto-failover groups enable the customer to fail over if it's required, without changing any connection strings. This setup can potentially help in reducing downtime to update applications, because it won't be needed. You can also configure monitoring queries to check the status. If something goes wrong, you can even force a failover."
     - content: "What role does colocation play in your solution?"
       choices:
-      - content: "It doesn't. We'll deploy to one region only."
+      - content: "It doesn't. We plan to deploy to one region only."
         isCorrect: false
         explanation: "Because you're using an auto-failover group, this answer doesn't make sense."
       - content: "Using the auto-failover group gives us what's needed."
@@ -47,7 +47,7 @@ quiz:
         explanation: "Almost, but what happens to your application when you fail over?"
       - content: "In addition to the failover group, you need to deploy the application in both regions where the failover group exists."
         isCorrect: true
-        explanation: "You must make sure your application is deployed in both regions for the auto-failover group. This configuration will provide a redundant copy of the application. If there's a failover, you can use Traffic Manager to reroute traffic to the application in the secondary region."
+        explanation: "You must make sure your application is deployed in both regions for the auto-failover group. This configuration provides a redundant copy of the application. If there's a failover, you can use Traffic Manager to reroute traffic to the application in the secondary region."
     - content: "How can you ensure that DBAs can't see sensitive data stored in specific columns?"
       choices:
       - content: "SQL Audit"
@@ -69,13 +69,13 @@ quiz:
           explanation: "Use SQL Audit and Data Classification in combination. In the audit log, you can track access to sensitive data specifically, and you can view information such as the data that was accessed and its sensitivity label."
         - content: "Data Classification and Dynamic Data Masking"
           isCorrect: false
-          explanation: "This configuration will help you identify and mask sensitive data, but you won't be able to track it."
+          explanation: "This configuration helps you identify and mask sensitive data, but isn't able to track it."
         - content: "SQL Audit and Dynamic Data Masking"
           isCorrect: false
-          explanation: "This configuration will help you mask data and view audits, but you won't be able to see sensitive data that was accessed."
+          explanation: "This configuration helps you mask data and view audits, but you won't be able to see sensitive data that was accessed."
         - content: "SQL Audit only"
           isCorrect: false
-          explanation: "This configuration will allow you to access log data, but you won't be able to see sensitive data that was accessed."
+          explanation: "This configuration allows you to access log data, but you won't be able to see sensitive data that was accessed."
     - content: "How can you allow DBAs to troubleshoot performance via the Azure portal and SSMS, and create new contained database users with Azure AD principals?"
       choices:
         - content: "Azure AD groups" 
@@ -83,7 +83,7 @@ quiz:
           explanation: "Using groups alone won't really help the situation."
         - content: "Azure RBAC" 
           isCorrect: false
-          explanation: "This option will allow you to make DBAs part of the SQL Server Contributor role, but they won't be able to access data."
+          explanation: "This option allows you to make DBAs part of the SQL Server Contributor role, but they won't be able to access data."
         - content: "Azure AD groups and Azure RBAC" 
           isCorrect: false
           explanation: "Almost, but the DBA group must have Azure AD admin rights on the logical server."
