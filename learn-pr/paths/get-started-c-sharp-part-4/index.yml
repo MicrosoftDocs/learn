@@ -3,18 +3,24 @@ uid: learn.wwl.get-started-c-sharp-part-4
 metadata:
   title: Work with variable data in C# console applications (Get started with C#, Part 4)
   description: Work with variable data in C# console applications (Get started with C#, Part 4)
-  ms.date: 02/24/2023
+  ms.date: 03/07/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Work with variable data in C# console applications (Get started with C#, Part 4)
 prerequisites: |
-  * Beginner level experience with C# concepts including declaring, initializing, and using variables
-  * Beginner level experience with the `if-elseif-else` statement
-  * Beginner level experience with arrays and the `foreach` statement
+  *   Beginner level experience with C# concepts including declaring, initializing, and using variables
+  *   Beginner level experience with the `if-elseif-else` statement
+  *   Beginner level experience with arrays and the `foreach` statement
+  *   Develop, build, and run C# code using Visual Studio Code
 summary: |
   Dive deeper into data and types, learning how to manipulate string and numeric data and perform operations on arrays.
+  In this learning path, you'll:
+  *   Choose the correct data type for the data you need to work with
+  *   Cast and convert data from one type to another
+  *   Modify string data, formatting it for display or changing the content of the string
+  *   Manipulate arrays, adding, removing, and sorting data
 iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - beginner

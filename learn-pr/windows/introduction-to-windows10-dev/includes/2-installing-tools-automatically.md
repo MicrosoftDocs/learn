@@ -1,25 +1,23 @@
-Ready to install Visual Studio? Let's do it. Before you start though, you'll need to make sure that your computer is running the latest version of Windows 10. Then follow a link and the installation will be performed automatically.
-
-## Make sure Windows 10 is up to date
+Ready to install Visual Studio? Let's do it. Before you start, you'll need to make sure that your computer is running the latest version of Windows 10. 
 
 To ensure that you're running the latest version of Windows:
 
-1. Go to **Settings**.
+1. Navigate to **Settings** from your search bar.
 1. Select **Update & Security**.
 
-   ![Windows Update.](../media/windows-update.png)
+   ![Screenshot showing a successful Windows update.](../media/windows-update.png)
 1. Select **Check for updates**.
-1. Let any updates get installed.
+1. Follow the instructions to make sure updates are installed.
 
-## Go to the installation script page on GitHub
+## Script installation
 
 1. In Microsoft Edge, go to [Scripts to simplify setting up a Windows developer box](https://github.com/Microsoft/windows-dev-box-setup-scripts) on GitHub.
 
-   ![Scripts to simplify setting up a Windows developer box.](../media/github-page.png)
+   ![Screenshot showing the scripts to simplify setting up a Windows developer box.](../media/github-page.png)
 
 1. Scroll down to the "How to run the scripts" table:
 
-   !["How to run the scripts" table](../media/run-scripts.png)
+   ![Screenshot showing the "how to run the scripts" table.](../media/run-scripts.png)
 
 1. Select the **Full Desktop App** link.
 1. Follow the instructions.
@@ -29,9 +27,9 @@ To ensure that you're running the latest version of Windows:
 
 ## What the script installs
 
-Just in case you're curious, the script installs the following tools:
+The script will install the following tools:
 
-* Visual Studio 2017 Community edition
+* Visual Studio
 * Visual Studio Code
 * Git
 * The Visual Studio Azure workload
