@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Configure File Sync tools on Windows Server
   description: In this exercise, you'll install the Azure File Sync agent, register the server, and add a server endpoint.
   ms.date: 05/18/2020
-  author: roygara
-  ms.author: rogarana
+  author: khdownie
+  ms.author: kendownie
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

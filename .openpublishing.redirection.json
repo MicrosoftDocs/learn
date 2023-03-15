@@ -20694,6 +20694,21 @@
       "source_path": "learn-pr/wwl-azure/design-for-high-availability/9-summary-resources.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/describe-high-availability-disaster-recovery-strategies/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/csharp-data/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/get-started-c-sharp-part-4/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/csharp-first-steps/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/get-started-c-sharp-part-1/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/csharp-logic/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/get-started-c-sharp-part-3/",
+      "redirect_document_id": false
     }
   ]
 }
