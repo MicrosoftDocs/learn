@@ -1,9 +1,9 @@
 
 
 
-In this exercise, you'll review and test the code in the Starter project, isolate and fix a logic issue, and then verify that your updated application is working as expected.
+In this exercise, you review and test the code in the Starter project, isolate and fix a logic issue, and then verify that your updated application is working as expected.
 
-The tasks that you'll complete during this exercise are:
+You complete the following tasks during this exercise:
 
 1. Code review: review the contents of the Program.cs file.
 
@@ -15,7 +15,7 @@ The tasks that you'll complete during this exercise are:
 
 ## Review the contents of the Program.cs file
 
-In this task, you'll complete a walkthrough of the Starter project code. The Program.cs file contains an application that simulates the conditions for daily transactions. The application calls the `MakeChange` method to manage the money till during each transaction. Additional methods are used to initialize the till and generate reporting messages.
+In this task, you complete a walkthrough of the Starter project code. The Program.cs file contains an application that simulates the conditions for daily transactions. The application calls the `MakeChange` method to manage the money till during each transaction. Additional methods are used to initialize the till and generate reporting messages.
 
 1. Ensure that the **GuidedProject** folder is open in Visual Studio Code.
 
@@ -137,7 +137,7 @@ In this task, you'll complete a walkthrough of the Starter project code. The Pro
     } while (readResult == null);
     ```
 
-    The top-level statements code does the following:
+    The top-level statements code completes the following tasks:
 
     - Configures the application data and the other environment variables used to test the `MackChange` method.
     - Calls the `LoadTillEachMorning()`, `LogTillStatus()`, and `TillAmountSummary()` methods to prepare the money till and print status messages to the console.
@@ -232,9 +232,9 @@ In this task, you'll complete a walkthrough of the Starter project code. The Pro
 
     - **Change owed to customer**: The change owed to the customer is calculated using the amount paid by the customer minus the cost of the item.
 
-    - **Underpayment**: If the customer hasn't provided sufficient payment, `MakeChange` returns a descriptive message and the transaction is cancelled.
+    - **Underpayment**: If the customer hasn't provided sufficient payment, `MakeChange` returns a descriptive message, and the transaction is cancelled.
 
-    - **Insufficient till**: If the till is unable to make exact change, `MakeChange` returns a descriptive message and the transaction is cancelled.
+    - **Insufficient till**: If the till is unable to make exact change, `MakeChange` returns a descriptive message, and the transaction is cancelled.
 
 1. Take a moment to review the `LogTillStatus()` method.
 
@@ -268,13 +268,13 @@ That completes your review of the existing code project.
 
 ## Verify that `MakeChange` successfully manages the money when using the `testData` array
 
-In this task, you'll simulate transaction using the `testData` array and verify that `MakeChange` successfully balances the money till.
+In this task, you simulate transaction using the `testData` array and verify that `MakeChange` successfully balances the money till.
 
 1. On the Visual Studio Code **Run** menu, select **Start Debugging**.
 
 1. Notice that an `IOException` error occurs.
 
-    The DEBUG CONSOLE doesn't support `Console.Clear()` or `Console.ReadLine()` methods. You'll need to update the launch.json file before debugging.
+    The DEBUG CONSOLE doesn't support `Console.Clear()` or `Console.ReadLine()` methods. You need to update the launch.json file before debugging.
 
 1. On the **Debug toolbar**, select **Stop**.
 
@@ -315,7 +315,7 @@ In this task, you'll simulate transaction using the `testData` array and verify 
 
 ## Identify and fix logic issues
 
-In this task, you'll use simulated transactions to expose a code logic issue, and then use the Visual Studio Code debugger tools to isolate and fix the issue.
+In this task, you use simulated transactions to expose a code logic issue, and then use the Visual Studio Code debugger tools to isolate and fix the issue.
 
 1. To run the code using randomly generated transactions, change the value assigned to `useTestData` to `false`.
 
@@ -337,11 +337,11 @@ In this task, you'll use simulated transactions to expose a code logic issue, an
     ```
 
     > [!NOTE]
-    > The application randomly generates the cost of purchase items. Therefore, the till values reported in your output will be different.
+    > The application randomly generates the cost of purchase items. Therefore, the till values reported in your output are different.
 
 ## Debug the code
 
-In this task, you'll use the Visual Studio Code debugger tools to isolate and then fix the logic issue.
+In this task, you use the Visual Studio Code debugger tools to isolate and then fix the logic issue.
 
 1. Near the end of the top-level statements, locate the following code line:
 
@@ -355,7 +355,7 @@ In this task, you'll use the Visual Studio Code debugger tools to isolate and th
     TillAmountSummary(cashTill) != registerCheckTillTotal
     ```
 
-    This expression will trigger the breakpoint when the discrepancy in the till balance is detected.
+    This expression triggers the breakpoint when the discrepancy in the till balance is detected.
 
 1. On the Visual Studio Code **Run** menu, select **Start Debugging**.
 
@@ -365,7 +365,7 @@ In this task, you'll use the Visual Studio Code debugger tools to isolate and th
 
 1. Notice that the reported cash received and change returned are correct, but the till is short by 5 dollars.
 
-    This suggests that the `cashTill` array is being updated incorrectly, even though the reporting is correct.
+    This shortage suggests that the `cashTill` array is being updated incorrectly, even though the reporting is correct.
 
 1. Stop the debug session.
 
@@ -388,7 +388,7 @@ In this task, you'll use the Visual Studio Code debugger tools to isolate and th
     }    
     ```
 
-    The `cashTill[]` array is used to store the number of bills of each denomination that are currently available. Array element `1` is used to manage the number of $5 dollar bills in the till. The expression in the `while` statement refers to `cashTill[1]` correctly. However, the statement inside the code block decrements `cashTill[2]` rather than `cashTill[1]`. This means that a $10 bill is being removed from the till rather than a $5 bill.
+    The `cashTill[]` array is used to store the number of bills of each denomination that are currently available. Array element `1` is used to manage the number of $5 dollar bills in the till. The expression in the `while` statement refers to `cashTill[1]` correctly. However, the statement inside the code block decrements `cashTill[2]` rather than `cashTill[1]`. This index error means that a $10 bill is being removed from the till rather than a $5 bill.
 
 1. Update the `while` statement code block as follows:
 
@@ -405,7 +405,7 @@ In this task, you'll use the Visual Studio Code debugger tools to isolate and th
 
 ## Check your work
 
-In this task, you'll run your application and verify that your updated code works as intended.
+In this task, you run your application and verify that your updated code works as intended.
 
 1. On the Visual Studio Code **Run** menu, select **Remove All Breakpoints**.
 
@@ -426,4 +426,4 @@ In this task, you'll run your application and verify that your updated code work
     Press the Enter key to exit
     ```
 
-    The application randomly generates the cost of purchase items. Therefore, the till values reported in your output will be different. As long as the two values are equal, you've succeeded in fixing the logic issue.
+    The application randomly generates the cost of purchase items. Therefore, the till values reported in your output are different. As long as the two values are equal, you've succeeded in fixing the logic issue.

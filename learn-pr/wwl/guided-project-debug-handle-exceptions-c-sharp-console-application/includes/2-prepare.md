@@ -1,20 +1,20 @@
 
 
 
-In this guided project, you'll use Visual Studio Code to update an existing C# application. Your updates will focus on adding exception handling to the application. You'll implement the `try-catch` pattern in top-level statements and a method. You'll also create, customize, and throw exceptions from within a method that will be caught in the top-level statements.
+In this guided project, you use Visual Studio Code to update an existing C# application. Your updates focus on code debugging and adding exception handling to the application. You review and debug the application, implement a `try-catch` pattern in top-level statements, and then throw exceptions from within a method that're caught in the top-level statements.
 
 ## Project overview
 
-You're part of a team that's working on retail-support applications. The code that you're developing, the `MakeChange` method, manages the money till for a cash register application. Specifications for the `MakeChange` method and calling application are:
+You're part of a team that's working on retail-support applications. The code that you're developing, the `MakeChange` method, manages the money till for a cash register application. Your application must meet the following specifications:
 
 - A C# console application that simulates daily purchase transactions.
-- The application will call the `MakeChange` method to manage the money till during transactions. `MakeChange` will accept cash payments and return change.
-- The calling application will independently verify the till balance after each transaction.
-- A `try-catch` pattern will be implemented to manage exceptions as follows:
+- The application calls the `MakeChange` method to manage the money till during transactions. `MakeChange` accepts cash payments and returns change.
+- The calling application independently verifies the till balance after each transaction.
+- A `try-catch` pattern is implemented to manage exceptions as follows:
 
-    - Exceptions will be used to report and handle any issue that prevents a transaction from completing successfully.
-    - Exceptions will be created and thrown in the `MakeChange` method.
-    - Exceptions will be caught and handled in the calling application.
+    - Exceptions are used to report and handle any issue that prevent a transaction from completing successfully.
+    - Exceptions are created and thrown in the `MakeChange` method.
+    - Exceptions are caught and handled in the calling application.
 
 An application that simulates transactions and calls the `MakeChange` method has already been developed. The Starter code project for this Guided project module includes a Program.cs file that includes the following code:
 
@@ -29,8 +29,7 @@ An application that simulates transactions and calls the `MakeChange` method has
 
 Your goal for this module is to verify that the application logic is working correctly, isolate and correct any logic bugs, and implement exception handling. To achieve this goal, you'll complete the following exercises:
 
-1. Review the existing application code.
-1. Verify code logic and debug the application if required.
+1. Review and debug the existing application code.
 1. Update the application to implement exception handling.
 
 ## Setup
