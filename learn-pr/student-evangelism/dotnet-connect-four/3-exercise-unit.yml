@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.gh-dotnet-copilot.3-exercise-unit
+title: Execise - Unit
+metadata:
+  title: Exercise - Unit
+  description: Describe Exercise
+  author: softchris
+  ms.author: chnoring
+  ms.date: 03/15/2023
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-exercise-unit.md)]

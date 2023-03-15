@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.gh-dotnet-copilot.2-blazor
+title: Unit
+metadata:
+  title: Unit
+  description: Describe unit
+  author: softchris
+  ms.author: chnoring
+  ms.date: 03/15/2023
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-blazor.md)]
