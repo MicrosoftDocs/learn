@@ -30,7 +30,7 @@ The first step to using a project in Git is to create a fork so you can work wit
 Although you can propose changes to the original project, in this lesson, you'll work with the *Space Game* web project as though it was the original project owned by Mara and her team.
 
 > [!NOTE]
-> If you have previously forked this repository, for example if you have completed another Tailspin Toys training module, we recommend that you [sync your fork](https://docs.github.com/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork?platform=windows) or [delete your fork](https://docs.github.com/repositories/creating-and-managing-repositories/deleting-a-repository) and [create a new one](https://docs.github.com/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks) before proceeding.
+> If you have previously forked this repository, for example if you have previously completed this module or another Tailspin Toys training module, we recommend that you [delete your fork](https://docs.github.com/repositories/creating-and-managing-repositories/deleting-a-repository) and create a new fork using the following steps. 
 
 Let's fork the *Space Game* web project into your GitHub account:
 
