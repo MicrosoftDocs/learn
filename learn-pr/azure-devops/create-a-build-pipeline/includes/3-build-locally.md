@@ -29,6 +29,9 @@ The first step to using a project in Git is to create a fork so you can work wit
 
 Although you can propose changes to the original project, in this lesson, you'll work with the *Space Game* web project as though it was the original project owned by Mara and her team.
 
+> [!NOTE]
+> If you have previously forked this repository, for example if you have completed another Tailspin Toys training module, we recommend that you [sync your fork](https://docs.github.com/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork?platform=windows) or [delete your fork](https://docs.github.com/repositories/creating-and-managing-repositories/deleting-a-repository) and [create a new one](https://docs.github.com/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks) before proceeding.
+
 Let's fork the *Space Game* web project into your GitHub account:
 
 1. In a web browser, go to [GitHub](https://github.com?azure-portal=true), and sign in.
@@ -56,7 +59,7 @@ Before you create your Codespace, you'll create three passwords that help your s
     |---------|---------|
     |ADO_ORG     |   Name of the Azure DevOps organization (Example: `fabrikam`)     |
     |ADO_PAT     |   Personal Access Token value      |
-    |ADO_POOL_NAME     |   Name of agent pool. Specify `Default` to use the default agent pool. If you use a name other than `Default`, you need to [create a new agent pool](/azure/devops/pipelines/agents/pools-queues) before running your first pipeline. | 
+    |ADO_POOL_NAME     |   Name of agent pool. Specify `Default` to use the default agent pool. If you use a name other than `Default`, you need to [create a new agent pool](/azure/devops/pipelines/agents/pools-queues) and provide tha name of the new agent pool for this value. | 
     
 ## Set up Codespaces
 
