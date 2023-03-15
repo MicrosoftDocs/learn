@@ -43,10 +43,10 @@ quiz:
       explanation: "Incorrect. A disabled breakpoint remains in the configuration and can be reenabled.."
     - content: "The breakpoint is skipped over during debugging."
       isCorrect: true
-      explanation: "Correct. When a breakpoint is disabled, it will be skipped over during debugging. In the user interface, the red dot representing the breakpoint is changed to a grey dot."
+      explanation: "Correct. When a breakpoint is disabled, it is skipped over during debugging. In the user interface, the red dot representing the breakpoint is changed to a grey dot."
     - content: "The breakpoint will only be triggered if dot to the left of the line number is changed to a grey dot."
       isCorrect: false
-      explanation: "Incorrect. A grey dot to the left of the line number is used to represent a disabled breakpoint. When a breakpoint is disabled, it will be skipped over during debugging."
+      explanation: "Incorrect. A grey dot to the left of the line number is used to represent a disabled breakpoint. When a breakpoint is disabled, it won't be triggered."
   - content: "What is a conditional breakpoint in Visual Studio Code?"
     choices:
     - content: "A breakpoint that only triggers when a specified condition is met."
@@ -55,7 +55,7 @@ quiz:
     - content: "A breakpoint that is triggered every time the code is run."
       isCorrect: false
       explanation: "Incorrect. A conditional breakpoint will only be triggered when a specified condition is met."
-    - content: "A breakpoint that is only visible in the editor and does not affect debugging."
+    - content: "A breakpoint that is only visible in the editor and doesn't affect debugging."
       isCorrect: false
       explanation: "Incorrect. A conditional breakpoint affects debugging and pauses execution when the condition is met."
   - content: "How can a developer create a conditional breakpoint in Visual Studio Code?"
@@ -65,7 +65,7 @@ quiz:
       explanation: "Incorrect. A left-click in the column to the left of a line number sets a standard breakpoint."
     - content: "Select **Toggle Conditional Breakpoint** on the **Run** menu."
       isCorrect: false
-      explanation: "Incorrect. The **Run** menu does not include a **Toggle Conditional Breakpoint** option. The **Run** menu does include a **New Breakpoint** option that displays a submenu. The submenu includes a **Conditional Breakpoint** option."
+      explanation: "Incorrect. The **Run** menu doesn't include a **Toggle Conditional Breakpoint** option. The **Run** menu does include a **New Breakpoint** option that displays a submenu. The submenu includes a **Conditional Breakpoint** option."
     - content: "Right-click in the column to the left of a line number, and then select **Add Conditional Breakpoint**."
       isCorrect: true
       explanation: "Correct. A developer can create a conditional breakpoint by right-clicking in the column to the left of a line number, and then selecting **Add Conditional Breakpoint**."

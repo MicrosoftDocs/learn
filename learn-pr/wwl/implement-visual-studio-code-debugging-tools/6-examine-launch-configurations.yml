@@ -32,7 +32,7 @@ quiz:
       explanation: "Incorrect. The **program** attribute specifies the path of the application dll or .NET Core host executable to launch."
     - content: "To specify a task to run before debugging your program."
       isCorrect: true
-      explanation: "Correct. The **preLaunchTask** attribute specifies a task to run before debugging the program. The task itself can be found in the tasks.json file, which is in the .vscode folder along with the launch.json file. Specifying a prelaunch task of **build** will run a `dotnet build` command before launching the application."
+      explanation: "Correct. The **preLaunchTask** attribute specifies a task to run before debugging the program. The task itself can be found in the tasks.json file, which is in the `.vscode` folder along with the launch.json file. Specifying a prelaunch task of **build** runs a `dotnet build` command before launching the application."
     - content: "To specify the type of console that's used when the application is launched."
       isCorrect: false
       explanation: "Incorrect. The **console** attribute specifies the type of console that's used when the application is launched."

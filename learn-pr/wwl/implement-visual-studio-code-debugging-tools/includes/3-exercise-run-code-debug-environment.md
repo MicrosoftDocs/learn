@@ -1,7 +1,7 @@
 
 
 
-The Visual Studio Code user interface enables developers to run their code in a debug environment. Support for debugging is generally provided through the use of extensions, and for C# developers, debugger support is provided by the same extension that provides support for code development and IntelliSense.
+The Visual Studio Code user interface enables developers to run their code in a debug environment. Support for debugging is provided by extensions, and for C# developers, debugger support is provided by the same extension that provides support for code development and IntelliSense.
 
 ## Debugger and application interaction
 
@@ -32,7 +32,7 @@ The first step in learning the debugger tools is creating a code project that yo
 
 1. On the **Terminal** menu, select **New Terminal**.
 
-    You will use a .NET CLI command to create a new console app.
+    A .NET CLI command can be used to create a new console app.
 
 1. At the TERMINAL panel command prompt, enter the following command:
 
@@ -44,7 +44,7 @@ The first step in learning the debugger tools is creating a code project that yo
 
 ## Examine launch configurations for debugging
 
-Visual Studio Code uses a launch configuration file to specify the application that will run in the debug environment.
+Visual Studio Code uses a launch configuration file to specify the application that runs in the debug environment.
 
 1. To open the Visual Studio Code **Run** menu, select **Run**.
 
@@ -56,7 +56,7 @@ Visual Studio Code uses a launch configuration file to specify the application t
 
 1. In the EXPLORER view, select **Program.cs**.
 
-    Your C# code file will open in the Editor.
+    Your C# code file opens in the Editor.
 
 1. After a few seconds, notice that a dialog box is displayed asking if you want to load the assets that are required for building and debugging.
 
@@ -79,7 +79,7 @@ Visual Studio Code uses a launch configuration file to specify the application t
 
 1. On the **Run** menu, select **Open Configurations**.
 
-    The launch.json file will open in the Visual Studio Code Editor. You also could have opened the file directly from the EXPLORER view.
+    The launch.json file opens in the Visual Studio Code Editor. You also could have opened the file directly from the EXPLORER view.
 
 1. Take a minute to examine the launch.json file.
 
@@ -87,7 +87,7 @@ Visual Studio Code uses a launch configuration file to specify the application t
 
 1. Notice that the **program** attribute specifies a path to your **Debug101** application.
 
-    Connecting your application with the debugger is one of the primary goals of a configuration. You'll be taking a closer look at the launch configuration attributes later in this module.
+    Connecting your application with the debugger is one of the primary goals of a configuration. You take a closer look at the launch configuration attributes later in this module.
 
 ## Run your code from the Run menu
 
@@ -156,7 +156,7 @@ The **Run** menu includes the option to start a debug session.
 
 1. Take a minute to review the messages displayed in the DEBUG CONSOLE panel.
 
-    The output from your application is the same as when you ran without debugging, but additional messages related to preparing the debug environment are displayed.
+    The output from your application is the same as when you ran without debugging, but other messages related to preparing the debug environment are displayed.
 
 1. Notice the messages about loading .NET resources and your Debug101 application.
 
@@ -186,7 +186,7 @@ The RUN AND DEBUG view in Visual Studio Code supports a rich debugging experienc
 
 1. Notice that Andrew's greeting message is repeated.
 
-During the remainder of this module you'll use the Visual Studio Code debugger tools to investigate coding issues.
+During the remainder of this module, you use the Visual Studio Code debugger tools to investigate coding issues.
 
 ## Recap
 

@@ -33,7 +33,7 @@ Suppose you're debugging an application that processes product information in a 
     while (pauseCode == true) ;
     ```
 
-    This code uses a method named `LoadProducts` to load data into the `products` array. After loading the data, the code iterates through the array and calls methods named `Process1` and `Process2`.
+    This code uses a method named `LoadProducts` to load data into the `products` array. After the data is loaded, the code iterates through the array and calls methods named `Process1` and `Process2`.
 
 1. To generate data for the simulated processes, add the following method to the end of your Program.cs file:
 
@@ -69,7 +69,7 @@ Suppose you're debugging an application that processes product information in a 
     }
     ```
 
-    The `LoadProducts` method generates 2000 random product IDs and assigns a value of `existing`, `new`, or `obsolete` to a product description field. There is about a 1% chance that the products will be marked `new`.
+    The `LoadProducts` method generates 2000 random product IDs and assigns a value of `existing`, `new`, or `obsolete` to a product description field. There is about a 1% chance that the products are marked `new`.
 
 1. To simulate data processing, add the following methods to the end of your Program.cs file:
 
@@ -122,7 +122,7 @@ Suppose you're debugging an application that processes product information in a 
 
 ## Configure a conditional breakpoint using an expression
 
-A standard breakpoint is great for walking through the data processing application. However, in this case you're interested in `new` products and you don't want to walk through the analysis of each product to find the ones that are `new`. This is an example of when conditional breakpoints can be used.
+A standard breakpoint is great for walking through the data processing application. However, in this case you're interested in `new` products and you don't want to walk through the analysis of each product to find the ones that are `new`. This situation provides an example of when conditional breakpoints can be used.
   
 1. Right-click your existing breakpoint, and then select **Edit Breakpoint**.
 
@@ -148,11 +148,11 @@ A standard breakpoint is great for walking through the data processing applicati
 
 1. Continue selecting **Step Into** until the `Process1` message is displayed.
 
-1. Notice that `Process1` reports that it is working on a **new** product.
+1. Notice that `Process1` reports that it's working on a **new** product.
 
 1. Take a moment to consider the advantage that conditional breakpoints offer.
 
-    In this simulated data processing scenario, there is about a 1% chance that a product will be `new`. If you're using a standard breakpoint to debug the issue, you'ld need to walk through the analysis of about 100 products to find one of the `new` products that your interested in.
+    In this simulated data processing scenario, there is about a 1% chance that a product are `new`. If you're using a standard breakpoint to debug the issue, you'ld need to walk through the analysis of about 100 products to find one of the `new` products that you're interested in.
 
     Conditional breakpoints can save you lots of time when you're debugging an application.
 
@@ -162,7 +162,7 @@ Congratulations! You successfully configured a conditional breakpoint.
 
 ## Recap
 
-Here are a couple important things to remember from this unit:
+Here is a couple important things to remember from this unit:
 
 - Setting a standard breakpoint to pause an application each time a breakpoint is encountered.
 - Configuring a conditional breakpoint to pause an application when a Boolean expression evaluates to `true`.

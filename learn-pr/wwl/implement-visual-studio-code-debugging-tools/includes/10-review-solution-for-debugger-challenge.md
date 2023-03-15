@@ -23,13 +23,13 @@ This debug process implements a breakpoint and then monitors the value of `x` in
 
 1. Track the value assigned to `x` as you step through each code line.
 
-1. Notice that the value of `x` does not change as execution enters and exits the `ChangeValue` method.
+1. Notice that the value of `x` doesn't change as execution enters and exits the `ChangeValue` method.
 
-    The `ChangeValue` method is passed the value of `x`, rather than a reference to `x`, so the change to `value` inside the method does not affect the original variable `x`.
+    The `ChangeValue` method is passed the value of `x`, rather than a reference to `x`, so the change to `value` inside the method doesn't affect the original variable `x`.
 
 ## Consider a code update based on debugging results
 
-If your intension for the `ChangeValue` method is to actually change the value being passed, you'll need to update your code. One way to achieve your intended result would be to update the `ChangeValue` method to return an integer value, and update the code that calls `ChangeValue` so that it assigns the return value to `x`.
+If your want the `ChangeValue` method to change the value in the calling code, you need to update your code. One way to achieve your intended result would be to update the `ChangeValue` method to return an integer value, and update the code that calls `ChangeValue` so that it assigns the return value to `x`.
 
 For example:
 

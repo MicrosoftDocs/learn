@@ -7,7 +7,7 @@ By configuring the Visual Studio Code debug environment for different sample app
 
 Without the ability to configure and use the Visual Studio Code debugger tools, you wouldn't be able to isolate and fix code bugs in a timely manner.
 
-## Additional reference materials:
+## Reference materials:
 
 - You can find additional information about the Visual Studio Code debugger here: [https://code.visualstudio.com/docs/editor/debugging](https://code.visualstudio.com/docs/editor/debugging).
 
