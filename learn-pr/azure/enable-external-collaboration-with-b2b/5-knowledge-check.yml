@@ -1,5 +1,6 @@
 ### YamlMime:ModuleUnit
-uid: learn.enable-external-collaboration-with-b2b.4-collaborate-externally-b2b.knowledge-check
+uid: learn.enable-external-collaboration-with-b2b.knowledge-check
+title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
@@ -10,8 +11,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5
-
-content:    
+content: |  
 quiz:
   title: Check your knowledge
   questions:

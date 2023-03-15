@@ -11,4 +11,4 @@ metadata:
 title: Enable multi-factor authentication in Azure AD B2B
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-enable-mfa-b2b.md)]
+  [!include[](includes/3-enable-mfa-b2b.md)]

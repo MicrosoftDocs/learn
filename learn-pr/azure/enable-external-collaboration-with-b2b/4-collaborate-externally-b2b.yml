@@ -11,5 +11,5 @@ metadata:
 title: Exercise - Set up Azure AD B2B collaboration with external users
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-collaborate-externally-b2b.md)]
+  [!include[](includes/4-collaborate-externally-b2b.md)]
 
