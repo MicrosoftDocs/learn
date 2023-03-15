@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.gh-dotnet-copilot.5-summary
+uid: learn.dotnet-connectfour.7-summary
 title: Summary
 metadata:
   title: Summary
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 4
 content: |
-  [!include[](includes/5-summary.md)]
+  [!include[](includes/7-summary.md)]

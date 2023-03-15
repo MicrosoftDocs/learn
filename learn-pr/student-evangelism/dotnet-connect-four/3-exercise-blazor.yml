@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.dotnet-connectfour.2-blazor
-title: Blazor
+uid: learn.dotnet-connectfour.3-exercise-blazor
+title: Execise - Unit
 metadata:
-  title: Blazor
-  description: Describe unit
+  title: Exercise - Unit
+  description: Describe Exercise
   author: softchris
   ms.author: chnoring
   ms.date: 03/15/2023
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
-  [!include[](includes/2-blazor.md)]
+  [!include[](includes/3-exercise-blazor.md)]

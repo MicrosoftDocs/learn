@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.dotnet-connectfour.5-exercise-game-logic
+title: Exercise - Game logic
+metadata:
+  title: Exercise - Game logic
+  description: Describe Exercise
+  author: softchris
+  ms.author: chnoring
+  ms.date: 03/15/2023
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-exercise-game-logic.md)]

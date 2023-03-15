@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.gh-dotnet-copilot
+uid: learn.gh-dotnet-connectfour
 metadata:
   title: Build Connect Four game with Blazor
   description: Learn how to
@@ -22,10 +22,12 @@ products:
   - vs
 prerequisites: None
 units:
-  - learn.gh-dotnet-copilot.1-introduction
-  - learn.gh-dotnet-copilot.2-blazor
-  - learn.gh-dotnet-copilot.3-exercise-unit
-  - learn.gh-dotnet-copilot.4-knowledge-check
-  - learn.gh-dotnet-copilot.5-summary
+  - learn.dotnet-connectfour.1-introduction
+  - learn.dotnet-connectfour.2-blazor
+  - learn.dotnet-connectfour.3-exercise-blazor
+  - learn.dotnet-connectfour.4-game-logic
+  - learn.dotnet-connectfour.5-exercise-game-logic
+  - learn.dotnet-connectfour.6-knowledge-check
+  - learn.dotnet-connectfour.7-summary
 badge:
-  uid: learn.gh-dotnet-copilot.badge
+  uid: learn.dotnet-connectfour.badge

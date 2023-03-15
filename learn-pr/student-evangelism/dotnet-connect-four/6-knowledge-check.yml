@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.gh-dotnet-copilot.4-knowledge-check
+uid: learn.dotnet-connectfour.6-knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 4
 content: |
-  [!include[](includes/4-knowledge-check.md)]
+  [!include[](includes/6-knowledge-check.md)]
 quiz:
   title: Check your knowledge
   questions:

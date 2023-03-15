@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.gh-dotnet-copilot.3-exercise-unit
-title: Execise - Unit
+uid: learn.dotnet-connectfour.4-game-logic
+title: Exercise - Game logic
 metadata:
-  title: Exercise - Unit
+  title: Exercise - Game logic
   description: Describe Exercise
   author: softchris
   ms.author: chnoring
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
-  [!include[](includes/3-exercise-unit.md)]
+  [!include[](includes/4-game-logic.md)]
