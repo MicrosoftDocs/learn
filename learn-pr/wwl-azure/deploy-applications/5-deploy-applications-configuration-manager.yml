@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-applications.deploy-applications-configuration-manager
+title: Deploy applications with Configuration Manager
+metadata:
+  title: Deploy applications with Configuration Manager
+  description: "Deploy applications with Configuration Manager"
+  ms.date: 03/15/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-deploy-applications-configuration-manager.md)]

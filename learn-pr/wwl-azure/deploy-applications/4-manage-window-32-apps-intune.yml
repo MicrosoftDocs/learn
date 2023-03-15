@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-applications.manage-window-32-apps-intune
+title: Manage Win32 apps with Intune
+metadata:
+  title: Manage Win32 apps with Intune
+  description: "Manage Win32 apps with Intune"
+  ms.date: 03/15/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-manage-window-32-apps-intune.md)]
