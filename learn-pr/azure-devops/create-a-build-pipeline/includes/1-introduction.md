@@ -29,13 +29,7 @@ The modules in this learning path and previous learning path form a progression.
 
 To follow the progression from the beginning, be sure to first complete the [Get started with Azure DevOps](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true) learning path.
 
-This module includes the option to use [GitHub Codespaces](https://github.com/features/codespaces) or a [Microsoft-hosted agent](/azure/devops/pipelines/agents/hosted). If you'd like to use a Microsoft-hosted agent, [check your parallel jobs and request a free grant](/azure/devops/pipelines/troubleshooting/troubleshooting#check-for-available-parallel-jobs).
-
-* **GitHub Codespaces** - Choose **GitHub Codespaces** to follow the steps of this module using a development environment provided in GitHub Codespaces. You won't need to install any development tools on your local machine, and the GitHib Codespaces environment also provides a self-hosted Linux agent to run your pipeline. Choose **GitHub Codespaces** if you don't have any [Microsoft-hosted parallel jobs available in your organization](/azure/devops/pipelines/troubleshooting/troubleshooting#check-for-available-parallel-jobs) and you don't want to wait 2-3 business days for the [free grant](https://aka.ms/azpipelines-parallelism-request).
-* **Microsoft-hosted agent** - Choose **Microsoft-hosted agent** to follow the steps of this module using your local development environment and a Microsoft-hosted agent. Before starting, [check your parallel jobs](/azure/devops/pipelines/troubleshooting/troubleshooting#check-for-available-parallel-jobs), and if you don't have any, [request a free grant](https://aka.ms/azpipelines-parallelism-request). The approval process for the free grant typically takes 2-3 business days.
-
-> [!IMPORTANT]
-> This training module can be completed using either the **GitHub Codespaces** or the **Microsoft-hosted agent** path, but you can't switch between them when completing the training module. If you decide to change approaches, restart the module.
+[!include[](../../shared/includes/codespaces-hosted-module-options.md)]
 
 The prerequisites for this learning path vary depending on which option you select.
 
