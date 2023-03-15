@@ -1,5 +1,6 @@
 
 
+
 The Visual Studio Code user interface enables developers to run their code in a debug environment. Support for debugging is generally provided through the use of extensions, and for C# developers, debugger support is provided by the same extension that provides support for code development and IntelliSense.
 
 ## Debugger and application interaction
@@ -186,3 +187,12 @@ The RUN AND DEBUG view in Visual Studio Code supports a rich debugging experienc
 1. Notice that Andrew's greeting message is repeated.
 
 During the remainder of this module you'll use the Visual Studio Code debugger tools to investigate coding issues.
+
+## Recap
+
+Here are a few important things to remember from this unit:
+
+- The Visual Studio Code debugger for C# uses the .NET Core runtime to launch and interact with an application.
+- Using the Visual Studio Code **Run** menu to start an application with and without the debugger.
+- Using the **Debug toolbar** to **Stop** a running process.
+- Using the RUN AND DEBUG view to start debugging an application.

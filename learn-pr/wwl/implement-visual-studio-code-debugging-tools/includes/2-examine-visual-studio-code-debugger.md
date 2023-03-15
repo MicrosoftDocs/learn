@@ -1,5 +1,6 @@
 
 
+
 The Visual Studio Code user interface provides several ways to configure debug options and launch debug sessions.
 
 ## Debug features in the Visual Studio Code user interface
@@ -79,7 +80,7 @@ The **Debug toolbar** provides execution controls while your application is runn
 
 1. Step Over. This button can be used to execute the next method as a single command without inspecting or following its component steps.
 
-1. Step Into. This button can be used to enter the next method to follow its execution line-by-line.
+1. Step Into. This button can be used to enter the next method or code line and observe line-by-line execution steps.
 
 1. Step Out. When inside a method, this button can be used to return to the earlier execution context by completing all remaining lines of the current method as though they were a single command.
 
@@ -87,7 +88,16 @@ The **Debug toolbar** provides execution controls while your application is runn
 
 1. Stop. This button can be used to terminate the current program execution.
 
-In addition to six execution controls, the **Debug toolbar** provides a "handle" on the left side that enables the developer to reposition the toolbar, and a "More" dropdown on the right side that enables the developer to detach the debugger.
+In addition to six execution controls, the **Debug toolbar** provides a "handle" on the left side that enables the developer to reposition the toolbar, and a "More" dropdown on the right side that enables the developer to disconnect the debugger.
 
 > [!NOTE]
-> You can use the setting `debug.toolBarLocation` to control the location of the debug toolbar. It can be floating (the default), docked to the Run and Debug view, or hidden. A floating debug toolbar can be dragged horizontally and down to the Editor area.
+> You can use the setting `debug.toolBarLocation` to control the location of the debug toolbar. It can be floating (the default), docked to the RUN AND DEBUG view, or hidden. A floating debug toolbar can be dragged horizontally and down to the Editor area.
+
+## Recap
+
+Here are a few important things to remember from this unit:
+
+- Visual Studio Code has user interface features to configure, start, and manage debug sessions.
+- The Run menu provides easy access to common run and debug commands grouped into six sections.
+- The RUN AND DEBUG view provides access to runtime tools such as Debug toolbar, VARIABLES, WATCH, CALL STACK, BREAKPOINTS and DEBUG CONSOLE.
+- The Debug toolbar provides execution controls while your application is running such as pause/continue, step over, step into, step out, restart and stop.

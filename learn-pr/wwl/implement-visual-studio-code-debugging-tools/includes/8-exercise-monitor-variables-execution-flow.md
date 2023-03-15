@@ -1,5 +1,6 @@
 
 
+
 The RUN AND DEBUG view provides developers with an easy way to monitor variables and expressions, observe execution flow, an manage breakpoints during the debug process.  
 
 ## Examine the sections of the Run and Debug view
@@ -313,3 +314,12 @@ There may be times when you want to create a programmatic condition manually. Th
 1. Notice that the DEBUG CONSOLE panel displays a message informing you that the program has exited.
 
 Congratulations! You've successfully used the VARIABLES and WATCH sections of the RUN AND DEBUG view.
+
+## Recap
+
+Here are a few important things to remember from this unit:
+
+- Monitoring variable state using the VARIABLES section of the RUN AND DEBUG view.
+- Tracking an expression across time or different methods using the WATCH section of the RUN AND DEBUG view.
+- Using the CALL STACK section of the RUN AND DEBUG view to find the source location of an exception or a WATCH expression.
+- Using the VARIABLES section to change the variable value at runtime.

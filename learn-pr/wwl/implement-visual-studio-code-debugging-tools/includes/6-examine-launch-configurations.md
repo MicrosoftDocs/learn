@@ -1,8 +1,9 @@
 
 
+
 You've already seen that Visual Studio Code uses the launch.json file to configure the debugger. If you're creating a simple C# console application, it's likely that Visual Studio Code generates a launch.json with all of the information you need to successfully debug your code. However, there are cases when you'll need to modify a launch configuration, so it's important to understand the features of a configuration.
 
-## Fields in the launch configuration file
+## Attributes in the launch configuration file
 
 ### Name
 
@@ -169,3 +170,10 @@ The following screenshot shows how you could configure the tasks.json file. In t
 With your updates to the launch.json and tasks.json files in place, the RUN AND DEBUG view will display launch options that enable you to debug either the Project123 or Project456 application. The following screenshot shows the names of the launch configurations displayed in the launch configuration dropdown:
 
 ![Screenshot showing launch configuration options in the Run and Debug view.](../media/launch-configuration-multiple-projects-launch-options.png)
+
+## Recap
+
+Here are a couple important things to remember from this unit:
+
+- Launch configurations are used to specify attributes such as name, type, request, preLaunchTask, program, cwd, args, console, and stopAtEntry.
+- Developers can edit the launch configuration to accommodate project requirements.

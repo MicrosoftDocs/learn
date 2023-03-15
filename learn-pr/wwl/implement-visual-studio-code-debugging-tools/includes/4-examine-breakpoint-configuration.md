@@ -1,5 +1,6 @@
 
 
+
 Debuggers are used to help you to analyze your code and can be used to control your program's runtime execution. When you start the Visual Studio Code debugger, it immediately begins executing your code. Because your code executes in micro-seconds, effective code debugging depends on your ability to pause the program on any statement within your code. You'll use breakpoints to specify where code execution will be paused.
 
 ## Set breakpoints
@@ -63,3 +64,12 @@ The C# debugger for Visual Studio Code does not currently support Hitcount break
 If you configure either a Hitcount breakpoint or a Logpoint, the red marker to the left of the line number will be updated (after the debug session) to indicate the breakpoint is not supported. If you hover the mouse cursor over the red dot you will see the following message.
 
 ![Screenshot showing the breakpoint type not supported message.](../media/breakpoint-logpoint-hitcount-not-supported.png)
+
+## Recap
+
+Here are a few important things to remember from this unit:
+
+- Visual Studio Code allows setting breakpoints in the code editor or from the Run menu, which are marked with a red circle.
+- Breakpoints can be removed or disabled using the same options used to set them, and bulk operations for all breakpoints are also available in the Run menu.
+- Conditional breakpoints can be set by right-clicking an existing breakpoint or by choosing the option when setting a new breakpoint, which allows the user to specify a condition for triggering the breakpoint.
+- The C# debugger for Visual Studio Code does not currently support Hitcount breakpoints or Logpoints.

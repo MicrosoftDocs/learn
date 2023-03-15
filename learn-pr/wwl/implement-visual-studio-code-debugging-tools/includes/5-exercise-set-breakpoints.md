@@ -1,5 +1,6 @@
 
 
+
 Breakpoints are used during the debug process pause execution. This enables you to track variables and examine the sequence in which your code is executed. Breakpoints are a great way to start your debug process.
 
 ## Set a breakpoint
@@ -118,7 +119,7 @@ Once you've isolated an issue in your code, you should update your code and then
         else if (name == "AllGreetings")
             messageText = SophiaMessage() + "\n\r" + AndrewMessage();
         ```
-    
+
     Either way, your updated code must include the call to `AndrewMessage` within the code block when `name == "AllGreetings"`.
 
 1. On the **File** menu, select **Save**.
@@ -141,3 +142,11 @@ Once you've isolated an issue in your code, you should update your code and then
 1. On the **Debug controls** toolbar, select **Stop**.
 
 Congratulations! You've successfully used the Visual Studio Code debugger to help you isolate and correct a logic issue.
+
+## Recap
+
+Here are a few important things to remember from this unit:
+
+- Using breakpoints to pause code execution during a debug session.
+- Using **Step Into** from the **Debug controls** toolbar to observe the next executable code line.
+- Using **Step Out** from the **Debug controls** toolbar to advance through the current method and back to the code line that called the method.

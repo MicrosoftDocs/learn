@@ -1,5 +1,6 @@
 
 
+
 The C# debugger for Visual Studio Code supports the option to configure a breakpoint that only triggers if a condition is met. This type of breakpoint is called a conditional breakpoint. Conditional breakpoints can be configured directly or by editing an existing breakpoint.
 
 > [!NOTE]
@@ -158,3 +159,10 @@ A standard breakpoint is great for walking through the data processing applicati
 1. Use the **Stop** button to stop code execution.
 
 Congratulations! You successfully configured a conditional breakpoint.
+
+## Recap
+
+Here are a couple important things to remember from this unit:
+
+- Setting a standard breakpoint to pause an application each time a breakpoint is encountered.
+- Configuring a conditional breakpoint to pause an application when a Boolean expression evaluates to `true`.
