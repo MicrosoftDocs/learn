@@ -7,7 +7,7 @@ By examining the properties of common exception types and experimenting with the
 
 Without the ability to implement exception handling, you wouldn't be able to delivery stable and reliable C# applications.
 
-## Additional reference materials:
+## Reference materials:
 
 - You can find additional information about exception properties here: [https://learn.microsoft.com/dotnet/standard/exceptions/exception-class-and-properties](/dotnet/standard/exceptions/exception-class-and-properties) and [https://learn.microsoft.com/dotnet/api/system.exception](/dotnet/api/system.exception).
 

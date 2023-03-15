@@ -38,7 +38,7 @@ quiz:
       explanation: "Correct. The `try` code block contains the guarded code that may cause an exception."
   - content: "What is the purpose of the `catch` code block?"
     choices:
-    - content: "To clean up any resources that're allocated in a `try` block."
+    - content: "To clean up any resources that are allocated in a `try` block."
       isCorrect: false
       explanation: "Incorrect. The `catch` code block isn't used to clean up resources."
     - content: "To handle the exception, log it, or ignore it."
@@ -55,6 +55,6 @@ quiz:
     - content: "To handle the exception, log it, or ignore it."
       isCorrect: false
       explanation: "Incorrect. The `finally` code block is not used to handle the exception, log it, or ignore it."
-    - content: "To clean up any resources that're allocated in a `try` block."
+    - content: "To clean up any resources that are allocated in a `try` block."
       isCorrect: true
-      explanation: "Correct. The `finally` block is often used to clean up any resources that're allocated in a `try` block. The `finally` code block contains code that will execute whether an exception occurs or not."
+      explanation: "Correct. The `finally` block is often used to clean up any resources that are allocated in a `try` block. The `finally` code block contains code that executes whether an exception occurs or not."
