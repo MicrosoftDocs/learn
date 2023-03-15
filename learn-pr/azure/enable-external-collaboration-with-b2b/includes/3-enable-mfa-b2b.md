@@ -39,10 +39,6 @@ For **Access controls**, you select both **Grant access** and **Require multifac
 
    [ ![Diagram showing the Conditional Access policy configuration for an application.](../media/4-create-conditional-access-policy.png) ](../media/4-create-conditional-access-policy.png#lightbox)
 
-After you configure your policy and enable it, you can test it by using the **What If** tool in the Azure portal.
-
-![Screenshot of the What If tool test.](../media/4-what-if.png)
-
-This tool helps simulate a user signing in, and shows you which policies are applied, based on your test simulation. If successful, the test shows your policy in the list that will apply, based on your simulation.
+After you configure your policy and enable it, you can test it by using the **What If** tool in the Azure portal. This tool helps simulate a user signing in, and shows you which policies are applied, based on your test simulation. If successful, the test shows your policy in the list that will apply, based on your simulation.
 
 ![Screenshot of the What If tool result.](../media/4-what-if-result.png)
