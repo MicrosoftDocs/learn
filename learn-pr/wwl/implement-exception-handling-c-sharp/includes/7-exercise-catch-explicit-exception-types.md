@@ -1,5 +1,6 @@
 
 
+
 Earlier in this module, you learned that the exception objects caught by your C# application are instances of an exception class. Generally speaking, your code will `catch` one of the following:
 
 - An exception object that's an instance of the `System.Exception` base class.
@@ -317,4 +318,9 @@ There are times when variations in your data may cause different types of except
 
 1. Step through the code, and notice that different exception types are caught.
 
-In this exercise, you learned how to `catch` specific exception types close to where the error occurred, allowing other exception to be caught further down the call stack. You also learned about exception properties, and how to use the properties of exception objects in your applications.
+## Recap
+
+Here are a couple important things to remember from this unit:
+
+- Updating the `catch` clause to catch a specific exception type, such as the `DivideByZeroException` exception type.
+- Accessing the properties of an exception object within the `catch` block, such as the `Message` and `StackTrace` properties.

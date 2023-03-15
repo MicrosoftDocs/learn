@@ -4,10 +4,10 @@ title: 'Exercise - Catch specific exception types '
 metadata:
   title: Exercise - Catch specific exception types
   description: "Exercise - Catch specific exception types"
-  ms.date: 03/08/2023
+  ms.date: 03/15/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
-durationInMinutes: 8
+durationInMinutes: 14
 content: |
   [!include[](includes/7-exercise-catch-explicit-exception-types.md)]

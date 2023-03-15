@@ -4,44 +4,99 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/08/2023
+  ms.date: 03/15/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
-durationInMinutes: 3
+durationInMinutes: 5
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What **TBD**?"
+  - content: "What does the `try` code block contain?"
     choices:
-    - content: "A ."
+    - content: "The code that cleans up resources and is executed whether an exception occurs or not."
       isCorrect: false
-      explanation: "Incorrect. **Explanation TBD**."
-    - content: "B ."
+      explanation: "Incorrect. The `finally` code block contains the code that cleans up resources and is executed whether an exception occurs or not."
+    - content: "The code that throws an exception object."
       isCorrect: false
-      explanation: "Incorrect. **Explanation TBD**."
-    - content: "C ."
+      explanation: "Incorrect. The `try` code block isn't used to throw an exception object."
+    - content: "The code that may cause an exception."
       isCorrect: true
-      explanation: "Correct! **Explanation TBD**."
-  - content: "What **TBD**?"
+      explanation: "Correct. The `try` code block contains the guarded code that may cause an exception."
+  - content: "What is the purpose of the `catch` code block?"
     choices:
-    - content: "A ."
+    - content: "To clean up any resources that're allocated in a `try` block."
       isCorrect: false
-      explanation: "Incorrect. **Explanation TBD**."
-    - content: "B ."
-      isCorrect: false
-      explanation: "Incorrect. **Explanation TBD**."
-    - content: "C ."
+      explanation: "Incorrect. The `catch` code block isn't used to clean up resources."
+    - content: "To handle the exception, log it, or ignore it."
       isCorrect: true
-      explanation: "Correct! **Explanation TBD**."
-  - content: "What **TBD**?"
+      explanation: "Correct. The `catch` code block contains the code that's executed when an exception is caught. The catch block can handle the exception, log it, or ignore it."
+    - content: "To execute code that may cause an exception."
+      isCorrect: false
+      explanation: "Incorrect. The `catch` code block isn't used to execute code that may cause an exception."
+  - content: "When is an `IndexOutOfRangeException` exception thrown?"
     choices:
-    - content: "A ."
+    - content: "When an attempt is made to store a value of one type in an array of another type."
       isCorrect: false
-      explanation: "Incorrect. **Explanation TBD**."
-    - content: "B ."
+      explanation: "Incorrect. This describes when a `ArrayTypeMismatchException` exception is thrown."
+    - content: "When attempting an invalid casting or explicit conversion."
       isCorrect: false
-      explanation: "Incorrect. **Explanation TBD**."
-    - content: "C ."
+      explanation: "Incorrect. This describes when a `InvalidCastException` exception is thrown."
+    - content: "When an attempt is made to index an array outside the bounds of the array."
       isCorrect: true
-      explanation: "Correct! **Explanation TBD**."
+      explanation: "Correct. An `IndexOutOfRangeException` exception is thrown when an attempt is made to access an element of an array or collection with an index that is outside its bounds."
+  - content: "When is an `ArrayTypeMismatchException` exception thrown?"
+    choices:
+    - content: "When an attempt is made to store a value of one type in an array of another type."
+      isCorrect: true
+      explanation: "Correct. The `ArrayTypeMismatchException` exception is thrown when an attempt is made to store an element of the wrong type within an array."
+    - content: "When attempting to access a member on a type whose value is null."
+      isCorrect: false
+      explanation: "Incorrect. This describes when a `NullReferenceException` exception is thrown."
+    - content: "When an attempt is made to index an array outside the bounds of the array."
+      isCorrect: false
+      explanation: "Incorrect. This describes when a `IndexOutOfRangeException` exception is thrown."
+  - content: "What is the base class that all derived exception types inherit from?"
+    choices:
+    - content: "Object."
+      isCorrect: false
+      explanation: "Incorrect. Object is not an exception type."
+    - content: "System."
+      isCorrect: false
+      explanation: "Incorrect. System is not an exception type."
+    - content: "Exception."
+      isCorrect: true
+      explanation: "Correct. In C#, System.Exception is the base class that all derived exception types inherit from."
+  - content: "Which property of an exception object can be used to determine where an error occurred?"
+    choices:
+    - content: "InnerException."
+      isCorrect: false
+      explanation: "Incorrect. The `InnerException` property can be used to create and preserve a series of exceptions during exception handling."
+    - content: "StackTrace."
+      isCorrect: true
+      explanation: "Correct. The `StackTrace` property contains a stack trace that can be used to determine where an error occurred."
+    - content: "TargetSite."
+      isCorrect: false
+      explanation: "Incorrect. The `TargetSite` property can be used to get the method that throws the current exception."
+  - content: "What is the recommended approach for catching exceptions in C#?"
+    choices:
+    - content: "Catch any type of exception without specifying an object argument."
+      isCorrect: false
+      explanation: "Incorrect. Catching any type of exception without specifying an object argument is not recommended."
+    - content: "Catch only the exceptions that your code knows how to recover from."
+      isCorrect: true
+      explanation: "Correct. The recommended approach is to catch only the exceptions that your code knows how to recover from."
+    - content: "Catch only the exceptions that are not derived from System.Exception."
+      isCorrect: false
+      explanation: "Incorrect. All exceptions in C# are derived from System.Exception."
+  - content: "What is the name of the specific exception type that occurs when attempting to divide by zero in C#?"
+    choices:
+    - content: "ArithmeticException."
+      isCorrect: false
+      explanation: "Incorrect. The `ArithmeticException` exception type is a base class for exceptions that occur in arithmetic operations."
+    - content: "InvalidCastException."
+      isCorrect: false
+      explanation: "Incorrect. The `InvalidCastException` exception type is thrown when an explicit conversion from one data type to another fails."
+    - content: "DivideByZeroException."
+      isCorrect: true
+      explanation: "Correct. In C#, the specific exception type that occurs when attempting to divide by zero is `DivideByZeroException`."

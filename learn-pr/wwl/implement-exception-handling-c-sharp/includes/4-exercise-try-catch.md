@@ -1,5 +1,6 @@
 
 
+
 The `try-catch` pattern consists of a `try` block followed by one or more `catch` clauses, which specify handlers for different exceptions.
 
 When an exception is thrown, the common language runtime (CLR) searches for a `catch` clause that can handle the exception. If the currently executing method doesn't contain a `catch` clause that can handle the exception type thrown, the CLR searches the method that called the current method. The search continues down through the call stack until a suitable `catch` clause is found. If no `catch` clause is found to handle the exception, the CLR displays an unhandled exception message to the user and stops the execution of the program.
@@ -189,3 +190,11 @@ When an exception is thrown and the current method doesn't catch the exception, 
     ```
 
 1. Notice that even though the exception is thrown two levels up in the call stack, it's still handled successfully.
+
+## Recap
+
+Here are a few important things to remember from this unit:
+
+- Implementing a `try-catch` pattern to `try` specified code lines within your application and `catch` exceptions that occur within the scope of the `try` code block.
+- Using a `catch` block to catch an exception thrown at the same level of the call stack.
+- Using a `catch` block to catch an exception thrown at a higher level of the call stack.
