@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.dotnet-connectfour.3-exercise-blazor
-title: Execise - Unit
+title: Execise - Blazor
 metadata:
-  title: Exercise - Unit
+  title: Exercise - Blazor
   description: Describe Exercise
   author: softchris
   ms.author: chnoring
