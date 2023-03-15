@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.enable-external-collaboration-with-b2b.4-collaborate-externally-b2b.knowledge-check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: "Knowledge check for the enable external B2B collaboration learn module"
+  ms.date: 03/15/2023
+  author: msmimart
+  ms.author: mimart
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+
+content:
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: What is one of the main advantages of using Azure AD B2B collaboration?
+    choices:
+    - content: You can allow people outside of your organization to use their own credentials to sign in to your apps.
+      isCorrect: true
+      explanation: Correct. A B2B collaboration user authenticates using credentials from their home organization or identity provider, so you don't need to provide or maintain credentials for them.
+    - content: You can collaborate with people outside of your organization by giving them a user ID and password.
+      isCorrect: false
+      explanation: Try again. A B2B collaboration user authenticates using their own credentials and their home organization or identity provider. You don't need to maintain a user ID or password for them.
+    - content: You can allow people outside of your organization to access your apps without adding a user object to your directory.
+      isCorrect: false
+      explanation: Try again. A user object for the B2B collaboration user is added to your directory, and you can manage it like other user objects in your directory. For example you can assign it permissions, add it to groups, and so on.
+  - content: How can you add a layer of protection to the application?
+    choices:
+    - content: Use unconditional access policies in Azure AD B2B.
+      isCorrect: false
+      explanation: Try again. There's no such thing as unconditional access policies in Azure.
+    - content: Use Conditional Access policies in Azure AD B2B.
+      isCorrect: true
+      explanation: Correct. Conditional Access policies offer further protection for your applications. You can ensure that your applications are only accessed when all conditions you set have been met.
+    - content: Use criteria access policies in Azure AD B2B.
+      isCorrect: false
+      explanation: Try again. There's no such thing as criteria access policies in Azure.
+  - content: What is one of the **External Collaboration settings** you should review to make sure B2B collaboration is enabled?
+    choices:
+    - content: Make sure that the domains you want to invite are *not* listed under **Deny invitations to the specified domains**.
+      isCorrect: True
+      explanation: Correct. This setting will block B2B collaboration with any domain that's listed below it. If this setting is selected, you'll want to make sure the domain you want to collaborate with hasn't been added to the list.
+    - content: Make sure **Enable global B2B collaboration** is selected.
+      isCorrect: false
+      explanation: Try again. **Enable global B2B collaboration** isn't one of the available settings in Azure AD.
+    - content: Make sure **No one in the organization can invite guest users including admins (most restrictive)** is selected.
+      isCorrect: false
+      explanation: Try again. This setting will block everyone in your organization, including admins, from sending B2B collaboration invitations to external users.
+  - content: Which of the following are valid categories for multi-factor authentication?
+    choices:
+    - content: Something a user possesses, and something the user doesn't know.
+      isCorrect: false
+      explanation: Try again. Something the user doesn't know isn't an available category.
+    - content: Something a user knows, and something the user doesn't possess.
+      isCorrect: false
+      explanation: Try again. Something the user doesn't possess isn't an available category.
+    - content: Something a user possesses, and something a user knows.
+      isCorrect: true
+      explanation: Correct. Authentication can be dependent on something such as a user's device, or a phrase only known to the user.
+  - content: What's a good way to double-check identities of B2B collaboration users before they access an application?
+    choices:
+    - content: Configure multi-factor authentication by sending an invitation to a recovery email address for the B2B collaboration user.
+      isCorrect: false
+      explanation: Try again. You configure multi-factor authentication by creating a Conditional Access policy scoped to the application and to guest and external users.
+    - content: Configure multi-factor authentication by creating a Conditional Access policy and assigning it to your application and all guest and external users.
+      isCorrect: True
+      explanation: Correct. You configure enforcement of multi-factor authentication by creating a Conditional Access policy in the Azure portal. The policy assignments should be your application and all guest and external users.
+    - content: Configure multi-factor authentication by using the What if tool to create a policy for your application.
+      isCorrect: false
+      explanation: Try again. The What if tool in the Azure portal is a useful way to test your policy after you've configured it.
+ 
