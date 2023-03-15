@@ -16,31 +16,31 @@ content: |
 quiz:
     title: Knowledge check
     questions:
-    - content: "Which database service will be used to store, process, and serve the real-time bus data?"
+    - content: "Which database service should be used to store, process, and serve the real-time bus data?"
       choices:
       - content: "Azure Functions"
         isCorrect: false
-        explanation: "Azure Functions will get the data into the database. But another service will actually process if a bus is within a geofence."
+        explanation: "Azure Functions gets the data into the database. But another service should process if a bus is within a geofence."
       - content: "Azure SQL Database"
         isCorrect: true
-        explanation: "That's correct!"
+        explanation: "Azure SQL Database is the correct answer!"
       - content: "Azure SQL Managed Instance"
         isCorrect: false
-        explanation: "Azure SQL Managed Instance wasn't discussed in this unit. Azure SQL Managed Instance could be used, since it possesses the same engine, however, it does not support the serverless requirement."
+        explanation: "Azure SQL Managed Instance wasn't discussed in this unit. Azure SQL Managed Instance could be used, since it possesses the same engine, however, it doesn't support the serverless requirement."
       - content: "SQL Server"
         isCorrect: false
-        explanation: "SQL Server wasn't discussed in this unit. SQL Server could be used, since it possesses the same engine, however, it does not support the serverless requirement."
-    - content: "Which service tier or feature in Azure SQL Database will support a scenario where a 12 TB database is required?"
+        explanation: "SQL Server wasn't discussed in this unit. SQL Server could be used, since it possesses the same engine, however, it doesn't support the serverless requirement."
+    - content: "Which service tier or feature in Azure SQL Database would support a scenario where a 12-TB database is required?"
       choices:
       - content: "Hyperscale"
         isCorrect: true
-        explanation: "That's correct!"
+        explanation: "Hyperscale is the correct answer!"
       - content: "Serverless"
         isCorrect: false
-        explanation: "The Serverless tier will not support databases of this size."
+        explanation: "The Serverless tier doesn't support databases of this size."
       - content: "Columnstore indexes"
         isCorrect: false
-        explanation: "This feature is available in SQL Server and Azure SQL, but it will not help in supporting a 12 TB database."
+        explanation: "This feature is available in SQL Server and Azure SQL, but it doesn't help in supporting a 12-TB database."
       - content: "Graph models"
         isCorrect: false
-        explanation: "This feature is available in SQL Server and Azure SQL, but it will not help in supporting a 12 TB database."
+        explanation: "This feature is available in SQL Server and Azure SQL, but it doesn't help in supporting a 12-TB database."
