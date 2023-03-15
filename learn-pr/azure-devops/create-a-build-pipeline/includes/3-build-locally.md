@@ -4,7 +4,7 @@ Mara is going to do exactly that, and by following the procedures, you can do th
 
 You have two options for completing this module.
 
-* **GitHub Codespaces** - Choose **GitHub codespaces** to follow the steps of this module using a development environment provided in GitHub Codespaces. You won't need to install any development tools on your local machine, and the GitHib Codespaces environment also provides a self-hosted Linux agent to run your pipeline.
+* **GitHub Codespaces** - Choose **GitHub Codespaces** to follow the steps of this module using a development environment provided in GitHub Codespaces. You won't need to install any development tools on your local machine, and the GitHib Codespaces environment also provides a self-hosted Linux agent to run your pipeline. Choose **GitHub Codespaces** if you don't have any [Microsoft-hosted parallel jobs available in your organization](/azure/devops/pipelines/troubleshooting/troubleshooting#check-for-available-parallel-jobs) and you don't want to wait 2-3 business days for the [free grant](https://aka.ms/azpipelines-parallelism-request).
 * **Microsoft-hosted agent** - Choose **Microsoft-hosted agent** to follow the steps of this module using your local development environment and a Microsoft-hosted agent. Before starting, [check your parallel jobs](/azure/devops/pipelines/troubleshooting/troubleshooting#check-for-available-parallel-jobs), and if you don't have any, [request a free grant](https://aka.ms/azpipelines-parallelism-request). The approval process for the free grant typically takes 2-3 business days.
 
 #### [GitHub Codespaces](#tab/codespaces)
@@ -36,7 +36,7 @@ Let's fork the *Space Game* web project into your GitHub account:
 
 1. In a web browser, go to [GitHub](https://github.com?azure-portal=true), and sign in.
 
-1. Go to the [Space Game](https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web?azure-portal=true) web project. (Temp URL: https://github.com/juliakm/pipelines-codespaces-tailspin)
+1. Go to the [Space Game](https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web?azure-portal=true) web project.
 
 1. Select **Fork**:
 

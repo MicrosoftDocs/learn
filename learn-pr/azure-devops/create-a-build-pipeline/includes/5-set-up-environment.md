@@ -28,7 +28,7 @@ On the Azure DevOps Demo Generator site, to run the template, do these steps:
 1. To go to your project in Azure DevOps, select **Navigate to project**.
 
 > [!IMPORTANT]
-> The [Clean up your Azure DevOps environment](/training/modules/create-a-build-pipeline/9-clean-up-environment?azure-portal=true) unit in this module provides important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes for Microst-hosted agents, or GitHub Codesace Free plan account core hours. Be sure to do the cleanup steps even if you don't complete this module.
+> The [Clean up your Azure DevOps environment](/training/modules/create-a-build-pipeline/9-clean-up-environment?azure-portal=true) unit in this module provides important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes for Microst-hosted agents, or GitHubspace Free plan account core hours. Be sure to do the cleanup steps even if you don't complete this module.
 
 [!include[](../../shared/includes/project-visibility.md)]
 
