@@ -7,7 +7,7 @@ Code challenges in this module are used to reinforce what you've learned and hel
 
 In this challenge, you start with a sample application that uses a series of method calls to process data. The top-level statements create an array of user input values and call a method named `Workflow1`. `Workflow1` represents a high-level workflow that loops through the array and passes user input values to a method named `Process1`. `Process1` uses the user input data to calculate a value.
 
-Currently, when `Process1` encounters an issue or error, it returns a string describing the issue rather than throwing an exception. Your challenge is implement exception handling in the sample application.
+Currently, when `Process1` encounters an issue or error, it returns a string describing the issue rather than throwing an exception. Your challenge is to implement exception handling in the sample application.
 
 Use the following steps to complete the challenge:
 
@@ -113,8 +113,8 @@ Use the following steps to complete the challenge:
 
     - All methods must be converted from `static string` methods to `static void` methods.
     - The `Process1` method must throw exceptions for each type of issue encountered.
-    - The exceptions of type `FormatException` must be handled by `Workflow1`.
-    - The exceptions of type `DivideByZeroException` must be handled by the top-level statements.
+    - The `Workflow1` method must handle the `FormatException` exceptions.
+    - The top-level statements must handle the `DivideByZeroException` exceptions.
     - The `Message` property of the exception must be used to notify the user of the issue.
 
 1. Your completed solution must print the following messages to the console:

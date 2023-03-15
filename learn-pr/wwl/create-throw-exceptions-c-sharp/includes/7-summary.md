@@ -7,7 +7,7 @@ By creating, throwing, catching, and handling customized exceptions, you simplif
 
 Without the ability to create and throw customized exception objects, your code would be more difficult to maintain and the user experience would suffer.
 
-## Additional reference materials:
+## Reference materials:
 
 - You can find additional information about using exceptions here: [https://learn.microsoft.com/dotnet/csharp/fundamentals/exceptions/using-exceptions](/dotnet/csharp/fundamentals/exceptions/using-exceptions).
 
