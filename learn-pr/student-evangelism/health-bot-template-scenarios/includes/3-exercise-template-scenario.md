@@ -10,7 +10,7 @@ In this exercise, you learn how to import the *triage and handoff* scenario temp
 
 4. Select the **Triage and handoff** template, and then select **Import**.
 
-    :::image type="content" source="../media/3-health-bot-template-import.png" alt-text="Screenshot that shows selections for importing the triage and handoff template." lightbox="../media/3-health-bot-template-import.png":::
+    :::image type="content" source="../media/3-health-bot-template-import.png" alt-text="Screenshot that shows selections for importing the triage and handoff template." lightbox="../media/3-health-bot-template-import.png.png":::
 
 5. After you import the template, the scenario editor displays. Note the flow of the scenario logic.
 
