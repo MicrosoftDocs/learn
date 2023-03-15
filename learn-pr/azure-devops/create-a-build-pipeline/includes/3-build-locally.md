@@ -14,7 +14,7 @@ Mara is going to do exactly that, and by following the procedures, you can do th
 
 1. Select **+ New Token**.
 
-1. Name your token, select the organization where you want to use the token, and then set your token to automatically expire after a set number of days.
+1. Name your token, select the organization where you want to use the token (if you have more than one organization, select the organization you are using to complete this module), and then set your token to automatically expire after a set number of days. The token is only used once when the Codespace registers its agent with your Azure DevOps organiation, so you can keep the default expiration.
 
 1. Choose **Show all scopes**, select the following scope: **Agent Pools (Read & manage)**, and choose **Create**.
 
@@ -81,7 +81,7 @@ Next, you'll set up Codespaces so that you can build the website, work with sour
 
 A *remote* is a Git repository where team members collaborate (similar to a repository on GitHub). Let's list your remotes and add a remote that points to Microsoft's copy of the repository so you can get the latest sample code.
 
-1. In the Visual Studio Code online editor, navigate to the terminal window, and choose **bash** from the right-hand side.
+1. In the Visual Studio Code online editor, go to the terminal window, and choose **bash** from the right-hand side.
 
     :::image type="content" source="../media/3-terminal-window.png" alt-text="Screenshot of terminal window in Visual Studio Code online editor. ":::
 
