@@ -1,0 +1,69 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-debug-handle-exceptions-c-sharp-console-application.knowledge-check
+title: 'Knowledge check '
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/15/2023
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+durationInMinutes: 4
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the purpose of catching an exception in C#?"
+    choices:
+    - content: "To ignore errors that occur in a program."
+      isCorrect: false
+      explanation: "Incorrect. Exceptions should be handled in code to correct error conditions if possible."
+    - content: "To generate additional errors in a program."
+      isCorrect: false
+      explanation: "Incorrect. Exceptions can be thrown when an issue or error is detected, but exceptions are not a tool for adding errors to an application."
+    - content: "To take corrective action when an error occurs in a program."
+      isCorrect: true
+      explanation: "Correct. The purpose of catching an exception is to take corrective action when an error occurs."
+  - content: "What is the relationship between the type of exception and the information it contains?"
+    choices:
+    - content: "The type of exception and the information it contains are unrelated."
+      isCorrect: false
+      explanation: "Incorrect. Properties of the exception object contain information related to the exception type."
+    - content: "The type of exception determines the information it contains."
+      isCorrect: true
+      explanation: "Correct. The type of exception determines the information it contains."
+    - content: "The information contained in an exception determines the type of exception."
+      isCorrect: false
+      explanation: "Incorrect. The exception type determines what information the exception contains, not the other way around."
+  - content: "What is a conditional breakpoint in Visual Studio Code?"
+    choices:
+    - content: "A breakpoint that only triggers when a specified condition is met."
+      isCorrect: true
+      explanation: "Correct. A conditional breakpoint is a special type of breakpoint that only triggers when a specified condition is met."
+    - content: "A breakpoint that is triggered every time the code is run."
+      isCorrect: false
+      explanation: "Incorrect. A conditional breakpoint will only be triggered when a specified condition is met."
+    - content: "A breakpoint that is only visible in the editor and does not affect debugging."
+      isCorrect: false
+      explanation: "Incorrect. A conditional breakpoint affects debugging and pauses execution when the condition is met."
+  - content: "When is an `ArgumentOutOfRangeException` exception thrown?"
+    choices:
+    - content: "When an attempt is made to index an array outside the bounds of the array."
+      isCorrect: false
+      explanation: "Incorrect. This describes when an `IndexOutOfRangeException` exception is thrown."
+    - content: "When the value of an argument is outside the allowable range of values as defined by the method."
+      isCorrect: true
+      explanation: "Correct. An `ArgumentOutOfRangeException` exception should only be thrown when the value of an argument is outside the allowable range of values as defined by the invoked method."
+    - content: "When an attempt is made to store a value of one type in an array of another type."
+      isCorrect: false
+      explanation: "Incorrect. This describes when a `ArrayTypeMismatchException` exception is thrown."
+  - content: "What is the recommended approach for catching exceptions in C#?"
+    choices:
+    - content: "Catch any type of exception without specifying an object argument."
+      isCorrect: false
+      explanation: "Incorrect. Catching any type of exception without specifying an object argument is not recommended."
+    - content: "Catch only the exceptions that your code knows how to recover from."
+      isCorrect: true
+      explanation: "Correct. The recommended approach is to catch only the exceptions that your code knows how to recover from."
+    - content: "Catch only the exceptions that are not derived from System.Exception."
+      isCorrect: false
+      explanation: "Incorrect. All exceptions in C# are derived from System.Exception."
