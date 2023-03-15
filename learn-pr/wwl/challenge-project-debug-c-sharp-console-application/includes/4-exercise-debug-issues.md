@@ -3,7 +3,9 @@
 
 In this challenge exercise, you need to use the Visual Studio Code debugger tools to isolate and fix the issues that are preventing the `MakeChange` method from successfully balancing the till. Once your application is updated, you need to verify your results.
 
-The following requirements apply to the simulated transactions:
+## Specification
+
+The following specification requirements apply to the simulated transactions:
 
 - top-level statements simulate transactions using randomly generated item costs.
 - top-level statements generate random values for `itemCost` in the range `2 - 49`.
@@ -18,7 +20,7 @@ The reported transaction output must include:
 
 ## Debug the application
 
-Use the following steps to to isolate and fix the logic issues:
+Use the following steps to isolate and fix the logic issues:
 
 1. Configure the debug environment.
 
@@ -34,9 +36,11 @@ To validate that your updated application produces the expected results when imp
 
 1. Open the Program.cs file in the Visual Studio Code Editor.
 
-1. Configure the application variables to meet the simulation requirements in the **Specification** section above.
+1. Configure the application variables to meet the simulated transaction requirements in the **Specification** section.
 
-1. Verify the following:
+1. Run your updated application.
+
+1. Verify that your application achieves the following output requirements:
 
     - The transactions report includes a record of 100 attempted transactions.
     - The transactions report includes a reported till value that's equal to the expected till value.
