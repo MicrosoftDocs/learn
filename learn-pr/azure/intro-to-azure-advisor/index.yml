@@ -3,13 +3,13 @@ uid: learn.intro-to-azure-advisor
 metadata:
   moduleType: introduction
   title: Introduction to Azure Advisor
-  description: Introduction to Azure Advisor and how to get recommendations for Azure Services.
-  ms.date: 6/30/2021
+  description: Introduction to Azure Advisor and how to get recommendations for Azure services.
+  ms.date: 03/08/2023
   author: ricmmartins
   ms.author: ricmart
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Intro to Azure Advisor
+title: Introduction to Azure Advisor
 summary: "This module introduces you to Azure Advisor and describes its characteristics, capabilities, and use cases."
 abstract: |
   By the end of this module, you'll be able to:

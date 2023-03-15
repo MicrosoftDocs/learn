@@ -1,4 +1,4 @@
-Azure Advisor is like a cloud consultant working for you. It scans your Azure configuration and provides recommendations you can make to optimize deployments, increase security, and save you money.
+Azure Advisor is a personalized cloud consultant. Advisor scans your Azure configuration and provides recommendations to help you optimize deployments, increase security, and save money.
 
 The Advisor dashboard displays personalized recommendations for all your Azure subscriptions. You can apply filters to display recommendations for specific subscriptions and resource types. The recommendations are divided into five categories:
 
@@ -8,23 +8,23 @@ The Advisor dashboard displays personalized recommendations for all your Azure s
 * Operational excellence: Help you achieve process and workflow efficiency, resource manageability, and deployment best practices.
 * Performance: Improve the speed of your applications.
 
-Azure Advisor provides recommendations for the following resources:
+Advisor provides recommendations for the following resources:
 
 * Application Gateway
 * App Services
-* Availability Sets
+* Availability sets
 * Azure Cache
 * Azure Data Factory
 * Azure Database for MySQL
 * Azure Database for PostgreSQL
 * Azure Database for MariaDB
-* Azure Express Route
+* Azure ExpressRoute
 * Azure Cosmos DB
 * Azure public IP addresses
 * Azure Synapse Analytics
 * SQL Servers
-* Storage Accounts
+* Storage accounts
 * Traffic Manager profiles
-* Virtual Machines
+* Virtual machines
 
-Azure Advisor also includes recommendations from Microsoft Defender for Cloud, which may include recommendations for other resource types.
+Advisor also includes recommendations from Microsoft Defender for Cloud, which may include recommendations for other resource types.
