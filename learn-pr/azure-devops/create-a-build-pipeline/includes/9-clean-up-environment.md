@@ -57,9 +57,9 @@ To delete the project:
 
     Your project is now deleted.
 
-#### [GitHub Codespaces](#tab/codespaces)
+## Delete your GitHub Codespace
 
-#### Delete your GitHub Codespace
+#### [GitHub Codespaces](#tab/codespaces)
 
 1. In your forked GitHub repository, select **Code**.
 
