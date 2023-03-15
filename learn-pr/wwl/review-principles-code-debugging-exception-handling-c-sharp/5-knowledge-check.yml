@@ -16,13 +16,13 @@ quiz:
     choices:
     - content: "A process to identify code syntax errors during the build process."
       isCorrect: false
-      explanation: "Incorrect. Syntax issues are normally exposed by IntelliSense and will be corrected before running the application."
+      explanation: "Incorrect. Syntax issues are normally exposed by IntelliSense and corrected before running the application."
     - content: "A process to isolate and fix issues in code logic."
       isCorrect: true
       explanation: "Correct. Code debugging involves isolating and fixing logic issues in code."
     - content: "A process to verify that code builds and runs without errors."
       isCorrect: false
-      explanation: "Incorrect. Developers will often have to debug code that runs without errors when the application include logic issues."
+      explanation: "Incorrect. Developers debug code that runs without errors. For example, when the application includes logic issues."
   - content: "What is a debugger?"
     choices:
     - content: "A software tool used to observe and control the execution flow of a program."
@@ -30,7 +30,7 @@ quiz:
       explanation: "Correct. A debugger is a software tool uses an analytical approach to observe and control the execution flow of a program."
     - content: "A program that generates code automatically based on user input."
       isCorrect: false
-      explanation: "Incorrect. Debuggers are used isolate logic issues in an application, not generate code."
+      explanation: "Incorrect. Debuggers are used isolate logic issues in an application. They are not used to generate code."
     - content: "A tool that helps developers write their code faster."
       isCorrect: false
       explanation: "Incorrect. Although code debuggers speed the debugging process and help to identify issues, they do not help with writing code."
@@ -38,21 +38,21 @@ quiz:
     choices:
     - content: "The program crashes and closes."
       isCorrect: false
-      explanation: "Incorrect. An exception will be throw when system error occurs. If the exception is caught and handled, execution will continue normally."
-    - content: "An exception is created and thrown by the .NET runtime."
+      explanation: "Incorrect. An exception wis throw when system error occurs. If the exception is caught and handled, execution continues normally."
+    - content: "The .NET runtime creates and throws an exception."
       isCorrect: true
       explanation: "Correct. The .NET runtime throws an exception when a C# application generates a system error."
     - content: "The error is silently ignored and the program continues to run."
       isCorrect: false
-      explanation: "Incorrect. The .NET runtime throws an exception and the application will be shut down if the exception isn't caught."
+      explanation: "Incorrect. The .NET runtime throws an exception and the application is shut down if the exception isn't caught."
   - content: "What is the purpose of catching an exception in C#?"
     choices:
-    - content: "To ignore errors that occur in a program."
+    - content: "To ignore the errors that occur in a program."
       isCorrect: false
       explanation: "Incorrect. Exceptions should be handled in code to correct error conditions if possible."
-    - content: "To generate additional errors in a program."
+    - content: "To generate other exceptions in a program."
       isCorrect: false
-      explanation: "Incorrect. Exceptions can be thrown when an issue or error is detected, but exceptions are not a tool for adding errors to an application."
+      explanation: "Incorrect. Exceptions can be thrown when an issue or error is detected, but the `catch` clause is not a tool for generating errors."
     - content: "To take corrective action when an error occurs in a program."
       isCorrect: true
       explanation: "Correct. The purpose of catching an exception is to take corrective action when an error occurs."
