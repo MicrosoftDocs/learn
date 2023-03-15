@@ -75,7 +75,7 @@ Next, you'll set up Codespaces so that you can build the website, work with sour
 
     :::image type="content" source="../media/3-select-azdo-codespace-option.png" alt-text="Screenshot of select Azure DevOps codespace as a configuration.":::
 
-1. Wait for your Codespace to build. When the build completes, you'll be redirected to an online version of Visual Studio Code. 
+1. Wait for your Codespace to build. When the build completes, you'll be redirected to an online version of Visual Studio Code. Your Codespace comes with a fresh installation of Visual Studio Code, similar to if you had just installed Visual Studio Code on your local machine. When the Codespace first starts, Visual Studio Code online may prompt you to provide certain configuration or ask you about preferences. You may choose the preferences that suit your Visua Studio Code usage style.
 
 ### Set the upstream remote
 
