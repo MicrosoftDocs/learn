@@ -52,7 +52,7 @@ quiz:
       explanation: "Correct. A conditional breakpoint is a special type of breakpoint that only triggers when a specified condition is met."
     - content: "A breakpoint that is triggered every time the code is run."
       isCorrect: false
-      explanation: "Incorrect. A conditional breakpoint will only be triggered when a specified condition is met."
+      explanation: "Incorrect. A conditional breakpoint is triggered when a specified condition is met."
     - content: "A breakpoint that is only visible in the editor and does not affect debugging."
       isCorrect: false
       explanation: "Incorrect. A conditional breakpoint affects debugging and pauses execution when the condition is met."
