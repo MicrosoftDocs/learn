@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/12/2022
+  ms.date: 03/15/2023
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -38,15 +38,15 @@ quiz:
       explanation: "That's correct. Audio and video files are unstructured data."
     - content: "A table within a relational database"
       isCorrect: false
-      explanation: "That's incorrect. Tables within a relational database are structured datasets that have pre-defined columns and data types."
+      explanation: "That's incorrect. Tables within a relational database are structured datasets that have predefined columns and data types."
   - content: "What is a data warehouse?"
     choices:
-    - content: "A non-relational database optimized for read and write operations"
+    - content: "A nonrelational database optimized for read and write operations"
       isCorrect: false
-      explanation: "That's incorrect. a database that is optimized for read and write operations is more likely to be used so support a line of business application."
+      explanation: "That's incorrect. a database that is optimized for read and write operations is more likely to be used to support a line of business application."
     - content: "A relational database optimized for read operations"
       isCorrect: true
       explanation: "That's correct. A data warehouse is a relational database in which the schema is optimized for queries that read data."
     - content: "A storage location for unstructured data files"
       isCorrect: false
-      explanation: "That's incorrect. Unstructured data files for analytical processing are usually stored in a data lake."
+      explanation: "That's incorrect. Unstructured data files for analytical processing are stored in a data lake."
