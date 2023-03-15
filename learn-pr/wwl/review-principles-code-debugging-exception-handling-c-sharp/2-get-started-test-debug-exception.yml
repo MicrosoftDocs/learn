@@ -36,7 +36,7 @@ quiz:
     - content: "Both developers and testers."
       isCorrect: true
       explanation: "Correct. Software developers and testers share the responsibility for code testing."
-  - content: "What happens if an exception is not managed in code?"
+  - content: "What happens if an exception isn't managed in code?"
     choices:
     - content: "The code continues to run without any issue."
       isCorrect: false
