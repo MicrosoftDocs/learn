@@ -4,44 +4,66 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/08/2023
+  ms.date: 03/15/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
-durationInMinutes: 3
+durationInMinutes: 4
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What **TBD**?"
+  - content: "What is code debugging?"
     choices:
-    - content: "A ."
+    - content: "A process to identify code syntax errors during the build process."
       isCorrect: false
-      explanation: "Incorrect. **Explanation TBD**."
-    - content: "B ."
-      isCorrect: false
-      explanation: "Incorrect. **Explanation TBD**."
-    - content: "C ."
+      explanation: "Incorrect. Syntax issues are normally exposed by IntelliSense and will be corrected before running the application."
+    - content: "A process to isolate and fix issues in code logic."
       isCorrect: true
-      explanation: "Correct! **Explanation TBD**."
-  - content: "What **TBD**?"
+      explanation: "Correct. Code debugging involves isolating and fixing logic issues in code."
+    - content: "A process to verify that code builds and runs without errors."
+      isCorrect: false
+      explanation: "Incorrect. Developers will often have to debug code that runs without errors when the application include logic issues."
+  - content: "What is a debugger?"
     choices:
-    - content: "A ."
-      isCorrect: false
-      explanation: "Incorrect. **Explanation TBD**."
-    - content: "B ."
-      isCorrect: false
-      explanation: "Incorrect. **Explanation TBD**."
-    - content: "C ."
+    - content: "A software tool used to observe and control the execution flow of a program."
       isCorrect: true
-      explanation: "Correct! **Explanation TBD**."
-  - content: "What **TBD**?"
+      explanation: "Correct. A debugger is a software tool uses an analytical approach to observe and control the execution flow of a program."
+    - content: "A program that generates code automatically based on user input."
+      isCorrect: false
+      explanation: "Incorrect. Debuggers are used isolate logic issues in an application, not generate code."
+    - content: "A tool that helps developers write their code faster."
+      isCorrect: false
+      explanation: "Incorrect. Although code debuggers speed the debugging process and help to identify issues, they do not help with writing code."
+  - content: "What happens when execution of a C# application results in a system error?"
     choices:
-    - content: "A ."
+    - content: "The program crashes and closes."
       isCorrect: false
-      explanation: "Incorrect. **Explanation TBD**."
-    - content: "B ."
-      isCorrect: false
-      explanation: "Incorrect. **Explanation TBD**."
-    - content: "C ."
+      explanation: "Incorrect. An exception will be throw when system error occurs. If the exception is caught and handled, execution will continue normally."
+    - content: "An exception is created and thrown by the .NET runtime."
       isCorrect: true
-      explanation: "Correct! **Explanation TBD**."
+      explanation: "Correct. The .NET runtime throws an exception when a C# application generates a system error."
+    - content: "The error is silently ignored and the program continues to run."
+      isCorrect: false
+      explanation: "Incorrect. The .NET runtime throws an exception and the application will be shut down if the exception isn't caught."
+  - content: "What is the purpose of catching an exception in C#?"
+    choices:
+    - content: "To ignore errors that occur in a program."
+      isCorrect: false
+      explanation: "Incorrect. Exceptions should be handled in code to correct error conditions if possible."
+    - content: "To generate additional errors in a program."
+      isCorrect: false
+      explanation: "Incorrect. Exceptions can be thrown when an issue or error is detected, but exceptions are not a tool for adding errors to an application."
+    - content: "To take corrective action when an error occurs in a program."
+      isCorrect: true
+      explanation: "Correct. The purpose of catching an exception is to take corrective action when an error occurs."
+  - content: "What is the relationship between the type of exception and the information it contains?"
+    choices:
+    - content: "The type of exception determines the information it contains."
+      isCorrect: true
+      explanation: "Correct. The type of exception determines the information it contains."
+    - content: "The type of exception and the information it contains are unrelated."
+      isCorrect: false
+      explanation: "Incorrect. Properties of the exception object contain information related to the exception type."
+    - content: "The information contained in an exception determines the type of exception."
+      isCorrect: false
+      explanation: "Incorrect. The exception type determines what information the exception contains, not the other way around."

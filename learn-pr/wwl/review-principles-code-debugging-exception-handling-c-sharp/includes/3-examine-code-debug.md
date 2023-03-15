@@ -1,5 +1,6 @@
 
 
+
 Every developer has to deal with code bugs, it's just a way of life for developers. Sometimes you can spot your bugs quickly. After all, you wrote the code, and besides, it feels pretty good to find and fix an issue quickly. Inevitably though, there will times when you find yourself searching for a bug that isn't quite so easy to spot.
 
 ## Code debugging process
@@ -33,3 +34,11 @@ Every debugger has its own set of features. The two most important features that
 - Observation of your program's state. For example, you can look at the value of your variables and function parameters at any point during your code execution.
 
 Mastering the use of a code debugger usage is an important skill. Unfortunately, it's a skill that developers often overlook. Effective use of a debugger helps you to be more efficient at hunting bugs in your code. Debuggers can also help you to understand how a program works.
+
+## Recap
+
+Here are a few important things to remember from this unit:
+
+- Code debugging is a crucial skill in the software development process that every developer learn.
+- The best approach to debugging your applications is to use a debugger, not reading your five times or adding `console.WriteLine()` throughout your code.
+- Debuggers enable you to pause your application, step through your code line-by-line, and observe the state of variables and function parameters.

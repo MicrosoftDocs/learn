@@ -1,5 +1,6 @@
 
 
+
 Every software developer needs to complete some level of testing and debugging when they develop their code, and exception handling is often required. But how are these three tasks related and when should they be implemented?
 
 ## Testing, debugging, and exception handling
@@ -61,3 +62,12 @@ Code debugging is most certainly a developer responsibility. In this code sample
 As noted above, errors that occur during the application runtime are referred to as exceptions. If an application generates an exception, and that exception is not managed in code, it can result in the application being shut down.
 
 Handling exceptions is definitely a responsibility of the developer. C# provides a way for you to "try" the code that you know might generate an exception, and a way for you to "catch" any exceptions that do occur.
+
+## Recap
+
+Here are a few important things to remember from this unit:
+
+- Testing, debugging, and exception handling are all important tasks for software developers.
+- Testing can be categorized into functional and non-functional testing, and developers are expected to perform some level of testing.
+- Code debugging is the process of isolating issues and identifying ways to fix them, and it is a developer responsibility.
+- Exception handling is the process of managing errors that occur during runtime, and developers are responsible for handling exceptions by using "try" and "catch" statements in their code.

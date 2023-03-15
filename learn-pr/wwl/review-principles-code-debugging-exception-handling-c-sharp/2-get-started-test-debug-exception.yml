@@ -4,10 +4,46 @@ title: Get started with testing, debugging, and exception handling
 metadata:
   title: Get started with testing, debugging, and exception handling
   description: "Get started with testing, debugging, and exception handling"
-  ms.date: 03/08/2023
+  ms.date: 03/15/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
-durationInMinutes: 3
+durationInMinutes: 7
 content: |
   [!include[](includes/2-get-started-test-debug-exception.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is code debugging?"
+    choices:
+    - content: "A process to identify code syntax errors during the build process."
+      isCorrect: false
+      explanation: "Incorrect. Syntax issues are normally exposed by IntelliSense and will be corrected before running the application."
+    - content: "A process to isolate and fix issues in code logic."
+      isCorrect: true
+      explanation: "Correct. Code debugging involves isolating and fixing logic issues in code."
+    - content: "A process to verify that code builds and runs without errors."
+      isCorrect: false
+      explanation: "Incorrect. Developers will often have to debug code that runs without errors when the application include logic issues."
+  - content: "Who is responsible for software testing?"
+    choices:
+    - content: "Software developers."
+      isCorrect: false
+      explanation: "Incorrect. Although software developers have some responsibility for code testing, they share the responsibility with testers."
+    - content: "Software testers."
+      isCorrect: false
+      explanation: "Incorrect. Although software testers are responsible for the majority of code testing, they share the responsibility with developers."
+    - content: "Both developers and testers."
+      isCorrect: true
+      explanation: "Correct. Software developers and testers share the responsibility for code testing."
+  - content: "What happens if an exception is not managed in code?"
+    choices:
+    - content: "The code continues to run without any issue."
+      isCorrect: false
+      explanation: "Incorrect. The runtime will display an error message and the application may be terminated."
+    - content: "The application generates an error message and closes."
+      isCorrect: true
+      explanation: "Correct. If an exception isn't managed in code, the runtime will display an error message and the application may be terminated."
+    - content: "The code syntax errors are displayed to the user."
+      isCorrect: false
+      explanation: "Incorrect. Syntax errors are caught during the build process and will not result in a runtime exception."
