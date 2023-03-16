@@ -49,7 +49,7 @@ Organizations that have an existing on-premises HPC solution can connect that so
 
 The following image illustrates bursting into the cloud.
 
-:::image type="content" source="../media/image9.png" alt-text="On premises HPC deployment with job queue using worker nodes on-premises and as required in Azure." lightbox="../media/image9.png":::
+:::image type="content" source="../media/5-burst-cloud.png" alt-text="Diagram showing on premises HPC deployment with job queue using worker nodes on-premises and as required in Azure." border="false" lightbox="../media/5-burst-cloud.png":::
 
 Being able to burst HPC calculations into the cloud allows organizations to maintain a minimum amount of hardware for common HPC tasks on-premises. Organizations can then deploy extra nodes as necessary if the benefit of the calculation justifies the expense.
 
@@ -66,7 +66,7 @@ Azure Arc enabled Kubernetes allows you to attach and configure Kubernetes clust
 
 Azure Arc enabled Kubernetes will work with any Cloud Native Computing Foundation (CNCF) certified Kubernetes cluster. Azure Arc enabled Kubernetes allows your organization to manage Kubernetes clusters both on-premises and in the cloud in a hybrid environment, as shown in the following image.
 
-:::image type="content" source="../media/image10.png" alt-text=" Hybrid Kubernetes clusters managed through Azure Monitor, Azure Policy, and Azure Arc enabled Kubernetes clusters." lightbox="../media/image10.png":::
+:::image type="content" source="../media/5-manage-clusters-hybrid.png" alt-text="Diagram showing hybrid Kubernetes clusters managed through Azure Monitor, Azure Policy, and Azure Arc enabled Kubernetes clusters." border="false" lightbox="../media/5-manage-clusters-hybrid.png":::
 
 The benefit for Tailwind Traders of using Azure Arc for Kubernetes is that it allows the company to manage Kubernetes clusters by using a single set of tools. It also allows those Kubernetes clusters to be configured and secured in a consistent manner across the hybrid environment.
 
@@ -86,6 +86,6 @@ Azure Site Recovery allows organizations to replace disaster recovery sites by r
 
 The following image shows a basic Azure Site Recovery configuration.
 
-:::image type="content" source="../media/image11.png" alt-text="Azure Site Recovery configuration with on-premises VMs replicated to a recovery vault in Azure." lightbox="../media/image11.png":::
+:::image type="content" source="../media/5-recovery-configuration.png" alt-text="Diagram showing Azure Site Recovery configuration with on-premises VMs replicated to a recovery vault in Azure." border="false" lightbox="../media/5-recovery-configuration.png":::
 
 Azure Site Recovery allows Tailwind Traders to move from using the Melbourne and Sydney datacenters as disaster recovery sites in its on-premises-only implementation, to using Azure as a disaster recovery site for a large number of workloads as the deployment becomes hybrid. The challenge for Tailwind Traders is that some workloads have physical or other dependencies that have blocked them from being migrated to Azure. The company won't be able to use Azure as a disaster-recovery site for the same reasons.

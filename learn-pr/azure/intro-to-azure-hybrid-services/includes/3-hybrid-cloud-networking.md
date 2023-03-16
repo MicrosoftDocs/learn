@@ -10,7 +10,7 @@ An Azure VPN gateway allows you to connect your on-premises network to Azure by 
 
 The following image shows a connection between an on-premises network's perimeter gateway device and a VPN gateway on an Azure virtual network. It depicts the connection between an Azure Stack device and a VPN gateway.
 
-:::image type="content" source="../media/image1.png" alt-text="Diagram of a hybrid network that spans on-premises and Azure infrastructures." lightbox="../media/image1.png":::
+:::image type="content" source="../media/3-vpn-gateway-virtual-network-diagram.png" alt-text="Diagram of a hybrid network that spans on-premises and Azure infrastructures." border="false" lightbox="../media/3-vpn-gateway-virtual-network-diagram.png":::
 
 In the Tailwind Traders example, the company might use Azure VPN gateways to allow connections from smaller branch sites that don't need the type of dedicated link that an Azure ExpressRoute connection provides. The primary drawback of Azure VPN gateways is that they rely on the internet service provider's (ISP's) internet connection. If your ISP has an outage, then VPN connections can't be established. Similarly, if your ISP has substantial congestion, the speed of the VPN connection between an on-premises location and Azure might be degraded. 
 
@@ -24,7 +24,7 @@ Unlike a VPN gateway, the equipment that provides this connection is managed by 
 
 The following image shows the ExpressRoute connection between the on-premises environment and workloads running in Azure. The ExpressRoute provider manages the ExpressRoute circuit and local edge routers.
 
-:::image type="content" source="../media/image2.png" alt-text="Diagram of a hybrid network architecture using Azure ExpressRoute." lightbox="../media/image2.png":::
+:::image type="content" source="../media/3-azure-expressroute-connection-diagram.png" alt-text="Diagram of a hybrid network architecture using Azure ExpressRoute." border="false" lightbox="../media/3-expressroute-connection-diagram.png":::
 
 In addition to providing a dedicated bandwidth connection between the on-premises environment and Azure, ExpressRoute allows an organization to ensure that sensitive traffic doesn't pass across the public internet. This is important in jurisdictions where governance requirements forbid the transmission of certain types of information across the internet.
 
@@ -34,11 +34,13 @@ In the example case study, Tailwind Traders might implement an ExpressRoute conn
 
 When you're implementing a hybrid cloud, it's necessary to ensure that on-premises workloads can resolve cloud workloads' addresses and that cloud workloads can resolve on-premises workloads' addresses. Domain Name System (DNS) deployments in a hybrid cloud usually require DNS servers on-premises and in Azure. In addition, DNS zone transfers must be configured between on-premises and cloud. An alternative is to configure DNS forwarders if the on-premises DNS zone is separate from the DNS zone associated with workloads running in Azure. 
 
-The following image shows DNS servers on-premises replicating DNS information to DNS servers running in Azure. It's necessary to deploy a virtual machine (VM) as a DNS server in Azure because Azure DNS doesn't support zone replication. In the image, on-premises DNS connects to a hub subscription with DNS servers in VMs. Other Azure subscriptions connect to the hub subscription.
+The following image shows DNS servers on-premises replicating DNS information to DNS servers running in Azure. In this scenario, a virtual machine (VM) is deployed as a DNS server in Azure. In the image, on-premises DNS connects to a hub subscription with DNS servers in VMs. Other Azure subscriptions connect to the hub subscription.
 
-:::image type="content" source="../media/image3.png" alt-text="Diagram that shows a hybrid DNS architecture." lightbox="../media/image3.png":::
+:::image type="content" source="../media/3-hybrid-dns-architecture.png" alt-text="Diagram that shows a hybrid DNS architecture." border="false" lightbox="../media/3-hybrid-dns-architecture.png":::
 
-For the Tailwind Traders hybrid cloud deployment, it's likely that a VM will need to be deployed on a shared services subnet in Azure that hosts the DNS role. The DNS service on this VM can be configured to replicate DNS zone data with on-premises DNS servers. This would ensure that all Tailwind Traders workloads running in Azure can resolve the DNS names of hosts on the Tailwind Traders internal network. It would also ensure that all Tailwind Traders internal network hosts can resolve the DNS names of workloads running in the cloud.
+Alternatively, Azure DNS Private Resolver is a service that enables you to query Azure DNS private zones from an on-premises environment and vice versa without deploying VM based DNS servers. The private resolver service is fully managed and has built-in high availability features.
+
+Tailwind Traders can use Azure DNS Private Resolver to ensure that all their workloads running in Azure can resolve the DNS names of hosts on the Tailwind Traders internal network. It would also ensure that all Tailwind Traders internal network hosts can resolve the DNS names of workloads running in the cloud.
 
 ## What is Azure Virtual WAN?
 
@@ -48,7 +50,6 @@ Traditionally, you might have a network topology where each branch office has a 
 
 The following image shows an Azure Virtual WAN topology.
 
-:::image type="content" source="../media/image4.png" alt-text="Azure Virtual WAN topology with multiple sites connected to each other in a hub and spoke topology through Azure." lightbox="../media/image4.png":::
+:::image type="content" source="../media/3-virtual-wan-topology.png" alt-text="Diagram the shows Azure Virtual WAN topology with multiple sites connected to each other in a hub and spoke topology through Azure." border="false" lightbox="../media/3-virtual-wan-topology.png":::
 
-Azure Virtual WAN enables Tailwind Traders to move away from using VPN connections to connect branch offices and the datacenter locations in Sydney, Melbourne, and Auckland. It provides a topology where each
-branch office and datacenter have a VPN or ExpressRoute connection to Azure. The Azure Virtual WAN service manages the routing of traffic between locations.
+Azure Virtual WAN enables Tailwind Traders to move away from using VPN connections to connect branch offices and the datacenter locations in Sydney, Melbourne, and Auckland. It provides a topology where each branch office and datacenter have a VPN or ExpressRoute connection to Azure. The Azure Virtual WAN service manages the routing of traffic between locations.

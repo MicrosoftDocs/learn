@@ -32,7 +32,7 @@ Hybrid Connections uses a relay agent that you deploy in a location where the ag
 
 The following image shows a hybrid connection between a web app running in Azure and a database endpoint running on-premises.
 
-:::image type="content" source="../media/image12.png" alt-text="Hybrid connection between a web app in Azure and a database endpoint on-premises." lightbox="../media/image12.png":::
+:::image type="content" source="../media/6-connection.png" alt-text="Diagram showing hybrid connection between a web app in Azure and a database endpoint on-premises." border="false" lightbox="../media/6-connection.png":::
 
 Hybrid Connections has the following functionality:
 
@@ -71,7 +71,7 @@ Application Proxy functions in the following way:
 
 The following image shows this process:
 
-:::image type="content" source="../media/image13.png" alt-text=" Application Proxy functionality with the user outside the organizational network making a connection through Application Proxy to an on-premises application." lightbox="../media/image13.png":::
+:::image type="content" source="../media/6-application-proxy-process-diagram.png" alt-text="Diagram showing Application Proxy functionality with the user outside the organizational network making a connection through Application Proxy to an on-premises application." border="false" lightbox="../media/6-application-proxy-process-diagram.png":::
 
 Users of internal networks that allow direct connection to applications should avoid using Application Proxy.
 

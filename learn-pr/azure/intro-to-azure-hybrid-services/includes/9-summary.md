@@ -8,31 +8,32 @@ You learned about what hybrid cloud entails and the options for networking on-pr
 
 You can learn more by referencing the following documentation:
 
-- [What is VPN Gateway?][vpn-gateway-about-vpngateways]
+- [What is Azure VPN Gateway?][vpn-gateway-about-vpngateways]
 - [What is Azure ExpressRoute?][expressroute-introduction]
+- [What is Azure DNS Private Resolver?][dns-private-resolver-overview]
 - [What is Azure Virtual WAN?][virtual-wan-about]
 - [What is Azure AD Connect?][whatis-azure-ad-connect]
 - [What is Azure Active Directory Domain Services?][adds-overview]
-- [What is Azure Arc enabled servers (preview)?][azure-arc-servers-overview]
+- [What is Azure Arc enabled servers?][azure-arc-servers-overview]
 - [Azure Stack HCI solution overview][azure-stack-hci-overview]
 - [High-performance computing (HPC) on Azure][high-performance-computing]
-- [What is Azure Arc enabled Kubernetes Preview?][kubernetes-overview]
+- [What is Azure Arc enabled Kubernetes?][kubernetes-overview]
 - [Bring Azure data services to your infrastructure with Azure Arc][bring-azure-data-services-to-your-infrastructure-with-azure-arc]
 - [About Site Recovery][site-recovery-overview]
 - [What is Azure Relay?][azure-relay-relay-what-is-it]
 - [Azure App Service Hybrid Connections][app-service-hybrid-connections]
 - [Remote access to on-premises applications through Azure AD Application Proxy][application-proxy]
 - [Kerberos Constrained Delegation for single sign-on to your apps with Application Proxy][application-proxy-configure-single-sign-on-with-kcd]
-- [Header-based authentication for single sign-on with Application Proxy and PingAccess][application-proxy-configure-single-sign-on-with-ping-access]
+- [Header-based single sign-on for on-premises apps with Azure AD App Proxy][application-proxy-configure-single-sign-on-with-headers]
 - [Publish Remote Desktop with Azure AD Application Proxy][application-proxy-integrate-with-remote-desktop-services]
-- [Create an Azure file share][storage-how-to-create-file-share]
-- [Deploy Azure File Sync][storage-sync-files-deployment-guide]
+- [Create an SMB Azure file share][storage-how-to-create-file-share]
+- [Deploy Azure File Sync][file-sync-deployment-guide]
 - [Stretch Database][stretch-database]
-- [Microsoft Defender for Cloud documentation][security-center]
+- [Microsoft Defender for Cloud documentation][defender-for-cloud]
 - [Microsoft Sentinel documentation][azure-sentinel]
-- [Update Management overview][update-mgmt-overview]
+- [Update Management overview][overview]
 
-You can also learn more by reviewing the following Microsoft Learn modules:
+You can also learn more by reviewing the following Microsoft Training modules:
 
 - [Design a hybrid network architecture on Azure][design-a-hybrid-network-architecture]
 - [Expose hybrid services securely with Azure Relay][expose-hybrid-services-with-azure-relay]
@@ -45,6 +46,7 @@ You can also learn more by reviewing the following Microsoft Learn modules:
 
 [vpn-gateway-about-vpngateways]: /azure/vpn-gateway/vpn-gateway-about-vpngateways?azure-portal=true
 [expressroute-introduction]: /azure/expressroute/expressroute-introduction?azure-portal=true
+[dns-private-resolver-overview]: /azure/dns/dns-private-resolver-overview?azure-portal=true
 [virtual-wan-about]: /azure/virtual-wan/virtual-wan-about?azure-portal=true
 [whatis-azure-ad-connect]: /azure/active-directory/hybrid/whatis-azure-ad-connect?azure-portal=true
 [adds-overview]: /azure/active-directory-domain-services/overview?azure-portal=true
@@ -56,16 +58,16 @@ You can also learn more by reviewing the following Microsoft Learn modules:
 [site-recovery-overview]: /azure/site-recovery/site-recovery-overview?azure-portal=true
 [azure-relay-relay-what-is-it]: /azure/azure-relay/relay-what-is-it?azure-portal=true
 [app-service-hybrid-connections]: /azure/app-service/app-service-hybrid-connections?azure-portal=true
-[application-proxy]: /azure/active-directory/manage-apps/application-proxy?azure-portal=true
-[application-proxy-configure-single-sign-on-with-kcd]: /azure/active-directory/manage-apps/application-proxy-configure-single-sign-on-with-kcd?azure-portal=true
-[application-proxy-configure-single-sign-on-with-ping-access]: /azure/active-directory/manage-apps/application-proxy-configure-single-sign-on-with-ping-access?azure-portal=true
-[application-proxy-integrate-with-remote-desktop-services]: /azure/active-directory/manage-apps/application-proxy-integrate-with-remote-desktop-services?azure-portal=true
+[application-proxy]: /azure/active-directory/app-proxy/application-proxy?azure-portal=true
+[application-proxy-configure-single-sign-on-with-kcd]: /azure/active-directory/app-proxy/application-proxy-configure-single-sign-on-with-kcd?azure-portal=true
+[application-proxy-configure-single-sign-on-with-headers]: /azure/active-directory/app-proxy/application-proxy-configure-single-sign-on-with-headers?azure-portal=true
+[application-proxy-integrate-with-remote-desktop-services]: /azure/active-directory/app-proxy/application-proxy-integrate-with-remote-desktop-services?azure-portal=true
 [storage-how-to-create-file-share]: /azure/storage/files/storage-how-to-create-file-share?azure-portal=true
-[storage-sync-files-deployment-guide]: /azure/storage/files/storage-sync-files-deployment-guide?azure-portal=true
+[file-sync-deployment-guide]: /azure/storage/file-sync/file-sync-deployment-guide?azure-portal=true
 [stretch-database]: /sql/sql-server/stretch-database/stretch-database?azure-portal=true
-[security-center]: /azure/security-center/?azure-portal=true
+[defender-for-cloud]: /azure/defender-for-cloud/?azure-portal=true
 [azure-sentinel]: /azure/sentinel?azure-portal=true
-[update-mgmt-overview]: /azure/automation/update-management/update-mgmt-overview?azure-portal=true
+[overview]: /azure/automation/update-management/overview?azure-portal=true
 [design-a-hybrid-network-architecture]: /training/modules/design-a-hybrid-network-architecture?azure-portal=true
 [expose-hybrid-services-with-azure-relay]: /training/modules/expose-hybrid-services-with-azure-relay?azure-portal=true
 [manage-hybrid-workloads-azure-arc]: /training/modules/manage-hybrid-workloads-azure-arc?azure-portal=true
