@@ -3,7 +3,7 @@ uid: learn.permissions-management.intro-to-entra-permissions-management
 metadata:
   title: Introduction to Entra Permissions Management
   description: Permissions Management is a CIEM solution that provides complete visibility into permissions that are assigned to all identities. 
-  ms.date: 01/03/2023
+  ms.date: 03/15/2023
   author: jenniferf-skc
   ms.author: jfields
   ms.topic: interactive-tutorial
@@ -23,6 +23,8 @@ roles:
 - identity-access-admin 
 products:
 - active-directory
+- entra-permissions-management
+- entra
 subjects:
 - classification-analysis
 units:
@@ -35,3 +37,4 @@ units:
 - learn.permissions-management.intro-to-entra-permissions-management.summary
 badge:
   uid: learn.permissions-management.intro-to-entra-permissions-management.badge
+
