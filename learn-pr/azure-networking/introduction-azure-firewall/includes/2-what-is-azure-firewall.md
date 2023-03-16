@@ -27,7 +27,7 @@ All traffic to and from the internet is denied by default. Traffic is only allow
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWCoAv]
 
-### Key features of Azure Firewall Standard
+#### Key features of Azure Firewall Standard
 
 The following table lists key features of Azure Firewall Standard.
 
@@ -46,13 +46,13 @@ The following table lists key features of Azure Firewall Standard.
 |Web categories|Web categories lets administrators allow or deny user access to web site categories such as gambling websites, social media websites, and others.|
 |Monitoring     |Azure Firewall logs all incoming and outgoing network traffic, and you can analyze the resulting logs using Azure Monitor, Power BI, Excel, and other tools.         |
 
-## What is Azure Firewall Premium?
+### What is Azure Firewall Premium?
 
 Azure Firewall Premium provides advanced threat protection that meets the needs of highly sensitive and regulated environments, such as the payment and healthcare industries.
 
 :::image type="content" source="../media/2-firewall-premium.png" alt-text="Firewall Premium architecture":::
 
-### Key features of Azure Firewall Premium
+#### Key features of Azure Firewall Premium
 
 The following table lists key features of Azure Firewall Premium.
 
@@ -62,6 +62,19 @@ The following table lists key features of Azure Firewall Premium.
 |IDPS|A network intrusion detection and prevention system (IDPS) allows you to monitor network activities for malicious activity, log information about this activity, report it, and optionally attempt to block it.|
 |URL filtering|Extends Azure Firewall’s FQDN filtering capability to consider an entire URL. For example, `www.contoso.com/a/c` instead of `www.contoso.com`.
 |Web categories|Administrators can allow or deny user access to website categories such as gambling websites, social media websites, and others. Web categories can be more fine-tuned in Azure Firewall Premium.|
+
+### What us Azure Firewall Basic?
+
+Azure Firewall Basic is intended for small and medium size (SMB) customers to secure their Azure cloud 
+environments. It provides the essential protection SMB customers need at an affordable price point.
+
+:::image type="content" source="../media/2-firewall-basic-diagram.png" alt-text="Diagram showing Firewall Basic.":::
+
+Azure Firewall Basic is similar to Firewall Standard, but has the following main limitations:
+
+- Supports Threat Intel *alert mode* only.
+- Fixed scale unit to run the service on two virtual machine backend instances.
+- Recommended for environments with an estimated throughput of 250 Mbps.
 
 ## Overview of Azure Firewall Manager
 
