@@ -3,7 +3,7 @@ uid: learn.monitor-manage-device-with-iotcentral.define-coffee-machine-device-si
 title: Define the coffee machine device simulator
 metadata:
   title: Define the coffee machine device simulator
-  description: This content is a part of Build your first IoT Central application to manage your coffee machines
+  description: This content is a part of Build your first Azure IoT Central application to manage your coffee machines
   ms.date: 16/13/2023
   author: asergaz
   ms.author: sergaz
