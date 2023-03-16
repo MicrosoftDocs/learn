@@ -21,7 +21,7 @@ quiz:
       explanation: "Correct. A debugger is a software tool uses an analytical approach to observe and control the execution flow of a program."
     - content: "A program that generates code automatically based on user input."
       isCorrect: false
-      explanation: "Incorrect. Debuggers are used isolate logic issues in an application, not generate code."
+      explanation: "Incorrect. Debuggers are used isolate logic issues in an application. Debuggers are not used to generate code."
     - content: "A tool that helps developers write their code faster."
       isCorrect: false
       explanation: "Incorrect. Although code debuggers speed the debugging process and help to identify issues, they do not help with writing code."
@@ -54,7 +54,7 @@ quiz:
       explanation: "Incorrect. Running the application with different data can take a long time and there is no guarantee that the new data will expose the issue."
     - content: "Breadcrumbing a few `Console.WriteLine(\"here\")` messages in your code."
       isCorrect: false
-      explanation: "Incorrect. Adding `Console.WriteLine()` messages to your application requires takes more time than using a debugger and requires code clean-up if it actually helps the developer to identify the issue."
+      explanation: "Incorrect. Adding `Console.WriteLine()` messages to your application takes more time than using a debugger and requires code clean-up. Breadcrumbing isn't a good approach."
     - content: "Using a debugger."
       isCorrect: true
       explanation: "Correct. Using a debugger is the best way to find the root cause of a bug."

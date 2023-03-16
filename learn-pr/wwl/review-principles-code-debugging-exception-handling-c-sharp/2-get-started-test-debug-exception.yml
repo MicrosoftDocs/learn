@@ -18,13 +18,13 @@ quiz:
     choices:
     - content: "A process to identify code syntax errors during the build process."
       isCorrect: false
-      explanation: "Incorrect. Syntax issues are normally exposed by IntelliSense and will be corrected before running the application."
+      explanation: "Incorrect. Syntax issues are normally exposed by IntelliSense and are corrected before running the application."
     - content: "A process to isolate and fix issues in code logic."
       isCorrect: true
       explanation: "Correct. Code debugging involves isolating and fixing logic issues in code."
     - content: "A process to verify that code builds and runs without errors."
       isCorrect: false
-      explanation: "Incorrect. Developers will often have to debug code that runs without errors when the application include logic issues."
+      explanation: "Incorrect. Developers debug code that runs without errors. For example, code debugging is used to identify and fix logic issues."
   - content: "Who is responsible for software testing?"
     choices:
     - content: "Software developers."
@@ -40,10 +40,10 @@ quiz:
     choices:
     - content: "The code continues to run without any issue."
       isCorrect: false
-      explanation: "Incorrect. The runtime will display an error message and the application may be terminated."
+      explanation: "Incorrect. The runtime will display an error message, and the application may be terminated."
     - content: "The application generates an error message and closes."
       isCorrect: true
       explanation: "Correct. If an exception isn't managed in code, the runtime will display an error message and the application may be terminated."
     - content: "The code syntax errors are displayed to the user."
       isCorrect: false
-      explanation: "Incorrect. Syntax errors are caught during the build process and will not result in a runtime exception."
+      explanation: "Incorrect. Syntax errors are caught during the build process. Syntax errors won't result in a runtime exception."

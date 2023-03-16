@@ -30,9 +30,9 @@ The second sentence of the definition says "Exceptions are thrown by code that e
 
 After evaluating that second sentence of the definition, you know the following:
 
-- an exception gets created at runtime when your code produces an error.
-- the exception can be treated like a variable that has some extra capabilities.
-- you can write code that accesses the exception and takes corrective action.
+- An exception gets created at runtime when your code produces an error.
+- The exception can be treated like a variable that has some extra capabilities.
+- You can write code that accesses the exception and takes corrective action.
 
 The remaining portion of the definition tells you that if the .NET runtime detects an error, it generates the exception. The exception that's generated contains information about the error that occurred. Your code can catch an exception and correct the issue using the information stored in the exception.
 

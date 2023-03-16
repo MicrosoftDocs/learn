@@ -40,7 +40,7 @@ quiz:
     choices:
     - content: "The program crashes and closes."
       isCorrect: false
-      explanation: "Incorrect. An exception will be throw when system error occurs. If the exception is caught and handled, execution will continue normally."
+      explanation: "Incorrect. An exception is throw when a system error occurs. If the exception is caught and handled, execution will continue normally."
     - content: "An exception is created and thrown by the .NET runtime."
       isCorrect: true
       explanation: "Correct. The .NET runtime throws an exception when a C# application generates a system error."
