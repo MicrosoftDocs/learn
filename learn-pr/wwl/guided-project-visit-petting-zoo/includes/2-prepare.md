@@ -1,19 +1,19 @@
 
 
-You'll be using Visual Studio Code to develop an application that relies on different methods to perform a task. Some methods will take optional parameters and return data. Here, you'll find the overall goals of the project and how you'll build and test your application. You'll also setup your development environment using some Starter code.
+You'll be using Visual Studio Code to develop an application that relies on different methods to perform a task. Some methods use optional parameters and return values. Here, you'll find the overall goals of the project and how you'll build and test your application. You'll also set up your development environment using some Starter code.
 
 ## Project overview
 
-You're developing an application for the Contoso Petting Zoo that will coordinate school visits. The Contoso Petting Zoo is home to 18 different species of animals. At the zoo, visiting students are assigned to groups, and each group has a set of animals assigned to it. After visiting their set of animals, the students will rotate groups until they've seen all the animals at the petting zoo. 
+You're developing an application for the Contoso Petting Zoo that coordinates school visits. The Contoso Petting Zoo is home to 18 different species of animals. At the zoo, visiting students are assigned to groups, and each group has a set of animals assigned to it. After visiting their set of animals, the students will rotate groups until they've seen all the animals at the petting zoo. 
 
 By default, the students are divided into 6 groups. However, there are some classes that have a small or large number of students, so the number of groups must be adjusted accordingly. The animals should also be randomly assigned to each group, so as to keep the experience unique.
 
 The design specification for the Contoso Petting Zoo application is as follows:
 
-- There will be three visiting schools
-    - School A will have 6 visiting groups (the default number)
-    - School B will have 3 visiting groups
-    - School C will have 2 visiting groups
+- There are currently three visiting schools
+    - School A has six visiting groups (the default number)
+    - School B has three visiting groups
+    - School C has two visiting groups
 
 - For each visiting school, perform the following tasks
     - Randomize the animals
@@ -27,7 +27,7 @@ Use the following steps to prepare for the Guided project exercises.
 
 ### Prepare your coding environment
 
-This module includes hands-on activities that guide you through the process of building and running demonstration code. You are encouraged to complete these activities using Visual Studio Code as your development environment. Using Visual Studio Code for these activities will help you to become more comfortable writing and running code in a developer environment that's used by professionals worldwide.
+This module includes hands-on activities that guide you through the process of building and running demonstration code. You're encouraged to complete these activities using Visual Studio Code as your development environment. Using Visual Studio Code for these activities will help you to become more comfortable writing and running code in a developer environment that's used by professionals worldwide.
 
 1. Open Visual Studio Code.
 
@@ -52,7 +52,7 @@ This module includes hands-on activities that guide you through the process of b
     ```
 
     > [!NOTE]
-    > If you are working on your own PC rather than in a sandbox or hosted environment and you have completed other Microsoft Learn modules in this C# series, you may have already created a project folder for code samples. If that's the case, you can skip over the next step, which is used to create a console app in the TestProject folder.
+    > If you're working on your own PC rather than in a sandbox or hosted environment and you have completed other Microsoft Learn modules in this C# series, you may have already created a project folder for code samples. If that's the case, you can skip over the next step, which is used to create a console app in the TestProject folder.
 
 1. At the Terminal command prompt, to create a new console application in a specified folder, type **dotnet new console -o ./CsharpProjects/TestProject** and then press Enter.
 

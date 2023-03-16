@@ -83,7 +83,7 @@ In this step, you'll define the method to display the results of the animal grou
     }
     ```
 
-    With this code, you are able to perform the same 4 tasks for each school. You also set `groups` to the default value of `6`. Next, you'll update your method to use the input values.
+    With this code, you're able to perform the same tasks for each school. You also set `groups` to the default value of `6`. Next, you'll update your method to use the input values.
 
 1. Update your method with the following code:
 
@@ -109,9 +109,9 @@ In this step, you'll define the method to display the results of the animal grou
 
 ## Check your work
 
-In this task, you will run your application from the Integrated Terminal and verify your code is working correctly. Let's get started.
+In this task, you'll run your application from the Integrated Terminal and verify your code is working correctly. Let's get started.
 
-1. Compare your code to the following to ensure it is correct:
+1. Compare your code to the following to ensure it's correct:
 
     ```c#
     using System;
@@ -206,6 +206,6 @@ In this task, you will run your application from the Integrated Terminal and ver
     Group 2: iguanas  capybaras  chickens  emus  tortoises  geese  ponies  alpacas  llamas
     ```
 
-    You should check that School A has 6 groups, School B has 3 groups, and School C has 2 groups. The order of the animals should be randomized for each school.
+    You should check that School A has six groups, School B has three groups, and School C has two groups. The order of the animals should be randomized for each school.
     
     If your code produces unexpected errors, you'll need to review your code to find your error and make updates. Run the code again to see if you've fixed the problem. Continue updating and running your code until your code produces the expected results.

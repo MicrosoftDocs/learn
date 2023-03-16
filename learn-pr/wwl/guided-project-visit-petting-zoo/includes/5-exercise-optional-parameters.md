@@ -1,10 +1,10 @@
 
 
-In this step, you'll develop the code to complete another sub-task which is to assign the petting zoo animals to groups. Recall that you referenced a method `AssignGroup()` in your pseudo-code. Let's get started!
+In this step, you'll develop the code to complete another subtask, which is to assign the petting zoo animals to groups. Recall that you referenced a method `AssignGroup()` in your pseudo-code. Let's get started!
 
 ## Develop your method
 
-In this task, you'll complete a method that will assign the petting zoo animals to groups. You'll use what you learned about method return types and parameters to create your method. Let's get started!
+In this task, you'll complete a method that assigns the petting zoo animals to groups. You'll use what you learned about method return types and parameters to create your method. Let's get started!
 
 1. Enter a new blank code line, then define the `assignGroups` method by entering the following code.
 
@@ -15,7 +15,7 @@ In this task, you'll complete a method that will assign the petting zoo animals 
     }
     ```
 
-    Remember that you decided this method would return a 2D array. The number of groups can also change depending on the size of the visiting school. However, there is a default group size of `6`, so you should make this parameter optional.
+    Remember that you decided this method would return a 2D array. The number of groups can also change depending on the size of the visiting school. However, there's a default group size of `6`, so you should make this parameter optional.
 
 1. Change `groups` to an optional parameter by updating the method to the following code:
 
@@ -39,9 +39,9 @@ In this task, you'll complete a method that will assign the petting zoo animals 
     }
     ```
 
-    Since your method specifies a return value, you'll start your method definition by creating a value to return. This will allow us to continue adding logic without compile-time errors.
+    Since your method specifies a return value, you start your method definition by creating a value to return. This allows you to continue adding logic without compile-time errors.
 
-    Notice that you used `[groups, pettingZoo.Length/groups]` to define the array size. `groups` represents the number of animal groups you want to create. `pettingZoo.Length/groups` reflects how many animals will be assigned to each group. For example, since `pettingZoo` is a fixed array of 18 elements, the 2D array size for School A will be `[6,3]`.
+    Notice that you used `[groups, pettingZoo.Length/groups]` to define the array size. `groups` represents the number of animal groups you want to create. `pettingZoo.Length/groups` reflects how many animals are assigned to each group. For example, since `pettingZoo` is a fixed array of 18 elements, the 2D array size for School A is `[6,3]`.
 
     Next, you'll assign the animals to each group.
 
@@ -80,7 +80,7 @@ In this task, you'll complete a method that will assign the petting zoo animals 
     }
     ```
 
-    In this code, you define `start` to represent the starting position of `pettingZoo`. Using this marker allows us to navigate through the `pettingZoo` array one element at a time even though the for-loops have different iterations.
+    In this code, you define `start` to represent the starting position of `pettingZoo`. Using this marker allows you to navigate through the `pettingZoo` array one element at a time even though the for-loops have different iterations.
 
     Now your method assigns the petting zoo animals to the designated number of groups. Now you can uncomment your call to `AssignGroup`.
 
@@ -90,9 +90,9 @@ In this task, you'll complete a method that will assign the petting zoo animals 
 
 ## Check your work
 
-In this task, you will run your application from the Integrated Terminal and verify your code is working correctly. Let's get started.
+In this task, you'll run your application from the Integrated Terminal and verify your code is working correctly. Let's get started.
 
-1. Compare your code to the following:
+1. Compare your code to the following to ensure it's correct:
 
     ```c#
     using System;
