@@ -2,13 +2,13 @@
 uid: learn.wwl.administer-endpoint-applications
 metadata:
   title: MD-102 Administer endpoint applications
-  description: "In this module, you will be introduced to managing apps on Intune managed devices. The module will then conclude with an overview of how to use IE Mode with Microsoft Edge."
-  ms.date: 03/15/2023
+  description: "In this module, you are introduced to managing apps on Intune managed devices. The module will then conclude with an overview of how to use IE Mode with Microsoft Edge."
+  ms.date: 03/16/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
 title: Administer endpoint applications
-summary: In this module, you will be introduced to managing apps on Intune managed devices. The module will then conclude with an overview of how to use IE Mode with Microsoft Edge.
+summary: In this module, you are introduced to managing apps on Intune managed devices. The module will then conclude with an overview of how to use IE Mode with Microsoft Edge.
 abstract: |
   After this module, you should be able to:
   - Explain how to manage apps in Intune

@@ -1,7 +1,7 @@
 
 Intune application deployment procedures entail several considerations and settings to ensure that a deployment is successful. No matter what type of app you're deploying with Intune, the overall process is the same.
 
-:::image type="content" source="../media/app-deployment-c52a07de.png" alt-text="Diagram of the app deployment steps with Intune":::
+:::image type="content" source="../media/app-deployment-c52a07de.png" alt-text="Diagram of the app deployment steps with Intune.":::
 
 
 To deploy an app from Intune, perform the following steps:
