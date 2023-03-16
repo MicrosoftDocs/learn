@@ -4,7 +4,7 @@ title: Explore secure score
 metadata:
   title: Explore secure score
   description: "Explore secure score"
-  ms.date: 03/03/2023
+  ms.date: 03/16/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
@@ -12,4 +12,4 @@ metadata:
   zone_pivot_groups: None
 durationInMinutes: 7
 content: |
-  [!include[](includes/12-secure-score.md)]
+  [!include[](includes/13-secure-score.md)]
