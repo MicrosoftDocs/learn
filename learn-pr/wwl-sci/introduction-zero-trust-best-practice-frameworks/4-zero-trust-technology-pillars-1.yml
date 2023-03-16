@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.introduction-zero-trust-best-practice-frameworks.zero-trust-technology-pillars1
+uid: learn.introduction-zero-trust-best-practice-frameworks.zero-trust-technology-pillars-1
 title: "Zero Trust technology pillars part 1"
 metadata:
   title: "Zero Trust technology pillars part 1"
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 7
 content: |
-  [!include[](includes/4-zero-trust-technology-pillars1.md)]
+  [!include[](includes/4-zero-trust-technology-pillars-1.md)]
