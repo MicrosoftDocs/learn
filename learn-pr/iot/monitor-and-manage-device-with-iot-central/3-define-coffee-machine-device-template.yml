@@ -4,7 +4,7 @@ title: Define the coffee machine device template
 metadata:
   title: Define the coffee machine device template
   description: This content is a part of Build your first IoT Central application to manage your coffee machines
-  ms.date: 01/13/2023
+  ms.date: 16/13/2023
   author: asergaz
   ms.author: sergaz
   ms.reviewer: adchukwu
@@ -12,7 +12,7 @@ metadata:
   ms.custom: engagement-fy23
   ms.topic: module-build-your-first
   ms.prod: learning-azure
-durationInMinutes: 12
+durationInMinutes: 8
 content: |
   [!include[](includes/3-define-coffee-machine-device-template.md)]
 quiz:

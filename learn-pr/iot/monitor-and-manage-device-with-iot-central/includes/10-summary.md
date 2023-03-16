@@ -1,11 +1,10 @@
-Azure IoT Central makes it easy to connect, monitor, and manage your IoT solutions.
+<!-- TODO: Add relevant followup here -->
+Azure IoT Central is an IoT application platform as a service (aPaaS) that reduces the burden and cost of developing, managing, and maintaining IoT solutions. Use IoT Central to quickly evaluate your IoT scenario and assess the opportunities it can create for your business.
 
 In this module, you created an end-to-end scenario of connecting a remote coffee machine to Azure IoT Central to monitor and manage the machine as maintenance issues arise.
 
 ## Next steps
 
-- [What is Azure IoT Central?](/azure/iot-central/core/overview-iot-central)
+- [Introduction to Azure IoT Central](../../introduction-to-azure-iot-central/index.yml)
 
-- [Take a tour of the Azure IoT Central UI](/azure/iot-central/core/overview-iot-central-tour)
-
-- [IoT 101 Video Series](/shows/iot-101/)
+- [Connect an IoT Edge device to your IoT Central application](../../connect-iot-edge-device-to-iot-central/index.yml)
