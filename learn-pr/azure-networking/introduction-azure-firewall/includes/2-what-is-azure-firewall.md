@@ -63,7 +63,7 @@ The following table lists key features of Azure Firewall Premium.
 |URL filtering|Extends Azure Firewall’s FQDN filtering capability to consider an entire URL. For example, `www.contoso.com/a/c` instead of `www.contoso.com`.
 |Web categories|Administrators can allow or deny user access to website categories such as gambling websites, social media websites, and others. Web categories can be more fine-tuned in Azure Firewall Premium.|
 
-### What us Azure Firewall Basic?
+### What is Azure Firewall Basic?
 
 Azure Firewall Basic is intended for small and medium size (SMB) customers to secure their Azure cloud 
 environments. It provides the essential protection SMB customers need at an affordable price point.
