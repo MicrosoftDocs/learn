@@ -9,9 +9,9 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Manage hybrid workloads with Azure Arc
-summary: You will learn to describe Azure Arc, implement Azure Arc with on-premises server instances, deploy Azure policies with Azure Arc, and use role-based access control (RBAC) to restrict access to Log Analytics data.
+summary: You'll learn to describe Azure Arc, implement Azure Arc with on-premises server instances, deploy Azure policies with Azure Arc, and use role-based access control (RBAC) to restrict access to Log Analytics data.
 abstract: |
-  After completing this module, you will be able to:
+  After completing this module, you'll be able to:
   - Describe Azure Arc.
   - Explain how to onboard on-premises Windows Server instances in Azure Arc.
   - Connect hybrid machines to Azure from the Azure portal.
@@ -28,7 +28,7 @@ prerequisites: |
   - Security-related technologies (firewalls, encryption, multi-factor authentication).
   - Windows PowerShell scripting.
   - Automation and monitoring.
-iconUrl: /learn/achievements/manage-hybrid-workloads-with-azure-arc.svg
+iconUrl: /training/achievements/manage-hybrid-workloads-with-azure-arc.svg
 levels:
 - intermediate
 roles:
