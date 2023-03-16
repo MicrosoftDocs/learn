@@ -12,7 +12,7 @@ The simplest way to provide the same AD DS environment in Azure that an organiza
 1. Connect that virtual network to the on-premises network.
 1. Configure that subnet as a new AD DS site, as shown in the following image.
 
-   :::image type="content" source="../media/4-identity-replication-diagram.png" alt-text="Diagram showing replication of an on-premises identity hosted in Active Directory Domain Services to Azure Active Directory." border="false" lightbox=" lightbox="../media/4-identity-replication-diagram.png":::
+   :::image type="content" source="../media/4-identity-replication-diagram.png" alt-text="Diagram showing replication of an on-premises identity hosted in Active Directory Domain Services to Azure Active Directory." border="false" lightbox="../media/4-identity-replication-diagram.png":::
 
 Another option is to configure the cloud-hosted AD DS domain as a child domain of the on-premises domain's forest. An additional option is to configure the AD DS domain controllers running in the cloud as a separate forest that has a trust relationship with the on-premises forest. The following image shows this resource forest topology.
 

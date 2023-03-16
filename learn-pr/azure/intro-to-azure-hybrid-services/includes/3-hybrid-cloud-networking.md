@@ -24,7 +24,7 @@ Unlike a VPN gateway, the equipment that provides this connection is managed by 
 
 The following image shows the ExpressRoute connection between the on-premises environment and workloads running in Azure. The ExpressRoute provider manages the ExpressRoute circuit and local edge routers.
 
-:::image type="content" source="../media/3-azure-expressroute-connection-diagram.png" alt-text="Diagram of a hybrid network architecture using Azure ExpressRoute." border="false" lightbox="../media/3-expressroute-connection-diagram.png":::
+:::image type="content" source="../media/3-expressroute-connection-diagram.png" alt-text="Diagram of a hybrid network architecture using Azure ExpressRoute." border="false" lightbox="../media/3-expressroute-connection-diagram.png":::
 
 In addition to providing a dedicated bandwidth connection between the on-premises environment and Azure, ExpressRoute allows an organization to ensure that sensitive traffic doesn't pass across the public internet. This is important in jurisdictions where governance requirements forbid the transmission of certain types of information across the internet.
 
