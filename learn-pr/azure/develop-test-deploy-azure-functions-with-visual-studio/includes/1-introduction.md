@@ -13,9 +13,9 @@ By the end of this module, you can build and test an Azure Function locally usin
 
 In this module, you will:
 
-- Create an in-process Function app that runs on .NET 6.0. in Visual Studio 2022.
-- Test and debug an Azure Function in Visual Studio 2022.
-- Deploy an Azure Function directly from Visual Studio 2022 to Azure.
+- Create an in-process function app that runs on .NET 6.0. in Visual Studio 2022.
+- Test and debug a function in Visual Studio 2022.
+- Deploy a functions project directly from Visual Studio 2022 to Azure.
 - Manage Azure Functions code.
 
 ## Prerequisites
