@@ -1,3 +1,4 @@
+
 Azure Active Directory (Azure AD) is Microsoft’s cloud-based identity and access management service, which helps your employees sign in and access resources in:
 
  -  External resources, such as Microsoft 365, the Azure portal, and thousands of other SaaS applications.
@@ -5,7 +6,7 @@ Azure Active Directory (Azure AD) is Microsoft’s cloud-based identity and acce
 
 ## Scenario
 
-A security engineer uses Azure Active Directory to manage identities, you will work on such tasks as:
+A security engineer uses Azure Active Directory's identity and access management services to execute and facilitate the following tasks:
 
  -  Create users, groups, and administrative units to securely access resources and services.
  -  Configure access to systems to be passwordless.

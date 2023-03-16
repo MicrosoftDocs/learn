@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.azure-active-directory.azure-ad-ds-and-azure-ad
+title: Azure AD DS and Azure AD
+metadata:
+  title: Azure AD DS and Azure AD
+  description: "Azure AD DS and Azure AD"
+  ms.date: 03/16/2023
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: interactive-tutorial
+  zone_pivot_groups: azure-interface
+content: |
+  [!include[](includes/5-azure-ad-ds-and-azure-ad.md)]
+interactive: bash

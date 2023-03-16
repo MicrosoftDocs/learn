@@ -1,76 +1,16 @@
-**Azure AD is different from AD DS** \- Although Azure AD has many similarities to AD DS, there are also many differences. It is important to realize that using Azure AD is different from deploying an Active Directory domain controller on an Azure virtual machine and adding it to your on-premises domain. Here are some characteristics of Azure AD that make it different.
 
- -  **Identity solution.** Azure AD is primarily an identity solution, and it is designed for Internet-based applications by using HTTP and HTTPS communications.
- -  **REST API Querying.** Because Azure AD is HTTP/HTTPS based, it cannot be queried through LDAP. Instead, Azure AD uses the REST API over HTTP and HTTPS.
- -  **Communication Protocols.** Because Azure AD is HTTP/HTTPS based, it does not use Kerberos authentication. Instead, it uses HTTP and HTTPS protocols such as SAML, WS-Federation, and OpenID Connect for authentication (and OAuth for authorization).
- -  **Authentication Services.** Include SAML, WS-Federation, or OpenID.
- -  **Authorization Service.** Uses OAuth.
- -  **Federation Services.** Azure AD includes federation services, and many third-party services (such as Facebook).
- -  **Flat structure.** Azure AD users and groups are created in a flat structure, and there are no Organizational Units (OUs) or Group Policy Objects (GPOs).
+## Self-managed Active Directory Domain Services, Azure Active Directory, and managed Azure Active Directory Domain Services
 
-The following table summarizes the differences:
+To provide applications, services, or devices access to a central identity, there are three common ways to use Active Directory-based services in Azure. This choice in identity solutions gives you the flexibility to use the most appropriate directory for your organization's needs. For example, if you mostly manage cloud-only users that run mobile devices, it may not make sense to build and run your own Active Directory Domain Services (AD DS) identity solution. Instead, you could use Azure Active Directory. :::image type="content" source="../media/azure-active-directory-domain-services-use-case-897837b8.png" alt-text="Screenshot showing Azure Active Directory Domain Services customer use case.":::
 
-:::row:::
-  :::column:::
-    **Azure Active Directory**
-  :::column-end:::
-  :::column:::
-    **Active Directory Domain Services**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Cloud
-  :::column-end:::
-  :::column:::
-    On-Premises
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Designed for HTTP &amp; HTTPS
-  :::column-end:::
-  :::column:::
-    Query via LDAP
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Queried via REST API's
-  :::column-end:::
-  :::column:::
-    Used Kerberos for Authentication
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Uses SAML, WS-Federation, or OpenID for authentication
-  :::column-end:::
-  :::column:::
-    No Federated Services
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Uses OAuth for authorization
-  :::column-end:::
-  :::column:::
-    Organizational Units (OU's)
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Includes federation services
-  :::column-end:::
-  :::column:::
-    Group Policy (GPO's)
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Flat Structure
-  :::column-end:::
-  :::column:::
-    
-  :::column-end:::
-:::row-end:::
+
+Although the **three Active Directory-based identity solutions** share a common name and technology, they're designed to provide services that meet different customer demands. At a high level, these identity solutions and feature sets are:
+
+1.  **Azure Active Directory (Azure AD) - Cloud-based** identity and mobile device management that provides user account and authentication services for resources such as Microsoft 365, the Azure portal, or SaaS applications.
+     -  Azure AD can be synchronized with an on-premises AD DS environment to provide a single identity to users that works natively in the cloud.
+2.  **Active Directory Domain Services (AD DS)** \- **Enterprise-ready lightweight directory access protocol (LDAP) server** that provides key features such as identity and authentication, computer object management, group policy, and trusts.
+     -  AD DS is a central component in many organizations with an on-premises IT environment and provides core user account authentication and computer management features.
+3.  **Azure Active Directory Domain Services (Azure AD DS)** \- **Provides managed domain services** with a subset of fully-compatible traditional AD DS features such as domain join, group policy, LDAP, and Kerberos / New Technology LAN Manager (NTLM) authentication.
+     -  Azure AD DS integrates with Azure AD, which can synchronize with an on-premises AD DS environment. This ability extends central identity use cases to traditional web applications that run in Azure as part of a lift-and-shift strategy.
+
+## 

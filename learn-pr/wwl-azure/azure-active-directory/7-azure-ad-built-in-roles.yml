@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.azure-active-directory.azure-ad-built-in-roles
+title: Azure AD built-in roles
+metadata:
+  title: Azure AD built-in roles
+  description: "Azure AD built-in roles"
+  ms.date: 03/16/2023
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: interactive-tutorial
+  zone_pivot_groups: azure-interface
+durationInMinutes: 7
+content: |
+  [!include[](includes/7-azure-ad-built-in-roles.md)]
+interactive: bash

@@ -4,13 +4,10 @@ title: Explore Azure Active Directory features
 metadata:
   title: Explore Azure Active Directory features
   description: "Explore Azure Active Directory features"
-  ms.date: 02/02/2023
+  ms.date: 03/16/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 5
+  zone_pivot_groups: None
 content: |
   [!include[](includes/2-features.md)]

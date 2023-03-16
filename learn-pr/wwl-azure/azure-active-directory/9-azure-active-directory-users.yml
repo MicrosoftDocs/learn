@@ -4,13 +4,10 @@ title: Create and manage Azure AD users
 metadata:
   title: Create and manage Azure AD users
   description: "Create and manage Azure AD users"
-  ms.date: 02/02/2023
+  ms.date: 03/16/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 7
+  zone_pivot_groups: None
 content: |
-  [!include[](includes/6-azure-active-directory-users.md)]
+  [!include[](includes/9-azure-active-directory-users.md)]

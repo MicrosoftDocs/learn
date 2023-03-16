@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.azure-active-directory.azure-ad-ds-and-self-managed-ad-ds
+title: Azure AD DS and self-managed AD DS
+metadata:
+  title: Azure AD DS and self-managed AD DS
+  description: "Azure AD DS and self-managed AD DS"
+  ms.date: 03/16/2023
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: interactive-tutorial
+  zone_pivot_groups: azure-interface
+content: |
+  [!include[](includes/4-azure-ad-ds-and-self-managed-ad-ds.md)]
+interactive: bash
