@@ -21,7 +21,7 @@ In this task, you complete a walkthrough of the Starter project code. The Progra
 
 1. Open the Program.cs file in the Visual Studio Code Editor.
 
-    The Program.cs include the following code sections:
+    The Program.cs includes the following code sections:
 
     - Top-level statements: the top-level statements simulate a series of transactions using either an array of `testData` or a larger number of randomly generated transactions.
     - LoadTillEachMorning: the `LoadTillEachMorning` method is used to configure the cash register till with a predefined number of bills in each denomination.
@@ -268,7 +268,7 @@ That completes your review of the existing code project.
 
 ## Verify that `MakeChange` successfully manages the money when using the `testData` array
 
-In this task, you simulate transaction using the `testData` array and verify that `MakeChange` successfully balances the money till.
+In this task, you simulate transactions using the `testData` array and verify that `MakeChange` successfully balances the money till.
 
 1. On the Visual Studio Code **Run** menu, select **Start Debugging**.
 

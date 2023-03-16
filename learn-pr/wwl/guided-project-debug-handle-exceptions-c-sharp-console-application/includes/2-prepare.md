@@ -12,7 +12,7 @@ You're part of a team that's working on retail-support applications. The code th
 - The calling application independently verifies the till balance after each transaction.
 - A `try-catch` pattern is implemented to manage exceptions as follows:
 
-    - Exceptions are used to report and handle any issue that prevent a transaction from completing successfully.
+    - Exceptions are used to report and handle any issue that prevents a transaction from completing successfully.
     - Exceptions are created and thrown in the `MakeChange` method.
     - Exceptions are caught and handled in the calling application.
 

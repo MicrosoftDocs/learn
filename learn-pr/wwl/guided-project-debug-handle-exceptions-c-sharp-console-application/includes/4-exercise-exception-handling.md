@@ -82,7 +82,7 @@ The `MakeChange` method includes two issues that should result in exceptions:
     There are two exception types that appear to fit these conditions:
 
     - `InvalidOperationException`: An `InvalidOperationException` exception should only be thrown when the operating conditions of a method don't support the successful completion of a particular method call. In this case the operating conditions are established by the parameters supplied to the method.
-    - `ArgumentOutOfRangeException` - An `ArgumentOutOfRangeException` exception should only be thrown when the value of an argument is outside the allowable range of values as defined by the invoked method. In this case the the money provided must be greater than the cost of the item.
+    - `ArgumentOutOfRangeException` - An `ArgumentOutOfRangeException` exception should only be thrown when the value of an argument is outside the allowable range of values as defined by the invoked method. In this case the money provided must be greater than the cost of the item.
 
     Either option would work, but `InvalidOperationException` is probably a slightly better fit in this case.
 
