@@ -68,7 +68,7 @@ Visual Studio Code uses a launch configuration file to specify the application t
 
 1. Notice the new `.vscode` folder that has been added to your project folder.
 
-    ![Screenshot showing the .vscode folder in the EXPLORER.](../media/vscode-debug-config-folder.png)
+    ![Screenshot showing the .vscode folder in the EXPLORER.](../media/vscode-debug-configure-folder.png)
 
     > [!NOTE]
     > You could have added the `.vscode` folder to your project from the **Run** menu by selecting **Add Configuration**, and then selecting the option for .NET code projects.
@@ -170,7 +170,7 @@ The RUN AND DEBUG view in Visual Studio Code supports a rich debugging experienc
 
 1. Switch to the RUN AND DEBUG view.
 
-    ![Screenshot showing run option in the Run and Debug view.](../media/run-code-run-and-debug-view.png)
+    ![Screenshot showing run option in the Run and Debug view.](../media/run-code-run-debug-view.png)
 
 1. In the RUN AND DEBUG view, select **Start Debugging**.
 
