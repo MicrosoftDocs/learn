@@ -9,7 +9,8 @@ Here is a more formal definition that describes what an exception is and how an 
 
 *In C#, errors in the program at runtime are propagated through the program by using a mechanism called exceptions. Exceptions are thrown by code that encounters an error and caught by code that can correct the error. Exceptions can be thrown by the .NET runtime or by code in a program. Exceptions are represented by classes derived from Exception. Each class identifies the type of exception and contains properties that have details about the exception.*
 
-> [!IMPORTANT] This training does not require a deep understanding of .NET classes. Don't worry if this definition is a bit confusing. You can use exceptions in your code without a deep understanding of classes.
+> [!IMPORTANT] 
+> This training does not require a deep understanding of .NET classes. Don't worry if this definition is a bit confusing. You can use exceptions in your code without a deep understanding of classes.
 
 Microsoft's documentation on exceptions goes into great detail. However, this definition provides the information that you need right now. Specifically, you need to understand two things:
 
