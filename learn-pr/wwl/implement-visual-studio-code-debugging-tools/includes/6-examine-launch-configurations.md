@@ -173,7 +173,7 @@ With your updates to the launch.json and tasks.json files in place, the RUN AND 
 
 ## Recap
 
-Here is a couple important things to remember from this unit:
+Here are two important things to remember from this unit:
 
 - Launch configurations are used to specify attributes such as name, type, request, preLaunchTask, program, cwd, args, console, and stopAtEntry.
 - Developers can edit the launch configuration to accommodate project requirements.

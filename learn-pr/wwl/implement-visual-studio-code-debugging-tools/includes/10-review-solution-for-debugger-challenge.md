@@ -29,7 +29,7 @@ This debug process implements a breakpoint and then monitors the value of `x` in
 
 ## Consider a code update based on debugging results
 
-If your want the `ChangeValue` method to change the value in the calling code, you need to update your code. One way to achieve your intended result would be to update the `ChangeValue` method to return an integer value, and update the code that calls `ChangeValue` so that it assigns the return value to `x`.
+If you want the `ChangeValue` method to change the value in the calling code, you need to update your code. One way to achieve your intended result would be to update the `ChangeValue` method to return an integer value, and update the code that calls `ChangeValue` so that it assigns the return value to `x`.
 
 For example:
 

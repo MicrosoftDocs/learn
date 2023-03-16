@@ -152,7 +152,7 @@ A standard breakpoint is great for walking through the data processing applicati
 
 1. Take a moment to consider the advantage that conditional breakpoints offer.
 
-    In this simulated data processing scenario, there is about a 1% chance that a product are `new`. If you're using a standard breakpoint to debug the issue, you'ld need to walk through the analysis of about 100 products to find one of the `new` products that you're interested in.
+    In this simulated data processing scenario, there is about a 1% chance that a product is `new`. If you're using a standard breakpoint to debug the issue, you'ld need to walk through the analysis of about 100 products to find one of the `new` products that you're interested in.
 
     Conditional breakpoints can save you lots of time when you're debugging an application.
 
@@ -162,7 +162,7 @@ Congratulations! You successfully configured a conditional breakpoint.
 
 ## Recap
 
-Here is a couple important things to remember from this unit:
+Here are two important things to remember from this unit:
 
 - Setting a standard breakpoint to pause an application each time a breakpoint is encountered.
 - Configuring a conditional breakpoint to pause an application when a Boolean expression evaluates to `true`.

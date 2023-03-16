@@ -52,7 +52,7 @@ Visual Studio Code uses a launch configuration file to specify the application t
 
     ![Screenshot showing the Visual Studio Code run menu.](../media/run-menu-new-project-configure-debug.png)
 
-    The **Open Configuration** menu option is currently disabled because you have not added a launch configuration file to your project.
+    The **Open Configuration** menu option is currently disabled because you haven't added a launch configuration file to your project.
 
 1. In the EXPLORER view, select **Program.cs**.
 
@@ -66,16 +66,16 @@ Visual Studio Code uses a launch configuration file to specify the application t
 
 1. To load the required assets, select **Yes**.
 
-1. Notice the new **.vscode** folder that has been added to your project folder.
+1. Notice the new `.vscode` folder that has been added to your project folder.
 
     ![Screenshot showing the .vscode folder in the EXPLORER.](../media/vscode-debug-config-folder.png)
 
     > [!NOTE]
-    > You could have added the **.vscode** folder to your project from the **Run** menu by selecting **Add Configuration**, and then selecting the option for .NET code projects.
+    > You could have added the `.vscode` folder to your project from the **Run** menu by selecting **Add Configuration**, and then selecting the option for .NET code projects.
 
-1. In the EXPLORER view, to expand the **.vscode** folder, select **.vscode**.
+1. In the EXPLORER view, to expand the `.vscode` folder, select **`.vscode`**.
 
-    Notice that the .vscode folder contains a launch.json file. The launch.json file can be used to configure the debug environment.
+    Notice that the `.vscode` folder contains a launch.json file. The launch.json file can be used to configure the debug environment.
 
 1. On the **Run** menu, select **Open Configurations**.
 
