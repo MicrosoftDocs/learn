@@ -121,7 +121,7 @@ def resource_estimation_job_from_logical_counts(
 
 A resource estimation job consist of two types of job parameters: 
 
-- [Target parameters](xref:microsoft.quantum.overview.resources-estimator#target-parameters): qubit model, QEC schemes, and error budget.
+- [Target parameters](/azure/quantum/overview-resources-estimator#target-parameters): qubit model, QEC schemes, and error budget.
 - Operation arguments (optional): arguments that can be passed to the QIR program. 
 
 The Azure Quantum Resource Estimator allows you to submit jobs with multiple configurations of job parameters, or multiple *items*, as a single job to avoid rerunning multiple jobs on the same quantum program.
