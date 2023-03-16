@@ -15,7 +15,7 @@ You complete the following tasks during this exercise:
 
 ## Review the contents of the Program.cs file
 
-In this task, you complete a walkthrough of the Starter project code. The Program.cs file contains an application that simulates the conditions for daily transactions. The application calls the `MakeChange` method to manage the money till during each transaction. Additional methods are used to initialize the till and generate reporting messages.
+In this task, you complete a walkthrough of the Starter project code. The Program.cs file contains an application that simulates the conditions for daily transactions. The application calls the `MakeChange` method to manage the money till during each transaction. Other methods are used to initialize the till and generate reporting messages.
 
 1. Ensure that the **GuidedProject** folder is open in Visual Studio Code.
 
@@ -218,7 +218,7 @@ In this task, you complete a walkthrough of the Starter project code. The Progra
     }
     ```
 
-    The `MakeChange` method manages the money till during each purchase transaction. The transaction process relies on the following:
+    The `MakeChange` method manages the money till during each purchase transaction. The transaction process relies on the following resources and conditions:
 
     - **Cash transaction**: The `MakeChange` method accepts a cash payment from the customer and then determines how many bills of each denomination must be returned to the customer in change. `MakeChange` must first ensure that the customer has provided enough money to cover the transaction. If the payment is sufficient, the "make change" process begins with the largest bill denomination and works down to the smallest denomination. At each stage, `MakeChange` ensures that the current denomination is less than the change owed. `MakeChange` ensures that a bill of the required denomination is available in the till before adding it to the change returned to the customer.
 
@@ -232,9 +232,9 @@ In this task, you complete a walkthrough of the Starter project code. The Progra
 
     - **Change owed to customer**: The change owed to the customer is calculated using the amount paid by the customer minus the cost of the item.
 
-    - **Underpayment**: If the customer hasn't provided sufficient payment, `MakeChange` returns a descriptive message, and the transaction is cancelled.
+    - **Underpayment**: If the customer hasn't provided sufficient payment, `MakeChange` returns a descriptive message, and the transaction is canceled.
 
-    - **Insufficient till**: If the till is unable to make exact change, `MakeChange` returns a descriptive message, and the transaction is cancelled.
+    - **Insufficient till**: If the till is unable to make exact change, `MakeChange` returns a descriptive message, and the transaction is canceled.
 
 1. Take a moment to review the `LogTillStatus()` method.
 
@@ -363,7 +363,7 @@ In this task, you use the Visual Studio Code debugger tools to isolate and then 
 
 1. Review the output in the TERMINAL panel.
 
-1. Notice that the reported cash received and change returned are correct, but the till is short by 5 dollars.
+1. Notice that the reported cash received and change returned are correct, but the till is short by five dollars.
 
     This shortage suggests that the `cashTill` array is being updated incorrectly, even though the reporting is correct.
 
@@ -373,9 +373,9 @@ In this task, you use the Visual Studio Code debugger tools to isolate and then 
 
     The `while` statements used to "make change" are located at the end of the `MakeChange` method.
 
-1. Review the `while` statement code blocks that're used to make change.
+1. Review the `while` statement code blocks that are used to make change.
 
-    Since the till is off by 5 dollars, the issue is likely to be in the `while` code block that's used to return $5 bills.
+    Since the till is off by five dollars, the issue is likely to be in the `while` code block that's used to return five dollar bills.
 
 1. Notice the following code:
 
@@ -388,7 +388,7 @@ In this task, you use the Visual Studio Code debugger tools to isolate and then 
     }    
     ```
 
-    The `cashTill[]` array is used to store the number of bills of each denomination that are currently available. Array element `1` is used to manage the number of $5 dollar bills in the till. The expression in the `while` statement refers to `cashTill[1]` correctly. However, the statement inside the code block decrements `cashTill[2]` rather than `cashTill[1]`. This index error means that a $10 bill is being removed from the till rather than a $5 bill.
+    The `cashTill[]` array is used to store the number of bills of each denomination that are currently available. Array element `1` is used to manage the number of five dollar bills in the till. The expression in the `while` statement refers to `cashTill[1]` correctly. However, the statement inside the code block decrements `cashTill[2]` rather than `cashTill[1]`. This index error means that a ten dollar bill is being removed from the till rather than a five dollar bill.
 
 1. Update the `while` statement code block as follows:
 
@@ -413,7 +413,7 @@ In this task, you run your application and verify that your updated code works a
 
 1. Review the output in the TERMINAL panel.
 
-1. Verify that the reported till value is equal to the expected till value.
+1. Verify that the reported till value is equal to the expected till value:
 
     The final till balance calculated by `MakeChange` and the balance maintained in the top-level statements are reported at the bottom of the output. For example:
 

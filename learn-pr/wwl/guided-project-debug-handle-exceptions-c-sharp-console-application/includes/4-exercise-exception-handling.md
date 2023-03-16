@@ -160,7 +160,7 @@ In this task, you'll run your application and verify that your updated code work
 
 1. Review the output in the TERMINAL panel.
 
-1. Verify that the messages associated with the two exception types are displayed.
+1. Verify that the messages associated with the two exception types are displayed:
 
     ```output
     Customer is making a $42 purchase
