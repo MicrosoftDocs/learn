@@ -1,4 +1,4 @@
-To validate your scenario before connecting a physical device you use use a device simulator that implements the behaviors defined in the device model.
+To validate your scenario before connecting a physical device you use a device simulator that implements the behaviors defined in the device model.
 
 Recall that in the IoT enabled coffee machines example, you'll connect a coffee machine simulator to IoT Central for monitoring telemetry such as water temperature and humidity, observe the state of the machine, set optimal temperature, receive warranty status, and send commands.
 
@@ -8,12 +8,12 @@ Here, you'll simulate a device with a C# application and connect it to the Azure
 
 ## Add the coffee machine to IoT Central
 
-First we will register the device:
+First we'll register the device:
 
 1. In your IoT Central application, navigate to **Devices** and then **+ New**.
 1. On the **Create a new device form**, change the **Device ID** to *ccm-001* and **Device name** to *Connected Coffee Machine - 001*. Make sure that **Device template** is *Unassigned* and **Simulate this device** is *No*, and then select Create.
 
-The **Connected Coffee Machine - 001** device now shows in the list of devices with a status of **Registered** and template **Unassigned**. In the previous unit we looked at the C# application code and confirmed that the model ID is sent when provisioning the device. That will allow IoT Central to assign the correct device template the first time the device connects.
+The **Connected Coffee Machine - 001** device now shows in the list of devices with a status of **Registered** and template **Unassigned**. In the previous unit we looked at the C# application code and confirmed that the model ID is sent when provisioning the device. That allows IoT Central to assign the correct device template the first time the device connects.
 
 ## Get connection information
 
@@ -33,7 +33,7 @@ export DEVICE_ID=<The Device ID you made a note of previously>
 export DEVICE_KEY=<The Primary key you made a note of previously>
 ```
 
-Print the environment variables and confirm they are correctly defined.
+Print the environment variables and confirm they're correctly defined.
 
 ```azurecli
 printenv ID_SCOPE DEVICE_ID DEVICE_KEY
@@ -74,7 +74,7 @@ Congratulations! Your app is up and running and communicating with IoT Central!
 
 ## Check your work
 
-You've now worked with the Azure IoT Central application and connected the coffee machine to Azure IoT Central. You are well on your way to begin to monitor and manage your remote coffee machine. Here, you take a moment to validate your setup and connection by using the **Connected Coffee Machine** template that you defined earlier. You update the optimal temperature on the **Properties** form, run commands to update the state of your machine, and view your connected coffee machine telemetry.
+You've now worked with the Azure IoT Central application and connected the coffee machine to Azure IoT Central. You're well on your way to begin to monitor and manage your remote coffee machine. Here, you take a moment to validate your setup and connection by using the **Connected Coffee Machine** template that you defined earlier. You update the optimal temperature on the **Properties** form, run commands to update the state of your machine, and view your connected coffee machine telemetry.
 
 ### Update properties to sync your application with the coffee machine
 
@@ -105,7 +105,7 @@ Use the **Properties** form you defined in the device template to update configu
 
 1. Enter *99* as the **Coffee Maker Max Temperature (&deg;C)** and *92* as the **Coffee Maker Min Temperature (&deg;C)**. Then select **Save**.
 
-Cloud properties are not synced with the device, they only exist in the IoT Central application.
+Cloud properties aren't synced with the device, they only exist in the IoT Central application.
 
 ### Run commands on the coffee machine
 
@@ -113,7 +113,7 @@ Navigate to the **Commands** page for your device for the following exercise. To
 
 1. Start brewing remotely by selecting **Run**.
 
-    The coffee machine will start if these three conditions are satisfied:
+    The coffee machine starts if these three conditions are satisfied:
     - Cup detected
     - Not in maintenance
     - Not brewing already  
@@ -145,9 +145,9 @@ Navigate to the **Commands** page for your device for the following exercise. To
     Telemetry send: Temperature: 96.7ºC Humidity: 93.7% Cup Detected: Y Brewing: Y Maintenance Mode: N
     ```
 
-1. Set maintenance mode by choosing **Run** on the **Commands** page. The coffee machine will set to maintenance if it's *not* already in maintenance.
+1. Set maintenance mode by choosing **Run** on the **Commands** page. The coffee machine will set to maintenance if it's *not* already in maintenance mode.
 
-    Look for confirmation messages in the console log on the coffee machine.
+    Look for confirmation messages in the console log of the coffee machine.
 
     > [!NOTE]
     > As in real life, when the technician takes the machine offline to perform necessary repairs before switching it back online, the coffee machine continues to stay in the maintenance mode until you reboot the client code.
