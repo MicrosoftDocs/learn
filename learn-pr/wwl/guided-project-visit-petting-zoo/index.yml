@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.guided-project
+metadata:
+  title: Guided project - Plan a Petting Zoo Visit
+  description: "Guided project - Plan a Petting Zoo Visit"
+  ms.date: 03/16/2023
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Guided project - Plan a Petting Zoo Visit
+summary: Demonstrate your ability to develop a console app that relies on methods with different parameters and return values to coordinate a visit to the petting zoo.
+abstract: |
+  - Plan design details with pseudo-code
+  - Use methods to perform specific tasks
+  - Create methods that accept require and optional parameters
+  - Use values returned from methods
+prerequisites: |
+  - Experience using Visual Studio Code to develop, build, and run C# console applications
+  - Experience using C# data types including `int`, `string`, and arrays
+  - Experience using `switch` statements, if-else statements, and `for` loops
+  - Experience using the `Random` class to generate a random number.
+  - Basic understanding of C# methods
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+- k-12-educator
+- student
+products:
+- dotnet-framework
+- vs-code
+units:
+- learn.wwl.guided-project.introduction
+- learn.wwl.guided-project.prepare
+- learn.wwl.guided-project.exercise-plan-using-methods
+- learn.wwl.guided-project.exercise-shuffle-an-array
+- learn.wwl.guided-project.exercise-optional-parameters
+- learn.wwl.guided-project.exercise-display-results
+- learn.wwl.guided-project.knowledge-check
+- learn.wwl.guided-project.summary
+badge:
+  uid: learn.wwl.guided-project.badge
