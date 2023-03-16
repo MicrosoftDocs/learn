@@ -40,7 +40,7 @@ quiz:
     choices:
     - content: "The breakpoint is removed from the code entirely."
       isCorrect: false
-      explanation: "Incorrect. A disabled breakpoint remains in the configuration and can be reenabled.."
+      explanation: "Incorrect. A disabled breakpoint remains in the configuration and can be reenabled."
     - content: "The breakpoint is skipped over during debugging."
       isCorrect: true
       explanation: "Correct. When a breakpoint is disabled, it is skipped over during debugging. In the user interface, the red dot representing the breakpoint is changed to a grey dot."

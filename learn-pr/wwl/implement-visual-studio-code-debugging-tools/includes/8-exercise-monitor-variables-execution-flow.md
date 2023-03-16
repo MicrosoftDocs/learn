@@ -1,7 +1,7 @@
 
 
 
-The RUN AND DEBUG view provides developers with an easy way to monitor variables and expressions, observe execution flow, an manage breakpoints during the debug process.  
+The RUN AND DEBUG view provides developers with an easy way to monitor variables and expressions, observe execution flow, and manage breakpoints during the debug process.  
 
 ## Examine the sections of the Run and Debug view
 
@@ -20,7 +20,7 @@ You can unfold (expand) the displayed scopes by selecting the arrow to the left 
 
 ![Screenshot showing an unfolded variable in the Variables section of the Run and Debug view.](../media/monitor-variables-section-during-debug-unfold-scopes.png)
 
-It's also possible to change the value of a variable at runtime using the VARIABLES section. You can double-click the variable name and then enter a new value. 
+It's also possible to change the value of a variable at runtime using the VARIABLES section. You can double-click the variable name and then enter a new value.
 
 ### WATCH section
 
@@ -32,7 +32,7 @@ All expressions inside the WATCH section will be updated automatically as your c
 
 ### CALL STACK section
 
-Every time your code enters a method from another method, an call layer is added to the application's call stack. When your application becomes complex and you have a long list of methods called by other methods, the call stack represents the trail of method calls.
+Every time your code enters a method from another method, a call layer is added to the application's call stack. When your application becomes complex and you have a long list of methods called by other methods, the call stack represents the trail of method calls.
 
 The CALL STACK section is useful when you're trying to find the source location for an exception or WATCH expression. If your application throws an unexpected exception, you'll often see a message in the console that resembles the following:
 
@@ -138,7 +138,7 @@ When you're working on a console application that reads user input, you'll proba
 
 ## Review application output and identify issues
 
-Reviewing the output of your application can reveal logic issues that you've overlooked when writing you code.
+Reviewing the output of your application can reveal logic issues that you've overlooked when writing your code.
 
 1. Switch back to the RUN AND DEBUG view.
 
@@ -231,7 +231,7 @@ In some cases, simply monitoring variable state is enough to identify the logic 
 
 1. To expand the `numbers` array, select **numbers [int[]]**.
 
-    ![Screenshot showing the Variables section of the Run and Debug view.](../media/monitor-variables-section-during-debug-expand-numbers-array.png)
+    ![Screenshot showing expanded array elements in the Variables section of the Run and Debug view.](../media/monitor-variables-section-during-debug-expand-numbers-array.png)
 
 1. Recall that array elements are accessed using zero-based index numbers.
 
@@ -247,7 +247,7 @@ In some cases, simply monitoring variable state is enough to identify the logic 
     Console.WriteLine($"\n\rThe sum of numbers {startIndex} through {numbers.Length} is: {SumValues(numbers, startIndex - 1)}");
     ```
 
-    Running the updated code will produce the follow output:
+    Running the updated code will produce the following output:
 
     ![Screenshot showing the output after updating application logic.](../media/monitor-variables-section-during-debug-corrected-logic-output.png)
 

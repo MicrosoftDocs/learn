@@ -76,7 +76,7 @@ In this exercise, you'll use a breakpoint to help you identify the issue.
 1. Take a moment to consider why selecting **Step Into** produced this result.
 
     - The **Step Into** button is used to advance to the next executable statement.
-    - Since the first element in the `names` array is `Sophia` and the `if` statement is checking for the name `Sophia`, the expression evaluates to `true` and code execution moves into the codeblock of the `if` statement.
+    - Since the first element in the `names` array is `Sophia` and the `if` statement is checking for the name `Sophia`, the expression evaluates to `true` and code execution moves into the code block of the `if` statement.
   
 1. On the **Debug controls** toolbar, select **Step Into**.
 
