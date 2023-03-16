@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.execute-mobile-application-management.examine-mobile-application-management
+title: Examine mobile application management
+metadata:
+  title: Examine mobile application management
+  description: "Examine mobile application management"
+  ms.date: 03/16/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+  ms.prod: intune
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-examine-mobile-application-management.md)]
