@@ -41,16 +41,16 @@ To address this scenario using MLOps for Edge devices, you can consider three pi
 
 **Step 1 - Build and Train:** In this step, you create reproducible models and reusable training pipelines. The CI pipeline gets triggered every time code is checked in. It publishes an updated Azure Machine Learning pipeline after building the code and running a suite of tests. The build pipeline includes a number of unit tests and code quality tests.
 
-![The illustration shows the flow of predictive-maintenance and step one, build and train.](../media/predictive-maintenance-step1.jpg)
+![Diagram showing the flow of predictive-maintenance and step one, build and train.](../media/predictive-maintenance-step1.jpg)
 
 **Step 2 - Package and Deploy**: In this step, you package, validate, and deploy models. In this pipeline, you'll operationalize the scoring image and promote it safely across different environments. The pipeline gets triggered every time a new artifact is available. The registered model is packaged together with a scoring script and Python dependencies (Conda YAML file) into an operationalization Docker image. The image automatically gets versioned through Azure Container Registry. The scoring image is deployed on container instances where it can be tested. If it's successful, the scoring image is deployed as a web service in the production environment.
 
-![The illustration shows the flow of predictive-maintenance and step two, package and deploy.](../media/predictive-maintenance-step2.jpg)
+![Diagram showing the flow of predictive-maintenance and step two, package and deploy.](../media/predictive-maintenance-step2.jpg)
 
 **Step 3 - Monitor and Retrain:** Explain & observe model behavior and automate the retraining process. The machine learning pipeline orchestrates the process of retraining the model asynchronously. Retraining can be triggered on a schedule or when new data becomes available by calling the published pipeline REST endpoint from the previous step. In this stage, you retrain, evaluate, and register the model.
 
-![The illustration shows the flow of predictive-maintenance and step three, monitor and retrain.](../media/predictive-maintenance-step3.jpg)
+![Diagram showing the flow of predictive-maintenance and step three, monitor and retrain.](../media/predictive-maintenance-step3.jpg)
 
-The overall flow is as shown below.
+The overall flow is seen below.
 
-![The illustration shows the overall flow of predictive-maintenance.](../media/predictive-maintenance.jpg).
+![Diagram showing the overall flow of predictive-maintenance.](../media/predictive-maintenance.jpg).

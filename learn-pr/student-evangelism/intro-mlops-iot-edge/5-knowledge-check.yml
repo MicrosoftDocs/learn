@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: In this section, we create interactive questions that validate if the learner has understood the learning objectives
-  ms.date: 05/10/2020
+  ms.date: 03/17/2023
   author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
@@ -18,32 +18,32 @@ quiz:
     choices:
     - content: "Build and Train; Package and Deploy; Monitor and Retrain"
       isCorrect: true
-      explanation: "You first create the model, then you can package and deploy the model. The model is monitored and retrained as needed."
+      explanation: "Correct. You first create the model, then you can package and deploy the model. The model is monitored and retrained as needed."
     - content: "Monitor and Retrain; Package and Deploy; Build and Train"
       isCorrect: false
-      explanation: "Build and Train is the first step in the deployment of MLOps."
+      explanation: "Incorrect. Build and Train is the first step in the deployment of MLOps."
     - content: "Package and Deploy; Monitor and Retrain; Build and Train"
       isCorrect: false
-      explanation: "You can't package and deploy a model without building it first."
+      explanation: "Incorrect. You can't package and deploy a model without building it first."
   - content: "MLOps brings the philosophy of DevOps to the Data science community. In the absence of MLOPs, how would the work of a data scientist be impacted?"
     choices:
     - content: "A data scientist won't be able to conduct experiments."
       isCorrect: false
-      explanation: "A data scientist can conduct experiments even without MLOps."
+      explanation: "Incorrect. A data scientist can conduct experiments even without MLOps."
     - content: "A data scientist won't be able to test models."
       isCorrect: false
-      explanation: "A data scientist can test models even without MLOps."
+      explanation: "Incorrect. A data scientist can test models even without MLOps."
     - content: "A data scientist wouldn't be able to collaborate with developers efficiently."
       isCorrect: true
-      explanation: "A data scientist wouldn't be able to collaborate effectively with developers in the absence of MLOps because they would be each following different workflow."
+      explanation: "Correct. A data scientist wouldn't be able to collaborate effectively with developers in the absence of MLOps because they would be each following different workflow."
   - content: "A company has decided to implement MLOps on Edge devices. Which step would they need to implement before deploying MLOPs on Edge devices?"
     choices:
     - content: "The company should deploy IoT Edge and capture data from sensors."
       isCorrect: true
-      explanation: "Without IoT Edge being operational, you can't acquire data to build models."
+      explanation: "Correct. Without IoT Edge being operational, you can't acquire data to build models."
     - content: "The company should be able to visualize data from sensors."
       isCorrect: false
-      explanation: "The ability to visualize data isn't a pre-requisite for MLOps on edge devices."
+      explanation: "Incorrect. The ability to visualize data isn't a pre-requisite for MLOps on edge devices."
     - content: "Developers should follow CI/CD processes before MLOps is deployed."
       isCorrect: false
-      explanation: "The ability to use CI/CD isn't a pre-requisite for MLOps on edge devices."
+      explanation: "Incorrect. The ability to use CI/CD isn't a pre-requisite for MLOps on edge devices."
