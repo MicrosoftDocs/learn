@@ -14,7 +14,7 @@ If an investigation results in actionable learnings, you can take remediation st
 
 When implementing an end-to-end Zero Trust framework for visibility, automation, and orchestration, we recommend you focus first on these **initial deployment objectives**:
 
-**I.** Establish visibility.
+**I.** Establish visibility.<br>
 **II.** Enable automation.
 
 After these are completed, focus on these **additional deployment objectives**:
@@ -35,14 +35,14 @@ Once the identity has been verified, we can control that identity's access to re
 
 When implementing an end-to-end Zero Trust framework for identity, we recommend you focus first on these initial deployment objectives:
 
-**I.** Cloud identity federates with on-premises identity systems.
-**II.** Conditional Access policies gate access and provide remediation activities.
+**I.** Cloud identity federates with on-premises identity systems.<br>
+**II.** Conditional Access policies gate access and provide remediation activities.<br>
 **III.** Analytics improve visibility.
 
 After these are completed, focus on these additional deployment objectives:
 
-**IV.** Identities and access privileges are managed with identity governance.
-**V.** User, device, location, and behavior is analyzed in real time to determine risk and deliver ongoing protection.
+**IV.** Identities and access privileges are managed with identity governance.<br>
+**V.** User, device, location, and behavior is analyzed in real time to determine risk and deliver ongoing protection.<br>
 **VI.** Integrate threat signals from other security solutions to improve detection, protection, and response.
 
 ## Applications
@@ -64,12 +64,12 @@ The **Zero Trust** model helps organizations ensure that apps, and the data th
 
 When implementing a Zero Trust approach to managing and monitoring applications, we recommend you focus first on these **initial deployment objectives**:
 
-**I.** Gain visibility into the activities and data in your applications by connecting them via APIs.
-**II.** Discover and control the use of shadow IT.
+**I.** Gain visibility into the activities and data in your applications by connecting them via APIs.<br>
+**II.** Discover and control the use of shadow IT.<br>
 **III.** Protect sensitive information and activities automatically by implementing policies.
 
 After these are completed, focus on these **additional deployment objectives**:
 
-**IV.** Deploy adaptive access and session controls for all apps.
-**V.** Strengthen protection against cyber threats and rogue apps.
+**IV.** Deploy adaptive access and session controls for all apps.<br>
+**V.** Strengthen protection against cyber threats and rogue apps.<br>
 **VI.** Assess the security posture of your cloud environments

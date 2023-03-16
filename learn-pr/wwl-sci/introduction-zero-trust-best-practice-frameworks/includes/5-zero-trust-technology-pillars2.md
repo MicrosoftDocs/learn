@@ -14,13 +14,13 @@ An information protection strategy needs to encompass your organization's entire
 
 When implementing an end-to-end Zero Trust framework for data, we recommend you focus first on these **initial deployment objectives**:
 
-**I.** Access decisions are governed by encryption.
+**I.** Access decisions are governed by encryption.<br>
 **II.** Data is automatically classified and labeled.
 
 After these are completed, focus on these **additional deployment objectives**:
 
-**III.** Classification is augmented by smart machine learning models.
-**IV.** Access decisions are governed by a cloud security policy engine.
+**III.** Classification is augmented by smart machine learning models.<br>
+**IV.** Access decisions are governed by a cloud security policy engine.<br>
 **V.** Prevent data leakage through DLP policies based on a sensitivity label and content inspection.
 
 # Secure endpoints with Zero Trust
@@ -33,9 +33,9 @@ In a Zero Trust approach, the same security policies are applied regardless of w
 
 When implementing an end-to-end Zero Trust framework for securing endpoints, we recommend you focus first on these **initial deployment objectives**:
 
-**I.** Endpoints are registered with cloud identity providers. In order to monitor security and risk across multiple endpoints used by any one person, you need [visibility](https://aka.ms/ZTCrossPillars) in all devices and access points that may be accessing your resources.
+**I.** Endpoints are registered with cloud identity providers. In order to monitor security and risk across multiple endpoints used by any one person, you need [visibility](https://aka.ms/ZTCrossPillars) in all devices and access points that may be accessing your resources.<br>
 
-**II.** Access is only granted to cloud-managed and compliant endpoints and apps. Set compliance rules to ensure that devices meet minimum security requirements before access is granted. Also, set remediation rules for noncompliant devices so that people know how to resolve the issue.
+**II.** Access is only granted to cloud-managed and compliant endpoints and apps. Set compliance rules to ensure that devices meet minimum security requirements before access is granted. Also, set remediation rules for noncompliant devices so that people know how to resolve the issue.<br>
 
 **III.** Data loss prevention (DLP) policies are enforced for corporate devices and BYOD. Control what the user can do with the data after they have access. For instance, restrict file saving to untrusted locations (such as local disk), or restrict copy-and-paste sharing with a consumer communication app or chat app to protect data.
 
@@ -53,14 +53,14 @@ Azure Blueprints, Azure Policies, Microsoft Defender for Cloud, Microsoft Sentin
 
 When implementing an end-to-end Zero Trust framework for managing and monitoring your infrastructure, we recommend you focus first on these **initial deployment objectives**:
 
-**I.** Workloads are monitored and alerted to abnormal behavior.
-**II.** Every workload is assigned an app identity—and configured and deployed consistently.
+**I.** Workloads are monitored and alerted to abnormal behavior.<br>
+**II.** Every workload is assigned an app identity—and configured and deployed consistently.<br>
 **III.** Human access to resources requires Just-In-Time.
 
 After these are completed, focus on these **additional deployment objectives**:
 
-**IV.** Unauthorized deployments are blocked, and alert is triggered.
-**V.** Granular visibility and access control are available across workloads.
+**IV.** Unauthorized deployments are blocked, and alert is triggered.<br>
+**V.** Granular visibility and access control are available across workloads.<br>
 **VI.** User and resource access segmented for each workload.
 
 ## Secure networks with Zero Trust
@@ -71,12 +71,12 @@ Instead of believing everything behind the corporate firewall is safe, an end-to
 
 When implementing an end-to-end Zero Trust framework for securing networks, we recommend you focus first on these **initial deployment objectives**:
 
-**I.** Network segmentation: Many ingress/egress cloud micro-perimeters with some micro-segmentation.
-**II.** Threat protection: Cloud native filtering and protection for known threats.
+**I.** Network segmentation: Many ingress/egress cloud micro-perimeters with some micro-segmentation.<br>
+**II.** Threat protection: Cloud native filtering and protection for known threats.<br>
 **III.** Encryption: User-to-app internal traffic is encrypted.
 
 After these are completed, focus on these **additional deployment objectives**:
 
-**IV.** Network segmentation: Fully distributed ingress/egress cloud micro-perimeters and deeper micro-segmentation.
-**V.** Threat protection: Machine learning-based threat protection and filtering with context-based signals.
+**IV.** Network segmentation: Fully distributed ingress/egress cloud micro-perimeters and deeper micro-segmentation.<br>
+**V.** Threat protection: Machine learning-based threat protection and filtering with context-based signals.<br>
 **VI.** Encryption: All traffic is encrypted.

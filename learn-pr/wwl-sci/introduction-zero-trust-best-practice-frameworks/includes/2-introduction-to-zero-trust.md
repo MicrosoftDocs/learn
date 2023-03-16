@@ -16,7 +16,7 @@ It is designed to adapt to the complexities of the modern environment that embra
 
 A Zero Trust approach should extend throughout the entire digital estate and serve as an integrated security philosophy and end-to-end strategy. This is done by implementing Zero Trust controls and technologies across six foundational elements. Each of these is a source of signal, a control plane for enforcement, and a critical resource to be defended.
 
-![Diagram of elements of visibility, automation, and orchestration in Zero Trust.](https://learn.microsoft.com/en-us/security/zero-trust/media/diagram-zero-trust-security-elements.png)
+![Diagram of elements of visibility, automation, and orchestration in Zero Trust.](/security/zero-trust/media/diagram-zero-trust-security-elements.png)
 
 Different organizational requirements, existing technology implementations, and security stages all affect how a Zero Trust security model implementation is planned. Using our experience in helping customers to secure their organizations, as well as in implementing our own Zero Trust model, we've developed the following guidance to assess your readiness and to help you build a plan to get to Zero Trust.
 
