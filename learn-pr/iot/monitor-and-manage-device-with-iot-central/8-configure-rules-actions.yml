@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.monitor-manage-device-with-iotcentral.configure-rules-and-actions
+uid: learn.monitor-manage-device-with-iotcentral.configure-rules-actions
 title: Exercise - Configure rules and actions to monitor your coffee machine
 sandbox: true
 interactive: bash
@@ -16,4 +16,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 6
 content: |
-  [!include[](includes/8-configure-rules-and-actions.md)]
+  [!include[](includes/8-configure-rules-actions.md)]

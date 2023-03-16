@@ -39,7 +39,7 @@ units:
 - learn.monitor-manage-device-with-iotcentral.define-coffee-machine-device-simulator
 - learn.monitor-manage-device-with-iotcentral.connect-coffee-machine-device-simulator
 - learn.monitor-manage-device-with-iotcentral.monitor-manage-coffee-machines
-- learn.monitor-manage-device-with-iotcentral.configure-rules-and-actions
+- learn.monitor-manage-device-with-iotcentral.configure-rules-actions
 - learn.monitor-manage-device-with-iotcentral.knowledge-check
 - learn.monitor-manage-device-with-iotcentral.summary
 badge:
