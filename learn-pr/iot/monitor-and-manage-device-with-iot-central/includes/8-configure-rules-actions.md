@@ -20,7 +20,7 @@ Azure IoT Central can use email to send notifications. In this scenario, if the 
 
 1. Add the condition **Water Temperature** is greater than **Coffee Maker Max Temperature** to the rule.
 
-    ![Screenshot showing the rules page of the connected coffee machine device template with a new rule added in the Configure Telemetry Rule pane.](../media/8-new-rule.png)
+    ![Screenshot that shows the rules page of the connected coffee machine device template with a new rule added in the Configure Telemetry Rule pane.](../media/8-new-rule.png)
 
 1. Scroll down on the **Coffee Maker Water Temperature out of range** rule page and select **+ Email** in the **Actions** section.
 

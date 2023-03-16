@@ -22,7 +22,7 @@ The [Sample code for Azure IoT Central Documentation](https://github.com/Azure-S
 
 IoT Central displays the **Connected Coffee Maker** capability model that defines the telemetry, properties, and commands that the device supports.
 
-![Imported Connected Coffee Machine template.](../media/4-imported-template.png)
+![Screenshot that shows Imported Connected Coffee Machine template.](../media/4-imported-template.png)
 
 ## Add views to your template
 
@@ -46,7 +46,7 @@ To create a view that lets you visualize the telemetry from your coffee machine:
 
 1. Save your changes.
 
-    ![Connected Coffee Machine telemetry view.](../media/4-telemetry-view.png)
+    ![Screenshot that shows Connected Coffee Machine telemetry view.](../media/4-telemetry-view.png)
 
 To create a view that lets you manage the properties of your coffee machine:
 
@@ -58,7 +58,7 @@ To create a view that lets you manage the properties of your coffee machine:
 
 1. Save your changes.
 
-    ![Connected Coffee Machine property view.](../media/4-properties-form.png)
+    ![Screenshot that shows Connected Coffee Machine property view.](../media/4-properties-form.png)
 
 ## Publish the Coffee Machine template
 
@@ -76,4 +76,4 @@ To verify that the device template was published and is ready to use:
 
 1. Check that the **Connected Coffee Machine** device is in the list of available device types:
 
-    ![Connected Coffee Machine published device template.](../media/4-published-template.png)
+    ![Screenshot that shows the Connected Coffee Machine published device template.](../media/4-published-template.png)

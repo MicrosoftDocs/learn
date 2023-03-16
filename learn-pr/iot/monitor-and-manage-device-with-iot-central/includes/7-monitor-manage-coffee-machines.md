@@ -4,7 +4,7 @@ An Azure IoT Central application lets you monitor and manage your devices, letti
 - Provides many built-in features that help you to reduce the burden and cost of developing an IoT solution.
 - Has extensibility and integration points that let you use its features and capabilities in your wider solution.
 
-:::image type="content" source="../media/7-architecture.png" alt-text="IoT Central solution architecture":::
+![Diagram that shows IoT Central solution architecture.](../media/7-architecture.png)
 
 In the IoT enabled coffee machines example you'll need to monitor and manage issues remotely.
 

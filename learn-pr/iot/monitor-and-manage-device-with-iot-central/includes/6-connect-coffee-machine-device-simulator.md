@@ -4,7 +4,7 @@ Recall that in the IoT enabled coffee machines example, you'll connect a coffee 
 
 Here, you'll simulate a device with a C# application and connect it to the Azure IoT Central application.
 
-![An illustration showing a Coffee machine.](../media/6-coffee-machine.png)
+![Illustration that shows a Coffee machine.](../media/6-coffee-machine.png)
 
 ## Add the coffee machine to IoT Central
 
@@ -23,7 +23,7 @@ To run the C# application, you need the following configuration values:
 1. Select **Connect** to open the **Device connection groups** panel.
 1. Either keep this page open, or make a note of the **ID scope**, **Device ID**, and **Primary key** values.
 
-    ![Device connection information.](../media/6-device-connection.png)
+    ![Screenshot that shows device connection information.](../media/6-device-connection.png)
 
 Use the Azure Cloud Shell to set the environment variables used by the C# application.
 
@@ -178,7 +178,7 @@ Navigate to the **Commands** page for your device for the following exercise. To
 
 Navigate to the **Telemetry** page for the coffee machine. You defined this page when you created the device template:
 
-![Screenshot showing the Telemetry page for the connected coffee machine device template.](../media/6-telemetry.png)
+![Screenshot that shows the Telemetry page for the connected coffee machine device template.](../media/6-telemetry.png)
 
 > [!IMPORTANT]
 > It's recommended that you run the C# application no more than 60 minutes or so, to prevent the application from sending you unwanted notifications/emails. Stopping the application when you're not working on the module also prevents you from exhausting the daily message quota. You can add a flag to define the running time of the application: `dotnet run -n [TimeInSeconds]`.
