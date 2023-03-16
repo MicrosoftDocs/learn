@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.create-throw-exceptions-c-sharp.examine-create-exception-csharp
+uid: learn.wwl.create-throw-exceptions-c-sharp.examine-create-exception-c-sharp
 title: Examine how to create and throw exceptions in C#
 metadata:
   title: Examine how to create and throw exceptions in C#
@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
 durationInMinutes: 16
 content: |
-  [!include[](includes/2-examine-create-exception-csharp.md)]
+  [!include[](includes/2-examine-create-exception-c-sharp.md)]
 quiz:
   title: "Check your knowledge"
   questions:

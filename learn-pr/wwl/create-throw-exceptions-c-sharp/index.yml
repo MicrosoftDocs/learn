@@ -33,8 +33,8 @@ subjects:
 - development-tools
 units:
 - learn.wwl.create-throw-exceptions-c-sharp.introduction
-- learn.wwl.create-throw-exceptions-c-sharp.examine-create-exception-csharp
-- learn.wwl.create-throw-exceptions-c-sharp.exercise-create-throw-exception-csharp
+- learn.wwl.create-throw-exceptions-c-sharp.examine-create-exception-c-sharp
+- learn.wwl.create-throw-exceptions-c-sharp.exercise-create-throw-exception-c-sharp
 - learn.wwl.create-throw-exceptions-c-sharp.exercise-challenge-create-throw-exception
 - learn.wwl.create-throw-exceptions-c-sharp.review-solution-create-throw-exception-challenge
 - learn.wwl.create-throw-exceptions-c-sharp.knowledge-check

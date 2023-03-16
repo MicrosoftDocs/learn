@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.create-throw-exceptions-c-sharp.exercise-create-throw-exception-csharp
+uid: learn.wwl.create-throw-exceptions-c-sharp.exercise-create-throw-exception-c-sharp
 title: Exercise - Create and throw an exception
 metadata:
   title: Exercise - Create and throw an exception
@@ -10,4 +10,4 @@ metadata:
   ms.topic: interactive-tutorial
 durationInMinutes: 14
 content: |
-  [!include[](includes/3-exercise-create-throw-exception-csharp.md)]
+  [!include[](includes/3-exercise-create-throw-exception-c-sharp.md)]
