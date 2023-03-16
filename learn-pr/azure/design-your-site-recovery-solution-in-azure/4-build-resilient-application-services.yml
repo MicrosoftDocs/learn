@@ -6,7 +6,7 @@ metadata:
   description: Build resilient application services
   ms.date: 11/18/2019
   author: jboeshart
-  ms.author: jboeshart
+  ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

@@ -5,7 +5,7 @@ metadata:
   description: Protect your applications and data from disasters with a well-designed site recovery solution.
   ms.date: 03/16/2023
   author: jboeshart
-  ms.author: jboeshart
+  ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Design your site recovery solution in Azure
