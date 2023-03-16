@@ -7,6 +7,8 @@ metadata:
   ms.date: 03/15/2023
   author: msmimart
   ms.author: mimart
+  ms.service: active-directory
+  manager: celestedg
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Enable secure external collaboration for your applications with Azure AD B2B
