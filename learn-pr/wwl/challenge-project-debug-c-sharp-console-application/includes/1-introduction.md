@@ -17,7 +17,7 @@ By the end of this module, your `MakeChange` method will successfully balance th
 
 ## Learning Objectives
 
-In this module, you demonstrate your ability to:
+In this module, you demonstrate your ability to: 
 
 - Use the Visual Studio Code debugger tools to identify and correct an issue in your code logic.
 
