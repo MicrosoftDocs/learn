@@ -6,7 +6,7 @@ There are several options available for publishing an Azure Function, and you wa
 
 ## Deploy from Visual Studio
 
-Azure Functions tools for Visual Studio enable you to deploy an Azure Function directly from Visual Studio. The Azure Functions template in Visual Studio provides a Publish wizard. The wizard helps connect to your Azure account, and prompts you to either specify an existing Azure Function App, or create a new one. The functions in your project are then rebuilt and deployed to the Azure Functions App.
+Azure Functions tools for Visual Studio enable you to deploy an Azure Functions project directly from Visual Studio. The Publish wizard helps connect to your Azure account, and prompts you to either specify an existing function app, or create a new one. The functions in your project are then rebuilt and deployed to the function app in Azure.
 
 The Visual Studio **Publish** wizard requires that you either have access to the Azure Functions App that will host your functions, or you have an Azure subscription that you can use to create an Azure Functions App as part of the publication process. You'll investigate the **Publish** wizard in more detail in the exercise in the next unit.
 
