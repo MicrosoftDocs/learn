@@ -22,18 +22,18 @@ quiz:
       explanation: Active Geo-replication would enable you to have readable secondaries in another region.
     - content: Use SQL Server virtual machines and use Azure Site Recovery to recover them to another region.
       isCorrect: false
-      explanation: You would not be able to read from the replica that is created because it won't exist until a failover happens.
+      explanation: You wouldn't be able to read from the replica that is created because it doesn't exist until a failover happens.
     - content: Use SQL Server virtual machines and use Azure Backup to back data up to another region.
       isCorrect: false
-      explanation: Your data would not be accessible for reads, and wouldn't have any secondary databases until you restored them using the backed-up data.
-  - content: What are benefits of moving your data workloads to Azure Cosmos DB now that your online store is moving to multiple regions?
+      explanation: Your data wouldn't be accessible for reads, and wouldn't have any secondary databases until you restored them using the backed-up data.
+  - content: What are some benefits of moving your data workloads to Azure Cosmos DB now that your online store is moving to multiple regions?
     choices:
-    - content: You will be able to perform row-level security, with low latency on your data in another region.
+    - content: You can perform row-level security, with low latency on your data in another region.
       isCorrect: false
-      explanation: Azure Cosmos DB does not support row-level security.
-    - content: You will be able to have up to 500 databases, with low latency access in another region.
+      explanation: Azure Cosmos DB doesn't support row-level security.
+    - content: You can have up to 500 databases, with low latency access in another region.
       isCorrect: false
       explanation: Azure Cosmos DB gives you unlimited databases.
-    - content: You will be able to have read access to your data, with low latency in another region.
+    - content: You can have read access to your data, with low latency in another region.
       isCorrect: true
-      explanation: You can let your clients access the other region for reads. This gives you the ability to spread usage across multiple regions.
+      explanation: You can let your clients access the other region for reads, giving you the ability to spread usage across multiple regions.
