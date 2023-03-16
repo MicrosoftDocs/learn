@@ -12,7 +12,7 @@ You can create a new user for your organization or invite an external user from 
 2.  Navigate to **Azure Active Directory** &gt; **Users**.
 3.  Select either **Create new user** or **Invite external user** from the menu.
     
-    :::image type="content" source="../media/azure-active-directory-users-page-8859e1b1.png" alt-text="Screenshot showing the Azure Active Directory Users Page.":::
+    :::image type="content" source="../media/azure-active-directory-users-page-new-user-e07c9173.png" alt-text="Screenshot showing an example of the Azure Active Directory Users page for creating a new user.":::
     
 4.  On the **New User** page, provide the new user's information:
     
@@ -48,9 +48,6 @@ You can delete an existing user using the Azure Active Directory portal.
 2.  Go to **Azure Active Directory** &gt; **Users**.
 3.  Search for and select the user you want to delete from your Azure AD tenant.
 4.  Select **Delete user**.
-
-:::image type="content" source="../media/azure-active-directory-delete-a-user-page-55025973.png" alt-text="Screenshot showing Azure active directory delete a user page.":::
-
 
 The user is deleted and no longer appears on the **Users** \- **All users** page. The user can be seen on the **Deleted users** page for the next **30 days** and can be restored during that time.
 

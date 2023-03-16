@@ -15,7 +15,7 @@ A managed domain is configured to perform a one-way synchronization from Azure A
 
 In a hybrid environment with an on-premises AD DS environment, Azure AD Connect synchronizes identity information with Azure AD, which is then synchronized to the managed domain.
 
-:::image type="content" source="../media/azure-active-directory-domain-services-9ff78fc9.png" alt-text="Image showing how Azure Active Directory Domain Services works.":::
+:::image type="content" source="../media/azure-active-directory-domain-services-9ff78fc9.png" alt-text="Screenhot showing how Azure Active Directory Domain Services works.":::
 
 
 Azure AD DS replicates identity information from Azure AD, so it works with Azure AD tenants that are cloud-only or synchronized with an on-premises AD DS environment. The same set of Azure AD DS features exists for both environments.
