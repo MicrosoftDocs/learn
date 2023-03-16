@@ -1,7 +1,6 @@
-<!-- TODO: Add relevant followup here -->
-Azure IoT Central is an IoT application platform as a service (aPaaS) that reduces the burden and cost of developing, managing, and maintaining IoT solutions. Use IoT Central to quickly evaluate your IoT scenario and assess the opportunities it can create for your business.
+Our company wanted to launch IoT enabled coffee machines to monitor and manage issues remotely. We used Azure IoT Central to quickly evaluate the scenario and assess the opportunities it can create for the business.
 
-In this module, you created an end-to-end scenario of connecting a remote coffee machine to Azure IoT Central to monitor and manage the machine as maintenance issues arise.
+Imagine how much work it would be to build this solution from scratch. We'd have to write code to demonstrate the UX experience and to interact with multiple APIs in order to connect, manage and operate the devices. Azure IoT Central is an IoT application platform as a service (aPaaS) that helped reduce the burden and cost of developing and managing the IoT solution proof of concept.
 
 ## Next steps
 
