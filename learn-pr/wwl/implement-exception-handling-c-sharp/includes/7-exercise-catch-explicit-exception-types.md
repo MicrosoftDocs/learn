@@ -77,7 +77,7 @@ Now that you understand exception objects and their properties, it's time to sta
 
 1. Take a minute to review the code.
 
-    This is the same code that you saw in the previous unit (the solution code for the challenge activity), so you know that an exception in the `WriteMessage` method is caught in the `Process1` method . You'll be using this code to examine exception objects and specific exception types.
+    This is the same code that you saw in the previous unit (the solution code for the challenge activity), so you know that an exception in the `WriteMessage` method is caught in the `Process1` method. You'll be using this code to examine exception objects and specific exception types.
 
 1. Update the `Process1` method as follows:
 
@@ -127,7 +127,7 @@ Now that you understand exception objects and their properties, it's time to sta
 
 1. Switch to the TERMINAL tab and examine the console output.
 
-1. Notice that the exception's `Message` property is include in the output.
+1. Notice that the exception's `Message` property is included in the output.
 
 ## Catch a specific exception type
 
@@ -234,7 +234,7 @@ At this point, you may be wondering what happens when multiple exceptions occur 
 
 1. Step through your code, and notice what happens after your code handles the first exception.
 
-    When the first exception occurs, control is passed to the first `catch` clause that can handle the exception. The code that would generate the second exception is never reached. This means that some of you code is never executed. This could lead to serious issues.
+    When the first exception occurs, control is passed to the first `catch` clause that can handle the exception. The code that would generate the second exception is never reached. This means that some of your code is never executed. This could lead to serious issues.
 
 1. Take a minute to consider how you could manage multiple exceptions, and when/why you might not want your code to manage multiple exceptions.
 

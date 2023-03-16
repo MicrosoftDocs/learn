@@ -56,7 +56,7 @@ quiz:
     - content: "An `ArrayTypeMismatchException` exception is thrown when an attempt is made to index an array outside the bounds of the array."
       isCorrect: false
       explanation: "Incorrect. This answer choice describes when a `IndexOutOfRangeException` exception is thrown."
-  - content: "What is the base class that all derived exception types inherit from?"
+  - content: "What is the name of the base class that all derived exception types inherit from?"
     choices:
     - content: "Object."
       isCorrect: false
@@ -66,7 +66,7 @@ quiz:
       explanation: "Incorrect. System is not an exception type."
     - content: "Exception."
       isCorrect: true
-      explanation: "Correct. In C#, System.Exception is the base class that all derived exception types inherit from."
+      explanation: "Correct. In C#, `System.Exception` is the base class that all derived exception types inherit from."
   - content: "Which property of an exception object can be used to determine where an error occurred?"
     choices:
     - content: "InnerException."

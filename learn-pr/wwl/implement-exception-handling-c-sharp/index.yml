@@ -10,9 +10,9 @@ metadata:
 title: Implement exception handling in C# console applications
 summary: Learn about exceptions, the exception handling process supported by C#, and then implement exception handling patterns for various coding scenarios.
 abstract: |
-  - Examine the basic categories of exceptions and review some common system exceptions.
-  - Examine the exception handling tools included with C# and the techniques for these tools.
-  - Implement the `try-catch` pattern within various coding scenarios.
+  *   Examine the basic categories of exceptions and review some common system exceptions.
+  *   Examine the exception handling tools included with C# and techniques for using these tools.
+  *   Implement the `try-catch` pattern within various coding scenarios.
 prerequisites: |
   - An installation of Visual Studio Code that's configured for C# application development.
   - Ability to develop C# console applications that implement business logic using iteration statements, selection statements, and custom methods.

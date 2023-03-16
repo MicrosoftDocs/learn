@@ -5,9 +5,9 @@ Runtime errors in a C# application are managed using a mechanism called exceptio
 
 ## Common scenarios that require exception handling
 
-There are several common C# programming scenarios that require exception handling. Many of these scenarios involve some form of data acquisition. Although some of the scenarios involve coding techniques that are outside the scope of this training, they're still worth noting.
+There are several programming scenarios that require exception handling. Many of these scenarios involve some form of data acquisition. Although some of the scenarios involve coding techniques that are outside the scope of this training, they're still worth noting.
 
-Common scenarios that may require exception handling include:
+Common scenarios that require exception handling include:
 
 - User input: Exceptions can occur when code processes user input. For example, exceptions occur when the input value is in the wrong format or out of range.
 
