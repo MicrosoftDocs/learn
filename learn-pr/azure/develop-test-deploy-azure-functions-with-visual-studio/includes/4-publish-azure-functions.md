@@ -1,4 +1,4 @@
-An Azure Function runs in the cloud in the context of an Azure Function App. A Function App is a container that specifies the operating system and resources, such as the memory, computing power, and disk space, for running an Azure Function. The Azure Function App also provides the public URL for running your function. Behind the scenes, an Azure Function App is a collection of one or more virtual machines (VMs) running a web server. When you publish an Azure Function, you deploy it to these VMs.
+Your function code runs in Azure in the context of a function app. A function app defines the operating system and resources, such as the memory, computing power, and disk space, for running your function code. It provides the base address for accessing your functions. The function app is dynamically scaled when your functions need more resources.
 
 In the luxury watch online website scenario, you'll deploy the Azure Functions you create to the cloud. First create an Azure Function App, and then publish your functions to the Function App.
 
