@@ -14,7 +14,7 @@ metadata:
 title: Build your first Azure IoT Central application to manage your coffee machines
 summary: Create an Azure IoT Central custom application to monitor telemetry, observe the state of the coffee machine simulator, send commands and configure rules for maintenance notifications.
 abstract: |
-  Upon completion of this module, you will be able to:
+  Upon completion of this module, you'll be able to:
   - Create an Azure IoT Central custom application
   - Connect a coffee machine simulator to your application
   - Monitor telemetry and send commands to the simulator
