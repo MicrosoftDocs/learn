@@ -1,4 +1,4 @@
-If you're running workloads in Azure PaaS services with private endpoint, or IaaS workloads with Azure provided DNS, these workloads use Azure private DNS zones for name resolution within Azure. In a hybrid environment, when an on-premises network is required to connect these workloads through FQDN/domain name, it requires that you are able to resolve names hosted in Azure private DNS zones.
+If you're running workloads in Azure PaaS services with private endpoint, or IaaS workloads with Azure provided DNS, these workloads use Azure private DNS zones for name resolution within Azure. In a hybrid environment, when an on-premises network is required to connect these workloads through FQDN/domain name, it requires that you're able to resolve names hosted in Azure private DNS zones.
 
 An Azure DNS Private Resolver deployed in a virtual network acts as a resolver to handle name resolution queries from on-premises to Azure and vice versa.
 
@@ -40,6 +40,6 @@ Forwarding rules are used for conditional forwarding DNS queries for a domain to
 
 In a hybrid environment, name resolution from on-premises is sent to an Azure DNS private resolver inbound endpoint IP address. The inbound endpoint resolves the name from Azure Private DNS zones linked to the Virtual network where resolver is deployed or from public internet DNS namespace if no matching record is found.
 
-When name resolution from Azure to on-premises, to other clouds, or to an external DNS is required, the Azure DNS private resolver outbound endpoint can conditionally forwards these requests to target DNS servers by using a forwarding ruleset.
+When name resolution from Azure to on-premises, to other clouds, or to an external DNS is required, the Azure DNS private resolver outbound endpoint can conditionally forward these requests to target DNS servers by using a forwarding ruleset.
 
-The DNS frorwarding ruleset is comprised of or more DNS forwarding rules.
+The DNS forwarding ruleset contains one or more DNS forwarding rules.
