@@ -368,6 +368,6 @@ Congratulations! You've successfully thrown, caught, and handled an exception.
 
 Here are a few important things to remember from this unit:
 
-- Configuring the debug environment to enable console input and output.
-- Updating a method to throw an exception when an issue or condition is detected.
-- Catching an exception in the calling code when a method throws an exception.
+- Configure the debug environment to enable console input and output.
+- Update a method to throw an exception when an issue or condition is detected.
+- Catch an exception in the calling code when a method throws an exception.
