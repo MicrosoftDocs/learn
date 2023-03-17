@@ -1,4 +1,4 @@
-*Azure Arc* is a service that provides a set of technologies for organizations such as Contoso that wants to simplify their complex and distributed environments.
+*Azure Arc* is a service that provides a set of technologies for organizations such as Contoso that want to simplify their complex and distributed environments.
 
 *Azure Arc* is a set of technologies that brings Azure security and cloud-native services to hybrid and multicloud environments. It provides a centralized, unified, and self-service approach to managing, securing, and monitoring:
 
@@ -12,7 +12,7 @@ Azure Arc also extends adoption of cloud native services and DevOps across hybri
 
 Continuous improvements have been made to the Azure control plane. This control plane is responsible for managing the lifecycle of resources such as VMs, database instances, Apache Hadoop clusters, and Kubernetes clusters.
 
-For example, every time Contoso provisions, scales, stops, or terminates a resource—such as an Azure VM—the Azure fabric controller processes this operation. In between the fabric controller and the resources are another layer called the *Azure Resource Manager* that automates the resource lifecycle. Azure has resource providers for each of these resource types hosted in Azure.
+For example, every time Contoso provisions, scales, stops, or terminates a resource—such as an Azure VM—the Azure fabric controller processes this operation. In between the fabric controller and the resources is another layer called the *Azure Resource Manager* that automates the resource lifecycle. Azure has resource providers for each of these resource types hosted in Azure.
 
 > [!NOTE]
 > Azure Resource Manager provides a management layer that enables you to create, update, and delete your Azure resources.
