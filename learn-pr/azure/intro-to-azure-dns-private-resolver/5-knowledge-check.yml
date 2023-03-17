@@ -5,9 +5,9 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: "Knowledge check for intro to Azure DNS Private Resolver."
-  ms.date: 4/26/2022
-  author: ricmmartins
-  ms.author: ricmart
+  ms.date: 03/17/2022
+  author: greg-lindsay
+  ms.author: greglin
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 5

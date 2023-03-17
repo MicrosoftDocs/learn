@@ -4,9 +4,9 @@ metadata:
   moduleType: introduction        
   title: Intro to Azure DNS Private Resolver
   description: "Introduction to Azure DNS Private Resolver"
-  ms.date: 4/26/2022  
-  author: ricmmartins 
-  ms.author: ricmart  
+  ms.date: 03/17/2022
+  author: greg-lindsay
+  ms.author: greglin  
   ms.topic: interactive-tutorial
   ms.prod: learning-azure       
 title: Intro to Azure DNS Private Resolver
