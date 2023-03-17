@@ -1,6 +1,5 @@
 
 
-
 In this exercise, you'll review the Starter project code and then begin updating the application. Your first coding task will be creating the arrays that hold student exam scores. Once your application data is available in arrays, you'll begin working on a `foreach` loop that can be used to sum student grades. The detailed tasks that you'll complete during this exercise are:
 
 1. Code review: review the contents of the Program.cs file.
@@ -69,7 +68,7 @@ In this task, you'll review the code that's provided as a Starter project for th
 
     Next, you see a comment line followed by a list of variables that are used to hold the scores of graded assignments for each student. Your first variable, `currentAssignments` is used to hold the number of exams that have been scored.
 
-    The assignment score variables represent a great opportunity to use arrays!
+    The assignment score variables represent a great opportunity to create and use arrays!
 
 1. Scroll down and review the two groups of variable declaration code lines.
 
