@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/16/2023
+  ms.date: 03/17/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
@@ -43,11 +43,11 @@ quiz:
       explanation: "Blocking user is a valid choice, but you can't know if a password is stolen or not."
     - content: "Configure IP addresses outside the company intranet that should be blocked."
       isCorrect: false
-      explanation: "Configuring an IP addresses outside the company intranet that should be blocked is correct. Trusted IPs is a feature to allow federated users or IP address ranges to bypass two-step authentication. The Trusted IPs bypass works only from inside of the company intranet. Azure Conditional Access provides extra options if needed."
+      explanation: "Configuring an IP addresses outside the company intranet that should be blocked is correct. Trusted IP's is a feature to allow federated users or IP address ranges to bypass two-step authentication. The Trusted IPs bypass works only from inside of the company intranet. Azure Conditional Access provides extra options if needed."
     - content: "Configure a one-time bypass to allow a user to authenticate a single time without performing multi-factor authentication. The bypass is temporary and expires after a specified number of seconds. In situations where the mobile app or phone isn't receiving a notification or phone call, you can allow a one-time bypass so the user can access the desired resource."
       isCorrect: true
       explanation: "Allowing one-time access is an available option."
-  - content: "When configuring Azure AD roles, which of the following roles would allow the user to manage all the groups in a tenant and would be able to assign other admin roles?"
+  - content: "Which of the following roles would allow the user to manage all the groups in a tenant and would be able to assign other admin roles?"
     choices:
     - content: "Global administrator"
       isCorrect: true
