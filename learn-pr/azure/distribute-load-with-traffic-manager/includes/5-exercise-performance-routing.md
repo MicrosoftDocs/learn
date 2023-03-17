@@ -57,7 +57,7 @@ Your network architect would like to ensure customers have the best performance.
         --output tsv)
     ```
 
-1. Depending on where you're located, you'll be directed to the best-performing endpoint.
+1. Depending on where you're located, you're directed to the best-performing endpoint.
 
     :::image type="content" source="../media/5-performance-testing.png" alt-text="Screenshot of a webpage running the web app closest to you." loc-scope="other":::
 
@@ -71,7 +71,7 @@ Your network architect would like to ensure customers have the best performance.
             --output tsv)
     ```
 
-    The `nslookup` command returns where the domain name resolves. For example, if you're closest to Europe, it returns the following:
+    The `nslookup` command returns where the domain name resolves. For example, if you're closest to Europe, it returns the following output:
 
     ```output
     Non-authoritative answer:
