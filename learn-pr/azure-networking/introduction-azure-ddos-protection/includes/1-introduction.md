@@ -2,9 +2,10 @@ Consider which Distributed Denial of Service protection (DDoS protection) servic
 
 Contoso, Ltd. is a growing financial services company based in London with major offices located throughout the world. They’re continuing to move their on-premises services to Azure.
 
-The IT director asked you, their lead system engineer and Azure administrator, to evaluate the risks and benefits of upgrading to Azure DDoS Protection from the no-cost Azure DDoS infrastructure protection option that’s part of every property in Azure.
+The IT director asked you, their lead system engineer and Azure administrator, to evaluate the risks and benefits of upgrading to Azure DDoS Protection from the no-cost Azure DDoS Infrastructure Protection option that’s part of every property in Azure.
 
-After completing this module, you’ll understand the basics of DDoS attacks and the features of the Azure DDoS Protection infrastructure service and Azure DDoS Protection service.
+
+After completing this module, you’ll understand the basics of DDoS attacks and the features of the Azure DDoS Infrastructure Protection service and Azure DDoS Protection service.
 
 ## Learning objectives
 
@@ -12,7 +13,7 @@ After completing this module, you’ll be able to:
 
 - Explain DDoS attack types and the components of an effective DDoS response strategy.
 
-- Compare Azure DDoS infrastructure protection and Azure DDoS Protection tiers.
+- Compare Azure DDoS Infrastructure Protection and Azure DDoS Protection tiers.
 
 - Evaluate Azure DDoS Protection, its features, and architecture options.
 

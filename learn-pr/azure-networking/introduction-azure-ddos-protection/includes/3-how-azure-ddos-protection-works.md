@@ -1,21 +1,22 @@
-After reviewing the previous chapter, you identified Contoso will benefit from the additional safeguards that the DDoS Protection service provides over the infrastructure protection service. In this unit, you’ll learn about the features of DDoS Protection and how it works.
+
+After reviewing the previous chapter, you identified Contoso will benefit from the additional safeguards that the DDoS Protection service provides over the Infrastructure Protection service. In this unit, you’ll learn about the features of DDoS Protection and how it works.
 
 ## Features of DDoS Protection
 
-As outlined in the previous unit, Azure DDoS Protection provides more capabilities than the Infrastructure tier.
+As outlined in the previous unit, Azure DDoS Protection provides more capabilities than Infrastructure Protection.
 
 ### DDoS Protection
 
-When enabling DDoS Protection, the first step is to associate virtual networks or IP addresses to  DDoS Protection. Only services with a public IP address on the virtual networks are protected. For example, the public IP of an Azure Web Application Firewall that's available in Azure Application Gateway and deployed for layer 7 protections is protected. Any systems using non-routeable IP addresses on the protected virtual network aren’t included in the Protection Plan. This is a customer benefit, because these systems are not internet-facing and there's no charge for their protection.
+When enabling DDoS Protection, the first step is to associate virtual networks or IP addresses to  DDoS Protection. Only services with a public IP address on the virtual networks are protected. For example, the public IP of an Azure Web Application Firewall that's available in Azure Application Gateway and deployed for layer 7 protections is protected. Any systems using non-routeable IP addresses on the protected virtual network aren’t included in the Protection Plan. This is a customer benefit, because these systems aren't internet-facing and there's no charge for their protection.
 
 > [!NOTE]
 > To simplify deployment, you can configure DDOS Network Protection for your organization and link virtual networks from multiple subscriptions to the same plan.
 
-After configuring DDoS Network Protection, you need to add protected resources. You can select the services that will get DDoS Protection by using your user-defined Azure Resource Groups, Management Groups, or Subscriptions. Alternatively, you can enable DDoS IP protection on a singular IP address. This is useful if you require protection for less than 100 IP addresses or you are testing DDoS Protection in your environment.
+After configuring DDoS Network Protection, you need to add protected resources. You can select the services that will get DDoS Protection by using your user-defined Azure Resource Groups, Management Groups, or Subscriptions. Alternatively, you can enable DDoS IP protection on a singular IP address. This is useful if you require protection for less than 100 IP addresses or you're testing DDoS Protection in your environment.
 
 Your DDoS policy is generated when you enable DDoS Protection. It's auto-configured and optimized by applying machine learning algorithms and using specific network traffic monitoring.
 
-DDoS Protection monitors network traffic and constantly compares it to the limits defined in the DDoS policy. When your traffic exceeds the maximum limit, DDoS mitigation is initiated automatically. During the mitigation, packets sent to a protected resource are rerouted by the DDoS protection service. Several checks are performed on this traffic, to help ensure that packets conform to internet specifications and are not malformed. Valid IP traffic is forwarded to the intended service. DDoS Protection applies three auto-tuned mitigation policies&#8212;TCP SYN, TCP, and UDP&#8212;for each public IP address associated with a protected resource.
+DDoS Protection monitors network traffic and constantly compares it to the limits defined in the DDoS policy. When your traffic exceeds the maximum limit, DDoS mitigation is initiated automatically. During the mitigation, packets sent to a protected resource are rerouted by the DDoS protection service. Several checks are performed on this traffic, to help ensure that packets conform to internet specifications and aren't malformed. Valid IP traffic is forwarded to the intended service. DDoS Protection applies three auto-tuned mitigation policies&#8212;TCP SYN, TCP, and UDP&#8212;for each public IP address associated with a protected resource.
 
 When traffic decreases to less than the applicable threshold, the mitigation is suspended. This protection doesn't apply to App Service environments.
 
@@ -36,7 +37,7 @@ Each Azure application has its own traffic pattern, which is unique like a human
 
 In the event this application starts receiving traffic outside the standard range, your DDoS Protection mitigation policy upper limit will be increased to support what might be a seasonal surge.
 
-If someone is trying to DDoS your application, the traffic would continue to grow. At that point, DDoS Protection triggers alerts, because something seems anomalous with the traffic. The incoming traffic to the application will be inspected in real time to test for valid packets. Invalid packets will be dropped so they do not impact the availability and performance of your application.
+If someone is trying to DDoS your application, the traffic would continue to grow. At that point, DDoS Protection triggers alerts, because something seems anomalous with the traffic. The incoming traffic to the application will be inspected in real time to test for valid packets. Invalid packets will be dropped so they don't impact the availability and performance of your application.
 
 ### DDoS Protection metrics
 
