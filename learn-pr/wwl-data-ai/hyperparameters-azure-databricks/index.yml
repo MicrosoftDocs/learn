@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.wwl.hyperparameters-azure-databricks
+metadata:
+  title: Tune hyperparameters in Azure Databricks
+  description: "Learn how to use the Hyperopt library in Azure Databricks to tune machine learning hyperparameters."
+  ms.date: 03/17/2023
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.service: azure-databricks
+title: Tune hyperparameters in Azure Databricks
+summary: Tuning hyperparameters is an essential part of machine learning. In Azure Databricks, you can use the Hyperopt library to optimize hyperparameters automatically.
+abstract: |
+  In this module, you will learn how to:
+  - Use the Hyperopt library to optimize hyperparameters.
+  - Distribute hyperparameter tuning across multiple worker nodes.
+prerequisites: |
+  Before starting this module, you should be familiar with how to train machine learning models in Azure Databricks.
+iconUrl: /training/achievements/hyperparameters-azure-databricks.svg
+levels:
+- intermediate
+roles:
+- data-scientist
+products:
+- azure-databricks
+subjects:
+- data-ai
+- data-science
+- machine-learning
+units:
+- learn.wwl.hyperparameters-azure-databricks.introduction
+- learn.wwl.hyperparameters-azure-databricks.hyperopt
+- learn.wwl.hyperparameters-azure-databricks.review-hyperopt-trials
+- learn.wwl.hyperparameters-azure-databricks.scale-hyperopt
+- learn.wwl.hyperparameters-azure-databricks.exercise-use-mlflow
+- learn.wwl.hyperparameters-azure-databricks.knowledge-check
+- learn.wwl.hyperparameters-azure-databricks.summary
+badge:
+  uid: learn.wwl.hyperparameters-azure-databricks.badge

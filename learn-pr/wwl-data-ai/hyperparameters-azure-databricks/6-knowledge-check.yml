@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.hyperparameters-azure-databricks.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/17/2023
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.service: azure-databricks
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "Which function should you use to initiate Hyperopt trials?"
+    choices:
+    - content: "hyperopt.tpe.suggest"
+      isCorrect: false
+      explanation: "That's incorrect. The hyperopt.tpe.suggest constant is used to specify a TPE search algorithm."
+    - content: "hyperopt.hp.choice"
+      isCorrect: false
+      explanation: "That's incorrect. The hyperopt.htp.choice function defines an expression for a hyperparameter range."
+    - content: "hyperopt.fmin"
+      isCorrect: true
+      explanation: "That's correct. The fmin function controls the Hyperopt process to minimize an objective function."
+  - content: "Which of these objects defines the set of hyperparameter values from which Hyperopt can sample when running trials?"
+    choices:
+    - content: "An *objective* function"
+      isCorrect: false
+      explanation: "That's incorrect. An objective function does not define a set of possible hyperparameter values."
+    - content: "A search space"
+      isCorrect: true
+      explanation: "That's correct. A search space defines a set of possible hyperparameter values."
+    - content: "A search algorithm"
+      isCorrect: false
+      explanation: "That's incorrect. A search algorithm does not define a set of possible hyperparameter values."
+  - content: "Which class should you use to track details of each hyperparameter tuning run when using Spark MLLib?"
+    choices:
+    - content: "Trials"
+      isCorrect: true
+      explanation: "That's correct. The Trials class tracks details from each trial run."
+    - content: "SparkTrials"
+      isCorrect: false
+      explanation: "That's incorrect. SparkTrials is used to parallelize runs when using a non-distributed framework."
+    - content: "RDD"
+      isCorrect: false
+      explanation: "That's incorrect. An RDD is a core Spark structure for data."
