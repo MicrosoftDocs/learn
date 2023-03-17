@@ -8,6 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 durationInMinutes: 8
 content: |
   [!include[](includes/6-examine-launch-configurations.md)]

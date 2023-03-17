@@ -60,7 +60,7 @@ The RUN AND DEBUG view provides access to runtime tools that can be invaluable d
 
 At the top of the RUN AND DEBUG view, you can find the launch controls:
 
-![Screenshot showing sections of the Visual Studio Code debugger user interface.](../media/vscode-debugger-sidebar-controls.png)
+![Screenshot showing the Controls panel for the Run and Debug view.](../media/vscode-debugger-sidebar-controls.png)
 
 1. Start debugging. This button (a green arrow) is used to start a debug session.
 
