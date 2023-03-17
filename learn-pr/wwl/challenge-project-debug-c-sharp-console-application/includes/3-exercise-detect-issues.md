@@ -24,11 +24,17 @@ The reported transaction output must include:
 
 To validate that your application produces the expected results when implementing the specified simulation requirements, complete the following steps:
 
+1. Ensure that the **ChallengeProject** folder is open in Visual Studio Code.
+
+1. In the EXPLORER view, expand the **ChallengeProject** and **Starter** folders.
+
+    The **Starter** folder contains the sample application for this Guided project module.
+
 1. Open the Program.cs file in the Visual Studio Code Editor.
 
-1. Configure application to use the `testData` array for the simulated transactions (`useTestData = true`).
+1. Configure the debug environment and launch configuration.
 
-1. Configure the debug environment if needed.
+1. Configure application to use the `testData` array for the simulated transactions (`useTestData = true`).
 
 1. Run the application in a debug session.
 
