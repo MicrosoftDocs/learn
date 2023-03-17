@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-c-sharp-methods-return-values.exercise-create-methods-return-numbers
+title: Return numbers from methods
+metadata:
+  title: Return numbers from methods
+  description: "Return numbers from methods"
+  ms.date: 03/17/2023
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-exercise-create-methods-return-numbers.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What data type will be returned from the following statement: `return 100 * 0.5;`"
+    choices:
+    - content: "An `int` type"
+      isCorrect: false
+      explanation: "That's incorrect. This line of code will return a `double`."
+    - content: "A `decimal` type"
+      isCorrect: false
+      explanation: "That's incorrect. This line of code will return a `double`."
+    - content: "A `double` type"
+      isCorrect: true
+      explanation: "That's correct. Since an integer literal is being multiplied by a double, this line of code will return a double."
+  - content: "Which type of method does not need to include a `return` statement?"
+    choices:
+    - content: "`string` methods"
+      isCorrect: false
+      explanation: "That's incorrect. Methods that declare a `string` return type must use `return` to return a `string`."
+    - content: "`void` methods"
+      isCorrect: true
+      explanation: "That's correct! `void` methods do not need to use a `return` statement."
+    - content: "array methods"
+      isCorrect: false
+      explanation: "That's incorrect. Methods that declare an array return type must use `return` to return an array."

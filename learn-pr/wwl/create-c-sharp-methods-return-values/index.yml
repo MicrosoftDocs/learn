@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.create-c-sharp-methods-return-values
+metadata:
+  title: Create C# methods that return values
+  description: "Create C# methods that return values"
+  ms.date: 03/17/2023
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create C# methods that return values
+summary: Learn to create methods that return values
+abstract: |
+  - Understand return types
+  - Learn more about the `return` keyword
+  - Learn more about capturing method return values
+prerequisites: |
+  - Experience using C# data types including `int`, `string`, arrays, and 2D arrays
+  - Experience using `switch` statements, if-else statements, and for-loops
+  - Experience using the `Random` class to generate a random number.
+  - Basic understanding of C# methods
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+- k-12-educator
+- student
+products:
+- dotnet-framework
+- vs-code
+units:
+- learn.wwl.create-c-sharp-methods-return-values.introduction
+- learn.wwl.create-c-sharp-methods-return-values.exercise-understand-return-type-syntax
+- learn.wwl.create-c-sharp-methods-return-values.exercise-create-methods-return-numbers
+- learn.wwl.create-c-sharp-methods-return-values.exercise-create-methods-return-strings
+- learn.wwl.create-c-sharp-methods-return-values.exercise-create-methods-return-booleans
+- learn.wwl.create-c-sharp-methods-return-values.exercise-create-methods-return-arrays
+- learn.wwl.create-c-sharp-methods-return-values.exercise-challenge-dice-game
+- learn.wwl.create-c-sharp-methods-return-values.review-solution-dice-game
+- learn.wwl.create-c-sharp-methods-return-values.knowledge-check
+- learn.wwl.create-c-sharp-methods-return-values.summary
+badge:
+  uid: learn.wwl.create-c-sharp-methods-return-values.badge
