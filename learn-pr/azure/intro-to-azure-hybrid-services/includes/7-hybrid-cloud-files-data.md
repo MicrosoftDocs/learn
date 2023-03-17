@@ -9,7 +9,7 @@ In this unit, you'll learn how certain hybrid technologies allow Tailwind Trader
 
 ## What is an Azure file share?
 
-An Azure file share allows you to create a secure SMB 3.0 file share hosted in Azure. You can integrate Azure Files with Azure Active Directory (Azure AD) and Azure AD Connect to allow people to use their on-premises account credentials or their Azure AD credentials to securely access the Azure file share endpoint. 
+Azure Files offers two industry-standard protocols for mounting Azure file share: the Server Message Block (SMB) protocol and the Network File System (NFS) protocol. You can integrate Azure Files with Azure Active Directory (Azure AD) and Azure AD Connect to allow people to use their on-premises account credentials or their Azure AD credentials to securely access the Azure file share endpoint. 
 
 You can also configure Azure file shares to support access control list (ACL) permissions. This allows you to limit access to files and folders in the same way that you would secure files and folders for an on-premises file server. 
 

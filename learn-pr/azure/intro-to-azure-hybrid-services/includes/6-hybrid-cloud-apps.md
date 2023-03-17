@@ -7,7 +7,7 @@ In this unit, you'll learn about the technologies that allow Tailwind Traders to
 
 ## What is Azure Relay?
 
-Azure Relay, previously called Service Bus Relay, is a service that you can use to securely expose workloads that run on your organization's internal network to the public cloud. The service enables you to do this without opening an inbound port on a perimeter network firewall.
+Azure Relay is a service that you can use to securely expose workloads that run on your organization's internal network to the public cloud. The service enables you to do this without opening an inbound port on a perimeter network firewall.
 
 Azure Relay supports the following scenarios between on-premises services and applications running in Azure:
 

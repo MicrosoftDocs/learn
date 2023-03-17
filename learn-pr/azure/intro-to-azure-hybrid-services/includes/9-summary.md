@@ -18,7 +18,7 @@ You can learn more by referencing the following documentation:
 - [Azure Stack HCI solution overview][azure-stack-hci-overview]
 - [High-performance computing (HPC) on Azure][high-performance-computing]
 - [What is Azure Arc enabled Kubernetes?][kubernetes-overview]
-- [Bring Azure data services to your infrastructure with Azure Arc][bring-azure-data-services-to-your-infrastructure-with-azure-arc]
+- [What are Azure Arc enabled data services?][data-overview]
 - [About Site Recovery][site-recovery-overview]
 - [What is Azure Relay?][azure-relay-relay-what-is-it]
 - [Azure App Service Hybrid Connections][app-service-hybrid-connections]
@@ -26,7 +26,8 @@ You can learn more by referencing the following documentation:
 - [Kerberos Constrained Delegation for single sign-on to your apps with Application Proxy][application-proxy-configure-single-sign-on-with-kcd]
 - [Header-based single sign-on for on-premises apps with Azure AD App Proxy][application-proxy-configure-single-sign-on-with-headers]
 - [Publish Remote Desktop with Azure AD Application Proxy][application-proxy-integrate-with-remote-desktop-services]
-- [Create an SMB Azure file share][storage-how-to-create-file-share]
+- [SMB file shares in Azure Files][files-smb-protocol]
+- [NFS file shares in Azure Files][files-nfs-protocol]
 - [Deploy Azure File Sync][file-sync-deployment-guide]
 - [Stretch Database][stretch-database]
 - [Microsoft Defender for Cloud documentation][defender-for-cloud]
@@ -54,7 +55,7 @@ You can also learn more by reviewing the following Microsoft Training modules:
 [azure-stack-hci-overview]: /azure-stack/hci/overview?azure-portal=true
 [high-performance-computing]: /azure/architecture/topics/high-performance-computing?azure-portal=true
 [kubernetes-overview]: /azure/azure-arc/kubernetes/overview?azure-portal=true
-[bring-azure-data-services-to-your-infrastructure-with-azure-arc]: https://azure.microsoft.com/blog/bring-azure-data-services-to-your-infrastructure-with-azure-arc/?azure-portal=true
+[data-overview]: /azure/azure-arc/data/overview?azure-portal=true
 [site-recovery-overview]: /azure/site-recovery/site-recovery-overview?azure-portal=true
 [azure-relay-relay-what-is-it]: /azure/azure-relay/relay-what-is-it?azure-portal=true
 [app-service-hybrid-connections]: /azure/app-service/app-service-hybrid-connections?azure-portal=true
@@ -62,7 +63,8 @@ You can also learn more by reviewing the following Microsoft Training modules:
 [application-proxy-configure-single-sign-on-with-kcd]: /azure/active-directory/app-proxy/application-proxy-configure-single-sign-on-with-kcd?azure-portal=true
 [application-proxy-configure-single-sign-on-with-headers]: /azure/active-directory/app-proxy/application-proxy-configure-single-sign-on-with-headers?azure-portal=true
 [application-proxy-integrate-with-remote-desktop-services]: /azure/active-directory/app-proxy/application-proxy-integrate-with-remote-desktop-services?azure-portal=true
-[storage-how-to-create-file-share]: /azure/storage/files/storage-how-to-create-file-share?azure-portal=true
+[files-smb-protocol]: /azure/storage/files/files-smb-protocol?azure-portal=true
+[files-nfs-protocol]: /azure/storage/files/files-nfs-protocol?azure-portal=true
 [file-sync-deployment-guide]: /azure/storage/file-sync/file-sync-deployment-guide?azure-portal=true
 [stretch-database]: /sql/sql-server/stretch-database/stretch-database?azure-portal=true
 [defender-for-cloud]: /azure/defender-for-cloud/?azure-portal=true

@@ -13,23 +13,33 @@ In this unit, you'll learn about various methods of supporting compute workloads
 
 Azure Arc enabled servers allow organizations to manage Windows and Linux servers on networks outside Azure. This capability includes servers hosted on internal organizational networks and those hosted on third-party cloud IaaS infrastructure.
 
-When you hybrid connect a computer to Azure by using Azure Arc to install the Azure Arc for Servers agent, the server can be treated as an Azure resource. You can then manage the server as part of a resource group within a subscription. You can also apply Azure Policy for configuration and management, along with applying tags. 
+When you hybrid connect a computer to Azure by using Azure Arc to install the Azure Arc enabled servers agent, the server can be treated as an Azure resource. You can then manage the server as part of a resource group within a subscription. You can also apply Azure Policy for configuration and management, along with applying tags. 
 
-The Azure Arc for Servers agent supports the following Windows and Linux operating systems:
+The Azure Arc enabled servers agent supports the following Windows and Linux operating systems:
 
-- Windows Server 2012 R2 and newer (including Windows Server Core)
-- Ubuntu 16.04 and 18.04 (x64)
-- CentOS Linux 7 (x64)
-- SUSE Linux Enterprise Server (SLES) 15 (x64)
-- Red Hat Enterprise Linux (RHEL) 7 (x64)
-- Amazon Linux 2 (x64)
+- Windows Server 2008 R2 SP1, 2012 R2, 2016, 2019, and 2022
+  - Both Desktop and Server Core experiences are supported
+  - Azure Editions are supported on Azure Stack HCI
+- Windows 10, 11 (see client operating system guidance)
+- Windows IoT Enterprise
+- Azure Stack HCI
+- Ubuntu 16.04, 18.04, 20.04, and 22.04 LTS
+- Debian 10 and 11
+- CentOS Linux 7 and 8
+- Rocky Linux 8
+- SUSE Linux Enterprise Server (SLES) 12 SP3-SP5 and 15
+- Red Hat Enterprise Linux (RHEL) 7, 8 and 9
+- Amazon Linux 2
+- Oracle Linux 7 and 8
 
-Azure Arc enabled servers support the following functionality:
+Only x86-64 (64-bit) architectures are supported.
+
+Azure Arc enabled servers agent supports the following functionality:
 
 - The Azure Policy guest configuration functionality allows you to validate operating system configuration.
 - Resource context for Azure Monitor Log Analytics data allows you to limit the scope of who can access server telemetry by using Azure role-based access control (RBAC).
 
-The functionality included when the Azure Arc for Servers agent is deployed on computers in hybrid environments is evolving. Eventually, other functionality that's presently available for managing Windows and Linux VMs in Azure might be enabled for Azure Arc enabled servers. This functionality includes the ability to remotely run automation, track and limit application execution, and track and limit remote shell access.
+The functionality included when the Azure Arc enabled servers agent is deployed on computers in hybrid environments is evolving. For the latest information refer to [Azure Arc support cloud operations](/azure/azure-arc/servers/overview#supported-cloud-operations?azure-portal=true) and [what's new with Azure arc enabled servers](/azure/azure-arc/servers/agent-release-notes?azure-portal=true)
 
 For Tailwind Traders, having a single location to manage Windows Server and Linux workloads across the entire hybrid environment will address some of the operations team's concerns about the hybrid environment's complexity.
 

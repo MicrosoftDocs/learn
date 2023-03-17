@@ -39,9 +39,9 @@ Tailwind Traders currently has an on-premises SIEM system that collects and anal
 
 It's also likely that Tailwind Traders will connect its existing SIEM solution to Sentinel. This connection will give the company the benefits of Sentinel's AI and deep learning without having to substantially modify the existing on-premises configuration.
 
-## What is Azure Update Management?
+## What is Azure Automation Update Management?
 
-Azure Update Management allows you to manage the updates to your on-premises and cloud server operating systems by using a single console in the cloud. Update Management works with Microsoft Windows Server workloads and with supported Linux operating system workloads running physically and virtually. 
+Azure Automation Update Management allows you to manage the updates to your on-premises and cloud server operating systems by using a single console in the cloud. Update Management works with Microsoft Windows Server workloads and with supported Linux operating system workloads running physically and virtually. 
 
 Update Management can use Microsoft Update or Windows Server Update Services (WSUS) as a source of updates for Windows Server operating systems. Update Management can also use a public or custom Linux package repository for updates to Linux operating systems. Update Management allows you to determine which updates are currently missing from enrolled operating systems. 
 
