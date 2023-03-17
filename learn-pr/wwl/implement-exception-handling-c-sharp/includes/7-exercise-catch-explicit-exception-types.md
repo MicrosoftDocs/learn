@@ -322,5 +322,5 @@ There are times when variations in your data may cause different types of except
 
 Here are two important things to remember from this unit:
 
-- Updating the `catch` clause to catch a specific exception type, such as the `DivideByZeroException` exception type.
-- Accessing the properties of an exception object within the `catch` block, such as the `Message` and `StackTrace` properties.
+- Update the `catch` clause to catch a specific exception type, such as the `DivideByZeroException` exception type.
+- Access the properties of an exception object within the `catch` block, such as the `Message` and `StackTrace` properties.

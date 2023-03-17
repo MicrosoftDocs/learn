@@ -37,6 +37,12 @@ Your first step is to create a code project that you use during this module.
 
 1. Use the Visual Studio Code EXPLORER view to open the Program.cs file.
 
+1. After a few seconds, notice that a dialog box is displayed asking if you want to load the assets required for building and debugging.
+
+    Visual Studio Code recognizes the C# file extension, `.cs`, and recognizes that your "Exceptions101" project is missing the required assets.
+
+1. To load the required assets, select **Yes**.
+
 1. Replace the content of the Program.cs file with the following code:
 
     ```csharp
@@ -67,15 +73,15 @@ Your first step is to create a code project that you use during this module.
 
     ![Screenshot showing the Continue button on the Debug toolbar.](../media/vscode-debug-toolbar-continue.png)
 
-1. Take a minute to examine the output that your application produced.
+1. Take a minute to examine the message output for your application.
 
     ```output
     ∞
     Unhandled exception. System.DivideByZeroException: Attempted to divide by zero.
-       at Program.<Main>$(String[] args) in C:\Users\msuser\Desktop\Debug1\Program.cs:line 7
+       at Program.<Main>$(String[] args) in C:\Users\msuser\Desktop\Exceptions101\Program.cs:line 7
     ```
 
-    Notice that the unhandled exception has caused your application to close after the first `Console.WriteLine()` statement has completed.
+    Notice that the unhandled exception has caused your application to shut down after the first `Console.WriteLine()` statement has completed.
 
 1. Enclose the two calculations within the code block of a `try` statement as follows:
 
@@ -98,7 +104,7 @@ Your first step is to create a code project that you use during this module.
 
     C# syntax requires a `catch` or `finally` clause when you use a `try` statement.
 
-1. Construct a `catch` code block below the `try` statement code block as follows:
+1. Construct a `catch` code block below the `try` code block as follows:
 
     ```csharp
     try
@@ -169,13 +175,13 @@ When an exception is thrown and the current method doesn't catch the exception, 
 
     - The top-level statements include the `try` code block that calls the `Process1()` method.
     - The `Process1()` method calls the `WriteMessage()` method.
-    - The `WriteMessage()` method contains the code where the exception will be thrown.
+    - The `WriteMessage()` method contains the code where the `DivideByZeroException` exception will be thrown.
 
     Notice that the exception will be generated in a method that's two call stack levels above the `try` and `catch` code blocks.
 
     ![Screenshot showing the Call Stack levels between where an exception is thrown and where it is caught.](../media/vscode-call-stack-levels-try-catch.png)
 
-    Top-level statements are represented as a method name `Main` in the call stack.
+    Top-level statements are represented as a method named `Main` in the call stack.
 
 1. On the Visual Studio Code **File** menu, select **Save**.
 
@@ -195,6 +201,6 @@ When an exception is thrown and the current method doesn't catch the exception, 
 
 Here are a few important things to remember from this unit:
 
-- Implementing a `try-catch` pattern to `try` specified code lines within your application and `catch` exceptions that occur within the scope of the `try` code block.
-- Using a `catch` block to catch an exception thrown at the same level of the call stack.
-- Using a `catch` block to catch an exception thrown at a higher level of the call stack.
+- Implement a `try-catch` pattern to `try` specified code lines within your application and `catch` exceptions that occur within the scope of the `try` code block.
+- Use a `catch` block to catch an exception thrown at the same level of the call stack.
+- Use a `catch` block to catch an exception thrown at a higher level of the call stack.
