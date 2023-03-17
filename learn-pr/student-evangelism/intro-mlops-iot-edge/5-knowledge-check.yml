@@ -29,10 +29,10 @@ quiz:
     choices:
     - content: "A data scientist won't be able to conduct experiments."
       isCorrect: false
-      explanation: "Incorrect. A data scientist can conduct experiments even without MLOps."
+      explanation: "Incorrect. A data scientist can conduct experiments without MLOps."
     - content: "A data scientist won't be able to test models."
       isCorrect: false
-      explanation: "Incorrect. A data scientist can test models even without MLOps."
+      explanation: "Incorrect. A data scientist can test models without MLOps."
     - content: "A data scientist wouldn't be able to collaborate with developers efficiently."
       isCorrect: true
       explanation: "Correct. A data scientist wouldn't be able to collaborate effectively with developers in the absence of MLOps because they would be each following different workflow."
