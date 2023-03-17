@@ -4,10 +4,11 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/16/2023
+  ms.date: 03/17/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 durationInMinutes: 4
 quiz:
   title: "Check your knowledge"
@@ -38,7 +39,7 @@ quiz:
     choices:
     - content: "The program crashes and closes."
       isCorrect: false
-      explanation: "Incorrect. An exception is throw when a system error occurs. If the exception is caught and handled, execution continues normally."
+      explanation: "Incorrect. An exception is thrown when a system error occurs. If the exception is caught and handled, execution continues normally."
     - content: "The .NET runtime creates and throws an exception."
       isCorrect: true
       explanation: "Correct. The .NET runtime throws an exception when a C# application generates a system error."

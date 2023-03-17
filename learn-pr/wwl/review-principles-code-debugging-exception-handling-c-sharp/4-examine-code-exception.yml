@@ -4,10 +4,11 @@ title: Examine exceptions and how exceptions are used
 metadata:
   title: Examine exceptions and how exceptions are used
   description: "Examine exceptions and how exceptions are used"
-  ms.date: 03/16/2023
+  ms.date: 03/17/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 durationInMinutes: 6
 content: |
   [!include[](includes/4-examine-code-exception.md)]
@@ -29,7 +30,7 @@ quiz:
     choices:
     - content: "No, exceptions can never be accessed."
       isCorrect: false
-      explanation: "Incorrect. **Explanation TBD**."
+      explanation: "Incorrect. Exceptions are objects that can be accessed."
     - content: "Yes, exceptions can be accessed and used to take corrective action."
       isCorrect: true
       explanation: "Correct. Exceptions are objects that can be accessed. The properties of an exception can be used to help determine corrective action."
@@ -40,7 +41,7 @@ quiz:
     choices:
     - content: "The program crashes and closes."
       isCorrect: false
-      explanation: "Incorrect. An exception is throw when a system error occurs. If the exception is caught and handled, execution will continue normally."
+      explanation: "Incorrect. An exception is thrown when a system error occurs. If the exception is caught and handled, execution will continue normally."
     - content: "An exception is created and thrown by the .NET runtime."
       isCorrect: true
       explanation: "Correct. The .NET runtime throws an exception when a C# application generates a system error."

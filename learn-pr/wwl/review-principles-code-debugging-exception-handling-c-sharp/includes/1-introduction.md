@@ -11,7 +11,7 @@ By the end of this module, you'll be able to explain the benefits of code debugg
 
 ## Learning objectives
 
-In this module, you will: 
+In this module, you will:
 
 - Review the responsibilities for software testing, debugging, and exception handling.
 - Examine the code debugging process and the benefits provided by code debugger tools.
