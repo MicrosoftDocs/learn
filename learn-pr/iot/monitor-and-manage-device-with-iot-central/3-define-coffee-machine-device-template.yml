@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.monitor-manage-device-with-iotcentral.define-coffee-machine-device-template
+title: Define the coffee machine device template
+metadata:
+  title: Define the coffee machine device template
+  description: This content is a part of Build your first Azure IoT Central application to manage your coffee machines
+  ms.date: 03/16/2023
+  author: asergaz
+  ms.author: sergaz
+  ms.reviewer: adchukwu
+  manager: lizross
+  ms.custom: engagement-fy23
+  ms.topic: module-build-your-first
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-define-coffee-machine-device-template.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "How many telemetry capabilities are defined in the Connected Coffee Maker model?"
+    choices:
+    - content: "Two: Water Temperature and Air Humidity."
+      isCorrect: false
+      explanation: "In the JSON device capability model, there are other two telemetry capabilities defined."
+    - content: "Four: Water Temperature, Air Humidity, Optimal Temperature and Device Warranty Expired."
+      isCorrect: false
+      explanation: "Optimal Temperature and Device Warranty Expired are properties to share configuration data between a device and your application."
+    - content: "Four: Water Temperature, Air Humidity, Brewing and Cup Detected."
+      isCorrect: True
+      explanation: "In the JSON device capability model, there are four capabilities of type Telemetry."
+
+  - content: "True or false: Optimal Temperature is a writable property."
+    choices:
+    - content: "True"
+      isCorrect: true
+      explanation: "In the JSON device capability model, Optimal Temperature is of type Property and writable value is set to true."
+    - content: "False"
+      isCorrect: false
+      explanation: "In the JSON device capability model, Optimal Temperature is of type Property though the writable value isn't set to false."
+
+  - content: "True or false: the connected coffee machine can start brewing remotely by using the command StartBrewing."
+    choices:
+    - content: "True"
+      isCorrect: true
+      explanation: "In the JSON device capability model, there's a command defined with name StartBrewing."
+    - content: "False"
+      isCorrect: false
+      explanation: "In the JSON device capability model, StartBrewing is of type Command, which allows you to remotely manage your device from your application."
