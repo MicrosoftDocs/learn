@@ -8,6 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
-durationInMinutes: 8
+  ms.prod: learning-azure
+durationInMinutes: 13
 content: |
   [!include[](includes/4-exercise-challenge-create-throw-exception.md)]

@@ -72,6 +72,18 @@ static void Process1(String[] userEntries)
 }
 ```
 
+Running this application generates the required output:
+
+```output
+'Process1' completed successfully.
+
+'Process1' encountered an issue, process aborted.
+Invalid data. User input values must be valid integers.
+
+An error occurred during 'Workflow1'.
+Invalid data. User input values must be non-zero values.
+```
+
 This code is merely "*one possible solution*" because there are many ways to create and throw exceptions. As long as you got the right results per the rules in the challenge, then you did great!
 
 If you succeeded, congratulations! Continue on to the knowledge check in the next unit.

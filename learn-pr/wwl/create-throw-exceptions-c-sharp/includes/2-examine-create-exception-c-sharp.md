@@ -42,7 +42,7 @@ throw invalidArgumentException;
 > [!NOTE]
 > The `Message` property of an exception is readonly. Therefore, a custom `Message` property must be set when instantiating the object.
 
-When customizing an exception object, it's important to provide clear error messages that describe the problem and how to resolve it. You can also include additional information such as stack traces and error codes to help users debug the issue.
+When customizing an exception object, it's important to provide clear error messages that describe the problem and how to resolve it. You can also include additional information such as stack traces and error codes to help users correct the issue.
 
 An exception object can also be created directly within a `throw` statement. For example:
 
@@ -105,7 +105,7 @@ static void BusinessProcess1(String[] userEntries)
 }
 ```
 
-In this code sample, the top-level code calls the `BusinessProcess1` method, passing in a string array that contains user entered values. The `BusinessProcess1` method expects user input values that can be converted to an integer. When the method encounters data with an invalid format, it creates an instance of the `FormatException` exception type using a customized `Message` property. The method then throws the exception. The exception is caught in the top-level code as an object named `ex`. Properties of the `ex` are examined before displaying the exception message to the user. First, the code examines the `StackTrace` property to see if it contains "BusinessProcess1". Second, the exception object `ex` is verified to be of type `FormatException`.
+In this code sample, the top-level statements call the `BusinessProcess1` method, passing in a string array that contains user entered values. The `BusinessProcess1` method expects user input values that can be converted to an integer. When the method encounters data with an invalid format, it creates an instance of the `FormatException` exception type using a customized `Message` property. The method then throws the exception. The exception is caught in the top-level statements as an object named `ex`. Properties of the `ex` object are examined before displaying the exception message to the user. First, the code examines the `StackTrace` property to see if it contains "BusinessProcess1". Second, the exception object `ex` is verified to be of type `FormatException`.
 
 ## Re-throwing exceptions
 
@@ -254,5 +254,5 @@ The following list identifies practices to avoid when throwing exceptions:
 Here are a few important things to remember from this unit:
 
 - The exception type must match the intended purpose of the exception as closely as possible.
-- To throw an exception, you create an instance of an exception-derived class, configure its properties, and then use the 'throw' keyword.
-- When creating an exception object, it's important to provide clear error messages and additional information to help users debug the issue.
+- To `throw` an exception, you create an instance of an exception-derived class, configure its properties, and then use the `throw` keyword.
+- When creating an exception object, it's important to provide clear error messages and additional information to help users correct the issue.

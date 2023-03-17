@@ -109,12 +109,25 @@ Use the following steps to complete the challenge:
 
 1. Verify that the sample application prints the following messages to the console:
 
+    ```output
+    'Process1' completed successfully.
+    
+    'Process1' encountered an issue, process aborted.
+    Invalid data. User input values must be valid integers.
+    
+    'Process1' encountered an issue, process aborted.
+    Invalid data. User input values must be non-zero values.
+    
+    An error occurred during 'Workflow1'.
+    Invalid data. User input values must be non-zero values.
+    ```
+
 1. Update the sample application using the following requirements:
 
     - All methods must be converted from `static string` methods to `static void` methods.
     - The `Process1` method must throw exceptions for each type of issue encountered.
-    - The `Workflow1` method must handle the `FormatException` exceptions.
-    - The top-level statements must handle the `DivideByZeroException` exceptions.
+    - The `Workflow1` method must catch and handle the `FormatException` exceptions.
+    - The top-level statements must catch and handle the `DivideByZeroException` exceptions.
     - The `Message` property of the exception must be used to notify the user of the issue.
 
 1. Your completed solution must print the following messages to the console:

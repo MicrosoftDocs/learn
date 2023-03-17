@@ -1,7 +1,7 @@
 
 
 
-Developers often need to create and throw exceptions from within a method, and then catching those exceptions further down the call stack where they can be handled. Exception handling helps you to ensure the stability of your applications.
+Developers often need to create and throw exceptions from within a method, and then catch those exceptions further down the call stack where they can be handled. Exception handling helps you to ensure the stability of your applications.
 
 In this exercise, you'll start with a sample application that includes a potential error condition inside a called method. Your updated method will `throw` an exception when it detects the issue. The exception will be handled in a `catch` block of the code that calls the method. The result is an application that provides a better user experience.
 
@@ -36,6 +36,12 @@ The first step is to create a code project that you can use during this module.
 Use the following steps to load and review a sample application.
 
 1. Open the Program.cs file.
+
+1. After a few seconds, notice that a dialog box is displayed asking if you want to load the assets required for building and debugging.
+
+    Visual Studio Code recognizes the C# file extension, `.cs`, and recognizes that your "ThrowExceptions101" project is missing the required assets.
+
+1. To load the required assets, select **Yes**.
 
 1. Replace the contents of the Program.cs file with the following code:
 
@@ -109,7 +115,7 @@ The sample application reads user input from the console. The DEBUG CONSOLE pane
 
     The default value for the `console` attribute is `internalConsole`, which aligns to the DEBUG CONSOLE panel. Unfortunately, the DEBUG CONSOLE panel doesn't support console input. The `integratedTerminal` setting aligns to the TERMINAL panel, which supports console input and output.
 
-1. Save your changes to the launch.json file.
+1. Save your changes to the launch.json file, and then close the file.
 
 1. On the Visual Studio Code **Run** menu, select **Start Debugging**.
 
@@ -368,6 +374,6 @@ Congratulations! You've successfully thrown, caught, and handled an exception.
 
 Here are a few important things to remember from this unit:
 
-- Configure the debug environment to enable console input and output.
-- Update a method to throw an exception when an issue or condition is detected.
-- Catch an exception in the calling code when a method throws an exception.
+- Ensure that your debug environment is configured to support your application requirements.
+- Method code should throw an exception when an issue or condition is detected.
+- Exceptions should be caught at a level in the call stack where they can be resolved.
