@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.guided-project.exercise-shuffle-an-array
+uid: learn.wwl.guided-project-visit-petting-zoo.exercise-shuffle-array
 title: Exercise - Create a method to shuffle an array
 metadata:
   title: Exercise - Create a method to shuffle an array
   description: "Exercise - Create a method to shuffle an array"
-  ms.date: 03/16/2023
+  ms.date: 03/17/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5
 content: |
-  [!include[](includes/4-exercise-shuffle-an-array.md)]
+  [!include[](includes/4-exercise-shuffle-array.md)]

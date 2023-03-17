@@ -1,9 +1,9 @@
 ### YamlMime:Module
-uid: learn.wwl.guided-project
+uid: learn.wwl.guided-project-visit-petting-zoo
 metadata:
   title: Guided project - Plan a Petting Zoo Visit
   description: "Guided project - Plan a Petting Zoo Visit"
-  ms.date: 03/16/2023
+  ms.date: 03/17/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial
@@ -32,13 +32,13 @@ products:
 - dotnet-framework
 - vs-code
 units:
-- learn.wwl.guided-project.introduction
-- learn.wwl.guided-project.prepare
-- learn.wwl.guided-project.exercise-plan-using-methods
-- learn.wwl.guided-project.exercise-shuffle-an-array
-- learn.wwl.guided-project.exercise-optional-parameters
-- learn.wwl.guided-project.exercise-display-results
-- learn.wwl.guided-project.knowledge-check
-- learn.wwl.guided-project.summary
+- learn.wwl.guided-project-visit-petting-zoo.introduction
+- learn.wwl.guided-project-visit-petting-zoo.prepare
+- learn.wwl.guided-project-visit-petting-zoo.exercise-plan-use-methods
+- learn.wwl.guided-project-visit-petting-zoo.exercise-shuffle-array
+- learn.wwl.guided-project-visit-petting-zoo.exercise-optional-parameters
+- learn.wwl.guided-project-visit-petting-zoo.exercise-display-results
+- learn.wwl.guided-project-visit-petting-zoo.knowledge-check
+- learn.wwl.guided-project-visit-petting-zoo.summary
 badge:
-  uid: learn.wwl.guided-project.badge
+  uid: learn.wwl.guided-project-visit-petting-zoo.badge

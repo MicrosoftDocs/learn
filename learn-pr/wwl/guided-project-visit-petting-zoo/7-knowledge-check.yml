@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.guided-project.knowledge-check
+uid: learn.wwl.guided-project-visit-petting-zoo.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/16/2023
+  ms.date: 03/17/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial

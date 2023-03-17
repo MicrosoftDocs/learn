@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.guided-project.exercise-display-results
+uid: learn.wwl.guided-project-visit-petting-zoo.exercise-display-results
 title: Exercise - Create a method to display the results
 metadata:
   title: Exercise - Create a method to display the results
   description: "Exercise - Create a method to display the results"
-  ms.date: 03/16/2023
+  ms.date: 03/17/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial

@@ -75,7 +75,7 @@ In this task, you'll turn the steps defined in the application specification int
     // string[,] group = AssignGroup();
     ```
 
-    You don't add any arguments to the `AssignGroup` method since six groups is the default option.
+    You don't add any arguments to the `AssignGroup` method the default group value is six.
 
 ## Check your work
 
