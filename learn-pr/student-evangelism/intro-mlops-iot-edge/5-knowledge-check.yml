@@ -43,7 +43,7 @@ quiz:
       explanation: "Correct. Without IoT Edge being operational, you can't acquire data to build models."
     - content: "The company should be able to visualize data from sensors."
       isCorrect: false
-      explanation: "Incorrect. The ability to visualize data isn't a pre-requisite for MLOps on edge devices."
+      explanation: "Incorrect. The ability to visualize data isn't a prerequisite for MLOps on edge devices."
     - content: "Developers should follow CI/CD processes before MLOps is deployed."
       isCorrect: false
-      explanation: "Incorrect. The ability to use CI/CD isn't a pre-requisite for MLOps on edge devices."
+      explanation: "Incorrect. The ability to use CI/CD isn't a prerequisite for MLOps on edge devices."
