@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.write-first-c-sharp-method
+metadata:
+  title: Write your first C# method
+  description: "Write your first C# method"
+  ms.date: 03/17/2023
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Write your first C# method
+summary: Learn to create your own methods to perform specific tasks.
+abstract: |
+  - Create your first c sharp method
+  - Identify parts of code that can be modularized
+  - Use methods to organize code into specific tasks
+prerequisites: |
+  - Experience with basic coding tasks such as instantiating variables, using various data types, and sending output to a console window.
+  - Experience using Visual Studio Code to create and run simple console applications.
+  - Experience using C# data types including `int`, `string`, `double`, and arrays
+  - Experience using `switch` statements, `if-else` statements, and `for` loops
+  - Experience using `string.Split`
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+- k-12-educator
+- student
+products:
+- dotnet-framework
+- vs-code
+units:
+- learn.wwl.write-first-c-sharp-method.introduction
+- learn.wwl.write-first-c-sharp-method.understand-syntax-of-methods
+- learn.wwl.write-first-c-sharp-method.exercise-create-your-first-method
+- learn.wwl.write-first-c-sharp-method.exercise-create-reusable-methods
+- learn.wwl.write-first-c-sharp-method.exercise-build-code-with-methods
+- learn.wwl.write-first-c-sharp-method.exercise-challenge-restructure-code-to-use-methods
+- learn.wwl.write-first-c-sharp-method.review-solution-restructure-code-to-use-methods
+- learn.wwl.write-first-c-sharp-method.knowledge-check
+- learn.wwl.write-first-c-sharp-method.summary
+badge:
+  uid: learn.wwl.write-first-c-sharp-method.badge

@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.write-first-c-sharp-method.exercise-create-reusable-methods
+title: Create reusable methods
+metadata:
+  title: Create reusable methods
+  description: "Create reusable methods"
+  ms.date: 03/17/2023
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-exercise-create-reusable-methods.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Suppose there is a method named `ConvertCurrency`. Which of the following is a valid method signature?"
+    choices:
+    - content: "`ConvertCurrency();`"
+      isCorrect: false
+      explanation: "That's incorrect. This line of code will execute the method."
+    - content: "`ConvertCurrency() { }`"
+      isCorrect: false
+      explanation: "That's incorrect. A return type must be declared before the method name."
+    - content: "`void ConvertCurrency();`"
+      isCorrect: true
+      explanation: "That's correct. A method signature is created by declaring the return type, followed by the method name, and parentheses containing any input parameters."
+  - content: "Suppose there is a method named `Update`. Which of the following correctly calls the method?"
+    choices:
+    - content: "`var update;`"
+      isCorrect: false
+      explanation: "That's incorrect. A method is called using its name followed by parentheses."
+    - content: "`Update();`"
+      isCorrect: true
+      explanation: "That's correct! A method is called using its name followed by parentheses."
+    - content: "`void Update();`"
+      isCorrect: false
+      explanation: "That's incorrect. A method is called using its name followed by parentheses."

@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.write-first-c-sharp-method.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/17/2023
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following correctly declares a method?"
+    choices:
+    - content: "`DisplayNumbers();`"
+      isCorrect: false
+      explanation: "Incorrect. To declare a method, you need to include a return type."
+    - content: "`void DisplayNumbers{};`"
+      isCorrect: false
+      explanation: "Incorrect. Methods must use parentheses `()` after the name, and brackets `{}` to contain the method body."
+    - content: "`void DisplayNumbers();`"
+      isCorrect: true
+      explanation: "Correct. Reason"
+  - content: "Which of the following correctly calls a method?"
+    choices:
+    - content: "`GenerateID();`"
+      isCorrect: true
+      explanation: "Correct! Methods are called using the name, followed by parentheses `()` and a semicolon"
+    - content: "`void GenerateID() {}`"
+      isCorrect: false
+      explanation: "Incorrect. To call a method, you must include parentheses `()` after the name, followed by a semicolon"
+    - content: "`GenerateID;`"
+      isCorrect: false
+      explanation: "Incorrect. To call a method, you must include parentheses `()` after the name, followed by a semicolon"
+  - content: "Which of the following is true about the `return` keyword?"
+    choices:
+    - content: "It is identical to the `break` keyword."
+      isCorrect: false
+      explanation: "Incorrect. The `break` keyword terminates a loop or `switch` statement, but the `return` keyword terminates the current method."
+    - content: "It terminates the execution of a method."
+      isCorrect: true
+      explanation: "Correct! The return statement terminates execution of its method and returns control to the caller."
+    - content: "It must always be used with a value or expression."
+      isCorrect: false
+      explanation: "Incorrect. `void` methods don't return values and can use the `return` keyword on its own."
