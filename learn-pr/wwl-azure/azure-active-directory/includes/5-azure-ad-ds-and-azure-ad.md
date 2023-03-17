@@ -81,10 +81,10 @@ With Azure AD DS-joined devices, applications can use the Kerberos and New Techn
     Device controlled by
   :::column-end:::
   :::column:::
-    Azure Active Directory
+    Azure AD
   :::column-end:::
   :::column:::
-    Azure Active Directory Domain Services managed domain
+    Azure AD Domain Services managed domain
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -144,4 +144,4 @@ With Azure AD DS-joined devices, applications can use the Kerberos and New Techn
 :::row-end:::
 
 
-If on-premise AD DS and Azure AD are configured for federated authentication using Active Directory Federation Services (ADFS), then there's no (current/valid) password hash available in Azure DS. Azure AD user accounts created before fed auth was implemented might have an old password hash, but this likely doesn't match a hash of their on-premise password. Hence Azure AD DS won't validate the user's credentials.
+If on-premises AD DS and Azure AD are configured for federated authentication using Active Directory Federation Services (ADFS), then there's no (current/valid) password hash available in Azure DS. Azure AD user accounts created before fed auth was implemented might have an old password hash that doesn't match a hash of their on-premises password. Hence Azure AD DS won't validate the user's credentials.
