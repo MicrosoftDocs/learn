@@ -2,35 +2,27 @@ In this unit, you'll upgrade an ASP.NET MVC 5 application to ASP.NET Core using 
 
 ## Upgrade .NET Framework ASP.NET MVC apps
 
-This section demonstrates running the .NET Upgrade Assistant against a newly created ASP.NET MVC app targeting .NET Framework 4.6.1.
+This section demonstrates running the .NET Upgrade Assistant against an existing ASP.NET MVC app targeting .NET Framework.
 
-## Create an ASP.NET MVC 5 app
+## Verify the tools are installed
 
-1. Using Visual Studio, create a new ASP.NET Web Application project using .NET Framework.
+It's possible install the .NET Upgrade Assistant extension from the extension manager in Visual Studio, but for this exercise you're going to use the Visual Studio Installer. This way, you can also double-check that you have the required components to build the sample app.
 
-   :::image type="content" source="../media/new-project.png" alt-text="Screenshot of the Visual Studio new project dialog with 'ASP.NET Web Application (.NET Framework)' highlighted.":::
+1. Launch the Visual Studio Installer and select **Modify** on the Visual Studio 2022 installation.
+1. On the **Workloads** tab, ensure the ASP.NET and web developement is selected.
+1. On the **Individual components** tab, search for the following components and ensure they are selected:
+    - .NET Framework 4.8.1 targeting pack
+    - .NET Upgrade Assistant
+1. Select the **Modify** button (if present) to apply any changes. If no changes were made, select **Close**.
 
-1. Name the project **AspNetMvcTest**. Configure the project to use **.NET Framework 4.6.1**.
+## Obtain the sample code
 
-   :::image type="content" source="../media/configure-project.png" alt-text="Screenshot of the 'Configure your new project' dialog in Visual Studio. The Project Name has been set to AspNetMvcTest, and the Framework has been set to .NET Framework 4.6.1.":::
+1. Open Visual Studio 2022.
+1. Using either the **Clone a repository** button on the quick start window or the **Git > Clone** command on the menu bar, download and open the sample repository from `https://github.com/MicrosoftDocs/mslearn-modernize-aspnet-framework-to-core`.
 
-1. In the next dialog, choose **MVC** application, then select **Create**.
+    :::image type="content" source="../media/git-clone.png" alt-text="Screenshot of the Visual Studio Git > Clone menu command.":::
 
-   :::image type="content" source="../media/create-mvc-web-api.png" alt-text="Screenshot of the 'Create a new ASP.NET Web Application' dialog in Visual Studio. MVC has been selected, and other settings have been left to their default values.":::
-
-   Review the created project and its files.
-
-1. Before converting the project, we'll want to look at the project file. Right-click the project in the Solution Explorer and select **Unload Project**. The source for the project file (`AspNetMvcTest.csproj`) will be displayed in the editor.
-
-1. Close Visual Studio.
-
-## Install the .NET Upgrade Assistant
-
-- Open a console window and run the following command:
-
-   ```dotnetcli
-   dotnet tool install -g upgrade-assistant
-   ```
+1. Once the project opens, review the files in **Solution Explorer**. The app is an ASP.NET project built in .NET Framework 4.8.1. Press <kbd>F5</kbd> to run the app. After verifying the it works, stop the app.
 
 ### Run the Upgrade Assistant
 
@@ -38,15 +30,15 @@ This section demonstrates running the .NET Upgrade Assistant against a newly cre
 
 1. Run the `upgrade-assistant` command, passing in the name of the project you're targeting (you can run the command from anywhere, as long as the path to the project file is valid).
 
-   ```dotnetcli
-   upgrade-assistant upgrade AspNetMvcTest.csproj
-   ```
+    ```dotnetcli
+    upgrade-assistant upgrade AspNetMvcTest.csproj
+    ```
 
-   The tool runs and shows you a list of the steps it will do.
+    The tool runs and shows you a list of the steps it will do.
 
-   :::image type="complex" source="../media/initial-run.png" alt-text="Screenshot of Windows Terminal showing the initial run of the Upgrade Assistant."::: Screenshot of the Windows Terminal. The screenshot shows the execution of the upgrade-assistant command. The command lists out the initialization information, showing the MSBuild, Visual Studio, and project file paths. It lists the steps it will perform, showing the first step is to back up the file. The first step is highlighted. A command list is shown in the bottom right of the screen. The first command is "Apply next step (Back up project)". :::image-end:::
+    :::image type="complex" source="../media/initial-run.png" alt-text="Screenshot of Windows Terminal showing the initial run of the Upgrade Assistant."::: Screenshot of the Windows Terminal. The screenshot shows the execution of the upgrade-assistant command. The command lists out the initialization information, showing the MSBuild, Visual Studio, and project file paths. It lists the steps it will perform, showing the first step is to back up the file. The first step is highlighted. A command list is shown in the bottom right of the screen. The first command is "Apply next step (Back up project)". :::image-end:::
 
-   As each step is completed, the tool provides a set of commands allowing the user to apply or skip the next step, see more details, configure logging, or exit the process. If the tool detects that a step will perform no actions, it automatically skips that step and continues to the next step until it reaches one that has actions to do. Pressing <kbd>Enter</kbd> will start the next step if no other selection is made.
+    As each step is completed, the tool provides a set of commands allowing the user to apply or skip the next step, see more details, configure logging, or exit the process. If the tool detects that a step will perform no actions, it automatically skips that step and continues to the next step until it reaches one that has actions to do. Pressing <kbd>Enter</kbd> will start the next step if no other selection is made.
 
 1. In this example, you will choose the apply step each time. The first step is to back up the project. Type **1** and press the <kbd>Enter</kbd> key to continue.
 
@@ -129,7 +121,7 @@ This section demonstrates running the .NET Upgrade Assistant against a newly cre
    >
    [13:24:52 INF] Applying upgrade step Convert project file to SDK style
    [13:24:52 INF] Converting project file format with try-convert, version 0.3.261602+8aa571efd8bac422c95c35df9c7b9567ad534ad0
-   [13:24:52 INF] Recommending executable TFM net6.0 because the project builds to a web app C:\Users\Jon\source\repos\AspNetMvcTest\AspNetMvcTest.csproj contains a reference to System.Web, which is not supported on .NET Core. You may have significant work ahead of you to fully port this project 'C:\Users\Jon\source\repos\AspNetMvcTest\AspNetMvcTest.csproj' is a legacy web project and/or references System.Web. Legacy Web projects and System.Web are unsupported on .NET Core. You will need to rewrite your application or find a way to not depend on System.Web to convert this project.
+   [13:24:52 INF] Recommending executable TFM net7.0 because the project builds to a web app C:\Users\Jon\source\repos\AspNetMvcTest\AspNetMvcTest.csproj contains a reference to System.Web, which is not supported on .NET Core. You may have significant work ahead of you to fully port this project 'C:\Users\Jon\source\repos\AspNetMvcTest\AspNetMvcTest.csproj' is a legacy web project and/or references System.Web. Legacy Web projects and System.Web are unsupported on .NET Core. You will need to rewrite your application or find a way to not depend on System.Web to convert this project.
    [13:24:55 INF] Converting project C:\Users\Jon\source\repos\AspNetMvcTest\AspNetMvcTest.csproj to SDK style
    [13:24:57 INF] Project file converted successfully! The project may require additional changes to build successfully against the new .NET target.
    [13:25:00 INF] Upgrade step Convert project file to SDK style applied successfully
@@ -196,8 +188,8 @@ This section demonstrates running the .NET Upgrade Assistant against a newly cre
 
    ```dos
    [13:41:41 INF] Initializing upgrade step Update TFM
-   [13:41:41 INF] Recommending executable TFM net6.0 because the project builds to an executable
-   [13:41:41 INF] TFM needs updated to net6.0
+   [13:41:41 INF] Recommending executable TFM net7.0 because the project builds to an executable
+   [13:41:41 INF] TFM needs updated to net7.0
 
    Upgrade Steps
    
@@ -237,8 +229,8 @@ This section demonstrates running the .NET Upgrade Assistant against a newly cre
       5. Exit
    >
    [13:41:47 INF] Applying upgrade step Update TFM
-   [13:41:47 INF] Recommending executable TFM net6.0 because the project builds to an executable
-   [13:41:49 INF] Updated TFM to net6.0
+   [13:41:47 INF] Recommending executable TFM net7.0 because the project builds to an executable
+   [13:41:49 INF] Updated TFM to net7.0
    [13:41:49 INF] Upgrade step Update TFM applied successfully
    Please press enter to continue...
    ```
@@ -619,16 +611,16 @@ This section demonstrates running the .NET Upgrade Assistant against a newly cre
    [14:37:56 INF] Upgrade step Move to next project applied successfully
    Please press enter to continue...
    
-   [14:38:02 INF] Recommending executable TFM net6.0 because the project builds to an executable
-   [14:38:02 INF] Recommending executable TFM net6.0 because the project builds to an executable
-   [14:38:02 INF] Recommending executable TFM net6.0 because the project builds to an executable
+   [14:38:02 INF] Recommending executable TFM net7.0 because the project builds to an executable
+   [14:38:02 INF] Recommending executable TFM net7.0 because the project builds to an executable
+   [14:38:02 INF] Recommending executable TFM net7.0 because the project builds to an executable
    [14:38:02 INF] Initializing upgrade step Finalize upgrade
    
    Upgrade Steps
    
    Entrypoint: C:\Users\Jon\source\repos\AspNetMvcTest\AspNetMvcTest.csproj
    
-   [14:38:02 INF] Recommending executable TFM net6.0 because the project builds to an executable
+   [14:38:02 INF] Recommending executable TFM net7.0 because the project builds to an executable
    1. [Next step] Finalize upgrade
    
    Choose a command:
