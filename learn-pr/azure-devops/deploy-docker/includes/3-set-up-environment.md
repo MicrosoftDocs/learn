@@ -80,19 +80,18 @@ At the end of this module, you'll move the card to the **Done** column after you
 
 ## Create the Azure App Service environment
 
-Here you create the App Service required to deploy the new container version of the site.
+In the [Create a release pipeline with Azure Pipelines](/training/modules/create-release-pipeline?azure-portal=true) module, you created an App Service instance using Azure portal. Although the portal is an excellent tool for exploring Azure's offerings, setting up components like App Service can become cumbersome.
 
-In [Create a release pipeline with Azure Pipelines](/training/modules/create-release-pipeline?azure-portal=true), you brought up App Service through the Azure portal. Although the portal is a great way to explore what's available on Azure or to do basic tasks, bringing up components such as App Service can be tedious.
-
-In this module, you use the Azure CLI to bring up the resources needed to deploy and run an App Service instance. You can access the Azure CLI from a terminal or through Visual Studio Code. Here you access the Azure CLI from Azure Cloud Shell. This browser-based shell experience is hosted in the cloud. In Cloud Shell, the Azure CLI is configured for use with your Azure subscription.
+In this module, you will employ the Azure CLI to launch the resources necessary for deploying and running an App Service instance. You can access the Azure CLI from a terminal or through Visual Studio Code.
 
 > [!IMPORTANT]
-> You need your own Azure subscription to complete the exercises in this module.
+> You must have your own Azure subscription to complete the exercises in this module.
 
-### Bring up Cloud Shell through the Azure portal
+### Launch Cloud Shell inn Azure portal
 
-1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
-1. From the menu, select **Cloud Shell**. When prompted, select the **Bash** experience.
+1. Navigate to [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
+
+1. Select the **Cloud Shell** from the menu bar, and then select the **Bash** experience.
 
     :::image type="content" source="../../shared/media/azure-portal-menu-cloud-shell.png" alt-text="Screenshot of the Azure portal showing the location of the Cloud Shell menu item.":::
 
@@ -101,11 +100,11 @@ In this module, you use the Azure CLI to bring up the resources needed to deploy
 
 ### Select an Azure region
 
-A *region* is one or more Azure datacenters within a geographic location. East US, West US, and North Europe are examples of regions. Every Azure resource, including an App Service instance, is assigned a region.
+A *region* is one or more Azure datacenters located within a particular geographic location. East US, West US, and North Europe are a few examples of regions. Each Azure resource, such as an App Service instance, is allocated to a specific region.
 
-To make commands easier to run, start by selecting a default region. After you specify the default region, later commands use that region unless you specify a different region.
+To simplify the process of running commands, begin by selecting a default region. Once the default region is specified, subsequent commands will use that region by default unless a different region is explicitly specified.
 
-1. From Cloud Shell, run the following `az account list-locations` command to list the regions that are available from your Azure subscription.
+1. Run the following command to list the available regions for your Azure subscription.
 
     ```azurecli
     az account list-locations \
@@ -113,15 +112,15 @@ To make commands easier to run, start by selecting a default region. After you s
       --output table
     ```
 
-1. From the `Name` column in the output, choose a region that's close to you. For example, choose `eastasia` or `westus2`.
+1. Select a region that is in proximity to your location from the *Name* column in the output. For example, you can choose *eastasia* or *westus2*.
 
-1. Run `az configure` to set your default region. Replace `<REGION>` with the name of the region you chose.
+1. Run the following command to set your default region. Replace the placeholder with the name of the region you have selected.
 
     ```azurecli
     az configure --defaults location=<REGION>
     ```
 
-    This example sets `westus2` as the default region:
+    This example sets *westus2* as the default region:
 
     ```azurecli
     az configure --defaults location=westus2
@@ -137,7 +136,7 @@ Create Bash variables to make the setup process more convenient and less error-p
     resourceSuffix=$RANDOM
     ```
 
-1. Create globally unique names for your App Service Web App and Azure Container Registry. These commands use double quotes, which instructs Bash to interpolate the variables using the inline syntax.
+1. Create globally unique names for your App Service Web App and Azure Container Registry. The utilization of double quotes in these commands prompts Bash to interpolate the variables using the inline syntax.
 
     ```bash
     webName="tailspin-space-game-web-${resourceSuffix}"
@@ -152,8 +151,6 @@ Create Bash variables to make the setup process more convenient and less error-p
     ```
 
 ### Create the Azure resources
-
-This solution requires several Azure resources for deployment, which you create now.
 
    > [!NOTE]
    > For learning purposes, here you use the default network settings. These settings make your site accessible from the internet. In practice, you could configure an Azure virtual network that places your website in a network that's not internet routable and that only you and your team can access. Later, you could reconfigure your network to make the website available to your users.
