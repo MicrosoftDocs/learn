@@ -8,7 +8,7 @@ Contoso’s IT director realizes that Contoso has an outdated operational model 
 
 As part of the initial design, the Contoso IT team asked you, their lead system engineer and server administrator, to set up a proof-of-concept environment. This environment must verify whether Azure services can help to modernize the IT infrastructure and meet business goals.
 
-It's become increasingly obvious that Contoso will continue to operate an on-premises environment for some time after they begin migrating workloads to Azure infrastructure as a service (IaaS) virtual machines (VMs). Consequently, the ability to apply Azure policies to on-premises Windows Server workloads will be important. In addition, administrators will need to review on-premises Windows Server instances in the Azure consoleMarkdig.Syntax.Inlines.HtmlInline.
+It's become increasingly obvious that Contoso will continue to operate an on-premises environment for some time after they begin migrating workloads to Azure infrastructure as a service (IaaS) virtual machines (VMs). Consequently, the ability to apply Azure policies to on-premises Windows Server workloads will be important. In addition, administrators will need to review on-premises Windows Server instances in the Azure console.
 
 In this module, you will learn how to describe Azure Arc, implement Azure Arc with on-premises server instances, deploy Azure policies with Azure Arc, and use role-based access control (RBAC) to restrict access to Log Analytics data.
 
