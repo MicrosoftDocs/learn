@@ -16,7 +16,7 @@ quiz:
   questions:
   - content: "Which of the following statements accurately describes Azure DNS Private Resolver?"
     choices:
-    - content: "Is a service to resolve DNS queries from on-premises to Azure."
+    - content: "The resolver is a service to resolve DNS queries from on-premises to Azure."
       isCorrect: false
       explanation: "Incorrect: Azure DNS Private Resolver is used to resolve DNS queries, but this isn't the best description for the service."
     - content: "Azure DNS Private Resolver is a PaaS DNS service to resolve and conditionally forward DNS queries from a virtual network, on-premises, and to other target DNS servers without the need to create and manage a custom DNS solution."
