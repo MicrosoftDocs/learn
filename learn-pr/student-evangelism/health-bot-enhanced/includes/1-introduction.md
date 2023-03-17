@@ -1,4 +1,4 @@
-In the previous module, we used Azure Health Bot to create a basic health bot. Now, by using the same bot, we'll take the steps to create an interrupting scenario and a breaking scenario. If you haven't completed the previous module, do that before you start this one.
+In the previous module, we used Azure Health Bot to create a basic health bot. Now, by using the same bot, we can take steps to create an interrupting scenario and a breaking scenario. If you haven't completed the previous module, do that before you start this one.
 
 :::image type="content" source="../media/1-health-bot-basic-bot.png" alt-text="Screenshot of Azure Health Bot, showing the editor view of a basic bot." lightbox="../media/1-health-bot-basic-bot.png":::
 

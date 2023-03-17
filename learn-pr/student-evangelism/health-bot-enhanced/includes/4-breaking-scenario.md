@@ -1,14 +1,14 @@
-Let's create another interrupting bot to help patients check their temperature and other vitals, if they haven't so far. The patient can reach this bot by entering the word **temperature**. That entry will break the flow of the original bot and run this new one. 
+Let's create another interrupting bot to help patients check their temperature and other vitals, if they haven't so far. The patient can reach this bot by entering the word **temperature**. That entry breaks the flow of the original bot and runs this new one. 
 
-To create this bot, we'll build a breaking scenario and then create a model.
+To create this bot, you're building a breaking scenario and then creating a model.
 
-Let's start by creating a second interrupting bot which works like a breaking scenario. After that, we'll connect it to the main bot by using a keyword that calls the interrupting bot. We can start by selecting **New**  in the top left corner on **Scenario Management** page.
+Let's start by creating a second interrupting bot that works like a breaking scenario. After that, we'll connect it to the main bot by using a keyword that calls the interrupting bot. We can start by selecting **New**  in the top left corner on the **Scenario Management** page.
 
 ## Create a breaking scenario
 
 1. Configure the scenario with the following details:  
 
-   :::image type="content" source="../media/4-edit-scenario.png" alt-text="Screenshot that shows the selections for configuring a breaking scenario.":::
+   :::image type="content" source="../media/4-health-bot-create-breaking-scenario.png" alt-text="Screenshot that shows the selections for configuring a breaking scenario.":::
 
    - **Name:** Enter **Intermediate Bot 2**.
    - **Description:** Enter **An interrupting bot which checks the patient's temperature and breaks**.
@@ -17,19 +17,19 @@ Let's start by creating a second interrupting bot which works like a breaking sc
    - **Interrupting scenario:** Turn on this toggle.
    - **Breaking scenario:** Turn on this toggle, because we need to see how the breaking scenario works.
 
-1. Select **Update**.
+1. Select **Create**.
 
 You can now create a scenario to collect temperature information from the patient, based on your learnings from the previous sections.
 
-:::image type="content" source="../media/4-bot-designer.png" alt-text="Screenshot of the designer view of a bot that collects temperature information.":::
+:::image type="content" source="../media/4-health-bot-edit-breaking-scenario.png" alt-text="Screenshot of the editor view of a bot that collects temperature information.":::
 
 ## Create a model for the breaking scenario
 
-Our bot will give messages about the temperature of the patient. We're using only prompt, yes/no, and statement blocks to build the bot.  
+Our bot gives messages about the temperature of the patient. We're using only prompt, yes/no, and statement blocks to build the bot.  
 
 1. Configure the model with the following details:
 
-   :::image type="content" source="../media/4-model-details.png" alt-text="Screenshot that shows the regular expression configuration for the model.":::
+   :::image type="content" source="../media/4-health-bot-language-model.png" alt-text="Screenshot that shows the regular expression configuration for the model.":::
 
    - **Name:** Enter **temperature**.
    - **Description:** Enter **temperature**.
