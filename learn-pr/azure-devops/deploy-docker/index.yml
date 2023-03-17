@@ -16,6 +16,10 @@ abstract: |
   - Create Azure resources to support a Docker container web application
   - Use YAML pipelines to build, publish, and deploy a Docker container
   - Monitor the build and deployment of your project
+
+  > [!NOTE]
+  > if you just want to learn how to deploy Docker containers to Azure Web App for Containers, please refer to the [Deploy to Azure Web App for Containers](https://learn.microsoft.com/en-us/azure/devops/pipelines/apps/cd/deploy-docker-webapp?view=azure-devops&tabs=java%2Cyaml) guide.
+
 prerequisites: |
   - An Azure subscription
   - An Azure DevOps organization with access to **Microsoft-hosted** parallel jobs. [Check your parallel jobs and request a free grant](/azure/devops/pipelines/troubleshooting/troubleshooting#check-for-available-parallel-jobs).
