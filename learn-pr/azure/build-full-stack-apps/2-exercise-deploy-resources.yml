@@ -5,7 +5,7 @@ metadata:
   unitType: exercise
   title: Exercise - Deploy and configure Azure SQL Database
   description: In this exercise, you'll set up the resources needed to build the application.
-  ms.date: 3/24/2021  
+  ms.date: 3/15/2023  
   author: amthomas46
   ms.author: antho
   ms.topic: interactive-tutorial

@@ -1,0 +1,2 @@
+
+Protecting user devices across operating systems such as Windows Client, iOS, or Android can be accomplished using Azure AD. Azure AD works with both cloud-only and hybrid environments. This ability provides flexibility in accessing both cloud and on-premises apps and resources. Users can join Azure AD during the Windows OS installation, or anytime afterwards. For devices not capable of joining AD DS, Intune can be integrated with Azure AD to allow for device enrollment and management.

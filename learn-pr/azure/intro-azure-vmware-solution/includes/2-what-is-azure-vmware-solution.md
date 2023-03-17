@@ -66,4 +66,5 @@ Azure VMware Solution can be billed and charged in the following three ways. Cus
 |---------|---------|---------|
 |On demand     | Reserved capacity for one year       |  Reserved capacity for three years       |
 | Typically used for bursting <br><br> Initial deployments    | Used for major projects <br><br> Known usage patterns     |  Used with datacenter exit scenarios <br><br> Long-term business strategy      |
-|    |         |         |
+
+

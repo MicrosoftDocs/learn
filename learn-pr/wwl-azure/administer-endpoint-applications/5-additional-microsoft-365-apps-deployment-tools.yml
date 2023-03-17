@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.administer-endpoint-applications.additional-microsoft-365-apps-deployment-tools
+title: Additional Microsoft 365 Apps Deployment Tools
+metadata:
+  title: Additional Microsoft 365 Apps Deployment Tools
+  description: "Additional Microsoft 365 Apps Deployment Tools"
+  ms.date: 03/16/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-additional-microsoft-365-apps-deployment-tools.md)]

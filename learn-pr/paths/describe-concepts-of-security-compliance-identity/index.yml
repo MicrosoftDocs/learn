@@ -58,6 +58,7 @@ roles:
 - business-user
 - student
 products:
+- azure-active-directory
 - azure
 - m365
 subjects:

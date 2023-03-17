@@ -1,5 +1,6 @@
 
 
+
 The Contoso Pets application is used to help find new homes for abandoned pets. Your goal in this challenge is to develop the application features used to ensure that you have a completed dataset for each animal in the ourAnimals array.
 
 ## Specification
@@ -91,4 +92,4 @@ To validate that your code satisfies the specified requirements, complete the fo
 > [!NOTE]
 > If your code meets the requirements you should be able to complete each step in order and see the expected results in a single test pass. If you added additional restrictions, you may need to exit the application and then run a separate test pass to complete your verification.
 
-Congratulations if you succeeded in this challenge!
+Once you've validated the results for this exercise, proceed to the next exercise in this challenge.
