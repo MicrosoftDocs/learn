@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.azure-security-center.cloud-kill-chain-vs--mitre-attack-cloud-matrix
-title: Cloud kill chain vs. MITRE attack cloud matrix
+title: Clouds kill chain vs. MITRE attack cloud matrix
 metadata:
-  title: Cloud kill chain vs. MITRE attack cloud matrix
-  description: "Cloud kill chain vs. MITRE attack cloud matrix"
-  ms.date: 03/16/2023
+  title: Clouds kill chain vs. MITRE attack cloud matrix
+  description: "Clouds kill chain vs. MITRE attack cloud matrix"
+  ms.date: 03/17/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial

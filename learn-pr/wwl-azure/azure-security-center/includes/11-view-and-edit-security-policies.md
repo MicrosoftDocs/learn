@@ -1,7 +1,7 @@
 
-Defender for Cloud uses **Azure role-based access control (Azure RBAC)**, which provides built-in roles you can assign to **Azure users**, **groups**, and **services**. When users open Defender for Cloud, they see only information related to the resources they can access. This means users are assigned the role of **owner**, **contributor**, or **reader** to the resource's subscription.
+Defender for Cloud uses **Azure role-based access control (Azure RBAC)**, which provides built-in roles you can assign to **Azure users**, **groups**, and **services**. When users open Defender for Cloud, they see only information related to the resources they can access. Users are assigned the owner, contributor, or reader role to the resource's subscription.
 
-There are two specific Defender for Cloud roles:
+There are two specific roles for Defender for Cloud:
 
 1.  **Security Administrator**: Has the same view rights as security reader. Can also update the security policy and dismiss alerts.
 2.  **Security reader**: Has rights to view Defender for Cloud items such as recommendations, alerts, policy, and health. Can't make changes.
