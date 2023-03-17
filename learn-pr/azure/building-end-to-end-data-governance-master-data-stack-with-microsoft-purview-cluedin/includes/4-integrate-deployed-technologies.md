@@ -20,7 +20,7 @@ Download the following files it to your local drive. You'll find seven files rep
 
 Notice in the data, that we have 10 rows of data containing a list of different companies. We have columns for an ID, Name, Website, Address and a Person_Id. 
 
-:::image type="content" source="../media/Copmanies_CSV_Sample.png" alt-text="Screenshot of sample data in Companies.csv.":::
+:::image type="content" source="../media/companies-csv-sample-inline.png" alt-text="Screenshot of sample data in Companies.csv." lightbox="../media/companies-csv-sample.png" :::
 
 Notice that the addresses of many of the companies are similar with for example "188, Quuen St Brisbane" and "188 queen street brisbane". These addresses are fictitious, but we can clearly see that there's a data quality issue that we're hoping to fix.
 
@@ -28,37 +28,37 @@ The "person_id" column is referring to the identifier of an Employee of which is
 
 ### Contacts.csv
 
-Notice in the data, that we have 10 rows of data containing 10 fictitious employees. We have columns for an ID, First_Name, Last_Name, Full_Name, Email, Job. 
+Notice in the data, that we have 10 rows of data containing 10 fictitious employees. We have columns for an ID, First_Name, Last_Name, Full_Name, Email, Job.
 
-:::image type="content" source="../media/Contacts_CSV_Sample.png" alt-text="Screenshot of sample data in Contacts.csv.":::
+:::image type="content" source="../media/contacts-csv-sample-inline.png" alt-text="Screenshot of sample data in Contacts.csv." lightbox="../media/contacts-csv-sample.png" :::
 
-We can also clearly see that the Job column has a data quality issue in it where we're receiving data that has different ways to spell the different Job Titles of the employees. 
+We can also clearly see that the Job column has a data quality issue in it where we're receiving data that has different ways to spell the different Job Titles of the employees.
 
 For the learning module, pay particular attention to Lorain Andrzej, as, as we start to look through the other files, there's no a single identifier that we can use to stitch her record together consistently. Most notable, notice her email address ends with "@wtb.gov.au" and she has an ID value of "1".
 
 ### ContactsAddLater.csv
 
-This file contains more employees, but contains some of the same data quality issues that are present on the Contacts.csv file. 
+This file contains more employees, but contains some of the same data quality issues that are present on the Contacts.csv file.
 
-:::image type="content" source="../media/ContactsAddLater_CSV_Sample.png" alt-text="Screenshot of sample data in ContactsAddLater.csv.":::
+:::image type="content" source="../media/contacts-add-later-csv-sample-inline.png" alt-text="Screenshot of sample data in ContactsAddLater.csv." lightbox="../media/contacts-add-later-csv-sample.png":::
 
 ### Products.csv
 
-Notice in the data, we have 10 rows of data containing 10 fictitious products. We have columns for a SKU, Name and Size. One thing to notice as you look across the other Products.csv file from YellowSystems (under the YellowSystems folder) is that there's no Identifier that can be used to uniquely stitch the products together and we'll need to use a fuzzy merging approach later in the exercise. 
+Notice in the data, we have 10 rows of data containing 10 fictitious products. We have columns for a SKU, Name and Size. One thing to notice as you look across the other Products.csv file from YellowSystems (under the YellowSystems folder) is that there's no Identifier that can be used to uniquely stitch the products together and we'll need to use a fuzzy merging approach later in the exercise.
 
-:::image type="content" source="../media/Navision_Products_CSV_Sample.png" alt-text="Screenshot of sample data in Products.csv.":::
+:::image type="content" source="../media/navision-products-csv-sample-inline.png" alt-text="Screenshot of sample data in Products.csv." lightbox="../media/navision-products-csv-sample.png":::
 
 ### YellowSystemsProducts.csv
 
 Notice that we have 10 rows of data containing the same 10 fictitious products mentioned in the Products.csv file under the Navision folder. However we can see that we don't have a SKU column that we may have been able to use to stitch the products together. Instead we have columns for an ItemId, Name, and CompanyId. Most likely, we can use the CompanyId to connect to the companies mentioned in the Companies.csv above.
 
-:::image type="content" source="../media/YellowSystems_Products_CSV_Sample.png" alt-text="Screenshot of sample data in the YellowSystems Products.csv.":::
+:::image type="content" source="../media/yellow-systems-products-csv-sample-inline.png" alt-text="Screenshot of sample data in the YellowSystems Products.csv." lightbox="../media/yellow-systems-products-csv-sample.png":::
 
 ### Employees.csv
 
 Notice in this file that we have the same 10 employees however we do have different identifiers, column names and details. We have columns for FName, LName, Full, Email, Person_Id. If we take a look at Lorain Andrzej in this file, unfortunately we don't have an Identifier of "1" or an email that ends in "wtb.gov.au" but rather we could assume that the email column and the person_id column could both be used to uniquely identify these employees.
 
-:::image type="content" source="../media/Salesforce_Employees_CSV_Sample.png" alt-text="Screenshot of sample data in Employees.csv.":::
+:::image type="content" source="../media/salesforce-employees-csv-sample-inline.png" alt-text="Screenshot of sample data in Employees.csv." lightbox="../media/salesforce-employees-csv-sample.png":::
 
 We can also see that the names of the columns, although similar to those in the Contacts.csv and ContactsAddLater.csv, that they're different. If we were to not address this, it would most likely lead to some confused downstream users of the data.
 
@@ -66,7 +66,7 @@ We can also see that the names of the columns, although similar to those in the 
 
 Finally, notice in the file that we have the same 10 employees however we once again have different identifiers, column names, and details. We have columns for ID, First, Last, Email, Full_Name, Gender, IP_Address, and PID.
 
-:::image type="content" source="../media/Xero_Persons_CSV_Sample.png" alt-text="Screenshot of sample data in Persons.csv.":::
+:::image type="content" source="../media/xero-persons-csv-sample-inline.png" alt-text="Screenshot of sample data in Persons.csv." lightbox="../media/xero-persons-csv-sample.png" :::
 
 Once again, if we look at Lorain, we can see that this time her email ends with "yahoo.com". However we can see that she does have an identifier of "1" and a column called "pid" that has a value that we did see in the Employees.csv file above. It's most likely that we could use different identifiers from each file to stitch this together - however on the surface that would be quite a tricky SQL statement or Python script to create.
 
@@ -120,7 +120,7 @@ Once again, if we look at Lorain, we can see that this time her email ends with 
 
 1. If you search in Microsoft Purview for Contacts.csv, then you should find your assets in Microsoft Purview.
 
-    :::image type="content" source="../media/Contacts_CSV_Purview.png" alt-text="Screenshot of the Contacts.csv asset in Microsoft Purview.":::
+    :::image type="content" source="../media/contacts-csv-purview.png" alt-text="Screenshot of the Contacts.csv asset in Microsoft Purview.":::
 
 1. Select **Management** in the Microsoft Purview menu, then select **Data Factory** under **Lineage connections**. Select **New** and create a connection to your Data Factory.
 

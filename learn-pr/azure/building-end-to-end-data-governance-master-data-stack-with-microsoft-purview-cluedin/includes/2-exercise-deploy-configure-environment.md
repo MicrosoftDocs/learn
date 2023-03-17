@@ -48,11 +48,11 @@ To create a new service principal:
     1. For **Redirect URI (optional)**, select **Web** and enter a value. This value doesn't need to be a valid endpoint. `https://exampleURI.com` will do.
     1. Select **Register**.
 
-    :::image type="content" source="../media/application-registration.png" alt-text="Screenshot of the application registration page, with the above options filled out.":::
+    :::image type="content" source="../media/application-registration-inline.png" alt-text="Screenshot of the application registration page, with the above options filled out." lightbox="../media/application-registration.png":::
 
 1. On the new service principal page, copy the values of the **Display name** and the **Application (client) ID** to save for later.
 
-   :::image type="content" source="../media/application-id.png" alt-text="Screenshot of the application page in the portal with the Application (client) ID highlighted.":::
+   :::image type="content" source="../media/application-id-inline.png" alt-text="Screenshot of the application page in the portal with the Application (client) ID highlighted." lightbox="../media/application-id.png":::
 
 To use the service principal (application), you need to know the service principal's password that can be found by:
 
@@ -96,7 +96,7 @@ To create a CluedIn instance, go to the Azure portal and follow the steps below:
 
 1. Search **CluedIn** in your Azure portal and select the application under the Marketplace section.
 
-    :::image type="content" source="../media/Create_CluedIn_Azure_Portal.png" alt-text="Screenshot of Azure Marketplace, showing CluedIn Master Data Management.":::
+    :::image type="content" source="../media/create-cluedin-azure-portal-inline.png" alt-text="Screenshot of Azure Marketplace, showing CluedIn Master Data Management." lightbox="../media/create-cluedin-azure-portal.png" :::
 
 1. This will take you to a form where you'll be asked to choose the type of plan. CluedIn provides a seven-day trial that is cost-free from CluedIn, but will charge for the underlying Azure infrastructure used to install within your environment. You can also choose the **CluedIn Platform** plan that is hourly based pricing. In this module, we'll walk you through using the CluedIn seven-day trial.
 
@@ -134,7 +134,7 @@ You can bring an account you already have or use this guide to create one:
 
 1. In the Azure portal, search **Storage account**, select it, and select **Create**.
 
-    :::image type="content" source="../media/select-storage-account.png" alt-text="Screenshot of the Azure Marketplace showing a Storage account.":::
+    :::image type="content" source="../media/select-storage-account-inline.png" alt-text="Screenshot of the Azure Marketplace showing a Storage account." lightbox="../media/select-storage-account.png" :::
 
 1. In the basics tab, provide your subscription, resource group, a name, performance (for this module we'll use standard), and redundancy (for this module we'll use local redundancy.)
 
