@@ -21,25 +21,25 @@ quiz:
     choices:
     - content: 'Quantum computers can only run a limited number of algorithms at a time, so we need to discard those algorithms that require many resources.'
       isCorrect: false
-      explanation: "An algorithm doesn't have a unique resource consumption, the required resources will depend on the technology of the quantum computer, making certain technologies more suitable for certain algorithms. "
-    - content: 'Quantum computers are an expensive technology, we need to estimate how much a certain algorithm will cost in order to make the best economic decision.'
+      explanation: "An algorithm doesn't have a unique resource consumption, the required resources depend on the technology of the quantum computer, making certain technologies more suitable for certain algorithms. "
+    - content: 'Quantum computers are an expensive technology, we need to estimate how much a certain algorithm cost in order to make the best economic decision.'
       isCorrect: false
       explanation: "The estimation of resources doesn't refer to monetary cost."
     - content: 'Resource estimation allows us to refine quantum solutions to run on future quantum computers, by making choices about architectural design and quantum error correction schemes.'
       isCorrect: true
-      explanation: "Correct. With resource estimation we can understand how many qubits we need, how long a quantum algorithm will take to run, and which qubit technologies are better suited to solving a specific problem."
+      explanation: "Correct. With resource estimation we can understand how many qubits we need, how long a quantum algorithm takes to run, and which qubit technologies are better suited to solving a specific problem."
 
-  - content: 'The Azure Quantum Resource Estimator takes a physical qubit model, `"qubitParams"`, as input parameter. Which of the following statements is true?'
+  - content: 'The Azure Quantum Resource Estimator takes a physical qubit model, `"qubitParams"`, as target parameter. Which of the following statements is true?'
     choices:
-    - content: 'You can pick from six pre-defined qubit models, and each of their values can be updated, meaning that you can modify the existing models and create new ones.'
+    - content: 'You can pick from six predefined qubit models, and each of their values can be updated, meaning that you can modify the existing models and create new ones.'
       isCorrect: true
       explanation: 'Correct. The Resource Estimator provides four gate-based and two Majorana-based qubit models, and they can be customized by specifying the name of the qubit model and updating any of the values.'
-    - content: 'You can pick from two pre-defined qubit models, that are the Surface code and the Floquet code.'
+    - content: 'You can pick from two predefined qubit models, which are the Surface code and the Floquet code.'
       isCorrect: false
       explanation: 'The Resource Estimator provides four gate-based and two Majorana-based qubit models. Surface and Floquet code are quantum error correction codes.'
-    - content: "You can pick from six pre-defined qubit models, but they don't allow customization of their parameters."
+    - content: "You can pick from six predefined qubit models, but they don't allow customization of their parameters."
       isCorrect: false
-      explanation: 'The pre-defined qubit models can be customized by specifying the name of the qubit model and then updating any of the values.'
+      explanation: 'The predefined qubit models can be customized by specifying the name of the qubit model and then updating any of the values.'
       
   - content: 'The Resource Estimator evaluates the resource estimates of a requested QIR quantum algorithm. What is the output of the resource estimation job?'
     choices:
