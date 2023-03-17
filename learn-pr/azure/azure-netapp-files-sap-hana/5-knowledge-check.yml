@@ -30,7 +30,7 @@ quiz:
     - content: Determine throughput limits on your SAP HANA system
       isCorrect: false 
       explanation: Incorrect. Although application volume groups help you configure throughput options, they don't configure limits. 
-    - content: Ensure compute resources are placed adjacently to ensure compute
+    - content: Ensure compute resources are placed adjacently to ensure compute performance and low latency
       isCorrect: true 
       explanation: Correct. Due to the low latency and performance requirements, application volume groups ensure 
     - content: Determine the region of your Azure NetApp Files deployment
