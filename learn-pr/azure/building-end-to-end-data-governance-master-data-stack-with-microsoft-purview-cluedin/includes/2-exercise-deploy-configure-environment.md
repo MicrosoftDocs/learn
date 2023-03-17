@@ -19,20 +19,16 @@ If you don't have an Azure Data Factory instance, you can use the following guid
 
 You'll need to bring your own Microsoft Purview instance to the learning module, or you can create one using these steps:
 
-1. Search for **Microsoft Purview** in the [Azure portal](https://portal.azure.com) and select **Create** to create a new Microsoft Purview account.
+1. Select **Create a resource** in the [Azure portal](https://portal.azure.com),search for **Microsoft Purview**, and select **Create** to create a new Microsoft Purview account.
 
-   :::image type="content" source="../media/select-create.png" alt-text="Screenshot of the Microsoft Purview accounts page with the create button highlighted in the Azure portal.":::
-  
-      Or instead, you can go to the marketplace, search for **Microsoft Purview**, and select **Create**.
+    :::image type="content" source="../media/search-marketplace.png" alt-text="Screenshot showing Microsoft Purview in the Azure Marketplace, with the create button highlighted.":::
 
-     :::image type="content" source="../media/search-marketplace.png" alt-text="Screenshot showing Microsoft Purview in the Azure Marketplace, with the create button highlighted.":::
-
-1. On the new Create Microsoft Purview account page under the **Basics** tab, select the Azure subscription, resource group, enter a name, and choose a location.
+1. On the new Create Microsoft Purview account page under the **Basics** tab, select your Azure subscription, resource group, enter a name, and choose a location.
 
     :::image type="content" source="../media/Create-Purview-Account-Azure-Portal.png" alt-text="Screenshot of the Create Microsoft Purview account page in the Azure portal.":::
 
     >[!TIP]
-    > The list shows only locations that support the Microsoft Purview governance portal. The location you choose will be the region where your Microsoft Purview account and meta data will be stored. Sources can be housed in other regions.
+    > The list shows only locations that support the Microsoft Purview governance portal. The location you choose will be the region where your Microsoft Purview account and metadata will be stored. Sources can be housed in other regions.
 
 1. Select **Review & Create**, and then select **Create**.
 
@@ -65,8 +61,7 @@ To use the service principal (application), you need to know the service princip
 1. Select **Certificates & secrets** from the left pane.
 1. Select **New client secret**.
 1. On the **Add a client secret** page, enter a **Description**, select an expiration time under **Expires**, and then select **Add**.
-
-   On the **Client secrets** page, the string in the **Value** column of your new secret is your password. Save this value.
+1. On the **Client secrets** page, the string in the **Value** column of your new secret is your password. Save this value to use later.
 
    :::image type="content" source="../media/client-secret.png" alt-text="Screenshot showing a client secret.":::
 
@@ -95,26 +90,24 @@ Once the new service principal is created, or if you're bringing your own, you n
 
 ## Create a CluedIn instance
 
-You can also install CluedIn directly through the Azure Marketplace or Azure portal. You'll need to make sure that you check and validate that you have all the prerequisites for installing the trial, available here: https://documentation.cluedin.net/deployment/azure-marketplace/preflight.
+You can also create a CluedIn instance directly through the Azure Marketplace or Azure portal. You'll need to make sure that you check and validate that you have all the prerequisites for installing the trial, available here: https://documentation.cluedin.net/deployment/azure-marketplace/preflight.
 
-To install CluedIn, go to the Azure portal and follow the steps below:
+To create a CluedIn instance, go to the Azure portal and follow the steps below:
 
-1. Search "CluedIn" in your Azure portal and select the application under the Marketplace section.
+1. Search **CluedIn** in your Azure portal and select the application under the Marketplace section.
 
     :::image type="content" source="../media/Create_CluedIn_Azure_Portal.png" alt-text="Screenshot of Azure Marketplace, showing CluedIn Master Data Management.":::
 
-1. This will take you to a form where you'll be asked to choose the type of plan. CluedIn provides a seven-day trial that is cost-free from CluedIn, but will charge for the underlying Azure infrastructure used to install within your environment. You can also choose the **CluedIn Platform** plan that is hourly based pricing.
+1. This will take you to a form where you'll be asked to choose the type of plan. CluedIn provides a seven-day trial that is cost-free from CluedIn, but will charge for the underlying Azure infrastructure used to install within your environment. You can also choose the **CluedIn Platform** plan that is hourly based pricing. In this module, we'll walk you through using the CluedIn seven-day trial.
 
     :::image type="content" source="../media/Choose_CluedIn_Instance.png" alt-text="Screenshot of CluedIn Master Data Management Page, showing the CluedIn Platform option.":::
 
-1. Choose the plan that works for you and fill in the form details. In this module, we'll walk you through using the CluedIn seven-day trial.
+1. Choose **Trial Version** from the dropdown and select **Create**.
 
-1. Choose "Trial Version" from the dropdown and select "Create".
-
-1. Fill in the Subscription and Resource Group you would like to use. You can also create a new Resource Group here if that is preferred. For the region, make sure you choose a region in which you're able to create infrastructure and that you have enough of a quota to spin up the required infrastructure. If you are in doubt, [there's a handy PowerShell script that you can run](https://documentation.cluedin.net/deployment/azure-marketplace/preflight) that will tell you if you have enough quota and all required prerequisites before running the installation.
+1. Fill in the Subscription and Resource Group you would like to use. For the region, make sure you choose a region where you're able to create infrastructure and that you have enough of a quota to spin up the required infrastructure. If you are in doubt, [there's a handy PowerShell script that you can run](https://documentation.cluedin.net/deployment/azure-marketplace/preflight) that will tell you if you have enough quota and all required prerequisites before running the installation.
 
     >[!NOTE]
-    >The Managed Resource Group name is autogenerated for you, there is no need to rename this. Call your Installation Name something that will be easy for you to remember throughout your learning Module.
+    >The Managed Resource Group name is autogenerated for you, there is no need to rename this. Call your Installation Name something that will be easy for you to remember through the rest of the module.
 
     :::image type="content" source="../media/Fill_CluedIn_Trial_Forn.png" alt-text="Screenshot of CluedIn Master Data Management Page creation form, showing some generic options.":::
 
@@ -131,7 +124,7 @@ To install CluedIn, go to the Azure portal and follow the steps below:
 
 1. Select **Next : Review + create >**. On this next page, you'll need to check the checkbox to agree to the terms and conditions.
 
-In approximately 15 to 20 minutes, you'll have a created instance of CluedIn and will receive an email with all of the access details, including the Url, to access your newly created CluedIn environment.
+In approximately 15 to 20 minutes, you'll have a created instance of CluedIn and will be able to access your newly created CluedIn environment. We'll show you how in the next section.
 
 ## Create an Azure Storage Account
 
