@@ -12,9 +12,9 @@ By the end of this module, you're able to debug a C# application using the Visua
 > [!NOTE]
 > This is a guided project module where you’ll complete an end-to-end project by following step-by-step instructions.
 
-## Learning Objectives
+## Learning objectives
 
-In this module, you practice how to: 
+In this module, you practice how to:
 
 - Use the Visual Studio Code debugger tools to identify and correct an issue in your code logic.
 - Implement exception handling in a C# console application using the `try-catch` pattern.

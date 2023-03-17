@@ -7,6 +7,14 @@ You complete the following tasks during this exercise:
 
 1. Code review: review the contents of the Program.cs file.
 
+    The Program.cs includes the following code sections:
+
+    - Top-level statements: the top-level statements simulate a series of transactions using either an array of `testData` or a larger number of randomly generated transactions.
+    - LoadTillEachMorning: the `LoadTillEachMorning` method is used to configure the cash register till with a predefined number of bills in each denomination.
+    - MakeChange: the `MakeChange` method is used to manage the cash till during purchase transactions.
+    - LogTillStatus: the `LogTillStatus` method is used to display the number of bills of each denomination currently in the till.
+    - TillAmountSummary: the `TillAmountSummary` method is used display a message showing the amount of cash in the till.
+
 1. Initial testing: verify that `MakeChange` successfully balances the money till when using the `testData` array to simulate transactions.
 
 1. Code debugging: isolate and correct a logic issue that's exposed when using randomly generated data.
@@ -19,15 +27,21 @@ In this task, you complete a walkthrough of the Starter project code. The Progra
 
 1. Ensure that the **GuidedProject** folder is open in Visual Studio Code.
 
+1. In the EXPLORER view, expand the **GuidedProject** and **Starter** folders.
+
+    The **Starter** folder contains the sample application for this Guided project module.
+
 1. Open the Program.cs file in the Visual Studio Code Editor.
 
-    The Program.cs includes the following code sections:
+1. After a few seconds, notice that a dialog box is displayed asking if you want to load the assets required for building and debugging.
 
-    - Top-level statements: the top-level statements simulate a series of transactions using either an array of `testData` or a larger number of randomly generated transactions.
-    - LoadTillEachMorning: the `LoadTillEachMorning` method is used to configure the cash register till with a predefined number of bills in each denomination.
-    - MakeChange: the `MakeChange` method is used to manage the cash till during purchase transactions.
-    - LogTillStatus: the `LogTillStatus` method is used to display the number of bills of each denomination currently in the till.
-    - TillAmountSummary: the `TillAmountSummary` method is used display a message showing the amount of cash in the till.
+    Visual Studio Code recognizes the C# file extension, `.cs`, and recognizes that your "Starter" project is missing the required assets.
+
+1. To load the required assets, select **Yes**.
+
+1. At the **Select the project to launch** prompt, select the **Starter** project.
+
+    The launch.json file that's created will include a configuration for the Starter project.
 
 1. Take a few minutes to review the top-level statements for this application:
 
@@ -319,6 +333,8 @@ In this task, you use simulated transactions to expose a code logic issue, and t
 
 1. To run the code using randomly generated transactions, change the value assigned to `useTestData` to `false`.
 
+    You can find the `useTestData` variable near the top of the top-level statements.
+
 1. Save the Program.cs file, and then run the application in the debugger.
 
 1. Review the output in the TERMINAL panel.
@@ -339,6 +355,10 @@ In this task, you use simulated transactions to expose a code logic issue, and t
     > [!NOTE]
     > The application randomly generates the cost of purchase items. Therefore, the till values reported in your output are different.
 
+1. To exit the application, press Enter.
+
+1. Close the TERMINAL panel.
+
 ## Debug the code
 
 In this task, you use the Visual Studio Code debugger tools to isolate and then fix the logic issue.
@@ -346,28 +366,30 @@ In this task, you use the Visual Studio Code debugger tools to isolate and then 
 1. Near the end of the top-level statements, locate the following code line:
 
     ```csharp
-    Console.WriteLine($"Expected till value: {registerCheckTillTotal}\n\r");
+    Console.WriteLine();
     ```
 
-1. For the selected code line, configure a conditional breakpoint that uses the following expression:
-
-    ```csharp
-    TillAmountSummary(cashTill) != registerCheckTillTotal
-    ```
-
-    This expression triggers the breakpoint when the discrepancy in the till balance is detected.
+1. Set a breakpoint on selected code line.
 
 1. On the Visual Studio Code **Run** menu, select **Start Debugging**.
 
-1. Notice that code execution pauses on the conditional breakpoint.
+1. Notice that code execution pauses on the breakpoint.
+
+1. On the **Debug controls** toolbar, select **Step Into**.
 
 1. Review the output in the TERMINAL panel.
+
+1. If the reported and expected till values are equal, select **Continue** on the **Debug controls** toolbar.
+
+1. Repeat the previous step until you see a discrepancy between the reported and expected till values.
+
+1. Once you see a discrepancy, take a minute to examine the details of the transaction.
 
 1. Notice that the reported cash received and change returned are correct, but the till is short by five dollars.
 
     This shortage suggests that the `cashTill` array is being updated incorrectly, even though the reporting is correct.
 
-1. Stop the debug session.
+1. Stop the debug session and close the TERMINAL panel.
 
 1. Scroll to the bottom of the `MakeChange` method.
 

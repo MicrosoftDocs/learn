@@ -90,7 +90,7 @@ The `MakeChange` method includes two issues that should result in exceptions:
 
     ```csharp
     if (changeNeeded < 0)
-        throw new invalidOperationException("InvalidOperationException: Not enough money provided to complete the transaction.");
+        throw new InvalidOperationException("InvalidOperationException: Not enough money provided to complete the transaction.");
     ```
 
 1. Scroll down to locate the following code lines:
@@ -138,14 +138,94 @@ In this task, you'll update the `catch` clause to catch a specific exception typ
 
 1. Use the **File** menu to save your updates.
 
+## Convert the MakeChange method from "string" to "void" and access exception properties
+
+In this task, you'll update the `MakeChange` to be type `void`, and then use exception properties communicate issues to the user.
+
+1. Scroll to the top of the `MakeChange` method.
+
+1. To convert the `MakeChange` method from type `string` to type `void`, update the code as follows:
+
+    ```csharp
+    static void MakeChange(int cost, int[] cashTill, int twenties, int tens = 0, int fives = 0, int ones = 0)
+    ```
+
+1. Delete the following variable declaration:
+
+    ```csharp
+    string transactionMessage = "";
+    ```
+
+1. Scroll to the bottom of the `MakeChange` method.
+
+1. Delete the following code lines:
+
+    ```csharp
+    if (transactionMessage == "")
+        transactionMessage = "transaction succeeded";
+
+    return transactionMessage;
+    ```
+
+1. Scroll up to the top-level statements and locate the `try` code block.
+
+1. Update the `try` code block as follows:
+
+    ```csharp
+    try
+    {
+        // MakeChange manages the transaction and updates the till 
+        MakeChange(itemCost, cashTill, paymentTwenties, paymentTens, paymentFives, paymentOnes);
+
+        Console.WriteLine($"Transaction successfully completed.");
+        registerCheckTillTotal += itemCost;
+    }
+    ```
+
+1. Locate and then delete the following code lines:
+
+    ```csharp
+    // Backup Calculation - each transaction adds current "itemCost" to the till
+    if (transactionMessage == "transaction succeeded")
+    {
+        Console.WriteLine($"Transaction successfully completed.");
+        registerCheckTillTotal += itemCost;
+    }
+    else
+    {
+        Console.WriteLine($"Transaction unsuccessful: {transactionMessage}");
+    }
+
+    ```
+
+1. Use the **File** menu to save your updates.
+
 ## Check your work
 
 In this task, you'll run your application and verify that your updated code works as intended.
 
-1. Update the number of transactions as follows.
+1. Scroll up to find the `while` loop in the top-level statements.
+
+    This loop is used to iterate through the transactions.
+
+1. Locate the following code a few lines before the start of the `while` loop.
+
+    ```csharp
+    int transactions = 10;
+    
+    ```
+
+1. Update the number of transactions as follows:
 
     ```csharp
     int transactions = 40;
+    
+    ```
+
+1. Locate the following code line inside the `while` loop.
+
+    ```csharp
+    int itemCost = valueGenerator.Next(2, 20);
     
     ```
 
@@ -156,11 +236,15 @@ In this task, you'll run your application and verify that your updated code work
 
     ```
 
+1. Use the **File** menu to save your updates.
+
 1. On the **Run** menu, select **Start Debugging**.
 
 1. Review the output in the TERMINAL panel.
 
 1. Verify that the messages associated with the two exception types are displayed:
+
+    Your transactions report should include the following "Could not make transaction" messages:
 
     ```output
     Customer is making a $42 purchase
@@ -186,5 +270,7 @@ In this task, you'll run your application and verify that your updated code work
     
     ```
 
+Congratulations, you've debugged the cash register application to fix a code logic issue, and you've updated the application to use proper exception handling techniques.
+
 > [!NOTE]
-> You may notice that the till is no longer balanced. There are additional logic bugs in the code. There is a challenge project module available if your interested in demonstrating your Visual Studio Code debugging skills.
+> You may notice that the till is no longer balanced. There are additional logic bugs in the code. A challenge project module available if you're interested in demonstrating your Visual Studio Code debugging skills!
