@@ -1,6 +1,6 @@
-In this section, you will lean how to set up your Azure DevOps organization and create the Azure App Service environment that you'll deploy to.
+In this section, you'll lean how to set up your Azure DevOps organization and create the Azure App Service environment that you'll deploy to.
 
-You will learn how to:
+You'll learn how to:
 
 > [!div class="checklist"]
 > * Set up your Azure DevOps project.
@@ -101,7 +101,7 @@ In this module, you use the Azure CLI to bring up the resources needed to deploy
 
 ### Select an Azure region
 
-A _region_ is one or more Azure datacenters within a geographic location. East US, West US, and North Europe are examples of regions. Every Azure resource, including an App Service instance, is assigned a region.
+A *region* is one or more Azure datacenters within a geographic location. East US, West US, and North Europe are examples of regions. Every Azure resource, including an App Service instance, is assigned a region.
 
 To make commands easier to run, start by selecting a default region. After you specify the default region, later commands use that region unless you specify a different region.
 
@@ -137,14 +137,14 @@ Create Bash variables to make the setup process more convenient and less error-p
     resourceSuffix=$RANDOM
     ```
 
-1. Create globally unique names for your App Service Web App and Azure Container Registry. Note that these commands use double quotes, which instructs Bash to interpolate the variables using the inline syntax.
+1. Create globally unique names for your App Service Web App and Azure Container Registry. These commands use double quotes, which instructs Bash to interpolate the variables using the inline syntax.
 
     ```bash
     webName="tailspin-space-game-web-${resourceSuffix}"
     registryName="tailspinspacegame${resourceSuffix}"
     ```
 
-1. Create two more Bash variables to store the names of your resource group and App Service plan. 
+1. Create two more Bash variables to store the names of your resource group and App Service plan.
 
     ```bash
     rgName='tailspin-space-game-rg'
@@ -284,9 +284,9 @@ Here you create a service connection that enables Azure Pipelines to access your
 
     | Field                   | Value                                      |
     |-------------------------|--------------------------------------------|
-    | Scope level             | **Subscription**                           |
+    | Scope level             | Subscription                               |
     | Subscription            | Your Azure subscription                    |
-    | Resource Group          | **tailspin-space-game-rg**                 |
+    | Resource Group          | *tailspin-space-game-rg*                   |
     | Service connection name | *Resource Manager - Tailspin - Space Game* |
 
     During the process, you might be prompted to sign in to your Microsoft account.
@@ -301,12 +301,12 @@ Here you create a service connection that enables Azure Pipelines to access your
 1. Near the top of the page, select **Azure Container Registry**.
 1. Fill in these fields:
 
-    | Field               | Value                                        |
-    |---------------------|----------------------------------------------|
-    | Subscription    | Your Azure subscription                          |
-    | Azure container registry  | **Select the one you created earlier** |
-    | Service connection name | *Container Registry Connection*          |
+    | Field                     | Value                                        |
+    |---------------------------|----------------------------------------------|
+    | Subscription              | Your Azure subscription                      |
+    | Azure container registry  | Select the one you created earlier           |
+    | Service connection name   | *Container Registry Connection*              |
 
 1. Ensure that **Grant access permission to all pipelines** is selected.
 
-1. Select **Save**.
+1. Select **Save** when you're done.
