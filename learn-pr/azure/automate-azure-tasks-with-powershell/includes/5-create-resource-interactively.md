@@ -1,8 +1,8 @@
-Ins **interactive mode**, PowerShell lets you write commands and execute them immediately.
+In **interactive mode**, PowerShell lets you write commands and execute them immediately.
 
-Recall that the overall goal in the Customer Relationship Management (CRM) example is to create three test environments containing Virtual Machines. You'll use resource groups to ensure the VMs are organized into separate environments: one for unit testing, one for integration testing, and one for acceptance testing. You only need to create the resource groups once, so using the PowerShell interactive mode in this use case is a good choice.
+Recall that the overall goal in the Customer Relationship Management (CRM) example is to create three test environments containing Virtual Machines. You use resource groups to ensure the VMs are organized into separate environments: one for unit testing, one for integration testing, and one for acceptance testing. You only need to create the resource groups once, so using the PowerShell interactive mode in this use case is a good choice.
 
-When you enter a command into PowerShell, PowerShell matches the command to a *cmdlet*, and PowerShell then performs the requested action. We'll look at some common commands you can use, then we'll look into installing the Azure support for PowerShell.
+When you enter a command into PowerShell, PowerShell matches the command to a *cmdlet*, and PowerShell then performs the requested action. First, we look at some common commands you can use, then we look into installing the Azure support for PowerShell.
 
 ## What are PowerShell cmdlets?
 
@@ -20,13 +20,13 @@ Get-Help -Name Get-ChildItem -Detailed
 
 ## What is a PowerShell module?
 
-Cmdlets are shipped in *modules*. A PowerShell Module is a DLL that includes the code to process each available cmdlet. You'll load cmdlets into PowerShell by loading the module in which they're contained. You can get a list of loaded modules using the `Get-Module` command:
+Cmdlets are shipped in *modules*. A PowerShell Module is a DLL that includes the code to process each available cmdlet. You load cmdlets into PowerShell by loading the module in which they're contained. You can get a list of loaded modules using the `Get-Module` command:
 
 ```powershell
 Get-Module
 ```
 
-This command will output something like:
+This command outputs something like:
 
 ```Output
 ModuleType Version    Name                                ExportedCommands
@@ -79,7 +79,7 @@ PowerShellGet requires NuGet provider version '2.8.5.201' or newer to interact w
 
 Enter **Y** and press <kbd>Enter</kbd>.
 
-By default, the PowerShell Gallery isn't configured as a trusted repository for PowerShellGet. Each time you perform an installation from an untrusted repository, you'll be prompted to confirm you want to install the module with following output:
+By default, the PowerShell Gallery isn't configured as a trusted repository for PowerShellGet. Each time you perform an installation from an untrusted repository, you're prompted to confirm you want to install the module with following output:
 
 ```Output
 You are installing the modules from an untrusted repository. If you trust this repository, change its
@@ -115,7 +115,7 @@ Both behaviors typically indicate that the execution policy is "Restricted", mea
     Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
     ```
 
-    You'll be prompted for permission:
+    You're prompted for permission:
 
     ```Output
     The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose
@@ -164,7 +164,7 @@ As with the `Install-Module` cmdlet, answer **Yes** or **Yes to All** when promp
 
 ## Example: How to create a resource group with Azure PowerShell
 
-Once you've installed the Azure module, you can begin working with Azure. Let's do a common task: creating a Resource Group. As you know, we use resource groups to administer related resources together. Creating a new resource group is one of the first tasks you'll do when starting a new Azure solution.
+Once you've installed the Azure module, you can begin working with Azure. Let's do a common task: creating a Resource Group. As you know, we use resource groups to administer related resources together. Creating a new resource group is one of the first tasks you do when starting a new Azure solution.
 
 There are four steps you need to perform:
 
@@ -188,7 +188,7 @@ Beginning with PowerShell 3.0, modules are loaded automatically when you use a c
 
 ### Connect
 
-When you're working with a local install of Azure PowerShell, you'll need to authenticate before you can execute Azure commands. The `Connect-AzAccount` cmdlet prompts for your Azure credentials, then connects to your Azure subscription. It has many optional parameters, but if all you need is an interactive prompt, you don't need any parameters:
+When you're working with a local install of Azure PowerShell, you need to authenticate before you can execute Azure commands. The `Connect-AzAccount` cmdlet prompts for your Azure credentials, then connects to your Azure subscription. It has many optional parameters, but if all you need is an interactive prompt, you don't need any parameters:
 
 ```azurepowershell
 Connect-AzAccount
@@ -224,7 +224,7 @@ To get a more concise view, you can send the output from the `Get-AzResourceGrou
 Get-AzResourceGroup | Format-Table
 ```
 
-The output will look something like this:
+The output looks something like this:
 
 ```Output
 ResourceGroupName                  Location       ProvisioningState Tags TagsTable ResourceId
@@ -235,9 +235,9 @@ ExerciseResources                  eastus         Succeeded                     
 
 ### Create a resource group
 
-As you know, when you're creating resources in Azure, you'll always place them into a resource group for management purposes. A resource group is often one of the first things you'll create when starting a new application.
+As you know, when you're creating resources in Azure, you always place them into a resource group for management purposes. A resource group is often one of the first things you create when starting a new application.
 
-You can create resource groups by using the `New-AzResourceGroup` cmdlet. You must specify a name and location. The name must be unique within your subscription. The location determines where the metadata for your resource group will be stored (which may be important to you for compliance reasons). You use strings like "West US", "North Europe", or "West India" to specify the location. As with most of the Azure cmdlets, `New-AzResourceGroup` has many optional parameters. However, the core syntax is:
+You can create resource groups by using the `New-AzResourceGroup` cmdlet. You must specify a name and location. The name must be unique within your subscription. The location determines where the metadata for your resource group is stored (which may be important to you for compliance reasons). You use strings like "West US", "North Europe", or "West India" to specify the location. As with most of the Azure cmdlets, `New-AzResourceGroup` has many optional parameters. However, the core syntax is:
 
 ```powershell
 New-AzResourceGroup -Name <name> -Location <location>
@@ -272,10 +272,10 @@ Another common task you can do with PowerShell is to create VMs.
 
 Azure PowerShell provides the `New-AzVm` cmdlet to create a virtual machine. The cmdlet has many parameters to let it handle the large number of VM configuration settings. Most of the parameters have reasonable default values, so we only need to specify five things:
 
-- **ResourceGroupName**: The resource group into which the new VM will be placed.
+- **ResourceGroupName**: The resource group into which the new VM should be placed.
 - **Name**: The name of the VM in Azure.
-- **Location**: Geographic location where the VM will be provisioned.
-- **Credential**: An object containing the username and password for the VM admin account. We'll use the `Get-Credential` cmdlet. This cmdlet will prompt for a username and password and package it into a credential object.
+- **Location**: Geographic location where the VM should be provisioned.
+- **Credential**: An object containing the username and password for the VM admin account. We use the `Get-Credential` cmdlet. This cmdlet prompts for a username and password and packages it into a credential object.
 - **Image**: The operating system image to use for the VM, which is typically a Linux distribution or Windows Server.
 
 ```powershell
@@ -307,7 +307,7 @@ The `AzVM` suffix is specific to VM-based commands in PowerShell. There are seve
 
 #### Example: Getting information for a VM
 
-You can list the VMs in your subscription using the `Get-AzVM -Status` command. This command also supports entering a specific VM by including the `-Name` property. Here, we'll assign it to a PowerShell variable:
+You can list the VMs in your subscription using the `Get-AzVM -Status` command. This command also supports entering a specific VM by including the `-Name` property. Here, we assign it to a PowerShell variable:
 
 ```powershell
 $vm = Get-AzVM  -Name MyVM -ResourceGroupName ExerciseResources
@@ -323,4 +323,4 @@ $vm.HardwareProfile.vmSize = "Standard_DS3_v2"
 Update-AzVM -ResourceGroupName $ResourceGroupName  -VM $vm
 ```
 
-The interactive mode in PowerShell is appropriate for one-off tasks. In our example, we'll likely use the same resource group for the lifetime of the project, so creating it interactively is reasonable. Interactive mode is often quicker and easier for this task than writing a script and executing that script exactly once.
+The interactive mode in PowerShell is appropriate for one-off tasks. In our example, we use the same resource group for the lifetime of the project, so creating it interactively is reasonable. Interactive mode is often quicker and easier for this task than writing a script and executing that script exactly once.
