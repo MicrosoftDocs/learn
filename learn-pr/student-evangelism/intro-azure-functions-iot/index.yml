@@ -2,8 +2,8 @@
 uid: learn.oxford.intro-iot-funtions-iot
 metadata:
   title: "Introduction to Azure Functions for IoT"
-  description: "University of Oxford"
-  ms.date: 03/24/2020
+  description: "Learn about Azure Functions for IoT. University of Oxford"
+  ms.date: 03/08/2023
   author: leestott
   ms.author: chnoring
   ms.topic: interactive-tutorial

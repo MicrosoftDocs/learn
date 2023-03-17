@@ -4,7 +4,7 @@ title: How Azure Web Application Firewall works
 metadata:
   title: How Azure Web Application Firewall works
   description: Learn how Azure Web Application Firewall works. In particular, learn about core rule sets and rule groups.
-  ms.date: 02/10/2021
+  ms.date: 03/10/2023
   author: vhorne
   ms.author: victorh
   ms.topic: interactive-tutorial
