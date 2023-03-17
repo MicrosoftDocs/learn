@@ -1,6 +1,6 @@
-Here, we'll discuss how Azure NetApp Files works behind the scenes. You'll learn about the main pieces of Azure NetApp Files and how they work together to provide a high-performance cloud NAS service. This knowledge will help you evaluate whether Azure NetApp Files is a good solution for migrating your organization's file-based workloads to the Azure cloud.
+Here, we discuss how Azure NetApp Files works behind the scenes. You learn about the main pieces of Azure NetApp Files and how they work together to provide a high-performance cloud NAS service. This knowledge helps you evaluate whether Azure NetApp Files is a good solution for migrating your organization's file-based workloads to the Azure cloud.
 
-In this unit, you'll learn about:
+In this unit, you learn about:
 
 - Azure NetApp Files storage hierarchy.
 - How Azure NetApp Files migrations work.
@@ -14,9 +14,9 @@ One of the most important components of Azure NetApp Files is the storage hierar
 
 Azure NetApp Files storage hierarchy consists of the following elements:
 
-- Capacity pool. A provisioned amount of storage to use. In Azure NetApp Files, the minimum capacity pool size is 4 tebibyte (TiB) and the maximum capacity pool size is 500 TiB.
+- Capacity pool. A provisioned amount of storage to use. In Azure NetApp Files, the minimum capacity pool size is 4 tebibytes (TiB) and the maximum capacity pool size is 500 TiB.
 - Volume. Storage space within a capacity pool. For example, you can divide a 4-TiB capacity pool into four 1-TiB volumes or eight 500 gibibyte (GiB) volumes, and so on. In Azure NetApp Files, the minimum volume size is 100 GiB and the maximum volume size is 100 TiB.
-- Throughput. The maximum rate at which data can enter or leave a capacity pool, usually measured in mebibyte (MiB) per second.
+- Throughput. The maximum rate at which data can enter or leave a capacity pool, measured in mebibyte (MiB) per second.
 - Multiple service levels. Azure NetApp Files offers three service levels for the capacity pools you create:
   - Standard. Provides up to 16 MiB/s of throughput per 1 TiB of capacity provisioned and 320,000 IOPS. Use Standard for static web content, file shares, and database backups.
   - Premium. Provides up to 64 MiB/s of throughput per 1 TiB of capacity provisioned and 450,000 IOPS. Premium is comparable to mainstream SSD performance and is suitable for SAP HANA, databases, enterprise apps, virtual desktop infrastructure (VDI), analytics, technical applications, and messaging queues.
@@ -59,14 +59,14 @@ After your volumes are set up, you can use any of the following tools to migrate
 
 ## Connectivity to Azure NetApp Files
 
-A key consideration when evaluating whether to migrate on-premises workloads to Azure NetApp Files is how your existing applications, services, and users will connect to the data in its new location. When you create an instance of Azure NetApp Files, you assign the instance to a delegated subnet. A *delegated subnet* is a subnet that's configured with permissions to create resources that are specific to a service, which in this case is Azure NetApp Files. How network nodes connect to Azure NetApp Files in that subnet depends on where those nodes are located. There are three main scenarios to consider:
+A key consideration when evaluating whether to migrate on-premises workloads to Azure NetApp Files is how your existing applications, services, and users connect to the data in its new location. When you create an instance of Azure NetApp Files, you assign the instance to a delegated subnet. A *delegated subnet* is a subnet that's configured with permissions to create resources that are specific to a service, which in this case is Azure NetApp Files. How network nodes connect to Azure NetApp Files in that subnet depends on where those nodes are located. There are three main scenarios to consider:
 
 - Connectivity in the same virtual network. Any resource running on an Azure virtual machine in the same virtual network that contains the delegated subnet can connect to the file storage provided by Azure NetApp Files. In the diagram that follows this list, both VM 3 and Azure NetApp Files Volume 1 reside in the Hub virtual network, so VM 3 has direct access to Volume 1.
 - Connectivity in a peered virtual network. Any resource running on an Azure virtual machine in a virtual network that's peered to the network containing the delegated subnet can connect to the file storage provided by Azure NetApp Files. In the diagram that follows this list:
   - The Spoke 1 virtual network is peered to the Hub virtual network, so VM 4 has peered access to Azure NetApp Files Volume 1.
   - The Spoke 2 virtual network is peered to the Hub virtual network, so VM 5 has peered access to Azure NetApp Files Volume 1.
-  - The Spoke 1 and Spoke 2 virtual networks are not peered to each other, so VM 4 can't access Azure NetApp Files Volume 3 and VM 5 can't access Azure NetApp Files Volume 2.
-- Connectivity in a hybrid network. Any resource running in an on-premises network that's connected to the Azure virtual network that contains the delegated subnet via VPN or ExpressRoute can connect to the file storage provided by Azure NetApp Files. In the diagram that follows this list, the on-premises network is connected to the Azure Hub virtual network via a VPN gateway. This enables the following scenarios:
+  - The Spoke 1 and Spoke 2 virtual networks aren't peered to each other, so VM 4 can't access Azure NetApp Files Volume 3 and VM 5 can't access Azure NetApp Files Volume 2.
+- Connectivity in a hybrid network. Any resource running in an on-premises network that's connected to the Azure virtual network that contains the delegated subnet via VPN or ExpressRoute can connect to the file storage provided by Azure NetApp Files. In the diagram that follows this list, the on-premises network is connected to the Azure Hub virtual network via a VPN gateway. Enabling the following scenarios:
   - A resource in the on-premises network has gateway access to any Azure NetApp Files volume in the gateway's virtual network. For example, VM 2 in the on-premises network can connect to Azure NetApp Files Volume 1.
   - A resource in the on-premises network has gateway access to any Azure NetApp Files volume in a peered virtual network. For example, VM 1 in the on-premises network can connect to Azure NetApp Files Volume 2 (and VM 2 can connect to Azure NetApp Files Volume 3).
 
