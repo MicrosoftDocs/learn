@@ -40,21 +40,17 @@ The [Docker task](/azure/devops/pipelines/tasks/build/docker?azure-portal=true) 
 
 ## Replace the deploy stage task
 
-**Andy:** Well that seems pretty straightforward. Now all we need to find is a task that will instruct App Service to use the newly pushed version of the container image.
+**Andy:** Well that seems pretty straightforward. Now all we need is to find a task that will instruct App Service to use the newly pushed version of the container image.
 
-**Mara:** I'm already on it. It's a bit different from deploying a build local to the pipeline, but still direct enough that we can get the job done in one task. Let's add it now.
+**Mara:** I'm already on it. It's a bit different from deploying a build to Azure Pipelines, but still direct enough that we can get the job done in one task. Let's add it now.
 
 ### Azure Web App for Container task
 
-The `AzureWebAppContainer@1` task is designed to deploy Docker containers to App Service. Deployment can be accomplished with a single task:
+The [Azure Web App for Container task](/azure/devops/pipelines/tasks/deploy/azure-rm-web-app-containers?azure-portal=true) is designed to deploy Docker containers to Azure App Service. Replace the entire **Deploy** stage with the YAML snippet below.
 
-* `appName` specifies the name of the App Service instance.
-* `azureSubscription` specifies the name of the Azure connection.
-* `imageName` specifies the full name of the Docker container image.
-
-You can learn more about the flexibility of this task in the [Azure Web App for Container task](/azure/devops/pipelines/tasks/deploy/azure-rm-web-app-containers?azure-portal=true) documentation.
-
-Replace the entire **Deploy** stage with the code below.
+* **appName**: specifies the name of an existing Azure App Service.
+* **azureSubscription**: specifies the name of the Azure Resource Manager subscription for the deployment.
+* **imageName**: specifies the fully qualified container image name. For example, myregistry.azurecr.io/nginx:latest or python:3.7.2-alpine/.
 
 [!code-yml[](code/4-3-azure-pipelines.yml)]
 
@@ -70,4 +66,4 @@ Replace the entire **Deploy** stage with the code below.
 
     :::image type="content" source="../media/4-space-game.png" alt-text="Screenshot of the Space Game website.":::
 
-**Andy:** This turned out great! I think adopting containers could be a huge win for everyone.
+**Andy:** This turned out great! I think adopting containers could be a huge win for our team.
