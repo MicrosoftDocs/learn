@@ -117,7 +117,7 @@ Once again, if we look at Lorain, we can see that this time her email ends with 
 
 1. You can check the scan by selecting your ADLS Gen2 resource in the data map, and looking at the **Last run status** of the most recent scan. Wait until it is completed.
 
-1. After the scan is complete, you should validate that everything was success by selecting your ADLS Gen2 resource in Microsoft Purview and making sure that there are ten assets discovered.
+1. After the scan is complete, you should validate that everything was success by selecting your ADLS Gen2 resource in Microsoft Purview and making sure that there are assets discovered.
 
 1. If you search in Microsoft Purview for Contacts.csv, then you should find your assets in Microsoft Purview.
 
@@ -128,6 +128,30 @@ Once again, if we look at Lorain, we can see that this time her email ends with 
     :::image type="content" source="../media/Purview_Azure_Data_Factory.png" alt-text="Screenshot of a data factory connection in Microsoft Purview.":::
 
     This allows Microsoft Purview to create automated lineage for you based off the ADF scheduled pipelines you have for pulling in the data from the source systems into the raw folder regularly, and also allows the lineage that CluedIn will create during data processing.
+
+### Flagging assets that can sync with CluedIn
+
+1. In Microsoft Purview and open the data catalog and select **Glossary**. Then select **New term**.
+
+1. Select the System default template, and then create a new term **CluedInSource**. Set status to **Approved**, and select **Create**.
+
+    :::image type="content" source="../media/new-glossary-term.png" alt-text="Screenshot of the Microsoft Data Catalog new glossary term page, showing a new CluedInSource term.":::
+
+1. Create a second glossary term called **CluedInADF** that we'll use later in this guide.
+
+1. Return to the data catalog, search for and select all seven assets. Then select **View selected**.
+
+    :::image type="content" source="../media/bulk-edit-assets.png" alt-text="Screenshot of the Microsoft Data Catalog browse, showing products.csv selected, and seven assets selected for bulk editing.":::
+
+1. Select **Bulk edit**.
+
+1. Set attribute to **Term**, operation to **Add** and new value to **CluedInSource**, then select **Apply**. Wait at least 60 seconds for CluedIn to poll for the filter we created.
+
+1. Add a second term attribute to add the **CluedInADF** glossary tag.
+
+1. Go to the **Datasources** section under **Integration** in CluedIn and you'll notice that your 7 files are now showing in CluedIn. However, there will only be the metadata that is registered.
+
+    :::image type="content" source="../media/CluedIn_DataSources_Purview.png" alt-text="Screenshot of the CluedIn integrations screen, showing the data sources.":::
 
 ## CluedIn
 
@@ -154,30 +178,6 @@ Once again, if we look at Lorain, we can see that this time her email ends with 
 1. Toggle on the settings for **Purview SyncDataSources** and **Purview PollDataSources**. This will integrate the data sources from Microsoft Purview with CluedIn.
 
 1. You'll also notice a setting called **Purview SyncDataSources Keywords**. Set this to **CluedInSource**. CluedIn will now be polling every 60 seconds to find Microsoft Purview assets that have been tagged with a Glossary Term that matches the filter.
-
-### Flagging assets that can sync with CluedIn
-
-1. Now with CluedIn talking to Microsoft Purview, return to Microsoft Purview and open the data catalog and select **Glossary**. Then select **New term**.
-
-1. Select the System default template, and then create a new term **CluedInSource**. Set status to **Approved**, and select **Create**.
-
-    :::image type="content" source="../media/new-glossary-term.png" alt-text="Screenshot of the Microsoft Data Catalog new glossary term page, showing a new CluedInSource term.":::
-
-1. Create a second glossary term called **CluedInADF** that we'll use later in this guide.
-
-1. Return to the data catalog, search for and select all seven assets. Then select **View selected**.
-
-    :::image type="content" source="../media/bulk-edit-assets.png" alt-text="Screenshot of the Microsoft Data Catalog browse, showing products.csv selected, and seven assets selected for bulk editing.":::
-
-1. Select **Bulk edit**.
-
-1. Set attribute to **Term**, operation to **Add** and new value to **CluedInSource**, then select **Apply**. Wait at least 60 seconds for CluedIn to poll for the filter we created.
-
-1. Add a second term attribute to add the **CluedInADF** glossary tag.
-
-1. Go to the **Datasources** section under **Integration** in CluedIn and you'll notice that your 7 files are now showing in CluedIn. However, there will only be the metadata that is registered.
-
-    :::image type="content" source="../media/CluedIn_DataSources_Purview.png" alt-text="Screenshot of the CluedIn integrations screen, showing the data sources.":::
 
 # Connect CluedIn to Azure Data Factory
 
