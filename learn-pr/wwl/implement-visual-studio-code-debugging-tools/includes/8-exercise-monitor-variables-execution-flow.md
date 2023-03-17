@@ -120,6 +120,10 @@ When you're working on a console application that reads user input, you'll proba
 
 1. On the Visual Studio Code **File** menu, select **Save**.
 
+1. On the **Run** menu, select **Remove All Breakpoints**.
+
+    This removes any breakpoints left over from the previous exercise.
+
 1. On the RUN AND DEBUG view, select **Start Debugging**.
 
 1. Notice that an error occurs when the `Console.Clear();` code line is executed.
@@ -255,7 +259,7 @@ In some cases, simply monitoring variable state is enough to identify the logic 
 
 The WATCH section can be used to monitor expressions that are based on one or more variables.
 
-Suppose you are working on an application that performs numeric calculations on a data set. You believe that your code produces unreliable results when the ratio between two numeric variables is greater than 5. You can use the WATCH section to monitor the calculated ratio.
+Suppose you're working on an application that performs numeric calculations on a data set. You believe that your code produces unreliable results when the ratio between two numeric variables is greater than 5. You can use the WATCH section to monitor the calculated ratio.
 
 1. Update the Program.cs file with the following code:
 
@@ -299,7 +303,7 @@ There may be times when you want to create a programmatic condition manually. Th
 
 1. Take a minute to review the code that you're running.
 
-    Notice that the code will never exit out of the `do` loop because `exit` will never be `true`. This isn't the type of programmatic condition that you may want to manually alter in a real-world application, but it does demonstrate the capability.
+    Notice that the code will never exit out of the `do` loop because `exit` will never be `true`. This isn't a programmatic condition that you'ld need to alter in a real-world application, but it demonstrates the capability.
 
 1. In the VARIABLES section, right-click **`exit [bool]`**, and then select **Set Value**.
 
@@ -319,7 +323,7 @@ Congratulations! You've successfully used the VARIABLES and WATCH sections of th
 
 Here are a few important things to remember from this unit:
 
-- Monitoring variable state using the VARIABLES section of the RUN AND DEBUG view.
-- Tracking an expression across time or different methods using the WATCH section of the RUN AND DEBUG view.
-- Using the CALL STACK section of the RUN AND DEBUG view to find the source location of an exception or a WATCH expression.
-- Using the VARIABLES section to change the variable value at runtime.
+- Monitor variable state using the VARIABLES section of the RUN AND DEBUG view.
+- Track an expression across time or different methods using the WATCH section of the RUN AND DEBUG view.
+- Use the CALL STACK section of the RUN AND DEBUG view to find the source location of an exception or a WATCH expression.
+- Use the VARIABLES section to change the variable value at runtime.

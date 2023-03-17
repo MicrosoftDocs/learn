@@ -116,13 +116,15 @@ Suppose you're debugging an application that processes product information in a 
 
 1. Continue to use **Step Into** to walk through the code until you see that `i` is equal to 3.
 
+    The VARIABLES section of the RUN AND DEBUG view displays the value assigned to `i`.
+
     Notice that `Process1` and `Process2` display messages to the DEBUG CONSOLE panel. A real application may require user interactions as data is being processed. Some interaction may be dependent on the data being processed.
 
 1. Use the **Stop** button to stop code execution.
 
 ## Configure a conditional breakpoint using an expression
 
-A standard breakpoint is great for walking through the data processing application. However, in this case you're interested in `new` products and you don't want to walk through the analysis of each product to find the ones that are `new`. This situation provides an example of when conditional breakpoints can be used.
+A standard breakpoint is great for walking through a data processing application. However, in this case you're interested in `new` products and you don't want to walk through the analysis of each product to find the ones that are `new`. This situation provides an example of when conditional breakpoints can be used.
   
 1. Right-click your existing breakpoint, and then select **Edit Breakpoint**.
 
@@ -138,9 +140,11 @@ A standard breakpoint is great for walking through the data processing applicati
 
 1. To run your application with the conditional breakpoint configured, select **Start Debugging**.
 
+1. Wait for the application to pause at the conditional breakpoint.
+  
 1. Notice the value of `i` displayed under the VARIABLES section.
 
-1. Select **Continue**
+1. On the **Debug controls** toolbar, select **Continue**
 
 1. Notice that the value of `i` has been updated the VARIABLES section.
 
@@ -164,5 +168,5 @@ Congratulations! You successfully configured a conditional breakpoint.
 
 Here are two important things to remember from this unit:
 
-- Setting a standard breakpoint to pause an application each time a breakpoint is encountered.
-- Configuring a conditional breakpoint to pause an application when a Boolean expression evaluates to `true`.
+- Use a standard breakpoint to pause an application each time a breakpoint is encountered.
+- Use a conditional breakpoint to pause an application when a Boolean expression evaluates to `true`.

@@ -46,7 +46,7 @@ The first step in learning the debugger tools is creating a code project that yo
 
 Visual Studio Code uses a launch configuration file to specify the application that runs in the debug environment.
 
-1. To open the Visual Studio Code **Run** menu, select **Run**.
+1. Open the **Run** menu.
 
 1. Notice that the **Run** menu provides access to several debug options, including a menu option named **Add Configuration**.
 
@@ -58,7 +58,7 @@ Visual Studio Code uses a launch configuration file to specify the application t
 
     Your C# code file opens in the Editor.
 
-1. After a few seconds, notice that a dialog box is displayed asking if you want to load the assets that are required for building and debugging.
+1. After a few seconds, notice that a dialog box is displayed asking if you want to load the assets required for building and debugging.
 
     ![Screenshot showing the Visual Studio Code required assets dialog.](../media/vscode-load-csharp-assets.png)
 
@@ -79,7 +79,7 @@ Visual Studio Code uses a launch configuration file to specify the application t
 
 1. On the **Run** menu, select **Open Configurations**.
 
-    The launch.json file opens in the Visual Studio Code Editor. You also could have opened the file directly from the EXPLORER view.
+    The launch.json file opens in the Visual Studio Code Editor. You could have opened the file directly from the EXPLORER view.
 
 1. Take a minute to examine the launch.json file.
 
@@ -193,6 +193,6 @@ During the remainder of this module, you use the Visual Studio Code debugger too
 Here are a few important things to remember from this unit:
 
 - The Visual Studio Code debugger for C# uses the .NET Core runtime to launch and interact with an application.
-- Using the Visual Studio Code **Run** menu to start an application with and without the debugger.
-- Using the **Debug toolbar** to **Stop** a running process.
-- Using the RUN AND DEBUG view to start debugging an application.
+- The Visual Studio Code **Run** menu has options to start an application with and without the debugger.
+- The **Debug toolbar** includes a button to **Stop** a running process.
+- The RUN AND DEBUG view includes an option to start debugging an application.

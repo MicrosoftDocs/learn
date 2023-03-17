@@ -110,7 +110,7 @@ Once you've isolated an issue in your code, you should update your code and then
 
 1. Take a minute to fix your code logic.
 
-    You have a few options for fixing the identified issue your code. For example:
+    You have a few options for fixing the identified issue in your code. For example:
 
     - You could keep the existing code lines and add curly braces `{}` to the `if` structure for each code block.
     - You could merge the two code lines that follow the final `else if` statement, forming a single statement as follows:
@@ -147,6 +147,6 @@ Congratulations! You've successfully used the Visual Studio Code debugger to hel
 
 Here are a few important things to remember from this unit:
 
-- Using breakpoints to pause code execution during a debug session.
-- Using **Step Into** from the **Debug controls** toolbar to observe the next executable code line.
-- Using **Step Out** from the **Debug controls** toolbar to advance through the current method and back to the code line that called the method.
+- Use breakpoints to pause code execution during a debug session.
+- Use **Step Into** from the **Debug controls** toolbar to observe the next executable code line.
+- Use **Step Out** from the **Debug controls** toolbar to advance through the current method and back to the code line that called the method.
