@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-c-sharp-methods-parameters.exercise-understand-method-scope
+title: Understand method scope
+metadata:
+  title: Understand method scope
+  description: "Understand method scope"
+  ms.date: 03/17/2023
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-exercise-understand-method-scope.md)]
