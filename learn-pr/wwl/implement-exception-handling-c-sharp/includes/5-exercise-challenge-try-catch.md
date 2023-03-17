@@ -55,3 +55,11 @@ Implement exception handling to satisfy the following challenge parameters:
     Exception caught in Process1
     Exit program
     ```
+
+    For the purposes of this challenge, you can ignore the output messages created by the debugger. For example, you can ignore the following messages:
+
+    ```output
+    Exception thrown: 'System.DivideByZeroException' in Exceptions101.dll
+
+    The program '[436] Exceptions101.dll' has exited with code 0 (0x0).
+    ```

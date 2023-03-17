@@ -56,7 +56,7 @@ Here are the requirements for this challenge:
 
 1. Update the code so that each error message is displayed to the console when that exception type occurs.
 
-1. Verify that your updated code displays the following messages in the console:
+1. Verify that your updated code prints the following messages to the console:
 
     ```output
     Error: The number is too large to be represented as an integer. Arithmetic operation resulted in an overflow.

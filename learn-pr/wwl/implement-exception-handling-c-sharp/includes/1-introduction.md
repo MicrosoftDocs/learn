@@ -11,7 +11,7 @@ By the end of this module, you'll be able to develop C# applications that manage
 
 ## Learning objectives
 
-In this module, you will: 
+In this module, you will:
 
 - Examine the basic categories of exceptions and review some common system exceptions.
 - Examine the exception handling tools included with C# and the techniques for these tools.

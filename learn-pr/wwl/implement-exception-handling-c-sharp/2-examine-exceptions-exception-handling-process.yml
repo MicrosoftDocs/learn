@@ -8,6 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 durationInMinutes: 11
 content: |
   [!include[](includes/2-examine-exceptions-exception-handling-process.md)]
