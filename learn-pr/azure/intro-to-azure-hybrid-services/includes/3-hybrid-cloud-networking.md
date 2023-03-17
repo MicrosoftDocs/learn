@@ -50,6 +50,6 @@ Traditionally, you might have a network topology where each branch office has a 
 
 The following image shows an Azure Virtual WAN topology.
 
-:::image type="content" source="../media/3-virtual-wan-topology.png" alt-text="Diagram the shows Azure Virtual WAN topology with multiple sites connected to each other in a hub and spoke topology through Azure." border="false" lightbox="../media/3-virtual-wan-topology.png":::
+:::image type="content" source="../media/3-virtual-wan-topology.png" alt-text="Diagram that shows Azure Virtual WAN topology with multiple sites connected to each other in a hub and spoke topology through Azure." border="false" lightbox="../media/3-virtual-wan-topology.png":::
 
 Azure Virtual WAN enables Tailwind Traders to move away from using VPN connections to connect branch offices and the datacenter locations in Sydney, Melbourne, and Auckland. It provides a topology where each branch office and datacenter have a VPN or ExpressRoute connection to Azure. The Azure Virtual WAN service manages the routing of traffic between locations.

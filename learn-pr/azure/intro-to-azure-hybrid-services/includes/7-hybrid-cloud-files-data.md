@@ -17,7 +17,7 @@ Because Azure Files is backed by Azure Storage, Azure file shares can store subs
 
 The following image shows clients connecting to Azure file shares.
 
-:::image type="content" source="../media/7-client-connect.png" alt-text="Diagram showing clients connected to Azure file shares by using authentication of credentials synchronized to an Azure AD tenant." border="false" lightbox="../media/7-client-connect.png":::
+:::image type="content" source="../media/7-client-connect.png" alt-text="Diagram that shows clients connected to Azure file shares by using authentication of credentials synchronized to an Azure AD tenant." border="false" lightbox="../media/7-client-connect.png":::
 
 An Azure file share endpoint might provide a solution to some of the challenges that Tailwind Traders faces. Specifically, placing a file share in Azure can serve as an easy replacement for branch-office retail locations, such as the Wangaratta site, to use instead of making a VPN connection to a file server in the Melbourne Office. Azure file share endpoints can be used in conjunction with Azure File Sync, which you'll learn about in the next section.
 
@@ -31,7 +31,7 @@ When you configure cloud tiering, you can specify that a certain amount of disk 
 
 The following image shows a basic Azure File Sync deployment.
 
-:::image type="content" source="../media/7-sync-deployment.png" alt-text="Diagram showing on-premises file servers synchronized with Azure file shares in the cloud through storage sync agents." border="false" lightbox="../media/7-sync-deployment.png":::
+:::image type="content" source="../media/7-sync-deployment.png" alt-text="Diagram that shows on-premises file servers synchronized with Azure file shares in the cloud through storage sync agents." border="false" lightbox="../media/7-sync-deployment.png":::
 
 Tailwind Traders currently uses a distributed file system (DFS) to replicate a set of file shares across its locations in Australia and New Zealand. Azure File Sync would allow the company to replace DFS as the file-replication mechanism. The advantage is that it would allow Tailwind Traders to enable cloud tiering, which would solve its problems regarding file servers' space constraints when new files are created and stored on a regular basis.
 

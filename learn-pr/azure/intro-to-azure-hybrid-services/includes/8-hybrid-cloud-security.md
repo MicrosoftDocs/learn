@@ -24,7 +24,7 @@ SIEM solutions store and analyze log data and event telemetry that they ingest f
 
 The following image shows a Sentinel hybrid architecture.
 
-:::image type="content" source="../media/8-sentinel-hybrid-architecture.png" alt-text="Diagram showing log telemetry for on-premises workloads and workloads in third-party clouds forwarded to Microsoft Defender for Cloud and Microsoft Sentinel." border="false" lightbox="../media/8-sentinel-hybrid-architecture.png":::
+:::image type="content" source="../media/8-sentinel-hybrid-architecture.png" alt-text="Diagram that shows log telemetry for on-premises workloads and workloads in third-party clouds forwarded to Microsoft Defender for Cloud and Microsoft Sentinel." border="false" lightbox="../media/8-sentinel-hybrid-architecture.png":::
 
 Microsoft Sentinel can perform the following tasks when it's supporting hybrid environments:
 
@@ -47,7 +47,7 @@ Update Management can use Microsoft Update or Windows Server Update Services (WS
 
 The following diagram shows how Update Management integrates with Azure Automation and Log Analytics workspaces.
 
-:::image type="content" source="../media/8-update-management-integration.png" alt-text="Diagram showing a collection of on-premises and Azure VMs connecting to Azure Automation runbooks, Log Analytics workspaces, and Automation Hybrid Worker solutions over TCP port 443 in a hybrid Update Management architecture." border="false" lightbox="../media/8-update-management-integration.png":::
+:::image type="content" source="../media/8-update-management-integration.png" alt-text="Diagram that shows a collection of on-premises and Azure VMs connecting to Azure Automation runbooks, Log Analytics workspaces, and Automation Hybrid Worker solutions over TCP port 443 in a hybrid Update Management architecture." border="false" lightbox="../media/8-update-management-integration.png":::
 
 When you configure an update deployment, you specify:
 
