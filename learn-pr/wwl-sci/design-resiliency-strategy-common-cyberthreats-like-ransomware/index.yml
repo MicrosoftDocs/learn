@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.design-resiliency-strategy-common-cyberthreats-like-ransomware
+metadata:
+  title: Design a resiliency strategy for common cyberthreats like ransomware
+  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the module; include relevant search keywords."
+  ms.date: 3/14/2023
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+title: Design a resiliency strategy for common cyberthreats like ransomware
+summary: "TODO 2 sentences, 20-35 words, don't teach or motivate, avoid using 'learn', don't duplicate the title; see https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main"
+abstract: |
+  By the end of this module, you'll be able to:
+    - "Understand common cyberthreats like ransomware."
+    - "Understand how to support business resiliency."
+    - "Design configurations for secure backup and restore."
+    - "Design solutions for managing security updates."
+prerequisites: |
+  - "Conceptual knowledge of security policies, requirements, zero trust architecture, and management of hybrid environments."
+  - "Working experience with zero trust strategies, applying security policies, and developing security requirements based on business goals."
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- security-engineer
+- solution-architect
+products:
+- azure
+- defender-for-cloud
+- defender-for-cloud-apps
+- defender-identity
+- microsoft-sentinel
+subjects:
+  - security
+  - cloud-security
+units:
+- learn.design-resiliency-strategy-common-cyberthreats-like-ransomware.common-cyberthreats-and-attack-patterns
+- learn.design-resiliency-strategy-common-cyberthreats-like-ransomware.support-business-resiliency
+- learn.design-resiliency-strategy-common-cyberthreats-like-ransomware.ransomware-protection
+- learn.design-resiliency-strategy-common-cyberthreats-like-ransomware.configurations-for-secure-backup-and-restore
+- learn.design-resiliency-strategy-common-cyberthreats-like-ransomware.security-updates
+- learn.design-resiliency-strategy-common-cyberthreats-like-ransomware.knowledge-check
+- learn.design-resiliency-strategy-common-cyberthreats-like-ransomware.summary
+badge:
+  uid: learn.design-resiliency-strategy-common-cyberthreats-like-ransomware.badge
