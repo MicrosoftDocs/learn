@@ -8,7 +8,7 @@ The Azure Quantum Resource Estimator takes a [Quantum Intermediate Representatio
 
 ## How does the Azure Quantum Resource Estimator work? 
 
-The Azure Quantum Resource Estimator takes a set of three inputs, with pre-defined values to easily get you started: 
+The Azure Quantum Resource Estimator takes a set of three inputs known as **target parameters** with predefined values to easily get you started: 
 
 - A physical qubit model, `qubitParams`.
 - A Quantum Error Correction (QEC) scheme, `qecScheme`.
@@ -18,7 +18,7 @@ The Azure Quantum Resource Estimator takes a set of three inputs, with pre-defin
 
 The parameter `qubitParams` is used to specify qubit parameters. When modeling the physical qubit assumptions, there exist two different physical instruction sets that are used to operate the qubits. The physical instruction set can be either *gate-based* or *Majorana*. A gate-based instruction set provides single-qubit measurement, single-qubit gates (incl. T gates), and two-qubit gates. A Majorana instruction set provides a physical T gate, single-qubit measurement and two-qubit joint measurement operations.
 
-You can choose from six pre-defined qubit parameters, four of which have gate-based instruction sets and two with a Majorana instruction set. These pre-defined qubit parameters represent different qubit architectures defined in published research articles, such as ions or superconductors. These qubit models cover a range of operation times and error rates, enabling sufficient exploration of the resource costs needed to enable practical quantum applications.
+You can choose from six predefined qubit parameters, four of which have gate-based instruction sets and two with a Majorana instruction set. These predefined qubit parameters represent different qubit architectures defined in published research articles, such as ions or superconductors. These qubit models cover a range of operation times and error rates, enabling sufficient exploration of the resource costs needed to enable practical quantum applications.
 
 | Pre-defined qubit parameters | Instruction set | References                                                                                                 |
 |------------------------------|-----------------|------------------------------------------------------------------------------------------------------------|
@@ -29,7 +29,7 @@ You can choose from six pre-defined qubit parameters, four of which have gate-ba
 | `"qubit_maj_ns_e4"`          | Majorana        | [arXiv:1610.05289](https://arxiv.org/abs/1610.05289)                                                       |
 | `"qubit_maj_ns_e6"`          | Majorana        | [arXiv:1610.05289](https://arxiv.org/abs/1610.05289)                                                       |
 
-Pre-defined qubit parameters can be selected by specifying the `name` field in the `qubitParams`. Pre-defined qubit parameters can also be customized by specifying the name and then updating any of the other values. For example, to decrease the error rate of two-qubit joint measurement in `"qubit_maj_ns_e4"`, write:
+Predefined qubit parameters can be selected by specifying the `name` field in the `qubitParams`. Pre-defined qubit parameters can also be customized by specifying the name and then updating any of the other values. For example, to decrease the error rate of two-qubit joint measurement in `"qubit_maj_ns_e4"`, write:
 
 ```JSON
 {
@@ -56,7 +56,7 @@ The Azure Quantum Resource Estimator provides three pre-defined QEC schemes: two
 | `surface_code` | Majorana        | [arXiv:1909.03002](https://arxiv.org/abs/1909.03002), [arXiv:2007.00307](https://arxiv.org/abs/2007.00307) |
 | `floquet_code` | Majorana        | [arXiv:2202.11829](https://arxiv.org/abs/2202.11829)                                                       |
 
-Pre-defined QEC schemes can be selected by specifying the `name` field in the `qecScheme`. Pre-defined QEC schemes can also be customized by specifying the name and then updating any of the other values. For example, you can update the time to execute a single logical operation, which depends on the code distance and the physical operation time assumptions of the underlying physical qubits. To update `"logicalCycleTime"`, write:
+Predefined QEC schemes can be selected by specifying the `name` field in the `qecScheme`. Predefined QEC schemes can also be customized by specifying the name and then updating any of the other values. For example, you can update the time to execute a single logical operation, which depends on the code distance and the physical operation time assumptions of the underlying physical qubits. To update `"logicalCycleTime"`, write:
 
 ```JSON
 {
@@ -71,18 +71,17 @@ For more information, see [QEC in the Azure Quantum Resource Estimator](/azure/q
 
 ### Error budget 
 
-The total error budget sets the overall allowed error for the algorithm, that is, the number of times it is allowed to fail. Its value must be between 0 and 1 and the default value is 0.001, which corresponds to 0.1%, and means that the algorithm is allowed to fail once in 1000 executions. This parameter is highly application specific. For example, if one is running Shor’s algorithm for factoring integers, a large value for the error budget may be tolerated as one can check that the output are indeed the prime factors of the input. On the other hand, a smaller error budget may be needed for an algorithm solving a problem with a solution, which cannot be efficiently verified. 
+The total error budget sets the overall allowed error for the algorithm, that is, the number of times it's allowed to fail. Its value must be between 0 and 1 and the default value is 0.001, which corresponds to 0.1%, and means that the algorithm is allowed to fail once in 1000 executions. This parameter is highly application specific. For example, if one is running Shor’s algorithm for factoring integers, a large value for the error budget may be tolerated as one can check that the output is indeed the prime factors of the input. On the other hand, a smaller error budget may be needed for an algorithm solving a problem with a solution, which can't be efficiently verified. 
 
 For more information, see [Error budget in the Azure Quantum Resource Estimator](/azure/quantum/overview-resources-estimator#error-budget).
 
 ## What is the result of a resource estimation job?
 
-The Azure Quantum Resource Estimator takes the optional job parameters `{qubitParams, qecScheme, errorBudget}` and a QIR algorithm, and computes pre- and post-layout estimation of the logical resources required to run such an algorithm in such a computational scenario. 
-
+The Azure Quantum Resource Estimator takes the target parameters `{qubitParams, qecScheme, errorBudget}` and a QIR algorithm, and computes pre- and post-layout estimation of the logical resources required to run such an algorithm in such a computational scenario. 
 
 The Resource Estimator computes logical and physical estimation of the algorithm. It calculates the QEC code distance, and from it, the number of physical qubits needed to encode one logical qubit. It calculates the number of logical qubits, T gates, rotation gates, control gates, measurements, T factory physical values, and total runtime, among others. 
 
-The result of the resource estimation job is printed in groups of [output data](/azure/quantum/overview-resources-estimator#output-data): physical qubits, breakdown, logical qubit parameters, T factory parameters, pre-layout logical resources, and assumed error budget.
+The result of the resource estimation job is printed in groups of [output data](/azure/quantum/overview-resources-estimator#output-data): physical qubits, breakdown, logical qubit parameters, T factory parameters, prelayout logical resources, and assumed error budget.
 
 
 In the next part, you'll learn the basics to work with the Azure Quantum Resource Estimator and you'll submit a simple job.

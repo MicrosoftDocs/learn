@@ -1,5 +1,6 @@
 
 
+
 [Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html) is an open-source platform by Red Hat that automates cloud provisioning, configuration management, and application deployments. Using Ansible, you can provision VMs, containers, and your entire cloud infrastructure. In addition to provisioning and configuring applications and their environments, Ansible enables you to automate deployment and configuration of resources in your environment such as virtual networks, storage, subnets, and resources groups. Ansible is also combined with other deployment tools such as Terraform. Terraform calls Ansible in the [SAP on Azure Deployment Automation Framework](https://github.com/Azure/sap-hana/blob/beta/documentation/SAP_Automation_on_Azure/table_of_contents.md) where Ansible is used after infrastructure deployment to install the SAP software. 
 
 ## Ansible components

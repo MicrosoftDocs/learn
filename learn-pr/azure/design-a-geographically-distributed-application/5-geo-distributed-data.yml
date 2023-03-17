@@ -2,7 +2,7 @@
 uid: learn.design-a-geographically-distributed-application.5-geo-distributed-data
 metadata:
   title: Design a geographically distributed data architecture
-  description: In this unit, you'll learn how to replicate databases between regions in a multi-region application architecture.
+  description: In this unit, you learn how to replicate databases between regions in a multi-region application architecture.
   ms.date: 11/07/2019
   author: jboeshart
   ms.author: jaboes
@@ -15,17 +15,17 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "In the shipment tracking application, you want to automatically fail over write access to the SQL database, when there is a regional outage. You don't want to write custom code. What should you do?"
+  - content: "In the shipment tracking application, you want to automatically fail over write access to the SQL database, when there's a regional outage. You don't want to write custom code. What should you do?"
     choices: 
     - content: "Use active geo-replication"
       isCorrect: false
-      explanation: "If you use active geo-replication, the secondary region remains read-only, until you manually initiate the failover. You can automate the failover by writing code that calls the REST API."
+      explanation: "If you use active geo-replication, the secondary region remains read-only, until you manually initiate the fail over. You can automate the fail over by writing code that calls the REST API."
     - content: "Use an auto failover group"
       isCorrect: true
       explanation: "By using an auto failover group, you can configure the primary database to fail over onto the replica in the secondary region automatically."
     - content: "Use multiple write regions"
       isCorrect: false
-      explanation: "Azure SQL Database does not support multiple write regions."
+      explanation: "Azure SQL Database doesn't support multiple write regions."
   - content: "You want to ensure that no completed transactions are lost in a regional outage. What should you do?"
     choices:
     - content: "Use Azure Cosmos DB with a single write region."
@@ -33,7 +33,7 @@ quiz:
       explanation: "Azure Cosmos DB using synchronous replication, in which a transaction is only complete when it has replicated to a quorum of replicas."
     - content: "Use Azure SQL Database with active geo-replication."
       isCorrect: false
-      explanation: "Active geo-replication uses asynchronous replication, in which a transaction replicates after it is complete on the writeable replica. If a failure occurs before replication occurs, the change may be lost."
+      explanation: "Active geo-replication uses asynchronous replication, in which a transaction replicates after it's complete on the writeable replica. If a failure occurs before replication occurs, the change may be lost."
     - content: "Use Azure SQL Database with an auto failover group."
       isCorrect: false
-      explanation: "Auto failover groups use asynchronous replication, in which a transaction replicates after it is complete on the writeable replica. If a failure occurs before replication occurs, the change may be lost."
+      explanation: "Auto failover groups use asynchronous replication, in which a transaction replicates after it's complete on the writeable replica. If a failure occurs before replication occurs, the change may be lost."

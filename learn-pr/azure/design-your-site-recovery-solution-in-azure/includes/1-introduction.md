@@ -1,8 +1,8 @@
-As a solution architect for a retailer, you're designing a site recovery strategy for your applications. The organization has a hybrid environment, with some workloads running in the cloud, and others remaining on-premises. You'll select the proper solutions to meet your recovery requirements, while keeping costs and complexity down.
+As a solution architect for a retailer, you're designing a site recovery strategy for your applications. The organization has a hybrid environment, with some workloads running in the cloud, and others remaining on-premises. You want to select the proper solutions to meet your recovery requirements, while keeping costs and complexity down.
 
-This module shows you how to design a site recovery solution in Azure. You'll learn how to develop a business continuity and disaster recovery (BCDR) plan. As part of your overall solution, you'll find out how to use services like Azure Site Recovery, Azure Backup, and more. You will also learn how to build resilience into your application services, and data services.  
+This module shows you how to design a site recovery solution in Azure. You learn how to develop a business continuity and disaster recovery (BCDR) plan. As part of your overall solution, you find out how to use services like Azure Site Recovery, Azure Backup, and more. You also learn how to build resilience into your application services, and data services.  
 
-By the end of this module, you'll learn how to keep your workloads running, and your data safe. You'll use tools like Azure Site Recovery and Azure Backup and more, to design a site recovery solution.
+By the end of this module, you learn how to design a site recovery solution to keep your workloads running, and your data safe.
 
 ## Learning objectives
 
