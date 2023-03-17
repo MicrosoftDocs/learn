@@ -1,0 +1,10 @@
+
+Intune provides a robust set of mobile application protection policies enabled for Intune-managed apps. These policies provide comprehensive protection to mobile apps and data without requiring complete device management. The following are some of the key benefits of using Intune-managed apps:
+
+- **Restrict copy-and-paste and save-as functions:** Intune-managed apps can be configured to restrict copy-and-paste and save-as functions, which help prevent accidental data leakage or unauthorized data sharing.
+- **Configure web links to open inside the Intune Managed Browser app:** IT administrators can configure web links to open inside the Intune Managed Browser app, ensuring that sensitive corporate data isn't accessed through a less secure web browser.
+- **Enable multi-identity use and app-level conditional access:** Intune-managed apps enable multi-identity use, meaning users can have multiple identities within a single app. Additionally, app-level conditional access ensures that access to sensitive data is granted only to authorized users and devices.
+- **Apply data loss prevention policies without managing the user's device:** With Intune-managed apps, data loss prevention policies can be applied without managing the user's entire device. This approach provides an extra layer of security without compromising on user experience.
+- **Enable app protection on devices managed with 3rd party EMM tools:** Intune-managed apps can be enabled with app protection, even on devices managed with 3rd party EMM tools. This functionality ensures that apps and data are always secure, regardless of the device management strategy being used.
+
+One challenge many Intune administrators face is tracking which apps do or don’t support MAM policies. To overcome this challenge, Intune provides an app protection policy report enabling administrators to view a comprehensive list of all apps with MAM policies enabled. This report makes it easy to stay on top of app protection policies and ensure that all corporate data is fully secured.

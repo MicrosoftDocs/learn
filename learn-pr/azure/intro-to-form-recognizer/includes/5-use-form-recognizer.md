@@ -1,18 +1,18 @@
-In this exercise, you're going to see Form Recognizer in action by deploying a Form Recognizer resource and a webapp that will use it. All this will happen **simply by copying and pasting the Azure CLI command below**.
+In this exercise, you can see Form Recognizer in action by deploying a Form Recognizer resource and a webapp that uses it – just by **copying and pasting one Azure CLI command**.
   
-To start, you'll need to activate the Sandbox above – just select the ‘Activate sandbox’ button and sign in, no payment or Azure subscription required. Despite having full administrative access to the website and Azure resources, the resources in this exercise are created on Microsoft's subscription, so they won't cost you anything.
+To start, you need to activate the Sandbox – just select the **Activate sandbox** button and sign in, no payment or Azure subscription required. Despite having full administrative access to the website and Azure resources, the resources in this exercise are created on Microsoft's subscription, so they don't cost you anything.
 
 ## Choose your learning experience
 
-You have the option to treat this as a demo  just to see what you can do with Form Recognizer. However, you fully control these resources, so if you're interested in checking out the technical details, you can choose to dive deeper. Browse the code in GitHub, check out the resources in the Azure portal, or even use Visual Studio remote debugging to step through the process.
+You can treat this exercise as a demo, just to see what you can do with Form Recognizer. However, you fully control these resources, so if you're interested in checking out the technical details, you can choose to dive deeper. Browse the code in GitHub, check out the resources in the Azure portal, or even use Visual Studio remote debugging to step through the process.
   
 For more guided hands-on learning about Form Recognizer, we have more Learn modules for you to check out. After that, you can always come back here to apply what you've learned in the free sandbox.
 
 ## Deploy Form Recognizer
 
-To create the Form Recognizer resource and deploy the webapp, complete the following three steps:
+To create the Form Recognizer resource and deploy the webapp, complete the following steps:
 
-1. Once the Cloud Shell is loaded and shows a prompt, copy the command below and paste it into the Cloud Shell by selecting Ctrl+Shift+V on Windows and Linux, or by selecting Cmd+Shift+V on macOS.
+1. Once the Cloud Shell is loaded and shows a prompt, copy the following command and paste it into the Cloud Shell. Just select Ctrl+Shift+V on Windows and Linux, or select Cmd+Shift+V on macOS.
   
     Run the following command in the Cloud Shell:
   
@@ -20,15 +20,15 @@ To create the Form Recognizer resource and deploy the webapp, complete the follo
     curl -s https://raw.githubusercontent.com/MicrosoftDocs/mslearn-intro-to-form-recognizer/main/scripts/deploy-in-sandbox.sh | bash 
     ```
   
-2. Wait several minutes for the command to run. You may finish reading this page and navigate to other pages within this module - it won't affect the running script.
+1. Wait several minutes for the command to run. You may finish reading this page and navigate to other pages within this module - it doesn't affect the running script.
   
-3. Select the link to the URL displayed at the bottom of the shell. The web app will open letting you use Form Recognizer. You can also cut and paste the URL from here, but remember, it won't work until the script finishes running: https://fr-<rgn>[sandboxName]</rgn>.azurewebsites.net
+1. Select the link to the URL displayed at the bottom of the shell. The web app opens and lets you use Form Recognizer. You can also cut and paste the URL from here, but remember, it doesn't work until the script finishes running: https://fr-<rgn>[sandboxName]</rgn>.azurewebsites.net
   
 After you run the code, you can play around with Form Recognizer at your own pace.
 
 ## Optional: Browse or clone the code in GitHub
 
-The source code for this entire demo is fully available to the public on GitHub. Browse it, use it to debug the demo app, or ignore it entirely. If you fork it and do something cool, let us know on Twitter @MicrosoftLearn.
+The source code for this entire demo is fully available to the public on GitHub. Browse it, use it to debug the demo app, or ignore it entirely.
 
 You can [visit the GitHub repository here.](https://github.com/MicrosoftDocs/mslearn-intro-to-form-recognizer?azure-portal=true)
 
