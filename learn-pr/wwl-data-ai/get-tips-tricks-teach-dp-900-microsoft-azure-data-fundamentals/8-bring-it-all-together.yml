@@ -4,13 +4,11 @@ title: Bring it all together
 metadata:
   title: Bring it all together
   description: "Bring it all together"
-  ms.date: 08/24/2022
+  ms.date: 03/17/2023
   author: wwlpublish
   ms.author: tsheppard
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 1
 content: |
-  [!include[](includes/7-bring-it-together.md)]
+  [!include[](includes/8-bring-it-all-together.md)]
