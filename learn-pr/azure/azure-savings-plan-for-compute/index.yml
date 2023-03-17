@@ -23,7 +23,6 @@ prerequisites: |
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
-- intermediate
 roles:
 - administrator
 - developer

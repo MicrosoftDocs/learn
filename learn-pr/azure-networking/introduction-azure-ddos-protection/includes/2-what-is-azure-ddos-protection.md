@@ -1,3 +1,4 @@
+
 Microsoft offers DDoS Infrastructure Protection to all Azure customers for free. Microsoft also offers additional services in their DDoS Protection service.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWCjzm]
@@ -26,6 +27,7 @@ Some common DDoS attacks are:
 
 - Protocol attacks. These attacks target Layer 3 or Layer 4 of the OSI model. They exploit a weakness in TCP. An example of a protocol-based DDoS attack is the TCP SYN flood, which exploits part of the three-way handshake. The attacker sends a succession of TCP SYN requests, ignoring the SYN+ACK reply. This attack is directed towards a target with the goal of overwhelming the target and making it unresponsive.
 - Resource (application) layer attacks. Resource attacks target the “top” layer in the OSI model to disrupt the transmission of data between hosts. These layer-7 attacks include exploiting the HTTP protocol, SQL injection attacks, cross-site scripting, and other application attacks.
+
 
 ### Azure DDoS Protection offerings
 
@@ -89,3 +91,5 @@ You can notify the team by opening a support request on the Azure portal. Contac
 - Your company is planning a virtual event that's expected to significantly increase your network traffic.
 - There's an attack that's severely degrading the performance of a protected critical business system.
 - Your security team determines that protected resources are under attack, but DDoS Protection isn’t mitigating the attack effectively.
+
+

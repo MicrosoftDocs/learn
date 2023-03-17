@@ -19956,6 +19956,56 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/build-dotnet-app-cosmos-db-sql-api/index.md",
+      "redirect_url": "/training/modules/build-dotnet-app-azure-cosmos-db-nosql/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/build-dotnet-app-cosmos-db-sql-api/1-introduction.md",
+      "redirect_url": "/training/modules/build-dotnet-app-azure-cosmos-db-nosql/1-introduction",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/build-dotnet-app-cosmos-db-sql-api/2-prepare.md",
+      "redirect_url": "/training/modules/build-dotnet-app-azure-cosmos-db-nosql/2-prepare",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/build-dotnet-app-cosmos-db-sql-api/3-exercise-create-app.md",
+      "redirect_url": "/training/modules/build-dotnet-app-azure-cosmos-db-nosql/3-exercise-create-app",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/build-dotnet-app-cosmos-db-sql-api/4-exercise-create-resources.md",
+      "redirect_url": "/training/modules/build-dotnet-app-azure-cosmos-db-nosql/4-exercise-create-resources",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/build-dotnet-app-cosmos-db-sql-api/5-exercise-create-items.md",
+      "redirect_url": "/training/modules/build-dotnet-app-azure-cosmos-db-nosql/5-exercise-create-items",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/build-dotnet-app-cosmos-db-sql-api/6-exercise-read-query.md",
+      "redirect_url": "/training/modules/build-dotnet-app-azure-cosmos-db-nosql/6-exercise-read-query",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/build-dotnet-app-cosmos-db-sql-api/7-exercise-linq.md",
+      "redirect_url": "/training/modules/build-dotnet-app-azure-cosmos-db-nosql/7-exercise-linq",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/build-dotnet-app-cosmos-db-sql-api/8-knowledge-check.md",
+      "redirect_url": "/training/modules/build-dotnet-app-azure-cosmos-db-nosql/8-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/build-dotnet-app-cosmos-db-sql-api/9-summary.md",
+      "redirect_url": "/training/modules/build-dotnet-app-azure-cosmos-db-nosql/9-summary",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "learn-pr/azure/model-partition-data-azure-cosmos-db/index.md",
       "redirect_url": "/training/modules/implement-non-relational-data-model/",
       "redirect_document_id": false
@@ -20363,42 +20413,42 @@
     {
       "source_path": "learn-pr/windows/build-simple-website/1-introduction.md",
       "redirect_url": "/training/modules/get-started-with-web-development/1-introduction",
-      "redirect_document_id": false
+      "redirect_document_id": true
     },
     {
       "source_path": "learn-pr/windows/build-simple-website/2-project-structure.md",
       "redirect_url": "/training/modules/get-started-with-web-development/2-project-structure",
-      "redirect_document_id": false
+      "redirect_document_id": true
     },
     {
       "source_path": "learn-pr/windows/build-simple-website/3-html-basics.md",
       "redirect_url": "/training/modules/get-started-with-web-development/3-html-basics",
-      "redirect_document_id": false
+      "redirect_document_id": true
     },
     {
       "source_path": "learn-pr/windows/build-simple-website/4-css-basics.md",
       "redirect_url": "/training/modules/get-started-with-web-development/4-css-basics",
-      "redirect_document_id": false
+      "redirect_document_id": true
     },
     {
       "source_path": "learn-pr/windows/build-simple-website/5-javascript-basics.md",
       "redirect_url": "/training/modules/get-started-with-web-development/5-javascript-basics",
-      "redirect_document_id": false
+      "redirect_document_id": true
     },
     {
       "source_path": "learn-pr/windows/build-simple-website/6-knowledge-check.md",
       "redirect_url": "/training/modules/get-started-with-web-development/6-knowledge-check",
-      "redirect_document_id": false
+      "redirect_document_id": true
     },
     {
       "source_path": "learn-pr/windows/build-simple-website/7-summary.md",
       "redirect_url": "/training/modules/get-started-with-web-development/7-summary",
-      "redirect_document_id": false
+      "redirect_document_id": true
     },
     {
       "source_path": "learn-pr/windows/build-simple-website/index.md",
       "redirect_url": "/training/modules/get-started-with-web-development/",
-      "redirect_document_id": false
+      "redirect_document_id": true
     },
     {
        "source_path": "learn-pr/wwl-azure/configure-azure-alerts/2-manage-azure-monitor-alerts.md",
@@ -20479,6 +20529,171 @@
       "source_path": "learn-pr/wwl-language/csharp-modify-content/7-summary.md",
       "redirect_url": "/training/modules/csharp-modify-content/8-summary",
       "redirect_document_id": true
-    }   
+    },
+    {
+      "source_path": "learn-pr/wwl-language/csharp-do-while/5-knowledge-check.md",
+      "redirect_url": "/training/modules/csharp-do-while/7-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-language/csharp-do-while/6-summary.md",
+      "redirect_url": "/training/modules/csharp-do-while/8-summary",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/6-secure-score.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/10-secure-score",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/8-brute-force-attacks.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/11-brute-force-attacks",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/9-just-time-virtual-machine-access.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/12-just-time-virtual-machine-access",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/10-demonstration.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/13-demonstration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/11-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/14-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/12-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/15-summary",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/3-implement-azure-security-center.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/4-implement-azure-security-center",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/7-azure-defender.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/6-azure-defender",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/4-policies.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/8-policies",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/5-recommendations.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/9-recommendations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/9-recommendations.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/11-recommendations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/10-secure-score.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/12-secure-score",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/11-brute-force-attacks.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/13-brute-force-attacks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/12-just-time-virtual-machine-access.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/14-just-time-virtual-machine-access",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/13-demonstration.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/15-demonstration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/14-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/16-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/15-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/17-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/6-azure-defender.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/5-azure-defender",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/5-azure-arc.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/6-azure-arc",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/7-microsoft-cloud-security-benchmark.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/8-microsoft-cloud-security-benchmark",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/8-policies.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/9-policies",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-for-high-availability/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-high-availability-disaster-recovery-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-for-high-availability/3-azure-front-door.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-high-availability-disaster-recovery-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-for-high-availability/4-azure-traffic-manager.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-high-availability-disaster-recovery-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-for-high-availability/2-identify-availability-requirements-of-azure-resources.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-high-availability-disaster-recovery-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-for-high-availability/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-high-availability-disaster-recovery-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-for-high-availability/8-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-high-availability-disaster-recovery-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-for-high-availability/5-recommend-solution-for-compute.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-high-availability-disaster-recovery-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-for-high-availability/7-recommend-solution-for-non-relational-data-storage.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-high-availability-disaster-recovery-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-for-high-availability/6-recommend-solution-for-relational-data-storage.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-high-availability-disaster-recovery-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-for-high-availability/9-summary-resources.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-high-availability-disaster-recovery-strategies/",
+      "redirect_document_id": false
+    }
   ]
 }

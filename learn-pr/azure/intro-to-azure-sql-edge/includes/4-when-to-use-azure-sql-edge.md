@@ -8,13 +8,13 @@ Here, you'll decide whether Azure SQL Edge is a suitable choice for your organiz
 
 ## Decision criteria
 
-| Criteria                                            | Analysis                                                     |
-| --------------------------------------------------- | ------------------------------------------------------------ |
-| Connectivity and broadband limitations              | Cloud-based solutions work only when an active internet connection is available. However, many IoT apps must be able to work while offline. Also, some IoT devices might be connected to limited bandwidth connections. This can potentially prohibit decision making. |
-| Latency                                             | Cloud-based solutions can introduce round-trip delays between an action and its response. However, many IoT apps require near real-time response. |
-| Data security, privacy, and ownership               | IoT devices often operate in less secure locations. Additionally, there are risks posed to any device, and its data, when exposed to the internet. It's also important that any selected solution meets corporate and governmental compliance standards. |
-| Synchronization and connectivity to back-end systems | IoT apps can be significantly constrained if they can't easily connect to, and communicate with, back-end systems in your organization's datacenter or your hosted cloud services, or both. |
-| Familiarity                                         | Many existing IoT platforms rely on solution-specific APIs and databases that developers don’t know well. These solutions might also require specific language skills that developers don’t have. |
+| Criteria | Analysis |
+| --- | --- |
+| Connectivity and broadband limitations | Cloud-based solutions work only when an active internet connection is available. However, many IoT apps must be able to work while offline. Also, some IoT devices might be connected to limited bandwidth connections. This can potentially prohibit decision making. |
+| Latency | Cloud-based solutions can introduce round-trip delays between an action and its response. However, many IoT apps require near real-time response. |
+| Data security, privacy, and ownership | IoT devices often operate in less secure locations. Additionally, there are risks posed to any device, and its data, when exposed to the internet. It's also important that any selected solution meets corporate and governmental compliance standards. |
+| Synchronization and connectivity to back-end systems | IoT apps can be constrained if they can't easily connect to, and communicate with, back-end systems in your organization's datacenter or your hosted cloud services, or both. |
+| Familiarity | Many existing IoT platforms rely on solution-specific APIs and databases that developers don’t know well. These solutions might also require specific language skills that developers don’t have. |
 
 ## Apply the criteria
 
@@ -33,5 +33,5 @@ Consider using Azure SQL Edge when your IoT apps:
 - Require near real-time response.
 - Are operating in less-secure environments, such as schools, factories, or vehicles.
 - Must be able to comply with governmental data-compliance regulations.
-- Need to exchange data with systems such as Azure SQL Database, SQL Server, and Azure Cosmos DB.
+- Need to exchange data with systems such as Azure SQL Managed Instance, Azure SQL Database, SQL Server, and Azure Cosmos DB.
 - Are developed by people with skills in SQL Server and related technologies and tools.

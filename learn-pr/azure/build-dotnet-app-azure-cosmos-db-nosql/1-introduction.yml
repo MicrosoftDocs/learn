@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.build-dotnet-app-azure-cosmos-db-nosql.introduction
+title: Introduction
+metadata:
+  unitType: introduction
+  title: Introduction
+  description: |
+    Introduction to the guided project, the goals of the project, and the hypothetical scenario for the project.
+  author: seesharprun
+  ms.author: sidandrews
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.date: 3/1/2023
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

@@ -1412,6 +1412,11 @@ achievements:
   title: Introduction to Speech-to-text
   summary: Speech-to-text enables the real-time transcription of audio streams into text.
   iconUrl: /training/achievements/intro-to-speech-to-text.svg
+- uid: learn.build-dotnet-app-cosmos-db-sql-api.badge
+  type: badge
+  title: Guided project - Build an app that queries and adds data to Azure Cosmos DB SQL API
+  summary: This module walks through connecting to Azure Cosmos DB SQL API to create and query container items from a .NET console application.
+  iconUrl: /training/achievements/build-dotnet-app-cosmos-db-sql-api.svg
 - uid: learn.azure.intro-to-text-to-speech.badge
   type: badge
   title: Introduction to Text-to-speech
@@ -1552,3 +1557,8 @@ achievements:
   
     - Meeting a broad set of regulatory and compliance standards on a trusted cloud platform.
   iconUrl: /training/achievements/azure-sfa-generalist-path.svg
+- uid: learn.wwl.design-for-high-availability.badge
+  type: badge
+  title: Design for high availability
+  summary: Azure Architects design and recommend highly available solutions.
+  iconUrl: /training/achievements/availability-design.svg

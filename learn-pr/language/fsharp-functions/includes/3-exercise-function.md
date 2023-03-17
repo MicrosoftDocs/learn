@@ -1,8 +1,8 @@
-In this exercise, you'll make code reusable. It's code that another programmer on your team wrote, but your job is to turn it into functions.
+In this exercise, you make your code reusable. It's code that another programmer on your team wrote, but your job is to turn it into functions.
 
 ## Create functions
 
-You'll start by scaffolding a new F# project, and then you'll take a piece of code and turn that into a function with parameters.
+Start by scaffolding a new F# project, and then take a piece of code and turn that into a function with parameters.
 
 1. Create a new F# project by running `dotnet new`.
 
@@ -100,7 +100,7 @@ You've turned your colleague's code into a function. To make this code more read
        else string no
    ```
 
-   At this point, you've added a return type to the function `:string`, means the function will return a string.
+   At this point, you've added a return type to the function `:string`, means the function returns a string.
 
 1. Run the project `dotnet run`.
 
@@ -108,7 +108,7 @@ You've turned your colleague's code into a function. To make this code more read
    dotnet run
    ```
 
-   This time, you should see the following output:
+   Once again, you should see the following output:
 
    ```output
    Jack

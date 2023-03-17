@@ -4,19 +4,16 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/15/2023
+  ms.date: 03/02/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/9-knowledge-check.md)]
 quiz:
   title: ""
-
   questions:
   - content: "Which category includes information to help track NSGs and Azure Resource Manager?"
     choices:
@@ -25,11 +22,10 @@ quiz:
       explanation: "Incorrect. The Service Health category contains service health incidents."
     - content: "Administrative"
       isCorrect: true
-      explanation: "Correct. The Administrative category contains information to help track NSGs and Azure Resource Manager."      
+      explanation: "Correct. The Administrative category contains information to help track NSGs and Azure Resource Manager."
     - content: "Policy"
       isCorrect: false
       explanation: "Incorrect. The Policy category contains records for Azure policy actions."
-
   - content: "What data does Azure Monitor collect?"
     choices:
     - content: "Azure billing details"
@@ -40,13 +36,12 @@ quiz:
       explanation: "Incorrect. Azure Monitor doesn't back up database transaction logs. Use Azure Backup for system backup information."
     - content: "Data from many different sources, such as the Application event log"
       isCorrect: true
-      explanation: "Correct. Azure Monitor collects data from many sources, such as the operating system, resources, and event logs."  
-
+      explanation: "Correct. Azure Monitor collects data from many sources, such as the operating system, resources, and event logs."
   - content: "How long are Azure Monitor activity logs kept?"
     choices:
     - content: "90 days"
       isCorrect: true
-      explanation: "Correct. Azure Monitor activity logs are kept for 90 days."    
+      explanation: "Correct. Azure Monitor activity logs are kept for 90 days."
     - content: "30 days"
       isCorrect: false
       explanation: "Incorrect. Azure Monitor activity logs are kept for 90 days."

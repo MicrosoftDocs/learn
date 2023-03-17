@@ -4,6 +4,7 @@ Contoso, Ltd. is a growing financial services company based in London with major
 
 The IT director asked you, their lead system engineer and Azure administrator, to evaluate the risks and benefits of upgrading to Azure DDoS Protection from the no-cost Azure DDoS Infrastructure Protection option that’s part of every property in Azure.
 
+
 After completing this module, you’ll understand the basics of DDoS attacks and the features of the Azure DDoS Infrastructure Protection service and Azure DDoS Protection service.
 
 ## Learning objectives

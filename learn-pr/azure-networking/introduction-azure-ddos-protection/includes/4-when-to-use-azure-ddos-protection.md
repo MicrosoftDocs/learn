@@ -1,3 +1,4 @@
+
 Here we compare the DDoS Infrastructure Protection service and DDoS Protection service to get a better idea of the benefits of upgrading. In this unit, you’ll learn more about the key differences between the DDoS Protection SKUs and about building resiliency against DDoS attacks into your applications. You'll use this information to decide on which SKU is right for Contoso.
 
 ## Build DDoS-resilient services on Azure

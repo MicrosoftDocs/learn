@@ -1,3 +1,4 @@
+
 After reviewing the previous chapter, you identified Contoso will benefit from the additional safeguards that the DDoS Protection service provides over the Infrastructure Protection service. In this unit, you’ll learn about the features of DDoS Protection and how it works.
 
 ## Features of DDoS Protection

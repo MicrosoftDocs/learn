@@ -6,10 +6,10 @@ metadata:
   description: In this unit, you'll deploy Azure Database for MySQL by using a custom shell script.
   author: yoshioterada
   ms.author: yoterada
-  ms.date: 02/01/2021
+  ms.date: 03/04/2023
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: team=cloud_advocates
+  ms.custom: team=cloud_advocates, devx-track-java, devx-track-javaee-jbosseap-appsvc, devx-track-javaee
   ms.contributors: yoterada-03082021
 durationInMinutes: 16
 content: |

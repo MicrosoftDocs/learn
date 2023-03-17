@@ -1,6 +1,7 @@
 
 
 
+
 In App Service, app settings are variables passed as environment variables to the application code.
 
 ## Learning objectives
