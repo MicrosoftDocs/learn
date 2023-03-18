@@ -9,7 +9,7 @@ Compliance Manager helps simplify compliance and reduce risk by providing:
 
 The Compliance Manager overview page shows your current compliance score, helps you see what needs attention, and guides you to key improvement actions. Below is an example of the overview page:
 
-![Compliance Manager - dashboard.](https://learn.microsoft.com//microsoft-365/media/compliance-manager-overview.png?view=o365-worldwide "Compliance Manager overview page")
+![Compliance Manager - dashboard.](https://learn.microsoft.com/microsoft-365/media/compliance-manager-overview.png?view=o365-worldwide "Compliance Manager overview page")
 
 ## Understanding your compliance score
 
@@ -43,7 +43,7 @@ Assessments have several components:
 -   **Shared controls**: these are controls that both your organization and Microsoft share responsibility for implementing
 -   **Assessment score**: shows your progress in achieving total possible points from actions within the assessment that are managed by your organization and by Microsoft
 
-When creating assessments, you’ll assign them to a group. You can configure groups in whatever way is most logical for your organization. For example, you may group assessments by audit year, region, solution, teams within your organization, or some other way. Once you create groups, you can [filter your Compliance Manager dashboard](https://learn.microsoft.com//microsoft-365/compliance/compliance-manager-setup?view=o365-worldwide#filtering-your-dashboard-view) to view your score by one or more groups.
+When creating assessments, you’ll assign them to a group. You can configure groups in whatever way is most logical for your organization. For example, you may group assessments by audit year, region, solution, teams within your organization, or some other way. Once you create groups, you can [filter your Compliance Manager dashboard](https://learn.microsoft.com/microsoft-365/compliance/compliance-manager-setup?view=o365-worldwide#filtering-your-dashboard-view) to view your score by one or more groups.
 
 ### Templates
 

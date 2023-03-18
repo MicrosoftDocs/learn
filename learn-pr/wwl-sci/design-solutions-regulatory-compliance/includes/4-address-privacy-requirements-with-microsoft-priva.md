@@ -11,9 +11,9 @@ Privacy Risk Management in Microsoft Priva gives you the capability to set up po
 -   Spot and limit transfers of personal data across departments or regional borders.
 -   Help users identify and reduce the amount of unused personal data that you store.
 
-Privacy Risk Management offers built-in templates for these scenarios to help you easily create policies. You can also fine tune your approach by [creating custom policies](https://learn.microsoft.com//privacy/priva/risk-management-policies), using any of these templates as a starting point.
+Privacy Risk Management offers built-in templates for these scenarios to help you easily create policies. You can also fine tune your approach by [creating custom policies](https://learn.microsoft.com/privacy/priva/risk-management-policies), using any of these templates as a starting point.
 
-When policy matches are found, admins can review alerts about the findings and make decisions about how to handle the data by creating issues for further action by your users. To learn more, see [Investigate and remediate alerts in Privacy Risk Management](https://learn.microsoft.com//privacy/priva/risk-management-alerts). You can also configure email notifications and, for supported policy types, Teams notifications to notify your content owners directly about policy matches. They can take corrective action from these notifications and learn more about best practices for handling data with links you provide to your own training materials. For more information, see [Send user notifications in Privacy Risk Management](https://learn.microsoft.com//privacy/priva/risk-management-notifications).
+When policy matches are found, admins can review alerts about the findings and make decisions about how to handle the data by creating issues for further action by your users. To learn more, see [Investigate and remediate alerts in Privacy Risk Management](https://learn.microsoft.com/privacy/priva/risk-management-alerts). You can also configure email notifications and, for supported policy types, Teams notifications to notify your content owners directly about policy matches. They can take corrective action from these notifications and learn more about best practices for handling data with links you provide to your own training materials. For more information, see [Send user notifications in Privacy Risk Management](https://learn.microsoft.com/privacy/priva/risk-management-notifications).
 
 ### Learn about key risk scenarios
 
@@ -31,7 +31,7 @@ Transferring personal data presents risks, especially when transferred outside o
 
 Data transfer policies allow you to monitor for transfers between different world regions or between departments in your organization, as well as transfers outside of your organization. When a policy match is detected, you can send users email notifications that allow them to take corrective action right in the email, such as making content items private, notifying content owners, or tagging items for further review.
 
-Learn how to create a [data transfer policy](https://learn.microsoft.com//privacy/priva/risk-management-policy-data-transfer).
+Learn how to create a [data transfer policy](https://learn.microsoft.com/privacy/priva/risk-management-policy-data-transfer).
 
 ### Minimize stored data
 
