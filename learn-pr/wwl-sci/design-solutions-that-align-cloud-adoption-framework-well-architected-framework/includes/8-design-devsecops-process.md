@@ -2,7 +2,7 @@ Security is a key part of DevOps. But how does a team know if a system is secure
 
 Unfortunately, the answer is _no_. DevSecOps is a continuous and ongoing effort that requires the attention of everyone in both development and IT operations. While the job is never truly done, the practices that teams employ to prevent and handle breaches can help produce systems that are as secure and resilient as possible.
 
-> "Fundamentally, if somebody wants to get in, they're getting in...accept that. What we tell clients is: number one, you're in the fight, whether you thought you were or not. Number two, you almost certainly are penetrated." -- Michael Hayden, Former Director of NSA and CIA
+"Fundamentally, if somebody wants to get in, they're getting in...accept that. What we tell clients is: number one, you're in the fight, whether you thought you were or not. Number two, you almost certainly are penetrated." -- Michael Hayden, Former Director of NSA and CIA
 
 ## The security conversation
 

@@ -12,8 +12,8 @@ title: "Design solutions that align with the Cloud Adoption Framework (CAF) and 
 summary: "You'll learn about the Cloud Adoption Framework (CAF) and Well-Architected Framework (WAF) and how you can use them to design more secure solutions."
 abstract: |
   Upon completion of this module, the learner will be able to:
-    - "Understand the Cloud Adoption Framework and how it can be used to accelerate and secure an organizations move to the cloud.
-    - "Understand the Well-Architected Framework and how it can be used to design solutions in the cloud that adhere to sound design principles including security."
+    - Understand the Cloud Adoption Framework and how it can be used to accelerate and secure an organizations move to the cloud.
+    - Understand the Well-Architected Framework and how it can be used to design solutions in the cloud that adhere to sound design principles including security.
 prerequisites: |
   - "Conceptual knowledge of security policies, requirements, zero trust architecture, and management of hybrid environments."
   - "Working experience with zero trust strategies, applying security policies, and developing security requirements based on business goals."
@@ -38,9 +38,9 @@ units:
 - learn.design-solutions-that-align-cloud-adoption-framework-well-architected-framework.cloud-adoption-framework-secure-methodology
 - learn.design-solutions-that-align-cloud-adoption-framework-well-architected-framework.introduction-to-azure-landing-zones
 - learn.design-solutions-that-align-cloud-adoption-framework-well-architected-framework.design-security-with-azure-landing-zones
-- learn.design-solutions-that-align-cloud-adoption-framework-well-architected-framework.introduction-to-the-well-architected-framework
-- learn.design-solutions-that-align-cloud-adoption-framework-well-architected-framework.the-well-architected-framework-security-pillar
-- learn.design-solutions-that-align-cloud-adoption-framework-well-architected-framework.design-a-devsecops-process
+- learn.design-solutions-that-align-cloud-adoption-framework-well-architected-framework.introduction-to-well-architected-framework
+- learn.design-solutions-that-align-cloud-adoption-framework-well-architected-framework.well-architected-framework-security-pillar
+- learn.design-solutions-that-align-cloud-adoption-framework-well-architected-framework.design-devsecops-process
 - learn.design-solutions-that-align-cloud-adoption-framework-well-architected-framework.knowledge-check
 - learn.design-solutions-that-align-cloud-adoption-framework-well-architected-framework.summary
 badge:

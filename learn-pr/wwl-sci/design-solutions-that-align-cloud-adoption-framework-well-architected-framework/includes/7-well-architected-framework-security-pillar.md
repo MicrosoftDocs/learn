@@ -10,7 +10,7 @@ Losing these assurances can negatively affect your business operations and reven
 
 The security of complex systems depends on understanding the business context, social context, and technical context. As you design your system, cover these areas:
 
-![Screenshot showing security design areas.](/azure/architecture/framework/security/images/security-areas.png)
+![Screenshot showing security design areas.](https://learn.microsoft.com/azure/architecture/framework/security/images/security-areas.png)
 
 Understanding an IT solution as it interacts with its surrounding environment holds the key to preventing unauthorized activity and to identifying anomalous behavior that may represent a security risk.
 
@@ -32,7 +32,7 @@ Cloud providers must be compliant with the same IT regulatory requirements as th
 
 **Shared Responsibility Model:** As computing environments move from customer-controlled datacenters to the cloud, the responsibility of security also shifts. Security of the operational environment is now a concern shared by both cloud providers and customers. Organizations can reduce focus on activities that aren't core business competencies by shifting these responsibilities to a cloud service like Azure. Depending on the specific technology choices, some security protections will be built into the particular service, while addressing others will remain the customer's responsibility. To ensure that proper security controls are provided, organizations must carefully evaluate the services and technology choices.
 
-![A diagram of shared responsibility and key strategies.](/azure/architecture/framework/security/images/shared-resp-color.png)
+![A diagram of shared responsibility and key strategies.](https://learn.microsoft.com/azure/architecture/framework/security/images/shared-resp-color.png)
 
 **Shared Responsibility and Key Strategies:**
 
@@ -59,7 +59,7 @@ More on perimeters and how they relate to Zero Trust and Enterprise Segmentation
 
 To assess your workload using the tenets found in the Microsoft Azure Well-Architected Framework, see the [Microsoft Azure Well-Architected Review](/assessments/?id=azure-architecture-review&mode=pre-assessment).
 
-![A diagram of the security cycle.](/azure/architecture/framework/security/images/devops-security.png)
+![A diagram of the security cycle.](https://learn.microsoft.com/azure/architecture/framework/security/images/devops-security.png)
 
 We cover the following areas in the security pillar of the Microsoft Azure Well-Architected Framework:
 

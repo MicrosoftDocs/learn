@@ -55,7 +55,7 @@ quiz:
           explanation: "The Well-Architected Framework is not an AWS-specific framework. Its focus on architecture patterns that can be applied to any cloud provider as well companies own data centers."
         - content: "A methodology developed by Amazon Web Services (AWS) to review and critique cloud architectures."
           isCorrect: true
-          explanation: "The Well-Architected Framework is a systematic approach that provides customers with a consistent and methodically-validated assessment of their cloud architectures based on available best practices."
+          explanation: "The Well-Architected Framework is a systematic approach that provides customers with a consistent and methodically validated assessment of their cloud architectures based on available best practices."
 
     - content: "What are Azure Landing Zones?"
       choices:

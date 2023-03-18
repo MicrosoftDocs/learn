@@ -18,7 +18,7 @@ The Cloud Adoption Framework consists of nine different methodologies:
 
 ## Understand the lifecycle
 
-Each methodology listed above is part of a broad cloud adoption lifecycle. The methodologies of the Cloud Adoption Framework integrate into a life cycle that consists of four main phases which proceed in sequence and then three other phases which occur continuously throughout the cloud adoption process. The following image outline the cloud adoption lifecycle.
+Each methodology listed above is part of a broad cloud adoption lifecycle. The methodologies of the Cloud Adoption Framework integrate into a life cycle that consists of four main phases which proceed in sequence and then three other phases which occur continuously throughout the cloud adoption process. The following image outlines the cloud adoption lifecycle.
 
 :::image type="content" source="../media/cloud-adoption-framework.png" alt-text="Diagram that shows the Cloud Adoption Framework stages define strategy, plan, ready, adopt, and govern and manage." lightbox="../media/cloud-adoption-framework.png":::
 
