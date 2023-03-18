@@ -19,7 +19,7 @@ To balance security and productivity, you need to think about how a resource is 
 
 ## Continuous access evaluation
 <!--
-BEGIN(https://learn.microsoft.com//azure/active-directory/conditional-access/concept-continuous-access-evaluation)
+BEGIN(https://learn.microsoft.com/azure/active-directory/conditional-access/concept-continuous-access-evaluation)
 -->
 Token expiration and refresh are a standard mechanism in the industry. When a client application like Outlook connects to a service like Exchange Online, the API requests are authorized using OAuth 2.0 access tokens. By default, access tokens are valid for one hour, when they expire the client is redirected to Azure AD to refresh them. That refresh period provides an opportunity to reevaluate policies for user access. For example: we might choose not to refresh the token because of a Conditional Access policy, or because the user has been disabled in the directory. 
 
@@ -91,7 +91,7 @@ END()
 ## Threat intelligence
 
 <!--
-BEGIN(https://learn.microsoft.com//azure/sentinel/understand-threat-intelligence)
+BEGIN(https://learn.microsoft.com/azure/sentinel/understand-threat-intelligence)
 -->
 
 Cyber threat intelligence (CTI) is information describing existing or potential threats to systems and users. This intelligence takes many forms, from written reports detailing a particular threat actor's motivations, infrastructure, and techniques, to specific observations of IP addresses, domains, file hashes, and other artifacts associated with known cyber threats. CTI is used by organizations to provide essential context to unusual activity, so security personnel can quickly take action to protect their people, information, and assets. CTI can be sourced from many places, such as open-source data feeds, threat intelligence-sharing communities, commercial intelligence feeds, and local intelligence gathered in the course of security investigations within an organization.
@@ -118,11 +118,11 @@ Access control policies can be applied to protect organizations when a sign-in o
 
 Azure AD Conditional Access offers two risk conditions: **Sign-in risk** and **User risk**. Organizations can create risk-based Conditional Access policies by configuring these two risk conditions and choosing an access control method. During each sign-in, Identity Protection sends the detected risk levels to Conditional Access, and the risk-based policies will apply if the policy conditions are satisfied.
 
-![Diagram that shows a conceptual risk-based Conditional Access policy.](https://learn.microsoft.com//azure/active-directory/identity-protection/media/concept-identity-protection-policies/risk-based-conditional-access-diagram.png)
+![Diagram that shows a conceptual risk-based Conditional Access policy.](https://learn.microsoft.com/azure/active-directory/identity-protection/media/concept-identity-protection-policies/risk-based-conditional-access-diagram.png)
 
 For example, as shown in the diagram below, if organizations have a sign-in risk policy that requires multifactor authentication when the sign-in risk level is medium or high, their users must complete multifactor authentication when their sign-in risk is medium or high.
   
-![Diagram that shows a conceptual risk-based Conditional Access policy with self-remediation.](https://learn.microsoft.com//azure/active-directory/identity-protection/media/concept-identity-protection-policies/risk-based-conditional-access-policy-example.png)
+![Diagram that shows a conceptual risk-based Conditional Access policy with self-remediation.](https://learn.microsoft.com/azure/active-directory/identity-protection/media/concept-identity-protection-policies/risk-based-conditional-access-policy-example.png)
 
 The example above also demonstrates a main benefit of a risk-based policy: **automatic risk remediation**. When a user successfully completes the required access control, like a secure password change, their risk is remediated. That sign-in session and user account won't be at risk, and no action is needed from the administrator. 
 
