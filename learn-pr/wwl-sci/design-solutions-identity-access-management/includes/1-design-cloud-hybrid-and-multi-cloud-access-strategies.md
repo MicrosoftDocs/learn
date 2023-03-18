@@ -1,13 +1,13 @@
-In this module, you'll learn how to:
+In this module, you learn how to:
 
-- Design cloud, hybrid and multi-cloud access strategies
+- Design cloud, hybrid and multicloud access strategies
 - Design a solution for Azure Active Directory (Azure AD), part of Microsoft Entra
 - Design a solution for external identities
 - Design modern authentication and authorization strategies
 - Specify requirements to secure Active Directory Domain Services
 - Design a solution to manage secrets, keys, and certificates
 
-The content in the module will help you prepare for the certification exam SC-100: Microsoft Cybersecurity Architect.
+The content in the module helps you prepare for the certification exam SC-100: Microsoft Cybersecurity Architect.
 
 ## Prerequisites
 
