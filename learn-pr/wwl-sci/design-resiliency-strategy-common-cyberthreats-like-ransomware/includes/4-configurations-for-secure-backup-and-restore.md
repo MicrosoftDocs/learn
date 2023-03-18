@@ -2,13 +2,13 @@ To help you protect your backup data and meet the security needs of your busines
 
 ### Authentication and authorization using Azure role-based access control (Azure RBAC)
 
-- Azure role-based access control (Azure RBAC) enables fine-grained access management, segregation of  duties within your team and granting only the amount of access to users necessary to perform their jobs. [Learn more here](backup-rbac-rs-vault.md).
+- Azure role-based access control (Azure RBAC) enables fine-grained access management, segregation of  duties within your team and granting only the amount of access to users necessary to perform their jobs.
 
-- If you’ve multiple workloads to back up (such as Azure VMs, SQL databases, and PostgreSQL databases) and you've multiple stakeholders to manage those backups, it is important to segregate their responsibilities so that user has access to only those resources they’re responsible for. Azure role-based access control (Azure RBAC) enables granular access management, segregation of duties within your team, and granting only the types of access to users necessary to perform their jobs. [Learn more](./backup-rbac-rs-vault.md)
+- If you’ve multiple workloads to back up (such as Azure VMs, SQL databases, and PostgreSQL databases) and you've multiple stakeholders to manage those backups, it is important to segregate their responsibilities so that user has access to only those resources they’re responsible for. Azure role-based access control (Azure RBAC) enables granular access management, segregation of duties within your team, and granting only the types of access to users necessary to perform their jobs.
 
-- You can also segregate the duties by providing minimum required access to perform a particular task. For example, a person responsible for monitoring the workloads shouldn't have access to modify the backup policy or delete the backup items. Azure Backup provides three built-in roles to control backup management operations: Backup contributors, operators, and readers. Learn more here. For information about the minimum Azure role required for each backup operation for Azure VMs, SQL/SAP HANA databases, and Azure File Share, see [this guide](./backup-rbac-rs-vault.md).
+- You can also segregate the duties by providing minimum required access to perform a particular task. For example, a person responsible for monitoring the workloads shouldn't have access to modify the backup policy or delete the backup items. Azure Backup provides three built-in roles to control backup management operations: Backup contributors, operators, and readers. Learn more here..
 
-- [Azure role-based access control (Azure RBAC)](../role-based-access-control/overview.md) also provides the flexibility to build [Custom Roles](../role-based-access-control/custom-roles.md) based on your individual requirements. If you’re unsure about the types of roles recommended for specific operation, you can utilize the built-in roles provided by Azure role-based access control (Azure RBAC) and get started. 
+- Azure role-based access control (Azure RBAC) also provides the flexibility to build Custom Roles based on your individual requirements. If you’re unsure about the types of roles recommended for specific operation, you can utilize the built-in roles provided by Azure role-based access control (Azure RBAC) and get started.
 
   The following diagram explains about how different Azure built-in roles work:
 
@@ -30,15 +30,15 @@ Encryption protects your data and helps you to meet your organizational security
 
 * Within Azure, data in transit between Azure storage and the vault is protected by HTTPS. This data remains within the Azure network.
 
-* Backup data is automatically encrypted using Microsoft-managed keys. Alternatively, you can use your own keys, also known as [customer managed keys](encryption-at-rest-with-cmk.md). Also, using CMK encryption for backup doesn't incur additional costs. However, the use of Azure Key Vault, where your key is stored, incur costs, which are a reasonable expense in return for the higher data security.
+* Backup data is automatically encrypted using Microsoft-managed keys. Alternatively, you can use your own keys, also known as customer managed keys. Also, using CMK encryption for backup doesn't incur additional costs. However, the use of Azure Key Vault, where your key is stored, incur costs, which are a reasonable expense in return for the higher data security.
 
-* Azure Backup supports backup and restore of Azure VMs that have their OS/data disks encrypted with Azure Disk Encryption (ADE). [Learn more](backup-azure-vms-encryption.md)
+* Azure Backup supports backup and restore of Azure VMs that have their OS/data disks encrypted with Azure Disk Encryption (ADE).
 
 ### Protection of backup data from unintentional deletes  with soft-delete
 
-You may encounter scenarios where you’ve mission-critical backup data in a vault, and it gets deleted accidentally or erroneously. Also,  a malicious actor may delete your production backup items. It’s often costly and time-intensive to rebuild those resources and can even cause crucial data loss. Azure Backup provides safeguard against accidental and malicious deletion with the [Soft-Delete](./backup-azure-security-feature-cloud.md) feature by allowing you to recover those resources after they are deleted.
+You may encounter scenarios where you’ve mission-critical backup data in a vault, and it gets deleted accidentally or erroneously. Also,  a malicious actor may delete your production backup items. It’s often costly and time-intensive to rebuild those resources and can even cause crucial data loss. Azure Backup provides safeguard against accidental and malicious deletion with the Soft-Delete feature by allowing you to recover those resources after they are deleted.
 
-With soft-delete, if a user deletes the backup (of a VM, SQL Server database, Azure file share, SAP HANA database), the backup data is retained for 14 additional days, allowing the recovery of that backup item with no data loss. The additional 14 days retention of backup data in the soft delete state doesn't incur any cost. [Learn more](./backup-azure-security-feature-cloud.md)
+With soft-delete, if a user deletes the backup (of a VM, SQL Server database, Azure file share, SAP HANA database), the backup data is retained for 14 additional days, allowing the recovery of that backup item with no data loss. The additional 14 days retention of backup data in the soft delete state doesn't incur any cost.
 
 ### Multi-User Authorization (MUA)
 
@@ -46,7 +46,7 @@ With soft-delete, if a user deletes the backup (of a VM, SQL Server database, Az
 
 Any administrator that has the privileged access to your backup data has the potential to cause irreparable damage to the system. A rogue admin can delete all your business-critical data or even turn off all the security measures that may leave your system vulnerable to cyber-attacks.
 
-Azure Backup provides you with the [Multi-User Authorization (MUA)](./multi-user-authorization.md) feature to protect you from such rogue administrator attacks. Multi-user authorization helps protect against a rogue administrator performing destructive operations (that is, disabling soft-delete), by ensuring that every privileged/destructive operation is done only after getting approval from a security administrator. 
+Azure Backup provides you with the Multi-User Authorization (MUA) feature to protect you from such rogue administrator attacks. Multi-user authorization helps protect against a rogue administrator performing destructive operations (that is, disabling soft-delete), by ensuring that every privileged/destructive operation is done only after getting approval from a security administrator. 
 
 ### Ransomware Protection
 
@@ -60,11 +60,11 @@ Azure Backup provides you with the [Multi-User Authorization (MUA)](./multi-user
 
 You may encounter scenarios where someone tries to breach into your system and maliciously turn off the security mechanisms, such as disabling Soft Delete or attempts to perform destructive operations, such as deleting the backup resources. 
 
-Azure Backup provides security against such incidents by sending you critical alerts over your preferred notification channel (email, ITSM, Webhook, runbook, and sp pn) by creating an [Action Rule](../azure-monitor/alerts/alerts-action-rules.md) on top of the alert. [Learn more](./security-overview.md#monitoring-and-alerts-of-suspicious-activity)
+Azure Backup provides security against such incidents by sending you critical alerts over your preferred notification channel (email, ITSM, Webhook, runbook) by creating an Action Rule on top of the alert.
 
 ## Hybrid environments
 
-Azure Backup service uses the Microsoft Azure Recovery Services (MARS) agent to back up and restore files, folders, and the volume or system state from an on-premises computer to Azure. MARS now provides security features: a passphrase to encrypt before upload and decrypt after download from Azure Backup, deleted backup data is retained for an additional 14 days from the date of deletion, and critical operation (ex. changing a passphrase) can be performed only by users who have valid Azure credentials. [Learn more here](backup-azure-security-feature.md).
+Azure Backup service uses the Microsoft Azure Recovery Services (MARS) agent to back up and restore files, folders, and the volume or system state from an on-premises computer to Azure. MARS now provides security features: a passphrase to encrypt before upload and decrypt after download from Azure Backup, deleted backup data is retained for an additional 14 days from the date of deletion, and critical operation (ex. changing a passphrase) can be performed only by users who have valid Azure credentials.
 
 <!--
 END: Source - /azure/backup/guidance-best-practices
