@@ -71,10 +71,10 @@ Modern security boundaries are more complex than boundaries in a traditional dat
 
 |Scope|Context|
 |---|---|
-| Plan for inbound and outbound internet connectivity | [Describes recommended connectivity models for inbound and outbound connectivity to and from the public internet](/azure/cloud-adoption-framework/ready/azure-best-practices/plan-for-inbound-and-outbound-internet-connectivity.md). |
-| Plan for landing zone network segmentation | [Explores key recommendations to deliver highly secure internal network segmentation within a landing zone. These recommendations drive network zero-trust implementation](/azure/cloud-adoption-framework/ready/azure-best-practices/plan-for-landing-zone-network-segmentation.md). |
-| Define network encryption requirements | [Explores key recommendations to achieve network encryption between on-premises and Azure and across Azure regions](/azure/cloud-adoption-framework/ready/azure-best-practices/define-network-encryption-requirements.md). |
-|Plan for traffic inspection | [Explores key considerations and recommended approaches for mirroring or tapping traffic within Azure Virtual Network](/azure/cloud-adoption-framework/ready/azure-best-practices/plan-for-traffic-inspection.md). |
+| Plan for inbound and outbound internet connectivity | [Describes recommended connectivity models for inbound and outbound connectivity to and from the public internet](/azure/cloud-adoption-framework/ready/azure-best-practices/plan-for-inbound-and-outbound-internet-connectivity). |
+| Plan for landing zone network segmentation | [Explores key recommendations to deliver highly secure internal network segmentation within a landing zone. These recommendations drive network zero-trust implementation](/azure/cloud-adoption-framework/ready/azure-best-practices/plan-for-landing-zone-network-segmentation). |
+| Define network encryption requirements | [Explores key recommendations to achieve network encryption between on-premises and Azure and across Azure regions](/azure/cloud-adoption-framework/ready/azure-best-practices/define-network-encryption-requirements). |
+|Plan for traffic inspection | [Explores key considerations and recommended approaches for mirroring or tapping traffic within Azure Virtual Network](/azure/cloud-adoption-framework/ready/azure-best-practices/plan-for-traffic-inspection). |
 
 #### Zero trust
 
