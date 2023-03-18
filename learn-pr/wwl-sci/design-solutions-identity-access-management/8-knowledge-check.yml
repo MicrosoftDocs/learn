@@ -1,0 +1,100 @@
+### YamlMime:ModuleUnit
+uid: learn.design-solutions-identity-access-management.knowledge-check
+title: Knowledge check - Design solutions for identity and access management
+metadata:
+  title: Knowledge check - Design solutions for identity and access management
+  description: "Knowledge check - Design solutions for identity and access management (contains AI generated content)"
+  ms.date: 3/14/2023
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 1
+###########################################################################
+###
+### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
+###  - Questions are complete sentences ending with a question mark
+###  - No true/false questions
+###  - 3 answers per question
+###  - All answers about the same length
+###  - Numeric answers listed in sorted order
+###  - No "All of the above" and/or "None of the above" as answer choices
+###  - No "Not" or "Except" in questions
+###  - No second person ("you") in the questions or answers
+###  - Provide a meaningful explanation for both correct and incorrect answers
+###
+###########################################################################
+content: |
+quiz:
+  questions:
+    - content: "What is Conditional Access in Azure AD?"
+      choices:
+        - content: "A feature that allows users to bypass security policies."
+          isCorrect: false
+          explanation: "Conditional Access applies controls based on specific conditions, including user, location, device, and application state. It restricts user access until they have met those conditions."
+          
+        - content: "An identity-based security model that enables customers to control access to applications and resources."
+          isCorrect: true
+          explanation: "Conditional Access grants or denies application access to users by requiring multifactor authentication or blocking access when the specified conditions are not met."
+          
+        - content: "A type of user authentication specific to external identities."
+          isCorrect: false
+          explanation: "Conditional Access is not a type of user authentication but a set of access controls designed to improve security."
+
+        - content: "An automated tool for managing user privileges within an organization."
+          isCorrect: false
+          explanation: "Conditional Access defines user-specific access policies but does not manage user privileges."
+          
+    - content: "What is Continuous Access Evaluation in Azure AD?"
+      choices:
+        - content: "A feature that automatically enforces Azure Key Vault key rotation policies."
+          isCorrect: false
+          explanation: "Continuous Access Evaluation constantly evaluates conditions specified in Conditional Access policies, ensuring continued compliance. It has no direct relationship with Key Vault."
+        
+        - content: "A security model designed to control user access to Azure AD-managed services."
+          isCorrect: false
+          explanation: "Continuous Access Evaluation is one component of Microsoft's Zero Trust Strategy, which is designed to mitigate risks across all domains, including mobile devices."
+        
+        - content: "A mechanism for enforcing Conditional Access policies in almost real-time."
+          isCorrect: true
+          explanation: "Continuous Access Evaluation evaluates Conditional Access policies every time a request is made, allowing for swift and accurate responses to changes in the access control environment."
+        
+        - content: "A method for detecting rogue devices connecting to a network."
+          isCorrect: false
+          explanation: "Continuous Access Evaluation assesses whether user requests meet the specified conditions set forth in Conditional Access policies, but it does not detect rogue devices connecting to a network."
+    
+    - content: "What is External Identities in Azure AD?"
+      choices:
+        - content: "A set of tools for managing conditional access policies for partners and customers."
+          isCorrect: false
+          explanation: "External Identity tools are designed to support B2B scenarios to simplify the management of policies related to guests, partners, and vendors accessing shared resources."
+        
+        - content: "A system for managing user accounts within an organization."
+          isCorrect: false
+          explanation: "External Identities offers the ability to create and manage identities for users outside an organization in order to provide partner and customer access to assigned resources."
+        
+        - content: "A set of tools for managing user accounts and access for non-employees or guests that need to access organizational assets."
+          isCorrect: true
+          explanation: "External identities enable secure collaboration between external users like customers, business partners, or vendors and internal teams while guarding against unauthorized data access."
+        
+        - content: "An automatic threat detection system that detects abnormal behavior patterns in user accounts."
+          isCorrect: false
+          explanation: "External Identities provides capabilities around governance, user access, authentication, and identity protection, but does not include an automatic threat detection system."
+
+    - content: "What is Azure Key Vault?"
+      choices:
+        - content: "A password manager intended for personal use."
+          isCorrect: false
+          explanation: "Azure Key Vault is a cloud-based service that safeguards cryptographic keys and secrets used by cloud apps and services. It is an enterprise-level platform, not a password manager."
+        
+        - content: "A solution for automating data encryption in cloud environments."
+          isCorrect: false
+          explanation: "Azure Key Vault does provide encryption services, but its primary function is to protect cryptographic keys and sensitive information."
+        
+        - content: "A cloud service that stores secrets, such as passwords, connection strings, and API keys."
+          isCorrect: true
+          explanation: "Azure Key Vault provides secure storage for secret data and credentials avoiding the need to embed them in code or configuration file."
+        
+        - content: "A cloud service that manages Active Directories for organizations."
+          isCorrect: false
+          explanation: "Azure Key Vault does not manage Active Directories. It provides key and secret management services for cloud applications and services."  

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.design-solutions-identity-access-management.specify-requirements-to-secure-active-directory-domain-services-(ad-ds)
+title: Specify requirements to secure Active Directory Domain Services (AD DS)
+metadata:
+  title: Specify requirements to secure Active Directory Domain Services (AD DS)
+  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  ms.date: 3/15/2023
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-specify-requirements-to-secure-active-directory-domain-services-(ad-ds).md)]
