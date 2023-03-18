@@ -12,7 +12,7 @@ To help you protect your backup data and meet the security needs of your busines
 
   The following diagram explains about how different Azure built-in roles work:
 
-  :::image type="content" source="./media/guidance-best-practices/different-azure-built-in-roles-actions.png" alt-text="Diagram explains about how different Azure built-in roles work.":::
+    ![Diagram explains about how different Azure built-in roles work.](https://learn.microsoft.com/azure/backup/media/guidance-best-practices/different-azure-built-in-roles-actions.png)
 
   - In the above diagram, _User2_ and _User3_ are Backup Readers. Therefore, they have the permission to only monitor the backups and view the backup services.
 
