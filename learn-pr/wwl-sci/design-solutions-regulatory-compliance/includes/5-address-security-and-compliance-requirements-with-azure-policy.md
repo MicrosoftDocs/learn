@@ -65,21 +65,14 @@ The results of a completed evaluation cycle are available in the `Microsoft.Pol
 
 Evaluations of assigned policies and initiatives happen as the result of various events:
 
--   A policy or initiative is newly assigned to a scope. It takes around five minutes for the assignment to be applied to the defined scope, then the evaluation cycle begins for applicable resources against the newly assigned policy or initiative. Depending on the effects used, resources are marked as compliant, non-compliant, exempt, or unknown. A large policy or initiative evaluated against a large scope of resources can take time, so there's no pre-defined expectation of when the evaluation cycle completes. Once it completes, updated compliance results are available in the portal and SDKs.
-    
--   A policy or initiative already assigned to a scope is updated. The evaluation cycle and timing for this scenario is the same as for a new assignment to a scope.
-    
--   A resource is deployed to or updated within a scope with an assignment via Azure Resource Manager, REST API, or a supported SDK. In this scenario, the effect event (append, audit, deny, deploy) and compliant status information for the individual resource becomes available in the portal and SDKs around 15 minutes later. This event doesn't cause an evaluation of other resources.
-    
--   A subscription (resource type `Microsoft.Resources/subscriptions`) is created or moved within a [management group hierarchy](https://learn.microsoft.com//azure/governance/management-groups/overview) with an assigned policy definition targeting the subscription resource type. Evaluation of the subscription supported effects (audit, auditIfNotExist, deployIfNotExists, modify), logging, and any remediation actions takes around 30 minutes.
-    
--   A [policy exemption](https://learn.microsoft.com//azure/governance/policy/concepts/exemption-structure) is created, updated, or deleted. In this scenario, the corresponding assignment is evaluated for the defined exemption scope.
-    
--   Standard compliance evaluation cycle. Once every 24 hours, assignments are automatically reevaluated. A large policy or initiative of many resources can take time, so there's no pre-defined expectation of when the evaluation cycle completes. Once it completes, updated compliance results are available in the portal and SDKs.
-    
--   The [machine configuration](https://learn.microsoft.com//azure/governance/machine-configuration/overview) resource provider is updated with compliance details by a managed resource.
-    
--   On-demand scan
+- A policy or initiative is newly assigned to a scope. It takes around five minutes for the assignment to be applied to the defined scope, then the evaluation cycle begins for applicable resources against the newly assigned policy or initiative. Depending on the effects used, resources are marked as compliant, non-compliant, exempt, or unknown. A large policy or initiative evaluated against a large scope of resources can take time, so there's no pre-defined expectation of when the evaluation cycle completes. Once it completes, updated compliance results are available in the portal and SDKs.
+- A policy or initiative already assigned to a scope is updated. The evaluation cycle and timing for this scenario is the same as for a new assignment to a scope.
+- A resource is deployed to or updated within a scope with an assignment via Azure Resource Manager, REST API, or a supported SDK. In this scenario, the effect event (append, audit, deny, deploy) and compliant status information for the individual resource becomes available in the portal and SDKs around 15 minutes later. This event doesn't cause an evaluation of other resources.
+- A subscription (resource type `Microsoft.Resources/subscriptions`) is created or moved within a [management group hierarchy](https://learn.microsoft.com//azure/governance/management-groups/overview) with an assigned policy definition targeting the subscription resource type. Evaluation of the subscription supported effects (audit, auditIfNotExist, deployIfNotExists, modify), logging, and any remediation actions takes around 30 minutes.
+- A [policy exemption](https://learn.microsoft.com//azure/governance/policy/concepts/exemption-structure) is created, updated, or deleted. In this scenario, the corresponding assignment is evaluated for the defined exemption scope.
+- Standard compliance evaluation cycle. Once every 24 hours, assignments are automatically reevaluated. A large policy or initiative of many resources can take time, so there's no pre-defined expectation of when the evaluation cycle completes. Once it completes, updated compliance results are available in the portal and SDKs.
+- The [machine configuration](https://learn.microsoft.com//azure/governance/machine-configuration/overview) resource provider is updated with compliance details by a managed resource.
+- On-demand scan
 
 ### Compliant and non-compliant states
 
@@ -96,8 +89,7 @@ In an assignment, a resource is **non-compliant** if it's applicable to the poli
 
 Besides **Compliant** and **Non-compliant**, policies and resources have four other states:
 
-- **Exempt**: The resource is in scope of an assignment, but has a
-  [defined exemption](../concepts/exemption-structure.md).
+- **Exempt**: The resource is in scope of an assignment, but has a defined exemption.
 - **Conflicting**: Two or more policy definitions exist with conflicting rules. For example, two
   definitions append the same tag with different values.
 - **Not started**: The evaluation cycle hasn't started for the policy or resource.

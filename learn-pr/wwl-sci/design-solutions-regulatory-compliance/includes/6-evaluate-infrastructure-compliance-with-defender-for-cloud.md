@@ -9,21 +9,18 @@ A security policy defines the desired configuration of your workloads and helps 
 
 Defenders for Cloud policies contain the following components:
 
-- [Data collection](monitoring-components.md): agent provisioning and data collection settings.
+- Data collection: agent provisioning and data collection settings.
 
-- [Security policy](tutorial-security-policy.md): an [Azure Policy](../governance/policy/overview.md) that determines which controls are monitored and recommended by Defender for Cloud. You can also use Azure Policy to create new definitions, define more policies, and assign policies across management groups.
+- Security policy: an Azure Policy that determines which controls are monitored and recommended by Defender for Cloud. You can also use Azure Policy to create new definitions, define more policies, and assign policies across management groups.
 
-- [Email notifications](configure-email-notifications.md): security contacts and notification settings.
-- [Pricing tier](defender-for-cloud-introduction.md#protect-cloud-workloads): with or without Microsoft Defender for Cloud's Defender plans, which determine which Defender for Cloud features are available for resources in scope (can be specified for subscriptions and workspaces using the API).
-
-> [!NOTE]
-> Specifying a security contact ensures that Azure can reach the right person in your organization if a security incident occurs. Read [Provide security contact details in Defender for Cloud](configure-email-notifications.md) for more information on how to enable this recommendation.
+- Email notifications: security contacts and notification settings.
+- Pricing tier: with or without Microsoft Defender for Cloud's Defender plans, which determine which Defender for Cloud features are available for resources in scope (can be specified for subscriptions and workspaces using the API).
 
 ### Security policies definitions and recommendations
 
 Defender for Cloud automatically creates a default security policy for each of your Azure subscriptions. You can edit the policy in Defender for Cloud or use Azure Policy to create new definitions, define more policies, and assign policies across management groups. Management groups can represent the entire organization or a business unit within the organization. You can monitor policy compliance across these management groups.
 
-Before configuring security policies, review each of the [security recommendations](review-security-recommendations.md):
+Before configuring security policies, review each of the security recommendations:
 
 - See if these policies are appropriate for your various subscriptions and resource groups.
 
@@ -57,7 +54,7 @@ The regulatory compliance has automated and manual assessments that may need to 
 
 ## Configure frequent exports of your compliance status data
 
-If you want to track your compliance status with other monitoring tools in your environment, Defender for Cloud includes an export mechanism to make this straightforward. Configure **continuous export** to send select data to an Azure Event Hubs or a Log Analytics workspace. Learn more in [continuously export Defender for Cloud data](https://learn.microsoft.com//azure/defender-for-cloud/continuous-export).
+If you want to track your compliance status with other monitoring tools in your environment, Defender for Cloud includes an export mechanism to make this straightforward. Configure **continuous export** to send select data to an Azure Event Hubs or a Log Analytics workspace.
 
 ## Run workflow automations when there are changes to your compliance
 
