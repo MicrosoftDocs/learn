@@ -38,7 +38,7 @@ subjects:
   - cloud-security
 units:
 - learn.design-solutions-identity-access-management.design-cloud,-hybrid-and-multi-cloud-access-strategies
-- learn.design-solutions-identity-access-management.design-a-solution-for-azure-active-directory-(azure-ad)
+- learn.design-solutions-identity-access-management.design-a-solution-for-azure-active-directory-azure-ad
 - learn.design-solutions-identity-access-management.design-a-solution-for-external-identities
 - learn.design-solutions-identity-access-management.design-modern-authentication-and-authorization-strategies
 - learn.design-solutions-identity-access-management.align-conditional-access-and-zero-trust
