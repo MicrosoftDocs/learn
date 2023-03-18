@@ -1,0 +1,99 @@
+### YamlMime:ModuleUnit
+uid: learn.design-solutions-regulatory-compliance.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check - Design solutions for regulatory requirements
+  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  ms.date: 3/14/2023
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 5
+###########################################################################
+###
+### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
+###  - Questions are complete sentences ending with a question mark
+###  - No true/false questions
+###  - 3 answers per question
+###  - All answers about the same length
+###  - Numeric answers listed in sorted order
+###  - No "All of the above" and/or "None of the above" as answer choices
+###  - No "Not" or "Except" in questions
+###  - No second person ("you") in the questions or answers
+###  - Provide a meaningful explanation for both correct and incorrect answers
+###
+###########################################################################
+content: |
+quiz:
+  questions:
+  - content: What is regulatory compliance?
+    choices:
+    - content: A set of guidelines and standards that organizations must follow to protect sensitive information.
+      isCorrect: true
+      explanation: Regulatory compliance refers to the set of guidelines and standards that organizations must follow to protect sensitive information, such as personal data, financial information, and health records.
+    - content: A tool used to manage data flow between different systems.
+      isCorrect: false
+      explanation: A regulatory compliance is not a tool used to manage data flow between different systems. It refers to the set of guidelines and standards that organizations must follow to protect sensitive information.
+    - content: A type of security threat that involves gaining unauthorized access to a network.
+      isCorrect: false
+      explanation: Regulatory compliance is not a type of security threat. It refers to the set of guidelines and standards that organizations must follow to protect sensitive information.
+    - content: A method of protecting data from external threats.
+      isCorrect: false
+      explanation: Regulatory compliance is not a method of protecting data from external threats. It refers to the set of guidelines and standards that organizations must follow to protect sensitive information.
+  - content: What is Microsoft Purview compliance manager?
+    choices:
+      - content: A tool for analyzing and managing compliance with regulatory standards.
+        isCorrect: true
+        explanation: Microsoft Purview compliance manager is a tool for analyzing and managing compliance with regulatory standards. It provides a unified view of an organization's compliance posture and helps prioritize actions to meet compliance requirements.
+      - content: A tool for managing data flow between different systems.
+        isCorrect: false
+        explanation: Microsoft Purview compliance manager is not a tool for managing data flow between different systems. It is a tool for analyzing and managing compliance with regulatory standards.
+      - content: A tool for managing access to cloud resources.
+        isCorrect: false
+        explanation: Microsoft Purview compliance manager is not a tool for managing access to cloud resources. It is a tool for analyzing and managing compliance with regulatory standards.
+      - content: A tool for monitoring network traffic for potential security threats.
+        isCorrect: false
+        explanation: Microsoft Purview compliance manager is not a tool for monitoring network traffic for potential security threats. It is a tool for analyzing and managing compliance with regulatory standards.
+  - content: What is Microsoft Priva?
+    choices:
+      - content: A service for managing privacy and data protection compliance.
+        isCorrect: true
+        explanation: Microsoft Priva is a service for managing privacy and data protection compliance. It helps organizations manage compliance with privacy regulations, such as GDPR and CCPA, by providing tools for data classification, risk assessment, and compliance reporting.
+      - content: A tool for managing access to cloud resources.
+        isCorrect: false
+        explanation: Microsoft Priva is not a tool for managing access to cloud resources. It is a service for managing privacy and data protection compliance.
+      - content: A tool for monitoring network traffic for potential security threats.
+        isCorrect: false
+        explanation: Microsoft Priva is not a tool for monitoring network traffic for potential security threats. It is a service for managing privacy and data protection compliance.
+      - content: A tool for managing data flow between different systems.
+        isCorrect: false
+        explanation: Microsoft Priva is not a tool for managing data flow between different systems. It is a service for managing privacy and data protection compliance.
+  - content: What is Azure Policy?
+    choices:
+      - content: A service for defining and enforcing policies for cloud resources.
+        isCorrect: true
+        explanation: Azure Policy is a service for defining and enforcing policies for cloud resources. It helps organizations maintain compliance by ensuring that resources in their Azure environment are configured and managed in accordance with company policies, industry standards, and regulatory requirements.
+      - content: A tool for managing access to cloud resources.
+        isCorrect: false
+        explanation: Azure Policy is not a tool for managing access to cloud resources. It is a service for defining and enforcing policies for cloud resources.
+      - content: A tool for analyzing and managing compliance with regulatory standards.
+        isCorrect: false
+        explanation: Azure Policy is not a tool for analyzing and managing compliance with regulatory standards. It is a service for defining and enforcing policies for cloud resources.
+      - content: A tool for monitoring network traffic for potential security threats.
+        isCorrect: false
+        explanation: Azure Policy is not a tool for monitoring network traffic for potential security threats. It is a service for defining and enforcing policies for cloud resources.
+  - content: What is the Microsoft Defender for Cloud regulatory compliance dashboard?
+    choices:
+      - content: A tool for monitoring compliance with industry standards and regulatory requirements.
+        isCorrect: true
+        explanation: The Microsoft Defender for Cloud regulatory compliance dashboard is a tool for monitoring compliance with industry standards and regulatory requirements. It provides an overview of an organization's compliance posture across different services and workloads, and helps identify potential issues and prioritize remediation efforts.
+      - content: A tool for managing access to cloud resources.
+        isCorrect: false
+        explanation: The Microsoft Defender for Cloud regulatory compliance dashboard is not a tool for managing access to cloud resources. It is a tool for monitoring compliance with industry standards and regulatory requirements.
+      - content: A tool for analyzing and managing compliance with regulatory standards.
+        isCorrect: false
+        explanation: The Microsoft Defender for Cloud regulatory compliance dashboard is not a tool for analyzing and managing compliance with regulatory standards. It is a tool for monitoring compliance with industry standards and regulatory requirements.
+      - content: A tool for managing privacy and data protection compliance.
+        isCorrect: false
+        explanation: The Microsoft Defender for Cloud regulatory compliance dashboard is not a tool for managing privacy and data protection compliance. It is a tool for monitoring compliance with industry standards and regulatory requirements.

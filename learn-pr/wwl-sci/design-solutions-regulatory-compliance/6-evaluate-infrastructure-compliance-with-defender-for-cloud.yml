@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.design-solutions-regulatory-compliance.evaluate-infrastructure-compliance-with-defender-for-cloud
+title: Evaluate infrastructure compliance with Defender for Cloud
+metadata:
+  title: Evaluate infrastructure compliance with Defender for Cloud
+  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  ms.date: 3/15/2023
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-evaluate-infrastructure-compliance-with-defender-for-cloud.md)]
