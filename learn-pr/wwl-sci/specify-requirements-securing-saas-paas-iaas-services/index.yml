@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.specify-requirements-securing-saas-paas-iaas-services
+metadata:
+  title: Specify requirements for securing SaaS, PaaS, and IaaS services
+  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the module; include relevant search keywords."
+  ms.date: 3/14/2023
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+title: Specify requirements for securing SaaS, PaaS, and IaaS services
+summary: "TODO 2 sentences, 20-35 words, don't teach or motivate, avoid using 'learn', don't duplicate the title; see https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main"
+abstract: |
+  By the end of this module, you'll be able to:
+    - "TODO learning objective 1"
+    - "TODO learning objective 2"
+    - "TODO learning objective 3 (if needed; see https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=main)"
+prerequisites: |
+  - "TODO prerequisite 1"
+  - "TODO prerequisite 2"
+  - "TODO prerequisite 3 (if needed; see https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=main"
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- security-engineer
+- solution-architect
+products:
+- azure
+- defender-for-cloud
+- defender-for-cloud-apps
+- defender-identity
+- microsoft-sentinel
+subjects:
+  - security
+  - cloud-security
+units:
+- learn.specify-requirements-securing-saas-paas-iaas-services.introduction-to-security-for-saas-paas-and-iaas
+- learn.specify-requirements-securing-saas-paas-iaas-services.specify-security-baselines-for-saas-paas-and-iaas-services
+- learn.specify-requirements-securing-saas-paas-iaas-services.specify-security-requirements-for-web-workloads
+- learn.specify-requirements-securing-saas-paas-iaas-services.specify-security-requirements-for-containers-and-container-orchestration
+- learn.specify-requirements-securing-saas-paas-iaas-services.knowledge-check
+- learn.specify-requirements-securing-saas-paas-iaas-services.summary
+badge:
+  uid: learn.specify-requirements-securing-saas-paas-iaas-services.badge
