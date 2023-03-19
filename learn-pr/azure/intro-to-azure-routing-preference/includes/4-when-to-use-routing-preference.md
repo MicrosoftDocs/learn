@@ -18,39 +18,12 @@ Routing preference helps alleviate network traffic costs in your subscription. T
 
 ## Apply the criteria
 
+Changing the routing preference to "Internet" is a good choice if you wish to save costs on Internet egress costs in your Azure subscription. However, if performance considerations are a concern and you wish to have the best network performance as possible, then the routing preference choice of "Microsoft network" is a better fit. Let's explore how this criteria applies to the network costs savings project.
 
+The car manufacturer you work for has tasked you with determining a way to save network costs for the factory in Singapore. Currently, the application used by the factory in the Central US region has a routing preference of "Microsoft network". You met with the application developers of the application and have determined that the application doesn't have a network performance requirement.
 
-<!-- 4. Apply-the-criteria introduction --------------------------------------------------------------------------------
+You learned in the previous units that the "Internet" routing preference will minimize traffic across the Microsoft network. Routing the traffic for the application across the public Internet could result in the cost savings goal of the project.
 
-    Goal: Lead-in to the example applications of the criteria.
+## Should the application routing preference be changed to "Internet"?
 
-    Pattern:
-        1 paragraph consisting of 3 sentences
-            Sentence 1: summarizing the criteria from a positive view ("when to use").
-            Sentence 2: Acknowledge that there are cases for which (product) won't work and/or there are edge cases that are difficult to decide.
-            Sentence 3: transition/lead-in to the detailed discussion.
-
-    Heading: "## Apply the criteria"
-
-    Example:
-        "Apply the criteria"
-         "Logic Apps works best when you're integrating multiple services with some added control logic. The decision is often a judgment call though. Let's think about how to apply these criteria to our example processes."
--->
-## Apply the criteria
-TODO: add your 3 lead-in sentences
-
-<!-- 5. Apply the criteria examples -----------------------------------------------------------------------------
-
-    Goal: Apply the criteria to the 2-3 customer tasks in the scenario described in your introduction unit.
-
-    Pattern:
-        For each customer task, repeat this pattern:
-            1. "### Should (scenario subtask) use (product)?".
-            2. 1-3 paragraphs of discussion/analysis (first sentence should answer yes/no about whether the product is suitable).
-            3. Visual like an image, table, list, code sample, or blockquote.
-
-    Example:
-        H3: "Should the video-archive utility use Logic Apps?"
-        Prose: "The video archive task is a good fit for Logic Apps even though it doesn't integrate multiple systems. Logic Apps has a built-in timer trigger and an Azure blob connector that are perfect to implement this process...."
-        Visual: (image preferred)
--->
+You've determined that "Yes", routing preference will fullfil the goal of the cost savings project by reducing the network costs of traffic between the factory in Singapore and the application in the Central US region. Users in the factory connecting to the application won't see a noticeable performance difference between routing across the Microsoft Network and the public Internet. The application developers determined that the performance difference of routing over the public Internet won't adversely affect the application the factory uses in the Central US region.
