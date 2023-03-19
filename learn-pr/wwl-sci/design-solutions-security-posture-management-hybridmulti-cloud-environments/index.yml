@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.design-solutions-security-posture-management-hybridmulti-cloud-environments
+metadata:
+  title: Design solutions for security posture management in hybrid and multi-cloud environments
+  description: "You'll learn how to design security posture management solutions that integrate into hybrid and multi-cloud scenarios using capabilities in Microsoft Defender for Cloud, Azure Arc and Microsoft Cloud Security Benchmark (MCSB)."
+  ms.date: 3/14/2023
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+title: Design solutions for security posture management in hybrid and multi-cloud environments
+summary: "You'll learn how to design security posture management solutions that integrate into hybrid and multi-cloud scenarios using capabilities in Microsoft Defender for Cloud, Azure Arc and Microsoft Cloud Security Benchmark (MCSB)."
+abstract: |
+  By the end of this module, you'll be able to:
+  - Evaluate security posture by using Microsoft Cloud Security Benchmark, Microsoft Defender for Cloud, and Secure Scores
+  - Design integrated security posture management and workload protection solutions in hybrid and multi-cloud environments
+  - Design cloud workload protection solutions that use Microsoft Defender for Cloud
+prerequisites: |
+  - Advanced experience and knowledge in identity and access, platform protection, security operations, securing data, and securing applications.
+  - Experience with hybrid and cloud implementations.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- security-engineer
+- solution-architect
+products:
+- azure
+- defender-for-cloud
+- defender-for-cloud-apps
+- defender-identity
+- microsoft-sentinel
+subjects:
+  - security
+  - cloud-security
+units:
+- learn.design-solutions-security-posture-management-hybridmulti-cloud-environments.introduction-to-hybrid-and-multi-cloud-posture-management
+- learn.design-solutions-security-posture-management-hybridmulti-cloud-environments.evaluate-security-posture-by-using-microsoft-cloud-security-benchmark
+- learn.design-solutions-security-posture-management-hybridmulti-cloud-environments.evaluate-security-posture-by-using-microsoft-defender-for-cloud
+- learn.design-solutions-security-posture-management-hybridmulti-cloud-environments.evaluate-security-posture-by-using-secure-scores
+- learn.design-solutions-security-posture-management-hybridmulti-cloud-environments.knowledge-check
+- learn.design-solutions-security-posture-management-hybridmulti-cloud-environments.summary
+badge:
+  uid: learn.design-solutions-security-posture-management-hybridmulti-cloud-environments.badge
