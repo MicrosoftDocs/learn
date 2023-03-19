@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.specify-requirements-securing-saas-paas-iaas-services.knowledge-check
-title: Knowledge check
+title: Knowledge check - Specify requirements for securing SaaS, PaaS and IaaS services
 metadata:
-  title: Knowledge check
+  title: Knowledge check - Specify requirements for securing SaaS, PaaS and IaaS services
   description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
   ms.date: 3/14/2023
   author: hrasheed-msft
@@ -27,58 +27,59 @@ durationInMinutes: 1
 content: |
 quiz:
   questions:
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+    - content: "What is the shared responsibility model?"
+      choices:
+        - content: "A model in which cloud service providers are responsible for all aspects of security."
+          isCorrect: false
+          explanation: "Actually, the shared responsibility model entails that both the cloud provider and the customer share security responsibilities."
+        - content: "A model in which customers are responsible for all aspects of security."
+          isCorrect: false
+          explanation: "Actually, the shared responsibility model entails that both the cloud provider and the customer share security responsibilities."
+        - content: "A model in which cloud service providers are responsible for physical security, while the customer is responsible for logical security."
+          isCorrect: false
+          explanation: "Actually, the shared responsibility model entails that both the cloud provider and the customer share security responsibilities."
+        - content: "A model in which cloud service providers and customers share security responsibilities."
+          isCorrect: true
+          explanation: "The shared responsibility model entails that while cloud service providers are responsible for physical infrastructure and basic platform security, the customers are responsible for the security of everything they build or deploy on top of the platform."
+    - content: "Which of the following is a recommended IaaS security best practice?"
+      choices:
+        - content: "Using publicly available virtual machine images."
+          isCorrect: false
+          explanation: "Using publicly available virtual machine images can introduce unnecessary risk into your environment, as you don't know what might be included. It is generally not recommended."
+        - content: "Storing unencrypted disk snapshots in a public container."
+          isCorrect: false
+          explanation: "Storing unencrypted disk snapshots in a public container can make them vulnerable to unauthorized access. It is not a recommended security best practice."
+        - content: "Applying strict network security group configurations to restrict inbound and outbound traffic."
+          isCorrect: true
+          explanation: "By applying strict network security group configurations, you can reduce the attack surface of your environment and protect against unauthorized access by reducing the number of ports open to traffic."
+        - content: "Using default credentials for virtual machines."
+          isCorrect: false
+          explanation: "Using default credentials for virtual machines can make them vulnerable to brute-force attacks. It is not a recommended security best practice."
+    - content: "What is an example of a PaaS security best practice?"
+      choices:
+        - content: "Disabling SSL encryption."
+          isCorrect: false
+          explanation: "Disabling SSL encryption can put your data at risk of being read by attackers. It is not a recommended security best practice."
+        - content: "Prohibiting the use of custom domains."
+          isCorrect: false
+          explanation: "Prohibiting the use of custom domains may restrict your business needs unnecessarily. It is not a recommended security best practice."
+        - content: "Enabling managed service identity for applications and services."
+          isCorrect: true
+          explanation: "By enabling managed service identity, you can help protect secrets and sensitive data, and restrict permissions to only authorized users."
+        - content: "Maintaining a single administrative account for all users."
+          isCorrect: false
+          explanation: "Maintaining a single administrative account for all users can make it harder to track user actions and provide accountability. It is not a recommended security best practice."
+    - content: "What is one step you should take to secure an App Service?"
+      choices:
+        - content: "Use a weak password for the App Service."
+          isCorrect: false
+          explanation: "Using a weak password makes it easier for attackers to guess or brute-force their way into your App Service. It is not a recommended security best practice."
+        - content: "Open up all incoming ports."
+          isCorrect: false
+          explanation: "Opening up all incoming ports creates additional attack surface, making it easier for attackers to attempt to exploit vulnerabilities in your App Service. It is not a recommended security best practice."
+        - content: "Enable web app firewall (WAF) protection."
+          isCorrect: true
+          explanation: "Enabling WAF protection helps protect your App Service from common web-based attacks like cross-site scripting (XSS), SQL injection, and more."
+        - content: "Store plaintext passwords in app configuration settings."
+          isCorrect: false
+          explanation: "Storing plaintext passwords in app configuration settings can make them vulnerable to attackers who gain unauthorized access. It is not a recommended security best practice."
