@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.design-solutions-securing-privileged-access.design-a-solution-for-cloud-infrastructure-entitlement-management-(ciem)
+uid: learn.design-solutions-securing-privileged-access.design-a-solution-for-cloud-infrastructure-entitlement-management-ciem
 title: Design a solution for cloud infrastructure entitlement management (CIEM)
 metadata:
   title: exercise
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 1
 content: |
-  [!include[](includes/5-design-a-solution-for-cloud-infrastructure-entitlement-management-(ciem).md)]
+  [!include[](includes/5-design-a-solution-for-cloud-infrastructure-entitlement-management-ciem.md)]

@@ -12,11 +12,9 @@ This solution relies on core security capabilities in the Windows 10 operating s
 
 All users and operators benefit from using a secure workstation. An attacker who compromises a PC or device can impersonate or steal credentials/tokens for all accounts that use it, undermining many or all other security assurances. For administrators or sensitive accounts, this allows attackers to escalate privileges and increase the access they have in your organization, often dramatically to domain, global, or enterprise administrator privileges. 
 
-For details on security levels and which users should be assigned to which level, see [Privileged access security levels](privileged-access-security-levels.md)
-
 ### Device Security Controls
 
-The successful deployment of a secure workstation requires it to be part of an end to end approach including devices, [accounts](privileged-access-accounts.md), [intermediaries](privileged-access-intermediaries.md), and security policies applied to your [application interfaces](privileged-access-interfaces.md). All elements of the stack must be addressed for a complete privileged access security strategy.
+The successful deployment of a secure workstation requires it to be part of an end to end approach including devices, accounts, intermediaries, and security policies applied to your application interfaces. All elements of the stack must be addressed for a complete privileged access security strategy.
 
 This table summarizes the security controls for different device levels:
 
@@ -61,13 +59,13 @@ This guidance shows how to harden Windows 10 and reduce the risks associated wit
 
 * **Enterprise Device** –  The first managed role is good for home users, small business users, general developers, and enterprises where organizations want to raise the minimum security bar. This profile permits users to run any applications and browse any website, but an anti-malware and endpoint detection and response (EDR) solution like [Microsoft Defender for Endpoint](/windows/security/threat-protection/) is required. A policy-based approach to increase the security posture is taken. It provides a secure means to work with customer data while also using productivity tools like email and web browsing. Audit policies and Intune allow you to monitor an Enterprise workstation for user behavior and profile usage. 
 
-The enterprise security profile in the [privileged access deployment](privileged-access-deployment.md) guidance uses JSON files to configure this with Windows 10 and the provided JSON files. 
+The enterprise security profile in the privileged access deployment guidance uses JSON files to configure this with Windows 10 and the provided JSON files. 
 
 * **Specialized Device** – This represents a significant step up from enterprise usage by removing the ability to self-administer the workstation and limiting which applications may run to only the applications installed by an authorized administrator (in the program files and pre-approved applications in the user profile location. Removing the ability to install applications may impact productivity if implemented incorrectly, so ensure that you have provided access to Microsoft store applications or corporate managed applications that can be rapidly installed to meet users needs. 
 
    * The Specialized security user demands a more controlled environment while still being able to do activities such as email and web browsing in a simple-to-use experience. These users expect features such as cookies, favorites, and other shortcuts to work but do not require the ability to modify or debug their device operating system, install drivers, or similar.
 
-The specialized security profile in the [privileged access deployment](privileged-access-deployment.md) guidance uses JSON files to configure this with Windows 10 and the provided JSON files. 
+The specialized security profile in the privileged access deployment guidance uses JSON files to configure this with Windows 10 and the provided JSON files. 
 
 * **Privileged Access Workstation (PAW)** – This is the highest security configuration designed for extremely sensitive roles that would have a significant or material impact on the organization if their account was compromised. The PAW configuration includes security controls and policies that restrict local administrative access and productivity tools to minimize the attack surface to only what is absolutely required for performing sensitive job tasks. 
 This makes the PAW device difficult for attackers to compromise because it blocks the most common vector for phishing attacks: email and web browsing. 

@@ -156,8 +156,6 @@ Securing privileged access is a critical first step to protecting business asset
 
 Privileged accounts are accounts that administer and manage IT systems. Cyber attackers target these accounts to gain access to an organization’s data and systems. To secure privileged access, you should isolate the accounts and systems from the risk of being exposed to a malicious user.
 
-We recommend that you develop and follow a roadmap to secure privileged access against cyber attackers. For information about creating a detailed roadmap to secure identities and access that are managed or reported in Azure AD, Microsoft Azure, Microsoft 365, and other cloud services, review [Securing privileged access for hybrid and cloud deployments in Azure AD](../../active-directory/roles/security-planning.md).
-
 The following are a few of the best practices found in [Securing privileged access for hybrid and cloud deployments in Azure AD](/azure/active-directory/roles/security-planning):
 
 **Best practice**: Manage, control, and monitor access to privileged accounts.   
