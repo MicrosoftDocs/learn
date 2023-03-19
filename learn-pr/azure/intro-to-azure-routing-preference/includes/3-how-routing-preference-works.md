@@ -43,8 +43,8 @@ For example, if traffic from a service hosted in the Central US region is destin
 
 As we learned in the previous unit, the routing preference unmetered service is available for Content Delivery Network (CDN) providers who have their customers' origin content hosted on Azure.
 
-With the service, CDN providers have the opportunity to directly connect their network to Microsoft's global network edge routers at various locations.
-
 Your outbound traffic from an origin in Azure destined to a CDN provider benefits from the direct connectivity. The data transfer bill for traffic leaving your Azure resources routed through the direct links is free.
 
 A direct connection between a CDN provider and an origin in Azure enables optimal performance by eliminating network "hops" between the connections. The CDN workload that frequently fetches data from the origin benefits from the "hop" elimination.
+
+With the service, CDN providers have the opportunity to directly connect their network to Microsoft's global network edge routers at various locations. To take advantage of Routing Preference unmetered, your CDN providers must be part of the program. If your CDN provider is not part of the program, contact your CDN provider.

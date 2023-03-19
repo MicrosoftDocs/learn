@@ -1,59 +1,23 @@
-<!-- 1. Goal and criteria-----------------------------------------------------------------------------
+You've learned how routing preference in Azure can help you determine how traffic is routed to applications in your Azure subscription. Our goal was to help you evaluate whether routing preference could help fulfill the goal of the network traffic cost savings project. We developed some criteria you can use to guide your decision:
 
-    Goal: Recap that this module's goal is 'evaluate' using the provided decision criteria.
+    * Cost
 
-    Format: Short text followed by a bulleted list of the decision criteria developed in the "When to use (product)" unit.
-
-    Heading: none
-
-    Example: "Our goal was to help you evaluate whether Logic Apps would be a good choice for your business process. We developed some criteria you can use to guide your decision:
-    * Integration
     * Performance
-    * Conditionals
-    * Connectors"
 
--->
-TODO: 1-2 sentences restating the module's "evaluate" goal
-TODO: bulleted list of the decision criteria
+We applied these criteria to our fictional car company. The analysis helped us see how routing preference options affect network performance and cost. After determining the network performance requirements of the factory application, you determined that changing the routing preference of the application to "Internet" from "Microsoft network" fulfils the goal of the network cost savings project.
 
-<!-- 2. Show how you solved the scenario problem(s)---------------------------------------------------
+The criteria helped you evaluate whether changing the routing preference of the application would result in network cost savings for the car factory application. You learned how routing preference worked by changing how traffic for applications hosted in Azure routes, either by the public Internet (hot potato routing) or across the Microsoft network (cold potato routing).
 
-    Goal: Briefly summarize how you applied the decision criteria to the scenario problem(s). Ideally, discuss two scenarios, one where the product was appropriate and one where it wasn't.
+You learned about Routing Preference unmetered and how it is only for use with CDN providers that are part of the routing preference unmetered program.
 
-    Heading: none; depending on length, you can put this in a separate paragraph or combine this with the previous section into a single paragraph
+You should now have the information you need to determine if routing preference in Azure is right for your organization.
 
-    Example: "We applied these criteria to our fictional shoe company. The analysis helped us see how difficult it would be to use Logic Apps for each process. Both the social-media monitor and the video archive utility used only the built-in connectors. This characteristic made them perfect for Logic Apps. The online sales portal required more work because it had complex conditionals and needed custom connectors."
- -->
+## References
 
-TODO: add your discussion of applying the criteria
+* [What is routing preference?](https://learn.microsoft.com/azure/virtual-network/ip-services/routing-preference-overview)
 
-<!-- 3. Describe the business impact ----------------------------------------------------
+* [What is Routing Preference Unmetered?](https://learn.microsoft.com/azure/virtual-network/ip-services/routing-preference-unmetered)
 
-    Goal: explain how choosing the right product is important
+* [Configure routing preference for a public IP address using the Azure portal](https://learn.microsoft.com/azure/virtual-network/ip-services/routing-preference-portal)
 
-    Heading: none; depending on length, you can put this in a separate paragraph or combine this with the previous section into a single paragraph
-
-    Example: "The criteria help you evaluate whether your business processes are a good match for Logic Apps. First, they let you assess how well Logic Apps will solve your problem. Second, they give you an idea of the amount of customization effort involved in using them for your task. This process should give you enough information to choose the right product for your work."
- -->
-TODO: describe the business impact
-
-<!-- 4. References (optional) ----------------------------------------------------
-
-    Goal: Provide a few recommendations for further study via a bulleted list of links. This is optional and intended to be used sparingly.
-        - use the target page title as the text for your link
-        - do not include other text such as a description
-        - prefer other first-party sites like Docs reference pages
-        - link to third-party sites only when they are trusted and authoritative
-        - do not link to other Learn content ("next steps" recommendations are generated automatically)
-        - avoid linking to opinion sites such as blog posts
-
-    Heading: "## References"
-
-    Example:
-        "References
-        * [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
-        * [What is Azure role-based access control (Azure RBAC)?](https://docs.microsoft.com/azure/role-based-access-control/overview)
-        * [Manage access to billing information for Azure](https://docs.microsoft.com/azure/billing/billing-manage-access)"
- -->
-
-<!-- Do not include any other content -->
+* [Network routing preference for Azure Storage](https://learn.microsoft.com/en-us/azure/storage/common/network-routing-preference)
