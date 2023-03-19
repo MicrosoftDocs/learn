@@ -1,4 +1,4 @@
-This unit summarizes the Microsoft cloud security benchmark [Azure security baseline for for Azure Kubernetes Service](https://learn.microsoft.com/security/benchmark/azure/baselines/aks-security-baseline). For areas where there are many controls, we have only included the first five that were mentioned.
+This unit summarizes the [Azure security baseline for Azure Kubernetes Service](https://learn.microsoft.com/security/benchmark/azure/baselines/aks-security-baseline). For areas where there are many controls, we have only included the first five that were mentioned.
 
 | Area | Control | Guidance Summary |
 |---|---|---|
