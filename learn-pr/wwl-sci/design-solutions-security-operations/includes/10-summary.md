@@ -25,3 +25,6 @@ You've learned how to:
 
 - [Microsoft Sentinel automated responses - Azure Architecture Center | Microsoft Learn](https://learn.microsoft.com/azure/architecture/solution-ideas/articles/microsoft-sentinel-automated-response)
 - [Hybrid security monitoring with Microsoft Sentinel - Azure Architecture Center | Microsoft Learn](https://learn.microsoft.com/azure/architecture/hybrid/hybrid-security-monitoring)
+
+> [!NOTE]
+> This module contains AI-generated content.

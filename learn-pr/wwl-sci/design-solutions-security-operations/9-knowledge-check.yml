@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-solutions-security-operations.knowledge-check
-title: Knowledge check
+title: Knowledge check - Design solutions for security operations
 metadata:
-  title: Knowledge check
+  title: Knowledge check - Design solutions for security operations
   description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
   ms.date: 3/14/2023
   author: hrasheed-msft
@@ -27,58 +27,62 @@ durationInMinutes: 1
 content: |
 quiz:
   questions:
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+    - content: "What is the function of a Security Operations Center (SOC)?"
+      choices:
+        - content: "Monitor an organization's security posture, detect and respond to security incidents."
+          isCorrect: true
+          explanation: "A SOC is responsible for monitoring an organization's security posture, detecting security incidents, and responding effectively to them."
+        - content: "Perform security testing and vulnerability assessments"
+          isCorrect: false
+          explanation: "While security testing is important, a SOC is primarily focused on incident detection, response and prevention."
+        - content: "Develop network security policies and procedures"
+          isCorrect: false
+          explanation: "While policy development is an important part of any security program, a SOC is primarily focused on incident detection, response and prevention."
+        - content: "Train employees on security awareness best practices"
+          isCorrect: false
+          explanation: "While employee training is important, a SOC is primarily focused on incident detection, response and prevention."
+
+    - content: "Which of the following best describes the function of Azure Monitor?"
+      choices:
+        - content: "Collects data from various sources and provides insights into the performance and health of applications and infrastructure."
+          isCorrect: true
+          explanation: "Azure Monitor collects data from various sources including logs, metrics, and trace telemetry, and provides insights into the performance, health, and availability of applications and infrastructure."
+        - content: "Provides network security by analyzing and blocking malicious traffic."
+          isCorrect: false
+          explanation: "While security is an important aspect of cloud services, it is not the primary function of Azure Monitor."
+        - content: "Automatically remediates security issues in computing environments."
+          isCorrect: false
+          explanation: "While automation is a key component of modern security operations, it is not the primary function of Azure Monitor."
+        - content: "Allows users to monitor social media and web-based threats."
+          isCorrect: false
+          explanation: "Azure Monitor is focused on collecting data from Azure resources, logging systems, and other sources, not monitoring social media or web-based threats."
+
+    - content: "What is XDR in Microsoft 365 Defender?"
+      choices:
+        - content: "An AI-powered malware scanner that detects and removes malicious files."
+          isCorrect: false
+          explanation: "While malware detection is part of its capabilities, XDR refers to extended detection and response which is designed to connect multiple security products across an environment and automate threat response in real-time."
+        - content: "A cloud-based backup solution for critical data." 
+          isCorrect: false
+          explanation: "Backup solutions are important but the role of XDR is beyond that, focusing on detecting and responding to modern-day cyber-attacks with automated actions."
+        - content: "A tool that automates patching of vulnerable systems."
+          isCorrect: false
+          explanation: "While automated patching is a valuable tool for improving system security, this is not the primary function of XDR."
+        - content: "A unified threat detection and response solution."
+          isCorrect: true
+          explanation: "XDR is a unified platform that provides visibility across endpoints, email, documents, identity, and allows security teams to quickly investigate, respond and remediate threats in a coordinated way."
+
+    - content: "What is the purpose of the MITRE ATT&CK framework within Microsoft Sentinel?"
+      choices:
+        - content: "To identify vulnerabilities in Azure environments."
+          isCorrect: false
+          explanation: "The MITRE ATT&CK framework is used to identify tactics, techniques, and procedures (TTPs) used by attackers to compromise networks and systems. It is not specifically intended for identifying vulnerabilities."
+        - content: "To create custom dashboards for tracking security events."
+          isCorrect: false
+          explanation: "Dashboards are a visualization tool, while MITRE ATT&CK can be used to help organize, prioritize and track against potential threat actor activity mapped against the TTPs."
+        - content: "To provide a comprehensive threat intelligence feed."
+          isCorrect: false
+          explanation: "Threat Intelligence feeds provide context about cyber threats prevalent at the time, however, the MITRE ATT&CK framework is primarily focused on providing a structured knowledge base of adversary tactics and techniques useful to investigators, analysts, and defenders."
+        - content: "To map detections and responses to specific adversary tactics and techniques."
+          isCorrect: true
+          explanation: "The MITRE ATT&CK framework offers a common language used by security teams to describe attacker behavior, test security defenses, and understand whether the implemented security measures are effective at stopping or identifying attacks in real-time."
