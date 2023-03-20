@@ -1,4 +1,4 @@
-In the previous module, we developed a vitals bot to collect basic health information from users. To store the information, we'll build a database.
+In the previous module, we developed a vitals bot to collect basic health information from users. To store the information, build a database.
 
 Follow these steps to build a database:
 
@@ -8,7 +8,7 @@ Follow these steps to build a database:
 
 1. In the **Categories** menu, select **Databases**. Then select **SQL Database**.
 
-   :::image type="content" source="../media/2-database-creation.png" alt-text="Screenshot showing how to provision a database. In the Categories list, Databases is selected." lightbox="../media/2-database-creation.png":::
+   :::image type="content" source="../media/2-database-creation.png" alt-text="Screenshot showing how to create a database. In the Categories list, Databases is selected." lightbox="../media/2-database-creation.png":::
 
 1. Select **Create**.
 
@@ -18,14 +18,14 @@ Follow these steps to build a database:
 
     - **Subscription**: Select your subscription.
     - **Resource group**: Select **Create new** and enter a unique name for the resource group, such as *Healthbot*. Then select **OK**.
-    - **Database name**: Name your database. We'll name our database *healthbot*.
+    - **Database name**: Name your database. Name your database *healthbot*.
     - **Server**: Select **Create new**, and then fill in the following:
 
        - **Server name**: Add a server name, such as *healthbot*.
        - **Server admin login**: Add a username, such as *learnbot*.
        - **Location**: Select a location close to you.
        - **Authentication method**: Select **Use SQL authentication**.
-       - **Password**: Add a unique password for the server. We'll use *healthbot@123*.
+       - **Password**: Add a unique password for the server. Use *healthbot@123*.
        - **Confirm password**: Retype the password you provided in the **Password** field.
        - Select **OK**.
 
@@ -96,13 +96,13 @@ Follow these steps to build a database:
 
 ## Allow other users to edit your database
 
-We often work with multiple people on the same project and want to be able to share our current work with them. So we'll assign the other users as administrators for our database. They'll be able view and modify the database like we do.
+We often work with multiple people on the same project and want to be able to share our current work with them. You can assign the other users as administrators for our database. Then they can view and modify the database like we do.
 
 Follow these steps to give access to another user:
 
 1. In the Azure portal, select the SQL server you created.
 
-    :::image type="content" source="../media/2-sql-server.png" alt-text="Screenshot showing the selected seequel server." lightbox="../media/2-sql-server.png":::
+    :::image type="content" source="../media/2-sql-server.png" alt-text="Screenshot showing the selected sequel server." lightbox="../media/2-sql-server.png":::
     
 1. In the menu on the left side of the page, select **Azure Active Directory**.
 
@@ -116,7 +116,7 @@ Follow these steps to give access to another user:
 
 ## Visualize the database as a table
 
-Even though we know our database works, we can visualize the data that's logged into a table. To visualize it, we'll use Azure Data Studio.
+Even though we know our database works, we can visualize the data that's logged into a table. To visualize it, we can use Azure Data Studio.
 
 1. On the Azure portal landing page, select the SQL database you created.
 
@@ -137,8 +137,8 @@ Even though we know our database works, we can visualize the data that's logged 
     - **Connection type**: Select **Microsoft SQL Server**.
     - **Server**: Paste the server name you created in step 9.
     - **Authentication type**: Select **SQL login**.
-    - **Username**: Use the username you used to log in to the query editor. We used *learnbot*.
-    - **Password**: Use the password you used to log in to the query editor. We used *healthbot@123*.
+    - **Username**: Use the username you used to sign in to the query editor. We used *learnbot*.
+    - **Password**: Use the password you used to sign in to the query editor. We used *healthbot@123*.
     - **Database**: Select the name of the database you created on Azure.
     - **Server group**: Leave the selection as **Default**.
 
