@@ -18,7 +18,7 @@ Routing preference helps alleviate network traffic costs in your subscription. T
 
 ## Apply the criteria
 
-Changing the routing preference to "Internet" is a good choice if you wish to save costs on Internet egress costs in your Azure subscription. However, if performance considerations are a concern and you wish to have the best network performance as possible, then the routing preference choice of "Microsoft network" is a better fit. Let's explore how this criteria applies to the network costs savings project.
+Changing the routing preference to "Internet" is a good choice if you wish to save costs on Internet egress in your Azure subscription. However, if performance considerations are a concern and you wish to have the best network performance as possible, then the routing preference choice of "Microsoft network" is a better fit. Let's explore how this criteria applies to the network costs savings project.
 
 The car manufacturer you work for has tasked you with determining a way to save network costs for the factory in Singapore. Currently, the application used by the factory in the Central US region has a routing preference of "Microsoft network". You met with the application developers of the application and have determined that the application doesn't have a network performance requirement.
 
