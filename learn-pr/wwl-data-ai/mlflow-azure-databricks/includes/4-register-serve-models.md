@@ -1,8 +1,8 @@
 
-Model registration allows MLflow and Azure Databricks to keep track of models. This is important for two reasons:
+Model registration allows MLflow and Azure Databricks to keep track of models; which is important for two reasons:
 
-- Registering a model allows you to serve the model for real-time, streaming, or batch inferencing. This makes the process of using a trained model easy, as now data scientists will not need to develop application code; the serving process builds that wrapper and exposes a REST API or method for batch scoring automatically.
-- Registering a model allows you to create new versions of that model over time. This gives you the opportunity to track model changes and even perform comparisons between different historical versions of models.
+- Registering a model allows you to serve the model for real-time, streaming, or batch inferencing. Registration makes the process of using a trained model easy, as now data scientists don't need to develop application code; the serving process builds that wrapper and exposes a REST API or method for batch scoring automatically.
+- Registering a model allows you to create new versions of that model over time; giving you the opportunity to track model changes and even perform comparisons between different historical versions of models.
 
 ## Registering a model
 
@@ -19,7 +19,7 @@ with mlflow.start_run():
                            conda_env=mlflow.spark.get_default_conda_env())
 ```
 
-When reviewing the experiment run, including the logged metrics that indicate how well the model predicts, the model is included in the run artifacts. You can then select the option to *register* the model using the user interface in the experiment viewer.
+When you review the experiment run, including the logged metrics that indicate how well the model predicts, the model is included in the run artifacts. You can then select the option to *register* the model using the user interface in the experiment viewer.
 
 Alternatively, if you want to register the model without reviewing the metrics in the run, you can include the **registered_model_name** parameter in the **log_model** method; in which case the model is automatically registered during the experiment run.
 

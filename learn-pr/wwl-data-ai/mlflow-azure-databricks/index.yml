@@ -3,7 +3,7 @@ uid: learn.wwl.mlflow-azure-databricks
 metadata:
   title: Use MLflow in Azure Databricks
   description: "Learn how to use MLflow in Azure Databricks to track machine learning experiments and deploy models."
-  ms.date: 03/17/2023
+  ms.date: 03/20/2023
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -31,7 +31,7 @@ units:
 - learn.wwl.mlflow-azure-databricks.introduction
 - learn.wwl.mlflow-azure-databricks.capabilities-of-mlflow
 - learn.wwl.mlflow-azure-databricks.run-experiments
-- learn.wwl.mlflow-azure-databricks.register-and-serve-models
+- learn.wwl.mlflow-azure-databricks.register-serve-models
 - learn.wwl.mlflow-azure-databricks.exercise-use-mlflow
 - learn.wwl.mlflow-azure-databricks.knowledge-check
 - learn.wwl.mlflow-azure-databricks.summary

@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/17/2023
+  ms.date: 03/20/2023
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -23,7 +23,7 @@ quiz:
     - content: "mlflow.spark.log_model"
       isCorrect: false
       explanation: "That's incorrect.Use the mlflow.spark.log_model method to log a trained model."
-  - content: "You have logged a model in an experiment run, and you plan to deploy it in a real-time inferencing service. What should you do?"
+  - content: "You've logged a model in an experiment run, and you plan to deploy it in a real-time inferencing service. What should you do?"
     choices:
     - content: "Reproduce the experiment"
       isCorrect: false

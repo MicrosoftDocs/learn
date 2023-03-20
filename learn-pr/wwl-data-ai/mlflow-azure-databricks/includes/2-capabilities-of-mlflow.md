@@ -7,7 +7,7 @@ There are four components to MLflow:
 
 ## MLflow Tracking
 
-MLflow Tracking allows data scientists to work with experiments in which they process and analyze data or train machine learning models. For each run in an experiment, a data scientist can log parameter values, versions of libraries used, model evaluation metrics, and generated output files; including images of data visualizations and model files. This ability to log important details about experiment runs provides the ability to audit and compare the results of prior model training executions.  
+MLflow Tracking allows data scientists to work with experiments in which they process and analyze data or train machine learning models. For each run in an experiment, a data scientist can log parameter values, versions of libraries used, model evaluation metrics, and generated output files; including images of data visualizations and model files. This ability to log important details about experiment runs makes it possible to audit and compare the results of prior model training executions.  
 
 ## MLflow Projects
 
