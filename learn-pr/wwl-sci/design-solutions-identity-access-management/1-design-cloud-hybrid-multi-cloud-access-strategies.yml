@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.design-solutions-identity-access-management.design-cloud-hybrid-multi-cloud-access-strategies
-title: Design cloud, hybrid and multi-cloud access strategies
+uid: learn.design-solutions-identity-access-management.design-cloud-hybrid-multicloud-access-strategies
+title: Design cloud, hybrid and multicloud access strategies
 metadata:
-  title: Design cloud, hybrid and multi-cloud access strategies
-  description: "SC-100 preparatory unit on topic: Design cloud, hybrid and multi-cloud access strategies."
+  title: Design cloud, hybrid and multicloud access strategies
+  description: "This is a unit which prepares for the Microsoft Cybersecurity Architect certification on the topic: design cloud, hybrid and multicloud access strategies."
   ms.date: 3/14/2023
   author: hrasheed-msft
   ms.author: hrasheed
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
-durationInMinutes: 1
+durationInMinutes: 5
 content: |
-  [!include[](includes/1-design-cloud-hybrid-multi-cloud-access-strategies.md)]
+  [!include[](includes/1-design-cloud-hybrid-multicloud-access-strategies.md)]
