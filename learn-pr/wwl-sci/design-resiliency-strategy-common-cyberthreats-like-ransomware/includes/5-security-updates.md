@@ -14,7 +14,7 @@ Before deploying Update Management and enabling your machines for management, ma
 
 The following diagram illustrates how Update Management assesses and applies security updates to all connected Windows Server and Linux servers.
 
-![Update Management workflow](/azure/automation/update-management/media/overview/update-mgmt-workflow.png)
+![Diagram that shows the update management workflow](https://learn.microsoft.com/azure/automation/update-management/media/overview/update-mgmt-workflow.png)
 
 Update Management integrates with Azure Monitor Logs to store update assessments and update deployment results as log data, from assigned Azure and non-Azure machines. To collect this data, the Automation Account and Log Analytics workspace are linked together, and the Log Analytics agent for Windows and Linux is required on the machine and configured to report to this workspace.
 
