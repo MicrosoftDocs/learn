@@ -20,5 +20,5 @@ from hyperopt import SparkTrials
   print("Best param values: ", argmin)
 ```
 
-> [TIP]
+> [!TIP]
 > For more information about using the **SparkTrials** class, see [The SparkTrials class](/azure/databricks/machine-learning/automl-hyperparam-tuning/hyperopt-concepts?azure-portal-true#the-sparktrials-class) in the Azure Databricks documentation.

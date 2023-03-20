@@ -13,7 +13,7 @@ Hyperopt works by iteratively calling a function (often referred to as the *obje
 - Accepts a parameter containing a list of hyperparameter values.
 - Trains a model using the provided hyperparameter values.
 - Evaluates the model based on a target metric for predictive performance.
-- Returns a numeric value that reflects the performance metric such that improving the model performance lowers* the return value.
+- Returns a numeric value that reflects the performance metric such that improving the model performance *lowers* the return value.
 
 For example, the following function trains a machine learning model using the **LogisticRegression** algorithm from the Spark MLlib library.
 
