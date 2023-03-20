@@ -1,7 +1,7 @@
 
 
 
-In this exercise, you'll develop the `try` code block and `catch` clause in the top-level statements, create and throw exceptions in the `MakeChange` method, and then complete the code block of the `catch` clause using properties of exception object. The tasks that you complete during this exercise are:
+In this exercise, you'll develop a `try` code block and `catch` clause in the top-level statements, create and throw exceptions in the `MakeChange` method, and then complete the `catch` code block using an exception object. You complete the following tasks during this exercise:
 
 1. Update top-level statements: Implement a `try-catch` pattern in the top-level statements. The `try` code block will contain the call to `MakeChange`.
 1. Update `MakeChange` method: Create and throw exceptions for "Insufficient till" and "Underpayment" issues.
@@ -58,13 +58,13 @@ In this task, you'll enclose the call to the `MakeChange` method inside a `try` 
 
 ## Create and throw exceptions in the `MakeChange` method
 
-In this task, you'll update `MakeChange` to create and throw custom exceptions when transaction can't be completed.
+In this task, you'll update `MakeChange` to create and throw custom exceptions when a transaction can't be completed.
 
 The `MakeChange` method includes two issues that should result in exceptions:
 
-- **Underpayment issue**: This issue occurs when the customer offers a payment that is less than the item cost. If the customer has not offered sufficient payment, `MakeChange` should throw an exception.
+- **Underpayment issue**: This issue occurs when the customer offers a payment that is less than the item cost. If the customer hasn't offered sufficient payment, `MakeChange` should throw an exception.
 
-- **Insufficient till issue**: This issue occurs when the till doesn't contain the bills required to produce the exact change. If the till cannot make exact change, `MakeChange` should throw and exception.
+- **Insufficient till issue**: This issue occurs when the till doesn't contain the bills required to produce the exact change. If the till can't make exact change, `MakeChange` should throw and exception.
 
 1. Scroll down to the `MakeChange` method.
 
@@ -77,14 +77,14 @@ The `MakeChange` method includes two issues that should result in exceptions:
 
 1. Take a minute to consider the issue that this code is addressing.
 
-    If `changeNeeded` is less than zero, the customer has not provided enough money to cover the purchase price of the item they're buying. The purchase price and the money provided by the customer are parameters of the `MakeChange` method. The method is unable to complete successfully when the customer doesn't provide enough money. In other words, the operation fails.
+    If `changeNeeded` is less than zero, the customer has not provided enough money to cover the purchase price of the item they're buying. The purchase price and the money provided by the customer are parameters of the `MakeChange` method. The method is unable to complete the transaction when the customer doesn't provide enough money. In other words, the operation fails.
 
-    There are two exception types that appear to fit these conditions:
+    There are two exception types that appear to match these conditions:
 
     - `InvalidOperationException`: An `InvalidOperationException` exception should only be thrown when the operating conditions of a method don't support the successful completion of a particular method call. In this case the operating conditions are established by the parameters supplied to the method.
     - `ArgumentOutOfRangeException` - An `ArgumentOutOfRangeException` exception should only be thrown when the value of an argument is outside the allowable range of values as defined by the invoked method. In this case the money provided must be greater than the cost of the item.
 
-    Either option would work, but `InvalidOperationException` is probably a slightly better fit in this case.
+    Either exception type could work, but `InvalidOperationException` is a slightly better match in the context of this application.
 
 1. Update the code as follows:
 
@@ -102,7 +102,7 @@ The `MakeChange` method includes two issues that should result in exceptions:
 
 1. Take a minute to consider the issue that this code is addressing.
 
-    If `changeNeeded` is greater than zero after the `while` loops that prepare the change, then the till has run out of bills that can be used to make change. The method is unable to complete successfully when the till lack the bills required to make change. In other words, the operation fails.
+    If `changeNeeded` is greater than zero after the `while` loops that prepare the change, then the till has run out of bills that can be used to make change. The method is unable to complete the transaction when the till lacks the bills required to make change. In other words, the operation fails.
 
     The `InvalidOperationException` exception should be used to create the exception.
 
@@ -134,13 +134,13 @@ In this task, you'll update the `catch` clause to catch a specific exception typ
     }    
     ```
 
-    The `InvalidOperationException` exception object thrown in `MakeChange` will be caught, but other exception types will not be. Since you're not prepared to handle other exception types, it's important to let them be caught lower in the call stack. If you become aware that other exception types are expected within `MakeChange`, you can add additional `catch` clauses.
+    The `InvalidOperationException` exception object thrown in `MakeChange` will be caught, but other exception types won't. Since you're not prepared to handle other exception types, it's important to let them be caught lower in the call stack. If you become aware that other exception types are expected within `MakeChange`, you can add additional `catch` clauses.
 
 1. Use the **File** menu to save your updates.
 
 ## Convert the MakeChange method from "string" to "void" and access exception properties
 
-In this task, you'll update the `MakeChange` to be type `void`, and then use exception properties communicate issues to the user.
+In this task, you'll update `MakeChange` to be of type `void`, and then use exception properties to communicate issue details to the user.
 
 1. Scroll to the top of the `MakeChange` method.
 
@@ -198,6 +198,8 @@ In this task, you'll update the `MakeChange` to be type `void`, and then use exc
 
     ```
 
+    The `try` and `catch` code blocks are now communicating the transaction "success" and "failure" messages to the user. Since the exception's `Message` property describes the issue, a single `Console.WriteLine()` statement addresses both issues. Your code is easier to read and maintain after these updates.
+
 1. Use the **File** menu to save your updates.
 
 ## Check your work
@@ -215,7 +217,7 @@ In this task, you'll run your application and verify that your updated code work
     
     ```
 
-1. Update the number of transactions as follows:
+1. Update the number of transactions to `40` as follows:
 
     ```csharp
     int transactions = 40;
@@ -235,6 +237,8 @@ In this task, you'll run your application and verify that your updated code work
     int itemCost = valueGenerator.Next(2, 50);
 
     ```
+
+    This cost range is a better match for items that customers will be purchasing.
 
 1. Use the **File** menu to save your updates.
 
@@ -273,4 +277,4 @@ In this task, you'll run your application and verify that your updated code work
 Congratulations, you've debugged the cash register application to fix a code logic issue, and you've updated the application to use proper exception handling techniques.
 
 > [!NOTE]
-> You may notice that the till is no longer balanced. There are additional logic bugs in the code. A challenge project module available if you're interested in demonstrating your Visual Studio Code debugging skills!
+> The reported output shows that the money till is no longer balanced. There are additional logic bugs in the code. A challenge project module is available if you're interested in demonstrating your Visual Studio Code debugging skills!

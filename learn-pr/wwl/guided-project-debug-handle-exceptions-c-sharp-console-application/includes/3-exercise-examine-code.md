@@ -153,9 +153,9 @@ In this task, you complete a walkthrough of the Starter project code. The Progra
 
     The top-level statements code completes the following tasks:
 
-    - Configures the application data and the other environment variables used to test the `MackChange` method.
+    - Configures the application data and environment variables used to test the `MackChange` method.
     - Calls the `LoadTillEachMorning()`, `LogTillStatus()`, and `TillAmountSummary()` methods to prepare the money till and print status messages to the console.
-    - Uses `while` loop to simulate a series of transactions
+    - Uses a `while` loop to simulate a series of transactions.
     - Calls the `MackChange` method from inside the code block of the `while` loop.
     - Reports the status of the money till after each transaction.
 
@@ -234,7 +234,7 @@ In this task, you complete a walkthrough of the Starter project code. The Progra
 
     The `MakeChange` method manages the money till during each purchase transaction. The transaction process relies on the following resources and conditions:
 
-    - **Cash transaction**: The `MakeChange` method accepts a cash payment from the customer and then determines how many bills of each denomination must be returned to the customer in change. `MakeChange` must first ensure that the customer has provided enough money to cover the transaction. If the payment is sufficient, the "make change" process begins with the largest bill denomination and works down to the smallest denomination. At each stage, `MakeChange` ensures that the current denomination is less than the change owed. `MakeChange` ensures that a bill of the required denomination is available in the till before adding it to the change returned to the customer.
+    - **Cash transaction**: The `MakeChange` method accepts a cash payment from the customer and then determines how many bills of each denomination must be returned to the customer in change. `MakeChange` must first ensure that the customer has provided enough money to cover the transaction. If the payment is sufficient, the "make change" process begins with the largest bill denomination and works down to the smallest denomination. At each stage, `MakeChange` ensures that the current denomination is less than the change owed. `MakeChange` also ensures that a bill of the required denomination is available in the till before adding it to the change returned to the customer.
 
     - **Input parameters**: The `MakeChange` method uses the following input parameters:
 
@@ -410,9 +410,9 @@ In this task, you use the Visual Studio Code debugger tools to isolate and then 
     }    
     ```
 
-    The `cashTill[]` array is used to store the number of bills of each denomination that are currently available. Array element `1` is used to manage the number of five dollar bills in the till. The expression in the `while` statement refers to `cashTill[1]` correctly. However, the statement inside the code block decrements `cashTill[2]` rather than `cashTill[1]`. This index error means that a ten dollar bill is being removed from the till rather than a five dollar bill.
+    The `cashTill[]` array is used to store the number of bills of each denomination that are currently available. Array element `1` is used to manage the number of five dollar bills in the till. The expression in the `while` statement refers to `cashTill[1]` correctly. However, the statement inside the code block decrements `cashTill[2]` rather than `cashTill[1]`. Specifying an idex value of `2` means that a ten dollar bill is being removed from the till rather than a five dollar bill.
 
-1. Update the `while` statement code block as follows:
+1. Update the `while` code block as follows:
 
     ```csharp
     while ((changeNeeded > 4) && (cashTill[1] > 0))
