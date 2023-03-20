@@ -14,10 +14,10 @@ You should now have the information you need to determine if routing preference 
 
 ## References
 
-* [What is routing preference?](https://learn.microsoft.com/azure/virtual-network/ip-services/routing-preference-overview)
+* [What is routing preference?](/azure/virtual-network/ip-services/routing-preference-overview)
 
-* [What is Routing Preference Unmetered?](https://learn.microsoft.com/azure/virtual-network/ip-services/routing-preference-unmetered)
+* [What is Routing Preference Unmetered?](/azure/virtual-network/ip-services/routing-preference-unmetered)
 
-* [Configure routing preference for a public IP address using the Azure portal](https://learn.microsoft.com/azure/virtual-network/ip-services/routing-preference-portal)
+* [Configure routing preference for a public IP address using the Azure portal](/azure/virtual-network/ip-services/routing-preference-portal)
 
-* [Network routing preference for Azure Storage](https://learn.microsoft.com/en-us/azure/storage/common/network-routing-preference)
+* [Network routing preference for Azure Storage](/azure/storage/common/network-routing-preference)

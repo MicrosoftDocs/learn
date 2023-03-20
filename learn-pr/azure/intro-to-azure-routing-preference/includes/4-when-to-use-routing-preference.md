@@ -10,9 +10,8 @@ Here, well discuss how you can decide whether changing the routing preference of
 
 Routing preference helps alleviate network traffic costs in your subscription. The routing preference of "Internet" will minimize traffic on the Microsoft network by routing traffic to services hosted in Azure across the public Internet. Adjusting the routing preference to "Internet" might not be necessary for small organizations with a limited number of global locations or if network cost isn't an issue. Performance of network transfer must also be considered. The routing of traffic across the public Internet might perform slower than the "Microsoft" network option. Here's a discussion of each of these factors.
 
-|     |     |
-| --- | --- |
-| **Criteria** | **Analysis**|
+| **Criteria** | **Analysis** |
+| ------------ | ------------ |
 | **Cost savings** | Will changing the routing preference to "Internet" result in network traffic cost savings? </br> Ingress and egress traffic with "Internet" routing preference is cheaper than the routing preference of "Microsoft network". |
 | **Performance** | Does performance of the network traffic a concern? Traffic routed over the public Internet has performance comparable to other cloud providers. The optimal performance will always be with the default routing preference of "Microsoft network". |
 
