@@ -1,6 +1,6 @@
 
 
-All topics covered in the [MB-920: Microsoft Dynamics 365 Fundamentals (ERP)](https://aka.ms/MB920Exam) course are related to foundational knowledge of cloud services and how those services are provided with Microsoft Azure and map directly to [Exam MB-920: Microsoft Dynamics 365 Fundamentals (ERP)](https://aka.ms/MB920Exam). Percentages indicate the relative weight of each area on the exam. The higher the percentage, the more questions you are likely to see in that area. For the most up to date breakdown, access the [MB-920 Study Guide](https://aka.ms/MB920StudyGuide) from the [Exam MB-920: Microsoft Dynamics 365 Fundamentals (ERP)](https://aka.ms/MB920Exam) page.
+All topics covered in the [MB-920: Microsoft Dynamics 365 Fundamentals (ERP)](https://aka.ms/MB920Exam) course are related to foundational knowledge of cloud services and how those services are provided with Microsoft Azure and map directly to [Exam MB-920: Microsoft Dynamics 365 Fundamentals (ERP)](https://aka.ms/MB920Exam). Percentages indicate the relative weight of each area on the exam. The higher the percentage, the more questions you're likely to see in that area. For the most up to date breakdown, access the [MB-920 Study Guide](https://aka.ms/MB920StudyGuide) from the [Exam MB-920: Microsoft Dynamics 365 Fundamentals (ERP)](https://aka.ms/MB920Exam) page.
 
 Become familiar with the objective domains which are a comprehensive set of specific and measurable knowledge, skills, and abilities that are the basis for the development of both this course and the certification exam:
 
