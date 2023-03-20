@@ -1,7 +1,7 @@
 
 ## Task 1: Review Azure AD
 
-In this task, we will review Azure Active Directory licensing and tenants.
+In this task, we'll review Azure Active Directory licensing and tenants.
 
 1.  In the **Portal**, search for and select **Azure Active Directory**.
 2.  On the **Overview** page, locate the license information.
@@ -12,7 +12,7 @@ In this task, we will review Azure Active Directory licensing and tenants.
 > [!NOTE]
 > This task requires some users and groups to be populated. Dynamic groups requires a Premium P1 license.
 
-In this task, we will create users and groups.
+In this task, we'll create users and groups.
 
 1.  Under the **Manage** blade, click **Users**.
 2.  Review the different **Sources** such as **Windows Server AD**, **Invited User**, **Microsoft Account**, and **External Azure Active Directory**.
@@ -20,7 +20,7 @@ In this task, we will create users and groups.
 4.  Click **New user**.
 5.  Review the two ways to create a user: **Create user** and **Invite user**.
 6.  Create a new user. Review **Identity**, **Groups and roles**, **Settings**, and **Job Info**.
-7.  Going back to Azure AD, under **Manage** click **Groups**.
+7.  Navigate to Azure AD, under **Manage** click **Groups**.
 8.  Review the **Group types**: **Security** and **Microsoft 365**.
 9.  Create a new group by clicking "New Group" with the **Membership type** as **Assigned**.
 10. Add a user to the same group.
@@ -36,7 +36,7 @@ In this demonstration, we will configure and test MFA.
 
 ### Configure MFA
 
-In this task, we will enable MFA for a user.
+In this task, we'll enable MFA for a user.
 
 1.  In the **Portal**, search for and select **Azure Active Directory**.
 2.  Under **Manage** select **Security**.
@@ -54,11 +54,11 @@ In this task, we will enable MFA for a user.
 > [!NOTE]
 > To test MFA a phone number is required.
 
-In this task, we will test the MFA requirement.
+In this task, we'll test the MFA requirement.
 
 1.  Sign in to the **Portal** as **AZ500User1**. Use their user name from a previous step.
 2.  Provide the password, click **Next**.
-3.  Note that more information is required. Click **Next**.
+3.  More information is required. Click **Next**.
 4.  Review the **Additional security** verification page.
 5.  In Step 1, enter your phone number and ensure the **send me a code by text message** is selected.
 6.  Click **Next**.
@@ -68,6 +68,6 @@ In this task, we will test the MFA requirement.
 10. Click **Get started with this app password**.
 11. If prompted, **Allow access**.
 12. Click **Done**.
-13. On the **Update password** screen provide and confirm a new password.
+13. On the **Update password** screen, provide and confirm a new password.
 14. Click **Sign-in**.
 15. Confirm that you can now access the Portal.
