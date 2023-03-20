@@ -1,0 +1,61 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-exception-handling-c-sharp.examine-exceptions-exception-handling-process
+title: 'Examine exceptions and the exception handling process '
+metadata:
+  title: Examine exceptions and the exception handling process
+  description: "Examine exceptions and the exception handling process"
+  ms.date: 03/20/2023
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 11
+content: |
+  [!include[](includes/2-examine-exceptions-exception-handling-process.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following answer choices lists the C# keywords used for exception handling?"
+    choices:
+    - content: "`try`, `catch`, and `finally`."
+      isCorrect: false
+      explanation: "Incorrect. The `try`, `catch`, and `finally` keywords are used for exception handling in C#, but this isn't the complete list."
+    - content: "`try`, `catch`, `finally`, and `throw`."
+      isCorrect: true
+      explanation: "Correct. The `try`, `catch`, `finally`, and `throw` keywords are used for exception handling in C#."
+    - content: "`try`, `catch`, and `throw`."
+      isCorrect: false
+      explanation: "Incorrect. the `try`, `catch`, and `throw` keywords are used for exception handling in C#, but this isn't the complete list."
+  - content: "What does the `try` code block contain?"
+    choices:
+    - content: "The code that cleans up resources and is executed whether an exception occurs or not."
+      isCorrect: false
+      explanation: "Incorrect. The `finally` code block contains the code that cleans up resources and is executed whether an exception occurs or not."
+    - content: "The code that throws an exception object."
+      isCorrect: false
+      explanation: "Incorrect. The `try` code block isn't used to throw an exception object."
+    - content: "The code that may cause an exception."
+      isCorrect: true
+      explanation: "Correct. The `try` code block contains the guarded code that may cause an exception."
+  - content: "What is the purpose of the `catch` code block?"
+    choices:
+    - content: "To clean up any resources that are allocated in a `try` block."
+      isCorrect: false
+      explanation: "Incorrect. The `catch` code block isn't used to clean up resources."
+    - content: "To handle the exception, log it, or ignore it."
+      isCorrect: true
+      explanation: "Correct. The `catch` code block contains the code that's executed when an exception is caught. The catch block can handle the exception, log it, or ignore it."
+    - content: "To execute code that may cause an exception."
+      isCorrect: false
+      explanation: "Incorrect. The `catch` code block isn't used to execute code that may cause an exception."
+  - content: "What is the purpose of the `finally` block?"
+    choices:
+    - content: "To execute code that may cause an exception."
+      isCorrect: false
+      explanation: "Incorrect. The `finally` code block is not used to execute code that may cause an exception."
+    - content: "To handle the exception, log it, or ignore it."
+      isCorrect: false
+      explanation: "Incorrect. The `finally` code block is not used to handle the exception, log it, or ignore it."
+    - content: "To clean up any resources that are allocated in a `try` block."
+      isCorrect: true
+      explanation: "Correct. The `finally` block is often used to clean up any resources that are allocated in a `try` block. The `finally` code block contains code that executes whether an exception occurs or not."
