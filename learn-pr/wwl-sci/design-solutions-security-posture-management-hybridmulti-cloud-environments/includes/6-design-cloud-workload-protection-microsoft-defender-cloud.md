@@ -1,4 +1,4 @@
-For an overview of how Defender for cloud integrates posture management and workload protections, see [[Design integrated security posture management and workload protection solutions in hybrid and multi-cloud environments]].
+For an overview of how Defender for cloud integrates posture management and workload protections, see [[Design integrated security posture management and workload protection solutions in hybrid and multicloud environments]].
 
 Defender for cloud has workload protections in 7 main areas:
 

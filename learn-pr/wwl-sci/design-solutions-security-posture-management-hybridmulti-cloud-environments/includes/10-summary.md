@@ -1,7 +1,7 @@
 You've learned:
 
 - Evaluate security posture by using Microsoft Cloud Security Benchmark, Microsoft Defender for Cloud, and Secure Scores
-- Design integrated security posture management and workload protection solutions in hybrid and multi-cloud environments
+- Design integrated security posture management and workload protection solutions in hybrid and multicloud environments
 - Design cloud workload protection solutions that use Microsoft Defender for Cloud
 
 ## Learn more with security documentation

@@ -1,7 +1,7 @@
 In this module, you'll learn how to:
 
 - Evaluate security posture by using Microsoft Cloud Security Benchmark, Microsoft Defender for Cloud, and Secure Scores
-- Design integrated security posture management and workload protection solutions in hybrid and multi-cloud environments
+- Design integrated security posture management and workload protection solutions in hybrid and multicloud environments
 - Design cloud workload protection solutions that use Microsoft Defender for Cloud
 
 The content in the module helps you prepare for the certification exam SC-100: Microsoft Cybersecurity Architect.
