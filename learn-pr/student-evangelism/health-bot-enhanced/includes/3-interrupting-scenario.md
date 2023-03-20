@@ -8,7 +8,7 @@ Let's start by creating an interrupting bot. After that, we'll connect it to the
 
 1. Configure the scenario with the following details:
 
-   :::image type="content" source="../media/3-health-bot-create-interrupting-scenario.png" alt-text="Screenshot that shows the selections for configuring a scenario." lightbox="../media/3-health-bot-create-interrupting-scenario.png":::
+   :::image type="content" source="../media/3-health-bot-create-interrupt-scenario.png" alt-text="Screenshot that shows the selections for configuring a scenario." lightbox="../media/3-health-bot-create-interrupt-scenario.png":::
 
    - **Name**: Enter any unique name. We've used **Intermediate Bot 1** in this example.
    - **Description**: Enter a description of what the bot does. We've used **Simple bot to collect the vitals from patient**.
@@ -50,7 +50,7 @@ Along with creating a new scenario for the bot, we need to create a new model.
 
 In this module, we're using the basic bot scenario that we created earlier to demonstrate the interrupting and breaking scenarios. Before moving ahead, we need to make some changes to the scenario.
 
-:::image type="content" source="../media/3-health-bot-add-prompt-interrupting.png" alt-text="Screenshot that shows changes to the basic bot." lightbox="../media/3-health-bot-add-prompt-interrupting.png":::
+:::image type="content" source="../media/3-health-bot-add-prompt-interrupt.png" alt-text="Screenshot that shows changes to the basic bot." lightbox="../media/3-health-bot-add-prompt-interrupt.png":::
 
 Open the basic bot scenario and add a **Prompt** item immediately to the right of the switch branches. The prompt asks for the entry of the **vitals** keyword to record the patient's information. The **vitals** keyword triggers an interrupting scenario. For the display text, enter:
 

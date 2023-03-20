@@ -8,7 +8,7 @@ Let's start by creating a second interrupting bot that works like a breaking sce
 
 1. Configure the scenario with the following details:  
 
-   :::image type="content" source="../media/4-health-bot-create-breaking-scenario.png" alt-text="Screenshot that shows the selections for configuring a breaking scenario.":::
+   :::image type="content" source="../media/4-health-bot-create-break-scenario.png" alt-text="Screenshot that shows the selections for configuring a breaking scenario.":::
 
    - **Name:** Enter **Intermediate Bot 2**.
    - **Description:** Enter **An interrupting bot which checks the patient's temperature and breaks**.
@@ -21,7 +21,7 @@ Let's start by creating a second interrupting bot that works like a breaking sce
 
 You can now create a scenario to collect temperature information from the patient, based on your learnings from the previous sections.
 
-:::image type="content" source="../media/4-health-bot-edit-breaking-scenario.png" alt-text="Screenshot of the editor view of a bot that collects temperature information.":::
+:::image type="content" source="../media/4-health-bot-edit-break-scenario.png" alt-text="Screenshot of the editor view of a bot that collects temperature information.":::
 
 ## Create a model for the breaking scenario
 
