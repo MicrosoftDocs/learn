@@ -44,7 +44,7 @@ To complete this article, you need the following resources:
     -   **LDAP Signing**
     -   **LDAP Channel Binding**
     
-    ![Screenshot of Security settings to disable weak ciphers and NTLM password hash sync](https://learn.microsoft.com/azure/active-directory-domain-services/media/secure-your-domain/security-settings.png)
+    ![Screenshot of Security settings to disable weak ciphers and NTLM password hash sync.](https://learn.microsoft.com/azure/active-directory-domain-services/media/secure-your-domain/security-settings.png)
     
 
 <!--[](https://learn.microsoft.com/azure/active-directory-domain-services/secure-your-domain#assign-azure-policy-compliance-for-tls-12-usage)-->
@@ -56,7 +56,7 @@ In addition to **Security settings**, Microsoft Azure Policy has a **Complianc
 -   If the assignment is **Audit**, the compliance will report if the Azure AD DS instance is compliant.
 -   If the assignment is **Deny**, the compliance will prevent an Azure AD DS instance from being created if TLS 1.2 is not required and prevent any update to an Azure AD DS instance until TLS 1.2 is required.
 
-![Screenshot of Compliance settings](https://learn.microsoft.com/azure/active-directory-domain-services/media/secure-your-domain/policy-tls.png)
+![Screenshot of Compliance settings.](https://learn.microsoft.com/azure/active-directory-domain-services/media/secure-your-domain/policy-tls.png)
 
 <!--[](https://learn.microsoft.com/azure/active-directory-domain-services/secure-your-domain#audit-ntlm-failures)-->
 

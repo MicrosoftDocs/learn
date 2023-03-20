@@ -23,5 +23,5 @@ You've learned how to:
 
 - [Azure AD security for AWS - Azure Architecture Center](https://learn.microsoft.com/azure/architecture/reference-architectures/aws/aws-azure-ad-security)
 
-> ![Note]
+> [!NOTE]
 > This modules contains AI-generated content.

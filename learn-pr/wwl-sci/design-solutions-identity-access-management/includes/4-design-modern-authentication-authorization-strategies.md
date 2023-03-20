@@ -1,9 +1,9 @@
 This unit will address a few specific strategies for modern authentication:
 
-1. Conditional access
-1. Continuous access authentication
-1. Threat intelligence integration
-1. Risk scoring
+- Conditional access
+- Continuous access authentication
+- Threat intelligence integration
+- Risk scoring
 
 ## Conditional Access
 
