@@ -2,17 +2,17 @@
 uid: learn.design-solutions-identity-access-management
 metadata:
   title: Design solutions for identity and access management
-  description: "You'll learn about various strategies for managing identities and access to resources, including hybrid and multi-cloud scenarios, external identities, and conditional access."
+  description: "You learn about various strategies for managing identities and access to resources, including hybrid and multicloud scenarios, external identities, and conditional access."
   ms.date: 3/14/2023
   author: hrasheed-msft
   ms.author: hrasheed
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 title: Design solutions for identity and access management
-summary: "You'll learn about various strategies for managing identities and access to resources, including hybrid and multi-cloud scenarios, external identities, and conditional access."
+summary: "You learn about various strategies for managing identities and access to resources, including hybrid and multicloud scenarios, external identities, and conditional access."
 abstract: |
-  By the end of this module, you'll be able to:
-  -   Design cloud, hybrid and multi-cloud access strategies
+  By the end of this module, you are able to:
+  -   Design cloud, hybrid and multicloud access strategies
   -   Design a solution for Azure Active Directory (Azure AD), part of Microsoft Entra
   -   Design a solution for external identities
   -   Design modern authentication and authorization strategies
