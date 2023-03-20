@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.design-solutions-securing-privileged-access
+uid: learn.design-solutions-secure-privileged-access
 metadata:
   title: Design solutions for securing privileged access
   description: "You learn advanced techniques for designing solutions that manage privileged access effectively."
@@ -35,13 +35,13 @@ subjects:
   - security
   - cloud-security
 units:
-- learn.design-solutions-securing-privileged-access.introduction-privileged-access
-- learn.design-solutions-securing-privileged-access.enterprise-access-model
-- learn.design-solutions-securing-privileged-access.design-identity-governance-solutions
-- learn.design-solutions-securing-privileged-access.design-solution-secure-tenant-administration
-- learn.design-solutions-securing-privileged-access.design-solution-cloud-infrastructure-entitlement-management
-- learn.design-solutions-securing-privileged-access.design-solution-privileged-access-workstations-bastion-services
-- learn.design-solutions-securing-privileged-access.knowledge-check
-- learn.design-solutions-securing-privileged-access.summary
+- learn.design-solutions-secure-privileged-access.introduction-privileged-access
+- learn.design-solutions-secure-privileged-access.enterprise-access-model
+- learn.design-solutions-secure-privileged-access.design-identity-governance-solutions
+- learn.design-solutions-secure-privileged-access.design-solution-secure-tenant-administration
+- learn.design-solutions-secure-privileged-access.design-solution-cloud-infrastructure-entitlement-management
+- learn.design-solutions-secure-privileged-access.design-solution-privileged-access-workstations-bastion-services
+- learn.design-solutions-secure-privileged-access.knowledge-check
+- learn.design-solutions-secure-privileged-access.summary
 badge:
-  uid: learn.design-solutions-securing-privileged-access.badge
+  uid: learn.design-solutions-secure-privileged-access.badge

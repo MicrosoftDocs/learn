@@ -4,7 +4,7 @@ Privileged access strategy is part of an overall enterprise access control strat
 
 The primary stores of business value that an organization must protect are in the Data/Workload plane:
 
-![Data/workload plane](https://github.com/MicrosoftDocs/security/raw/main/privileged-access-workstations/media/privileged-access-strategy/data-workload-plane.png)
+![Diagram that shows the data/workload plane.](../media/data-workload-plane.png)
 
 The applications and data typically store a large percentage of an organization's:
 
@@ -13,17 +13,17 @@ The applications and data typically store a large percentage of an organization'
 
 The enterprise IT organization manages and supports the workloads and the infrastructure they are hosted on, whether it's on-premises, on Azure, or a third-party cloud provider, creating a **management plane**. Providing consistent access control to these systems across the enterprise requires a **control plane** based on centralized enterprise identity system(s), often supplemented by network access control for older systems like operational technology (OT) devices.
 
-![Control, management, and data/workload planes](https://github.com/MicrosoftDocs/security/raw/main/privileged-access-workstations/media/privileged-access-strategy/control-management-data-workload-planes.png)
+![Diagram that shows the control, management, and data/workload planes.](../media/control-management-data-workload-planes.png)
 
 Each of these planes has control of the data and workloads by virtue of their functions, creating an attractive pathway for attackers to abuse if they can gain control of either plane.
 
 For these systems to create business value, they must be accessible to internal users, partners, and customers using their workstations or devices (often using remote access solutions) - creating **user access** pathways. They must also frequently be available programmatically via application programming interfaces (APIs) to facilitate process automation, creating **application access** pathways.
 
-![Adding user and application access pathways](https://github.com/MicrosoftDocs/security/raw/main/privileged-access-workstations/media/privileged-access-strategy/user-app-control-management-data-workload-planes.png)
+![Diagram that shows adding user and application access pathways.](../media/user-app-control-management-data-workload-planes.png)
 
 Finally, these systems must be managed and maintained by IT staff, developers, or others in the organizations, creating **privileged access** pathways. Because of the high level of control they provide over business critical assets in the organization, these pathways must be stringently protected against compromise.
 
-![Privileged access pathway to manage and maintain](https://github.com/MicrosoftDocs/security/raw/main/privileged-access-workstations/media/privileged-access-strategy/privileged-access-over-underlying-planes.png)
+![Diagram that shows privileged access pathway to manage and maintain.](../media/privileged-access-over-underlying-planes.png)
 
 Providing consistent access control in the organization that enables productivity and mitigates risk requires you to
 
@@ -46,11 +46,11 @@ Providing consistent access control in the organization that enables productivit
 
 The enterprise access model supersedes and replaces the legacy tier model that was focused on containing unauthorized escalation of privilege in an on-premises Windows Server Active Directory environment.
 
-![Legacy AD tier model](https://github.com/MicrosoftDocs/security/raw/main/privileged-access-workstations/media/privileged-access-strategy/legacy-tier-model.png)
+![Diagram that shows the legacy AD tier model](../media/legacy-tier-model.png)
 
 The enterprise access model incorporates these elements as well as full access management requirements of a modern enterprise that spans on-premises, multiple clouds, internal or external user access, and more.
 
-![Complete enterprise access model from old tiers](https://github.com/MicrosoftDocs/security/blob/main/privileged-access-workstations/media/privileged-access-strategy/legacy-tier-model-comparison-new.png)
+![Diagram that shows the complete enterprise access model from old tiers](../media/legacy-tier-model-comparison-new.png)
 
 ### Tier 0 scope expansion
 

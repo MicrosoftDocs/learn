@@ -11,7 +11,7 @@ With Azure Lighthouse, service providers can deliver managed services using [co
 
 [Cross-tenant management experiences](https://learn.microsoft.com/azure/lighthouse/concepts/cross-tenant-management-experience) let you work more efficiently with Azure services such as [Azure Policy](https://learn.microsoft.com/azure/lighthouse/how-to/policy-at-scale), [Microsoft Sentinel](https://learn.microsoft.com/azure/lighthouse/how-to/manage-sentinel-workspaces), [Azure Arc](https://learn.microsoft.com/azure/lighthouse/how-to/manage-hybrid-infrastructure-arc), and many more. Users can see what changes were made and by whom [in the activity log](https://learn.microsoft.com/azure/lighthouse/how-to/view-service-provider-activity), which is stored in the customer's tenant and can be viewed by users in the managing tenant.
 
-![Overview diagram of Azure Lighthouse](https://learn.microsoft.com/azure/lighthouse/media/azure-lighthouse-overview.jpg)
+![Diagram that shows an overview of Azure Lighthouse](https://learn.microsoft.com/azure/lighthouse/media/azure-lighthouse-overview.jpg)
 <!-- 
 [](https://learn.microsoft.com/azure/lighthouse/overview#benefits)
 -->
@@ -42,7 +42,7 @@ Your Microsoft 365 tenant also includes an Azure Active Directory (Azure AD) ten
 
 Here is an example:
 
-![An example Microsoft 365 tenant with its Azure AD tenant.](https://learn.microsoft.com/microsoft-365/media/tenant-management-overview/tenant-management-example-tenant.png?view=o365-worldwide)
+![Diagram that shows an example Microsoft 365 tenant with its Azure AD tenant.](../media/tenant-management-example-tenant.png)
 
 _Tenant management_ is the planning, deployment, and ongoing operation of your Microsoft 365 tenants.
 <!-- 
@@ -74,7 +74,7 @@ Here are the elements:
 
 Here is an example of a Microsoft 365 tenant with all these elements in place.
 
-![An example Microsoft 365 tenant.](https://learn.microsoft.com/microsoft-365/media/tenant-management-overview/tenant-management-tenant-config.png?view=o365-worldwide)
+![Diagram that shows an example Microsoft 365 tenant.](../media/tenant-management-tenant-config.png)
 
 In this illustration, the Microsoft 365 tenant includes:
 

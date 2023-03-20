@@ -9,7 +9,7 @@ Organizations have to consider permissions management as a central piece of thei
 -   IT security teams are under increased pressure to ensure access to their expanding cloud estate is secure and compliant.
 -   The inconsistency of cloud providers' native access management models makes it even more complex for Security and Identity to manage permissions and enforce least privilege access policies across their entire environment.
 
-[![Diagram of Microsoft Entra Permissions Management use cases.](https://learn.microsoft.com/azure/active-directory/cloud-infrastructure-entitlement-management/media/overview/key-use-cases.png)](https://learn.microsoft.com/azure/active-directory/cloud-infrastructure-entitlement-management/media/overview/key-use-cases.png#lightbox)
+![Diagram that shows Microsoft Entra Permissions Management use cases.](../media/key-use-cases.png)
 
 ## Key use cases
 
@@ -17,7 +17,7 @@ Permissions Management allows customers to address three key use cases: _discov
 
 Permissions Management has been designed in such a way that we recommended you 'step-through' each of the below phases in order to gain insights into permissions across the organization. This is because you generally can't action what is yet to be discovered, likewise you can't continually evaluate what is yet to be remediated.
 
-[![Use case for Permissions Management.](https://learn.microsoft.com/azure/active-directory/cloud-infrastructure-entitlement-management/media/overview/discover-remediate-monitor.png)](https://learn.microsoft.com/azure/active-directory/cloud-infrastructure-entitlement-management/media/overview/discover-remediate-monitor.png#lightbox)
+![Diagram that shows use case for Permissions Management.](../media/discover-remediate-monitor.png)
 <!-- 
 [](https://learn.microsoft.com/azure/active-directory/cloud-infrastructure-entitlement-management/overview#discover)
 -->

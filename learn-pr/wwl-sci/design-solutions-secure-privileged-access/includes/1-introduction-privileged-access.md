@@ -22,7 +22,7 @@ Attackers frequently exploit weaknesses in privileged access security during [h
 
 The following diagram summarizes the recommended privileged access strategy to create an isolated virtual zone that these sensitive accounts can operate in with low risk.
 
-![An end to end approach is required for meaningful security](https://learn.microsoft.com/security/privileged-access-workstations/media/overview/end-to-end-approach.png)
+![Diagram that shows an end to end approach is required for meaningful security.](../media/end-to-end-approach.png)
 
 Securing privileged access effectively seals off unauthorized pathways completely and leaves a select few authorized access pathways that are protected and closely monitored. This diagram is discussed in more detail in the article, [Privileged Access Strategy](https://learn.microsoft.com/security/privileged-access-workstations/privileged-access-strategy).
 
