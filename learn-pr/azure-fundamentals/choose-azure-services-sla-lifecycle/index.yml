@@ -2,7 +2,7 @@
 uid: learn.azure.choose-azure-services-sla-lifecycle
 metadata:
   title: Choose the right Azure services by examining SLAs and service lifecycle
-  description: "<div|<span style=\"color:rgb(3, 47, 98);font-family:SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace;font-size:12px;display:inline !important;\"|Learn about service-level agreements (SLAs) in Azure, and how they can affect your application design decisions. See how to access preview services and learn how they affect your planning. Prepare for AZ-900.</span| </div|"
+  description: "Learn about service-level agreements (SLAs) in Azure, and how they can affect your application design decisions. See how to access preview services and learn how they affect your planning. Prepare for AZ-900."
   ms.date: 03/20/2023
   author: wwlpublish
   ms.author: robbarefoot
