@@ -20,7 +20,7 @@ This section provides a summary of the security controls for [Endpoint security 
 
 Endpoint Security covers controls in endpoint detection and response, including use of endpoint detection and response (EDR) and anti-malware service for endpoints in cloud environments.
 <!-- 
-[](https://learn.microsoft.com/en-us/security/benchmark/azure/mcsb-endpoint-security#es-1-use-endpoint-detection-and-response-edr)
+[](https://learn.microsoft.com/security/benchmark/azure/mcsb-endpoint-security#es-1-use-endpoint-detection-and-response-edr)
 -->
 
 ### ES-1: Use Endpoint Detection and Response (EDR)

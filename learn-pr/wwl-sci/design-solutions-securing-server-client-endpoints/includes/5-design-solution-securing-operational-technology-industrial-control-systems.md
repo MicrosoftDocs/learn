@@ -8,9 +8,9 @@ Microsoft Defender for IoT is a unified security solution built specifically to 
 
 Defender for IoT provides agentless, network layer monitoring, and integrates with both industrial equipment and security operation center (SOC) tools.
 
-![Diagram showing an example of Defender for IoT's end-to-end coverage solution.](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/media/overview/end-to-end-coverage.png)
+![Diagram showing an example of Defender for IoT's end-to-end coverage solution.](https://learn.microsoft.com/azure/defender-for-iot/organizations/media/overview/end-to-end-coverage.png)
 <!--
-[](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/overview#agentless-device-monitoring)
+[](https://learn.microsoft.com/azure/defender-for-iot/organizations/overview#agentless-device-monitoring)
 
 -->
 
@@ -35,7 +35,7 @@ Defender for IoT uses agentless monitoring to provide visibility and security ac
 
 Defender for IoT's centralized user experience in the Azure portal lets the security and OT monitoring teams visualize and secure all their IT, IoT, and OT devices regardless of where the devices are located.
 <!--
-[](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/overview#support-for-cloud-on-premises-and-hybrid-ot-networks)
+[](https://learn.microsoft.com/azure/defender-for-iot/organizations/overview#support-for-cloud-on-premises-and-hybrid-ot-networks)
 
 -->
 
@@ -50,7 +50,7 @@ Install OT network sensors on-premises, at strategic locations in your network t
 -   **Hybrid services**: You may have hybrid network requirements where you can deliver some data to the cloud and other data must remain on-premises. In this case, set up your system in a flexible and scalable configuration to fit your needs. Connect some of your OT sensors to the cloud and view data on the Azure portal, and keep other sensors managed on-premises only.
     
 <!--
-[](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/overview#extend-support-to-proprietary-ot-protocols)
+[](https://learn.microsoft.com/azure/defender-for-iot/organizations/overview#extend-support-to-proprietary-ot-protocols)
 -->
 ## Extend support to proprietary OT protocols
 
@@ -62,7 +62,7 @@ Create custom alerts for your plugin to pinpoint specific network activity and e
 -   Any access is performed to a specific IP address.
 
 <!--
-[](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/overview#protect-enterprise-iot-networks)
+[](https://learn.microsoft.com/azure/defender-for-iot/organizations/overview#protect-enterprise-iot-networks)
 -->
 ## Protect enterprise IoT networks
 

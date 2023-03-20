@@ -1,10 +1,10 @@
 Managing devices is a significant part of any endpoint management strategy and solution. Organizations have to manage laptops, tablets, mobile phones, wearables, and more. It can be a large task, especially if you're not sure where to start.
 
-Enter Microsoft Intune. Intune is a cloud-based service that can control devices through policy, including security policies. For more information on Intune and its benefits, go to [What is Microsoft Intune?](https://learn.microsoft.com/en-us/mem/intune/fundamentals/what-is-intune).
+Enter Microsoft Intune. Intune is a cloud-based service that can control devices through policy, including security policies. For more information on Intune and its benefits, go to [What is Microsoft Intune?](https://learn.microsoft.com/mem/intune/fundamentals/what-is-intune).
 
 The goal of any organization that's managing devices is to secure devices and the data they access. This task includes organization owned devices and personally owned devices that access your organization resources.
 
-From a service perspective, Intune uses Azure Active Directory (AD) for device storage and permissions. Using the [Microsoft Intune admin center](https://learn.microsoft.com/en-us/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager), you can manage device tasks and policies in a central location designed for endpoint management.
+From a service perspective, Intune uses Azure Active Directory (AD) for device storage and permissions. Using the [Microsoft Intune admin center](https://learn.microsoft.com/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager), you can manage device tasks and policies in a central location designed for endpoint management.
 
 This article discusses concepts and features you should consider when managing your devices.
 
