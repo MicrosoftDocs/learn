@@ -1,5 +1,5 @@
 
-Add new users or delete existing users from your Azure Active Directory (Azure AD) tenant. To **add** or **delete** users, you must be a **User Administrator** or **Global Administrator**.
+Add new users or delete existing users from your Azure Active Directory (**Azure AD**) tenant. To **add** or **delete** users, you must be a **User Administrator** or **Global Administrator**.
 
 > [!NOTE]
 > For information about **viewing** or **deleting** personal data, please review Microsoft's guidance on the Windows data subject requests for the **General Data Protection Regulation** (**GDPR**) site. For general information about GDPR, see the **GDPR section** of **the Microsoft Trust Center** and the **GDPR section of the Service Trust portal**.
@@ -34,7 +34,7 @@ You can also invite the new guest user to collaborate with your organization by 
 
 ## Add other users
 
-There might be scenarios where you want to manually create consumer accounts in your Azure Active Directory B2C (Azure AD B2C) directory. If you have an environment with Azure Active Directory (cloud) and Windows Server Active Directory (on-premises), you can add new users by syncing the existing user account data.
+There might be scenarios where you want to manually create consumer accounts in your Azure Active Directory B2C (**Azure AD B2C**) directory. If you have an environment with Azure Active Directory (**cloud**) and Windows Server Active Directory (**on-premises**), you can add new users by syncing the existing user account data.
 
 ## Delete a user
 
