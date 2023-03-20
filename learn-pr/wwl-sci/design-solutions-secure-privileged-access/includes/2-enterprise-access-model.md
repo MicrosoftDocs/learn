@@ -46,7 +46,7 @@ Providing consistent access control in the organization that enables productivit
 
 The enterprise access model supersedes and replaces the legacy tier model that was focused on containing unauthorized escalation of privilege in an on-premises Windows Server Active Directory environment.
 
-![Diagram that shows the legacy AD tier model](../media/legacy-tier-model.png)
+![Diagram that shows the legacy AD tier model.](../media/legacy-tier-model.png)
 
 The enterprise access model incorporates these elements as well as full access management requirements of a modern enterprise that spans on-premises, multiple clouds, internal or external user access, and more.
 
