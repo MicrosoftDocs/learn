@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.design-resiliency-strategy-common-cyberthreats-like-ransomware.common-cyberthreats-and-attack-patterns
+uid: learn.design-resiliency-strategy-common-cyberthreats-like-ransomware.common-cyberthreats-attack-patterns
 title: Common cyberthreats and attack patterns
 metadata:
   title: introduction
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 1
 content: |
-  [!include[](includes/1-common-cyberthreats-and-attack-patterns.md)]
+  [!include[](includes/1-common-cyberthreats-attack-patterns.md)]

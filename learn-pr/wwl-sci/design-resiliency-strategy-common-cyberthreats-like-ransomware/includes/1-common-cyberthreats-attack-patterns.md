@@ -65,7 +65,7 @@ An attack chain describes the typical chain of events during an attack that lead
 
 The MCRA includes an attack chain diagram that depicts common techniques related to both external attacks and insider risks, as shown below.
 
-![Diagram of an attack chain M C R A depicting both external attacks and insider risks.](../media/mcra-attack-chain.png)
+![Diagram of an attack chain M C R A depicting both external attacks and insider risks.](../media/microsoft-cybersecurity-reference-architecture-attack-chain.png)
 
 The top portion of this diagram represents common steps seen in many
 external attacks and the Microsoft capabilities that map to each step.

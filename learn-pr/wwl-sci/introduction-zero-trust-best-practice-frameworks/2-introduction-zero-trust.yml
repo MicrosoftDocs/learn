@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
-uid: learn.design-resiliency-strategy-common-cyberthreats-like-ransomware.configurations-for-secure-backup-and-restore
-title: Configurations for secure backup and restore
+uid: learn.introduction-zero-trust-best-practice-frameworks.introduction-zero-trust
+title: introduction-zero-trust
 metadata:
   title: learning-content
   description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
@@ -9,6 +9,6 @@ metadata:
   ms.author: hrasheed
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
-durationInMinutes: 1
+durationInMinutes: 5
 content: |
-  [!include[](includes/4-configurations-for-secure-backup-and-restore.md)]
+  [!include[](includes/2-introduction-zero-trust.md)]

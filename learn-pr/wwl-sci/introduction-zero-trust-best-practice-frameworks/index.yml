@@ -34,8 +34,8 @@ subjects:
   - security
   - cloud-security
 units:
-- learn.introduction-zero-trust-best-practice-frameworks.introduction-to-best-practices
-- learn.introduction-zero-trust-best-practice-frameworks.introduction-to-zero-trust
+- learn.introduction-zero-trust-best-practice-frameworks.introduction-best-practices
+- learn.introduction-zero-trust-best-practice-frameworks.introduction-zero-trust
 - learn.introduction-zero-trust-best-practice-frameworks.zero-trust-initiatives
 - learn.introduction-zero-trust-best-practice-frameworks.zero-trust-technology-pillars-1
 - learn.introduction-zero-trust-best-practice-frameworks.zero-trust-technology-pillars-2

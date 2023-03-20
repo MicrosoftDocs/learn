@@ -35,10 +35,10 @@ subjects:
   - security
   - cloud-security
 units:
-- learn.design-resiliency-strategy-common-cyberthreats-like-ransomware.common-cyberthreats-and-attack-patterns
+- learn.design-resiliency-strategy-common-cyberthreats-like-ransomware.common-cyberthreats-attack-patterns
 - learn.design-resiliency-strategy-common-cyberthreats-like-ransomware.support-business-resiliency
 - learn.design-resiliency-strategy-common-cyberthreats-like-ransomware.ransomware-protection
-- learn.design-resiliency-strategy-common-cyberthreats-like-ransomware.configurations-for-secure-backup-and-restore
+- learn.design-resiliency-strategy-common-cyberthreats-like-ransomware.configurations-secure-backup-restore
 - learn.design-resiliency-strategy-common-cyberthreats-like-ransomware.security-updates
 - learn.design-resiliency-strategy-common-cyberthreats-like-ransomware.knowledge-check
 - learn.design-resiliency-strategy-common-cyberthreats-like-ransomware.summary
