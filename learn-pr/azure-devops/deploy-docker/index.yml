@@ -6,7 +6,7 @@ metadata:
   ms.date: 03/13/2023
   author: ramiMSFT
   ms.author: rabououn
-  ms.custom: devdivchpfy22
+  ms.custom: devdivchpfy22, engagement-fy23
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Automate Docker container deployments with Azure Pipelines
