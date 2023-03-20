@@ -14,74 +14,67 @@ Follow these steps to build a database:
 
    :::image type="content" source="../media/2-create-database.png" alt-text="Screenshot of the Create SQL Database page." lightbox="../media/2-create-database.png":::
 
-1. Use the following information to configure the SQL Database fields:
+1. Use the following information to configure the SQL Database:
 
     - **Subscription**: Select your subscription.
     - **Resource group**: Select **Create new** and enter a unique name for the resource group, such as *Healthbot*. Then select **OK**.
     - **Database name**: Name your database. We'll name our database *healthbot*.
-
-      :::image type="content" source="../media/2-create-sql-server.png" alt-text="Screenshot showing how to create a server." lightbox="../media/2-create-sql-server.png":::
-
-    - **Server**: Select **Create new**. Then fill in the fields:
+    - **Server**: Select **Create new**, and then fill in the following:
 
        - **Server name**: Add a server name, such as *healthbot*.
        - **Server admin login**: Add a username, such as *learnbot*.
+       - **Location**: Select a location close to you.
+       - **Authentication method**: Select **Use SQL authentication**.
        - **Password**: Add a unique password for the server. We'll use *healthbot@123*.
        - **Confirm password**: Retype the password you provided in the **Password** field.
-       - **Location**: Select **(US) West US**.
        - Select **OK**.
 
-   - **Want to use SQL elastic pool?**: Select **No**.
+        :::image type="content" source="../media/2-health-bot-create-sql-server.png" alt-text="Screenshot showing how to create a server.":::
 
-     :::image type="content" source="../media/2-database-compute.png" alt-text="Screenshot showing setup options for the SQL database." lightbox="../media/2-database-compute.png":::
+    - **Want to use SQL elastic pool?**: Select **No**.
 
-   - **Compute + storage**: Select **Configure database**. Then select **Looking for basic, standard, premium?**.
+    - **Compute + storage**: Select **Configure database**. Select **Service tier**.
 
-      :::image type="content" source="../media/2-compute-categories.png" alt-text="Screenshot showing categories of compute plans." lightbox="../media/2-compute-categories.png":::
+      :::image type="content" source="../media/2-health-bot-database-size.png" alt-text="Screenshot that shows selecting the Basic compute plan.":::
 
-   - Select the **Basic** option. Note its cost. Then select **Apply**.
+    - Select the **Basic** option from the drop-down. Note its cost. Then select **Apply**.
 
-   - **Backup storage redundancy**: Select **Geo-redundant backup storage**.
+    - **Backup storage redundancy**: Select **Geo-redundant backup storage**.
 
-1. Select **Review + create**. 
+1. Select **Review + create**.
 
    :::image type="content" source="../media/2-database-review-create.png" alt-text="Screenshot showing the review of the database. The Review + create button is selected." lightbox="../media/2-database-review-create.png":::
 
 1. On the summary page that appears, make sure you entered all details accurately. Then select **Create**.
 
-1. After the deployment succeeds, select the SQL database you created.
+1. After the deployment succeeds, select **Go to resource**.
 
-1. Note down the server name that's listed under **Essentials**.
+1. Make a note of the server name that's listed under **Essentials**.
 
    :::image type="content" source="../media/2-query-editor.png" alt-text="Screenshot showing the database's query editor. The server name is listed on the right." lightbox="../media/2-query-editor.png":::
 
-1. In the menu on the left, select **Query editor (preview)**. Then enter the credentials you created in the previous steps. (**Login ID**: *learnbot*, **Password**: *healthbot@123*)
+1. Return to the **Overview** page of the SQL database, and then select **Set server firewall**.
 
-   An error states, **Cannot open server**.
+1. Under **Public network access**, select **Selected networks**.
 
-   > [!NOTE]
-   > To avoid this error, follow these steps before you log in:
-   >
-   > 1. On the **Overview** page of the SQL database, select **Set server firewall**.
-   > 1. For **Allow Azure services and resources to access this server**, select **Yes**.
-   >
-   >    :::image type="content" source="../media/2-firewall-settings.png" alt-text="Screenshot showing how to add all I P addresses to the allowlist." lightbox="../media/2-firewall-settings.png":::
-   >
-   > 1. Enter the following details in the three text boxes:
-   >
-   >    - **Rule name**: *ALL*
-   >    - **Start IP**: *0.0.0.0*
-   >    - **End IP**: *255.255.255.255*
-   >
-   > 1. Select **Save**.
+1. Under **Exceptions**, select the checkbox for **Allow Azure services and resources to access this server**.
 
-1. To resolve the error, select the link that includes the IP address. Then select **OK**. You'll see this message: **Successfully updated server firewall rules**.
+   :::image type="content" source="../media/2-health-bot-add-firewall-rule.png" alt-text="Screenshot showing how to add all I P addresses to the allowlist." lightbox="../media/2-health-bot-add-firewall-rule.png":::
 
-   :::image type="content" source="../media/2-allowlist-ip.png" alt-text="Screenshot showing how to add a single I P address to an allowlist." lightbox="../media/2-allowlist-ip.png":::
+1. Under **Firewall rules**, select **Add a firewall rule**, and then enter the following details in the three text boxes:
 
-1. Enter the credentials again and then select **Login**.
+     - **Rule name**: *ALL*
+     - **Start IP**: *0.0.0.0*
+     - **End IP**: *255.255.255.255*
 
-1. Select **Tables** to create a new table. 
+1. Select **Save**.
+
+1. In the menu on the left, select **Query editor (preview)**. Then enter the credentials you created in the previous steps.
+
+    - **Login ID**: *learnbot*
+    - **Password**: *healthbot@123*
+
+1. Select **Tables** to create a new table.
 
    :::image type="content" source="../media/2-sql-query.png" alt-text="Screenshot showing a SQL query in the editor." lightbox="../media/2-sql-query.png":::
 
