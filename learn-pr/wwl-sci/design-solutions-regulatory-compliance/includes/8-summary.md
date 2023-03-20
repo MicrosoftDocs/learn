@@ -16,3 +16,6 @@ You've learned how to interpret and translate regulatory requirements into techn
 ## Learn more with reference architectures
 
 - [Data management across Azure Data Lake with Microsoft Purview - Azure Architecture Center](https://learn.microsoft.com/azure/architecture/solution-ideas/articles/azure-purview-data-lake-estate-architecture)
+
+> ![Note]
+> This module contains AI-generated content.
