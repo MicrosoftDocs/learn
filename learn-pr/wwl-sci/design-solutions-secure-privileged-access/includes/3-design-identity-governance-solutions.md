@@ -159,15 +159,19 @@ Privileged accounts are accounts that administer and manage IT systems. Cyber at
 The following are a few of the best practices found in [Securing privileged access for hybrid and cloud deployments in Azure AD](/azure/active-directory/roles/security-planning):
 
 **Best practice**: Manage, control, and monitor access to privileged accounts.   
+
 **Detail**: Turn on Azure AD Privileged Identity Management. After you turn on Privileged Identity Management, you’ll receive notification email messages for privileged access role changes. These notifications provide early warning when other users are added to highly privileged roles in your directory.
 
 **Best practice**: Ensure all critical admin accounts are managed Azure AD accounts.
+
 **Detail**: Remove any consumer accounts from critical admin roles (for example, Microsoft accounts like hotmail.com, live.com, and outlook.com).
 
 **Best practice**: Ensure all critical admin roles have a separate account for administrative tasks in order to avoid phishing and other attacks to compromise administrative privileges.
+
 **Detail**: Create a separate admin account that’s assigned the privileges needed to perform the administrative tasks. Block the use of these administrative accounts for daily productivity tools like Microsoft 365 email or arbitrary web browsing.
 
 **Best practice**: Identify and categorize accounts that are in highly privileged roles.   
+
 **Detail**: After turning on Azure AD Privileged Identity Management, view the users who are in the global administrator, privileged role administrator, and other highly privileged roles. Remove any accounts that are no longer needed in those roles, and categorize the remaining accounts that are assigned to admin roles:
 
 * Individually assigned to administrative users, and can be used for nonadministrative purposes (for example, personal email)
