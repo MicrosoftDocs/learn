@@ -12,9 +12,11 @@ Users can access your organization's resources by using a variety of devices and
 To balance security and productivity, you need to think about how a resource is accessed before you can make a decision about access control. With Azure AD Conditional Access, you can address this requirement. With Conditional Access, you can make automated access control decisions based on conditions for accessing your cloud apps.
 
 **Best practice**: Manage and control access to corporate resources.  
+
 **Detail**: Configure common Azure AD Conditional Access policies based on a group, location, and application sensitivity for SaaS apps and Azure AD–connected apps.
 
 **Best practice**: Block legacy authentication protocols.
+
 **Detail**: Attackers exploit weaknesses in older protocols every day, particularly for password spray attacks. Configure Conditional Access to block legacy protocols.
 
 ## Continuous access evaluation
