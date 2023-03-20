@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.design-solutions-securing-privileged-access.enterprise-access-model
+title: The enterprise access model
+metadata:
+  title: The enterprise access model
+  description: "This is a unit to prepare for the Microsoft cybersecurity architect certification on the topic: the enterprise access model."
+  ms.date: 3/14/2023
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-enterprise-access-model.md)]

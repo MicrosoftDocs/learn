@@ -2,8 +2,8 @@
 uid: learn.design-solutions-securing-privileged-access.knowledge-check
 title: Knowledge check - Design solutions for securing privileged access management
 metadata:
-  title: Knowledge check
-  description: "Knowledge check - Design solutions for securing privileged access management (contains AI-generated content)."
+  title: Knowledge check - Design solutions for securing privileged access management
+  description: "This is a knowledge check for the module: design solutions for securing privileged access management."
   ms.date: 3/14/2023
   author: hrasheed-msft
   ms.author: hrasheed
@@ -45,7 +45,7 @@ quiz:
     choices:
       - content: A tool used to simplify user provisioning
         isCorrect: false
-        explanation: PAM is not an identity and access management tool but rather it's focused on reducing the risk of privilege misuse within an organization.
+        explanation: PAM isn't an identity and access management tool but rather it's focused on reducing the risk of privilege misuse within an organization.
       - content: An account management tool designed for non-admin users
         isCorrect: false
         explanation: PAM is a security feature that minimizes the attack surface against privileged accounts and focuses on preventing privilege misuse.

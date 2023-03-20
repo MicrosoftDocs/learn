@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.design-solutions-securing-privileged-access.design-solution-secure-tenant-administration
+title: Design a solution to secure tenant administration
+metadata:
+  title: Design a solution to secure tenant administration
+  description: "This is a unit to prepare for the Microsoft cybersecurity architect certification on the topic: design a solution to secure tenant administration."
+  ms.date: 3/14/2023
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-design-solution-secure-tenant-administration.md)]

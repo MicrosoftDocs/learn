@@ -2,16 +2,16 @@
 uid: learn.design-solutions-securing-privileged-access
 metadata:
   title: Design solutions for securing privileged access
-  description: "You'll learn advanced techniques for designing solutions that manage privileged access effectively."
+  description: "You learn advanced techniques for designing solutions that manage privileged access effectively."
   ms.date: 3/14/2023
   author: hrasheed-msft
   ms.author: hrasheed
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 title: Design solutions for securing privileged access
-summary: "You'll learn advanced techniques for designing solutions that manage privileged access effectively."
+summary: "You learn advanced techniques for designing solutions that manage privileged access effectively."
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you are be able to:
     - Understand privileged access and the Enterprise Access Model
     - Design identity governance solutions
     - Design a solution for securing administration of cloud tenants
@@ -35,12 +35,12 @@ subjects:
   - security
   - cloud-security
 units:
-- learn.design-solutions-securing-privileged-access.introduction-to-privileged-access
-- learn.design-solutions-securing-privileged-access.the-enterprise-access-model
+- learn.design-solutions-securing-privileged-access.introduction-privileged-access
+- learn.design-solutions-securing-privileged-access.enterprise-access-model
 - learn.design-solutions-securing-privileged-access.design-identity-governance-solutions
-- learn.design-solutions-securing-privileged-access.design-a-solution-to-secure-tenant-administration
-- learn.design-solutions-securing-privileged-access.design-a-solution-for-cloud-infrastructure-entitlement-management-ciem
-- learn.design-solutions-securing-privileged-access.design-a-solution-for-privileged-access-workstations-and-bastion-services
+- learn.design-solutions-securing-privileged-access.design-solution-secure-tenant-administration
+- learn.design-solutions-securing-privileged-access.design-solution-cloud-infrastructure-entitlement-management
+- learn.design-solutions-securing-privileged-access.design-solution-privileged-access-workstations-bastion-services
 - learn.design-solutions-securing-privileged-access.knowledge-check
 - learn.design-solutions-securing-privileged-access.summary
 badge:
