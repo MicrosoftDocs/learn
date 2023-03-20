@@ -40,7 +40,7 @@ If you need to split your billing or charge-back, consider whether the usage rep
 
 - **If you *do not* need to split your billing or charge-back**, continue on to the next step.
 
-- **If you *do* need to split your billing or charge-back**, consider whether [usage reporting or manual cross-charge](billing.md) will work for you.
+- **If you *do* need to split your billing or charge-back**, consider whether usage reporting or manual cross-charge will work for you.
 
   - **If usage reporting or manual cross-charging works for you**, continue on to the next step.
 
