@@ -152,11 +152,11 @@ Once again, if we look at Lorain, we can see that this time her email ends with 
 
 1. You can now open your CluedIn instance by navigating to the CluedIn-AMA Managed Application. You can find the URL for your CluedIn instance either from the email you received from CluedIn, or by opening CluedIn in the Azure portal and selecting **Parameters and Outputs** and finding the **cluedInInstanceAddress**. Copy that into a new browser tab and press enter.
 
-    :::image type="content" source="../media/CluedIn_Login.png" alt-text="Screenshot of the CluedIn sign in page.":::
+    :::image type="content" source="../media/cluedin-login-page.png" alt-text="Screenshot of the CluedIn sign in page.":::
 
 1. Sign in with your credentials you used in the installation process and you'll be met with this home screen.
 
-    :::image type="content" source="../media/CluedIn_Home_Screen.png" alt-text="Screenshot of the CluedIn home screen page.":::
+    :::image type="content" source="../media/cluedin-home.png" alt-text="Screenshot of the CluedIn home screen page.":::
 
 ### Connect CluedIn to Microsoft Purview
 
@@ -169,7 +169,7 @@ Once again, if we look at Lorain, we can see that this time her email ends with 
     1. Purview: Tenant ID- the Azure Tenant ID where your Microsoft Purview account lives.
     1. Purview: Collection Name - the name of the collection where your data assets are housed.
 
-    :::image type="content" source="../media/Purview_CluedIn_Settings.png" alt-text="Screenshot of the CluedIn Administration page.":::
+    :::image type="content" source="../media/purview-cluedin-settings.png" alt-text="Screenshot of the CluedIn Administration page.":::
 
 1. Toggle on the settings for **Purview SyncDataSources** and **Purview PollDataSources**. This will integrate the data sources from Microsoft Purview with CluedIn.
 
