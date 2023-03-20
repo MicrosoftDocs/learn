@@ -37,4 +37,4 @@ CWPP is defined by workload-centric security protection solutions, which are typ
 
 For on-premises Windows and Linux servers and VMs, you can manually deploy the agent, use your organization's deployment tool, such as Microsoft Endpoint Protection Manager, or utilize scripted deployment methods. Defender for Cloud begins assessing the security state of all your VMs, networks, applications, and data.
 
-Microsoft Defender works in conjuction with Microsoft Sentinel to provide SOAR capabilities. For more information see [Hybrid security monitoring with Microsoft Sentinel - Azure Architecture Center | Microsoft Learn](https://learn.microsoft.com/azure/architecture/hybrid/hybrid-security-monitoring).
+Microsoft Defender works in conjunction with Microsoft Sentinel to provide SOAR capabilities. For more information see [Hybrid security monitoring with Microsoft Sentinel - Azure Architecture Center | Microsoft Learn](https://learn.microsoft.com/azure/architecture/hybrid/hybrid-security-monitoring).

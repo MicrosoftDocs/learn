@@ -66,7 +66,7 @@ You can integrate monitoring data from sources outside Azure, including on-premi
 
 Azure Monitor collects these types of data:
 
-|Data Type  |Description  |
+|Data type  |Description  |
 |---------|---------|
 |Application|Data about the performance and functionality of your application code on any platform.|
 |Infrastructure|**- Container.** Data about containers, such as Azure Kubernetes Service, Prometheus, and about the applications running inside containers.<br>**- Operating system.** Data about the guest operating system on which your application is running.|
@@ -90,7 +90,7 @@ Azure Monitor collects and routes monitoring data using several mechanisms, depe
 |Application SDK|Add the Application Insights SDK to your application code to receive, store, and explore your monitoring data. The SDK pre-processes telemetry and metrics before sending the data to Azure where it's ingested and processed further before being stored in Azure Monitor Logs.|
 |Azure Monitor REST API|The Logs Ingestion API in Azure Monitor lets you send data to a Log Analytics workspace from any REST API client.|
 |Azure Monitor Agents|Azure Monitor Agent (AMA) collects monitoring data from the guest operating system of Azure and hybrid virtual machines and delivers it to Azure Monitor for use by features, insights, and other services, such as Microsoft Sentinel and Microsoft Defender for Cloud.|
-|Azure Monitor managed service for Prometheus|Azure Monitor managed service for Prometheus lets you to collect and analyze metrics at scale using a Prometheus-compatible monitoring solution, based on the Prometheus project from the Cloud Native Compute Foundation.
+|Azure Monitor managed service for Prometheus|Azure Monitor managed service for Prometheus lets you collect and analyze metrics at scale using a Prometheus-compatible monitoring solution, based on the Prometheus project from the Cloud Native Compute Foundation.
 
 For detailed information about data collection, see [data collection](https://learn.microsoft.com/azure/azure-monitor/best-practices-data-collection).
 <!--
@@ -101,7 +101,7 @@ For detailed information about data collection, see [data collection](https://l
 
 Azure Monitor stores data in data stores for each of the pillars of observability: metrics, logs, distributed traces, and changes. Each store is optimized for specific types of data and monitoring scenarios.
 
-|Pillar of Observability/<br>Data Store|Description|
+|Pillar of observability/<br>Data store|Description|
 |---------|---------|
 |Azure Monitor Metrics|Metrics are numerical values that describe an aspect of a system at a particular point in time. Azure Monitor Metrics is a time-series database, optimized for analyzing time-stamped data. Azure Monitor collects metrics at regular intervals. Metrics are identified with a timestamp, a name, a value, and one or more defining labels. They can be aggregated using algorithms, compared to other metrics, and analyzed for trends over time. It supports native Azure Monitor metrics and Prometheus metrics|
 |Azure Monitor Logs|Logs are recorded system events. Logs can contain different types of data, be structured or free-form text, and they contain a timestamp. Azure Monitor stores structured and unstructured log data of all types in Azure Monitor Logs. You can route data to Log Analytics workspaces for querying and analysis.|
