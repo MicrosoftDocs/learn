@@ -9,13 +9,13 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 title: Design solutions that align with the Microsoft Cybersecurity Reference Architecture (MCRA) and Microsoft cloud security benchmark (MCSB)
-summary: "TODO 2 sentences, 20-35 words, don't teach or motivate, avoid using 'learn', don't duplicate the title; see https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main"
+summary: "You'll learn about the Microsoft Cybersecurity Reference Architecture (MCRA) and Microsoft cloud security benchmark (MCSB) and how you can use them to design more secure solutions."
 abstract: |
   By the end of this module, you'll be able to:
-    - "Understand how to use Microsoft Cybersecurity Reference Architecture (MCRA) and Microsoft cloud security benchmark (MCSB) to design more secure solutions."
+    - Understand how to use Microsoft Cybersecurity Reference Architecture (MCRA) and Microsoft cloud security benchmark (MCSB) to design more secure solutions.
 prerequisites: |
-  - "Conceptual knowledge of security policies, requirements, zero trust architecture, and management of hybrid environments."
-  - "Working experience with zero trust strategies, applying security policies, and developing security requirements based on business goals."
+  - Conceptual knowledge of security policies, requirements, zero trust architecture, and management of hybrid environments.
+  - Working experience with zero trust strategies, applying security policies, and developing security requirements based on business goals.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - advanced
