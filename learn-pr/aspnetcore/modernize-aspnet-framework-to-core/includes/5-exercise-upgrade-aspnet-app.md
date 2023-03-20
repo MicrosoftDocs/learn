@@ -73,7 +73,7 @@ From here, you can move classes and controllers incrementally to the new project
 1. In the **Select controller to upgrade** dialog, select *AspNewMvcTest.Controllers.HomeController* and select **Upgrade**.
 1. On the **Select components** dialog, expand all the nodes on the treeview. 
 
-   :::image type="content" source="../select-components.png" alt-text="The Select Components dialog with the treeview expanded.":::
+   :::image type="content" source="../media/select-components.png" alt-text="The Select Components dialog with the treeview expanded.":::
 
    The Upgrade Assistant has detected the routes, classes, and views that need to be migrated to support the *Home* controller.
 
