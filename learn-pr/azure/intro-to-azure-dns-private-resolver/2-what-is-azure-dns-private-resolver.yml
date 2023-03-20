@@ -5,9 +5,9 @@ metadata:
   unitType: learning-content
   title: What is Azure DNS Private Resolver?
   description: "What is the Azure DNS Private Resolver and what can it be used for"
-  ms.date: 4/26/2022
-  author: ricmmartins
-  ms.author: ricmart
+  ms.date: 03/17/2023
+  author: greg-lindsay
+  ms.author: greglin
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 1
