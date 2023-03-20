@@ -1,7 +1,7 @@
 This unit will look at the following perspectives on secure tenant administration:
 
-1. Azure tenant administration with Azure Lighthouse
-1. Principles for Microsoft 365 tenant administration
+- Azure tenant administration with Azure Lighthouse
+- Principles for Microsoft 365 tenant administration
 
 ## Azure tenant management with Azure Lighthouse
 
