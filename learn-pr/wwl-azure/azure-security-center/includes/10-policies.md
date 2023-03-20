@@ -3,19 +3,6 @@
 
 Microsoft Defender for Cloud applies security initiatives to your subscriptions. These **initiatives contain one or more security policies**. Each of those policies results in a security recommendation for improving your security posture.
 
-## What is a security policy?
-
-An Azure Policy definition, created in Azure Policy, is a **rule about specific security conditions you want to be controlled**. Built-in definitions include things like **controlling what type of resources can be deployed** or **enforcing the use of tags on all resources**. You can also create your own custom policy definitions.
-
-To implement these policy definitions (**whether built-in** or **custom**), you'll need to assign them. You can assign any of these policies through the **Azure portal**, **PowerShell**, or **Azure CLI**. Policies can be disabled or enabled from Azure Policy.
-
-There are different types of policies in Azure Policy. Defender for Cloud mainly uses '**Audit**' policies that **check specific conditions** and **configurations** and **then report on compliance**. There are also "**Enforce**' policies that can be used to **apply security settings**.
-
-### Example: Built-in security policy
-
-:::image type="content" source="../media/assign-policy-basics-policy-definition-compute-90aece43.png" alt-text="Screenshot showing an example of a basic policy definition to audit VMs without managed disks.":::
-
-
 ## What is a security initiative?
 
 A security initiative is a **collection of Azure Policy definitions** or **rules that are grouped together towards a specific goal or purpose**. Security initiatives simplify the management of your policies by **grouping a set of policies together**, **logically**, as a **single item**.
@@ -35,3 +22,16 @@ Defender for Cloud offers the following options for working with security initia
 ### Example: Builtin security initiative
 
 :::image type="content" source="../media/cis-microsoft-azure-cloud-security-benchmark-example-384c86d7.png" alt-text="Screenshot showing an example of the CIS Microsoft Azure Foundations Benchmark.":::
+
+
+## What is a security policy?
+
+An Azure Policy definition, created in Azure Policy, is a **rule about specific security conditions you want to be controlled**. Built-in definitions include things like **controlling what type of resources can be deployed** or **enforcing the use of tags on all resources**. You can also create your own custom policy definitions.
+
+To implement these policy definitions (**whether built-in** or **custom**), you'll need to assign them. You can assign any of these policies through the **Azure portal**, **PowerShell**, or **Azure CLI**. Policies can be disabled or enabled from Azure Policy.
+
+There are different types of policies in Azure Policy. Defender for Cloud mainly uses '**Audit**' policies that **check specific conditions** and **configurations** and **then report on compliance**. There are also "**Enforce**' policies that can be used to **apply security settings**.
+
+### Example: Built-in security policy
+
+:::image type="content" source="../media/assign-policy-basics-policy-definition-compute-90aece43.png" alt-text="Screenshot showing an example of a basic policy definition to audit VMs without managed disks.":::

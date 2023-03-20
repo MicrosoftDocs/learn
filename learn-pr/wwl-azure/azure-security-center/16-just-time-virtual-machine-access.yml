@@ -4,7 +4,7 @@ title: Implement Just-in-time VM access
 metadata:
   title: Implement Just-in-time VM access
   description: "Implement Just-in-time VM access"
-  ms.date: 03/17/2023
+  ms.date: 03/20/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
@@ -12,4 +12,4 @@ metadata:
   zone_pivot_groups: None
 durationInMinutes: 8
 content: |
-  [!include[](includes/15-just-time-virtual-machine-access.md)]
+  [!include[](includes/16-just-time-virtual-machine-access.md)]
