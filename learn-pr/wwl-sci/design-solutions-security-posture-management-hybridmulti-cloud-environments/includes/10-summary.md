@@ -18,5 +18,5 @@ You've learned:
 - [Introduction to Azure Arc landing zone accelerator for hybrid and multicloud - Cloud Adoption Framework](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/hybrid/enterprise-scale-landing-zone)
 - [External attack surface management (EASM) - Defender EASM and External Attack Surface Management (EASM) and Defender for Cloud](https://learn.microsoft.com/azure/defender-for-cloud/concept-easm)
 
-> ![Note]
+> [!NOTE]
 > This module contains AI-generated content.

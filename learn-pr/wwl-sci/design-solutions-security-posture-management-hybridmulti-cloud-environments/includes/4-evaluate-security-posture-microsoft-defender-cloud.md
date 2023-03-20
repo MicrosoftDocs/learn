@@ -6,14 +6,14 @@ The following table summarizes each plan and their cloud availability.
 
 | Feature | Foundational CSPM capabilities | Defender CSPM | Cloud availability |
 |--|--|--|--|
-| Continuous assessment of the security configuration of your cloud resources | ![Icon for a check mark](https://learn.microsoft.com/azure/defender-for-cloud/media/icons/yes-icon.png) | ![Icon for a check mark](https://learn.microsoft.com/azure/defender-for-cloud/media/icons/yes-icon.png) | Azure, AWS, GCP, on-premises |
-| [Security recommendations to fix misconfigurations and weaknesses](https://learn.microsoft.com/azure/defender-for-cloud/review-security-recommendations) | ![Icon for a check mark](https://learn.microsoft.com/azure/defender-for-cloud/media/icons/yes-icon.png) | ![Icon for a check mark](https://learn.microsoft.com/azure/defender-for-cloud/media/icons/yes-icon.png)| Azure, AWS, GCP, on-premises |
-| [Secure score](https://learn.microsoft.com/azure/defender-for-cloud/secure-score-security-controls) | ![Icon for a check mark](https://learn.microsoft.com/azure/defender-for-cloud/media/icons/yes-icon.png) | ![Icon for a check mark](https://learn.microsoft.com/azure/defender-for-cloud/media/icons/yes-icon.png) | Azure, AWS, GCP, on-premises |
-| [Governance](https://learn.microsoft.com/azure/defender-for-cloud/concept-regulatory-compliance) | - | ![Icon for a check mark](https://learn.microsoft.com/azure/defender-for-cloud/media/icons/yes-icon.png) | Azure, AWS, GCP, on-premises |
-| [Regulatory compliance](https://learn.microsoft.com/azure/defender-for-cloud/concept-regulatory-compliance) | - | ![Icon for a check mark](https://learn.microsoft.com/azure/defender-for-cloud/media/icons/yes-icon.png) | Azure, AWS, GCP, on-premises |
-| [Cloud security explorer](https://learn.microsoft.com/azure/defender-for-cloud/how-to-manage-cloud-security-explorer) | - | ![Icon for a check mark](https://learn.microsoft.com/azure/defender-for-cloud/media/icons/yes-icon.png) | Azure, AWS |
-| [Attack path analysis](https://learn.microsoft.com/azure/defender-for-cloud/how-to-manage-attack-path) | - | ![Icon for a check mark](https://learn.microsoft.com/azure/defender-for-cloud/media/icons/yes-icon.png) | Azure, AWS |
-| [Agentless scanning for machines](https://learn.microsoft.com/azure/defender-for-cloud/concept-agentless-data-collection) | - | ![Icon for a check mark](https://learn.microsoft.com/azure/defender-for-cloud/media/icons/yes-icon.png) | Azure, AWS |
+| Continuous assessment of the security configuration of your cloud resources | ![Icon for a check mark](../media/yes-icon.png) | ![Icon for a check mark](../media/yes-icon.png) | Azure, AWS, GCP, on-premises |
+| [Security recommendations to fix misconfigurations and weaknesses](https://learn.microsoft.com/azure/defender-for-cloud/review-security-recommendations) | ![Icon for a check mark](../media/yes-icon.png) | ![Icon for a check mark](../media/yes-icon.png)| Azure, AWS, GCP, on-premises |
+| [Secure score](https://learn.microsoft.com/azure/defender-for-cloud/secure-score-security-controls) | ![Icon for a check mark](../media/yes-icon.png) | ![Icon for a check mark](../media/yes-icon.png) | Azure, AWS, GCP, on-premises |
+| [Governance](https://learn.microsoft.com/azure/defender-for-cloud/concept-regulatory-compliance) | - | ![Icon for a check mark](../media/yes-icon.png) | Azure, AWS, GCP, on-premises |
+| [Regulatory compliance](https://learn.microsoft.com/azure/defender-for-cloud/concept-regulatory-compliance) | - | ![Icon for a check mark](../media/yes-icon.png) | Azure, AWS, GCP, on-premises |
+| [Cloud security explorer](https://learn.microsoft.com/azure/defender-for-cloud/how-to-manage-cloud-security-explorer) | - | ![Icon for a check mark](../media/yes-icon.png) | Azure, AWS |
+| [Attack path analysis](https://learn.microsoft.com/azure/defender-for-cloud/how-to-manage-attack-path) | - | ![Icon for a check mark](../media/yes-icon.png) | Azure, AWS |
+| [Agentless scanning for machines](https://learn.microsoft.com/azure/defender-for-cloud/concept-agentless-data-collection) | - | ![Icon for a check mark](../media/yes-icon.png) | Azure, AWS |
 
 The following sections will provide an overview of a few of these features:
 
@@ -32,7 +32,7 @@ The cloud security graph is a graph-based context engine that exists within Defe
 
 Defender for Cloud then uses the generated graph to perform an attack path analysis and find the issues with the highest risk that exist within your environment. You can also query the graph using the cloud security explorer.
 
-[![Screenshot of a conceptualized graph that shows the complexity of security graphing.](https://learn.microsoft.com/azure/defender-for-cloud/media/concept-cloud-map/security-map.png)](https://learn.microsoft.com/azure/defender-for-cloud/media/concept-cloud-map/security-map.png#lightbox)
+![Screenshot of a conceptualized graph that shows the complexity of security graphing.](../media/security-map.png)
 <!--
 [](https://learn.microsoft.com/azure/defender-for-cloud/concept-attack-path#what-is-attack-path-analysis)
 -->
@@ -43,8 +43,6 @@ Defender for Cloud then uses the generated graph to perform an attack path analy
 Attack path analysis is a graph-based algorithm that scans the cloud security graph. The scans expose exploitable paths that attackers may use to breach your environment to reach your high-impact assets. Attack path analysis exposes attack paths and suggests recommendations as to how best remediate issues that will break the attack path and prevent successful breach.
 
 When you take your environment's contextual information into account, attack path analysis identifies issues that may lead to a breach on your environment, and helps you to remediate the highest risk ones first. For example its exposure to the internet, permissions, lateral movement, and more.
-
-![Image that shows a sample attack path from attacker to your sensitive data.](https://learn.microsoft.com/azure/defender-for-cloud/media/concept-cloud-map/attack-path.png)
 
 Learn how to use [attack path analysis](https://learn.microsoft.com/azure/defender-for-cloud/how-to-manage-attack-path).
 
@@ -67,4 +65,4 @@ After the necessary metadata is acquired from the disk, Defender for Cloud immed
 
 The scanning environment where disks are analyzed is regional, volatile, isolated, and highly secure. Disk snapshots and data unrelated to the scan aren't stored longer than is necessary to collect the metadata, typically a few minutes.
 
-![Diagram of the process for collecting operating system data through agentless scanning.](https://learn.microsoft.com/azure/defender-for-cloud/media/concept-agentless-data-collection/agentless-scanning-process.png)
+![Diagram of the process for collecting operating system data through agentless scanning.](../media/agentless-scanning-process.png)

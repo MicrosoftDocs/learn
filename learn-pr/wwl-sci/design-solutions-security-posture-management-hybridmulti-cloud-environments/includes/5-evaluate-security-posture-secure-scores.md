@@ -17,24 +17,24 @@ Your secure score is shown in the following locations in Defender for Cloud's po
 
 -   In a tile on Defender for Cloud's **Overview** (main dashboard):
     
-    ![The secure score on Defender for Cloud's dashboard](https://learn.microsoft.com/azure/defender-for-cloud/media/secure-score-security-controls/score-on-main-dashboard.png)
+    ![The secure score on Defender for Cloud's dashboard](../media/secure-score-security-controls/score-on-main-dashboard.png)
     
 -   In the dedicated **Secure score** page you can see the secure score for your subscription and your management groups:
     
-    ![The secure score for subscriptions on Defender for Cloud's secure score page](https://learn.microsoft.com/azure/defender-for-cloud/media/secure-score-security-controls/score-on-dedicated-dashboard.png)
+    ![The secure score for subscriptions on Defender for Cloud's secure score page](../media/secure-score-security-controls/score-on-dedicated-dashboard.png)
     
-    ![The secure score for management groups on Defender for Cloud's secure score page](https://learn.microsoft.com/azure/defender-for-cloud/media/secure-score-security-controls/secure-score-management-groups.png)
+    ![The secure score for management groups on Defender for Cloud's secure score page](../media/secure-score-security-controls/secure-score-management-groups.png)
         
 -   At the top of the **Recommendations** page:
     
-    ![The secure score on Defender for Cloud's recommendations page](https://learn.microsoft.com/azure/defender-for-cloud/media/secure-score-security-controls/score-on-recommendations-page.png)
+    ![The secure score on Defender for Cloud's recommendations page](../media/secure-score-security-controls/score-on-recommendations-page.png)
     
 
 ### Secure Score Over Time report in workbooks page
 
 Defender for Cloud's workbooks page includes a ready-made report for visually tracking the scores of your subscriptions, security controls, and more. Learn more in [Create rich, interactive reports of Defender for Cloud data](https://learn.microsoft.com/azure/defender-for-cloud/custom-dashboards-azure-workbooks).
 
-![A section of the secure score over time report from Microsoft Defender for Cloud's workbooks gallery](https://learn.microsoft.com/azure/defender-for-cloud/media/custom-dashboards-azure-workbooks/secure-score-over-time-snip.png)
+![A section of the secure score over time report from Microsoft Defender for Cloud's workbooks gallery](../media/secure-score-over-time-snip.png)
 
 <!--
 TODO: Link to other module For information on Microsoft Secure Score as used in Microsoft 365 see [[Evaluate security posture for collaboration and productivity workloads]].

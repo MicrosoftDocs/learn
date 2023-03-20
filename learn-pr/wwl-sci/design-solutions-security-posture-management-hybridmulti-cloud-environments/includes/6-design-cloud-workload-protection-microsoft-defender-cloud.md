@@ -2,13 +2,13 @@ For an overview of how Defender for cloud integrates posture management and work
 
 Defender for cloud has workload protections in 7 main areas:
 
-1. Servers
-2. Storage
-3. Databases
-4. Containers
-5. Application infrastructure
-6. Alerts
-7. Incidents
+- Servers
+- Storage
+- Databases
+- Containers
+- Application infrastructure
+- Alerts
+- Incidents
 
 We will highlight three of those capabilities in this article.
 
@@ -20,7 +20,7 @@ Microsoft Defender for Servers extends protection to your Windows and Linux mach
 
 The following diagram shows an overview of the Defender for Servers deployment process:
 
-![Diagram showing a summary overview of the deployment steps for Microsoft Defender for Servers.](https://learn.microsoft.com/azure/defender-for-cloud/media/plan-defender-for-servers/deployment-overview.png)
+![Diagram showing a summary overview of the deployment steps for Microsoft Defender for Servers.](../media/deployment-overview.png)
 
 -   Learn more about [foundational cloud security posture management (CSPM)](https://learn.microsoft.com/azure/defender-for-cloud/concept-cloud-security-posture-management#defender-cspm-plan-options).
 -   Learn more about [Azure Arc](https://learn.microsoft.com/azure/azure-arc/) onboarding.

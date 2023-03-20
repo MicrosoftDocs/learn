@@ -35,10 +35,10 @@ Another capital expenditure that could be eliminated is in offsite disaster reco
 
 Companies are spreading resources across on-premises, multiple clouds, and the edge. Customers have four common needs that we often hear about:
 
-1.  Visibility into the health of all existing and future infrastructure and applications in a single pane of glass.
-2.  Difficulty integrating on-premises policies and updates with cloud infrastructure. Organizations understand the need for implementing a governance standard,
-3.  A wide range of skills across on-premises and cloud, because there are often different application development teams in the organization. Customers are looking for consistent interoperability between the two so they can unify development practices.
-4.  Desire to manage security posture, without heavily modifying current operations. Cloud and multicloud compounds this challenge, which can decrease trust and increase apprehension.
+-  Visibility into the health of all existing and future infrastructure and applications in a single pane of glass.
+-  Difficulty integrating on-premises policies and updates with cloud infrastructure. Organizations understand the need for implementing a governance standard,
+-  A wide range of skills across on-premises and cloud, because there are often different application development teams in the organization. Customers are looking for consistent interoperability between the two so they can unify development practices.
+-  Desire to manage security posture, without heavily modifying current operations. Cloud and multicloud compounds this challenge, which can decrease trust and increase apprehension.
 
 Consider the deployment of cloud-native services in a hybrid and multicloud environment. Cloud services are often strictly contextualized as simply "moving data and applications to the public cloud". A hybrid strategy fully supports customer operations that preclude the use of the public cloud for some workloads, such as highly regulated industries like government infrastructure, healthcare, and financial services. Depending on geography and data sovereignty regulations, internal and customer data may be required to remain within the boundaries of on-premises datacenters. Data latency sensitivity requires compute to be close to source data in on-premises datacenters, and internet connectivity disruptions are expected, or have critical implications. In these scenarios, hybrid solutions that bring cloud services, decreased management overhead (maintaining these services on-premises), and a pay-as-you-go cloud billing model can be deployed in on-premises datacenters.
 
