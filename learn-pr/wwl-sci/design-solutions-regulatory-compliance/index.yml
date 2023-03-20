@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.design-solutions-regulatory-compliance
+metadata:
+  title: Design solutions for regulatory compliance
+  description: "You'll learn how to interpret and translate regulatory requirements into technical solutions. You'll also learn how to use capabilities found in Microsoft Purview, Microsoft Priva, and Defender for Cloud for compliance."
+  ms.date: 3/14/2023
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+title: Design solutions for regulatory compliance
+summary: "You'll learn how to interpret and translate regulatory requirements into technical solutions. You'll also learn how to use capabilities found in Microsoft Purview, Microsoft Priva, and Defender for Cloud for compliance."
+abstract: |
+  Upon completion of this module, the learner will be able to:
+  -   Translate compliance requirements into a security solution
+  -   Address compliance requirements with Microsoft Purview
+  -   Design a solution to address privacy requirements with Microsoft Priva
+  -   Design Azure Policy solutions to address security and compliance requirements
+  -   Evaluate infrastructure compliance by using Microsoft Defender for Cloud
+prerequisites: |
+  -   Advanced experience and knowledge in identity and access, platform protection, security operations, securing data, and securing applications.
+  -   Experience with hybrid and cloud implementations.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- security-engineer
+- solution-architect
+products:
+- azure
+- defender-for-cloud
+- defender-for-cloud-apps
+- defender-identity
+- microsoft-sentinel
+subjects:
+  - security
+  - cloud-security
+units:
+- learn.design-solutions-regulatory-compliance.introduction-regulatory-compliance
+- learn.design-solutions-regulatory-compliance.translate-compliance-requirements-security-solution
+- learn.design-solutions-regulatory-compliance.address-compliance-requirements-microsoft-purview
+- learn.design-solutions-regulatory-compliance.address-privacy-requirements-microsoft-priva
+- learn.design-solutions-regulatory-compliance.address-security-compliance-requirements-azure-policy
+- learn.design-solutions-regulatory-compliance.evaluate-infrastructure-compliance-defender-cloud
+- learn.design-solutions-regulatory-compliance.knowledge-check
+- learn.design-solutions-regulatory-compliance.summary
+badge:
+  uid: learn.design-solutions-regulatory-compliance.badge
