@@ -10,9 +10,7 @@ A security policy defines the desired configuration of your workloads and helps 
 Defenders for Cloud policies contain the following components:
 
 - Data collection: agent provisioning and data collection settings.
-
 - Security policy: an Azure Policy that determines which controls are monitored and recommended by Defender for Cloud. You can also use Azure Policy to create new definitions, define more policies, and assign policies across management groups.
-
 - Email notifications: security contacts and notification settings.
 - Pricing tier: with or without Microsoft Defender for Cloud's Defender plans, which determine which Defender for Cloud features are available for resources in scope (can be specified for subscriptions and workspaces using the API).
 
@@ -23,9 +21,7 @@ Defender for Cloud automatically creates a default security policy for each of y
 Before configuring security policies, review each of the security recommendations:
 
 - See if these policies are appropriate for your various subscriptions and resource groups.
-
 - Understand what actions address the security recommendations.
-
 - Determine who in your organization is responsible for monitoring and remediating new recommendations.
 
 ## Assess your regulatory compliance
@@ -48,9 +44,7 @@ The regulatory compliance has automated and manual assessments that may need to 
 
 ## Generate compliance status reports and certificates
 
--   To generate a PDF report with a summary of your current compliance status for a particular standard, select **Download report**.
-    
-    The report provides a high-level summary of your compliance status for the selected standard based on Defender for Cloud assessments data. The report's organized according to the controls of that particular standard. The report can be shared with relevant stakeholders, and might provide evidence to internal and external auditors.
+-   To generate a PDF report with a summary of your current compliance status for a particular standard, select **Download report**. The report provides a high-level summary of your compliance status for the selected standard based on Defender for Cloud assessments data. The report's organized according to the controls of that particular standard. The report can be shared with relevant stakeholders, and might provide evidence to internal and external auditors.
 
 ## Configure frequent exports of your compliance status data
 

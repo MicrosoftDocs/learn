@@ -36,12 +36,12 @@ subjects:
   - security
   - cloud-security
 units:
-- learn.design-solutions-regulatory-compliance.introduction-to-regulatory-compliance
-- learn.design-solutions-regulatory-compliance.translate-compliance-requirements-into-a-security-solution
-- learn.design-solutions-regulatory-compliance.address-compliance-requirements-with-microsoft-purview
-- learn.design-solutions-regulatory-compliance.address-privacy-requirements-with-microsoft-priva
-- learn.design-solutions-regulatory-compliance.address-security-and-compliance-requirements-with-azure-policy
-- learn.design-solutions-regulatory-compliance.evaluate-infrastructure-compliance-with-defender-for-cloud
+- learn.design-solutions-regulatory-compliance.introduction-regulatory-compliance
+- learn.design-solutions-regulatory-compliance.translate-compliance-requirements-security-solution
+- learn.design-solutions-regulatory-compliance.address-compliance-requirements-microsoft-purview
+- learn.design-solutions-regulatory-compliance.address-privacy-requirements-microsoft-priva
+- learn.design-solutions-regulatory-compliance.address-security-compliance-requirements-azure-policy
+- learn.design-solutions-regulatory-compliance.evaluate-infrastructure-compliance-defender-cloud
 - learn.design-solutions-regulatory-compliance.knowledge-check
 - learn.design-solutions-regulatory-compliance.summary
 badge:
