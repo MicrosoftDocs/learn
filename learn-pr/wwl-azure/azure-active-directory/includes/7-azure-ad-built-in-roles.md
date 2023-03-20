@@ -133,7 +133,7 @@ Can't manage MFA settings in the legacy MFA management portal or Hardware OATH t
     Azure AD Joined Device Local Administrator
   :::column-end:::
   :::column:::
-    This role is available for assignment only as an other local administrator in Device settings. Users with this role become local machine administrators on all Windows 10 devices that are joined to Azure Active Directory. They don't have the ability to manage devices objects in Azure Active Directory.
+    This role is available for assignment only as another local administrator in Device settings. Users with this role become local machine administrators on all Windows 10 devices that are joined to Azure Active Directory. They don't have the ability to manage devices objects in Azure Active Directory.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -189,7 +189,7 @@ Can't manage MFA settings in the legacy MFA management portal or Hardware OATH t
     Cloud Application Administrator
   :::column-end:::
   :::column:::
-    Users in this role have the same permissions as the Application Administrator role, excluding the ability to manage application proxy. This role grants the ability to create and manage all aspects of enterprise applications and application registrations. Users assigned to this role aren't added as owners when creating new application registrations or enterprise applications.This role also grants the ability to consent for delegated permissions and application permissions, with the exception of application permissions for Microsoft Graph.
+    Users in this role have the same permissions as the Application Administrator role, excluding the ability to manage application proxy. This role grants the ability to create and manage all aspects of enterprise applications and application registrations. Users assigned to this role aren't added as owners when creating new application registrations or enterprise applications.This role also grants the ability to consent for delegated permissions and application permissions, except for application permissions for Microsoft Graph.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -250,7 +250,7 @@ Can't manage MFA settings in the legacy MFA management portal or Hardware OATH t
  -  Granting a specific set of guest users read access instead of granting it to all guest users.
     
  -  Granting a specific set of nonadmin users access to Azure portal when "**Restrict access to Azure AD portal to admins only**" is set to "**Yes**".
- -  Granting service principals access to directory where Directory.Read.All is not an option.
+ -  Granting service principals access to directory where Directory.Read.All isn't an option.
 
 
   :::column-end:::
@@ -260,7 +260,7 @@ Can't manage MFA settings in the legacy MFA management portal or Hardware OATH t
     Directory Synchronization Accounts
   :::column-end:::
   :::column:::
-    Don't use. This role is automatically assigned to the Azure AD Connect service, and is not intended or supported for any other use.
+    Don't use. This role is automatically assigned to the Azure AD Connect service, and isn't intended or supported for any other use.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -376,7 +376,7 @@ Can't manage MFA settings in the legacy MFA management portal or Hardware OATH t
     **Groups Administrator**
   :::column-end:::
   :::column:::
-    Users in this role can create/manage groups and its settings like naming and expiration policies. It is important to understand that assigning a user to this role gives them the ability to manage all groups in the organization across various workloads like Teams, SharePoint, Yammer in addition to Outlook. Also the user is able to manage the various groups settings across various admin portals like Microsoft admin center, Azure portal, and workload specific ones like Teams and SharePoint admin centers.
+    Users in this role can create/manage groups and its settings like naming and expiration policies. It's important to understand that assigning a user to this role gives them the ability to manage all groups in the organization across various workloads like Teams, SharePoint, Yammer in addition to Outlook. Also the user is able to manage the various groups settings across various admin portals like Microsoft admin center, Azure portal, and workload specific ones like Teams and SharePoint admin centers.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -454,7 +454,7 @@ Can't manage MFA settings in the legacy MFA management portal or Hardware OATH t
     Intune Administrator
   :::column-end:::
   :::column:::
-    Users with this role have global permissions within Microsoft Intune Online, when the service is present. Additionally, this role contains the ability to manage users and devices to associate policy and create and manage groups.This role can create and manage all security groups. However, Intune Administrator doesn't have admin rights over Office groups. That means the admin can't update owners or memberships of all Office groups in the organization. However, you can manage the Office group that he creates which comes as a part of his/her end-user privileges. So, any Office group (not security group) that you create should be counted against your quota of 250.
+    Users with this role have global permissions within Microsoft Intune Online, when the service is present. Additionally, this role contains the ability to manage users and devices to associate policy and create and manage groups.This role can create and manage all security groups. However, Intune Administrator doesn't have admin rights over Office groups. That means the admin can't update owners or memberships of all Office groups in the organization. However, you can manage the Office group that's created, which comes as a part of end-user privileges. So, any Office group (not security group) that you create should be counted against your quota of 250.
 
   :::column-end:::
 :::row-end:::
@@ -471,7 +471,7 @@ Can't manage MFA settings in the legacy MFA management portal or Hardware OATH t
     Knowledge Administrator
   :::column-end:::
   :::column:::
-    Users in this role have full access to all knowledge, learning and intelligent features settings in the Microsoft 365 admin center. They have a general understanding of the suite of products, licensing details and has responsibility to control access. Knowledge Administrator can create and manage content, like topics, acronyms and learning resources. Additionally, these users can create content centers, monitor service health, and create service requests.
+    Users in this role have full access to all knowledge, learning and intelligent features settings in the Microsoft 365 admin center. They have a general understanding of the suite of products, licensing details and have responsibility to control access. Knowledge Administrator can create and manage content, like topics, acronyms and learning resources. Additionally, these users can create content centers, monitor service health, and create service requests.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -558,7 +558,7 @@ Can't manage MFA settings in the legacy MFA management portal or Hardware OATH t
     Modern Commerce User
   :::column-end:::
   :::column:::
-    **Don't use**. This role is automatically assigned from Commerce, and is not intended or supported for any other use. See details below.The Modern Commerce User role gives certain users permission to access Microsoft 365 admin center and see the left navigation entries for Home, Billing, and Support. The content available in these areas is controlled by commerce-specific roles assigned to users to manage products that they bought for themselves or your organization. This might include tasks like paying bills, or for access to billing accounts and billing profiles.
+    **Don't use**. This role is automatically assigned from Commerce, and isn't intended or supported for any other use. See details below.The Modern Commerce User role gives certain users permission to access Microsoft 365 admin center and see the left navigation entries for Home, Billing, and Support. The content available in these areas is controlled by commerce-specific roles assigned to users to manage products that they bought for themselves or your organization. This might include tasks like paying bills, or for access to billing accounts and billing profiles.
 Users with the Modern Commerce User role typically have administrative permissions in other Microsoft purchasing systems, but don't have Global Administrator or Billing Administrator roles used to access the admin center.
 
   :::column-end:::
@@ -600,7 +600,7 @@ Users with the Modern Commerce User role typically have administrative permissio
     Partner Tier1 Support
   :::column-end:::
   :::column:::
-    **Don't use**. This role has been deprecated and will be removed from Azure AD in the future. This role is intended for use by a few Microsoft resale partners, and is not intended for general use.
+    **Don't use**. This role has been deprecated and will be removed from Azure AD in the future. This role is intended for use by a few Microsoft resale partners, and isn't intended for general use.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -608,7 +608,7 @@ Users with the Modern Commerce User role typically have administrative permissio
     Partner Tier2 Support
   :::column-end:::
   :::column:::
-    **Don't use**. This role has been deprecated and will be removed from Azure AD in the future. This role is intended for use by a few Microsoft resale partners, and is not intended for general use.
+    **Don't use**. This role has been deprecated and will be removed from Azure AD in the future. This role is intended for use by a few Microsoft resale partners, and isn't intended for general use.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -704,7 +704,7 @@ Users with this role can't do the following
     **Privileged Role Administrator**
   :::column-end:::
   :::column:::
-    **This role grants the ability to manage assignments for all Azure AD roles including the Global Administrator role**. This role doesn't include any other privileged abilities in Azure AD like creating or updating users. However, users assigned to this role can grant themselves or others additional privilege by assigning additional roles.
+    **This role grants the ability to manage assignments for all Azure AD roles including the Global Administrator role**. This role doesn't include any other privileged abilities in Azure AD like creating or updating users. However, users assigned to this role can grant themselves or others another privilege by assigning additional roles.
   :::column-end:::
 :::row-end:::
 :::row:::

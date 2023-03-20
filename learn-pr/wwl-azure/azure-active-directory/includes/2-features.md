@@ -21,7 +21,7 @@ To enhance your Azure AD implementation, you can also add paid capabilities by u
  -  **Azure Active Directory Free.** Provides user and group management, on-premises directory synchronization, basic reports, self-service password change for cloud users, and single sign-on across Azure, Microsoft 365, and many popular SaaS apps.
  -  **Azure Active Directory Premium P1.** In addition to the Free features, P1 lets your hybrid users access both on-premises and cloud resources. It also supports advanced administration, such as dynamic groups, self-service group management, Microsoft Identity Manager, and cloud write-back capabilities, which allow self-service password reset for your on-premises users.
  -  **Azure Active Directory Premium P2.** In addition to the Free and P1 features, P2 also offers Azure Active Directory Identity Protection to help provide risk-based Conditional Access to your apps and critical company data and Privileged Identity Management to help discover, restrict, and monitor administrators and their access to resources and to provide just-in-time access when needed.
- -  **"Pay as you go"** feature licenses. You can also get additional feature licenses, such as Azure Active Directory Business-to-Customer (B2C). B2C can help you provide identity and access management solutions for your customer-facing apps.
+ -  **"Pay as you go"** feature licenses. You also get additional feature licenses, such as Azure Active Directory Business-to-Customer (B2C). B2C can help you provide identity and access management solutions for your customer-facing apps.
 
 ## Which features work in Azure AD?
 
@@ -64,7 +64,7 @@ After you choose your Azure AD license, you'll get access to some or all of the 
     Business-to-Business (B2B)
   :::column-end:::
   :::column:::
-    Manage your guest users and external partners while maintaining control over your own corporate data.
+    Manages your guest users and external partners while maintaining control over your own corporate data.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -72,7 +72,7 @@ After you choose your Azure AD license, you'll get access to some or all of the 
     Business-to-Customer (B2C)
   :::column-end:::
   :::column:::
-    Manage your guest users and external partners while maintaining control over your own corporate data.
+    Manages your guest users and external partners while maintaining control over your own corporate data.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -144,7 +144,7 @@ After you choose your Azure AD license, you'll get access to some or all of the 
     Privileged identity management (PIM)
   :::column-end:::
   :::column:::
-    Manage, control, and monitor access within your organization. This feature includes access to resources in Azure AD and Azure, and other Microsoft Online Services, like Microsoft 365 or Intune.
+    Manages, controls, and monitors access within your organization. This feature includes access to resources in Azure AD and Azure, and other Microsoft Online Services, like Microsoft 365 or Intune.
   :::column-end:::
 :::row-end:::
 :::row:::
