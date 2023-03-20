@@ -4,11 +4,11 @@ title: 'Exercise - Run code in the debug environment '
 metadata:
   title: Exercise - Run code in the debug environment
   description: "Exercise - Run code in the debug environment"
-  ms.date: 03/17/2023
+  ms.date: 03/20/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 3
+durationInMinutes: 8
 content: |
   [!include[](includes/3-exercise-run-code-debug-environment.md)]
