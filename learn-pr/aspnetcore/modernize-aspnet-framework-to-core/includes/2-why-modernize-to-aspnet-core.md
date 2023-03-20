@@ -32,7 +32,7 @@ ASP.NET Core on .NET provides significantly higher performance over .NET Framewo
 A number of case studies have documented these performance benefits. Azure Active Directory serves 115 billion requests per day, and was able to [cut CPU costs by 50% by moving to .NET Core](https://devblogs.microsoft.com/dotnet/azure-active-directorys-gateway-service-is-on-net-core-3-1/). [Bing documented a 34% server latency improvement in migrating to .NET Core 2.1](https://devblogs.microsoft.com/dotnet/azure-active-directorys-gateway-service-is-on-net-core-3-1/). Once Bing was running on .NET Core, the team was able to take advantage of each .NET Core version update, and continued to see large improvements in each update. The performance improvements continue to be an emphasis of innovation, further separateing .NET from .NET Framework. Consider the following perfomance blog posts tracking various incremental improvements:
 
 * [Performance Improvements in .NET 5](https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-5)
-* [Performance Improvements in .NET 7](https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-6)
+* [Performance Improvements in .NET 6](https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-6)
 * [Performance Improvements in .NET 7](https://devblogs.microsoft.com/dotnet/performance_improvements_in_net_7)
 
 ## Cross-platform support
