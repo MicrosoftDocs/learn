@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.azure.azure-netapp-files-sap-hana
+metadata:
+  moduleType: introduction        
+  title: Using Azure NetApp Files application groups with SAP HANA       
+  description: This module helps you understand Microsoft Azure NetApp Files and how to use the service with virtual machines running SAP HANA.       
+  ms.date: 02/27/2023
+  author: b-ahibbard   
+  ms.author: anfdocs           
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title:  Using Azure NetApp Files application groups with SAP HANA   
+summary: This module helps you understand Microsoft Azure NetApp Files and how to use the service with virtual machines running SAP HANA. 
+abstract: |
+  By the end of this module, you'll be able to describe the following: 
+    -	Azure NetApp Files and Azure NetApp Files application volume groups
+    - Decision criteria for using Azure NetApp Files with SAP HANA VMs
+    - Steps for connecting the SAP HANA VM with Azure NetApp Files 
+prerequisites: |
+  - Basic understanding of Azure virtual machines.
+  - Basic understanding of Linux virtual machines in Azure. 
+  - Basic understanding of Azure NetApp Files and file shares. 
+iconUrl: /training/achievements/introduction-to-azure-netapp-files.svg
+levels:
+  - intermediate
+roles:
+  - administrator
+  - solution-architect
+products:
+  - azure-netapp-files
+  - azure-virtual-machines
+subjects:
+- cloud-computing
+- storage
+- migration
+units:
+- learn.azure.azure-netapp-files-sap-hana.introduction
+- learn.azure.azure-netapp-files-sap-hana.what-is-azure-netapp-files
+- learn.azure.azure-netapp-files-sap-hana.understand-application-volume-groups
+- learn.azure.azure-netapp-files-sap-hana.connect-sap-hana-vms.yml
+- learn.azure.azure-netapp-files-sap-hana.knowledge-check
+- learn.azure.azure-netapp-files-sap-hana.summary
+badge:
+  uid: learn.azure.azure-netapp-files-sap-hana.badge

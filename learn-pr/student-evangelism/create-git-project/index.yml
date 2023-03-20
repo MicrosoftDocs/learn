@@ -21,7 +21,8 @@ levels:
 roles:
   - developer
 products:
-  - vs
+  - azure
+  - github
 prerequisites: None
 subjects:
 - devops

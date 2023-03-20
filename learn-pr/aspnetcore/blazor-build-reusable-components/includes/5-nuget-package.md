@@ -36,26 +36,26 @@ dotnet pack
 
 This command writes a file named *My.FirstClassLibrary.0.1.0.nupkg* to your *bin/Debug* folder.
 
-## Add a reference to the NuGet package in the MyServer application
+## Add a reference to the NuGet package in the MyBlazorServer application
 
-You already referenced the *FirstClassLibrary* project in your MyServer application, because it was in the same folder structure as the web application. 
+You already referenced the *FirstClassLibrary* project in your MyBlazorServer application, because it was in the same folder structure as the web application. 
 
 Now, you'll undo that project reference and add a reference to the NuGet package that you created earlier. 
 
 These steps are *not* a typical configuration. Library projects that reside in the same folders or solution as the applications that want to reference them can reference the project directly, as you saw in the earlier exercise. 
 
-1. Open the *MyServer.csproj* file either by double-clicking the *MyServer* project name in Visual Studio or by opening the file in Visual Studio Code.
-1. In the *MyServer.csproj* file, remove the following line:   
+1. Open the *MyBlazorServer.csproj* file either by double-clicking the *MyBlazorServer* project name in Visual Studio or by opening the file in Visual Studio Code.
+1. In the *MyBlazorServer.csproj* file, remove the following line:   
 
    `<ProjectReference Include="..\FirstClassLibrary\FirstClassLibrary.csproj" />`
 
-1. In the same folder as *MyServer.csproj*, run the following command:
+1. In the same folder as *MyBlazorServer.csproj*, run the following command:
 
     ```dotnetcli
     dotnet add package My.FirstClassLibrary -s ..\FirstClassLibrary\bin\Debug
     ```
 
-    This command grabs the NuGet package that you created earlier, installs a copy in your local NuGet package cache, and then adds a reference to that package in the *MyServer.csproj* file.
+    This command grabs the NuGet package that you created earlier, installs a copy in your local NuGet package cache, and then adds a reference to that package in the *MyBlazorServer.csproj* file.
 
 ## Check your work
 
@@ -63,10 +63,10 @@ Did your new package install properly?  Can you start the FirstServer applicatio
 
 Let's find out:
 
-1. Start the MyServer application either in Visual Studio, by selecting F5, or in the MyServer folder, by running the following command:
+1. Start the MyBlazorServer application either in Visual Studio, by selecting F5, or in the MyBlazorServer folder, by running the following command:
 
    `dotnet run`
 
-1. In your browser, go to the [home page of the MyServer application](https://localhost:5000).
+1. In your browser, go to the [home page of the MyBlazorServer application](https://localhost:5000).
 
    Is the **My first Modal dialog** dialog displayed?  If so, congratulations! You've successfully packaged and deployed the *FirstClassLibrary* project correctly. Applications everywhere can now use your modal window component by referencing your newly created NuGet package.

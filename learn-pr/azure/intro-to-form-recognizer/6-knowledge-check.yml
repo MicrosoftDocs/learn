@@ -25,7 +25,7 @@ quiz:
       explanation: "Correct. Form Recognizer can analyze and extract data from JPG and PNG images, and PDF and TIFF documents. Including forms, tables, written and typed documents, receipts, invoices, and business cards."
     - content: "CSV files"
       isCorrect: false
-      explanation: "Incorrect. CSV documents aren't able to be parsed by Form Recognizer, but images and documents can be."
+      explanation: "Incorrect. Form Recognizer doesn't parse CSV documents, but it does parse images and other document types."
   - content: 'What type of data does the prebuilt Invoice Model return?'
     choices:
     - content: "CSV data, with the extracted information separated by commas."
