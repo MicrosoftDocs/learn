@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.design-resiliency-strategy-common-cyberthreats-like-ransomware.configurations-secure-backup-restore
+title: Configurations for secure backup and restore
+metadata:
+  title: Configurations for secure backup and restore
+  description: "Learn how to design configurations for secure backup and restore."
+  ms.date: 3/14/2023
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-configurations-secure-backup-restore.md)]

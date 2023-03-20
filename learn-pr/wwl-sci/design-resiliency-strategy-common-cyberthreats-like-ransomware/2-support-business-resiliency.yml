@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.design-resiliency-strategy-common-cyberthreats-like-ransomware.support-business-resiliency
+title: Support business resiliency
+metadata:
+  title: Support business resiliency
+  description: "Learn how to support business resiliency."
+  ms.date: 3/14/2023
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-support-business-resiliency.md)]
