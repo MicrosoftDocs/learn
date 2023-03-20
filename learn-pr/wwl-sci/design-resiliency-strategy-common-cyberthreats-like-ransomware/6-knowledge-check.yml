@@ -3,7 +3,7 @@ uid: learn.design-resiliency-strategy-common-cyberthreats-like-ransomware.knowle
 title: Knowledge check - Design a resiliency strategy for common cyberthreats
 metadata:
   title: Knowledge check - Design a resiliency strategy for common cyberthreats
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: "TODO this field is for search engine optimization and isn't user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
   ms.date: 3/14/2023
   author: hrasheed-msft
   ms.author: hrasheed
@@ -31,21 +31,21 @@ quiz:
         choices:
         - content: "Frequently patching systems and applications"
           isCorrect: false
-          explanation: "While keeping systems and applications patched can help prevent certain types of attacks, it is not the primary method for mitigating ransomware attacks."
+          explanation: "While keeping systems and applications patched can help prevent certain types of attacks, it isn't the primary method for mitigating ransomware attacks."
         - content: "Monitoring network traffic for indicators of compromise"
           isCorrect: false
-          explanation: "While monitoring network traffic can help identify possible attacks, it is not the primary method for mitigating ransomware attacks."
+          explanation: "While monitoring network traffic can help identify possible attacks, it isn't the primary method for mitigating ransomware attacks."
         - content: "Backing up data regularly and testing restore procedures"
           isCorrect: true
           explanation: "Regular backups are essential for restoring any lost or encrypted data after a ransomware attack. Testing restore procedures ensure that the backups can actually perform the desired restore."
         - content: "Enforcing complex password policies for all users"
           isCorrect: false
-          explanation: "While enforcing complex password policies is important for security, it is not the primary method for mitigating ransomware attacks."
+          explanation: "While enforcing complex password policies is important for security, it isn't the primary method for mitigating ransomware attacks."
       - content: "What is a critical component of business resiliency planning?"
         choices:
         - content: "Strict adherence to company policies and procedures"
           isCorrect: false
-          explanation: "Adhering to policies and procedures is important, but is not a critical component of business resiliency planning."
+          explanation: "Adhering to policies and procedures is important, but isn't a critical component of business resiliency planning."
         - content: "Performing regular risk assessments"
           isCorrect: true
           explanation: "Understanding potential risks is key to developing effective resiliency plans. Regular risk assessments help identify these risks and allow for appropriate mitigation strategies to be developed."
@@ -54,7 +54,7 @@ quiz:
           explanation: "While clear lines of communication are important during disruptions, they are not a critical component of business resiliency planning."
         - content: "Frequently performing simulated disaster scenarios"
           isCorrect: false
-          explanation: "Simulating disaster scenarios is important, but is not a critical component of business resiliency planning."
+          explanation: "Simulating disaster scenarios is important, but isn't a critical component of business resiliency planning."
       - content: "When implementing a backup solution, what should be a consideration in addition to frequency of backups?"
         choices:
         - content: "Cost-effectiveness of the solution"
@@ -62,10 +62,10 @@ quiz:
           explanation: "Backup solutions should provide adequate protection while also being cost-effective. A solution that requires too much resources may not be sustainable in the long run."
         - content: "The physical location of the backup server"
           isCorrect: false
-          explanation: "Physical location is important for ensuring availability during disasters, but it is not an additional consideration when implementing a backup solution."
+          explanation: "Physical location is important for ensuring availability during disasters, but it isn't an additional consideration when implementing a backup solution."
         - content: "The operating system used on the backup server"
           isCorrect: false
-          explanation: "While it is important to select a backup solution that is compatible with the operating system used, it is not an additional consideration."
+          explanation: "While it is important to select a backup solution that is compatible with the operating system used, it isn't an additional consideration."
         - content: "The amount of storage capacity available for backups"
           isCorrect: false
           explanation: "Storage capacity is important, but it is already a consideration when implementing a backup solution."

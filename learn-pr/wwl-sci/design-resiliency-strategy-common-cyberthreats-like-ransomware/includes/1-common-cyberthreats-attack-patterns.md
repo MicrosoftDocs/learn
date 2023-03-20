@@ -1,11 +1,11 @@
-In this module, you'll learn how to:
+In this module, you learn how to:
 
 *   Understand common cyberthreats like ransomware.
 *   Understand how to support business resiliency.
 *   Design configurations for secure backup and restore.
 *   Design solutions for managing security updates.
 
-The content in the module will help you prepare for the certification exam SC-100: Microsoft Cybersecurity Architect.
+The content in the module helps you prepare for the certification exam SC-100: Microsoft Cybersecurity Architect.
 
 ## Prerequisites
 
@@ -25,7 +25,7 @@ Whether an organization is big or small, the entirety of the digital landscape w
 -   Cloud services
 -   People
 
-Collectively, these are referred to as the threat landscape. Notice that the threat landscape can cover more than just computers and mobile phones. It can include any elements that are owned or managed by an organization, or some that are not. As you'll learn next, criminals will use any means they can to mount and carry out an attack.
+Collectively, these are referred to as the threat landscape. Notice that the threat landscape can cover more than just computers and mobile phones. It can include any elements that are owned or managed by an organization, or some that aren't. As you'll learn next, criminals will use any means they can to mount and carry out an attack.
 
 ## What are attack vectors?
 
@@ -61,7 +61,7 @@ When an attacker achieves a security breach, they'll often want to target data, 
 
 ## Attack chain modeling
 
-An attack chain describes the typical chain of events during an attack that leads to organizational damage. This includes technical and non-technical steps taken by adversaries or insiders during the attack. It's important to note that there is no single linear path for either insider risk or external attacks. There are many common elements across attacks, but each one can take a unique path.
+An attack chain describes the typical chain of events during an attack that leads to organizational damage. This includes technical and non-technical steps taken by adversaries or insiders during the attack. It's important to note that there's no single linear path for either insider risk or external attacks. There are many common elements across attacks, but each one can take a unique path.
 
 The MCRA includes an attack chain diagram that depicts common techniques related to both external attacks and insider risks, as shown below.
 
