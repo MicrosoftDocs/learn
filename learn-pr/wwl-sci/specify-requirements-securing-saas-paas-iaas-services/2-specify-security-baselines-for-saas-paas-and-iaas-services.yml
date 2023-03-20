@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.specify-requirements-securing-saas-paas-iaas-services.specify-security-baselines-for-saas-paas-and-iaas-services
+title: Specify security baselines for SaaS PaaS and IaaS services
+metadata:
+  title: Specify security baselines for SaaS PaaS and IaaS services
+  description: "SC-100 preparatory unit on the topic: specify security baselines for SaaS PaaS and IaaS services."
+  ms.date: 3/14/2023
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-specify-security-baselines-for-saas-paas-and-iaas-services.md)]

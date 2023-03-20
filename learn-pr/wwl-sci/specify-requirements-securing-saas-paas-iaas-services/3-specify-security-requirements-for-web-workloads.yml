@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.specify-requirements-securing-saas-paas-iaas-services.specify-security-requirements-for-web-workloads
+title: Specify security requirements for web workloads
+metadata:
+  title: Specify security requirements for web workloads
+  description: "SC-100 preparatory unit on the topic: specify security requirements for web workloads."
+  ms.date: 3/14/2023
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-specify-security-requirements-for-web-workloads.md)]
