@@ -10,29 +10,29 @@ To assess your IoT workload through the lenses of the Well-Architected Framework
 
 ## Design Principles
 
-[Five pillars of architectural excellence](../index.md) underpin the IoT workload design methodology. These pillars serve as a compass for subsequent design decisions across the [key IoT design areas](iot-overview.md#iot-design-areas). The following design principles extend the quality pillar of the Azure Well-Architected Framework - [Security](../security/overview.md).
+Five pillars of architectural excellence underpin the IoT workload design methodology. These pillars serve as a compass for subsequent design decisions across the key IoT design areas. The following design principles extend the quality pillar of the Azure Well-Architected Framework - Security.
 
 |Design principle|Considerations|
 |---|---|
-|**Strong identity**|Use a strong identity to authenticate devices and users. Have a hardware root of trust for trusted identity, register devices, issue renewable credentials, and use passwordless or multi-factor authentication (MFA). Review general [Azure identity and access management considerations](../security/design-identity.md).
-|[**Least privilege**](../security/security-principles.md#automate-and-use-least-privilege)|Automate and use **least-privileged access control** to limit impact from compromised devices or identities or unapproved workloads.
+|**Strong identity**|Use a strong identity to authenticate devices and users. Have a hardware root of trust for trusted identity, register devices, issue renewable credentials, and use passwordless or multi-factor authentication (MFA). Review general Azure identity and access management considerations.
+|**Least privilege**|Automate and use **least-privileged access control** to limit impact from compromised devices or identities or unapproved workloads.
 |**Device health**|Evaluate device health to gate device access or flag devices for remediation. Check security configuration, assess vulnerabilities and insecure passwords, monitor for threats and anomalies, and build ongoing risk profiles.
 |**Device update**|Continuous updates to keep devices healthy. Use a centralized configuration and compliance management solution and a robust update mechanism to ensure devices are up-to-date and healthy.
-|[**Monitor system security, plan incident response**](../security/security-principles.md#monitor-system-security-plan-incident-response)|Proactively monitor for unauthorized or compromised devices and respond to emerging threats.
+|**Monitor system security, plan incident response**|Proactively monitor for unauthorized or compromised devices and respond to emerging threats.
 
 ## IoT architecture patterns
 
-Most IoT systems use either a [connected products or connected operations architecture pattern](iot-overview.md#iot-architecture-patterns). There are key security differences between these patterns. Connected operations or *operational technology (OT)* solutions often have on-premises devices that monitor and control other physical devices. These OT devices add security challenges such as tampering, packet sniffing, and the need for out-of-band management and over-the-air (OTA) updates.
+Most IoT systems use either a connected products or connected operations architecture pattern. There are key security differences between these patterns. Connected operations or *operational technology (OT)* solutions often have on-premises devices that monitor and control other physical devices. These OT devices add security challenges such as tampering, packet sniffing, and the need for out-of-band management and over-the-air (OTA) updates.
 
-Factories and OT environments can be easy targets for malware and security breaches, because equipment can be old, physically vulnerable, and isolated from server-level security. For an end-to-end perspective, review the [Azure Well-Architected Framework security pillar](../security/overview.md).
+Factories and OT environments can be easy targets for malware and security breaches, because equipment can be old, physically vulnerable, and isolated from server-level security. For an end-to-end perspective, review the Azure Well-Architected Framework security pillar.
 
 ## IoT architecture layers
 
-Security design principles help clarify considerations to ensure your IoT workload meets requirements across the [foundational IoT architecture layers](iot-overview.md#iot-architecture-layers). 
+Security design principles help clarify considerations to ensure your IoT workload meets requirements across the foundational IoT architecture layers. 
 
 All layers are subject to various threats that can be classified according to the [STRIDE categories](/azure/security/develop/threat-modeling-tool-threats#stride-model): *spoofing*, *tampering*, *repudiation*, *information disclosure*, *denial of service*, and *elevation of privilege*. Always follow [Microsoft Security Development Lifecycle (SDL)](https://www.microsoft.com/sdl) practices when you design and build IoT architectures.
 
-:::image type="content" source="media/architecture-layers.svg" alt-text="Diagram that shows the layers and cross-cutting activities in the IoT architecture." border="false":::
+:::image type="content" source="../media/architecture-layers.svg" alt-text="Diagram that shows the layers and cross-cutting activities in the IoT architecture." border="false":::
 
 ## Device and gateway layer
 
@@ -136,7 +136,7 @@ To support zero trust, IoT devices should:
 
 ## Ingestion and communication layer 
 
-Data that's ingested into the IoT solution should be protected with the guidance in the [Azure Well-Architected Framework security pillar](../security/overview.md). Additionally, for IoT solutions it's critical to ensure that communication from the device to the cloud is secure and encrypted using the latest TLS standards.
+Data that's ingested into the IoT solution should be protected with the guidance in the Azure Well-Architected Framework security pillar. Additionally, for IoT solutions it's critical to ensure that communication from the device to the cloud is secure and encrypted using the latest TLS standards.
 
 ## Device management and modeling layer
 

@@ -71,10 +71,10 @@ quiz:
           explanation: "Windows security baselines in Intune are templates that define a set of security configurations that can be applied to devices, but they are not applied by default to all Windows devices in an organization."
     - content: "What is Microsoft Defender for IoT?"
       choices:
-        - content: "An endpoint security solution for Windows devices.""
+        - content: "An endpoint security solution for Windows devices."
           isCorrect: false
           explanation: "Microsoft Defender for IoT is a cloud-based security solution for Internet of Things (IoT) devices that helps protect against cyber threats."
-        - content: "An endpoint security solution for Mac devices.""
+        - content: "An endpoint security solution for Mac devices."
           isCorrect: false
           explanation: "Microsoft Defender for IoT is not an endpoint security solution for Mac devices, but rather a cloud-based security solution for Internet of Things (IoT) devices that helps protect against cyber threats."
         - content: "A cloud-based security solution for Internet of Things (IoT) devices."

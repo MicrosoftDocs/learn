@@ -8,7 +8,7 @@ Microsoft Defender for IoT is a unified security solution built specifically to 
 
 Defender for IoT provides agentless, network layer monitoring, and integrates with both industrial equipment and security operation center (SOC) tools.
 
-![Diagram showing an example of Defender for IoT's end-to-end coverage solution.](https://learn.microsoft.com/azure/defender-for-iot/organizations/media/overview/end-to-end-coverage.png)
+![Diagram showing an example of Defender for IoT's end-to-end coverage solution.](../media/end-to-end-coverage.png)
 <!--
 [](https://learn.microsoft.com/azure/defender-for-iot/organizations/overview#agentless-device-monitoring)
 

@@ -9,8 +9,6 @@ Azure offers different technologies for providing remote access to VMs:
 
 The choice of which remote access solution is most appropriate depends on factors like scale, topology, and security requirements.
 
-[](https://learn.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/plan-for-virtual-machine-remote-access#design-considerations)
-
 ## Design considerations
 
 -   When available, you can use existing hybrid connectivity to Azure virtual networks via ExpressRoute or S2S/P2S VPN connections to provide remote access from on-premises to Windows and Linux Azure VMs.
@@ -43,15 +41,15 @@ The choice of which remote access solution is most appropriate depends on factor
 -   Deploy Azure Bastion and ExpressRoute or VPN access to address specific needs like emergency break-glass access.
 -   Remote access to Windows and Linux VMs via public IPs directly attached to the VMs is discouraged. Remote access should never be deployed without strict NSG rules and firewalling.
 
-[![Diagram that shows Azure virtual WAN topology.](https://learn.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/media/azure-virtual-wan-topology-bastion.png)](https://learn.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/media/azure-virtual-wan-topology-bastion.png#lightbox)
+![Diagram that shows Azure virtual WAN topology.](../media/azure-virtual-wan-topology-bastion.png)
 
 _Figure 1: Azure Virtual WAN topology._
 
-[![Diagram that shows Azure hub-and-spoke topology.](https://learn.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/media/azure-hub-spoke-bastion.png)](https://learn.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/media/azure-hub-spoke-bastion.png#lightbox)
+![Diagram that shows Azure hub-and-spoke topology.](../media/azure-hub-spoke-bastion.png)
 
 _Figure 2: Azure hub-and-spoke topology._
 
-[![Diagram that shows Azure standalone virtual network topology.](https://learn.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/media/azure-standalone-bastion.png)](https://learn.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/media/azure-standalone-bastion.png#lightbox)
+![Diagram that shows Azure standalone virtual network topology.](../media/azure-standalone-bastion.png)
 
 _Figure 3: Azure standalone virtual network topology._
 
