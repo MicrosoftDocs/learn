@@ -1,0 +1,88 @@
+### YamlMime:ModuleUnit
+uid: learn.design-solutions-that-align-cloud-adoption-framework-well-architected-framework.knowledge-check
+title: Cloud Adoption Framework and Well Architected Framework knowledge check
+metadata:
+  title: Cloud Adoption Framework and Well Architected Framework knowledge check
+  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  ms.date: 04/05/2023
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 1
+###########################################################################
+###
+### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
+###  - Questions are complete sentences ending with a question mark
+###  - No true/false questions
+###  - 3 answers per question
+###  - All answers about the same length
+###  - Numeric answers listed in sorted order
+###  - No "All of the above" and/or "None of the above" as answer choices
+###  - No "Not" or "Except" in questions
+###  - No second person ("you") in the questions or answers
+###  - Provide a meaningful explanation for both correct and incorrect answers
+###
+###########################################################################
+content: |
+quiz: 
+  questions:
+    - content: "What is the main objective of the Cloud Adoption Framework?"
+      choices:
+        - content: "To provide guidelines on how to make applications more secure."
+          isCorrect: false
+          explanation: "While security is an important part, the main objective of the Cloud Adoption Framework is to provide a set of best practices and guidelines for organizations that are adopting cloud technologies."
+        - content: "To provide a methodology to build and deploy cloud infrastructure."
+          isCorrect: true
+          explanation: "The Cloud Adoption Framework provides a clear step-by-step guidance for IT professionals to create, test, and deploy cloud resources effectively while applying best practices."
+        - content: "To offer a way to migrate entire workloads to the cloud without any obstacles."
+          isCorrect: false
+          explanation: "Migration is a crucial part of every cloud adoption process, but it's not the only objective of the Cloud Adoption Framework."
+        - content: "To offer a complete list of available cloud services with their descriptions."
+          isCorrect: false
+          explanation: "The Cloud Adoption Framework doesn't provide such a list. Microsoft Azure documentation is the recommended source of information about specific Azure services."
+
+    - content: "What is the Well Architected Framework?"
+      choices:
+        - content: "A framework to develop resilient and fault-tolerant serverless applications."
+          isCorrect: false
+          explanation: "The Well-Architected Framework is a tool designed to help developers build and operate reliable, secure, efficient, and cost-effective systems in the cloud. It applies to all types of cloud architectures, not just serverless."
+        - content: "A framework that focuses exclusively on security-related design decisions for cloud-based applications."
+          isCorrect: false
+          explanation: "While the Well-Architected Framework emphasizes security principles, it covers more timeless than just security, including cost optimization, reliability, performance efficiency."
+        - content: "An AWS blueprint designed to expedite deployment times using predefined infrastructure stacks."
+          isCorrect: false
+          explanation: "The Well-Architected Framework is not an AWS-specific framework. Its focus on architecture patterns that can be applied to any cloud provider as well companies own data centers."
+        - content: "A methodology developed by Amazon Web Services (AWS) to review and critique cloud architectures."
+          isCorrect: true
+          explanation: "The Well-Architected Framework is a systematic approach that provides customers with a consistent and methodically validated assessment of their cloud architectures based on available best practices."
+
+    - content: "What are Azure Landing Zones?"
+      choices:
+        - content: "A feature in Azure used to authenticate device access to cloud environments."
+          isCorrect: false
+          explanation: "Azure landing zones don't relate to device management or authentication."
+        - content: "A system designed to manage identity and access for cloud resources in Azure."
+          isCorrect: false
+          explanation: "Identity and Access Management are concerns handled by Azure Active Directory, but Azure Landing Zones aren't directly related to user identities."
+        - content: "A prescribed architecture for configuring a secure and scalable cloud environment."
+          isCorrect: true
+          explanation: "Azure Landing Zones provide an automated and prescriptive reference implementation to rapidly set up a comprehensive secure cloud baseline."
+        - content: "A feature on Azure that offers multiple payment methods to organizations of different financial abilities."
+          isCorrect: false
+          explanation: "Azure offers multiple payment methods, but Azure Landing Zones are not directly related to billing or payment methods."
+
+    - content: "What is DevSecOps?"
+      choices:
+        - content: "A practice that ensures system uptime by maintaining optimal replica volumes."
+          isCorrect: false
+          explanation: "DevSecOps isn't concerned with replica volumes of systems, which refers to replication strategies used in high availability deployment scenarios."
+        - content: "A security model used by developers to certify that code changes do not affect production environments."
+          isCorrect: false
+          explanation: "There's no certification process involved in DevSecOps. The idea behind DevSecOps is that security mechanisms are integrated throughout the development cycle to increase the overall security posture."
+        - content: "A set of principles designed to integrate security testing and evaluation into the software development lifecycle (SDLC)."
+          isCorrect: true
+          explanation: "DevSecOps is short for Development, Security, and Operations, which aims to integrate security activities into all stages of the SDLC to achieve application and infrastructure resilience."
+        - content: "A method to monitor customer satisfaction after every release of the product to ensure continuous improvement."
+          isCorrect: false
+          explanation: "While monitoring customer satisfaction is essential, it's not directly related to DevSecOps. Monitoring is also more of an Operations concern than something taken care of within the Development phase."
