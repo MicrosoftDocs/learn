@@ -44,10 +44,10 @@ The Microsoft cloud security benchmark (MCSB) includes a collection of high-impa
 ## Implement Microsoft cloud security benchmark
 
 - **Plan** your MCSB implementation by reviewing the documentation for the enterprise controls and service-specific baselines to plan your control framework and how it maps to guidance like Center for Internet Security (CIS) Controls, National Institute of Standards and Technology (NIST), and the Payment Card Industry Data Security Standard (PCI-DSS) framework.
-- **Monitor** your compliance with MCSB status (and other control sets) using the Microsoft Defender for Cloud – Regulatory Compliance Dashboard for your multicloud environment. .
+- **Monitor** your compliance with MCSB status (and other control sets) using the Microsoft Defender for Cloud – Regulatory Compliance Dashboard for your multicloud environment.
 - **Establish** guardrails to automate secure configurations and enforce compliance with MCSB (and other requirements in your organization) using features such as Azure Blueprints, Azure Policy, or the equivalent technologies from other cloud platforms.
 
-## Common Use Cases
+## Common use cases
 
 Microsoft cloud security benchmark can often be used to address common challenges for customers or service partners who are:
 

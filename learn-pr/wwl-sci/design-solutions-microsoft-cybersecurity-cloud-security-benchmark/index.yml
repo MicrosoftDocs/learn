@@ -32,8 +32,8 @@ subjects:
   - security
   - cloud-security
 units:
-- learn.design-solutions-microsoft-cybersecurity-cloud-security-benchmark.introduction-to-mcra-and-mcsb
-- learn.design-solutions-microsoft-cybersecurity-cloud-security-benchmark.design-solutions-with-best-practices-for-capabilities-and-controls
+- learn.design-solutions-microsoft-cybersecurity-cloud-security-benchmark.introduction-reference-architecture-benchmark
+- learn.design-solutions-microsoft-cybersecurity-cloud-security-benchmark.design-solutions-best-practices-capabilities-controls
 - learn.design-solutions-microsoft-cybersecurity-cloud-security-benchmark.design-solutions-with-best-practices-for-attack-protection
 - learn.design-solutions-microsoft-cybersecurity-cloud-security-benchmark.knowledge-check
 - learn.design-solutions-microsoft-cybersecurity-cloud-security-benchmark.summary

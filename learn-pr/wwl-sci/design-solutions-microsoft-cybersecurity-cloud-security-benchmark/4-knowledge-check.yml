@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-solutions-microsoft-cybersecurity-cloud-security-benchmark.knowledge-check
-title: Knowledge check
+title: Knowledge check - Design solution with Microsoft Cybersecurity Reference Architecture and Microsoft cloud security benchmark
 metadata:
   title: Knowledge check
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: "Knowledge check for module: Design solution with Microsoft Cybersecurity Reference Architecture and Microsoft cloud security benchmark."
   ms.date: 3/14/2023
   author: hrasheed-msft
   ms.author: hrasheed
@@ -27,58 +27,56 @@ durationInMinutes: 1
 content: |
 quiz:
   questions:
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+    - content: "Which of the following best defines the objective of a cloud reference architecture like MCRA from Microsoft?"
+      choices:
+      - content: "To handle all cloud migration projects with the same approach"
+        isCorrect: false
+        explanation: "MCRA does provide guidance on cloud migration, but it takes a wider view to provide an end-to-end, interdependent approach to cybersecurity across multiple scenarios, including migration."
+      - content: "To prescribe a set of tools and vendors for building secure clouds"
+        isCorrect: false
+        explanation: "Although MCRA provides specific tools and vendor selection guidance, its primary role is to provide an interoperable architecture that facilitates effective cybersecurity across different scenarios and technology stacks."
+      - content: "To define a secure cloud architecture that can be implemented anywhere with any technology stack"
+        isCorrect: true
+        explanation: "MCRA is designed to provide security-focused reference architecture guidance that can apply almost anywhere no matter what underlying technologies, workloads, or data types are involved."
+      - content: "To focus only on technical security tips for cloud architects"
+        isCorrect: false
+        explanation: "MCRA includes technical guidance, but it has much more expansive goals for providing comprehensive security guidance at different levels of abstraction."
+    - content: "What is a key benefit of using architectural patterns, such as those found in the MCRA reference architecture when addressing cloud security concerns?"
+      choices:
+      - content: "Patterns eliminate the need for detailed security assessment for each individual project"
+        isCorrect: false
+        explanation: "Architectural patterns do cut down the time required for security evaluation, but security assessments should still be carried out to ensure the right pattern is chosen and customized for each project's distinct requirements."
+      - content: "Patterns reduce costs by limiting the number of components, platforms, and architectures that must be secured"
+        isCorrect: true
+        explanation: "Using architectural patterns can reduce staffing needs, complexity, and risk exposure, bringing financial benefits that arise from economies of reuse and simplification rather than reducing the number of platforms, components or architectures alone."
+      - content: "Patterns enable software to adapt to any type of threat in real-time"
+        isCorrect: false
+        explanation: "Architectural patterns can help provide for efficient responses to certain classes of arising threats, but it is not dynamic enough to handle every possible attack vector."
+    - content: "What is the purpose of the Microsoft Cloud Security Benchmark?"
+      choices:
+      - content: "To provide a set of recommended security configurations and best practices for Microsoft cloud services."
+        isCorrect: true
+        explanation: "The Microsoft Cloud Security Benchmark is designed to provide a set of recommended security configurations and best practices for Microsoft cloud services."
+      - content: "To provide a comprehensive list of all possible security threats to Microsoft cloud services."
+        isCorrect: false
+        explanation: "The Microsoft Cloud Security Benchmark is not a comprehensive list of all possible security threats to Microsoft cloud services. Rather, it provides recommended security configurations and best practices."
+      - content: "To provide a list of all security breaches that have occurred in Microsoft cloud services."
+        isCorrect: false
+        explanation: "The Microsoft Cloud Security Benchmark does not provide a list of all security breaches that have occurred in Microsoft cloud services."
+      - content: "To provide a tool for testing the vulnerability of Microsoft cloud services to attacks."
+        isCorrect: false
+        explanation: "The Microsoft Cloud Security Benchmark is not a tool for testing cloud service vulnerabilities."
+    - content: "What is the difference between defensive and detective security controls, as discussed in the Microsoft cloud security benchmark"
+      choices:
+        - content: "Detective controls focus on changing user behavior while defensive controls monitor for incidents"
+          isCorrect: false
+          explanation: "This description reverses the meanings of the two types of controls. Defensive controls aim to reduce the likelihood and impact of security incidents while Detective controls aim to address Incidents when they happen (including looking for indicators of compromise like log data)."
+        - content: "Defensive controls proactively prevent security incidents while Detective controls detect and respond to these incidents after they occur"
+          isCorrect: true
+          explanation: "This text gives the correct explanation of the differences between the two types of controls as outlined in the 2021 Cloud Security Benchmark."
+        - content: "Detective controls rely on passive monitoring of system logs while defensive controls require active scanning"
+          isCorrect: false
+          explanation: "This distinction is not accurate as both types of controls might necessitate either active surveillance, passive monitoring, or a mix of the two techniques."
+        - content: "Defensive controls rely entirely on pre-emptive configuration while Detective controls mostly operate via heuristic algorithms"
+          isCorrect: false
+          explanation: "This distinction is also not accurate as both types of control measures take advantage of heuristics and machine learning algorithms when feasible."
