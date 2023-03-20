@@ -25,7 +25,7 @@ As you consider and evaluate public cloud services, it’s critical to understan
 
 In an on-premises datacenter, you own the whole stack. As you move to the cloud some responsibilities transfer to Microsoft. The following diagram illustrates the areas of responsibility between you and Microsoft, according to the type of deployment of your stack.
 
-![Diagram showing responsibility zones.](https://learn.microsoft.com/azure/security/fundamentals/media/shared-responsibility/shared-responsibility.svg)
+![Diagram showing responsibility zones.](../media/shared-responsibility.svg)
 
 For all cloud deployment types, you own your data and identities. You are responsible for protecting the security of your data and identities, on-premises resources, and the cloud components you control (which varies by service type).
 

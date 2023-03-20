@@ -15,6 +15,5 @@ Learning Objectives
 - [Azure security baseline for App Service | Microsoft Learn](https://learn.microsoft.com/security/benchmark/azure/baselines/app-service-security-baseline)
 - [Azure security baseline for Azure Kubernetes Service | Microsoft Learn](https://learn.microsoft.com/security/benchmark/azure/baselines/aks-security-baseline)
 
-
->![Note]
+> [!NOTE]
 > This module contains AI-generated content
