@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.azure-security-center.just-time-vm-access
-title: Implement Just-in-time VM access
+title: Implement just-in-time VM access
 metadata:
-  title: Implement Just-in-time VM access
+  title: Implement just-in-time VM access
   description: "Implement Just-in-time VM access"
   ms.date: 03/20/2023
   author: wwlpublish
