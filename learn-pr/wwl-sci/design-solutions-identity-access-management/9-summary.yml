@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-solutions-identity-access-management.summary
-title: Summary
+title: Summary - Design solutions for identity and access management
 metadata:
-  title: summary
+  title: Summary - Design solutions for identity and access management
   description: "You'll learn about various strategies for managing identities and access to resources, including hybrid and multi-cloud scenarios, external identities, and conditional access."
   ms.date: 3/14/2023
   author: hrasheed-msft

@@ -37,13 +37,13 @@ subjects:
   - security
   - cloud-security
 units:
-- learn.design-solutions-identity-access-management.design-cloud,-hybrid-and-multi-cloud-access-strategies
-- learn.design-solutions-identity-access-management.design-a-solution-for-azure-active-directory-azure-ad
-- learn.design-solutions-identity-access-management.design-a-solution-for-external-identities
-- learn.design-solutions-identity-access-management.design-modern-authentication-and-authorization-strategies
-- learn.design-solutions-identity-access-management.align-conditional-access-and-zero-trust
-- learn.design-solutions-identity-access-management.specify-requirements-to-secure-active-directory-domain-services-adds
-- learn.design-solutions-identity-access-management.design-a-solution-to-manage-secrets-keys-and-certificates
+- learn.design-solutions-identity-access-management.design-cloud-hybrid-multi-cloud-access-strategies
+- learn.design-solutions-identity-access-management.design-solution-azure-active-directory
+- learn.design-solutions-identity-access-management.design-solution-external-identities
+- learn.design-solutions-identity-access-management.design-modern-authentication-authorization-strategies
+- learn.design-solutions-identity-access-management.align-conditional-access-zero-trust
+- learn.design-solutions-identity-access-management.specify-requirements-secure-active-directory-domain-services
+- learn.design-solutions-identity-access-management.design-solution-manage-secrets-keys-certificates
 - learn.design-solutions-identity-access-management.knowledge-check
 - learn.design-solutions-identity-access-management.summary
 badge:

@@ -11,7 +11,6 @@ The following capabilities make up External Identities:
 -   **Azure AD B2C** - Publish modern SaaS apps or custom-developed apps (excluding Microsoft apps) to consumers and customers, while using Azure AD B2C for identity and access management.
     
 -   **Azure AD multi-tenant organization** - Collaborate with multiple tenants in a single Azure AD organization via cross-tenant synchronization.
-    
 
 Depending on how you want to interact with external organizations and the types of resources you need to share, you can use a combination of these capabilities.
 
