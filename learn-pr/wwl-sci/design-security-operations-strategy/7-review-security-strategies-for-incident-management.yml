@@ -4,13 +4,11 @@ title: Review security strategies for incident management
 metadata:
   title: Review security strategies for incident management
   description: "Review security strategies for incident management"
-  ms.date: 10/11/2022
+  ms.date: 03/20/2023
   author: wwlpublish
   ms.author: hrasheed
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 10
 content: |
   [!include[](includes/7-review-security-strategies-for-incident-management.md)]

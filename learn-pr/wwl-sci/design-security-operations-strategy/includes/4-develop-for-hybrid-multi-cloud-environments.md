@@ -1,3 +1,4 @@
+
 A hybrid cloud combines a private cloud (on-premises infrastructure)
 with a public cloud (computing services offered by third-party providers
 over the public internet). Hybrid clouds allow data and applications to
