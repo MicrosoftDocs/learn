@@ -29,7 +29,7 @@ To ensure that your `MakeChange` method is working correctly, your code must ver
 
 ## Setup
 
-Use the following steps to prepare for the Guided project exercises:
+Use the following steps to prepare for the Challenge project exercises:
 
 1. To download a zip file containing the Starter project code, select the following link: [Lab Files](https://github.com/MicrosoftLearning/Challenge-project-debugging-CSharp/archive/refs/heads/main.zip).
 
@@ -51,9 +51,9 @@ Use the following steps to prepare for the Guided project exercises:
 
     1. Open Visual Studio Code in your development environment.
     1. In Visual Studio Code, on the **File** menu, select **Open Folder**.
-    1. Navigate to the Windows Desktop folder and locate the "GuidedProject" folder.
+    1. Navigate to the Windows Desktop folder and locate the "ChallengeProject" folder.
     1. Select **ChallengeProject** and then select **Select Folder**.
 
         The Visual Studio Code EXPLORER view should show the **ChallengeProject** folder and two subfolders named **Final** and **Starter**.
 
-You're now ready to begin the Guided project exercises. Good luck!
+You're now ready to begin the Challenge project exercises. Good luck!

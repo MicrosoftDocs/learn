@@ -7,7 +7,7 @@ Suppose you're part of a team that's working on a cash register application. You
 
 In this module, you complete the following tasks:
 
-- Run the cash register application and review the generated output to identify the logic issue.
+- Run the cash register application and review the generated output to identify a logic issue.
 - Use the Visual Studio Code debugger tools to isolate and fix the issue.
 
 By the end of this module, your `MakeChange` method will successfully balance the money till during a simulation of daily transactions.
@@ -17,7 +17,7 @@ By the end of this module, your `MakeChange` method will successfully balance th
 
 ## Learning objectives
 
-In this module, you demonstrate your ability to: 
+In this module, you demonstrate your ability to:
 
 - Use the Visual Studio Code debugger tools to identify and correct an issue in your code logic.
 
