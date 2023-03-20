@@ -20824,6 +20824,11 @@
       "source_path": "learn-pr/wwl-hedt/get-tips-tricks-teach-mb-920-dynamics-365-fundamentals/9-knowledge-check.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-mb-920-dynamics-365-fundamentals/11-knowledge-check",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-hedt/get-tips-tricks-teach-mb-920-dynamics-365-fundamentals/3-learn-fundamentals-dynamics-365-supply-chain-management.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-mb-920-dynamics-365-fundamentals/",
+      "redirect_document_id": false
     }
   ]
 }
