@@ -2,16 +2,16 @@
 uid: learn.design-solutions-microsoft-cybersecurity-cloud-security-benchmark
 metadata:
   title: Design solutions that align with the Microsoft Cybersecurity Reference Architecture (MCRA) and Microsoft cloud security benchmark (MCSB)
-  description: "You'll learn about the Microsoft Cybersecurity Reference Architecture (MCRA) and Microsoft cloud security benchmark (MCSB) and how you can use them to design more secure solutions."
+  description: "You learn about the Microsoft Cybersecurity Reference Architecture (MCRA) and Microsoft cloud security benchmark (MCSB) and how you can use them to design more secure solutions."
   ms.date: 3/14/2023
   author: hrasheed-msft
   ms.author: hrasheed
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 title: Design solutions that align with the Microsoft Cybersecurity Reference Architecture (MCRA) and Microsoft cloud security benchmark (MCSB)
-summary: "You'll learn about the Microsoft Cybersecurity Reference Architecture (MCRA) and Microsoft cloud security benchmark (MCSB) and how you can use them to design more secure solutions."
+summary: "You learn about the Microsoft Cybersecurity Reference Architecture (MCRA) and Microsoft cloud security benchmark (MCSB) and how you can use them to design more secure solutions."
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you are able to:
     - Understand how to use Microsoft Cybersecurity Reference Architecture (MCRA) and Microsoft cloud security benchmark (MCSB) to design more secure solutions.
 prerequisites: |
   - Conceptual knowledge of security policies, requirements, zero trust architecture, and management of hybrid environments.
