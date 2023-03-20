@@ -46,7 +46,7 @@ You can also export monitoring data from Azure Monitor into other systems so you
 
 The following diagram gives a high-level view of Azure Monitor.
 
-[![Diagram that shows an overview of Azure Monitor.](https://learn.microsoft.com/azure/azure-monitor/media/overview/overview-02-2023.png)](https://learn.microsoft.com/azure/azure-monitor/media/overview/overview-02-2023.png#lightbox)
+![Diagram that shows an overview of Azure Monitor.](../media/overview-02-2023.png)
 
 The diagram depicts the Azure Monitor system components:
 
