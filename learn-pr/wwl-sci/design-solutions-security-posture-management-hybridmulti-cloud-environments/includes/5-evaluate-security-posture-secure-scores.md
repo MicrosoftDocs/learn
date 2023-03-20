@@ -17,17 +17,17 @@ Your secure score is shown in the following locations in Defender for Cloud's po
 
 -   In a tile on Defender for Cloud's **Overview** (main dashboard):
     
-    ![The secure score on Defender for Cloud's dashboard](../media/secure-score-security-controls/score-on-main-dashboard.png)
+    ![The secure score on Defender for Cloud's dashboard](../media/score-on-main-dashboard.png)
     
 -   In the dedicated **Secure score** page you can see the secure score for your subscription and your management groups:
     
-    ![The secure score for subscriptions on Defender for Cloud's secure score page](../media/secure-score-security-controls/score-on-dedicated-dashboard.png)
+    ![The secure score for subscriptions on Defender for Cloud's secure score page](../media/score-on-dedicated-dashboard.png)
     
-    ![The secure score for management groups on Defender for Cloud's secure score page](../media/secure-score-security-controls/secure-score-management-groups.png)
+    ![The secure score for management groups on Defender for Cloud's secure score page](../media/secure-score-management-groups.png)
         
 -   At the top of the **Recommendations** page:
     
-    ![The secure score on Defender for Cloud's recommendations page](../media/secure-score-security-controls/score-on-recommendations-page.png)
+    ![The secure score on Defender for Cloud's recommendations page](../media/score-on-recommendations-page.png)
     
 
 ### Secure Score Over Time report in workbooks page
