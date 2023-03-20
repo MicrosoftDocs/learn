@@ -56,7 +56,7 @@ Azure NetApp Files offers a complete range of data-management features such as n
 
 ### Instance access
 
-Although Azure NetApp Files instances run on bare-metal NetApp devices, that hardware resides in an Azure datacenter and is configured to be a first-party Azure service that's sold and supported by Microsoft. This means that you can set up an Azure NetApp Files instance in just a few minutes. Also, because Azure NetApp Files is a full Azure service, you can manage your instances the same way you do any other Azure service such as the Azure portal, Azure command-line interface (Azure CLI), Azure PowerShell, or Azure REST API.
+Azure NetApp Files instances run on bare-metal NetApp devices. The hardware resides in an Azure datacenter and is configured to be a first-party Azure service, sold and supported by Microsoft. This structure means that you can set up an Azure NetApp Files instance in just a few minutes. Also, because Azure NetApp Files is a full Azure service, you can manage your instances the same way you do any other Azure service such as the Azure portal, Azure command-line interface (Azure CLI), Azure PowerShell, or Azure REST API.
 
 ### Snapshots
 
@@ -75,7 +75,7 @@ An Azure NetApp Files snapshot only manipulates block pointers, creating a "froz
 - Speed. Creating a snapshot is near-instantaneous. No matter what volume size you're working with, creating a snapshot takes only a few seconds.
 - Space. A snapshot consumes minimal storage space because it doesn't copy the data blocks of the entire volume. Two snapshots taken in sequence differ only by the blocks added or changed in the time interval between the two.
 
-You can create up to 255 snapshots per volume. Creating a snapshot doesn't impact volume performance. You can create and maintain snapshots in two ways:
+You can create up to 255 snapshots per volume. Creating a snapshot doesn't affect volume performance. You can create and maintain snapshots in two ways:
 
 - Manual. Create on-demand snapshots by using the Azure portal, Azure CLI, Azure PowerShell, or Azure REST API.
 - Automatic. Automate snapshot creation by using snapshot policies or a snapshot tool, such as AzAcSnap. You can set up snapshot policies by using the Azure portal, Azure CLI, Azure PowerShell, or Azure REST API.
@@ -89,8 +89,8 @@ Azure NetApp Files replication functionality provides data protection through cr
 The point of creating volume snapshots is to recover data that has been corrupted or has been accidentally deleted, overwritten, or modified. Azure NetApp Files gives you three ways to recover data by using snapshots:
 
 - Restore one or more files or directories from a snapshot.
-- Restore a snapshot to a new volume. Called *cloning* the volume, because you're creating an identical copy of the volume in a new location.
-- Restore a snapshot in-place. Called *reverting* the volume, because it returns the volume to the state it was in when you created the snapshot.
+- *Clone* the volume. Restore a snapshot to a new volume by creating an identical copy of the volume in a new location.
+- *Revert* the volume. Restore a snapshot in-place by returning the volume to the state it was in when you created the snapshot.
 
 ## How to give your web development team access to the same data
 

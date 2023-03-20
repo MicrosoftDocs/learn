@@ -10,7 +10,7 @@ In this unit, you learn about:
 
 One of the most important components of Azure NetApp Files is the storage hierarchy, which determines how much storage your workloads get and the maximum available throughput. Understanding these concepts is crucial to helping you decide if and how you want to migrate any on-premises workloads to Azure.
 
-:::image type="content" source="../media/3-what-is-azure-netapp-files-storage-hierarchy.png" alt-text="Diagram depicting the storage hierarchy of Azure NetApp Files, with the Azure subscription and one or more Azure NetApp Files accounts, each of which has one or more capacity pools, each of which has one or more storage volumes." lightbox="../media/3-what-is-azure-netapp-files-storage-hierarchy.png":::
+:::image type="content" source="../media/3-what-is-azure-netapp-files-storage-hierarchy.png" alt-text="Diagram depicting the storage hierarchy of Azure NetApp Files. The hierarchy consists of the Azure subscription and one or more Azure NetApp Files accounts. Each account has one or more capacity pools, and each pool has one or more storage volumes." lightbox="../media/3-what-is-azure-netapp-files-storage-hierarchy.png":::
 
 Azure NetApp Files storage hierarchy consists of the following elements:
 
@@ -37,7 +37,7 @@ Preparing Azure NetApp Files for a migration from your datacenter involves sever
 1. Delegate a subnet of your Azure virtual network to Azure NetApp Files.
 1. Create the volumes needed by each component of your workload.
 
-For example, suppose your organization uses SAP with the HANA database and you want to set up Azure NetApp Files to migrate this workload to the cloud. For SAP HANA, the Premium tier is a good place to start. For maximum flexibility, use a manual QoS capacity pool so that you can assign the capacity and throughput for a volume independently. The total throughput that you can assign to volumes in a manual QoS capacity pool is determined by multiplying the capacity pool size by the service level throughput value per TiB. For instance, a 20-TiB capacity pool with the Premium service level has a total throughput capacity of 1280 MiB/s (64 MiB/s x 20) available for the volumes.
+For example, suppose your organization uses SAP with the HANA database and you want to set up Azure NetApp Files to migrate this workload to the cloud. For SAP HANA, the Premium tier is a good place to start. For maximum flexibility, use a manual QoS capacity pool so that you can assign the capacity and throughput for a volume independently. To determine the total throughput that you can assign to volumes in a manual QoS capacity pool, multiply the capacity pool size by the service level throughput value per TiB. For instance, a 20-TiB capacity pool with the Premium service level has a total throughput capacity of 1280 MiB/s (64 MiB/s x 20) available for the volumes.
 
 In the SAP HANA migration scenario, this capacity pool can be used to create the following volumes.
 
@@ -49,7 +49,7 @@ In the SAP HANA migration scenario, this capacity pool can be used to create the
 |Backup     | 4.5 TiB        | 256 MiB/s        |
 
 
-:::image type="content" source="../media/3-what-is-azure-netapp-files-example.png" alt-text="Illustration of the scenarios for the SAP HANA volumes with a graph comparing the relative size and throughput for each of the four volumes in the SAP HANA migration scenario." lightbox="../media/3-what-is-azure-netapp-files-example.png":::
+:::image type="content" source="../media/3-what-is-azure-netapp-files-example.png" alt-text="Illustration of the scenarios for the SAP HANA volumes. Including a graph that compares the relative size and throughput for each of the four volumes in the SAP HANA migration scenario." lightbox="../media/3-what-is-azure-netapp-files-example.png":::
 
 After your volumes are set up, you can use any of the following tools to migrate data to Azure NetApp Files:
 
