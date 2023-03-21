@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.design-solutions-network-security
+metadata:
+  title: Design solutions for network security
+  description: "You learn how to design secure network solutions using techniques like network segmentation, traffic filtering, network monitoring and posture management."
+  ms.date: 3/14/2023
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+title: Design solutions for network security
+summary: "You learn how to design secure network solutions using techniques like network segmentation, traffic filtering, network monitoring and posture management."
+abstract: |
+  By the end of this module, you are able to:
+  -  Design solutions for network segmentation
+  -   Design solutions for filtering traffic with network security groups
+  -   Design solutions for network posture measurement
+  -   Design solutions for network monitoring
+prerequisites: |
+  -   Advanced experience and knowledge in identity and access, platform protection, security operations, securing data, and securing applications.
+  -  Experience with hybrid and cloud implementations.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- security-engineer
+- solution-architect
+products:
+- azure
+- defender-for-cloud
+- defender-for-cloud-apps
+- defender-identity
+- microsoft-sentinel
+subjects:
+  - security
+  - cloud-security
+units:
+- learn.design-solutions-network-security.design-solutions-for-network-segmentation
+- learn.design-solutions-network-security.design-solutions-for-traffic-filtering-with-network-security-groups
+- learn.design-solutions-network-security.design-solutions-for-network-posture-management
+- learn.design-solutions-network-security.design-solutions-for-network-monitoring
+- learn.design-solutions-network-security.knowledge-check
+- learn.design-solutions-network-security.summary
+badge:
+  uid: learn.design-solutions-network-security.badge
