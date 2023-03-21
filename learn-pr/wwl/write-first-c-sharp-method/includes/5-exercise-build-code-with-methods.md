@@ -72,7 +72,7 @@ In this task, you'll identify the steps needed to solve the problem. If you look
 
 ### Develop your solution
 
-Now that you you have all the placeholder methods needed to solve the problem, you can begin to focus on the details of your solution. Keep in mind that the input format of the IPv4 address will be a string consisting of digits separated by dots. Let's get stared!
+Now that you have all the placeholder methods needed to solve the problem, you can begin to focus on the details of your solution. Keep in mind that the input format of the IPv4 address will be a string consisting of digits separated by dots. Let's get stared!
 
 1. At the beginning of your program, create variables to store the input and validation statuses:
 
@@ -131,7 +131,7 @@ Now that you you have all the placeholder methods needed to solve the problem, y
     }
     ```
 
-    Take a moment to consider how the rule translate to code. 
+    Take a moment to consider how the rule translates to code. 
     
     The second rule states that the numbers in the IPv4 address must not contain leading zeroes. So the method needs to check numbers for leading zeroes while accepting `0` as a valid number. If all the numbers have valid zeroes, `validZeroes` should be equal to `true`, and `false` otherwise. So in this code, you check that each number with more than one digit does not begin with a zero.
 
@@ -150,7 +150,7 @@ Now that you you have all the placeholder methods needed to solve the problem, y
     }
     ```
 
-    The **return** statement terminates execution of the method and returns control to the method caller. By adding a `return` statement after `validZeroes = false`, the method will terminate after the first invalid zero is found. If no invalid zero is found, the method will terminate after setting `validZeroes` to `true`. Let's move on to the next method.
+    The **return** statement terminates execution of the method and returns control to the method caller. Adding a `return` statement after `validZeroes = false` terminates the method after the first invalid zero is found. If no invalid zero is found, the method will terminate after setting `validZeroes` to `true`. Let's move on to the next method.
 
 1. Update the `ValidateRange` method as follows:
     
@@ -185,7 +185,7 @@ Now that you you have all the placeholder methods needed to solve the problem, y
 
 ### Complete your solution
 
-Now that you you have all the methods completed to validate an IP address, it's time to revisit your initial solution. In this task, you'll add more input values and prepare to test your code.
+Now that you have all the methods completed to validate an IP address, it's time to revisit your initial solution. In this task, you'll add more input values and prepare to test your code.
 
 1. Locate the following code you wrote earlier in the program:
 

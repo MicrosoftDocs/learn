@@ -98,9 +98,9 @@ In this task, you'll take a look at an application that tracks medication times 
     Console.WriteLine();
     ```
 
-1. Notice that there's a `foreach` loop that is repeated with identical code. The loop formats the integer values in `times` to a military time format and displays them. There's also another repeated `for` loop to adjust the times according to the time zone difference. 
+1. Notice that there's a `foreach` loop that's repeated with identical code. The loop formats the integer values in `times` to a military time format and displays them. There's also another repeated `for` loop to adjust the times according to the time zone difference. 
 
-    As you write code, you may find yourself repeating blocks of code to do the same task. That is a perfect opportunity to consolidate your code by using a method to perform the task instead. Let's practice!
+    As you write code, you may find yourself repeating blocks of code to do the same task. That's a perfect opportunity to consolidate your code by using a method to perform the task instead. Let's practice!
 
 ### Crete methods to perform the repeated tasks
 

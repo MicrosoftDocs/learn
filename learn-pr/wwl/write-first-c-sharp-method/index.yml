@@ -2,8 +2,8 @@
 uid: learn.wwl.write-first-c-sharp-method
 metadata:
   title: Write your first C# method
-  description: "Write your first C# method"
-  ms.date: 03/17/2023
+  description: "This module covers the syntax of creating and executing methods. Creating reusable code and structuring solutions using methods are reviewed."
+  ms.date: 03/21/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial
