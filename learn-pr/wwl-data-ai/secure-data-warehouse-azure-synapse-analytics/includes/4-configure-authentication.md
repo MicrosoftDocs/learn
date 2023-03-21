@@ -67,7 +67,7 @@ This enables you to operate in environments that use Conditional Access policies
 
 If you are unable to use a managed identity to access resources such as Azure Data Lake then you can use storage account keys and shared access signatures.
 
-With storage account keys. Azure creates two of these keys (primary and secondary) for each storage account you create. The keys give access to everything in the account. You'll find the storage account keys in the Azure portal view of the storage account. Just select **Settings**, and then click **Access keys**.
+With a storage account key. Azure creates two of these keys (primary and secondary) for each storage account you create. The keys give access to everything in the account. You'll find the storage account keys in the Azure portal view of the storage account. Just select **Settings**, and then click **Access keys**.
 
 As a best practice, you shouldn't share storage account keys, and you can use Azure Key Vault to manage and secure the keys. 
 
