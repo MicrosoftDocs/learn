@@ -9,7 +9,7 @@ This section demonstrates running the .NET Upgrade Assistant against an existing
 It's possible install the .NET Upgrade Assistant extension from the extension manager in Visual Studio, but for this exercise you're going to use the Visual Studio Installer. This way, you can also double-check that you have the required components to build the sample app.
 
 1. Launch the Visual Studio Installer and select **Modify** on the Visual Studio 2022 installation.
-1. On the **Workloads** tab, ensure the ASP.NET and web development is selected.
+1. On the **Workloads** tab, ensure the **ASP.NET and web development** workload is selected.
 1. On the **Individual components** tab, search for the following components and ensure they are selected:
     - .NET Framework 4.8.1 targeting pack
     - .NET Upgrade Assistant
@@ -17,7 +17,7 @@ It's possible install the .NET Upgrade Assistant extension from the extension ma
 
 ## Obtain the sample code
 
-Let's obtain the sample app. It's just a the standard boilerplate app generated from the ASP.NET MVC template.
+Let's obtain the sample app. It's just a standard boilerplate app generated from the ASP.NET MVC template.
 
 1. Open Visual Studio 2022.
 1. Using either the **Clone a repository** button on the quick start window or the **Git > Clone** command on the menu bar, download and open the sample repository from `https://github.com/MicrosoftDocs/mslearn-modernize-aspnet-framework-to-core`.
@@ -32,7 +32,7 @@ Let's obtain the sample app. It's just a the standard boilerplate app generated 
 
     :::image type="content" source="../media/solution-explorer.png" alt-text="Solution Explorer with the project's context menu displayed and the Upgrade command highlighted.":::
 
-    The **Upgrade Assistant** tab opens. Since the app to be upgraded is an ASP.NET MVC app, so the only option available is **Side-by-side incremental project upgrade**.
+    The **Upgrade Assistant** tab opens. Since the app to be upgraded is an ASP.NET MVC app, the only option available is **Side-by-side incremental project upgrade**.
 
     :::image type="content" source="../media/upgrade-assistant-welcome.png" alt-text="The welcome screen to the Upgrade Assistant. Only one option is displayed: Side-by-side incremental project upgrade":::
 
@@ -44,7 +44,7 @@ Let's obtain the sample app. It's just a the standard boilerplate app generated 
 1. Choose your target framework. Select **.NET 7.0** and select **Next**.
 1. Review the tasks to be performed:
 
-   :::image type="content" source="../media/summarize-tasks.png" alt-text="The last screen of the wizard, displaying the tasks to be done creating the new AspNetMvcTestCore project.":::
+   :::image type="content" source="../media/summarize-tasks.png" alt-text="The last screen of the wizard, displaying the tasks to be performed when creating the new AspNetMvcTestCore project.":::
 
    The Upgrade Assistant will:
 
@@ -67,11 +67,11 @@ From here, you can move classes and controllers incrementally to the new project
 
    :::image type="content" source="../media/endpoints-explorer.png" alt-text="The endpoints explorer step showing the detected endpoints, all of which or on HomeController.":::
 
-   The detected routes and endpoints are displayed. Note that the endpoints are all actions on the Home controller.
+   The detected routes and endpoints are displayed. Note that the endpoints are all actions on the *Home* controller.
 
 1. Select the **Upgrade** dropdown and select **Controller**.
-1. In the **Select controller to upgrade** dialog, select *AspNewMvcTest.Controllers.HomeController* and select **Upgrade**.
-1. On the **Select components** dialog, expand all the nodes on the treeview. 
+1. In the **Select controller to upgrade** dialog, select **AspNewMvcTest.Controllers.HomeController** and select **Upgrade**.
+1. On the **Select components** dialog, expand all the nodes on the treeview.
 
    :::image type="content" source="../media/select-components.png" alt-text="The Select Components dialog with the treeview expanded.":::
 
@@ -106,9 +106,6 @@ Static files that should be served by the web server should be moved to an appro
    - *jquery.validate.min.js*
    - *jquery.validate.unobtrusive.min.js*
    - *modernizr-2.8.3.js*
-
-
-
 
 ### Update static file references in the Layout page
 
@@ -149,7 +146,11 @@ Static files that should be served by the web server should be moved to an appro
 
 ### Run the application
 
-At this point, the application should build and run successfully. Congratulations!
+Return to the Summary dialog and note that no non-upgraded endpoints remain in the old .NET Framework app.
+
+:::image type="content" source="../media/endpoints-summary-done.png" alt-text="The Summary tab in the Upgrade Assistant showing all the endpoints have been migrated.":::
+
+When you press <kbd>F5</kbd>, the application should build and run successfully. Congratulations!
 
 :::image type="content" source="../media/upgraded-app-running.png" alt-text="Screenshot of browser window showing the ASP.NET Core application's home page.":::
 
