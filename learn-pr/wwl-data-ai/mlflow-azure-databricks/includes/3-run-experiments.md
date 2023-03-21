@@ -19,4 +19,4 @@ In this case, the experiment's name is the name of the notebook. It's possible t
 
 In the Azure Databricks portal, the **Experiments** page enables you to view details of each experiment run; including logged values for parameters, metrics, and other artifacts.
 
-![The Experiment menu, showing 4 runs of a given experiment.](../media/experiment-run.png)
+![Screenshot of the experiment run page.](../media/experiment-run.png)
