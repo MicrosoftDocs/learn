@@ -20631,11 +20631,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/wwl-azure/azure-security-center/6-azure-defender.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/5-azure-defender",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "learn-pr/wwl-azure/azure-security-center/5-azure-arc.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/6-azure-arc",
       "redirect_document_id": false
