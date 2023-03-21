@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.design-solutions-security-operations
+uid: learn.wwl.design-solutions-security-operations
 metadata:
   title: Design solutions for security operations
   description: "You learn techniques to design security operations capabilities including logging, auditing, Security Event Management (SIEM), Security Orchestration and Automated Response (SOAR), and security workflows."
@@ -38,15 +38,15 @@ subjects:
   - security
   - cloud-security
 units:
-- learn.design-solutions-security-operations.introduction-security-operations-secops
-- learn.design-solutions-security-operations.design-security-operations-capabilities-hybrid-multicloud-environments
-- learn.design-solutions-security-operations.design-centralized-logging-auditing
-- learn.design-solutions-security-operations.design-security-information-event-management-solutions
-- learn.design-solutions-security-operations.design-solutions-detection-response
-- learn.design-solutions-security-operations.design-solution-security-orchestration-automation-response
-- learn.design-solutions-security-operations.design-security-workflows
-- learn.design-solutions-security-operations.design-threat-detection-coverage
-- learn.design-solutions-security-operations.knowledge-check
-- learn.design-solutions-security-operations.summary
+- learn.wwl.design-solutions-security-operations.introduction-security-operations-secops
+- learn.wwl.design-solutions-security-operations.design-security-operations-capabilities-hybrid-multicloud-environments
+- learn.wwl.design-solutions-security-operations.design-centralized-logging-auditing
+- learn.wwl.design-solutions-security-operations.design-security-information-event-management-solutions
+- learn.wwl.design-solutions-security-operations.design-solutions-detection-response
+- learn.wwl.design-solutions-security-operations.design-solution-security-orchestration-automation-response
+- learn.wwl.design-solutions-security-operations.design-security-workflows
+- learn.wwl.design-solutions-security-operations.design-threat-detection-coverage
+- learn.wwl.design-solutions-security-operations.knowledge-check
+- learn.wwl.design-solutions-security-operations.summary
 badge:
-  uid: learn.design-solutions-security-operations.badge
+  uid: learn.wwl.design-solutions-security-operations.badge

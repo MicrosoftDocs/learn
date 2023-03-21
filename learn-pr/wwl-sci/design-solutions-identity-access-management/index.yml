@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.design-solutions-identity-access-management
+uid: learn.wwl.design-solutions-identity-access-management
 metadata:
   title: Design solutions for identity and access management
   description: "You learn about various strategies for managing identities and access to resources, including hybrid and multicloud scenarios, external identities, and conditional access."
@@ -37,14 +37,14 @@ subjects:
   - security
   - cloud-security
 units:
-- learn.design-solutions-identity-access-management.design-cloud-hybrid-multi-cloud-access-strategies
-- learn.design-solutions-identity-access-management.design-solution-azure-active-directory
-- learn.design-solutions-identity-access-management.design-solution-external-identities
-- learn.design-solutions-identity-access-management.design-modern-authentication-authorization-strategies
-- learn.design-solutions-identity-access-management.align-conditional-access-zero-trust
-- learn.design-solutions-identity-access-management.specify-requirements-secure-active-directory-domain-services
-- learn.design-solutions-identity-access-management.design-solution-manage-secrets-keys-certificates
-- learn.design-solutions-identity-access-management.knowledge-check
-- learn.design-solutions-identity-access-management.summary
+- learn.wwl.design-solutions-identity-access-management.design-cloud-hybrid-multi-cloud-access-strategies
+- learn.wwl.design-solutions-identity-access-management.design-solution-azure-active-directory
+- learn.wwl.design-solutions-identity-access-management.design-solution-external-identities
+- learn.wwl.design-solutions-identity-access-management.design-modern-authentication-authorization-strategies
+- learn.wwl.design-solutions-identity-access-management.align-conditional-access-zero-trust
+- learn.wwl.design-solutions-identity-access-management.specify-requirements-secure-active-directory-domain-services
+- learn.wwl.design-solutions-identity-access-management.design-solution-manage-secrets-keys-certificates
+- learn.wwl.design-solutions-identity-access-management.knowledge-check
+- learn.wwl.design-solutions-identity-access-management.summary
 badge:
-  uid: learn.design-solutions-identity-access-management.badge
+  uid: learn.wwl.design-solutions-identity-access-management.badge

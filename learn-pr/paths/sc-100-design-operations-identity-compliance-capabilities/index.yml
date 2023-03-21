@@ -29,7 +29,7 @@ products:
 modules:
 - learn.wwl.design-solutions-regulatory-compliance
 - learn.wwl.design-solutions-identity-access-management
-- learn.wwl.design-solutions-securing-privileged-access
+- learn.wwl.design-solutions-secure-privileged-access
 - learn.wwl.design-solutions-security-operations
 trophy:
   uid: learn.wwl.sc-100-design-operations-identity-compliance-capabilities.trophy
