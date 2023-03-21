@@ -11,9 +11,9 @@ metadata:
 title: Design solutions for securing applications
 summary: "You learn how to secure applications, APIs and the development process using techniques like posture management, threat modeling, and secure access for workload identities."
 abstract: |
-  By the end of this module, you are able to:
+  By the end of this module, you're able to:
     -   Evaluate security posture of existing application portfolios
-    -   Evaluate threats to business-critical applications by using threat modelling
+    -   Evaluate threats to business-critical applications by using threat modeling
     -   Design and implement a full lifecycle strategy for application security
     -   Design and implement standards and practices for securing the application development process
     -   Design a solution for workload identity to authenticate and access Azure cloud resources
@@ -43,7 +43,6 @@ units:
 - learn.design-solutions-secure-applications.evaluate-application-threats-with-threat-modeling
 - learn.design-solutions-secure-applications.design-security-lifecycle-strategy-for-applications
 - learn.design-solutions-secure-applications.design-and-implement-standards-to-secure-application-development
-- learn.design-solutions-secure-applications.map-technologies-to-application-security-requirements
 - learn.design-solutions-secure-applications.secure-access-for-workload-identities
 - learn.design-solutions-secure-applications.design-a-solution-for-api-management-and-security
 - learn.design-solutions-secure-applications.design-a-solution-for-secure-access-to-applications

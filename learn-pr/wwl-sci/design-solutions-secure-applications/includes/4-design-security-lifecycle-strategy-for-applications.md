@@ -24,9 +24,9 @@ As a container app is updated with a [revision scope-change](https://learn.micr
 
 ### Zero downtime deployment
 
-In single revision mode, Container Apps automatically ensures your app does not experience downtime when creating a new revision. The existing active revision is not deactivated until the new revision is ready. If ingress is enabled, the existing revision will continue to receive 100% of the traffic until the new revision is ready.
+In single revision mode, Container Apps automatically ensures your app doesn't experience downtime when creating a new revision. The existing active revision isn't deactivated until the new revision is ready. If ingress is enabled, the existing revision continues to receive 100% of the traffic until the new revision is ready.
 
-In multiple revision mode, you control when revisions are activated or deactivated and which revisions receive ingress traffic. If a [traffic splitting rule](https://learn.microsoft.com/azure/container-apps/revisions-manage#traffic-splitting) is configured with `latestRevision` set to `true`, traffic does not switch to the latest revision until it is ready.
+In multiple revision mode, you control when revisions are activated or deactivated and which revisions receive ingress traffic. If a [traffic splitting rule](https://learn.microsoft.com/azure/container-apps/revisions-manage#traffic-splitting) is configured with `latestRevision` set to `true`, traffic doesn't switch to the latest revision until it's ready.
 <!--
 [](https://learn.microsoft.com/azure/container-apps/application-lifecycle-management#deactivate)
 -->
@@ -50,4 +50,4 @@ The containers are shut down in the following situations:
 
 When a shutdown is initiated, the container host sends a [SIGTERM message](https://wikipedia.org/wiki/Signal_(IPC)) to your container. The code implemented in the container can respond to this operating system-level message to handle termination.
 
-If your application does not respond within 30 seconds to the `SIGTERM` message, then [SIGKILL](https://wikipedia.org/wiki/Signal_(IPC)) terminates your container.
+If your application doesn't respond within 30 seconds to the `SIGTERM` message, then [SIGKILL](https://wikipedia.org/wiki/Signal_(IPC)) terminates your container.

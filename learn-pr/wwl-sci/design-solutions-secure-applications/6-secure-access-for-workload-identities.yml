@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 1
 content: |
-  [!include[](includes/7-secure-access-for-workload-identities.md)]
+  [!include[](includes/6-secure-access-for-workload-identities.md)]

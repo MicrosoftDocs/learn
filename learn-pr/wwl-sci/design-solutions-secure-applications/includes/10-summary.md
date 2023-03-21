@@ -1,7 +1,7 @@
 You've learned how to:
 
 -   Evaluate security posture of existing application portfolios
--   Evaluate threats to business-critical applications by using threat modelling
+-   Evaluate threats to business-critical applications by using threat modeling
 -   Design and implement a full lifecycle strategy for application security
 -   Design and implement standards and practices for securing the application development process
 -   Design a solution for workload identity to authenticate and access Azure cloud resources
