@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/17/2023
+  ms.date: 03/21/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial
@@ -15,12 +15,12 @@ quiz:
   questions:
   - content: "What is the purpose of defining an optional parameter in a method?"
     choices:
-    - content: "To make a method perform an additional or different task."
+    - content: "To cause a method to perform a different task."
       isCorrect: false
-      explanation: "Incorrect. A method should generally perform the task it is named to do, and an optional parameter should reflect a trivial difference."
+      explanation: "Incorrect. A method should generally perform the task it's named to do, and an optional parameter should reflect a trivial difference."
     - content: "To overload a method."
       isCorrect: false
-      explanation: "Incorrect. Adding an optional parameter does not overload a method."
+      explanation: "Incorrect. Adding an optional parameter doesn't overload a method."
     - content: "To simplify the required parameters when a parameter isn't significant to the result."
       isCorrect: true
       explanation: "Correct! Optional parameters enable you to pass fewer arguments and accomplish the method task."
@@ -34,4 +34,4 @@ quiz:
       explanation: "Incorrect. Pseudo-code doesn't have an effect on written operations."
     - content: "To develop syntactically correct code."
       isCorrect: false
-      explanation: "Incorrect. Pseudo-code doesn't help with syntax, instead it plans tasks the code will perform."
+      explanation: "Incorrect. Pseudo-code doesn't help with syntax, instead it plans general tasks before the exact code is written."
