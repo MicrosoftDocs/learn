@@ -26,7 +26,7 @@ In Azure Active Directory (Azure AD), if another administrator or nonadministrat
     **Application Administrator**
   :::column-end:::
   :::column:::
-    Users in this role can create and manage all aspects of enterprise applications, application registrations, and application proxy settings. Users assigned to this role aren't added as owners when creating new application registrations or enterprise applications.This role also grants the ability to consent for delegated permissions and application permissions, except for application permissions for Microsoft Graph.
+    Users in this role can create and manage all aspects of enterprise applications, application registrations, and application proxy settings.Users assigned to this role aren't added as owners when creating new application registrations or enterprise applications.This role also grants the ability to consent for delegated permissions and application permissions, except for application permissions for Microsoft Graph.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -58,7 +58,7 @@ In Azure Active Directory (Azure AD), if another administrator or nonadministrat
     Attribute Assignment Administrator
   :::column-end:::
   :::column:::
-    Users with this role can assign and remove custom security attribute keys and values for supported Azure AD objects such as users, service principals, and devices.By default, Global Administrator and other administrator roles don't have permissions to read, define, or assign custom security attributes. To work with custom security attributes, you must be assigned one of the custom security attribute roles.
+    Users with this role can assign and remove custom security attribute keys and values for supported Azure AD objects such as users, service principals, and devices.By default, Global Administrator and other administrator roles don't have permissions to read, define, or assign custom security attributes.To work with custom security attributes, you must be assigned one of the custom security attribute roles.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -66,7 +66,7 @@ In Azure Active Directory (Azure AD), if another administrator or nonadministrat
     Attribute Assignment Reader
   :::column-end:::
   :::column:::
-    Users with this role can read custom security attribute keys and values for supported Azure AD objects.By default, Global Administrator and other administrator roles don't have permissions to read, define, or assign custom security attributes. You must be assigned one of the custom security attribute roles to work with custom security attributes.
+    Users with this role can read custom security attribute keys and values for supported Azure AD objects.By default, Global Administrator and other administrator roles don't have permissions to read, define, or assign custom security attributes.You must be assigned one of the custom security attribute roles to work with custom security attributes.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -90,7 +90,7 @@ In Azure Active Directory (Azure AD), if another administrator or nonadministrat
  -  Perform sensitive actions for some users.
  -  Create and manage support tickets in Azure and the Microsoft 365 admin center.
 
-Users with this role can't do the following:
+Users with this role can't do the following tasks:
 
  -  Can't change the credentials or reset MFA for members and owners of a role-assignable group.
     
@@ -115,7 +115,7 @@ Create and manage verifiable credentials.
 
 Create and manage Azure support tickets.
 
-Users with this role can't do the following:
+Users with this role can't do the following tasks:
 
 
 Can't update sensitive properties.
@@ -149,7 +149,7 @@ Can't manage MFA settings in the legacy MFA management portal or Hardware OATH t
     Azure Information Protection Administrator
   :::column-end:::
   :::column:::
-    Users with this role have all permissions in the Azure Information Protection service. This role allows configuring labels for the Azure Information Protection policy, managing protection templates, and activating protection. This role doesn't grant any permissions in Identity Protection Center, Privileged Identity Management, Monitor Microsoft 365 Service Health, or Office 365 Security and compliance center.
+    Users with this role have all permissions in the Azure Information Protection service. This role allows configuring labels for the Azure Information Protection policy, managing protection templates, and activating protection.This role doesn't grant any permissions in Identity Protection Center, Privileged Identity Management, Monitor Microsoft 365 Service Health, or Office 365 Security and compliance center.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -157,7 +157,7 @@ Can't manage MFA settings in the legacy MFA management portal or Hardware OATH t
     Business-to-Consumer (B2C) Identity Experience Framework (IEF) Keyset Administrator
   :::column-end:::
   :::column:::
-    User can create and manage policy keys and secrets for token encryption, token signatures, and claim encryption/decryption. By adding new keys to existing key containers, this limited administrator can roll over secrets as needed without impacting existing applications. This user can see the full content of these secrets and their expiration dates even after their creation.
+    User can create and manage policy keys and secrets for token encryption, token signatures, and claim encryption/decryption.By adding new keys to existing key containers, this limited administrator can roll over secrets as needed without impacting existing applications.This user can see the full content of these secrets and their expiration dates even after their creation.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -165,7 +165,7 @@ Can't manage MFA settings in the legacy MFA management portal or Hardware OATH t
     Business-to-Consumer (B2C) Identity Experience Framework (IEF) Policy Administrator
   :::column-end:::
   :::column:::
-    Users in this role have the ability to create, read, update, and delete all custom policies in Azure AD B2C and therefore have full control over the Identity Experience Framework in the relevant Azure AD B2C organization. By editing policies, this user can establish direct federation with external identity providers, change the directory schema, change all user-facing content (HyperText Markup Language (HTML), Cascading Style Sheets (CSS), JavaScript), change the requirements to complete an authentication, create new users, send user data to external systems including full migrations, and edit all user information including sensitive fields like passwords and phone numbers. Conversely, this role can't change the encryption keys or edit the secrets used for federation in the organization.
+    Users in this role have the ability to create, read, update, and delete all custom policies in Azure AD B2C and therefore have full control over the Identity Experience Framework in the relevant Azure AD B2C organization. By editing policies, this user can establish direct federation with external identity providers, change the directory schema, change all user-facing content HyperText Markup Language (HTML), Cascading Style Sheets (CSS), JavaScript), change the requirements to complete an authentication, create new users, send user data to external systems including full migrations, and edit all user information including sensitive fields like passwords and phone numbers. Conversely, this role can't change the encryption keys or edit the secrets used for federation in the organization.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -237,7 +237,7 @@ Can't manage MFA settings in the legacy MFA management portal or Hardware OATH t
     Desktop Analytics Administrator
   :::column-end:::
   :::column:::
-    Users in this role can manage the Desktop Analytics service. This includes the ability to view asset inventory, create deployment plans, and view deployment and health status.
+    Users in this role can manage the Desktop Analytics service, including viewing asset inventory, creating deployment plans, and viewing deployment and health status.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -324,7 +324,7 @@ Can't manage MFA settings in the legacy MFA management portal or Hardware OATH t
     External ID User Flow Attribute Administrator
   :::column-end:::
   :::column:::
-    Users with this role add or delete custom attributes available to all user flows in the Azure AD organization. As such, users with this role can change or add new elements to the end-user schema and impact the behavior of all user flows, and indirectly result in changes to what data may be asked of end users and ultimately sent as claims to applications. This role can't edit user flows.
+    Users with this role add or delete custom attributes available to all user flows in the Azure AD organization.Users with this role can change or add new elements to the end-user schema and impact the behavior of all user flows, and indirectly result in changes to what data may be asked of end users and ultimately sent as claims to applications. This role can't edit user flows.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -334,7 +334,7 @@ Can't manage MFA settings in the legacy MFA management portal or Hardware OATH t
   :::column:::
     This administrator manages federation between Azure AD organizations and external identity providers. With this role, users can add new identity providers and configure all available settings (for example, authentication path, service ID, assigned key containers). This user can enable the Azure AD organization to trust authentications from external identity providers. The resulting impact on end-user experiences depends on the type of organization:
 
- -  Azure AD organizations for employees and partners: The addition of a federation (for example, with Gmail) will immediately impact all guest invitations not yet redeemed. See Adding Google as an identity provider for B2B guest users.
+ -  Azure AD organizations for employees and partners: The addition of a federation (for example, with Gmail) immediately impacts all guest invitations not yet redeemed. See Adding Google as an identity provider for B2B guest users.
     
  -  Azure Active Directory B2C organizations: The addition of a federation (for example, with Facebook, or with another Azure AD organization) doesn't immediately impact end-user flows until the identity provider is added as an option in a user flow (also called a built-in policy).
 
@@ -362,7 +362,7 @@ Can't manage MFA settings in the legacy MFA management portal or Hardware OATH t
     Global Reader
   :::column-end:::
   :::column:::
-    Users in this role can read settings and administrative information across Microsoft 365 services but can't take management actions. Global Reader is the read-only counterpart to Global Administrator. Assign Global Reader instead of Global Administrator for planning, audits, or investigations. Use Global Reader in combination with other limited admin roles like Exchange Administrator to make it easier to get work done without the assigning the Global Administrator role. Global Reader works with Microsoft 365 admin center, Exchange admin center, SharePoint admin center, Teams admin center, Security center, compliance center, Azure AD admin center, and Device Management admin center.Users with this role can't do the following:
+    Users in this role can read settings and administrative information across Microsoft 365 services but can't take management actions. Global Reader is the read-only counterpart to Global Administrator. Assign Global Reader instead of Global Administrator for planning, audits, or investigations. Use Global Reader in combination with other limited admin roles like Exchange Administrator to make it easier to get work done without the assigning the Global Administrator role. Global Reader works with Microsoft 365 admin center, Exchange admin center, SharePoint admin center, Teams admin center, Security center, compliance center, Azure AD admin center, and Device Management admin center.Users with this role can't do the following tasks:
 
 
  -  Can't access the Purchase Services area in the Microsoft 365 admin center.
@@ -406,7 +406,7 @@ Can't manage MFA settings in the legacy MFA management portal or Hardware OATH t
     Hybrid Identity Administrator
   :::column-end:::
   :::column:::
-    Users in this role can create, manage and deploy provisioning configuration setup from AD to Azure AD using Cloud Provisioning and manage Azure AD Connect, Pass-through Authentication (PTA), Password hash synchronization (PHS), Seamless Single Sign-On (Seamless SSO), and federation settings. Users can also troubleshoot and monitor logs using this role.
+    Users in this role can create, manage and deploy provisioning configuration setup from AD to Azure AD using Cloud Provisioning and manage Azure AD Connect, Pass-through Authentication (PTA), Password hash synchronization (PHS), Seamless Single Sign-On (Seamless SSO), and federation settings.Users can also troubleshoot and monitor logs using this role.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -430,7 +430,7 @@ Can't manage MFA settings in the legacy MFA management portal or Hardware OATH t
     Insights Analyst
   :::column-end:::
   :::column:::
-    Assign the Insights Analyst role to users who need to do the following:
+    Assign the Insights Analyst role to users who need to do the following tasks:
 
  -  Analyze data in the Microsoft Viva Insights app, but can't manage any configuration settings
     
@@ -616,7 +616,7 @@ Users with the Modern Commerce User role typically have administrative permissio
     **Password Administrator**
   :::column-end:::
   :::column:::
-    Users with this role have limited ability to manage passwords. This role doesn't grant the ability to manage service requests or monitor service health. Whether a Password Administrator can reset a user's password depends on the role the user is assigned.Users with this role **can't** do the following:
+    Users with this role have limited ability to manage passwords. This role doesn't grant the ability to manage service requests or monitor service health. Whether a Password Administrator can reset a user's password depends on the role the user is assigned.Users with this role **can't** do the following tasks:
 
 
  -  Can't change the credentials or reset MFA for members and owners of a role-assignable group.
@@ -674,7 +674,7 @@ Users with the Modern Commerce User role typically have administrative permissio
     Privileged Authentication Administrator
   :::column-end:::
   :::column:::
-    Assign the Privileged Authentication Administrator role to users who need to do the following:
+    Assign the Privileged Authentication Administrator role to users who need to do the following tasks:
 
  -  **Set** or **reset** any authentication method (including passwords) for any user, including Global Administrators.
     
@@ -683,7 +683,7 @@ Users with the Modern Commerce User role typically have administrative permissio
  -  **Update** sensitive properties for all users. For more information, see Who can perform sensitive actions.
  -  **Create** and **manage** support tickets in Azure and the Microsoft 365 admin center.
 
-Users with this role can't do the following
+Users with this role can't do the following tasks:
 
  -  Can't manage per-user MFA in the legacy MFA management portal. The same functions can be accomplished using the Set-MsolUser commandlet Azure AD PowerShell module.
     
@@ -845,7 +845,7 @@ Users with this role can't do the following
     **User Administrator**
   :::column-end:::
   :::column:::
-    Assign the User Administrator role to users who need to do the following:
+    Assign the User Administrator role to users who need to do the following tasks:
 
  -  Create users
  -  Update most user properties for all users, including all administrators
@@ -862,7 +862,7 @@ Users with this role can't do the following
  -  Create and manage support tickets in Azure and the Microsoft 365 admin center
  -  Monitor service health
 
-Users with this role **can't** do the following:
+Users with this role **can't** do the following tasks:
 
  -  Can't manage MFA.
  -  Can't change the credentials or reset MFA for members and owners of a role-assignable group.
