@@ -1,104 +1,71 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+Microsoft Defender offers workload protections for multiple Azure workloads, such as:
 
-    Goal: remind the learner of the core idea(s) from the preceding learning-content unit (without mentioning the details of the exercise or the scenario)
+- Azure SQL
+- Azure Synapse Analytics
+- Azure Cosmos DB
 
-    Heading: none
+## Defender for Azure SQL
 
-    Example: "A storage account represents a collection of settings that implement a business policy."
+> [!NOTE]
+> Defender for Azure SQL protects read-write replicas of:
+> - Azure SQL single databases and elastic pools
+> - Azure SQL Managed Instance
+> - Azure Synapse Analytics (formerly SQL DW) dedicated SQL pool
 
-    [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-exercise-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+Microsoft Defender for Azure SQL helps you discover and mitigate potential [database vulnerabilities](https://learn.microsoft.com/azure/defender-for-cloud/sql-azure-vulnerability-assessment-overview) and alerts you to [anomalous activities](https://learn.microsoft.com/azure/defender-for-cloud/defender-for-sql-introduction#advanced-threat-protection) that may be an indication of a threat to your databases.
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+-   [Vulnerability assessment](https://learn.microsoft.com/azure/defender-for-cloud/defender-for-sql-introduction#discover-and-mitigate-vulnerabilities): Scan databases to discover, track, and remediate vulnerabilities. Learn more about [vulnerability assessment](https://learn.microsoft.com/azure/defender-for-cloud/sql-azure-vulnerability-assessment-overview).
+-   [Threat protection](https://learn.microsoft.com/azure/defender-for-cloud/defender-for-sql-introduction#advanced-threat-protection): Receive detailed security alerts and recommended actions based on SQL Advanced Threat Protection to provide to mitigate threats. Learn more about [SQL Advanced Threat Protection](https://learn.microsoft.com/azure/azure-sql/database/threat-detection-overview).
 
-    Goal: Describe the part of the scenario covered in this exercise
+When you enable **Microsoft Defender for Azure SQL**, all supported resources that exist within the subscription are protected. Future resources created on the same subscription will also be protected.
 
-    Heading: a separate heading is optional; you can combine this with the topic sentence into a single paragraph
+### What are the benefits of Microsoft Defender for Azure SQL?
 
-    Example: "Recall that in the chocolate-manufacturer example, there would be a separate storage account for the private business data. There were two key requirements for this account: geographically-redundant storage because the data is business-critical and at least one location close to the main factory."
+#### Discover and mitigate vulnerabilities
 
-    Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
--->
-TODO: add your scenario sub-task
-TODO: add your scenario image
+A vulnerability assessment service discovers, tracks, and helps you remediate potential database vulnerabilities. Assessment scans provide an overview of your SQL machines' security state, and details of any security findings. Defender for Azure SQL helps you identify and mitigate potential database vulnerabilities and detecting anomalous activities that could indicate threats to your databases.
 
-<!-- 3. Task performed in the exercise ---------------------------------------------------------------------
+#### Advanced threat protection
 
-    Goal: State concisely what they'll implement here; that is, describe the end-state after completion
+An advanced threat protection service continuously monitors your SQL servers for threats such as SQL injection, brute-force attacks, and privilege abuse. This service provides action-oriented security alerts in Microsoft Defender for Cloud with details of the suspicious activity, guidance on how to mitigate to the threats, and options for continuing your investigations with Microsoft Sentinel. Learn more about [advanced threat protection](https://learn.microsoft.com/azure/azure-sql/database/threat-detection-overview).
 
-    Heading: a separate heading is optional; you can combine this with the sub-task into a single paragraph
+Threat intelligence enriched security alerts are triggered when there's:
 
-    Example: "Here, you will create a storage account with settings appropriate to hold this mission-critical business data."
+-   **Potential SQL injection attacks** - including vulnerabilities detected when applications generate a faulty SQL statement in the database
+-   **Anomalous database access and query patterns** - for example, an abnormally high number of failed sign-in attempts with different credentials (a brute force attempt)
+-   **Suspicious database activity** - for example, a legitimate user accessing an SQL Server from a breached computer which communicated with a crypto-mining C&C server
 
-    Optional: a video that shows the end-state
--->
-TODO: describe the end-state
+Alerts include details of the incident that triggered them, as well as recommendations on how to investigate and remediate threats. Learn more about the [security alerts for SQL servers](https://learn.microsoft.com/azure/defender-for-cloud/alerts-reference#alerts-sql-db-and-warehouse).
 
-<!-- 4. Chunked steps -------------------------------------------------------------------------------------
+## Defender for Azure Cosmos DB
 
-    Goal: List the steps they'll do to complete the exercise.
+Microsoft Defender for Azure Cosmos DB detects potential SQL injections, known bad actors based on Microsoft Threat Intelligence, suspicious access patterns, and potential exploitation of your database through compromised identities, or malicious insiders.
 
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading describing the goal of the chunk
-        2. An introductory paragraph describing the goal of the chunk at a high level
-        3. Numbered steps (target 7 steps or fewer in each chunk)
+Defender for Azure Cosmos DB uses advanced threat detection capabilities, and [Microsoft Threat Intelligence](https://www.microsoft.com/insidetrack/microsoft-uses-threat-intelligence-to-protect-detect-and-respond-to-threats) data to provide contextual security alerts. Those alerts also include steps to mitigate the detected threats and prevent future attacks.
 
-    Example:
-        Heading:
-            "Use a template for your Azure logic app"
-        Introduction:
-             "When you create an Azure logic app in the Azure portal, you have the option of selecting a starter template. Let's select a blank template so that we can build our logic app from scratch."
-        Steps:
-             "1. In the left navigation bar, select Resource groups.
-              2. Select the existing Resource group [sandbox resource group name].
-              3. Select the ShoeTracker logic app.
-              4. Scroll down to the Templates section and select Blank Logic App."
--->
+You can [enable protection for all your databases](https://learn.microsoft.com/azure/defender-for-cloud/quickstart-enable-database-protections) (recommended), or [enable Microsoft Defender for Azure Cosmos DB](https://learn.microsoft.com/azure/defender-for-cloud/quickstart-enable-database-protections) at either the subscription level, or the resource level.
 
-## (Chunk 1 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+Defender for Azure Cosmos DB continually analyzes the telemetry stream generated by the Azure Cosmos DB service. When potentially malicious activities are detected, security alerts are generated. These alerts are displayed in Defender for Cloud together with the details of the suspicious activity along with the relevant investigation steps, remediation actions, and security recommendations.
 
-## (Chunk 2 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+Defender for Azure Cosmos DB doesn't access the Azure Cosmos DB account data, and doesn't have any effect on its performance.
 
-## (Chunk n heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+### What are the benefits of Microsoft Defender for Azure Cosmos DB
 
-<!-- 5. Validation -------------------------------------------------------------------------------------------
+Microsoft Defender for Azure Cosmos DB uses advanced threat detection capabilities and Microsoft Threat Intelligence data. Defender for Azure Cosmos DB continuously monitors your Azure Cosmos DB accounts for threats such as SQL injection, compromised identities and data exfiltration.
 
-    Goal: Enables the learner to evaluate if they completed the exercise correctly. Feedback like this is critical for learning.
+This service provides action-oriented security alerts in Microsoft Defender for Cloud with details of the suspicious activity and guidance on how to mitigate the threats. You can use this information to quickly remediate security issues and improve the security of your Azure Cosmos DB accounts.
 
-    Structure:
-        1. A heading of "## Check your work".
-        2. An introductory paragraph describing how they'll validate their work at a high level.
-        3. Numbered steps (if the learner needs to perform multiple steps to verify if they were successful).
-        4. Video of an expert performing the exact steps of the exercise (optional).
+Alerts include details of the incident that triggered them, and recommendations on how to investigate and remediate threats. Alerts can be exported to Microsoft Sentinel or any other third-party SIEM or any other external tool. To learn how to stream alerts, see [Stream alerts to a SIEM, SOAR, or IT classic deployment model solution](https://learn.microsoft.com/azure/defender-for-cloud/export-to-siem).
 
-    Example:
-         "At this point, the app is scanning Twitter every minute for tweets containing the search text. To verify the app is running and working correctly, we'll look at the Runs history table."
-             "1. Select Overview in the navigation menu.
-              2. Select Refresh once a minute until you see a row in the Runs history table.
-              ...
-              6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
--->
+### Alert types
 
-## Check your work
-<!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
+Threat intelligence security alerts are triggered for:
 
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+-   **Potential SQL injection attacks**:  
+    Due to the structure and capabilities of Azure Cosmos DB queries, many known SQL injection attacks can’t work in Azure Cosmos DB. However, there are some variations of SQL injections that can succeed and may result in exfiltrating data from your Azure Cosmos DB accounts. Defender for Azure Cosmos DB detects both successful and failed attempts, and helps you harden your environment to prevent these threats.
+    
+-   **Anomalous database access patterns**:  
+    For example, access from a TOR exit node, known suspicious IP addresses, unusual applications, and unusual locations.
+    
+-   **Suspicious database activity**:  
+    For example, suspicious key-listing patterns that resemble known malicious lateral movement techniques and suspicious data extraction patterns.
