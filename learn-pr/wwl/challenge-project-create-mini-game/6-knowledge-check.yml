@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/17/2023
+  ms.date: 03/21/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial
@@ -13,7 +13,7 @@ durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "A developer wants to create a method that compares two values. Which of the following is the best data type for the method to return?"
+  - content: "A developer wants to create a method that compares two values. Which of the following options is the best data type for the method to return?"
     choices:
     - content: "A `double` value."
       isCorrect: false
@@ -24,14 +24,14 @@ quiz:
     - content: "A `bool` value."
       isCorrect: true
       explanation: "Correct! A comparison expression should return `true` or `false`."
-  - content: "A developer wants to create a method that returns a value in an array. Which of the following would be a good choice for a method signature?"
+  - content: "A developer wants to create a method that returns a value in an array. Which of the following options would be a good choice for a method signature?"
     choices:
     - content: "`string GetValueAtIndex(string[] array, int index)`"
       isCorrect: true
       explanation: "Correct! This method accepts a string array and an index value and returns a string value."
     - content: "`bool GetValueAtIndex(string[] array, int index)`"
       isCorrect: false
-      explanation: "Incorrect. Since a string array is provided, it is more appropriate to return a string value"
+      explanation: "Incorrect. Since a string array is provided, it's more appropriate to return a string value"
     - content: "`int GetValueAtIndex(int index)`"
       isCorrect: false
-      explanation: "Incorrect. This method doesn't specifiy an array parameter to retrieve the value from."
+      explanation: "Incorrect. This method doesn't specify an array parameter to retrieve the value from."

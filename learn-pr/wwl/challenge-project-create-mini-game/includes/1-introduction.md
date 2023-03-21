@@ -18,7 +18,7 @@ By the end of this module, you'll create a playable mini-game application!
 > [!NOTE]
 > This is a challenge project module where you'll complete an end-to-end project from a specification. This module is intended to be a test of your skills; there’s little guidance and no step-by-step instructions.
 
-## Learning Objectives
+## Learning objectives
 
 In this module, you'll demonstrate your ability to:
 

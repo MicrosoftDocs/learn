@@ -2,8 +2,8 @@
 uid: learn.wwl.challenge-project-create-mini-game
 metadata:
   title: Challenge project - Create a mini-game
-  description: "Challenge project - Create a mini-game"
-  ms.date: 03/17/2023
+  description: "Use methods with parameters and return values to develop the features of a console mini-game."
+  ms.date: 03/21/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial
