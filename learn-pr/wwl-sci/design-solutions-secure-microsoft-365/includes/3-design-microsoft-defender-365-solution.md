@@ -29,13 +29,13 @@ Microsoft 365 Defender services protect:
 
 Here's an example of how the Microsoft 365 Defender portal correlates all related alerts across products into a single incident.
 
-![Screenshot showing the incident overview page](../media/overview-incident.png)
+:::image type="content" source="../media/overview-incident.png" alt-text="Screenshot showing the incident overview page." border="true":::
 
 Here's an example of the list of related alerts for an incident.
 
-![Screenshot showint the list of alerts for an incident](../media/incident-list.png)
+:::image type="content" source="../media/incident-list.png" alt-text="Screenshot showint the list of alerts for an incident." border="true":::
 
 Here's an example of query-based hunting on top of email and endpoint raw data.
 
-![Screenshot showing the Advanced Hunting page with query details](../media/advanced-hunting.png)
+:::image type="content" source="../media/advanced-hunting.png" alt-text="Screenshot showing the Advanced Hunting page with query details." border="true":::
 

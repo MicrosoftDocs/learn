@@ -34,7 +34,7 @@ To help you find the information you need more quickly, Microsoft recommended ac
 
 In the Microsoft Secure Score overview page, view how points are split between these groups and what points are available. You can also get an all-up view of the total score, historical trend of your secure score with benchmark comparisons, and prioritized recommended actions that can be taken to improve your score.
 
-![Screenshot showing the Secure Score homepage in the Microsoft 365 Defender portal.](../media/secure-score-home-page.png)
+:::image type="content" source="../media/secure-score-home-page.png" alt-text="Screenshot showing the Secure Score homepage in the Microsoft 365 Defender portal." border="true":::
 
 ### Check your current score
 
@@ -50,7 +50,7 @@ The following are scores you can add to your view of your overall score to give 
 
 This view is what it will look like if you've included all possible score views:
 
-![Screenshot showing your secure score including planned score, current license score, and achievable score in the Microsoft 365 Defender portal.](../media/secure-score-achievable.png)
+:::image type="content" source="../media/secure-score-achievable.png" alt-text="Screenshot showing your secure score including planned score, current license score, and achievable score in the Microsoft 365 Defender portal." border="true":::
 
 ### Take action to improve your score
 
@@ -66,7 +66,7 @@ Ranking is based on the number of points left to achieve, implementation difficu
 
 When you select a specific recommended action, a full page flyout appears.
 
-![Screenshot that shows the flyout of a recommended action in the Microsoft 365 Defender portal.](../media/secure-score-improvement-action-details.png)
+:::image type="content" source="../media/secure-score-improvement-action-details.png" alt-text="Screenshot that shows the flyout of a recommended action in the Microsoft 365 Defender portal." border="true":::
 
 To complete the action, you have a few options:
 
@@ -98,4 +98,6 @@ The **Implementation** section shows any prerequisites, step-by-step next step
 
 Prerequisites include any licenses that are needed or actions to be completed before the recommended action is addressed. Make sure you have enough seats in your license to complete the recommended action and that those licenses are applied to the necessary users.
 
+<!--TODO: Link to other unit once published.
 For discussion of Microsoft Defender for Cloud secure score, see [[Posture evaluation with Microsoft Defender for Cloud secure score]].
+-->
