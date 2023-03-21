@@ -1,4 +1,4 @@
-# Application lifecycle management in Azure Container Apps
+## Application lifecycle management in Azure Container Apps
 
 The Azure Container Apps application lifecycle revolves around [revisions](https://learn.microsoft.com/azure/container-apps/revisions).
 
@@ -6,7 +6,7 @@ When you deploy a container app, the first revision is automatically created. [
 
 A container app flows through four phases: deployment, update, deactivation, and shutdown.
 
-## Deployment
+### Deployment
 
 As a container app is deployed, the first revision is automatically created.
 
@@ -16,7 +16,7 @@ As a container app is deployed, the first revision is automatically created.
 -->
 
 
-## Update
+### Update
 
 As a container app is updated with a [revision scope-change](https://learn.microsoft.com/azure/container-apps/revisions#revision-scope-changes), a new revision is created. You can [choose](https://learn.microsoft.com/azure/container-apps/revisions#revision-modes) whether to automatically deactivate old revisions (single revision mode), or allow them to remain available (multiple revision mode).
 
@@ -31,7 +31,7 @@ In multiple revision mode, you control when revisions are activated or deactivat
 [](https://learn.microsoft.com/azure/container-apps/application-lifecycle-management#deactivate)
 -->
 
-## Deactivate
+### Deactivate
 
 Once a revision is no longer needed, you can deactivate a revision with the option to reactivate later. During deactivation, containers in the revision are [shut down](https://learn.microsoft.com/azure/container-apps/application-lifecycle-management#shutdown).
 
@@ -40,7 +40,7 @@ Once a revision is no longer needed, you can deactivate a revision with the opti
 [](https://learn.microsoft.com/azure/container-apps/application-lifecycle-management#shutdown)
 -->
 
-## Shutdown
+### Shutdown
 
 The containers are shut down in the following situations:
 

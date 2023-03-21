@@ -22,7 +22,7 @@ WAF on Application Gateway is based on the [Core Rule Set (CRS)](https://learn.
 
 All of the WAF features listed below exist inside of a WAF policy. You can create multiple policies, and they can be associated with an Application Gateway, to individual listeners, or to path-based routing rules on an Application Gateway. This way, you can have separate policies for each site behind your Application Gateway if needed. For more information on WAF policies, see [Create a WAF Policy](https://learn.microsoft.com/azure/web-application-firewall/ag/create-waf-policy-ag).
 
-![Application Gateway WAF diagram](https://learn.microsoft.com/azure/web-application-firewall/media/ag-overview/waf1.png)
+![Diagram that shows Application Gateway Web Application Firewall.](https://learn.microsoft.com/azure/web-application-firewall/media/ag-overview/waf1.png)
 
 Application Gateway operates as an application delivery controller (ADC). It offers Transport Layer Security (TLS), previously known as Secure Sockets Layer (SSL), termination, cookie-based session affinity, round-robin load distribution, content-based routing, ability to host multiple websites, and security enhancements.
 
@@ -87,7 +87,7 @@ WAF on Front Door is a global and centralized solution. It's deployed on Azure n
 
 WAF prevents malicious attacks close to the attack sources, before they enter your virtual network. You get global protection at scale without sacrificing performance. A WAF policy easily links to any Front Door profile in your subscription. New rules can be deployed within minutes, so you can respond quickly to changing threat patterns.
 
-![Azure web application firewall](https://learn.microsoft.com/azure/web-application-firewall/media/overview/wafoverview.png)
+![Diagram showing an overview of Azure web application firewall.](../media/web-application-firewall-overview.png)
 
 Azure Front Door has [two tiers](https://learn.microsoft.com/azure/frontdoor/standard-premium/overview): Front Door Standard and Front Door Premium. WAF is natively integrated with Front Door Premium with full capabilities. For Front Door Standard, only [custom rules](https://learn.microsoft.com/azure/web-application-firewall/afds/afds-overview#custom-authored-rules) are supported.
 

@@ -76,10 +76,10 @@ quiz:
       explanation: "Shared Access Signatures don't pertain to Azure AD, they're Azure object storage mechanism."
     - content: "The resource will only be accessible if the token has the appropriate permission scope."
       isCorrect: true
-      explanation: "Shared Access Signatures work at the level of the specific bound resource, meaning the permissions granted to the corresponding SAS token will apply to this target only."
+      explanation: "Shared Access Signatures work at the level of the specific bound resource, meaning the permissions granted to the corresponding SAS token apply to this target only."
     - content: "It bypasses all permissions set on the resource."
       isCorrect: false
-      explanation: "Authentication and Authorization is always calculated and checked against the set access control policies and user/role-based authorization mechanisms."
+      explanation: "Authentication and Authorization are always calculated and checked against the set access control policies and user/role-based authorization mechanisms."
     - content: "It triggers event-based alert notifications"
       isCorrect: false
       explanation: "Shared Access Signatures are a method still not greatly prevalent in Azure Functionality, and thus don't trigger alerts."
