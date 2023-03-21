@@ -3,7 +3,7 @@ uid: learn.azure-sql-secure-data.7-security-management
 metadata:
   title: Manage your security
   description: Manage your security
-  ms.date: 01/07/2022
+  ms.date: 03/15/2023
   author: VanMSFT
   ms.author: vanto
   ms.topic: interactive-tutorial
@@ -15,20 +15,6 @@ content: |
 quiz:
     title: Knowledge check
     questions:
-    - content: "Which of the following T-SQL commands for auditing is not supported in Azure SQL Managed Instance?"
-      choices:
-      - content: "With `CREATE SERVER AUDIT` there is syntax `TO URL`"
-        isCorrect: false
-        explanation: "This is available only in Azure SQL Managed Instance."
-      - content: "With `CREATE SERVER AUDIT` there is syntax `TO EXTERNAL MONITOR`"
-        isCorrect: false
-        explanation: "This is available only in Azure SQL Managed Instance."
-      - content: "With `CREATE SERVER AUDIT` there is syntax `TO FILE`"
-        isCorrect: true
-        explanation: "You can't write to local files because your instance is hosted in Azure"
-      - content: "All of the above"
-        isCorrect: false
-        explanation: "Two of the preceding options are available in Azure SQL Managed Instance."
     - content: "Which of the following are ways that you can monitor security-related events for Azure SQL Database?"
       choices:
       - content: "Azure SQL auditing"

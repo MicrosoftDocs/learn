@@ -8,6 +8,7 @@ metadata:
   ms.author: msangapu
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: engagement-fy23
 title: Migrate an on-premises web application to Azure App Service
 summary: Use the Azure App Service Migration Assistant to assess the readiness of a web app to be deployed on App Service, and perform the migration.
 abstract: |

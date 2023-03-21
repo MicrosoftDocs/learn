@@ -33,7 +33,11 @@ These measures can help you enhance security and meet regulatory requirements. A
 
 ### Additional DDoS Protection features
 
+<<<<<<< HEAD
 With DDoS Protection, the traffic always remains within the Azure region. Keeping the traffic within the local region helps with performance as well, because DDoS Protection is doing the attack mitigation in an Azure region. Azure DDoS Protection mitigates the attack traffic closest to the application. However, if Microsoft identifies that the attack volume is significant, then it will use the global scale of Azure networking to defend the attack where it's originating.
+=======
+With DDoS Protection, the traffic always remains within the Azure datacenter. Keeping the traffic within the local datacenter helps with performance as well, because DDoS Network Protection is doing the attack mitigation in an Azure datacenter. Azure DDoS Protection mitigates the attack traffic closest to the application. However, if Microsoft identifies that the attack volume is significant, then it will use the global scale of their Azure networking to defend the attack where it's originating.
+>>>>>>> feaa85fe1746df0ac388dc207713100fc37ee987
 
 Microsoft uses this defense-in-depth strategy to protect your backend services and your Azure services such as Azure Front Door and Azure Application Gateway.
 

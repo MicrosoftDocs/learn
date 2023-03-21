@@ -44,7 +44,7 @@ targets = qsharp.azure.connect(
    resourceId="<your resourceID>", # Fill in with the resourceID of your workspace
    location="<your location>") # Fill in with the location of your workspace (for example "westus")
 
-qsharp.packages.add("Microsoft.Quantum.Numerics") #Import Microsoft.Quantum.Numerics package 
+qsharp.packages.add("Microsoft.Quantum.Numerics") # Import Microsoft.Quantum.Numerics package to create the multiplier for this example
 qsharp.azure.target("microsoft.estimator") # Select the Azure Quantum Resource Estimator as target
 ```
 
@@ -52,15 +52,14 @@ qsharp.azure.target("microsoft.estimator") # Select the Azure Quantum Resource E
 > The location and resource ID of your workspace can be found in the **Overview** tab of your Azure Quantum workspace. 
 >  :::image type="content" source="../media/azure-quantum-resource-id.png" alt-text="Screenshot of the overview blade of a workspace in Azure portal. Location and resource ID are marked inside a red rectangle.":::
 
-As we said, as a running example you're creating a multiplier using the [MultiplyI](/qsharp/api/qsharp/microsoft.quantum.arithmetic.multiplyi) operation. You can configure the size of the multiplier with a bit width parameter. The operation has two input registers with that bit width, `factor1` and `factor2`, and one output register with the size of twice the bit width, `product`.
+As we said, as a running example you're creating a multiplier using the [MultiplyI](/qsharp/api/qsharp/microsoft.quantum.arithmetic.multiplyi) operation. You can configure the size of the multiplier with a `bitwidth` parameter that can be passed as input argument. The operation has two input registers with that bit width, `factor1` and `factor2`, and one output register with the size of twice the bit width, `product`.
 
 Click **+ Code** to add a new cell.
 
 ```python
-
 %%qsharp
 
-open Microsoft.Quantum.Arithmetic
+open Microsoft.Quantum.Arithmetic;
 
 operation EstimateMultiplication(bitwidth : Int) : Unit {
     use factor1 = Qubit[bitwidth];
@@ -76,39 +75,24 @@ operation EstimateMultiplication(bitwidth : Int) : Unit {
 
 ## Estimating the algorithm
 
-In order to estimate an operation using the Azure Quantum Resource Estimator target, it must have a `Unit` return value. We can simply create a new instance for a specific bit width, for example 8 in this case.
+Now, estimate the physical resources for this operation using the default assumptions. You can submit the operation to the Resource Estimator target using the `qsharp.azure.execute` function. This function calls the `EstimateMultiplication` operation and passes the operation argument `bitwidth=8`.
 
 Click **+ Code** to add a new cell.
 
 ```python
-%%qsharp
-
-operation EstimateMultiplication8() : Unit {
-    EstimateMultiplication(8);
-}
-```
-> [!IMPORTANT]
-> To submit a Q# operation to the Azure Quantum Resource Estimator target, it must have a `Unit` return value. 
-
-Let's now estimate the physical resources for this operation using the default assumptions. We can submit the operation to the resource estimation target using the `qsharp.azure.execute` function. This will output a table with the overall physical resource counts. You can further inspect more details about the resource estimates by collapsing various groups, which have more information.
-
-Click **+ Code** to add a new cell.
-
-```python
-
-result = qsharp.azure.execute(EstimateMultiplication8)
+result = qsharp.azure.execute(EstimateMultiplication, bitwidth=8)
 result
 ```
 
-For example, if you collapse the *Logical qubit parameters* group, you can see that the quantum error correction (QEC) code distance is 13. In the *Physical qubit parameters* group, you can see the physical qubit properties that were assumed for this estimation. For example, see that the time to perform a single-qubit measurement and a single-qubit gate are assumed to be 100 ns and 50 ns, respectively.
+The `qsharp.azure.execute` function creates a table that shows the overall physical resource counts. You can inspect cost details by collapsing the groups, which have more information. For example, if you collapse the *Logical qubit parameters* group, you can see that the quantum error correction (QEC) code distance is 13. In the *Physical qubit parameters* group, you can see the physical qubit properties that were assumed for this estimation. For example, see that the time to perform a single-qubit measurement and a single-qubit gate are assumed to be 100 ns and 50 ns, respectively.
 
-## Customizing input parameters
+## Customizing target parameters
 
 Let's rerun resource estimation for our running example on the Majorana-based qubit parameters `"qubit_maj_ns_e6"`. Click **+ Code** to add a new cell.
 
 ```python
 
-result = qsharp.azure.execute(EstimateMultiplication8,
+result = qsharp.azure.execute(EstimateMultiplication, bitwidth=8, 
             jobParams={
                 "qubitParams": {
                     "name": "qubit_maj_ns_e6" # Specify qubit parameter name
@@ -120,7 +104,7 @@ You can inspect the result and compare both qubit technologies. For example, not
 We can update the error correction code too. Click **+ Code** to add a new cell and rerun the resource estimation job on the Majorana-based qubit parameters using Floquet code as the error correction scheme. 
 
 ```python
-result_maj_floquet = qsharp.azure.execute(EstimateMultiplication8,
+result_maj_floquet = qsharp.azure.execute(EstimateMultiplication, bitwidth=8,
             jobParams={
                 "qubitParams": {
                     "name": "qubit_maj_ns_e6" # Specify qubit parameter name
@@ -136,7 +120,7 @@ Notice that now we need 26208 physical qubits, but the runtime is 0.547 ms.
 Finally, we can set the error budget to 10%. Click **+ Code** to add a new cell. 
 
 ```python
-result_maj_floquet_e1 = qsharp.azure.execute(EstimateMultiplication8,
+result_maj_floquet_e1 = qsharp.azure.execute(EstimateMultiplication, bitwidth=8, 
             jobParams={
                 "qubitParams": {
                     "name": "qubit_maj_ns_e6" # Specify qubit parameter name

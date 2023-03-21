@@ -2,7 +2,7 @@ Azure is a global system. By designing an architecture that is present in more t
 
 Your shipment tracking portal is scalable because it's built using a range of Azure resources that can scale. It's also resilient to many failures because its components can have multiple instances. However, your board of directors has become concerned that a large-scale disaster could cause an interruption because the portal is entirely contained in the East US Azure region. You want to propose a modified architecture that can fail over to a second region if East US fails.
 
-Here, we'll learn how to adjust our application's architecture to support a geographically distributed application. We'll also see why such architecture is advantageous for business-critical applications.
+Here, we learn how to adjust our application's architecture to support a geographically distributed application. We also see why such architecture is advantageous for business-critical applications.
 
 ## Original web app architecture
 
@@ -36,7 +36,7 @@ The tracking portal uses the following services to support code, cache, and inte
 | **Azure Active Directory** | Users access the tracking portal using Azure AD accounts. The directory and account are automatically replicated globally. |
 | **Azure App Service** | The tracking portal uses two Azure App Services. The first runs a set of dynamic web pages, and the second a web API. |
 | **Azure Function Apps** | The tracking portal uses Azure Function Apps to run all background tasks. Some of these tasks run on a regular schedule, and other tasks operate on the messages in a queue. |
-| **Azure Storage Queues** | The tracking portal uses Azure Storage Queues in conjunction with Azure Function Apps. The tracking portal places generated messages onto the queue from where the Function apps process these messages.  |
+| **Azure Storage Queues** | The tracking portal uses Azure Storage Queues with Azure Function Apps. The tracking portal places generated messages onto the queue from where the Function apps process these messages.  |
 | **Redis cache** | The tracking portal uses a Redis cache between the front-end app service and the data storage systems to maximize the performance of queries. |
 | **Azure Blob Storage** | Static content, such as graphics and video files, are kept as Binary Large Objects (Blobs) in an Azure Storage account, and are delivered through the Azure CDN. |
 | **Azure Search** | We've enabled Azure Search on the tracking portal. Azure Search enables us to make all content searchable, and provide search suggestions and fuzzy search results to our users. |
@@ -58,7 +58,7 @@ The existing architecture for the tracking portal is designed to allow for scala
 
 For example, if demand is high, and responses to user web requests are slow, you can consider adding more instances of the front-end web app in the App Service. Here, the Application Gateway can route requests to these newly created instances.
 
-However, there are scenarios in which our architectural design will have challenges to overcome, or even fail. Let's have a look at each scenario to get a better understanding of the impact on the tracking portal.
+However, there are scenarios in which our architectural design has challenges to overcome, or even fail. Let's have a look at each scenario to get a better understanding of the impact on the tracking portal.
 
 ### Regional failures
 
@@ -78,7 +78,7 @@ If this percentage uptime isn't enough for our application, we can arrange for t
 
 In our design, some components are global by default and not vulnerable to a regional failure.
 
-Some components are confined to a single region, for example, the Application Gateway. We'll have to select an alternate service for these types of components.
+Some components are confined to a single region, for example, the Application Gateway. We have to select an alternate service for these types of components.
 
 Some components can be configured to support multiple regions. For example, we can use the Geo-Redundant Storage (GRS) option in the Azure Storage account that stores static content. GRS replicates blobs to another region.
 
@@ -88,13 +88,13 @@ The following table shows which components are global, regional, and configurabl
 | --- | --- | --- |
 | Azure DNS | Global | No changes are necessary. |
 | Application Gateway | Regional | Each instance of Application Gateway is located in a single region. |
-| Azure CDN | Global | No changes are necessary, and content is cached globally by default. |
+| Azure CDN | Global | No changes are necessary, content is cached globally by default. |
 | Azure Active Directory | Global | No changes are necessary. |
 | Azure App Service | Regional | Each instance of the app is located in a single region. |
 | Azure Function Apps | Regional | Each instance of the function app is located in a single region. |
-| Azure Storage Queues | Configurable | You can choose to replicate a Storage Account to multiple regions. |
+| Azure Storage Queues | Configurable | You can choose to replicate an Azure Storage account to multiple regions. |
 | Azure Redis Cache | Regional |  Each instance of the cache is located in a single region. |
-| Azure Blob Storage | Configurable | You can choose to replicate a Storage Account to multiple regions. |
+| Azure Blob Storage | Configurable | You can choose to replicate an Azure Storage account to multiple regions. |
 | Azure Search | Regional |  Each instance of the search service is located in a single region. |
 | Azure SQL Database | Configurable | You can use geo-replication to synchronize data to multiple regions. |
 | Azure Cosmos DB | Configurable | You can use geo-replication to synchronize data to multiple regions. |
@@ -108,25 +108,25 @@ After some investigation, you propose the architecture as shown in the following
 
 In this design, there's an active region (East US) and a standby region (West US). The East US region handles all requests by the components under ordinary circumstances. If a disaster causes a regional failure, the application fails over onto the West US region.
 
-Let's examine, at a high level, how you've modified the original architecture. We'll explore these changes in more detail in later units.
+Let's examine, at a high level, how you've modified the original architecture. We explore these changes in more detail in later units.
 
 ### Networking
 
-Azure DNS and Azure CDN are by default global systems and already resilient to regional failures. We'll leave them in place.
+Azure DNS and Azure CDN are by default global systems and already resilient to regional failures. We leave them in place.
 
-When we create an Azure Application Gateway, we assign the service to a single region. We'll remove this vulnerability by replacing this service with Azure Front Door. Front Door can poll multiple App Services, and will handle the App Service failover from the East US region to the West US region.
+When we create an Azure Application Gateway, we assign the service to a single region. We remove this vulnerability by replacing this service with Azure Front Door. Front Door can poll multiple App Services, and handle the App Service failover from the East US region to the West US region.
 
 ### Application services
 
 Azure AD is a global system, and needs no modification.
 
-Azure Storage accounts can be configured to replicate content to multiple regions. We'll use one of the geo-redundant storage options to change our configuration.
+Azure Storage accounts can be configured to replicate content to multiple regions. We use one of the geo-redundant storage options to change our configuration.
 
-The other components, which include the App Service, Function Apps, the Redis cache, and Azure Search, are regional. We'll create duplicate instances of these components in the West US region in our new architectural design. In this design, the new region can take over when a failover occurs.
+The other components, which include the App Service, Function Apps, the Redis cache, and Azure Search, are regional. We create duplicate instances of these components in the West US region in our new architectural design. In this design, the new region can take over when a failover occurs.
 
 ### Data storage
 
-Azure SQL Database and Azure Cosmos DB both support geo-replication of data to other regions. We'll configure these services to replicate East US data to the equivalent services in West US.
+Azure SQL Database and Azure Cosmos DB both support geo-replication of data to other regions. We configure these services to replicate East US data to the equivalent services in West US.
 
 ## Regional pairs
 

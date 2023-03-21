@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 
 Microsoft offers DDoS Infrastructure Protection to all Azure customers for free. Microsoft also offers additional services in their DDoS Protection service.
+=======
+Microsoft offers DDoS infrastructure protection to all Azure customers for free. Microsoft also offers additional services in their DDoS Protection service.
+>>>>>>> feaa85fe1746df0ac388dc207713100fc37ee987
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWCjzm]
 
@@ -28,7 +32,10 @@ Some common DDoS attacks are:
 - Protocol attacks. These attacks target Layer 3 or Layer 4 of the OSI model. They exploit a weakness in TCP. An example of a protocol-based DDoS attack is the TCP SYN flood, which exploits part of the three-way handshake. The attacker sends a succession of TCP SYN requests, ignoring the SYN+ACK reply. This attack is directed towards a target with the goal of overwhelming the target and making it unresponsive.
 - Resource (application) layer attacks. Resource attacks target the “top” layer in the OSI model to disrupt the transmission of data between hosts. These layer-7 attacks include exploiting the HTTP protocol, SQL injection attacks, cross-site scripting, and other application attacks.
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> feaa85fe1746df0ac388dc207713100fc37ee987
 ### Azure DDoS Protection offerings
 
 DDoS protection is similar to a secure and functioning backup system. A backup’s value to your organization isn't obvious until it’s needed. DDoS protection, like a backup, provides risk mitigation against potential threats.
@@ -43,9 +50,15 @@ Azure DDoS Infrastructure Protection provides:
 - Automatic attack mitigation. Once the attack is detected, it’s mitigated.
 - The DDoS Infrastructure Protection service level agreement (SLA), which is based on the Azure region with best-effort support.
 
+<<<<<<< HEAD
 Services running on Azure are inherently protected by the default infrastructure-level DDoS protection. However, the protection that safeguards the infrastructure have a much higher threshold than most applications have the capacity to handle, and does not provide telemetry or alerting, so while a traffic volume may be perceived as harmless by the platform, it can be devastating to the application that receives it.
 
 By onboarding to the Azure DDoS Protection service, the application gets dedicated monitoring to detect attacks and application specific thresholds. A service will be protected with a profile that is tuned to its expected traffic volume, providing a much tighter defense against DDoS attacks.
+=======
+### Azure DDoS Network Protection
+
+DDoS Network Protection provides enhanced DDoS mitigation features to defend against DDoS attacks. It's automatically tuned to help protect your specific Azure resources in a virtual network.
+>>>>>>> feaa85fe1746df0ac388dc207713100fc37ee987
 
 ### Azure DDoS Network Protection
 
@@ -63,6 +76,7 @@ The following list describes the features and benefits of DDoS Network Protectio
 - It includes support for the integration of mitigation logs with Microsoft Defender for Cloud, Microsoft Sentinel, or an offline security information and event management (SIEM) system for near real-time monitoring during an attack.
 - Azure Monitor collects monitoring telemetry from DDoS Network Protection for access to summarized attack metrics.
 
+<<<<<<< HEAD
 ### Azure DDoS IP Protection
 
 DDoS IP Protection is a pay-per-protected IP model. DDoS IP Protection contains the same core engineering features as DDoS Network Protection, but will differ in the following value-added services:
@@ -74,6 +88,9 @@ DDoS IP Protection is a pay-per-protected IP model. DDoS IP Protection contains 
 ## Value-added services
 
 Cost guarantee and DDoS rapid response support are two important DDoS Network Protection features. These two features are value-added for DDoS IP Protection.
+=======
+Cost guarantee and DDoS rapid response support are two of the other important DDoS Network Protection features.
+>>>>>>> feaa85fe1746df0ac388dc207713100fc37ee987
 
 ### Cost guarantee
 
