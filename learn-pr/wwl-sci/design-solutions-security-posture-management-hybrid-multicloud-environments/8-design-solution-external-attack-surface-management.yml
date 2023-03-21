@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.design-solutions-security-posture-management-hybrid-multicloud-environments.design-solution-external-attack-surface-management
+title: Design a solution for external attack surface management
+metadata:
+  title: Design a solution for external attack surface management
+  description: "SC-100 preparatory unit on the topic: design a solution for external attack surface management."
+  ms.date: 3/19/2023
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 10
+content: |
+  [!include[](includes/8-design-solution-external-attack-surface-management.md)]
