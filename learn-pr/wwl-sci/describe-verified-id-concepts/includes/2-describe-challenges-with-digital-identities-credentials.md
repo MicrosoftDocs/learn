@@ -1,4 +1,3 @@
-## Challenges with current digital identities
 
 Think about all the online apps and services you currently use and how you register with and access them.  You may be using your email address, an existing social media account, or you may set up a new username.  Whichever method you use, it becomes your online digital identity to that service or app.
 

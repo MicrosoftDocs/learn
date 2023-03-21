@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.wwl.understand-azure-active-directory
+metadata:
+  title: Understand Azure Active Directory
+  description: "This module equips learners to describe Azure AD - a cloud-based identity and access management service. They'll compare it with AD DS, understand its role as a directory for cloud services, and learn about its security features. They'll also learn about Azure AD Domain Services."
+  ms.date: 03/14/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Understand Azure Active Directory
+summary: This module explains Azure AD. You'll compare Azure AD to AD DS, learn about Azure AD Premium P1 and P2, and explore Azure AD Domain Services for managing domain-joined devices and apps in the cloud.
+abstract: |
+  After this module, you should be able to:
+  - Describe Azure AD.
+  - Compare Azure AD to Active Directory Domain Services (AD DS).
+  - Describe how Azure AD is used as a directory for cloud apps.
+  - Describe Azure AD Premium P1 and P2.
+  - Describe Azure AD Domain Services.
+prerequisites: |
+  - Strong technical skills installing, maintaining, and troubleshooting the Windows 11 OS or later.
+  - Strong understanding of computer networking, client security, and application concepts.
+  - Experience using Active Directory Domain Services.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- identity-access-admin
+products:
+- azure
+- azure-active-directory
+- active-directory
+subjects:
+- identity-access
+- infrastructure
+- it-management-monitoring
+- employee-management
+units:
+- learn.wwl.understand-azure-active-directory.introduction
+- learn.wwl.understand-azure-active-directory.examine-azure-active-directory
+- learn.wwl.understand-azure-active-directory.compare-azure-active-directory-domain-services
+- learn.wwl.understand-azure-active-directory.examine-azure-directory-service-cloud-apps
+- learn.wwl.understand-azure-active-directory.compare-azure-premium-p1-p2-plans
+- learn.wwl.understand-azure-active-directory.examine-azure-domain-services
+- learn.wwl.understand-azure-active-directory.knowledge-check
+- learn.wwl.understand-azure-active-directory.summary
+badge:
+  uid: learn.wwl.understand-azure-active-directory.badge

@@ -1,0 +1,81 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-visual-studio-code-debugging-tools.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/20/2023
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which section of the RUN AND DEBUG view is used to track the current point of execution within the running application?"
+    choices:
+    - content: "The VARIABLES section."
+      isCorrect: false
+      explanation: "Incorrect. The VARIABLES section is used to view and manage variable state during a debug session."
+    - content: "The CALL STACK section."
+      isCorrect: true
+      explanation: "Correct. The CALL STACK section is used to keep track of the current point of execution within the running application, starting with the initial point of entry into the application."
+    - content: "The WATCH section."
+      isCorrect: false
+      explanation: "Incorrect. The WATCH section is used to monitor variables or expressions."
+  - content: "Which of the following options can be used set a breakpoint in Visual Studio Code?"
+    choices:
+    - content: "Left-click in the column to the left of a line number in the code editor."
+      isCorrect: true
+      explanation: "Correct. A breakpoint can be set by positioning the mouse pointer in the column to the left of a line number and then left-clicking."
+    - content: "Select **Toggle Breakpoint** on the **Edit** menu."
+      isCorrect: false
+      explanation: "Incorrect. The option to toggle breakpoints is on the **Run** menu, not the **Edit** menu."
+    - content: "Right-click in the middle of a line of code, and then select **Toggle Breakpoint**."
+      isCorrect: false
+      explanation: "Incorrect. Right-clicking in the middle of a line of code displays a context menu, but there is no **Toggle Breakpoint** option provided."
+  - content: "How can a developer disable a breakpoint in Visual Studio Code?"
+    choices:
+    - content: "Click **Remove Breakpoint** on the **Run** menu."
+      isCorrect: false
+      explanation: "Incorrect. The **Remove Breakpoint** option removes the breakpoint rather than disabling it."
+    - content: "Right-click the red dot to the left of the line number and select **Disable Breakpoint**."
+      isCorrect: true
+      explanation: "Correct. A breakpoint can be disabled by right-clicking the red dot that represents a breakpoint and then selecting **Disable Breakpoint**."
+    - content: "Left-click the red dot to the left of the line number."
+      isCorrect: false
+      explanation: "Incorrect. Left-clicking the red dot that represents a breakpoint will delete the breakpoint."
+  - content: "What is a conditional breakpoint in Visual Studio Code?"
+    choices:
+    - content: "A breakpoint that only triggers when a specified condition is met."
+      isCorrect: true
+      explanation: "Correct. A conditional breakpoint is a special type of breakpoint that only triggers when a specified condition is met."
+    - content: "A breakpoint that is triggered every time the code is run."
+      isCorrect: false
+      explanation: "Incorrect. A conditional breakpoint is triggered when a specified condition is met."
+    - content: "A breakpoint that is only visible in the editor and does not affect debugging."
+      isCorrect: false
+      explanation: "Incorrect. A conditional breakpoint affects debugging and pauses execution when the condition is met."
+  - content: "How can a developer create a conditional breakpoint in Visual Studio Code?"
+    choices:
+    - content: "Left-click in the column to the left of a line number in the code editor."
+      isCorrect: false
+      explanation: "Incorrect. A left-click in the column to the left of a line number sets a standard breakpoint."
+    - content: "Select **Toggle Conditional Breakpoint** on the **Run** menu."
+      isCorrect: false
+      explanation: "Incorrect. The **Run** menu does not include a **Toggle Conditional Breakpoint** option. The **Run** menu does include a **New Breakpoint** option that displays a submenu. The submenu includes a **Conditional Breakpoint** option."
+    - content: "Right-click in the column to the left of a line number, and then select **Add Conditional Breakpoint**."
+      isCorrect: true
+      explanation: "Correct. A developer can create a conditional breakpoint by right-clicking in the column to the left of a line number, and then selecting **Add Conditional Breakpoint**."
+  - content: "In a launch configuration file, what is the **console** attribute used for?"
+    choices:
+    - content: "Specifies the working directory of the target process."
+      isCorrect: false
+      explanation: "Incorrect. The **cwd** attribute specifies the working directory of the target process."
+    - content: "Specifies the type of debugger to use for this launch configuration."
+      isCorrect: false
+      explanation: "Incorrect. The **type** attribute specifies the type of debugger to use for this launch configuration."
+    - content: "Specifies the type of console that's used when the application is launched."
+      isCorrect: true
+      explanation: "Correct. The **console** attribute specifies the type of console that's used when the application is launched. The options are **internalConsole**, **integratedTerminal**, and **externalTerminal**. The default setting is **internalConsole**."

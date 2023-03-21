@@ -13,6 +13,5 @@ metadata:
   ms.service: active-directory
   ms.subservice: fundamentals
 durationInMinutes: 7
-azureSandbox: true
 content: |
   [!include[](includes/3-exercise-add-delete-users-azure-ad.md)]

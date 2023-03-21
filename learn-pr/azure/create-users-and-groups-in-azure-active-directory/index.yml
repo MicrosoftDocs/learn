@@ -19,7 +19,7 @@ abstract: |
   - Manage app and resource access by using Azure Active Directory groups.
   - Give guest users access in Azure Active Directory business to business (B2B).
 prerequisites: | 
-  - None
+  - An Azure account with an [active subscription](https://azure.microsoft.com/free)
 iconUrl: /training/achievements/create-users-and-groups-in-azure-active-directory.svg
 levels:
 - beginner

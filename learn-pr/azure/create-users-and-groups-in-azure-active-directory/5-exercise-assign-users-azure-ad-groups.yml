@@ -13,6 +13,5 @@ metadata:
   ms.service: active-directory
   ms.subservice: fundamentals
 durationInMinutes: 5
-azureSandbox: true
 content: |
   [!include[](includes/5-exercise-assign-users-azure-ad-groups.md)]

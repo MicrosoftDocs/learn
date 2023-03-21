@@ -37,4 +37,4 @@ Microsoft Defender for Office 365 is included in certain subscriptions, such as 
 
 If your subscription doesn’t include Defender for Office 365, you can purchase it as an add-on.
 
-Use Microsoft 365 Defender for Office 365 to protect your organization's collaboration tools and messages.
+Use Microsoft Defender for Office 365 to protect your organization's collaboration tools and messages.
