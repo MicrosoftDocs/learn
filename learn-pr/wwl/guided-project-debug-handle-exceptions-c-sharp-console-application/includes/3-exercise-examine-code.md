@@ -410,7 +410,7 @@ In this task, you use the Visual Studio Code debugger tools to isolate and then 
     }    
     ```
 
-    The `cashTill[]` array is used to store the number of bills of each denomination that are currently available. Array element `1` is used to manage the number of five dollar bills in the till. The expression in the `while` statement refers to `cashTill[1]` correctly. However, the statement inside the code block decrements `cashTill[2]` rather than `cashTill[1]`. Specifying an idex value of `2` means that a ten dollar bill is being removed from the till rather than a five dollar bill.
+    The `cashTill[]` array is used to store the number of bills of each denomination that are currently available. Array element `1` is used to manage the number of five dollar bills in the till. The expression in the `while` statement refers to `cashTill[1]` correctly. However, the statement inside the code block decrements `cashTill[2]` rather than `cashTill[1]`. Specifying an index value of `2` means that a ten dollar bill is being removed from the till rather than a five dollar bill.
 
 1. Update the `while` code block as follows:
 

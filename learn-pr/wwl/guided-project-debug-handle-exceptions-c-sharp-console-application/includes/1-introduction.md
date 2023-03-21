@@ -21,7 +21,7 @@ In this module, you practice how to:
 - Create and throw exceptions with customized properties.
 - Catch exceptions at a lower level in the call stack.
 
-## Prerequisites:
+## Prerequisites
 
 - An installation of Visual Studio Code that's configured for C# application development.
 - Ability to develop C# console applications that implement business logic using iteration statements, selection statements, and custom methods.
