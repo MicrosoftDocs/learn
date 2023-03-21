@@ -107,7 +107,13 @@ Static files that should be served by the web server should be moved to an appro
    - *jquery.validate.unobtrusive.min.js*
    - *modernizr-2.8.3.js*
 
+The required static files have been moved.
+
+:::image type="content" source="../media/wwwroot-with-files.png" alt-text="The wwwroot directory and subdirectories with all the required files present.":::
+
 ### Update static file references in the Layout page
+
+The static files are where they need to be, so now we can update the Razor layout to reflect their new location.
 
 1. In the **new** *AspNetMvcTestCore* project, Open `Views/Shared/_Layout.cshtml`.
 1. Find the following lines in the `<head>` element:
