@@ -1,0 +1,72 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-exception-handling-c-sharp.examine-compiler-generated-exceptions
+title: 'Examine compiler-generated exceptions '
+metadata:
+  title: Examine compiler-generated exceptions
+  description: "Examine compiler-generated exceptions"
+  ms.date: 03/20/2023
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-examine-compiler-generated-exceptions.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "When is an `ArrayTypeMismatchException` exception thrown?"
+    choices:
+    - content: "An `ArrayTypeMismatchException` exception is thrown when an attempt is made to divide an integral value by zero."
+      isCorrect: false
+      explanation: "Incorrect. This answer choice describes when a `DivideByZeroException` exception is thrown."
+    - content: "An `ArrayTypeMismatchException` exception is thrown when an attempt is made to index an array outside the bounds of the array."
+      isCorrect: false
+      explanation: "Incorrect. This answer choice describes when a `IndexOutOfRangeException` exception is thrown."
+    - content: "An `ArrayTypeMismatchException` exception is thrown when an attempt is made to store a value of one type in an array of another type."
+      isCorrect: true
+      explanation: "Correct. The `ArrayTypeMismatchException` exception is thrown when an attempt is made to store an element of the wrong type within an array."
+  - content: "When is a `DivideByZeroException` exception thrown?"
+    choices:
+    - content: "A `DivideByZeroException` exception is thrown when an attempt is made to divide an integral value by zero."
+      isCorrect: true
+      explanation: "Correct. A `DivideByZeroException`  is thrown when trying to divide an integer or Decimal number by zero."
+    - content: "A `DivideByZeroException` exception is thrown when an attempt is made to index an array outside the bounds of the array."
+      isCorrect: false
+      explanation: "Incorrect. This answer choice describes when a `IndexOutOfRangeException` exception is thrown."
+    - content: "A `DivideByZeroException` exception is thrown when an attempt is made to store a value of one type in an array of another type."
+      isCorrect: false
+      explanation: "Incorrect. This answer choice describes when a `ArrayTypeMismatchException` exception is thrown."
+  - content: "When is an `IndexOutOfRangeException` exception thrown?"
+    choices:
+    - content: "An `IndexOutOfRangeException` exception is thrown when an attempt is made to divide an integral value by zero."
+      isCorrect: false
+      explanation: "Incorrect. This answer choice describes when a `DivideByZeroException` exception is thrown."
+    - content: "An `IndexOutOfRangeException` exception is thrown when an attempt is made to index an array outside the bounds of the array."
+      isCorrect: true
+      explanation: "Correct. An `IndexOutOfRangeException` exception is thrown when an attempt is made to access an element of an array or collection with an index that is outside its bounds."
+    - content: "An `IndexOutOfRangeException` exception is thrown when an attempt is made to store a value of one type in an array of another type."
+      isCorrect: false
+      explanation: "Incorrect. This answer choice describes when a `ArrayTypeMismatchException` exception is thrown."
+  - content: "When is an `InvalidCastException` exception thrown?"
+    choices:
+    - content: "An `InvalidCastException` exception is thrown when an attempt is made to divide an integral value by zero."
+      isCorrect: false
+      explanation: "Incorrect. This answer choice describes when a `DivideByZeroException` exception is thrown."
+    - content: "An `InvalidCastException` exception is thrown when attempting an invalid casting or explicit conversion."
+      isCorrect: true
+      explanation: "Correct. An `InvalidCastException` exception is thrown when attempting an invalid casting or explicit conversion."
+    - content: "An `InvalidCastException` exception is thrown when an attempt is made to store a value of one type in an array of another type."
+      isCorrect: false
+      explanation: "Incorrect. This answer choice describes when a `ArrayTypeMismatchException` exception is thrown."
+  - content: "When is a `NullReferenceException` exception thrown?"
+    choices:
+    - content: "A `NullReferenceException` exception is thrown when attempting an invalid casting or explicit conversion."
+      isCorrect: false
+      explanation: "Incorrect. This answer choice describes when a `InvalidCastException` exception is thrown."
+    - content: "A `NullReferenceException` exception is thrown when an attempt is made to store a value of one type in an array of another type."
+      isCorrect: false
+      explanation: "Incorrect. This answer choice describes when a `ArrayTypeMismatchException` exception is thrown."
+    - content: "A `NullReferenceException` exception is thrown when attempting to access a member on a type whose value is null."
+      isCorrect: true
+      explanation: "Correct. A `NullReferenceException` exception is thrown when attempting to access a member on a type whose value is null."

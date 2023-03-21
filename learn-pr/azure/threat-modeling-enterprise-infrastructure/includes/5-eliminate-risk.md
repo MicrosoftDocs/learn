@@ -56,7 +56,7 @@ Visit [Azure security benchmark](/azure/security/benchmarks/overview) to learn a
 |No folder restrictions|Assign file level permissions using [role-based access control](/mem/configmgr/core/understand/fundamentals-of-role-based-administration).|
 |No asset disposal or deprecation plan|Use [Azure inventory and asset management](/azure/security/benchmarks/security-control-inventory-asset-management) guidelines to come up with an asset disposal or deprecation plan.|
 |No data encryption on shared drives and servers|Follow [data encryption guidance](/azure/security/fundamentals/data-encryption-best-practices).|
-|No Data Leakage Prevention (DLP)|Use [data leakage prevention practices](/cloud-app-security/governance-actions)and [data loss prevention compliance guidelines](/microsoft-365/compliance/data-loss-prevention-policies).|
+|No Data Leakage Prevention (DLP)|Use [data leakage prevention practices](/cloud-app-security/governance-actions)and [data loss prevention compliance guidelines](/microsoft-365/compliance/dlp-learn-about-dlp).|
 |NAS used for both backups and file shares|First, separate the NAS by either migrating file shares completely to OneDrive, or adding a secondary NAS just for file sharing. You may also use [Azure backup](https://azure.microsoft.com/services/backup/) for your backup needs.|
 |OneDrive not fully adopted|Develop and enforce timelines to give teams time to move their files. You may also use the [migration center tool](/sharepointmigration/migrating-content-to-onedrive-for-business). Share the [adoption guidelines](https://adoption.microsoft.com/onedrive/) with teams.|
 |No disk encryption on enterprise machines|Follow [data encryption guidance](/azure/security/fundamentals/data-encryption-best-practices).|
