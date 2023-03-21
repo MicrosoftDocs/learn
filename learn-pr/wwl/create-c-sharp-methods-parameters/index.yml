@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.create-c-sharp-methods-parameters
+metadata:
+  title: Create C# methods with parameters
+  description: "This module covers method parameters, including pass-by-reference and pass-by-value parameter types. This module also covers optional and named arguments."
+  ms.date: 03/21/2023
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create C# methods with parameters
+summary: Learn how to use different types of input parameters in methods
+abstract: |
+  - Learn more about using parameters
+  - Understand method scope
+  - Understand pass-by-reference and pass-by-value parameter types
+  - Learn how to use optional and named arguments
+prerequisites: |
+  - Experience using C# data types including `int`, `string`, arrays, and 2D arrays
+  - Experience using switch statements, if-else statements, and for-loops
+  - Experience using the `Random` class to generate a random number.
+  - Basic understanding of C# methods
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+- k-12-educator
+- student
+products:
+- dotnet-framework
+- vs-code
+units:
+- learn.wwl.create-c-sharp-methods-parameters.introduction
+- learn.wwl.create-c-sharp-methods-parameters.exercise-add-parameters-to-methods
+- learn.wwl.create-c-sharp-methods-parameters.exercise-understand-method-scope
+- learn.wwl.create-c-sharp-methods-parameters.exercise-use-value-reference-type-parameters
+- learn.wwl.create-c-sharp-methods-parameters.exercise-use-named-optional-parameters
+- learn.wwl.create-c-sharp-methods-parameters.exercise-challenge-email-addresses
+- learn.wwl.create-c-sharp-methods-parameters.review-solution-email-addresses
+- learn.wwl.create-c-sharp-methods-parameters.knowledge-check
+- learn.wwl.create-c-sharp-methods-parameters.summary
+badge:
+  uid: leaen.wwl.create-c-sharp-methods-parameters.badge
