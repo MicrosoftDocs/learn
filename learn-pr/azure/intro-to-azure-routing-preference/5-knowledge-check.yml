@@ -21,50 +21,50 @@ quiz:
     - content: "The financial company should choose the Microsoft network option."
       isCorrect: false
       explanation: "The routing preference of Microsoft network would work for the application or service for the financial company, but doesn't fulfil the cost savings requirement. The majority of traffic will traverse the Microsoft network with this routing preference and would be subject to region egress costs."
-    - content: ""
+    - content: "The financial company should choose the Extranet option."
       isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Extranet isn't a routing preference option for an Azure public IP address. An extranet is a private network that allows controlled access to authorized external users, typically for business purposes. It extends an organization's intranet beyond its boundaries to include partners, vendors, and customers."
+  - content: "A multi-national car manufacturer wishes to use routing preference unmetered for CDN origin content stored in Azure. Who does the car manufacturer contact to determine if their CDN provider is a member of the program?"
     choices:
-    - content: ""
+    - content: "The CDN provider"
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "To utilize the benefits of routing preference unmetered, your CDN provider must be enrolled in the program. If your current CDN provider is not a part of the program, reach out to them for assistance."
+    - content: "Azure support"
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "The determination of whether routing preference unmetered can be used is dependent on the CDN provider enrollment in the routing preference unmetered program. Azure support wouldn't be able to assist if the CDN provider isn't a member of the program."
+    - content: "The Internet Service Provider"
       isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "The determination of whether routing preference unmetered can be used is dependent on the CDN provider enrollment in the routing preference unmetered program. The Internet Service Provider wouldn't be able to assist if the CDN provider isn't a member of the program."
+  - content: "A multi-national car manufacturer has an application in the South Central US Azure region that requires the least amount of latency and the most network performance as possible. What routing preference should the network engineer choose for the application's public IP address?"
     choices:
-    - content: ""
+    - content: "The engineer should choose the Microsoft network option."
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "The routing preference of Microsoft network will provide the best latency and network performance. This fulfils the requirement of the application performance. The Internet routing option, though fast and comparable to other cloud providers, is subject to performance and latency issues that could occur with traffic traversing the public Internet."
+    - content: "The engineer should choose the Internet option."
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "The routing preference of Internet doesn't fulfil the requirement of the application for network and latency performance."
+    - content: "The engineer should choose the BGP option."
       isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "BGP stands for Border Gateway Protocol, which is a standardized protocol used to exchange routing information between different autonomous systems (AS) on the internet. It is responsible for making core routing decisions on the internet, including directing traffic between different networks. BGP is unrelated to Azure routing preference and isn't an option for an Azure public IP address."
+  - content: "Can a network administrator change the routing preference for a public IP address in Azure?"
     choices:
-    - content: ""
+    - content: "No, once a public IP address is created, the routing preference can't be changed."
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "A public IP address in Azure once it's created can't have the routing preference changed. To change the routing preference of an application or service associated with a public IP address, create a new public IP address with the preferred routing preference and associate it with the application or service."
+    - content: "Yes, an administrator can change the routing preference for a public IP address in Azure."
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "Once a public IP address is created, the routing preference can't be changed. To change the routing preference of an application or service associated with a public IP address, create a new public IP address with the preferred routing preference and associate it with the application or service."
+    - content: "Yes, an administrator can change the routing preference, but they will have to contact Azure support to change the routing preference option."
       isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Once a public IP address is created, the routing preference can't be changed. To change the routing preference of an application or service associated with a public IP address, create a new public IP address with the preferred routing preference and associate it with the application or service. An Azure support call isn't required."
+  - content: "The two options for routing preference are Microsoft network and Internet. What is another food related name for these options?"
     choices:
-    - content: ""
+    - content: "The two options are hot potato routing for the Internet option and cold potato for the Microsoft network option."
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "The terms hot potato and cold potato routing refer to how network traffic travels to and from an application or service hosted in Azure.  Hot potato routing refers to traffic that routes across the public internet and enters the Microsoft network closest to the Azure region where the application or service is deployed. Cold potato routing refers to traffic that routes across the public Internet, but enters the Microsoft network closest to the user accessing the application or service deployed."
+    - content: "The two options are hot potato routing for the Microsoft network option and cold potato for the Internet option."
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "The terms are reversed. The terms hot potato and cold potato routing refer to how network traffic travels to and from an application or service hosted in Azure.  Hot potato routing refers to traffic that routes across the public internet and enters the Microsoft network closest to the Azure region where the application or service is deployed. Cold potato routing refers to traffic that routes across the public Internet, but enters the Microsoft network closest to the user accessing the application or service deployed."
+    - content: "The two options are hot coffee routing for Internet option and cold coffee routing for the Microsoft network option."
       isCorrect: false
-      explanation: ""
+      explanation: "The terms hot coffee and cold coffee are not valid terms for the routing preference in Azure. The terms hot potato and cold potato routing refer to how network traffic travels to and from an application or service hosted in Azure.  Hot potato routing refers to traffic that routes across the public internet and enters the Microsoft network closest to the Azure region where the application or service is deployed. Cold potato routing refers to traffic that routes across the public Internet, but enters the Microsoft network closest to the user accessing the application or service deployed."
