@@ -82,7 +82,7 @@ From here, you can move classes and controllers incrementally to the new project
 
 ## Complete manual upgrade steps
 
-After completing the steps in the Upgrade Assistant, you'll need to complete some manual steps to complete the upgrade.
+After completing the steps in the Upgrade Assistant, you'll need to complete some manual steps to complete the upgrade. The static *.js* and *.css* files aren't part of the automated upgrade, so you'll need to take an alternative approach. For this app, we'll move those by hand.
 
 ### Move static files to *wwwroot*
 
@@ -117,8 +117,6 @@ Static files that should be served by the web server should be moved to an appro
    @*@Scripts.Render("~/bundles/modernizr")*@
    ```
 
-   We haven't 
-
 1. Replace the above lines with:
 
    ```html
@@ -144,9 +142,9 @@ Static files that should be served by the web server should be moved to an appro
    <script src="~/js/bootstrap.min.js"></script>
    ```
 
-### Run the application
+## Run the application
 
-Return to the Summary dialog and note that no non-upgraded endpoints remain in the old .NET Framework app.
+Return to the Summary dialog and note that no non-upgraded endpoints remain in the old .NET Framework app. You may need to build the app to update the assistant.
 
 :::image type="content" source="../media/endpoints-summary-done.png" alt-text="The Summary tab in the Upgrade Assistant showing all the endpoints have been migrated.":::
 
@@ -155,6 +153,18 @@ When you press <kbd>F5</kbd>, the application should build and run successfully.
 :::image type="content" source="../media/upgraded-app-running.png" alt-text="Screenshot of browser window showing the ASP.NET Core application's home page.":::
 
 If this app had more controllers, you would repeat this process for the additional controllers until the entire app is upgraded.
+
+## Remove YARP
+
+Now that all the endpoints have been migrated, there's no need for a reverse proxy mapping to the old project anymore.
+
+In the new app, complete the following steps to remove YARP:
+
+1. In *Program.cs*, remove the line that calls `builder.Services.AddReverseProxy().LoadFromConfig()`.
+1. In that same file, remove the line `app.MapReverseProxy();`.
+1. In *appsettings.json*, remove the `ReverseProxy` configuration object.
+
+The new app can now be built and deployed independently from the original app.
 
 ## Summary
 
