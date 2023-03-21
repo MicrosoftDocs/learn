@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.migrate-cicd-pipelines-to-github-with-github-actions-importer
 metadata:
-  title: Migrate your CICD pipelines to GitHub with GitHub Actions Importer
+  title: Migrate your CI/CD pipelines to GitHub with GitHub Actions Importer
   description: Learn about GitHub Actions Importer and how it can help facilitate migrations from your current CI/CD tool to GitHub Actions.
   ms.date: 3/21/2023
   author: a-a-ron
