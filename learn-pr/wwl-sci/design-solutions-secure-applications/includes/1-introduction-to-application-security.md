@@ -21,13 +21,13 @@ DevOps Security covers the controls related to the security engineering and oper
 
 Microsoft cloud security benchmark outlines 7 critical controls for DevOps security.
 
-1.  [DS-1: Conduct threat modeling](https://learn.microsoft.com/en-us/security/benchmark/azure/mcsb-devops-security#ds-1-conduct-threat-modeling)
-2.  [DS-2: Ensure software supply chain security](https://learn.microsoft.com/en-us/security/benchmark/azure/mcsb-devops-security#ds-2-ensure-software-supply-chain-security)
-3.  [DS-3: Secure DevOps infrastructure](https://learn.microsoft.com/en-us/security/benchmark/azure/mcsb-devops-security#ds-3-secure-devops-infrastructure)
-4.  [DS-4: Integrate static application security testing into DevOps pipeline](https://learn.microsoft.com/en-us/security/benchmark/azure/mcsb-devops-security#ds-4-integrate-static-application-security-testing-into-devops-pipeline)
-5.  [DS-5: Integrate dynamic application security testing into DevOps pipeline](https://learn.microsoft.com/en-us/security/benchmark/azure/mcsb-devops-security#ds-5-integrate-dynamic-application-security-testing-into-devops-pipeline)
-6.  [DS-6: Enforce security of workload throughout DevOps lifecycle](https://learn.microsoft.com/en-us/security/benchmark/azure/mcsb-devops-security#ds-6-enforce-security-of-workload-throughout-devops-lifecycle)
-7.  [DS-7: Enable logging and monitoring in DevOps](https://learn.microsoft.com/en-us/security/benchmark/azure/mcsb-devops-security#ds-7-enable-logging-and-monitoring-in-devops)
+1.  [DS-1: Conduct threat modeling](https://learn.microsoft.com/security/benchmark/azure/mcsb-devops-security#ds-1-conduct-threat-modeling)
+2.  [DS-2: Ensure software supply chain security](https://learn.microsoft.com/security/benchmark/azure/mcsb-devops-security#ds-2-ensure-software-supply-chain-security)
+3.  [DS-3: Secure DevOps infrastructure](https://learn.microsoft.com/security/benchmark/azure/mcsb-devops-security#ds-3-secure-devops-infrastructure)
+4.  [DS-4: Integrate static application security testing into DevOps pipeline](https://learn.microsoft.com/security/benchmark/azure/mcsb-devops-security#ds-4-integrate-static-application-security-testing-into-devops-pipeline)
+5.  [DS-5: Integrate dynamic application security testing into DevOps pipeline](https://learn.microsoft.com/security/benchmark/azure/mcsb-devops-security#ds-5-integrate-dynamic-application-security-testing-into-devops-pipeline)
+6.  [DS-6: Enforce security of workload throughout DevOps lifecycle](https://learn.microsoft.com/security/benchmark/azure/mcsb-devops-security#ds-6-enforce-security-of-workload-throughout-devops-lifecycle)
+7.  [DS-7: Enable logging and monitoring in DevOps](https://learn.microsoft.com/security/benchmark/azure/mcsb-devops-security#ds-7-enable-logging-and-monitoring-in-devops)
 
 Those controls are summarized in the following table:
 

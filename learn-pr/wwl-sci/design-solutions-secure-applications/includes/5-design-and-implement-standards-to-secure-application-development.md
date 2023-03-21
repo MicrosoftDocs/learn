@@ -3,7 +3,7 @@ Because DevOps itself is an emerging discipline with a high degree of process va
 This documentation reviews each stage of a continuous integration and continuous delivery (CI/CD) DevOps process and what security controls we recommend integrating first.
 :::image type="content" source="../media/devsecops-controls.png" alt-text="Diagram that shows DevSecOps controls" border="true" lightbox="../media/devsecops-controls.png":::
 <!--
-[](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/secure/devsecops-controls#plan-and-develop)
+[](https://learn.microsoft.com/azure/cloud-adoption-framework/secure/devsecops-controls#plan-and-develop)
 -->
 
 ## Plan and develop
@@ -16,7 +16,7 @@ Typically, modern development follows an agile development methodology. Scrum is
 
 It's not mandatory to add all these steps. But each step helps reveal security issues early, when they're much cheaper and easier to fix.
 <!--
-[](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/secure/devsecops-controls#threat-modeling)
+[](https://learn.microsoft.com/azure/cloud-adoption-framework/secure/devsecops-controls#threat-modeling)
 -->
 
 
@@ -32,9 +32,9 @@ Threat modeling is a simple concept, though it can be detailed and technical if 
 
 Threat modeling effectively puts you in the mindset of an attacker. It lets you see the application through an attacker's eyes. You learn how to block attempts before attackers can do anything about it. If your team has user personas in the design, you can treat the attacker as a hostile user persona.
 
-There are published approaches for threat modeling that range from simple question and answer methods to detailed tool-based analysis. You can base your approach on methodologies like the [STRIDE model](https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool-threats), the [DREAD model](https://en.wikipedia.org/wiki/DREAD_(risk_assessment_model)), or [OWASP threat modeling](https://owasp.org/www-community/Threat_Modeling).
+There are published approaches for threat modeling that range from simple question and answer methods to detailed tool-based analysis. You can base your approach on methodologies like the [STRIDE model](https://learn.microsoft.com/azure/security/develop/threat-modeling-tool-threats), the [DREAD model](https://en.wikipedia.org/wiki/DREAD_(risk_assessment_model)), or [OWASP threat modeling](https://owasp.org/www-community/Threat_Modeling).
 <!--
-[](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/secure/devsecops-controls#threat-modeling-start-simple)
+[](https://learn.microsoft.com/azure/cloud-adoption-framework/secure/devsecops-controls#threat-modeling-start-simple)
 -->
 
 
@@ -44,16 +44,16 @@ Because some approaches to threat modeling can be time-consuming and skill-inten
 
 The following simple questions methods will get you started:
 
--   [Simple questions method from Microsoft](https://learn.microsoft.com/en-us/security/compass/applications-services#simple-questions-method): This method asks specific technical questions designed to surface common security design mistakes.
+-   [Simple questions method from Microsoft](https://learn.microsoft.com/security/compass/applications-services#simple-questions-method): This method asks specific technical questions designed to surface common security design mistakes.
 -   [OWASP threat modeling](https://owasp.org/www-community/Threat_Modeling): This method focuses on asking simple, non-technical questions to get the threat modeling process started.
 
 You can use one or both of these approaches, depending on what works better for your team.
 
-When your team gets more comfortable with the process, they can apply more advanced techniques from Microsoft [security development lifecycle](https://www.microsoft.com/securityengineering/sdl/threatmodeling). And they can integrate threat modeling tools like [Microsoft threat modeling tool](https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool) to get deeper insights and help automate the process.
+When your team gets more comfortable with the process, they can apply more advanced techniques from Microsoft [security development lifecycle](https://www.microsoft.com/securityengineering/sdl/threatmodeling). And they can integrate threat modeling tools like [Microsoft threat modeling tool](https://learn.microsoft.com/azure/security/develop/threat-modeling-tool) to get deeper insights and help automate the process.
 
 Another helpful resource is the [guide to threat modeling for developers](https://martinfowler.com/articles/agile-threat-modelling.html).
 <!--
-[](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/secure/devsecops-controls#ide-security-plug-ins-and-pre-commit-hooks)
+[](https://learn.microsoft.com/azure/cloud-adoption-framework/secure/devsecops-controls#ide-security-plug-ins-and-pre-commit-hooks)
 -->
 
 
@@ -65,7 +65,7 @@ Integrated development environment (IDE) security plug-ins identify different se
 
 Another option to consider is to use a pre-commit framework if the version control system allows it. A pre-commit framework provides Git hook scripts that help identify issues before a developer submits code for code review. One example is [pre-commit](https://pre-commit.com/) that you can set up in GitHub.
 <!--
-[](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/secure/devsecops-controls#peer-review-and-secure-coding-standards)
+[](https://learn.microsoft.com/azure/cloud-adoption-framework/secure/devsecops-controls#peer-review-and-secure-coding-standards)
 -->
 
 
@@ -75,7 +75,7 @@ Pull requests are standard in the development process. Part of the pull request 
 
 Secure coding practice guidelines help developers learn essential secure coding principles and how they should be applied. There are secure coding practices available, such as [OWASP secure coding practices](https://owasp.org/www-project-secure-coding-practices-quick-reference-guide/) to incorporate with general coding practices.
 <!--
-[](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/secure/devsecops-controls#commit-the-code)
+[](https://learn.microsoft.com/azure/cloud-adoption-framework/secure/devsecops-controls#commit-the-code)
 -->
 
 
@@ -85,7 +85,7 @@ Typically, developers create, manage, and share their code in repositories such 
 
 To address this risk, development teams should evaluate and implement a repository scanning capability. Repository scanning tools perform static code analysis on source code within repositories. The tools look for vulnerabilities or credentials changes and flag any items found for remediation. This capability acts to protect against human error and is a useful safeguard for distributed teams where many people are collaborating in the same repository.
 <!--
-[](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/secure/devsecops-controls#dependency-management)
+[](https://learn.microsoft.com/azure/cloud-adoption-framework/secure/devsecops-controls#dependency-management)
 -->
 
 
@@ -97,7 +97,7 @@ Ensure that your development team knows what components to include in their appl
 
 To focus only on dependency vulnerabilities or their lifecycle isn't enough. It's also important to address package feeds security. There are known attack vectors that target package management systems: typosquatting, compromising existing packages, substitution attacks, and others. So, responsible package management administration must address these risks. For more information, see [Three ways to mitigate risk when using private package feeds](https://aka.ms/pkg-sec-wp).
 <!--
-[](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/secure/devsecops-controls#static-application-security-testing)
+[](https://learn.microsoft.com/azure/cloud-adoption-framework/secure/devsecops-controls#static-application-security-testing)
 -->
 
 
@@ -109,7 +109,7 @@ But a team must start somewhere when implementing static code scanning practices
 
 To ensure that the feedback loop is effective, it's crucial to tune the tool. You want to minimize false positives and provide clear, actionable feedback on problems to fix. Also, it's good to implement a workflow, which prevents code commits to the default branch if there are findings. You would want to cover both quality and security findings. So, security becomes a part of the unit testing experience.
 <!--
-[](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/secure/devsecops-controls#secure-pipelines)
+[](https://learn.microsoft.com/azure/cloud-adoption-framework/secure/devsecops-controls#secure-pipelines)
 -->
 
 
@@ -119,9 +119,9 @@ DevOps takes automation to another level because everything in the development l
 
 Infrastructure pipelines are a central part of development. But using pipelines to run scripts or deploy code to production environments can introduce unique security challenges. You want to make sure your CI/CD pipelines don't become avenues to run malicious code, allow credentials to be stolen, or give attackers any surface area for access. You also want to ensure that only the code your team intends to release then deploys.
 
-DevOps teams must ensure they implement the proper security controls for the pipeline. Depending on the chosen platform, there are different guidelines on how to address the risks. For more information, see [Securing Azure Pipelines](https://learn.microsoft.com/en-us/azure/devops/pipelines/security/overview).
+DevOps teams must ensure they implement the proper security controls for the pipeline. Depending on the chosen platform, there are different guidelines on how to address the risks. For more information, see [Securing Azure Pipelines](https://learn.microsoft.com/azure/devops/pipelines/security/overview).
 <!--
-[](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/secure/devsecops-controls#build-and-test)
+[](https://learn.microsoft.com/azure/cloud-adoption-framework/secure/devsecops-controls#build-and-test)
 -->
 
 
@@ -131,7 +131,7 @@ Many organizations use build and release pipelines to automate and standardize t
 
 Using release pipelines also lets teams promote code from development environments, through testing environments, and ultimately into production. As part of automation, development teams should include security tools that run scripted, automated tests when deploying code into testing environments. The tests should include unit testing on application features to check for vulnerabilities or public endpoints. Testing ensures intentional access.
 <!--
-[](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/secure/devsecops-controls#dynamic-application-security-testing)
+[](https://learn.microsoft.com/azure/cloud-adoption-framework/secure/devsecops-controls#dynamic-application-security-testing)
 -->
 
 
@@ -145,7 +145,7 @@ The disadvantage of pen testing is that it takes time. A thorough pen test might
 
 Developers integrate OWASP ZAP in the pipeline as a task. During the run, the OWASP ZAP scanner spins up in the container and does its scanning, then publishes the results. This approach might not be perfect, because it's not complete penetration testing, but it's still valuable. It's one more quality measure in the development cycle for improving the security posture.
 <!--
-[](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/secure/devsecops-controls#cloud-configuration-validation-and-infrastructure-scanning)
+[](https://learn.microsoft.com/azure/cloud-adoption-framework/secure/devsecops-controls#cloud-configuration-validation-and-infrastructure-scanning)
 -->
 
 
@@ -157,13 +157,13 @@ Azure capabilities let organizations create security standards from environments
 
 One of the ways DevOps can bring developers and operations in step with each other is to support converting the existing infrastructure into an infrastructure-as-code approach.
 
-Infrastructure as code (IaC) is the management of infrastructure (networks, virtual machines, load balancers, and connection topology) in a descriptive model. IaC uses the same versioning model as the DevOps team uses for source code. Like the principle of the same source code generates the same binary, an IaC model generates the same environment every time it's applied. IaC is a key DevOps practice that's used with [continuous delivery](https://learn.microsoft.com/en-us/devops/deliver/what-is-continuous-delivery).
+Infrastructure as code (IaC) is the management of infrastructure (networks, virtual machines, load balancers, and connection topology) in a descriptive model. IaC uses the same versioning model as the DevOps team uses for source code. Like the principle of the same source code generates the same binary, an IaC model generates the same environment every time it's applied. IaC is a key DevOps practice that's used with [continuous delivery](https://learn.microsoft.com/devops/deliver/what-is-continuous-delivery).
 
 DevSecOps shifts security left and shows that security isn't just about application security but infrastructure security as well. One of the ways DevSecOps supports infrastructure security is to include security scanning before the infrastructure deploys in the cloud. As infrastructure became code, you'd then apply the same security actions to the infrastructure as the application security. There are security tools available to run infrastructure security scanning based on your chosen IaC strategy.
 
 With the adoption of the cloud, containerization is a popular approach that teams take in application architecture decisions. Some of the container repositories scan images to catch packages with known vulnerabilities. There's still a risk that a container might have out-of-date software. Because of this risk, it's vital to scan the container for security risks. There are plenty of open-source and commercial security tools that target this area and support tight integration in the CD process. The security tools help teams adopt DevSecOps for infrastructure as code and more specifically learn how to use containers.
 <!--
-[](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/secure/devsecops-controls#go-to-production-and-operate)
+[](https://learn.microsoft.com/azure/cloud-adoption-framework/secure/devsecops-controls#go-to-production-and-operate)
 -->
 
 
@@ -171,7 +171,7 @@ With the adoption of the cloud, containerization is a popular approach that team
 
 When the solution goes to production, it's vital to continue overseeing and managing the security state. At this stage in the process, it's time to focus on the cloud infrastructure and overall application.
 <!--
-[](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/secure/devsecops-controls#configuration-and-infrastructure-scanning)
+[](https://learn.microsoft.com/azure/cloud-adoption-framework/secure/devsecops-controls#configuration-and-infrastructure-scanning)
 -->
 
 
@@ -179,9 +179,9 @@ When the solution goes to production, it's vital to continue overseeing and mana
 
 For visibility into cloud subscriptions and resource configuration across multiple subscriptions, use the [Azure tenant security solution](https://github.com/azsk/AzTS-docs) from the AzSK team.
 
-Azure includes monitoring and security capabilities. These capabilities detect and alert any anomalous events or configurations that require investigation and potential remediation. Technologies such as [Microsoft Defender for Cloud](https://learn.microsoft.com/en-us/azure/security-center/azure-defender) and [Microsoft Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/become-an-azure-sentinel-ninja-the-complete-level-400-training/ba-p/1246310) are first-party tools that natively integrate into the Azure environments. These technologies complement the environment and code security tools. And the technologies provide thorough security monitoring so organizations can experiment and innovate quickly and securely.
+Azure includes monitoring and security capabilities. These capabilities detect and alert any anomalous events or configurations that require investigation and potential remediation. Technologies such as [Microsoft Defender for Cloud](https://learn.microsoft.com/azure/security-center/azure-defender) and [Microsoft Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/become-an-azure-sentinel-ninja-the-complete-level-400-training/ba-p/1246310) are first-party tools that natively integrate into the Azure environments. These technologies complement the environment and code security tools. And the technologies provide thorough security monitoring so organizations can experiment and innovate quickly and securely.
 <!--
-[](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/secure/devsecops-controls#penetration-testing)
+[](https://learn.microsoft.com/azure/cloud-adoption-framework/secure/devsecops-controls#penetration-testing)
 -->
 
 
@@ -189,7 +189,7 @@ Azure includes monitoring and security capabilities. These capabilities detect a
 
 Penetration testing is a recommended practice to check for any vulnerabilities in the infrastructure or application configuration, which might create weaknesses that attackers can exploit.
 
-Many products and partners offer penetration testing services. Microsoft provides guidance for [penetration testing in Azure](https://learn.microsoft.com/en-us/azure/security/fundamentals/pen-testing).
+Many products and partners offer penetration testing services. Microsoft provides guidance for [penetration testing in Azure](https://learn.microsoft.com/azure/security/fundamentals/pen-testing).
 
 Testing typically covers the following test types:
 
@@ -197,7 +197,7 @@ Testing typically covers the following test types:
 -   Fuzz testing (finding program errors by supplying malformed input data) of your endpoints
 -   Port scanning of your endpoints
 <!--
-[](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/secure/devsecops-controls#actionable-intelligence)
+[](https://learn.microsoft.com/azure/cloud-adoption-framework/secure/devsecops-controls#actionable-intelligence)
 -->
 
 
@@ -205,7 +205,7 @@ Testing typically covers the following test types:
 
 The tools and techniques in this guidance offer a holistic security model for organizations who want to move at pace and experiment with new technologies that aim to drive innovation. A key element of DevSecOps is data-driven, event-driven processes. These processes help teams identify, evaluate, and respond to potential risks. Many organizations choose to integrate alerts and usage data into their IT service management (ITSM) platform. The team can then bring the same structured workflow to security events that they use for other incidents and requests.
 <!--
-[](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/secure/devsecops-controls#feedback-loops)
+[](https://learn.microsoft.com/azure/cloud-adoption-framework/secure/devsecops-controls#feedback-loops)
 -->
 
 

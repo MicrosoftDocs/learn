@@ -2,11 +2,11 @@ This unit will focus on using Azure API Management to secure APIs. Azure API Man
 
 ## API Management components
 
-Azure API Management is made up of an API _gateway_, a _management plane_, and a _developer portal_. These components are Azure-hosted and fully managed by default. API Management is available in various [tiers](https://learn.microsoft.com/en-us/azure/api-management/api-management-features) differing in capacity and features.
+Azure API Management is made up of an API _gateway_, a _management plane_, and a _developer portal_. These components are Azure-hosted and fully managed by default. API Management is available in various [tiers](https://learn.microsoft.com/azure/api-management/api-management-features) differing in capacity and features.
 
 ![Diagram showing key components of Azure API Management.](../media/api-management-components.png)
 <!--
-[](https://learn.microsoft.com/en-us/azure/api-management/api-management-key-concepts#api-gateway)
+[](https://learn.microsoft.com/azure/api-management/api-management-key-concepts#api-gateway)
 -->
 
 ## API gateway
@@ -16,27 +16,27 @@ All requests from client applications first reach the API gateway, which then fo
 Specifically, the gateway:
 
 -   Acts as a facade to backend services by accepting API calls and routing them to appropriate backends
--   Verifies [API keys](https://learn.microsoft.com/en-us/azure/api-management/api-management-subscriptions) and other credentials such as [JWT tokens and certificates](https://learn.microsoft.com/en-us/azure/api-management/api-management-access-restriction-policies) presented with requests
--   Enforces [usage quotas and rate limits](https://learn.microsoft.com/en-us/azure/api-management/api-management-access-restriction-policies)
--   Optionally transforms requests and responses as specified in [policy statements](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-policies)
--   If configured, [caches responses](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-cache) to improve response latency and minimize the load on backend services
--   Emits logs, metrics, and traces for [monitoring, reporting, and troubleshooting](https://learn.microsoft.com/en-us/azure/api-management/observability)
+-   Verifies [API keys](https://learn.microsoft.com/azure/api-management/api-management-subscriptions) and other credentials such as [JWT tokens and certificates](https://learn.microsoft.com/azure/api-management/api-management-access-restriction-policies) presented with requests
+-   Enforces [usage quotas and rate limits](https://learn.microsoft.com/azure/api-management/api-management-access-restriction-policies)
+-   Optionally transforms requests and responses as specified in [policy statements](https://learn.microsoft.com/azure/api-management/api-management-howto-policies)
+-   If configured, [caches responses](https://learn.microsoft.com/azure/api-management/api-management-howto-cache) to improve response latency and minimize the load on backend services
+-   Emits logs, metrics, and traces for [monitoring, reporting, and troubleshooting](https://learn.microsoft.com/azure/api-management/observability)
 <!--
-[](https://learn.microsoft.com/en-us/azure/api-management/api-management-key-concepts#self-hosted-gateway)
+[](https://learn.microsoft.com/azure/api-management/api-management-key-concepts#self-hosted-gateway)
 -->
 
 
 ### Self-hosted gateway
 
-With the [self-hosted gateway](https://learn.microsoft.com/en-us/azure/api-management/self-hosted-gateway-overview), customers can deploy the API gateway to the same environments where they host their APIs, to optimize API traffic and ensure compliance with local regulations and guidelines. The self-hosted gateway enables customers with hybrid IT infrastructure to manage APIs hosted on-premises and across clouds from a single API Management service in Azure.
+With the [self-hosted gateway](https://learn.microsoft.com/azure/api-management/self-hosted-gateway-overview), customers can deploy the API gateway to the same environments where they host their APIs, to optimize API traffic and ensure compliance with local regulations and guidelines. The self-hosted gateway enables customers with hybrid IT infrastructure to manage APIs hosted on-premises and across clouds from a single API Management service in Azure.
 
-The self-hosted gateway is packaged as a Linux-based Docker container and is commonly deployed to Kubernetes, including to Azure Kubernetes Service and [Azure Arc-enabled Kubernetes](https://learn.microsoft.com/en-us/azure/api-management/how-to-deploy-self-hosted-gateway-azure-arc).
+The self-hosted gateway is packaged as a Linux-based Docker container and is commonly deployed to Kubernetes, including to Azure Kubernetes Service and [Azure Arc-enabled Kubernetes](https://learn.microsoft.com/azure/api-management/how-to-deploy-self-hosted-gateway-azure-arc).
 
 More information:
 
-- [API gateway in Azure API Management](https://learn.microsoft.com/en-us/azure/api-management/api-management-gateways-overview)
+- [API gateway in Azure API Management](https://learn.microsoft.com/azure/api-management/api-management-gateways-overview)
 <!--
-[](https://learn.microsoft.com/en-us/azure/api-management/api-management-key-concepts#management-plane)
+[](https://learn.microsoft.com/azure/api-management/api-management-key-concepts#management-plane)
 -->
 
 ## Management plane
@@ -50,7 +50,7 @@ Use the management plane to:
 -   Provision and configure API Management service settings
 -   Define or import API schemas from a wide range of sources, including OpenAPI specifications, Azure compute services, or WebSocket or GraphQL backends
 -   Package APIs into products
--   Set up [policies](https://learn.microsoft.com/en-us/azure/api-management/api-management-key-concepts#policies) like quotas or transformations on the APIs
+-   Set up [policies](https://learn.microsoft.com/azure/api-management/api-management-key-concepts#policies) like quotas or transformations on the APIs
 -   Get insights from analytics
 -   Manage users
 
@@ -66,7 +66,7 @@ Microsoft cloud security benchmark's API security baseline outlines a number of 
 * important features which support that control
 * configuration guidance for those features
 
-We have omitted controls from the baseline where the feature was not supported to secure the service at this time and there was no configuration guidance. For the full specification, see [Azure security baseline for API Management](https://learn.microsoft.com/en-us/security/benchmark/azure/baselines/api-management-security-baseline).
+We have omitted controls from the baseline where the feature was not supported to secure the service at this time and there was no configuration guidance. For the full specification, see [Azure security baseline for API Management](https://learn.microsoft.com/security/benchmark/azure/baselines/api-management-security-baseline).
 
 ### Network security
 

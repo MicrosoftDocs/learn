@@ -17,7 +17,7 @@ CASBs work by discovering and providing visibility into Shadow IT and app use, m
 
 
 <!--
-[](https://learn.microsoft.com/en-us/defender-cloud-apps/what-is-defender-for-cloud-apps#architecture)
+[](https://learn.microsoft.com/defender-cloud-apps/what-is-defender-for-cloud-apps#architecture)
 -->
 ## Architecture
 
@@ -29,29 +29,29 @@ Defender for Cloud Apps integrates visibility with your cloud by:
 -   Using Conditional Access App Control protection to get real-time visibility and control over access and activities within your cloud apps.
 -   Helping you have continuous control by setting, and then continually fine-tuning, policies.
 
-![Defender for Cloud Apps architecture diagram.](https://learn.microsoft.com/en-us/defender-cloud-apps/media/proxy-architecture.png)
+![Defender for Cloud Apps architecture diagram.](https://learn.microsoft.com/defender-cloud-apps/media/proxy-architecture.png)
 
 
 <!--
-[](https://learn.microsoft.com/en-us/defender-cloud-apps/what-is-defender-for-cloud-apps#data-retention--compliance)
+[](https://learn.microsoft.com/defender-cloud-apps/what-is-defender-for-cloud-apps#data-retention--compliance)
 -->
 ### Data retention & compliance
 
-For more information about Microsoft Defender for Cloud Apps data retention and compliance, see [Microsoft Defender for Cloud Apps data security and privacy](https://learn.microsoft.com/en-us/defender-cloud-apps/cas-compliance-trust).
+For more information about Microsoft Defender for Cloud Apps data retention and compliance, see [Microsoft Defender for Cloud Apps data security and privacy](https://learn.microsoft.com/defender-cloud-apps/cas-compliance-trust).
 
 
 <!--
-[](https://learn.microsoft.com/en-us/defender-cloud-apps/what-is-defender-for-cloud-apps#cloud-discovery)
+[](https://learn.microsoft.com/defender-cloud-apps/what-is-defender-for-cloud-apps#cloud-discovery)
 -->
 ### Cloud Discovery
 
 Cloud Discovery uses your traffic logs to dynamically discover and analyze the cloud apps that your organization is using. To create a snapshot report of your organization's cloud use, you can manually upload log files from your firewalls or proxies for analysis. To set up continuous reports, use Defender for Cloud Apps log collectors to periodically forward your logs.
 
-For more information about Cloud Discovery, see [Set up Cloud Discovery](https://learn.microsoft.com/en-us/defender-cloud-apps/set-up-cloud-discovery).
+For more information about Cloud Discovery, see [Set up Cloud Discovery](https://learn.microsoft.com/defender-cloud-apps/set-up-cloud-discovery).
 
 
 <!--
-[](https://learn.microsoft.com/en-us/defender-cloud-apps/what-is-defender-for-cloud-apps#sanctioning-and-unsanctioning-an-app)
+[](https://learn.microsoft.com/defender-cloud-apps/what-is-defender-for-cloud-apps#sanctioning-and-unsanctioning-an-app)
 -->
 ### Sanctioning and unsanctioning an app
 
@@ -59,7 +59,7 @@ You can use Defender for Cloud Apps to sanction or unsanction apps in your organ
 
 
 <!--
-[](https://learn.microsoft.com/en-us/defender-cloud-apps/what-is-defender-for-cloud-apps#app-connectors)
+[](https://learn.microsoft.com/defender-cloud-apps/what-is-defender-for-cloud-apps#app-connectors)
 -->
 ### App connectors
 
@@ -71,7 +71,7 @@ Defender for Cloud Apps uses the APIs provided by the cloud provider. Each app h
 
 
 <!--
-[](https://learn.microsoft.com/en-us/defender-cloud-apps/what-is-defender-for-cloud-apps#conditional-access-app-control-protection)
+[](https://learn.microsoft.com/defender-cloud-apps/what-is-defender-for-cloud-apps#conditional-access-app-control-protection)
 -->
 ### Conditional Access App Control protection
 
@@ -82,7 +82,7 @@ Microsoft Defender for Cloud Apps Conditional Access App Control uses reverse pr
 -   Gain visibility into unprotected endpoints so you can monitor what's being done on unmanaged devices
 -   Control access from non-corporate networks or risky IP addresses
 <!--
-[](https://learn.microsoft.com/en-us/defender-cloud-apps/what-is-defender-for-cloud-apps#policy-control)
+[](https://learn.microsoft.com/defender-cloud-apps/what-is-defender-for-cloud-apps#policy-control)
 -->
 
 ### Policy control

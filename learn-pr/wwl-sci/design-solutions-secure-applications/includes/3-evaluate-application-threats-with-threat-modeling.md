@@ -29,7 +29,7 @@ Analyze application components and connections and their relationships. Threat m
 
 Popular methodologies include:
 
--   [STRIDE](https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool-threats):
+-   [STRIDE](https://learn.microsoft.com/azure/security/develop/threat-modeling-tool-threats):
     -   Spoofing
     -   Tampering
     -   Repudiation
@@ -37,7 +37,7 @@ Popular methodologies include:
     -   Denial of Service
     -   Elevation of Privilege
 
-Microsoft Security Development Lifecycle uses STRIDE and provides a tool to assist with this process. For more information, see [Microsoft Threat Modeling Tool](https://www.microsoft.com/en-us/securityengineering/sdl/threatmodeling).
+Microsoft Security Development Lifecycle uses STRIDE and provides a tool to assist with this process. For more information, see [Microsoft Threat Modeling Tool](https://www.microsoft.com/securityengineering/sdl/threatmodeling).
 
 - [Open Web Application Security Project (OWASP)](https://owasp.org/www-community/Threat_Modeling_Process) has documented a threat modeling approach for applications.
 
@@ -64,7 +64,7 @@ Here are some best practices:
 - Upload the threat modeling report to a tracking tool. Create work items that can be validated and addressed by the developers. Cyber security teams can also use the report to determine attack vectors during a penetration test.
 - As new features are added to the application, update the threat model report and integrate it into the code management process. Triage security issues into the next release cycle or a faster release, depending on the severity.
 
-For information about mitigation strategies, see [RapidAttack](https://learn.microsoft.com/en-us/security/compass/human-operated-ransomware).
+For information about mitigation strategies, see [RapidAttack](https://learn.microsoft.com/security/compass/human-operated-ransomware).
 
 ## Overview of Microsoft Threat Modeling tool
 
@@ -85,4 +85,4 @@ Here are some tooling capabilities and innovations, just to name a few:
 - Designed for Developers and Centered on Software: many approaches are centered on assets or attackers. We're centered on software. We build on activities that all software developers and architects are familiar with, like drawing pictures for their software architecture
 - Focused on Design Analysis: The term "threat modeling" can refer to either a requirements or a design analysis technique. Sometimes, it refers to a complex blend of the two. The Microsoft SDL approach to threat modeling is a focused design analysis technique
 
-For more information on getting started with the tool, see [Getting started with the Threat Modeling Tool](https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool-getting-started).
+For more information on getting started with the tool, see [Getting started with the Threat Modeling Tool](https://learn.microsoft.com/azure/security/develop/threat-modeling-tool-getting-started).

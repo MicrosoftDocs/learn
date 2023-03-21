@@ -18,17 +18,17 @@ WAF can be deployed with Azure Application Gateway, Azure Front Door, and Azure 
 
 Azure Web Application Firewall (WAF) on Azure Application Gateway provides centralized protection of your web applications from common exploits and vulnerabilities. Web applications are increasingly targeted by malicious attacks that exploit commonly known vulnerabilities. SQL injection and cross-site scripting are among the most common attacks.
 
-WAF on Application Gateway is based on the [Core Rule Set (CRS)](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/application-gateway-crs-rulegroups-rules) from the Open Web Application Security Project (OWASP).
+WAF on Application Gateway is based on the [Core Rule Set (CRS)](https://learn.microsoft.com/azure/web-application-firewall/ag/application-gateway-crs-rulegroups-rules) from the Open Web Application Security Project (OWASP).
 
-All of the WAF features listed below exist inside of a WAF policy. You can create multiple policies, and they can be associated with an Application Gateway, to individual listeners, or to path-based routing rules on an Application Gateway. This way, you can have separate policies for each site behind your Application Gateway if needed. For more information on WAF policies, see [Create a WAF Policy](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/create-waf-policy-ag).
+All of the WAF features listed below exist inside of a WAF policy. You can create multiple policies, and they can be associated with an Application Gateway, to individual listeners, or to path-based routing rules on an Application Gateway. This way, you can have separate policies for each site behind your Application Gateway if needed. For more information on WAF policies, see [Create a WAF Policy](https://learn.microsoft.com/azure/web-application-firewall/ag/create-waf-policy-ag).
 
-![Application Gateway WAF diagram](https://learn.microsoft.com/en-us/azure/web-application-firewall/media/ag-overview/waf1.png)
+![Application Gateway WAF diagram](https://learn.microsoft.com/azure/web-application-firewall/media/ag-overview/waf1.png)
 
 Application Gateway operates as an application delivery controller (ADC). It offers Transport Layer Security (TLS), previously known as Secure Sockets Layer (SSL), termination, cookie-based session affinity, round-robin load distribution, content-based routing, ability to host multiple websites, and security enhancements.
 
 Application Gateway security enhancements include TLS policy management and end-to-end TLS support. Application security is strengthened by WAF integration into Application Gateway. The combination protects your web applications against common vulnerabilities. And it provides an easy-to-configure central location to manage.
 <!--
-[](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/ag-overview#benefits)
+[](https://learn.microsoft.com/azure/web-application-firewall/ag/ag-overview#benefits)
 -->
 
 ### Benefits
@@ -46,12 +46,12 @@ This section describes the core benefits that WAF on Application Gateway provide
 -   Protect your web applications from malicious bots with the IP Reputation ruleset
     
 <!--
-[](https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/ag-overview#monitoring)
+[](https://learn.microsoft.com/azure/web-application-firewall/ag/ag-overview#monitoring)
 -->
 
 #### Monitoring
 
--   Monitor attacks against your web applications by using a real-time WAF log. The log is integrated with [Azure Monitor](https://learn.microsoft.com/en-us/azure/azure-monitor/overview) to track WAF alerts and easily monitor trends.
+-   Monitor attacks against your web applications by using a real-time WAF log. The log is integrated with [Azure Monitor](https://learn.microsoft.com/azure/azure-monitor/overview) to track WAF alerts and easily monitor trends.
 -   The Application Gateway WAF is integrated with Microsoft Defender for Cloud. Defender for Cloud provides a central view of the security state of all your Azure, hybrid, and multicloud resources.
 
 #### Customization
@@ -79,7 +79,7 @@ This section describes the core benefits that WAF on Application Gateway provide
 ## WAF on Azure Front Door Service
 
 <!--
-https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/afds-overview
+https://learn.microsoft.com/azure/web-application-firewall/afds/afds-overview
 -->
 Azure Web Application Firewall (WAF) on Azure Front Door provides centralized protection for your web applications. WAF defends your web services against common exploits and vulnerabilities. It keeps your service highly available for your users and helps you meet compliance requirements.
 
@@ -87,16 +87,16 @@ WAF on Front Door is a global and centralized solution. It's deployed on Azure n
 
 WAF prevents malicious attacks close to the attack sources, before they enter your virtual network. You get global protection at scale without sacrificing performance. A WAF policy easily links to any Front Door profile in your subscription. New rules can be deployed within minutes, so you can respond quickly to changing threat patterns.
 
-![Azure web application firewall](https://learn.microsoft.com/en-us/azure/web-application-firewall/media/overview/wafoverview.png)
+![Azure web application firewall](https://learn.microsoft.com/azure/web-application-firewall/media/overview/wafoverview.png)
 
-Azure Front Door has [two tiers](https://learn.microsoft.com/en-us/azure/frontdoor/standard-premium/overview): Front Door Standard and Front Door Premium. WAF is natively integrated with Front Door Premium with full capabilities. For Front Door Standard, only [custom rules](https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/afds-overview#custom-authored-rules) are supported.
+Azure Front Door has [two tiers](https://learn.microsoft.com/azure/frontdoor/standard-premium/overview): Front Door Standard and Front Door Premium. WAF is natively integrated with Front Door Premium with full capabilities. For Front Door Standard, only [custom rules](https://learn.microsoft.com/azure/web-application-firewall/afds/afds-overview#custom-authored-rules) are supported.
 
 <!--
-[](https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/afds-overview#waf-policy-and-rules)
+[](https://learn.microsoft.com/azure/web-application-firewall/afds/afds-overview#waf-policy-and-rules)
 -->
 ### WAF policy and rules
 
-You can configure a [WAF policy](https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/waf-front-door-create-portal) and associate that policy to one or more Front Door front-ends for protection. A WAF policy consists of two types of security rules:
+You can configure a [WAF policy](https://learn.microsoft.com/azure/web-application-firewall/afds/waf-front-door-create-portal) and associate that policy to one or more Front Door front-ends for protection. A WAF policy consists of two types of security rules:
 
 - Custom rules that are authored by the customer.
 - Managed rule sets that are a collection of Azure-managed pre-configured set of rules.
@@ -107,7 +107,7 @@ Rules within a policy are processed in a priority order. Priority is a unique in
 
 A web application delivered by Front Door can have only one WAF policy associated with it at a time. However, you can have a Front Door configuration without any WAF policies associated with it. If a WAF policy is present, it's replicated to all of our edge locations to ensure consistent security policies across the world.
 <!--
-[](https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/afds-overview#waf-modes)
+[](https://learn.microsoft.com/azure/web-application-firewall/afds/afds-overview#waf-modes)
 -->
 ### WAF modes
 
@@ -118,7 +118,7 @@ WAF policy can be configured to run in the following two modes:
 -   **Prevention mode:** In prevention mode, WAF takes the specified action if a request matches a rule. If a match is found, no further rules with lower priority are evaluated. Any matched requests are also logged in the WAF logs.
 
 <!--
-[](https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/afds-overview#waf-actions)
+[](https://learn.microsoft.com/azure/web-application-firewall/afds/afds-overview#waf-actions)
 -->
 ### WAF actions
 
