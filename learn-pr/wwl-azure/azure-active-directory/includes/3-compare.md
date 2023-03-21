@@ -5,7 +5,7 @@ To provide applications, services, or devices access to a central identity, ther
 
 For example, if you mostly manage cloud-only users that run mobile devices, it may not make sense to build and run your own Active Directory Domain Services (AD DS) identity solution. Instead, you could use Azure Active Directory.
 
-:::image type="content" source="../media/active-directory-domain-connect-services-7f606454.png":::
+:::image type="content" source="../media/active-directory-domain-connect-services-7f606454.png" alt-text="Screenshot showing Azure Active Directory Domain Services customer use case.":::
 
 
 Although the **three Active Directory-based identity solutions** share a common name and technology, they're designed to provide services that meet different customer demands. At a high level, these identity solutions and feature sets are:
