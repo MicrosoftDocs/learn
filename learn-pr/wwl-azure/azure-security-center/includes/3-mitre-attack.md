@@ -4,7 +4,7 @@
 :::image type="content" source="../media/mitre-attack-cde2ae7e.png" alt-text="Screenshot showing Mitre Attack Cloud Matrix.":::
 
 
-The MITRE ATTACK Cloud Matrix actively helps organizations to understand and respond to cloud-based cyberattacks. It offers a comprehensive list of tactics and techniques used by attackers to target cloud environments and provides guidance for detecting and responding to these attacks. By focusing on the unique security challenges of cloud computing, the Cloud Matrix provides a roadmap for improving an organization's defenses against cloud-based threats.
+The **MITRE ATTACK Cloud Matrix** actively helps organizations to understand and respond to cloud-based cyberattacks. It offers a comprehensive list of **tactics** and **techniques** used by attackers to target cloud environments and provides guidance for detecting and responding to these attacks. By focusing on the unique security challenges of cloud computing, the Cloud Matrix provides a roadmap for improving an organization's defenses against cloud-based threats.
 
 **Initial Access**: The adversary is trying to get into your network.
 
