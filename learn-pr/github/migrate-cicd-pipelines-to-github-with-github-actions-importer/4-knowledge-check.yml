@@ -20,17 +20,17 @@ quiz:
       explanation: "Correct! Widely used build steps and triggers are included in GitHub Actions Importer migrations. What you want to be wary of is less frequently used build steps and triggers."
     - content: "Secrets and encrypted values"
       isCorrect: false
-      explanation: "Secrets and encrypted values are not included in GitHub Actions Importer migrations."
+      explanation: "Secrets and encrypted values aren't included in GitHub Actions Importer migrations."
     - content: "Self-hosted build agents"
       isCorrect: false
-      explanation: "Self-hosted build agents are not included in GitHub Actions Importer migrations."
+      explanation: "Self-hosted build agents aren't included in GitHub Actions Importer migrations."
     - content: "Historical packages"
       isCorrect: false
-      explanation: "Historical packages are not included in GitHub Actions Importer migrations."
+      explanation: "Historical packages aren't included in GitHub Actions Importer migrations."
     - content: "Permissions for CI/CD pipelines"
       isCorrect: false
-      explanation: "Permissions for CI/CD pipelines are not included in GitHub Actions Importer migrations."
-  - content: "Which of the following is *NOT* part of the Audit summary?"
+      explanation: "Permissions for CI/CD pipelines aren't included in GitHub Actions Importer migrations."
+  - content: "Which of the following options is *NOT* part of the Audit summary?"
     choices:
     - content: "Pipelines"
       isCorrect: false
