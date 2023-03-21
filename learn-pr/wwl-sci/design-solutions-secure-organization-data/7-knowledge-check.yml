@@ -1,0 +1,85 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-solutions-securing-organization-data.knowledge-check
+title: Knowledge check - Design solutions for securing an organization's data
+metadata:
+  title: Knowledge check - Design solutions for securing an organization's data
+  description: "Knowledge check for module on the topic: design solutions for securing an organization's data."
+  ms.date: 3/14/2023
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 1
+###########################################################################
+###
+### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
+###  - Questions are complete sentences ending with a question mark
+###  - No true/false questions
+###  - 3 answers per question
+###  - All answers about the same length
+###  - Numeric answers listed in sorted order
+###  - No "All of the above" and/or "None of the above" as answer choices
+###  - No "Not" or "Except" in questions
+###  - No second person ("you") in the questions or answers
+###  - Provide a meaningful explanation for both correct and incorrect answers
+###
+###########################################################################
+content: |
+quiz:
+  questions:
+    - content: What is the purpose of data encryption in Azure?
+      choices:
+        - content: To prevent unauthorized access to data in transit and at rest.
+          isCorrect: true
+          explanation: Data encryption in Azure is used to protect data from unauthorized access in transit and at rest.
+        - content: To make it easier to access and process data.
+          isCorrect: false
+          explanation: Data encryption is not meant to make it easier to access or process data, but to protect it from unauthorized access.
+        - content: To reduce the cost of storing data.
+          isCorrect: false
+          explanation: Data encryption does not reduce the cost of storing data, but it is essential to secure data against unauthorized access.
+        - content: To improve the performance of applications that use data.
+          isCorrect: false
+          explanation: Data encryption does not improve the performance of applications that use data, but it can have a small impact on performance due to the additional overhead of encryption and decryption.
+    - content: What are the benefits of using Azure Key Vault for data encryption in Azure?
+      choices:
+        - content: It provides a centralized key management solution.
+          isCorrect: true
+          explanation: Azure Key Vault provides a centralized key management solution, allowing you to manage and protect your encryption keys.
+        - content: It improves the performance of applications that use data encryption.
+          isCorrect: false
+          explanation: Azure Key Vault does not improve the performance of applications that use data encryption, but it can help ensure the security of encryption keys.
+        - content: It reduces the cost of data encryption in Azure.
+          isCorrect: false
+          explanation: Azure Key Vault does not reduce the cost of data encryption in Azure, but it can help ensure the security of encryption keys.
+        - content: It makes it easier to access and process encrypted data.
+          isCorrect: false
+          explanation: Azure Key Vault does not make it easier to access or process encrypted data, but it can help ensure the security of encryption keys.
+    - content: What is the main purpose of Microsoft Defender for Azure SQL?
+      choices:
+        - content: To provide database backups and disaster recovery
+          isCorrect: false
+          explanation: While database backups and disaster recovery are important features for any database management system, they are not the main purpose of Microsoft Defender for Azure SQL.
+        - content: To secure the SQL Server engine from attacks and vulnerabilities
+          isCorrect: true
+          explanation: Microsoft Defender for Azure SQL is a cloud-based service that helps to protect SQL Server engines from attacks and vulnerabilities by providing real-time threat detection, alerts, and remediation recommendations.
+        - content: To optimize SQL query performance
+          isCorrect: false
+          explanation: While query optimization is an important part of SQL Server performance tuning, it is not the main purpose of Microsoft Defender for Azure SQL.
+        - content: To automate SQL Server maintenance tasks
+          isCorrect: false
+          explanation: While automation can help to streamline database management tasks, it is not the main purpose of Microsoft Defender for Azure SQL.
+    - content: What types of threats can Microsoft Defender for Azure SQL protect against?
+      choices:
+        - content: SQL injection attacks
+          isCorrect: true
+          explanation: Microsoft Defender for Azure SQL can detect and block SQL injection attacks, which are a common type of attack that exploits vulnerabilities in SQL code to gain unauthorized access to databases.
+        - content: Network bandwidth throttling attacks
+          isCorrect: false
+          explanation: Network bandwidth throttling attacks are not specifically related to SQL Server security and are not within the scope of Microsoft Defender for Azure SQL.
+        - content: Distributed denial of service (DDoS) attacks
+          isCorrect: false
+          explanation: While DDoS attacks can be a threat to any cloud-based service, they are not specifically related to SQL Server security and are not within the scope of Microsoft Defender for Azure SQL.
+        - content: Physical server theft
+          isCorrect: false
+          explanation: Microsoft Defender for Azure SQL is a cloud based technology that does offer physical security.
