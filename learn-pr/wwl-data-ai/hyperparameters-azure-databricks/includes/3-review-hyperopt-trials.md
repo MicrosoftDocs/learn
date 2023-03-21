@@ -8,7 +8,7 @@ When you use Hyperopt to try multiple hyperparameter combinations, you may want 
 
 In Azure Databricks, calls to the Hyperopt **fmin** function automatically generate MLflow experiment runs that you can view in the Azure Databricks portal; providing you with an easy way to view the full set of hyperparameters and metrics for each trial, as shown here:
 
-![Screenshot of the MLflow run for a Hyperopt trial](../media/mlflow-run.png)
+![Screenshot of the MLflow run for a Hyperopt trial.](../media/mlflow-run.png)
 
 ## Use the *Trials* class
 
