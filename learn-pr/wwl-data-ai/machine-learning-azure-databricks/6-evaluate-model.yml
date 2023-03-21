@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.machine-learning-azure-databricks.evaluate-model
+title: Evaluate a machine learning model
+metadata:
+  title: Evaluate a machine learning model
+  description: "Evaluate a machine learning model"
+  ms.date: 03/21/2023
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.service: azure-databricks
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-evaluate-model.md)]
