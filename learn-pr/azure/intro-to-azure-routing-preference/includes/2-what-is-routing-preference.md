@@ -19,4 +19,4 @@ The Internet routing preference minimizes travel on the Microsoft network. The t
 
 The routing preference unmetered service is available for Content Delivery Network (CDN) providers who have their customers' origin content hosted on Azure. This service enables CDN providers to establish a direct peering connection with Microsoft's global network edge routers at various locations. To utilize the benefits of routing preference unmetered, your CDN provider must be enrolled in the program. If your current CDN provider isn't a part of the program, reach out to them for assistance.
 
-:::image type="content" source="../media/unmetered.png" alt-text="Diagram of routing preference umetered.":::
+:::image type="content" source="../media/unmetered.png" alt-text="Diagram of routing preference unmetered.":::

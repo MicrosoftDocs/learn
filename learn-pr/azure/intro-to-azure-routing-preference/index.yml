@@ -9,12 +9,12 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to routing preference
-summary: Describe what routing preference is and it's options that help you decide which routing preference option is appropriate for your application or service.
+summary: Describe what routing preference is and its options that helps you decide which routing preference option is appropriate for your application or service.
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you're able to:
     - Evaluate whether routing preference is right for network cost savings and the routing of traffic for your application or service.
     - Describe how the routing preference options of "Internet" and "Microsoft network" affect the routing of network traffic and the differences of both.
-    - Describe what routing preference unmetered is and it's requirements.
+    - Describe what routing preference unmetered is and its requirements.
 prerequisites: |
   - Familiarity with Azure Virtual Networks
   - Familiarity with network routing
