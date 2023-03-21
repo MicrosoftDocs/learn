@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.design-solutions-securing-organization-data.design-a-solution-for-data-discovery-and-classification-using-microsoft-purview
+uid: learn.design-solutions-securing-organization-data.design-solution-data-discovery-classification-microsoft-purview
 title: Design a solution for data discovery and classification using Microsoft Purview
 metadata:
   title: Design a solution for data discovery and classification using Microsoft Purview
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 1
 content: |
-  [!include[](includes/2-design-a-solution-for-data-discovery-and-classification-using-microsoft-purview.md)]
+  [!include[](includes/2-design-solution-data-discovery-classification-microsoft-purview.md)]

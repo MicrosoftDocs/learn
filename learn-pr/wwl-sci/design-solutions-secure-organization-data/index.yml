@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.design-solutions-securing-organization-data
+uid: learn.wwl.design-solutions-securing-organization-data
 metadata:
   title: Design solutions for securing an organization's data
   description: "You learn about designing solutions that secure an organization's data using capabilities like Microsoft Purview, Defender for SQL, Defender for Storage."
@@ -37,13 +37,13 @@ subjects:
   - security
   - cloud-security
 units:
-- learn.design-solutions-securing-organization-data.introduction-to-data-security
-- learn.design-solutions-securing-organization-data.design-a-solution-for-data-discovery-and-classification-using-microsoft-purview
-- learn.design-solutions-securing-organization-data.specify-priorities-for-mitigating-data-threats
-- learn.design-solutions-securing-organization-data.design-a-solution-for-data-protection
-- learn.design-solutions-securing-organization-data.design-data-security-for-azure-workloads
-- learn.design-solutions-securing-organization-data.design-security-for-azure-storage
-- learn.design-solutions-securing-organization-data.knowledge-check
-- learn.design-solutions-securing-organization-data.summary
+- learn.wwl.design-solutions-securing-organization-data.introduction-data-security
+- learn.wwl.design-solutions-securing-organization-data.design-solution-data-discovery-classification-microsoft-purview
+- learn.wwl.design-solutions-securing-organization-data.design-a-solution-for-data-protection
+- learn.wwl.design-solutions-securing-organization-data.specify-priorities-mitigating-data-threats
+- learn.wwl.design-solutions-securing-organization-data.design-data-security-azure-workloads
+- learn.wwl.design-solutions-securing-organization-data.design-security-azure-storage
+- learn.wwl.design-solutions-securing-organization-data.knowledge-check
+- learn.wwl.design-solutions-securing-organization-data.summary
 badge:
-  uid: learn.design-solutions-securing-organization-data.badge
+  uid: learn.wwl.design-solutions-securing-organization-data.badge

@@ -25,7 +25,7 @@ Defender for Storage provides:
 -   **Response at scale** - Defender for Cloud's automation tools make it easier to prevent and respond to identified threats. Learn more in [Automate responses to Defender for Cloud triggers](https://learn.microsoft.com/azure/defender-for-cloud/workflow-automation).
 
 
-![High-level overview of the features of Microsoft Defender for Storage.](../media/defender-for-storage-high-level-overview.png)
+![Diagram that shows a high-level overview of the features of Microsoft Defender for Storage.](../media/defender-for-storage-high-level-overview.png)
 
 ## Security threats in cloud-based storage services
 
@@ -33,7 +33,7 @@ Microsoft security researchers have analyzed the attack surface of storage servi
 
 The potential security risks are described in the [threat matrix for cloud-based storage services](https://www.microsoft.com/security/blog/2021/04/08/threat-matrix-for-storage/) and are based on the [MITRE ATT&CK® framework](https://attack.mitre.org/techniques/enterprise/), a knowledge base for the tactics and techniques employed in cyber attacks.
 
-[![Microsoft's threat matrix for cloud storage security threats.](../media/storage-threat-matrix.png)](../media/storage-threat-matrix.png#lightbox)
+[![Diagram that shows Microsoft's threat matrix for cloud storage security threats.](../media/storage-threat-matrix.png)](../media/storage-threat-matrix.png#lightbox)
 
 ## What kind of alerts does Microsoft Defender for Storage provide?
 
@@ -66,11 +66,11 @@ When storage activity anomalies occur, you receive an email notification with in
 
 The email also includes details on possible causes and recommended actions to investigate and mitigate the potential threat.
 
-![Screenshot of Microsoft Defender for Storage alert email.](../media/storage-advanced-threat-protection-alert-email.png)
+![Screenshot that shows a Microsoft Defender for Storage alert email.](../media/storage-advanced-threat-protection-alert-email.png)
 
 You can review and manage your current security alerts from Microsoft Defender for Cloud's [Security alerts tile](https://learn.microsoft.com/azure/defender-for-cloud/managing-and-responding-alerts). Select an alert for details and actions for investigating the current threat and addressing future threats.
 
-[![Screenshot of a Microsoft Defender for Storage alert.](../media/storage-advanced-threat-protection-alert.png)](../media/storage-advanced-threat-protection-alert.png#lightbox)
+[![Screenshot that shows a Microsoft Defender for Storage alert.](../media/storage-advanced-threat-protection-alert.png)](../media/storage-advanced-threat-protection-alert.png#lightbox)
 
 ## Limitations of hash reputation analysis
 

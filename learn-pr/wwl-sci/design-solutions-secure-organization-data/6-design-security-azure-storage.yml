@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.design-solutions-securing-organization-data.design-security-for-azure-storage
+uid: learn.design-solutions-securing-organization-data.design-security-azure-storage
 title: Design security for Azure Storage
 metadata:
   title: Design security for Azure Storage
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 1
 content: |
-  [!include[](includes/6-design-security-for-azure-storage.md)]
+  [!include[](includes/6-design-security-azure-storage.md)]

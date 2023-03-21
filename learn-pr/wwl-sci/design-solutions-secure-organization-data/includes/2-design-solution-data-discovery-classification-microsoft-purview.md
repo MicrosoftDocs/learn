@@ -7,7 +7,7 @@ Microsoft Purview's solutions in the governance portal provide a unified data go
 -   Enable data curators and security administrators to manage and keep your data estate secure.
 -   Empower data consumers to find valuable, trustworthy data.
 
-[![Graphic showing Microsoft Purview's high-level architecture.](../media/high-level-overview-large.png)](../media/high-level-overview-large.png#lightbox)
+[![Diagram that shows Microsoft Purview's high-level architecture.](../media/high-level-overview-large.png)](../media/high-level-overview-large.png#lightbox)
 
 ### Data Map
 
@@ -86,7 +86,7 @@ Related to roles and access management in Microsoft Purview, you can apply the f
 
 Microsoft Purview provides rich insights into the sensitivity of your data, which makes it valuable to security teams using Microsoft Defender for Cloud to manage the organization's security posture and protect against threats to their workloads. Data resources remain a popular target for malicious actors, making it crucial for security teams to identify, prioritize, and secure sensitive data resources across their cloud environments. To address this challenge, we're announcing the integration between Microsoft Defender for Cloud and Microsoft Purview in public preview.
 
-### Information Protection
+### Information protection
 
 #### Secure metadata extraction and storage
 

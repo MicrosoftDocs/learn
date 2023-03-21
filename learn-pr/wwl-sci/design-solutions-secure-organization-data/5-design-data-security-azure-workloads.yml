@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.design-solutions-securing-organization-data.design-data-security-for-azure-workloads
+uid: learn.design-solutions-securing-organization-data.design-data-security-azure-workloads
 title: Design data security for Azure workloads
 metadata:
   title: Design data security for Azure workloads
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 1
 content: |
-  [!include[](includes/5-design-data-security-for-azure-workloads.md)]
+  [!include[](includes/5-design-data-security-azure-workloads.md)]

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.design-solutions-securing-organization-data.introduction-to-data-security
+uid: learn.design-solutions-securing-organization-data.introduction-data-security
 title: Introduction to data security
 metadata:
   title: Introduction to data security
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 1
 content: |
-  [!include[](includes/1-introduction-to-data-security.md)]
+  [!include[](includes/1-introduction-data-security.md)]

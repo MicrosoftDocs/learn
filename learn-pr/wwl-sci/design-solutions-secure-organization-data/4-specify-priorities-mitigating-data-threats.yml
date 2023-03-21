@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.design-solutions-securing-organization-data.specify-priorities-for-mitigating-data-threats
+uid: learn.design-solutions-securing-organization-data.specify-priorities-mitigating-data-threats
 title: Specify priorities for mitigating data threats
 metadata:
   title: Specify priorities for mitigating data threats
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 1
 content: |
-  [!include[](includes/3-specify-priorities-for-mitigating-data-threats.md)]
+  [!include[](includes/4-specify-priorities-mitigating-data-threats.md)]
