@@ -3,7 +3,7 @@ Azure Active Directory Domain Services (Azure AD DS) provides managed domain ser
 
 An Azure AD DS managed domain lets you run legacy applications in the cloud that can't use modern authentication methods or where you don't want directory lookups to always go back to an on-premises AD DS environment. You can lift and shift those legacy applications from your on-premises environment into a managed domain without needing to manage the AD DS environment in the cloud.
 
-Azure AD DS integrates with your existing Azure AD tenant. This integration lets users sign in to services and applications connected to the managed domain using their existing credentials. You can also use existing groups and user accounts to secure access to resources. These features provide a smoother lift-and-shift of on-premises resources to Azure..
+Azure AD DS integrates with your existing Azure AD tenant. This integration lets users sign in to services and applications connected to the managed domain using their existing credentials. You can also use existing groups and user accounts to secure access to resources. These features provide a smoother lift-and-shift of on-premises resources to Azure.
 
 ## How does Azure AD DS work?
 
@@ -15,7 +15,7 @@ A managed domain is configured to perform a one-way synchronization from Azure A
 
 In a hybrid environment with an on-premises AD DS environment, Azure AD Connect synchronizes identity information with Azure AD, which is then synchronized to the managed domain.
 
-:::image type="content" source="../media/azure-active-directory-domain-services-9ff78fc9.png" alt-text="Screenhot showing how Azure Active Directory Domain Services works.":::
+:::image type="content" source="../media/azure-active-directory-synchronization-b5f2169a.png" alt-text="Screenhot showing how Azure Active Directory Domain Services works.":::
 
 
 Azure AD DS replicates identity information from Azure AD, so it works with Azure AD tenants that are cloud-only or synchronized with an on-premises AD DS environment. The same set of Azure AD DS features exists for both environments.

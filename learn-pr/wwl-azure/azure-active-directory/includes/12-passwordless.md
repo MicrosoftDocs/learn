@@ -31,7 +31,7 @@ Each organization has different needs when it comes to authentication. Microsoft
 2.  Microsoft Authenticator
 3.  Fast Identity Online2 (**FIDO2**) security keys
 
-:::image type="content" source="../media/passwordless-convenience-security-1ba3f8c9.png":::
+:::image type="content" source="../media/passwordless-convenience-security-1ba3f8c9.png" alt-text="Screenshot showing three passwordless authentication options that integrate with Azure Active Directory.":::
 
 
 ## Windows Hello for Business<br>
