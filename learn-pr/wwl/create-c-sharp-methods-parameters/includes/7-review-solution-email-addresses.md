@@ -35,7 +35,7 @@ void DisplayEmail(string first, string last, string domain = "contoso.com")
 }
 ```
 
-This code is just "*one possible solution*" because you may have added line feeds in different spots,used variables differently, or formatted the code differently.
+This code is just "*one possible solution*" because you may have added line feeds in different spots, used variables differently, or formatted the code differently.
 
 Regardless of minor code differences, your method should apply the default value of an optional parameter to display `contoso.com`. 
 

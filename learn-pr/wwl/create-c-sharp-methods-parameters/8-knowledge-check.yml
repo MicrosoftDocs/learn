@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/17/2023
+  ms.date: 03/21/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial
@@ -24,25 +24,25 @@ quiz:
     - content: "`void Multiply(int a; int b; int c)`"
       isCorrect: false
       explanation: "Incorrect. Parameters should be separated by commas."
-  - content: "Given the method signature, `void Print(string name, string number = \"\", bool member = false)`, which of the following correctly uses named and optional arguments?"
+  - content: "Given the method signature, `void Print(string name, string number = \"\", bool member = false)`, which of the following options correctly uses named and optional arguments?"
     choices:
     - content: "`Print(\"Tony\", member: true);`"
       isCorrect: true
-      explanation: "Correct! The optional argument is included using the parameter name followed by a :"
+      explanation: "Correct! The optional argument is included using the parameter name followed by a `:`"
     - content: "`Print(number: \"555\", member: false)`"
       isCorrect: false
       explanation: "Incorrect. All required arguments must be included"
     - content: "`Print(\"Tony\", false)`"
       isCorrect: false
-      explanation: "Incorrect. `false` needs to be assigned by name to the `member` parameter"
-  - content: "Given the following method signature, `void SetHealth(string health)`, why won't operations inside the method affect the original input string `health`?"
+      explanation: "Incorrect. `false` needs to be a named argument using the parameter name `member`"
+  - content: "Given the following method signature, `void SetHealth(string health)`, why don't operations inside the method affect the original input string `health`?"
     choices:
     - content: "The `string` data type is pass by value"
       isCorrect: false
-      explanation: "Incorrect. Strings are pass by reference, but they are immutable so the value can't be altered once assigned."
+      explanation: "Incorrect. Strings are pass by reference, but they're immutable so the value can't be altered once assigned."
     - content: "The method code must be incorrect"
       isCorrect: false
-      explanation: "Incorrect. Strings are pass by reference, but they are immutable so the value can't be altered once assigned."
+      explanation: "Incorrect. Strings are pass by reference, but they're immutable so the value can't be altered once assigned."
     - content: "Strings can't be altered once assigned, they can only be overwritten with a new value."
       isCorrect: true
-      explanation: "Correct! Strings are pass by reference, but they are immutable and can't be altered once assigned"
+      explanation: "Correct! Strings are pass by reference, but they're immutable and can't be altered once assigned"
