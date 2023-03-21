@@ -24,7 +24,7 @@ Let's obtain the sample app. It's just a standard boilerplate app generated from
 
     :::image type="content" source="../media/git-clone.png" alt-text="Screenshot of the Visual Studio Git > Clone menu command.":::
 
-1. Once the project opens, review the files in **Solution Explorer**. The app is an ASP.NET project built in .NET Framework 4.8.1. Press <kbd>F5</kbd> to run the app. After verifying the it works, stop the app.
+1. Once the project opens, review the files in **Solution Explorer**. The app is an ASP.NET project built in .NET Framework 4.8.1. Press <kbd>F5</kbd> to run the app. After verifying it works, stop the app.
 
 ### Run the Upgrade Assistant
 
