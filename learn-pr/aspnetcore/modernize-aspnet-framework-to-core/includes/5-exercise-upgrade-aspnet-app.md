@@ -94,12 +94,12 @@ Static files that should be served by the web server should be moved to an appro
 
    :::image type="content" source="../media/wwwroot-structure.png" alt-text="The wwwroot directory with the js and css subdirectories.":::
 
-1. Copy the following files from the `Content` directory in the **old** *AspNetMvcTest* project to the `wwwroot/css` in the **new** *AspNetMvcTestCore* project:
+1. Copy the following files from the `Content` directory in the **old** *AspNetMvcTest* project to `wwwroot/css` in the **new** *AspNetMvcTestCore* project:
 
    - *bootstrap.min.css*
    - *Site.css*
 
-1. Copy the following files from the `Scripts` directory in the **old** *AspNetMvcTest* project to the `wwwroot/js` in the **new** *AspNetMvcTestCore* project:
+1. Copy the following files from the `Scripts` directory in the **old** *AspNetMvcTest* project to `wwwroot/js` in the **new** *AspNetMvcTestCore* project:
 
    - *bootstrap.min.js*
    - *jquery-3.6.4.min.js*
