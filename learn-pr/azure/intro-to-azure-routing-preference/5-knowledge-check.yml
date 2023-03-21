@@ -3,47 +3,24 @@ uid: learn.intro-to-azure-routing-preference.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: "The knowledge check unit of the training module evaluates the user's learned knowledge from the previous units in the module."
   ms.date: 2/8/2023
   author: asudbring
   ms.author: allensu
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.prod: virtual-network
 durationInMinutes: 1
-###########################################################################
-###
-### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
-###  - Questions are complete sentences ending with a question mark
-###  - No true/false questions
-###  - 3 answers per question
-###  - All answers about the same length
-###  - Numeric answers listed in sorted order
-###  - No "All of the above" and/or "None of the above" as answer choices
-###  - No "Not" or "Except" in questions
-###  - No second person ("you") in the questions or answers
-###  - Provide a meaningful explanation for both correct and incorrect answers
-###
-### Question content requirements:
-###  - Write 5 questions
-###  - Questions 1,2 must test this Learning Objective: "Describe how (attributes) of (product) work to (solve problem)"
-###      Guidance: These two questions can be short, no need for a long scenario to analyze. Test if they understand how the product works.
-###      Example: "What differentiates an action from a control action in a Logic App?"
-###  - Questions 3,4,5 must test this Learning Objective: "Evaluate whether (product) is appropriate to (general product use case)"
-###      Guidance: Use scenario questions that ask the learner to analyze a situation with the "when to use" criteria presented in the module.
-###      Example: "A financial company is building a system to let brokers trade financial instruments. The system must monitor market conditions, detect changes, and execute trades. It will need to handle a large volume of transactions quickly. The faster it completes trades, the more of an advantage the company will have over its competitors. Which requirement of this system would be difficult for Azure Logic Apps to satisfy?"
-###
-###########################################################################
 content: |
 quiz:
   questions:
-  - content: ""
+  - content: "A financial company has an application hosted in an Azure Kubernetes Service cluster in the East US Azure region. They recently have seen a spike in cost of network traffic between their satellite office in the Western Europe Azure region and the application in the East US Azure region. They have determined that the application doesn't require high network performance or low latency. What routing preference should the financial company choose for their application's public IP address?"
     choices:
-    - content: ""
+    - content: "The financial company should choose the Internet option."
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "The routing preference of Internet would fulfil the requirements of cost savings, as a majority of the traffic destined for and from an application or service in Azure uses the public Internet for the majority of the travel."
+    - content: "The financial company should choose the Microsoft network option."
       isCorrect: false
-      explanation: ""
+      explanation: "The routing preference of Microsoft network would work for the application or service for the financial company, but doesn't fulfil the cost savings requirement. The majority of traffic will traverse the Microsoft network with this routing preference and would be subject to region egress costs."
     - content: ""
       isCorrect: false
       explanation: ""

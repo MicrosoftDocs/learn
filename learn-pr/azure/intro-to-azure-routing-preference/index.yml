@@ -26,7 +26,6 @@ roles:
   - administrator
   - student
   - solution-architect
-
 products:
   - azure-virtual-network
 subjects:
