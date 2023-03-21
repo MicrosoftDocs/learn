@@ -4,11 +4,11 @@ title: Summary
 metadata:
   title: summary
   description: This unit summarizes the training module and re-emphasizes the topics learned in the previous units.
-  ms.date: 03/19/2023
+  ms.date: 03/21/2023
   author: asudbring
   ms.author: allensu
   ms.topic: interactive-tutorial
-  ms.prod: virtual-network
-durationInMinutes: 1
+  ms.prod: learning-azure
+durationInMinutes: 2
 content: |
   [!include[](includes/6-summary.md)]

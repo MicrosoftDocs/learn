@@ -4,11 +4,11 @@ title: How does routing preference work?
 metadata:
   title: how-routing-preference-works
   description: "This unit for routing preference explains how the routing preference works and the behavior of communication traffic depending on the option used."
-  ms.date: 3/13/2023
+  ms.date: 3/21/2023
   author: asudbring
   ms.author: allensu
   ms.topic: interactive-tutorial
-  ms.prod: virtual-network
-durationInMinutes: 1
+  ms.prod: learning-azure
+durationInMinutes: 2
 content: |
   [!include[](includes/3-how-routing-preference-works.md)]

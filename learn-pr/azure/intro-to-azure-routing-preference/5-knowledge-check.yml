@@ -4,12 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "The knowledge check unit of the training module evaluates the user's learned knowledge from the previous units in the module."
-  ms.date: 2/8/2023
+  ms.date: 03/21/2023
   author: asudbring
   ms.author: allensu
   ms.topic: interactive-tutorial
-  ms.prod: virtual-network
-durationInMinutes: 1
+  ms.prod: learning-azure
+durationInMinutes: 5
 content: |
 quiz:
   questions:

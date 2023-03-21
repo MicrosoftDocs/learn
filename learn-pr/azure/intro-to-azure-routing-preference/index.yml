@@ -2,12 +2,12 @@
 uid: learn.intro-to-azure-routing-preference
 metadata:
   title: Introduction to routing preference
-  description: Describe routing preference and routing preference unmetered in Azure and recognize scenarios where routing preference is applicable.          # Copy your 'evaluate' Learning Objective here (see below)
+  description: "Describe routing preference and routing preference unmetered in Azure and recognize scenarios where routing preference is applicable."
   ms.date: 03/20/2023
   author: asudbring
   ms.author: allensu
   ms.topic: interactive-tutorial
-  ms.prod: virtual-network
+  ms.prod: learning-azure
 title: Introduction to routing preference
 summary: Describe what routing preference is and it's options that help you decide which routing preference option is appropriate for your application or service.
 abstract: |

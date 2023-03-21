@@ -4,11 +4,11 @@ title: Introduction
 metadata:
   title: introduction
   description: "This training module is designed to help Network Engineers understand the concept of routing preference and routing preference metered and how it can be used to achieve cost savings in their Azure subscription."
-  ms.date: 2/8/2023
+  ms.date: 03/21/2023
   author: asudbring
   ms.author: allensu
   ms.topic: interactive-tutorial
-  ms.prod: virtual-network # Edit as appropriate for your portfolio area
+  ms.prod: learning-azure
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

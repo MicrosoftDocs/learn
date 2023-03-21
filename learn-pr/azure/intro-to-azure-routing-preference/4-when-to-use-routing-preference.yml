@@ -4,11 +4,11 @@ title: When to use routing preference
 metadata:
   title: when-to-use-routing-preference
   description: "This unit of routing preference addresses when to use routing preference options."
-  ms.date: 03/13/2023
+  ms.date: 03/21/2023
   author: asudbring
   ms.author: allensu
   ms.topic: interactive-tutorial
-  ms.prod: virtual-network
-durationInMinutes: 1
+  ms.prod: learning-azure
+durationInMinutes: 2
 content: |
   [!include[](includes/4-when-to-use-routing-preference.md)]
