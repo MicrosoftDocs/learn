@@ -8,7 +8,7 @@ Using `void` as the return type means the method only performs operations and do
 void PrintMessage(string message)
 ```
 
-Using any other return type, such as `int`, `string`, `bool`, etc. means the method performs operations and then returns the specified type upon completion. Inside the method, the keyword `return` is used to return the result. In `void` methods, you can also use the `return` keyword to terminate the method.
+When a data type (such as `int`, `string`, `bool`, etc.) is used, the method performs operations and then returns the specified type upon completion. Inside the method, the keyword `return` is used to return the result. In `void` methods, you can also use the `return` keyword to terminate the method.
 
 In this exercise, you'll learn more about using the `return` keyword.
 
@@ -135,7 +135,7 @@ The Contoso Shopping Center is having a super sale! Many items have discounted p
     }
     ```
 
-    In this code, you return the result of the comparison that evaluates to a `bool`. Creating modular methods that return expressions is a great way to write neat, readable code.
+    In this code, you return the result of the comparison that evaluates to a `bool`. Returning expressions from methods is a great way to make your code organized and improve readability.
 
 1. Change the `FormatDecimal` method to return a `string` by updating your code to the following:
 

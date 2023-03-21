@@ -77,7 +77,7 @@ Next, you'll create a method to convert VND back to USD.
     }
     ```
 
-    In this case, you need `rate` to be a `double` or else the compiler will use integer division and return a truncated `int` value. USD needs to be represented by a decimal number. 
+    In this case, you need `rate` to be a `double` or else the compiler uses integer division and return a truncated `int` value. USD needs to be represented by a decimal number. 
     
     If you set `rate` to an `int` instead of `double`, you'll notice that the compiler doesn't present you with any errors. This happens because the value of `vnd / rate` is implicitly casted to the `double` data type specified in the method signature. When creating methods that return numeric values, it's important to consider the data types in the operations your method performs.
 

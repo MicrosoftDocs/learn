@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/17/2023
+  ms.date: 03/21/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial
@@ -13,18 +13,18 @@ durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the following correctly returns a `string` value?"
+  - content: "Which of the following options correctly returns a `string` value?"
     choices:
     - content: "`return \"\";`"
       isCorrect: true
       explanation: "Correct! An empty string is a valid string result."
     - content: "`return 'a';`"
       isCorrect: false
-      explanation: "Incorrect. This code attempts an implicit conversion from `char` to `string` that is not allowed"
+      explanation: "Incorrect. This code attempts an implicit conversion from `char` to `string` that isn't allowed"
     - content: "`return 5;`"
       isCorrect: false
-      explanation: "Incorrect. This code attempts an implicit conversion from `int` to `string` that is not allowed"
-  - content: "Which of the following is true about the `return` keyword?"
+      explanation: "Incorrect. This code attempts an implicit conversion from `int` to `string` that isn't allowed"
+  - content: "Which of the following statements is true about the `return` keyword?"
     choices:
     - content: "It starts a new iteration of a method."
       isCorrect: false
@@ -35,14 +35,14 @@ quiz:
     - content: "It must always be used with a value or expression."
       isCorrect: false
       explanation: "Incorrect. `void` methods don't return values and can use the `return` keyword on its own."
-  - content: "Which of the following is a valid return statement?"
+  - content: "Which of the following options is a valid return statement?"
     choices:
     - content: "`return void;`"
       isCorrect: false
-      explanation: "Incorrect. `void` is not a valid reutrn value."
+      explanation: "Incorrect. `void` isn't a valid return value."
     - content: "`return 5 % 2;`"
       isCorrect: true
       explanation: "Correct! This statement would return the value of the expression `5 % 2`"
     - content: "`return Console.WriteLine();`"
       isCorrect: false
-      explanation: "Incorrect. `Console.WriteLine()` is a `void` method and cannot be used in a return statement."
+      explanation: "Incorrect. `Console.WriteLine()` is a `void` method and can't be used in a return statement."
