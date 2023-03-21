@@ -4,7 +4,7 @@ title: Perform try-this exercises
 metadata:
   title: Perform try-this exercises
   description: "Perform try-this exercises"
-  ms.date: 03/03/2023
+  ms.date: 03/21/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
@@ -12,4 +12,4 @@ metadata:
   zone_pivot_groups: None
 durationInMinutes: 15
 content: |
-  [!include[](includes/15-demonstration.md)]
+  [!include[](includes/17-demonstration.md)]
