@@ -1,0 +1,35 @@
+### YamlMime:LearningPath
+uid: learn.wwl.sc-100-design-operations-identity-compliance-capabilities
+metadata:
+  title: 'SC-100 Design security operations, identity, and compliance capabilities'
+  description: 'SC-100 Design security operations, identity, and compliance capabilities'
+  ms.date: 04/05/2023
+  author: wwlpublish
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: 'SC-100 Design security operations, identity, and compliance capabilities'
+prerequisites: |
+  *   Advanced experience and knowledge in identity and access, platform protection, security operations, securing data and securing applications.
+  *   Experience with hybrid and cloud implementations.
+summary: |
+  You learn how to design solutions for security operations (SecOps), identity & access management, privileged access, and regulatory compliance.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- advanced
+roles:
+- security-engineer
+- solution-architect
+products:
+- azure
+- defender-for-cloud
+- defender-for-cloud-apps
+- defender-identity
+- microsoft-sentinel
+modules:
+- learn.wwl.design-solutions-regulatory-compliance
+- learn.wwl.design-solutions-identity-access-management
+- learn.wwl.design-solutions-secure-privileged-access
+- learn.wwl.design-solutions-security-operations
+trophy:
+  uid: learn.wwl.sc-100-design-operations-identity-compliance-capabilities.trophy

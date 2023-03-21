@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.design-solutions-regulatory-compliance
+uid: learn.wwl.design-solutions-regulatory-compliance
 metadata:
   title: Design solutions for regulatory compliance
   description: "You'll learn how to interpret and translate regulatory requirements into technical solutions. You'll also learn how to use capabilities found in Microsoft Purview, Microsoft Priva, and Defender for Cloud for compliance."
@@ -36,13 +36,13 @@ subjects:
   - security
   - cloud-security
 units:
-- learn.design-solutions-regulatory-compliance.introduction-regulatory-compliance
-- learn.design-solutions-regulatory-compliance.translate-compliance-requirements-security-solution
-- learn.design-solutions-regulatory-compliance.address-compliance-requirements-microsoft-purview
-- learn.design-solutions-regulatory-compliance.address-privacy-requirements-microsoft-priva
-- learn.design-solutions-regulatory-compliance.address-security-compliance-requirements-azure-policy
-- learn.design-solutions-regulatory-compliance.evaluate-infrastructure-compliance-defender-cloud
-- learn.design-solutions-regulatory-compliance.knowledge-check
-- learn.design-solutions-regulatory-compliance.summary
+- learn.wwl.design-solutions-regulatory-compliance.introduction-regulatory-compliance
+- learn.wwl.design-solutions-regulatory-compliance.translate-compliance-requirements-security-solution
+- learn.wwl.design-solutions-regulatory-compliance.address-compliance-requirements-microsoft-purview
+- learn.wwl.design-solutions-regulatory-compliance.address-privacy-requirements-microsoft-priva
+- learn.wwl.design-solutions-regulatory-compliance.address-security-compliance-requirements-azure-policy
+- learn.wwl.design-solutions-regulatory-compliance.evaluate-infrastructure-compliance-defender-cloud
+- learn.wwl.design-solutions-regulatory-compliance.knowledge-check
+- learn.wwl.design-solutions-regulatory-compliance.summary
 badge:
-  uid: learn.design-solutions-regulatory-compliance.badge
+  uid: learn.wwl.design-solutions-regulatory-compliance.badge
