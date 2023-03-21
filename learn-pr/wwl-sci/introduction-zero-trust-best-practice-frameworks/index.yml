@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.introduction-zero-trust-best-practice-frameworks
+uid: learn.wwl.introduction-zero-trust-best-practice-frameworks
 metadata:
   title: Introduction to Zero Trust and best practice frameworks
   description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the module; include relevant search keywords."
@@ -34,12 +34,12 @@ subjects:
   - security
   - cloud-security
 units:
-- learn.introduction-zero-trust-best-practice-frameworks.introduction-best-practices
-- learn.introduction-zero-trust-best-practice-frameworks.introduction-zero-trust
-- learn.introduction-zero-trust-best-practice-frameworks.zero-trust-initiatives
-- learn.introduction-zero-trust-best-practice-frameworks.zero-trust-technology-pillars-1
-- learn.introduction-zero-trust-best-practice-frameworks.zero-trust-technology-pillars-2
-- learn.introduction-zero-trust-best-practice-frameworks.knowledge-check
-- learn.introduction-zero-trust-best-practice-frameworks.summary
+- learn.wwl.introduction-zero-trust-best-practice-frameworks.introduction-best-practices
+- learn.wwl.introduction-zero-trust-best-practice-frameworks.introduction-zero-trust
+- learn.wwl.introduction-zero-trust-best-practice-frameworks.zero-trust-initiatives
+- learn.wwl.introduction-zero-trust-best-practice-frameworks.zero-trust-technology-pillars-1
+- learn.wwl.introduction-zero-trust-best-practice-frameworks.zero-trust-technology-pillars-2
+- learn.wwl.introduction-zero-trust-best-practice-frameworks.knowledge-check
+- learn.wwl.introduction-zero-trust-best-practice-frameworks.summary
 badge:
-  uid: learn.introduction-zero-trust-best-practice-frameworks.badge
+  uid: learn.wwl.introduction-zero-trust-best-practice-frameworks.badge

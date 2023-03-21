@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.design-resiliency-strategy-common-cyberthreats-like-ransomware
+uid: learn.wwl.design-resiliency-strategy-common-cyberthreats-like-ransomware
 metadata:
   title: Design a resiliency strategy for common cyberthreats like ransomware
   description: "You'll learn about common cyberthreats like ransomware and what kinds of attack patterns an organization must be prepared for."
@@ -35,12 +35,12 @@ subjects:
   - security
   - cloud-security
 units:
-- learn.design-resiliency-strategy-common-cyberthreats-like-ransomware.common-cyberthreats-attack-patterns
-- learn.design-resiliency-strategy-common-cyberthreats-like-ransomware.support-business-resiliency
-- learn.design-resiliency-strategy-common-cyberthreats-like-ransomware.ransomware-protection
-- learn.design-resiliency-strategy-common-cyberthreats-like-ransomware.configurations-secure-backup-restore
-- learn.design-resiliency-strategy-common-cyberthreats-like-ransomware.security-updates
-- learn.design-resiliency-strategy-common-cyberthreats-like-ransomware.knowledge-check
-- learn.design-resiliency-strategy-common-cyberthreats-like-ransomware.summary
+- learn.wwl.design-resiliency-strategy-common-cyberthreats-like-ransomware.common-cyberthreats-attack-patterns
+- learn.wwl.design-resiliency-strategy-common-cyberthreats-like-ransomware.support-business-resiliency
+- learn.wwl.design-resiliency-strategy-common-cyberthreats-like-ransomware.ransomware-protection
+- learn.wwl.design-resiliency-strategy-common-cyberthreats-like-ransomware.configurations-secure-backup-restore
+- learn.wwl.design-resiliency-strategy-common-cyberthreats-like-ransomware.security-updates
+- learn.wwl.design-resiliency-strategy-common-cyberthreats-like-ransomware.knowledge-check
+- learn.wwl.design-resiliency-strategy-common-cyberthreats-like-ransomware.summary
 badge:
-  uid: learn.design-resiliency-strategy-common-cyberthreats-like-ransomware.badge
+  uid: learn.wwl.design-resiliency-strategy-common-cyberthreats-like-ransomware.badge
