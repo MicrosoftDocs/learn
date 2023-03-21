@@ -39,7 +39,7 @@ The following table summarizes the Defender for Servers deployment process:
     - After enabling a plan, decide how you want to install agents and extensions on Azure VMS in the subscription/workgroup.
     - By default, auto-provisioning is enabled for some extensions.
 1. Protect AWS/GCP machines:
-    - For a Defender for Servers deployment, you set up a connector, turn off plans you don't need, configure auto-provisioning settings,authenticate to AWS/GCP, and deploy the settings. 
+    - For a Defender for Servers deployment, you set up a connector, turn off plans you don't need, configure auto-provisioning settings, authenticate to AWS/GCP, and deploy the settings. 
     - Auto-provisioning includes the agents used by Defender for Cloud and the Azure Connected Machine agent for onboarding to Azure with Azure Arc. 
     - AINS uses a CloudFormation template. 
     - GCP uses a Cloud Shell template. 
