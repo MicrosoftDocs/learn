@@ -1,10 +1,10 @@
-The Azure Import/Export service is one of several options for transferring data in and out of Azure Storage. In the film-production company scenario, you want to make sure you've selected the correct solution for your requirements. In this unit, we'll explore in greater detail the question of when you should use the Azure Import/Export service and when another tool might be more suitable.
+The Azure Import/Export service is one of several options for transferring data in and out of Azure Storage. In the film-production company scenario, you want to make sure you've selected the correct solution for your requirements. In this unit, we explore in greater detail the question of when you should use the Azure Import/Export service and when another tool might be more suitable.
 
 ## Offline transfer of massive data
 
 The Import/Export service is an offline solution. It's designed to handle more data than would be feasible to transmit over a network connection. Using the Import/Export service, you take responsibility for preparing and shipping the necessary hardware.
 
-Microsoft provides an alternative solution in the form of the Azure Data Box family. The Data Box family uses Microsoft-supplied devices to transfer data from your on-premises location into Azure Storage. A Data Box device is a proprietary, tamper-proof network appliance. You can connect the device to your own internal network to move data to the device. You'll ship the device back to Microsoft, which then uploads data from the device into Azure Storage.
+Microsoft provides an alternative solution in the form of the Azure Data Box family. The Data Box family uses Microsoft-supplied devices to transfer data from your on-premises location into Azure Storage. A Data Box device is a proprietary, tamper-proof network appliance. You can connect the device to your own internal network to move data to the device. You ship the device back to Microsoft, which then uploads data from the device into Azure Storage.
 
 The Azure Data Box family is the recommended solution for handling very large import or export jobs when the organization is located in a region where Data Box is supported. It's an easier process than using the Import/Export service.
 
@@ -39,7 +39,7 @@ The following table summarizes the considerations for choosing the most appropri
 
 | Dataset | Network bandwidth |Solution to use |
 | ---- | ---- | ---- |
-| Large dataset | Low-bandwidth network or direct connectivity to on-premises storage is limited by organization policies |  Azure Import/Export or Data Box for export;  Data Box Disk or Data Box for import where supported; otherwise use Azure Import/Export|
-| Large dataset | High-bandwidth network: 1 gigabit per second (Gbps) - 100 Gbps | AZCopy for online transfers; or to import data, Azure Data Factory, Azure Stack Edge, or Azure Data Box Gateway |
-| Large dataset | Moderate-bandwidth network: 100 megabits per second (Mbps) - 1 Gbps | Azure Import/Export or Azure Data Box family where supported |
-| Small dataset: a few GBs to a few TBs | Low to moderate-bandwidth network: up to 1 Gbps | If transferring only a few files, use Azure Storage Explorer, Azure portal, AZCopy, or AZ CLI |
+| Large dataset | Low-bandwidth network or direct connectivity to on-premises storage is limited by organization policies |  Azure Import/Export or Data Box for export; Data Box Disk or Data Box for import where it's supported; otherwise use Azure Import/Export.|
+| Large dataset | High-bandwidth network: 1 gigabit per second (Gbps) - 100 Gbps | AZCopy for online transfers; or to import data, Azure Data Factory, Azure Stack Edge, or Azure Data Box Gateway. |
+| Large dataset | Moderate-bandwidth network: 100 megabits per second (Mbps) - 1 Gbps | Azure Import/Export or Azure Data Box family where it's supported. |
+| Small dataset: a few GBs to a few TBs | Low to moderate-bandwidth network: up to 1 Gbps | If transferring only a few files, use Azure Storage Explorer, Azure portal, AZCopy, or AZ CLI. |

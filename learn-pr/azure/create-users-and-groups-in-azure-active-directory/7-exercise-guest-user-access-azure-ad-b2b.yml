@@ -13,6 +13,5 @@ metadata:
   ms.service: active-directory
   ms.subservice: fundamentals
 durationInMinutes: 10
-azureSandbox: true
 content: |
   [!include[](includes/7-exercise-guest-user-access-azure-ad-b2b.md)]

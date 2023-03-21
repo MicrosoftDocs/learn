@@ -24,7 +24,7 @@ In this situation, it is normal for an Azure Administrator to create the user ac
 
 ### Managed identities
 
-Managed identity for Azure resources is a feature of Azure Active Directory. The feature provides Azure services with an automatically managed identity in Azure AD. You can use the Managed Identity capability to authenticate to any service that support Azure Active Directory authentication.
+Managed identity for Azure resources is a feature of Azure Active Directory. The feature provides Azure services with an automatically managed identity in Azure AD. You can use the Managed Identity capability to authenticate to any service that supports Azure Active Directory authentication.
 
 Managed identities for Azure resources are the new name for the service formerly known as Managed Service Identity (MSI). A system-assigned managed identity is created for your Azure Synapse workspace when you create the workspace.
 
@@ -67,7 +67,7 @@ This enables you to operate in environments that use Conditional Access policies
 
 If you are unable to use a managed identity to access resources such as Azure Data Lake then you can use storage account keys and shared access signatures.
 
-With storage account keys. Azure creates two of these keys (primary and secondary) for each storage account you create. The keys give access to everything in the account. You'll find the storage account keys in the Azure portal view of the storage account. Just select **Settings**, and then click **Access keys**.
+With a storage account key. Azure creates two of these keys (primary and secondary) for each storage account you create. The keys give access to everything in the account. You'll find the storage account keys in the Azure portal view of the storage account. Just select **Settings**, and then click **Access keys**.
 
 As a best practice, you shouldn't share storage account keys, and you can use Azure Key Vault to manage and secure the keys. 
 

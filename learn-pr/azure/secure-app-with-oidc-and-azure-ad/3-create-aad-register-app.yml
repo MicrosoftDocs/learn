@@ -4,8 +4,8 @@ metadata:
   title: Create an Azure AD tenant and configure registration for your application
   description: Create an Azure AD tenant and configure registration for your application
   ms.date: 07/17/2019
-  author: chrispine-chiedo
-  ms.author: cchiedo
+  author: davidmu1
+  ms.author: davidmu
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Create an Azure AD tenant and configure registration for your application
