@@ -1,12 +1,12 @@
 Let's assume that your music-streaming application has an equal distribution of users in the western United States and eastern Asia. You'd like to have a failover version of the app in one region.
 
-The sample application we use for this exercise displays the region it's running in. One of the two instances has higher priority and is the primary endpoint. The other instance has a lower priority and is the failover endpoint. Taking the primary endpoint offline automatically routes all traffic to the failover endpoint.
+The sample application we use for this exercise displays the region in which it's running. One of the two instances has higher priority and is the primary endpoint. The other instance has a lower priority and is the failover endpoint. Taking the primary endpoint offline automatically routes all traffic to the failover endpoint.
 
 In this exercise, you'll set up Traffic Manager to use the United States endpoint as the primary, failing over to the Asian endpoint if any errors occur.
 
 ## Create a new Traffic Manager profile
 
-1. Run the following command in Cloud Shell to create a new Traffic Manager profile.
+1. Run the following command in Cloud Shell to create a new Traffic Manager profile:
 
     ```azurecli
     az network traffic-manager profile create \
@@ -23,7 +23,7 @@ In this exercise, you'll set up Traffic Manager to use the United States endpoin
 
 ## Deploy the web applications
 
-1. Run the following command to deploy a Resource Manager template. The template creates two servers, one in the East Asia region, and one in the West US 2 region. Be patient, because the deployment may take a few minutes.
+1. Run the following command to deploy a Resource Manager template. The template creates two servers, one in the East Asia region, and one in the West US 2 region. Be patient, because the deployment might take a few minutes.
 
     ```azurecli
     az deployment group create \
@@ -79,7 +79,7 @@ In this exercise, you'll set up Traffic Manager to use the United States endpoin
         --output table
     ```
 
-## Test the app 
+## Test the app
 
 1. Let's take a look at what DNS shows for the web apps and for our Traffic Manager profile. Run the following commands to display the IP addresses for each of the resources we've created.
 
@@ -143,7 +143,7 @@ In this exercise, you'll set up Traffic Manager to use the United States endpoin
         --endpoint-status Disabled
     ```
 
-1. Let's look again at what DNS shows for the web apps and for our Traffic Manager profile. Run the following commands.
+1. Let's look again at what DNS shows for the web apps and for our Traffic Manager profile.
 
 1. Retrieve the address for the West US 2 web app:
 

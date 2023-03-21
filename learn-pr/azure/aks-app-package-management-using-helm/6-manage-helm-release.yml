@@ -8,7 +8,7 @@ metadata:
   ms.author: zarhoads
   ms.prod: learning-azure
   ms.topic: interactive-tutorial
-  ms.date: 10/11/2021
+  ms.date: 03/10/2023
 
 durationInMinutes: 12
 content: |
@@ -24,7 +24,7 @@ quiz:
     - content: "Create a single Helm chart that for both applications, but don't set either chart as a dependency of the other."
       isCorrect: false
       explanation: "When you deploy a Helm chart, the applications deployed in the chart are deployed as a release. A single release can make it difficult to manage upgrades and fixes to each component independently."
-    - content: "Create two separate Helm charts. One for each of the applications."
+    - content: "Create two separate Helm charts, one for each of the applications."
       isCorrect: true
       explanation: "When you deploy a Helm chart, the applications deployed in the chart are deployed as a release. By splitting the deployment across two charts, this strategy allows you to manage each component in a separate development life cycle for upgrades and fixes."
     - content: "Create a single Helm chart for both applications, and set the service that process the orders as a dependency chart."
@@ -33,7 +33,7 @@ quiz:
 
   - content: "Suppose a software solution makes use of website as one of its critical components. The website is the only component that depends on a caching service. Which strategy would fit the deployment of these two applications best using Helm?"
     choices:
-    - content: "Create two separate Helm charts. One for each of the applications."
+    - content: "Create two separate Helm charts, one for each of the applications."
       isCorrect: false
       explanation: "By splitting the deployment across two charts, this strategy allows you to manage each component in a separate development life cycle. However, since there's a direct dependency between the website and the caching service, a better approach would be to deploy these components as a single Helm release."
     - content: "Create a single Helm chart to deploy the website. Deploy the caching service as a separate component by using deployment manifest files."

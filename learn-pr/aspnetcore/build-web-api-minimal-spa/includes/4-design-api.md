@@ -39,12 +39,12 @@ npx json-server --watch db.json
 At this point, your mocked API will start to be served at a certain port (for example, "5000"). Furthermore, you can interact with it as though it were a real API. It supports requests like the following:
 
 ```output
-GET    /pizza
-GET    /pizza/1
-POST   /pizza
-PUT    /pizza/1
-PATCH  /pizza/1
-DELETE /pizza/1
+GET    /pizzas
+GET    /pizzas/1
+POST   /pizzas
+PUT    /pizzas/1
+PATCH  /pizzas/1
+DELETE /pizzas/1
 ```
 
 If you make any requests toward this mocked API and change data, the static file _db.json_ would change. The server would rebuild and relaunch, to reflect the changes.
@@ -54,20 +54,20 @@ If you make any requests toward this mocked API and change data, the static file
 Because this mocked API works exactly like a real API, you can make requests to it in your front-end code. For example:
 
 ```javascript
-fetch("http://localhost:5000/pizza")
+fetch("http://localhost:5000/pizzas")
   .then(response => response.json())
   .then(data => console.log(data)) // outputs mocked data 
 ```
 
 ### Use a proxy
 
-To save yourself a few keystrokes, you can define a proxy in your front-end app. Imagine that you're doing requests toward `http://localhost:5000/pizza`. If you don't want to type out the full domain, you can create a proxy, an alias. To set up a proxy, go to _package.json_, and add an entry like the following:
+To save yourself a few keystrokes, you can define a proxy in your front-end app. Imagine that you're doing requests toward `http://localhost:5000/pizzas`. If you don't want to type out the full domain, you can create a proxy, an alias. To set up a proxy, go to _package.json_, and add an entry like the following:
 
 ```json
 "proxy": "http://localhost:5000"
 ```
 
-Instead of making requests toward `http://localhost:5000/pizza`, you can now make them toward */api/pizza*. *api* resolves to `http://localhost:5000` when you make requests. It's not mandatory to use proxies, but you might appreciate their convenience.
+Instead of making requests toward `http://localhost:5000/pizzas`, you can now make them toward */api/pizzas*. *api* resolves to `http://localhost:5000` when you make requests. It's not mandatory to use proxies, but you might appreciate their convenience.
 
 ## Talk to a real API
 

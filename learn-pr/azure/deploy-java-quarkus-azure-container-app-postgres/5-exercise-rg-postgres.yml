@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.deploy-java-quarkus-azure-container-app-postgres.5-exercise-rg-postgres
+title: Exercise - Set up Azure Container Apps
+metadata:
+  title: Exercise - Set up Azure Container Apps
+  description: In this exercise, follow the steps to set up the Azure Resource Group and the PostgreSQL database.
+  ms.date: 01/02/2023
+  author: agoncal
+  ms.author: antoniomanug
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=devdiv
+  ms.contributors: antoniomanug
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-exercise-rg-postgres.md)]
