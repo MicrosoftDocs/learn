@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.migrate-cicd-pipelines-to-github-with-github-actions-importer.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Through this module you should have learned how to install and update GitHub Actions Importer as well as learn about its four commands and what is not automatically mirgrated. 
+  ms.date: 3/21/2023
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-summary.md)]

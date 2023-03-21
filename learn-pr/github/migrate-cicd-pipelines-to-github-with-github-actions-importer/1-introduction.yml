@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.migrate-cicd-pipelines-to-github-with-github-actions-importer.introduction
+title: Introduction
+metadata:
+  title: introduction
+  description: "Learn about GitHub Actions Importer and how it can help facilitate migrations from your current CI/CD tool to GitHub Actions."
+  ms.date: 1/10/2023
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]
