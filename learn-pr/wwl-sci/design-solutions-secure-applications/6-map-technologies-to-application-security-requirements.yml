@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.design-solutions-secure-application.map-technologies-to-application-security-requirements
+title: Map technologies to application security requirements
+metadata:
+  title: Map technologies to application security requirements
+  description: "SC-100 preparatory unit on this topic: map technologies to application security requirements."
+  ms.date: 3/15/2023
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-map-technologies-to-application-security-requirements.md)]

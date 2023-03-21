@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.design-solutions-secure-application.introduction-to-application-security
+title: Introduction to application security
+metadata:
+  title: Introduction to application security
+  description: "SC-100 preparatory unit on this topic: introduction to application security."
+  ms.date: 3/14/2023
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction-to-application-security.md)]
