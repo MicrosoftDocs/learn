@@ -2,15 +2,13 @@
 uid: learn.wwl.get-tips-tricks-teach-mb-910-dynamics-365-fundamentals.bring-together
 title: Bring it all together
 metadata:
-  title: 8-Bring it all together
+  title: Bring it all together
   description: "Bring it all together"
-  ms.date: 04/12/2022
+  ms.date: 03/21/2023
   author: wwlpublish
   ms.author: tsheppard
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.prod: dynamics-365
 durationInMinutes: 1
 content: |
-  [!include[](includes/8-bring-together.md)]
+  [!include[](includes/9-bring-it-all-together.md)]
