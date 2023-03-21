@@ -9,5 +9,6 @@ metadata:
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   zone_pivot_groups: None
+durationInMinutes: 7
 content: |
   [!include[](includes/10-azure-active-directory-groups.md)]
