@@ -44,7 +44,7 @@ Enterprises are currently building and running applications across various ecosy
 
 [Azure landing zones](https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/) provides: A specific architectural approach. Reference architecture. Set of reference implementations that help you prepare your landing zones for mission-critical technology platforms and supported workloads.
 
-:::image type="content" source="../media/architecture-custom-expanded.svgns-arch-cust-expanded.svg" alt-text="Diagram showing a conceptual architecture diagram of an Azure landing zone." lightbox="../media/architecture-custom-expanded.svgns-arch-cust-expanded.svg":::
+:::image type="content" source="../media/architecture-custom-expanded.svg" alt-text="Diagram showing a conceptual architecture diagram of an Azure landing zone." lightbox="../media/architecture-custom-expanded.svg":::
 
 _For more information on the design areas labeled A-I in the visual, see [environment design areas](https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-areas#environment-design-areas)._
 
