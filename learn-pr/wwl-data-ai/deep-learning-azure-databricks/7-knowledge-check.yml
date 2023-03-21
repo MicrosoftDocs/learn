@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deep-learning-azure-databricks.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/21/2023
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.service: azure-databricks
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "What does an optimizer do when training a deep learning model?"
+    choices:
+    - content: "Removes training data for which predictions are incorrect."
+      isCorrect: false
+      explanation: "That's incorrect. Optimizers do not remove data."
+    - content: "Adjusts weights and biases to minimize loss."
+      isCorrect: true
+      explanation: "That's correct. An optimizer minimizes loss by adjusting weights and biases in the network."
+    - content: "Generates predictions from test data to calculate metrics."
+      isCorrect: false
+      explanation: "That's incorrect. An optimizer does not test the model."
+  - content: "Which method of a PyTorch model class is used to pass data through the network?"
+    choices:
+    - content: "`backpropagate`"
+      isCorrect: false
+      explanation: "That's incorrect. PyTorch models don't use a `backpropagate` method to pass data through the network."
+    - content: "`fit`"
+      isCorrect: false
+      explanation: "That's incorrect. PyTorch models don't use a `fit` method to pass data through the network."
+    - content: "`forward`"
+      isCorrect: true
+      explanation: "That's correct. PyTorch models use a `forward` method to pass data through the network."
+  - content: "Which library can you use to distribute PyTorch training across multiple cluster nodes?"
+    choices:
+    - content: "Horovod"
+      isCorrect: true
+      explanation: "That's correct. The Horovod library enables distributed deep learning training."
+    - content: "Hyperopt"
+      isCorrect: false
+      explanation: "That's incorrect. The hyperopt library is used to optimize hyperparameter values."
+    - content: "Scikit-Learn"
+      isCorrect: false
+      explanation: "That's incorrect. The Scikit-Learn library provides a framework for classical machine learning."
