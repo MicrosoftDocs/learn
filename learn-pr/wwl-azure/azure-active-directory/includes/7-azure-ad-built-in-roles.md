@@ -133,7 +133,7 @@ Can't manage MFA settings in the legacy MFA management portal or Hardware OATH t
     Azure AD Joined Device Local Administrator
   :::column-end:::
   :::column:::
-    This role is available for assignment only as another local administrator in Device settings. Users with this role become local machine administrators on all Windows 10 devices that are joined to Azure Active Directory. They don't have the ability to manage devices objects in Azure Active Directory.
+    This role is available for assignment only as another local administrator in Device settings. Users with this role become local machine administrators on all Windows 10 devices that are joined to Azure Active Directory. They don't have the ability to manage device objects in Azure Active Directory.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -141,7 +141,7 @@ Can't manage MFA settings in the legacy MFA management portal or Hardware OATH t
     Azure DevOps Administrator
   :::column-end:::
   :::column:::
-    Users with this role can manage all enterprise Azure DevOps policies, applicable to all Azure DevOps organizations backed by the Azure AD. Users in this role can manage these policies by navigating to any Azure DevOps organization that is backed by the company's Azure AD. Additionally, users in this role can claim ownership of orphaned Azure DevOps organizations. This role grants no other Azure DevOps-specific permissions (for example, Project Collection Administrators) inside any of the Azure DevOps organizations backed by the company's Azure AD organization.
+    Users with this role can manage all enterprise Azure DevOps policies applicable to all Azure DevOps organizations backed by the Azure AD. Users in this role can manage these policies by navigating to any Azure DevOps organization that is backed by the company's Azure AD.Users in this role can claim ownership of orphaned Azure DevOps organizations. This role grants no other Azure DevOps-specific permissions (for example, Project Collection Administrators) inside any of the Azure DevOps organizations backed by the company's Azure AD organization.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -157,7 +157,7 @@ Can't manage MFA settings in the legacy MFA management portal or Hardware OATH t
     Business-to-Consumer (B2C) Identity Experience Framework (IEF) Keyset Administrator
   :::column-end:::
   :::column:::
-    User can create and manage policy keys and secrets for token encryption, token signatures, and claim encryption/decryption.By adding new keys to existing key containers, this limited administrator can roll over secrets as needed without impacting existing applications.This user can see the full content of these secrets and their expiration dates even after their creation.
+    Users can create and manage policy keys and secrets for token encryption, token signatures, and claim encryption/decryption.By adding new keys to existing key containers, this limited administrator can roll over secrets as needed without impacting existing applications.This user can see the full content of these secrets and their expiration dates even after their creation.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -165,7 +165,7 @@ Can't manage MFA settings in the legacy MFA management portal or Hardware OATH t
     Business-to-Consumer (B2C) Identity Experience Framework (IEF) Policy Administrator
   :::column-end:::
   :::column:::
-    Users in this role have the ability to create, read, update, and delete all custom policies in Azure AD B2C and therefore have full control over the Identity Experience Framework in the relevant Azure AD B2C organization. By editing policies, this user can establish direct federation with external identity providers, change the directory schema, change all user-facing content HyperText Markup Language (HTML), Cascading Style Sheets (CSS), JavaScript), change the requirements to complete an authentication, create new users, send user data to external systems including full migrations, and edit all user information including sensitive fields like passwords and phone numbers. Conversely, this role can't change the encryption keys or edit the secrets used for federation in the organization.
+    Users in this role have the ability to create, read, update, and delete all custom policies in Azure AD B2C and therefore have full control over the Identity Experience Framework in the relevant Azure AD B2C organization. By editing policies, this user can establish direct federation with external identity providers, change the directory schema, change all user-facing content HyperText Markup Language (HTML), Cascading Style Sheets (CSS), JavaScript), change the requirements to complete authentication, create new users, send user data to external systems including full migrations, and edit all user information including sensitive fields like passwords and phone numbers. Conversely, this role can't change the encryption keys or edit the secrets used for federation in the organization.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -249,8 +249,8 @@ Can't manage MFA settings in the legacy MFA management portal or Hardware OATH t
 
  -  Granting a specific set of guest users read access instead of granting it to all guest users.
     
- -  Granting a specific set of nonadmin users access to Azure portal when "**Restrict access to Azure AD portal to admins only**" is set to "**Yes**".
- -  Granting service principals access to directory where Directory.Read.All isn't an option.
+ -  Granting a specific set of nonadmin users access to the Azure portal when "**Restrict access to Azure AD portal to admins only**" is set to "**Yes**".
+ -  Granting service principals access to the directory where Directory.Read.All isn't an option.
 
 
   :::column-end:::
@@ -260,7 +260,7 @@ Can't manage MFA settings in the legacy MFA management portal or Hardware OATH t
     Directory Synchronization Accounts
   :::column-end:::
   :::column:::
-    Don't use. This role is automatically assigned to the Azure AD Connect service, and isn't intended or supported for any other use.
+    Don't use. This role is automatically assigned to the Azure AD Connect service and isn't intended or supported for any other use.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -704,7 +704,7 @@ Users with this role can't do the following tasks:
     **Privileged Role Administrator**
   :::column-end:::
   :::column:::
-    **This role grants the ability to manage assignments for all Azure AD roles including the Global Administrator role**. This role doesn't include any other privileged abilities in Azure AD like creating or updating users. However, users assigned to this role can grant themselves or others another privilege by assigning additional roles.
+    **This role grants the ability to manage assignments for all Azure AD roles including the Global Administrator role**. This role doesn't include any other privileged abilities in Azure AD like creating or updating users. However, users assigned to this role can grant themselves or others another privilege by assigning extra roles.
   :::column-end:::
 :::row-end:::
 :::row:::
