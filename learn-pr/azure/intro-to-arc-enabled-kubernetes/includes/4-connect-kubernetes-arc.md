@@ -7,10 +7,8 @@ To connect a Kubernetes cluster to Azure Arc, you deploy the Azure Arc agents fo
 1. Verify that you satisfy all the prerequisites. You'll need:
 
    - An existing Kubernetes cluster.
-   - Access to the cluster with a user account that has the cluster-admin role.
    - Outbound connectivity from the cluster to Azure and Microsoft container registry hosting the container images required during installation. For details regarding target URLs and ports, refer to the product documentation.
    - A user account or service principal in the Azure Active Directory (Azure AD) tenant associated with the subscription that will be hosting the Azure Arc-enabled Kubernetes resource. This account must have, at minimum, the **Kubernetes Cluster - Azure Arc Onboarding** Azure role-based access control (Azure RBAC) built-in role.
-   - The latest version of Helm 3 installed on your management computer.
    - The latest version of Azure Command Line Interface (CLI) or Azure PowerShell installed on your management computer. For this example, we'll refer to Azure CLI.
 
 1. Start an Azure CLI session on a computer with connectivity to the Kubernetes cluster and to Azure.

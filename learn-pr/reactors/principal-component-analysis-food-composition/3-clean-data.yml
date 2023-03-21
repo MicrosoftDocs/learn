@@ -4,7 +4,7 @@ title: Clean the data and check for correlations
 metadata:
   title: Clean the data
   description: Clean the data to prepare it for PCA.
-  ms.date: 06/30/2020
+  ms.date: 03/13/2023
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial

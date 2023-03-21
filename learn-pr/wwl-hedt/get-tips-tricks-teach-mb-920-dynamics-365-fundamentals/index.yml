@@ -3,11 +3,11 @@ uid: learn.wwl.get-tips-tricks-teach-mb-920-dynamics-365-fundamentals
 metadata:
   title: 'Get tips and tricks for teaching MB-920: Microsoft Dynamics 365 Fundamentals (ERP)'
   description: "Learn tips and tricks about preparing for your first teaching session, which labs to use, when and how to introduce technical topics, as well as other resources and materials."
-  ms.date: 08/03/2022
+  ms.date: 03/20/2023
   author: wwlpublish
   ms.author: tsheppard
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: dynamics-365
 title: 'Get tips and tricks for teaching MB-920: Microsoft Dynamics 365 Fundamentals (ERP)'
 summary: Learn tips and tricks about preparing for your first teaching session, which labs to use, when and how to introduce technical topics, as well as other resources and materials.
 abstract: |
@@ -34,12 +34,14 @@ subjects:
 - employee-engagement
 units:
 - learn.wwl.get-tips-tricks-teach-mb-920-dynamics-365-fundamentals.introduction
+- learn.wwl.get-tips-tricks-teach-mb-920-dynamics-365-fundamentals.explore-objective-domains
 - learn.wwl.get-tips-tricks-teach-mb-920-dynamics-365-fundamentals.learn-module-best-practices
-- learn.wwl.get-tips-tricks-teach-mb-920-dynamics-365-fundamentals.learn-fundamentals-dynamics-365-supply-chain-management
-- learn.wwl.get-tips-tricks-teach-mb-920-dynamics-365-fundamentals.learn-fundamentals-dynamics-365-finance
-- learn.wwl.get-tips-tricks-teach-mb-920-dynamics-365-fundamentals.learn-fundamentals-dynamics-365-commerce
-- learn.wwl.get-tips-tricks-teach-mb-920-dynamics-365-fundamentals.learn-fundamentals-dynamics-365-human resources
-- learn.wwl.get-tips-tricks-teach-mb-920-dynamics-365-fundamentals.learn-fundamentals-dynamics-365-project-operations
+- learn.wwl.get-tips-tricks-teach-mb-920-dynamics-365-fundamentals.explore-core-capabilities-dynamics-365-finance-operations-apps
+- learn.wwl.get-tips-tricks-teach-mb-920-dynamics-365-fundamentals.explore-best-practices-learn-fundamentals-dynamics-365-finance
+- learn.wwl.get-tips-tricks-teach-mb-920-dynamics-365-fundamentals.explore-best-practices-learn-fundamentals-dynamics-365-supply-chain-management
+- learn.wwl.get-tips-tricks-teach-mb-920-dynamics-365-fundamentals.explore-best-practices-learn-fundamentals-dynamics-365-commerce
+- learn.wwl.get-tips-tricks-teach-mb-920-dynamics-365-fundamentals.explore-best-practices-learn-fundamentals-dynamics-365-human-resources
+- learn.wwl.get-tips-tricks-teach-mb-920-dynamics-365-fundamentals.explore-best-practices-learn-fundamentals-dynamics-365-project-operations
 - learn.wwl.get-tips-tricks-teach-mb-920-dynamics-365-fundamentals.bring-together
 - learn.wwl.get-tips-tricks-teach-mb-920-dynamics-365-fundamentals.knowledge-check
 - learn.wwl.get-tips-tricks-teach-mb-920-dynamics-365-fundamentals.summary

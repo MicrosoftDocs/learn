@@ -6,7 +6,7 @@ In this exercise, you'll create a new Azure Active Directory (Azure AD) organiza
 
 To hold all of the users you create in this exercise, create a new organization.
 
-1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true) with the same account you used to activate the sandbox.
+1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
 1. On the Azure portal home page, under **Azure services**, select **Create a resource**.
 
