@@ -21,7 +21,7 @@ summary: |
     Get started with Java on Azure
   :::column-end:::
   :::column:::
-    <img src="/training/achievements/expand-capabilities-java-azure.svg" width="101" alt="The trophy for the expand the capabilities for Java apps on Azure learning path." role="presentation"></img>
+    <img src="/training/achievements/expand-capabilities-java-azure.svg" width="101" alt="The trophy to expand the capabilities for Java apps on Azure learning path." role="presentation"></img>
 
     [Expand the capabilities for Java apps on Azure](../expand-capabilities-java-azure/index.yml)
   :::column-end:::
@@ -33,7 +33,7 @@ summary: |
   :::row-end:::
 prerequisites: |
   - An Azure subscription
-  - Local installations of [Java JDK (8+)](https://www.azul.com/downloads/azure-only/zulu/), [Maven (3+)](https://maven.apache.org/download.cgi) and [Azure CLI (2.12+)](/cli/azure/install-azure-cli)
+  - Local installations of [Java JDK (8+)](https://adoptopenjdk.net/releases.html?variant=openjdk8&jvmVariant=hotspot/), [Maven (3+)](https://maven.apache.org/download.cgi) and [Azure CLI (2.12+)](/cli/azure/install-azure-cli)
 iconUrl: /training/achievements/get-started-java-azure.svg
 levels:
 - beginner
@@ -70,6 +70,7 @@ modules:
 - learn.azure.intro-to-java-azure
 - learn.java-target-destinations
 - learn.azure.deploy-java-spring-boot-app-service-mysql
+- learn.azure.deploy-java-quarkus-azure-container-app-postgres
 - learn.azure.build-webapp-java-tomcat
 - learn.azure-spring-cloud-workshop
 - learn.azure.deploy-event-driven-real-time
