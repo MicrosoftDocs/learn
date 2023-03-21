@@ -20829,6 +20829,51 @@
       "source_path": "learn-pr/wwl-hedt/get-tips-tricks-teach-mb-920-dynamics-365-fundamentals/3-learn-fundamentals-dynamics-365-supply-chain-management.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-mb-920-dynamics-365-fundamentals/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-hedt/get-tips-tricks-teach-mb-910-dynamics-365-fundamentals/10-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-mb-910-dynamics-365-fundamentals/11-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-hedt/get-tips-tricks-teach-mb-910-dynamics-365-fundamentals/3-learn-fundamentals-dynamics-365-market.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-mb-910-dynamics-365-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-hedt/get-tips-tricks-teach-mb-910-dynamics-365-fundamentals/2-learn-module-best-practices.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-mb-910-dynamics-365-fundamentals/3-learn-module-best-practices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-hedt/get-tips-tricks-teach-mb-910-dynamics-365-fundamentals/4-learn-fundamentals-dynamics-365-sales.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-mb-910-dynamics-365-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-hedt/get-tips-tricks-teach-mb-910-dynamics-365-fundamentals/5-learn-fundamentals-dynamics-365-customer-service.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-mb-910-dynamics-365-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-hedt/get-tips-tricks-teach-mb-910-dynamics-365-fundamentals/6-learn-fundamentals-dynamics-365-field-service.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-mb-910-dynamics-365-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-hedt/get-tips-tricks-teach-mb-910-dynamics-365-fundamentals/7-learn-fundamentals-dynamics-365-project-operations.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-mb-910-dynamics-365-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-hedt/get-tips-tricks-teach-mb-910-dynamics-365-fundamentals/8-bring-together.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-mb-910-dynamics-365-fundamentals/9-bring-it-all-together",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-hedt/get-tips-tricks-teach-mb-910-dynamics-365-fundamentals/9-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-mb-910-dynamics-365-fundamentals/10-knowledge-check",
+      "redirect_document_id": false
     }
   ]
 }
