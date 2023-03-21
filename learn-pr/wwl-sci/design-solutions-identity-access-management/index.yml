@@ -1,0 +1,50 @@
+### YamlMime:Module
+uid: learn.design-solutions-identity-access-management
+metadata:
+  title: Design solutions for identity and access management
+  description: "You learn about various strategies for managing identities and access to resources, including hybrid and multicloud scenarios, external identities, and conditional access."
+  ms.date: 3/14/2023
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+title: Design solutions for identity and access management
+summary: "You learn about various strategies for managing identities and access to resources, including hybrid and multicloud scenarios, external identities, and conditional access."
+abstract: |
+  By the end of this module, you are able to:
+  -   Design cloud, hybrid and multicloud access strategies
+  -   Design a solution for Azure Active Directory (Azure AD), part of Microsoft Entra
+  -   Design a solution for external identities
+  -   Design modern authentication and authorization strategies
+  -   Specify requirements to secure Active Directory Domain Services
+  -   Design a solution to manage secrets, keys, and certificates
+prerequisites: |
+  - Advanced experience and knowledge in identity and access, platform protection, security operations, securing data, and securing applications.
+  - Experience with hybrid and cloud implementations.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- security-engineer
+- solution-architect
+products:
+- azure
+- defender-for-cloud
+- defender-for-cloud-apps
+- defender-identity
+- microsoft-sentinel
+subjects:
+  - security
+  - cloud-security
+units:
+- learn.design-solutions-identity-access-management.design-cloud-hybrid-multi-cloud-access-strategies
+- learn.design-solutions-identity-access-management.design-solution-azure-active-directory
+- learn.design-solutions-identity-access-management.design-solution-external-identities
+- learn.design-solutions-identity-access-management.design-modern-authentication-authorization-strategies
+- learn.design-solutions-identity-access-management.align-conditional-access-zero-trust
+- learn.design-solutions-identity-access-management.specify-requirements-secure-active-directory-domain-services
+- learn.design-solutions-identity-access-management.design-solution-manage-secrets-keys-certificates
+- learn.design-solutions-identity-access-management.knowledge-check
+- learn.design-solutions-identity-access-management.summary
+badge:
+  uid: learn.design-solutions-identity-access-management.badge

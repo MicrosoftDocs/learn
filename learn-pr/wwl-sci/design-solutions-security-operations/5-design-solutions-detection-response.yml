@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.design-solutions-security-operations.design-solutions-detection-response
+title: Design solutions for detection and response
+metadata:
+  title: Design solutions for detection and response
+  description: "SC-100 preparatory unit on the topic: design solutions for detection and response."
+  ms.date: 3/14/2023
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-design-solutions-detection-response.md)]

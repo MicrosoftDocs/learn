@@ -1,0 +1,52 @@
+### YamlMime:Module
+uid: learn.design-solutions-security-operations
+metadata:
+  title: Design solutions for security operations
+  description: "You learn techniques to design security operations capabilities including logging, auditing, Security Event Management (SIEM), Security Orchestration and Automated Response (SOAR), and security workflows."
+  ms.date: 3/14/2023
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+title: Design solutions for security operations
+summary: "You learn techniques to design security operations capabilities including logging, auditing, Security Event Management (SIEM), Security Orchestration and Automated Response (SOAR), and security workflows."
+abstract: |
+  By the end of this module, you are able to:
+  - Design security operations capabilities in hybrid and multicloud environments
+  - Design centralized logging and auditing
+  - Design Security Event Management (SIEM) solutions
+  - Design a solution for detection and response that includes Extended Detection and Response (XDR)
+  - Design a solution for security orchestration, automation and response (SOAR)
+  - Design security workflows
+  - Design and evaluate threat detection with the MITRE ATT&CK framework
+prerequisites: |
+  - Advanced experience and knowledge in identity and access, platform protection, security operations, securing data, and securing applications.
+  - Experience with hybrid and cloud implementations.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- security-engineer
+- solution-architect
+products:
+- azure
+- defender-for-cloud
+- defender-for-cloud-apps
+- defender-identity
+- microsoft-sentinel
+subjects:
+  - security
+  - cloud-security
+units:
+- learn.design-solutions-security-operations.introduction-security-operations-secops
+- learn.design-solutions-security-operations.design-security-operations-capabilities-hybrid-multicloud-environments
+- learn.design-solutions-security-operations.design-centralized-logging-auditing
+- learn.design-solutions-security-operations.design-security-information-event-management-solutions
+- learn.design-solutions-security-operations.design-solutions-detection-response
+- learn.design-solutions-security-operations.design-solution-security-orchestration-automation-response
+- learn.design-solutions-security-operations.design-security-workflows
+- learn.design-solutions-security-operations.design-threat-detection-coverage
+- learn.design-solutions-security-operations.knowledge-check
+- learn.design-solutions-security-operations.summary
+badge:
+  uid: learn.design-solutions-security-operations.badge

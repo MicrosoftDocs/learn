@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.design-solutions-secure-privileged-access.design-solution-cloud-infrastructure-entitlement-management
+title: Design a solution for cloud infrastructure entitlement management (CIEM)
+metadata:
+  title: Design a solution for cloud infrastructure entitlement management (CIEM)
+  description: "This is a unit to prepare for the Microsoft cybersecurity architect certification on the topic: design a solution for cloud infrastructure entitlement management (CIEM)."
+  ms.date: 3/14/2023
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-design-solution-cloud-infrastructure-entitlement-management.md)]

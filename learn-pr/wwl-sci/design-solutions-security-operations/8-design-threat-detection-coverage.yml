@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.design-solutions-security-operations.design-threat-detection-coverage
+title: Design threat detection coverage
+metadata:
+  title: Design threat detection coverage
+  description: "SC-100 preparatory unit on the topic: design threat detection coverage."
+  ms.date: 3/15/2023
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 10
+content: |
+  [!include[](includes/8-design-threat-detection-coverage.md)]

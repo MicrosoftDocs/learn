@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.design-solutions-security-posture-management-hybrid-multicloud-environments.evaluate-security-posture-microsoft-cloud-security-benchmark
+title: Evaluate security posture by using Microsoft Cloud Security Benchmark
+metadata:
+  title: Evaluate security posture by using Microsoft Cloud Security Benchmark
+  description: "SC-100 preparatory unit on the topic: evaluate security posture by using Microsoft Cloud Security Benchmark."
+  ms.date: 3/14/2023
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-evaluate-security-posture-microsoft-cloud-security-benchmark.md)]
