@@ -132,7 +132,7 @@ gh actions-importer migrate jenkins --source-url $SOURCE_URL –target-url $TARG
 
 Any necessary manual tasks are included in the description of the pull request. Once these manual tasks and the code reviews are complete, the pull request can be merged and the workflow is successfully migrated to GitHub Actions.
 
-:::image type="content" source="../media/PR_for_Migration.jpg" alt-text="New PR once a migration is completed.":::
+:::image type="content" source="../media/PR_for_Migration.png" alt-text="New PR once a migration is completed.":::
 
 Now, let’s take a moment to review and dive a bit deeper into what isn't automatically migrated with GitHub Actions Importer.
 
