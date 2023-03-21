@@ -129,7 +129,7 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
 
 ::: zone-end
 
-4. Leave any other settings as default. Select **Review + Create** to go to the review pane, and then select **Create**. The portal shows the deployment pane, where you can view the status of your deployment.
+5. Leave any other settings as default. Select **Review + Create** to go to the review pane, and then select **Create**. The portal shows the deployment pane, where you can view the status of your deployment.
 
     > [!NOTE]
     > It can take a moment for deployment to complete.
