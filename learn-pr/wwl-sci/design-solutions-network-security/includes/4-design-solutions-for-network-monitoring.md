@@ -1,78 +1,28 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+## Plan for traffic inspection
 
-    Goal: briefly summarize the key skill this unit will teach
+Knowing what goes in and out of your network is essential to maintaining your security posture. You should capture all inbound and outbound traffic and perform near real-time analysis on that traffic to detect threats and mitigate network vulnerabilities.
 
-    Heading: none
+This section explores key considerations and recommended approaches for capturing and analyzing traffic within an Azure virtual network.
 
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
+## Design considerations
 
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+_Azure VPN Gateway -_ VPN Gateway lets you run a packet capture on a VPN gateway, a specific connection, multiple tunnels, one-way traffic, or bi-directional traffic. A maximum of five packet captures can run in parallel per gateway. They can be gateway-wide and per-connection packet captures. For more information, see [VPN packet capture](https://learn.microsoft.com/en-us/azure/vpn-gateway/packet-capture).
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+_Azure Network Watcher_ has multiple tools you should consider if you're using infrastructure-as-a-service (IaaS) solutions:
 
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
+-   _Packet capture -_ Network Watcher lets you create temporary capture packet sessions on traffic headed to and from a virtual machine. Each packet capture session has a time limit. When the session ends, packet capture creates a `pcap` file that you can download and analyze. Network Watcher packet capture can't give you continuous port mirroring with these time constraints. For more information, see [packet capture overview](https://learn.microsoft.com/en-us/azure/network-watcher/network-watcher-packet-capture-overview).
+    
+-   _Network Security Group (NSG) flow logs -_ NSG flow logs capture information about IP traffic flowing through your NSGs. Network Watcher stores NSG flow logs as JSON files in Azure Storage account. You can export the NSG flow logs to an external tool for analysis. For more information, see NSG flow logs [overview](https://learn.microsoft.com/en-us/azure/network-watcher/network-watcher-nsg-flow-logging-overview) and [data analysis options](https://learn.microsoft.com/en-us/azure/network-watcher/network-watcher-visualize-nsg-flow-logs-power-bi).
+    
+-   _Traffic Analytics -_ Traffic Analytics ingests and analyzes NSG flow logs. It creates a dashboard of insights on the NSG flow logs and generates a geo-map view of your resources for easy analysis. For more information, see [Traffic Analytics overview](https://learn.microsoft.com/en-us/azure/network-watcher/traffic-analytics).
+    
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+## Design recommendations
 
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
-
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
-
-    Goal: State concisely what's covered in this unit
-
-    Heading: none, combine this with the topic sentence into a single paragraph
-
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
-
-<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
-
-    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
-
-    Heading: none
--->
-TODO: add a visual element
-
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
-
-    Goal: Provide all the information the learner needs to perform this sub-task.
-
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
-
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=main)
--->
-
-<!-- Pattern for simple chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
-
-<!-- Pattern for complex chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+-   Enable Traffic Analytics. The tool lets you easily capture and analyze network traffic with out-of-the-box dashboard visualization and security analysis.
+    
+-   If you need more capabilities than Traffic Analytics offers, you can supplement Traffic Analytics with one of our partner solutions. You can find available partner solutions in the [Azure Marketplace](https://azuremarketplace.microsoft.com/home).
+    
+-   Use Network Watcher packet capture regularly to get a more detailed understanding of your network traffic. Run packet capture sessions at various times throughout the week to get a good understanding of the types of traffic traversing your network.
+    
+-   Don't develop a custom solution to mirror traffic for large deployments. The complexity and supportability issues tend to make custom solutions inefficient.

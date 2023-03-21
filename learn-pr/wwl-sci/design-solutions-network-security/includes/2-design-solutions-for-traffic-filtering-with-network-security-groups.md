@@ -1,78 +1,25 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+You can use an Azure network security group to filter network traffic between Azure resources in an Azure virtual network. A network security group contains security rules that allow or deny inbound network traffic to, or outbound network traffic from, several types of Azure resources. For each rule, you can specify source and destination, port, and protocol.
 
-    Goal: briefly summarize the key skill this unit will teach
+This article describes the properties of a network security group rule, the default security rules that are applied, and the rule properties that you can modify to create an augmented security rule.
 
-    Heading: none
+## Security rules
 
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
+A network security group contains zero, or as many rules as desired, within Azure subscription limits. Each rule specifies the following properties:
 
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+|Property  |Explanation  |
+|---|---|
+|Name|A unique name within the network security group. The name can be up to 80 characters long. |
+|Priority | A number between 100 and 4096. Rules are processed in priority order, with lower numbers processed before higher numbers, because lower numbers have higher priority. Once traffic matches a rule, processing stops. As a result, any rules that exist with lower priorities (higher numbers) that have the same attributes as rules with higher priorities aren't processed.|
+|Source or destination| Any, or an individual IP address, classless inter-domain routing (CIDR) block (10.0.0.0/24, for example), service tag, or application security group. If you specify an address for an Azure resource, specify the private IP address assigned to the resource. Network security groups are processed after Azure translates a public IP address to a private IP address for inbound traffic, and before Azure translates a private IP address to a public IP address for outbound traffic.  Fewer security rules are needed when you specify a range, a service tag, or application security group. The ability to specify multiple individual IP addresses and ranges (you can't specify multiple service tags or application groups) in a rule is referred to as augmented security rules. Augmented security rules can only be created in network security groups created through the Resource Manager deployment model. You can't specify multiple IP addresses and IP address ranges in network security groups created through the classic deployment model.|
+|Protocol     | TCP, UDP, ICMP, ESP, AH, or Any. The ESP and AH protocols aren't currently available via the Azure portal but can be used via ARM templates. |
+|Direction| Whether the rule applies to inbound, or outbound traffic.|
+|Port range     |You can specify an individual or range of ports. For example, you could specify 80 or 10000-10005. Specifying ranges enables you to create fewer security rules. Augmented security rules can only be created in network security groups created through the Resource Manager deployment model. You can't specify multiple ports or port ranges in the same security rule in network security groups created through the classic deployment model.   |
+|Action     | Allow or deny        |
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+Security rules are evaluated and applied based on the five-tuple (source, source port, destination, destination port, and protocol) information. You can't create two security rules with the same priority and direction. A flow record is created for existing connections. Communication is allowed or denied based on the connection state of the flow record. The flow record allows a network security group to be stateful. If you specify an outbound security rule to any address over port 80, for example, it's not necessary to specify an inbound security rule for the response to the outbound traffic. You only need to specify an inbound security rule if communication is initiated externally. The opposite is also true. If inbound traffic is allowed over a port, it's not necessary to specify an outbound security rule to respond to traffic over the port.
 
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
+Existing connections may not be interrupted when you remove a security rule that enabled the flow. Traffic flows are interrupted when connections are stopped and no traffic is flowing in either direction, for at least a few minutes. 
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+Modifying network security group rules will only affect the new connections that are formed. When a new rule is created or an existing rule is updated in a network security group, it will only apply to new flows and new connections. Existing workflow connections aren't updated with the new rules.
 
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
-
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
-
-    Goal: State concisely what's covered in this unit
-
-    Heading: none, combine this with the topic sentence into a single paragraph
-
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
-
-<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
-
-    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
-
-    Heading: none
--->
-TODO: add a visual element
-
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
-
-    Goal: Provide all the information the learner needs to perform this sub-task.
-
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
-
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=main)
--->
-
-<!-- Pattern for simple chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
-
-<!-- Pattern for complex chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+There are limits to the number of security rules you can create in a network security group.

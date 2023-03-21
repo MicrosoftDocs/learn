@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.design-solutions-network-security.design-solutions-for-network-posture-management
+uid: learn.wwl.design-solutions-network-security.design-solutions-for-network-posture-management
 title: Design solutions for network posture management
 metadata:
-  title: exercise
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  title: Design solutions for network posture management
+  description: "SC-100 preparatory module on: design solutions for network posture management."
   ms.date: 3/14/2023
   author: hrasheed-msft
   ms.author: hrasheed
