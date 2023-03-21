@@ -37,7 +37,7 @@ This section explores key recommendations to deliver highly secure internal netw
     
 -   The application team should use application security groups at the subnet-level NSGs to help protect multitier VMs within the landing zone.
     
-    ![Diagram that shows how application security group works.](../media/azure-asg.png)
+    ![Diagram that shows how application security group works.](../media/azure-application-security-group.png)
     
 -   Use NSGs and application security groups to micro-segment traffic within the landing zone and avoid using a central NVA to filter traffic flows.
     
