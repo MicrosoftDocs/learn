@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.design-solutions-securing-organization-data
+metadata:
+  title: Design solutions for securing an organization's data
+  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the module; include relevant search keywords."
+  ms.date: 3/14/2023
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+title: Design solutions for securing an organization's data
+summary: "TODO 2 sentences, 20-35 words, don't teach or motivate, avoid using 'learn', don't duplicate the title; see https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main"
+abstract: |
+  By the end of this module, you are able to:
+    - "TODO learning objective 1"
+    - "TODO learning objective 2"
+    - "TODO learning objective 3 (if needed; see https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=main)"
+prerequisites: |
+  - "TODO prerequisite 1"
+  - "TODO prerequisite 2"
+  - "TODO prerequisite 3 (if needed; see https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=main"
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- security-engineer
+- solution-architect
+products:
+- azure
+- defender-for-cloud
+- defender-for-cloud-apps
+- defender-identity
+- microsoft-sentinel
+subjects:
+  - security
+  - cloud-security
+units:
+- learn.design-solutions-securing-organization-data.introduction-to-data-security
+- learn.design-solutions-securing-organization-data.design-a-solution-for-data-discovery-and-classification-using-microsoft-purview
+- learn.design-solutions-securing-organization-data.specify-priorities-for-mitigating-data-threats
+- learn.design-solutions-securing-organization-data.design-a-solution-for-data-protection
+- learn.design-solutions-securing-organization-data.design-data-security-for-azure-workloads
+- learn.design-solutions-securing-organization-data.design-security-for-azure-storage
+- learn.design-solutions-securing-organization-data.design-security-for-defender-for-sql-and-defender-for-storage
+- learn.design-solutions-securing-organization-data.knowledge-check
+- learn.design-solutions-securing-organization-data.summary
+badge:
+  uid: learn.design-solutions-securing-organization-data.badge
