@@ -6,7 +6,7 @@ For an interactive overview of how to Manage your cloud security posture with Mi
 [:::image type="content" source="../media/manage-cloud-security-posture-microsoft-defender-cloud-landing-page-8605516a.png" alt-text="Screenshot of the interactive guide landing page for Manage your cloud security posture with Microsoft Defender for Cloud.":::
 ](https://mslearn.cloudguides.com/guides/Manage%20your%20cloud%20security%20posture%20with%20Microsoft%20Defender%20for%20Cloud)
 
-Microsoft Defender for Cloud is a **Cloud Security Posture Management (CSPM)** and **Cloud Workload Protection Platform (CWPP)** for all of your Azure, on-premises, and multicloud (Amazon AWS and Google GCP) resources. Defender for Cloud fills **three vital needs** as you manage the security of your resources and workloads in the cloud and on-premises:<br>
+Microsoft Defender for Cloud is a **Cloud Security Posture Management (CSPM)** and **Cloud Workload Protection Platform (CWPP)** for all of your Azure, on-premises, and multicloud (Amazon AWS and Google GCP) resources. Defender for Cloud fills **three vital needs** as you manage the security of your resources and workloads in the cloud and on-premises:
 
 :::image type="content" source="../media/defender-for-cloud-synopsis-e0fdf519.png" alt-text="Image describing how Defender for Cloud fills the need of three vital areas as you manage the security of your resources and workloads in the cloud and on-premises.":::
 
@@ -31,7 +31,7 @@ In Defender for Cloud, the posture management features provide the following:
 
 Defender for Cloud continually assesses your resources, subscriptions, and organization for security issues and shows your security posture in the secure score, an aggregated score of the security findings that tells you, at a glance, your current security situation: the higher the score, the lower the identified risk level.
 
-As soon as you open Defender for Cloud for the first time, Defender for Cloud:<br>
+As soon as you open Defender for Cloud for the first time, Defender for Cloud:
 
  -  **Generates a secure score** for your subscriptions based on an assessment of your connected resources compared with the guidance in the **Microsoft cloud security benchmark**. Use the score to understand your security posture and the compliance dashboard to review your compliance with the built-in benchmark. When you've enabled the enhanced security features, you can customize the standards used to assess your compliance and add other regulations, such as the **National Institute of Standards and Technology (NIST)** and **Azure Center for Internet Security (CIS)** or organization-specific security requirements. You can also apply recommendations and score based on the **AWS Foundational Security Best practices standards**.
  -  **Provides hardening recommendations** based on any **identified security misconfigurations** and **weaknesses**. Use these security recommendations to strengthen the security posture of your organization's Azure, hybrid, and multicloud resources.

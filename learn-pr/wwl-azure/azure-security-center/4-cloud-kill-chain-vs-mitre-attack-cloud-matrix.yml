@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.azure-security-center.cloud-kill-chain-vs--mitre-attack-cloud-matrix
+uid: learn.wwl.azure-security-center.cloud-kill-chain-vs-mitre-attack-cloud-matrix
 title: The clouds kill chain vs. MITRE attack cloud matrix
 metadata:
   title: The clouds kill chain vs. MITRE attack cloud matrix
@@ -9,8 +9,7 @@ metadata:
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  zone_pivot_groups: azure-interface
+  zone_pivot_groups: None
 durationInMinutes: 7
 content: |
-  [!include[](includes/4-cloud-kill-chain-vs--mitre-attack-cloud-matrix.md)]
-interactive: bash
+  [!include[](includes/4-cloud-kill-chain-vs-mitre-attack-cloud-matrix.md)]

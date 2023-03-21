@@ -1,5 +1,5 @@
 
-## The risk of open management ports on a virtual machine<br>
+## The risk of open management ports on a virtual machine
 
 Threat actors actively hunt accessible machines with open management ports, like **remote desktop protocol (RDP)** or **secure shell protocol (SSH)**. All of your virtual machines are potential targets for an attack. When a VM is successfully compromised, it's used as the entry point to attack further resources within your environment.
 
@@ -24,7 +24,7 @@ When a user requests access to a VM, Defender for Cloud checks that the user has
 The diagram shows the logic that Defender for Cloud applies when deciding how to categorize your supported VMs (i.e., Azure Virtual Machine)
 
 :::image type="content" source="../media/just-in-time-vm-enabled-on-an-azure-virtual-machine-f4788d97.png" alt-text="Diagram showing just in time VM enabled on an Azure virtual machine.":::
-<br>
+
 
 **Just-in-time VM enabled on an AWS EC2 Instance.**
 
@@ -41,4 +41,3 @@ The diagram shows the logic Defender for Cloud applies when deciding how to cate
 **Example: Affected resources**
 
 :::image type="content" source="../media/added-to-the-recommendations-unhealthy-resources--tab-f7b11b94.png" alt-text="Screeshot showing the recommendations unhealthy resources tab.":::
-<br>

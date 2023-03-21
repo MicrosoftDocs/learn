@@ -37,7 +37,7 @@ units:
 - learn.wwl.azure-security-center.introduction
 - learn.wwl.azure-security-center.cyber-kill-chain
 - learn.wwl.azure-security-center.mitre-attack
-- learn.wwl.azure-security-center.cloud-kill-chain-vs--mitre-attack-cloud-matrix
+- learn.wwl.azure-security-center.cloud-kill-chain-vs-mitre-attack-cloud-matrix
 - learn.wwl.azure-security-center.implement-azure-security-center
 - learn.wwl.azure-security-center.azure-defender
 - learn.wwl.azure-security-center.azure-arc
@@ -48,7 +48,7 @@ units:
 - learn.wwl.azure-security-center.recommendations
 - learn.wwl.azure-security-center.secure-score
 - learn.wwl.azure-security-center.brute-force-attacks
-- learn.wwl.azure-security-center.understanding-just-in-time-vm-access
+- learn.wwl.azure-security-center.understand-just-in-time-vm-access
 - learn.wwl.azure-security-center.just-time-vm-access
 - learn.wwl.azure-security-center.demonstration
 - learn.wwl.azure-security-center.knowledge-check
