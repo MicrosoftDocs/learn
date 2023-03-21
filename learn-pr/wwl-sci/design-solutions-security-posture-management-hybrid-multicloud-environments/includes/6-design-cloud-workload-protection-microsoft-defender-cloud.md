@@ -20,10 +20,6 @@ Microsoft Defender for Servers extends protection to your Windows and Linux mach
 
 ### Deployment overview
 
-The following diagram shows an overview of the Defender for Servers deployment process:
-
-![Diagram showing a summary overview of the deployment steps for Microsoft Defender for Servers.](../media/deployment-overview.png)
-
 The following table summarizes the Defender for Servers deployment process:
 
 1. Foundational CSPM:
@@ -37,18 +33,18 @@ The following table summarizes the Defender for Servers deployment process:
     - When you open Defender for Cloud in the portal, it starts protecting resources with free foundational CSPM assessments and recommendations.
     - Defender for Cloud creates a default Log Analytics workspace with the `SecurityCenterFree` solution enabled.
     - Recommendations start appearing in the portal.
-1. Enable defender for servers
+1. Enable defender for servers:
     - When you enable a paid plan, Defender for Cloud enables the security solution on its default workspace.
     - Enable Defender for Servers plan I (subscription only) or Plan 2 (subscription and workspace).
     - After enabling a plan, decide how you want to install agents and extensions on Azure VMS in the subscription/workgroup.
     - By default, auto-provisioning is enabled for some extensions.
-1. Protect AWS/GCP machines
+1. Protect AWS/GCP machines:
     - For a Defender for Servers deployment, you set up a connector, turn off plans you don't need, configure auto-provisioning settings,authenticate to AWS/GCP, and deploy the settings. 
     - Auto-provisioning includes the agents used by Defender for Cloud and the Azure Connected Machine agent for onboarding to Azure with Azure Arc. 
     - AINS uses a CloudFormation template. 
     - GCP uses a Cloud Shell template. 
     - Recommendations start appearing in the portal. 
-1. Protect on-premises servers
+1. Protect on-premises servers:
     - Onboard them as Azure Arc machines and deploy agents with auto-provisioning. 
 
 -   Learn more about [foundational cloud security posture management (CSPM)](https://learn.microsoft.com/azure/defender-for-cloud/concept-cloud-security-posture-management#defender-cspm-plan-options).
