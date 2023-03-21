@@ -25,3 +25,7 @@ Azure Data Factory will be utilized to pull the data assets that are registered 
 ### Azure Data Factory
 
 Azure Data Factory (ADF) will be utilized as a generic data integration and data movement pipeline. It will copy data from the ADLS Gen2 storage account to CluedIn. It can also optionally be used as a data transformation service when necessary.
+
+### Azure Key Vault
+
+We'll use Azure Key Vault to securely house our credentials for our Storage Account so it can be accessed by both Microsoft Purview and Azure Data Factory. There are several ways both of these services can connect to Azure Data Lake Storage Gen2, but we'll be using Azure Key Vault and the account key specifically so CluedIn can automatically create pipelines to move the data through our environment.

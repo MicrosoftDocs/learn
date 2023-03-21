@@ -1,4 +1,4 @@
-To provide an end to end data technology stack, we'll be creating many resources and integrating them together to create a flow of data. This exercise includes setting up Azure Data Factory, Microsoft Purview, CluedIn, a service principal, and an Azure Storage account. If you have these components already, you can move on to the next section. 
+To provide an end to end data technology stack, we'll be creating many resources and integrating them together to create a flow of data. This exercise includes setting up Azure Data Factory, Microsoft Purview, CluedIn, a service principal, an Azure Storage account, and Azure Key Vault. If you have these components already, you can move on to the next section. 
 
 >[!TIP]
 >Even if you already have a security principal, confirm you have the correct permissions in the [set up authentication using a service principal](#set-up-authentication-using-service-principal) section.
@@ -145,3 +145,17 @@ You can bring an account you already have or use this guide to create one:
     :::image type="content" source="../media/create-storage-account-advanced.png" alt-text="Screenshot of the Create a storage account page advanced tab.":::
 
 1. Select **Review** and after validation has passed, select **Create**.
+
+## Create an Azure Key Vault
+
+1. From the Azure portal menu, or from the Home page, select Create a resource.
+1. In the Search box, enter Key Vault.
+1. From the results list, choose Key Vault.
+1. On the Key Vault section, choose Create.
+1. On the Create key vault section provide the following information:
+    1. Name: A unique name is required. For this quickstart, we use Contoso-vault2.
+    1. Subscription: Choose a subscription.
+    1. Under Resource Group, choose Create new and enter a resource group name.
+    1. In the Location pull-down menu, choose a location.
+    1. Leave the other options to their defaults.
+1. Select Create.

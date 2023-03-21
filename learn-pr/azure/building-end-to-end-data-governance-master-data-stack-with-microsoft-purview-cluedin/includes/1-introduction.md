@@ -27,5 +27,6 @@ You'll be working with the following technology stack:
  - Microsoft Purview
  - CluedIn
  - Azure Data Factory
+ - Azure Key Vault
 
 By the end of this module, you'll be able to build a recommended data management landing zone (as described in the Azure Common Fundamentals Framework) that encapsulates data governance, master data management, data quality, and data integration.

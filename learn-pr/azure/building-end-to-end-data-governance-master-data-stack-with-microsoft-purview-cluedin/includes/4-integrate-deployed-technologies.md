@@ -74,25 +74,56 @@ Once again, if we look at Lorain, we can see that this time her email ends with 
 
 1. Navigate to the Storage Account that you created in the earlier part of the module.
 1. Navigate to your Container Storage in the left menu, and either select an existing Container, or create a new one called **cluedintrial**.
-1. Inside the cluedintrial container, create a new directory called **raw** upload the data from CluedIn.zip to the container using the **Upload** button.
+1. Inside the cluedintrial container, create a new directory called **raw** upload the downloaded files one at a time to the container using the **Upload** button.
 
     :::image type="content" source="../media/Upload_Data_To_Storage_Account.png" alt-text="Screenshot of the sample data being uploaded in ADLS Gen2":::
 
-1. Next, we'll grant Microsoft Purview access to the Storage Account by going to the Access Control (IAM) menu, and then select **+ Add** --> **Add role assignment**.
-
-    :::image type="content" source="../media/register-adls-gen2-access-control.png" alt-text="Screenshot that shows the access control for the storage account":::
-
-1. Set the **Role** to **Storage Blob Data Reader** and select **Next**.
-1. Select the **Managed identity** option and select **Select members**.
-1. Select **Microsoft Purview account**, select your account, then select **Select**.
-1. Then, select **Review and assign** to give this role assignment to your Microsoft Purview account.
-1. Navigate to **Security + networking > Networking** in your ADLS Gen2 account.
+1. Ones all your files are uploaded, navigate to **Security + networking > Networking** in your ADLS Gen2 account.
 1. Choose **Enabled from selected virtual networks** under **Public network access**.
 1. In the **Exceptions** section, select **Allow trusted Microsoft services to access this storage account** and select **Save**.
 
-    :::image type="content" source="../media/register-adls-gen2-networking.png" alt-text="Screenshot that shows the details to provide firewall access":::
+    :::image type="content" source="../media/register-adls-gen2-networking.png" alt-text="Screenshot that shows the details to provide firewall access.":::
+
+## Azure Key Vault
+
+Here we'll set permissions for Microsoft Purview and Azure Data Factory to be able to access your Azure Key Vault:
+
+1. Open your Azure Key Vault in the Azure portal, and select **Access policies** in the menu.
+1. Select **Create** to  make a new policy.
+1. Select **Get** and **List** from the **Secret permissions** list. Then select **Next**.
+
+    :::image type="content" source="../media/key-vault-access-policy-inline.png" alt-text="Screenshot that shows the get and list operations selected under the secret permissions list.":::
+
+1. Search for and select your Microsoft Purview account on the **Principal** page.
+1. Select **Next**, and then select **Next** again to get to the **Review + Create** page. Then select **Create**.
+1. Repeat these steps for your Azure Data Factory account, so that your Azure Data Factory account also has **Get** and **List** permissions on secrets in your Azure Key Vault.
+
+Now we'll create the secure credentials that Microsoft Purview and Azure Data Factory will use to access your ADLS Gen2 account:
+
+1. Open your ADLS Gen2 storage account in the Azure portal, and select **Access keys** from the menu under **Security + networking**.
+1. Select the **Show** button for one of the keys, then copy the key value.
+1. Open your Azure Key Vault, and select **Secrets** from the menu under **Objects**.
+1. Select the **Generate/Import** button to create a new secret.
+1. Give your secret a name, and save the name for later use.
+1. For **Secret value** paste the key value from your ADLS Gen2 storage account.
+1. Select **Create**.
 
 ## Microsoft Purview
+
+### Connect with Azure Key Vault
+
+1. Still in the **Management** menu, select **Credentials**.
+1. Select **Manage Key Vault connections**.
+1. Select **New**.
+1. Give your connection a friendly name, and then search for and select the key vault where you gave your Microsoft Purview account permissions earlier.
+1. Select **Create**.
+1. Close the **Manage Key Vault connections** window and select the **+ New** button in the credentials window.
+1. Give your new credential a friendly name like "adlsgen2key" and select the **Account key** authentication method from the drop down.
+1. Select the key vault connection you just created.
+1. The **Secret name** will be the name of the secret you created in Azure Key Vault to house your ADLS Gen2 account key.
+1. Select **Create**.
+
+### Register and scan data sources
 
 1. Sign in to Microsoft Purview. You can do this by choosing the Microsoft Purview Account in your resource group and then selecting the Open Microsoft Purview Governance Portal button. This will open Microsoft Purview in a new tab.
 
@@ -104,7 +135,7 @@ Once again, if we look at Lorain, we can see that this time her email ends with 
 
     :::image type="content" source="../media/register-adls-gen2-new-scan.png" alt-text="Screenshot that shows the screen to create a new scan":::
 
-1. Provide a **Name** for the scan, select the Microsoft Purview MSI under **Credential**, choose the appropriate collection for the scan (the root collection or your current subcollection), and select **Test connection**. On a successful connection, select **Continue**.
+1. Provide a **Name** for the scan, select the account key credential you created earlier under **Credential**, and choose the appropriate collection for the scan (the root collection or your current subcollection), and select **Test connection**. On a successful connection, select **Continue**.
 
     :::image type="content" source="../media/register-adls-gen2-managed-identity.png" alt-text="Screenshot that shows the managed identity option to run the scan.":::
 
@@ -122,7 +153,11 @@ Once again, if we look at Lorain, we can see that this time her email ends with 
 
     :::image type="content" source="../media/contacts-csv-purview.png" alt-text="Screenshot of the Contacts.csv asset in Microsoft Purview.":::
 
-1. Select **Management** in the Microsoft Purview menu, then select **Data Factory** under **Lineage connections**. Select **New** and create a connection to your Data Factory.
+### Connect with Azure Data Factory
+
+1. Select **Management** in the Microsoft Purview menu, then select **Data Factory** under **Lineage connections**.
+
+1. Select **New** and create a connection to your Data Factory.
 
     :::image type="content" source="../media/Purview_Azure_Data_Factory.png" alt-text="Screenshot of a data factory connection in Microsoft Purview.":::
 
