@@ -1,12 +1,12 @@
-In the previous unit, you learned how to make the bot available on Microsoft Teams. Now you'll learn how to wrap the bot into a Teams app by using App Studio.
+In the previous unit, you learned how to make the bot available on Microsoft Teams. Now, learn how to wrap the bot into a Teams app by using App Studio.
 
-## Create a basic app by using App Studio
+## Use Developer Portal to create a basic app
 
-App Studio for Teams makes it easy to start creating or integrating your own Teams apps, whether you develop custom apps for your enterprise or SaaS applications for use around the world. App Studio streamlines the creation of the manifest and package for your app and provides useful tools like the Card Editor and a React control library. For more information, see [Manage your apps with App Studio for Microsoft Teams](/microsoftteams/platform/concepts/build-and-test/teams-developer-portal).
+Developer Portal for Teams makes it easy to start creating or integrating your own Teams apps, whether you develop custom apps for your enterprise or software as a service (SaaS) applications. Developer Portal streamlines the creation of the manifest and package for your app and provides useful tools like the Adaptive Cards editor and a Scene studio. For more information, see [Developer Portal for Teams](/microsoftteams/platform/concepts/build-and-test/teams-developer-portal).
 
 1. Open Microsoft Teams.
 
-1. Select **Apps** in the lower-left corner of the window. You'll see all the published applications. Keep in mind that Microsoft Teams is an organization-specific platform.
+1. Select **Apps** in the lower-left corner of the window. All of the published applications display. Keep in mind that Microsoft Teams is an organization-specific platform.
 
 1. To create the health bot app, search for and select **Developer Portal**.
 
@@ -40,7 +40,7 @@ App Studio for Teams makes it easy to start creating or integrating your own Tea
 
 1. Under **Configure**, select **Branding**. Branding is about the appearance of the app, such as the icon.
 
-1. Select **Color icon**. Choose an image. The image dimensions should be 192 x 192 pixels. Because this bot is a health bot, we'll use the official Health Bot icon. You can also choose an accent color.
+1. Select **Color icon**. Choose an image. The image dimensions should be 192 x 192 pixels. Because this bot is a health bot, we're using the official Health Bot icon. You can also choose an accent color.
 
    :::image type="content" source="../media/3-teams-app-branding.png" alt-text="Screenshot that shows the branding values.":::
 
