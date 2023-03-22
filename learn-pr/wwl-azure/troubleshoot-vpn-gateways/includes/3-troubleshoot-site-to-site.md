@@ -23,7 +23,7 @@ The key steps to deploy a site-to-site VPN gateway are:
 
 It will help to troubleshoot your site-to-site or point-to-site connection if you follow clear guidelines at the start. For example:
 
-- Have a resource group name that clearly identifies the network you're setting up as you cannot amend it later.
+- Have a resource group name that clearly identifies the network you're setting up as you can't amend it later.
 
 - Adopt a naming convention that will easily allow you to identify the different components you create.
 
@@ -33,7 +33,7 @@ When you experience problems, check the virtual network connections are correct 
 
 - Have you selected the correct region?
 
-- Is the IP address range unique for both networks? You cannot connect if address spaces overlap.
+- Is the IP address range unique for both networks? You can't connect if address spaces overlap.
 
 - Is the subnet address range correct? This field often auto-populates, and if you change the IPv4 address range, it will not automatically alter the subnet value.
 
@@ -55,7 +55,7 @@ Each gateway is available in [different SKUs](/azure/vpn-gateway/vpn-gateway-abo
 
 ### VPN type
 
-When you set up a gateway you need to choose a VPN type.  Site-to-site supports route-based or policy-based VPNs. It's not possible to change the VPN type so check that the limitations of a policy-based gateway are not impacting your system. The key limitations are of a policy-based VPN are:
+When you set up a gateway you need to choose a VPN type.  Site-to-site supports route-based or policy-based VPNs. It's not possible to change the VPN type so check that the limitations of a policy-based gateway aren't impacting your system. The key limitations are of a policy-based VPN are:
 
 - You can only use the Basic SKU.
 
@@ -63,9 +63,9 @@ When you set up a gateway you need to choose a VPN type.  Site-to-site supports 
 
 - Only certain devices allow policy-based connections.
 
-- You cannot connect to a point-to-site VPN gateway.
+- You can't connect to a point-to-site VPN gateway.
 
-If you have set up the VPN type incorrectly, you will need to delete the virtual gateway and create a new one.
+If you have set up the VPN type incorrectly, you'll need to delete the virtual gateway and create a new one.
 
 ## Border Gateway Protocol (BGP)
 
@@ -87,7 +87,7 @@ Use the following checklist to troubleshoot BGP connections:
 
 There are two types of gateway: active/active and active/standby.
 
-If you have configured active/active, then ensure the following are met:
+If you've configured active/active, then ensure the following are met:
 
 - Two gateway IP configurations have been created with two public IP addresses.
 
@@ -121,7 +121,7 @@ Not all devices have been verified and validated for VPN gateways. If you are ha
 
 - Check whether your [device](/azure/vpn-gateway/vpn-gateway-about-vpn-devices) is configured correctly, and most importantly, is validated by Microsoft.
 
-If your device is not on the list, contact your device manufacturer to see if they can provide support and configuration instructions. It might be that your devices will still work.
+If your device isn't on the list, contact your device manufacturer to see if they can provide support and configuration instructions. It might be that your devices will still work.
 
 ## Run log analytics queries to troubleshoot gateway issues
 
@@ -147,7 +147,7 @@ When you first set up your queries, preview the information in the different tab
 
 ## Reset a VPN gateway
 
-If your on-premises devices are working correctly, but you cannot establish the IPsec tunnels with the Azure VPN gateway, you need to reset it.
+If your on-premises devices are working correctly, but you can't establish the IPsec tunnels with the Azure VPN gateway, you need to reset it.
 
 There are two resets available:
 
@@ -171,7 +171,7 @@ When you issue the command to reboot, it shouldn't take more than a minute. But 
 
 If the problem still exists after two reboots, then a service ticket should be raised with the Azure portal. The reset can be instigated via portal or by using PowerShell.
 
-A connection [reset](/azure/vpn-gateway/reset-gateway) does not reboot the gateway, it only resets the selected connection.
+A connection [reset](/azure/vpn-gateway/reset-gateway) doesn't reboot the gateway, it only resets the selected connection.
 
 ## Troubleshoot site-to-site gateway connection issues
 
@@ -189,7 +189,7 @@ If your connection has been working correctly and suddenly stops, use the follow
 
 - Check and remove any user-defined routing (UDR) or network security groups (NSGs) and test the result.
 
-- If you are getting sporadic disconnections, ensure that the VPN internet-facing IP address is not included in the Local Network definition in Azure.
+- If you are getting sporadic disconnections, ensure that the VPN internet-facing IP address isn't included in the Local Network definition in Azure.
 
 - Check that the virtual network subnet address space(s) match on the Azure virtual network and the on-premises network?
 
