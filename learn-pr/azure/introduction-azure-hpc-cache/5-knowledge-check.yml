@@ -47,14 +47,14 @@ quiz:
     - content: "Gigabyte files in a terabyte working set"
       isCorrect: true
       explanation: "Correct. Gigabyte-sized files are ideal in a working set that's terabytes in size."
-  - content: "Which of the following is the best reason why Azure HPC Cache wouldn't be a good fit for accelerating users' personal data files?"
+  - content: "Which of the following reasons best illustrates why Azure HPC Cache isn't a good fit for accelerating users' personal data files?"
     choices:
-    - content: "Personal data files aren't to be shared with others because they're private."
+    - content: "Personal data files aren't shared with others because they're private."
       isCorrect: false
       explanation: "Personal data files might or might not be private. Privacy status doesn't affect how the cache works."
-    - content: "Personal data files aren't being accessed by several clients."
+    - content: "A single client accesses personal data files."
       isCorrect: true
-      explanation: "Correct. A cache is most efficient when it's being accessed by several clients at the same time."
+      explanation: "Correct. A cache is most efficient when several clients are accessing it at the same time."
     - content: "Personal data files aren't sensitive and don't need to be encrypted."
       isCorrect: false
       explanation: "All files are encrypted in Azure HPC Cache. File sensitivity and encryption don't make the cache a good fit or bad fit."
@@ -68,4 +68,4 @@ quiz:
       explanation: "Proxy servers wouldn't affect Azure HPC Cache."
     - content: "If the company installed Azure ExpressRoute to maximize bandwidth"
       isCorrect: true
-      explanation: "Correct. ExpressRoute will maximize bandwidth between the company's clients in the cloud and it's data on-premises."
+      explanation: "Correct. ExpressRoute maximizes bandwidth between the company's clients in the cloud and it's data on-premises."

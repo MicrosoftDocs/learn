@@ -12,8 +12,7 @@ Most malicious tests of web apps check for the presence of one or more common vu
 - Cross-site scripting
 - Local and remote file inclusion
 - HTTP/HTTPS floods
-- HTTP/HTTPS request smuggling
-
+- Malicious bot attacks
 
 A common task in the web app development cycle involves writing code to close the most common security holes. Writing the security code requires time, expertise, and testing.
 
@@ -27,12 +26,12 @@ You can deploy Azure Web Application Firewall in minutes. Your web apps immediat
 
 To help you evaluate Azure Web Application Firewall, here are some of its important features:
 
-- **Managed rules**: The rules that Azure Web Application Firewall uses to detect and prevent common exploits are created, maintained, and updated by Microsoft's security team. If a rule changes, or a core rule set (refer to the following description) is modified, Microsoft updates Azure Web Application Firewall automatically and seamlessly.
+- **Managed rules**: The rules that Azure Web Application Firewall uses to detect and prevent common exploits are created, maintained, and updated by Microsoft's security team. If a rule changes, or a rule set (refer to the following description) is modified, Microsoft updates Azure Web Application Firewall automatically and seamlessly.
 
     > [!NOTE]
     > You can't modify or delete the managed rules offered by Azure Web Application Firewall. However, if a particular rule is problematic for your environment (for example, it blocks legitimate traffic to your web app) you can create exclusions or disable the rule, or rule set. You can also create custom rules to overwrite the default behavior.
 
-- **Bot rules**: The bot rules identify good bots and protects from bad bots. Bad bots are detected based on Microsoft Threat Intelligence.
+- **Bot rules**: The bot rules identify good bots and protect from bad bots. Bad bots are detected based on Microsoft Threat Intelligence.
 
 - **Custom rules**: If the managed rules offered by Azure Web Application Firewall don't cover a specific threat to your web application, you can create a custom rule.
 - **Modes**: Azure Web Application Firewall can operate in one of two modes: detection mode only logs requests that violate a rule, while prevention mode both logs and blocks requests that violate a rule.
@@ -57,5 +56,43 @@ The following table describes the most common types of malicious threats that Az
 |SQL injection|In a web form field, the attacker inserts (or "injects") text specially configured to trick the server into running SQL commands. These commands allow the attacker to access sensitive data, insert, update, or delete data, or run SQL operations.|
 
 All the exploits listed in the preceding table are only possible when the server trusts the input it receives. Writing code that checks for and sanitizes just these exploits would be difficult and time-consuming. Only a small fraction of the possible exploits a web app can face are represented in the previous table. Azure Web Application Firewall is designed to prevent these attacks and many more.
+
+## Sanitizing input
+
+The threats faced by modern web apps are varied and sophisticated. However, in most cases the reason exploits are possible is that the web app implicitly trusts the input it receives.
+
+For example, consider a web form that lets an authorized web app user sign in to the user's account. The form consists of just three elements:
+
+- A **Username** text box
+- A **Password** text box
+- A **Sign In** button
+
+When an authorized user fills in the form and selects **Sign In**, a web app script stores the username and password in variables. Suppose those variables are named `userName` and `userPassword`, respectively. The script would then execute the following statement:
+
+`sql = "SELECT * FROM users WHERE username='" + userName + "' AND password='" + userPassword + "'"`
+
+For example, if the username is `support` and the password is `1234ABCD`, then the `sql` variable has the following value:
+
+`SELECT * FROM users WHERE username='support' AND password='1234ABCD'`
+
+The web app executes this SQL statement. If a record is returned from the query, the web app signs the user in.
+
+Now suppose that an attacker enters `admin'--` in the **Username** field and leaves the **Password** field blank. In this case, here's the resulting SQL statement:
+
+`SELECT * FROM users WHERE username='admin'--' AND password=''`
+
+On many SQL systems, the double dashes (`--`) mark the start of a comment. Everything after `--` is ignored, so the previous statement is equivalent to the following code:
+
+`SELECT * FROM users WHERE username='admin'`
+
+Assuming there's a user named `admin`, this command signs in the attacker as the admin user; a serious breach!
+
+:::image type="content" source="../media/3-how-web-application-firewall-works.png" alt-text="Network diagram depicting two sign-in attempts, with Azure Web Application Firewall allowing the authorized sign-in and denying the unauthorized sign-in." border="false":::
+
+The preceding example is an instance of an exploit called *SQL injection*. Attackers can take advantage of SQL injection and other exploits in web apps that trust all input.
+
+Azure Web Application Firewall creates a barrier of nontrust between a web app and its user input. Azure Web Application Firewall assumes that all input is potentially malicious, so it *sanitizes* that input.
+
+Sanitizing the input means different things depending on the context. For example, sanitizing the input can mean removing clearly dangerous text elements, such as SQL comment indicators. However sanitization occurs, the result is input that can do no harm to the web app or its backend data.
 
 <!-- Insert concept video here -->

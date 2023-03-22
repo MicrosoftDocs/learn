@@ -8,8 +8,6 @@ There are a few points to review before we look at how to create the peering in 
 
 - To create a peering, you need two virtual networks. 
 
-- Each virtual network in the peering needs at least one virtual machine.
-
 - The second virtual network in the peering is referred to as the _remote network_.
 
 - Initially, the virtual machines in your virtual networks can't communicate with each other. After the peering is established, the machines can communicate within the peered network based on your configuration settings.

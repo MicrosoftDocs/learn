@@ -24,7 +24,7 @@ az webapp deployment source config-zip \
     --name <your-app-name>
 ```
 
-The deployment will take a couple minutes, during which time you'll get status output. A status code of 202 means successful. 
+The deployment will take a few minutes, during which time you'll get status output. A status code of 202 means the deployment was successful.
 
 ## Verify the deployment
 
@@ -71,7 +71,7 @@ When the command finishes running, open a new browser tab and go to `https://<yo
 
 ## Deploy with `az webapp up`
 
-Let's deploy our Node.js application with `az webapp up`. This command will package up our application and send it to our App Service instance, where it will be built and deployed.
+Let's deploy our Node.js application with `az webapp up`. This command packages up our application and sends it to our App Service instance, where it's built and deployed.
 
 First, we need to gather some information about our web app resource. Run the following commands to set shell variables that contain our app name, resource group name, plan name, sku, and location. Each of these uses a different `az` command to request the information from Azure; `az webapp up` needs these values to target our existing web app.
 
@@ -89,7 +89,7 @@ Now, run `az webapp up` with the appropriate values. Make sure you are in the `h
 az webapp up --name $APPNAME --resource-group $APPRG --plan $APPPLAN --sku $APPSKU --location "$APPLOCATION"
 ```
 
-The deployment will take a few minutes to propagate. You'll be able to view the progress in the status output. A 202 return means your deployment was successful.
+The deployment will take a few minutes to propagate. You'll be able to view the progress in the status output. A 202 status code means your deployment was successful.
 
 ## Verify the deployment
 
@@ -105,7 +105,7 @@ Once it loads, you'll get the greeting message from your app. You've deployed su
 
 ## Deploy with `az webapp up`
 
-Let's deploy our Python application with `az webapp up`. This command will package up our application and send it to our App Service instance, where it will be built and deployed.
+Let's deploy our Python application with `az webapp up`. This command packages up our application and sends it to our App Service instance, where it's built and deployed.
 
 First, we need to gather some information about our web app resource. Run these commands to set shell variables that contain our app's name, resource group name, plan name, sku, and location. These use different `az` commands to request the information from Azure; `az webapp up` needs these values to target our existing web app.
 

@@ -1,8 +1,10 @@
 
-**Tactics** and **techniques** representing the **MITRE ATT&CK** (**Adversarial Tactics**, **Techniques**, **& Common Knowledge**) Matrix for Enterprises covering cloud-based techniques.
+**Tactics** and **techniques** representing the **MITRE ATT&CK** (**Adversarial Tactics**, **Techniques**, **& Common Knowledge**) Cloud Matrix for Enterprises covering cloud-based techniques.
 
 :::image type="content" source="../media/mitre-attack-cde2ae7e.png" alt-text="Screenshot showing Mitre Attack Cloud Matrix.":::
 
+
+The **MITRE ATTACK Cloud Matrix** actively helps organizations to understand and respond to cloud-based cyberattacks. It offers a comprehensive list of **tactics** and **techniques** used by attackers to target cloud environments and provides guidance for detecting and responding to these attacks. By focusing on the unique security challenges of cloud computing, the Cloud Matrix provides a roadmap for improving an organization's defenses against cloud-based threats.
 
 **Initial Access**: The adversary is trying to get into your network.
 
@@ -39,7 +41,7 @@ Credential Access consists of techniques for **stealing credentials** like **acc
 
 **Discovery**: The adversary is trying to figure out your environment.
 
-Discovery consists of techniques an adversary may use to learn about the system and internal network. These techniques help adversaries observe the environment and familiarize themselves before deciding how to act. They also allow adversaries to explore what they can control and what’s around their entry point in order to discover how it could benefit their current objective. Native operating system tools are used toward this post-compromise information-gathering objective.
+Discovery consists of techniques an adversary may use to learn about the system and internal network. These techniques help adversaries observe the environment and orient themselves before deciding how to act. They also allow adversaries to explore what they can control and what’s around their entry point in order to discover how it could benefit their current objective. Native operating system tools are used toward this post-compromise information-gathering objective.
 
 **Lateral Movement**: The adversary is trying to move through your environment.
 

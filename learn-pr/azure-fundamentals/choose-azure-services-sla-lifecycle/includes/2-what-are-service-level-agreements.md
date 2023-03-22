@@ -25,30 +25,19 @@ Open the SLA for Azure Database for MySQL, a managed database that makes it easy
 
 To do so:
 
-1. Go to [Service Level Agreements](https://azure.microsoft.com/support/legal/sla/?azure-portal=true).
-1. From the **Databases** category, select **Azure Database for MySQL**.
+1.  Go to [Service Level Agreements](https://azure.microsoft.com/support/legal/sla/?azure-portal=true).
+2.  From the **Databases** category, select **Azure Database for MySQL**.
 
-:::image type="content" source="../media/2-sla-home-database-mysql.png" alt-text="A screenshot of the SLA landing page showing the Databases category and the Azure Database for MySQL service.":::
+:::image type="content" source="../media/2-sla-home-database-mysql-d0b9fd48.png" alt-text="A screenshot of the SLA landing page showing the Databases category and the Azure Database for MySQL service.":::
+
 
 ## What's in a typical SLA?
 
 A typical SLA breaks down into these sections:
 
-* **Introduction**
-
-    This section explains what to expect in the SLA, including its scope and how subscription renewals can affect the terms.
-* **General terms**
-
-    This section contains terms that are used throughout the SLA so that both parties (you and Microsoft) have a consistent vocabulary. For example, this section might define what's meant by downtime, incidents, and error codes.
-
-    This section also defines the general terms of the agreement, including how to submit a claim, receive credit for any performance or availability issues, and limitations of the agreement.
-* **SLA details**
-
-    This section defines the specific guarantees for the service. Performance commitments are commonly measured as a percentage. That percentage typically ranges from 99.9 percent ("three nines") to 99.99 percent ("four nines").
-
-    The primary performance commitment typically focuses on *uptime*, or the percentage of time that a product or service is successfully operational. Some SLAs focus on other factors as well, including *latency*, or how fast the service must respond to a request.
-
-    This section also defines any additional terms that are specific to this service.
+ -  **Introduction** This section explains what to expect in the SLA, including its scope and how subscription renewals can affect the terms.
+ -  **General terms** This section contains terms that are used throughout the SLA so that both parties (you and Microsoft) have a consistent vocabulary. For example, this section might define what's meant by downtime, incidents, and error codes. This section also defines the general terms of the agreement, including how to submit a claim, receive credit for any performance or availability issues, and limitations of the agreement.
+ -  **SLA details** This section defines the specific guarantees for the service. Performance commitments are commonly measured as a percentage. That percentage typically ranges from 99.9 percent ("three nines") to 99.99 percent ("four nines"). The primary performance commitment typically focuses on *uptime*, or the percentage of time that a product or service is successfully operational. Some SLAs focus on other factors as well, including *latency*, or how fast the service must respond to a request. This section also defines any additional terms that are specific to this service.
 
 Take a moment to review the SLA for Azure Database for MySQL.
 
@@ -62,13 +51,91 @@ The difference between 99.9 percent and 99.99 percent might seem minor, but it's
 
 Here's a table to give you a sense of how total downtime decreases as the SLA percentage increases from 99 percent to 99.999 percent:
 
-| SLA percentage | Downtime per week | Downtime per month | Downtime per year |
-| --- | --- | --- | --- |
-| 99 |1.68 hours |7.2 hours |3.65 days |
-| 99.9 |10.1 minutes |43.2 minutes |8.76 hours |
-| 99.95 |5 minutes |21.6 minutes |4.38 hours |
-| 99.99 |1.01 minutes |4.32 minutes |52.56 minutes |
-| 99.999 |6 seconds |25.9 seconds |5.26 minutes |
+:::row:::
+  :::column:::
+    **SLA percentage**
+  :::column-end:::
+  :::column:::
+    **Downtime per week**
+  :::column-end:::
+  :::column:::
+    **Downtime per month**
+  :::column-end:::
+  :::column:::
+    **Downtime per year**
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    99
+  :::column-end:::
+  :::column:::
+    1.68 hours
+  :::column-end:::
+  :::column:::
+    7.2 hours
+  :::column-end:::
+  :::column:::
+    3.65 days
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    99.9
+  :::column-end:::
+  :::column:::
+    10.1 minutes
+  :::column-end:::
+  :::column:::
+    43.2 minutes
+  :::column-end:::
+  :::column:::
+    8.76 hours
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    99.95
+  :::column-end:::
+  :::column:::
+    5 minutes
+  :::column-end:::
+  :::column:::
+    21.6 minutes
+  :::column-end:::
+  :::column:::
+    4.38 hours
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    99.99
+  :::column-end:::
+  :::column:::
+    1.01 minutes
+  :::column-end:::
+  :::column:::
+    4.32 minutes
+  :::column-end:::
+  :::column:::
+    52.56 minutes
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    99.999
+  :::column-end:::
+  :::column:::
+    6 seconds
+  :::column-end:::
+  :::column:::
+    25.9 seconds
+  :::column-end:::
+  :::column:::
+    5.26 minutes
+  :::column-end:::
+:::row-end:::
+
 
 These amounts are cumulative, which means that the duration of multiple different service outages would be combined, or added together.
 
@@ -80,11 +147,39 @@ An SLA describes how Microsoft responds when an Azure service fails to perform t
 
 Credits typically increase as uptime decreases. Here's how credits are applied for Azure Database for MySQL according to uptime:
 
-| Monthly uptime percentage | Service credit percentage |
-| --- | --- |
-| < 99.99 | 10 |
-| < 99 | 25 |
-| < 95 | 100 |
+:::row:::
+  :::column:::
+    **Monthly uptime percentage**
+  :::column-end:::
+  :::column:::
+    **Service credit percentage**
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    &lt; 99.99
+  :::column-end:::
+  :::column:::
+    10
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    &lt; 99
+  :::column-end:::
+  :::column:::
+    25
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    &lt; 95
+  :::column-end:::
+  :::column:::
+    100
+  :::column-end:::
+:::row-end:::
+
 
 ## What's the SLA for free services?
 
