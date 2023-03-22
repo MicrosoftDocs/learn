@@ -4,11 +4,14 @@ title: Use roles to control resource access
 metadata:
   title: Use roles to control resource access
   description: Use roles to control resource access
-  ms.date: 09/30/2019
-  author: curtand
-  ms.author: curtand
+  ms.date: 03/21/2023
+  author: shlipsey3
+  ms.author: sarahlipsey
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.manager: amycollanino
+  ms.service: active-directory
+  ms.subservice: fundamentals
 durationInMinutes: 10
 content: |
   [!include[](includes/5-manage-aad-roles.md)]
