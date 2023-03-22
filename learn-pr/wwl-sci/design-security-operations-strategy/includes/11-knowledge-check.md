@@ -1,3 +1,4 @@
+
 Tailwind Traders plans to make some significant changes to its Security Operations processes. They have asked for your assistance with
 recommendations and questions. Here are the specific requirements.
 
