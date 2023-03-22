@@ -4,17 +4,17 @@ Azure Databricks provides a comprehensive, cloud-based environment for machine l
 
 The portal for data scientists focuses on data ingestion, exploration, and preparation tasks.
 
-![Screenshot of the Azure Databricks portal for the Data Science and Engineering persona.](../media/data-engineering.png)
+[![Screenshot of the Azure Databricks portal for the Data Science and Engineering persona.](../media/data-engineering.png)](../media/data-engineering.png#lightbox)
 
 The portal for machine learning engineers focuses on model training, evaluation, and management tasks.
 
-![Screenshot of the Azure Databricks portal for the Machine Learning persona.](../media/machine-learning.png)
+[![Screenshot of the Azure Databricks portal for the Machine Learning persona.](../media/machine-learning.png)](../media/machine-learning.png#lightbox)
 
 ## Machine learning Databricks runtimes
 
 When you create a cluster in an Azure Databricks workspace, you can specify the Databricks runtime to install in the cluster. Azure Databricks includes some databricks runtimes that are optimized for machine learning. They include support for libraries that are commonly used in machine learning workloads, including machine learning frameworks and utilities for managing machine learning operations.
 
-if you are going to be implementing machine learning solutions, create a,cluster with one of the **ML** runtimes. You can choose a CPU-based runtime for classical machine learning scenarios, or a GPU-based runtime if you need to build complex neural networks with deep learning frameworks, which can take advantage of a GPUs ability to efficiently process matrix and vector based data.
+If you are going to be implementing machine learning solutions, create a cluster with one of the **ML** runtimes. You can choose a CPU-based runtime for classical machine learning scenarios, or a GPU-based runtime if you need to build complex neural networks with deep learning frameworks, which can take advantage of a GPUs ability to efficiently process matrix and vector based data.
 
 ## Machine learning frameworks in Azure Databricks
 
