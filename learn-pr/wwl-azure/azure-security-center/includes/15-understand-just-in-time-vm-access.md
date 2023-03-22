@@ -40,4 +40,4 @@ The diagram shows the logic Defender for Cloud applies when deciding how to cate
 
 **Example: Affected resources**
 
-:::image type="content" source="../media/added-to-the-recommendations-unhealthy-resources-tab-0b994a13.png" alt-text="Screeshot showing the recommendations unhealthy resources tab." lightbox="../media/added-to-the-recommendations-unhealthy-resources-tab-0b994a13.png":::
+:::image type="content" source="../media/added-to-the-recommendations-unhealthy-resources-tab-0b994a13.png" alt-text="Screeshot showing the recommendations unhealthy resources tab.":::

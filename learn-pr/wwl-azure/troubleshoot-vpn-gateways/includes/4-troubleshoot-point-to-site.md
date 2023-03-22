@@ -1,3 +1,4 @@
+
 ## What are point-to-site VPN gateways?
 
 If you've individuals working remotely, then a point-to-site connection is a secure way of allowing them to connect to Azure resources using Windows, Linux or macOS.
