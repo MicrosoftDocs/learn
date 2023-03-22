@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.wwl.mlflow-azure-databricks
+metadata:
+  title: Use MLflow in Azure Databricks
+  description: "Learn how to use MLflow in Azure Databricks to track machine learning experiments and deploy models."
+  ms.date: 03/22/2023
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.service: azure-databricks
+title: Use MLflow in Azure Databricks
+summary: MLflow is an open source platform for managing the machine learning lifecycle that is natively supported in Azure Databricks.
+abstract: |
+  In this module, you'll learn how to:
+  - Use MLflow to log parameters, metrics, and other details from experiment runs.
+  - Use MLflow to manage and deploy trained models.
+prerequisites: |
+  Before starting this module, you should be familiar with Azure Databricks and the machine learning model training process.
+iconUrl: /training/achievements/mlflow-azure-databricks.svg
+levels:
+- intermediate
+roles:
+- data-scientist
+products:
+- azure-databricks
+subjects:
+- data-ai
+- data-science
+- machine-learning
+units:
+- learn.wwl.mlflow-azure-databricks.introduction
+- learn.wwl.mlflow-azure-databricks.capabilities-of-mlflow
+- learn.wwl.mlflow-azure-databricks.run-experiments
+- learn.wwl.mlflow-azure-databricks.register-serve-models
+- learn.wwl.mlflow-azure-databricks.exercise-use-mlflow
+- learn.wwl.mlflow-azure-databricks.knowledge-check
+- learn.wwl.mlflow-azure-databricks.summary
+badge:
+  uid: learn.wwl.mlflow-azure-databricks.badge
