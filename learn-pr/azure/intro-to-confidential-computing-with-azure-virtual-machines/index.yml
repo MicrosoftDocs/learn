@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.azure.intro-to-confidential-computing-with-azure-virtual-machines
+metadata:
+  ms.author: robmcm
+  author: rmcmurray
+  ms.date: 03/22/2023
+  title: Intro to confidential computing with Azure Virtual Machines
+  description: Learn to use Microsoft Azure confidential computing for virtual machines.
+  ms.topic: interactive-tutorial
+title: Intro to confidential computing with Azure Virtual Machines
+summary: This module helps you understand Microsoft Azure confidential computing concepts for virtual machines, including confidential virtual machines and application enclaves, and which approach to use.
+abstract: |
+  By the end of this module, you'll be able to describe the following topics:
+  - Microsoft Azure confidential computing portfolio
+  - Approaches to enable confidential computing with virtual machines
+  - Major reasons to choose the best approach for your needs
+prerequisites: |
+  For the best learning experience from this module, you should already have the following knowledge and experience:
+  - Basic understanding of Azure confidential virtual machines
+  - Basic understanding of infrastructure security concepts, especially around Intel and AMD approaches to confidential computing
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- administrator
+- developer
+- ip-admin
+- security-engineer
+- solution-architect
+products:
+- azure
+- virtual-machines
+units:
+- learn.azure.intro-to-confidential-computing-with-azure-virtual-machines.introduction
+- learn.azure.intro-to-confidential-computing-with-azure-virtual-machines.what-is-azure-confidential-computing
+- learn.azure.intro-to-confidential-computing-with-azure-virtual-machines.how-confidential-computing-with-azure-vms-works
+- learn.azure.intro-to-confidential-computing-with-azure-virtual-machines.when-to-use-application-enclaves
+- learn.azure.intro-to-confidential-computing-with-azure-virtual-machines.summary
+badge:
+  uid: learn.azure.intro-to-confidential-computing-with-azure-virtual-machines-badge
