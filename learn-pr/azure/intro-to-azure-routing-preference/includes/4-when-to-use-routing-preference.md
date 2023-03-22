@@ -1,6 +1,6 @@
 When considering the use of routing preference in Azure, you should first analyze your scenario. As the network engineer in charge of the traffic cost savings project, you've learned what routing preference is and how it works. You suspect that modifying the routing preference for the public IP address of the application may reduce the cost of data transfer between the car factory in Singapore and the application.
 
-Here, well discuss how you can decide whether changing the routing preference of the application is Azure fulfills the goal of the traffic cost savings project. We list some criteria that indicate whether routing preference meets your cost savings goal.
+Here, well discuss how you can decide whether changing the routing preference of the application in Azure fulfills the goal of the traffic cost savings project. We list some criteria that indicate whether routing preference meets your cost savings goal.
 
 * Cost savings
 
