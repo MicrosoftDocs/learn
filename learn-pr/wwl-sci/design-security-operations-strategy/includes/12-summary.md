@@ -1,5 +1,6 @@
 
 
+
 In this module, you've learned how to build an overall security
 operations strategy with zero trust in mind. You have learned different
 strategies for designing, defining, and recommending an organizational

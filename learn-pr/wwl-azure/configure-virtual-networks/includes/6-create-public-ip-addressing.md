@@ -1,3 +1,4 @@
+
 You can create a public IP address for your resource in the Azure portal.
 
 :::image type="content" source="../media/create-public-ip-address-f07bd67c.png" alt-text="Screenshot that shows how to create a public IP address in the Azure portal.":::
