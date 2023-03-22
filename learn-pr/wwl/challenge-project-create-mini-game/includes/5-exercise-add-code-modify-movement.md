@@ -35,22 +35,22 @@ To validate that your code satisfies the specified requirements, complete the fo
     > [!NOTE]
     > You can exit the verification test before completing all of the verification steps if see a result that does not satisfy the specification requirements. To force an exit from the running program, in the Terminal panel, press **Ctrl-C**. After exiting the running app, complete the edits that you believe will address the issue you are working on, save your updates to the Program.cs file, and then re-build and run your code.
 
-1. At the Terminal command prompt, press directional keys to move the player
+1. At the Terminal command prompt, press directional keys to move the player.
 
-1. Move the player across the displayed food string
+1. Move the player across the displayed food string.
 
-1. Verify that a new food string is displayed
+1. Verify that a new food string is displayed.
 
-1. Verify that the player appearance changes depending on which food string was consumed
+1. Verify that the player appearance changes depending on which food string was consumed.
 
-1. Verify that movement is temporarily stopped when the player appearance is `(X_X)`
+1. Verify that movement is temporarily stopped when the player appearance is `(X_X)`.
 
-1. Verify that left and right movement is faster in the correct directions when the player appearance is `(^-^)`
+1. Verify that left and right movement is faster in the correct directions when the player appearance is `(^-^)`.
 
 1. Press a nondirectional key to terminate the program.
 
 1. Disable the optional movement speed parameter and rerun the app.
 
-1. Verify that movement is normal when the player appearance is `(^-^)`
+1. Verify that movement is normal when the player appearance is `(^-^)`.
 
 Congratulations if you succeeded in this challenge!
