@@ -1,6 +1,6 @@
 Determining which types of samples to collect from the Moon requires expertise, but we can start to make some assumptions to learn how to clean and manipulate data.
 
-First, we can determine how much remains of each sample that was returned from the Apollo missions, given the amount that was originally collected and the percentage of remaining pristine sample.
+First, we can determine how much remains of each sample that was returned from the Apollo missions by multiplying the weight of the sample that was originally collected by the percentage of remaining pristine sample.
 
 ```python
 rock_samples['Remaining (kg)'] = rock_samples['Weight (kg)'] * (rock_samples['Pristine (%)'] * .01)
@@ -8,9 +8,9 @@ rock_samples.head()
 ```
 
 > [!NOTE]
-> You need to multiply the **Pristine (%)** column by 0.01, because it was being represented as a whole number.
+> You need to multiply the **Pristine (%)** column by 0.01 because it was being represented as a whole number.
 
-Looking at the `head()` or `info()` of the `rock_samples` DataFrame isn't useful at this point. With over 2,000 samples, it's difficult to get an understanding of what the values are. For that, you can use the `describe()` function:
+Looking at the `head()` or `info()` of the `rock_samples` DataFrame isn't useful for examining more than 2,000 samples. To get a better understanding of what the dataset contains, you can use the `describe()` function:
 
 ```python
 rock_samples.describe()
@@ -27,7 +27,7 @@ rock_samples.describe()
 | 75% | 72142.000000 | 0.093490 | 98.140000 | 0.078240 |
 | max | 79537.000000 | 11.729000 | 180.000000 | 11.169527 |
 
-This helps us see that, on average, each sample weighs about .16 kg and has about 84% of the original amount remaining. We can use this knowledge to extract only the samples that are likely running low, which means that they have been used a lot by researchers.
+This information helps us see that, on average, each sample weighs about .16 kg and has about 84% of the original amount remaining. We can use this knowledge to determine which samples are likely running low, which means that they have been used a lot by researchers.
 
 ```python
 low_samples = rock_samples.loc[(rock_samples['Weight (kg)'] >= .16) & (rock_samples['Pristine (%)'] <= 50)]
@@ -76,7 +76,7 @@ rock_samples.Type.unique()
 array(['Soil', 'Basalt', 'Core', 'Breccia', 'Special', 'Crustal'], dtype=object)
 ```
 
-We can see that, although six unique types were collected across all samples, the samples that are running low are from only four unique types. But this doesn't tell us everything about the samples we might want to focus on. For example, in our `low_samples` DataFrame, how many of each type are considered low?
+We can see that, although six unique types were collected across all samples, the samples that are running low are from only four unique types. But this data doesn't tell us everything about the samples we might want to focus on. For example, in our `low_samples` DataFrame, how many of each type are considered low?
 
 ```python
 low_samples.groupby('Type')['Weight (kg)'].count()
