@@ -46,7 +46,7 @@ Beyond public endpoint, two other secure networking options for Azure Arc-enable
 
 If your machine is communicating through a proxy server to connect to the internet, you can specify the proxy server IP address or the name and port number that the machine will use to communicate with the proxy server. You can make this specification directly in the Azure portal when generating a script for onboarding multiple machines to Arc.
 
-For high-security scenarios, Azure Private Link allows you to securely link Azure PaaS services to your virtual network using private endpoints. For many services, you just set up an endpoint per resource. This means you can connect your on-premises or multi-cloud servers with Azure Arc and send all traffic over an Azure ExpressRoute or site-to-site VPN connection instead of using public networks. By utilizing Private Link with Arc-enabled servers, you can:
+For high-security scenarios, Azure Private Link allows you to securely link Azure PaaS services to your virtual network using private endpoints. For many services, you just set up an endpoint per resource. This means you can connect your on-premises or multicloud servers with Azure Arc and send all traffic over an Azure ExpressRoute or site-to-site VPN connection instead of using public networks. By utilizing Private Link with Arc-enabled servers, you can:
 
 - Connect privately to Azure Arc without opening up any public network access.
 - Ensure data from the Azure Arc-enabled machine or server is only accessed through authorized private networks.
