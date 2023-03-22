@@ -4,13 +4,11 @@ title: Associate private IP addresses
 metadata:
   title: Associate private IP addresses
   description: "Associate private IP addresses"
-  ms.date: 03/21/2023
+  ms.date: 03/22/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 1
 content: |
   [!include[](includes/8-associate-private-ip-addresses.md)]
