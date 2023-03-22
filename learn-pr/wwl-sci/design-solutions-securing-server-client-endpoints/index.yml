@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.design-solutions-securing-server-client-endpoints
+uid: learn.wwl.design-solutions-securing-server-client-endpoints
 metadata:
   title: Design solutions for securing server and client endpoints
   description: "You learn how to analyze the security requirements for different types of endpoints including servers, clients, IoT, OT, mobile, and embedded devices. These requirements will take into account different platforms and operating systems and set standards for endpoint protection, hardening and configuration."
@@ -37,14 +37,14 @@ subjects:
   - security
   - cloud-security
 units:
-- learn.design-solutions-securing-server-client-endpoints.introduction-endpoint-security
-- learn.design-solutions-securing-server-client-endpoints.specify-server-security-requirements
-- learn.design-solutions-securing-server-client-endpoints.specify-requirements-mobile-devices-clients
-- learn.design-solutions-securing-server-client-endpoints.specify-embedded-device-security-requirements
-- learn.design-solutions-securing-server-client-endpoints.design-solution-securing-operational-technology-industrial-control-systems
-- learn.design-solutions-securing-server-client-endpoints.specify-security-baselines-server-client-endpoints
-- learn.design-solutions-securing-server-client-endpoints.design-solution-secure-remote-access
-- learn.design-solutions-securing-server-client-endpoints.knowledge-check
-- learn.design-solutions-securing-server-client-endpoints.summary
+- learn.wwl.design-solutions-securing-server-client-endpoints.introduction-endpoint-security
+- learn.wwl.design-solutions-securing-server-client-endpoints.specify-server-security-requirements
+- learn.wwl.design-solutions-securing-server-client-endpoints.specify-requirements-mobile-devices-clients
+- learn.wwl.design-solutions-securing-server-client-endpoints.specify-embedded-device-security-requirements
+- learn.wwl.design-solutions-securing-server-client-endpoints.design-solution-securing-operational-technology-industrial-control-systems
+- learn.wwl.design-solutions-securing-server-client-endpoints.specify-security-baselines-server-client-endpoints
+- learn.wwl.design-solutions-securing-server-client-endpoints.design-solution-secure-remote-access
+- learn.wwl.design-solutions-securing-server-client-endpoints.knowledge-check
+- learn.wwl.design-solutions-securing-server-client-endpoints.summary
 badge:
-  uid: learn.design-solutions-securing-server-client-endpoints.badge
+  uid: learn.wwl.design-solutions-securing-server-client-endpoints.badge
