@@ -1,3 +1,4 @@
+
 A security incident is a confirmed breach of security leading to the accidental or unlawful destruction, loss, alteration, unauthorized disclosure of, or access to customer data or personal data. For example, unauthorized access to infrastructure and exfiltration of customer data would constitute a security incident, while compliance events that don't affect the confidentiality, integrity, or availability of services or customer data aren't considered security incidents. 
 
 ## Responding to security incidents 
