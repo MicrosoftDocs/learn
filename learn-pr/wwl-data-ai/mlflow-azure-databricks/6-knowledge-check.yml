@@ -16,32 +16,32 @@ quiz:
     choices:
     - content: "mlflow.log_metric"
       isCorrect: true
-      explanation: "That's correct. Log performance metrics using the mlflow.log_metric method."
+      explanation: "Correct. Log performance metrics using the mlflow.log_metric method."
     - content: "mlflow.log_param"
       isCorrect: false
-      explanation: "That's incorrect. Use the mlflow.log_param method to log parameters."
+      explanation: "Incorrect. Use the mlflow.log_param method to log parameters."
     - content: "mlflow.spark.log_model"
       isCorrect: false
-      explanation: "That's incorrect.Use the mlflow.spark.log_model method to log a trained model."
+      explanation: "Incorrect.Use the mlflow.spark.log_model method to log a trained model."
   - content: "You've logged a model in an experiment run, and you plan to deploy it in a real-time inferencing service. What should you do?"
     choices:
     - content: "Reproduce the experiment"
       isCorrect: false
-      explanation: "That's incorrect. Reproducing an experiment doesn't prepare a model for deployment."
+      explanation: "Incorrect. Reproducing an experiment doesn't prepare a model for deployment."
     - content: "Register the model"
       isCorrect: true
-      explanation: "That's correct. Register a model before deploying it for inferencing."
+      explanation: "Correct. Register a model before deploying it for inferencing."
     - content: "Save the model as an ONXX file in the DFFS file system."
       isCorrect: false
-      explanation: "That's incorrect. Saving the model in DBFS dis not a necessary step for deployment."
+      explanation: "Incorrect. Saving the model in DBFS dis not a necessary step for deployment."
   - content: "You want to be able to use your model to continually predict labels from feature data as it is stored in a delta table. What kind of inferencing should you set up?"
     choices:
     - content: "Real-time endpoint"
       isCorrect: false
-      explanation: "That's incorrect. A real-time endpoint enables applications to perform inferencing on-demand through a REST interface."
+      explanation: "Incorrect. A real-time endpoint enables applications to perform inferencing on-demand through a REST interface."
     - content: "Streaming"
       isCorrect: true
-      explanation: "That's correct. A streaming inferencing solution processes data in a delta table and streams the results to another table."
+      explanation: "Correct. A streaming inferencing solution processes data in a delta table and streams the results to another table."
     - content: "Batch"
       isCorrect: false
-      explanation: "That's incorrect. Batch inferencing processes data as a batch, not as it arrives."
+      explanation: "Incorrect. Batch inferencing processes data as a batch, not as it arrives."
