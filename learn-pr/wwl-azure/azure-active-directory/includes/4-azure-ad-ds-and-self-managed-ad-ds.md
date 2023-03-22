@@ -23,180 +23,20 @@ Common deployment models for a self-managed AD DS environment that provides iden
 
 The following table outlines some of the features you may need for your organization and the differences between a managed Azure AD DS domain or a self-managed AD DS domain:
 
-:::row:::
-  :::column:::
-    **Feature**
-  :::column-end:::
-  :::column:::
-    **Azure Active Directory Services (Azure AD DS)**
-  :::column-end:::
-  :::column:::
-    **Self-managed AD DS**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Managed service
-  :::column-end:::
-  :::column:::
-    ✓
-  :::column-end:::
-  :::column:::
-    ✕
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Secure deployments
-  :::column-end:::
-  :::column:::
-    ✓
-  :::column-end:::
-  :::column:::
-    The administrator secures the deployment
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Domain Name System (DNS) server
-  :::column-end:::
-  :::column:::
-    ✓ (managed service)
-  :::column-end:::
-  :::column:::
-    ✓
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Domain or Enterprise administrator privileges
-
-  :::column-end:::
-  :::column:::
-    ✕
-  :::column-end:::
-  :::column:::
-    ✓
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Domain join
-  :::column-end:::
-  :::column:::
-    ✓
-  :::column-end:::
-  :::column:::
-    ✓
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Domain authentication using New Technology LAN Manager (NTLM) and Kerberos
-  :::column-end:::
-  :::column:::
-    ✓
-  :::column-end:::
-  :::column:::
-    ✓
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Kerberos constrained delegation
-  :::column-end:::
-  :::column:::
-    Resource-based
-  :::column-end:::
-  :::column:::
-    Resource-based & account-based
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Custom organizational unit (OU) structure
-  :::column-end:::
-  :::column:::
-    ✓
-  :::column-end:::
-  :::column:::
-    ✓
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Group Policy
-  :::column-end:::
-  :::column:::
-    ✓
-  :::column-end:::
-  :::column:::
-    ✓
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Schema extensions
-  :::column-end:::
-  :::column:::
-    ✕
-  :::column-end:::
-  :::column:::
-    ✓
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Active Directory domain/forest trusts
-  :::column-end:::
-  :::column:::
-    ✓ (one-way outbound forest trusts only)
-  :::column-end:::
-  :::column:::
-    ✓
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Secure Lightweight Directory Access Protocols (LDAPs)
-  :::column-end:::
-  :::column:::
-    ✓
-  :::column-end:::
-  :::column:::
-    ✓
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Lightweight Directory Access Protocol (LDAP) read
-  :::column-end:::
-  :::column:::
-    ✓
-  :::column-end:::
-  :::column:::
-    ✓
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Lightweight Directory Access Protocol (LDAP) write
-  :::column-end:::
-  :::column:::
-    ✓ (within the managed domain)
-  :::column-end:::
-  :::column:::
-    ✓
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Geographical-distributed (Geo-distributed) deployments
-  :::column-end:::
-  :::column:::
-    ✓
-  :::column-end:::
-  :::column:::
-    ✓
-  :::column-end:::
-:::row-end:::
+| **Feature**                                                                | **Azure Active Directory Services (Azure AD DS)** | **Self-managed AD DS**                     |
+| -------------------------------------------------------------------------- | ------------------------------------------------- | ------------------------------------------ |
+| Managed service                                                            | ✓                                                 | ✕                                          |
+| Secure deployments                                                         | ✓                                                 | The administrator secures the deployment   |
+| Domain Name System (DNS) server                                            | ✓ (managed service)                               | ✓                                          |
+| Domain or Enterprise administrator privileges<br>                          | ✕                                                 | ✓                                          |
+| Domain join                                                                | ✓                                                 | ✓                                          |
+| Domain authentication using New Technology LAN Manager (NTLM) and Kerberos | ✓                                                 | ✓                                          |
+| Kerberos constrained delegation                                            | Resource-based                                    | Resource-based & account-based |
+| Custom organizational unit (OU) structure                                  | ✓                                                 | ✓                                          |
+| Group Policy                                                               | ✓                                                 | ✓                                          |
+| Schema extensions                                                          | ✕                                                 | ✓                                          |
+| Active Directory domain/forest trusts                                      | ✓ (one-way outbound forest trusts only)           | ✓                                          |
+| Secure Lightweight Directory Access Protocols (LDAPs)                      | ✓                                                 | ✓                                          |
+| Lightweight Directory Access Protocol (LDAP) read                          | ✓                                                 | ✓                                          |
+| Lightweight Directory Access Protocol (LDAP) write                         | ✓ (within the managed domain)                     | ✓                                          |
+| Geographical-distributed (Geo-distributed) deployments                     | ✓                                                 | ✓                                          |

@@ -1,29 +1,9 @@
 
 Features like **multifactor authentication (MFA)** are a great way to secure your organization. Still, users often get frustrated with the additional security layer on top of having to remember their passwords. Passwordless authentication methods are more convenient because the password is removed and replaced with something you have, plus something you are or something you know.
 
-:::row:::
-  :::column:::
-    **Authentication**
-  :::column-end:::
-  :::column:::
-    **Something you have**
-  :::column-end:::
-  :::column:::
-    **Something you are or know**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Passwordless
-  :::column-end:::
-  :::column:::
-    Windows 10 Device, phone, or security key
-  :::column-end:::
-  :::column:::
-    Biometric or PIN
-  :::column-end:::
-:::row-end:::
-
+| **Authentication** | **Something you have**                    | **Something you are or know** |
+| ------------------ | ----------------------------------------- | ----------------------------- |
+| Passwordless       | Windows 10 Device, phone, or security key | Biometric or PIN              |
 
 Each organization has different needs when it comes to authentication. Microsoft global Azure and Azure Government offer the following **three** passwordless authentication options that integrate with Azure Active Directory (Azure AD):
 

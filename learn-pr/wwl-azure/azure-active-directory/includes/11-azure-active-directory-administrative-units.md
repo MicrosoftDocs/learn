@@ -9,59 +9,11 @@ An administrative unit is an Azure AD resource that can be a container for other
 
 ## Available roles
 
-:::row:::
-  :::column:::
-    **Role**
-  :::column-end:::
-  :::column:::
-    **Description**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Authentication Administrator
-  :::column-end:::
-  :::column:::
-    Has access to view, set, and reset authentication method information for any non-admin user in the assigned administrative unit only.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Groups Administrator
-  :::column-end:::
-  :::column:::
-    Can manage all aspects of groups and groups settings, such as naming and expiration policies, in the assigned administrative unit only.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Helpdesk Administrator
-  :::column-end:::
-  :::column:::
-    Can reset passwords for non-administrators and Helpdesk administrators in the assigned administrative unit only.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    License Administrator
-  :::column-end:::
-  :::column:::
-    Can assign, remove, and update license assignments within the administrative unit only.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Password Administrator
-  :::column-end:::
-  :::column:::
-    Can reset passwords for non-administrators and Password Administrators within the assigned administrative unit only.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    User Administrator
-  :::column-end:::
-  :::column:::
-    Can manage all aspects of users and groups, including resetting passwords for limited admins within the assigned administrative unit only.
-  :::column-end:::
-:::row-end:::
+| **Role**                     | **Description**                                                                                                                            |
+| ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| Authentication Administrator | Has access to view, set, and reset authentication method information for any non-admin user in the assigned administrative unit only.      |
+| Groups Administrator         | Can manage all aspects of groups and groups settings, such as naming and expiration policies, in the assigned administrative unit only.    |
+| Helpdesk Administrator       | Can reset passwords for non-administrators and Helpdesk administrators in the assigned administrative unit only.                           |
+| License Administrator        | Can assign, remove, and update license assignments within the administrative unit only.                                                    |
+| Password Administrator       | Can reset passwords for non-administrators and Password Administrators within the assigned administrative unit only.                       |
+| User Administrator           | Can manage all aspects of users and groups, including resetting passwords for limited admins within the assigned administrative unit only. |

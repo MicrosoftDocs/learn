@@ -27,131 +27,20 @@ To enhance your Azure AD implementation, you can also add paid capabilities by u
 
 After you choose your Azure AD license, you'll get access to some or all of the following features:
 
-:::row:::
-  :::column:::
-    **Category**
-  :::column-end:::
-  :::column:::
-    **Description**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Application management
-  :::column-end:::
-  :::column:::
-    Manage your cloud and on-premises apps using Application Proxy, single sign-on, the My Apps portal, and Software as a Service (SaaS) apps.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Authentication
-  :::column-end:::
-  :::column:::
-    Manage Azure Active Directory self-service password reset, Multi-Factor Authentication, custom banned password list, and smart lockout.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Azure Active Directory for developers
-  :::column-end:::
-  :::column:::
-    Build apps that sign in all Microsoft identities, and get tokens to call Microsoft Graph, other Microsoft APIs, or custom APIs.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Business-to-Business (B2B)
-  :::column-end:::
-  :::column:::
-    Manages your guest users and external partners while maintaining control over your own corporate data.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Business-to-Customer (B2C)
-  :::column-end:::
-  :::column:::
-    Manages your guest users and external partners while maintaining control over your own corporate data.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Conditional Access
-  :::column-end:::
-  :::column:::
-    Manage access to your cloud apps.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Device Management
-  :::column-end:::
-  :::column:::
-    Manage how your cloud or on-premises devices access your corporate data.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Domain services
-  :::column-end:::
-  :::column:::
-    Join Azure virtual machines to a domain without using domain controllers.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Enterprise users
-  :::column-end:::
-  :::column:::
-    Manage license assignments, access to apps, and set up delegates using groups and administrator roles.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Hybrid identity
-  :::column-end:::
-  :::column:::
-    Use Azure Active Directory Connect and Connect Health to provide a single user identity for authentication and authorization to all resources, regardless of location (cloud or on-premises).
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Identity governance
-  :::column-end:::
-  :::column:::
-    Manage your organization's identity through employee, business partner, vendor, service, and app access controls. You can also perform access reviews.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Identity protection
-  :::column-end:::
-  :::column:::
-    Detect potential vulnerabilities affecting your organization's identities, configure policies to respond to suspicious actions, and then take appropriate action to resolve them.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Managed identities for Azure resources
-  :::column-end:::
-  :::column:::
-    Provide your Azure services with an automatically managed identity in Azure AD that can authenticate any Azure AD-supported authentication service, including Key Vault.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Privileged identity management (PIM)
-  :::column-end:::
-  :::column:::
-    Manages, controls, and monitors access within your organization. This feature includes access to resources in Azure AD and Azure, and other Microsoft Online Services, like Microsoft 365 or Intune.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Reports and monitoring
-  :::column-end:::
-  :::column:::
-    Gain insights into the security and usage patterns in your environment.
-  :::column-end:::
-:::row-end:::
+|              **Category**              | **Description**                                                                                                                                                                                      |
+|:--------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|         Application management         | Manage your cloud and on-premises apps using Application Proxy, single sign-on, the My Apps portal, and Software as a Service (SaaS) apps.                                                           |
+|             Authentication             | Manage Azure Active Directory self-service password reset, Multi-Factor Authentication, custom banned password list, and smart lockout.                                                              |
+| Azure Active Directory for developers  | Build apps that sign in all Microsoft identities, and get tokens to call Microsoft Graph, other Microsoft APIs, or custom APIs.                                                                      |
+|       Business-to-Business (B2B)       | Manages your guest users and external partners while maintaining control over your own corporate data.                                                                                               |
+|       Business-to-Customer (B2C)       | Manages your guest users and external partners while maintaining control over your own corporate data.                                                                                               |
+|           Conditional Access           | Manage access to your cloud apps.                                                                                                                                                                    |
+|           Device Management            | Manage how your cloud or on-premises devices access your corporate data.                                                                                                                             |
+|            Domain services             | Join Azure virtual machines to a domain without using domain controllers.                                                                                                                            |
+|            Enterprise users            | Manage license assignments, access to apps, and set up delegates using groups and administrator roles.                                                                                               |
+|            Hybrid identity             | Use Azure Active Directory Connect and Connect Health to provide a single user identity for authentication and authorization to all resources, regardless of location (cloud or on-premises).        |
+|          Identity governance           | Manage your organization's identity through employee, business partner, vendor, service, and app access controls. You can also perform access reviews.                                               |
+|          Identity protection           | Detect potential vulnerabilities affecting your organization's identities, configure policies to respond to suspicious actions, and then take appropriate action to resolve them.                    |
+| Managed identities for Azure resources | Provide your Azure services with an automatically managed identity in Azure AD that can authenticate any Azure AD-supported authentication service, including Key Vault.                             |
+|  Privileged identity management (PIM)  | Manages, controls, and monitors access within your organization. This feature includes access to resources in Azure AD and Azure, and other Microsoft Online Services, like Microsoft 365 or Intune. |
+|         Reports and monitoring         | Gain insights into the security and usage patterns in your environment.                                                                                                                              |

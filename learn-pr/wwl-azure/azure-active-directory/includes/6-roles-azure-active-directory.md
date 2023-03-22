@@ -12,46 +12,8 @@ Azure AD built-in roles differ in where they can be used, which fall into the fo
 
 The following table is offered as an aid to understanding these role categories. The categories are named arbitrarily and aren't intended to imply any other capabilities beyond the documented Azure AD role permissions.
 
-:::row:::
-  :::column:::
-    
-
-### Category
-
-
-  :::column-end:::
-  :::column:::
-    
-
-### Role
-
-
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Azure AD-specific roles
-  :::column-end:::
-  :::column:::
-    Application AdministratorApplication DeveloperAuthentication AdministratorBusiness to consumer (B2C) Identity Experience Framework (IEF) Keyset AdministratorBusiness to consumer (B2C) Identity Experience Framework (IEF) Policy AdministratorCloud Application AdministratorCloud Device AdministratorConditional Access AdministratorDevice AdministratorsDirectory ReadersDirectory Synchronization AccountsDirectory WritersExternal ID User Flow AdministratorExternal ID User Flow Attribute AdministratorExternal Identity Provider AdministratorGroups AdministratorGuest InviterHelpdesk AdministratorHybrid Identity AdministratorLicense AdministratorPartner Tier1 SupportPartner Tier2 SupportPassword AdministratorPrivileged Authentication AdministratorPrivileged Role AdministratorReports ReaderUser Administrator
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Cross-service roles
-  :::column-end:::
-  :::column:::
-    Global AdministratorCompliance AdministratorCompliance Data AdministratorGlobal ReaderSecurity AdministratorSecurity OperatorSecurity ReaderService Support Administrator
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Service-specific roles
-  :::column-end:::
-  :::column:::
-    Azure DevOps AdministratorAzure Information Protection AdministratorBilling AdministratorCustomer relationship management (CRM) Service AdministratorCustomer Lockbox Access ApproverDesktop Analytics AdministratorExchange Service AdministratorInsights AdministratorInsights Business LeaderIntune Service AdministratorKaizala AdministratorLync Service AdministratorMessage Center Privacy ReaderMessage Center ReaderModern Commerce UserNetwork AdministratorOffice Apps AdministratorPower BI Service AdministratorPower Platform AdministratorPrinter AdministratorPrinter TechnicianSearch AdministratorSearch EditorSharePoint Service AdministratorTeams Communications AdministratorTeams Communications Support EngineerTeams Communications Support SpecialistTeams Devices AdministratorTeams Administrator
-  :::column-end:::
-:::row-end:::
-
-
-## 
+| Category                | Role                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Azure AD-specific roles | Application Administrator<br>Application Developer<br>Authentication Administrator<br>Business to consumer (B2C) Identity Experience Framework (IEF) Keyset Administrator<br>Business to consumer (B2C) Identity Experience Framework (IEF) Policy Administrator<br>Cloud Application Administrator<br>Cloud Device Administrator<br>Conditional Access Administrator<br>Device Administrators<br>Directory Readers<br>Directory Synchronization Accounts<br>Directory Writers<br>External ID User Flow Administrator<br>External ID User Flow Attribute Administrator<br>External Identity Provider Administrator<br>Groups Administrator<br>Guest Inviter<br>Helpdesk Administrator<br>Hybrid Identity Administrator<br>License Administrator<br>Partner Tier1 Support<br>Partner Tier2 Support<br>Password Administrator<br>Privileged Authentication Administrator<br>Privileged Role Administrator<br>Reports Reader<br>User Administrator<br> |
+| Cross-service roles     | Global Administrator<br>Compliance Administrator<br>Compliance Data Administrator<br>Global Reader<br>Security Administrator<br>Security Operator<br>Security Reader<br>Service Support Administrator<br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Service-specific roles  | Azure DevOps Administrator<br>Azure Information Protection Administrator<br>Billing Administrator<br>Customer relationship management (CRM) Service Administrator<br>Customer Lockbox Access Approver<br>Desktop Analytics Administrator<br>Exchange Service Administrator<br>Insights Administrator<br>Insights Business Leader<br>Intune Service Administrator<br>Kaizala Administrator<br>Lync Service Administrator<br>Message Center Privacy Reader<br>Message Center Reader<br>Modern Commerce User<br>Network Administrator<br>Office Apps Administrator<br>Power BI Service Administrator<br>Power Platform Administrator<br>Printer Administrator<br>Printer Technician<br>Search Administrator<br>Search Editor<br>SharePoint Service Administrator<br>Teams Communications Administrator<br>Teams Communications Support Engineer<br>Teams Communications Support Specialist<br>Teams Devices Administrator<br>Teams Administrator<br>   |
