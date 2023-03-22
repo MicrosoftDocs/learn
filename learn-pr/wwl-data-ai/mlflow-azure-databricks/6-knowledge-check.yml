@@ -27,7 +27,7 @@ quiz:
     choices:
     - content: "Reproduce the experiment"
       isCorrect: false
-      explanation: "That's incorrect. Reproducing an experiment does not prepare a model for deployment."
+      explanation: "That's incorrect. Reproducing an experiment doesn't prepare a model for deployment."
     - content: "Register the model"
       isCorrect: true
       explanation: "That's correct. Register a model before deploying it for inferencing."
