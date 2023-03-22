@@ -1,3 +1,4 @@
+
 The cloud has dramatically changed the role of the operations team. They
 are no longer responsible for managing the hardware and infrastructure
 that hosts the application. Operations are still a critical part of

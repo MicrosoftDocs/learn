@@ -1,3 +1,4 @@
+
 The responsibility of the security operations team (also known as the Security Operations Center (SOC), or SecOps) is to rapidly detect, prioritize, and triage potential attacks. These operations help eliminate false positives and focus on real attacks, reducing the mean time to remediate real incidents. 
 
 Watch the video below for an overview about Security Operations in the Cloud Adoption Framework:
