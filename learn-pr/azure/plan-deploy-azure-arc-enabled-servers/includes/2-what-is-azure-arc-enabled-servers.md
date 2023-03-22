@@ -18,7 +18,7 @@ By establishing a connection between Azure and a local resource, the Azure Conne
 
 ## Capabilities of Azure Arc-enabled servers
 
-Azure Arc-enabled servers can leverage a breadth of capabilities, so you can bring Azure services to your machines anywhere: across on-premises, multi-cloud, and edge environments. These capabilities serve diverse use cases across security, observability, and governance needs.
+Azure Arc-enabled servers can leverage a breadth of capabilities, so you can bring Azure services to your machines anywhere: across on-premises, multicloud, and edge environments. These capabilities serve diverse use cases across security, observability, and governance needs.
 
 | Service | Description |
 |---|---|
