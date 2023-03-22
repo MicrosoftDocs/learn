@@ -5,8 +5,8 @@ metadata:
   title: Case studies for optimization
   description: Discover how Azure Quantum can be used to provide solutions to modern-day optimization problems.
   ms.date: 01/01/2021
-  author: KittyYeungQ
-  ms.author: kitty
+  author: aviviano
+  ms.author: amvivian
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   show_latex: true

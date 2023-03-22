@@ -5,8 +5,8 @@ metadata:
   title: Apply QIO to a real-world problem
   description: Learn how you can apply quantum-inspired optimization to a common weight-distribution problem.
   ms.date: 05/19/2020
-  author: KittyYeungQ
-  ms.author: kitty
+  author: bradben
+  ms.author: brbenefield
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   show_latex: true
