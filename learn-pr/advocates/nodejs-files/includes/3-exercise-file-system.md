@@ -172,7 +172,7 @@ You need to find all the files in only the topmost location: the *stores* folder
            // Make sure the discovered file is a sales.json file
            if (item.name === "sales.json") {
              // store the file path in the salesFiles array
-             salesFiles.push(`${folderName}/${item.name}`);
+             await salesFiles.push(`${folderName}/${item.name}`);
            }
          }
        }
@@ -243,7 +243,7 @@ async function findSalesFiles(folderName) {
         // Make sure the discovered file is a sales.json file
         if (item.name === "sales.json") {
           // store the file path in the salesFiles array
-          salesFiles.push(`${folderName}/${item.name}`);
+          await salesFiles.push(`${folderName}/${item.name}`);
         }
       }
     }
