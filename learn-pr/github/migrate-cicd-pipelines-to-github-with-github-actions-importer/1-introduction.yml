@@ -2,7 +2,7 @@
 uid: learn.migrate-cicd-pipelines-to-github-with-github-actions-importer.introduction
 title: Introduction
 metadata:
-  title: introduction
+  title: Introduction
   description: "Learn about GitHub Actions Importer and how it can help facilitate migrations from your current CI/CD tool to GitHub Actions."
   ms.date: 3/21/2023
   author: a-a-ron
