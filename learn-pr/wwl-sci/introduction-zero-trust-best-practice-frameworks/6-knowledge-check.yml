@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.introduction-zero-trust-best-practice-frameworks.knowledge-check
-title: Knowledge check
+title: Knowledge check - Introduction to Zero Trust and best practice frameworks
 metadata:
-  title: Knowledge check
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  title: Knowledge check - Introduction to Zero Trust and best practice frameworks
+  description: "Knowledge check for module on the topic: Introduction to Zero Trust and best practice frameworks."
   ms.date: 3/14/2023
   author: hrasheed-msft
   ms.author: hrasheed
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
-durationInMinutes: 1
+durationInMinutes: 3
 ###########################################################################
 ###
 ### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
