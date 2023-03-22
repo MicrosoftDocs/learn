@@ -1,0 +1,99 @@
+### YamlMime:ModuleUnit
+uid: learn.design-solutions-secure-applications.knowledge-check
+title: Knowledge check - Design solutions for securing applications
+metadata:
+  title: Knowledge check - Design solutions for securing applications
+  description: "Knowledge check for module on: design solutions for securing applications."
+  ms.date: 3/14/2023
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 1
+###########################################################################
+###
+### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
+###  - Questions are complete sentences ending with a question mark
+###  - No true/false questions
+###  - 3 answers per question
+###  - All answers about the same length
+###  - Numeric answers listed in sorted order
+###  - No "All of the above" and/or "None of the above" as answer choices
+###  - No "Not" or "Except" in questions
+###  - No second person ("you") in the questions or answers
+###  - Provide a meaningful explanation for both correct and incorrect answers
+###
+###########################################################################
+content: |
+quiz:
+  questions:
+  - content: "Which of the following is a key element of DevSecOps?"
+    choices:
+    - content: "Continuous Integration"
+      isCorrect: true
+      explanation: "Continuous Integration is a key element in automating software development processes."
+    - content: "Manual testing"
+      isCorrect: false
+      explanation: "Manual testing isn't an element in full-scale DevOps implementation."
+    - content: "Periodic deployment"
+      isCorrect: false
+      explanation: "Periodic deployment doesn't promote the DevOps culture of continuous delivery and service improvement."
+    - content: "Monthly review meetings"
+      isCorrect: false
+      explanation: "Review meetings aren't an active element of DevOps, more so a management decision."
+  - content: "What aspect of security does DevSecOps focus on?"
+    choices:
+    - content: "Network Security"
+      isCorrect: false
+      explanation: "While network security is important, DevSecOps focuses on securing the entire application development lifecycle."
+    - content: "Secure coding practices"
+      isCorrect: true
+      explanation: "DevSecOps involves setting up secure coding practices required to compile applications with optimal security."
+    - content: "Separation of duties"
+      isCorrect: false
+      explanation: "Separation of duties, while a valid security concept, isn't what DevSecOps focuses on directly."
+    - content: "Physical security"
+      isCorrect: false
+      explanation: "Physical security is important but not as significant in DevSecOps implementation."
+  - content: "What is a service principal in Azure AD?"
+    choices:
+    - content: "A managed identity for a specific Azure resource"
+      isCorrect: true
+      explanation: "Service principals act as an interface to allow access using OAuth 2.0 protocols between Azure AD and independent software applications."
+    - content: "An authentication mechanism that authenticates the client application identity"
+      isCorrect: false
+      explanation: "This describes the process of OAuth2.0 that allows resources to accept external access, not just a service principal."
+    - content: "A user identity for a specific Azure resource"
+      isCorrect: false
+      explanation: "User identities are tied to individual users, Service Client Identities authenticate applications."
+    - content: "Azure platform tokens revocation mechanism"
+      isCorrect: false
+      explanation: "Azure platform tokens are time-bound authorization keys issued by Azure AD to resources. They've little to do with Service Principal authentication."
+  - content: "What happens when a particular service account or machine accesses a resource using its Shared Access Signature token?"
+    choices:
+    - content: "The access shows up under the computer's credentials in Azure AD's analytics logs."
+      isCorrect: false
+      explanation: "Shared Access Signatures don't pertain to Azure AD, they're Azure object storage mechanism."
+    - content: "The resource will only be accessible if the token has the appropriate permission scope."
+      isCorrect: true
+      explanation: "Shared Access Signatures work at the level of the specific bound resource, meaning the permissions granted to the corresponding SAS token apply to this target only."
+    - content: "It bypasses all permissions set on the resource."
+      isCorrect: false
+      explanation: "Authentication and Authorization are always calculated and checked against the set access control policies and user/role-based authorization mechanisms."
+    - content: "It triggers event-based alert notifications"
+      isCorrect: false
+      explanation: "Shared Access Signatures are a method still not greatly prevalent in Azure Functionality, and thus don't trigger alerts."
+  - content: "What type of threats is the Azure web application firewall designed to protect against?"
+    choices:
+    - content: "Server level attacks such as shared hosting violations"
+      isCorrect: false
+      explanation: "Azure Web Application Firewall is deployed in front of a web server farm and protects against layer 7 -application-level- distributed denial-of-service (DDoS) attacks."
+    - content: "Phishing attacks and credential stealing attempts"
+      isCorrect: false
+      explanation: "As useful as this would be, the WAF is positioned for application-level security only."
+    - content: "SQL injection, Cross-site scripting attacks, and HTTP protocol violations"
+      isCorrect: true
+      explanation: "These are some of the most common web applications' vulnerability exploits, all of which can be programmed into a well-managed web application firewall policy."
+    - content: "Malware propagation and attack repulsion"
+      isCorrect: false
+      explanation: "WAF is position around application-level DDoS attack protection, this does NOT include general-purpose malware repulsion"
