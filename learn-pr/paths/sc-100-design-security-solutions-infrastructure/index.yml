@@ -27,7 +27,7 @@ products:
 - defender-identity
 - microsoft-sentinel
 modules:
-- learn.wwl.specify-requirements-securing-saas-paas-iaas-services
+- learn.wwl.specify-requirements-secure-saas-paas-iaas-services
 - learn.wwl.design-solutions-security-posture-management-hybrid-multicloud-environments
 - learn.wwl.design-solutions-securing-server-client-endpoints
 ###- learn.wwl.design-solutions-network-security

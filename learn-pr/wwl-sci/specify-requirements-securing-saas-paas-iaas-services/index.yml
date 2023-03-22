@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.specify-requirements-securing-saas-paas-iaas-services
+uid: learn.wwl.specify-requirements-secure-saas-paas-iaas-services
 metadata:
   title: Specify requirements for securing SaaS, PaaS, and IaaS services
   description: "You learn how to analyze security requirements for different cloud offerings (SaaS, PaaS, and IaaS), IoT workloads, web workloads and containers."
@@ -35,11 +35,11 @@ subjects:
   - security
   - cloud-security
 units:
-- learn.specify-requirements-securing-saas-paas-iaas-services.introduction-to-security-for-saas-paas-and-iaas
-- learn.specify-requirements-securing-saas-paas-iaas-services.specify-security-baselines-for-saas-paas-and-iaas-services
-- learn.specify-requirements-securing-saas-paas-iaas-services.specify-security-requirements-for-web-workloads
-- learn.specify-requirements-securing-saas-paas-iaas-services.specify-security-requirements-for-containers-and-container-orchestration
-- learn.specify-requirements-securing-saas-paas-iaas-services.knowledge-check
-- learn.specify-requirements-securing-saas-paas-iaas-services.summary
+- learn.wwl.specify-requirements-secure-saas-paas-iaas-services.introduction-to-security-for-saas-paas-and-iaas
+- learn.wwl.specify-requirements-secure-saas-paas-iaas-services.specify-security-baselines-for-saas-paas-and-iaas-services
+- learn.wwl.specify-requirements-secure-saas-paas-iaas-services.specify-security-requirements-for-web-workloads
+- learn.wwl.specify-requirements-secure-saas-paas-iaas-services.specify-security-requirements-for-containers-and-container-orchestration
+- learn.wwl.specify-requirements-secure-saas-paas-iaas-services.knowledge-check
+- learn.wwl.specify-requirements-secure-saas-paas-iaas-services.summary
 badge:
-  uid: learn.specify-requirements-securing-saas-paas-iaas-services.badge
+  uid: learn.wwl.specify-requirements-secure-saas-paas-iaas-services.badge
