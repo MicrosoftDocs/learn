@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.dotnet-connectfour.3-exercise-blazor
-title: Execise - Blazor
+title: Exercise - Blazor
 metadata:
   title: Exercise - Blazor
-  description: Describe Exercise
+  description: In this exercise, we create a Blazor application and add some elements to it that we can build upon in future exercises.
   author: softchris
   ms.author: chnoring
   ms.date: 03/15/2023

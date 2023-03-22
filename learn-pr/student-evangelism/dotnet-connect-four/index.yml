@@ -27,7 +27,8 @@ units:
   - learn.dotnet-connectfour.3-exercise-blazor
   - learn.dotnet-connectfour.4-game-logic
   - learn.dotnet-connectfour.5-exercise-game-logic
-  - learn.dotnet-connectfour.6-knowledge-check
-  - learn.dotnet-connectfour.7-summary
+  - learn.dotnet-connectfour.6-exercise-parameters
+  - learn.dotnet-connectfour.7-knowledge-check
+  - learn.dotnet-connectfour.8-summary
 badge:
   uid: learn.dotnet-connectfour.badge

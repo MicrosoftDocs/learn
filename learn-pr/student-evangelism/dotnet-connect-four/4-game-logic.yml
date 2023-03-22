@@ -3,12 +3,12 @@ uid: learn.dotnet-connectfour.4-game-logic
 title: Game logic
 metadata:
   title: Game logic
-  description: Describe Exercise
+  description: In this unit, we cover some basic game concepts and how those can be implemented in C# and Blazor.
   author: softchris
   ms.author: chnoring
   ms.date: 03/15/2023
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1
+durationInMinutes: 2
 content: |
   [!include[](includes/4-game-logic.md)]

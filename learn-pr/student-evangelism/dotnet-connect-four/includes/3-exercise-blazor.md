@@ -1,22 +1,22 @@
-In this exercise, we will create a Blazor project and we will start building an app that will become a connect four game throughout the course of the module.
+In this exercise, we create a Blazor project and we start building an app that becomes a "connect four" game throughout the course of the module.
 
 ## Create a new Blazor project
 
 First, let's scaffold a new project for our game. With .NET 6 installed, we can start building our application at the command-line.
 
-1. Create a new blazor application in Visual Studio 2022 by choosing the "File - New... - Project" menu.
+1. Create a new Blazor application in Visual Studio 2022 by choosing the "File - New... - Project" menu.
 
-1. Choose a "Blazor WebAssembly App" from the list of templates and name it "ConnectFour". Click **next**.
+1. Choose a "Blazor WebAssembly App" from the list of templates and name it "ConnectFour". Select **next**.
 
 1. Choose the .NET 6 framework, Authentication type should be set to "None" and uncheck the "ASP.NET Core hosted" checkbox.
 
-   This should create a ConnectFour directory containing our application.
+   This action should create a ConnectFour directory containing our application.
 
 1. Run the app by pressing F5 in Visual Studio 2022. 
 
-    This builds the app and hosts it on a random port between 5000 and 5300. HTTPS has a port selected for it in the range of 7000 to 7300.
+    The app now runs on a random port between 5000 and 5300. HTTPS has a port selected for it in the range of 7000 to 7300.
 
-   Your Output Window should report content similar to the following:
+   Your Output Window should report content similar to the following text:
 
     ```output
     Building...
@@ -46,9 +46,9 @@ First, let's scaffold a new project for our game. With .NET 6 installed, we can 
 Next, let's create a board component to be used by players in our game. The component is defined using Razor syntax, which is a mix of HTML and C#.
 
 1. Right-click on the Shared folder in the Solution Explorer of Visual Studio. Choose **Add - Razor Component** from the context menu and name the file *Board.razor*.
-1. Place this file in the *Shared* folder, this will allow the component to be referenced and used throughout the application. 
+1. Place this file in the *Shared* folder, this placement allows the component to be referenced and used throughout the application. 
 
-    We will use this component to hold everything needed for the game-board layout and managing interactions with it.
+    We use this component to hold everything needed for the game-board layout and managing interactions with it.
 
     The initial contents of this new component are a simple H3 tag and a code block indicating where C# code should be written:
 
@@ -60,7 +60,7 @@ Next, let's create a board component to be used by players in our game. The comp
     }
     ```
 
-1. Prepare our Index page by opening the *Pages/Index.razor* file. Clear out everything after the 3rd line with the **PageTitle** tags.
+1. Prepare our Index page by opening the *Pages/Index.razor* file. Clear out everything after the third line with the **PageTitle** tags.
 
    ```csharp
    @page "/"
@@ -83,15 +83,15 @@ Next, let's create a board component to be used by players in our game. The comp
 
    ![App with board title](https://github.com/dotnet/intro-to-dotnet-web-dev/raw/main/5-blazor/img/2-Board-Step1.png)
 
-   Congratulations! You've just built your first component and used it on a Blazor page.
+   Congratulations! You've built your first component and used it on a Blazor page.
 
 ## Adding layout and style to our board
 
-Let's start defining a game board with the 7 columns and 6 rows. We'll then add a little style to bring our board to life.
+Let's start defining a game board with the seven columns and six rows. We add a little style to bring our board to life.
 
-1. In the *Board.razor* file let's remove the HTML at the top and add the following content to define a board with 42 places to move.
+1. In the Board.razor file, let's remove the HTML at the top and add the following content to define a board with 42 places to move.
 
-   We can mix in some C# code in the form of a for loop to generate the 42 board positions. The span tag will be picked up and repeated with its contents 42 times to represent our board.
+   We can mix in some C# code in the form of a for loop to generate the 42 board positions. The span tag is picked up and repeated with its contents 42 times to represent our board.
 
    ```csharp
    <div>
@@ -144,7 +144,7 @@ Let's add some style to this component by defining some colors for the frame of 
     > [!TIP]
     > For convenience, you can also find this content in the [TODO Board.razor.css](0-start/Shared/Board.razor.css) file in this repository.
 
-    Here is some of the CSS used to format the board and 'punch holes' for each of the spaces. There is much more content than this in the CSS file, and we'll use that for the game pieces and their animations on screen.
+    Here's some of the CSS used to format the board and 'punch holes' for each of the spaces. There's more content available than displayed below, in the CSS file, and we use that for the game pieces and their animations on screen.
 
     ```css
     div.board {
@@ -191,4 +191,4 @@ Let's add some style to this component by defining some colors for the frame of 
 
    ![Alt text](https://github.com/dotnet/intro-to-dotnet-web-dev/raw/main/5-blazor/img/2-Board-Step2.png)
 
-   Congratulations, you now have the start of game. In later units we will add game logic to it.
+   Congratulations, you now have the start of game. In later units, we add game logic to it.
