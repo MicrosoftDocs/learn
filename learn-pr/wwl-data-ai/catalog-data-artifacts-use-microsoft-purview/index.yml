@@ -2,7 +2,7 @@
 uid: learn.wwl.catalog-data-artifacts-use-microsoft-purview
 metadata:
   title: Catalog data artifacts by using Microsoft Purview
-  description: "<div|<span style=\"color:rgb(34, 34, 34);font-family:&quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, Verdana;font-size:12px;display:inline !important;\"|Register, scan, catalog, and view data assets and their relevant details in Microsoft Purview.</span|  </div|"
+  description: "Register, scan, catalog, and view data assets and their relevant details in Microsoft Purview."
   ms.date: 03/22/2023
   author: wwlpublish
   ms.author: shlindsay
