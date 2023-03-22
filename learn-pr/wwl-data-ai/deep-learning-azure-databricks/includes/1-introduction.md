@@ -9,4 +9,5 @@ Azure Databricks is a great choice of platform for training deep learning models
 
 This module provides an introduction to some of the core principles of deep learning, with a focus on how to use PyTorch in Azure Databricks.
 
-> **Tip**: For a more general introduction to deep learning, we recommend you complete the [Train and evaluate deep learning models](/training/modules/train-evaluate-deep-learn-models/)module; which includes some of the same information as this module, but covers additional concepts and implementation topics in more depth.
+> [!Tip]
+> For a more general introduction to deep learning, we recommend you complete the [Train and evaluate deep learning models](/training/modules/train-evaluate-deep-learn-models/) module; which includes some of the same information as this module, but covers additional concepts and implementation topics in more depth.
