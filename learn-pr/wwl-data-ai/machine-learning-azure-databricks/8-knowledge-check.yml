@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.machine-learning-azure-databricks.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/22/2023
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.service: azure-databricks
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "Which kind of machine learning algorithm would you use to train a model that predicts the amount of rainfall in inches on a given day?"
+    choices:
+    - content: "Classification"
+      isCorrect: false
+      explanation: "That's incorrect. A classification model predicts a category or *class*."
+    - content: "Regression"
+      isCorrect: true
+      explanation: "That's correct. A regression model predicts a numeric value."
+    - content: "Clustering"
+      isCorrect: false
+      explanation: "That's incorrect. A clustering model groups similar cases into clusters."
+  - content: "Which Spark class should you use to explore and cleanse training data for a machine learning project?"
+    choices:
+    - content: "Dataframe"
+      isCorrect: true
+      explanation: "That's correct. A dataframe is a great class to use for working with data."
+    - content: "RDD"
+      isCorrect: false
+      explanation: "That's incorrect. While you can use an RDD to work with data, it can be complex to program against."
+    - content: "Model"
+      isCorrect: false
+      explanation: "That's incorrect. A model is a predictive function that is trained by a machine learning algorithm."
+  - content: "Which of the following metrics would you use to evaluate a classification model?"
+    choices:
+    - content: "Mean Squared Error"
+      isCorrect: false
+      explanation: "That's incorrect. Mean Squared Error is used to evaluate a regression model."
+    - content: "Silhouette"
+      isCorrect: false
+      explanation: "That's incorrect. Silhouette is used to evaluate a clustering model."
+    - content: "Recall"
+      isCorrect: true
+      explanation: "That's correct. Recall is a metric that is used to evaluate a clustering model."
