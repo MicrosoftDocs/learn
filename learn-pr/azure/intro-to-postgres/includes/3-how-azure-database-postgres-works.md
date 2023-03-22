@@ -14,7 +14,7 @@ And (optionally):
 * Whether you want a new database server, or to restore an existing one
 * Whether you require an older version of PostgreSQL
 
-The settings shown in the following screenshots are all you need to create and deploy your PostgreSQL database with a flexible server.
+The following screenshots show the configuration settings in the Azure portal for creating and deploying a PostgreSQL database with a flexible server.
 
 ![Screenshot of the Azure portal showing the Azure Database for PostgreSQL deployment options, with the create button for Flexible server server highlighted.](../media/3a-portal.png)
 
