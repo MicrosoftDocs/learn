@@ -3,7 +3,8 @@ To begin building with Azure OpenAI, you need to choose a base model and deploy 
 Azure OpenAI's models are grouped by family and capability. 
 
 |Family|Models within Family|Description|
-|GPT|--|--|
+|GPT-4|--|--|
+|GPT-3|--|--|
 |Codex|--|--|
 |Embeddings|--|--|
 
