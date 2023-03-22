@@ -1,3 +1,4 @@
+
 When you use site-to-site VPN gateways there are many steps and numerous areas where problems can occur. This section gives a brief overview of the setup, reviews the areas that can cause problems and shows how to troubleshoot connection issues.
 
 ## What are site-to-site VPN gateways?
