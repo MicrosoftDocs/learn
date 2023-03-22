@@ -63,9 +63,10 @@ Cybersecurity architects help integrate security best practices and make them ac
 Adopting best practices will reduce common mistakes and improve overall security effectiveness and efficiency.
 
 ## Which framework should I choose?
-
+<!--
 - Note: Add elements about an organization, roles, audiences and what kind of documents, libraries, frameworks and initiatives align with those target groups.
 - Out of RaMP, ZT deployment guidance, MCRA, MCSB, CAF and WAF what should I use when?
+-->
 
 | Framework | When to use |
 |---|---|
