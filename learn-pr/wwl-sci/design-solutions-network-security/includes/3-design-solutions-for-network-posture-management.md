@@ -2,8 +2,6 @@ Microsoft Defender for DNS provides an additional layer of protection for resour
 
 From within Azure DNS, Defender for DNS monitors the queries from these resources and detects suspicious activities without the need for any additional agents on your resources.
 
-[](https://learn.microsoft.com/azure/defender-for-cloud/defender-for-dns-introduction#availability)
-
 ## What are the benefits of Microsoft Defender for DNS?
 
 Microsoft Defender for DNS detects suspicious and anomalous activities such as:
