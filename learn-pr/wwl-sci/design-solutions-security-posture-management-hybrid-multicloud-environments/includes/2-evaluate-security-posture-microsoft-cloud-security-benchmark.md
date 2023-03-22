@@ -52,8 +52,8 @@ For workload applications running within your EC2 instances, AWS Lambda or conta
 
 You can also centrally monitor and manage the operating system configuration drift through Azure Automation State Configuration for and onboard them to Azure security governance using the following methods:
 
--   Onboard your AWS account into Microsoft Defender for Cloud
--   Use Azure Arc-enabled VMs for your EC2 instance without using onboard your AWS account into Microsoft Defender for Cloud
+- Onboard your AWS account into Microsoft Defender for Cloud
+- Use Azure Arc-enabled VMs for your EC2 instance without using onboard your AWS account into Microsoft Defender for Cloud
 
 For workload applications running within your EC2 instances, AWS Lambda or containers environment, you may use AWS System Manager AppConfig to audit and enforce the desired configuration baseline.
 

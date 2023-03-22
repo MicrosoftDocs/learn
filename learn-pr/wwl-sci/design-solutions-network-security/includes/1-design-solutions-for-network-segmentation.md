@@ -1,9 +1,9 @@
 In this module, you learn how to:
 
--  Design solutions for network segmentation
--   Design solutions for filtering traffic with network security groups
--   Design solutions for network posture measurement
--   Design solutions for network monitoring
+- Design solutions for network segmentation
+- Design solutions for filtering traffic with network security groups
+- Design solutions for network posture measurement
+- Design solutions for network monitoring
 
 The content in the module helps you prepare for the certification exam SC-100: Microsoft Cybersecurity Architect.
 

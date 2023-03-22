@@ -22,8 +22,8 @@ The following section presents some Azure best practices for data security.
 
 To help protect data in the cloud, you need to account for the possible states in which your data can occur, and what controls are available for that state. Best practices for Azure data security and encryption relate to the following data states:
 
--   At rest: This includes all information storage objects, containers, and types that exist statically on physical media, whether magnetic or optical disk.
--   In transit: When data is being transferred between components, locations, or programs, it's in transit. Examples are transfer over the network, across a service bus (from on-premises to cloud and vice-versa, including hybrid connections such as ExpressRoute), or during an input/output process.
+- At rest: This includes all information storage objects, containers, and types that exist statically on physical media, whether magnetic or optical disk.
+- In transit: When data is being transferred between components, locations, or programs, it's in transit. Examples are transfer over the network, across a service bus (from on-premises to cloud and vice-versa, including hybrid connections such as ExpressRoute), or during an input/output process.
 
 ### Choose a key management solution
 

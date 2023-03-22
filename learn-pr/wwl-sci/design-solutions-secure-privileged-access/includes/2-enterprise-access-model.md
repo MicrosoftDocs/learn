@@ -8,8 +8,8 @@ The primary stores of business value that an organization must protect are in th
 
 The applications and data typically store a large percentage of an organization's:
 
--   **Business processes** in applications and workloads
--   **Intellectual property** in data and applications
+- **Business processes** in applications and workloads
+- **Intellectual property** in data and applications
 
 The enterprise IT organization manages and supports the workloads and the infrastructure they are hosted on, whether it's on-premises, on Azure, or a third-party cloud provider, creating a **management plane**. Providing consistent access control to these systems across the enterprise requires a **control plane** based on centralized enterprise identity system(s), often supplemented by network access control for older systems like operational technology (OT) devices.
 
