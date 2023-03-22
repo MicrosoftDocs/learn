@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: shlindsay
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Catalog data artifacts by using Microsoft Purview
 summary: Register, scan, catalog, and view data assets and their relevant details in Microsoft Purview.
 abstract: |
