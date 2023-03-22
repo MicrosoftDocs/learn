@@ -1,4 +1,5 @@
 
+
 ### Centralized Identity
 
 Centralized Identity Management or Central Identity System is a single identity tool where credentials are stored and managed, to provide authentication and authorization capabilities. This system can be on-premises or cloud based.  The system is centrally managed by an identity authority or administrator. The central identity system can then be used to offer verified access to tools, data, and other resources.

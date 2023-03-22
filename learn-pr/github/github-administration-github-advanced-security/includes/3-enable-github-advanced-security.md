@@ -1,4 +1,4 @@
-You saw in the previous unit how GitHub Advanced Security fits into your software development lifecycle and which features are included for different GitHub plans. It's now time to take the first step towards implementing GitHub Advanced Security in your organization.
+You learned in the previous unit how GitHub Advanced Security fits into your software-development lifecycle and which features are included for different GitHub plans. It's now time to take the first step towards implementing GitHub Advanced Security in your organization.
 
 In this unit, you'll learn how to enable GitHub Advanced Security at the organization level according to your enterprise plan.
 
@@ -6,7 +6,7 @@ In this unit, you'll learn how to enable GitHub Advanced Security at the organiz
 
 Enabling GitHub Advanced Security at the organization level automatically turns on GitHub Advanced Security for all private and internal repositories in your organization.
 
-> [!Note]
+> [!NOTE]
 > If you enable GitHub Advanced Security in your organization, committers to the organization repositories will use seats on your GitHub Advanced Security license.
 
 Follow the steps below to enable GitHub Advanced Security for all the repositories in your organization:
@@ -17,24 +17,24 @@ Follow the steps below to enable GitHub Advanced Security for all the repositori
 
 :::image type="content" source="../media/enable-org.png" alt-text="Screenshot of the screen for reviewing the impact of enabling Advanced Security on all repositories.":::
 
-If you would like to automatically enable GitHub Advanced Security on new private and internal repositories added to your organization, select the **Automatically enable for new private and internal repositories** checkbox under **GitHub Advanced Security**, review the impact of enabling Advanced Security on all new private and internal repositories, and click **Enable for new repositories**.
+If you'd like to automatically enable GitHub Advanced Security on new private and internal repositories added to your organization, select the **Automatically enable for new private and internal repositories** checkbox under **GitHub Advanced Security**, review the impact of enabling Advanced Security on all new private and internal repositories, and click **Enable for new repositories**.
 
 :::image type="content" source="../media/enable-org-2.png" alt-text="Screenshot of the screen for reviewing the impact of enabling Advanced Security on all new private and internal repositories.":::
 
 ## Enable GitHub Advanced security for Enterprise Server
 
-Before you can enable GitHub Advanced Security for all the repositories in your organization on GitHub Enterprise Server, you must first enable Advanced Security for your GitHub Enterprise Server instance. This can be done two ways: via the GitHub user interface or via the administrative shell (SSH).
+Before you can enable GitHub Advanced Security for all the repositories in your organization on GitHub Enterprise Server, you must first enable Advanced Security for your GitHub Enterprise Server instance. You can do this in two ways: via the GitHub user interface or via the administrative shell (SSH).
 
-Whether you plan on using the user interface or the administrative shell to do this, make sure you meet the following prerequisites before completing one of the procedures described in the next sections:
+Whether you plan on using the user interface or the administrative shell, make sure you meet the following prerequisites before completing one of the procedures described in the next sections:
 
-- Your license for GitHub Enterprise Server has been upgraded to include GitHub Advanced Security and you have uploaded it to your GitHub Enterprise Server instance.
-- You have reviewed the prerequisites for the features you plan to enable:
-    - [Prerequisites for code scanning](https://docs.github.com/en/enterprise-server@3.3/admin/advanced-security/configuring-code-scanning-for-your-appliance#prerequisites-for-code-scanning)
-    - [Prerequisites for secret scanning](https://docs.github.com/en/enterprise-server@3.3/admin/advanced-security/configuring-secret-scanning-for-your-appliance#prerequisites-for-secret-scanning)
-    - [Prerequisites for Dependabot](https://docs.github.com/en/enterprise-server@3.3/admin/configuration/configuring-github-connect/enabling-the-dependency-graph-and-dependabot-alerts-for-your-enterprise)
+- Your license for GitHub Enterprise Server has been upgraded to include GitHub Advanced Security and you've uploaded it to your GitHub Enterprise Server instance.
+- You've reviewed the prerequisites for the features you plan to enable:
+  - [Prerequisites for code scanning](https://docs.github.com/en/enterprise-server@3.3/admin/advanced-security/configuring-code-scanning-for-your-appliance#prerequisites-for-code-scanning)
+  - [Prerequisites for secret scanning](https://docs.github.com/en/enterprise-server@3.3/admin/advanced-security/configuring-secret-scanning-for-your-appliance#prerequisites-for-secret-scanning)
+  - [Prerequisites for Dependabot](https://docs.github.com/en/enterprise-server@3.3/admin/configuration/configuring-github-connect/enabling-the-dependency-graph-and-dependabot-alerts-for-your-enterprise)
 
-> [!Note]
-> Enabling GitHub Advanced Security features on your Enterprise Server instance will cause user-facing services on GitHub Enterprise Server to restart. You should time this change carefully, to minimize downtime for users.
+> [!NOTE]
+> Enabling GitHub Advanced Security features on your Enterprise Server instance will cause user-facing services on GitHub Enterprise Server to restart. You should time this change carefully to minimize downtime for users.
 
 ### Via the GitHub user interface
 

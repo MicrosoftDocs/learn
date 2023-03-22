@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/09/2022
+  ms.date: 03/22/2023
   author: wwlpublish
   ms.author: shlindsay
   ms.topic: interactive-tutorial
@@ -21,10 +21,10 @@ quiz:
     choices:
     - content: "Tenant."
       isCorrect: false
-      explanation: "Incorrect. Permissions are not set at tenant level in Microsoft Purview."
+      explanation: "Incorrect. Permissions aren't set at tenant level in Microsoft Purview."
     - content: "Data catalog."
       isCorrect: false
-      explanation: "Incorrect. Permissions are not set at Data catalog level in Microsoft Purview."
+      explanation: "Incorrect. Permissions aren't set at Data catalog level in Microsoft Purview."
     - content: "Collection."
       isCorrect: true
       explanation: "Correct. User permissions are set at the collection level in Microsoft Purview."
@@ -35,7 +35,7 @@ quiz:
       explanation: "Correct. Microsoft Purview contains out of the box, system classifications and custom classifications."
     - content: "Microsoft Information Protection Sensitivity Labels and system classifications."
       isCorrect: false
-      explanation: "Incorrect. Microsoft Information Protection Sensitivity Labels can be applied in Microsoft Purview, but they are not a type of classification."
+      explanation: "Incorrect. Microsoft Information Protection Sensitivity Labels can be applied in Microsoft Purview, but they aren't a type of classification."
     - content: "Custom classifications and user-defined classifications."
       isCorrect: false
       explanation: "Incorrect. Custom classifications are user defined classifications."
@@ -46,7 +46,7 @@ quiz:
       explanation: "Correct. Searching the Purview Data Catalog will help analysts find resources."
     - content: "The business glossary."
       isCorrect: false
-      explanation: "Incorrect. The business glossary will not help analysts find resources."
+      explanation: "Incorrect. The business glossary won't help analysts find resources."
     - content: "Import into Power BI and create a custom report."
       isCorrect: false
-      explanation: "Incorrect. Importing Purview Data into Power BI will not help analysts find resources for reporting."
+      explanation: "Incorrect. Importing Purview Data into Power BI won't help analysts find resources for reporting."

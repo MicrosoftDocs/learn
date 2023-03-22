@@ -2,8 +2,8 @@
 uid: learn.wwl.review-common-information-model-windows-management-instrumentation
 metadata:
   title: Review CIM and WMI
-  description: "Review CIM and WMI"
-  ms.date: 11/23/2022
+  description: "This module covers CIM and WMI technologies to connect to a common information repository that contains management information that you can query and manipulate. The repository contains all kinds of information about a computer system or device, including hardware, software, hardware drivers, components, roles, services, user settings, and just about every configurable item and the current state of that item. An understanding of the framework and syntax of CIM and WMI will help you know and control almost every aspect of an operating system environment."
+  ms.date: 12/21/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial

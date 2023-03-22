@@ -1,4 +1,4 @@
-In this unit, you'll use the .NET CLI to compile and run a web app. You'll tour the running app to understand the UI experience it provides.
+In this unit, you'll tour the running app to understand the UI experience it provides.
 
 ## Examine the project
 

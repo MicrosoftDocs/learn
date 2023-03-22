@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-azure-web-pubsub.knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: Check your knowledge of Azure Web PubSub
+  ms.date: 12/12/2022
+  author: dlepow
+  ms.author: danlep
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  questions:
+      - content: "For which application scenario would you **not** choose Azure Web PubSub?"
+        choices:
+          - content:
+              "Notifications from a travel app"
+            isCorrect: false
+            explanation: 
+              "Incorrect. Instant updates from a social networking, gaming, or travel app are handled well using Azure Web PubSub to manage the flow of data and content."
+          - content:
+              "Cross-platform live chat room"
+            isCorrect: false
+            explanation: 
+              "Incorrect. A live chat room is an excellent use case for real-time publish-subscribe messaging between server and clients using Azure Web PubSub."
+          - content:
+              "Web server for static content such as HTML pages and images"
+            isCorrect: true
+            explanation:
+              "Correct! Delivering static web page content doesn't require clients to poll or submit new HTTP requests for updates."
+      - content: "Azure Web PubSub isn't suitable for small-scale applications."
+        choices:
+          - content: "True"
+            isCorrect: false
+            explanation:
+              "Incorrect. Azure Web PubSub is suitable for large-scale and
+              small scale requirements."
+          - content: "False"
+            isCorrect: true
+            explanation:
+              "Correct! Azure Web PubSub is suitable for large-scale and
+              small-scale requirements."
+      - content: "Azure Web PubSub supports clients using the WebSocket protocol."
+        choices:
+          - content: "True"
+            isCorrect: true
+            explanation: "Correct! Azure Web PubSub supports the standard WebSocket connection with the publish-subscribe pattern."
+          - content: "False"
+            isCorrect: false
+            explanation: "Incorrect. Azure Web PubSub supports the standard WebSocket connection with the publish-subscribe pattern."
+      - content: "Which of the following statements is true about Azure Web PubSub?"
+        choices:
+          - content:
+              "Azure Web PubSub is best suited for scenarios requiring real-time
+              applications"
+            isCorrect: true
+            explanation:
+              "Correct. Azure Web PuSub is useful when an application requires
+              real-time publish-subscribe functionality."
+          - content:
+              "Azure Web PubSub requires you to configure and set up the infrastructure
+              from scratch before using the service."
+            isCorrect: false
+            explanation:
+              "Incorrect! Azure Web PubSub works with serverless applications as
+              well as server-based applications, hence infrastructure isn't a mandatory requirement. It is optional."
+          - content: "You can't use REST API with Azure Web PubSub"
+            isCorrect: false
+            explanation: "Incorrect. Azure Web PubSub service provides REST APIs to enable applications to post messages to connected clients or to manage the client connections, in any REST-capable programming language."

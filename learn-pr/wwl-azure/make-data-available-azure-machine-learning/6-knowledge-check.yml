@@ -1,0 +1,36 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.make-data-available-azure-machine-learning.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/13/2023
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "A data scientist wants to read data stored in a publicly available GitHub repository. The data will be read in a Jupyter notebook in the Azure Machine Learning workspace for some quick experimentation. Which protocol should be used to read the data in the notebook?"
+    choices:
+    - content: "`azureml`"
+      isCorrect: false
+      explanation: "Incorrect. This protocol is used to connect to data stored in a datastore."
+    - content: "`http(s)`"
+      isCorrect: true
+      explanation: "Correct. This protocol is used when accessing data stored in a publicly available http(s) location."
+    - content: "`abfs(s)`"
+      isCorrect: false
+      explanation: "Incorrect. This protocol is used to connect to data stored in an Azure Data Lake Storage Gen 2."
+  - content: "What type of data asset should someone create when the schema changes frequently and the data is used in many different jobs?"
+    choices:
+    - content: "URI file"
+      isCorrect: false
+      explanation: "Incorrect. MLTable is ideal when the schema changes frequently. Then, you only need to make changes in one location instead of multiple."
+    - content: "URI folder"
+      isCorrect: false
+      explanation: "Incorrect. MLTable is ideal when the schema changes frequently. Then, you only need to make changes in one location instead of multiple."
+    - content: "MLTable"
+      isCorrect: true
+      explanation: "Correct. MLTable is ideal when the schema changes frequently. Then, you only need to make changes in one location instead of multiple."

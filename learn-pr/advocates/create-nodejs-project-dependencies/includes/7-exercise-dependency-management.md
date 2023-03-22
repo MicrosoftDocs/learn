@@ -2,7 +2,7 @@ Tailwind Traders has asked you to work on an app that has some outdated dependen
 
 ## Upgrade app dependencies
 
-> [!Note]
+> [!NOTE]
 > If you closed your terminal window after the previous exercise, you might need to set up your environment again. Open a terminal window, and clone the exercise repo by running the command `git clone https://github.com/MicrosoftDocs/node-essentials/`. You can ignore warning messages about the cloned folder already existing or the directory not being empty.
 
 1. In your terminal window, change to the folder that has the cloned files for this exercise:

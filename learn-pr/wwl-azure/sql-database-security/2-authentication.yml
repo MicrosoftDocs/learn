@@ -4,13 +4,12 @@ title: Enable SQL database authentication
 metadata:
   title: Enable SQL database authentication
   description: "Enable SQL database authentication"
-  ms.date: 09/06/2022
+  ms.date: 02/24/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  zone_pivot_groups: None
 durationInMinutes: 7
 content: |
   [!include[](includes/2-authentication.md)]

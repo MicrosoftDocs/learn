@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.analyze-data-in-sentinel.3-azure-sentinel-analytics-overview
+title: What is Microsoft Sentinel Analytics?
+metadata:
+  title: What is Microsoft Sentinel Analytics?
+  description: "Explain what is Microsoft Sentinel Analytics."
+  ms.date: 01/27/2023
+  author: wwlpublish
+  ms.author: kelawson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-azure-sentinel-analytics-overview.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following aren't common use cases of analytics rules?"
+    choices:
+    - content: "Identifying compromised accounts."
+      isCorrect: false
+      explanation: "Microsoft Sentinel Analytics rules can identify compromised accounts."
+    - content: "Detecting insider threats."
+      isCorrect: false
+      explanation: "Microsoft Sentinel Analytics rules can detect insider threats"
+    - content: "Visualizing data from Microsoft Sentinel Connectors."
+      isCorrect: true
+      explanation: "You cannot visualize the data with analytics rules. You can use Microsoft Sentinel Workbook to present and visualize the data collected from the security connectors."
+  - content: "You want to find additional information that explains the analytics template and the rule that is used in detection of the threats. Which section in the analytics rules page provides that information?"
+    choices:
+    - content: "Details pane"
+      isCorrect: true
+      explanation: "The detailed view pane contains additional information that explains the template and the rule that is used in detection."
+    - content: "Header bar"
+      isCorrect: false
+      explanation: "The header bar contains information of the number of the rules that are currently in use."
+    - content: "Rules and templates section"
+      isCorrect: false
+      explanation: "Contains all the rule templates that Microsoft has pre-loaded from Microsoft Sentinel's GitHub repository."

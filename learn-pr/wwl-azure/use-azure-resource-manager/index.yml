@@ -2,16 +2,16 @@
 uid: learn.wwl.use-azure-resource-manager
 metadata:
   title: Use Azure Resource Manager
-  description: "You will learn to use resource groups to organization your organization’s Azure resources."
-  ms.date: 11/01/2022
+  description: "You'll learn to use resource groups to organization your Azure resources."
+  ms.date: 02/10/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Use Azure Resource Manager
-summary: You will learn to use resource groups to organize your organization’s Azure resources.
+summary: You'll learn how to use resource groups to organize your Azure resources.
 abstract: |
-  After completing this module, you will be able to:
+  After completing this module, you'll be able to:
   - Identify the features and usage cases for Azure Resource Manager.
   - Describe each Azure Resource Manager component and its usage.
   - Organize your Azure resources with resource groups.

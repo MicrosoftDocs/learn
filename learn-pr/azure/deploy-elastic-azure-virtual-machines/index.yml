@@ -4,7 +4,7 @@ metadata:
   moduleType: standard
   title: Deploy Elastic on Azure virtual machines
   description: "Deploy Elastic on Azure virtual machines (VMs) to get the benefits of Elasticsearch for your Linux workloads by following the instructions provided here."
-  ms.date: 6/15/2021
+  ms.date: 01/10/2023
   author: yenchiho
   ms.author: yenchiho
   ms.topic: interactive-tutorial

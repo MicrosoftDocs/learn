@@ -22,16 +22,6 @@ you during forensics investigation.
 Visit the links below for more information about the topics covered in
 this module:
 
-## Learn more with optional hands-on exercises
-
-> [!Note] 
-> - Students who don't already have an Azure subscription can [sign up for one free](https://azure.microsoft.com/free/)
-> - Students who don't already have a Microsoft 365 subscription can setup an [M365 E5 sandbox subscription](/office/developer-program/microsoft-365-developer-program-get-started)
-
-* [Microsoft Defender for Cloud Module 5 - Improving your Secure Posture](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module-5-Improving-your-Secure-Posture.md)
-
-## Learn more with security documentation
-
 * [Working remotely using Azure networking services](/azure/networking/working-remotely-support)
 * [Azure Bastion](/azure/bastion/bastion-overview)
 * [Best Practices for Securing Active Directory](/windows-server/identity/ad-ds/plan/security-best-practices/best-practices-for-securing-active-directory)

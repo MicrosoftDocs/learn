@@ -15,7 +15,7 @@ Instead, it's often better to create a single workflow that deploys everything r
 
 ## The control plane and the data plane
 
-Many Azure resources provide two different *planes* for access. The *control plane* deploys and configures the resource. The *data plane* enables you to access the resource's functionality.
+Many Azure resources provide two different _planes_ for access. The _control plane_ deploys and configures the resource. The _data plane_ enables you to access the resource's functionality.
 
 When you create and deploy Bicep files, you interact with the control plane. In Azure, the control plane is Azure Resource Manager. You use Resource Manager to define the configuration of each of your resources.
 
@@ -29,7 +29,7 @@ But your workflow often needs to do more than just interact with the control pla
 - Deploy software to a virtual machine.
 - Register a DNS entry with a third-party provider.
 
-When you consider an end-to-end workflow, you ordinarily need to deploy your Azure resources and then perform a series of operations against the data planes of those resources. Sometimes, these operations are called the *last mile* of the deployment, because you're performing most of the deployment by using the control plane, and only a small amount of configuration remains.
+When you consider an end-to-end workflow, you ordinarily need to deploy your Azure resources, and then perform a series of operations against the data planes of those resources. Sometimes, these operations are called the _last mile_ of the deployment, because you're performing most of the deployment by using the control plane, and only a small amount of configuration remains.
 
 > [!NOTE]
 > Some resources don't have a clear division between their control plane and data plane. These include Azure Data Factory and Azure API Management. Both services support fully automated deployments by using Bicep, but they require special considerations. You'll find links to more information on the Summary page at the end of the module.
@@ -42,13 +42,13 @@ When you create a deployment workflow that interacts with the data plane of your
 - Workflow scripts
 - Workflow actions
 
-*Resource Manager deployment scripts* are defined within your Bicep file. They run Bash or PowerShell scripts, and they can interact with the Azure CLI and Azure PowerShell cmdlets. You create a managed identity for the deployment script to use to authenticate to Azure, and Azure automatically provisions and manages the other resources it needs to run the deployment script.
+_Resource Manager deployment scripts_ are defined within your Bicep file. They run Bash or PowerShell scripts, and they can interact with Azure CLI commands and Azure PowerShell cmdlets. You create a managed identity for the deployment script to use to authenticate to Azure, and Azure automatically provisions and manages the other resources it needs to run the deployment script.
 
-Deployment scripts are good when you need to run a simple script within your deployment process. However, they don't easily provide you with access to other elements from your workflow.
+Deployment scripts are good when you need to run a basic script within your deployment process. However, they don't easily provide you with access to other elements from your workflow.
 
-You can also run your own logic from within a deployment workflow. GitHub Actions provides a rich ecosystem of *actions* for common things you need to do. If you can't find an action that meets your needs, you can use a *script* to run your own Bash or PowerShell code. Workflow actions and scripts run from your workflow's runner. You often need to authenticate the action or script to the data plane of the service you're using, and the way that you do this depends on the service.
+You can also run your own logic from within a deployment workflow. GitHub Actions provides a rich ecosystem of _actions_ for common things you need to do. If you can't find an action that meets your needs, you can use a _script_ to run your own Bash or PowerShell code. Workflow actions and scripts run from your workflow's runner. You often need to authenticate the action or script to the data plane of the service you're using, and the way that you do this depends on the service.
 
-Workflow actions and scripts give you flexibility and control. They also enable you to access *workflow artifacts*, which you'll learn about soon. In this module, we focus on workflow actions. We link to more information about Resource Manager deployment scripts on the Summary page at the end of the module.
+Workflow actions and scripts give you flexibility and control. They also enable you to access _workflow artifacts_, which you'll learn about soon. In this module, we focus on workflow actions. We link to more information about Resource Manager deployment scripts on the Summary page at the end of the module.
 
 ## Outputs
 
@@ -58,14 +58,14 @@ For example, suppose you have a Bicep file that deploys a storage account. You w
 
 It's good practice to have the Bicep file decide on the names of your Azure resources. It might use parameters, variables, or expressions to create the names for the storage account and blob container. The Bicep file can then expose an output that provides each resource's name. Later steps in the workflow can read the value of the output. That way, your workflow definition doesn't need to hard-code any names or other information that might change between environments or be based on rules that are defined in your Bicep file.
 
-With GitHub Actions, you can propagate the values of outputs by using *workflow variables*. The `azure/arm-deploy` action automatically creates variables for each of your Bicep deployment outputs. You can also manually create workflow variables in scripts. You'll find links to more information on the Summary page at the end of the module.
+With GitHub Actions, you can propagate the values of outputs by using _workflow variables_. The `azure/arm-deploy` action automatically creates variables for each of your Bicep deployment outputs. You can also manually create workflow variables in scripts. You'll find links to more information on the Summary page at the end of the module.
 
 When you access variables that were created in another job, you need to publish the variable to make it accessible to the job that reads it. For example, suppose you create a job that deploys a Bicep file, and you need to propagate the `appServiceAppName` output to your workflow. You use the `outputs` keyword to specify that the `appServiceAppName` workflow variable should be set to the value of the `appServiceAppName` output variable created by the `deploy` step:
 
-:::code language="yaml" source="code/2-outputs-jobs.yml" range="7-24" highlight="3-4" :::
+:::code language="yaml" source="code/2-outputs-jobs.yml" range="7-26" highlight="3-4" :::
 
 Then, in a later job, you create an explicit dependency on the job that created the variable by including the `needs` keyword, and you refer to the variable by using the name of the published variable:
 
-:::code language="yaml" source="code/2-outputs-jobs.yml" range="26-31" highlight="2, 6" :::
+:::code language="yaml" source="code/2-outputs-jobs.yml" range="28-33" highlight="2, 6" :::
 
-By using Bicep outputs and workflow variables, you can create a workflow that deploys your Bicep code and then performs a variety of actions on the resources as part of your deployment.
+By using Bicep outputs and workflow variables, you can create a workflow that deploys your Bicep code and then performs various actions on the resources as part of your deployment.

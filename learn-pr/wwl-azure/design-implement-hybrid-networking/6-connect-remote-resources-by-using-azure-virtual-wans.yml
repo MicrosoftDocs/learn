@@ -4,7 +4,7 @@ title: Connect remote resources by using Azure Virtual WANs
 metadata:
   title: Connect remote resources by using Azure Virtual WANs
   description: "Connect remote resources by using Azure Virtual WANs"
-  ms.date: 11/09/2022
+  ms.date: 01/05/2023
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
@@ -38,4 +38,4 @@ quiz:
       explanation: "Incorrect, Connections dynamically propagate routes to a specified route table."
     - content: "Associating a connection to a route table allows users to be authenticated."
       isCorrect: false
-      explanation: "Incorrect, Users are not authenticated using route tables."
+      explanation: "Incorrect, Users aren't authenticated using route tables."

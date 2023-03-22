@@ -51,7 +51,7 @@ You can use that as a component parameter in the same way as a parameter value t
 }
 ```
 
-In the parent component, you set parameter values by using attributes of the child component's tags. You set simple components directly. With a parameter based on a custom class, you will use inline C# code to create a new instance of that class and set its values:
+In the parent component, you set parameter values by using attributes of the child component's tags. You set simple components directly. With a parameter based on a custom class, you use inline C# code to create a new instance of that class and set its values:
 
 ```razor
 @page "/pizzas-toppings"
@@ -68,7 +68,7 @@ In the parent component, you set parameter values by using attributes of the chi
 
 Component parameters work well when you want to pass a value to the immediate child of a component. Things become awkward when you have a deep hierarchy with children of children and so on. Component parameters aren't automatically passed to grandchild components from ancestor components or further down the hierarchy. To handle this problem elegantly, Blazor includes cascading parameters. When you set the value of a cascading parameter in a component, its value is automatically available to all descendant components to any depth.
 
-In the parent component, using the `<CascadingValue>` tag specifies the information that will cascade to all descendants. This tag is implemented as a built-in Blazor component. Any component that's rendered within that tag will be able to access the value.
+In the parent component, using the `<CascadingValue>` tag specifies the information that will cascade to all descendants. This tag is implemented as a built-in Blazor component. Any component that's rendered within that tag is able to access the value.
 
 ```razor
 @page "/specialoffers"
@@ -96,7 +96,7 @@ So in this example, the `<h2>` tag has the content `Deal: Throwback Thursday` be
 > [!NOTE]
 > As for component parameters, you can pass objects as cascading parameters if you have more complex requirements.
 
-In the preceding example, the cascading value is identified by the `Name` attribute in the parent, which is matched to the `Name` value in the `[CascadingParameter]` attribute. You can optionally omit these names, in which case the attributes are matched by type. This works well when you have only one parameter of that type. If you want to cascade two different string values, you must use parameter names to avoid any ambiguity.
+In the preceding example, the cascading value is identified by the `Name` attribute in the parent, which is matched to the `Name` value in the `[CascadingParameter]` attribute. You can optionally omit these names, in which case the attributes are matched by type. Omitting the name works well when you have only one parameter of that type. If you want to cascade two different string values, you must use parameter names to avoid any ambiguity.
 
 ## Share information by using AppState
 

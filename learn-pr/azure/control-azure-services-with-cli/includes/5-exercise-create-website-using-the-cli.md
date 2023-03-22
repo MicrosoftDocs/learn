@@ -2,9 +2,9 @@ Next, let's use the Azure CLI to create a resource group, then to deploy a web a
 
 ### Using a resource group
 
-When you're working with your own machine and Azure subscription, you'll need to first sign in to Azure using the `az login` command. However, signing in is unnecessary when you're using the browser-based Cloud Shell environment.
+When you're working with your own machine and Azure subscription, you'll need to first sign in to Azure using the `az login` command. However, signing in is unnecessary when you're using the browser-based Cloud Shell sandbox environment.
 
-Next, you would normally create a resource group for all your related Azure resources with an `az group create` command, but for this exercise, the following resource group has been created for you: **<rgn>[sandbox resource group name]</rgn>**.
+Next, you'd normally create a resource group for all your related Azure resources with an `az group create` command, but for this exercise, the following resource group has been created for you: **<rgn>[sandbox resource group name]</rgn>**.
 
 1. Your first step in this exercise will be to create several variables that you'll use in later commands.
 
@@ -15,7 +15,7 @@ Next, you would normally create a resource group for all your related Azure reso
    export AZURE_WEB_APP=popupwebapp-$RANDOM
    ```
 
-1. You can ask the Azure CLI to list all your resource groups in a table. There should just be one while you are in the free Azure sandbox.
+1. You can ask the Azure CLI to list all your resource groups in a table. There should just be one while you're in the free Azure sandbox.
 
    ```azurecli
    az group list --output table
@@ -29,7 +29,7 @@ Next, you would normally create a resource group for all your related Azure reso
    az group list --query "[?name == '$RESOURCE_GROUP']"
    ```
 
-   The query is formatted using **JMESPath**, which is a standard query language for JSON requests. You can learn more about this powerful filter language at <http://jmespath.org/>. We also cover queries in more depth in the **Manage VMs with the Azure CLI** module.
+   The query is formatted using **JMESPath**, which is a standard query language for JSON requests. You can learn more about this powerful filter language at <http://jmespath.org/>. We also cover queries in more depth in the [**Manage VMs with the Azure CLI**](/training/modules/manage-virtual-machines-with-azure-cli/) module.
 
 ### Steps to create a service plan
 
@@ -38,7 +38,7 @@ When you run Web Apps using the Azure App Service, you pay for the Azure compute
 1. Create an App Service plan to run your app. The following command specifies the free pricing tier, but you can run `az appservice plan create --help` to see the other pricing tiers.
 
    > [!NOTE]
-   > The name of the app and plan must be _unique_ in all of Azure. The variables that you created earlier will assign random values as suffixes to make sure they're unique. However, if you receive an error when you are creating any resources, you should run the commands listed earlier to reset all of the variables with new random values. 
+   > The name of the app and plan must be _unique_ in all of Azure. The variables that you created earlier will assign random values as suffixes to make sure they're unique. However, if you receive an error when you're creating any resources, you should run the commands listed earlier to reset all of the variables with new random values.
    >
    > If you receive an error about the resource group, run the commands listed earlier with a different resource group value.
 
@@ -54,7 +54,7 @@ When you run Web Apps using the Azure App Service, you pay for the Azure compute
    az appservice plan list --output table
    ```
 
-   You'll see a response like the following example:
+   You'll get a response like the following example:
 
    ```output
    Kind    Location    MaximumNumberOfWorkers    Name                NumberOfSites    ResourceGroup                               Status
@@ -78,7 +78,7 @@ Next, you'll create the web app in your service plan. You can deploy the code at
    az webapp list --output table
    ```
 
-   You'll see a response like the following example:
+   You'll get a response like the following example:
 
    ```output
    Name               Location    State    ResourceGroup                               DefaultHostName                      AppServicePlan
@@ -94,8 +94,8 @@ Next, you'll create the web app in your service plan. You can deploy the code at
    curl $AZURE_WEB_APP.azurewebsites.net
    ```
 
-   You'll see the default HTML for the sample app returned.
-    
+   You'll get the default HTML for the sample app returned.
+
 ### Steps to deploy code from GitHub
 
 1. The final step is to deploy code from a GitHub repository to the web app. Let's use a basic PHP page available in the Azure Samples GitHub repository that displays "Hello World!" when it executes. Make sure to use the web app name you created.
@@ -109,7 +109,7 @@ Next, you'll create the web app in your service plan. You can deploy the code at
    ```bash
    curl $AZURE_WEB_APP.azurewebsites.net
    ```
-    
+
    The page displays "Hello World!"
 
    ```output

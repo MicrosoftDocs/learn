@@ -1,3 +1,4 @@
+
 [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
 In this exercise, you'll deploy a basic HTML+CSS site to Azure App Service by using the Azure CLI `az  webapp up` command. You'll then update the code and redeploy it by using the same command.
@@ -81,4 +82,5 @@ In this section you'll use the sandbox to download the sample app and set variab
     > You can use the up arrow on your keyboard to scroll through previous commands.
 
 1. Once deployment is completed switch back to the browser from step 2 in the "Create the web app" section above and refresh the page.
+
 

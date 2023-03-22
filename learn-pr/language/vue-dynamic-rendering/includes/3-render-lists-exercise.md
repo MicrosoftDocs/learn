@@ -19,7 +19,7 @@ You've been provided a starter repository for this module.
 Let's update the HTML code to display the list of options and their prices.
 
 1. Open the *index.html* file.
-1. Below the line that reads, "TODO: Add code to display classes," add the following HTML code:
+1. On the line after the comment, "TODO: Add code to display classes," add the following HTML code:
 
     ```html
     <div v-for="(productClass, index) in productClasses" :key="index" class="row">

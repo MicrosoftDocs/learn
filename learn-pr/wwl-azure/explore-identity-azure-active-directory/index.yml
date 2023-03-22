@@ -3,18 +3,18 @@ uid: learn.wwl.explore-identity-azure-active-directory
 metadata:
   title: Explore identity in Azure AD
   description: "This module will cover a wide view of the definition and available services for identity provided in the Microsoft Cloud from Azure AD to Microsoft 365. You start with the basics of authentication, authorization, and access tokens. This builds a firm foundation of what an identity is, why it is important. Then we move into governance and lifecycle management of your identities and identity solutions. The final topic opens up the term zero trust to see how it should be applied to your identity solutions."
-  ms.date: 09/05/2022
+  ms.date: 03/16/2023
   author: wwlpublish
-  ms.author: v-arxia
+  ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Explore identity and Azure AD
-summary: This module will cover definitions and available services for identity provided in Azure AD to Microsoft 365.  You start with authentication, authorization, and access tokens then build into full identity solutions.
+summary: This module covers definitions and available services for identity provided in Azure AD to Microsoft 365.  You start with authentication, authorization, and access tokens then build into full identity solutions.
 abstract: |
-  By the end of this module, you will be able to:
-  - Define common identity terms and explain how they are used in the Microsoft Cloud
+  By the end of this module, you'll be able to:
+  - Define common identity terms and explain how they're used in the Microsoft Cloud
   - Explore the common management tools and needs of an identity solution
-  - Review the goal of Zero Trust and how it is applied in the Microsoft Cloud
+  - Review the goal of Zero Trust and how it's applied in the Microsoft Cloud
   - Explore the available identity services in the Microsoft Cloud
 prerequisites: |
   - None
@@ -30,6 +30,7 @@ products:
 - azure-active-directory
 - azure-active-directory-b2c
 - azure-active-directory-domain
+- entra-verified-id
 subjects:
 - architecture
 - identity-access

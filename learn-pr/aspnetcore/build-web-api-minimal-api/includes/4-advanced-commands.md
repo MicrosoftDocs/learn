@@ -94,7 +94,7 @@ app.MapGet("/products/{id}", (int id) => products.SingleOrDefault(product => pro
 app.MapGet("/product", () => new { id = 1 });
 ```
 
-For these cases, you get JSON responses that looks like these examples:
+For these cases, you get JSON responses that look like these examples:
 
 ```json
 // app.MapGet("/products", () => products);

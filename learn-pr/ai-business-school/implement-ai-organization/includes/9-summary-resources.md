@@ -15,7 +15,7 @@ Now that you have reviewed this module, you should be able to:
 * [Download PDF of Evaluate and prioritize AI investments](https://aka.ms/AIBSSCAECO).
 * [Download PDF of Establish AI-related roles and responsibilities](https://aka.ms/AIBSSCAORG).
 * Learn more about how [Microsoft Consulting Services](https://www.microsoft.com/industry/services/consulting) can help your organization foster innovation, growth, and a culture of data-driven decisions. Contact your Microsoft Services account representative for more information.
-* Learn more about how [Digital Advisory Services](https://www.microsoft.com/industry/services/digital-advisors) can help you drive successful AI initiatives today.
+* Learn more about how [Digital Advisory Services](https://www.microsoft.com/en-us/msservices/digital-advisors) can help you drive successful AI initiatives today.
 * Learn more about how ND A100 v4 Azure VMs can help you train large AI models with the [Public preview signup for A100 clusters](https://aka.ms/AzureA100SignUpForm).
 * Learn more about how you can use [DeepSpeed](https://github.com/microsoft/deepspeed) to train your AI models 10 times faster.
 * Learn more about how [ONNX Runtime](https://microsoft.github.io/onnxruntime/) can help you train models more efficiently.

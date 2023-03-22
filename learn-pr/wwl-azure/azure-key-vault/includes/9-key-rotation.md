@@ -6,10 +6,10 @@ Once you have keys and secrets stored in the key vault it is very important to t
 
 This diagram shows how Event Grid and Function Apps can be used to automate the process.
 
-:::image type="content" source="../media/az500-key-vault-rotation-0d01efe7.png" alt-text="A key is updated using event grid and function apps.":::
+:::image type="content" source="../media/az500-key-vault-rotation-0d01efe7.png" alt-text="Screenshot of a key is updated using Event Grid and function apps.":::
 
 
-1.  Thirty days before the expiration date of a secret, Key Vault publishes the "near expiry" event to Event Grid.
-2.  Event Grid checks the event subscriptions and uses HTTP POST to call the function app endpoint subscribed to the event.
-3.  The function app receives the secret information, generates a new random password, and creates a new version for the secret with the new password in Key Vault.
-4.  The function app updates SQL Server with the new password.
+1. Thirty days before the expiration date of a secret, Key Vault publishes the "near expiry" event to Event Grid.
+1. Event Grid checks the event subscriptions and uses HTTP POST to call the function app endpoint subscribed to the event.
+1. The function app receives the secret information, generates a new random password, and creates a new version for the secret with the new password in Key Vault.
+1. The function app updates SQL Server with the new password.

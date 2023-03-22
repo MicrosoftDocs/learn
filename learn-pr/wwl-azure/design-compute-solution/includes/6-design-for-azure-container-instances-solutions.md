@@ -12,8 +12,6 @@ Azure Container Instances offers many benefits, including fast startup, per seco
 
 - Azure Container Instances implements per second billing. You incur costs only while your container is running.
 
-- Container Instances offer hypervisor-level security. You're able to isolate your application as completely as it would be in a virtual machine.
-
 - Azure Container Instances supports custom sizes for your containers. You can specify exact values for CPU cores and memory and avoid costs for unused resources.
 
 - Container Instances offers persistent storage. Azure Files shares can be mounted directly to a container to retrieve and persist state.

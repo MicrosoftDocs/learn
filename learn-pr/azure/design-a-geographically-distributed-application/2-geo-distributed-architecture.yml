@@ -2,7 +2,7 @@
 uid: learn.design-a-geographically-distributed-application.2-geo-distributed-architecture
 metadata:
   title: Design a geographically distributed architecture
-  description: In this unit, you will learn how to modify a scalable, single-region architecture in Azure to be resilient to regional outages.
+  description: In this unit, you learn how to modify a scalable, single-region architecture in Azure to be resilient to regional outages.
   ms.date: 11/07/2019
   author: jboeshart
   ms.author: jaboes
@@ -25,7 +25,7 @@ quiz:
       explanation: "SLAs aren't derived by the lowest SLA involved, by adding together SLAs, or by averaging SLAs, but as a composite."
     - content: "By multiplying together the individual SLAs for any of the services being used."
       isCorrect: true
-      explanation: "A simple example would be an app consisting of Azure App Service (99.95% SLA) and Azure Active Directory (99.9% SLA); the resultant SLA will be 99.85%."
+      explanation: "A simple example would be an app consisting of Azure App Service (99.95% SLA) and Azure Active Directory (99.9% SLA); the resultant SLA is 99.85%."
   - content: "You're modifying an application architecture that uses Azure DNS to resolve host names to IP addresses. You want the new architecture to support failover to a standby region. What should you do with Azure DNS?"
     choices:
     - content: "Make no changes to Azure DNS."
@@ -36,4 +36,4 @@ quiz:
       explanation: "This configuration isn't necessary or possible. Azure DNS records are replicated globally by default."
     - content: "Replace Azure DNS with Azure Traffic Manager."
       isCorrect: false
-      explanation: "Azure Traffic Manager cannot store DNS records for name resolution."
+      explanation: "Azure Traffic Manager can't store DNS records for name resolution."

@@ -1,3 +1,4 @@
+
 > [!NOTE]
 > Microsoft 365 compliance is now called Microsoft Purview and the solutions within the compliance area have been rebranded. Office 365 Data Loss Prevention is now Microsoft Purview Data Loss Prevention. For more information about Microsoft Purview, see the [blog announcement](https://www.microsoft.com/security/blog/2022/04/19/the-future-of-compliance-and-data-governance-is-here-introducing-microsoft-purview/)
 

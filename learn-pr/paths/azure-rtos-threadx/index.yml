@@ -4,12 +4,11 @@ metadata:
   title: Azure RTOS ThreadX
   description: Learn about Real-time Operating System (RTOS), and Azure RTOS ThreadX
   brand: azure
-  ms.date: 03/29/2022
+  ms.date: 04/19/2022
   author: timlt
   ms.author: timlt
   ms.reviewer: liydu
   manager: lizross
-  ms.custom: engagement-fy23
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Azure RTOS ThreadX
@@ -19,28 +18,28 @@ summary: |
   Learn about Real-time Operating System (RTOS), and Azure RTOS ThreadX, a high-performance RTOS that is one of the most widely used RTOSes in the world.
 iconUrl: /training/achievements/iot/azure-rtos-threadx.svg
 levels:
-- beginner
+  - beginner
 roles:
-- developer
+  - developer
 products:
-- azure
-- azure-iot
-- azure-iot-hub
-- azure-rtos
+  - azure
+  - azure-iot
+  - azure-iot-hub
+  - azure-rtos
 subjects:
-- infrastructure
+  - infrastructure
 modules:
-- learn.iot.introduction-azure-rtos
-- learn.iot.azure-rtos-threadx-fundamentals
-- learn.iot.threadx-memory-management
-- learn.iot.create-first-threadx-project
-- learn.iot.azure-rtos-analyze-thread-behavior
-- learn.iot.threadx-break-thread-suspension
-- learn.iot.threadx-event-notification
-- learn.iot.threadx-event-flags-group-sync-threads
-- learn.iot.threadx-message-queues
-- learn.iot.threadx-event-chain-suspend-objects
-- learn.iot.threadx-priority-inversion-solutions
-- learn.iot.threadx-next-steps
+  - learn.iot.introduction-azure-rtos
+  - learn.iot.azure-rtos-threadx-fundamentals
+  - learn.iot.threadx-memory-management
+  - learn.iot.create-first-threadx-project
+  - learn.iot.azure-rtos-analyze-thread-behavior
+  - learn.iot.threadx-break-thread-suspension
+  - learn.iot.threadx-event-notification
+  - learn.iot.threadx-event-flags-group-sync-threads
+  - learn.iot.threadx-message-queues
+  - learn.iot.threadx-event-chain-suspend-objects
+  - learn.iot.threadx-priority-inversion-solutions
+  - learn.iot.threadx-next-steps
 trophy:
   uid: learn.iot.azure-rtos-threadx.trophy

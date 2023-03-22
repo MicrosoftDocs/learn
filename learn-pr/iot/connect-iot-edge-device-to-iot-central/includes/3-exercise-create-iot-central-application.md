@@ -8,8 +8,8 @@ In this unit, you'll use the Azure CLI to create an IoT Central application from
 
 When you create the device template for your IoT Edge device, you'll need the deployment manifest and an interface definition on your local machine. You can download these files by right-clicking on the following links and choosing **Save as**:
 
-- [EnvironmentalSensorManifest.json](https://raw.githubusercontent.com/Azure-Samples/iot-central-docs-samples/main/edge-vm-deploy/EnvironmentalSensorManifest.json)
-- [TelemetryInterface.json](https://raw.githubusercontent.com/Azure-Samples/iot-central-docs-samples/main/edge-vm-deploy/TelemetryInterface.json)
+- [EnvironmentalSensorManifest-1-4.json](https://raw.githubusercontent.com/Azure-Samples/iot-central-docs-samples/main/iotedge/EnvironmentalSensorManifest-1-4.json)
+- [TelemetryInterface.json](https://raw.githubusercontent.com/Azure-Samples/iot-central-docs-samples/main/iotedge/TelemetryInterface.json)
 
 Remember where you save these files, you'll use them later.
 
@@ -44,7 +44,7 @@ The following steps create an IoT Central application and generate an API token 
 
     :::image type="content" source="../media/3-deployment-manifests.png" alt-text="Screenshot showing the deployment manifests page where you manage the IoT Edge deployment manifests in your IoT Central application.":::
 
-1. Select **Create an edge manifest**, enter the name **Environmental Sensor**, select **Upload a file**, and then browse to select the *EnvironmentalSensorManifest.json* file you downloaded previously.
+1. Select **Create an edge manifest**, enter the name *Environmental Sensor*, select **Upload a file**, and then browse to select the *EnvironmentalSensorManifest-1-4.json* file you downloaded previously.
 
 1. Select **Next** and then **Create** to upload the manifest. The manifest configures three IoT Edge modules: **edgeAgent**, **edgeHub**, and **SimulatedTemperatureSensor**.
 

@@ -1,3 +1,4 @@
+
 [Azure Active Directory (Azure AD)](/azure/active-directory/) is Microsoft's multi-tenant cloud-based directory and identity management service. Azure AD helps to support user access to resources and applications, such as:
 
 - Internal resources and apps located on your corporate network.
@@ -29,7 +30,7 @@ Azure AD offers many features and benefits. Consider which features can be used 
 
 - **Consider enabling single sign-on access**. Enable SSO access for your users to connect to the cloud or use on-premises apps. Azure AD SSO supports Microsoft 365 and thousands of SaaS apps, such as Salesforce, Workday, DocuSign, ServiceNow, and Box.
 
-- **Consider UX experience and device support**. Build a consistent user experience that works for all devices and directory access points. You can design custom company portals and personalized web-based access for your employees that lets them connect with their existing work credentials.
+- **Consider UX and device support**. Build a consistent user experience that works for all devices and directory access points. You can design custom company portals and personalized web-based access for your employees that lets them connect with their existing work credentials.
 
 - **Consider benefits of secure remote access**. Protect your on-premises web apps by implementing secure remote access with MFA and access policies.
 

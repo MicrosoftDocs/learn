@@ -5,13 +5,16 @@ Azure Spring Apps is a platform as a service (PaaS) for Spring developers. Manag
 
 You can deploy an instance of the Azure Spring Apps service using the Azure portal or the Azure CLI.
 
-Your workstation should have the following components installed:
+The labstarter branch of the [Azure-Samples/spring-petclinic-microservices repository](https://github.com/Azure-Samples/spring-petclinic-microservices/tree/labstarter) contains a development container for Java development. The *dev* container holds all tools for running this lab. You can choose to use the *dev* container as a [GitHub CodeSpace](https://github.com/features/codespaces) if your GitHub account is enabled for Codespaces. Or, you can use the [Visual Studio Code Remote Containers](https://code.visualstudio.com/docs/remote/containers).
+
+To run from your workstation, you should have the following components installed:
 
  -  Visual Studio Code available from [Visual Studio Code Downloads](https://code.visualstudio.com/download)
- -  Git available from [Git Downloads](https://git-scm.com/downloads)
+ -  Java and Spring Boot Visual Studio Code extension packs available from [Java extensions for Visual Studio Code](https://code.visualstudio.com/docs/java/extensions).
+ -  Git for Windows 2.3.61 is available from [Git Downloads](https://git-scm.com/downloads).
  -  Apache Maven 3.8.5 available from [Apache Maven Project downloads](https://maven.apache.org/download.cgi)
- -  Java Development Kit (JDK) available from [JD](https://download.oracle.com/java/18/latest/jdk-18_windows-x64_bin.msi)[K](https://download.oracle.com/java/18/latest/jdk-18_windows-x64_bin.msi)[ downloads](https://download.oracle.com/java/18/latest/jdk-18_windows-x64_bin.msi).
- -  To download the instructions for this module, see [Deploying and Running Java apps in Azure Spring Apps](https://github.com/MicrosoftLearning/Deploying-and-Running-Java-apps-in-Azure-Spring-Cloud).
+ -  Java 8 and the Java Development Kit (JDK) available from [JD](https://download.oracle.com/java/18/latest/jdk-18_windows-x64_bin.msi)[K](https://download.oracle.com/java/18/latest/jdk-18_windows-x64_bin.msi)[ downloads](https://download.oracle.com/java/18/latest/jdk-18_windows-x64_bin.msi).
+ -  To download the instructions for this module, see [Deploying and Running Java apps in Azure Spring Apps](https://github.com/MicrosoftLearning/Deploying-and-Running-Java-apps-in-Azure-Spring-Cloud).<br>
 
 For Git installations, set the global configuration variables *user.email* and *user.name* by running the following commands from the Git Bash shell:
 
@@ -66,7 +69,7 @@ The following procedure uses the Azure CLI extension to deploy an instance of Az
         --subscription <subscription-id>
     ```
 
-5.  Run the following commands to create a resource group to contain all resources. Replace the `<azure-region>` placeholder with the name of any Azure region in which you can create a Standard SKU instance of the Azure Spring Apps service and an Azure Database for MySQL Single Server instance. See the [Products available by region](https://azure.microsoft.com/global-infrastructure/services/?products=mysql%2Cspring-apps&amp;regions=all) page for services availability.
+5.  Run the following commands to create a resource group to contain all resources. Replace the `<azure-region>` placeholder with the name of any Azure region in which you can create a Standard SKU instance of the Azure Spring Apps service and an Azure Database for MySQL Single Server instance. See the [Products available by region](https://azure.microsoft.com/global-infrastructure/services/?products=mysql%2Cspring-apps&regions=all) page for services availability.
     
     ```azurecli
     UNIQUEID=$(openssl rand -hex 3)
@@ -75,7 +78,7 @@ The following procedure uses the Azure CLI extension to deploy an instance of Az
     az group create -g $RESOURCE_GROUP -l $LOCATION
     ```
 
-6.  Run the commands listed below to create an instance of the standard SKU of the Azure Spring Apps service. The name of the service must be globally unique and contain only lowercase letters, numbers, and hyphens.
+6.  Run the listed commands to create an instance of the standard SKU of the Azure Spring Apps service. The name of the service must be globally unique and contain only lowercase letters, numbers, and hyphens.
     
     ```azurecli
     SPRING_APPS_SERVICE=springappssvc$UNIQUEID

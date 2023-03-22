@@ -8,10 +8,10 @@ jobs:
     name: Build application
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
 
     - name: Install .NET Core
-      uses: actions/setup-dotnet@v1
+      uses: actions/setup-dotnet@v3
       with:
         dotnet-version: 3.1
 
@@ -26,7 +26,7 @@ jobs:
       working-directory: ./src/ToyCompany/ToyCompany.Website/bin/Release/netcoreapp3.1/publish
 
     - name: Upload website as workflow artifact
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: website
         path: ./src/ToyCompany/ToyCompany.Website/bin/Release/netcoreapp3.1/publish/publish.zip
@@ -35,17 +35,17 @@ jobs:
     name: Build database
     runs-on: windows-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
 
     - name: Prepare MSBuild
-      uses: microsoft/setup-msbuild@v1.0.3
+      uses: microsoft/setup-msbuild@v1.1
 
     - name: Build database project
       working-directory: ./src/ToyCompany/ToyCompany.Database
       run: MSBuild.exe ToyCompany.Database.sqlproj -property:Configuration=Release
 
     - name: Upload website as workflow artifact
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: database
         path: ./src/ToyCompany/ToyCompany.Database/bin/Release/ToyCompany.Database.dacpac

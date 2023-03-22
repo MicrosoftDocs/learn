@@ -15,7 +15,7 @@ Let's create a new Azure VM with PowerShell.
 
         [!include[](../../../includes/azure-sandbox-regions-note.md)]
 
-    - Use "UbuntuLTS" for the image; this is Ubuntu Linux.
+    - Use "Canonical:0001-com-ubuntu-server-focal:20_04-lts:latest" for the image. This image is Ubuntu Linux.
     - Use the `Get-Credential` cmdlet and feed the results into the `Credential` parameter.
       > [!IMPORTANT]
       > See the [Linux VM FAQ](/azure/virtual-machines/linux/faq#what-are-the-username-requirements-when-creating-a-vm) for username and password limitations. Passwords must be 12 - 123 characters in length, and meet three of the following four complexity requirements:
@@ -29,7 +29,7 @@ Let's create a new Azure VM with PowerShell.
     - Create a public IP address name. You'll use this name to create and find your static IP address to sign in to the machine.
 
     ```powershell
-    New-AzVm -ResourceGroupName <rgn>[sandbox resource group name]</rgn> -Name "testvm-eus-01" -Credential (Get-Credential) -Location "East US" -Image UbuntuLTS -OpenPorts 22 -PublicIpAddressName "testvm-01"
+    New-AzVm -ResourceGroupName <rgn>[sandbox resource group name]</rgn> -Name "testvm-eus-01" -Credential (Get-Credential) -Location "eastus" -Image Canonical:0001-com-ubuntu-server-focal:20_04-lts:latest -OpenPorts 22 -PublicIpAddressName "testvm-01"
     ```
 
     [!include[](../../../includes/azure-cloudshell-copy-paste-tip.md)]
@@ -95,7 +95,7 @@ Let's create a new Azure VM with PowerShell.
     ssh bob@205.22.16.5
     ```
 
-    Log out by entering `exit`.
+    Sign out by entering `exit`.
 
 ## Delete a VM
 
@@ -159,4 +159,4 @@ The `Remove-AzVM` command *just deletes the VM*. It doesn't clean up any of the 
     Get-AzPublicIpAddress -ResourceGroupName $vm.ResourceGroupName | Remove-AzPublicIpAddress -Force
     ```
 
-We should've caught all the created resources. Check the resource group just to be sure. We performed many manual commands here, but a better approach would have been to write a *script*. Then we could reuse this logic later to create or delete a VM. Let's look at scripting with PowerShell.
+We should have caught all the created resources. Check the resource group just to be sure. We performed many manual commands here, but a better approach would have been to write a *script*. Then we could reuse this logic later to create or delete a VM. Let's look at scripting with PowerShell.

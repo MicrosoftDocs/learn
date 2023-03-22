@@ -4,46 +4,44 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/01/2022
+  ms.date: 03/06/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 6
+durationInMinutes: 3
 content: |
   [!include[](includes/8-knowledge-check.md)]
 quiz:
   title: ""
   questions:
-  - content: "It's time to back up files and folders to Azure. Which of these steps should be completed first?"
+  - content: "What's the first step to back up files and folders to Azure?"
     choices:
     - content: "Download the agent and credential file."
       isCorrect: false
-      explanation: "Incorrect. Download the agent and credential file would be the second step."
+      explanation: "Incorrect. Downloading the agent and credential file is completed in the second step."
+    - content: "Create the Azure Recovery Services vault."
+      isCorrect: true
+      explanation: "Correct. The first step in the backup process is to create your Recovery Services vault."
     - content: "Configure the backup."
       isCorrect: false
-      explanation: "Incorrect.  Configure the backup would be the last step."
-    - content: "Create the recovery services vault."
-      isCorrect: true
-      explanation: "Correct. The first step is to create a recovery services vault."
-  - content: "Azure Backup requires which of the following?"
+      explanation: "Incorrect. The final step involves configuring the backup."
+  - content: "Azure Backup requires which of the following services?"
     choices:
     - content: "A dedicated backup server."
       isCorrect: false
       explanation: "Incorrect. Azure Backup doesn't require a dedicated backup server."
-    - content: "A recovery service vault."
-      isCorrect: true
-      explanation: "Correct. Azure Backup requires a recovery services vault."
-    - content: "An Azure blob storage container."
+    - content: "An Azure Blob Storage container."
       isCorrect: false
-      explanation: "Incorrect. Azure Backup doesn't require a blob storage container."
-  - content: "The infrastructure manager wants to know more about Azure Backup. Which of the following most accurately describes Azure Backup?"
-    choices:
-    - content: "Azure backup has unlimited data transfer."
+      explanation: "Incorrect. Azure Backup doesn't require a Blob Storage container."
+    - content: "An Azure Recovery Services vault."
       isCorrect: true
-      explanation: "Correct. Azure Backup doesn't limit the amount of inbound or outbound data that is transferred. Azure Backup also doesn't charge for the data that's transferred."
+      explanation: "Correct. Azure Backup requires an Azure Recovery Services vault."
+  - content: "Which option accurately describes Azure Backup?"
+    choices:
+    - content: "Azure Backup has unlimited data transfer."
+      isCorrect: true
+      explanation: "Correct. Azure Backup doesn't limit the amount of inbound or outbound data that's transferred. Azure Backup also doesn't charge for the data that's transferred."
     - content: "Azure Backup doesn't provide data encryption."
       isCorrect: false
       explanation: "Incorrect. Azure Backup provides solutions for securing data in transit and at rest."

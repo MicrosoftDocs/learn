@@ -5,7 +5,7 @@ metadata:
   description: "Use watchlists in Microsoft Sentinel"
   ms.date: 06/21/2022
   author: wwlpublish
-  ms.author: bneeb
+  ms.author: kelawson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Use watchlists in Microsoft Sentinel
@@ -22,7 +22,7 @@ roles:
 - security-operations-analyst
 products:
 - azure
-- azure-sentinel
+- microsoft-sentinel
 subjects:
 - threat-protection
 units:

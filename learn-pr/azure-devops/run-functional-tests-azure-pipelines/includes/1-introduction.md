@@ -12,7 +12,7 @@ After completing this module, you'll be able to:
 
 - Define the role of functional tests and identify some popular kinds of tests you can run
 - Map manual testing steps to automated test cases
-- Run automated UI tests locally and in the pipeline by using Selenium
+- Run automated UI tests locally and in the pipeline using Selenium
 
 ## Prerequisites
 

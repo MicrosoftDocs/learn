@@ -4,20 +4,18 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/04/2022
+  ms.date: 03/22/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/10-knowledge-check.md)]
 quiz:
   title: ""
   questions:
-  - content: "A subnet has address range 10.3.0.0/16. Which IP address can be dynamically assigned?"
+  - content: "For the Sale department subnet range, which IP address can be dynamically assigned?"
     choices:
     - content: "10.3.0.2"
       isCorrect: false
@@ -28,25 +26,25 @@ quiz:
     - content: "10.3.255.254"
       isCorrect: true
       explanation: "Correct. Any address in the range 10.3.0.4 through 10.3.255.254 is available for assignment."
-  - content: "The infrastructure team has implemented firewall rules to deny traffic based on IP address ranges. Which feature meets the requirement?"
+  - content: "What feature can support the denial of traffic based on the IP address range?"
     choices:
-    - content: "Dynamically assigned IP addresses."
-      isCorrect: false
-      explanation: "Incorrect. Dynamically assigned IP addresses will require the Firewall rules to be changed."
-    - content: "Statically assigned IP addresses."
+    - content: "Statically assigned IP addresses"
       isCorrect: true
-      explanation: "Correct. In this situation, use statically assigned IP addresses to avoid having to change the Firewall rules."
-    - content: "IP addresses in the reserved range."
+      explanation: "Correct. In this situation, use statically assigned IP addresses to avoid having to change the firewall rules."
+    - content: "Dynamically assigned IP addresses"
+      isCorrect: false
+      explanation: "Incorrect. Dynamically assigned IP addresses require firewall rules to be changed."
+    - content: "IP addresses in the reserved range"
       isCorrect: false
       explanation: "Incorrect. IP addresses in the reserved range can't be used."
-  - content: "Which statement about Azure VNets is correct?"
+  - content: "Which of the following statements about Azure Virtual Network is correct?"
     choices:
-    - content: "Outbound communication with the internet must be configured for each resource on the VNet."
+    - content: "Outbound communication with the internet must be configured for each resource on the virtual network."
       isCorrect: false
-      explanation: "Incorrect. All resources in a VNet can communicate outbound to the internet, by default."
-    - content: "Azure VNets enable communication between Azure resources."
+      explanation: "Incorrect. All resources in a virtual network can communicate outbound to the internet, by default."
+    - content: "Azure Virtual Network enables communication between Azure resources."
       isCorrect: true
-      explanation: "Correct. Virtual Networks can connect Azure resources including VMs, the App Service Environment, Azure Kubernetes Service, and Azure Virtual Machine Scale Sets. You can use service endpoints to connect to other Azure resource types, such as Azure SQL databases and storage accounts."
-    - content: "Azure VNets can't be configured to communicate with on-premises resources."
+      explanation: "Correct. Azure Virtual Network connects Azure resources including virtual machines, the Azure App Service Environment, Azure Kubernetes Service (AKS), and Azure Virtual Machine Scale Sets. You can use service endpoints to connect to other Azure resource types, such as Azure SQL databases and storage accounts."
+    - content: "Azure virtual networks can't be configured to communicate with on-premises resources."
       isCorrect: false
-      explanation: "Incorrect. You can connect your on-premises computers and networks to a virtual network using any of the following options: Point-to-site virtual private network (VPN), Site-to-site VPN, Azure ExpressRoute."
+      explanation: "Incorrect. You can connect your on-premises computers and networks to a virtual network by using a Point-to-site virtual private network (VPN), Site-to-site VPN, or Azure ExpressRoute."

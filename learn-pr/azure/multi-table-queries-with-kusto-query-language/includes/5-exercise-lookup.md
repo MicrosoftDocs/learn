@@ -2,7 +2,7 @@ In the preceding exercise, you used the `join` operator to find the total sales 
 
 ## Use the `lookup` operator
 
-Your sales team wants to know the company's total sales per country. You could use a `join` operator to get the customer and product information. However, this kind of query performs best when you use the `lookup` operator to get this information. 
+Your sales team wants to know the company's total sales per country. You could use a `join` operator to get the customer and product information. However, this kind of query performs best when you use the `lookup` operator to get this information.
 
 Recall that the `lookup` operator enriches a *fact* table with data from a *dimension* table. It's a bit like reading a book (fact table) and looking up unknown words in a dictionary (dimension table).
 
@@ -10,7 +10,7 @@ For this query, you start with the *SalesFact* table and use the `lookup` operat
 
 In the following procedure, you build the query in stages to give yourself a better understanding the result of using the `lookup` operator.
 
-1. Run the following query to get 10 matching arbitrary rows from the *SalesFact* table and the *Customers* table. 
+1. Run the following query to get 10 matching arbitrary rows from the *SalesFact* table and the *Customers* table.
 
     <a href="https://dataexplorer.azure.com/clusters/help/databases/ContosoSales?query=H4sIAAAAAAAAAwtOzEktdktMLuGqUcjJz88uLVBwLi0uyc9NLSpWyM+Dc7xTK4EqShKzUxUMDQCq8uF9NQAAAA==" target="_blank">Run the query</a>
 
@@ -39,7 +39,7 @@ In the following procedure, you build the query in stages to give yourself a bet
 
 1. Take a look at the resulting list. You notice that the top sales are in the United States. Try modifying the query to show the total sales in the United States by state.
 
-In the preceding unit, you used a *leftouter* `join` to get the total sales per product category. The query took 0.861 seconds to run. You'll now write a query to get the same result by using the `lookup` operator and then compare the execution time.
+In the preceding unit, you used a *rightouter* `join` to get the total sales by product category. The query took 0.834 seconds to run. You'll now write a query to get the same result by using the `lookup` operator and then compare the execution time.
 
 1. Run the following query.
 

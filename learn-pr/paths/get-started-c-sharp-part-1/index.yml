@@ -1,0 +1,34 @@
+### YamlMime:LearningPath
+uid: learn.wwl.get-started-c-sharp-part-1
+metadata:
+  title: Write your first code using C# (Get started with C#, Part 1)
+  description: "Learn the basic syntax and thought processes required to build simple applications using C#"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Write your first code using C# (Get started with C#, Part 1)
+prerequisites: |
+  none
+summary: |
+  Learn the basic syntax and thought processes required to build simple applications using C#.
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- dotnet
+- vs-code
+subjects:
+- development-tools
+modules:
+- learn.languages.csharp-write-first
+- learn.languages.csharp-literals-variables
+- learn.languages.csharp-basic-formatting
+- learn.languages.csharp-basic-operations
+- learn.wwl.guided-project-calculate-print-student-grades
+- learn.wwl.guided-project-calculate-final-gpa
+trophy:
+  uid: learn.wwl.get-started-c-sharp-part-1.trophy

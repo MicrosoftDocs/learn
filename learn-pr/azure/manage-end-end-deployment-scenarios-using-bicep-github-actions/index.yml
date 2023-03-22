@@ -4,7 +4,7 @@ metadata:
   moduleType: standard
   title: Manage end-to-end deployment scenarios by using Bicep and GitHub Actions
   description: Build a deployment workflow for Bicep infrastructure as code templates. Create a single workflow to deploy infrastructure, applications, and data.
-  ms.date: 10/10/2021
+  ms.date: 12/19/2022
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial
@@ -27,14 +27,14 @@ prerequisites: |
   - GitHub Actions, including jobs, environments, and secrets.
 
   To work through the exercises in the module, you'll need:
-  
+
   - An Azure account, with the ability to create resource groups and Azure Active Directory applications.
   - A GitHub account.
 
   To work through the exercises, you'll also need the following installed locally:
-  
-  - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true).
-  - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep&azure-portal=true).
+
+  - [Visual Studio Code](https://code.visualstudio.com).
+  - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep).
   - The latest [Azure CLI](/cli/azure/install-azure-cli) tools *or* the latest [Azure PowerShell](/powershell/azure/install-az-ps).
 iconUrl: /training/achievements/bicep/manage-end-end-deployment-scenarios-using-bicep-github-actions.svg
 levels:

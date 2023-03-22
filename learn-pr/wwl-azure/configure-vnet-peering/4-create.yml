@@ -3,14 +3,14 @@ uid: learn.wwl.configure-vnet-peering.create
 title: Create virtual network peering
 metadata:
   title: Create virtual network peering
-  description: "Create virtual network peering"
-  ms.date: 10/24/2022
+  description: "Create a virtual network peering in the Azure portal."
+  ms.date: 03/17/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 4
 content: |
   [!include[](includes/4-create.md)]

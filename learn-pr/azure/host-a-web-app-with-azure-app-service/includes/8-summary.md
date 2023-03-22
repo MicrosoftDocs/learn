@@ -9,5 +9,5 @@ App Service simplifies managing and controlling your web app in comparison to tr
 - [Continuous deployment to Azure App Service](/azure/app-service/deploy-continuous-deployment)
 - [Set up staging environments in Azure App Service](/azure/app-service/deploy-staging-slots)
 - [Deployment FAQs for Web Apps in Azure](/azure/app-service/faq-deployment)
-- [App Service on Azure Stack overview](/azure-stack/operator/azure-stack-app-service-overview)
-- [Configure deployment sources for App Services on Azure Stack](/azure-stack/operator/azure-stack-app-service-configure-deployment-sources)
+- [Azure App Service and Azure Functions on Azure Stack Hub overview](/azure-stack/operator/azure-stack-app-service-overview)
+- [Configure deployment sources for App Services on Azure Stack Hub](/azure-stack/operator/azure-stack-app-service-configure-deployment-sources)

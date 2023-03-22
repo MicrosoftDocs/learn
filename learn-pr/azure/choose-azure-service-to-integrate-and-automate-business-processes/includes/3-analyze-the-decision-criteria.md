@@ -18,7 +18,7 @@ Alternatively, you can choose to use a code-first tool because:
 - People who design the workflow are developers and prefer to work entirely in code.
 - You want the details of a workflow to be hidden from non-coders.
 
-## Choose a design-first technology
+## Choose a :::no-loc text="design-first"::: technology
 
 If you choose to use a design-first approach, you must also choose from Microsoft Power Automate and Azure Logic Apps.
 
@@ -28,7 +28,7 @@ In Logic Apps, there is a GUI designer on which you draw out the workflow. It's 
 
 In Microsoft Power Automate, extra help and templates are provided for common types of workflow. There's no way to edit the source code that the tool creates. This tool is designed for users who have a good understanding of the business process but no coding skills.
 
-## Choose a code-first technology
+## Choose a :::no-loc text="code-first"::: technology
 
 If you choose to use a code-first approach, your next choice is between WebJobs and Azure Functions.
 

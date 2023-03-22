@@ -1,4 +1,4 @@
-Every company is in a different place in its digital transformation journey and use of the cloud. In partnership with VMware, Microsoft has created Azure VMware Solution. It's a service that enables organizations to move VMware-based enterprise workloads from on-premises to Azure, deploy new virtual machines (VMs), and connect workloads directly to other Azure services.
+Each company is in a different place in its digital transformation journey and use of the cloud. In partnership with VMware, Microsoft has created Azure VMware Solution. It's a service that enables organizations to move VMware-based enterprise workloads from on-premises to Azure, deploy new virtual machines (VMs), and connect workloads directly to other Azure services.
 
 Azure VMware Solution combines VMware's Software-Defined Data Center (SDDC) software with the Azure global cloud service. It's a VMware-validated solution with ongoing certification and testing of enhancements and upgrades. 
 
@@ -44,10 +44,8 @@ Native Azure tools and services like the following ones allow you to monitor and
 
 :::image type="icon" source="../media/2-integration-overview.png" border="false" alt-text="Diagram that shows some of the integration services available for Azure VMware Solution.":::
 
-
 |Integration  |Description  |
 |---------|---------|
-|**Azure Active Directory**     |   You can use Azure Active Directory as the VMware vCenter SSO identity source.      |
 |**Log Analytics workspace**     | A Log Analytics workspace in Azure Monitor is a unique environment to store log data. Each workspace has its own data repository and configuration. Data sources and solutions are configured to store their data in a specific workspace. After the solution is deployed into a subscription, Azure Monitor logs are generated automatically.        |
 |**Microsoft Defender for Cloud**     | Microsoft Defender for Cloud is a unified security management system for infrastructure. It strengthens the security of datacenters, and it provides advanced threat protection across hybrid workloads in the cloud or on-premises.        |
 |**Microsoft Sentinel**    |  Microsoft Sentinel is a cloud-native security information and event management (SIEM) solution. It provides security analytics, alert detection, and automated threat response across an environment.       |
@@ -57,7 +55,7 @@ Native Azure tools and services like the following ones allow you to monitor and
 |**Azure Traffic Manager**    |  You can deploy Traffic Manager to balance Azure VMware Solution workloads. The integration balances application workloads across multiple endpoints.       |
 
 ### Continuity of operations
-Azure VMware Solution provides application high availability and modernization with well-managed Azure infrastructure designed for end-to-end high availability. The service has built-in redundancy with no single point of failure. 
+Azure VMware Solution provides infrastructure high availability and modernization with well-managed Azure infrastructure designed for end-to-end high availability. The service has built-in redundancy with no single point of failure. 
 
 With Azure VMware Solution, you can deploy VMware resources on Azure for a primary or secondary on-demand recovery site to provide business continuity for on-premises datacenter resources.
 
@@ -68,4 +66,5 @@ Azure VMware Solution can be billed and charged in the following three ways. Cus
 |---------|---------|---------|
 |On demand     | Reserved capacity for one year       |  Reserved capacity for three years       |
 | Typically used for bursting <br><br> Initial deployments    | Used for major projects <br><br> Known usage patterns     |  Used with datacenter exit scenarios <br><br> Long-term business strategy      |
-|    |         |         |
+
+

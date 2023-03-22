@@ -2,8 +2,8 @@
 uid: learn.wwl.use-variables-arrays-hash-tables-windows-powershell
 metadata:
   title: Use variables, arrays, and hash tables in Windows PowerShell scripts
-  description: Use variables, arrays, and hash tables in Windows PowerShell scripts
-  ms.date: 11/10/2022
+  description: This learning path explains how to work with variables, arrays, and hash tables in Windows PowerShell scripts.
+  ms.date: 12/21/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial

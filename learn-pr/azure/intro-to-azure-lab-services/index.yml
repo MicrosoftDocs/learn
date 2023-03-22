@@ -5,10 +5,11 @@ metadata:
   title: Introduction to Azure Lab Services
   description: Evaluate whether Azure Lab Services is appropriate to your lab requirements.
   ms.date: 11/17/2022
+  ms.custom: engagement-fy23
   author: mikejo5000
   ms.author: mikejo
   manager: jmartens
-  ms.topic: interactive-tutorial
+  ms.topic: module-intro-to-product
   ms.prod: learning-azure
 title: Introduction to Azure Lab Services
 summary: Find out how lab plans, labs, and virtual machines work together to simplify the infrastructure for hosted classroom labs. Determine the types of business problems that can be solved using Azure Lab Services. 

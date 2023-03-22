@@ -4,35 +4,22 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/01/2022
+  ms.date: 02/24/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/10-knowledge-check.md)]
 quiz:
   title: ""
   questions:
-  - content: "A company provides customers a virtual network in the cloud. Which type of Azure load balancer should be used to direct traffic to resources inside the virtual networks?"
-    choices:
-    - content: "An external load balancer."
-      isCorrect: false
-      explanation: "Incorrect.  Azure has two types of load balancers: external and internal."
-    - content: "An internal load balancer."
-      isCorrect: true
-      explanation: "Correct. An internal load balancer directs traffic only to resources that are inside a virtual network or that use a VPN to access Azure infrastructure."
-    - content: "A public load balancer."
-      isCorrect: false
-      explanation: "Incorrect. A public load balancer maps the public IP address and port number of incoming traffic to the private IP address and port number of the VM."
-  - content: "What is the default distribution type for traffic through a load balancer?"
+  - content: "What's the default distribution type for traffic through a load balancer?"
     choices:
     - content: "Source IP affinity"
       isCorrect: false
-      explanation: "Incorrect. Affinity specifies that successive requests from the same client IP address and protocol combination will be handled by the same virtual machine."
+      explanation: "Incorrect. Affinity specifies that successive requests from the same client IP address and protocol combination are handled by the same virtual machine."
     - content: "Three-tuple hash"
       isCorrect: false
       explanation: "Incorrect. A three-tuple hash isn't the distribution type."
@@ -41,9 +28,9 @@ quiz:
       explanation: "Correct. The load balancer uses a five-tuple (source IP, source port, destination IP, destination port, and protocol type) hash to map traffic to available servers."
   - content: "Which configuration is required for an internal load balancer?"
     choices:
-    - content: "Virtual machines should be in the same virtual network."
+    - content: "Virtual machines must be in the same virtual network."
       isCorrect: true
-      explanation: "Correct. The virtual machines that use a load balancer to distribute a load to must be in the same virtual network."
+      explanation: "Correct. The virtual machines that use a load balancer to distribute a load must be in the same virtual network."
     - content: "Virtual machines must be publicly accessible."
       isCorrect: false
       explanation: "Incorrect. Virtual machines that are behind an internal load balancer shouldn't be accessed publicly. The load balancer provides the access point."

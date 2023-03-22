@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.continuous-validate-test-mission-critical-workloads.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Learn the objectives of this training module about continuous validation.
+  ms.date: 01/16/2023
+  author: sebader
+  ms.author: prwilk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/1-introduction.md)]

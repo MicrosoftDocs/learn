@@ -4,12 +4,13 @@ title: List the differences between containers and VMs
 metadata:
   title: List the differences between containers and VMs
   description: "List the differences between containers and VMs"
-  ms.date: 03/01/2021
+  ms.date: 01/04/2023
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
+  ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 5
 content: |
   [!include[](includes/3-list-differences-between-containers-vms.md)]

@@ -4,13 +4,11 @@ title: Explore authentication
 metadata:
   title: Explore authentication
   description: "Explore authentication"
-  ms.date: 09/05/2022
+  ms.date: 03/16/2023
   author: wwlpublish
-  ms.author: v-arxia
+  ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/12-explore-authentication.md)]

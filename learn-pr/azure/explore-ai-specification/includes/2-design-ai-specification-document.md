@@ -52,7 +52,7 @@ There are three limitations:
 
 ***In this section, you'll include the brain design.***
 
-To find the strategies, we'll conduct interviews with subject matter experts filling up the three-column exercise as it's shown below.
+To find the strategies, you'll conduct interviews with subject matter experts filling up the three-column exercise as it's shown below.
 
 **Heuristic**
 
@@ -116,13 +116,24 @@ For the Moab, there are four environment states:
 
 Note, this section refers to the first column (Configuration Variable) of the three columns table defined above within the heuristics subsection: "When this happens in the environment…(scenario)" can potentially be identifying scenarios that your SMEs care about. In other cases, it relates to the decomposition agreed upon: steady-state control could be one scenario, and machine startup could be another one. Each scenario is represented by a unique set of initial conditions, and a set of final ones (including both for failure as well as success).
 
-Our Moab use case consists of only one scenario:
+Moab use case consists of only one scenario:
 
-- From a given set of initial conditions where the ball is already on the plate, we seek to drive the ball to the center.
+- From a given set of initial conditions where the ball is already on the plate, you seek to drive the ball to the center.
+
+The table below shows the initial environment states or conditions of ball_x and ball_y position, ball_x and ball_y velocity, plate_pitch, and plate_roll to be considered for our scenario.
+
+| Configuration variable | Range [min, max]    | Description     |
+| ---------------------- | ------------------- | --------------- |
+| initial_x              | [-0.05625, 0.05625] | Ball X position |
+| initial_y              | [-0.05625, 0.05625] | Ball Y position |
+| initial_vel_x          | [-0.02, 0.02]       | Ball X velocity |
+| initial_vel_y          | [-0.02, 0.02]       | Ball Y velocity |
+| initial_pitch          | [-0.2, 0.2]         | Plate pitch     |
+|                        | [-0.2, 0.2]         | Plate roll      |
 
 For balancing a ball, you want to randomize the starting ball position (initial_x and initial_y) and velocity (initial_vel_x, initial_vel_x) values for each scenario. You also want to randomize the starting plate pitch and roll as well. This will assist the Brain in learning from a wide range of starting positions, making it more effective in each scenario. Finally, you must define these six variables' variability range [min, max].
 
-For the initial conditions above, we seek training a brain that can get the ball to the center (success), while avoiding that the ball gets too close to the edge of the plate (failure). The conditions for success are further defined in the next section.
+For the initial conditions above, you seek training a brain that can get the ball to the center (success), while avoiding that the ball gets too close to the edge of the plate (failure). The conditions for success are further defined in the next section.
 
 ## Section 12 - Success Criteria
 
@@ -136,7 +147,7 @@ Note, in this section, you describe the benchmarks for the Brain in terms of the
 - What is the episode length needed to convince operators that the AI is doing what it's supposed to do?
 - Finally, what optimization improvement is good?
 
-The performance of our brain will be measured by the root-mean-squared error of the distance to the center. For an assessment to be successful, ALL episodes in the assessment need to have passed the criteria.
+The performance of your brain will be measured by the root-mean-squared error of the distance to the center. For an assessment to be successful, ALL episodes in the assessment need to have passed the criteria.
 
 The Brain will be benchmarked against the PID controller included in the Moab device.
 
@@ -186,7 +197,8 @@ This section answers how the brain will be deployed to control the production sy
 
 ***This section is to ensure that people with the skill sets needed are included.***
 
-We've arrived at the last section of the AI specification document.
-In this module, we've seen an example of all the sections included in the AI specification document of Project Moab. The Moab brain is monolithic, i.e. it only has a learned module, move to center.
+You've arrived at the last section of the AI specification document.
 
-In industrial processes, you'll find more complex scenarios and a modular brain design will be necessary.
+In this module, you've seen an example of all the sections included in the AI specification document of Project Moab. The Moab brain is monolithic, i.e. it only has a learned module, move to center.
+
+In industrial processes, you'll find more complex scenarios and a modular brain design will be necessary. You can find the AI Specification document for a real industrial use case, the gyratory crusher, here.

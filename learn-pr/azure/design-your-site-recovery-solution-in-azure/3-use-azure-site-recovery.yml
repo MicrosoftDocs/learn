@@ -33,7 +33,7 @@ quiz:
       explanation: You use Azure Traffic Manager and Azure Load Balancer to route traffic to your virtual machines.
     - content: IP reservations, IP subnet/gateway consistency, retaining MAC address.
       isCorrect: false
-      explanation: You cannot retain the same MAC address when replicating virtual machines.
+      explanation: You can't retain the same MAC address when replicating virtual machines.
     - content: Load balanced traffic, IP reservations, maximum of one virtual machine per subnet.
       isCorrect: false
       explanation: You can have many virtual machines in a subnet.

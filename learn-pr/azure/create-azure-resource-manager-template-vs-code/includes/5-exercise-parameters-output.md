@@ -93,7 +93,7 @@ Here, you use parameters to limit the values allowed for a parameter.
 
 1. Again, enter **par**, and select **new-parameter**.
 
-1. Change the new generic parameter to this:
+1. Change the new generic parameter to the following:
 
     ```json
     "storageSKU": {

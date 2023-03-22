@@ -11,7 +11,7 @@ Your organization is exploring Azure virtual networking capabilities. As the Azu
 
 ## Architecture diagram
 
-:::image type="content" source="../media/lab-04.png" alt-text="Architecture diagram as explained in the text.":::
+:::image type="content" source="../media/lab-04.png" alt-text="Architecture diagram as explained in the text." border="false":::
 
 > [!NOTE]
 > Tasks 1 - 4 focus on IP addresses and access. 
@@ -24,7 +24,7 @@ Your organization is exploring Azure virtual networking capabilities. As the Azu
 + **Task 2**: Deploy virtual machines into different subnets of the virtual network.
     + Review a JSON template that will deploy two virtual machines, **VM0** and **VM1**.
     + Use Azure PowerShell to deploy the template. 
-+ **Task 3**: Configure private and public IP addresses of Azure VMs. Ensure the IP addresses don't change over time. 
++ **Task 3**: Configure private and public IP addresses of Azure virtual machines. Ensure the IP addresses don't change over time. 
     + Associate the VM0 NIC with a static public IP address, **az104-04-pip0**.
     + Associate the VM1 NIC with a static public IP address, **az104-04-pip1**. 
 + **Task 4**: Configure network security groups. Protect the virtual machine public endpoints from being accessible from the internet. 
@@ -44,9 +44,6 @@ Your organization is exploring Azure virtual networking capabilities. As the Azu
     + Verify external DNS name resolution is working. 
 
 > [!NOTE]
-> Click on the thumbnail image to start the lab simulation. When you're done, be sure to return to this page so you can continue learning. 
+> Select the thumbnail image to start the lab simulation. When you're done, be sure to return to this page so you can continue learning. 
 
 [![Screenshot of the simulation page.](../media/simulation-networks-thumbnail.jpg)](https://mslabs.cloudguides.com/guides/AZ-104%20Exam%20Guide%20-%20Microsoft%20Azure%20Administrator%20Exercise%208?azure-portal=true)
-
-
-

@@ -2,8 +2,8 @@
 uid: learn.wwl.design-mongodb-database-for-azure-cosmos-db
 metadata:
   title: Design an Azure Cosmos DB for MongoDB database
-  description: "Learn about indexes, shard keys, modeling and the aggregation pipeline."
-  ms.date: 10/20/2022
+  description: "Design an Azure Cosmos DB for MongoDB database"
+  ms.date: 12/28/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ abstract: |
   *   Aggregation pipeline
 prerequisites: |
   Before starting this module, you should have experience of building cloud applications with Microsoft JavaScript, Java, Python, C# or a similar programming language.
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/design-mongodb-database-for-azure-cosmos-db.svg
 levels:
 - intermediate
 roles:

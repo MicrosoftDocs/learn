@@ -4,13 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/06/2022
+  ms.date: 02/24/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  zone_pivot_groups: None
 durationInMinutes: 5
 content: |
   [!include[](includes/9-knowledge-check.md)]
@@ -32,7 +31,7 @@ quiz:
     choices:
     - content: "Contextual Query Language"
       isCorrect: false
-      explanation: "Contextual queries will not work with log analytics."
+      explanation: "Contextual queries won't work with log analytics."
     - content: "Embedded SQL"
       isCorrect: false
       explanation: "This is a type of SQL embedded into a solution."
@@ -46,10 +45,10 @@ quiz:
       explanation: "Activity log alert. An activity log alert to receive notifications when specific changes occur to resources in your Azure subscription."
     - content: "Application alert"
       isCorrect: false
-      explanation: "An application alert will notify you if there is a problem with an application not the virtual machine."
+      explanation: "An application alert will notify you if there's a problem with an application not the virtual machine."
     - content: "Log alert"
       isCorrect: false
-      explanation: "A log alert is not going to help in this situation."
+      explanation: "A log alert isn't going to help in this situation."
   - content: "The IT managers would like to use a visualization tool for the Azure Monitor results. Each of the following is available, but there is a need to pick the one that will allow for insights and investigation of the data; which should be used?"
     choices:
     - content: "Dashboard"

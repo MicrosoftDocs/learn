@@ -1,3 +1,4 @@
+
 In this module, you learned about authentication and authorization.  You've learned about identity as the new security perimeter and the role of Active Directory. You also looked at the concept of federation to access resources that belong to another organization.
 
 Now you've completed this module, you'll be able to:

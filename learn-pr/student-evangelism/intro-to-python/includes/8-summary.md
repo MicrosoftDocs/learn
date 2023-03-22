@@ -1,6 +1,6 @@
 Congratulations! You've created and executed your first Python program and started your journey to becoming a Python programmer.
 
-There are some great Python tutorials online, including [the official tutorial](https://docs.python.org/3/tutorial?azure-portal=true) from the Python Software Foundation. Python is a simple language, yet a powerful one. Learning it opens the door to a whole new world of data exploration, discovery, and even visualization. Now that you've learned the basics, use them as building blocks for Python applications of your own.
+For more information, there are some great Python tutorials online, including [the official tutorial](https://docs.python.org/3/tutorial?azure-portal=true) from the Python Software Foundation. Python is a simple language, yet a powerful one. Learning it opens the door to a whole new world of data exploration, discovery, and even visualization. Now that you've learned the basics, use them as building blocks for Python applications of your own.
 
 ## Further learning
 

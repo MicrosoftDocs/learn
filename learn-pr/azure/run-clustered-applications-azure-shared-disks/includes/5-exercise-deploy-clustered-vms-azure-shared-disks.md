@@ -1,16 +1,16 @@
 Your company's CTO needs to provide proof of concept for using Azure shared disks to deploy a clustered application in Azure virtual machines (VMs). You've been asked to test clustered scenarios with both Linux and Windows VMs.
 
-> [!Note]
+> [!NOTE]
 > The first time you activate a sandbox and accept the terms, your Microsoft account is associated with a new Azure directory named Microsoft Learn Sandbox. You're also added to the special Concierge Subscription.
 
-> [!Note]
+> [!NOTE]
 > You can use either Azure PowerShell or the Azure CLI to manage Windows and Linux VMs on Azure. Here, for learning purposes, if you choose the Windows option, you'll use Azure PowerShell. If you choose Linux, you'll use the Azure CLI.
 
 ::: zone pivot="linux-cloud"
 
 ## Deploy Linux VMs by using Azure shared disks
 
-To provide proof of concept, you'll deploy two Linux VMs that are running the Ubuntu Server OS. You'll also test the SCSI Persistent Reservations (PR) commands on the Azure shared disk.
+To provide proof of concept, deploy two Linux VMs that are running the Ubuntu Server OS. You'll also test the SCSI Persistent Reservations (PR) commands on the Azure shared disk.
 
 In this exercise, you explore Azure shared disk deployment and perform the following tasks:
 
@@ -117,15 +117,15 @@ When you've finished this task, the shared disk is attached to two VMs at the sa
 
     The command should show one reservation to the shared disk for VM1.
 
+    :::image type="content" source="../media/05-disk-status-with-vm1-registration.png" alt-text="Screenshot of disk status with V M 1 registration." border="true":::
+
 1. Close the SSH session:
 
     ```bash
     exit
     ```
 
-    :::image type="content" source="../media/05-disk-status-with-vm1-registration.png" alt-text="Screenshot of disk status with V M 1 registration." border="true":::
-
-1. Connect to the second VM by using SSH using the following command:
+1. Connect to the second VM through SSH by using the following command:
 
     ```bash
     myPublicIP2=$(az network public-ip show --resource-group <rgn>[sandbox resource group name]</rgn> --name myVM2PublicIP --query 'ipAddress' --output tsv)
@@ -150,33 +150,48 @@ When you've finished this task, the shared disk is attached to two VMs at the sa
     sudo sg_persist /dev/sdc -s
     ```
 
+    :::image type="content" source="../media/05-disk-status-with-vm1-and-vm2-registrations.png" alt-text="Disk status with VM1 and VM2 registrations." border="true":::
+
+1. Close the SSH session:
+
     ```bash
     exit
     ```
-
-    :::image type="content" source="../media/05-disk-status-with-vm1-and-vm2-registrations.png" alt-text="Disk status with VM1 and VM2 registrations." border="true":::
 
 1. Connect to **myVM1** by using SSH:
 
     ```bash
     ssh azureuser@$myPublicIP1
-        
+    ```
+
+1. Run the following commands:
+
+    ```bash
     # Reserve the device with exclusive write permission. This command will ensure that VM1 has exclusive write to the disk, while any write from VM2 will not succeed.
     sudo sg_persist --reserve --device /dev/sdc --param-rk=1234 --prout-type=1 --out
-        
+    
     # Check the reservation on the device.
     sudo sg_persist /dev/sdc -s
-    exit
     ```
 
     :::image type="content" source="../media/05-disk-status-with-vm1-reservation.png" alt-text="Screenshot of disk status with V M 1 reservation." border="true":::
+
+1. Close the SSH session:
+
+    ```bash
+    exit
+    ```
 
 1. Connect to **myVM2** by using SSH:
 
     ```bash
     ssh azureuser@$myPublicIP2
+    ```
 
-    # Preemt the DEVICE from **myVM2**. This command will take over the exclusive write operation from VM1. Now VM2 has write access to the disk.
+1. Run the following commands:
+
+    ```bash
+    # Preempt the DEVICE from **myVM2**. This command will take over the exclusive write operation from VM1. Now VM2 has write access to the disk.
     sudo sg_persist --preempt --device /dev/sdc --param-rk=1235 --param-sark=1234 --prout-type=5 --out
 
     # Report capabilities. Verify that reservation exist for VM2 with key 1235.
@@ -191,8 +206,11 @@ When you've finished this task, the shared disk is attached to two VMs at the sa
         
     # Report capabilities.
     sudo sg_persist /dev/sdc -s
-        
-    # Exit the SSH from VM2
+    ```
+
+1. Close the SSH session:
+
+    ```bash
     exit
     ```
 
@@ -202,7 +220,7 @@ When you've finished this task, the shared disk is attached to two VMs at the sa
 
 ## Deploy Windows VMs by using Azure shared disks
 
-To further demonstrate Azure shared disk functionality, you'll deploy two Windows VMs running the Windows server operating system (OS). You'll then test the SCSI Persistent Reservations (PR) commands on the Azure shared disk.
+To further demonstrate Azure shared disk functionality, deploy two Windows VMs running the Windows server operating system (OS). You'll then test the SCSI Persistent Reservations (PR) commands on the Azure shared disk.
 
 In this exercise, you'll explore Azure shared disk deployment and perform the following tasks:
 
@@ -293,7 +311,7 @@ In this exercise, you'll explore Azure shared disk deployment and perform the fo
 
 ### Install Windows Failover Clustering Service on myVM3
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), and make sure you're in the sandbox subscription. In the Azure portal, i
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), and make sure you're in the sandbox subscription.
 1. In the **search resources, services, and docs (G+/)** field, enter **virtual machines**, and then select **virtual machines.**
 1. Select the **myVM3** VM from the toolbar, select **Connect**, and then select **RDP**.
 1. Select **Download RDP File**, and then connect by using the following credentials:
@@ -315,7 +333,7 @@ In this exercise, you'll explore Azure shared disk deployment and perform the fo
 1. Verify that the **Include management tools (if applicable)** checkbox is selected. Select **Add Features**, and then select **Next**.
 1. On the **Confirmation** page, select the **Restart the destination server automatically if required** checkbox, and then select **Yes**. Select **Install** to install the Failover Clustering role.
 
-> [!Note]
+> [!NOTE]
 > After the failover cluster feature is installed, virtual machine **myVM3** automatically restarts.
 
 ### Install Windows Failover Clustering Service on myVM4
@@ -353,12 +371,12 @@ In this exercise, you'll explore Azure shared disk deployment and perform the fo
     - Password: **Pa55w.rd1234**
 
 1. In **Server Manager**, from the **Tools** menu, select **Failover Cluster Manager**.
-1. In **Failover Cluster Manager**, from the **Action** menu, select **Validate Configuration**. The **Validate a Configuration Wizard** opens.
+1. In **Failover Cluster Manager**, from the **Actions** menu, select **Validate Configuration**. The **Validate a Configuration Wizard** opens.
 1. In the **Validate a Configuration Wizard**, in the **Before You Begin** page, select **Next**.
 1. On the **Select Servers or a Cluster** page, in the **Enter Name** field, enter **myVM3**, and then select **Add**.
 1. On the **Select Servers or a Cluster** page, in the **Enter Name** field, enter **myVM4**, and then select **Add**.
 1. Select **Next** to continue with testing the cluster setup.
-1. On the **Testing Options** page, select **Run only test I select**, and then select **Next**.
+1. On the **Testing Options** page, select **Run only tests I select**, and then select **Next**.
 1. Clear all other tests, select only the **Storage** checkbox, and then select **Next**.
 1. On the **Confirmation** page, select **Next**.
 1. Verify that all the tests are successful, and then select **Finish**.

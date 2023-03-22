@@ -4,7 +4,7 @@ To conclude your review of Azure Blob Storage cost optimization options, you dec
 
 Azure Storage reserved capacity offers significant savings in return for purchasing a designated capacity of Azure Block Blob Storage or Azure Data Lake Storage for the period of one or three years. Reservations are available in 100 TB and 1 PB blocks to accommodate varying customer needs. The purchase applies to the cost of storage (per GB) and doesn’t cover early deletion charges, or the charges associated with storage operations and data transfers.
 
-As part of the arrangement, you can choose the required number of units for Hot, Cool or Archive access tiers in combination with on any of the available storage redundancy options within a specific Azure region. The amount of savings depends on several factors, including:
+As part of the arrangement, you can choose the required number of units for hot, cool or archive access tiers in combination with on any of the available storage redundancy options within a specific Azure region. The amount of savings depends on several factors, including:
 
 - The duration of the reservation.
 

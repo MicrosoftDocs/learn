@@ -6,8 +6,8 @@ This module explains what Azure Cloud Shell does, how it works, and when you sho
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you'll:
 
-- Describe Azure Cloud Shell and the functionality it provides
-- Determine whether Cloud Shell meets the needs of your organization
-- Recognize how to use Cloud Shell and persist files for multiple sessions
+- Describe Azure Cloud Shell and the functionality it provides.
+- Determine whether Cloud Shell meets the needs of your organization.
+- Recognize how to use Cloud Shell and persist files for multiple sessions.

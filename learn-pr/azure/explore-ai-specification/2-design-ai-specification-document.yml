@@ -9,6 +9,6 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 5
+durationInMinutes: 15
 content: |
   [!include[](includes/2-design-ai-specification-document.md)] 

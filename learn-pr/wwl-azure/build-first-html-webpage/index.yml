@@ -2,14 +2,14 @@
 uid: learn.wwl.build-first-html-webpage
 metadata:
   title: Build your first HTML webpage
-  description: "Build your first HTML webpage"
-  ms.date: 12/01/2022
+  description: "Illustrates basic programming techniques using Visual Studio Code to write HTML and CSS."
+  ms.date: 03/01/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Build your first HTML webpage
-summary: Illustrates basic programming techniques using Visual Studio Code to write HTML and CSS.
+summary: Illustrates basic programming techniques using Visual Studio Code to write HTML.
 abstract: |
   After completing this module, you'll be able to:
   - Describe the basics of HTML
@@ -18,7 +18,7 @@ abstract: |
   - Make linked lists in HTML
 prerequisites: |
   Basic knowledge of computer terminology.
-iconUrl: /learn/achievements/build-first-html-webpage.svg
+iconUrl: /training/achievements/build-first-html-webpage.svg
 levels:
 - beginner
 roles:
@@ -27,8 +27,7 @@ roles:
 - k-12-educator
 - student
 products:
-- return-to-school
-- return-to-workplace
+- vs-code
 subjects:
 - cloud-computing
 units:

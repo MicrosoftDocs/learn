@@ -23,9 +23,11 @@ roles:
 - security-operations-analyst
 products:
 - azure
-- azure-sentinel
+- microsoft-sentinel
+- azure-active-directory
+- office-365
 subjects:
-- security
+- cloud-security
 units:
 - learn.wwl.connect-microsoft-services-to-azure-sentinel.introduction
 - learn.wwl.connect-microsoft-services-to-azure-sentinel.plan-for-connectors

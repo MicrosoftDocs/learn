@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-call-methods.call-methods
+title: Exercise - Call the methods of a .NET Class
+metadata:
+  title: Exercise - Call the methods of a .NET Class
+  description: "Exercise - Call the methods of a .NET Class"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 12
+content: |
+  [!include[](includes/3-call-methods.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following represents the correct way to create a class instance?"
+    choices:
+    - content: "`Random dice = new Random.Next();`."
+      isCorrect: false
+      explanation: "Incorrect. Declaring an instance of a class requires a reference to the class. In this case `Random.Next()` is a reference to the `Next()` method, not the class."
+    - content: "`Random dice = new Random();`."
+      isCorrect: true
+      explanation: "Correct! Defining the type and including the `new` operator is the correct way to create a class instance."
+    - content: "`String dice = new Random();`."
+      isCorrect: false
+      explanation: "Incorrect. The `Random` type must be used to define an instance of the `Random` class."
+  - content: "A developer creates an instance of the `Random` class named `coins`. Which of the following code lines can they use to implement the `Next()` method?"
+    choices:
+    - content: "`int money = new coins.Next();`."
+      isCorrect: false
+      explanation: "Incorrect. The keyword `new` can not be used when calling a method."
+    - content: "`int money = Random.Next();`."
+      isCorrect: false
+      explanation: "Incorrect. The `Random.Next()` method cannot be accessed directly (using the `Random` class) because it is a stateful method."
+    - content: "`int money = coins.Next();`."
+      isCorrect: true
+      explanation: "Correct! This statement uses your instance of the `Random` class, `coins`, to return a random number."

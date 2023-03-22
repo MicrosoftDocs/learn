@@ -3,7 +3,7 @@ uid: learn.wwl.use-css-styles
 metadata:
   title: Use CSS styles in a webpage
   description: "Use CSS styles in a webpage"
-  ms.date: 12/06/2022
+  ms.date: 03/03/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ abstract: |
   - Use selectors in CSS
 prerequisites: |
   Basic knowledge of computer terminology.
-iconUrl: /learn/achievements/use-css-styles.svg
+iconUrl: /training/achievements/use-css-styles.svg
 levels:
 - beginner
 roles:

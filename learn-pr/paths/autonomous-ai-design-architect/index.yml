@@ -21,7 +21,7 @@ summary: |
 
   ***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)***
 prerequisites: None
-iconUrl: /training/achievements/ai-edge-engineer.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
@@ -36,8 +36,8 @@ modules:
 - learn.oxford.explore-automated-intelligence
 - learn.oxford.explore-autonomous-intelligence
 - learn.oxford.intro-machine-teaching
-- learn.oxford.explore-ai-specification
 - learn.oxford.explore-design-brain-patterns
 - learn.oxford.explore-select-use-cases
+- learn.oxford.explore-ai-specification
 trophy:
   uid: learn.oxford.autonomous-ai-design-architect.trophy

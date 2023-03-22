@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-security.explore-identity
+title: Explore identity
+metadata:
+  title: Explore identity
+  description: "The explore identity introduces the concepts around identity as it related to security in the broader module."
+  ms.date: 01/31/2023
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-explore-identity.md)]

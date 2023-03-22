@@ -1,9 +1,9 @@
 To use Form Recognizer, you first need an Azure subscription, which you can create for free, and a Form Recognizer resource. The resource provides you with an endpoint and key, with which you can access the Form Recognizer service through REST or by using the appropriate software development kit (SDK). SDKs are available in these languages:
 
-* .NET
-* Python
-* Java
-* JavaScript
+- .NET
+- Python
+- Java
+- JavaScript
 
 Form Recognizer is capable of analyzing JPG and PNG images, along with PDF and TIFF documents to extract and compile the key data you need in a JSON format.  
 
@@ -15,8 +15,8 @@ There are three services with different functions available through Form Recogni
 
 ![Example of Layout API with selection marks, text, and tables identified and represented in JSON format.](../media/layout-tool-example.jpeg)
 
-**Pre-built models** analyze three unique form types: invoices, sales receipts, and business cards. This service combines Optical Character Recognition (OCR) capabilities with deep learning models that understand invoice, receipt, and business card information to extract key information in multiple languages.
+**Prebuilt models** analyze three unique form types: invoices, sales receipts, and business cards. This service combines Optical Character Recognition (OCR) capabilities with deep learning models that understand invoice, receipt, and business card information to extract key information in multiple languages.
 
 **Custom models** are created by uploading five or more sample forms. Form Recognizer then 'trains' a custom model that can extract data tailored specifically to your forms. After you train a custom model, you can test and retrain it to reliably extract data from more forms according to your needs.
 
-Form Recognizer is designed to put the key information you need in one place. By using the pre-built or custom model, it becomes easier to find and utilize that information.
+Form Recognizer is designed to put the key information you need in one place. When you use a prebuilt or custom model, it becomes easier to find and utilize that information.

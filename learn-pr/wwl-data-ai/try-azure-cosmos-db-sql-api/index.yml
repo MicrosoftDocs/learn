@@ -1,19 +1,19 @@
 ### YamlMime:Module
 uid: learn.wwl.try-azure-cosmos-db-sql-api
 metadata:
-  title: Try Azure Cosmos DB SQL API
-  description: "Learn how to use the Azure Cosmos DB SQL to create an account, and then use the account to create Cosmos DB resources."
-  ms.date: 06/03/2022
+  title: Try Azure Cosmos DB for NoSQL
+  description: "Try Azure Cosmos DB for NoSQL"
+  ms.date: 12/19/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Try Azure Cosmos DB SQL API
-summary: Learn how to use the Azure Cosmos DB SQL to create an account, and then use the account to create Cosmos DB resources.
+title: Try Azure Cosmos DB for NoSQL
+summary: Learn how to use the Azure Cosmos DB for NoSQL to create an account, and then use the account to create Cosmos DB resources.
 abstract: |
   After completing this module, you'll be able to:
-  - Create a new Azure Cosmos DB SQL API account
-  - Create database, container, and item resources for an Azure Cosmos DB SQL API account
+  *   Create a new Azure Cosmos DB for NoSQL account
+  *   Create database, container, and item resources for an Azure Cosmos DB for NoSQL account
 prerequisites: |
   Before starting this module, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
 iconUrl: /training/achievements/azure-cosmos-db-try.svg

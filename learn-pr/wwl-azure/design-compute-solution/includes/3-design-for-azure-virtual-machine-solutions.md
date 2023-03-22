@@ -46,14 +46,14 @@ After you choose the virtual machine name and location, you need to decide on th
 
 The best way to determine the appropriate machine size is to consider the type of workload your machine needs to run. Based on the workload, you can choose from a subset of available virtual machine sizes. The following table shows size classifications for Azure Virtual Machines workloads and recommended usage scenarios.
 
-| Classification | Description | Scenarios |
+| **Classification** | **Description** | **Scenarios** |
 | --- | --- | --- |
 | **General purpose** | General-purpose virtual machines are designed to have a balanced CPU-to-memory ratio. | - Testing and development <br> - Small to medium databases <br> - Low to medium traffic web servers |
 | **Compute optimized** | Compute optimized virtual machines are designed to have a high CPU-to-memory ratio. | - Medium traffic web servers <br> - Network appliances <br> - Batch processes <br> - Application servers |
 | **Memory optimized** | Memory optimized virtual machines are designed to have a high memory-to-CPU ratio. | - Relational database servers <br> - Medium to large caches <br> - In-memory analytics |
-| **Storage optimized** | Storage optimized virtual machines are designed to have high disk throughput and I/O. | - Big Data <br> - SQL and NoSQL databases <br> - Data warehousing <br> - Large transactional databases |
-| **GPU** | GPU virtual machines are specialized virtual machines targeted for heavy graphics rendering and video editing. Available with single or multiple GPUs. | - Model training <br> - Inferencing with deep learning |
-| **High performance computes** | High performance compute offers the fastest and most powerful CPU virtual machines with optional high-throughput network interfaces (RDMA). | - Workloads that require fast performance <br> - High traffic networks |
+| **Storage optimized** | Storage optimized virtual machines are designed to have high disk throughput and I/O. | - Virtual machines running databases |
+| **GPU** | GPU virtual machines are specialized virtual machines targeted for heavy graphics rendering and video editing. | - Model training and inferencing with deep learning |
+| **High performance computes** | High performance compute offers the fastest and most powerful CPU virtual machines with optional high-throughput network interfaces. | - Workloads that require fast performance <br> - High traffic networks |
 
 #### Virtual machine pricing
 

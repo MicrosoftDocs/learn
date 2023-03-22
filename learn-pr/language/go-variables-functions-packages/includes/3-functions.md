@@ -90,7 +90,7 @@ func sum(number1 string, number2 string) (result int) {
 }
 ```
 
-Notice that now you need to enclose the result value of the function in parenthesis. You can also use the variable inside the function, and you can simply add a `return` line at the end. Go will return the current values of those return variables. The simplicity of writing the `return` keyword at the end of the function is appealing (especially when you have more than one return value). We don't recommend this approach. It can be unclear what the function is returning.
+Notice that now you need to enclose the result value of the function in parenthesis. You can also use the variable inside the function, and just add a `return` line at the end. Go will return the current values of those return variables. The simplicity of writing the `return` keyword at the end of the function is appealing (especially when there's more than one return value). We don't recommend this approach. It can be unclear what the function is returning.
 
 ## Return multiple values
 
@@ -113,7 +113,11 @@ You now need two variables to store the results of the function. (It won't compi
 ```go
 package main
 
-import "fmt"
+import (
+    "fmt"
+    "os"
+    "strconv"
+)
 
 func main() {
     sum, mul := calc(os.Args[1], os.Args[2])
@@ -127,7 +131,11 @@ Another interesting feature in Go is that if you don't need one of the return va
 ```go
 package main
 
-import "fmt"
+import (
+    "fmt"
+    "os"
+    "strconv"
+)
 
 func main() {
     sum, _ := calc(os.Args[1], os.Args[2])
@@ -161,12 +169,12 @@ func updateName(name string) {
 
 Even though you changed the name to "David" in the function, the output is still "John." The output hasn't changed because the change in the `updateName` function modifies only the local copy. Go passed the value of the variable, not the variable itself.
 
-If you want the change you make in the `updateName` function to affect the `firstName` variable in the `main` function, you need to use a pointer. A *pointer* is a variable that contains the memory address of another variable. When you send a pointer to a function, you're not passing the value but an address memory. So every change you make to that variable affects the caller.
+If you want the change you make in the `updateName` function to affect the `firstName` variable in the `main` function, you need to use a pointer. A *pointer* is a variable that contains the memory address of another variable. When you send a pointer to a function, you're not passing a value, you're passing a memory address. So every change you make to that variable affects the caller.
 
 In Go, there are two operators for working with pointers:
 
 - The `&` operator takes the address of the object that follows it.
-- The `*` operator dereferences a pointer. That is, it gives you access to the object at the address contained in the pointer.
+- The `*` operator dereferences a pointer. It gives you access to the object at the address contained in the pointer.
 
 Let's modify our previous example to clarify how pointers work:
 
@@ -188,4 +196,4 @@ func updateName(name *string) {
 
 Run the preceding code. Notice that the output now shows `David` instead of `John`.
 
-The first thing you have to do is modify the function's signature to indicate that you want to receive a pointer. To do so, change the parameter type from `string` to `*string`. (The latter is still a string, but now it's a *pointer to a string*.) Then, when you assign a new value to that variable, you need to add the star (`*`) on the left side of the variable to yield that variable's value. When you call the `updateName` function, you don't send the value but the memory address of the variable. That's why the preceding code has the `&` symbol on the left side of the variable.
+The first thing you have to do is modify the function's signature to indicate that you want to receive a pointer. To do so, change the parameter type from `string` to `*string`. (The latter is still a string, but now it's a *pointer to a string*.) Then, when you assign a new value to that variable, you need to add the star (`*`) on the left side of the variable to yield that variable's value. When you call the `updateName` function, you don't send the value but the memory address of the variable. The `&` symbol on the left side of the variable indicates the address of the variable.

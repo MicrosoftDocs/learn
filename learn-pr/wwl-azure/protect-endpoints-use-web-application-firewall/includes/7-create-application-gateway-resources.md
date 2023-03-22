@@ -22,7 +22,7 @@ The recommended way to enforce these restrictions depends on how you deploy your
 1.  An Application Gateway instance also needs a public IP address, which you'll create next by running the following commands from the Git Bash shell:
     
     ```Bash
-    APPLICATION_GATEWAY_PUBLIC_IP_NAME=app-gw-openlab-public-ip
+    APPLICATION_GATEWAY_PUBLIC_IP_NAME=pip-$APPNAME-app-gw
     az network public-ip create \
         --resource-group $RESOURCE_GROUP \
         --location $LOCATION \
@@ -79,13 +79,13 @@ The recommended way to enforce these restrictions depends on how you deploy your
 5.  With all relevant information collected, you can now provision an instance of Application Gateway.
     
     ```Bash
-    APPGW_NAME=appgw-openlab
-    APPNAME=api-gateway
-    SPRING_APP_PRIVATE_FQDN=${APPNAME}.private.azuremicroservices.io
+    APPGW_NAME=agw-$APPNAME-$UNIQUEID
+    APIGW_NAME=$SPRING_APPS_SERVICE-api-gateway
+    SPRING_APP_PRIVATE_FQDN=${APIGW_NAME}.private.azuremicroservices.io
     az network application-gateway create \
         --name $APPGW_NAME \
         --resource-group $RESOURCE_GROUP \
-        --location $LOCATION \
+           --location $LOCATION \
         --capacity 2 \
         --sku WAF_v2 \
         --frontend-port 443 \
@@ -97,7 +97,9 @@ The recommended way to enforce these restrictions depends on how you deploy your
         --subnet $APPLICATION_GATEWAY_SUBNET_NAME \
         --servers $SPRING_APP_PRIVATE_FQDN \
         --key-vault-secret-id $KEYVAULT_SECRET_ID_FOR_CERT \
-        --identity $APPGW_IDENTITY_NAME
+        --identity $APPGW_IDENTITY_NAME \
+        --priority "1" \
+        --waf-policy $WAF_POLICY_NAME
     ```
 
 6.  To complete the configuration of the instance of Application Gateway, you need to retrieve the public key of the self-signed certificate, which is required to configure the certificate as issued by a trusted certification authority.

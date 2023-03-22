@@ -1,35 +1,30 @@
-The Dockerfile is the best tool for adding new software to your container. You might remember that you were asked to install Node.js while adding your container configuration files at the beginning of this process. You didn't choose that option, but now you want to include Node.js as part of your dev container.
+Dev Container Features and a Dockerfile are excellent tool for adding new software to your container. You might find during a project that you want to include additional software in your dev container over time, like Node.js.
 
 In this exercise, we'll look at how you can install a technology stack like Node in your container at any point.
 
-## Open the Dockerfile
+## Dev container Feature
 
 1. Press <kbd>F1</kbd> to open the Command Palette.
 1. Type **explorer** and select **View: Show Explorer**.
 1. Open the ".devcontainer" folder.
-1. Locate and open the Dockerfile.
+1. Locate and open the devcontainer.json.
+1. Add the following code to install Node.js via a Feature.
 
-## Add code to the Dockerfile
-
-1. Add the following code to install Node.js.
-
-   ```yml
-   RUN apt-get update \
-   && apt-get install -y curl ca-certificates \
-   && curl -sL https://deb.nodesource.com/setup_14.x | bash \
-   && apt-get install nodejs \
-   && node -v \
-   && npm -v \
-   ```
+```json
+"features": {
+	"ghcr.io/devcontainers/features/node:1": {
+		"version": "18"
+	}
+}
+```
 
 1. Save your project.
-
-## Rebuild container
-
 1. Open the Command Palette.
 1. Type **rebuild** and select **Dev Containers: Rebuild Container**.
 
 ## Check the Node version
+
+Let's check to make sure Node installed correctly.
 
 1. Press <kbd>Ctrl</kbd> + <kbd>`</kbd> to open the integrated terminal in Visual Studio Code.
 1. Enter the following code to check your version of Node.

@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.build-reusable-bicep-templates-parameters.how-secure-parameter  
+uid: learn.azure.build-reusable-bicep-templates-parameters.how-secure-parameter
 title: Secure your parameters
 metadata:
-  unitType: learning-content  
+  unitType: learning-content
   title: Secure your parameters
   description: Learn about providing secure parameters by using decorators and Azure Key Vault references.
-  ms.date: 10/29/2021
+  ms.date: 01/03/2023
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial

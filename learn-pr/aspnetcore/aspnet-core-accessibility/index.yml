@@ -3,7 +3,7 @@ uid: learn.languages.aspnetcore-accessibility
 metadata:
   title: Create accessible web apps by using ASP.NET Core
   description: Diagnose and fix common web accessibility issues in an ASP.NET Core application.
-  ms.date: 04/20/2021
+  ms.date: 01/12/2023
   author: jongalloway
   ms.author: jogallow
   ms.topic: interactive-tutorial
@@ -31,7 +31,7 @@ roles:
 products:
 - aspnet-core
 - dotnet
-- vs
+- vs-code
 subjects:
 - accessibility
 - development-tools

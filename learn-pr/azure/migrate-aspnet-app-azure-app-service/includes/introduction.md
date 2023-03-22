@@ -14,5 +14,5 @@ By the end of this module, you'll be able to:
 
 ## Prerequisites
 
-- Familiarity with [Azure Container Registry](https://azure.microsoft.com/services/container-registry/)
+- Familiarity with [Azure Container Registry](https://azure.microsoft.com/services/container-registry/).
 - An active [Azure subscription](https://azure.microsoft.com/free/services/kubernetes-service/?azure-portal=true&WT.mc_id=akspipeline_intro-learn-ludossan)
