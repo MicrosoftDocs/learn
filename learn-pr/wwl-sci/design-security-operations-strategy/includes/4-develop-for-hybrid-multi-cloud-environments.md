@@ -1,3 +1,4 @@
+
 A hybrid cloud combines a private cloud (on-premises infrastructure)
 with a public cloud (computing services offered by third-party providers
 over the public internet). Hybrid clouds allow data and applications to
@@ -79,7 +80,7 @@ cybersecurity threat landscape.
 
 ## Azure management services
 
-An IT operations team is responsible for managing hybrid and multi-cloud
+An IT operations team is responsible for managing hybrid and multicloud
 environments, such as data center infrastructure, applications, and
 data, including the stability and security of these systems. However,
 gaining security insights across increasingly complex IT environments
@@ -109,7 +110,7 @@ a comprehensive identity service that:
     - Supports integrated access management for [thousands of applications](https://azuremarketplace.microsoft.com/marketplace/apps/Microsoft.AzureActiveDirectory) in the Azure Marketplace, including Salesforce, Google Apps, Box, and Concur.
 - [Microsoft Defender for Cloud](/azure/security-center/security-center-introduction) helps prevent, detect, and respond to threats with increased visibility into (and control over) the security of your Azure resources. It provides integrated security monitoring and policy management across subscriptions. It helps detect threats that might otherwise go unnoticed, and it works with a broad ecosystem of security solutions.
 
-## Example security architecture for hybrid and multi-cloud
+## Example security architecture for hybrid and multicloud
 
 This reference architecture illustrates how to use Microsoft Defender for Cloud and Microsoft Sentinel to monitor the security configuration and telemetry of on-premises and Azure operating system workloads. This includes Azure Stack.
 
