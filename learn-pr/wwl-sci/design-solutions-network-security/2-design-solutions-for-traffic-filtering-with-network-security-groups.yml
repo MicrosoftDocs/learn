@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-solutions-network-security.design-solutions-for-traffic-filtering-with-network-security-groups
+title: Design solutions for traffic filtering with network security groups
+metadata:
+  title: Design solutions for traffic filtering with network security groups
+  description: "SC-100 preparatory module on: design solutions for traffic filtering with network security groups."
+  ms.date: 3/14/2023
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-design-solutions-for-traffic-filtering-with-network-security-groups.md)]
