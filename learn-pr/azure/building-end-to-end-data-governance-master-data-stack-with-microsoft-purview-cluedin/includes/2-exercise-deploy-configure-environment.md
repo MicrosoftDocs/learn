@@ -153,7 +153,7 @@ You can bring an account you already have or use this guide to create one:
 1. From the results list, choose Key Vault.
 1. On the Key Vault section, choose Create.
 1. On the Create key vault section provide the following information:
-    1. Name: A unique name is required. For this quickstart, we use Contoso-vault2.
+    1. Name: A unique name is required.
     1. Subscription: Choose a subscription.
     1. Under Resource Group, choose Create new and enter a resource group name.
     1. In the Location pull-down menu, choose a location.

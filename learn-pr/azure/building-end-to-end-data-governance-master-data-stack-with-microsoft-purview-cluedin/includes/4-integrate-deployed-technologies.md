@@ -8,13 +8,13 @@ First we'll set up the storage account, and the data we'll be investigating.
 
 Download the following files it to your local drive. You'll find seven files representing different sample datasets across common master data domains:
 
-* [Companies.csv](https://download.microsoft.com/download/9/e/1/9e119d5d-9e2a-433c-a853-1cee0cfd1664/data/Arca/Companies.csv)
-* [Contacts.csv](https://download.microsoft.com/download/9/e/1/9e119d5d-9e2a-433c-a853-1cee0cfd1664/data/Experian/Contacts.csv)
-* [ContactsAddLater.csv](https://download.microsoft.com/download/9/e/1/9e119d5d-9e2a-433c-a853-1cee0cfd1664/data/Experian/ContactsAddLater.csv)
-* [Products.csv](https://download.microsoft.com/download/9/e/1/9e119d5d-9e2a-433c-a853-1cee0cfd1664/data/Navision/Products.csv)
-* [Employees.csv](https://download.microsoft.com/download/9/e/1/9e119d5d-9e2a-433c-a853-1cee0cfd1664/data/Salesforce/Employees.csv)
-* [Persons.csv](https://download.microsoft.com/download/9/e/1/9e119d5d-9e2a-433c-a853-1cee0cfd1664/data/Xero/Persons.csv)
-* [YellowSystems/Products.csv](https://download.microsoft.com/download/9/e/1/9e119d5d-9e2a-433c-a853-1cee0cfd1664/data/YellowSystems/Products.csv)
+* [Companies.csv](https://download.microsoft.com/download/e/3/0/e3081045-e628-4267-9ac4-f73e46f84e81/Arca/Companies.csv)
+* [Contacts.csv](https://download.microsoft.com/download/e/3/0/e3081045-e628-4267-9ac4-f73e46f84e81/Experian/Contacts.csv)
+* [ContactsAddLater.csv](https://download.microsoft.com/download/e/3/0/e3081045-e628-4267-9ac4-f73e46f84e81/Experian/ContactsAddLater.csv)
+* [Products.csv](https://download.microsoft.com/download/e/3/0/e3081045-e628-4267-9ac4-f73e46f84e81/Navision/Products.csv)
+* [Employees.csv](https://download.microsoft.com/download/e/3/0/e3081045-e628-4267-9ac4-f73e46f84e81/Salesforce/Employees.csv)
+* [Persons.csv](https://download.microsoft.com/download/e/3/0/e3081045-e628-4267-9ac4-f73e46f84e81/Xero/Persons.csv)
+* [YellowSystems/Products.csv](https://download.microsoft.com/download/e/3/0/e3081045-e628-4267-9ac4-f73e46f84e81/YellowSystems/Products.csv)
 
 ### Companies.csv
 
