@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.azure-security-center.just-time-vm-access
+title: Implement just-in-time VM access
+metadata:
+  title: Implement just-in-time VM access
+  description: "Implement Just-in-time VM access"
+  ms.date: 03/21/2023
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: None
+durationInMinutes: 8
+content: |
+  [!include[](includes/16-just-time-virtual-machine-access.md)]

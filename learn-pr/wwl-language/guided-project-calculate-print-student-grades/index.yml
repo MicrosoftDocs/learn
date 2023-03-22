@@ -3,7 +3,7 @@ uid: learn.wwl.guided-project-calculate-print-student-grades
 metadata:
   title: Guided project - Calculate and print student grades
   description: "Guided project - Calculate and print student grades"
-  ms.date: 02/23/2023
+  ms.date: 03/20/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial
@@ -22,7 +22,7 @@ prerequisites: |
   * Beginner level experience with creating literal values and declare variables of basic data types like string, int, and decimal
   * Beginner level experience with string concatenation and string interpolation
   * Beginner level experience with performing basic operations on numbers
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
 - beginner
 roles:

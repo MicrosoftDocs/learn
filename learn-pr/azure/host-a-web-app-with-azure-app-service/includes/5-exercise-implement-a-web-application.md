@@ -35,7 +35,7 @@ Open a second command shell session, for example by browsing to <https://shell.a
     dotnet run
     ```
 
-    You should get something like the following:
+    You should get output like the following:
 
     ```console
     info: Microsoft.Hosting.Lifetime[0]
@@ -142,7 +142,7 @@ This will create a new `package.json` file in the current folder. You should see
     code .
     ```
 
-1. Select the `package.json` file, and make the following edits to the `scripts` section to use Node.js to launch the web app:
+1. Select the `package.json` file and make the following edits to the `scripts` section to use Node.js to launch the web app:
 
     ```json
     {
