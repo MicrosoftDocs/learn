@@ -57,7 +57,7 @@ There are four sections of the Audit summary:
 - **Manual tasks:** This section presents an overview of the manual tasks that can be identified.
 - **File manifest:** The final section of the audit summary report provides a manifest of all the files generated during the audit.
 
-:::image type="content" source="../media/Audit_summary.jpg" alt-text="Audit summary for a Jenkins instance with sections of Pipelines and Job types.":::
+:::image type="content" source="../media/audit-summary.jpg" alt-text="Screenshot of an audit report showing a Jenkins instance with sections of Pipelines and Job types.":::
 
 Next, let's get into the ```forecast``` command.
 
@@ -69,7 +69,7 @@ The ```forecast``` command fetches jobs that have been completed over a specifie
 
 Running a forecast on the command line looks something like the following image.
 
-:::image type="content" source="../media/Forecast_report.jpg" alt-text="Forecast report for Jenkins with Job count, Pipeline count, Execution time, Queue time, and Concurrent jobs sections.":::
+:::image type="content" source="../media/forecast-report.jpg" alt-text="Screenshot of a forecast report showing metrics for a Jenkins migration.":::
 
 
 #### What is in a Forecast report?
@@ -132,7 +132,7 @@ gh actions-importer migrate jenkins --source-url $SOURCE_URL –target-url $TARG
 
 Any necessary manual tasks are included in the description of the pull request. Once these manual tasks and the code reviews are complete, the pull request can be merged and the workflow is successfully migrated to GitHub Actions.
 
-:::image type="content" source="../media/PR_for_Migration.png" alt-text="New PR once a migration is completed.":::
+:::image type="content" source="../media/pr-for-migration.png" alt-text="Screenshot of a merged pull request showing completed manual tasks and an approved code review.":::
 
 Now, let’s take a moment to review and dive a bit deeper into what isn't automatically migrated with GitHub Actions Importer.
 
