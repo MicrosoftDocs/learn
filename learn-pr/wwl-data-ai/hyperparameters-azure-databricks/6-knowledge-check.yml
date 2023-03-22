@@ -27,13 +27,13 @@ quiz:
     choices:
     - content: "An *objective* function"
       isCorrect: false
-      explanation: "That's incorrect. An objective function does not define a set of possible hyperparameter values."
+      explanation: "That's incorrect. An objective function doesn't define a set of possible hyperparameter values."
     - content: "A search space"
       isCorrect: true
       explanation: "That's correct. A search space defines a set of possible hyperparameter values."
     - content: "A search algorithm"
       isCorrect: false
-      explanation: "That's incorrect. A search algorithm does not define a set of possible hyperparameter values."
+      explanation: "That's incorrect. A search algorithm doesn't define a set of possible hyperparameter values."
   - content: "Which class should you use to track details of each hyperparameter tuning run when using Spark MLLib?"
     choices:
     - content: "Trials"
