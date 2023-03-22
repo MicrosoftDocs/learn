@@ -23,20 +23,20 @@ Microsoft offers multiple technologies for confidential computing.
 | **Item** | **Description** | **Purpose** |
 |---|---|---|
 | Virtual machines | Multiple options from AMD and Intel support confidential computing. | Create confidential computing from raw virtual machines. |
-| [Microsoft Azure Attestation](https://learn.microsoft.com/azure/attestation/overview) | The remote attestation service in Azure | Use for validating the trustworthiness of multiple TEEs and verifying the integrity of the binaries running inside the TEEs. |
-| [Azure Key Vault Managed HSM](https://learn.microsoft.com/azure/key-vault/managed-hsm/) | A cloud service that enables you to safeguard cryptographic keys for your cloud applications | Store and manage your private keys in a fully managed, highly available, single-tenant, standards-compliant service that uses FIPS 140-2 Level 3 validated hardware security modules (HSM). |
-| [Trusted Launch](https://learn.microsoft.com/azure/virtual-machines/trusted-launch) | A feature set in Generation 2 VMs that brings hardened security features to virtual machines in Azure. | Protect against boot kits, rootkits, and kernel-level malware with a secure boot and virtual trusted platform module with boot integrity monitoring. |
-| [App-enclave aware containers](https://learn.microsoft.com/en-us/azure/confidential-computing/enclave-aware-containers) | Use Intel SGX with Azure Kubernetes Service (AKS) | Create confidential computing nodes on AKS to isolate applications within an enclave environment. |
-| [Confidential VM node pools on AKS](https://learn.microsoft.com/azure/confidential-computing/confidential-node-pool-aks) | Container node pools that take advantage of VMs that use a hardware-based TEE | Confidential VMs using AMD container applications deny the hypervisor and other host-management code access to VM memory and state and add defense in depth protections against operator access. |
+| [Microsoft Azure Attestation](/azure/attestation/overview) | The remote attestation service in Azure | Use for validating the trustworthiness of multiple TEEs and verifying the integrity of the binaries running inside the TEEs. |
+| [Azure Key Vault Managed HSM](/azure/key-vault/managed-hsm/) | A cloud service that enables you to safeguard cryptographic keys for your cloud applications | Store and manage your private keys in a fully managed, highly available, single-tenant, standards-compliant service that uses FIPS 140-2 Level 3 validated hardware security modules (HSM). |
+| [Trusted Launch](/azure/virtual-machines/trusted-launch) | A feature set in Generation 2 VMs that brings hardened security features to virtual machines in Azure. | Protect against boot kits, rootkits, and kernel-level malware with a secure boot and virtual trusted platform module with boot integrity monitoring. |
+| [App-enclave aware containers](/en-us/azure/confidential-computing/enclave-aware-containers) | Use Intel SGX with Azure Kubernetes Service (AKS) | Create confidential computing nodes on AKS to isolate applications within an enclave environment. |
+| [Confidential VM node pools on AKS](/azure/confidential-computing/confidential-node-pool-aks) | Container node pools that take advantage of VMs that use a hardware-based TEE | Confidential VMs using AMD container applications deny the hypervisor and other host-management code access to VM memory and state and add defense in depth protections against operator access. |
 
 #### Application-specific technologies
 
 | **Item** | **Description** | **Purpose** |
 |---|---|---|
-| [Azure Confidential Ledger](https://learn.microsoft.com/azure/confidential-ledger/overview) | A tamper-proof register for storing sensitive data | For record-keeping and auditing or for data transparency in multiple-party scenarios. It offers Write-Once-Read-Many guarantees, which make data non-erasable and non-modifiable. The service is built on the [Confidential Consortium Frame](https://www.microsoft.com/research/project/confidential-consortium-framework/) work from Microsoft Research. |
-| [Always Encrypted with secure enclaves in Azure SQL](https://learn.microsoft.com/sql/relational-databases/security/encryption/always-encrypted-enclaves) | A TEE to run SQL queries | Protect the confidentiality of data from malware and high-privileged unauthorized users. |
+| [Azure Confidential Ledger](/azure/confidential-ledger/overview) | A tamper-proof register for storing sensitive data | For record-keeping and auditing or for data transparency in multiple-party scenarios. It offers Write-Once-Read-Many guarantees, which make data non-erasable and non-modifiable. The service is built on the [Confidential Consortium Frame](https://www.microsoft.com/research/project/confidential-consortium-framework/) work from Microsoft Research. |
+| [Always Encrypted with secure enclaves in Azure SQL](/sql/relational-databases/security/encryption/always-encrypted-enclaves) | A TEE to run SQL queries | Protect the confidentiality of data from malware and high-privileged unauthorized users. |
 | [Azure Virtual Desktop on confidential virtual machines (Public preview)](https://techcommunity.microsoft.com/t5/azure-virtual-desktop-blog/confidential-virtual-machine-support-for-azure-virtual-desktop/ba-p/3686350) | A TEE to run Azure Virtual Desktop solution | Protect against operator access and encrypt data in use for virtual desktops. |
-| [SQL Server on confidential virtual machines](https://learn.microsoft.com/azure/azure-sql/virtual-machines/windows/sql-vm-create-confidential-vm-how-to?view=azuresql) | Confidential VMs using Secure Encrypted Virtualization-Secure Nested Paging (SEV-SNP) technology | Store sensitive data in the cloud and meet strict compliance requirements. |
+| [SQL Server on confidential virtual machines](/azure/azure-sql/virtual-machines/windows/sql-vm-create-confidential-vm-how-to?view=azuresql) | Confidential VMs using Secure Encrypted Virtualization-Secure Nested Paging (SEV-SNP) technology | Store sensitive data in the cloud and meet strict compliance requirements. |
 
 The services in the portfolio provide vectors of protection, including from these factors:
 
@@ -48,7 +48,7 @@ The services in the portfolio provide vectors of protection, including from thes
 
 As you can see, multiple options help you protect sensitive workloads in Azure. Which options you use depends on several factors. For example, is the application greenfield or are you migrating it to Azure? 
 
-If you're migrating applications, it might be easier to create confidential computing from raw virtual machines and then migrate. Or you can deploy [containers that use those VM types](https://learn.microsoft.com/azure/confidential-computing/confidential-node-pool-aks). 
+If you're migrating applications, it might be easier to create confidential computing from raw virtual machines and then migrate. Or you can deploy [containers that use those VM types](/azure/confidential-computing/confidential-node-pool-aks). 
 
 If you're building a new application on Azure, what use case are you trying to address? Depending on your needs, one of the other services can help. For example, SQL AE or Azure Confidential Ledger.
 

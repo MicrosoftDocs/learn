@@ -29,7 +29,7 @@ roles:
 - solution-architect
 products:
 - azure
-- virtual-machines
+- azure-virtual-machines
 units:
 - learn.azure.intro-to-confidential-computing-with-azure-virtual-machines.introduction
 - learn.azure.intro-to-confidential-computing-with-azure-virtual-machines.what-is-azure-confidential-computing

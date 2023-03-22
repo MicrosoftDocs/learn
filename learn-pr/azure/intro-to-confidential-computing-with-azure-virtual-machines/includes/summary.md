@@ -2,11 +2,11 @@ In this module you learned about the broad portfolio of Azure confidential compu
 
 ### Learn more
 
-- [Open Source Solutions to Build Enclave Applications](https://learn.microsoft.com/azure/confidential-computing/enclave-development-oss)
+- [Open Source Solutions to Build Enclave Applications](/azure/confidential-computing/enclave-development-oss)
 
-- [Azure Friday video: Azure Confidential Computing with Confidential VMs and AKS nodes](https://learn.microsoft.com/shows/azure-friday/azure-confidential-computing-with-confidential-vms-and-aks-nodes)
+- [Azure Friday video: Azure Confidential Computing with Confidential VMs and AKS nodes](/shows/azure-friday/azure-confidential-computing-with-confidential-vms-and-aks-nodes)
 
-- [Azure confidential computing documentation](https://learn.microsoft.com/azure/confidential-computing/) 
+- [Azure confidential computing documentation](/azure/confidential-computing/) 
 
 - [Azure Confidential Computing blog](https://techcommunity.microsoft.com/t5/azure-confidential-computing/bg-p/AzureConfidentialComputingBlog)
 
