@@ -4,8 +4,8 @@ metadata:
   title: Explore the key concepts of quantum computing by using Q#
   description: Learn the fundamental concepts of quantum computing by using tools in Q# and the Quantum Development Kit.
   ms.date: 12/16/2022
-  author: KittyYeungQ
-  ms.author: kitty
+  author: bradben
+  ms.author: brbenefield
   ms.topic: tutorial
   ms.prod: learning-quantum
 title: Explore the key concepts of quantum computing by using Q#
