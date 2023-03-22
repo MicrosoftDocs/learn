@@ -6,7 +6,7 @@ In this module, you'll:
 
 - Learn about the channels available on the Microsoft Azure Health Bot platform
 - Learn how to make a bot available on Teams
-- Build a basic Teams app for the healthcare bot 
+- Build a basic Teams app for the healthcare bot
 
 ## Prerequisite modules
 
