@@ -1,15 +1,15 @@
 ## What is a channel?
 
-A channel is a connection between the Health Bot and communication apps. You may configure the bot to connect to the channels you want it to be available on, through the Health Bot Management portal. The Health Bot uses the Azure Bot Service to connect your bot to these channels and facilitates communication between your bot and the user. In previous modules, you learned how to connect your Azure Health Bot to the Web Chat channel. In this module, you're going to learn how to connect your Azure Health Bot to the Teams channel.
+A channel is a connection between the Health Bot and communication apps. You can configure the bot to connect to the channels you want it to be available on through the Health Bot Management portal. The Health Bot uses the Azure Bot Service to connect your bot to these channels and facilitates communication between your bot and the user. In previous modules, you learned how to connect your Azure Health Bot to the Web Chat channel. In this module, you're going to learn how to connect your Azure Health Bot to the Teams channel.
 
 If you don't have Microsoft Teams, [download and install it](https://www.microsoft.com/microsoft-teams/group-chat-software).
 
 > [!NOTE]
-> Microsoft Teams is Organization specific. So, app sharing is allowed within the organization.  
+> Microsoft Teams is organization specific. Make sure app sharing is allowed within your organization.  
 
 ## Launching your bot to channels
 
-A *Trigger* is responsible in order to carry out a specific operation. In the interrupting and breaking scenario, we created a RegEx model to map it to a custom intent that we created. Let’s say the user types `Hello`. We want our Health bot scenario to trigger to this intent. This intent trigger can be made in the **Models** section. Here we use the *Greeting* model that's already present in the Language section. By default, the Greetings intent is linked to default scenario available on the Azure Health Bot portal. We want the scenario that we created to map to the Greetings intent mapping.
+A *Trigger* is needed in order to carry out a specific operation. In the interrupting and breaking scenario, we created a RegEx model to map it to a custom intent that we created. Let’s say the user types `Hello`. We want our Health bot scenario to trigger to this intent. This intent trigger can be made in the **Models** section. Here, we use the *Greeting* model that's already present in the Language section. By default, the Greetings intent is linked to a default scenario available on the Azure Health Bot portal. We want the scenario that we created to map to the Greetings intent mapping.
 
 ## Make the bot available on Teams
 
@@ -43,4 +43,4 @@ The bot works according to the flow you created in previous modules. You've succ
 
 ## What's next?
 
-In the next unit, learn how to wrap the bot into a Teams app by using App Studio for Microsoft Teams.
+In the next unit, learn how to wrap the bot into a Teams app by using Developer Portal for Microsoft Teams.
