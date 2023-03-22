@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.introduction-zero-trust-best-practice-frameworks.knowledge-check
-title: Knowledge check
+title: Knowledge check - Introduction to Zero Trust and best practice frameworks
 metadata:
-  title: Knowledge check
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  title: Knowledge check - Introduction to Zero Trust and best practice frameworks
+  description: "Knowledge check for module on the topic: Introduction to Zero Trust and best practice frameworks."
   ms.date: 3/14/2023
   author: hrasheed-msft
   ms.author: hrasheed
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
-durationInMinutes: 1
+durationInMinutes: 3
 ###########################################################################
 ###
 ### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
@@ -70,17 +70,17 @@ quiz:
     - content: "Verify and never trust, always verify"
       isCorrect: true
       explanation: "The core principle of Zero Trust security is 'verify and never trust, always verify'. This approach requires continuous evaluation of users and devices before access to resources is granted."
-  - content: "Which of the following is NOT a recommended practice for implementing Zero Trust security?"
+  - content: "What is one of the main goals of Zero Trust RaMP initiatives?"
     choices:
-    - content: "Implementing multifactor authentication for all users"
-      isCorrect: false
-      explanation: "Multifactor authentication is a recommended practice for implementing Zero Trust security to ensure that only authorized users are granted access."
-    - content: "Monitoring user behavior for suspicious activity"
-      isCorrect: false
-      explanation: "User behavior monitoring is a recommended practice for detecting abnormal user behavior and potential threats."
-    - content: "Giving every user full access to resources at all times"
-      isCorrect: true
-      explanation: "Restricting access to resources and implementing fine-grained access controls based on the principle of least privilege is a recommended practice for implementing Zero Trust security."
-    - content: "Encrypting data in transit and at rest"
-      isCorrect: false
-      explanation: "Encrypting data in transit and at rest is a recommended practice for securing sensitive data when implementing Zero Trust security."
+      - content: "To implement an environment where users have unrestricted access to resources within the corporate network"
+        isCorrect: false
+        explanation: "Zero Trust RaMP seeks to restrict network access and reduce overall attack surface by constantly evaluating user behavior and context."
+      - content: "To eliminate security threats without introducing new architecture or technology"
+        isCorrect: false
+        explanation: "While Zero Trust RaMP aims to eliminate security threats, this typically requires new architectures and technologies."
+      - content: "To leverage automation and orchestration tools to provide continuous compliance monitoring across all devices and applications."
+        isCorrect: true
+        explanation: "By leveraging automation and orchestration tools, Zero Trust RaMP provides continuous compliance monitoring across all devices and applications."
+      - content: "To provide a single pane of glass view into network and device status"
+        isCorrect: false
+        explanation: "While providing a single pane of glass view is a benefit of Zero Trust RaMP, it is not the main goal."

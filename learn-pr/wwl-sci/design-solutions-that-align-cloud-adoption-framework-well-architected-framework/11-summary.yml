@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-solutions-that-align-cloud-adoption-framework-well-architected-framework.summary
-title: Summary
+title: Summary - Design solutions that align with the Cloud Adoption Framework (CAF) and Well-Architected Framework (WAF)
 metadata:
-  title: summary
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  title: Summary - Design solutions that align with the Cloud Adoption Framework (CAF) and Well-Architected Framework (WAF)
+  description: "Summary of module on the topic: Design solutions that align with the Cloud Adoption Framework (CAF) and Well-Architected Framework (WAF)."
   ms.date: 3/14/2023
   author: hrasheed-msft
   ms.author: hrasheed
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
-durationInMinutes: 1
+durationInMinutes: 3
 content: |
   [!include[](includes/11-summary.md)]
