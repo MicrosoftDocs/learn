@@ -4,7 +4,7 @@ metadata:
   title: Get started with Azure Quantum
   description: Learn how to get started with Azure Quantum and create an Azure Quantum workspace.
   ms.date: 01/01/2021
-   author: aviviano
+  author: aviviano
   ms.author: amvivian
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
