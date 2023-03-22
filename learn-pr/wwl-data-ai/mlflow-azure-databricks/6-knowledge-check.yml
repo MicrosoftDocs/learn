@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/21/2023
+  ms.date: 03/22/2023
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -12,7 +12,7 @@ metadata:
 durationInMinutes: 3
 quiz:
   questions:
-  - content: "Which method should you use to record the **rmse** evaluation value from your model in an MLflow run?"
+  - content: "Which method should you use to record the `rmse` evaluation value from your model in an MLflow run?"
     choices:
     - content: "mlflow.log_metric"
       isCorrect: true
