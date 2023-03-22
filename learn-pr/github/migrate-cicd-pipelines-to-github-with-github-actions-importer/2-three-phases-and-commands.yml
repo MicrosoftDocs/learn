@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.migrate-cicd-pipelines-to-github-with-github-actions-importer.three-phases-and-commands
+title: The 3 migration phases and their associated commands
+metadata:
+  title: exercise
+  description: Understand the GitHub Actions Importer commands to audit, forecast, dry-run, and migrate your CI/CD pipelines to GitHub Actions
+  ms.date: 3/21/2023
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-three-phases-and-commands.md)]
