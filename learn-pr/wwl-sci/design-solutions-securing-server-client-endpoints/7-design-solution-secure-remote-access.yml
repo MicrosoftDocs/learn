@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.design-solutions-securing-server-client-endpoints.design-solution-secure-remote-access
+uid: learn.wwl.design-solutions-securing-server-client-endpoints.design-solution-secure-remote-access
 title: Design a solution for secure remote access 
 metadata:
   title: Design a solution for secure remote access 
-  description: "SC-100 preparatory unit on the topic: Design a solution for secure remote access ."
+  description: "SC-100 preparatory unit on the topic: Design a solution for secure remote access."
   ms.date: 3/15/2023
   author: hrasheed-msft
   ms.author: hrasheed

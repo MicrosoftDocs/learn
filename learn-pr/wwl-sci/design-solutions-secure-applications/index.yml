@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.design-solutions-secure-applications
+uid: learn.wwl.design-solutions-secure-applications
 metadata:
   title: Design solutions for securing applications
   description: "You learn how to secure applications, APIs and the development process using techniques like posture management, threat modeling, and secure access for workload identities."
@@ -38,15 +38,15 @@ subjects:
   - security
   - cloud-security
 units:
-- learn.design-solutions-secure-applications.introduction-to-application-security
-- learn.design-solutions-secure-applications.evaluate-security-posture-of-existing-application-portfolios
-- learn.design-solutions-secure-applications.evaluate-application-threats-with-threat-modeling
-- learn.design-solutions-secure-applications.design-security-lifecycle-strategy-for-applications
-- learn.design-solutions-secure-applications.design-and-implement-standards-to-secure-application-development
-- learn.design-solutions-secure-applications.secure-access-for-workload-identities
-- learn.design-solutions-secure-applications.design-a-solution-for-api-management-and-security
-- learn.design-solutions-secure-applications.design-a-solution-for-secure-access-to-applications
-- learn.design-solutions-secure-applications.knowledge-check
-- learn.design-solutions-secure-applications.summary
+- learn.wwl.design-solutions-secure-applications.introduction-to-application-security
+- learn.wwl.design-solutions-secure-applications.evaluate-security-posture-of-existing-application-portfolios
+- learn.wwl.design-solutions-secure-applications.evaluate-application-threats-with-threat-modeling
+- learn.wwl.design-solutions-secure-applications.design-security-lifecycle-strategy-for-applications
+- learn.wwl.design-solutions-secure-applications.design-and-implement-standards-to-secure-application-development
+- learn.wwl.design-solutions-secure-applications.secure-access-for-workload-identities
+- learn.wwl.design-solutions-secure-applications.design-a-solution-for-api-management-and-security
+- learn.wwl.design-solutions-secure-applications.design-a-solution-for-secure-access-to-applications
+- learn.wwl.design-solutions-secure-applications.knowledge-check
+- learn.wwl.design-solutions-secure-applications.summary
 badge:
-  uid: learn.design-solutions-secure-applications.badge
+  uid: learn.wwl.design-solutions-secure-applications.badge
