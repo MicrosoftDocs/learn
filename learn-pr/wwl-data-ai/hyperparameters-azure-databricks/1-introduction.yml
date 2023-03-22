@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.catalog-data-artifacts-use-microsoft-purview.introduction
+uid: learn.wwl.hyperparameters-azure-databricks.introduction
 title: Introduction
 metadata:
   title: Introduction
   description: "Introduction"
   ms.date: 03/22/2023
   author: wwlpublish
-  ms.author: shlindsay
+  ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 3
+  ms.service: azure-databricks
+durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
