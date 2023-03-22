@@ -13,7 +13,7 @@ durationInMinutes: 10
 content: |
   [!include[](includes/what-is-azure-confidential-computing.md)]
 quiz:
-  title: Knowledge check
+  title: Check your knowledge
   questions:
   - content: Which best describes a Trusted Execution Environment, or TEE?
     choices:

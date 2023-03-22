@@ -13,7 +13,7 @@ durationInMinutes: 10
 content: |
   [!include[](includes/when-to-use-application-enclaves.md)]
 quiz:
-  title: Knowledge check
+  title: Check your knowledge
   questions:
   - content: Which two technology options are available for virtual machines and confidential computing in Azure?
     choices:

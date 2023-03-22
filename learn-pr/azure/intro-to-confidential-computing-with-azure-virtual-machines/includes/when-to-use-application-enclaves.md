@@ -9,7 +9,3 @@ The following table provides some detail to help you decide on a particular virt
 | Use cases | Customized applications built for confidential computing. | Lift and shift of existing applications to confidential computing. |
 
 The difference between the two approaches can be substantial. If you don't need the line-of-code control offered with the application-enclave-based option and your preference is to migrate existing virtual machines as quickly as possible and use Azure confidential computing capabilities, the virtual machine–level solution might be more appropriate for you. 
-
-### Knowledge check
-
-Choose the best response for each of the questions below. Then select "Check your answers."

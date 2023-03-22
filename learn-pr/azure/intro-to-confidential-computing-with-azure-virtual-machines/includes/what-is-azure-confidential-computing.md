@@ -56,7 +56,3 @@ The remainder of this module focuses on two approaches to achieve confidential c
 
 > [!NOTE]
 > If you're container-oriented, you might want to deploy and manage your application in Azure Kubernetes Service (AKS) instead. Because AKS uses VMs to run containers, you can apply confidential technologies to container nodes and pools as well.
-
-### Knowledge check
-
-Choose the best response for each of the questions below. Then select "Check your answers."
