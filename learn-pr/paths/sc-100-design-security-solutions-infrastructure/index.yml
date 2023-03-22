@@ -1,0 +1,35 @@
+### YamlMime:LearningPath
+uid: learn.wwl.sc-100-design-security-solutions-infrastructure
+metadata:
+  title: 'SC-100 Design security solutions for infrastructure'
+  description: 'SC-100 Design security solutions for infrastructure'
+  ms.date: 04/05/2023
+  author: wwlpublish
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: 'SC-100 Design security solutions for infrastructure'
+prerequisites: |
+  *   Advanced experience and knowledge in identity and access, platform protection, security operations, securing data and securing applications.
+  *   Experience with hybrid and cloud implementations.
+summary: |
+  You learn how to design for infrastructure security, including specifying requirements for different cloud models, designing solutions for posture management in hybrid and multi-cloud environments, and securing endpoints.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- advanced
+roles:
+- security-engineer
+- solution-architect
+products:
+- azure
+- defender-for-cloud
+- defender-for-cloud-apps
+- defender-identity
+- microsoft-sentinel
+modules:
+- learn.wwl.specify-requirements-securing-saas-paas-iaas-services
+- learn.wwl.design-solutions-security-posture-management-hybrid-multicloud-environments
+- learn.wwl.design-solutions-securing-server-client-endpoints
+###- learn.wwl.design-solutions-network-security
+trophy:
+  uid: learn.wwl.sc-100-design-security-solutions-infrastructure.trophy
