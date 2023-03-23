@@ -1,4 +1,4 @@
-Get ready to start building a CI pipeline with Microsoft Azure Pipelines. The first step is to build and run the *Space Game* web app on your local machine. Understanding how to build software locally will prepare you to repeat the process in the pipeline.
+Get ready to start building a CI pipeline with Microsoft Azure Pipelines. The first step is to build and run the *Space Game* web app. Understanding how to build software manually will prepare you to repeat the process in the pipeline.
 
 Mara is going to do exactly that, and by following the procedures, you can do the same thing.
 
