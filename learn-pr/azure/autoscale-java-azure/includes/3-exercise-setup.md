@@ -24,7 +24,7 @@ When you run the above command, a window will pop up with the file `deployPetCli
    | Variable | Description |
    |-|-|
    | resource_group | Provide a new or existing resource group name |
-   | region | The Azure region you'll use. You can use `westeurope` or `centralus`, but we recommend that you use a region close to where you live and that also support Azure Spring Apps. To see the full list of available regions, visit the **Azure Spring Apps Availability by Region** in the Summary unit at the end of this module |
+   | region | The Azure region you'll use. You can use `westeurope` or `centralus`, but we recommend that you use a region close to where you live and that also supports Azure Spring Apps. To see the full list of available regions, visit the **Azure Spring Apps Availability by Region** in the Summary unit at the end of this module |
    | spring_apps_service | Name of your Azure Spring Apps instance |
    | mysql_server_name | The name of your MySQL server. It should be unique across Azure |
    | mysql_server_admin_name | Username for the MySQL Administrator. The admin name can't be "azure-superuser", "admin", "administrator", "root", "guest, or "public" |
