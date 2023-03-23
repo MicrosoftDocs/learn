@@ -14,7 +14,7 @@ Each organization has different needs when it comes to authentication. Microsoft
 :::image type="content" source="../media/passwordless-convenience-security-1ba3f8c9.png" alt-text="Screenshot showing three passwordless authentication options that integrate with Azure Active Directory.":::
 
 
-## Windows Hello for Business<br>
+## Windows Hello for Business
 
 Windows Hello for Business is ideal for information workers that have their own designated Windows PC. The biometric and PIN credentials are directly tied to the user's PC, which prevents access from anyone other than the owner. With public key infrastructure (PKI) integration and built-in support for single sign-on (SSO), Windows Hello for Business provides a convenient method for seamlessly accessing corporate resources on-premises and in the cloud.
 
