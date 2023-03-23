@@ -1,6 +1,6 @@
 You can create and apply device policies as part of your efforts to protect endpoints. Microsoft Intune helps you protect the devices you manage and the data stored on those devices. Protected devices are also known as managed devices. Intune includes settings and features you can enable or disable for different devices within your organization. These settings and features are added to "configuration profiles". You can create profiles for different devices and different platforms, including iOS/iPadOS, macOS, Android, Android Enterprise, and Windows. Then, use Intune to apply or "assign" the profile to the devices.
 
-[ ![Microsoft Endpoint Manager - Create configuration profiles.](../media/intro-to-endpoint-manager-13.png) ](../media/intro-to-endpoint-manager-13.png#lightbox)
+[ ![Microsoft Intune - Create configuration profiles.](../media/intro-to-endpoint-manager-13.png) ](../media/intro-to-endpoint-manager-13.png#lightbox)
 
 ## Types of device policies
 

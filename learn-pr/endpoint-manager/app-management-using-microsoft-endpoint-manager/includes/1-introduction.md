@@ -2,7 +2,7 @@ You can use Microsoft Intune to manage the apps that your company's workforce us
 
 ## Video - Interactive guide to managing devices
 
-The following interactive guide steps you through the Microsoft Endpoint Manager admin center to show you how to manage and protect devices.
+The following interactive guide steps you through the Microsoft Intune admin center to show you how to manage and protect devices.
 
 </p>
 <div align=”center”>
@@ -11,10 +11,10 @@ The following interactive guide steps you through the Microsoft Endpoint Manager
 
 Suppose that you're the administrator of a company with several thousand employees. Your company uses Microsoft Office to create and share information internally and externally. Your company allows employees to use their own devices. You must implement the rules that are enforced when employees attempts to access, move, or copy corporate data using managed apps.
 
-Microsoft Endpoint Manager supports two MAM configurations:
+Microsoft Intune supports two MAM configurations:
 
-- **Intune MDM + MAM**: IT administrators can only manage apps using MAM and app protection policies on devices that are enrolled with Intune mobile device management (MDM). To manage apps using MDM + MAM, customers should use the Intune console in the Microsoft Endpoint Manager admin center.
-- **MAM without device enrollment**: MAM without device enrollment, or MAM-WE, allows IT administrators to manage apps using MAM and app protection policies on devices not enrolled with Intune MDM. This configuration means Intune can manage apps on devices enrolled with third-party EMM providers. To manage apps using MAM-WE, customers should use the Intune console in the Microsoft Endpoint Manager admin center. Also, Intune can manage apps on devices enrolled with third-party enterprise mobility management (EMM) providers or not enrolled with an MDM at all.
+- **Intune MDM + MAM**: IT administrators can only manage apps using MAM and app protection policies on devices that are enrolled with Intune mobile device management (MDM). To manage apps using MDM + MAM, customers should use the Intune console in the Microsoft Intune admin center.
+- **MAM without device enrollment**: MAM without device enrollment, or MAM-WE, allows IT administrators to manage apps using MAM and app protection policies on devices not enrolled with Intune MDM. This configuration means Intune can manage apps on devices enrolled with third-party EMM providers. To manage apps using MAM-WE, customers should use the Intune console in the Microsoft Intune admin center. Also, Intune can manage apps on devices enrolled with third-party enterprise mobility management (EMM) providers or not enrolled with an MDM at all.
 
 When apps are managed in Intune, administrators can:
 
