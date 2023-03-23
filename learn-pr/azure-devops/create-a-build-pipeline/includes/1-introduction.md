@@ -1,3 +1,11 @@
+::: zone pivot="ms-hosted-agents"  
+MS Hosted agents text
+::: zone-end  
+
+::: zone pivot="github-codespaces-agent"
+GH Codespaces text
+::: zone-end
+
 In the [Get started with Azure DevOps](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true) learning path, you helped the Tailspin team start their DevOps journey by evaluating their current processes and technologies, and then planning their initial set of tasks on Azure Boards.
 
 In this module, you'll help the team with their first task: setting up a continuous integration (CI) pipeline for their app.
