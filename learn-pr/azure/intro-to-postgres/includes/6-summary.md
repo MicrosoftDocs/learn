@@ -2,7 +2,7 @@ In this module, you learned about Azure Database for PostgreSQL.
 
 Now that you've reviewed this module, you should be able to:
 
-* Describe how the components of Azure Database for PostgreSQL.
+* Describe the components of Azure Database for PostgreSQL.
 * Identify situations when to use Azure Database for PostgreSQL.
 
 ## Use these resources to discover more
