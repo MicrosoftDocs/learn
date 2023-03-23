@@ -1,3 +1,4 @@
+
 ## Optimize delete operations
 
 1. Check the number of transaction items for customers with IDs lower than 900000 using the following query:
