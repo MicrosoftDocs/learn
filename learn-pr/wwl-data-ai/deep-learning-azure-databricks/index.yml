@@ -3,7 +3,7 @@ uid: learn.wwl.deep-learning-azure-databricks
 metadata:
   title: Train deep learning models in Azure Databricks
   description: "Learn how to use deep learning libraries like PyTorch in Azure Databricks, and to distribute training by using Horovod"
-  ms.date: 03/22/2023
+  ms.date: 03/23/2023
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial

@@ -37,7 +37,8 @@ While the code may seem complex at first, this class defines a relatively simple
 
 The **forward** function applies the layers to the input data (***x***), passing the output from each layer to the next and finally returning the output from the last layer (which contains the label prediction vector, ***y***). A *rectified linear unit* (*ReLU*) activation function is applied to the outputs of layers 1 and 2 to constrain the output values to positive numbers.
 
-> **Note** Depending on the type of loss criterion used, you may choose to apply an activation function such as a *log_softmax* to the return value to force it into the range 0 to 1. However, some loss criteria (such as *CrossEntropyLoss*, which is commonly used for multiclass classification) automatically apply a suitable function.
+> [!NOTE]
+> Depending on the type of loss criterion used, you may choose to apply an activation function such as a *log_softmax* to the return value to force it into the range 0 to 1. However, some loss criteria (such as *CrossEntropyLoss*, which is commonly used for multiclass classification) automatically apply a suitable function.
 
 To create a model for training, you just need to create an instance of the network class like this:
 
