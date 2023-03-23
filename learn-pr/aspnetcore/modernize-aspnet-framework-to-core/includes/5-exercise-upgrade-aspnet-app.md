@@ -34,7 +34,7 @@ Let's obtain the sample app. It's just a standard boilerplate app generated from
 
     The **Upgrade Assistant** tab opens. Since the app to be upgraded is an ASP.NET MVC app, the only option available is **Side-by-side incremental project upgrade**.
 
-    :::image type="content" source="../media/upgrade-assistant-welcome.png" alt-text="Screenshot of the welcome screen to the Upgrade Assistant. Only one option is displayed: Side-by-side incremental project upgrade":::
+    :::image type="content" source="../media/upgrade-assistant-welcome.png" alt-text="Screenshot of the welcome screen to the Upgrade Assistant. Only one option is displayed: Side-by-side incremental project upgrade.":::
 
     This upgrade approach is great for web apps. It generates a new .NET project that implements YARP (Yet Another Reverse Proxy). If a resource URL is requested but not found in the new project, the request is forwarded to the old project. This way, you can incrementally migrate to the new app without losing any functionality.
 
