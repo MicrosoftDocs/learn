@@ -5,8 +5,8 @@ metadata:
   title: The no-overlap constraint
   description: Learn how to formulate the no-overlap constraint.
   ms.date: 01/26/2021
-  author: anraman
-  ms.author: anraman
+  author: bradben
+  ms.author: brbenefield
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   show_latex: true
