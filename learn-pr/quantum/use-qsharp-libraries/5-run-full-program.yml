@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Run Grover's algorithm
   description: Use the previously written oracle to run Grover's algorithm and determine the missing ISBN digit.
   ms.date: 09/19/2020
-  author: KittyYeungQ
-  ms.author: kitty
+  author: bradben
+  ms.author: brbenefield
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   show_latex: true

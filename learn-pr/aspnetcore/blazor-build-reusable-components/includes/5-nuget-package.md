@@ -45,7 +45,7 @@ Now, you'll undo that project reference and add a reference to the NuGet package
 These steps are *not* a typical configuration. Library projects that reside in the same folders or solution as the applications that want to reference them can reference the project directly, as you saw in the earlier exercise. 
 
 1. Open the *MyBlazorServer.csproj* file either by double-clicking the *MyBlazorServer* project name in Visual Studio or by opening the file in Visual Studio Code.
-1. In the *MyBlazorServer.csproj* file, remove the following line:   
+1. In the *MyBlazorServer.csproj* file, remove the following line:
 
    `<ProjectReference Include="..\FirstClassLibrary\FirstClassLibrary.csproj" />`
 
