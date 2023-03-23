@@ -127,7 +127,6 @@ The static files are where they need to be, so now we can update the Razor layou
 
    ```html
    <link rel="stylesheet" href="~/css/bootstrap.min.css" />
-   <link rel="stylesheet" href="~/css/bootstrap-theme.min.css" />
    <link rel="stylesheet" href="~/css/site.css" />
    ```
 
