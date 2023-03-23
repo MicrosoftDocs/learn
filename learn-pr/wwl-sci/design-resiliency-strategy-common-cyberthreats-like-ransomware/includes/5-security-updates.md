@@ -4,17 +4,13 @@ As a service provider, you may have onboarded multiple customer tenants to [Azu
 
 Microsoft offers other capabilities to help you manage updates for your Azure VMs or Azure virtual machine scale sets that you should consider as part of your overall update management strategy.
 
--   If you are interested in automatically assessing and updating your Azure virtual machines to maintain security compliance with _Critical_ and _Security_ updates released each month, review [Automatic VM guest patching](/azure/virtual-machines/automatic-vm-guest-patching). This is an alternative update management solution for your Azure VMs to auto-update them during off-peak hours, including VMs within an availability set, compared to managing update deployments to those VMs from Update Management in Azure Automation.
-    
--   If you manage Azure virtual machine scale sets, review how to perform [automatic OS image upgrades](/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-automatic-upgrade) to safely and automatically upgrade the OS disk for all instances in the scale set.
-
 Before deploying Update Management and enabling your machines for management, make sure that you understand the information in the following sections.
 
 ### About Update Management
 
 The following diagram illustrates how Update Management assesses and applies security updates to all connected Windows Server and Linux servers.
 
-![Diagram that shows the update management workflow.](https://learn.microsoft.com/azure/automation/update-management/media/overview/update-mgmt-workflow.png)
+![Diagram that shows the update management workflow.](../media/update-management-workflow.png)
 
 Update Management integrates with Azure Monitor Logs to store update assessments and update deployment results as log data, from assigned Azure and non-Azure machines. To collect this data, the Automation Account and Log Analytics workspace are linked together, and the Log Analytics agent for Windows and Linux is required on the machine and configured to report to this workspace.
 
@@ -48,4 +44,4 @@ You can report and update managed Windows servers by creating and pre-staging so
 -   This feature is enabled in Microsoft Endpoint Configuration Manager current branch version 1606 and higher. To integrate your Microsoft Endpoint Configuration Manager central administration site or a standalone primary site with Azure Monitor logs and import collections, review [Connect Configuration Manager to Azure Monitor logs](/azure/azure-monitor/logs/collect-sccm).
 -   Windows agents must either be configured to communicate with a Windows Server Update Services (WSUS) server or have access to Microsoft Update if they don't receive security updates from Microsoft Endpoint Configuration Manager.
 
-How you manage clients hosted in Azure IaaS with your existing Microsoft Endpoint Configuration Manager environment primarily depends on the connection you have between Azure datacenters and your infrastructure. This connection affects any design changes you may need to make to your Microsoft Endpoint Configuration Manager infrastructure and related cost to support those necessary changes. To understand what planning considerations you need to evaluate before proceeding, review [Configuration Manager on Azure - Frequently Asked Questions](/configmgr/core/understand/configuration-manager-on-azure#networking).
+How you manage clients hosted in Azure IaaS with your existing Microsoft Endpoint Configuration Manager environment primarily depends on the connection you have between Azure datacenters and your infrastructure. This connection affects any design changes you may need to make to your Microsoft Endpoint Configuration Manager infrastructure and related cost to support those necessary changes.
