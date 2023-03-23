@@ -4,7 +4,7 @@ title: 'Examine compiler-generated exceptions '
 metadata:
   title: Examine compiler-generated exceptions
   description: "Examine compiler-generated exceptions"
-  ms.date: 03/20/2023
+  ms.date: 03/23/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
@@ -53,12 +53,12 @@ quiz:
     - content: "An `InvalidCastException` exception is thrown when an attempt is made to divide an integral value by zero."
       isCorrect: false
       explanation: "Incorrect. This answer choice describes when a `DivideByZeroException` exception is thrown."
-    - content: "An `InvalidCastException` exception is thrown when attempting an invalid casting or explicit conversion."
-      isCorrect: true
-      explanation: "Correct. An `InvalidCastException` exception is thrown when attempting an invalid casting or explicit conversion."
     - content: "An `InvalidCastException` exception is thrown when an attempt is made to store a value of one type in an array of another type."
       isCorrect: false
       explanation: "Incorrect. This answer choice describes when a `ArrayTypeMismatchException` exception is thrown."
+    - content: "An `InvalidCastException` exception is thrown when attempting an invalid casting or explicit conversion."
+      isCorrect: true
+      explanation: "Correct. An `InvalidCastException` exception is thrown when attempting an invalid casting or explicit conversion."
   - content: "When is a `NullReferenceException` exception thrown?"
     choices:
     - content: "A `NullReferenceException` exception is thrown when attempting an invalid casting or explicit conversion."
