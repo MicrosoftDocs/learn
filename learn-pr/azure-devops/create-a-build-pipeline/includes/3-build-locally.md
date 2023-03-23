@@ -4,6 +4,14 @@ Mara is going to do exactly that, and by following the procedures, you can do th
 
 [!include[](../../shared/includes/codespaces-hosted-module-options.md)]
 
+::: zone pivot="ms-hosted-agents"  
+MS Hosted agents text
+::: zone-end  
+
+::: zone pivot="github-codespaces-agent"
+GH Codespaces text
+::: zone-end
+
 #### [GitHub Codespaces](#tab/codespaces)
 
 ### Create an Azure DevOps personal access token

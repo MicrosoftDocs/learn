@@ -408,3 +408,11 @@ groups:
       title: GitHub
     - id: azurerepos
       title: Azure Repos
+- id: azure-pipelines-agent-hosting
+  title: Azure Pipelines agent type
+  prompt: Choose your pipeline agent type
+  pivots:
+    - id: ms-hosted-agents
+      title: Microsoft-hosted agent
+    - id: github-codespaces-agent
+      title: GitHub Codespaces self-hosted agent
