@@ -2,7 +2,7 @@ The online retailer is impressed with your first web application. Now it wants y
 
 ## Implement support to read and write data
 
-It's common to construct an API with a number of resources. Each resource can have several operations available on it to read and write. Organizing by resource and by operations like read/write is called *create*, *read*, *update*, *delete* (CRUD). Implement the CRUD API on the `products` resource:
+It's common to construct an API with many resources. Each resource can have several operations available on it to read and write. Organizing by resource and by operations like read/write is called *create*, *read*, *update*, *delete* (CRUD). Implement the CRUD API on the `products` resource:
 
 1. Clone the [node-essentials repo](https://github.com/MicrosoftDocs/node-essentials) by running the following command.
 
