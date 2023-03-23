@@ -4,8 +4,8 @@ metadata:
   title: Migrate Java web applications to Azure Kubernetes Service
   description: Microsoft Learn module to learn Azure Migrate App Containerization with a hands-on lab using Azure Kubernetes Service for a Java web application
   ms.date: 09/01/2021
-  author: rahug1190
-  ms.author: rahugup
+  author: v-ksreedevan
+  ms.author: v-ksreedevan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Migrate Java web applications to Azure Kubernetes Service

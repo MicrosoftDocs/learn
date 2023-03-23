@@ -4,11 +4,11 @@ Congratulations! You've learned about autoscaling for your Java applications on 
 
 In this module, you learned about:
 
-- Create a Sample Autoscale architecture with Azure Spring Apps
+- Creating a Sample Autoscale architecture with Azure Spring Apps.
 
-- Investigate the sample scale rules
+- Investigating the sample scale rules.
 
-- Trigger scale actions
+- Triggering scale actions.
 
 - Best practices for scaling Java applications on Azure.
 
@@ -22,8 +22,7 @@ az group delete --name <your Resource Group Name> --yes
 
 ### Delete your log analytics workspace
 
-Deleting your resource group, will soft delete your Azure Log Analytics workspace. When soft deleting an Azure Log Analytics workspace, it gets into a soft-delete state to allow its recovery including data and connected agents within 14 days.
-If you wish to rerun the setup script, and re-create your resources, either create a new workspace with a new name, or use the below command to permanently delete the old workspace:
+Deleting your resource group will soft delete your Azure Log Analytics workspace. When soft deleting an Azure Log Analytics workspace, it gets into a soft-delete state to allow its recovery, including data and connected agents, within 14 days. If you wish to rerun the setup script and re-create your resources, either create a new workspace with a new name or use the below command to permanently delete the old workspace:
 
 ```azurecli
 az monitor log-analytics workspace delete --force true --resource-group <your Resource Group Name> --workspace-name <your log analytics workspace name>
@@ -33,7 +32,7 @@ az monitor log-analytics workspace delete --force true --resource-group <your Re
 
 - [Get started with Autoscale in Azure](/azure/azure-monitor/platform/autoscale-get-started?WT.mc_id=java-00000-ropreddy)
 
-- [Azure Spring Apps Availability by Region](https://azure.microsoft.com/global-infrastructure/services/?products=spring-cloud?WT.mc_id=java-00000-ropreddy)
+- [Azure Spring Apps Availability by Region](https://azure.microsoft.com/global-infrastructure/services/)
 
 - [Azure Spring Apps locations and pricing](https://azure.microsoft.com/pricing/details/spring-cloud?WT.mc_id=java-00000-ropreddy)
 
