@@ -6,17 +6,25 @@ Mara is going to do exactly that, and by following the procedures, you can do th
 
 #### [GitHub Codespaces](#tab/codespaces)
 
-## Create an Azure DevOps personal access token
+### Create an Azure DevOps personal access token
 
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```). If you don't already have an Azure DevOps organization, create a [free organization](/azure/devops/pipelines/get-started/pipelines-sign-up) before you begin.
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```). If you don't already have an Azure DevOps organization, create a [free organization](/azure/devops/pipelines/get-started/pipelines-sign-up) before you begin. After you sign in, if you have more than one organization, choose **Azure DevOps** and go to the organization that you plan to use to complete this module. In this example, the name of the organization is `fabrikam`.
+
+    :::image type="content" source="../media/3-choose-organization.png" alt-text="Screenshot of choosing your Azure DevOps organization.":::
   
 1. From your home page, open user settings :::image type="icon" source="../media/3-user-settings-gear.png" border="false"::: and select **Personal access tokens**.
 
 1. Select **+ New Token**.
 
-1. Name your token, select the organization where you want to use the token (if you have more than one organization, select the organization you are using to complete this module), and then set your token to automatically expire after a set number of days. The token is only used once when the Codespace registers its agent with your Azure DevOps organiation, so you can keep the default expiration.
+1. Name your token using any name that you prefer. The token is used when the Codespace registers its agent with your Azure DevOps organiation, so you can keep the default expiration.
 
-1. Choose **Show all scopes**, select the following scope: **Agent Pools (Read & manage)**, and choose **Create**.
+1. Choose **Show all scopes**.
+
+    :::image type="content" source="../media/3-show-all-scopes.png" alt-text="Screenshot of viewing all scopes for a personal access token.":::
+
+1. Select the following scope: **Agent Pools (Read & manage)**, and choose **Create**.
+
+    :::image type="content" source="../media/3-agent-pools-read-and-manage.png" alt-text="Screenshot of selecting aget pool permissions for a personal access token.":::
 
 1. When you're done, copy the token and store it in a secure location. For your security, it won't be shown again.
 
@@ -30,7 +38,7 @@ The first step to using a project in Git is to create a fork so you can work wit
 Although you can propose changes to the original project, in this lesson, you'll work with the *Space Game* web project as though it was the original project owned by Mara and her team.
 
 > [!NOTE]
-> If you have previously forked this repository, for example if you have previously completed this module or another Tailspin Toys training module, we recommend that you [delete your fork](https://docs.github.com/repositories/creating-and-managing-repositories/deleting-a-repository) and create a new fork using the following steps. 
+> If you have previously forked this repository, for example if you have previously completed this module or another Tailspin Toys training module, we recommend that you [delete your fork](https://docs.github.com/repositories/creating-and-managing-repositories/deleting-a-repository) and create a new fork using the following steps. If you don't want to delete your fork, ensuring that you [sync your fork](https://docs.github.com/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork).
 
 Let's fork the *Space Game* web project into your GitHub account:
 
@@ -49,7 +57,7 @@ Let's fork the *Space Game* web project into your GitHub account:
 
 Before you create your Codespace, you'll create three passwords that help your self-hosted Azure DevOps agent run. In production, you wouldn't want to use a self-hosted agent in a Codespaces. However, since your team is using Codespaces for testing, this is a good temporary solution when you are building your pipelines.  
 
-1. In your GitHub repository, select **Settings** > **Secrets and variables** > **Codespaces**.
+1. Go to your forked GitGub repository and select **Settings** > **Secrets and variables** > **Codespaces**.
 
     :::image type="content" source="../media/3-add-codespaces-secret.png" alt-text="Screenshot of GitHub Codespaces secrets. ":::
 
@@ -57,7 +65,7 @@ Before you create your Codespace, you'll create three passwords that help your s
     
     |Name  |Value  |
     |---------|---------|
-    |ADO_ORG     |   Name of the Azure DevOps organization (Example: `fabrikam`)     |
+    |ADO_ORG     |   Name of the Azure DevOps organization you're using to complete this module. In this example, `fabrikam` is the name of the orgnization.)     |
     |ADO_PAT     |   Personal Access Token value      |
     |ADO_POOL_NAME     |   Name of agent pool. Specify `Default` to use the default agent pool. If you use a name other than `Default`, you need to [create a new agent pool](/azure/devops/pipelines/agents/pools-queues) and provide tha name of the new agent pool for this value. | 
     
@@ -68,9 +76,9 @@ Next, you'll set up Codespaces so that you can build the website, work with sour
 
 1. In your forked GitHub repository, select **Code**.
 
-1. Select the **Codespaces** tab.
+    :::image type="content" source="../media/3-go-to-code-tab.png" alt-text="Screenshot of going to code tab in GitHub. ":::
 
-1. Select **...** to create a new Codespace with options.
+1. Select **Code**, choose the **Codespaces** tab, and choose **...** to create a new Codespace with options.
 
     :::image type="content" source="../media/3-create-new-options-codespaces.png" alt-text="Screenshot of create a new Codespace with options. ":::
 
