@@ -22,7 +22,7 @@ Let's obtain the sample app. It's just a standard boilerplate app generated from
 1. Open Visual Studio 2022.
 1. Using either the **Clone a repository** button on the quick start window or the **Git > Clone** command on the menu bar, download and open the sample repository from `https://github.com/MicrosoftDocs/mslearn-modernize-aspnet-framework-to-core`.
 
-    :::image type="content" source="../media/git-clone.png" alt-text="Screenshot of the Visual Studio Git > Clone menu command.":::
+    :::image type="content" source="../media/git-clone.png" alt-text="Screenshot of the Visual Studio Git Clone menu command.":::
 
 1. Once the project opens, review the files in **Solution Explorer**. The app is an ASP.NET project built in .NET Framework 4.8.1. Press <kbd>F5</kbd> to run the app. After verifying it works, stop the app.
 
@@ -30,11 +30,11 @@ Let's obtain the sample app. It's just a standard boilerplate app generated from
 
 1. In **Solution Explorer**, right-click on the *AspNetMvcTest* project and select **Upgrade**.
 
-    :::image type="content" source="../media/solution-explorer.png" alt-text="Solution Explorer with the project's context menu displayed and the Upgrade command highlighted.":::
+    :::image type="content" source="../media/solution-explorer.png" alt-text="Screenshot of Solution Explorer with the project's context menu displayed and the Upgrade command highlighted.":::
 
     The **Upgrade Assistant** tab opens. Since the app to be upgraded is an ASP.NET MVC app, the only option available is **Side-by-side incremental project upgrade**.
 
-    :::image type="content" source="../media/upgrade-assistant-welcome.png" alt-text="The welcome screen to the Upgrade Assistant. Only one option is displayed: Side-by-side incremental project upgrade":::
+    :::image type="content" source="../media/upgrade-assistant-welcome.png" alt-text="Screenshot of the welcome screen to the Upgrade Assistant. Only one option is displayed: Side-by-side incremental project upgrade":::
 
     This upgrade approach is great for web apps. It generates a new .NET project that implements YARP (Yet Another Reverse Proxy). If a resource URL is requested but not found in the new project, the request is forwarded to the old project. This way, you can incrementally migrate to the new app without losing any functionality.
 
@@ -44,7 +44,7 @@ Let's obtain the sample app. It's just a standard boilerplate app generated from
 1. Choose your target framework. Select **.NET 7.0** and select **Next**.
 1. Review the tasks to be performed:
 
-   :::image type="content" source="../media/summarize-tasks.png" alt-text="The last screen of the wizard, displaying the tasks to be performed when creating the new AspNetMvcTestCore project.":::
+   :::image type="content" source="../media/summarize-tasks.png" alt-text="Screenshot of the last screen of the wizard, displaying the tasks to be performed when creating the new AspNetMvcTestCore project.":::
 
    The Upgrade Assistant will:
 
@@ -57,7 +57,7 @@ Let's obtain the sample app. It's just a standard boilerplate app generated from
 1. Select **Finish** and the upgrade assistant will complete the initial migration.
 1. Select **Done** to view the upgrade summary.
 
-   :::image type="content" source="../media/ua-summary.png" alt-text="The summary screen showing the Endpoints distribution. Currently all the endpoints are in the ASP.NET MVC project.":::
+   :::image type="content" source="../media/upgrade-assistant-summary.png" alt-text="Screenshot of the summary screen showing the Endpoints distribution. Currently all the endpoints are in the ASP.NET MVC project.":::
 
 ## Incrementally upgrade controllers
 
@@ -65,7 +65,7 @@ From here, you can move classes and controllers incrementally to the new project
 
 1. Select the **Endpoints explorer** button and review the endpoints.
 
-   :::image type="content" source="../media/endpoints-explorer.png" alt-text="The endpoints explorer step showing the detected endpoints, all of which or on HomeController.":::
+   :::image type="content" source="../media/endpoints-explorer.png" alt-text="Screenshot of the endpoints explorer step showing the detected endpoints, all of which are on HomeController.":::
 
    The detected routes and endpoints are displayed. Note that the endpoints are all actions on the *Home* controller.
 
@@ -73,7 +73,7 @@ From here, you can move classes and controllers incrementally to the new project
 1. In the **Select controller to upgrade** dialog, select **AspNewMvcTest.Controllers.HomeController** and select **Upgrade**.
 1. On the **Select components** dialog, expand all the nodes on the treeview.
 
-   :::image type="content" source="../media/select-components.png" alt-text="The Select Components dialog with the treeview expanded.":::
+   :::image type="content" source="../media/select-components.png" alt-text="Screenshot of the Select Components dialog with the treeview expanded.":::
 
    The Upgrade Assistant has detected the routes, classes, and views that need to be migrated to support the *Home* controller.
 
@@ -92,7 +92,7 @@ Static files that should be served by the web server should be moved to an appro
 1. Create a subdirectory to `wwwroot` named `css`.
 1. Create another subdirectory to `wwwroot` named `js`.
 
-   :::image type="content" source="../media/wwwroot-structure.png" alt-text="The wwwroot directory with the js and css subdirectories.":::
+   :::image type="content" source="../media/wwwroot-structure.png" alt-text="Screenshot of the wwwroot directory with the js and css subdirectories.":::
 
 1. Copy the following files from the `Content` directory in the **old** *AspNetMvcTest* project to `wwwroot/css` in the **new** *AspNetMvcTestCore* project:
 
@@ -109,7 +109,7 @@ Static files that should be served by the web server should be moved to an appro
 
 The required static files have been moved.
 
-:::image type="content" source="../media/wwwroot-with-files.png" alt-text="The wwwroot directory and subdirectories with all the required files present.":::
+:::image type="content" source="../media/wwwroot-with-files.png" alt-text="Screenshot of the wwwroot directory and subdirectories with all the required files present.":::
 
 ### Update static file references in the Layout page
 
@@ -152,7 +152,7 @@ The static files are where they need to be, so now we can update the Razor layou
 
 Return to the Summary dialog and note that no non-upgraded endpoints remain in the old .NET Framework app. You may need to build the app to update the assistant.
 
-:::image type="content" source="../media/endpoints-summary-done.png" alt-text="The Summary tab in the Upgrade Assistant showing all the endpoints have been migrated.":::
+:::image type="content" source="../media/endpoints-summary-done.png" alt-text="Screenshot of the Summary tab in the Upgrade Assistant showing all the endpoints have been migrated.":::
 
 When you press <kbd>F5</kbd>, the application should build and run successfully. Congratulations!
 
