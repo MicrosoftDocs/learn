@@ -1,6 +1,7 @@
 
 
 
+
 Earlier in this module you learned that runtime errors in C# are called exceptions and that you need to "catch" them before they crash your application. Really? Catching exceptions before they can crash your application sounds more like a video game than writing an application. So what exactly does it mean to "catch" an exception? To answer that question, you need to start by taking a closer look at what an exception is.
 
 ## What are exceptions?
@@ -40,7 +41,7 @@ The remaining portion of the definition tells you that if the .NET runtime detec
 
 Here are a few important things to remember from this unit:
 
-- Exceptions are used in C# to propagate errors at runtime, and are represented by classes derived from `System.Exception`.
+- Exceptions are used in C# to propagate errors at runtime, and are represented by classes derived from the `Exception` class.
 - Exceptions are thrown by code that encounters an error and caught by code that can correct the error.
 - When an exception is caught, code can access its contents and take corrective action to mitigate the error.
 - The .NET runtime generates exceptions when it detects an error and the exception contains information about the type of error that occurred.
