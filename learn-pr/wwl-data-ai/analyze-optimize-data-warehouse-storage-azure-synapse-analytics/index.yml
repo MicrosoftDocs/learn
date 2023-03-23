@@ -3,7 +3,7 @@ uid: learn.wwl.analyze-optimize-data-warehouse-storage-azure-synapse-analytics
 metadata:
   title: Analyze and optimize data warehouse storage in Azure Synapse Analytics
   description: "<div|Analyze and optimize data warehouse storage in Azure Synapse Analytics  </div|"
-  ms.date: 03/22/2023
+  ms.date: 03/23/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
@@ -41,6 +41,7 @@ units:
 - learn.wwl.analyze-optimize-data-warehouse-storage-azure-synapse-analytics.exercise-improve-execution-plan-of-query-with-materialized-view
 - learn.wwl.analyze-optimize-data-warehouse-storage-azure-synapse-analytics.understand-rules-for-minimally-logged-operations
 - learn.wwl.analyze-optimize-data-warehouse-storage-azure-synapse-analytics.exercise-optimize-delete-operation
+- learn.wwl.analyze-optimize-data-warehouse-storage-azure-synapse-analytics.knowledge-check
 - learn.wwl.analyze-optimize-data-warehouse-storage-azure-synapse-analytics.summary
 badge:
   uid: learn.wwl.analyze-optimize-data-warehouse-storage-azure-synapse-analytics.badge
