@@ -172,6 +172,8 @@ In the new app, complete the following steps to remove YARP:
 
 The new app can now be built and deployed independently from the original app.
 
+> [!NOTE]
+> In this simple scenario, you were able to complete the modernization in one step. In many real world applications, modernization will require a longer period of time. In this case, the YARP proxy will remain in place to allow you to allow you to incrementally update your application. 
 ## Summary
 
 In this section, you completed an upgrade for a simple, specific test scenario: a default ASP.NET MVC 5 app with no authentication, data access, additional NuGet packages, or custom code. In a more complex scenario, you'll need to complete additional migration steps as detailed in the [ASP.NET Core Migration Guide](/aspnet/core/migration/index).
