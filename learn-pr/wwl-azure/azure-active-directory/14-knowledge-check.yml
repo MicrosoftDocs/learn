@@ -4,16 +4,15 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/02/2023
+  ms.date: 03/23/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  zone_pivot_groups: None
 durationInMinutes: 3
 content: |
-  [!include[](includes/11-knowledge-check.md)]
+  [!include[](includes/14-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
@@ -50,7 +49,7 @@ quiz:
     - content: "Configure a one-time bypass to allow a user to authenticate a single time without performing multi-factor authentication. The bypass is temporary and expires after a specified number of seconds. In situations where the mobile app or phone isn't receiving a notification or phone call, you can allow a one-time bypass so the user can access the desired resource."
       isCorrect: true
       explanation: "Allowing one-time access is an available option."
-  - content: "When configuring Azure AD roles, which of the following roles would allow the user to manage all the groups in a tenant and would be able to assign other admin roles?"
+  - content: "Which of the following roles would allow the user to manage all the groups in a tenant and would be able to assign other admin roles?"
     choices:
     - content: "Global administrator"
       isCorrect: true

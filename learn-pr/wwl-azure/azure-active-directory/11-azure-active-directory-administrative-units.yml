@@ -4,13 +4,12 @@ title: Configure Azure AD administrative units
 metadata:
   title: Configure Azure AD administrative units
   description: "Configure Azure AD administrative units"
-  ms.date: 02/02/2023
+  ms.date: 03/23/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  zone_pivot_groups: None
 durationInMinutes: 5
 content: |
-  [!include[](includes/8-azure-active-directory-administrative-units.md)]
+  [!include[](includes/11-azure-active-directory-administrative-units.md)]

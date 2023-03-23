@@ -4,13 +4,12 @@ title: Deploy Azure AD Domain Services
 metadata:
   title: Deploy Azure AD Domain Services
   description: "Deploy Azure AD Domain Services"
-  ms.date: 02/02/2023
+  ms.date: 03/23/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  zone_pivot_groups: None
 durationInMinutes: 7
 content: |
-  [!include[](includes/5-azure-active-directory-domain-services.md)]
+  [!include[](includes/8-azure-active-directory-domain-services.md)]
