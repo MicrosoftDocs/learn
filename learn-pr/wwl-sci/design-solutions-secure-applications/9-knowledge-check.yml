@@ -27,34 +27,20 @@ durationInMinutes: 1
 content: |
 quiz:
   questions:
-  - content: "Which of the following is a key element of DevSecOps?"
+  - content: "What is DevSecOps?"
     choices:
-    - content: "Continuous Integration"
-      isCorrect: true
-      explanation: "Continuous Integration is a key element in automating software development processes."
-    - content: "Manual testing"
-      isCorrect: false
-      explanation: "Manual testing isn't an element in full-scale DevOps implementation."
-    - content: "Periodic deployment"
-      isCorrect: false
-      explanation: "Periodic deployment doesn't promote the DevOps culture of continuous delivery and service improvement."
-    - content: "Monthly review meetings"
-      isCorrect: false
-      explanation: "Review meetings aren't an active element of DevOps, more so a management decision."
-  - content: "What aspect of security does DevSecOps focus on?"
-    choices:
-    - content: "Network Security"
-      isCorrect: false
-      explanation: "While network security is important, DevSecOps focuses on securing the entire application development lifecycle."
-    - content: "Secure coding practices"
-      isCorrect: true
-      explanation: "DevSecOps involves setting up secure coding practices required to compile applications with optimal security."
-    - content: "Separation of duties"
-      isCorrect: false
-      explanation: "Separation of duties, while a valid security concept, isn't what DevSecOps focuses on directly."
-    - content: "Physical security"
-      isCorrect: false
-      explanation: "Physical security is important but not as significant in DevSecOps implementation."
+      - content: "A practice that ensures system uptime by maintaining optimal replica volumes."
+        isCorrect: false
+        explanation: "DevSecOps isn't concerned with replica volumes of systems, which refers to replication strategies used in high availability deployment scenarios."
+      - content: "A security model used by developers to certify that code changes do not affect production environments."
+        isCorrect: false
+        explanation: "There's no certification process involved in DevSecOps. The idea behind DevSecOps is that security mechanisms are integrated throughout the development cycle to increase the overall security posture."
+      - content: "A set of principles designed to integrate security testing and evaluation into the software development lifecycle (SDLC)."
+        isCorrect: true
+        explanation: "DevSecOps is short for Development, Security, and Operations, which aims to integrate security activities into all stages of the SDLC to achieve application and infrastructure resilience."
+      - content: "A method to monitor customer satisfaction after every release of the product to ensure continuous improvement."
+        isCorrect: false
+        explanation: "While monitoring customer satisfaction is essential, it's not directly related to DevSecOps. Monitoring is also more of an Operations concern than something taken care of within the Development phase."
   - content: "What is a service principal in Azure AD?"
     choices:
     - content: "A managed identity for a specific Azure resource"
