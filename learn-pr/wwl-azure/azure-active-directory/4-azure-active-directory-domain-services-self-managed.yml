@@ -12,5 +12,5 @@ metadata:
   zone_pivot_groups: None
 durationInMinutes: 3
 content: |
-  [!include[](includes/4-azure-ad-ds-and-self-managed-ad-ds.md)]
+  [!include[](includes/4-azure-active-directory-domain-services-self-managed.md)]
 interactive: bash

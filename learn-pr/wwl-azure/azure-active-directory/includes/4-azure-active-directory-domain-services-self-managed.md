@@ -1,8 +1,8 @@
 
 If you have applications and services that need access to traditional authentication mechanisms such as Kerberos or NTLM, there are **two ways** to provide Active Directory Domain Services in the cloud:
 
-1.  A ***managed domain*** that you create using Azure Active Directory Domain Services (Azure AD DS). Microsoft creates and manages the required resources.
-2.  A ***self-managed*** domain that you create and configure using traditional resources such as virtual machines (VMs), Windows Server guest OS, and Active Directory Domain Services (AD DS). You then continue to administer these resources.
+ -  A ***managed domain*** that you create using Azure Active Directory Domain Services (Azure AD DS). Microsoft creates and manages the required resources.
+ -  A ***self-managed*** domain that you create and configure using traditional resources such as virtual machines (VMs), Windows Server guest OS, and Active Directory Domain Services (AD DS). You then continue to administer these resources.
 
 With Azure AD DS, the core service components are deployed and maintained for you by Microsoft as a ***managed*** domain experience. You don't deploy, manage, patch, and secure the AD DS infrastructure for components like the VMs, Windows Server OS, or domain controllers (DCs).
 

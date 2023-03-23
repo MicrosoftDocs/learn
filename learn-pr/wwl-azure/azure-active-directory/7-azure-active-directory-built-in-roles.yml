@@ -12,5 +12,5 @@ metadata:
   zone_pivot_groups: None
 durationInMinutes: 7
 content: |
-  [!include[](includes/7-azure-ad-built-in-roles.md)]
+  [!include[](includes/7-azure-active-directory-built-in-roles.md)]
 interactive: bash
