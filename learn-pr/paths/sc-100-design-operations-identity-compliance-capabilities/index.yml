@@ -1,14 +1,14 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.sc-100-design-operations-identity-compliance-capabilities
 metadata:
-  title: 'SC-100 Design security operations, identity, and compliance capabilities'
-  description: 'SC-100 Design security operations, identity, and compliance capabilities'
+  title: 'SC-100: Design security operations, identity, and compliance capabilities'
+  description: 'SC-100: Design security operations, identity, and compliance capabilities'
   ms.date: 04/05/2023
   author: wwlpublish
   ms.author: hrasheed
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: 'SC-100 Design security operations, identity, and compliance capabilities'
+title: 'SC-100: Design security operations, identity, and compliance capabilities'
 prerequisites: |
   *   Advanced experience and knowledge in identity and access, platform protection, security operations, securing data and securing applications.
   *   Experience with hybrid and cloud implementations.

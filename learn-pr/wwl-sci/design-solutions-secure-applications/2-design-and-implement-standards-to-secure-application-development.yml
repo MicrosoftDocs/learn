@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 1
 content: |
-  [!include[](includes/5-design-and-implement-standards-to-secure-application-development.md)]
+  [!include[](includes/2-design-and-implement-standards-to-secure-application-development.md)]

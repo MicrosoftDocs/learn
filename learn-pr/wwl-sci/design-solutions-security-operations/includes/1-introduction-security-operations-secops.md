@@ -21,8 +21,8 @@ The main objective of a cloud security operations (SecOps) function is to detect
 
 As SecOps matures, security operations should:
 
--   Reactively respond to attacks detected by tools
--   Proactively hunt for attacks that slipped past reactive detections
+- Reactively respond to attacks detected by tools
+- Proactively hunt for attacks that slipped past reactive detections
 
 <!-- 
 [](https://learn.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-operations-center#modernization)

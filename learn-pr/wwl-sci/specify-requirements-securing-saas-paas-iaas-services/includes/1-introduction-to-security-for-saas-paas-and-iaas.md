@@ -1,9 +1,9 @@
 In this module, you'll learn how to:
 
-*   Specify security baselines for SaaS, PaaS, and IaaS services
-*   Specify security requirements for IoT workloads
-*   Specify security requirements for web workloads
-*   Specify security requirements for containers and container orchestration
+* Specify security baselines for SaaS, PaaS, and IaaS services
+* Specify security requirements for IoT workloads
+* Specify security requirements for web workloads
+* Specify security requirements for containers and container orchestration
 
 The content in the module helps you prepare for the certification exam SC-100: Microsoft Cybersecurity Architect.
 

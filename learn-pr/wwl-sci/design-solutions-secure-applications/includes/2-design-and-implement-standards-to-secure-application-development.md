@@ -51,7 +51,7 @@ You can use one or both of these approaches, depending on what works better for 
 
 When your team gets more comfortable with the process, they can apply more advanced techniques from Microsoft [security development lifecycle](https://www.microsoft.com/securityengineering/sdl/threatmodeling). And they can integrate threat modeling tools like [Microsoft threat modeling tool](https://learn.microsoft.com/azure/security/develop/threat-modeling-tool) to get deeper insights and help automate the process.
 
-Another helpful resource is the [guide to threat modeling for developers](https://martinfowler.com/articles/agile-threat-modelling.html).
+A subsequent unit discusses [threat modeling](/4-evaluate-application-threats-with-threat-modeling.yml) in greater detail.
 <!--
 [](https://learn.microsoft.com/azure/cloud-adoption-framework/secure/devsecops-controls#ide-security-plug-ins-and-pre-commit-hooks)
 -->
@@ -216,3 +216,55 @@ The tools and techniques in this guidance offer a holistic security model for or
 All these techniques and tools empower teams to find and flag risks and vulnerabilities that require investigation and potential resolution. Operations teams who receive an alert, or discover a potential issue when they investigate a support ticket, need a route back to the development team to flag items for review. A smooth, collaborative, feedback loop is vital to address issues quickly and minimize the risk of a vulnerability as much as possible.
 
 A common pattern for feedback is to integrate it into a developer work management system, such as Azure DevOps or GitHub. An organization can link alerts or incidents to work items for developers to plan and action. This process provides an effective way for developers to resolve issues within their standard workflow, including development, testing, and release.
+
+## Enable DevSecOps with Azure and GitHub
+
+DevSecOps, sometimes called Secure DevOps, builds on the principles of [DevOps](https://azure.microsoft.com/overview/what-is-devops/) but puts security at the center of the entire application lifecycle. This concept is called “shift-left security”: it moves security upstream from a production-only concern to encompass the early stages of planning and development. Every team and person that works on an application is required to consider security.
+
+Microsoft and GitHub offer solutions to build confidence in the code that you run in production. These solutions inspect your code and allow its traceability down to the work items and insights on the third-party components that are in use.
+
+### Secure your code with GitHub
+
+Developers can use code scanning tools that quickly and automatically analyze the code in a GitHub repository to find security vulnerabilities and coding errors.
+
+You can scan code to find, triage, and prioritize fixes for existing problems. Code scanning also prevents developers from introducing new problems. You can schedule scans for specific days and times, or trigger scans when a specific event occurs in the repository, such as a push. You can also track your repository's dependencies and receive security alerts when GitHub detects vulnerable dependencies.
+
+### Build and deploy containers with Azure Pipelines
+
+Integrate Azure Pipelines and Kubernetes clusters with ease. You can use the same YAML documents to build multi-stage pipelines-as-code for both continuous integration and continuous delivery.
+
+Azure Pipelines integrates metadata tracing into your container images, including commit hashes and issue numbers from Azure Boards, so that you can inspect your applications with confidence.
+
+The ability to create deployment pipelines with YAML files and store them in source control helps drive a tighter feedback loop between development and operation teams who rely on clear, readable documents.
+
+### Run and debug containers with Bridge to Kubernetes
+
+Developing a Kubernetes application can be challenging. You need Docker and Kubernetes configuration files. You need to figure out how to test your application locally and interact with other dependent services. You might need to develop and test multiple services at once and with a team of developers.
+
+Bridge to Kubernetes allows you to run and debug code on your development computer, while still connected to your Kubernetes cluster with the rest of your application or services. You can test your code end-to-end, hit breakpoints on code running in the cluster, and share a development cluster between team members without interference.
+
+### Enforce container security with Microsoft Defender for Containers and Azure Policy
+
+Microsoft Defender for Containers is the cloud-native solution for securing your containers.
+
+### Manage identities and access with the Microsoft identity platform
+
+The Microsoft identity platform is an evolution of the Azure Active Directory (Azure AD) developer platform. It allows developers to build applications that sign in all Microsoft identities and get tokens to call Microsoft APIs, such as Microsoft Graph, or APIs that developers have built.
+
+Azure AD B2C provides business-to-customer identity as a service. Your customers use their preferred social, enterprise, or local account identities to get single sign-on access to your applications and APIs.
+
+Access management for cloud resources is a critical function for any organization that uses the cloud. Azure role-based access control (Azure RBAC) helps you manage who has access to Azure resources, what they can do with those resources, and what areas they can access.
+
+You can use the Microsoft identity platform to authenticate with the rest of your DevOps tools, including native support within Azure DevOps and integrations with GitHub Enterprise.
+
+Currently, an Azure Kubernetes Service (AKS) cluster (specifically, the Kubernetes cloud provider) requires an identity to create additional resources like load balancers and managed disks in Azure. This identity can be either a managed identity or a service principal. If you use a service principal, you must either provide one or AKS creates one on your behalf. If you use managed identity, one will be created for you by AKS automatically. For clusters that use service principals, the service principal must be renewed eventually to keep the cluster working. Managing service principals adds complexity, which is why it's easier to use managed identities instead. The same permission requirements apply for both service principals and managed identities.
+
+Managed identities are essentially a wrapper around service principals, and make their management simpler.
+
+### Manage keys and secrets with Azure Key Vault
+
+Azure Key Vault can be used to securely store and control access to tokens, passwords, certificates, API keys, and other secrets. Centralizing storage of application secrets in Key Vault allows you to control their distribution. Key Vault greatly reduces the chances that secrets may be accidentally leaked. When you use Key Vault, application developers no longer need to store security information in their application, which eliminates the need to make this information part of the code. For example, an application may need to connect to a database. Instead of storing the connection string in the app's code, you can store it securely in Key Vault.
+
+### Monitor your applications
+
+With Azure Monitor, you can monitor both your application and infrastructure in real-time, identifying issues with your code and potential suspicious activities and anomalies. Azure Monitor integrates with release pipelines in Azure Pipelines to enable automatic approval of quality gates or release rollback based on monitoring data.

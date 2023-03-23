@@ -1,11 +1,11 @@
 In this module, you learn how to:
 
--   Specify security requirements for servers
--   Specify security requirements for mobile devices and clients
--   Specify security requirements for IoT devices and embedded systems
--   Design a solution for securing operational technology (OT) and industrial control systems (ICS) by using Microsoft Defender for IoT
--   Specify security baselines for server and client endpoints
--   Design a solution for secure remote access
+- Specify security requirements for servers
+- Specify security requirements for mobile devices and clients
+- Specify security requirements for IoT devices and embedded systems
+- Design a solution for securing operational technology (OT) and industrial control systems (ICS) by using Microsoft Defender for IoT
+- Specify security baselines for server and client endpoints
+- Design a solution for secure remote access
 
 The content in the module helps you prepare for the certification exam SC-100: Microsoft Cybersecurity Architect.
 

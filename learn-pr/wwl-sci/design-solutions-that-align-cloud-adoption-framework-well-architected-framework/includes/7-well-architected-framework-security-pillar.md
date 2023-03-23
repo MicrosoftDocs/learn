@@ -10,7 +10,7 @@ Losing these assurances can negatively affect your business operations and reven
 
 The security of complex systems depends on understanding the business context, social context, and technical context. As you design your system, cover these areas:
 
-![Screenshot showing security design areas.](https://learn.microsoft.com/azure/architecture/framework/security/images/security-areas.png)
+![Diagram showing security design areas.](../media/security-areas.png)
 
 Understanding an IT solution as it interacts with its surrounding environment holds the key to preventing unauthorized activity and to identifying anomalous behavior that may represent a security risk.
 
@@ -32,7 +32,7 @@ Cloud providers must be compliant with the same IT regulatory requirements as th
 
 **Shared Responsibility Model:** As computing environments move from customer-controlled datacenters to the cloud, the responsibility of security also shifts. Security of the operational environment is now a concern shared by both cloud providers and customers. Organizations can reduce focus on activities that aren't core business competencies by shifting these responsibilities to a cloud service like Azure. Depending on the specific technology choices, some security protections will be built into the particular service, while addressing others will remain the customer's responsibility. To ensure that proper security controls are provided, organizations must carefully evaluate the services and technology choices.
 
-![A diagram of shared responsibility and key strategies.](https://learn.microsoft.com/azure/architecture/framework/security/images/shared-resp-color.png)
+![Diagram showing shared responsibility and key strategies.](../media/shared-resp-color.png)
 
 **Shared Responsibility and Key Strategies:**
 
@@ -59,18 +59,17 @@ More on perimeters and how they relate to Zero Trust and Enterprise Segmentation
 
 To assess your workload using the tenets found in the Microsoft Azure Well-Architected Framework, see the [Microsoft Azure Well-Architected Review](/assessments/?id=azure-architecture-review&mode=pre-assessment).
 
-![A diagram of the security cycle.](https://learn.microsoft.com/azure/architecture/framework/security/images/devops-security.png)
 
 We cover the following areas in the security pillar of the Microsoft Azure Well-Architected Framework:
 
 | Security Topic | Description |
 |-------------------|-------------|
-| [Security design principles][design] | These principles describe a securely architected system hosted on cloud or on-premises datacenters, or a combination of both. |
-| [Governance, risk, and compliance][compliance] | How is the organization's security going to be monitored, audited, and reported? What types of risks does the organization face while trying to protect identifiable information, Intellectual Property (IP), financial information? Is there specific industry, government, or regulatory requirements that dictate or provide recommendations on criteria that your organization's security controls must meet? |
-| [Regulatory compliance][regulatory] | Governments and other organizations frequently publish standards to help define good security practices (due diligence) so that organizations can avoid being negligent in security. |
-| [Administration][admin] | Administration is the practice of monitoring, maintaining, and operating Information Technology (IT) systems to meet service levels that the business requires. Administration introduces some of the highest impact security risks because performing these tasks requires privileged access to a broad set of these systems and applications. |
-| [Applications and services][app] | Applications and the data associated with them ultimately act as the primary store of business value on a cloud platform. |
-| [Identity and access management][identity] | Identity provides the basis of a large percentage of security assurances. |
-| [Information protection and storage][info] | Protecting data at rest is required to maintain confidentiality, integrity, and availability assurances across all workloads. |
-| [Network security and containment][network] | Network security has been the traditional linchpin of enterprise security efforts. However, cloud computing has increased the requirement for network perimeters to be more porous and many attackers have mastered the art of attacks on identity system elements (which nearly always bypass network controls). |
-| [Security Operations][sec-ops] | Security operations maintain and restores the security assurances of the system as live adversaries attack it. The tasks of security operations are described well by the NIST Cybersecurity Framework functions of Detect, Respond, and Recover. |
+| Security design principles | These principles describe a securely architected system hosted on cloud or on-premises datacenters, or a combination of both. |
+| Governance, risk, and compliance | How is the organization's security going to be monitored, audited, and reported? What types of risks does the organization face while trying to protect identifiable information, Intellectual Property (IP), financial information? Is there specific industry, government, or regulatory requirements that dictate or provide recommendations on criteria that your organization's security controls must meet? |
+| Regulatory compliance | Governments and other organizations frequently publish standards to help define good security practices (due diligence) so that organizations can avoid being negligent in security. |
+| Administration | Administration is the practice of monitoring, maintaining, and operating Information Technology (IT) systems to meet service levels that the business requires. Administration introduces some of the highest impact security risks because performing these tasks requires privileged access to a broad set of these systems and applications. |
+| Applications and services | Applications and the data associated with them ultimately act as the primary store of business value on a cloud platform. |
+| Identity and access management | Identity provides the basis of a large percentage of security assurances. |
+| Information protection and storage | Protecting data at rest is required to maintain confidentiality, integrity, and availability assurances across all workloads. |
+| Network security and containment | Network security has been the traditional linchpin of enterprise security efforts. However, cloud computing has increased the requirement for network perimeters to be more porous and many attackers have mastered the art of attacks on identity system elements (which nearly always bypass network controls). |
+| Security Operations | Security operations maintain and restores the security assurances of the system as live adversaries attack it. The tasks of security operations are described well by the NIST Cybersecurity Framework functions of Detect, Respond, and Recover. |
