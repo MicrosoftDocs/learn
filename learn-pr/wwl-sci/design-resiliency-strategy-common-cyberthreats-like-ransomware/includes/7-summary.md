@@ -1,9 +1,9 @@
 In this module, you learned how to:
 
-*   Understand common cyberthreats like ransomware.
-*   Understand how to support business resiliency.
-*   Design configurations for secure backup and restore.
-*   Design solutions for managing security updates.
+* Understand common cyberthreats like ransomware.
+* Understand how to support business resiliency.
+* Design configurations for secure backup and restore.
+* Design solutions for managing security updates.
 
 ## Learn more with security documentation
 
