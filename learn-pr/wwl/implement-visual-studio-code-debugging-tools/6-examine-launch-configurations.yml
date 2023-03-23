@@ -4,7 +4,7 @@ title: Examine the launch configurations file
 metadata:
   title: Examine the launch configurations file
   description: "Examine the launch configurations file"
-  ms.date: 03/20/2023
+  ms.date: 03/23/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
@@ -15,7 +15,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "In a launch configuration file, what is the **name** attribute used for?"
+  - content: "A developer updates a launch configuration. What is the **name** attribute used for?"
     choices:
     - content: "To specify the type of debugger used in a launch configuration."
       isCorrect: false
@@ -26,7 +26,7 @@ quiz:
     - content: "To specify the display name for a configuration."
       isCorrect: true
       explanation: "Correct. The name attribute specifies the display name for the configuration. The value assigned to name appears in the controls panel at the top of the RUN AND DEBUG view."
-  - content: "In a launch configuration file, what is the **preLaunchTask** attribute used for?"
+  - content: "A developer is working on a launch configuration. What is the **preLaunchTask** attribute used for?"
     choices:
     - content: "To specify the path of the application dll or .NET Core host executable to launch."
       isCorrect: false
@@ -37,7 +37,7 @@ quiz:
     - content: "To specify the type of console that's used when the application is launched."
       isCorrect: false
       explanation: "Incorrect. The **console** attribute specifies the type of console that's used when the application is launched."
-  - content: "In a launch configuration file, what is the **console** attribute used for?"
+  - content: "What is the **console** attribute of a launch configuration used for?"
     choices:
     - content: "Specifies the working directory of the target process."
       isCorrect: false
