@@ -16,24 +16,24 @@ quiz:
   questions:
   - content: "Is it necessary to deploy a dedicated Azure VM when deploying Azure Route Server?"
     choices:
-    - content: "No. Azure Route Server doesn’t require an Azure VM."
+    - content: "No. Azure Route Server doesn't require an Azure VM."
       isCorrect: true
-      explanation: "Correct. Azure Route Server is a fully-managed service in Azure that doesn’t require a separate Azure VM instance."
-    - content: "Yes. It’s necessary to deploy the Azure VM before deploying Azure Route Server."
+      explanation: "Correct. Azure Route Server is a fully managed service in Azure that doesn't require a separate Azure VM instance."
+    - content: "Yes. It's necessary to deploy the Azure VM before deploying Azure Route Server."
       isCorrect: false
-      explanation: "Incorrect. Azure Route Server doesn’t require an Azure VM as a prerequisite."
+      explanation: "Incorrect. Azure Route Server doesn't require an Azure VM as a prerequisite."
     - content: "Yes. An Azure VM is deployed automatically with Azure Route Server."
       isCorrect: false
-      explanation: "Incorrect. Azure Route Server doesn’t deploy a separate Azure VM automatically."
+      explanation: "Incorrect. Azure Route Server doesn't deploy a separate Azure VM automatically."
   - content: "A virtual network has address space 192.168.0.0/16, with two subnets. Subnet1 has the address space 192.168.1.0/24, and Subnet2 has the address space 192.168.2.0/24. Is this virtual network ready to deploy Azure Route Server?"
     choices:
     - content: "Yes. This virtual network is ready for Azure Route Server deployment."
       isCorrect: false
-      explanation: "Incorrect. This network isn’t ready for Azure Route Server deployment. You need one more subnet."
+      explanation: "Incorrect. This network isn't ready for Azure Route Server deployment. You need one more subnet."
     - content: "No. You need to create one more subnet before deploying Azure Route Server."
       isCorrect: true
       explanation: "Correct. You also need to create the RouteServerSubnet for Azure Route Server."
-    - content: "No. This network configuration doesn’t support Azure Route Server deployment."
+    - content: "No. This network configuration doesn't support Azure Route Server deployment."
       isCorrect: false
       explanation: "Incorrect. The network configuration supports Azure Route Server, but it first needs some more configuration steps completed."
   - content: "A virtual network has two SD-WAN NVAs deployed. The administrator deployed Azure Route Server and wants to configure it to exchange routes with SD-WAN NVAs. What should the administrator do?"
@@ -41,23 +41,23 @@ quiz:
     - content: "They should enable branch-to-branch routing."
       isCorrect: false
       explanation: "Incorrect. Branch-to-branch routing is not for SD-WAN NVAs."
-    - content: "They don’t need to do anything. This happens automatically."
+    - content: "They don't need to do anything. This happens automatically."
       isCorrect: false
-      explanation: "Incorrect. Routes between Azure Route Server and NVA don’t exchange automatically."
+      explanation: "Incorrect. Routes between Azure Route Server and NVA don't exchange automatically."
     - content: "They should configure SD-WAN NVAs as BGP peers for Azure Route Server."
       isCorrect: true
       explanation: "Correct. The administrator needs to configure SD-WAN NVAs as BGP peers for Azure Route Server."
   - content: "An administrator who deployed Azure Route Server in their virtual network wants to configure Azure VMs that are deployed in the same virtual network to access the internet through Azure Route Server. Can they take any steps to do this?"
     choices:
-    - content: "No. Azure Route Server can’t be used to route traffic to the internet."
+    - content: "No. Azure Route Server can't be used to route traffic to the internet."
       isCorrect: true
-      explanation: "Correct. Azure Route Server doesn’t manage traffic. It just exchanges routes."
+      explanation: "Correct. Azure Route Server doesn't manage traffic. It just exchanges routes."
     - content: "Yes. The administrator should configure the Azure Route Server IP address as the default gateway to network adapter objects used by Azure VMs."
       isCorrect: false
       explanation: "Incorrect. Azure Route Server cannot be the default gateway."
     - content: "Yes. They should add a firewall object in the virtual network."
       isCorrect: false
-      explanation: "Incorrect. A firewall in Azure doesn’t provide this functionality."
+      explanation: "Incorrect. A firewall in Azure doesn't provide this functionality."
   - content: "When deploying Azure Route Server in the same virtual network with ExpressRoute gateway, what should be configured to enable route exchange?"
     choices:
     - content: "BGP Peering."
@@ -68,4 +68,4 @@ quiz:
       explanation: "Correct. This is the setting for ExpressRoute."
     - content: "Nothing. This happens automatically."
       isCorrect: false
-      explanation: "Incorrect. Routes aren’t exchanged automatically."
+      explanation: "Incorrect. Routes aren't exchanged automatically."
