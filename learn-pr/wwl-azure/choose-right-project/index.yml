@@ -3,7 +3,7 @@ uid: learn.wwl.choose-right-project
 metadata:
   title: Choose the right project
   description: "Choose the right project"
-  ms.date: 06/13/2022
+  ms.date: 03/24/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
   - Identify project metrics and Key Performance Indicators (KPI's)
 prerequisites: |
   None
-iconUrl: /training/achievements/2-choose-the-right-project.svg
+iconUrl: /learn/achievements/2-choose-the-right-project.svg
 levels:
 - advanced
 roles:

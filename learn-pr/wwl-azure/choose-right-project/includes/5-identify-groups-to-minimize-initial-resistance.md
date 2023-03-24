@@ -1,3 +1,4 @@
+
 Not all staff members within an organization will be receptive to the change required for a DevOps transformation.
 
 In discussions around continuous delivery, we usually categorize users into three general buckets:
