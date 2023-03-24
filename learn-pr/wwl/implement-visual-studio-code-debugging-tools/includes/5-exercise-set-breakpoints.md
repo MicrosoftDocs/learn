@@ -1,11 +1,12 @@
 
 
 
+
 Breakpoints are used during the debug process pause execution. This enables you to track variables and examine the sequence in which your code is executed. Breakpoints are a great way to start your debug process.
 
 ## Set a breakpoint
 
-Earlier in this module you completed an exercise where you ran an application in the debugger. The application displayed "greeting messages" in the DEBUG CONSOLE panel. At the end of the exercise, you noticed that the code repeats Andrew's greeting in a way that it shouldn't.
+Earlier in this module you completed an exercise where you ran an application in the debugger. The application displayed "greeting messages" in the DEBUG CONSOLE panel. At the end of the exercise, you noticed that the code repeats Andrew's greeting in an unexpected way.
 
 In this exercise, you'll use a breakpoint to help you identify the issue.
 
@@ -81,6 +82,8 @@ In this exercise, you'll use a breakpoint to help you identify the issue.
 1. On the **Debug controls** toolbar, select **Step Into**.
 
 1. Notice that code execution advances to the `SophiaMessage` method and pauses.
+
+    The **Step Into** button has advanced to the next executable code line. The next executable code line isn't the next line number in the file, it's the next statement in the execution path. In this case, the next executable statement is the entry point to the `SophiaMessage` method.
 
 1. On the **Debug controls** toolbar, select **Step Out**.
 
