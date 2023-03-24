@@ -39,11 +39,11 @@ An organization (tenant) has one associated default Azure AD directory. However,
 
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
-1. On the Azure home page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
+1. On the Azure home page, under **Azure services**, select **Create a resource**.
 
-1. In the left menu pane, select **Identity**, and then search for and select **Azure Active Directory**. The **Azure Active Directory** pane appears.
+1. In the left menu pane, select **Identity**, and then search for and select **Azure Active Directory**.
 
-1. Select **Create**. The **Create tenant** pane appears.
+1. Select **Create**.
 
 1. Select **Azure Active Directory** for the tenant type, then select **Next : Configuration**.
 

@@ -1,3 +1,4 @@
+
 Dedicated SQL pools support the most commonly used data types. With that, it is essential to keep in mind that minimizing the size of data types shortens the row length, which leads to better query performance. Use the smallest data type that works for your data:
 
 - Avoid defining character columns with a large default length. For example, if the longest value is 25 characters, define your column as VARCHAR(25).

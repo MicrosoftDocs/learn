@@ -3,7 +3,7 @@ uid: learn.create-azure-db-for-postgresql
 metadata:
   title: Introduction to Azure Database for PostgreSQL
   description: Build cloud-native apps with Azure Database for PostgreSQL for the most compatibility.
-  ms.date: 09/28/2022
+  ms.date: 03/22/2023
   author: markingmyname
   ms.author: maghan
   manager: jroth

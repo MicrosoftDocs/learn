@@ -1,8 +1,8 @@
 The *fs* module in Node.js lets you create new files and directories programmatically.
 
-So far, you've created a robust command-line application in Node.js that can read any folder structure to find files with a .json extension. You'll need to read those files to summarize the data in them. You'll then write the totals to a new file in a new directory called *salesTotals*.
+So far, you've created a robust command-line application in Node.js that can read any folder structure to find files with a .json extension. You need to read those files to summarize the data in them. and then write the totals to a new file in a new directory called *salesTotals*.
 
-In this exercise, you'll create the *salesTotals* directory and *totals.txt* file where the sales totals will eventually go.
+In this exercise, you create the *salesTotals* directory and *totals.txt* file where we can eventually write the sales totals.
 
 ## Create the salesTotals directory
 
@@ -61,6 +61,8 @@ In this exercise, you'll create the *salesTotals* directory and *totals.txt* fil
    }
    ```
 
+1. Press <kbd>Ctrl+S</kbd> or <kbd>Cmd+S</kbd> to save the file.
+
 1. From the terminal prompt, run the program with the following code.
 
    ```bash
@@ -71,7 +73,7 @@ In this exercise, you'll create the *salesTotals* directory and *totals.txt* fil
 
    :::image type="content" source="../media/refresh-file-explorer.png" alt-text="Screenshot of the Refresh icon in the Files explorer of the Cloud Shell editor.":::
 
-You're almost finished. The last step is to read the sales files, add up the totals, and write the grand total to the new *totals.txt* file. Next you'll learn how to read and parse data inside files.
+You're almost finished. The last step is to read the sales files, add up the totals, and write the grand total to the new *totals.txt* file. Next you learn how to read and parse data inside files.
 
 ## Got stuck?
 
@@ -99,7 +101,7 @@ async function findSalesFiles(folderName) {
         // Make sure the discovered file is a .json file
         if (path.extname(item.name) === ".json") {
           // store the file path in the salesFiles array
-          salesFiles.push(path.join(folderName, item.name));
+           await salesFiles.push(path.join(folderName, item.name));
         }
       }
     }

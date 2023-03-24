@@ -4,13 +4,11 @@ title: Monitor sources for insights on threats and mitigations
 metadata:
   title: Monitor sources for insights on threats and mitigations
   description: "Monitor sources for insights on threats and mitigations"
-  ms.date: 10/11/2022
+  ms.date: 03/22/2023
   author: wwlpublish
   ms.author: hrasheed
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 10
 content: |
   [!include[](includes/9-monitor-sources-for-insights-threats-mitigations.md)]
