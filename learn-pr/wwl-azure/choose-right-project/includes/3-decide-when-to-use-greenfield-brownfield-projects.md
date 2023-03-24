@@ -1,10 +1,10 @@
-When starting a DevOps transformation, you might need to choose between green field and brownfield projects.
+When starting a DevOps transformation, you might need to choose between greenfield and brownfield projects.
 
-There's a common misconception that we need to demystify that DevOps suits green field projects better than brownfield projects.
+There's a common misconception that we need to demystify that DevOps suits greenfield projects better than brownfield projects.
 
 ## Greenfield projects
 
-A green field project will always appear to be a more accessible starting point. A blank slate offers the chance to implement everything the way that you want.
+A greenfield project will always appear to be a more accessible starting point. A blank slate offers the chance to implement everything the way that you want.
 
 You might also have a better chance of avoiding existing business processes that don't align with your project plans.
 
@@ -30,8 +30,8 @@ The limitations will have often worn down the existing team members. For example
 
 The system is often crucial for organizations. It might also be easier to gain more robust management buy-in for these projects because of the potential benefits delivered.
 
-Management might also have a stronger sense of urgency to point brownfield projects in an appropriate direction when compared to green field projects that don't currently exist.
+Management might also have a stronger sense of urgency to point brownfield projects in an appropriate direction when compared to greenfield projects that don't currently exist.
 
 ## Take the first step
 
-Eventually, the goal will be to evolve your entire organization. In looking to take the first step, many organizations start with a green field project and then move on.
+Eventually, the goal will be to evolve your entire organization. In looking to take the first step, many organizations start with a greenfield project and then move on.
