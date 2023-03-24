@@ -92,7 +92,7 @@ Now, it's time to test your project locally.
 
 1. In Visual Studio Code, press <kbd>F5</kbd> to start the Azure Functions project in debug mode.
 
-2. Wait until VSCode has launched your project. You'll see a URL like the following in the console. Copy it and open it in your browser:
+2. Wait until VS Code has launched your project. You'll see a URL like the following in the console. Copy it and open it in your browser:
 
     ```output
     http://localhost:7071/api/credentials
