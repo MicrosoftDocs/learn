@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-endpoint-manager.2-what-is-endpoint-manager
-title: What is Microsoft Endpoint Manager?
+title: What is Microsoft Intune?
 metadata:
-  title: What is Microsoft Endpoint Manager?
-  description: Learn what endpoints are and what Microsoft Endpoint Manager can do for you and your organization.
+  title: What is Microsoft Intune?
+  description: Learn what endpoints are and what Microsoft Intune can do for you and your organization.
   ms.date: 10/15/2020
   author: Erikre
   ms.author: erikre

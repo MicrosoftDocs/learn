@@ -1,6 +1,6 @@
 After a device have been provisioned and before you can safeguard the devices that access your organization's resources, you must enroll them. In Intune, enrolling means that the device is connected and recognized by Intune based on a mobile device management (MDM) certificate. There are several methods to enroll your workforce's devices. Each method depends on **device ownership** (personal or corporate), **device type** or platform (iOS/iPadOS, Windows, Android, macOS), and **device management requirements** (resets, affinity, locking). These methods are explained below.
 
-[ ![Enrolling devices using Microsoft Endpoint Manager.](../media/intro-to-endpoint-manager-15.png) ](../media/intro-to-endpoint-manager-15.png#lightbox)
+[ ![Enrolling devices using Microsoft Intune.](../media/intro-to-endpoint-manager-15.png) ](../media/intro-to-endpoint-manager-15.png#lightbox)
 
 > [!NOTE]
 > For Configuration Manager, you install the Configuration Manager client on a device, and then it registers with the site.
@@ -13,7 +13,7 @@ Personally owned devices are often referred to as Bring your own devices (BYOD).
 
 ## Device type
 
-The available device types that can be managed by Endpoint Manager include iOS/iPadOS, Windows, Android, and macOS. These device types are also known as *platforms*. Because each device type is different, each offers slightly different enrollment methods, device settings, protection policy settings, configuration policy settings, custom policy settings, and remote actions.
+The available device types that can be managed by Intune include iOS/iPadOS, Windows, Android, and macOS. These device types are also known as *platforms*. Because each device type is different, each offers slightly different enrollment methods, device settings, protection policy settings, configuration policy settings, custom policy settings, and remote actions.
 
 ## Device management requirements
 
