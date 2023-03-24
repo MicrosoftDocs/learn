@@ -1,11 +1,12 @@
 
 
 
+
 The following example of a debug process is one possible solution for the challenge from the previous unit.
 
 ## Implement the C# debugger tools to identify the issue
 
-This debug process implements a breakpoint and then monitors the value of `x` in the VARIABLES section of RUN AND DEBUG view.
+The following debug process implements a breakpoint and then monitors the value of `x` in the VARIABLES section of RUN AND DEBUG view.
 
 1. Set a breakpoint on the following code line:
 
