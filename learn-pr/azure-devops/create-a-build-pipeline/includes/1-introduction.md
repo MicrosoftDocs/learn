@@ -10,27 +10,6 @@ In the [Get started with Azure DevOps](../../../paths/evolve-your-devops-practic
 
 In this module, you'll help the team with their first task: setting up a continuous integration (CI) pipeline for their app.
 
-The Tailspin web team is being pulled in many directions. Andy, the lead dev, is running from one meeting to another and never has any time. Amita, the QA person, is helping a tester on another team. Tim, who's in Ops, is upgrading his servers and hasn't been seen for days. Mara's dream of a true DevOps team is stalled (again).
-
-But she isn't giving up. She remembers that she and the team used Azure Boards to create a backlog of issues with the build process:
-
-:::image type="content" source="../../shared/media/build-all-tasks.png" alt-text="Screenshot of Azure Boards showing a backlog of issues.":::
-
-She also remembers that they picked three of the issues to fix within the next two weeks. (Of course, everyone else has forgotten about them.)
-
-:::image type="content" source="../../shared/media/build-initial-tasks.png" alt-text="Screenshot of Azure Boards showing the initial three tasks.":::
-
-Mara decides to take an initial pass on the biggest issue, **Stabilize the build server**, herself. She won't try to fix everything. Instead, she's going to see if she can use Microsoft Azure Pipelines to replicate the current build process. She's convinced that Azure Pipelines provides enough benefits to improve the process. If she's right, she'll show her version to the team to see if she can make them more enthusiastic.
-
-## Learning objectives
-
-After completing this module, you'll be able to:
-
-- Create a build pipeline in Azure Pipelines.
-- Map manual build steps to automated build tasks.
-- Publish your builds so others can access them.
-- Use templates to build multiple configurations.
-
 ## Prerequisites
 
 The modules in this learning path and previous learning path form a progression.
@@ -60,6 +39,30 @@ If your company's policy doesn't allow you to create an Azure DevOps organizatio
 This environment lets you complete the exercises in this and future modules. You can also use it to apply your new skills to your own projects.
 
 [!include[](../../shared/includes/project-details-note.md)]
+
+## Training module scenario
+
+The Tailspin web team is being pulled in many directions. Andy, the lead dev, is running from one meeting to another and never has any time. Amita, the QA person, is helping a tester on another team. Tim, who's in Ops, is upgrading his servers and hasn't been seen for days. Mara's dream of a true DevOps team is stalled (again).
+
+But she isn't giving up. She remembers that she and the team used Azure Boards to create a backlog of issues with the build process:
+
+:::image type="content" source="../../shared/media/build-all-tasks.png" alt-text="Screenshot of Azure Boards showing a backlog of issues.":::
+
+She also remembers that they picked three of the issues to fix within the next two weeks. (Of course, everyone else has forgotten about them.)
+
+:::image type="content" source="../../shared/media/build-initial-tasks.png" alt-text="Screenshot of Azure Boards showing the initial three tasks.":::
+
+Mara decides to take an initial pass on the biggest issue, **Stabilize the build server**, herself. She won't try to fix everything. Instead, she's going to see if she can use Microsoft Azure Pipelines to replicate the current build process. She's convinced that Azure Pipelines provides enough benefits to improve the process. If she's right, she'll show her version to the team to see if she can make them more enthusiastic.
+
+## Learning objectives
+
+After completing this module, you'll be able to:
+
+- Create a build pipeline in Azure Pipelines.
+- Map manual build steps to automated build tasks.
+- Publish your builds so others can access them.
+- Use templates to build multiple configurations.
+
 
 ## Meet the team
 
