@@ -1,6 +1,7 @@
 
 
 
+
 The RUN AND DEBUG view provides developers with an easy way to monitor variables and expressions, observe execution flow, and manage breakpoints during the debug process.  
 
 ## Examine the sections of the Run and Debug view
@@ -44,9 +45,9 @@ An unhandled exception of type 'System.DivideByZeroException' occurred in Debug1
     at Program.<Main>$(String[] args) in C:\Users\howdc\Desktop\Debug1\Program.cs:line 10
 ```
 
-The indented group of `at Program ...` lines under the error message is called a stack trace. The stack trace lists the name and origin of every method that was called leading up to the exception. The information can be a bit difficult to decipher though, because it can also include information from the .NET runtime. In example above, the stack trace is pretty clean and you can see that exception occurred in a method named `WriteMessage`. The call stack originates in a method named `Main`, which is the top-level statements section of the console application.
+The indented group of `at Program ...` lines under the error message is called a stack trace. The stack trace lists the name and origin of every method that was called leading up to the exception. The information can be a bit difficult to decipher though, because it can also include information from the .NET runtime. In this example, the stack trace is pretty clean and you can see that exception occurred in a method named `WriteMessage`. The stack originates in a method named `Main`, which is the top-level statements section of the console application.
 
-The CALL STACK section can help you to avoid the difficulty of deciphering a stack trace that's cluttered with .NET runtime information. It filters out unwanted information to show you only the relevant methods from your own code by default. You then can manually unwind the call stack to find out where the exception originated.
+The CALL STACK section can help you to avoid the difficulty of deciphering a stack trace that's cluttered with .NET runtime information. It filters out unwanted information to show you only the relevant methods from your own code by default. You can manually unwind the call stack to find out where the exception originated.
 
 ### BREAKPOINTS section
 
@@ -184,7 +185,7 @@ Reviewing the output of your application can reveal logic issues that you've ove
     press Enter to exit
     ```
 
-1. Take a minute to consider the reported value of `sum` and values of array elements 3 through 5 displayed at the top of the console.
+1. Take a minute to consider the reported value of `sum` and the values of array elements 3 through 5 displayed at the top of the console.
 
     The message says: `The sum of numbers 3 through 5 is: 9`. However, array elements 3 through 5 are `3`, `4`, and `5`. Shouldn't the reported sum be 12?
 
@@ -239,7 +240,7 @@ In some cases, simply monitoring variable state is enough to identify the logic 
 
 1. Recall that array elements are accessed using zero-based index numbers.
 
-    In this case, the logic error is a discrepancy between the instructions in the user interface and the underlying code. The user interface refers to array items 1-5. However, the code uses the value entered by the user to access the zero-based array elements. The code doesn't compensate for the difference.
+    In this case, the logic error is a discrepancy between the instructions in the user interface and the underlying code. The user interface refers to array items 1-5. However, the code uses the value entered by the user to access the zero-based array elements. The array element that has an index of `3` stores a value of `4`. The code doesn't compensate for zero-based index numbers.
 
 1. To terminate the debug session, select **Stop**.
 
@@ -254,6 +255,12 @@ In some cases, simply monitoring variable state is enough to identify the logic 
     Running the updated code will produce the following output:
 
     ![Screenshot showing the output after updating application logic.](../media/monitor-variables-section-during-debug-corrected-logic-output.png)
+
+1. Update your code using the suggested approach, and then save your Program.cs file.
+
+1. Clear your breakpoint, rerun the application in the debugger, and verify that the intended result is displayed in the TERMINAL.
+
+    You've just used variable state to identify and fix a logic issue! Great job.
 
 ## Monitor watch expressions
 
@@ -276,6 +283,8 @@ Suppose you're working on an application that performs numeric calculations on a
     
     } while (exit == false);
     ```
+
+1. Save your Program.cs file.
 
 1. Set a breakpoint on the final code line.
 
@@ -326,4 +335,4 @@ Here are a few important things to remember from this unit:
 - Monitor variable state using the VARIABLES section of the RUN AND DEBUG view.
 - Track an expression across time or different methods using the WATCH section of the RUN AND DEBUG view.
 - Use the CALL STACK section of the RUN AND DEBUG view to find the source location of an exception or a WATCH expression.
-- Use the VARIABLES section to change the variable value at runtime.
+- Use the VARIABLES section to change a variable's assigned value at runtime.
