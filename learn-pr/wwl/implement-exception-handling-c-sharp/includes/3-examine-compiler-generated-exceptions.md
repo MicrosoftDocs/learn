@@ -81,7 +81,8 @@ An exception of type `NullReferenceException` is thrown when attempting to acces
 
 ```csharp
 int[] values = null;
-for (int i = 0; i <= 9; i++)   values[i] = i * 2;
+for (int i = 0; i <= 9; i++)
+    values[i] = i * 2;
 ```
 
 ```csharp
