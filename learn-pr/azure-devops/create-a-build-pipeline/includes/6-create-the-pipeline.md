@@ -6,7 +6,7 @@ When you don't provide an initial YAML file for your project, Azure Pipelines ca
 
 ## Create the pipeline
 
-#### [GitHub Codespaces](#tab/codespaces)
+::: zone pivot="github-codespaces-agent"
 
 1. In Azure DevOps, go to your project.
 
@@ -35,7 +35,9 @@ When you don't provide an initial YAML file for your project, Azure Pipelines ca
 
 1. Select **Save and run** to commit your changes to GitHub and start the build. Choose **Commit directly to the main branch**. If prompted to grant permission with a message like `This pipeline needs permission to access a resource before this run can continue`, choose **View** and follow the prompts to permit access.
 
-#### [Microsoft-hosted agent](#tab/hosted-agent)
+::: zone-end
+
+::: zone pivot="ms-hosted-agents"
 
 1. In Azure DevOps, go to your project.
 
@@ -66,7 +68,7 @@ When you don't provide an initial YAML file for your project, Azure Pipelines ca
 
 1. On the **Review** tab, select **Save and run**. Next, to commit your changes to GitHub and start the build, select **Save and run** a second time.If prompted to grant permission with a message like`This pipeline needs permission to access a resource before this run can continue`, choose **View** and follow the prompts to permit access.
 
-----
+::: zone-end
 
 
 ## Watch the pipeline run
@@ -109,7 +111,7 @@ In practice, you might add build tasks one at a time, push up your changes, and 
 > [!NOTE]
 > You're about to run a few Git commands. Don't worry if you're new to Git. We'll show you what to do. We'll also go into more detail about Git in future modules.
 
-1. In Visual Studio Code (or Visual Studio Code online if you are using GitHub Codespaces), go to the integrated terminal. Ensure you go to the `main` branch in your repo and then go through the steps.
+1. In Visual Studio Code, go to the integrated terminal. Ensure you go to the `main` branch in your repo and then go through the steps.
 
 1. To fetch the latest changes from GitHub and update your `main` branch, run this `git pull` command.
 
