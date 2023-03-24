@@ -1,6 +1,7 @@
 
 
 
+
 Every software developer needs to complete some level of testing and debugging when they develop their code, and exception handling is often required. But how are these three tasks related and when should they be implemented?
 
 ## Testing, debugging, and exception handling
@@ -19,16 +20,8 @@ The software development process can involve a lot of testing. In fact, software
 
 Software testing categories can be organized under the _types_ of testing, the _approaches_ to testing, or a combination of both. One way to categorize the types of testing is to split testing into _Functional_ and _Nonfunctional_ testing. The functional and nonfunctional categories each include subcategories of testing. For example, functional and nonfunctional testing could be divided into the following subcategories:
 
-- Functional testing
-    - Unit testing
-    - Integration testing
-    - System testing
-    - Acceptance testing
-- Nonfunctional testing
-    - Security testing
-    - Performance testing
-    - Usability testing
-    - Compatibility testing
+- Functional testing   - Unit testing   - Integration testing   - System testing   - Acceptance testing
+- Nonfunctional testing   - Security testing   - Performance testing   - Usability testing   - Compatibility testing
 
 Although most developers probably don't consider themselves to be testers, some level of testing is expected before a developer hands off their work. When developers are assigned a formal role in the testing process, it's often at the level of unit testing.
 

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.azure-active-directory.azure-ad-users
+title: Create and manage Azure AD users
+metadata:
+  title: Create and manage Azure AD users
+  description: "Create and manage Azure AD users"
+  ms.date: 03/23/2023
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: None
+durationInMinutes: 7
+content: |
+  [!include[](includes/9-azure-active-directory-users.md)]

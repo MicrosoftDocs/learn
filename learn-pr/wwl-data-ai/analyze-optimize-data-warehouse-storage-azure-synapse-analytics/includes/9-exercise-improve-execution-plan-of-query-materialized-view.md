@@ -1,3 +1,4 @@
+
 ## Improve execution plan of query with materialized view
 
 1. Run the query with the `EXPLAIN` directive (note the `WITH_RECOMMENDATIONS` option as well):

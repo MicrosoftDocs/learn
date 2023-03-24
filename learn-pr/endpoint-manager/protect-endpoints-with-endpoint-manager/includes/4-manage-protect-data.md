@@ -1,4 +1,4 @@
-Using Endpoint Manager, you can prevent data leaks and prevent unauthorized access.
+Using Intune, you can prevent data leaks and prevent unauthorized access.
 
 ## Prevent data leaks
 
