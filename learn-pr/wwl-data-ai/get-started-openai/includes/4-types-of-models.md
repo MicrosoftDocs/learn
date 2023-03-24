@@ -1,14 +1,17 @@
 To begin building with Azure OpenAI, you need to choose a base model and deploy it. Microsoft provides base models and the option to create customized base models. This module will cover the currently available out-of-the-box base models. Microsoft's partnership with OpenAI means models that become availible with OpenAI can become available with Azure OpenAI.   
 
+
+
 Azure OpenAI's models are grouped by family and capability. 
 
-|Family|Models within Family|Description|
+|Family|Description|Models within family|
 |GPT-4|--|--|
 |GPT-3|--|--|
 |Codex|--|--|
 |Embeddings|--|--|
 
-The models within the family differ in capability.  
+## Choosing a model 
+The models within the family differ in speed, cost, and capability. You can think of   
 
 In the Azure OpenAI Studio, you can navigate to the models by creating a new deployment. 
 
