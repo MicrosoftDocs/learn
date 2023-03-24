@@ -1,18 +1,10 @@
-::: zone pivot="ms-hosted-agents"  
-MS Hosted agents text
-::: zone-end  
-
-::: zone pivot="github-codespaces-agent"
-GH Codespaces text
-::: zone-end
-
 In the [Get started with Azure DevOps](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true) learning path, you helped the Tailspin team start their DevOps journey by evaluating their current processes and technologies, and then planning their initial set of tasks on Azure Boards.
 
 In this module, you'll help the team with their first task: setting up a continuous integration (CI) pipeline for their app.
 
-## Choose the development environment to use for completing this module
+## Choose your training module development environment
 
-This training module shows you how to create and run a pipeline using Azure Pipelines. Pipeline run on agents, which are computing infrastructure with installed agent software that runs one job at a time. Agents can be Microsoft-hosted or self-hosted.
+This training module shows you how to create and run a pipeline using Azure Pipelines. Pipelines run on agents, which are computing infrastructure with installed agent software that runs one job at a time. Agents can be Microsoft-hosted or self-hosted.
 
 * **Microsoft-hosted agents** are agents managed by Microsoft, and maintenance and upgrades are taken care of for you. Each time you run a pipeline, the virtual machine hosting the agent is discarded, and you get a fresh virtual machine for each job in the pipeline.
 * **Self-hosted agents** are agents that are managed by you. You configure the virtual machines or containers by installing the agent software and desired tools, and register the agents with Azure DevOps.
@@ -25,37 +17,11 @@ If you don't have any Microsoft-hosted parallel jobs and you don't want to wait 
 * Choose **GitHub Codespaces development environment using a self-hosted agent** if you don't have any parallel jobs and you don't want to wait 2-3 business days for the free grant.
 
 
-## Prerequisites
 
-The modules in this learning path and previous learning path form a progression.
-
-To follow the progression from the beginning, be sure to first complete the [Get started with Azure DevOps](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true) learning path.
-
-[!include[](../../shared/includes/codespaces-hosted-module-options.md)]
-
-The prerequisites for this learning path vary depending on which option you select.
-
-#### [GitHub Codespaces](#tab/codespaces)
-
-- An [Azure DevOps organization](/azure/devops/pipelines/get-started/pipelines-sign-up). If you don't already have an Azure DevOps organization, create a [free organization](/azure/devops/pipelines/get-started/pipelines-sign-up) before you begin.
-- An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true). If you don't already have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
-- A [GitHub](https://github.com/join?azure-portal=true) account
-
-#### [Microsoft-hosted agent](#tab/hosted-agent)
-
-If you want to start with this learning path, you need to set up a development environment on your Windows, macOS, or Linux system. You need:
-
-[!include[](../../shared/includes/prerequisites.md)]
-
----
-
-If your company's policy doesn't allow you to create an Azure DevOps organization, you can create your own personal account. You can get started with Azure DevOps for free.
-
-This environment lets you complete the exercises in this and future modules. You can also use it to apply your new skills to your own projects.
-
-[!include[](../../shared/includes/project-details-note.md)]
 
 ## Training module scenario
+
+
 
 The Tailspin web team is being pulled in many directions. Andy, the lead dev, is running from one meeting to another and never has any time. Amita, the QA person, is helping a tester on another team. Tim, who's in Ops, is upgrading his servers and hasn't been seen for days. Mara's dream of a true DevOps team is stalled (again).
 
@@ -78,6 +44,37 @@ After completing this module, you'll be able to:
 - Publish your builds so others can access them.
 - Use templates to build multiple configurations.
 
+## Prerequisites
+
+The modules in this learning path and previous learning path form a progression.
+
+To follow the progression from the beginning, be sure to first complete the [Get started with Azure DevOps](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true) learning path.
+
+[!include[](../../shared/includes/codespaces-hosted-module-options.md)]
+
+The prerequisites for this learning path vary depending on which option you select.
+
+::: zone pivot="github-codespaces-agent"
+
+- An [Azure DevOps organization](/azure/devops/pipelines/get-started/pipelines-sign-up). If you don't already have an Azure DevOps organization, create a [free organization](/azure/devops/pipelines/get-started/pipelines-sign-up) before you begin.
+- An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true). If you don't already have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
+- A [GitHub](https://github.com/join?azure-portal=true) account
+
+::: zone-end
+
+::: zone pivot="ms-hosted-agents"  
+
+If you want to start with this learning path, you need to set up a development environment on your Windows, macOS, or Linux system. You need:
+
+[!include[](../../shared/includes/prerequisites.md)]
+
+::: zone-end  
+
+If your company's policy doesn't allow you to create an Azure DevOps organization, you can create your own personal account. You can get started with Azure DevOps for free.
+
+This environment lets you complete the exercises in this and future modules. You can also use it to apply your new skills to your own projects.
+
+[!include[](../../shared/includes/project-details-note.md)]
 
 ## Meet the team
 
