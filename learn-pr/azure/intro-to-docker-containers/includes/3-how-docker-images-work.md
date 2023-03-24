@@ -58,6 +58,8 @@ For example, instead of creating an image from `scratch` and then installing Ubu
 
 Both image types allow us to create a reusable image. However, base images allow us more control over the contents of the final image. Recall from earlier that an image is immutable, you can only add to an image and not subtract.
 
+On Windows, you can only create container images that are based on Windows base container images. These Windows base container images are provided and serviced by Microsoft.
+
 ## What is a Dockerfile? 
 
 A Dockerfile is a text file that contains the instructions we use to build and run a Docker image.  The following aspects of the image are defined:
@@ -101,19 +103,19 @@ EXPOSE 80:8080
 ENTRYPOINT ["dotnet", "website.dll"]
 ```
 
-We're not going to cover the Dockerfile file specification here or the detail of each command in our above example. However, notice that there are several commands in this file that allow us to manipulate the structure of the image.
+We're not going to cover the Dockerfile file specification here or the detail of each command in our above example. However, notice that there are several commands in this file that allow us to manipulate the structure of the image. For example, the `COPY` command copies the content from a specific folder on the local machine to the container image you're building.
 
 Recall, we mentioned earlier that Docker images make use of *unionfs*. Each of these steps creates a cached container image as we build the final container image. These temporary images are layered on top of the previous and presented as single image once all steps complete.
 
-Finally, notice the last step, step 8. The `ENTRYPOINT` in the file indicates which process will execute once we run a container from an image.
+Finally, notice the last step, step 8. The `ENTRYPOINT` in the file indicates which process will execute once we run a container from an image. If there is no ENTRYPOINT or a process to be executed, Docker will interpret as there's nothing for the container to do, and the container will be exited.
 
 ## How to manage Docker images
 
 Docker images are large files that initially get stored on your PC and we need tools to manage these files.
 
-The Docker CLI allows us to manage images by building, listing, removing, and running them. We manage Docker images by using the `docker` client. The client doesn't execute the commands directly and sends all queries to the `dockerd` daemon.
+The Docker CLI and Docker Desktop allow us to manage images by building, listing, removing, and running them. We manage Docker images by using the `docker` client. The client doesn't execute the commands directly and sends all queries to the `dockerd` daemon.
 
-We aren't going to cover all the client commands and command flags here, but we'll look at some of the most used commands. The _learn more_ section of this module includes links to Docker documentation, which covers all commands and command flags in detail.
+We aren't going to cover all the client commands and command flags here, but we'll look at some of the most used commands. The _learn more_ section at the end of this module includes links to Docker documentation, which covers all commands and command flags in detail.
 
 ## How to build an image
 
@@ -167,6 +169,8 @@ In the example build from earlier, notice the last build message that reads "Suc
 
 A single image can have multiple tags assigned to it. By convention, the most recent version of an image is assigned the _latest_ tag and a tag that describes the image version number. When you release a new version of an image, you can reassign the latest tag to reference the new image.
 
+For Windows, Microsoft does not provide base container images with the latest tag. For Windows base container images, you have to specify a tag that you want to use. For example, the Windows base container image for Server Core is: mcr.microsoft.com/windows/servercore. Among its tags are: ltsc2016, ltsc2019, and ltsc2022.
+
 Here is another example. Suppose you want to use the .NET Core samples Docker images. Here we have four platforms versions that we can choose from:
 
 - `mcr.microsoft.com/dotnet/core/samples:dotnetapp`
@@ -176,6 +180,8 @@ Here is another example. Suppose you want to use the .NET Core samples Docker im
 - `mcr.microsoft.com/dotnet/core/samples:wcfservice`
 
 - `mcr.microsoft.com/dotnet/core/samples:wcfclient`
+
+On the list of images above we can see that Microsoft provides multiple samples of .Net Core. Tags are used in this case to say which samples the image refers to: ASP.Net, WCF Service, etc.
 
 ## How to list images
 
@@ -200,7 +206,9 @@ The image ID is a useful way to identify and manage images where the name or tag
 
 ## How to remove an image
 
-You can remove an image from the local docker registry with the `docker rmi` command. Specify the name or ID of the image to remove. This example removes the image for the sample web app using the image name:
+You can remove an image from the local docker registry with the `docker rmi` command. This is useful if you need to save space on the container host disk, as container image layers will add up to the total space available.
+
+Specify the name or ID of the image to remove. This example removes the image for the sample web app using the image name:
 
 ```code
 docker rmi temp-ubuntu:version-1.0
