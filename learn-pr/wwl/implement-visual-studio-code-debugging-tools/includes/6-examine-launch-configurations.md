@@ -1,21 +1,32 @@
 
 
 
-You've already seen that Visual Studio Code uses the launch.json file to configure the debugger. If you're creating a simple C# console application, it's likely that Visual Studio Code generates a launch.json with all of the information you need to successfully debug your code. However, there are cases when you need to modify a launch configuration, so it's important to understand the features of a configuration.
 
-## Attributes in the launch configuration file
+You've already seen that Visual Studio Code uses the launch.json file to configure the debugger. If you're creating a simple C# console application, it's likely that Visual Studio Code generates a launch.json file that has all of the information you need to successfully debug your code. However, there are cases when you need to modify a launch configuration, so it's important to understand the attributes of a launch configuration.
+
+## Attributes of a launch configuration
+
+The launch.json file includes one or more launch configurations in the `configurations` list. The launch configurations use attributes to support different debugging scenarios. The following attributes are mandatory for every launch configuration:
+
+- `name`: The reader-friendly name assigned to the launch configuration.
+- `type`: The type of debugger to use for the launch configuration.
+- `request`: The request type of the launch configuration.
+
+![Screenshot showing the default launch.json file for a C# console application.](../media/launch-configuration-file-csharp.png)
+
+This section defines some of the attributes you may encounter.
 
 ### Name
 
-The `name` attribute specifies the display name for the configuration. The value assigned to `name` appears in the controls panel at the top of the RUN AND DEBUG view.
+The `name` attribute specifies the display name for the launch configuration. The value assigned to `name` appears in the launch configurations dropdown (on the controls panel at the top of the RUN AND DEBUG view).
 
 ### Type
 
-The `type` attribute specifies the type of debugger to use for this launch configuration. A value of `codeclr` specifies the debugger type for .NET 5+ and .NET Core applications.
+The `type` attribute specifies the type of debugger to use for the launch configuration. A value of `codeclr` specifies the debugger type for .NET 5+ and .NET Core applications (including C# applications).
 
 ### Request
 
-The `request` attribute specifies the request type of this launch configuration. Currently, the values `launch` and `attach` are supported.
+The `request` attribute specifies the request type for the launch configuration. Currently, the values `launch` and `attach` are supported.
 
 ### PreLaunchTask
 
@@ -54,34 +65,32 @@ The `console` attribute specifies the type of console that's used when the appli
 - The `externalTerminal` setting corresponds to an external terminal window. The Command Prompt application that comes with Windows is an example of a terminal window.
 
 > [!IMPORTANT]
-> The DEBUG CONSOLE panel doesn't support console input, for example: `Console.ReadLine()`. When you're working on a C# console application that reads user input, the `console` setting must be set to either `integratedTerminal` or `externalTerminal`. Console applications that write to the console, but don't read input from the console, can use any of the three settings.
+> The DEBUG CONSOLE panel doesn't support console input. For example, the DEBUG CONSOLE can't be used if the application includes a `Console.ReadLine()` statement. When you're working on a C# console application that reads user input, the `console` setting must be set to either `integratedTerminal` or `externalTerminal`. Console applications that write to the console, but don't read input from the console, can use any of the three `console` settings.
 
 ### Stop at Entry
 
-If you need to stop at the entry point of the target, you can optionally set stopAtEntry to be "true".
+If you need to stop at the entry point of the target, you can optionally set `stopAtEntry` to be `true`.
 
 ## Edit a launch configuration
 
-There are lots of reasons why you might need to customize the launch configuration files. Many of those involve advanced or complex project scenarios. This module focuses on two simple scenarios when updating the launch configuration file is required:
+There are lots of scenarios when you might need to customize the launch configuration file. Many of those scenarios involve advanced or complex project scenarios. This module focuses on two simple scenarios when updating the launch configuration file is required:
 
 - Your C# console application reads input from the console.
 - Your project workspace includes more than one application.
 
 ### Update the launch configuration to accommodate console input
 
-As you read earlier, the DEBUG CONSOLE panel doesn't support console input. If you're debugging on a console application that relies on user input, you need to update the `console` attribute in the launch.json file.
+As you read earlier, the DEBUG CONSOLE panel doesn't support console input. If you're debugging a console application that relies on user input, you need to update the `console` attribute in the associated launch configuration.
 
-To edit `console` attribute:
+To edit the `console` attribute:
 
 1. Open the launch.json file in the Visual Studio Code Editor.
 
 1. Locate the **console** attribute.
 
 1. Select the colon and assigned value, and then enter a colon character.
-
-    When you overwrite the existing information with a colon, Visual Studio Code IntelliSense displays the three options in a dropdown list.
-
-    ![Screenshot showing the console attribute options for a launch configuration.](../media/launch-configuration-console.png)
+   When you overwrite the existing information with a colon, Visual Studio Code IntelliSense displays the three options in a dropdown list.
+   ![Screenshot showing the console attribute options for a launch configuration.](../media/launch-configuration-console.png)
 
 1. Select either **integratedTerminal** or **externalTerminal**.
 
@@ -89,7 +98,7 @@ To edit `console` attribute:
 
 ### Update the launch configuration to accommodate multiple applications
 
-If your workspace has only one launchable project, the C# extension offers to automatically generate the launch.json file. If you have more than one launchable project, then you need to modify your launch.json file manually. Visual Studio Code generates a launch.json file using the basic template that you can update. In this scenario, you create separate configurations for each application that you want to debug. Prelaunch tasks, such as a build task, can be created in the tasks.json file.
+If your workspace has only one launchable project, the C# extension will automatically generate the launch.json file. If you have more than one launchable project, then you need to modify your launch.json file manually. Visual Studio Code generates a launch.json file using the basic template that you can update. In this scenario, you create separate configurations for each application that you want to debug. Prelaunch tasks, such as a build task, can be created in the tasks.json file.
 
 Suppose that you're working on a coding project that includes several console applications. The root project folder, **SpecialProjects**, is the workspace folder that you open in Visual Studio Code when you work on your code. You have two applications that you're developing, Project123 and Project456. You use the RUN AND DEBUG view to debug the applications. You want to select the application that you're debugging from the user interface. You also want any saved code updates to be compiled prior to attaching the debugger to your application.
 
@@ -133,9 +142,9 @@ The following screenshot shows how you could configure the launch.json file to i
 
 Notice that the **name**, **preLaunchTask**, and **program** fields are all configured for a specific application.
 
-The **name** attribute specifies the selectable launch option that is displayed in the RUN AND DEBUG view user interface, the **program** attribute specifies the path to your application. The **preLaunchTask** attribute is used to specify the name of the task that is performed prior to launching the debugger. The **tasks.json** file contains the named tasks and the information required to complete the task.
+The **name** attribute specifies the selectable launch option that's displayed in the RUN AND DEBUG view user interface, the **program** attribute specifies the path to your application. The **preLaunchTask** attribute is used to specify the name of the task that's performed prior to launching the debugger. The **tasks.json** file contains the named tasks and the information required to complete the task.
 
-The following screenshot shows how you could configure the tasks.json file. In this case, the named tasks specify build operations that are specific to the "Project123" and "Project456" applications. The build task ensures that any saved edits are compiled and represented in the corresponding .dll file that is attached to the debugger.
+The following screenshot shows how you could configure the tasks.json file. In this case, the named tasks specify build operations that are specific to the "Project123" and "Project456" applications. The build task ensures that any saved edits are compiled and represented in the corresponding .dll file that's attached to the debugger.
 
 ```json
 "version": "2.0.0",
@@ -175,5 +184,5 @@ With your updates to the launch.json and tasks.json files in place, the RUN AND 
 
 Here are two important things to remember from this unit:
 
-- Launch configurations are used to specify attributes such as name, type, request, preLaunchTask, program, cwd, args, console, and stopAtEntry.
-- Developers can edit the launch configuration to accommodate project requirements.
+- Launch configurations are used to specify attributes such as `name`, `type`, `request`, `preLaunchTask`, `program`, and `console`.
+- Developers can edit a launch configuration to accommodate project requirements.

@@ -1,6 +1,7 @@
 
 
 
+
 Debuggers are used to help you to analyze your code and can be used to control your program's runtime execution. When you start the Visual Studio Code debugger, it immediately begins executing your code. Because your code executes in micro-seconds, effective code debugging depends on your ability to pause the program on any statement within your code. Breakpoints are used to specify where code execution pauses.
 
 ## Set breakpoints
@@ -37,7 +38,7 @@ In addition to managing individual breakpoints in the Editor, the **Run** menu p
 
 ## Conditional breakpoints
 
-A conditional breakpoint is a special type of breakpoint that only triggers when a specified condition is met. For example, you can create a conditional breakpoint that pauses execution when a variable named "numItems" is greater than 5.
+A conditional breakpoint is a special type of breakpoint that only triggers when a specified condition is met. For example, you can create a conditional breakpoint that pauses execution when a variable named `numItems` is greater than 5.
 
 You've already seen that right-clicking a breakpoint opens a context menu that includes the **Edit Breakpoint** option. Selecting **Edit Breakpoint** enables you to change a standard breakpoint into a conditional breakpoint.
 
@@ -61,7 +62,7 @@ When you run your code in the debugger, it skips over your breakpoint until the 
 
 The C# debugger for Visual Studio Code doesn't currently support `Hitcount` breakpoints or `Logpoints`.
 
-If you configure either a `Hitcount` breakpoint or a `Logpoint`, the red marker to the left of the line number is updated (after the debug session) to indicate the breakpoint isn't supported. If you hover the mouse cursor over the red dot, the following message is displayed:
+If you configure either a `Hitcount` breakpoint or a `Logpoint`, the red dot to the left of the line number is updated (after the debug session) to indicate the breakpoint isn't supported. If you hover the mouse cursor over the red dot, the following message is displayed:
 
 ![Screenshot showing the breakpoint type not supported message.](../media/breakpoint-logpoint-hitcount-not-supported.png)
 
