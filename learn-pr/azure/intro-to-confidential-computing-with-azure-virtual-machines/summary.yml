@@ -5,8 +5,8 @@ metadata:
   title: Summary
   description: Summary
   ms.date: 03/22/2023
-  author: rmcmurray
-  ms.author: robmcm
+  author: cynthn
+  ms.author: cynthn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1

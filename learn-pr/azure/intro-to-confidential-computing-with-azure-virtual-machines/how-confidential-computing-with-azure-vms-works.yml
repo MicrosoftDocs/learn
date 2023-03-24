@@ -3,12 +3,12 @@ uid: learn.azure.intro-to-confidential-computing-with-azure-virtual-machines.how
 title: How confidential computing with Azure VMs works
 metadata:
   title: How confidential computing with Azure VMs works
-  description: In this unit, you'll learn how confidential computing works with Azure VMs.
+  description: In this unit, you'll learn how confidential computing works with Azure Virtual Machines.
   ms.date: 03/22/2023
-  author: rmcmurray
-  ms.author: robmcm
+  author: cynthn
+  ms.author: cynthn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 3
+durationInMinutes: 5
 content: |
   [!include[](includes/how-confidential-computing-with-azure-vms-works.md)]

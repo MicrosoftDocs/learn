@@ -5,8 +5,8 @@ metadata:
   title: Introduction
   description: Introduction
   ms.date: 03/22/2023
-  author: rmcmurray
-  ms.author: robmcm
+  author: cynthn
+  ms.author: cynthn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2
