@@ -1,6 +1,7 @@
 
 
 
+
 The Visual Studio Code user interface provides several ways to configure debug options and launch debug sessions.
 
 ## Debug features in the Visual Studio Code user interface
@@ -22,9 +23,9 @@ The Visual Studio Code **Run** menu provides easy access to some common run and 
 
 The **Run** menu provides menu options that are grouped into six sections.
 
-1. Start and stop applications. This section of the menu includes options for starting and stopping code execution, with and without the debugger.
+1. Start and stop applications. This section of the menu includes options for starting and stopping code execution, with and without the debugger attached.
 
-1. Launch configurations. This section of the menu provides access to edit or add launch configurations.
+1. Launch configurations. This section of the menu provides access to examine or create launch configurations.
 
 1. Runtime control. This section of the menu enables the developer to control how they want to advance through the code. Controls are enabled when execution has paused during a debug session.
 
@@ -32,7 +33,7 @@ The **Run** menu provides menu options that are grouped into six sections.
 
 1. Manage Breakpoints. This section of the menu enables the developer to manage breakpoints in bulk rather than individually.
 
-1. Install Debuggers. This section of the menu opens the Visual Studio Code Extensions view filtered for code debuggers.  
+1. Install Debuggers. This section of the menu opens the Visual Studio Code EXTENSIONS view filtered for code debuggers.  
 
 ## Run and Debug view user interface
 
@@ -97,7 +98,8 @@ In addition to six execution controls, the **Debug toolbar** provides a "handle"
 
 Here are a few important things to remember from this unit:
 
-- Visual Studio Code has user interface features to configure, start, and manage debug sessions.
-- The Run menu provides easy access to common run and debug commands grouped into six sections.
-- The RUN AND DEBUG view provides access to runtime tools such as Debug toolbar, VARIABLES, WATCH, CALL STACK, BREAKPOINTS and DEBUG CONSOLE.
+- The Visual Studio Code user interface can be used to configure, start, and manage debug sessions. The `launch.json` file contains the launch configurations for your application.
+- The **Run** menu provides easy access to common run and debug commands grouped into six sections.
+- The RUN AND DEBUG view provides access to runtime tools, including the Run and Debug controls panel. The sections of the RUN AND DEBUG view are VARIABLES, WATCH, CALL STACK, and BREAKPOINTS.
 - The Debug toolbar provides execution controls while your application is running such as pause/continue, step over, step into, step out, restart and stop.
+- The DEBUG CONSOLE is used to display messages from the debugger. The DEBUG CONSOLE can also display console output from your application.

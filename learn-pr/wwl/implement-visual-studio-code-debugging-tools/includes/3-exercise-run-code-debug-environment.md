@@ -1,6 +1,7 @@
 
 
 
+
 The Visual Studio Code user interface enables developers to run their code in a debug environment. Support for debugging is provided by extensions, and for C# developers, debugger support is provided by the same extension that provides support for code development and IntelliSense.
 
 ## Debugger and application interaction
@@ -8,7 +9,7 @@ The Visual Studio Code user interface enables developers to run their code in a 
 A code debugger can be used to pause and resume code execution, examine variable state, and even change the values assigned to variables at runtime. You may be wondering, how can the debugger control and modify a running application? The short answer is, the debugger has access to the application's runtime environment and executable code.
 
 > [!NOTE]
-> Debugger interaction with the runtime environment is an advanced topic. In addition, understanding how the debugger works behind the scenes isn't a requirement for using the debugger. However, the following description of may satisfy your curiosity.
+> Debugger interaction with the runtime environment is an advanced topic. In addition, understanding how the debugger works behind the scenes isn't a requirement for using the debugger. However, the following description may satisfy your curiosity.
 
 The Visual Studio Code debugger for C# uses the .NET Core runtime to launch and interact with an application. When you start the debugger, it creates a new instance of the runtime and runs the application within that instance. The runtime includes an application programming interface (API), which the debugger uses to attach to the running process (your application).
 
@@ -79,13 +80,18 @@ Visual Studio Code uses a launch configuration file to specify the application t
 
 1. On the **Run** menu, select **Open Configurations**.
 
-    The launch.json file opens in the Visual Studio Code Editor. You could have opened the file directly from the EXPLORER view.
+    The launch.json file opens in the Visual Studio Code Editor. You could have opened the file directly from the EXPLORER view as well.
 
 1. Take a minute to examine the launch.json file.
 
     The launch configurations file can include multiple configurations. Each configuration includes a collection of attributes that are used to define that configuration.
 
 1. Notice that the **program** attribute specifies a path to your **Debug101** application.
+
+    ```json
+    // If you have changed target frameworks, make sure to update the program path.
+    "program": "${workspaceFolder}/bin/Debug/net7.0/Debug101.dll",
+    ```
 
     Connecting your application with the debugger is one of the primary goals of a configuration. You take a closer look at the launch configuration attributes later in this module.
 
@@ -160,6 +166,13 @@ The **Run** menu includes the option to start a debug session.
 
 1. Notice the messages about loading .NET resources and your Debug101 application.
 
+    The first two messages report loading the .NET Core library and then your Debug101 application.
+
+    ```output
+    Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\7.0.4\System.Private.CoreLib.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+    Loaded 'C:\Users\cahowd\Desktop\Debug101\bin\Debug\net7.0\Debug101.dll'. Symbols loaded.
+    ```
+
     The debugger uses a special instance of the .NET runtime to control the execution of your application and evaluate application state.
 
 1. On the **Debug toolbar**, select **Stop**.
@@ -184,15 +197,15 @@ The RUN AND DEBUG view in Visual Studio Code supports a rich debugging experienc
 
 1. Before closing the DEBUG CONSOLE panel, take a minute to review the output that your code produced.
 
-1. Notice that Andrew's greeting message is repeated.
+1. Notice that Andrew's greeting message is repeated unexpectedly.
 
-During the remainder of this module, you use the Visual Studio Code debugger tools to investigate coding issues.
+During the remainder of this module, you'll use the Visual Studio Code debugger tools to investigate coding issues.
 
 ## Recap
 
 Here are a few important things to remember from this unit:
 
 - The Visual Studio Code debugger for C# uses the .NET Core runtime to launch and interact with an application.
-- The Visual Studio Code **Run** menu has options to start an application with and without the debugger.
+- The Visual Studio Code **Run** menu has options to start an application with and without the debugger attached.
 - The **Debug toolbar** includes a button to **Stop** a running process.
 - The RUN AND DEBUG view includes an option to start debugging an application.
