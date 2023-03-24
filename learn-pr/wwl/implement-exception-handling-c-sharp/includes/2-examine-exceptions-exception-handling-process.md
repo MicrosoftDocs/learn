@@ -28,13 +28,16 @@ Exception handling in C# is implemented by using the `try`, `catch`, and `finall
 
 ```csharp
 try
-{   // try code block - code that may generate an exception
+{   
+   // try code block - code that may generate an exception
 }
 catch
-{   // catch code block - code to handle an exception
+{   
+   // catch code block - code to handle an exception
 }
 finally
-{   // finally code block - code to clean up resources
+{   
+   // finally code block - code to clean up resources
 }
 ```
 
@@ -76,12 +79,21 @@ Consider the following code sample that includes a `try-finally` pattern nested 
 
 ```csharp
 try
-{   // Step 1: code execution begins
-   try   {       // Step 2: an exception occurs here   }   finally   {       // Step 4: the system executes the finally code block associated with the try statement where the exception occurred   }
+{
+    // Step 1: code execution begins
+    try
+    {
+        // Step 2: an exception occurs here
+    }
+    finally
+    {
+        // Step 4: the system executes the finally code block associated with the try statement where the exception occurred
+    }
 
 }
 catch // Step 3: the system finds a catch clause that can handle the exception
-{   // Step 5: the system transfers control to the first line of the catch code block
+{   
+   // Step 5: the system transfers control to the first line of the catch code block
 }
 ```
 
