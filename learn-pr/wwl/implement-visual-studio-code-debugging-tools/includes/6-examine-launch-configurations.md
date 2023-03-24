@@ -112,7 +112,9 @@ Notice that the `.vscode` folder containing the launch.json and tasks.json files
 
 The following screenshot shows how you could configure the launch.json file to include configurations for both the "Project123" and "Project456" applications.
 
-```json   "version": "0.2.0",   "configurations": [       {           "name": "Launch Project123",           "type": "coreclr",           "request": "launch",           "preLaunchTask": "buildProject123",           "program": "${workspaceFolder}/Project123/bin/Debug/net7.0/Project123.dll",           "args": [],           "cwd": "${workspaceFolder}/Project123",           "console": "internalConsole",           "stopAtEntry": false       },       {           "name": "Launch Project456",           "type": "coreclr",           "request": "launch",           "preLaunchTask": "buildProject456",           "program": "${workspaceFolder}/Project456/bin/Debug/net7.0/Project456.dll",           "args": [],           "cwd": "${workspaceFolder}/Project456",           "console": "internalConsole",           "stopAtEntry": false       }
+```json
+"version": "0.2.0",
+"configurations": [   {       "name": "Launch Project123",       "type": "coreclr",       "request": "launch",       "preLaunchTask": "buildProject123",       "program": "${workspaceFolder}/Project123/bin/Debug/net7.0/Project123.dll",       "args": [],       "cwd": "${workspaceFolder}/Project123",       "console": "internalConsole",       "stopAtEntry": false   },   {       "name": "Launch Project456",       "type": "coreclr",       "request": "launch",       "preLaunchTask": "buildProject456",       "program": "${workspaceFolder}/Project456/bin/Debug/net7.0/Project456.dll",       "args": [],       "cwd": "${workspaceFolder}/Project456",       "console": "internalConsole",       "stopAtEntry": false   }
 ]
 ```
 
@@ -122,7 +124,10 @@ The **name** attribute specifies the selectable launch option that's displayed i
 
 The following screenshot shows how you could configure the tasks.json file. In this case, the named tasks specify build operations that are specific to the "Project123" and "Project456" applications. The build task ensures that any saved edits are compiled and represented in the corresponding .dll file that's attached to the debugger.
 
-```json   "version": "2.0.0",   "tasks": [       {           "label": "buildProject123",           "command": "dotnet",           "type": "process",           "args": [               "build",               "${workspaceFolder}/Project123/Project123.csproj",               "/property:GenerateFullPaths=true",               "/consoleloggerparameters:NoSummary"           ],           "problemMatcher": "$msCompile"       },       {           "label": "buildProject456",           "command": "dotnet",           "type": "process",           "args": [               "build",               "${workspaceFolder}/Project456/Project456.csproj",               "/property:GenerateFullPaths=true",               "/consoleloggerparameters:NoSummary"           ],           "problemMatcher": "$msCompile"       }   ]
+```json
+"version": "2.0.0",
+"tasks": [   {       "label": "buildProject123",       "command": "dotnet",       "type": "process",       "args": [           "build",           "${workspaceFolder}/Project123/Project123.csproj",           "/property:GenerateFullPaths=true",           "/consoleloggerparameters:NoSummary"       ],       "problemMatcher": "$msCompile"   },   {       "label": "buildProject456",       "command": "dotnet",       "type": "process",       "args": [           "build",           "${workspaceFolder}/Project456/Project456.csproj",           "/property:GenerateFullPaths=true",           "/consoleloggerparameters:NoSummary"       ],       "problemMatcher": "$msCompile"   }
+]
 ```
 
 With your updates to the launch.json and tasks.json files in place, the RUN AND DEBUG view displays launch options for debugging either the Project123 or Project456 application. The following screenshot shows the names of the launch configurations displayed in the launch configuration dropdown:
