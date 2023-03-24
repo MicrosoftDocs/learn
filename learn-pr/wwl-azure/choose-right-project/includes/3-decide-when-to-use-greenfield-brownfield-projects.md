@@ -1,4 +1,3 @@
-
 When starting a DevOps transformation, you might need to choose between greenfield and brownfield projects.
 
 There is a common misconception that we need to demystify that DevOps suits greenfield projects better than brownfield projects.

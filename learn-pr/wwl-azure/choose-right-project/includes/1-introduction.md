@@ -1,4 +1,3 @@
-
 Are you interested in implementing DevOps practices but are not sure what it can do for you?
 
 This module helps organizations decide how to apply the DevOps process and tools to minimize initial resistance.<br>

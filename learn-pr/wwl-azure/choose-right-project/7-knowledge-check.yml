@@ -9,7 +9,9 @@ metadata:
   ms.author: lumac
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  zone_pivot_groups: azure-interface
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
 content: |
   [!include[](includes/7-knowledge-check.md)]
 quiz:
@@ -48,4 +50,3 @@ quiz:
     - content: "Blue and Green Users."
       isCorrect: false
       explanation: "Incorrect. In discussions around continuous delivery, users are often categorized into three general buckets: Canaries, Early adopters, and Users."
-interactive: bash

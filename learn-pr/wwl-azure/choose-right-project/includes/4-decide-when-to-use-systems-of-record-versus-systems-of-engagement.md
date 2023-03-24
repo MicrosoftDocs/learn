@@ -1,4 +1,3 @@
-
 When selecting systems as candidates for starting a DevOps transformation, it is necessary to consider the types of systems that you operate.
 
 Some researchers suggest that organizations often use Bimodal IT, a practice of managing two separate, coherent modes of IT delivery - one focused on stability and predictability and the other on agility.

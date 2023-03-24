@@ -1,4 +1,3 @@
-
 In this module, you learned how to decide how to apply the DevOps process and tools to minimize initial resistance.
 
 Also, how to identify teams, plan for a DevOps transformation culture, and define timelines for your goals.

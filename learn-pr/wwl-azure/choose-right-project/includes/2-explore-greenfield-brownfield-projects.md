@@ -1,4 +1,3 @@
-
 The terms greenfield and brownfield have their origins in residential and industrial building projects.
 
 A greenfield project is one done on a green field, undeveloped land. A brownfield project is done on the used ground for other purposes.
