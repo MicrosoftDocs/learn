@@ -24,4 +24,4 @@ Since your application lives in your company's domain, a user won't be able to a
 
 By enabling CORS, you'll have a secure way to allow your web application that lives under your own domain to upload files to your Azure Blob Storage account that lives under the Azure domain.
 
-In the next step, you'll to set up your Azure Blob Storage account and enable CORS.
+In the next step, you'll set up your Azure Blob Storage account and enable CORS.
