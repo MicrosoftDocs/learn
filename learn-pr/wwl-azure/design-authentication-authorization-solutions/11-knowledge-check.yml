@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/21/2023
+  ms.date: 03/24/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -14,3 +14,50 @@ labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/11-knowledge-check.md)]
+quiz:
+  title: ""
+  questions:
+  - content: "How can Tailwind Traders permit employees at their retail stores to access company apps from approved tablet devices only?"
+    choices:
+    - content: "Single sign-on (SSO)"
+      isCorrect: false
+      explanation: "Incorrect. SSO helps a user to remember only one ID and one password for multiple apps. SSO doesn't verify the device that's trying to access an app."
+    - content: "Conditional access"
+      isCorrect: true
+      explanation: "Correct. Conditional access lets you require users to access your apps from approved, or managed, devices only."
+    - content: "Multifactor authentication (MFA)"
+      isCorrect: false
+      explanation: "Incorrect. MFA provides extra security for your identities. MFA doesn't verify the device that's trying to access the resource or app."
+  - content: "What should Tailwind Traders do to ensure employees have the correct permissions for their job role?"
+    choices:
+    - content: "Create a conditional access policy"
+      isCorrect: false
+      explanation: "Incorrect. Conditional access policies won't validate employee job role access."
+    - content: "Review each user's role-based access control (RBAC) permissions"
+      isCorrect: false
+      explanation: "Incorrect. Although RBAC might work, the process would be long and tedious. Also, IT personnel aren't in the best position to determine if an employee's access is correct."
+    - content: "Require an access review"
+      isCorrect: true
+      explanation: "Correct. An access review will give managers an opportunity to validate the employee's access."
+  - content: "What should Tailwind Traders do to give access to their partner developers?"
+    choices:
+    - content: "Use AD Connect to bring in the developer accounts"
+      isCorrect: false
+      explanation: "Incorrect. AD Connect is used to bring in on-premises accounts."
+    - content: "Ask the developers to sign in with a social identification like Google, LinkedIn, or Facebook."
+      isCorrect: false
+      explanation: "Incorrect. External social accounts are used for business-to-customer (B2C) apps."
+    - content: "Invite the developers as guest users to their directory"
+      isCorrect: true
+      explanation: "Correct. In business-to-business (B2B) scenarios, guest user accounts are created. You can then apply the appropriate permissions."
+  - content: "What solution would be best for user sign-in attempt requirement?"
+    choices:
+    - content: "Create a user risk policy"
+      isCorrect: false
+      explanation: "Incorrect. A user risk policy represents the probability a given identity or account is compromised. A scenario would be where a user's valid credentials are leaked."
+    - content: "Create a sign-in risk policy"
+      isCorrect: true
+      explanation: "Correct. A sign-in risk policy can identify anonymous IP and atypical locations. Secondary MFA can then be required."
+    - content: "Require an access review"
+      isCorrect: false
+      explanation: "Incorrect. An access review provides an opportunity to validate an employee's continued access to assets."
