@@ -10,6 +10,7 @@ metadata:
   ms.author: sdanie
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  zone_pivot_groups: azure-pipelines-agent-hosting
 durationInMinutes: 3
 content: |
   [!include[](includes/10-summary.md)]

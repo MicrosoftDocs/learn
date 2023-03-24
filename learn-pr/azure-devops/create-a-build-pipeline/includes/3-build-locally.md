@@ -2,17 +2,9 @@ Get ready to start building a CI pipeline with Microsoft Azure Pipelines. The fi
 
 Mara is going to do exactly that, and by following the procedures, you can do the same thing.
 
-[!include[](../../shared/includes/codespaces-hosted-module-options.md)]
-
-::: zone pivot="ms-hosted-agents"  
-MS Hosted agents text
-::: zone-end  
-
-::: zone pivot="github-codespaces-agent"
-GH Codespaces text
 ::: zone-end
 
-#### [GitHub Codespaces](#tab/codespaces)
+::: zone pivot="ms-hosted-agents"  
 
 ### Create an Azure DevOps personal access token
 
@@ -173,7 +165,9 @@ You can interact with the page, including the leaderboard. When you select a pla
 
 When you're finished, return to the terminal window, and to stop the running app, select Ctrl+C.
 
-#### [Microsoft-hosted agent](#tab/hosted-agent)
+::: zone-end  
+
+::: zone pivot="github-codespaces-agent"
 
 ## Prepare Visual Studio Code
 
@@ -371,4 +365,4 @@ You can interact with the page, including the leaderboard. When you select a pla
 
 When you're finished, return to the terminal window, and to stop the running app, select Ctrl+C.
 
----
+::: zone-end

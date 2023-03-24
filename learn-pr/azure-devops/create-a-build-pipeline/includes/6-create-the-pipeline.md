@@ -73,15 +73,19 @@ When you don't provide an initial YAML file for your project, Azure Pipelines ca
 
 Under **Jobs**, select **Job**. Next, trace the build process through each of the steps. To see the job output as a text file when the build completes, you can also select **View raw log**.
 
-#### [GitHub Codespaces](#tab/codespaces)
+
+
+::: zone pivot="github-codespaces-agent"
 
 If your pipeline does not start quickly, verify that Codespaces is still running. Codespaces will shutdown after 30 minutes and may need to be restarted.
 
-#### [Microsoft-hosted agent](#tab/hosted-agent)
+::: zone-end
+
+::: zone pivot="ms-hosted-agents"
 
 If your pipeline status remains **Queued** and does not transition to **Running** after a few moments, [Check your parallel jobs and request a free grant](/azure/devops/pipelines/troubleshooting/troubleshooting#check-for-available-parallel-jobs). If you do not have access to parallel jobs, you can start the module over with Codespaces. 
 
----
+::: zone-end
 
 Here, you see the steps that the build definition created. It prepares the VM, fetches the latest source code from GitHub, and then builds the app.
 
@@ -123,7 +127,7 @@ In practice, you might add build tasks one at a time, push up your changes, and 
 
 1. In Visual Studio Code, change *azure-pipelines.yml* as you see here:
 
-    #### [GitHub Codespaces](#tab/codespaces)
+    ::: zone pivot="github-codespaces-agent"
 
     [!code-yml[](code/6-codespaces-azure-pipelines.yml)]
 
@@ -149,7 +153,9 @@ In practice, you might add build tasks one at a time, push up your changes, and 
 
     You might have also noticed the `UseDotNet@2` task, which is the first build step. Mara remembered that her build script didn't install the required build tools. Although the build agent comes with several .NET SDK versions, this task lets her easily specify the version she needs to use on the build agent.
 
-    #### [Microsoft-hosted agent](#tab/hosted-agent)
+    ::: zone-end
+
+    ::: zone pivot="ms-hosted-agents"
 
     [!code-yml[](code/6-azure-pipelines.yml)]
 
@@ -175,7 +181,8 @@ In practice, you might add build tasks one at a time, push up your changes, and 
 
     You might have also noticed the `UseDotNet@2` task, which is the first build step. Mara remembered that her build script didn't install the required build tools. Although the build agent comes with several .NET SDK versions, this task lets her easily specify the version she needs to use on the build agent.
 
-    ---
+    ::: zone-end
+
 1. From the integrated terminal, to add *azure-pipelines.yml* to the index, commit the change, and push the change up to GitHub, run the following Git commands. These steps are similar to the steps you performed earlier.
 
     > [!TIP]
