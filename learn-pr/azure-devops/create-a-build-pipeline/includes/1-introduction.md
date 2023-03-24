@@ -6,14 +6,14 @@ In this module, you'll help the team with their first task: setting up a continu
 
 This training module shows you how to create and run a pipeline using Azure Pipelines. Pipelines run on agents, which are computing infrastructure with installed agent software that runs one job at a time. Agents can be Microsoft-hosted or self-hosted.
 
-* **Microsoft-hosted agents** are agents managed by Microsoft, and maintenance and upgrades are taken care of for you. Each time you run a pipeline, you get a new agent for each job in the pipeline.
+* **Microsoft-hosted agents** are agents managed by Microsoft, and maintenance and upgrades are taken care of for you. Each time you run a pipeline, you get a new agent provided by Microsoft for each job in the pipeline.
 * **Self-hosted agents** are agents that are managed by you. You configure the virtual machines or containers by installing the agent software and desired tools, and register the agents with Azure DevOps.
 
-Microsoft-hosted agents are an easy way to get started with Azure Pipelines. To run pipelines on a Microsoft-hosted agent, your organization must have at least one Microsoft-hosted parallel job. [Check your Microsoft-hosted parallel jobs count](/azure/devops/pipelines/troubleshooting/troubleshooting#check-for-available-parallel-jobs) to ensure that you have at least one Microsoft-hosted parallel job. If your Microsoft-hosted parallel jobs coint is zero (new Azure DevOps organizations typically have zero parallel jobs), you can [request a free grant](https://aka.ms/azpipelines-parallelism-request). The approval process for the free grant typically takes 2-3 business days.
+Microsoft-hosted agents are an easy way to get started with Azure Pipelines. To run pipelines on a Microsoft-hosted agent, your organization must have at least one Microsoft-hosted parallel job. [Check your Microsoft-hosted parallel jobs count](/azure/devops/pipelines/troubleshooting/troubleshooting#check-for-available-parallel-jobs) to ensure that you have at least one Microsoft-hosted parallel job. If your Microsoft-hosted parallel jobs count is zero (new Azure DevOps organizations typically have zero parallel jobs), you can [request a free grant](https://aka.ms/azpipelines-parallelism-request). The approval process for the free grant typically takes 2-3 business days.
 
 If you don't have any Microsoft-hosted parallel jobs and you don't want to wait 2-3 business days before starting this training module, you can complete the training using GitHub Codespaces. The GitHub Codespaces environment for this training module includes the required development tools, and provides a self-hosted agent that runs the pipeline that you create in the training module. When you choose **GitHub Codespaces development environment using a self-hosted agent**, you're using a self-hosted agent running in your GitHub Codespaces container. This is not a typical production scenario, but it does provide an environment for completing this training module.
 
-* Choose **Local development environment using a Microsoft-hosted agent** if you have one or more Microsoft-hosted parallel jobs.
+* Choose **Local development environment using a Microsoft-hosted agent** if only you have one or more Microsoft-hosted parallel jobs.
 * Choose **GitHub Codespaces development environment using a self-hosted agent** if you don't have any parallel jobs and you don't want to wait 2-3 business days for the free grant in order to use a Microsoft-hosted agent.
 
 ## Training module scenario
