@@ -4,7 +4,7 @@ title: Plan your Azure Active Directory test environment
 metadata:
   title: learning-content
   description: Evaluate whether you need a dedicated test tenant or production Azure Active Directory tenant for your application test environment.
-  ms.date: 12/08/2022
+  ms.date: 03/24/2023
   author: rwike77
   ms.author: ryanwi
   ms.topic: interactive-tutorial
