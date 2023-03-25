@@ -25,10 +25,6 @@ az cognitiveservices account deployment create \
 ## Deploy using the REST API 
 
 ```http
-POST {endpoint}/openai/deployments?api-version=2022-12-01
-```
-
-```http
 POST https://aoairesource.openai.azure.com/openai/deployments?api-version=2022-12-01
 
 
