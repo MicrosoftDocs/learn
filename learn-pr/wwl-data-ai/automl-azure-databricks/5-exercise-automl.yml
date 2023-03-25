@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.automl-azure-databricks.exercise-automl
+title: Exercise - Use AutoML in Azure Databricks
+metadata:
+  title: Exercise - Use AutoML in Azure Databricks
+  description: "Exercise - Use AutoML in Azure Databricks"
+  ms.date: 03/25/2023
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.service: azure-databricks
+durationInMinutes: 30
+content: |
+  [!include[](includes/5-exercise-automl.md)]
