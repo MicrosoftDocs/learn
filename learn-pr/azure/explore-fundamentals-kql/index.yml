@@ -34,15 +34,14 @@ products:
   - azure-log-analytics
 subjects:
   - data-science
-  - data-analysis
   - data-visualization
   - big-data
 units:
 - learn.azure.explore-fundamentals-kql.introduction
-- learn.azure.explore-fundamentals-kql.learning-content
-- learn.azure.explore-fundamentals-kql.exercise
-- learn.azure.explore-fundamentals-kql.learning-content
-- learn.azure.explore-fundamentals-kql.exercise
+- learn.azure.explore-fundamentals-kql.learning-content-1
+- learn.azure.explore-fundamentals-kql.exercise-1
+- learn.azure.explore-fundamentals-kql.learning-content-2
+- learn.azure.explore-fundamentals-kql.exercise-2
 - learn.azure.explore-fundamentals-kql.knowledge-check
 - learn.azure.explore-fundamentals-kql.summary
 badge:
