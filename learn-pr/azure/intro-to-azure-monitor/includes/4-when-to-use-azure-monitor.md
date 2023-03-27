@@ -10,12 +10,12 @@ Users can be notified, take action, and scale their workloads in response to use
 
 Here, we'll discuss some examples of when you might want to use Azure Monitor to:
 
-* View data in Azure Monitor Metrics
-* Analyze logs in Azure Monitor Logs
+* View data in Azure Monitor Metrics.
+* Analyze logs in Azure Monitor Logs.
 
 ## Decision criteria
 
-Azure Monitor Metrics allows you to view time-series data in near real time and retains data for up to three months. If you want to store data for long-term evaluation up to two years and perform more complex analysis, you'd use a Log Analytics Workspace to store the recorded data.
+Azure Monitor Metrics allows you to view time-series data in near real time and retains data for up to three months. If you want to store data for long-term evaluation up to two years and perform more complex analysis, you can use a Log Analytics Workspace to store the recorded data.
 
 Let's look at some of the different mechanisms for monitoring and viewing your Azure resources.
 
@@ -23,13 +23,13 @@ Let's look at some of the different mechanisms for monitoring and viewing your A
 | --- | --- |
 | Metrics | Numerical values that describe some aspect of a system at a particular point in time. |
 | Logs | Log data collected by Azure Monitor for analysis. |
-| Visualizations | Azure Monitor has its own features for visualizing monitoring data and uses other Azure services for publishing it to different audiences. Azure dashboards allow you to combine different kinds of data into a single pane in the Azure portal. Workbooks provide a flexible canvas for data analysis and the creation of rich visual reports in the Azure portal. |
+| Visualizations | Azure Monitor has its own features for visualizing monitoring data and uses other Azure services for publishing it to different audiences. Azure dashboards allow you to combine different kinds of data into a single pane in the Azure portal. Workbooks provide a flexible canvas for data analysis and creating rich visual reports in the Azure portal. |
 
 ### Metrics
 
-Metrics are numerical values that describe some aspect of a system at a particular point in time. They are lightweight and capable of supporting near real-time scenarios. The metrics explorer is built into the Azure portal, allowing you to focus on a specific resource to monitor. Data is presented in a chart or graph format.
+Metrics are numerical values that describe some aspect of a system at a particular point in time. They are lightweight and capable of supporting near-real-time scenarios. The metrics explorer is built into the Azure portal, allowing you to focus on a specific resource to monitor. Data is presented in a chart or graph format.
 
-:::image type="content" source="../media/metrics.png" alt-text="Depiction of a metrics data element feeding values into a chart that uses a line graph format and is available in the Azure portal for many resources. It is found under the Monitoring category.":::
+:::image type="content" source="../media/metrics.png" alt-text="Depiction of a metrics data element feeding values into a chart that uses a line graph format and is available in the Azure portal for many resources. It's found under the Monitoring category.":::
 
 ### Logs
 
@@ -41,19 +41,19 @@ Azure Monitor uses a version of the Kusto query language that's suitable for sim
 
 ### Visualizations
 
-Many times, you may find the need to report on the specific metrics that are measured. Azure Monitor provides two main visualizations in the form of Azure dashboards and workbooks. You can make use of these two features to present a visual report to management or other interested parties for ease of consuming the monitored data.
+Many times, you might find the need to report on the specific metrics that are measured. Azure Monitor provides two main visualizations in the form of Azure dashboards and workbooks. You can make use of these two features to present a visual report to management or other interested parties for ease of consuming the monitored data.
 
 ## Apply the criteria
 
 ### Should you use metrics explorer for monitoring?
 
-Recall that Azure Metrics uses numerical data to display information about your monitored resource. You can select the **Metrics** option under the **Monitoring** category for a resource. This option presents a chart that allows you to select a parameter to track. You'll also notice various charts displayed on the Overview page, as well. Selecting any of those charts opens it in the Metrics Explorer.
+Recall that Azure Metrics uses numerical data to display information about your monitored resource. You can select the **Metrics** option under the **Monitoring** category for a resource. This option presents a chart that allows you to select a parameter to track. You'll also notice various charts displayed on the **Overview** page. Selecting a chart opens it in the Metrics Explorer.
 
 :::image type="content" source="../media/metrics-explorer.png" alt-text="Screenshot of the Metrics Explorer window showing the Data Out values in the sum aggregation.":::
 
 ### Should you use logging with your monitoring tasks?
 
-Recall that log data collected by Azure Monitor can be analyzed with queries to quickly retrieve, consolidate, and analyze collected data. While you'll need to have a Log Analytics workspace to store the log data, the ability to query this data for insights can be a great way to perform more complex and detailed analysis. It can help identify trends or to review when an event happened, and perhaps identify the root cause.
+Recall that you can analyze log data collected by Azure Monitor with queries to quickly retrieve, consolidate, and analyze collected data. While you'll need to have a Log Analytics workspace to store the log data, the ability to query this data for insights can be a great way to perform more complex and detailed analysis. It can help identify trends or to review when an event happened, and perhaps identify the root cause.
 
 ### Should you use visualizations in monitoring your resources?
 
