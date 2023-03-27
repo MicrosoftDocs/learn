@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
-uid: learn.sql-server-2022-performance-enhancements.iqp-exercise
-title: IQP Exercise
+uid: learn.sql-server-2022-performance-enhancements.memory-feedback-exercise
+title: Memory feedback exercise
 metadata:
   title: exercise
   description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 1
 content: |
-  [!include[](includes/3-iqp-exercise.md)]
+  [!include[](includes/3-memory-feedback-exercise.md)]
