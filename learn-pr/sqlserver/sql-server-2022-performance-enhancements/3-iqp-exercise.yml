@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
-uid: learn.sql-server-2022-performance-enhancements.exercise
-title: Enter exercise title
+uid: learn.sql-server-2022-performance-enhancements.iqp-exercise
+title: IQP Exercise
 metadata:
   title: exercise
   description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 1
 content: |
-  [!include[](includes/3-exercise.md)]
+  [!include[](includes/3-iqp-exercise.md)]

@@ -108,7 +108,7 @@ roles:
 ###
 products:
 - azure
-- sql
+- sql-server
 ###########################################################################
 ###
 ### Specify the subject areas.
@@ -122,15 +122,11 @@ subjects:
 ###
 units:
 - learn.sql-server-2022-performance-enhancements.introduction
-- learn.sql-server-2022-performance-enhancements.learning-content
-- learn.sql-server-2022-performance-enhancements.exercise
+- learn.sql-server-2022-performance-enhancements.iqp
+- learn.sql-server-2022-performance-enhancements.iqp-exercise
 - learn.sql-server-2022-performance-enhancements.learning-content
 - learn.sql-server-2022-performance-enhancements.exercise
 - learn.sql-server-2022-performance-enhancements.knowledge-check
 - learn.sql-server-2022-performance-enhancements.summary
-###########################################################################
-###
-### TODO verify your badge
-###
 badge:
   uid: learn.sql-server-2022-performance-enhancements.badge
