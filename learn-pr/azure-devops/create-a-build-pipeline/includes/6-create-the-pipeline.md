@@ -8,8 +8,6 @@ When you don't provide an initial YAML file for your project, Azure Pipelines ca
 
 ::: zone pivot="github-codespaces-agent"
 
-TEST
-
 1. In Azure DevOps, go to your project.
 
 1. Either from the project page or from the left pane, select **Pipelines**.
