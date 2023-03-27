@@ -12,6 +12,7 @@
 -->
 TODO: add your topic sentences(s)
 TODO: add a visual element
+Brad makes first change
 
 <!-- 2. Scenario -----------------------------------------------------------------------------------------
 
