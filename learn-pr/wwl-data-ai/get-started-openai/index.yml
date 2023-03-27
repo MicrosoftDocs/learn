@@ -31,11 +31,11 @@ subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribu
 units:
 - learn.wwl.get-started-openai.introduction
 - learn.wwl.get-started-openai.access-azure-openai
-- learn.wwl.get-started-openai.sample-new-unit
-- learn.wwl.get-started-openai.exercise
-- learn.wwl.get-started-openai.learning-content
-- learn.wwl.get-started-openai.learning-content-unit
-- learn.wwl.get-started-openai.exercise
+- learn.wwl.get-started-openai.use-azure-openai-studio
+- learn.wwl.get-started-openai.types-of-models
+- learn.wwl.get-started-openai.deploy-models
+- learn.wwl.get-started-openai.explore-prompts
+- learn.wwl.get-started-openai.use-azure-openai-playground
 - learn.wwl.get-started-openai.knowledge-check
 - learn.wwl.get-started-openai.summary
 badge:

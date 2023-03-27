@@ -11,7 +11,13 @@ When you create a resource, you will need to provide your subscription, resource
 You can also use the command line to create a resource: 
 
 ```dotnetcli
-POST {endpoint}/openai/deployments?api-version=2022-12-01
+az cognitiveservices account create \
+-n MyOpenAIResource \
+-g OAIResourceGroup \
+-l eastus \
+--kind OpenAI \
+--sku s0 \
+--subscription 00000000-0000-0000-0000-000000000000
 ```
 
 You can view command line instructions [here](https://learn.microsoft.com/azure/cognitive-services/openai/how-to/create-resource?pivots=cli/?portal=true).   

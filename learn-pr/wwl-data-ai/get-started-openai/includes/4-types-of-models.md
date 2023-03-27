@@ -7,8 +7,7 @@ Azure OpenAI's generative AI models are grouped by family and capability. The fa
 |Family|Description|Base models within the Family|
 |:--------|:-------------------------------------|:---------------|
 |**GPT-4**|A set of models that improve on GPT-3.5 and can understand as well as generate natural language and code. These models are currently in preview. For access, existing Azure OpenAI customers can apply by [filling out this form](https://aka.ms/oai/get-gpt4).|gpt-4, gpt-4-32k|
-|**ChatGPT**|Language model that is optimized for conversational interfaces.| gpt-35-turbo|
-|**GPT-3**|A series of models that can understand and generate natural language. This includes the new ChatGPT model (preview).|text-davinci-003, text-curie-001, text-babbage-001, text-ada-001|
+|**GPT-3**|A series of models that can understand and generate natural language. This includes the new ChatGPT model (preview).|text-davinci-003, text-curie-001, text-babbage-001, text-ada-001, gpt-35-turbo|
 |**Codex**|A series of models that can understand and generate code, including translating natural language to code.|code-davinci-002, code-cushman-001|
 
 **Embeddings** are a fourth series of models. An embedding is a special format of data representation that can be easily utilized by machine learning models and algorithms. The embedding is an information dense representation of the semantic meaning of a piece of text. 
