@@ -3,7 +3,7 @@ Administrators use internal load balancers to direct traffic to resources that r
 
 #### Business scenario
 
-Suppose you have an Azure SQL Database tier subnet with several virtual machines, and you implement an internal load balancer. Database requests need to be distributed to the backend. The internal load balancer receives the database requests and uses the load-balancing rules to determine how to distribute the requests to the back-end SQL servers. The SQL servers respond on port 1443. The following illustration highlights this scenario:
+Suppose you have an Azure SQL Database tier subnet with several virtual machines, and you implement an internal load balancer. Database requests need to be distributed to the backend. The internal load balancer receives the database requests and uses the load-balancing rules to determine how to distribute the requests to the back-end SQL servers. The SQL servers respond on port 1433. The following illustration highlights this scenario:
 
 :::image type="content" source="../media/internal-load-balancer-5ae85589.png" alt-text="Diagram showing how an internal load balancer works as described in the text." border="false":::
 

@@ -14,7 +14,7 @@ You can learn more by reviewing the following articles:
 
 - [View and configure DDoS diagnostic logging](/azure/ddos-protection/reports-and-flow-logs?azure-portal=true)
 
-- [Fundamental best practices](/azure/ddos-protection/fundamental-best-practices?azure-portal=true)
+- [Azure DDoS Protection fundamental best practices](/azure/ddos-protection/fundamental-best-practices?azure-portal=true)
 
 - [Azure DDoS Rapid Response](/azure/ddos-protection/ddos-rapid-response?azure-portal=true)
 

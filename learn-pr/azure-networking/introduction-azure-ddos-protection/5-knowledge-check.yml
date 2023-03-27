@@ -19,13 +19,13 @@ quiz:
     choices:
     - content: "The Physical L1 and Data Link L2 layers"
       isCorrect: false
-      explanation: "That's incorrect. A DDoS Protocol attack doesn't target the L1 and L2 layers."
+      explanation: "Incorrect. A DDoS Protocol attack doesn't target the L1 and L2 layers."
     - content: "The Network L3 and Transport L4 layers"
       isCorrect: true
-      explanation: "That's correct. A DDoS Protocol attack targets the L3 and L4 layers."
+      explanation: "Correct. A DDoS Protocol attack targets the L3 and L4 layers."
     - content: "The Session L5 and the Presentation L6 layers"
       isCorrect: false
-      explanation: "That's incorrect. A DDoS Protocol attack doesn't target the L5 and L6 layers."
+      explanation: "Incorrect. A DDoS Protocol attack doesn't target the L5 and L6 layers."
   - content: "Which Azure DDoS Protection service offers DDoS rapid response support?"
     choices:
     - content: "Azure DDoS Network Protection"
@@ -41,10 +41,10 @@ quiz:
     choices:
     - content: "Discard this data when the attack is over."
       isCorrect: false
-      explanation: "That's incorrect. You shouldn't discard this data after the attack is over."
+      explanation: "Incorrect. You shouldn't discard this data after the attack is over."
     - content: "Use this data to analyze the attack."
       isCorrect: true
-      explanation: "That's correct. You should use the logged data to analyze the attack."
+      explanation: "Correct. You should use the logged data to analyze the attack."
     - content: "Immediately clear your logs during the attack."
       isCorrect: false
-      explanation: "That's incorrect. You shouldn't clear your logs during the attack."
+      explanation: "Incorrect. You shouldn't clear your logs during the attack."
