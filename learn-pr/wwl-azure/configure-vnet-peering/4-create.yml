@@ -4,13 +4,11 @@ title: Create virtual network peering
 metadata:
   title: Create virtual network peering
   description: "Create a virtual network peering in the Azure portal."
-  ms.date: 03/17/2023
+  ms.date: 03/27/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/4-create.md)]
