@@ -1,6 +1,7 @@
 
 
 
+
 The C# debugger for Visual Studio Code supports the option to configure a breakpoint that only triggers if a condition is met. This type of breakpoint is called a conditional breakpoint. Conditional breakpoints can be configured directly or by editing an existing breakpoint.
 
 > [!NOTE]
@@ -118,13 +119,13 @@ Suppose you're debugging an application that processes product information in a 
 
     The VARIABLES section of the RUN AND DEBUG view displays the value assigned to `i`.
 
-    Notice that `Process1` and `Process2` display messages to the DEBUG CONSOLE panel. A real application may require user interactions as data is being processed. Some interaction may be dependent on the data being processed.
+    Notice that `Process1` and `Process2` display messages to the DEBUG CONSOLE panel. A real application may require user interactions as data is being processed. Some interactions may be dependent on the data being processed.
 
 1. Use the **Stop** button to stop code execution.
 
 ## Configure a conditional breakpoint using an expression
 
-A standard breakpoint is great for walking through a data processing application. However, in this case you're interested in `new` products and you don't want to walk through the analysis of each product to find the ones that are `new`. This situation provides an example of when conditional breakpoints can be used.
+A standard breakpoint is great for walking through a data processing application. However, in this case you're interested in `new` products and you don't want to walk through the analysis of each product to find the ones that are `new`. This scenario is a good example of when conditional breakpoints should be used.
   
 1. Right-click your existing breakpoint, and then select **Edit Breakpoint**.
 

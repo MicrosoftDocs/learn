@@ -1,3 +1,4 @@
+
 Materialized views in the Azure Synapse SQL pool provide a low maintenance method for complex analytical queries to quickly perform without any query change. SQL pool in Azure Synapse supports standard and materialized views. Both are virtual tables created with SELECT expressions and presented to queries as logical tables. Views encapsulate the complexity of common data computation and add an abstraction layer to computation changes, so there's no need to rewrite queries.
 
 | Comparison                     | View                                         | Materialized view
@@ -15,7 +16,7 @@ An adequately designed materialized view provides the following benefits:
 
 * Reduce the execution time for complex queries with JOINs and aggregate functions. The more complex the query, the higher the potential for execution-time saving. The most benefit is gained when a query's computation cost is high, and the resulting data set is small.
 * The optimizer in the SQL pool can automatically use deployed materialized views to improve query execution plans. This process is transparent to users providing faster query performance, and doesn't require queries to make direct reference to the materialized views.
-* Require low maintenance on the views. All incremental data changes from the base tables are automatically added to the materialized views synchronously. This design allows querying materialized views to return the same data as directly querying the base tables.
+* Requires low maintenance on the views. All incremental data changes from the base tables are automatically added to the materialized views synchronously. This design allows querying materialized views to return the same data as directly querying the base tables.
 * The data in a materialized view can be distributed differently from the base tables.
 * Data in materialized views gets the same high availability and resiliency benefits as data in regular tables.
 

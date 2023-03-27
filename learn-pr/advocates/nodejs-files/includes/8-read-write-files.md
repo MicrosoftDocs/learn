@@ -1,8 +1,8 @@
 Reading data from files and writing data to files are core concepts in Node.js.
 
-Tailwind Traders needs to write the total of all the individual store sales files to a new file. This file will then be loaded into the company's sales system.
+Tailwind Traders needs to write the total of all the individual store sales files to a new file. This file is then loaded into the company's sales system.
 
-Here, you'll learn how to use the *fs* module to read and write to files.
+Here, you learn how to use the *fs* module to read and write to files.
 
 ## Read data from files
 
@@ -50,7 +50,7 @@ console.log(data.total);
 ```
 
 > [!TIP]
-> Files come a variety of formats. JSON files are the most desirable to work with because of the built-in support in the language. However, you might encounter files that are .csv, fixed width, or some other format. In that case, it's best to search npmjs.org for a parser for that file type. 
+> Files come in a variety of formats. JSON files are the most desirable to work with because of the built-in support in the language. However, you might encounter files that are .csv, fixed width, or some other format. In that case, it's best to search npmjs.org for a parser for that file type.
 
 ## Write data to files
 
@@ -68,7 +68,7 @@ await fs.writeFile("salesTotals/totals.txt"), data.total);
 
 ### Append data to files
 
-In the preceding example, the file is overwritten every time you write to it. Sometimes you don't want that. Sometimes you want to append data to the file, not replace it entirely. You can do this by passing a flag to the `writeFile` method. By default, the flag is set to `w`, which means "replace the file." To append to the file instead, pass the `a` flag, which means "append."
+In the preceding example, the file is overwritten every time you write to it. Sometimes you don't want that. Sometimes you want to append data to the file not replace it entirely. You can append data by passing a flag to the `writeFile` method. By default, the flag is set to `w`, which means "replace the file." To append to the file instead, pass the `a` flag, which means "append."
 
 ```javascript
 const data = JSON.parse(await fs.readFile("stores/201/sales.json"));
