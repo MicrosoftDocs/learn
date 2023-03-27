@@ -1,0 +1,136 @@
+### YamlMime:Module
+uid: learn.sql-server-2022-performance-enhancements
+metadata:
+  title: sql-server-2022-performance-enhancements                     # Title must be "(verb) your first (thing) by using (product)"
+  description: "TODO"                        # Copy your 'apply' Learning Objective here (see below)
+  ms.date: 3/27/2023                        # Date of commit to GitHub (do not use target publication date, cannot be in the future)
+  author: VanMSFT                 # GitHub ID of the Microsoft employee either authoring or project-managing this content
+  ms.author: vanto                      # Alias     of the Microsoft employee either authoring or project-managing this content
+  ms.topic: interactive-tutorial             # Do not edit: value must be "interactive-tutorial"
+  ms.prod: learning-azure                    # Edit as appropriate for your portfolio area
+###########################################################################
+###
+### Title must be "(verb) your first (thing) by using (product)"
+###
+title: sql-server-2022-performance-enhancements
+###########################################################################
+###
+### Summary
+###
+### Length:
+###   - Write 2 sentences.
+###   - Total length should be 20-25 words; up to 35 is acceptable.
+###   - To keep it brief, avoid teaching, omit motivation, and remove "learn", "in this module", and title words.
+###
+### Sentence 1:
+###   Goal: Include key technologies
+###   Example (Logic Apps): "Define a workflow using built-in triggers, actions, and conditional operators."
+###
+### Sentence 2:
+###   Goal: Include key sub-tasks
+###   Example (Logic Apps): "Your workflow will run automatically when data is available, process the data in the cloud, record results in a database, and send email notifications."
+###
+### Detailed guidance: https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main
+###
+summary: ""
+###########################################################################
+###
+### Learning Objectives
+###
+### Write 3 Learning Objectives, one that fits each pattern shown below.
+###
+### Learning Objective 1:
+###   Goal: Align to the verb 'prepare' as in "plan or get things ready to do the exercise"
+###   Example (Logic Apps): "Design a workflow to solve a business problem."
+###
+### Learning Objective 2:
+###   Goal: Align to the verb 'apply' as in "do the task in the exercise"
+###   Example (Logic Apps): "Implement a workflow from the standard triggers and actions"
+###
+### Learning Objective 3:
+###   Goal: Align to the verb 'validate' as in "check your work"
+###   Example (Logic Apps): "Run a workflow in the cloud to validate the results"
+###
+### Notes:
+###   - The YAML element name here is 'abstract' but it must contain your Learning Objectives.
+###   - Do not edit the lead-in sentence ("By the end of this module, you'll be able to:").
+###   - Start each objective with an upper-case letter.
+###   - End each objective with a period.
+###
+### Detailed guidance: https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=main
+###
+abstract: |
+  By the end of this module, you'll be able to:
+    - (prepare)
+    - (apply)
+    - (validate)
+###########################################################################
+###
+### Prerequisites
+###   - The first prerequisite is "_Knowledge of what (product) is and how it works at the beginner level_"
+###   - Other than the required first prerequisite, others follow the standard guidance:
+###     - Avoid ambiguity, e.g. say "Ability to write HTML at a novice level" rather than "Familiarity with HTML".
+###     - Be concrete: e.g. say "Familiarity with programming concepts such as loops, conditionals and variables" rather than "Familiarity with programming concepts".
+###     - Do not mention or link to other content that teaches the required prerequisite skills.
+###     - If needed, include software setup requirements with setup links.
+###
+### Detailed guidance:
+###   https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=main
+###
+prerequisites: |
+  - Knowledge of what (product) is and how it works at the beginner level
+  - TODO prerequisite 2
+  - TODO prerequisite 3
+###########################################################################
+###
+### Replace with the custom module icon when available
+###
+iconUrl: /learn/achievements/generic-badge.svg
+###########################################################################
+###
+### Do not edit: level must be 'beginner'
+###
+levels:
+  - beginner
+###########################################################################
+###
+### Specify the target roles.
+###   - Set the 'roles' to match the role targeted by your hands-on exercise.
+###
+### Use value(s) from the role taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role)
+###
+roles:
+  - developer
+###########################################################################
+###
+### Specify the covered products.
+### Use value(s) from the product taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product)
+###
+products:
+- azure
+- sql
+###########################################################################
+###
+### Specify the subject areas.
+### Use value(s) from the subject taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject)
+###
+subjects:
+  - cloud-computing
+###########################################################################
+###
+### The units will be populated automatically during scaffold generation.
+###
+units:
+- learn.sql-server-2022-performance-enhancements.introduction
+- learn.sql-server-2022-performance-enhancements.learning-content
+- learn.sql-server-2022-performance-enhancements.exercise
+- learn.sql-server-2022-performance-enhancements.learning-content
+- learn.sql-server-2022-performance-enhancements.exercise
+- learn.sql-server-2022-performance-enhancements.knowledge-check
+- learn.sql-server-2022-performance-enhancements.summary
+###########################################################################
+###
+### TODO verify your badge
+###
+badge:
+  uid: learn.sql-server-2022-performance-enhancements.badge
