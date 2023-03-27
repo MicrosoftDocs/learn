@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.inventory-compliance-reports.report-enrolled-devices-inventory-intune
+title: Report enrolled devices inventory in Intune
+metadata:
+  title: Report enrolled devices inventory in Intune
+  description: "Report enrolled devices inventory in Intune"
+  ms.date: 03/27/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-report-enrolled-devices-inventory-intune.md)]
