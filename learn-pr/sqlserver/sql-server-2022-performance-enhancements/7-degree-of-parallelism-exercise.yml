@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.sql-server-2022-performance-enhancements.exercise
-title: Enter exercise title
+uid: learn.sql-server-2022-performance-enhancements.degree-of-parallelism-exercise
+title: degree-of-parallelism-exercise
 metadata:
-  title: exercise
+  title: degree-of-parallelism-exercise
   description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
   ms.date: 3/27/2023
   author: VanMSFT
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 1
 content: |
-  [!include[](includes/5-exercise.md)]
+  [!include[](includes/7-degree-of-parallelism-exercise.md)]
