@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-device-compliance.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/27/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following items is a synchronization protocol that allows mobile phone users to access their email, calendar, contacts, and tasks, and continue to access this information when they're working offline?"
+    choices:
+    - content: "Compliance policies"
+      isCorrect: false
+      explanation: "Incorrect. Compliance policies aren't a synchronization protocol. Try again."
+    - content: "Endpoint Manager"
+      isCorrect: false
+      explanation: "Incorrect. Endpoint Manager isn't a synchronization protocol. Try again."
+    - content: "Exchange ActiveSync"
+      isCorrect: true
+      explanation: "Correct. Exchange ActiveSync (EAS) is an Exchange synchronization protocol that's optimized to work together with high-latency and low-bandwidth networks. The protocol, based on HTTP and XML, lets mobile phones access an organization's information on a server that's running Microsoft Exchange. Not only does EAS allow mobile phone users to access their email, calendar, contacts, and tasks, it also allows them to continue accessing this information when they're working offline."
+  - content: "As the Desktop Administrator for World Wide Importers, Alan Deyoung wants to create Conditional Access policies to provide granular access control over organizational data while allowing users to work from essentially any device and location. In which of the following scenarios will Conditional Access be especially beneficial for World Wide Importers?"
+    choices:
+    - content: "Enabling employees to use a corporate application on their personal device"
+      isCorrect: true
+      explanation: "Correct. Some applications require more protection than others. Conditional access allows you to add a layer of protection for them by requiring MFA when users access them."
+    - content: "Enabling users to access the corporate e-mail from a public kiosk"
+      isCorrect: false
+      explanation: "Incorrect. As this is inherently a risky scenario, conditional access might be used to help prevent this scenario."
+    - content: "Automatically updating devices to the required minimum OS"
+      isCorrect: false
+      explanation: "Incorrect. Conditional access allows or blocks access based on defined criteria. It doesn't initiate the steps to meet compliance. Try again."

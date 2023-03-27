@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.implement-device-compliance
+metadata:
+  title: MD-102 3-Implement device compliance
+  description: "This module describes how to use compliance and conditional access policies to help protect access to organizational resources."
+  ms.date: 03/27/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Implement device compliance
+summary: This module describes how to use compliance and conditional access policies to help protect access to organizational resources.
+abstract: |
+  After this module, you should be able to:
+  - Describe device compliance policy
+  - Deploy a device compliance policy
+  - Describe conditional access
+  - Create conditional access policies
+prerequisites: |
+  - Strong technical skills installing, maintaining, and troubleshooting the Windows 10 OS or later
+  - Strong understanding of computer networking, client security, and application concepts
+  - Experience using Active Directory Domain Services
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- windows
+- configuration-manager
+- intune
+units:
+- learn.wwl.implement-device-compliance.introduction
+- learn.wwl.implement-device-compliance.protect-access-to-resources-using-intune
+- learn.wwl.implement-device-compliance.explore-policy
+- learn.wwl.implement-device-compliance.deploy-policy
+- learn.wwl.implement-device-compliance.explore-conditional-access
+- learn.wwl.implement-device-compliance.create-conditional-access-policies
+- learn.wwl.implement-device-compliance.knowledge-check
+- learn.wwl.implement-device-compliance.summary
+badge:
+  uid: learn.wwl.implement-device-compliance.badge

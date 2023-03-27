@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-device-compliance.protect-access-to-resources-using-intune
+title: Protect access to resources using Intune
+metadata:
+  title: Protect access to resources using Intune
+  description: "Protect access to resources using Intune"
+  ms.date: 03/27/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-protect-access-to-resources-using-intune.md)]
