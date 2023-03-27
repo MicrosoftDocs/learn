@@ -29,7 +29,7 @@ Let's look at some of the different mechanisms for monitoring and viewing your A
 
 Metrics are numerical values that describe some aspect of a system at a particular point in time. They are lightweight and capable of supporting near-real-time scenarios. The metrics explorer is built into the Azure portal, allowing you to focus on a specific resource to monitor. Data is presented in a chart or graph format.
 
-:::image type="content" source="../media/metrics.png" alt-text="Depiction of a metrics data element feeding values into a chart that uses a line graph format and is available in the Azure portal for many resources. It's found under the Monitoring category.":::
+:::image type="content" source="../media/metrics.png" alt-text="Depiction of a metrics data element feeding values into a chart available in the Azure portal under the Monitoring category for many resources.":::
 
 ### Logs
 
