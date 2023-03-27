@@ -1,6 +1,7 @@
 
 
 
+
 .NET provides a hierarchy of exception classes that derive from the `System.Exception` base class. C# applications can create and throw exceptions of any exception type. Developers can also customize exception objects with application specific information by assigning property values.
 
 > [!NOTE]
@@ -17,7 +18,7 @@ For example, suppose you're creating a method named `GraphData` that performs da
 Here are some common exception types that you might use when creating an exception:
 
 - `ArgumentException` or `ArgumentNullException`: Use these exception types when a method or constructor is called with an invalid argument value or null reference.
-- `InvalidOperationException`: Use this exception type when a method or operation is called in an invalid state.
+- `InvalidOperationException`: Use this exception type when the operating conditions of a method don't support the successful completion of a particular method call.
 - `NotSupportedException`: Use this exception type when an operation or feature is not supported.
 - `IOException`: Use this exception type when an input/output operation fails.
 - `FormatException`: Use this exception type when the format of a string or data is incorrect.
@@ -32,7 +33,7 @@ ArgumentException invalidArgumentException = new ArgumentException();
 
 The process for throwing an exception object involves creating an instance of an exception-derived class, optionally configuring properties of the exception, and then throwing the object by using the `throw` keyword.
 
-It's often helpful customize an exception with contextual information before it's thrown. You can provide application specific information within and exception object by configuring its properties. For example, the following code creates an exception object named `invalidArgumentException` with a custom `Message` property, and then throws the exception:
+It's often helpful to customize an exception with contextual information before it's thrown. You can provide application specific information within an exception object by configuring its properties. For example, the following code creates an exception object named `invalidArgumentException` with a custom `Message` property, and then throws the exception:
 
 ```csharp
 ArgumentException invalidArgumentException = new ArgumentException("ArgumentException: The 'GraphData' method received data outside the expected range.");
@@ -63,45 +64,17 @@ Consider a scenario where a developer is working on an application that implemen
 
 ```csharp
 string[][] userEnteredValues = new string[][]
-{
-        new string[] { "1", "two", "3"},
-        new string[] { "0", "1", "2"}
+{       new string[] { "1", "two", "3"},       new string[] { "0", "1", "2"}
 };
 
 foreach (string[] userEntries in userEnteredValues)
-{
-    try
-    {
-        BusinessProcess1(userEntries);
-    }
-    catch (Exception ex)
-    {
-        if (ex.StackTrace.Contains("BusinessProcess1") && (ex is FormatException))
-        {
-            Console.WriteLine(ex.Message);
-        }
-    }
+{   try   {       BusinessProcess1(userEntries);   }   catch (Exception ex)   {       if (ex.StackTrace.Contains("BusinessProcess1") && (ex is FormatException))       {           Console.WriteLine(ex.Message);       }   }
 }
 
 static void BusinessProcess1(String[] userEntries)
-{
-    int valueEntered;
-
-    foreach (string userValue in userEntries)
-    {
-        try
-        {
-            valueEntered = int.Parse(userValue);
-
-            // completes required calculations based on userValue
-            // ...
-        }
-        catch (FormatException)
-        {
-            FormatException invalidFormatException = new FormatException("FormatException: User input values in 'BusinessProcess1' must be valid integers");
-            throw invalidFormatException;
-        }
-    }
+{   int valueEntered;
+   foreach (string userValue in userEntries)   {       try       {           valueEntered = int.Parse(userValue);
+           // completes required calculations based on userValue           // ...       }       catch (FormatException)       {           FormatException invalidFormatException = new FormatException("FormatException: User input values in 'BusinessProcess1' must be valid integers");           throw invalidFormatException;       }   }
 }
 ```
 
@@ -113,12 +86,8 @@ In addition to throwing a new exception, `throw` can be used re-throw an excepti
 
 ```csharp
 catch (Exception ex)
-{
-    // handle or partially handle the exception
-    // ...
-
-    // re-throw the original exception object for further handling down the call stack
-    throw;
+{   // handle or partially handle the exception   // ...
+   // re-throw the original exception object for further handling down the call stack   throw;
 }
 ```
 
@@ -126,12 +95,8 @@ When you re-throw an exception, the original exception object is used, so you do
 
 ```csharp
 catch (Exception ex)
-{
-    // handle or partially handle the exception
-    // ...
-
-    // create a new exception object that wraps the original exception
-    throw new ApplicationException("An error occurred", ex);
+{   // handle or partially handle the exception   // ...
+   // create a new exception object that wraps the original exception   throw new ApplicationException("An error occurred", ex);
 }
 ```
 
@@ -145,84 +110,24 @@ The following code sample demonstrates the updated scenario:
 
 ```csharp
 try
-{
-    OperatingProcedure1();
+{   OperatingProcedure1();
 }
 catch (Exception ex)
-{
-    Console.WriteLine(ex.Message);
-    Console.WriteLine("Exiting application.");
+{   Console.WriteLine(ex.Message);   Console.WriteLine("Exiting application.");
 }
 
 static void OperatingProcedure1()
-{
-    string[][] userEnteredValues = new string[][]
-    {
-        new string[] { "1", "two", "3"},
-        new string[] { "0", "1", "2"}
-    };
-
-    foreach(string[] userEntries in userEnteredValues)
-    {
-        try
-        {
-            BusinessProcess1(userEntries);
-        }
-        catch (Exception ex)
-        {
-            if (ex.StackTrace.Contains("BusinessProcess1"))
-            {
-                if (ex is FormatException)
-                {
-                    Console.WriteLine(ex.Message);
-                    Console.WriteLine("Corrective action taken in OperatingProcedure1");
-                }
-                else if (ex is DivideByZeroException)
-                {
-                    Console.WriteLine(ex.Message);
-                    Console.WriteLine("Partial correction in OperatingProcedure1 - further action required");
-
-                    // re-throw the original exception
-                    throw;
-                }
-                else
-                {
-                    // create a new exception object that wraps the original exception
-                    throw new ApplicationException("An error occurred - ", ex);
-                }
-            }
-        }
-
-    }
+{   string[][] userEnteredValues = new string[][]   {       new string[] { "1", "two", "3"},       new string[] { "0", "1", "2"}   };
+   foreach(string[] userEntries in userEnteredValues)   {       try       {           BusinessProcess1(userEntries);       }       catch (Exception ex)       {           if (ex.StackTrace.Contains("BusinessProcess1"))           {               if (ex is FormatException)               {                   Console.WriteLine(ex.Message);                   Console.WriteLine("Corrective action taken in OperatingProcedure1");               }               else if (ex is DivideByZeroException)               {                   Console.WriteLine(ex.Message);                   Console.WriteLine("Partial correction in OperatingProcedure1 - further action required");
+                   // re-throw the original exception                   throw;               }               else               {                   // create a new exception object that wraps the original exception                   throw new ApplicationException("An error occurred - ", ex);               }           }       }
+   }
 }
 
 static void BusinessProcess1(String[] userEntries)
-{
-    int valueEntered;
-
-    foreach (string userValue in userEntries)
-    {
-        try
-        {
-            valueEntered = int.Parse(userValue);
-
-            checked
-            {
-                int calculatedValue = 4 / valueEntered;
-            }
-        }
-        catch (FormatException)
-        {
-            FormatException invalidFormatException = new FormatException("FormatException: User input values in 'BusinessProcess1' must be valid integers");
-            throw invalidFormatException;
-        }
-        catch (DivideByZeroException)
-        {
-            DivideByZeroException unexpectedDivideByZeroException = new DivideByZeroException("DivideByZeroException: Calculation in 'BusinessProcess1' encountered an unexpected divide by zero");
-            throw unexpectedDivideByZeroException;
-
-        }
-    }
+{   int valueEntered;
+   foreach (string userValue in userEntries)   {       try       {           valueEntered = int.Parse(userValue);
+           checked           {               int calculatedValue = 4 / valueEntered;           }       }       catch (FormatException)       {           FormatException invalidFormatException = new FormatException("FormatException: User input values in 'BusinessProcess1' must be valid integers");           throw invalidFormatException;       }       catch (DivideByZeroException)       {           DivideByZeroException unexpectedDivideByZeroException = new DivideByZeroException("DivideByZeroException: Calculation in 'BusinessProcess1' encountered an unexpected divide by zero");           throw unexpectedDivideByZeroException;
+       }   }
 }
 ```
 
@@ -253,6 +158,6 @@ The following list identifies practices to avoid when throwing exceptions:
 
 Here are a few important things to remember from this unit:
 
-- The exception type must match the intended purpose of the exception as closely as possible.
+- When creating and throwing an exception, the exception type must match the intended purpose of the exception as closely as possible.
 - To `throw` an exception, you create an instance of an exception-derived class, configure its properties, and then use the `throw` keyword.
 - When creating an exception object, it's important to provide clear error messages and additional information to help users correct the issue.
