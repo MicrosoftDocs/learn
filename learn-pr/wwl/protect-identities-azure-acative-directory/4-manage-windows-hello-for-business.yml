@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.protect-identities-azure-acative-directory.manage-windows-hello-for-business
+title: Manage Windows Hello for Business
+metadata:
+  title: Manage Windows Hello for Business
+  description: "Manage Windows Hello for Business"
+  ms.date: 03/27/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-manage-windows-hello-for-business.md)]

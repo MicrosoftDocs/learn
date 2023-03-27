@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.protect-identities-azure-acative-directory.deploy-windows-hello
+title: Deploy Windows Hello
+metadata:
+  title: Deploy Windows Hello
+  description: "Deploy Windows Hello"
+  ms.date: 03/27/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-deploy-windows-hello.md)]
