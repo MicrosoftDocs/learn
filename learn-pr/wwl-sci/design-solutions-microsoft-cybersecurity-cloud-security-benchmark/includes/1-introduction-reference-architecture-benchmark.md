@@ -90,3 +90,12 @@ Microsoft cloud security benchmark can often be used to address common challenge
 - Using multicloud environments (such as Azure and AWS) and facing challenges in aligning the security control monitoring and evaluation using a single pane of glass.
 - Evaluating the security features/capabilities of Azure (and other major cloud platforms, such as AWS) before onboarding/approving a service(s) into the cloud service catalog.
 - Having to meet compliance requirements in highly regulated industries, such as government, finance, and healthcare. These customers need to ensure their service configurations of Azure and other clouds to meet the security specification defined in framework such as CIS, NIST, or PCI. MCSB provides an efficient approach with the controls already premapped to these industry benchmarks.
+
+## Terminology
+
+The terms "control" and "baseline" are often used in the Microsoft cloud security benchmark documentation. It's important to understand how MCSB uses these terms.
+
+| Term | Description | Example |
+|---|---|---|
+| Control | A control is a high-level description of a feature or activity that needs to be addressed and isn't specific to a technology or implementation. | Data Protection is one of the security control families. Data Protection contains specific actions that must be addressed to help ensure data is protected. |
+| Baseline | A baseline is the implementation of the control on the individual Azure services. Each organization dictates a benchmark recommendation and corresponding configurations are needed in Azure. Note: Today we have service baselines available only for Azure. | The Contoso company looks to enable Azure SQL security features by following the configuration recommended in the Azure SQL security baseline.|

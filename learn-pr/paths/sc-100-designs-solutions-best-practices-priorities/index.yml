@@ -1,14 +1,14 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.sc-100-designs-solutions-best-practices-priorities
 metadata:
-  title: 'SC-100 Design solutions that align with security best practices and priorities'
-  description: 'SC-100 Design solutions that align with security best practices and priorities'
+  title: 'SC-100: Design solutions that align with security best practices and priorities'
+  description: 'SC-100: Design solutions that align with security best practices and priorities'
   ms.date: 04/05/2023
   author: wwlpublish
   ms.author: hrasheed
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: 'SC-100 Design solutions that align with security best practices and priorities'
+title: 'SC-100: Design solutions that align with security best practices and priorities'
 prerequisites: |
   *   Conceptual knowledge of security policies, requirements, zero trust architecture, and management of hybrid environments.
   *   Working experience with zero trust strategies, applying security policies, and developing security requirements based on business goals.

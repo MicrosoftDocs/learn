@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 1
 content: |
-  [!include[](includes/2-evaluate-security-posture-of-existing-application-portfolios.md)]
+  [!include[](includes/3-evaluate-security-posture-of-existing-application-portfolios.md)]

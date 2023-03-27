@@ -1,6 +1,6 @@
 In this module, you learn how to:
 
-- Translate compliance requirements into a security solution
+-  Translate compliance requirements into a security solution
 - Address compliance requirements with Microsoft Purview
 - Design a solution to address privacy requirements with Microsoft Priva
 - Design Azure Policy solutions to address security and compliance requirements

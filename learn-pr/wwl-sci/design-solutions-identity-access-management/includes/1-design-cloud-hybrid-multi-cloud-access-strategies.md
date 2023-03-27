@@ -24,6 +24,6 @@ Identity and access management is boundary security in the public cloud. It must
 
 These articles examine design considerations and recommendations related to identity and access management in a cloud environment:
 
--   [Azure Active Directory and Hybrid Identity](https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-area/identity-access-active-directory-hybrid-identity)
--   [Platform access](https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-area/identity-access-platform-access)
--   [Prerequisites for a landing zone](https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-area/identity-access-landing-zones)
+- [Azure Active Directory and Hybrid Identity](https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-area/identity-access-active-directory-hybrid-identity)
+- [Platform access](https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-area/identity-access-platform-access)
+- [Prerequisites for a landing zone](https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-area/identity-access-landing-zones)

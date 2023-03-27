@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-solutions-that-align-cloud-adoption-framework-well-architected-framework.knowledge-check
-title: Cloud Adoption Framework and Well Architected Framework knowledge check
+title: Knowledge check - Cloud Adoption Framework (CAF) and Well-Architected Framework (WAF)
 metadata:
-  title: Cloud Adoption Framework and Well Architected Framework knowledge check
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  title: Knowledge check - Cloud Adoption Framework (CAF) and Well-Architected Framework (WAF)
+  description: "Knowledge check for module on the topic: Design solutions that align with the Cloud Adoption Framework (CAF) and Well-Architected Framework (WAF)."
   ms.date: 04/05/2023
   author: hrasheed-msft
   ms.author: hrasheed
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
-durationInMinutes: 1
+durationInMinutes: 3
 ###########################################################################
 ###
 ### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
@@ -56,7 +56,6 @@ quiz:
         - content: "A methodology developed by Amazon Web Services (AWS) to review and critique cloud architectures."
           isCorrect: true
           explanation: "The Well-Architected Framework is a systematic approach that provides customers with a consistent and methodically validated assessment of their cloud architectures based on available best practices."
-
     - content: "What are Azure Landing Zones?"
       choices:
         - content: "A feature in Azure used to authenticate device access to cloud environments."
@@ -71,18 +70,3 @@ quiz:
         - content: "A feature on Azure that offers multiple payment methods to organizations of different financial abilities."
           isCorrect: false
           explanation: "Azure offers multiple payment methods, but Azure Landing Zones are not directly related to billing or payment methods."
-
-    - content: "What is DevSecOps?"
-      choices:
-        - content: "A practice that ensures system uptime by maintaining optimal replica volumes."
-          isCorrect: false
-          explanation: "DevSecOps isn't concerned with replica volumes of systems, which refers to replication strategies used in high availability deployment scenarios."
-        - content: "A security model used by developers to certify that code changes do not affect production environments."
-          isCorrect: false
-          explanation: "There's no certification process involved in DevSecOps. The idea behind DevSecOps is that security mechanisms are integrated throughout the development cycle to increase the overall security posture."
-        - content: "A set of principles designed to integrate security testing and evaluation into the software development lifecycle (SDLC)."
-          isCorrect: true
-          explanation: "DevSecOps is short for Development, Security, and Operations, which aims to integrate security activities into all stages of the SDLC to achieve application and infrastructure resilience."
-        - content: "A method to monitor customer satisfaction after every release of the product to ensure continuous improvement."
-          isCorrect: false
-          explanation: "While monitoring customer satisfaction is essential, it's not directly related to DevSecOps. Monitoring is also more of an Operations concern than something taken care of within the Development phase."
