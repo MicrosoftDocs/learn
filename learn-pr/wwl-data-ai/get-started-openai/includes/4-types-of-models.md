@@ -22,7 +22,7 @@ Embeddings are further broken down into three families of Embeddings models for 
 |Code search embedding|Used for code search and relevance. There are two input types supported by this family: **code**, for embedding code snippets to be retrieved, and **text**, for embedding natural language search queries.|[See current list](https://learn.microsoft.com/azure/cognitive-services/openai/concepts/models#code-search-embedding)|
 
 ## Choosing a model 
-The models within the family differ by speed, cost, and how well they complete tasks.   
+The models within the family differ by speed, cost, and how well they complete tasks.  
 
 In the Azure OpenAI Studio, you can navigate to the models by creating a new deployment. You will be able to choose from a list of base models.  
 

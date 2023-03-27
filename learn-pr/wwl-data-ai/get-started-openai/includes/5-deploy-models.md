@@ -24,6 +24,8 @@ az cognitiveservices account deployment create \
 
 ## Deploy using the REST API 
 
+An example of a request looks like: 
+
 ```http
 POST https://aoairesource.openai.azure.com/openai/deployments?api-version=2022-12-01
 
@@ -36,6 +38,8 @@ POST https://aoairesource.openai.azure.com/openai/deployments?api-version=2022-1
   "model": "curie"
 }
 ```
+
+An example of a response looks like: 
 
 ```json
 {
