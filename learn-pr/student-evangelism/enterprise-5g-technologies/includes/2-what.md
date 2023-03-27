@@ -29,7 +29,7 @@ Here, we first describe the components of 5G and Azure private multi-access edge
 
 ## Azure Management services
 
-**Azure Network Functions Manager:** Deploy network functions to the IoT Edge by using Azure tools and interfaces. Use Azure Network Function Manager to deploy network functions such as mobile packet core, SD-WAN edge, and VPN services to your Azure Stack Edge device directly from the Azure management portal. It also brings network functions from the partner ecosystem.
+**Azure Network Functions Manager:** Deploy network functions to the IoT Edge by using Azure tools and interfaces. Use Azure Network Function Manager to deploy network functions like mobile packet core, SD-WAN edge, and VPN services to your Azure Stack Edge device from the Azure portal. It also brings network functions from the partner ecosystem.
 
 **Arc-enabled Kubernetes:** Attach and configure Kubernetes clusters located either inside or outside Azure.
 
