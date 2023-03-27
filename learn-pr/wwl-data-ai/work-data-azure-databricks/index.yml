@@ -17,7 +17,7 @@ abstract: |
   - Visualize data
 prerequisites: |
   Before starting this module, you should have some experience of provisioning an Azure Databricks workspace and cluster.
-iconUrl: /learn/achievements/work-with-data-in-azure-databricks.svg
+iconUrl: /training/achievements/work-with-data-in-azure-databricks.svg
 hidden: true
 levels:
 - intermediate
