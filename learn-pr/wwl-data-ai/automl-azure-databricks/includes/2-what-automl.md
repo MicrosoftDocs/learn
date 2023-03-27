@@ -5,7 +5,7 @@ AutoML is a feature of Azure Databricks that enables you to automate training an
 
 AutoML works by generating multiple experiment runs, each one training a model using a different algorithm and hyperparameter combination. In each run, a model is trained and evaluated based on the data and predictive metric that you specify. Azure Databricks keep track of the runs and the models they produce by using MLflow, enabling you to identify the best performing model and deploy it to production.
 
-![Diagram showing the AutoML process.](../media/auto-ml.png)
+![Diagram showing the AutoML process.](../media/automl.png)
 
 1. You start an AutoML experiment, specifying a table in your Azure Databricks workspace as the data source for training and the specific performance metric for which you want to optimize.
 2. The AutoML experiment generates multiple MLflow runs, each producing a notebook with code to preprocess the data before training and validating a model. The trained models are saved as artifacts in the MLflow runs or files in the DBFS store.
