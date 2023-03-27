@@ -2,8 +2,8 @@
 uid: learn.wwl.configure-blob-storage
 metadata:
   title: Configure Azure Blob Storage
-  description: "Configure Azure Blob Storage"
-  ms.date: 01/24/2023
+  description: "<div|<span style=\"color:rgb(34, 34, 34);font-family:&quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, Verdana;font-size:12px;display:inline !important;\"|Learn how to configure Azure Blob Storage, including tiers and object replication.</span|  </div|"
+  ms.date: 03/27/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
