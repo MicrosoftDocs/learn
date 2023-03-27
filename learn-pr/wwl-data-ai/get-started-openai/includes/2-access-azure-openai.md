@@ -8,6 +8,8 @@ When you create a resource, you will need to provide your subscription, resource
 
 ## Create an Azure OpenAI Service resource in the Command Line 
 
+You can also use the command line to create a resource: 
+
 ```dotnetcli
 POST {endpoint}/openai/deployments?api-version=2022-12-01
 ```
