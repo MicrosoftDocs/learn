@@ -7,7 +7,7 @@ Azure OpenAI's generative AI models are grouped by family and capability. The fa
 |Family|Description|Base models within the Family|
 |:--------|:-------------------------------------|:---------------|
 |**GPT-4**|A set of models that improve on GPT-3.5 and can understand as well as generate natural language and code. These models are currently in preview. For access, existing Azure OpenAI customers can apply by [filling out this form](https://aka.ms/oai/get-gpt4).|gpt-4, gpt-4-32k|
-|**ChatGPT**|Language model that is optimized for conversational interfaces| gpt-35-turbo|
+|**ChatGPT**|Language model that is optimized for conversational interfaces.| gpt-35-turbo|
 |**GPT-3**|A series of models that can understand and generate natural language. This includes the new ChatGPT model (preview).|text-davinci-003, text-curie-001, text-babbage-001, text-ada-001|
 |**Codex**|A series of models that can understand and generate code, including translating natural language to code.|code-davinci-002, code-cushman-001|
 
@@ -30,4 +30,5 @@ In the Azure OpenAI Studio, you can navigate to the models by creating a new dep
 
 >[!NOTE]
 >Pricing is determiend by tokens and by model type. Learn more from the latest [pricing documentation](https://azure.microsoft.com/pricing/details/cognitive-services/openai-service/). 
+ 
    

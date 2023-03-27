@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure 
 durationInMinutes: 4
 content: |
-  [!include[](includes/6-use-azure-openai-playground.md)]
+  [!include[](includes/7-use-azure-openai-playground.md)]
