@@ -133,34 +133,14 @@ In practice, you might add build tasks one at a time, push up your changes, and 
 
     [!code-yml[](code/6-codespaces-azure-pipelines.yml)]
 
-    Under the `steps` section, you see the build tasks that map to each of the script commands that we identified earlier.
-
-    Azure Pipelines provides built-in build tasks that map to many common build activities. For example, the `DotNetCoreCLI@2` task maps to the `dotnet` command-line utility. The pipeline uses `DotNetCoreCLI@2` two times: one time to restore, or install, the project's dependencies, and one time to build the project.
-
-    Remember that not all build activities map to a built-in task. For example, there's no built-in task that runs the node-Sass utility, or writes build info to a text file. To run general system commands, you use the `CmdLine@2` or `script` task. The pipeline uses the `script` task because it's a common shortcut for `CmdLine@2`.
-
-    In the build step that writes information about the build to a file, notice these elements:
-
-    * `$(Build.DefinitionName)`
-    * `$(Build.BuildId)`
-    * `$(Build.BuildNumber)`
-
-    These elements are built-in variables that the system provides for use in your pipelines:
-
-    * `$(Build.DefinitionName)` is the name of the build pipeline. For example, "SpaceGame-Web-CI."
-    * `$(Build.BuildId)` is a numeric identifier for the completed build, like 115.
-    * `$(Build.BuildNumber)` is the name of the completed build. You can configure the format, but by default, the build number includes the current date followed by the build number for that day. An example build number is "20190329.1."
-
-    You can also define your own variables, which you'll do soon.
-
-    You might have also noticed the `UseDotNet@2` task, which is the first build step. Mara remembered that her build script didn't install the required build tools. Although the build agent comes with several .NET SDK versions, this task lets her easily specify the version she needs to use on the build agent.
-
     ::: zone-end
 
     ::: zone pivot="ms-hosted-agents"
 
     [!code-yml[](code/6-azure-pipelines.yml)]
 
+    ::: zone-end
+
     Under the `steps` section, you see the build tasks that map to each of the script commands that we identified earlier.
 
     Azure Pipelines provides built-in build tasks that map to many common build activities. For example, the `DotNetCoreCLI@2` task maps to the `dotnet` command-line utility. The pipeline uses `DotNetCoreCLI@2` two times: one time to restore, or install, the project's dependencies, and one time to build the project.
@@ -182,8 +162,6 @@ In practice, you might add build tasks one at a time, push up your changes, and 
     You can also define your own variables, which you'll do soon.
 
     You might have also noticed the `UseDotNet@2` task, which is the first build step. Mara remembered that her build script didn't install the required build tools. Although the build agent comes with several .NET SDK versions, this task lets her easily specify the version she needs to use on the build agent.
-
-    ::: zone-end
 
 1. From the integrated terminal, to add *azure-pipelines.yml* to the index, commit the change, and push the change up to GitHub, run the following Git commands. These steps are similar to the steps you performed earlier.
 
@@ -222,4 +200,3 @@ In practice, you might add build tasks one at a time, push up your changes, and 
 1. After your build is completed, select any of the steps to see the overall progression of the build. From there, you can jump to the build logs or the associated change on GitHub.
 
     :::image type="content" source="../media/6-build-summary.png" alt-text="Screenshot of Azure Pipelines showing the complete list of build tasks. The Run gulp tasks task is selected.":::
-
