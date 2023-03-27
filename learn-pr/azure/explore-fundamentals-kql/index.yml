@@ -12,13 +12,11 @@ title: Explore the fundamentals of data analysis using Kusto Query Language (KQL
 summary: "TODO 2 sentences, 20-35 words, don't teach or motivate, avoid using 'learn', don't duplicate the title; see https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main"
 abstract: |
   By the end of this module, you'll be able to:
-    - "TODO learning objective 1"
-    - "TODO learning objective 2"
-    - "TODO learning objective 3 (if needed; see https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=main)"
+    - Identify common elements of a query
+    - Describe key features of a Kusto Query Language (KQL) query
+    - Describe the different environments in which you can use KQL
 prerequisites: |
-  - "TODO prerequisite 1"
-  - "TODO prerequisite 2"
-  - "TODO prerequisite 3 (if needed; see https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=main"
+  -  Conceptual understanding of data structures such as tables, columns, and rows
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - beginner
@@ -40,7 +38,7 @@ units:
 - learn.azure.explore-fundamentals-kql.introduction
 - learn.azure.explore-fundamentals-kql.learning-content-1
 - learn.azure.explore-fundamentals-kql.exercise-1
-- learn.azure.explore-fundamentals-kql.learning-content-2
+- learn.azure.explore-fundamentals-kql.kql-query-structure
 - learn.azure.explore-fundamentals-kql.exercise-2
 - learn.azure.explore-fundamentals-kql.knowledge-check
 - learn.azure.explore-fundamentals-kql.summary
