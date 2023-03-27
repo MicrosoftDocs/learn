@@ -57,9 +57,9 @@ To delete the project:
 
     Your project is now deleted.
 
-## Delete your GitHub Codespace
+::: zone pivot="github-codespaces-agent"
 
-#### [GitHub Codespaces](#tab/codespaces)
+## Delete your GitHub Codespace
 
 1. In your forked GitHub repository, select **Code**.
 
@@ -69,8 +69,4 @@ To delete the project:
 
     :::image type="content" source="../media/9-delete-codespace.png" alt-text="Screenshot of deleting a Codespace. ":::
 
-#### [Microsoft-hosted agent](#tab/hosted-agent)
-
-No additional clean-up steps are required when using Microsoft-hosted agents.
-
----
+::: zone-end
