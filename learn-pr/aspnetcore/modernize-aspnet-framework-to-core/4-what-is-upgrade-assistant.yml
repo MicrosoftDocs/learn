@@ -15,11 +15,11 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: Which of the following is not a feature of the .NET Upgrade Assistant?
+    - content: Which of the following isn't a feature of the .NET Upgrade Assistant?
       choices:
       - content: Update my authentication and authorization logic to use ASP.NET Core Identity.
         isCorrect: true
-        explanation: This is not a feature provided by the .NET Upgrade Assistant.
+        explanation: This isn't a feature provided by the .NET Upgrade Assistant.
       - content: Update the project file to be an SDK-style project.
         isCorrect: false
         explanation: The .NET Upgrade Assistant will convert your project file to an SDK-style project as part of the upgrade process.
