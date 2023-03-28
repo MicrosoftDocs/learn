@@ -57,7 +57,7 @@ When your environment is threatened, security alerts right away indicate the nat
 ## Defender for Cloud planning and operations
 
 <!--
-https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-planning-and-operations-guide
+https://learn.microsoft.com/azure/defender-for-cloud/defender-for-cloud-planning-and-operations-guide
 -->
 
 The key areas to consider when planning to use Defender for Cloud are:
