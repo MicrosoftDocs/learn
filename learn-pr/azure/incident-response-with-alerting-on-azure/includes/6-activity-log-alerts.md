@@ -49,25 +49,3 @@ Service health alerts aren't like all the other alert types you've seen so far i
 :::image type="content" source="../media/6-service-health-alerts.png" alt-text="Screenshot that shows how to create a new service health alert.":::
 
 The only difference is that you no longer need to select a resource, because the alert is for a whole region in Azure. What you can select is the kind of health event on which you want to be alerted. You can select service issues, planned maintenance, health advisories, or choose all of the events. The remaining steps of performing actions and naming the alerts are the same.
-
-## Perform actions when an alert happens
-
-![Screenshot of the robot icon used to represent actions when you're creating an alert.](../media/6-actions.png)
-
-When any event is triggered, you can create an associated action in an action group. Action groups allow you to define actions that will be run. You can run one or more actions for each triggered alert.
-
-The available actions are:
-
-- Send an email
-- Send an SMS message
-- Create an Azure app push notification
-- Make a voice call to a number
-- Call an Azure function
-- Trigger a logic app
-- Send a notification to a webhook
-- Create an ITSM ticket
-- Use a runbook (to restart a VM, or scale a VM up or down)
-
-You can also reuse action groups on multiple alerts after you've created them. For example, after you've created an action to email your company's operations team, you can add that action group to all the service health events.
-
-You can add or create action groups at the same time that you create your alert. You can also edit an existing alert to add an action group after you've created it.

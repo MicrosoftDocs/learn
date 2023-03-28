@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.incident-response-with-alerting-on-azure.7-actions-and-alert-processing-rules
+metadata:
+  title: Use action groups to respond to alerts, and alert processing rules to override the behavior of an action group.
+  description: Learn about how to use action groups to respond to alerts,and how to use alert processing rules to change the behavior of an action group in an alert rule.
+  ms.date: 10/10/2019
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Use action groups to respond to alerts, and alert processing rules to override the behavior of an action group
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-actions-and-alert-processing-rules.md)]

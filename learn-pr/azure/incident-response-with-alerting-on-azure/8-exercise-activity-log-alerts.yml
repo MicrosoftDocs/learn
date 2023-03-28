@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.incident-response-with-alerting-on-azure.7-exercise-activity-log-alerts
+uid: learn.incident-response-with-alerting-on-azure.8-exercise-activity-log-alerts
 metadata:
   title: Exercise - Use activity log alerts to alert on events within your Azure infrastructure
   description: In this exercise, you'll create an activity log alert and set up an action group that will send you an email.
@@ -13,4 +13,4 @@ durationInMinutes: 10
 interactive: bash
 azureSandbox: true
 content: |
-  [!include[](includes/7-exercise-activity-log-alerts.md)]
+  [!include[](includes/8-exercise-activity-log-alerts.md)]
