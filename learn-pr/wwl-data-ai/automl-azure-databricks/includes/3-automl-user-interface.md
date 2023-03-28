@@ -8,7 +8,7 @@ You can use the graphical user interface in the Azure Databricks portal to creat
 To configure the AutoML experiment, you must specify the settings for your specific model training requirements, including:
 
 - The cluster on which to run the experiment.
-- The type of machine learning model to be trained (clustering, regression, or forecasting)
+- The type of machine learning model to be trained (clustering, regression, or forecasting).
 - The table containing the training data.
 - The target label field to be predicted by the model.
 - A unique name for the AutoML experiment (child runs for each training trial are uniquely named automatically).
