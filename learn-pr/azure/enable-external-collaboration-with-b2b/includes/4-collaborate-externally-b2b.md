@@ -32,9 +32,6 @@ To add guest users, you can invite them using a form that lets you enter the gue
 1. Search for and select the **Azure Active Directory** service.
 1. Select **Users** in the left menu.
 1. Select **New user**, and then select **Invite external user**.
-
-   ![Screenshot of invitation email.](../media/3-invite-external-user.png)
-
 1. Fill in the form, using the external clinician's email address in the **Email address** box. It's best to add a **Personal message** that helps the clinician recognize who's sending the invitation. This way they can make an informed decision about its authenticity and whether they should accept the invitation.
 
    ![Screenshot of the invitation form.](../media/3-invitation-page.png)
@@ -42,9 +39,6 @@ To add guest users, you can invite them using a form that lets you enter the gue
 1. Select **Invite**.
 
 1. After you send the invitation, the user is listed in your directory as a **User type** of **Guest**.
-
-   [ ![Screenshot of a guest user in the directory.](../media/3-directory-guest-user.png) ](../media/3-directory-guest-user.png#lightbox)
-
 1. Now you can assign your health records application to the clinician's guest account. In the upper left of the page, select **Home**.
 1. Search for and select the **Azure Active Directory** service.
 1. In the left menu, select **Enterprise applications**.
@@ -62,13 +56,9 @@ The B2B collaboration user receives an invitation in their email inbox.
 
    ![Screenshot of the invitation email.](../media/3-invitation-email.png)
 
-The user selects the **Accept invitation** link in the email invitation. The first time they use this link, they're asked to accept the privacy statement. In this way, Azure AD B2B helps to provide transparency for partner users. Your external users will always know what information they're sharing. The user must accept the permissions needed by Azure AD B2B before they can gain access.
+The user selects the **Accept invitation** link in the email invitation. The first time they use this link, they're asked to accept the privacy statement. In this way, Azure AD B2B helps to provide transparency for partner users. Your external users will always know what information they're sharing. The user must accept the permissions needed by Azure AD B2B before they can gain access. If you have terms of use set up, the user will also need to accept them.
 
    ![Screenshot of Review permissions page.](../media/3-review-permissions.png)
-
-If you have terms of use set up, the user will also need to accept them.
-
-   ![Screenshot of the terms of use page.](../media/3-terms-of-use.png)
 
 After the user provides their consent, they're brought to their Apps access panel.
 
