@@ -168,7 +168,7 @@ New-AzResourceGroupDeployment -TemplateFile main.bicep
 
 1. Select the copy button for the `appServiceAppHostName` output.
 
-1. On a new browser tab, try to go to the address that you copied in the previous step.
+1. On a new browser tab, try to go to the address that you copied in the previous step. The address should begin with `https://`.
 
    :::image type="content" source="../media/4-web-app.png" alt-text="Screenshot of the web app's welcome page, with the address bar showing the App Service host name." :::
 
@@ -180,7 +180,7 @@ New-AzResourceGroupDeployment -TemplateFile main.bicep
 
 1. On a new browser tab, try to go to the host name that you copied in the previous step. Add `https://` to the start of the address.
 
-   CDN endpoints take a few minutes to become active. If you get a "Page not found" error, wait a few minutes and try pasting the link again. Also, ensure that you added `https://` to the start of the URL so that you're using HTTPS.
+   CDN endpoints take a few minutes to become active. If you get a _Page not found_ error, wait a few minutes and try pasting the link again. Also, ensure that you added `https://` to the start of the URL so that you're using HTTPS.
 
    When the CDN endpoint is active, you'll get the same App Service welcome page. This time, it has been served through the Azure Content Delivery Network service, which helps improve the website's performance.
 
