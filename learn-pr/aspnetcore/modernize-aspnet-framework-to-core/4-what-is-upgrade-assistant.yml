@@ -22,7 +22,7 @@ quiz:
         explanation: This isn't a feature provided by the .NET Upgrade Assistant.
       - content: Update the project file to be an SDK-style project.
         isCorrect: false
-        explanation: The .NET Upgrade Assistant will convert your project file to an SDK-style project as part of the upgrade process.
-      - content: Scan the NuGet packages in my application to determine which features are not supported in ASP.NET Core.
+        explanation: The .NET Upgrade Assistant converts your project file to an SDK-style project as part of the upgrade process.
+      - content: Scan the NuGet packages in my application to determine which features aren't supported in ASP.NET Core.
         isCorrect: false
-        explanation: The .NET Upgrade Assistant can scan the NuGet packages in your application to determine which features are not supported in ASP.NET Core.
+        explanation: The .NET Upgrade Assistant can scan the NuGet packages in your application to determine which features aren't supported in ASP.NET Core.
