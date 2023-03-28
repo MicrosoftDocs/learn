@@ -4,13 +4,12 @@ title: Exercise - Train a machine learning model
 metadata:
   title: Exercise - Train a machine learning model
   description: "Exercise - Train a machine learning model"
-  ms.date: 09/18/2021
+  ms.date: 03/27/2023
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
