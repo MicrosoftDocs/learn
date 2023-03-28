@@ -4,7 +4,7 @@ title: Deploy and configure your environment
 metadata:
   title: Deploy and configure your environment
   description: "Configure your environment for master data management and data governance with Microsoft Purview and CluedIn. Deploy ADLS Gen2 and Azure Data Factory resources to create a full data stack."
-  ms.date: 03/01/2023
+  ms.date: 03/28/2023
   author: whhender
   ms.author: whhender
   ms.topic: interactive-tutorial

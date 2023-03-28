@@ -4,11 +4,11 @@ title: Clean data quality issues
 metadata:
   title: Clean data quality issues
   description: "Now that we've addressed the duplicate records in the system, we need to fix the data quality issues that we detected when we looked at the raw data."
-  ms.date: 03/01/2023
+  ms.date: 03/28/2023
   author: whhender
   ms.author: whhender
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
-durationInMinutes: 1
+durationInMinutes: 10
 content: |
   [!include[](includes/10-clean-data-quality-issues.md)]
