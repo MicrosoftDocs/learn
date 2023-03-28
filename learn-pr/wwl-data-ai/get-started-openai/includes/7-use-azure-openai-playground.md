@@ -1,12 +1,13 @@
-Playgrounds are useful interfaces in Azure OpenAI Studio that you can use to experiment with your deployed models without needing to develop your own client application. The best way to start exploring completions is through the playground. 
+Playgrounds are useful interfaces in Azure OpenAI Studio that you can use to experiment with your deployed models without needing to develop your own client application. Azure OpenAI Studio offers multiple playgrounds with different features.  
 
-Azure OpenAI Studio offers several playgrounds.  
-
-GPT-3 playground allows you to make calls to your deployed models.
+#### GPT-3 Playground
+GPT-3 playground allows you to make calls to your deployed models through a text-in, text-out interface and to adjust parameters. By selecting the deployed model  
 
 ![Screenshot of the Azure OpenAI Studio portal's gpt-3 playground.](../media/azure-openai-gpt3-playground.png)
 
-Chat playground (preview) has a different interace. 
+#### Chat Playground
+
+Chat playground (preview) is based on a text-in, message-out interface. 
 
 ![Screenshot of the Azure OpenAI Studio portal's Chat playground.](../media/azure-openai-chatgpt-playground.png)
 
