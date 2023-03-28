@@ -5,7 +5,7 @@ Routing preference in Azure gives you the ability to determine the path of your 
 
 ## Routing preference - Microsoft network
 
-By default, all traffic Azure service traffic is routed through the Microsoft global network. By routing your traffic through the Microsoft global network, you're utilizing one of the largest networks in the world, which spans over 160,000 miles of fiber and has over 165 edge Point of Presence (POP) locations. The network is equipped with multiple redundant fiber paths to guarantee exceptional reliability and availability. A software-defined WAN controller manages network traffic. The WAN controller ensures that your traffic takes the lowest latency path and provides premium network performance. Ingress and egress traffic stays on the Microsoft global network whenever possible.
+By default, all traffic Azure service traffic is routed through the Microsoft global network. By routing your traffic through the Microsoft global network, you're utilizing one of the largest networks in the world. The network is equipped with multiple redundant fiber paths to guarantee exceptional reliability and availability. A software-defined WAN controller manages network traffic. The WAN controller ensures that your traffic takes the lowest latency path and provides premium network performance. Ingress and egress traffic stays on the Microsoft global network whenever possible.
 
 :::image type="content" source="../media/route-via-microsoft-global-network.png" alt-text="Diagram of Microsoft network routing preference.":::
 
