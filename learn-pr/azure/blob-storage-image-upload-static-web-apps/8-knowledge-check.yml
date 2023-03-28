@@ -20,7 +20,7 @@ quiz:
     choices:
     - content: "When the SAS key becomes invalid."
       isCorrect: true
-      explanation: "Use the `expiresOn` to specify when the Shared Access Signature becomes invalid."
+      explanation: "Use the `expiresOn` property to specify when the Shared Access Signature becomes invalid."
     - content: "When the uploaded file will be deleted from the server."
       isCorrect: false
       explanation: "`expiresOn` is a property of shared access signatures. It doesn't affect files uploaded to Blob Storage."
@@ -28,26 +28,26 @@ quiz:
       isCorrect: false
       explanation: "Shared access signatures are unrelated to browser cookies."
 
-  - content: "For a web application living in domain example.org to access resources in domain contoso.com you need to enable:"
+  - content: "For a web application that lives in the example.org domain to access resources in the contoso.com domain, you need to enable:"
     choices:
     - content: "HTTPS"
       isCorrect: false
-      explanation: "HTTPS is used to encrypt and secure HTTP connections. To access resources across domains use CORS."
+      explanation: "HTTPS is used to encrypt and secure HTTP connections. To access resources across domains, use CORS."
     - content: "CORS"
       isCorrect: true
-      explanation: "CORS or Cross-Origin Resource Sharing is an HTTP feature that enables a web application running under one domain to access resources in another domain."
+      explanation: "CORS, or Cross-Origin Resource Sharing, is an HTTP feature that enables a web application running under one domain to access resources in another domain."
     - content: "Shared access signatures"
       isCorrect: false
-      explanation: "Shared access signatures are used to delegate access to Azure resources like Blob Storage. To access resources across domains use CORS."
+      explanation: "Shared access signatures are used to delegate access to Azure resources like Blob Storage. To access resources across domains, use CORS."
 
-  - content: "If you want your web app users to upload images to your Azure Blob Storage account you will:"
+  - content: "If you want your web app users to upload images to your Azure Blob Storage account, you will:"
     choices:
     - content: "Grant them access by sharing your Azure Blob Storage account key."
       isCorrect: false
       explanation: "You should never share your Azure Blog Storage account key with third parties."
-    - content: "There is no way to grant third parties access to your Azure Blob Storage account"
+    - content: "There is no way to grant third parties access to your Azure Blob Storage account."
       isCorrect: false
       explanation: "You can use shared access signatures to grant restricted access to your Blob Storage account to third parties."
-    - content: "Create a Shared Access Signature that grants restricted access to your Blob Storage account"
+    - content: "Create a shared access signature that grants restricted access to your Blob Storage account."
       isCorrect: true
       explanation: "Use shared access signatures to grant restricted access to your Blob Storage account to third parties."

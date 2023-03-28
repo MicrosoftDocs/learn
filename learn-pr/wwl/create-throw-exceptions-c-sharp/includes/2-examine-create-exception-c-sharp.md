@@ -1,6 +1,7 @@
 
 
 
+
 .NET provides a hierarchy of exception classes that derive from the `System.Exception` base class. C# applications can create and throw exceptions of any exception type. Developers can also customize exception objects with application specific information by assigning property values.
 
 > [!NOTE]
@@ -17,7 +18,7 @@ For example, suppose you're creating a method named `GraphData` that performs da
 Here are some common exception types that you might use when creating an exception:
 
 - `ArgumentException` or `ArgumentNullException`: Use these exception types when a method or constructor is called with an invalid argument value or null reference.
-- `InvalidOperationException`: Use this exception type when a method or operation is called in an invalid state.
+- `InvalidOperationException`: Use this exception type when the operating conditions of a method don't support the successful completion of a particular method call.
 - `NotSupportedException`: Use this exception type when an operation or feature is not supported.
 - `IOException`: Use this exception type when an input/output operation fails.
 - `FormatException`: Use this exception type when the format of a string or data is incorrect.
@@ -32,7 +33,7 @@ ArgumentException invalidArgumentException = new ArgumentException();
 
 The process for throwing an exception object involves creating an instance of an exception-derived class, optionally configuring properties of the exception, and then throwing the object by using the `throw` keyword.
 
-It's often helpful customize an exception with contextual information before it's thrown. You can provide application specific information within and exception object by configuring its properties. For example, the following code creates an exception object named `invalidArgumentException` with a custom `Message` property, and then throws the exception:
+It's often helpful to customize an exception with contextual information before it's thrown. You can provide application specific information within an exception object by configuring its properties. For example, the following code creates an exception object named `invalidArgumentException` with a custom `Message` property, and then throws the exception:
 
 ```csharp
 ArgumentException invalidArgumentException = new ArgumentException("ArgumentException: The 'GraphData' method received data outside the expected range.");
@@ -253,6 +254,6 @@ The following list identifies practices to avoid when throwing exceptions:
 
 Here are a few important things to remember from this unit:
 
-- The exception type must match the intended purpose of the exception as closely as possible.
+- When creating and throwing an exception, the exception type must match the intended purpose of the exception as closely as possible.
 - To `throw` an exception, you create an instance of an exception-derived class, configure its properties, and then use the `throw` keyword.
 - When creating an exception object, it's important to provide clear error messages and additional information to help users correct the issue.
