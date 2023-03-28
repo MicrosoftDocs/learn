@@ -7,7 +7,7 @@ GPT-3 playground allows you to make calls to your deployed models through a text
 
 #### Chat Playground
 
-Chat playground (preview) is based on a text-in, message-out interface. 
+Chat playground (preview) is based on a conversation-in, message-out interface. 
 
 ![Screenshot of the Azure OpenAI Studio portal's Chat playground.](../media/azure-openai-chatgpt-playground.png)
 
