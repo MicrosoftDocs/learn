@@ -4,7 +4,7 @@
 
 Once in the studio, your next steps include: 
 1. Choosing a base model and deploying it. 
-1. Testing the model. An easy way to do this is in the studio playground. 
+1. Testing the model. An easy way to do this is in one of the studio playgrounds. 
 1. Experimenting with prompts and parameters to see their effect on completions, or the generated output.
 1. Exploring ways to fine-tune and customize your model.
 

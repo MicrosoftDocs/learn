@@ -1,6 +1,10 @@
-Suppose you want to build an application that can provide dynamic responses to user . You have heard of ChatGPT, an application which takes in natural language input from a user and returns a machine-created human-like response. You learn that generative AI on the back end of ChatGPT powers its ability to produce new content, such as text, code, and images, based on a natural language prompts. Next, you would like to try combining existing Azure AI capabilities with Azure's generative AI capabilities.  
+Suppose you want to build a support application which will summarize text and suggest code. You would like to utilize the capabilities you see in ChatGPT, a chatbot built by the OpenAI research company, that takes in natural language input from a user and returns a machine-created human-like response. 
 
-Azure OpenAI Service models are a collection of generative AI models available for building applications through a REST API, various SDKs, and a Studio interface. This module will guide you through the Azure OpenAI Studio experience, giving you the hands-on background to further develop solutions with generative AI. 
+On the back end of ChatGPT, generative AI models power its ability to produce new content, such as text, code, and images, based on a natural language prompts. Generative AI models are a subset of [deep learning algorithms](https://learn.microsoft.com/dotnet/machine-learning/deep-learning-overview?portal=true).
+
+![Image of Microsoft's AI portfolio categorized by service offering.](../media/microsoft-ai-portfolio-graphic.png)
+
+Azure OpenAI Service brings the generative AI models to the Azure platform, enabling you to develop powerful AI solutions that benefit from the security, scalability, and integration of services provided by the Azure cloud platform. These models are available for building applications through a REST API, various SDKs, and a Studio interface. This module will guide you through the Azure OpenAI Studio experience, giving you the foundation to further develop solutions with generative AI. 
 
  
 
