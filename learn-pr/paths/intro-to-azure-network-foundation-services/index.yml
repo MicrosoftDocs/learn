@@ -32,6 +32,6 @@ modules:
 - learn.azure.intro-to-azure-nat-gateway
 - learn.azure.intro-to-azure-route-server
 - learn.azure.intro-to-azure-network-watcher
-- learn.azure.intro-to-azure-routing-preference
+- learn.intro-to-azure-routing-preference
 trophy:
   uid: learn.intro-to-azure-network-foundation-services.trophy
