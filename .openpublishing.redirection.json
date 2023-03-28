@@ -11,6 +11,21 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "learn-pr/azure/enable-external-collaboration-with-b2b/3-collaborate-externally-b2b.yml",                      
+      "redirect_url": "/training/modules/enable-external-collaboration-with-b2b/4-collaborate-externally-b2b",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enable-external-collaboration-with-b2b/4-enable-mfa-b2b.yml",                      
+      "redirect_url": "/training/modules/enable-external-collaboration-with-b2b/3-enable-mfa-b2b",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enable-external-collaboration-with-b2b/5-summary.yml",                      
+      "redirect_url": "/training/modules/enable-external-collaboration-with-b2b/6-summary",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/startups/build-team/2-ideal-startup-team.md",
       "redirect_url": "/training/modules/build-team/2-ideal-startup-team",
       "redirect_document_id": true
