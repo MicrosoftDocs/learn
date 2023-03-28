@@ -20,9 +20,9 @@ quiz:
       - content: Update my authentication and authorization logic to use ASP.NET Core Identity.
         isCorrect: true
         explanation: This is not a feature provided by the .NET Upgrade Assistant.
-      - content: Analyze my application to determine which features are not supported in ASP.NET Core.
+      - content: Update the project file to be an SDK-style project.
         isCorrect: false
-        explanation: The .NET Upgrade Assistant can analyze ASP.NET features and help you determine which are not supported in ASP.NET Core.
+        explanation: The .NET Upgrade Assistant will convert your project file to an SDK-style project as part of the upgrade process.
       - content: Scan the NuGet packages in my application to determine which features are not supported in ASP.NET Core.
         isCorrect: false
         explanation: The .NET Upgrade Assistant can scan the NuGet packages in your application to determine which features are not supported in ASP.NET Core.
