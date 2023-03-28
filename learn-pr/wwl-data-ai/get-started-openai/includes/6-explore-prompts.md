@@ -13,6 +13,8 @@ Prompts can be grouped into types of requests based on task:
 
 ## Engineering prompts 
 
+Prompt engineering is the concept of 
+
 ## Completions  
 
 The completions endpoint 
