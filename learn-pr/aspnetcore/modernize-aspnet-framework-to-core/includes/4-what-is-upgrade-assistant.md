@@ -35,15 +35,6 @@ The tool also supports upgrades:
 
 When upgrading a solution the tool will:
 
-- Determine which parts can be upgraded and allow you to select them.
-- Update the project file to be an SDK-style project.
-- Remove transitive NuGet package dependencies that may have been present in packages.config.
-- Re-target project to [Standard Term Support (STS), Long Term Support (LTS), or Preview](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
-- Update NuGet package dependencies to versions that are compatible with STS, LTS, or Preview.
-- Make simple updates in C# source code to replace patterns that worked in .NET Framework with STS, LTS, or Preview equivalents.
-- For some app models (like ASP.NET apps), add common template files (like _Startup.cs_) and make simple updates based on recognized web.config or app.config values.
-- For projects targeting Windows, add a reference to the `Microsoft.Windows.Compatibility` package.
-
 - Determine which projects need upgraded and recommend the order in which projects should be upgraded.
 - Update the project file to be an SDK-style project.
 - Remove transitive NuGet package dependencies that may have been present in packages.config.
