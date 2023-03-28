@@ -32,7 +32,7 @@ So far in the exercise, we have found that most our records were able to actuall
 
     :::image type="content" source="../media/Simple_Matching_Rule.png" alt-text="Screenshot showing the Equals comparator showing in the matching function.":::
 
-1. Select **Generate Results**.
+1. Complete the project creator and then select **Generate Results** on the page.
 
     Within about 10 to 15 seconds, you'll notice that it should bring back 10 results in your list. These are essentially 10 "clusters" of results where the comparator has found matches.
 
@@ -40,7 +40,7 @@ So far in the exercise, we have found that most our records were able to actuall
 
 1. Select **Approve**.
 
-1. Repeat the same process for the other clusters. 
+1. Repeat the same process for the other clusters.
 
 1. When you're finished merging all the clusters, select all items in the list and select the **Merge All** button.
 

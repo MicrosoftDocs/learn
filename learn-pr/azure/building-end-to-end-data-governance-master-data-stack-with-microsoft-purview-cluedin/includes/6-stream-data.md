@@ -14,11 +14,15 @@ So let's set up our stream of data back into an ADLS Gen2 folder called **master
 
     1. Under key1, find the **Key value**. Select the **Copy** button to copy the account key.
 
-1. In CluedIn, navigate to your Export Targets, select **Add Export Target** and choose the Azure Data Lake Connector.
+
+>[!WARNING]
+>We need instructions here for adding the Azure DataLake connector. I'm adding an absolute link so this page [will flag a suggestion](https://learn.microsoft.com/en-us/purview/purview).
+
+1. In CluedIn, navigate to your Export Targets, under the **Consume** menu, and select **Add Export Target** and choose the Azure Data Lake Connector.
 
     :::image type="content" source="../media/Export_Target_Data_Lake.png" alt-text="Screenshot of the CluedIn Consume window, showing the Azure Data Lake Connector selected.":::
 
-1. Enter the account details, including the storage account key you copied earlier.
+1. Enter the account details, including the storage account key you copied earlier. The **FileSystemName** will be your container name. **DirectoryName** will be the new mastered directory.
 
     :::image type="content" source="../media/Export_Target_Details.png" alt-text="Screenshot of the CluedIn Consume window, showing the Azure Data Lake details added.":::
 
@@ -38,13 +42,14 @@ So let's set up our stream of data back into an ADLS Gen2 folder called **master
 
     :::image type="content" source="../media/Stream_Filter.png" alt-text="Screenshot of the CluedIn stream configuration window, showing the value selector.":::
 
-1. In the **Export Target** tab, choose the Azure Data Lake Connector that you just added. Add **mastered** as the name of the container. This points the data stream to the folder you created in the first step.
+1. In the **Export Target** tab, choose the Azure Data Lake Connector that you just added. Select **Next**.
+1. Add **mastered** as the Target Name. This points the data stream to the folder you created in the first step.
 
     :::image type="content" source="../media/Choose_Target.png" alt-text="Screenshot of the CluedIn stream Export Target Configuration window, showing the ADLS Gen 2 account selected.":::
 
 1. For the mode of the stream, choose **Synchronization**.
 
-1. In the projection, it asks you what Entity Properties and Vocabulary Keys you would like to share. Add **employee.Job** to the list (and any others that you would like).
+1. On the properties to export page, in the properties to export section, it asks you what Entity Properties and Vocabulary Keys you would like to share. Add some vocabulary items to the list, like **employee.job** (and any others that you would like).
 
 1. Select **Save**.
 

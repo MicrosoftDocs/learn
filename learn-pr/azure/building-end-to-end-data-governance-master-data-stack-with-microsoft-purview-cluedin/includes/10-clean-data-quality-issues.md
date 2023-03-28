@@ -2,15 +2,15 @@ Now that we've addressed the duplicate records in the system, we need to fix the
 
 For this, we'll be using the CluedIn data steward tool: CluedIn Clean.
 
-1. In CluedIn, in the left hand menu, select **Preparation** -> **New Clean**.
+1. In CluedIn, in the left hand menu, select **Preparation** -> **Clean**.
 
     :::image type="content" source="../media/New_Clean.png" alt-text="Screenshot of the CluedIn preparation window.":::
 
 1. Select **Create Project** and choose what records and columns you want to clean.
 
-1. For the filter, choose **Entity Type equals Employee** and for the properties, choose **employee.Job**.
+1. For the filter, choose **Entity Type equals Employee**.
 
-1. In the new cleaning project, select **Generate Project**. 
+1. In the new cleaning project, select **Generate Project**.
 
 1. Once this is finished you'll received a link to "Clean" the data. Selecting the **Clean** button will launch a studio in a new tab with your 10 Employee records. You'll see a column name for the Origin Entity Code and the person.Job column.
 
@@ -25,7 +25,7 @@ For this, we'll be using the CluedIn data steward tool: CluedIn Clean.
 
 1. Select the **Cluster** button. CluedIn will show a prompt that will suggest where the data quality issues lie, and the proposed solution on what to normalize the values to. 
 
-1. From the dropdown, choose the **Keying function** option and the subsequent dropdown. Choose the **metaphone3** option.
+1. From the dropdown, choose the **Keying function** option. Choose the **metaphone3** option in the subsequent dropdown.
 
     You'll notice that CluedIn is recommending that all of the different spelling of Accounting on the left and proposing that they're all normalized into **Accounting** on the right. Accept this suggestion and the one for Software Dev.
 
@@ -33,7 +33,7 @@ For this, we'll be using the CluedIn data steward tool: CluedIn Clean.
 
 1. Cycle through all the other Keying functions and their suggestions until all the values are normalized and there are now only two permutations of the Job titles that we had in the original raw data.
 
-1. Close this tab, and on the previous tab you used to get to this application, select **Process**.
+1. Close this tab, and on the previous tab you used to get to this application, select **Commit**.
 
 1. When prompted, make sure that the checkbox for **Auto-creating Rules** is ticked.
 
