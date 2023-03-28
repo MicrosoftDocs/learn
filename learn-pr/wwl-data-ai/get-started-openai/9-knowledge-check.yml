@@ -24,17 +24,17 @@ quiz:
     - content: "An Azure OpenAI resource and a deployed model."
       isCorrect: true
       explanation: ""
-  - content: "When you make a call to the completions endpoint, what do you need to include?"
+  - content: "What parameters would you adjust for ...."
     choices:
-    - content: "Your Azure OpenAI resource name, your deployed model's unique name, your Azure OpenAI resource key, and your prompt text"
+    - content: ""
       isCorrect: true
-      explanation: "Your Azure OpenAI resource name, the base-model name, and training text"
+      explanation: ""
     - content: ""
       isCorrect: false
-      explanation: "The model deployment name is the unique name you give a deployed model, the base model name is the standard name of an Azure out-of-the-box generative AI model."
-    - content: "The prompt task type, the prompt text, and the base-model name"
+      explanation: ""
+    - content: ""
       isCorrect: false
-      explanation: "The model deployment name is the unique name you give a deployed model, the base model name is the standard name of an Azure out-of-the-box generative AI model."
+      explanation: ""
   - content: "Which Azure OpenAI Studio playground is able to support conversation-in, message-out scenarios?"
     choices:
     - content: "GPT-3"

@@ -1,9 +1,9 @@
-Currently Azure OpenAI Service is in limited access. This means users need to apply for service access at [https://aka.ms/oai/access]( https://aka.ms/oai/access?portal=true). 
+The first step in building a generative AI solution with  Azure OpenAI is to provision an Azure OpenAI resource in your Azure subscription. Currently Azure OpenAI Service is in limited access. This means users need to apply for service access at [https://aka.ms/oai/access]( https://aka.ms/oai/access?azure-portal=true). 
 
 >[!NOTE]
->Azure OpenAI Service has been released with limited access to support the ethical use of the service. You can read Microsoft's Transparency note for Azure OpenAI Service [here](https://learn.microsoft.com/legal/cognitive-services/openai/transparency-note?portal=true).
+>Azure OpenAI Service has been released with limited access to support the ethical use of the service. You can read Microsoft's Transparency note for Azure OpenAI Service [here](https://learn.microsoft.com/legal/cognitive-services/openai/transparency-note?azure-portal=true).
 
-Once you have access to Azure OpenAI Service, you can begin to use it by creating a resource in the [Azure portal](https://portal.azure.com/?portal=true) or through the Azure command line interface (CLI). 
+Once you have access to Azure OpenAI Service, you can begin to use it by creating a resource in the [Azure portal](https://portal.azure.com/?azure-portal=true) or through the Azure command line interface (CLI). 
 
 ## Create an Azure OpenAI Service resource in the Azure portal 
 When you create a resource, you will need to provide a subscription name, resource group name, region, unique instance name, and select a pricing tier.
@@ -28,11 +28,11 @@ az cognitiveservices account create \
 ```
 
 >[!NOTE]
->You can find the regions available for a service through the CLI command `az account list-locations`. To see how to sign into Azure and create an Azure group via the CLI, you can refer to the [documentation here](https://learn.microsoft.com/azure/cognitive-services/openai/how-to/create-resource?pivots=cli#sign-in-to-the-cli). 
+>You can find the regions available for a service through the CLI command `az account list-locations`. To see how to sign into Azure and create an Azure group via the CLI, you can refer to the [documentation here](https://learn.microsoft.com/azure/cognitive-services/openai/how-to/create-resource?pivots=cli#sign-in-to-the-cli?azure-portal=true). 
   
 
 ### Regional availability 
-Azure OpenAI Service provides access to many types of models. Certain models are only available in select regions. Consult the [Azure OpenAI model availability guide](https://learn.microsoft.com/azure/cognitive-services/openai/concepts/models#model-summary-table-and-region-availability/?portal=true) for region availability. You can create two Azure OpenAI resources per region. 
+Azure OpenAI Service provides access to many types of models. Certain models are only available in select regions. Consult the [Azure OpenAI model availability guide](https://learn.microsoft.com/azure/cognitive-services/openai/concepts/models#model-summary-table-and-region-availability/?azure-portal=true) for region availability. You can create two Azure OpenAI resources per region. 
 
 
  
