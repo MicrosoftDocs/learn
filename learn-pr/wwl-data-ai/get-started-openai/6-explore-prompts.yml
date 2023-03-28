@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.get-started-openai.explore-prompts
-title: Explore prompts and parameters
+title: Use prompts to get completions from models
 metadata:
-  title: Explore prompts and parameters
+  title: Use prompts to get completions from models
   description: "This unit explains how generative AI model performance is related to prompt engineering. It also shows users how to adjust model parameters."
   ms.date: 3/1/2023
   author: sherzyang
