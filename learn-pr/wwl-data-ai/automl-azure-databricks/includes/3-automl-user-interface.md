@@ -16,7 +16,7 @@ To configure the AutoML experiment, you must specify the settings for your speci
 - The machine learning training frameworks you want to try.
 - The maximum time for the experiment.
 - The positive label value (for binary classification only).
-- The time column (for forecasting models only)
+- The time column (for forecasting models only).
 - Where to save the trained models (as MLflow artifacts or in the DBFS store).
 
 ## Review AutoML results
