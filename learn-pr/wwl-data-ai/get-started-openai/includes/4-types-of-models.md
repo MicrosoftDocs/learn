@@ -15,7 +15,7 @@ Azure OpenAI's generative AI models are grouped by family and capability. The fa
 >The underlying generative AI capabilities in OpenAI's ChatGPT are in the **gpt-35-turbo** model, which belongs to the GPT-3 family. This model is in preview. You can learn more in the [documentation](https://learn.microsoft.com/azure/cognitive-services/openai/how-to/chatgpt?pivots=programming-language-chat-completions?portal=true). 
 
 ## Choosing a model 
-The models within the family differ by speed, cost, and how well they complete tasks. You can learn more about the differences and latest models offered in the [documentation](https://learn.microsoft.com/azure/cognitive-services/openai/concepts/models?portal=true).
+The models within the family differ by speed, cost, and how well they complete tasks. In general, models with the name `davinci` are stronger than models with the name `curie`, `babbage`, and `ada`, but may be slower. You can learn more about the differences and latest models offered in the [documentation](https://learn.microsoft.com/azure/cognitive-services/openai/concepts/models?portal=true).
 
 >[!NOTE]
 >Pricing is determiend by tokens and by model type. Learn more about the latest [pricing here](https://azure.microsoft.com/pricing/details/cognitive-services/openai-service/). 

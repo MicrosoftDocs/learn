@@ -24,13 +24,17 @@ Several factors affect the quality of completions you will from a generative AI 
 
 You will have more control over the completions returned by training a custom model than through prompt engineering and parameter adjustment. 
 
-## Prompts and completions from the REST API 
+## Making calls 
+
+You can start making calls to your deployed model via REST, Python, C#, or the Studio. If your deployed model has a ChatGPT or GPT-4 model base, please use the [Chat completions documentation](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/reference#chat-completions?portal=true), which has different request endpoints and configurations.   
+
+#### Prompts and completions from REST 
 
 To send a prompt to your model's completion endpoint, you will want to replace the following variables from the example below with your own configurations: 
 
 - YOUR_RESOURCE_NAME: *replace with your Azure OpenAI Service resource name*
-- YOUR_DEPLOYMENT_NAME: *replace with the name of your deployed model* 
-- YOUR_API_KEY: *replace with the API key from your Azure OpenAI Service resource* 
+- YOUR_DEPLOYMENT_NAME: *replace with the unique name of your deployed model* 
+- YOUR_API_KEY: *replace with the [API key from your Azure OpenAI Service resource](https://learn.microsoft.com/azure/cognitive-services/openai/quickstart?tabs=command-line&pivots=rest-api#retrieve-key-and-endpoint?porta=true)* 
 - Once upon a time: *replace with your own prompt text*
 
 ```bash
@@ -43,7 +47,3 @@ curl https://YOUR_RESOURCE_NAME.openai.azure.com/openai/deployments/YOUR_DEPLOYM
 }"
 ```
 
->[!NOTE]
-> For ChatGPT (preview) and GPT-4 (preview) model completion, please use the [Chat completions documentation](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/reference#chat-completions?portal=true), which has different request endpoints and configurations.  
-
- 
