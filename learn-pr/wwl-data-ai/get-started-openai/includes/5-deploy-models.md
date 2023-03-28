@@ -31,6 +31,6 @@ az cognitiveservices account deployment create \
 
 ## Deploy using the REST API 
 
-You can deploy a model using the REST API. In the request body, you will identify the base model you wish to deploy. See an example in the [documentation](https://learn.microsoft.com/en-us/rest/api/cognitiveservices/azureopenaistable/deployments/create?tabs=HTTP?portal=true). 
+You can deploy a model using the REST API. In the request body, you will identify the base model you wish to deploy. See an example in the [documentation](https://learn.microsoft.com/rest/api/cognitiveservices/azureopenaistable/deployments/create?portal=true). 
  
-Once the model is deployed, you can test it in a playground setting. 
+
