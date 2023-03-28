@@ -8,7 +8,7 @@ The right provisioning tools depend on your problem, the size of your infrastruc
 - Configuration language
 - Limitations and drawbacks
 
-Let's consider each of the tools' advantages or disadvantages by using these metrics. We'll also examine a business scenario and see how each tool can help us handle a specific scenario.
+Let's consider the advantages or disadvantages for each of these tools, by using these metrics. We'll also examine a business scenario and see how each tool can help us handle a specific scenario.
 
 ## Custom script
 
@@ -46,7 +46,7 @@ You decide to use DSC. DSC configurations are easy to read. You can declare a si
 
 ### Solution summary
 
-DSC is easy to read, update, and store. DSC configurations help you declare the state your machines should be in at the point they are provisioned, rather than having instructions that detail how to put the machines in a certain state. Without Azure Automation State Configuration, you have to manage your own DSC configurations and orchestration. DSC can achieve more when it's coupled with Azure Automation State Configuration.
+DSC is easy to read, update, and store. DSC configurations help you declare the state your machines should be in at the point they're provisioned, rather than having instructions that detail how to put the machines in a certain state. Without Azure Automation State Configuration, you have to manage your own DSC configurations and orchestration. DSC can achieve more when it's coupled with Azure Automation State Configuration.
 
 ## Azure Automation State Configuration
 
@@ -78,7 +78,7 @@ The Azure Automation State Configuration service is good for automating your DSC
 
 Each developer should be able to automatically provision an entire group of virtual machines that are identical to what everyone else on the team creates. The developers want to be sure they're all working in the same environment. The developers are familiar with JSON, but they don't necessarily know how to administer infrastructure. They need to be able to provision all of the resources they need to run these virtual machines in an easy and rapid manner.
 
-You decide to introduce Azure Resource Manager templates to the developers. This way, you can collaborate with the developers to decide which resources they'll need on Azure. You can also agree on a template that satisfies their requirements. Because the template is JSON-based and easily deployable, the developers will be able to rapidly learn how to provision Azure resources and deploy them when the time comes.
+You decide to introduce Azure Resource Manager templates to the developers. This way, you can collaborate with the developers to decide which resources they need on Azure. You can also agree on a template that satisfies their requirements. Because the template is JSON-based and easily deployable, the developers can rapidly learn how to provision and deploy Azure resources.
 
 ### Solution summary
 
