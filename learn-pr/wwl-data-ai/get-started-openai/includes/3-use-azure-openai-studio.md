@@ -4,7 +4,7 @@ You can access the Azure OpenAI Studio at [https://oai.azure.com](https://oai.az
 
 ![Screenshot of the Azure OpenAI Studio portal which can be used to access several features.](../media/studio-portal.png)
 
-Once you are in the Studio, you will see a call-to-action button at the top of the screen. If you do not have any deployments yet, the button reads **Create new deployment**. Selecting the button will bring you to the **deployments** page, which is 
+Once you are in the Studio, you will see a call-to-action button at the top of the screen. If you do not have any deployments yet, the button reads **Create new deployment**. Selecting the button will bring you to the **deployments** page, which is one of several navigation options that will appear on the left-hand side of the screen. 
 
 ![Screenshot of the Azure OpenAI Studio portal menu of pages.](../media/openai-portal-navigation.png)
 
