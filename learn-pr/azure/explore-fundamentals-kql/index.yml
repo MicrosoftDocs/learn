@@ -36,7 +36,7 @@ subjects:
   - big-data
 units:
 - learn.azure.explore-fundamentals-kql.introduction
-- learn.azure.explore-fundamentals-kql.learning-content-1
+- learn.azure.explore-fundamentals-kql.query-basics
 - learn.azure.explore-fundamentals-kql.exercise-1
 - learn.azure.explore-fundamentals-kql.kql-query-structure
 - learn.azure.explore-fundamentals-kql.exercise-2
