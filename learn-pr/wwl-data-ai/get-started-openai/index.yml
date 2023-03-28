@@ -40,6 +40,7 @@ units:
 - learn.wwl.get-started-openai.deploy-models
 - learn.wwl.get-started-openai.explore-prompts
 - learn.wwl.get-started-openai.use-azure-openai-playground
+- learn.wwl.get-started-openai.exercise
 - learn.wwl.get-started-openai.knowledge-check
 - learn.wwl.get-started-openai.summary
 badge:

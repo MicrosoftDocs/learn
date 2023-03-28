@@ -18,7 +18,7 @@ Azure OpenAI's generative AI models are grouped by family and capability. The fa
 The models within the family differ by speed, cost, and how well they complete tasks. You can learn more about the differences and latest models offered in the [documentation](https://learn.microsoft.com/azure/cognitive-services/openai/concepts/models?portal=true).
 
 >[!NOTE]
->Pricing is determiend by tokens and by model type. Learn more from the latest [pricing documentation](https://azure.microsoft.com/pricing/details/cognitive-services/openai-service/). 
+>Pricing is determiend by tokens and by model type. Learn more about the latest [pricing here](https://azure.microsoft.com/pricing/details/cognitive-services/openai-service/). 
 
 ## Azure OpenAI Studio navigation
 

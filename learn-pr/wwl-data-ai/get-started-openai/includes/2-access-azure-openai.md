@@ -1,4 +1,7 @@
-Currently Azure OpenAI Service is in limited access and users need to apply for service access at [https://aka.ms/oai/access]( https://aka.ms/oai/access?portal=true). Azure OpenAI Service has been released with the intention of protecting the rights of individuals and society and fostering transparent human-computer interaction. The role of limited access is to support the ethical use of the service.
+Currently Azure OpenAI Service is in limited access. This means that users need to apply for service access at [https://aka.ms/oai/access]( https://aka.ms/oai/access?portal=true). 
+
+>[!NOTE]
+>Azure OpenAI Service has been released with limited access to support the ethical use of the service. You can read Microsoft's Transparency note for Azure OpenAI Service [here](https://learn.microsoft.com/legal/cognitive-services/openai/transparency-note?portal=true).
 
 Once you have access to Azure OpenAI Service, you can begin to use it by creating a resource in the [Azure portal](https://portal.azure.com/?portal=true) or via a script that accesses your Azure subscription from the command line. 
 
