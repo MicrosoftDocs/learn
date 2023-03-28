@@ -266,6 +266,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/incident-response-with-alerting-on-azure/7-exercise-activity-log-alerts.yml",
+      "redirect_url": "/training/modules/incident-response-with-alerting-on-azure",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-sqlserver/run-sql-server-2017-linux-containers/3-create-custom-images.md",
       "redirect_url": "/training/modules/run-sql-server-2017-linux-containers/3-exercise-run-sql-server-2017-linux-containers",
       "redirect_document_id": false
