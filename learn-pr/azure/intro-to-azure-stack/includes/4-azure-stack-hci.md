@@ -1,4 +1,4 @@
-There are still many customers that aren't ready to transition to the hybrid operational model. They prefer to rely on traditional tools and methods to deploy and manage Windows or Linux servers running in on-premises datacenters. There are also some workloads that are better suited for the traditional on-premises operational model. The planned deployment of an isolated VDI farm for users in Contoso’s investment banking department is an example of such a workload. Azure Stack HCI can help with implementing these types of scenarios in the optimal manner. In this unit, you learn what Azure Stack HCI is and in which cases it delivers the most significant benefits.
+There are still many customers that aren't ready to transition to the hybrid operational model. They prefer to rely on traditional tools and methods to deploy and manage Windows or Linux servers running in on-premises datacenters. There are also some workloads that are better suited for the traditional on-premises operational model. The planned deployment of an isolated VDI farm for users in Contoso’s investment banking department is an example of such a workload. Azure Stack HCI can help with implementing these types of scenarios in an optimal manner. In this unit, you learn what Azure Stack HCI is and in which cases it delivers the most significant benefits.
 
 ## What is Azure Stack HCI?
 
@@ -16,8 +16,8 @@ Azure Stack HCI allows you to deploy Windows and Linux-based virtualized and con
 The clustered servers share common configuration and resources by using the Windows Server Failover Clustering feature. Its shared resources include:
 
 - Hyper-V&ndash;based compute resources.
-- Storage Spaces Direct-based virtualized storage.
-- optional Software-Defined Networking (SDN)-based virtualized networking using the Network Controller Windows Server role.
+- Storage Spaces Direct&ndash;based virtualized storage.
+- Optional Software-Defined Networking (SDN)&ndash;based virtualized networking using the Network Controller Windows Server role.
 
 :::image type="content" source="../media/4-azure_stack_hci.png" alt-text="Diagram showing the Azure Stack HCI solution. The solution consists of validated partner hardware hosting Windows Server 2019 Datacenter edition with Hyper-V, Storage Spaces Direct, and SDN. The solution is managed via the Windows Admin Center UI. To simplify its management and maintenance, you can connect remotely to, and use Azure services." border="false":::
 
