@@ -5,11 +5,11 @@ metadata:
   unitType: learning-content
   title: Add parameters and outputs to modules
   description: Learn how to plan the parameters and outputs of your Bicep modules.
-  ms.date: 10/10/2021
+  ms.date: 03/27/2023
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 5
+durationInMinutes: 7
 content: |
   [!include[](includes/3-add-parameters-outputs-modules.md)]
