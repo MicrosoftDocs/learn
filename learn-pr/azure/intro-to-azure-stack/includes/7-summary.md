@@ -10,5 +10,5 @@ You can learn more by reviewing the following documents:
 - [Azure Stack Hub overview](/azure-stack/operator/azure-stack-overview?azure-portal=true)
 - [What is Azure Stack Edge Pro with FPGA?](/azure/databox-online/azure-stack-edge-overview?azure-portal=true)
 - [What is Azure Stack Edge Pro with GPU?](/azure/databox-online/azure-stack-edge-gpu-overview?azure-portal=true)
-- [Differences between global Azure, Azure Stack Hub, and Azure Stack HCI](/azure-stack/operator/compare-azure-azure-stack?view=azs-2005%3fazure-portal%3dtrue)
+- [Differences between global Azure, Azure Stack Hub, and Azure Stack HCI](/azure-stack/operator/compare-azure-azure-stack?azure-portal=true)
 - [Azure Stack HCI solution overview](/azure-stack/hci/overview?azure-portal=true)
