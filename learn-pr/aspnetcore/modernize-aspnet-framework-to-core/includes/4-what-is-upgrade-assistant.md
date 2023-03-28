@@ -2,7 +2,7 @@ In this unit, you'll learn how the .NET Upgrade Assistant can help you analyze y
 
 The [.NET Upgrade Assistant](/dotnet/core/porting/upgrade-assistant-overview) is a tool that helps you upgrade different kinds of application from older versions of .NET Framework, .NET Core and .NET 5 (and above) to the latest .NET version. It is available in two "flavors": Visual Studio extension and a CLI tool. After running Upgrade Assistant, **in some cases the app will require additional effort to complete the upgrade**. The tool receives constant updates with more and more  analyzers that automate fixes for breaking changes and simplify the upgrade process, so make sure you have the latest version of the tool.
 
-Visual Studio extension is convenient in use and has better graphical representation of the upgrade progress, so in this unit we will show how to use the extension. Meanwhile if you prefer to use CLI, the [documentation and installer are available on GitHub](https://github.com/dotnet/upgrade-assistant/blob/main/README.md).
+The Visual Studio extension is convenient and provides graphical feedback throughout the upgrade, so in this unit we will show how to use the extension. Meanwhile, if you prefer to use CLI, the [documentation and installer are available on GitHub](https://github.com/dotnet/upgrade-assistant/blob/main/README.md).
 
 To follow along you'll need to download and install VS extension:
 > [!div class="nextstepaction"]
