@@ -21,22 +21,22 @@ quiz:
     choices:
     - content: "Hyper-V VMs running Linux"
       isCorrect: true
-      explanation: "That's correct. Azure Stack HCI allows you to deploy Windows and Linux-based virtualized and containerized workloads."
+      explanation: "Correct. Azure Stack HCI allows you to deploy Windows and Linux-based virtualized and containerized workloads."
     - content: "Azure Key Vault"
       isCorrect: false
-      explanation: "That's incorrect. Azure Stack HCI does not support Azure PaaS services."
-    - content: "Azure virtual machine scale set"
+      explanation: "Incorrect. Azure Stack HCI doesn't support Azure PaaS services."
+    - content: "Azure Virtual Machine Scale Set"
       isCorrect: false
-      explanation: "That's incorrect. Azure Stack HCI does not support Azure IaaS services."
+      explanation: "Incorrect. Azure Stack HCI doesn't support Azure IaaS services."
 
   - content: "Which of the following technologies is mandatory in Azure Stack HCI?"
     choices:
     - content: "Network Controller"
       isCorrect: false
-      explanation: "That's incorrect. Software-Defined Networking (SDN)-based virtualized networking using the Network Controller Windows Server role is optional in Azure Stack HCI."
+      explanation: "Incorrect. Software-Defined Networking (SDN)-based virtualized networking using the Network Controller Windows Server role is optional in Azure Stack HCI."
     - content: "Azure IoT Hub"
       isCorrect: false
-      explanation: "That's incorrect. Azure Stack HCI does not depend in any way on Azure IoT Hub."
+      explanation: "Incorrect. Azure Stack HCI doesn't depend in any way on Azure IoT Hub."
     - content: "Storage Spaces Direct"
       isCorrect: true
-      explanation: "That's correct. Storage Spaces Direct provides virtualized storage in Azure Stack HCI."
+      explanation: "Correct. Storage Spaces Direct provides virtualized storage in Azure Stack HCI."
