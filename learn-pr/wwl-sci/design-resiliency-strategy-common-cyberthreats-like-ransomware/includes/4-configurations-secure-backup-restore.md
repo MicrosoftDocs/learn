@@ -15,11 +15,11 @@ You can back up machines and data by using a number of methods:
   - You can back up specific files and folders on the Azure VM by running the MARS agent.
   - You can back up Azure VMs to the MABS that's running in Azure, and you can then back up the MABS to a Recovery Services vault.
 
-![Diagram showing backup architecture for Azure VMs.](../media/vmbackup-architecture.png)
+![Diagram showing backup architecture for Azure VMs.](../media/backup-architecture.png)
 
 ## Hybrid backup supported options
 
-![Diagram showing backup architecture for on-premises machines.](../media/architecture-on-premises-mars.png)
+![Diagram showing backup architecture for on-premises machines.](../media/architecture-on-premises.png)
 
 Here's what's supported if you want to back up on-premises machines:
 

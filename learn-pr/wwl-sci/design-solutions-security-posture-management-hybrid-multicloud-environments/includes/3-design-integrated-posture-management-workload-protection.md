@@ -138,7 +138,7 @@ You should also regularly monitor existing resources for configuration changes t
 
 #### Hardening access and applications
 
-As part of your security operations, you should also adopt preventative measures to restrict access to VMs, and control the applications that are running on VMs. By locking down inbound traffic to your Azure VMs, you're reducing the exposure to attacks, and at the same time providing easy access to connect to VMs when needed. Use just-in-time VM access access feature to hardening access to your VMs.
+As part of your security operations, you should also adopt preventative measures to restrict access to VMs, and control the applications that are running on VMs. By locking down inbound traffic to your Azure VMs, you're reducing the exposure to attacks, and at the same time providing easy access to connect to VMs when needed. Use just-in-time VM access feature to hardening access to your VMs.
 
 You can use adaptive application controls to limit which applications can run on your VMs located in Azure. Among other benefits, adaptive application controls help harden your VMs against malware. With the help of machine learning, Defender for Cloud analyzes processes running in the VM to help you create allowlist rules.
 
@@ -148,7 +148,7 @@ Defender for Cloud detects and alerts you to threats as they occur. Organization
 
 Although we can't create your Incident Response plan, we'll use Microsoft Azure Security Response in the Cloud lifecycle as the foundation for incident response stages. The stages of incident response in the cloud lifecycle are:
 
-:::image type="content" source="../media/defender-for-cloud-planning-and-operations-guide-fig5-1.png" alt-text="Stages of the incident response in the cloud lifecycle.":::
+:::image type="content" source="../media/defender-for-cloud-planning-operations-guide-fig-5-1.png" alt-text="Stages of the incident response in the cloud lifecycle.":::
 
 You can use Defender for Cloud alerts during the following stages:
 
