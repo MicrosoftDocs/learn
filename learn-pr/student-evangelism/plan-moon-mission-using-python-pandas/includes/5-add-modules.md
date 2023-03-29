@@ -45,12 +45,12 @@ missions
 
 | Index | Mission | Sample weight (kg) | Weight diff | Lunar module (LM) | LM mass (kg) | LM mass diff | Command module (CM) | CM mass (kg) | CM mass diff |
 |---|---|---|---|---|---|---|---|---|---|
-| 0 | Apollo11 | 21.55424 | 0.00000 | Challenger (LM-12) | 15264 | 0.0 | Yankee Clipper (CM-108) | 5960 | 0.0 |
-| 1 | Apollo12 | 34.34238 | 12.78814 | Orion (LM-11) | 15235 | -29.0 | Kitty Hawk (CM-110) | 5609 | -351.0 |
-| 2 | Apollo14 | 41.83363 | 7.49125 | Falcon (LM-10) | 16456 | 1221.0 | Casper (CM-113) | 5840 | 231.0 |
-| 3 | Apollo15 | 75.39910 | 33.56547 | Antares (LM-8) | 16430 | -26.0 | America (CM-114) | 5875 | 35.0 |
-| 4 | Apollo16 | 92.46262 | 17.06352 | Intrepid (LM-6) | 16445 | 15.0 | Endeavor (CM-112) | 5560 | -315.0 |
-| 5 | Apollo17 | 109.44402 | 16.98140 | Antares (LM-8) | 15103 | -1342.0 | Casper (CM-113) | 5758 | 198.0 |
+|0|Apollo11|21.55424|0.00000|Eagle (LM-5)|15103|0.0|Columbia (CSM-107)|5560|0.0|
+|1|Apollo12|34.34238|12.78814|Intrepid (LM-6)|15235|132.0|Yankee Clipper (CM-108)|5609|49.0|
+|2|Apollo14|41.83363|7.49125|Antares (LM-8)|15264|29.0|Kitty Hawk (CM-110)|5758|149.0|
+|3|Apollo15|75.39910|33.56547|Falcon (LM-10)|16430|1166.0|Endeavor (CM-112)|5875|117.0|
+|4|Apollo16|92.46262|17.06352|Orion (LM-11)|16445|15.0|Casper (CM-113)|5840|-35.0|
+|5|Apollo17|109.44402|16.98140|Challenger (LM-12)|16456|11.0|America (CM-114)|5960|120.0|
 
 We can add some totals for each mission across both the lunar and command modules:
 
@@ -62,9 +62,9 @@ missions
 
 | Index | Mission | Sample weight (kg) | Weight diff | Lunar module (LM) | LM mass (kg) | LM mass diff | Command module (CM) | CM mass (kg) | CM mass diff | Total weight (kg) | Total weight diff |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 0 | Apollo11 | 21.55424 | 0.00000 | Challenger (LM-12) | 15264 | 0.0 | Yankee Clipper (CM-108) | 5960 | 0.0 | 21224 | 0.0 |
-| 1 | Apollo12 | 34.34238 | 12.78814 | Orion (LM-11) | 15235 | -29.0 | Kitty Hawk (CM-110) | 5609 | -351.0 | 20844 | -380.0 |
-| 2 | Apollo14 | 41.83363 | 7.49125 | Falcon (LM-10) | 16456 | 1221.0 | Casper (CM-113) | 5840 | 231.0 | 22296 | 1452.0 |
-| 3 | Apollo15 | 75.39910 | 33.56547 | Antares (LM-8) | 16430 | -26.0 | America (CM-114) | 5875 | 35.0 | 22305 | 9.0 |
-| 4 | Apollo16 | 92.46262 | 17.06352 | Intrepid (LM-6) | 16445 | 15.0 | Endeavor (CM-112) | 5560 | -315.0 | 22005 | -300.0 |
-| 5 | Apollo17 | 109.44402 | 16.98140 | Antares (LM-8) | 15103 | -1342.0 | Casper (CM-113) | 5758 | 198.0 | 20861 | -1144.0 |
+|0|Apollo11|21.55424|0.00000|Eagle (LM-5)|15103|0.0|Columbia (CSM-107)|5560|0.0|20663|0.0|
+|1|Apollo12|34.34238|12.78814|Intrepid (LM-6)|15235|132.0|Yankee Clipper (CM-108)|5609|49.0|20844|181.0|
+|2|Apollo14|41.83363|7.49125|Antares (LM-8)|15264|29.0|Kitty Hawk (CM-110)|5758|149.0|21022|178.0|
+|3|Apollo15|75.39910|33.56547|Falcon (LM-10)|16430|1166.0|Endeavor (CM-112)|5875|117.0|22305|1283.0|
+|4|Apollo16|92.46262|17.06352|Orion (LM-11)|16445|15.0|Casper (CM-113)|5840|-35.0|22285|-20.0|
+|5|Apollo17|109.44402|16.98140|Challenger (LM-12)|16456|11.0|America (CM-114)|5960|120.0|22416|131.0|

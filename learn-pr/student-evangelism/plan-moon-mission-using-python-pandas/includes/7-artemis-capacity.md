@@ -32,9 +32,9 @@ artemis_mission
 
 | Index | Mission | Total weight (kg) | Payload (kg) | Sample weight from total (kg) | Sample weight from payload (kg) |
 |---|---|---|---|---|---|
-| 0 | artemis1 | 26520 | 26988 | 76.766734 | 38.779584 |
-| 1 | artemis1b | 26520 | 37965 | 76.766734 | 54.552649 |
-| 2 | artemis2 | 26520 | 42955 | 76.766734 | 61.722877 |
+|0|artemis1|26520|26988|75.549232|38.779584|57.164408|
+|1|artemis1b|26520|37965|75.549232|54.552649|65.050940|
+|2|artemis2|26520|42955|75.549232|61.722877|68.636054|
 
 Finally, we can get the average of the two predictions:
 
@@ -45,10 +45,10 @@ artemis_mission
 
 | Index | Mission | Total weight (kg) | Payload (kg) | Sample weight from total (kg) | Sample weight from payload (kg) | Estimated sample weight (kg) |
 |---|---|---|---|---|---|---|
-| 0 | artemis1 | 26520 | 26988 | 76.766734 | 38.779584 | 57.773159 |
-| 1 | artemis1b | 26520 | 37965 | 76.766734 | 54.552649 | 65.659691 |
-| 2 | artemis2 | 26520 | 42955 | 76.766734 | 61.722877 | 69.244806 |
+|0|artemis1|26520|26988|75.549232|38.779584|57.164408|
+|1|artemis1b|26520|37965|75.549232|54.552649|65.050940|
+|2|artemis2|26520|42955|75.549232|61.722877|68.636054|
 
-We can see now that the three Artemis missions can likely return 57.77 kg, 65.65 kg, and 69.24 kg, respectively.
+We can see now that the three Artemis missions can likely return 57.16 kg, 65.05 kg, and 68.64 kg, respectively.
 
 Now the question is, what kinds of rocks should they prioritize?

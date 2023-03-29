@@ -3,7 +3,7 @@ uid: learn.student-evangelism.plan-moon-mission-using-python-pandas.6-understand
 metadata:
   title: Exercise - Understand the cleansed and manipulated mission data
   description: Using the data that has been cleansed and manipulated, gather insights about the relationship between rock samples and rocket weights.
-  ms.date: 03/10/2021
+  ms.date: 03/29/2023
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial

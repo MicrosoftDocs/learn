@@ -31,7 +31,7 @@ One bit of information really stands out: we've never had a lot of Crustal rocks
 We can add Crustal rocks to the set of needed samples:
 
 ```python
-needed_samples = needed_samples.append(rock_samples.loc[rock_samples['Type'] == 'Crustal'])
+needed_samples = pd.concat([needed_samples,rock_samples.loc[rock_samples['Type'] == 'Crustal']])
 needed_samples.info()
 ```
 
@@ -120,7 +120,7 @@ artemis_ave_weight
 ```
 
 ```output
-64.22588520079607
+63.61713411579792
 ```
 
 We can use this number to determine how many of each rock we want the astronauts to aim to collect:
@@ -133,8 +133,8 @@ needed_samples_overview
 
 | Index | Type | Total weight (kg) | Average weight (kg) | Number of samples | Percentage of rocks | Weight to collect | Rocks to collect |
 |---|---|---|---|---|---|---|---|
-| 0 | Basalt | 17.42340 | 1.244529 | 351 | 0.258850 | 16.624842 | 13.358345 |
-| 1 | Breccia | 10.11850 | 1.264812 |959 | 0.707227 | 45.422289 | 35.912271 |
-| 2 | Crustal | 4.74469 | 0.103145 | 46 | 0.033923 | 2.178754 | 21.123128 |
+| 0 | Basalt | 17.42340 | 1.244529 | 351| 0.258850 | 16.467267 | 13.231731 |
+| 1 | Breccia | 10.11850 | 1.264813 | 959| 0.707227 | 44.991764 | 35.571884 |
+| 2 | Crustal | 4.74469 | 0.103145 | 46 | 0.033923 | 2.158103 | 20.922917 |
 
-So, we might tell the Artemis astronauts to please try to collect 13 Basalt rocks, 35 Breccia rocks, and 21 Crustal rocks. Whew!
+So, we might tell the Artemis astronauts to please try to collect 13 Basalt rocks, 35 Breccia rocks, and 20 Crustal rocks. Whew!

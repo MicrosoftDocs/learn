@@ -14,7 +14,7 @@ rock_samples.head()
 
 |   | ID | Mission | Type | Subtype | Weight (kg) | Pristine (%) |
 |---|---|---|---|---|---|---|
-| **0** | 10001 | Apollo11 | Soil | Unsieved | 0.125 | 88.36 |
+| **0** | 10001 | Apollo11 | Soil | Unsieved | 0.1258 | 88.36 |
 | **1** | 10002 | Apollo11 | Soil | Unsieved | 5.6290 | 93.73 |
 | **2** | 10003 | Apollo11 | Basalt | Ilmenite | 0.2130 | 65.56 |
 | **3** | 10004 | Apollo11 | Core | Unsieved | 0.0448 | 71.76 |
