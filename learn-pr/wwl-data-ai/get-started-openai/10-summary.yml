@@ -3,7 +3,7 @@ uid: learn.wwl.get-started-openai.summary
 title: Summary
 metadata:
   title: Summary
-  description: "This unit summarizes the key concepts covered in the module, including using Azure OpenAI Studio, deploying models, and prompt engineering."
+  description: This unit summarizes the key concepts covered in the module, including using Azure OpenAI Studio, deploying models, and prompt engineering.
   ms.date: 2/27/2023
   author: sherzyang
   ms.author: sheryang

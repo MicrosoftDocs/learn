@@ -3,7 +3,7 @@ uid: learn.wwl.get-started-openai.use-azure-openai-studio
 title: Use Azure OpenAI Studio
 metadata:
   title: Use Azure OpenAI Studio
-  description: "This unit explore Azure OpenAI Studio, a user interface designed to help users test out the service in a visual setting."
+  description: This unit explore Azure OpenAI Studio, a user interface designed to help users test out the service in a visual setting.
   ms.date: 2/27/2023
   author: sherzyang
   ms.author: sheryang

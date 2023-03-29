@@ -3,7 +3,7 @@ uid: learn.wwl.get-started-openai.access-azure-openai
 title: Access Azure OpenAI Service
 metadata:
   title: Access Azure OpenAI Service
-  description: "This unit explains how to apply for access to Azure OpenAI Service and how to create an Azure OpenAI resource. These are the first steps to working with Azure OpenAI Service."
+  description: This unit explains how to apply for access to Azure OpenAI Service and how to create an Azure OpenAI resource. These are the first steps to working with Azure OpenAI Service.
   ms.date: 2/27/2023
   author: sherzyang
   ms.author: sheryang
