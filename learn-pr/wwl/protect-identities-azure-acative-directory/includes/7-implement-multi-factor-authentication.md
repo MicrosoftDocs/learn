@@ -19,7 +19,7 @@ Multi-factor authentication comes as part of the following offerings:
  -  Multi-factor authentication for Microsoft 365 - A subset of Azure Active Directory Multi-Factor Authentication capabilities is available as a part of your subscription.
  -  Azure Active Directory Global Administrators - A subset of Azure Active Directory Multi-Factor Authentication capabilities is available as a means to protect global administrator accounts.
 
-:::image type="content" source="../media/azure-verify-identity-9a3ddc3b.png" alt-text="Authentication methods in use at the sign-in screen.":::
+:::image type="content" source="../media/azure-verify-identity-9a3ddc3b.png" alt-text="Screenshot of authentication methods in use at the sign-in screen.":::
 
 
  -  If you have Azure AD Premium or Enterprise Mobility + Security licenses, you already have Azure Active Directory Multi-Factor Authentication. Your organization doesn't need anything extra to extend the two-step verification capability to all users. You only need to assign a license to a user, and then you can turn on MFA.

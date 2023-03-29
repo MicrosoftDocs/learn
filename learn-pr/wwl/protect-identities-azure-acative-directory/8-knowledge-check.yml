@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/28/2023
+  ms.date: 03/29/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
@@ -19,7 +19,7 @@ quiz:
     choices:
     - content: "Cloud Only, On-Premises, or Hybrid"
       isCorrect: true
-      explanation: "Correct. The Cloud Only deployment model is for organizations who only have cloud identities and do not access on-premises resources. An On-Premises deployment model is for organizations that don't have cloud identities or use applications hosted in Azure AD. For organizations that use both on-premises AD DS and Azure AD, businesses often use the Hybrid model."
+      explanation: "Correct. The Cloud Only deployment model is for organizations who only have cloud identities and do not access On-Premises resources. An On-Premises deployment model is for organizations that don't have cloud identities or use applications hosted in Azure AD. For organizations that use both On-Premises AD DS and Azure AD, businesses often use the Hybrid model."
     - content: "Cloud Only, Manual, Hybrid"
       isCorrect: false
       explanation: "Incorrect. These items aren't the three deployment models for Windows Hello for Business. Try again."
