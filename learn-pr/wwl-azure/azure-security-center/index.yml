@@ -3,7 +3,7 @@ uid: learn.wwl.azure-security-center
 metadata:
   title: Enable and manage Microsoft Defender for Cloud
   description: "Use Azure Security Center, Azure Defender, and Secure Score to track and improve your security posture in Azure."
-  ms.date: 03/03/2023
+  ms.date: 03/23/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
@@ -37,6 +37,7 @@ units:
 - learn.wwl.azure-security-center.introduction
 - learn.wwl.azure-security-center.cyber-kill-chain
 - learn.wwl.azure-security-center.mitre-attack
+- learn.wwl.azure-security-center.cloud-kill-chain-vs-mitre-attack-cloud-matrix
 - learn.wwl.azure-security-center.implement-azure-security-center
 - learn.wwl.azure-security-center.azure-defender
 - learn.wwl.azure-security-center.azure-arc
@@ -47,6 +48,7 @@ units:
 - learn.wwl.azure-security-center.recommendations
 - learn.wwl.azure-security-center.secure-score
 - learn.wwl.azure-security-center.brute-force-attacks
+- learn.wwl.azure-security-center.understand-just-in-time-vm-access
 - learn.wwl.azure-security-center.just-time-vm-access
 - learn.wwl.azure-security-center.demonstration
 - learn.wwl.azure-security-center.knowledge-check

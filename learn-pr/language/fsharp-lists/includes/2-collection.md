@@ -1,4 +1,4 @@
-You might find yourself in a situation where you have more than one of a certain type of data. You could create a variable for each piece of data, or you could group it all into a collection. Grouping the data gives you advantages such as the ability to carry out methods not only on individual pieces of data, but on the collection as a whole.
+You might find yourself in a situation where you've more than one of a certain type of data. You could create a variable for each piece of data, or you could group it all into a collection. Grouping the data gives you advantages such as the ability to carry out methods not only on individual pieces of data, but on the collection as a whole.
 
 ## Collections
 
@@ -10,7 +10,7 @@ let logEntryTuesDay = "second entry"
 let logEntryWednesday = "third entry"
 ```
 
-In this code, you can continue adding one similar entry after another, but at some point that approach begins to feel impractical. The separate entries are not only related but are, in fact, of the same type. Is it a good idea to create a new variable for each entry? Probably not. Instead, consider using a collection, where you can create a logical, manageable grouping, whether it's adding or removing data or using some other operation:
+In this code, you can continue adding one similar entry after another, but at some point that approach begins to feel impractical. The separate entries aren't only related but are, in fact, of the same type. Is it a good idea to create a new variable for each entry? Probably not. Instead, consider using a collection, where you can create a logical, manageable grouping, whether it's adding or removing data or using some other operation:
 
 ```fsharp
 logEntriesWeek = ["first entry"; "second entry"; "third entry"]
@@ -36,7 +36,7 @@ let cards = ["Ace"; "King"; "Queen"]
 
 In this code, you enclose the elements in brackets (`[]`) to define the list. The list items are separated by a semicolon (`;`).
 
-Another way to create a list is to place each element on a new line, as shown here. This also removes the need to use semicolons.
+Another way to create a list is to place each element on a new line, as shown here. This method also removes the need to use semicolons.
 
 ```fsharp
 let cards = [
@@ -46,7 +46,7 @@ let cards = [
 ]
 ```
 
-In lists, elements must be of the same type, so the following declaration is not permitted:
+In lists, elements must be of the same type, so the following declaration isn't permitted:
 
 ```fsharp
 let cards = [ 1; "Ace"; "King" ] // not permitted

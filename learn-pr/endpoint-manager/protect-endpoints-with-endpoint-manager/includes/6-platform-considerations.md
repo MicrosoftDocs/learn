@@ -1,6 +1,6 @@
-Microsoft Endpoint Manager supports several device platforms. The available platforms that can be managed by Endpoint Manager include iOS/iPadOS, Windows, Android, and macOS. These platforms are often referred to as device types. Each platform offers sightly different enrollment methods, devices settings, protection policy settings, configuration policy settings, custom policy settings, and remote actions.
+Microsoft Intune supports several device platforms. The available platforms that can be managed by Intune include iOS/iPadOS, Windows, Android, and macOS. These platforms are often referred to as device types. Each platform offers sightly different enrollment methods, devices settings, protection policy settings, configuration policy settings, custom policy settings, and remote actions.
 
-![Microsoft Endpoint Manager supported platforms.](../media/intro-to-endpoint-manager-08.png)
+![Microsoft Intune supported platforms.](../media/intro-to-endpoint-manager-08.png)
 
 When you create your endpoint management design, you need to determine the platforms that must be supported in your endpoint environment. Once you know the platforms you need to support, you must verify whether each platform is supported by Intune.
 

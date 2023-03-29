@@ -42,7 +42,7 @@ To create the storage account, run this command. Remember to enter your unique s
 az storage account create \
   --kind StorageV2 \
   --resource-group <rgn>[sandbox resource group name]</rgn> \
-  --location centralus \
+  --location eastus \
   --name [your-unique-storage-account-name]
 ```
 
