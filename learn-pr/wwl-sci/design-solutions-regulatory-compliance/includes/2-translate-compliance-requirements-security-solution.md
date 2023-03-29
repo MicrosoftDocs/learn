@@ -6,7 +6,7 @@ The following process outlines a possible governance implementation, which allow
 
 Determine the controls and measures that you want to implement as part of your organization's governance process as outlined in [Define corporate cloud policy](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/govern/policy-compliance/policy-definition).
 
-![Diagram that shows the service review process.](../media/govern/cloud-policy-breakdown.png)
+![Diagram that shows the service review process.](../media/cloud-policy-breakdown.png)
 
 When you implement an organizational cloud policy, it stretches across many layers of the implementation process. These layers include platform-wide controls, individual service controls, and application controls. The higher the level of control, the more coverage it gets. The more complex the implementation is, the easier it is to ensure that the cloud policy covers all of the cloud adoption team's needs.
 
