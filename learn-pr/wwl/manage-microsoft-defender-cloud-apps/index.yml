@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.wwl.manage-microsoft-defender-cloud-apps
+metadata:
+  title: MD-102 4-Manage Microsoft defender for Cloud Apps
+  description: "This module covers Microsoft Defender for Cloud Apps, focusing on securing sensitive data, its relevance in dynamic work settings, and effective utilization for improved security posture."
+  ms.date: 03/29/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Manage Microsoft defender for Cloud Apps
+summary: This module covers Microsoft Defender for Cloud Apps, focusing on securing sensitive data, its relevance in dynamic work settings, and effective utilization for improved security posture.
+abstract: |
+  -  Describe Microsoft Defender for Cloud Apps
+   -  Plan for Microsoft Defender for Cloud Apps usage
+   -  Implement and use Microsoft Defender for Cloud Apps
+prerequisites: |
+  - Strong technical skills installing, maintaining, and troubleshooting the Windows 10 OS or later
+  - Strong understanding of computer networking, client security, and application concepts
+  - Experience using Active Directory Domain Services
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- windows
+- configuration-manager
+- intune
+units:
+- learn.wwl.manage-microsoft-defender-cloud-apps.introduction
+- learn.wwl.manage-microsoft-defender-cloud-apps.explore-microsoft-defender-cloud-apps
+- learn.wwl.manage-microsoft-defender-cloud-apps.planning-microsoft-defender-cloud-apps
+- learn.wwl.manage-microsoft-defender-cloud-apps.implement-microsoft-defender-cloud-apps
+- learn.wwl.manage-microsoft-defender-cloud-apps.knowledge-check
+- learn.wwl.manage-microsoft-defender-cloud-apps.summary
+badge:
+  uid: learn.wwl.manage-microsoft-defender-cloud-apps.badge

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-microsoft-defender-cloud-apps.explore-microsoft-defender-cloud-apps
+title: Explore Microsoft Defender for Cloud Apps
+metadata:
+  title: Explore Microsoft Defender for Cloud Apps
+  description: "Explore Microsoft Defender for Cloud Apps"
+  ms.date: 03/29/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-explore-microsoft-defender-cloud-apps.md)]

@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-microsoft-defender-cloud-apps.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/29/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What are the four primary pillars of capabilities that a Cloud Access Security Broker (CASB) offers to safeguard an organization's environment?"
+    choices:
+    - content: "Incident response, application security, data protection, and identity management."
+      isCorrect: false
+      explanation: "Incorrect. While this is a benefit of using Microsoft Defender for Cloud Apps, it's not one of the four primary pillars of capabilities that a Cloud Access Security Broker (CASB) offers to safeguard an organization's environment. Try again."
+    - content: "Visibility, threat protection, data protection, and regulatory compliance."
+      isCorrect: false
+      explanation: "Incorrect. While this is a benefit of using Microsoft Defender for Cloud Apps, it's not one of the four primary pillars of capabilities that a Cloud Access Security Broker (CASB) offers to safeguard an organization's environment. Try again."
+    - content: "Visibility, threat protection, data protection, and identity and access management."
+      isCorrect: true
+      explanation: "Correct. This is one of the four primary pillars of capabilities that a Cloud Access Security Broker (CASB) offers to safeguard an organization's environment."
+  - content: "Which of the following are benefits of using Microsoft Defender for Cloud Apps?"
+    choices:
+    - content: "Accelerated processing speed of cloud applications."
+      isCorrect: false
+      explanation: "Incorrect. While this is a benefit of using Microsoft Defender for Cloud Apps, it's not one of the benefits listed in the question. Try again."
+    - content: "Reduced storage requirements for cloud services."
+      isCorrect: false
+      explanation: "Incorrect. While this is a benefit of using Microsoft Defender for Cloud Apps, it's not one of the benefits listed in the question. Try again."
+    - content: "Enhanced security for sensitive data and protection against cyber threats."
+      isCorrect: true
+      explanation: "Correct. This is one of the benefits of using Microsoft Defender for Cloud Apps."
+  - content: "What are the seven steps required to initiate the use of Microsoft Defender for Cloud Apps?"
+    choices:
+    - content: "Access the portal, integrate with Microsoft Defender for Endpoint, create snapshot Cloud Discovery reports, deploy Conditional Access App Control for catalog apps, personalize your experience, set up data loss prevention policies, and organize the data according to your needs."
+      isCorrect: false
+      explanation: "Incorrect. This is the correct order of steps, but the first step is incorrect. Try again."
+    - content: "Access the portal, protect sensitive information with DLP policies, configure Cloud Discovery, set instant visibility, protection, and governance actions for your apps, deploy Conditional Access App Control for catalog apps, personalize your experience, and organize the data according to your needs."
+      isCorrect: false
+      explanation: "Incorrect. This is the correct order of steps, but the first step is incorrect. Try again."
+    - content: "Access the portal, set instant visibility, protection, and governance actions for your apps, protect sensitive information with DLP policies, control cloud apps with policies, set up Cloud Discovery, deploy Conditional Access App Control for catalog apps, personalize your experience, and organize the data according to your needs."
+      isCorrect: true
+      explanation: "Correct. This is the correct order of steps."
