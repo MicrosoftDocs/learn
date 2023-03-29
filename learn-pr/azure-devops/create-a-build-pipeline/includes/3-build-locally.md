@@ -53,7 +53,7 @@ Let's fork the *Space Game* web project into your GitHub account:
 
 ## Set up secrets for self-hosted agent
 
-Before you create your Codespace, you'll create three passwords that help your self-hosted Azure DevOps agent run. In production, you wouldn't want to use a self-hosted agent in a Codespaces. However, since your team is using Codespaces for testing, this is a good temporary solution when you are building your pipelines.  
+Before you create your Codespace, you'll create three passwords that help your self-hosted Azure DevOps agent run. In production, you wouldn't want to use a self-hosted agent in GitHub Codespaces. However, since your team is using Codespaces for testing, this is a good temporary solution when you are building your pipelines.  
 
 1. Go to your forked GitGub repository and select **Settings** > **Secrets and variables** > **Codespaces**.
 
@@ -63,7 +63,7 @@ Before you create your Codespace, you'll create three passwords that help your s
     
     |Name  |Value  |
     |---------|---------|
-    |ADO_ORG     |   Name of the Azure DevOps organization you're using to complete this module. In this example, `fabrikam` is the name of the orgnization.)     |
+    |ADO_ORG     |   Name of the Azure DevOps organization you're using to complete this module. In this example, `fabrikam` is the name of the orgnization.    |
     |ADO_PAT     |   Personal Access Token value      |
     |ADO_POOL_NAME     |   Name of agent pool. Specify `Default` to use the default agent pool. If you use a name other than `Default`, you need to [create a new agent pool](/azure/devops/pipelines/agents/pools-queues) and provide tha name of the new agent pool for this value. | 
     
@@ -71,18 +71,9 @@ Before you create your Codespace, you'll create three passwords that help your s
 
 Next, you'll set up Codespaces so that you can build the website, work with source files, and run your pipeline using a self-hosted agent.
 
-
-1. In your forked GitHub repository, select **Code**.
-
-    :::image type="content" source="../media/3-go-to-code-tab.png" alt-text="Screenshot of going to code tab in GitHub. ":::
-
-1. Select **Code**, choose the **Codespaces** tab, and choose **...** to create a new Codespace with options.
+1. In your forked GitHub repository, select **Code**, select **Code** again, choose the **Codespaces** tab, and choose **+** to create a new Codespace.
 
     :::image type="content" source="../media/3-create-new-options-codespaces.png" alt-text="Screenshot of create a new Codespace with options. ":::
-
-1. Select the `AzurePipelines` Codespace option at `.devcontainer/ADOagent/devcontainer.json` and **Create codespace**. Leave the other default options. 
-
-    :::image type="content" source="../media/3-select-azdo-codespace-option.png" alt-text="Screenshot of select Azure DevOps codespace as a configuration.":::
 
 1. Wait for your Codespace to build. When the build completes, you'll be redirected to an online version of Visual Studio Code. Your Codespace comes with a fresh installation of Visual Studio Code, similar to if you had just installed Visual Studio Code on your local machine. When the Codespace first starts, Visual Studio Code online may prompt you to provide certain configuration or ask you about preferences. You may choose the preferences that suit your Visua Studio Code usage style.
 
