@@ -13,7 +13,7 @@ Microsoft-hosted agents are an easy way to get started with Azure Pipelines. To 
 
 If you don't have any Microsoft-hosted parallel jobs and you don't want to wait 2-3 business days before starting this training module, you can complete the training using GitHub Codespaces. The GitHub Codespaces environment for this training module includes the required development tools, and provides a self-hosted agent that runs the pipeline that you create in the training module. When you choose **GitHub Codespaces development environment using a self-hosted agent**, you're using a self-hosted agent running in your GitHub Codespaces container. This is not a typical production scenario, but it does provide an environment for completing this training module.
 
-* Choose **Local development environment using a Microsoft-hosted agent** if only you have one or more Microsoft-hosted parallel jobs.
+* Choose **Local development environment using a Microsoft-hosted agent** if you have one or more Microsoft-hosted parallel jobs and you want to use a Microsoft-hosted agent.
 * Choose **GitHub Codespaces development environment using a self-hosted agent** if you don't have any parallel jobs and you don't want to wait 2-3 business days for the free grant in order to use a Microsoft-hosted agent.
 
 ## Training module scenario
@@ -47,9 +47,9 @@ To follow the progression from the beginning, be sure to first complete the [Get
 
 ::: zone pivot="github-codespaces-agent"
 
-To complete this training module using a self-hosted agent with GitHub Codespaces:
+To complete this training module using a self-hosted agent with GitHub Codespaces you nust have:
 
-- An [Azure DevOps organization](/azure/devops/pipelines/get-started/pipelines-sign-up). If you don't already have an Azure DevOps organization, create a [free organization](/azure/devops/pipelines/get-started/pipelines-sign-up) before you begin.
+- An [Azure DevOps organization](/azure/devops/pipelines/get-started/pipelines-sign-up). If you don't already have an Azure DevOps organization, create a [free organization](/azure/devops/pipelines/get-started/pipelines-sign-up) before you begin. If you have completed the [Get started with Azure DevOps](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true) learning path prerequisite, use that Azure DevOps organization.
 - An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true). If you don't already have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
 - A [GitHub](https://github.com/join?azure-portal=true) account
 

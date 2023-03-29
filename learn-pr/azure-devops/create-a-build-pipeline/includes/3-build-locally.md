@@ -2,9 +2,7 @@ Get ready to start building a CI pipeline with Microsoft Azure Pipelines. The fi
 
 Mara is going to do exactly that, and by following the procedures, you can do the same thing.
 
-::: zone-end
-
-::: zone pivot="ms-hosted-agents"  
+::: zone pivot="github-codespaces-agent"  
 
 ### Create an Azure DevOps personal access token
 
@@ -167,7 +165,7 @@ When you're finished, return to the terminal window, and to stop the running app
 
 ::: zone-end  
 
-::: zone pivot="github-codespaces-agent"
+::: zone pivot="ms-hosted-agents"
 
 ## Prepare Visual Studio Code
 
