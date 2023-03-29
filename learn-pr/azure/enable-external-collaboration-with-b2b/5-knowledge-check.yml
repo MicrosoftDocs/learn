@@ -1,20 +1,42 @@
 ### YamlMime:ModuleUnit
-uid: learn.enable-external-collaboration-with-b2b.4-enable-mfa-b2b
+uid: learn.enable-external-collaboration-with-b2b.5-knowledge-check
+title: Knowledge check
 metadata:
-  title: Enable multi-factor authentication in Azure AD B2B
-  description: Enable multi-factor authentication in Azure AD B2B
-  ms.date: 06/29/2022
+  unitType: knowledge_check
+  title: Knowledge check
+  description: "Knowledge check for the enable external B2B collaboration learn module"
+  ms.date: 03/15/2023
   author: msmimart
   ms.author: mimart
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Enable multi-factor authentication in Azure AD B2B
-durationInMinutes: 10
-content: |
-  [!include[](includes/4-enable-mfa-b2b.md)]
+durationInMinutes: 5
+content: |  
 quiz:
   title: Check your knowledge
   questions:
+  - content: What is one of the main advantages of using Azure AD B2B collaboration?
+    choices:
+    - content: You can allow people outside of your organization to use their own credentials to sign in to your apps.
+      isCorrect: true
+      explanation: Correct. A B2B collaboration user authenticates using credentials from their home organization or identity provider, so you don't need to provide or maintain credentials for them.
+    - content: You can collaborate with people outside of your organization by giving them a user ID and password.
+      isCorrect: false
+      explanation: Try again. A B2B collaboration user authenticates using their own credentials and their home organization or identity provider. You don't need to maintain a user ID or password for them.
+    - content: You can allow people outside of your organization to access your apps without adding a user object to your directory.
+      isCorrect: false
+      explanation: Try again. A user object for the B2B collaboration user is added to your directory, and you can manage it like other user objects in your directory. For example you can assign it permissions, add it to groups, and so on.
+  - content: How can you add a layer of protection to the application?
+    choices:
+    - content: Use unconditional access policies in Azure AD B2B.
+      isCorrect: false
+      explanation: Try again. There's no such thing as unconditional access policies in Azure.
+    - content: Use Conditional Access policies in Azure AD B2B.
+      isCorrect: true
+      explanation: Correct. Conditional Access policies offer further protection for your applications. You can ensure that your applications are only accessed when all conditions you set have been met.
+    - content: Use criteria access policies in Azure AD B2B.
+      isCorrect: false
+      explanation: Try again. There's no such thing as criteria access policies in Azure.
   - content: What is one of the **External Collaboration settings** you should review to make sure B2B collaboration is enabled?
     choices:
     - content: Make sure that the domains you want to invite are *not* listed under **Deny invitations to the specified domains**.
@@ -48,4 +70,4 @@ quiz:
     - content: Configure multi-factor authentication by using the What if tool to create a policy for your application.
       isCorrect: false
       explanation: Try again. The What if tool in the Azure portal is a useful way to test your policy after you've configured it.
-
+ 
