@@ -5,7 +5,7 @@ metadata:
   unitType: learning-content
   title: Understand pull request validation
   description: In this unit, you learn how automated checks run within the pull request lifecycle, and the types of automated review checks that you might perform on Bicep code.
-  ms.date: 03/28/2023
+  ms.date: 03/29/2023
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial

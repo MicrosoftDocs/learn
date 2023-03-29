@@ -5,7 +5,7 @@ metadata:
   unitType: learning-content
   title: Exercise - Create a workflow for a pull request
   description: In this exercise, you'll add a pull request workflow to lint your Bicep code.
-  ms.date: 03/28/2023
+  ms.date: 03/29/2023
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial
