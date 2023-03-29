@@ -1,3 +1,4 @@
+
 Azure Virtual Network peering can be configured for virtual networks by using PowerShell, the Azure CLI, and in the Azure portal. In this module, we review the steps to create the peering in the Azure portal for virtual networks deployed through Azure Resource Manager.
 
 ### Things to know about creating virtual network peering
@@ -6,12 +7,7 @@ There are a few points to review before we look at how to create the peering in 
 
 - To implement virtual network peering, your Azure account must be assigned to the `Network Contributor` or `Classic Network Contributor` role. Alternatively, your Azure account can be assigned to a custom role that can complete the necessary peering actions. For details, see [Permissions](/azure/virtual-network/virtual-network-manage-peering?tabs=peering-portal#permissions).
 
-- To create a peering, you need two virtual networks. The first virtual network in the peering must be deployed by using the Azure Resource Manager.
-
-   > [!Note]
-   > You can't set up peering for a virtual network deployed via the classic deployment model, or between two virtual networks deployed through the classic deployment model. 
-
-- Each virtual network in the peering needs at least one virtual machine.
+- To create a peering, you need two virtual networks. 
 
 - The second virtual network in the peering is referred to as the _remote network_.
 
@@ -49,23 +45,10 @@ Sign into your Azure account in the Azure portal, and choose the subscription to
 
 1. Configure the peering parameters for your remote virtual network.
 
-   In the Azure portal, you configure the remote virtual network in the peering on the **Add peering** dialog. The bottom portion shows settings for the remote virtual network.
+   In the Azure portal, you configure the remote virtual network in the peering on the **Add peering** dialog. The bottom portion shows settings for the remote virtual network.   The settings are similar to the parameters described for the first virtual network.
 
    :::image type="content" source="../media/configure-peering-remote.png" alt-text="Screenshot that shows how to configure peering for the remote virtual network in the Azure portal." border="false":::
 
-   - **Peering link name**: Provide a name to identify the peering on your remote virtual network. The name must be unique within the virtual network.
-
-   - **Virtual network deployment model**: Select the deployment model of the virtual network you want to peer with.
-
-   - **I know my resource ID**:	This setting supports scenarios where you don't have read access to the virtual network you want to peer with.
-   
-      As needed, select the checkbox and then enter the full resource ID of the virtual network you want to peer with. When you select this setting, the following two parameters aren't available for configuration.
-
-   - **Subscription**: Select the subscription of the virtual network you want to peer with.
-
-   - **Virtual network**: Select the virtual network you want to peer with.
-
-   The remaining settings are similar to the parameters described for the first virtual network in the previous step.
 
 1. Create at least one virtual machine in each virtual network.
 

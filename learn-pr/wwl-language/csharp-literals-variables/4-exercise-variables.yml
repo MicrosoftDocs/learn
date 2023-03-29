@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-literals-variables.exercise-variables
+title: Exercise - Setting and getting values from variables
+metadata:
+  title: Exercise - Setting and getting values from variables
+  description: "Exercise - Setting and getting values from variables"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+interactive: csharp
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-exercise-variables.md)]

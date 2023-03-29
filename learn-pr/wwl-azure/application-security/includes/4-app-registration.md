@@ -1,3 +1,4 @@
+
 For the most secure operation, register your app with the Microsoft identity platform.
 
 Before your app can get a token from the Microsoft identity platform, it must be registered in the Azure portal. Registration integrates your app with the Microsoft identity platform and establishes the information that it uses to get tokens, including:

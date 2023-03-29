@@ -5,7 +5,7 @@ metadata:
   unitType: learning-content
   title: Handle differences between environments by using Bicep parameters
   description: Learn about how to pass parameters into Bicep deployments from a pipeline.
-  ms.date: 10/18/2021
+  ms.date: 02/27/2023
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial

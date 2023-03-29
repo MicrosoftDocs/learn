@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/17/2022
+  ms.date: 02/22/2023
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -32,10 +32,10 @@ quiz:
     choices:
     - content: "Azure Functions"
       isCorrect: false
-      explanation: "Incorrect.  Azure Functions is not the automation engine."
+      explanation: "Incorrect.  Azure Functions isn't the automation engine."
     - content: "Azure Batch"
       isCorrect: false
-      explanation: "Incorrect.  Azure Batch is not the automation engine."
+      explanation: "Incorrect.  Azure Batch isn't the automation engine."
     - content: "Azure Logic Apps"
       isCorrect: true
       explanation: "Correct.  Logic Apps is the automation engine."

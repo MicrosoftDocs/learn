@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.install-configure-visual-studio-code.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following choices provides the best description of an Integrated Development Environment (IDE)?"
+    choices:
+    - content: "Visual Studio Code is an Integrated Development Environment."
+      isCorrect: false
+      explanation: "Incorrect. While it's true that Visual Studio Code is an IDE, this doesn't describe what an IDE is."
+    - content: "An Integrated Development Environment is tool that makes it easier to write code."
+      isCorrect: false
+      explanation: "Incorrect. While it's true that an IDE makes it easier to write code, an IDE also supports testing, versioning, and even code retirement processes."
+    - content: "An IDE is a suite of tools that supports the full software development lifecycle."
+      isCorrect: true
+      explanation: "Correct! An IDE is a suite of tools that supports the full software development lifecycle."
+  - content: "Which area of the Visual Studio Code user interface is used to write code?"
+    choices:
+    - content: "Explorer."
+      isCorrect: false
+      explanation: "Incorrect. The Explorer view enables developers to select project files and folders."
+    - content: "Extensions."
+      isCorrect: false
+      explanation: "Incorrect. The Extensions view enables developers to install tools that support software languages and help with all sorts of tasks."
+    - content: "Editor."
+      isCorrect: true
+      explanation: "Correct! The Editor is the main area where developers write code."
+  - content: "Which of the following tools is required to run command line interface commands such as `dotnet run`?"
+    choices:
+    - content: "Visual Studio Code."
+      isCorrect: false
+      explanation: "Incorrect. The Visual Studio Code integrated Terminal panel does support running command line interface commands, but other command line tools could be used."
+    - content: "The OmniSharp extension for C#."
+      isCorrect: false
+      explanation: "Incorrect. The OmniSharp extension for C# provides editing support (including Syntax Highlighting, IntelliSense), but doesn't help with the `dotnet` commands."
+    - content: "The .NET SDK."
+      isCorrect: true
+      explanation: "Correct! The .NET SDK is required in order to run .NET command line interface commands such as `dotnet run`."

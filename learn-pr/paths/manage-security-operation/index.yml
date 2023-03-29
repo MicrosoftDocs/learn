@@ -3,7 +3,7 @@ uid: learn.wwl.manage-security-operation
 metadata:
   title: 'AZ-500: Manage security operation'
   description: 'AZ-500: Manage security operation'
-  ms.date: 07/27/2022
+  ms.date: 03/01/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
@@ -20,10 +20,12 @@ roles:
 - administrator
 - security-engineer
 products:
-- azure
+- azure-log-analytics
 - azure-monitor
 - azure-security-center
 - azure-sentinel
+- defender-for-cloud
+- microsoft-sentinel
 subjects:
 - cloud-security
 modules:

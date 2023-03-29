@@ -3,7 +3,7 @@ uid: learn.azure-sql-deploy-configure
 metadata:
   title: Deploy and configure servers, instances, and databases for Azure SQL
   description: Deploy and configure servers, instances, and databases for Azure SQL
-  ms.date: 11/10/2022
+  ms.date: 03/15/2023
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   manager: jroth
@@ -22,7 +22,6 @@ prerequisites: |
   - Experience with Azure, such as deploying and managing resources
 iconUrl: /training/achievements/azure-sql-deploy-configure.svg
 levels:
-- beginner
 - intermediate
 roles:
 - solution-architect

@@ -5,11 +5,11 @@ metadata:
   unitType: learning-content
   title: When to use Azure Advisor
   description: Learn when to use Azure Advisor and how you can benefit from the provided recommendations.
-  ms.date: 6/30/2021
+  ms.date: 03/08/2023
   author: ricmmartins
   ms.author: ricmart
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.prod: learning-azure
 durationInMinutes: 3
 content: |
   [!include[](includes/4-when-to-use-azure-advisor.md)]

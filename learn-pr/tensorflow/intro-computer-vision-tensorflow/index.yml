@@ -22,7 +22,7 @@ levels:
 roles:
 - developer
 products:
-- vs
+- azure-machine-learning
 prerequisites: |
   - Basic Python knowledge
   - Basic knowledge about how to use Jupyter Notebooks

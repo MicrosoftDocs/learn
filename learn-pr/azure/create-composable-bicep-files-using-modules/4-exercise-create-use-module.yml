@@ -6,12 +6,12 @@ metadata:
   unitType: exercise
   title: Exercise - Create and use a module
   description: Create a set of Bicep modules and a template that uses them.
-  ms.date: 10/10/2021
+  ms.date: 03/27/2023
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
   zone_pivot_groups: azure-shell-interface
-durationInMinutes: 6
+durationInMinutes: 9
 content: |
   [!include[](includes/4-exercise-create-use-module.md)]

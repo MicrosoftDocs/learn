@@ -3,7 +3,7 @@ uid: learn.azure-sql-case-studies
 metadata:
   title: Putting it all together with Azure SQL
   description: Putting it all together with Azure SQL
-  ms.date: 08/05/2020
+  ms.date: 03/15/2023
   author: MashaMSFT
   ms.author: mathoma
   manager: jroth
@@ -22,7 +22,6 @@ prerequisites: |
   - Experience with Azure, such as deploying and managing resources
 iconUrl: /training/achievements/azure-sql-case-studies.svg
 levels:
-- beginner
 - intermediate
 roles:
 - solution-architect
