@@ -6,7 +6,7 @@ The first step in building a generative AI solution with  Azure OpenAI is to pro
 Once you have access to Azure OpenAI Service, you can begin to use it by creating a resource in the [Azure portal](https://portal.azure.com/?azure-portal=true) or through the Azure command line interface (CLI). 
 
 ## Create an Azure OpenAI Service resource in the Azure portal 
-When you create a resource, you will need to provide a subscription name, resource group name, region, unique instance name, and select a pricing tier.
+When you create an Azure OpenAI Service resource, you will need to provide a subscription name, resource group name, region, unique instance name, and select a pricing tier.
 ![Screenshot of the Azure portal's page to create an Azure OpenAI Service resource.](../media/create-azure-openai-portal.png)
 
 ## Create an Azure OpenAI Service resource in Azure CLI

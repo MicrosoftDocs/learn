@@ -1,10 +1,10 @@
 Azure OpenAI Studio provides access to model management, deployment, experimentation, customization, and learning resources. 
 
-You can access the Azure OpenAI Studio through the Azure Portal after creating a resource, and at [https://oai.azure.com](https://oai.azure.com/?azure-portal=true) by logging in with your Azure OpenAI resource instance. During the sign-in workflow, select the appropriate directory, Azure subscription, and Azure OpenAI resource. 
+You can access the Azure OpenAI Studio in two ways, one through the Azure Portal after creating a resource, and another at [https://oai.azure.com](https://oai.azure.com/?azure-portal=true) by logging in with your Azure OpenAI resource instance. During the sign-in workflow, select the appropriate directory, Azure subscription, and Azure OpenAI resource. 
 
 ![Screenshot of the Azure OpenAI Studio portal which can be used to access several features.](../media/studio-portal.png)
 
-Once you are in the Studio, you will see a call-to-action button at the top of the screen. If you do not have any deployments yet, the button reads **Create new deployment**. Get started by selecting to button, which will bring you to the **deployments** page. Deployments is one of several navigation options that will appear on the left-hand side of the screen. 
+Once you are in the Azure OpenAI Studio, you will see a call-to-action button at the top of the screen. If you do not have any deployments yet, the button reads **Create new deployment**. Get started by selecting to button, which will bring you to the **deployments** page. Deployments is one of several navigation options that will appear on the left-hand side of the screen. 
 
 ![Screenshot of the Azure OpenAI Studio portal menu of pages.](../media/openai-portal-navigation.png)
 
