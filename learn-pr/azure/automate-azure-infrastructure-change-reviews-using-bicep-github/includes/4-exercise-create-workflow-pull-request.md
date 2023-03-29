@@ -94,6 +94,8 @@ Now that the workflow is configured and your Bicep file is updated, you can crea
 
    :::image type="content" source="../media/4-branches.png" alt-text="Screenshot of GitHub that shows the repository's branch list.":::
 
+   **Compare & pull request** is displayed for a short time when you push changes to branch that doesn't already have an open pull request. It's a shortcut to the **Open a pull request** page.
+
 1. Next to the **feature/linux-app** branch, select **New pull request**.
 
    :::image type="content" source="../media/4-create-pull-request.png" alt-text="Screenshot of GitHub that shows the link to create a pull request for the feature slash linux app branch.":::

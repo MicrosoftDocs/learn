@@ -217,6 +217,8 @@ Write-Host "AZURE_SUBSCRIPTION_ID: $($azureContext.Subscription.Id)"
 
 ::: zone-end
 
+Make a note of your application ID value for the _AZURE_CLIENT_ID_. You can use that value when you clean up resources when you're finished with this module.
+
 ## Create GitHub secrets
 
 You've created a workload identity, and granted it permission to deploy to the subscription. Next, create secrets in GitHub Actions.
