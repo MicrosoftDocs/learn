@@ -32,9 +32,9 @@ artemis_mission
 
 | Index | Mission | Total weight (kg) | Payload (kg) | Sample weight from total (kg) | Sample weight from payload (kg) |
 |---|---|---|---|---|---|
-|0|artemis1|26520|26988|75.549232|38.779584|57.164408|
-|1|artemis1b|26520|37965|75.549232|54.552649|65.050940|
-|2|artemis2|26520|42955|75.549232|61.722877|68.636054|
+|0|artemis1|26520|26988|75.549232|38.779584|
+|1|artemis1b|26520|37965|75.549232|54.552649|
+|2|artemis2|26520|42955|75.549232|61.722877|
 
 Finally, we can get the average of the two predictions:
 
