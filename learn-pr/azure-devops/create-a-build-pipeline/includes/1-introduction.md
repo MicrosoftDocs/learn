@@ -16,6 +16,8 @@ If you don't have any Microsoft-hosted parallel jobs and you don't want to wait 
 * Choose **Local development environment using a Microsoft-hosted agent** if you have one or more Microsoft-hosted parallel jobs and you want to use a Microsoft-hosted agent.
 * Choose **GitHub Codespaces development environment using a self-hosted agent** if you don't have any parallel jobs and you don't want to wait 2-3 business days for the free grant in order to use a Microsoft-hosted agent.
 
+If you decide to change between **Local development environment using a Microsoft-hosted agent** and **GitHub Codespaces development environment using a self-hosted agent** after starting the training module, you should restart the module and follow the steps from the beginning.
+
 ## Training module scenario
 
 The Tailspin web team is being pulled in many directions. Andy, the lead dev, is running from one meeting to another and never has any time. Amita, the QA person, is helping a tester on another team. Tim, who's in Ops, is upgrading his servers and hasn't been seen for days. Mara's dream of a true DevOps team is stalled (again).

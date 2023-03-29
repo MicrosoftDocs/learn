@@ -13,27 +13,23 @@ In .NET, you can package your app as a .zip file. You can then use the built-in 
 
 1. In Visual Studio Code, change *azure-pipelines.yml* as you see here:
 
-    #### [GitHub Codespaces](#tab/codespaces)
+    ::: zone pivot="github-codespaces-agent"
 
     [!code-yml[](code/7-codespaces-azure-pipelines-1.yml?highlight=43-54)]
+
+    ::: zone-end
+
+    ::: zone pivot="ms-hosted-agents"
+
+    [!code-yml[](code/7-codespaces-azure-pipelines-1.yml?highlight=43-54)]
+
+    ::: zone-end
 
     This version of *azure-pipelines.yml* looks like the previous version, but it adds two additional tasks.
 
     The first task uses the `DotNetCoreCLI@2` task to *publish* or package the app's build results (including its dependencies) into a folder. The `zipAfterPublish` argument specifies to add the built results to a .zip file.
 
     The second task uses the `PublishBuildArtifacts@1` task to publish the .zip file to Azure Pipelines. The `condition` argument specifies to run the task only when the previous task succeeds. `succeeded()` is the default condition, so you don't need to specify it. But we show it here to show its use.
-
-    #### [Microsoft-hosted agent](#tab/hosted-agent)
-
-    [!code-yml[](code/7-codespaces-azure-pipelines-1.yml?highlight=43-54)]
-
-    This version of *azure-pipelines.yml* looks like the previous version, but it adds two additional tasks.
-
-    The first task uses the `DotNetCoreCLI@2` task to *publish* or package the app's build results (including its dependencies) into a folder. The `zipAfterPublish` argument specifies to add the built results to a .zip file.
-
-    The second task uses the `PublishBuildArtifacts@1` task to publish the .zip file to Azure Pipelines. The `condition` argument specifies to run the task only when the previous task succeeds. `succeeded()` is the default condition, so you don't need to specify it. But we show it here to show its use.
-
-    ----
 
 1. From the integrated terminal, add *azure-pipelines.yml* to the index, commit the change, and push the change up to GitHub.
 
@@ -98,29 +94,18 @@ You now use variables to define these values one time. You then reference the va
 
 1. In Visual Studio Code, change *azure-pipelines.yml* as you see here:
 
-    #### [GitHub Codespaces](#tab/codespaces)
+    ::: zone pivot="github-codespaces-agent"
 
     [!code-yml[](code/7-codespaces-azure-pipelines-2.yml?highlight=9-12,16,18,25,33,42,45,49,54)]
 
-    Notice the `variables` section, which defines these variables:
+    ::: zone-end
 
-    * `buildConfiguration`: Specifies the build configuration.
-    * `wwwrootDir`: Specifies the path to the **wwwroot** directory.
-    * `dotnetSdkVersion`: Specifies the .NET SDK version to use.
-
-    To reference these variables, use the `$()` syntax just as you do for built-in variables. Here's the step that runs node-Sass to convert Sass files to CSS. To get the path to the **wwwroot** directory, it references the `wwwrootDir` variable.
-
-    ```yml
-    - script: './node_modules/.bin/node-sass $(wwwrootDir) --output $(wwwrootDir)'
-      displayName: 'Compile Sass assets'
-    ```
-
-    The script command uses the variable to define both the source directory for Sass files and the directory in which to write CSS files. It also uses the variable to define the task name that's shown in the user interface.
-
-    #### [Microsoft-hosted agent](#tab/hosted-agent)
+    ::: zone pivot="ms-hosted-agents"
 
     [!code-yml[](code/7-azure-pipelines-2.yml?highlight=9-12,16,18,25,33,42,45,49,54)]
 
+    ::: zone-end
+
     Notice the `variables` section, which defines these variables:
 
     * `buildConfiguration`: Specifies the build configuration.
@@ -135,8 +120,6 @@ You now use variables to define these values one time. You then reference the va
     ```
 
     The script command uses the variable to define both the source directory for Sass files and the directory in which to write CSS files. It also uses the variable to define the task name that's shown in the user interface.
-
-    ----
 
 1. From the integrated terminal, add *azure-pipelines.yml* to the index, commit the change, and push the change up to GitHub.
 

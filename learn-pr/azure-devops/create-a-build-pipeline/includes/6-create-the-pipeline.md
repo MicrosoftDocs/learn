@@ -178,14 +178,14 @@ In practice, you might add build tasks one at a time, push up your changes, and 
 
     Pushing the branch to GitHub triggers the build process in Azure Pipelines.
 
-1. In Azure Pipelines, go to your build. To do so, on the side of the page, select **Pipelines**, and then select your pipeline. Now select **Run pipeline**. You'll see your commit message and that the build is running using the code from the `build-pipeline` branch.
+1. In Azure Pipelines, go to your build. To do so, on the side of the page, select **Pipelines**, and then select your pipeline. You'll see your commit message and that the build is running using the code from the `build-pipeline` branch.
 
     :::image type="content" source="../media/6-build-history.png" alt-text="Screenshot of Azure Pipelines showing the run history, including the branch you recently pushed to GitHub.":::
 
     > [!TIP]
     > If you don't see the build right away, wait a few moments, or refresh the page.
 
-1. Select your build and trace the build tasks as they run.
+1. Select your build and choose **Jobs** and trace the build tasks as they run.
 
     For example, here's what happens when the `gulp@1` task runs to perform the gulp tasks that minify JavaScript and CSS assets:
 
