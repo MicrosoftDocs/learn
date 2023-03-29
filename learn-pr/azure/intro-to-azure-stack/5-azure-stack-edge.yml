@@ -17,26 +17,26 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: "What functionality does Vision Processing Unit provide in Azure Stack Edge?"
+  - content: "What functionality does the Vision Processing Unit provide in Azure Stack Edge?"
     choices:
-    - content: "accelerated Artificial Intelligence-inferencing"
+    - content: "Accelerated Artificial Intelligence-inferencing."
       isCorrect: true
-      explanation: "That's correct. Azure Stack Edge appliances include either Graphical Processing Unit (GPU) or Field Programmable Gate Array (FPGA), which enable accelerated Artificial Intelligence-inferencing and provide the network storage gateway functionality."
-    - content: "administer and monitor multiple Azure Stack Edge physical appliances"
+      explanation: "Correct. Azure Stack Edge appliances include either a Graphical Processing Unit (GPU) or a Field Programmable Gate Array (FPGA). These units enable accelerated Artificial Intelligence-inferencing and provide the network storage gateway functionality."
+    - content: "Administer and monitor multiple Azure Stack Edge physical appliances."
       isCorrect: false
-      explanation: "That's incorrect. This is the role of Azure Stack Edge resource accessible via the Azure portal."
+      explanation: "Incorrect. The Azure Stack Edge resource accessible via the Azure portal provides this functionality."
     - content: "Graphical interface to an Azure Stack HCI appliance"
       isCorrect: false
-      explanation: "That's incorrect. This is the role of Azure Stack Edge local web user interface (UI)."
+      explanation: "Incorrect. The Azure Stack Edge local web user interface (UI) provides this functionality."
 
   - content: "Which technology in Azure Stack Edge is used to implement the IoT Edge modules?"
     choices:
     - content: "Service Fabric microservices"
       isCorrect: false
-      explanation: "That's incorrect. Azure Stack Edge does not rely on Service Fabric."
+      explanation: "Incorrect. Azure Stack Edge doesn't rely on Service Fabric."
     - content: "Azure Container Instance."
       isCorrect: false
-      explanation: "That's incorrect. Azure Stack Edge does not rely on Azure Container Instances."
+      explanation: "Incorrect. Azure Stack Edge doesn't rely on Azure Container Instances."
     - content: "A managed Kubernetes environment."
       isCorrect: true
-      explanation: "That's correct. Containers are deployed via IoT Hub or Azure Arc within a managed Kubernetes environment."
+      explanation: "Correct. Containers are deployed via IoT Hub or Azure Arc within a managed Kubernetes environment."
