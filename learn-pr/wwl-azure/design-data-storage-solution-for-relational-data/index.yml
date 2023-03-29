@@ -2,8 +2,8 @@
 uid: learn.wwl.design-data-storage-solution-for-relational-data
 metadata:
   title: Design a data storage solution for relational data
-  description: "Azure Architects design and recommend relational data storage solutions."
-  ms.date: 11/04/2022
+  description: "<div|<span style=\"color:rgb(34, 34, 34);font-family:&quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, Verdana;font-size:12px;display:inline !important;\"|Azure Architects design and recommend relational data storage solutions.</span| </div|"
+  ms.date: 03/29/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
