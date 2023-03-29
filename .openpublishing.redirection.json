@@ -11,6 +11,36 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "learn-pr/azure/intro-to-azure-data-lake-storage/index.md",
+      "redirect_url": "/training/modules/introduction-to-azure-data-lake-storage/index",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-data-lake-storage/1-introduction.md",
+      "redirect_url": "/training/modules/introduction-to-azure-data-lake-storage/1-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-data-lake-storage/2-what-is-azure-data-lake-storage.md",
+      "redirect_url": "/training/modules/introduction-to-azure-data-lake-storage/2-azure-data-lake-gen2",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-data-lake-storage/3-how-azure-data-lake-storage-works.md",
+      "redirect_url": "/training/modules/introduction-to-azure-data-lake-storage/2-azure-data-lake-gen2",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-data-lake-storage/4-when-to-use-azure-data-lake-storage.md",
+      "redirect_url": "/training/modules/introduction-to-azure-data-lake-storage/5-stages-for-processing-big-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-data-lake-storage/6-summary.md",
+      "redirect_url": "/training/modules/introduction-to-azure-data-lake-storage/8-summary.md",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/enable-external-collaboration-with-b2b/3-collaborate-externally-b2b.yml",                      
       "redirect_url": "/training/modules/enable-external-collaboration-with-b2b/4-collaborate-externally-b2b",
       "redirect_document_id": false
