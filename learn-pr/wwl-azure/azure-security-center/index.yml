@@ -3,19 +3,19 @@ uid: learn.wwl.azure-security-center
 metadata:
   title: Enable and manage Microsoft Defender for Cloud
   description: "Use Azure Security Center, Azure Defender, and Secure Score to track and improve your security posture in Azure."
-  ms.date: 02/09/2023
+  ms.date: 03/23/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Enable and manage Microsoft Defender for Cloud
-summary: Use Azure Security Center, Azure Defender, and Secure Score to track and improve your security posture in Azure.
+summary: Use Microsoft Defender for Cloud to strengthen security posture and protect workloads against modern threats in Azure.
 abstract: |
   By the end of this module, you will be able to:
   - Define the most common types of cyber-attacks
-  - Configure Azure Security Center based on your security posture
+  - Configure Microsoft Defender for cloud based on your security posture
   - Review Secure Score and raise it
-  - Lock down your solutions using Security Center and Defender
+  - Lock down your solutions using Microsoft Defender for Cloud's workload protection
   - Enable Just-in-Time access and other security features
 prerequisites: |
   - None
@@ -36,12 +36,19 @@ subjects:
 units:
 - learn.wwl.azure-security-center.introduction
 - learn.wwl.azure-security-center.cyber-kill-chain
+- learn.wwl.azure-security-center.mitre-attack
+- learn.wwl.azure-security-center.cloud-kill-chain-vs-mitre-attack-cloud-matrix
 - learn.wwl.azure-security-center.implement-azure-security-center
+- learn.wwl.azure-security-center.azure-defender
+- learn.wwl.azure-security-center.azure-arc
+- learn.wwl.azure-security-center.azure-arc-capabilities
+- learn.wwl.azure-security-center.microsoft-cloud-security-benchmark
 - learn.wwl.azure-security-center.policies
+- learn.wwl.azure-security-center.view-and-edit-security-policies
 - learn.wwl.azure-security-center.recommendations
 - learn.wwl.azure-security-center.secure-score
-- learn.wwl.azure-security-center.azure-defender
 - learn.wwl.azure-security-center.brute-force-attacks
+- learn.wwl.azure-security-center.understand-just-in-time-vm-access
 - learn.wwl.azure-security-center.just-time-vm-access
 - learn.wwl.azure-security-center.demonstration
 - learn.wwl.azure-security-center.knowledge-check

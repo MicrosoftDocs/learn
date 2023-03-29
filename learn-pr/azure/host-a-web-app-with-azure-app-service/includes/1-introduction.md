@@ -1,4 +1,4 @@
-﻿Imagine you're building a website for a new business, or you're running an existing web app on an aging on-premises server. Setting up a new server can be challenging. You need appropriate hardware, likely a server-level operating system, and a web hosting stack.
+﻿Imagine you're building a website for a new business, or you're running an existing web app on an aging on-premises server. Setting up a new server can be challenging. You need appropriate hardware, likely a server-level operating system, and a web-hosting stack.
 
 Once it's running, you need to maintain the server. And what happens if your website traffic increases? You might need to invest in additional hardware.
 

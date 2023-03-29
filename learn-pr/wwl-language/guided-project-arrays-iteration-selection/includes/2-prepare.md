@@ -2,6 +2,9 @@
 
 In this guided project, you'll use Visual Studio Code to develop a C# application. The application will use arrays, `foreach` statements, and `if` statements to implement a list of design parameters. You'll begin by creating the array variables that contain your application data. To complete the project, you'll develop `foreach` and `if` statements that implement the application design goals.
 
+> [!IMPORTANT]
+> This module includes hands-on activities that require Visual Studio Code. You'll need access to a development environment that has Visual Studio Code installed and configured for C# application development.
+
 ## Project overview
 
 You're developing a Student Grading application that automates the calculation of grades for each student in a class. The parameters for your application are:

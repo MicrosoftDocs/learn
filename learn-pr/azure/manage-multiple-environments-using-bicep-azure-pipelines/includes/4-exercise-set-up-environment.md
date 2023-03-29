@@ -5,11 +5,12 @@ Before you start to work on your toy company's website pipeline, you need to con
 To meet these objectives, you'll:
 
 > [!div class="checklist"]
-> * Set up an Azure DevOps project for this module.
-> * Clone the project's repository to your computer.
-> * Create two resource groups in Azure.
-> * Create two service connections and environments in Azure Pipelines.
-> * Remove the resources that you don't need in the pre-created Azure DevOps project.
+>
+> - Set up an Azure DevOps project for this module.
+> - Clone the project's repository to your computer.
+> - Create two resource groups in Azure.
+> - Create two service connections and environments in Azure Pipelines.
+> - Remove the resources that you don't need in the pre-created Azure DevOps project.
 
 ## Get the Azure DevOps project
 
@@ -25,13 +26,13 @@ The modules in this learning path are part of a progression. For learning purpos
 Run a template that sets up your Azure DevOps project.
 
 > [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=bicepenvironments&azure-portal=true)
+> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=bicepenvironments)
 
 On the Azure DevOps Demo Generator site, follow these steps:
 
 1. Select **Sign In** and accept the usage terms.
 
-1. On the **Create New Project** page, select your Azure DevOps organization. Then enter a project name, such as *toy-website-environments*.
+1. On the **Create New Project** page, select your Azure DevOps organization. Then enter a project name, such as _toy-website-environments_.
 
     :::image type="content" source="../media/4-create-new-project.png" alt-text="Screenshot that shows creating a project through the Azure DevOps Demo Generator.":::
 
@@ -41,7 +42,7 @@ On the Azure DevOps Demo Generator site, follow these steps:
 
 1. Select **Navigate to project** to go to your project in Azure DevOps.
 
-[!include[](../../includes/cleanup-steps.md)]
+[!INCLUDE [](../../includes/cleanup-steps.md)]
 
 ## Clone the repository
 
@@ -73,7 +74,7 @@ On the Azure DevOps Demo Generator site, follow these steps:
 
    :::image type="content" source="../../includes/media/open-cloned-repo.png" alt-text="Screenshot of Visual Studio Code that shows a prompt to open the cloned repository.":::
 
-[!include[](../../includes/azure-template-pipeline-sign-in.md)]
+[!INCLUDE [](../../includes/azure-template-pipeline-sign-in.md)]
 
 ## Create two resource groups in Azure
 
@@ -82,8 +83,8 @@ On the Azure DevOps Demo Generator site, follow these steps:
 To create the two new resource groups, run the following Azure CLI commands in the Visual Studio Code terminal:
 
 ```azurecli
-az group create --name ToyWebsiteTest --location eastus
-az group create --name ToyWebsiteProduction --location eastus
+az group create --name ToyWebsiteTest --location westus3
+az group create --name ToyWebsiteProduction --location westus3
 ```
 
 ::: zone-end
@@ -93,8 +94,8 @@ az group create --name ToyWebsiteProduction --location eastus
 To create the two new resource groups, run the following Azure PowerShell commands in the Visual Studio Code terminal:
 
 ```azurepowershell
-New-AzResourceGroup -Name ToyWebsiteTest -Location eastus
-New-AzResourceGroup -Name ToyWebsiteProduction -Location eastus
+New-AzResourceGroup -Name ToyWebsiteTest -Location westus3
+New-AzResourceGroup -Name ToyWebsiteProduction -Location westus3
 ```
 
 ::: zone-end
@@ -157,7 +158,7 @@ Next, create two service connections in Azure Pipelines: one for your test envir
 
    :::image type="content" source="../media/4-environments-new-details-test.png" alt-text="Screenshot of the Azure DevOps page for a new environment named Test, with completed details and the Create button.":::
 
-   Before a pipeline can use the environment, you must grant it permission. For simplicity, you'll allow all pipelines to access the environment. In your own pipelines, you should restrict access to environments to just the pipelines that require it.
+   Before a pipeline can use the environment, you must grant it permission. For simplicity, you allow all pipelines to access the environment. In your own pipelines, you should restrict access to environments to just the pipelines that require it.
 
 1. Select the button with three dots and select **Security**.
 
@@ -171,7 +172,7 @@ Next, create two service connections in Azure Pipelines: one for your test envir
 
 1. Select the left arrow twice to return to the environments list.
 
-   :::image type="content" source="../media/4-environment-back.png" alt-text="Screenshot of the Azure DevOps page for an environment named Test, including the arrow button..":::
+   :::image type="content" source="../media/4-environment-back.png" alt-text="Screenshot of the Azure DevOps page for an environment named Test, including the arrow button.":::
 
 1. Repeat the process to create another environment named **Production**. Remember to set it to open access.
 
@@ -193,7 +194,7 @@ Next, create two service connections in Azure Pipelines: one for your test envir
 
 1. Select the arrow button next to **Advanced**.
 
-   Notice that, by default, approvers are allowed to approve the runs that they've triggered. Because you're the only person who will work with this pipeline, leave this checkbox selected. In other organizations, you might need to specify a different approver to meet compliance requirements.
+   Notice that, by default, approvers are allowed to approve the runs that they've triggered. Because you're the only person using this pipeline, leave this checkbox selected. In other organizations, you might need to specify a different approver to meet compliance requirements.
 
 1. Select **Create**.
 
@@ -201,7 +202,7 @@ Next, create two service connections in Azure Pipelines: one for your test envir
 
 ## Delete the old environment
 
-In the previous versions of the pipeline, you used a single environment named *Website*. Now that you've created pipeline environments that represent your new environments, you'll delete the old pipeline environment.
+In the previous versions of the pipeline, you used a single environment named _Website_. Now that you've created pipeline environments that represent your new environments, you can delete the old pipeline environment.
 
 1. Go to **Pipelines** > **Environments**.
 
@@ -217,7 +218,7 @@ In the previous versions of the pipeline, you used a single environment named *W
 
 ## Delete the old variables
 
-In the previous versions of the pipeline, you used a single set of variables to define the parameters and deployment configuration. Now that you're deploying to multiple environments, you'll delete these variables. You'll replace them with environment-specific sets of variables soon.
+In the previous versions of the pipeline, you used a single set of variables to define the parameters and deployment configuration. Now that you're deploying to multiple environments, you can delete those variables and replace them with environment-specific sets of variables soon.
 
 1. Go to **Pipelines** > **Pipelines**.
 

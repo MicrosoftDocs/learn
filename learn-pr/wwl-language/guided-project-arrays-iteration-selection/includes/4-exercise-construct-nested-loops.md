@@ -1,6 +1,6 @@
 
 
-In this exercise, you'll add a string array to hold the student names, and then implement a nested `foreach` structure that iterates through names in an outer loop and scores in the inner loop. You'll begin by constructing the `studentNames` array and a `foreach` loop that iterates through the array elements. Next, you'll move the code that's used to calculate Sophia's grades into the code block of the "names" loop. Finally, you'll implement the code logic that uses the student's name to access their scores array, calculate their average score, and write their grade to the console. The detailed tasks that you'll complete during this exercise are:
+In this exercise, you'll add a string array to hold the student names, and then implement a nested `foreach` structure that iterates through the student names in an outer loop and student scores in the inner loop. You'll begin by constructing the `studentNames` array and a `foreach` loop that iterates through the array elements. Next, you'll move the code that's used to calculate Sophia's grades into the code block of the "names" loop. Finally, you'll implement the code logic that uses the student's name to access their scores array, calculate their average score, and write their grade to the console. The detailed tasks that you'll complete during this exercise are:
 
 1. Create names array: Create a student names array.
 
@@ -32,7 +32,7 @@ In this task, you'll create a student names array and a `foreach` loop that iter
     string[] studentNames = new string[] { "Sophia", "Andrew", "Emma", "Logan" };
     ```
 
-    Notice that you have specified the student names as part of the declaration.
+    Notice that you've specified the student names as part of the declaration.
 
 1. To create a `foreach` statement that you can use to iterate through the student names, enter the following code:
 
@@ -65,16 +65,16 @@ In this task, you'll create a student names array and a `foreach` loop that iter
     }
     ```
 
-    Your code will be using this `foreach` loop as the outer loop of your application. By the end of this exercise, you will have implemented the following logic in your app:
+    Your code will use this `foreach` loop as the outer loop of your application. During this exercise, you'll implement the following logic in your application:
 
-    For each of the students in the `studentNames` array, your app will:
+    For each of the students in the `studentNames` array, your application will:
 
     - determine the current student.
     - access the current student's scores.
     - calculate the current student's grade (sum and average).
     - write the current student's grade to the console.
 
-    For now, however, you will only be writing the names of the students to the console.  
+    For now, however, you'll just write the names of the students to the console.  
 
 1. On the Visual Studio Code **File** menu, click **Save**.
 
@@ -155,7 +155,7 @@ In this task, you'll relocate the code that calculates and reports Sophia's scor
 1. Update your code to display proper code line indentation.
 
     > [!TIP]
-    > Visual Studio Code provides a `Format Document` command that can be used to keep your code formatting updated. Right-click inside the Visual Studio Code Editor panel, and then select **Format Document** from the popup menu. The keyboard shortcut for this command is: `Shift + Alt + F`.
+    > Visual Studio Code provides a `Format Document` command that can be used to keep your code formatting updated. Right-click inside the Visual Studio Code Editor, and then select **Format Document** from the popup menu. The keyboard shortcut for this command is: `Shift + Alt + F`.
 
 1. Ensure that your updates match the following code:
 
@@ -237,6 +237,9 @@ In this task, you'll relocate the code that calculates and reports Sophia's scor
     {
         if (name == "Sophia")
         {
+            int sophiaSum = 0;
+            decimal sophiaScore;
+
             foreach (int score in sophiaScores)
             {
                 // add the exam score to the sum
@@ -254,7 +257,7 @@ In this task, you'll relocate the code that calculates and reports Sophia's scor
     Console.ReadLine();
     ```
 
-    Notice that the `if` statement inside your outer `foreach` code block limits which student's grade is calculated and reported. This isn't exactly what you need, but it is a step in the right direction.
+    Notice that the `if` statement inside your outer `foreach` code block limits which student's grade is calculated and reported. This isn't exactly what you need, but it's a step in the right direction.
 
 1. On the Visual Studio Code **File** menu, click **Save**.
 
@@ -288,7 +291,7 @@ In this task, you'll relocate the code that calculates and reports Sophia's scor
 
 ## Update the nested loop to calculate all student scores
 
-In this task, you'll update the code that performs student score calculations using a new scores array. You'll begin by creating an array named `studentScores` that can be used to hold the scores of any student. Next, you'll create an `if-elseif` construct that uses the current student's name to assign their scores array to `studentScores`. Finally, you'll update the code that calculates and reports the student's grades. When you're done, the report should include the name and numeric score for all students.
+In this task, you'll update the code that performs student score calculations using a new scores array. You'll begin by creating an array named `studentScores` that can be used to hold the scores of any student. Next, you'll create an `if .. elseif` construct that uses the current student's name to assign their scores array to `studentScores`. Finally, you'll update the code that calculates and reports the student's grades. When you're done, the report should include the name and numeric score for all students.
 
 1. Create a blank code line below the declaration of the `studentNames` array.
 
@@ -325,7 +328,7 @@ In this task, you'll update the code that performs student score calculations us
 
 1. Move the code that calculates and reports Sophia's score to a location below the code block.
 
-    You are moving all of the code that's in the code block to a location below the code block. The reason for doing this will become apparent during the next few steps.
+    You're moving all of the code that's in the code block to a location below the code block. The reason for doing this will become apparent during the next few steps.
 
 1. Verify that the code in your outer `foreach` code block matches the following code:
 
@@ -338,7 +341,6 @@ In this task, you'll update the code that performs student score calculations us
         }
     
         int sophiaSum = 0;
-
         decimal sophiaScore;
 
         foreach (int score in sophiaScores)
@@ -359,7 +361,7 @@ In this task, you'll update the code that performs student score calculations us
 1. To assign the `sophiaScores` array to `studentScores` when `currentStudent == "Sophia"`, update your `if` statement code as follows:
 
     ```csharp
-    if ()
+    if (currentStudent == "Sophia")
         studentScores = sophiaScores;
 
     ```

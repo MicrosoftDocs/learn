@@ -1,6 +1,6 @@
 Your team is happy with the code you've written so far for the card game. The team wants you to develop the code further and start implementing game rule-specific logic, such as calculating the value of a hand. 
 
-For this exercise, you'll use some of the functions in the list module.
+For this exercise, use some of the functions in the list module.
 
 ## Calculate a hand for the game 31
 
@@ -57,4 +57,4 @@ Your task is to take a card hand and calculate its value by using the `sumBy()` 
    26 
    ```
 
-Congratulations! You've managed to evaluate a card game for the game 31. It became 26, which is not quite 31, but it's pretty good sum.
+Congratulations! You've managed to evaluate a card game for the game 31. It became 26, which isn't quite 31, but it's a good sum.

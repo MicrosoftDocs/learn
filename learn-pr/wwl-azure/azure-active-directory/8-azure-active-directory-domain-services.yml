@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.azure-active-directory.azure-ad-domain-services
+title: Deploy Azure AD Domain Services
+metadata:
+  title: Deploy Azure AD Domain Services
+  description: "Deploy Azure AD Domain Services"
+  ms.date: 03/23/2023
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: None
+durationInMinutes: 7
+content: |
+  [!include[](includes/8-azure-active-directory-domain-services.md)]

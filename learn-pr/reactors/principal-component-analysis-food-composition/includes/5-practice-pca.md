@@ -68,7 +68,7 @@ The output is:
 ```Output
 Text(0.5,1,'Cumulative Explained Variance Graph')
 ```
-:::image type="content" alt-text="Cumulative explained variance graph." source="../media/variance-graph.png" loc-scope="Azure":::
+:::image type="content" alt-text="Diagram showing a cumulative explained variance graph." source="../media/variance-graph.png" loc-scope="Azure":::
 
 Ultimately, the number of components to use is a matter of judgment, but five vectors (and 70 percent of the variance) will suffice for our purposes.
 
