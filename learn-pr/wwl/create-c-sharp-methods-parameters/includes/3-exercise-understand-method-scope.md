@@ -1,5 +1,6 @@
 
 
+
 `for` loops, `if-else` statements, and methods all represent different types of code blocks. Each code block has its own 'scope'. 'Scope' is the region of a program where certain data is accessible. Variables declared inside a method, or any code block, are only accessible within that region. As programs become more complicated, this pattern helps programmers consistently use clearly named variables and maintain easy to read code.
 
 In this exercise, you'll learn more about method scope by working with different types of methods and variables.
