@@ -76,10 +76,10 @@ You'll now call the template that you just built from the pipeline. You'll do so
     ::: zone-end
 
     ::: zone pivot="github-codespaces-agent"
-    [!code-yml[](code/8-codespaces-azure-pipelines.yml?highlight=40-42, 44-46)]
+    [!code-yml[](code/8-codespaces-azure-pipelines.yml?highlight=39-44)]
     ::: zone-end
 
-    This file looks like the original, except that it replaces the build and publishes tasks with calls to the template that does the same tasks.
+    This file looks like the original, except that it replaces the build and publish tasks with calls to the template that does the same tasks.
 
     You'll see that the template is called one time for each configuration. To pass the configuration name to the template, each `template` task uses the `parameters` argument.
 ## Run the pipeline
