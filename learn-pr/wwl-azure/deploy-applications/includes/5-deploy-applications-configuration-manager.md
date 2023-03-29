@@ -1,5 +1,5 @@
 
-With the Configuration Manager client deployed on a device, instead of using Group Policy, you can leverage the inbuilt functionality of Configuration Manager to manage application deployment. This will provide you with more flexibility and control for managing the application estate. Both approaches follow the same workflow, and, like Group Policy, Configuration Manager does not manage preparation; however, Configuration Manager can manage the other elements of the lifecycle.
+With the Configuration Manager client deployed on a device, instead of using Group Policy, you can use the inbuilt functionality of Configuration Manager to manage application deployment. This will provide you with more flexibility and control for managing the application estate. Both approaches follow the same workflow, and, like Group Policy, Configuration Manager doesn't manage preparation; however, Configuration Manager can manage the other elements of the lifecycle.
 
 ### Application deployment in Configuration Manager
 
@@ -7,102 +7,19 @@ Although *application* or *app* is a widely used term in computing, in Configura
 
 You can do many more things with an application to cater to multiple scenarios. Below are some of the key elements that make up the application model.
 
-:::row:::
-  :::column:::
-    **Element** 
-  :::column-end:::
-  :::column:::
-    **Description** 
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Deployment type
-  :::column-end:::
-  :::column:::
-    The *deployment type* is the set of contents in the box. An application needs at least one deployment type, as it determines how to install the app. Use more than one deployment type to configure different content and installation program for the same application.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Requirements
-  :::column-end:::
-  :::column:::
-    *Requirements* ensure the target endpoint is installed with the most appropriate application, such as the OS being Windows x64.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Global conditions
-  :::column-end:::
-  :::column:::
-    *Global conditions* can be used alongside requirements to pre-define or specify custom requirements. For example, an environments key identifier for a test or production domain.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Simulated deployment
-  :::column-end:::
-  :::column:::
-    A *simulated deployment* evaluates the requirements, detection method, and dependencies for an application and reports out what the expected result would be without installing the application.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Deployment applications
-  :::column-end:::
-  :::column:::
-    A *deployment action* specifies whether you want to install or uninstall the application. Not all deployment types support the uninstall action.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Purpose
-  :::column-end:::
-  :::column:::
-    The *deployment purpose* specifies whether the deployment app is **Required** or **Available.** If the deployment is required, the client will install based on the schedule. If the deployment is available, it will be made available in Software Center.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Revisions
-  :::column-end:::
-  :::column:::
-    When you make changes to an application, a *revision* is created to enable the application change configuration to be tracked.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Detection method
-  :::column-end:::
-  :::column:::
-    Use *detection methods* to discover whether a device has already installed an application. If the detection method indicates the application is installed, Configuration Manager will not attempt to install it again.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Dependency
-  :::column-end:::
-  :::column:::
-    *Dependencies* define one or more deployment types from another application that the client must install before it installs this deployment type. This is often helpful in more complex application installations.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Supersedence
-  :::column-end:::
-  :::column:::
-    You can use Configuration Manager to upgrade or replace existing applications by using a *supersedence* relationship. When you supersede an application, you specify a new deployment type to replace the deployment type of the superseded application.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Application groups
-  :::column-end:::
-  :::column:::
-    Starting in version 1906, you can use *application groups* to deploy a group of applications to a user or device collection. Previously, you would have used a task sequence to perform such an action in a complex dependency setup. Application groups streamline this process.
-  :::column-end:::
-:::row-end:::
+| **Element**             | **Description** |
+| ----------------------- | --------------- |
+| Deployment type         |   The *deployment type* is the set of contents in the box. An application needs at least one deployment type, as it determines how to install the app. Use more than one deployment type to configure different content and installation program for the same application.              |
+| Requirements            |      *Requirements* ensure the target endpoint is installed with the most appropriate application, such as the OS being Windows x64.           |
+| Global conditions       |   *Global conditions* can be used alongside requirements to pre-define or specify custom requirements. For example, an environments key identifier for a test or production domain.              |
+| Simulated deployment    |     A *simulated deployment* evaluates the requirements, detection method, and dependencies for an application and reports out what the expected result would be without installing the application.            |
+| Deployment applications |      A *deployment action* specifies whether you want to install or uninstall the application. Not all deployment types support the uninstall action.           |
+| Purpose                 |  The *deployment purpose* specifies whether the deployment app is **Required** or **Available.** If the deployment is required, the client will install based on the schedule. If the deployment is available, it will be made available in Software Center.               |
+| Revisions               |     When you make changes to an application, a *revision* is created to enable the application change configuration to be tracked.            |
+| Detection method        |      Use *detection methods* to discover whether a device has already installed an application. If the detection method indicates the application is installed, Configuration Manager won't attempt to install it again.           |
+| Dependency              |    *Dependencies* define one or more deployment types from another application that the client must install before it installs this deployment type. This is often helpful in more complex application installations.             |
+| Supersedence            |       You can use Configuration Manager to upgrade or replace existing applications by using a *supersedence* relationship. When you supersede an application, you specify a new deployment type to replace the deployment type of the superseded application.          |
+| Application groups      |     Starting in version 1906, you can use *application groups* to deploy a group of applications to a user or device collection. Previously, you would have used a task sequence to perform such an action in a complex dependency setup. Application groups streamline this process.            |
 
 
 ### Create an application in Configuration Manager
@@ -116,7 +33,7 @@ To create an application:
 3.  On the **General** page of the **Create Application Wizard**, choose **Automatically detect information about this application from installation files**. This pre-populates some of the information in the wizard with information that is extracted from the installation .msi file. Then, specify the following information:
     
     1.  **Type**: Choose **Windows Installer (\*.msi file)**.
-    2.  **Location**: Type the location (or choose **Browse** to select the location) of the installation file **Contoso.msi**. Note that you must specify the location in the form *\\\\Server\\Share\\File* for Configuration Manager to locate the installation files.
+    2.  **Location**: Type the location (or choose **Browse** to select the location) of the installation file **Contoso.msi**. Note: you must specify the location in the form *\\\\Server\\Share\\File* for Configuration Manager to locate the installation files.
         
         The example below shows the location of an MSI file.
         
@@ -130,7 +47,7 @@ To create an application:
     :::image type="content" source="../media/configuration-manager-example-msiexec-application-4954adc8.png" alt-text="Screenshot of dialog prompting for information about the application, such as name, publisher, version, and comments.":::
     
 6.  Choose **Next**. On the **Summary** page, confirm your application settings and then complete the wizard.
-7.  You have now created the app. To find it, in the **Software Library** workspace, expand **Application Management**, and then choose **Applications**. For this example, you will see:
+7.  You've now created the app. To find it, in the **Software Library** workspace, expand **Application Management**, and then choose **Applications**. For this example, you'll see:
     
     :::image type="content" source="../media/configuration-manager-software-library-example-6247005d.png" alt-text="Screenshot of Application Management folder, with the sample Contoso application listed in the Applications group.":::
     
@@ -140,101 +57,22 @@ To create an application:
 
 For a complex application deployment that has multiple applications, a specific sequence, or restarts as part of the eventual completion, the application model may not suit this specific scenario. In this instance, you can use the task sequence engine to initiate the installation.
 
-### Choose an Endpoint Manager solution for deploying an application
+### Choose a solution for deploying an application
 
-Endpoint Manager offers application deployment from both Configuration Manager and Intune to deliver your line of business applications to Windows clients. Below are the supported applications types that each can offer.
+Configuration Manager and Intune offer application deployments to deliver your line-of-business applications to Windows clients. Below are the supported applications types that each can offer.
 
-:::row:::
-  :::column:::
-    **Application Type**
-  :::column-end:::
-  :::column:::
-    **Configuration Manager**
-  :::column-end:::
-  :::column:::
-    **Microsoft Intune**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    .MSI
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-  :::column:::
-    Yes\*
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    .IntuneWin
-  :::column-end:::
-  :::column:::
-    No
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Office C2R
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    APPX/MSIX
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Store Apps
-  :::column-end:::
-  :::column:::
-    
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    M365 Apps for Enterprise
-  :::column-end:::
-  :::column:::
-    No
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    App-V
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-  :::column:::
-    No
-  :::column-end:::
-:::row-end:::
+| **Application Type**     | **Configuration Manager** | **Microsoft Intune** |
+| ---------------------- | ------------------------- | -------------------- |
+| .MSI                     | Yes                       | Yes                  |
+| .IntuneWin               | No                        | Yes                  |
+| Office C2R               | Yes                       | Yes                  |
+| APX/MSIX                 | Yes                       | Yes                  |
+| Store Apps               | No                        | Yes                  |
+| Microsoft 365 Apps for Enterprise | No                        | Yes                  |
+| App-V                    | Yes                       | No                   |
 
 
 > [!NOTE]
 > While Intune can deliver MSI applications, these cannot include advanced parameters as part of the installation. For instances such as these, you need to convert the application to a \*.IntuneWin format and deliver it from a script file.
 
-You can deliver many of the application formats using both Configuration Manager and Intune. However, for more advanced configuration delivered natively, Configuration Manager is still a more robust option for application deployment.
+You can deliver many of these application formats using both **Configuration Manager** and **Intune**. However, for more advanced configuration delivered natively, Configuration Manager is still a more robust option for application deployment.

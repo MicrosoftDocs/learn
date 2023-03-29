@@ -2,20 +2,20 @@
 uid: learn.wwl.deploy-applications
 metadata:
   title: MD-102 Deploy and update applications
-  description: "In this module, you will be introduced to application deployment in Intune and Microsoft Store for Business."
-  ms.date: 03/15/2023
+  description: "In this module, you'll master deploying applications using Intune, Configuration Manager, Group Policy, and Microsoft Store Apps. These powerful tools and techniques will equip you to manage and maintain diverse applications across your organization effectively."
+  ms.date: 03/29/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
 title: Deploy and update applications
-summary: In this module, you will be introduced to application deployment in Intune and Microsoft Store for Business.
+summary: In this module, you'll master deploying applications using Intune, Configuration Manager, Group Policy, and Microsoft Store Apps. These powerful tools and techniques will equip you to manage and maintain diverse applications across your organization effectively.
 abstract: |
   After this module, you should be able to:
-  *   Explain how to deploy applications using Intune
+  *   Explain how to deploy applications using Intune and Configuration Manager
   *   Learn how to deploy applications using Group Policy
-  *   Understand Microsoft Store for Business
-  *   Learn how to configure Microsoft Store for Business
-  *   Explain how to use Microsoft Store for Business
+  *   Understand Microsoft Store Apps
+  *   Learn how to deploy apps using Microsoft Store Apps
+  *   Learn how to configure Microsoft Store Apps
 prerequisites: |
   *   Strong technical skills installing, maintaining, and troubleshooting the Windows 11 OS or later
   *   Strong understanding of computer networking, client security, and application concepts
@@ -41,10 +41,8 @@ units:
 - learn.wwl.deploy-applications.deploy-applications-group-policy
 - learn.wwl.deploy-applications.assign-publish-software
 - learn.wwl.deploy-applications.explore-microsoft-store-business
-- learn.wwl.deploy-applications.examine-microsoft-store-business-prerequisites
-- learn.wwl.deploy-applications.implement-microsoft-store-business
-- learn.wwl.deploy-applications.obtain-apps-based-your-licensing-model
-- learn.wwl.deploy-applications.use-microsoft-store-business
+- learn.wwl.deploy-applications.implement-microsoft-store-apps
+- learn.wwl.deploy-applications.update-microsoft-store-apps-intune
 - learn.wwl.deploy-applications.assign-apps-company-employees
 - learn.wwl.deploy-applications.knowledge-check
 - learn.wwl.deploy-applications.summary

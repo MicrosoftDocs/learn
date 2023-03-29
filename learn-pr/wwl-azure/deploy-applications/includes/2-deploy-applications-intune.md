@@ -5,7 +5,7 @@ As an IT admin, you can use Microsoft Intune to manage the client apps that your
  -  You might need to manage apps on both company devices and users' personal devices.
  -  You must ensure that your network and your data remain secure.
 
-Additionally, you might want to assign and manage apps on devices that are not enrolled with Intune. Intune offers a range of capabilities to help you get the apps you need on the devices you want to run them on.
+Additionally, you might want to assign and manage apps on devices that aren't enrolled with Intune. Intune offers a range of capabilities to help you get the apps you need on the devices you want to run them on.
 
 ### Microsoft Intune app lifecycle
 
@@ -16,15 +16,15 @@ The Microsoft Intune app lifecycle begins when an app is added and progresses th
 
 #### Add
 
-The first step in app deployment is to identify the apps you want to manage and assign, and add them to Intune. You can work with many different app types, the basic procedures are the same. With Intune you can add apps written in-house (line-of-business), apps from the store, apps that are built-in, and apps on the web.
+The first step in app deployment is to identify the apps you want to manage and assign, and add them to Intune. You can work with many different app types, the basic procedures are the same. With Intune you can add apps written in-house (line-of-business), apps from the store, apps that are built in, and apps on the web.
 
 #### Deploy
 
-After you've added the app to Intune, you can then assign it to users and devices that you manage. Intune makes this process easy, and after the app is deployed, you can monitor the success of the deployment from Intune within the Endpoint Manager admin center. Additionally, in some app stores, such as the Apple and Windows app stores, you can purchase app licenses in bulk for your company. Intune can synchronize data with these stores so that you can deploy and track license usage for these types of apps right from the Intune administration console.
+After you've added the app to Intune, you can then assign it to users and devices that you manage. Intune makes this process easy, and after the app is deployed, you can monitor the success of the deployment from Intune within the Endpoint Manager admin center. Additionally, in some app stores, such as the Apple and Windows app stores, you can purchase app licenses in bulk for your company. Intune synchronizes data with these stores so that you can deploy and track license usage for these types of apps right from the Intune administration console.
 
 #### Configure
 
-As part of the app lifecycle, new versions of apps are regularly released. Intune provides tools to easily update apps that you have deployed to a newer version. Additionally, you can configure extra functionality for some apps, for example:
+As part of the app lifecycle, new versions of apps are regularly released. Intune provides tools to easily update apps that you've deployed to a newer version. Additionally, you can configure extra functionality for some apps, for example:
 
  -  iOS app configuration policies supply settings for compatible iOS apps that are used when the app is run. For example, an app might require specific branding settings or the name of a server to which it must connect.
  -  Managed browser policies help you to configure settings for the Intune managed browser, which replaces the default device browser and lets you restrict the websites that your users can visit.

@@ -15,7 +15,7 @@ Some features worth noting include:
 
 Before the Win32 app can be deployed with Intune, it must be prepped. The following chart illustrates the steps for preparing the app.
 
-:::image type="content" source="../media/prepare-window-32-app-e7c0051e.png" alt-text="Diagram of the process of preparing an app for Intune. Steps are Gather Media, validate command for Install or Uninstall, Create IntuneWin file, reduce size to 8GB if needed, and specify the source installer folder, setup file to run, and output folder of the .intunewin file.":::
+:::image type="content" source="../media/prepare-window-32-app-e7c0051e.png" alt-text="Diagram of the process of preparing an app for Intune. Steps are Gather Media, validate command for Install or Uninstall, Create IntuneWin file, reduce size to 8 GB if needed, and specify the source installer folder, setup file to run, and output folder of the .intunewin file.":::
 
 
 The Win32 Content Prep Tool (IntuneWinAppUtil.exe) is a command line tool used to compress the Win32 app into a .intunewin file. The folder, install file (such as setup.exe) and output folder must be specified. Running the tool with the -h switch will display usage information.
@@ -45,7 +45,7 @@ Once the Intunewin file has been created, it can be added to Intune. The steps f
 5.  **Define the app requirements.** This might include if it’s x86/x64, minimum OS version, disk space required, minimum memory, etc.
 6.  **Add requirement rules.** These define a specific configuration to look for, such as an existing file or folder, a registry value, or a script to execute and compare against the results of the script.
 7.  **Configure app detection rules.** If the Win32 app has dependencies on other apps, this can bet set to check for information such as an MSI product code or the presence of a path/file, a registry key/value, or the results of a script.
-8.  **Configure App return codes.** This defines the result of the installation. Default values such as Success, Failure, Reboot required, and Retry are available. Additional codes can be created.
+8.  **Configure App return codes.** This defines the result of the installation. Default values such as Success, Failure, Reboot required, and Retry are available. More codes can be created.
 
 Once the process of adding the app is complete, it can be assigned like any other app. Delivery optimization is supported and toast notifications can be suppressed as well.
 
