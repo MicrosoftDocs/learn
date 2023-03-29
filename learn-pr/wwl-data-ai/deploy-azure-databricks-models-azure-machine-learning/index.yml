@@ -3,7 +3,7 @@ uid: learn.wwl.deploy-azure-databricks-models-azure-machine-learning
 metadata:
   title: Deploy Azure Databricks models in Azure Machine Learning
   description: "Deploy Azure Databricks models in Azure Machine Learning"
-  ms.date: 09/15/2021
+  ms.date: 03/22/2023
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -19,6 +19,7 @@ abstract: |
 prerequisites: |
   Before starting this module, you should be familiar with using Python to train machine learning models in Azure Databricks.
 iconUrl: /training/achievements/deploy-azure-databricks-models-in-azure-machine-learning.svg
+hidden: true
 levels:
 - intermediate
 roles:

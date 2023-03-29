@@ -2,11 +2,11 @@
 
 ## Why use the Azure portal?
 
-The first step in hosting your web application is to create a web app (an App Service app) inside your Azure subscription.
+The first step in hosting your web application is to create a web app (an Azure App Service app) inside your Azure subscription.
 
-There are several ways you can create a web app. You can use the Azure portal, the Azure Command Line Interface (CLI), a script, or an IDE.
+There are several ways you can create a web app. You can use the Azure portal, the Azure Command Line Interface (CLI), a script, or an integrated development environment (IDE) like Visual Studio.
 
-The information presented in this unit will discuss how to use the Azure portal to create a web app, and you'll use this information to create a web app in the next exercise. For this module, we'll demonstrate using the Azure portal because it's a graphical experience, which makes it a great learning tool. The portal helps you discover available features, add additional resources, and customize existing resources.
+The information in this unit will discuss how to use the Azure portal to create a web app, and you'll use this information to create a web app in the next exercise. For this module, we'll demonstrate using the Azure portal because it's a graphical experience, which makes it a great learning tool. The portal helps you discover available features, add additional resources, and customize existing resources.
 
 ## What is Azure App Service?
 
@@ -28,7 +28,7 @@ The Azure portal provides out-of-the-box continuous integration and deployment w
 
 In addition to being able to set up continuous integration/deployment for your web app, you can always benefit from the tight integration with Visual Studio to publish your web app to Azure via Web Deploy technology. App Service also supports FTP-based publishing for more traditional workflows.
 
-### Built-in auto scale support (automatic scale-out based on real-world load)
+### Built-in autoscale support (automatic scale-out based on real-world load)
 
 The ability to scale up/down or scale out is baked into the web app. Depending on the web app's usage, you can scale your app up/down by increasing/decreasing the resources of the underlying machine that is hosting your web app. Resources can be number of cores or the amount of RAM available.
 
@@ -36,7 +36,7 @@ Scaling out, on the other hand, is the ability to increase the number of machine
 
 ## Creating a web app
 
-When you're ready to run a web app on Azure, you visit the Azure portal and create a **Web App** resource. Creating a web app allocates a set of hosting resources in App Service, which you can use to host any web-based application that is supported by Azure, whether it be ASP.NET Core, Node.js, Java, Python, etc.
+When you're ready to run a web app on Azure, you can visit the Azure portal and create a **Web App** resource. Creating a web app allocates a set of hosting resources in App Service, which you can use to host any web-based application that is supported by Azure, whether it be ASP.NET Core, Node.js, Java, Python, etc.
 
 The Azure portal provides a wizard to create a web app. This wizard requires the following fields:
 
@@ -57,7 +57,7 @@ If you're deploying your app as code, many of the available runtime stacks are l
 
 If your application is packaged as a Docker image, choose the operating system on which your image is designed to run.
 
-Selecting **Windows** activates the Monitoring tab, where you have the option to enable **Application Insights**. Enabling this feature will configure your app to automatically send detailed performance telemetry to the Application Insights monitoring service without requiring any changes to your code. You can use Application Insights from Linux-hosted apps as well, but this turnkey, no-code option is only available on Windows.
+Selecting **Windows** activates the **Monitoring** tab, where you can enable **Application Insights**. Enabling this feature configures your app to automatically send detailed performance telemetry to the Application Insights monitoring service without requiring any changes to your code. You can use Application Insights from Linux-hosted apps as well, but this turnkey, no-code option is only available on Windows.
 
 ### App Service plans
 
@@ -65,6 +65,6 @@ An **App Service** plan is a set of virtual server resources that run App Servic
 
 A single App Service plan can host multiple App Service web apps. In most cases, the number of apps you can run on a single plan will be limited by the performance characteristics of the apps and the resource limitations of the plan.
 
-App Service plans are the unit of billing for App Service. The size of each App Service plan in your subscription, in addition to the bandwidth resources used by the apps deployed to those plans, determines the price that you pay. The number of web apps deployed to your App Service plans has no effect on your bill.
+App Service plans are the unit of billing for App Service. The size of each App Service plan in your subscription, in addition to the bandwidth resources the apps deployed to those plans use, determines the price that you pay. The number of web apps deployed to your App Service plans has no effect on your bill.
 
 You can use any of the available Azure management tools to create an App Service plan. When you create a web app via the Azure portal, the wizard will help you to create a new plan at the same time if you don't already have one.

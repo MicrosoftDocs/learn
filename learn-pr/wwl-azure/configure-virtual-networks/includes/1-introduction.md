@@ -1,3 +1,4 @@
+
 Virtual networks are a fundamental component of private networks that enable resources to communicate securely. Communication can happen between resources, over the internet, and with on-premises networks. In this module, we explore how Azure Virtual Network can support your configuration.
 
 Suppose your company is migrating to Azure. They want to replicate their on-premises network in the cloud. Their Azure resources need to be organized into virtual networks and subnets, and implement a customized IP addressing schema for the company. 
@@ -19,7 +20,7 @@ In this module, you learn how to:
 
 The content in the module helps you prepare for [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104). The module concepts are covered in:
 
-Configure and manage virtual networking (25–30%)
+Configure and manage virtual networking (20–25%)
 
 - Implement and manage virtual networking
    - Create and configure virtual networks

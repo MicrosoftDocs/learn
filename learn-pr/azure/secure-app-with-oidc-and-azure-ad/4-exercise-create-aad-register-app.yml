@@ -4,13 +4,11 @@ metadata:
   title: Exercise - Create an Azure AD tenant and configure registration for your application
   description: Create a new Azure AD tenant and then register your application with that tenant.
   ms.date: 07/17/2019
-  author: chrispine-chiedo
-  ms.author: cchiedo
+  author: davidmu1
+  ms.author: davidmu
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Create an Azure AD tenant and configure registration for your application
 durationInMinutes: 10
-interactive: bash
-azureSandbox: true
 content: |
   [!include[](includes/4-exercise-create-aad-register-app.md)]

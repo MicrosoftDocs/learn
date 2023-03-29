@@ -1,6 +1,6 @@
 The **Publish** wizard in the Azure Functions template provides the most straightforward way to deploy Azure Functions, especially for testing purposes.
 
-In the luxury watch online website scenario, you've decided to use Visual Studio 2019 to deploy functions to an Azure Function App in the cloud. First, you'll create an Azure Function App, and then use the Visual Studio **Publish** wizard to deploy the functions you create.
+In the luxury watch online website scenario, you've decided to use Visual Studio 2022 to deploy functions to an Azure Function App in the cloud. First, you'll create an Azure Function App, and then use the Visual Studio **Publish** wizard to deploy the functions you create.
 
 In this exercise, you'll use the Azure portal to create an Azure Function App. Then, you'll deploy the **WatchInfo** function using the Visual Studio project that you created in a previous exercise. Lastly, you'll test the function to verify that it has been deployed correctly.
 
@@ -14,7 +14,7 @@ In this exercise, you'll use the Azure portal to create an Azure Function App. T
 
     The **Create a resource** pane appears.
 
-1. In the **Create a resource** menu, select **Compute**, and then, in the results list, select **Function App**.
+1. In the **Create a resource** menu, select **Compute**, and then search for and select **Function App**. Select **Create**.
 
     :::image type="content" source="../media/5-compute-function-app.png" alt-text="Screenshot of Compute category and Function App service option.":::
 
@@ -36,8 +36,12 @@ In this exercise, you'll use the Azure portal to create an Azure Function App. T
     | Function App name | *\<your-function-app-name\>* |
     | Publish | Code |
     | Runtime stack | .NET |
-    | Version | 3.1 |
+    | Version | 6 |
     | Region  | Accept the default location. |
+    | **Operating system** |
+    | Operating System | Windows |
+    | **Plan** |
+    | Plan type | Consumption (Serverless) |
 
 1. Select **Next : Hosting**.
 
@@ -47,10 +51,6 @@ In this exercise, you'll use the Azure portal to create an Azure Function App. T
     | ------- | ----- |
     | **Storage** |
     | Storage account | Accept the default value. |
-    | **Operating system** |
-    | Operating System | Windows |
-    | **Plan** |
-    | Plan type | Consumption (Serverless) |
 
 1. Select **Review + create**, and then select **Create**. The deployment shows the resources that are created for the Function App.
 
@@ -68,35 +68,25 @@ In this exercise, you'll use the Azure portal to create an Azure Function App. T
 
 1. Select **Azure**, and then select **Next**.
 
-    :::image type="content" source="../media/5-publish-target.png" alt-text="Screenshot of the Publish target window with Azure option highlighted." loc-scope="vs":::
+    :::image type="content" source="../media/5-publish-target.png" alt-text="Screenshot of the Publish target window with the Azure option highlighted." loc-scope="vs":::
 
     The **Publish** pane updates with the new information.
 
-1. In the **Subscription** dropdown list, select **Concierge Subscription**. In the **View** dropdown list, select **Resource group**, and above the **Function Apps** field, select the **+** icon to create a new Azure function.
+1. Select **Azure Function App (Windows)**, then select **Next**.
+
+    :::image type="content" source="../media/5-publish-specific-target.png" alt-text="Screenshot of the Publish specific target window with the Azure Function App (Windows) option highlighted." loc-scope="vs":::
+
+1. In the **Subscription name** dropdown list, select **Concierge Subscription**. Expand the <rgn>[Sandbox resource group]</rgn> folder, then select your Function App. Select **Finish**.
 
     :::image type="content" source="../media/5-publish-functions-instance.png" alt-text="Screenshot of the Publish Functions instance window. The user to select Function Apps." loc-scope="vs":::
-
-    The **Function App (Windows)** window appears.
-
-1. Accept all the default selections, ensuring that **Location** is the same as what you specified in the Azure portal, and then select **Create**.
-
-    :::image type="content" source="../media/5-function-app-windows.png" alt-text="Screenshot of the Function App (Windows) window. The user to select Create." loc-scope="vs":::
-
-    The **Publish** window reappears with the Azure Function App displayed.
-
-1. Select **Finish**.
-
-    :::image type="content" source="../media/5-function-app-publish.png" alt-text="Screenshot of the Function App (Windows) window. The user to select Finish." loc-scope="vs":::
-
-    The **Publish** window reappears again.
 
 1. Select **Publish**.
 
     :::image type="content" source="../media/5-visual-studio-publish.png" alt-text="[Screenshot of Visual Studio highlighting Finish." loc-scope="vs":::
 
-    Wait for your functions to be deployed. The **Output** window in Visual Studio shows the progress of the build and publish processes. If everything works, the final two messages should be **Build succeeded** and **Publish succeeded**.
+    Wait for your functions to be deployed. The **Output** window in Visual Studio shows the progress of the build and publish processes. If everything works, you should have one successful **Build** and one successful **Publish**.
 
-    :::image type="content" source="../media/5-output-window.png" alt-text="Screenshot of the Output window in Visual Studio. The final two messages indicate that the functions were published successfully." loc-scope="vs":::
+    :::image type="content" source="../media/5-output-window.png" alt-text="Screenshot of the Output window in Visual Studio. The output messages indicate that the functions were published successfully." loc-scope="vs":::
 
 ## Verify the functions have been deployed
 

@@ -19,24 +19,24 @@ quiz:
 
   - content: "Which of the following features is common across the three Azure Stack products?"
     choices:
-    - content: "Purpose-built, pre-configured, and Microsoft-certified hardware."
+    - content: "Purpose-built, preconfigured, and Microsoft-certified hardware."
       isCorrect: true
-      explanation: "That's correct. Azure Stack Hub and Azure Stack HCI use urpose-built, pre-configured, and Microsoft-certified hardware available from third-party vendors. Azure Stack Edge uses Microsoft-provided appliances."
+      explanation: "Correct. Azure Stack Hub and Azure Stack HCI use urpose-built, preconfigured, and Microsoft-certified hardware available from third-party vendors. Azure Stack Edge uses Microsoft-provided appliances."
     - content: "Built-in support for disaster recovery."
       isCorrect: false
-      explanation: "That's incorrect. Only Azure Stack HCI provides this functionality."
+      explanation: "Incorrect. Only Azure Stack HCI provides this functionality."
     - content: "Support for up to 16 nodes."
       isCorrect: false
-      explanation: "That's incorrect. Azure Stack Edge supports only a single node."
+      explanation: "Incorrect. Azure Stack Edge supports only a single node."
 
   - content: "What is the common pricing model supported by Azure Stack products?"
     choices:
     - content: "Reserved instances"
       isCorrect: false
-      explanation: "That's incorrect. Azure Stack products support pay-as-you go pricing."
+      explanation: "Incorrect. Azure Stack products support pay-as-you go pricing."
     - content: "Spot pricing"
       isCorrect: false
-      explanation: "That's incorrect. Azure Stack products support pay-as-you go pricing."
+      explanation: "Incorrect. Azure Stack products support pay-as-you go pricing."
     - content: "Pay-as-you use"
       isCorrect: true
-      explanation: "That's correct. Azure Stack products support pay-as-you go pricing."
+      explanation: "Correct. Azure Stack products support pay-as-you go pricing."

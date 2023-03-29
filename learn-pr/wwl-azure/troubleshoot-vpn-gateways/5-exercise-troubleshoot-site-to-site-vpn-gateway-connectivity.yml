@@ -4,13 +4,11 @@ title: 'Exercise: Troubleshoot site-to-site VPN gateway connectivity'
 metadata:
   title: 'Exercise: Troubleshoot site-to-site VPN gateway connectivity'
   description: "Exercise: Troubleshoot site-to-site VPN gateway connectivity"
-  ms.date: 02/17/2023
+  ms.date: 03/22/2023
   author: wwlpublish
-  ms.author: lola
+  ms.author: lauraalv
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 9
 content: |
   [!include[](includes/5-exercise-troubleshoot-site-to-site-vpn-gateway-connectivity.md)]

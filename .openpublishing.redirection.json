@@ -11,6 +11,21 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "learn-pr/azure/enable-external-collaboration-with-b2b/3-collaborate-externally-b2b.yml",                      
+      "redirect_url": "/training/modules/enable-external-collaboration-with-b2b/4-collaborate-externally-b2b",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enable-external-collaboration-with-b2b/4-enable-mfa-b2b.yml",                      
+      "redirect_url": "/training/modules/enable-external-collaboration-with-b2b/3-enable-mfa-b2b",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enable-external-collaboration-with-b2b/5-summary.yml",                      
+      "redirect_url": "/training/modules/enable-external-collaboration-with-b2b/6-summary",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/startups/build-team/2-ideal-startup-team.md",
       "redirect_url": "/training/modules/build-team/2-ideal-startup-team",
       "redirect_document_id": true
@@ -20451,6 +20466,11 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "learn-pr/azure/azure-sql-secure-data/3-exercise-configure-auditing.md",
+      "redirect_url": "/training/modules/azure-sql-secure-data/3-exercise-configure-sql-database",
+      "redirect_document_id": true
+    },
+    {
        "source_path": "learn-pr/wwl-azure/configure-azure-alerts/2-manage-azure-monitor-alerts.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/configure-azure-alerts/2b-manage-azure-monitor-alerts",
       "redirect_document_id": false
@@ -20626,11 +20646,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/wwl-azure/azure-security-center/6-azure-defender.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/5-azure-defender",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "learn-pr/wwl-azure/azure-security-center/5-azure-arc.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/6-azure-arc",
       "redirect_document_id": false
@@ -20693,6 +20708,296 @@
     {
       "source_path": "learn-pr/wwl-azure/design-for-high-availability/9-summary-resources.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/describe-high-availability-disaster-recovery-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/csharp-data/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/get-started-c-sharp-part-4/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/csharp-first-steps/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/get-started-c-sharp-part-1/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/csharp-logic/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/get-started-c-sharp-part-3/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/monitor-and-manage-device-with-iot-central/1-create-azure-iot-central-application.md",
+      "redirect_url": "/training/modules/monitor-and-manage-device-with-iot-central/2-create-azure-iot-central-application",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/advocates/monitor-and-manage-device-with-iot-central/2-define-coffee-machine-with-device-template.md",
+      "redirect_url": "/training/modules/monitor-and-manage-device-with-iot-central/3-define-coffee-machine-device-template",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/advocates/monitor-and-manage-device-with-iot-central/3-connect-your-application-to-simulator.md",
+      "redirect_url": "/training/modules/monitor-and-manage-device-with-iot-central/6-connect-coffee-machine-device-simulator",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/advocates/monitor-and-manage-device-with-iot-central/4-validate-your-connection.md",
+      "redirect_url": "/training/modules/monitor-and-manage-device-with-iot-central/7-monitor-manage-coffee-machines",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/advocates/monitor-and-manage-device-with-iot-central/5-configure-rules-and-actions.md",
+      "redirect_url": "/training/modules/monitor-and-manage-device-with-iot-central/8-configure-rules-actions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/advocates/monitor-and-manage-device-with-iot-central/6-knowledge-check.md",
+      "redirect_url": "/training/modules/monitor-and-manage-device-with-iot-central/9-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/get-tips-tricks-teach-dp-900-microsoft-azure-data-fundamentals/9-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-dp-900-microsoft-azure-data-fundamentals/10-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/get-tips-tricks-teach-dp-900-microsoft-azure-data-fundamentals/3-explore-best-practices-for-module-1.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-dp-900-microsoft-azure-data-fundamentals/4-explore-best-practices-for-module-1",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/get-tips-tricks-teach-dp-900-microsoft-azure-data-fundamentals/2-learn-module-best-practices.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-dp-900-microsoft-azure-data-fundamentals/3-learn-module-best-practices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/get-tips-tricks-teach-dp-900-microsoft-azure-data-fundamentals/4-explore-best-practices-for-module-2.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-dp-900-microsoft-azure-data-fundamentals/5-explore-best-practices-for-module-2",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/get-tips-tricks-teach-dp-900-microsoft-azure-data-fundamentals/5-explore-best-practices-for-module-3.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-dp-900-microsoft-azure-data-fundamentals/6-explore-best-practices-for-module-3",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/get-tips-tricks-teach-dp-900-microsoft-azure-data-fundamentals/6-explore-best-practices-for-module-4.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-dp-900-microsoft-azure-data-fundamentals/7-explore-best-practices-for-module-4",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/get-tips-tricks-teach-dp-900-microsoft-azure-data-fundamentals/7-bring-it-together.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-dp-900-microsoft-azure-data-fundamentals/8-bring-it-all-together",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/get-tips-tricks-teach-dp-900-microsoft-azure-data-fundamentals/8-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-dp-900-microsoft-azure-data-fundamentals/9-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-hedt/get-tips-tricks-teach-mb-920-dynamics-365-fundamentals/8-bring-together.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-mb-920-dynamics-365-fundamentals/10-bring-it-all-together",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-hedt/get-tips-tricks-teach-mb-920-dynamics-365-fundamentals/10-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-mb-920-dynamics-365-fundamentals/12-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-hedt/get-tips-tricks-teach-mb-920-dynamics-365-fundamentals/2-learn-module-best-practices.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-mb-920-dynamics-365-fundamentals/3-learn-module-best-practices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-hedt/get-tips-tricks-teach-mb-920-dynamics-365-fundamentals/4-learn-fundamentals-dynamics-365-finance.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-mb-920-dynamics-365-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-hedt/get-tips-tricks-teach-mb-920-dynamics-365-fundamentals/5-learn-fundamentals-dynamics-365-commerce.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-mb-920-dynamics-365-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-hedt/get-tips-tricks-teach-mb-920-dynamics-365-fundamentals/6-learn-fundamentals-dynamics-365-human-resources.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-mb-920-dynamics-365-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-hedt/get-tips-tricks-teach-mb-920-dynamics-365-fundamentals/7-learn-fundamentals-dynamics-365-project-operations.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-mb-920-dynamics-365-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-hedt/get-tips-tricks-teach-mb-920-dynamics-365-fundamentals/9-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-mb-920-dynamics-365-fundamentals/11-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-hedt/get-tips-tricks-teach-mb-920-dynamics-365-fundamentals/3-learn-fundamentals-dynamics-365-supply-chain-management.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-mb-920-dynamics-365-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-hedt/get-tips-tricks-teach-mb-910-dynamics-365-fundamentals/10-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-mb-910-dynamics-365-fundamentals/11-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-hedt/get-tips-tricks-teach-mb-910-dynamics-365-fundamentals/3-learn-fundamentals-dynamics-365-market.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-mb-910-dynamics-365-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-hedt/get-tips-tricks-teach-mb-910-dynamics-365-fundamentals/2-learn-module-best-practices.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-mb-910-dynamics-365-fundamentals/3-learn-module-best-practices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-hedt/get-tips-tricks-teach-mb-910-dynamics-365-fundamentals/4-learn-fundamentals-dynamics-365-sales.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-mb-910-dynamics-365-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-hedt/get-tips-tricks-teach-mb-910-dynamics-365-fundamentals/5-learn-fundamentals-dynamics-365-customer-service.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-mb-910-dynamics-365-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-hedt/get-tips-tricks-teach-mb-910-dynamics-365-fundamentals/6-learn-fundamentals-dynamics-365-field-service.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-mb-910-dynamics-365-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-hedt/get-tips-tricks-teach-mb-910-dynamics-365-fundamentals/7-learn-fundamentals-dynamics-365-project-operations.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-mb-910-dynamics-365-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-hedt/get-tips-tricks-teach-mb-910-dynamics-365-fundamentals/8-bring-together.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-mb-910-dynamics-365-fundamentals/9-bring-it-all-together",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-hedt/get-tips-tricks-teach-mb-910-dynamics-365-fundamentals/9-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-tips-tricks-teach-mb-910-dynamics-365-fundamentals/10-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/9-policies.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/10-policies",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/10-view-and-edit-security-policies.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/11-view-and-edit-security-policies",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/11-recommendations.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/12-recommendations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/12-secure-score.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/13-secure-score",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/13-brute-force-attacks.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/14-brute-force-attacks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/14-just-time-virtual-machine-access.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/16-just-time-virtual-machine-access",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/15-demonstration.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/17-demonstration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/16-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/18-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/17-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/19-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/4-implement-azure-security-center.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/5-implement-azure-security-center",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/5-azure-defender.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/6-azure-defender",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/6-azure-arc.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/7-azure-arc",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/7-azure-arc-capabilities.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/8-azure-arc-capabilities",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-security-center/8-microsoft-cloud-security-benchmark.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/9-microsoft-cloud-security-benchmark",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-active-directory/7-azure-active-directory-groups.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-active-directory/10-azure-active-directory-groups",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-active-directory/8-azure-active-directory-administrative-units.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-active-directory/11-azure-active-directory-administrative-units",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-active-directory/9-passwordless.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-active-directory/12-passwordless",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-active-directory/10-demonstrations.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-active-directory/13-demonstrations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-active-directory/11-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-active-directory/14-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-active-directory/12-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-active-directory/15-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-active-directory/4-roles-azure-active-directory.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-active-directory/6-roles-azure-active-directory",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-active-directory/5-azure-active-directory-domain-services.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-active-directory/8-azure-active-directory-domain-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/azure-active-directory/6-azure-active-directory-users.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/azure-active-directory/9-azure-active-directory-users",
       "redirect_document_id": false
     }
   ]

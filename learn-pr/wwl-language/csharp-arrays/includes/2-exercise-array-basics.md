@@ -1,13 +1,13 @@
 
 Arrays can be used to store multiple values of the same type in a single variable. The values stored in an array are generally related. For example, a list of student names could be stored in a string array named `students`.
 
-Your work in the security department is focused on finding a pattern for fraudulent orders. Your code will review past customer orders to identify markers associated with fraudulent orders. Your company hopes the markers can be used to identify potential fraudulent purchase orders in the future before they are processed. Since you don't always know in advance how many orders you'll need to review, you can't create individual variables to hold each Order ID. How can you create a data structure to hold multiple related values?
+Your work in the security department is focused on finding a pattern for fraudulent orders. You want your code to review past customer orders and identify markers associated with fraudulent orders. Your company hopes the markers can be used to identify potential fraudulent purchase orders in the future before they're processed. Since you don't always know in advance how many orders you need to review, you can't create individual variables to hold each Order ID. How can you create a data structure to hold multiple related values?
 
-In this exercise, you will use arrays to store and analyze a sequence of Order IDs.
+In this exercise, you use arrays to store and analyze a sequence of Order IDs.
 
 ## What is an array?
 
-An array is a sequence of individual data elements accessible through a single variable name. You use a zero-based numeric index to access each element of an array. As you'll see, arrays allow you to collect together similar data that shares a common purpose or characteristics in a single data structure for easier processing.
+An array is a sequence of individual data elements accessible through a single variable name. You use a zero-based numeric index to access each element of an array. As you can see, arrays allow you to collect together similar data that shares a common purpose or characteristics in a single data structure for easier processing.
 
 ## Declaring arrays and accessing array elements
 
@@ -15,7 +15,7 @@ An array is a special type of variable that can hold multiple values of the same
 
 ### Prepare your coding environment
 
-This module includes hands-on activities that guide you through the process of building and running sample code. You are encouraged to complete these activities using Visual Studio Code as your development environment. Using Visual Studio Code for these activities will help you to become more comfortable writing and running code in a developer environment that's used by professionals worldwide.
+This module includes hands-on activities that guide you through the process of building and running sample code. You're encouraged to complete these activities using Visual Studio Code as your development environment. Using Visual Studio Code for these activities helps you to become more comfortable writing and running code in a developer environment that's used by professionals worldwide.
 
 1. Open Visual Studio Code.
 
@@ -42,25 +42,25 @@ This module includes hands-on activities that guide you through the process of b
     > [!NOTE]
     > If you are working on your own PC rather than in a sandbox or hosted environment and you have completed other Microsoft Learn modules in this C# series, you may have already created a project folder for code samples. If that's the case, you can skip over the next step, which is used to create a console app in the TestProject folder.
 
-1. At the Terminal command prompt, to create a new console application in a specified folder, type **dotnet new console -o ./CsharpProjects/TestProject** and then press Enter.
+1. At the Terminal command prompt, to create a new console application in a specified folder, type `dotnet new console -o ./CsharpProjects/TestProject` and then press Enter.
 
-    This .NET CLI command uses a .NET program template to create a new C# console application project in the specified folder location. The command creates the CsharpProjects and TestProject folders for you, and uses TestProject as the name of your `.csproj` file.
+    This .NET CLI command uses a .NET program template to create a new C# console application project in the specified folder location. The command creates the **CsharpProjects** and **TestProject** folders for you, and uses *TestProject* as the name of your `.csproj` file.
 
 1. In the EXPLORER panel, expand the **CsharpProjects** folder.
 
-    You should see the TestProject folder and two files, a C# program file named Program.cs and a C# project file named TestProject.csproj.
+    You should see the **TestProject** folder and two files, a C# program file named **Program.cs** and a C# project file named **TestProject.csproj**.
 
 1. In the EXPLORER panel, to view your code file in the Editor panel, select **Program.cs**.
 
 1. Delete the existing code lines.
 
-    You'll be using this C# console project to create, build, and run code samples during this module.
+    You can use this C# console project to create, build, and run code samples during this module.
 
 1. Close the Terminal panel.
 
 ### Declare a new array
 
-1. To declare a new array of strings that will hold three elements, enter the following code:
+1. To declare a new array of strings that can hold three elements, enter the following code:
 
     ```c#
     string[] fraudulentOrderIDs = new string[3];
@@ -70,7 +70,7 @@ This module includes hands-on activities that guide you through the process of b
 
     The `new` operator creates a new instance of an array in the computer's memory that can hold three string values. For more information about the `new` keyword, see the module "Call methods from the .NET Class Library using C#".
 
-    Notice that the first set of square brackets `[]` merely tells the compiler that the variable named `fraudulentOrderIDs` will be an array, but the second set of square brackets `[3]` contains the number of elements that the array will hold.
+    Notice that the first set of square brackets `[]` merely tells the compiler that the variable named `fraudulentOrderIDs` is an array, but the second set of square brackets `[3]` indicates the number of elements that the array can hold.
 
     > [!NOTE]
     > This example demonstrates how to declare an array of strings, however, you can create an array of every data type including primitives like `int` and `bool` as well as more complex data types like classes. This example uses the simplicity of strings to minimize the number of new ideas you need to grasp as you're getting started.
@@ -93,13 +93,13 @@ At this point, you've declared an array of strings, but each element of the arra
 
     Notice that you're using the name of the array to access array elements. Each element is accessed individually by specifying zero-based index number inside the square brackets.
 
-    Since your array is declared as a string, the values that you assign must also be strings. In this scenario, you are assigning Order IDs to the elements of the array.
+    Since your array is declared as a string, the values that you assign must also be strings. In this scenario, you're assigning Order IDs to the elements of the array.
 
 ### Attempt to use an index that is out of bounds of the array
 
 It might not seem intuitive at first, but it's important to remember that you're declaring the count of elements in the array. However, you access each element of the array starting with zero. So, to access the second item in the array, you use index `1`.
 
-It's common for beginners to forget that arrays are zero-based and attempt to access an element of the array that doesn't exist. When this happens, you'll experience a runtime exception informing you that you attempted to access an element that is outside the boundary of the array.
+It's common for beginners to forget that arrays are zero-based and attempt to access an element of the array that doesn't exist. If you make this mistake, a runtime exception occurs informing you that you attempted to access an element that is outside the boundary of the array.
 
 To intentionally "break" your application, attempt to access a fourth element of your array using index value of `3`.
 
@@ -109,7 +109,7 @@ To intentionally "break" your application, attempt to access a fourth element of
     fraudulentOrderIDs[3] = "D000";
     ```
 
-1. Ensure that your code matches the following:
+1. Ensure that your code matches this example:
 
     ```c#
     string[] fraudulentOrderIDs = new string[3];
@@ -120,13 +120,13 @@ To intentionally "break" your application, attempt to access a fourth element of
     fraudulentOrderIDs[3] = "D000";
     ```
 
-1. On the Visual Studio Code **File** menu, click **Save**.
+1. On the Visual Studio Code **File** menu, select **Save**.
 
 1. In the EXPLORER panel, to open a Terminal at your TestProject folder location, right-click **TestProject**, and then select **Open in Integrated Terminal**.
 
-    A Terminal panel should open, and should include a command prompt showing that the Terminal is open to your TestProject folder location.
+    A Terminal panel should open, and should include a command prompt showing that the Terminal is open to your **TestProject** folder location.
 
-1. At the Terminal command prompt, to compile your code, type **dotnet run** and then press Enter.
+1. At the Terminal command prompt, to compile your code, type `dotnet build` and then press Enter.
 
     You should see the following message:
 
@@ -136,16 +136,16 @@ To intentionally "break" your application, attempt to access a fourth element of
         0 Error(s)
     ```
 
-1. At the Terminal command prompt, to run your code, type **dotnet run** and then press Enter.
+1. At the Terminal command prompt, to run your code, type `dotnet run` and then press Enter.
 
-    When you run the app, you'll get the following runtime error message:
+    When you run the app, you get the following runtime error message:
 
     ```Output
     Unhandled exception. System.IndexOutOfRangeException: Index was outside the bounds of the array.     
        at Program.<Main>$(String[] args) in C:\Users\someuser\Desktop\CsharpProjects\TestProject\Program.cs:line 6
     ```
 
-    Notice the following:
+    Notice the following parts of the error:
 
     - Error message: `System.IndexOutOfRangeException: Index was outside the bounds of the array.`
     - Error location: `Program.cs:line 6`
@@ -160,7 +160,7 @@ You've seen how to assign a value to an array element. Now look at how to access
 
 ### Retrieve values from elements of an array
 
-Accessing the value of an array element works the same way as assigning a value to an array element. You simply specify the index of the element whose value you want to retrieve.
+Accessing the value of an array element works the same way as assigning a value to an array element. You just specify the index of the element whose value you want to retrieve.
 
 1. To write the value of each fraudulent Order ID, update your code as follows:
 
@@ -177,11 +177,11 @@ Accessing the value of an array element works the same way as assigning a value 
     Console.WriteLine($"Third: {fraudulentOrderIDs[2]}");
     ```
 
-1. On the Visual Studio Code **File** menu, click **Save**.
+1. On the Visual Studio Code **File** menu, select **Save**.
 
 1. In the EXPLORER panel, to open a Terminal at your TestProject folder location, right-click **TestProject**, and then select **Open in Integrated Terminal**.
 
-1. At the Terminal command prompt, type **dotnet run** and then press Enter.
+1. At the Terminal command prompt, type `dotnet run` and then press Enter.
 
     You should see the following message:
 
@@ -203,7 +203,7 @@ The elements of an array are just like any other variable value. You can assign,
     Console.WriteLine($"Reassign First: {fraudulentOrderIDs[0]}");
     ```
 
-1. Ensure that your code matches the following:
+1. Ensure that your code matches the following example:
 
     ```c#
     string[] fraudulentOrderIDs = new string[3];
@@ -222,11 +222,11 @@ The elements of an array are just like any other variable value. You can assign,
     Console.WriteLine($"Reassign First: {fraudulentOrderIDs[0]}");
     ```
 
-1. On the Visual Studio Code **File** menu, click **Save**.
+1. On the Visual Studio Code **File** menu, select **Save**.
 
 1. In the EXPLORER panel, to open a Terminal at your TestProject folder location, right-click **TestProject**, and then select **Open in Integrated Terminal**.
 
-1. At the Terminal command prompt, type **dotnet run** and then press Enter.
+1. At the Terminal command prompt, type `dotnet run` and then press Enter.
 
     You should see the following message:
 
@@ -251,7 +251,7 @@ You can initialize an array during declaration just like would a regular variabl
     string[] fraudulentOrderIDs = { "A123", "B456", "C789" };
     ```
 
-1. Ensure that your code matches the following:
+1. Ensure that your code matches the following example:
 
     ```c#
     /*
@@ -278,11 +278,11 @@ You can initialize an array during declaration just like would a regular variabl
 
     Notice that this syntax is both compact and easy to read. When you run the application, there should be no change to the output.
 
-1. On the Visual Studio Code **File** menu, click **Save**.
+1. On the Visual Studio Code **File** menu, select **Save**.
 
 1. In the EXPLORER panel, to open a Terminal at your TestProject folder location, right-click **TestProject**, and then select **Open in Integrated Terminal**.
 
-1. At the Terminal command prompt, type **dotnet run** and then press Enter.
+1. At the Terminal command prompt, type `dotnet run` and then press Enter.
 
     You should see the same message as before:
 
@@ -308,7 +308,7 @@ Depending on how the array is created, you may not know in advance how many elem
 
     This code uses the array's `Length` property, an integer, to return the number of elements in your `fraudulentOrderIDs` array.
 
-1. Ensure that your code matches the following:
+1. Ensure that your code matches this example:
 
     ```c#
     /*
@@ -333,7 +333,7 @@ Depending on how the array is created, you may not know in advance how many elem
     Console.WriteLine($"There are {fraudulentOrderIDs.Length} fraudulent orders to process.");
     ```
 
-1. Save the changes to your Program.cs file, and then run the application.
+1. Save the changes to your **Program.cs** file, and then run the application.
 
     You should see the following output:
 
@@ -352,5 +352,5 @@ Here's the most important things to remember when working with arrays:
 - An array is a special variable that holds a sequence of related data elements.
 - You should memorize the basic format of an array variable declaration.
 - Access each element of an array to set or get its values using a zero-based index inside of square brackets.
-- If you attempt to access an index outside of the boundary of the array, you'll get a run time exception.
+- If you attempt to access an index outside of the boundary of the array, you get a run time exception.
 - The `Length` property gives you a programmatic way to determine the number of elements in an array.

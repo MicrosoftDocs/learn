@@ -3,7 +3,7 @@ uid: learn.azure.intro-to-azure-hybrid-services.8-hybrid-cloud-security
 metadata:
   title: Security in hybrid cloud environments
   description: Security in hybrid cloud environments
-  ms.date: 09/21/2020
+  ms.date: 03/16/2023
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: interactive-tutorial
@@ -22,22 +22,22 @@ quiz:
     choices:
     - content: "One"
       isCorrect: false
-      explanation: "You need separate deployments for Windows and Linux servers, and separate deployments for test and production systems."
+      explanation: "Incorrect. You need separate deployments for Windows and Linux servers, and separate deployments for test and production systems."
     - content: "Four"
       isCorrect: true
-      explanation: "You need separate deployments for Windows and Linux servers, and separate deployments for test and production systems."
+      explanation: "Correct. You need separate deployments for Windows and Linux servers, and separate deployments for test and production systems."
     - content: "Two"
       isCorrect: false
-      explanation: "You need separate deployments for Windows and Linux servers, and separate deployments for test and production systems."
+      explanation: "Incorrect. You need separate deployments for Windows and Linux servers, and separate deployments for test and production systems."
 
   - content: "Which of the following hybrid security technologies can Tailwind Traders use to assess the security configuration of on-premises servers and IaaS VMs running the Windows Server 2019 operating system?"
     choices:
     - content: "Microsoft Defender for Cloud"
       isCorrect: true
-      explanation: "Microsoft Defender for Cloud can be used to assess the security configuration of enrolled servers running supported operating systems such as Windows Server 2019."
+      explanation: "Correct. Microsoft Defender for Cloud can be used to assess the security configuration of enrolled servers running supported operating systems such as Windows Server 2019."
     - content: "Microsoft Sentinel"
       isCorrect: false
-      explanation: "Sentinel allows you to collect and analyze data and telemetry, but it doesn't allow you to assess a computer's security configuration."
+      explanation: "Incorrect. Sentinel allows you to collect and analyze data and telemetry, but it doesn't allow you to assess a computer's security configuration."
     - content: "System Center Configuration Manager"
       isCorrect: false
-      explanation: "Although System Center Configuration Manager can monitor configuration drift from a known standard, it's not designed to assess the security configuration of servers both on-premises and in Azure."
+      explanation: "Incorrect. Although System Center Configuration Manager can monitor configuration drift from a known standard, it's not designed to assess the security configuration of servers both on-premises and in Azure."

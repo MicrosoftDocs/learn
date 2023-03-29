@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.azure-active-directory.azure-ad-groups
+title: Manage users with Azure AD groups
+metadata:
+  title: Manage users with Azure AD groups
+  description: "Manage users with Azure AD groups"
+  ms.date: 03/23/2023
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: None
+durationInMinutes: 7
+content: |
+  [!include[](includes/10-azure-active-directory-groups.md)]

@@ -5,8 +5,8 @@ metadata:
   title: Optimization basics
   description: Learn about important optimization concepts such as optimization landscapes and cost functions.
   ms.date: 05/19/2020
-  author: KittyYeungQ
-  ms.author: kitty
+  author: bradben
+  ms.author: brbenefield
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7
