@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.organizational-access.explore-vpn-types-configuration
+title: Explore VPN types and configuration
+metadata:
+  title: Explore VPN types and configuration
+  description: "Explore VPN types and configuration"
+  ms.date: 03/29/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-explore-vpn-types-configuration.md)]

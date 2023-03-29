@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.organizational-access.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/29/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "In addition to having DC/DNS servers, what are the three required technologies needed before deploying Always On VPN?"
+    choices:
+    - content: "Active Directory Certificate (AD CS), a Certificate Authority (CA) server, and a Remote Access (Routing/VPN) server"
+      isCorrect: false
+      explanation: "Incorrect. These items aren't the three required technologies that are needed before deploying Always On VPN. Try again."
+    - content: "Network Policy Server (NPS) (RADIUS), an internal and external domain, and a Remote Access (Routing/VPN) server"
+      isCorrect: false
+      explanation: "Incorrect. These items aren't the three required technologies that are needed before deploying Always On VPN. Try again."
+    - content: "Network Policy Server (NPS) (RADIUS), a Certificate Authority (CA) server, and a Remote Access (Routing/VPN) server"
+      isCorrect: true
+      explanation: "Correct. Install NPS, or if NPS is already on the servers on the network, modify existing NPS server configuration rather than add a new server. Once the infrastructure is set up, you must enroll clients and then connect the clients to on-premises securely through several network changes."
+  - content: "Which three tools are primarily used to deploy and manage the Always On VPN feature?"
+    choices:
+    - content: "Configuration Manager, Microsoft Intune or PowerShell"
+      isCorrect: true
+      explanation: "Correct. Enabling clients for Always On VPN connections requires deploying an XML VPN profile. This may be manually created or use a configured client to generate a template. The XML file can then be deployed to clients using Intune, Configuration Manager, or PowerShell."
+    - content: "Configuration Manager, Microsoft Intune, XML VPN Profile"
+      isCorrect: false
+      explanation: "Incorrect. These items aren't the three technologies that are primarily used to deploy and manage the Always On VPN feature. Try again."
+    - content: "Configuration Manager, Microsoft Intune, DirectAccess"
+      isCorrect: false
+      explanation: "Incorrect. These items aren't the three technologies that are primarily used to deploy and manage the Always On VPN feature. Try again."
