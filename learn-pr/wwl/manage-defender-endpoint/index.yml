@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.manage-defender-endpoint
+metadata:
+  title: MD-102 2-Manage Microsoft Defender for Endpoint
+  description: "This module explores using Microsoft Defender for Endpoint to provide additional protection and monitor devices against threats."
+  ms.date: 03/29/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Manage Microsoft Defender for Endpoint
+summary: This module explores using Microsoft Defender for Endpoint to provide additional protection and monitor devices against threats.
+abstract: |
+  After this module, you should be able to:
+  - Describe Microsoft Defender for Endpoint
+  - Describe key capabilities of Microsoft Defender for Endpoint
+  - Describe Microsoft Defender Application Guard
+  - Describe Microsoft Defender Exploit Guard
+  - Describe Windows Defender System Guard
+prerequisites: |
+  - Strong technical skills installing, maintaining, and troubleshooting the Windows 10 OS or later
+  - Strong understanding of computer networking, client security, and application concepts
+  - Experience using Active Directory Domain Services
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- windows
+- configuration-manager
+- intune
+units:
+- learn.wwl.manage-defender-endpoint.introduction
+- learn.wwl.manage-defender-endpoint.explore
+- learn.wwl.manage-defender-endpoint.examine-key-capabilities-of
+- learn.wwl.manage-defender-endpoint.explore-windows-defender-application-control-device-guard
+- learn.wwl.manage-defender-endpoint.explore-application-guard
+- learn.wwl.manage-defender-endpoint.examine-windows-defender-exploit-guard
+- learn.wwl.manage-defender-endpoint.explore-windows-defender-system-guard
+- learn.wwl.manage-defender-endpoint.knowledge-check
+- learn.wwl.manage-defender-endpoint.summary
+badge:
+  uid: learn.wwl.manage-defender-endpoint.badge

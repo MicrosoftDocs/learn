@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-defender-endpoint.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/29/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Fabrikam wants to isolate enterprise-defined untrusted sites for the purpose of protecting the company while its employees browse the internet. What feature of Microsoft Defender for Endpoint provides this functionality?"
+    choices:
+    - content: "Microsoft Defender Exploit Guard"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Defender Exploit Guard is a new set of host intrusion prevention capabilities for Windows, allowing you to manage and reduce the attack surface of apps used by your employees. Try again."
+    - content: "Windows Defender Application Control"
+      isCorrect: false
+      explanation: "Incorrect. Windows Defender Application Control vets all executables on the system before they can run. This is generally done through the use of code signatures from software publishers. Try again."
+    - content: "Microsoft Defender Application Guard"
+      isCorrect: true
+      explanation: "Correct. Designed for Windows and Microsoft Edge, Application Guard helps to isolate enterprise-defined untrusted sites, protecting your company while your employees browse the internet. As an enterprise administrator, you define what is among trusted websites, cloud resources, and internal networks. Everything not on your list is considered untrusted."
+  - content: "Northwind Traders wants to use Microsoft Defender for Endpoint to help prevent, detect, investigate, and respond to advanced threats against its corporate network. What feature of Microsoft Defender for Endpoint will help Northwind Traders to assess the security posture of the organization, see machines that require attention, as well as recommendations for actions to further reduce the attack surface within the company?"
+    choices:
+    - content: "Endpoint detection and response capabilities"
+      isCorrect: false
+      explanation: "Incorrect. This feature provides near real-time actionable advance attack detections, enable security analysts to effectively prioritize alerts, unfold the full scope of a breach and take response actions to remediate the threat. Try again."
+    - content: "the Secure score dashboard"
+      isCorrect: true
+      explanation: "Correct. The Secure score dashboard expands your visibility into the overall security posture of your organization. From this dashboard, can assess the security posture of your organization, see machines that require attention, as well as recommendations for actions to further reduce the attack surface in your organization. From there you can take action based on the recommended configuration baselines."
+    - content: "Auto investigation and remediation"
+      isCorrect: false
+      explanation: "Incorrect. This feature of Microsoft Defender for Endpoint helps reduce the volume of alerts in minutes at scale. Try again."
