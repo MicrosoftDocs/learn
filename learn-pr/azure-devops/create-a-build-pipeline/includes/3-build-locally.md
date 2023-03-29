@@ -36,7 +36,7 @@ The first step to using a project in Git is to create a fork so you can work wit
 Although you can propose changes to the original project, in this lesson, you'll work with the *Space Game* web project as though it was the original project owned by Mara and her team.
 
 > [!NOTE]
-> If you have previously forked this repository, for example if you have previously completed this module or another Tailspin Toys training module, we recommend that you [delete your fork](https://docs.github.com/repositories/creating-and-managing-repositories/deleting-a-repository) and create a new fork using the following steps. If you don't want to delete your fork, ensuring that you [sync your fork](https://docs.github.com/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork).
+> If you have previously forked this repository, for example if you have previously completed this module or another Tailspin Toys training module, we recommend that you [delete your fork](https://docs.github.com/repositories/creating-and-managing-repositories/deleting-a-repository) and create a new fork using the following steps. If you don't want to delete your fork, ensure that you [sync your fork](https://docs.github.com/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork).
 
 Let's fork the *Space Game* web project into your GitHub account:
 
@@ -50,22 +50,21 @@ Let's fork the *Space Game* web project into your GitHub account:
 
 1. To fork the repository into your account, follow the instructions.
 
-
 ## Set up secrets for self-hosted agent
 
-Before you create your Codespace, you'll create three passwords that help your self-hosted Azure DevOps agent run. In production, you wouldn't want to use a self-hosted agent in GitHub Codespaces. However, since your team is using Codespaces for testing, this is a good temporary solution when you are building your pipelines.  
+Before you create your Codespace, you'll create three secrets that help your self-hosted Azure DevOps agent run. In production, you wouldn't want to use a self-hosted agent in GitHub Codespaces. However, since your team is using Codespaces for testing, this is a good temporary solution when you are building your pipelines.  
 
-1. Go to your forked GitGub repository and select **Settings** > **Secrets and variables** > **Codespaces**.
+1. Go to your forked GitHub repository and select **Settings** > **Secrets and variables** > **Codespaces**.
 
     :::image type="content" source="../media/3-add-codespaces-secret.png" alt-text="Screenshot of GitHub Codespaces secrets. ":::
 
 1. Create three new Codespaces Repository secrets.
-    
+
     |Name  |Value  |
     |---------|---------|
     |ADO_ORG     |   Name of the Azure DevOps organization you're using to complete this module. In this example, `fabrikam` is the name of the orgnization.    |
-    |ADO_PAT     |   Personal Access Token value      |
-    |ADO_POOL_NAME     |   Name of agent pool. Specify `Default` to use the default agent pool. If you use a name other than `Default`, you need to [create a new agent pool](/azure/devops/pipelines/agents/pools-queues) and provide tha name of the new agent pool for this value. | 
+    |ADO_PAT     |   The Personal Access Token that you created in the previous step.     |
+    |ADO_POOL_NAME     |   Name of the agent pool for your agent. Specify `Default` to use the default agent pool. If you use a name other than `Default`, you need to [create a new agent pool](/azure/devops/pipelines/agents/pools-queues) and provide tha name of the new agent pool for this value. | 
     
 ## Set up Codespaces
 
