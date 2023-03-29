@@ -21,9 +21,3 @@ Identity provides the basis for a wide variety of security assurance. It grants 
 The technological landscape in the enterprise is becoming complex and heterogenous. To manage compliance and security for this environment, identity and access management lets the right individuals access the right resources at the right time for the right reasons.
 
 Identity and access management is boundary security in the public cloud. It must be treated as the foundation of any secure and fully compliant public cloud architecture. Azure offers a comprehensive set of services, tools, and reference architectures to help organizations make highly secure, operationally efficient environments.
-
-These articles examine design considerations and recommendations related to identity and access management in a cloud environment:
-
-- [Azure Active Directory and Hybrid Identity](https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-area/identity-access-active-directory-hybrid-identity)
-- [Platform access](https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-area/identity-access-platform-access)
-- [Prerequisites for a landing zone](https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-area/identity-access-landing-zones)

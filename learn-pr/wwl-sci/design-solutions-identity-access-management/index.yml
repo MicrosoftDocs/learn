@@ -37,6 +37,7 @@ subjects:
   - security
   - cloud-security
 units:
+- learn.wwl.design-solutions-identity-access-management.introduction
 - learn.wwl.design-solutions-identity-access-management.design-cloud-hybrid-multi-cloud-access-strategies
 - learn.wwl.design-solutions-identity-access-management.design-solution-azure-active-directory
 - learn.wwl.design-solutions-identity-access-management.design-solution-external-identities

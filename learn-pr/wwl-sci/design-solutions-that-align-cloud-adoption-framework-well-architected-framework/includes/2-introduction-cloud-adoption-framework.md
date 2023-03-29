@@ -1,6 +1,6 @@
 The Microsoft Cloud Adoption Framework for Azure is a full lifecycle framework that enables cloud architects, IT professionals, and business decision makers to achieve their cloud adoption goals. It provides best practices, documentation, and tools that help you create and implement business and technology strategies for the cloud. 
 
-Following best practices for the Cloud Adoption Framework allows your organization to better align business and technical strategies and ensure success. Watch the following video to learn more.
+Following best practices for the Cloud Adoption Framework allows your organization to better align business and technical strategies and ensure success. 
 
 The Cloud Adoption Framework brings together cloud adoption best practices from Microsoft employees, partners, and customers. It consists of tools, documentation, and proven practices. The tools it includes help you shape your technology, business, and people strategies to achieve the best business outcomes possible through your cloud adoption effort. 
 
