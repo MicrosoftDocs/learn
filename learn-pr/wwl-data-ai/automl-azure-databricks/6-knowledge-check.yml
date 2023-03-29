@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.automl-azure-databricks.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/28/2023
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.service: azure-databricks
+durationInMinutes: 3
+quiz:
+  title: ""
+  questions:
+  - content: "What does AutoML do?"
+    choices:
+    - content: "Trains a model based on data you specify using multiple algorithms and hyperparameters to find the best model."
+      isCorrect: true
+      explanation: "Correct. AutoML tries multiple training combinations to find the optimal model for your data."
+    - content: "Runs model training scripts based on a schedule you specify to automate machine learning operations."
+      isCorrect: false
+      explanation: "Incorrect. AutoML does not run scripts on a schedule."
+    - content: "Trains and deploys machine learning models for use in self-driving vehicles."
+      isCorrect: false
+      explanation: "Incorrect. AutoML does not create specialized models for self-driving vehicles."
+  - content: "You plan to use AutoML in the Azure Databricks user interface. What should you do first?"
+    choices:
+    - content: "Train a reference model by using the Spark MLlib library."
+      isCorrect: false
+      explanation: "Incorrect. A reference model is not required for AutoML."
+    - content: "Load the training data into a table in your Azure Databricks workspace."
+      isCorrect: true
+      explanation: "Correct. You should provide the training data as a table in the Hive metastore."
+    - content: "Create a blank notebook."
+      isCorrect: false
+      explanation: "Incorrect. You do not need to create a notebook to run AutoML in the user interface."
+  - content: "You want to use the AutoML API to train a model that predicts the expected price of a home based on the size, number of bedrooms, and postal code? What method should you use?"
+    choices:
+    - content: "`classify`"
+      isCorrect: false
+      explanation: "Incorrect. Classification models predict a class or category."
+    - content: "`regress`"
+      isCorrect: true
+      explanation: "Correct. A regression model predicts a numeric value."
+    - content: "`forecast`"
+      isCorrect: false
+      explanation: "Incorrect. A forecast model predicts values based on time."
