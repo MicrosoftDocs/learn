@@ -13,26 +13,26 @@ durationInMinutes: 3
 content: |
 quiz:
   questions:
-  - content: "What do you need in order to test a generative AI model using Azure OpenAI Service Studio?"
+  - content: "What do you need in order to test a generative AI model using the Azure OpenAI Service Studio?"
     choices:
-    - content: "A playground and several prompt examples."
+    - content: "A deployed model name and Azure command line interface."
       isCorrect: false
-      explanation: ""
-    - content: "An Azure OpenAI resource and a playground."
+      explanation: "You would use the Studio in place of the Azure command line interface, not in combination."
+    - content: "An Azure OpenAI resource and an Azure Cognitive Services resource."
       isCorrect: false
-      explanation: ""
-    - content: "An Azure OpenAI resource and a deployed model."
+      explanation: "In this case, you do not need an Azure Cognitive Services resource."
+    - content: "An Azure OpenAI resource, a deployed model, and a playground."
       isCorrect: true
       explanation: ""
-  - content: "What parameters would you adjust for ...."
+  - content: "Which parameter could you adjust to change the randomness or creativeness of the completions returned?"
     choices:
-    - content: ""
+    - content: "Temperature"
       isCorrect: true
       explanation: ""
-    - content: ""
+    - content: "Frequency penalty"
       isCorrect: false
       explanation: ""
-    - content: ""
+    - content: "Stop sequence"
       isCorrect: false
       explanation: ""
   - content: "Which Azure OpenAI Studio playground is able to support conversation-in, message-out scenarios?"

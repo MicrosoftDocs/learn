@@ -28,4 +28,3 @@ You will have more control over the completions returned by training a custom mo
 
 You can start making calls to your deployed model via REST, Python, C#, or the Studio. If your deployed model has a ChatGPT or GPT-4 model base, please use the [Chat completions documentation](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/reference#chat-completions?portal=true), which has different request endpoints and variables required.
 
-
