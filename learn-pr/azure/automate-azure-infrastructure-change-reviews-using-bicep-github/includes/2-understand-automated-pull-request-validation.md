@@ -26,14 +26,14 @@ You can also run many of the same activities in a pull request validation workfl
 > - **Deployments**, to actually deploy your resources and ensure that there are no deployment errors.
 > - **Testing** your resources after deployment, to ensure that they're configured according to your business requirements.
 
-A pull request validation workflow is a normal GitHub Actions workflow, so it can run any of these tasks. However, it's worth thinking about the types of checks that make sense to run within a pull request. Many of the validation activities listed here require access to an Azure environment. For example, the _what-if_ operation compares the resources defined in your Bicep files with those in your Azure subscription. It makes sense to run this comparison against a production environment. But, because doing so introduces some additional risk, you might not be comfortable running operations against a production environment from a workflow designed for code that isn't yet completed or merged.
+A pull request validation workflow is a normal GitHub Actions workflow, so it can run any of these tasks. However, it's worth thinking about the types of checks that make sense to run within a pull request. Many of the validation activities listed here require access to an Azure environment. For example, the _what-if_ operation compares the resources defined in your Bicep files with resources in your Azure subscription. It makes sense to run this comparison against a production environment. But, because doing so introduces some additional risk, you might not be comfortable running operations against a production environment from a workflow designed for code that isn't yet completed or merged.
 
 In this module, you'll add two kinds of checks to your pull request validation workflow:
 
 - Linting your Bicep code to run an initial set of checks on it.
 - Deploying the code to a brand new temporary environment.
 
-These two activities don't require connecting to your production Azure environment, or even to any of your regular non-production environments, such as Test, QA, or Staging. By running these two activities, you can still build up a good amount of confidence in your code changes so that you can merge them into the main branch of your repository.
+These two activities don't require connecting to your production Azure environment, or even to any of your regular nonproduction environments, such as Test, QA, or Staging. By running these two activities, you can still build up a good amount of confidence in your code changes so that you can merge them into the main branch of your repository.
 
 The checks are useful for your reviewers, because they save time that would otherwise be spent running the activities manually. The checks are also useful for you, as the pull request author, because you can use them to get an initial view into how your changes will work later in the deployment process.
 
@@ -45,7 +45,7 @@ A pull request in GitHub can go through many different _lifecycle events_. For e
 
 :::image type="content" source="../media/2-pull-request-states.png" alt-text="Diagram that shows some of the pull request events." border="false":::
 
-With GitHub Actions, you can define _workflow triggers_ that respond to any of these events. For example, you can define a workflow that runs automatically whenever a pull request is opened, synchronized, or reopened by simply specifying the `pull_request` trigger without any additional configuration:
+With GitHub Actions, you can define _workflow triggers_ that respond to any of these events. For example, you can define a workflow that runs automatically whenever a pull request is opened, synchronized, or reopened by specifying the `pull_request` trigger without any additional configuration:
 
 ```yaml
 on: pull_request

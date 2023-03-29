@@ -6,19 +6,19 @@ In this unit, you learn how to deploy your code to a temporary environment from 
 
 When you're reviewing a pull request that includes Bicep code, it's a good practice to deploy the Bicep code to a real Azure environment. By doing so, you help build confidence that your changes will work when they reach your production environment. If there's a problem, you want to discover it quickly. Pull requests give you a great opportunity to discover and highlight problems, because you're getting immediate feedback from your reviewers.
 
-By now, you're used to the idea of deploying your changes to one or more non-production environments, such as _Test_, _QA_, and _Staging_, before deploying them to your production environment. In many organizations, these environments are _long-lived_, which means that they're updated when changes are rolled out, and the environments aren't usually deleted.
+By now, you're used to the idea of deploying your changes to one or more nonproduction environments, such as _Test_, _QA_, and _Staging_, before deploying them to your production environment. In many organizations, these environments are _long-lived_, which means that they're updated when changes are rolled out, and the environments aren't usually deleted.
 
-In contrast, an _ephemeral environment_ is one that you create dynamically, and that you're comfortable with being deleted when it's no longer useful. Ephemeral environments are intended to exist for a short amount of time only (for example, just long enough for your changes to be reviewed).
+In contrast, an _ephemeral environment_ is one that you create dynamically, and that you're comfortable with being deleted when it's no longer useful. Ephemeral environments are intended to exist for a short amount of time only (for example, only long enough for your changes to be reviewed).
 
-Ephemeral environments are a good choice when you deploy environments for pull requests, because you might have many separate pull requests open at a time, representing different types of changes. If you have several pull requests open, sharing your long-lived non-production environments means that only one change can be previewed at a time.
+Ephemeral environments are a good choice when you deploy environments for pull requests, because you might have many separate pull requests open at a time, representing different types of changes. If you have several pull requests open, sharing your long-lived nonproduction environments means that only one change can be previewed at a time.
 
 ## Create ephemeral environments
 
 Because you're so used to building up your Azure infrastructure as code, and you've invested in building your Bicep files to deploy your resources, you can reuse those same assets to deploy an ephemeral environment. You can even deploy multiple ephemeral environments at a time, if you need to. You just need to ensure that your deployments are sufficiently _parameterized_ and _generalized_, so that you can easily create independent environments. For example, you need to ensure that some Azure resources are given globally unique names, which can't be the same as resource names in any other ephemeral or long-lived environment.
 
-Ephemeral environments offer a number of benefits:
+Ephemeral environments offer many benefits:
 
-- You can safely test new features and capabilities in an isolated environment that doesn't affect your other production or non-production workloads.
+- You can safely test new features and capabilities in an isolated environment that doesn't affect your other production or nonproduction workloads.
 - You can display your changes in your own branch, letting you easily showcase your work to your colleagues or provide access to reviewers.
 - You can have multiple team members test separate changes at the same time, even if the changes are incompatible.
 - Because they involve running your Bicep files regularly, ephemeral environments help you continually test the accuracy and completeness of your Bicep code and other scripts. As a result, you can be more confident that the code will run perfectly in your production environment.
@@ -50,7 +50,7 @@ Your deployment workflow uses a workload identity and federated credential to au
 
 In a previous exercise unit in this module, you ran a command to create a federated credential. The policy string looked similar to the following:
 
-`repo:my-github-user/my-repo:pull_request`.
+`repo:my-github-user/my-repo:pull_request`
 
 The `pull_request` near the end of the string specifies that the federated credential works with pull request validation workflows.
 
@@ -66,8 +66,8 @@ By using a dedicated Azure subscription, you can also easily monitor the costs o
 Additionally, Azure provides many ways to help you to control the costs of ephemeral environments, including:
 
 - Microsoft Cost Management lets you set _budgets_ for a subscription. Budgets trigger notifications, so that your team is made aware that the cost is approaching the threshold you specified.
-- Many Azure resource types provide cheaper, or even free, tiers for non-production workloads. Consider whether you can use these pricing tiers and SKUs.
-- Azure Dev/Test pricing is available for some customers to use for their non-production subscriptions.
+- Many Azure resource types provide cheaper, or even free, tiers for nonproduction workloads. Consider whether you can use these pricing tiers and SKUs.
+- Azure Dev/Test pricing is available for some customers to use for their nonproduction subscriptions.
 - Resource tags can help you identify the resources that are associated with each ephemeral environment, and calculate the cost of each ephemeral environment.
 - You can create automation scripts to delete your ephemeral resources after a defined period of time or even, for example, every night after business hours.
 

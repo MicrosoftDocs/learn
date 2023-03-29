@@ -239,4 +239,5 @@ After you're finished with the module, you can delete the resources you created:
   1. Select **Delete** and follow the prompts.
   1. Select **Deleted applications** to permanently delete the app registration.
 
-  > [!TIP] It's possible to have duplicate App registration and service principal names. It's recommended to verify the application ID to make sure you're deleting the correct resource.
+  > [!IMPORTANT]
+  > It's possible to have duplicate App registration and service principal names. It's recommended to verify the application ID to make sure you're deleting the correct resource.

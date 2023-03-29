@@ -15,7 +15,7 @@ To meet these objectives, you'll:
 
 ## Get the GitHub repository
 
-In this section you set up your GitHub repository to complete the rest of this module. You do so by creating a new repository based on a template repository. The template repository contains the files you need to get started on this module.
+In this section, you set up your GitHub repository to complete the rest of this module. You do so by creating a new repository based on a template repository. The template repository contains the files you need to get started on this module.
 
 The modules in this learning path are part of a progression. For learning purposes, each module has an associated GitHub template repository.
 
@@ -29,13 +29,13 @@ Run a template that sets up your GitHub repository.
 > [!div class="nextstepaction"]
 > [Run the template](https://github.com/MicrosoftDocs/mslearn-automate-azure-infrastructure-change-reviews-using-bicep-github?azure-portal=true)
 
-On the GitHub site, create a repository from the template by doing the following:
+On the GitHub site, create a repository from the template by doing the following steps:
 
 1. Select **Use this template** > **Create a new repository**.
 
    :::image type="content" source="../media/3-template.png" alt-text="Screenshot of the GitHub interface showing the template repo, with the 'Use this template' button highlighted.":::
 
-1. Note the name of your GitHub username or organization. In the example above, the GitHub user name is _mygithubuser_. You'll need this name soon.
+1. Note the name of your GitHub username or organization. In the example, the GitHub user name is _mygithubuser_. You'll need this name soon.
 
 1. Enter a name for your new project, such as _toy-website-auto-review_.
 
@@ -107,10 +107,10 @@ Now that you've cloned the repository locally to your computer, you will sign in
 
 ## Create a workload identity
 
-Later in this Microsoft Learn module, your pull request workflow will create resource groups and resources in your subscription. To do this, you need to create a workload identity and grant it the Contributor role on your subscription.
+Later in this Microsoft Learn module, your pull request workflow will create resource groups and resources in your subscription. To deploy resources, you need to create a workload identity and grant it the Contributor role on your subscription.
 
 > [!WARNING]
-> The workload identity that you create here has a high level of access to your Azure subscription. To avoid any accidental issues, use a non-production subscription. Don't execute these steps in an environment that holds any of your production workloads.
+> The workload identity that you create here has a high level of access to your Azure subscription. To avoid any accidental issues, use a nonproduction subscription. Don't execute these steps in an environment that holds any of your production workloads.
 >
 > In your own pull request validation workflows, we recommend that you use a dedicated Azure subscription.
 
@@ -118,7 +118,7 @@ Later in this Microsoft Learn module, your pull request workflow will create res
 
 To create the workload identities, the Azure CLI commands use `jq` to parse data from JSON output. If you don't have `jq` installed, you can use Bash in [Azure Cloud Shell](https://shell.azure.com/) to create the workload identity, resource group and role assignment, and prepare the GitHub secrets.
 
-1. Run the code below to define variables for your GitHub username and your repository name. Ensure that you replace `mygithubuser` with your GitHub username, which you noted earlier in this exercise. Also ensure that you specify the correct GitHub repository name.
+1. Run the following code to define variables for your GitHub username and your repository name. Ensure that you replace `mygithubuser` with your GitHub username, which you noted earlier in this exercise. Also ensure that you specify the correct GitHub repository name.
 
    ```bash
    githubOrganizationName='mygithubuser'
@@ -141,7 +141,7 @@ To create the workload identities, the Azure CLI commands use `jq` to parse data
 
 ::: zone pivot="powershell"
 
-1. Run the code below to define variables for your GitHub username and your repository name. Ensure that you replace `mygithubuser` with your GitHub username, which you noted earlier in this exercise. Also ensure that you specify the correct GitHub repository name.
+1. Run the following code to define variables for your GitHub username and your repository name. Ensure that you replace `mygithubuser` with your GitHub username, which you noted earlier in this exercise. Also ensure that you specify the correct GitHub repository name.
 
    ```azurepowershell
    $githubOrganizationName = 'mygithubuser'
