@@ -1,8 +1,7 @@
 
+In Azure API Management, policies allow the publisher to change the behavior of the API through configuration. Policies are a collection of Statements that are executed sequentially on the request or response of an API.
 
-In Azure API Management, policies are a powerful capability of the system that allow the publisher to change the behavior of the API through configuration. Policies are a collection of Statements that are executed sequentially on the request or response of an API.
-
-Policies are applied inside the gateway which sits between the API consumer and the managed API. The gateway receives all requests and usually forwards them unaltered to the underlying API. However a policy can apply changes to both the inbound request and outbound response. Policy expressions can be used as attribute values or text values in any of the API Management policies, unless the policy specifies otherwise. 
+Policies are applied inside the gateway that sits between the API consumer and the managed API. The gateway receives all requests and usually forwards them unaltered to the underlying API. However a policy can apply changes to both the inbound request and outbound response. Policy expressions can be used as attribute values or text values in any of the API Management policies, unless the policy specifies otherwise. 
 
 ## Understanding policy configuration
 
@@ -28,13 +27,36 @@ The configuration is divided into `inbound`, `backend`, `outbound`, and `on-erro
 </policies>
 ```
 
-If there is an error during the processing of a request, any remaining steps in the `inbound`, `backend`, or `outbound` sections are skipped and execution jumps to the statements in the `on-error` section. By placing policy statements in the `on-error` section you can review the error by using the `context.LastError` property, inspect and customize the error response using the `set-body` policy, and configure what happens if an error occurs.
+If there's an error during the processing of a request, any remaining steps in the `inbound`, `backend`, or `outbound` sections are skipped and execution jumps to the statements in the `on-error` section. By placing policy statements in the `on-error` section you can review the error by using the `context.LastError` property, inspect and customize the error response using the `set-body` policy, and configure what happens if an error occurs.
 
-## Examples
+## Policy expressions
 
-### Apply policies specified at different scopes
+Unless the policy specifies otherwise, policy expressions can be used as attribute values or text values in any of the API Management policies. A policy expression is either:
 
-If you have a policy at the global level and a policy configured for an API, then whenever that particular API is used both policies will be applied. API Management allows for deterministic ordering of combined policy statements via the base element.
+* a single C# statement enclosed in `@(expression)`, or
+* a multi-statement C# code block, enclosed in `@{expression}`, that returns a value
+
+Each expression has access to the implicitly provided `context` variable and an allowed subset of .NET Framework types.
+
+[Policy expressions](/azure/api-management/api-management-policy-expressions) provide a sophisticated means to control traffic and modify API behavior without requiring you to write specialized code or modify backend services. 
+
+The following example uses policy expressions and the set-header policy to add user data to the incoming request. The added header includes the user ID associated with the subscription key in the request, and the region where the gateway processing the request is hosted.
+
+```xml
+<policies>
+    <inbound>
+        <base />
+        <set-header name="x-request-context-data" exists-action="override">
+            <value>@(context.User.Id)</value>
+            <value>@(context.Deployment.Region)</value>
+      </set-header>
+    </inbound>
+</policies>
+```
+
+## Apply policies specified at different scopes
+
+If you have a policy at the global level and a policy configured for an API, then whenever that particular API is used both policies are applied. API Management allows for deterministic ordering of combined policy statements via the base element.
 
 ```xml
 <policies>
@@ -46,11 +68,11 @@ If you have a policy at the global level and a policy configured for an API, the
 </policies>
 ```
 
-In the example policy definition above, the `cross-domain` statement would execute before any higher policies which would in turn, be followed by the `find-and-replace` policy.
+In the previous example policy definition, The `cross-domain` statement would execute first. The `find-and-replace` policy would execute after any policies at a broader scope.
 
-### Filter response content
+## Filter response content
 
-The policy defined in example below demonstrates how to filter data elements from the response payload based on the product associated with the request.
+The policy defined in following example demonstrates how to filter data elements from the response payload based on the product associated with the request.
 
 The snippet assumes that response content is formatted as JSON and contains root-level properties named "minutely", "hourly", "daily", "flags".
 
@@ -84,3 +106,4 @@ The snippet assumes that response content is formatted as JSON and contains root
   </on-error>
 </policies>
 ```
+

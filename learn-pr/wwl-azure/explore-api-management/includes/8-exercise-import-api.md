@@ -1,6 +1,5 @@
 
-
-In this exercise you'll learn how to perform the following actions:
+In this exercise you learn how to perform the following actions:
 
 * Create an API Management (APIM) instance
 * Import an API
@@ -11,9 +10,9 @@ In this exercise you'll learn how to perform the following actions:
 
 * An **Azure account** with an active subscription. If you don't already have one, you can sign up for a free trial at [https://azure.com/free](https://azure.com/free).
 
-## Login to Azure
+## Sign in to Azure
 
-1. Login to the [Azure portal](https://portal.azure.com) and open the Cloud Shell.
+1. Sign in to the [Azure portal](https://portal.azure.com) and open the Cloud Shell.
 
     :::image type="content" source="../media/cloud-shell-menu.png" alt-text="The location of Cloud Shell launch button.":::
 
@@ -23,7 +22,7 @@ In this exercise you'll learn how to perform the following actions:
 
 ## Create an API Management instance
 
-1. Let's set some variables for the CLI commands to use to reduce the amount of retyping. Replace `<myLocation>` with a region that makes sense for you. The APIM name needs to be a globally unique name, and the script below generates a random string. Replace `<myEmail>` with an email address you can access.
+1. Let's set some variables for the CLI commands to use to reduce the amount of retyping. Replace `<myLocation>` with a region that makes sense for you. The APIM name needs to be a globally unique name, and the following script generates a random string. Replace `<myEmail>` with an email address you can access.
 
     ```bash
     myApiName=az204-apim-$RANDOM
@@ -31,7 +30,7 @@ In this exercise you'll learn how to perform the following actions:
     myEmail=<myEmail>
     ```
 
- 1. Create a resource group. The commands below will create a resource group named *az204-apim-rg*.
+ 1. Create a resource group. The following commands create a resource group named *az204-apim-rg*.
 
     ```bash
     az group create --name az204-apim-rg --location $myLocation
@@ -64,7 +63,7 @@ This section shows how to import and publish an OpenAPI specification backend AP
 
 1. Select **OpenAPI** from the list and select **Full** in the pop-up.
 
-    :::image type="content" source="../media/create-api.png" alt-text="The OpenAPI dialog box. Fields are detailed in the table below.":::
+    :::image type="content" source="../media/create-api.png" alt-text="The OpenAPI dialog box. Fields are detailed in the following table.":::
 
     Use the values from the table below to fill out the form. You can leave any fields not mentioned their default value.
 
@@ -93,7 +92,7 @@ The *Demo Conference API* is created and a backend needs to be specified.
 
 ## Test the API
 
-Now that the API has been imported and the backend configured it is time to test the API.
+Now that the API has been imported and the backend configured it's time to test the API.
 
 1. Select **Test**.
 
@@ -107,8 +106,8 @@ Now that the API has been imported and the backend configured it is time to test
 
 ## Clean up Azure resources
 
-When you are finished with the resources you created in this exercise you can use the command below to delete the resource group and all related resources.
+When you're finished with the resources you created in this exercise you can use the command below to delete the resource group and all related resources.
 
 ```bash
-az group delete --name az204-apim-rg --no-wait
+az group delete --name az204-apim-rg
 ```
