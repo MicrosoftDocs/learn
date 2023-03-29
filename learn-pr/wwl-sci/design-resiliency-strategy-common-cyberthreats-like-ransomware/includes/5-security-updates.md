@@ -2,7 +2,7 @@ You can use Update Management in Azure Automation to manage operating system upd
 
 As a service provider, you may have onboarded multiple customer tenants to [Azure Lighthouse](/azure/lighthouse/overview). Update Management can be used to assess and schedule update deployments to machines in multiple subscriptions in the same Azure Active Directory (Azure AD) tenant, or across tenants using Azure Lighthouse.
 
-Microsoft offers other capabilities to help you manage updates for your Azure VMs or Azure virtual machine scale sets that you should consider as part of your overall update management strategy.
+Microsoft offers other capabilities to help you manage updates for your Azure VMs or Azure Virtual Machine Scale Sets that you should consider as part of your overall update management strategy.
 
 Before deploying Update Management and enabling your machines for management, make sure that you understand the information in the following sections.
 
