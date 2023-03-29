@@ -38,5 +38,3 @@ units:
 - learn.intro-to-azure-data-lake-storage.when-to-use-azure-data-lake-storage
 - learn.intro-to-azure-data-lake-storage.knowledge-check
 - learn.intro-to-azure-data-lake-storage.summary
-badge:
-  uid: learn.intro-to-azure-data-lake-storage.badge
