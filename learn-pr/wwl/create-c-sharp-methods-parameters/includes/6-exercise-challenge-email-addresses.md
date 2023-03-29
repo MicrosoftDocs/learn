@@ -72,10 +72,10 @@ Your challenge is to create a method that will display the email address of inte
     aakamath@contoso.com
     sadelucchi@contoso.com
     siali@contoso.com
-    vibavin@hayworth.com
-    cobright@hayworth.com
-    shsinclair@hayworth.com
-    dakamath@hayworth.com
+    viashton@hayworth.com
+    codysart@hayworth.com
+    shlawrence@hayworth.com
+    davaldes@hayworth.com
     ```
 
 Whether you get stuck and need to peek at the solution or you finish successfully, continue on to view a solution to this challenge.
