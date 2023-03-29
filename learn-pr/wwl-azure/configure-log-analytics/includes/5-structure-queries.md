@@ -1,3 +1,4 @@
+
 Administrators build Log Analytics queries from data stored in dedicated tables in a Log Analytics workspace. Some common dedicated tables include Event, Syslog, Heartbeat, and Alert. When you build a Kusto Query Language (KQL) query, you begin by determining which tables in the Azure Monitor Logs repository have the data you're looking for. 
 
 The following illustration highlights how KQL queries use the dedicated table data for your monitored services and resources. 
@@ -77,7 +78,7 @@ Use the `where` operator to filter your table to the subset of rows that match t
 The following example filters the data records for `StormEvent` to use only records that match "snow."
 
 ```kusto
-StormEvent | where fruit=="snow"
+StormEvent | where event=="snow"
 ```
 
 Your query filters to one row in the `StormEvent` table:

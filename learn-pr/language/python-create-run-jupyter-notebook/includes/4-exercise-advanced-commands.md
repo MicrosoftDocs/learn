@@ -6,6 +6,18 @@ In your ship's manual, you'd like to create a chart of your ship's daily statist
 
 Build a bar chart with some mock data to show how you could plot oxygen levels in your ship. To do this, you'll need some more libraries.
 
+1. Install `numpy`:
+
+   ```python
+   pip install numpy
+   ```
+
+1. Install `matplotlib`:
+
+   ```python
+   pip install matplotlib
+   ```
+ 
 1. Create a Markdown block to notate what you will display:
 
    ```md
@@ -25,15 +37,19 @@ Build a bar chart with some mock data to show how you could plot oxygen levels i
    plt.bar(range(len(oxy_nums)), oxy_nums)
    plt.show()
    ```
-
-   > [!TIP]
-   > If you're a new user of Python, you might need to install `numpy`, `matplotlib`, and other libraries not yet installed on your system. To install `numpy`, use an activated virtual environment, type `pip install numpy` in a code block, and run it. To install `matplotlib`, use an activated virtual environment, type `pip install matplotlib` in a code block, and run it. Follow this basic procedure for any other libraries you need to install.
    
    Of course, this data is a mockup of real data, using `numpy` to create an array of 100 integers between 1 and 10.
 
+1. Run the code.
+
+   > [!TIP]
+   > You might need to change presentation to image/png to render the image in the notebook.
+   >
+   > :::image type="content" source="../media/change-presentation-output-jupyter-notebook.png" alt-text="Screenshot that shows the Change Presentation option in the notebook."::: 
+
    Your bar chart looks like this:
 
-   :::image type="content" source="../media/chart.png" alt-text="Screenshot that shows an example of a bar chart.":::
+   :::image type="content" source="../media/chart.png" alt-text="Screenshot that shows an example of a bar chart." border="false":::
 
    > [!TIP]
    > If you hover your mouse over the chart image in the notebook, you can save the chart as a *.png* file image to your local computer for future reference.
@@ -62,6 +78,9 @@ Next, you want to show the time that your ship needs to take to get up to a good
    ```
 
 1. Run the code block to determine how long it will take to reach your desired velocity.
+
+   :::image type="content" source="../media/velocity-code-output-jupyter-notebook.png" alt-text="Screenshot that shows the output of the code in the notebook."::: 
+
 1. Tweak the start and end velocity values, or the acceleration, to determine how your spaceship will perform.
 
    > [!TIP]

@@ -479,7 +479,7 @@ You will be using these extra credit scores and the application requirements pro
     
             else
                 // add the extra credit points to the sum - bonus points equal to 10% of an exam score
-                sumAssignmentScores += score / 10;
+                sumAssignmentScores += (decimal)score / 10;
         }
     
         currentStudentGrade = (decimal)(sumAssignmentScores) / examAssignments;

@@ -121,8 +121,8 @@ After some research, you find a small JavaScript library called SweetAlert that 
         }
     }
     ```
-
-    The code to call the `swal` function looks similar to `confirm`. The bulk of the update is in how the function receives parameters.
+    
+    The `"swal"` name is the indentifier used for the JavaScript function that comes from the third party _sweetalert.js_ reference. The code to call the `swal` function looks similar to `confirm`. The bulk of the update is in how the function receives parameters.
 
 1. In Visual Studio Code, press <kbd>F5</kbd> or, in the **Run** menu, select **Start Debugging**.
 

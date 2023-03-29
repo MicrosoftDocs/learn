@@ -23,7 +23,7 @@ roles:
   - developer
   - student
 products:
-  - vs
+  - azure
 prerequisites: Introduction to Azure Health Bot
 subjects:
 - chatbot

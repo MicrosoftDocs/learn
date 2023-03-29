@@ -1,7 +1,8 @@
 
 
 
-In this exercise you'll learn how to:
+
+In this exercise you learn how to:
 
 * Create a Service Bus namespace, and queue, using the Azure CLI.
 * Create a .NET console application to send and receive messages from the queue.
@@ -11,11 +12,11 @@ In this exercise you'll learn how to:
 * An **Azure account** with an active subscription. If you don't already have one, you can sign up for a free trial at [https://azure.com/free](https://azure.com/free).
 * [Visual Studio Code](https://code.visualstudio.com/) on one of the [supported platforms](https://code.visualstudio.com/docs/supporting/requirements#_platforms).
 * The [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) for Visual Studio Code.
-* [.NET 6](https://dotnet.microsoft.com/download/dotnet/6.0) is the target framework for the steps below.
+* [.NET 6](https://dotnet.microsoft.com/download/dotnet/6.0) is the target framework for the exercise.
 
-## Log in to Azure
+## Sign in to Azure
 
-In this section you'll open your terminal and create some variables that will be used throughout the rest of the exercise to make command entry, and unique resource name creation, a bit easier.
+In this section, you open your terminal and create some variables used throughout the rest of the exercise to make command entry, and unique resource name creation, a bit easier.
 
 1. Launch the [Azure Cloud Shell](https://shell.azure.com) and select **Bash** and the environment.
 
@@ -28,13 +29,13 @@ In this section you'll open your terminal and create some variables that will be
 
 ## Create Azure resources
 
-1. Create a resource group to hold the Azure resources you'll be creating.
+1. Create a resource group to hold the Azure resources you're creating.
 
     ```bash
     az group create --name az204-svcbus-rg --location $myLocation
     ```
 
-1. Create a Service Bus messaging namespace. The command below will create a namespace using the variable you created earlier. The operation will take a few minutes to complete.
+1. Create a Service Bus messaging namespace. The following command creates a namespace using the variable you created earlier. The operation takes a few minutes to complete.
 
     ```bash
     az servicebus namespace create \
@@ -56,7 +57,7 @@ In this section you'll open your terminal and create some variables that will be
 
 1. Open the Azure portal and navigate to the **az204-svcbus-rg** resource group.
 
-1. Select the **az204svcbus** resource you just created.
+1. Select the **az204svcbus** resource you created.
 
 1. Select **Shared access policies** in the **Settings** section, then select the **RootManageSharedAccessKey** policy.
 
@@ -102,12 +103,6 @@ In this section you'll open your terminal and create some variables that will be
     // the sender used to publish messages to the queue
     ServiceBusSender sender;
     
-    // the client that owns the connection and can be used to create senders and receivers
-    ServiceBusClient client;
-    
-    // the sender used to publish messages to the queue
-    ServiceBusSender sender;
-    
     // Create the clients that we'll use for sending and processing messages.
     client = new ServiceBusClient(connectionString);
     sender = client.CreateSender(queueName);
@@ -146,7 +141,7 @@ In this section you'll open your terminal and create some variables that will be
 
 1. Save the file and run the `dotnet build` command to ensure there are no errors.
 
-1. Run the program using the `dotnet run` command and wait for the confirmation message below. Then press any key to exit the program.
+1. Run the program using the `dotnet run` command and wait for the following confirmation message. Then press any key to exit the program.
 
     ```bash
     A batch of three messages has been published to the queue.
@@ -154,17 +149,17 @@ In this section you'll open your terminal and create some variables that will be
 
 ## Review results
 
-1. Log in to the Azure portal and navigate to your Service Bus namespace. Select the **Service Bus Explorer** in the Service Bus Queue navigation pane.
-1. Select **Peek from start** and the three messages that were sent will appear.
+1. Sign in to the Azure portal and navigate to your Service Bus namespace. Select the **Service Bus Explorer** in the Service Bus Queue navigation pane.
+1. Select **Peek from start** and the three messages that were sent appear.
 
     :::image type="content" source="../media/peek-messages.png" alt-text="Decorative.":::
 
 
 ## Update project to receive messages to the queue
 
-In this section you'll update the program to receive messages from the queue.
+In this section, you update the program to receive messages from the queue.
 
-1. Add the code below at the end of the existing code. See code comments for details.
+1. Add the following code at the end of the existing code. See code comments for details.
 
     ```csharp
     ServiceBusProcessor processor;
@@ -220,7 +215,7 @@ In this section you'll update the program to receive messages from the queue.
 
 1. Use the `dotnet build` command to ensure there are no errors.
 
-1. Use the `dotnet run` command to run the application. It will send three more messages to the queue and then retrieve all six messages. Press any key to stop the receiver and the application.
+1. Use the `dotnet run` command to run the application. It sends three more messages to the queue and then retrieve all six messages. Press any key to stop the receiver and the application.
 
     ```bash
     Wait for a minute and then press any key to end the processing

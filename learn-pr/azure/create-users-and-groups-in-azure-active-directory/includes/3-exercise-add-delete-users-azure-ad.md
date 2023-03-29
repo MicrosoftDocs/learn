@@ -6,7 +6,7 @@ In this exercise, you'll create a new Azure Active Directory (Azure AD) organiza
 
 To hold all of the users you create in this exercise, create a new organization.
 
-1. Sign in to the [Azure portal](<https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true>) with the same account you used to activate the sandbox.
+1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
 1. On the Azure portal home page, under **Azure services**, select **Create a resource**.
 
@@ -43,7 +43,7 @@ To hold all of the users you create in this exercise, create a new organization.
 
 ## Get a free trial for Azure AD Premium
 
-For Azure AD Premium to complete all the exercises in this module, you'll need to activate a free trial.
+To complete all the exercises in this module, you'll need to activate a free trial for Azure AD Premium.
 
 1. In the left menu pane, under **Manage**, select **Licenses**. The **Overview** pane for *Licenses* appears.
 
