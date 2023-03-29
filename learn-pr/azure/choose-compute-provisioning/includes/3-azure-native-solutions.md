@@ -1,4 +1,4 @@
-Your organization has several requirements for moving its applications to Azure virtual machines. You'll select the appropriate tool based on your organization's needs.
+Your organization has several requirements for moving its applications to Azure virtual machines. You want to review these requirements and select the appropriate tool based on your organization's needs.
 
 The right provisioning tools depend on your problem, the size of your infrastructure, and the outcome you want to achieve. Because these criteria vary from network to network, here are a few fundamental metrics that we can use to determine which tool is more suitable to provision compute:
 
@@ -8,7 +8,7 @@ The right provisioning tools depend on your problem, the size of your infrastruc
 - Configuration language
 - Limitations and drawbacks
 
-Let's consider the advantages or disadvantages for each of these tools, by using these metrics. We'll also examine a business scenario and see how each tool can help us handle a specific scenario.
+Let's consider the advantages or disadvantages for each of these tools, by using these metrics. We can examine a business scenario and see how each tool can help us handle a specific scenario.
 
 ## Custom script
 
@@ -24,7 +24,7 @@ The organization you work for has been given a new contract to work for a new cl
 
 The team asks you to implement a solution to ensure that these virtual machines all have the application installed properly, and in the fastest and least complex manner possible.
 
-You decide that a custom script can help ensure that this application is set up on all of the machines with minimal effort. You use the Azure portal to set the extensions on the virtual machines within a few clicks.
+You decide that a custom script can help ensure that this application is set up on all of the machines with minimal effort. You set up the extensions on the virtual machines with just a few settings in the Azure portal.
 
 ### Solution summary
 
@@ -52,7 +52,7 @@ DSC is easy to read, update, and store. DSC configurations help you declare the 
 
 - **Ease of setup.** Automation State Configuration isn't difficult to set up, but it requires the user to be familiar with the Azure portal.
 - **Management.** The service manages all of the virtual machines for you automatically. Each virtual machine can send you detailed reports about its state, which you can use to draw insights from this data. Automation State Configuration also helps you to manage your DSC configurations more easily.
-- **Interoperability.** Automation State Configuration requires DSC configurations. It works with your Azure virtual machines automatically, and any virtual machines that you have on-premises or on another cloud provider.
+- **Interoperability.** Automation State Configuration requires DSC configurations. It works with your Azure virtual machines automatically, and any virtual machines that are on-premises or on another cloud provider.
 - **Configuration language.** Use PowerShell.
 - **Limitations and drawbacks.** You can only use PowerShell to define configurations.
 
