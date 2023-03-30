@@ -1,5 +1,5 @@
 ### YamlMime:LearningPath
-uid: learn.wwl.create-methods-c-sharp-console-applications
+uid: learn.wwl.get-started-c-sharp-part-5
 metadata:
   title: Create methods in C# console applications (Get started with C#, Part 5)
   description: This learning path covers the syntax of creating and using methods in C# console applications.
@@ -35,4 +35,4 @@ modules:
 - learn.wwl.guided-project-visit-petting-zoo
 - learn.wwl.challenge-project-create-mini-game
 trophy:
-  uid: learn.wwl.create-methods-c-sharp-console-applications.trophy
+  uid: learn.wwl.get-started-c-sharp-part-5.trophy
