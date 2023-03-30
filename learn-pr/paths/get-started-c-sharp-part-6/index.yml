@@ -1,23 +1,19 @@
 ### YamlMime:LearningPath
-uid: learn.wwl.get-started-c-sharp-part-3
+uid: learn.wwl.get-started-c-sharp-part-6
 metadata:
-  title: Add logic to C# console applications (Get started with C#, Part 3)
-  description: Examine the relationship between code blocks and variable scope, and deepen your C# coding experience with Boolean expressions, selection statements, and iteration statements.
-  ms.date: 02/27/2023
+  title: Debug C# console applications (Get started with C#, Part 6)
+  description: Debug C# console applications (Get started with C#, Part 6)
+  ms.date: 03/22/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Add logic to C# console applications (Get started with C#, Part 3)
+title: Debug C# console applications (Get started with C#, Part 6)
 prerequisites: |
-  *   Assign and retrieve values by using variables, including array variables, in C#.
-  *   Manipulate variable data to modify its type and appearance in C#.
-  *   Execute built-in functionality available from code libraries in your C# applications.
-  *   Develop if-elseif-else and foreach statements in your C# applications.
-  *   Develop, build, and run C# code using Visual Studio Code.
-  *   Perform System.Console I/O operations.
+  - An installation of Visual Studio Code that's configured for C# application development.
+  - Ability to develop C# console applications that implement business logic using iteration statements, selection statements, and custom methods.
 summary: |
-  Examine the relationship between code blocks and variable scope, and deepen your C# coding experience with Boolean expressions, selection statements, and iteration statements.
+  Learn how to debug C# console applications in Visual Studio Code and how to implement exception handling using the try-catch pattern. Configure the C# debugger tools in Visual Studio Code and use the debugger tools to isolate and fix logic issues. Examine the exception types provided by .NET and the properties of exception objects, then implement exception handling and throw customized exception objects.
   
   :::row:::
   :::column:::
@@ -33,7 +29,7 @@ summary: |
    :::column:::
     <img src="/training/achievements/add-logic-c-sharp-console-applications.svg" width="101" alt="Screenshot of the trophy for the Describe the Add logic to C# console applications (Get started with C#, Part 3) learning path." role="presentation"></img>
     
-    Add logic to C# console applications (Get started with C#, Part 3)
+    [Add logic to C# console applications (Get started with C#, Part 3)](../get-started-c-sharp-part-3/index.yml) 
   :::column-end:::
   :::row-end:::
 
@@ -51,10 +47,10 @@ summary: |
    :::column:::
     <img src="/training/achievements/generic-trophy.svg" width="101" alt="Screenshot of the trophy for the Debug C# console applications (Get started with C#, Part 6) learning path." role="presentation"></img>
     
-    [Debug C# console applications (Get started with C#, Part 6)](../get-started-c-sharp-part-6/index.yml)
+    Debug C# console applications (Get started with C#, Part 6)
   :::column-end:::
   :::row-end:::
-iconUrl: /training/achievements/add-logic-c-sharp-console-applications.svg
+iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - beginner
 roles:
@@ -66,12 +62,11 @@ products:
 subjects:
 - development-tools
 modules:
-- learn.languages.csharp-evaluate-boolean-expressions
-- learn.languages.csharp-code-blocks
-- learn.languages.csharp-switch-case
-- learn.languages.csharp-for
-- learn.languages.csharp-do-while
-- learn.wwl.guided-project-develop-conditional-branching-looping
-- learn.wwl.challenge-project-develop-branching-looping-structures-c-sharp
+- learn.wwl.review-principles-code-debugging-exception-handling-c-sharp
+- learn.wwl.implement-visual-studio-code-debugging-tools
+- learn.wwl.implement-exception-handling-c-sharp
+- learn.wwl.create-throw-exceptions-c-sharp
+- learn.wwl.guided-project-debug-handle-exceptions-c-sharp-console-application
+- learn.wwl.challenge-project-debug-c-sharp-console-application
 trophy:
-  uid: learn.wwl.get-started-c-sharp-part-3.trophy
+  uid: learn.wwl.get-started-c-sharp-part-6.trophy

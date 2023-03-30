@@ -1,23 +1,22 @@
 ### YamlMime:LearningPath
-uid: learn.wwl.get-started-c-sharp-part-3
+uid: learn.wwl.get-started-c-sharp-part-5
 metadata:
-  title: Add logic to C# console applications (Get started with C#, Part 3)
-  description: Examine the relationship between code blocks and variable scope, and deepen your C# coding experience with Boolean expressions, selection statements, and iteration statements.
-  ms.date: 02/27/2023
+  title: Create methods in C# console applications (Get started with C#, Part 5)
+  description: This learning path covers the syntax of creating and using methods in C# console applications.
+  ms.date: 03/28/2023
   author: wwlpublish
-  ms.author: cahowd
+  ms.author: buzahid
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Add logic to C# console applications (Get started with C#, Part 3)
+title: Create methods in C# console applications (Get started with C#, Part 5)
 prerequisites: |
-  *   Assign and retrieve values by using variables, including array variables, in C#.
-  *   Manipulate variable data to modify its type and appearance in C#.
-  *   Execute built-in functionality available from code libraries in your C# applications.
-  *   Develop if-elseif-else and foreach statements in your C# applications.
-  *   Develop, build, and run C# code using Visual Studio Code.
-  *   Perform System.Console I/O operations.
+  - Experience with basic coding tasks such as instantiating variables, using various data types, and sending output to a console window.
+  - Experience using Visual Studio Code to create and run simple console applications.
+  - Experience using C# data types including `int`, `string`, `double`, and arrays
+  - Experience using `switch` statements, `if-else` statements, and `for` loops
+  - Experience using `string.Split`
 summary: |
-  Examine the relationship between code blocks and variable scope, and deepen your C# coding experience with Boolean expressions, selection statements, and iteration statements.
+  Learn how to create methods for C# console applications. Use parameters and return values to manipulate data across applications. Learn to use named and optional arguments to simplify code.
   
   :::row:::
   :::column:::
@@ -33,7 +32,7 @@ summary: |
    :::column:::
     <img src="/training/achievements/add-logic-c-sharp-console-applications.svg" width="101" alt="Screenshot of the trophy for the Describe the Add logic to C# console applications (Get started with C#, Part 3) learning path." role="presentation"></img>
     
-    Add logic to C# console applications (Get started with C#, Part 3)
+    [Add logic to C# console applications (Get started with C#, Part 3)](../get-started-c-sharp-part-3/index.yml) 
   :::column-end:::
   :::row-end:::
 
@@ -46,7 +45,7 @@ summary: |
   :::column:::
     <img src="/training/achievements/generic-trophy.svg" width="101" alt="Screenshot of the trophy for the Describe the Create methods in C# console applications (Get started with C#, Part 5) learning path." role="presentation"></img>
     
-    [Create methods in C# console applications (Get started with C#, Part 5)](../get-started-c-sharp-part-5/index.yml)
+    Create methods in C# console applications (Get started with C#, Part 5)
   :::column-end:::
    :::column:::
     <img src="/training/achievements/generic-trophy.svg" width="101" alt="Screenshot of the trophy for the Debug C# console applications (Get started with C#, Part 6) learning path." role="presentation"></img>
@@ -54,7 +53,7 @@ summary: |
     [Debug C# console applications (Get started with C#, Part 6)](../get-started-c-sharp-part-6/index.yml)
   :::column-end:::
   :::row-end:::
-iconUrl: /training/achievements/add-logic-c-sharp-console-applications.svg
+iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - beginner
 roles:
@@ -66,12 +65,10 @@ products:
 subjects:
 - development-tools
 modules:
-- learn.languages.csharp-evaluate-boolean-expressions
-- learn.languages.csharp-code-blocks
-- learn.languages.csharp-switch-case
-- learn.languages.csharp-for
-- learn.languages.csharp-do-while
-- learn.wwl.guided-project-develop-conditional-branching-looping
-- learn.wwl.challenge-project-develop-branching-looping-structures-c-sharp
+- learn.wwl.write-first-c-sharp-method
+- learn.wwl.create-c-sharp-methods-parameters
+- learn.wwl.create-c-sharp-methods-return-values
+- learn.wwl.guided-project-visit-petting-zoo
+- learn.wwl.challenge-project-create-mini-game
 trophy:
-  uid: learn.wwl.get-started-c-sharp-part-3.trophy
+  uid: learn.wwl.get-started-c-sharp-part-5.trophy

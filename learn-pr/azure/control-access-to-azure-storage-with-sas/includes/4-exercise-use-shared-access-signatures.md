@@ -131,7 +131,7 @@ In this exercise, you'll create a storage account and upload some example patien
 
 1. In a browser, paste the URL that was returned by the cURL command. Make sure you include the slash (/) at the end of the address.
 
-    The URL should be in this format: `https://gateway11.northeurope.console.azure.com/n/cc-4016c848/cc-4016c848/proxy/8000/`. 
+    The URL should be in this format: `https://gateway11.northeurope.console.azure.com/n/cc-4016c848/cc-4016c848/proxy/8000/`.
 
     If you're prompted to sign in, refresh your browser window. The **Lamna Healthcare** Patient Diagnostic Image System appears.
 
