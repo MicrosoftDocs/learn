@@ -1,4 +1,4 @@
-Let's take a step back and see how the number of samples compares to the amount of sample. We can compare the total weight from the `needed_samples` DataFrame to the `rock_samples` DataFrame. That is, we'll compare the samples we've identified as running low to all the samples collected on Apollo missions.
+Let's take a step back and compare the samples that are running low to all the samples collected on Apollo missions. We can compare the total weight from the `needed_samples` DataFrame to the `rock_samples` DataFrame.
 
 ```python
 needed_samples.groupby('Type')['Weight (kg)'].sum()
@@ -26,7 +26,7 @@ Special      0.74410
 Name: Weight (kg), dtype: float64
 ```
 
-One bit of information really stands out: we've never had a lot of Crustal rocks in the first place. 
+This bit of information really stands out: we didn't have many Crustal rocks in the first place. 
 
 We can add Crustal rocks to the set of needed samples:
 
@@ -49,7 +49,7 @@ needed_samples.info()
 
 ## Summary of needed samples
 
-The final step is to consolidate everything we know into one table that can be shared with the astronauts. First, we need a column for each type of rock that we have already identified as rocks we want more samples of:
+The final step is to consolidate everything we know into one table that can be shared with the astronauts. First, we need a column for each type of rock that we want more samples of:
 
  ```python
 needed_samples_overview = pd.DataFrame()
@@ -78,7 +78,7 @@ needed_samples_overview
 | 1 | Breccia | 10.11850 |
 | 2 | Crustal | 4.74469 |
 
-When astronauts are up on the Moon, one way they can identify rocks is by their size. If we can give them an estimated size of each type of rock, that might make their collection process easier.
+When astronauts are up on the Moon, one way they can identify rocks is by their size. If we can give them an estimated size of each type of rock that might make their collection process easier.
 
 ```python
 needed_sample_ave_weights = needed_samples.groupby('Type')['Weight (kg)'].mean().reset_index()
@@ -93,7 +93,7 @@ needed_samples_overview
 | 1 | Breccia | 10.11850 | 1.264812 |
 | 2 | Crustal | 4.74469 | 0.103145 |
 
-Crustals are small! They're probably a lot harder to spot, so no wonder we don't have a lot of them.
+Crustals are small! They're probably harder to spot, so no wonder we don't have many of them.
 
 We probably want to give the astronauts some indication of how many of each type we want them to collect. So, for the three types we're looking for, we should grab the total number we have of each type and get the remaining percentage of each type of rock. 
 
@@ -137,4 +137,4 @@ needed_samples_overview
 | 1 | Breccia | 10.11850 | 1.264813 | 959| 0.707227 | 44.991764 | 35.571884 |
 | 2 | Crustal | 4.74469 | 0.103145 | 46 | 0.033923 | 2.158103 | 20.922917 |
 
-So, we might tell the Artemis astronauts to please try to collect 13 Basalt rocks, 35 Breccia rocks, and 20 Crustal rocks. Whew!
+So, we might tell the Artemis astronauts to try to collect 13 Basalt rocks, 35 Breccia rocks, and 20 Crustal rocks. Whew!
