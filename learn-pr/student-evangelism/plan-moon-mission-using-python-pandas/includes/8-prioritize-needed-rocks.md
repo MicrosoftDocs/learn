@@ -16,7 +16,7 @@ Looking at the `head()` or `info()` of the `rock_samples` DataFrame isn't useful
 rock_samples.describe()
 ```
 
-| ID | Remaining (kg) | Weight (kg) | Pristine (%) | ... |
+| ID | Remaining (kg) | Weight (kg) | Pristine (%) | Remaining (kg) |
 |---|---|---|---|---|
 | count | 2229.000000 | 2229.000000 | 2229.000000 | 2229.000000 |
 | mean | 52058.432032 | 0.168253 | 84.512764 | 0.138103 |
@@ -34,7 +34,7 @@ low_samples = rock_samples.loc[(rock_samples['Weight (kg)'] >= .16) & (rock_samp
 low_samples.head()
 ```
 
-| Index | ID | Mission | Type | Subtype	weight (kg) | Pristine (%) | Remaining (kg) | ... |
+| Index | ID | Mission | Type | Subtype | Weight (kg) | Pristine (%) | Remaining (kg) |
 |---|---|---|---|---|---|---|---|
 | 11 | 10017 | Apollo11 | Basalt | Ilmenite | 0.973 | 43.71 | 0.425298 |
 | 14 | 10020 | Apollo11 | Basalt | Ilmenite | 0.425 | 27.88 | 0.118490 |

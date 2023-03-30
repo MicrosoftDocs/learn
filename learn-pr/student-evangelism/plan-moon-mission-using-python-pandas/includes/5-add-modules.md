@@ -1,6 +1,6 @@
-As we mentioned in an earlier unit, there isn't a lot of public information about *exactly* how rockets are made. Because we are not experts, we will be using data that is available to us to make assumptions. 
+As we mentioned in an earlier unit, there isn't a lot of public information about *exactly* how rockets are made. Because we are not experts, we can only make assumptions using data that is publicly available to us. 
 
-A *critical* part of data science is ensuring that the assumptions you make accurately represent the data and the impact of that data. Therefore, this particular training module is **not** something you should use to actually advise astronauts. While that realization might seem obvious here, it is critical to understand the importance of that as you take what you learn from this module and apply it to other datasets and problems to solve.
+A *critical* part of data science is ensuring that the assumptions you make accurately represent the data and the impact of that data. Therefore, this particular training module is **not** something you should use to actually advise astronauts. While that realization might seem obvious here, it's critical to understand the importance of that as you take what you learn from this module and apply it to other datasets and problems to solve.
 
 ## Revisiting the Apollo program
 

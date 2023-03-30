@@ -1,10 +1,10 @@
-Before you continue, it's important to establish what information you want to use to make a recommendation to the astronauts. In this case, the more publicly available information that could affect the amount of sample that is *possible* to return is the type of spacecraft used. 
+Before you continue, it's important to establish what information you want to use to make a recommendation to the astronauts. In this case, you can use publicly available information about the types of spacecraft used in previous Moon missions and the weight of rock samples were returned by each mission.
 
 ## Convert the sample weight
 
-While details of rocket design are proprietary, some information is publicly available, such as the weight of the modules (parts of the rocket) that will carry the samples back to Earth, and the total amount of weight that the rocket can lift above the atmosphere. 
+While details of rocket design are proprietary, some information is publicly available. For example, you can gather data such as the weight of the spacecraft modules that carried the samples back to Earth and the total amount of weight that each rocket can transport. These values can be used to calculate the maximum weight of rock samples that can be collected and returned to Earth.
 
-We will get into the specifics of that in a later unit, but the critical part for the purposes of the samples is understanding that rocket weight is often measured in kilograms, not grams. We should then manipulate the original data by converting the sample weights into kilograms for easier data analysis later.
+To prepare the rock sample data for later calculations, we need to understand that rocket weight is often measured in kilograms, not grams. Therefore, we need to convert the original rock sample weights from grams to kilograms for easier data analysis later.
 
 ```python
 rock_samples['Weight (g)'] = rock_samples['Weight (g)'].apply(lambda x : x * 0.001)

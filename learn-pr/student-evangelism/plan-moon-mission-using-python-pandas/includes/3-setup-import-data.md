@@ -1,8 +1,8 @@
-Now it's time to get data from the [Lunar Sample and Photo Catalog](https://curator.jsc.nasa.gov/lunar/samplecatalog/index.cfm?azure-portal=true) into Visual Studio Code. By doing so, you can use Python to quickly gain insight from the thousands of samples collected across the six Apollo missions that have landed on the Moon. 
+Now it's time to get data from the [Lunar Sample and Photo Catalog](https://curator.jsc.nasa.gov/lunar/samplecatalog/index.cfm?azure-portal=true) into Visual Studio Code. By doing so, you can use Python to gain insight from the thousands of samples collected across the six Apollo missions that have landed on the Moon. 
 
 ## Set up your local environment
 
-This module will show you how to cleanse and manipulate data related to Moon rock samples. To do this, you need to set up some kind of Python notebook development environment. If you haven't done this before, we recommend following the steps we present here. The easiest way to do this is to follow the [Visual Studio Code data science setup docs](https://code.visualstudio.com/docs/python/data-science-tutorial?azure-portal=true). 
+In this module. you'll learn how to cleanse and manipulate data related to Moon rock samples. To do the following exercises, you need some kind of Python notebook development environment. If you haven't prepared your environment yet, we recommend following the steps we present here. The easiest way to install and configure your development environment is to follow the [Visual Studio Code data science setup docs](https://code.visualstudio.com/docs/python/data-science-tutorial?azure-portal=true).
 
 The three things you need to set up first are:
 - Visual Studio Code
@@ -10,7 +10,7 @@ The three things you need to set up first are:
 - Miniconda
 
 > [!NOTE]
-> If you have already completed one of the *Over the Moon* Learn modules, you can open your *over-the-moon* folder in Visual Studio Code and skip to step 3. 
+> If you have already completed one of the *Over the Moon* Learn modules, you can open your *over-the-moon* folder in Visual Studio Code and skip to step 3.
 
 After you have installed the three previously listed items, follow these steps to get your environment ready:
 1. Create a folder called *over-the-moon*. 
