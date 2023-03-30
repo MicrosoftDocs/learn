@@ -1402,6 +1402,11 @@ achievements:
   title: Manage IoT Central applications with the REST API
   summary: The IoT Central REST API lets you manage applications programmatically. For example, you can add device templates, create devices, set device properties, send commands to devices, and manage data exports.
   iconUrl: /training/achievements/manage-iot-central-apps-with-rest-api.svg
+- uid: learn.intro-to-azure-data-lake-storage.badge
+  type: badge
+  title: Introduction to Azure Data Lake Storage
+  summary: Describe how unlimited storage, universal data support, and high-performance throughput enable Azure Data Lake Storage to manage big data workloads. Determine which types of big data projects can benefit from Azure Data Lake Storage.
+  iconUrl: /training/achievements/generic-badge.svg
 - uid: learn.azure.create-language-translator-mixed-reality-application-unity-azure-cognitive-services.badge
   type: badge
   title: Create a speech translator application with Unity and Azure Cognitive Services.
@@ -1607,3 +1612,13 @@ achievements:
   
     Once you complete this learning path, you'll have a stronger grasp of implementing logic in your C# code.
   iconUrl: /training/achievements/csharp-logic.svg
+- uid: learn.wwl.create-methods-c-sharp-console-applications
+  type: trophy
+  title: Create methods in C# console applications (Get started with C#, Part 5)
+  summary: Learn how to create methods for C# console applications. Use parameters and return values to manipulate data across applications. Learn to use named and optional arguments to simplify code.
+  iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.wwl.debug-c-sharp-console-applications
+  type: trophy
+  title: Debug C# console applications (Get started with C#, Part 6)
+  summary: Learn how to debug C# console applications in Visual Studio Code and how to implement exception handling using the try-catch pattern. Configure the C# debugger tools in Visual Studio Code and use the debugger tools to isolate and fix logic issues. Examine the exception types provided by .NET and the properties of exception objects, then implement exception handling and throw customized exception objects.
+  iconUrl: /training/achievements/generic-trophy.svg

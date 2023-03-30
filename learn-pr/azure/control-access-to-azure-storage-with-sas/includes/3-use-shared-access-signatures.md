@@ -6,7 +6,7 @@ In this unit, you'll review how a SAS works at a technical level and what C# cod
 
 ## How shared access signatures work
 
-A SAS has two components, a URI that points to one or more storage resources, and a token that indicates how the resources may be accessed by the client.
+A SAS has two components: a URI that points to one or more storage resources and a token that indicates how the resources may be accessed by the client.
 
 In a single URI, such as `https://medicalrecords.blob.core.windows.net/patient-images/patient-116139-nq8z7f.jpg?sp=r&st=2020-01-20T11:42:32Z&se=2020-01-20T19:42:32Z&spr=https&sv=2019-02-02&sr=b&sig=SrW1HZ5Nb6MbRzTbXCaPm%2BJiSEn15tC91Y4umMPwVZs%3D`, you can separate the URI from the SAS token as follows:
 
@@ -15,7 +15,6 @@ In a single URI, such as `https://medicalrecords.blob.core.windows.net/patient-i
 | `https://medicalrecords.blob.core.windows.net/patient-images/patient-116139-nq8z7f.jpg?`    | `sp=r&st=2020-01-20T11:42:32Z&se=2020-01-20T19:42:32Z&spr=https&sv=2019-02-02&sr=b&sig=SrW1HZ5Nb6MbRzTbXCaPm%2BJiSEn15tC91Y4umMPwVZs%3D` |
 
 The SAS token contains the following components, or query parameters.
-
 
 | Query Parameter | Field Name | Example | Description |
 |-----|---------|---------|---------|
@@ -27,7 +26,7 @@ The SAS token contains the following components, or query parameters.
 | sr | scope of resource| sr=b | The kind of storage being accessed. Available values include b (blob), c (container), d (directory), f (file) s (share) |
 | sig | signature | sig=SrW1...wVZs%3D | The cryptographic signature. |
 
-The signature is signed with your storage account key when you create a service or account SAS. If you use an Azure Active Directory (Azure AD) security principal with access to the storage, you create a user delegation SAS. You also grant the **Microsoft.Storage/storageAccounts/blobServices/generateUserDelegationKey** action to the principal.
+The signature is signed with your storage account key when you create a service or account shared access signature. If you use an Azure Active Directory (Azure AD) security principal with access to the storage, you create a user delegation shared access signature. You also grant the **Microsoft.Storage/storageAccounts/blobServices/generateUserDelegationKey** action to the principal.
 
 ### Create a SAS in .NET
 
