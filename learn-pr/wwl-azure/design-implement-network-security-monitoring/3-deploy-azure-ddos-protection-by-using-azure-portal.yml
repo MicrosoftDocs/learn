@@ -27,7 +27,7 @@ quiz:
       explanation: "Incorrect. This could just be other performance-related issues in your application/connectivity."
     - content: "HTTP 400 Bad Request"
       isCorrect: false
-      explanation: "Incorrect. HTTP 400 Bad Request response status code indicates that the server cannot or will not process the request due to something that is perceived to be a client error"
+      explanation: "Incorrect. HTTP 400 Bad Request response status code indicates that the server can't or won't process the request due to something that is perceived to be a client error"
   - content: "Which action shall we take when under DDoS attack?"
     choices:
     - content: "Monitor Alerts and review attack profile."

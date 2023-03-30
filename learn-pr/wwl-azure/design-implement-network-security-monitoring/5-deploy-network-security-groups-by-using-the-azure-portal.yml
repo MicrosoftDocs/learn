@@ -27,12 +27,12 @@ quiz:
       explanation: "In Correct. Denying only known and allowing all access can result in unwanted/yet-to-be-discovered access to your resources."
     - content: "Permit all, monitor and deny as needed."
       isCorrect: false
-      explanation: "Incorrect. Allowing all access can result in unwanted/yet-to-be-discovered access to your resources, and you will be at risk during discovery phase."
+      explanation: "Incorrect. Allowing all access can result in unwanted/yet-to-be-discovered access to your resources, and you'll be at risk during discovery phase."
   - content: "Which one of these is a default network security rule in an NSG?"
     choices:
     - content: "AllowAllInbound."
       isCorrect: false
-      explanation: "Incorrect. There is no default rule to allow all inbound traffic."
+      explanation: "Incorrect. There's no default rule to allow all inbound traffic."
     - content: "DenyVnetOutBound."
       isCorrect: false
       explanation: "Incorrect. VNet OutBound traffic is allowed (not denied) where the source and destination are Virtual Network."
