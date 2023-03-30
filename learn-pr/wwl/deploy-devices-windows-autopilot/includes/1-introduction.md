@@ -3,7 +3,7 @@ Traditionally, the process of deploying a new device begins with wiping the devi
 
 ### Objectives
 
-After completing this module, you will be able to:
+After completing this module, you'll be able to:
 
  -  Explain the benefits of modern deployment for new devices.
  -  Describe the process of preparing for an Autopilot deployment.

@@ -35,7 +35,7 @@ Windows Autopilot self-deploying mode enables a device to be deployed with littl
 
 To perform a self-deploying mode deployment using Windows Autopilot:
 
- -  Create an Autopilot profile for self-deploying mode with the desired settings. In Microsoft Intune, this mode is explicitly chosen when creating the profile. Note that this mode is not available using the Microsoft Store for Business.
+ -  Create an Autopilot profile for self-deploying mode with the desired settings. In Microsoft Intune, this mode is explicitly chosen when creating the profile. Note, this mode isn't available using the Microsoft Store for Business.
  -  Ensure that the profile has been assigned to the device before attempting to deploy that device.
  -  Self-deploying mode requires devices with TPM 2.0 and Windows 10 version 1903 or later.
 
@@ -79,22 +79,22 @@ Once the configuration file is created, you can create the task sequence in **Co
 
 ### Windows Autopilot for pre-provisioned deployment
 
-Starting with Windows 10 version 1903, Windows Autopilot can also provide a capability that enables partners or IT staff to pre-provision a Windows PC so that it is fully configured and business-ready. From the end user's perspective, the Windows Autopilot user-driven experience is unchanged, but getting their device to a fully provisioned state is faster.
+Starting with Windows 10 version 1903, Windows Autopilot can also provide a capability that enables partners or IT staff to pre-provision a Windows PC so that it's fully configured and business-ready. From the end user's perspective, the Windows Autopilot user-driven experience is unchanged, but getting their device to a fully provisioned state is faster.
 
 Instead of the entire provisioning process occurring when the user powers on the device, the provisioning process is split. Time-consuming portions such as device and user application installs and policies are completed by IT. Final user settings and policies are applied when the user connects and powers on the device.
 
 The process for configuring a pre-provisioned deployment is as follows:
 
 1.  Enable the **White Glove OOBE** option in the desired Autopilot Profile.
-2.  Connect (ethernet required for pre-provision) and boot the device. At the first OOBE screen press the Windows key five times.
+2.  Connect (ethernet required for pre-provision) and boot the device. At the first OOBE screen press, the Windows key five times.
 3.  In the additional dialog options, select **Windows Autopilot provisioning**.
-4.  Verify the device information. If changes are needed, complete them in Intune and select refresh to re-download the updated information.
+4.  Verify the device information. If changes are needed, complete them in Intune, and select refresh to re-download the updated information.
 5.  Select Provision to provision the device.
 6.  When the process is complete, select Reseal.
 
 The device can now be delivered to the user. When the user receives the device, they simply need to connect and power on the device, select regional and keyboard settings, select a WiFi network if applicable, and sign in.
 
-Pre-provisioned deployment requires Windows 1903 or later and an Intune subscription. The device must also support TPM 2.0 and device attestation, virtual machines are not supported. Access to the on-prem domain is not required in the pre-provision process. Internet connectivity (or connectivity to a domain controller is using Hybrid Azure AD join) is required during the final user process.
+Pre-provisioned deployment requires Windows 1903 or later and an Intune subscription. The device must also support TPM 2.0 and device attestation, virtual machines aren't supported. Access to the on-prem domain isn't required in the pre-provision process. Internet connectivity (or connectivity to a domain controller is using Hybrid Azure AD join) is required during the final user process.
 
 > [!TIP]
 > The advantage of pre-provisioned deployment enables an administrator to install the bulk of applications, which are machine targeted, leaving only applications specific to the user onboarding to complete the process. This can drastically reduce the time to provision the device and improve the user experience.
@@ -103,7 +103,7 @@ For more information on pre-provisioned deployment s, refer to [Windows Autopilo
 
 ### Windows Autopilot Reset
 
-In many environments, you regularly need to reset devices to their initial states after they have been in use for some time. For example, an organization might provide temporary employees with Windows devices, which the organization must reset for every new user. Organizations must also reset the computers in training rooms after each class. With traditional deployment, you would need to redeploy the Windows image each time you reset a device to its initial state. Windows Autopilot Reset enables you to achieve this goal without redeploying a Windows image. It removes all personal files, apps, and settings, and it resets a Windows device to its initial state from the lock screen. It can also deploy organizational apps and settings by using Intune or another MDM solution so that a device is ready to use after the Windows Autopilot Reset.
+In many environments, you regularly need to reset devices to their initial states after they've been in use for some time. For example, an organization might provide temporary employees with Windows devices, which the organization must reset for every new user. Organizations must also reset the computers in training rooms after each class. With traditional deployment, you would need to redeploy the Windows image each time you reset a device to its initial state. Windows Autopilot Reset enables you to achieve this goal without redeploying a Windows image. It removes all personal files, apps, and settings, and it resets a Windows device to its initial state from the lock screen. It can also deploy organizational apps and settings by using Intune or another MDM solution so that a device is ready to use after the Windows Autopilot Reset.
 
 Windows Autopilot Reset supports two scenarios:<br>
 
