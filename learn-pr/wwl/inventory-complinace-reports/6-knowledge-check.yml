@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.inventory-compliance-reports.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/30/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following features enables programmatic access to Intune information for your tenant, can be used for building automation scripts, and can be used to extract data from Intune and further manipulate that data into your favorite analysis or reporting tool?"
+    choices:
+    - content: "Microsoft Graph API for Intune"
+      isCorrect: true
+      explanation: "Correct. The Microsoft Graph API for Intune enables programmatic access to Intune information for your tenant; the API performs the same Intune operations as those available through the Azure portal. Even though Microsoft Graph is primarily used for programmatic access to your data in the cloud, and thus can be used for building automation scripts. You can also use it to extract data from Intune and further manipulate that data into your favorite analysis or reporting tool."
+    - content: "Intune Data Warehouse"
+      isCorrect: false
+      explanation: "Incorrect. Intune Data Warehouse to build professional looking reports that provide insight into your enterprise mobile environment. Try again."
+    - content: "Microsoft Graph Explorer"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Graph Explorer lets you make requests and receive responses against the Microsoft Graph. Doing so should make it easier to find out how you would build your queries against Graph for Intune. Try again."
+  - content: "As the Desktop Administrator for Fabrikam, Holly Spencer wants to build professional looking reports that provide insight into the company's enterprise mobile environment. Holly wants to access historical Intune data, data that's refreshed on a daily cadence, and a data model that uses the OData standard. What tool should Holly use that provides this advanced level of information?"
+    choices:
+    - content: "Endpoint Manager"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft's Endpoint Manager combines Intune and System Center Configuration Manager to reduce the time and effort IT admins need to manage desktop and mobile work environments. Try again."
+    - content: "Intune Data Warehouse"
+      isCorrect: true
+      explanation: "Correct. You can use the Intune Data Warehouse to build professional looking reports that provide insight into your enterprise mobile environment. The Data Warehouse provides you access to more information about your Intune environment than the Endpoint Manager portal. With the Intune Data Warehouse you can access: historical Intune data, data that's refreshed on a daily cadence, and a data model that uses the OData standard."
+    - content: "Microsoft Graph"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Graph is a Microsoft developer platform that connects multiple services and devices. Try again."
