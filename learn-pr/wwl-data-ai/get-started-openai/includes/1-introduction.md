@@ -1,4 +1,4 @@
-Suppose you want to build a support application that summarizes text and suggest code. To achieve this, you want to utilize the capabilities you see in ChatGPT, a chatbot built by the OpenAI research company, that takes in natural language input from a user and returns a machine-created human-like response. 
+Suppose you want to build a support application that summarizes text and suggest code. To build this app, you want to utilize the capabilities you see in ChatGPT, a chatbot built by the OpenAI research company that takes in natural language input from a user and returns a machine-created human-like response. 
 
 On the back end of ChatGPT, generative AI models power its ability to produce new content, such as text, code, and images, based on a natural language prompts. Generative AI models are a subset of [deep learning algorithms](/dotnet/machine-learning/deep-learning-overview?azure-portal=true) that can support various of workloads across vision, speech, language, decision, search, and more.
 
