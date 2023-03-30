@@ -116,7 +116,7 @@ GitHub Codespaces runs your development environment in a container hosted by Git
     > [!TIP]
     > You can use the main menu to navigate to the **Terminal** menu option and then select the **New Terminal** option.
     >
-    > :::image type="content" source="media/open-terminal-option.png" lightbox="media/open-terminal-option.png" alt-text="Screenshot of the codespaces menu option to open a new terminal.":::
+    > :::image type="content" source="../media/open-terminal-option.png" lightbox="../media/open-terminal-option.png" alt-text="Screenshot of the codespaces menu option to open a new terminal.":::
 
 #### [Visual Studio Code](#tab/visual-studio-code)
 
