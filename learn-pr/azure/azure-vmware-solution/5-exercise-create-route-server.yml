@@ -1,0 +1,43 @@
+﻿### YamlMime:ModuleUnit
+uid: learn.azure.azure-vmware-solution.exercise-create-route-server
+title: Exercise - create and configure Azure Route Server
+metadata:
+  title: Exercise - create and configure Azure Route Server
+  description: This content is part of the "Secure outbound internet connectivity for Azure VMware Solution" module.
+  ms.date: 03/23/2023
+  author: Mahesh-MSFT
+  ms.author: maksh
+  ms.topic: interactive-tutorial
+  ms.prod: azure-vmware-solution
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-exercise-create-route-server.md)]
+
+quiz:
+  title: Knowledge Check
+  questions:
+    - content: "Which of the following can be used to configure BGP peer in Azure Route Server?"
+      choices:
+        - content: "Public IP address."
+          isCorrect: false
+          explanation: "Incorrect. BGP peer for Azure Route Server uses private IP address."
+        - content: "Private IP address."
+          isCorrect: true
+          explanation: "Correct. BGP peer for Azure Route Server uses private IP address."
+        - content: "FQDN names."
+          isCorrect: false
+          explanation: "Incorrect. BGP peer for Azure Route Server uses private IP address."
+        - content: "All of the above."
+          isCorrect: false
+          explanation: "Incorrect. BGP peer for Azure Route Server uses private IP address."
+    - content: "What will happen to connectivity between Azure VMware Solution private cloud and Azure when \"branch-to-branch\" connectivity is enabled on Azure Route Server?"
+      choices:
+        - content: "Connectivity will not be affected."
+          isCorrect: false
+          explanation: "Incorrect. There will be connectivity loss momentarily."
+        - content: "Connectivity loss for long duration."
+          isCorrect: false
+          explanation: "Incorrect. There will be connectivity loss momentarily."
+        - content: "There will be a loss of connectivity momentarily."
+          isCorrect: true
+          explanation: "Correct. There will be connectivity loss momentarily."

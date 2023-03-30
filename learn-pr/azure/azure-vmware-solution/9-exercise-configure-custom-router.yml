@@ -1,0 +1,45 @@
+﻿### YamlMime:ModuleUnit
+uid: learn.azure.azure-vmware-solution.exercise-configure-custom-router
+title: Exercise - configure custom router  
+metadata:
+  title: Exercise - configure custom router  
+  description: This content is part of the "Secure outbound internet connectivity for Azure VMware Solution" module.
+  ms.date: 03/23/2023
+  author: Mahesh-MSFT
+  ms.author: maksh 
+  ms.topic: interactive-tutorial
+  ms.prod: azure-vmware-solution
+durationInMinutes: 15
+content: |
+  [!include[](includes/9-exercise-configure-custom-router.md)]
+quiz:
+  title: Knowledge Check
+  questions:
+    - content: "Which Azure service supports creating and injecting default route?"
+      choices:
+        - content: "Azure vWAN."
+          isCorrect: true
+          explanation: "Correct. Azure vWAN can create and inject default route."
+        - content: "Azure Firewall."
+          isCorrect: false
+          explanation: "Incorrect. Azure vWAN can create and inject default route."
+        - content: "Azure Load Balancer."
+          isCorrect: false
+          explanation: "Incorrect. Azure vWAN can create and inject default route."
+        - content: "All of the above."
+          isCorrect: false
+          explanation: "Incorrect. Azure vWAN can create and inject default route."
+    - content: "How many private IP addresses are assigned to Azure Route Server?"
+      choices:
+        - content: "0"
+          isCorrect: false
+          explanation: "Incorrect. 2 private IP addresses are assigned to Azure Route Server."
+        - content: "1"
+          isCorrect: false
+          explanation: "Incorrect. 2 private IP addresses are assigned to Azure Route Server."
+        - content: "2"
+          isCorrect: true
+          explanation: "Correct. 2 private IP addresses are assigned to Azure Route Server."
+        - content: "3"
+          isCorrect: false
+          explanation: "Incorrect. 2 private IP addresses are assigned to Azure Route Server."
