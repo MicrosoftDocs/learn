@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-windows-365.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/30/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following is a unique remote action for Cloud PCs?"
+    choices:
+    - content: "Restart"
+      isCorrect: false
+      explanation: "Incorrect. This is a common action for both Cloud PCs and Windows Virtual Desktop. Try again."
+    - content: "Sync"
+      isCorrect: false
+      explanation: "Incorrect. This is a common action for both Cloud PCs and Windows Virtual Desktop. Try again."
+    - content: "Reprovisioning"
+      isCorrect: true
+      explanation: "Correct. Reprovisioning is a unique action for Cloud PCs."
+  - content: "Which of the following features is exclusive to Windows 365 Enterprise and not available in Windows 365 Business?"
+    choices:
+    - content: "Windows Virtual Desktop"
+      isCorrect: false
+      explanation: "Incorrect. Windows Virtual Desktop is available in both Windows 365 Business and Windows 365 Enterprise."
+    - content: "Cloud PC"
+      isCorrect: false
+      explanation: "Incorrect. Cloud PC is available in both Windows 365 Business and Windows 365 Enterprise."
+    - content: "Windows 365 Pro"
+      isCorrect: true
+      explanation: "Correct. Windows 365 Pro is only available in Windows 365 Enterprise."
+  - content: "Contoso is interested in deploying Windows as virtual sessions. The company has 150 seats, and it wants a solution that provides ready-to-use Cloud PCs with simple management options. It doesn't want any licensing prerequisites or any dependencies on Active Directory. Given these requirements, which of the following solutions should Contoso use?"
+    choices:
+    - content: "Windows 365 Enterprise"
+      isCorrect: false
+      explanation: "Incorrect. This edition is for larger companies who want unlimited seats for creating Cloud PCs. It includes options to create custom Cloud PCs based on device images that you create, more management options, and full integration with Microsoft Endpoint Manager. It leverages Azure AD and AD DS domains. Try again."
+    - content: "Azure Virtual Desktop"
+      isCorrect: false
+      explanation: "Incorrect. This edition is for larger companies. It requires Azure administration skills and has a complex setup because the customer manages the VMs. Try again."
+    - content: "Windows 365 Business"
+      isCorrect: true
+      explanation: "Correct. This Windows 365 edition is made specifically for use in smaller companies (up to 300 seats) who want ready-to-use Cloud PCs with simple management options. There are no licensing prerequisites to set up Windows 365 Business. There are no dependencies on Azure or Active Directory. It's purchased through the Microsoft 365 admin center or the Windows 365 product site."
