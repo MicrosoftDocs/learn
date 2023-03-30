@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deployment-readiness.explore-tools-for-application-compatibility-mitigation
+title: Explore tools for application compatibility mitigation
+metadata:
+  title: Explore tools for application compatibility mitigation
+  description: "Explore tools for application compatibility mitigation"
+  ms.date: 03/30/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-explore-tools-for-application-compatibility-mitigation.md)]
