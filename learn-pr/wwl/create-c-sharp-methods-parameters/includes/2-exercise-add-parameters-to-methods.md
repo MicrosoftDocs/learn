@@ -1,5 +1,6 @@
 
 
+
 When creating methods, you'll often want to provide some information for the method to use. Information consumed by a method is called a parameter. You can supply as many parameters as needed to accomplish its task, or none at all.
 
 The terms 'parameter' and 'argument' are often used interchangeably. However, 'parameter' refers to the variable in the method signature. The 'argument' is the value passed when the method is called.
