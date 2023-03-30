@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.wwl.implement-dynamic-deployment
+metadata:
+  title: MD-102 2-Implement dynamic deployment methods
+  description: "Use dynamic provisioning methods such as Subscription Activation, Provisioning packages, and Azure AD join to reconfigure an existing operating system."
+  ms.date: 03/30/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Implement dynamic deployment methods
+summary: Use dynamic provisioning methods such as Subscription Activation, Provisioning packages, and Azure AD join to reconfigure an existing operating system.
+abstract: |
+  After completing this module, you will be able to:
+  - Describe how Subscription Activation works.
+  - Describe the benefits of Provisioning Packages.
+  - Explain how Windows Configuration Designer creates Provisioning Packages.
+  - Describe the benefits of using MDM enrollment with Azure AD join.
+prerequisites: |
+  - Strong technical skills installing, maintaining, and troubleshooting the Windows 10 OS or later
+  - Strong understanding of computer networking, client security, and application concepts
+  - Experience using Active Directory Domain Services
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- windows
+- configuration-manager
+- intune
+units:
+- learn.wwl.implement-dynamic-deployment.introduction
+- learn.wwl.implement-dynamic-deployment.examine-subscription-activation
+- learn.wwl.implement-dynamic-deployment.deploy-using-provisioning-packages
+- learn.wwl.implement-dynamic-deployment.use-windows-configuration-designer
+- learn.wwl.implement-dynamic-deployment.use-azure-ad-join-automatic-mdm-enrollment
+- learn.wwl.implement-dynamic-deployment.knowledge-check
+- learn.wwl.implement-dynamic-deployment.summary
+badge:
+  uid: learn.wwl.implement-dynamic-deployment.badge
