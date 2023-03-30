@@ -1,0 +1,75 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.build-a-tcp-echo-client.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Interactive questions that validate whether the learner achieved the learning objectives.
+  ms.date: 03/08/2023
+  author: edlamie80
+  ms.author: liydu
+  manager: lizross
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+quiz:
+  questions:
+    - content: 'Which of the following is the most correct statement??'
+      choices:
+        - content: 'TCP is more complex than UDP.'
+          isCorrect: false
+          explanation: 'Incorrect, all of the statements are correct.'
+        - content: 'TCP requires more overhead than UDP.'
+          isCorrect: false
+          explanation: 'Incorrect, all of the statements are correct.'
+        - content: 'TCP is more reliable than UDP.'
+          isCorrect: false
+          explanation: 'Incorrect, all of the statements are correct.'
+        - content: 'All of the above statements are correct.'
+          isCorrect: true
+          explanation: 'Correct, all of the above statements are correct.'
+
+    - content: 'Most data transfer occurs in which state of the TCP state machine?'
+      choices:
+        - content: 'The CLOSED state'
+          isCorrect: false
+          explanation: 'Incorrect, most data transfer occurs in the ESTABLISHED state.'
+        - content: 'TThe SYN SENT state'
+          isCorrect: false
+          explanation: 'Incorrect, most data transfer occurs in the ESTABLISHED state.'
+        - content: 'The ESTABLISHED state'
+          isCorrect: true
+          explanation: 'Correct, most data transfer occurs in the ESTABLISHED state.'
+        - content: 'The LISTEN state'
+          isCorrect: false
+          explanation: 'Incorrect, most data transfer occurs in the ESTABLISHED state.'
+
+    - content: 'Which of the following services must be called first to use NetX TCP services?'
+      choices:
+        - content: '`nx_tcp_enable`'
+          isCorrect: true
+          explanation: 'Correct, `nx_tcp_enable` must be called first before before using TCP services.'
+        - content: '`nx_tcp_server_socket_accept`'
+          isCorrect: false
+          explanation: 'Incorrect, `nx_tcp_enable` must be called first before before using TCP services.'
+        - content: '`nx_tcp_client_socket_bind`'
+          isCorrect: false
+          explanation: 'Incorrect, `nx_tcp_enable` must be called first before before using TCP services.'
+        - content: '`nx_tcp_info_get`'
+          isCorrect: false
+          explanation: 'Incorrect, `nx_tcp_enable` must be called first before before using TCP services.'
+
+    - content: 'Which of the following statements is correct?'
+      choices:
+        - content: 'A TCP socket can send data after the connection is closed.'
+          isCorrect: false
+          explanation: 'Incorrect, a TCP socket can send data to only one TCP peer socket that is connected.'
+        - content: 'A TCP socket can send data to multiple TCP peer sockets.'
+          isCorrect: false
+          explanation: 'Incorrect, a TCP socket can send data to only one TCP peer socket that is connected.'
+        - content: 'A TCP socket can send data to only one TCP peer socket that is connected.'
+          isCorrect: true
+          explanation: 'Correct, a TCP socket can send data to only one TCP peer socket that is connected.'
+        - content: 'A TCP socket can be used to broadcast data in a local area network.'
+          isCorrect: false
+          explanation: 'Incorrect, a TCP socket can send data to only one TCP peer socket that is connected.'

@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.iot.build-a-tcp-echo-client
+metadata:
+  title: Building and running a TCP echo client
+  description: Building and running a TCP echo client
+  ms.date: 03/08/2023
+  author: edlamie80
+  ms.author: liydu
+  manager: lizross
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Building and running a TCP echo client
+summary: Design, build, and run a TCP echo client.
+abstract: |
+  In this module, you will:
+  - Learn about the transmission control protocol (TCP)
+  - Learn about ports sockets, and packet transmission
+  - Learn how to create a TCP echo client
+  - Learn how to use codespace to build and run your project
+prerequisites: |
+  - Completion of the ThreadX learning path, a working knowledge of C/C++ and GitHub will be most helpful.
+iconUrl: /training/achievements/iot/netx-duo-build-a-tcp-echo-client.svg
+levels:
+  - beginner
+roles:
+  - developer
+products:
+  - azure
+  - azure-iot
+  - azure-iot-hub
+units:
+  - learn.iot.build-a-tcp-echo-client.overview
+  - learn.iot.build-a-tcp-echo-client.sending-and-receiving-tcp-packets
+  - learn.iot.build-a-tcp-echo-client.building-and-running-the-project
+  - learn.iot.build-a-tcp-echo-client.discussion
+  - learn.iot.build-a-tcp-echo-client.knowledge-check
+  - learn.iot.build-a-tcp-echo-client.summary
+badge:
+  uid: learn.iot.build-a-tcp-echo-client.badge
