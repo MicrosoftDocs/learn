@@ -3,7 +3,7 @@ Playgrounds are useful interfaces in Azure OpenAI Studio that you can use to exp
 ## GPT-3 Playground
 GPT-3 playground allows you to make calls to your deployed models through a text-in, text-out interface and to adjust parameters. You need to select the deployment name of your model under Deployments. Optionally, you can use the provided examples to get you started, and then you can enter your own prompts. 
 
-![Screenshot of the Azure OpenAI Studio portal's gpt-3 playground.](../media/azure-openai-gpt3-playground.png)
+![Screenshot of the Azure OpenAI Studio portal's gpt-3 playground.](../media/azure-openai-gpt-3-playground.png)
 
 #### GPT-3 Playground parameters
 
