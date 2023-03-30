@@ -2,8 +2,8 @@
 uid: learn.wwl.configure-azure-files-file-sync
 metadata:
   title: Configure Azure Files and Azure File Sync
-  description: "<div|<span style=\"color:rgb(34, 34, 34);font-family:&quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, Verdana;font-size:12px;display:inline !important;\"|Learn how to configure Azure Files and Azure File Sync.</span|  </div|"
-  ms.date: 03/29/2023
+  description: "Learn how to configure Azure Files and Azure File Sync."
+  ms.date: 03/30/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
