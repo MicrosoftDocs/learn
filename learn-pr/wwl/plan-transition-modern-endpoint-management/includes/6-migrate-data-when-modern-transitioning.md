@@ -21,7 +21,7 @@ Alternatively, simple configurations that have significant impact shouldn't be i
 
 ### Migrate the user state
 
-When synchronization solutions are not enough and there is a need to migrate files or settings from one device to another in Windows environments, the User State Migration Tool (USMT) is typically used. USMT is not so much a user state synchronization tool as a means to migrate the user state during upgrades and migrations. User state migration has two phases:
+When synchronization solutions aren't enough and there's a need to migrate files or settings from one device to another in Windows environments, the User State Migration Tool (USMT) is typically used. USMT isn't so much a user state synchronization tool as a means to migrate the user state during upgrades and migrations. User state migration has two phases:
 
 1.  **Capture settings**. You begin by capturing settings and data from the source computer. You store these settings in a migration store, which is often on a shared network folder, although it could also be on local storage.
 2.  **Restore captured settings**. After capturing the settings and data from the source computer, you must restore them on the destination computer. You can perform the second phase only after you install an operating system on the destination computer, and it can occur separately or during the operating-system installation.
@@ -35,7 +35,7 @@ User state migration can occur in different deployment stages, depending on whet
  -  **In the replace scenario, the source and destination computers are different**. When deploying Windows on new computers, you can capture the user state from source computers before or after you deploy Windows on destination computers. After Windows deploys on destination computers, you can restore the user states on these computers.
  -  **In the refresh scenario, the source and destination computers are the same**. When upgrading to the Windows 10 or Windows 11 operating system on computers that have existing operating systems, you can capture the user state, store it in temporary storage, perform a clean Windows installation, and then restore the user state on the upgraded computers.
 
-When you deploy Windows on a computer that has an existing, supported Windows operating system, Windows creates a Windows.old folder. You can migrate user settings from that folder. Windows enables nondestructive deployment because a Windows installation does not wipe out the target partition. The previous Windows installation folder, the Program Files folder, and the Users folder are moved to the Windows.old folder, whereas user data in the root folder remains unchanged. You can capture user state either online, while an older version of Windows is running, or offline, from the Windows.old folder.
+When you deploy Windows on a computer that has an existing, supported Windows operating system, Windows creates a Windows.old folder. You can migrate user settings from that folder. Windows enables nondestructive deployment because a Windows installation doesn't wipe out the target partition. The previous Windows installation folder, the Program Files folder, and the Users folder are moved to the Windows.old folder, whereas user data in the root folder remains unchanged. You can capture user state either online, while an older version of Windows is running, or offline, from the Windows.old folder.
 
 ### Known Folder Move to facilitate a modern file management solution
 
@@ -76,7 +76,7 @@ The default package is located on the Configuration Manager site server under:
 
 #### Set up a State Migration Point (Configuration Manager Site System Role)
 
-To support multiple migrations of user data during an upgrade, you can assemble a State Migration Point (Configuration Manager Role) to act as a file share to store data. Each request stores a unique hash relating to the device that allows data to be captured (through a computer association), the device upgraded, and the relevant data reinstated afterwards. For large enterprises, it is common to have regionally located State Migration Points within the site hierarchy.
+To support multiple migrations of user data during an upgrade, you can assemble a State Migration Point (Configuration Manager Role) to act as a file share to store data. Each request stores a unique hash relating to the device that allows data to be captured (through a computer association), the device upgraded, and the relevant data reinstated afterwards. For large enterprises, it's common to have regionally located State Migration Points within the site hierarchy.
 
 #### Task sequence
 
@@ -84,7 +84,7 @@ Task sequences drive the overall OS deployment, and you can include USMT as part
 
 #### USMT templates used for migration
 
-USMT templates consist of four .xml templates that control data which is collected. These files are:
+USMT templates consist of four .xml templates that control data, which is collected. These files are:
 
  -  MigApp.xml
  -  MigDocs.xml
