@@ -2,7 +2,7 @@ As you can see in the following graphic, confidential computing closes a gap in 
 
 ![Graphic of three states of data protection, with confidential computing's data in use highlighted.](../media/image1.png)
 
-Confidential computing is an industry term defined by the [Confidential Computing Consortium](https://confidentialcomputing.io/) (CCC) - a foundation dedicated to defining and accelerating the adoption of confidential computing. The CCC defines confidential computing as: "The protection of data in use by performing computations in a hardware-based, attested Trusted Execution Environment (TEE)."
+Confidential computing is an industry term defined by the [Confidential Computing Consortium](https://confidentialcomputing.io/) (CCC) &mdash; a foundation dedicated to defining and accelerating the adoption of confidential computing. The CCC defines confidential computing as: "The protection of data in use by performing computations in a hardware-based, attested Trusted Execution Environment (TEE)."
 
 A TEE enforces execution of only authorized code. Any data in the TEE can't be read or tampered with by any code outside of the TEE. TEEs form the basis of the confidential computing threat model, which aims at removing or reducing the ability for a cloud provider operator and other actors in the tenant's domain to access code and data while they're being executed.
 
