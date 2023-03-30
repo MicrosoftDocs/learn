@@ -13,7 +13,7 @@ summary: Learn advanced patterns in PyBryt, an open-source auto-assessment tool 
 abstract: |
   In this module you will:
   - Learn how to customize how annotations are tracked and grouped
-  - Understand the concept of relational annotations and how to create and leverage them
+  - Understand the concept of relational annotations and how to create and use them
   - Create scaffold for checking the complexity of student code
   - Explore different options for creating a grading pipeline that uses PyBryt
 iconUrl: /training/achievements/student-evangelism/advanced-pybryt.svg
