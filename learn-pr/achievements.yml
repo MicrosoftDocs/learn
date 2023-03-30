@@ -1402,6 +1402,11 @@ achievements:
   title: Manage IoT Central applications with the REST API
   summary: The IoT Central REST API lets you manage applications programmatically. For example, you can add device templates, create devices, set device properties, send commands to devices, and manage data exports.
   iconUrl: /training/achievements/manage-iot-central-apps-with-rest-api.svg
+- uid: learn.intro-to-azure-data-lake-storage.badge
+  type: badge
+  title: Introduction to Azure Data Lake Storage
+  summary: Describe how unlimited storage, universal data support, and high-performance throughput enable Azure Data Lake Storage to manage big data workloads. Determine which types of big data projects can benefit from Azure Data Lake Storage.
+  iconUrl: /training/achievements/generic-badge.svg
 - uid: learn.azure.create-language-translator-mixed-reality-application-unity-azure-cognitive-services.badge
   type: badge
   title: Create a speech translator application with Unity and Azure Cognitive Services.
