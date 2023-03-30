@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/03/2022
+  ms.date: 03/30/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -33,7 +33,7 @@ quiz:
     - content: "Build dedicated host pools with a customized image for each language"
       isCorrect: false
       explanation: "Incorrect. Building a dedicated host pool with a customized image for each language will not allow users to customize their images by selecting whichever language they need."
-    - content: "Proved access to the Azure Compute Gallery images"
+    - content: "Provides access to the Azure Compute Gallery images"
       isCorrect: false
       explanation: "Incorrect. Providing access to the Azure Compute Gallery images will not allow users to customize their images by selecting whichever language they need."
     - content: "Customize the images to ensure they can select whichever language they need"

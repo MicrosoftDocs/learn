@@ -3,7 +3,7 @@ uid: learn.student-evangelism.plan-moon-mission-using-python-pandas.3-setup-impo
 metadata:
   title: Exercise - Get the rock sample data into Visual Studio Code
   description: Get the rock sample data into pandas DataFrames for exploration in Visual Studio Code.
-  ms.date: 03/10/2021
+  ms.date: 03/29/2023
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
