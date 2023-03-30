@@ -5,12 +5,13 @@ In Azure OpenAI Studio's **Deployments** page, you can create a new deployment b
 
 ![Screenshot of the Azure OpenAI Studio portal's model deployment wizard.](../media/studio-deployment.png)
 
-From the *Deployments* page in the Studio you can also view information about all your deployments including: deployment name, model name, model version, status, date created, and more. 
+From the *Deployments* page in the Studio, you can also view information about all your deployments including deployment name, model name, model version, status, date created, and more.
 
 ## Deploy using Azure CLI
 
-You can also deploy a model using the console. Using the example below, replace the following variables with your own: 
-- myResourceGroupName: *replace with your resource group name* 
+You can also deploy a model using the console. Using this example, replace the following variables with your own resource values:
+
+- myResourceGroupName: *replace with your resource group name*
 - myResourceName: *replace with your resource name*
 - MyModel: *replace with a unique name for your model*
 - text-curie-001: *replace with the base model you wish to deploy*
@@ -26,8 +27,6 @@ az cognitiveservices account deployment create \
    --scale-settings-scale-type "Standard"
 ```
 
-## Deploy using the REST API 
+## Deploy using the REST API
 
-You can deploy a model using the REST API. In the request body, you will identify the base model you wish to deploy. See an example in the [documentation](/rest/api/cognitiveservices/azureopenaistable/deployments/create?azure-portal=true). 
- 
-
+You can deploy a model using the REST API. In the request body, you specify the base model you wish to deploy. See an example in the [documentation](/rest/api/cognitiveservices/azureopenaistable/deployments/create?azure-portal=true). 
