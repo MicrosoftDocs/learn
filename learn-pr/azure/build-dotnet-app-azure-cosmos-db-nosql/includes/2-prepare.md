@@ -94,4 +94,18 @@ Now that you have an API for NoSQL account, you can use the `az cosmosdb keys li
         --output tsv
     ```
 
-01. Observe the value of this connection string. You use the connection string later in this project.
+01. Record the value of this connection string. You use the connection string later in this project to connect to this account.
+
+### Configure dev environment
+
+TODO
+
+#### [GitHub Codespaces](#tab/github-codespaces)
+
+TODO
+
+#### [Visual Studio Code](#tab/visual-studio-code)
+
+TODO
+
+---
