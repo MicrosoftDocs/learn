@@ -12,7 +12,7 @@ Device compliance policies outline the required settings for:
  -  The maximum operating-system version
  -  The maximum Mobile Threat Defense level
 
-When a device enrolls in Intune, information about the device, including its compliance status, is added to Azure AD. Compliance policies are deployed based on the user, not on the device. Conditional access policies use the Azure AD information to block or allow access to email and other organizational data. You don't have to use compliance policies with conditional access. You can use compliance policies simply for reporting purposes.
+When a device enrolls in Intune, information about the device, including its compliance status, is added to Azure Active Directory (Azure AD). Compliance policies are deployed based on the user, not on the device. Conditional access policies use the Azure AD information to block or allow access to email and other organizational data. You don't have to use compliance policies with conditional access. You can use compliance policies simply for reporting purposes.
 
 Intune compliance policies are created in the Devices section of the Endpoint Manager admin center. The device compliance dashboard for monitoring can be found under Reports.
 
