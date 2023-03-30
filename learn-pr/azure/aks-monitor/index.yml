@@ -10,7 +10,12 @@ metadata:
   ms.prod: learning-azure
 title: Monitor an Azure Kubernetes Service cluster using Container insights in Azure Monitor
 summary: Learn how to analyze the availability and performance of an Azure Kubernetes Service cluster with a containerized application and be proactively notified when a problem occurs. Enable Container insights in Azure Monitor to send the data to a Log Analytics workspace and then workbooks in Azure Monitor to view collected data and enable a predefined alert rule.
-abstract: TBD
+abstract: |
+  By the end of this module, you'll be able to:
+  - Enable Container insights for an AKS cluster.
+  - Use Container insights to view health and performance of the components of your AKS cluster.
+  - Enable an alert rule to fire when an issue with your cluster is detected.
+  - Create and action group to text you when an alert is fired.
 prerequisites: |
   -	Access to Azure account with an active subscription 
   -	Knowledge of what Azure Monitor is and how it works at a beginner level. 

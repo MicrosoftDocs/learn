@@ -1,6 +1,6 @@
 Once you enable Container insights on a cluster, you can monitor the performance and health status of the cluster components and their workloads. Start with a summary view of all of your monitored clusters and then drill into the details of a particular cluster using built-in workbooks.
 
-   :::image type="content" source="../media/monitored-clusters.png" lightbox="../media/monitored-clusters.png" alt-text="Screenshot of a list of all containers and their status in Container insights." border="true":::
+   :::image type="content" source="../media/monitored-clusters.png" lightbox="../media/monitored-clusters.png" alt-text="Screenshot of a list of all containers and their status in Container insights.":::
 
 The **Monitored clusters** tab presents the following information for each of your monitored clusters:
 

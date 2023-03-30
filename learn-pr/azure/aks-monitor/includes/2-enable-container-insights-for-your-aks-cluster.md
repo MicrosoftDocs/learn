@@ -7,7 +7,7 @@ When you enable Container insights for the cluster, it collects more performance
 :::image type="content" source="../media/container-insights-cluster-page.png" lightbox="../media/container-insights-cluster-page.png" alt-text="Screenshot of Cluster page in Container insights for AKS cluster.":::
 
 
-Container insights isn't enabled by default for AKS clusters. You can either enable it for an existing cluster or have it enabled when you create a new cluster. In this module, you’ll use the Azure portal to enable it, but other methods are available including CLI, ARM, and Terraform. 
+Container insights isn't enabled by default for AKS clusters. You can either enable it for an existing cluster or have it enabled when you create a new cluster. In this module, you’ll use the Azure portal to enable it, but other methods are available including CLI, ARM, and Terraform.  
 
 Data collected by Container insights is stored in a Log Analytics workspace. You can create as many workspaces as you want, but it's easier to query and manage your data if you use a single workspace for your clusters and resource logs. Container insights will offer to use a default workspace for you when you enable it using the Azure portal, but you can choose to use one that already exists in your subscription.
 
