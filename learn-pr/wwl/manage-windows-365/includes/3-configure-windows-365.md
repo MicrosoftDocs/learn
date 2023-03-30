@@ -73,4 +73,4 @@ Creating a provisioning policy requires the following steps:
 
 ### Configure and apply device and app configuration profiles
 
-Once the initial setup is complete, Cloud PCs are configured just like a physical device. You create configuration profiles (or leverage existing ones if applicable) and assign apps to users, devices, and groups just like any other device.
+Once the initial setup is complete, Cloud PCs are configured just like a physical device. You create configuration profiles (or use existing ones if applicable) and assign apps to users, devices, and groups just like any other device.
