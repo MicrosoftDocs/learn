@@ -33,7 +33,7 @@ products:
 units:
 - learn.azure.intro-to-confidential-computing-with-azure-virtual-machines.introduction
 - learn.azure.intro-to-confidential-computing-with-azure-virtual-machines.what-is-azure-confidential-computing
-- learn.azure.intro-to-confidential-computing-with-azure-virtual-machines.how-confidential-computing-with-azure-vms-works
+- learn.azure.intro-to-confidential-computing-with-azure-virtual-machines.how-azure-confidential-computing-works
 - learn.azure.intro-to-confidential-computing-with-azure-virtual-machines.when-to-use-application-enclaves
 - learn.azure.intro-to-confidential-computing-with-azure-virtual-machines.summary
 badge:

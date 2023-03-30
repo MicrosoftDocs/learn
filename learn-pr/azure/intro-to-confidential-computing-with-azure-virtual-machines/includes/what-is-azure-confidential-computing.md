@@ -1,6 +1,6 @@
 As you can see in the following graphic, confidential computing closes a gap in data encryption capabilities by enabling encryption while data is in memory and being processed. Confidential computing protects sensitive or highly regulated datasets and application workloads in a secure public cloud platform. In addition, confidential computing extends beyond existing solutions that protect data at rest and in transit. 
 
-![Graphic of three states of data protection, with confidential computing's data in use highlighted.](../media/image1.png)
+![Graphic of three states of data protection, with confidential computing's data in use highlighted.](../media/confidential-computing-diagram.png)
 
 Confidential computing is an industry term defined by the [Confidential Computing Consortium](https://confidentialcomputing.io/) (CCC) &mdash; a foundation dedicated to defining and accelerating the adoption of confidential computing. The CCC defines confidential computing as: "The protection of data in use by performing computations in a hardware-based, attested Trusted Execution Environment (TEE)."
 
