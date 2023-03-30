@@ -16,15 +16,15 @@ content: |
 quiz:
   title: Knowledge Check
   questions:
-    - content: "What will happen if AzureFirewallSubnet is not configured with UDR which has Internet as next hop for default route?"
+    - content: "What will happen if AzureFirewallSubnet isn't configured with UDR, which has Internet as next hop for default route?"
       choices:
-        - content: "Nothing. Azure Firewall will continue to work."
+        - content: "Nothing. Azure Firewall continues to work."
           isCorrect: false
-          explanation: "Incorrect. There will be a circular loop and Azure Firewall will not work."
-        - content: "Azure Firewall will not work."
+          explanation: "Incorrect. There will be a circular loop and Azure Firewall won't work."
+        - content: "Azure Firewall won't work."
           isCorrect: true
-          explanation: "Correct. There will be a circular loop and Azure Firewall will not work."
-        - content: "Configuring UDR is not necessary."
+          explanation: "Correct. There will be a circular loop and Azure Firewall won't work."
+        - content: "Configuring UDR isn't necessary."
           isCorrect: false
           explanation: "Incorrect. Azure Firewall needs a default route configured via UDR."
     - content: "Which Azure Firewall SKU is appropriate when you need IDPS (Intrusion Detection and Protection System) capabilities?"

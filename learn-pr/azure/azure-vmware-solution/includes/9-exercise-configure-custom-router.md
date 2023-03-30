@@ -62,9 +62,9 @@ Now, you're going to configure the FRR software.
 
    :::image type="content" source="../media/9-screenshot2-config-frrouting-cmd-shell.png" alt-text="Screenshot of sudo prompt on NVA VM. Screenshot shows command 'sudo vtysh' being executed.":::
 
-## Configure BGP neighbour and default route for the NVA
+## Configure BGP neighbor and default route for the NVA
 
-This step configures the FRR NVA to have Azure Route Server as its BGP neighbour. A default route (0.0.0.0/0) is also added in the NVA.
+This step configures the FRR NVA to have Azure Route Server as its BGP neighbor. A default route (0.0.0.0/0) is also added in the NVA.
 
 1. Update following variables in the script below.
    1. \<Firewall Private IP address\>
@@ -101,8 +101,8 @@ This step configures the FRR NVA to have Azure Route Server as its BGP neighbour
 
 1. Log into FRR shell.
 1. Paste the script with updated variables.
-1. Run `show ip bgp` to confirm that the NVA has not learned routes yet except its own default route.
-1. Run `show ip bgp sum` to confirm that the NVA has not yet established BGP sessions.
+1. Run `show ip bgp` to confirm that the NVA hasn't learned routes yet except its own default route.
+1. Run `show ip bgp sum` to confirm that the NVA hasn't yet established BGP sessions.
 
    :::image type="content" source="../media/9-screenshot3-config-bgp-showip-nosession.png" alt-text="Screenshot of command execution on NVA VM. Screenshot shows Azure Route Server as BGP neighbor for NVA.":::
 
@@ -122,6 +122,6 @@ The steps below will establish a BGP peer relationship between the FRR NVA and A
 
     :::image type="content" source="../media/9-screenshot5-config-bgp-route-table.png" alt-text="Screenshot of Azure portal menu. The menu entry titled “ToInternet” route table highlights default route configured with Internet as next hop.":::
 
-At this point, you have configured Azure VMware Solution private cloud to implement a secure outbound internet connectivity. You deployed Azure Route Server for an effective route exchange between Azure VMware Solution private cloud and the NVA. You then deployed Azure Firewall as the exit point for all internet-bound traffic. This was followed-up by using FRR – a custom router which injects default route with Azure Firewall as the next hop into Azure VMware Solution private cloud.
+At this point, you have configured Azure VMware Solution private cloud to implement a secure outbound internet connectivity. You deployed Azure Route Server for an effective route exchange between Azure VMware Solution private cloud and the NVA. You then deployed Azure Firewall as the exit point for all internet-bound traffic. This was followed-up by using FRR – a custom router, which injects default route with Azure Firewall as the next hop into Azure VMware Solution private cloud.
 
-In the next unit, you will learn how to implement fine-grained access controls in Azure Firewall, which allows/denies network traffic from Azure VMware Solution private cloud.
+In the next unit, you'll learn how to implement fine-grained access controls in Azure Firewall, which allows/denies network traffic from Azure VMware Solution private cloud.

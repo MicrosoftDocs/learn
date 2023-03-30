@@ -32,7 +32,7 @@ quiz:
           explanation: "Incorrect. BGP peer for Azure Route Server uses private IP address."
     - content: "What will happen to connectivity between Azure VMware Solution private cloud and Azure when \"branch-to-branch\" connectivity is enabled on Azure Route Server?"
       choices:
-        - content: "Connectivity will not be affected."
+        - content: "Connectivity won't be affected."
           isCorrect: false
           explanation: "Incorrect. There will be connectivity loss momentarily."
         - content: "Connectivity loss for long duration."

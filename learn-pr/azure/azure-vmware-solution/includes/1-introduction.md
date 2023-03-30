@@ -1,4 +1,4 @@
-﻿Organizations have very prescriptive network traffic security requirements. Non-compliance with network traffic security requirements can potentially result in costly penalties – especially in heavily regulated industries such as healthcare or finance. This module demonstrates how to meet these network security requirements by securing outbound network traffic from Azure VMware Solution.
+﻿Organizations have very prescriptive network traffic security requirements. Noncompliance with network traffic security requirements can potentially result in costly penalties – especially in heavily regulated industries such as healthcare or finance. This module demonstrates how to meet these network security requirements by securing outbound network traffic from Azure VMware Solution.
 
 ## Example Scenario
 
@@ -12,8 +12,8 @@ Contoso's network security team wants to control outbound network traffic using 
 
 ### What will we be doing?
 
-You will establish connectivity between Azure VMware Solution private cloud and Azure. You will deploy a custom NVA which will generate the default route with Azure Firewall as the next hop. Azure Route Server will then propagate the default route to the Azure VMware Solution private cloud. Finally, Azure Firewall will control the traffic via network rule creation.
+You'll establish connectivity between Azure VMware Solution private cloud and Azure. You'll deploy a custom NVA, which will generate the default route with Azure Firewall as the next hop. Azure Route Server will then propagate the default route to the Azure VMware Solution private cloud. Finally, Azure Firewall controls the traffic via network rule creation.
 
 ### What is the main goal?
 
-By the end of this module, you will learn how to manage outbound internet connectivity more securely from the Azure VMware Solution private cloud using a custom NVA, Azure Route Server and Azure Firewall.
+By the end of this module, you learn how to manage outbound internet connectivity more securely from the Azure VMware Solution private cloud using a custom NVA, Azure Route Server and Azure Firewall.

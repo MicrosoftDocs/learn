@@ -1,4 +1,4 @@
-﻿You will use the instructions below to create and configure Azure Firewall and Route Table.
+﻿You'll use the instructions below to create and configure Azure Firewall and Route Table.
 
 ## Deploy Azure Firewall
 
