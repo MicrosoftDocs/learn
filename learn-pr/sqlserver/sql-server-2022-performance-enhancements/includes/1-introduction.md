@@ -10,9 +10,42 @@
 
     [Introduction unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-module-introduction-format)
 -->
-TODO: add your topic sentences(s)
-TODO: add a visual element
-Brad makes first change
+## Solutions for faster performance with no code changes using the next generation of Intelligent Query Processing (IQP)
+---
+
+Intelligent Query Processing is a family of capabilities built into the query processor in the database engine designed to accelerate performance with no code changes. The next generation of Intelligent Query Processing is built on a foundation of capabilities found in SQL Server 2017 and 2019 as seen in the following figure:
+
+![SQL Server Intelligent Query Processing Feature Family](https://github.com/microsoft/sqlworkshops-sql2022workshop/blob/main/sql2022workshop/graphics/iqp-feature-family.svg)
+
+As you can see in this diagram there have been several IQP features that were part of SQL Server 2017 and SQL Server 2019. SQL Server 2022 adds several new capabilities for IQP. 
+
+SQL Server 2022 provides built-in capabilities to reduce time for query tuning with the Query Store and next generation of IQP features to help you gain faster and consistent performance with no code changes.
+
+The database engine uses two principles to make decisions for Intelligent Query Processing (IQP):
+
+- Avoid causing any query performance regressions by using a new method or automation.
+- Provide a method at the database or query level to disable a specific IQP capability. 
+
+This allows you to pick and choose which IQP feature you want enabled at the database or query level while using other IQP feature depending on your dbcompat level.
+
+### Query Store Improvements
+In SQL Server 2022 additional improvements, default behaviors, and included functionality is now available.
+
+##### Query Store on by default
+The Query Store is now on by default for any any new database created on a SQL Server 2022 instance. Prior to SQL Server 2022, the Query Store must be enabled using the T-SQL ALTER DATABASE statement.
+
+##### Query Store Hints
+Query Store hints provide an easy-to-use method for shaping query plans without changing application code. ou can take any query that is stored in the Query Store and use system stored procedures to apply a query hint to affect the query plan with the intention of improving query performance with out changing application code. For example, you could apply a query store hint to require a query to use a specific MAXDOP value without changing the query text.
+
+Query store hints are not intended to be used as a normal step to tune query performance but can be a useful tool for query tuning especially if you cannot change the query text in an application. In addition, some new Intelligent Query Processing features use a query store hint. You can view any persisted query store hints in the sys.query_store_query_hints catalog view.
+
+##### Query for read replicas
+While the Query Store is beneficial for reducing the amount of time required to tune queries or easily identify query performance issues, performance information is only available for queries executed against the primary replica in an Always On Availability Group. In SQL Server 2022 and new option is available using the T-SQL **ALTER DATABASE** statement to enable the Query Store to collect performance information for read-only queries executed on secondary replicas. All performance information for all replicas is persisted on the primary replica. New information is captured in the Query Store to indicate which replica is associated with a query or query plan.
+
+> NOTE: Trace flag 12606 is required in order to be able enable Query Store for secondary replicas
+
+##### Query Store for IQP
+While the Query Store collected key performance information for queries, the query processor in SQL Server 2022 will also use the Query Store to persist information to accelerate query performance including to support features such as Optimized Plan Forcing, Memory Grant feedback, Cardinality Estimation (CE) Model feedback, and Degree of Parallelism (DOP) feedback.
 
 <!-- 2. Scenario -----------------------------------------------------------------------------------------
 
