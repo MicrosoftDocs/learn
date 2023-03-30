@@ -1,262 +1,112 @@
-Your organization might find it difficult to implement cloud governance at a pace that sustains a high level of innovation and achieves the right level of control for the environment.
+Translating compliance requirements into security solutions requires the following initiatives as part of cloud governance:
 
-The following process outlines a possible governance implementation, which allows for a controlled and measured implementation. This process is non-disruptive no matter where your organization is in their cloud journey.
+1. Define corporate policy that aligns to compliance requirements
+1. Align design with policy
 
-## Layers of governance
+## Define corporate policy
 
-Determine the controls and measures that you want to implement as part of your organization's governance process as outlined in [Define corporate cloud policy](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/govern/policy-compliance/policy-definition).
+After you've analyzed the known risks and related risk tolerances for your organization's cloud transformation journey, set up policy to clearly address those risks. Your policy also defines the necessary steps to remediate the risks where possible.
 
-![Diagram that shows the service review process.](../media/cloud-policy-breakdown.png)
+### How can corporate IT policy become cloud-ready?
 
-When you implement an organizational cloud policy, it stretches across many layers of the implementation process. These layers include platform-wide controls, individual service controls, and application controls. The higher the level of control, the more coverage it gets. The more complex the implementation is, the easier it is to ensure that the cloud policy covers all of the cloud adoption team's needs.
+In traditional governance and incremental governance, corporate policy creates the working definition of governance. Most IT governance actions seek to implement technology that monitors, enforces, operates, and automates corporate policies. Cloud governance is built on similar concepts.
 
-| Control level | Suitability                                  | Considerations                                                                                                                                                               | Examples                            |
-| ------------- | -------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------- |
-| Platform      | Broad coverage             | Hard to implement service-specific management or remediation. Ensure that the application implementation doesn't negate the desired outcome.                               | Resource tagging or allowed regions |
-| Cloud service | Tailored for individual services             | Control must be implemented individually for each service. Ensure that the application implementation doesn't negate the desired outcome.                               | Data encryption or monitoring       |
-| Adoption team | Tailored for each application implementation | Control must be implemented for each new application. Hard to standardize implementation. Multiple teams have to implement different controls for the desired outcome. | Application failover logic          |
+![Diagram that shows corporate governance and governance disciplines.](../media/operational-transformation-govern-large.png)
+*Figure 1: Corporate governance and governance disciplines.*
 
-Cloud services have the strongest and most complex level of control. They provide technical implementation with fine control of each service and allow multiple adoption teams to use single implementations. The process of implementing controls at the cloud service layer requires a level of scale to ensure all services that your organization needs are covered.
+The image illustrates the relationship between business risk, policy and compliance, and monitoring and enforcement mechanisms that need to interact as part of your governance strategy. The Five Disciplines of Cloud Governance let you manage the interactions and realize your strategy.
+
+Cloud governance is the product of an ongoing adoption effort, because lasting transformation doesn't happen overnight. If you attempt to deliver complete cloud governance before addressing key corporate policy changes, it seldom produces the desired results. Instead, use an incremental approach.
+
+What's different about a Cloud Adoption Framework is the purchasing cycle that enables authentic transformation. Since it doesn't take large capital to acquire, engineers can begin their experimentation and adoption sooner. In most corporate cultures, eliminating the capital expense barrier to adoption leads to tighter feedback loops, organic growth, and incremental development.
+
+The shift to cloud adoption requires a shift in governance. In many organizations, corporate policy transformation supports:
+
+- Improved governance and higher rates of adherence through incremental policy changes
+- Automated enforcement of those changes
+
+The newly defined capabilities that you configure with your cloud service provider power the policy changes.
+
+### Review existing policies
+
+As governance is an ongoing process, regularly review your policy with IT staff and stakeholders. You want to ensure that your resources hosted in the cloud maintain compliance with overall corporate goals and requirements. Your understanding of new risks and acceptable tolerance can fuel your [review of existing policies](./cloud-policy-review.md). Reviewing your existing policies helps determine the level of governance that's right for your organization.
+
+### Create cloud policy statements
+
+Cloud-based IT policies establish the requirements, standards, and goals that your IT staff and automated systems need to support. Policy decisions are a primary factor in your [cloud architecture design](./governance-alignment.md) and how you'll implement your [policy adherence processes](./processes.md).
+
+Individual cloud policy statements are guidelines for addressing the specific risks you identify during your risk assessment process. While you can integrate these policies into your wider corporate policy documentation, cloud policy statements explored in the Cloud Adoption Framework guidance tend to be a more concise summary of the risks, and plans to deal with them. Include these pieces of information in each definition:
+
+- **Business risk:** A summary of the risk this policy addresses.
+- **Policy statement:** A concise explanation of the policy requirements and goals.
+- **Design or technical guidance:** Actionable recommendations, specifications, or other guidance to support and enforce this policy that IT teams and developers use when designing and building their cloud deployments.
+
+If you need help with defining your policies, consult the governance disciplines introduced in the governance section overview. The articles for these disciplines includes examples of common business risks encountered when moving to the cloud and sample policies to address the risks. For example, see the Cost Management discipline's sample policy definitions.
+
+### Incremental governance and integrating with existing policy
+
+Vet the planned additions to your cloud environment for compliance with existing policy. Update your policy to account for issues not already covered. You should also perform a regular [cloud policy review](./cloud-policy-review.md) to ensure your cloud policy is up-to-date and in sync with any new corporate policy.
+
+The need to integrate cloud policy with your legacy IT policies depends largely on the maturity of your cloud governance processes and the size of your cloud estate.
+
+## Align design with corporate policy - cloud governance design guides
+
+After you've defined cloud policies based on your identified risks, you'll need to generate actionable guidance that aligns with these policies for your IT staff and developers to refer to. Drafting a cloud governance design guide allows you to specify specific structural, technological, and process choices based on the policy statements you generated for each of the five governance disciplines.
+
+A cloud governance design guide should:
+
+* Establish the architecture choices and design patterns for each of the core infrastructure components of cloud deployments that best meet your policy requirements.
+* Provide a high-level explanation of the technology, tools, and processes that will support these design decisions.
+* Provide platform-specific implementation details that your IT and dev teams can use when creating and deploying cloud-based workloads
+* Focus on the architecture, tools, and features of your chosen platform when making design decision and providing guidance.
+
+While cloud design guides should take into account some of the technical details associated with each infrastructure component, they're not meant to be extensive technical documents or specifications. Make sure your guides address your policy statements and clearly state design decisions in a format easy for staff to understand and reference.
+
+## Implementing resource governance MVP
+
 <!--
-[](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/govern/cloud-service-controls#levels-of-service-governance)
--->
-## Levels of service governance
-
-This level of implementation can be delivered in several layers. The governance team can assess the level of implementation they want based on the risk profile, compliance requirements, security posture, and other factors.
-
-| Service governance      | Outline                                                                    | Adoption team responsibilities                                                                                                   | Governance team responsibilities                                    |
-| ----------------------- | -------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
-| None                    | Services aren't centrally governed.                                           | The cloud adoption teams must build corporate policy into the end solution.                                                             | Identify and implement platform-wide controls.                       |
-| Basic (allowlist and blocklist) | Services are allowed or blocked with no other controls.                 | The application teams build corporate policy into the end solution. Only services that the governance team approves are used. | Review and approve the use of services.         |
-| Service review process  | Services are individually reviewed and controls are placed around each service. | The application teams should build with confidence. Only the services that have been through a service review are available.                    | Complete service governance and implement controls for each service. |
-
-These different approaches are the extreme ends of the spectrum. Many organizations choose an approach between these models. For example, most organizations allow some cloud services with a few controls, some are allowed without controls, and access to others are denied.
-
-Whatever the approach to service governance, the key input is the governance team's [corporate cloud policy statements](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/govern/policy-compliance/policy-definition#create-cloud-policy-statements).
-<!--
-[](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/govern/cloud-service-controls#basic-governance)
--->
-
-## Basic governance
-
-The most basic implementation of service governance is a permitted services list that lists the permitted or disallowed services in Azure.
-
-In this form, the governance team publishes a list of the allowed and blocked services for the adoption teams.
-<!--
-[](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/govern/cloud-service-controls#create-and-review-allowed-services)
--->
-
-### Create and review allowed services
-
-To create an allowlist and blocklist of cloud services, review each cloud service against previously defined criteria, such as:
-
--   Organization risk tolerance.
--   Corporate policy.
--   Capabilities of adoption, security, and operational teams.
-<!--
-[](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/govern/cloud-service-controls#implement-blocklists)
--->
-
-### Implement blocklists
-
-Services that are explicitly denied use in your organization should utilize [Azure Policy](https://learn.microsoft.com/en-us/azure/governance/policy/tutorials/create-and-manage) to block the use of the service. Azure Policy is a platform level of control that a management group implements to ensure control over subordinate subscriptions.
-
-The number of policies that are used to implement the block service is a balanced decision that must take into account the process for a policy exception.
-
-There are often exceptions for the use of a service. After the exception is approved through the organizational process, [Azure Policy exemptions](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/exemption-structure) allow the implementation of the service in a targeted area.
-
-If a single policy is implemented with all the denied services listed, then granting an exception for the single service also grants an exception to the denied services. Upfront implementation is simpler but releases more control with exceptions.
-
-If policies are implemented to block each service individually, exceptions only release control of that one policy. This implementation allows for more control in the exception process but creates greater work in the implementation of the initial block policy set.
-
-Your organization should balance the outcome of these two processes when you decide on your approach.
-<!--
-[](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/govern/cloud-service-controls#service-review-process)
+https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/govern/guides/standard/
 -->
 
-## Service review process
+A set of global policies and RBAC roles will provide a baseline level of governance enforcement. To meet the cloud governance team's policy requirements, implementing the governance MVP requires completing the following tasks:
 
-When you implement cloud policy at the service level, it allows for greater control and granular solutions but requires more effort. This type of implementation requires a strong process to get the best result.
-
-This example is a four step process.
-
-[![Infographic of the service review process.](../media/service-review-process.png)](../media/service-review-process.png#lightbox)
-
-Triggers for a service review process are:
-
--   A project need for a new service.
--   The scheduled review of an existing service.
--   A major cloud release of features in a service.
--   A change in imperatives, which triggers all services that are in need of review.
-
-The need for a service review puts the service in the backlog for the review process.
-
-The schedule for the service review backlog is published for the adoption and operations teams. This schedule allows them to plan for their use of the service or any possible remediation work required because of changes.
-
-The next part of the process contains steps that are iterative for each of the cloud services that are used. This part is continual for much of the cloud governance team. The core of this process takes the imperatives that have been defined and interprets them into controls for each service.
-
-To select a service for review, base your decision on components such as:
-
--   The internal demand for the service complexity of the implementation.
--   The review timing of the last review of the service.
--   The high-level risk value of the service.
-
-This process publishes a backlog of items and a schedule of new reviews. Outside cloud adoption teams can then understand when services are going to be selected for review and how long they might wait for a new service. Cloud adoption teams can select services that are already under the controls of the environment.
+1.  Identify the Azure Policy definitions needed to enforce business requirements. This might include using built-in definitions and creating new custom definitions. To keep up with the pace of newly released built-in definitions, there's an [Atom feed](https://github.com/Azure/azure-policy/commits/master/built-in-policies.atom) of all the commits for built-in policies, which you can use for an RSS feed. Alternatively, you can check [`AzAdvertizer`](https://www.azadvertizer.net/).
+2.  Create a blueprint definition using these built-in and custom policy and the role assignments required by the governance MVP.
+3.  Apply policies and configuration globally by assigning the blueprint definition to all subscriptions.
 <!--
-[](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/govern/cloud-service-controls#define-service-use-and-controls)
+[](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/govern/guides/standard/#identify-policy-definitions)
 -->
 
-### Define service use and controls
+#### Identify policy definitions
 
-Review the capabilities of an individual cloud service and then determine what service-specific controls and guidance should be applied.
+Azure provides several built-in policies and role definitions that you can assign to any management group, subscription, or resource group. Many common governance requirements can be handled using built-in definitions. However, it's likely that you will also need to create custom policy definitions to handle your specific requirements.
 
-The primary inputs are the technical documentation of the cloud service and the service control requirements.
+Custom policy definitions are saved to either a management group or a subscription and are inherited through the management group hierarchy. If a policy definition's save location is a management group, that policy definition is available to assign to any of that group's child management groups or subscriptions.
 
-Through this process, the team reviews the intended use of the service within the organization and documents any implementation-specific designs that are required. The designs might include different controls for different classifications of data or simple guidance for general use.
+Since the policies required to support the governance MVP are meant to apply to all current subscriptions, the following business requirements will be implemented using a combination of built-in definitions and custom definitions created in the root management group:
 
-The core artifact delivered from this stage is the service guidance. This document outlines the envisioned usage of the service, the guiding design principles, and the audited and enforced controls on the service. It acts as a reference for cloud adoption teams when they choose to implement a service as part of their design. The documents are necessary for the governance team to communicate their intent to adoption teams at scale.
+1.  Restrict the list of available role assignments to a set of built-in Azure roles authorized by your cloud governance team. This requires a custom policy definition.
+2.  Require the following tags on all resources: _Department/Billing Unit_, _Geography_, _Data Classification_, _Criticality_, _SLA_, _Environment_, _Application Archetype_, _Application_, and _Application Owner_. This can be handled using the `Require specified tag` built-in definition.
+3.  Require that the `Application` tag for resources should match the name of the relevant resource group. This can be handled using the `Require tag and its value` built-in definition.
+
 <!--
-[](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/govern/cloud-service-controls#implement-and-test-technical-controls)
+[](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/govern/guides/standard/#assign-azure-policy-and-rbac-roles-using-azure-blueprints)
 -->
 
-### Implement and test technical controls
+#### Assign Azure Policy and RBAC roles using Azure Blueprints
 
-The controls defined in the previous section are now implemented in cloud controls. The technical implementation must provide the right level of enforcement and reporting.
+Azure policies can be assigned at the resource group, subscription, and management group level, and can be included in Azure Blueprints definitions. Although the policy requirements defined in this governance MVP apply to all current subscriptions, it's very likely that future deployments will require exceptions or alternative policies. As a result, assigning policy using management groups, with all child subscriptions inheriting these assignments, may not be flexible enough to support these scenarios.
 
-The controls of the service are interpreted into their technical implementation on the service. The controls are identified in their implementation of the Azure environment. For example, when you require encryption on a storage account, it requires that you set a property on the storage account, which becomes the technical requirement of that control.
+Azure Blueprints allows consistent assignment of policy and roles, application of Resource Manager templates, and deployment of resource groups across multiple subscriptions. Like policy definitions, blueprint definitions are saved to management groups or subscriptions. The policy definitions are available through inheritance to any children in the management group hierarchy.
 
-There are many offerings in the market that provide this capability. Azure Policy is recommended because it's native to Azure. Azure Policy reports the current state versus the desired outcome and enforces the controls.
-<!--
-[](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/govern/cloud-service-controls#approve-service-controls)
--->
+The cloud governance team has decided that enforcement of required Azure Policy and RBAC assignments across subscriptions will be implemented through Azure Blueprints and associated artifacts:
 
-### Approve service controls
+1.  In the root management group, create a blueprint definition named `governance-baseline`.
+2.  Add the following blueprint artifacts to the blueprint definition:
+    1.  Policy assignments for the custom Azure Policy definitions defined at the management group root.
+    2.  Resource group definitions for any groups required in subscriptions created or governed by the Governance MVP.
+    3.  Standard role assignments required in subscriptions created or governed by the Governance MVP.
+3.  Publish the blueprint definition.
+4.  Assign the `governance-baseline` blueprint definition to all subscriptions.
 
-The governance team must approve the work that's done in the last two stages.
-
-Because the governance team approves this stage, other teams can complete the previous two stages. This process is outlined in [Scale the review process within an organization](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/govern/cloud-service-controls#scale-the-review-process-within-an-organization).
-<!--
-[](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/govern/cloud-service-controls#release-service-controls)
--->
-
-### Release service controls
-
-The process for releasing changed controls for services that have an existing service guidance is different than releasing new service guidance.
-
-When you modify existing service guidance, remember that there are adoption teams that use the current service guidance in their work. Large changes might break their current projects.
-
-When you do incremental reviews of service guidance, you can look at how a service is being used to determine what effect new controls might create.
-
-Release new controls in an audit mode. This type of release triggers the policy alerting engine to send notifications to the application owners about remediation that they must implement.
-<!--
-[](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/govern/cloud-service-controls#service-governance-release-and-version-control)
--->
-
-#### Service governance, release, and version control
-
-The design imperatives must have a version and release cycle, and they must tie back to the service guidance. The service guidance must have a version and release cycle, and it must tie back to the policy controls. The policy controls must have versions and must be released in manageable waves by using the following guidelines:
-
--   All of these steps should happen with release cycles.
--   Services must be available on a set date.
--   Policy controls must be advertised on a release cycle.
-<!--
-[](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/govern/cloud-service-controls#artifacts-generated)
--->
-
-## Artifacts generated
-
-[![Diagram that shows the artifacts generated.](../media/artifacts-process.png)](../media/artifacts-process.png#lightbox)
-
-There are four key artifacts developed throughout this process.
-
--   The **service control requirements** are the outline of the key controls that are required across all services. This document is published before the reference documentation for cloud adoption teams. This positioning ensures that they review and understand the controls that are being built into the systems. This document must be available so that others can help the development of a service review. This process is outlined in [Scale the review process within an organization](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/govern/cloud-service-controls#scale-the-review-process-within-an-organization).
-    
--   The **service review schedule** is a document that outlines when the services are reviewed, how long the expected wait for a review is, and when a new service becomes available for adoption teams. It also notifies the adoption team when existing services might change and therefore need more implementation of controls.
-    
--   **Service guidance** is a per service document that outlines the key components around a service, such as:
-    
-    -   When the service is used.
-    -   Restrictions on what the service is used for.
-    -   A list of controls that the platform enforces.
-    -   A list of controls that the developer implements.
-    
-    Cloud adoption teams refer to these documents for services that they can pick up and use. They plan the implementation of their project around the controls and components. The service guidance also lists Azure policies and supporting functions that are implemented. This guidance ensures that a reference is enforced between the policy and service controls.
-    
--   **Azure policies and supporting functions** are the components or technical implementation of the controls that go into the platform. This code is version-controlled and deployed. These code items must act in enforcing the policy and include the code for reporting compliance of the policy.
-    
-<!--
-[](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/govern/cloud-service-controls#start-with-a-baseline)
--->
-
-### Start with a baseline
-
-When organizations start this process, they usually have an existing Azure footprint. To ensure the least disruptive implementation of service governance, it's best to baseline off the current implementation and then start service reviews. This method avoids stifling innovation or blocking new projects while the governance team is starting.
-
-1.  Create a service guidance for every service that's used in your organization with the current service controls.
-    
-    For example, if key vaults are used and there are no controls enforced on them, create a service guidance for `A key vault with no controls`. If storage accounts are in use and a policy enforces encryption, create the storage account guidance with the control that encryption will be enforced.
-    
-2.  Trigger a service review for all services that are in use, which adds them to the service review schedule.
-    
-3.  Start a rollout of the new or changed controls in line with the service review policy, which gives product teams time to remediate their services.
-    
-
-In this stage, as the baseline, all services in production use are approved with their current policy controls.
-
-The process is ready to start working with the service guidance as if it were going through a normal review.
-
-For example, if your organization deploys virtual machines (VM) to production today, and the only policy governing that is tagging, then the MVP for the VM service guidance only documents the control around tagging.
-
-If more controls need to be enforced for virtual machines, a new version of the service guidance is written. The new controls are implemented and go through the release cycle for the new service guidance version.
-<!--
-[](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/govern/cloud-service-controls#differences-from-the-initial-review)
--->
-
-### Differences from the initial review
-
-A main component of the service review process is to prevent services that don't have a current published service guidance from being deployed into the environment. It prevents the deployment of services that haven't had a risk assessment performed against the current cloud policy.
-
-A staged approach that allows service use in different environments gives adoption teams earlier access to controls and reduces the exposure of services without controls.
-
-There are several stages that ensure adoption teams aren't blocked during the creation of new service guidance. The process accelerates their ability to start using services. The first stage (`Sandbox`) is for the adoption team to nominate the new service that they need for a service review.
-
-![Diagram that shows a new service control lifecycle.](../media/new-service-control-lifecycle.png)
-
-Adoption teams can use the service in a disconnected sandbox environment. The sandbox lets the adoption team start working with the service and prototype solutions. The sandbox environment doesn't have any policy controls for the service. A review hasn't been done, so generic compensating controls should be enforced on the environment. These compensating controls might include:
-
--   Agreement from the adoption team to try to work within the cloud policy.
--   Agreement to not store any company data in the sandbox environment.
--   Limited network connectivity to the corporate environment.
--   Limited connectivity to outside services.
-
-After a draft version of the service review is done, the service is provisionally approved for use in a development and test environment. At this point, the code for the controls might not be complete, but basic guidance about how the service is deployed has been written. The developers can start to work in the dev/test environment with the understanding that the service might require reworking later. For example, if new controls are added as part of the final implementation of the production controls, some rework might be needed.
-
-To release service controls, and to authorize application teams to deploy the service into the production environment, complete the following tasks:
-
--   Service guidance is completed.
--   Policy controls are code complete and tested.
--   Approval of service controls is complete.
--   Policy controls are released to production.
-
-Now the adoption team can deploy the final production controls with confidence.
-
-After deployment, migrate the production controls back to the development and test environment. This migration might cause rework for the development environment but ensures that the full controls are in place.
-<!--
-[](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/govern/cloud-service-controls#scale-the-review-process-within-an-organization)
--->
-
-### Scale the review process within an organization
-
-The combination of the scale of the cloud services and the depth of the service review process often creates a large work effort. To avoid this backlog of work being the sole responsibility of the governance team, you can scale through the adoption teams to complete the work. The governance team retains control and approval in this process. **Final approval of content stays with the governance team**.
-
-Changes often happen with the cloud, or your organization, that make it difficult to keep controls current. To help with this issue, enable people outside the cloud governance team to implement parts of the work.
-
-When you implement a clear set of service control requirements, it allows other teams to work on the first two stages of the process for a service. They can contribute a large amount of content.
-
-The cloud has many services. The cloud governance team can prepare a backlog for all of these services to go through a service review, but they can't keep pace with the demands of a large organization. Services in the cloud change at a continuing rate, which places more demand on the need for a service review of the previously defined services. Projects might require new types of services quickly that they were unable to predict the demand for. Their immediate demand shouldn't become a problem for the cloud governance team. The cloud adoption team that needs the service must address that demand.
-
-If the service control requirements are written clearly, teams outside the governance team can complete the first two steps of the service review process.
-
-With the approval and release steps still controlled by the governance team, organizations can scale the service review process and keep centralized control.
-
-For example, a cloud adoption team might need a new service that hasn't been through a review. To get the service review completed more quickly, they can use the documentation in the imperatives to identify and produce the controls. This method moves them all the way through the technical implementation and policy code for the cloud governance team. The cloud adoption team then gets quicker access to the service and can be interpreted as a _first user pays_ scenario for the implementation of new services.
+See the [Azure Blueprints documentation](https://learn.microsoft.com/en-us/azure/governance/blueprints/overview) for more information on creating and using blueprint definitions.

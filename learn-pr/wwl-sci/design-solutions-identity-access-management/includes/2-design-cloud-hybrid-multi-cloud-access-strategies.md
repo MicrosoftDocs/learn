@@ -10,7 +10,7 @@ When evaluating which type of Active Directory solution to adopt, understand the
 
 ### Design recommendations
 
-- Use centralized and delegated responsibilities based on role and security requirements to manage resources inside the landing zone. For more information, see Establish operational management practices in the cloud.
+- Use centralized and delegated responsibilities based on role and security requirements to manage resources inside the landing zone. 
 - The following types of privileged operations require special permissions. Consider which users will be handling such requests, and how to adequately secure and monitor their accounts.
     - Creating service principal objects.
     - Registering applications in Azure AD.
@@ -20,7 +20,7 @@ When evaluating which type of Active Directory solution to adopt, understand the
 - Make sure to design your network so resources that require AD DS on Windows Server for local authentication and management can access their domain controllers. For AD DS on Windows Server, consider shared service environments that offer local authentication and host management in a larger enterprise-wide network context.
 - When you deploy Azure AD DS or integrate on-premises environments into Azure, use locations with Availability Zones for increased availability.
 - Deploy Azure AD DS within the primary region, because you can only project this service into one subscription. You can expand Azure AD DS to further regions with replica sets.
-- Use managed identities instead of service principals for authentication to Azure services. This approach reduces exposure to credential theft. For more information, see Managed identities for Azure resources.
+- Use managed identities instead of service principals for authentication to Azure services. This approach reduces exposure to credential theft. 
 
 ## Azure and on-premises hybrid identity - Design recommendations
 
@@ -29,9 +29,9 @@ For hosting infrastructure as a service (IaaS) hybrid identity solutions, evalua
 - For applications that are hosted partly on-premises and partly in Azure, verify which integration makes sense based on your scenario. For more information, see Deploy AD DS in an Azure virtual network.
 - If you have AD FS, move to the cloud to centralize identity and reduce operational effort. If AD FS is still part of your identity solution, install and use Azure AD Connect.
 
-## Design recommendations for platform access
+## Identity for Azure platform resources - design recommendations
 
-A centralized identity uses a single location in the cloud and the integration of the Active Directory Service, control access, authentication, and applications. This approach provides better management from the IT team. For centralized Directory services, the best practice is to have only one Azure AD tenant.
+A centralized identity uses a single location in the cloud and the integration of the Active Directory Service, control access, authentication, and applications. This approach provides better management for the IT team. For centralized Directory services, the best practice is to have only one Azure AD tenant.
 
 When you grant access to resources, use Azure AD-only groups for Azure control-plane resources and Azure AD Privileged Identity Management. Add on-premises groups to the Azure AD-only group if a group management system is already in place. Note that Azure AD-only is also known as cloud only.
 
@@ -43,19 +43,11 @@ Integrate Azure AD logs with the platform-central Log Analytics workspace. This 
 
 Custom user policies can enforce any data sovereignty requirements for the organization.
 
-If identity protection is used as part your identity solution, make sure you exclude the break-glass admin account. For more information, see Manage emergency access accounts in Azure AD.
-
-## Design considerations for workload access
-
-For workflow access design, answer the following questions:
-
-- Based on your cloud operating model, which teams require access to workloads within the landing zone?
-- What roles or functions do the teams with access carry out?
-- What is the minimum level of privilege the teams need to carry out their responsibilities?
+If identity protection is used as part your identity solution, make sure you exclude the break-glass admin account. 
 
 ## Design recommendations - Azure identity and access for landing zones
 
-Deploy Azure AD Conditional Access policies for users with rights to Azure environments. Conditional Access provides another mechanism to help protect a controlled Azure environment from unauthorized access. If you use authentication outside of Azure AD, see Custom controls (preview) for information about limitations.
+Deploy Azure AD Conditional Access policies for users with rights to Azure environments. Conditional Access provides another mechanism to help protect a controlled Azure environment from unauthorized access. 
 
 Enforce multifactor authentication (MFA) for users with rights to the Azure environments. Many compliance frameworks require multifactor authentication enforcement. Multifactor authentication greatly lowers the risk of credential theft and unauthorized access.
 
@@ -65,7 +57,15 @@ Use Azure AD managed identities for Azure resources to avoid credential-based au
 
 Use Microsoft Defender for Cloud for just-in-time access to all infrastructure as a service (IaaS) resources. Defender for Cloud lets you enable network-level protection for ephemeral user access to IaaS virtual machines.
 
-## RBAC recommendations
+### Privileged Identity Management (PIM)
+
+Use Azure AD Privileged Identity Management (PIM) to establish zero-trust and least privilege access. Map your organization's roles to the minimum access levels needed. Azure AD PIM can use Azure native tools, extend current tools and processes, or use both current and native tools as needed.
+
+Use Azure AD PIM access reviews to periodically validate resource entitlements. Access reviews are part of many compliance frameworks, so many organizations already have an access review process in place.
+
+Use privileged identities for automation runbooks that require elevated access permissions. Use the same tools and policies to govern automated workflows that access critical security boundaries as you use to govern users of equivalent privilege.
+
+### RBAC recommendations
 
 Use Azure RBAC to manage data plane access to resources, if possible. Examples of data plane endpoints are Azure Key Vault, a storage account, or an SQL Database.
 
@@ -80,4 +80,4 @@ Use Azure AD built-in roles to manage the following identity settings:
 | Authentication | Security Administrator | |
 | Enterprise Application or Application Proxy | Application Administrator | No consent global admin.|
 
-If the Azure built-in roles don't meet your organization's specific needs, you can create your own custom roles. Consider the following key role definitions when you create custom roles within the Azure AD tenant. The wildcard * under Actions means the principal assigned to this role can do all actions. The actions under NotActions are subtracted from Actions.
+If the Azure built-in roles don't meet your organization's specific needs, you can create your own custom roles. 

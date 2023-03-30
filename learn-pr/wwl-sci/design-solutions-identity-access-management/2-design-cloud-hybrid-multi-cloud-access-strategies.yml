@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-solutions-identity-access-management.design-cloud-hybrid-multi-cloud-access-strategies
-title: Design cloud, hybrid and multicloud access strategies
+title: Design cloud, hybrid and multicloud access strategies (including Azure AD)
 metadata:
-  title: Design cloud, hybrid and multicloud access strategies
+  title: Design cloud, hybrid and multicloud access strategies (including Azure AD)
   description: "This is a unit which prepares for the Microsoft Cybersecurity Architect certification on the topic: design cloud, hybrid and multicloud access strategies."
   ms.date: 3/14/2023
   author: hrasheed-msft

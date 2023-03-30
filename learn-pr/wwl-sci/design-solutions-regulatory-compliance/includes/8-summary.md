@@ -1,4 +1,7 @@
-You've learned how to interpret and translate regulatory requirements into technical solutions. You'll also learn how to use capabilities found in Microsoft Purview, Microsoft Priva, and Defender for Cloud for compliance.
+You've learned:
+
+- How to interpret and translate regulatory requirements into technical solutions.
+- How to use capabilities found in Microsoft Purview, Microsoft Priva, and Defender for Cloud for compliance.
 
 ## Learn more with security documentation
 

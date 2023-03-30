@@ -1,4 +1,4 @@
-This document describes an overall enterprise access model that includes context of how a privileged access strategy fits in. For a roadmap on how to adopt a privileged access strategy, see the rapid modernization plan (RaMP).
+This document describes an overall enterprise access model that includes context of how a privileged access strategy fits in. 
 
 Privileged access strategy is part of an overall enterprise access control strategy. This enterprise access model shows how privileged access fits into an overall enterprise access model.
 
