@@ -13,7 +13,7 @@ Dynamic provisioning uses a number of transforms to achieve this objective.
 
 ### Objectives
 
-After completing this module, you will be able to:
+After completing this module, you'll be able to:
 
  -  Describe how Subscription Activation works.
  -  Describe the benefits of Provisioning Packages.

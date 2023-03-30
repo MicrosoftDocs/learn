@@ -1,5 +1,5 @@
 
-The Windows Assessment and Deployment Kit (Windows ADK) includes a tool called Windows Configuration Designer which you can use to create provisioning packages.
+The Windows Assessment and Deployment Kit (Windows ADK) includes a tool called Windows Configuration Designer, which you can use to create provisioning packages.
 
 :::image type="content" source="../media/windows-configuration-designer-interface-f5f579a4.png" alt-text="Screenshot of the Windows Configuration Designer. Shows a project called Project1 open with the Computer Account option in the left view, with fields for Account, AccountOU, ComputerName, DomainName, and Password in the right view.":::
 
@@ -23,7 +23,7 @@ You can apply a provisioning package during Windows 11 deployment or after the O
 
 ### Azure AD join with automatic MDM enrollment
 
-The Azure AD/MDM dynamic provisioning method is also cloud-driven and is also based on Azure AD Premium and Microsoft Intune. After you enroll a device in Intune MDM, the MDM enforces compliance with your corporate policies, adds or removes apps, and much more. In addition, the MDM can report a device’s compliance to Azure AD; this enables Azure AD to allow access to corporate resources or applications secured by Azure AD only to devices that comply with policies.
+The Azure AD/MDM dynamic provisioning method is also cloud-driven and is also based on Azure AD Premium and Microsoft Intune. After you enroll a device in Intune MDM, the MDM enforces compliance with your corporate policies, adds or removes apps, and much more. In addition, the MDM can report a device’s compliance with Azure AD; this enables Azure AD to allow access to corporate resources or applications secured by Azure AD only to devices that comply with policies.
 
 Using Azure AD/MDM, you can:
 
