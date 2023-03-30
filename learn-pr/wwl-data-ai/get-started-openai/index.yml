@@ -5,7 +5,7 @@ metadata:
   description: Azure OpenAI Service enables engineers to build enterprise-grade generative AI solutions.
   ms.date: 2/27/2023
   author: sheryang
-  ms.author: sherzyang
+  ms.author: sheryang
   ms.topic: interactive-tutorial
   ms.prod: learning-azure 
 title: Get started with Azure OpenAI Service
@@ -17,7 +17,7 @@ abstract: |
     - Generate completions to prompts and begin to manage model parameters.
 prerequisites: |
   - Familiarity with Azure and the Azure portal.
-  - An understanding of generative AI. You can learn more with [Introduction to Azure OpenAI Service](https://learn.microsoft.com/training/modules/explore-azure-openai/).
+  - An understanding of generative AI. You can learn more with [Introduction to Azure OpenAI Service](/training/modules/explore-azure-openai/).
 iconUrl: /learn/achievements/generic-badge.svg
 levels: 
   - intermediate

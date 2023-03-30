@@ -6,4 +6,4 @@ You learned how to:
 - Generate completions to prompts. 
 - Test models in the Studio playground and begin to manage model parameters.
 
-One way to learn more is by exploring the [Azure OpenAI Service documentation](https://learn.microsoft.com/azure/cognitive-services/openai?azure-portal=true). 
+One way to learn more is by exploring the [Azure OpenAI Service documentation](/azure/cognitive-services/openai?azure-portal=true). 
