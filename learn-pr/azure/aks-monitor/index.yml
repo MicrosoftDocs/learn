@@ -17,10 +17,10 @@ abstract: |
   - Enable an alert rule to fire when an issue with your cluster is detected.
   - Create and action group to text you when an alert is fired.
 prerequisites: |
-  -	Access to Azure account with an active subscription 
-  -	Knowledge of what Azure Monitor is and how it works at a beginner level. 
-  -	Basic knowledge of Kubernetes and its concepts
-  -	A deployed Azure Kubernetes Service cluster with a containerized application. If you don’t already have an AKS cluster to monitor, then complete the Learn module [Deploy a containerized application on Azure Kubernetes Service](https://docs.microsoft.com/learn/modules/aks-deploy-container-app/). The AKS cluster created in that module will be used for this lesson, but you can apply the same steps to your own cluster.  
+  -	Access to Azure account with an active subscription.
+  -	Knowledge of what Azure Monitor is and how it works at a beginner level.
+  -	Basic knowledge of Kubernetes and its concepts.
+  -	A deployed Azure Kubernetes Service cluster with a containerized application. If you don’t already have an AKS cluster to monitor, then complete the Learn module [Deploy a containerized application on Azure Kubernetes Service](https://docs.microsoft.com/learn/modules/aks-deploy-container-app/). The AKS cluster created in that module will be used for this lesson, but you can apply the same steps to your own cluster. 
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner

@@ -1,6 +1,6 @@
 You needed to ensure that your applications on your AKS cluster were always available to customers and performing well. You also needed to ensure that your support staff were immediately alerted to any problems with the cluster or application.  
 
-By enabling container insights for your AKS cluster, you were able to monitor your cluster ans send alerts when problem arose.
+By enabling container insights for your AKS cluster, you were able to monitor your cluster and send alerts when problem arose.
 
 In this module, you enabled Container insights on your AKS cluster. You then inspected different features of Container insights to view the different components of their cluster and their operation and performance. Finally, you created an alert rule and action group to send you a text message when an error is detected.  
 
@@ -13,9 +13,9 @@ In this module, you may have created an Azure Kubernetes Service cluster. If you
 
 1. Select **Kubernetes Services**.
 
-1. Select your service, in the case of this module, *aks-contoso-video*.
+1. Select your service, for this module, *aks-contoso-video*.
 
-1. Control-select the cluster's resource group to open it in an new tab.
+1. Control-select the cluster's resource group to open it in a new tab.
 
 1. On Kubernetes service page for the cluster you want to delete, select **Delete**. It takes a few minutes to delete the cluster.
 
