@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan-transition-modern-endpoint-management.migrate-workloads-when-modern-transitioning
+title: Migrate workloads when modern transitioning
+metadata:
+  title: Migrate workloads when modern transitioning
+  description: "Migrate workloads when modern transitioning"
+  ms.date: 03/30/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-migrate-workloads-when-modern-transitioning.md)]
