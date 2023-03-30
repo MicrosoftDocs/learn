@@ -40,8 +40,8 @@ Azure presents a *wizard* as a series of tabs to walk you through all the config
     | Region | Select a region close to you from the global regions listed in the following table. |
     | Availability options | Accept default **No infrastructure redundancy required**. This option is used to ensure the VM is highly available by grouping multiple VMs together to deal with planned or unplanned maintenance events or outages. |
     | Security type | Standard |
-    | Image | Select **[smalldisk] Windows Server 2019 Datacenter - Gen2** from the dropdown list. |
-    | VM architecture | Accept default (x64). |
+    | Image | Select **[smalldisk] Windows Server 2019 Datacenter - x64 Gen2** from the dropdown list. |
+    | VM architecture | Accept default (x64) |
     | Run with Azure Spot discount| Accept default (unchecked). |
     | Size | The **Size** field isn't directly editable. Select or accept the default **Standard DS1 v2**, which will give the VM 1 CPU and 3.5 GB of memory. Optionally, select the field to view recommended or recently chosen sizes; select **See all sizes** to explore filters for sizes based on vCPUs, RAM, Data disks, operations per second, and cost. Select the X in the top right of the pane to close the pane.  |
     | **Administrator account** |
@@ -68,13 +68,13 @@ Azure presents a *wizard* as a series of tabs to walk you through all the config
     | Setting | Value |
     |---------|---------|
     | **Disk options** |
+    | Encryption at host | Accept the default (unchecked) |
     | OS disk type | Accept the default **Premium SSD (locally redundant storage)**. |
-    | Delete with VM | Accept the default (checked) | 
-    | Encryption at host | Accept the default (unchecked) |     
-    | Encryption type | Accept the default **(Default) Encryption at-rest with a platform-managed key**. |
+    | Delete with VM | Accept the default (checked) |
+    | Key management | Accept the default. |
     | Enable Ultra Disk compatibility | Accept the default (unchecked) |
     | **Data disks** |
-    | Select **Create and attach a new disk** link. The **Create a new disk** pane appears. | Accept all the default values for the following settings: *Name*; *Source type*; *Size*; *Encryption type*; and *Enable shared disk*. This is where you could use a snapshot, or Storage Blob, to create a VHD. |
+    | Select **Create and attach a new disk** link. The **Create a new disk** pane appears. | Accept all the default values for the following settings: *Name*; *Source type*; *Size*; *Key management*; and *Enable shared disk*. This is where you could use a snapshot, or Storage Blob, to create a VHD. |
 
 1. Select **OK** to save the settings, and close the pane.
 

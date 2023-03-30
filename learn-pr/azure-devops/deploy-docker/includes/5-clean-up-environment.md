@@ -1,36 +1,26 @@
-You're finished with the tasks for this module. Here you'll clean up your Azure resources, move the work item to the **Done** state on Azure Boards, and clean up your Azure DevOps environment.
-
-> [!IMPORTANT]
-> This page contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. It also helps ensure that you're not charged for Azure resources after you complete this module.
+You have completed all the tasks for this module. Here you'll clean up your Azure resources, move the work item to the **Done** state in Azure Boards, and then clean up your Azure DevOps environment.
 
 ## Clean up Azure resources
 
-Here you delete your Azure App Service instances. The easiest way to delete the instances is to delete their parent resource group. When you delete a resource group, you delete all resources in that group.
+The easiest way to delete your Azure App Service instances is to delete their parent resource group. When you delete a resource group, you delete all resources within that group. To delete your resource group:
 
-In the [Create a release pipeline with Azure Pipelines](/training/modules/create-release-pipeline?azure-portal=true) module, you managed Azure resources through the Azure portal. Here you tear down your deployment by using the Azure CLI through Azure Cloud Shell. The steps are similar to the steps that you used when you created the resources.
+1. Navigate to [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
 
-To clean up your resource group:
-
-1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
 1. From the menu bar, select Cloud Shell. When prompted, select the **Bash** experience.
 
     :::image type="content" source="../../shared/media/azure-portal-menu-cloud-shell.png" alt-text="Screenshot of the Azure portal showing the location of the Cloud Shell menu item.":::
 
-1. Run the following `az group delete` command to delete the resource group that you used, `tailspin-space-game-rg`.
+1. Run the following command to delete your resource group: *tailspin-space-game-rg*. When prompted, enter *y* to confirm your choice.
 
     ```azurecli
     az group delete --name tailspin-space-game-rg
     ```
 
-    When prompted, enter `y` to confirm the operation.
-
-1. As an optional step, after the previous command finishes, run the following `az group list` command.
+1. To confirm the deletion, execute the below command and ensure that your resource group is not listed anymore.
 
     ```azurecli
     az group list --output table
     ```
-
-    You see that the resource group `tailspin-space-game-rg` no longer exists.
 
 ## Move the work item to Done
 
@@ -53,7 +43,7 @@ Each module in this learning path provides a template. You can run the template 
 
 Running multiple templates gives you multiple Azure Pipelines projects. Each project points to the same GitHub repository. This setup can trigger multiple pipelines to run each time you push a change to your GitHub repository. The pipeline runs use up free build minutes on our hosted agents. To avoid losing those free build minutes, disable or delete your pipeline before you move to the next module.
 
-Choose one of the following options.
+Choose one of the following options:
 
 ### Option 1: Disable the pipeline
 
@@ -66,9 +56,7 @@ To disable the pipeline:
 
     :::image type="content" source="../../shared/media/azure-pipelines-settings-button.png" alt-text="Screenshot of Azure Pipelines showing the location of the Settings menu.":::
 
-1. Under **Processing of new run requests**, select **Disabled** and then select **Save**.
-
-    Your pipeline will no longer process build requests.
+1. Under **Processing of new run requests**, select **Disabled** and then select **Save**. Your pipeline will no longer process new build requests.
 
 ### Option 2: Delete the Azure DevOps project
 
@@ -78,10 +66,8 @@ To delete the project:
 
 1. In Azure DevOps, navigate to your project. Earlier, we recommended that you name this project **Space Game - web - Docker**.
 1. Select **Project settings** in the lower corner.
-1. In the **Project details** area, go to the bottom and select **Delete**.
+1. Navigate to the bottom of the **Project details** section and choose the **Delete** option.
 
     :::image type="content" source="../../shared/media/azure-devops-delete-project.png" alt-text="Screenshot of Azure Pipelines showing the location of the Delete button.":::
 
-1. In the window that appears, enter the project name. Select **Delete** again.
-
-    Your project is now deleted.
+1. Once the new window appears, input the project name and proceed by selecting the **Delete** option once more.

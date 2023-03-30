@@ -42,6 +42,6 @@ The [Corda platform](https://www.r3.com/corda-platform/?azure-portal=true) is a 
 
 In Ethereum, client applications play a pivotal role in the transaction lifecycle. The client application obtains the signing keys and transactions before the identities are submitted to the nodes.
 
-In the Corda platform, the client applications (commonly called [*CorDapps*](https://docs.corda.net/docs/corda-os/4.7/cordapp-overview.html?azure-portal=true)), live completely **on** the Corda nodes. The key and transaction signing identities exist only on the nodes and not with the client. Client applications trigger the workflow that's registered on the target Corda node, and monitor the workflow progression.
+In the Corda platform, the client applications (commonly called [*CorDapps*](https://docs.r3.com/en/platform/corda/4.9/enterprise/cordapps/cordapp-overview.html?azure-portal=true)), live completely **on** the Corda nodes. The key and transaction signing identities exist only on the nodes and not with the client. Client applications trigger the workflow that's registered on the target Corda node, and monitor the workflow progression.
 
 A [Corda Visual Studio Code extension](https://github.com/corda/vscode-corda?azure-portal=true) supports Corda development. To install the extension, in Visual Studio Code, select the **Extensions** icon. Then enter *Corda* to find and install the extension.

@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Deploy app container to Azure App Service
   description: Describes the basic concepts of Azure App Service and provides hands-on guidance to deploy the app container to App Service
   ms.date: 09/01/2021
-  author: rahug1190
-  ms.author: rahugup
+  author: v-ksreedevan
+  ms.author: v-ksreedevan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Deploy app container to Azure App Service

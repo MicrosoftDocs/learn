@@ -15,14 +15,14 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: You are running your infrastructure partially in the cloud and partially on-premises. The diagram above illustrates this. How could you enable real-time switching of traffic if there are future power issues?
+  - content: As illustrated in the previous diagram, you're running your infrastructure partially in the cloud and partially on-premises. How could you enable real-time switching of traffic if there are future power issues?
     choices:
     - content: Use Azure Traffic Manager to probe the health of the endpoints.
       isCorrect: true
       explanation: Azure Traffic Manager can automatically redirect all traffic to a health endpoint.
     - content: Use Azure Backup to probe the health of the endpoints.
       isCorrect: false
-      explanation: Azure Backup is not used to monitor endpoints. It is used to back up workloads into Azure.
+      explanation: Azure Backup isn't used to monitor endpoints. It's used to back up workloads into Azure.
     - content: Use Azure Monitor in order to probe the health of the endpoints.
       isCorrect: false
       explanation: Azure Monitor can't automatically redirect traffic for you.
@@ -33,18 +33,18 @@ quiz:
       explanation: You should monitor your region, and configure notifications for alerts and set up autoscaling to respond to demand. 
     - content: Set up monitoring, and increase your recovery time objectives.
       isCorrect: false
-      explanation: You should be decreasing your recovery time objective as it is how long it takes for your region to be up and running again. In addition, you are not addressing performance issues by just setting up monitoring. You must respond to performance issues by scaling or other means.
+      explanation: You should be decreasing your recovery time objective as it is how long it takes for your region to be up and running again. In addition, you aren't addressing performance issues by just setting up monitoring. You must respond to performance issues by scaling or other means.
     - content: Set up notifications, then fail over and fail back for your applications.
       isCorrect: false
-      explanation: Failing over and back again is for when a failure occurs. If your workloads are not performing well, this would not necessarily address the performance issues because you are replicating the same environment in another location.
+      explanation: Failing over and back again is for when a failure occurs. If your workloads aren't performing well, this solution wouldn't necessarily address the performance issues because you're replicating the same environment in another location.
   - content: Which of the following resources can be restored from backups?
     choices:
     - content: Network security groups, virtual machines, Traffic Manager.
       isCorrect: false
-      explanation: Azure Backup will back up virtual machines, but not network security groups or Traffic Manager.
+      explanation: Azure Backup backs up virtual machines, but not network security groups or Traffic Manager.
     - content: Virtual machines, databases, disks.
       isCorrect: true
-      explanation: With Azure Backup and SQL server backup, you can back up all of these resources and restore them. You will be able to run your workloads again as long as you have these resources backed up.
+      explanation: With Azure Backup and SQL server backup, you can back up all of these resources and restore them. You're able to run your workloads again as long as you have these resources backed up.
     - content: Load balancers, subnets, VPN Gateway.
       isCorrect: false
-      explanation: Azure Backup does not back up these resources.
+      explanation: Azure Backup doesn't back up these resources.

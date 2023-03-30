@@ -8,7 +8,7 @@ Let's start by creating a new Key Vault in the Azure portal.
 
 1. Select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the *Search services and marketplace*, search for and select *Key Vault* to find the Azure Key Vault service. The **Key Vault** pane appears.
+1. In the **Search services and marketplace**, search for and select *Key Vault* to find the Azure Key Vault service. The **Key Vault** pane appears.
 
 1. Select **Create**. The **Create key vault** pane appears.
 
@@ -17,8 +17,8 @@ Let's start by creating a new Key Vault in the Azure portal.
     | Setting | Value |
     |---|---|
     | **Project details** |
-    | Subscription | From the dropdown list, select *Concierge Subscription*. |
-    | Resource group | From the dropdown list, enter *msftlearn-core-infrastructure-rg*. |
+    | Subscription | From the dropdown, select *Concierge Subscription*. |
+    | Resource group | From the dropdown, select <rgn>[sandbox resource group name]</rgn>. |
     | **Instance details** |
     | Key vault name | Enter a globally unique name for the new vault. Vault names must be 3-24 characters long and contain only alphanumeric characters and dashes. The exercise uses the example name of *VaultamortDiary* for the new vault.
     | Region | Accept default. |
@@ -34,13 +34,13 @@ After the deployment is complete, select **Go to resource**. Your *Key vault* pa
 
 Next, add a new secret to the vault.
 
-1. In the left menu pane, under **Settings**, select **Secrets**. The **Secrets** pane appears for your key vault.
+1. In the left menu pane, under **Objects**, select **Secrets**. The **Secrets** pane appears for your key vault.
 
 1. In the top menu bar, select **Generate/Import**. The **Create a secret** pane appears.
 
 1. Enter a name, value, and (optional) content type. An example follows.
 
-    ![Screenshot showing the Create a secret pane in the Azure portal for Azure Key Vault.](../media/1-create-secret.png)
+   :::image type="content" source="../media/1-create-secret.png" alt-text="Screenshot showing the Create a secret pane in the Azure portal for Azure Key Vault.":::
 
 1. Select **Create** to add the secret. The **Secrets** pane reappears.
 
@@ -54,17 +54,17 @@ Finally, verify that the secret value has been set.
 
 1. Select **Show Secret Value** to see the value assigned to the secret.
 
-    ![Screenshot showing the secret value in the Azure portal.](../media/1-show-secret.png)
+   :::image type="content" source="../media/1-show-secret.png" alt-text="Screenshot showing the secret value in the Azure portal.":::
 
 ## Other ways to consume the secret
 
-You can create and retrieve secrets from the Azure Key Vault as long as you are authenticated with Azure AD using the REST API, native SDKs, Azure CLI, or Azure PowerShell. For example, here's the same process using Azure PowerShell.
+You can create and retrieve secrets from the Azure Key Vault as long as you're authenticated with Azure AD using the REST API, native SDKs, Azure CLI, or Azure PowerShell. For example, here's the same process using Azure PowerShell.
 
 ```powershell
 Get-AzKeyVault
 ```
 
-This will return the created vault with the name **VaultamortDiary**.
+This command returns the created vault with the name **VaultamortDiary**.
 
 ```output
 Vault Name          : VaultamortDiary
@@ -79,7 +79,7 @@ With the name of the vault and the key, you can retrieve the secret value:
 Get-AzKeyVaultSecret -VaultName 'VaultamortDiary' -Name 'HiddenLocation'
 ```
 
-This returns our set value:
+This command returns our set value:
 
 ```output
 Vault Name   : vaultamortdiary

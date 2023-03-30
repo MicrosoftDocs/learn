@@ -17,13 +17,14 @@ It's time to deliver on those lofty buzzwords. Now, you need to create a new pro
    | Name          | Value        |
    | ------------- | ------------ |
    | Language      | TypeScript   |
+   | Select a TypeScript Programming Model | Model V3 |
    | Template      | HTTP trigger |
    | Name          | GetProducts  |
    | Authorization | Function     |
 
 1. When asked to overwrite the `package.json` file, make sure you select **no**.
 
-    The *api* folder in Visual Studio Code will now contain an Azure Functions project along with a new function called *GetProducts*.
+    The *api* folder in Visual Studio Code will now contain an Azure Functions project along with a new function called *GetProducts*. Several other required project files are also added, including `host.json` and `local.settings.json`.
 
 1. Replace the code in the *GetProducts/index.ts* file with the following code.
 

@@ -4,11 +4,14 @@ title: What are user accounts in Azure Active Directory?
 metadata:
   title: What are user accounts in Azure Active Directory?
   description: What are user accounts in Azure Active Directory?
-  ms.date: 10/25/2019
-  author: curtand
-  ms.author: curtand
+  ms.date: 03/21/2023
+  author: shlipsey3
+  ms.author: sarahlipsey
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.manager: amycollanino
+  ms.service: active-directory
+  ms.subservice: fundamentals
 durationInMinutes: 7
 content: |
   [!include[](includes/2-user-accounts-azure-ad.md)]

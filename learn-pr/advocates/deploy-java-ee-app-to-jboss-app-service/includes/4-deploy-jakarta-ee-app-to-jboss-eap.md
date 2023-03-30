@@ -1,4 +1,4 @@
-This unit outlines how to deploy your Java EE application to JBoss EAP on Azure App Service, and how to connect to the database.
+The steps in this unit illustrate how to deploy your Java EE application to JBoss EAP on Azure App Service, and how to connect to the database. You will actually execute these steps in the next unit.
 
 ## Create a Java EE (Jakarta EE) application
 
@@ -28,7 +28,7 @@ Microsoft provides the Maven Plugin for Azure App Service to deploy your Java we
 |  `runtime` `javaVersion` | Java virtual machine version for the web container (Java 8)|
 |  `runtime` `webContainer` | Web container (JBoss EAP 7)|
 
-In this module, you'll deploy an application to the JBoss EAP environment. Select `Java 8` for the Java version and `Jbosseap 7.2` for the runtime web container.
+In this module, you deploy an application to the JBoss EAP environment. Select `Java 8` for the Java version and `Jbosseap 7.4` for the runtime web container.
 
 ## Build the WAR package
 
@@ -42,6 +42,8 @@ You can use the `./mvnw package` command to build a Web Application Archive (WAR
 After you create your Maven artifact, you can run the `deploy` command in the Maven Plugin for Azure App Service to deploy the application to JBoss EAP.
 
 The `deploy` command creates an Azure resource group and an instance of JBoss EAP based on the preceding plug-in settings. That one command does everything from creating instances to deploying the Java web application.
+
+For the complete list of configurations, see the plugin reference documentation. All the Azure Maven Plugins share a common set of configurations. For these configurations see [Common Configurations](https://github.com/microsoft/azure-maven-plugins/wiki/Common-Configuration). For configurations specific to App Service, see [Azure Web App: Configuration Details](https://github.com/microsoft/azure-maven-plugins/wiki/Azure-Web-App:-Configuration-Details).
 
 ## Configure a database connection by using a data source and JNDI
 

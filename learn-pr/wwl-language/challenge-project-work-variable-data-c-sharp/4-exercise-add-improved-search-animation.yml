@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.challenge-project-work-variable-data-c-sharp.exercise-add-improved-search-animation
+title: Exercise - Add improved search animation
+metadata:
+  title: Exercise - Add improved search animation
+  description: "Exercise - Add improved search animation"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 12
+content: |
+  [!include[](includes/4-exercise-add-improved-search-animation.md)]

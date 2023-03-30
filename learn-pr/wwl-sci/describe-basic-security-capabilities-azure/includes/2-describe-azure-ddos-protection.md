@@ -1,4 +1,5 @@
-Any company, large or small, can be the target of a serious network attack. The nature of these **attacks** might be to make a statement, or because the attacker wanted a challenge.
+
+Any company, large or small, can be the target of a serious network attack. The nature of these attacks might be to make a statement, or because the attacker wanted a challenge.
 
 ## Distributed Denial of Service attacks
 
@@ -24,6 +25,6 @@ Azure DDoS Protection comes in three tiers:
 
 - **Default DDoS infrastructure protection** (previously referred to as Basic): The default DDoS infrastructure protection service is automatically enabled for every property in Azure, at no extra cost, as part of the Azure platform. Always-on traffic monitoring and real-time mitigation of common network-level attacks provide the same defenses that Microsoft’s online services use. Azure’s global network is used to distribute and mitigate attack traffic across regions.
 - **DDoS Network Protection**: The DDoS Network Protection service (available as a SKU), combined with application design best practices, provides enhanced DDoS mitigation features to defend against DDoS attacks. It's automatically tuned to help protect your specific Azure resources in a virtual network. Protection is simple to enable on any new or existing virtual network, and it requires no application or resource changes. DDoS Network Protection has several advantages over the default infrastructure-level DDoS protection, including logging, alerting, and telemetry. See DDoS Protection overview for more details.
-- **DDoS IP Protection (Preview)**: DDoS IP Protection is a pay-per-protected IP model. DDoS IP Protection contains the same core engineering features as DDoS Network Protection, but will differ in the following value-added services: DDoS rapid response support, cost protection, and discounts on WAF.
+- **DDoS IP Protection**: DDoS IP Protection is a pay-per-protected IP model. DDoS IP Protection contains the same core engineering features as DDoS Network Protection, but will differ in the following value-added services: DDoS rapid response support, cost protection, and discounts on WAF.
 
 For more information visit the Azure DDoS Protection overview document, linked in the Summary and resources unit.

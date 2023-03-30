@@ -1,3 +1,4 @@
+
 Azure Firewall is a managed, cloud-based network security service that protects your Azure virtual network (VNet) resources from attackers. You can deploy Azure Firewall on any virtual network but the best approach is to use it on a centralized virtual network. All your other virtual and on-premises networks will then route through it. The advantage of this model is the ability to centrally exert control of network traffic for all your VNets across different subscriptions. 
 
 :::image type="content" source="../media/2-azure-firewall.png" alt-text="Diagram showing how Azure Firewall is running on a centralized VNet can protect both cloud-based VNets and your on-premises network.":::

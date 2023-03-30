@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.deploy-java-quarkus-azure-container-app-postgres.2-build
+title: Build a Quarkus application
+metadata:
+  title: Build a Quarkus application
+  description: Build a Quarkus application, test it, and execute it locally.
+  ms.date: 01/02/2023
+  author: agoncal
+  ms.author: antoniomanug
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=devdiv
+  ms.contributors: antoniomanug
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-build.md)]

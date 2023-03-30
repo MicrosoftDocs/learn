@@ -1392,11 +1392,21 @@ achievements:
   title: Introduction to Custom Commands
   summary: Custom Commands makes it easy to build voice commanding apps optimized for voice-first interaction experiences. It provides a straightforward authoring and hosting experience on a single interface, helping you to focus on building the best solution for your voice-commanding scenarios.
   iconUrl: /training/achievements/intro-to-custom-commands.svg
+- uid: learn.azure.model-partition-data-azure-cosmos-db
+  type: badge
+  title: Model and partition your data in Azure Cosmos DB  
+  summary: Identify key access patterns for a sample e-commerce application. Define the data model for each of the entities, along with containers to store the data with a partition key that will result in an efficient and scalable data store for this e-commerce application.
+  iconUrl: /training/achievements/model-partition-data-azure-cosmos-db.svg
 - uid: learn.iot.manage-iot-central-apps-with-rest-api.badge
   type: badge
   title: Manage IoT Central applications with the REST API
   summary: The IoT Central REST API lets you manage applications programmatically. For example, you can add device templates, create devices, set device properties, send commands to devices, and manage data exports.
   iconUrl: /training/achievements/manage-iot-central-apps-with-rest-api.svg
+- uid: learn.intro-to-azure-data-lake-storage.badge
+  type: badge
+  title: Introduction to Azure Data Lake Storage
+  summary: Describe how unlimited storage, universal data support, and high-performance throughput enable Azure Data Lake Storage to manage big data workloads. Determine which types of big data projects can benefit from Azure Data Lake Storage.
+  iconUrl: /training/achievements/generic-badge.svg
 - uid: learn.azure.create-language-translator-mixed-reality-application-unity-azure-cognitive-services.badge
   type: badge
   title: Create a speech translator application with Unity and Azure Cognitive Services.
@@ -1407,6 +1417,11 @@ achievements:
   title: Introduction to Speech-to-text
   summary: Speech-to-text enables the real-time transcription of audio streams into text.
   iconUrl: /training/achievements/intro-to-speech-to-text.svg
+- uid: learn.build-dotnet-app-cosmos-db-sql-api.badge
+  type: badge
+  title: Guided project - Build an app that queries and adds data to Azure Cosmos DB SQL API
+  summary: This module walks through connecting to Azure Cosmos DB SQL API to create and query container items from a .NET console application.
+  iconUrl: /training/achievements/build-dotnet-app-cosmos-db-sql-api.svg
 - uid: learn.azure.intro-to-text-to-speech.badge
   type: badge
   title: Introduction to Text-to-speech
@@ -1426,12 +1441,22 @@ achievements:
   type: badge
   title: Trigger an Azure Event Grid workflow from an IoT device
   summary: Learn the basics of integrating Azure IoT Hub with Azure Event Grid to trigger a workflow when a new IoT device is added to a solution.
-  iconUrl: /training/achievements/trigger-azure-event-grid-workflow-iot-device.svg
+  iconUrl: /training/achievements/iot/trigger-azure-event-grid-workflow-iot-device.svg
 - uid: learn.wwl.serve-data-from-azure-synapse-serverless-sql-pool.badge
   type: badge
   title: Serve the data from Azure Synapse serverless SQL pool
   summary: Learn how to serve and make use of the data that is queried or transformed by Azure Synapse serverless SQL pool.
   iconUrl: /training/achievements/serve-the-data-from-azure-synapse-serverless-sql-pool.svg
+- uid: learn.train-package-azure-ml-model.badge
+  type: badge
+  title: Train and package an Azure machine learning module for deployment to IoT Edge device
+  summary: Deploy a trained machine learning module to the edge using a container. The machine learning module you create will be deployed to an IoT Edge device. You'll check that your container image was successfully created and stored in the Azure container registry. You'll view the data from the deployed module from the IoT Edge.
+  iconUrl: /training/achievements/student-evangelism/train-and-package-an-azure-machine-learning-module-for-deployment-to-iot-edge.svg
+- uid: learn.azure.advanced-modeling-patterns-azure-cosmos-db
+  type: badge
+  title: Optimize databases by using advanced modeling patterns for Azure Cosmos DB
+  summary: Identify strategies for managing relationships between data entities, such as customers and sales data. Improve data-model performance and scaling by pre-aggregating and denormalizing your data. Use change feed to maintain the referential integrity of your data.
+  iconUrl: /training/achievements/advanced-modeling-patterns-azure-cosmos-db.svg
 - uid: learn.az-900-describe-cloud-concepts.trophy
   type: trophy
   title: 'Microsoft Azure Fundamentals: Describe core Azure concepts'
@@ -1537,3 +1562,53 @@ achievements:
   
     - Meeting a broad set of regulatory and compliance standards on a trusted cloud platform.
   iconUrl: /training/achievements/azure-sfa-generalist-path.svg
+- uid: learn.wwl.design-for-high-availability.badge
+  type: badge
+  title: Design for high availability
+  summary: Azure Architects design and recommend highly available solutions.
+  iconUrl: /training/achievements/availability-design.svg
+- uid: learn.languages.csharp-data.trophy
+  type: trophy
+  title: Work with data in C#
+  summary: >-
+    Dive deeper into data and types, learning how to manipulate string and numeric data.
+  
+  
+    In this learning path, you'll:
+      - Choose the correct data type for the type of data you need to work with
+      - Cast and convert data from one type to another
+      - Modify string data, formatting it for display or changing the content of the string
+      - Manipulate arrays, adding, removing, and sorting data
+  
+    Once you complete this learning path, you'll take firm control of the data in your code.
+  iconUrl: /training/achievements/csharp-data.svg
+- uid: learn.languages.csharp-first-steps.trophy
+  type: trophy
+  title: Take your first steps with C#
+  summary: >-
+    Interested in learning a programming language but aren't sure where to start?  Start here!  Learn the basic syntax and thought processes required to build simple applications using C#.
+  
+  
+    In this learning path, you'll:
+      - Write your first lines of C# code
+      - Store and manipulate data to modify its type and appearance
+      - Execute built-in functionality available from libraries of code
+      - Add logic to your code to enable complex business functionality
+  
+    Once you complete this learning path, you will have a great foundation to build upon in subsequent C# Learning Paths.
+  iconUrl: /training/achievements/csharp-first-steps.svg
+- uid: learn.languages.csharp-logic.trophy
+  type: trophy
+  title: Add logic to your applications with C#
+  summary: >-
+    Deepen your experience with C# logic and iteration statements, Boolean expressions, and code blocks in this Learning Path.
+  
+  
+    In this learning path, you'll:
+      - Build more complex and expressive Boolean expressions
+      - Use code blocks to control variable scope and the execution path of your code
+      - Branch the flow of code using the `switch-case` statement
+      - Iterate through a code block with the `for`, `while` and `do-while` statements
+  
+    Once you complete this learning path, you'll have a stronger grasp of implementing logic in your C# code.
+  iconUrl: /training/achievements/csharp-logic.svg

@@ -4,13 +4,11 @@ title: Describe Microsoft 365 Defender services
 metadata:
   title: Describe Microsoft 365 Defender services
   description: "Describe Microsoft 365 Defender services"
-  ms.date: 08/17/2022
+  ms.date: 02/09/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
-azureSandbox: false
-labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/2-describe-services.md)]

@@ -3,7 +3,7 @@ uid: learn.health-bot-introduction
 metadata:
   title: Introduction to Azure Health Bot
   description: In this module, you'll learn about Azure Health Bot and its capabilities. You'll then learn how businesses can use the service to build powerful health bots. No prior knowledge is required, so if you're a beginner, this module will get you going. If you know how a health bot works, this module will tie concepts together and fill in the gaps. 
-  ms.date: 07/27/2021
+  ms.date: 03/01/2023
   author: RuchaYagnik
   ms.author: chnoring
   ms.topic: interactive-tutorial
@@ -24,7 +24,7 @@ roles:
   - developer
   - student
 products:
-  - vs
+  - azure
 prerequisites: Introduction to Azure Health Bot
 subjects:
 - business-applications

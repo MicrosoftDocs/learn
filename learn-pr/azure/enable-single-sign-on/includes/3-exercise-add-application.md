@@ -1,12 +1,12 @@
-In this module, the **Azure AD SAML Toolkit** application represents the application that the team in the organization requested to help with company promotion.
+In this module, the **Azure AD SAML Toolkit** application represents the application that the team in the commercial bank requested to help with company promotions.
 
-The administrator reviews the application for single sign-on support and, if appropriate, adds it to the Azure AD tenant from the Azure AD application gallery. It's possible that not all applications that an organization uses are in the gallery. This module focuses on one that is.
+As the administrator, you review the application for single sign-on support and, if appropriate, add it to the Azure AD tenant from the Azure AD application gallery. It's possible that not all applications that an organization uses are in the gallery. This module focuses on one that is.
 
-The administrator then creates a user account in the Azure AD tenant and assigns it to the application to test single sign-on between the identity provider and the service provider.
+You then create a user account in the Azure AD tenant and assign it to the application to test single sign-on between the identity provider and the service provider.
 
-## Access the application gallery
+## Access the Azure AD application gallery
 
-The Azure AD application gallery contains pre-integrated software as a service (SaaS) applications that can be added to a tenant. Applications that the retail company uses are probably already in the gallery. Locate the gallery from the Azure portal.
+The Azure AD application gallery contains pre-integrated software as a service (SaaS) applications that can be added to a tenant. Applications that the commercial bank uses are probably already in the gallery. Locate the gallery from the Azure portal.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/) using one of the roles listed in the prerequisites and select **All services**.
 1. Select **Identity**, and then select **Azure Active Directory**.

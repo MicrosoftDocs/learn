@@ -15,10 +15,10 @@ jobs:
   lint:
     uses: ./.github/workflows/lint.yml
 
-  deploy: 
+  deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - uses: azure/login@v1
         name: Sign in to Azure
         with:
@@ -27,7 +27,7 @@ jobs:
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
       - uses: Azure/cli@v1
         name: Create resource group
-        with: 
+        with:
           inlineScript: |
             az group create \
               --name ${{ env.resourceGroupName }} \

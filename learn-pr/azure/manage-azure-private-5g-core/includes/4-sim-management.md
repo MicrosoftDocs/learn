@@ -75,9 +75,6 @@ For easier management, you can categorize SIMs into SIM groups. Each SIM must be
 
 SIM policies help you to control the network traffic between the UEs that use the SIMs and relevant DNs. SIMs need an assigned SIM policy before they can use your private mobile network.
 
-> [!TIP]
-> To change the SIM policy of a SIM, assign it a new SIM policy.
-
 To assign a SIM policy to one or more SIMs, take these steps:
 
 1. Open the **Mobile Network** resource representing the private mobile network containing the SIMs.
@@ -86,6 +83,11 @@ To assign a SIM policy to one or more SIMs, take these steps:
 1. On the **Assign SIM policy** pane, select the SIM policy you want to assign, and then select **Assign SIM policy**.
 
 For detailed instructions, see [Manage existing SIMs](/azure/private-5g-core/manage-existing-sims).
+
+> [!TIP]
+>
+> - To change the SIM policy of a SIM, assign it a new SIM policy.
+> - To assign a SIM policy to the SIMs in a [SIM group](#manage-sim-groups), select relevant SIMs in the group, and then select **Assign SIM policy**.
 
 ### Assign static IP addresses to SIMs
 
@@ -99,7 +101,8 @@ If you've configured static IP address allocation for your packet core instance(
 To assign static IP addresses to SIMs, take these steps:
 
 1. Open the **Mobile Network** resource representing the private mobile network containing the SIMs.
-1. Select **SIMs** from the resource menu, and then select the SIMs to which you want to assign static IP addresses.
+1. Select **SIMs** from the resource menu.
+1. Select the SIMs to which you want to assign static IP addresses, and then select **Assign Static IPs**.
 
    On the right, the **Assign static IP configurations** box is displayed, as shown in the following screenshot:
 
@@ -111,6 +114,9 @@ To assign static IP addresses to SIMs, take these steps:
    1. Select the **Save static IP configuration** button.
 
 For detailed instructions, see [Manage existing SIMs](/azure/private-5g-core/manage-existing-sims).
+
+> [!TIP]
+> To assign static IP addresses to the SIMs in a [SIM group](#manage-sim-groups), select relevant SIMs in the group, and then select **Assign Static IPs**.
 
 ### Modify SIMs
 

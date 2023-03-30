@@ -5,4 +5,4 @@ The Microsoft Intune Tenant Status page is a centralized hub where you can view 
 
 Tenant details provide at-a-glance information about your tenant. View details like your tenant name and location, your MDM Authority, and your tenants service release number. The service release number is a link that opens the *What's new in Intune* article on Microsoft Learn. In *What's new*, you can read about the latest features and updates to the Intune service. The tenant status also provides the total end user licenses in use and available.
 
-[ ![Screenshot of Intune Tenant details in Microsoft Endpoint Manager.](../media/intro-to-endpoint-manager-26.png) ](../media/intro-to-endpoint-manager-26.png#lightbox)
+[ ![Screenshot of Intune Tenant details in Microsoft Intune.](../media/intro-to-endpoint-manager-26.png) ](../media/intro-to-endpoint-manager-26.png#lightbox)

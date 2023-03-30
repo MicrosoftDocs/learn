@@ -3,7 +3,7 @@ uid: learn.azure.intro-to-azure-stack
 metadata:
   title: Introduction to Azure Stack
   description: This module introduces you to the Azure Stack portfolio and describes basic architecture, core capabilities, and primary use cases of its products. You'll also learn about differences and similarities between Azure Stack HCI, Azure Stack Hub, Azure Stack Edge, and Azure.
-  ms.date: 12/09/2020
+  ms.date: 03/28/2023
   author: sethmanheim
   ms.author: sethm
   ms.topic: interactive-tutorial

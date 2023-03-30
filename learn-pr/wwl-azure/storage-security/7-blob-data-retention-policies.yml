@@ -4,13 +4,12 @@ title: Configure blob data retention policies
 metadata:
   title: Configure blob data retention policies
   description: "Configure blob data retention policies"
-  ms.date: 01/05/2023
+  ms.date: 02/24/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  zone_pivot_groups: None
 durationInMinutes: 7
 content: |
   [!include[](includes/7-blob-data-retention-policies.md)]
