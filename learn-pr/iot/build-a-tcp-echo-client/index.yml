@@ -19,7 +19,7 @@ abstract: |
   - Learn how to use codespace to build and run your project
 prerequisites: |
   - Completion of the ThreadX learning path, a working knowledge of C/C++ and GitHub will be most helpful.
-iconUrl: /learn/training/achievements/netx-duo-build-a-tcp-echo-client.svg
+iconUrl: /training/achievements/netx-duo-build-a-tcp-echo-client.svg
 levels:
   - beginner
 roles:
