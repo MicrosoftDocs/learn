@@ -4,12 +4,12 @@ title: Install Microsoft 365 Apps on a master Virtual Hard Disk image
 metadata:
   title: Install Microsoft 365 Apps on a master Virtual Hard Disk image
   description: "Install Microsoft 365 Apps on a master Virtual Hard Disk image"
-  ms.date: 08/03/2022
+  ms.date: 03/30/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
-azureSandbox: false
-labModal: false
-durationInMinutes: 6
+  ms.prod: learning-azure
+  zone_pivot_groups: azure-interface
 content: |
   [!include[](includes/7-install-office-master-image.md)]
+interactive: bash

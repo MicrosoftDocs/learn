@@ -1,4 +1,5 @@
-This unit tells you how to install Microsoft 365 Apps for enterprise, OneDrive, and other common applications on a master virtual hard disk (VHD) image for upload to Azure. If your users need to access certain line of business (LOB) applications, we recommend you install them after completing the instructions in this article.
+
+This unit tells you how to install Microsoft 365 Apps for enterprise, OneDrive, and other common applications on a master virtual hard disk (VHD) image for upload to Azure. If your users need to access certain line of business (LOB) applications, we recommend you install them after completing the instructions in this unit.
 
 > [!NOTE]
 > This unit assumes you've already created a virtual machine (VM).

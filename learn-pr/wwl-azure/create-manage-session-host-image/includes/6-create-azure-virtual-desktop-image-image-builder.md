@@ -1,3 +1,4 @@
+
 The unit discusses how to automate the customizations by using Azure VM Image Builder. You can then distribute the image to an [Azure Compute Gallery](/azure/virtual-machines/shared-image-galleries) (formerly Shared Image Gallery), where you can replicate it to other regions, control the scale, and share the image within and beyond your organization.
 
 In this unit, you learn how to create an Azure Virtual Desktop image with these customizations:
@@ -5,8 +6,8 @@ In this unit, you learn how to create an Azure Virtual Desktop image with these 
  -  [FSLogix setup](https://github.com/DeanCefola/Azure-WVD/blob/master/PowerShell/FSLogixSetup.ps1)
  -  [Azure Virtual Desktop optimization](https://github.com/The-Virtual-Desktop-Team/Virtual-Desktop-Optimization-Tool)
  -  [Microsoft Teams installation](/azure/virtual-desktop/teams-on-avd)
- -  [Windows Restart customizer](/azure/virtual-machines/linux/image-builder-json?bc=/azure/virtual-machines/windows/breadcrumb/toc.json&amp;toc=/azure/virtual-machines/windows/toc.json#windows-restart-customizer)
- -  [Windows Update customizer](/azure/virtual-machines/linux/image-builder-json?bc=/azure/virtual-machines/windows/breadcrumb/toc.json&amp;toc=/azure/virtual-machines/windows/toc.json#windows-update-customizer)
+ -  [Windows Restart customizer](/azure/virtual-machines/linux/image-builder-json?bc=/azure/virtual-machines/windows/breadcrumb/toc.json&toc=/azure/virtual-machines/windows/toc.json#windows-restart-customizer)
+ -  [Windows Update customizer](/azure/virtual-machines/linux/image-builder-json?bc=/azure/virtual-machines/windows/breadcrumb/toc.json&toc=/azure/virtual-machines/windows/toc.json#windows-update-customizer)
 
 To simplify deploying a VM Image Builder configuration, our example uses an Azure Resource Manager template with the VM Image Builder template nested within it. This approach gives you a few more benefits, such as variables and parameter inputs.
 
