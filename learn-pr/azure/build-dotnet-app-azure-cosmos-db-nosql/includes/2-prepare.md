@@ -22,7 +22,7 @@ The key tasks you need to do are:
 01. Execute and observe the results of a query.
 
 > [!IMPORTANT]
-> All steps in this project are designed to be completed within the Azure Cloud Shell terminal.
+> All steps in this project are designed to be completed within Visual Studio Code either locally or through GitHub Codespaces.
 
 ## Setup
 
@@ -30,7 +30,7 @@ To complete this project, you need an API for NoSQL account.
 
 ### Create Azure Cosmos DB for NoSQL account
 
-The API for NoSQL account is used to store the data you create in this project and to execute queries. All your work in this project is done directly in the Azure Cloud Shell terminal. This section guides you through the steps to creating a new account using the Azure CLI directly in the terminal.
+The API for NoSQL account is used to store the data you create in this project and to execute queries. This section guides you through the steps to creating a new account using the Azure CLI directly in the Azure Cloud Shell terminal.
 
 01. Create a new shell variable named **suffix** with a random number and then output the number to the console.
 
@@ -98,14 +98,30 @@ Now that you have an API for NoSQL account, you can use the `az cosmosdb keys li
 
 ### Configure dev environment
 
-TODO
+All your development work in this project is done directly in [Visual Studio Code](https://code.visualstudio.com). You have the option of using Visual Studio Code locally or with GitHub Codespaces.
 
 #### [GitHub Codespaces](#tab/github-codespaces)
 
-TODO
+GitHub Codespaces runs your development environment in a container hosted by GitHub. For the most straightforward development environment, use GitHub Codespaces so that you have the correct developer tools and dependencies preinstalled on your machine to complete this training module.
+
+1. Create a new GitHub Codespace on the `main` branch of the [`azure-samples/dotnet-env-azure-cosmos-db`](https://github.com/azure-samples/dotnet-env-azure-cosmos-db) GitHub repository.
+
+    > [!div class="nextstepaction"]
+    > [Open this project in GitHub Codespaces](https://github.com/azure-samples/dotnet-env-azure-cosmos-db/codespaces)
+
+1. Wait for the codespace to start. This startup process can take a few minutes.
+
+1. Open a new terminal in the codespace.
+
+    > [!TIP]
+    > You can use the main menu to navigate to the **Terminal** menu option and then select the **New Terminal** option.
+    >
+    > :::image type="content" source="media/open-terminal-option.png" lightbox="media/open-terminal-option.png" alt-text="Screenshot of the codespaces menu option to open a new terminal.":::
 
 #### [Visual Studio Code](#tab/visual-studio-code)
 
-TODO
+Optionally, you can walk through this training module using Visual Studio Code installed on your local machine. To run this project locally, you must have the following software installed:
+
+- [.NET 7 or later](https://dotnet.microsoft.com/download)
 
 ---
