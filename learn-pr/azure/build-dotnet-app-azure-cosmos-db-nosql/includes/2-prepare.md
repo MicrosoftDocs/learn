@@ -107,7 +107,7 @@ GitHub Codespaces runs your development environment in a container hosted by Git
 1. Create a new GitHub Codespace on the `main` branch of the [`azure-samples/dotnet-env-azure-cosmos-db`](https://github.com/azure-samples/dotnet-env-azure-cosmos-db) GitHub repository.
 
     > [!div class="nextstepaction"]
-    > [Open this project in GitHub Codespaces](https://github.com/azure-samples/dotnet-env-azure-cosmos-db/codespaces)
+    > [Open this project in GitHub Codespaces](https://github.com/azure-samples/dotnet-env-azure-cosmos-db/codespaces?azure-portal=true)
 
 1. Wait for the codespace to start. This startup process can take a few minutes.
 
