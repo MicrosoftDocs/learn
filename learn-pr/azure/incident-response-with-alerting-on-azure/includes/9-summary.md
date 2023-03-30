@@ -6,7 +6,7 @@ You also learned how log alert rules specify log queries to run at regular time 
 
 You learned how activity log alerts enable notifications when a named Azure resource meets the specified conditions.
 
-Lastly, you learned how to use alert processing rules to override the behavior of an action group when necessary.
+Lastly, you learned how to apply an action group to an alert to send notifications when an alert is fired, and how to use alert processing rules to override the behavior of an action group when necessary.
 
 <!-- Cleanup sandbox -->
 [!include[](../../../includes/azure-sandbox-cleanup.md)]

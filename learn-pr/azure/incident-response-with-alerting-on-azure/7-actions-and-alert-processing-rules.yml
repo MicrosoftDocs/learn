@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.incident-response-with-alerting-on-azure.7-actions-and-alert-processing-rules
 metadata:
-  title: Use alert processing rules to override the behavior of an action group.
-  description: Learn about how to use alert processing rules to change the behavior of an action group in an alert rule.
+  title: Send notifications when an alert is fired using action groups.
+  description: Learn about how to send notifications when an alert is fired using action groups, and how to override the actions with alert processing rules.
   ms.date: 10/10/2019
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Use alert processing rules to override the behavior of an action group.
+title: Send notifications when an alert is fired using action groups.
 durationInMinutes: 10
 content: |
   [!include[](includes/7-actions-and-alert-processing-rules.md)]

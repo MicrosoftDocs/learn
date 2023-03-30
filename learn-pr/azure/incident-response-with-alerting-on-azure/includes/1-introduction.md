@@ -11,6 +11,8 @@ In this module, you'll:
 - Explore alerts by using Azure Monitor.
 - Understand when to use metric, log, and activity log events.
 - Create and use metric, log, and activity log alerts.
+- Use action groups to determine what kind of notifications are sent and to whom.
+- Learn how to use alert processing rules to override the normal behavior of action groups when needed.
 
 ## Prerequisites
 
