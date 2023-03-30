@@ -3,7 +3,7 @@ uid: learn.iot.build-a-tcp-echo-client
 metadata:
   title: Building and running a TCP echo client
   description: Building and running a TCP echo client
-  ms.date: 03/08/2023
+  ms.date: 03/30/2023
   author: edlamie80
   ms.author: liydu
   manager: lizross
@@ -19,7 +19,7 @@ abstract: |
   - Learn how to use codespace to build and run your project
 prerequisites: |
   - Completion of the ThreadX learning path, a working knowledge of C/C++ and GitHub will be most helpful.
-iconUrl: /training/achievements/iot/netx-duo-build-a-tcp-echo-client.svg
+iconUrl: /learn/training/achievements/netx-duo-build-a-tcp-echo-client.svg
 levels:
   - beginner
 roles:
