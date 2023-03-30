@@ -10,8 +10,8 @@
 
     [Introduction unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-module-introduction-format)
 -->
-## Solutions for faster performance with no code changes using the next generation of Intelligent Query Processing (IQP)
----
+## Introduction
+
 
 Intelligent Query Processing is a family of capabilities built into the query processor in the database engine designed to accelerate performance with no code changes. The next generation of Intelligent Query Processing is built on a foundation of capabilities found in SQL Server 2017 and 2019 as seen in the following figure:
 
@@ -63,8 +63,9 @@ While the Query Store collected key performance information for queries, the que
     [Scenario video guidance](TBD)
  -->
 ## Example scenario
-TODO: add your scenario
-TODO: add a visual element
+Imagine that you are a database administrator at the World Wide Importers Corporation. You are overseeing the adoption of SQL Server 2022.  Some databases that you manage will need to maintain their legacy compatibility mode of 140, some can be upgraded to the current compatibility mode of 160.  In each scenario you need to make sure you are utilizing the best practices in applying the latest functionality available to optimize the performance of your systems.
+
+To do this you will be utilizing the Intelligent Query Processing advanced in SQL Server 2022. Your goal is to implement these low-code to no-code changes.
 
 <!-- 3. Prose table-of-contents --------------------------------------------------------------------------
 
@@ -79,7 +80,10 @@ TODO: add a visual element
 
  -->
 ## What will we be doing?
-TODO: add your activities
+We will review key functionality behind Intelligent Query Processing:
+- Understand Automatic performance healing with memory Grant Feedback Persistence
+- Know how to get consistent performance with Parameter Sensitive Plan optimization
+- Gain parallel efficiency with DOP Feedback
 
 <!-- 4. Terminal learning objective ----------------------------------------------------------------------
 
@@ -91,6 +95,6 @@ TODO: add your activities
 
  -->
 ## What is the main goal?
-By the end of this session, you'll be able to (TODO)
+By the end of this session, you'll be able to understand how and when to implement Intelligent Query Processing features.
 
 <!-- Do **not** include any other content like learning objectives, prerequisites, unit summary, "next unit" lead-in, or references. -->
