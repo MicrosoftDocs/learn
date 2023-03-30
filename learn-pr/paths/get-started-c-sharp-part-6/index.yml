@@ -1,5 +1,5 @@
 ### YamlMime:LearningPath
-uid: learn.wwl.debug-c-sharp-console-applications
+uid: learn.wwl.get-started-c-sharp-part-6
 metadata:
   title: Debug C# console applications (Get started with C#, Part 6)
   description: Debug C# console applications (Get started with C#, Part 6)
@@ -33,4 +33,4 @@ modules:
 - learn.wwl.guided-project-debug-handle-exceptions-c-sharp-console-application
 - learn.wwl.challenge-project-debug-c-sharp-console-application
 trophy:
-  uid: learn.wwl.debug-c-sharp-console-applications.trophy
+  uid: learn.wwl.get-started-c-sharp-part-6.trophy
