@@ -1,4 +1,3 @@
-
 In this module, you learned how to:
 
  -  Create a managed VM image for an Azure Virtual Desktop-specific configuration.

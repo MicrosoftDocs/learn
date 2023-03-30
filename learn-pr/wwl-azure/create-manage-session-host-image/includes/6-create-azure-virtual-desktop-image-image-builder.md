@@ -1,4 +1,3 @@
-
 The unit discusses how to automate the customizations by using Azure VM Image Builder. You can then distribute the image to an [Azure Compute Gallery](/azure/virtual-machines/shared-image-galleries) (formerly Shared Image Gallery), where you can replicate it to other regions, control the scale, and share the image within and beyond your organization.
 
 In this unit, you learn how to create an Azure Virtual Desktop image with these customizations:

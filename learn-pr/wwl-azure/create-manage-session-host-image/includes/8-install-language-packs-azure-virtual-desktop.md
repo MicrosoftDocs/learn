@@ -1,4 +1,3 @@
-
 You want your users be able to customize which language their Windows 10 Enterprise multi-session image displays.
 
 There are two ways you can accommodate the language needs of your users:

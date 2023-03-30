@@ -1,4 +1,3 @@
-
 This unit covers how to prepare and modify basic configuration options for apps and your image's registry.
 
 ### Disable Automatic Updates
