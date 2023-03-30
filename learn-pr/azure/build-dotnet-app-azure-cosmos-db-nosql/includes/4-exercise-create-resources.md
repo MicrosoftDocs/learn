@@ -91,19 +91,7 @@ Here, you create a container with a specific "slice" of the shared throughput fr
 
 C# data can be represented using various types including classes, structs, and records. For this SDK, records are useful because they're immutable by default. You still can add code to create a modified copy of a record if you need to. Records also have an easy to read syntax and are quick to create with only a few lines of code. In this section, you create a base type for all items and individual types for each "kind" of item.
 
-01. Using the terminal, create a new file named *Item.cs*.
-
-    ```bash
-    touch Item.cs
-    ```
-
-01. Refresh the code editor by invoking the `code` command again.
-
-    ```bash
-    code .
-    ```
-
-01. Open the *Item.cs* file.
+01. Using the terminal, create and open a new file named *Item.cs*.
 
 01. Create a base type named `Item` that carries the three properties you want to use in all items for this container: `id`, `categoryId`, and `type`.
 
@@ -117,13 +105,7 @@ C# data can be represented using various types including classes, structs, and r
 
 01. **Save** the *Item.cs* file.
 
-01. Create a new file named *Category.cs* and refresh the code editor.
-
-    ```bash
-    touch Category.cs && code .
-    ```
-
-01. Open the *Category.cs* file.
+01. Using the terminal, create and open a new file named *Category.cs*.
 
 01. Create a new type named **Category** that inherits from the **Item** type. Ensure the type passes its values to the base implementation, and set the **type** variable to output the name of the **Category** type.
 
@@ -140,13 +122,7 @@ C# data can be represented using various types including classes, structs, and r
 
 01. **Save** the *Category.cs* file.
 
-01. Create a new file named *Product.cs* and refresh the code editor.
-
-    ```bash
-    touch Product.cs && code .
-    ```
-
-01. Open the *Product.cs* file.
+01. Using the terminal, create and open a new file named *Product.cs*.
 
 01. Create a new type named **Product** that inherits from **Item** and adds a few new properties: `name`, `price`, `archived`, and `quantity`.
 
