@@ -222,6 +222,10 @@ Your app now reads and queries items from the container. Here, you run the appli
 
     await CreateItemBatchAsync();
     
+    await PointReadAsync();
+
+    await QueryAsync();
+    
     static CosmosClient GetClient()
     {
         // Implementation removed for brevity
