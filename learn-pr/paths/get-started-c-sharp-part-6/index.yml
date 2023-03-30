@@ -1,0 +1,36 @@
+### YamlMime:LearningPath
+uid: learn.wwl.get-started-c-sharp-part-6
+metadata:
+  title: Debug C# console applications (Get started with C#, Part 6)
+  description: Debug C# console applications (Get started with C#, Part 6)
+  ms.date: 03/22/2023
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Debug C# console applications (Get started with C#, Part 6)
+prerequisites: |
+  - An installation of Visual Studio Code that's configured for C# application development.
+  - Ability to develop C# console applications that implement business logic using iteration statements, selection statements, and custom methods.
+summary: |
+  Learn how to debug C# console applications in Visual Studio Code and how to implement exception handling using the try-catch pattern. Configure the C# debugger tools in Visual Studio Code and use the debugger tools to isolate and fix logic issues. Examine the exception types provided by .NET and the properties of exception objects, then implement exception handling and throw customized exception objects.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- dotnet
+- dotnet-framework
+- vs-code
+subjects:
+- development-tools
+modules:
+- learn.wwl.review-principles-code-debugging-exception-handling-c-sharp
+- learn.wwl.implement-visual-studio-code-debugging-tools
+- learn.wwl.implement-exception-handling-c-sharp
+- learn.wwl.create-throw-exceptions-c-sharp
+- learn.wwl.guided-project-debug-handle-exceptions-c-sharp-console-application
+- learn.wwl.challenge-project-debug-c-sharp-console-application
+trophy:
+  uid: learn.wwl.get-started-c-sharp-part-6.trophy
