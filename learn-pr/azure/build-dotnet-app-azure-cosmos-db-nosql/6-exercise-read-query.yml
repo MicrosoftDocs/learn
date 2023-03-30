@@ -7,7 +7,6 @@ metadata:
   description: |
     Use the Microsoft.Azure.Cosmos .NET SDK library from NuGet to point read items and perform straightforward queries.
   sandbox: true
-  interactive: bash-editor
   author: seesharprun
   ms.author: sidandrews
   ms.topic: interactive-tutorial
