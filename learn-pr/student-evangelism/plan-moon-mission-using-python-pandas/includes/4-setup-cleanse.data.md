@@ -1,4 +1,4 @@
-Before you continue, it's important to establish what information you want to use to make a recommendation to the astronauts. In this case, you can use publicly available information about the types of spacecraft used in previous Moon missions and the weight of rock samples were returned by each mission.
+Before you continue, it's important to establish what information you want to use to make a recommendation to the astronauts. In this case, you can use publicly available information about the types of spacecraft used in previous Moon missions and the weight of rock samples returned by each mission.
 
 ## Convert the sample weight
 
