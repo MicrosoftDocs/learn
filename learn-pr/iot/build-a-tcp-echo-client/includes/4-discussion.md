@@ -8,4 +8,3 @@ Congratulations on making it this far! Now we need to reflect on what we have do
 - After a packet is sent by nx_tcp_socket_send, the ownership of this packet is transferred to NetX Duo. The user application must not reference this packet again.
 - A packet can be received from nx_tcp_socket_receive. The ownership is transferred to the user application and it's responsible to release it at the end. The wait option can be specified in nx_tcp_socket_receive.
 - All the wait options are measured by timer ticks in Azure RTOS rather than milliseconds or seconds.
-- 

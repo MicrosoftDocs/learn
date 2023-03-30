@@ -71,6 +71,7 @@ We’ll use a variety of TCP services in this project. Here is a summary of thes
 
 > [!NOTE]
 > The services with the nx prefix are designed for IPv4 operations. The services with the `nxd` prefix are designed for IPv4 and IPv6 dual stack operation.
+
 | **TCP Service**               | **Description**                                 |
 | ----------------------------- | ----------------------------------------------- |
 | nx_tcp_client_socket_bind     | Bind client TCP socket to TCP port              |
@@ -117,6 +118,7 @@ A TCP port is a logical connection point in the TCP protocol. There are 65,535 v
 
 > [!NOTE]
 > TCP ports are separate from UDP ports; for example, UDP port number 1 has no relation to TCP port number 1.
+
 ## TCP client disconnection
 
 Closing the connection is accomplished by calling `nx_tcp_socket_disconnect`. If no suspension is specified, the client socket sends a RST packet to the server socket and places the socket in the CLOSED state. Otherwise, if a suspension is requested, the full TCP disconnect protocol is performed, as follows:
