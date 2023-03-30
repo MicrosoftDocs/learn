@@ -42,7 +42,7 @@ The Node CPU alert will be difficult to simulate for a test application, so enab
 
 1. Locate the alert with the **Rule Name** *Restarting container count*. Select the slider in the **Status** column to change its status to *Enabled*.
 
-   :::image type="content" source="../media/7-restarting-container-alert.png" lightbox="../media/7-restarting container-alert.png" alt-text="Screenshot enable restarting container count alert rule.":::
+   :::image type="content" source="../media/7-restarting-container-alert.png" lightbox="../media/7-restarting-container-alert.png" alt-text="Screenshot enable restarting container count alert rule.":::
 
 1. Select the message **No action group assigned** to create an action group and assign it to the rule that you just enabled.
 1. Select the action group that you created and select **Apply to rule**.

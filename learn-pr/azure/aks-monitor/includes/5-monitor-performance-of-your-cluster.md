@@ -2,7 +2,7 @@ In this exercise, you’ll walk through different features of Container insights
 
 1. Select **Containers** and then **Monitored clusters.** Your cluster appears in the list with the health status of the cluster, its nodes and pods.  
 
-    :::image type="content" source="../media/4-monitored-clusters.png" lightbox="../media/monitored-clusters.png" alt-text="Screenshot showing monitored clusters tab in Container insights.":::
+    :::image type="content" source="../media/4-monitored-clusters.png" lightbox="../media/4-monitored-clusters.png" alt-text="Screenshot showing monitored clusters tab in Container insights.":::
 
 1. Select your cluster to view its performance in more detail. Start with the **Cluster** page, which shows you performance graphs for the cluster itself. This page has a high-level view with key cluster resources such as CPU and Memory utilization to help you gauge whether you are using too much or too little, and need to scale up or down.
 1. Change the **Time range** at the top of the screen to change the time window for the displayed data. You may want to view data older than the default or target the graph to a smaller time window.
