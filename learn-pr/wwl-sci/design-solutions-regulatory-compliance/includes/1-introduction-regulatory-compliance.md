@@ -25,7 +25,7 @@ As with security controls, organizations should understand the division of respo
 
 ## Regulatory compliance as part of Governance
 <!--
-https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/govern/methodology
+https://learn.microsoft.com/azure/cloud-adoption-framework/govern/methodology
 -->
 ![Diagram showing the Cloud Adoption Framework governance model.](../media/operational-transformation-govern-large.png)
 

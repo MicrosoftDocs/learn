@@ -29,11 +29,11 @@ The newly defined capabilities that you configure with your cloud service provid
 
 ### Review existing policies
 
-As governance is an ongoing process, regularly review your policy with IT staff and stakeholders. You want to ensure that your resources hosted in the cloud maintain compliance with overall corporate goals and requirements. Your understanding of new risks and acceptable tolerance can fuel your [review of existing policies](./cloud-policy-review.md). Reviewing your existing policies helps determine the level of governance that's right for your organization.
+As governance is an ongoing process, regularly review your policy with IT staff and stakeholders. You want to ensure that your resources hosted in the cloud maintain compliance with overall corporate goals and requirements. Your understanding of new risks and acceptable tolerance can fuel your review of existing policies. Reviewing your existing policies helps determine the level of governance that's right for your organization.
 
 ### Create cloud policy statements
 
-Cloud-based IT policies establish the requirements, standards, and goals that your IT staff and automated systems need to support. Policy decisions are a primary factor in your [cloud architecture design](./governance-alignment.md) and how you'll implement your [policy adherence processes](./processes.md).
+Cloud-based IT policies establish the requirements, standards, and goals that your IT staff and automated systems need to support. Policy decisions are a primary factor in your cloud architecture design and how you'll implement your policy adherence processes.
 
 Individual cloud policy statements are guidelines for addressing the specific risks you identify during your risk assessment process. While you can integrate these policies into your wider corporate policy documentation, cloud policy statements explored in the Cloud Adoption Framework guidance tend to be a more concise summary of the risks, and plans to deal with them. Include these pieces of information in each definition:
 
@@ -45,7 +45,7 @@ If you need help with defining your policies, consult the governance disciplines
 
 ### Incremental governance and integrating with existing policy
 
-Vet the planned additions to your cloud environment for compliance with existing policy. Update your policy to account for issues not already covered. You should also perform a regular [cloud policy review](./cloud-policy-review.md) to ensure your cloud policy is up-to-date and in sync with any new corporate policy.
+Vet the planned additions to your cloud environment for compliance with existing policy. Update your policy to account for issues not already covered. You should also perform a regular cloud policy review to ensure your cloud policy is up-to-date and in sync with any new corporate policy.
 
 The need to integrate cloud policy with your legacy IT policies depends largely on the maturity of your cloud governance processes and the size of your cloud estate.
 
@@ -65,7 +65,7 @@ While cloud design guides should take into account some of the technical details
 ## Implementing resource governance MVP
 
 <!--
-https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/govern/guides/standard/
+https://learn.microsoft.com/azure/cloud-adoption-framework/govern/guides/standard/
 -->
 
 A set of global policies and RBAC roles will provide a baseline level of governance enforcement. To meet the cloud governance team's policy requirements, implementing the governance MVP requires completing the following tasks:
@@ -74,7 +74,7 @@ A set of global policies and RBAC roles will provide a baseline level of governa
 2.  Create a blueprint definition using these built-in and custom policy and the role assignments required by the governance MVP.
 3.  Apply policies and configuration globally by assigning the blueprint definition to all subscriptions.
 <!--
-[](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/govern/guides/standard/#identify-policy-definitions)
+[](https://learn.microsoft.com/azure/cloud-adoption-framework/govern/guides/standard/#identify-policy-definitions)
 -->
 
 #### Identify policy definitions
@@ -90,7 +90,7 @@ Since the policies required to support the governance MVP are meant to apply to 
 3.  Require that the `Application` tag for resources should match the name of the relevant resource group. This can be handled using the `Require tag and its value` built-in definition.
 
 <!--
-[](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/govern/guides/standard/#assign-azure-policy-and-rbac-roles-using-azure-blueprints)
+[](https://learn.microsoft.com/azure/cloud-adoption-framework/govern/guides/standard/#assign-azure-policy-and-rbac-roles-using-azure-blueprints)
 -->
 
 #### Assign Azure Policy and RBAC roles using Azure Blueprints
@@ -109,4 +109,4 @@ The cloud governance team has decided that enforcement of required Azure Policy 
 3.  Publish the blueprint definition.
 4.  Assign the `governance-baseline` blueprint definition to all subscriptions.
 
-See the [Azure Blueprints documentation](https://learn.microsoft.com/en-us/azure/governance/blueprints/overview) for more information on creating and using blueprint definitions.
+See the [Azure Blueprints documentation](https://learn.microsoft.com/azure/governance/blueprints/overview) for more information on creating and using blueprint definitions.
