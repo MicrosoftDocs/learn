@@ -12,33 +12,6 @@ Right now, you have two key requirements:
 
 After you complete this exercise, your project will have the logic to create items in your container either individually, or as a batch.
 
-## Reinitialize your environment (optional)
-
-It's possible, if you closed your Azure Cloud Shell terminal pane, for the terminal instance to no longer have access to the environment variable and code editor. Here, if needed, you set your environment variable again and open the code editor.
-
-> [!NOTE]
-> You can safely skip this section if your terminal is already open, your environment variable is still set, and you are already editing your project in the code editor.
-
-01. Set the environment variable named `COSMOS_CONNECTION_STRING` to the value of this command, which gets a connection string to the first Azure Cosmos DB for NoSQL account in your sandbox subscription.
-
-    ```azurecli
-    export COSMOS_CONNECTION_STRING=$(az cosmosdb keys list \
-        --name $(az cosmosdb list \
-            --resource-group <rgn>[sandbox resource group name]</rgn> \
-            --query [0].name \
-            --output tsv) \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
-        --type connection-strings \
-        --query "connectionStrings[?description=='Primary SQL Connection String'].connectionString" \
-        --output tsv)
-    ```
-
-01. Change to the *clouddrive/inventory* directory and open a code editor.
-
-    ```bash
-    cd ~/clouddrive/inventory && code .
-    ```
-
 ## Add an individual item to a container
 
 In Azure Cosmos DB, you can create, replace, or upsert items to a container. Creating an item requires that the item has a unique identifier. Replacing an item requires that the item already exists. Upsert is the best of both worlds where it checks the unique identifier, and then replace or create the item. For this project, you want to be able to run the app multiple times without errors making *upsert* a clear choice. For our first item, we create a category that doesn't have any associated products. Here, you implement a single upsert operation with a manually created category.
