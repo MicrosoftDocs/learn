@@ -2,7 +2,7 @@
 
 20 minutes
 
-In this module, you’ll learn about building and running a TCP echo client. You’ll learn about the transmission control protocol (TCP), ports, sockets, and packet transmission. You’ll also use codespace to build and run your project.
+In this module, you learn about building and running a TCP echo client. You learn about the transmission control protocol (TCP), ports, sockets, and packet transmission. You also use codespace to build and run your project.
 
 ## Prerequisites
 
@@ -18,7 +18,7 @@ This module is similar to the UDP echo server project module that you completed.
 1. Building and running a TCP echo client
 1. Building and running a TCP echo server
 
-Before starting with this module, we’ll need to study the following concepts:
+Before starting with this module, we need to study the following concepts:
 
 - Transmission control protocol (TCP)
 - TCP ports and sockets
@@ -61,13 +61,13 @@ The client side of the TCP connection initiates a connection request to a TCP se
 
 After the client socket is bound, the `nxd_tcp_client_socket_connect` service is used to establish a connection with a TCP server. The socket must be in a CLOSED state to initiate a connection attempt. Establishing the connection starts with NetX issuing a SYN packet and then waiting for a SYN ACK packet back from the server, which signifies acceptance of the connection request. After the SYN ACK is received, NetX responds with an ACK packet and promotes the client socket to the ESTABLISHED state.
 
-The following diagram is an illustration of how this connection is established. Note that we begin in the CLOSED state and end in the ESTABLISHED state. This is an example of a 3-way handshake process to establish a TCP connection.
+The following diagram is an illustration of how this connection is established. We begin in the CLOSED state and end in the ESTABLISHED state. This diagram is an example of a 3-way handshake process to establish a TCP connection.
 
 ![Diagram showing the TCP connection process.](../media/2-establish-connection.svg)
 
 ## TCP services used
 
-We’ll use a variety of TCP services in this project. Here is a summary of these services and brief definitions.
+We use various TCP services in this project. Here's a summary of these services and brief definitions.
 
 > [!NOTE]
 > The services with the nx prefix are designed for IPv4 operations. The services with the `nxd` prefix are designed for IPv4 and IPv6 dual stack operation.
@@ -102,7 +102,7 @@ Following is the usual order in which the TCP services appear for both client an
 
 ## TCP header
 
-On transmission, the TCP header is placed in front of the data from the user. On reception, the TCP header is removed from the incoming packet, leaving only the user data available to the application. TCP utilizes the IP protocol to send and receive packets, which means there is an IP header in front of the TCP header when the packet is on the network.
+On transmission, the TCP header is placed in front of the data from the user. On reception, the TCP header is removed from the incoming packet, leaving only the user data available to the application. TCP utilizes the IP protocol to send and receive packets, which means there's an IP header in front of the TCP header when the packet is on the network.
 
 ## TCP enable
 
@@ -123,8 +123,9 @@ A TCP port is a logical connection point in the TCP protocol. There are 65,535 v
 
 Closing the connection is accomplished by calling `nx_tcp_socket_disconnect`. If no suspension is specified, the client socket sends a RST packet to the server socket and places the socket in the CLOSED state. Otherwise, if a suspension is requested, the full TCP disconnect protocol is performed, as follows:
 
-- If the server previously initiated a disconnect request (the client socket has already received a FIN packet, responded with an ACK, and is in the CLOSE WAIT state), NetX promotes the client TCP socket state to the LAST ACK state and sends a FIN packet. It then waits for an ACK from the server before completing the disconnect and entering the CLOSED state.
-- If the client is the first to initiate a disconnect request (the server has not disconnected and the socket is still in the ESTABLISHED state), NetX sends a FIN packet to initiate the disconnect and waits to receive a FIN and an ACK from the server before completing the disconnect and placing the socket in a CLOSED state.
+- If the server previously initiated a disconnect request (the client socket has already received a FIN packet, responded with an ACK, and is in the CLOSE WAIT state), NetX promotes the client TCP socket state to the LAST ACK state and sends a FIN packet.
+- It then waits for an ACK from the server before completing the disconnect and entering the CLOSED state.
+- If the client is the first to initiate a disconnect request (the server hasn't disconnected and the socket is still in the ESTABLISHED state), NetX sends a FIN packet to initiate the disconnect and waits to receive a FIN and an ACK from the server before completing the disconnect and placing the socket in a CLOSED state.
 - If there are still packets on the socket transmit queue, NetX suspends for the specified timeout to allow the packets to be acknowledged. If the timeout expires, NetX empties the transmit queue of the client socket.
 
 To unbind the port from the client socket, the application calls `nx_tcp_client_socket_unbind`. The socket must be in a CLOSED state or in the process of disconnecting (namely, TIMED WAIT state) before the port is released; otherwise, an error is returned.

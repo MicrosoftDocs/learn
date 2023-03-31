@@ -14,7 +14,7 @@ durationInMinutes: 8
 content: |
 quiz:
   questions:
-    - content: 'Which of the following is the most correct statement??'
+    - content: 'Which of the following statements is the most correct?'
       choices:
         - content: 'TCP is more complex than UDP.'
           isCorrect: false
@@ -34,7 +34,7 @@ quiz:
         - content: 'The CLOSED state'
           isCorrect: false
           explanation: 'Incorrect, most data transfer occurs in the ESTABLISHED state.'
-        - content: 'TThe SYN SENT state'
+        - content: 'The SYN SENT state'
           isCorrect: false
           explanation: 'Incorrect, most data transfer occurs in the ESTABLISHED state.'
         - content: 'The ESTABLISHED state'
@@ -48,16 +48,16 @@ quiz:
       choices:
         - content: '`nx_tcp_enable`'
           isCorrect: true
-          explanation: 'Correct, `nx_tcp_enable` must be called first before before using TCP services.'
+          explanation: 'Correct, `nx_tcp_enable` must be called first before using TCP services.'
         - content: '`nx_tcp_server_socket_accept`'
           isCorrect: false
-          explanation: 'Incorrect, `nx_tcp_enable` must be called first before before using TCP services.'
+          explanation: 'Incorrect, `nx_tcp_enable` must be called first before using TCP services.'
         - content: '`nx_tcp_client_socket_bind`'
           isCorrect: false
-          explanation: 'Incorrect, `nx_tcp_enable` must be called first before before using TCP services.'
+          explanation: 'Incorrect, `nx_tcp_enable` must be called first before using TCP services.'
         - content: '`nx_tcp_info_get`'
           isCorrect: false
-          explanation: 'Incorrect, `nx_tcp_enable` must be called first before before using TCP services.'
+          explanation: 'Incorrect, `nx_tcp_enable` must be called first before using TCP services.'
 
     - content: 'Which of the following statements is correct?'
       choices:
