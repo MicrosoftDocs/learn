@@ -111,8 +111,13 @@ This step configures the FRR NVA to have Azure Route Server as its BGP neighbor.
 The steps below will establish a BGP peer relationship between the FRR NVA and Azure Route Server.
 
 1. Run following commands on Azure CLI prompt:
-   1. `az network routeserver peering create  --name <nva-vm-name>  --peer-ip <private-ip-of-nva-vm-name>  --peer-asn <asn-value-other-than-65515-65520>  --routeserver <routeserver-name>  --resource-group <resource-group-name>`
-   1. `az network routeserver update --name <routeserver-name>  --resource-group <resource-group-name>   --allow-b2b-traffic true`
+   ```azurecli
+   
+    `az network routeserver peering create  --name <nva-vm-name>  --peer-ip <private-ip-of-nva-vm-name>  --peer-asn <asn-value-other-than-65515-65520>  --routeserver <routeserver-name>  --resource-group <resource-group-name>`
+   
+    `az network routeserver update --name <routeserver-name>  --resource-group <resource-group-name>   --allow-b2b-traffic true`
+   ```
+
 1. Log into FRR shell.
 1. Run `show ip bgp` to confirm that the NVA has now learned routes from Azure Route Server.
 

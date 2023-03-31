@@ -12,4 +12,4 @@ Contoso has very prescriptive requirements on how workloads should be connected 
 
 ### Disable outbound internet connectivity
 
-To implement customized internet outbound connectivity, Contoso first needs to prevent Azure VMware Solution private cloud from having any outbound internet connectivity. Directions to disable internet connectivity are outlined below.
+To implement customized internet outbound connectivity, Contoso first needs to prevent Azure VMware Solution private cloud from having any outbound internet connectivity. Directions to disable internet connectivity are outlined in next unit.

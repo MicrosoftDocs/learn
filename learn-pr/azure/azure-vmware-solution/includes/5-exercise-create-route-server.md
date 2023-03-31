@@ -19,11 +19,11 @@ az network public-ip create  -n <name-for-route-server-pip>  -g <resource-group-
 $ars_subnet_id=$(az network vnet subnet show  --name RouteServerSubnet  --resource-group <resource-group-name> --vnet-name <vnet-name>  --query id -o tsv)
 ```
 
+Now that you have AVS private cloud configured, you need to set up a route exchange mechanism. To do this, you'll start by deploying Azure Route Server.
+
 ## Deploy Azure Route Server
 
 Azure Route Server uses BGP to exchange routes between a custom or third party NVA router and ExpressRoute Gateway. ExpressRoute Gateway is the one, which is used to terminate Azure VMware Solution private cloud. Use the instructions below to create Azure Route Server.
-
-Now that you have AVS private cloud configured, you need to set up a route exchange mechanism. To do this, you'll start by deploying Azure Route Server:
 
 ```azurecli
 az network routeserver create --name <routeserver-name>  --resource-group <resource-group-name>  --hosted-subnet $ars_subnet_id  --public-ip-address <name-for-route-server-pip> 
@@ -36,4 +36,4 @@ The last step is to set up your route exchange mechanism is to enable branch-to-
 az network routeserver update --name <routeserver-name>  --resource-group <resource-group-name>   --allow-b2b-traffic true
 ```
 
-You've now completed two important tasks. First, you'll need to configure Azure VMware Solution private cloud correctly for outbound internet connectivity. Second, you'll set up a route exchange mechanism between ARS and Azure VMware Solution private cloud. You'll look at introducing security into the design in next unit.
+You've now completed two important tasks. First, you've configured Azure VMware Solution private cloud correctly for outbound internet connectivity. Second, you've set up a route exchange mechanism between ARS and Azure VMware Solution private cloud. You'll look at introducing security into the design in next unit.

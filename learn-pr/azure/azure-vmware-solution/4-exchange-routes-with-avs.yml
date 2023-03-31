@@ -7,8 +7,8 @@ metadata:
   ms.date: 03/23/2023
   author: Mahesh-MSFT
   ms.author: maksh 
-  ms.topic: azure-vmware-solution
-  ms.prod: learning-azure
+  ms.topic: interactive-tutorial
+  ms.prod: azure-vmware-solution
 durationInMinutes: 2
 content: |
   [!include[](includes/4-exchange-routes-with-avs.md)]

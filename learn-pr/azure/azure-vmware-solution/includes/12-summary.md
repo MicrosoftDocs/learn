@@ -12,3 +12,5 @@ Using Azure VMware Solution provided all the flexibility Contoso needed. It incl
 - [Azure Landing Zone connectivity subscription](/azure/cloud-adoption-framework/ready/landing-zone/design-area/resource-org-subscriptions)
 - [Border Gateway Protocol](https://en.wikipedia.org/wiki/Border_Gateway_Protocol)
 - [FRRouting](https://frrouting.org/)
+- [AVS Landing Zone Accelerator - Reference Architecture](/azure/cloud-adoption-framework/scenarios/azure-vmware/enterprise-scale-landing-zone)
+- [AVS Landing Zone Accelerator - Reference Implementation](https://github.com/Azure/Enterprise-Scale-for-AVS)
