@@ -9,33 +9,6 @@ There are two key requirements at this time:
 
 After you complete this exercise, your queries will now use the LINQ syntax to make it easier for developers to maintain your application moving forward.
 
-## Reinitialize your environment (optional)
-
-It's possible, if you closed your Azure Cloud Shell terminal pane, for the terminal instance to no longer have access to the environment variable and code editor. Here, if needed, you set your environment variable again and open the code editor.
-
-> [!NOTE]
-> You can safely skip this section if your terminal is already open, your environment variable is still set, and you are already editing your project in the code editor.
-
-01. Set the environment variable named `COSMOS_CONNECTION_STRING` to the value of this command, which gets a connection string to the first Azure Cosmos DB for NoSQL account in your sandbox subscription.
-
-    ```azurecli
-    export COSMOS_CONNECTION_STRING=$(az cosmosdb keys list \
-        --name $(az cosmosdb list \
-            --resource-group <rgn>[sandbox resource group name]</rgn> \
-            --query [0].name \
-            --output tsv) \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
-        --type connection-strings \
-        --query "connectionStrings[?description=='Primary SQL Connection String'].connectionString" \
-        --output tsv)
-    ```
-
-01. Change to the *clouddrive/inventory* directory and open a code editor.
-
-    ```bash
-    cd ~/clouddrive/inventory && code .
-    ```
-
 ## Query using LINQ expressions
 
 Your team wants a unique query that returns all *products* within the container regardless of category. Recall that we used the **type** property to separate our category items from the individual product items. Here, we're going to create a cross-partition query using the LINQ method syntax.
