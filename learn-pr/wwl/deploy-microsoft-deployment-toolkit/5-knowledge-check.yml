@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-microsoft-deployment-toolkit.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/31/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Fabrikam wants to create and deploy a Windows 11 image to bare-metal devices using the Microsoft Deployment Toolkit. Where will Fabrikam store the default image that it creates?"
+    choices:
+    - content: "Configuration Manager"
+      isCorrect: false
+      explanation: "Incorrect. This item isn't where you store your default image when using MDT. Try again."
+    - content: "The Deployment Workbench"
+      isCorrect: true
+      explanation: "Correct. The Deployment Workbench is where you store your default image. In fact, you can import both original media and custom images that you have created into the Deployment Workbench."
+    - content: "Microsoft Endpoint Manager"
+      isCorrect: false
+      explanation: "Incorrect. This item isn't where you store your default image when using MDT. Try again."
+  - content: "Tailspin Toys' administrators have chosen to create a custom image of Windows 11 that contains the desired OS, settings, and applications. Which of the following tools can the administrators use to capture the image, mount the image, and make modifications?"
+    choices:
+    - content: "DISM"
+      isCorrect: true
+      explanation: "Correct. Deployment Image Servicing and Management (DISM.exe) can be used to service and prepare Windows images. DISM is a command line tool that can capture the image of a reference computer with the desired OS, settings, and applications. DISM can also be used to mount the image and make modifications."
+    - content: "Sysprep"
+      isCorrect: false
+      explanation: "Incorrect. Sysprep generalizes an image prior to deployment by removing computer-specific information such as installed drivers and the computer security identifier (SID). Try again."
+    - content: "the Disk Management console"
+      isCorrect: false
+      explanation: "Incorrect. The Windows Server Disk Management snap-in tool can be used to manage your hard disks and the volumes or partitions they contain. Try again."
+  - content: "Contoso has transitioned from the Microsoft Deployment Toolkit (MDT) to Windows Autopilot and Microsoft Intune to automate its server and desktop deployments. However, there are still some scenarios where Contoso prefers to use MDT, because it's better suited than Autopilot and Intune. Which of the following scenarios is MDT the better choice for automating desktop deployments rather than modern management and deployment tools such as Autopilot and Intune?"
+    choices:
+    - content: "When customizing the out-of-box experience"
+      isCorrect: false
+      explanation: "Incorrect. This item is one of the top benefits of using Windows Autopilot. Try again."
+    - content: "When you want to eliminate OS image reengineering"
+      isCorrect: false
+      explanation: "Incorrect. This item is one of the top benefits of using Windows Autopilot. Try again."
+    - content: "When deploying to bare metal devices"
+      isCorrect: true
+      explanation: "Correct. As you transition to some of the modern management tools, it is likely that a combination of Windows Autopilot and Intune will begin to perform many of the tasks associated with MDT. For example, the top three benefits of using Autopilot in modern deployments include eliminating OS image reengineering, customizing the out-of-box experience, and preconfiguring policies and ensuring security with enrollment status. However, there are scenarios, such as a bare metal device, to which Autopilot is not suited and, in this case, MDT would be an appropriate tool of choice. MDT caters to a specific scenario where devices are likely built and managed on premises."
