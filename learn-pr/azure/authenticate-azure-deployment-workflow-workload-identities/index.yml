@@ -9,6 +9,7 @@ metadata:
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: engagement-fy23
 title: Authenticate your Azure deployment workflow by using workload identities
 summary: |
   Workload identities enable your deployment workflows to authenticate securely with Azure without you managing any passwords, keys, or secrets.
