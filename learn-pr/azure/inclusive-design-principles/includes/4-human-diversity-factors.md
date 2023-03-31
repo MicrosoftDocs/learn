@@ -14,7 +14,7 @@ Here are some examples of multiple types of disabilities occurring simultaneousl
 
 - **Cerebral palsy**: This can affect a person in various ways, from mild to profound degrees of severity. While one person might be able to walk on their own, another may need to use a wheelchair for mobility. Coordination, fine motor skills, vision, and cognitive functions may also be affected. Someone with cerebral palsy may also have difficulty with producing clear speech or speech that's loud enough for a speaker device to detect. In mild forms of cerebral palsy, a person might only experience one or two minor effects of the condition.
 
-- **Autism**: The symptoms of autism vary widely. Some people with autism are verbal and can communicate well, while others are non-verbal. Some can be hypersensitive to sensory stimuli; others may not detect even very intense sensory stimuli. On the other end of the spectrum, another person with autism might not have any sensory deficits.
+- **Autism**: The symptoms of autism vary widely. Some people with autism are verbal and can communicate well, while others are nonverbal. Some can be hypersensitive to sensory stimuli; others may not detect even very intense sensory stimuli. On the other end of the spectrum, another person with autism might not have any sensory deficits.
 
 - **Cataracts**: These cause a clouding or loss of transparency in the eye, which might lead to overall decreased acuity or spots in the visual field. In some cases, cataracts can cause color blindness. Cataracts not only affect vision, but might also affect someone's coordination and accuracy, because they're having trouble seeing what they're interacting with. Symptoms can also include double or blurred vision and sensitivity to light and screen glare.
 
@@ -58,9 +58,9 @@ Users should be able to enhance their experiences to match their needs without h
 
 ### Voice, speech and communication
 
-What is voice, speech, and communication? It's our ability to communicate information to effectively interact with our environment. Voice, speech, and communication limitations include aphasia (receptive), aphasia (expressive), speech quality, social participation, and non-verbal.
+What is voice, speech, and communication? It's our ability to communicate information to effectively interact with our environment. Voice, speech, and communication limitations include aphasia (receptive), aphasia (expressive), speech quality, social participation, and nonverbal.
 
-Our ability to communicate (verbally or non-verbally) is essential in expressing wants and needs, forming relationships, conveying information to others, and interacting with our environment. Our ability to produce speech is determined by a complex sequence of physical and cognitive demands. Cognitive disabilities may cause difficulty with communication. Some disabilities don't affect a person cognitively. However, they may cause difficulties with strength and coordination of mouth movement. This could affect the ability to produce speech that's clear enough or loud enough to be understood. A person with hearing loss may also choose to communicate through non-verbal means.
+Our ability to communicate (verbally or nonverbally) is essential in expressing wants and needs, forming relationships, conveying information to others, and interacting with our environment. Our ability to produce speech is determined by a complex sequence of physical and cognitive demands. Cognitive disabilities may cause difficulty with communication. Some disabilities don't affect a person cognitively. However, they may cause difficulties with strength and coordination of mouth movement. This could affect the ability to produce speech that's clear enough or loud enough to be understood. A person with hearing loss may also choose to communicate through nonverbal means.
 
 ### Sensation and perception
 
