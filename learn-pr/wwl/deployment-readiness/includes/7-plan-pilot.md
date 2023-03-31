@@ -21,7 +21,7 @@ Remember, all PCs in this phase and future phases should be logging up to the An
 
 For this phase it's especially important to communicate changes and help users take advantage of new capabilities. Users can often de-prioritize or ignore email or other communications coming from IT – so it helps to meet with management to get their help in communicating change and drive adoption of new tools and technology.
 
-You'll also need their input on timeframes to avoid, so you can minimize user disruption. For example, the finance team may be particularly sensitive at the end of fiscal quarters or product development teams during a product launch.
+You'll also need their input on timeframes to avoid, so you can minimize user disruption. For example, the finance team may be sensitive at the end of fiscal quarters or product development teams during a product launch.
 
 In parallel to planning for devices, users, departments and timing, you can start to build your communication and training plans, as well as begin compiling content or engaging outside resources to help train users.
 
