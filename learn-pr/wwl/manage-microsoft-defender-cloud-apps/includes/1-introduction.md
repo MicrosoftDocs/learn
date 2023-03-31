@@ -5,7 +5,7 @@ This module is designed to provide a comprehensive understanding of Microsoft De
 Furthermore, you'll have the necessary knowledge and skills to effectively utilize Microsoft Defender for Cloud Apps in modern workplace scenarios. Utilizing its features and functionalities can strengthen the security of your cloud applications and services, thereby improving your overall security posture.
 
 #### Objectives
-
+ 
 After this module, you should be able to:
 
  -  Describe Microsoft Defender for Cloud Apps
