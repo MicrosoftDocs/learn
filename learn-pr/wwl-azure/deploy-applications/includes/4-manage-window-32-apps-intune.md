@@ -4,7 +4,7 @@ Intune standalone now supports Win32 app management capabilities. While there ar
 In order to deploy Win32 apps, the following criteria must be met:
 
  -  Windows 10 version 1607 or later (Enterprise, Pro, and Education versions)
- -  Devices must be joined to Azure AD and auto-enrolled.
+ -  Devices must be joined to Azure AD and auto enrolled.
  -  Windows application size has a maximum of 8 GB per app.
 
 Some features worth noting include:
@@ -18,7 +18,7 @@ Before the Win32 app can be deployed with Intune, it must be prepped. The follow
 :::image type="content" source="../media/prepare-window-32-app-e7c0051e.png" alt-text="Diagram of the process of preparing an app for Intune. Steps are Gather Media, validate command for Install or Uninstall, Create IntuneWin file, reduce size to 8 GB if needed, and specify the source installer folder, setup file to run, and output folder of the .intunewin file.":::
 
 
-The Win32 Content Prep Tool (IntuneWinAppUtil.exe) is a command line tool used to compress the Win32 app into a .intunewin file. The folder, install file (such as setup.exe) and output folder must be specified. Running the tool with the -h switch will display usage information.
+The Win32 Content Prep Tool (IntuneWinAppUtil.exe) is a command line tool used to compress the Win32 app into a .intunewin file. The folder, install file (such as setup.exe) and output folder must be specified. Running the tool with the -h switch displays usage information.
 
 A sample command might look like this:
 
