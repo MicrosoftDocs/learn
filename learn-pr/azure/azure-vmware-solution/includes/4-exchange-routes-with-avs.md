@@ -2,7 +2,7 @@
 
 ## Network paths in Azure VMware Solution private cloud
 
-Azure VMware Solution private cloud contains a management segment which is used to run infrastructure services such as vSAN, NSX-T, private cloud management, etc. Additionally, there may be one or more network segments for running applications – commonly referred as workload segments. Management and workload segments both use private IP address space. VMs running on workload segment can communicate with each other. However, additional configuration is required for workload segment VMs to be able to communicate outside of Azure VMware Solution private cloud. This is discussed in the *"Default outbound internet connectivity for Azure VMware Solution"* unit.
+Azure VMware Solution private cloud contains a management segment which is used to run infrastructure services such as vSAN, NSX-T, private cloud management, etc. Additionally, there may be one or more network segments for running applications – commonly referred as workload segments. Management and workload segments both use private IP address space. VMs running on workload segment can communicate with each other. However, additional configuration is required for workload segment VMs to be able to communicate outside of Azure VMware Solution private cloud. This is discussed in the [Default outbound internet connectivity for Azure VMware Solution](../2-outbound-internet-connectivity.yml) unit.
 
 ## Network paths in Azure
 
