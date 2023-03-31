@@ -37,9 +37,9 @@ The Default OOBE setup phase:
 
 The OOBE setup phase with Windows Autopilot:
 
-:::image type="content" source="../media/azure-active-directory-sign-9f107960.png" alt-text="The screenshots depict the dialog boxes that display during the default out-of-box experience setup phase and during the Windows AutoPilot–controlled OOBE setup phase. Instead of the normal prompt for a Microsoft Account, there's a Welcome to the organizational name and a prompt to enter the user Azure AD e-mail address.":::
+:::image type="content" source="../media/azure-active-directory-sign-9f107960.png" alt-text="Screenshots show the Windows AutoPilot setup process. The user enters their Azure AD email address instead of a Microsoft Account during the setup.":::
 
 
 Windows Autopilot puts administrators in control of the entire OOBE setup phase for known Windows devices. After administrators identify devices by their hardware IDs, they can create and apply a Windows Autopilot deployment profile to those devices. When the devices start and have internet connectivity, they connect to the Windows Autopilot cloud service, ask the employees for their company credentials, and apply settings from the Windows Autopilot profile. This preconfigures and hides many dialog boxes that would otherwise display during OOBE. It simplifies the user experience and enables employees to get configured and productive Windows devices in just a few selects. Based on employee credentials, the devices join Azure AD and can automatically enroll in Intune or another mobile device management solution.
 
-You can’t use Windows Autopilot to perform advanced provisioning, but you can use mobile device management solutions such as Intune to do this. Windows Autopilot deployment is also the only way in which a user who goes through OOBE doesn’t become a local Administrator of the device. Note, you can manage Windows Autopilot in Microsoft Store for Business or in Intune.
+You can’t use Windows Autopilot to perform advanced provisioning, but you can use mobile device management solutions such as Intune to do this. Windows Autopilot deployment is also the only way in which a user who goes through OOBE doesn’t become a local Administrator of the device. Note that you can manage Windows Autopilot in Microsoft Store for Business or in Intune.

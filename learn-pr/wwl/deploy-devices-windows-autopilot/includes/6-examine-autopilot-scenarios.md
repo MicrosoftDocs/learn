@@ -16,7 +16,7 @@ Windows Autopilot user-driven mode is designed to enable new Windows 10 or later
  -  Connect it to a wireless or wired network with internet access.
  -  Specify your e-mail address and password for your organization account.
 
-To enable User-driven mode for Azure Active Directory join, the following actions must be taken as part of preparing the Autopilot deployment:<br>
+To enable User-driven mode for Azure Active Directory join, the following actions must be taken as part of preparing the Autopilot deployment:
 
  -  Users must be able to join Azure AD.
  -  If using Intune (and not Microsoft Store for Business), user-driven mode must be selected in the Autopilot profile assigned to the device if using Intune. The Autopilot profile must also be assigned to an Azure AD device group.
@@ -27,7 +27,7 @@ User-driven mode is also supported for hybrid Azure Active Directory join. In ad
  -  The device must be running Windows 1809 or later.
  -  **Hybrid Azure AD joined** must be specified as the selected option under **Join to Azure AD as** in the Autopilot profile.
  -  The device must be able to access the internet and an Active Directory domain controller.
- -  The Intune Connector for Active Directory must be installed (this performs the on-prem AD join instead of requiring user permission to join).
+ -  The Intune Connector for Active Directory must be installed (this performs the on-premises AD join instead of requiring user permission to join).
 
 ### Self-deploying mode
 
@@ -35,7 +35,7 @@ Windows Autopilot self-deploying mode enables a device to be deployed with littl
 
 To perform a self-deploying mode deployment using Windows Autopilot:
 
- -  Create an Autopilot profile for self-deploying mode with the desired settings. In Microsoft Intune, this mode is explicitly chosen when creating the profile. Note, this mode isn't available using the Microsoft Store for Business.
+ -  Create an Autopilot profile for self-deploying mode with the desired settings. In Microsoft Intune, this mode is explicitly chosen when creating the profile. Note that this mode isn't available using the Microsoft Store for Business.
  -  Ensure that the profile has been assigned to the device before attempting to deploy that device.
  -  Self-deploying mode requires devices with TPM 2.0 and Windows 10 version 1903 or later.
 
@@ -43,7 +43,7 @@ Some interaction may be required under certain circumstances. If only wireless c
 
 ### Autopilot for existing devices
 
-As discussed previously, the Autopilot process requires that the device have Windows 10 or Windows 11 installed. This feature allows you to re-image and provision a 8.1 device for Windows Autopilot user-driven mode using a single, native Configuration Manager task sequence. This process allows a device that was traditionally managed with images to transition to device using modern methods.
+As discussed previously, the Autopilot process requires that the device has Windows 10 or Windows 11 installed. This feature allows you to re-image and provision a 8.1 device for Windows Autopilot user-driven mode using a single, native Configuration Manager task sequence. This process allows a device that was traditionally managed with images to transition to device using modern methods.
 
 In order to facilitate this, a special task sequence must be used to deploy the image to the Windows 8.1 device, which includes delivering a configuration file associated with an Intune profile. The profile(s) must be created in Microsoft Intune before the configuration files are created. Once the profiles are set up, use PowerShell (Administrator) to create the configuration file.
 
@@ -94,7 +94,7 @@ The process for configuring a pre-provisioned deployment is as follows:
 
 The device can now be delivered to the user. When the user receives the device, they simply need to connect and power on the device, select regional and keyboard settings, select a WiFi network if applicable, and sign in.
 
-Pre-provisioned deployment requires Windows 1903 or later and an Intune subscription. The device must also support TPM 2.0 and device attestation, virtual machines aren't supported. Access to the on-prem domain isn't required in the pre-provision process. Internet connectivity (or connectivity to a domain controller is using Hybrid Azure AD join) is required during the final user process.
+Pre-provisioned deployment requires Windows 1903 or later and an Intune subscription. The device must also support TPM 2.0 and device attestation, virtual machines aren't supported. Access to the on-premises domain isn't required in the pre-provision process. Internet connectivity (or connectivity to a domain controller is using Hybrid Azure AD join) is required during the final user process.
 
 > [!TIP]
 > The advantage of pre-provisioned deployment enables an administrator to install the bulk of applications, which are machine targeted, leaving only applications specific to the user onboarding to complete the process. This can drastically reduce the time to provision the device and improve the user experience.
@@ -105,7 +105,7 @@ For more information on pre-provisioned deployment s, refer to [Windows Autopilo
 
 In many environments, you regularly need to reset devices to their initial states after they've been in use for some time. For example, an organization might provide temporary employees with Windows devices, which the organization must reset for every new user. Organizations must also reset the computers in training rooms after each class. With traditional deployment, you would need to redeploy the Windows image each time you reset a device to its initial state. Windows Autopilot Reset enables you to achieve this goal without redeploying a Windows image. It removes all personal files, apps, and settings, and it resets a Windows device to its initial state from the lock screen. It can also deploy organizational apps and settings by using Intune or another MDM solution so that a device is ready to use after the Windows Autopilot Reset.
 
-Windows Autopilot Reset supports two scenarios:<br>
+Windows Autopilot Reset supports two scenarios:
 
  -  Local reset
  -  Remote reset

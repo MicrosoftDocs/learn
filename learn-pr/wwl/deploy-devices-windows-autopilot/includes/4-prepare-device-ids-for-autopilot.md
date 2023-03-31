@@ -62,7 +62,7 @@ To complete this process using Intune, use the following procedure:
 4.  After import is complete, select **Device enrollment**, select **Windows enrollment**, select **Windows Autopilot**, select **Devices** and then select **Sync**.
 5.  Refresh the view to see the new devices.
 
-:::image type="content" source="../media/windows-autopilot-service-white-4f335827.png" alt-text="Diagram showing the device ID process. Vendors or the Customer upload the device IDs to the Autopilot service. Customers create the deployment profile and the employee unboxes the device and self-deploys.":::
+:::image type="content" source="../media/windows-autopilot-service-white-4f335827.png" alt-text="Diagram of Autopilot device ID process: Vendor or Customer uploads IDs, creates profile, and employee self-deploys after unboxing device.":::
 
 
 ### Import a device hash directly into Intune
