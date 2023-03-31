@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-azure-virtual-desktop.manage-azure-virtual-desktop
+title: Manage Azure Virtual Desktop
+metadata:
+  title: Manage Azure Virtual Desktop
+  description: "Manage Azure Virtual Desktop"
+  ms.date: 03/31/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-manage-azure-virtual-desktop.md)]

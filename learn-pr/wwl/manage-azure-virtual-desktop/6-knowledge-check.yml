@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-azure-virtual-desktop.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/31/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which Azure Virtual Desktop feature allows administrators to automatically adjust capacity based on time of day, specific weekdays, or fluctuating demand?"
+    choices:
+    - content: "Autoscale"
+      isCorrect: true
+      explanation: "Correct - Autoscale is a feature that allows administrators to automatically adjust capacity based on time of day, specific weekdays, or fluctuating demand."
+    - content: "Personal (persistent) desktops."
+      isCorrect: false
+      explanation: "Incorrect - Personal (persistent) desktops are a feature that allows users to save their files and settings to a personal desktop."
+    - content: "Remote desktop services (RDS)"
+      isCorrect: false
+      explanation: "Incorrect - Remote desktop services (RDS) is a feature that allows users to connect to a virtual desktop from a remote location."
+  - content: "Which of the following is a unique remote action for Cloud PCs?"
+    choices:
+    - content: "Restart"
+      isCorrect: false
+      explanation: "Incorrect. This is a common action for both Cloud PCs and Windows Virtual Desktop. Try again."
+    - content: "Sync"
+      isCorrect: false
+      explanation: "Incorrect. This is a common action for both Cloud PCs and Windows Virtual Desktop. Try again."
+    - content: "Reprovisioning"
+      isCorrect: true
+      explanation: "Correct. Reprovisioning is a unique action for Cloud PCs."
+  - content: "Which of the following features is exclusive to Windows 365 Enterprise and not available in Windows 365 Business?"
+    choices:
+    - content: "Windows Virtual Desktop"
+      isCorrect: false
+      explanation: "Incorrect. Windows Virtual Desktop is available in both Windows 365 Business and Windows 365 Enterprise."
+    - content: "Windows 365 Pro"
+      isCorrect: true
+      explanation: "Correct. Windows 365 Pro is only available in Windows 365 Enterprise."
+    - content: "Cloud PC"
+      isCorrect: false
+      explanation: "Incorrect. Cloud PC is available in both Windows 365 Business and Windows 365 Enterprise."
