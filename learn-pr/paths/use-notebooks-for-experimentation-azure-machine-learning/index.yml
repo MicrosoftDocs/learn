@@ -2,8 +2,8 @@
 uid: learn.wwl.use-notebooks-for-experimentation-azure-machine-learning
 metadata:
   title: Use notebooks for experimentation in Azure Machine Learning
-  description: Azure Machine Learning Python SDK v2
-  ms.date: 03/16/2023
+  description: Use notebooks for experimentation with the Azure Machine Learning Python SDK v2
+  ms.date: 03/31/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
