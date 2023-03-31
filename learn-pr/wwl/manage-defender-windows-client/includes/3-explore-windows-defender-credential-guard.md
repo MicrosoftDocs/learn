@@ -31,7 +31,7 @@ You can use Group Policy to enable Windows Defender Credential Guard. This adds 
 1.  From the Group Policy Management Console, go to **Computer Configuration** \- **Administrative Templates** \- **System** \- **Device Guard**.
 2.  Double-click **Turn On Virtualization Based Security**, and then select **Enabled**.
 3.  In the Select Platform Security Level box, choose **Secure Boot** or **Secure Boot and DMA Protection**.
-4.  In the Credential Guard Configuration box, select **Enabled with UEFI lock**, and then select **OK**. If you want to be able to turn off Windows Defender Credential Guard remotely, choose **Enabled without lock**. :::image type="content" source="../media/virtualization-based-security-322010f5.png" alt-text="screenshot of Windows Defender Credential Guard Group Policy setting":::
+4.  In the Credential Guard Configuration box, select **Enabled with UEFI lock**, and then select **OK**. If you want to be able to turn off Windows Defender Credential Guard remotely, choose **Enabled without lock**. :::image type="content" source="../media/virtualization-based-security-322010f5.png" alt-text="screenshot of Windows Defender Credential Guard Group Policy setting.":::
     
 
 Besides using Group Policy to enable Credential Guard, administrators can also use Microsoft Intune platform to deploy this feature to client computers enrolled to Azure AD and Intune. Credential Guard is a part of device configuration profile, when using Endpoint protection profile type. It is available only for Windows 10 and later OS platforms.
