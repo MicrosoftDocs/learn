@@ -3,7 +3,7 @@ uid: learn.language.rust-set-up-environment
 metadata:
   title: Set up the Rust development environment
   description: Learn how to set up the Rust development environment, write a program, and use the Cargo build system.
-  ms.date: 09/14/2021
+  ms.date: 03/30/2023
   author: GitHubber17
   ms.author: chnoring
   ms.topic: interactive-tutorial
