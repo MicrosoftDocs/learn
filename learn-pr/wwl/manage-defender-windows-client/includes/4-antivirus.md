@@ -54,7 +54,7 @@ If you use the Microsoft 365 platform, it’s recommended to use Intune to manag
      -  **Profile type**: Select **Device restrictions**.
 4.  On the **Configuration settings** tab, expand the **Microsoft Defender Antivirus** item and configure the desired settings.
 
-:::image type="content" source="../media/intune-defender-antivirus-1d2f7442.png" alt-text="Screenshot of Windows Defender Antivirus screen":::
+:::image type="content" source="../media/intune-defender-antivirus-1d2f7442.png" alt-text="Screenshot of Windows Defender Antivirus screen.":::
 
 
 ### Additional features in Microsoft Defender Antivirus

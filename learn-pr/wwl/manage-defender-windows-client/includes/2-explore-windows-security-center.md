@@ -12,4 +12,4 @@ Windows Security Center is turned on, by default and it works from the moment yo
  -  **Family options:** You can review and configure available options for family safety and parental controls.
  -  **Protection History (Windows 11):** List recent threats and any recommended actions. This option is located under Virus and threat protection in Windows 10.
 
-:::image type="content" source="../media/windows-security-center-7c72db80.png" alt-text="Screenshot of the Windows Defender Security Center, Security at a glance screen":::
+:::image type="content" source="../media/windows-security-center-7c72db80.png" alt-text="Screenshot of the Windows Defender Security Center, Security at a glance screen.":::

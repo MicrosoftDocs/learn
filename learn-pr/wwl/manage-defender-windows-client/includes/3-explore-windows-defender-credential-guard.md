@@ -19,7 +19,7 @@ When Windows Defender Credential Guard is enabled, Kerberos doesn't allow uncons
 
 Here's a high-level overview on how the LSA is isolated by using virtualization-based security:
 
-:::image type="content" source="../media/hypervisor-virtualization-based-security-dc72cf3c.png" alt-text="Diagram of Windows Defender Credential Guard overview":::
+:::image type="content" source="../media/hypervisor-virtualization-based-security-dc72cf3c.png" alt-text="Diagram of Windows Defender Credential Guard overview.":::
 
 
 Windows Defender Credential Guard can be enabled either by using Group Policy, the registry, or the Windows Defender Device Guard and Windows Defender Credential Guard hardware readiness tool. Windows Defender Credential Guard can also protect secrets in a Hyper-V virtual machine, just as it would on a physical machine. The same set of procedures used to enable Windows Defender Credential Guard on physical machines applies also to virtual machines.
@@ -36,4 +36,4 @@ You can use Group Policy to enable Windows Defender Credential Guard. This adds 
 
 Besides using Group Policy to enable Credential Guard, administrators can also use Microsoft Intune platform to deploy this feature to client computers enrolled to Azure AD and Intune. Credential Guard is a part of device configuration profile, when using Endpoint protection profile type. It is available only for Windows 10 and later OS platforms.
 
-:::image type="content" source="../media/intune-credential-guard-760949ed.png" alt-text="screenshot of Windows Defender Credential Guard":::
+:::image type="content" source="../media/intune-credential-guard-760949ed.png" alt-text="screenshot of Windows Defender Credential Guard.":::
