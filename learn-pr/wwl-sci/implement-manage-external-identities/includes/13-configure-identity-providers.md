@@ -243,7 +243,7 @@ To use a Facebook account as an identity provider, you need to create an applica
 1. Choose a **Category**, for example Business and Pages. This value is required by Facebook, but not used for Azure AD.
 1. At the bottom of the page, select **Add Platform**, and then select **Website**.
 1. In **Site URL**, enter the appropriate URL (noted above).
-1. In **Privacy Policy URL**, enter the URL for the page where you maintain privacy information for your application, for example http://www.contoso.com.
+1. In **Privacy Policy URL**, enter the URL for the page where you maintain privacy information for your application, for example `http://www.contoso.com`.
 1. Select **Save Changes**.
 1. At the top of the page, copy the value of **App ID**.
 1. Select **Show** and copy the value of **App Secret**. You use both of them to configure Facebook as an identity provider in your tenant. **App Secret** is an essential security credential.

@@ -6,16 +6,17 @@ Server administrators understand that it's efficient to remotely administer and 
 
 Suppose you have a line-of-business (LOB) app that supports your organization's research department. In the past, this app ran on a couple of Windows Server computers in your head office datacenter. Whenever you needed to administer the app, you connected using Remote Desktop Protocol (RDP) over TCP port **3389**. You also used Secure Shell (SSH), over port **22**, to administer the VMs. Because the app was hosted on a computing resource in a private datacenter, you had some concerns about access from malicious hackers over the internet. However, the app now runs on VMs hosted in Azure.
 
-To connect to the VMs, you must now expose a public IP address on each VM for your RDP/SSH connections. This is undesirable because of potential protocol vulnerabilities. As a solution, you could use a jump box VM to act as an intermediary between your management console and the target VMs. Or, you could consider implementing Azure Bastion.
+To connect to the VMs, you must now expose a public IP address on each VM for your RDP/SSH connections. However, potential protocol vulnerabilities make this type of connection undesirable. As a solution, you could use a jump box VM to act as an intermediary between your management console and the target VMs. Or, you could consider implementing Azure Bastion.
 
 :::image type="content" source="../media/remote-admin.png" alt-text="A remote administrator connecting with RDP or SSH through the internet to Azure VMs. The VMs are accessible through a public IP address using port 3389 or port 22.":::
 
 ## What will we be doing?
 
-We'll determine the benefits of using Azure Bastion to help protect your hosted VMs. You'll know how Azure Bastion:
+Learning the benefits of using Azure Bastion to help protect your hosted VMs, by showing you how Azure Bastion:
+
 - Removes the need to expose RDP and SSH ports to the internet.
 - Securely uses both RDP and SSH.
 
 ## What is the main goal?
 
-By the end of this session, you'll be able to determine how you can use Azure Bastion to help secure remote management sessions to your Azure hosted VMs.
+By the end of this session, you're able to determine how you can use Azure Bastion to help secure remote management sessions to your Azure hosted VMs.

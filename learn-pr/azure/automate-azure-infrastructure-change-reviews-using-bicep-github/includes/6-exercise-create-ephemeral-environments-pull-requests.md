@@ -5,14 +5,15 @@ In this exercise, you'll update your pull request workflow to deploy an ephemera
 During the process, you'll:
 
 > [!div class="checklist"]
-> * Update the pull request workflow to deploy an ephemeral environment.
-> * Create a pull request deletion workflow to delete the ephemeral environment.
-> * Create a pull request and watch the ephemeral environment get created.
-> * Approve the pull request and watch the ephemeral environment get deleted.
+>
+> - Update the pull request workflow to deploy an ephemeral environment.
+> - Create a pull request deletion workflow to delete the ephemeral environment.
+> - Create a pull request and watch the ephemeral environment get created.
+> - Approve the pull request and watch the ephemeral environment get deleted.
 
 ## Update the pull request workflow to deploy an ephemeral environment
 
-To begin, you need to update your *pr-validation* workflow to create an ephemeral environment.
+To begin, you need to update your _pr-validation_ workflow to create an ephemeral environment.
 
 1. In the Visual Studio Code terminal, check out the main branch of the repository.
 
@@ -26,7 +27,7 @@ To begin, you need to update your *pr-validation* workflow to create an ephemera
    git pull
    ```
 
-1. Open the *.github/workflows/pr-validation.yml* file in Visual Studio Code.
+1. Open the _.github/workflows/pr-validation.yml_ file in Visual Studio Code.
 
 1. Near the top of the file, below the `name` setting, add a `concurrency` setting:
 
@@ -69,8 +70,8 @@ To begin, you need to update your *pr-validation* workflow to create an ephemera
 
 1. Save your changes.
 
-1. Verify that your *pr-validation.yml* file looks like the following:
-   
+1. Verify that your _pr-validation.yml_ file looks like the following:
+
    :::code language="yaml" source="code/6-pr-validation.yml" :::
 
    If it doesn't, update it to match this example, and then save it.
@@ -86,7 +87,7 @@ To begin, you need to update your *pr-validation* workflow to create an ephemera
 
 You've created a workflow that automatically deploys the changes in each pull request to an ephemeral resource group. Now, you'll configure a second workflow to delete the ephemeral environments when they're no longer needed.
 
-1. Create a new file named *pr-closed.yml* in the *.github/workflows* folder.
+1. Create a new file named _pr-closed.yml_ in the _.github/workflows_ folder.
 
    :::image type="content" source="../media/6-visual-studio-code-workflow.png" alt-text="Screenshot of Visual Studio Code that shows the P R closed dot Y M L file within the workflows folder.":::
 
@@ -110,8 +111,8 @@ You've created a workflow that automatically deploys the changes in each pull re
 
 1. Save your changes.
 
-1. Verify that your *pr-closed.yml* file looks like the following:
-   
+1. Verify that your _pr-closed.yml_ file looks like the following:
+
    :::code language="yaml" source="code/6-pr-closed.yml" :::
 
    If it doesn't, update it to match this example, and then save it.
@@ -134,7 +135,7 @@ Next, update your Bicep file to use a Docker container image for your website's 
    git checkout -b feature/container-app
    ```
 
-1. Open the *main.bicep* file in the *deploy* folder.
+1. Open the _main.bicep_ file in the _deploy_ folder.
 
 1. Update the value of the `appServiceAppLinuxFrameworkVersion` variable:
 
@@ -178,19 +179,19 @@ You've defined workflows to create and manage ephemeral environments automatical
 
 1. Select the URL in the log.
 
-   :::image type="content" source="../media/6-website-address.png" alt-text="Screenshot of the GitHub Actions deployment log. The website U R L in the 'Show website hostname' step is highlighted.":::
+   :::image type="content" source="../media/6-website-address.png" alt-text="Screenshot of the GitHub Actions deployment log. The website URL in the Show website hostname step is highlighted.":::
 
-   The website loads. It displays a message, *Hello Docker!*, which indicates that the website is running from the container image that's defined in the pull request change.
+   The website loads and displays a _Hello Docker!_ message that indicates that the website is running from the container image that's defined in the pull request change.
 
    :::image type="content" source="../media/6-website.png" alt-text="Screenshot of the website homepage after the deployment is complete.":::
 
-1. Optionally, open the [Azure portal](https://portal.azure.com/azure-portal=true), and go to the ephemeral environment's resource group.
+1. Optionally, open the [Azure portal](https://portal.azure.com), and go to the ephemeral environment's resource group.
 
-   Review the resources that were deployed.
+   Review the resources that were deployed: storage account, App service, and App service plan.
 
 ## Merge the pull request
 
-Now that you've tested the pull request, you can merge it into the *main* branch.
+Now that you've tested the pull request, you can merge it into the _main_ branch.
 
 1. Select **Pull requests**, and select the **Use container image for website** pull request.
 
@@ -218,3 +219,25 @@ Now that you've tested the pull request, you can merge it into the *main* branch
 
    > [!IMPORTANT]
    > You don't need to wait for the workflow run to finish. But be sure to open the Azure portal later, both to verify that the ephemeral environment's resource group has been deleted successfully and to avoid incurring costs for the Azure resources.
+
+## Clean up resources
+
+After you're finished with the module, you can delete the resources you created:
+
+- GitHub secrets
+  1. From the GitHub repository, go to **Settings** > **Secrets and variables** > **Actions**.
+  1. Select **Remove secret** for each repository secret and follow the prompts.
+
+- GitHub repository
+  1. Go to **Settings** > **General**
+  1. Select **Delete this repository** and follow the prompts.
+
+- Azure App registration's federated credentials and service principal.
+  1. From the portal home page, search for _Azure Active Directory_ and select it from the list of **Services**.
+  1. Go to **Manage** > **App registrations**.
+  1. In **Owned applications** select **toy-website-auto-review**.
+  1. Select **Delete** and follow the prompts.
+  1. Select **Deleted applications** to permanently delete the app registration.
+
+  > [!IMPORTANT]
+  > It's possible to have duplicate App registration and service principal names. It's recommended to verify the application ID to make sure you're deleting the correct resource.

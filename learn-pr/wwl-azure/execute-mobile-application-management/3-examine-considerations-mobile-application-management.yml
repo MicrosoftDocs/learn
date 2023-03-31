@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.execute-mobile-application-management.examine-considerations-mobile-application-management
+title: Examine considerations for mobile application management
+metadata:
+  title: Examine considerations for mobile application management
+  description: "Examine considerations for mobile application management"
+  ms.date: 03/17/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+  ms.prod: intune
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-examine-considerations-mobile-application-management.md)]

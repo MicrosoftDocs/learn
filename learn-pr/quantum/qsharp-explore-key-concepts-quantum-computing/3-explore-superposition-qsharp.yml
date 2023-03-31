@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Explore superposition by using Q# and Visual Studio Code
   description: Learn how to use Q# to build and inspect superpositions.
   ms.date: 09/09/2020
-  author: KittyYeungQ
-  ms.author: kitty
+  author: bradben
+  ms.author: brbenefield
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   show_latex: true

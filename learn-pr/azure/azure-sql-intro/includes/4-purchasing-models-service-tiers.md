@@ -13,7 +13,7 @@ We recommend the vCore-based model, because it allows you to independently selec
 
 In the vCore model, you pay for:  
 
-- **Compute resources:** The service tier + the number of vCores and the amount of memory + the generation of hardware.
+- **Compute resources:** The service tier plus the number of vCores and the amount of memory plus the generation of hardware.
 - **Data and log storage:** The type and amount of data and log storage.
 - **Backup storage location:** Read-access geo-redundant storage (RA-GRS), Zone-redundant storage (ZRS), or locally redundant storage (LRS).  
 
