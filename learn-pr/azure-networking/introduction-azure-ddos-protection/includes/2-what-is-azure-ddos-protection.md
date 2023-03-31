@@ -78,8 +78,6 @@ DDoS IP Protection is a pay-per-protected IP model. DDoS IP Protection contains 
 
 ## Value-added services
 
-Cost guarantee and DDoS rapid response support are two important DDoS Network Protection features. These two features are value-added for DDoS IP Protection.
-=======
 Cost guarantee and DDoS rapid response support are two of the other important DDoS Network Protection features.
 
 ### Cost guarantee
