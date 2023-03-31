@@ -5,7 +5,7 @@ Go to the website [rustup.rs](https://rustup.rs?azure-portal=true) to find the a
 
 On Linux or macOS, copy the curl command by selecting the clipboard icon. Then open your computer's terminal or command prompt to paste the command, and follow the on-screen instructions. On Windows, follow the instructions in the installer.
 
-> [!Important]
+> [!IMPORTANT]
 > Rust requires the Microsoft C++ build tools for Visual Studio 2013 or later.
 > The build tools must be installed before you can install Rust.
 > If you need to install the build tools, see the steps in the [previous unit](../3-install-build-tools.yml).
@@ -17,7 +17,7 @@ Rust has a six-week, rapid release process, and supports a great number of platf
 
 After you complete the Rust installation, you should have the `rustc` and `cargo` commands available.
 
-> [!Note]
+> [!NOTE]
 > The following commands work on all platforms.
 
 Run the following command in your terminal or command prompt:
