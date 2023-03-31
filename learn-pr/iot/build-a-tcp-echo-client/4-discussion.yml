@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.build-a-tcp-echo-client.discussion
+title: Discussion
+metadata:
+  title: Discussion
+  description: Discussion about the topics in this module.
+  ms.date: 03/08/2023
+  author: edlamie80
+  ms.author: liydu
+  manager: lizross
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-discussion.md)]
