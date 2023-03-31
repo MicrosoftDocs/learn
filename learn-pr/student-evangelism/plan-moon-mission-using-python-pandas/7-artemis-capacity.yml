@@ -3,7 +3,7 @@ uid: learn.student-evangelism.plan-moon-mission-using-python-pandas.7-artemis-ca
 metadata:
   title: Exercise - Predict Artemis sample capacity
   description: Predict how much Moon rock the Artemis missions will be able to return based on information we have today.
-  ms.date: 03/10/2021
+  ms.date: 03/29/2023
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
