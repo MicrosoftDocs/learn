@@ -11,7 +11,7 @@ With Azure Lighthouse, service providers can deliver managed services using [co
 
 [Cross-tenant management experiences](https://learn.microsoft.com/azure/lighthouse/concepts/cross-tenant-management-experience) let you work more efficiently with Azure services such as [Azure Policy](https://learn.microsoft.com/azure/lighthouse/how-to/policy-at-scale), [Microsoft Sentinel](https://learn.microsoft.com/azure/lighthouse/how-to/manage-sentinel-workspaces), [Azure Arc](https://learn.microsoft.com/azure/lighthouse/how-to/manage-hybrid-infrastructure-arc), and many more. Users can see what changes were made and by whom [in the activity log](https://learn.microsoft.com/azure/lighthouse/how-to/view-service-provider-activity), which is stored in the customer's tenant and can be viewed by users in the managing tenant.
 
-![Diagram that shows an overview of Azure Lighthouse](https://learn.microsoft.com/azure/lighthouse/media/azure-lighthouse-overview.jpg)
+![Diagram that shows an overview of Azure Lighthouse.](../media/azure-lighthouse-overview.jpg)
 <!-- 
 [](https://learn.microsoft.com/azure/lighthouse/overview#benefits)
 -->

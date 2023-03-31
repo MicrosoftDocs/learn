@@ -1,53 +1,101 @@
-Security baseline is one of the [Five Disciplines of Cloud Governance](https://learn.microsoft.com/azure/cloud-adoption-framework/govern/governance-disciplines) within the [Cloud Adoption Framework governance model](https://learn.microsoft.com/azure/cloud-adoption-framework/govern/). Security is a component of any IT deployment, and the cloud introduces unique security concerns. Many businesses are subject to regulatory requirements that make protecting sensitive data a major organizational priority when considering a cloud transformation. Identifying potential security threats to your cloud environment and establishing processes and procedures for addressing these threats should be a priority for any IT security or cybersecurity team. The Security Baseline discipline ensures technical requirements and security constraints are consistently applied to cloud environments, as those requirements mature.
+Translating compliance requirements into security solutions requires the following initiatives as part of cloud governance:
 
-This article outlines the approach to developing a Security Baseline discipline as part of your cloud governance strategy. The primary audience for this guidance is your organization's cloud architects and other members of your cloud governance team. The decisions, policies, and processes that emerge from this discipline should involve engagement and discussions with relevant members of your IT and security teams, especially those technical leaders responsible for implementing networking, encryption, and identity services.
+1. Define corporate policy that aligns to compliance requirements
+1. Align design with policy
 
-Making the correct security decisions is critical to the success of your cloud deployments and wider business success. If your organization lacks in-house expertise in cybersecurity, consider engaging external security consultants as a component of this discipline. Also consider engaging [Microsoft Consulting Services](https://www.microsoft.com/industry/services/consulting), the [Microsoft FastTrack](https://azure.microsoft.com/programs/azure-fasttrack/) cloud adoption service, or other external cloud adoption experts to discuss concerns related to this discipline.
+## Define corporate policy
 
-### Policy statements
+After you've analyzed the known risks and related risk tolerances for your organization's cloud transformation journey, set up policy to clearly address those risks. Your policy also defines the necessary steps to remediate the risks where possible.
 
-Actionable policy statements and the resulting architecture requirements serve as the foundation of a Security Baseline discipline. Use [sample policy statements](https://learn.microsoft.com/azure/cloud-adoption-framework/govern/security-baseline/policy-statements) as a starting point for defining your Security Baseline policies.
+### How can corporate IT policy become cloud-ready?
 
- Caution
+In traditional governance and incremental governance, corporate policy creates the working definition of governance. Most IT governance actions seek to implement technology that monitors, enforces, operates, and automates corporate policies. Cloud governance is built on similar concepts.
 
-The sample policies come from common customer experiences. To better align these policies to specific cloud governance needs, execute the following steps to create policy statements that meet your unique business needs.
+![Diagram that shows corporate governance and governance disciplines.](../media/operational-transformation-govern-large.png)
+*Figure 1: Corporate governance and governance disciplines.*
 
-### Develop governance policy statements
+The image illustrates the relationship between business risk, policy and compliance, and monitoring and enforcement mechanisms that need to interact as part of your governance strategy. The Five Disciplines of Cloud Governance let you manage the interactions and realize your strategy.
 
-The following steps offer examples and potential options to consider when developing your Security Baseline discipline. Use each step as a starting point for discussions within your cloud governance team and with affected business, IT, and security teams across your organization to establish the policies and processes needed to manage security-related risks.
+Cloud governance is the product of an ongoing adoption effort, because lasting transformation doesn't happen overnight. If you attempt to deliver complete cloud governance before addressing key corporate policy changes, it seldom produces the desired results. Instead, use an incremental approach.
 
-[Security Baseline discipline template](https://learn.microsoft.com/azure/cloud-adoption-framework/govern/security-baseline/template): Download the template for documenting a Security Baseline discipline.
-  
-[Business risks](https://learn.microsoft.com/azure/cloud-adoption-framework/govern/security-baseline/business-risks): Understand the motives and risks commonly associated with the Security Baseline discipline.
-  
-[Indicators and metrics](https://learn.microsoft.com/azure/cloud-adoption-framework/govern/security-baseline/metrics-tolerance): Indicators to understand whether it's the right time to invest in the Security Baseline discipline.
-  
-[Policy adherence processes](https://learn.microsoft.com/azure/cloud-adoption-framework/govern/security-baseline/compliance-processes): Suggested processes for supporting policy compliance in the Security Baseline discipline.
+What's different about a Cloud Adoption Framework is the purchasing cycle that enables authentic transformation. Since it doesn't take large capital to acquire, engineers can begin their experimentation and adoption sooner. In most corporate cultures, eliminating the capital expense barrier to adoption leads to tighter feedback loops, organic growth, and incremental development.
 
-[Maturity](https://learn.microsoft.com/azure/cloud-adoption-framework/govern/security-baseline/discipline-improvement): Align cloud management maturity with phases of cloud adoption.
-  
-[Toolchain](https://learn.microsoft.com/azure/cloud-adoption-framework/govern/security-baseline/toolchain): Azure services that can be implemented to support the Security Baseline discipline.
+The shift to cloud adoption requires a shift in governance. In many organizations, corporate policy transformation supports:
 
-## Security Baseline tools in Azure
+- Improved governance and higher rates of adherence through incremental policy changes
+- Automated enforcement of those changes
 
-The [Security Baseline discipline](https://learn.microsoft.com/azure/cloud-adoption-framework/govern/security-baseline/) is one of the [Five Disciplines of Cloud Governance](https://learn.microsoft.com/azure/cloud-adoption-framework/govern/governance-disciplines). This discipline focuses on ways of establishing policies that protect the network, assets, and most importantly the data that will reside on a cloud provider's solution. Within the Five Disciplines of Cloud Governance, the Security Baseline discipline involves classification of the digital estate and data. It also involves documentation of risks, business tolerance, and mitigation strategies associated with the security of data, assets, and networks. From a technical perspective, this discipline also includes involvement in decisions regarding [encryption](https://learn.microsoft.com/azure/cloud-adoption-framework/decision-guides/encryption/), [network requirements](https://learn.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/define-an-azure-network-topology), [hybrid identity strategies](https://learn.microsoft.com/azure/cloud-adoption-framework/decision-guides/identity/), and tools to [automate enforcement](https://learn.microsoft.com/azure/cloud-adoption-framework/govern/policy-compliance/processes#automation-of-monitoring-and-compliance) of security policies across [resource groups](https://learn.microsoft.com/azure/cloud-adoption-framework/decision-guides/resource-consistency/). The following list of Azure tools can help mature the policies and processes that support this discipline.
+The newly defined capabilities that you configure with your cloud service provider power the policy changes.
 
-| Tool | [Azure portal](https://azure.microsoft.com/features/azure-portal/) and [Azure Resource Manager](/azure/azure-resource-manager/management/overview) | [Azure Key Vault](/azure/key-vault/)  | [Azure AD](/azure/active-directory/fundamentals/active-directory-whatis) | [Azure Policy](/azure/governance/policy/overview) | [Microsoft Defender for Cloud](/azure/security-center/security-center-introduction) | [Azure Monitor](/azure/azure-monitor/overview) |
-|------------------------------------------------------------|---------------------------------|-----------------|----------|--------------|-----------------------|---------------|
-| Apply access controls to resources and resource creation   | Yes                             | No              | Yes      | No           | No                    | No            |
-| Secure virtual networks                                    | Yes                             | No              | No       | Yes          | No                    | No            |
-| Encrypt virtual drives                                     | No                              | Yes             | No       | No           | No                    | No            |
-| Encrypt PaaS storage and databases                         | No                              | Yes             | No       | No           | No                    | No            |
-| Manage hybrid identity services                            | No                              | No              | Yes      | No           | No                    | No            |
-| Restrict allowed types of resource                         | No                              | No              | No       | Yes          | No                    | No            |
-| Enforce geo-regional restrictions                          | No                              | No              | No       | Yes          | No                    | No            |
-| Monitor security health of networks and resources          | No                              | No              | No       | No           | Yes                   | Yes           |
-| Detect malicious activity                                  | No                              | No              | No       | No           | Yes                   | Yes           |
-| Preemptively detect vulnerabilities                        | No                              | No              | No       | No           | Yes                   | No            |
-| Configure backup and disaster recovery                     | Yes                             | No              | No       | No           | No                    | No            |
+### Review existing policies
 
-For a complete list of Azure security tools and services, see [Security services and technologies available on Azure](https://learn.microsoft.com/azure/security/fundamentals/services-technologies).
+As governance is an ongoing process, regularly review your policy with IT staff and stakeholders. You want to ensure that your resources hosted in the cloud maintain compliance with overall corporate goals and requirements. Your understanding of new risks and acceptable tolerance can fuel your review of existing policies. Reviewing your existing policies helps determine the level of governance that's right for your organization.
 
-Customers commonly use third-party tools to enable Security Baseline discipline activities. For more information, see the article [integrate security solutions in Microsoft Defender for Cloud](https://learn.microsoft.com/azure/security-center/security-center-partner-integration).
+### Create cloud policy statements
 
-In addition to security tools, [Compliance Management in Microsoft 365](https://www.microsoft.com/security/business/compliance/compliance-management) provides extensive guidance, reports, and related documentation that can help you perform risk assessments as part of your migration planning process.
+Cloud-based IT policies establish the requirements, standards, and goals that your IT staff and automated systems need to support. Policy decisions are a primary factor in your cloud architecture design and how you'll implement your policy adherence processes.
+
+Individual cloud policy statements are guidelines for addressing the specific risks you identify during your risk assessment process. While you can integrate these policies into your wider corporate policy documentation, cloud policy statements explored in the Cloud Adoption Framework guidance tend to be a more concise summary of the risks, and plans to deal with them. Include these pieces of information in each definition:
+
+- **Business risk:** A summary of the risk this policy addresses.
+- **Policy statement:** A concise explanation of the policy requirements and goals.
+- **Design or technical guidance:** Actionable recommendations, specifications, or other guidance to support and enforce this policy that IT teams and developers use when designing and building their cloud deployments.
+
+If you need help with defining your policies, consult the governance disciplines introduced in the governance section overview. The articles for these disciplines includes examples of common business risks encountered when moving to the cloud and sample policies to address the risks. For example, see the Cost Management discipline's sample policy definitions.
+
+### Incremental governance and integrating with existing policy
+
+Vet the planned additions to your cloud environment for compliance with existing policy. Update your policy to account for issues not already covered. You should also perform a regular cloud policy review to ensure your cloud policy is up-to-date and in sync with any new corporate policy.
+
+The need to integrate cloud policy with your legacy IT policies depends largely on the maturity of your cloud governance processes and the size of your cloud estate.
+
+## Align design with corporate policy - cloud governance design guides
+
+After you've defined cloud policies based on your identified risks, you'll need to generate actionable guidance that aligns with these policies for your IT staff and developers to refer to. Drafting a cloud governance design guide allows you to specify specific structural, technological, and process choices based on the policy statements you generated for each of the five governance disciplines.
+
+A cloud governance design guide should:
+
+* Establish the architecture choices and design patterns for each of the core infrastructure components of cloud deployments that best meet your policy requirements.
+* Provide a high-level explanation of the technology, tools, and processes that will support these design decisions.
+* Provide platform-specific implementation details that your IT and dev teams can use when creating and deploying cloud-based workloads
+* Focus on the architecture, tools, and features of your chosen platform when making design decision and providing guidance.
+
+While cloud design guides should take into account some of the technical details associated with each infrastructure component, they're not meant to be extensive technical documents or specifications. Make sure your guides address your policy statements and clearly state design decisions in a format easy for staff to understand and reference.
+
+## Implementing resource governance MVP
+
+A set of global policies and RBAC roles will provide a baseline level of governance enforcement. To meet the cloud governance team's policy requirements, implementing the governance MVP requires completing the following tasks:
+
+1.  Identify the Azure Policy definitions needed to enforce business requirements. This might include using built-in definitions and creating new custom definitions. To keep up with the pace of newly released built-in definitions, there's an [Atom feed](https://github.com/Azure/azure-policy/commits/master/built-in-policies.atom) of all the commits for built-in policies, which you can use for an RSS feed. Alternatively, you can check [`AzAdvertizer`](https://www.azadvertizer.net/).
+2.  Create a blueprint definition using these built-in and custom policy and the role assignments required by the governance MVP.
+3.  Apply policies and configuration globally by assigning the blueprint definition to all subscriptions.
+
+#### Identify policy definitions
+
+Azure provides several built-in policies and role definitions that you can assign to any management group, subscription, or resource group. Many common governance requirements can be handled using built-in definitions. However, it's likely that you will also need to create custom policy definitions to handle your specific requirements.
+
+Custom policy definitions are saved to either a management group or a subscription and are inherited through the management group hierarchy. If a policy definition's save location is a management group, that policy definition is available to assign to any of that group's child management groups or subscriptions.
+
+Since the policies required to support the governance MVP are meant to apply to all current subscriptions, the following business requirements will be implemented using a combination of built-in definitions and custom definitions created in the root management group:
+
+1.  Restrict the list of available role assignments to a set of built-in Azure roles authorized by your cloud governance team. This requires a custom policy definition.
+2.  Require the following tags on all resources: _Department/Billing Unit_, _Geography_, _Data Classification_, _Criticality_, _SLA_, _Environment_, _Application Archetype_, _Application_, and _Application Owner_. This can be handled using the `Require specified tag` built-in definition.
+3.  Require that the `Application` tag for resources should match the name of the relevant resource group. This can be handled using the `Require tag and its value` built-in definition.
+
+#### Assign Azure Policy and RBAC roles using Azure Blueprints
+
+Azure policies can be assigned at the resource group, subscription, and management group level, and can be included in Azure Blueprints definitions. Although the policy requirements defined in this governance MVP apply to all current subscriptions, it's very likely that future deployments will require exceptions or alternative policies. As a result, assigning policy using management groups, with all child subscriptions inheriting these assignments, may not be flexible enough to support these scenarios.
+
+Azure Blueprints allows consistent assignment of policy and roles, application of Resource Manager templates, and deployment of resource groups across multiple subscriptions. Like policy definitions, blueprint definitions are saved to management groups or subscriptions. The policy definitions are available through inheritance to any children in the management group hierarchy.
+
+The cloud governance team has decided that enforcement of required Azure Policy and RBAC assignments across subscriptions will be implemented through Azure Blueprints and associated artifacts:
+
+1.  In the root management group, create a blueprint definition named `governance-baseline`.
+2.  Add the following blueprint artifacts to the blueprint definition:
+    1.  Policy assignments for the custom Azure Policy definitions defined at the management group root.
+    2.  Resource group definitions for any groups required in subscriptions created or governed by the Governance MVP.
+    3.  Standard role assignments required in subscriptions created or governed by the Governance MVP.
+3.  Publish the blueprint definition.
+4.  Assign the `governance-baseline` blueprint definition to all subscriptions.
+
+See the [Azure Blueprints documentation](https://learn.microsoft.com/azure/governance/blueprints/overview) for more information on creating and using blueprint definitions.

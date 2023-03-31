@@ -44,7 +44,7 @@ To complete this article, you need the following resources:
     -   **LDAP Signing**
     -   **LDAP Channel Binding**
     
-    ![Screenshot of Security settings to disable weak ciphers and NTLM password hash sync.](https://learn.microsoft.com/azure/active-directory-domain-services/media/secure-your-domain/security-settings.png)
+    ![Screenshot of Security settings to disable weak ciphers and NTLM password hash sync.](../media/security-settings.png)
     
 
 <!--[](https://learn.microsoft.com/azure/active-directory-domain-services/secure-your-domain#assign-azure-policy-compliance-for-tls-12-usage)-->
@@ -56,7 +56,7 @@ In addition to **Security settings**, Microsoft Azure Policy has a **Complianc
 -   If the assignment is **Audit**, the compliance will report if the Azure AD DS instance is compliant.
 -   If the assignment is **Deny**, the compliance will prevent an Azure AD DS instance from being created if TLS 1.2 is not required and prevent any update to an Azure AD DS instance until TLS 1.2 is required.
 
-![Screenshot of Compliance settings.](https://learn.microsoft.com/azure/active-directory-domain-services/media/secure-your-domain/policy-tls.png)
+![Screenshot of Compliance settings.](../media/policy-transport-layer-security.png)
 
 <!--[](https://learn.microsoft.com/azure/active-directory-domain-services/secure-your-domain#audit-ntlm-failures)-->
 
@@ -74,3 +74,39 @@ Use either BitLocker or Azure disk encryption to encrypt the disk hosting the AD
 
 <!--[](https://learn.microsoft.com/azure/architecture/reference-architectures/identity/adds-extend-domain#devops-considerations)-->
 
+## Active Directory attack surface reduction
+<!--
+https://learn.microsoft.com/windows-server/identity/ad-ds/plan/security-best-practices/reducing-the-active-directory-attack-surface
+https://learn.microsoft.com/windows-server/identity/ad-ds/plan/security-best-practices/implementing-least-privilege-administrative-models
+https://learn.microsoft.com/windows-server/identity/ad-ds/plan/security-best-practices/implementing-secure-administrative-hosts
+https://learn.microsoft.com/windows-server/identity/ad-ds/plan/security-best-practices/securing-domain-controllers-against-attack
+-->
+This section focuses on technical controls to implement to reduce the attack surface of the Active Directory installation. The section contains the following information:
+
+### Implementing Least-Privilege Administrative Models
+
+The crux of the problem is twofold:
+
+- It is usually easy for an attacker to obtain deep privilege on a single computer and then propagate that privilege broadly to other computers.
+- There are usually too many permanent accounts with high levels of privilege across the computing landscape.
+
+### Implementing Secure Administrative Hosts
+
+To effectively secure systems against attacks, a few general principles should be kept in mind:
+
+- You should never administer a trusted system (that is, a secure server such as a domain controller) from a less-trusted host (that is, a workstation that is not secured to the same degree as the systems it manages).
+- You should not rely on a single authentication factor when performing privileged activities; that is, user name and password combinations should not be considered acceptable authentication because only a single factor (something you know) is represented. You should consider where credentials are generated and cached or stored in administrative scenarios.
+- Although most attacks in the current threat landscape leverage malware and malicious hacking, do not omit physical security when designing and implementing secure administrative hosts.
+
+### Securing Domain Controllers Against Attack 
+
+There are three primary aspects for securing Domain controllers:
+
+1. Physical Security for Domain Controllers - In datacenters, physical domain controllers should be installed in dedicated secure racks or cages that are separate from the general server population. If you implement virtual domain controllers, you should ensure that domain controllers also run on separate physical hosts than other virtual machines in the environment. 
+2. Domain Controller Operating Systems - You should run all domain controllers on the newest version of Windows Server that is supported within your organization. Organizations should prioritize decommissioning legacy operating systems in the domain controller population. 
+3. Secure Configuration of Domain Controllers - Tools can be used to create an initial security configuration baseline for domain controllers that can later be enforced by GPOs. These baselines should include things like:
+    - RDP Restrictions
+    - Patch and Configuration Management for Domain Controllers
+    - Blocking Internet Access for Domain Controllers
+    - Perimeter Firewall Restrictions
+    - Preventing Web Browsing from Domain Controllers

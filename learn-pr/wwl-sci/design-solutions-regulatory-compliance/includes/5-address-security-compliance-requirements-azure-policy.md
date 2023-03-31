@@ -9,7 +9,7 @@ We will cover the following keys to addressing security and compliance requireme
 
 ## Introduction to Azure Policy
 
-Azure Policy evaluates resources and actions in Azure by comparing the properties of those resources to business rules. These business rules, described in JSON format, are known as policy definitions. To simplify management, several business rules can be grouped together to form a policy initiative (sometimes called a _policySet_). Once your business rules have been formed, the policy definition or initiative is assigned to any scope of resources that Azure supports, such as management groups, subscriptions, resource groups, or individual resources. The assignment applies to all resources within the Resource Manager scope of that assignment. Subscopes can be excluded, if necessary. For more information, see Scope in Azure Policy.
+Azure Policy evaluates resources and actions in Azure by comparing the properties of those resources to business rules. These business rules, described in JSON format, are known as policy definitions. To simplify management, several business rules can be grouped together to form a policy initiative (sometimes called a _policySet_). Once your business rules have been formed, the policy definition or initiative is assigned to any scope of resources that Azure supports, such as management groups, subscriptions, resource groups, or individual resources. The assignment applies to all resources within the Resource Manager scope of that assignment. Subscopes can be excluded, if necessary.
 
 Azure Policy uses a JSON format to form the logic the evaluation uses to determine whether a resource is compliant or not. Definitions include metadata and the policy rule. The defined rule can use functions, parameters, logical operators, conditions, and property aliases to match exactly the scenario you want. The policy rule determines which resources in the scope of the assignment get evaluated.
 
@@ -17,10 +17,10 @@ Azure Policy uses a JSON format to form the logic the evaluation uses to deter
 
 Resources are evaluated at specific times during the resource lifecycle, the policy assignment lifecycle, and for regular ongoing compliance evaluation. The following are the times or events that cause a resource to be evaluated:
 
--   A resource is created or updated in a scope with a policy assignment.
--   A policy or initiative is newly assigned to a scope.
--   A policy or initiative already assigned to a scope is updated.
--   During the standard compliance evaluation cycle, which occurs once every 24 hours.
+- A resource is created or updated in a scope with a policy assignment.
+- A policy or initiative is newly assigned to a scope.
+- A policy or initiative already assigned to a scope is updated.
+- During the standard compliance evaluation cycle, which occurs once every 24 hours.
 
 ### Control the response to an evaluation
 

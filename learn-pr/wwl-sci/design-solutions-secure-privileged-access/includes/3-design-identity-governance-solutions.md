@@ -182,4 +182,4 @@ The following are a few of the best practices found in [Securing privileged acce
 * For external users
 
 **Best practice**: Implement “just in time” (JIT) access to further lower the exposure time of privileges and increase your visibility into the use of privileged accounts.   
-**Detail**: Azure AD Privileged Identity Management lets you:
+**Detail**: Azure AD Privileged Identity Management provides this capability.

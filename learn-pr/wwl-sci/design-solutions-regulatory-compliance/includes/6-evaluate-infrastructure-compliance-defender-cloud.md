@@ -5,6 +5,7 @@ When you enable Defender for Cloud on an Azure subscription, the [Microsoft clo
 The regulatory compliance dashboard shows the status of all the assessments within your environment for your chosen standards and regulations. As you act on the recommendations and reduce risk factors in your environment, your compliance posture improves.
 
 ## Security policies and recommendations
+
 A security policy defines the desired configuration of your workloads and helps ensure compliance with company or regulatory security requirements. In Defender for Cloud, you can define policies for your Azure subscriptions, which can be tailored to the type of workload or the sensitivity of data.
 
 Defenders for Cloud policies contain the following components:
