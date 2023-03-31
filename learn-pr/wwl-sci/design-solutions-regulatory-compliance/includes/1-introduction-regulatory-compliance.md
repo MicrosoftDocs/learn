@@ -24,9 +24,7 @@ Compliance is challenging for multinational organizations, especially in heavily
 As with security controls, organizations should understand the division of responsibilities regarding regulatory compliance in the cloud. Cloud providers strive to ensure that their platforms and services are compliant. Organizations also need to confirm that their applications, the infrastructure those applications depend on, and services supplied by third parties are also certified as compliant.
 
 ## Regulatory compliance as part of Governance
-<!--
-https://learn.microsoft.com/azure/cloud-adoption-framework/govern/methodology
--->
+
 ![Diagram showing the Cloud Adoption Framework governance model.](../media/operational-transformation-govern-large.png)
 
 The Cloud Adoption Framework governance model identifies key areas of importance during the journey. Each area relates to different types of risks the company must address as it adopts cloud services. Within this framework, the governance guide identifies required actions for the cloud governance team. Along the way, each principle of the Cloud Adoption Framework governance model is described further.

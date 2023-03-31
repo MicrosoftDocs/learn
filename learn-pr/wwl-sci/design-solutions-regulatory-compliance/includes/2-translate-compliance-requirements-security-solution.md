@@ -64,18 +64,11 @@ While cloud design guides should take into account some of the technical details
 
 ## Implementing resource governance MVP
 
-<!--
-https://learn.microsoft.com/azure/cloud-adoption-framework/govern/guides/standard/
--->
-
 A set of global policies and RBAC roles will provide a baseline level of governance enforcement. To meet the cloud governance team's policy requirements, implementing the governance MVP requires completing the following tasks:
 
 1.  Identify the Azure Policy definitions needed to enforce business requirements. This might include using built-in definitions and creating new custom definitions. To keep up with the pace of newly released built-in definitions, there's an [Atom feed](https://github.com/Azure/azure-policy/commits/master/built-in-policies.atom) of all the commits for built-in policies, which you can use for an RSS feed. Alternatively, you can check [`AzAdvertizer`](https://www.azadvertizer.net/).
 2.  Create a blueprint definition using these built-in and custom policy and the role assignments required by the governance MVP.
 3.  Apply policies and configuration globally by assigning the blueprint definition to all subscriptions.
-<!--
-[](https://learn.microsoft.com/azure/cloud-adoption-framework/govern/guides/standard/#identify-policy-definitions)
--->
 
 #### Identify policy definitions
 
@@ -88,10 +81,6 @@ Since the policies required to support the governance MVP are meant to apply to 
 1.  Restrict the list of available role assignments to a set of built-in Azure roles authorized by your cloud governance team. This requires a custom policy definition.
 2.  Require the following tags on all resources: _Department/Billing Unit_, _Geography_, _Data Classification_, _Criticality_, _SLA_, _Environment_, _Application Archetype_, _Application_, and _Application Owner_. This can be handled using the `Require specified tag` built-in definition.
 3.  Require that the `Application` tag for resources should match the name of the relevant resource group. This can be handled using the `Require tag and its value` built-in definition.
-
-<!--
-[](https://learn.microsoft.com/azure/cloud-adoption-framework/govern/guides/standard/#assign-azure-policy-and-rbac-roles-using-azure-blueprints)
--->
 
 #### Assign Azure Policy and RBAC roles using Azure Blueprints
 
