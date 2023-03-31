@@ -37,14 +37,3 @@ quiz:
     - content: "Reprovisioning"
       isCorrect: true
       explanation: "Correct. Reprovisioning is a unique action for Cloud PCs."
-  - content: "Which of the following features is exclusive to Windows 365 Enterprise and not available in Windows 365 Business?"
-    choices:
-    - content: "Windows Virtual Desktop"
-      isCorrect: false
-      explanation: "Incorrect. Windows Virtual Desktop is available in both Windows 365 Business and Windows 365 Enterprise."
-    - content: "Windows 365 Pro"
-      isCorrect: true
-      explanation: "Correct. Windows 365 Pro is only available in Windows 365 Enterprise."
-    - content: "Cloud PC"
-      isCorrect: false
-      explanation: "Incorrect. Cloud PC is available in both Windows 365 Business and Windows 365 Enterprise."

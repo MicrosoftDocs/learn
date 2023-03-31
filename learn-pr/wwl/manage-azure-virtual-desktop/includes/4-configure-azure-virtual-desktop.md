@@ -119,7 +119,7 @@ To enable connections from all of the Remote Desktop clients, you'll need to add
 
 You're ready to connect to the desktop. The desktop takes longer to load the first time as the profile is being created, however subsequent connections will be quicker.
 
-> [!IMPORTANT]
-Make sure the user account you're using to connect has been assigned the *Virtual Machine User Login* or *Virtual Machine Administrator Login* RBAC role on the subscription, session host VM, or the resource group containing the VM, as mentioned in the prerequisites, else you won't be able to connect.
+>[!IMPORTANT]
+>Make sure the user account you're using to connect has been assigned the *Virtual Machine User Login* or *Virtual Machine Administrator Login* RBAC role on the subscription, session host VM, or the resource group containing the VM, as mentioned in the prerequisites, else you won't be able to connect.
 
-Select the relevant tab below and follow the steps, depending on which Remote Desktop client you're using. We've only listed the steps here for Windows, Web and macOS, but if you want to connect using one of our other Remote Desktop clients, see [Remote Desktop clients for Azure Virtual Desktop.](/virtual-desktop/users/remote-desktop-clients-overview)
+Select the relevant tab below and follow the steps, depending on which Remote Desktop client you're using. We've only listed the steps here for Windows, Web and macOS, but if you want to connect using one of our other Remote Desktop clients, see [Remote Desktop clients for Azure Virtual Desktop.](/azure/virtual-desktop/users/remote-desktop-clients-overview)
