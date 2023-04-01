@@ -181,7 +181,7 @@ Here is another example. Suppose you want to use the .NET Core samples Docker im
 
 - `mcr.microsoft.com/dotnet/core/samples:wcfclient`
 
-On the list of images above we can see that Microsoft provides multiple samples of .Net Core. Tags are used in this case to say which samples the image refers to: ASP.Net, WCF Service, etc.
+On the list of images above we can see that Microsoft provides multiple samples of .NET Core. Tags are used in this case to say which samples the image refers to: ASP.NET, WCF Service, etc.
 
 ## How to list images
 
