@@ -29,12 +29,3 @@ Playbooks in Microsoft Sentinel are based on workflows built in [Azure Logic Ap
 
 Learn more with this [complete explanation of playbooks](https://learn.microsoft.com/azure/sentinel/automate-responses-with-playbooks).
 
-## Microsoft Defender in SOAR solutions
-
-**[Microsoft Defender for Cloud](https://learn.microsoft.com/azure/security-center/)** is an advanced, unified security-management platform that Microsoft offers to all Azure subscribers. Defender for Cloud is segmented as a cloud security posture management (CSPM) and cloud workload protection platform (CWPP). 
-
-CWPP is defined by workload-centric security protection solutions, which are typically agent-based. Microsoft Defender for Cloud provides threat protection for Azure workloads, both on-premises and in other clouds, including Windows and Linux virtual machines (VMs), containers, databases, and Internet of Things (IoT). When activated, the Log Analytics agent deploys automatically into Azure Virtual Machines. 
-
-For on-premises Windows and Linux servers and VMs, you can manually deploy the agent, use your organization's deployment tool, such as Microsoft Endpoint Protection Manager, or utilize scripted deployment methods. Defender for Cloud begins assessing the security state of all your VMs, networks, applications, and data.
-
-Microsoft Defender works in conjunction with Microsoft Sentinel to provide SOAR capabilities. For more information see [Hybrid security monitoring with Microsoft Sentinel - Azure Architecture Center | Microsoft Learn](https://learn.microsoft.com/azure/architecture/hybrid/hybrid-security-monitoring).

@@ -47,11 +47,7 @@ The following security baseline instances are available for use with Intune. Use
     -   [Version 5](https://learn.microsoft.com/mem/intune/protect/security-baseline-settings-defender-atp?pivots=atp-sept-2020)
     -   [Version 4](https://learn.microsoft.com/mem/intune/protect/security-baseline-settings-defender-atp?pivots=atp-april-2020)
     -   [Version 3](https://learn.microsoft.com/mem/intune/protect/security-baseline-settings-defender-atp?pivots=atp-march-2020)
-    
-     Note
-    
-    The Microsoft Defender for Endpoint security baseline has been optimized for physical devices and is currently not recommended for use on virtual machines (VMs) or VDI endpoints. Certain baseline settings can impact remote interactive sessions on virtualized environments. For more information, see [Increase compliance to the Microsoft Defender for Endpoint security baseline](https://learn.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline) in the Windows documentation.
-    
+       
 -   **Microsoft Edge Baseline**
     
     -   [September 2020 (Edge version 85 and later)](https://learn.microsoft.com/mem/intune/protect/security-baseline-settings-edge?pivots-edge-sept-2020)
