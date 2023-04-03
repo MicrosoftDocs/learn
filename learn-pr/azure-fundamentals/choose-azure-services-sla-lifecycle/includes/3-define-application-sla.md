@@ -1,4 +1,4 @@
-An *application SLA* defines the SLA requirements for a specific application. This term typically refers to an application that _you_ build on Azure.
+An *application SLA* defines the SLA requirements for a specific application. This term typically refers to an application that *you* build on Azure.
 
 Tailwind Traders runs an application that it built on Azure called "Special Orders." The application tracks special orders that customers have placed in the company's retail stores. A special order includes an item and any customizations the customer needs. For example, a folding door might include customizations such as dimension and hinge placement. Because customizations typically require special handling, the customized item needs to be ordered from the supplier when a customer needs it.
 
@@ -12,7 +12,7 @@ If the Special Orders application goes down, what would the business impact be? 
 
 ## Effect on other business operations
 
-The Special Orders application doesn't affect other operations. So the majority of the Tailwind Traders business will continue to function normally if the Special Orders application went down.
+The Special Orders application doesn't affect other operations. So, the majority of the Tailwind Traders business will continue to function normally if the Special Orders application went down.
 
 ## Usage patterns
 
@@ -24,6 +24,6 @@ For Tailwind Traders, retail stores aren't open 24 hours a day, so if the applic
 
 ## What does the team decide?
 
-Let's say that Tailwind Traders decides that an SLA of 99.9 percent is acceptable for the Special Orders application. This gives the company an estimated downtime of 10.1 minutes per week. But how will it ensure that its technology choices support its application SLA?
+Let's say that Tailwind Traders decides that an SLA of 99.9 percent is acceptable for the Special Orders application. This SLA gives the company an estimated downtime of 10.1 minutes per week. But how will it ensure that its technology choices support its application SLA?
 
 In the next part, you'll see how the team maps its application requirements to specific Azure services. You'll learn about some of the techniques you can use to help ensure that your technology choices meet your application SLA.

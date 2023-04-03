@@ -2,7 +2,7 @@ Let's say you're a developer at a casual games company. You've been asked to wri
 
 ## Create a deck of cards
 
-A card deck has 52 cards, of course, but to make it easier to read the console print, let's reduce the deck to five cards. You can create a number series by inserting two dots (`..`), surrounded by spaces, between the first and last numbers in the list.
+A card deck has 52 cards, but to make it easier to read the console print, let's reduce the deck to five cards. You can create a number series by inserting two dots (`..`), surrounded by spaces, between the first and last numbers in the list.
 
 1. In the console, create a new project by running `dotnet new`:
 
@@ -47,7 +47,7 @@ Congratulations! You've implemented a deck that you can draw cards from.
 
 ## Draw cards to a hand
 
-The ability to draw cards from the deck is a great start, but card games ordinarily need two or more players to pick up those cards. As you know, each player's collection of drawn cards is called a *hand*. Next, you'll implement code to have each drawn card added to a hand.
+The ability to draw cards from the deck is a great start, but card games ordinarily need two or more players to pick up those cards. As you know, each player's collection of drawn cards is called a *hand*. Next, you need to implement code to have each drawn card added to a hand.
 
 1. In the code where you declared the `cards` list, add the following code:
 

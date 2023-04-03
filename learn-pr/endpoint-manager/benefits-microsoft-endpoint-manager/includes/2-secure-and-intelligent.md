@@ -1,8 +1,8 @@
-Microsoft Endpoint Manager provides native integration with cloud-powered security controls and risk-based Conditional Access for apps and data, which provides intelligent and unified endpoint security.
+Microsoft Intune provides native integration with cloud-powered security controls and risk-based Conditional Access for apps and data, which provides intelligent and unified endpoint security.
 
 ## Intelligent security
 
-Endpoint Manager enables a unique set of capabilities to simplify endpoint security management, which includes:
+Intune enables a unique set of capabilities to simplify endpoint security management, which includes:
 
 - **Security Baselines**: Simplify migration to policy settings using security baselines. Security baselines are pre-configured groups of Windows settings that help you apply a known group of settings and default values that we recommend. When you create a security baseline profile in Intune, you're creating a template that consists of multiple *device configuration* profiles.
 - **BitLocker Management**: BitLocker-based modern encryption management. BitLocker is a data-protection feature that integrates with the Windows 10/11 operating system, and addresses the threats of data theft or exposure from lost, stolen, or inappropriately decommissioned computers.
@@ -16,9 +16,9 @@ The following image shows the tools to endpoint security management, as well as 
 
 ## Unified security
 
-You can securely access corporate resources through continuous assessment and intent-based policies with Conditional Access app control, powered by Azure Active Directory (Azure AD) and natively integrated in Microsoft Endpoint Manager. Unified security management with Microsoft Defender for Endpoint Manager enables quick, automated remediation of app vulnerabilities.
+You can securely access corporate resources through continuous assessment and intent-based policies with Conditional Access app control, powered by Azure Active Directory (Azure AD) and natively integrated in Microsoft Intune. Unified security management with Microsoft Defender for Intune enables quick, automated remediation of app vulnerabilities.
 
-Microsoft Endpoint Manager helps ensure cross-platform device controls to help manage your Zero Trust endpoint strategy, which includes:
+Microsoft Intune helps ensure cross-platform device controls to help manage your Zero Trust endpoint strategy, which includes:
 
 - **Endpoint compliance and risk:**
   - Adapt in real time to changes in device health

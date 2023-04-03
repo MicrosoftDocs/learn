@@ -1,4 +1,5 @@
-Since a columnstore index scans a table by scanning column segments of individual rowgroups, maximizing the number of rows in each rowgroup enhances query performance. When rowgroups have a high number of rows, data compression improves which means there is less data to read from disk. The number of rows in a rowgroup determines the rowgroup's quality.
+
+Since a columnstore index scans a table by scanning column segments of individual row groups, maximizing the number of rows in each row group enhances query performance. When rowgroups have a high number of rows, data compression improves which means there is less data to read from disk. The number of rows in a rowgroup determines the rowgroup's quality.
 
 For best query performance, the goal is to maximize the number of rows per rowgroup in a columnstore index. A rowgroup can have a maximum of 1,048,576 rows. It's okay to not have the maximum number of rows per rowgroup. Columnstore indexes achieve good performance when rowgroups have at least 100,000 rows.
 

@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-visual-studio-code-debugging-tools.examine-launch-configurations
+title: Examine the launch configurations file
+metadata:
+  title: Examine the launch configurations file
+  description: "Examine the launch configurations file"
+  ms.date: 03/24/2023
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 11
+content: |
+  [!include[](includes/6-examine-launch-configurations.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A developer updates a launch configuration. What is the **name** attribute used for?"
+    choices:
+    - content: "To specify the type of debugger used in a launch configuration."
+      isCorrect: false
+      explanation: "Incorrect. The **type** attribute specifies the type of debugger to use for a launch configuration."
+    - content: "To specify the request type of a launch configuration."
+      isCorrect: false
+      explanation: "Incorrect. The **request** attribute specifies the request type of a launch configuration."
+    - content: "To specify the display name for a configuration."
+      isCorrect: true
+      explanation: "Correct. The name attribute specifies the display name for the configuration. The value assigned to name appears in the controls panel at the top of the RUN AND DEBUG view."
+  - content: "A developer is working on a launch configuration. What is the **preLaunchTask** attribute used for?"
+    choices:
+    - content: "To specify the path of the application dll or .NET Core host executable to launch."
+      isCorrect: false
+      explanation: "Incorrect. The **program** attribute specifies the path of the application dll or .NET Core host executable to launch."
+    - content: "To specify a task to run before debugging your program."
+      isCorrect: true
+      explanation: "Correct. The **preLaunchTask** attribute specifies a task to run before debugging the program. The task itself can be found in the tasks.json file, which is in the `.vscode` folder along with the launch.json file. Specifying a prelaunch task of **build** runs a `dotnet build` command before launching the application."
+    - content: "To specify the type of console that's used when the application is launched."
+      isCorrect: false
+      explanation: "Incorrect. The **console** attribute specifies the type of console that's used when the application is launched."
+  - content: "What is the **console** attribute of a launch configuration used for?"
+    choices:
+    - content: "Specifies the working directory of the target process."
+      isCorrect: false
+      explanation: "Incorrect. The **cwd** attribute specifies the working directory of the target process."
+    - content: "Specifies the type of debugger to use for this launch configuration."
+      isCorrect: false
+      explanation: "Incorrect. The **type** attribute specifies the type of debugger to use for this launch configuration."
+    - content: "Specifies the type of console that's used when the application is launched."
+      isCorrect: true
+      explanation: "Correct. The **console** attribute specifies the type of console that's used when the application is launched. The options are **internalConsole**, **integratedTerminal**, and **externalTerminal**. The default setting is **internalConsole**."

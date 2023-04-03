@@ -1,3 +1,4 @@
+
 Perform the following steps to compare storage requirements between optimal and suboptimal column data types
 
 1. Use the following query to create two tables (`Sale_Hash_Projection` and `Sale_Hash_Projection2`) which contain a subset of the columns from `Sale_Heap`:

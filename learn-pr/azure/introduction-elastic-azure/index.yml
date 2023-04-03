@@ -4,7 +4,7 @@ metadata:
   moduleType: introduction
   title: Introduction to Elastic on Azure
   description: Evaluate whether Elastic on Azure is appropriate for your Linux workload.
-  ms.date: 06/15/2021
+  ms.date: 03/21/2023
   author: yenchiho
   ms.author: yenchiho
   ms.topic: interactive-tutorial

@@ -5,11 +5,11 @@ metadata:
   unitType: learning-content
   title: Create and use Bicep modules
   description: Learn about the benefits of Bicep modules, and the basic syntax to create and use modules. Also, learn how modules relate to Azure deployments.
-  ms.date: 10/10/2021
+  ms.date: 03/27/2023
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 7
+durationInMinutes: 10
 content: |
   [!include[](includes/2-create-use-bicep-modules.md)]

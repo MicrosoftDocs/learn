@@ -1,5 +1,6 @@
 
 
+
 Azure Resource Manager Templates for deployments of infrastructure for SAP on Azure can be complex, so you will want to use existing resources. The [Azure Quickstart Templates](https://azure.microsoft.com/resources/templates/) and the [Azure Marketplace](https://portal.azure.com/#blade/Microsoft_Azure_Marketplace/MarketplaceOffersBlade/selectedMenuItemId/home) in the Azure portal are good resources to search for examples.
  
 ## Using a Marketplace Template: Infrastructure for SAP NetWeaver and SAP HANA example
@@ -116,7 +117,7 @@ Examine the Resource Manager template to get a better understanding of its struc
 
 To access Azure Resource Manager Templates for your previous deployments, navigate to **Settings** > **Deployments**, select your resource group, and select a deployment from the list. You will see an overview of the deployment resources and can select **Template** to download the Template and Parameters or deploy the template in the portal.
 
-    :::image type="content" source="../media/marketplace-11.png" alt-text="Screenshot of Azure portal, template deployment.":::
+:::image type="content" source="../media/marketplace-11.png" alt-text="Screenshot of Azure portal, template deployment.":::
 
 ## Deploying Azure Resource Manager using the CLI
 

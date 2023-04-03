@@ -3,7 +3,7 @@ uid: learn.wwl.explore-azure-iot-services
 metadata:
   title: Explore Azure IoT services
   description: "This module introduces you to features of IoT Hub and IoT Hub Device Provisioning Service resources, and provides you with experience creating these services."
-  ms.date: 07/18/2022
+  ms.date: 04/03/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
@@ -12,13 +12,13 @@ title: Explore Azure IoT services
 summary: This module introduces you to features of IoT Hub and IoT Hub Device Provisioning Service resources, and provides you with experience creating these services.
 abstract: |
   After you complete this module, you will be able to:
-  - Describe features of the Azure IoT Hub and Device Provisioning Service resources.
-  - Explain Azure resource naming requirements.
-  - Create and examine Azure IoT Hub and Device Provisioning Service resources in the Azure portal.
+  *   Describe features of the Azure IoT Hub and Device Provisioning Service resources.
+  *   Explain Azure resource naming requirements.
+  *   Create and examine Azure IoT Hub and Device Provisioning Service resources in the Azure portal.
 prerequisites: |
   Ability to:
-  - Demonstrate a general understanding of cloud-based solutions, Azure, and Azure services.
-  - Configure and use the Azure portal toolbar, navigation menu, and dashboard.
+  *   Demonstrate a general understanding of cloud-based solutions, Azure, and Azure services.
+  *   Configure and use the Azure portal toolbar, navigation menu, and dashboard.
 iconUrl: /training/achievements/iot-explore-services.svg
 levels:
 - intermediate
