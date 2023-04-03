@@ -1,7 +1,7 @@
 
-Building on their use in MDT, boot images are Windows Preinstallation Environment (Windows PE) images that are used to start a Windows deployment. You can start boot images from a CD or DVD, an ISO file, a USB device, or over the network using a Pre-Boot Execution Environment (PXE) server. The boot images connect to the deployment share on the server and start the deployment. The creation process for a boot image in Configuration Manager is like that in MDT. Configuration Manager also allows the creation of an MDT boot image within its own UI when both tools are integrated.<br>
+Boot images in MDT and Configuration Manager are Windows PE images that initiate a Windows deployment, accessed through various mediums such as CD, ISO, USB or network. The boot images then connect to the deployment share to begin the deployment. Configuration Manager also allows for the creation of MDT boot images within its UI when both tools are integrated.
 
-Configuration Manager provides two default boot images: One to support x86 platforms and the other to support x64 platforms. These images are stored in the i386 or x64 folders in the following share on the site server:
+Configuration Manager provides two default boot images: One to support x86 platforms and the other to support x64 platforms. These images are stored in the `i386` or `x64` folders in the following share on the site server:
 
 **\\\\&lt;SiteServerName&gt;\\SMS\_&lt;sitecode&gt;\\osd\\boot\\**
 
@@ -25,7 +25,7 @@ OS images after often used for the output of a capture task sequence and where e
 
 #### **Operating System Upgrade Packages**
 
-Operating system upgrade packages are the source setup files for an operating system, such as Windows 10 or Windows 11. You can also use this package to deliver a vanilla image down onto a device. You import operating system upgrade packages to Configuration Manager from a DVD or mounted ISO file.
+Operating system upgrade packages serve as the source files for an OS upgrade or to deliver a vanilla image. These packages are imported to Configuration Manager from a mounted ISO or DVD.
 
 #### Device Drivers
 

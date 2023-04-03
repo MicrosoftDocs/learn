@@ -32,7 +32,7 @@ Traditionally, Configuration Manager admins have used both Configuration Manager
 
 With the advancements of Windows and Configuration Manager, along with the support of PowerShell integration, many of the previously innovative options of MDT can now be done in a different way. Many admins have chosen to use these new advancements in place of where MDT was once used.
 
-As mentioned previously, when planning and strategizing your OS needs, the scenario and deployment methods you use should dictate the toolset you select rather than using them simply because they were always used. An array of tools exists across MDT and Configuration Manager, and these decisions will help you plan, which is the most appropriate to use. Because both MDT and Configuration Manager share similarities, the needs of an organization will help to outline whether a combination of the two, or one specific tool, is the best choice for the Desktop admin.
+As mentioned previously, when planning and strategizing your OS needs, the scenario and deployment methods you use should dictate the toolset you select rather than using them simply because they were always used. An array of tools exists across MDT and Configuration Manager, and these decisions will help you plan, which is the most appropriate to use. Because MDT and Configuration Manager share similarities, an organization's needs will help outline whether combining the two or one specific tool is the best choice for the Desktop admin.
 
 ### Configuration Manager overview
 
