@@ -1,4 +1,4 @@
-You've learned a bit about how query languages function, and why you might use them. In this unit, you'll explore the way a KQL query is built.
+You've learned a bit about how query languages function, and where you might use them. In this unit, you'll explore the way a KQL query is built.
 
 ## KQL query structure
 
@@ -10,11 +10,15 @@ These two query structures are represented in the following schematic image:
 
 :::image type="content" source="../media/kql-sql-structures.png" alt-text="Schematic diagram showing the order of query elements in SQL vs KQL languages.":::
 
-## Funnel of data processing
+## Data processing
 
-We mentioned a 'data funnel' because it's a great way to visualize how KQL processes data. Each KQL query begins with reference to a tabular input, which is the beginning of the funnel of data. This data is "piped" into the next line, and filtered or manipulated using an operator. The operator returns surviving data that is piped into the subsequent line, and so on until we get to the final query output. The query output is returned in a tabular format, which can also be rendered into visualizations.
+ Imagine the data going through a data processing funnel. Each KQL query begins with reference to a tabular input, which is the beginning of the funnel of data. This data is "piped" into the next line, and filtered or manipulated using an operator. The "surviving" data coming out of the operator is piped into the subsequent line, and so on until arriving at the final query output. This query output is returned in a tabular format, which can also be rendered into visualizations.
+
+:::image type="content" source="../media/kql-funnel.png" alt-text="Schematic image of data being processed by a funnel.":::
 
 ## Types of KQL queries
+
+
 
 ## Functions
 
