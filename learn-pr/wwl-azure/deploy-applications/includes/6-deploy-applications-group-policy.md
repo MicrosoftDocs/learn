@@ -5,7 +5,7 @@ Windows Server 2022 and later includes a feature called Software Installation an
 
 The software lifecycle consists of four phases: preparation, deployment, maintenance, and removal.
 
-:::image type="content" source="../media/deployment-lifecycle-edc0b417.png" alt-text="Diagram showing the four software lifecycle phases":::
+:::image type="content" source="../media/deployment-lifecycle-edc0b417.png" alt-text="Diagram showing the four software lifecycle phases.":::
 
 
 You can use Group Policy to manage all phases except the preparation. You can apply Group Policy settings to users or computers in a site, domain, or organizational unit (OU) to install, upgrade, or remove software automatically.
@@ -28,13 +28,13 @@ For larger organizations, especially organizations that have more than 500 compu
 
 #### How Windows Installer enhances software distribution
 
-To enable Group Policy to deploy and manage software, Windows Server 2022 or later uses the Windows Installer service. This component automates the installation and removal of applications by applying a set of centrally defined setup rules during the installation process. The Windows Installer service installs the .msi package files. .msi files contain a database that stores all the instructions required to install the application. Small applications may be entirely stored as .msi files, whereas other larger applications will have many associated source files that the MSI references. Many software vendors provide .msi files for their applications.
+To enable Group Policy to deploy and manage software, Windows Server 2022 or later uses the Windows Installer service. This component automates the installation and removal of applications by applying a set of centrally defined setup rules during the installation process. The Windows Installer service installs the `.msi` package files. `.msi` files contain a database that stores all the instructions required to install the application. Small applications may be entirely stored as `.msi` files, whereas other larger applications will have many associated source files that the MSI references. Many software vendors provide `.msi` files for their applications.
 
 The Windows Installer service has the following characteristics:
 
  -  This service runs with elevated privileges, so that the Windows Installer service can install software regardless of which user is signed into the system. Users only require read access to the software distribution point.
  -  Applications are resilient. If an application becomes corrupted, the installer will detect and reinstall or repair the application.
- -  Windows Installer can't install .exe files. To distribute a software package that installs with an .exe file, you must convert the .exe file must to an .msi file by using a third-party utility.
+ -  Windows Installer can't install `.exe` files. To distribute a software package that installs with an `.exe` file, you must convert the `.exe` file must to an `.msi` file by using a third-party utility.
 
 #### Manage software upgrades by using Group Policy
 

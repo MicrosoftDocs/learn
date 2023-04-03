@@ -10,7 +10,7 @@ The Microsoft Store for Business platform enables you to procure apps for your o
 >[!IMPORTANT]
 >Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. However, admins can still leverage the connection to Store for Business and Education from their UEM solution to deploy apps to managed Windows 11 devices until they are retired in 2023.
 
-Starting March 31, 2023, Intune enables administrators to browse, deploy, and monitor Microsoft Store applications. Once deployed, the apps are automatically updated to the latest version by Intune. The Microsoft Store now supports various types of apps, including UWP apps, desktop apps packaged in .msix, and Win32 apps packaged in .exe or .msi installers.
+Starting March 31, 2023, Intune enables administrators to browse, deploy, and monitor Microsoft Store applications. Once deployed, the apps are automatically updated to the latest version by Intune. The Microsoft Store now supports various types of apps, including UWP apps, desktop apps packaged in `.msix`, and Win32 apps packaged in `.exe` or `.msi` installers.
 
 >[!IMPORTANT]
 >There are key improvements to the most recent Microsoft Store apps functionality over legacy functionality. Specifically, the following differences:
