@@ -1,10 +1,10 @@
 
-The **Microsoft cloud security benchmark (MCSB)** provides prescriptive best practices and recommendations to help **improve the security of workloads**, **data**, and **services** on **Azure** and your **multi-cloud environment**. This benchmark focuses on **cloud-centric control areas** with input from a set of **holistic Microsoft** and **industry security guidance** that includes:
+The **Microsoft cloud security benchmark (MCSB)** provides **prescriptive best practices** and **recommendations** to help improve the security of workloads, data, and services on Azure and your multi-cloud environment, focusing on cloud-centric control areas with input from a set of holistic Microsoft and industry security guidance that includes:
 
- -  Cloud Adoption Framework: Guidance on **security**, including **strategy**, **roles** and **responsibilities**, **Azure Top 10 Security Best Practices**, and **reference implementation**.
- -  Azure Well-Architected Framework: Guidance on securing your workloads on Azure.
- -  The Chief Information Security Officer (CISO) Workshop: Program guidance and reference strategies to accelerate security modernization using Zero Trust principles.
- -  Other industry and cloud service provider's security best practice standards and framework: Examples include the Amazon Web Services (AWS) Well-Architected Framework, Center for Internet Security (CIS) Controls, National Institute of Standards and Technology (NIST), and Payment Card Industry Data Security Standard (PCI-DSS).
+ -  **Cloud Adoption Framework**: Guidance on **security**, including **strategy**, **roles** and **responsibilities**, **Azure Top 10 Security Best Practices**, and **reference implementation**.
+ -  **Azure Well-Architected Framework**: Guidance on securing your workloads on Azure.
+ -  **The Chief Information Security Officer (CISO) Workshop**: Program guidance and reference strategies to accelerate security modernization using Zero Trust principles.
+ -  **Other industry and cloud service provider's security best practice standards and framework**: Examples include the Amazon Web Services (**AWS**) Well-Architected Framework, Center for Internet Security (**CIS**) Controls, National Institute of Standards and Technology (**NIST**), and Payment Card Industry Data Security Standard (**PCI-DSS**).
 
 ## Microsoft cloud security benchmark features
 
@@ -21,7 +21,7 @@ The **Microsoft cloud security benchmark (MCSB)** provides prescriptive best pra
 
 **Example: Microsoft Defender for Cloud - Regulatory compliance dashboard**
 
-:::image type="content" source="../media/microsoft-cloud-security-benchmark-regulatory-compliance-dashboard-7d983321.png" alt-text="Screenshot showing example of the Regulatory compliance dashboard.":::
+:::image type="content" source="../media/microsoft-defender-for-cloud-regulatory-compliance-dashboard-example-0888f689.png" alt-text="Screenshot showing an example of the Microsoft Defender for Cloud Regulatory compliance dashboard.":::
 
 
 **Azure guidance and security principles**: Azure security guidance, security principles, features, and capabilities.

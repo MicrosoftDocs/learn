@@ -3,11 +3,11 @@
 
 Using the **policies**, Defender for Cloud periodically analyzes the compliance status of your resources to identify potential security misconfigurations and weaknesses. It then provides you with recommendations on how to remediate those issues. Recommendations result from assessing your resources against the relevant policies and identifying resources that aren't meeting your defined requirements.
 
-Defender for Cloud **makes its security recommendations based on your chosen initiatives**. When a policy from your initiative is compared against your resources and finds one or more that aren't compliant, it is presented as a recommendation in Defender for Cloud.
+Defender for Cloud **makes its security recommendations based on your chosen initiatives**. When a policy from your initiative is compared against your resources and finds one or more that isn't compliant, it's presented as a recommendation in Defender for Cloud.
 
-### Example: Microsoft Defender for Cloud - All recommendations
+**Example:** Microsoft Defender for Cloud - All recommendations
 
-:::image type="content" source="../media/all-recommendations-page-vm-management-ports-fef6c2d0.png" alt-text="Screenshot showing an example of the Microsoft Defender for Cloud All recommendations page in the Azure dashboard.":::
+:::image type="content" source="../media/microsoft-defender-for-cloud-all-recommendations-dashboard-version-1-585ea134.png" alt-text="Screenshot showing an example of the Microsoft Defender for Cloud All recommendations dashboard.":::
 
 
 **Recommendations** are actions for you to take to secure and harden your resources. Each recommendation provides you with the following information:
@@ -26,7 +26,7 @@ In practice, it works like this:
     To continue the example, the storage requirement is enforced with the policy "**Storage accounts should restrict network access using virtual network rules**."
 3.  Microsoft Defender for Cloud continually assesses your connected subscriptions. If it finds a resource that doesn't satisfy a policy, it displays a ***recommendation*** to fix that situation and harden the security of resources that aren't meeting your security requirements.
     
-    For example, if an Azure Storage account on your protected subscriptions isn't protected with virtual network rules, you'll see the recommendation to harden those resources.
+    For example, if an Azure Storage account on your protected subscriptions isn't protected with virtual network rules, you see the recommendation to harden those resources.
 
 So, (1) **an initiative includes** (2) **policies that generate** (3) **environment-specific recommendations**.
 
@@ -68,7 +68,7 @@ The recommendation details shown are:
     > If a related recommendation is grayed out, its dependency isn't yet completed or available.
 8.  **Remediation steps** \- A description of the manual steps required to remediate the security issue on the affected resources. For recommendations with the Fix option, you can **select View remediation logic** before applying the suggested fix to your resources.
 9.  **Affected resources** \- Your resources are grouped into tabs:
-     -  **Healthy resources** – Relevant resources that either aren't impacted or on which you've already remediated the issue.
+     -  **Healthy resources** – Relevant resources that either aren't impacted or on which you have already remediated the issue.
      -  **Unhealthy resources** – Resources that are still impacted by the identified issue.
      -  **Not applicable resources** – Resources for which the recommendation can't give a definitive answer. The not applicable tab also includes reasons for each resource.
 10. Action buttons to remediate the recommendation or trigger a logic app.
