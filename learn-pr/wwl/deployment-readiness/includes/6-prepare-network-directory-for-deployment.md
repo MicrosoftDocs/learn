@@ -13,7 +13,7 @@ By default in Windows 10 or later Enterprise and Education editions, Delivery Op
 
 #### Branch Cache
 
-Branch Cache replicates files from a central location to a local device, such as a server. This enable clients to download locally hosted data instead of consuming WAN bandwidth. Windows Server Update Services (WSUS) and Endpoint Configuration Manager can use BranchCache to optimize network bandwidth during update deployment. BranchCache has two operating modes: Distributed Cache mode and Hosted Cache mode.
+Branch Cache replicates files from a central location to a local device like a server. Branch Cache lets clients download locally hosted data instead of consuming WAN bandwidth. Windows Server Update Services (WSUS) and Endpoint Configuration Manager can use BranchCache to optimize network bandwidth during update deployment. BranchCache has two operating modes: Distributed Cache mode and Hosted Cache mode.
 
  -  **Distributed Cache mode.** In Distributed Cache mode, each client contains a cached version of the BranchCache-enabled files it requests and acts as a distributed cache for other clients requesting that same file. This is similar to the Delivery Optimization feature in Windows.
  -  **Hosted Cache mode.** In Hosted Cache mode, designated servers at specific locations act as a cache for files requested by clients in its area. So rather than clients retrieving files from a latent source, the hosted cache server provides the content on its behalf.

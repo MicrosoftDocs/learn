@@ -3,7 +3,7 @@ uid: learn.wwl.deployment-readiness
 metadata:
   title: MD-102 1-Assess deployment readiness
   description: "Discusses some of the tools that you can use to perform detailed assessments of existing deployments, and describes some of the challenges that you may face."
-  ms.date: 03/31/2023
+  ms.date: 04/03/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
