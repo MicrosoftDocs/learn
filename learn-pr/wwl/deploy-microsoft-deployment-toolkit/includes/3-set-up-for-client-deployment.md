@@ -5,7 +5,7 @@ In addition to reducing deployment time and standardizing desktop and server ima
 
 MDT supports the deployment of Windows 10 or later, and Windows Server and provides support for zero-touch installation (ZTI) when working with Configuration Manager.
 
-MDT has been heavily used by IT administrators over the years to help with the deployment of Windows 7 and 10. MDT is often used as the base to create clean corporate images, and has the flexibility to act independently or to integrate with Configuration Manager. By integrating with Configuration Manager, MDT can expand the default capabilities and open more options for deployment customization.
+MDT has been heavily used by IT administrators over the years to help with the deployment of Windows 7 and 10. MDT is often used as the base to create clean corporate images, and has the flexibility to act independently or to integrate with Configuration Manager. By integrating MDT with Configuration Manager, MDT can expand the default capabilities and open more options for deployment customization.
 
 > [!NOTE]
 > It's important to understand that with the transition to Windows Autopilot and Microsoft Intune, MDT caters to a specific scenario where devices are likely built and managed on premises. As you shift to modern management and deployment, you should plan your procedures to ensure that you understand the ramification of and have a place for MDT in your strategy going forward.
@@ -17,7 +17,7 @@ To enable a successful Windows deployment, you must plan and assemble the MDT in
 Some of the key elements of the architecture of an MDT delivery include:
 
  -  **Active Directory Domain Services Environment**. Joins endpoints to Active Directory during the deployment process to a specified OU.
- -  **Windows 2016 or later server**. Hosts the MDT installation and set up of the deployment share for content that will be used during the capture or deployment process.
+ -  **Windows 2016 or later server**. Hosts the MDT installation and setup of the deployment share for content that will be used during the capture or deployment process.
  -  **Windows ADK**. Includes the most recent Windows Assessment and Deployment Kit (ADK) to match the target Windows version of destination clients. This install takes place on the MDT server and supports the creation of boot images to service new client OS installs.
  -  **Windows Deployment Services (optional)**. Facilitates a network-driven initialization of the OS deployment.
  -  **Windows Server Update Services (optional)**. Includes a Windows 2016 or 2019 Server to house the Windows Update metadata and connection to Microsoft. The content downloaded can be utilized by MDT to deliver software updates during the OS deployment process.
@@ -28,11 +28,11 @@ MDT offers numerous tools to help you plan and deploy Windows and, regardless of
 
  -  Windows 10 or later client support.
  -  Windows Server 2016 and later support.
- -  The ability to automate a sequential set of tasks into a single repeatable deliverable, that can be then replicated onto many devices. This can include the installation of an operating system, line-of-business applications, language packs, scripts, and more.
+ -  The ability to automate a sequential set of tasks into a single repeatable deliverable that can be replicated onto many devices. This can include the installation of an operating system, line-of-business applications, language packs, scripts, and more.
  -  Deployment of a user empowering interface that enables end users to customize their Windows OS installation.
  -  Displays the status of currently running deployments.
  -  Offline BitLocker, which saves hours of encryption time by having BitLocker enabled during the Windows Preinstallation Environment (Windows PE) phase.
- -  Support for running the User State Migration Tool (USMT) capture offline, during the Windows PE phase of the deployment.
+ -  Support for running the **User State Migration Tool (USMT)** capture offline, during the Windows PE phase of the deployment.
  -  Granular customization that enables the IT Admin to deliver an OSE tailored to the organization’s needs.
 
 ### Exploring the components of MDT

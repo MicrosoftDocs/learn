@@ -26,7 +26,7 @@ There are advantages and disadvantages to using default and custom images, as ou
 
 ### Thin versus thick images
 
-When choosing how to image, thin and thick images refer to what the image contains beyond the OS. A thin image may be the default image or a custom image with just the OS and a few drivers required to ensure the OS installs correctly. Alternatively, a thick image might be the OS and several applications widely used across the organization.
+When you're choosing how to image, thin and thick images refer to what the image contains beyond the OS. A thin image may be the default image or a custom image with just the OS and a few drivers required to ensure the OS installs correctly. Alternatively, a thick image might be the OS and several applications widely used across the organization.
 
 At first, thick images can appear as a more attractive option. However, thick images become more difficult to manage over time. Eventually, applications require updates, and configuration changes are often needed. With every deployment, these changes and updates must be applied. As the updates accumulate over time, deployment time can significantly increase. With multiple images to support, managing versions of apps and configurations can become difficult. As time passes, the need to rebuild the image increases to the point where it becomes necessary. The effort to rebuild images can negate the time initially saved with thick images.
 
@@ -34,4 +34,4 @@ For these reasons, thin images are recommended, applying configurations and inst
 
 ### Boot from VHD
 
-Instead of installing the OS directly on the physical drive, Windows 7 and later devices also support boot from VHD. Using tools such as Hyper-V, PowerShell, or the Disk Management console, a .vhd or .vhdx file can be created. You can apply a Windows image file and boot from it as if it were natively installed on the storage device.
+Instead of installing the OS directly on the physical drive, Windows 7 and later devices also support boot from VHD. Using tools such as Hyper-V, PowerShell, or the Disk Management console, a `.vhd` or `.vhdx` file can be created. You can apply a Windows image file and boot from it as if it were natively installed on the storage device.
