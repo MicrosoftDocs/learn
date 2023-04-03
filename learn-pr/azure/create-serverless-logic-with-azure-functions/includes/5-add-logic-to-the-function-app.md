@@ -152,6 +152,32 @@ To test the function, you can send an HTTP request to the function URL using cUR
 
     :::image type="content" source="../media/5-get-function-url.png" alt-text="Screenshot of the Azure portal showing the function editor, with the Get function URL button highlighted." lightbox="../media/5-get-function-url.png":::
 
+1. Open a command prompt and run cURL to send an HTTP request to the function URL. Keep in mind to use the URL that you copied in the previous step.
+
+    ```bash
+    curl "https://<function-name>.azurewebsites.net/api/HttpTrigger1?code=<function-code>"
+    ```
+
+    The response should look like the following.
+
+    ```bash
+    This HTTP triggered function executed successfully. Pass a name on the query string or in the request body for a personalized response.
+    ```
+
+    Now pass a name in the request. To do that, you need to add a query string parameter named `name` to the URL. The following example adds the query string parameter `name=Azure`.
+
+    ```bash
+    curl "https://<function-name>.azurewebsites.net/api/HttpTrigger1?code=<function-code>&name=Azure"
+    ```
+
+    The response should look like the following.
+
+    ```bash
+    Hello, Azure. This HTTP triggered function executed successfully.
+    ```
+
+    The function executed successfully and returned the name that you passed in the request.
+
 ### Secure HTTP triggers
 
 HTTP triggers let you use API keys to block unknown callers by requiring a key as part of the request. When you create a function, you select the _authorization level_. By default, it's set to *Function*, which requires a function-specific API key, but it can also be set to *Admin* to use a global "master" key, or *Anonymous* to indicate that no key is required. You can also change the authorization level through the function properties after creation.
