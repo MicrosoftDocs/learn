@@ -30,12 +30,12 @@ In this exercise, you'll use the example scenario from the previous unit to lear
 
 1. Select **Next : Storage**.
 
-1. On the **Hosting** tab, enter the following values for each setting.
+1. On the **Storage** tab, enter the following values for each setting.
 
     | Setting | Value | Description |
     |---|---|---|
     | **Storage** |
-    | Storage account | _[Globally unique name]_ | Specifies the name of the new storage account used by your function app (which does not need to match the globally unique name that you specified for your function). Storage account names must be between 3 and 24 characters in length and may contain numbers and lowercase letters only. This dialog automatically populates the field with a unique name that is dynamically generated. However, feel free to use a different name or even an existing account. |
+    | Storage account | *[Globally unique name]* | Specifies the name of the new storage account used by your function app (which does not need to match the globally unique name that you specified for your function). Storage account names must be between 3 and 24 characters in length and may contain numbers and lowercase letters only. This dialog automatically populates the field with a unique name that is dynamically generated. However, feel free to use a different name or even an existing account. |
 
 1. Select **Next : Networking**. Accept the defaults.
 
@@ -46,7 +46,7 @@ In this exercise, you'll use the example scenario from the previous unit to lear
     | Setting | Value | Description |
     |---|---|---|
     | **Application Insights** |
-    | Enable Application Insights | _No_ | Specifies that Application Insights will be disabled for this module. |
+    | Enable Application Insights | *No* | Specifies that Application Insights will be disabled for this module. |
 
 1. Select **Review + create** and review the options that you configured. If you're satisfied with your options, select **Create** to provision and deploy the function app.
 
