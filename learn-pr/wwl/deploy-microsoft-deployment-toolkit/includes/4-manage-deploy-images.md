@@ -62,7 +62,7 @@ You can create task sequences by using a wizard or building it from scratch.
 
 When capturing and deploying Windows, be sure to familiarize yourself with the Unattend.xml file. This helps the Windows installation move through the various passes and applies any relevant customization. System Image Manager helps you review and showcase answer files for Windows.
 
-:::image type="content" source="../media/system-image-manager-2b34e5e8.png" alt-text="Screenshot of the Windows System Image Manager,":::
+:::image type="content" source="../media/system-image-manager-2b34e5e8.png" alt-text="Screenshot of the Windows System Image Manager.":::
 
 
 With the move to modern management, IT Admins are becoming more and more conscious of the pitfalls associated with the creation and management of a golden image. With technologies such as Windows Autopilot building upon the OEM edition of Windows 10 or later, this approach is being adopted more frequently and golden images are being used less. IT Admins are instead adopting to start with the Windows installation media and customize one layer up. This creates a more 'plug and play' approach to Windows deployment and management and is less engineering heavy. Autopilot, however, doesn't address all scenarios, such as deployments to bare-metal devices. For an organization that may have regulatory requirements or has an image composition that is extremely complex, the ability to imprint a golden image may still offer some value.

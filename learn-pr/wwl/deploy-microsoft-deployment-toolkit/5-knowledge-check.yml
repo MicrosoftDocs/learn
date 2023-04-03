@@ -34,7 +34,7 @@ quiz:
     - content: "Sysprep"
       isCorrect: false
       explanation: "Incorrect. Sysprep generalizes an image prior to deployment by removing computer-specific information such as installed drivers and the computer security identifier (SID). Try again."
-    - content: "the Disk Management console"
+    - content: "The Disk Management console"
       isCorrect: false
       explanation: "Incorrect. The Windows Server Disk Management snap-in tool can be used to manage your hard disks and the volumes or partitions they contain. Try again."
   - content: "Contoso has transitioned from the Microsoft Deployment Toolkit (MDT) to Windows Autopilot and Microsoft Intune to automate its server and desktop deployments. However, there are still some scenarios where Contoso prefers to use MDT, because it's better suited than Autopilot and Intune. Which of the following scenarios is MDT the better choice for automating desktop deployments rather than modern management and deployment tools such as Autopilot and Intune?"
