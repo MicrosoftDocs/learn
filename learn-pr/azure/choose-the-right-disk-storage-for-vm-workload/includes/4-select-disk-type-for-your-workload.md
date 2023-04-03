@@ -20,9 +20,9 @@ Remember that ultra disks can only be attached to virtual machines in availabili
 
 Next, you want to consider the servers that host the prescription-drug data warehouse. Data from the production database is regularly exported to this data warehouse and restructured to make it easier to analyze long-term trends. These servers also host data cubes that are designed to support your complex reporting needs.
 
-In your on-premises system, there's a data warehouse server in your main datacenter and also several in regional offices. You've created a virtual machine image for these data warehouse servers, and you'll use it to simplify the deployment of multiple instances of the virtual machine in multiple Azure regions. Your analysis indicates that these servers require high-performance disks, but not the extreme performance required by the production database server.
+In your on-premises system, there's a data warehouse server in your main datacenter, and also several in regional offices. You've created a virtual-machine image for these data warehouse servers, and you'll use it to simplify the deployment of multiple instances of the virtual machine in multiple Azure regions. Your analysis indicates that these servers require high-performance disks, but not the extreme performance required by the production database server.
 
-The highest performance disks in Azure are premium SSD v2 managed disks, premium SSD managed disks, and ultra disks. However, ultra disks and premium SSD v2 managed disks don't currently support virtual machine images. As a result, premium SSD managed disks are the optimal disk type for data disks in this workload. None of your requirements for data warehousing requires unmanaged disks, so you choose managed disks to reduce administrative overhead.
+The highest performance disks in Azure are premium SSD v2 managed disks, premium SSD managed disks, and ultra disks. However, ultra disks and premium SSD v2 managed disks don't currently support virtual-machine images. As a result, premium SSD managed disks are the optimal disk type for data disks in this workload. None of your requirements for data warehousing requires unmanaged disks, so you choose managed disks to reduce administrative overhead.
 
 ## Standby database server
 
