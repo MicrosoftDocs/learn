@@ -5,9 +5,9 @@ Using the **policies**, Defender for Cloud periodically analyzes the compliance 
 
 Defender for Cloud **makes its security recommendations based on your chosen initiatives**. When a policy from your initiative is compared against your resources and finds one or more that aren't compliant, it is presented as a recommendation in Defender for Cloud.
 
-### Example: Microsoft Defender for Cloud - All recommendations
+**Example:** Microsoft Defender for Cloud - All recommendations
 
-:::image type="content" source="../media/all-recommendations-page-vm-management-ports-fef6c2d0.png" alt-text="Screenshot showing an example of the Microsoft Defender for Cloud All recommendations page in the Azure dashboard.":::
+:::image type="content" source="../media/microsoft-defender-for-cloud-all-recommendations-dashboard-version-1-585ea134.png" alt-text="Screenshot showing an example of the Microsoft Defender for Cloud All recommendations dashboard.":::
 
 
 **Recommendations** are actions for you to take to secure and harden your resources. Each recommendation provides you with the following information:

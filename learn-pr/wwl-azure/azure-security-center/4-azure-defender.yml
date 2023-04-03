@@ -4,7 +4,7 @@ title: Deploy Microsoft Defender for Cloud
 metadata:
   title: Deploy Microsoft Defender for Cloud
   description: "Deploy Microsoft Defender for Cloud"
-  ms.date: 03/23/2023
+  ms.date: 04/03/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
@@ -12,4 +12,4 @@ metadata:
   zone_pivot_groups: None
 durationInMinutes: 7
 content: |
-  [!include[](includes/6-azure-defender.md)]
+  [!include[](includes/4-azure-defender.md)]

@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/23/2023
+  ms.date: 04/03/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
@@ -12,7 +12,7 @@ metadata:
   zone_pivot_groups: None
 durationInMinutes: 7
 content: |
-  [!include[](includes/18-knowledge-check.md)]
+  [!include[](includes/16-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:

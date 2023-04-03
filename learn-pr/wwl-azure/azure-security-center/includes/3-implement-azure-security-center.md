@@ -1,14 +1,14 @@
 
-Microsoft Defender for Cloud is a **Cloud Security Posture Management (CSPM)** and **Cloud Workload Protection Platform (CWPP)** for all of your **Azure**, **on-premises**, and **multicloud** (Amazon AWS and Google GCP) **resources**. Defender for Cloud fills three vital needs as you manage the security of your resources and workloads in the cloud and on-premises:
+Microsoft Defender for Cloud is a **Cloud Security Posture Management (CSPM)** and **Cloud Workload Protection Platform (CWPP)** for all of your **Azure**, **on-premises**, and **multicloud** (Amazon AWS and Google GCP) **resources**.
 
 For an interactive overview of how to Manage your cloud security posture with Microsoft Defender for Cloud, **click on the image below**.
 
 [:::image type="content" source="../media/manage-cloud-security-posture-microsoft-defender-cloud-landing-page-8605516a.png" alt-text="Screenshot of the interactive guide landing page for Manage your cloud security posture with Microsoft Defender for Cloud.":::
 ](https://mslearn.cloudguides.com/guides/Manage%20your%20cloud%20security%20posture%20with%20Microsoft%20Defender%20for%20Cloud)
 
-Microsoft Defender for Cloud is a **Cloud Security Posture Management (CSPM)** and **Cloud Workload Protection Platform (CWPP)** for all of your Azure, on-premises, and multicloud (Amazon AWS and Google GCP) resources. Defender for Cloud fills **three vital needs** as you manage the security of your resources and workloads in the cloud and on-premises:
+Defender for Cloud fills **three vital needs** as you manage the security of your resources and workloads in the cloud and on-premises:
 
-:::image type="content" source="../media/defender-for-cloud-synopsis-e0fdf519.png" alt-text="Image describing how Defender for Cloud fills the need of three vital areas as you manage the security of your resources and workloads in the cloud and on-premises.":::
+:::image type="content" source="../media/microsoft-defender-for-cloud-defined-version-one-60a3512c.png" alt-text="Screenshot showing Microsoft Defender for Cloud fills three vital needs.":::
 
 
  -  **Defender for Cloud secure score continually assesses** your security posture so you can track new security opportunities and precisely report on the progress of your security efforts.
@@ -77,7 +77,7 @@ For example, if you've connected an Amazon Web Services (AWS) account to an Azur
 
 ## Close vulnerabilities before they get exploited
 
-:::image type="content" source="../media/defender-for-cloud-expanded-assess-38a0a9ce.png" alt-text="Image describing vulnerability assessment solution.":::
+:::image type="content" source="../media/vital-need-one-continuously-assess-b3247549.png" alt-text="Screenshot showing Microsoft Defender for Cloud continually assesses.":::
 
 
 Defender for Cloud includes vulnerability assessment solutions for **virtual machines, container registries**, and **SQL servers** as part of the enhanced security features. Some of the scanners are powered by Qualys. But you don't need a Qualys license or even a Qualys account - everything's handled seamlessly inside Defender for Cloud.
@@ -88,7 +88,7 @@ Review the findings from these vulnerability scanners and respond to them all fr
 
 ## Enforce your security policy from the top down
 
-:::image type="content" source="../media/defender-for-cloud-expanded-secure-028f1443.png" alt-text="Image describing how Defender for Cloud secures workloads.":::
+:::image type="content" source="../media/secure-vital-need-two-a03dd629.png" alt-text="Screenshot showing Microsoft Defender for Cloud secures.":::
 
 
 It's a security basic to know and make sure your workloads are secure, and it starts with having tailored security policies in place. Because policies in Defender for Cloud are built on top of Azure Policy controls, you're getting the full range and flexibility of a world-class policy solution. In Defender for Cloud, you can set your policies to run on management groups, across subscriptions, and even for a whole tenant.
@@ -99,9 +99,9 @@ The list of recommendations is enabled and supported by the Microsoft cloud secu
 
 In this way, Defender for Cloud enables you not just to set security policies but to ***apply secure configuration standards across your resources***.
 
-## Extend Defender for Cloud with Defender plans and external monitoring
+## Extend Defender for Cloud with Defender plans and external monitoring.
 
-:::image type="content" source="../media/defender-for-cloud-expanded-defend-1fa3337b.png" alt-text="Image describing Defender for Cloud's Advanced threat protection features.":::
+:::image type="content" source="../media/defend-vital-need-three-a1748fa9.png" alt-text="Screenhot showing Microsoft Defender for Cloud Defends.":::
 
 
 You can extend the Defender for Cloud protection with the following:
