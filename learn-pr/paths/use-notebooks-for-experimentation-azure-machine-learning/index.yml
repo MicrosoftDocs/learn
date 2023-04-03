@@ -1,0 +1,28 @@
+### YamlMime:LearningPath
+uid: learn.wwl.use-notebooks-for-experimentation-azure-machine-learning
+metadata:
+  title: Use notebooks for experimentation in Azure Machine Learning
+  description: Use notebooks for experimentation with the Azure Machine Learning Python SDK v2.
+  ms.date: 03/31/2023
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Use notebooks for experimentation in Azure Machine Learning
+prerequisites: |
+  None
+summary: |
+  Learn how to use Azure Machine Learning notebooks for experimentation. Similar to Jupyter, the notebooks are ideal for exploring your data and developing a machine learning model.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- data-scientist
+products:
+- azure-machine-learning
+subjects:
+- machine-learning
+modules:
+- learn.wwl.track-model-training-jupyter-notebooks-mlflow
+trophy:
+  uid: learn.wwl.use-notebooks-for-experimentation-azure-machine-learning.trophy

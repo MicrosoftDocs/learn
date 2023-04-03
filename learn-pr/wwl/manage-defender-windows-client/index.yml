@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.manage-defender-windows-client
+metadata:
+  title: MD-102 3-Manage Microsoft Defender in Windows client
+  description: "This module explains the built-in security features of Windows clients and how to implement them using policies."
+  ms.date: 03/31/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Manage Microsoft Defender in Windows client
+summary: This module explains the built-in security features of Windows clients and how to implement them using policies.
+abstract: |
+  After this module, you should be able to:
+  - Describe Windows Security capabilities
+  - Describe Windows Defender Credential Guard
+  - Manage Microsoft Defender Antivirus
+  - Manage Windows Defender Firewall
+  - Manage Windows Defender Firewall with Advanced Security
+prerequisites: |
+  - Strong technical skills installing, maintaining, and troubleshooting the Windows 10 OS or later
+  - Strong understanding of computer networking, client security, and application concepts
+  - Experience using Active Directory Domain Services
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- windows
+- configuration-manager
+- intune
+units:
+- learn.wwl.manage-defender-windows-client.introduction
+- learn.wwl.manage-defender-windows-client.explore-windows-security-center
+- learn.wwl.manage-defender-windows-client.explore-windows-defender-credential-guard
+- learn.wwl.manage-defender-windows-client.antivirus
+- learn.wwl.manage-defender-windows-client.manage-windows-defender-firewall
+- learn.wwl.manage-defender-windows-client.explore-windows-defender-firewall-advanced-security
+- learn.wwl.manage-defender-windows-client.knowledge-check
+- learn.wwl.manage-defender-windows-client.summary
+badge:
+  uid: learn.wwl.manage-defender-windows-client.badge
