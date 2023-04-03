@@ -14,7 +14,7 @@ As we described in the preceding unit, Azure provides templates that help you bu
 
 1. In the previous exercise, you deployed your function app and opened it. If it isn't already open, you can open it from the Home page by selecting **All resources**, and then selecting your function app, named something like **escalator-functions-xxx**.
 
-1. In the Function App menu, under **Functions**, select **Functions**. The **Functions** pane appears. This lists any functions you defined for your function app.
+1. In the Function App menu, under **Functions**, select **Functions**. The **Functions** pane appears. This pane lists any functions you defined for your function app.
 
 1. In the command bar, select **Create**. The **Create function** pane appears.
 
@@ -68,7 +68,7 @@ As we described in the preceding unit, Azure provides templates that help you bu
     }
     ```
 
-    This configuration file declares that the function runs when it receives an HTTP request. The output binding declares that the response will be sent as an HTTP response.
+    This configuration file declares that the function runs when it receives an HTTP request. The output binding declares that the response is sent as an HTTP response.
 
 ::: zone-end
 
@@ -132,7 +132,7 @@ As we described in the preceding unit, Azure provides templates that help you bu
     }
     ```
 
-    This configuration declares that the function runs when it receives an HTTP request. The output binding declares that the response will be sent as an HTTP response.
+    This configuration declares that the function runs when it receives an HTTP request. The output binding declares that the response is sent as an HTTP response.
 
 ::: zone-end
 
@@ -183,7 +183,7 @@ To test the function, you can send an HTTP request to the function URL using cUR
 
 ### Secure HTTP triggers
 
-HTTP triggers let you use API keys to block unknown callers by requiring a key as part of the request. When you create a function, you select the _authorization level_. By default, it's set to *Function*, which requires a function-specific API key, but it can also be set to *Admin* to use a global "master" key, or *Anonymous* to indicate that no key is required. You can also change the authorization level through the function properties after creation.
+HTTP triggers let you use API keys to block unknown callers by requiring a key as part of the request. When you create a function, you select the _authorization level_. By default, it's set to *Function*, which requires a function-specific API key. It can also be set to *Admin* to use a global "master" key, or *Anonymous* to indicate that no key is required. You can also change the authorization level through the function properties after creation.
 
 Because you specified *Function* when you created this function, you need to supply the key when you send the HTTP request. You can send it as a query string parameter named `code`, or as an HTTP header (preferred) named `x-functions-key`.
 
@@ -379,7 +379,7 @@ We're going to use the **Test/Run** feature in *Developer* > *Code + Test* to te
     }
     ```
 
-1. Select **Run**. The **Output** tab displays the HTTP response code and content. To see log messages, open the **Logs** tab in the bottom flyout of the pane (if it is not already open). The following image shows an example response in the output pane and messages in the **Logs** pane.
+1. Select **Run**. The **Output** tab displays the HTTP response code and content. To see log messages, open the **Logs** tab in the bottom flyout of the pane (if it isn't already open). The following image shows an example response in the output pane and messages in the **Logs** pane.
 
    :::image type="content" source="../media/5-portal-testing.png" alt-text="Screenshot of the Azure function editor, with the Test and Logs tabs showing." lightbox="../media/5-portal-testing.png":::  
 
