@@ -1,13 +1,36 @@
-Azure Front Door is a global, scalable entry-point that uses the Microsoft global edge network to create fast, secure, and widely scalable web applications. With Front Door, you can transform your global consumer and enterprise applications into robust, high-performing personalized modern applications with contents that reach a global audience through Azure.
+Azure Front Door is Microsoft’s modern cloud Content Delivery Network (CDN) that provides fast, reliable, and secure access between your users and your applications’ static and dynamic web content across the globe. Azure Front Door delivers your content using the Microsoft’s global edge network with hundreds of global and local POPs distributed around the world close to both your enterprise and consumer end users.
+
+Many organizations have applications they want to make available to their customers, their suppliers, and almost certainly their users. The tricky part is making sure those applications are highly available. In addition, they need to be able to quickly respond while being appropriately secured. Azure Front Door provides different SKUs (pricing tiers) that meet these requirements. Let's briefly review the features and benefits of these SKUs so you can determine which option best suits your requirements.
+
 
 :::image type="content" source="../media/front-door-visual-diagram-d5870052.png" alt-text="Azure Front Door layout diagram":::
 
+A secure, modern cloud CDN provides a distributed platform of servers. This helps minimize latency when users are accessing webpages. Historically, IT staff might have used a CDN and a web application firewall to control HTTP and HTTPS traffic flowing to and from target applications.
 
-Front Door works at Layer 7 (HTTP/HTTPS layer) using anycast protocol with split TCP and Microsoft's global network to improve global connectivity. Based on your routing method you can ensure that Front Door will route your client requests to the fastest and most available application backend. An application backend is any Internet-facing service hosted inside or outside of Azure. Front Door provides a range of [traffic-routing methods](/azure/frontdoor/front-door-routing-methods) and [backend health monitoring options](/azure/frontdoor/front-door-health-probes) to suit different application needs and automatic failover scenarios. Like [Traffic Manager](/azure/traffic-manager/traffic-manager-overview), Front Door is resilient to failures, including failures to an entire Azure region.
+If an organization uses Azure, they might achieve these goals by implementing the products described in the following table
 
-### What is the difference between Azure Front Door and Azure Application Gateway?
+| **Product**                                     |     **Description**                    |
+|:-----------------------------------------------:|:--------------------------------------:|
+|         Azure Front Door                        | Enables an entry point to your apps positioned in the Microsoft global edge network. Provides faster, more secure, and scalable access to your web applications.|
+|         Azure Content Delivery Network          |Delivers high-bandwidth content to your users by caching their content at strategically placed physical nodes around the world.|
+|         Azure Content Delivery Network          |Helps provide centralized, greater protection for web applications from common exploits and vulnerabilities.|
 
-While both Front Door and Application Gateway are layer 7 (HTTP/HTTPS) load balancers, the primary difference is that Front Door is a global service whereas Application Gateway is a regional service. Front Door can load balance between your different scale units/clusters/stamp units across regions, and Application Gateway allows you to load balance between your VMs/containers that is within the scale unit.
+
+## Azure Front Door tier comparison 
+
+Azure Front Door is offered in 2 different tiers, Azure Front Door Standard and Azure Front Door Premium. Azure Front Door Standard and Premium tier combines capabilities of Azure Front Door (classic), Azure CDN Standard from Microsoft (classic), and Azure WAF into a single secure cloud CDN platform with intelligent threat protection. Azure Front Door resides in the edge locations and manages user requests to your hosted applications. Users connect to your application through the Microsoft global network. Azure Front Door then routes user requests to the fastest and most available application backend.
+
+For a comparison of supported features in Azure Front Door, [Review the feature comparison table](/azure/frontdoor/standard-premium/tier-comparison#feature-comparison-between-tiers).
+
+## Create a Front Door in the Azure portal 
+
+Review the following [QuickStart](/azure/frontdoor/create-front-door-portal) to learn how to create an Azure Front Door profile using the Azure portal. You can create an Azure Front Door profile through Quick Create with basic configurations or through the Custom create which allows a more advanced configuration. 
+
+## Routing architecture overview
+Front Door traffic routing takes place over multiple stages. First, traffic is routed from the client to Front Door. Then, Front Door uses your configuration to determine the origin to send the traffic to. The Front Door web application firewall, routing rules, rules engine, and caching configuration all affect the routing process.
+
+The following diagram illustrates the routing architecture:
+:::image type="content" source="../media/routing-process-standard-premium.png" alt-text="Azure Front Door traffic routing stages illustrated in eight boxes.":::
 
 ## Configure redirection rules in Front Door
 
@@ -143,4 +166,4 @@ Some of the key attributes of the custom HTTPS feature are:
 
 You can enable the HTTPS protocol for a custom domain that's associated with your Front Door under the frontend hosts section.
 
-For more information on how to configure HTTPS on Front door, see [Tutorial: Configure HTTPS on a Front Door custom domain](/azure/frontdoor/front-door-custom-domain-https).
+For more information on how to configure HTTPS on Front door, see [Tutorial - Configure HTTPS on a custom domain for Azure Front Door | Microsoft Docs](/azure/frontdoor/front-door-custom-domain-https).
