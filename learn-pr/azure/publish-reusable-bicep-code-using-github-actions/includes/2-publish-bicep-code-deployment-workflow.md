@@ -11,11 +11,11 @@ When you're deciding between template specs and Bicep modules, a good rule of th
 
 ## Validate reusable code in a workflow
 
-Unlike regular Bicep deployments, when you create a template spec or a module, you don't deploy the resources directly to Azure. Instead, you *publish* the template spec or module. Then you can use the template spec or module in another deployment. That deployment will deploy the resources you've defined. Because of this difference, the ways that you validate and test your template specs and Bicep modules might be different from the process that you use for regular Bicep deployments.
+Unlike regular Bicep deployments, when you create a template spec or a module, you don't deploy the resources directly to Azure. Instead, you _publish_ the template spec or module. Then you can use the template spec or module in another deployment. That deployment will deploy the resources you've defined. Because of this difference, the ways that you validate and test your template specs and Bicep modules might be different from the process that you use for regular Bicep deployments.
 
 Linting your Bicep code is good practice. The linter detects syntactical problems, and it warns you if you're not following the recommended practices.
 
-Beyond linting, you might want to consider testing your template specs and modules by using *preflight validation*. You might even consider deploying your template specs and modules to Azure and testing that the resources they create behave as you expect. However, it can be challenging to run these types of tests from a deployment workflow for two reasons:
+Beyond linting, you might want to consider testing your template specs and modules by using _preflight validation_. You might even consider deploying your template specs and modules to Azure and testing that the resources they create behave as you expect. However, it can be challenging to run these types of tests from a deployment workflow for two reasons:
 
 - Preflight validation and deployments require an Azure environment to deploy the resources to. You might need to maintain a dedicated Azure subscription or resource group to use for deploying and testing your modules.
 - Many template specs and modules require you to specify a set of parameters. You might need to create a test set of parameters for your template specs or modules to use when they're deployed.
@@ -32,9 +32,9 @@ When you publish template specs to Azure yourself, your Azure Active Directory (
 When you work with an automated deployment workflow, the same principles apply. However, because you aren't the person running the deployment, you need to ensure that your workflow's identity is given the appropriate access to the resource group for publishing the template spec, or to the container registry for publishing modules.
 
 > [!TIP]
-> When you publish a module to a registry, the workload identity running the deployment probably doesn't need a lot of permission. When your registry uses Azure AD authorization, the workload identity needs only the *AcrPush* permission on the registry.
+> When you publish a module to a registry, the workload identity running the deployment probably doesn't need a lot of permission. When your registry uses Azure AD authorization, the workload identity needs only the _AcrPush_ permission on the registry.
 >
-> Consider using the security *principle of least privilege*. Provide the workflow's identity with access only to the container registry, and not to a resource group or subscription.
+> Consider using the security _principle of least privilege_. Provide the workflow's identity with access only to the container registry, and not to a resource group or subscription.
 
 ## Publish template specs and modules from a workflow
 

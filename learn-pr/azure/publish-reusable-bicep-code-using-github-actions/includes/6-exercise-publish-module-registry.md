@@ -3,17 +3,18 @@ In your toy company, you've been publishing your Bicep modules into a registry. 
 In this exercise, you'll:
 
 > [!div class="checklist"]
-> * Create a container registry for your Bicep modules.
-> * Add a lint job to the workflow.
-> * Add a workflow job to publish the module to your registry.
-> * Verify that your workflow runs successfully.
-> * Check the published module in your registry.
+>
+> - Create a container registry for your Bicep modules.
+> - Add a lint job to the workflow.
+> - Add a workflow job to publish the module to your registry.
+> - Verify that your workflow runs successfully.
+> - Check the published module in your registry.
 
 ## Create a container registry
 
 Before you can publish modules, you need to create a registry for your organization to use. Here, you use the Azure portal to create a registry.
 
-1. In your browser, [create a new container registry within the Azure portal](https://portal.azure.com/#create/Microsoft.ContainerRegistry?azure-portal=true).
+1. In your browser, [create a new container registry within the Azure portal](https://portal.azure.com/#create/Microsoft.ContainerRegistry).
 
 1. On the **Basics** tab, select your target subscription and the **ToyReusable** resource group that you created earlier.
 
@@ -38,7 +39,7 @@ Before you can publish modules, you need to create a registry for your organizat
 
    :::image type="content" source="../media/6-registry-created.png" alt-text="Screenshot of the Azure portal that shows the container registry deployment, with the button for going to a resource highlighted.":::
 
-1. In the container registry's **Overview** area, note the value of the **Login server** setting. It will look like *yourregistryname.azurecr.io*.
+1. In the container registry's **Overview** area, note the value of the **Login server** setting. It will look like _yourregistryname.azurecr.io_.
 
    :::image type="content" source="../media/6-registry-login-server.png" alt-text="Screenshot of the Azure portal that shows the container registry's details, with the login server highlighted.":::
 
@@ -48,9 +49,9 @@ Before you can publish modules, you need to create a registry for your organizat
 
 In the preceding unit, you learned about the importance of having a versioning strategy for your modules. You also learned how to use module metadata files to specify the major and minor version number of your module within a workflow. Here, you add a metadata file for your storage account module.
 
-1. In Visual Studio Code, expand the *modules* folder in the root of your repository. Then, expand the *storage-account* folder.
+1. In Visual Studio Code, expand the _modules_ folder in the root of your repository. Then, expand the _storage-account_ folder.
 
-1. Create a new file named *metadata.json*.
+1. Create a new file named _metadata.json_.
 
    :::image type="content" source="../media/6-visual-studio-code-metadata-json.png" alt-text="Screenshot of Visual Studio Code that shows the location of the metadata dot J S O N file.":::
 
@@ -66,15 +67,15 @@ In the preceding unit, you learned about the importance of having a versioning s
 
 Your repository contains a draft of a workflow that you can use as a starting point.
 
-1. In Visual Studio Code, expand the *.github* folder in the root of the repository. Then, expand the *workflows* folder.
+1. In Visual Studio Code, expand the _.github_ folder in the root of the repository. Then, expand the _workflows_ folder.
 
-1. Open the *module-storage-account.yml* file.
+1. Open the _module-storage-account.yml_ file.
 
    :::image type="content" source="../media/6-visual-studio-code-workflow.png" alt-text="Screenshot of Visual Studio Code that shows the location of the workflow definition file.":::
 
-1. On line 18, update the value of the `MODULE_REGISTRY_SERVER` environment variable to your container registry's server name. You copied that name earlier in this exercise. 
+1. On line 18, update the value of the `MODULE_REGISTRY_SERVER` environment variable to your container registry's server name. You copied that name earlier in this exercise.
 
-   For example, if your registry's login server is *yourregistryname.azurecr.io*, line 18 will look like this:
+   For example, if your registry's login server is _yourregistryname.azurecr.io_, line 18 will look like this:
 
    :::code language="yaml" source="code/6-workflow.yml" range="16-20" highlight="3" :::
 
@@ -86,13 +87,13 @@ Your repository contains a draft of a workflow that you can use as a starting po
 
 Now, you can add a second job to publish the module to your container registry.
 
-1. At the bottom of the *module-storage-account.yml* file, add the first part of the publish job's definition.
+1. At the bottom of the _module-storage-account.yml_ file, add the first part of the publish job's definition.
 
    :::code language="yaml" source="code/6-workflow.yml" range="30-40" :::
 
    The steps check out the code from your repository and sign in to Azure.
 
-1. Below the code that you just added, add a step to read the version number from your module's *metadata.json* file and set it as an environment variable.
+1. Below the code that you just added, add a step to read the version number from your module's _metadata.json_ file and set it as an environment variable.
 
    :::code language="yaml" source="code/6-workflow.yml" range="41-45" :::
 
@@ -108,7 +109,7 @@ Now, you can add a second job to publish the module to your container registry.
 
 ## Verify and commit your workflow definition
 
-1. Verify that your *module-storage-account.yml* file looks like the following example:
+1. Verify that your _module-storage-account.yml_ file looks like the following example:
 
    :::code language="yaml" source="code/6-workflow.yml" highlight="18, 23-52" :::
 
@@ -128,7 +129,7 @@ Now, you can add a second job to publish the module to your container registry.
 
 1. Select the **module-storage-account** workflow.
 
-   Notice that a workflow run is already in progress. The push trigger fired because you modified the *metadata.json* file within the module's folder.
+   Notice that a workflow run is already in progress. The push trigger fired because you modified the _metadata.json_ file within the module's folder.
 
 1. Select the latest run in the list.
 
@@ -142,7 +143,7 @@ Now, you can add a second job to publish the module to your container registry.
 
 You can also view the published module in the Azure portal.
 
-1. In your browser, go to the [Azure portal](https://portal.azure.com?azure-portal=true).
+1. In your browser, go to the [Azure portal](https://portal.azure.com).
 
 1. Go to the **ToyReusable** resource group.
 
@@ -152,7 +153,7 @@ You can also view the published module in the Azure portal.
 
    :::image type="content" source="../media/6-registry-portal.png" alt-text="Screenshot of the Azure portal that shows a Bicep module in the container registry.":::
 
-   Notice that there's a single *tag*, which matches the version number of the module that your workflow published. The major version (1) and minor version (2) match the version numbers that you defined in the *metadata.json* file. The revision number (3) matches the workflow's run number.
+   Notice that there's a single _tag_, which matches the version number of the module that your workflow published. The major version (1) and minor version (2) match the version numbers that you defined in the _metadata.json_ file. The revision number (3) matches the workflow's run number.
 
 ## Clean up the resources
 
