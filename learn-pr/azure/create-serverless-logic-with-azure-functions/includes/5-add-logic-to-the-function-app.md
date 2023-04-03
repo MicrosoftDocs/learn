@@ -154,8 +154,11 @@ To test the function, you can send an HTTP request to the function URL using cUR
 
 1. Open a command prompt and run cURL to send an HTTP request to the function URL. Keep in mind to use the URL that you copied in the previous step.
 
+> [!TIP]
+> You might want to wrap the URL in quotes to avoid issues with special characters in the URL.
+
     ```bash
-    curl "https://<function-name>.azurewebsites.net/api/HttpTrigger1?code=<function-code>"
+    curl "<your-https-url>"
     ```
 
     The response should look like the following.
@@ -167,7 +170,7 @@ To test the function, you can send an HTTP request to the function URL using cUR
     Now pass a name in the request. To do that, you need to add a query string parameter named `name` to the URL. The following example adds the query string parameter `name=Azure`.
 
     ```bash
-    curl "https://<function-name>.azurewebsites.net/api/HttpTrigger1?code=<function-code>&name=Azure"
+    curl "<your-https-url>&name=Azure"
     ```
 
     The response should look like the following.
