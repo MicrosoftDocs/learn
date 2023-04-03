@@ -3,7 +3,7 @@ uid: learn.wwl.plan-transition-modern-endpoint-management
 metadata:
   title: MD-102 3-Plan a transition to modern endpoint management
   description: "Explore considerations and review the planning of transitioning to modern management, focusing on migration and newly provisioned devices."
-  ms.date: 03/31/2023
+  ms.date: 04/03/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
@@ -33,7 +33,7 @@ products:
 - intune
 units:
 - learn.wwl.plan-transition-modern-endpoint-management.introduction
-- learn.wwl.plan-transition-modern-endpoint-management.explore-using-co-management-to
+- learn.wwl.plan-transition-modern-endpoint-management.explore-co-management-transition
 - learn.wwl.plan-transition-modern-endpoint-management.examine-prerequisites-for-co-management
 - learn.wwl.plan-transition-modern-endpoint-management.evaluate-modern-management-considerations
 - learn.wwl.plan-transition-modern-endpoint-management.evaluate-upgrades-migrations-modern-transitioning

@@ -46,7 +46,6 @@ The following list features some of the workloads that you can transition to Int
      -  Certificate profile
  -  Windows Update policies
  -  Endpoint Protection
-    
      -  Microsoft Defender Antivirus
      -  Microsoft Defender Application Guard
      -  Microsoft Defender Firewall
@@ -57,10 +56,8 @@ The following list features some of the workloads that you can transition to Int
      -  Microsoft Defender for Endpoint
      -  Windows Information Protection
  -  Device Configuration
-    
      -  This is essentially the settings you configure using Group Policy.
  -  Microsoft 365 Select-to-Run apps
-    
      -  After moving the workload, the app shows up in the Company Portal on the device.
 
 You typically identify devices with low complexity configuration settings and move those loads to Intune first. That could be Endpoint Protection, Windows Update policies, software deployment, and device configuration policies that would mirror those Group Policy settings already in place.
