@@ -39,6 +39,7 @@ units:
 - learn.azure.explore-fundamentals-kql.query-basics
 - learn.azure.explore-fundamentals-kql.exercise-1
 - learn.azure.explore-fundamentals-kql.kql-query-structure
+- learn.azure.explore-fundamentals-kql.query-types
 - learn.azure.explore-fundamentals-kql.exercise-2
 - learn.azure.explore-fundamentals-kql.knowledge-check
 - learn.azure.explore-fundamentals-kql.summary
