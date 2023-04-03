@@ -2,15 +2,15 @@
 
 Registering your application establishes a trust relationship between your app and the Microsoft identity platform. The trust is unidirectional: Your app trusts the Microsoft identity platform—not the other way around.
 
-1. Sign in to the [Azure portal](https://portal.azure.com/) using a Global Administrator account.
-1. Open the portal menu and then select **Azure Active Directory**.
-1. On the **Azure Active Directory** screen, under **Manage**, select **App registrations.**
-1. On the **App registrations** page, on the menu, select **+ New registration**.
-1. On the **register an application** dialog, register an app named **Demo app** using the default values. You don't need to enter the redirect URI.
+1.  Sign in to the [Azure portal](https://portal.azure.com/) using a Global Administrator account.
+2.  Open the portal menu and then select **Azure Active Directory**.
+3.  On the **Azure Active Directory** screen, under **Manage**, select **App registrations.**
+4.  On the **App registrations** page, on the menu, select **+ New registration**.
+5.  On the **register an application** dialog, register an app named **Demo app** using the default values. You don't need to enter the redirect URI.
     
     :::image type="content" source="../media/register-application-f4dc723d.png" alt-text="Screenshot of the Register an application screen with the name and default settings highlighted.":::
     
-1. When complete, you'll be directed to the **Demo app** screen.
+6.  When complete, you'll be directed to the **Demo app** screen.
 
 ## Add a redirect URI
 
@@ -24,10 +24,10 @@ Settings for each application type, including redirect URIs, are configured in *
 
 To configure application settings based on the platform or device you're targeting:
 
-1. Select your application in **App registrations** in the Azure portal.
-1. Under **Manage**, select **Authentication**.
-1. Under **Platform configurations**, select **Add a platform**.
-1. In **Configure platforms**, select the tile for your application type (platform) to configure its settings.
+1.  Select your application in **App registrations** in the Azure portal.
+2.  Under **Manage**, select **Authentication**.
+3.  Under **Platform configurations**, select **Add a platform**.
+4.  In **Configure platforms**, select the tile for your application type (platform) to configure its settings.
     
     :::image type="content" source="../media/configure-platforms-0b700207.png" alt-text="Screenshot of the Platform configuration pane in the Azure portal.":::
     
@@ -39,7 +39,7 @@ To configure application settings based on the platform or device you're targeti
     | iOS/macOS                       | Enter the app **Bundle ID**, found in XCode in *Info.plist* or Build Settings.A redirect URI is generated for you when you specify a Bundle ID.                                                                                                                                                                                                                                        |
     | Android                         | Enter the app **Package name**, which you can find in the AndroidManifest.xml file, and generate and enter the **Signature hash**.A redirect URI is generated for you when you specify these settings.                                                                                                                                                                                 |
     | Mobile and desktop applications | Select one of the **Suggested redirect URIs** or specify a **Custom redirect URI**.For desktop applications, we recommend:https://login.microsoftonline.com/common/oauth2/nativeclient Select this platform for mobile applications that aren't using the latest Microsoft Authentication Library (MSAL) or aren't using a broker. Also select this platform for desktop applications. |
-1. Select **Configure** to complete the platform configuration.
+5.  Select **Configure** to complete the platform configuration.
 
 ## Add credentials
 
@@ -52,26 +52,26 @@ You can add both certificates and client secrets (a string) as credentials to yo
 
 ## Add a certificate
 
-Sometimes called a *public key*, certificates are the recommended credential type, because as they provide a higher level of assurance than a client secret. When using a trusted public certificate, you can add the certificate using the Certificates &amp; secrets feature. Your certificate must be one of the following file types: `.cer`, `.pem`, `.crt`.
+Sometimes called a *public key*, certificates are the recommended credential type, because as they provide a higher level of assurance than a client secret. When using a trusted public certificate, you can add the certificate using the Certificates & secrets feature. Your certificate must be one of the following file types: `.cer`, `.pem`, `.crt`.
 
 ## Add a client secret
 
 The client secret, also known as an *application password*, is a string value your app can use in place of a certificate to identity itself. It's the easier of the two credential types to use. It's often used during development, but is considered less secure than a certificate. You should use certificates in your applications running in production.
 
-1. Select your application in **App registrations** in the Azure portal.
-1. Select **Certificates and secrets**, then select **New client secret**.
-1. Add a description for your client secret.
-1. Select a duration.
-1. Select **Add**.
-1. **Record the secret's value** for use in your client application code; It's *never displayed again* after you leave this page.
+1.  Select your application in **App registrations** in the Azure portal.
+2.  Select **Certificates and secrets**, then select **New client secret**.
+3.  Add a description for your client secret.
+4.  Select a duration.
+5.  Select **Add**.
+6.  **Record the secret's value** for use in your client application code; It's *never displayed again* after you leave this page.
 
 ## Register the web API
 
 To provide scoped access to the resources in your web API, you must first register the API with the Microsoft identity platform.
 
-1. Perform the steps above.
-1. Skip the **Add a redirect URI** and **Configure platform settings** sections. You don't need to configure a redirect URI for a web API since no user is logged in interactively.
-1. Skip the **Add credentials** section for now. Only if your API accesses a downstream API would it need its own credentials—a scenario not covered in this article.
+1.  Perform the steps above.
+2.  Skip the **Add a redirect URI** and **Configure platform settings** sections. You don't need to configure a redirect URI for a web API since no user is logged in interactively.
+3.  Skip the **Add credentials** section for now. Only if your API accesses a downstream API would it need its own credentials—a scenario not covered in this article.
 
 With your web API registered, you're ready to add the scopes that your API's code can use to provide granular permission to consumers of your API.
 
@@ -81,15 +81,15 @@ The code in a client application requests permission to perform operations defin
 
 First, follow these steps to create an example scope named Employees.Read.All:
 
-1. Sign in to the Azure portal.
-1. If you have access to multiple tenants, use the **Directory + subscription** filter in the top menu to select the tenant containing your client app's registration.
-1. Select **Azure Active Directory**, then **App registrations**, and then select your API's app registration.
-1. Select **Expose an API**, then **Add a scope**.
+1.  Sign in to the Azure portal.
+2.  If you have access to multiple tenants, use the **Directory + subscription** filter in the top menu to select the tenant containing your client app's registration.
+3.  Select **Azure Active Directory**, then **App registrations**, and then select your API's app registration.
+4.  Select **Expose an API**, then **Add a scope**.
     
     :::image type="content" source="../media/portal-02-expose-api-5724141a.png" alt-text="Screenshot of an app registration's Expose an API pane in the Azure portal.":::
     
-1. You're prompted to set an **Application ID URI** if you haven't yet configured one. The App ID URI acts as the prefix for the scopes you'll reference in your API's code, and it must be globally unique. You can use the default value provided, which is in the form `api://` , or specify a more readable URI like `https://contoso.com/api`.
-1. Next, specify the scope's attributes in the **Add a scope pane**. For this walk-through, you can use the example values or specify your own.
+5.  You're prompted to set an **Application ID URI** if you haven't yet configured one. The App ID URI acts as the prefix for the scopes you'll reference in your API's code, and it must be globally unique. You can use the default value provided, which is in the form `api://` , or specify a more readable URI like `https://contoso.com/api`.
+6.  Next, specify the scope's attributes in the **Add a scope pane**. For this walk-through, you can use the example values or specify your own.
     
     | **Field**                  | **Description**                                                                                                                                      | **Example**                                                           |
     | -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
@@ -99,12 +99,12 @@ First, follow these steps to create an example scope named Employees.Read.All:
     | Admin consent description  | A more detailed description of the permission granted by the scope that only admins will see.                                                        | Allow the application to have read-only access to all employee data.  |
     | User consent display name  | A short description of the scope's purpose. Shown to users only if you set the *Who can consent to Admins and users*.                                | Read-only access to your employee records                             |
     | User consent description   | A more detailed description of the permission granted by the scope. Shown to users only if you set the *Who can consent to Admins and users*.        | Allow the application to have read-only access to your employee data. |
-1. Set the **State** to **Enabled**, and then select **Add scope**.
-1. (Optional) To suppress prompting for consent by users of your app to the scopes you've defined, you can *pre-authorize* the client application to access your web API. Pre-authorize *only* those client applications you trust since your users won't have the opportunity to decline consent.
-    1. Under **Authorized client applications**, select **Add a client application.**
-    1. Enter the **Application (client) ID** of the client application you want to pre-authorize. For example, that of a web application you've previously registered.
-    1. Under **Authorized scopes**, select the scopes for which you want to suppress consent prompting, then select **Add application**.
-    1. If you followed this optional step, the client app is now a pre-authorized client app (PCA), and users won't be prompted for their consent when signing into it.
+7.  Set the **State** to **Enabled**, and then select **Add scope**.
+8.  (Optional) To suppress prompting for consent by users of your app to the scopes you've defined, you can *pre-authorize* the client application to access your web API. Pre-authorize *only* those client applications you trust since your users won't have the opportunity to decline consent.
+    1.  Under **Authorized client applications**, select **Add a client application.**
+    2.  Enter the **Application (client) ID** of the client application you want to pre-authorize. For example, that of a web application you've previously registered.
+    3.  Under **Authorized scopes**, select the scopes for which you want to suppress consent prompting, then select **Add application**.
+    4.  If you followed this optional step, the client app is now a pre-authorized client app (PCA), and users won't be prompted for their consent when signing into it.
 
 ### Add a scope requiring admin consent
 
