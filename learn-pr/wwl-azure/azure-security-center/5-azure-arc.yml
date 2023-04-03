@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.azure-security-center.introduction
-title: Introduction
+uid: learn.wwl.azure-security-center.azure-arc
+title: Azure Arc
 metadata:
-  title: Introduction
-  description: "Introduction"
+  title: Azure Arc
+  description: "Azure Arc"
   ms.date: 04/03/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: None
-durationInMinutes: 3
+durationInMinutes: 7
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/5-azure-arc.md)]
