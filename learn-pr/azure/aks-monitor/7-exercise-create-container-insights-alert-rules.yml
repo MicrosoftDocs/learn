@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.monitor-aks-using-container-insights.7-exercise-create-container-insights-alert-rules
+title: Exercise – Create Container insights alert rules
+metadata:
+  title: Exercise – Create Container insights alert rules
+  description: TBD
+  ms.date: 08/10/2022
+  author: bwren
+  ms.author: bwren
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-exercise-create-container-insights-alert-rules.md)]
