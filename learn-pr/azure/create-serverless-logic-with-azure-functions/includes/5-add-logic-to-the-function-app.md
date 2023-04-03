@@ -193,15 +193,7 @@ Because you specified *Function* when you created this function, you need to sup
 
     :::image type="content" source="../media/5-get-function-key.png" alt-text="Screenshot showing the Function Keys pane with the revealed function key highlighted." lightbox="../media/5-get-function-key.png" :::
 
-1. At the bottom of the screen, scroll to the left, and select your function. At the top, under the **Get Function Url** section, copy your **URL** by selecting the *Copy to clipboard* icon at the end of the URL. Store this link in Notepad or a similar app for later use.
-
-1. Next, scroll to the left, and from the Function App menu, under **Functions**, select **Functions**, and then select **HttpTrigger1** (or **DriveGearTemperatureService** for PowerShell). The **HttpTrigger1** (or **DriveGearTemperatureService** for PowerShell) Function pane appears.
-
-1. In the left menu pane, under **Developer**, select **Code + Test**. The **Code + Test** pane appears for your *HttpTrigger1* (or *DriveGearTemperatureService* for PowerShell) function.
-
-1. On the command bar, select **Test/Run**. A pane showing the input parameters for running a test.
-
-1. In the **Body** text box, overwrite the embedded code by replacing line 2 in the **Body** with the cURL command below, replacing `<your-function-key>` with the function key value you saved, and replacing `<your-https-url>` with the URL of your function.
+1. To test the function with the function key, open a command prompt and run cURL to send an HTTP request to the function URL. Replace `<your-function-key>` with the function key value you saved, and replacing `<your-https-url>` with the URL of your function.
 
     ```bash
     curl --header "Content-Type: application/json" --header "x-functions-key: <your-function-key>" --request POST --data "{\"name\": \"Azure Function\"}" <your-https-url>
@@ -214,7 +206,7 @@ Because you specified *Function* when you created this function, you need to sup
     - Used a `POST` request.
     - Passed the Azure Function with the URL for your function.
 
-1. Select **Run**.
+1. Check the logs.
 
     The **Code + Test** pane should open a session displaying log file output (ensure **Filesystem Logs** is selected in the drop-down at the top of the **Logs** pane). The log file updates with the status of your request, which should look something like this for JavaScript:
 
