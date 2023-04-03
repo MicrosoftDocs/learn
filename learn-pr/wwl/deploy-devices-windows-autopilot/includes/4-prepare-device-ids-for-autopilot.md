@@ -56,7 +56,7 @@ When you upload a CSV file, you can add devices to an existing Windows Autopilot
 
 To complete this process using Intune, use the following procedure:
 
-1.  In Endpoint Manager admin center, navigate to **Devices** &gt; **Enroll Devices** &gt; **Devices**. Select **Import**.
+1.  In Endpoint Manager admin center, navigate to **Devices** > **Enroll Devices** > **Devices**. Select **Import**.
 2.  Browse and locate your CSV file.
 3.  Import the file.
 4.  After import is complete, select **Device enrollment**, select **Windows enrollment**, select **Windows Autopilot**, select **Devices** and then select **Sync**.

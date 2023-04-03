@@ -37,7 +37,7 @@ The Default OOBE setup phase:
 
 The OOBE setup phase with Windows Autopilot:
 
-:::image type="content" source="../media/azure-active-directory-sign-9f107960.png" alt-text="Screenshots show the Windows AutoPilot setup process. The user enters their Azure AD email address instead of a Microsoft Account during the setup.":::
+:::image type="content" source="../media/azure-active-directory-sign-9f107960.png" alt-text="Screenshot shows the Windows AutoPilot setup process. The user enters their Azure AD email address instead of a Microsoft Account during the setup.":::
 
 
 Windows Autopilot puts administrators in control of the entire OOBE setup phase for known Windows devices. After administrators identify devices by their hardware IDs, they can create and apply a Windows Autopilot deployment profile to those devices. When the devices start and have internet connectivity, they connect to the Windows Autopilot cloud service, ask the employees for their company credentials, and apply settings from the Windows Autopilot profile. This preconfigures and hides many dialog boxes that would otherwise display during OOBE. It simplifies the user experience and enables employees to get configured and productive Windows devices in just a few selects. Based on employee credentials, the devices join Azure AD and can automatically enroll in Intune or another mobile device management solution.
