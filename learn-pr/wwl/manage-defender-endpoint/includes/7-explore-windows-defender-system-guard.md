@@ -17,7 +17,7 @@ After successful verification and startup of the device’s firmware and Windows
 
 This is where Windows Defender System Guard protection begins with its ability to ensure that only properly signed and secure Windows files and drivers, including third party, can start on the device. At the end of the Windows boot process, System Guard starts the system’s antimalware solution, which scans all third-party drivers, at which point the system boot process is completed. In the end, Windows Defender System Guard helps ensure that the system securely boots with integrity and that it hasn’t been compromised before the remainder of the system defenses start.
 
-:::image type="content" source="../media/defender-system-guard-74d54d3f.png" alt-text="Diagram of Windows Defender System Guard Boot time integrity Protection":::
+:::image type="content" source="../media/defender-system-guard-74d54d3f.png" alt-text="Diagram of Windows Defender System Guard Boot time integrity Protection.":::
 
 
 ### Maintain integrity of the system after it’s running (run time)

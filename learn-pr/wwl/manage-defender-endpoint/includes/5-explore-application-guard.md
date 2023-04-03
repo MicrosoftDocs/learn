@@ -5,7 +5,7 @@ Designed for Windows and Microsoft Edge, Application Guard helps to isolate ente
 
 If an employee goes to an untrusted site through either Microsoft Edge or Internet Explorer, Microsoft Edge opens the site in an isolated Hyper-V-enabled container, which is separate from the host operating system. This container isolation means that if the untrusted site turns out to be malicious, the host PC is protected, and the attacker can't get to your enterprise data. For example, this approach makes the isolated container anonymous, so an attacker can't get to your employee's enterprise credentials.
 
-:::image type="content" source="../media/application-guard-hardware-isolation-1684b878.png" alt-text="Diagram of Hardware isolation of Microsoft Edge with Windows Defender Application Guard":::
+:::image type="content" source="../media/application-guard-hardware-isolation-1684b878.png" alt-text="Diagram of Hardware isolation of Microsoft Edge with Windows Defender Application Guard.":::
 
 
 ### Types of devices that should use Application Guard
@@ -32,4 +32,4 @@ After the computer restarts, you can start a Microsoft Edge session using Micros
 
 If you want to configure Application Guard features by using Microsoft Intune platform, you can do it by creating device configuration profile. This applies only to Windows 10 and later operating systems. When you select to create new configuration profile, you should choose Endpoint protection as the profile type, and then select to configure Microsoft Defender Application Guard settings. This admin interface allows you to create more options than in Group Policy, and to configure Application Guard not just for Microsoft Edge but also for Office apps, as shown in the picture below:
 
-:::image type="content" source="../media/intune-windows-defender-application-guard-41431013.png" alt-text="Screenshot of the Windows Defender Application Guard screen":::
+:::image type="content" source="../media/intune-windows-defender-application-guard-41431013.png" alt-text="Screenshot of the Windows Defender Application Guard screen.":::
