@@ -56,16 +56,20 @@ The following table shows the fields that are supported:
 You can choose how you want to assign Microsoft Store apps to users and devices.
 
 The following table provides assignment type details:
+
 |Assignment type|Assignment options|Description|
 |---------------|------------------|-----------|
 |Required|Add group, Add all users, Add all devices|The app is installed on devices in the selected groups.|
 |Available for enrolled devices|Add group, Add all users|Users install the app from the Company Portal app or the Company Portal website.|
 |Uninstall|Add group, Add all users, Add all devices|The app is uninstalled from devices in the selected groups.|
+
 1. Select **Add group** and assign the groups that will use this app.
 1. On the **Select groups** pane, select groups to assign based on users or devices.
 1. After you select your groups, choose whether to set **End user notifications**, **Restart grace period**, and **Installation deadline**.
 1. If you don't want the app assignment to affect groups of users, select Included under the **Filter mode** column. In the **Edit assignment** pane, change the Filter mode value from **Included** to **Excluded**. Select **OK** to close the **Edit assignment** pane.
 1. Select **Next** to display the **Review + create** page after you finish setting the assignments for the apps.
+
 ## Step 4: Review and create
+
 1. Review the values and settings that you entered for the app. Verify that you configured the app information correctly.
 1. Select **Create** to add the app to Intune.
