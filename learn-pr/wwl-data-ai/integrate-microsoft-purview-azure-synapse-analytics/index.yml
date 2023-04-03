@@ -2,8 +2,8 @@
 uid: learn.wwl.integrate-microsoft-purview-azure-synapse-analytics
 metadata:
   title: Integrate Microsoft Purview and Azure Synapse Analytics
-  description: "Learn how to integrate Microsoft Purview with Azure Synapse Analytics to improve data discoverability and lineage tracking."
-  ms.date: 09/23/2022
+  description: "<div|<span style=\"color:rgb(34, 34, 34);font-family:&quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, Verdana;font-size:12px;display:inline !important;\"|Learn how to integrate Microsoft Purview with Azure Synapse Analytics to improve data discoverability and lineage tracking. </span|  </div|<div| </div|"
+  ms.date: 04/03/2023
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
