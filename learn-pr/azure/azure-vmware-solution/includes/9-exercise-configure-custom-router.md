@@ -113,9 +113,9 @@ The steps below will establish a BGP peer relationship between the FRR NVA and A
 1. Run following commands on Azure CLI prompt:
    ```azurecli
    
-    `az network routeserver peering create  --name <nva-vm-name>  --peer-ip <private-ip-of-nva-vm-name>  --peer-asn <asn-value-other-than-65515-65520>  --routeserver <routeserver-name>  --resource-group <resource-group-name>`
+    az network routeserver peering create  --name <nva-vm-name>  --peer-ip <private-ip-of-nva-vm-name>  --peer-asn <asn-value-other-than-65515-65520>  --routeserver <routeserver-name>  --resource-group <resource-group-name>`
    
-    `az network routeserver update --name <routeserver-name>  --resource-group <resource-group-name>   --allow-b2b-traffic true`
+    az network routeserver update --name <routeserver-name>  --resource-group <resource-group-name>   --allow-b2b-traffic true`
    ```
 
 1. Log into FRR shell.
