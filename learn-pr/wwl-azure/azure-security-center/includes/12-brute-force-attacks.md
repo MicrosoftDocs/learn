@@ -3,19 +3,21 @@
 
 A brute force attack is a type of hacking technique in which an attacker tries to gain access to a network or system by guessing the username and password combination through an automated process. The attacker typically uses a program that generates a large number of login attempts in a short period of time to try every possible combination of characters until the correct one is discovered. This type of attack can be very effective against weak passwords and security systems with no protection against brute force attacks, but it is time-consuming and can be detected by security measures such as account lockouts after a certain number of failed login attempts.
 
-## **Management services, ports, and protocols**
+## Management services, ports, and protocols
 
 Adversaries without prior knowledge of legitimate credentials within the system or environment may guess passwords to attempt access to accounts. Without knowledge of the password for an account, an adversary may opt to systematically guess the password using a repetitive or iterative mechanism. An adversary may guess login credentials without prior knowledge of system or environment passwords during an operation by using a list of common passwords. Password guessing may or may not take into account the target's policies on password complexity or use policies that may lock accounts out after a number of failed attempts.
 
 Typically, management services over commonly used ports are used when guessing passwords. Commonly targeted services include the following:
 
-## :::image type="content" source="../media/brute-force-attack-target-management-services-ports-and-protocols-1321b9fc.png" alt-text="Screenshot showing management services, ports, and protocols."::: 
+:::image type="content" source="../media/brute-force-attack-target-management-services-ports-and-protocols-1321b9fc.png" alt-text="Screenshot showing management services, ports, and protocols.":::
 
-## Brute force attack programs and use cases<br>
+
+## Brute force attack programs and use cases
 
 These programs can be used individually or in combination to launch a successful brute force attack on a target network or system. There are several types of brute force attack programs used by attackers, including:
 
-## :::image type="content" source="../media/types-of-brute-force-attack-programs-and-use-cases-e35bf257.png" alt-text="Screenshot showing brute force attack programs and use cases."::: 
+:::image type="content" source="../media/types-of-brute-force-attack-programs-and-use-cases-e35bf257.png" alt-text="Screenshot showing brute force attack programs and use cases.":::
+
 
 ## Indications of an attack
 
@@ -25,7 +27,7 @@ These programs can be used individually or in combination to launch a successful
 **Example:** Potential SQL Brute Force attempt alert
 
 :::image type="content" source="../media/example-of-a-potential-sql-brute-force-attempt-alert-7a3d05aa.png" alt-text="Screenshot showing a potential sql brute force attempt alert example.":::
-<br>
+
 
 ## Practices to blunt a Brute Force Attacks
 

@@ -99,7 +99,7 @@ The list of recommendations is enabled and supported by the Microsoft cloud secu
 
 In this way, Defender for Cloud enables you not just to set security policies but to ***apply secure configuration standards across your resources***.
 
-## Extend Defender for Cloud with Defender plans and external monitoring.
+## Extend Defender for Cloud with Defender plans and external monitoring
 
 :::image type="content" source="../media/defend-vital-need-three-a1748fa9.png" alt-text="Screenhot showing Microsoft Defender for Cloud Defends.":::
 
