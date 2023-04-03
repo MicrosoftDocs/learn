@@ -140,6 +140,8 @@ Multiple containers can simultaneously use the same volumes. Volumes also don't 
 
 In this example, you can create a directory on our container host, and mount this volume into the container when you create the tracking portal container. When your tracking portal logs data, you can access this information via the container host's filesystem. You'll have access to this log file even if your container is removed.
 
+Docker also provides a way for third-party companies to build add-ons to be used as volumes. For example, Azure Storage provides a plugin to mount Azure Storage as volumes on Docker containers.
+
 ### What is a bind mount?
 
 A bind mount is conceptually the same as a volume, however, instead of using a specific folder, you can mount any file or folder on the host. You're also expecting the host can change the contents of these mounts. Just like volumes, the bind mount is created if you mount it, and it doesn't yet exist on the host.
@@ -148,15 +150,31 @@ Bind mounts have limited functionality compared to volumes, and even though they
 
 Volumes are considered the preferred data storage strategy to use with containers.
 
+For Windows containers, another option is available: You can mount an SMB path as a volume and present it to containers. This allows containers on different hosts to use the same persistent storage.
+
 ## Docker container network configuration
 
 The default Docker network configuration allows for the isolation of containers on the Docker host. This feature enables you to build and configure apps that can communicate securely with each other.
 
-Docker provides three pre-configured network configurations:
+Docker provides different network settings for Linux and Windows.
+
+For Linux, there are six pre-configured network options:
 
 - Bridge
 - Host
-- none
+- Overlay
+- IPvLan
+- MACvLan
+- None
+
+For Windows, there are six pre-configured network options:
+
+- NAT (Network Address Translation)
+- Transparent
+- Overlay
+- L2Bridge
+- L2Tunnel
+- None
 
 You choose which of these network configurations to apply to your container depending on its network requirements.
 
@@ -178,6 +196,8 @@ In this example, your tracking portal is accessible to clients browsing to port 
 
 Any client browsing to the Docker host IP and port 8080 can access the tracking portal.
 
+Aside from Linux specific configurations, the NAT network on Windows hosts functions the same as a bridge network. Also, NAT is the default network on Windows and all containers will connect to it, unless otherwise specified.
+
 ### What is the host network?
 
 The host network enables you to run the container on the host network directly. This configuration effectively removes the isolation between the host and the container at a network level.
@@ -186,12 +206,18 @@ In this example, let's assume you decide to change the networking configuration 
 
 Keep in mind that the container can use only ports not already used by the host.
 
+On Windows, Host network is not available. On Windows hosts, there's no option to share the same IP address (networking stack) between host and container. The NAT network functions much like a bridge network and the Overlay option provides an IP address to the container from the same network as the host, but not the same IP address.
+
+### Overlay and other network options
+
+For more advanced scenarios, both Linux and Windows provide additional network options. For example, the overlay option creates a virtual switch from the host network so containers on that network can get IP addresses from DHCP servers, or operate with IP addresses from that network segment. Furthermore, Docker allows third-party vendors to create network plugins.
+
 ### What is the none network?
 
-To disable networking for containers, use the none network option.
+To disable networking for containers, use the none network option. This might be useful if you have an application that does not use the network or just want to validate that an application runs as expected in a container.
 
 ### Operating system considerations
 
 Keep in mind that there are differences between desktop operating systems for the Docker network configuration options. For example, the _Docker0_ network interface isn't available on macOS when using the bridge network, and using the host network configuration isn't supported for both Windows and macOS desktops.
 
-These differences might affect the way your developers configure their workflow to manage container development.
+These differences might affect the way your developers configure their workflow to manage container development. In addition, container orchestrators may also provide other networking configurations on top of the Docker setup.
