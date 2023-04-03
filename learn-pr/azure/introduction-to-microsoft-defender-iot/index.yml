@@ -4,7 +4,7 @@ metadata:
   moduleType: introduction
   title: Introduction to Microsoft Defender for IoT
   description: "Evaluate whether Microsoft Defender for IoT is right for unified asset discovery and security monitoring across your business-critical network environments."
-  ms.date: 10/31/2022
+  ms.date: 04/03/2023
   author: batamig
   manager: raynew
   ms.author: bagol
@@ -17,11 +17,11 @@ abstract: |
   - Describe the components of Defender for IoT to see if they meet your security and operational goals.
   - Evaluate whether Defender for IoT can provide unified asset discovery and security monitoring across your business-critical network environments.
 prerequisites: |
-  - Knowledge of how OT security is used in business-critical infrastructures.
-  - Familiarity of OT security concepts like operational and network security goals.
-  - Familiarity with the differences between OT and IT networks.
-  - Familiarity with the Purdue module of industrial control systems.
-  - Familiarity with the challenges in managing environments with OT and IoT devices.
+  - Knowledge of how OT security is used in business-critical infrastructures
+  - Familiarity of OT security concepts like operational and network security goals
+  - Familiarity with the differences between OT and IT networks
+  - Familiarity with the Purdue module of industrial control systems
+  - Familiarity with the challenges in managing environments with OT and IoT devices
 iconUrl: /training/achievements/defender-for-iot/microsoft-defender-intro-iot.svg
 levels:
   - beginner
