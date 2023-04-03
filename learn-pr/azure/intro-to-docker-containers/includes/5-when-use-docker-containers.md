@@ -65,7 +65,9 @@ Docker containers provide us with many benefits, as we've seen. Keep in mind tha
 
 ### Security and virtualization
 
-Containers provide a level of isolation. However, containers share a single host OS kernel, which can be a single point of attack.  
+Containers provide a level of isolation. However, containers share a single host OS kernel, which can be a single point of attack.
+
+Windows hosts provide an additional isolation model on which a purpose-built VM can be used to isolate the container at the hypervisor level. This mode is called Hyper-V isolation mode, and adds another layer of security between containers and container host.
 
 We also need to take into account configure aspects such as storage and networks to make sure that we consider all security aspects. For example, all containers will use the bridge network by default and can access each other via IP address.
 
