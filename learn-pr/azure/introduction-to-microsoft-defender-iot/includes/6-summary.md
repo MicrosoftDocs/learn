@@ -26,4 +26,4 @@ Using Microsoft Defender for IoT can help ensure that your OT/IoT device securit
 - [Microsoft Defender for IoT documentation](/azure/defender-for-iot/)
 - [Microsoft Defender for IoT TechCommunity blog](https://techcommunity.microsoft.com/t5/microsoft-defender-for-iot-blog/bg-p/MicrosoftDefenderIoTBlog)
 - [Microsoft Defender for IoT ninja training](https://techcommunity.microsoft.com/t5/microsoft-defender-for-iot-blog/microsoft-defender-for-iot-ninja-training/ba-p/2428899)
-- [Microsoft Defender for IoT content in the Microsoft technical content library](https://www.microsoft.com/security/content-library/Search/Index?SearchDataFor=QOoQSmjKtSw4UQ5ojNczzA%3D%3D&IsKeywordSearch=a4J5qA9AOpkWuWQrdArIMg%3D%3D)
+- [Microsoft Defender for IoT content in the Microsoft technical content library](https://www.microsoft.com/en-us/security/content-library/Search/GetUrlData?id=4e09583f-b237-4164-914e-b1f44c9a18ae)
