@@ -11,7 +11,7 @@ Before we start, you need to understand what meteor showers are. This understand
 
 *Meteoroids* are objects in space that are typically made of dust, rocks, or metal. They can range from small grains of dust to small asteroids. They're essentially space rocks floating out in space. 
 
-When meteoroids get near Earth, gravity pulls them into our atmosphere, where they begin to burn. That burning is the light we see in our skies. In this state, meteoroids are called *meteors*. If a meteor passes through the atmosphere without completely burning, it lands somewhere on Earth and is then called a *meteorite*. 
+When meteoroids get near Earth, gravity pulls them into our atmosphere, where they begin to burn. That burning is the light we see in our skies. In this state, meteoroids are called *meteors*. If a meteor passes through the atmosphere without completely burning and it lands somewhere on Earth, it is then called a *meteorite*. 
 
 NASA estimates that 48.5 tons of meteoric material fall to Earth each day. Most meteors are completely burned in our atmosphere. The best place to find the ones that reach Earth's surface is the desert or an icy place like Antarctica. They're easier to find in these places because by the time they land on Earth, meteorites look similar to any rock you'd find in your yard. It's difficult to distinguish them from rocks that naturally occur on Earth. 
 
