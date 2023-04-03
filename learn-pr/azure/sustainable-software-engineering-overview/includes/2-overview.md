@@ -2,25 +2,21 @@
 
 ## Eight principles of Sustainable Software Engineering
 
-There are eight principles of Sustainable Software Engineering that form a shared understanding of what it means to be a Sustainable Software Engineer. The subsequent units in this module will provide a basic introduction to each of these principles.
+There are six principles of Sustainable Software Engineering that form a shared understanding of what it means to be a Sustainable Software Engineer. The subsequent units in this module will provide a basic introduction to each of these principles.
 
-1. **Carbon**: Build applications that are carbon efficient.
+1. **Carbon Efficiency**: Build applications that are carbon efficient.
 
-1. **Electricity**: Build applications that are energy-efficient.
+1. **Electricity Efficiency**: Build applications that are energy-efficient.
 
-1. **Carbon Intensity**: Consume electricity with the lowest carbon intensity.
+1. **Carbon Awareness**: Consume electricity with the lowest carbon intensity.
 
-1. **Embodied Carbon**: Build applications that are hardware efficient.
+1. **Hardware Efficiency**: Build applications that are hardware efficient.
 
-1. **Energy Proportionality**: Maximize the energy efficiency of hardware.
+1. **Measurement**: Improve sustainability through measurement.
 
-1. **Networking**: Reduce the amount of data and distance it must travel across the network.
+1. **Climate Commitments**: Defining the exact mechanism of carbon reduction.
 
-1. **Demand Shaping**: Build carbon-aware applications.
-
-1. **Optimization**: Focus on step-by-step optimizations that increase the overall carbon efficiency.
-
-These eight principles are independent of:
+These six principles are independent of:
 
 - Application domain.
 - Organization size or type.
@@ -29,7 +25,7 @@ These eight principles are independent of:
 
 ## Two philosophies of Sustainable Software Engineering
 
-Alongside the eight principles of Sustainable Software Engineering, there are two philosophies.
+Alongside the six principles of Sustainable Software Engineering, there are two philosophies.
 
 1. **Everyone has a part to play in the climate solution**
 
