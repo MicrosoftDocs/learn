@@ -1,4 +1,4 @@
-You've decided to use an Azure Service Bus topic to distribute sales performance messages in your salesforce application. Sales personnel will use the app on their mobile devices to send messages that summarize sales figures for each area and time period. Those messages will be distributed to web services that are located in the company's operational regions, including the Americas and Europe.
+You've decided to use an Azure Service Bus topic to distribute sales performance messages in your salesforce application. Sales personnel will use the app on their mobile devices to send messages that summarize sales figures for each area and time period. Those messages are distributed to web services that are located in the company's operational regions, including the Americas and Europe.
 
 You've already implemented the necessary infrastructure in your Azure subscriptions for the topic. Now, you want to write the code that sends messages to the topic and write code that retrieves messages from a subscription. Then, you'll send a message to a topic and retrieve the message for a specific subscription.
 
