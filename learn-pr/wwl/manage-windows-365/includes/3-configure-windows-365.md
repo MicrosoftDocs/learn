@@ -53,7 +53,7 @@ Creating a provisioning policy requires the following steps:
 
 1.  Sign in to the Microsoft Endpoint Manager admin center, select **Devices** > **Windows 365** > **Provisioning policies** > **Create policy**.
     
-    :::image type="content" source="../media/create-policy-bd0ad87a.png" alt-text="Screenshot of the create a connection window.":::
+    :::image type="content" source="../media/create-policy-bd0ad87a.png" alt-text="Screenshot of the create a policy window.":::
     
 2.  On the **General** page, enter a **Name** for the new policy.
 3.  For **On-premises network connection**, select the connection to use for this policy > **Next**.
