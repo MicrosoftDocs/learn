@@ -55,7 +55,7 @@ Multi-site configurations are useful for supporting multi-tenant applications, w
 
 Application Gateway is available under a Standard\_v2 SKU. Web Application Firewall (WAF) is available under a WAF\_v2 SKU. The v2 SKU offers performance enhancements and adds support for critical new features like autoscaling, zone redundancy, and support for static VIPs. Existing features under the Standard and WAF SKU continue to be supported in the new v2 SKU.
 
-Review the [feature comparison table](/azure/application-gateway/overview-v2#feature-comparison-between-v1-sku-and-v2-sku) between v1 and v2 SKU to detemine which SKU meets your deployment needs. 
+Review the [feature comparison table](/azure/application-gateway/overview-v2#feature-comparison-between-v1-sku-and-v2-sku) between v1 and v2 SKU to determine which SKU meets your deployment needs. 
 
 
 ## Choosing between Azure Application Gateway v2 and Web Application Firewall V2 SKUs

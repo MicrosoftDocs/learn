@@ -27,9 +27,8 @@ For a comparison of supported features in Azure Front Door, [Review the feature 
 Review the following [QuickStart](/azure/frontdoor/create-front-door-portal) to learn how to create an Azure Front Door profile using the Azure portal. You can create an Azure Front Door profile through Quick Create with basic configurations or through the Custom create which allows a more advanced configuration. 
 
 ## Routing architecture overview
-Front Door traffic routing takes place over multiple stages. First, traffic is routed from the client to Front Door. Then, Front Door uses your configuration to determine the origin to send the traffic to. The Front Door web application firewall, routing rules, rules engine, and caching configuration all affect the routing process.
+Front Door traffic routing takes place over multiple stages. First, traffic is routed from the client to Front Door. Then, Front Door uses your configuration to determine the origin to send the traffic to. The Front Door web application firewall, routing rules, rules engine, and caching configuration all affect the routing process.The following diagram illustrates the routing architecture:
 
-The following diagram illustrates the routing architecture:
 :::image type="content" source="../media/routing-process-standard-premium.png" alt-text="Azure Front Door traffic routing stages illustrated in eight boxes.":::
 
 ## Configure redirection rules in Front Door
