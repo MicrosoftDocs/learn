@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-solutions-secure-organization-data.design-security-defender-sql-storage
-title: design-security-defender-sql-storage
+title: Design a security solution with Microsoft Defender for SQL and Microsoft Defender for Storage
 metadata:
-  title: design-security-defender-sql-storage
-  description: "SC-100 preparatory unit on the topic: ."
+  title: Design a security solution with Microsoft Defender for SQL and Microsoft Defender for Storage
+  description: "SC-100 preparatory unit on the topic: Design a security solution with Microsoft Defender for SQL and Microsoft Defender for Storage."
   ms.date: 4/3/2023
   author: hrasheed-msft
   ms.author: hrasheed
