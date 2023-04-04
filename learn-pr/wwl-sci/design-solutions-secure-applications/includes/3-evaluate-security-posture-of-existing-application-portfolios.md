@@ -29,7 +29,7 @@ Defender for Cloud Apps integrates visibility with your cloud by:
 -   Using Conditional Access App Control protection to get real-time visibility and control over access and activities within your cloud apps.
 -   Helping you have continuous control by setting, and then continually fine-tuning, policies.
 
-![Defender for Cloud Apps architecture diagram.](https://learn.microsoft.com/defender-cloud-apps/media/proxy-architecture.png)
+![Defender for Cloud Apps architecture diagram.](../media/proxy-architecture.png)
 
 
 <!--

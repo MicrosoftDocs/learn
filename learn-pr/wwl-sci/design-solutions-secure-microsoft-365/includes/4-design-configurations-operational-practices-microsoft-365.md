@@ -74,7 +74,7 @@ Implement Microsoft Purview Information Protection to help you discover, classif
 
 Microsoft Purview Information Protection capabilities are included with Microsoft Purview and give you the tools to know your data, protect your data, and prevent data loss.
 
-![Diagram showing the Information protection capabilities protecting data through policy enforcement.](https://learn.microsoft.com/microsoft-365/media/zero-trust/microsoft-365-zero-trust-architecture-info-protect.png)
+![Diagram showing the Information protection capabilities protecting data through policy enforcement.](../media/microsoft-365-zero-trust-architecture-info-protect.png)
 
 While this work is represented at the top of the deployment stack illustrated earlier in this article, you can begin this work anytime.
 

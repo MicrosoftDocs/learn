@@ -101,11 +101,11 @@ We have omitted controls from the baseline where the feature was not supported t
 
 ### Data protection
 
-* **DP-3: Encrypt sensitive data in transit**
+* DP-3: Encrypt sensitive data in transit
 	* Data in Transit Encryption - No additional configurations are required as this is enabled on a default deployment.
-* **DP-6: Use a secure key management process**
+* DP-6: Use a secure key management process
 	* Key Management in Azure Key Vault - Set up integration of API Management with Azure Key Vault. Ensure that keys used by API Management are stored an Azure Key Vault so they can be securely accessed and updated.
-* **DP-7: Use a secure certificate management process**
+* DP-7: Use a secure certificate management process
 	* Certificate Management in Azure Key Vault - Set up integration of API Management with Azure Key Vault. Ensure that secrets for API Management (Named values) are stored an Azure Key Vault so they can be securely accessed and updated.
 
 ### Asset management

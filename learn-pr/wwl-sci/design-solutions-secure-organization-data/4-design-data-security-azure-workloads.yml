@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 1
 content: |
-  [!include[](includes/5-design-data-security-azure-workloads.md)]
+  [!include[](includes/4-design-data-security-azure-workloads.md)]
