@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.monitor-aks-using-container-insights.8-knowledge-check
+uid: learn.monitor-aks-using-container-insights.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
@@ -19,34 +19,46 @@ quiz:
       choices:
         - content: "None. You need Container insights to collect any monitoring data from the cluster."
           isCorrect: false
+          explanation: "Platform metrics are available without enabling Container insights."
         - content: "Platform metrics. Enable Container insights to collect additional performance and log data."
           isCorrect: true
+          explanation: "Platform metrics are available without enabling Container insights. You can also enable Azure Monitor managed service for Prometheus to collect additional metrics."
         - content: "Most logs and metrics. Enable Container insights to get curated views of data that’s already being collected."
+          explanation: "Only platform metrics are available without enabling Container insights. To get logs, enable Container insights."
           isCorrect: false
 
     - content: "How do you enable Container insights for a cluster?"
       choices:
         - content: "It’s enabled by default."
           isCorrect: false
+          explanation: "Container insights for a cluster must be enabled. It isn't enabled by default. Enable Container insights for a cluster using the Azure portal, CLI, ARM, or Terraform."
         - content: "It can only be enabled with the Azure portal."
           isCorrect: false
+          explanation: "Container insights for a cluster can be enabled using the Azure portal, CLI, ARM, or Terraform."
         - content: "Enable it using the Azure portal, CLI, ARM, or Terraform."
           isCorrect: true
+          explanation: "Container insights for a cluster can be enabled using the Azure portal, CLI, ARM, or Terraform."
 
     - content: "How do you get an alert when your cluster has a problem?"
       choices:
         - content: "Alerts will automatically be created when Container insights detects a problem."
           isCorrect: false
+          explanation: "You must enable alerts manually. Choose from a list of recommended alert rules in Container insights."
         - content: "Enable any of a list of recommended alert rules in Container insights."
           isCorrect: true
+          explanation: " Container insights provides preconfigured alert rules so that you don't have to create your own."
         - content: "Create a new alert rule using Azure Monitor."
           isCorrect: false
+          explanation: "Container insights provides preconfigured alert rules."
 
     - content: "How can you receive a proactive message when an alert is fired?"
       choices:
         - content: "Specify your contact information in the administrator section of the alert rule."
           isCorrect: false
+          explanation: "To create a proactive message when an alert is fired, create an action group with an SMS action and associate it with the alert rule."
         - content: "Create an action group with an SMS action and associate it with the alert rule."
           isCorrect: true
+          explanation: "Action groups with an SMS action will send a message to the configured contact details each time the rule is fired."
         - content: "Create a Logic app with an SMS action and specify the Logic app as an action for the alert rule."
           isCorrect: false
+          explanation: "While this might work, it's easier to create an action group with an SMS action and associate it with the alert rule."

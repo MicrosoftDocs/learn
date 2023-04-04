@@ -21,7 +21,7 @@ In this exercise, you’ll walk through different features of Container insights
 
 1. Expand a node to view the pods running on that node. 
 
-1. Exapnd a pod to see the containers grouped into the pod, they're displayed as the last row in the hierarchy.  
+1. Expand a pod to see the containers grouped into the pod, they're displayed as the last row in the hierarchy.  
 
     Use this page to drill into a specific node to see what's running on that node and consuming Node CPU and Memory resources.
 

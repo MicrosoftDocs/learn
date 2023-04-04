@@ -23,18 +23,18 @@ You can select the condition to modify the threshold, but for this exercise, weâ
 1. Select **Create action group** to create a new one.
 1. Enter an **Action group name** and **Display name** for the new action group and select the **Notifications** tab.  
 
-    :::image type="content" source="../media/7-create-action-group-basics.png" lightbox="../media/7-create-action-group-basics.png" alt-text="A screen shot showing the create action group basics tab.":::
+    :::image type="content" source="../media/7-create-action-group-basics.png" lightbox="../media/7-create-action-group-basics.png" alt-text="A screenshot showing the create action group basics tab.":::
 1. Select a **Notification type** of *Email/SMS message/Push/Voice*.
 1. Enter a **Name** for your action group.
 
-   :::image type="content" source="../media/7-create-action-group.png" lightbox="../media/7-create-action-group.png" alt-text="A screen shot showing the create action group notification tab.":::
+   :::image type="content" source="../media/7-create-action-group.png" lightbox="../media/7-create-action-group.png" alt-text="A screenshot showing the create action group notification tab.":::
 1. Select a **Notification type** of Email/SMS message/Push/Voice.
 1. Select **SMS** and then type in your phone number to receive the text message.
-   :::image type="content" source="../media/7-action-group-notifications.png" lightbox="../media/7-action-group-notifications.png" alt-text="A screen shot showing the notifications tab for Email/SMS message/push/voice.":::
+   :::image type="content" source="../media/7-action-group-notifications.png" lightbox="../media/7-action-group-notifications.png" alt-text="A screenshot showing the notifications tab for Email/SMS message/push/voice.":::
 1. Provide a **Name** for the entry and then select **Review + create** to save the action group.
 1. A text message is sent to your phone confirming that it is included in the action group.
 1. In the **Action Groups** list, select your new action group and select **Apply to rule**.  
-    :::image type="content" source="../media/7-actions-groups-apply.png" lightbox="../media/7-actions-groups-apply.png" alt-text="A screen shot showing the action group to apply to the alert rule.":::
+    :::image type="content" source="../media/7-actions-groups-apply.png" lightbox="../media/7-actions-groups-apply.png" alt-text="A screenshot showing the action group to apply to the alert rule.":::
 
 ## Create alert rule for restarting container
 
