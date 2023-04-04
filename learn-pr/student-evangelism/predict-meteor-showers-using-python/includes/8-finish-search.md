@@ -63,7 +63,7 @@ Perseids is best seen if you look towards the Perseus constellation on July 20, 
 Chang'e is best seen if you look towards the Draco constellation on October 16, 2020.
 ```
 
-Let's make one last change to our predictive algorithm to align with the film. Fei Fei travels to the Moon when it's big and bright, so we should make the viewing closer to 1. Change the predictive function after you get the moon_date_list and before the return statement:
+Let's make one last change to our predictive algorithm to align with the film. Fei Fei travels to the Moon when it's big and bright, so we should make the viewing closer to 1. Change the predictive function after you get the `moon_date_list` and before the `return` statement:
 
 ```python
         if meteor_shower == 'Chang\'e':
