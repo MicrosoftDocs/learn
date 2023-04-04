@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.enable-reliable-messaging-for-big-data-applications-using-azure-event-hubs.4-configure-applications-to-send-or-receive-messages-through-an-event-hub
-title: Configure applications to send or receive messages through an Event Hub
+title: Configure applications to send or receive messages through an event hub
 metadata:
-  title: Configure applications to send or receive messages through an Event Hub
-  description: Configure applications to send or receive messages through an Event Hub
+  title: Configure applications to send or receive messages through an event hub
+  description: Configure applications to send or receive messages through an event hub
   ms.date: 08/26/2019
   author: spelluru
   ms.author: spelluru

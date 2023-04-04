@@ -1,6 +1,6 @@
-You're now ready to configure your publisher and consumer applications for your Event Hub.
+You're now ready to configure your publisher and consumer applications for your event hub.
 
-In this unit, you'll configure applications to send or receive messages through your Event Hub. One application acts as the message sender (**SimpleSend**), the other as the message receiver (**EventProcessorSample**). Because these applications are written in Java, you can do all developing, test, and management in your browser. However, the same configuration must be used for each platform, such as .NET. The applications are stored in a GitHub repository.
+In this unit, you'll configure applications to send or receive messages through your event hub. One application acts as the message sender (**SimpleSend**), the other as the message receiver (**EventProcessorSample**). Because these applications are written in Java, you can do all developing, test, and management in your browser. However, the same configuration must be used for each platform, such as .NET. The applications are stored in a GitHub repository.
 
 ## Create a general-purpose, standard storage account
 
@@ -56,9 +56,9 @@ In the previous exercise, we defined default values for resource group and locat
     az storage container create --name messages --connection-string "<connection string here>"
     ```
 
-## Clone the Event Hubs GitHub repository
+## Clone the event hubs GitHub repository
 
-In Cloud Shell, clone the Event Hubs GitHub repository with `git`. The source files for the applications that you'll build in this unit are located in a [GitHub repository](https://github.com/Azure/azure-event-hubs). 
+In Cloud Shell, clone the event hubs GitHub repository with `git`. The source files for the applications that you'll build in this unit are located in a [GitHub repository](https://github.com/Azure/azure-event-hubs). 
 
 1. Run the following commands to make sure that you are in your home directory in Cloud Shell, and then to clone this repository.
 
@@ -92,7 +92,7 @@ In this exercise you'll use the built-in Cloud Shell editor to modify the Simple
 1. In the editor, locate and replace the following strings under ConnectionStringBuilder:
 
     - `"Your Event Hubs namespace name"` with the name of your Event Hubs namespace.
-    - `"Your Event Hub"` with the name of your Event Hub.
+    - `"Your Event Hub"` with the name of your event hub.
     - `"Your policy name"` with **RootManageSharedAccessKey**.
     - `"Your primary SAS key"` with the value of the **primaryKey** key for your Event Hubs namespace that you saved earlier.
 
@@ -121,7 +121,7 @@ You'll now build the Java application by running **mvn** commands.
     cd ~/azure-event-hubs/samples/Java/Basic/SimpleSend
     ```
 
-1. Build the Java SimpleSend application. This command builds your application using the connection details for your Event Hub.
+1. Build the Java SimpleSend application. This command builds your application using the connection details for your event hub.
 
     ```bash
     mvn clean package -DskipTests
@@ -133,11 +133,11 @@ You'll now build the Java application by running **mvn** commands.
 
 ## Edit EventProcessorSample.java
 
-You'll now configure a **receiver** (also known as **subscribers** or **consumers**) application to ingest data from your Event Hub.
+You'll now configure a **receiver** (also known as **subscribers** or **consumers**) application to ingest data from your event hub.
 
 For the receiver application, two classes are available: **EventHubReceiver** and **EventProcessorHost**. EventProcessorHost is built on top of EventHubReceiver, but provides a simpler programmatic interface than EventHubReceiver. EventProcessorHost can automatically distribute message partitions across multiple instances of EventProcessorHost using the same storage account.
 
-In this procedure, you'll use the EventProcessorHost method. You'll edit the EventProcessorSample application to add your Event Hubs namespace, Event Hub name, shared access policy name and primary key, storage account name, connection string, and container name.
+In this procedure, you'll use the EventProcessorHost method. You'll edit the EventProcessorSample application to add your Event Hubs namespace, event hub name, shared access policy name and primary key, storage account name, connection string, and container name.
 
 1. Change to the **EventProcessorSample** folder by running the following command.
 
@@ -156,7 +156,7 @@ In this procedure, you'll use the EventProcessorHost method. You'll edit the Eve
 1. Locate and replace the following strings in the editor:
 
     - `----EventHubNamespaceName----` with the name of your Event Hubs namespace.
-    - `----EventHubName----` with the name of your Event Hub.
+    - `----EventHubName----` with the name of your event hub.
     - `----SharedAccessSignatureKeyName----` with **RootManageSharedAccessKey**.
     - `----SharedAccessSignatureKey----` with the value of the **primaryKey** key for your Event Hubs namespace that you saved earlier.
     - `----AzureStorageConnectionString----` with your storage account connection string that you saved earlier.
@@ -175,7 +175,7 @@ In this procedure, you'll use the EventProcessorHost method. You'll edit the Eve
     cd ~/azure-event-hubs/samples/Java/Basic/EventProcessorSample
     ```
 
-1. Build the Java SimpleSend application by running the following command to ensure that your application uses the connection details for your Event Hub.
+1. Build the Java SimpleSend application by running the following command to ensure that your application uses the connection details for your event hub.
 
     ```bash
     mvn clean package -DskipTests
@@ -244,4 +244,4 @@ In this procedure, you'll use the EventProcessorHost method. You'll edit the Eve
 
 ## Summary
 
-You've now configured a sender application ready to send messages to your Event Hub. You've also configured a receiver application ready to receive messages from your Event Hub.
+You've now configured a sender application ready to send messages to your event hub. You've also configured a receiver application ready to receive messages from your event hub.

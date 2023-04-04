@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.enable-reliable-messaging-for-big-data-applications-using-azure-event-hubs.7-exercise-evaluate-the-performance-of-the-deployed-event-hub-using-the-azure-portal
-title: Exercise - Evaluate the performance of the deployed Event Hub using the Azure portal
+title: Exercise - Evaluate the performance of the deployed event hub using the Azure portal
 metadata:
-  title: Exercise - Evaluate the performance of the deployed Event Hub using the Azure portal
-  description: Evaluate the performance of the deployed Event Hub using the Azure portal
+  title: Exercise - Evaluate the performance of the deployed event hub using the Azure portal
+  description: Evaluate the performance of the deployed event hub using the Azure portal
   ms.date: 08/26/2019
   author: spelluru
   ms.author: spelluru
