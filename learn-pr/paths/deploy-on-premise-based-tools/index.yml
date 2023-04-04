@@ -15,7 +15,7 @@ prerequisites: |
   - Strong understanding of computer networking, client security, and application concepts
   - Experience using Active Directory Domain Services
 summary: |
-  Students are introduced to deployment using the Microsoft Deployment Toolkit and Configuration Manager
+  Students are introduced to deployment using the Microsoft Deployment Toolkit and Configuration Manager.
 iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - intermediate
