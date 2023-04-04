@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.create-power-bi-model-relationships.introduction
+uid: learn.wwl.deploy-device-data-protection.introduction
 title: Introduction
 metadata:
   title: Introduction
   description: "Introduction"
   ms.date: 04/04/2023
   author: wwlpublish
-  ms.author: shlindsay
+  ms.author: rstearman
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 2
+durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
