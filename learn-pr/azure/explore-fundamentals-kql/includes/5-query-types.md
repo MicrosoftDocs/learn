@@ -1,12 +1,12 @@
+You've learned how the KQL query is built in general. In this unit, you'll dive deeper into the different parts and types of queries.
 
-
-## Query types
+## Tabular expressions statements
 
 Kusto queries are made of one or more query statements. Unless explicitly stored, these statements only affect the query that is being run at any specific time. 
 
 The most common type of query statement is a **tabular expression statement**, which means both its input and output consist of tables or tabular datasets. Tabular statements contain zero or more operators, each of which starts with a tabular input and returns a tabular output.
 
-For example, the following query contains three tabular expression statement. 
+For example, the following query contains three tabular expression statements. 
 
 ```kusto
 StormEvents
@@ -33,4 +33,4 @@ Functions are reusable queries or query parts. Kusto supports two kinds of funct
 
 ## Management commands
 
-Kusto Query Language also supports a set of commands that are used retrieve information that is not necessarily data in the database tables, or to modify the service state. These commands are prefaced by the dot (`.`) character, and are outside of the scope of this training.
+Kusto Query Language also supports a set of commands that are used retrieve information that is not necessarily data in the database tables, or to modify the service state. These commands are prefaced by the dot (`.`) character. Their specific is outside of the scope of this training.
