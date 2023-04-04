@@ -2,7 +2,7 @@
 uid: learn.wwl.deploy-on-premise-based-tools
 metadata:
   title: MD-102 Deploy using on-premise based tools
-  description: MD-102 Deploy using on-premise based tools
+  description: Students are introduced to deployment using the Microsoft Deployment Toolkit and Configuration Manager.
   ms.date: 04/04/2023
   author: wwlpublish
   ms.author: rstearman
@@ -15,7 +15,7 @@ prerequisites: |
   - Strong understanding of computer networking, client security, and application concepts
   - Experience using Active Directory Domain Services
 summary: |
-  Students will be introduced to deployment using the Microsoft Deployment Toolkit and Configuration Manager.
+  Students are introduced to deployment using the Microsoft Deployment Toolkit and Configuration Manager.
 iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - intermediate
