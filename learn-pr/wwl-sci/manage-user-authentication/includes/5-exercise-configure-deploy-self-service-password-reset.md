@@ -9,8 +9,8 @@ There are many benefits for the user and the organization to enabling self-servi
 
 Licensing requirements:
 
- -  *Cloud based accounts* - A user has to be enrolled into self-service password reset, and that an Azure AD Premium P1 or P2 license or a Microsoft 365 Business Standard license is required.
- -  *On-premises accounts* - A user has to be enrolled into self-service password reset, and that an Azure AD Premium P1 or P2 license or a Microsoft 365 Business Premium license.
+ -  Cloud based accounts - A user has to be enrolled into self-service password reset, and that an Azure AD Premium P1 or P2 license or a Microsoft 365 Business Standard license is required.
+ -  On-premises accounts - A user has to be enrolled into self-service password reset, and that an Azure AD Premium P1 or P2 license or a Microsoft 365 Business Premium license.
 
 ## Enable self-service password reset
 
@@ -33,8 +33,8 @@ Create a user account that will be added to a security group.
 2.  The User pane now appears. Enter the following values:
     
     
-     -  User name: mias
-     -  Name: Mia Steele
+     -  User name: MonicaT
+     -  Name: Monica Thompson
 3.  Select **Show Password** and then copy it somewhere to reference it later.
 4.  Select **Create**.
 
@@ -53,7 +53,7 @@ You want to roll out SSPR to a limited set of users first to make sure your SSPR
     | Group name        | SSPRTesters             |
     | Group description | Testers of SSPR rollout |
     | Membership type   | Assigned                |
-    | Members           | Mia Steele              |
+    | Members           | Monica Thompson         |
 5.  Select **Create.**
     
     :::image type="content" source="../media/create-self-service-password-reset-security-group-1872b34b.png" alt-text="Screenshot of the New Group screen with group type, group name, and create highlighted.":::
@@ -82,7 +82,7 @@ Enable SSPR for the group.
 Now that the SSPR configuration is complete, register a mobile phone number for the user you created.
 
 1.  Open a different browser or open an InPrivate or Incognito browser session and then browse to [https://aka.ms/ssprsetup](https://aka.ms/ssprsetup). This is to ensure you'll be prompted for user authentication.
-2.  Sign in as `mias@organization-domain-name.onmicrosoft.com` with the password that you noted earlier. Replace the organization-domain-name with your domain name.
+2.  Sign in as `MonicaT@organization-domain-name.onmicrosoft.com` with the password that you noted earlier. Replace the organization-domain-name with your domain name.
 3.  When prompted to update your password, enter a new password of your choice. Be sure to record the new password.
 4.  In the **More information required** dialog box, select **Next**.
 5.  On the Keep your account-secure page, user the **Phone** option or select the **I want to set up a different method** link.
@@ -100,7 +100,7 @@ Now that the SSPR configuration is complete, register a mobile phone number for 
 Now let's test whether the user can reset their password.
 
 1.  Open a different browser or open an InPrivate or Incognito browser session and then browse to [https://aka.ms/sspr](https://aka.ms/sspr). This is to ensure you well be prompted for user authentication.
-2.  In the **Email, phone, or Skype** box, enter `mias@organization-domain-name.onmicrosoft.com` and then select Next. Replace the organization-domain-name with your domain name.
+2.  In the **Email, phone, or Skype** box, enter `MonicaT@organization-domain-name.onmicrosoft.com` and then select Next. Replace the organization-domain-name with your domain name.
 3.  On the Enter password page, select **Forgot my password**.
 4.  On the Get back into your account page, complete the requested information and then select **Next**.
     
@@ -113,6 +113,6 @@ Now let's test whether the user can reset their password.
 6.  Enter your verification code and then select **Next**.
 7.  Choose a new password step, enter a password and then confirm your new password.
 8.  When complete, select **Finish**.
-9.  Sign in as **Mia** with the new password you created.
+9.  Sign in as **Monica** with the new password you created.
 10. Enter your verification code and then verify you can complete the sign-in process.
 11. When finished, close your browser.
