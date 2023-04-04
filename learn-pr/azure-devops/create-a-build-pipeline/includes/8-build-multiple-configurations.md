@@ -72,11 +72,11 @@ You'll now call the template that you just built from the pipeline. You'll do so
 1. In Visual Studio Code, modify *azure-pipelines.yml* as you see here:
 
     ::: zone pivot="ms-hosted-agents"
-    [!code-yml[](code/8-azure-pipelines.yml?highlight=41-43, 45-47)]
+    [!code-yml[](code/8-azure-pipelines.yml?highlight=39-45)]
     ::: zone-end
 
     ::: zone pivot="github-codespaces-agent"
-    [!code-yml[](code/8-codespaces-azure-pipelines.yml?highlight=39-44)]
+    [!code-yml[](code/8-codespaces-azure-pipelines.yml?highlight=39-45)]
     ::: zone-end
 
     This file looks like the original, except that it replaces the build and publish tasks with calls to the template that does the same tasks.

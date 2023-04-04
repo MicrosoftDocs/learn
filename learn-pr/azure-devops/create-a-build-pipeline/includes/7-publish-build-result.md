@@ -21,7 +21,7 @@ In .NET, you can package your app as a .zip file. You can then use the built-in 
 
     ::: zone pivot="ms-hosted-agents"
 
-    [!code-yml[](code/7-codespaces-azure-pipelines-1.yml?highlight=43-54)]
+    [!code-yml[](code/7-codespaces-azure-pipelines-1.yml?highlight=41-52)]
 
     ::: zone-end
 
@@ -102,7 +102,7 @@ You now use variables to define these values one time. You then reference the va
 
     ::: zone pivot="ms-hosted-agents"
 
-    [!code-yml[](code/7-azure-pipelines-2.yml?highlight=9-12,16,18,25,33,42,45,49,54)]
+    [!code-yml[](code/7-azure-pipelines-2.yml?highlight=7-10,14,16,23,31,40,43,47,52)]
 
     ::: zone-end
 
