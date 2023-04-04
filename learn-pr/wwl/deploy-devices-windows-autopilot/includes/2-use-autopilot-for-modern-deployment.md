@@ -1,5 +1,5 @@
 
-Modern deployment methods take a new approach to provisioning devices. One of the key benefits of Windows 11 and later is a feature called Windows Autopilot. Windows Autopilot is a cloud-based deployment method. With Autopilot, you can set up and pre-configure both new and existing Windows 11 or later devices. Users in your organization use a new operating system out-of-the-box experience (OOBE) to configure their devices without needing a Windows image.
+Modern deployment methods take a new approach to provisioning devices. One of the key benefits of Windows 11 and later is a feature called Windows Autopilot. Windows Autopilot is a cloud-based deployment method. With Autopilot, you can set up and pre-configure new and existing Windows 11 or later devices. Users in your organization use a new operating system out-of-the-box experience (OOBE) to configure their devices without needing a Windows image.
 
 Autopilot offers the following advantages over on-premises deployment methods:
 
@@ -18,9 +18,9 @@ Windows Autopilot is cloud-driven and based around Azure AD Premium and Microsof
 
 ### New devices
 
-Most organizations purchase new devices from an Original Equipment Manufacturer (OEM). In this process, the device will typically be purchased with an OEM license of Windows 11 (usually Pro edition) and this will be pre-installed on the device when it's shipped to the customer. The OEM image is rarely desired, and until Windows 10, re-imaging the device was the most efficient method of configuring the device to organizational requirements.
+Most organizations purchase new devices from an Original Equipment Manufacturer (OEM). In this process, they typically buy the device with an OEM license of Windows 11 (usually Pro edition). Organizations rarely desire the OEM image, and until Windows 10, they re-imaged the device to configure it to organizational requirements.
 
-It's no longer necessary to re-image the device when the device already has Windows 11 or later. Regardless of the configuration of the OEM image or applications that are installed, Autopilot can reconfigure the device to suit the organization's requirements, including installing Line-Of-Business Apps, and even changing the edition (such as switching from Pro to Enterprise).
+It's no longer necessary to re-image the device when it already has Windows 11 or later. Regardless of the OEM image configuration or installed applications, Autopilot can reconfigure the device to suit the organization's requirements, including installing Line-Of-Business Apps and even changing the edition (such as switching from Pro to Enterprise).
 
 From the user's perspective, powering on the device provides an OOBE, with the organization deciding which options remain user-configurable, including the ability to deliver a zero-touch installation (ZTI) experience where the device is ready to use after simply plugging it in and turning it on.
 
