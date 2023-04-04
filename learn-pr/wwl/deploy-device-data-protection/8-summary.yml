@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.create-power-bi-model-relationships.summary
+uid: learn.wwl.deploy-device-data-protection.summary
 title: Summary
 metadata:
   title: Summary
   description: "Summary"
   ms.date: 04/04/2023
   author: wwlpublish
-  ms.author: shlindsay
+  ms.author: rstearman
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 3
+durationInMinutes: 1
 content: |
-  [!include[](includes/7-summary.md)]
+  [!include[](includes/8-summary.md)]
