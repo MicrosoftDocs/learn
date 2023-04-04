@@ -10,8 +10,8 @@ metadata:
   ms.prod: learning-azure
 title: 'SC-100: Design security solutions for applications and data'
 prerequisites: |
-  *   Advanced experience and knowledge in identity and access, platform protection, security operations, securing data and securing applications.
-  *   Experience with hybrid and cloud implementations.
+  -   Advanced experience and knowledge in identity and access, platform protection, security operations, securing data and securing applications.
+  -   Experience with hybrid and cloud implementations.
 summary: |
   Learn how to design a cybersecurity strategy for data and applications.
 iconUrl: /training/achievements/generic-trophy.svg
