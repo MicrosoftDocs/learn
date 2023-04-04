@@ -32,14 +32,14 @@ products:
 - azure-kubernetes-service
 - azure-monitor
 units:
-- learn.monitor-aks-using-container-insights.1-introduction
-- learn.monitor-aks-using-container-insights.2-enable-container-insights-for-your-aks-cluster
-- learn.monitor-aks-using-container-insights.3-exercise-enable-container-insights
-- learn.monitor-aks-using-container-insights.4-monitor-performance-of-your-cluster
-- learn.monitor-aks-using-container-insights.5-monitor-performance-of-your-cluster
-- learn.monitor-aks-using-container-insights.6-create-container-insights-alert-rules
-- learn.monitor-aks-using-container-insights.7-exercise-create-container-insights-alert-rules
-- learn.monitor-aks-using-container-insights.8-knowledge-check
-- learn.monitor-aks-using-container-insights.9-summary
+- learn.monitor-aks-using-container-insights.introduction
+- learn.monitor-aks-using-container-insights.enable-container-insights-for-your-aks-cluster
+- learn.monitor-aks-using-container-insights.exercise-enable-container-insights
+- learn.monitor-aks-using-container-insights.monitor-performance-of-your-cluster
+- learn.monitor-aks-using-container-insights.monitor-performance-of-your-cluster
+- learn.monitor-aks-using-container-insights.create-container-insights-alert-rules
+- learn.monitor-aks-using-container-insights.exercise-create-container-insights-alert-rules
+- learn.monitor-aks-using-container-insights.knowledge-check
+- learn.monitor-aks-using-container-insights.summary
 badge:
   uid: learn.monitor-aks-using-container-insights-badge
