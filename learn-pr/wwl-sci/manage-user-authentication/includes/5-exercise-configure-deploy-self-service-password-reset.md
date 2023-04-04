@@ -9,8 +9,8 @@ There are many benefits for the user and the organization to enabling self-servi
 
 Licensing requirements:
 
- -  Cloud based accounts - A user has to be enrolled into self-service password reset, and that an Azure AD Premium P1 or P2 license or a Microsoft 365 Business Standard license is required.
- -  On-premises accounts - A user has to be enrolled into self-service password reset, and that an Azure AD Premium P1 or P2 license or a Microsoft 365 Business Premium license.
+ -  *Cloud based accounts* - A user has to be enrolled into self-service password reset, and that an Azure AD Premium P1 or P2 license or a Microsoft 365 Business Standard license is required.
+ -  *On-premises accounts* - A user has to be enrolled into self-service password reset, and that an Azure AD Premium P1 or P2 license or a Microsoft 365 Business Premium license.
 
 ## Enable self-service password reset
 
