@@ -9,7 +9,7 @@ Your most sensitive data might include business, financial, healthcare, or perso
 
 Data Discovery & Classification is part of the Advanced Data Security offering, which is a unified package for advanced SQL security capabilities. You can access and manage Data Discovery & Classification via the central **SQL Advanced Data Security** section of the Azure portal.
 
-:::image type="content" source="../media/az500-database-class-f12d2e6e.png" alt-text="Screenshot of the Discovery and Classification page with classificiation choices, like Confidential, shown.":::
+:::image type="content" source="../media/az500-database-class-f12d2e6e.png" alt-text="Screenshot of the Discovery and Classification page with classification choices, like Confidential, shown.":::
 
 
 Classifying your data and identifying your data protection needs helps you select the right cloud solution for your organization. Data classification enables organizations to find storage optimizations that might not be possible when all data is assigned the same value. Classifying (or categorizing) stored data by sensitivity and business impact helps organizations determine the risks associated with the data. After your data has been classified, organizations can manage their data in ways that reflect their internal value instead of treating all data the same way.
