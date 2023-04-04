@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.manage-windows-365
+metadata:
+  title: MD-102 4-Manage Windows 365
+  description: "This module teaches managing Microsoft's cloud-based PC management solution, Windows 365, offering personalized, secure Windows 11 experience from any device. Learn features, setup, management, security, deployment options, and licensing to optimize your environment."
+  ms.date: 04/04/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Manage Windows 365
+summary: This module teaches managing Microsoft's cloud-based PC management solution, Windows 365, offering personalized, secure Windows 11 experience from any device. Learn features, setup, management, security, deployment options, and licensing to optimize your environment.
+abstract: |
+  After completing this module, you should be able to:
+  - Describe the key features of Windows 365
+  - Describe the Windows 365 management experience
+  - Describe the Windows 365 security model
+  - Describe the Windows 365 deployment options
+  - Describe the Windows 365 licensing model
+prerequisites: |
+  *   Strong technical skills installing, maintaining, and troubleshooting the Windows 11 OS or later
+  *   Strong understanding of computer networking, client security, and application concepts
+  *   Experience using Active Directory Domain Services
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- windows
+- windows-365
+subjects:
+- cloud-computing
+units:
+- learn.wwl.manage-windows-365.introduction
+- learn.wwl.manage-windows-365.explore-windows-365
+- learn.wwl.manage-windows-365.configure-windows-365
+- learn.wwl.manage-windows-365.administer-windows-365
+- learn.wwl.manage-windows-365.knowledge-check
+- learn.wwl.manage-windows-365.summary
+badge:
+  uid: learn.wwl.manage-windows-365.badge

@@ -35,61 +35,11 @@ There is another role that is outside the scope of our application: the **subscr
 
 The following table summarizes the access permissions for our roles and application.
 
-:::row:::
-  :::column:::
-    **Role**
-  :::column-end:::
-  :::column:::
-    **Management plane permissions**
-  :::column-end:::
-  :::column:::
-    **Data plane permissions**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Security team
-  :::column-end:::
-  :::column:::
-    Key Vault Contributor
-  :::column-end:::
-  :::column:::
-    Keys: backup, create, delete, get, import, list, restore. Secrets: all operations
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Developers and operators
-  :::column-end:::
-  :::column:::
-    Key Vault deploy permission **Note**: This permission allows deployed VMs to fetch secrets from a key vault.
-  :::column-end:::
-  :::column:::
-    None
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Auditors
-  :::column-end:::
-  :::column:::
-    None
-  :::column-end:::
-  :::column:::
-    Keys: list Secrets: list. **Note**: This permission enables auditors to inspect attributes (tags, activation dates, expiration dates) for keys and secrets not emitted in the logs.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Application
-  :::column-end:::
-  :::column:::
-    None
-  :::column-end:::
-  :::column:::
-    Keys: sign Secrets: get
-  :::column-end:::
-:::row-end:::
-
+| **Role**                 | **Management plane permissions**                                                                             | **Data plane permissions**                                                                                                                                                          |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Security team            | Key Vault Contributor                                                                                        | Keys: backup, create, delete, get, import, list, restore. Secrets: all operations                                                                                                   |
+| Developers and operators | Key Vault deploy permission **Note**: This permission allows deployed VMs to fetch secrets from a key vault. | None                                                                                                                                                                                |
+| Auditors                 | None                                                                                                         | Keys: list Secrets: list. **Note**: This permission enables auditors to inspect attributes (tags, activation dates, expiration dates) for keys and secrets not emitted in the logs. |
+| Application              | None                                                                                                         | Keys: sign Secrets: get                                                                                                                                                             |
 
 The three team roles need access to other resources along with Key Vault permissions. To deploy VMs (or the Web Apps feature of Azure App Service), developers and operators need Contributor access to those resource types. Auditors need read access to the Storage account where the Key Vault logs are stored.

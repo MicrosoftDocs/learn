@@ -102,6 +102,9 @@ Apps that want to check a customer's credit record send a request to the relay, 
 
 1. In the code, replace `<namespace>` with the name of the relay you created earlier, then copy the key from the *AccessKeys.txt* file that you saved earlier and paste it to replace `<your key here>`.
 
+> [!TIP]
+> Don't forget to delete the *AccessKeys.txt*. In production code, keep these values in a secure location, such as [Azure Key Vault](/azure/key-vault/).
+
 The sender app now has all the information it needs to connect to and authenticate with the relay in Azure.
 
 ## Send requests from the sender app
