@@ -7,21 +7,19 @@
         Your team's security journey, from software development point of view, should begin by familiarizing yourself with concepts behind each category.
    :::column-end:::
    :::column span="":::
-     ![AppSec](../media/sdl-education.png)
+     ![OWASP logo](../media/owasp.png)
    :::column-end:::
 :::row-end:::
 
-To quote first pillar of [Microsoft's Secure Development Lifecycle practices](https://www.microsoft.com/en-us/securityengineering/sdl/practices) *effective training will complement and re-enforce security policies, SDL practices, standards, and requirements of software security, and be guided by insights derived through data or newly available technical capabilities.
+To quote first pillar of [Microsoft's Secure Development Lifecycle practices](https://www.microsoft.com/en-us/securityengineering/sdl/practices) *training will complement and re-enforce security policies, SDL practices, standards, and requirements of software security, and be guided by insights derived through data or newly available technical capabilities.
 Although security is everyone’s job, it’s important to remember that not everyone needs to be a security expert nor strive to become a proficient penetration tester. However, ensuring everyone understands the attacker’s perspective, their goals, and the art of the possible will help capture the attention of everyone and raise the collective knowledge bar.*
 
 ## What is OWASP?
 
-The [Open Web Application Security Project (OWASP)](https://owasp.org/) is a global charitable organization focused on improving software security.
+The [Open Web Application Security Project (OWASP)](https://owasp.org/) is a global nonprofit organization focused on improving software security.
 This is the recently updated list for 2021, and you can see how each category covers different areas of application security. Their mission is to make software security visible so that individuals and organizations can make informed decisions.
 
 The list is curated and ordered by severity of reported, vulnerabilities, industry suggested guidelines and probability of attracts.
-
-![OWASP logo](../media/owasp.png)
 
 ## OWASP Top 10
 

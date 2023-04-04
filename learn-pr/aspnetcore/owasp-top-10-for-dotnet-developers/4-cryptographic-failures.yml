@@ -24,3 +24,16 @@ quiz:
     - content: "No"
       isCorrect: true
       explanation: "Correct. Rely on industry standard encryption and hashing implementations. Review the documentation to ensure you're using strong algorithms."    
+
+
+  - content: "Process of converting data to a different format to protect the integrity of data for storage, transmission, compression or decompression best describes"  
+    choices:    
+    - content: "Encryption."
+      isCorrect: false
+      explanation: "Incorrect. Encryption deals with maintaining confidentiality and integrity of the data by converting the data into an unreadable format to protect it from unauthorized access."    
+    - content: "Hashing"
+      isCorrect: false
+      explanation: "Incorrect. Hashing is a one-way cryptographic function while encryption and encoding is designed to work both ways."
+    - content: "Encoding"
+      isCorrect: true
+      explanation: "Correct!"    

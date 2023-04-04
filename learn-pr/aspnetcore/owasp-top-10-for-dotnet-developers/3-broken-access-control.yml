@@ -25,3 +25,18 @@ quiz:
     - content: "Create a standard for security benchmark of web applications."
       isCorrect: false
       explanation: "Incorrect. OWASP Top 10 is often effort to as 'awareness document' for educational purposes."
+
+  - content: "What is Broken Access Control?"  
+    choices:
+    - content: "A vulnerability that allows an attacker to access restricted information."
+      isCorrect: false
+      explanation: "Correct but not entirely."
+    - content: "A vulnerability that allows an attacker to modify or delete restricted information."
+      isCorrect: false
+      explanation: "Correct but not entirely."
+    - content: "A vulnerability that allows an attacker to bypass access controls."
+      isCorrect: false
+      explanation: "Correct but not entirely."
+    - content: "All of the above."
+      isCorrect: true
+      explanation: "Correct. Broken Access Control is a vulnerability that allows an attacker to access restricted information, modify or delete restricted information, and bypass access controls."
