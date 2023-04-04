@@ -1,7 +1,4 @@
 
-> [!NOTE]
->  Microsoft 365 compliance is now called Microsoft Purview and the solutions within the compliance area have been rebranded. Records Management in Microsoft 365 is now Microsoft Purview Records Management. For more information about Microsoft Purview, see the [blog announcement](https://www.microsoft.com/security/blog/2022/04/19/the-future-of-compliance-and-data-governance-is-here-introducing-microsoft-purview/)
-
 Organizations of all types require a management solution to manage regulatory, legal, and business-critical records across their corporate data. Microsoft Purview Records Management helps an organization look after their legal obligations. It also helps to demonstrate compliance with regulations, and increases efficiency with regular disposition of items that are no longer required to be kept, no longer of value, or no longer required for business purposes. Microsoft Purview Records Management includes many features, including:
 
 - Labeling content as a record.
