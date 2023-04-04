@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/03/2023
+  ms.date: 04/04/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
@@ -26,7 +26,7 @@ quiz:
     - content: "Reprovisioning"
       isCorrect: true
       explanation: "Correct. Reprovisioning is a unique action for Cloud PCs."
-  - content: "Which of the following features is exclusive to Windows 365 Enterprise and not available in Windows 365 Business?"
+  - content: "Which of the following features is exclusive to Windows 365 Enterprise and unavailable in Windows 365 Business?"
     choices:
     - content: "Windows Virtual Desktop"
       isCorrect: false

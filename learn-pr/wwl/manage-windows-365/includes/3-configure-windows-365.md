@@ -8,7 +8,7 @@ Before a user can use a Cloud PC, you must assign a Windows 365 license to that 
 1.  Sign in to the Azure AD admin center with a license administrator account.
 2.  Select **Licenses** to open a page where you can see and manage all licensable products in the organization.
 3.  Select a user or group, and then use the **Select** button at the bottom of the page to confirm your selection.
-4.  Under All products, select **Windows 365.** Select **Assign** at the top of the page.
+4.  Under All products, select **Windows 365** Select **Assign** at the top of the page.
 5.  On the Assign license page, select **Users and groups** to open a list of users and groups.
 6.  Select **Assign** at the bottom of the page.
 
@@ -22,7 +22,7 @@ To create an Azure network connection:
 2.  Select **Devices** > **Windows 365** (under **Provisioning**) > **Azure network connection** > **Create connection**.
 3.  On the **Network details** page, enter a **Name** for the new connection. The connection name must be unique within the customer tenant.
     
-    :::image type="content" source="../media/connection-name-c4ff26d6.png" alt-text="Screenshot of connection name":::
+    :::image type="content" source="../media/connection-name-c4ff26d6.png" alt-text="Screenshot of the create a connection window.":::
     
 4.  Select a **Subscription** and **Resource group** for the new connection. Create a new resource group or select an existing one that contains your Cloud PC resources.
 5.  Select a **Virtual network** and **Subnet** and select **Next**.
@@ -53,7 +53,7 @@ Creating a provisioning policy requires the following steps:
 
 1.  Sign in to the Microsoft Endpoint Manager admin center, select **Devices** > **Windows 365** > **Provisioning policies** > **Create policy**.
     
-    :::image type="content" source="../media/create-policy-bd0ad87a.png" alt-text="Screenshot of create policy,":::
+    :::image type="content" source="../media/create-policy-bd0ad87a.png" alt-text="Screenshot of the create a connection window.":::
     
 2.  On the **General** page, enter a **Name** for the new policy.
 3.  For **On-premises network connection**, select the connection to use for this policy > **Next**.

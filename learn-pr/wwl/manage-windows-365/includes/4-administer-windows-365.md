@@ -49,14 +49,14 @@ Resizing a Cloud PC involves the following steps:
 
 1.  Sign in to the Microsoft Endpoint Manager admin center, select **Devices** > **All Devices** > choose a device > **Resize**.
     
-    :::image type="content" source="../media/resize-6b7faa89.png" alt-text="Screenshot of resize a Cloud PC.":::
+    :::image type="content" source="../media/resize-6b7faa89.png" alt-text="Screenshot of the Microsoft Intune Admin center resize pc option.":::
     
 2.  You’ll see a list with all the possible SKUs that you can upgrade to. You increase and decrease a Cloud PC’s specs (RAM/vCPU). You can only increase the OS disk storage. You can't decrease the OS disk storage. If you're downsizing a user’s Cloud PC, options with lower storage will be grayed out. Select one of the available options.
 3.  Select **Resize**. 
--  When triggering a resize, the Cloud PC will be rebooted and the user will be immediately disconnected from their current session. Make sure the user saves all their work to avoid any potential data loss.
--  If there are available licenses, the upgrade/downgrade will take place.
--  If you have a combination of paid and trial licenses, the resize feature will use your paid licenses first. After these licenses run out, the resize operation will use your trial licenses.
--  If there are no licenses in your inventory, the resizing will fail. You can contact your procurement admin to request more licenses. After the license has been purchased and added to the inventory in the Microsoft Admin Center, you can retry the resize operation.
+    -  When triggering a resize, the Cloud PC will be rebooted and the user will be immediately disconnected from their current session. Make sure the user saves all their work to avoid any potential data loss.
+    -  If there are available licenses, the upgrade/downgrade will take place.
+    -  If you have a combination of paid and trial licenses, the resize feature will use your paid licenses first. After these licenses run out, the resize operation will use your trial licenses.
+    -  If there are no licenses in your inventory, the resizing will fail. You can contact your procurement admin to request more licenses. After the license has been purchased and added to the inventory in the Microsoft Admin Center, you can retry the resize operation.
 
 ### Learn More
 -  [Device management overview for Cloud PCs](/windows-365/enterprise/device-management-overview?azure-portal=true)

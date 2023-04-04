@@ -59,7 +59,7 @@ Windows 365 is available in two editions:
 
 Users can navigate to [https://windows365.microsoft.com](https://windows365.microsoft.com/) to access their Cloud PCs, connecting through Remote Desktop.
 
-:::image type="content" source="../media/cloud-personal-computer-gear-04bac88c.png" alt-text="cloudpc-gear.png":::
+:::image type="content" source="../media/cloud-personal-computer-gear-04bac88c.png" alt-text="Screenshot of the cloud pc gear, showing; Restart, Reset, Rename, Troubleshoot, and System information.":::
 
 
 The Remote Desktop client is available for Windows, macOS, iOS/iPadOS and Android.
