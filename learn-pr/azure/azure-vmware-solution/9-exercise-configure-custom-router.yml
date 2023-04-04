@@ -33,13 +33,13 @@ quiz:
       choices:
         - content: "0"
           isCorrect: false
-          explanation: "Incorrect. 2 private IP addresses are assigned to Azure Route Server."
+          explanation: "Incorrect. Two private IP addresses are assigned to Azure Route Server."
         - content: "1"
           isCorrect: false
-          explanation: "Incorrect. 2 private IP addresses are assigned to Azure Route Server."
+          explanation: "Incorrect. Two private IP addresses are assigned to Azure Route Server."
         - content: "2"
           isCorrect: true
-          explanation: "Correct. 2 private IP addresses are assigned to Azure Route Server."
+          explanation: "Correct. Two private IP addresses are assigned to Azure Route Server."
         - content: "3"
           isCorrect: false
-          explanation: "Incorrect. 2 private IP addresses are assigned to Azure Route Server."
+          explanation: "Incorrect. Two private IP addresses are assigned to Azure Route Server."
