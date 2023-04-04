@@ -1,7 +1,7 @@
 
 The Windows Assessment and Deployment Kit (Windows ADK) includes a tool called Windows Configuration Designer, which you can use to create provisioning packages.
 
-:::image type="content" source="../media/windows-configuration-designer-interface-f5f579a4.png" alt-text="Screenshot of the Windows Configuration Designer. Shows a project called Project1 open with the Computer Account option in the left view, with fields for Account, AccountOU, ComputerName, DomainName, and Password in the right view.":::
+:::image type="content" source="../media/windows-configuration-designer-interface-f5f579a4.png" alt-text="Screenshot of the Windows Configuration Designer. Shows Project1 open with the Computer Account option in the left view.":::
 
 
 You can use the Windows Configuration Designer wizards to configure the following settings:
