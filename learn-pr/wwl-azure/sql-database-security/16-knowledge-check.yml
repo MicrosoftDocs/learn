@@ -23,7 +23,7 @@ quiz:
       explanation: "Advanced Threat Protection. Advanced Threat Protection is an Advanced Data Security feature for databases. The feature provides alerts when a potential attack, like SQL injection, occurs."
     - content: "Data Discovery and Classification"
       isCorrect: false
-      explanation: "Discovering and classification will not minimize the risk of attack."
+      explanation: "Discovering and classification won't minimize the risk of attack."
     - content: "Dynamic Data Masking"
       isCorrect: false
       explanation: "Data masking isn't helpful in the situation."
@@ -34,7 +34,7 @@ quiz:
       explanation: "Encryption makes sure the data is unreadable while stored, not masking phone numbers."
     - content: "Data Classification"
       isCorrect: false
-      explanation: "Data classification will not help mask off personally identifiable phone number information."
+      explanation: "Data classification won't help mask off personally identifiable phone number information."
     - content: "Dynamic Data Masking"
       isCorrect: true
       explanation: "Dynamic Data Masking. Dynamic data masking limits sensitive data exposure by masking it to non-privileged users. This feature enables customers to designate how much of the sensitive data to reveal."
