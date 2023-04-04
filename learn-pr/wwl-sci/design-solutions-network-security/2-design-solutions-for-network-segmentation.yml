@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 1
 content: |
-  [!include[](includes/1-design-solutions-for-network-segmentation.md)]
+  [!include[](includes/2-design-solutions-for-network-segmentation.md)]
