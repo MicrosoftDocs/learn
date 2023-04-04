@@ -1,4 +1,4 @@
-In this module you’ll go through the list of OWASP TOP 10. You'll discover, by looking at examples, that are the most common security weaknesses and how you, app developer or architect, can redice the risk of security bug infecting your systems. This module will introduce techniques, tools and best practices that can improve your product’s security posture.
+In this module you’ll go through the list of OWASP TOP 10. You'll discover, by looking at examples, that are the most common security weaknesses and how you, app developer or architect, can reduce the risk of security bug infecting your systems. This module will introduce techniques, tools and best practices that can improve your product’s security posture.
 
 ### Threat landscape
 
