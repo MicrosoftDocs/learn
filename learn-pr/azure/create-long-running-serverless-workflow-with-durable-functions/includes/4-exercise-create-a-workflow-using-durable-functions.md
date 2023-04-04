@@ -6,7 +6,7 @@ In this exercise, you'll use the example scenario from the previous unit to lear
 
 1. On the Azure portal menu or from the **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the left menu pane, select **Compute**, and under *Popular products*, select **Function App**. The **Create Function App** pane appears.
+1. Search for and select **Function App**. The **Create Function App** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -14,30 +14,30 @@ In this exercise, you'll use the example scenario from the previous unit to lear
     |---|---|---|
     | **Project Details** |
     | Subscription | Concierge Subscription | Specifies the subscription under which this new function app is created. |
-    | Resource Group | From the dropdown list, select _<rgn>[sandbox resource group name]</rgn>_ | Specifies the name of the resource group in which to create your function app. We'll create the function app in the sandbox resource group that was assigned when we activated the sandbox, namely, _<rgn>[sandbox resource group name]</rgn>_. |
+    | Resource Group | From the dropdown list, select *<rgn>[sandbox resource group name]</rgn>* | Specifies the name of the resource group in which to create your function app. We'll create the function app in the sandbox resource group that was assigned when we activated the sandbox, namely, *<rgn>[sandbox resource group name]</rgn>*. |
     | **Instance Details** |
     | Function App name | _[Globally unique name]_ | Specifies the name that identifies your new function app. Valid characters are `a-z`, `0-9`, and `-`. |
-    | Publish | _Code_ | Specifies that the function will use code instead of a container. |
-    | Runtime stack | _Node.js_ | Specifies that the sample code in this module is written in JavaScript. |
-    | Version | _12 LTS_ | Specifies the version of the runtime stack. |
-    | Region | _[Select from the list below]_ | Choose the region closest to you that is also one of the allowed *Sandbox regions* that follow. |
+    | Publish | *Code* | Specifies that the function will use code instead of a container. |
+    | Runtime stack | *Node.js* | Specifies that the sample code in this module is written in JavaScript. |
+    | Version | *18 LTS* | Specifies the version of the runtime stack. |
+    | Region | *[Select from the list following this section]* | Choose the region closest to you that is also one of the allowed *Sandbox regions* that follow. |
+    | **Operating system** |
+    | Operating System | *Windows* | Specifies the operating system that hosts the function app. |
+    | **Plan** |
+    | Plan type | *Consumption (Serverless)* | Specifies the hosting plan that defines how resources are allocated to your function app. In the default **Consumption** plan, resources are added dynamically as required by your functions. In this serverless hosting model, you only pay for the time your functions run. |
 
     [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
-1. Select **Next : Hosting**.
+1. Select **Next : Storage**.
 
-1. On the **Hosting** tab, enter the following values for each setting.
+1. On the **Storage** tab, enter the following values for each setting.
 
     | Setting | Value | Description |
     |---|---|---|
     | **Storage** |
-    | Storage account | _[Globally unique name]_ | Specifies the name of the new storage account used by your function app (which does not need to match the globally unique name that you specified for your function). Storage account names must be between 3 and 24 characters in length and may contain numbers and lowercase letters only. This dialog automatically populates the field with a unique name that is dynamically generated. However, feel free to use a different name or even an existing account. |
-    | **Operating system** |
-    | Operating System | _Windows_ | Specifies the operating system that hosts the function app. |
-    | **Plan** |
-    | Plan type | _Consumption (Serverless)_ | Specifies the hosting plan that defines how resources are allocated to your function app. In the default **Consumption** plan, resources are added dynamically as required by your functions. In this serverless hosting model, you only pay for the time your functions run. |
+    | Storage account | *[Globally unique name]* | Specifies the name of the new storage account used by your function app (which does not need to match the globally unique name that you specified for your function). Storage account names must be between 3 and 24 characters in length and may contain numbers and lowercase letters only. This dialog automatically populates the field with a unique name that is dynamically generated. However, feel free to use a different name or even an existing account. |
 
-1. Select **Next : Networking (preview)**. Accept the defaults.
+1. Select **Next : Networking**. Accept the defaults.
 
 1. Select **Next : Monitoring**.
 
@@ -46,7 +46,7 @@ In this exercise, you'll use the example scenario from the previous unit to lear
     | Setting | Value | Description |
     |---|---|---|
     | **Application Insights** |
-    | Enable Application Insights | _No_ | Specifies that Application Insights will be disabled for this module. |
+    | Enable Application Insights | *No* | Specifies that Application Insights will be disabled for this module. |
 
 1. Select **Review + create** and review the options that you configured. If you're satisfied with your options, select **Create** to provision and deploy the function app.
 
@@ -58,7 +58,7 @@ Because we are creating JavaScript Durable Functions, we need to install the `du
 
 1. Select **Go to resource** to select your function app. Your **Function App** pane appears.
 
-1. In the left menu pane, under **Development Tools**, select **App Service Editor (preview)**, then select **Go**. The **App Service Editor** Quick Start pane appears in a new browser window.
+1. In the left menu pane, under **Development Tools**, select **App Service Editor (preview)**, then select **Open editor**. The **App Service Editor** Quick Start pane appears in a new browser window.
 
 1. In the left menu pane, highlight the **WWWROOT** folder.
 
@@ -98,7 +98,7 @@ Because we are creating JavaScript Durable Functions, we need to install the `du
     npm install durable-functions
     ```
 
-    This command instructs the node package manager to install the durable-functions package and any dependencies that are required. This may take a few minutes to complete, and the node package manager may display some warnings, which you can ignore.
+    This command instructs the node package manager to install the durable-functions package and any dependencies that are required. This may take a few minutes to complete, and the node package manager may display some warnings, which you can ignore. If you're prompted to install a newer version of npm, use the command given in the error to install the newer version, then install the durable-functions package once the new version is installed.
 
     Wait until all packages have finished installing.
 
