@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.owasp-top-10-for-dotnet-developers.server-side-request-forgery
-title: Server-Side Request Forgery
+title: 10. Server-Side Request Forgery
 metadata:
   title: server-side-request-forgery
   description: "OWASP Top 10 for .NET Developers. Server-side request forgery."
@@ -9,7 +9,7 @@ metadata:
   ms.author: dawidobrocki
   ms.topic: interactive-tutorial
   ms.prod: introduction-to-owasp-top-ten-for-dotnet-developers
-durationInMinutes: 1
+durationInMinutes: 2
 content: |
   [!include[](includes/12-server-side-request-forgery.md)]
 

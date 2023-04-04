@@ -57,3 +57,5 @@ The team you're part of has a mix of talent, including early in career and seaso
 
 Team for long has been slowed down by manual release process that proofed to be unreliable, error prone and heavy on manual interaction. As part of migration to the cloud team is looking into adopting modern CI/CD automation.
 The company hasn't fully grasped the concepts behind secure DevOps practices. Security of the digital estate has long been neglected by the business. With the new hire the company is looking to spread the security best practices not only within the team but the company as a whole.
+
+Your team lead asked you to conduct design and code review of team-owned codebase with extra attention payed to security aspects of the solution.

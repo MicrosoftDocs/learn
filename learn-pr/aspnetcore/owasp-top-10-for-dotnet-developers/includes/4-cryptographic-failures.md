@@ -10,7 +10,7 @@ Hashing is a one-way operation, there's no way to de-hash a value.
 > [!WARNING]
 > Avoid writing your own cryptographic algorithms. Use strong cryptographic algorithms provided by .NET.
 
-## Encryption
+### Encryption
 
 Let's explore a couple of examples of what ``System.Security.Cryptography`` namespace and it's contained functionality has to offer.
 We'll start with Advanced Encryption Standard (AES). In the example below a new instance of the AES class is created and used it to generate new key and initialization vector (IV).​ This illustrates how to use the Advanced Encryption Standard to be used to perform encryption on any type of managed stream, then the stream is wrapped with CryptoStream.
@@ -22,7 +22,7 @@ CryptoStream cryptStream = new CryptoStream(fileStream,
                                             CryptoStreamMode. Write);
  ```
 
-## Hashing
+### Hashing
 
 Hashing is a one way operation. When using a hashing function to hash non-unique inputs such as passwords, use a *salt value* added to the original value before hashing.
 
@@ -35,7 +35,7 @@ public static byte[] HashPassword256(string password)​
 }        
 ```
 
-## Random numbers
+### Random numbers
 
 System.Random isn't a random number generator. It's a deterministic pseudo-random sequence generator. Microsoft Learn documentation explicitly states it shouldn't be used for generating passwords. It’s predictable and seeded only from the system clock. To generate a cryptographically secure random number, such as one that's suitable for creating a random password.
 
@@ -43,5 +43,9 @@ System.Random isn't a random number generator. It's a deterministic pseudo-rando
 var randomNumberGenerator = System.Security.Cryptography.RandomNumberGenerator.Create();​
 ```
 
-> [!TIP]
-> Make sure you know when to use `System.Random` versus `System.Security Cryptography.RandomNumberGenerator` as your choice can lead to security vulnerability being introduces in your codebase.
+
+### Code Review Notes
+
+You don't want to be unnecessarily storing any sensitive data in your system. If you do, make sure you encrypt all data in transit and at rest with use of HTTPS and SSL.
+After studying your teams codebase you can now make the distinction between encryption, encoding and hashing. No crypto keys were checked into source code repository, but to be sure you're planning to research secuerity scanning tools to run as part of the CI/CD process to prevent sensitive data and secrets from getting in to the repository.
+Your app has build in mechanism for resetting user passwords, this is where you noticed `System.Security Cryptography.RandomNumberGenerator` being used in favor of `System.Random`.

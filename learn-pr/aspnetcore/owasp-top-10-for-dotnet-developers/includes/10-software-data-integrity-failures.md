@@ -13,8 +13,10 @@ The company that develops the software had secure build and update integrity pro
 Many applications now include auto-update functionality, where updates are downloaded without sufficient integrity verification and applied to the previously trusted application.
 Supply chain verification suggests depending only on vetted and verified libraries and components.
 
-A few best practices may include:
+### Code Review Notes
 
-* Only depend on properly vetted and verified dependencies, components and repositories.
-* Automate your CI/CI workflows (for example, [GitHub Dependabot Alerts](https://docs.github.com/en/code-security/dependabot/dependabot-alerts/about-dependabot-alerts#detection-of-insecure-dependencies)) to validate your supply chain security, review dependency graph.
-* Enforce code reviews focusing on security aspects of the codebase.
+As you and your team adopt secure CI/CD practices you want to make sure:
+
+- Only depend on properly vetted and verified dependencies, components and repositories.
+- Automate your CI/CI workflows (for example, [GitHub Dependabot Alerts](https://docs.github.com/en/code-security/dependabot/dependabot-alerts/about-dependabot-alerts#detection-of-insecure-dependencies)) to validate your supply chain security, review dependency graph.
+- Enforce code reviews focusing on security aspects of the codebase.

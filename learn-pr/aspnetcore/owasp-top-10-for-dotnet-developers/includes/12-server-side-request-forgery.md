@@ -25,9 +25,12 @@ An allowlist or blocklist should be enforced (like IP addresses and host names).
 
 Correct user input validation can protect your application from a few OWASP Top 10 items.
 
-> [!TIP]
-> Use built-in [IPAddress.TryParse](/dotnet/api/system.net.ipaddress.tryparse) or [Uri.CheckHostName](/dotnet/api/system.uri.checkhostname) methods for input and configuration validation.
+
+### Code Review Notes
+
+Once again you were reminded of the importance of input validation. Luckily, .NET has built-in [IPAddress.TryParse](/dotnet/api/system.net.ipaddress.tryparse) or [Uri.CheckHostName](/dotnet/api/system.uri.checkhostname) methods for input and configuration validation.
 
 To summarize, prevention from SSRF attacks in your .NET applications may involve:
+
 - validation of user input and only allowing expected values
-- use of allowlised with approved domains and protocols
+- use of allow list with approved domains and protocols for network communication.

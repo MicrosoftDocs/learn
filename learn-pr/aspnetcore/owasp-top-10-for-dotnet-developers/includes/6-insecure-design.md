@@ -4,14 +4,6 @@ Security should be not an afterthought - how you protect your system’s configu
 
 You might be familiar with the term *'shift-left'*. It's often referred to testing your application early on during the application lifecycle to ensure hight quality (left being analysis and requirements phase, right being release and support phase). Shift-left also applies to security, even before we write the first line of code. A few activities could include threat modeling, following secure design patterns and principles, leveraging reference architectures and conducting security code reviews. ​
 
-A few techniques that can address insecure design are:
-
-- Least privilege​ principle - granting just enough permissions to a user or service to successfully perform an operation.
-- Attack surface reduction​ - limit and control what's visible to external users
-- Zero Trust​ principle - never trust, always verify explicitly
-- Defense in Depth​ - layered and tiered security approach
-- Threat Modeling​
-
 Exercise ***assume breach*** mentality - minimize blast radius for breaches and prevent lateral movement by segmenting access by network, user, devices, and application awareness. Verify all sessions are encrypted end to end. Use analytics to get visibility, drive threat detection, and improve defenses. Always authenticate and authorize based on all available data points, including user identity, location, device health, service or workload, data classification, and anomalies.
 
 Let's discuss the latest in more detail. Threat modeling is an essential part of DevSecOps because it informs your security design process and helps find vulnerabilities in your application. While it does fall under DevSecOps, it also sits neatly under education too.
@@ -27,3 +19,16 @@ Whenever an application’s design or code is changed, you run the threat modeli
 :::image type="content" source="../media/tm-2.png" alt-text="Data flow diagram with basic threat model":::
 
 Making threat modeling part of the design phase of the application helps bake security into the design from the start, which is always going to be more effective that trying to tack it on at the end. But it’s not only useful at the design stage – it should be performed at every stage of the SDLC – requirements gathering; design; coding; testing; even deployment.
+
+### Design Review Notes
+
+Here, you focused your attention on the overall system architecture and design. Insecure design flows target systems as a whole and note it's codebase.
+After conversations with your team you understood better fictional and non-functional security requirements and learned about the bug bar - technique to help classify and prioritize security vulnerabilities based on their severity and potential impact.
+As your new team adopt DevOps and Secure DevOps practices in an ongoing effort you want to think of security as early and quickly as possible (by shifting security considerations left).
+Before contributing to your teams codebase consider following few techniques that can address insecure design:
+
+- Least privilege​ principle - granting just enough permissions to a user or service to successfully perform an operation.
+- Attack surface reduction​ - limit and control what's visible to external users
+- Zero Trust​ principle - never trust, always verify explicitly
+- Defense in Depth​ - layered and tiered security approach
+- Threat Modeling​ - understand how data flows through your system

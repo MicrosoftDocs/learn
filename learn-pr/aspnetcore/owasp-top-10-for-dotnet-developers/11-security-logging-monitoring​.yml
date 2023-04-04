@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.owasp-top-10-for-dotnet-developers.security-logging-monitoring
-title: Security Logging and Monitoring
+title: 09.Security Logging and Monitoring
 metadata:
   title: security-logging-monitoring
   description: "OWASP Top 10 for .NET Developers. Security logging and monitoring."
@@ -9,7 +9,7 @@ metadata:
   ms.author: dawidobrocki
   ms.topic: interactive-tutorial
   ms.prod: introduction-to-owasp-top-ten-for-dotnet-developers
-durationInMinutes: 1
+durationInMinutes: 2
 content: |
   [!include[](includes/11-security-logging-monitoring.md)]
 

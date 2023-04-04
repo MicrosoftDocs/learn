@@ -22,7 +22,7 @@ public class ExampleModel ​
 }​
 ```
 
-## SQL Injection
+### SQL Injection
 
 Injection can take different forms and shapes, from SQL, process to command injection.
 The canonical example of SQL injection could be the following statement, where `username` in an unsanitised query input parameter:
@@ -38,7 +38,7 @@ SELECT * FROM Users WHERE name = 'a';DROP TABLE users;--
 ```
 
 
-## File Input Validation
+### File Input Validation
 
 In client-server scenarios, make sure the input is validated on both client and server side.
 Additionally, if validation passes on the server, process the form and send back a success status code (200 - OK). ​However, if validation fails, return a failure status code (400 - Bad Request) and the field validation errors.Validation details from server may give the malicious actor more insights on how your app logic works if displayed on the client side.
@@ -78,3 +78,9 @@ Input validation also includes the way you handle file upload. Following example
 ```
 
 As an exercise check if your web app is correctly validating user input by typing in `<iframe src="javascript:alert('HACKED')">` into a text input area. If a browser displays an alert there might be a room for improvement in your validation logic.
+
+
+### Code Review Notes
+
+Your team uses Entity Framework Core (Object-Relational Mapping) as the glue between the C# code and database which eliminates the need for writing your own SQL queries and prevents from SQL injection.
+You've noticed that every single user input, uploaded files or form entry fields, are always validated. Sanitization and normalization of user input is a must.

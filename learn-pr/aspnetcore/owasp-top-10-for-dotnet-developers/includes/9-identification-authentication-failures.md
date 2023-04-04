@@ -26,5 +26,7 @@ Before putting untrusted data inside an HTML element ensure it's HTML encoded. H
 
 Before putting untrusted data into a URL query string ensure it's URL encoded. Don't make authorization decisions based on the state of the UI but only from component state. Consider using Content Security Policy (CSP) to protect against XSS attacks. Consider using CSP and X-Frame-Options to protect against click-jacking. Ensure CORS settings are appropriate when enabling CORS or explicitly disable CORS for Blazor apps.
 
-> [!TIP]
-> The Microsoft Authentication Library (MSAL) enables developers to acquire security tokens from the Microsoft identity platform to authenticate users and access secured web APIs. It can be used to provide secure access to > Microsoft Graph, other Microsoft APIs, third-party web APIs, or your own web API. MSAL supports many different application architectures and platforms including .NET, JavaScript, Java, Python, Android, and iOS.
+
+### Code Review Notes
+
+The Microsoft Authentication Library (MSAL) enables developers to acquire security tokens from the Microsoft identity platform to authenticate users and access secured web APIs. It can be used to provide secure access to Microsoft Graph, other Microsoft APIs, third-party web APIs, or your own web API. MSAL supports many different application architectures and platforms including .NET, JavaScript, Java, Python, Android, and iOS.

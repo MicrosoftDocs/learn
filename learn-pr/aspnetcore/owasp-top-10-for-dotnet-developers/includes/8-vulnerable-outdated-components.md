@@ -23,8 +23,9 @@ Cater for, with plan and schedule, regular updates of your product's components.
     :::column-end:::
 :::row-end:::
 
-> [!TIP]
-> Leverage automation and CI/CD workflows, like GitHub Dependabot version updates, to keep dependencies updated.
 
-In your scenario, to prevent vulnerable and outdated components in .NET applications, you should remove any unused or unnecessary components from your application, identify all the components you use (both client-side and server-side) and their versions.
-Your team already uses tools such as NuGet Package Manager (or [Snyk](https://snyk.io/) and GitHub Dependabot) to check for updates and vulnerabilities in your components.
+### Code Review Notes
+
+To prevent vulnerable and outdated components in .NET applications, you should remove any unused or unnecessary components from your application.
+
+Manually monitoring sources like Common Vulnerability and Exposures (CVE) and National Vulnerability Database (NVD) for vulnerabilities in the components you use is is tedious and time consuming, hence you looking to apply automation, or like GitHub Dependabot version updates or [Snyk](https://snyk.io/) to keep up with dependencies updated and security risks.

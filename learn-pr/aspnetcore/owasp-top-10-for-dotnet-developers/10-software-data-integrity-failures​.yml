@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.owasp-top-10-for-dotnet-developers.software-data-integrity-failures
-title: Software and Data Integrity Failures
+title: 08. Software and Data Integrity Failures
 metadata:
   title: software-data-integrity-failures
   description: "OWASP Top 10 for .NET Developers. Software and data integrity failures."
@@ -9,7 +9,7 @@ metadata:
   ms.author: dawidobrocki
   ms.topic: interactive-tutorial
   ms.prod: introduction-to-owasp-top-ten-for-dotnet-developers
-durationInMinutes: 1
+durationInMinutes: 2
 
 content: |
   [!include[](includes/10-software-data-integrity-failures.md)]
