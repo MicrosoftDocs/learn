@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-tips-tricks-teach-sc-900-security-compliance-identity-fundamentals.explore-best-practices-describe-capabilities-microsoft-azure-active-directory-microsoft-entra
+title: Explore best practices for module 2
+metadata:
+  title: Explore best practices for module 2
+  description: "Explore best practices for module 2"
+  ms.date: 04/04/2023
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 9
+content: |
+  [!include[](includes/5-explore-best-practices-for-module-2.md)]

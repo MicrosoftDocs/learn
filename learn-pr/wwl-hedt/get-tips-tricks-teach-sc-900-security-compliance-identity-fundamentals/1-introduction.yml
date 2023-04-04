@@ -2,15 +2,13 @@
 uid: learn.wwl.get-tips-tricks-teach-sc-900-security-compliance-identity-fundamentals.introduction
 title: Introduction
 metadata:
-  title: 1-Introduction
+  title: Introduction
   description: "Introduction"
-  ms.date: 08/08/2022
+  ms.date: 04/04/2023
   author: wwlpublish
   ms.author: tsheppard
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/1-introduction.md)]

@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-tips-tricks-teach-sc-900-security-compliance-identity-fundamentals.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/04/2023
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "How often should you download content from the Learning Download Center (LDC) to ensure you have the most up to date course materials?"
+    choices:
+    - content: "Every three years"
+      isCorrect: false
+      explanation: "Feedback: Incorrect. The tech world is constantly changing so the curriculum content is updated to match. By downloading the course materials quarterly or before teaching the course you know you have the most up-to-date materials."
+    - content: "Once a year"
+      isCorrect: false
+      explanation: "Feedback: Incorrect. The tech world is constantly changing so the curriculum content is updated to match. By downloading the course materials quarterly or before teaching the course you know you have the most up-to-date materials."
+    - content: "Quarterly"
+      isCorrect: true
+      explanation: "Feedback: Correct. The tech world is constantly changing so the curriculum content is updated to match. By downloading the course materials each quarter or before teaching the course you know you have the most up-to-date materials."
+  - content: "Which tool is great for giving students a visual representation of topics?"
+    choices:
+    - content: "The Textbook"
+      isCorrect: false
+      explanation: "Feedback: Incorrect. While a textbook can be used as a standard work for the study of a particular subject, the Microsoft Whiteboard can help people visualize a process and increase collaboration by allowing participants to easily add ideas with sticky notes or colored markers."
+    - content: "Flash Cards"
+      isCorrect: false
+      explanation: "Feedback: Incorrect. Flash cards contain a small amount of information, held up for students to see, as an aid to learning, however the Microsoft Whiteboard can help people visualize a process and increase collaboration by allowing participants to easily add ideas with sticky notes or colored markers."
+    - content: "Microsoft Whiteboard"
+      isCorrect: true
+      explanation: "Feedback: Correct. A Microsoft Whiteboard can help people visualize a process. Microsoft Whiteboard increase collaboration by allowing participants to easily add ideas with sticky notes or colored markers."
+  - content: "Why is it important to run through demos before completing them in front of students?"
+    choices:
+    - content: "Demos connect real world experiences to course content."
+      isCorrect: false
+      explanation: "Feedback: Incorrect. While demos are an important part of student learning, as the instructor you will want to be familiar with each step in the demo process, by completing the demos before demonstration in front of students you will ensure you can navigate the UI with ease."
+    - content: "To ensure you can navigate the UI with ease."
+      isCorrect: true
+      explanation: "Feedback: Correct. By completing the demos before demonstration in front of students you will be sure to know the UI, with authority, and be familiar with each step in the demo process."
+    - content: "It is not necessary to complete the demos since they are not included in the certification."
+      isCorrect: false
+      explanation: "Feedback: Incorrect. While demos are not included in the certification exam, they are an important part of student learning; as the instructor you will want to be familiar with each step in the demo process, by completing the demos before demonstration in front of students you will ensure you can navigate the UI with ease."

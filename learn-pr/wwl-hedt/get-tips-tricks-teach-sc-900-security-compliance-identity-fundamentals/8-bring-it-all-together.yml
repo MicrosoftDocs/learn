@@ -2,15 +2,13 @@
 uid: learn.wwl.get-tips-tricks-teach-sc-900-security-compliance-identity-fundamentals.bring-it-all-together
 title: Bring it all together
 metadata:
-  title: 7-Bring it all together
+  title: Bring it all together
   description: "Bring it all together"
-  ms.date: 08/08/2022
+  ms.date: 04/04/2023
   author: wwlpublish
   ms.author: tsheppard
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 1
 content: |
-  [!include[](includes/7-bring-together.md)]
+  [!include[](includes/8-bring-it-all-together.md)]
