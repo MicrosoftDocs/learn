@@ -71,7 +71,7 @@ The repository is cloned to your home folder.
 
 ## Edit SimpleSend.java
 
-In this exercise you'll use the built-in Cloud Shell editor to modify the SimpleSend application, adding your Event Hubs namespace, Event Hub name, shared access policy name, and primary key. 
+In this exercise you'll use the built-in Cloud Shell editor to modify the SimpleSend application, adding your Event Hubs namespace, event hub name, shared access policy name, and primary key. 
 
 1. Change to the **SimpleSend** folder.
 
