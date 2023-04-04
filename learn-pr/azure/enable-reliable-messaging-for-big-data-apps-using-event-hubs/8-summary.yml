@@ -4,7 +4,7 @@ title: Summary
 metadata:
   title: Summary
   description: Summary
-  ms.date: 08/26/2019
+  ms.date: 04/04/2023
   author: spelluru
   ms.author: spelluru
   ms.topic: interactive-tutorial
@@ -16,41 +16,41 @@ quiz:
   title: Check your knowledge
   questions:
  
-  - content: "Applications that publish messages to Azure Event Hub very frequently will get the best performance using Advanced Message Queuing Protocol (AMQP) because it establishes a persistent socket."
+  - content: "Applications that publish messages to Azure Event Hubs frequently get the best performance using Advanced Message Queuing Protocol (AMQP) because it establishes a persistent socket."
     choices:
     - content: "True"
       isCorrect: true
       explanation: "Publishers can use either HTTPS or AMQP. AMQP opens a socket and can send multiple messages over that socket."
     - content: "False"
       isCorrect: false
-      explanation: "Publishers can use either HTTPS or AMQP. HTTP is not ideal for frequent publishing because it establishes a new connection for each publication."
+      explanation: "Publishers can use either HTTPS or AMQP. HTTP isn't ideal for frequent publishing because it establishes a new connection for each publication."
  
-  - content: "By default, how many partitions will a new Event Hub have?"
+  - content: "By default, how many partitions a new event hub has?"
     choices:
     - content: "1"
       isCorrect: false
-      explanation: "Event Hubs default to 4 partitions. Partitions are the buckets within an Event Hub. Each publication will go into only one partition. Each consumer group may read from one or more than one partition."
+      explanation: "Event Hubs default to four partitions. Partitions are the buckets within an event hub. Each publication goes into only one partition. Each consumer group may read from one or more than one partition."
     - content: "2"
       isCorrect: false
-      explanation: "Event Hubs default to 4 partitions. Partitions are the buckets within an Event Hub. Each publication will go into only one partition. Each consumer group may read from one or more than one partition."
+      explanation: "Event Hubs default to four partitions. Partitions are the buckets within an event hub. Each publication goes into only one partition. Each consumer group may read from one or more than one partition."
     - content: "3"
       isCorrect: false
-      explanation: "Event Hubs default to 4 partitions. Partitions are the buckets within an Event Hub. Each publication will go into only one partition. Each consumer group may read from one or more than one partition."
+      explanation: "Event Hubs default to four partitions. Partitions are the buckets within an event hub. Each publication goes into only one partition. Each consumer group may read from one or more than one partition."
     - content: "4"
       isCorrect: true
-      explanation: "Event Hubs default to 4 partitions. Partitions are the buckets within an Event Hub. Each publication will go into only one partition. Each consumer group may read from one or more than one partition."
+      explanation: "Event Hubs default to four partitions. Partitions are the buckets within an event hub. Each publication goes into only one partition. Each consumer group may read from one or more than one partition."
  
-  - content: "What is the maximum size for a single publication (individual or batch) that is allowed by Azure Event Hub?"
+  - content: "What is the maximum size for a single publication (individual or batch) allowed by Azure Event Hubs?"
     choices:
     - content: "256 KB"
       isCorrect: false
-      explanation: "256 KB is less than the maximum size for a single publication (individual or batch) that is allowed by Azure Event Hub."
+      explanation: "256 KB is less than the maximum size for a single publication (individual or batch) allowed by Azure Event Hubs."
     - content: "512 KB"
       isCorrect: false
-      explanation: "512 KB is less than the maximum size for a single publication (individual or batch) that is allowed by Azure Event Hub."
+      explanation: "512 KB is less than the maximum size for a single publication (individual or batch) allowed by Azure Event Hubs."
     - content: "1 MB"
       isCorrect: true
-      explanation: "The maximum size for a single publication (individual or batch) that is allowed by Azure Event Hub is 1 MB."
+      explanation: "The maximum size for a single publication (individual or batch) allowed by Azure Event Hubs is 1 MB."
     - content: "2 MB"
       isCorrect: false
-      explanation: "2 MB is more than the maximum size for a single publication (individual or batch) that is allowed by Azure Event Hub."
+      explanation: "2 MB is more than the maximum size for a single publication (individual or batch) allowed by Azure Event Hubs."
