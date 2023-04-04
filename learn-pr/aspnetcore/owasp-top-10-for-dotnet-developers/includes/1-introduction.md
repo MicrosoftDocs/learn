@@ -1,6 +1,5 @@
 In this module you’ll go through the list of OWASP TOP 10. You'll discover, by looking at examples, that are the most common security weaknesses and how you, app developer or architect, can redice the risk of security bug infecting your systems. This module will introduce techniques, tools and best practices that can improve your product’s security posture.
 
-
 ### Threat landscape
 
 Implementing secured and high quality software can be challenging. Malware, exploits and many other cyber threats are on the rise. Attacks happen by exploiting vulnerabilities in an application. A vulnerability is just an unintended flaw or weakness in that application. The way data is processed or validated, how information is stored or protected, a simple misconfiguration of a external service that forms part of the application are a few examples of where vulnerability could be introduced.
