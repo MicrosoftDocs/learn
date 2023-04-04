@@ -10,7 +10,7 @@ Let's add a new method that peeks at the next message from the queue.
 
 1. Find the `PeekMessageAsync` method in the application and delete the line throwing a `NotImplementedException`.
 
-1. Add the following code to the method.  This code peeks at the next message on the queue and prints out some information about the message.
+1. Add the following code to the method.  This code peeks at the next message on the queue and prints some information about the message.
 
     ```csharp
             Response<PeekedMessage> response = await queueClient.PeekMessageAsync();
@@ -34,7 +34,7 @@ Add code to receive and process a message in the application.
     QueueMessage message = response.Value;
     ```
 
-1. Add the following lines of code below the two lines you just added to the method. This code prints out some properties about the received message, including the body of the raw message which will be in JSON format.
+1. Add the following lines of code below the two lines you just added to the method. This code prints some properties about the received message, including the body of the raw message in JSON format.
 
     ```csharp
     Console.WriteLine($"Message id    : {message.MessageId}");
@@ -51,7 +51,7 @@ Add code to receive and process a message in the application.
     Console.WriteLine($"-  Location : {article.Location}");
     ```
 
-1. Finally, when we have processed the message, we need to delete the message from the queue so no other consumers process it.  Add the following code to the end of the `ReceiveMessageAsync` method.
+1. Finally, when we've processed the message, we need to delete the message from the queue so no other consumers process it.  Add the following code to the end of the `ReceiveMessageAsync` method.
 
     ```csharp
     Console.WriteLine("The processing for this message is just printing it out, so now it will be deleted");
