@@ -3,7 +3,7 @@ uid: learn.azdo.create-a-build-pipeline
 metadata:
   title: Create a build pipeline with Azure Pipelines
   description: Set up a continuous integration (CI) pipeline that automates the process of building your application.
-  ms.date: 01/13/2023
+  ms.date: 04/04/2023
   ms.custom: devdivchpfy22
   author: steved0x
   ms.author: sdanie
