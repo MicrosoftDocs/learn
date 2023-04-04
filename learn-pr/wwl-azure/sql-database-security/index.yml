@@ -39,7 +39,7 @@ units:
 - learn.wwl.sql-database-security.microsoft-defender-for-sql
 - learn.wwl.sql-database-security.vulnerability-assessment-for-sql-server
 - learn.wwl.sql-database-security.sql-advanced-threat-protection
-- learn.wwl.sql-database-security.exploring-detection-of-a-suspicious-event
+- learn.wwl.sql-database-security.explore-detection-suspicious-event
 - learn.wwl.sql-database-security.sql-vulnerability-assessment-express-and-classic-configurations
 - learn.wwl.sql-database-security.dynamic-data-masking
 - learn.wwl.sql-database-security.transparent-data-encryption​

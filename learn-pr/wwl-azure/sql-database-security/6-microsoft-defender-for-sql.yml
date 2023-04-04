@@ -9,8 +9,7 @@ metadata:
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  zone_pivot_groups: azure-interface
+  zone_pivot_groups: None
 durationInMinutes: 7
 content: |
   [!include[](includes/6-microsoft-defender-for-sql.md)]
-interactive: bash
