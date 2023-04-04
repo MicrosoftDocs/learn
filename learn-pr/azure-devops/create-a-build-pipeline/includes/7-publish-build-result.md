@@ -21,7 +21,7 @@ In .NET, you can package your app as a .zip file. You can then use the built-in 
 
     ::: zone pivot="ms-hosted-agents"
 
-    [!code-yml[](code/7-codespaces-azure-pipelines-1.yml?highlight=41-52)]
+    [!code-yml[](code/7-azure-pipelines-1.yml?highlight=41-52)]
 
     ::: zone-end
 
