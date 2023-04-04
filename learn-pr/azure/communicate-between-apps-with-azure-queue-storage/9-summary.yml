@@ -20,16 +20,16 @@ quiz:
     choices:
     - content: "True"
       isCorrect: true
-      explanation: "The queue will handle spikes in traffic and ensure no data is lost. If the VM cannot keep up with the flow of incoming messages, it will process the message backlog during low-traffic times."
+      explanation: "The queue will handle spikes in traffic and ensure no data is lost. If the VM can't keep up with the flow of incoming messages, it will process the message backlog during low-traffic times."
     - content: "False"
       isCorrect: false
-      explanation: "This data is used for long-term planning, so there is no need to process it in real time. A queue connected to a single VM is likely to handle the workload and be a cost-efficient solution."
+      explanation: "This data is used for long-term planning, so there's no need to process it in real time. A queue connected to a single VM is likely to handle the workload and be a cost-efficient solution."
 
   - content: "What information uniquely identifies a queue?"
     choices:
     - content: "Queue name"
       isCorrect: false
-      explanation: "Queue names must only be unique within their containing storage account; they do not need to be globally unique."
+      explanation: "Queue names must only be unique within their containing storage account; they don't need to be globally unique."
     - content: "Account key"
       isCorrect: false
       explanation: "Account keys are associated with a storage account, not a queue."
@@ -44,4 +44,4 @@ quiz:
       explanation: "The operations 'get message' and 'delete message' are separate."
     - content: "False"
       isCorrect: true
-      explanation: "By design, messages are not automatically deleted from a queue after they are retrieved for processing. This helps ensure that every message is processed to completion. If a consumer application crashes during processing, the message is still available to be processed by a different instance of the consumer app."
+      explanation: "By design, messages aren't automatically deleted from a queue after they're retrieved for processing. This helps ensure that every message is processed to completion. If a consumer application crashes during processing, the message is still available to be processed by a different instance of the consumer app."
