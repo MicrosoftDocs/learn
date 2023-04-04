@@ -4,7 +4,7 @@ title: Deploy always encrypted​ features
 metadata:
   title: Deploy always encrypted​ features
   description: "Deploy always encrypted​ features"
-  ms.date: 02/24/2023
+  ms.date: 04/04/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
@@ -12,4 +12,4 @@ metadata:
   zone_pivot_groups: None
 durationInMinutes: 7
 content: |
-  [!include[](includes/10-always-encrypted.md)]
+  [!include[](includes/13-always-encrypted.md)]
