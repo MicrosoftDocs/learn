@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.wwl.deploy-microsoft-deployment-toolkit
+metadata:
+  title: MD-102 2-Deploy using the Microsoft Deployment Toolkit
+  description: "Discusses the shifts from traditional to modern management and where on-premises solutions best fit in today’s enterprise."
+  ms.date: 04/03/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Deploy using the Microsoft Deployment Toolkit
+summary: Discusses the shifts from traditional to modern management and where on-premises solutions best fit in today’s enterprise.
+abstract: |
+  After completing this module, you will be able to:
+  - Describe the fundamentals of using images in traditional deployment methods.
+  - Describe the key benefits, limitations, and decisions when planning a deployment of - Windows using Microsoft Deployment Toolkit (MDT).
+  - Describe how Configuration Manager builds upon MDT and how both can work in harmony.
+  - Explain the different options and considerations when choosing the user interaction experience during deployment, and which methods and tools support these experiences.
+prerequisites: |
+  - Strong technical skills installing, maintaining, and troubleshooting the Windows 10 OS or later
+  - Strong understanding of computer networking, client security, and application concepts
+  - Experience using Active Directory Domain Services
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- windows
+- configuration-manager
+- intune
+units:
+- learn.wwl.deploy-microsoft-deployment-toolkit.introduction
+- learn.wwl.deploy-microsoft-deployment-toolkit.evaluate-traditional-deployment-methods
+- learn.wwl.deploy-microsoft-deployment-toolkit.set-up-for-client-deployment
+- learn.wwl.deploy-microsoft-deployment-toolkit.manage-deploy-images
+- learn.wwl.deploy-microsoft-deployment-toolkit.knowledge-check
+- learn.wwl.deploy-microsoft-deployment-toolkit.summary
+badge:
+  uid: learn.wwl.deploy-microsoft-deployment-toolkit.badge

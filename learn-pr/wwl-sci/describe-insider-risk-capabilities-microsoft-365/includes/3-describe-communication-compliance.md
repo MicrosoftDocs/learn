@@ -1,7 +1,4 @@
 
-> [!NOTE]
-> Microsoft 365 compliance is now called Microsoft Purview and the solutions within the compliance area have been rebranded. Microsoft 365 Communication Compliance is now Microsoft Purview Communication Compliance. For more information about Microsoft Purview, see the [blog announcement](https://www.microsoft.com/security/blog/2022/04/19/the-future-of-compliance-and-data-governance-is-here-introducing-microsoft-purview/)
-
 Communication compliance in the Microsoft Purview compliance portal helps minimize communication risks by enabling organizations to detect, capture, and take remediation actions for inappropriate messages. Predefined and custom policies in communication compliance make it possible to scan internal and external communications for policy matches so they can be examined by chosen reviewers.
 
 Identifying and resolving compliance issues with communication compliance in Microsoft Purview uses the following workflow:
