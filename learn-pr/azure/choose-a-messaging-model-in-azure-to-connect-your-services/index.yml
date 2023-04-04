@@ -3,7 +3,7 @@ uid: learn.choose-messaging-model
 metadata:
   title: Introduction to Azure messaging services
   description: Learn how Azure's storage queues, event hubs, event grid, and service bus can improve your communication between devices.
-  ms.date: 03/10/2022
+  ms.date: 04/04/2023
   author: spelluru
   ms.author: spelluru
   ms.topic: interactive-tutorial
