@@ -16,8 +16,8 @@ abstract: |
   In this module, you'll be able to:
 
     - Describe the innovations introduced in SQL Server 2022
-    - Be able to determine if SQL Server 2022 can help modernize your data estate, while reducing the cost of ownership, and accelerate the performance of your applications
-    - Be able to leverage new security capabilities in SQL Server 2022 to protect your data, and use cryptographic attestations that your data hasn't been tampered with
+    - Determine if SQL Server 2022 can help modernize your data estate, while reducing the cost of ownership, and accelerate the performance of your applications
+    - Leverage new security capabilities in SQL Server 2022 to protect your data and use cryptographic attestations that your data hasn't been tampered with
     - Connect your data to Azure and data lakes
 prerequisites: |
   - Basic working knowledge of SQL Server, including deployment, security, query processing, and high availability
