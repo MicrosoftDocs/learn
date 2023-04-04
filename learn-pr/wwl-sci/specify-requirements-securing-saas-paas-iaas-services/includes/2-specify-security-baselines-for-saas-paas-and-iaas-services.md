@@ -46,12 +46,6 @@ Monitor and restrict VM direct internet connectivity. Attackers constantly scan 
 
 ## PaaS security
 
-### Modernizing the Defender for Cloud's mindset
-
-With PaaS deployments come a shift in your overall approach to security. You shift from needing to control everything yourself to sharing responsibility with Microsoft.
-
-Another significant difference between PaaS and traditional on-premises deployments, is a new view of what defines the primary security perimeter. Historically, the primary on-premises security perimeter was your network and most on-premises security designs use the network as its primary security pivot. For PaaS deployments, you are better served by considering identity to be the primary security perimeter.
-
 ### Adopt a policy of identity as the primary security perimeter
 
 One of the five essential characteristics of cloud computing is broad network access, which makes network-centric thinking less relevant. The goal of much of cloud computing is to allow users to access resources regardless of location. For most users, their location is going to be somewhere on the Internet.

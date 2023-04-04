@@ -35,6 +35,7 @@ subjects:
   - security
   - cloud-security
 units:
+- learn.wwl.design-solutions-network-security.introduction
 - learn.wwl.design-solutions-network-security.design-solutions-for-network-segmentation
 - learn.wwl.design-solutions-network-security.design-solutions-for-traffic-filtering-with-network-security-groups
 - learn.wwl.design-solutions-network-security.design-solutions-for-network-posture-management
