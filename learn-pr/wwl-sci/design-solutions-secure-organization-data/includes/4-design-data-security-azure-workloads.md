@@ -24,7 +24,7 @@ Authentication is the process of proving the user is who they claim to be. Azure
 
 #### SQL authentication
     
-SQL authentication refers to the authentication of a user when connecting to Azure SQL Database or Azure SQL Managed Instance using username and password. A **server admin** login with a username and password must be specified when the server is being created. Using these credentials, a **server admin** can authenticate to any database on that server or instance as the database owner. After that, additional SQL logins and users can be created by the server admin, which enable users to connect using username and password.
+SQL authentication refers to the authentication of a user when connecting to Azure SQL Database or Azure SQL Managed Instance using username and password. A **server admin** sign-in with a username and password must be specified when the server is being created. Using these credentials, a **server admin** can authenticate to any database on that server or instance as the database owner. After that, other SQL logins and users can be created by the server admin, which enable users to connect using username and password.
     
 #### Azure Active Directory authentication
     
@@ -38,7 +38,7 @@ Additional Azure AD authentication options available are [Active Directory Univ
     
 [Kerberos authentication for Azure AD Principals](https://learn.microsoft.com/azure/azure-sql/managed-instance/winauth-azuread-overview?view=azuresql) enables Windows Authentication for Azure SQL Managed Instance. Windows Authentication for managed instances empowers customers to move existing services to the cloud while maintaining a seamless user experience and provides the basis for infrastructure modernization.
 
-To enable Windows Authentication for Azure Active Directory (Azure AD) principals, you will turn your Azure AD tenant into an independent Kerberos realm and create an incoming trust in the customer domain. Learn [how Windows Authentication for Azure SQL Managed Instance is implemented with Azure Active Directory and Kerberos](https://learn.microsoft.com/azure/azure-sql/managed-instance/winauth-implementation-aad-kerberos?view=azuresql).
+To enable Windows Authentication for Azure Active Directory (Azure AD) principals, you'll turn your Azure AD tenant into an independent Kerberos realm and create an incoming trust in the customer domain. Learn [how Windows Authentication for Azure SQL Managed Instance is implemented with Azure Active Directory and Kerberos](https://learn.microsoft.com/azure/azure-sql/managed-instance/winauth-implementation-aad-kerberos?view=azuresql).
     
 ### Authorization
 
