@@ -25,7 +25,7 @@ The command needs several parameters:
 Here's an example command line that uses these parameters. Make sure to change the `--name` parameter.
 
 ```azurecli
-az storage account create --name [unique-name] -g <rgn>[sandbox resource group name]</rgn> --kind StorageV2 --sku Standard_LRS
+az storage account create -g <rgn>[sandbox resource group name]</rgn> --kind StorageV2 --sku Standard_LRS --name [unique-name]
 ```
 
 <!-- Paste tip-->
