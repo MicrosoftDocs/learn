@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.monitor-aks-using-container-insights.exercise-monitor-performance-of-your-cluster
+title: Exercise - Monitor performance of your cluster exercise
+metadata:
+  title: Exercise - Monitor performance of your cluster exercise
+  description: Exercise - Monitor performance of your cluster exercise
+  ms.date: 08/10/2022
+  author: bwren
+  ms.author: bwren
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-exercise-monitor-performance-of-your-cluster.md)]

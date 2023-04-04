@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.monitor-aks-using-container-insights
+metadata:
+  title: Monitor an Azure Kubernetes Service cluster using Container insights in Azure Monitor
+  description: Monitor an Azure Kubernetes Service cluster using Container insights in Azure Monitor
+  ms.date: 08/10/2022
+  author: bwren
+  ms.author: bwren
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Monitor an Azure Kubernetes Service cluster using Container insights in Azure Monitor
+summary: Learn how to analyze the availability and performance of an Azure Kubernetes Service cluster with a containerized application and be proactively notified when a problem occurs. Enable Container insights in Azure Monitor to send the data to a Log Analytics workspace and then workbooks in Azure Monitor to view collected data and enable a predefined alert rule.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Enable Container insights for an AKS cluster.
+  - Use Container insights to view health and performance of the components of your AKS cluster.
+  - Enable an alert rule to fire when an issue with your cluster is detected.
+  - Create and action group to text you when an alert is fired.
+prerequisites: |
+  -	Access to Azure account with an active subscription.
+  -	Knowledge of what Azure Monitor is and how it works at a beginner level.
+  -	Basic knowledge of Kubernetes and its concepts.
+  -	A deployed Azure Kubernetes Service cluster with a containerized application. If you don’t already have an AKS cluster to monitor, then complete the Learn module [Deploy a containerized application on Azure Kubernetes Service](https://docs.microsoft.com/learn/modules/aks-deploy-container-app/). The AKS cluster created in that module will be used for this lesson, but you can apply the same steps to your own cluster. 
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+- azure-kubernetes-service
+- azure-monitor
+units:
+- learn.monitor-aks-using-container-insights.introduction
+- learn.monitor-aks-using-container-insights.enable-container-insights-for-your-aks-cluster
+- learn.monitor-aks-using-container-insights.exercise-enable-container-insights
+- learn.monitor-aks-using-container-insights.monitor-performance-of-your-cluster
+- learn.monitor-aks-using-container-insights.exercise-monitor-performance-of-your-cluster
+- learn.monitor-aks-using-container-insights.create-container-insights-alert-rules
+- learn.monitor-aks-using-container-insights.exercise-create-container-insights-alert-rules
+- learn.monitor-aks-using-container-insights.knowledge-check
+- learn.monitor-aks-using-container-insights.summary
+badge:
+  uid: learn.monitor-aks-using-container-insights-badge
