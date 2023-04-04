@@ -40,9 +40,9 @@ units:
 - learn.wwl.design-solutions-secure-organization-data.introduction-data-security
 - learn.wwl.design-solutions-secure-organization-data.design-solution-data-discovery-classification-microsoft-purview
 - learn.wwl.design-solutions-secure-organization-data.design-a-solution-for-data-protection
-- learn.wwl.design-solutions-secure-organization-data.specify-priorities-mitigating-data-threats
 - learn.wwl.design-solutions-secure-organization-data.design-data-security-azure-workloads
 - learn.wwl.design-solutions-secure-organization-data.design-security-azure-storage
+- learn.wwl.design-solutions-secure-organization-data.design-security-defender-sql-storage
 - learn.wwl.design-solutions-secure-organization-data.knowledge-check
 - learn.wwl.design-solutions-secure-organization-data.summary
 badge:

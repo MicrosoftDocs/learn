@@ -42,7 +42,7 @@ You can also export monitoring data from Azure Monitor into other systems so you
 -   Integrate with other third-party and open-source monitoring and visualization tools
 -   Integrate with ticketing and other ITSM systems
 
-## High level architecture
+### High level architecture
 
 The following diagram gives a high-level view of Azure Monitor.
 
@@ -58,7 +58,7 @@ The diagram depicts the Azure Monitor system components:
 [](https://learn.microsoft.com/azure/azure-monitor/overview#data-sources)
 -->
 
-## Data sources
+### Data sources
 
 Azure Monitor can collect data from multiple sources, including from your application, operating systems, the services they rely on, and from the platform itself.
 
@@ -78,7 +78,7 @@ For detailed information about each of the data sources, see [data sources](htt
 [](https://learn.microsoft.com/azure/azure-monitor/overview#data-collection-and-routing)
 -->
 
-## Data collection and routing
+### Data collection and routing
 
 Azure Monitor collects and routes monitoring data using several mechanisms, depending on the data being routed and the destination data platform stores.
 
@@ -97,7 +97,7 @@ For detailed information about data collection, see [data collection](https://l
 [](https://learn.microsoft.com/azure/azure-monitor/overview#data-platform)
 -->
 
-## Data platform
+### Data platform
 
 Azure Monitor stores data in data stores for each of the pillars of observability: metrics, logs, distributed traces, and changes. Each store is optimized for specific types of data and monitoring scenarios.
 

@@ -23,24 +23,7 @@ Azure provides built-in features for data encryption in many layers that partici
 
 We recommend implementing identity-based storage access controls. Authentication with a shared key (like a Shared Access Signature) doesn't permit the same flexibility and control as identity-based access control. The leak of a shared key might allow indefinite access to a resource, whereas a role-based access control can be identified and authenticated more strongly.
 
-Storage in a cloud service like Azure is architected and implemented quite differently than on-premises solutions to enable massive scaling, modern access through REST APIs, and isolation between tenants. Cloud service providers make multiple methods of access control over storage resources available. Examples include shared keys, shared signatures, anonymous access, and identity provider-based methods.
-
-Consider some built-in features of Azure Storage:
-
--   **Identity-based access**. Supports access through Azure Active Directory (Azure AD) and key-based authentication mechanisms, such as Symmetric Shared Key Authentication, or Shared Access Signature (SAS).
--   **Built-in encryption**. All stored data is encrypted by Azure storage. Data cannot be read by a tenant if it has not been written by that tenant. This feature provides control over cross tenant data leakage.
--   **Region-based controls**. Data remains only in the selected region and three synchronous copies of data are maintained within that region. Azure storage provides detailed activity logging is available on an opt-in basis.
--   **Firewall features**. The firewall provides an additional layer of access control and storage threat protection to detect anomalous access and activities.
-
-For the complete set of features, see [Azure Storage Service encryption](https://learn.microsoft.com/azure/storage/common/storage-service-encryption).
-
-## Suggested action
-
-Identify provider methods of authentication and authorization that are the least likely to be compromised, and enable more fine-grained role-based access controls over storage resources.
-
-## Standard encryption algorithms
-
-**Does the organization use industry standard encryption algorithms instead of creating their own?**
+### Standard encryption algorithms
 
 Organizations should not develop and maintain their own encryption algorithms. Avoid using custom encryption algorithms or direct cryptography in your workload. These methods rarely stand up to real world attacks.
 
@@ -52,7 +35,7 @@ We advise using standard and recommended encryption algorithms.
 
 For more information, refer to [Choose an algorithm](https://learn.microsoft.com/dotnet/standard/security/cryptography-model#choose-an-algorithm).
 
-**Are modern hashing functions used?**
+### Modern hashing functions
 
 Applications should use the SHA-2 family of hash algorithms (SHA-256, SHA-384, SHA-512).
 
@@ -72,7 +55,7 @@ Your most sensitive data might include business, financial, healthcare, or perso
 
 Classify your data. Consider using [Data Discovery & Classification](https://learn.microsoft.com/azure/azure-sql/database/data-discovery-and-classification-overview) in Azure SQL Database.
 
-## Data classification
+### Data classification
 
 A crucial initial exercise for protecting data is to organize it into categories based on certain criteria. The classification criteria can be your business needs, compliance requirements, and the type of data.
 
@@ -84,7 +67,7 @@ Depending on the category, you can protect it through:
 
 One way of classifying data is through the use of tags.
 
-**Does the organization encrypt virtual disk files for virtual machines that are associated with this workload?**
+### Encrypt virtual disk files
 
 There are many options to store files in the cloud. Cloud-native apps typically use Azure Storage. Apps that run on VMs use them to store files. VMs use virtual disk files as virtual storage volumes and exist in a blob storage.
 
@@ -100,11 +83,11 @@ Azure Disk Encryption helps protect and safeguard your data to meet your organiz
 
 Virtual machines use virtual disk files as storage volumes and exist in a cloud service provider's blob storage system. These files can be moved from on-premises to cloud systems, from cloud systems to on-premises, or between cloud systems. Due to the mobility of these files, it's recommended that the files and the contents are not accessible to unauthorized users.
 
-**Does the organization use identity-based storage access controls for this workload?**
+### Use identity-based storage access controls
 
 There are many ways to control access to data: shared keys, shared signatures, anonymous access, identity provider-based. Use Azure Active Directory (Azure AD) and role-based access control (RBAC) to grant access. For more information, see [Identity and access management considerations](https://learn.microsoft.com/azure/architecture/framework/security/design-identity).
 
-**Does the organization protect keys in this workload with an additional key encryption key (KEK)?**
+### Use an additional Key Encryption Key (KEK)
 
 Use more than one encryption key in an encryption at rest implementation. Storing an encryption key in Azure Key Vault ensures secure key access and central management of keys.
 
@@ -122,8 +105,6 @@ Protecting data in transit should be an essential part of your data protection s
 
 For data moving between your on-premises infrastructure and Azure, consider appropriate safeguards such as HTTPS or VPN. When sending encrypted traffic between an Azure virtual network and an on-premises location over the public internet, use Azure VPN Gateway.
 
-**Does the workload communicate over encrypted network traffic only?**
-
 Any network communication between client and server where man-in-the-middle attacks can occur, must be encrypted. All website communication should use HTTPS, no matter the perceived sensitivity of transferred data. Man-in-the-middle attacks can occur anywhere on the site, not just login forms.
 
 This mechanism can be applied to use cases such as:
@@ -132,7 +113,5 @@ This mechanism can be applied to use cases such as:
 -   Data moving across a service bus from on-premises to the cloud and other way around, or during an input/output process.
 
 In certain architecture styles such as microservices, data must be encrypted during communication between the services.
-
-**Is there any portion of the application that doesn't secure data in transit?**
 
 All data should be encrypted in transit using a common encryption standard. Determine if all components in the solution are using a consistent standard. There are times when encryption is not possible because of technical limitations, make sure the reason is clear and valid.

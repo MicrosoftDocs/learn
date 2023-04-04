@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 1
 content: |
-  [!include[](includes/4-design-a-solution-for-data-protection.md)]
+  [!include[](includes/3-design-a-solution-for-data-protection.md)]

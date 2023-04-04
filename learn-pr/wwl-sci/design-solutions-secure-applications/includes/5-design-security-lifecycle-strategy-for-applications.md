@@ -1,3 +1,50 @@
+## Lifecycle management strategy in Defender for Cloud Apps
+
+By using a lifecycle management strategy, you can ensure your configurations, exclusions, and policies for Microsoft Defender for Cloud Apps remain up to date and are reviewed on an established cadence.
+
+![Microsoft Defender for Cloud Apps lifecycle management.](../media/cloud-app-security-lifecycle.png)
+
+To best maintain Defender for Cloud Apps posture, regularly follow the recommendations below:
+
+### Role-based access controls
+
+- Review any users that have access to the Defender for Cloud Apps portal and verify role need
+- Inventory external users with access to your environment and determine validity
+
+### Real-time controls
+
+- Add applications for additional control and visibility
+- Remove old user/group exclusions from Conditional Access policy
+- Update SAML certificate for third-party identity provider annually
+- Verify app onboarding members
+
+### Policy management
+
+- Remove unneeded custom policies
+- Review new policy templates
+- Enhance policy strategy to determine what can be a saved query versus what requires an alert
+- Ensure labeling strategy is in line with current Security and Compliance configuration
+
+### Discovery
+
+- Upgrade log collector
+- Remove old data sources
+- Add/Disable App Connectors
+
+### Settings
+
+- Review managed domains
+- Verify current IP ranges for Corporate and VPN
+- Verify App Tag strategy and add/remove as needed
+- Check rights on admin quarantine folder
+- Adjust score metrics based on industry best practices
+- Review members allowed to view private activities
+- Verify integrations are enabled:
+  - Microsoft Purview Information Protection
+  - Microsoft Defender for Identity
+  - Azure Active Directory Information Protection
+  - Microsoft Defender for Endpoint
+
 ## Application lifecycle management in Azure Container Apps
 
 The Azure Container Apps application lifecycle revolves around [revisions](https://learn.microsoft.com/azure/container-apps/revisions).
@@ -35,7 +82,7 @@ In multiple revision mode, you control when revisions are activated or deactivat
 
 Once a revision is no longer needed, you can deactivate a revision with the option to reactivate later. During deactivation, containers in the revision are [shut down](https://learn.microsoft.com/azure/container-apps/application-lifecycle-management#shutdown).
 
-![Diagram which shows the deactivation phase with Azure Container Apps.](https://learn.microsoft.com/azure/container-apps/media/application-lifecycle-management/azure-container-apps-lifecycle-deactivate.png)
+![Diagram which shows the deactivation phase with Azure Container Apps.](../media/azure-container-apps-lifecycle-deactivate.png)
 <!--
 [](https://learn.microsoft.com/azure/container-apps/application-lifecycle-management#shutdown)
 -->
