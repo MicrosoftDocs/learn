@@ -34,7 +34,7 @@ Your application needs a connection string to be able to connect to your storage
 The following code uses the Azure CLI to retrieve the storage connection string and place it in an environment variable. The application will then read this environment variable to get the connection string and connect to the storage queue. Be sure to substitute in the name of your storage account in the command below.
 
 ```bash
-export MY_STORAGE_CONNECTION_STRING=`az storage account show-connection-string -g <rgn>[sandbox resource group name]</rgn> -n <storage account name> --output tsv`
+export MY_STORAGE_CONNECTION_STRING=`az storage account show-connection-string -g <rgn>[sandbox resource group name]</rgn> --output tsv -n <storage account name>`
 ```
 
 You can verify that you have a connection string set in your environment variable by running the following command to view the connection string:

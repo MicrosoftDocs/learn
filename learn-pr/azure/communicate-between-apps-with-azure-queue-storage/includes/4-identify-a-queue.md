@@ -38,7 +38,7 @@ A connection string is a string that combines a storage account name and account
 You can retrieve the connection string from the  **Security + Networking** > **Access keys** section of your storage account in the Azure portal, or you can retrieve it through the command line using the Azure CLI:
 
 ```azurecli
-az storage account show-connection-string -g <resource group name> -n <storage account name> --output tsv
+az storage account show-connection-string -g <resource group name> --output tsv -n <storage account name>
 ```
 
 ### Use the Azure.Storage.Queues package for .NET
