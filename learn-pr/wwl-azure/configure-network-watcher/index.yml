@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Configure Network Watcher
 summary: You will learn how to configure Network Watcher and troubleshoot common networking problems.
 abstract: |
