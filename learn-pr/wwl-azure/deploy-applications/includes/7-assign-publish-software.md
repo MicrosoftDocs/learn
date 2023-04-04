@@ -15,6 +15,6 @@ Assigning software has the following characteristics:
 
 Publishing software has the following characteristics:
 
- -  The Programs &gt; Programs and Features shortcut in Control Panel advertises a published application to the user. Users can install the application by using the Install a program from the network shortcut, or extension activation can install the application. Extension activation will initiate the program installation when a user selects on a file type that is associated with the program.
+ -  The Programs > Programs and Features shortcut in Control Panel advertises a published application to the user. Users can install the application by using the Install a program from the network shortcut, or extension activation can install the application. Extension activation will initiate the program installation when a user selects on a file type that is associated with the program.
  -  Control Panel doesn't advertise applications to users who don't have permission to install them.
  -  Applications can't be published to computers.

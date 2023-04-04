@@ -30,7 +30,7 @@ c:\testappoutput\v1.0 -q
 
 Once the Intunewin file has been created, it can be added to Intune. The steps for adding the app are as follows:
 
-1.  In the **Intune** pane, select **Client apps** &gt; **Apps** &gt; **Add** and select **Windows app (Win32)** from the drop-down list.
+1.  In the **Intune** pane, select **Client apps** > **Apps** > **Add** and select **Windows app (Win32)** from the drop-down list.
 2.  Select **App package file** and browse to the intunewin file you created to upload the package to Intune.
 3.  **Add the App information.** This will include information such as the name, description, publisher, category, owner, etc.
 4.  **Configure app installation install and uninstall commands.** This might look like the following for installing and uninstalling, respectively:

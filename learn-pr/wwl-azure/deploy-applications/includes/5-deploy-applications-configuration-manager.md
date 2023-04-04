@@ -28,7 +28,7 @@ While there are many different options that exist for creating an application in
 
 To create an application:
 
-1.  In the Configuration Manager console, choose **Software Library** &gt; **Application Management** &gt; **Applications**. Select Users and groups, and then select All users.
+1.  In the Configuration Manager console, choose **Software Library** > **Application Management** > **Applications**. Select Users and groups, and then select All users.
 2.  On the **Home** tab, in the **Create** group, choose **Create Application**.
 3.  On the **General** page of the **Create Application Wizard**, choose **Automatically detect information about this application from installation files**. This pre-populates some of the information in the wizard with information that is extracted from the installation .msi file. Then, specify the following information:
     

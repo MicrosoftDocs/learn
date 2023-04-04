@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.deploy-applications.update-microsoft-store-apps-intune
-title: Update Microsoft Store apps with Intune
+title: Update Microsoft Store Apps with Intune
 metadata:
-  title: Update Microsoft Store apps with Intune
-  description: "Update Microsoft Store apps with Intune"
-  ms.date: 04/03/2023
+  title: Update Microsoft Store Apps with Intune
+  description: "Update Microsoft Store Apps with Intune"
+  ms.date: 04/04/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial

@@ -1,7 +1,7 @@
 
 The importance of keeping apps updated can't be overstated, as it plays a crucial role in maintaining digital products' security, stability, and overall user experience. Regular updates ensure that users enjoy the most current and optimized version of the app and protect them from potential cyber threats, as updates often include critical security patches that safeguard user data and privacy. Moreover, outdated apps may become incompatible with evolving operating systems or other software components, which could lead to performance issues or even application crashes. Users can benefit from an optimal digital experience while safeguarding their devices and personal information by prioritizing app updates.
 
-The information below will teach you to efficiently update Microsoft Store apps using Intune, ensuring your team stays productive and secure with the latest features and enhancements.
+The information below will teach you to efficiently update Microsoft Store Apps using Intune, ensuring your team stays productive and secure with the latest features and enhancements.
 
 ## App update
 
@@ -40,9 +40,9 @@ The following table provides details about how app deployment may be affected by
 > [!NOTE]
 > If you would like to block installation of arbitrary applications from the Store application by the end user without blocking the Intune and Windows Package Manager store integration, set Store\Only display the private store within the Microsoft Store to Enabled.
 
-## Unsupported functionality for Microsoft Store apps
+## Unsupported functionality for Microsoft Store Apps
 
-The following capabilities aren't supported by Microsoft Store apps:
+The following capabilities aren't supported by Microsoft Store Apps:
 
-1. Ability to install Microsoft Store apps during Enrollment Status Page. Apps deployed using Microsoft Store app will install after enrollment status page has completed. The ability to install Microsoft Store apps during Enrolment Status Page is coming in a future release.
+1. Ability to install Microsoft Store Apps during Enrollment Status Page. Apps deployed using Microsoft Store app will install after enrollment status page has completed. The ability to install Microsoft Store Apps during Enrolment Status Page is coming in a future release.
 1. Any app that has an ARM64 installer isn't supported.
