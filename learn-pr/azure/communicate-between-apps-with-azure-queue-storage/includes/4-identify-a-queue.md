@@ -20,9 +20,9 @@ Every request to a queue must be authorized and there are several options to cho
 
 | Authorization type | Description |
 |--------------------|-------------|
-| **Azure Active Directory** | You can use role-based authentication and identify specific clients based on AAD credentials. |
+| **Azure Active Directory** | You can use role-based authentication and identify specific clients based on Azure AD credentials. |
 | **Shared Key** | Sometimes referred to as an **account key**, this is an encrypted key signature associated with the storage account. Every storage account has two of these keys that can be passed with each request to authenticate access. Using this approach is like using a root password - it provides _full access_ to the storage account. |
-| **Shared access signature** | A shared access signature (SAS) is a generated URI that grants limited access to objects in your storage account to clients. You can restrict access to specific resources, permissions, and scope to a date range to automatically turn off access after a period of time.  |
+| **Shared access signature** | A shared access signature (SAS) is a generated URI that grants limited access to objects in your storage account to clients. You can restrict access to specific resources, permissions, and scope to a date range to automatically turn-off access after a period of time.  |
 
 > [!NOTE]
 > We will use the account key authorization because it is the simplest way to get started working with queues, however it's recommended that you either use shared access signature (SAS) or Azure Active Directory in production apps.
