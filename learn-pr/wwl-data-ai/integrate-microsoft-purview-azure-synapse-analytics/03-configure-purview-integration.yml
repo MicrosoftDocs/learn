@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.integrate-microsoft-purview-azure-synapse-analytics.scan-workspaces
-title: Connect Azure purview to an Azure Synapse Analytics workspace
+title: Connect Microsoft Purview to an Azure Synapse Analytics workspace
 metadata:
-  title: Connect Azure purview to an Azure Synapse Analytics workspace
-  description: "Connect Azure purview to an Azure Synapse Analytics workspace"
-  ms.date: 09/23/2022
+  title: Connect Microsoft Purview to an Azure Synapse Analytics workspace
+  description: "Connect Microsoft Purview to an Azure Synapse Analytics workspace"
+  ms.date: 04/04/2023
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
