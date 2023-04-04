@@ -39,10 +39,3 @@ The following table provides details about how app deployment may be affected by
 
 > [!NOTE]
 > If you would like to block installation of arbitrary applications from the Store application by the end user without blocking the Intune and Windows Package Manager store integration, set Store\Only display the private store within the Microsoft Store to Enabled.
-
-## Unsupported functionality for Microsoft Store Apps
-
-The following capabilities aren't supported by Microsoft Store Apps:
-
-1. Ability to install Microsoft Store Apps during Enrollment Status Page. Apps deployed using Microsoft Store app will install after enrollment status page has completed. The ability to install Microsoft Store Apps during Enrolment Status Page is coming in a future release.
-1. Any app that has an ARM64 installer isn't supported.
