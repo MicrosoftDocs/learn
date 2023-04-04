@@ -36,7 +36,7 @@ units:
 - learn.monitor-aks-using-container-insights.enable-container-insights-for-your-aks-cluster
 - learn.monitor-aks-using-container-insights.exercise-enable-container-insights
 - learn.monitor-aks-using-container-insights.monitor-performance-of-your-cluster
-- learn.monitor-aks-using-container-insights.monitor-performance-of-your-cluster
+- learn.monitor-aks-using-container-insights.exercise-monitor-performance-of-your-cluster
 - learn.monitor-aks-using-container-insights.create-container-insights-alert-rules
 - learn.monitor-aks-using-container-insights.exercise-create-container-insights-alert-rules
 - learn.monitor-aks-using-container-insights.knowledge-check
