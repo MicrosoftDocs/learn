@@ -1,4 +1,4 @@
-You are now ready to start implementing the temperature service. In the previous unit, you determined that a serverless solution would best fit your needs. Let's start by creating a function app to hold our Azure Function.
+You're now ready to start implementing the temperature service. In the previous unit, you determined that a serverless solution would best fit your needs. Let's start by creating a function app to hold our Azure Function.
 
 ## What is a function app?
 
@@ -13,11 +13,11 @@ Function apps may use one of two types of service plans:
 
 When using the Azure serverless application platform, choose the **Consumption plan**. This plan provides automatic scaling and bills you only when your functions are running. The Consumption plan comes with a configurable timeout period for executing a function. By default, it's five (5) minutes, but may be configured to have a timeout as long as 10 minutes.
 
-The **Azure App Service plan** enables you to avoid timeout periods by having your function run continuously on a VM that you define. When using an App Service plan, you are responsible for managing the app resources the function runs on, so this is technically not a serverless plan. However, it may be a better choice if your functions are used continuously, or if your functions require more processing power or longer execution time than the Consumption plan can provide.
+The **Azure App Service plan** enables you to avoid timeout periods by having your function run continuously on a VM that you define. When using an App Service plan, you're responsible for managing the app resources the function runs on, so this is technically not a serverless plan. However, it may be a better choice if your functions are used continuously, or if your functions require more processing power or longer execution time than the Consumption plan can provide.
 
 ### Storage account requirements
 
-When you create a function app, it must be linked to a storage account. You can select an existing account or create a new one. The function app uses this storage account for internal operations, such as logging function executions and managing execution triggers. On the **Consumption plan**, this is also where the function code and configuration file are stored.
+When you create a function app, it must be linked to a storage account. You can select an existing account or create a new one. The function app uses this storage account for internal operations, such as logging function executions and managing execution triggers. On the **Consumption plan**, this storage account is also where the function code and configuration file are stored.
 
 ## Create a function app
 
@@ -49,7 +49,7 @@ Let's create a function app in the Azure portal.
     | Version | Accept *default* |
     | Region | Select a geographical location close to you. In a production system, you would want to select a location near your customers or consumers of the function. |
 
-1. Select **Review + create**, and then select **Create**. Deployment will take a few minutes. You'll receive a notification when deployment is completed.
+1. Select **Review + create**, and then select **Create**. Deployment takes a few minutes. You'll receive a notification when deployment is completed.
 
 ::: zone-end
 
@@ -81,7 +81,7 @@ Let's create a function app in the Azure portal.
     | Version | Accept *default* |
     | Region | Select a geographical location close to you. In a production system, you would want to select a location near your customers or consumers of the function. |
 
-1. Select **Review + create**, and upon validation, then select **Create**. Deployment will take a few minutes. The Deployment pane displays the resources that are being created, and will display a **Your deployment is complete** notification when deployment is completed.
+1. Select **Review + create**, and upon validation, then select **Create**. Deployment takes a few minutes. The Deployment pane displays the resources that are being created, and will display a **Your deployment is complete** notification when deployment is completed.
 
 ::: zone-end
 
