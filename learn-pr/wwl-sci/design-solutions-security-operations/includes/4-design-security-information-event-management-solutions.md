@@ -96,7 +96,7 @@ Use the following best practice guidance when creating the Log Analytics workspa
 
 - **Use the same workspace for both Microsoft Sentinel and Microsoft Defender for Cloud**, so that all logs collected by Microsoft Defender for Cloud can also be ingested and used by Microsoft Sentinel. The default workspace created by Microsoft Defender for Cloud will not appear as an available workspace for Microsoft Sentinel.
 
-- **Use a dedicated workspace cluster if your projected data ingestion is around or more than 1 TB per day**. A [dedicated cluster](../azure-monitor/logs/logs-dedicated-clusters.md) enables you to secure resources for your Microsoft Sentinel data, which enables better query performance for large data sets. Dedicated clusters also provide the option for more encryption and control of your organization's keys.
+- **Use a dedicated workspace cluster if your projected data ingestion is around or more than 1 TB per day**. A dedicated cluster enables you to secure resources for your Microsoft Sentinel data, which enables better query performance for large data sets. Dedicated clusters also provide the option for more encryption and control of your organization's keys.
 
 Don't apply a resource lock to a Log Analytics workspace you'll use for Microsoft Sentinel. A resource lock on a workspace can cause many Microsoft Sentinel operations to fail.
 
