@@ -3,13 +3,13 @@ In addition to REST APIs covered in the previous unit, users can also access Azu
 > [!NOTE]
 > Before interacting with the API using either SDK, you must create an Azure OpenAI resource in the Azure portal, deploy a model in that resource, and retrieve your endpoint and keys. Check out the [Getting started with Azure OpenAI Service](/training/modules/get-started-openai/) to learn how to do that.
 
-For both SDKs covered in this unit, you need the endpoint and a key from your Azure OpenAI resource, as well as the name you gave for your deployed model. In the following code snippets, the following placeholders are used:
+For both SDKs covered in this unit, you need the endpoint and a key from your Azure OpenAI resource, and the name you gave for your deployed model. In the following code snippets, the following placeholders are used:
 
 |Placeholder name | Value |
 |--------------|-------|
-| `YOUR_ENDPOINT_NAME` | This is found in the **Keys & Endpoint** section in the Azure portal. It is the base endpoint of your resource, such as `https://sample.openai.azure.com/`. |
-| `YOUR_API_KEY` | This is found in the **Keys & Endpoint** section in the Azure portal. You can use either key for your resource. |
-| `YOUR_DEPLOYMENT_NAME` | This is the name provided when you deployed your model in the Azure OpenAI Studio. |
+| `YOUR_ENDPOINT_NAME` | This base endpoint is found in the **Keys & Endpoint** section in the Azure portal. It's the base endpoint of your resource, such as `https://sample.openai.azure.com/`.|
+| `YOUR_API_KEY` | Keys are found in the **Keys & Endpoint** section in the Azure portal. You can use either key for your resource. |
+| `YOUR_DEPLOYMENT_NAME` | This deployment name is the name provided when you deployed your model in the Azure OpenAI Studio. |
 
 ## Install libraries
 
@@ -73,7 +73,7 @@ deployment_name = '<YOUR_DEPLOYMENT_NAME>' # SDK calls this "engine", but naming
 
 ## Call Azure OpenAI resource
 
-Once you have configured your connection to Azure OpenAI, send your prompt to one of the available endpoints of `completions`, `chatCompletions`, or `embeddings`. The example here is for `completions`, however the request and response is very similar for the other SDK endpoints.
+Once you've configured your connection to Azure OpenAI, send your prompt to one of the available endpoints of `completions`, `chatCompletions`, or `embeddings`. The example here is for `completions`, however the request and response is similar for the other SDK endpoints.
 
 ::: zone pivot="csharp"
 
@@ -85,7 +85,7 @@ string completion = completionsResponse.Value.Choices[0].Text;
 Console.WriteLine($"Chatbot: {completion}");
 ```
 
-The response object contains several values, such as `total_tokens` and `finish_reason`. The text completion from the response object will be similar to the following:
+The response object contains several values, such as `total_tokens` and `finish_reason`. The text completion from the response object will be similar to the following completion:
 
 ```console
 "Azure OpenAI is a cloud-based artificial intelligence (AI) service that offers a range of tools and services for developing and deploying AI applications. Azure OpenAI provides a variety of services for training and deploying machine learning models, including a managed service for training and deploying deep learning models, a managed service for deploying machine learning models, and a managed service for managing and deploying machine learning models."
@@ -102,7 +102,7 @@ response = openai.Completion.create(engine=deployment_name, prompt=prompt)
 print(response.choices[0].text)
 ```
 
-The response object contains several values, such as `total_tokens` and `finish_reason`. The text completion from the response object will be similar to the following:
+The response object contains several values, such as `total_tokens` and `finish_reason`. The text completion from the response object will be similar to the following completion:
 
 ```console
 "Azure OpenAI is a cloud-based artificial intelligence (AI) service that offers a range of tools and services for developing and deploying AI applications. Azure OpenAI provides a variety of services for training and deploying machine learning models, including a managed service for training and deploying deep learning models, a managed service for deploying machine learning models, and a managed service for managing and deploying machine learning models."
@@ -110,4 +110,4 @@ The response object contains several values, such as `total_tokens` and `finish_
 
 ::: zone-end
 
-In both C# and Python, your `create` call can include optional parameters including `temperature` and `max_tokens`. Examples of using those parameters is included in this module's lab.
+In both C# and Python, your `create` call can include optional parameters including `temperature` and `max_tokens`. Examples of using those parameters are included in this module's lab.

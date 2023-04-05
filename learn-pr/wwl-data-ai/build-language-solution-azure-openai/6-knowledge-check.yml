@@ -3,13 +3,13 @@ uid: learn.wwl.build-language-solution-azure-openai.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
-  ms.date: 3/30/2023
+  description: "Check your understanding of the content presented in this module."
+  ms.date: 4/5/2023
   author: ivorb
   ms.author: berryivor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
-durationInMinutes: 1
+durationInMinutes: 2
 content: |
 quiz:  
   questions:  
@@ -28,13 +28,13 @@ quiz:
     choices:  
     - content: "Completion, ChatCompletion, and Translation"  
       isCorrect: false  
-      explanation: "Translation is not an Azure OpenAI endpoint."  
+      explanation: "Translation isn't an Azure OpenAI endpoint."  
     - content: "Completion, ChatCompletion, and Embeddings"  
       isCorrect: true  
-      explanation: "These are the three available endpoints"  
+      explanation: "Completion, ChatCompletion, and Embeddings are the three available endpoints"  
     - content: "Deployment, Summary, and Similarity"  
       isCorrect: false  
-      explanation: "None of these are an Azure OpenAI endpoint."  
+      explanation: "Completion, ChatCompletion, and Embeddings are the three available endpoints"  
   - content: "What is the best available endpoint to model the next completion of a conversation in Azure OpenAI?"  
     choices:  
     - content: "ChatCompletion"  

@@ -2,8 +2,8 @@
 uid: learn.wwl.build-language-solution-azure-openai
 metadata:
   title: Build natural language solutions with Azure OpenAI
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the module; include relevant search keywords."
-  ms.date: 3/30/2023
+  description: "Learn how to integrate language understanding and prompt completions from Azure OpenAI into your app."
+  ms.date: 4/5/2023
   author: ivorb
   ms.author: berryivor
   ms.topic: interactive-tutorial

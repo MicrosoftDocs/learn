@@ -3,17 +3,17 @@ AOAI offers a REST API for interacting and generating responses that developers 
 > [!NOTE]
 > Before interacting with the API, you must create an Azure OpenAI resource in the Azure portal, deploy a model in that resource, and retrieve your endpoint and keys. Check out the [Getting started with Azure OpenAI Service](/training/modules/get-started-openai/) to learn how to do that.
 
-For each call you need the endpoint and a key from your Azure OpenAI resource, as well as the name you gave for your deployed model. In the following examples, the following placeholders are used:
+For each call to the REST API, you need the endpoint and a key from your Azure OpenAI resource, and the name you gave for your deployed model. In the following examples, the following placeholders are used:
 
 |Placeholder name | Value |
 |--------------|-------|
-| `YOUR_ENDPOINT_NAME` | This is found in the **Keys & Endpoint** section in the Azure portal. It is the base endpoint of your resource, such as `https://sample.openai.azure.com/`.|
-| `YOUR_API_KEY` | This is found in the **Keys & Endpoint** section in the Azure portal. You can use either key for your resource. |
-| `YOUR_DEPLOYMENT_NAME` | This is the name provided when you deployed your model in the Azure OpenAI Studio. |
+| `YOUR_ENDPOINT_NAME` | This base endpoint is found in the **Keys & Endpoint** section in the Azure portal. It's the base endpoint of your resource, such as `https://sample.openai.azure.com/`.|
+| `YOUR_API_KEY` | Keys are found in the **Keys & Endpoint** section in the Azure portal. You can use either key for your resource. |
+| `YOUR_DEPLOYMENT_NAME` | This deployment name is the name provided when you deployed your model in the Azure OpenAI Studio. |
 
 ## Completions
 
-Once you have deployed a model in your AOAI resource, you can send a prompt to the service using a `POST` request. The most common endpoint is `completions`, which will generate the completion of your prompt.
+Once you've deployed a model in your AOAI resource, you can send a prompt to the service using a `POST` request. The most common endpoint is `completions`, which generates the completion of your prompt.
 
 ```rest
 curl https://YOUR_ENDPOINT_NAME.openai.azure.com/openai/deployments/YOUR_DEPLOYMENT_NAME/completions?api-version=2022-12-01\
@@ -25,7 +25,7 @@ curl https://YOUR_ENDPOINT_NAME.openai.azure.com/openai/deployments/YOUR_DEPLOYM
 }"
 ```
 
-The response from the API will be similar to the following:
+The response from the API will be similar to the following JSON:
 
 ```json
 {
@@ -44,7 +44,7 @@ The response from the API will be similar to the following:
 }
 ```
 
-The completion response to look for is within `choices[].text`. Notice that also included in the response is `finish_reason`, which in this example is `stop`. Other possibilities for `finish_reason` include `length`, which means it used up the `max_tokens` specified in the request, or `content_filter`, which means the system detected harmful content was generated from the prompt. If harmful content is included in the prompt, the API request will return an error.
+The completion response to look for is within `choices[].text`. Notice that also included in the response is `finish_reason`, which in this example is `stop`. Other possibilities for `finish_reason` include `length`, which means it used up the `max_tokens` specified in the request, or `content_filter`, which means the system detected harmful content was generated from the prompt. If harmful content is included in the prompt, the API request returns an error.
 
 ## Chat completions
 
@@ -60,7 +60,7 @@ curl https://YOUR_ENDPOINT_NAME.openai.azure.com/openai/deployments/YOUR_DEPLOYM
 {"role": "user", "content": "Do other Azure Cognitive Services support translation too?"}]}'
 ```
 
-The response from the API will be similar to the following:
+The response from the API will be similar to the following JSON:
 
 ```json
 {
@@ -87,7 +87,7 @@ The response from the API will be similar to the following:
 }
 ```
 
-Both completion endpoints allow for specifying other optional input parameters, such as `temperature`, `max_tokens` and more. If you'd like to include those in your request, add them to the input data with the request.
+Both completion endpoints allow for specifying other optional input parameters, such as `temperature`, `max_tokens` and more. If you'd like to include any of those parameters in your request, add them to the input data with the request.
 
 ## Embeddings
 
@@ -102,7 +102,7 @@ curl https://YOUR_ENDPOINT_NAME.openai.azure.com/openai/deployments/YOUR_DEPLOYM
 
 When generating embeddings, be sure to use a model in AOAI meant for embeddings. Those models start with `text-embedding` or `text-similarity`, depending on what functionality you're looking for.
 
-The response from the API will be similar to the following:
+The response from the API will be similar to the following JSON:
 
 ```json
 {

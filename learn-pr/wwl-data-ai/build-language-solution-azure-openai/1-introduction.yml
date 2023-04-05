@@ -3,8 +3,8 @@ uid: learn.wwl.build-language-solution-azure-openai.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
-  ms.date: 3/30/2023
+  description: "Learn how to integrate Azure OpenAI into your application for intelligent natural language processing."
+  ms.date: 4/5/2023
   author: ivorb
   ms.author: berryivor
   ms.topic: interactive-tutorial

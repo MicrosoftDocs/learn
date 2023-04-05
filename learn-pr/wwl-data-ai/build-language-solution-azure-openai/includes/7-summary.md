@@ -1,4 +1,4 @@
-Azure OpenAI offers models for text, code, and embeddings, available through REST API or Python and C# SDKs. This module covered how to use the models in your own application, with the available endpoints of completion, chat completion, and embeddings. By using the specific model deployed in your resource, you can leverage Azure OpenAI generative AI models to add intelligence to your application.
+Azure OpenAI offers models for text, code, and embeddings, available through REST API or Python and C# SDKs. This module covered how to use the models in your own application, with the available endpoints of completion, chat completion, and embeddings. By using the specific model deployed in your resource, you can utilize Azure OpenAI generative AI models to add intelligence to your application.
 
 In this module, you learned how to:
 
