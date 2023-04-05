@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.case-study-design-security-solutions-applications-data.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Case study introduction for: Design security operations, identity and compliance capabilities."
+  ms.date: 4/4/2023
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]
