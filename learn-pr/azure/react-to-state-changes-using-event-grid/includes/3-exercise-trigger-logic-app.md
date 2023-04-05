@@ -12,7 +12,7 @@ Let's start by creating a new virtual machine in the Azure portal.
 
 1. In resource menu or on the home page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the left menu pane, select **Compute**, and in the results list, select **Virtual machine**. The **Create a virtual machine** pane appears.
+1. In the **Create a resource** pane, enter **Virtual machine** in global search. In the search results, select **Virtual machine** published by Microsoft for Azure, and then select **Create**.
 
 1. On the **Basics** tab, enter the following values for each setting:
 
@@ -23,10 +23,10 @@ Let's start by creating a new virtual machine in the Azure portal.
     | Resource group  | From the dropdown list, select **<rgn>[sandbox resource group]</rgn>** |
     | **Instance details** |
     | Virtual machine name | vm1 |
-    | Region | Select a region near you |
+    | Region | Choose from the free *sandbox regions* listed after this table. |
     | Availability options | No infrastructure redundancy required |
     | Security type | Standard |
-    | Image | Windows Server 2019 Datacenter - Gen2 |
+    | Image | Windows Server 2019 Datacenter - x64 Gen2 |
     | Azure Spot instance | No checkmark |
     | Size | Standard DS1 v2 |
     | **Administrator account** |
@@ -34,6 +34,8 @@ Let's start by creating a new virtual machine in the Azure portal.
     | Password | Enter a complex password |
     | **Inbound port rules** |
     | Public inbound ports | None |
+
+    [!INCLUDE[Sandbox regions](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
 1. Select **Review and create**. Once validation passes, select **Create**.
 
@@ -57,8 +59,10 @@ Let's create a logic app that will run whenever a virtual machine change is dete
     | **Instance Details** |
     | Type | Consumption |
     | Logic app name | Enter a name |
-    | Region | Select a region near you |
+    | Region | Choose from the free *sandbox regions* listed after this table. |
     | Enable log analytics | No |
+
+    [!INCLUDE[Sandbox regions](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
 1. Select **Review + create**, then select **Create**.
 

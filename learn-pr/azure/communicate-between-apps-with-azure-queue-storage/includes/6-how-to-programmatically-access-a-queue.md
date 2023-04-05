@@ -2,7 +2,7 @@ Queues hold messages - packets of data whose shape is known to the sender applic
 
 ![An illustration showing a typical message flow through the Azure Queue.](../media/6-message-flow.png)
 
-Notice that `get` and `delete` are separate operations. This arrangement handles potential failures in the receiver and implements a concept called _at-least-once delivery_. After the receiver gets a message, that message remains in the queue but is invisible for 30 seconds. If the receiver crashes or experiences a power failure during processing, then it will never delete the message from the queue. After 30 seconds, the message will reappear in the queue and another instance of the receiver can process it to completion.
+Notice that `get` and `delete` are separate operations. This arrangement handles potential failures in the receiver and implements a concept called _at-least-once delivery_. After the receiver gets a message, that message remains in the queue but is invisible for 30 seconds. If the receiver crashes or experiences a power failure during processing, then it never deletes the message from the queue. After 30 seconds, the message reappears in the queue and another instance of the receiver can process it to completion.
 
 ## How to connect to a queue
 
@@ -16,13 +16,13 @@ You would create one `QueueClient` object for each queue that your application t
 
 ## How to send a message
 
-To send a message, you call the a `SendMessageAsync` method on a `QueueClient` object. The simplest way to send a message is to just pass a string to the SendMessageAsync` method.
+To send a message, you call the `SendMessageAsync` method on a `QueueClient` object. The simplest way to send a message is to just pass a string to the SendMessageAsync` method.
 
 ```csharp
 Response<SendReceipt> response = await queueClient.SendMessageAsync("This is a message");
 ```
 
-Typically though, when exchanging data between applications, a message needs to contain multiple fields of data.  For this reason, messages are often passed in a structured format like JSON to the queue.  To do this, you need to first serialize an object representing the message to JSON and then pass the resulting JSON to the queue.
+Typically though, when exchanging data between applications, a message needs to contain multiple fields of data.  For this reason, messages are often passed in a structured format like JSON to the queue.  That means you need to first serialize an object representing the message to JSON and then pass the resulting JSON to the queue.
 
 ```csharp
 string messageJson = JsonSerializer.Serialize(objectData);
@@ -50,7 +50,7 @@ Console.WriteLine($"Inserted on : {message.InsertedOn}");
 
 When the receiver application is ready to process a message, it calls the `ReceiveMessageAsync` method on the `QueueClient` object to pull the next message off of the queue. A `QueueMessage` object represents the message and can be accessed By using the `Value` property on the `Response` object.
 
-The `QueueMessage` class contains properties to get the message ID, when the message was inserted into the queue and several others.  The most important property though is the `Body` property which contains the contents of the message.  If the message was formatted as JSON, you can use the `ToObjectFromJson` method to convert the message into the appropriate object type.
+The `QueueMessage` class contains properties to get the message ID, when the message was inserted into the queue and several others.  The most important property though is the `Body` property, which contains the contents of the message.  If the message was formatted as JSON, you can use the `ToObjectFromJson` method to convert the message into the appropriate object type.
 
 ```csharp
 Response<QueueMessage> response = await queueClient.ReceiveMessageAsync();
@@ -58,7 +58,7 @@ QueueMessage message = response.Value;
 NewsArticle article = message.Body.ToObjectFromJson<NewsArticle>();
 ```
 
-When you are finished processing this message, you need to delete this message from the queue.  This insures no other consumers pick up this message and process it.  You do this by calling the `DeleteMessageAsync` method on the `QueueClient` object. You will need to provide the values of the `MessageId` and `PopReceipt` properties of the `QueueMessage` that you want to be deleted from the queue.
+When you're finished processing this message, you need to delete it from the queue.  Doing so insures no other consumers pick up this message and process it.  You do this by calling the `DeleteMessageAsync` method on the `QueueClient` object. You'll need to provide the values of the `MessageId` and `PopReceipt` properties of the `QueueMessage` that you want to be deleted from the queue.
 
 ```csharp
 await queueClient.DeleteMessageAsync(message.MessageId, message.PopReceipt);

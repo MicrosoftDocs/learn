@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.deploy-device-data-protection
+metadata:
+  title: MD-102 1-Deploy device data protection
+  description: "This module describes how you can use Intune to create and manage WIP policies that manage this protection. The module also covers implementing BitLocker and Encrypting File System."
+  ms.date: 04/04/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Deploy device data protection
+summary: This module describes how you can use Intune to create and manage WIP policies that manage this protection. The module also covers implementing BitLocker and Encrypting File System.
+abstract: |
+  After this module, you should be able to:
+  - Describe Windows Information Protection
+  - Plan for Windows Information Protection usage
+  - Implement and use Windows Information Protection
+  - Describe the Encrypting File System (EFS)
+  - Describe BitLocker
+prerequisites: |
+  - Strong technical skills installing, maintaining, and troubleshooting the Windows 10 OS or later
+  - Strong understanding of computer networking, client security, and application concepts
+  - Experience using Active Directory Domain Services
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- windows
+- configuration-manager
+- intune
+units:
+- learn.wwl.deploy-device-data-protection.introduction
+- learn.wwl.deploy-device-data-protection.explore-windows-information-protection
+- learn.wwl.deploy-device-data-protection.plan-windows-information-protection
+- learn.wwl.deploy-device-data-protection.implement-use-windows-information-protection
+- learn.wwl.deploy-device-data-protection.explore-encrypting-file-system-windows-client
+- learn.wwl.deploy-device-data-protection.explore-bitlocker
+- learn.wwl.deploy-device-data-protection.knowledge-check
+- learn.wwl.deploy-device-data-protection.summary
+badge:
+  uid: learn.wwl.deploy-device-data-protection.badge
