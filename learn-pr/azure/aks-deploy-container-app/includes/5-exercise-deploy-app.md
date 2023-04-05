@@ -1,4 +1,4 @@
-In this exercise, you'll deploy your company's website as a test app onto Azure Kubernetes Service (AKS). The website is a static website with an underlying technology stack of HTML, CSS, and JavaScript. It doesn't receive as many requests as the other services and provides us with a safe way to test deployment options.
+In this exercise, deploy your company's website as a test app onto Azure Kubernetes Service (AKS). The website is a static website with an underlying technology stack of HTML, CSS, and JavaScript. It doesn't receive as many requests as the other services and provides us with a safe way to test deployment options.
 
 > [!NOTE]
 > The code for the web app is available in this [GitHub repository](https://github.com/MicrosoftDocs/mslearn-aks-deploy-container-app) if you want to explore the source code further. Also, this sample app will be deployed on a Linux node pool only.
@@ -34,7 +34,7 @@ Kubernetes groups containers into logical structures called pods, which have no 
       name: contoso-website # This will be the name of the deployment
     ```
 
-    In this code, you added the first two keys to tell Kubernetes the `apiVersion` and `kind` of manifest you're creating. The `name` is the name of the deployment. You'll use it to identify and query the deployment information when you use `kubectl`.
+    In this code, you added the first two keys to tell Kubernetes the `apiVersion` and `kind` of manifest you're creating. The `name` is the name of the deployment. Use it to identify and query the deployment information when you use `kubectl`.
 
     > [!TIP]
     > For more information about `apiVersion` and what values to put in this key, see the official Kubernetes documentation. Find a link at the end of this module.
@@ -56,7 +56,7 @@ Kubernetes groups containers into logical structures called pods, which have no 
             app: contoso-website
     ```
 
-    Pods don't have given names when they're created inside deployments. The pod's name will be the deployment's name with a random ID added to the end.
+    Pods don't have given names when they're created inside deployments. The pod's name is the deployment's name with a random ID added to the end.
 
     Notice the use of the `labels` key. You add the `labels` key to allow deployments to find and group pods.
 
@@ -82,7 +82,7 @@ Kubernetes groups containers into logical structures called pods, which have no 
 
     The `containers` key is an array of container specifications because a pod can have one or more containers. The specification defines an `image`, a `name`, `resources`, `ports`, and other important information about the container.
 
-    All running pods will follow the name `contoso-website-<UUID>`, where UUID is a generated ID to identify all resources uniquely.
+    All running pods follow the name `contoso-website-<UUID>`, where UUID is a generated ID to identify all resources uniquely.
 
 1. It's a good practice to define a minimum and a maximum amount of resources that the app is allowed to use from the cluster. You use the `resources` key to specify this information.
 
@@ -114,7 +114,7 @@ Kubernetes groups containers into logical structures called pods, which have no 
 
       Notice how the resource section allows you to specify the minimum resource amount as a request and the maximum resource amount as a limit.
 
-1. The last step is to define the ports this container will expose externally through the `ports` key. The `ports` key is an array of objects, which means that a container in a pod can expose multiple ports with multiple names.
+1. The last step is to define the ports this container exposes externally through the `ports` key. The `ports` key is an array of objects, which means that a container in a pod can expose multiple ports with multiple names.
 
     Update the `deployment.yaml` file to match the following YAML.
 
@@ -149,7 +149,7 @@ Kubernetes groups containers into logical structures called pods, which have no 
 
     Notice how you name the port by using the `name` key. Naming ports allows you to change the exposed port without changing files that reference that port.
 
-1. Finally, add a selector section to define the workloads the deployment will manage. The `selector` key is placed inside the deployment specification section of the manifest file. Use the `matchLabels` key to list the labels for all the pods managed by the deployment.
+1. Finally, add a selector section to define the workloads the deployment manages. The `selector` key is placed inside the deployment specification section of the manifest file. Use the `matchLabels` key to list the labels for all the pods managed by the deployment.
 
     Update the `deployment.yaml` file to match the following YAML.
 
@@ -186,7 +186,7 @@ Kubernetes groups containers into logical structures called pods, which have no 
     ```
 
     > [!NOTE]
-    > In an AKS cluster which has multiple node pools (Linux and Windows), the deployment manifest file listed above also defines a `nodeSelector` to tell your AKS cluster to run the sample application's pod on a node that can run Linux containers.
+    > In an AKS cluster which has multiple node pools (Linux and Windows), the deployment manifest file previously listed also defines a `nodeSelector` to tell your AKS cluster to run the sample application's pod on a node that can run Linux containers.
 
     Linux nodes can't run Windows containers and vice versa.
 
