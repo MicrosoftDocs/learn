@@ -10,8 +10,8 @@ metadata:
   ms.prod: learning-azure
 title: 'SC-100: Design security solutions for infrastructure'
 prerequisites: |
-  *   Advanced experience and knowledge in identity and access, platform protection, security operations, securing data and securing applications.
-  *   Experience with hybrid and cloud implementations.
+  -   Advanced experience and knowledge in identity and access, platform protection, security operations, securing data and securing applications.
+  -   Experience with hybrid and cloud implementations.
 summary: |
   You learn how to design for infrastructure security, including specifying requirements for different cloud models, designing solutions for posture management in hybrid and multicloud environments, and securing endpoints.
 iconUrl: /training/achievements/generic-trophy.svg
