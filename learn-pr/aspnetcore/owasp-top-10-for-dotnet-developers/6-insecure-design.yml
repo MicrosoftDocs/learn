@@ -21,7 +21,7 @@ quiz:
     - content: "It's a guided process to help with manual security testing."
       isCorrect: false
       explanation: "Threat modeling indicates areas of the system that need verification after mitigation is applied but isn't limited to manual testing."
-    - content: "Helps to identify an accountable person who will be to blame if a security incident."
+    - content: "Helps to identify an accountable person who is to blame when a security incident happens."
       isCorrect: false
       explanation: "Avoid blame culture in your organizations. Learn from mistakes to prevent them from occurring in the future."
     - content: "Improves understand of security threats to a system, determine risks from those threats, and establish appropriate mitigations."

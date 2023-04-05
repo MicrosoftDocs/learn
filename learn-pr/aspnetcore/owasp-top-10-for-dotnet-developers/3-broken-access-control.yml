@@ -37,6 +37,6 @@ quiz:
     - content: "A vulnerability that allows an attacker to bypass access controls."
       isCorrect: false
       explanation: "Correct but not entirely."
-    - content: "All of the above."
+    - content: "All answers are correct."
       isCorrect: true
       explanation: "Correct. Broken Access Control is a vulnerability that allows an attacker to access restricted information, modify or delete restricted information, and bypass access controls."
