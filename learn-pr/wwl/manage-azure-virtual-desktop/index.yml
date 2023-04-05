@@ -3,7 +3,7 @@ uid: learn.wwl.manage-azure-virtual-desktop
 metadata:
   title: MD-102 5-Manage Azure virtual desktop
   description: "Learn to manage Azure Virtual Desktop, a cloud-based VDI solution providing personalized, secure Windows 10 experiences. Understand key features, management, security, and deployment options for optimizing your environment."
-  ms.date: 04/04/2023
+  ms.date: 04/05/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
@@ -33,7 +33,7 @@ units:
 - learn.wwl.manage-azure-virtual-desktop.examine-azure-virtual-desktop
 - learn.wwl.manage-azure-virtual-desktop.explore-azure-virtual-desktop
 - learn.wwl.manage-azure-virtual-desktop.configure-azure-virtual-desktop
-- learn.wwl.manage-azure-virtual-desktop.administor-azure-virtual-desktop
+- learn.wwl.manage-azure-virtual-desktop.administer-azure-virtual-desktop
 - learn.wwl.manage-azure-virtual-desktop.knowledge-check
 - learn.wwl.manage-azure-virtual-desktop.summary
 badge:
