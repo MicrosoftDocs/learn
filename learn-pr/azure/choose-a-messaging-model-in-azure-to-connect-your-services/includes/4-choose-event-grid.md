@@ -1,21 +1,21 @@
 Many applications use a publish-subscribe model to notify distributed components that something happened, or that some object changed. Suppose you have a music-sharing application with a Web API that runs in Azure. When a user uploads a new song, you need to notify all the mobile apps installed on user devices around the world who are interested in that genre.
 
-In this architecture, the publisher of the sound file doesn't need to know about any of the subscribers interested in the shared music. Also, we want to have a one-to-many relationship where we can have multiple subscribers who can optionally decide whether they are interested in this new song. Azure Event Grid is a perfect solution for this sort of architecture.
+In this architecture, the publisher of the sound file doesn't need to know about any of the subscribers interested in the shared music. Also, we want to have a one-to-many relationship where we can have multiple subscribers who can optionally decide whether they're interested in this new song. Azure Event Grid is a perfect solution for this sort of architecture.
 
 ## What is Azure Event Grid?
-Azure [Event Grid](https://azure.microsoft.com/services/event-grid/) is a fully-managed event routing service running on top of Azure [Service Fabric](https://azure.microsoft.com/services/service-fabric/). Event Grid distributes _events_ from different sources, such as Azure [Blob storage accounts](https://azure.microsoft.com/services/storage/blobs/) or Azure [Media Services](https://azure.microsoft.com/services/media-services/), to different handlers, such as Azure [Functions](https://azure.microsoft.com/services/functions/) or Webhooks. Event Grid was created to make it easier to build event-based and serverless applications on Azure.
+Azure [Event Grid](https://azure.microsoft.com/services/event-grid/) is a fully managed event routing service running on top of Azure [Service Fabric](https://azure.microsoft.com/services/service-fabric/). Event Grid distributes _events_ from different sources, such as Azure [Blob storage accounts](https://azure.microsoft.com/services/storage/blobs/) or Azure [Media Services](https://azure.microsoft.com/services/media-services/), to different handlers, such as Azure [Functions](https://azure.microsoft.com/services/functions/) or Webhooks. Event Grid was created to make it easier to build event-based and serverless applications on Azure.
 
 Event Grid supports most Azure services as a publisher or subscriber and can be used with third-party services. It provides a dynamically scalable, low-cost, messaging system that allows publishers to notify subscribers about a status change. The following illustration shows Azure Event Grid receiving messages from multiple sources and distributing them to event handlers based on subscription.
 
 There are several concepts in Azure Event Grid that connect a source to a subscriber:
 
-- **Events:** What happened.
-- **Event sources:** Where the event took place.
-- **Topics:** The endpoint where publishers send events.
-- **Event subscriptions:** The endpoint or built-in mechanism to route events, sometimes to multiple handlers. Subscriptions are also used by handlers to filter incoming events intelligently.
-- **Event handlers:** The app or service reacting to the event.
+- **Events:** What happened
+- **Event sources:** Where the event took place
+- **Topics:** The endpoint where publishers send events
+- **Event subscriptions:** The endpoint or built-in mechanism to route events, sometimes to multiple handlers. Subscriptions are also used by handlers to filter incoming events intelligently
+- **Event handlers:** The app or service reacting to the event
 
-The following illustration shows an Azure Event Grid positioned between multiple event sources and multiple event handlers. The event sources send events to the Event Grid and the Event Grid forwards relevant events to the subscribers. Event Grid use topics to decide which events to send to which handlers. Events sources tag each event with one or more topics, and event handlers subscribe to the topics they are interested in.
+The following illustration shows an Azure Event Grid positioned between multiple event sources and multiple event handlers. The event sources send events to the Event Grid and the Event Grid forwards relevant events to the subscribers. Event Grid use topics to decide which events to send to which handlers. Events sources tag each event with one or more topics, and event handlers subscribe to the topics they're interested in.
 
 ![Diagram of various event sources sending messages as topics to the Event Grid which in turn sends messages to subscribing event handlers.](../media/4-event-grid.png)
 
@@ -44,7 +44,7 @@ The following illustration shows an Azure Event Grid positioned between multiple
 | **topic** | The full resource path to the event source. Event Grid provides this value. |
 | **subject** | Publisher-defined path to the event subject. |
 | **id** | The unique identifier for event. |
-| **eventType** | One of the registered event types for this event source. This is a value you can create filters against, e.g. `CustomerCreated`, `BlobDeleted`, `HttpRequestReceived`, etc. |
+| **eventType** | One of the registered event types for this event source. You can create filters against this value, for example, `CustomerCreated`, `BlobDeleted`, `HttpRequestReceived`, etc. |
 | **eventTime** | The time the event was generated based on the provider's UTC time. |
 | **data** | Specific information that is relevant to the type of event. For example, an event about a new file being created in Azure Storage has details about the file, such as the `lastTimeModified` value. Or, an Event Hubs event has the URL of the Capture file. This field is optional. |
 | **dataVersion** | The schema version of the data object. The publisher defines the schema version. |
@@ -56,7 +56,7 @@ The following illustration shows an Azure Event Grid positioned between multiple
 ### What is an event source?
 Event sources are responsible for sending events to Event Grid. Each event source is related to one or more event types. For example, Azure Storage is the event source for blob created events. IoT Hub is the event source for device created events. Your application is the event source for custom events that you define. We'll look at event sources in more detail in a moment.
 
-Azure Event Grid has the concept of an event publisher that's often confused with the event source. An **event publisher** is the user or organization that decides to send events to Event Grid. For example, Microsoft publishes events for several Azure services. You can publish events from your own application. Organizations that host services outside of Azure can publish events through Event Grid. The **event source** is the specific service generating the event for that publisher. Although the two terms are slightly different, for the purposes this unit we will use "publisher" and "event source" interchangeably to represent the *entity sending the message* to Event Grid.
+Azure Event Grid has the concept of an event publisher that's often confused with the event source. An **event publisher** is the user or organization that decides to send events to Event Grid. For example, Microsoft publishes events for several Azure services. You can publish events from your own application. Organizations that host services outside of Azure can publish events through Event Grid. The **event source** is the specific service generating the event for that publisher. Although the two terms are slightly different, for the purposes this unit we'll use "publisher" and "event source" interchangeably to represent the *entity sending the message* to Event Grid.
 
 ### What is an event topic?
 Event topics categorize events into groups. Topics are represented by a public endpoint and are where the event source sends events _to_. When designing your application, you can decide how many topics to create. Larger solutions will create a custom topic for each category of related events, while smaller solutions might send all events to a single topic. For example, consider an application that sends events related to modifying user accounts and processing orders. It's unlikely any event handler wants both categories of events. Create two custom topics and let event handlers subscribe to the one that interests them. Event subscribers can filter for the event types they want from a specific topic.
@@ -79,11 +79,11 @@ An event handler (sometimes referred to as an event "subscriber") is any compone
 Events can be generated by the following Azure resource types:
 
 ### Azure services that support system topics
-Here're a few Azure services that support system topics. For the full list of Azure services that support system topics, see [this article](/azure/event-grid/system-topics).
+Here are a few Azure services that support system topics. For the full list of Azure services that support system topics, see [this article](/azure/event-grid/system-topics).
 
 - **Azure Subscriptions and Resource Groups:** Subscriptions and resource groups generate events related to management operations in Azure. For example, when a user creates a virtual machine, this source generates an event.
 - **Container registry:** The Azure Container Registry service generates events when images in the registry are added, removed, or changed.
-- **Event Hubs:** Event Hubs can be used to process and store events from a variety of data sources - typically logging or telemetry related. Event Hubs can generate events to Event Grid when files are captured.
+- **Event Hubs:** Event Hubs can be used to process and store events from various data sources - typically logging or telemetry related. Event Hubs can generate events to Event Grid when files are captured.
 - **Service Bus:** Service bus can generate events to Event Grid when there are active messages with no active listeners.
 - **Storage accounts:** Storage accounts can generate events when users add blobs, files, table entries, or queue messages. You can use both blob accounts and General-purpose V2 accounts as event sources.
 - **Media Services:** Media Services hosts video and audio media and provides advanced management features for media files. Media Services can generate events when an encoding job is started or completed on a video file.
@@ -105,14 +105,14 @@ The following object types in Azure can receive and handle events from Event Gri
 - **Event Hubs**: Use Event Hubs when your solution gets events from Event Grid faster than it can process the events. Once the events are in an event hub, your application can process events from the event hub at its own schedule. 
 - **Service Bus**: You can use a Service queue or topic as a handler for events from Event Grid. 
 - **Storage queues**: Use Queue Storage to receive events that need to be pulled. You might use Queue storage when you have a long running process that takes too long to respond. By sending events to Queue storage, the app can pull and process events on its own schedule.
-- **Microsoft Power Automate:** Flow also hosts workflows, but it is easier for non-technical staff to use.
+- **Microsoft Power Automate:** Flow also hosts workflows, but it's easier for nontechnical staff to use.
 
 For more information, see [Event Handlers](/azure/event-grid/overview#event-handlers).
 
 ## Should you use Event Grid?
 Use Event Grid when you need these features:
 
-- **Simplicity:** It is straightforward to connect sources to subscribers in Event Grid.
+- **Simplicity:** It's straightforward to connect sources to subscribers in Event Grid.
 - **Advanced filtering:** Subscriptions have close control over the events they receive from a topic.
 - **Fan-out:** You can subscribe to an unlimited number of endpoints to the same events and topics.
 - **Reliability:** Event Grid retries event delivery for up to 24 hours for each subscription.

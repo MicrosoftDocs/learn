@@ -1,6 +1,6 @@
 An Azure Kubernetes Service (AKS) cluster blocks all inbound traffic from the internet to the cluster to assure network security. Deployed workloads in Kubernetes are, by default, only accessible from inside the cluster. To expose the applications to the outside world, you need to open specific ports and forward them to your services.
 
-The configuration of ports and port forwarding in Kubernetes is different from what you might be used to in other environments. On a virtual machine (VM), you'll configure the OS-level firewall to allow inbound traffic to port 443 and allow HTTPS web traffic. In Kubernetes, the control plane manages network configuration based on declarative instructions you provide.
+The configuration of ports and port forwarding in Kubernetes is different from what you might be used to in other environments. On a virtual machine (VM), configure the OS-level firewall to allow inbound traffic to port 443 and allow HTTPS web traffic. In Kubernetes, the control plane manages network configuration based on declarative instructions you provide.
 
 ## Networks in Kubernetes
 
@@ -24,10 +24,10 @@ A Kubernetes service needs four pieces of information to route traffic.
 
 | Information | Description |
 | --- | --- |
-| **Target resource** | The target resource is defined by the `selector` key in the service manifest file. This value selects all the resources with a given label onto a single IP address. |
+| **Target resource** | The `selector` key in the service manifest file defines the target resource. This value selects all the resources with a given label onto a single IP address. |
 | **Service port** | This port is the inbound port for your application. All the requests come to this port from where the service forwards the requests to the resource. |
-| **Network protocol**| This value identifies the network protocol for which the service will forward network data. |
-| **Resource port** | This value identifies the port on the target resource on which incoming requests are received. This port is defined by the `targetPort` key in the service manifest file.
+| **Network protocol**| This value identifies the network protocol for which the service forwards network data. |
+| **Resource port** | This value identifies the port on the target resource on which incoming requests are received. The `targetPort` key in the service manifest file defines this port.
 
 ## Kubernetes service types
 
@@ -85,7 +85,7 @@ This example defines a rule that allows all traffic using the address `example.c
 
 ## What is an annotation?
 
-An annotation allows you to attach non-identifying metadata, such as ingress configurations, for workloads. You can think of the annotation as an internal label that defines specific configurations for resources. For example, you might want to use a specific ingress controller that supports name rewriting or payload limiting.
+An annotation allows you to attach nonidentifying metadata, such as ingress configurations, for workloads. You can think of the annotation as an internal label that defines specific configurations for resources. For example, you might want to use a specific ingress controller that supports name rewriting or payload limiting.
 
 Here's an example of the annotation in a manifest file that specifies the use of the HTTP application routing add-on.
 
