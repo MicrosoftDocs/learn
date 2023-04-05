@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-azure-virtual-desktop.explore-azure-virtual-desktop
+title: Explore Azure Virtual Desktop
+metadata:
+  title: Explore Azure Virtual Desktop
+  description: "Explore Azure Virtual Desktop"
+  ms.date: 04/05/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-explore-azure-virtual-desktop.md)]
