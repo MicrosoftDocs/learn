@@ -13,5 +13,5 @@ Azure Firewall instances.
 
 In this unit, you'll use the "rule" feature instead of the "Azure Firewall policy" feature. However, using the "Azure Firewall policy" feature is recommended for enterprise-grade deployments as it offers better scalability and manageability. Defining firewall rules for Azure VMware Solution involves the workload segment IP address space, protocol, and ports. For destination type, select "IP Address". For destination address space, choose "\*" and for destination ports, choose "\*" or specific ports such as 80, 443. etc.
 
-:::image type="content" source="../media/10-network-rules.png" alt-text="Screenshot of Azure Firewall network rule. The menu entry titled 'IP Addresses' highlight source and destination addresses." lightbox="./media/10-network-rules.png":::
+:::image type="content" source="../media/10-network-rules.png" alt-text="Screenshot of Azure Firewall network rule. The menu entry titled 'IP Addresses' highlight source and destination addresses." lightbox="../media/10-network-rules.png":::
 
