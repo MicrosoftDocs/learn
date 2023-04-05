@@ -48,7 +48,7 @@ An incident is created when an alert that you've enabled is triggered. In Micros
 
 With the ability to respond to incidents automatically, you can automate some of your security operations and make your SOC more productive. Microsoft Sentinel allows you to create automated workflows, or *playbooks*, in response to events. This functionality could be used for incident management, enrichment, investigation, or remediation. These capabilities are often referred to as *security orchestration, automation, and  response (SOAR)*.
 
-:::image type="content" source="../media/03-logic-apps.png" alt-text="Screenshot showing an Microsoft Sentinel Automation, with the Create options highlighted." lightbox="../media/03-logic-apps.png":::
+:::image type="content" source="../media/03-logic-apps.png" alt-text="Screenshot showing a Microsoft Sentinel Automation, with the Create options highlighted." lightbox="../media/03-logic-apps.png":::
 
 As the SOC Analyst, you now start to see how Microsoft Sentinel might help you achieve your goals. For example, you could:
 
