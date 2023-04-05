@@ -28,4 +28,4 @@ quiz:
       explanation: "Because they're done so infrequently, there's only small amounts of effort put into repeatability."
     - content: "It's complex"
       isCorrect: true
-      explanation: 'Because of the size and infrequency, they're often complex.'
+      explanation: 'Because of the size and infrequency, they are often complex.'
