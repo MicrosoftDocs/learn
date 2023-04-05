@@ -146,7 +146,7 @@ To create the workload identities, the Azure CLI commands use `jq` to parse data
 
 ::: zone pivot="powershell"
 
-1. Run the code below to define variables for your GitHub username and your repository name. Ensure that you replace `mygithubuser` with your GitHub username, which you noted earlier in this exercise. Also ensure that you specify the correct GitHub repository name.
+1. Run the following code to define variables for your GitHub username and your repository name. Ensure that you replace `mygithubuser` with your GitHub username, which you noted earlier in this exercise. Also ensure that you specify the correct GitHub repository name.
 
    ```azurepowershell
    $githubOrganizationName = 'mygithubuser'

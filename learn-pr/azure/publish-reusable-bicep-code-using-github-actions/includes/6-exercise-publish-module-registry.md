@@ -39,7 +39,7 @@ Before you can publish modules, you need to create a registry for your organizat
 
    :::image type="content" source="../media/6-registry-created.png" alt-text="Screenshot of the Azure portal that shows the container registry deployment, with the button for going to a resource highlighted.":::
 
-1. In the container registry's **Overview** area, note the value of the **Login server** setting. It will look like _yourregistryname.azurecr.io_.
+1. In the container registry's **Overview** area, note the value of the **Login server** setting. The name is like _yourregistryname.azurecr.io_.
 
    :::image type="content" source="../media/6-registry-login-server.png" alt-text="Screenshot of the Azure portal that shows the container registry's details, with the login server highlighted.":::
 
@@ -59,7 +59,7 @@ In the preceding unit, you learned about the importance of having a versioning s
 
    :::code language="json" source="code/6-metadata.json" :::
 
-   Notice that in the metadata file, you separately define the major and minor version numbers. Your workflow will combine these numbers, along with the workflow's run number, into a complete version number each time the workflow runs.
+   Notice that in the metadata file, you separately define the major and minor version numbers. Your workflow combines these numbers with the workflow's run number, into a complete version number, each time the workflow runs.
 
 1. Save your changes to the file.
 
@@ -75,7 +75,7 @@ Your repository contains a draft of a workflow that you can use as a starting po
 
 1. Update the value of the `MODULE_REGISTRY_SERVER` environment variable to your container registry's server name. You copied that name earlier in this exercise.
 
-   For example, if your registry's login server is _yourregistryname.azurecr.io_, line 18 will look like this:
+   For example, if your registry's login server is _yourregistryname.azurecr.io_, your code is like this example:
 
    :::code language="yaml" source="code/6-workflow.yml" range="16-20" highlight="3" :::
 
@@ -99,7 +99,7 @@ Now, you can add a second job to publish the module to your container registry.
 
    The step runs a script that uses the jq command-line application to parse the JSON file.
 
-1. Below the step that you just created, add a step to publish the module to the registry.
+1. After the step that you created, add a step to publish the module to the registry.
 
    :::code language="yaml" source="code/6-workflow.yml" range="46-52" :::
 
@@ -179,7 +179,7 @@ Remove-AzResourceGroup -Name ToyReusable -Force
 
 ::: zone-end
 
-You can also clean up the GitHub secrets and repository, and the Azure workload identities.
+You can also remove the GitHub secrets and repository, and the Azure workload identities.
 
 - GitHub secrets
   1. From the GitHub repository, go to **Settings** > **Secrets and variables** > **Actions**.
@@ -192,7 +192,7 @@ You can also clean up the GitHub secrets and repository, and the Azure workload 
 - Azure App registration's federated credentials and service principal.
   1. From the portal home page, search for _Azure Active Directory_ and select it from the list of **Services**.
   1. Go to **Manage** > **App registrations**.
-  1. In **Owned applications** select **toy-website-auto-review**.
+  1. In **Owned applications** select **toy-reusable**.
   1. Select **Delete** and follow the prompts.
   1. Select **Deleted applications** to permanently delete the app registration.
 

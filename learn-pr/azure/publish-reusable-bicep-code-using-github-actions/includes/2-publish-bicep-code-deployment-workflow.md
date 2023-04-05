@@ -4,7 +4,7 @@ When you automate the publishing process for a template spec or a Bicep module, 
 
 Bicep enables you to easily reuse your code. Two common approaches for reusing your Bicep code across deployments are:
 
-- **Template specs**, which are optimized for the deployment of complete solutions. For example, suppose you've defined a set of security-hardened resources to deploy a complete virtual machine according to your company's specifications. You could publish this as a template spec. Your colleagues could then use your template spec to deploy a complete virtual machine, even from the Azure portal.
+- **Template specs**, which are optimized for the deployment of complete solutions. For example, suppose you've defined a set of security-hardened resources to deploy a complete virtual machine according to your company's specifications. You could publish this code as a template spec. Your colleagues could then use your template spec to deploy a complete virtual machine, even from the Azure portal.
 - **Modules**, which are designed to be components of other deployments. For example, suppose you've created a Bicep file that creates a storage account. You're likely to need storage accounts in many other deployments, so you could publish the Bicep file to a registry and use it as a module throughout your organization's deployments.
 
 When you're deciding between template specs and Bicep modules, a good rule of thumb is: if the template is going to be deployed as is throughout your organization, template specs are probably a good fit. But if you're likely to reuse this template within multiple parent templates, Bicep modules might serve your needs better.
