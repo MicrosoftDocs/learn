@@ -15,29 +15,29 @@ Azure AD Password Protection is designed with the following principles in mind:
 
 The tasks in this exercise and the exercises in this learning path require you to already have and Azure subscription that you can use or to sign up for an Azure trial account. If you already have your own Azure subscription, you may skip this task and continue to the next.
 
-1. In a web browser, go to the [Azure portal](https://azure.microsoft.com/free/).
-1. Scroll down through the page to learn more about the benefits and free services available.
-1. Select **Start free**.
-1. Use the wizard to sign up for your Azure trial subscription.
-1. You'll need to an Azure AD P2 license to complete some of the exercises. In the organization you created, search for and then select **Azure Active Directory**.
-1. In the left navigation menu, select **Getting started**.
-1. Under Getting started with Azure AD, select **Get a free trial for Azure AD Premium**.
-1. In the Activate pane, under **AZURE AD PREMIUM P2**, select **Free trial** and then select **Activate**.
-1. In the navigation menu on the left, select **Overview**.
-1. Refresh the browser until you see Azure AD Premium P2 under the organization name. It may take a couple of minutes.
-1. You may need to sign out and sign back into Microsoft Azure if you encounter any problems with expected features not being available.
+1.  In a web browser, go to the [Azure portal](https://azure.microsoft.com/free/).
+2.  Scroll down through the page to learn more about the benefits and free services available.
+3.  Select **Start free**.
+4.  Use the wizard to sign up for your Azure trial subscription.
+5.  You'll need to an Azure AD P2 license to complete some of the exercises. In the organization you created, search for and then select **Azure Active Directory**.
+6.  In the left navigation menu, select **Getting started**.
+7.  Under Getting started with Azure AD, select **Get a free trial for Azure AD Premium**.
+8.  In the Activate pane, under **AZURE AD PREMIUM P2**, select **Free trial** and then select **Activate**.
+9.  In the navigation menu on the left, select **Overview**.
+10. Refresh the browser until you see Azure AD Premium P2 under the organization name. It may take a couple of minutes.
+11. You may need to sign out and sign back into Microsoft Azure if you encounter any problems with expected features not being available.
 
 ## How Azure AD Password Protection works
 
 The on-premises Azure AD Password Protection components work as follows:
 
-1. Each Azure AD Password Protection proxy-service-instance advertises itself to the DCs in the forest by creating a *serviceConnectionPoint* object in Active Directory.
-1. Each DC Agent service for Azure AD Password Protection also creates a *serviceConnectionPoint* object in Active Directory. This object is used primarily for reporting and diagnostics.
-1. The DC Agent service is responsible for initiating the download of a new password policy from Azure AD. The first step is to locate an Azure AD Password Protection proxy-service by querying the forest for proxy *serviceConnectionPoint* objects.
-1. When an available proxy service is found, the DC Agent sends a password policy download request to the proxy service. The proxy service in turn sends the request to Azure AD, and then returns the response to the DC Agent service.
-1. After the DC Agent service receives a new password policy from Azure AD, the service stores the policy in a dedicated folder at the root of its domain *sysvol* folder share. The DC Agent service also monitors this folder in case newer policies replicate in from other DC Agent services in the domain.
-1. The DC Agent service always requests a new policy at service startup. After the DC Agent service is started, it checks the age of the current locally available policy hourly. If the policy is older than one hour, the DC Agent requests a new policy from Azure AD via the proxy service, as described previously. If the current policy isn't older than one hour, the DC Agent continues to use that policy.
-1. When password change events are received by a DC, the cached policy is used to determine if the new password is accepted or rejected.
+1.  Each Azure AD Password Protection proxy-service-instance advertises itself to the DCs in the forest by creating a *serviceConnectionPoint* object in Active Directory.
+2.  Each DC Agent service for Azure AD Password Protection also creates a *serviceConnectionPoint* object in Active Directory. This object is used primarily for reporting and diagnostics.
+3.  The DC Agent service is responsible for initiating the download of a new password policy from Azure AD. The first step is to locate an Azure AD Password Protection proxy-service by querying the forest for proxy *serviceConnectionPoint* objects.
+4.  When an available proxy service is found, the DC Agent sends a password policy download request to the proxy service. The proxy service in turn sends the request to Azure AD, and then returns the response to the DC Agent service.
+5.  After the DC Agent service receives a new password policy from Azure AD, the service stores the policy in a dedicated folder at the root of its domain *sysvol* folder share. The DC Agent service also monitors this folder in case newer policies replicate in from other DC Agent services in the domain.
+6.  The DC Agent service always requests a new policy at service startup. After the DC Agent service is started, it checks the age of the current locally available policy hourly. If the policy is older than one hour, the DC Agent requests a new policy from Azure AD via the proxy service, as described previously. If the current policy isn't older than one hour, the DC Agent continues to use that policy.
+7.  When password change events are received by a DC, the cached policy is used to determine if the new password is accepted or rejected.
 
 To protect your on-premises Active Directory Domain Services (AD DS) environment, you can install and configure Azure AD Password Protection to work with your on-premises DC. This unit shows you how to install and register the Azure AD Password Protection proxy-service and Azure AD Password Protection DC agent in your on-premises environment.
 

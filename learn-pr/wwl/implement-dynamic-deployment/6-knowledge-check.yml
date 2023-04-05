@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-dynamic-deployment.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/05/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "As the Desktop Administrator for Fabrikam, Holly Spencer wants to deploy a provisioning package to apply configuration settings to the new batch of Windows 11 computers that Fabrikam recently purchased. Holly configured the settings in the provisioning package using the Windows Configuration Designer tool. What's the next step that Holly must complete as part of the provisioning process?"
+    choices:
+    - content: "Add the provisioning package in the Settings app"
+      isCorrect: false
+      explanation: "Incorrect. This action is a method of applying the provisioning package, but it isn't the next step in the provisioning process. Try again."
+    - content: "Run the Add-ProvisioningPackage Windows PowerShell cmdlet"
+      isCorrect: false
+      explanation: "Incorrect. This action is a method of applying the provisioning package, but it isn't the next step in the provisioning process. Try again."
+    - content: "Export the provisioning package to a .ppkg file"
+      isCorrect: true
+      explanation: "Correct. After you configure the settings in the provisioning package, you export the package to a .ppkg file. During the export, you can choose to encrypt the package and sign it. If the provisioning package is signed, you can allow only packages that are trusted to be applied on a client computer."
+  - content: "Contoso wants to use Microsoft Volume Licensing to activate the Windows 11 subscriptions that it recently purchased. Contoso wants to use the volume activation method that uses product keys that can activate a specific number of computers. Which volume activation method is this?"
+    choices:
+    - content: "KMS"
+      isCorrect: false
+      explanation: "Incorrect. The Key Management Service (KMS) method is a role service that you can use to activate systems within your network from a computer where a KMS host has been installed. By default, volume editions of Windows connect to a system that hosts the KMS service to request activation. No action is required from users. Try again."
+    - content: "MAK"
+      isCorrect: true
+      explanation: "Correct. The Multiple Activation Key (MAK) method of activation uses product keys that can activate a specific number of computers. You can use MAKs to activate any Windows volume edition."
+    - content: "Active Directory-based activation"
+      isCorrect: false
+      explanation: "Incorrect. This method is a role service that allows you to use AD DS to store activation objects, which can help simplify the maintenance of volume activation services for a network. When you use Active Directory-based activation, you do not need a host server, as in KMS, and activation requests process during client computer startup."
