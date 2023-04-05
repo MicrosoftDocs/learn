@@ -5,15 +5,16 @@ You receive an email notification upon detection of anomalous database activitie
 
 **Example:** Email notification providing information on a suspicious security event.
 
-**Click** the **View recent SQL alerts** link in the email to launch the Azure portal and show the Microsoft Defender for Cloud alerts page, which provides an overview of active threats detected on the database.
-
 :::image type="content" source="../media/azure-sql-database-security-event-notification-82a0f8fa.png" alt-text="Screenshot showing an example of a recent SQL alert.":::
 
 
-**Click** a specific alert to get additional details and actions for investigating this threat and remediating future threats.
+**Click** the **View recent SQL alerts** link in the email to launch the Azure portal and show the Microsoft Defender for Cloud alerts page, which provides an overview of active threats detected on the database.
 
-:::image type="content" source="../media/sql-alert-additional-detail-example-28714e2b.png":::
-**For example**, SQL injection is one of the most common Web application security issues on the Internet that is used to attack data-driven applications. Attackers take advantage of application vulnerabilities to inject malicious SQL statements into application entry fields, breaching or modifying data in the database. For SQL Injection alerts, the alert's details include the vulnerable SQL statement that was exploited.<br>
+:::image type="content" source="../media/viewing-recent-sql-alert-notification-257aeb10.png" alt-text="Screenhost showing an example of viewing a recent SQL alert.":::
+**Click** a specific alert to get additional details and actions for investigating this threat and remediating future threats.<br>
+
+:::image type="content" source="../media/veiwing-specific-alert-details-and-actions-2403eebd.png" alt-text="Screenhsot showing an example of viewing a specific alert to get additional details and actions.":::
+**For example**, SQL injection is one of the most common Web application security issues on the Internet that is used to attack data-driven applications. Attackers take advantage of application vulnerabilities to inject malicious SQL statements into application entry fields, breaching or modifying data in the database. For SQL Injection alerts, the alert's details include the vulnerable SQL statement that was exploited.
 
 :::image type="content" source="../media/potential-sql-injection-20cd8bc7.png" alt-text="Screenshot showing an example of a potential SQL injection.":::
 
