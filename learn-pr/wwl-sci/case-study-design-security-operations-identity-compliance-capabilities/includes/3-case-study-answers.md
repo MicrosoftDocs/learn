@@ -137,7 +137,7 @@ Azure AD offers a range of services that contribute to enhanced security in hybr
 
 ### What are the AD DS-specific benefits provided by Azure AD in hybrid scenarios?
 
-Users often create passwords that use common local words such as a school, sports team, or famous person. These passwords are easy to guess and vulnerable to dictionary-based attacks. To enforce strong passwords in your organization, Azure AD Password Protection provides a global and custom banned password list. A password change request fails if there's a match in these banned password list. 
+Users often create passwords that use common local words such as a school, sports team, or famous person. These passwords are easy to guess and vulnerable to dictionary-based attacks. To enforce strong passwords in your organization, Azure AD Password Protection provides a global and custom banned password list. A password change request fails if there's a match in these banned password lists. 
 
 Azure AD Password Protection detects and blocks known weak passwords and their variants, and can also block additional weak terms that are specific to your organization. On-premises deployment of Azure AD Password Protection uses the same global and custom banned password lists that are stored in Azure AD, and performs the same checks for on-premises password changes as Azure AD does for cloud-based changes. These checks take place during password changes and password reset events against on-premises Active Directory domain controllers.
 
