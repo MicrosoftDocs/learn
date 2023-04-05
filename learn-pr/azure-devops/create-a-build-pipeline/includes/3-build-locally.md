@@ -22,7 +22,7 @@ Mara is going to do exactly that, and by following the procedures, you can do th
 
 1. Select the following scope: **Agent Pools (Read & manage)**, and choose **Create**.
 
-    :::image type="content" source="../media/3-agent-pools-read-and-manage.png" alt-text="Screenshot of selecting aget pool permissions for a personal access token.":::
+    :::image type="content" source="../media/3-agent-pools-read-and-manage.png" alt-text="Screenshot of selecting agent pool permissions for a personal access token.":::
 
 1. When you're done, copy the token and store it in a secure location. For your security, it won't be shown again.
 
@@ -33,7 +33,7 @@ Mara is going to do exactly that, and by following the procedures, you can do th
 
 The first step to using a project in Git is to create a fork so you can work with and modify the source files. A *fork* is a copy of a GitHub repository. The copy exists in your account and lets you make any changes you want without affecting the original project.
 
-Although you can propose changes to the original project, in this lesson, you'll work with the *Space Game* web project as though it was the original project owned by Mara and her team.
+Although you can propose changes to the original project, in this lesson, you'll work with the *Space Game* web project as though it was the original project owned by Mara and the team.
 
 > [!NOTE]
 > If you have previously forked this repository, for example if you have previously completed this module or another Tailspin Toys training module, we recommend that you [delete your fork](https://docs.github.com/repositories/creating-and-managing-repositories/deleting-a-repository) and create a new fork using the following steps. If you don't want to delete your fork, ensure that you [sync your fork](https://docs.github.com/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork).
@@ -62,9 +62,9 @@ Before you create your Codespace, you'll create three secrets that help your sel
 
     |Name  |Value  |
     |---------|---------|
-    |ADO_ORG     |   Name of the Azure DevOps organization you're using to complete this module. In this example, `fabrikam` is the name of the orgnization.    |
+    |ADO_ORG     |   Name of the Azure DevOps organization you're using to complete this module. In this example, `fabrikam` is the name of the organization.    |
     |ADO_PAT     |   The Personal Access Token that you created in the previous step.     |
-    |ADO_POOL_NAME     |   Name of the agent pool for your agent. Specify `Default` to use the default agent pool. If you use a name other than `Default`, you need to [create a new agent pool](/azure/devops/pipelines/agents/pools-queues) and provide tha name of the new agent pool for this value. | 
+    |ADO_POOL_NAME     |   Name of the agent pool for your agent. Specify `Default` to use the default agent pool. If you use a name besides `Default`, you need to [create a new agent pool](/azure/devops/pipelines/agents/pools-queues) and provide the name of the new agent pool for this value. | 
     
 ## Set up Codespaces
 
@@ -206,7 +206,7 @@ Now, you'll get the source code from GitHub and set up Visual Studio Code so tha
 
 The first step to using a project in Git is to create a fork so you can work with and modify the source files. A *fork* is a copy of a GitHub repository. The copy exists in your account and lets you make any changes you want without affecting the original project.
 
-Although you can propose changes to the original project, in this lesson, you'll work with the *Space Game* web project as though it was the original project owned by Mara and her team.
+Although you can propose changes to the original project, in this lesson, you'll work with the *Space Game* web project as though it was the original project owned by Mara and the team.
 
 Let's fork the *Space Game* web project into your GitHub account:
 

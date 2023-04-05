@@ -31,7 +31,7 @@ When you don't provide an initial YAML file for your project, Azure Pipelines ca
 
 1. On the **Review** tab, note the initial build configuration. This is a very basic configuration that Azure DevOps provides for you based on your app type, ASP.NET Core. The default configuration uses a Microsoft-hosted agent. 
 
-1. On the the **Review** tab, replace the text `vmImage: ubuntu-latest` with `name: Default` (or the name of your agent pool if you didn't specify `Default` when setting up the Codespaces Repository secrets). You set the name of your agent pool as a GitHub secret earlier.
+1. On the **Review** tab, replace the text `vmImage: ubuntu-latest` with `name: Default` (or the name of your agent pool if you didn't specify `Default` when setting up the Codespaces Repository secrets). You set the name of your agent pool as a GitHub secret earlier.
 
 1. Select **Save and run** to commit your changes to GitHub and start the build. Choose **Commit directly to the main branch**. If prompted to grant permission with a message like `This pipeline needs permission to access a resource before this run can continue`, choose **View** and follow the prompts to permit access.
 
@@ -75,11 +75,9 @@ When you don't provide an initial YAML file for your project, Azure Pipelines ca
 
 Under **Jobs**, select **Job**. Next, trace the build process through each of the steps. To see the job output as a text file when the build completes, you can also select **View raw log**.
 
-
-
 ::: zone pivot="github-codespaces-agent"
 
-If your pipeline does not start quickly, verify that Codespaces is still running. Codespaces will shutdown after 30 minutes and may need to be restarted.
+If your pipeline does not start quickly, verify that Codespaces is still running. Codespaces will shut down after 30 minutes and may need to be restarted.
 
 ::: zone-end
 
@@ -161,7 +159,7 @@ In practice, you might add build tasks one at a time, push up your changes, and 
 
     You can also define your own variables, which you'll do soon.
 
-    You might have also noticed the `UseDotNet@2` task, which is the first build step. Mara remembered that her build script didn't install the required build tools. Although the build agent comes with several .NET SDK versions, this task lets her easily specify the version she needs to use on the build agent.
+    You might have also noticed the `UseDotNet@2` task, which is the first build step. Mara remembered that the build script didn't install the required build tools. Although the build agent comes with several .NET SDK versions, this task lets the pipeline author easily specify the version they need to use on the build agent.
 
 1. From the integrated terminal, to add *azure-pipelines.yml* to the index, commit the change, and push the change up to GitHub, run the following Git commands. These steps are similar to the steps you performed earlier.
 
@@ -199,4 +197,4 @@ In practice, you might add build tasks one at a time, push up your changes, and 
 
 1. After your build is completed, select any of the steps to see the overall progression of the build. From there, you can jump to the build logs or the associated change on GitHub.
 
-    :::image type="content" source="../media/6-build-summary.png" alt-text="Screenshot of Azure Pipelines showing the complete list of build tasks. The Run gulp tasks task is selected.":::
+    :::image type="content" source="../media/6-build-summary.png" alt-text="Screenshot of Azure Pipelines showing the complete list of build tasks. The Run gulp task is selected.":::
