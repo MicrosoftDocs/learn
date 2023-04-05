@@ -9,25 +9,31 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 title: Build natural language solutions with Azure OpenAI
-summary: "TODO 2 sentences, 20-35 words, don't teach or motivate, avoid using 'learn', don't duplicate the title; see https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main"
+summary: This module provides engineers with the skills to begin building apps that integrate with the Azure OpenAI Service.
 abstract: |
   By the end of this module, you'll be able to:
-    - "TODO learning objective 1"
-    - "TODO learning objective 2"
-    - "TODO learning objective 3 (if needed; see https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=main)"
+    - Integrate Azure OpenAI into your application
+    - Differentiate between different endpoints available to your application
+    - Generate completions to prompts using the REST API and language specific SDKs
 prerequisites: |
-  - "TODO prerequisite 1"
-  - "TODO prerequisite 2"
-  - "TODO prerequisite 3 (if needed; see https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=main"
+  - Familiarity with Azure and the Azure portal.
+  - An understanding of generative AI. You can learn more with [Introduction to Azure OpenAI Service](/training/modules/explore-azure-openai/).
+  - Experience programming with C# or Python.
+  If you have no previous programming experience, we recommend you complete the [Take your first steps with C#](/training/paths/csharp-first-steps/) or [Take your first steps with Python](/training/paths/python-first-steps/) learning path before starting this one.
 iconUrl: /learn/achievements/generic-badge.svg
-levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
-  - beginner
-roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
+levels: 
+  - intermediate
+roles: 
+  - ai-engineer
   - developer
-products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
-  {{products}}
-subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
+  - solution-architect
+  - student
+products: 
+  - azure-openai
+  - azure
+subjects: 
   - cloud-computing
+  - data-ai
 units:
 - learn.wwl.build-language-solution-azure-openai.introduction
 - learn.wwl.build-language-solution-azure-openai.integrate-azure-openai-into-app
