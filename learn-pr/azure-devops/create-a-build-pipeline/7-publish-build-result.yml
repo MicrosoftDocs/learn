@@ -4,12 +4,13 @@ title: Exercise - Publish the result to the pipeline
 metadata:
   title: Exercise - Publish the result to the pipeline
   description: Publish your build artifact to the pipeline so others can access the build results.
-  ms.date: 01/13/2023
-  ms.custom: devdivchpfy22
+  ms.date: 04/04/2023
+  ms.custom: devdivchpfy22, engagement-fy23
   author: steved0x
   ms.author: sdanie
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  zone_pivot_groups: azure-pipelines-agent-hosting
 durationInMinutes: 10
 content: |
   [!include[](includes/7-publish-build-result.md)]

@@ -4,7 +4,7 @@ We use three core principles to approach inclusive design, creating the foundati
 
 The three principles are:
 
-- Recognizing inclusion
+- Recognizing exclusion
 - Solve for one, extend to many
 - Learn from diversity
 
