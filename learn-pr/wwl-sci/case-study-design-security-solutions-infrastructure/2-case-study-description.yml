@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.case-study-design-security-solutions-infrastructure.case-study-description
+title: "Case study description"
+metadata:
+  title: "Case study description"
+  description: "Case study description for: Design security operations, identity and compliance capabilities."
+  ms.date: 4/4/2023
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-case-study-description.md)]
