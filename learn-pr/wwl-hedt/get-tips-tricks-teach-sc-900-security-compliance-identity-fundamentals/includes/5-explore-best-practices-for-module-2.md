@@ -18,7 +18,7 @@ This module consists of four lessons:
 
 Module 2 Tips and Tricks
 
-- Describe the differences between Microsoft Azure Active Directory, part of Microsoft Entra and Active Directory, a service commonly used on-premise
+- Describe the differences between Microsoft Azure Active Directory, part of Microsoft Entra and Active Directory, a service commonly used on-premises
 - Practice the demos several times before you start the class to ensure you are familiar with the content 
 - Incorporate real-world experiences when discussing multi-factor authentication
 

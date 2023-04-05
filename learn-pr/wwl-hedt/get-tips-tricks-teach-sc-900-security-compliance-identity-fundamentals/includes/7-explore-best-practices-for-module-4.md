@@ -4,7 +4,7 @@ SC-900: Module 4 Describe the capabilities of Microsoft compliance solutions
 
 Module 4 Overview
 
-As you are preparing to teach this module, get familiar with what the students will learn during the module. In this module, students will learn about compliance solutions in Microsoft. Topics covered will include compliance center, information protection and governance in Microsoft 365, insider risk, audit, and eDiscovery solutions. Also covered are Azure resources governance capabilities.
+As you are preparing to teach this module, get familiar with what the students will learn during the module. In this module, students will learn about compliance solutions in Microsoft. Topics covered will include compliance portal, information protection and governance in Microsoft 365, insider risk, audit, and eDiscovery solutions. Also covered are Azure resources governance capabilities.
 
 This module consists of six lessons:
 
