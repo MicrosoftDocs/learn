@@ -1,4 +1,4 @@
-﻿The following steps explain how to create and configure Azure Route Server (ARS).  Here, you'll use Azure Command Line Interface (CLI). However, you can use Azure Portal, PowerShell or Terraform to achieve same effect.
+﻿The following steps explain how to create and configure Azure Route Server (ARS).  Here, you'll use Azure Command Line Interface (CLI). However, you can use Azure portal, PowerShell or Terraform to achieve same effect.
 
 ## Create Resource Group & Virtual Network
 It's recommended to deploy Azure VMware Solution private cloud as part of Azure Landing Zone Architecture. Using Landing Zone architecture helps to meet changing requirements effectively, meet governance requirements faster and promote reuse of shared services to drive cost optimization. In this architecture, a separate subscription is used to deploy Azure VMware Solution private cloud. Azure Landing Zone connectivity subscription should be used to deploy Azure Networking services such as Azure Route Server, Azure ExpressRoute Gateway, Azure Firewall, etc.

@@ -6,7 +6,7 @@ Azure VMware Solution private cloud contains a management segment which is used 
 
 ## Network paths in Azure
 
-Contoso has connected their Azure VMware Solution private cloud to Azure through an ExpressRoute gateway. This ExpressRoute gateway is deployed inside of a Hub Azure Virtual Network (VNet). Hub Azure VNet uses a private IP address space. Hub Azure VNet is also connected with an on-premises site through ExpressRoute gateway. Additionally, Hub Azure VNet is connected with other Azure VNets through Azure VNet Peering. Contoso are also planning to run their favourite NVA inside of hub VNet.
+Contoso has connected their Azure VMware Solution private cloud to Azure through an ExpressRoute gateway. This ExpressRoute gateway is deployed inside of a Hub Azure Virtual Network (VNet). Hub Azure VNet uses a private IP address space. Hub Azure VNet is also connected with an on-premises site through ExpressRoute gateway. Additionally, Hub Azure VNet is connected with other Azure VNets through Azure VNet Peering. Contoso are also planning to run their favorite NVA inside of hub VNet.
 
 ## Enabling network path exchange between Azure VMware Solution and Azure
 

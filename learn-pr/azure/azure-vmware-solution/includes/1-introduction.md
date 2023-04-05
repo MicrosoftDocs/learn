@@ -8,7 +8,7 @@ Contoso's network security team wants to implement the same network traffic insp
 
 Contoso's network security team wants to control outbound network traffic using their choice of Network Virtual Appliance (NVA). They need to route all outbound traffic through a firewall where rules can be configured to allow or deny traffic based upon protocol, port and IP addresses.
 
-:::image type="content" source="../media/1-azure-vmware-solution-network-connectivity.png" alt-text="Diagram that shows high level architecture of how Contoso wants to implement network traffic inspection.":::
+:::image type="content" source="../media/1-azure-vmware-solution-network-connectivity.png" alt-text="Diagram that shows high level architecture of how Contoso wants to implement network traffic inspection." lightbox="../media/1-azure-vmware-solution-network-connectivity.png":::
 
 ### What will we be doing?
 

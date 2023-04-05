@@ -55,12 +55,12 @@ Now, you're going to configure the FRR software.
 1. Run the script and wait until the script finishes in a minute or so.
 1. Ensure no errors are reported after execution.
 
-   :::image type="content" source="../media/9-screenshot1-config-frrouting-log.png" alt-text="Screenshot of script execution on NVA VM. Screenshot shows no error at the end of script execution.":::
+   :::image type="content" source="../media/9-config-frrouting-log.png" alt-text="Screenshot of script execution on NVA VM. Screenshot shows no error at the end of script execution.":::
 
 1. Run **sudo vtysh**
 1. Ensure FRR is running, and its command shell has started.
 
-   :::image type="content" source="../media/9-screenshot2-config-frrouting-cmd-shell.png" alt-text="Screenshot of sudo prompt on NVA VM. Screenshot shows command 'sudo vtysh' being executed.":::
+   :::image type="content" source="../media/9-config-frrouting-cmd-shell.png" alt-text="Screenshot of sudo prompt on NVA VM. Screenshot shows command 'sudo vtysh' being executed.":::
 
 ## Configure BGP neighbor and default route for the NVA
 
@@ -104,7 +104,7 @@ This step configures the FRR NVA to have Azure Route Server as its BGP neighbor.
 1. Run `show ip bgp` to confirm that the NVA hasn't learned routes yet except its own default route.
 1. Run `show ip bgp sum` to confirm that the NVA hasn't yet established BGP sessions.
 
-   :::image type="content" source="../media/9-screenshot3-config-bgp-showip-nosession.png" alt-text="Screenshot of command execution on NVA VM. Screenshot shows Azure Route Server as BGP neighbor for NVA.":::
+   :::image type="content" source="../media/9-config-bgp-showip-nosession.png" alt-text="Screenshot of command execution on NVA VM. Screenshot shows Azure Route Server as BGP neighbor for NVA.":::
 
 ## Configure Peering with Azure Route Server
 
@@ -121,11 +121,11 @@ The steps below will establish a BGP peer relationship between the FRR NVA and A
 1. Log into FRR shell.
 1. Run `show ip bgp` to confirm that the NVA has now learned routes from Azure Route Server.
 
-    :::image type="content" source="../media/9-screenshot4-config-bgp-showip-routes.png" alt-text="Screenshot of command execution on NVA VM. Screenshot shows Azure Route Server as next hop for AVS network.":::
+    :::image type="content" source="../media/9-config-bgp-showip-routes.png" alt-text="Screenshot of command execution on NVA VM. Screenshot shows Azure Route Server as next hop for AVS network.":::
 
-1. Ensure that Azure Firewall has direct internet connectivity. This can be done using Azure Portal by inspecting Route Table associated with Azure Firewall's subnet.
+1. Ensure that Azure Firewall has direct internet connectivity. This can be done using Azure portal by inspecting Route Table associated with Azure Firewall's subnet.
 
-    :::image type="content" source="../media/9-screenshot5-config-bgp-route-table.png" alt-text="Screenshot of Azure portal menu. The menu entry titled “ToInternet” route table highlights default route configured with Internet as next hop.":::
+    :::image type="content" source="../media/9-config-bgp-route-table.png" alt-text="Screenshot of Azure portal menu. The menu entry titled “ToInternet” route table highlights default route configured with Internet as next hop.":::
 
 At this point, you have configured Azure VMware Solution private cloud to implement a secure outbound internet connectivity. You deployed Azure Route Server for an effective route exchange between Azure VMware Solution private cloud and the NVA. You then deployed Azure Firewall as the exit point for all internet-bound traffic. This was followed-up by using FRR – a custom router, which injects default route with Azure Firewall as the next hop into Azure VMware Solution private cloud.
 
