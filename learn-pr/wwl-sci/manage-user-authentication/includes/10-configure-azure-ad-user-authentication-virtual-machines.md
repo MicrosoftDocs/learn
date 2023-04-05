@@ -28,8 +28,8 @@ To use Azure AD sign-in for Windows VM in Azure, you must:
 
 You can enable Azure AD sign-in for any of the supported Linux distributions mentioned using the Azure portal. As an example, to create an Ubuntu Server 18.04 Long Term Support (LTS) VM in Azure with Azure AD authentication:
 
-1. Sign into the Azure portal, with an account that has access to create VMs, and select + Create a resource.
-1. Select **Create** under Ubuntu Server 18.04 LTS in the Popular view.
-1. On the Management tab, Check the box to enable `Login with Azure Active Directory (Preview)`.
-1. Ensure System assigned managed identity is checked.
-1. Complete the Linux virtual machine setup.
+1.  Sign into the Azure portal, with an account that has access to create VMs, and select + Create a resource.
+2.  Select **Create** under Ubuntu Server 18.04 LTS in the Popular view.
+3.  On the Management tab, Check the box to enable `Login with Azure Active Directory (Preview)`.
+4.  Ensure System assigned managed identity is checked.
+5.  Complete the Linux virtual machine setup.

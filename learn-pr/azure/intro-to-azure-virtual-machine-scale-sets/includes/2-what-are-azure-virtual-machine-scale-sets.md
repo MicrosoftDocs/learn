@@ -1,4 +1,4 @@
-Azure virtual machine scale sets provide a scalable way to run applications on a set of VMs. When deployed in the uniform orchestration configuration, the VMs in this type of scale set all have the same configuration and run the same applications.
+Azure Virtual Machine Scale Sets provide a scalable way to run applications on a set of VMs. When deployed in the uniform orchestration configuration, the VMs in this type of scale set all have the same configuration and run the same applications.
 
 - As demand grows, the number of VMs running in the scale set increases.
 - As demand goes down, excess VMs can be shut down.
@@ -15,4 +15,4 @@ A scale set uses a load balancer to distribute requests across the VM instances.
 - If the instance responds, the scale set knows the instance is still available.
 - If the ping fails or times out, the scale set knows the instance is unavailable and doesn't send requests to it.
 
-Virtual machine scale sets support both Linux and Windows VMs in Azure. If you deal with large workloads with varying and unpredictable demands, scale sets are a great solution. Because virtual machine scale sets in uniform orchestration configuration offer identical VMs scaled and load-balanced in response to demand, they automatically provide a highly available environment.
+Virtual Machine Scale Sets support both Linux and Windows VMs in Azure. If you deal with large workloads with varying and unpredictable demands, scale sets are a great solution. Because virtual machine scale sets in uniform orchestration configuration offer identical VMs scaled and load-balanced in response to demand, they automatically provide a highly available environment.

@@ -5,7 +5,7 @@ Let's create a client application to work with a queue. Then we'll add our conne
 
 ## Clone and open the starter application
 
-In this unit, you'll build a console application to interact with Azure storage queue that will send and receive messages to a queue. The GitHub repository associated with this module contains a starter version of the application you will be building.
+In this unit, you build a console application to interact with Azure storage queue to send and receive messages. The GitHub repository associated with this module contains a starter version of the application you'll be building.
 
 1. Start by cloning the solution. In Azure Cloud Shell, run the following command.
 
@@ -31,10 +31,10 @@ The [Azure.Storage.Queues](https://www.nuget.org/packages/Azure.Storage.Queues/)
 
 Your application needs a connection string to be able to connect to your storage queue in Azure. The connection string is available in the Azure portal under the **Settings > Access keys** section of the storage account summary page or it can be retrieved using the Azure CLI or Azure PowerShell.
 
-The following code uses the Azure CLI to retrieve the storage connection string and place it in an environment variable. The application will then read this environment variable to get the connection string and connect to the storage queue. Be sure to substitute in the name of your storage account in the command below.
+The following code uses the Azure CLI to retrieve the storage connection string and place it in an environment variable. The application reads this environment variable to get the connection string and connect to the storage queue. Be sure to substitute in the name of your storage account in the following command.
 
 ```bash
-export MY_STORAGE_CONNECTION_STRING=`az storage account show-connection-string -g <rgn>[sandbox resource group name]</rgn> -n <storage account name> --output tsv`
+export MY_STORAGE_CONNECTION_STRING=`az storage account show-connection-string -g <rgn>[sandbox resource group name]</rgn> --output tsv -n <storage account name>`
 ```
 
 You can verify that you have a connection string set in your environment variable by running the following command to view the connection string:
@@ -47,9 +47,9 @@ echo $MY_STORAGE_CONNECTION_STRING
 
 The `QueueClient` class manages the interactions with a storage queue. The `QueueClient` class can be used to create a queue as well as sending and receive messages from the queue.
 
-To create a `QueueClient` object, you need both the storage connection string and the name of the queue your application will use. In this sample application, the connection string will be read from an environment variable.
+To create a `QueueClient` object, you need both the storage connection string and the name of the queue your application uses. In this sample application, the connection string is read from an environment variable.
 
-1. Type `code .` in the terminal to open the online code editor. Alternatively, if you are working on your own you can use the IDE of your choice.
+1. Type `code .` in the terminal to open the online code editor. Alternatively, if you're working on your own you can use the IDE of your choice.
 
 1. Open the `Program.cs` file in your code editor.
 
@@ -62,9 +62,9 @@ To create a `QueueClient` object, you need both the storage connection string an
 
 ## Create your storage account queue
 
-Before you can send or receive messages from your queue, you need to create the queue itself.  The queue can be created from the Azure portal, Azure CLI, Azure PowerShell or in code.  For our example application, we are going to create the queue from code.
+Before you can send or receive messages from your queue, you need to create the queue itself.  The queue can be created from the Azure portal, Azure CLI, Azure PowerShell or in code.  For our example application, we're going to create the queue from code.
 
-The `CreateIfNotExistsAsync` method on the `QueueClient` class is used to create a queue.  This method will first check to see if the named queue for the `QueueClient` object exists and if not, create it.
+The `CreateIfNotExistsAsync` method on the `QueueClient` class is used to create a queue.  This method first checks to see if the named queue for the `QueueClient` object exists and if not, creates it.
 
 Add the following line of code to the main method of your `Program.cs` file just after the line that creates the `QueueClient` object.
 The `QueueClient` contains a method `CreateIfNotExistsAsync`.
