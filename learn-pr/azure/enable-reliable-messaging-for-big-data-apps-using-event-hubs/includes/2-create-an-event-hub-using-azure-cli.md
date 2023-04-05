@@ -29,7 +29,7 @@ Event subscribers are apps that use one of two supported programmatic methods to
 
 ### Consumer groups
 
-An event hub **consumer group** represents a specific view of an event hub data stream. By using separate consumer groups, multiple subscriber apps can process an event stream independently, and without affecting other apps. However, the use of many consumer groups isn't a requirement, and for many apps, the single default consumer group is sufficient.
+An event hub **consumer group** represents a specific view of an event hub data stream. When you use separate consumer groups, multiple subscriber apps can process an event stream independently, and without affecting other apps. However, the use of many consumer groups isn't a requirement, and for many apps, the single default consumer group is sufficient.
 
 ### Pricing
 
@@ -59,7 +59,7 @@ Keep the following aspects in mind:
 
   1. Define the following optional properties:
 
-     - Make this namespace zone redundant. Zone-redundancy replicates data across separate data centers which have independent power, networking, and cooling infrastructures.
+     - Make this namespace zone redundant. Zone-redundancy replicates data across separate data centers, which have independent power, networking, and cooling infrastructures.
 
      - Enable automatically scaling up of throughput units (standard tier). Auto-inflate provides an automatic scale-up option by increasing the number of throughput units up to a maximum value. This option is useful to avoid throttling in situations when incoming or outgoing data rates exceed the currently set number of throughput units.
 

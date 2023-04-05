@@ -19,8 +19,8 @@ Let's create an Event Hubs namespace using Azure CLI and Bash in Azure Cloud She
      |Parameter  |Description |
      | --------- | ---------- |
      |--name (required) | A unique name for your Event Hubs namespace. The name must be 6-50 characters long, start with a letter, end with a letter or number, and contain only letters, numbers, and hyphens.|
-     |--resource-group (required) | This parameter can be omitted because it will default to the sandbox resource group supplied from the previous command. |
-     |--location (optional) | This parameter can be omitted because it will default to the location (region) supplied from the previous command. |
+     |--resource-group (required) | This parameter can be omitted because it defaults to the sandbox resource group supplied from the previous command. |
+     |--location (optional) | This parameter can be omitted because it defaults to the location (region) supplied from the previous command. |
      |--sku (optional) | The default value for this parameter, if omitted, is _Standard_, and this is the sku we want. The sku determines the connections and consumer thresholds. |
 
 1. Before running the command, though, let's set the namespace name as an environment variable so we can reuse it.
@@ -67,7 +67,7 @@ Now let's create your event hub.
       | --------- | ----------- |
       |--name (required) | Name for your event hub is environment variable $HUB_NAME.|
       |--resource-group (required)  |Resource group owner has already been defined.|
-      |--namespace-name (required) |The Event Hub namespace is environment variable $NS_NAME.|
+      |--namespace-name (required) |The Event Hubs namespace is environment variable $NS_NAME.|
 
     ```azurecli
     az eventhubs eventhub create --name $HUB_NAME --namespace-name $NS_NAME
@@ -103,4 +103,4 @@ Next, let's see what our event hub looks like in the Azure portal.
 
 ## Summary
 
-You've now created a new Event Hub, and you've all the necessary information ready to configure your publisher and consumer applications.
+You've now created a new event hub, and you've all the necessary information ready to configure your publisher and consumer applications.
