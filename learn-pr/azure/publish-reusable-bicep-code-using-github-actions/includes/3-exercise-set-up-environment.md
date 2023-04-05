@@ -30,11 +30,12 @@ Run a template that sets up your GitHub repository.
 
 On the GitHub site, follow these steps to create a repository from the template:
 
-1. Select **Use this template**.
+1. Select **Use this template** > **Create a new repository**.
 
    :::image type="content" source="../media/3-template.png" alt-text="Screenshot of the GitHub interface that shows the template repo, with the button for using the template highlighted.":::
 
-1. Enter a name for your new project, such as **toy-reusable**.
+1. For **Owner** select your GitHub account.
+1. Enter a **Repository name** for your new project, such as _toy-reusable_.
 
 1. Select the **Public** option.
 
@@ -120,7 +121,9 @@ Next, create a workload identity in Azure AD for your deployment workflow.
 
 ::: zone pivot="cli"
 
-1. Run the code below to define variables for your GitHub username and your repository name. Ensure that you replace `mygithubuser` with your GitHub username, which you noted earlier in this exercise. Also ensure that you specify the correct GitHub repository name.
+To create the workload identities, the Azure CLI commands use `jq` to parse data from JSON output. If you don't have `jq` installed, you can use Bash in [Azure Cloud Shell](https://shell.azure.com/) to create the workload identity, resource group and role assignment, and prepare the GitHub secrets.
+
+1. Run the following code to define variables for your GitHub username and your repository name. Ensure that you replace `mygithubuser` with your GitHub username, which you noted earlier in this exercise. Also ensure that you specify the correct GitHub repository name.
 
    ```bash
    githubOrganizationName='mygithubuser'
@@ -225,13 +228,15 @@ Write-Host "AZURE_SUBSCRIPTION_ID: $($azureContext.Subscription.Id)"
 
 ::: zone-end
 
+Make a note of your application ID value for the _AZURE_CLIENT_ID_. You can use that value when you clean up resources when you're finished with this module.
+
 ## Create GitHub secrets
 
 You've created a workload identity, and a resource group that it can deploy to. Next, create secrets in GitHub Actions.
 
 1. In your browser, navigate to your GitHub repository.
 
-1. Select **Settings** > **Secrets** > **Actions**.
+1. Select **Settings** > **Secrets and variables** > **Actions**.
 
 1. Select **New repository secret**.
 

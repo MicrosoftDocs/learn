@@ -38,7 +38,7 @@ Now, you can add a second job to publish the template spec to Azure.
 
    :::code language="yaml" source="code/4-workflow.yml" range="30-51" :::
 
-   This job checks out the code from your repository and signs in to Azure by using GitHub secret that you created earlier. It then runs the `az ts create` command to publish the template spec to Azure.
+   This job checks out the code from your repository and signs in to Azure by using the GitHub secrets that you created earlier. It then runs the `az ts create` command to publish the template spec to Azure.
 
    > [!TIP]
    > To keep things simple, your workflow uses the workflow's _run number_ as the template spec's version number. In the next unit, you'll learn about a more complex versioning scheme.
@@ -75,7 +75,7 @@ Now, you can add a second job to publish the template spec to Azure.
 
    :::image type="content" source="../media/4-actions.png" alt-text="Screenshot of GitHub that shows the Actions tab.":::
 
-   Failed workflow runs are listed already, but you don't need to worry about them. They failed because the workflow definitions weren't yet completed.
+   Failed workflow runs are listed already, but you don't need to worry about them. They failed because the workflow definitions weren't yet completed when you created the repository.
 
 1. Select the **template-spec-linux-app-service** workflow, select the **Run workflow** button, and then select **Run workflow**.
 
