@@ -60,5 +60,5 @@ Pipelines can be as simple or as complex as desired. There are excellent tutoria
 
 ## Environment traceability
 
-There's one other aspect of pipelines related to reliability worth mentioning. You can to construct your pipelines in such a way that it's be possible to correlate what is running in production with a
+There's one other aspect of pipelines related to reliability worth mentioning. You can construct your pipelines in such a way that it's possible to correlate what is running in production with a
 specific build instance. Ideally, we should be able trace a build back to a specific PR or code change. This can be tremendously useful, either during an incident or afterwards during the post-incident review when you're trying to identify which change contributed to an issue. Some CI/CD systems (like Azure Pipelines) make it easy to do this, while others require you manually construct a pipeline that propagates some sort of "build ID" through all of the stages.
