@@ -5,4 +5,4 @@ Now let's build an application that uses Azure OpenAI models. In this exercise, 
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://aka.ms/mslearn-get-started-azure-openai?azure-portal=true)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/mslearn-openai/Instructions/Labs/02-natural-language-azure-openai.html?azure-portal=true)
