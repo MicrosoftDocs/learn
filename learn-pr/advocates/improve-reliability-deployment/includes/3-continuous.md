@@ -2,7 +2,7 @@ You've learned about the many disadvantages of the "epic deployment" as a softwa
 
 ## What is continuous delivery?
 
-_Continuous delivery_ is a method by which you can make software changes available for use in a faster, less stressful, less risky, and more reproducible way. Rather than making each software deployment or update an epic event, continuous delivery strives to turn it into a quick, routine,predictable experience that happens on demand.
+_Continuous delivery_ is a method by which you can make software changes available for use in a faster, less stressful, less risky, and more reproducible way. Rather than making each software deployment or update an epic event, continuous delivery strives to turn it into a quick, routine, predictable experience that happens on demand.
 
 - **Deployment frequency**: With a continuous delivery model, deployments happen often. This often could be monthly, weekly, daily, even hourly. The key is that you deploy _smaller, more focused changes, more often_.
 
