@@ -21,13 +21,10 @@ quiz:
     - content: "Code"  
       isCorrect: false  
       explanation: "The text or Generative Pre-trained Transformer (GPT) models are best at general tasks, conversations, and chat formats."  
-    - content: "Embeddings"  
-      isCorrect: false  
-      explanation: "The text or Generative Pre-trained Transformer (GPT) models are best at general tasks, conversations, and chat formats."  
     - content: "Audio"  
       isCorrect: false  
       explanation: "The text or Generative Pre-trained Transformer (GPT) models are best at general tasks, conversations, and chat formats."  
-  - content: "What are the available endpoints for interacting with a deployed Azure OpenAI model?"  
+  - content: "What are the three available endpoints for interacting with a deployed Azure OpenAI model?"  
     choices:  
     - content: "Completion, ChatCompletion, and Translation"  
       isCorrect: false  
@@ -38,14 +35,8 @@ quiz:
     - content: "Deployment, Summary, and Similarity"  
       isCorrect: false  
       explanation: "None of these are an Azure OpenAI endpoint."  
-    - content: "Completion, Summary, and Configuration"  
-      isCorrect: false  
-      explanation: "Summary and Configuration is not an Azure OpenAI endpoint.
   - content: "What is the best available endpoint to model the next completion of a conversation in Azure OpenAI?"  
     choices:  
-    - content: "Completion"  
-      isCorrect: false  
-      explanation: "The best model to use for the next response in a conversation is ChatCompletion"  
     - content: "ChatCompletion"  
       isCorrect: true  
       explanation: "The best model to use for the next response in a conversation is ChatCompletion"  
