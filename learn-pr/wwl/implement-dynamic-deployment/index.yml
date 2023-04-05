@@ -3,7 +3,7 @@ uid: learn.wwl.implement-dynamic-deployment
 metadata:
   title: MD-102 2-Implement dynamic deployment methods
   description: "Use dynamic provisioning methods such as Subscription Activation, Provisioning packages, and Azure AD join to reconfigure an existing operating system."
-  ms.date: 04/04/2023
+  ms.date: 04/05/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
@@ -32,9 +32,9 @@ products:
 units:
 - learn.wwl.implement-dynamic-deployment.introduction
 - learn.wwl.implement-dynamic-deployment.examine-subscription-activation
-- learn.wwl.implement-dynamic-deployment.deploy-using-provisioning-packages
+- learn.wwl.implement-dynamic-deployment.deploy-provisioning-packages
 - learn.wwl.implement-dynamic-deployment.use-windows-configuration-designer
-- learn.wwl.implement-dynamic-deployment.use-azure-ad-join-automatic-mdm-enrollment
+- learn.wwl.implement-dynamic-deployment.use-azure-ad-join-automatic-mobile-device-management-enrollment
 - learn.wwl.implement-dynamic-deployment.knowledge-check
 - learn.wwl.implement-dynamic-deployment.summary
 badge:
