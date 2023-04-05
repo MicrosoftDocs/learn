@@ -20,39 +20,39 @@ quiz:
 
   - content: 'Deploying smaller, focused changes frequently is a characteristic of which of the following?'
     choices:
-    - content: 'continuous delivery'
+    - content: 'Continuous delivery'
       isCorrect: true
       explanation: 'Correct, this is an important part of continuous delivery.'
-    - content: 'source code version control'
+    - content: 'Source code version control'
       isCorrect: false
       explanation: 'Source code version control does not require smaller, focused changes frequently.'
-    - content: 'test and staging environments'
+    - content: 'Test and staging environments'
       isCorrect: false
       explanation: 'Just having test or staging environments does not require smaller, focused changes frequently.'
 
   - content: 'Which has proven to be true of high performing DevOps companies?'
     choices:
-    - content: 'they have a 7x higher change failure rate'
+    - content: 'They have a 7x higher change failure rate'
       isCorrect: false
       explanation: 'They have a 7x _lower_ change failure rate.'
-    - content: 'they have 2x faster incident recovery time'
+    - content: 'They have 2x faster incident recovery time'
       isCorrect: false
       explanation: 'They have _2,604x_ faster incident recovery time.'
-    - content: 'they have 208x more frequent deployments'
+    - content: 'They have 208x more frequent deployments'
       isCorrect: true
       explanation: 'Correct.'
 
   - content: 'Which of these options is _not_ a goal continuous delivery can help you reach?'
     choices:
-    - content: 'reduce the stress involved with deploying services'
+    - content: 'Reduce the stress involved with deploying services'
       isCorrect: false
       explanation: 'Continuous delivery can help with this goal.'
-    - content: 'reduce the time between having an idea and delivering useable software'
+    - content: 'Reduce the time between having an idea and delivering useable software'
       isCorrect: false
       explanation: 'Continuous delivery can help with this goal.'
-    - content: 'reduce the time between having an idea and delivering useable software'
+    - content: 'Reduce the time between having an idea and delivering useable software'
       isCorrect: false
       explanation: 'Continuous delivery can help with this goal.'
-    - content: 'reduce the compliance requirements for your software'
+    - content: 'Reduce the compliance requirements for your software'
       isCorrect: true
       explanation: 'Correct, continuous delivery could potentially help you meet your requirements in some circumstances, but it will not reduce them.'

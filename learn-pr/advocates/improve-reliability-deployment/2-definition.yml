@@ -20,12 +20,12 @@ quiz:
 
   - content: 'What is one of the characteristics of the “epic deployment?”'
     choices:
-    - content: "it's fast"
+    - content: "It's fast"
       isCorrect: false
       explanation: 'Epic deployments usually take a considerable amount of time because of their size.'
-    - content: "it's repeatable"
+    - content: "It's repeatable"
       isCorrect: false
       explanation: "Because they're done so infrequently, there's usually only small amounts of effort put into repeatability."
-    - content: "it's complex"
+    - content: "It's complex"
       isCorrect: true
       explanation: 'Because of the size and infrequency, they are often quite complex.'
