@@ -31,7 +31,7 @@ Before you can publish modules, you need to create a registry for your organizat
 
    :::image type="content" source="../media/6-create-registry.png" alt-text="Screenshot of the Azure portal that shows the container registry creation page.":::
 
-1. Review the settings, and then select **Create**.
+1. Review the settings displays **Validation passed** and then select **Create**.
 
    Wait for the deployment to finish, which usually takes 1-2 minutes.
 
@@ -73,7 +73,7 @@ Your repository contains a draft of a workflow that you can use as a starting po
 
    :::image type="content" source="../media/6-visual-studio-code-workflow.png" alt-text="Screenshot of Visual Studio Code that shows the location of the workflow definition file.":::
 
-1. On line 18, update the value of the `MODULE_REGISTRY_SERVER` environment variable to your container registry's server name. You copied that name earlier in this exercise.
+1. Update the value of the `MODULE_REGISTRY_SERVER` environment variable to your container registry's server name. You copied that name earlier in this exercise.
 
    For example, if your registry's login server is _yourregistryname.azurecr.io_, line 18 will look like this:
 
@@ -178,3 +178,23 @@ Remove-AzResourceGroup -Name ToyReusable -Force
 ```
 
 ::: zone-end
+
+You can also clean up the GitHub secrets and repository, and the Azure workload identities.
+
+- GitHub secrets
+  1. From the GitHub repository, go to **Settings** > **Secrets and variables** > **Actions**.
+  1. Select **Remove secret** for each repository secret and follow the prompts.
+
+- GitHub repository
+  1. Go to **Settings** > **General**
+  1. Select **Delete this repository** and follow the prompts.
+
+- Azure App registration's federated credentials and service principal.
+  1. From the portal home page, search for _Azure Active Directory_ and select it from the list of **Services**.
+  1. Go to **Manage** > **App registrations**.
+  1. In **Owned applications** select **toy-website-auto-review**.
+  1. Select **Delete** and follow the prompts.
+  1. Select **Deleted applications** to permanently delete the app registration.
+
+  > [!IMPORTANT]
+  > It's possible to have duplicate App registration and service principal names. It's recommended to verify the application ID to make sure you're deleting the correct resource.
