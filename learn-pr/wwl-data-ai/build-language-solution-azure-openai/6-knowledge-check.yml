@@ -10,75 +10,48 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 1
-###########################################################################
-###
-### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
-###  - Questions are complete sentences ending with a question mark
-###  - No true/false questions
-###  - 3 answers per question
-###  - All answers about the same length
-###  - Numeric answers listed in sorted order
-###  - No "All of the above" and/or "None of the above" as answer choices
-###  - No "Not" or "Except" in questions
-###  - No second person ("you") in the questions or answers
-###  - Provide a meaningful explanation for both correct and incorrect answers
-###
-###########################################################################
 content: |
-quiz:
-  questions:
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+quiz:  
+  questions:  
+  - content: "What is the model family that is the best fit for 'general tasks, conversations, and chat formats'?"  
+    choices:  
+    - content: "Text"  
+      isCorrect: true  
+      explanation: "The text or Generative Pre-trained Transformer (GPT) models are best at general tasks, conversations, and chat formats."  
+    - content: "Code"  
+      isCorrect: false  
+      explanation: "The text or Generative Pre-trained Transformer (GPT) models are best at general tasks, conversations, and chat formats."  
+    - content: "Embeddings"  
+      isCorrect: false  
+      explanation: "The text or Generative Pre-trained Transformer (GPT) models are best at general tasks, conversations, and chat formats."  
+    - content: "Audio"  
+      isCorrect: false  
+      explanation: "The text or Generative Pre-trained Transformer (GPT) models are best at general tasks, conversations, and chat formats."  
+  - content: "What are the available endpoints for interacting with a deployed Azure OpenAI model?"  
+    choices:  
+    - content: "Completion, ChatCompletion, and Translation"  
+      isCorrect: false  
+      explanation: "Translation is not an Azure OpenAI endpoint."  
+    - content: "Completion, ChatCompletion, and Embeddings"  
+      isCorrect: true  
+      explanation: "These are the three available endpoints"  
+    - content: "Deployment, Summary, and Similarity"  
+      isCorrect: false  
+      explanation: "None of these are an Azure OpenAI endpoint."  
+    - content: "Completion, Summary, and Configuration"  
+      isCorrect: false  
+      explanation: "Summary and Configuration is not an Azure OpenAI endpoint.
+  - content: "What is the best available endpoint to model the next completion of a conversation in Azure OpenAI?"  
+    choices:  
+    - content: "Completion"  
+      isCorrect: false  
+      explanation: "The best model to use for the next response in a conversation is ChatCompletion"  
+    - content: "ChatCompletion"  
+      isCorrect: true  
+      explanation: "The best model to use for the next response in a conversation is ChatCompletion"  
+    - content: "Embeddings"  
+      isCorrect: false  
+      explanation: "The best model to use for the next response in a conversation is ChatCompletion"  
+    - content: "TranslateCompletion"  
+      isCorrect: false  
+      explanation: "The best model to use for the next response in a conversation is ChatCompletion"  

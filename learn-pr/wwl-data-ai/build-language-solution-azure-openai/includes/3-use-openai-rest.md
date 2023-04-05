@@ -1,75 +1,124 @@
 AOAI offers a REST API for interacting and generating responses that developers can use to add AI functionality to their applications. This unit covers example usage, input and output from the API.
 
-Before interacting with the API, you must create an Azure OpenAI resource in the Azure portal, deploy 
+> [!NOTE]
+> Before interacting with the API, you must create an Azure OpenAI resource in the Azure portal, deploy a model in that resource, and retrieve your endpoint and keys. Check out the [Getting started with Azure OpenAI Service](/training/modules/get-started-openai/) to learn how to do that.
 
+For each call you need the endpoint and a key from your Azure OpenAI resource, as well as the name you gave for your deployed model. In the following examples, the following placeholders are used:
+
+|Placeholder name | Value |
+|--------------|-------|
+| `YOUR_ENDPOINT_NAME` | This is found in the **Keys & Endpoint** section in the Azure portal. It is the base endpoint of your resource, such as `https://sample.openai.azure.com/`.|
+| `YOUR_API_KEY` | This is found in the **Keys & Endpoint** section in the Azure portal. You can use either key for your resource. |
+| `YOUR_DEPLOYMENT_NAME` | This is the name provided when you deployed your model in the Azure OpenAI Studio. |
+
+## Completions
+
+Once you have deployed a model in your AOAI resource, you can send a prompt to the service using a `POST` request. The most common endpoint is `completions`, which will generate the completion of your prompt.
+
+```rest
+curl https://YOUR_ENDPOINT_NAME.openai.azure.com/openai/deployments/YOUR_DEPLOYMENT_NAME/completions?api-version=2022-12-01\
+  -H "Content-Type: application/json" \
+  -H "api-key: YOUR_API_KEY" \
+  -d "{
+  \"prompt\": \"Your favorite Shakespeare is\",
+  \"max_tokens\": 5
+}"
+```
+
+The response from the API will be similar to the following:
+
+```json
 {
-    "id": "ID of your call",
+    "id": "<id>",
     "object": "text_completion",
-    "created": 1675444965,
-    "model": "text-davinci-002",
+    "created": 1679001781,
+    "model": "text-davinci-003",
     "choices": [
         {
-            "text": " there lived in a little village a woman who was known as the meanest",
+            "text": "Macbeth",
             "index": 0,
-            "finish_reason": "length",
-            "logprobs": null
+            "logprobs": null,
+            "finish_reason": "stop"
         }
-    ],
+    ]
+}
+```
+
+The completion response to look for is within `choices[].text`. Notice that also included in the response is `finish_reason`, which in this example is `stop`. Other possibilities for `finish_reason` include `length`, which means it used up the `max_tokens` specified in the request, or `content_filter`, which means the system detected harmful content was generated from the prompt. If harmful content is included in the prompt, the API request will return an error.
+
+## Chat completions
+
+Similar to `completions`, `chat/completions` generates a completion to your prompt, but works best when that prompt is a chat exchange.
+
+```rest
+curl https://YOUR_ENDPOINT_NAME.openai.azure.com/openai/deployments/YOUR_DEPLOYMENT_NAME/chat/completions?api-version=2023-03-15-preview \
+  -H "Content-Type: application/json" \
+  -H "api-key: YOUR_API_KEY" \
+  -d '{"messages":[{"role": "system", "content": "You are a helpful assistant, teaching people about AI."},
+{"role": "user", "content": "Does Azure OpenAI support multiple languages?"},
+{"role": "assistant", "content": "Yes, Azure OpenAI supports several languages, and can translate between them."},
+{"role": "user", "content": "Do other Azure Cognitive Services support translation too?"}]}'
+```
+
+The response from the API will be similar to the following:
+
+```json
+{
+    "id": "chatcmpl-6v7mkQj980V1yBec6ETrKPRqFjNw9",
+    "object": "chat.completion",
+    "created": 1679001781,
+    "model": "gpt-35-turbo",
     "usage": {
-        "completion_tokens": 16,
-        "prompt_tokens": 3,
-        "total_tokens": 19
-    }
+        "prompt_tokens": 95,
+        "completion_tokens": 84,
+        "total_tokens": 179
+    },
+    "choices": [
+        {
+            "message":
+                {
+                    "role": "assistant",
+                    "content": "Yes, other Azure Cognitive Services also support translation. Azure Cognitive Services offer translation between multiple languages for text, documents, or custom translation through Azure Cognitive Services Translator."
+                },
+            "finish_reason": "stop",
+            "index": 0
+        }
+    ]
 }
+```
 
-In this article, we'll show you how to use the Azure OpenAI REST API to add natural language processing (NLP) functionality to an application. We'll also provide a code example of the API response.
+Both completion endpoints allow for specifying other optional input parameters, such as `temperature`, `max_tokens` and more. If you'd like to include those in your request, add them to the input data with the request.
 
-First, you'll need to sign up for an Azure OpenAI account and create a new resource. Then, you'll need to generate an API key and secret. Finally, you'll need to create a new application in your Azure portal.
+## Embeddings
 
-Once you have all of that set up, you can begin making calls to the Azure OpenAI REST API. The API has a number of different endpoints, each of which offers different functionality. For our purposes, we'll be using the /text/analytics/v3.0/analyze endpoint.
+Embeddings are helpful for specific formats that are easily consumed by machine learning models. To generate embeddings from the input text, `POST` a request to the `embeddings` endpoint.
 
-This endpoint takes a JSON object as its input. The object must contain a "documents" property, which is an array of objects. Each object in the array must contain a "language" property and a "text" property. The "language" property is used to specify the language of the text. The "text" property is used to specify the actual text to be analyzed.
+```rest
+curl https://YOUR_ENDPOINT_NAME.openai.azure.com/openai/deployments/YOUR_DEPLOYMENT_NAME/embeddings?api-version=2022-12-01 \
+  -H "Content-Type: application/json" \
+  -H "api-key: YOUR_API_KEY" \
+  -d "{\"input\": \"The food was delicious and the waiter...\"}"
+```
 
-Here's an example of what the input JSON object might look like:
+When generating embeddings, be sure to use a model in AOAI meant for embeddings. Those models start with `text-embedding` or `text-similarity`, depending on what functionality you're looking for.
 
+The response from the API will be similar to the following:
+
+```json
 {
-  "documents": [
+  "object": "list",
+  "data": [
     {
-      "language": "en",
-      "text": "Hello, world!"
-    }
-  ]
-}
-
-Once you have your input JSON object, you can make a POST request to the /text/analytics/v3.0/analyze endpoint. The request should include your API key and secret, as well as the input JSON object.
-
-If the request is successful, you'll receive a JSON response that contains a number of properties, including an "analysisResults" property. This property contains an array of objects, each of which represents the results of the analysis for a specific document.
-
-Each object in the "analysisResults" array will contain a "keyPhrases" property, which is an array of strings. These strings represent the key phrases that were extracted from the document.
-
-Here's an example of what the JSON response might look like:
-
-{
-  "analysisResults": [
-    {
-      "keyPhrases": [
-        "Hello",
-        "world"
-      ]
-    }
-  ]
-}
-
-And here's a code example of the API response:
-
-{
-  "documents": [
-    {
-      "language": "en",
-      "id": "1",
-      "text": "Hello, world!"
+      "object": "embedding",
+      "embedding": [
+        0.0172990688066482523,
+        -0.0291879814639389515,
+        ....
+        0.0134544348834753042,
+      ],
+      "index": 0
     }
   ],
-  "errors": [],
-  "modelVersion": "2020-04-01"
+  "model": "text-embedding-ada:002"
 }
+```

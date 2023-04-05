@@ -2,6 +2,7 @@
 uid: learn.wwl.build-language-solution-azure-openai.use-openai-sdk
 title: Use Azure OpenAI SDK
 metadata:
+  zone_pivot_groups: dev-lang-csharp-python
   title: learning-content
   description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
   ms.date: 3/30/2023

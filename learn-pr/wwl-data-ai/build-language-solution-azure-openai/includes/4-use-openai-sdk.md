@@ -1,78 +1,113 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+In addition to REST APIs covered in the previous unit, users can also access Azure OpenAI models through C# and Python SDKs. The same functionality is available through both REST and these SDKs.
 
-    Goal: briefly summarize the key skill this unit will teach
+> [!NOTE]
+> Before interacting with the API using either SDK, you must create an Azure OpenAI resource in the Azure portal, deploy a model in that resource, and retrieve your endpoint and keys. Check out the [Getting started with Azure OpenAI Service](/training/modules/get-started-openai/) to learn how to do that.
 
-    Heading: none
+For both SDKs covered in this unit, you need the endpoint and a key from your Azure OpenAI resource, as well as the name you gave for your deployed model. In the following code snippets, the following placeholders are used:
 
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
+|Placeholder name | Value |
+|--------------|-------|
+| `YOUR_ENDPOINT_NAME` | This is found in the **Keys & Endpoint** section in the Azure portal. It is the base endpoint of your resource, such as `https://sample.openai.azure.com/`. |
+| `YOUR_API_KEY` | This is found in the **Keys & Endpoint** section in the Azure portal. You can use either key for your resource. |
+| `YOUR_DEPLOYMENT_NAME` | This is the name provided when you deployed your model in the Azure OpenAI Studio. |
 
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+## Install libraries
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+First, install the client library for your preferred language. The C# SDK is a .NET adaptation of the REST APIs and built specifically for Azure OpenAI, however it can be used to connect to Azure OpenAI resources or non-Azure OpenAI endpoints. The Python SDK is built and maintained by OpenAI.
 
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
+::: zone pivot="csharp"
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+```console
+dotnet add package Azure.AI.OpenAI --prerelease
+```
 
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
+::: zone-end
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
+::: zone pivot="python"
 
-    Goal: State concisely what's covered in this unit
+```console
+pip install openai
+```
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+::: zone-end
 
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
+## Configure app to access Azure OpenAI resource
 
-<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
+Configuration for each language varies slightly, but both require the same parameters to be set. The necessary parameters are `endpoint`, `key`, and the name of your deployment, which is called the `engine` when sending your prompt to the model.
 
-    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
+Add the library to your app, and set the required parameters for your client.
 
-    Heading: none
--->
-TODO: add a visual element
+::: zone pivot="csharp"
 
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
+```csharp
+// Add OpenAI library
+using Azure.AI.OpenAI;
 
-    Goal: Provide all the information the learner needs to perform this sub-task.
+// Define parameters and initialize the client
+string endpoint = "<YOUR_ENDPOINT_NAME>";
+string key = "<YOUR_API_KEY>";
+string deploymentName = "<YOUR_DEPLOYMENT_NAME>"; //SDK calls this "engine", but naming
+                                                  // it "deploymentName" for clarity
 
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
+OpenAIClient client = new OpenAIClient(new Uri(endpoint), new AzureKeyCredential(key));
+```
 
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=main)
--->
+::: zone-end
 
-<!-- Pattern for simple chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
+::: zone pivot="python"
 
-<!-- Pattern for complex chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
+```python
+# Add OpenAI library
+import openai
 
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+openai.api_key = '<YOUR_API_KEY>'
+openai.api_base =  '<YOUR_ENDPOINT_NAME>' 
+openai.api_type = 'azure' # Necessary for using the OpenAI library with Azure OpenAI
+openai.api_version = '2022-12-01' # This likely will change with future releases
 
-<!-- Do not add a unit summary or references/links -->
+deployment_name = '<YOUR_DEPLOYMENT_NAME>' # SDK calls this "engine", but naming
+                                           # it "deployment_name" for clarity
+```
+
+::: zone-end
+
+## Call Azure OpenAI resource
+
+Once you have configured your connection to Azure OpenAI, send your prompt to one of the available endpoints of `completions`, `chatCompletions`, or `embeddings`. The example here is for `completions`, however the request and response is very similar for the other SDK endpoints.
+
+::: zone pivot="csharp"
+
+```csharp
+string prompt = "What is Azure OpenAI?";
+
+Response<Completions> completionsResponse = client.GetCompletions(deploymentName, prompt);
+string completion = completionsResponse.Value.Choices[0].Text;
+Console.WriteLine($"Chatbot: {completion}");
+```
+
+The response object contains several values, such as `total_tokens` and `finish_reason`. The text completion from the response object will be similar to the following:
+
+```console
+"Azure OpenAI is a cloud-based artificial intelligence (AI) service that offers a range of tools and services for developing and deploying AI applications. Azure OpenAI provides a variety of services for training and deploying machine learning models, including a managed service for training and deploying deep learning models, a managed service for deploying machine learning models, and a managed service for managing and deploying machine learning models."
+```
+
+::: zone-end
+
+::: zone pivot="python"
+
+```python
+prompt = 'What is Azure OpenAI?'
+response = openai.Completion.create(engine=deployment_name, prompt=prompt)
+
+print(response.choices[0].text)
+```
+
+The response object contains several values, such as `total_tokens` and `finish_reason`. The text completion from the response object will be similar to the following:
+
+```console
+"Azure OpenAI is a cloud-based artificial intelligence (AI) service that offers a range of tools and services for developing and deploying AI applications. Azure OpenAI provides a variety of services for training and deploying machine learning models, including a managed service for training and deploying deep learning models, a managed service for deploying machine learning models, and a managed service for managing and deploying machine learning models."
+```
+
+::: zone-end
+
+In both C# and Python, your `create` call can include optional parameters including `temperature` and `max_tokens`. Examples of using those parameters is included in this module's lab.

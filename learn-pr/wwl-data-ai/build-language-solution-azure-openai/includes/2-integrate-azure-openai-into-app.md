@@ -1,7 +1,7 @@
 Azure OpenAI (AOAI) offers both C# and Python SDKs as well as a REST API that developers can use to add AI functionality to their applications. Models belong to different model families, each with their own focus. To use one of these models, you need to deploy through the Azure OpenAI Service.
 
 > [!IMPORTANT]
-> Azure OpenAI has been released with limited access to support the responsible use of the service. Users need to [apply for access](/azure/cognitive-services/openai/overview#how-do-i-get-access-to-azure-openai) and be approved before they can create an AOAI resource.
+> Azure OpenAI has been released with limited access to support the responsible use of the service. Users need to [apply for access](/azure/cognitive-services/openai/overview#how-do-i-get-access-to-azure-openai?azure-portal=true) and be approved before they can create an AOAI resource.
 
 ## Create an Azure OpenAI resource
 
@@ -51,7 +51,7 @@ Category:
 
 You'll likely get the "Category:" under headline filled out with "Business".
 
-Try to be as specific as possible about what you want in response from the model, and you may be surprised at how insightful it can be!
+Several examples similar to this one can be found in the Azure OpenAI Studio Playground, under the **Examples** dropdown. Try to be as specific as possible about what you want in response from the model, and you may be surprised at how insightful it can be!
 
 > [!NOTE]
 > It is never safe to assume that answers from an AI model are factual or correct. Teams or individuals tasked with developing and deploying AI systems should work to identify, measure, and mitigate harm. It is your responsibility to verify any responses from an AI model, and to use AI responsibly. Check out[Microsoft's Transparency Notes on Azure OpenAI](/legal/cognitive-services/openai/transparency-note?azure-portal=true) for further guidelines on how to use Azure OpenAI models responsibly.
