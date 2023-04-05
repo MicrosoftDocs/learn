@@ -1,4 +1,4 @@
-According to Wikipedia, "software deployment" is comprised of _all of the activities that make a software system available for use._ The general deployment process consists of several interrelated activities with possible transitions between them. Every software system is unique; therefore, "deployment" should be interpreted as a general process that has to be customized according to specific requirements or characteristics.
+According to Wikipedia, "software deployment" is composed of _all of the activities that make a software system available for use._ The general deployment process consists of several interrelated activities with possible transitions between them. Every software system is unique; therefore, "deployment" should be interpreted as a general process that has to be customized according to specific requirements or characteristics.
 
 Some use the terms "deployment" and "installation" interchangeably, but the software installation is only a part of the process of deploying it. Deployment involves much more. Deployment activities can include:
 
