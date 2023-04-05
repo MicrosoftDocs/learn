@@ -1,78 +1,51 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+This unit presents the case study scenario, design requirements, conceptual and technical questions.
 
-    Goal: briefly summarize the key skill this unit will teach
+## Background scenario
 
-    Heading: none
+Contoso is a large, US-based financial-services conglomerate with several subsidiaries, including the recently acquired Tailwind Traders. A successful business strategy combined with corporate acquisitions contributed to a dramatic growth of Contoso, expanding its presence to all major financial hubs in the United States. However, the rapid growth also exposed a number of issues with its information technology landscape. Some of these issues were related to the on-premises datacenter infrastructure reaching its end-of-life. Others resulted from business-driven changes circumventing existing governance and security controls for the sake of expediency. The lax approach to enforcing company-wide standards, along with a number of business acquisitions, led to a fragmented operational environment, with a wide variety of third-party hardware and software, challenging and time consuming to maintain. 
 
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
+Effectively, due to the focus on business growth, the parent company failed to sufficiently modernize and optimize its computing environment. There are, however, some exceptions. In particular, the IT team within Tailwind Traders has already transitioned its business-critical applications to the microservices architecture and deployed them in Amazon Web Services (AWS) on the Elastic Kubernetes Service (EKS) platform. It also migrated some of its server-based workloads to AWS Elastic Compute Cloud (EC2) instances. The subsidiary also maintains a number of newly deployed Kubernetes clusters in its own datacenter. Container images are stored in a private Docker registry. They are manually, periodically scanned and updated to address any newly discovered vulnerabilities in its open source software components.
 
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+Another challenge facing Contoso is the state of its remote workforce. Due to a pandemic, Contoso switched to the work-from-home model for all of its middle and back-office employees. To accommodate the new work model, the company expanded significantly its virtual desktop infrastructure (VDI) running on the Windows Server 2019 platform. The VDI environment consists of a mix of personal and pooled, non-persistent virtual desktops. Remote employees connect via virtual private network (VPN) from their home Windows-based computers, which frequently are not properly secured. This makes them an easy target for malware and cyber-attacks, which represent a potential threat to Contoso's internal network. Non-persistent virtual desktops are particularly vulnerable due to the lack of a proper malware protection.
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+Lastly, the current fragmentation of its IT environment makes it challenging for Contoso to obtain a comprehensive assessment of the company-wide security posture and provide a sufficient threat protection. The company's security operations team has been relying primarily on an on-premises Security Information and Event Management (SIEM) system for their monitoring, auditing, and reporting.
 
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
+As part of a recently drafted modernization strategy intended to address the current issues, the company's new CIO decided to migrate a substantial portion of existing workloads to the public cloud. The workloads will include both Windows and Linux server hosted services, including hundreds of Microsoft SQL Server instances, .NET websites running on the Internet Information Services (IIS) platform, PHP and Ruby websites running on Apache web servers, as well as dozens of open-source relational and non-relational databases, including MySQL, PostgreSQL, MariaDB, and Apache Cassandra. In addition, the intention is to decommission aging file servers and use the cloud for long-term data storage. To minimize administrative overhead, managed services should be used whenever possible. Due to a long-standing partnership between Contoso and Microsoft, Azure became the primary migration target. Before the migration strategy is finalized, the technology team reporting to the CIO must identify the optimal approach to address the need to properly secure the on-premises and cloud-based infrastructure.
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+![Diagram of the initial architecture of Contoso.](../media/initial-architecture.png)
 
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
+## Design requirements
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
+The CIO of Contoso defined the following set of requirements that the technology team must address in its design of the Azure-based solution for securing the company's infrastructure: 
 
-    Goal: State concisely what's covered in this unit
+- Implement a comprehensive, continuous assessment of the company-wide security posture for on-premises and cloud infrastructure.
+- Implement a comprehensive, continuous threat protection of the company's technology environment for on-premises and cloud infrastructure.
+- Provide a solution to address the vulnerabilities of client devices used for the remote access to the on-premises VDI environment.
+- Provide a tactical and strategic solution to address the vulnerabilities of the on-premises VDI environment.
+- Recommend the approach to securing Tailwind Traders on-premises and cloud computing resources. 
+- Recommend a solution for the on-premises SIEM instance that would provide a single-pane of glass for the company's security operations team.
+- Identify security-related benefits resulting from the integration of on-premises and third-party cloud resources with Azure.
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+## High-level conceptual questions
 
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
+Before you start designing the solution based on Contoso's requirements, consider the following high-level conceptual questions:
 
-<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
+- What are the primary Microsoft Defender products and services that offer security solutions for infrastructure?
+- How does Microsoft Defender for Cloud benefit Azure customers?
+- How and to what extent the Microsoft Defender for Cloud benefits can be extended to hybrid and multicloud scenarios?
+- What are the integration capabilities of Microsoft Defender for Cloud with other security-focused Microsoft cloud-based services?
+- How do the Microsoft Defender for Cloud native and integration capabilities help minimize the impact of cyberthreats?
+- What are the considerations and requirements that should be taken into account when onboarding to Microsoft Defender for Cloud resources residing in Azure, on-premises, and in third-party cloud environments?
+- What security measures provided by Microsoft help secure Azure Virtual Desktop deployments?
 
-    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
+## Design questions
 
-    Heading: none
--->
-TODO: add a visual element
+As you are architecting the solution based on the requirements of Contoso, answer the following design questions:
 
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
-
-    Goal: Provide all the information the learner needs to perform this sub-task.
-
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
-
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=main)
--->
-
-<!-- Pattern for simple chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
-
-<!-- Pattern for complex chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+- How would you leverage the primary capabilities of Microsoft Defender for Cloud to address the company's needs?
+- Which plans and components of Microsoft Defender for Cloud are most significant to consider in the context of the case study?
+- Which benefits of enhanced security features of Microsoft Defender for Cloud would help the company to optimize its security stance and protect its infrastructure?
+- What are the main considerations and requirements that you would include in your design of onboarding the company's resources onto Microsoft Defender for Cloud?
+- How would you minimize the effort and time involved in implementing your solution?
+- What additional security-focused Microsoft cloud-based services would you consider including in your design?
+- Which elements of your design should be implemented as soon as possible and which ones are suitable as part of a longer-term solution?

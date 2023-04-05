@@ -3,13 +3,13 @@ uid: learn.wwl.case-study-design-security-solutions-applications-data.knowledge-
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: "Knowledge check for case study module on the topic: Design security solutions for applications and data."
   ms.date: 4/5/2023
-  author: {{githubUsername}}
-  ms.author: {{msUser}}
+  author: hrasheed-msft
+  ms.author: hrasheed
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
-durationInMinutes: 1
+durationInMinutes: 3
 ###########################################################################
 ###
 ### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check) 
@@ -27,58 +27,45 @@ durationInMinutes: 1
 content: |
 quiz:
   questions:
-  - content: ""
+  - content: "What is DevSecOps?"
     choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      - content: "A practice that ensures system uptime by maintaining optimal replica volumes."
+        isCorrect: false
+        explanation: "DevSecOps isn't concerned with replica volumes of systems, which refers to replication strategies used in high availability deployment scenarios."
+      - content: "A security model used by developers to certify that code changes do not affect production environments."
+        isCorrect: false
+        explanation: "There's no certification process involved in DevSecOps. The idea behind DevSecOps is that security mechanisms are integrated throughout the development cycle to increase the overall security posture."
+      - content: "A set of principles designed to integrate security testing and evaluation into the software development lifecycle (SDLC)."
+        isCorrect: true
+        explanation: "DevSecOps is short for Development, Security, and Operations, which aims to integrate security activities into all stages of the SDLC to achieve application and infrastructure resilience."
+      - content: "A method to monitor customer satisfaction after every release of the product to ensure continuous improvement."
+        isCorrect: false
+        explanation: "While monitoring customer satisfaction is essential, it's not directly related to DevSecOps. Monitoring is also more of an Operations concern than something taken care of within the Development phase."
+  - content: "What type of threats is the Azure web application firewall designed to protect against?"
     choices:
-    - content: ""
+    - content: "Server level attacks such as shared hosting violations"
+      isCorrect: false
+      explanation: "Azure Web Application Firewall is deployed in front of a web server farm and protects against layer 7 -application-level- distributed denial-of-service (DDoS) attacks."
+    - content: "Phishing attacks and credential stealing attempts"
+      isCorrect: false
+      explanation: "As useful as this would be, the WAF is positioned for application-level security only."
+    - content: "SQL injection, Cross-site scripting attacks, and HTTP protocol violations"
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "These are some of the most common web applications' vulnerability exploits, all of which can be programmed into a well-managed web application firewall policy."
+    - content: "Malware propagation and attack repulsion"
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "WAF is position around application-level DDoS attack protection, this does NOT include general-purpose malware repulsion"
+  - content: What are the benefits of using Azure Key Vault for data encryption in Azure?
     choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      - content: It provides a centralized key management solution.
+        isCorrect: true
+        explanation: Azure Key Vault provides a centralized key management solution, allowing you to manage and protect your encryption keys.
+      - content: It improves the performance of applications that use data encryption.
+        isCorrect: false
+        explanation: Azure Key Vault does not improve the performance of applications that use data encryption, but it can help ensure the security of encryption keys.
+      - content: It reduces the cost of data encryption in Azure.
+        isCorrect: false
+        explanation: Azure Key Vault does not reduce the cost of data encryption in Azure, but it can help ensure the security of encryption keys.
+      - content: It makes it easier to access and process encrypted data.
+        isCorrect: false
+        explanation: Azure Key Vault does not make it easier to access or process encrypted data, but it can help ensure the security of encryption keys.
