@@ -4,7 +4,7 @@ title: Deploy an always encrypted implementation
 metadata:
   title: Deploy an always encrypted implementation
   description: "Deploy an always encrypted implementation"
-  ms.date: 02/24/2023
+  ms.date: 04/06/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
@@ -12,4 +12,4 @@ metadata:
   zone_pivot_groups: None
 durationInMinutes: 7
 content: |
-  [!include[](includes/11-always-encrypted-implementation.md)]
+  [!include[](includes/14-always-encrypted-implementation.md)]

@@ -1,5 +1,5 @@
 
-Ensuring your data is safe when it is stored in Azure SQL databases is a must for every Azure Security Engineer. Azure provides several features to help lock down your databases and monitor their security.
+Ensuring your data is safe when it is stored in Azure SQL databases is an important task for every Azure Security Engineer. Azure provides several features to help lock down your databases and monitor their security.
 
 You should be able to:
 

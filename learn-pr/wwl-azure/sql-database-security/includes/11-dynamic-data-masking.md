@@ -11,7 +11,7 @@ You set up a dynamic data masking policy in the Azure portal by selecting the dy
 
 ### Dynamic data masking policy
 
- -  **SQL users excluded from masking** \- A set of SQL users or AAD identities that get unmasked data in the SQL query results. Users with administrator privileges are always excluded from masking, and view the original data without any mask.
+ -  **SQL users excluded from masking** \- A set of SQL users or Azure AD identities that get unmasked data in the SQL query results. Users with administrator privileges are always excluded from masking, and view the original data without any mask.
  -  **Masking rules** \- A set of rules that define the designated fields to be masked and the masking function that is used. The designated fields can be defined using a database schema name, table name, and column name.
  -  **Masking functions** \- A set of methods that control the exposure of data for different scenarios.
 
