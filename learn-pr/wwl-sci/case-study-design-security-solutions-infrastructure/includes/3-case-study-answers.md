@@ -154,7 +154,7 @@ In general, onboarding Azure resources to Microsoft Defender tends to be straigh
 
 For on-premises deployments, you should use the support for bulk, automated deployments of Azure Arc that rely on an installation script you can generate directly from the Azure portal. With Azure Arc in place, you can use the same autoprovisioning option that is applicable to Azure Virtual Machines. 
 
-For multisubscription deployments, you might consider automation. Infrastructure as Code (IaC) is a interesting option since it ties to DevSecOps and allows you to use declarative deployments through Bicep, Azure Resource Manager, or Terraform template. Other benefits of this approach are associated with using version control for tracking changes to the deployment templates and Continuous Integration/Continuous Deployment (CI/CD) pipelines, which facilitate multistaged validations and gated controls. 
+For multisubscription deployments, you might consider automation. Infrastructure as Code (IaC) is an interesting option since it ties to DevSecOps and allows you to use declarative deployments through Bicep, Azure Resource Manager, or Terraform template. Other benefits of this approach are associated with using version control for tracking changes to the deployment templates and Continuous Integration/Continuous Deployment (CI/CD) pipelines, which facilitate multistaged validations and gated controls. 
 
 ### What additional security-focused Microsoft cloud-based services would you consider including in your design?
 
