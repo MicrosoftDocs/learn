@@ -6,22 +6,17 @@ For this, we'll be using the CluedIn data steward tool: CluedIn Clean.
 
     :::image type="content" source="../media/clean.png" alt-text="Screenshot of the CluedIn preparation window.":::
 
-1. Select **Create Project** and choose what records and columns you want to clean.
+1. Select **Create Project** and choose the entity type. For this example, we'll choose **Employee**.
 
-1. For the filter, choose **Entity Type equals Employee**.
+1. In the new cleaning project, select **Create new clean project**.
 
-1. In the new cleaning project, select **Generate Project**.
+1. Once this is finished, select the new clean project from the menu, which will launch a studio in a new tab with your employee records.
 
-1. Once this is finished you'll received a link to "Clean" the data. Selecting the **Clean** button will launch a studio in a new tab with your 10 Employee records. You'll see a column name for the Origin Entity Code and the person.Job column.
+1. On the employee.job header, select the drop-down, select **Facet**, and select **Text Facet**.
 
-    >[!NOTE]
-    > Don't delete the column name for the Origin Entity Code as it is the reference of what to save these records back to.
+    :::image type="content" source="../media/clean-text-facet.png" alt-text="Screenshot of the ClueIn project window, showing the header dropdown with facet and text facet selected.":::
 
-1. On the person.job header, select the drop-down, select **Facet**, and select **Text Facet**.
-
-    :::image type="content" source="../media/Clean_Text_Facet.png" alt-text="Screenshot of the ClueIn project window, showing the header dropdown with facet and text facet selected.":::
-
-1. On the left hand side you'll see that CluedIn shows an aggregation of all of the unique values of that column and then a count next to each item to reflect how many rows share a column value.
+1. On the left hand side, you'll see that CluedIn shows an aggregation of all of the unique values of that column and then a count next to each item to reflect how many rows share a column value.
 
 1. Select the **Cluster** button. CluedIn will show a prompt that will suggest where the data quality issues lie, and the proposed solution on what to normalize the values to. 
 
@@ -29,7 +24,7 @@ For this, we'll be using the CluedIn data steward tool: CluedIn Clean.
 
     You'll notice that CluedIn is recommending that all of the different spelling of Accounting on the left and proposing that they're all normalized into **Accounting** on the right. Accept this suggestion and the one for Software Dev.
 
-    :::image type="content" source="../media/CleaN_Keying_Function.png" alt-text="Screenshots of the Cluster & Edit column person.job page.":::
+    :::image type="content" source="../media/clean-keying-function.png" alt-text="Screenshots of the Cluster & Edit column person.job page.":::
 
 1. Cycle through all the other Keying functions and their suggestions until all the values are normalized and there are now only two permutations of the Job titles that we had in the original raw data.
 
@@ -47,7 +42,7 @@ This exercise above has yielded a few elements, including:
 
 1. Go back to the automated rules that were constructed and select them all and toggle to activate them.
 
-    :::image type="content" source="../media/Rules_Created.png" alt-text="Screenshot of the rules in CluedIn that can be toggled to be activated.":::
+    :::image type="content" source="../media/rules-created.png" alt-text="Screenshot of the rules in CluedIn that can be toggled to be activated.":::
 
 1. Return to the data sources in CluedIn, and map the final file called ContactsAddLater.csv that had the same data quality issues in it, but this time, just process the data directly and don't clean it at all.
 
