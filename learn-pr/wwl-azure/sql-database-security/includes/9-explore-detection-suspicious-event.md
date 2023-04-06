@@ -17,7 +17,7 @@ You receive an email notification upon detection of anomalous database activitie
 :::image type="content" source="../media/potential-sql-injection-20cd8bc7.png" alt-text="Screenshot showing an example of a potential SQL injection.":::
 
 
-### Explore alerts in the Azure portal.
+### Explore alerts in the Azure portal
 
 Advanced Threat Protection integrates its alerts with Microsoft Defender for Cloud. Live SQL Advanced Threat Protection tiles within the database and SQL Microsoft Defender for Cloud blades in the Azure portal track the status of active threats.
 
