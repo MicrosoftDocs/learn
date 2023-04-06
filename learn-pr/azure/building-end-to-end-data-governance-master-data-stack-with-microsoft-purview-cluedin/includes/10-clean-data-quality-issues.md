@@ -4,7 +4,7 @@ For this, we'll be using the CluedIn data steward tool: CluedIn Clean.
 
 1. In CluedIn, in the left hand menu, select **Preparation** -> **Clean**.
 
-    :::image type="content" source="../media/New_Clean.png" alt-text="Screenshot of the CluedIn preparation window.":::
+    :::image type="content" source="../media/clean.png" alt-text="Screenshot of the CluedIn preparation window.":::
 
 1. Select **Create Project** and choose what records and columns you want to clean.
 
