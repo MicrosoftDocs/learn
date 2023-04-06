@@ -28,7 +28,7 @@ Ultra Disk Storage is a new disk type in Azure and has some limitations:
 - It's available only in a subset of Azure regions.
 - You can attach Ultra Disk Storage only to VMs that are in Azure availability zones.
 - You can use Ultra Disk Storage only as data disks and as empty disks.
-- Ultra Disk Storage doesn't support disk snapshots, VM images, virtual machine scale sets, Azure Disk Encryption, Azure Backup, or Azure Site Recovery.
+- Ultra Disk Storage doesn't support disk snapshots, VM images, Virtual Machine Scale Sets, Azure Disk Encryption, Azure Backup, or Azure Site Recovery.
 - Ultra Disk Storage doesn't support cached read and write operations.
 
 Some workloads place intensive workloads on disk storage. For example, top-tier databases and SAP HANA need fast performance and are transaction heavy. If you have such a workload and if Azure Premium SSD disks are causing performance bottlenecks, consider using Azure Ultra Disk Storage.
