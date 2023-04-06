@@ -1,6 +1,4 @@
 
-## Microsoft Defender for SQL
-
 Applies to: **Azure SQL Database** \| **Azure SQL Managed Instance** \| **Azure Synapse Analytics**
 
 Microsoft Defender for SQL is a Defender plan in Microsoft Defender for Cloud. Microsoft Defender for SQL includes functionality for surfacing and mitigating potential database vulnerabilities and detecting anomalous activities that could indicate a threat to your database. It provides a single go-to location for enabling and managing these capabilities.

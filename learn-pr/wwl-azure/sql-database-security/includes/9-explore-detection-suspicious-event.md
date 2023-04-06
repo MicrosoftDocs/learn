@@ -1,6 +1,4 @@
 
-## Exploring the detection of a suspicious event
-
 You receive an email notification upon detection of anomalous database activities. The email provides information on the suspicious security event, including the nature of the anomalous activities, database name, server name, application name, and event time. In addition, the email provides information on possible causes and recommended actions to investigate and mitigate the potential threat to the database.
 
 **Example:** Email notification providing information on a suspicious security event.
