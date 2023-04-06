@@ -2,7 +2,7 @@
 
 By using a lifecycle management strategy, you can ensure your configurations, exclusions, and policies for Microsoft Defender for Cloud Apps remain up to date and are reviewed on an established cadence.
 
-![Microsoft Defender for Cloud Apps lifecycle management.](../media/cloud-app-security-lifecycle.png)
+![Diagram showing Microsoft Defender for Cloud Apps lifecycle management.](../media/cloud-app-security-lifecycle.png)
 
 To best maintain Defender for Cloud Apps posture, regularly follow the recommendations below:
 

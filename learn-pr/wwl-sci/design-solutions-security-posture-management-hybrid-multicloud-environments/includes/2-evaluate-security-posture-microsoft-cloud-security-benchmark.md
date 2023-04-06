@@ -38,7 +38,7 @@ Additionally, you can use custom VM image (using Azure Image Builder) or contain
 
 **AWS guidance**: Use EC2 AWS Machine Image (AMI) from trusted source on marketplace as a benchmark to define your EC2 configuration baseline.
 
-Additionally, you can use EC2 Image Builder to build custom AMI template with Systems Manager agent to establish the desired security configuration. Note: AWS Systems Manager Agent is preinstalled on some Amazon Machine Images (AMIs) provided by AWS.
+Additionally, you can use EC2 Image Builder to build custom AMI template with Systems Manager agent to establish the desired security configuration.
 
 For workload applications running within your EC2 instances, AWS Lambda or containers environment, you may use AWS System Manager AppConfig to establish the desired configuration baseline.
 

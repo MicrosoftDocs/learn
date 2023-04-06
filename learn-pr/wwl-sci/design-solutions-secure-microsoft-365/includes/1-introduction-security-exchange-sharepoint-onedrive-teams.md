@@ -52,7 +52,7 @@ starting with **Exchange Online Protection**:
 
 |Prevent/Detect|Investigate|Respond|
 |---|---|---|
-|Technologies include:<ul><li>spam</li><li>phish</li><li>malware</li><li>bulk mail</li><li>spoof intelligence</li><li>impersonation detection</li><li>Admin Quarantine</li><li>False positives and false negative reporting by admin submissions and user reported messages</li><li>Allow/Block for URLs and Files</li><li>Reports</li></ul>|<li>Audit log search</li><li>Message Trace</li>|<li>Zero-hour auto purge (ZAP)</li><li>Refinement and testing of Allow and blocklists</li>|
+|Technologies include:<br><br>- spam<br>- phish<br>- malware<br>- bulk mail<br>- spoof intelligence<br>-  impersonation detection<br>- Admin Quarantine<br>-  False positives and false negative reporting by admin submissions and user reported messages<br>-  Allow/Block for URLs and Files<br>-  Reports|Audit log search<br>-  Message Trace|Zero-hour auto purge (ZAP)<br>-  Refinement and testing of Allow and blocklists|
 
 Because these products are cumulative, if you evaluate Microsoft Defender for Office 365 P1 and decide to subscribe to it, you add these abilities.
 
@@ -61,7 +61,7 @@ Gains with **Defender for Office 365, Plan 1** (to date):
 
 |Prevent/Detect|Investigate|Respond|
 |---|---|---|
-|Technologies include everything in EOP plus:<ul><li>Safe attachments</li><li>Safe links<li>Microsoft Defender for Office 365 protection for workloads (ex. SharePoint Online, Teams, OneDrive for Business)</li><li>Time-of-click protection in email, Office clients, and Teams</li><li>anti-phishing in Defender for Office 365</li><li>User and domain impersonation protection</li><li>Alerts, and SIEM integration API for alerts</li>|<li>SIEM integration API for detections</li><li>**Real-time detections tool**</li><li>URL trace</li>|<li>Same</li></ul>
+|Technologies include everything in EOP plus:<br><br>- Safe attachments<br>- Safe links Microsoft Defender for Office 365 protection for workloads (ex. SharePoint Online, Teams, OneDrive for Business)<br>- Time-of-click protection in email, Office clients, and Teams<br>- anti-phishing in Defender for Office 365<br>- User and domain impersonation protection<br>- Alerts, and SIEM integration API for alerts|SIEM integration API for detections<br>- **Real-time detections tool**<br>- URL trace<br>- Same
 
 So, Microsoft Defender for Office 365 P1 expands on the ***prevention*** side of the house, and adds extra forms of ***detection***.
 
@@ -72,7 +72,7 @@ Gains with **Defender for Office 365, Plan 2** (to date):
 
 |Prevent/Detect|Investigate|Respond|
 |---|---|---|
-|Technologies include everything in EOP, and Microsoft Defender for Office 365 P1 plus:<ul><li>Same</li>|<li>**Threat Explorer**</li><li>Threat Trackers</li><li>Campaign views</li>|<li>Automated Investigation and Response (AIR)</li><li>AIR from Threat Explorer</li><li>AIR for compromised users</li><li>SIEM Integration API for Automated Investigations</li>
+|Technologies include everything in EOP, and Microsoft Defender for Office 365 P1 plus:<br><br>- Same|**Threat Explorer**<br>- Threat Trackers<br>- Campaign views|Automated Investigation and Response (AIR)<br>- AIR from Threat Explorer<br>- AIR for compromised users<br>- SIEM Integration API for Automated Investigations|
 
 So, Microsoft Defender for Office 365 P2 expands on the ***investigation and response*** side of the house, and adds a new hunting strength. Automation.
 

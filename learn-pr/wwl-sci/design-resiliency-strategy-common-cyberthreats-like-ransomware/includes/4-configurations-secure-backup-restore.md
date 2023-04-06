@@ -55,7 +55,7 @@ Azure Backup provides different backup agents, depending on what type of machine
 
 **Agent** | **Details**
 --- | ---
-**MARS agent** | <ul><li>Runs on individual on-premises Windows Server machines to back up files, folders, and the system state.</li> <li>Runs on Azure VMs to back up files, folders, and the system state.</li> <li>Runs on DPM/MABS servers to back up the DPM/MABS local storage disk to Azure.</li></ul>
+**MARS agent** | - Runs on individual on-premises Windows Server machines to back up files, folders, and the system state.<br><br>- Runs on Azure VMs to back up files, folders, and the system state.<br><br>- Runs on DPM/MABS servers to back up the DPM/MABS local storage disk to Azure.
 **Azure VM extension** | Runs on Azure VMs to back them up to a vault.
 
 ## Backup types

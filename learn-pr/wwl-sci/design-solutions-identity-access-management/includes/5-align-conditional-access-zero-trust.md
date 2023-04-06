@@ -20,7 +20,7 @@ Here's a more detailed view of the elements of Conditional Access and what it co
 
 This diagram shows Conditional Access and related elements that can help protect user access to resources, as opposed to non-interactive or non-human access. The following diagram describes both types of identities:
 
-![Diagram that describes Conditional Access identity types.](../media/conditional-access-identity.svg)
+[![Diagram that describes Conditional Access identity types.](../media/conditional-access-identity.svg)](../media/conditional-access-identity.svg#lightbox)
 
 Non-human access to resources must also be protected. Currently, you can't use Conditional Access to protect non-human access to cloud resources. You need to use another method, like grant controls for OAuth-based access.
 

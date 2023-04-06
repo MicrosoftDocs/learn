@@ -160,7 +160,7 @@ The hunting dashboard enables you to run all your queries, or a selected subset,
 
 The table shown lists all the queries written by Microsoft's team of security analysts and any extra query you created or modified. Each query provides a description of what it hunts for, and what kind of data it runs on. These queries are grouped by their MITRE ATT&CK **tactics**. The icons on the right categorize the type of threat, such as initial access, persistence, and exfiltration. MITRE ATT&CK **techniques** are shown in the **Techniques** column and describe the specific behavior identified by the hunting query.
 
-![Screenshot showing Microsoft Sentinel hunting](../media/hunting-start.png)
+:::image type="content" source="../media/hunting-start.png" alt-text="Screenshot showing Microsoft Sentinel hunting." lightbox="../media/hunting-start.png":::
 
 Use the hunting dashboard to identify where to start hunting, by looking at result count, spikes, or the change in result count over a 24-hour period. Sort and filter by favorites, data source, MITRE ATT&CK tactic or technique, results, results delta, or results delta percentage. View queries that still need data sources connected, and get recommendations on how to enable these queries.
 
