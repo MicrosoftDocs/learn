@@ -4,7 +4,7 @@ title: Implement Kerberos and certificate-based authentication in Azure AD
 metadata:
   title: Implement Kerberos and certificate-based authentication in Azure AD
   description: "Implement Kerberos and certificate-based authentication in Azure AD"
-  ms.date: 04/05/2023
+  ms.date: 04/06/2023
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
