@@ -22,31 +22,8 @@ You'll create deployment pipelines to publish two Bicep files: one as a template
 
 After you complete this module, you'll be able to publish reusable Azure template specs and Bicep modules from your deployment pipelines.
 
-## Prerequisites
+If you need a refresher on Bicep modules, registries, or template specs, see these Microsoft Learn modules:
 
-You should be familiar with using:
-
-- Bicep modules and module registries.
-- Azure template specs.
-- The Bicep linter, along with testing your Bicep code.
-- Azure, including the Azure portal, subscriptions, resource groups, and resources.
-- Basic Git commands, including cloning, committing files, and pushing changes to Azure Repos.
-- Azure Pipelines, including stages, jobs, steps, and service connections.
-
-> [!TIP]
-> If you need a refresher on Bicep modules, registries, or template specs, see these Microsoft Learn modules:
-> - [Create composable Bicep files by using modules](xref:learn.azure.create-composable-bicep-files-using-modules?azure-portal=true)
-> - [Share Bicep modules by using private registries](xref:learn.azure.share-bicep-modules-using-private-registries?azure-portal=true)
-> - [Publish libraries of reusable infrastructure code by using template specs](xref:learn.azure.arm-template-specs?azure-portal=true)
-
-To work through the exercises in the module, you'll need:
-
-- An Azure account that has the ability to create resource groups, Azure Active Directory applications, and service principals.
-- An Azure DevOps organization and account.
-
-You'll also need the following items installed locally:
-
-- [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
-- The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep&azure-portal=true)
-- The latest [Azure CLI](/cli/azure/install-azure-cli) tools *or* the latest [Azure PowerShell](/powershell/azure/install-az-ps) version
-- [Git](https://git-scm.com/download?azure-portal=true)
+- [Create composable Bicep files by using modules](xref:learn.azure.create-composable-bicep-files-using-modules)
+- [Share Bicep modules by using private registries](xref:learn.azure.share-bicep-modules-using-private-registries)
+- [Publish libraries of reusable infrastructure code by using template specs](xref:learn.azure.arm-template-specs)
