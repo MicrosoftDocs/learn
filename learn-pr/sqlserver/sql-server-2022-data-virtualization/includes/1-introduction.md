@@ -47,23 +47,17 @@ Data virtualization use cases:
 - Off-load or export data to other data sources.
 
 ## Learning objectives
-TODO: add your activities
 
-<!-- 4. Terminal learning objective ----------------------------------------------------------------------
+By the end of this module, you'll be able to:
 
-    Goal: This is a restatement of the module title into a complete sentence. You have more room here to convey the main goal than in a space-limited title. Make it outcome-focused so it describes the main skill the learner will acquire as a result of this training. In other words, it should answer the question: "what is the key thing the learner will be able to do as a result of consuming this training?"
-
-    Heading: "## What is the main goal?"
-
-    Example: "By the end of this session, you'll be able to create workflows which route and process data using Azure Logic Apps and its built-in connectors."
-
- -->
+- Understand the benefits and principles of data virtualization
+- The evolution of PolyBase starting with SQL Server 2016 through SQL Server 2022
+- Enable and use the PolyBase feature
 
 ## Prerequisites
 
 - Basic working knowledge of SQL Server
-- Fundamental knowledge of the T-SQL language
-- Basic knowledge of Azure concepts, including subscriptions, resource groups, Infrastructure-as-a-Service and Platform-as-a-Service
+- Fundamental knowledge of the T-SQL language and be able to execute queries in SQL Server Management Studio on a SQL Server 2022 instance
 
 ## What is the main goal?
 By the end of this session, you'll be able to (TODO)
