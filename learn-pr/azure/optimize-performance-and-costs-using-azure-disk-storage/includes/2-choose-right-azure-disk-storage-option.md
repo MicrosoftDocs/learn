@@ -1,12 +1,12 @@
 One of the primary concerns for your organization is how to migrate its enterprise applications that require high-performance storage to Azure.
 
-As part of the migration strategy, you propose the Azure Disk Storage solution to optimize performance and costs. This unit covers the various disk storage types that are available in Azure.
+As part of the migration strategy, you propose the Azure Disk Storage solution to optimize performance and costs. This unit covers the various disk-storage types available in Azure.
 
 ## Ultra Disk Storage
 
 Of the various disks available in Azure, Azure Ultra Disk Storage provides the highest disk performance. Choose this option when you need the fastest storage performance in addition to high throughput, high input/output operations per second (IOPS), and low latency.
 
-The performance you'll get with Ultra Disk Storage depends on the size of the disk you choose. The following table provides examples. The table shows disk size in gigabytes (GB) and throughput in megabytes per second (MBps).
+The performance you'll get with Ultra Disk Storage depends on the disk size you choose. The following table provides examples. The table shows disk size in gigabytes (GB) and throughput in megabytes per second (MBps).
 
 | Disk size (GB) | IOPS | Throughput (MBps) |
 | --- | --- |--- |
@@ -19,7 +19,7 @@ The performance you'll get with Ultra Disk Storage depends on the size of the di
 Ultra Disk Storage can have a capacity ranging from 4 GB up to 64 terabytes (TB). A unique feature of Ultra Disk Storage is that you can adjust the IOPS and throughput values while they're running and without detaching the disk from the host VM. For example, depending on the sizes of the disks you choose in Ultra Disk Storage, a single instance of Ultra Disk Storage can support a maximum of 160,000 IOPS. Performance adjustments might take up to an hour to take effect.
 
 > [!NOTE]
-> You can resize an instance of Ultra Disk Storage only four times in a 24-hour window. Also, it's possible that the performance resize operation might fail because of a lack of performance bandwidth capacity.
+> You can resize an instance of Ultra Disk Storage only four times in a 24-hour window. Also, it's possible that the performance-resize operation might fail because of a lack of performance bandwidth capacity.
 
 By default, Azure creates instances of Ultra Disk Storage with a 4-KB physical sector, which is compatible with most applications. For earlier versions of applications that aren't compatible with a 4-KB physical sector, you can create a 512-byte emulation (512e) sector size.
 
@@ -76,7 +76,7 @@ The following table provides the performance characteristics of Standard SSD dis
 | E40 | 2,048 | 500 | 60 |
 | E80 | 32,767 | 6,000 | 750 |
 
-Use Standard SSD disks when you have budgetary constraints and a workload that isn't performance-intensive. For example, web servers, lightly used enterprise applications, and test servers all can run on Standard SSD disks. Standard SSD disks support disk bursting on P30 disks and smaller disks.
+Use Standard SSD disks when you have budgetary constraints and a workload that isn't performance-intensive. For example, web servers, lightly used enterprise applications, and test servers all can run on Standard SSD disks. Standard SSD disks support disk bursting on P30 and smaller disks.
 
 ## Standard HDD managed disks
 
