@@ -21094,6 +21094,51 @@
       "source_path": "learn-pr/wwl-azure/azure-security-center/4-cloud-kill-chain-vs-mitre-attack-cloud-matrix.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/sql-database-security/10-always-encrypted.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/sql-database-security/13-always-encrypted",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/sql-database-security/11-always-encrypted-implementation.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/sql-database-security/14-always-encrypted-implementation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/sql-database-security/12-demonstration.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/sql-database-security/15-demonstration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/sql-database-security/13-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/sql-database-security",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/sql-database-security/14-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/sql-database-security/17-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/sql-database-security/6-vulnerability-assessment.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/sql-database-security",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/sql-database-security/7-advanced-threat-protection.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/sql-database-security",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/sql-database-security/8-dynamic-data-masking.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/sql-database-security/11-dynamic-data-masking",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/sql-database-security/9-transparent-data-encryption.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/sql-database-security/12-transparent-data-encryption",
+      "redirect_document_id": false
     }
   ]
 }
