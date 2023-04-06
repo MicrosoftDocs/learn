@@ -27,7 +27,7 @@ When you don't provide an initial YAML file for your project, Azure Pipelines ca
 
      :::image type="content" source="../media/6-configure-app-type.png" alt-text="Screenshot of locating ASP.NET Core from the list of provided application types.":::
 
-1. On the **Review** tab, note the initial build configuration. 
+1. On the **Review** tab, note the initial build configuration.
 
     :::image type="content" source="../media/6-initial-pipeline-yml.png" alt-text="Screenshot of Azure Pipelines showing the initial build configuration.":::
 
@@ -39,9 +39,7 @@ When you don't provide an initial YAML file for your project, Azure Pipelines ca
 
     ::: zone-end
 
-
-
-1. Select **Save and run** to commit your changes to GitHub and start the build. Choose **Commit directly to the main branch**. If prompted to grant permission with a message like `This pipeline needs permission to access a resource before this run can continue`, choose **View** and follow the prompts to permit access.
+1. On the **Review** tab, select **Save and run**. To commit your changes to GitHub and start the pipeline, choose **Commit directly to the main branch** and select **Save and run** a second time. If prompted to grant permission with a message like `This pipeline needs permission to access a resource before this run can continue`, choose **View** and follow the prompts to permit access.
 
 ## Watch the pipeline run
 
