@@ -8,7 +8,20 @@
 
     [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
 -->
-TODO: add your topic sentences(s)
+# Parameter Sensitive Plan optimization
+
+When a query is compiled, values for any parameters used in queries in a stored procedure or parameterized query are using to make decisions to build an execution plan. This concept is commonly known as parameter sniffing. Only one query plan can exist in cache for statements in a stored procedure or parameterized query. In most cases this does not result in any performance problems for applications. However, there are situations where the data retrieved for queries based on parameters can be skewed, or not evenly distributed. In these cases, the single cache plan may not be optimal for different parameter values. This problem is known as a parameter sensitive plan.
+
+In SQL Server 2022, the optimizer can detect parameter sensitive plan scenarios and cache multiple plans for the same stored procedure or parameterized query. The optimizer uses a concept called query variants to aggregate sets of parameter values to match a query plan best suited for those parameter values.
+
+## Terminology
+### Dispatcher expression
+Evaluates cardinality of predicates based on runtime parameter values and route execution to different query variants.
+### Dispatcher plan
+A plan containing the dispatcher expression is cached for the original query. The dispatcher plan is essentially a collection of the predicates that were selected by the feature with a few extra details. For each predicate that is selected some of the details that are included in the dispatcher plan are the high and low boundary values. These values are used to divide parameter values into different buckets or ranges. The dispatcher plan also contains the statistics that were used to calculate the boundary values.
+### Query variant
+As a dispatcher plan evaluates the cardinality of predicates based on runtime parameter values, it bucketizes those values, and generates separate child queries to compile and execute. These child queries are called query variants. Query variants have their own plans in the plan cache and Query Store.
+
 
 <!-- 2. Scenario sub-task --------------------------------------------------------------------------------
 

@@ -10,9 +10,6 @@
 -->
 TODO: add your topic sentences(s)
 
-When a query is compiled, values for any parameters used in queries in a stored procedure or parameterized query are using to make decisions to build an execution plan. This concept is commonly known as parameter sniffing. Only one query plan can exist in cache for statements in a stored procedure or parameterized query. In most cases this does not result in any performance problems for applications. However, there are situations where the data retrieved for queries based on parameters can be skewed, or not evenly distributed. In these cases, the single cache plan may not be optimal for different parameter values. This problem is known as a parameter sensitive plan.
-
-In SQL Server 2022, the optimizer can detect parameter sensitive plan scenarios and cache multiple plans for the same stored procedure or parameterized query. The optimizer uses a concept called query variants to aggregate sets of parameter values to match a query plan best suited for those parameter values.
 <!-- 2. Scenario sub-task --------------------------------------------------------------------------------
 
     Goal: Describe the part of the scenario covered in this exercise
