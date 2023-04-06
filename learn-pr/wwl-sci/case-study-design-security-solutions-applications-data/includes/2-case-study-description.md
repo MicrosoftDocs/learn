@@ -2,50 +2,54 @@ This unit presents the case study scenario, design requirements, conceptual and 
 
 ## Background scenario
 
-Contoso is a large, US-based financial-services conglomerate with several subsidiaries, including the recently acquired Tailwind Traders. A successful business strategy combined with corporate acquisitions contributed to a dramatic growth of Contoso, expanding its presence to all major financial hubs in the United States. However, the rapid growth also exposed a number of issues with its information technology landscape. Some of these issues were related to the on-premises datacenter infrastructure reaching its end-of-life. Others resulted from business-driven changes circumventing existing governance and security controls for the sake of expediency. The lax approach to enforcing company-wide standards, along with a number of business acquisitions, led to a fragmented operational environment, with a wide variety of third-party hardware and software, challenging and time consuming to maintain. 
+Contoso is a recently founded online health supplements supplier in North America, with headquarters in Dallas, Texas, serving customers in the United States and Canada. The company relies exclusively on e-commerce, with no retail store presence. Therefore, the security and availability of their internet-based offerings are of utmost importance. Despite its online business model, Contoso hosts its infrastructure in a leased space of a local datacenter. 
 
-Effectively, due to the focus on business growth, the parent company failed to sufficiently modernize and optimize its computing environment. There are, however, some exceptions. In particular, the IT team within Tailwind Traders has already transitioned its business-critical applications to the microservices architecture and deployed them in Amazon Web Services (AWS) on the Elastic Kubernetes Service (EKS) platform. It also migrated some of its server-based workloads to AWS Elastic Compute Cloud (EC2) instances. The subsidiary also maintains a number of newly deployed Kubernetes clusters in its own datacenter. Container images are stored in a private Docker registry. They are manually, periodically scanned and updated to address any newly discovered vulnerabilities in its open source software components.
+The information technology (IT) department of Contoso comprises the development and operations teams. Developers build and update .NET and JavaScript-based web and mobile applications, including containerized backend APIs, for the steadily increasing customer base, with the focus on frequent releases of new and improved features. The operations team manages the web server and backend infrastructure hosting the applications, with the focus on maintaining their stability and minimizing downtime. The conflicting priorities of the two teams often lead to heated arguments between their members, especially since the operations team is also responsible for the deployment of new and updated code provided by the development team. 
 
-Another challenge facing Contoso is the state of its remote workforce. Due to a pandemic, Contoso switched to the work-from-home model for all of its middle and back-office employees. To accommodate the new work model, the company expanded significantly its virtual desktop infrastructure (VDI) running on the Windows Server 2019 platform. The VDI environment consists of a mix of personal and pooled, non-persistent virtual desktops. Remote employees connect via virtual private network (VPN) from their home Windows-based computers, which frequently are not properly secured. This makes them an easy target for malware and cyber-attacks, which represent a potential threat to Contoso's internal network. Non-persistent virtual desktops are particularly vulnerable due to the lack of a proper malware protection.
+These conflicts are further exacerbated by the Information Security (InfoSec) team, which frequently identifies vulnerabilities both in internally developed code and the infrastructure hosting it. As the InfoSec team constantly points out, these vulnerabilities result from the absence of proper development and design practices, insufficient oversight of the open-source software on which parts of Contoso's internally developed code are based, absence of configuration management tools, no dedicated staging environment, and lack of automation. Code development, build, and deployment involve many manual steps, with limited code reviews, testing, scanning, and monitoring. 
 
-Lastly, the current fragmentation of its IT environment makes it challenging for Contoso to obtain a comprehensive assessment of the company-wide security posture and provide a sufficient threat protection. The company's security operations team has been relying primarily on an on-premises Security Information and Event Management (SIEM) system for their monitoring, auditing, and reporting.
+Developers work mostly from home using their personal computers with different versions of development tools installed, connecting to the company's datacenter space by using Point-to-Site VPN. Besides negative implications from the security standpoint, this arrangement further complicates efforts to standardize software development lifecycle.
 
-As part of a recently drafted modernization strategy intended to address the current issues, the company's new CIO decided to migrate a substantial portion of existing workloads to the public cloud. The workloads will include both Windows and Linux server hosted services, including hundreds of Microsoft SQL Server instances, .NET websites running on the Internet Information Services (IIS) platform, PHP and Ruby websites running on Apache web servers, as well as dozens of open-source relational and non-relational databases, including MySQL, PostgreSQL, MariaDB, and Apache Cassandra. In addition, the intention is to decommission aging file servers and use the cloud for long-term data storage. To minimize administrative overhead, managed services should be used whenever possible. Due to a long-standing partnership between Contoso and Microsoft, Azure became the primary migration target. Before the migration strategy is finalized, the technology team reporting to the CIO must identify the optimal approach to address the need to properly secure the on-premises and cloud-based infrastructure.
+Contoso relies on Azure DevOps Server for version control and application lifecycle management (ALM). Some of the more common automation tasks are implemented by using Jenkins. Web servers and SQL Server databases providing data persistence are hosted on servers running Windows Servers 2019. Web API components developed in JavaScript are hosted on servers running the current version of Linux Ubuntu. Container images for backend APIs are hosted in a Docker registry server.
+
+To address the current development and operational issues, the CIO of Contoso laid out a plan to modernize the existing environment by transitioning to Microsoft Azure and fully embracing cloud-based DevSecOps practices. The plan includes replacing current processes with an automated continuous integration/continuous delivery (CI/CD) workflows and fully addressing security concerns. Despite the existing Azure DevOps Server installation, the decision was made to choose GitHub as the target platform for implementing the plan.
 
 ![Diagram of the initial architecture of Contoso.](../media/initial-architecture.png)
 
 ## Design requirements
 
-The CIO of Contoso defined the following set of requirements that the technology team must address in its design of the Azure-based solution for securing the company's infrastructure: 
+The CIO of Contoso defined the following set of requirements that the technology team must address in its design of a cloud-based solution for application security: 
 
-- Implement a comprehensive, continuous assessment of the company-wide security posture for on-premises and cloud infrastructure.
-- Implement a comprehensive, continuous threat protection of the company's technology environment for on-premises and cloud infrastructure.
-- Provide a solution to address the vulnerabilities of client devices used for the remote access to the on-premises VDI environment.
-- Provide a tactical and strategic solution to address the vulnerabilities of the on-premises VDI environment.
-- Recommend the approach to securing Tailwind Traders on-premises and cloud computing resources. 
-- Recommend a solution for the on-premises SIEM instance that would provide a single-pane of glass for the company's security operations team.
-- Identify security-related benefits resulting from the integration of on-premises and third-party cloud resources with Azure.
+- Ensure that the footprint of the existing on-premises infrastructure is minimized or even replaced by Microsoft cloud-based managed services.
+- Use the capabilities of GitHub and Microsoft Azure to rapidly build, test, and deploy new and updated applications in an automated manner, following the CI/CD principles.
+- Implement controls that minimize the risk of unauthorized access to CI/CD workflows.
+- Standardize the development environment and enhance its security with minimal administrative effort.
+- Protect backend APIs from misuse.
+- Minimize security risks associated with security vulnerabilities introduced into custom code, secrets checked into repositories, and the use of open-source software (OSS) components.
+- Validate that applications deployed into the staging environment comply with the security standards before being deployed into the production environment.
+
 
 ## High-level conceptual questions
 
 Before you start designing the solution based on Contoso's requirements, consider the following high-level conceptual questions:
 
-- What are the primary Microsoft Defender products and services that offer security solutions for infrastructure?
-- How does Microsoft Defender for Cloud benefit Azure customers?
-- How and to what extent the Microsoft Defender for Cloud benefits can be extended to hybrid and multicloud scenarios?
-- What are the integration capabilities of Microsoft Defender for Cloud with other security-focused Microsoft cloud-based services?
-- How do the Microsoft Defender for Cloud native and integration capabilities help minimize the impact of cyberthreats?
-- What are the considerations and requirements that should be taken into account when onboarding to Microsoft Defender for Cloud resources residing in Azure, on-premises, and in third-party cloud environments?
-- What security measures provided by Microsoft help secure Azure Virtual Desktop deployments?
+- What are the two primary Microsoft-managed DevOps offerings?
+- Which mechanisms provide support for the CI/CD functionality in the Microsoft-managed DevOps offerings?
+- Which Microsoft cloud services contribute to enforcing DevSecOps practices when using GitHub for ALM?
+- Which security standards should be considered for onboarding new applications?
+- Which DevSecOps activities are most suitable in individual stages of CI/CD workflows?
+- Which Microsoft Cloud services facilitate enhanced protection of Web Services APIs, including those hosted in on-premises and third-party cloud environments?
+- How would you evaluate and enforce the compliance and security of applications deployed by using CI/CD workflows?
+
 
 ## Design questions
 
-As you are architecting the solution based on the requirements of Contoso, answer the following design questions:
+As you're architecting the solution based on the requirements of Contoso, answer the following design questions:
 
-- How would you leverage the primary capabilities of Microsoft Defender for Cloud to address the company's needs?
-- Which plans and components of Microsoft Defender for Cloud are most significant to consider in the context of the case study?
-- Which benefits of enhanced security features of Microsoft Defender for Cloud would help the company to optimize its security stance and protect its infrastructure?
-- What are the main considerations and requirements that you would include in your design of onboarding the company's resources onto Microsoft Defender for Cloud?
-- How would you minimize the effort and time involved in implementing your solution?
-- What additional security-focused Microsoft cloud-based services would you consider including in your design?
-- Which elements of your design should be implemented as soon as possible and which ones are suitable as part of a longer-term solution?
+- Which Azure services would you consider as a replacement for the existing on-premises components of Contoso's infrastructure?
+- Which GitHub features would you use to implement CI/CD functionality for Contoso?
+- How would you minimize the risk of unauthorized use of CI/CD workflows for Contoso?
+- What managed service could help you standardize the development environment for Contoso's development team?
+- How would you enhance protection of backend APIs that are used by Contoso's web and mobile applications?
+- What would you recommend to minimize security risks associated with security vulnerabilities introduced into custom code, secrets checked into repositories, and the use of open-source software (OSS) components in Contoso's applications?
+- Which functionality would allow Contoso's developer and operations teams to validate that a new version of an application deployed into the staging environment complies with the security standards, before deploying it into the production environment? 

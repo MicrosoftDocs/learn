@@ -2,171 +2,143 @@ This unit presents an analysis of the scenario and possible answers to the conce
 
 ## A summary of the architect's analysis of the background scenario
 
-The current state of the customer's environment reflects its rapid growth, resulting from business-driven changes circumventing existing governance and security controls for the sake of expediency. A number of business acquisitions, including the most recent one involving Tailwind Traders, further contributed to the fragmented technology landscape. There are no clearly defined hardware or software standards or existing third-party solutions that would provide a comprehensive, centralized security solution. On-premises servers run a mix of different Windows operating system (OS) versions and a range of more common Linux distributions. The existing cloud presence is limited to a small deployment of compute workloads in the AWS public cloud. Remote users rely on VPN to connect to an on-premises Virtual Desktop Infrastructure (VDI) farm from personal computers running Windows client OS.
+The current state of the customer's environment represents a stark contrast between its online business model and full dependency on infrastructure hosted in an on-premises datacenter. That infrastructure includes Azure DevOps Server for version control and application lifecycle management (ALM), a server running Jenkins handling limited task automation, front-end Web servers and back-end SQL Servers, servers hosting Web API components developed in JavaScript, and a Docker Registry server storing container images for backend APIs. Transitioning to a cloud-based model, with all of the existing services and DevOps processes in scope wouldn't only allow elimination of the overhead associated with administering and maintaining the current environment, but would also significantly enhance its security, resiliency, and manageability. 
 
-The presence of Active Directory Domain Services (AD DS) environment offers the basis for an integration with Microsoft public cloud. This integration would constitute the starting point for incorporating a wide range of Microsoft security-focused products into Contoso's environment, with Defender for Cloud serving the primary role in protecting the current and future infrastructure services.
+Another critical part of the transition would involve addressing the absence of proper development and design practices, insufficient oversight of the open-source software (OSS) on which parts of Contoso’s internally developed code are based, absence of configuration management tools, no dedicated staging environment, and lack of automation. Replacing the current DevOps processes with fully automated continuous integration and continuous delivery (CI/CD) workflows that use Microsoft managed DevOps offerings facilitate a full adoption of DevSecOps principles. 
+
+However, there are other aspects of that adoption that will require a more comprehensive approach to various stages of the application lifecycle. In particular, Contoso’s development team needs to incorporate a currently missing threat modeling approach into its code planning and authoring process. Implementing a modern and up-to-date cloud-based toolset will help address the disparity between software versions installed on personal computers used for programming tasks and allow to take advantage of the latest Integrated Development Environment (IDE) security plugins. Attempts to push code changes to a cloud-based Git repository triggers unit, functional, and security tests, with the commit contingent on a successful completion of all of them. 
+
+The operations team needs to implement cloud configuration validation and infrastructure scanning in order to detect any potential vulnerabilities. Penetration tests need to become part of the standard operating procedures. The team should also be able to relatively easily remediate the absence of staging and testing environments by taking advantage of the capabilities of a public cloud. 
 
 
-## A summary of the architect's analysis of the design requirements
+## A summary of the architect's analysis of the design requirements – discussing how each requirement influences the final solution
 
-### Implement a comprehensive, continuous assessment of the company-wide security posture for on-premises and cloud infrastructure. 
+### Ensure that the footprint of the existing on-premises infrastructure is minimized or even replaced by Microsoft cloud-based managed services.
 
-This requirement drives the choice of Microsoft Defender for Cloud as the fundamental component of the proposed solution. Defender for Cloud provides Cloud Security Posture Management (CSPM) as one of its core capabilities. Basic CSPM features are enabled for free within each Azure subscription, yielding an immediate benefit to cloud-based workloads. These benefits can be extended to Tailwind Traders' Amazon Web Services (AWS) account without having to deploy any agents. Enhanced CSPM features further increase a range of security-centered capabilities, including governance and regulatory compliance, cloud security explorer, attack path analysis, as well as agentless scanning for virtual machines.
+Contoso can replace their on-premises Azure DevOps Server with Git-based repositories hosted in a GitHub account or an Azure DevOps organization. Both options fully support version control and ALM without the overhead of administering and maintaining the underlying infrastructure. GitHub actions and Azure Pipelines deliver enhanced automation capabilities compared with Jenkins. The services delivered by on-premises Web, API, and SQL Server deployments can be migrated to a wide range of Azure managed services that provide the equivalent functionality. Azure Container Registry can be used to store container images for backend APIs. 
 
-### Implement a comprehensive, continuous threat protection of the company's technology environment for on-premises and cloud infrastructure.
+### Use the capabilities of GitHub and Microsoft Azure to rapidly build, test, and deploy new and updated applications in an automated manner, following the CI/CD principles.
 
-This requirement further validates the suitability of Microsoft Defender for Cloud as the fundamental component of the proposed solution. Cloud Workload Protection Platform (CWPP) is one of the two core capabilities of Defender for Cloud. Its scope extends beyond Azure to on-premises and third-party clouds, including integration with AWS compute workloads such as Elastic Kubernetes Service (EKS) clusters and Elastic Compute Cloud (EC2) instances.
+Contoso should use GitHub Actions to automate its software development and delivery workflows. GitHub Actions provides the ability to implement workflows that fully automate building, testing, packaging, releasing, and deploying GitHub-based projects. Each workflow is made up of individual actions that run in response to a specific event, such as a pull request. GitHub Actions fully integrates with Azure services, including Azure App Service, Azure Container Registry, and Azure Key Vault. GitHub Actions also include support for such utilities as Azure Resource Manager and Bicep templates, Azure CLI, and Azure Policy.
 
-### Provide a solution to address the vulnerabilities of client devices used for remote access to the on-premises VDI environment.
+### Implement controls that minimize the risk of unauthorized access to CI/CD workflows.
 
-This requirement, combined with the lack of an existing mobile device management solution, influences the choice of Microsoft Intune for the management of personal devices. Windows client computers can be Microsoft Azure Active Directory (Azure AD) joined to provide a comprehensive set of security features. These features include passwordless authentication with Windows Hello for Business, single sign-on to both cloud and on-premises resources, support for Azure AD Conditional Access, and enforcement of organization-required configurations, such as disk encryption or software updates.
+GitHub Enterprise for Cloud integrates with Azure Active Directory (Azure AD), including its conditional access and multifactor authentication. Users can access a GitHub organization by relying on Security Assertion Markup Language (SAML)-based single sign-on (SSO). SAML SSO supports access controls to such organizational resources as repositories, issues, and pull requests. Organizations can implement System for Cross-domain Identity Management (SCIM) to add, manage, or remove organization member access within GitHub. 
 
-### Provide a tactical and strategic solution to address the vulnerabilities of the on-premises VDI environment.
+### Standardize the development environment and enhance its security with minimal administrative effort.
 
-This requirement distinguishes between the immediate goal of addressing vulnerabilities of the existing on-premises VDI implementation and a longer-term goal of transitioning to a cloud-based deployment of Azure Virtual Desktop. The former can be addressed by leveraging the capabilities of Microsoft Defender for Endpoint, while the latter delivers a modern solution that not only maximizes security and resiliency but also minimizes the operational overhead.
+Contoso should use GitHub Codespaces for both individual and shared development projects. These prebuilt development environments organized into containers provide correctly configured IDEs equipped with required security scanning extensions. With GitHub Codespaces, the developers can set up projects that build inside a container hosted by GitHub. By using Visual Studio Code's Remote feature, it becomes possible to connect a locally running Visual Studio Code instance to a Codespace and edit, build, deploy, and debug directly from that Codespace. Codespaces accelerate cloud adoption.
 
-### Recommend the approach to securing Tailwind Traders' on-premises and cloud computing resources. 
+### Protect backend APIs from misuse.
 
-This requirement focuses on the role of Microsoft Defender for Containers, which is part of Defender for Cloud, in securing Kubernetes-based workloads running on-premises and in third-party clouds. Microsoft Defender for Containers enhances the three main aspects of container security:
+Contoso should consider implementing API Management as part of their transition to the cloud-based operational model. Azure API Management is a hybrid, multicloud management platform for APIs hosted in Azure, third-party clouds, and on-premises environments. Azure API Management includes an API gateway component, which serves as an entry point for all incoming requests and forwards them to respective backend services. By configuring policies at the API gateway level, Contoso is able to properly authenticate and authorize access to its APIs.
 
-- Environment hardening protects your Kubernetes clusters running on Azure Kubernetes Service (AKS), on-premises, or on Amazon EKS. Defender for Containers continuously assesses cluster state and operations in order to discover any misconfigurations and provide guidelines that help mitigate potential threats.
-- Vulnerability assessment scans images stored in Azure Container Registry (ACR) and AWS Elastic Container Registry (ECR) for any known vulnerabilities.
-- Runtime threat protection for nodes and clusters generates security alerts in response to any suspicious activities.
+### Minimize security risks associated with security vulnerabilities introduced into custom code, secrets checked into repositories, and the use of OSS components.
 
-### Recommend a solution for the on-premises SIEM instance that would provide a single-pane of glass for the company's security operations team.
+A cloud-based DevSecOps implementation helps Contoso with mitigating risks associated with custom code, secrets checked into repositories, and the use of OSS components. To start, the company should adopt a zero-trust approach as one of the founding principles of its security strategy. This approach includes repetitive and automated validation of the integrity of DevOps processes and artifacts, including applying all relevant bug fixes and updates. 
 
-This requirement drives the choice of Microsoft Sentinel as the replacement for the on-premises Security Information and Event Management (SIEM) instance. Traditional on-premises SIEM deployments, unlike Sentinel, have limited scalability and do not provide AI or machine learning capabilities. 
+### Validate that applications deployed into the staging environment comply with the security standards before being deployed into the production environment
 
-### Identify security-related benefits resulting from the integration of on-premises and third-party cloud resources with Azure.
-
-This requirement suggests the use of Azure Arc as the technology that not only helps streamline the management and operational model but also enhances security. Azure Arc provides a unified view of the entire technology estate, which helps with identifying the security posture of all assets. In addition, Azure Arc delivers such features as Azure Policy-based compliance enforcement and assessment, GitOps-based configuration management for containerized workloads, Azure role-based access control (RBAC) for the control plane operations, and the use of VM extensions for maintaining the desired state configuration of Windows and Linux servers.
+This requirement can be addressed by using the native capabilities of Azure services that facilitate implementing staging environment. One of such services is App Service, which supports deployment slots. The equivalent functionality is supported by other services, including Azure Kubernetes Service, Azure Functions, and Azure Spring Apps.
 
 ## Answers to each conceptual question
 
-### What are the primary Microsoft Defender products and services that offer security solutions for an infrastructure?
+### What are the two primary Microsoft-managed DevOps offerings?
 
-Microsoft Defender comprises a suite of security-focused products, including Microsoft 365 Defender, Microsoft Defender for Cloud, Microsoft Defender for IoT, Microsoft Defender Threat Intelligence, and Microsoft Defender capabilities in the Windows operating system. Solutions focusing on infrastructure benefit directly or indirectly from all of them, but the ones of particular importance are Microsoft Defender for Cloud and Microsoft Defender for IoT. 
+The two primary Microsoft-managed DevOps offerings are Azure DevOps and GitHub. Each of them forms a sound foundation for implementing DevSecOps practices, so the choice is driven primarily by a customer's preference in regard to DevOps-related functionality. 
 
-Microsoft Defender for Cloud provides unified security management and advanced threat protection across hybrid and multicloud workloads. The following Defender for Cloud plans offer comprehensive defenses for the compute, data, and service layers of your environment:
+### Which mechanisms provide support for the CI/CD functionality in the Microsoft-managed DevOps offerings?
 
-- Defender for Servers
-- Defender for Storage
-- Defender for SQL
-- Defender for Containers
-- Defender for App Service
-- Defender for Key Vault
-- Defender for Resource Manager
-- Defender for DNS
-- Defender for open-source relational databases
-- Defender for Azure Cosmos DB
-- Defender for DevOps
+The mechanisms that provide support for the CI/CD functionality in the Microsoft-managed DevOps offerings consist of GitHub Actions and Azure Pipelines. Both represent examples of pipelines as code. Pipelines as code facilitate incorporating standard source control practices such as code reviews via pull request and versioning, they're audited by default, and they minimize the possibility of human error. 
 
-### How does Microsoft Defender for Cloud benefit Azure customers?
+### Which Microsoft cloud services contribute to enforcing DevSecOps practices when using GitHub for ALM?
 
-Defender for Cloud delivers the following three core capabilities: 
+The primary cloud service that helps enforce DevSecOps practices when using GitHub for ALM is Defender for DevOps, which is part of the Microsoft Defender for Cloud offerings. Defender for DevOps provides a unified interface that facilitates protecting applications and resources across multiple environments, including GitHub and Azure DevOps organizations. This simplifies correlation between cloud security-related events in order to prioritize remediation efforts.  
 
-- Secure Score provides a continuous assessment of the security posture of your environment, helping you to enhance and keep track of security-focused efforts.
-- Recommendations provide step-by-step guidance for workload protection from known security risks.
-- Alerts notify you about threats affecting your environment in real-time, facilitating a prompt response that minimizes the associated risk and potential impact.
+### Which security standards should be considered for onboarding new applications?
 
-### How and to what extent can the Microsoft Defender for Cloud benefits be extended to hybrid and multicloud scenarios?
+Microsoft Azure Well-Architected Framework offers guidance regarding securing code deployments and infrastructure in the areas of code deployment security, credential scanning, accelerated rollback and roll-forward that address critical bugs and code updates outside of the normal deployment lifecycle
 
-Because Defender for Cloud is an Azure-native service, many Azure services are monitored and protected automatically, without the need for any extra configuration or deployment tasks. You can extend that protection to resources that reside on-premises or in third-party public clouds, such as AWS or Google Cloud Platform (GCP). Implementation details are specific to the type of protected resource and the target environment.
 
-For example, by connecting your AWS account to your Defender for Cloud, you can extend the CSPM features to your AWS resources without having to deploy any agents. This provides a security assessment for your AWS resources according to AWS-specific security recommendations and compliance standards, automatically updating your secure score. You can also leverage Microsoft Defender for Containers, which applies its threat detection and advanced defenses to Amazon EKS clusters. Microsoft Defender for Servers brings threat detection and advanced defenses to Windows and Linux EC2 instances. 
+To prevent credentials from being stored in the source code or configuration files, integrate code scanning tools within the CI/CD pipeline. This can be implemented throughout the entire application lifecycle. For example, during design, code analyzers can prevent credentials from getting pushed to the source code repository. During build, pipeline add-ons can discover credentials in the source code. During CI process, dependency scanning. Dynamic application security testing (DAST) and static application security testing (SAST) allow for testing applications in use. 
 
-### What are the integration capabilities of Microsoft Defender for Cloud with other security-focused Microsoft cloud-based services?
+It's essential that any security-sensitive artifacts, such as secrets or private keys, are stored outside of version control systems and pipelines in a managed key store, such as Azure Key Vault. 
 
-With Microsoft Defender for Servers, you benefit from its integration with Microsoft Defender for Endpoint. Microsoft Defender for Endpoint is a holistic, cloud-delivered, endpoint security solution. Microsoft Defender for Cloud also integrates with Microsoft Defender for Cloud Apps. Another important integration point links Defender for Cloud with Microsoft Sentinel and is implemented as one of Sentinel's top connectors. 
 
-### How do the Microsoft Defender for Cloud native and integration capabilities help minimize the impact of cyberthreats?
+### Which DevSecOps activities are most suitable in individual stages of CI/CD workflows?
 
-Microsoft Defender for Endpoint protects Windows and Linux machines whether in Azure, on-premises, and in third-party cloud environments. This protection includes:
+DevSecOps applies innovation security by integrating security processes and tools into the DevOps development process. Because DevOps itself is an emerging discipline with a high degree of process variations, successful DevSecOps hinges on integrating security into the development process. Adding security should start with low-friction changes to the code, the development processes, and the infrastructure that hosts the workload. Focus first on changes with the highest positive effect on security while placing a low burden on DevOps processes and skills. However, strive to incorporate these into all stages of a CI/CD workflow, including plan and develop, commit the code, build and test, go to production, and operate.
 
-- Advanced post-breach detection sensors. Defender for Endpoint's sensors collect a vast array of behavioral signals from your machines.
-- Vulnerability assessment from the Microsoft threat and vulnerability management solution. With Microsoft Defender for Endpoint installed, Defender for Cloud can detect vulnerabilities discovered by the threat and vulnerability management module and also offer this module as a supported vulnerability assessment solution. 
-- Analytics-based, cloud-powered, post-breach detection. Defender for Endpoint quickly adapts to changing threats. It uses advanced analytics and big data. It's amplified by the power of the Intelligent Security Graph with signals across Windows, Azure, and Office to detect unknown threats. It also provides actionable, real-time alerts.
-- Threat intelligence. Defender for Endpoint generates alerts when it identifies attacker tools, techniques, and procedures. It uses data generated by Microsoft threat hunters and security teams, augmented by intelligence provided by partners.
+During plan and develop, follow threat modeling to analyze the application with the mindset of a potential attacker. Threat modeling is one of the most important security practices. It promotes documenting security aspects of your application that take into account how attackers can take advantage of the application's design and the way to fix vulnerabilities.
 
-The integration between Defender for Endpoint and Defender for Cloud offers the following capabilities:
+Another security consideration during development is the use of IDE security plug-ins, precommit hooks for lightweight static analysis, and peer reviews. That help incorporate secure coding practices, such as those available from OWASP.
+Code commit vulnerabilities can be identified by implementing repository scanning. Repository scanning tools perform static code analysis on source code within repositories. This protects primarily against human error.
 
-- Automated onboarding. Defender for Cloud automatically enables the Defender for Endpoint sensors on all supported machines connected to Defender for Cloud.
-- Single-pane of glass. The Defender for Cloud portal pages display Defender for Endpoint alerts. To investigate them further, you can use Microsoft Defender for Endpoint pages in the Microsoft Defender 365 portal, where you'll find additional information such as the alert process tree and the incident graph. 
+Lack of proper dependency management is another common source of security issues. Development teams should use only obtain up-to-date dependencies from known sources. The same considerations apply to the configuration of package feeds. 
+Static application security testing (SAST) should be an integral part of continuous integration. This testing verifies security as soon as code changes happen. Dynamic application security testing (DAST) should be part of penetration testing, which treats the application from a black-box security perspective, mirroring an attacker mindset. DAST tools are commonly referred to as web application vulnerability scanners.  Since a full-fledged pen test might take up to several weeks, typical DevOps workflows use lighter versions. This helps to uncover issues missed by SAST. DAST should also incorporate infrastructure scanning to ensure that the target environments where the applications are deployed to are also secure.
 
-The integration between Defender for Endpoint and Defender for Cloud Apps provides you with the ability to perform anomaly detection against the Azure activity logs.
+To ensure the consistency of the target environment, it's recommended to extend the concepts of DevOps to provisioning and maintaining infrastructure by implementing infrastructure as code (IaC). IaC designates the management of infrastructure in a declarative manner. IaC allows for the same versioning model as the one used for application source code. This also brings the same set of principles that apply to application security into the realm of infrastructure security.
 
-Microsoft Defender for Cloud connector of Microsoft Sentinel allows you to stream security alerts from Defender for Cloud into Microsoft Sentinel. This allows for viewing, analyzing, and responding to Defender alerts, along with the incidents they generate, in a broader organizational threat context.
+Security must be maintained after an application reaches the production stage. When operating in Azure, the platform offers other monitoring and security services such as Microsoft Defender for Cloud and Microsoft Sentinel. One of the benefits of these services is the ability to detect anomalous events or configurations that require investigation and potential remediation. More feedback can be obtained from Azure Policy and Azure Monitor. Commonly, such feedback is integrated into Azure DevOps or GitHub workflows, allowing developers to rapidly respond and resolve any issues application related issues.
 
-### What are the considerations and requirements that should be taken into account when onboarding to Microsoft Defender for Cloud resources residing in Azure, on-premises, and in third-party cloud environments?
+### Which Microsoft Cloud services facilitate enhanced protection of Web Services APIs, including those hosted in on-premises and third-party cloud environments?
 
-From the commercial standpoint, Defender for Cloud offers basic and enhanced security features that help protect your organization against threats and attacks. Basic features are enabled for free within each Azure subscription and consist of foundational cloud security and posture management (CSPM) capabilities. These capabilities include secure score, security policy, basic recommendations, and network security assessment for Azure resources. Enhanced features comprise a range of paid-for offerings that deliver unified security management and threat protection across Azure, on-premises, and third-party cloud workloads.
+Azure API Management is a hybrid, multicloud management platform for APIs hosted in Azure, third-party clouds, and on-premises environments. Azure API Management includes an API gateway component, which serves as an entry point for all incoming requests and forwards them to respective backend services. The API gateway allows API providers to abstract API implementations and modify backend components without impacting API consumers. It also helps enhance security of these components through policies that provide support for such features as authentication and authorization, quotas and rate limiting, restricting callers based on the originating IP address, as well as rewriting of HTTP headers and URLs. 
 
-From the planning and implementation standpoint, the full functionality of Defender for Servers depends on log collection, which requires installing either the Log Analytics Agent or the Azure Monitor Agent. As part of the planning stage, ensure that your target servers are running one of the supported operating systems for the agent you choose. Your implementation plan should account for the need to install that agent.
 
-From the functionality standpoint, the range of supported features is determined by the type of target service, the underlying compute platform, and its location. For example, the list of features for servers differs depending on whether they are implemented as Azure VMs or Azure-Arc enabled machines, whether they are running a Windows or Linux operating system, and, whether they reside on-premises or are hosted in third-party clouds. Similar dependencies exist for containerized workloads. In regard to Azure PaaS services, Defender for Cloud offers free recommendations for a large number of them, but security alerts and vulnerability assessments are more limited in scope.
+### How would you evaluate and enforce the compliance and security of applications deployed by using CI/CD workflows?
 
-### What security measures provided by Microsoft help secure Azure Virtual Desktop deployments?
-
-Enhanced security features of Defender for Cloud provide protection for Azure Virtual Desktop workloads, including vulnerability management, compliance assessments based on common frameworks like Payment Card Industry (PCI), and overall strengthening of their security posture. For server operating systems functioning as Azure Virtual Desktop hosts, you will benefit from the integration between Defender for Cloud and Defender for Endpoint. For client operating systems, you can deploy Defender for Endpoint directly.
+GitHub Marketplace offers many actions that help evaluate and enforce the compliance and security of applications deployed by using CI/CD workflows. For example, GitHub Action for Azure Policy Compliance Scan allows you to trigger an on-demand scan from your GitHub workflow on one or multiple resources, resource groups or subscriptions, and continue or fail the workflow based on the result of the scan. You can also use this GitHub Action to generate a report on the compliance state of scanned resources for further analysis or archiving.
 
 
 ## Answers to each design question
 
-### How would you leverage the primary capabilities of Microsoft Defender for Cloud to address the company's needs?
+### Which Azure services would you consider as a replacement for the existing on-premises components of Contoso’s infrastructure?
 
-The company's needs can be addressed by leveraging both the CSPM and CWPP capabilities of Microsoft Defender for Cloud. The former implements a comprehensive, continuous assessment of the company-wide security posture for on-premises and cloud infrastructure. The latter implements a comprehensive, continuous threat protection of the company's technology environment for on-premises and cloud infrastructures.
+Contoso can replace their on-premises Azure DevOps Server with Git-based repositories hosted in a GitHub account or an Azure DevOps organization. Both options fully support version control and ALM without the overhead of administering and maintaining the underlying infrastructure. GitHub actions and Azure Pipelines deliver enhanced automation capabilities compared with Jenkins. The services delivered by on-premises Web, API, and SQL Server deployments can be migrated to a wide range of Azure-managed services that provide the equivalent functionality. For example, both web apps and API apps, including the containerized instances, are suitable for deployment to Azure App Service. Azure Container Registry can serve as a replacement for the Docker Registry server to store container images for backend APIs. This, effectively, would allow Contoso to fully transition to the cloud-only model and eliminate its dependency on the leased datacenter space.
 
-### Which plans and components of Microsoft Defender for Cloud are most significant to consider in the context of the case study?
+### Which GitHub features would you use to implement CI/CD functionality for Contoso?
 
-The most significant plans and components of Microsoft Defender for Cloud include the following:
+GitHub simplifies development of collaborative projects through features such as issues, discussions, pull requests, notifications, labels, actions, forks, and projects. While Contoso benefits from all of these features, GitHub Actions is of particular importance in the context of the CI/CD functionality. GitHub actions streamline the software development lifecycle and implement CI/CD workflows. 
 
-- Basic and enhanced CSPM features 
-- Defender for Servers
-- Defender for Containers
-- Defender for SQL
-- Defender for open-source relational databases
-- Defender for Storage
-- Defender for App Service
+Contoso should also consider purchasing GitHub Enterprise Cloud with GitHub Advanced Security and taking advantage of Dependabot functionality. This allows for incorporating code scanning into CI/CD workflows and automatic pull request generation that, once merged into the main branch, automatically upgrade third-party and open-source dependencies to their nonvulnerable versions. 
 
-### Which benefits of enhanced security features of Microsoft Defender for Cloud would help the company to optimize its security stance and protect its infrastructure?
+### How would you minimize the risk of unauthorized use of CI/CD workflows for Contoso?
 
-Basic CSPM features deliver continuous assessment of the security configuration of your cloud resources, security recommendations to fix misconfigurations and weaknesses, and secure score for cloud-based resources. With enhanced CSPM features, these capabilities extend to on-premises resources and, additionally, include governance and regulatory compliance, cloud security explorer, attack path analysis, as well as agentless scanning for virtual machines.
+In order to transition to GitHub-based CI/CID workflows in the most secure manner, Contoso should create an Azure AD tenant and enable multifactor authentication. GitHub Enterprise Cloud supports modern authentication and integrates with Azure AD, including its conditional access and multifactor authentication capabilities. This won't only enhance authentication security but also centralize identity management and resource authorization. Users are able to access GitHub resources such as repositories, issues, and pull requests by using SAML-based single sign-on. With GitHub Enterprise Cloud, Contoso could also implement System for Cross-domain Identity Management (SCIM) to facilitate user provisioning.
 
-Defender for Servers extends protection to Windows and Linux machines that run in Azure, AWS, and on-premises. It integrates with Defender for Endpoint to provide endpoint detection and response (EDR) and other threat protection features.
+In addition, Contoso should make sure that the credentials being used within workflows have the least privileges required and protect access to GitHub repositories. In addition, any security sensitive-artifacts, such as secrets or private keys should be stored outside of version control systems and pipelines in a managed key store, such as Azure Key Vault.
 
-Defender for Containers, which is part of Defender for Cloud, helps with securing Kubernetes-based workloads running on-premises and in third-party clouds. 
-Defender for SQL helps discover and mitigate potential database vulnerabilities and alerts about anomalous activities that may indicate an impending threat. 
-Defender for open-source relational databases brings a similar set of features to open-source relational databases, including Azure Database for PostgreSQL, Azure Database for MySQL, and Azure Database for MariaDB.
-Defender for Storage detects unusual and potentially harmful attempts to access storage accounts. 
-Defender for App Service assesses the resources that constitute App Service plan-based workloads and generates security recommendations based on its findings. These resources include the VM instances on which your App Service is running. 
+### What managed service could help you standardize the development environment for Contoso's development team?
 
-Contoso would also benefit from onboarding its resources to Defender for Key Vault and Defender for Resource Manager.
+Contoso should use GitHub Codespaces for both individual and shared development projects. These prebuilt, container-based development environments provide correctly configured IDEs equipped with the latest security scanning extensions. 
 
-### What are the main considerations and requirements that you would include in your design of onboarding the company's resources onto Microsoft Defender for Cloud?
+### How would you enhance protection of backend APIs that are used by Contoso's web and mobile applications?
 
-Considering that all of the on-premises and cloud-based resources in the scope of the proposed solution are supported by enhanced protection of Microsoft Defender for Cloud, the first step would involve evaluating the commercial implications. The simplest method to estimate the cost of your solution is to use the Price Estimation workbook accessible from the Microsoft Defender for Cloud interface in the Azure portal. Since individual plans are configurable independently, it is possible to roll them out in a gradual manner. The 30-day trial period provides a convenient option to validate the expected functionality by using a small-scale pilot deployment.
+Contoso should consider implementing Azure API Management as part of their transition to the cloud-based operational model. With API Management, Contoso is able authenticate incoming requests by relying on such methods as JWT or certificates before authorizing access to their backend APIs. API Management will also allow Contoso to enforce usage quotas and rate limits in order to minimizing the impact of potential DDOS attacks. By creating custom policies, Contoso developers will be able to transform API responses to prevent disclosure of sensitive data.
 
-From the planning and implementation standpoint, to provide the required Defender for Cloud functionality for the company's on-premises and cloud workloads, you will need to deploy the Log Analytics Agent or Azure Monitor Agent. The proposed solution takes into account the automated agent deployment options.
+### What would you recommend to minimize security risks associated with security vulnerabilities introduced into custom code, secrets checked into repositories, and the use of open-source software (OSS) components in Contoso's applications?
 
-### How would you minimize the effort and time involved in implementing your solution?
+A cloud-based DevSecOps implementation helps Contoso with mitigating risks associated with using OSS components. To start, the company should adopt a zero-trust approach to OSS and third-party components. This approach involves repetitive and automated validation of the integrity of these components, including applying all relevant bug fixes and updates. 
 
-In general, onboarding Azure resources to Microsoft Defender tends to be straightforward and requires very limited administrative effort. Defender for Servers includes the auto-provisioning configuration option which automatically installs Log Analytics Agent or Azure Monitor Agent, depending on your preferences. The same applies to Defender for Cloud deployments targeting AWS by using the native cloud connector.
+Contoso should also use GitHub native code scanning, available by default for all public repositories. By creating a GitHub Enterprise Cloud organization with a GitHub Advanced Security license, Contoso will also be able to extend the scope of code scanning to its private repositories. This allows Contoso developers to automatically detect security vulnerabilities and coding errors in their code, detect secrets such as keys and tokens stored accidentally in public or private repositories, as well as identify any vulnerable dependencies in a pull request before invoking a merge operation.
 
-For on-premises deployments, you should leverage the support for bulk, automated deployments of Azure Arc that rely on an installation script you can generate directly from the Azure portal. With Azure Arc in place, you can use the same auto-provisioning option that is applicable to Azure Virtual Machines. 
+Contoso will also be able to use the functionality of the Dependabot component of GitHub, which automatically searches for dependencies within repositories and checks them for known vulnerabilities recorded in the GitHub's Advisory Database. In case such dependencies do exist, Dependabot automatically generates pull requests facilitating upgrades to their nonvulnerable versions. 
 
-For multisubscription deployments, you might consider automation. Infrastructure as Code (IaC) is a particularly interesting option since it ties to DevSecOps and allows you to leverage declarative deployments through Bicep, Azure Resource Manager, or Terraform template. Other benefits of this approach are associated with using version control for tracking changes to the deployment templates and Continuous Integration/Continuous Deployment (CI/CD) pipelines, which facilitate multistaged validations and gated controls. 
+To enhance these capabilities, Contoso should consider implementing Defender for DevOps, which is part of Microsoft Defender for Cloud. Defender for DevOps offers a centralized console that facilitates protecting applications and resources across multipipeline environments, including GitHub and Azure DevOps. Findings from Defender for DevOps can then be correlated with other contextual cloud security insights to prioritize remediation in code. 
 
-### What additional security-focused Microsoft cloud-based services would you consider including in your design?
+In addition, Contoso would benefit from the functionality offered by Defender for Containers, which provides the ability to scan container images stored in Azure Container Registry, as part of the protections provided within Microsoft Defender for Cloud. Any vulnerabilities detected by the scanner are automatically surfaced by Defender for Cloud. The automatically generated information includes remediation steps, relevant Common Vulnerabilities and Exposures (CVEs) references, and the corresponding Common Vulnerability Scoring System scores (CVSS). 
 
-As part of your solution, consider adding Microsoft Sentinel as the replacement for the on-premises SIEM instance. Traditional on-premises SIEM deployments, unlike Sentinel, have limited scalability and do not provide AI or machine learning capabilities. In addition, Microsoft Sentinel integrates with Microsoft Defender for Cloud by using a dedicated connector. The connector streams security alerts from Defender for Cloud into Microsoft Sentinel. This facilitates viewing, analyzing, and responding to Defender alerts, along with the incidents they generate, in a broader organizational threat context.
+The scans are triggered automatically whenever an image is pushed to or imported into the registry. In addition, Defender for Containers also scans, on a weekly basis, any image that has been pulled within the last 30 days to identify any newly discovered vulnerabilities. 
 
-Microsoft Intune is another cloud service you should incorporate in your design. While its primary focus is on mobile device and application management, it also allows for the enforcement of security-related features such as disk encryption, installation of software updates, and integration with Azure AD Conditional Access. 
+Defender for Cloud filters and classifies findings from the scanner. Images without vulnerabilities are marked as healthy and Defender for Cloud doesn't send notifications about healthy images to keep you from getting unwanted informational alerts.
 
-### Which elements of your design should be implemented as soon as possible and which ones are suitable as part of a longer-term solution? 
 
-The first step towards implementing the comprehensive infrastructure security solution for Contoso is to create an Azure AD tenant and integrate it with the on-premises AD DS environment. That integration will constitute the starting point for setting up Azure subscriptions and provisioning Azure services such as Microsoft Defender for Cloud and Microsoft Intune. This will be essential for subsequent stages of the transition to the cloud-based security model. This should be followed by remediating security vulnerabilities in the existing environment, including enrolling remote client computers into Intune, integrating on-premises and AWS resources with Microsoft Defender for Cloud through Azure Arc, and protecting the VDI farm. At that point, you should also consider leveraging other Azure services, such as Azure Update Management to address any gaps in patch levels of existing servers. 
+### Which functionality would allow Contoso's developer and operations teams to validate that a new version of an application deployed into the staging environment complies with the security standards, before deploying it into the production environment?
 
-The longer-term goals should involve modernizing the existing environment by transitioning on-premises workloads to Azure. This would include migrating the on-premises VDI farm to Azure Virtual Desktop and replacing on-premises SIEM with Microsoft Sentinel.
+Contoso is able to use a wide range of Azure services that closely integrate with DevOps workflows. That integration is evident when using Azure App Service, which is the most suitable option for Contoso to transition its on-premises web apps to Azure. When deploying web apps and API apps to Azure App Service, Contoso DevOps teams could target a separate deployment slot instead of the default production slot. Deploying applications to a nonproduction slot allows for validating app changes in a staging deployment slot before swapping it with the production slot. In addition, after a swap, the slot with the previously staged app will contain the previous version of the app. This facilitates a rapid failback to address any unexpected functionality, security, or performance-related issues introduced by an app update.
+
+To further enhance this capability, Contoso’s development team should build a workflow that deploys a new version of an application into a staging environment and makes the switch to production contingent on passing a range of validation tasks. To accomplish this, the status of the new version can be evaluated by using tools such as Azure Monitor and Azure Application Insights. It's also possible to make the deployment contingent on complying with an Azure Policy assignment.
 
 ## Proposed solution architecture
 
