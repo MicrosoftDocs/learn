@@ -27,58 +27,45 @@ durationInMinutes: 1
 content: |
 quiz:
   questions:
-  - content: ""
+  - content: "What is the purpose of the Cloud Adoption Framework?"
     choices:
-    - content: ""
+    - content: "To provide a framework for migrating on-premises data centers to the cloud"
+      isCorrect: false
+      explanation: "The Cloud Adoption Framework provides guidance on how to adopt and implement cloud technologies securely, efficiently and effectively."
+    - content: "To help organizations build secure applications and infrastructure in the cloud"
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "The Cloud Adoption Framework helps organizations to design, deploy and operate cloud workloads that are consistent with their business objectives and meet security and compliance requirements."
+    - content: "To establish security standards within the organization"
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "The Cloud Adoption Framework does not specifically address establishing security standards within an organization."
+    - content: "To provide guidance on network architecture for hybrid environments"
       isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "The Cloud Adoption Framework does not specifically address network architecture for hybrid environments."
+  - content: "Which of the following is a key principle of the Well-Architected Framework?"
     choices:
-    - content: ""
+    - content: "Optimize for ease of use"
+      isCorrect: false
+      explanation: "A key principle of the Well-Architected Framework is 'optimize for cost', which means making trade-offs between the cost of running your workloads and the value they provide to your organization."
+    - content: "Plan for failure"
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Another key principle of the Well-Architected Framework is 'design for failure', which means planning for potential problems and creating resilient systems that can withstand failures without significant downtime or data loss."
+    - content: "Choose proprietary technology solutions over open source options"
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "The Well-Architected Framework does not make any recommendations regarding the choice of proprietary vs open source technology solutions."
+    - content: "Maximize use of third-party services for application development"
       isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "While the Well-Architected Framework does encourage the use of managed services provided by cloud service providers, it does not specifically recommend maximizing the use of third-party services for application development."
+  - content: "What is a critical component of business resiliency planning?"
     choices:
-    - content: ""
+    - content: "Strict adherence to company policies and procedures"
+      isCorrect: false
+      explanation: "Adhering to policies and procedures is important, but isn't a critical component of business resiliency planning."
+    - content: "Performing regular risk assessments"
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Understanding potential risks is key to developing effective resiliency plans. Regular risk assessments help identify these risks and allow for appropriate mitigation strategies to be developed."
+    - content: "Establishing clear lines of communication and decision-making authority "
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "While clear lines of communication are important during disruptions, they are not a critical component of business resiliency planning."
+    - content: "Frequently performing simulated disaster scenarios"
       isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      explanation: "Simulating disaster scenarios is important, but isn't a critical component of business resiliency planning."
