@@ -49,7 +49,7 @@ Before you can publish modules, you need to create a registry for your organizat
 
 In the preceding unit, you learned about the importance of having a versioning strategy for your modules. You also learned how to use module metadata files to specify the major and minor version number of your module within a workflow. Here, you add a metadata file for your storage account module.
 
-1. In Visual Studio Code, expand the _modules_ folder in the root of your repository. Then, expand the _storage-account_ folder.
+1. In Visual Studio Code, expand the _modules/storage-account_ folder in the root of your repository.
 
 1. Create a new file named _metadata.json_.
 
@@ -67,7 +67,7 @@ In the preceding unit, you learned about the importance of having a versioning s
 
 Your repository contains a draft of a workflow that you can use as a starting point.
 
-1. In Visual Studio Code, expand the _.github_ folder in the root of the repository. Then, expand the _workflows_ folder.
+1. In Visual Studio Code, expand the _.github/workflows_ folder in the root of the repository.
 
 1. Open the _module-storage-account.yml_ file.
 

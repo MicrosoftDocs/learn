@@ -4,7 +4,7 @@ When you automate the publishing process, you need to consider how to automate t
 
 ## Version numbers
 
-In previous Microsoft Learn modules, you learned about the importance of versioning for template specs and Bicep modules. You can choose from many different versioning approaches. In many situations, it's a good practice to use a _multipart_ versioning system. A multipart versioning system consists of a _major_ version, _minor_ version, and _revision_ number, similar to the following example:
+In previous Microsoft Learn training modules, you learned about the importance of versioning for template specs and Bicep modules. You can choose from many different versioning approaches. In many situations, it's a good practice to use a _multipart_ versioning system. A multipart versioning system consists of a _major_ version, _minor_ version, and _revision_ number, similar to the following example:
 
 :::image type="content" source="../media/5-version-number.png" alt-text="Diagram that shows the version number 1.4.106." border="false":::
 
@@ -27,7 +27,7 @@ For example, suppose you're using a Bicep module that somebody else has publishe
 
 Your team needs to decide how to define a breaking change for the purpose of versioning. For example, suppose you've built a Bicep module that deploys a storage account. You're now updating the Bicep file to enable private endpoints on your storage account. You're adding a private DNS zone to your Bicep file at the same time.
 
-In that example, you might be able to make the change without affecting the Bicep file's parameters or outputs. That way, anybody who deploys the file might not notice that anything is different. But this change introduces a significant difference in the behavior of your resources, so you might decide to treat it as a major version update regardless.
+In that example, you might be able to make the change without affecting the Bicep file's parameters or outputs. That way, anybody who deploys the file might not notice that anything is different. But this change introduces a significant difference in the behavior of your resources, so you might decide to treat it as a major version update.
 
 You can also choose to use a simpler versioning strategy, such as just using the workflow's run number as your version number. Although this approach is easier to implement, it means you can't effectively communicate the differences between versions to anybody who uses your code.
 
@@ -73,19 +73,19 @@ Suppose you change only the _module-2/main.bicep_ file. Only the workflow for mo
 > [!NOTE]
 > The approach of creating a workflow for each of your reusable Bicep files is simple and flexible. But it can become cumbersome when you have a large number of Bicep files, or if you don't want to maintain separate workflows for each module and template spec.
 >
-> You can also write scripts within your workflow to find the code that's changed and publish just those files. This is a more complex approach, and it's beyond the scope of this Microsoft Learn module.
+> You can also write scripts within your workflow to find the code that's changed and publish just those files. This is a more complex approach, and it's beyond the scope of this Microsoft Learn training module.
 
 ## Environments for reusable Bicep code
 
-When you deploy to Azure by using Bicep, it's common to use multiple environments to help you to validate and test your code before it's published to a production environment. In previous Microsoft Learn modules, you learned how to work with multiple environments from a deployment workflow.
+When you deploy to Azure by using Bicep, it's common to use multiple environments to help you to validate and test your code before it's published to a production environment. In previous Microsoft Learn training modules, you learned how to work with multiple environments from a deployment workflow.
 
 Some organizations apply the same principles to Bicep modules and template specs. For example, you might first publish new versions of your modules to a nonproduction registry so that the users of each module can try out the new versions. Then, after they've signed off, you can publish the modules to your organization's production registry.
 
-Like regular deployments, you can use _jobs_ and _reusable workflows_ to define the deployment sequence across your environments. In this Microsoft Learn module, we publish to a single environment to keep the workflow simple.
+Like regular deployments, you can use _jobs_ and _reusable workflows_ to define the deployment sequence across your environments. In this Microsoft Learn training module, we publish to a single environment to keep the workflow simple.
 
 When you consume modules from a registry or use a template spec as a Bicep module, you can use _aliases_. Instead of specifying the registry name or the template spec's location every time you define a module, you use its alias.
 
-By using aliases, you can make your deployment process easily work across multiple environments. For example, when you define a module, you might use an alias instead of a registry name. Then, you can design a deployment workflow to configure the alias to be mapped to:
+By using aliases, you can make your deployment process work across multiple environments. For example, when you define a module, you might use an alias instead of a registry name. Then, you can design a deployment workflow to configure the alias to be mapped to:
 
 - A development module registry when you're deploying to a sandbox environment.
 - A production registry when you're deploying to other environments.

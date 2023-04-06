@@ -20,7 +20,7 @@ Beyond linting, you might want to consider testing your template specs and modul
 - Preflight validation and deployments require an Azure environment to deploy the resources to. You might need to maintain a dedicated Azure subscription or resource group to use for deploying and testing your modules.
 - Many template specs and modules require you to specify a set of parameters. You might need to create a test set of parameters for your template specs or modules to use when they're deployed.
 
-You should choose whether to include workflow steps that deploy and test your template specs and modules. In this Microsoft Learn module, we lint the Bicep code but don't include other forms of testing. If you want to test your template specs and modules, consider how you'll deploy them to Azure. Also consider whether you'll use dedicated subscriptions or resource groups to deploy the resources.
+You should choose whether to include workflow steps that deploy and test your template specs and modules. In this Microsoft Learn training module, we lint the Bicep code but don't include other forms of testing. If you want to test your template specs and modules, consider how you'll deploy them to Azure. Also consider whether you'll use dedicated subscriptions or resource groups to deploy the resources.
 
 > [!TIP]
 > We recommend that you review [Test your Bicep code by using GitHub Actions](xref:learn.azure.test-bicep-code-using-github-actions) for more information on how to test your Bicep files in an automated workflow.
@@ -38,7 +38,7 @@ When you work with an automated deployment workflow, the same principles apply. 
 
 ## Publish template specs and modules from a workflow
 
-When you publish a template spec from your own computer by using the Azure CLI, you use a command like the following one:
+When you publish a template spec from your own computer by using the Azure CLI, you use a command like the following:
 
 ```azurecli
 az ts create \
@@ -68,7 +68,7 @@ You can convert this Azure CLI command to a GitHub Actions step:
 
 The workflow uses the same process to publish the template spec that you would use yourself.
 
-Similarly, when you publish a Bicep module from your own computer by using the Azure CLI, you use a command like the following one:
+Similarly, when you publish a Bicep module from your own computer by using the Azure CLI, you use a command like the following:
 
 ```azurecli
 az bicep publish \
@@ -89,12 +89,12 @@ You can convert this Azure CLI command to a GitHub Actions step, too:
 ```
 
 > [!TIP]
-> In this example, the Bicep registry's host name (`toycompany.azurecr.io`) is embedded in the workflow step definition. This isn't a good practice. You can use environment variables to set configuration settings like this. You'll see how this works later in this Microsoft Learn module.
+> In this example, the Bicep registry's host name (`toycompany.azurecr.io`) is embedded in the workflow step definition. This isn't a good practice. You can use environment variables to set configuration settings like this. You'll see how this works later in this Microsoft Learn training module.
 
 Shortly, you'll see how you can publish a template spec from a workflow by using the steps described in this unit.
 
 ## Use a module or template spec
 
-In previous Microsoft Learn modules, you learned how to deploy the resources defined in template specs, and how to use Bicep modules stored in registries. Whether you publish your template specs and modules manually or from a deployment workflow, you use and deploy them in the same way.
+In previous Microsoft Learn training modules, you learned how to deploy the resources defined in template specs, and how to use Bicep modules stored in registries. Whether you publish your template specs and modules manually or from a deployment workflow, you use and deploy them in the same way.
 
 For example, you deploy a template spec or Bicep file to a resource group by using the `az deployment group create` Azure CLI command, or the `New-AzResourceGroupDeployment` cmdlet with Azure PowerShell.

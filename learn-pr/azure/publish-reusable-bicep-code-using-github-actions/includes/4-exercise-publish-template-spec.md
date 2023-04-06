@@ -13,7 +13,7 @@ During the process, you'll:
 
 Your repository contains a draft of a workflow that you can use as a starting point.
 
-1. In Visual Studio Code, expand the _.github_ folder in the root of the repository. Then, expand the _workflows_ folder.
+1. In Visual Studio Code, expand the _.github/workflows_ folder in the root of the repository.
 
 1. Open the _template-spec-linux-app-service.yml_ file.
 

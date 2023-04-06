@@ -173,33 +173,33 @@ Next, create a resource group for your website. This process also grants the wor
 
 ::: zone pivot="cli"
 
-1. Run the following Azure CLI commands in the Visual Studio Code terminal:
+Run the following Azure CLI commands in the Visual Studio Code terminal:
 
-   ```bash
-   resourceGroupResourceId=$(az group create --name ToyReusable --location westus3 --query id --output tsv)
+```bash
+resourceGroupResourceId=$(az group create --name ToyReusable --location westus3 --query id --output tsv)
 
-   az ad sp create --id $applicationRegistrationObjectId
-   az role assignment create \
-      --assignee $applicationRegistrationAppId \
-      --role Contributor \
-      --scope $resourceGroupResourceId
-   ```
+az ad sp create --id $applicationRegistrationObjectId
+az role assignment create \
+  --assignee $applicationRegistrationAppId \
+  --role Contributor \
+  --scope $resourceGroupResourceId
+```
 
 ::: zone-end
 
 ::: zone pivot="powershell"
 
-1. Run the following Azure PowerShell commands in the Visual Studio Code terminal:
+Run the following Azure PowerShell commands in the Visual Studio Code terminal:
 
-   ```azurepowershell
-   $resourceGroup = New-AzResourceGroup -Name ToyReusable -Location westus3
+```azurepowershell
+$resourceGroup = New-AzResourceGroup -Name ToyReusable -Location westus3
 
-   New-AzADServicePrincipal -AppId $applicationRegistration.AppId
-   New-AzRoleAssignment `
-      -ApplicationId $applicationRegistration.AppId `
-      -RoleDefinitionName Contributor `
-      -Scope $resourceGroup.ResourceId
-   ```
+New-AzADServicePrincipal -AppId $applicationRegistration.AppId
+New-AzRoleAssignment `
+  -ApplicationId $applicationRegistration.AppId `
+  -RoleDefinitionName Contributor `
+  -Scope $resourceGroup.ResourceId
+```
 
 ::: zone-end
 
