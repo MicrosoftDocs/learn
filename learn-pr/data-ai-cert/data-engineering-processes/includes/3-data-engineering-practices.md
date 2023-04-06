@@ -33,15 +33,15 @@ During the extraction process, data engineers define the data and its source:
 
 **Define the destination**: During a load, many Azure destinations can accept data formatted as a JavaScript Object Notation (JSON), file, or blob. You might need to write code to interact with application APIs.
 
-Azure Data Factory offers built-in support for Azure Functions. You'll also find support for many programming languages, including Node.js, .NET, Python, and Java. Although Extensible Markup Language (XML) was common in the past, most systems have migrated to JSON because of its flexibility as a semistructured data type.
+Azure Data Factory offers built-in support for Azure Functions. It has support for many programming languages, including Node.js, .NET, Python, and Java. Although Extensible Markup Language (XML) was common in the past, most systems have migrated to JSON because of its flexibility as a semistructured data type.
 
 **Start the job**: Test the ETL job in a development or test environment. Then migrate the job to a production environment to load the production system.
 
-**Monitor the job**: ETL operations can involve many complex processes. Set up a proactive and reactive monitoring system to provide information when things go wrong. Set up logging according to the technology that will use it.
+**Monitor the job**: ETL operations can involve many complex processes. Set up a proactive and reactive monitoring system to provide information when things go wrong. Set up logging according to the technology that uses it.
 
 ## ETL tools
 
-As a data engineer, you'll use several tools for ETL. The most common tool is Azure Data Factory, which provides robust resources and nearly 100 enterprise connectors. Data Factory also allows you to transform data by using a wide variety of languages.
+As a data engineer, you use several tools for ETL. The most common tool is Azure Data Factory, which provides robust resources and nearly 100 enterprise connectors. Data Factory also allows you to transform data by using a wide variety of languages.
 
 You might find that you also need a repository to maintain information about your organization's data sources and dictionaries. Azure Data Catalog can store this information centrally.
 
@@ -67,7 +67,7 @@ Design data projects in phases that reflect the ELT approach:
 - **Ingest**: Identify the technology and method to load the data.
 - **Prepare**: Identify the technology and method to transform or prepare the data.
 
-Also consider the technologies you'll use to analyze and consume the data within the project. These are the next two phases of the process:
+Consider the technologies that are needed to analyze and consume the data within the project:
 
 - **Analyze**: Identify the technology and method to analyze the data.
 - **Consume**: Identify the technology and method to consume and present the data.

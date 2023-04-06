@@ -1,7 +1,18 @@
 You're all done with the tasks for this module. You'll now move the work item to the **Done** state on Azure Boards, and clean up your Azure DevOps environment.
 
+::: zone pivot="ms-hosted-agents"
+
 > [!IMPORTANT]
-> This page has important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to do the cleanup steps if you ran the template earlier in this module.
+> This page has important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes for Microst-hosted agents ([check your usage](/azure/devops/pipelines/troubleshooting/troubleshooting#check-for-available-parallel-jobs)). Be sure to do the cleanup steps even if you don't complete this module.
+
+::: zone-end
+
+::: zone pivot="github-codespaces-agent"
+
+> [!IMPORTANT]
+> This page has important cleanup steps. Cleaning up helps ensure that you don't run out of free GitHub Codespaces [included usage hours and storage](https://docs.github.com/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces#monthly-included-storage-and-core-hours-for-personal-accounts) ([check your usage](https://docs.github.com/billing/managing-billing-for-github-codespaces/viewing-your-github-codespaces-usage)). Be sure to do the cleanup steps even if you don't complete this module.
+
+::: zone-end
 
 ## Move the work item to Done
 
@@ -56,3 +67,17 @@ To delete the project:
 1. In the window that appears, enter the project name, and select **Delete** a second time.
 
     Your project is now deleted.
+
+::: zone pivot="github-codespaces-agent"
+
+## Delete your GitHub Codespace
+
+1. In your forked GitHub repository, select **Code**.
+
+1. Select the **Codespaces** tab.
+
+1. Select **...** by your Codespace, and choose **Delete**.
+
+    :::image type="content" source="../media/9-delete-codespace.png" alt-text="Screenshot of deleting a Codespace. ":::
+
+::: zone-end

@@ -1,6 +1,6 @@
 You've discovered that spikes in traffic can overwhelm our middle-tier. To deal with this issue, you've decided to add a queue between the front end and the middle tier in your article-upload application.
 
-The first step in creating a queue is to create the Azure Storage Account that will store our data.
+The first step in creating a queue is to create the Azure Storage Account to store our data.
 
 ## Create a storage account with the Azure CLI
 
@@ -25,7 +25,7 @@ The command needs several parameters:
 Here's an example command line that uses these parameters. Make sure to change the `--name` parameter.
 
 ```azurecli
-az storage account create --name [unique-name] -g <rgn>[sandbox resource group name]</rgn> --kind StorageV2 --sku Standard_LRS
+az storage account create -g <rgn>[sandbox resource group name]</rgn> --kind StorageV2 --sku Standard_LRS --name [unique-name]
 ```
 
 <!-- Paste tip-->
