@@ -4,8 +4,6 @@ Agility and time to value are of upmost importance in today's modern technology 
 
 So let's set up our stream of data back into an ADLS Gen2 folder called **mastered**:
 
-1. Create a new folder in your ADLS Gen 2 account called **mastered**.
-
 1. Gather the account key for your storage account by:
 
     1. Under **Security + networking**, select **Access keys**. Your account access keys appear, and the complete connection string for each key.
@@ -14,19 +12,18 @@ So let's set up our stream of data back into an ADLS Gen2 folder called **master
 
     1. Under key1, find the **Key value**. Select the **Copy** button to copy the account key.
 
-
->[!WARNING]
->We need instructions here for adding the Azure DataLake connector. I'm adding an absolute link so this page [will flag a suggestion](https://learn.microsoft.com/en-us/purview/purview).
-
 1. In CluedIn, navigate to your Export Targets, under the **Consume** menu, and select **Add Export Target** and choose the Azure Data Lake Connector.
 
     :::image type="content" source="../media/Export_Target_Data_Lake.png" alt-text="Screenshot of the CluedIn Consume window, showing the Azure Data Lake Connector selected.":::
 
-1. Enter the account details, including the storage account key you copied earlier. The **FileSystemName** will be your container name. **DirectoryName** will be the new mastered directory.
+1. Enter the account details, including the storage account key you copied earlier. The **FileSystemName** will be your container name. You can use an existing container, or enter a new name here and CluedIn will create it for your. For **DirectoryName**, enter **mastered**.
 
     :::image type="content" source="../media/Export_Target_Details.png" alt-text="Screenshot of the CluedIn Consume window, showing the Azure Data Lake details added.":::
 
-1. After you've entered your connection information, select **Test Connection**. If you get a green light, you can move on! If not, check your firewall settings and account key value for your ADLS Gen2 account.
+1. After you've entered your connection information, select **Test Connection**. If you get a green light, you can move on! If not, check these values:
+    - Confirm that your container name has no capital characters, special characters, or spaces. (These are limitations on the ADLS Gen2 side).
+    - Your account key value for your ADLS Gen2 account.
+    - Your storage account firewall settings and account key value for your ADLS Gen2 account.
 
 1. Select **Streams** in the Left-Hand Menu of CluedIn and Create a New Stream called **Employees**.
 
@@ -50,6 +47,9 @@ So let's set up our stream of data back into an ADLS Gen2 folder called **master
 1. For the mode of the stream, choose **Synchronization**.
 
 1. On the properties to export page, in the properties to export section, it asks you what Entity Properties and Vocabulary Keys you would like to share. Add some vocabulary items to the list, like **employee.job** (and any others that you would like).
+
+    >[!NOTE]
+    >If you do not see the vocabulary items from your created vocabularies, like employee, you may need to clear the cache and do a hard refresh of the browser.
 
 1. Select **Save**.
 
