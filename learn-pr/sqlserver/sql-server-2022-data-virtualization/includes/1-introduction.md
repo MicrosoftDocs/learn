@@ -1,4 +1,16 @@
-Data Virtualization integrates data at query time, without replicating or moving the original data. It is the ability to access the data where it lives.
+Data virtualization in SQL Server 2022 integrates data at query time, without replicating or moving the original data. It is the ability to access the data where it lives.
+
+The following figure shows the full extent of data virtualization support in SQL Server 2022.
+
+:::image type="content" source="../media/sql-server-2022-data-virtualization.png" alt-text="Diagram of the data virtualization options in SQL Server 2022.":::
+
+In this training module, we'll go over the data virtualization options offered in SQL Server 2022, including topics about:
+
+- PolyBase
+- REST API connectors such as Azure Data Lake Storage, Azure Blob storage, and S3 compatible object storage that allow for new access with data virtualization
+- T-SQL for data virtualization
+
+## Principles of data virtualization
 
 Data virtualization relies on three principles:
 
@@ -6,7 +18,7 @@ Data virtualization relies on three principles:
 
 - **Zero replication:** Unlike traditional ETL, data virtualization does not need to “collect” the data into a separate repository to transform it to the destination format. It handles transformation and aggregation on-the-fly.
 
-- **Real-Time data:** Since data virtualization connects to the data source on-the-fly, it always delivers the latest available data.
+- **Real-time data:** Since data virtualization connects to the data source on-the-fly, it always delivers the latest available data.
 
 ## Benefits of data virtualization
 
@@ -22,32 +34,18 @@ Major benefits of data virtualization:
 
 - **Cost:** PolyBase is available in all SQL Server 2022 editions.
 
+## Data virtualization use cases
 
-TODO: add your topic sentences(s)
-TODO: add a visual element
+Data virtualization use cases:
 
-## Example scenario
+- **Data hub:** SQL Server can be used as a centralized hub that connects, protects, and query different data sources and files, hiding all the complexity of the application. There's no need to use an ETL tool to aggregate and to copy or move the data to a stagging area.
 
-Data Virtualization use cases:
+  :::image type="content" source="../media/sql-server-data-hub.png" alt-text="Image of SQL Server as a data hub for data virtualization.":::
 
-- **Data Hub:** Using SQL Server as a centralized hub that connects, protects and query different data sources and files. Hiding all the complexity of the application. With no need to use an ETL tool to aggregate and to copy/move the data to a stagging area.
+- **In-database analytics:** Use and combine all SQL Server capabilities and familiarity when using data virtualization.
 
-- **In-Database analytics:** Combining with all SQ Server capabilities and familiarity.
+- Off-load or export data to other data sources.
 
-- Off-load\Export data to other data sources.
-
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------------
-
-    Goal: List the activities the learner will do in this content. This differs from the title and the learning objectives. The title and the learning objectives are "outcome focused"; that is, they describe the skills the learner will acquire as a result of consuming this content. By contrast, here you should be specific about what the learning will **do** in order to acquire those skills. The format can be either prose or bulleted-list; however, a list will yield better results when transformed into other output types such as PowerPoint.
-
-    Heading: "## What will we be doing?"
-
-    Example: "Here, you'll create a business workflow using Azure Logic Apps to automate the processing of tweets:
-                * **Launch**: when a new tweet is available
-                * **Process**: determine if the sentiment of the tweet is positive or negative
-                * **Route**: branch based on the sentiment score"
-
- -->
 ## Learning objectives
 TODO: add your activities
 

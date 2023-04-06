@@ -30,9 +30,9 @@ subjects:
   - database
 units:
 - learn.sql-server-2022-data-virtualization.introduction
-- learn.sql-server-2022-data-virtualization.learning-content
-- learn.sql-server-2022-data-virtualization.exercise
-- learn.sql-server-2022-data-virtualization.learning-content
+- learn.sql-server-2022-data-virtualization.polybase
+- learn.sql-server-2022-data-virtualization.polybase-credentials-data-sources
+- learn.sql-server-2022-data-virtualization.exercise-query-parquet-file
 - learn.sql-server-2022-data-virtualization.exercise
 - learn.sql-server-2022-data-virtualization.knowledge-check
 - learn.sql-server-2022-data-virtualization.summary
