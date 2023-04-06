@@ -3,17 +3,17 @@ uid: learn.intro-to-partner-center
 metadata:
   moduleType: introduction
   title: Introduction to Partner Center
-  description: "Microsoft Partner Center can help drive customer purchasing when selling through the Microsoft commercial marketplace, build partner-to-partner sales channels, and use sales tools and resources. This module will explain how Partner Center program offerings work to manage every aspect of business relationships."             
+  description: Microsoft Partner Center can help drive customer purchasing when selling through the Microsoft commercial marketplace, build partner-to-partner sales channels, and use sales tools and resources. This module will explain how Partner Center program offerings work to manage every aspect of business relationships.             
   ms.date: 11/14/2022
   author: JulCsc
   ms.author: juliacawthra
   manager: jasonh
-  ms.topic: interactive-tutorial  
+  ms.topic: module-intro-to-product  
   ms.service: partner-dashboard         
 
 title: Introduction to Partner Center
 
-summary: "Manage your business relationships, accounts, subscriptions, and billing with Microsoft Partner Center. Use data and insights to improve customer engagement."
+summary: Manage your business relationships, accounts, subscriptions, and billing with Microsoft Partner Center. Use data and insights to improve customer engagement.
 
 abstract: |
   By the end of this module you'll be able to:
