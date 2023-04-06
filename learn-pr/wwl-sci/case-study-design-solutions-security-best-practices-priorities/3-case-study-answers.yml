@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.case-study-design-solutions-security-best-practices-priorities.case-study-answers
+title: Case study answers
+metadata:
+  title: Case study answers
+  description: "Case study answers for: Design security operations, identity and compliance capabilities."
+  ms.date: 4/4/2023
+  author: {{githubUsername}}
+  ms.author: {{msUser}}
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-case-study-answers.md)]
