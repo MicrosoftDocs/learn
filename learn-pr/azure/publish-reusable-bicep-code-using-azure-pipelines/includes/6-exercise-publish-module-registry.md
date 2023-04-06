@@ -3,17 +3,18 @@ In your toy company, you've been publishing your Bicep modules into a registry. 
 In this exercise, you'll:
 
 > [!div class="checklist"]
-> * Create a container registry for your Bicep modules.
-> * Add a lint stage to the pipeline.
-> * Add a pipeline stage to publish the module to your registry.
-> * Verify that your pipeline runs successfully.
-> * Check the published module in your registry.
+>
+> - Create a container registry for your Bicep modules.
+> - Add a lint stage to the pipeline.
+> - Add a pipeline stage to publish the module to your registry.
+> - Verify that your pipeline runs successfully.
+> - Check the published module in your registry.
 
 ## Create a container registry
 
 Before you can publish modules, you need to create a registry for your organization to use. Here, you use the Azure portal to create a registry.
 
-1. In your browser, [create a new container registry within the Azure portal](https://portal.azure.com/#create/Microsoft.ContainerRegistry?azure-portal=true).
+1. In your browser, [create a new container registry within the Azure portal](https://portal.azure.com/#create/Microsoft.ContainerRegistry).
 
 1. On the **Basics** tab, select your target subscription and the **ToyReusable** resource group that you created earlier.
 
@@ -68,7 +69,7 @@ Your repository contains a draft of a pipeline that you can use as a starting po
 
 1. Open the *pipeline.yml* file in the *modules/storage-account* folder.
 
-1. On line 16, update the value of the `ModuleRegistryServer` environment variable to your container registry's server name. You copied that name earlier in this exercise. 
+1. On line 16, update the value of the `ModuleRegistryServer` environment variable to your container registry's server name. You copied that name earlier in this exercise.
 
    For example, if your registry's login server is *yourregistryname.azurecr.io*, line 16 will look like this:
 
@@ -130,7 +131,7 @@ Now, you can add a second stage to publish the module to your container registry
 
 You can also view the published module in the Azure portal.
 
-1. In your browser, go to the [Azure portal](https://portal.azure.com?azure-portal=true).
+1. In your browser, go to the [Azure portal](https://portal.azure.com).
 
 1. Go to the **ToyReusable** resource group.
 

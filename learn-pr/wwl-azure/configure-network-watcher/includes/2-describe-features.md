@@ -1,3 +1,4 @@
+
 Azure Network Watcher provides tools to monitor, diagnose, view metrics, and enable or disable logs for resources in an Azure virtual network. Network Watcher is a regional service that enables you to monitor and diagnose conditions at a network scenario level.
 
 :::image type="content" source="../media/network-watcher-861659e0.png" alt-text="Screenshot of the Network Watcher Get Started page in the Azure portal." border="false":::
