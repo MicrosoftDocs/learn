@@ -4,13 +4,10 @@ title: Visualize the network topology
 metadata:
   title: Visualize the network topology
   description: "Use the Network Watcher network topology tool to view relationships between resources in a virtual network."
-  ms.date: 02/27/2023
+  ms.date: 04/06/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 2
 content: |
   [!include[](includes/5-visualize-network-topology.md)]
