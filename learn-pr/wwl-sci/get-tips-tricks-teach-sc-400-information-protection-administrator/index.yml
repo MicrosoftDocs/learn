@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.wwl.get-tips-tricks-teach-sc-400-information-protection-administrator
+metadata:
+  title: 'Get tips and tricks for teaching SC-400: Microsoft Information Protection Administrator'
+  description: "Learn tips and tricks about preparing for your first teaching session, which labs to use, when and how to introduce technical topics, as well as other resources and materials."
+  ms.date: 04/06/2023
+  author: wwlpublish
+  ms.author: Trinity Sheppard
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+  ms.service: azure
+title: 'Get tips and tricks for teaching SC-400: Microsoft Information Protection Administrator'
+summary: Learn tips and tricks about preparing for your first teaching session, which labs to use, when and how to introduce technical topics, as well as other resources and materials.
+abstract: |
+  After completing this module, you will be able to:
+  - Understand how to utilize the tips and tricks for teaching SC-400: Microsoft Information Protection Administrator in the classroom
+  - Leverage the lab environment during the instructional portion of the class
+  - Discover additional resources and materials to prepare students for success on their Microsoft Certification exams
+prerequisites: ""
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- higher-ed-educator
+products:
+- azure-security-center
+subjects:
+- security
+units:
+- learn.wwl.get-tips-tricks-teach-sc-400-information-protection-administrator.introduction
+- learn.wwl.get-tips-tricks-teach-sc-400-information-protection-administrator.explore-objective-domains
+- learn.wwl.get-tips-tricks-teach-sc-400-information-protection-administrator.learn-module-best-practices
+- learn.wwl.get-tips-tricks-teach-sc-400-information-protection-administrator.explore-best-practices-for-module-1
+- learn.wwl.get-tips-tricks-teach-sc-400-information-protection-administrator.explore-best-practices-for-module-2
+- learn.wwl.get-tips-tricks-teach-sc-400-information-protection-administrator.explore-best-practices-for-module-3
+- learn.wwl.get-tips-tricks-teach-sc-400-information-protection-administrator.bring-all-together
+- learn.wwl.get-tips-tricks-teach-sc-400-information-protection-administrator.knowledge-check
+- learn.wwl.get-tips-tricks-teach-sc-400-information-protection-administrator.summary
+badge:
+  uid: learn.wwl.get-tips-tricks-teach-sc-400-information-protection-administrator.badge
