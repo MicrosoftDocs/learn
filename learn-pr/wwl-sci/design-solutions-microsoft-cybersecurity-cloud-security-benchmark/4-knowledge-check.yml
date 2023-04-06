@@ -9,7 +9,7 @@ metadata:
   ms.author: hrasheed
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
-durationInMinutes: 1
+durationInMinutes: 10
 ###########################################################################
 ###
 ### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
@@ -77,6 +77,6 @@ quiz:
         - content: "Detective controls rely on passive monitoring of system logs while defensive controls require active scanning"
           isCorrect: false
           explanation: "This distinction is not accurate as both types of controls might necessitate either active surveillance, passive monitoring, or a mix of the two techniques."
-        - content: "Defensive controls rely entirely on pre-emptive configuration while Detective controls mostly operate via heuristic algorithms"
+        - content: "Defensive controls rely entirely on preemptive configuration while Detective controls mostly operate via heuristic algorithms"
           isCorrect: false
           explanation: "This distinction is also not accurate as both types of control measures take advantage of heuristics and machine learning algorithms when feasible."

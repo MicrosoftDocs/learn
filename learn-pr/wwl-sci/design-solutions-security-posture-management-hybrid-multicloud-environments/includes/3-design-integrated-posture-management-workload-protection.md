@@ -148,7 +148,7 @@ Defender for Cloud detects and alerts you to threats as they occur. Organization
 
 Although we can't create your Incident Response plan, we'll use Microsoft Azure Security Response in the Cloud lifecycle as the foundation for incident response stages. The stages of incident response in the cloud lifecycle are:
 
-:::image type="content" source="../media/defender-for-cloud-planning-operations-guide-fig-5-1.png" alt-text="Stages of the incident response in the cloud lifecycle.":::
+:::image type="content" source="../media/defender-for-cloud-planning-operations-guide-fig-5-1.png" alt-text="Diagram showing the stages of incident response in the cloud lifecycle.":::
 
 You can use Defender for Cloud alerts during the following stages:
 

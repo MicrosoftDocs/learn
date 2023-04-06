@@ -6,7 +6,7 @@ A journey without a target destination is just wandering. While this approach mi
 
 The Secure methodology provides a vision of the complete end state to guide the improvement of your security program over time. The following infographic provides a visual mapping of the key ways that security integrates with the larger organization and the disciplines within security.
 
-[![CAF Secure Methodology](https://learn.microsoft.com/azure/cloud-adoption-framework/secure/media/secure-methodology.png)](/azure/cloud-adoption-framework/secure/media/secure-methodology-popout.png#lightbox)
+[![Diagram showing CAF Secure Methodology.](https://learn.microsoft.com/azure/cloud-adoption-framework/secure/media/secure-methodology.png)](/azure/cloud-adoption-framework/secure/media/secure-methodology-popout.png#lightbox)
 
 The Cloud Adoption Framework provides security guidance for this security journey by providing clarity for the processes, best practices, models, and experiences. This guidance is based on the lessons learned and real world experiences of real customers, Microsoft's security journey, and work with organizations like NIST, The Open Group, and the [Center for Internet Security (CIS)](https://www.cisecurity.org/).
 
@@ -26,7 +26,7 @@ Security itself is both a standalone organizational discipline and a quality/att
 
 While security is a highly technical discipline, it's first and foremost a human discipline reflective of the long history of human conflict (but updated for computers and the internet). The following diagram summarizes the roles and responsibilities in a security program.
 
-[![View of the responsibilities/functions of an enterprise security team](https://learn.microsoft.com/azure/cloud-adoption-framework/secure/media/roles-and-responsibilities.png)](https://learn.microsoft.com/azure/cloud-adoption-framework/secure/media/roles-and-responsibilities-popout.png#lightbox)
+[![Diagram showing the responsibilities/functions of an enterprise security team.](https://learn.microsoft.com/azure/cloud-adoption-framework/secure/media/roles-and-responsibilities.png)](https://learn.microsoft.com/azure/cloud-adoption-framework/secure/media/roles-and-responsibilities-popout.png#lightbox)
 
 For more information, see [Cloud security functions](/azure/cloud-adoption-framework/organize/cloud-security).
 

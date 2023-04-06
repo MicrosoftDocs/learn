@@ -20,7 +20,7 @@ Here's a more detailed view of the elements of Conditional Access and what it co
 
 This diagram shows Conditional Access and related elements that can help protect user access to resources, as opposed to non-interactive or non-human access. The following diagram describes both types of identities:
 
-![Diagram that describes Conditional Access identity types.](../media/conditional-access-identity.svg)
+[![Diagram that describes Conditional Access identity types.](../media/conditional-access-identity.svg)](../media/conditional-access-identity.svg#lightbox)
 
 Non-human access to resources must also be protected. Currently, you can't use Conditional Access to protect non-human access to cloud resources. You need to use another method, like grant controls for OAuth-based access.
 
@@ -46,7 +46,7 @@ Here are some more detailed principles and recommended practices for Conditional
 -   Protect privileged users in all Microsoft 365 role-based access control (RBAC) systems.
 -   Require password change and multi-factor authentication for high-risk users and sign-ins (enforced by sign-in frequency).
 -   Restrict access from high-risk devices. Use an Intune compliance policy with a compliance check in Conditional Access.
--   Protect privileged systems, like access to the admininistrator portals for Office 365, Azure, AWS, and Google Cloud.
+-   Protect privileged systems, like access to the administrator portals for Office 365, Azure, AWS, and Google Cloud.
 -   Prevent persistent browser sessions for admins and on untrusted devices.
 -   Block legacy authentication.
 -   Restrict access from unknown or unsupported device platforms.
