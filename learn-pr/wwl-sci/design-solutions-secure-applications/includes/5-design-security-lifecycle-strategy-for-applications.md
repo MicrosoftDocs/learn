@@ -13,7 +13,7 @@ To best maintain Defender for Cloud Apps posture, regularly follow the recommend
 
 ### Real-time controls
 
-- Add applications for additional control and visibility
+- Add applications for more control and visibility
 - Remove old user/group exclusions from Conditional Access policy
 - Update SAML certificate for third-party identity provider annually
 - Verify app onboarding members
@@ -51,7 +51,7 @@ The Azure Container Apps application lifecycle revolves around [revisions](http
 
 When you deploy a container app, the first revision is automatically created. [More revisions are created](https://learn.microsoft.com/azure/container-apps/revisions) as [containers](https://learn.microsoft.com/azure/container-apps/containers) change, or any adjustments are made to the `template` section of the configuration.
 
-A container app flows through four phases: deployment, update, deactivation, and shutdown.
+A container app flows through four phases: deployment, update, deactivation, and shut down.
 
 ### Deployment
 
