@@ -1,24 +1,25 @@
 ### YamlMime:Module
 uid: learn.sql-server-2022-data-virtualization
 metadata:
-  title: sql-server-2022-data-virtualization
+  title: SQL Server 2022 data virtualization
   description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the module; include relevant search keywords."
   ms.date: 03/14/2023
   author: HugoMSFT
   ms.author: hudequei
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
-title: sql-server-2022-data-virtualization
-summary: "TODO 2 sentences, 20-35 words, don't teach or motivate, avoid using 'learn', don't duplicate the title; see https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main"
+title: SQL Server 2022 data virtualization
+summary: "Data virtualization and enhanced PolyBase features introduced in SQL Server 2022"
 abstract: |
   By the end of this module, you'll be able to:
-    - "TODO learning objective 1"
-    - "TODO learning objective 2"
-    - "TODO learning objective 3 (if needed; see https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=main)"
+
+    - Understand the benefits and principles of data virtualization
+    - The evolution of PolyBase starting with SQL Server 2016 through SQL Server 2022
+    - Enable and use the PolyBase feature
 prerequisites: |
-  - "TODO prerequisite 1"
-  - "TODO prerequisite 2"
-  - "TODO prerequisite 3 (if needed; see https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=main"
+  - Basic working knowledge of SQL Server
+  - Fundamental knowledge of the T-SQL language and be able to execute queries in SQL Server Management Studio on a SQL Server 2022 instance
+
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - beginner

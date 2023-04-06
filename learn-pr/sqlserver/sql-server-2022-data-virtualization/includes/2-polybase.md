@@ -66,11 +66,11 @@ For all the other already existing data sources, such as SQL Server, Oracle, Mon
 |Azure Blob storage |:::image type="content" source="../media/no-icon.svg" border="false" alt-text="No"::: |:::image type="content" source="../media/yes-icon.svg" border="false" alt-text="Yes"::: |
 |Azure Data Lake Storage Gen2 |:::image type="content" source="../media/no-icon.svg" border="false" alt-text="No"::: |:::image type="content" source="../media/yes-icon.svg" border="false" alt-text="Yes"::: |
 |S3-compatible object storage |:::image type="content" source="../media/no-icon.svg" border="false" alt-text="No"::: |:::image type="content" source="../media/yes-icon.svg" border="false" alt-text="Yes"::: |
-|SQL Server |:::image type="content" source="../media/yes-icon.svg" border="false" alt-text="Yes"::: |:::image type="content" source="../media/no-icon.svg" border="false" alt-text="No":: |
-|Oracle |:::image type="content" source="../media/yes-icon.svg" border="false" alt-text="Yes"::: |:::image type="content" source="../media/no-icon.svg" border="false" alt-text="No":: |
-|Teradata |:::image type="content" source="../media/yes-icon.svg" border="false" alt-text="Yes"::: |:::image type="content" source="../media/no-icon.svg" border="false" alt-text="No":: |
-|MongoDB or CosmosDB API for MongoDB |:::image type="content" source="../media/yes-icon.svg" border="false" alt-text="Yes"::: |:::image type="content" source="../media/no-icon.svg" border="false" alt-text="No":: |
-|Generic ODBC |:::image type="content" source="../media/yes-icon.svg" border="false" alt-text="Yes"::: |:::image type="content" source="../media/no-icon.svg" border="false" alt-text="No":: |
-|Bulk Operations |:::image type="content" source="../media/yes-icon.svg" border="false" alt-text="Yes"::: |:::image type="content" source="../media/no-icon.svg" border="false" alt-text="No":: |
+|SQL Server |:::image type="content" source="../media/yes-icon.svg" border="false" alt-text="Yes"::: | :::image type="content" source="../media/no-icon.svg" border="false" alt-text="No"::: |
+|Oracle |:::image type="content" source="../media/yes-icon.svg" border="false" alt-text="Yes"::: |:::image type="content" source="../media/no-icon.svg" border="false" alt-text="No"::: |
+|Teradata |:::image type="content" source="../media/yes-icon.svg" border="false" alt-text="Yes"::: |:::image type="content" source="../media/no-icon.svg" border="false" alt-text="No"::: |
+|MongoDB or CosmosDB API for MongoDB |:::image type="content" source="../media/yes-icon.svg" border="false" alt-text="Yes"::: |:::image type="content" source="../media/no-icon.svg" border="false" alt-text="No"::: |
+|Generic ODBC |:::image type="content" source="../media/yes-icon.svg" border="false" alt-text="Yes"::: |:::image type="content" source="../media/no-icon.svg" border="false" alt-text="No"::: |
+|Bulk Operations |:::image type="content" source="../media/yes-icon.svg" border="false" alt-text="Yes"::: |:::image type="content" source="../media/no-icon.svg" border="false" alt-text="No"::: |
 
 Regardless of using PolyBase services-only data sources or PolyBase feature data sources, **PolyBase Query Service for External Data** feature needs to be installed.  
