@@ -20,7 +20,7 @@ To set up everything in your Azure DevOps organization, run a template.
 On the Azure DevOps Demo Generator site, to run the template, do these steps:
 
 1. Select **Sign In** and accept the usage terms.
-1. On the **Create New Project** page, select your Azure DevOps organization, and enter a project name, like *Space Game - web - Pipeline*. Next, select **Create Project**.
+1. On the **Create New Project** page, enter a project name, like *Space Game - web - Pipeline*, select your Azure DevOps organization (in this example the organization name is `fabrikam`), and select **Create Project**.
 
     :::image type="content" source="../media/5-create-new-project.png" alt-text="Screenshot of creating a project through the Azure DevOps Demo Generator.":::
 
@@ -28,7 +28,7 @@ On the Azure DevOps Demo Generator site, to run the template, do these steps:
 1. To go to your project in Azure DevOps, select **Navigate to project**.
 
 > [!IMPORTANT]
-> The [Clean up your Azure DevOps environment](/training/modules/create-a-build-pipeline/9-clean-up-environment?azure-portal=true) unit in this module provides important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to do the cleanup steps even if you don't complete this module.
+> The [Clean up your Azure DevOps environment](/training/modules/create-a-build-pipeline/9-clean-up-environment?azure-portal=true) unit at the end of this module provides important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes for Microst-hosted agents ([check your usage](/azure/devops/pipelines/troubleshooting/troubleshooting#check-for-available-parallel-jobs)), or GitHub Codespaces [included usage hours and storage](https://docs.github.com/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces#monthly-included-storage-and-core-hours-for-personal-accounts) ([check your usage](https://docs.github.com/billing/managing-billing-for-github-codespaces/viewing-your-github-codespaces-usage)). Be sure to do the cleanup steps even if you don't complete this module.
 
 [!include[](../../shared/includes/project-visibility.md)]
 
