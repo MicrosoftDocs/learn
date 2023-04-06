@@ -31,7 +31,7 @@ quiz:
     choices:
       - content: "A practice that ensures system uptime by maintaining optimal replica volumes."
         isCorrect: false
-        explanation: "DevSecOps isn't concerned with replica volumes of systems, which refers to replication strategies used in high availability deployment scenarios."
+        explanation: "DevSecOps isn't concerned with replica volumes of systems, which details replication strategies used in high availability deployment scenarios."
       - content: "A security model used by developers to certify that code changes do not affect production environments."
         isCorrect: false
         explanation: "There's no certification process involved in DevSecOps. The idea behind DevSecOps is that security mechanisms are integrated throughout the development cycle to increase the overall security posture."
