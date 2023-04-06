@@ -91,10 +91,10 @@ In this task, we will review and configure SQL database diagnostics.
 19. Review the additional metrics that are provided by this product.
 20. You can drill into any graphic for additional details.
 
-## Task 3 - Azure SQL: AAD Authentication
+## Task 3 - Azure SQL: Azure AD Authentication
 
 > [!NOTE]
-> This task requires an Azure SQL database that has not had AAD configured. This task also requires SQL Server Management Studio.
+> This task requires an Azure SQL database that has not had Azure AD configured. This task also requires SQL Server Management Studio.
 
 In this task, we will configure Azure AD authentication.
 
