@@ -3,7 +3,7 @@ uid: learn.azdo.create-a-build-pipeline
 metadata:
   title: Create a build pipeline with Azure Pipelines
   description: Set up a continuous integration (CI) pipeline that automates the process of building your application.
-  ms.date: 01/13/2023
+  ms.date: 04/04/2023
   ms.custom: devdivchpfy22
   author: steved0x
   ms.author: sdanie
@@ -18,7 +18,9 @@ abstract: |
   - Publish your builds so others can access them
   - Use templates to build multiple configurations
 prerequisites: |
-  - An Azure DevOps organization with access to **Microsoft-hosted** parallel jobs. [Check your parallel jobs and request a free grant](/azure/devops/pipelines/troubleshooting/troubleshooting#check-for-available-parallel-jobs).
+  - An Azure DevOps organization
+    - To use Microsoft-hosted agents, your Azure DevOps organization must have access to **Microsoft-hosted** parallel jobs. [Check your parallel jobs and request a free grant](/azure/devops/pipelines/troubleshooting/troubleshooting#check-for-available-parallel-jobs).
+    - You can use GitHub Codespaces to complete the module, even if your Azure DevOps organization doesn't have any parallel jobs.
   - Visual Studio Code
   - .NET 6.0 SDK
   - Git
