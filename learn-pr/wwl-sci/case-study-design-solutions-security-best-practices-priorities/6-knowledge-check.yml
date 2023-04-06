@@ -3,10 +3,10 @@ uid: learn.wwl.case-study-design-solutions-security-best-practices-priorities.kn
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: "Knowledge check for the case study unit: Design solutions that align with security best practices and priorities."
   ms.date: 4/5/2023
-  author: {{githubUsername}}
-  ms.author: {{msUser}}
+  author: hrasheed-msft
+  ms.author: hrasheed
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 1

@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.wwl.case-study-design-solutions-security-best-practices-priorities
 metadata:
-  title: "Case study: Design security operations, identity and compliance capabilities"
+  title: "Case study: Design solutions that align with security best practices and priorities"
   description: "Apply your cybersecurity architect skills on a real business scenario in the area of security operations, identity and compliance. You will analyze design requirements, answer conceptual and technical questions and design a solution to meet the business needs."
   ms.date: 4/4/2023
   author: hrasheed-msft
   ms.author: hrasheed
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
-title: "Case study: Design security operations, identity and compliance capabilities"
+title: "Case study: Design solutions that align with security best practices and priorities"
 summary: "Apply your cybersecurity architect skills on a real business scenario in the area of security operations, identity and compliance. You will analyze design requirements, answer conceptual and technical questions and design a solution to meet the business needs."
 abstract: |
   You learn:
@@ -40,6 +40,6 @@ units:
 - learn.wwl.case-study-design-solutions-security-best-practices-priorities.conceptual-walkthrough
 - learn.wwl.case-study-design-solutions-security-best-practices-priorities.technical-walkthrough
 - learn.wwl.case-study-design-solutions-security-best-practices-priorities.knowledge-check
-- learn.case-study-design-solutions-security-best-practices-priorities.summary
+- learn.wwl.case-study-design-solutions-security-best-practices-priorities.summary
 badge:
   uid: learn.wwl.case-study-design-solutions-security-best-practices-priorities.badge
