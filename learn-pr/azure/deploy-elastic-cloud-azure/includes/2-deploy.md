@@ -15,7 +15,7 @@ After you complete the subscription process, you'll choose from four different p
 - [Elastic Security](https://www.elastic.co/security): Effective cybersecurity requires data at scale. Elastic Security solves for core data and scale problems. Leading security teams use the free and open solution for SIEM, endpoint security, threat hunting, cloud monitoring, and more. An intuitive UI and vast ecosystem of integrations help arm every analyst with the tools they need to succeed.
 - [General Purpose](https://www.elastic.co/elastic-stack): Choose this option if you aren’t certain yet what kind of deployment you want.
 
-:::image type="content" source="../media/elastic-cloud-deployment-options.png" alt-text="Image of the four Elastic deployment options.":::
+:::image type="content" source="../media/elastic-cloud-deployment-options.png" alt-text="Screenshot of the four Elastic deployment options.":::
 
 ## Set the size and location for your deployment
 

@@ -16,7 +16,7 @@ Recall that Tailwind Traders has asked you to propose a solution for improving t
 
 1. Once you've confirmed your account through an email notification, log in and select **Create deployment**.
 
-    :::image type="content" source="../media/create-deployment-dialog.png" alt-text="An image of an email notification to create your Elasticsearch deployment.":::
+    :::image type="content" source="../media/create-deployment-dialog.png" alt-text="Screenshot of an email notification to create your Elasticsearch deployment.":::
 
 1. Choose the **General purpose** option for this exercise.
 
