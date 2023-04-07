@@ -1,4 +1,4 @@
-Kibana helps you visualize, present, and analyze the data in Elasticsearch. Recall that Tailwind Traders wants to offer analysts a visualization tool that will allow them to gain deeper insights from their data. For this exercise, we will walk through the steps of creating a demo environment using sample data that comes with Kibana, and point out some of the capabilities your team can experiment with to help inform their decision-making process.
+Kibana helps you visualize, present, and analyze the data in Elasticsearch. Recall that Tailwind Traders wants to offer analysts a visualization tool that allows them to gain deeper insights from their data. For this exercise, we'll walk through the steps of creating a demo environment using sample data that comes with Kibana, and point out some of the capabilities your team can experiment with to help inform their decision-making process.
 
 1. Select **Open Kibana**.
 
@@ -16,6 +16,6 @@ Kibana helps you visualize, present, and analyze the data in Elasticsearch. Reca
 
     :::image type="content" source="../media/add-data-dialog.png" alt-text="Screenshot of adding sample data in the Elastic Cloud Console.":::
 
-1. Once finished, you can select the **View Data** button to look at sample artifacts that were added. Select **Canvas**. Notice the ML jobs. These are sample machine-learning jobs that get added as part of sample data sets for you to explore the machine-learning capabilities in Elastic Stack.
+1. Once finished, you can select the **View Data** button to look at sample artifacts that were added. Select **Canvas**. Notice the ML jobs, which are sample machine-learning jobs that get added as part of sample data sets for you to explore the machine-learning capabilities in Elastic Stack.
 
     :::image type="content" source="../media/elastic-cloud-dashboard.png" alt-text="Screenshot of a Kibana visualization with sample data in the Elastic Cloud Console.":::
