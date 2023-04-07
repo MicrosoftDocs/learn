@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-solutions-secure-applications.evaluate-security-posture-existing-application-portfolios
+title: Evaluate security posture of existing application portfolios
+metadata:
+  title: Evaluate security posture of existing application portfolios
+  description: "SC-100 preparatory unit on this topic: evaluate security posture of existing application portfolios."
+  ms.date: 3/14/2023
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-evaluate-security-posture-existing-application-portfolios.md)]
