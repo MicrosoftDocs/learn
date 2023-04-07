@@ -1,0 +1,34 @@
+### YamlMime:LearningPath
+uid: learn.wwl.sc-100-design-security-solutions-applications-data
+metadata:
+  title: 'SC-100: Design security solutions for applications and data'
+  description: 'SC-100: Design security solutions for applications and data'
+  ms.date: 04/05/2023
+  author: wwlpublish
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: 'SC-100: Design security solutions for applications and data'
+prerequisites: |
+  -   Advanced experience and knowledge in identity and access, platform protection, security operations, securing data and securing applications.
+  -   Experience with hybrid and cloud implementations.
+summary: |
+  Learn how to design a cybersecurity strategy for data and applications.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- advanced
+roles:
+- security-engineer
+- solution-architect
+products:
+- azure
+- defender-for-cloud
+- defender-for-cloud-apps
+- defender-identity
+- microsoft-sentinel
+modules:
+- learn.wwl.design-solutions-secure-microsoft-365
+- learn.wwl.design-solutions-secure-applications
+- learn.wwl.design-solutions-secure-organization-data
+trophy:
+  uid: learn.wwl.sc-100-design-security-solutions-applications-data.trophy
