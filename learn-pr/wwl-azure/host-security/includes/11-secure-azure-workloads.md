@@ -1,139 +1,44 @@
-The Azure Security Benchmark includes a collection of high-impact security recommendations you can use to help secure the services you use in Azure: **Security controls**: These recommendations are generally applicable across your Azure tenant and Azure services. Each recommendation identifies a list of stakeholders that are typically involved in planning, approval, or implementation of the benchmark. **Service baselines**: These apply the controls to individual Azure services to provide recommendations on that service’s security configuration.
 
-Microsoft's cybersecurity group in conjunction with the Center for Internet Security (CIS) has developed best practices to help establish security baselines for the Azure platform. A security baseline is:
+The **Microsoft cloud security benchmark (MCSB)** provides prescriptive best practices and recommendations to help **improve the security of workloads**, **data**, and **services** on **Azure** and your **multi-cloud environment**. This benchmark focuses on **cloud-centric control areas** with input from a set of **holistic Microsoft** and **industry security guidance** that includes:
 
- -  A set of basic security objectives which must be met by any given service or system.
- -  Establishes what you need to do and not how to do it.
+ -  Cloud Adoption Framework: Guidance on **security**, including **strategy**, **roles** and **responsibilities**, **Azure Top 10 Security Best Practices**, and **reference implementation**.
+ -  Azure Well-Architected Framework: Guidance on securing your workloads on Azure.
+ -  The Chief Information Security Officer (CISO) Workshop: Program guidance and reference strategies to accelerate security modernization using Zero Trust principles.
+ -  Other industry and cloud service provider's security best practice standards and framework: Examples include the Amazon Web Services (AWS) Well-Architected Framework, Center for Internet Security (CIS) Controls, National Institute of Standards and Technology (NIST), and Payment Card Industry Data Security Standard (PCI-DSS).
 
-The [CIS Microsoft Azure Foundations Security Benchmark](/azure/governance/blueprints/samples/cis-azure-1-3-0) guide provides prescriptive guidance for establishing a secure baseline configuration for Azure. This guide was tested against the listed Azure services as of March 2018. The scope of this benchmark is to establish the foundational level of security for anyone adopting Azure.
+## Microsoft cloud security benchmark features
 
-## Create a platform security baseline
+**Comprehensive multi-cloud security framework**: Organizations often have to build an internal security standard to reconcile security controls across multiple cloud platforms to meet security and compliance requirements on each of them. This often requires security teams to repeat the same implementation, monitoring, and assessment across the different cloud environments (**often for different compliance standards**). This creates unnecessary overhead, cost, and effort. To address this concern, we enhanced the **Azure Security Benchmark (ASB)** to the **Microsoft cloud security benchmark (MCSB)** to help you quickly work with different clouds by:
 
-A variety of security standards can help cloud service customers to achieve workload security when using cloud services. The following are recommended technology groupings to help create secure cloud-enabled workloads. These recommendations should not be considered an exhaustive list of all possible security configurations and architectures but just as a starting point.
+ -  Providing a single control framework to easily meet the security controls across clouds
+ -  Providing consistent user experience for monitoring and enforcing the multi-cloud security benchmark in Defender for Cloud
+ -  Staying aligned with Industry Standards (e.g., Center for Internet Security, National Institute of Standards and Technology, Payment Card Industry)
 
-:::image type="content" source="../media/az500-host-hardened-905c68e4.png" alt-text="A diagram of the workflow for securing Azure workloads with CIS benchmark.":::
+:::image type="content" source="../media/mcsb-vs-other-frameworks-7167558f.png" alt-text="Screenshot showing the Microsoft cloud security benchmark versus other Cloud for Internet Security framework.":::
 
 
-CIS has two implementation levels, and several categories of recommendations.
+**Automated control monitoring for AWS in Microsoft Defender for Cloud:** You can use **Microsoft Defender for Cloud Regulatory Compliance Dashboard** to monitor your AWS environment against **Microsoft cloud security benchmark (MCSB)**, just like how you monitor your Azure environment. We developed approximately **180 AWS checks** for the new AWS security guidance in MCSB, allowing you to monitor your AWS environment and resources in Microsoft Defender for Cloud.
 
-**Level 1** \- Recommended minimum security settings
+**Example: Microsoft Defender for Cloud - Regulatory compliance dashboard**
 
- -  These should be configured on all systems.
- -  These should cause little or no interruption of services nor reduced functionality.
+:::image type="content" source="../media/cms-regulatory-compliance-dashboard-example-93241b71.png" alt-text="Screenshot showing the Microsoft Defender for Cloud Regulatory compliance dashboard.":::
 
-**Level 2** \- Recommendations for highly secure environments
 
- -  These might result in reduced functionality.
+**Azure guidance and security principles**: Azure security guidance, security principles, features, and capabilities.
 
-The following table provides the categories and number of recommendations made for each.
+## Controls
 
-:::row:::
-  :::column:::
-    **Technology group**
-  :::column-end:::
-  :::column:::
-    **Description**
-  :::column-end:::
-  :::column:::
-    **\# of recommendations**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    **Identity &amp; Access Management (IAM)**
-  :::column-end:::
-  :::column:::
-    Recommendations related to IAM policies
-  :::column-end:::
-  :::column:::
-    23
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    **Microsoft Defender for Cloud**
-  :::column-end:::
-  :::column:::
-    Recommendations related to the configuration and use of Microsoft Defender for Cloud
-  :::column-end:::
-  :::column:::
-    19
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    **Storage accounts**
-  :::column-end:::
-  :::column:::
-    Recommendations for setting storage account policies
-  :::column-end:::
-  :::column:::
-    7
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    **Azure SQL Database**
-  :::column-end:::
-  :::column:::
-    Recommendations for helping secure Azure SQL databases
-  :::column-end:::
-  :::column:::
-    8
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    **Logging and monitoring**
-  :::column-end:::
-  :::column:::
-    Recommendations for setting logging and monitoring policies for your Azure subscriptions
-  :::column-end:::
-  :::column:::
-    13
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    **Networking**
-  :::column-end:::
-  :::column:::
-    Recommendations for helping to securely configure Azure networking settings and policies
-  :::column-end:::
-  :::column:::
-    5
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    **VMs**
-  :::column-end:::
-  :::column:::
-    Recommendations for setting security policies for Azure compute services - specifically VMs
-  :::column-end:::
-  :::column:::
-    6
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    **Other**
-  :::column-end:::
-  :::column:::
-    Recommendations regarding general security and operational controls, including those related to Azure Key Vault and resource locks
-  :::column-end:::
-  :::column:::
-    3
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    **Total recommended**
-  :::column-end:::
-  :::column:::
-    
-  :::column-end:::
-  :::column:::
-    84
-  :::column-end:::
-:::row-end:::
+| **Control Domains**                       | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Network security (NS)                     | **Network Security** covers controls to secure and protect networks, including securing virtual networks, establishing private connections, preventing and mitigating external attacks, and securing Domain Name System (DNS).                                                                                                                                                                                                                                                                                      |
+| Identity Management (IM)                  | **Identity Management** covers controls to establish a secure identity and access controls using identity and access management systems, including the use of single sign-on, strong authentications, managed identities (and service principals) for applications, conditional access, and account anomalies monitoring.                                                                                                                                                                                           |
+| Privileged Access (PA)                    | **Privileged Access** covers controls to protect privileged access to your tenant and resources, including a range of controls to protect your administrative model, administrative accounts, and privileged access workstations against deliberate and inadvertent risk.                                                                                                                                                                                                                                           |
+| Data Protection (DP)                      | **Data Protection** covers control of data protection at rest, in transit, and via authorized access mechanisms, including discover, classify, protect, and monitoring sensitive data assets using access control, encryption, key management, and certificate management.                                                                                                                                                                                                                                          |
+| Asset Management (AM)                     | **Asset Management** covers controls to ensure security visibility and governance over your resources, including recommendations on permissions for security personnel, security access to asset inventory and managing approvals for services and resources (**inventory**, **track**, and **correct**).                                                                                                                                                                                                           |
+| Logging and Threat Detection (LT)         | **Logging and Threat Detection** covers controls for detecting threats on the cloud and enabling, collecting, and storing audit logs for cloud services, including enabling detection, investigation, and remediation processes with controls to generate high-quality alerts with native threat detection in cloud services; it also includes collecting logs with a cloud monitoring service, centralizing security analysis with a **security event management (SEM)**, time synchronization, and log retention. |
+| Incident Response (IR)                    | **Incident Response** covers controls in the incident response life cycle - preparation, detection and analysis, containment, and post-incident activities, including using Azure services (**such as Microsoft Defender for Cloud and Sentinel**) and/or other cloud services to automate the incident response process.                                                                                                                                                                                           |
+| Posture and Vulnerability Management (PV) | **Posture and Vulnerability Management** focuses on controls for assessing and improving the cloud security posture, including vulnerability scanning, penetration testing, and remediation, as well as security configuration tracking, reporting, and correction in cloud resources.                                                                                                                                                                                                                              |
+| Endpoint Security (ES)                    | **Endpoint Security** covers controls in endpoint detection and response, including the use of endpoint detection and response (EDR) and anti-malware service for endpoints in cloud environments.                                                                                                                                                                                                                                                                                                                  |
+| Backup and Recovery (BR)                  | **Backup and Recovery** covers controls to ensure that data and configuration backups at the different service tiers are performed, validated, and protected.                                                                                                                                                                                                                                                                                                                                                       |
+| DevOps Security (DS)                      | **DevOps Security** covers the controls related to the security engineering and operations in the DevOps processes, including deployment of critical security checks (such as static application security testing and vulnerability management) prior to the deployment phase to ensure the security throughout the DevOps process; it also includes common topics such as threat modeling and software supply security.                                                                                            |
+| Governance and Strategy (GS)              | **Governance and Strategy** provides guidance for ensuring a coherent security strategy and documented governance approach to guide and sustain security assurance, including establishing roles and responsibilities for the different cloud security functions, unified technical strategy, and supporting policies and standards.                                                                                                                                                                                |

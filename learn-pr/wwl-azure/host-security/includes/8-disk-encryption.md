@@ -1,3 +1,4 @@
+
 **Azure Disk Encryption for Windows VMs** helps protect and safeguard your data to meet your organizational security and compliance commitments. It uses the BitLocker feature of Windows to provide volume encryption for the OS and data disks of Azure virtual machines (VMs), and is integrated with Azure Key Vault to help you control and manage the disk encryption keys and secrets.
 
 :::image type="content" source="../media/az500-disk-encryption-44468f31.png" alt-text="A virtual machine uses storage with keys protected in a key vault.":::
@@ -15,7 +16,7 @@ Windows VMs are available in a range of sizes. Azure Disk Encryption is supporte
 
 Azure Disk Encryption is not available on Basic, A-series VMs, or on virtual machines with less than 2 GB of memory.
 
-**Supported operating systems**
+**Supported operating systems**<br>
 
  -  Windows client: Windows 8 and later.
  -  Windows Server: Windows Server 2008 R2 and later.
@@ -56,39 +57,11 @@ Linux VMs are available in a range of sizes. Azure Disk Encryption is supported 
 
 **Note:** Azure Disk Encryption is not available on Basic, A-series VMs, or on virtual machines that do not meet these minimum memory requirements:
 
-:::row:::
-  :::column:::
-    **Virtual machine**
-  :::column-end:::
-  :::column:::
-    **Minimum memory requirement**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Linux VMs when only encrypting data volumes
-  :::column-end:::
-  :::column:::
-    2 GB
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Linux VMs when encrypting both data and OS volumes, and where the root (/) file system usage is 4GB or less
-  :::column-end:::
-  :::column:::
-    8 GB
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Linux VMs when encrypting both data and OS volumes, and where the root (/) file system usage is greater than 4GB
-  :::column-end:::
-  :::column:::
-    The root file system usage \* 2. For instance, a 16 GB of root file system usage requires at least 32GB of RAM
-  :::column-end:::
-:::row-end:::
-
+| **Virtual machine**                                                                                              | **Minimum memory requirement**                                                                                 |
+| ---------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| Linux VMs when only encrypting data volumes                                                                      | 2 GB                                                                                                           |
+| Linux VMs when encrypting both data and OS volumes, and where the root (/) file system usage is 4GB or less      | 8 GB                                                                                                           |
+| Linux VMs when encrypting both data and OS volumes, and where the root (/) file system usage is greater than 4GB | The root file system usage \* 2. For instance, a 16 GB of root file system usage requires at least 32GB of RAM |
 
 Once the OS disk encryption process is complete on Linux virtual machines, the VM can be configured to run with less memory.
 

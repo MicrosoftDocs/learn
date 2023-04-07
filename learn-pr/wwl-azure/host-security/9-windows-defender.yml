@@ -1,16 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.host-security.windows-defender
-title: Deploy and configure Windows Defender
+title: Managed Disk Encryption Options
 metadata:
-  title: Deploy and configure Windows Defender
-  description: "Deploy and configure Windows Defender"
-  ms.date: 02/02/2023
+  title: Managed Disk Encryption Options
+  description: "Managed Disk Encryption Options"
+  ms.date: 04/07/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 7
+  zone_pivot_groups: azure-interface
 content: |
   [!include[](includes/9-windows-defender.md)]
+interactive: bash

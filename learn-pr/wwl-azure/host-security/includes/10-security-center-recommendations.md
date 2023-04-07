@@ -1,44 +1,32 @@
-Microsoft Defender for Cloud helps you prevent, detect, and respond to threats with increased visibility into and control over the security of your Azure resources. Microsoft Defender for Cloud helps you safeguard VM data in Azure by providing visibility into the security settings of your VMs. When Microsoft Defender for Cloud helps safeguard your VMs, the following capabilities are available:
 
- -  OS security settings with the recommended configuration rules
- -  System security updates and critical updates that are missing
- -  Endpoint protection recommendations
- -  Disk encryption validation
- -  Vulnerability assessment and remediation
- -  Threat detection
+Windows 10, Windows Server 2019, and Windows Server 2016 include key security features. They are Windows Defender Credential Guard, Windows Defender Device Guard, and Windows Defender Application Control.
 
-**Set security policies to manage vulnerabilities for VMs**
+## Windows Defender Credential Guard
 
-You need to enable data collection so that Microsoft Defender for Cloud can gather the information it needs to provide recommendations and alerts based on the security policy you configure. In the following figure, data collection has been turned on.
+Introduced in Windows 10 Enterprise and Windows Server 2016, Windows Defender Credential Guard uses virtualization-based security enhancement to isolate secrets so that only privileged system software can access them. Unauthorized access to these secrets might lead to credential theft attacks, such as Pass-the-Hash or pass-the-ticket attacks. Windows Defender Credential Guard helps prevent these attacks by helping protect Integrated Windows Authentication (NTLM) password hashes, Kerberos authentication ticket-granting tickets, and credentials that applications store as domain credentials.
 
-:::image type="content" source="../media/az500-host-recommendations-1-5d8e05d6-b7fef0bc.png" alt-text="Screenshot of the Security policy controls and Prevention policy recommendations controls in Visual Studio Ultimate with Microsoft Developer Network.":::
+By enabling Windows Defender Credential Guard, you get the following features and solutions:
 
+ -  Hardware security enhancement. NTLM, Kerberos, and Credential Manager take advantage of platform security features, including Secure Boot and virtualization, to help protect credentials.
+ -  Virtualization-based security enhancement. NTLM-derived credentials, Kerberos-derived credentials, and other secrets run in a protected environment that is isolated from the running operating system.
+ -  Better protection against advanced persistent threats. When virtualization-based security enhancement helps protect Credential Manager domain credentials, NTLM-derived credentials, and Kerberos-derived credentials, the credential theft attack techniques and tools that many targeted attacks use are blocked. Malware running in the OS with administrative privileges can’t extract secrets that virtualization-based security helps protect. Although Windows Defender Credential Guard provides powerful mitigation, persistent threat attacks will likely shift to new attack techniques, so you should also incorporate Windows Defender Device Guard and other security strategies and architectures.
 
-A security policy defines the set of controls recommended for resources within the specified subscription or resource group. Before enabling a security policy, you need to enable data collection. Microsoft Defender for Cloud collects data from your VMs to assess their security state, provide security recommendations, and alert you to threats. In Microsoft Defender for Cloud, you define policies for your Azure subscriptions or resource groups according to your company’s security needs and the types of applications or sensitivity of data in each subscription.
+## Windows Defender Device Guard and Windows Defender Application Control
 
-Security Center analyzes the security state of your Azure resources. When Microsoft Defender for Cloud identifies potential security vulnerabilities, it creates recommendations. The recommendations guide you through the process of configuring the needed controls.
+The configuration state of Windows Defender Device Guard was originally designed with a specific security idea in mind. Although no direct dependencies existed between the two main OS features of the Windows Defender Device Guard configuration—that is, between configurable code integrity and Hypervisor-protected code integrity (HVCI)—the discussion intentionally focused on the Windows Defender Device Guard lockdown state that can be achieved when they’re deployed together.
 
-After setting a security policy, Microsoft Defender for Cloud analyzes the security state of your resources to identify potential vulnerabilities. It depicts recommendations in a table format, where each line represents one recommendation. The example below of recommendations for Azure VMs and what each will do if you apply it. When you select a recommendation, Microsoft Defender for Cloud provides information about how you can implement that recommendation.
+However, the use of the term device guard to describe this configuration state has unintentionally left many IT pros with the impression that the two features are inexorably linked and can’t be separately deployed. Additionally, because HVCI relies on security based on Windows virtualization, it comes with additional hardware, firmware, and kernel driver compatibility requirements that some older systems can’t meet.
 
-Microsoft Defender for Cloud also monitors and analyzes the enabled security policies to identify potential vulnerabilities. On the **Resource group** blade, you can check the security state of a resource along with any issues.
+As a result, many IT pros assumed that because some systems couldn't use HVCI, they couldn’t use configurable code integrity, either. But configurable code integrity has no specific hardware or software requirements other than running Windows 10, which means that many IT pros were wrongly denied the benefits of this powerful application control capability.
 
-:::image type="content" source="../media/msft-defender-for-cloud-recommendations-1b-b9248b63.jpg" alt-text="Screenshot of the Microsoft Defender for Cloud Security Recommendations for a Virtual Machine.":::
+Since the initial release of Windows 10, the world has witnessed numerous hacking and malware attacks where application control alone might have prevented the attack altogether. Configurable code integrity is now documented as an independent technology within the Microsoft security stack and given a name of its own: Windows Defender Application Control.
 
+Application control is a crucial line of defense for helping protect enterprises given today’s threat landscape, and it has an inherent advantage over traditional antivirus solutions. Specifically, application control moves away from the traditional application trust model, in which all applications are assumed trustworthy by default, to one where applications must earn trust to run. Many organizations understand this and frequently cite application control as one of the most effective means for addressing the threat of malware based on executable files (such as .exe and .dll files).
 
-Microsoft Defender for Cloud threat detection works by automatically collecting security information from your Azure resources, the network, and connected partner solutions. It analyzes this information, often correlating information from multiple sources, to identify threats. Microsoft Defender for Cloud prioritizes alerts along with recommendations on how to remediate the threats.
+Windows Defender Application Control helps mitigate these types of threats by restricting the applications that users can run and the code that runs in the system core, or kernel. Policies in Windows Defender Application Control also block unsigned scripts and MSIs, and Windows PowerShell runs in Constrained language mode.
 
-:::image type="content" source="../media/az500-host-recommendations-3-600ff466.png" alt-text="Screenshot that depicts Security Center monitoring traffic, collecting logs, and analyzing data for threats and then presenting all the information on a single dashboard.":::
+Does this mean the Windows Defender Device Guard configuration state is going away? Not at all. The term device guard will continue to describe the fully locked down state achieved using Windows Defender Application Control, HVCI, and hardware and firmware security features. It will also allow Microsoft to work with its original equipment manufacturer (OEM) partners to identify specifications for devices that are device guard capable—so that joint customers can easily purchase devices that meet all the hardware and firmware requirements of the original locked down scenario of Windows Defender Device Guard for Windows 10 devices.
 
+## Microsoft Defender for Endpoint - Supported Operating Systems
 
-Microsoft Defender for Cloud employs advanced security analytics that go far beyond signature-based approaches. Microsoft Defender for Cloud takes advantage of breakthroughs in big data and machine learning technologies to evaluate events across the entire cloud fabric—detecting threats that would be impossible to identify via manual approaches and predicting the evolution of attacks. These security analytics include:
-
- -  Integrated threat intelligence. Seeks known malicious hackers by taking advantage of global threat intelligence from Microsoft products and services, the Microsoft Digital Crimes Unit, the Microsoft Security Response Center, and external feeds.
- -  Behavioral analytics. Applies known patterns to discover malicious behavior.
- -  Anomaly detection. Uses statistical profiling to build a historical baseline. It sends alerts on deviations from established baselines that conform to potential attack vectors.
-
-Using these analytics, Microsoft Defender for Cloud can help disrupt the kill chain by adding detection in different phases of the kill chain, as the following figure depicts.
-
-:::image type="content" source="../media/az500-host-recommendations-4-1d7aab48.png" alt-text="Diagram that depicts detection added to different phases of the kill chain.":::
-
-
-The preceding figure depicts some common alerts for each phase, and several more types of alerts exist. Microsoft Defender for Cloud also correlates alerts and creates a security incident. Security incidents give you a better view of which alerts belong to the same attack campaign.
+:::image type="content" source="../media/cms-supported-windows-versions-a12d5d22.png":::

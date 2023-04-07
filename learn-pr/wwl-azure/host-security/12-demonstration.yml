@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.host-security.demonstration
-title: Perform Try-This exercises
+uid: learn.wwl.host-security.security-center-recommendations
+title: Explore Microsoft Defender for Cloud recommendations
 metadata:
-  title: Perform Try-This exercises
-  description: "Perform Try-This exercises"
-  ms.date: 02/02/2023
+  title: Explore Microsoft Defender for Cloud recommendations
+  description: "Explore Microsoft Defender for Cloud recommendations"
+  ms.date: 04/07/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 15
+  zone_pivot_groups: None
 content: |
   [!include[](includes/12-demonstration.md)]

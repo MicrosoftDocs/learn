@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.host-security.security-center-recommendations
-title: Explore Microsoft Defender for Cloud recommendations
+uid: learn.wwl.host-security.windows-defender
+title: Deploy and configure Windows Defender
 metadata:
-  title: Explore Microsoft Defender for Cloud recommendations
-  description: "Explore Microsoft Defender for Cloud recommendations"
-  ms.date: 02/02/2023
+  title: Deploy and configure Windows Defender
+  description: "Deploy and configure Windows Defender"
+  ms.date: 04/07/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 8
+  zone_pivot_groups: None
 content: |
   [!include[](includes/10-security-center-recommendations.md)]

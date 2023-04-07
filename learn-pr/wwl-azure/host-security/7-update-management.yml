@@ -4,13 +4,11 @@ title: Configure update management
 metadata:
   title: Configure update management
   description: "Configure update management"
-  ms.date: 02/02/2023
+  ms.date: 04/07/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 8
+  zone_pivot_groups: None
 content: |
   [!include[](includes/7-update-management.md)]

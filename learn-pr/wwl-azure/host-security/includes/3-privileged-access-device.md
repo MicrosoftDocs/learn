@@ -1,3 +1,4 @@
+
 This a relatively new guidance from Microsoft. To ensure the most secure conditions for your company to you need to ensure security from the time of purchase of a new device, to its first usage, and beyond. Zero Trust, means that you don't purchase from generic retailers but only supply hardware from an authorized OEM that support Autopilot.
 
 For this solution, root of trust will be deployed using Windows Autopilot technology with hardware that meets the modern technical requirements. To secure a workstation, Autopilot lets you leverage Microsoft OEM-optimized Windows 10 devices. These devices come in a known good state from the manufacturer. Instead of reimaging a potentially insecure device, Autopilot can transform a Windows 10 device into a “business-ready” state. It applies settings and policies, installs apps, and even changes the edition of Windows 10.
@@ -22,63 +23,11 @@ To have a secured workstation you need to make sure the following security techn
 
 ## Levels of device security
 
-:::row:::
-  :::column:::
-    **Device Type**
-  :::column-end:::
-  :::column:::
-    **Common usage scenario**
-  :::column-end:::
-  :::column:::
-    **Permitted activities**
-  :::column-end:::
-  :::column:::
-    **Security guidance**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Enterprise Device
-  :::column-end:::
-  :::column:::
-    Home users, small business users, general purpose developers, and enterprise
-  :::column-end:::
-  :::column:::
-    Run any application, browse any website
-  :::column-end:::
-  :::column:::
-    Anti-malware and virus protection and policy based security posture for the enterprise.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Specialized Device
-  :::column-end:::
-  :::column:::
-    Specialized or secure enterprise users
-  :::column-end:::
-  :::column:::
-    Run approved applications, but cannot install apps. Email and web browsing allowed. No admin controls
-  :::column-end:::
-  :::column:::
-    No self administration of device, no application installation, policy based security, and endpoint management
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Privileged Device
-  :::column-end:::
-  :::column:::
-    Extremely sensitive roles
-  :::column-end:::
-  :::column:::
-    IT Operations
-  :::column-end:::
-  :::column:::
-    No local admins, no productivity tools, locked down browsing. PAW device
-  :::column-end:::
-:::row-end:::
-
+| **Device Type**    | **Common usage scenario**                                                    | **Permitted activities**                                                                              | **Security guidance**                                                                                         |
+| ------------------ | ---------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| Enterprise Device  | Home users, small business users, general purpose developers, and enterprise | Run any application, browse any website                                                               | Anti-malware and virus protection and policy based security posture for the enterprise.                       |
+| Specialized Device | Specialized or secure enterprise users                                       | Run approved applications, but cannot install apps. Email and web browsing allowed. No admin controls | No self administration of device, no application installation, policy based security, and endpoint management |
+| Privileged Device  | Extremely sensitive roles                                                    | IT Operations                                                                                         | No local admins, no productivity tools, locked down browsing. PAW device                                      |
 
 This chart shows the level of device security controls based on how the device will be used.
 
@@ -89,143 +38,14 @@ This chart shows the level of device security controls based on how the device w
 
 A secure workstation requires it be part of an end-to-end approach including device security, account security, and security policies applied to the device at all times. Here are some common security measures you should consider implementing based on the users needs. Using a device with security measures directly aligned to the security needs of it users is the more secure solution.
 
-:::row:::
-  :::column:::
-    **Security Control**
-  :::column-end:::
-  :::column:::
-    **Enterprise Device**
-  :::column-end:::
-  :::column:::
-    **Specialized Device**
-  :::column-end:::
-  :::column:::
-    **Privileged Device**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Microsoft Endpoint Manager (MEM) managed
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Deny BYOD Device enrollment
-  :::column-end:::
-  :::column:::
-    No
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    MEM security baseline applied
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Microsoft Defender for Endpoint
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Join personal device via Autopilot
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-  :::column:::
-    No
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    URLs restricted to approved list
-  :::column-end:::
-  :::column:::
-    Allow Most
-  :::column-end:::
-  :::column:::
-    Allow Most
-  :::column-end:::
-  :::column:::
-    Deny Default
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Removal of admin rights
-  :::column-end:::
-  :::column:::
-    
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Application execution control (AppLocker)
-  :::column-end:::
-  :::column:::
-    
-  :::column-end:::
-  :::column:::
-    Audit -&gt; Enforced
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Applications installed only by MEM
-  :::column-end:::
-  :::column:::
-    
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-:::row-end:::
+| **Security Control**                      | **Enterprise Device** | **Specialized Device**          | **Privileged Device** |
+| ----------------------------------------- | --------------------- | ------------------------------- | --------------------- |
+| Microsoft Endpoint Manager (MEM) managed  | Yes                   | Yes                             | Yes                   |
+| Deny BYOD Device enrollment               | No                    | Yes                             | Yes                   |
+| MEM security baseline applied             | Yes                   | Yes                             | Yes                   |
+| Microsoft Defender for Endpoint           | Yes                   | Yes                             | Yes                   |
+| Join personal device via Autopilot        | Yes                   | Yes                             | No                    |
+| URLs restricted to approved list          | Allow Most            | Allow Most                      | Deny Default          |
+| Removal of admin rights                   |                       | Yes                             | Yes                   |
+| Application execution control (AppLocker) |                       | Audit -&gt; Enforced | Yes                   |
+| Applications installed only by MEM        |                       | Yes                             | Yes                   |
