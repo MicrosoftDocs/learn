@@ -58,14 +58,15 @@ Before you create your Codespace, you'll create several secrets that help your s
 
     :::image type="content" source="../media/3-add-codespaces-secret.png" alt-text="Screenshot of GitHub Codespaces secrets. ":::
 
-1. Create three new Codespaces Repository secrets.
+1. Create the following Codespaces Repository secrets.
 
     |Name  |Value  |
     |---------|---------|
     |ADO_ORG     |   Name of the Azure DevOps organization you're using to complete this module. In this example, `fabrikam` is the name of the organization.    |
     |ADO_PAT     |   The Personal Access Token that you created in the previous step.     |
 
-    If you don't want to run your agent in the `Default` pool (for example you are running this training module using your production Azure DevOps environment and you have other agents in the `Default` pool), you can create a secret named `ADO_POOL_NAME` and specify the name of the [agent pool to use](/azure/devops/pipelines/agents/pools-queues). If this secret isn't specified, the `Default` pool is used.
+    > [!TIP]
+    > In this training module, your agent assigned to the `Default` agent pool. If don't want to run your agent in the `Default` pool (for example you are running this training module using your production Azure DevOps environment and you have other agents in the `Default` pool), you can create a secret named `ADO_POOL_NAME` and specify the name of the [agent pool to use](/azure/devops/pipelines/agents/pools-queues). If this secret isn't specified, the `Default` pool is used.
 
 ## Set up Codespaces
 
