@@ -2,7 +2,7 @@ Let's start with a quick overview of Azure API Management and its core features.
 
 ## What is API lifecycle management?
 
-*API lifecycle management* is the process of administering an API through its entire lifespan&mdash;from its design and creation to its obsolescence and retirement. For the purposes of this module, we'll pick up after your APIs have already been designed, coded, and deployed. We'll concentrate on the rest of the API lifecycle management tasks, which include:
+*API lifecycle management* is the process of administering an API through its entire lifespan&mdash;from its design and creation to its obsolescence and retirement. For the purposes of this module, we'll pick up after your APIs have already been designed, coded, and deployed. Let's concentrate on the rest of the API lifecycle management tasks, which include:
 
 - Providing API documentation, testing, and code samples.
 - Onboarding and off-boarding users.
@@ -66,7 +66,7 @@ Azure API Management provides several service tiers, each offering a distinct se
 
 |**Criteria**  |**Consumption**  |**Developer**  |**Basic**  |**Standard**  |**Premium**  |
 | --- | --- | --- | --- | --- | --- |
-|**Designed for**    | Lightweight usage        | Evaluation, testing, and other non-production usage        | Entry-level production usage        | Medium-volume production usage        | High-volume or enterprise production usage        |
+|**Designed for**    | Lightweight usage        | Evaluation, testing, and other nonproduction usage        | Entry-level production usage        | Medium-volume production usage        | High-volume or enterprise production usage        |
 |**Cache**     | External only        | 10 megabytes (MB)         | 50 MB        | 1 gigabyte (GB)        | 5 GB        |
 |**Service-level agreement (SLA)**     | 99.95%        | None        | 99.95%        | 99.95%        | 99.99%        |
 |**Developer portal**     | No         | Yes        | Yes        | Yes        | Yes        |
@@ -74,11 +74,11 @@ Azure API Management provides several service tiers, each offering a distinct se
 |**Throughput (estimated requests/sec)**     | N/A        | 500        | 1,000        | 2,500        | 4,000        |
 
 > [!NOTE]
-> The pricing for the Consumption tier is per API call, where the first million calls are free, and the remainder then billed a fixed rate per 10,000 calls. Pricing for all the other tiers is per hour.
+> The pricing for the Consumption tier is per API call, where the first million calls are free, and the remainder are then billed at a fixed rate per 10,000 calls. Pricing for all the other tiers is per hour.
 
 ## Apply policies to API requests and responses
 
-One of the biggest problems with having multiple published APIs is that each API requires a separate set of policies. Here, a *policy* is a setting or action that controls the behavior of the API. For example, if you want to enforce a *rate limit* (the maximum number of API calls allowed from a single source in a given time period) you'd include that limit as part of the policies for an API. This is just one example, but there are numerous policies you can apply. Multiply that by several different APIs and you have a management nightmare.
+One of the biggest problems with having multiple published APIs is that each API requires a separate set of policies. Here, a *policy* is a setting or action that controls the behavior of the API. For example, if you want to enforce a *rate limit* (the maximum number of API calls allowed from a single source in a given time period) you'd include that limit as part of the policies for an API. A rate limit is just one example, but there are numerous policies you can apply. Multiply that by several different APIs and you have a management nightmare.
 
 Azure API Management solves the API policy problem by enabling you to set policies for all your APIs in a single place, which is the Azure API Management administration interface. With Azure API Management, you can set policies in many categories. A partial list includes:
 
