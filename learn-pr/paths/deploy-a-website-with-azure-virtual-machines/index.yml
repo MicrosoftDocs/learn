@@ -5,8 +5,8 @@ metadata:
   description: Learn to use a Windows or Linux Azure Virtual Machine to extend the website support that Azure provides.
   brand: azure
   ms.date: 09/24/2018
-  author: adrianstevens
-  ms.author: adsteven
+  author: cynthn
+  ms.author: cynthn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Deploy a website with Azure virtual machines
