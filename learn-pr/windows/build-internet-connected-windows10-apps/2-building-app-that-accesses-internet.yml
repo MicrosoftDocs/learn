@@ -6,7 +6,7 @@ metadata:
   description: Use Visual Studio to build a robust app in either Windows Forms, WPF, or UWP, to download and display NASA's "Astronomy Picture of the Day".
   ms.date: 12/10/2018
   author: PeterTurcan
-  ms.author: v-pettur
+  ms.author: jken
   ms.topic: interactive-tutorial
   ms.prod: learning-windows
   

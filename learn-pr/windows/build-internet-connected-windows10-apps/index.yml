@@ -3,9 +3,9 @@ uid: learn-windows.building-connected-windows-apps
 metadata:
   title: Build internet-connected Windows apps
   description: Learn how to build apps with Azure Cognitive Services that can find images based on text descriptions and write an app that connects to a NASA image service.
-  ms.date: 12/10/2018
+  ms.date: 04/07/2023
   author: PeterTurcan
-  ms.author: v-pettur
+  ms.author: jken
   ms.topic: interactive-tutorial
   ms.prod: learning-windows
 title: Write internet-connected Windows apps
@@ -17,7 +17,7 @@ abstract: |
 iconUrl: /training/achievements/build-internet-connected-windows-apps.svg
 prerequisites: |
  - A computer running the current release of Windows 10.
- - [Visual Studio 2017](/visualstudio/productinfo/vs2017-system-requirements-vs) installed.
+ - [Visual Studio 2022](/visualstudio/ide/whats-new-visual-studio-2022) installed.
  - Basic knowledge of C# or a similar programming language.
 levels:
 - beginner
