@@ -9,7 +9,6 @@ metadata:
   author: marleva
   ms.author: maevan
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 prerequisites: None
 iconUrl: /training/achievements/sell-through-commercial-marketplace.svg
 levels:
@@ -20,8 +19,8 @@ roles:
 - technology-manager
 - administrator
 products: 
-- azure
 - azure-marketplace
+- azure
 - dynamics-365
 - m365
 - office-365
