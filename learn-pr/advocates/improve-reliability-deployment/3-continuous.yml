@@ -50,9 +50,6 @@ quiz:
     - content: 'Reduce the time between having an idea and delivering useable software'
       isCorrect: false
       explanation: 'Continuous delivery can help with this goal.'
-    - content: 'Reduce the time between having an idea and delivering useable software'
-      isCorrect: false
-      explanation: 'Continuous delivery can help with this goal.'
     - content: 'Reduce the compliance requirements for your software'
       isCorrect: true
       explanation: 'Correct, continuous delivery could potentially help you meet your requirements in some circumstances, but it will not reduce them.'
