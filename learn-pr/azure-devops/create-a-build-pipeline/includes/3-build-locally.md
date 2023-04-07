@@ -62,11 +62,11 @@ Before you create your Codespace, you'll create several secrets that help your s
 
     |Name  |Value  |
     |---------|---------|
-    |ADO_ORG     |   Name of the Azure DevOps organization you're using to complete this module. In this example, `fabrikam` is the name of the organization.    |
+    |ADO_ORG     |   Name of the Azure DevOps organization you're using to complete this module. In this example, `fabrikam` is the name of the organization. This must be the same organization you used when you created your PAT in the previous step.   |
     |ADO_PAT     |   The Personal Access Token that you created in the previous step.     |
 
     > [!TIP]
-    > In this training module, your agent assigned to the `Default` agent pool. If don't want to run your agent in the `Default` pool (for example you are running this training module using your production Azure DevOps environment and you have other agents in the `Default` pool), you can create a secret named `ADO_POOL_NAME` and specify the name of the [agent pool to use](/azure/devops/pipelines/agents/pools-queues). If this secret isn't specified, the `Default` pool is used.
+    > In this training module, your agent is assigned to the `Default` agent pool. If don't want to run your agent in the `Default` pool (for example you are running this training module using your production Azure DevOps environment and you have other agents in the `Default` pool), you can create a secret named `ADO_POOL_NAME` and specify the name of the [agent pool to use](/azure/devops/pipelines/agents/pools-queues). If this secret isn't specified, the `Default` pool is used.
 
 ## Set up Codespaces
 
