@@ -167,3 +167,7 @@ Microsoft Intune is another cloud service you should incorporate in your design.
 The first step towards implementing the comprehensive infrastructure security solution for Contoso is to create an Azure AD tenant and integrate it with the on-premises AD DS environment. That integration constitutes the starting point for setting up Azure subscriptions and provisioning Azure services such as Microsoft Defender for Cloud and Microsoft Intune. This is essential for subsequent stages of the transition to the cloud-based security model. This should be followed by remediating security vulnerabilities in the existing environment, including enrolling remote client computers into Intune, integrating on-premises and AWS resources with Microsoft Defender for Cloud through Azure Arc, and protecting the VDI farm. At that point, you should also consider using other Azure services, such as Azure Update Management to address any gaps in patch levels of existing servers. 
 
 The longer-term goals should involve modernizing the existing environment by transitioning on-premises workloads to Azure. This would include migrating the on-premises VDI farm to Azure Virtual Desktop and replacing on-premises SIEM with Microsoft Sentinel.
+
+## Proposed solution architecture
+
+:::image type="content" source="../media/final-architecture.png" alt-text="Diagram showing Contoso's proposed final architecture." lightbox="../media/final-architecture.png":::

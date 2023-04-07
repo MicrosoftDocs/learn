@@ -12,6 +12,10 @@ Lastly, the current fragmentation of its IT environment makes it challenging for
 
 As part of a recently drafted modernization strategy intended to address the current issues, the company's new CIO decided to migrate a substantial portion of existing workloads to the public cloud. The workloads include both Windows and Linux server hosted services, including hundreds of Microsoft SQL Server instances, .NET websites running on the Internet Information Services (IIS) platform, PHP and Ruby websites running on Apache web servers, as well as dozens of open-source relational and nonrelational databases, including MySQL, PostgreSQL, MariaDB, and Apache Cassandra. In addition, the intention is to decommission aging file servers and use the cloud for long-term data storage. To minimize administrative overhead, managed services should be used whenever possible. Due to a long-standing partnership between Contoso and Microsoft, Azure became the primary migration target. Before the migration strategy is finalized, the technology team reporting to the CIO must identify the optimal approach to address the need to properly secure the on-premises and cloud-based infrastructure.
 
+## Initial architecture
+
+:::image type="content" source="../media/initial-architecture.png" alt-text="Diagram showing Contoso's initial architecture." lightbox="../media/initial-architecture.png":::
+
 ## Design requirements
 
 The CIO of Contoso defined the following set of requirements that the technology team must address in its design of the Azure-based solution for securing the company's infrastructure: 

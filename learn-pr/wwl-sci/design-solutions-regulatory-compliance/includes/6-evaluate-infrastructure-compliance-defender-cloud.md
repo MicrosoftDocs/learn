@@ -8,7 +8,7 @@ The regulatory compliance dashboard shows the status of all the assessments with
 
 A security policy defines the desired configuration of your workloads and helps ensure compliance with company or regulatory security requirements. In Defender for Cloud, you can define policies for your Azure subscriptions, which can be tailored to the type of workload or the sensitivity of data.
 
-Defenders for Cloud policies contain the following components:
+Defender for Cloud policies contain the following components:
 
 - Data collection: agent provisioning and data collection settings.
 - Security policy: an Azure Policy that determines which controls are monitored and recommended by Defender for Cloud. You can also use Azure Policy to create new definitions, define more policies, and assign policies across management groups.

@@ -14,6 +14,8 @@ Contoso relies on Azure DevOps Server for version control and application lifecy
 
 To address the current development and operational issues, the CIO of Contoso laid out a plan to modernize the existing environment by transitioning to Microsoft Azure and fully embracing cloud-based DevSecOps practices. The plan includes replacing current processes with an automated continuous integration/continuous delivery (CI/CD) workflows and fully addressing security concerns. Despite the existing Azure DevOps Server installation, the decision was made to choose GitHub as the target platform for implementing the plan.
 
+## Initial architecture
+
 ![Diagram of the initial architecture of Contoso.](../media/initial-architecture.png)
 
 ## Design requirements

@@ -36,10 +36,10 @@ subjects:
   - cloud-security
 units:
 - learn.wwl.design-solutions-network-security.introduction
-- learn.wwl.design-solutions-network-security.design-solutions-for-network-segmentation
-- learn.wwl.design-solutions-network-security.design-solutions-for-traffic-filtering-with-network-security-groups
-- learn.wwl.design-solutions-network-security.design-solutions-for-network-posture-management
-- learn.wwl.design-solutions-network-security.design-solutions-for-network-monitoring
+- learn.wwl.design-solutions-network-security.design-solutions-network-segmentation
+- learn.wwl.design-solutions-network-security.design-solutions-traffic-filtering-network-security-groups
+- learn.wwl.design-solutions-network-security.design-solutions-network-posture-management
+- learn.wwl.design-solutions-network-security.design-solutions-network-monitoring
 - learn.wwl.design-solutions-network-security.knowledge-check
 - learn.wwl.design-solutions-network-security.summary
 badge:

@@ -142,4 +142,4 @@ To further enhance this capability, Contoso’s development team should build a 
 
 ## Proposed solution architecture
 
-![Diagram of the initial architecture of Contoso.](../media/final-architecture.png)
+:::image type="content" source="../media/final-architecture.png" alt-text="Diagram of the initial architecture of Contoso." lightbox="../media/final-architecture.png":::

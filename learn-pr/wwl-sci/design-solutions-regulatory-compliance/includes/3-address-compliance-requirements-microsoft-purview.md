@@ -9,7 +9,7 @@ Compliance Manager helps simplify compliance and reduce risk by providing:
 
 The Compliance Manager overview page shows your current compliance score, helps you see what needs attention, and guides you to key improvement actions. Below is an example of the overview page:
 
-![Screenshot showing Microsoft Purview Compliance Manager dashboard.](../media/compliance-manager-overview.png)
+:::image type="content" source="../media/compliance-manager-overview.png" alt-text="Screenshot showing Microsoft Purview Compliance Manager dashboard." lightbox="../media/compliance-manager-overview.png":::
 
 ## Understanding your compliance score
 

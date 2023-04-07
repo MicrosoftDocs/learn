@@ -6,5 +6,5 @@ In this module you learned the following:
 ## Learn more with security documentation
 
 - [Microsoft Cybersecurity Reference Architectures - Security documentation](https://learn.microsoft.com/security/cybersecurity-reference-architecture/mcra)
-[Overview of the Microsoft cloud security benchmark](https://learn.microsoft.com/security/benchmark/azure/overview?source=recommendations)
+- [Overview of the Microsoft cloud security benchmark](https://learn.microsoft.com/security/benchmark/azure/overview?source=recommendations)
 - [Microsoft cloud security benchmark introduction](https://learn.microsoft.com/security/benchmark/azure/introduction)
