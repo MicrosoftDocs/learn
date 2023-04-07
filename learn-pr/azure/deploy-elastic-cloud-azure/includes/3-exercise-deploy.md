@@ -10,7 +10,7 @@ Recall that Tailwind Traders has asked you to propose a solution for improving t
 
 1. Select your **Subscription** and **Resource group** (you can also choose to create a new group.) Select a **Name** for your Elastic resource, such as *my_first_ES_cluster*. Select **Review + create**.
 
-    :::image type="content" source="../media/create-resource.png" alt-text="Screenshot of the Create Elastic resource page in the Azure portal.":::
+    :::image type="content" source="../media/create_resource.png" alt-text="Screenshot of the Create Elastic resource page in the Azure portal.":::
 
 1. Select **Create**. Once the SaaS configuration is complete, click **Configure account now**. 
 
