@@ -13,7 +13,17 @@ In .NET, you can package your app as a .zip file. You can then use the built-in 
 
 1. In Visual Studio Code, change *azure-pipelines.yml* as you see here:
 
-    [!code-yml[](code/7-azure-pipelines-1.yml?highlight=43-54)]
+    ::: zone pivot="github-codespaces-agent"
+
+    [!code-yml[](code/7-codespaces-azure-pipelines-1.yml?highlight=41-52)]
+
+    ::: zone-end
+
+    ::: zone pivot="ms-hosted-agents"
+
+    [!code-yml[](code/7-azure-pipelines-1.yml?highlight=41-52)]
+
+    ::: zone-end
 
     This version of *azure-pipelines.yml* looks like the previous version, but it adds two additional tasks.
 
@@ -84,7 +94,17 @@ You now use variables to define these values one time. You then reference the va
 
 1. In Visual Studio Code, change *azure-pipelines.yml* as you see here:
 
-    [!code-yml[](code/7-azure-pipelines-2.yml?highlight=9-12,16,18,25,33,42,45,49,54)]
+    ::: zone pivot="github-codespaces-agent"
+
+    [!code-yml[](code/7-codespaces-azure-pipelines-2.yml?highlight=7-10,14,16,23,31,40,43,47,52)]
+
+    ::: zone-end
+
+    ::: zone pivot="ms-hosted-agents"
+
+    [!code-yml[](code/7-azure-pipelines-2.yml?highlight=7-10,14,16,23,31,40,43,47,52)]
+
+    ::: zone-end
 
     Notice the `variables` section, which defines these variables:
 
