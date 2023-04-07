@@ -4,7 +4,7 @@ SC-900: Module 2 Describe the capabilities of Microsoft Azure Active Directory (
 
 Module 2 Overview
 
-As you are preparing to teach this module, get familiar with what the students will learn during the module. In this module, students will learn about Azure Active Directory (AD) services and identity principals, secure authentication, access management capabilities, as well as identity protection and governance.
+As you prepare to teach this module, get familiar with what the students learn during the module. In this module, students learn about Azure Active Directory (AD) services and identity principals, secure authentication, access management capabilities, as well as identity protection and governance.
 
 This module consists of four lessons:
 
@@ -19,7 +19,7 @@ This module consists of four lessons:
 Module 2 Tips and Tricks
 
 - Describe the differences between Microsoft Azure Active Directory, part of Microsoft Entra and Active Directory, a service commonly used on-premises
-- Practice the demos several times before you start the class to ensure you are familiar with the content 
+- Practice the demos several times before you start the class to ensure you're familiar with the content 
 - Incorporate real-world experiences when discussing multi-factor authentication
 
 Module 2 Demos

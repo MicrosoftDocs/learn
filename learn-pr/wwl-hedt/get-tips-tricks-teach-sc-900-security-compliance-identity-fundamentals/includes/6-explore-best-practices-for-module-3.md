@@ -4,7 +4,7 @@ SC-900: Module 3 Describe the capabilities of Microsoft Security Solutions
 
 Module 3 Overview
 
-As you are preparing to teach this module, get familiar with what the students will learn during the module. In this module, students will learn about security capabilities in Microsoft. Topics covered will include network and platform capabilities of Azure, Azure security management, and Sentinel. You'll learn about threat protection with Microsoft 365 Defender, Microsoft 365 security management, and endpoint security.
+As you prepare to teach this module, get familiar with what the students learn during the module. In this module, students learn about security capabilities in Microsoft. Topics covered include network and platform capabilities of Azure, Azure security management, and Sentinel. You'll learn about threat protection with Microsoft 365 Defender, Microsoft 365 security management, and endpoint security.
 
 This module consists of four lessons:
 
@@ -17,7 +17,7 @@ This module consists of four lessons:
 
 Module 3 Tips and Tricks
 
-- Practice the demos several times before you start the class to ensure you are familiar with the content; we are working in the cloud and the portal might change or new settings may be added
+- Practice the demos several times before you start the class to ensure you're familiar with the content; we're working in the cloud and the portal might change or new settings may be added
 - Describe the difference between network security groups (NSG) and firewall and distributed denial of service (DDoS) protection 
 - Consider using a whiteboard or diagram to describe a scenario to help learners understand  these concepts
 - Explain the different marks of Defender services including endpoints, applications, and identities
