@@ -11,7 +11,7 @@ An AOAI resource can be deployed through both the Azure command line interface (
 1. Search for **Azure OpenAI**, select it, and click **Create**
 1. Enter the appropriate values for the empty fields, and create the resource.
 
-The possible regions for an AOAI is currently limited. Choose the region closest to your physical location.
+The possible regions for an AOAI are currently limited. Choose the region closest to your physical location.
 
 Once the resource has been created, you'll have keys and an endpoint that you can use in your app.
 
