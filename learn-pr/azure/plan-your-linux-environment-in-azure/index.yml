@@ -1,0 +1,29 @@
+### YamlMime:Module
+uid: learn.plan-your-linux-environment-in-azure
+metadata:
+  ms.author: robmcm
+  author: rmcmurray
+  ms.date: 04/07/2023
+  title: Plan your Linux environment in Azure
+  description: TBD
+  ms.topic: interactive-tutorial
+title: Plan your Linux environment in Azure
+summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+abstract: TBD
+prerequisites: TBD
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- learn.plan-your-linux-environment-in-azure.introduction
+- learn.plan-your-linux-environment-in-azure.plan-for-sizing-and-networking-of-azure-vms-running-linux
+- learn.plan-your-linux-environment-in-azure.implement-best-practices-for-managing-linux-on-azure-vms
+- learn.plan-your-linux-environment-in-azure.optimize-linux-on-azure-vms-for-performance-and-functionality
+- learn.plan-your-linux-environment-in-azure.knowledge-check
+- learn.plan-your-linux-environment-in-azure.summary
+badge:
+  uid: learn.plan-your-linux-environment-in-azure-badge

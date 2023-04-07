@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.plan-your-linux-environment-in-azure.plan-for-sizing-and-networking-of-azure-vms-running-linux
+title: Plan for sizing and networking of Azure VMs running Linux
+metadata:
+  title: Plan for sizing and networking of Azure VMs running Linux
+  description: TBD
+  ms.date: 04/07/2023
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+content: |
+  [!include[](includes/2-plan-for-sizing-and-networking-of-azure-vms-running-linux.md)]

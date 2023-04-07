@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.plan-your-linux-environment-in-azure.optimize-linux-on-azure-vms-for-performance-and-functionality
+title: Optimize Linux on Azure VMs for performance and functionality
+metadata:
+  title: Optimize Linux on Azure VMs for performance and functionality
+  description: TBD
+  ms.date: 04/07/2023
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 12
+content: |
+  [!include[](includes/4-optimize-linux-on-azure-vms-for-performance-and-functionality.md)]
