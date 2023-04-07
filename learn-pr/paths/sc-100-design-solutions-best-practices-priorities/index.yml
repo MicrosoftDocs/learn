@@ -28,7 +28,7 @@ products:
 - microsoft-sentinel
 modules:
 - learn.wwl.introduction-zero-trust-best-practice-frameworks
-- learn.wwl.design-solutions-that-align-cloud-adoption-framework-well-architected-framework
+- learn.wwl.design-solutions-align-cloud-adoption-framework-well-architected-framework
 - learn.wwl.design-solutions-microsoft-cybersecurity-cloud-security-benchmark
 - learn.wwl.design-resiliency-strategy-common-cyberthreats-like-ransomware
 trophy:
