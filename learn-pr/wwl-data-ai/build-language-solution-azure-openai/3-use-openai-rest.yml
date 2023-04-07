@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-language-solution-azure-openai.use-openai-rest
+title: Use Azure OpenAI REST API
+metadata:
+  title: exercise
+  description: "Understand how to use the REST API to connect to the available endpoints of an Azure OpenAI resource."
+  ms.date: 4/5/2023
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure 
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-use-openai-rest.md)]
