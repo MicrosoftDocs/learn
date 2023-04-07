@@ -59,7 +59,7 @@ quiz:
     choices:
       - content: A service for managing privacy and data protection compliance.
         isCorrect: true
-        explanation: Microsoft Priva is a service for managing privacy and data protection compliance. It helps organizations manage compliance with privacy regulations, such as GDPR and CCPA, by providing tools for data classification, risk assessment, and compliance reporting.
+        explanation: Microsoft Priva is a service for managing privacy and data protection compliance. It helps organizations manage compliance with privacy regulations, by providing tools for data classification, risk assessment, and compliance reporting.
       - content: A tool for managing access to cloud resources.
         isCorrect: false
         explanation: Microsoft Priva isn't a tool for managing access to cloud resources. It is a service for managing privacy and data protection compliance.
