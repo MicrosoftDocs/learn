@@ -3,7 +3,7 @@ uid: learn.wwl.sql-database-security
 metadata:
   title: Configure and manage SQL database security
   description: "Configure and lock down your SQL database on Azure to protect your corporate data while it's stored."
-  ms.date: 02/24/2023
+  ms.date: 04/06/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
@@ -36,8 +36,11 @@ units:
 - learn.wwl.sql-database-security.firewalls
 - learn.wwl.sql-database-security.database-auditing
 - learn.wwl.sql-database-security.data-discovery-classification​
-- learn.wwl.sql-database-security.vulnerability-assessment​
-- learn.wwl.sql-database-security.advanced-threat-protection
+- learn.wwl.sql-database-security.microsoft-defender-for-sql
+- learn.wwl.sql-database-security.vulnerability-assessment-for-sql-server
+- learn.wwl.sql-database-security.sql-advanced-threat-protection
+- learn.wwl.sql-database-security.explore-detection-suspicious-event
+- learn.wwl.sql-database-security.sql-vulnerability-assessment-express-and-classic-configurations
 - learn.wwl.sql-database-security.dynamic-data-masking
 - learn.wwl.sql-database-security.transparent-data-encryption​
 - learn.wwl.sql-database-security.always-encrypted​
