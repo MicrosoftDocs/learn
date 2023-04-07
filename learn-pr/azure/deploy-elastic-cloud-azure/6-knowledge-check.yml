@@ -38,7 +38,7 @@ quiz:
       explanation: You can change these settings after deployment.
   - content: What is Kibana?
     choices:
-    - content: It's a visualization tool that automatically alongside Elastic.
+    - content: It's a visualization tool that works automatically alongside Elastic.
       isCorrect: true
       explanation: Kibana is the visualization tool for Elastic.
     - content: It's a coding language specifically for Elastic on Azure.
