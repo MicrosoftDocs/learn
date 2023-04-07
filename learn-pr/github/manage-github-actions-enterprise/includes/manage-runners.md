@@ -48,7 +48,7 @@ Self-hosted runners automatically receive default labels when they are added to 
 | `linux`, `windows`, or `macOS` |   Applied depending on the runner's operating system.    |
 |   `x64` , `ARM`, or `ARM64`    | Applied depending on the runner's hardware architecture. |
 
-On top of these default labels, Enterprise Cloud and Enterprise Server allow you to to create and add custom labels to your runners. Custom labels can come in handy when you need to run jobs on runners that have specific capabilities. For example, if a job in one of your workflows requires a specific type of graphics hardware, you could create a `gpu` custom label and assign it to the runners that have the hardware installed. All runners with the `gpu` label would then be eligible to run the job.
+On top of these default labels, Enterprise Cloud and Enterprise Server allow you to create and add custom labels to your runners. Custom labels can come in handy when you need to run jobs on runners that have specific capabilities. For example, if a job in one of your workflows requires a specific type of graphics hardware, you could create a `gpu` custom label and assign it to the runners that have the hardware installed. All runners with the `gpu` label would then be eligible to run the job.
 
 To add a label to a self-hosted runner, navigate to the GitHub Actions settings of the organization, repository, or enterprise where your self-hosted runner is registered (under **Actions** for an organization or repository, under **Policies > Actions** for an enterprise). When you're there:
 
