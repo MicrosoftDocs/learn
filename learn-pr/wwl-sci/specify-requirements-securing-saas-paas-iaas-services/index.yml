@@ -35,10 +35,10 @@ subjects:
   - security
   - cloud-security
 units:
-- learn.wwl.specify-requirements-secure-saas-paas-iaas-services.introduction-to-security-for-saas-paas-and-iaas
-- learn.wwl.specify-requirements-secure-saas-paas-iaas-services.specify-security-baselines-for-saas-paas-and-iaas-services
-- learn.wwl.specify-requirements-secure-saas-paas-iaas-services.specify-security-requirements-for-web-workloads
-- learn.wwl.specify-requirements-secure-saas-paas-iaas-services.specify-security-requirements-for-containers-and-container-orchestration
+- learn.wwl.specify-requirements-secure-saas-paas-iaas-services.introduction-security-saas-paas-iaas
+- learn.wwl.specify-requirements-secure-saas-paas-iaas-services.specify-security-baselines-saas-paas-iaas-services
+- learn.wwl.specify-requirements-secure-saas-paas-iaas-services.specify-security-requirements-web-workloads
+- learn.wwl.specify-requirements-secure-saas-paas-iaas-services.specify-security-requirements-containers-container-orchestration
 - learn.wwl.specify-requirements-secure-saas-paas-iaas-services.knowledge-check
 - learn.wwl.specify-requirements-secure-saas-paas-iaas-services.summary
 badge:

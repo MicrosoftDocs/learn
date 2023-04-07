@@ -11,7 +11,7 @@ The content in the module helps you prepare for the certification exam SC-100: M
 - Advanced experience and knowledge in identity and access, platform protection, security operations, securing data, and securing applications.
 - Experience with hybrid and cloud implementations.
 
-## What is Defender for Office 365 security
+## What is Defender for Office 365 security?
 
 Every Office 365 subscription comes with security capabilities. The goals and actions that you can take depend on the focus of these different subscriptions. In Office 365 security, there are three main security services (or products) tied to your subscription type:
 

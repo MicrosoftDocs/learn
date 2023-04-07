@@ -9,8 +9,6 @@ This article shows you how to harden a managed domain by using setting setting s
 -   LDAP signing
 -   LDAP channel binding
 
-<!--[](https://learn.microsoft.com/azure/active-directory-domain-services/secure-your-domain#prerequisites)-->
-
 ## Prerequisites
 
 To complete this article, you need the following resources:
@@ -21,8 +19,6 @@ To complete this article, you need the following resources:
     -   If needed, [create an Azure Active Directory tenant](https://learn.microsoft.com/azure/active-directory/fundamentals/sign-up-organization) or [associate an Azure subscription with your account](https://learn.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory).
 -   An Azure Active Directory Domain Services managed domain enabled and configured in your Azure AD tenant.
     -   If needed, [create and configure an Azure Active Directory Domain Services managed domain](https://learn.microsoft.com/azure/active-directory-domain-services/tutorial-create-instance).
-
-<!--[](https://learn.microsoft.com/azure/active-directory-domain-services/secure-your-domain#use-security-settings-to-harden-your-domain)-->
 
 ## Use Security settings to harden your domain
 
@@ -44,10 +40,7 @@ To complete this article, you need the following resources:
     -   **LDAP Signing**
     -   **LDAP Channel Binding**
     
-    ![Screenshot of Security settings to disable weak ciphers and NTLM password hash sync.](../media/security-settings.png)
-    
-
-<!--[](https://learn.microsoft.com/azure/active-directory-domain-services/secure-your-domain#assign-azure-policy-compliance-for-tls-12-usage)-->
+    :::image type="content" source="../media/security-settings.png" alt-text="Screenshot of Security settings to disable weak ciphers and NTLM password hash sync." lightbox="../media/security-settings.png":::    
 
 ## Assign Azure Policy compliance for TLS 1.2 usage
 
@@ -56,9 +49,7 @@ In addition to **Security settings**, Microsoft Azure Policy has a **Complianc
 -   If the assignment is **Audit**, the compliance will report if the Azure AD DS instance is compliant.
 -   If the assignment is **Deny**, the compliance will prevent an Azure AD DS instance from being created if TLS 1.2 is not required and prevent any update to an Azure AD DS instance until TLS 1.2 is required.
 
-![Screenshot of Compliance settings.](../media/policy-transport-layer-security.png)
-
-<!--[](https://learn.microsoft.com/azure/active-directory-domain-services/secure-your-domain#audit-ntlm-failures)-->
+:::image type="content" source="../media/policy-transport-layer-security.png" alt-text="Screenshot of compliance settings." lightbox="../media/policy-transport-layer-security.png":::
 
 ## Audit NTLM failures
 

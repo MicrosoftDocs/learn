@@ -18,7 +18,7 @@ This article assumes you have already configured cloud identity. If you need gui
 
 The first step is to build your Zero Trust foundation by configuring identity and device access protection.
 
-![Diagram showing the process to configure Zero Trust identity and device access protection.](../media/microsoft-365-zero-trust-architecture-step-1b.png)
+:::image type="content" source="../media/microsoft-365-zero-trust-architecture-step-1b.png" alt-text="Diagram showing the process to configure Zero Trust identity and device access protection." lightbox="../media/microsoft-365-zero-trust-architecture-step-1b.png":::
 
 Go to [**_Zero Trust identity and device access protection_**](https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-365-policies-configurations?view=o365-worldwide) for prescriptive guidance to accomplish this. This series of articles describes a set of identity and device access prerequisite configurations and a set of Azure Active Directory (Azure AD) Conditional Access, Microsoft Intune, and other policies to secure access to Microsoft 365 for enterprise cloud apps and services, other SaaS services, and on-premises applications published with Azure AD Application Proxy.
 
@@ -26,7 +26,7 @@ Device enrollment for policies that require managed devices. See [Step 2. Manag
 
 Start by implementing the starting-point tier. These policies do not require enrolling devices into management.
 
-![Diagram showing the Zero Trust identity and device access policies — starting-point tier.](../media/identity-access-starting-point-tier.png)
+:::image type="content" source="../media/identity-access-starting-point-tier.png" alt-text="Diagram showing the Zero Trust identity and device access policies — starting-point tier." lightbox="../media/identity-access-starting-point-tier.png":::
 
 ## Step 2. Manage endpoints with Intune
 
@@ -40,11 +40,11 @@ Go to [**_Manage devices with Intune_**](https://learn.microsoft.com/microsoft-
 
 With devices enrolled into management, you can now implement the full set of recommended Zero Trust identity and device access policies, requiring compliant devices.
 
-![Diagram showing the Zero Trust identity and access policies with device management.](../media/microsoft-365-zero-trust-architecture-enterprise-policies.png)
+:::image type="content" source="../media/microsoft-365-zero-trust-architecture-enterprise-policies.png" alt-text="Diagram showing the Zero Trust identity and access policies with device management." lightbox="../media/microsoft-365-zero-trust-architecture-enterprise-policies.png":::
 
 Return to [**_Common identity and device access policies_**](https://learn.microsoft.com/microsoft-365/security/office-365-security/identity-access-policies?view=o365-worldwide) and add the policies in the Enterprise tier.
 
-![Diagram showing the Zero Trust identity and access policies — Enterprise (recommended) tier.](../media/identity-access-enterprise-tier.png)
+:::image type="content" source="../media/identity-access-enterprise-tier.png" alt-text="Diagram showing the Zero Trust identity and access policies — Enterprise (recommended) tier." lightbox="../media/identity-access-enterprise-tier.png":::
 
 ## Step 4. Evaluate, pilot, and deploy Microsoft 365 Defender
 
@@ -62,13 +62,13 @@ Implement Microsoft Purview Information Protection to help you discover, classif
 
 Microsoft Purview Information Protection capabilities are included with Microsoft Purview and give you the tools to know your data, protect your data, and prevent data loss.
 
-![Diagram showing the Information protection capabilities protecting data through policy enforcement.](../media/microsoft-365-zero-trust-architecture-info-protect.png)
+:::image type="content" source="../media/microsoft-365-zero-trust-architecture-info-protect.png" alt-text="Diagram showing the Information protection capabilities protecting data through policy enforcement." lightbox="../media/microsoft-365-zero-trust-architecture-info-protect.png":::
 
 While this work is represented at the top of the deployment stack illustrated earlier in this article, you can begin this work anytime.
 
 Microsoft Purview Information Protection provides a framework, process, and capabilities you can use to accomplish your specific business objectives.
 
-![Diagram showing Microsoft Purview Information Protection.](../media/purview-information-protection-solution-overview.png)
+:::image type="content" source="../media/purview-information-protection-solution-overview.png" alt-text="Diagram showing Microsoft Purview Information Protection." lightbox="../media/purview-information-protection-solution-overview.png":::
 
 For more information on how to plan and deploy information protection, see [**_Deploy a Microsoft Purview Information Protection solution_**](https://learn.microsoft.com/microsoft-365/compliance/information-protection-solution?view=o365-worldwide).
 

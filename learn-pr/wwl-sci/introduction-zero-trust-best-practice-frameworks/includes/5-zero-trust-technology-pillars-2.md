@@ -23,7 +23,7 @@ After these are completed, focus on these **additional deployment objectives**:
 **IV.** Access decisions are governed by a cloud security policy engine.<br>
 **V.** Prevent data leakage through DLP policies based on a sensitivity label and content inspection.
 
-# Secure endpoints with Zero Trust
+## Secure endpoints with Zero Trust
 
 Zero Trust adheres to the principle, "Never trust, always verify." In terms of endpoints, that means always verify _all_ endpoints. That includes not only contractor, partner, and guest devices, but also [apps](https://aka.ms/ZTApplications) and devices used by employees to access work data, regardless of device ownership.
 

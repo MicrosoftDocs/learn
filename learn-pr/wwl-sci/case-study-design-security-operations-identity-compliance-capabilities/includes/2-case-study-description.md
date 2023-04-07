@@ -4,7 +4,7 @@ This unit presents the case study scenario, design requirements, conceptual and 
 
 Contoso is a medium-sized financial services company with its headquarters in New York and a branch office in San Francisco. It's currently operating entirely on-premises, with most of its infrastructure running Windows-based workloads. Most of its servers are joined to a multi-domain Active Directory Domain Services (AD DS) forest with the domain controllers running Windows Server 2019 and the forest functional level set to Windows Server 2016. Most line-of-business applications are web-based. While some of them have been designed to support modern authentication, there are a few that rely on Kerberos to authenticate and authorize access to back-end resources. 
 
-Contoso plans to expand its business through partnerships with other financial institutions. As part of this effort, Contoso established a business relationship with Fabrikam Banking, a company that manages an extensive portfolio of mortgage-related products. Contoso intends to provide Fabrikam Banking access to its internal Windows-based web applications that could supplement the existing Fabrikam Banking products. Fabrikam Banking is also operating primarily on-premises, but has already integrated its AD DS environment with Azure Active Directory (Azure AD). 
+Contoso plans to expand its business through partnerships with other financial institutions. As part of this effort, Contoso established a business relationship with Fabrikam, a company that manages an extensive portfolio of mortgage-related products. Contoso intends to provide Fabrikam access to its internal Windows-based web applications that could supplement the existing Fabrikam products. Fabrikam is also operating primarily on-premises, but has already integrated its AD DS environment with Azure Active Directory (Azure AD). 
 
 While the expansion is one of the primary business priorities, the technology organization of Contoso is facing challenges related to increased mobility of its workforce. The recent pandemic, combined with high costs of office space in the major US financial hubs, prompted the company's CIO to revisit the existing approach, which has been severely restricting the option to work from home. As a result, Contoso's legal and compliance teams started drafting a flexible work arrangement policy, which would allow its employees to work on designated days from home, using either corporate-owned or personal devices. This, however, triggered a swift reaction from  Contoso's Information Security (InfoSec) team, concerned about the lack of sufficient controls to prevent access from unauthorized or noncompliant systems. During the pandemic, the team reluctantly approved the use of point-to-site VPN and DirectAccess technologies as a stopgap measure. It has, however, insisted from the beginning that a strategic solution, which would prevent excessive levels of access to the on-premises infrastructure, is needed. 
 
@@ -12,9 +12,13 @@ In search for that strategic solution and to facilitate its business expansion p
 
 The new architecture should facilitate step-up authentication and per-application permissions, based not only on the properties of users' accounts, but also on the state of these users' devices. To maximize security, Contoso wants to minimize persistent assignments of privileged roles for identity and access management. In addition, the usage of privileged accounts needs to be closely monitored, audited, and reviewed regularly.
 
-Similar measures should be incorporated into the solution for providing Fabrikam Banking users with access to Contoso's applications. While the InfoSec team wants full transparency of the authorization process, access control and reviews should be delegated to the application owners.
+Similar measures should be incorporated into the solution for providing Fabrikam users with access to Contoso's applications. While the InfoSec team wants full transparency of the authorization process, access control and reviews should be delegated to the application owners.
  
 Another information security concern is the protection of users' passwords. Contoso aims to minimize their use in lieu of more secure authentication methods. In situations where passwords are required, any indication of password misuse or exposure should be promptly identified and remediated. Furthermore, any on-premises Active Directory user account restrictions, such as allowed sign-in hours, must be honored. Similarly, the existing Active Directory password policies must apply, although the head of Information Security would like to enhance them by preventing the use of common terms within password values.
+
+## Initial architecture
+
+:::image type="content" source="../media/initial-architecture.png" alt-text="Diagram showing Contoso's initial architecture." lightbox="../media/initial-architecture.png":::
 
 ## Design requirements
 
@@ -27,7 +31,7 @@ The CIO of Contoso defined the following set of requirements that the technology
 - Allow designated members of the IT staff to temporarily elevate their privileges for delegated identity and resource management. All elevation events must be approved and audited. The list of designated members and their respective privileges must be reviewed regularly.
 - Control access to applications and resources by relying on a combination of multiple conditions, including users' group membership, state of their devices, and dynamically evaluated risk based on heuristics and globally collected security-related telemetry.
 - Provide Contoso's remote users with access to on-premises Windows-based web applications that rely on Kerberos authentication.
-- Provide users of Fabrikam Banking with access to on-premises and cloud-based applications in a tightly controlled manner, with management delegated to the application owners. 
+- Provide users of Fabrikam with access to on-premises and cloud-based applications in a tightly controlled manner, with management delegated to the application owners. 
 
 ## High level conceptual questions
 
