@@ -72,10 +72,6 @@ Personal data is information that could be used to identify a consumer, employee
 
 <!--[](https://learn.microsoft.com/azure/cloud-adoption-framework/govern/policy-compliance/regulatory-compliance#gdpr)-->
 
-## GDPR
-
-One of the most important developments in this area is the General Data Protection Regulation (GDPR), designed to strengthen data protection for individuals within the European Union. GDPR requires that data about individuals (such as "a name, a home address, a photo, an email address, bank details, posts on social networking websites, medical information, or a computer's IP address") be maintained on servers within the EU and not transferred out of it. It also requires that companies notify individuals of any data breaches, and mandates that companies have a data protection officer (DPO). Other geopolitical regions have, or are developing, similar types of regulations.
-
 <!--[](https://learn.microsoft.com/azure/cloud-adoption-framework/govern/policy-compliance/regulatory-compliance#compliant-foundation-in-azure)-->
 
 ## Compliant foundation in Azure

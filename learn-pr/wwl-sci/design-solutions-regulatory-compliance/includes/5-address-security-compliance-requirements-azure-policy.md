@@ -3,7 +3,7 @@ We will cover the following keys to addressing security and compliance requireme
 1. Creating policies and applying them to resources
 	1. Using built-in policies
 	2. Creating custom policies
-	3. Grouping policies with intiative definitions
+	3. Grouping policies with initiative definitions
 2. Evaluating compliance
 3. Remediating non-compliant resources
 

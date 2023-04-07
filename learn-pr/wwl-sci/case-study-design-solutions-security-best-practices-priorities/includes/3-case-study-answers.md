@@ -125,7 +125,7 @@ If the ransomware creates a new encrypted copy of the file and deletes the old f
 
 ### What methods would you recommend to mitigate the potential impact of ransomware that attempts to copy data outside of a Microsoft 365 tenant?
 
-To prevent a ransomware attacker from copying files outside of the Microsoft 365 tenant, customers can use Microsoft Purview Data Loss Prevention (DLP) policies, which detect, warn, and block risky, inadvertent, or inappropriate sharing of data containing personally identifying information (PII) and confidential organization information based on sensitivity labels. This can be supplemented by Microsoft Defender for Cloud Apps, which supports session monitoring as part of Conditional Access App Control. The monitoring applies to the flow of data between users and managed applications and can be used to block transfers of business sensitive content.
+To prevent a ransomware attacker from copying files outside of the Microsoft 365 tenant, customers can use Microsoft Purview Data Loss Prevention (DLP) policies, which detect, warn, and block risky, inadvertent, or inappropriate sharing of data containing personal data and confidential organization information based on sensitivity labels. This can be supplemented by Microsoft Defender for Cloud Apps, which supports session monitoring as part of Conditional Access App Control. The monitoring applies to the flow of data between users and managed applications and can be used to block transfers of business sensitive content.
 
 ### Which are the data protection integration points between Microsoft 365 services and Microsoft 365 Defender products?
 
