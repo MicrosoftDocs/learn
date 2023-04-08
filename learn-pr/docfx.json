@@ -306,7 +306,7 @@
                 "dest": "modules"
             },
             {
-                "src": "partner-center",
+                "src": "partner-center-modules",
                 "files": [
                     "**/*.yml",
                     "**/*.md"
@@ -316,7 +316,7 @@
                     "**/design/**",
                     "**/resources/**"
                 ],
-                "dest": "modules"
+                "dest": "./modules/partner-center/"
             },
             {
                 "src": "pytorch",
