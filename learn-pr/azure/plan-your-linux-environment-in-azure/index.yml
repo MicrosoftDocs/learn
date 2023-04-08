@@ -10,10 +10,13 @@ metadata:
 title: Plan your Linux environment in Azure
 summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 abstract: |
-  By the end of this module, you'll be able to:
-  - Plan for and recommend the compute, networking, and storage options for deploying Azure VMs running Linux.
+  After completing this module, you'll be able to:
+  - Plan the network environment and sizing of Microsoft Azure virtual machines (VMs) running Linux.
+  - Apply established best practices for deploying and configuring Linux on Azure VMs.
+  - Optimize your Linux environment on Azure VMs for performance and functionality.
 prerequisites: |
-  - Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  - Lorem ipsum dolor sit amet.
+  - Consectetur adipiscing elit.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
