@@ -5,12 +5,15 @@ metadata:
   author: rmcmurray
   ms.date: 04/07/2023
   title: Plan your Linux environment in Azure
-  description: TBD
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
   ms.topic: interactive-tutorial
 title: Plan your Linux environment in Azure
 summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-abstract: TBD
-prerequisites: TBD
+abstract: |
+  By the end of this module, you'll be able to:
+  - Plan for and recommend the compute, networking, and storage options for deploying Azure VMs running Linux.
+prerequisites: |
+  - Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner

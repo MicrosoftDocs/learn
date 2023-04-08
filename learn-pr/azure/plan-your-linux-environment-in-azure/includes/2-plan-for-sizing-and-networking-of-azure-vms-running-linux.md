@@ -13,7 +13,8 @@ When creating an Azure VM, you also need to create several associated resources 
 
 In addition, you have the option to create a public IP address and associate it with the network interface of the Azure VM. This provides direct inbound access to the VM from the internet. 
 
-[!NOTE] Every network interface must have at least one private IP address assigned to it dynamically or statically. Private IP addresses are not separate Azure resources, they are part of the subnet configuration.
+> [!NOTE]
+> Every network interface must have at least one private IP address assigned to it dynamically or statically. Private IP addresses are not separate Azure resources, they are part of the subnet configuration.
 
 Now that you understand the Azure VM resource dependencies, you can begin planning for VM sizing.
 
@@ -29,7 +30,8 @@ To determine the appropriate size for your Azure VM, you need to consider its in
 
 Azure offers a wide range of sizes with different specifications and price points. So, you should be able to find one suitable for your needs.  
 
-[!WARNING] Each subscription includes virtual CPU (vCPU) quota limits, which you should account for in your planning. To proactively raise quota limits, you must submit an online request to Azure Support.
+> [!WARNING]
+> Each subscription includes virtual CPU (vCPU) quota limits, which you should account for in your planning. To proactively raise quota limits, you must submit an online request to Azure Support.
 
 VM sizes are grouped into multiple categories, representing the types of workloads they are optimized for. Within each category, you‘ll find one or more series, also referred to as _families_, which share common underlying hardware characteristics but offer a range of different sizes. 
 
@@ -86,7 +88,7 @@ To authenticate over an SSH connection, you can use a combination of a username 
 
 Even with SSH keys, by default you must open connectivity to a public address associated with the target Azure VM's network adapter. However, this also is vulnerable to external threats, and represents a potential attack vector. To mitigate this risk, consider implementing Azure Bastion or just-in-time (JIT) VM access. 
 
-### _Azure_ _Bastion_
+### _Azure Bastion_
 
 The first method involves deploying the Azure Bastion service into a dedicated subnet of a virtual network with connectivity to the target VM. Azure Bastion serves as a broker for external SSH connections. These connections take place over HTTPS and are available only from the Azure portal. This eliminates the need for assigning public IP addresses to the target VM’s network interface. It also helps ensure that only authenticated and properly authorized users can initiate SSH connections. For more information regarding these options, refer to the [Azure Bastion](https://learn.microsoft.com/en-us/azure/bastion/bastion-overview) Microsoft Learn article.
 
@@ -94,10 +96,12 @@ The first method involves deploying the Azure Bastion service into a dedicated s
 
 JIT VM access is one of the Microsoft Defender for Cloud features. Its purpose is to limit access to a public IP address associated with an Azure VM’s network interface. Access limitations are achieved by dynamically adjusting the NSG to allow incoming connections only from an explicitly designated IP address range during a designated time window. As with Azure Bastion, a user must authenticate first before initiating a connection from the Azure portal.
 
-[!NOTE] In hybrid scenarios, to eliminate the need for public IP addresses when connecting from your on-premises environment to Azure VMs, you can use site-to-site (S2S) VPN or Azure ExpressRoute.
+> [!NOTE]
+> In hybrid scenarios, to eliminate the need for public IP addresses when connecting from your on-premises environment to Azure VMs, you can use site-to-site (S2S) VPN or Azure ExpressRoute.
 
 ### Network throughput
 
 Although an Azure VM can have multiple network interfaces, its available bandwidth is dependent exclusively on its size. In general, larger VM sizes are allocated more bandwidth than smaller ones. When measuring the amount of the actual network bandwidth against the allocated limit, the platform targets only egress traffic. All network traffic leaving the VM counts toward that limit, regardless of the traffic destination. The platform does not directly limit the ingress bandwidth. However, factors such as storage and compute resource utilization impact the volume of incoming data an Azure VM can process. 
 
-[!NOTE] For information about the expected outbound throughput and the maximum number of network interfaces for each VM size, refer to the [Sizes for virtual machines in Azure](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes?toc=%2Fazure%2Fvirtual-network%2Ftoc.json) Microsoft Learn article.
+> [!NOTE]
+> For information about the expected outbound throughput and the maximum number of network interfaces for each VM size, refer to the [Sizes for virtual machines in Azure](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes?toc=%2Fazure%2Fvirtual-network%2Ftoc.json) Microsoft Learn article.

@@ -6,7 +6,8 @@ _VM provisioning_ is the process in which the platform creates the Azure VM conf
 
 - **Cloud-init provisioning agent**. The cloud-init agent is a widely used approach to customizing Linux during an initial boot. You can use cloud-init to install packages and write files, or to configure users and security. Because cloud-init is called during the initial boot process, you don’t need any additional steps or required agents to apply your configuration.
 
-- [!NOTE] For more information on how to properly format your #cloud-config files or other inputs, refer to the [cloud-init documentation](https://cloudinit.readthedocs.io/en/latest/topics/format.html) site. 
+> [!NOTE]
+> For more information on how to properly format your #cloud-config files or other inputs, refer to the [cloud-init documentation](https://cloudinit.readthedocs.io/en/latest/topics/format.html) site. 
 
 - **WALA**. WALA is an Azure platform-specific agent you can use to provision and configure Azure VMs. You can also use it to implement support for Azure extensions. Microsoft is currently enhancing the task of configuring VMs to use cloud-init instead of the Linux Agent. This work will enable existing cloud-init customers to use their current cloud-init scripts, and new customers to leverage the rich cloud-init configuration functionality. 
 

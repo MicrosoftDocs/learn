@@ -8,7 +8,8 @@ Now that you’ve incorporated the best manageability practices into your plan, 
 
 Linux kernels that have been released after September 2017 include new network optimization options that enable Azure VMs running Linux to achieve higher network throughput. You can achieve significant throughput performance by using the latest Linux kernel. New and existing Azure VMs can also benefit from installing the latest Linux Integration Services (LIS). Throughput optimization is part of LIS beginning with version 4.2, although subsequent versions contain further improvements.
 
-[!NOTE] For details regarding validating Azure Linux kernel versions and installing the latest LIS, refer to the Linux VM section of the [Optimize network throughput for Azure virtual machines](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-optimize-network-bandwidth) Microsoft Learn article.
+> [!NOTE]
+> For details regarding validating Azure Linux kernel versions and installing the latest LIS, refer to the Linux VM section of the [Optimize network throughput for Azure virtual machines](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-optimize-network-bandwidth) Microsoft Learn article.
 
 ### Implement accelerated networking
 
@@ -20,9 +21,11 @@ The benefits of accelerated networking only apply to the VM on which it's enable
 
 Azure supports accelerated networking for most general-purpose and compute-optimized–instance sizes with two or more vCPUs. On instances that support hyperthreading, accelerated networking is supported on VM instances with four or more vCPUs.
 
-[!NOTE] For details regarding Azure VM sizes that support accelerated networking, refer to the [Sizes for virtual machines in Azure](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes?toc=%2Fazure%2Fvirtual-network%2Ftoc.json) Microsoft Learn article. For the list of Linux distributions that support accelerated networking, refer to the [Accelerated Networking (AccelNet) overview](https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-overview) Microsoft Learn article.
+> [!NOTE]
+> For details regarding Azure VM sizes that support accelerated networking, refer to the [Sizes for virtual machines in Azure](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes?toc=%2Fazure%2Fvirtual-network%2Ftoc.json) Microsoft Learn article. For the list of Linux distributions that support accelerated networking, refer to the [Accelerated Networking (AccelNet) overview](https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-overview) Microsoft Learn article.
 
-[!NOTE] For the instructions to enable accelerated networking, refer to the [Use Azure CLI to create a Windows or Linux VM with Accelerated Networking](https://learn.microsoft.com/en-us/azure/virtual-network/create-vm-accelerated-networking-cli) Microsoft Learn article.
+> [!NOTE]
+> For the instructions to enable accelerated networking, refer to the [Use Azure CLI to create a Windows or Linux VM with Accelerated Networking](https://learn.microsoft.com/en-us/azure/virtual-network/create-vm-accelerated-networking-cli) Microsoft Learn article.
 
 ## Optimize storage performance of Azure VMs running Linux
 
@@ -53,7 +56,8 @@ The temporary disk serves as short-term storage for data that can either be disc
 
 Avoid storing data and installing applications on the OS disk because it’s optimized for fast boot rather than running non-operating–system workloads. Instead, create data disks, attach them to the Azure VM, and mount them within the OS. Add extra disks as needed according to your storage and IOPS requirements. Keep in mind that the maximum number of disks you can attach to an Azure VM depends on its size.
 
-[!NOTE] The maximum number of IOPS supported by an Azure VM depends not only on the aggregate throughput of its disks but also on the maximum IOPS throughput of the VM, which is determined by its size. The effective throughput is the lower of the two numbers.
+> [!NOTE]
+> The maximum number of IOPS supported by an Azure VM depends not only on the aggregate throughput of its disks but also on the maximum IOPS throughput of the VM, which is determined by its size. The effective throughput is the lower of the two numbers.
 
 ### Disable barriers
 
@@ -63,7 +67,8 @@ To achieve the highest IOPS on Premium SSD disks, where their cache settings hav
 - If you use ext3/ext4, disable barriers using the mount option barrier=0.
 - If you use XFS, disable barriers using the mount option nobarrier. 
 
-[!NOTE] If caching is set to read/write, barriers should remain enabled to ensure write durability.
+> [!NOTE]
+> If caching is set to read/write, barriers should remain enabled to ensure write durability.
 
 ### Configure a swap file
 
