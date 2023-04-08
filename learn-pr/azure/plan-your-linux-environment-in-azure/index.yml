@@ -25,8 +25,8 @@ units:
 - learn.plan-your-linux-environment-in-azure.introduction
 - learn.plan-your-linux-environment-in-azure.plan-for-sizing-and-networking-of-azure-vms-running-linux
 - learn.plan-your-linux-environment-in-azure.implement-best-practices-for-managing-linux-on-azure-vms
-- learn.plan-your-linux-environment-in-azure.knowledge-check
 - learn.plan-your-linux-environment-in-azure.optimize-linux-on-azure-vms-for-performance-and-functionality
+- learn.plan-your-linux-environment-in-azure.knowledge-check
 - learn.plan-your-linux-environment-in-azure.summary
 badge:
   uid: learn.plan-your-linux-environment-in-azure-badge
