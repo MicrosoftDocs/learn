@@ -1,6 +1,6 @@
 {
   "redirections": [
-    {
+    { 
       "source_path": "learn-pr/pytorch/intro-computer-vision-pytorch/4-multilayer-dense-neural-networks.md",
       "redirect_url": "/training/modules/intro-computer-vision-pytorch/3-train-dense-neural-networks",
       "redirect_document_id": false
