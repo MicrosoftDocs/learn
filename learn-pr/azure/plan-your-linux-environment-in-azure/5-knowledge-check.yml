@@ -61,7 +61,7 @@ quiz:
       explanation: "Correct: Boot diagnostics must be enabled to provide connectivity to an Azure VM by using the serial console."
   - content: Question 5. Which label designates a temporary disk of an Azure VM running Linux?
     choices:
-    - content: `dev/sda1
+    - content: `dev/sda1`
       isCorrect: false
       explanation: "Incorrect: dev/sda designates the OS disk of an Azure VM running Linux."
     - content: `dev/hda`

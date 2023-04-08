@@ -35,7 +35,7 @@ Azure offers a wide range of sizes with different specifications and price point
 
 VM sizes are grouped into multiple categories, representing the types of workloads they are optimized for. Within each category, you‘ll find one or more series, also referred to as _families_, which share common underlying hardware characteristics but offer a range of different sizes. 
 
-The following table lists workload types and common use cases for each workload type. For information about their corresponding families, refer to the [Sizes for virtual machines in Azure](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes?toc=%2Fazure%2Fvirtual-network%2Ftoc.json) Microsoft Learn article.
+The following table lists workload types and common use cases for each workload type. For information about their corresponding families, refer to the [Sizes for virtual machines in Azure](/azure/virtual-machines/sizes?toc=%2Fazure%2Fvirtual-network%2Ftoc.json) Microsoft Learn article.
 
 | **Workload type** | **Common use cases and requirements** |
 |---|---|
@@ -56,9 +56,9 @@ VM size availability varies by region, so make sure to take this into account wh
 
 The maximum number of disks you can attach to an Azure VM depends on its size.
 
-Consider using [Microsoft Azure VM Selector](https://azure.microsoft.com/en-us/pricing/vm-selector/) to determine the most suitable VM size based on the workload type, OS, software installed, and deployment region.
+Consider using [Microsoft Azure VM Selector](https://azure.microsoft.com/pricing/vm-selector/) to determine the most suitable VM size based on the workload type, OS, software installed, and deployment region.
 
-If you intend to use the same or similar size Azure VMs in the same Azure region over an extended period, consider leveraging Azure Reservations to significantly reduce the compute cost (by up to 72 percent). To lower the cost of Azure VMs with workloads that can handle interruptions (such as batch processing jobs, use Azure Spot VMs. For more information regarding these options, refer to the [Sizes for virtual machines in Azure](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes?toc=%2Fazure%2Fvirtual-network%2Ftoc.json) Microsoft Learn article.
+If you intend to use the same or similar size Azure VMs in the same Azure region over an extended period, consider leveraging Azure Reservations to significantly reduce the compute cost (by up to 72 percent). To lower the cost of Azure VMs with workloads that can handle interruptions (such as batch processing jobs, use Azure Spot VMs. For more information regarding these options, refer to the [Sizes for virtual machines in Azure](/azure/virtual-machines/sizes?toc=%2Fazure%2Fvirtual-network%2Ftoc.json) Microsoft Learn article.
 
 ## Plan for networking of Azure VMs running Linux
 
@@ -90,7 +90,7 @@ Even with SSH keys, by default you must open connectivity to a public address as
 
 ### _Azure Bastion_
 
-The first method involves deploying the Azure Bastion service into a dedicated subnet of a virtual network with connectivity to the target VM. Azure Bastion serves as a broker for external SSH connections. These connections take place over HTTPS and are available only from the Azure portal. This eliminates the need for assigning public IP addresses to the target VM’s network interface. It also helps ensure that only authenticated and properly authorized users can initiate SSH connections. For more information regarding these options, refer to the [Azure Bastion](https://learn.microsoft.com/en-us/azure/bastion/bastion-overview) Microsoft Learn article.
+The first method involves deploying the Azure Bastion service into a dedicated subnet of a virtual network with connectivity to the target VM. Azure Bastion serves as a broker for external SSH connections. These connections take place over HTTPS and are available only from the Azure portal. This eliminates the need for assigning public IP addresses to the target VM’s network interface. It also helps ensure that only authenticated and properly authorized users can initiate SSH connections. For more information regarding these options, refer to the [Azure Bastion](/azure/bastion/bastion-overview) Microsoft Learn article.
 
 ### _JIT VM Access_
 
@@ -104,4 +104,4 @@ JIT VM access is one of the Microsoft Defender for Cloud features. Its purpose i
 Although an Azure VM can have multiple network interfaces, its available bandwidth is dependent exclusively on its size. In general, larger VM sizes are allocated more bandwidth than smaller ones. When measuring the amount of the actual network bandwidth against the allocated limit, the platform targets only egress traffic. All network traffic leaving the VM counts toward that limit, regardless of the traffic destination. The platform does not directly limit the ingress bandwidth. However, factors such as storage and compute resource utilization impact the volume of incoming data an Azure VM can process. 
 
 > [!NOTE]
-> For information about the expected outbound throughput and the maximum number of network interfaces for each VM size, refer to the [Sizes for virtual machines in Azure](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes?toc=%2Fazure%2Fvirtual-network%2Ftoc.json) Microsoft Learn article.
+> For information about the expected outbound throughput and the maximum number of network interfaces for each VM size, refer to the [Sizes for virtual machines in Azure](/azure/virtual-machines/sizes?toc=%2Fazure%2Fvirtual-network%2Ftoc.json) Microsoft Learn article.

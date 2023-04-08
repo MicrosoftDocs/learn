@@ -9,7 +9,7 @@ Now that you’ve incorporated the best manageability practices into your plan, 
 Linux kernels that have been released after September 2017 include new network optimization options that enable Azure VMs running Linux to achieve higher network throughput. You can achieve significant throughput performance by using the latest Linux kernel. New and existing Azure VMs can also benefit from installing the latest Linux Integration Services (LIS). Throughput optimization is part of LIS beginning with version 4.2, although subsequent versions contain further improvements.
 
 > [!NOTE]
-> For details regarding validating Azure Linux kernel versions and installing the latest LIS, refer to the Linux VM section of the [Optimize network throughput for Azure virtual machines](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-optimize-network-bandwidth) Microsoft Learn article.
+> For details regarding validating Azure Linux kernel versions and installing the latest LIS, refer to the Linux VM section of the [Optimize network throughput for Azure virtual machines](/en-us/azure/virtual-network/virtual-network-optimize-network-bandwidth) Microsoft Learn article.
 
 ### Implement accelerated networking
 
@@ -22,10 +22,10 @@ The benefits of accelerated networking only apply to the VM on which it's enable
 Azure supports accelerated networking for most general-purpose and compute-optimized–instance sizes with two or more vCPUs. On instances that support hyperthreading, accelerated networking is supported on VM instances with four or more vCPUs.
 
 > [!NOTE]
-> For details regarding Azure VM sizes that support accelerated networking, refer to the [Sizes for virtual machines in Azure](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes?toc=%2Fazure%2Fvirtual-network%2Ftoc.json) Microsoft Learn article. For the list of Linux distributions that support accelerated networking, refer to the [Accelerated Networking (AccelNet) overview](https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-overview) Microsoft Learn article.
+> For details regarding Azure VM sizes that support accelerated networking, refer to the [Sizes for virtual machines in Azure](/en-us/azure/virtual-machines/sizes?toc=%2Fazure%2Fvirtual-network%2Ftoc.json) Microsoft Learn article. For the list of Linux distributions that support accelerated networking, refer to the [Accelerated Networking (AccelNet) overview](/en-us/azure/virtual-network/accelerated-networking-overview) Microsoft Learn article.
 
 > [!NOTE]
-> For the instructions to enable accelerated networking, refer to the [Use Azure CLI to create a Windows or Linux VM with Accelerated Networking](https://learn.microsoft.com/en-us/azure/virtual-network/create-vm-accelerated-networking-cli) Microsoft Learn article.
+> For the instructions to enable accelerated networking, refer to the [Use Azure CLI to create a Windows or Linux VM with Accelerated Networking](/en-us/azure/virtual-network/create-vm-accelerated-networking-cli) Microsoft Learn article.
 
 ## Optimize storage performance of Azure VMs running Linux
 
@@ -43,7 +43,7 @@ Azure-managed disks support the following five disk types, each of which is inte
 - **Standard SSDs**. Use this type of disk for web servers, lightly used enterprise applications, and development or test scenarios.
 - **Standard hard disk drives (HDDs)**. Finally, use this disk type for backups, and disks with non-critical data, infrequent access.
 
-For details regarding performance and capacity characteristics of each disk type, refer to the [Azure managed disk types](https://learn.microsoft.com/en-us/azure/virtual-machines/disks-types) Microsoft Learn article.
+For details regarding performance and capacity characteristics of each disk type, refer to the [Azure managed disk types](/en-us/azure/virtual-machines/disks-types) Microsoft Learn article.
 
 ### Configure virtual disks
 
@@ -76,7 +76,7 @@ There are two main approaches to implementing the optimal configuration of a swa
 
 - Use the Azure VM Linux Agent for images that don’t support cloud-init.
 
-- For implementation details, refer to the [Optimize your Linux VM on Azure](https://learn.microsoft.com/en-us/previous-versions/azure/virtual-machines/linux/optimization) Microsoft Learn article.
+- For implementation details, refer to the [Optimize your Linux VM on Azure](/en-us/previous-versions/azure/virtual-machines/linux/optimization) Microsoft Learn article.
 
 - Use cloud-init for images that support it.
 
@@ -91,6 +91,6 @@ For implementation details, consult your Linux Distro documentation.
 
 ### Implement multi-disk configurations
 
-If your workloads require more IOPS than a single disk can provide, use a software Redundant Array of Independent Disks (RAID) configuration that combines multiple disks. Because Azure offers disk resiliency at the storage fabric layer, you can focus on performance by implementing a RAID-0 stripe.  For implementation details, refer to the [Configure Software RAID on Linux](https://learn.microsoft.com/en-us/previous-versions/azure/virtual-machines/linux/configure-raid?toc=%2Fazure%2Fvirtual-machines%2Flinux%2Ftoc.json) Microsoft Learn article.
+If your workloads require more IOPS than a single disk can provide, use a software Redundant Array of Independent Disks (RAID) configuration that combines multiple disks. Because Azure offers disk resiliency at the storage fabric layer, you can focus on performance by implementing a RAID-0 stripe.  For implementation details, refer to the [Configure Software RAID on Linux](/en-us/previous-versions/azure/virtual-machines/linux/configure-raid?toc=%2Fazure%2Fvirtual-machines%2Flinux%2Ftoc.json) Microsoft Learn article.
 
-As an alternative to a traditional RAID configuration, you can install Logical Volume Manager (LVM) and use it to combine multiple virtual disks into a single-striped logical storage volume. In this configuration, reads and writes are distributed to multiple disks contained in the volume group, similar to RAID-0. For performance reasons, you might want to stripe your logical volumes so that reads and writes utilize all your attached data disks. For implementation details, refer to the [Configure LVM on a Linux VM in Azure](https://learn.microsoft.com/en-us/previous-versions/azure/virtual-machines/linux/configure-lvm) Microsoft Learn article.
+As an alternative to a traditional RAID configuration, you can install Logical Volume Manager (LVM) and use it to combine multiple virtual disks into a single-striped logical storage volume. In this configuration, reads and writes are distributed to multiple disks contained in the volume group, similar to RAID-0. For performance reasons, you might want to stripe your logical volumes so that reads and writes utilize all your attached data disks. For implementation details, refer to the [Configure LVM on a Linux VM in Azure](/en-us/previous-versions/azure/virtual-machines/linux/configure-lvm) Microsoft Learn article.
