@@ -1,17 +1,19 @@
 
-The Azure Quantum Resource Estimator is a useful tool that is highly customizable. Before starting the task you've been entrusted with, you'll first need to get familiar with the tool and make some practice estimations. In the following example, you estimate the physical resources of a multiplier, which implements the multiplication of integer $a$ by integer $b$.
+The Azure Quantum Resource Estimator is a useful tool that is highly customizable. Before you start to work on the task you've been given, first you need to get familiar with the tool and get some practice. In the following example, you estimate the physical resources of a multiplier, which implements the multiplication of integer $a$ by integer $b$.
 
 ## Enable the Azure Quantum Resource Estimator
 
-First, enable the Azure Quantum Resource Estimator tool in your Azure Quantum workspace.
+First, enable the Azure Quantum Resource Estimator tool in your Azure Quantum workspace:
 
 1. Sign in to the [Azure portal](https://portal.azure.com/) and select your Azure Quantum workspace.
-1. On the left panel, under **Operations**, select **Providers**.
+1. On the left menu, under **Operations**, select **Providers**.
 1. Select **Add a provider**.
 1. For **Microsoft Quantum Computing**, select **Add**.
 1. Select **Learn & Develop**, and then select **Add**.
 
 ## Create a new notebook in your workspace
+
+Next, create a new Jupyter notebook in your Azure Quantum workspace:
 
 1. In your Azure Quantum workspace, select **Notebooks**.
 1. Select **My notebooks**, and then select **Add new** to create a new Jupyter notebook.
@@ -33,7 +35,7 @@ workspace = Workspace (
 
 ## Get started
 
-First, connect to the Azure Quantum workspace and select the Azure Quantum Resource Estimator as target. We also are importing the `Microsoft.Quantum.Numerics` package that you'll use in your example algorithm.
+The first step is to connect to your Azure Quantum workspace and select the Azure Quantum Resource Estimator as target. You also are importing the `Microsoft.Quantum.Numerics` package that you use in your example algorithm.
 
 Select **Code** to add a new cell, and then enter and run the following code:
 
@@ -41,7 +43,7 @@ Select **Code** to add a new cell, and then enter and run the following code:
 import qsharp
 import qsharp.azure  # Connect to your Azure Quantum workspace
 targets = qsharp.azure.connect(
-   resourceId="<your resourceID>", # Fill in with the resourceID of your workspace
+   resourceId="<your resourceID>", # Fill in with the resource ID of your workspace
    location="<your location>") # Fill in with the location of your workspace (for example "westus")
 
 qsharp.packages.add("Microsoft.Quantum.Numerics") # Import the Microsoft.Quantum.Numerics package to create the multiplier for this example
@@ -53,7 +55,7 @@ qsharp.azure.target("microsoft.estimator") # Select the Azure Quantum Resource E
 >
 > :::image type="content" source="../media/azure-quantum-resource-id.png" alt-text="Screenshot of the overview pane of a workspace in the Azure portal. Location and resource ID are marked inside a red rectangle.":::
 
-As a running example, you're creating a multiplier using the [MultiplyI](/qsharp/api/qsharp/microsoft.quantum.arithmetic.multiplyi) operation. You can configure the size of the multiplier with a `bitwidth` parameter that can be passed as an input argument. The operation has two input registers with that bit width, `factor1` and `factor2`. It has one output register with the size of twice the bit width, `product`.
+As a running example, you're creating a multiplier by using the [MultiplyI](/qsharp/api/qsharp/microsoft.quantum.arithmetic.multiplyi) operation. You can configure the size of the multiplier by using a `bitwidth` parameter that can be passed as an input argument. The operation has two input registers that have that bit width, `factor1` and `factor2`. It has one output register with the size of twice the bit width, `product`.
 
 Select **Code** to add a new cell, and then enter and run the following code:
 
@@ -76,7 +78,7 @@ operation EstimateMultiplication(bitwidth : Int) : Unit {
 
 ## Estimate the algorithm
 
-Now, estimate the physical resources for this operation by using the default assumptions. You can submit the operation to the Resource Estimator target by using the `qsharp.azure.execute` function. This function calls the `EstimateMultiplication` operation and passes the operation argument `bitwidth=8`.
+Now, estimate the physical resources for this operation by using the default assumptions. You can submit the operation to the resource estimator target by using the `qsharp.azure.execute` function. This function calls the `EstimateMultiplication` operation and passes the operation argument `bitwidth=8`.
 
 Select **Code** to add a new cell, and then enter and run the following code:
 
@@ -102,9 +104,9 @@ result = qsharp.azure.execute(EstimateMultiplication, bitwidth=8,
 result
 ```
 
-You can inspect the result and compare both qubit technologies. For example, now the QEC code distance is 5, and the number of physical qubits has decreased from 173,592 to 8,160. Conversely, the runtime is 6 ms, compared to 3 ms when you use the preceding approach.
+You can inspect the result and compare both qubit technologies. For example, now the QEC code distance is 5, and the number of physical qubits has decreased from 173,592 to 8,160. Conversely, the runtime is 6 ms, compared to 3 ms when you use the previous approach.
 
-We can update the error correction code, too. Select **Code** to add a new cell and rerun the resource estimation job on the Majorana-based qubit parameters. This time, use Floquet code as the error correction scheme:
+You can update the error correction code, too. Select **Code** to add a new cell and rerun the resource estimation job on the Majorana-based qubit parameters. This time, use Floquet code as the error correction scheme:
 
 ```python
 result_maj_floquet = qsharp.azure.execute(EstimateMultiplication, bitwidth=8,
@@ -119,7 +121,7 @@ result_maj_floquet = qsharp.azure.execute(EstimateMultiplication, bitwidth=8,
 result_maj_floquet
 ```
 
-Now, we need 26,208 physical qubits, but the runtime is 0.547 ms.
+Now, you need 26,208 physical qubits, but the runtime is 0.547 ms.
 
 Finally, set the error budget to 10 percent.
 
@@ -134,12 +136,12 @@ result_maj_floquet_e1 = qsharp.azure.execute(EstimateMultiplication, bitwidth=8,
                 "qecScheme": {
                     "name": "floquet_code" # Specify the QEC scheme name
                 },
-                "errorBudget": 0.1 # Specify the error budget. Must be a number between 0 and 1.
+                "errorBudget": 0.1 # Specify the error budget, a number between 0 and 1
                 }) 
 
 result_maj_floquet_e1
 ```
 
-Using this qubit technology and architecture, with an error budget of 10, you would need 4,620 physical qubits. This shows that fewer physical qubits are needed if a higher error rate is acceptable, but if accuracy is important, then you need more physical qubits to account for error correction.
+Using this qubit technology and architecture, with an error budget of 10, you would need 4,620 physical qubits. This resource estimation shows that fewer physical qubits are needed if a higher error rate is acceptable. But if accuracy is important, then you need more physical qubits to account for error correction.
 
-Next, create a quantum algorithm for factoring a large number, and estimate the resources required to run it on a fault-tolerant quantum computer.
+Next, create a quantum algorithm for factoring a large number, and estimate the resources required to run the algorithm on a fault-tolerant quantum computer.

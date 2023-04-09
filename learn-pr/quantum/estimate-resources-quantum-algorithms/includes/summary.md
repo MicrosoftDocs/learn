@@ -1,17 +1,17 @@
-Congratulations! You've protected the space fleet against invaders by estimating the resources it would take to crack the passwords.
+Congratulations! You've protected the space fleet against invaders by estimating the resources it would take to crack your passwords.
 
-In this module, you've learned:
+In this module, you learned:
 
 - What resource estimation is.
 - How to enable the Azure Quantum Resource Estimator in your workspace.
 - How to submit a resource estimation job to Azure Quantum.
 - How to customize the input parameters of a resource estimation job.
-- How to get the most out of the Azure Quantum Resource Estimator.
-- How to estimate the resources of a quantum algorithm, and compare different qubit technologies and architectures.
+- How to estimate the resources of a quantum algorithm.
+- How to compare different qubit technologies and architectures.
 
 ## Next steps
 
-Now that you understand resource estimation, you can do a number of experiments to deepen your knowledge:
+Now that you understand resource estimation, you can do experiments to deepen your knowledge:
 
 - Try estimating the resources for a different Q# program.
 - Explore how qubit parameters and QEC schemes affect the error correction code distance of the logical qubit.
