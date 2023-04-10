@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.case-study-design-solutions-security-best-practices-priorities.conceptual-walkthrough
+title: Conceptual walkthrough
+metadata:
+  title: Conceptual walkthrough
+  description: "Case study conceptual walkthrough for: Design solutions that align with security best practices and priorities."
+  ms.date: 4/4/2023
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-conceptual-walkthrough.md)]
