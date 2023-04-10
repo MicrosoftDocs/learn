@@ -1,15 +1,8 @@
-Azure Virtual Machine Scale Sets let you create and manage a group of load balanced VMs. The capacity or number of VM instances can automatically increase or decrease in response to a schedule that you configure or when performance metrics you define are reached. All VM instances in a virtual machine scale set have the same configuration and run the same applications.
+Azure Virtual Machine Scale Sets let you create and manage a group of load balanced VMs. The capacity or number of VM instances can automatically increase or decrease in response to a schedule that you configure or when performance metrics you define are reached. VM instances in a virtual machine scale set can have the same configuration or different configurations.
 
 Virtual machine scale sets provide high availability to your applications. Virtual machine scale sets let you centrally manage, configure, and update a large number of VMs. With virtual machine scale sets, you can build large-scale services for areas such as compute, big data, and container workloads.
 
-Scale sets are designed for cost-effectiveness. New VM instances are created only when needed and are removed when no longer required. You can also configure scale sets to scale VMs either horizontally or vertically.
-
-- **Horizontal scaling** is the process of adding or removing VMs in a scale set.
-
-   In the uniform orchestration configuration, when new instances are required, those instances are generated from a template image to ensure that all VM instances have the same configuration and applications. Azure Virtual Machine Scale Sets limit you to running a maximum of 1,000 VMs in a single scale set.
-- **Vertical scaling** is the process of adding resources such as memory, CPU power, or disk space to VMs in a scale set.
-
-   In horizontal scaling, new, identically sized VMs in the uniform orchestration configuration are added to or removed from a scale set. In contrast, vertical scaling focuses on increasing the size and capacity of the VMs in the scale set. For example, by increasing the processor core count and speed. Vertical scaling typically requires rebooting the affected VMs in the scale set.
+Scale sets are designed for cost-effectiveness, scalability and reliability. New VM instances are created only when needed and are removed when no longer required. When new instances are required, those instances are generated from a template image to configure the instances and the applications. Azure Virtual Machine Scale Sets allow you to run up to 1,000 VMs in a single scale set.
 
 ## Scaling a scale set
 
@@ -17,7 +10,7 @@ Virtual machine scale sets address the need to quickly create and manage VMs for
 
 - **Scheduled scaling:** You can proactively schedule the scale set to deploy one or *N* number of extra instances to accommodate a spike in traffic, then scale back down when the spike ends.
 
-- **Autoscaling:** If the workload is variable and can’t always be scheduled, you can use metric-based threshold scaling. Autoscaling horizontally scales out based on node usage. It then scales back in when the resources return to a baseline.
+- **Autoscaling:** If the workload is variable and can’t always be scheduled, you can use metric-based threshold scaling. Autoscaling scales out based on node usage. It then scales back in when the resources return to a baseline.
 
 Autoscaling is based on a set of scale conditions, rules, and limits. A scale condition combines time and a set of scale rules. If the current time falls within the period defined in the scale condition, the condition's scale rules are evaluated. The results of this evaluation determine whether to add or remove instances in the scale set.
 
