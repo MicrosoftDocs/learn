@@ -2,14 +2,14 @@ Recall that in the data science project life cycle, after you have the data for 
 
 ## Exercise: Import data
 
-First, import the `.csv` files into your Python notebook. Import NumPy and pandas:
+First, import NumPy and pandas:
 
 ```python
 import numpy as np 
 import pandas as pd 
 ```
 
-Make sure you run the cell to ensure you have your environment set up. Your Visual Studio Code notebook should look like this:
+Make sure you run the cell to ensure you have your environment set up. Your notebook should look like this:
 
 :::image type="content" source="../media/import-pandas-numpy.png" alt-text="Screenshot that shows importing pandas and NumPy code in Visual Studio Code.":::
 
@@ -18,7 +18,7 @@ Notice the `[1]` in the corner of the cell where you have your imported code. Th
 >[!NOTE]
 >When you run the first `import` command, you'll be asked to choose a kernel. Select **Python Environments** and then a Python environment such as Python 3.10.4 or later.
 
-Now import all four .csv files:
+Now import all four `.csv` files:
 
 ```python
 meteor_showers = pd.read_csv('data/meteorshowers.csv')
