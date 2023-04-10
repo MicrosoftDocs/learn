@@ -4,17 +4,17 @@ metadata:
   moduleType: standard
   title: Deploy Elastic Cloud on Azure
   description: "Learn how to deploy Elastic Cloud on Azure. Elastic Cloud on Azure gives you the power of Elastic Enterprise Search, Elastic Observability, Elastic Security, and the ELK Stack (Elasticsearch, Kibana, Beats, and Logstash). You can quickly and easily search your environment for information, analyze data to observe insights, and protect your technology investment."
-  ms.date: 6/11/2021
+  ms.date: 04/07/2023
   author: yenchiho
   ms.author: yenchiho
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Deploy Elastic Cloud on Azure
-summary: In this module, we will demonstrate how to deploy Elastic Cloud on Azure and walk through how to load sample data for exploration.
+summary: In this module, we'll demonstrate how to deploy Elastic Cloud on Azure and walk through how to load sample data for exploration.
 abstract: |
   By the end of this module, you'll be able to:
-    - Deploy Elastic Cloud on Azure
-    - Use Kibana after deployment with sample data
+    - Deploy Elastic Cloud on Azure.
+    - Use Kibana after deployment with sample data.
 prerequisites: |
   - An Azure subscription
   - Understanding of Azure tools and services for Linux workloads

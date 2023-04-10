@@ -3,9 +3,9 @@ In this module, you'll learn how to:
 
 - Recognize different types of malware
 - Help an organization mitigate risk of a ransomware attack by:
-    - creating a recovery plan
-    - limiting the scope of damage
-    - hardening key infrastructure elements
+    - Creating a recovery plan
+    - Limiting the scope of damage
+    - Hardening key infrastructure elements
 
 The content in the module will help you prepare for the certification exam SC-100: Microsoft Cybersecurity Architect.
 

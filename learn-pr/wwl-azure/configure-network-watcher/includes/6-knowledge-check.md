@@ -1,3 +1,4 @@
+
 Your company deploys virtual machines in Azure. As an administrator, you're responsible for helping to ensure network connectivity for all resources, and troubleshooting any issues. You're using Azure Network Watcher to support your tasks. A few teams have submitted requests for you to address.
 
 - The infrastructure team thinks it would be helpful to get a visual representation of the company's networking elements.
