@@ -5,8 +5,9 @@ metadata:
   title: Knowledge check
   description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
   ms.date: 4/10/2023
-  author: {{githubUsername}}
-  ms.author: {{msUser}}
+  author: seesharprun
+  ms.author: sidandrews
+  ms.reviewer: mjbrown
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 1

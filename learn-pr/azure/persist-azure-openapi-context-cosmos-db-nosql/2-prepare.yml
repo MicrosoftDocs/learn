@@ -5,8 +5,9 @@ metadata:
   title: Prepare
   description: "Project overview and setup requirements."
   ms.date: 4/10/2023
-  author: {{githubUsername}}
-  ms.author: {{msUser}}
+  author: seesharprun
+  ms.author: sidandrews
+  ms.reviewer: mjbrown
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 1
