@@ -159,7 +159,7 @@ Now we'll create the secure credentials that Microsoft Purview and Azure Data Fa
 
 1. Select **New** and create a connection to your Data Factory.
 
-    :::image type="content" source="../media/Purview_Azure_Data_Factory.png" alt-text="Screenshot of a data factory connection in Microsoft Purview.":::
+    :::image type="content" source="../media/purview-azure-data-factory.png" alt-text="Screenshot of a data factory connection in Microsoft Purview.":::
 
     This allows Microsoft Purview to create automated lineage for you based off the ADF scheduled pipelines you have for pulling in the data from the source systems into the raw folder regularly, and also allows the lineage that CluedIn will create during data processing.
 
