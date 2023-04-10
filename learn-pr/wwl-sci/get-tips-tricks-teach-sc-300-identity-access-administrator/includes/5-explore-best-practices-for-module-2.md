@@ -10,7 +10,7 @@ This module consists of six lessons:
 
 - Lesson 1 – Create, configure, and manage users
 - Lesson 2 – Create, configure, and manage groups
-- Lesson 3 – Configure and mange device identities
+- Lesson 3 – Configure and manage device identities
 - Lesson 4 – Manage licenses
 - Lesson 5 – Custom security attributes
 - Lesson 6 – Provisioning using SCIM
@@ -38,7 +38,7 @@ Module 2 Lab/Exercise
 
 - Lab 2.1: [Manage user roles](https://github.com/MicrosoftLearning/SC-300-Identity-and-Access-Administrator/blob/master/Instructions/Labs/Lab_06_AddFederatedIdentityProvider.md)
 - Lab 2.2: [Working with tenant properties](https://github.com/MicrosoftLearning/SC-300-Identity-and-Access-Administrator/blob/master/Instructions/Labs/Lab_25_CreatingAccessReviewsForUsers.md)
-- Lab 2.3: [Assign licenses to users by group membership AAD](https://aka.ms/whiteboard)
+- Lab 2.3: [Assign licenses to users by group membership Azure AD](https://aka.ms/whiteboard)
 - Lab 2.4: [Configure external collaboration settings](https://aka.ms/msle)
 - Lab 2.5: [Add guest users to the directory](https://github.com/MicrosoftLearning/SC-300-Identity-and-Access-Administrator/blob/master/Instructions/Labs/Lab_23_AddTermsOfUseAcceptanceReporting.md)
 - Lab 2.6: [Add federated identity provider](https://github.com/MicrosoftLearning/SC-300-Identity-and-Access-Administrator/blob/master/Instructions/Labs/Lab_15_ConfigureAAD_MultiFactorAuthRegPolicy.md)

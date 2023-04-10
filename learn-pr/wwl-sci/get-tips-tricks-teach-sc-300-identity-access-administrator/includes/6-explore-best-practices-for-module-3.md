@@ -27,7 +27,7 @@ Module 3 Demos
 - Demo 3.1: [Enable Azure AD multifactor authentication](https://github.com/MicrosoftLearning/SC-300-Identity-and-Access-Administrator/blob/master/Instructions/Labs/Lab_04_ConfigureExternalCollaborationSettings.md)
 - Demo 3.2: [Configure and deploy self-service password reset](https://aka.ms/SC300exam)
 - Demo 3.3: [Implement and test a conditional access policy](https://github.com/MicrosoftLearning/SC-300-Identity-and-Access-Administrator/blob/master/Instructions/Labs/Lab_22_CreateAndManageACatalogOfResourcesInAADEntitlementManagement.md)
-- Demo 3.4: [Configure AAD multifactor authentication registration policy](https://github.com/MicrosoftLearning/SC-300-Identity-and-Access-Administrator/blob/master/Instructions/Labs/Lab_02_WorkingWithTenantProperties.md)
+- Demo 3.4: [Configure Azure AD multifactor authentication registration policy](https://github.com/MicrosoftLearning/SC-300-Identity-and-Access-Administrator/blob/master/Instructions/Labs/Lab_02_WorkingWithTenantProperties.md)
 - Demo 3.5: [Using Azure Key Vault for managed identities](https://aka.ms/ldc)
 
 Module 3 Labs
@@ -39,5 +39,5 @@ Module 3 Labs
 - Lab 3.5: [Manage Azure AD smart lockout values](https://github.com/MicrosoftLearning/SC-300-Identity-and-Access-Administrator/blob/master/Instructions/Labs/Lab_00_SetUpLabResources.md)
 - Lab 3.6: [Implement and test a conditional access policy](https://github.com/MicrosoftLearning/SC-300-Identity-and-Access-Administrator/blob/master/Instructions/Labs/Lab_27_MicrosoftSentinelKustoQueries.md)
 - Lab 3.7: [Enable sign risk policy](https://github.com/MicrosoftLearning/SC-300-Identity-and-Access-Administrator/blob/master/Instructions/Labs/Lab_11_AssignAzureResourceRolesInPrivilegedIdentityManagement.md)
-- Lab 3.8: [Configure AAD multifactor authentication registration policy](https://aka.ms/SC300exam)
+- Lab 3.8: [Configure Azure AD multifactor authentication registration policy](https://aka.ms/SC300exam)
 - Lab 3.9: [Using Azure Key Vault for managed identities](https://github.com/MicrosoftLearning/SC-300-Identity-and-Access-Administrator/blob/master/Instructions/Labs/Lab_08_EnableAzureADMultiFactorAuthentication.md)

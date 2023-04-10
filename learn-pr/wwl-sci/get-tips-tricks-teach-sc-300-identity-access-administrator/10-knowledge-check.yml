@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/07/2023
+  ms.date: 04/10/2023
   author: wwlpublish
   ms.author: 'Trinity Sheppard '
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "How often should you download content from the Learning Download Center (LDC) to ensure you have the most up to date course materials?"
+  - content: "How often should you download content from the Learning Download Center (LDC) to ensure you have the most up-to-date course materials?"
     choices:
     - content: "Every three years"
       isCorrect: false
