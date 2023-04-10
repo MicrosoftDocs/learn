@@ -71,7 +71,7 @@ Your repository contains a draft of a pipeline that you can use as a starting po
 
 1. Update the value of the `ModuleRegistryServer` environment variable to your container registry's server name. You copied that name earlier in this exercise.
 
-   For example, if your registry's login server is _yourregistryname.azurecr.io_, line 16 will look like this:
+   For example, if your registry's login server is _yourregistryname.azurecr.io_, it will look like this:
 
    :::code language="yaml" source="code/6-pipeline.yml" range="15-16" highlight="2" :::
 
@@ -141,7 +141,7 @@ You can also view the published module in the Azure portal.
 
    :::image type="content" source="../media/6-registry-portal.png" alt-text="Screenshot of the Azure portal that shows a Bicep module in the container registry.":::
 
-   Notice that there's a single _tag_, which matches the version number of the module that your pipeline published. The major version (1) and minor version (2) match the version numbers that you defined in the _metadata.json_ file. The revision number (20220405.3) matches the pipeline's build number.
+   Notice that there's a single _tag_, which matches the version number of the module that your pipeline published. The major version (1) and minor version (2) match the version numbers that you defined in the _metadata.json_ file. The revision number (20230407.3) matches the pipeline's build number.
 
 ## Clean up the resources
 
@@ -167,21 +167,24 @@ Remove-AzResourceGroup -Name ToyReusable -Force
 
 ::: zone-end
 
-You can also remove the service connectin and Azure DevOps project.
+You can also remove the service connection and Azure DevOps project.
 
 - Service connection
+
   1. From the Azure DevOps project, select **Project settings** > **Service connections**.
   1. Select **ToyReusable**.
-  1. In the upper-right corner select the three dots for **More actions**.
+  1. In the upper-right corner, select the three dots for **More actions**.
   1. Select **Delete** and confirm the deletion.
 
-- Azure DevOps project
-  1. From the Azure DevOps project, select **Project settings** > **Overview**.
-  1. From **Delete project** select **Delete**.
-  1. Enter the project name and confirm the deletion.
+- Azure App registration
 
-- The service connection creates an Azure App registration that's deleted when you removed the service connection. To permanently delete the app registration.
   1. From the portal home page, search for _Azure Active Directory_ and select it from the list of **Services**.
   1. Go to **Manage** > **App registrations**.
   1. In **Deleted applications** select **toy-reusable**.
   1. Select **Delete permanently** and follow the prompts.
+
+- Azure DevOps project
+
+  1. From the Azure DevOps project, select **Project settings** > **Overview**.
+  1. From **Delete project** select **Delete**.
+  1. Enter the project name and confirm the deletion.
