@@ -2,7 +2,7 @@ Azure Virtual Machine Scale Sets meet Adatum’s needs in the following applicat
 
 - For the application that regularly exceeds processor load, you can add scale rules that monitor the CPU usage across the scale set. If the CPU usage exceeds the 75 percent threshold, the scale rule can increase the number of virtual machine instances.
 
-   A second scale rule can also monitor CPU usage but reduce the number of virtual machine instances when usage falls below 50 percent.
+A second scale rule can also monitor CPU usage but reduce the number of virtual machine instances when usage falls below 50 percent.
 - For the application that needs to deal with regular spikes in capacity on Friday evenings and downtime on Wednesday mornings, you should use scheduled scaling.
 - To ensure that no application scale-out incurs unexpectedly large charges, you can limit all scale-out operations to 50 instances.
 
@@ -13,5 +13,3 @@ In this case, just hosting the internet as a service (IaaS) VM normally in Azure
 
 - **The application hosted on an IaaS VM that is only used several hours per day by a limited number of people shouldn't be configured to use virtual machine scale sets.**\
 In this case, you could use scheduled VM startup and shutdown to optimize costs, ensuring that the VM was available during business hours and offline when no one is at work.
-
-Eventually, you should consider migrating existing applications hosted in IaaS VMs to be deployed as Azure Web App. Doing so is cheaper, because web apps have lower cost than IaaS VMs and Microsoft manages the underlying infrastructure. From the perspective of fluctuating utilization, you can configure a form of web-app scaling that doesn't involve virtual machine scale sets.
