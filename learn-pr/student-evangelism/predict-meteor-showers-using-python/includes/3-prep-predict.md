@@ -23,10 +23,10 @@ This module helps you create a model to predict the best date to view a meteor s
 If you haven't set up a Python environment before, the easiest way to do this is to use GitHub Codespaces. To start using GitHub Codespaces, follow these steps:
 1. Make sure you're signed in to [GitHub](https://github.com?azure-portal=true).
 1. Go to [Codespaces](https://github.com/codespaces?azure-portal=true).
-1. In the **Explore quick start templates section**, locate the **Jupyter Notebook** template and select **Use this template**. 
+1. In the **Explore quick start templates** section, locate the **Jupyter Notebook** template and select **Use this template**. 
 
 >[!NOTE]
->If the Jupyter Notebook template isn't displayed on this page, select **See All** to list all available templates.
+>If the Jupyter Notebook template isn't displayed on this page, select **See all** to list all available templates.
 
 The Juptyer Notebook codespace environment launches and you can begin using it.
 
@@ -35,9 +35,9 @@ The Juptyer Notebook codespace environment launches and you can begin using it.
 >For personal GitHub accounts, you can use 120 core hours of Codespaces a month for free. For more information on billing, see [About billing for GitHub Codespaces](https://docs.github.com/en/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces?azure-portal=true). For more information on how to use Codespaces, see [GitHub Codespaces overview](https://docs.github.com/en/codespaces/overview?azure-portal=true).
 
 After you've created your codespace, follow these steps to prepare your environment:
-1. Create a folder called *over-the-moon*. 
-1. Create a file called *meteor-showers.ipynb*.
+1. Create a folder called *over-the-moon*.
 1. Create a folder inside the *over-the-moon* folder. Name it *meteor-showers*.
+1. Create a file called *meteor-showers.ipynb*.
 1. Create a folder inside the *meteor-showers* folder. Name it *data*.
 1. Open the *meteor-showers.ipynb* file.
 
