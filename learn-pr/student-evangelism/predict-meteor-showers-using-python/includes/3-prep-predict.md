@@ -28,9 +28,11 @@ If you haven't set up a Python environment before, the easiest way to do this is
 >[!NOTE]
 >If the Jupyter Notebook template isn't displayed on this page, select **See all** to list all available templates.
 
-The Juptyer Notebook codespace launches and should look similar to the following screenshot:
+The Jupyter Notebook codespace launches and should look similar to the following screenshot:
 
 :::image type="content" source="../media/codespaces-welcome.png" alt-text="Screenshot that shows a new Jupyter Notebooks codespaces environment.":::
+
+The Jupyter Notebook codespace provides a workspace with Visual Studio Code, Python, and Jupyter Notebooks in your browser.  
 
 >[!TIP]
 >For personal GitHub accounts, you can use 120 core hours of Codespaces a month for free. For more information on billing, see [About billing for GitHub Codespaces](https://docs.github.com/en/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces?azure-portal=true). For more information on how to use Codespaces, see [GitHub Codespaces overview](https://docs.github.com/en/codespaces/overview?azure-portal=true).
