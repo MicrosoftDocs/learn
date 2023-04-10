@@ -35,7 +35,7 @@ When you don't provide an initial YAML file for your project, Azure Pipelines ca
 
     ::: zone pivot="github-codespaces-agent"
 
-    Replace the text `vmImage: ubuntu-latest` with `name: Default` (or the name of your agent pool if you didn't specify `Default` when setting up the Codespaces Repository secrets). You set the name of your agent pool as a GitHub secret earlier.
+    Replace the text `vmImage: ubuntu-latest` with `name: Default` (or the name of your agent pool if you specified a different pool when setting up the Codespaces Repository secrets).
 
     ::: zone-end
 

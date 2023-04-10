@@ -8,7 +8,7 @@ metadata:
   ms.author: maevan
   manager: jasonh
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: marketplace
 title: Create a virtual machine offer for the commercial marketplace
 summary: This module provides a high-level overview of VM offers in the commercial marketplace
 abstract: |
@@ -28,8 +28,8 @@ roles:
 - technology-manager
 - administrator
 products:
-- azure
 - azure-marketplace
+- azure
 subjects:
 - virtual-machine
 units:
