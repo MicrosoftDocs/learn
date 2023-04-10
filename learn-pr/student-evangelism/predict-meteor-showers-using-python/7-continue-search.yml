@@ -3,7 +3,7 @@ uid: learn.student-evangelism.predict-meteor-showers-using-python.7-continue-sea
 metadata:
   title: 'Exercise - Write a predictor function - Part 2'
   description: Write a function to predict the best date to view a meteor shower in a specified city.
-  ms.date: 03/10/2021
+  ms.date: 04/10/2023
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
