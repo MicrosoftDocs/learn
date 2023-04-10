@@ -14,7 +14,7 @@ So far in the exercise, we have found that most our records were able to actuall
 
 1. In the left hand side menu of CluedIn, select **Management** -> **Deduplication**.
 
-    :::image type="content" source="../media/Deduplication_Menu.png" alt-text="Screenshot of CluedIn duplicate management dashboard.":::
+    :::image type="content" source="../media/deduplication-menu.png" alt-text="Screenshot of CluedIn duplicate management dashboard.":::
 
 1. Create a new deduplication project called **Products** and select the Entity Type of **Product**.
 
@@ -24,13 +24,13 @@ So far in the exercise, we have found that most our records were able to actuall
 
 1. Under the tab called **Matching Rules**, create a new rule called **Match on Name**.
 
-    :::image type="content" source="../media/Match_On_Name.png" alt-text="Screenshot of the Add Matching Rule page.":::
+    :::image type="content" source="../media/match-on-name.png" alt-text="Screenshot of the Add Matching Rule page.":::
 
 1. When prompted to provide input, choose the radio button for **Property** to choose the name of the record.
 
 1. It will ask you to choose a comparator, in which we can keep it simple for now and use the Equals comparator.
 
-    :::image type="content" source="../media/Simple_Matching_Rule.png" alt-text="Screenshot showing the Equals comparator showing in the matching function.":::
+    :::image type="content" source="../media/simple-matching-rule.png" alt-text="Screenshot showing the Equals comparator showing in the matching function.":::
 
 1. Complete the project creator and then select **Generate Results** on the page.
 

@@ -76,7 +76,7 @@ Once again, if we look at Lorain, we can see that this time her email ends with 
 1. Navigate to your Container Storage in the left menu, and either select an existing Container, or create a new one called **cluedintrial**.
 1. Inside the cluedintrial container, create a new directory called **raw** upload the downloaded files one at a time to the container using the **Upload** button.
 
-    :::image type="content" source="../media/Upload_Data_To_Storage_Account.png" alt-text="Screenshot of the sample data being uploaded in ADLS Gen2":::
+    :::image type="content" source="../media/upload-data-to-storage-account.png" alt-text="Screenshot of the sample data being uploaded in ADLS Gen2":::
 
 1. Ones all your files are uploaded, navigate to **Security + networking > Networking** in your ADLS Gen2 account.
 1. Choose **Enabled from selected virtual networks** under **Public network access**.

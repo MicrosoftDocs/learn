@@ -12,4 +12,4 @@ Because we only ran our scan in Microsoft Purview once, let's run it again.
 
 1. Select the **Employees.csv** file first, and select the **Lineage**. Here we can see that Employees.csv was mapped into an entity type called Employee and that it was also exported out to the same container that it came from in a folder called mastered.
 
-:::image type="content" source="../media/Purview_Employees.png" alt-text="Screenshot of the lineage page for Employees.csv in Microsoft Purview.":::
+:::image type="content" source="../media/purview-employees.png" alt-text="Screenshot of the lineage page for Employees.csv in Microsoft Purview.":::

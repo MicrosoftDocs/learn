@@ -14,11 +14,11 @@ So let's set up our stream of data back into an ADLS Gen2 folder called **master
 
 1. In CluedIn, navigate to your Export Targets, under the **Consume** menu, and select **Add Export Target** and choose the Azure Data Lake Connector.
 
-    :::image type="content" source="../media/Export_Target_Data_Lake.png" alt-text="Screenshot of the CluedIn Consume window, showing the Azure Data Lake Connector selected.":::
+    :::image type="content" source="../media/export-target-data-lake.png" alt-text="Screenshot of the CluedIn Consume window, showing the Azure Data Lake Connector selected.":::
 
 1. Enter the account details, including the storage account key you copied earlier. The **FileSystemName** will be your container name. You can use an existing container, or enter a new name here and CluedIn will create it for your. For **DirectoryName**, enter **mastered**.
 
-    :::image type="content" source="../media/Export_Target_Details.png" alt-text="Screenshot of the CluedIn Consume window, showing the Azure Data Lake details added.":::
+    :::image type="content" source="../media/export-target-details.png" alt-text="Screenshot of the CluedIn Consume window, showing the Azure Data Lake details added.":::
 
 1. After you've entered your connection information, select **Test Connection**. If you get a green light, you can move on! If not, check these values:
     - Confirm that your container name has no capital characters, special characters, or spaces. (These are limitations on the ADLS Gen2 side).
@@ -27,7 +27,7 @@ So let's set up our stream of data back into an ADLS Gen2 folder called **master
 
 1. Select **Streams** in the Left-Hand Menu of CluedIn and Create a New Stream called **Employees**.
 
-    :::image type="content" source="../media/Employee_Stream.png" alt-text="Screenshot of the CluedIn Create Stream window, with the Stream Name entered as Employees.":::
+    :::image type="content" source="../media/employee-stream.png" alt-text="Screenshot of the CluedIn Create Stream window, with the Stream Name entered as Employees.":::
 
     A Stream in CluedIn allows an end user to set up a push-based delivery of data to a target.
 
@@ -37,12 +37,12 @@ So let's set up our stream of data back into an ADLS Gen2 folder called **master
 
 1. In the value for the Entity Type, choose **Employee** and save.
 
-    :::image type="content" source="../media/Stream_Filter.png" alt-text="Screenshot of the CluedIn stream configuration window, showing the value selector.":::
+    :::image type="content" source="../media/stream-filter.png" alt-text="Screenshot of the CluedIn stream configuration window, showing the value selector.":::
 
 1. In the **Export Target** tab, choose the Azure Data Lake Connector that you just added. Select **Next**.
 1. Add **mastered** as the Target Name. This points the data stream to the folder you created in the first step.
 
-    :::image type="content" source="../media/Choose_Target.png" alt-text="Screenshot of the CluedIn stream Export Target Configuration window, showing the ADLS Gen 2 account selected.":::
+    :::image type="content" source="../media/choose-target.png" alt-text="Screenshot of the CluedIn stream Export Target Configuration window, showing the ADLS Gen 2 account selected.":::
 
 1. For the mode of the stream, choose **Synchronization**.
 
@@ -56,7 +56,7 @@ So let's set up our stream of data back into an ADLS Gen2 folder called **master
     >[!NOTE]
     > You can look at the Data Tab to get a preview of the exact data that will be shared downstream.
 
-    :::image type="content" source="../media/Stream_Setup.png" alt-text="Screenshot of the CluedIn stream Export Target Configuration window, showing the Add Property drop-down menu.":::
+    :::image type="content" source="../media/stream-setup.png" alt-text="Screenshot of the CluedIn stream Export Target Configuration window, showing the Add Property drop-down menu.":::
 
 1. Toggle the **Inactive** button and your stream will be activated.
 

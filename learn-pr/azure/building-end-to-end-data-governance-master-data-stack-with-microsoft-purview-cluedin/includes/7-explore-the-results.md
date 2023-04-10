@@ -2,7 +2,7 @@ With your data now mapped into the CluedIn platform and streaming to ADLS Gen 2,
 
 1. In the search bar up the top of the Studio, search for **Lorain**. CluedIn will provide some autosuggested search results, but you can select the search button or press enter to see the results.
 
-    :::image type="content" source="../media/Auto_Search.png" alt-text="Screenshot of CluedIn showing a search for Lorain in the top search bar.":::
+    :::image type="content" source="../media/auto-search.png" alt-text="Screenshot of CluedIn showing a search for Lorain in the top search bar.":::
 
 1. If you mapped the data like in the previous exercise then you should see one result for Lorain. If you see more than this, please revisit the last part of the exercise as you may be missing an identifier mapped. Most importantly, we don't see three Lorain records from across the three input files, but rather one single record of Lorain. 
 
