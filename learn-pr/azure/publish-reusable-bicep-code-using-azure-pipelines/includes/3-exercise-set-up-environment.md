@@ -31,7 +31,7 @@ On the Azure DevOps Demo Generator site, do the following:
 
 1. Select **Sign In**, and then agree to the site usage terms by selecting **Accept**.
 
-1. On the **Create New Project** page, select your Azure DevOps organization and then, in the **New Project Name** box, enter a project name, such as *toy-reusable*.
+1. On the **Create New Project** page, select your Azure DevOps organization and then, in the **New Project Name** box, enter a project name, such as _toy-reusable_.
 
     :::image type="content" source="../media/3-create-new-project.png" alt-text="Screenshot of the Azure DevOps Demo Generator pane for creating a new project.":::
 
@@ -57,7 +57,7 @@ On the Azure DevOps Demo Generator site, do the following:
 
 1. Select **Clone in VS Code**. If you're prompted to allow Visual Studio Code to open, select **Open**.
 
-    :::image type="content" source="../media/3-clone-visual-studio-code.png" alt-text="Screenshot of Azure DevOps that shows the repository settings, with the 'Clone in VS Code' button highlighted.":::
+    :::image type="content" source="../media/3-clone-visual-studio-code.png" alt-text="Screenshot of Azure DevOps that shows the repository settings, with the Clone in VS Code button highlighted.":::
 
 1. Create a folder to use for the repository, and then select **Select Repository Location**.
 
@@ -137,7 +137,7 @@ Next, create a service connection in Azure Pipelines. This process automatically
 
 1. In your browser, select **Project settings**.
 
-   :::image type="content" source="../../includes/media/azure-devops-project-settings.png" alt-text="Screenshot of Azure DevOps that shows the menu, with the 'Project settings' item highlighted.":::
+   :::image type="content" source="../../includes/media/azure-devops-project-settings.png" alt-text="Screenshot of Azure DevOps that shows the menu, with the Project settings item highlighted.":::
 
 1. Select **Service connections** > **Create service connection**.
 
@@ -149,7 +149,7 @@ Next, create a service connection in Azure Pipelines. This process automatically
 
 1. Select **Service principal (automatic)** > **Next**.
 
-   :::image type="content" source="../../includes/media/azure-devops-create-service-connection-principal-type.png" alt-text="Screenshot of Azure DevOps that shows the 'New Azure service connection' pane, with the 'Service principal (automatic)' option highlighted.":::
+   :::image type="content" source="../../includes/media/azure-devops-create-service-connection-principal-type.png" alt-text="Screenshot of Azure DevOps that shows the New Azure service connection' pane, with the Service principal (automatic) option highlighted.":::
 
 1. In the **Subscription** dropdown list, select your Azure subscription.
 
@@ -159,7 +159,7 @@ Next, create a service connection in Azure Pipelines. This process automatically
 
 1. In the **Service connection name** box, enter **ToyReusable**. Ensure that the **Grant access permission to all pipelines** checkbox is selected.
 
-   :::image type="content" source="../media/3-create-service-connection-principal-details.png" alt-text="Screenshot of Azure DevOps that shows the 'New Azure service connection' pane, with the details completed and the 'Save' button highlighted.":::
+   :::image type="content" source="../media/3-create-service-connection-principal-details.png" alt-text="Screenshot of Azure DevOps that shows the 'New Azure service connection' pane, with the details completed and the Save button highlighted.":::
 
    > [!TIP]
    > In this exercise, for simplicity, you're giving every pipeline access to your service connection. When you create real service connections that work with production resources, consider restricting access to only the pipelines that need them.
