@@ -76,3 +76,13 @@ For example, the input for `Completion` or `Embeddings` endpoints might be "What
 ```
 
 When you give the AI model a real conversation, it can generate a better response with more accurate tone, phrasing, and context. The `ChatCompletion` endpoint enables the ChatGPT model to have a more realistic conversation by sending the history of the chat with the next user message.
+
+`ChatCompletion` also allows for non-chat scenarios, such as summarization or entity extraction that you can do with the `Completion` endpoint. This can be accomplished by providing a short conversation, specifying the system information and what you want, along with the user input. For example, if you want to generate a job description, provide `ChatCompletion` with something like the following conversation input.
+
+```json
+{"role": "system", "content": "You are an assistant designed to write intriguing job descriptions. "},
+{"role": "user", "content": "Write a job description for the following job title: 'Business Intelligence Analyst'. It should include responsibilities, required qualifications, and highlight benefits like time off and flexible hours."}
+```
+
+> [!NOTE]
+> `ChatCompletion` is the only supported option for `gpt-4` models, and is preferred when using the `gpt-35-turbo` model. The lab in this module uses `gpt-35-turbo` with the `Completion` endpoint, but if using either of these models in your own app, consider using `ChatCompletion`.
