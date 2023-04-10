@@ -16,26 +16,30 @@ Although we're not space-exploration experts, we can use what we learn from expe
 
 This module focuses on the "Data acquisition and understanding" node of the data science life cycle. 
 
-## Set up your local environment
+## Set up your development environment
 
 This module helps you create a model to predict the best date to view a meteor shower. To create the model, you need some kind of Python notebook development environment. 
 
-If you haven't set up a Python environment before, the easiest way to do this is to install the [Visual Studio Code Coding pack for Python](https://aka.ms/LearnOnVSCode?azure-portal=true). Alternatively, you could follow the [Visual Studio Code data science setup docs](https://code.visualstudio.com/docs/python/data-science-tutorial?azure-portal=true).  You'll need:
-- Visual Studio Code
-- Python
-- Miniconda
+If you haven't set up a Python environment before, the easiest way to do this is to use GitHub Codespaces. To start using GitHub Codespaces, follow these steps:
+1. Make sure you're signed in to [GitHub](https://github.com?azure-portal=true).
+1. Go to [Codespaces](https://github.com/codespaces?azure-portal=true).
+1. In the **Explore quick start templates section**, locate the **Jupyter Notebook** template and select **Use this template**. 
 
-> [!NOTE]
-> If you've already completed an *Over the Moon* Learn module, open your *over-the-moon* folder in Visual Studio Code and skip to step 3. 
+>[!NOTE]
+>If the Jupyter Notebook template isn't displayed on this page, select **See All** to list all available templates.
 
-After you install everything, follow these steps to prepare your environment:
+The Juptyer Notebook codespace environment launches and you can begin using it.
+
+
+>[!TIP]
+>For personal GitHub accounts, you can use 120 core hours of Codespaces a month for free. For more information on billing, see [About billing for GitHub Codespaces](https://docs.github.com/en/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces?azure-portal=true). For more information on how to use Codespaces, see [GitHub Codespaces overview](https://docs.github.com/en/codespaces/overview?azure-portal=true).
+
+After you've created your codespace, follow these steps to prepare your environment:
 1. Create a folder called *over-the-moon*. 
-2. Open the folder in Visual Studio Code.
-3. Create a folder inside the *over-the-moon* folder. Name it *meteor-showers*.
-4. Create a folder inside the *meteor-showers* folder. Name it *data*.
-5. Create a file called *meteor-showers.ipynb*.
-6. Open the *meteor-showers.ipynb* file in Visual Studio Code.
-7. Make sure you're using the conda environment that you set up earlier.
+1. Create a file called *meteor-showers.ipynb*.
+1. Create a folder inside the *over-the-moon* folder. Name it *meteor-showers*.
+1. Create a folder inside the *meteor-showers* folder. Name it *data*.
+1. Open the *meteor-showers.ipynb* file.
 
 Your environment should look like this screenshot:
 

@@ -13,7 +13,10 @@ Make sure you run the cell to ensure you have your environment set up. Your Visu
 
 :::image type="content" source="../media/import-pandas-numpy.png" alt-text="Screenshot that shows importing pandas and NumPy code in Visual Studio Code.":::
 
-Notice the `[1]` in the upper-left corner of the cell where you have your imported code. That number means that the cell has finished running. There's no output between the first and second cell, so you know the code was successful. 
+Notice the `[1]` in the corner of the cell where you have your imported code. That number means that the cell has finished running. There's no output between the first and second cell, so you know the code was successful.
+
+>[!NOTE]
+>When you run the first `import` command, you'll be asked to choose a kernel. Select **Python Environments** and then a Python environment such as Python 3.10.4 or later.
 
 Now import all four .csv files:
 

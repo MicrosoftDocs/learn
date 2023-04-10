@@ -10,15 +10,3 @@ This module focuses on a real-world event, meteor showers. It guides you to use 
 
 > [!TIP]
 > This module is part of a multimodal learning experience. [Follow along with a video walkthrough of the module](https://youtu.be/Aln9p6farRg?azure-portal=true) in a new tab.
-
-## Learning objectives
-
-In this module, you'll begin to discover: 
-
-- The basics of meteor showers. What are they? Why do we see them?
-- How to choose and collect appropriate data.
-- Strategies to cleanse and manipulate your data.
-
-## Prerequisites
-
-- [Visual Studio Code, with the Python extension](https://aka.ms/LearnOnVSCode?azure-portal=true)
