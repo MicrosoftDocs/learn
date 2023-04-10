@@ -12,7 +12,7 @@ Azure Machine Learning supports multiple types of compute for experimentation, t
 - **Attached compute**: If you already use an Azure-based compute environment for data science, such as an Azure virtual machine or an Azure Databricks cluster, you can attach it to your Azure Machine Learning workspace and use it as a compute target for certain types of workload.
 
 > [!NOTE]
-> In Azure Machine Learning studio, another type of compute exists for **inference**. Inference compute is more lightweight than compute targets designed for training, and can only be used to deploy trained models as endpoints. 
+> In Azure Machine Learning, another type of compute exists for **inference**. Inference compute is more lightweight than compute targets designed for training, and can only be used to deploy trained models as endpoints. 
 
 ## When to use which type of compute?
 
