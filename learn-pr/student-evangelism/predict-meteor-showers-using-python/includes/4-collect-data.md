@@ -58,7 +58,7 @@ New Moon, first quarter, full Moon, and third quarter are the most frequently tr
 
 ## Data files
 
-We've started to gather some data for the example in this module. On your own, try to find additional data that will help you explore the predictions of meteor showers. 
+We've started to gather some data for the example in this module. On your own, try to find additional data that will help you explore the predictions of meteor showers. For example, you can create new data files containing data for the current year or future years.
 
 Here's the data we've already gathered:
 - [moonphases.csv](https://aka.ms/LearnWithDrG/OverTheMoon/Data?azure-portal=true) - This file contains the Moon phases for every day of 2020. The missing data will be added in the next unit. (Data acquired from [timeanddate.com](https://www.timeanddate.com/moon/phases/?azure-portal=true))
