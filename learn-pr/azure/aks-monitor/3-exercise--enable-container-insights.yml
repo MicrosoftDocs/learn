@@ -3,7 +3,7 @@ uid: learn.monitor-aks-using-container-insights.exercise-enable-container-insigh
 title: Exercise – Enable Container insights
 metadata:
   title: Exercise – Enable Container insights
-  description: TBD
+  description: In this exercise, you'll practice enabling Container insights for your cluster.
   ms.date: 08/10/2022
   author: bwren
   ms.author: bwren

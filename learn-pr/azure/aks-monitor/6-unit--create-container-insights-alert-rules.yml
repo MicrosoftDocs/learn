@@ -3,7 +3,7 @@ uid: learn.monitor-aks-using-container-insights.create-container-insights-alert-
 title: Create Container insights alert rules
 metadata:
   title: Create Container insights alert rules
-  description: TBD
+  description: Learn how to create Container insights alert rules.
   ms.date: 08/10/2022
   author: bwre
   ms.author: bwren
