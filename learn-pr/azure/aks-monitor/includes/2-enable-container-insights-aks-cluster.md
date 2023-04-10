@@ -1,4 +1,4 @@
-AKS clusters will automatically generate platform metrics that track such information as the processor and memory utilization of the node pool. You can view these metrics on the **Monitoring** tab of the **Overview** page for the cluster in the Azure portal or by using metrics explorer in Azure Monitor. 
+Azure Kubernetes Service clusters will automatically generate platform metrics that track such information as the processor and memory utilization of the node pool. You can view these metrics on the **Monitoring** tab of the **Overview** page for the cluster in the Azure portal or by using metrics explorer in Azure Monitor. 
 
 :::image type="content" source="../media/2-aks-overview-page.png" lightbox="../media/2-aks-overview-page.png" alt-text="Screenshot of overview page for AKS cluster showing metric charts.":::
 
