@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.introduction-data-platform-modernization.6-summary
+uid: learn.wwl.introduction-data-platform-modernization.7-summary
 title: Summary
 metadata:
   title: Summary
   description: "Summary"
-  ms.date: 04/28/2022
+  ms.date: 04/10/2023
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/6-summary.md)]
+  [!include[](includes/7-summary.md)]

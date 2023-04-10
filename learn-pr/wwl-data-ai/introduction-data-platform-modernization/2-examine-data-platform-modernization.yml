@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-data-platform-modernization.2-examine-data-platform-modernization
+title: Examine data platform modernization
+metadata:
+  title: Examine data platform modernization
+  description: "Examine data platform modernization"
+  ms.date: 04/10/2023
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-examine-data-platform-modernization.md)]

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-data-platform-modernization.3-plan-data-migration
+title: Plan a data migration
+metadata:
+  title: Plan a data migration
+  description: "Plan a data migration"
+  ms.date: 04/10/2023
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-plan-data-migration.md)]

@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-data-platform-modernization.knowledge-check
+title: Knowledge Check
+metadata:
+  title: Knowledge Check
+  description: "Knowledge Check"
+  ms.date: 04/10/2023
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What are the five main stages of data platform modernization?"
+    choices:
+    - content: "Investigate, analyze, build, deploy, and monitor"
+      isCorrect: false
+      explanation: "Incorrect. The five main stages of data platform modernization are discover, assess, plan, transform, and validate."
+    - content: "Discover, assess, plan, transform, and validate"
+      isCorrect: true
+      explanation: "Correct."
+    - content: "Design, code, test, deploy, and maintain"
+      isCorrect: false
+      explanation: "Incorrect. The five main stages of data platform modernization are discover, assess, plan, transform, and validate."
+  - content: "What is the purpose of the \"Initiate and discover\" stage in a data platform modernization project?"
+    choices:
+    - content: "To complete a current workload assessment"
+      isCorrect: false
+      explanation: "Incorrect. The main purpose is to evaluate the current environment and identify any dependencies between applications and databases."
+    - content: "To determine the target platform for the migration"
+      isCorrect: false
+      explanation: "Incorrect. The main purpose is to evaluate the current environment and identify any dependencies between applications and databases."
+    - content: "To evaluate the current environment and identify any dependencies between applications and databases"
+      isCorrect: true
+      explanation: "Correct."
+  - content: "Which SQL Server PaaS offering should you choose if you want to restore an on-premises database backup to Azure?"
+    choices:
+    - content: "Azure SQL Managed Instance"
+      isCorrect: true
+      explanation: "That's correct. Azure SQL Managed Instance is the only SQL Server PaaS option that supports database restore from an on-premises database backup."
+    - content: "Azure SQL Database"
+      isCorrect: false
+      explanation: "That's incorrect. You can't restore an on-premises database backup to Azure SQL Database."
+    - content: "You can use both Azure SQL Database and Azure SQL Managed Instance."
+      isCorrect: false
+      explanation: "That's incorrect. You can't restore an on-premises database backup to Azure SQL Database."

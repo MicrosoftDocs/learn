@@ -1,16 +1,16 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.introduction-data-platform-modernization.4-data-migration-technologies
+uid: learn.wwl.introduction-data-platform-modernization.4-explore-data-migration-resources
 title: Explore the available data migration technologies
 metadata:
   title: Explore the available data migration technologies
   description: "Explore the available data migration technologies"
-  ms.date: 04/28/2022
+  ms.date: 04/10/2023
   author: wwlpublish
-  ms.author: rcaper
+  ms.author: jupadrao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 4
 content: |
-  [!include[](includes/4-data-migration-technologies.md)]
+  [!include[](includes/4-explore-data-migration-resources.md)]
