@@ -2,14 +2,14 @@
 uid: learn.wwl.introduction-to-azure-virtual-networks
 metadata:
   title: Introduction to Azure Virtual Networks
-  description: "Introduction to Azure Virtual Networks"
-  ms.date: 11/22/2022
+  description: "In this module, you'll learn how to design and implement fundamental Azure Networking resources such as virtual networks, public and private IPs, DNS, virtual network peering, routing, and Azure Virtual NAT."
+  ms.date: 04/10/2023
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Azure Virtual Networks
-summary: You'll learn how to design and implement fundamental Azure Networking resources such as virtual networks, public and private IPs, DNS, virtual network peering, routing, and Azure Virtual NAT.
+summary: You'll learn how to design and implement core Azure Networking infrastructure such as virtual networks, public and private IPs, DNS, virtual network peering, routing, and Azure Virtual NAT.
 abstract: |
   At the end of this module, you'll be able to:
   - Implement virtual networks
