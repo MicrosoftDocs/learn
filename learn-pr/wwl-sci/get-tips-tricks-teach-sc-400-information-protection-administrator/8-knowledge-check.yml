@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/07/2023
+  ms.date: 04/10/2023
   author: wwlpublish
   ms.author: Trinity Sheppard
   ms.topic: interactive-tutorial
@@ -16,17 +16,17 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "How often should you download content from the Learning Download Center (LDC) to ensure you have the most up to date course materials?"
+  - content: "How often should you download content from the Learning Download Center (LDC) to ensure you have the most up-to-date course materials?"
     choices:
     - content: "Every three years"
       isCorrect: false
-      explanation: "Incorrect. The tech world is constantly changing so the curriculum content is updated to match. By downloading the course materials quarterly or before teaching the course you know you have the most up-to-date materials."
+      explanation: "Incorrect. The tech world is constantly changing so the curriculum content is updated to match. By downloading the course materials quarterly, or before teaching the course, you know you have the most up-to-date materials."
     - content: "Quarterly"
       isCorrect: true
-      explanation: "Correct. The tech world is constantly changing so the curriculum content is updated to match. By downloading the course materials each quarter or before teaching the course you know you have the most up-to-date materials."
+      explanation: "Correct. The tech world is constantly changing so the curriculum content is updated to match. By downloading the course materials each quarter, or before teaching the course, you know you have the most up-to-date materials."
     - content: "Once a year"
       isCorrect: false
-      explanation: "Incorrect. The tech world is constantly changing so the curriculum content is updated to match. By downloading the course materials quarterly or before teaching the course you know you have the most up-to-date materials."
+      explanation: "Incorrect. The tech world is constantly changing so the curriculum content is updated to match. By downloading the course materials quarterly, or before teaching the course, you know you have the most up-to-date materials."
   - content: "Which tool is great for giving students a visual representation of topics?"
     choices:
     - content: "The Textbook"
@@ -34,10 +34,10 @@ quiz:
       explanation: "Incorrect. While a textbook can be used as a standard work for the study of a particular subject, the Microsoft Whiteboard can help people visualize a process and increase collaboration by allowing participants to easily add ideas with sticky notes or colored markers."
     - content: "Microsoft Whiteboard"
       isCorrect: true
-      explanation: "Correct. A Microsoft Whiteboard can help people visualize a process. Microsoft Whiteboard increase collaboration by allowing participants to easily add ideas with sticky notes or colored markers."
+      explanation: "Correct. A Microsoft Whiteboard can help people visualize a process. Microsoft Whiteboard increases collaboration by allowing participants to easily add ideas with sticky notes or colored markers."
     - content: "Flash Cards"
       isCorrect: false
-      explanation: "Incorrect. Flash cards contain a small amount of information, held up for students to see, as an aid to learning, however the Microsoft Whiteboard can help people visualize a process and increase collaboration by allowing participants to easily add ideas with sticky notes or colored markers."
+      explanation: "Incorrect. Flash cards contain a small amount of information, held up for students to see, as an aid to learning. However, the Microsoft Whiteboard can help people visualize a process and increase collaboration by allowing participants to easily add ideas with sticky notes or colored markers."
   - content: "Who creates sensitivity labels through either the Purview portal UI or PowerShell?"
     choices:
     - content: "The organization"

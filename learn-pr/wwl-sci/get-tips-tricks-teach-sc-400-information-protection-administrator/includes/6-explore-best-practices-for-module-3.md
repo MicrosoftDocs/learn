@@ -4,7 +4,7 @@ SC-400: Module 3 Implement data lifecycle and records management with Microsoft 
 
 Module 3 Overview
 
-As you begin to teach this module, get familiar with what the students will learn during the module. In this module students will learn how to manage content lifecycles by using the different solutions to import, store, and classify business critical data to keep what is needed and delete what is not.
+As you begin to teach this module, get familiar with what students learn during the module. In this module students learn how to manage content lifecycles by using the different solutions to import, store, and classify business critical data in order to keep what's needed and delete what's not.
 
 This module consists of three lessons:
 
