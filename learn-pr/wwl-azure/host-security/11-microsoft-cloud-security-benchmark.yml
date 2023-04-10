@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.host-security.secure-azure-workloads
+uid: learn.wwl.host-security.microsoft-cloud-security-benchmark
 title: Microsoft cloud security benchmark in Defender for Cloud
 metadata:
   title: Microsoft cloud security benchmark in Defender for Cloud
   description: "Microsoft cloud security benchmark in Defender for Cloud"
-  ms.date: 04/07/2023
+  ms.date: 04/10/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: azure-interface
 content: |
-  [!include[](includes/11-secure-azure-workloads.md)]
-interactive: bash
+  [!include[](includes/11-microsoft-cloud-security-benchmark.md)]

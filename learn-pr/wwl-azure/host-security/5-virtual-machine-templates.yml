@@ -4,11 +4,12 @@ title: Create virtual machine templates
 metadata:
   title: Create virtual machine templates
   description: "Create virtual machine templates"
-  ms.date: 04/07/2023
+  ms.date: 04/10/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: None
+durationInMinutes: 8
 content: |
   [!include[](includes/5-virtual-machine-templates.md)]
