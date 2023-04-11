@@ -38,7 +38,7 @@ Each of your onboarded machines is:
 
 - Assigned a Resource ID.
 - Managed as part of a resource group inside a subscription.
-- Benefits from standard Azure constructs, such as applying tags or Azure Policy.
+- Able to use standard Azure constructs, such as applying tags or Azure Policy.
 
 > [!NOTE]
 > Third-party service providers that currently manage their customers' on-premises infrastructure can also manage their customers' hybrid machines with Azure Arc, just as they do with native Azure resources.
