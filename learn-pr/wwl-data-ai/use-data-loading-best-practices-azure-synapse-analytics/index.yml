@@ -33,7 +33,6 @@ subjects:
 - compliance
 units:
 - learn.wwl.use-data-loading-best-practices-azure-synapse-analytics.understand-design-goals
-- learn.wwl.use-data-loading-best-practices-azure-synapse-analytics.set-up-dedicated-accounts
 - learn.wwl.use-data-loading-best-practices-azure-synapse-analytics.simplify-ingestion-with-copy-activity
 - learn.wwl.use-data-loading-best-practices-azure-synapse-analytics.summary
 badge:
