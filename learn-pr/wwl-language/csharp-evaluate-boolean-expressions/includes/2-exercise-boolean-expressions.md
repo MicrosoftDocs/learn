@@ -38,28 +38,36 @@ This module includes hands-on activities that guide you through the process of b
 1. On the Visual Studio Code **File** menu, select **Open Folder**.
 
 1. In the **Open Folder** dialog, navigate to the Windows Desktop folder.
+ 
    If you have a different folder location where you keep code projects, you can use that folder location instead. For this training, the important thing is to have a location that’s easy to locate and remember.
 
 1. In the **Open Folder** dialog, select **Select Folder**.
+
    If you see a security dialog asking if you trust the authors, select **Yes**.
 
 1. On the Visual Studio Code **Terminal** menu, select **New Terminal**.
+   
    Notice that a command prompt in the Terminal panel displays the folder path for the current folder. For example:  
+   
    ```dos   
    C:\Users\someuser\Desktop>   
    ```
+   
    > [!NOTE]   
    > If you are working on your own PC rather than in a sandbox or hosted environment and you have completed other Microsoft Learn modules in this C# series, you may have already created a project folder for code samples. If that's the case, you can skip over the next step, which is used to create a console app in the TestProject folder.
 
 1. At the Terminal command prompt, to create a new console application in a specified folder, type **dotnet new console -o ./CsharpProjects/TestProject** and then press Enter.
+
    This .NET CLI command uses a .NET program template to create a new C# console application project in the specified folder location. The command creates the CsharpProjects and TestProject folders for you, and uses TestProject as the name of your `.csproj` file.
 
 1. In the EXPLORER panel, expand the **CsharpProjects** folder.
+
    You should see the TestProject folder and two files, a C# program file named Program.cs and a C# project file named TestProject.csproj.
 
 1. In the EXPLORER panel, to view your code file in the Editor panel, select **Program.cs**.
 
 1. Delete the existing code lines.
+
    You'll be using this C# console project to create, build, and run code samples during this module.
 
 1. Close the Terminal panel.
@@ -83,7 +91,7 @@ This module includes hands-on activities that guide you through the process of b
 
 1. On the Visual Studio Code **File** menu, select **Save**.
   
-  The Program.cs file must be saved before building or running the code.
+   The Program.cs file must be saved before building or running the code.
 
 1. In the EXPLORER panel, to open a Terminal at your TestProject folder location, right-click **TestProject**, and then select **Open in Integrated Terminal**.
    
@@ -96,6 +104,7 @@ This module includes hands-on activities that guide you through the process of b
 
 
    You should see the following output.
+   
    ```output
    True
    False
@@ -148,14 +157,15 @@ You can improve the previous equality check by chaining these two helper methods
    Console.WriteLine("a" != "a");
    Console.WriteLine("a" != "A");
    Console.WriteLine(1 != 2);
+   
    string myValue = "a";
    Console.WriteLine(myValue != "a");
    ````
 
 1. Save your code file, and then use Visual Studio Code to run your code.
   
-  You should see the following output.
-  
+   You should see the following output.
+
    ```output
    False
    True
@@ -182,23 +192,23 @@ Naturally, the `==` and `!=` operators that you used to compare string values ab
 
 1. Type the following code into the Visual Studio Code Editor.
   
-  ```c#
-  Console.WriteLine(1 > 2);
-  Console.WriteLine(1 < 2);
-  Console.WriteLine(1 >= 1);
-  Console.WriteLine(1 <= 1);
-  ```
+     ```c#
+     Console.WriteLine(1 > 2);
+     Console.WriteLine(1 < 2);
+     Console.WriteLine(1 >= 1);
+     Console.WriteLine(1 <= 1);
+     ```
 
 1. Save your code file, and then use Visual Studio Code to build and run your code.
   
-  You should see the following output:
-   
-   ```output
-   False
-   True
-   True
-   True
-   ```
+      You should see the following output:
+
+      ```output
+      False
+      True
+      True
+      True
+      ```
 
 ## Methods that return a Boolean value
 
