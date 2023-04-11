@@ -36,7 +36,6 @@ units:
 - learn.wwl.prepare-data-for-machine-learning-azure-databricks.perform-feature-engineering
 - learn.wwl.prepare-data-for-machine-learning-azure-databricks.perform-data-scaling
 - learn.wwl.prepare-data-for-machine-learning-azure-databricks.perform-data-encoding
-- learn.wwl.prepare-data-for-machine-learning-azure-databricks.knowledge-check
 - learn.wwl.prepare-data-for-machine-learning-azure-databricks.summary
 badge:
   uid: learn.wwl.prepare-data-for-machine-learning-azure-databricks.badge
