@@ -78,13 +78,13 @@ Before deciding on which disk type suits your needs the most, consider how the b
 The cost of a disk is determined by the following factors:
 - The region the disk is deployed in (all disks)
 - The size of the disk (all disks)
-- The number of transactions made involving the disk ( all transactions for Standard HDD and Standard SSD. For Premium SSD, burst transactions only)
+- The number of transactions made involving the disk (all transactions for Standard HDD and Standard SSD. For Premium SSD, burst transactions only)
 - The redundancy option selected (Standard SSD and Premium SSD only)
 - Whether on-demand bursting is enabled (Premium SSD only)
 - The disk's IOPS (Ultra Disks and Premium SSD v2 only)
 - The disk's throughput (Ultra Disks and Premium SSD v2 only)
 
-For moe detail on the costs involved with managed disks, see the [pricing page](https://azure.microsoft.com/pricing/details/managed-disks/).
+For more detail on the costs involved with managed disks, see the [pricing page](https://azure.microsoft.com/pricing/details/managed-disks/).
 
 ## Transactions
 
