@@ -21179,6 +21179,11 @@
       "source_path": "learn-pr/wwl-azure/azure-security-center/7-microsoft-cloud-security-benchmark.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/9-microsoft-cloud-security-benchmark",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/get-started-azure-databricks/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-databricks/",
+      "redirect_document_id": false
     }
   ]
 }
