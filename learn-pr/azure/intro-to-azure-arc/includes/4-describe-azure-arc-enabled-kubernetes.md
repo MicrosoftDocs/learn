@@ -48,7 +48,7 @@ With Azure Arc-enabled Kubernetes, you can create a shared application and infra
 
 #### Perform configuration with integrated management
 
-The integrated management features in Azure Arc-enabled Kubernetes, allow you to more efficiently create, apply, and enforce policies to Kubernetes apps, data, and infrastructure. Wherever, your Kubernetes resources are located.
+Use Azure Arc-enabled Kubernetes integrated management to more efficiently create, apply, and enforce policies. The policies apply to Kubernetes apps, data, and infrastructure, wherever those resources are located. Specifically, you can:
 
 - Use Azure Policy to:
   - Assure consistent configurations across all your Kubernetes clusters.
@@ -67,7 +67,7 @@ By implementing Azure Arc-enabled Kubernetes, you can more efficiently collect i
 - Unifying your resources so you can organize and inventory by using Azure scopes, such as:
   - Management groups
   - Subscriptions
-  - Resource Groups
+  - Resource groups
 - Tracking resources by creating and applying standardized and custom tags.
 - Searching your global resources with Azure Resource Graph.
 

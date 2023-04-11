@@ -2,7 +2,7 @@ Contoso wants to protect the servers and Kubernetes clusters that it has connect
 
 ## Azure Arc security with Microsoft Sentinel
 
-Microsoft Sentinel is an integrated SIEM (scalable, cloud-native, security information, and event management) and a SOAR (security orchestration, automation, and response) solution. Microsoft Sentinel delivers threat intelligence, providing a single solution for attack detection, proactive hunting, and threat response. It provides a birds-eye view across your enterprise. A comprehensive view that alleviates the stress of increasingly sophisticated attacks, increasing volumes of alerts, and long resolution time frames.
+Microsoft Sentinel is an integrated SIEM (scalable, cloud-native, security information, and event management) and a SOAR (security orchestration, automation, and response) solution. Microsoft Sentinel delivers threat intelligence, providing a single solution for attack detection, proactive hunting, and threat response. It provides a birds-eye view across the enterprise, alleviating the stress of increasingly sophisticated attacks, increasing volumes of alerts, and long resolution time frames.
 
 The benefits of Microsoft Sentinel include:
 
@@ -19,10 +19,10 @@ To onboard an Azure Arc-enabled server to Microsoft Sentinel, you need:
 - Microsoft Sentinel enabled in your subscription.
 - One or more Azure Arc-enabled servers.
 
-Microsoft Sentinel comes with several connectors for Microsoft solutions available out of the box and providing real-time integration. For physical and virtual machines, you can install the Log Analytics agent that collects the logs and forwards them to Microsoft Sentinel. Azure Arc-enabled servers, deploys the Log Analytics agent by using the following methods:
+Microsoft Sentinel comes with several connectors for Microsoft solutions available out of the box and providing real-time integration. For physical and virtual machines, you can install the Log Analytics agent that collects the logs and forwards them to Microsoft Sentinel. Azure Arc-enabled servers can deploy the Log Analytics agent by using any of the following methods:
 
 - Using the **VM extensions framework**, you can deploy the Log Analytics agent VM extension to a non-Azure Windows and/or Linux server. VM extensions can be managed using the Azure portal, Azure CLI, Azure PowerShell, and Azure Resource Manager templates.
-- Using **Azure Policy**, you can deploy the Log Analytics agent to Linux or Windows Azure Arc machines to audit if the Azure Arc-enabled server has the Log Analytics agent installed. If the agent isn't installed, it automatically deploys it using a remediation task. You can also use the built-in Azure Policy to Enable Azure Monitor for VMs initiative to install and configure the Log Analytics agent.
+- Using **Azure Policy**, you can deploy the Log Analytics agent to Linux or Windows Azure Arc machines to audit if the Azure Arc-enabled server has the Log Analytics agent installed. If the agent isn't installed, the agent automatically deploys it using a remediation task. You can also use the Enable Azure Monitor for VMs built-in initiative to install and configure the Log Analytics agent.
 
 After your Azure Arc-enabled servers have been connected to the Log Analytics workspace, with Microsoft Sentinel enabled, you can set up Data Connectors to start ingesting logs.
 
@@ -54,5 +54,5 @@ Core benefits of Microsoft Defender for Servers include:
 
 Defender for Containers helps with the core aspects of container security:
 
-- **Environment hardening** - Protects your Kubernetes clusters. Defender for Containers continuously assesses clusters, so that it can offer visibility into misconfigurations, and provide guidelines to help mitigate identified threats.
+- **Environment hardening** - Protects your Kubernetes clusters. Defender for Containers continuously assesses clusters so that it can offer visibility into misconfigurations and provide guidelines to help mitigate identified threats.
 - **Run-time threat protection for nodes and clusters** - Threat protection for clusters and Linux nodes generates security alerts for suspicious activities.
