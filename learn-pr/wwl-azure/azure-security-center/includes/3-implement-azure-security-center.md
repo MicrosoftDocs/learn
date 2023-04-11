@@ -1,5 +1,5 @@
 
-Microsoft Defender for Cloud is a **Cloud Security Posture Management (CSPM)** and **Cloud Workload Protection Platform (CWPP)** for all of your **Azure**, **on-premises**, and **multicloud** (Amazon AWS and Google GCP) **resources**.
+Microsoft Defender for Cloud is a solution for **cloud security posture management (CSPM)** and **cloud workload protection (CWP)** that finds weak spots across your cloud configuration, helps strengthen the overall security posture of your environment, and can protect workloads across multicloud and hybrid environments from evolving threats.
 
 For an interactive overview of how to Manage your cloud security posture with Microsoft Defender for Cloud, **click on the image below**.
 
@@ -11,39 +11,28 @@ Defender for Cloud fills **three vital needs** as you manage the security of you
 :::image type="content" source="../media/microsoft-defender-for-cloud-defined-version-one-60a3512c.png" alt-text="Screenshot showing Microsoft Defender for Cloud fills three vital needs.":::
 
 
- -  **Defender for Cloud secure score continually assesses** your security posture so you can track new security opportunities and precisely report on the progress of your security efforts.
- -  **Defender for Cloud recommendations secures** your workloads with step-by-step actions that protect your workloads from known security risks.
- -  **Defender for Cloud alerts defends** your workloads in real-time so you can react immediately and prevent security events from developing.
+1.  **Defender for Cloud secure score continually assesses** your security posture so you can track new security opportunities and precisely report on the progress of your security efforts.
+2.  **Defender for Cloud recommendations secures** your workloads with step-by-step actions that protect your workloads from known security risks.
+3.  **Defender for Cloud alerts defends** your workloads in real-time so you can react immediately and prevent security events from developing.
 
-## Protect your resources and track your security progress
+## Strengthen the security posture of your cloud resources your cloud resources
+
+ -  Get a continuous assessment of the security of your cloud resources running in Azure, AWS, and Google Cloud.
+ -  Use built-in policies and prioritized recommendations that are aligned to key industry and regulatory standards or build custom requirements that meet your organization's needs.
+ -  Gather actionable insights by discovering your complete digital footprint and external attack surface signals and use them to automate recommendations and help ensure that resources are configured securely and meet your compliance needs.
+
+## **Protect cloud and hybrid workloads against threats**
+
+Microsoft Defender for Cloud enables you to protect against evolving threats across multicloud and hybrid environments. You will be able to understand vulnerabilities with insights from industry-leading security research and secure your critical workloads across VMs, containers, databases, storage, app services, and more. Use many options to automate and streamline your security administration from a single place.
+
+## :::image type="content" source="../media/defender-for-cloud-overview-page-bc02ec48.png" alt-text="Screenshot showing Microsoft Defender for Cloud overview page."::: 
+
+## **Protect your resources and track your security progress**
 
 Microsoft Defender for Cloud's features covers the **two broad pillars** of cloud security:
 
-1.  **Cloud Security Posture Management (CSPM)**
-2.  **Cloud Workload Protection Platform (CWP)**
-
-### Cloud Security Posture Management (CSPM) - Remediate security issues and watch your security posture improve
-
-In Defender for Cloud, the posture management features provide the following:
-
- -  **Hardening guidance** \- to help you efficiently and effectively improve your security
- -  **Visibility** \- to help you understand your current security situation
-
-Defender for Cloud continually assesses your resources, subscriptions, and organization for security issues and shows your security posture in the secure score, an aggregated score of the security findings that tells you, at a glance, your current security situation: the higher the score, the lower the identified risk level.
-
-As soon as you open Defender for Cloud for the first time, Defender for Cloud:
-
- -  **Generates a secure score** for your subscriptions based on an assessment of your connected resources compared with the guidance in the **Microsoft cloud security benchmark**. Use the score to understand your security posture and the compliance dashboard to review your compliance with the built-in benchmark. When you've enabled the enhanced security features, you can customize the standards used to assess your compliance and add other regulations, such as the **National Institute of Standards and Technology (NIST)** and **Azure Center for Internet Security (CIS)** or organization-specific security requirements. You can also apply recommendations and score based on the **AWS Foundational Security Best practices standards**.
- -  **Provides hardening recommendations** based on any **identified security misconfigurations** and **weaknesses**. Use these security recommendations to strengthen the security posture of your organization's Azure, hybrid, and multicloud resources.
- -  **Analyzes and secure's your attack paths** through the cloud security graph, which is a graph-based context engine that exists within Defender for Cloud. The cloud security graph collects data from your multicloud environment and other data sources. **For example**, the cloud assets inventory, connections and lateral movement possibilities between resources, exposure to the internet, permissions, network connections, vulnerabilities, and more. The data collected is then used to build a graph representing your multicloud environment.
-    
-    Attack path analysis is a **graph-based algorithm that scans the cloud security graph**. The **scans expose exploitable paths attackers may use to breach your environment to reach your high-impact assets**. Attack path analysis exposes those attack paths and suggests recommendations as to how best to remediate the issues that will break the attack path and prevent a successful breach.
-    
-    By taking your environment's contextual information into account, such as internet exposure, permissions, lateral movement, and more. Attack path analysis identifies issues that may lead to a breach in your environment and helps you to remediate the highest risk ones first.
-
-### Cloud Workload Protection (CWP) - Identify unique workload security requirements
-
-Defender for Cloud offers security alerts that are powered by Microsoft Threat Intelligence. It also includes a range of advanced, intelligent protections for your workloads. The workload protections are provided through Microsoft Defender plans specific to the types of resources in your subscriptions. For example, you can enable Microsoft Defender for Storage to get alerted about suspicious activities related to your storage resources.
+1.  **Cloud Security Posture Management (CSPM) - Remediate security issues and watch your security posture improve**
+2.  **Cloud Workload Protection (CWP) - Identify unique workload security requirements**
 
 ## Protect all of your resources under one roof
 

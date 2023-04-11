@@ -22,6 +22,13 @@ On the Azure DevOps Demo Generator site, to run the template, do these steps:
 1. Select **Sign In** and accept the usage terms.
 1. On the **Create New Project** page, enter a project name, like *Space Game - web - Pipeline*, select your Azure DevOps organization (in this example the organization name is `fabrikam`), and select **Create Project**.
 
+    ::: zone pivot="github-codespaces-agent"
+
+    > [!IMPORTANT]
+    > You must specify the same Azure DevOps organization name here that you specified as your GitHub Codespaces secret for `ADO_ORG` in the [Set up secrets for self-hosted agent](../3-build-locally.yml#set-up-secrets-for-self-hosted-agent) procedure.
+
+    ::: zone-end
+
     :::image type="content" source="../media/5-create-new-project.png" alt-text="Screenshot of creating a project through the Azure DevOps Demo Generator.":::
 
     It takes a moment for the template to run.

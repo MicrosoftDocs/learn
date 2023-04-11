@@ -3,7 +3,7 @@ uid: learn.azure.intro-to-arc-enabled-data-services
 metadata:
   title: Introduction to Azure Arc-enabled data services
   description: Introduction to Azure Arc-enabled data services
-  ms.date: 06/28/2021
+  ms.date: 03/07/2023
   author: MikeRayMSFT
   ms.author: mikeray
   manager: jroth
@@ -11,9 +11,9 @@ metadata:
   ms.prod: learning-azure
   ms.custom: e2e-hybrid
 title: Introduction to Azure Arc-enabled data services
-summary: In this module, you'll learn the fundamentals of hybrid computing and Azure Arc. You will also learn the basics of Azure Arc-enabled data services including the overall architecture. Then you will learn the capabilities of Azure Arc-enabled SQL Managed Instance.
+summary: In this module, you learn the fundamentals of hybrid computing and Azure Arc. You also learn the basics of Azure Arc-enabled data services including the overall architecture. Then you learn the capabilities of Azure Arc-enabled SQL Managed Instance.
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you're able to:
   - Describe why hybrid computing is an important technology strategy for many users and businesses.
   - Describe what is Azure Arc-enabled data services and why it can be an important part of any hybrid compute and data strategy.
   - Describe the managed capabilities and benefits of using Azure Arc-enabled SQL Managed Instance for SQL Server workloads.

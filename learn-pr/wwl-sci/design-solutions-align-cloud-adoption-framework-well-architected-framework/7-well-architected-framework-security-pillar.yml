@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-solutions-align-cloud-adoption-framework-well-architected-framework.well-architected-framework-security-pillar
+title: The Well-Architected Framework security pillar
+metadata:
+  title: The Well-Architected Framework security pillar
+  description: "SC-100 preparatory unit on the topic: The Well-Architected Framework security pillar."
+  ms.date: 3/15/2023
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-well-architected-framework-security-pillar.md)]
