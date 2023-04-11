@@ -4,7 +4,7 @@ SC-400: Module 3 Implement data lifecycle and records management with Microsoft 
 
 Module 3 Overview
 
-As you begin to teach this module, get familiar with what students learn during the module. In this module students learn how to manage content lifecycles by using the different solutions to import, store, and classify business critical data in order to keep what's needed and delete what's not.
+As you begin to teach this module, get familiar with what students learn during the module. In this module, students learn how to manage content lifecycles by using the different solutions to import, store, and classify business critical data to keep what's needed and delete what's not.
 
 This module consists of three lessons:
 
@@ -17,11 +17,11 @@ This module consists of three lessons:
 Module 3 Tips and Tricks
 
 - Explain retention label configuration for data lifecycle and records management:
-	- Retention labels must be created and then published (or auto-applied)
-	- Retention label names cannot be changed after they are created
+	- Retention labels must be created and then published (or autoapplied)
+	- Retention label names can't be changed after they're created
 	- Only one retention label can be assigned to content (like and email or document) at a time
-	- Auto-applied retention labels can be replaced by a manual assignment 
-	- Retention label policies can trigger a disposition review at the end of a retention period, retention policies cannot
+	- Autoapplied retention labels can be replaced by a manual assignment 
+	- Retention label policies can trigger a disposition review at the end of a retention period, retention policies can't
 - Describe how to retain or delete content based on:
 	- When content was created
 	- When content was last modified

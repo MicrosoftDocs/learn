@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/10/2023
+  ms.date: 04/11/2023
   author: wwlpublish
   ms.author: Trinity Sheppard
   ms.topic: interactive-tutorial
@@ -38,14 +38,14 @@ quiz:
     - content: "Flash Cards"
       isCorrect: false
       explanation: "Incorrect. Flash cards contain a small amount of information, held up for students to see, as an aid to learning. However, the Microsoft Whiteboard can help people visualize a process and increase collaboration by allowing participants to easily add ideas with sticky notes or colored markers."
-  - content: "Who creates sensitivity labels through either the Purview portal UI or PowerShell?"
+  - content: "Who creates sensitivity labels through either the Microsoft Purview compliance portal UI or PowerShell?"
     choices:
     - content: "The organization"
       isCorrect: false
-      explanation: "Incorrect. Sensitivity labels can be created by an admin through either the Purview portal UI or PowerShell."
+      explanation: "Incorrect. Sensitivity labels can be created by an admin through either the Microsoft Purview compliance portal UI or PowerShell."
     - content: "User"
       isCorrect: false
-      explanation: "Incorrect: Sensitivity labels can be created by an admin through either the Purview portal UI or PowerShell."
+      explanation: "Incorrect: Sensitivity labels can be created by an admin through either the Microsoft Purview compliance portal UI or PowerShell."
     - content: "Administrator Feedback:"
       isCorrect: true
-      explanation: "Correct. Sensitivity labels can be created by an admin through either the Purview portal UI or PowerShell."
+      explanation: "Correct. Sensitivity labels can be created by an admin through either the Microsoft Purview compliance portal UI or PowerShell."
