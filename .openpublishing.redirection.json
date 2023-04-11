@@ -21259,6 +21259,11 @@
       "source_path": "learn-pr/wwl-data-ai/manage-machine-learning-models-azure-databricks/7-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/mlflow-azure-databricks/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/prepare-data-for-machine-learning-azure-databricks/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/machine-learning-azure-databricks/",
+      "redirect_document_id": false
     }
   ]
 }
