@@ -26,7 +26,6 @@ roles:
 products:
 - azure
 - azure-functions
-- vs-code
 units:
 - learn.the-mojifier.1-introduction
 - learn.the-mojifier.2-conceptual-overview

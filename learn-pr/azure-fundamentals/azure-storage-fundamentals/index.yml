@@ -3,9 +3,9 @@ uid: learn.azure.azure-storage-fundamentals
 metadata:
   title: Explore Azure Storage services
   description: "Learn about the different storage options that are available in Azure Storage. Prepare for AZ-900."
-  ms.date: 05/11/2021
+  ms.date: 01/19/2023
   author: wwlpublish
-  ms.author: rknapp
+  ms.author: robbarefoot
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Explore Azure Storage services

@@ -31,7 +31,7 @@ As part of the resource creation, these resources are created for you:
 
     |Subnode|Purpose|
     |--|--|
-    |Application settings|Environment variables as name/value pairs. <br><br>Expand this node and notice the `APPINSIGHTS_INSTRUMENTATIONKEY` key stored as the Application Insights key. This key is useful when you add custom logging with the `applicationinsights` npm package.<br><br> Notice that `SCM_DO_BUILD_DURING_DEPLOYMENT` is created and set to true. This setting allows your Linux or Node.js deployment to install npm dependencies.|
+    |Application settings|Environment variables as name/value pairs. <br><br>Expand this node and notice the `APPINSIGHTS_INSTRUMENTATIONKEY` key stored as the Application Insights key. This key is useful when you add custom logging with the `applicationinsights` npm package.<br><br> Notice that `SCM_DO_BUILD_DURING_DEPLOYMENT` is created and set to *true*. This setting allows your Linux or Node.js deployment to install npm dependencies.|
     |Databases|If you create your database at the same time as you create your web app, the database is listed here. *This feature isn't used in this module.*|
     |Deployments|Shows a list of deployments. Deployments are covered in the next exercise of this module.|
     |Files| Files deployed to your resource. Before you deploy your app, the `hostingstart.html` file is returned for any requests.|

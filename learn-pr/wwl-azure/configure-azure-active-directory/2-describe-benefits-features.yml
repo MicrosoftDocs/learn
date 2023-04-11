@@ -4,13 +4,11 @@ title: Describe Azure Active Directory benefits and features
 metadata:
   title: Describe Azure Active Directory benefits and features
   description: "Describe Azure Active Directory benefits and features"
-  ms.date: 11/01/2022
+  ms.date: 03/29/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/2-describe-benefits-features.md)]

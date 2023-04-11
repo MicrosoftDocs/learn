@@ -1,8 +1,8 @@
-Mara now has a copy of the *Space Game* code on her local machine. She's going to build it using Microsoft Azure Pipelines instead of the existing Ubuntu 20.04 build server. Before she can do that, she needs to think about the existing build scripts. Follow along as she maps the existing scripts to Azure Pipelines tasks. Think about how you can do the same with your own build process.
+Mara now has a copy of the *Space Game* code. She's going to build it using Microsoft Azure Pipelines instead of the existing Ubuntu 22.04 build server. Before she can do that, she needs to think about the existing build scripts. Follow along as she maps the existing scripts to Azure Pipelines tasks. Think about how you can do the same with your own build process.
 
 Here are some notes that Mara collected when she talked to Andy, the dev lead:
 
-* The build machine is running Ubuntu 20.04.
+* The build machine is running Ubuntu 22.04.
 * The build machine includes build tools like:
   * npm, the package manager for Node.js
   * NuGet, the package manager for .NET
@@ -128,9 +128,9 @@ To define her build, Mara chooses to use Visual Studio Code to create a YAML fil
 
 Now, you'll follow along as Mara maps commands from her script to Azure Pipelines tasks.
 
-To map each command, Mara refers to the [reference documentation](/azure/devops/pipelines/tasks/?azure-portal=true). The documentation categorizes tasks by function, like build or deploy.
+To map each command, Mara refers to the [reference documentation](/azure/devops/pipelines/tasks/reference). The documentation categorizes tasks by function, like build or deploy.
 
-For example, the [.NET Core CLI task](/azure/devops/pipelines/tasks/build/dotnet-core-cli?azure-portal=true) `DotNetCoreCLI@2` helps you run `dotnet` commands.
+For example, the [.NET Core CLI task](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2) `DotNetCoreCLI@2` helps you run `dotnet` commands.
 
 This table associates the script commands with the new Azure Pipelines tasks:
 

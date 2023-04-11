@@ -5,8 +5,8 @@ metadata:
   title: What is quantum-inspired optimization?
   description: Learn how adiabatic quantum algorithms can help solve many optimization problems.
   ms.date: 05/19/2020
-  author: KittyYeungQ
-  ms.author: kitty
+  author: bradben
+  ms.author: brbenefield
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

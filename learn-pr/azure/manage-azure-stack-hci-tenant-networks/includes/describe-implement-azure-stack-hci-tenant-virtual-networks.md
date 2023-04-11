@@ -1,14 +1,14 @@
-Although logical networks offer the flexibility of incorporating the VLAN-based approach into your Azure Stack HCI networking model, your primary objective is to make the most of SDN virtual networks, which eliminate dependencies on the existing VLANs. The resulting flexibility will accelerate the onboarding of new customers and simplify management of the underlying infrastructure. It will also help ensure the sufficient level of isolation and accommodate overlapping IP address ranges across multiple tenants.
+Although logical networks offer the flexibility of incorporating the VLAN-based approach into your Azure Stack HCI networking model, your primary objective is to make the most of SDN virtual networks, which eliminate dependencies on the existing VLANs. The resulting flexibility will accelerate the onboarding of new customers and simplify management of the underlying infrastructure. It'll also help ensure the sufficient level of isolation and accommodate overlapping IP address ranges across multiple tenants.
 
 ## Describe Azure Stack HCI tenant virtual networks
 
-Azure Stack HCI tenant virtual networks are based on programming policies for overlay virtual networks. Each virtual network forms an isolation boundary where VMs can only communicate with each other. Traditionally, this isolation would be enforced by using VLANs. With virtual networks, this is accomplished by using Network Virtualization using Generic Routing Encapsulation (NVGRE) or Virtual Extensible LAN (VXLAN) encapsulation. Both of these encapsulation technologies are capable of creating overlay networks with support for overlapping IP subnets between tenants.
+Azure Stack HCI tenant virtual networks are based on programming policies for overlay virtual networks. Each virtual network forms an isolation boundary, where VMs can only communicate with each other. Traditionally, this isolation would be enforced by using VLANs. With virtual networks, this is accomplished by using Network Virtualization using Generic Routing Encapsulation (NVGRE) or Virtual Extensible LAN (VXLAN) encapsulation. Both of these encapsulation technologies are capable of creating overlay networks with support for overlapping IP subnets between tenants.
 
 Each virtual network interface of a VM in a virtual network is associated with two IP addresses:
 
-- Customer Address. An IP address assigned to each VM by customers, based on their preferred IP addressing scheme. This allows customers to preserve their existing network configuration when deploying workloads into Azure Stack HCI. The Customer Address is visible to the operating system within the corresponding VM.
+- **Customer Address**: An IP address assigned to each VM by customers based on their preferred IP addressing scheme. This allows customers to preserve their existing network configuration when deploying workloads into Azure Stack HCI. The Customer Address is visible to the operating system within the corresponding VM.
 
-- Provider Address. An IP address assigned to Azure Stack HCI cluster nodes, based on their physical network infrastructure. Provider Addresses appear in network packets that are exchanged between the cluster nodes hosting the customers' VMs. The Provider Address is visible on the physical network, but not to customer VMs.
+- **Provider Address**: An IP address assigned to Azure Stack HCI cluster nodes based on their physical network infrastructure. Provider Addresses appear in network packets that are exchanged between the cluster nodes hosting the customers' VMs. The Provider Address is visible on the physical network, but not to customer VMs.
 
 Customer Addresses are part of the customer's network topology, which is virtualized and decoupled from the actual underlying physical network topology, and its addressing scheme is implemented by Provider Addresses.
 
@@ -30,7 +30,7 @@ The simplest method to create an Azure Stack HCI tenant virtual network relies o
 
 ## Configure Azure Stack HCI tenant virtual networks
 
-The following screenshot depicts some of the settings you can use to perform common Azure Stack HCI tenant virtual network configuration tasks such as:
+The following screenshot depicts some of the settings you can use to perform common Azure Stack HCI tenant virtual network configuration tasks, such as:
 
 - Updating virtual network address prefixes
 - Configuring virtual network peering
@@ -67,7 +67,7 @@ Peering introduces the following additional requirements and constraints:
 
 Peering has the following characteristics:
 
-- A peering is unidirectional. For peering to provide connectivity between two virtual networks, it’s necessary to create two peerings, one in each direction.
+- A peering is unidirectional. For peering to provide connectivity between two virtual networks, it’s necessary to create two peerings: one in each direction.
 - After you peer virtual networks, the resources in either virtual network can directly connect with resources in the peered virtual network.
 - Network latency between VMs in peered virtual networks is the same as the latency within a single virtual network.
 - Network throughput is based on the bandwidth allowed for the VM. There are no additional restrictions on bandwidth imposed by the peering.

@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-azure-lab-services.introduction
-title: Introduction
+title: "Let's get started!"
 metadata:
-  title: Introduction
+  title: "Let's get started"
   description: In this module, you'll learn about a business scenario that Azure Lab Services can help to solve.
   ms.date: 02/17/2022
   author: Mikejo5000

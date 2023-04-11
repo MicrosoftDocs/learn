@@ -1,4 +1,4 @@
-A Kusto query can be used to explore datasets and gain insights. Recall that we have a meteorological dataset and want to compare events to gain insights from this data. Here, you'll find out how many of a certain type of event occurred in a particular area.
+You can use a Kusto query to explore datasets and gain insights. Recall that we have a meteorological dataset and want to compare events to gain insights from this data. Here, you'll find out how many of a certain type of event occurred in a particular area.
 
 ## Use the `count` function
 

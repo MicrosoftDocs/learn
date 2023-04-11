@@ -1,21 +1,22 @@
 Before you can deploy your toy company's website by using a workflow, you need to enable your workflow to authenticate to Azure. In this exercise, you'll:
 
 > [!div class="checklist"]
-> * Create a resource group for your website.
-> * Create an Azure AD workload identity and grant it access to the resource group.
-> * Create GitHub secrets to prepare your workflow to use the workload identity.
+>
+> - Create a resource group for your website.
+> - Create an Azure AD workload identity and grant it access to the resource group.
+> - Create GitHub secrets to prepare your workflow to use the workload identity.
 
-This exercise requires that you have permissions to create applications in your Azure AD directory. If you can't meet this requirement with your current Azure account, you can get a [free trial](https://azure.microsoft.com/free/?azure-portal=true) and create a new Azure subscription and tenant.
+This exercise requires that you have permissions to create applications in your Azure AD directory. If you can't meet this requirement with your current Azure account, you can get a [free trial](https://azure.microsoft.com/free/) and create a new Azure subscription and tenant.
 
-[!include[](../../includes/cleanup-steps.md)]
+[!INCLUDE [](../../includes/cleanup-steps.md)]
 
 ## Sign in to Azure
 
 ::: zone pivot="cli"
 
-To work with workload identities in Azure, sign in to your Azure account from the Visual Studio Code terminal. Be sure that you've installed the [Azure CLI](/cli/azure/install-azure-cli?azure-portal=true) tools.
+To work with workload identities in Azure, sign in to your Azure account from the Visual Studio Code terminal. Be sure that you've installed the [Azure CLI](/cli/azure/install-azure-cli) tools.
 
-[!include[](../../includes/azure-exercise-terminal-cli.md)]
+[!INCLUDE [](../../includes/azure-exercise-terminal-cli.md)]
 
 ### Sign in to Azure by using the Azure CLI
 
@@ -31,9 +32,9 @@ To work with workload identities in Azure, sign in to your Azure account from th
 
 ::: zone pivot="powershell"
 
-To deploy this template to Azure, sign in to your Azure account from the Visual Studio Code terminal. Be sure that you've [installed Azure PowerShell](/powershell/azure/install-az-ps?azure-portal=true), and sign in to the same account that you used to activate the sandbox.
+To deploy this template to Azure, sign in to your Azure account from the Visual Studio Code terminal. Be sure that you've [installed Azure PowerShell](/powershell/azure/install-az-ps), and sign in to the same account that you used to activate the sandbox.
 
-[!include[](../../includes/azure-exercise-terminal-powershell.md)]
+[!INCLUDE [](../../includes/azure-exercise-terminal-powershell.md)]
 
 ### Sign in to Azure by using Azure PowerShell
 
@@ -54,14 +55,16 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
 
 ::: zone pivot="cli"
 
-1. Run the code below to define variables for your GitHub username and your repository name. Ensure that you replace `mygithubuser` with your GitHub username, which you noted in the previous exercise unit.
+To create the workload identity, the Azure CLI commands use `jq` to parse data from JSON output. If you don't have `jq` installed, you can use Bash in [Azure Cloud Shell](https://shell.azure.com/) to create the workload identity, resource group and role assignment, and prepare the GitHub secrets.
+
+1. Run the following code to define variables for your GitHub username and your repository name. Ensure that you replace `mygithubuser` with your GitHub username, which you noted in the previous exercise unit.
 
    ```bash
    githubOrganizationName='mygithubuser'
    githubRepositoryName='toy-website-workflow'
    ```
 
-1. Run the code below, which creates a workload identity and associates it with your GitHub repository:
+1. Run the following code, which creates a workload identity and associates it with your GitHub repository:
 
    ```bash
    applicationRegistrationDetails=$(az ad app create --display-name 'toy-website-workflow')
@@ -77,19 +80,19 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
 
 ::: zone pivot="powershell"
 
-1. Run the code below to define variables for your GitHub username and your repository name. Ensure that you replace `mygithubuser` with your GitHub username, which you noted in the previous exercise unit.
+1. Run the following code to define variables for your GitHub username and your repository name. Ensure that you replace `mygithubuser` with your GitHub username, which you noted in the previous exercise unit.
 
    ```azurepowershell
    $githubOrganizationName = 'mygithubuser'
    $githubRepositoryName = 'toy-website-workflow'
    ```
 
-1. Run the code below, which creates a workload identity and associates it with your GitHub repository:
+1. Run the following code, which creates a workload identity and associates it with your GitHub repository:
 
    ```azurepowershell
    $applicationRegistration = New-AzADApplication -DisplayName 'toy-website-workflow'
 
-   New-AzADAppFederatedIdentityCredential `
+   New-AzADAppFederatedCredential `
       -Name 'toy-website-workflow' `
       -ApplicationObjectId $applicationRegistration.Id `
       -Issuer 'https://token.actions.githubusercontent.com' `
@@ -140,7 +143,7 @@ Run the following code to show you the values you need to create as GitHub secre
 ::: zone pivot="cli"
 
 ```bash
-echo "AZURE_CLIENT_ID: $($applicationRegistration.AppId)"
+echo "AZURE_CLIENT_ID: $applicationRegistrationAppId"
 echo "AZURE_TENANT_ID: $(az account show --query tenantId --output tsv)"
 echo "AZURE_SUBSCRIPTION_ID: $(az account show --query id --output tsv)"
 ```
@@ -151,7 +154,7 @@ echo "AZURE_SUBSCRIPTION_ID: $(az account show --query id --output tsv)"
 
 ```azurepowershell
 $azureContext = Get-AzContext
-Write-Host "AZURE_CLIENT_ID: $($applicationRegistration.ApplicationId)"
+Write-Host "AZURE_CLIENT_ID: $($applicationRegistration.AppId)"
 Write-Host "AZURE_TENANT_ID: $($azureContext.Tenant.Id)"
 Write-Host "AZURE_SUBSCRIPTION_ID: $($azureContext.Subscription.Id)"
 ```
@@ -164,21 +167,21 @@ You've created a resource group and a workload identity. Next, create some secre
 
 1. In your browser, navigate to your GitHub repository.
 
-1. Select **Settings** > **Secrets** > **Actions**.
+1. Select **Settings** > **Secrets and variables** > **Actions**.
 
 1. Select **New repository secret**.
 
    :::image type="content" source="../../includes/media/github-create-repository-secret.png" alt-text="Screenshot of the GitHub interface showing the 'Secrets' page, with the 'Create repository secret' button highlighted." border="true":::
 
-1. Name the secret *AZURE_CLIENT_ID*.
+1. Name the secret _AZURE_CLIENT_ID_.
 
 1. In the **Value** field, paste the GUID from the first line of the terminal output. Don't include `AZURE_CLIENT_ID`, the colon, or any spaces in the value.
 
-1. Select **Add secret**. 
+1. Select **Add secret**.
 
    :::image type="content" source="../../includes/media/github-create-repository-secret-details.png" alt-text="Screenshot of the GitHub interface showing the 'New Secret' page, with the name and value completed and the 'Add secret' button highlighted." border="true":::
 
-1. Repeat the process to create the secrets for *AZURE_TENANT_ID* and *AZURE_SUBSCRIPTION_ID*, copying the values from the corresponding fields in the terminal output.
+1. Repeat the process to create the secrets for _AZURE_TENANT_ID_ and _AZURE_SUBSCRIPTION_ID_, copying the values from the corresponding fields in the terminal output.
 
 1. Verify that your list of secrets now shows all three secrets.
 

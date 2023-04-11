@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.load-data-into-relational-data-warehouse.load-slowly-changing-dimensions
+title: Load slowly changing dimensions
+metadata:
+  title: Load slowly changing dimensions
+  description: "Load slowly changing dimensions"
+  ms.date: 03/14/2023
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: synapse-analytics
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-load-slowly-changing-dimensions.md)]

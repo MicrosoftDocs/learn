@@ -3,7 +3,7 @@ uid: learn.wwl.examine-iot-edge-gateway-device-configuration
 metadata:
   title: Examine IoT Edge gateway device configuration
   description: "This module introduces you to the IoT Edge device gateway patterns, configuring support for downstream devices and device authentication, and details for configuring a transparent gateway device that has child devices."
-  ms.date: 07/18/2022
+  ms.date: 01/11/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial

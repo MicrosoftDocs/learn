@@ -2,8 +2,8 @@
 uid: learn.beginner-python
 metadata:
   title: Python for beginners
-  description: Learn the basics of python, including how to use Jupyter notebooks, create programs and projects, and work with strings, math, lists, loops, dictionaries, and functions.  
-  ms.date: 12/10/2021
+  description: Learn the basics of Python, including how to use Jupyter notebooks, create programs and projects, and work with strings, math, lists, loops, dictionaries, and functions.  
+  ms.date: 02/03/2023
   author: softchris
   ms.author: chnoring
   ms.custom: team=nextgen
@@ -14,7 +14,6 @@ summary: |
   Get started with Python! Learn how to create programs and projects in Python. Work with strings, lists, loops, dictionaries, and functions. 
   
   In this learning path, you'll:
-    - Get familiar with Jupyter notebooks
     - Write your first program in Python
     - Explore packages to better manage projects
     - Learn Python basics, including the following elements:
@@ -26,7 +25,8 @@ summary: |
       - Dictionaries
       - Functions
       - Error checking 
- 
+    - Get familiar with Jupyter notebooks
+
 prerequisites: |
   None
 iconUrl: /training/achievements/beginner-python.svg
@@ -36,11 +36,11 @@ roles:
 - developer
 - student
 products:
+- azure
 - vs-code
 subjects:
 - development-tools
 modules:
-- learn.beginner-python.create-run-jupyter-notebook
 - learn.languages.python-install-vscode
 - learn.beginner-python.create-run-program
 - learn.beginner-python.create-manage-projects
@@ -52,5 +52,6 @@ modules:
 - learn.beginner-python.python-dictionaries
 - learn.beginner-python.functions-python
 - learn.beginner-python.python-error-handling
+- learn.beginner-python.create-run-jupyter-notebook
 trophy:
   uid: learn.beginner-python.trophy

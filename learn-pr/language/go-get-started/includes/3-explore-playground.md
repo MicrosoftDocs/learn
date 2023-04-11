@@ -1,7 +1,7 @@
 You can use the [Go Playground][GoPlay] to run Go code inside a sandbox environment. The tool is most often used to share code snippets with other developers in forums.
 
-> [!Important]
-> Feel free to use the Go Playground for learning purposes. 
+> [!IMPORTANT]
+> Feel free to use the Go Playground for learning purposes.
 > For more complex development, we recommend you install Go locally. Use an integrated development environment (IDE) to improve your development productivity.
 
 The Go Playground has some limitations that can affect your learning journey:
@@ -12,8 +12,7 @@ The Go Playground has some limitations that can affect your learning journey:
 
 To begin using the Go Playground, select the **Run** button.
 
-:::image type="content" source="../media/go-playground.jpg" alt-text="Screenshot of the Go Playground.":::
-
+:::image type="content" source="../media/go-playground.png" alt-text="Screenshot of the Go Playground.":::
 
 <!-- Links -->
 [GoPlay]: https://play.golang.org/?azure-portal=true

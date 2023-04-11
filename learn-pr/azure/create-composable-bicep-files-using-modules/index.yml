@@ -4,11 +4,12 @@ metadata:
   moduleType: standard
   title: Create composable Bicep files by using modules
   description: Build Bicep modules that are reusable, flexible, and shareable. Add parameters, conditions, and outputs to make your modules composable into templates.
-  ms.date: 09/09/2022
+  ms.date: 03/27/2023
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: engagement-fy23
 title: Create composable Bicep files by using modules
 summary: Design and build reusable modules to simplify your Bicep templates. Compose multiple modules into templates by using parameters and outputs.
 abstract: |
@@ -23,9 +24,9 @@ prerequisites: |
   - Azure, including the Azure portal, subscriptions, resource groups, and resources.
 
   To work through the exercises, you'll also need the following installed locally:
-  
-  - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
-  - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep&azure-portal=true)
+
+  - [Visual Studio Code](https://code.visualstudio.com)
+  - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep)
   - The latest [Azure CLI](/cli/azure/install-azure-cli) tools *or* the latest [Azure PowerShell](/powershell/azure/install-az-ps) version
 iconUrl: /training/achievements/bicep/create-composable-bicep-files-using-modules.svg
 levels:

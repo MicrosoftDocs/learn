@@ -1,146 +1,29 @@
-When you create a virtual network gateway, you need to specify the gateway SKU that you want to use. Select the SKU that satisfies your requirements based on the types of workloads, throughputs, features, and SLAs.
 
-Here are some samples of the available Gateway SKUs. Be sure to always [consult the documentation](/azure/vpn-gateway/vpn-gateway-about-vpngateways) for the latest information. 
+When you create a virtual network gateway, you need to specify the gateway SKU to use. Select a SKU that meets your business requirements. Consider criteria such as the types of workloads you need to support, your expected throughputs, the necessary features, and your desired SLAs.
 
-:::row:::
-  :::column:::
-    **Gen**
-  :::column-end:::
-  :::column:::
-    **SKU**
-  :::column-end:::
-  :::column:::
-    **S2S/VNet-to-VNet Tunnels**
-  :::column-end:::
-  :::column:::
-    **P2S IKEv2 Connections**
-  :::column-end:::
-  :::column:::
-    **Aggregate Throughput Benchmark**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    1
-  :::column-end:::
-  :::column:::
-    VpnGw1/Az
-  :::column-end:::
-  :::column:::
-    Max. 30
-  :::column-end:::
-  :::column:::
-    Max. 250
-  :::column-end:::
-  :::column:::
-    650 Mbps
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    1
-  :::column-end:::
-  :::column:::
-    VpnGw2/Az
-  :::column-end:::
-  :::column:::
-    Max. 30
-  :::column-end:::
-  :::column:::
-    Max. 500
-  :::column-end:::
-  :::column:::
-    1.0 Gbps
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    2
-  :::column-end:::
-  :::column:::
-    VpnGw2/Az
-  :::column-end:::
-  :::column:::
-    Max. 30
-  :::column-end:::
-  :::column:::
-    Max. 500
-  :::column-end:::
-  :::column:::
-    1.25 Gbps
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    1
-  :::column-end:::
-  :::column:::
-    VPNGw3/Az
-  :::column-end:::
-  :::column:::
-    Max. 30
-  :::column-end:::
-  :::column:::
-    Max. 1000
-  :::column-end:::
-  :::column:::
-    1.25 Gbps
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    2
-  :::column-end:::
-  :::column:::
-    VPNGw3/Az
-  :::column-end:::
-  :::column:::
-    Max. 30
-  :::column-end:::
-  :::column:::
-    Max. 1000
-  :::column-end:::
-  :::column:::
-    2.5 Gbps
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    2
-  :::column-end:::
-  :::column:::
-    VPNGw4/Az
-  :::column-end:::
-  :::column:::
-    Max. 100
-  :::column-end:::
-  :::column:::
-    Max. 5000
-  :::column-end:::
-  :::column:::
-    5.0 Gbps
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    2
-  :::column-end:::
-  :::column:::
-    VPNGw5/Az
-  :::column-end:::
-  :::column:::
-    Max. 100
-  :::column-end:::
-  :::column:::
-    Max. 10000
-  :::column-end:::
-  :::column:::
-    10.0 Gbps
-  :::column-end:::
-:::row-end:::
+The following tables provide sample gateway SKUs that are available for implementation. Because the Basic SKU is considered a legacy SKU, samples aren't shown for this option. The tables identify the following information for each SKU type and generation:
 
+- **Tunnels**: The maximum number of site-to-site (S2S) and Net-to-VNet tunnels that can be created for the SKU. 
 
-Aggregate Throughput Benchmark is based on measurements of multiple tunnels aggregated through a single gateway. The Aggregate Throughput Benchmark for a VPN Gateway is S2S + P2S combined. The Aggregate Throughput Benchmark is not a guaranteed throughput due to Internet traffic conditions and your application behaviors.
+- **Connections**: The maximum number of point-to-site (P2S) IKEv2 connections that can be created for the SKU.
 
-> [!NOTE]
-> The Basic SKU (not shown) is considered a legacy SKU.
+- **Aggregate Throughput Benchmark**: The benchmark is based on measurements of multiple VPN tunnels aggregated through a single gateway. The Aggregate Throughput Benchmark for a VPN gateway is S2S + P2S combined. The Aggregate Throughput Benchmark isn't a guaranteed throughput due to internet traffic conditions and your application behavior.
+
+For the most current SKU information, consult the [Azure VPN Gateway documentation](/azure/vpn-gateway/vpn-gateway-about-vpngateways). 
+
+### Generation1
+
+| SKU | Tunnels | Connections | Benchmark | 
+| --- | --- | --- | --- |
+| VpnGw1/Az | Max. 30| Max. 250| 650 Mbps |
+| VpnGw2/Az | Max. 30 | Max. 500 | 1.0 Gbps |
+| VPNGw3/Az | Max. 30 | Max. 1000 | 1.25 Gbps |
+
+### Generation2
+
+| SKU | Tunnels | Connections | Benchmark | 
+| --- | --- | --- | --- |
+| VpnGw2/Az | Max. 30 | Max. 500 | 1.25 Gbps |
+| VPNGw3/Az | Max. 30 | Max. 1000 | 2.5 Gbps |
+| VPNGw4/Az | Max. 100 | Max. 5000 | 5.0 Gbps |
+| VPNGw5/Az | Max. 100 | Max. 10000 | 10.0 Gbps |

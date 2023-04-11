@@ -11,17 +11,17 @@ To create the transfer method, you should keep these points in mind:
 
 ## Modify the statement endpoint to return a JSON object
 
-At this point, the `/statement` endpoint returns a string that won't be useful if you want to expose it as an API. Modify the endpoint to return the account object in a JSON format:
+Currently, your `/statement` endpoint returns a string that won't be useful if you want to expose it as an API. Modify the endpoint to return the account object in a JSON format:
 
 ```output
 "{\"Name\":\"John\",\"Address\":\"Los Angeles, California\",\"Phone\":\"(213) 555 0147\",\"Number\":1001,\"Balance\":0}"
 ```
 
-We'd like you to make this change expecting that anyone who uses your core package might want to implement a different statement method to change the output. So you need to make the proper changes to make your core package extensible. In other words, you need to:
+We'd like you to assume that anyone who uses your core package might want to implement a different statement method to change the output. So you need to make the proper changes to make your core package extensible. In other words, you need to:
 
 1. Create an interface with a `Statement() string` function.
-1. Create a new `Statement()` function in your core package that receives the interface that you created as a parameter. This function should call the `Statement()` method that your structures already have. 
-   
-   When you do this, you'll be allowed to create your custom `Account` structure and your custom `Statement()` method. To remember how to do this, you can go back to the module about structures (embedding) and interfaces.
+1. Create a new `Statement()` function in your core package that receives the interface that you created as a parameter. This function should call the `Statement()` method that your structures already have.
+
+   When you make these changes, you'll be allowed to create your custom `Account` structure and your custom `Statement()` method. To remember how to make these coding changes, you can go back to the module about structures (embedding) and interfaces.
 
 Happy coding!

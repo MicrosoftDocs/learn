@@ -52,6 +52,6 @@ You've reviewed the different options for implementing replication. Data redunda
 
 - **Consider zone-redundant storage**. Choose ZRS for excellent performance, low latency, and resiliency for your data if it becomes temporarily unavailable. Keep in mind that ZRS by itself might not protect your data against a regional disaster where multiple zones are permanently affected.
 
-- **Consider secondary regions**. Outline business scenarios where Tailwind Traders data should be replicated to a second region. Ideally, you should configure your secondary regions in geographic locations that are distant to the primary region. A geographically diverse configuration helps to protect against regional disasters.
+- **Consider secondary regions**. For applications requiring high durability, you can choose to additionally copy the data in your storage account to a secondary region that is hundreds of miles away from the primary region. If your storage account is copied to a secondary region, then your data is durable even in the case of a complete regional outage or a disaster in which the primary region isn't recoverable.
 
 - **Consider read access requirements**. Identify Tailwind Traders applications that require read access to the replicated data in the secondary region, if the primary region becomes unavailable for any reason. Configure your storage account with read access to the secondary region. Your applications can seamlessly shift to reading data from the secondary region if the primary region becomes unavailable.

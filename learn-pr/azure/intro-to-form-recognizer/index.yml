@@ -3,9 +3,10 @@ uid: learn.azure.intro-to-form-recognizer
 metadata:
   title: Introduction to Form Recognizer
   description: Form Recognizer enables automated data identification and extraction from your documents. 
-  ms.date: 03/14/2021
+  ms.date: 03/14/2023
   author: laujan
   ms.author: lajanuar
+  manager: nitinme
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Form Recognizer 

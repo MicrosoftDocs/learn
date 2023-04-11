@@ -11,4 +11,4 @@ When a user contacts support with a technical issue with Intune, the help desk o
 - Device not getting VPN or Wi-Fi settings
 - App installation failure
 
-[ ![Screenshot of Intune Troublehooting workload in Microsoft Endpoint Manager.](../media/intro-to-endpoint-manager-29.png) ](../media/intro-to-endpoint-manager-29.png#lightbox)
+[ ![Screenshot of Intune Troublehooting workload in Microsoft Intune.](../media/intro-to-endpoint-manager-29.png) ](../media/intro-to-endpoint-manager-29.png#lightbox)

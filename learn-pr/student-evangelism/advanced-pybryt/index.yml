@@ -3,7 +3,7 @@ uid: learn.advanced-pybryt
 metadata:
   title: Advanced PyBryt for Classroom Auto-assessment
   description: Learn advanced patterns in auto-assessment with PyBryt.
-  ms.date: 1/10/2022
+  ms.date: 03/30/2023
   author: chrispyles
   ms.author: leestott
   ms.topic: interactive-tutorial
@@ -13,7 +13,7 @@ summary: Learn advanced patterns in PyBryt, an open-source auto-assessment tool 
 abstract: |
   In this module you will:
   - Learn how to customize how annotations are tracked and grouped
-  - Understand the concept of relational annotations and how to create and leverage them
+  - Understand the concept of relational annotations and how to create and use them
   - Create scaffold for checking the complexity of student code
   - Explore different options for creating a grading pipeline that uses PyBryt
 iconUrl: /training/achievements/student-evangelism/advanced-pybryt.svg
@@ -25,7 +25,7 @@ roles:
   - higher-ed-educator
   - school-leader
 products:
-  - vs-code
+  - azure
 prerequisites: |
   - Basic Python knowledge
   - Basic understanding of PyBryt annotations and reference implementations

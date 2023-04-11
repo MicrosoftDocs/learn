@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.guided-project-calculate-final-gpa
+metadata:
+  title: Guided project - Calculate final GPA
+  description: "Guided project - Calculate final GPA"
+  ms.date: 03/30/2023
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Guided project - Calculate final GPA
+summary: Gain experience developing an application that will calculate and display results based on given data.
+abstract: |
+  After you complete this module, you'll be able to:
+  * Learn to develop basic applications by breaking down the work into smaller parts
+  * Identify appropriate data types for storing and working with variables
+  * Perform mathematical operations to determine results
+  * Apply formatting techniques to display output
+prerequisites: |
+  * Beginner level experience with basic C# syntax rules
+  * Beginner level experience with displaying a message to a console using the Console.WriteLine() and Console.Write() methods
+  * Beginner level experience with creating literal values and declare variables of basic data types like string, int, and decimal
+  * Beginner level experience with string concatenation and string interpolation
+  * Beginner level experience with performing basic operations on numbers
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- dotnet
+- vs-code
+subjects:
+- development-tools
+units:
+- learn.wwl.guided-project-calculate-final-gpa.introduction
+- learn.wwl.guided-project-calculate-final-gpa.prepare
+- learn.wwl.guided-project-calculate-final-gpa.exercise-store-data
+- learn.wwl.guided-project-calculate-final-gpa.exercise-calculate-sum
+- learn.wwl.guided-project-calculate-final-gpa.exercise-format-decimal-output
+- learn.wwl.guided-project-calculate-final-gpa.exercise-format-strings
+- learn.wwl.guided-project-calculate-final-gpa.knowledge-check
+- learn.wwl.guided-project-calculate-final-gpa.summary
+badge:
+  uid: learn.wwl.guided-project-calculate-final-gpa.badge

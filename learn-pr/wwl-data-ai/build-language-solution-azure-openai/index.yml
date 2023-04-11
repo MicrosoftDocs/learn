@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.build-language-solution-azure-openai
+metadata:
+  title: Build natural language solutions with Azure OpenAI Service
+  description: "Learn how to integrate language understanding and prompt completions from Azure OpenAI into your app."
+  ms.date: 4/5/2023
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+title: Build natural language solutions with Azure OpenAI Service
+summary: This module provides engineers with the skills to begin building apps that integrate with the Azure OpenAI Service.
+abstract: |
+  By the end of this module, you'll be able to:
+    - Integrate Azure OpenAI into your application
+    - Differentiate between different endpoints available to your application
+    - Generate completions to prompts using the REST API and language specific SDKs
+prerequisites: |
+  - Familiarity with Azure and the Azure portal.
+  - An understanding of generative AI. You can learn more with [Introduction to Azure OpenAI Service](/training/modules/explore-azure-openai/).
+  - Experience programming with C# or Python.
+  If you have no previous programming experience, we recommend you complete the [Take your first steps with C#](/training/paths/csharp-first-steps/) or [Take your first steps with Python](/training/paths/python-first-steps/) learning path before starting this one.
+iconUrl: /learn/achievements/generic-badge.svg
+levels: 
+  - intermediate
+roles: 
+  - ai-engineer
+  - developer
+  - solution-architect
+  - student
+products: 
+  - azure-openai
+  - azure
+subjects: 
+  - cloud-computing
+  - data-ai
+units:
+- learn.wwl.build-language-solution-azure-openai.introduction
+- learn.wwl.build-language-solution-azure-openai.integrate-azure-openai-into-app
+- learn.wwl.build-language-solution-azure-openai.use-openai-rest
+- learn.wwl.build-language-solution-azure-openai.use-openai-sdk
+- learn.wwl.build-language-solution-azure-openai.exercise
+- learn.wwl.build-language-solution-azure-openai.knowledge-check
+- learn.wwl.build-language-solution-azure-openai.summary
+badge:
+  uid: learn.wwl.build-language-solution-azure-openai.badge

@@ -5,14 +5,15 @@ Before you start to publish your toy company's reusable Bicep code, you need to 
 To meet these objectives, you'll:
 
 > [!div class="checklist"]
-> * Set up a GitHub repository for this module.
-> * Clone the repository to your computer.
-> * Create a resource group in Azure.
-> * Create a secret in GitHub.
+>
+> - Set up a GitHub repository for this module.
+> - Clone the repository to your computer.
+> - Create a resource group in Azure.
+> - Create a secret in GitHub.
 
 ## Get the GitHub repository
 
-Here, you create a new GitHub repository based on a template repository. The template repository contains the files that you need to get started for this module. 
+Here, you create a new GitHub repository based on a template repository. The template repository contains the files that you need to get started for this module.
 
 The modules in this learning path are part of a progression. For learning purposes, each module has an associated GitHub template repository.
 
@@ -24,35 +25,37 @@ The modules in this learning path are part of a progression. For learning purpos
 Run a template that sets up your GitHub repository.
 
 > [!div class="nextstepaction"]
-> [Run the template](https://github.com/MicrosoftDocs/mslearn-publish-reusable-bicep-code-using-github-actions?azure-portal=true)
+>
+> [Run the template](https://github.com/MicrosoftDocs/mslearn-publish-reusable-bicep-code-using-github-actions)
 
 On the GitHub site, follow these steps to create a repository from the template:
 
-1. Select **Use this template**. 
+1. Select **Use this template** > **Create a new repository**.
 
    :::image type="content" source="../media/3-template.png" alt-text="Screenshot of the GitHub interface that shows the template repo, with the button for using the template highlighted.":::
 
-1. Enter a name for your new project, such as **toy-reusable**.
+1. For **Owner** select your GitHub account.
+1. Enter a **Repository name** for your new project, such as _toy-reusable_.
 
 1. Select the **Public** option.
 
    When you create your own repositories, you might want to make them private. In this module, you'll use features of GitHub that only work with public repositories and with GitHub Enterprise accounts.
 
-1. Select **Create repository from template**. 
+1. Select **Create repository from template**.
 
    :::image type="content" source="../media/3-repo-settings.png" alt-text="Screenshot of the GitHub interface that shows the repo creation page.":::
 
-[!include[](../../includes/cleanup-steps.md)]
+[!INCLUDE [](../../includes/cleanup-steps.md)]
 
 ## Clone the repository
 
-Now that you have a copy of the template repository in your own account, you'll clone this repository locally so you can start working in it. 
+Now that you have a copy of the template repository in your own account, you'll clone this repository locally so you can start working in it.
 
 1. Select **Code** and select the copy icon.
 
    :::image type="content" source="../media/3-github-repository-clipboard.png" alt-text="Screenshot of the GitHub interface that shows the new repository, with the repository U R L copy button highlighted.":::
 
-1. Open Visual Studio Code. 
+1. Open Visual Studio Code.
 
 1. Open a Visual Studio Code terminal window by selecting **Terminal** > **New Terminal**. The window usually opens at the bottom of the screen.
 
@@ -78,9 +81,9 @@ Now that you have a copy of the template repository in your own account, you'll 
 
 ::: zone pivot="cli"
 
-To work with resource groups in Azure, sign in to your Azure account from the Visual Studio Code terminal. Be sure that you've installed the [Azure CLI](/cli/azure/install-azure-cli?azure-portal=true) tools.
+To work with resource groups in Azure, sign in to your Azure account from the Visual Studio Code terminal. Be sure that you've installed the [Azure CLI](/cli/azure/install-azure-cli) tools.
 
-[!include[](../../includes/azure-exercise-terminal-cli.md)]
+[!INCLUDE [](../../includes/azure-exercise-terminal-cli.md)]
 
 ### Sign in to Azure by using the Azure CLI
 
@@ -96,9 +99,9 @@ To work with resource groups in Azure, sign in to your Azure account from the Vi
 
 ::: zone pivot="powershell"
 
-To work with resource groups in Azure, sign in to your Azure account from the Visual Studio Code terminal. Be sure that you've [installed Azure PowerShell](/powershell/azure/install-az-ps?azure-portal=true).
+To work with resource groups in Azure, sign in to your Azure account from the Visual Studio Code terminal. Be sure that you've [installed Azure PowerShell](/powershell/azure/install-az-ps).
 
-[!include[](../../includes/azure-exercise-terminal-powershell.md)]
+[!INCLUDE [](../../includes/azure-exercise-terminal-powershell.md)]
 
 ### Sign in to Azure by using Azure PowerShell
 
@@ -118,7 +121,9 @@ Next, create a workload identity in Azure AD for your deployment workflow.
 
 ::: zone pivot="cli"
 
-1. Run the code below to define variables for your GitHub username and your repository name. Ensure that you replace `mygithubuser` with your GitHub username, which you noted earlier in this exercise. Also ensure that you specify the correct GitHub repository name.
+To create the workload identities, the Azure CLI commands use `jq` to parse data from JSON output. If you don't have `jq` installed, you can use Bash in [Azure Cloud Shell](https://shell.azure.com/) to create the workload identity, resource group and role assignment, and prepare the GitHub secrets.
+
+1. Run the following code to define variables for your GitHub username and your repository name. Ensure that you replace `mygithubuser` with your GitHub username, which you noted earlier in this exercise. Also ensure that you specify the correct GitHub repository name.
 
    ```bash
    githubOrganizationName='mygithubuser'
@@ -141,7 +146,7 @@ Next, create a workload identity in Azure AD for your deployment workflow.
 
 ::: zone pivot="powershell"
 
-1. Run the code below to define variables for your GitHub username and your repository name. Ensure that you replace `mygithubuser` with your GitHub username, which you noted earlier in this exercise. Also ensure that you specify the correct GitHub repository name.
+1. Run the following code to define variables for your GitHub username and your repository name. Ensure that you replace `mygithubuser` with your GitHub username, which you noted earlier in this exercise. Also ensure that you specify the correct GitHub repository name.
 
    ```azurepowershell
    $githubOrganizationName = 'mygithubuser'
@@ -152,7 +157,7 @@ Next, create a workload identity in Azure AD for your deployment workflow.
 
    ```azurepowershell
    $applicationRegistration = New-AzADApplication -DisplayName 'toy-reusable'
-   New-AzADAppFederatedIdentityCredential `
+   New-AzADAppFederatedCredential `
       -Name 'toy-reusable-branch' `
       -ApplicationObjectId $applicationRegistration.Id `
       -Issuer 'https://token.actions.githubusercontent.com' `
@@ -168,33 +173,33 @@ Next, create a resource group for your website. This process also grants the wor
 
 ::: zone pivot="cli"
 
-1. Run the following Azure CLI commands in the Visual Studio Code terminal:
+Run the following Azure CLI commands in the Visual Studio Code terminal:
 
-   ```bash
-   resourceGroupResourceId=$(az group create --name ToyReusable --location westus3 --query id --output tsv)
+```bash
+resourceGroupResourceId=$(az group create --name ToyReusable --location westus3 --query id --output tsv)
 
-   az ad sp create --id $applicationRegistrationObjectId
-   az role assignment create \
-      --assignee $applicationRegistrationAppId \
-      --role Contributor \
-      --scope $resourceGroupResourceId
-   ```
+az ad sp create --id $applicationRegistrationObjectId
+az role assignment create \
+  --assignee $applicationRegistrationAppId \
+  --role Contributor \
+  --scope $resourceGroupResourceId
+```
 
 ::: zone-end
 
 ::: zone pivot="powershell"
 
-1. Run the following Azure PowerShell commands in the Visual Studio Code terminal:
+Run the following Azure PowerShell commands in the Visual Studio Code terminal:
 
-   ```azurepowershell
-   $resourceGroup = New-AzResourceGroup -Name ToyReusable -Location westus3
+```azurepowershell
+$resourceGroup = New-AzResourceGroup -Name ToyReusable -Location westus3
 
-   New-AzADServicePrincipal -AppId $applicationRegistration.AppId
-   New-AzRoleAssignment `
-      -ApplicationId $applicationRegistration.AppId `
-      -RoleDefinitionName Contributor `
-      -Scope $resourceGroup.ResourceId
-   ```
+New-AzADServicePrincipal -AppId $applicationRegistration.AppId
+New-AzRoleAssignment `
+  -ApplicationId $applicationRegistration.AppId `
+  -RoleDefinitionName Contributor `
+  -Scope $resourceGroup.ResourceId
+```
 
 ::: zone-end
 
@@ -223,27 +228,29 @@ Write-Host "AZURE_SUBSCRIPTION_ID: $($azureContext.Subscription.Id)"
 
 ::: zone-end
 
+Make a note of your application ID value for the _AZURE_CLIENT_ID_. You can use that value when you clean up resources when you're finished with this module.
+
 ## Create GitHub secrets
 
 You've created a workload identity, and a resource group that it can deploy to. Next, create secrets in GitHub Actions.
 
 1. In your browser, navigate to your GitHub repository.
 
-1. Select **Settings** > **Secrets** > **Actions**.
+1. Select **Settings** > **Secrets and variables** > **Actions**.
 
 1. Select **New repository secret**.
 
    :::image type="content" source="../../includes/media/github-create-repository-secret.png" alt-text="Screenshot of the GitHub interface showing the 'Secrets' page, with the 'Create repository secret' button highlighted." border="true":::
 
-1. Name the secret *AZURE_CLIENT_ID*.
+1. Name the secret _AZURE_CLIENT_ID_.
 
 1. In the **Value** field, paste the GUID from the first line of the terminal output. Don't include `AZURE_CLIENT_ID`, the colon, or any spaces in the value.
 
-1. Select **Add secret**. 
+1. Select **Add secret**.
 
    :::image type="content" source="../../includes/media/github-create-repository-secret-details.png" alt-text="Screenshot of the GitHub interface showing the 'New Secret' page, with the name and value completed and the 'Add secret' button highlighted." border="true":::
 
-1. Repeat the process to create the secrets for *AZURE_TENANT_ID* and *AZURE_SUBSCRIPTION_ID*, copying the values from the corresponding fields in the terminal output.
+1. Repeat the process to create the secrets for _AZURE_TENANT_ID_ and _AZURE_SUBSCRIPTION_ID_, copying the values from the corresponding fields in the terminal output.
 
 1. Verify that your list of secrets now shows all three secrets.
 

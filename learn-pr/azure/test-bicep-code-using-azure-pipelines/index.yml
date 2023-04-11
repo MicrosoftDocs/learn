@@ -25,14 +25,14 @@ prerequisites: |
   - Azure, including the Azure portal, subscriptions, resource groups, and resources.
   - Basic Git commands, including cloning, committing files, and pushing changes to Azure Repos.
   - Basic YAML pipelines in Azure Pipelines, including service connections.
-  
+
   To work through the exercises in the module, you'll need:
 
   - An Azure account, with the ability to create resource groups, Azure Active Directory applications, and service principals.
   - An Azure DevOps organization and account.
-  
+
   You'll also need the following installed locally:
-  
+
   - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
   - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep&azure-portal=true)
   - The [Azure Pipelines extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azure-devops.azure-pipelines)

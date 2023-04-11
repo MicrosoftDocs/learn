@@ -1,4 +1,4 @@
-In this exercise, we'll write our first line of F# code, which prints the message **Hello World** to the console.
+In this exercise, we write our first line of F# code, which prints the message **Hello World** to the console.
 
 ## Start F# Interactive
 
@@ -28,7 +28,7 @@ Add the following line of code next to the `>` character in the F# Interactive t
 printfn "Hello World!";;
 ```
 
-The code is evaluated and similar output is displayed on the console:
+The code is evaluated and similar output displays on the console:
 
 ```fsharp
 Hello World!

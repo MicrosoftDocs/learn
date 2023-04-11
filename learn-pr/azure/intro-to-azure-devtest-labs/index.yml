@@ -7,7 +7,8 @@ metadata:
   ms.date: 01/18/2022
   author: RoseHJM
   ms.author: rosemalcolm
-  ms.topic: interactive-tutorial
+  manager: jmartens
+  ms.topic: module-intro-to-product
   ms.prod: learning-azure
 title: Introduction to Azure DevTest Labs
 summary: Learn how to use Microsoft Azure DevTest Labs to quickly set up virtual computing environments for application development and testing.

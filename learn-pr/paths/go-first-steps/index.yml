@@ -31,7 +31,7 @@ roles:
 - developer
 - student
 products:
-- vs-code
+- azure
 modules:
 - learn.language.go-get-started
 - learn.language.go-variables-functions-packages

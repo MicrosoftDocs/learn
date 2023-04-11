@@ -4,7 +4,7 @@ During the early stages of the migration project, the IT Director requests that 
 
 In this unit, you'll see how to use the Data Migration Assistant and Database Migration Service together. They provide a way to move on-premises SQL Server databases efficiently to Azure.
 
-## Offline vs. online migration
+## Offline vs. Online migration
 
 The migration service provides two different ways to migrate SQL Server databases: offline migration or online migration. An offline migration requires shutting down the server at the start of the migration, which means downtime for the service. An online migration uses a continuous synchronization of live data, allowing a cutover to the Azure replica database at any time. The online option is the better of the two if you need to minimize downtime for your workload.
 
@@ -55,7 +55,7 @@ A Data Migration Assistant report looks like this:
 
 :::image type="content" source="../media/5-dma-assessment.png" alt-text="Screenshot of a sample Data Migration Assistant Report." loc-scope="azure-database-migration"::: <!-- no-loc -->
 
-### Migrate the schema by using the Data Migration Assistant
+### Migrate the schema using the Data Migration Assistant
 
 Each database has a schema that represents its entire structure. The schema defines the rules for how the data in it is organized and the relationships between data elements. You'll migrate the schema before you migrate all the data in the database. This creates an empty structure on the new Azure SQL database, and that structure matches that of the on-premises source database. Migrating the schema also validates the connectivity before you do the full data migration.
 

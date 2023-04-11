@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.modernize-aspnet-framework-to-core.5-exercise-upgrade-aspnet-app
 metadata:
-  title: Exercise - Upgrade an ASP.NET MVC application from .NET Framework to ASP.NET Core 
+  title: Exercise - Upgrade app to ASP.NET Core 
   description: Upgrade an ASP.NET MVC application from .NET Framework to ASP.NET Core.
   ms.date: 01/11/2022
   author: jongalloway
   ms.author: jogallow
   ms.topic: interactive-tutorial
-  ms.prod: learning-aspnetcore
-title: Exercise - Upgrade an ASP.NET MVC application from .NET Framework to ASP.NET Core 
+  ms.prod: aspnet-core
+title: Exercise - Upgrade app to ASP.NET Core
 durationInMinutes: 8
 content: |
   [!include[](includes/5-exercise-upgrade-aspnet-app.md)]

@@ -1,4 +1,5 @@
-Data Discovery &amp; Classification is built into Azure SQL Database. It provides advanced capabilities for discovering, classifying, labeling, and reporting the sensitive data in your databases.
+
+Data Discovery & Classification is built into Azure SQL Database. It provides advanced capabilities for discovering, classifying, labeling, and reporting the sensitive data in your databases.
 
 Your most sensitive data might include business, financial, healthcare, or personal information. Discovering and classifying this data can play a pivotal role in your organization's information-protection approach. It can serve as infrastructure for:
 
@@ -6,9 +7,9 @@ Your most sensitive data might include business, financial, healthcare, or perso
  -  Various security scenarios, such as monitoring (auditing) and alerting on anomalous access to sensitive data.
  -  Controlling access to and hardening the security of databases that contain highly sensitive data.
 
-Data Discovery &amp; Classification is part of the Advanced Data Security offering, which is a unified package for advanced SQL security capabilities. You can access and manage Data Discovery &amp; Classification via the central **SQL Advanced Data Security** section of the Azure portal.
+Data Discovery & Classification is part of the Advanced Data Security offering, which is a unified package for advanced SQL security capabilities. You can access and manage Data Discovery & Classification via the central **SQL Advanced Data Security** section of the Azure portal.
 
-:::image type="content" source="../media/az500-database-class-f12d2e6e.png" alt-text="Screenshot of the Discovery and Classification page with classificiation choices, like Confidential, shown.":::
+:::image type="content" source="../media/az500-database-class-f12d2e6e.png" alt-text="Screenshot of the Discovery and Classification page with classification choices, like Confidential, shown.":::
 
 
 Classifying your data and identifying your data protection needs helps you select the right cloud solution for your organization. Data classification enables organizations to find storage optimizations that might not be possible when all data is assigned the same value. Classifying (or categorizing) stored data by sensitivity and business impact helps organizations determine the risks associated with the data. After your data has been classified, organizations can manage their data in ways that reflect their internal value instead of treating all data the same way.
@@ -25,31 +26,10 @@ Regardless of whether data is structured or unstructured, it’s important for o
 
 Data encryption at rest is a mandatory step toward data privacy, compliance, and data sovereignty.
 
-:::row:::
-  :::column:::
-    **Best practice**
-  :::column-end:::
-  :::column:::
-    **Solution**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Apply disk encryption to help safeguard your data.
-  :::column-end:::
-  :::column:::
-    Use Microsoft Azure Disk Encryption, which enables IT administrators to encrypt both Windows infrastructure as a service (IaaS) and Linux IaaS virtual machine (VM) disks. Disk encryption combines the industry-standard BitLocker feature and the Linux DM-Crypt feature to provide volume encryption for the operating system (OS) and the data disks. ‎Azure Storage and Azure SQL Database encrypt data at rest by default, and many services offer encryption as an option. You can use Azure Key Vault to maintain control of keys that access and encrypt your data.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Use encryption to help mitigate risks related to unauthorized data access.
-  :::column-end:::
-  :::column:::
-    Encrypt your drives before you write sensitive data to them.
-  :::column-end:::
-:::row-end:::
-
+| **Best practice**                                                          | **Solution**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| -------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Apply disk encryption to help safeguard your data.                         | Use Microsoft Azure Disk Encryption, which enables IT administrators to encrypt both Windows infrastructure as a service (IaaS) and Linux IaaS virtual machine (VM) disks. Disk encryption combines the industry-standard BitLocker feature and the Linux DM-Crypt feature to provide volume encryption for the operating system (OS) and the data disks. ‎Azure Storage and Azure SQL Database encrypt data at rest by default, and many services offer encryption as an option. You can use Azure Key Vault to maintain control of keys that access and encrypt your data. |
+| Use encryption to help mitigate risks related to unauthorized data access. | Encrypt your drives before you write sensitive data to them.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 
 Organizations that don’t enforce data encryption are risk greater exposure to data-integrity issues. For example, unauthorized users or malicious hackers might steal data in compromised accounts or gain unauthorized access to data coded in Clear Format. To comply with industry regulations, companies also must prove that they are diligent and using correct security controls to enhance their data security.
 
@@ -61,47 +41,12 @@ For data moving between your on-premises infrastructure and Azure, consider appr
 
 The following table lists best practices specific to using Azure VPN Gateway, SSL/TLS, and HTTPS.
 
-:::row:::
-  :::column:::
-    **Best practice**
-  :::column-end:::
-  :::column:::
-    **Solution**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Secure access from multiple workstations located on-premises to an Azure virtual network
-  :::column-end:::
-  :::column:::
-    Use site-to-site VPN.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Secure access from an individual workstation located on-premises to an Azure virtual network
-  :::column-end:::
-  :::column:::
-    Use point-to-site VPN.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Move larger data sets over a dedicated high-speed wide area network (WAN) link
-  :::column-end:::
-  :::column:::
-    Use Azure ExpressRoute. If you choose to use ExpressRoute, you can also encrypt the data at the application level by using SSL/TLS or other protocols for added protection.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Interact with Azure Storage through the Azure portal
-  :::column-end:::
-  :::column:::
-    All transactions occur via HTTPS. You can also use Storage REST API over HTTPS to interact with Azure Storage and Azure SQL Database.
-  :::column-end:::
-:::row-end:::
-
+| **Best practice**                                                                            | **Solution**                                                                                                                                                                |
+| -------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Secure access from multiple workstations located on-premises to an Azure virtual network     | Use site-to-site VPN.                                                                                                                                                       |
+| Secure access from an individual workstation located on-premises to an Azure virtual network | Use point-to-site VPN.                                                                                                                                                      |
+| Move larger data sets over a dedicated high-speed wide area network (WAN) link               | Use Azure ExpressRoute. If you choose to use ExpressRoute, you can also encrypt the data at the application level by using SSL/TLS or other protocols for added protection. |
+| Interact with Azure Storage through the Azure portal                                         | All transactions occur via HTTPS. You can also use Storage REST API over HTTPS to interact with Azure Storage and Azure SQL Database.                                       |
 
 Organizations that fail to protect data in transit are more susceptible to man-in-the-middle attacks, eavesdropping, and session hijacking. These attacks can be the first step in gaining access to confidential data.
 

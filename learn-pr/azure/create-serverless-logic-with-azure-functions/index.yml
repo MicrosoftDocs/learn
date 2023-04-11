@@ -2,14 +2,14 @@
 uid: learn.create-serverless-logic-with-functions
 metadata:
   title: Create serverless logic with Azure Functions
-  description: Azure Functions allow you to host business logic that can be executed without managing or provisioning server infrastructure
-  ms.date: 02/16/2022
+  description: Azure Functions allows you to host business logic that can be executed without managing or provisioning server infrastructure
+  ms.date: 04/03/2023
   author: ggailey777
   ms.author: glenga
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Create serverless logic with Azure Functions
-summary: Azure Functions allow developers to host business logic that can be executed without managing or provisioning infrastructure. 
+summary: Azure Functions allows developers to host business logic that can be executed without managing or provisioning infrastructure. 
 abstract:  | 
   In this module, you will:
   - Decide if serverless computing is right for your business need
@@ -18,6 +18,7 @@ abstract:  |
   - Monitor and test your Azure Function from the Azure portal
 prerequisites: None
 iconUrl: /training/achievements/create-serverless-logic-with-azure-functions.svg
+hidden: true
 levels:
 - beginner
 roles:

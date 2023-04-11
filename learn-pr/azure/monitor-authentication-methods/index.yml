@@ -5,8 +5,8 @@ metadata:
   title: Monitor and report on authentication methods used in Azure AD                     
   description: "This module teaches you how to create an Azure AD workbook that helps you to create a report of the authentication methods used in your tenant."                        # Copy your 'apply' Learning Objective here (see below)
   ms.date: 07/21/2022                        
-  author: MarkusVi                 
-  ms.author: markvi                      
+  author: softchris
+  ms.author: chnoring                    
   ms.topic: interactive-tutorial            
   ms.prod: learning-azure                   
 title: Monitor and report on authentication methods used in Azure AD

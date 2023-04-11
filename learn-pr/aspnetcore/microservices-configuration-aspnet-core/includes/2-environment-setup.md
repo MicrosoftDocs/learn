@@ -5,7 +5,7 @@ In this unit, you'll use a script to deploy the existing *:::no-loc text="eShopO
 > [!NOTE]
 > If you wish to use GitHub Codespaces, navigate to [your codespaces for the MicrosoftDocs/mslearn-aspnet-core repository](https://github.com/MicrosoftDocs/mslearn-aspnet-core/codespaces). Create a new codespace using the `main` branch, and then skip to step 3.
 
-1. From a new Visual Studio Code window, press **Ctrl+Shift+P** to open the command palette, and then search for and select **Remote-Containers: Clone Repository in Container Volume**.
+1. From a new Visual Studio Code window, press **Ctrl+Shift+P** to open the command palette, and then search for and select **Dev Containers: Clone Repository in Container Volume**.
 
 1. Provide the following repository URL: `https://github.com/MicrosoftDocs/mslearn-aspnet-core`
 
@@ -50,4 +50,4 @@ The script deploys a modified version of the *:::no-loc text="eShopOnContainers"
 
 :::image type="content" source="../../media/microservices/eshop-architecture.png" alt-text="eShopOnContainers solution architecture diagram." border="true" lightbox="../../media/microservices/eshop-architecture.png":::
 
-This module focuses on implementing a configurable discount coupon feature in the *:::no-loc text="WebSPA":::* app. When the feature is disabled, the coupon service depicted in the preceding diagram isn't used. The deployment script takes several minutes to complete. While the script is running, continue to the next unit to review logging and monitoring concepts.
+This module focuses on implementing a configurable discount coupon feature in the *:::no-loc text="WebSPA":::* app. When the feature is disabled, the coupon service depicted in the preceding diagram isn't used. The deployment script takes several minutes to complete. While the script is running, continue to the next unit to review configuration concepts.

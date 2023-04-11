@@ -81,7 +81,7 @@ With Storage Spaces Direct, volumes allow you to group drives in the storage poo
 - **Resiliency type**. Volume resiliency is the primary mechanism that protects data residing in the storage pool against hardware issues, such as drive or server failures. The choice of resiliency type is workload-dependent.
   - Use mirroring for volumes that need to maximize performance for workloads that have strict latency requirements or that perform large amounts of mixed random IOPS, such as Microsoft SQL Server databases or performance-sensitive Hyper-V VMs.
   - Use dual-parity for volumes that need to maximize capacity efficiency and for workloads that have less demanding I/O requirements, such as file servers or Virtual Desktop Infrastructure (VDI).
-  - Use mirror-accelerated parity to balance performance and capacity fo workloads that perform large, sequential writes, such as backup software.
+  - Use mirror-accelerated parity to balance performance and capacity for workloads that perform large, sequential writes, such as backup software.
   - Use nested resiliency on two-server clusters that run production workloads to add resiliency to a drive failure that happens while one server is offline. You can use either nested mirroring or mirror-accelerated parity, depending on your workload.
 
 ### Plan for Azure Stack HCI host networking

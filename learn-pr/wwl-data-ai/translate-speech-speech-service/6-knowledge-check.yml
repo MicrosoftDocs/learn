@@ -4,12 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/30/2021
+  ms.date: 12/09/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 3
 quiz:
   questions:
@@ -35,7 +36,7 @@ quiz:
     - content: "SpeechSynthesizer"
       isCorrect: false
       explanation: "Incorrect. Use a TranslationRecognizer to call the Translation API of the Speech service."
-  - content: "When translating speech, in which cases can you can use the Synthesizing event to synthesize the translations and speech?"
+  - content: "When translating speech, in which cases can you use the Synthesizing event to synthesize the translations and speech?"
     choices:
     - content: "Only when translating to a single target language."
       isCorrect: true

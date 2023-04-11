@@ -1,21 +1,21 @@
 ### YamlMime:Module
 uid: learn.aspnetcore.build-web-api-minimal-api
 metadata:
-  title: Build a web API with minimal API, ASP.NET Core, and .NET 6
-  description: Learn how to build a web API by using .NET 6. You'll also learn how to set up different routes to handle both reading and writing.
-  ms.date: 10/26/2021
+  title: Build a web API with minimal API, ASP.NET Core, and .NET
+  description: Learn how to build a web API by using .NET. You'll also learn how to set up different routes to handle both reading and writing.
+  ms.date: 12/22/2022
   author: softchris
   ms.author: chnoring
   ms.custom: team=nextgen
   ms.topic: interactive-tutorial
-  ms.prod: learning-aspnetcore
-title: Build a web API with minimal API, ASP.NET Core, and .NET 6
-summary: Learn how to build a web API with minimal API and .NET 6.
+  ms.prod: aspnet-core
+title: Build a web API with minimal API, ASP.NET Core, and .NET
+summary: Learn how to build a web API with minimal API and .NET.
 abstract: |
   In this module, you will:
   - Distinguish between using a controller-based API and using a minimal API.
   - Create routes to handle reading and writing.
-  - Use features from .NET 6 to make your code as succinct as possible.
+  - Use features from .NET to make your code as succinct as possible.
 iconUrl: /training/achievements/build-web-api-minimal-api.svg
 levels:
   - beginner
@@ -23,13 +23,11 @@ roles:
   - developer
   - student
 products:
-  - vs
   - dotnet
-  - vs-code
   - aspnet-core
 prerequisites: |
   - Local installations of the [.NET SDK](https://dotnet.microsoft.com/download).
-  - Familiarity with .NET 6
+  - Familiarity with .NET
   - A basic understanding of what an API is
 subjects:
 - development-tools

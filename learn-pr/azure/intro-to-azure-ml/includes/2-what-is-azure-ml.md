@@ -16,21 +16,21 @@ Models can be created in Azure ML in several ways. Training can take place on a 
 
 ### Code with R and Python
 
-With the _Azure Machine Learning SDK for Python and R_, you can interact with the service from multiple environments—including Jupyter Notebooks. Notebooks provide a collaborative environment for runnable code, visualizations, and comments. Azure Machine Learning notebook widgets allow you to view a history of all your training, with run logs and a model repository that have previous versions of models created for easy tracking. The notebooks also include code completion aids and code snippet insertions to speed up your work, as seen in the example below.
+With the _Azure Machine Learning SDK for Python and R_, you can interact with the service from multiple environments—including Jupyter Notebooks. Notebooks provide a collaborative environment for runnable code, visualizations, and comments. Azure Machine Learning notebook widgets allow you to view a history of all your training, with run logs and a model repository that have previous versions of models created for easy tracking. The notebooks also include code completion aids and code snippet insertions to speed up your work, as seen in the following example.
 
 :::image type="content" source="../media/2-notebooks.gif" alt-text="azure ml notebooks example." lightbox="../media/2-notebooks.gif":::
 
 ### AutoML
 
-_Automated Machine Learning (AutoML)_ automates creating the best machine learning models, helping users find the best model for their data—no matter their data science expertise. **Specializing in classification, regression, and time-series forecasting,** AutoML experiments with different features, algorithms, and parameters depending on the task—then provides scores on models it thinks are the best fit. These models can then be exported to an ONNX format that can run on a variety of platforms and devices. AutoML’s versatility and speed mean it’s often used as a starting point by both experienced and novice data scientists.
+_Automated Machine Learning (AutoML)_ automates creating the best machine learning models, helping users find the best model for their data—no matter their data science expertise. **Specializing in classification, regression, and time-series forecasting,** AutoML experiments with different features, algorithms, and parameters depending on the task—then provides scores on models it thinks are the best fit. These models can then be exported to an ONNX format that can run on various platforms and devices. AutoML’s versatility and speed mean it’s often used as a starting point by both experienced and novice data scientists.
 
-In the image below, we can see an overview of the AutoML pipeline building and recommending a model.
+In the following image, we can see an overview of the AutoML pipeline building and recommending a model.
 
 ![azure automl pipeline](../media/2-pipeline.gif)
 
 ### Designer
 
-If you prefer a no-code option, _Azure ML Designer_ within the Azure ML studio gives you a **visual canvas with drag and drop controls to manipulate datasets and modules.** Modules within Azure ML Designer are algorithms that can have a range of purposes, from data ingress functions to training, scoring, and validation processes. These linked modules create effective ML pipelines to build, test, and deploy ML models, as seen in the example below.
+If you prefer a no-code option, _Azure ML Designer_ within the Azure ML studio gives you a **visual canvas with drag and drop controls to manipulate datasets and modules.** Modules within Azure ML Designer are algorithms that can have a range of purposes, from data ingress functions to training, scoring, and validation processes. These linked modules create effective ML pipelines to build, test, and deploy ML models, as seen in the following example.
 
 :::image type="content" source="../media/2-designer.gif" alt-text="azure ml designer example." lightbox="../media/2-designer.gif":::
 
@@ -44,7 +44,7 @@ With Azure ML, the time-intensive process of data preparation and ingestion can 
 
 ### Datastores and labeling
 
-Azure ML securely stores your raw data in the datastore, so you don’t have to rely on external sources for your scripts, and your training sets can be experimented upon without risking the integrity of the original raw data. Once stored, you can clean, transform, and label data to create training sets from the datastore. Azure ML offers tools to help label tabular, image, and text data—with built-in machine learning systems that can suggest labels or fully automate data labeling. The example below shows a human led multi-label classification project underway in the Azure ML studio.
+Azure ML securely stores your raw data in the datastore, so you don’t have to rely on external sources for your scripts, and your training sets can be experimented upon without risking the integrity of the original raw data. Once stored, you can clean, transform, and label data to create training sets from the datastore. Azure ML offers tools to help label tabular, image, and text data—with built-in machine learning systems that can suggest labels or fully automate data labeling. The following example shows a human led multi-label classification project underway in the Azure ML studio.
 
 :::image type="content" source="../media/2-human-labeling.gif" alt-text="multi-label classification in azure ml studio." lightbox="../media/2-human-labeling.gif":::
 

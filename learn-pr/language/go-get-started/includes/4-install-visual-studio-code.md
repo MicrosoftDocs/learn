@@ -52,9 +52,10 @@ From the *Applications* folder, double-click the Visual Studio Code icon to star
 
 > [!NOTE]
 > You might see a warning message that Visual Studio Code can't be opened because Apple can't check it for malicious software. If so, do the following:
+
 > 1. Select **OK** to dismiss the message. 
 > 1. In the *Applications* folder, right-click (or Control-click) the Visual Studio Code file, and then select **Open**.
-> 
+>
 > If you choose this option, Visual Studio Code should open without any further issues.
 
 You can install Visual Studio Code by using a package manager like [APT (Advanced Package Tool) or YUM (Yellowdog Updater, Modified)][APTYum].
@@ -82,8 +83,6 @@ Locate and open the file you downloaded. Follow the instructions to install the 
 When the installation is complete, open Visual Studio Code to confirm that it's working.
 ::: zone-end
 
-
-
 ## Install the Go extension for Visual Studio Code
 
 The Go extension for Visual Studio Code helps you write apps more efficiently. In the module exercises, you'll learn some benefits of using an IDE to write Go code.
@@ -108,7 +107,6 @@ The extension details are displayed at the right.
 Below the extension description, select the **Install** button to install it on your workstation. 
 
 When the installation is complete, the button label changes to **Uninstall**, which indicates that the extension has been installed successfully.
-
 
 <!-- Links -->
 [APTYUM]: https://code.visualstudio.com/docs/setup/linux?azure-portal=true

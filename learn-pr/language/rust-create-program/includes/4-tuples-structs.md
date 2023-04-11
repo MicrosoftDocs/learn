@@ -15,7 +15,7 @@ Here's an example of a tuple with three elements:
 let tuple_e = ('E', 5i32, true);
 ```
 
-The following table shows the value, data type, and index for each element in the tuple:
+The following table shows the index, value and data type for each element in the tuple:
 
 Element | Value | Data type
 ---|---|---

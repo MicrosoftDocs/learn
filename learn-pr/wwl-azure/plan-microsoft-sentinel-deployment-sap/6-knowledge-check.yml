@@ -4,13 +4,11 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/08/2022
+  ms.date: 11/29/2022
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/6-knowledge-check.md)]
@@ -47,17 +45,17 @@ quiz:
     - content: "They use workbooks, notebooks, and queries to hunt for threats in SAP deployments and combined signals."
       isCorrect: false
       explanation: "That is incorrect. They apply SAP change requests and create the role that allows the agent to connect to SAP."
-    - content: "They ensure that the events that are being monitored are the ones your organization cares the most about."
+    - content: "They ensure that the events that are being monitored are the ones the organization cares the most about."
       isCorrect: false
       explanation: "That is incorrect. They apply SAP change requests and create the role that allows the agent to connect to SAP."
   - content: "What are the primary activities when defining governance policies for the solution?"
     choices:
-    - content: "Map your architecture and decide where to deploy the data connector."
+    - content: "Map architecture and decide where to deploy the data connector."
       isCorrect: false
-      explanation: "That is incorrect. You commonly determine user access roles and data retention policies."
+      explanation: "That is incorrect. The primary activities are determining user access roles and data retention policies."
     - content: "Determine user access roles and data retention policies."
       isCorrect: true
       explanation: "That is correct. The primary activities are determining user access roles and data retention policies."
     - content: "Perform penetration testing to fine-tune rules and reduce false positives."
       isCorrect: false
-      explanation: "That is incorrect. You commonly determine user access roles and data retention policies."
+      explanation: "That is incorrect. The primary activities are determining user access roles and data retention policies."

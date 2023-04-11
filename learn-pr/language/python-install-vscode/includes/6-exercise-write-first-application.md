@@ -1,48 +1,85 @@
-With Python and Python tools installed, you can create your first Python application! In this exercise, you'll create an empty directory, open the directory in Visual Studio Code, and then create your first application.
+With Python and Python tools installed, you can create your first Python application! In this exercise, you'll create an empty folder, open the folder in Visual Studio Code, and then create your first application.
 
-## Step 1 - Create a directory for your code
+## Step 1 - Start VS Code in a project folder
 
-Many projects start with an empty directory, which is how you'll start yours.
+Many projects start with an empty folder, which is how you'll start yours.
 
-1. Open a terminal or command window (or return to the one you had open previously).
-
-1. Create a new directory, and open it in Visual Studio Code by running the following command sequence:
+1. Using a command prompt or terminal, create an empty folder called "hello-world", navigate into it, and open VS Code (code) in that folder (.) by entering the following commands:
 
     ::: zone pivot="windows"
 
-    ```bash
-    md hello-world
-    cd hello-world
-    code .
-    ```
+    1. Create a new folder called hello-world:
+
+       ```bash
+       md hello-world
+       ```
+
+    1. Navigate to the hello-world folder:
+
+       ```bash
+       cd hello-world
+       ```
+
+    1. Open Visual Studio Code in that folder:
+
+       ```bash
+       code .
+       ```
 
     ::: zone-end
 
     ::: zone pivot="linux"
 
-    ```bash
-    mkdir hello-world
-    cd hello-world
-    code .
-    ```
+    1. Create a new folder called hello-world:
+
+       ```bash
+       mkdir hello-world
+       ```
+
+    1. Navigate to the hello-world folder:
+
+       ```bash
+       cd hello-world
+       ```
+
+    1. Open Visual Studio Code in that folder:
+
+       ```bash
+       code .
+       ```
 
     ::: zone-end
 
     ::: zone pivot="macos"
 
-    ```bash
-    mkdir hello-world
-    cd hello-world
-    code .
-    ```
+    1. Create a new folder called hello-world:
+
+       ```bash
+       mkdir hello-world
+       ```
+
+    1. Navigate to the hello-world folder:
+
+       ```bash
+       cd hello-world
+       ```
+
+    1. Open Visual Studio Code in that folder:
+
+       ```bash
+       code .
+       ```
 
     ::: zone-end
 
+    > [!TIP]
+    > Open the command prompt or terminal as administrator to run `code .`
+
+    Alternatively, you can run VS Code through the operating system UI, then use File > Open Folder to open the project folder.
+
 ## Step 2 - Create a new Python file and add code
 
-With Visual Studio Code open to your empty folder, you'll now create a Python file to display the class message *Hello, World*.
-
-You may see a prompt you to install [Pylint](https://pypi.org/project/pylint/), which you can install by selecting **Install**. If Visual Studio Code doesn't automatically [detect a Python interpreter](https://code.visualstudio.com/docs/languages/python#_environments), you may be prompted [select one](https://code.visualstudio.com/docs/languages/python#_environments) by selecting the default option.
+With Visual Studio Code open to your empty folder, you'll now create a Python file to display the message *Hello, World*.
 
 1. In the **Explorer view**, HELLO_WORLD panel, hover over the title bar, and then select **New File**.
 
@@ -52,13 +89,15 @@ You may see a prompt you to install [Pylint](https://pypi.org/project/pylint/), 
 
     :::image type="content" source="../media/visual-studio-code-name-file.png" alt-text="Screenshot of Explorer window with hello.py entered for new file.":::
 
+   By using the `.py` file extension, you tell VS Code to interpret this file as a Python program, so that it evaluates the contents with the Python extension.
+
 1. Enter the following Python code in the editor panel. This command uses the `print` function to display the text *Hello, World!* when your application is run.
 
     ```python
     print('Hello, World!')
     ```
 
-1. Save the file by selecting **File** and **Save** <kbd>**Ctrl**+**S**</kbd>.
+1. Save the file by selecting **File** and **Save** (or <kbd>**Ctrl**+**S**</kbd>).
 
     :::image type="content" source="../media/visual-studio-code-save-file.png" alt-text="Screenshot of file menu with Save highlighted.":::
 
@@ -95,5 +134,7 @@ Since it's a single line program, you can actually run your application from ins
     ```
 
     ::: zone-end
+    
+    :::image type="content" source="../media/visual-studio-code-run-code.png" alt-text="Screenshot of running the Python code.":::
 
     *Hello, World!* appears in the terminal window. Congratulations! You've created a Python application!

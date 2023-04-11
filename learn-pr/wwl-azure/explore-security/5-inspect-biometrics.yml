@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-security.inspect-biometrics
+title: Inspect biometrics
+metadata:
+  title: Inspect biometrics
+  description: "The inspect biometrics unit discusses the impact that biometrics has in authentication as it relates to security in the broader module."
+  ms.date: 01/31/2023
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-inspect-biometrics.md)]

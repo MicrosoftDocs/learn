@@ -9,6 +9,6 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 6
+durationInMinutes: 5
 content: |
   [!include[](includes/4-menus.md)]

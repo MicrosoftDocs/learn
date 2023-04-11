@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.create-azure-active-directory-test-environment.exercise-set-up-azure-active-directory-test-environment
+title: Exercise - Set up a test environment in Azure Active Directory
+metadata:
+  title: exercise
+  description: Set up a test environment in a separate Azure Active Directory tenant.  Join the Microsoft 365 Developer Program or manually create a tenant. Create test users and an app registration for a web app.
+  ms.date: 03/24/2023
+  author: rwike77
+  ms.author: ryanwi
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 20
+content: |
+  [!include[](includes/3-exercise-set-up-azure-active-directory-test-environment.md)]

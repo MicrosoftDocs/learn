@@ -1,14 +1,15 @@
+
 ## Lab scenario
 
 Your organization is migrating network infrastructure and virtual machines to Azure. As the Azure Administrator you need to:
 
 + Configure Azure virtual networks and subnets.
-+ Connect remotely to Azure virtual machines using RDP.
++ Connect remotely to Azure virtual machines by using RDP.
 + Verify virtual machines in the same virtual network can communicate. 
 
 ## Architecture diagram
 
-:::image type="content" source="../media/create-network-architecture.png" alt-text="Diagram of the architecture as explained in the text.":::
+:::image type="content" source="../media/create-network-architecture.png" alt-text="Diagram of the architecture as explained in the text." border="false":::
 
 ## Objectives
 
@@ -26,6 +27,6 @@ Your organization is migrating network infrastructure and virtual machines to Az
     + Use Azure PowerShell to confirm **vm1** can ping **vm2**. 
 
 > [!NOTE]
-> Click on the thumbnail image to start the lab simulation. When you're done, be sure to return to this page so you can continue learning. 
+> Select the thumbnail image to start the lab simulation. When you're done, be sure to return to this page so you can continue learning. 
 
 [![Screenshot of the simulation page.](../media/simulation-create-networks.png)](https://mslearn.cloudguides.com/en-us/guides/AZ-900%20Exam%20Guide%20-%20Azure%20Fundamentals%20Exercise%204?azure-portal=true)

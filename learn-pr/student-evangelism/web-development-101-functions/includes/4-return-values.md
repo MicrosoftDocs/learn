@@ -1,6 +1,6 @@
-Up to this point, the functions you've built have output to the [console](https://developer.mozilla.org/docs/Web/API/console). This can be exactly what you're looking for, especially when you create functions that call other services. But what if you want to create a helper function to perform a calculation and then provide a value that you can use elsewhere?
+Up to this point, the functions you've built have output to the [console](https://developer.mozilla.org/docs/Web/API/console). This output can be exactly what you're looking for, especially when you create functions that call other services. But what if you want to create a helper function to perform a calculation and then provide a value that you can use elsewhere?
 
-You can do this by using a *return value*. A return value is returned by the function, and you can store it in a variable just as you can store a literal value, such as a string or number.
+You can create this function by using a *return value*. A return value is returned by the function, and you can store it in a variable just as you can store a literal value, such as a string or number.
 
 If a function should return something, you use the `return` keyword, usually followed by a value or a reference to what's being returned. However, you can also use `return` on its own to exit a function.
 
@@ -16,7 +16,7 @@ And here's how you'd use `return` on its own:
 return;
 ```
 
-Continuing from our earlier example, you could write a function to create a greeting message and then return the value back to the caller. Note that the `return` keyword stops the function from running and returns the specified value, if there is one. So you usually want to use `return` at the end of your function, like this:
+Continuing from our earlier example, you could write a function to create a greeting message and then return the value back to the caller. The `return` keyword stops the function from running and returns the specified value, if there's one. So you usually want to use `return` at the end of your function, like this:
 
 ```javascript
 function createGreetingMessage(name) {
@@ -28,7 +28,7 @@ function createGreetingMessage(name) {
 > [!NOTE] 
 > Variables that you define inside a function can't be accessed from anywhere outside the function. These variables are called *local variables*. Outside the function, they're considered *out of scope*.
 
-When you call this function, you store the value in a variable. You do this in much the same way as you would set a variable to a static value (for example, `let name = 'Christopher'`), like this:
+When you call this function, you store the value in a variable. You store the value in much the same way as you would set a variable to a static value (for example, `let name = 'Christopher'`), like this:
 
 ```javascript
 let greetingMessage = createGreetingMessage('Christopher');

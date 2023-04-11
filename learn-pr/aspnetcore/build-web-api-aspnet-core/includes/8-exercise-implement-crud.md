@@ -11,7 +11,7 @@ Replace the `// POST action` comment in *:::no-loc text="Controllers/PizzaContro
 public IActionResult Create(Pizza pizza)
 {            
     PizzaService.Add(pizza);
-    return CreatedAtAction(nameof(Create), new { id = pizza.Id }, pizza);
+    return CreatedAtAction(nameof(Get), new { id = pizza.Id }, pizza);
 }
 ```
 
@@ -106,10 +106,10 @@ Remember to save the *Controllers/PizzaController.cs* file before proceeding,
     Alternatively, run the following command at any time while `HttpRepl` is running:
 
     ```dotnetcli
-    (Disconnected)> connect https://localhost:{PORT}
+    connect https://localhost:{PORT}
     ```
 
-1.  Go to the `Pizza` endpoint by running the following command:
+1. Go to the `Pizza` endpoint by running the following command:
 
     ```dotnetcli
     cd Pizza
@@ -123,7 +123,7 @@ Remember to save the *Controllers/PizzaController.cs* file before proceeding,
 
     The preceding command shows an output of available APIs for the `Pizza` endpoint:
 
-    ```dotnetcli
+    ```output
         https://localhost:{PORT}/Pizza> ls
         .      [GET|POST]
         ..     []
@@ -138,7 +138,7 @@ Remember to save the *Controllers/PizzaController.cs* file before proceeding,
 
     The preceding command returns a list of all pizza:
 
-    ```dotnetcli
+    ```output
     HTTP/1.1 201 Created
     Content-Type: application/json; charset=utf-8
     Date: Fri, 02 Apr 2021 23:23:09 GMT
@@ -161,7 +161,7 @@ Remember to save the *Controllers/PizzaController.cs* file before proceeding,
 
     The preceding command returns the following output that indicates success:
 
-    ```dotnetcli
+    ```output
     HTTP/1.1 204 No Content
     Date: Fri, 02 Apr 2021 23:23:55 GMT
     Server: Kestrel
@@ -175,7 +175,7 @@ Remember to save the *Controllers/PizzaController.cs* file before proceeding,
 
     The preceding command returns the newly updated pizza:
 
-    ```dotnetcli
+    ```output
     HTTP/1.1 200 OK
     Content-Type: application/json; charset=utf-8
     Date: Fri, 02 Apr 2021 23:27:37 GMT
@@ -197,7 +197,7 @@ Remember to save the *Controllers/PizzaController.cs* file before proceeding,
 
     The preceding command returns a `204 No Content` result for success:
 
-    ```dotnetcli
+    ```output
     HTTP/1.1 204 No Content
     Date: Fri, 02 Apr 2021 23:30:04 GMT
     Server: Kestrel
@@ -211,7 +211,7 @@ Remember to save the *Controllers/PizzaController.cs* file before proceeding,
 
     The preceding command returns the original pizzas as results:
 
-    ```dotnetcli
+    ```output
     HTTP/1.1 200 OK
     Content-Type: application/json; charset=utf-8
     Date: Fri, 02 Apr 2021 23:31:15 GMT
@@ -232,4 +232,4 @@ Remember to save the *Controllers/PizzaController.cs* file before proceeding,
     ]
     ```
 
-You've now finished implementing and testing a newly created web API built with ASP.NET Core. 
+You've now finished implementing and testing a newly created web API built with ASP.NET Core.

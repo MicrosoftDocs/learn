@@ -11,13 +11,15 @@ enum Result<T, E> {
 
 In contrast to the `Option` type, which describes the possibility of the *absence* of a value, the `Result` type is best suited whenever *failures* might occur.
 
-The `Result` type also has the `unwrap` and `expect` methods, which do either of the following:
-* Return the value inside the `Ok` variant, if this is the case.
-* Cause the program to panic, if the variant is an `Err`.
+The `Result` type also has the `unwrap` and `expect` methods, which either:
 
-Let's see `Result` in action. In the following example code, there's an implementation for a `safe_division` function that returns either of following:
-* A `Result` value with an `Ok` variant that carries the result of a successful division.
-* An `Err` variant that carries a struct `DivisionByZeroError` which signals an unsuccessful division.
+- Return the value inside the `Ok` variant.
+- Cause the program to panic, if the variant is an `Err`.
+
+Let's see `Result` in action. In the following example code, there's an implementation for a `safe_division` function that returns either:
+
+- A `Result` value with an `Ok` variant that carries the result of a successful division.
+- An `Err` variant that carries a struct `DivisionByZeroError`, which signals an unsuccessful division.
 
 ```rust
 #[derive(Debug)]

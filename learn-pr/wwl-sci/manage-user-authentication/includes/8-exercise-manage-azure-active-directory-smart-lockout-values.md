@@ -7,14 +7,12 @@ Based on your organizational requirements, you can customize the Azure AD smart 
 3.  On the Azure Active Directory blade, under **Manage**, select **Security**.
 4.  On the Security blade, in the left navigation, select **Authentication methods**.
 5.  In the left navigation, select **Password protection**.
-
-    :::image type="content" source="../media/browse-password-protection.png" alt-text="Screenshot of the Authentication methods dialog with the highlighted selections to browse to Password authentication.":::
-
+    
+    :::image type="content" source="../media/browse-password-protection-d00ab077.png" alt-text="Screenshot of the Authentication methods dialog with the highlighted selections to browse to Password authentication.":::
+    
 6.  In the Password protection settings, in the **Lockout duration in seconds** box, set the value to 120.
 7.  Next to **Mode**, select **Enforced**.
 8.  Save your changes.
-
+    
     > [!NOTE]
-    > When the smart lockout threshold is triggered, you will get the following message while the account is locked:
-    > 
-    > Your account is temporarily locked to prevent unauthorized use. Try again later, and if you still have trouble, contact your admin.
+    > When the smart lockout threshold is triggered, you will get the following message while the account is locked:<br><br>Your account is temporarily locked to prevent unauthorized use. Try again later, and if you still have trouble, contact your admin.

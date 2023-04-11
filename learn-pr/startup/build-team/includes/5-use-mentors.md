@@ -13,7 +13,7 @@ We'll also briefly discuss the mentor network that's part of the [Microsoft for 
 
 ## What makes a good mentor
 
-Not everyone who has launched a startup makes a good mentor, even if they've been successful. As highlighted by venture capitalist Bryce Roberts, "When successful people give advice, I hear this: Here are the lottery numbers I played. They worked for me!"
+Not everyone who's launched a startup makes a good mentor, even if they've been successful. As highlighted by venture capitalist Bryce Roberts, "When successful people give advice, I hear this: Here are the lottery numbers I played. They worked for me!"
 
 In many cases, successful entrepreneurs have difficulty articulating what it was that led to their success. When they have single-time successes, their one set of experiences might not be directly relevant to other startups. That's especially true if those startups are in different industries or pursuing different business models.
 
@@ -47,7 +47,7 @@ Many successful entrepreneurs are willing to provide mentoring to first-time fou
 
 There's a growing number of mentors whose motivations hinge on increasing diversity in startups and supporting founders from minority backgrounds. Some of these mentors are available through startup programs that work exclusively with underrepresented founders.
 
-If the mentor is an early-stage investor, their motivation might be a combination of pay-it-forward and a desire to find and cultivate high-quality deal flow. In some cases, the mentoring relationship will work only if the investor views the startup as a genuine investment prospect.
+If the mentor is an early-stage investor, their motivation might be a combination of paying it forward and a desire to find and cultivate high-quality deal flow. In some cases, the mentoring relationship will work only if the investor views the startup as a genuine investment prospect.
 
 If the mentor is employed by an organization that runs a startup program such as an accelerator, their role will generally include providing mentoring to those startups that have been accepted into the program. In many cases, this role is called an *entrepreneur-in-residence* (EIR).
 
@@ -59,7 +59,7 @@ There are many ways to tap into high-quality mentoring. The best way to find goo
 
 - Engage with your local startup community via networking events, pitch competitions, hackathons, and mentor-matching events.
 - Take part in a structured startup program such as an accelerator, as long as it's delivered by mentors who have broad startup experience.
-- Connect with other founders, ask them who they have found to be good mentors, and ask for introductions.
+- Connect with other founders, ask them who they've found to be good mentors, and ask for introductions.
 - Search online for people who have built successful companies that have some similarities to yours (sector focus, customer persona, or business model). Reach out to them directly.
 - Utilize the mentor network that's part of the Microsoft for Startups Founders Hub. (You'll learn more about that later in this unit.)
 

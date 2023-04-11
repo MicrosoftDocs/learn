@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-machine-learning-operations-solution.design-retraining
+title: Design for retraining
+metadata:
+  title: Design for retraining
+  description: "Learn what to think about when designing for retraining a model."
+  ms.date: 03/03/2023
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-design-retraining.md)]

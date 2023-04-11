@@ -70,7 +70,7 @@ You decide to buffer uploaded content in an Azure Queue for processing and then 
     | Enable point-in-time restore for containers | *Uncheck*. Not necessary for this implementation. |
     | Enable soft delete for blobs | *Uncheck*. Soft delete lets you recover blob data in cases where blobs or blob snapshots are deleted accidentally or overwritten. |
     | Enable soft delete for containers | *Uncheck*. Soft delete lets you recover your containers that are deleted accidentally. |
-    | Enable soft delete for file shares | *Uncheck*. File share soft delete lets you recover your blob data more easily at the folder level. |
+    | Enable soft delete for file shares | *Uncheck*. File share soft delete lets you recover your accidentally deleted file share data more easily. |
     | **Tracking**|
     | Enable versioning for blobs | *Uncheck*. Not necessary for this implementation. |
     | Enable blob change feed | *Uncheck*. Not necessary for this implementation. |

@@ -1,10 +1,10 @@
 Besides transforming text and performing basic operations, such as matching and searching, it's essential to format the text when you're presenting information. The simplest way to present text information with Python is to use the `print()` function. You'll find it critical to get information in variables and other data structures into strings that `print()` can use. 
 
-In this unit, you'll learn several valid ways to include variable values in text by using Python. 
+In this unit, you'll learn several valid ways to include variable values in text by using Python.
 
 ## Percent sign (`%`) formatting
 
-The placeholder is `%s,` and the variable is passed onto the text after the `%` character outside the string. Here's how to format by using the `%` character:
+The placeholder for the variable in the string is `%s`. After the string, use another `%` character followed by the variable name. The following example shows how to format by using the `%` character:
 
 ```python
 >>> mass_percentage = "1/6"
@@ -54,14 +54,14 @@ You are lighter on the Moon, because on the Moon you would weigh about 1/6 of yo
 
 ## About f-strings 
 
-As of Python version 3.6, it's possible to use *f-strings*. These strings look like templates with the same named variables as those in code. Using f-strings in the preceding example would look like this:
+As of Python version 3.6, it's possible to use *f-strings*. These strings look like templates and use the variable names from your code. Using f-strings in the preceding example would look like this:
 
 ```python
 >>> print(f"On the Moon, you would weigh about {mass_percentage} of your weight on Earth")
 On the Moon, you would weigh about 1/6 of your weight on Earth
 ```
 
-The variables go within braces, and the string _must_ use the `f` prefix.
+The variables go within braces, and the string *must* use the `f` prefix.
 
 Aside from f-strings being less verbose than any other formatting option, it's possible to use expressions within the braces. These expressions can be functions or direct operations. For example, if you want to represent the `1/6` value as a percentage with one decimal place, you can use the `round()` function directly:
 

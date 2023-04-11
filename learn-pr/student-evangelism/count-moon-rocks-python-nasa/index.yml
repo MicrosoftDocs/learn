@@ -3,12 +3,12 @@ uid: learn.student-evangelism.count-moon-rocks-python-nasa
 metadata:
   title: Count the number of Moon rocks by type using Python
   description: Use Python to make a simple program to count the number of each type of space rock.
-  ms.date: 05/05/2021
-  author: drguthals
+  ms.date: 01/27/2023
+  author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: team=nextgen
+  ms.custom: team=nextgen, py-fresh-zinc, engagement-fy23
 title: Count the number of Moon rocks by type using Python
 summary: Use Python to make a simple program to count the number of each type of space rock.
 abstract: |
@@ -30,7 +30,7 @@ roles:
 - student
 - data-scientist
 products:
-- vs-code
+- azure
 units:
 - learn.student-evangelism.count-moon-rocks-python-nasa.1-introduction
 - learn.student-evangelism.count-moon-rocks-python-nasa.2-set-up-program

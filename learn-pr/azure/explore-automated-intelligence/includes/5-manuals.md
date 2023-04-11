@@ -6,7 +6,7 @@ People use **expert rules** very often to learn and teach. Manuals are particula
 
 For example, the Heat, Ventilation and Air Conditioning (HVAC) systems that control the temperature of office buildings. The system uses a damper valve that can be opened to let in fresh air in or closed to recycle air. The system can save energy by recycling air at times of day when the price of energy is high or when the air is very cold and needs to be heated up. However, recycling too much air, especially when there are many people in the building, decreases air quality as carbon dioxide builds up.
 
-The HVAC can be controlled with two simple rules (Figure 4):
+The HVAC can be controlled with two simple rules:
 
 - Close the damper to recycle air when energy is expensive or when air is very cold or very hot.
 - Open the damper to let fresh air in when the air quality is reaching legal limits.

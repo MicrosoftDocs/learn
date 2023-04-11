@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.quantum.estimate-resources-quantum-algorithms
+metadata:
+  title: Estimate physical resources for quantum algorithms by using the Azure Quantum Resource Estimator
+  description: Learn how to get started with Azure Quantum Resource Estimator.
+  ms.date: 02/08/2023
+  author: SoniaLopezBravo
+  ms.author: sonialopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Estimate physical resources for quantum algorithms by using the Azure Quantum Resource Estimator
+summary: Learn why resource estimation is crucial in the development of quantum computing, and learn how to use the Azure Quantum Resource Estimator. 
+abstract: |
+  In this module, you will:
+  - Learn what resource estimation is and why it's important.
+  - Explore the Azure Quantum Resource Estimator.
+  - Estimate the resources of an algorithm for practical quantum advantage.
+prerequisites: To use the Azure Quantum service, you need an active Azure subscription. For more information about creating an Azure account and subscription, see the module [Create an Azure account](/training/modules/create-an-azure-account/).
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: true
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure-quantum
+subjects:
+- cloud-computing
+units:
+- learn.quantum.estimate-resources-quantum-algorithms.introduction
+- learn.quantum.estimate-resources-quantum-algorithms.resource-estimation-in-quantum-computing
+- learn.quantum.estimate-resources-quantum-algorithms.azure-quantum-resource-estimator
+- learn.quantum.estimate-resources-quantum-algorithms.get-started-with-azure-quantum-resource-estimator
+- learn.quantum.estimate-resources-quantum-algorithms.estimate-resources-of-a-real-world-problem
+- learn.quantum.estimate-resources-quantum-algorithms.knowledge-check
+- learn.quantum.estimate-resources-quantum-algorithms.summary
+badge:
+  uid: learn.quantum.estimate-resources-quantum-algorithms.badge

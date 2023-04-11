@@ -7,68 +7,70 @@ metadata:
   ms.date: 07/01/2022
   author: edlamie80
   ms.author: liydu
+  ms.reviewer: liydu
+  manager: lizross
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 8
 content: |
 quiz:
   questions:
-    - content: "Which of the following is most likely to be in the tx_application_define()"
+    - content: 'Which of the following is most likely to be in the tx_application_define()'
       choices:
-        - content: "`tx_kernel_enter()`"
+        - content: '`tx_kernel_enter()`'
           isCorrect: false
           explanation: "Incorrect, `nx_system_initialize()` is most likely to be in 'tx_application_define()'."
-        - content: "`#include tx_api.h`"
+        - content: '`#include tx_api.h`'
           isCorrect: false
           explanation: "Incorrect, `nx_system_initialize()` is most likely to be in 'tx_application_define()'."
-        - content: "`nx_system_initialize()`"
+        - content: '`nx_system_initialize()`'
           isCorrect: true
           explanation: "Correct, `nx_system_initialize()` is most likely to be in 'tx_application_define()'."
-        - content: "`void thread_0_entry()`"
+        - content: '`void thread_0_entry()`'
           isCorrect: false
           explanation: "Incorrect, `nx_system_initialize()` is most likely to be in 'tx_application_define()'."
 
-    - content: "Which statement about data packets is true?"
+    - content: 'Which statement about data packets is true?'
       choices:
         - content: "Data packets aren't necessary in NetX Duo."
           isCorrect: false
-          explanation: "Incorrect, all data packets must be the same size."
-        - content: "Only one data packet is needed for each project."
+          explanation: 'Incorrect, all data packets must be the same size.'
+        - content: 'Only one data packet is needed for each project.'
           isCorrect: false
-          explanation: "Incorrect, all data packets must be the same size."
-        - content: "All data packets must be exactly 604 bytes in size."
+          explanation: 'Incorrect, all data packets must be the same size.'
+        - content: 'All data packets must be exactly 604 bytes in size.'
           isCorrect: false
-          explanation: "Incorrect, all data packets must be the same size."
-        - content: "All data packets must be the same size."
+          explanation: 'Incorrect, all data packets must be the same size.'
+        - content: 'All data packets must be the same size.'
           isCorrect: true
-          explanation: "Correct, all data packets must be the same size."
+          explanation: 'Correct, all data packets must be the same size.'
 
-    - content: "After you build and run the Hello World project, which action can you perform next?"
+    - content: 'After you build and run the Hello World project, which action can you perform next?'
       choices:
-        - content: "Enter a command such as a ping request."
+        - content: 'Enter a command such as a ping request.'
           isCorrect: true
-          explanation: "Correct, enter a command such as a ping request."
-        - content: "Check the remaining memory of another device."
+          explanation: 'Correct, enter a command such as a ping request.'
+        - content: 'Check the remaining memory of another device.'
           isCorrect: false
-          explanation: "Incorrect, enter a command such as a ping request."
-        - content: "Count the number of devices on the network."
+          explanation: 'Incorrect, enter a command such as a ping request.'
+        - content: 'Count the number of devices on the network.'
           isCorrect: false
-          explanation: "Incorrect, enter a command such as a ping request."
-        - content: "Activate a remote device."
+          explanation: 'Incorrect, enter a command such as a ping request.'
+        - content: 'Activate a remote device.'
           isCorrect: false
-          explanation: "Incorrect, enter a command such as a ping request."
+          explanation: 'Incorrect, enter a command such as a ping request.'
 
-    - content: "What is the meaning of `rtt` in the statistical output from your ping request?"
+    - content: 'What is the meaning of `rtt` in the statistical output from your ping request?'
       choices:
         - content: "It's the minimum time it takes to complete a ping request."
           isCorrect: false
-          explanation: "Incorrect, `rtt` (round-trip time) is the total time between a data request and the completion of that request."
+          explanation: 'Incorrect, `rtt` (round-trip time) is the total time between a data request and the completion of that request.'
         - content: "It's the maximum time it takes to complete a ping request."
           isCorrect: false
-          explanation: "Incorrect, `rtt` (round-trip time) is the total time between a data request and the completion of that request."
+          explanation: 'Incorrect, `rtt` (round-trip time) is the total time between a data request and the completion of that request.'
         - content: "It's the total time between a data request and the completion of that request."
           isCorrect: true
-          explanation: "Correct, `rtt` (round-trip time) is the total time between a data request and the completion of that request."
+          explanation: 'Correct, `rtt` (round-trip time) is the total time between a data request and the completion of that request.'
         - content: "It's the mean deviation of time for a ping request."
           isCorrect: false
-          explanation: "Incorrect, `rtt` (round-trip time) is the total time between a data request and the completion of that request."
+          explanation: 'Incorrect, `rtt` (round-trip time) is the total time between a data request and the completion of that request.'

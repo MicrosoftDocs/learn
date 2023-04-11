@@ -50,10 +50,6 @@ After you verify all prerequisites are met, you're ready to begin the migration.
 
 The assessment generates a report with recommendations and alternate approaches for the migration. Review the report for compatibility issues between the source and destination databases that might cause the migration to fail. Address any issues, and then generate a new assessment report. Repeat this process until you confirm all issues are addressed.
 
-The following screenshot shows a typical DMA assessment report for migrating a database to Azure.
-
-:::image type="content" source="../media/data-migration-supported-features.png" alt-text="Screenshot of a typical DMA assessment report for migrating a database to Azure." border="false":::
-
 #### Step 2. Migrate schema with DMA
 
 Each database has a schema that represents its entire structure. The schema defines the rules for how the structured data is organized and the relationships between data elements. You migrate the schema before you migrate all the data in your database. By migrating the schema first, you accomplish two goals:

@@ -40,7 +40,7 @@ The values `Cheryl` and `28` are bound to the `name` and `age` property, respect
 
 ## Restricting types
 
-The caller can pass in values of any type by listing them as part of an array. This can be appropriate for basic applications, but you'll often want to indicate what data types you're expecting for each prop.
+The caller can pass in values of any type by listing them as part of an array. This method can be appropriate for basic applications, but you'll often want to indicate what data types you're expecting for each prop.
 
 You can provide more robust information about the props by defining a schema. If you want to indicate that `name` should be a string and `age` should be a number, you can define your prop schema like the following:
 
@@ -70,7 +70,7 @@ However, if you set data types to values that don't match with the schema, like 
 
 When you're working with Vue, you typically work with objects rather than individual values. Fortunately, you can declare complex structures with props.
 
-If you're using a `User` object with the properties `name` and `age`, you can declare this as a full construct in your props:
+If you're using a `User` object with the properties `name` and `age`, you can declare this object as a full construct in your props:
 
 ```html
 <!-- UserDisplay component script -->
@@ -96,7 +96,7 @@ You can set the value by using the attribute as you did before. In addition, you
 </template>
 
 <script>
-import UserInfo from './UserInfo.vue';
+import UserDisplay from './UserDisplay.vue';
 export default {
     data() {
         return {

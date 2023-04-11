@@ -1,6 +1,8 @@
-As part of the sign-in experience for accounts in Azure AD, there are different ways that users can authenticate themselves. Historically, a username and password is the most common way a user would provide credentials. With modern authentication and security features in Azure AD, that basic password should be supplemented or replaced with more secure authentication methods.
 
-:::image type="content" source="../media/authentication-methods.png" alt-text="Screenshot of the strengths and preferred authentication methods in Azure A D.":::
+As part of the sign-in experience for accounts in Azure AD, there are several ways that users can authenticate themselves. Historically, a username and password is the most common way a user would provide credentials. With modern authentication and security features in Azure AD, that basic password should be supplemented or replaced with more secure authentication methods.
+
+:::image type="content" source="../media/authentication-methods-4b9b6734.png" alt-text="Screenshot of the strengths and preferred authentication methods in Azure A D.":::
+
 
 Passwordless authentication methods such as Windows Hello, FIDO2 security keys, and the Microsoft Authenticator app provide the most secure sign-in events.
 
@@ -14,18 +16,19 @@ When you deploy features like Azure AD Multi-Factor Authentication in your organ
 
 The following table outlines the security considerations for the available authentication methods. Availability is an indication of the user being able to use the authentication method, not of the service availability in Azure AD:
 
-:::image type="content" source="../media/authentication-method-strength-security.png" alt-text="Diagram of an X Y grid that shows inconvenient to convenient side to side and low security to high security top to bottom.":::
+:::image type="content" source="../media/authentication-method-strength-security-c8fdb55b.png" alt-text="Diagram of an X Y grid that shows inconvenient to convenient side to side and low security to high security top to bottom.":::
 
-| Authentication method | Security | Usability | Availability |
-| :----- | :----- | :----- | :----- |
-| Windows Hello for Business | High | High | High |
-| Microsoft Authenticator app | High | High | High |
-| FIDO2 security key | High | High | High |
-| OATH hardware tokens (preview) | Medium | Medium | High |
-| OATH software tokens | Medium | Medium | High |
-| SMS | Medium | High | Medium |
-| Voice | Medium | Medium | Medium |
-| Password | Low | High | High |
+
+| **Authentication method**      | **Security** | **Usability** | **Availability** |
+| ------------------------------ | ------------ | ------------- | ---------------- |
+| Windows Hello for Business     | High         | High          | High             |
+| Microsoft Authenticator app    | High         | High          | High             |
+| FIDO2 security key             | High         | High          | High             |
+| OATH hardware tokens (preview) | Medium       | Medium        | High             |
+| OATH software tokens           | Medium       | Medium        | High             |
+| SMS                            | Medium       | High          | Medium           |
+| Voice                          | Medium       | Medium        | Medium           |
+| Password                       | Low          | High          | High             |
 
 > [!TIP]
 > For flexibility and usability, we recommend that you use the Microsoft Authenticator app. This authentication method provides the best user experience and multiple modes, such as passwordless, MFA push notifications, and OATH codes.
@@ -36,16 +39,16 @@ Some authentication methods can be used as the primary factor when you sign in t
 
 The following table outlines when an authentication method can be used during a sign-in event:
 
-| Method | Primary authentication | Secondary authentication |
-| :---- | :----- | :----- |
-| Windows Hello for Business | Yes | MFA |
-| Microsoft Authenticator app | Yes (preview) | MFA and SSPR |
-| FIDO2 security key | Yes | MFA |
-| OATH hardware tokens (preview) | No | MFA and SSPR |
-| OATH software tokens | No | MFA and SSPR |
-| SMS | Yes (preview) | MFA and SSPR |
-| Voice call | No | MFA and SSPR |
-| Password | Yes | |
+| **Method**                     | **Primary authentication** | **Secondary authentication** |
+| ------------------------------ | -------------------------- | ---------------------------- |
+| Windows Hello for Business     | Yes                        | MFA                          |
+| Microsoft Authenticator app    | Yes (preview)              | MFA and SSPR                 |
+| FIDO2 security key             | Yes                        | MFA                          |
+| OATH hardware tokens (preview) | No                         | MFA and SSPR                 |
+| OATH software tokens           | No                         | MFA and SSPR                 |
+| SMS                            | Yes (preview)              | MFA and SSPR                 |
+| Voice call                     | No                         | MFA and SSPR                 |
+| Password                       | Yes                        |                              |
 
 All of these authentication methods can be configured in the Azure portal and increasingly using the Microsoft Graph REST API beta.
 
@@ -54,17 +57,17 @@ All of these authentication methods can be configured in the Azure portal and in
 
 The following verification methods can be used in certain scenarios:
 
-- App passwords - used for old applications that don't support modern authentication and can be configured for per-user Azure AD Multi-Factor Authentication.
-- Security questions - only used for SSPR.
-- Email address - only used for SSPR.
+ -  App passwords - used for old applications that don't support modern authentication and can be configured for per-user Azure AD Multi-Factor Authentication.
+ -  Security questions - only used for SSPR.
+ -  Email address - only used for SSPR.
 
 ## What is FIDO2
 
 The FIDO (Fast IDentity Online) Alliance helps to promote open authentication specifications and reduce the use of passwords as a form of authentication. FIDO2 is the latest specification that incorporates the web authentication (WebAuthn) specification. Users can register and then select a FIDO2 security key at the sign-in interface as their main means of authentication. These FIDO2 security keys are typically USB devices, but could also use Bluetooth or NFC (near field communication). With a hardware device that handles the authentication, the security of an account is increased as there's no password that could be exposed or guessed. FIDO2 security keys can be used to sign into their Azure AD or hybrid Azure AD joined Windows 10 or 11 devices and get single-sign on to their cloud and on-premises resources. Users can also sign into supported browsers. FIDO2 security keys are a great option for enterprises who are very security sensitive or have scenarios or employees who aren't willing or able to use their phone as a second factor.
 
-- FIDO2 security keys are an unphishable specification-based passwordless authentication method that can come in any form factor
-- Fast Identity Online (FIDO) is an open specification for passwordless authentication
-- FIDO allows users and organizations to leverage the specification to sign into their resources without a username or password using an external security key or a platform key built into a device
+ -  FIDO2 security keys are an unphishable specification-based passwordless authentication method that can come in any form factor
+ -  Fast Identity Online (FIDO) is an open specification for passwordless authentication
+ -  FIDO allows users and organizations to leverage the specification to sign into their resources without a username or password using an external security key or a platform key built into a device
 
 ## Enable FIDO2 security key method
 
@@ -72,8 +75,9 @@ The FIDO (Fast IDentity Online) Alliance helps to promote open authentication sp
 2.  Browse to **Azure Active Directory** \- **Security** \- **Authentication methods** \- **Authentication method policy**.
 3.  Under the method **FIDO2 Security Key**, choose the following options:
     
-     - **Enable** - Yes or No
-     - **Target** - All users or Select users
+    
+     -  **Enable** \- Yes or No
+     -  **Target** \- All users or Select users
 4.  **Save** the configuration.
 
 ### Manage user registration and FIDO2 security keys
@@ -94,13 +98,14 @@ The FIDO (Fast IDentity Online) Alliance helps to promote open authentication sp
 
 In the example below a user has already provisioned their FIDO2 security key. The user can choose to sign in on the web with their FIDO2 security key inside of a supported browser on Windows 10 version 1903 or higher or Windows 11.
 
-:::image type="content" source="../media/fast-identity-windows-edge-sign-in.png" alt-text="Screenshot of the security key sign-in for Microsoft Edge. Great multifactor verification process.":::
+:::image type="content" source="../media/fast-identity-windows-edge-sign-in-6c0f9eb8.png" alt-text="Screenshot of the security key sign-in for Microsoft Edge. Great multifactor verification process.":::
+
 
 ## Prerequisites for cloud-only deployment
 
-- Windows 10, version 1511 or later or Windows 11
-- Microsoft Azure account
-- Azure AD
-- Azure AD Multi-Factor Authentication
-- Modern Management - *optional,* Microsoft Intune, or supported third-party mobile-device management (MDM)
-- Azure AD Premium subscription - *optional*, needed for automatic MDM enrollment when the device joins Azure AD
+ -  Windows 10, version 1511 or later or Windows 11
+ -  Microsoft Azure account
+ -  Azure AD
+ -  Azure AD Multi-Factor Authentication
+ -  Modern Management - *optional,* Microsoft Intune, or supported third-party mobile-device management (MDM)
+ -  Azure AD Premium subscription - *optional*, needed for automatic MDM enrollment when the device joins Azure AD

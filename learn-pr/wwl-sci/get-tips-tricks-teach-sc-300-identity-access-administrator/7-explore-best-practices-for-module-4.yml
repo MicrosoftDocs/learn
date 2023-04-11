@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-tips-tricks-teach-sc-300-identity-access-administrator.explore-best-practices-for-module-4
+title: Explore best practices for module 4
+metadata:
+  title: Explore best practices for module 4
+  description: "Explore best practices for module 4"
+  ms.date: 04/10/2023
+  author: wwlpublish
+  ms.author: 'Trinity Sheppard '
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+  ms.service: azure
+durationInMinutes: 12
+content: |
+  [!include[](includes/7-explore-best-practices-for-module-4.md)]

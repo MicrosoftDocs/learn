@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.wwl.manage-azure-virtual-desktop
+metadata:
+  title: MD-102 5-Manage Azure virtual desktop
+  description: "Learn to manage Azure Virtual Desktop, a cloud-based VDI solution providing personalized, secure Windows 10 experiences. Understand key features, management, security, and deployment options for optimizing your environment."
+  ms.date: 04/05/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Manage Azure virtual desktop
+summary: Learn to manage Azure Virtual Desktop, a cloud-based VDI solution providing personalized, secure Windows 11 experiences. Understand key features, management, security, and deployment options for optimizing your environment.
+abstract: |
+  After completing this module, you should be able to:
+  - Describe the key features of Azure Virtual Desktop
+  - Describe the Azure Virtual Desktop management experience
+  - Describe the Azure Virtual Desktop security model
+  - Describe the Azure Virtual Desktop deployment options
+prerequisites: |
+  - Strong technical skills installing, maintaining, and troubleshooting the Windows 10 OS or later
+  - Strong understanding of computer networking, client security, and application concepts
+  - Experience using Active Directory Domain Services
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure-virtual-desktop
+- windows
+units:
+- learn.wwl.manage-azure-virtual-desktop.introduction
+- learn.wwl.manage-azure-virtual-desktop.examine-azure-virtual-desktop
+- learn.wwl.manage-azure-virtual-desktop.explore-azure-virtual-desktop
+- learn.wwl.manage-azure-virtual-desktop.configure-azure-virtual-desktop
+- learn.wwl.manage-azure-virtual-desktop.administer-azure-virtual-desktop
+- learn.wwl.manage-azure-virtual-desktop.knowledge-check
+- learn.wwl.manage-azure-virtual-desktop.summary
+badge:
+  uid: learn.wwl.manage-azure-virtual-desktop.badge

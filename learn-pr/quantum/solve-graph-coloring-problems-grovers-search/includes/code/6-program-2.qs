@@ -91,7 +91,7 @@
         // The number of iterations can be computed using a formula.
         let nIterations = Round(PI() / 4.0 * Sqrt(IntAsDouble(searchSpaceSize) / IntAsDouble(nSolutions)));
 
-        mutable answer = new Bool[nQubits];
+        mutable answer = [];
         use (register, output) = (Qubit[nQubits], Qubit());
         mutable isCorrect = false;
         repeat {

@@ -1,0 +1,28 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.hunt-threats-sentinel.5-livestream
+metadata:
+  title: Observe threats over time with livestream
+  description: Observe threats over time with livestream
+  ms.date: 12/15/2020
+  author: wwlpublish
+  ms.author: kelawson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Observe threats over time with livestream
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-livestream.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which of the following can't be used in a livestream query?"
+    choices:
+    - content: "Time parameters"
+      isCorrect: true
+      explanation: "Time parameters can't be used because livestream queries run continuously."
+    - content: "Alert data parameters"
+      isCorrect: false
+      explanation: "Alert data can be used in livestream queries."
+    - content: "Event entities"
+      isCorrect: false
+      explanation: "Event entity parameters can be used in livestream queries."

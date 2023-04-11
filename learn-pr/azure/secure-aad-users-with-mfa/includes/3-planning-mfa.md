@@ -22,7 +22,9 @@ When you turn on Azure AD MFA, you can choose the authentication methods you wan
 | **Mobile App Verification code** | A mobile authentication app such as the Microsoft Authenticator app can be used to retrieve an OATH verification code which is then entered into the sign-in interface. This code is changed every 30 seconds and the app works even if connectivity is limited. Note that this approach doesn't work in China on Android devices. |
 | **Mobile app notification** | Azure can send a push notification to a mobile authentication app such as Microsoft Authenticator. The user can select the push notification and verify the sign-in. |
 | **Call to a phone** | Azure can call a supplied phone number. The user then approves the authentication using the keypad. This is a preferred backup method. |
-| **Text message to a phone** | A text message with a verification code can be sent to a mobile phone. The user then enters the verification code into the sign-in interface to complete the authentication. |
+| **FIDO2 security key** | FIDO2 security keys are an unphishable standards-based passwordless authentication method that are typically USB devices, but could also use Bluetooth or NFC. |
+| **Windows Hello for Business** | Windows Hello for Business replaces passwords with strong two-factor authentication on devices. This authentication consists of a type of user credential that is tied to a device and uses a biometric or PIN. |
+| **OATH tokens** | OATH tokens can be software applications such as the Microsoft Authenticator app and other authenticator apps, or hardware-based tokens that customers can purchase from different vendors. |
 
 Administrators can enable one or more of the options above, then users can opt in to each support authentication method they want to use.
 

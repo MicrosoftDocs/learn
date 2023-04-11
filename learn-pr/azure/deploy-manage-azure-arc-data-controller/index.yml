@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.azure.deploy-manage-azure-arc-data-controller
+metadata:
+  title: Deploy and manage Azure Arc data controller
+  description: Azure Arc-enabled data controller serves as the basis for deployment of Azure Arc-enabled data services.
+  ms.date: 12/19/2022
+  author: MikeRayMSFT
+  ms.author: mikeray
+  manager: jroth
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Deploy and manage Azure Arc data controller
+summary: Azure Arc-enabled data controller serves as the basis for deployment of Azure Arc-enabled data services.
+abstract: |
+  By the end of this module, you'll be able to:
+    - Prepare for deploying Azure Arc-enabled data services.
+    - Deploy an Azure Arc data controller.
+    - Manage an Azure Arc data controller.
+prerequisites: |
+  - Experience implementing and managing Platform-as-a-Service (PaaS) services in Microsoft Azure.
+  - Intermediate knowledge of Azure management, including the ability to navigate the Azure portal and run Azure CLI commands.
+  - Intermediate knowledge of containerization and container orchestration by using Kubernetes.
+iconUrl: /learn/achievements/generic-badge.svg
+levels: 
+  - intermediate
+roles: 
+  - administrator
+  - data-engineer
+  - database-administrator
+  - devops-engineer
+  - solution-architect
+  - student
+  - technology-manager
+products: 
+  - azure-arc
+subjects: 
+  - cloud-computing
+units:
+- learn.azure.deploy-manage-azure-arc-data-controller.introduction
+- learn.azure.deploy-manage-azure-arc-data-controller.prepare-for-arc-enabled-data-services
+- learn.azure.deploy-manage-azure-arc-data-controller.deploy-azure-arc-data-controller
+- learn.azure.deploy-manage-azure-arc-data-controller.exercise-deploy-azure-arc-data-controller
+- learn.azure.deploy-manage-azure-arc-data-controller.manage-azure-arc-data-controller
+- learn.azure.deploy-manage-azure-arc-data-controller.exercise-manage-azure-arc-data-controller
+- learn.azure.deploy-manage-azure-arc-data-controller.knowledge-check
+- learn.azure.deploy-manage-azure-arc-data-controller.summary
+badge:
+  uid: learn.azure.deploy-manage-azure-arc-data-controller.badge

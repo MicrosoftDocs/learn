@@ -1,6 +1,3 @@
->[!NOTE]
-> The Learn sandbox system that enables you to complete these modules without using your own subscription is currently down for maintenance. This module can still be completed using a subscription you own, but please be aware that the steps might skip some instructions necessary for you to deploy, such as logging into your subscription or cleaning up the deployment at the end of the module. Let's go!
-
 Helm charts make it easy to install pre-configured cloud-native apps on a Kubernetes cluster. The DevOps team is already familiar with the installation steps to install apps using manifest files and kubectl. The team decides to install an ASP.NET Core Helm chart to test the Helm installation process.
 
 In this exercise, you'll add a Helm repository to your Helm client and install an ASP.NET Core website onto your Azure Kubernetes Service cluster.
@@ -13,26 +10,26 @@ In this exercise, you'll add a Helm repository to your Helm client and install a
     helm repo add azure-marketplace https://marketplace.azurecr.io/helm/v1/repo
     ```
 
-    Run the helm repo list command to confirm the newly added repository.
+    Run the helm repo list command to confirm the newly added repository:
 
     ```bash
     helm repo list
     ```
 
-    The command should return a result similar to the following output.
+    The command should return a result similar to the following output:
 
     ```output
     NAME             	URL
     azure-marketplace	https://marketplace.azurecr.io/helm/v1/repo
     ```
 
-1. Run the helm search repo command to search for the azure-marketplace/aspnet-core chart.
+1. Run the helm search repo command to search for the azure-marketplace/aspnet-core chart:
 
     ```bash
     helm search repo aspnet
     ```
 
-    Here is an example of what the listing may look like.
+    Here's an example of what the listing might look like:
 
     ```output
     NAME                            CHART VERSION   APP VERSION	  DESCRIPTION
@@ -41,13 +38,13 @@ In this exercise, you'll add a Helm repository to your Helm client and install a
 
 ## Deploy a Helm chart
 
-1. Deploy the ASP.NET Core Helm chart by using the `helm install` command.
+1. Deploy the ASP.NET Core Helm chart by using the `helm install` command:
 
     ```bash
     helm install aspnet-webapp azure-marketplace/aspnet-core
     ```
 
-    The command should return a result similar to the following output.
+    The command should return a result similar to the following output:
 
     ```output
     NAME: aspnet-webapp
@@ -73,24 +70,25 @@ In this exercise, you'll add a Helm repository to your Helm client and install a
 
     2. Access ASP.NET Core using the obtained URL.
     ```
-    The above output is generated from the `templates/Notes.txt` file. The information displayed from the `Notes.txt` file is generated based on a template define in the file and values from the `values.yaml` file. 
+
+    The preceding output is generated from the `templates/Notes.txt` file. The information displayed from the `Notes.txt` file is generated based on a template define in the file and values from the `values.yaml` file.
 
     For example, notice how the name of the chart, `aspnet-webapp`, is used to create the DNS name, `aspnet-webapp-aspnet-core.default.svc.cluster.local`, for the web app. You'll also notice the notes displays information to access the app via a service. The default release doesn't include an Ingress as part of the install.
 
-1. Helm allows you to query all the installed release on the cluster. Use the `helm list` command to list all Helm releases.
+1. Helm allows you to query all the installed release on the cluster. Use the `helm list` command to list all Helm releases:
 
     ```bash
     helm list
     ```
 
-    The command should return a result similar to the following output.
+    The command should return a result similar to the following output:
 
     ```output
     NAME            NAMESPACE       REVISION        UPDATED                                 STATUS          CHART                   APP VERSION
     aspnet-webapp   default         1               2021-10-11 17:12:43.50734334 +0000 UTC  deployed        aspnet-core-1.3.18      3.1.19
     ```
 
-    Notice the name of the release and its revision number. The name of the release is import, as you'll use the name to reference the release. The revision number increments each time you make a change to a release. In the next exercise, you'll see how the revision number is used to manage upgrades and rollbacks for a release.
+    Notice release's name and its revision number. The name of the release is important because you'll use the name to reference the release. The revision number increments each time you make a change to a release. In the next exercise, you'll see how the revision number is used to manage upgrades and rollbacks for a release.
 
 1. Helm allows you to fetch manifest information related to each release by using the `helm get manifest` command.
 
@@ -100,7 +98,7 @@ In this exercise, you'll add a Helm repository to your Helm client and install a
     helm get manifest aspnet-webapp
     ```
 
-    The command should return a result similar to the following output. Here, the output is shortened for brevity.
+    The command should return a result similar to the following output. Here, we've shortened the output for brevity:
 
     ```output
     ---
@@ -134,13 +132,13 @@ In this exercise, you'll add a Helm repository to your Helm client and install a
 
     These files are rendered based on the combination of the chart's available templates and the values available in the `values.yaml` file. In the next exercise, you'll see how to generate an Ingress manifest to allow users from the internet access to the web app.
 
-1. Validate that the pod is deployed by running by using the `kubectl get pods` command.
+1. Validate that the pod is deployed by running by using the `kubectl get pods` command:
 
     ```bash
     kubectl get pods -o wide -w
     ```
 
-    The command should return a result similar to the following output. Use `Ctrl+c` to exit the command once done.
+    The command should return a result similar to the following output. Use <kbd>Ctrl + C</kbd> to exit the command once done.
 
     ```output
     NAME                                         READY   STATUS    RESTARTS   AGE     IP            NODE                                NOMINATED NODE   READINESS GATES
@@ -149,13 +147,13 @@ In this exercise, you'll add a Helm repository to your Helm client and install a
 
 ## Delete a Helm release
 
-1. Delete the Helm release by using the helm delete command.
+1. Delete the Helm release by using the helm delete command:
 
     ```bash
     helm delete aspnet-webapp
     ```
 
-    The command should return a result similar to the following output.
+    The command should return a result similar to the following output:
 
     ```output
     release "aspnet-webapp" uninstalled
@@ -163,17 +161,17 @@ In this exercise, you'll add a Helm repository to your Helm client and install a
 
 ## Install a Helm chart with set values
 
-You may override values for a Helm chart by passing either a value parameter or your own `values.yaml` file. 
+You may override values for a Helm chart by passing either a value parameter or your own `values.yaml` file.
 
 1. For now, use the following command to see how to update a value using the `--set` parameter. You'll use a values file in the next exercise.
 
-    Run the `helm install` with the `--set` parameter to set the `replicaCount` of the deployment template to five replicas.
+    Run the `helm install` with the `--set` parameter to set the `replicaCount` of the deployment template to five replicas:
 
     ``` bash
     helm install --set replicaCount=5 aspnet-webapp azure-marketplace/aspnet-core
     ```
 
-    Validate that five pod replicas are deployed by running the kubectl get pods command.
+    Validate that five pod replicas are deployed by running the kubectl get pods command:
 
     ```bash
     kubectl get pods -o wide -w

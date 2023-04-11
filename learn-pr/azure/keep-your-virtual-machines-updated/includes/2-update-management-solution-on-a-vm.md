@@ -16,11 +16,12 @@ Update Management can be used to natively onboard machines in multiple subscript
 ## Supported Operating Systems
 
 Update Management solution supports Windows and Linux, specifically:
- - Windows Server (2008 and newer)
- - CentOS 6 (x86/X64) and CentOS 7
- - Red Hat Enterprise 6 (x86/x64) and 7 (x64)
- - SUSE Linux Enterprise Server 11 (x86/x64) and 12 (x64)
- - Ubuntu 14.04 LTS, 16.04 LTS and 18.04 (x86/x64)
+ - Windows Server 2019 (Datacenter/Standard including Server Core), Windows Server 2016 (Datacenter/Standard excluding Server Core), Windows Server 2012 R2(Datacenter/Standard), Windows Server 2012, and Windows Server 2008 R2 (RTM and SP1 Standard)
+ - CentOS 6 (x86/X64), CentOS 7 and CentOS 8
+ - Oracle Linux 6.x, 7.x, 8x
+ - Red Hat Enterprise 6 (x86/x64), 7 (x64) and 8
+ - SUSE Linux Enterprise Server 11 (x86/x64) and 12 (x64), 15 and 15.1
+ - Ubuntu 14.04 LTS, 16.04 LTS and 18.04 (x86/x64), and 20.04 LTS
 
 In this module, we'll work with Windows Server 2016 virtual machine deployed in Azure.
  

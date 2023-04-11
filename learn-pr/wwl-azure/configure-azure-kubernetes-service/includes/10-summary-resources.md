@@ -1,16 +1,25 @@
 Azure Kubernetes Services (AKS) is recommended when you need full container organization. AKS includes discovery across multiple containers, automatic scaling, and coordinated application upgrades.
 
-You should now be able to:
-
- -  Identify AKS components including pods, clusters, and nodes.
- -  Configure network connections for AKS.
- -  Configure storage options for AKS.
- -  Implement security options for AKS.
- -  Scale AKS including adding Azure Container Instances.
+In this module, you learned how to identify AKS components including pods, clusters, and nodes. You explored how to configure network connections and storage options for AKS, and how to implement security options. You discovered how to scale AKS including by adding Azure Container Instances.
 
 ## Learn more
 
-You can learn more by reviewing the following.
+- Read about [Kubernetes](https://kubernetes.io/).
 
- -  [Azure Kubernetes Service documentation](/azure/aks/intro-kubernetes)
- -  [Introduction to Kubernetes](/training/modules/intro-to-kubernetes/)
+- Peruse [Azure Kubernetes Service documentation](/azure/aks/).
+
+- Get started with [Azure Kubernetes Service](/azure/aks/intro-kubernetes).
+
+- Review [network concepts for applications in Azure Kubernetes Service](/azure/aks/concepts-network).
+
+- Explore [storage options for applications in Azure Kubernetes Service](/azure/aks/concepts-storage).
+
+- Review [security concepts for applications and clusters in Azure Kubernetes Service](/azure/aks/concepts-security).
+
+- Scale the [node count in an Azure Kubernetes Service cluster](/azure/aks/scale-cluster).
+
+- Execute burst scaling to [Azure Container Instances from Azure Kubernetes Service](/azure/aks/concepts-scale#burst-to-azure-container-instances).
+
+## Learn more with self-paced training
+
+- Complete an [Introduction to Kubernetes](/training/modules/intro-to-kubernetes/).

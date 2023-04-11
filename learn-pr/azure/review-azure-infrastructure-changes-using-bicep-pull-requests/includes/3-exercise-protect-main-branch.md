@@ -1,28 +1,30 @@
 Your team is working on a Bicep template that already contains a website and a database. You've deployed the components to your production environment. Now, you need to update your Bicep template to add your order processing queue.
 
-In this exercise, you'll create a feature branch for your change. You'll also protect your main branch and only allow changes to be merged to the main branch after they've been reviewed. Before that, though, you need to make sure that your Azure DevOps environment is set up to complete the rest of this module.
+In this exercise, you'll create a feature branch for your change. You'll also protect your main branch and only allow changes to be merged to the main branch after they've been reviewed. Before that, though, you need to make sure that your environment is set up to complete the rest of this module.
 
-During the process, you'll: 
+During the process, you'll:
 
 ::: zone pivot="github"
 
 > [!div class="checklist"]
-> * Set up a GitHub repository for this module.
-> * Clone the repository to your computer.
-> * Add branch protection to your repository's main branch.
-> * Create a local feature branch for your change.
-> * Try to merge your feature branch into main.
+>
+> - Set up a GitHub repository for this module.
+> - Clone the repository to your computer.
+> - Add branch protection to your repository's main branch.
+> - Create a local feature branch for your change.
+> - Try to merge your feature branch into main.
 
 ::: zone-end
 
 ::: zone pivot="azurerepos"
 
 > [!div class="checklist"]
-> * Set up an Azure DevOps project for this module.
-> * Clone the project's repository to your computer.
-> * Add branch policies to your repository's main branch.
-> * Create a local feature branch for your change.
-> * Try to merge your feature branch into main.
+>
+> - Set up an Azure DevOps project for this module.
+> - Clone the project's repository to your computer.
+> - Add branch policies to your repository's main branch.
+> - Create a local feature branch for your change.
+> - Try to merge your feature branch into main.
 
 ::: zone-end
 
@@ -30,28 +32,28 @@ During the process, you'll:
 
 ## Get the GitHub repository
 
-Here, you make sure that your GitHub repository is set up to complete the rest of this module. You set it up by creating a new repository based on a template repository. The template repository contains the files that you need to get started for this module. 
+Here, you make sure that your GitHub repository is set up to complete the rest of this module. You set it up by creating a new repository based on a template repository. The template repository contains the files that you need to get started for this module.
 
 ### Start from the template repository
 
 Run a template that sets up your GitHub repository.
 
 > [!div class="nextstepaction"]
-> [Run the template](https://github.com/MicrosoftDocs/mslearn-review-azure-infrastructure-changes-using-bicep-pull-requests?azure-portal=true)
+> [Run the template](https://github.com/MicrosoftDocs/mslearn-review-azure-infrastructure-changes-using-bicep-pull-requests)
 
 On the GitHub site, follow these steps to create a repository from the template:
 
-1. Select **Use this template**. 
+1. Select **Use this template** > **Create a new repository**.
 
    :::image type="content" source="../media/3-template.png" alt-text="Screenshot of the GitHub interface that shows the template repo, with the button for using the current template highlighted.":::
 
-1. Enter a name for your new project, such as **toy-website-review**.
+1. Enter a name for your new project, such as _toy-website-review_.
 
 1. Select the **Public** option.
 
    When you create your own repositories, you might want to make them private. In this module, you'll work with features of GitHub that work only with public repositories and with GitHub Enterprise accounts.
 
-1. Select **Create repository from template**. 
+1. Select **Create repository from template**.
 
    :::image type="content" source="../media/3-repo-settings.png" alt-text="Screenshot of the GitHub interface that shows the repo creation page.":::
 
@@ -64,13 +66,13 @@ On the GitHub site, follow these steps to create a repository from the template:
 Here, you make sure that your Azure DevOps organization is set up to complete the rest of this module. You set it up by running a template that creates a project in Azure DevOps.
 
 > [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=bicepreview&azure-portal=true)
+> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=bicepreview)
 
 On the Azure DevOps Demo Generator site, follow these steps:
 
 1. Select **Sign In** and accept the usage terms.
 
-1. On the **Create New Project** page, select your Azure DevOps organization. Then enter a project name, such as **toy-website-review**.
+1. On the **Create New Project** page, select your Azure DevOps organization. Then enter a project name, such as _toy-website-review_.
 
     :::image type="content" source="../media/3-create-new-project.png" alt-text="Screenshot that shows creating a project through the Azure DevOps Demo Generator.":::
 
@@ -86,13 +88,13 @@ On the Azure DevOps Demo Generator site, follow these steps:
 
 ::: zone pivot="github"
 
-You now have a copy of the template repository in your own account. Clone this repository locally so you can start working in it. 
+You now have a copy of the template repository in your own account. Clone this repository locally so you can start working in it.
 
 1. Select **Code**, and then select the copy icon.
 
    :::image type="content" source="../media/3-github-repository-clipboard.png" alt-text="Screenshot of the GitHub interface that shows the new repository, with the repository U R L copy button highlighted.":::
 
-1. Open Visual Studio Code. 
+1. Open Visual Studio Code.
 
 1. Open a Visual Studio Code terminal window by selecting **Terminal** > **New Terminal**. The window usually opens at the bottom of the screen.
 
@@ -102,7 +104,7 @@ You now have a copy of the template repository in your own account. Clone this r
    cd toy-website-review
    ```
 
-1. Type `git clone` and paste the URL that you copied earlier, and then run the command. The command looks something like this:
+1. Type `git clone` and paste the URL that you copied earlier, and then run the command. The command looks like this:
 
    ```bash
    git clone https://github.com/mygithubuser/toy-website-review.git
@@ -138,9 +140,9 @@ You now have a project in your own account. Clone this repository locally so you
 
 1. You're using this repository for the first time, so you're prompted to sign in.
 
-   * If you're using Windows, enter the same credentials that you used to sign in to Azure DevOps earlier in this exercise.
+   - If you're using Windows, enter the same credentials that you used to sign in to Azure DevOps earlier in this exercise.
 
-   * If you're using macOS, enter the Git username and password that you generated a few moments ago.
+   - If you're using macOS, enter the Git username and password that you generated a few moments ago.
 
 1. Visual Studio Code prompts you to open the repository. Select **Open**.
 
@@ -158,15 +160,19 @@ Configure your Git repository to prevent direct pushes to the main branch.
 
 1. Select **Branches**.
 
-1. Select **Add rule**.
+1. Select **Add branch protection rule**.
 
    :::image type="content" source="../media/3-github-branch-protections.png" alt-text="Screenshot of GitHub that shows the page for adding branch protection rules, with the button for adding a rule highlighted.":::
 
-1. In the **Branch name pattern** text box, enter **main**.
+1. In the **Branch name pattern** text box, enter _main_.
 
 1. Select **Require a pull request before merging**.
 
    Clear **Require approvals**. Normally, you'd select this option. But in this example, you're going to merge your own pull request, and the **Require approvals** option prevents you from doing so.
+
+1. Select **Do not allow bypassing the above settings**.
+
+   You select this setting as an example to show how `git push` to `main` fails later in this exercise. In a production environment, you might not want to restrict direct merges to `main` for administrators or repository owners.
 
 1. Near the bottom of the page, select **Create**.
 
@@ -203,7 +209,7 @@ Configure your Git repository to prevent direct pushes to the main branch.
 
 ## Create a local feature branch
 
-1. In the Visual Studio Code terminal, run the following statement: 
+1. In the Visual Studio Code terminal, run the following statement:
 
     ```bash
     git checkout -b add-orders-queue
@@ -211,7 +217,7 @@ Configure your Git repository to prevent direct pushes to the main branch.
 
     This command creates a new feature branch for you to work from.
 
-1. Open the *main.bicep* file in the *deploy* folder.
+1. Open the _main.bicep_ file in the _deploy_ folder.
 
    :::image type="content" source="../media/3-visual-studio-code-main-bicep.png" alt-text="Screenshot of Visual Studio Code that shows the main dot bicep file in the deploy folder.":::
 
@@ -229,11 +235,11 @@ Configure your Git repository to prevent direct pushes to the main branch.
 
    This code enables the application to find the queue where it will send messages.
 
-1. Save the *main.bicep* file.
+1. Save the _main.bicep_ file.
 
-1. Open the *appService.bicep* file in the *deploy/modules* folder.
+1. Open the _appService.bicep_ file in the _deploy/modules_ folder.
 
-1. Near the top of the *appService.bicep* file, add new parameters for the storage account and queue names:
+1. Near the top of the _appService.bicep_ file, add new parameters for the storage account and queue names:
 
    :::code language="bicep" source="code/3-appservice-final.bicep" range="1-18" highlight="7-8, 10-11" :::
 
@@ -261,7 +267,7 @@ git commit -m "Add orders queue and associated configuration"
 git push --set-upstream origin add-orders-queue
 ```
 
-The feature branch is pushed to a new branch, also named *add-orders-queue*, in your remote repository.
+The feature branch is pushed to a new branch, also named _add-orders-queue_, in your remote repository.
 
 ## Try to merge the feature branch to main
 
@@ -269,14 +275,14 @@ The feature branch is pushed to a new branch, also named *add-orders-queue*, in 
 
 You've learned why it's not advisable to push directly to the main branch. Here, you try to break that guideline so you can see how your main branch's protection prevents you from accidentally pushing your changes to a protected branch.
 
-1. In the Visual Studio Code terminal, run the following statements to switch to the main branch and merge the *add-orders-queue* branch into it:
+1. In the Visual Studio Code terminal, run the following statements to switch to the main branch and merge the _add-orders-queue_ branch into it:
 
    ```bash
    git checkout main
    git merge add-orders-queue
    ```
 
-   The command worked, but you merged the *add-orders-queue* branch into your main branch in only your *local* Git repository.
+   The command worked, but you merged the _add-orders-queue_ branch into your main branch in only your _local_ Git repository.
 
 1. Run the following statement to try to push your changes to GitHub:
 
@@ -284,7 +290,7 @@ You've learned why it's not advisable to push directly to the main branch. Here,
    git push
    ```
 
-   Notice that your push fails with an error message that looks similar to this one:
+   Notice that your push fails with an error message that looks like this one:
 
    :::code language="plaintext" source="code/3-merge-error-github.txt" highlight="3" :::
 
@@ -296,7 +302,7 @@ You've learned why it's not advisable to push directly to the main branch. Here,
    git reset --hard HEAD~1
    ```
 
-   This command tells your local Git repository to reset the state of the main branch to what it was before the last commit was merged in, and not to save your changes. The *add-orders-queue* branch isn't affected.
+   This command tells your local Git repository to reset the state of the main branch to what it was before the last commit was merged in, and not to save your changes. The _add-orders-queue_ branch isn't affected.
 
 ::: zone-end
 
@@ -304,14 +310,14 @@ You've learned why it's not advisable to push directly to the main branch. Here,
 
 You've learned why it's not advisable to push directly to the main branch. Here, you try to break that guideline so you can see how the branch policies prevent you from accidentally pushing your changes to a protected branch.
 
-1. In the Visual Studio Code terminal, run the following statements to switch to the main branch and merge the *add-orders-queue* branch to it:
+1. In the Visual Studio Code terminal, run the following statements to switch to the main branch and merge the _add-orders-queue_ branch to it:
 
    ```bash
    git checkout main
    git merge add-orders-queue
    ```
 
-   The command worked, but you merged the *add-orders-queue* branch into your main branch in only your local Git repository.
+   The command worked, but you merged the _add-orders-queue_ branch into your main branch in only your local Git repository.
 
 1. Run the following statement to try to push your changes to Azure Repos:
 
@@ -319,7 +325,7 @@ You've learned why it's not advisable to push directly to the main branch. Here,
    git push
    ```
 
-   Notice that your push fails with an error message that looks similar to this one:
+   Notice that your push fails with an error message that looks like this one:
 
    :::code language="plaintext" source="code/3-merge-error-azure-repos.txt" highlight="3" :::
 
@@ -331,6 +337,6 @@ You've learned why it's not advisable to push directly to the main branch. Here,
    git reset --hard HEAD~1
    ```
 
-   This command tells your local Git repository to reset the state of the main branch to what it was before the last commit was merged in, and not to save your changes. The *add-orders-queue* branch isn't affected.
+   This command tells your local Git repository to reset the state of the main branch to what it was before the last commit was merged in, and not to save your changes. The _add-orders-queue_ branch isn't affected.
 
 ::: zone-end

@@ -1,3 +1,4 @@
+
 A shared access signature (SAS) is a signed URI that points to one or more storage resources and includes a token that contains a special set of query parameters. The token indicates how the resources may be accessed by the client. One of the query parameters, the signature, is constructed from the SAS parameters and signed with the key that was used to create the SAS. This signature is used by Azure Storage to authorize access to the storage resource.
 
 ## Types of shared access signatures
@@ -43,4 +44,3 @@ To reduce the potential risks of using a SAS, Microsoft provides some guidance:
 * Apply the rule of minimum-required privileges. Only grant the access that's required. For example, in your app, read-only access is sufficient.
 * There are some situations where a SAS isn't the correct solution. When there's an unacceptable risk of using a SAS, create a middle-tier service to manage users and their access to storage.
 
-The most flexible and secure way to use a service or account SAS is to associate the SAS tokens with a stored access policy.

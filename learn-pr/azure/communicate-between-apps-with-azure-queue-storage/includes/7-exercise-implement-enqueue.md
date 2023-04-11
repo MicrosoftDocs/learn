@@ -2,7 +2,7 @@ Now that all the requirements are in place, you can write code that creates a ne
 
 ## Add code to send a message
 
-The sample program contains a `SendMessageAsync` method. In this step, you will write code to implement this method.
+The sample program contains a `SendMessageAsync` method. In this step, you write code to implement this method.
 
 1. Locate the `SendMessageAsync` method.
 
@@ -19,7 +19,7 @@ The sample program contains a `SendMessageAsync` method. In this step, you will 
     NewsArticle article = new NewsArticle() { Headline = headline, Location = location };
     ```
 
-1. This code creates a NewsArticle object that we want to store in our queue.  To do so, we'll first serialize the object to JSON and then use the `SendMessageAsync` method to send the message to our queue. Add this code into the `SendMessageAsyc` method after the line that instantiates a `NewsArticle` object.
+1. This code creates a NewsArticle object that we want to store in our queue.  To do so, serialize the object to JSON and then use the `SendMessageAsync` method to send the message to our queue. Add this code into the `SendMessageAsyc` method after the line that instantiates a `NewsArticle` object.
 
     ```csharp
     // Build and send the message to the queue
@@ -28,7 +28,7 @@ The sample program contains a `SendMessageAsync` method. In this step, you will 
     SendReceipt sendReceipt = response.Value;
     ```
 
-1. Finally, we are going to print out to the console some information about the `SendReceipt` that was included in the response from sending the message. For our application, these fields purely informational, but could be used in an actual application to log or track data about the message submitted to the queue.
+1. Finally, we're going to print to the console some information about the `SendReceipt` that was included in the response from sending the message. For our application, these fields purely informational, but could be used in an actual application to log or track data about the message submitted to the queue.
 
     ```csharp
     Console.WriteLine($"Message sent.  Message id={sendReceipt.MessageId}  Expiration time={sendReceipt.ExpirationTime}");
@@ -60,9 +60,9 @@ The sample program contains a `SendMessageAsync` method. In this step, you will 
 
 ## Execute the application
 
-You are now ready to build and run the program to send your first message to the queue.
+You're now ready to build and run the program to send your first message to the queue.
 
-1. Make sure you have saved the file in the code editor and then use the `dotnet build` command in the Cloud Shell to to build the application.
+1. Make sure you've saved the file in the code editor and then use the `dotnet build` command in the Cloud Shell to build the application.
 
     ```dotnetcli
     dotnet build
@@ -74,9 +74,9 @@ You are now ready to build and run the program to send your first message to the
     dotnet run
     ```
 
-1. When the application runs, choose option 1 to send a message and then input a headline and location of your choice to send a message to the queue. When the menu appears again, you can use 'X' to exit the program.
+1. When the application runs, choose option 1 to send a message, and then input a headline and location of your choice to send a message to the queue. When the menu appears again, you can use 'X' to exit the program.
 
-    You should see output on your screen that looks similar to this.
+    You should see the following output.
 
     ```bash
     What operation would you like to perform?
@@ -107,10 +107,10 @@ You can check queues in the Azure portal using the Azure CLI, or using Azure Pow
 Run the following command in the Cloud Shell environment.\
 
 ```azurecli
-az storage message peek --queue-name newsqueue --connection-string $STORAGE_CONNECTION_STRING 
+az storage message peek --queue-name newsqueue --connection-string $MY_STORAGE_CONNECTION_STRING 
 ```
 
-This should dump the information for your message, which will look something like this:
+This command should dump the information for your message, which looks something like this:
 
 ```json
 [

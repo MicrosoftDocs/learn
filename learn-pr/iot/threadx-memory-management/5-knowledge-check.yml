@@ -4,70 +4,69 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Interactive questions that validate whether the learner achieved the learning objectives.
-  ms.date: 01/27/2022
+  ms.date: 04/19/2022
   author: timlt
   ms.author: timlt
   ms.reviewer: liydu
   manager: lizross
-  ms.custom: engagement-fy23
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3
 content: |
 quiz:
   questions:
-  - content: "Why does ThreadX provide primitive data types?"
-    choices:
-    - content: "To increase processor speed."
-      isCorrect: false
-      explanation: "Incorrect. Data types don't increase processor speed."
-    - content: "To ensure portability between C compilers."
-      isCorrect: true
-      explanation: "Correct! Providing primitive data types helps ensure portability between C compilers."
-    - content: "To reduce data type conflicts."
-      isCorrect: false
-      explanation: "Incorrect. Using primitive data types doesn't reduce data type conflicts."
-  - content: "Which of these statements is true for a ThreadX memory blook pool?"
-    choices:
-    - content: "Using a memory block pool might cause fragmentation."
-      isCorrect: false
-      explanation: "Incorrect. Using a memory block pool never results in fragmentation."
-    - content: "Each memory block is the same size."
-      isCorrect: true
-      explanation: "Correct! Each memory block is the same size in a memory block pool."
-    - content: "Using a memory block pool is a good way to implement nondeterminism."
-      isCorrect: false
-      explanation: "Incorrect. Using a memory block pool can never result in non-determinism."
-  - content: "Which of the following is true for a ThreadX stack?"
-    choices:
-    - content: "There's no minimum size requirements for a stack."
-      isCorrect: false
-      explanation: "Incorrect. A stack size that's too small likely will result in application failure."
-    - content: "The main thread uses the stack to make function calls and to allocate local variables."
-      isCorrect: false
-      explanation: "Incorrect. The compiler uses the stack to make function calls and to temporarily allocate local variables."
-    - content: "The context of a thread is stored in the thread stack."
-      isCorrect: true
-      explanation: "Correct! In a ThreadX stack, the context of the thread is stored in the thread stack."
-  - content: "Which of the following should you avoid in a thread entry function?"
-    choices:
-    - content: "Recursive algorithms."
-      isCorrect: true
-      explanation: "Correct! You should avoid using recursive algorithms in a thread entry function."
-    - content: "Infinite loops."
-      isCorrect: false
-      explanation: "Incorrect. Most thread entry functions are infinite loops."
-    - content: "If statements."
-      isCorrect: false
-      explanation: "Incorrect. No problems result from using if statements in a thread entry function."
-  - content: "What would happen if a thread requested 100 bytes from a memory byte pool, but no memory was available?"
-    choices:
-    - content: "The thread probably would suspend."
-      isCorrect: true
-      explanation: "Correct! The thread probably would suspend."
-    - content: "Memory would be taken from a previous allocation."
-      isCorrect: false
-      explanation: "Incorrect. Memory would not be taken from a previous allocation."
-    - content: "The scheduler would add more memory to the byte pool."
-      isCorrect: false
-      explanation: "Incorrect. No memory would be added in this scenario."
+    - content: 'Why does ThreadX provide primitive data types?'
+      choices:
+        - content: 'To increase processor speed.'
+          isCorrect: false
+          explanation: "Incorrect. Data types don't increase processor speed."
+        - content: 'To ensure portability between C compilers.'
+          isCorrect: true
+          explanation: 'Correct! Providing primitive data types helps ensure portability between C compilers.'
+        - content: 'To reduce data type conflicts.'
+          isCorrect: false
+          explanation: "Incorrect. Using primitive data types doesn't reduce data type conflicts."
+    - content: 'Which of these statements is true for a ThreadX memory block pool?'
+      choices:
+        - content: 'Using a memory block pool might cause fragmentation.'
+          isCorrect: false
+          explanation: 'Incorrect. Using a memory block pool never results in fragmentation.'
+        - content: 'Each memory block is the same size.'
+          isCorrect: true
+          explanation: 'Correct! Each memory block is the same size in a memory block pool.'
+        - content: 'Using a memory block pool is a good way to implement nondeterminism.'
+          isCorrect: false
+          explanation: 'Incorrect. Using a memory block pool can never result in non-determinism.'
+    - content: 'Which of the following is true for a ThreadX stack?'
+      choices:
+        - content: "There's no minimum size requirements for a stack."
+          isCorrect: false
+          explanation: "Incorrect. A stack size that's too small likely will result in application failure."
+        - content: 'The main thread uses the stack to make function calls and to allocate local variables.'
+          isCorrect: false
+          explanation: 'Incorrect. The compiler uses the stack to make function calls and to temporarily allocate local variables.'
+        - content: 'The context of a thread is stored in the thread stack.'
+          isCorrect: true
+          explanation: 'Correct! In a ThreadX stack, the context of the thread is stored in the thread stack.'
+    - content: 'Which of the following should you avoid in a thread entry function?'
+      choices:
+        - content: 'Recursive algorithms.'
+          isCorrect: true
+          explanation: 'Correct! You should avoid using recursive algorithms in a thread entry function.'
+        - content: 'Infinite loops.'
+          isCorrect: false
+          explanation: 'Incorrect. Most thread entry functions are infinite loops.'
+        - content: 'If statements.'
+          isCorrect: false
+          explanation: 'Incorrect. No problems result from using if statements in a thread entry function.'
+    - content: 'What would happen if a thread requested 100 bytes from a memory byte pool, but no memory was available?'
+      choices:
+        - content: 'The thread probably would suspend.'
+          isCorrect: true
+          explanation: 'Correct! The thread probably would suspend.'
+        - content: 'Memory would be taken from a previous allocation.'
+          isCorrect: false
+          explanation: 'Incorrect. Memory would not be taken from a previous allocation.'
+        - content: 'The scheduler would add more memory to the byte pool.'
+          isCorrect: false
+          explanation: 'Incorrect. No memory would be added in this scenario.'

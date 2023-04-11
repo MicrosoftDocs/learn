@@ -1,11 +1,18 @@
-Suppose you have to troubleshoot a virtual network created by your colleagues. Unless you were involved in the creation process of the network, you might not know about all the aspects of the infrastructure. You can use the topology tool to visualize and understand the infrastructure you're dealing with before you start troubleshooting.
 
-Network Watcher's Topology capability enables you to generate a visual diagram of the resources in a virtual network, and the relationships between the resources. The following picture shows an example topology diagram for a virtual network that has three subnets, two VMs, network interfaces, public IP addresses, network security groups, route tables, and the relationships between the resources:
+Administrators sometimes need to troubleshoot virtual networks that they didn't help to create. They might not be fully aware of all the aspects of the infrastructure and configuration.
 
-:::image type="content" source="../media/monitor-visualization-1fb7bd5c.png" alt-text="Screenshot of the Network Watcher Topology page.":::
+Azure Network Watcher provides a network monitoring **topology** tool to help administrators visualize and understand infrastructure. The following image shows an example topology diagram for a virtual network in Network Watcher.
 
+:::image type="content" source="../media/monitor-visualization-1fb7bd5c.png" alt-text="Screenshot of the Network Watcher Topology page in the Azure portal." border="false":::
 
-The topology tool generates a graphical display of your Azure virtual network, its resources, its interconnections, and their relationships with each other.
+### Things to know about the topology tool
 
-> [!NOTE]
-> To generate the topology, you need a Network Watcher instance in the same region as the virtual network.
+Review the following characteristics of the network topology capability in Azure Network Watcher.
+
+- The Network Watcher Topology tool generates a visual diagram of the resources in a virtual network.
+
+- The graphical display shows the resources in the network, their interconnections, and their relationships with each other.
+
+- You can view subnets, virtual machines, network interfaces, public IP addresses, network security groups, route tables, and more.
+
+- To generate a topology, you need an Azure Network Watcher instance in the same region as the virtual network.

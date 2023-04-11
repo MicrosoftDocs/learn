@@ -1,4 +1,4 @@
-Imagine you're an employee of a pizza company named Contoso Pizza. Your team maintains an internal application that is written in ASP.NET MVC 5 and running on .NET Framework 4.8. Your manager has asked you to evaluate whether you should upgrade the application to ASP.NET Core.
+Imagine you're an employee of a pizza company named Contoso Pizza. Your team maintains an internal application that's written in ASP.NET MVC 5 and running on .NET Framework 4.8. Your manager has asked you to evaluate whether you should upgrade the application to ASP.NET Core.
 
 ## Option 1: Stay as-is
 
@@ -10,11 +10,11 @@ If your project timeline and budget allow for a full upgrade to ASP.NET Core, yo
 
 ## Option 3: Incremental upgrade
 
-In a large number of cases, development teams decide to implement a phased update to ASP.NET Core. This migration strategy will allow you to continue to use the existing ASP.NET MVC 5 application, but will allow you to upgrade the .NET runtime in a series of smaller steps. You will start by [dividing the application by either vertical slices or horizontal layers](/dotnet/architecture/porting-existing-aspnet-apps/incremental-migration-strategies), then upgrade each as a separate step.
+In many cases, development teams decide to implement a phased update to ASP.NET Core. This migration strategy will allow you to continue to use the existing ASP.NET MVC 5 application, but will allow you to upgrade the .NET runtime in a series of smaller steps. You'll start by [dividing the application by either vertical slices or horizontal layers](/dotnet/architecture/porting-existing-aspnet-apps/incremental-migration-strategies), then upgrade each as a separate step.
 
 ## Additional opportunities
 
-Upgrading to ASP.NET Core provides you some new opportunities to host and deploy your application. You may want to consider these, either in as part of your upgrade plan or as a follow-up to your upgrade plan.
+Upgrading to ASP.NET Core provides you some new opportunities to host and deploy your application. You may want to consider these, either as part of your upgrade plan or as a follow-up to your upgrade plan.
 
 ## Migrate to the cloud
 
@@ -22,4 +22,4 @@ ASP.NET Core is optimized for cloud hosting, and you may consider migrating all 
 
 ## Update to container-based deployment
 
-While you were previously constrained to IIS hosting for ASP.NET MVC 5, you may now deploy your ASP.NET Core application to a container-based deployment model. For more information on why and how to use container-based deployment with ASP.NET Core, see our [Microservices with .NET](https://dotnet.microsoft.com/apps/aspnet/microservices) guidance.
+While ASP.NET MVC on .NET Framework was limited to running in IIS on Windows, ASP.NET Core apps have many deployment options, including containers. For more information on why and how to use container-based deployment with ASP.NET Core, see our [Microservices with .NET](https://dotnet.microsoft.com/apps/aspnet/microservices) guidance.

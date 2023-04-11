@@ -1,3 +1,4 @@
+
 Functions share a few core technical concepts and components, regardless of the language or binding you use.
 
 After completing this module, you'll be able to:

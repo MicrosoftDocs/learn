@@ -20,6 +20,15 @@ This type of routing is known as application layer (OSI layer 7) load balancing.
  -  **Rewrite HTTP headers**: HTTP headers allow the client and server to pass parameter information with the request or the response.
  -  **Custom error pages:** Application Gateway allows you to create custom error pages instead of displaying default error pages. You can use your own branding and layout using a custom error page.
 
+## When to use Azure Application Gateway
+
+Azure Application Gateway can meet your organization’s needs for the following reasons:
+
+- Azure Application Gateway routing allows traffic to be directed from an endpoint in Azure to a back-end pool made up of servers running in Adatum’s on-premises datacenter. The health probe functionality of Azure Application Gateway will ensure that traffic isn't being directed to any server that may have become unavailable.
+- Azure Application Gateway TLS termination functionality will reduce the amount of CPU capacity that servers in the back-end pool allocate to encryption and decryption operations.
+- Azure Application Gateway allows Adatum to use a web application firewall to block cross-site scripting and SQL injection traffic before it reaches servers in the back-end pool.
+- Azure Application Gateway supports session affinity, required because the several web applications deployed by Adatum use user session state information stored locally on individual servers in the back-end pool.
+
 ## Determine Application Gateway routing
 
 Clients send requests to your web apps to the IP address or DNS name of the gateway. The gateway routes requests to a selected web server in the back-end pool, using a set of rules configured for the gateway to determine where the request should go.
@@ -46,25 +55,8 @@ Multi-site configurations are useful for supporting multi-tenant applications, w
 
 Application Gateway is available under a Standard\_v2 SKU. Web Application Firewall (WAF) is available under a WAF\_v2 SKU. The v2 SKU offers performance enhancements and adds support for critical new features like autoscaling, zone redundancy, and support for static VIPs. Existing features under the Standard and WAF SKU continue to be supported in the new v2 SKU.
 
-The new v2 SKU includes the following enhancements:
+Review the [feature comparison table](/azure/application-gateway/overview-v2#feature-comparison-between-v1-sku-and-v2-sku) between v1 and v2 SKU to determine which SKU meets your deployment needs. 
 
-**Autoscaling**: Application Gateway or WAF deployments under the autoscaling SKU can scale out or in based on changing traffic load patterns. Autoscaling also removes the requirement to choose a deployment size or instance count during provisioning. This SKU offers true elasticity. In the Standard\_v2 and WAF\_v2 SKU, Application Gateway can operate both in fixed capacity (autoscaling disabled) and in autoscaling enabled mode. Fixed capacity mode is useful for scenarios with consistent and predictable workloads. Autoscaling mode is beneficial in applications that see variance in application traffic.
-
-**Zone redundancy**: An Application Gateway or WAF deployment can span multiple Availability Zones, removing the need to provision separate Application Gateway instances in each zone with a Traffic Manager. You can choose a single zone or multiple zones where Application Gateway instances are deployed, which makes it more resilient to zone failure. The backend pool for applications can be similarly distributed across availability zones.
-
-**Not all Azure regions support availability zones yet**.
-
-**Static VIP**: Application Gateway v2 SKU supports the static VIP type exclusively. This ensures that the VIP associated with the application gateway doesn't change for the lifecycle of the deployment, even after a restart. There isn't a static VIP in v1, so you must use the application gateway URL instead of the IP address for domain name routing to App Services via the application gateway.
-
-**Header Rewrite**: Application Gateway allows you to add, remove, or update HTTP request and response headers with v2 SKU.
-
-**Key Vault Integration**: Application Gateway v2 supports integration with Key Vault for server certificates that are attached to HTTPS enabled listeners.
-
-**Azure Kubernetes Service Ingress Controller**: The Application Gateway v2 Ingress Controller allows the Azure Application Gateway to be used as the ingress for an Azure Kubernetes Service (AKS) known as AKS Cluster.
-
-**Performance enhancements**: The v2 SKU offers up to 5X better TLS offload performance as compared to the Standard/WAF SKU.
-
-**Faster deployment and update time:** The v2 SKU provides faster deployment and update time as compared to Standard/WAF SKU. This also includes WAF configuration changes.
 
 ## Choosing between Azure Application Gateway v2 and Web Application Firewall V2 SKUs
 

@@ -1,7 +1,7 @@
 For some computational tasks, quantum computing provides exponential speedups. These speedups are possible thanks to three phenomena from
 quantum mechanics: superposition, interference, and entanglement.
 
-In the [Create your first Q# program by using the Quantum Development Kit](/training/modules/qsharp-create-first-quantum-development-kit?azure-portal=true) module, you used superposition to generate random numbers from qubits. In this part, you'll learn more about superposition.
+In the [Create your first Q# program by using the Quantum Development Kit](/training/modules/qsharp-create-first-quantum-development-kit?azure-portal=true) module, you used superposition to generate random numbers from qubits. In this unit, you'll learn more about superposition.
 
 ## Quantum computers are quantum systems
 
@@ -14,7 +14,6 @@ This equation captures the _wave function_, $\psi(t)$, which represents the stat
 You may be thinking that you didn't choose the life of galactic adventures to learn about quantum mechanics and algebra in the first place. Fortunately, you don't need the Schrödinger equation to do quantum programming. In practice, nobody thinks in terms of the Schrödinger equation when they write quantum algorithms. But we can use the equation to help us understand some concepts of quantum computing.
 
 The Schrödinger equation determines the evolution of the state of the system, represented by the wave function $\psi$. That is, given a time $t$, the equation helps us find the state of the system at that time. Each wave function $\psi$ is associated with an important concept in quantum computing: the *probability amplitude* of the wave function. The probability amplitude is a complex number that determines the probability of getting a certain outcome when we measure the system. 
-
 
 The probability amplitude is an important difference from classical computing. In quantum computing, we don't describe bits as being in determined, factual states. Rather, we describe bits by the probabilities of finding their states when we observe them.
 
@@ -157,4 +156,4 @@ $$P(1)=\left|\frac1{\sqrt{2}}\right|^2=\frac12.$$
 Each state has a 50-percent probability of being measured, so we have a balanced
 bit generator. We also can check that $\frac12 + \frac12 = 1$.
 
-In the next part, you'll use Q# to see how to prepare different superpositions of qubits and inspect their probabilities.
+In the next unit, you'll use Q# to see how to prepare different superpositions of qubits and inspect their probabilities.

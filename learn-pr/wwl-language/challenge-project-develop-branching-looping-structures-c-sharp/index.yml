@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.challenge-project-develop-branching-looping-structures-c-sharp
+metadata:
+  title: Challenge project - Develop branching and looping structures in C#
+  description: "Challenge project - Develop branching and looping structures in C#"
+  ms.date: 03/16/2023
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Challenge project - Develop branching and looping structures in C#
+summary: Demonstrate your ability to develop a console app that implements selection and iteration statements to achieve app specifications.
+abstract: |
+  In this module, you'll demonstrate your ability to:
+  *   Use Visual Studio Code to develop a C# console application that uses a combination of selection and iteration statements to implement logical workflows in accordance with supplied application data and user interactions.
+  *   Evaluate the underlying conditions and make an informed decision when choosing between if-elseif-else and switch statements, and between foreach, for, while, and do iteration statements.
+  *   Scope variables at an appropriate level within an application.
+prerequisites: |
+  *   Experience using Visual Studio Code to develop, build, and run C# console applications that include console I/O and access the methods of .NET classes
+  *   Experience using C# code to evaluate conditional expressions and manage variable scope inside and outside of code blocks
+  *   Experience using if-elseif-else and switch-case statements in C# to match a variable or expression against several possible outcomes
+  *   Experience using foreach, for, do, and while statements in C# to loop through a block of code and access elements of array variables
+iconUrl: /training/achievements/7-challenge-project-develop-branching-and-looping-structures-in-csharp.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- dotnet
+- dotnet-framework
+- vs-code
+subjects:
+- development-tools
+units:
+- learn.wwl.challenge-project-develop-branching-looping-structures-c-sharp.introduction
+- learn.wwl.challenge-project-develop-branching-looping-structures-c-sharp.prepare
+- learn.wwl.challenge-project-develop-branching-looping-structures-c-sharp.exercise-build-loop-verify-physical
+- learn.wwl.challenge-project-develop-branching-looping-structures-c-sharp.exercise-build-loop-verify-personality
+- learn.wwl.challenge-project-develop-branching-looping-structures-c-sharp.knowledge-check
+- learn.wwl.challenge-project-develop-branching-looping-structures-c-sharp.summary
+badge:
+  uid: learn.wwl.challenge-project-develop-branching-looping-structures-c-sharp.badge

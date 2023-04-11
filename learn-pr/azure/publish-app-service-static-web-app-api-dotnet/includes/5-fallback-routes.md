@@ -2,7 +2,7 @@ There's a client-side route **/products** in your front-end application that dis
 
 You see a 404 error when you refresh the page because the browser sends a request to the hosting platform to serve **/products**. However, there's no page on the server named **products** to serve.
 
-Fortunately, it's easy to resolve this issue by creating a fallback route. A fallback route is a route that matches all unmatched page requests to the server.
+Fortunately, it's easy to resolve this issue by creating a fallback route. A fallback route is a route that pairs all unmatched page requests to the server.
 
 ## Configure a fallback route
 

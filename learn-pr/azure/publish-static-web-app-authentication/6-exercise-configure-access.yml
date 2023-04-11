@@ -4,7 +4,7 @@ title: Exercise - Configure authentication providers and access
 metadata:
   title: Exercise - Configure authentication providers and access
   description: Use Azure Static Web Apps settings to prevent unwanted access to unauthenticated users and restrict allowed identity providers
-  ms.date: 06/17/2021
+  ms.date: 12/20/2022
   author: sinedied
   ms.author: yolasors
   ms.topic: interactive-tutorial

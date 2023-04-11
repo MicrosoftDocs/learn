@@ -10,4 +10,4 @@ In this module, you learned how to:
 
 - Identify when to use either a `while` loop or a `for` loop.
 - Use a `while` loop to run a task multiple times, as long as a certain condition remains true.
-- Use a `for` loop to loop over list data.
+- Use a `for` loop to iterate over list data.

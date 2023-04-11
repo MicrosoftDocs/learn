@@ -32,7 +32,7 @@ roles:
   - data-engineer
   - developer
 products:
-  - vs-code
+  - azure
 subjects:
 - data-engineering
 units:

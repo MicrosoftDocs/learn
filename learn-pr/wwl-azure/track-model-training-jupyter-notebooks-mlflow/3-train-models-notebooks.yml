@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.track-model-training-jupyter-notebooks-mlflow.train-models-notebooks
+title: Train and track models in notebooks
+metadata:
+  title: Train and track models in notebooks
+  description: "Train and track models in notebooks"
+  ms.date: 01/06/2023
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-train-models-notebooks.md)]

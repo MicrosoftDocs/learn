@@ -24,9 +24,10 @@ To install Visual Studio Code:
 
 1. Go to the [Visual Studio Code download](https://code.visualstudio.com/download?azure-portal=true) page, and select the download option for your operating system.
 
-1. If you need additional setup guidance, visit the installation page for your operating system:
-    - [Linux](https://code.visualstudio.com/docs/setup/linux?azure-portal=true)
-    - [macOS](https://code.visualstudio.com/docs/setup/mac?azure-portal=true)
-    - [Windows](https://code.visualstudio.com/docs/setup/windows?azure-portal=true)
+1. If you want more setup guidance, visit the installation page for your operating system:
+
+   - [Linux](https://code.visualstudio.com/docs/setup/linux?azure-portal=true)
+   - [macOS](https://code.visualstudio.com/docs/setup/mac?azure-portal=true)
+   - [Windows](https://code.visualstudio.com/docs/setup/windows?azure-portal=true)
 
 Now that you have a code editor, you're ready to install TypeScript.

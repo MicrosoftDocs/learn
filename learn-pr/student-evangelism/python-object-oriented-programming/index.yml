@@ -3,7 +3,7 @@ uid: learn.student-evangelism.python-object-oriented-programming
 metadata:
   title: Introduction to object-oriented programming with Python
   description: This module will teach you how to model problems by using object-oriented programming (OOP) concepts.
-  ms.date: 05/01/2022
+  ms.date: 01/27/2023
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
@@ -23,7 +23,7 @@ roles:
   - developer
   - student
 products:
-  - vs
+  - vs-code
 prerequisites: |
   - Basic knowledge of Python - syntax, writing and invoking functions, creating variables, reading inputs, and generating outputs from the Python console
   - Familiarity with using a text editor or IDE  

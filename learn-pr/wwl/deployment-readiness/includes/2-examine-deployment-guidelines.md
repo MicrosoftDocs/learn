@@ -1,0 +1,12 @@
+
+You can accomplish an effective desktop deployment by implementing the following basic guidelines:
+
+ -  Take an inventory and establish a network map of the existing client computers, servers, and other relevant networking services to determine the installed application base and hardware types your organization currently has deployed. You should consider the organization's main operating center, branch offices, and other locations. You should document even small offices outside the corporate network and any users working remotely from home offices and while traveling.
+ -  Determine what hardware you can reuse for the new computer deployment and which types you need to retire. You must fully understand the hardware requirements for a new operating system and how the system will work with existing peripheral devices.
+ -  Determine which applications you can redeploy on new desktop systems. Start a process for packaging or scripting those applications so that you can reinstall them quickly and consistently without user intervention.
+ -  Define a strategy for addressing applications the new platform can't support. For example, you might have a critical application that a new operating system doesn't support. Still, it might be a candidate for virtualization technology such as Hyper-V in the Windows 10 or Windows 11 operating system or by using RemoteApp in the Windows Server operating system.
+ -  Reduce costs by utilizing Windows Server Hyper-V, Windows Virtual Desktop, Remote Desktop Services, Endpoint Manager, and the System Center product line. These products enable you to virtualize your enterprise, which might provide overall cost savings compared to physical deployment.
+ -  Establish a process to capture user data, settings, and preferences on currently deployed systems and to restore the data on newly deployed systems.
+ -  Provide a method for backing up all the relevant data on currently deployed computers before redeployment. You can do this as part of the user data capture mentioned above.
+ -  Provide an end-to-end process for the actual desktop deployment. Several Microsoft automated systems tools can do this, all of which are covered in more detail in the next lesson.
+ -  Create a plan for training users on the updated desktop systems. Windows's new features and functionality will help reduce troubleshooting issues significantly post-deployment.

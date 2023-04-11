@@ -19,7 +19,7 @@ abstract: |
   - Perform code coverage testing to see how much of your code is covered by unit tests.
   - Fix and verify test failures in your build pipeline.
 prerequisites: |
-  - An Azure DevOps organization
+  - An Azure DevOps organization with access to **Microsoft-hosted** parallel jobs. [Check your parallel jobs and request a free grant](/azure/devops/pipelines/troubleshooting/troubleshooting#check-for-available-parallel-jobs).
   - Visual Studio Code
   - .NET 6.0 SDK
   - Git

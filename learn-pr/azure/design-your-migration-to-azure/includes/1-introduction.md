@@ -19,5 +19,5 @@ In this module, you'll:
 
 ## Prerequisites
 
-* Knowledge of cloud and traditional architecture concepts
-* Knowledge of networking, compute, and database systems
+* Knowledge of cloud and traditional architecture concepts.
+* Knowledge of networking, compute, and database systems.

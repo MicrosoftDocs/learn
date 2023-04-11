@@ -8,7 +8,7 @@ A geo-replicated registry provides the following benefits:
 
 - Single registry/image/tag names can be used across multiple regions
 - Network-close registry access from regional deployments
-- No additional egress fees, as images are pulled from a local, replicated registry in the same region as your container host
+- No extra egress fees, as images are pulled from a local, replicated registry in the same region as your container host
 - Single management of a registry across multiple regions
 
 ## Create a replicated region for an Azure Container Registry
@@ -71,13 +71,13 @@ Keep in mind that you aren't limited to the Azure CLI to list your image replica
 
 ## Summary
 
-In this module, you learned about the Azure Container Registry. You deployed your own registry, added a custom container, and created a container image. Finally, you saw how easy it is to replicate a container registry across Azure regions.
+In this module, you learned about the Azure Container Registry. You deployed your own registry, added a custom container, and created a container image. Finally, you saw how easy it's to replicate a container registry across Azure regions.
 
 ## Clean up resources
 
 You want to clean up the resources you created using your Azure subscription in this module so that you won't continue to be charged for them.
 
-1. In Azure, select **Resource groups** on the left.
+1. In Azure, select **Resource groups** from the left menu.
 
 1. Find the **learn-deploy-acr-rg** resource group, or the resource group name that you used, and select it.
 

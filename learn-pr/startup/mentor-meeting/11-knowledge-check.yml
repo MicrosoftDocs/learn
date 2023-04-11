@@ -1,0 +1,92 @@
+### YamlMime:ModuleUnit
+uid: learn.startups.mentor-meeting.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "This content is part of the \"Make the most of a mentor meeting\" module."
+  ms.date: 11/11/2022
+  author: turoczy
+  ms.author: v-rturoczy
+  ms.topic: interactive-tutorial
+  ms.prod: learning-consumer
+durationInMinutes: 5
+
+quiz:
+  questions:
+  - content: "The best way to get value out of a relationship with a mentor is to:"
+    choices:
+    - content: "Show up"
+      isCorrect: false
+      explanation: "Creating a relationship with a mentor takes more than simply showing up. Spend time identifying specific topics to discuss with the mentor."
+    - content: "Identify specific topics to discuss with the mentor that are relevant to their experience"
+      isCorrect: true
+      explanation: "In order to make the most valuable use of time, you should spend time researching your mentor and preparing for the meeting."
+    - content: "Ask the mentor to invest in your company"
+      isCorrect: false
+      explanation: "While investors often mentor, a mentor's job is to provide advice for you, not financial support."
+    - content: "Wait for the mentor to drive the relationship"
+      isCorrect: false
+      explanation: "This is your opportunity to drive the relationship with the mentor. You are in charge."
+
+  - content: "What resources could you use to research a mentor before meeting with them?"
+    choices:
+    - content: "Social media"
+      isCorrect: false
+      explanation: "Social media can be a valuable resource of information, but it's important to use multiple sources for your research."
+    - content: "Google or another search engine"
+      isCorrect: false
+      explanation: "Search engines can be valuable resources of information, but it's important to use multiple sources for your research."
+    - content: "A personal website, newsletter, or podcast"
+      isCorrect: false
+      explanation: "Personal content can be valuable resources of information, but it's important to use multiple sources for your research."
+    - content: "LinkedIn"
+      isCorrect: false
+      explanation: "LinkedIn can be a valuable resource of information, but it's important to use multiple sources for your research."
+    - content: "All of the above"
+      isCorrect: true
+      explanation: "It's best to use a variety of resources to do your research on your mentor before you meet with them."
+
+  - content: "In the mentor-mentee relationship, the responsibility for organizing, scheduling, and facilitating the meetings belongs to:"
+    choices:
+    - content: "The organization that introduced the mentor and mentee"
+      isCorrect: false
+      explanation: "The organization can facilitate the initial introduction, but the ongoing relationship is the responsibility of the mentee."
+    - content: "The mentor"
+      isCorrect: false
+      explanation: "A mentor is expected to respond to mentee requests in a timely manner and to engage in multiple meetings. But the management of this relationship is the responsibility of the mentee."
+    - content: "The mentee"
+      isCorrect: true
+      explanation: "A mentee is in charge of managing all aspects of the mentor-mentee relationship."
+    - content: "A virtual assistant"
+      isCorrect: false
+      explanation: "When working to establish and manage a relationship with a mentor, it's important for the mentee to develop a direct relationship with them."
+
+  - content: "If you're hoping to have a short in-person meeting with your mentor that involves confidential materials, it's best to schedule that meeting in a:"
+    choices:
+    - content: "Coffee shop"
+      isCorrect: false
+      explanation: "While a coffee shop can be a perfect venue for a meeting, discussing private topics in that environment can be challenging."
+    - content: "Office setting"
+      isCorrect: true
+      explanation: "Choosing an office setting where you can control the privacy of the environment is ideal for confidentiality. Furthermore, the office environment is far more conducive to reviewing materials."
+    - content: "Restaurant"
+      isCorrect: false
+      explanation: "Not only is a restaurant a public location with a wide variety of patrons, but the table settings also make it difficult to effectively use the space for reviewing materials."
+    - content: "Bar"
+      isCorrect: false
+      explanation: "A bar is a public location with a wide variety of patrons. It can be an incredibly difficult environment in which to conduct reviews of confidential material."
+
+  - content: "A well-structured agenda focuses primarily on:"
+    choices:
+    - content: "A start and end time"
+      isCorrect: false
+      explanation: "While the beginning and end times are important, you should strive to provide more structure and timing as part of your meeting agenda."
+    - content: "The mentee's problem"
+      isCorrect: false
+      explanation: " While the problem being discussed is important, it's ideal to reserve time for the mentor's advice."
+    - content: "The mentor's advice"
+      isCorrect: false
+      explanation: "While the mentor's advice is important, it's ideal to reserve adequate time for describing the mentee's current request or problem."
+    - content: "A balance of time for outlining the problem and providing advice"
+      isCorrect: true
+      explanation: "A good mentor meeting creates space for both the mentor and the mentee to share their thoughts."

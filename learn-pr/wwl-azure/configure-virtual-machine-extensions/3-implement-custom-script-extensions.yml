@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-virtual-machine-extensions.implement-custom-script-extensions
-title: Implement custom script extensions
+title: Implement Custom Script Extensions
 metadata:
-  title: Implement custom script extensions
-  description: "Implement custom script extensions"
-  ms.date: 07/15/2022
+  title: Implement Custom Script Extensions
+  description: "Implement Custom Script Extensions for your virtual machines."
+  ms.date: 12/19/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial

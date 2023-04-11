@@ -206,7 +206,7 @@ At the moment, the app shows the configuration dialog but doesn't allow you to c
     }
     ```
 
-    You'll see that there's a lot of code currently in the **index.razor** component that we can move into the new class. The next step is to make this service available in the app.
+    You'll see that there's code currently in the **index.razor** component that we can move into the new class. The next step is to make this service available in the app.
 
 1. In the file explorer, select **Program.cs**.
 1. In the part of the file with the lines that start with `builder.Services.`, add this line:

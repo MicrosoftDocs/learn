@@ -28,9 +28,6 @@ roles:
 - student
 products:
 - azure
-- vs
-- vs-code
-- vs-mac
 - azure-sdks
 subjects:
 - cloud-computing

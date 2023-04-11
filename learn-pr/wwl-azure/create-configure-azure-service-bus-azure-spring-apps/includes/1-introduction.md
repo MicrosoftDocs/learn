@@ -1,3 +1,8 @@
+---
+interactive:bash
+zone_pivot_groups:azure-interface
+title:Introduction
+---
 At this point, you've deployed the Spring Petclinic application and the services are running. However, a few of your microservices need to send messages to a third party system using a message bus. Additionally, you want to enable the intake of telemetry events.
 
 To provide a solution using native Azure services, you'll be utilizing Azure Service Bus and Azure Event Hubs.

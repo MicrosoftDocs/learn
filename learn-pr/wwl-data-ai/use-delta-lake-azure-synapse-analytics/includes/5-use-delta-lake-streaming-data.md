@@ -45,7 +45,7 @@ from pyspark.sql.types import *
 from pyspark.sql.functions import *
 
 # Create a stream that reads JSON data from a folder
-streamFolder = '/streamingdata/'
+inputPath = '/streamingdata/'
 jsonSchema = StructType([
     StructField("device", StringType(), False),
     StructField("status", StringType(), False)

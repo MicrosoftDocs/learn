@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Interactive questions that validate whether the learner achieved the learning objectives.
-  ms.date: 03/30/2022
+  ms.date: 02/23/2023
   author: mpolicht
   ms.author: nedelgad
   ms.topic: interactive-tutorial
@@ -25,39 +25,39 @@ quiz:
     - content: 'GRS'
       isCorrect: false
       explanation: 'Incorrect. Geo-redundant storage implements region-level resiliency by enabling asynchronous replication of the content of a storage account across two regions. This is more expensive than ZRS.'
-  - content: 'What is the minimum period of time after which a blob assigned to the Cool tier is no longer subject to the early deletion charge?'
+  - content: 'What is the minimum period of time after which a blob assigned to the cool tier is no longer subject to the early deletion charge?'
     choices:
     - content: '30 days'
       isCorrect: true
-      explanation: 'Correct. 30 days is the minimum period of time after which a blob assigned to the Cool tier is no longer subject to the early deletion charge.'
+      explanation: 'Correct. 30 days is the minimum period of time after which a blob assigned to the cool tier is no longer subject to the early deletion charge.'
     - content: '90 days'
       isCorrect: false
-      explanation: 'Incorrect. 90 days isn’t the minimum period of time after which a blob assigned to the Cool tier is no longer subject to the early deletion charge.'
+      explanation: 'Incorrect. 90 days isn’t the minimum period of time after which a blob assigned to the cool tier is no longer subject to the early deletion charge.'
     - content: '180'
       isCorrect: false
-      explanation: 'Incorrect. 180 days isn’t the minimum period of time after which a blob assigned to the Cool tier is no longer subject to the early deletion charge.'
-  - content: 'What’s the minimum period of time after which a blob assigned to the Archive tier is no longer subject to the early deletion charge?'
+      explanation: 'Incorrect. 180 days isn’t the minimum period of time after which a blob assigned to the cool tier is no longer subject to the early deletion charge.'
+  - content: 'What’s the minimum period of time after which a blob assigned to the archive tier is no longer subject to the early deletion charge?'
     choices:
     - content: '30 days'
       isCorrect: false
-      explanation: 'Incorrect. 30 days isn’t the minimum period of time after which a blob assigned to the Archive tier is no longer subject to the early deletion charge.'
+      explanation: 'Incorrect. 30 days isn’t the minimum period of time after which a blob assigned to the archive tier is no longer subject to the early deletion charge.'
     - content: '90 days'
       isCorrect: false
-      explanation: 'Incorrect. 90 days isn’t the minimum period of time after which a blob assigned to the Archive tier is no longer subject to the early deletion charge.'
+      explanation: 'Incorrect. 90 days isn’t the minimum period of time after which a blob assigned to the archive tier is no longer subject to the early deletion charge.'
     - content: '180 days'
       isCorrect: true
-      explanation: 'Correct. 180 days is the minimum period of time after which a blob assigned to the Archive tier is no longer subject to the early deletion charge.'
-  - content: 'What’s the expected amount of time to hydrate a blob assigned to the Archive tier without raising a high priority request?'
+      explanation: 'Correct. 180 days is the minimum period of time after which a blob assigned to the archive tier is no longer subject to the early deletion charge.'
+  - content: 'What’s the expected amount of time to rehydrate a blob assigned to the archive tier without raising a high priority request?'
     choices:
     - content: '1 hour'
       isCorrect: false
-      explanation: 'Incorrect. The expected amount of time to hydrate a blob assigned to the Archive tier without raising a high priority request isn’t 1 hour. However, 1 hour is expected with a high priority request.'
+      explanation: 'Incorrect. The expected amount of time to rehydrate a blob assigned to the archive tier without raising a high priority request isn’t 1 hour. However, 1 hour is expected with a high priority request.'
     - content: '5 hours'
       isCorrect: false
-      explanation: 'Incorrect. The expected amount of time to hydrate a blob assigned to the Archive tier without raising a high priority request isn’t 5 hours.'
+      explanation: 'Incorrect. The expected amount of time to rehydrate a blob assigned to the archive tier without raising a high priority request isn’t 5 hours.'
     - content: '15 hours'
       isCorrect: true
-      explanation: 'Correct. The expected amount of time to hydrate a blob assigned to the Archive tier without raising a high priority request is 15 hours. 1 hour is expected with a high priority request.'
+      explanation: 'Correct. The expected amount of time to rehydrate a blob assigned to the archive tier without raising a high priority request is 15 hours. 1 hour is expected with a high priority request.'
   - content: 'What’s the minimum size of a block in which Azure Blob Storage reservations can be purchased?'
     choices:
     - content: '1 TB'

@@ -8,7 +8,7 @@ Suppose you have a register that consists of only two qubits. Since each qubit i
 
 $$|00\rangle, |01\rangle, |10\rangle, |11\rangle$$
 
-Where the first position corresponds to the first qubit; and the second position to the second qubit. For example, the quantum state $|01\rangle$ , denotes the joint of the first qubit in the $|0\rangle$ state and the second qubit in the $|1\rangle$ state. Two of these options can be put into superposition:
+Where the first position corresponds to the first qubit; and the second position to the second qubit. For example, the quantum state $|01\rangle$, denotes the joint of the first qubit in the $|0\rangle$ state and the second qubit in the $|1\rangle$ state. Two of these options can be put into superposition:
 
 $$|\psi\rangle=\frac1{\sqrt2}|00\rangle+\frac1{\sqrt2}|11\rangle.$$
 
@@ -23,19 +23,17 @@ In such a state, only two outcomes are possible when you measure the state of bo
 > computers. The formal details of this difference are beyond the
 > scope of this module.
 
-Similarly, you can set up a superposition state like the following:
+Similarly, you can set up this superposition state:
 
 $$|\psi\rangle=\frac1{\sqrt2}|01\rangle+\frac1{\sqrt2}|10\rangle.$$
 
-In this case, only **$|01\rangle$** and **$|01\rangle$** are possible outcomes. Again, by measuring just one of the qubits, you already know the result of the other qubit. This
-correlation can be useful in algorithms.
+In this case, only **$|01\rangle$** and **$|01\rangle$** are possible outcomes. Again, by measuring just one of the qubits, you already know the result of the other qubit. This correlation can be useful in algorithms.
 
-The states we've reviewed aren't the only entangled states. In general, we say that two systems are entangled when the state of the global system cannot be written as a linear combination of the subsystems. For example, consider the following two-qubit quantum state:
+The states we've reviewed aren't the only entangled states. In general, we say that two systems are entangled when the state of the global system can't be written as a linear combination of the subsystems. For example, consider the following two-qubit quantum state:
 
 $$|\phi\rangle=\frac1{\sqrt2}|00\rangle+\frac1{\sqrt2}|01\rangle = |0\rangle \lbrace \frac1{\sqrt2}(|0\rangle +|1\rangle) \rbrace.$$
 
-
-In the above quantum state two qubits are in superposition, but they are not entangled as the system can be expressed as a linear combination of the states of the individual qubits; the first qubit is in $|0\rangle$ state while the second qubit is in $\frac1{\sqrt2}(|0\rangle +|1\rangle)$ state.
+In the preceding quantum state two qubits are in superposition, but they aren't entangled as the system can be expressed as a linear combination of the states of the individual qubits. The first qubit is in the $|0\rangle$ state while the second qubit is in the $\frac1{\sqrt2}(|0\rangle +|1\rangle)$ state.
 
 Entanglement is a quantum correlation, which is very different from classical correlations. In entanglement, the state of the systems isn't determined, and you can talk only about the probabilities associated with the outcomes. The global system must be considered as one. In fact, you can say that two systems are entangled when local classical physics can't explain the correlations between the measurements of both systems.
 

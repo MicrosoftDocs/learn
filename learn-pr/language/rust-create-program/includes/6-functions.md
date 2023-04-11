@@ -31,7 +31,7 @@ fn goodbye(message: &str) {
 }
 
 fn main() {
-    let formal = "Formal: Good bye.";
+    let formal = "Formal: Goodbye.";
     let casual = "Casual: See you later!";
     goodbye(formal);
     goodbye(casual);
@@ -41,7 +41,7 @@ fn main() {
 We'll test our function by calling it from the `main` function with two different argument values, and then check the output:
 
 ```output
-Formal: Good bye.
+Formal: Goodbye.
 Casual: See you later!
 ```
 
