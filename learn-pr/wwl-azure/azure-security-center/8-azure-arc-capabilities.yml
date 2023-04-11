@@ -4,7 +4,7 @@ title: Azure Arc capabilities
 metadata:
   title: Azure Arc capabilities
   description: "Azure Arc capabilities"
-  ms.date: 04/05/2023
+  ms.date: 04/11/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
@@ -12,4 +12,4 @@ metadata:
   zone_pivot_groups: None
 durationInMinutes: 7
 content: |
-  [!include[](includes/6-azure-arc-capabilities.md)]
+  [!include[](includes/8-azure-arc-capabilities.md)]
