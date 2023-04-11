@@ -34,7 +34,6 @@ units:
 - learn.wwl.get-started-azure-databricks.understand
 - learn.wwl.get-started-azure-databricks.provision-workspaces-clusters
 - learn.wwl.get-started-azure-databricks.work-notebooks
-- learn.wwl.get-started-azure-databricks.knowledge-check
 - learn.wwl.get-started-azure-databricks.summary
 badge:
   uid: learn.wwl.get-started-azure-databricks.badge
