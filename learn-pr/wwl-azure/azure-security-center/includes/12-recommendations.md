@@ -18,7 +18,7 @@ Defender for Cloud **makes its security recommendations based on your chosen ini
 
 In practice, it works like this:
 
-1.  Azure Security Benchmark is an ***initiative*** that contains requirements.
+1.  Microsoft Cloud security benchmark is an ***initiative*** that contains requirements.
     
     For example, Azure Storage accounts must restrict network access to reduce their attack surface.
 2.  The initiative includes multiple ***policies***, each requiring a specific resource type. These policies enforce the requirements in the initiative.
