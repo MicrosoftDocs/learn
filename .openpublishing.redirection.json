@@ -21329,6 +21329,11 @@
       "source_path": "learn-pr/wwl-data-ai/use-data-loading-best-practices-azure-synapse-analytics/8-implement-workload-management.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/load-optimize-data-into-relational-data-warehouse/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-data-loading-best-practices-azure-synapse-analytics/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/load-optimize-data-into-relational-data-warehouse/",
+      "redirect_document_id": false
     }
   ]
 }
