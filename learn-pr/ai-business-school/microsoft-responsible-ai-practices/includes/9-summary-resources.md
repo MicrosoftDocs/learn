@@ -102,7 +102,7 @@ With these foundational principles in place, we began developing more scenario-s
 11. [Microsoft, "Microsoft SEAL."](https://www.microsoft.com/research/project/microsoft-seal/)
 12. [Microsoft, "AI security risk assessment using Counterfit." Will Pearce, Ram Shankar Siva Kumar, 3 May 2021.](https://www.microsoft.com/security/blog/2021/05/03/ai-security-risk-assessment-using-counterfit)
 13. [Microsoft, "Use differential privacy in Azure Machine Learning."](/azure/machine-learning/how-to-differential-privacy)
-14. [Microsoft, Presidio.](https://presidio-demo.azurewebsites.net/) 
+14. [Microsoft, Presidio.](https://microsoft.github.io/presidio/) 
 15. [Microsoft, "Azure confidential computing."](https://azure.microsoft.com/solutions/confidential-compute/)
 16. [National Science Foundation, "A Private Data Sharing Interface."](https://privacytools.seas.harvard.edu/publications/psipaper)
 17. [University of Chicago, "Aequitas."](http://www.datasciencepublicpolicy.org/projects/aequitas/)
