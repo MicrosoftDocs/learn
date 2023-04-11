@@ -10,11 +10,9 @@ The following sections discussing performance options don't apply to Ultra disks
 
 ## Performance tiers for Azure Disk Storage
 
-For Premium SSD managed disks only, you can adjust and balance the IOPS, throughput, and latency of your disks by selecting the right performance tier for your needs. To select the right combination, you should be aware of your application requirements. Applications that have high I/O, like database servers or online transactional processing systems, will require higher IOPS. Applications that are more computational might work well with much lower requirements.
+For Premium SSD managed disks only, you can adjust and balance the IOPS and throughput of your disks by selecting the right performance tier for your needs. To select the right combination, you should be aware of your application requirements. Applications that have high I/O, like database servers or online transactional processing systems, will require higher IOPS.
 
-You might have events, like a seasonal promotion or performance testing, during which the application requires higher demands on performance on a temporary basis. To optimize costs, you can change the performance tier on Premium SSD disks without increasing the size of the disks when you need to meet a higher performance demand. For example, your marketing applications are provisioned to use a Premium SSD disk with a P4 performance tier that's limited to 120 IOPS and 25 MBps. Because of a seasonal sale, the interest for your marketing application has increased dramatically, and you want to meet the higher capacity demands on a temporary basis. You can increase the performance tier of your P4 disk to a higher tier, such as P30 with 5,000 IOPS and 200 MBps of throughput. When your marketing campaign is over, you can change the disk tier back to the original P4 tier. During the period when you use a higher performance tier, you'll be charged for the price of that tier. In this example, you'll be charged the price of a P30.
-
-Azure also currently supports the ability to dynamically change your performance for Ultra Disk Storage without dismounting it from the VM.
+You might have planned events, like a seasonal promotion or performance testing, during which the application requires higher demands on performance on a temporary basis. To optimize costs, you can change the performance tier on Premium SSD disks without increasing the size of the disks when you need to meet a higher performance demand. For example, your marketing applications are provisioned to use a Premium SSD disk with a P4 performance tier that's limited to 120 IOPS and 25 MBps. Because of a seasonal sale, the interest for your marketing application has increased dramatically, and you want to meet the higher capacity demands on a temporary basis. You can increase the performance tier of your P4 disk to a higher tier, such as P30 with 5,000 IOPS and 200 MBps of throughput. When your marketing campaign is over, you can change the disk tier back to the original P4 tier. During the period when you use a higher performance tier, you'll be charged for the price of that tier. In this example, you'll be charged the price of a P30.
 
 ## Change the performance tier on Premium SSD disks while they are in use
 
@@ -28,20 +26,18 @@ In the Azure CLI, use the following commands to change the disk performance tier
 subscriptionId="yourSubscriptionID"
 resourceGroupName="yourResourceGroupName"
 diskName="yourDiskName"
-diskSize="yourDiskSize"
 performanceTier="yourDesiredPerformanceTier"
-region=EastUS2EUAP
+
 
 az login
 az account set --subscription $subscriptionId
-az deployment group create -g $resourceGroupName \
---template-uri "https://raw.githubusercontent.com/Azure/azure-managed-disks-performance-tiers/main/CreateUpdateDataDiskWithTier.json" \
---parameters "region=$region" "diskName=$diskName" "performanceTier=$performanceTier" "dataDiskSizeInGb=$diskSize"
+
+az disk update -n $diskName -g $resourceGroupName --set tier=$performanceTier
 ```
 
 ## Azure disk bursting
 
-For unplanned scenarios during which you need high performance for a short period of time, you can benefit from the disk bursting capabilities of Azure disks. Disk bursting can improve boot times, manage processing of small-batch jobs, and deal with unexpected traffic spikes.
+For unplanned events requiring high performance for a short period of time, you can benefit from the disk bursting capabilities of Azure disks. Disk bursting can improve boot times, manage processing of small-batch jobs, and deal with unexpected traffic spikes.
 
 Azure provides this functionality both for VMs and for disks, and you can use it independently.
 

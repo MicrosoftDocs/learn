@@ -11,11 +11,14 @@ The maximum performance of an Ultra disk depends on the size you select, as you 
 | Disk size (GB) | IOPS | Throughput (MBps) |
 | --- | --- | --- |
 | 4 | 1,200 | 300 |
+| 8 | 2,400 | 600 |
 | 16 | 4,800 | 1,200 |
-| 32 | 9,600 | 2,000 |
+| 32 | 9,600 | 2,400 |
+| 64 | 19,200 | 4,000 |
+| 128 | 38,400 | 4,000 |
 | 256 | 76,800 | 2,000 |
-| Over 1,024 | 160,000 | 2,000 |
-| | |
+| 512 | 153,600 | 4,000 |
+| 1,024 - 65,536 (sizes in this range increase in 1 TiB increments) | 160,000 | 2,000 |
 
 Ultra disks can have capacities from 4 GB up to 64 TB. A unique feature of Ultra disks is that you can adjust the IOPS and throughput values while they're running and without detaching them from the host virtual machine. Performance adjustments can take up to an hour to take effect.
 
@@ -48,7 +51,7 @@ Premium SSD managed disks are the next tier down from Premium SSD v2 managed dis
 
 To adjust the performance of a disk you can change its performance tier (which can be done without detaching the disk from a virtual machine). Also, you can only use premium SSD managed disks with virtual machine sizes that are compatible with premium storage.
 
-This table has examples that illustrate the high performance of premium SSD managed disks:
+The following table contains examples that illustrate the high performance of premium SSD managed disks:
 
 | Disk size name | Disk size | IOPS | Throughput (MBps) |
 | --- | --- | --- | --- |
@@ -56,16 +59,12 @@ This table has examples that illustrate the high performance of premium SSD mana
 | P15 | 256 GiB | 1,100 | 125 |
 | P40 | 2 TiB | 7,500 | 250 |
 | P80 | 32 TiB | 20,000 | 900 |
-| | | |
 
 With Premium SSD, these performance figures are guaranteed. There's no such guarantee for standard tier disks, which can be impacted occasionally by high demand.
 
 If you need higher performance than standard disks provide, or if you can't sustain occasional drops in performance, use Premium SSD. Also use Premium SSD managed disks when you want the highest performance but can't use Ultra disks or Premium SSD v2 because of their current limitations. Premium SSD managed disks are a good fit for mission-critical workloads in medium and large organizations.
 
-Azure Premium SSD disks support disk bursting, with which you can achieve higher IOPS and throughput than with your provisioned performance. For P20 disks and smaller disks, bursting is enabled by default with no additional cost.
-
-> [!NOTE]
-> You'll learn more about the Azure disk bursting functionality in [Optimize performance and costs using performance-scaling options](../4-optimize-performance-and-costs-using-performance-scaling-options.yml).
+Azure Premium SSD disks support two bursting models, an on-demand bursting model and a credit-based model. The disk bursting models and their differences are covered in the[Optimize performance and costs using performance-scaling options](../4-optimize-performance-and-costs-using-performance-scaling-options.yml) section.
 
 ## Standard SSD managed disks
 
@@ -80,7 +79,7 @@ The following table provides the performance characteristics of Standard SSD dis
 | E40 | 2,048 | 500 | 60 |
 | E80 | 32,767 | 6,000 | 750 |
 
-Use Standard SSD disks when you have budgetary constraints and a workload that isn't performance-intensive. For example, web servers, lightly used enterprise applications, and test servers all can run on Standard SSD disks. Standard SSD disks support disk bursting on P30 and smaller disks.
+Use Standard SSD disks when you have budgetary constraints and a workload that isn't performance-intensive. For example, web servers, lightly used enterprise applications, and test servers all can run on Standard SSD disks. Standard SSD disks support credit-based disk bursting on P30 and smaller disks.
 
 ## Standard HDD managed disks
 

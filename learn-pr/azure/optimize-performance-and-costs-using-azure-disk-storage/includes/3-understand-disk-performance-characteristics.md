@@ -6,11 +6,11 @@ To choose the right disk type, it's important that you understand the performanc
 
 - **IOPS**: IOPS is the number of requests that your application sends to the disks in one second. IOPS directly affects your application performance. Some applications, like retail websites, need high IOPS to manage all the small and random input/output (I/O) requests that must be processed quickly to keep the site responsive. Higher performance disks have higher IOPS values.
 - **Throughput**: Throughput is the amount of data that your application sends to the disks in a specified interval. Throughput is also called *data transfer rate* and is measured in MBps. If your application is performing I/O with large blocks of data, it requires high throughput. Higher performance disks have higher throughput.
-- **Latency**: Latency expresses the time it takes your app to send a request to the disk and receive a response. Latency puts a limit on effective IOPS. For example, if your disk can handle 5,000 IOPS but each operation takes 10 ms to process, your app will be capped at 100 operations per second because of the processing time. The latency is significantly improved if you enable ReadOnly host caching.
+- **Latency**: Latency expresses the time it takes your app to send a request to the disk and receive a response. Latency puts a limit on effective IOPS. For example, (with a queue depth of 1) if your disk can handle 5,000 IOPS but each operation takes 10 ms to process, your app will be capped at 100 operations per second because of the processing time. The latency is significantly improved if you enable ReadOnly host caching.
 
 ## IOPS vs. throughput
 
-For disk types other than Ultra disks or Premium SSD v2 managed disks, throughput and IOPS have a direct relationship. Changing one directly affects the other. To get a theoretical limit of throughput, you can use the following formula: IOPS &times; I/O size = throughput. It's important to consider both these values when you plan your application.
+Throughput and IOPS have a direct relationship. Changing one directly affects the other. To get a theoretical limit of throughput, you can use the following formula: IOPS &times; I/O size = throughput. It's important to consider both these values when you plan your application.
 
 For Ultra disks and Premium SSD v2 managed disks, it works a little differently since you can independently adjust the disk size, IOPS, and throughput. Adjustments to IOPS or throughput for Ultra disks and Premium SSD v2 managed disks can be done at runtime, without detaching the disk from the VM.
 
@@ -18,7 +18,7 @@ For Ultra disks and Premium SSD v2 managed disks, it works a little differently 
 
 Ultra disks support IOPS limits of 300 IOPS/GiB, up to a maximum of 160,000 IOPS per disk. To achieve the target IOPS for the disk, ensure that the selected disk IOPS are less than the VM IOPS limit.
 
-The current maximum limit for IOPS for a single VM in generally available sizes is 80,000. Ultra disks with greater IOPS can be used as shared disks to support multiple VMs.
+The current maximum limit for IOPS for a single VM in generally available sizes is 160,000. Ultra disks with greater IOPS can be used as shared disks to support multiple VMs.
 
 The minimum guaranteed IOPS per disk are 1 IOPS/GiB, with an overall baseline minimum of 100 IOPS. For example, if you provisioned a 4-GiB ultra disk, the minimum IOPS for that disk is 100, instead of four.
 
@@ -32,7 +32,7 @@ All Premium SSD v2 disks have a baseline IOPS of 3000 that is free of charge. Af
 
 ### Premium SSD v2 throughput
 
-All Premium SSD v2 disks have a baseline throughput of 125 MB/s, that is free of charge. After 6 GiB, the maximum throughput that can be set increases by 0.25 MB/s per set IOPS. If a disk has 3,000 IOPS, the max throughput it can set is 750 MB/s. To raise the throughput for this disk beyond 750 MB/s, its IOPS must be increased. For example, if you increased the IOPS to 4,000, then the max throughput that can be set is 1,000. 1,200 MB/s is the maximum throughput supported for disks that have 5,000 IOPS or more. Increasing your throughput beyond 125 increases the price of your disk.
+All Premium SSD v2 disks have a baseline throughput of 125 MB/s, that is free of charge. After 6 GiB, the maximum throughput that can be set increases by 0.25 MB/s per set IOPS. If a disk has 3,000 IOPS, the max throughput it can set is 750 MB/s. To raise the throughput for this disk beyond 750 MB/s, its IOPS must be increased. For example, if you increased the IOPS to 4,000, then the max throughput that can be set is 1,000. 1,200 MB/s is the maximum throughput supported for disks that have 5,000 IOPS or more. Increasing your throughput beyond 125 MB/s increases the price of your disk.
 
 ## Virtual machine I/O capping
 
@@ -83,7 +83,7 @@ To diagnose disk I/O capping, use the following metrics:
 
 ## Disk caching
 
-A cache is a specialized component that stores data, typically in memory, so that the application can access the data more quickly. The data in a cache often is data that's been read previously or data that resulted from a previous calculation. The goal is that applications access data faster from the cache than from the disk.
+A cache is a specialized component that stores data, typically in memory, so that the application can access the data more quickly. The data in a cache often is data that's been read previously or data that resulted from a previous calculation. The goal is that applications access data faster from the cache than from the disk. Disk caching isn't available on Ultra Disks and Premium SSD v2.
 
 Caching uses specialized, and sometimes expensive, temporary storage that has faster read and write performance compared to permanent storage. Because cache storage is often limited, you might need to decide which data operations will benefit most from caching. But even when the cache can be made widely available, such as in Azure, it's still important to know the workload patterns of each disk before you decide which caching type to use.
 
