@@ -1,6 +1,6 @@
 Azure Virtual Machine Scale Sets let you create and manage a group of load balanced VMs. The capacity or number of VM instances can automatically increase or decrease in response to a schedule that you configure or when performance metrics you define are reached. VM instances in a virtual machine scale set can have the same configuration or different configurations.
 
-Virtual machine scale sets provide high availability to your applications. Virtual machine scale sets let you centrally manage, configure, and update a large number of VMs. With virtual machine scale sets, you can build large-scale services for areas such as compute, big data, and container workloads.
+Virtual machine scale sets provide high availability and scale to your applications. Virtual machine scale sets let you centrally manage, configure, and update a large number of VMs. With virtual machine scale sets, you can build large-scale services for areas such as compute, big data, and container workloads.
 
 Scale sets are designed for cost-effectiveness, scalability and reliability. New VM instances are created only when needed and are removed when no longer required. When new instances are required, those instances are generated from a template image to configure the instances and the applications. Azure Virtual Machine Scale Sets allow you to run up to 1,000 VMs in a single scale set.
 
