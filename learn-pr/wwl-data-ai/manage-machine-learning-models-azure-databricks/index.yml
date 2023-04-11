@@ -30,7 +30,6 @@ subjects:
 - data-analytics
 - data-lake
 units:
-- learn.wwl.manage-machine-learning-models-azure-databricks.introduction
 - learn.wwl.manage-machine-learning-models-azure-databricks.register-models
 - learn.wwl.manage-machine-learning-models-azure-databricks.manage-model-versioning
 - learn.wwl.manage-machine-learning-models-azure-databricks.knowledge-check
