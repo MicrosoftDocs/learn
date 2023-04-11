@@ -30,6 +30,5 @@ subjects:
 - data-analytics
 - data-lake
 units:
-- learn.wwl.manage-machine-learning-models-azure-databricks.summary
 badge:
   uid: learn.wwl.manage-machine-learning-models-azure-databricks.badge
