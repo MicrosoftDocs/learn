@@ -32,6 +32,5 @@ products:
 subjects:
 - compliance
 units:
-- learn.wwl.use-data-loading-best-practices-azure-synapse-analytics.understand-design-goals
 badge:
   uid: learn.wwl.use-data-loading-best-practices-azure-synapse-analytics.badge
