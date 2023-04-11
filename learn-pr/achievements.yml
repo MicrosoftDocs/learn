@@ -1637,3 +1637,8 @@ achievements:
   title: Prepare data for machine learning with Azure Databricks
   summary: Before using data to train a machine learning model, it's important to prepare the data appropriately.
   iconUrl: /training/achievements/prepare-data-for-machine-learning-with-azure-databricks.svg
+- uid: learn.wwl.use-data-loading-best-practices-azure-synapse-analytics.badge
+  type: badge
+  title: Use data loading best practices in Azure Synapse Analytics
+  summary: Learn the best practices you need to adopt to load data into a data warehouse in Azure Synapse Analytics.
+  iconUrl: /training/achievements/use-data-loading-best-practices-in-azure-synapse-analytics.svg
