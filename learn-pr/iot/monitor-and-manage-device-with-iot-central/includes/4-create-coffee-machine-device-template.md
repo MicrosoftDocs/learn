@@ -8,7 +8,7 @@ Here, you'll create and publish the **Connected Coffee Machine** device template
 
 The [Sample code for Azure IoT Central Documentation](https://github.com/Azure-Samples/iot-central-docs-samples) GitHub repository contains the sample code. Copy the JSON from [iot-central-docs-samples/main/monitor-manage-device-with-iotcentral/CoffeeMaker.json](https://raw.githubusercontent.com/Azure-Samples/iot-central-docs-samples/main/monitor-manage-device-with-iotcentral/CoffeeMaker.json) and save it on your local machine in a file called *CoffeeMaker.json*. This is the device capability model for the coffee machine.
 
-1. Browse to the URL for your IoT application that you created in the previous exercise, such as https://coffee-maker-1234.azureiotcentral.com.
+1. Browse to the URL for your IoT application that you created in the previous exercise, such as `https://coffee-maker-1234.azureiotcentral.com`.
 
 1. Select the icon for **Device templates** on the home page of your Azure IoT Central application, and then select **+ New**.
 
