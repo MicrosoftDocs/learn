@@ -6,6 +6,7 @@ metadata:
   title: Knowledge check
   description: Check your knowledge about Azure virtual machine scale sets.
   ms.date: 04/11/2023
+  ms.reviewer: mimckitt
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: interactive-tutorial
