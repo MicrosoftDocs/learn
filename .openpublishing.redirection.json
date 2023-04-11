@@ -21194,6 +21194,11 @@
       "source_path": "learn-pr/wwl-data-ai/get-started-azure-databricks/1-introduction.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-databricks/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/get-started-azure-databricks/6-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-databricks/",
+      "redirect_document_id": false
     }
   ]
 }
