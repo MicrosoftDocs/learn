@@ -8,7 +8,7 @@ In Cloud Shell, run the following command to delete the `scalesetrg` resource gr
 
 ```bash
     az group delete \
-      --name scalesetrg \
+      --name myResourceGroup \
       --yes
 ```
 
