@@ -84,6 +84,8 @@ The cost of a disk is determined by the following factors:
 - The disk's IOPS (Ultra Disks and Premium SSD v2 only)
 - The disk's throughput (Ultra Disks and Premium SSD v2 only)
 
+For moe detail on the costs involved with managed disks, see the [pricing page](https://azure.microsoft.com/pricing/details/managed-disks/).
+
 ## Transactions
 
 On Azure, input/output operation per second (IOPS) and transactions are similar with one major exception:
