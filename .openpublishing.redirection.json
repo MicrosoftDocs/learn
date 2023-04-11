@@ -21179,6 +21179,236 @@
       "source_path": "learn-pr/wwl-azure/azure-security-center/7-microsoft-cloud-security-benchmark.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/azure-security-center/9-microsoft-cloud-security-benchmark",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/get-started-azure-databricks/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/get-started-azure-databricks/5-exercise.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/get-started-azure-databricks/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/get-started-azure-databricks/6-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/get-started-azure-databricks/3-provision-workspaces-clusters.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/get-started-azure-databricks/7-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/get-started-azure-databricks/2-understand.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/get-started-azure-databricks/4-work-notebooks.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/manage-machine-learning-models-azure-databricks/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/mlflow-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/manage-machine-learning-models-azure-databricks/2-describe-considerations-for-model-management.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/mlflow-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/manage-machine-learning-models-azure-databricks/5-exercise-manage.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/mlflow-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/manage-machine-learning-models-azure-databricks/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/mlflow-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/manage-machine-learning-models-azure-databricks/6-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/mlflow-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/manage-machine-learning-models-azure-databricks/4-manage-model-versioning.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/mlflow-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/manage-machine-learning-models-azure-databricks/3-register-models.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/mlflow-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/manage-machine-learning-models-azure-databricks/7-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/mlflow-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/prepare-data-for-machine-learning-azure-databricks/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/machine-learning-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/prepare-data-for-machine-learning-azure-databricks/7-exercise.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/machine-learning-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/prepare-data-for-machine-learning-azure-databricks/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/machine-learning-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/prepare-data-for-machine-learning-azure-databricks/8-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/machine-learning-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/prepare-data-for-machine-learning-azure-databricks/3-perform-data-cleaning.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/machine-learning-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/prepare-data-for-machine-learning-azure-databricks/6-perform-data-encoding.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/machine-learning-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/prepare-data-for-machine-learning-azure-databricks/5-perform-data-scaling.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/machine-learning-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/prepare-data-for-machine-learning-azure-databricks/4-perform-feature-engineering.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/machine-learning-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/prepare-data-for-machine-learning-azure-databricks/9-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/machine-learning-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/prepare-data-for-machine-learning-azure-databricks/2-understand-concepts.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/machine-learning-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-data-loading-best-practices-azure-synapse-analytics/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/load-optimize-data-into-relational-data-warehouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-data-loading-best-practices-azure-synapse-analytics/9-exercise-implement-workload-management.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/load-optimize-data-into-relational-data-warehouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-data-loading-best-practices-azure-synapse-analytics/3-explain-loading-methods.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/load-optimize-data-into-relational-data-warehouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-data-loading-best-practices-azure-synapse-analytics/8-implement-workload-management.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/load-optimize-data-into-relational-data-warehouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-data-loading-best-practices-azure-synapse-analytics/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/load-optimize-data-into-relational-data-warehouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-data-loading-best-practices-azure-synapse-analytics/11-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/load-optimize-data-into-relational-data-warehouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-data-loading-best-practices-azure-synapse-analytics/5-manage-singleton-updates.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/load-optimize-data-into-relational-data-warehouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-data-loading-best-practices-azure-synapse-analytics/4-manage-source-data-files.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/load-optimize-data-into-relational-data-warehouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-data-loading-best-practices-azure-synapse-analytics/6-set-up-dedicated-accounts.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/load-optimize-data-into-relational-data-warehouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-data-loading-best-practices-azure-synapse-analytics/10-simplify-ingestion.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/load-optimize-data-into-relational-data-warehouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-data-loading-best-practices-azure-synapse-analytics/12-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/load-optimize-data-into-relational-data-warehouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-data-loading-best-practices-azure-synapse-analytics/2-understand-design-goals.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/load-optimize-data-into-relational-data-warehouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-data-azure-databricks/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-data-azure-databricks/5-exercise.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-data-azure-databricks/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-data-azure-databricks/6-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-data-azure-databricks/3-query-dataframes.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-data-azure-databricks/7-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-data-azure-databricks/2-understand-dataframes.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-data-azure-databricks/4-visualize-data.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
     }
   ]
 }
