@@ -33,12 +33,13 @@ Now it's time to prepare your coding environment and begin writing code that eva
 This module includes hands-on activities that guide you through the process of building and running demonstration code. You are encouraged you to complete these activities using Visual Studio Code as your development environment. Using Visual Studio Code for these activities will help you to become more comfortable writing and running code in a developer environment that's used by professionals worldwide.
 
 1. Open Visual Studio Code.
+
    You can use the Windows Start menu (or equivalent resource for another OS) to open Visual Studio Code.
 
 1. On the Visual Studio Code **File** menu, select **Open Folder**.
 
 1. In the **Open Folder** dialog, navigate to the Windows Desktop folder.
- 
+
    If you have a different folder location where you keep code projects, you can use that folder location instead. For this training, the important thing is to have a location that’s easy to locate and remember.
 
 1. In the **Open Folder** dialog, select **Select Folder**.
@@ -48,12 +49,12 @@ This module includes hands-on activities that guide you through the process of b
 1. On the Visual Studio Code **Terminal** menu, select **New Terminal**.
    
    Notice that a command prompt in the Terminal panel displays the folder path for the current folder. For example:  
-   
+
    ```dos   
    C:\Users\someuser\Desktop>   
    ```
-   
-   > [!NOTE]   
+
+   > [!NOTE]
    > If you are working on your own PC rather than in a sandbox or hosted environment and you have completed other Microsoft Learn modules in this C# series, you may have already created a project folder for code samples. If that's the case, you can skip over the next step, which is used to create a console app in the TestProject folder.
 
 1. At the Terminal command prompt, to create a new console application in a specified folder, type **dotnet new console -o ./CsharpProjects/TestProject** and then press Enter.
@@ -75,36 +76,37 @@ This module includes hands-on activities that guide you through the process of b
 ### Use the equality operator
 
 1. Ensure that you have Visual Studio Code open and Program.cs displayed in the Editor panel.
-   
-   > [!NOTE]  
+
+   > [!NOTE]
    > Program.cs should be empty. If it isn't, select and delete all code lines.
 
 1. Type the following code into the Visual Studio Code Editor.
-   
+
    ```c#
    Console.WriteLine("a" == "a");
    Console.WriteLine("a" == "A");
    Console.WriteLine(1 == 2);
+   
    string myValue = "a";
    Console.WriteLine(myValue == "a");
    ```
 
 1. On the Visual Studio Code **File** menu, select **Save**.
-  
+
    The Program.cs file must be saved before building or running the code.
 
 1. In the EXPLORER panel, to open a Terminal at your TestProject folder location, right-click **TestProject**, and then select **Open in Integrated Terminal**.
-   
+
    A Terminal panel will open. The Terminal should include a command prompt showing that the Terminal is open to your TestProject folder location.
 
 1. At the Terminal command prompt, to run your code, type **dotnet run** and then press Enter.
-   
+
    > [!NOTE]
    > If you see a message saying "Couldn't find a project to run", ensure that the Terminal command prompt displays the expected TestProject folder location. For example: `C:\Users\someuser\Desktop\csharpprojects\TestProject>`
 
 
    You should see the following output.
-   
+
    ```output
    True
    False
@@ -136,7 +138,7 @@ Before you check two string values for equality, especially when one or both val
 You can improve the previous equality check by chaining these two helper methods on both values, as shown in the following code listing:
 
 1. Replace the code in the Visual Studio Code Editor with the following code:
-  
+
    ```c#
    string value1 = " a";
    string value2 = "A ";
@@ -152,18 +154,18 @@ You can improve the previous equality check by chaining these two helper methods
 1. Use the line comment operator `//` to comment out all of the code from the previous step.
 
 1. Type the following code into the Visual Studio Code Editor.
-   
+
    ```c#
    Console.WriteLine("a" != "a");
    Console.WriteLine("a" != "A");
    Console.WriteLine(1 != 2);
-   
+
    string myValue = "a";
    Console.WriteLine(myValue != "a");
    ````
 
 1. Save your code file, and then use Visual Studio Code to run your code.
-  
+
    You should see the following output.
 
    ```output
@@ -191,7 +193,7 @@ Naturally, the `==` and `!=` operators that you used to compare string values ab
 1. Use the line comment operator `//` to comment out all of the code from the previous task.
 
 1. Type the following code into the Visual Studio Code Editor.
-  
+
      ```c#
      Console.WriteLine(1 > 2);
      Console.WriteLine(1 < 2);
@@ -200,7 +202,7 @@ Naturally, the `==` and `!=` operators that you used to compare string values ab
      ```
 
 1. Save your code file, and then use Visual Studio Code to build and run your code.
-  
+
       You should see the following output:
 
       ```output
