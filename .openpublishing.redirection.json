@@ -21274,6 +21274,11 @@
       "source_path": "learn-pr/wwl-data-ai/prepare-data-for-machine-learning-azure-databricks/1-introduction.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/machine-learning-azure-databricks/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/prepare-data-for-machine-learning-azure-databricks/8-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/machine-learning-azure-databricks/",
+      "redirect_document_id": false
     }
   ]
 }
