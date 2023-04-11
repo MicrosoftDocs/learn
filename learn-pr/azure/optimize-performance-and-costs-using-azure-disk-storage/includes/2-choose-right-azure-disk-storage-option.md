@@ -49,7 +49,7 @@ Premium SSD v2 managed disks are suited for a broad range of workloads such as S
 
 Premium SSD managed disks are the next tier down from Premium SSD v2 managed disks in terms of performance, but they still provide high throughput and IOPS with low latency. Premium SSD doesn't have the current limitations of either Ultra Disks or Premium SSD v2. For example, they're available in all regions and can be used with virtual machines that are outside of availability zones.
 
-To adjust the performance of a disk you can change its performance tier (which can be done without detaching the disk from a virtual machine). Also, you can only use premium SSD managed disks with virtual machine sizes that are compatible with premium storage.
+To adjust the performance of a disk you can change its performance tier (which can be done without detaching the disk from a virtual machine or shutting down the VM). Also, you can only use premium SSD managed disks with virtual machine sizes that are compatible with premium storage.
 
 The following table contains examples that illustrate the high performance of premium SSD managed disks:
 
