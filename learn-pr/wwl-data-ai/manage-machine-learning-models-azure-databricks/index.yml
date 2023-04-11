@@ -31,7 +31,6 @@ subjects:
 - data-lake
 units:
 - learn.wwl.manage-machine-learning-models-azure-databricks.register-models
-- learn.wwl.manage-machine-learning-models-azure-databricks.manage-model-versioning
 - learn.wwl.manage-machine-learning-models-azure-databricks.summary
 badge:
   uid: learn.wwl.manage-machine-learning-models-azure-databricks.badge
