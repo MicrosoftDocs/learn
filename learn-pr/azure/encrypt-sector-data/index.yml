@@ -5,7 +5,7 @@ metadata:
   description: Overview of the options available for managing encryption keys and encrypting data throughout its lifecycle, with special attention to public sector.
   ms.date: 04/11/2023
   author: Adriamen
-  ms.author: micrum
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Encrypt public sector data in Azure

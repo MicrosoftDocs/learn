@@ -6,7 +6,7 @@ metadata:
   description: Discussion of the stakes and options of encrypting data in transit to protect it from interception when using Azure.
   ms.date: 04/11/2023
   author: Adriamen
-  ms.author: micrum
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7
