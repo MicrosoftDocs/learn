@@ -33,7 +33,7 @@ For this exercise, you'll use the Query Editor in the Azure portal to query the 
     GO
     ```
 
-1. The “max degree of parallelism” (referred to as MAXDOP) configuration option controls the ability of the database engine to use parallel threads during query processing. When MAXDOP is something besides 1, the database engine may execute queries using multiple concurrent threads. This often results in shorter query duration due to additional CPU resources used for query processing. The number of concurrently executing threads, and the resulting CPU utilization, depends on the MAXDOP value. Higher values generally result in more threads and higher resource utilization. After years of analyzing customer data, MAXDOP=8 has been set as the default for Azure SQL Database and Managed Instance. Confirm this setting by running the following query:
+1. The “max degree of parallelism” (referred to as MAXDOP) configuration option controls the ability of the database engine to use parallel threads during query processing. When MAXDOP is something besides 1, the database engine may execute queries using multiple concurrent threads. This often results in shorter query duration due to additional CPU resources used for query processing. The number of concurrently executing threads, and the resulting CPU utilization, depends on the MAXDOP value. Higher values generally result in more threads and higher resource utilization. After years of analyzing customer data, MAXDOP=8 has been set as the default for Azure SQL Database and Azure SQL Managed Instance. Confirm this setting by running the following query:
 
     ```sql
     SELECT *
