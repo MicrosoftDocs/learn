@@ -31,6 +31,5 @@ subjects:
 - data-modeling
 - machine-learning
 units:
-- learn.wwl.prepare-data-for-machine-learning-azure-databricks.understand-concepts
 badge:
   uid: learn.wwl.prepare-data-for-machine-learning-azure-databricks.badge
