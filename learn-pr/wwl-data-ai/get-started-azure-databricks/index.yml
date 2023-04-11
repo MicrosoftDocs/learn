@@ -31,7 +31,6 @@ subjects:
 - data-analytics
 - data-lake
 units:
-- learn.wwl.get-started-azure-databricks.introduction
 - learn.wwl.get-started-azure-databricks.understand
 - learn.wwl.get-started-azure-databricks.provision-workspaces-clusters
 - learn.wwl.get-started-azure-databricks.work-notebooks
