@@ -1,8 +1,10 @@
 
-**Tactics** and **techniques** representing the **MITRE ATT&CK** (**Adversarial Tactics**, **Techniques**, **& Common Knowledge**) Cloud Matrix for Enterprises covering cloud-based techniques.
+**Tactics** and **techniques** representing the **MITRE ATT&CK® Adversarial Tactics**, **Techniques**, **& Common Knowledge**) Cloud Matrix for Enterprises covering cloud-based techniques.
 
-:::image type="content" source="../media/mitre-attack-cde2ae7e.png" alt-text="Screenshot showing Mitre Attack Cloud Matrix.":::
+:::image type="content" source="../media/mitre-attack-cm-tactics-and-techniques-c63c6a25.png" alt-text="Screenshot showing the Mitre Attack Cloud Matrix.":::
 
+
+**Source**: [https://attack.mitre.org/matrices/enterprise/cloud/](https://attack.mitre.org/matrices/enterprise/cloud/)
 
 The **MITRE ATTACK Cloud Matrix** actively helps organizations to understand and respond to cloud-based cyberattacks. It offers a comprehensive list of **tactics** and **techniques** used by attackers to target cloud environments and provides guidance for detecting and responding to these attacks. By focusing on the unique security challenges of cloud computing, the Cloud Matrix provides a roadmap for improving an organization's defenses against cloud-based threats.
 
@@ -16,7 +18,7 @@ The **MITRE ATTACK Cloud Matrix** actively helps organizations to understand and
 
 **Privilege Escalation**: The adversary is trying to gain higher-level permissions. Privilege escalation consists of techniques that adversaries use to gain higher-level permissions on a system or network. Adversaries can often enter and explore a network with unprivileged access but require elevated permissions to follow through on their objectives. Common approaches are to take advantage of system weaknesses, misconfigurations, and vulnerabilities.
 
-**Examples** of elevated access include:<br>
+**Examples** of elevated access include:
 
  -  SYSTEM/root level
  -  local administrator

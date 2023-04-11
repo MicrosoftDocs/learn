@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.azure-security-center.workload-protections
+title: Workload protections
+metadata:
+  title: Workload protections
+  description: "Workload protections"
+  ms.date: 04/11/2023
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-workload-protections.md)]

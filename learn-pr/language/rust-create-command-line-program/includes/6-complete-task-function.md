@@ -5,7 +5,7 @@ The `complete_task` function is responsible for trying to remove a task from the
 - Remove the task that's at the indicated position, if there is one.
 - Write the updated vector of tasks back into the file.
 
-A first implementation of the `complete_task` function could look like following the code. But we can already see signs of code duplication, so we'll need to do some refactoring.
+A first implementation of the `complete_task` function could look like the following code, but we can already see signs of code duplication, so we'll need to do some refactoring.
 
 ```rust
 use std::io::{Error, ErrorKind, Result, Seek, SeekFrom};  // Include the `Error` type.
