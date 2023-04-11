@@ -29,4 +29,4 @@ Does this mean the Windows Defender Device Guard configuration state is going aw
 
 ## Microsoft Defender for Endpoint - Supported Operating Systems
 
-:::image type="content" source="../media/cms-supported-windows-versions-a12d5d22.png":::
+:::image type="content" source="../media/cms-supported-windows-versions-a12d5d22.png" alt-text="Screenshot showing Microsoft Defender for Endpoint supported operating systems":::

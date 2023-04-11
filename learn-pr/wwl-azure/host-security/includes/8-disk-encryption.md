@@ -8,7 +8,7 @@ If you use Microsoft Defender for Cloud, you'll be alerted if you have VMs that 
 
 Azure Disk Encryption is zone resilient, the same way as Virtual Machines.
 
-## Supported VMs and operating systems<br>
+## Supported VMs and operating systems
 
 **Supported VMs**
 
@@ -16,7 +16,7 @@ Windows VMs are available in a range of sizes. Azure Disk Encryption is supporte
 
 Azure Disk Encryption is not available on Basic, A-series VMs, or on virtual machines with less than 2 GB of memory.
 
-**Supported operating systems**<br>
+**Supported operating systems**
 
  -  Windows client: Windows 8 and later.
  -  Windows Server: Windows Server 2008 R2 and later.
