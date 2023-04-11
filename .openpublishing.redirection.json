@@ -21204,6 +21204,11 @@
       "source_path": "learn-pr/wwl-data-ai/get-started-azure-databricks/3-provision-workspaces-clusters.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-databricks/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/get-started-azure-databricks/7-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-databricks/",
+      "redirect_document_id": false
     }
   ]
 }
