@@ -31,6 +31,5 @@ subjects:
 - data-analytics
 - data-lake
 units:
-- learn.wwl.get-started-azure-databricks.work-notebooks
 badge:
   uid: learn.wwl.get-started-azure-databricks.badge
