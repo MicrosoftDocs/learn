@@ -1627,3 +1627,8 @@ achievements:
   title: Get started with Azure Databricks
   summary: Azure Databricks enables you to build highly scalable data processing and machine learning solutions.
   iconUrl: /training/achievements/get-started-with-azure-databricks.svg
+- uid: learn.wwl.manage-machine-learning-models-azure-databricks.badge
+  type: badge
+  title: Manage machine learning models in Azure Databricks
+  summary: In Azure Databricks, you can deploy and manage machine learning models that you have trained.
+  iconUrl: /training/achievements/manage-machine-learning-models-in-azure-databricks.svg
