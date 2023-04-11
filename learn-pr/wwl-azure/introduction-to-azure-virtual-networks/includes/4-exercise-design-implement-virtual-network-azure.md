@@ -4,7 +4,7 @@ Contoso Ltd, a fictitious organization, is in the process of migrating infrastru
 
 ## Architecture diagram
 
-:::image type="content" source="../media/contoso-vnet.png" alt-text="Diagram of virtual network architecture":::
+:::image type="content" source="../media/contoso-vnet.png" alt-text="Diagram of virtual network architecture.":::
 
 ## Objectives
 

@@ -4,7 +4,7 @@ In this lab, you'll configure DNS name resolution for Contoso Ltd. You'll create
 
 ## Architecture diagram
 
-:::image type="content" source="../media/6-exercise-configure-domain-name-servers-configuration-azure.png" alt-text="Diagram of DNS architecture":::
+:::image type="content" source="../media/6-exercise-configure-domain-name-servers-configuration-azure.png" alt-text="Diagram of DNS architecture.":::
 
 
 ## Objectives
