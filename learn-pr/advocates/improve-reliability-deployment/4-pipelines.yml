@@ -20,30 +20,30 @@ quiz:
 
   - content: 'Commit, test, scan, and build are typical steps in which of these things?'
     choices:
-    - content: 'unit test'
+    - content: 'Unit test'
       isCorrect: false
       explanation: 'These are typical steps in a continuous delivery pipeline.'
-    - content: 'epic deployment'
+    - content: 'Epic deployment'
       isCorrect: false
       explanation: 'These are typical steps in a continuous delivery pipeline.'
-    - content: 'continuous delivery pipeline'
+    - content: 'Continuous delivery pipeline'
       isCorrect: true
       explanation: 'Correct.'
-    - content: 'feature flag'
+    - content: 'Feature flag'
       isCorrect: false
       explanation: 'These are typical steps in a continuous delivery pipeline.'
 
   - content: 'Environment traceability allows us to do which of these things?'
     choices:
-    - content: 'correlate what is running in production with a specific build instance'
+    - content: 'Correlate what is running in production with a specific build instance'
       isCorrect: true
       explanation: 'Correct.'
-    - content: 'see which environment variables were active during a build'
+    - content: 'Find out which environment variables were active during a build'
       isCorrect: false
       explanation: 'Environment traceability allows us to correlate what is running in production with a specific build instance.'
-    - content: 'determine the origin of code in a source control system'
+    - content: 'Determine the origin of code in a source control system'
       isCorrect: false
       explanation: 'Environment traceability allows us to correlate what is running in production with a specific build instance.'
-    - content: 'find the staging environment used for testing the code'
+    - content: 'Find the staging environment used for testing the code'
       isCorrect: false
       explanation: 'Environment traceability allows us to correlate what is running in production with a specific build instance.'

@@ -3,10 +3,11 @@ Your team has built some security-hardened Bicep files that are compliant with y
 During the process, you'll:
 
 > [!div class="checklist"]
-> * Add a lint stage to the pipeline.
-> * Add a pipeline stage to publish the template spec.
-> * Verify that the pipeline starts and finishes successfully.
-> * Check the published template spec in Azure.
+>
+> - Add a lint stage to the pipeline.
+> - Add a pipeline stage to publish the template spec.
+> - Verify that the pipeline starts and finishes successfully.
+> - Check the published template spec in Azure.
 
 ## Add a lint stage to your pipeline
 
@@ -80,7 +81,7 @@ Now, you can add a second stage to publish the template spec to Azure.
 
 You can also view the published template spec in the Azure portal.
 
-1. In your browser, go to the [Azure portal](https://portal.azure.com?azure-portal=true).
+1. In your browser, go to the [Azure portal](https://portal.azure.com).
 
 1. Go to the **ToyReusable** resource group, and select the **linux-app-service** template spec.
 

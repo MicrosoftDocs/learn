@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Troubleshoot Azure File Sync
   description: In this exercise, you'll see that the file sync works. Then you'll learn how to diagnose a sync issue and resolve it.
   ms.date: 05/18/2020
-  author: roygara
-  ms.author: rogarana
+  author: khdownie
+  ms.author: kendownie
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 12

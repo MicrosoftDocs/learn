@@ -4,13 +4,11 @@ title: Create subnets
 metadata:
   title: Create subnets
   description: "Create subnets"
-  ms.date: 12/29/2022
+  ms.date: 03/22/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/3-create-subnets.md)]

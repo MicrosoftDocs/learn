@@ -3,33 +3,26 @@ uid: learn.intro-to-partner-center
 metadata:
   moduleType: introduction
   title: Introduction to Partner Center
-  description: "Introduction to Partner Center"             
+  description: Microsoft Partner Center can help drive customer purchasing when selling through the Microsoft commercial marketplace, build partner-to-partner sales channels, and use sales tools and resources. This module will explain how Partner Center program offerings work to manage every aspect of business relationships.             
   ms.date: 11/14/2022
   author: JulCsc
   ms.author: juliacawthra
-  ms.topic: interactive-tutorial  
+  manager: jasonh
+  ms.topic: module-intro-to-product  
   ms.service: partner-dashboard         
 
 title: Introduction to Partner Center
 
-summary: "In this module, you'll learn how Microsoft Partner Center can help you manage your business relationships."
+summary: Manage your business relationships, accounts, subscriptions, and billing with Microsoft Partner Center. Use data and insights to improve customer engagement.
 
 abstract: |
-  You'll explore Partner Center to learn about:
+  By the end of this module you'll be able to:
 
-    - navigating the dashboard to make managing your partner relationships easier
-    - using workspaces to get information that is custom tailored to your needs
-    - billing, pricing, and managing customers and referrals
-    - getting data and insights to help you analyze and improve your relationships.
+    - Compare Microsoft Cloud Solutions Providers program models
+    - Navigate the Partner Center portal
+    - Identify the available workspaces
+    - Perform key tasks using the tiles
   
-  You'll also see how Partner Center can help you:
-
-    - Manage your Microsoft account and users
-    - Engage with customers
-    - Build relationships with other partners
-    - Enroll in incentive programs
-    - Manage customer subscriptions
-    - Bill and get paid
 
 prerequisites: |
   - None
@@ -44,8 +37,8 @@ roles:
   - developer
 
 products:
-  - microsoft-partner-center
   - azure
+  - microsoft-partner-center
   - dynamics-365
 
 units:

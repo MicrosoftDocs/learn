@@ -4,7 +4,7 @@ By using Razor class libraries, you can share and reuse user-interface component
 
 ## Example scenario
 
-Let's suppose that you work for a consulting firm, where you build web applications for various clients.  You have a collection of web features, such as modal window components, that you make available to your clients.  To save time, you want to be able to reuse these features across applications.  
+Let's suppose that you work for a consulting firm, where you build web applications for various clients. You have a collection of web features, such as modal window components, that you make available to your clients. To save time, you want to be able to reuse these features across applications.  
 
 By using Razor class libraries, you can share the features across the applications that you build for your customers.
 

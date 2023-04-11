@@ -54,7 +54,7 @@ VM bursting supports only the credit-based model for bursting, which doesn't req
 Disk Storage has two models of bursting:
 
 - **Credit-based bursting model**. A credit-based model, where the disk will burst only if it has burst credits accumulated in its credit bucket. This model does not incur additional charges when the disk bursts. Credit-based bursting is only available for Premium SSD managed disks 512 GiB and smaller, and standard SSDs 1024 GiB and smaller.
-- **On-demand bursting model**. An on-demand bursting model, where the disk bursts whenever its needs exceed its current capacity. This model incurs additional charges anytime the disk bursts. On-demand bursting is only available for Premium SSD managed disks larger than 512 GiB.
+- **On-demand bursting model**. An on-demand bursting model, where the disk bursts whenever its needs exceed its current capacity. This model incurs additional charges anytime the disk bursts. On-demand bursting is only available for Premium SSD managed disks larger than 512 GiB. To configure on-demand bursting, you must detach the disk from the VM.
 
 You can enable on-demand bursting by using Azure PowerShell, the Azure CLI, or an ARM template. You can enable this functionality on new and existing disks.
 
@@ -73,8 +73,8 @@ $dataDisk = New-AzDisk -ResourceGroupName "myResourceGroupDisk" -DiskName "myDat
 
 Now that you understand how different performance indicators define the overall performance of an Azure disk, let's examine some use-case scenarios:
 
-- **Planned versus unplanned performance scaling**. If you have a planned event, like a marketing campaign, that requires a sustained increase in disk performance, use performance tiers to better accommodate the increased load. However, if you can't plan ahead or can't accurately predict the performance pattern of your workloads, disk bursting would be a better choice because it provides you with a higher allowance beyond your provisioned target.
-- **Duration**. For scenarios in which high demand results from short-running jobs or jitters in I/O scheduling, on-demand disk bursting will be more cost-efficient because you will pay only for the burst transactions. If your workload doesn't exceed the provisioned target, you pay only for the burst enablement fee, which is a small fraction of the disk cost. In contrast, if you expect your workload to burst for days or even longer, performance tiers will be the better option.
+- **Planned versus unplanned performance scaling**: If you have a planned event like a marketing campaign that requires a sustained increase in disk performance, use performance tiers to better accommodate the increased load. However, if you can't plan ahead or can't accurately predict the performance pattern of your workloads, disk bursting would be a better choice because it provides you with a higher allowance beyond your provisioned target.
+- **Duration**: For scenarios in which high demand results from short-running jobs or jitters in I/O scheduling, on-demand disk bursting will be more cost-efficient because you pay only for the burst transactions. If your workload doesn't exceed the provisioned target, you pay only for the burst-enablement fee, which is a small fraction of the disk cost. In contrast, if you expect your workload to burst for days or even longer, performance tiers will be the better option.
 
 |&nbsp;              | Credit-based bursting                               | On-demand bursting                                  | Changing performance tier |
 | ------------ | --------------------------------------------------- | --------------------------------------------------- | ---------------------------------------------------------------------- |

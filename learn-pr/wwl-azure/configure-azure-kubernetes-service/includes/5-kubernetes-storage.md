@@ -1,6 +1,6 @@
 There are different scenarios where applications in an Azure Kubernetes Service cluster might need to store and retrieve data. Consider the following examples:
 
-- Your application workload uses local, fast data storage on a node that's no not needed after the pods are deleted.
+- Your application workload uses local, fast data storage on a node that's not needed after the pods are deleted.
 - Your application workload requires storage that persists on more regular data volumes within the Azure platform.
 - Multiple pods share the same data volumes, or reattach data volumes if the pod is rescheduled on a different node.
 - You need to inject sensitive data or application configuration information into pods.

@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-readable-code.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following demonstrates recommended guidelines for naming a variable?"
+    choices:
+    - content: "`my-string`."
+      isCorrect: false
+      explanation: "Incorrect. A variable can't contain the dash `-` character. Also, the name isn't descriptive of its purpose."
+    - content: "`initialMessage$`."
+      isCorrect: false
+      explanation: "Incorrect. A variable can't contain the dollar sign `$` character."
+    - content: "`initialMessage`."
+      isCorrect: true
+      explanation: "Correct! This is the appropriate camel case for a variable name and the name is descriptive."
+  - content: "Which of the following is a bad reason to use a code comment?"
+    choices:
+    - content: "To describe the high-level intent of the code."
+      isCorrect: false
+      explanation: "Incorrect. Describing the high-level intent is a good reason to use a code comment."
+    - content: "To explain how a new C# keyword works."
+      isCorrect: true
+      explanation: "Correct! Comments should not be used for this reason."
+    - content: "To temporarily comment out a line of code while evaluating a feature in a different way."
+      isCorrect: false
+      explanation: "Incorrect. Temporarily commenting out a line of code before deleting it is a good reason to use a code comment."
+  - content: "Which of the following statements about using whitespace in code is true?"
+    choices:
+    - content: "Reducing the amount of whitespace will improve code performance (execution speed)."
+      isCorrect: false
+      explanation: "Incorrect. Whitespace doesn't impact performance."
+    - content: "Whitespace should be used every two or three lines to separate code lines."
+      isCorrect: false
+      explanation: "Incorrect. Arbitrarily adding whitespace every two or three lines won't necessarily improve the readability of your code."
+    - content: "Whitespace should be used judiciously to improve the readability of your code."
+      isCorrect: true
+      explanation: "Correct! Whitespace should be used to improve core readability."

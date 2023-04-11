@@ -2,10 +2,10 @@ Your goal in this module was to identify the tools and strategies you can use in
 
 To accomplish this goal, you learned how to:
 
-- Use different tools at enterprise and organization levels to manage your actions and workflows
-- Evaluate what the appropriate runners are for your enterprise instance
-- Customize your self-hosted runners according to your enterprise use case
-- Scope, create, and access encrypted secrets in your actions and workflows
+- Use different tools at enterprise and organization levels to manage your actions and workflows.
+- Evaluate what the appropriate runners are for your enterprise instance.
+- Customize your self-hosted runners according to your enterprise use case.
+- Scope, create, and access encrypted secrets in your actions and workflows.
 
 Next, you practiced how to create an encrypted secret in a repository and pass it in an action.
 

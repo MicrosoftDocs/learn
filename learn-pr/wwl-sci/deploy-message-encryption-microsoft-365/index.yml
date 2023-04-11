@@ -5,7 +5,7 @@ metadata:
   description: "Deploy Microsoft Purview Message Encryption"
   ms.date: 06/28/2022
   author: wwlpublish
-  ms.author: bneeb
+  ms.author: riswinto
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
 title: Deploy Microsoft Purview Message Encryption
@@ -24,6 +24,7 @@ roles:
 - ip-admin
 - risk-practitioner
 products:
+- microsoft-purview
 - office-365
 - m365-information-protection
 subjects:

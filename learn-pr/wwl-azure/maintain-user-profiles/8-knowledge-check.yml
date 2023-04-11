@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.maintain-user-profiles.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check for the module, maintain user profiles."
+  ms.date: 03/14/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What are the four common different types of user profiles?"
+    choices:
+    - content: "Local User Profile, Roaming User Profile, Mandatory User Profile, Temporary User Profile"
+      isCorrect: true
+      explanation: "Correct. The Local User Profile is available on a single computer only. The Roaming User Profile can roam between computers that are domain members. The Mandatory User Profile is a pre-configured user profile. The Temporary User Profile is issued each time an error condition prevents the user's profile from loading."
+    - content: "Local User Profile, Remote User Profile, Mandatory User Profile, Temporary User Profile"
+      isCorrect: false
+      explanation: "Incorrect. These profiles aren't the four common different types of user profiles. Try again."
+    - content: "Local User Profile, Roaming User Profile, Member User Profile, Temporary User Profile"
+      isCorrect: false
+      explanation: "Incorrect. These profiles aren't the four common different types of user profiles. Try again."
+  - content: "Data synced to the Microsoft cloud using Enterprise State Roaming that hasn't been accessed for one year may be deleted from the Microsoft cloud. What are the three methods that can explicitly delete data?"
+    choices:
+    - content: "User Deletion, Directory Deletion, Removal Deletion"
+      isCorrect: false
+      explanation: "Incorrect. These items aren't the three methods that can explicitly delete data. Try again."
+    - content: "User Deletion, Directory Deletion, and On-Request Deletion"
+      isCorrect: true
+      explanation: "Correct. User Deletion is when the user delets roaming data after 90 and 180 days. Directory Deletion is an immediate operation deleting the settings data associated with that director after 90 to 180 days. On-Request Deletion is when the Azure AD admin manually deletes specific user's data or files a support ticket with Azure support."
+    - content: "User Deletion, Setting Deletion, On-Request Deletion"
+      isCorrect: false
+      explanation: "Incorrect. These items aren't the three methods that can explicitly delete data. Try again."

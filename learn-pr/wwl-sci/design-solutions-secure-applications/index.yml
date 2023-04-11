@@ -1,0 +1,52 @@
+### YamlMime:Module
+uid: learn.wwl.design-solutions-secure-applications
+metadata:
+  title: Design solutions for securing applications
+  description: "You learn how to secure applications, APIs and the development process using techniques like posture management, threat modeling, and secure access for workload identities."
+  ms.date: 3/14/2023
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+title: Design solutions for securing applications
+summary: "You learn how to secure applications, APIs and the development process using techniques like posture management, threat modeling, and secure access for workload identities."
+abstract: |
+  By the end of this module, you're able to:
+    -   Evaluate security posture of existing application portfolios
+    -   Evaluate threats to business-critical applications by using threat modeling
+    -   Design and implement a full lifecycle strategy for application security
+    -   Design and implement standards and practices for securing the application development process
+    -   Design a solution for workload identity to authenticate and access Azure cloud resources
+    -   Design a solution for API management and security
+    -   Design a solution for secure access to applications
+prerequisites: |
+  - Advanced experience and knowledge in identity and access, platform protection, security operations, securing data, and securing applications.
+  - Experience with hybrid and cloud implementations.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- security-engineer
+- solution-architect
+products:
+- azure
+- defender-for-cloud
+- defender-for-cloud-apps
+- defender-identity
+- microsoft-sentinel
+subjects:
+  - security
+  - cloud-security
+units:
+- learn.wwl.design-solutions-secure-applications.introduction-application-security
+- learn.wwl.design-solutions-secure-applications.design-implement-standards-secure-application-development
+- learn.wwl.design-solutions-secure-applications.evaluate-security-posture-existing-application-portfolios
+- learn.wwl.design-solutions-secure-applications.evaluate-application-threats-threat-modeling
+- learn.wwl.design-solutions-secure-applications.design-security-lifecycle-strategy-applications
+- learn.wwl.design-solutions-secure-applications.secure-access-workload-identities
+- learn.wwl.design-solutions-secure-applications.design-solution-api-management-security
+- learn.wwl.design-solutions-secure-applications.design-solution-secure-access-applications
+- learn.wwl.design-solutions-secure-applications.knowledge-check
+- learn.wwl.design-solutions-secure-applications.summary
+badge:
+  uid: learn.wwl.design-solutions-secure-applications.badge

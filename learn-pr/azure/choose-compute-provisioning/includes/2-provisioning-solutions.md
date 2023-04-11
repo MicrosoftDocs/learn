@@ -15,7 +15,7 @@ You need some way to automate the deployment of virtual machines to deal with th
 - **Install software.** For example, you might need to install a web server or a database server.
 - **Apply updates.** For example, you might need to apply service packs or hotfixes to the operating system and the installed software.
 
-To reduce the complexity of a deployment configuration, create a complete architecture in the form of a script or a configuration file. Then deploy it in a single operation. This way, you can automate your configuration to reduce mistakes and accelerate deployment. You'll help your organization become more productive and cost effective.
+To reduce the complexity of a deployment configuration, create a complete architecture in the form of a script or a configuration file. Then deploy it in a single operation. This way, you can automate your configuration to reduce mistakes and accelerate deployment, helping your organization become more productive and cost effective.
 
 ## Custom scripts
 
@@ -168,7 +168,7 @@ end
 
 ## Terraform
 
-Terraform is an open-source infrastructure-as-code software tool. You can create infrastructures by using Hashicorp Configuration Language (HCL). This language is created by Hashicorp. You can also use JSON. Terraform lets you create relatively easy-to-read script templates that define what type of resources to create, regardless of the cloud service provider. You can build your environments by using different cloud service providers, such as Microsoft Azure and Amazon Web Services (AWS). This way you can ensure that your environments are identical across cloud providers. The process requires you to install Terraform, either locally or on Azure. You can then use Terraform to execute a Terraform script.
+Terraform is an open-source infrastructure-as-code software tool. You can create infrastructures by using a language created by Hashicorp, called Hashicorp Configuration Language (HCL). You can also use JSON. Terraform lets you create relatively easy-to-read script templates that define what type of resources to create, regardless of the cloud service provider. You can build your environments by using different cloud service providers, such as Microsoft Azure and Amazon Web Services (AWS). This way you can ensure that your environments are identical across cloud providers. The process requires you to install Terraform, either locally or on Azure. You can then use Terraform to execute a Terraform script.
 
 The following Terraform script example provisions a virtual machine on Azure:
 
@@ -242,13 +242,13 @@ To use this script, run the following command by using Terraform:
 terraform apply
 ```
 
-## Azure automation state configuration
+## Azure Automation state configuration
 
-Azure automation state configuration is the service you use to make sure that your DSC configurations are managed properly and deployed across your nodes (virtual machines). Azure automation state configuration works with both Azure virtual machines and machines on-premises. It also works with machines on other cloud providers. Through an intuitive Azure portal process, you can apply configurations to all of your nodes.
+Azure Automation state configuration is the service you use to make sure that your DSC configurations are managed properly and deployed across your nodes (virtual machines). Azure Automation state configuration works with both Azure virtual machines and machines on-premises. It also works with machines on other cloud providers. Through an intuitive Azure portal process, you can apply configurations to all of your nodes.
 
 ![Screenshot of the State configuration panel in the Azure portal.](../media/2-automation-state-config.png)
 
-Azure automation state configuration makes it possible for you to ensure that all target machines are assigned the correct configurations automatically. It also ensures that each machine reports back on what its current state is and shows whether it has achieved the desired state. You can send this information for reporting and for further decision making. You can interact with Azure automation state configuration through the Azure portal or through Azure PowerShell.
+Azure Automation state configuration makes it possible for you to ensure that all target machines are assigned the correct configurations automatically. It also ensures that each machine reports back on what its current state is and shows whether it has achieved the desired state. You can send this information for reporting and for further decision making. You can interact with Azure Automation state configuration through the Azure portal or through Azure PowerShell.
 
 ## Azure Resource Manager templates
 

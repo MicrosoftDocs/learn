@@ -5,10 +5,11 @@ Before you start to publish your toy company's reusable Bicep code, you need to 
 To meet these objectives, you'll:
 
 > [!div class="checklist"]
-> * Set up an Azure DevOps project for this module.
-> * Clone the project's repository to your computer.
-> * Create a resource group in Azure.
-> * Create a service connection in Azure Pipelines.
+>
+> - Set up an Azure DevOps project for this module.
+> - Clone the project's repository to your computer.
+> - Create a resource group in Azure.
+> - Create a service connection in Azure Pipelines.
 
 ## Get the Azure DevOps project
 
@@ -24,7 +25,7 @@ The modules in this learning path are part of a progression. For learning purpos
 Run a template that sets up your Azure DevOps project.
 
 > [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=bicepreusable&azure-portal=true)
+> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=bicepreusable)
 
 On the Azure DevOps Demo Generator site, do the following:
 
@@ -40,7 +41,7 @@ On the Azure DevOps Demo Generator site, do the following:
 
 1. Select **Navigate to project** to go to your project in Azure DevOps.
 
-[!include[](../../includes/cleanup-steps.md)]
+[!INCLUDE [](../../includes/cleanup-steps.md)]
 
 ## Clone the repository
 
@@ -70,15 +71,13 @@ On the Azure DevOps Demo Generator site, do the following:
 
    :::image type="content" source="../../includes/media/open-cloned-repo.png" alt-text="Screenshot of Visual Studio Code that shows a prompt to open the cloned repository, with the Open button highlighted.":::
 
-[!include[](../../includes/azure-template-pipeline-sign-in.md)]
-
 ## Sign in to Azure
 
 ::: zone pivot="cli"
 
-To work with resource groups in Azure, sign in to your Azure account from the Visual Studio Code terminal. Be sure that you've installed the [Azure CLI](/cli/azure/install-azure-cli?azure-portal=true) tools.
+To work with resource groups in Azure, sign in to your Azure account from the Visual Studio Code terminal. Be sure that you've installed the [Azure CLI](/cli/azure/install-azure-cli) tools.
 
-1[!include[](../../includes/azure-exercise-terminal-cli.md)]
+[!INCLUDE [](../../includes/azure-exercise-terminal-cli.md)]
 
 ### Sign in to Azure by using the Azure CLI
 
@@ -94,9 +93,9 @@ To work with resource groups in Azure, sign in to your Azure account from the Vi
 
 ::: zone pivot="powershell"
 
-To work with resource groups in Azure, sign in to your Azure account from the Visual Studio Code terminal. Be sure that you've [installed Azure PowerShell](/powershell/azure/install-az-ps?azure-portal=true).
+To work with resource groups in Azure, sign in to your Azure account from the Visual Studio Code terminal. Be sure that you've [installed Azure PowerShell](/powershell/azure/install-az-ps).
 
-[!include[](../../includes/azure-exercise-terminal-powershell.md)]
+[!INCLUDE [](../../includes/azure-exercise-terminal-powershell.md)]
 
 ### Sign in to Azure by using Azure PowerShell
 

@@ -13,7 +13,7 @@ prerequisites: |
   Before starting this learning path, you should:
   - Be familiar with Microsoft Azure and the Azure portal
   - Have experience programming with C# or Python
-  If you are new to programming, consider completing the [Take your first steps with C#](../csharp-first-steps/index.yml) or [Python for beginners](../beginner-python/index.yml) learning path first.
+  If you are new to programming, consider completing the [Take your first steps with C#](../get-started-c-sharp-part-1/index.yml) or [Python for beginners](../beginner-python/index.yml) learning path first.
 summary: |
   Learn how to develop speech-enabled applications by using the Speech service.
 iconUrl: /training/achievements/process-translate-speech-azure-cognitive-speech-services.svg

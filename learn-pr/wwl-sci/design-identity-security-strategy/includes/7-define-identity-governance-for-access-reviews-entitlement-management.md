@@ -1,3 +1,4 @@
+
 By default, Global administrators and Identity governance administrators
 can create and manage all aspects of Azure AD entitlement management and
 easily ensure that users or guests have the appropriate access. You can

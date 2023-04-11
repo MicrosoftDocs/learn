@@ -4,10 +4,11 @@ title: One-hot vectors
 metadata:
   title: One-hot vectors
   description: Conceptual unit about one-hot vectors in machine learning
-  ms.date: 05/25/2021
+  ms.date: 02/27/2023
   author: TomReidNZ
   ms.author: jasdeb
   ms.topic: interactive-tutorial
+  ms.reviewer: franksolomon
   ms.prod: learning-azure
 durationInMinutes: 5
 content: |

@@ -8,6 +8,7 @@ Use Azure RBAC to create and assign roles in your SecOps team. Azure RBAC lets y
 
 > [!TIP]
 > You can assign Azure RBAC roles:
+>
 > - Directly in the Microsoft Sentinel workspace
 > - In a subscription
 > - To the resource group that the workspace belongs to, which Microsoft Sentinel inherits

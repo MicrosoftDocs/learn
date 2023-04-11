@@ -19,7 +19,7 @@ It's common practice to train the model using a subset of the data, while holdin
 
 You will use *designer*'s **Score Model** component to generate the predicted class label value. Once you connect all the components, you will want to run an experiment, which will use the data asset on the canvas to train and score a model.  
 
-![Screenshot of designer components that can be connected to train a classification model.](../media/train-model-example.png)
+![Screenshot of designer components that can be connected to train a classification model.](../media/classification-train-model-example.png)
 
 ## Evaluate performance 
 
@@ -91,7 +91,7 @@ It will take a while for your endpoint to be deployed. The Deployment state on t
 
 On the **Test** tab, you can test your deployed service with sample data in a JSON format. The test tab is a tool you can use to quickly check to see if your model is behaving as expected. Typically it is helpful to test the service before connecting it to an application.
  
-![Screenshot of the test tab on the endpoints page.](../media/endpoints-example-3.png)
+![Screenshot of the test tab on the endpoints page.](../media/diabetes-endpoints-example-3.png)
 
 You can find credentials for your service on the **Consume** tab. These credentials are used to connect your trained machine learning model as a service to a client application.
 

@@ -2,16 +2,16 @@
 uid: learn.wwl.sql-database-security
 metadata:
   title: Configure and manage SQL database security
-  description: "Configure and lock down your SQL database on Azure to protect your corporate data while it is stored."
-  ms.date: 09/06/2022
+  description: "Configure and lock down your SQL database on Azure to protect your corporate data while it's stored."
+  ms.date: 04/06/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Configure and manage SQL database security
-summary: Configure and lock down your SQL database on Azure to protect your corporate data while it is stored.
+summary: Configure and lock down your SQL database on Azure to protect your corporate data while it's stored.
 abstract: |
-  By the end of this module, you will be able to:
+  By the end of this module, you'll be able to:
   - Configure which users and applications have access to your SQL databases
   - Block access to your servers using firewalls
   - Discover, classify, and audit the use of your data
@@ -36,8 +36,11 @@ units:
 - learn.wwl.sql-database-security.firewalls
 - learn.wwl.sql-database-security.database-auditing
 - learn.wwl.sql-database-security.data-discovery-classification​
-- learn.wwl.sql-database-security.vulnerability-assessment​
-- learn.wwl.sql-database-security.advanced-threat-protection
+- learn.wwl.sql-database-security.microsoft-defender-for-sql
+- learn.wwl.sql-database-security.vulnerability-assessment-for-sql-server
+- learn.wwl.sql-database-security.sql-advanced-threat-protection
+- learn.wwl.sql-database-security.explore-detection-suspicious-event
+- learn.wwl.sql-database-security.sql-vulnerability-assessment-express-and-classic-configurations
 - learn.wwl.sql-database-security.dynamic-data-masking
 - learn.wwl.sql-database-security.transparent-data-encryption​
 - learn.wwl.sql-database-security.always-encrypted​

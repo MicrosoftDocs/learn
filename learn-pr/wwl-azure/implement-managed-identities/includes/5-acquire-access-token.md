@@ -1,3 +1,4 @@
+
 A client application can request managed identities for Azure resources app-only access token for accessing a given resource. The token is based on the managed identities for Azure resources service principal. As such, there is no need for the client to register itself to obtain an access token under its own service principal. The token is suitable for use as a bearer token in service-to-service calls requiring client credentials.
 
 This unit provides various code and script examples for token acquisition, as well as guidance on important topics such as handling token expiration and HTTP errors.
@@ -75,7 +76,7 @@ catch (Exception e)
 
 ## Token caching
 
-While the managed identities for Azure resources subsystem does cache tokens, we also recommend to implement token caching in your code. As a result, you should prepare for scenarios where the resource indicates that the token is expired.
+While the managed identities for Azure resources subsystem does cache tokens, we also recommend implementing token caching in your code. As a result, you should prepare for scenarios where the resource indicates that the token is expired.
 
 On-the-wire calls to Azure Active Directory result only when:
 

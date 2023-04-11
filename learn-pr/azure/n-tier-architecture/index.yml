@@ -3,7 +3,7 @@ uid: learn.n-tier-architecture
 metadata:
   title: Tour the N-tier architecture style for your application
   description: Discover the benefits of a Resource Manager template to deploy an application in an N-tier architecture and review best practices for deployments of this style.
-  ms.date: 01/15/2019
+  ms.date: 02/17/2023
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial

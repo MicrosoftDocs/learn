@@ -5,8 +5,8 @@ metadata:
   title: Introduction
   description: Introduction.
   ms.date: 09/19/2020
-  author: KittyYeungQ
-  ms.author: kitty
+  author: bradben
+  ms.author: brbenefield
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   show_latex: true

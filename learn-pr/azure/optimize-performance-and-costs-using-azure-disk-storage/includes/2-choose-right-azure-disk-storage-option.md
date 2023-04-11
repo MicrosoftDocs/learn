@@ -1,6 +1,6 @@
 One of the primary concerns for your organization is how to migrate its enterprise applications that require high-performance storage to Azure.
 
-As part of the migration strategy, you propose the Azure Disk Storage solution to optimize performance and costs. This unit covers the various disk storage types that are available in Azure.
+As part of the migration strategy, you propose the Azure Disk Storage solution to optimize performance and costs. This unit covers the various disk-storage types available in Azure.
 
 ## Ultra disks
 
@@ -80,7 +80,7 @@ The following table provides the performance characteristics of Standard SSD dis
 | E40 | 2,048 | 500 | 60 |
 | E80 | 32,767 | 6,000 | 750 |
 
-Use Standard SSD disks when you have budgetary constraints and a workload that isn't performance-intensive. For example, web servers, lightly used enterprise applications, and test servers all can run on Standard SSD disks. Standard SSD disks support disk bursting on P30 disks and smaller disks.
+Use Standard SSD disks when you have budgetary constraints and a workload that isn't performance-intensive. For example, web servers, lightly used enterprise applications, and test servers all can run on Standard SSD disks. Standard SSD disks support disk bursting on P30 and smaller disks.
 
 ## Standard HDD managed disks
 

@@ -181,29 +181,7 @@ Now that you've created your own GitHub repository, you can create your own stat
 
 2. Enter **File: Open Folder...**.
 
-::: zone pivot="angular"
-
-3. Select the **my-static-web-app-and-api/angular-app** folder.
-
-::: zone-end
-
-::: zone pivot="react"
-
-3. Select the **my-static-web-app-and-api/react-app** folder.
-
-::: zone-end
-
-::: zone pivot="svelte"
-
-3. Select the **my-static-web-app-and-api/svelte-app** folder.
-
-::: zone-end
-
-::: zone pivot="vue"
-
-3. Select the **my-static-web-app-and-api/vue-app** folder.
-
-::: zone-end
+3. Select the **my-static-web-app-and-api** folder.
 
 4. Select **Open** to open the folder in Visual Studio Code.
 

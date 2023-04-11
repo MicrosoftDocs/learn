@@ -3,7 +3,7 @@ uid: learn.beginner-python.create-manage-projects
 metadata:
   title: Create and manage projects in Python
   description: Learn how to use virtual environments and packages as you create and manage projects in Python.
-  ms.date: 02/15/2022
+  ms.date: 01/25/2023
   author: softchris
   ms.author: chnoring
   ms.custom: team=nextgen
@@ -20,6 +20,7 @@ abstract: |
 prerequisites: |
   - Familiarity with the terminal.
   - Knowledge of how to run commands from the terminal.
+  - Python installed on your machine.
   - Experience with writing a program or two in Python (recommended).
 iconUrl: /training/achievements/python-create-manage-projects.svg
 levels:
@@ -28,7 +29,7 @@ roles:
   - developer
   - student
 products:
-  - vs
+  - azure
 subjects:
 - development-tools
 units:

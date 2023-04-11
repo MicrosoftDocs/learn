@@ -19,9 +19,9 @@ quiz:
   questions:
   - content: "What version of vCenter is deployed with AVS?"
     choices:
-    - content: "6.7 Update 3"
+    - content: "7.0 Update 3c"
       isCorrect: true
-      explanation: "AVS deploys with vSphere 6.7 Update 3."
+      explanation: "AVS deploys with vSphere 7.0 Update 3c."
     - content: "7.0 Update 1"
       isCorrect: false
       explanation: "AVS doesn't deploy with vSphere 7.0 Update 1."

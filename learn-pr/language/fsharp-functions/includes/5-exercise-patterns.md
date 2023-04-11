@@ -1,5 +1,5 @@
 
-In this exercise, you'll focus on applying some of the functional patterns you were taught. You'll also work on code written by your colleagues and fuse it together with a pipeline operator.
+In this exercise, focus on applying some of the functional patterns that you were taught. Also, work on the code written by your colleagues and fuse it together with a pipeline operator.
 
 ## Create an app
 
@@ -33,7 +33,7 @@ let printAll list = List.iter(fun x -> printCard(x)) list
 let take (no:int) (list) = List.take no list 
 ```
 
-The code consists of different parts that will help you implement a card game. So, what's the task? Your task is to take a deck of cards, shuffle it, take the top three cards, and then print the results.
+The code consists of different parts that help you implement a card game. So, what's the task? Your task is to take a deck of cards, shuffle it, take the top three cards, and then print the results.
 
 1. Create a new project with:
 

@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/16/2022
+  ms.date: 03/17/2023
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
@@ -16,7 +16,6 @@ content: |
   [!include[](includes/7-knowledge-check.md)]
 quiz:
   title: ""
-
   questions:
   - content: "What solution would you recommend for the load-balancing requirements?"
     choices:
@@ -25,11 +24,10 @@ quiz:
       explanation: "Incorrect. Azure Front Door isn't needed for non-internet facing applications."
     - content: "Azure Application Gateway"
       isCorrect: true
-      explanation: "Correct. Azure Application Gateway is the best choice for a web app that's not internet facing."    
+      explanation: "Correct. Azure Application Gateway is the best choice for a web app that's not internet facing."
     - content: "Azure Load Balancer"
       isCorrect: false
       explanation: "Incorrect. While Azure Load Balancer might technically work, it isn't recommended for web applications. Load Balancer doesn't offer the required security and optimization features."
-
   - content: "Which security solution is necessary to filter the traffic as indicated?"
     choices:
     - content: "Azure Web Application Firewall on Azure Application Gateway"
@@ -41,7 +39,6 @@ quiz:
     - content: "Azure Firewall"
       isCorrect: true
       explanation: "Correct. Azure Firewall can filter HTTP(S) traffic from Azure to on-premises and outbound to the internet."
-
   - content: "What network topology is recommended based on the architecture requirement?"
     choices:
     - content: "Azure Virtual WAN network topology"

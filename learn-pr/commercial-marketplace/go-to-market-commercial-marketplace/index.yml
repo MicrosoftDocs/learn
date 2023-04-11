@@ -6,8 +6,9 @@ metadata:
   ms.date: 12/09/2022
   author: marleva
   ms.author: maevan
+  manager: jasonh
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: marketplace
 title: Go to market through the commercial marketplace
 summary: This module provides tips and best practices to help you create your organization's unique plan for success in the commercial marketplace
 abstract: |
@@ -27,8 +28,8 @@ roles:
 - technology-manager
 - administrator
 products:
-- azure
 - azure-marketplace
+- azure
 - dynamics-365
 - m365
 - office-365
