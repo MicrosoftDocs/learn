@@ -3,7 +3,7 @@ uid: learn.azure.encrypt-sector-data
 metadata:
   title: Encrypt public sector data in Azure
   description: Overview of the options available for managing encryption keys and encrypting data throughout its lifecycle, with special attention to public sector.
-  ms.date: 05/03/2021
+  ms.date: 04/11/2023
   author: Adriamen
   ms.author: micrum
   ms.topic: interactive-tutorial
