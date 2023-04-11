@@ -31,7 +31,6 @@ subjects:
 - data-modeling
 - machine-learning
 units:
-- learn.wwl.prepare-data-for-machine-learning-azure-databricks.introduction
 - learn.wwl.prepare-data-for-machine-learning-azure-databricks.understand-concepts
 - learn.wwl.prepare-data-for-machine-learning-azure-databricks.perform-data-cleaning
 - learn.wwl.prepare-data-for-machine-learning-azure-databricks.perform-feature-engineering
