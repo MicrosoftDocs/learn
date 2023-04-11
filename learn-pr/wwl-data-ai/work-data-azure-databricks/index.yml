@@ -29,7 +29,6 @@ subjects:
 - cloud-computing
 - machine-learning
 units:
-- learn.wwl.work-data-azure-databricks.introduction
 - learn.wwl.work-data-azure-databricks.understand-dataframes
 - learn.wwl.work-data-azure-databricks.query-dataframes
 - learn.wwl.work-data-azure-databricks.visualize-data
