@@ -8,7 +8,7 @@ Ultra disks provide the highest disk performance available in Azure. Choose them
 
 The maximum performance of an Ultra disk depends on the size you select, as you can see from examples in this table:
 
-| Disk size (GB) | IOPS | Throughput (MBps) |
+| Disk size (GB) | IOPS | Throughput (MB/s) |
 | --- | --- | --- |
 | 4 | 1,200 | 300 |
 | 8 | 2,400 | 600 |
@@ -53,7 +53,7 @@ To adjust the performance of a disk you can change its performance tier (which c
 
 The following table contains examples that illustrate the high performance of premium SSD managed disks:
 
-| Disk size name | Disk size | IOPS | Throughput (MBps) |
+| Disk size name | Disk size | IOPS | Throughput (MB/s) |
 | --- | --- | --- | --- |
 | P4 | 32 GiB | 120 | 25 |
 | P15 | 256 GiB | 1,100 | 125 |
@@ -68,11 +68,11 @@ Azure Premium SSD disks support two bursting models, an on-demand bursting model
 
 ## Standard SSD managed disks
 
-Azure Standard SSD managed disks are a cost-effective storage option for VMs that need consistent performance at lower speeds. Standard SSD disks aren't as fast as Premium SSD disks or Ultra Disk Storage, but they still provide single-digit millisecond (ms) latencies and up to 6,000 IOPS and 750 MBps of throughput. You can attach Standard SSD disks to any VM, regardless of its size.
+Azure Standard SSD managed disks are a cost-effective storage option for VMs that need consistent performance at lower speeds. Standard SSD disks aren't as fast as Premium SSD disks or Ultra Disk Storage, but they still provide single-digit millisecond (ms) latencies and up to 6,000 IOPS and 750 MB/s of throughput. You can attach Standard SSD disks to any VM, regardless of its size.
 
 The following table provides the performance characteristics of Standard SSD disks in several sizes:
 
-| Disk size name | Disk size (GB) | IOPS | Throughput (MBps) |
+| Disk size name | Disk size (GB) | IOPS | Throughput (MB/s) |
 | --- | --- |--- | --- |
 | E4 | 32 | 500 | 60 |
 | E15 | 256 | 500 | 60 |
@@ -87,7 +87,7 @@ In Azure Standard HDD managed disks, data is stored on conventional magnetic dis
 
 The following table provides the performance characteristics of Standard HDD disks in several sizes:
 
-| Disk size name | Disk size (GB) | IOPS | Throughput (MBps) |
+| Disk size name | Disk size (GB) | IOPS | Throughput (MB/s) |
 | --- | --- |--- | --- |
 | S4 | 32 | 500 | 60 |
 | S15 | 256 | 500 | 60 |

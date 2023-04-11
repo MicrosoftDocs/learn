@@ -5,7 +5,7 @@ Application performance often depends on how quickly the application can read an
 To choose the right disk type, it's important that you understand the performance indicators. The following indicators express performance:
 
 - **IOPS**: IOPS is the number of requests that your application sends to the disks in one second. IOPS directly affects your application performance. Some applications, like retail websites, need high IOPS to manage all the small and random input/output (I/O) requests that must be processed quickly to keep the site responsive. Higher performance disks have higher IOPS values.
-- **Throughput**: Throughput is the amount of data that your application sends to the disks in a specified interval. Throughput is also called *data transfer rate* and is measured in MBps. If your application is performing I/O with large blocks of data, it requires high throughput. Higher performance disks have higher throughput.
+- **Throughput**: Throughput is the amount of data that your application sends to the disks in a specified interval. Throughput is also called *data transfer rate* and is measured in MB/s. If your application is performing I/O with large blocks of data, it requires high throughput. Higher performance disks have higher throughput.
 - **Latency**: Latency expresses the time it takes your app to send a request to the disk and receive a response. Latency puts a limit on effective IOPS. For example, (with a queue depth of 1) if your disk can handle 5,000 IOPS but each operation takes 10 ms to process, your app will be capped at 100 operations per second because of the processing time. The latency is significantly improved if you enable ReadOnly host caching.
 
 ## IOPS vs. throughput
@@ -24,7 +24,7 @@ The minimum guaranteed IOPS per disk are 1 IOPS/GiB, with an overall baseline mi
 
 ### Ultra disk throughput
 
-The throughput limit of a single ultra disk is 256-KiB/s for each provisioned IOPS, up to a maximum of 4000 MBps per disk (where MBps = 10^6 Bytes per second). The minimum guaranteed throughput per disk is 4KiB/s for each provisioned IOPS, with an overall baseline minimum of 1 MBps.
+The throughput limit of a single ultra disk is 256-KiB/s for each provisioned IOPS, up to a maximum of 4000 MB/s per disk (where MB/s = 10^6 Bytes per second). The minimum guaranteed throughput per disk is 4KiB/s for each provisioned IOPS, with an overall baseline minimum of 1 MB/s.
 
 ### Premium SSD v2 IOPS
 
@@ -103,7 +103,7 @@ The performance of the VM depends on the IOPS and throughput limits that are imp
 
 The following table lists examples that illustrate the difference in performance for cached and uncached disk throughput and bandwidth.
 
-| VM size name |  Max cached and temp storage throughput: IOPS/MBps (cache size in GiB) | Max uncached disk throughput IOPS/MBps |
+| VM size name |  Max cached and temp storage throughput: IOPS/MB/s (cache size in GiB) | Max uncached disk throughput IOPS/MB/s |
 | --- | --- | --- |
 | Standard_D2s_v3 | 4,000/32 (50) | 3,200/48 |
 | Standard_D4s_v3 | 8,000/64 (100) | 6,400/96 |
