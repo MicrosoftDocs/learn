@@ -1,5 +1,6 @@
 
 
+
 In this exercise, you write the nested looping structure and selection code block that's used to display the ourAnimals array information. The detailed tasks that you complete during this exercise are:
 
 1. Outer loop: build the outer loop that iterates through the animals in the ourAnimals array.
@@ -311,7 +312,7 @@ In this task, you run your application from the Integrated Terminal and verify t
     ID #: c3
     Species: cat
     Age: 1
-    Nickname: Daisy
+    Nickname: Puss
     Physical description: small white female weighing about 8 pounds. litter box trained.
     Personality: friendly
 
