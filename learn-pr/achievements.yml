@@ -1642,3 +1642,8 @@ achievements:
   title: Use data loading best practices in Azure Synapse Analytics
   summary: Learn the best practices you need to adopt to load data into a data warehouse in Azure Synapse Analytics.
   iconUrl: /training/achievements/use-data-loading-best-practices-in-azure-synapse-analytics.svg
+- uid: learn.wwl.work-data-azure-databricks.badge
+  type: badge
+  title: Work with data in Azure Databricks
+  summary: To work with data in Azure Databricks, you can use the *dataframe* object.
+  iconUrl: /training/achievements/work-with-data-in-azure-databricks.svg
