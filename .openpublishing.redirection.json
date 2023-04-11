@@ -21304,6 +21304,11 @@
       "source_path": "learn-pr/wwl-data-ai/prepare-data-for-machine-learning-azure-databricks/9-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/machine-learning-azure-databricks/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/prepare-data-for-machine-learning-azure-databricks/2-understand-concepts.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/machine-learning-azure-databricks/",
+      "redirect_document_id": false
     }
   ]
 }
