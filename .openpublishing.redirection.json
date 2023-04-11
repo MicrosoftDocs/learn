@@ -21359,6 +21359,11 @@
       "source_path": "learn-pr/wwl-data-ai/use-data-loading-best-practices-azure-synapse-analytics/10-simplify-ingestion.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/load-optimize-data-into-relational-data-warehouse/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-data-loading-best-practices-azure-synapse-analytics/12-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/load-optimize-data-into-relational-data-warehouse/",
+      "redirect_document_id": false
     }
   ]
 }
