@@ -1,7 +1,7 @@
 In this module, you learned about Azure Virtual Machine Scale Sets, a service that provides you with a scalable way to run applications on a set of virtual machines (VMs).
 
 - As demand grows, the number of VMs running in the scale set increases.
-- As demand decreases, excess VMs can be shut down.
+- As demand decreases, the number of VMs running in the scale set decreases. 
 
 Virtual machine scale sets are ideal for scenarios that include compute workloads, big-data workloads, and container workloads.
 
