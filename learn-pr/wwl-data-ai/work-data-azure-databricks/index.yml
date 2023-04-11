@@ -29,6 +29,5 @@ subjects:
 - cloud-computing
 - machine-learning
 units:
-- learn.wwl.work-data-azure-databricks.visualize-data
 badge:
   uid: learn.wwl.work-data-azure-databricks.badge
