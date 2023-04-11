@@ -21384,6 +21384,11 @@
       "source_path": "learn-pr/wwl-data-ai/work-data-azure-databricks/1-introduction.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/use-apache-spark-azure-databricks/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-data-azure-databricks/6-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
     }
   ]
 }
