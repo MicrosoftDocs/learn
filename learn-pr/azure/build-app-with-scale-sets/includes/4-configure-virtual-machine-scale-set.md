@@ -1,6 +1,4 @@
-If you need to handle a steady expansion of work over time, the best approach is to scale horizontally. However, if the workload increases in complexity rather than in volume, and this complexity demands more of your resources, you might prefer to scale vertically.
-
-When you scale horizontally, you add instances to your virtual machine scale set. In the shipping-company scenario, horizontal scaling is a good way to handle the changing number of requests over time. Horizontal scaling adjusts the number of virtual machines that run the web application as the number of users changes. In this way, the system maintains an even response time, regardless of the current load.
+When you scale, you add instances to your virtual machine scale set. In the shipping-company scenario, scaling is a good way to handle the changing number of requests over time. Scaling adjusts the number of virtual machines that run the web application as the number of users changes. In this way, the system maintains an even response time, regardless of the current load.
 
 In this unit, you'll learn how to scale a virtual machine scale set. You can scale manually by explicitly setting the number of virtual machine instances in the scale set, or you can configure autoscaling by defining scale rules that trigger the allocation and deallocation of virtual machines. These scale rules determine when to scale the system by monitoring various performance metrics.
 
