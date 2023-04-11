@@ -21219,6 +21219,11 @@
       "source_path": "learn-pr/wwl-data-ai/get-started-azure-databricks/4-work-notebooks.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-databricks/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/manage-machine-learning-models-azure-databricks/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/mlflow-azure-databricks/",
+      "redirect_document_id": false
     }
   ]
 }
