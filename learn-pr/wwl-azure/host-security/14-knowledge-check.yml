@@ -34,7 +34,7 @@ quiz:
       explanation: "BitLocker is for Windows based machines."
     - content: "DM-Crypt"
       isCorrect: true
-      explanation: "DM-Crypt . Azure Disk Encryption is a capability that lets you encrypt your Windows and Linux IaaS VM disks. Azure Disk Encryption uses the industry standard BitLocker feature of Windows and the `DM-Crypt` feature of Linux to provide OS and data disk encryption to help protect and safeguard your data."
+      explanation: "DM-Crypt. Azure Disk Encryption is a capability that lets you encrypt your Windows and Linux IaaS VM disks. Azure Disk Encryption uses the industry standard BitLocker feature of Windows and the `DM-Crypt` feature of Linux to provide OS and data disk encryption to help protect and safeguard your data."
     - content: "FileVault"
       isCorrect: false
       explanation: "FireVault is for encrypting Mac machines."

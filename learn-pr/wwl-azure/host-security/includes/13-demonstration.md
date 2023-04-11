@@ -19,7 +19,7 @@ In this task, we will configure the Bastion service and connect to a virtual mac
 5.  Because you are creating the Bastion service from the target virtual machine, mention that most of the networking information has automatically been filled in. Note the Bastion service will be assigned a public IP address.
 6.  To create the Bastion subnet in the virtual network, click **Manage subnet configuration**.
 7.  On the virtual network subnet blade, click **+ Subnet**.
-8.  On the Add subnet page, type **AzureBastionSubnet** as the subnet name. Note this name cannot be changed.
+8.  On the Add subnet page, type **AzureBastionSubnet** as the subnet name. Note this name can't be changed.
 9.  Specify the address range in CIDR notation. For example, **10.1.1.0/27**.
 10. Click **Ok**, then click **Create**. It will take a few minutes for the service to deploy.
 
@@ -48,7 +48,7 @@ In this task, we will review virtual machine update management.
 5.  Select **Missing Updates** and use the **Information link** to open the support article for the update.
 6.  Select **Schedule update deployment**.
 7.  Review the various options including maintenance windows, reboot options, scheduling, classifications, kbs to include and exclude.
-8.  You can view the status for the deployment on the **Update deployments** tab. The available values are not attempted, succeeded, and failed.
+8.  You can view the status for the deployment on the **Update deployments** tab. The available values aren't attempted, succeeded, and failed.
 
 ## Task 3 - Virtual Machine Extensions
 
@@ -138,7 +138,7 @@ In this task, we will use RDP to connect to a Windows virtual machine.
 > [!NOTE]
 > This task requires a Linux VM. Ensure port 22 is open.
 
-In this task, we will create a SSH private key with PuTTYgen, and then use SSH to connect to a Linux virtual machine.
+In this task, we will create an SSH private key with PuTTYgen, and then use SSH to connect to a Linux virtual machine.
 
 ### Create the SSH Keys
 
@@ -150,7 +150,7 @@ In this task, we will create a SSH private key with PuTTYgen, and then use SSH t
 6.  Copy the text of the **Public key for pasting into authorized keys file**.
 7.  Optionally you can specify a **Key passphrase** and then **Confirm passphrase.** You will be prompted for the passphrase when you authenticate to the VM with your private SSH key. Without a passphrase, if someone obtains your private key, they can sign in to any VM or service that uses that key. We recommend you create a passphrase. However, if you forget the passphrase, there is no way to recover it.
 8.  Click **Save private key**.
-9.  Choose a location and filename and click **Save**. You will need this file to access the VM.
+9.  Choose a location and filename and click **Save**. You'll need this file to access the VM.
 
 ### Create the Linux machine and assign the public SSH key
 

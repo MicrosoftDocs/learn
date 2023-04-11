@@ -17,7 +17,7 @@ You can use the Resource Manager template to define your VMs. After they are def
 
 How you define templates and resource groups is entirely up to you and how you want to manage your solution. For example, you can deploy your three tier application through a single template to a single resource group.
 
-:::image type="content" source="../media/az500-virtual-machine-template-1-3f329213.png" alt-text="A single template is used to deploy different resoureces.":::
+:::image type="content" source="../media/az500-virtual-machine-template-1-3f329213.png" alt-text="A single template is used to deploy different resources.":::
 
 
 But, you don't have to define your entire infrastructure in a single template. Often, it makes sense to divide your deployment requirements into a set of targeted, purpose-specific templates. You can easily reuse these templates for different solutions. To deploy a particular solution, you create a master template that links all the required templates. If you envision your tiers having separate lifecycles, you can deploy your three tiers to separate resource groups. Notice the resources can still be linked to resources in other resource groups.

@@ -3,7 +3,7 @@ This topic explains how to connect to and sign into the virtual machines (VMs) y
 
 ## Connect to a Windows VM
 
-The most common way to connect to a Windows based VM running in Azure is by using Remote Desktop Protocol (RDP). . Most versions of Windows natively contain support for the remote desktop protocol (RDP). If you are connecting to a Windows VM from a Mac, you will need to install an RDP client for Mac.
+The most common way to connect to a Windows based VM running in Azure is by using Remote Desktop Protocol (RDP). Most versions of Windows natively contain support for the remote desktop protocol (RDP). If you are connecting to a Windows VM from a Mac, you will need to install an RDP client for Mac.
 
 If you are using PowerShell and have the Azure PowerShell module installed you may also connect using the `Get-AzRemoteDesktopFile` cmdlet.
 
