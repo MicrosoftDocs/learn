@@ -1632,3 +1632,8 @@ achievements:
   title: Manage machine learning models in Azure Databricks
   summary: In Azure Databricks, you can deploy and manage machine learning models that you have trained.
   iconUrl: /training/achievements/manage-machine-learning-models-in-azure-databricks.svg
+- uid: learn.wwl.prepare-data-for-machine-learning-azure-databricks.badge
+  type: badge
+  title: Prepare data for machine learning with Azure Databricks
+  summary: Before using data to train a machine learning model, it's important to prepare the data appropriately.
+  iconUrl: /training/achievements/prepare-data-for-machine-learning-with-azure-databricks.svg
