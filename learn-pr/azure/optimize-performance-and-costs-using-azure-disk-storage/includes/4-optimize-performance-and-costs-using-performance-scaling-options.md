@@ -65,6 +65,35 @@ $dataDisk = New-AzDisk -ResourceGroupName "myResourceGroupDisk" -DiskName "myDat
 > [!NOTE]
 > When you need higher sustained performance in your application, use the functionality to change the performance tier instead of disk bursting. This option is more cost-effective than disk bursting.
 
+## Performance plus (preview)
+
+The Input/Output Operations Per Second (IOPS) and throughput limits for Premium SSD, Standard SSD, and Standard HDD that are 513 GiB and larger can be increased by enabling performance plus. Enabling performance plus (preview) improves the experience for workloads that require high IOPS and throughput, such as database and transactional workloads. There's no extra charge for enabling performance plus on a disk.
+
+For more details on performance plus, including the limitations, see [Increase IOPS and throughput limits for Azure Premium SSDs and Standard SSD/HDDs](/azure/virtual-machines/disks-enable-performance?tabs=azure-cli)
+
+## Costs
+
+Before deciding on which disk type suits your needs the most, consider how the billing for that disk is done. The total cost of your disk is calculated differently for each disk type.
+
+The cost of a disk is determined by the following factors:
+- The region the disk is deployed in (all disks)
+- The size of the disk (all disks)
+- The number of transactions made involving the disk ( all transactions for Standard HDD and Standard SSD. For Premium SSD, burst transactions only)
+- The redundancy option selected (Standard SSD and Premium SSD only)
+- Whether on-demand bursting is enabled (Premium SSD only)
+- The disk's IOPS (Ultra Disks and Premium SSD v2 only)
+- The disk's throughput (Ultra Disks and Premium SSD v2 only)
+
+## Transactions
+
+On Azure, input/output operation per second (IOPS) and transactions are similar with one major exception:
+
+A transaction on Azure is an I/O operation less than or equal to 256 KiBs of throughput. If your IO operation is larger than 256 KiBs of throughput, it is considered to require multiple transactions. The number of transactions is calculated by dividing the I/O size by 256 KiBs.  
+
+For example, an IO with the size of 1024 KiBs (1MiB) would be processed as 4 transactions on a Standard SSD disk.
+
+Standard SSDs have a cap on the amount of transactions that will be billed in an hour. Once that cap is passed, the rest of your transactions during that hour are free. For details, see [Standard SSD transaction caps](https://techcommunity.microsoft.com/t5/azure-storage-blog/cost-saving-with-standard-ssd-billing-caps/ba-p/3758792).
+
 ## Optimize performance and costs with the optimal option
 
 Now that you understand how different performance indicators define the overall performance of an Azure disk, let's examine some use-case scenarios:
