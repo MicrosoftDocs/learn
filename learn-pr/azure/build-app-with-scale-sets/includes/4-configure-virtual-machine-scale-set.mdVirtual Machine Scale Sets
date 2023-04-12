@@ -1,12 +1,12 @@
-When you scale, you add instances to your virtual machine scale set. In the shipping-company scenario, scaling is a good way to handle the changing number of requests over time. Scaling adjusts the number of virtual machines that run the web application as the number of users changes. In this way, the system maintains an even response time, regardless of the current load.
+When you scale, you add instances to your Virtual Machine Scale Set. In the shipping-company scenario, scaling is a good way to handle the changing number of requests over time. Scaling adjusts the number of virtual machines that run the web application as the number of users changes. In this way, the system maintains an even response time, regardless of the current load.
 
-In this unit, you'll learn how to scale a virtual machine scale set. You can scale manually by explicitly setting the number of virtual machine instances in the scale set, or you can configure autoscaling by defining scale rules that trigger the allocation and deallocation of virtual machines. These scale rules determine when to scale the system by monitoring various performance metrics.
+In this unit, you'll learn how to scale a Virtual Machine Scale Set. You can scale manually by explicitly setting the number of virtual machine instances in the scale set, or you can configure autoscaling by defining scale rules that trigger the allocation and deallocation of virtual machines. These scale rules determine when to scale the system by monitoring various performance metrics.
 
-## Manually scale virtual machine scale sets
+## Manually scale Virtual Machine Scale Sets
 
-You scale a virtual machine scale set manually by increasing or decreasing the instance count. You can do this task programmatically or in the Azure portal.
+You scale a Virtual Machine Scale Set manually by increasing or decreasing the instance count. You can do this task programmatically or in the Azure portal.
 
-The following code uses the Azure CLI to change the number of instances in a virtual machine scale set:
+The following code uses the Azure CLI to change the number of instances in a Virtual Machine Scale Set:
 
 ```bash
 az vmss scale \
@@ -15,7 +15,7 @@ az vmss scale \
     --new-capacity 6
 ```
 
-## Autoscale virtual machine scale sets
+## Autoscale Virtual Machine Scale Sets
 
 Manual scaling is useful in some circumstances. But in many situations, autoscaling is better. It lets the system control the number of instances in a scale set.
 
@@ -30,7 +30,7 @@ Autoscaling is based on a set of scale conditions, rules, and limits. A scale co
 
 In the shipping-company scenario, you can add scale rules that monitor the CPU usage across the scale set. If the CPU usage exceeds the 75 percent threshold, the scale rule can increase the number of virtual machine instances. A second scale rule can also monitor CPU usage, but reduce the number of virtual machine instances when usage falls below 50 percent. Because the application is global, these rules should be active all the time rather than just at specific hours.
 
-A virtual machine scale set can contain many scale conditions. Each matching scale condition is acted on. A scale set can also contain a default scale condition that's used if no other scale conditions match the current time and performance metrics. The default scale condition is always active. It contains no scale rules, effectively acting like a *null* scale condition that doesn't scale in or out. However, you can modify the default scale condition to set a default instance count, or you can add a pair of scale rules that scale out and back in again.
+A Virtual Machine Scale Set can contain many scale conditions. Each matching scale condition is acted on. A scale set can also contain a default scale condition that's used if no other scale conditions match the current time and performance metrics. The default scale condition is always active. It contains no scale rules, effectively acting like a *null* scale condition that doesn't scale in or out. However, you can modify the default scale condition to set a default instance count, or you can add a pair of scale rules that scale out and back in again.
 
 ### Use schedule-based autoscaling
 
@@ -46,7 +46,7 @@ A metrics-based scale rule specifies the resources to monitor, such as CPU usage
 
 In the example scenario, you want to increase the instance count by one when the average CPU usage exceeds 75 percent. Additionally, you want to limit the scale-out operation to 50 instances. This limit can help to prevent costly runaway scaling caused by an attack. Similarly, you want to scale in when the average CPU usage drops below 50 percent.
 
-These metrics are commonly used to monitor a virtual machine scale set:
+These metrics are commonly used to monitor a Virtual Machine Scale Set:
 
 - **Percentage CPU**: This metric indicates the CPU usage across all instances. A high value shows that instances are becoming CPU-bound, which could delay the processing of client requests.
 - **Inbound flows and outbound flows**: These metrics show how fast network traffic is flowing into and out of virtual machines in the scale set.
