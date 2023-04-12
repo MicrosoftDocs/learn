@@ -1,6 +1,6 @@
 Recall from the example scenario that your customers use one of the company's websites to manage and check the status of their shipments. This website is deployed to VMs and hosted on-premises. 
 
-You've noticed that users of the website have significant delays in response times when the overall CPU usage of the VMs exceeds 75 percent. You need the virtual machine scale set that hosts your web application to scale when the system hits this threshold. To save costs, you also want to scale back in when demand falls and the overall CPU usage across the scale set drops below 50 percent.
+You've noticed that users of the website have significant delays in response times when the overall CPU usage of the VMs exceeds 75 percent. You need the Virtual Machine Scale Set that hosts your web application to scale when the system hits this threshold. To save costs, you also want to scale back in when demand falls and the overall CPU usage across the scale set drops below 50 percent.
 
 In this exercise, you'll configure autoscaling. You'll define scale rules that scale out and in again, according to the system's CPU usage.
 
@@ -11,13 +11,13 @@ In this exercise, you'll configure autoscaling. You'll define scale rules that s
 
 ## Create a scale-out rule
 
-1. In the [Azure portal](https://portal.azure.com), go to the page for the virtual machine scale set.
+1. In the [Azure portal](https://portal.azure.com), go to the page for the Virtual Machine Scale Set.
 
-1. On the virtual machine scale set page, under **Settings**, select **Scaling**.
+1. On the Virtual Machine Scale Set page, under **Settings**, select **Scaling**.
 
 1. Select **Custom autoscale**. In the **Default** scale rule, ensure that the **Scale mode** is set to **Scale based on a metric**. Then select **Add a rule**.
 
-   ![Screenshot of the virtual machine scale set page with a callout featuring the Scale based on a metric option and the Add a rule link.](../media/5-add-rule.png)
+   ![Screenshot of the Virtual Machine Scale Set page with a callout featuring the Scale based on a metric option and the Add a rule link.](../media/5-add-rule.png)
 
 1. On the **Scale rule** page, specify the following settings, then select **Add**:
 
@@ -57,4 +57,4 @@ In this exercise, you'll configure autoscaling. You'll define scale rules that s
 
     The **Default** scale condition now contains two scale rules. One rule scales the number of instances out. Another rule scales the number of instances back in.
 
-    ![Screenshot of the virtual machine scale set page with a callout featuring the rules section and the save button.](../media/5-scale-rules.png)
+    ![Screenshot of the Virtual Machine Scale Set page with a callout featuring the rules section and the save button.](../media/5-scale-rules.png)
