@@ -1,4 +1,4 @@
-In this module, you learned how to use deployment slots in Azure App Service. You used slots to test and stage new versions of your app, and you swapped those deployment slots. You can swap slots both to deploy a tested app to production, and to roll back a deployed app when unexpected problems arise.
+In this module, you learned how to use deployment slots in Azure App Service. You used slots to test and stage new versions of your app, and you swapped those deployment slots. You can swap slots both to deploy a tested app to production and to roll back a deployed app when unexpected problems arise.
 
 When you consider using deployment slots, remember that Azure warms up an app before a swap, and traffic redirection is instantaneous. The result is that your app is deployed without service interruptions or performance drops.
 
@@ -8,6 +8,6 @@ Use the Azure portal to delete the **mslearn-slots** resource group from your su
 
 ## Learn more
 
-- [Set up staging environments in App Service](/azure/app-service/deploy-staging-slots).
-- [Learn about Azure subscriptions, service limits, quotas, and constraints](/azure/azure-subscription-service-limits).
-- [Find out more about App Service static IP restrictions](/azure/app-service/app-service-ip-restrictions).
+- [Set up staging environments in App Service](/azure/app-service/deploy-staging-slots)
+- [Learn about Azure subscriptions, service limits, quotas, and constraints](/azure/azure-subscription-service-limits)
+- [Find out more about App Service static IP restrictions](/azure/app-service/app-service-ip-restrictions)
