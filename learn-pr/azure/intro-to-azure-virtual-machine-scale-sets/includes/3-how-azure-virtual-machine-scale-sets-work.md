@@ -1,4 +1,4 @@
-Azure Virtual Machine Scale Sets let you create and manage a group of load balanced VMs. The capacity or number of VM instances can automatically increase or decrease in response to a schedule that you configure or when performance metrics you define are reached. VM instances in a virtual machine scale set can have the same configuration or different configurations.
+Azure Virtual Machine Scale Sets let you create and manage a group of load balanced VMs. The capacity or number of VM instances can automatically increase or decrease in response to a schedule that you configure or when performance metrics you define are reached. VM instances in a Virtual Machine Scale Set can have the same configuration or different configurations.
 
 Virtual Machine Scale Sets provide high availability and scale to your applications. Virtual Machine Scale Sets let you centrally manage, configure, and update a large number of VMs. With Virtual Machine Scale Sets, you can build large-scale services for areas such as compute, big data, and container workloads.
 
