@@ -1,91 +1,39 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
-
-    Goal: briefly summarize the key skill this unit will teach
-
-    Heading: none
-
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
-
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
--->
 # Parameter Sensitive Plan optimization
 
 When a query is compiled, values for any parameters used in queries in a stored procedure or parameterized query are using to make decisions to build an execution plan. This concept is commonly known as parameter sniffing. Only one query plan can exist in cache for statements in a stored procedure or parameterized query. In most cases this does not result in any performance problems for applications. However, there are situations where the data retrieved for queries based on parameters can be skewed, or not evenly distributed. In these cases, the single cache plan may not be optimal for different parameter values. This problem is known as a parameter sensitive plan.
 
 In SQL Server 2022, the optimizer can detect parameter sensitive plan scenarios and cache multiple plans for the same stored procedure or parameterized query. The optimizer uses a concept called query variants to aggregate sets of parameter values to match a query plan best suited for those parameter values.
 
-## Terminology
+## PSP optimization implementation
+During the initial compilation, column statistics histograms identify non-uniform distributions and evaluate the most at-risk parameterized predicates, up to three out of all available predicates. In other words, if multiple predicates within the same query meet the criteria, PSP optimization chooses the top three. The PSP feature limits the number of predicates that are evaluated, in order to avoid bloating the plan cache and the Query Store (if Query Store is enabled) with too many plans.
+
+For eligible plans, the initial compilation produces a dispatcher plan that contains the PSP optimization logic called a dispatcher expression. A dispatcher plan maps to query variants based on the cardinality range boundary values predicates.
+
+## Terminology to be familiar with
+
 ### Dispatcher expression
 Evaluates cardinality of predicates based on runtime parameter values and route execution to different query variants.
+
 ### Dispatcher plan
 A plan containing the dispatcher expression is cached for the original query. The dispatcher plan is essentially a collection of the predicates that were selected by the feature with a few extra details. For each predicate that is selected some of the details that are included in the dispatcher plan are the high and low boundary values. These values are used to divide parameter values into different buckets or ranges. The dispatcher plan also contains the statistics that were used to calculate the boundary values.
+
 ### Query variant
 As a dispatcher plan evaluates the cardinality of predicates based on runtime parameter values, it bucketizes those values, and generates separate child queries to compile and execute. These child queries are called query variants. Query variants have their own plans in the plan cache and Query Store.
 
+### Predicate cardinality range
+At runtime, the cardinality of each predicate is evaluated based on runtime parameter values. The dispatcher will bucketize the cardinality values into three predicate cardinality ranges at compile time. For example, the PSP optimization feature can create three ranges that would represent low, medium, and high cardinality ranges, as shown in the following diagram.
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+![Image](../media/psp/parameter-sensitive-plan-boundaries.png)
 
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
+In other words, when a parameterized query is initially compiled, the PSP optimization feature will generate a shell plan known as a dispatcher plan. The dispatcher expression has the logic that bucketizes queries into query variants based on the runtime values of parameters. When actual execution begins, the dispatcher performs two steps:
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+* the dispatcher evaluates its dispatcher expression for the given set of parameters to compute the cardinality range.
+* the dispatcher maps these ranges to specific query variants and compiles and executes the variants. By virtue of having multiple query variants, the PSP optimization feature achieves having multiple plans for a single query.
 
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
+## Considerations 
+*  To enable PSP optimization, enable database compatibility level 160 for the database you're connected to when executing the query.
+*  For additional insights into the PSP optimization feature, we recommend that Query Store integration is enabled, by turning on the Query Store.
 
-    Goal: State concisely what's covered in this unit
+For additional details to build a deeper understanding of [Parameter Sensitive Plan optimization](https://learn.microsoft.com/en-us/sql/relational-databases/performance/parameter-sensitive-plan-optimization?view=sql-server-ver16&viewFallbackFrom=sql-server-ver15) continue Microsoft documentation of the subject.
 
-    Heading: none, combine this with the topic sentence into a single paragraph
-
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
-
-<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
-
-    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
-
-    Heading: none
--->
-TODO: add a visual element
-
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
-
-    Goal: Provide all the information the learner needs to perform this sub-task.
-
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
-
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=main)
--->
-
-<!-- Pattern for simple chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
-
-<!-- Pattern for complex chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
