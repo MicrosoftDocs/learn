@@ -1,4 +1,4 @@
-Azure Virtual Machine Scale Sets provide a scalable way to run applications on a set of virtual machines (VMs). The VMs in a scale set can all have the same configuration and run the same applications or have different configurations and run different applications . As demand grows, the number of VMs running in the scale set increases. As demand shrinks, excess VMs can be removed. Virtual Machine Scale Set are ideal for scenarios that include compute workloads, big-data workloads, and container workloads. 
+Azure Virtual Machine Scale Sets provide a scalable way to run applications on a set of virtual machines (VMs). The VMs in a scale set can all have the same configuration and run the same applications or have different configurations and run different applications. As demand grows, the number of VMs running in the scale set increases. As demand shrinks, excess VMs can be removed. Virtual Machine Scale Set are ideal for scenarios that include compute workloads, big-data workloads, and container workloads. 
 
 In our example scenario, your customers use one of the company's websites to manage and check the status of their shipments. Because the website is accessed globally, the load is sometimes difficult to predict at any particular time of day. Additionally, loading might vary seasonally, with December being busy because of the holidays at the end of the year. You decide to use a Virtual Machine Scale Set to handle the fluctuating load while maintaining a low response time for customer requests.
 
@@ -6,7 +6,7 @@ In this unit, you'll explore the features of Virtual Machine Scale Sets. By the 
 
 ## What is a Virtual Machine Scale Set?
 
-Virtual machine scale sets in Azure are designed to allow you to deploy and manage many load-balanced VMs. Virtual Machine Scale Sets are intelligent enough to automatically scale up or down the number of VM instances.
+Virtual Machine Scale Sets in Azure are designed to allow you to deploy and manage many load-balanced VMs. Virtual Machine Scale Sets are intelligent enough to automatically scale up or down the number of VM instances.
 
 The criteria used to activate the upscale or downscale can depend on a customized schedule or actual demand and usage. Scale sets can apply the same configuration to a group of VMs simultaneously. They don't require you to manually configure instances individually if you do not want to.
 
