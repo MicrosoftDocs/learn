@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-solutions-secure-applications.design-security-lifecycle-strategy-applications
+title: Design security lifecycle strategy for applications
+metadata:
+  title: Design security lifecycle strategy for applications
+  description: "SC-100 preparatory unit on this topic: design security lifecycle strategy for applications."
+  ms.date: 3/14/2023
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-design-security-lifecycle-strategy-applications.md)]

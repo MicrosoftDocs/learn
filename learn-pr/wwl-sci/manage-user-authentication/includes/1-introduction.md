@@ -18,5 +18,4 @@ In this module, you will:
  -  Configure and deploy self-service password reset.
  -  Deploy and manage password protection and smart lockouts.
  -  Implement Kerberos and certificate-based authentication.
- -  Configure Azure AD user authentication to virtual machines.
-
+ -  Configure Azure AD user authentication to virtual machines. 

@@ -3,17 +3,18 @@ In your toy company, you've been publishing your Bicep modules into a registry. 
 In this exercise, you'll:
 
 > [!div class="checklist"]
-> * Create a container registry for your Bicep modules.
-> * Add a lint stage to the pipeline.
-> * Add a pipeline stage to publish the module to your registry.
-> * Verify that your pipeline runs successfully.
-> * Check the published module in your registry.
+>
+> - Create a container registry for your Bicep modules.
+> - Add a lint stage to the pipeline.
+> - Add a pipeline stage to publish the module to your registry.
+> - Verify that your pipeline runs successfully.
+> - Check the published module in your registry.
 
 ## Create a container registry
 
 Before you can publish modules, you need to create a registry for your organization to use. Here, you use the Azure portal to create a registry.
 
-1. In your browser, [create a new container registry within the Azure portal](https://portal.azure.com/#create/Microsoft.ContainerRegistry?azure-portal=true).
+1. In your browser, [create a new container registry within the Azure portal](https://portal.azure.com/#create/Microsoft.ContainerRegistry).
 
 1. On the **Basics** tab, select your target subscription and the **ToyReusable** resource group that you created earlier.
 
@@ -30,7 +31,7 @@ Before you can publish modules, you need to create a registry for your organizat
 
    :::image type="content" source="../media/6-create-registry.png" alt-text="Screenshot of the Azure portal that shows the container registry creation page.":::
 
-1. Review the settings, and then select **Create**.
+1. Review the settings show **Validation passed** and then select **Create**.
 
    Wait for the deployment to finish, which usually takes 1-2 minutes.
 
@@ -38,7 +39,7 @@ Before you can publish modules, you need to create a registry for your organizat
 
    :::image type="content" source="../media/6-registry-created.png" alt-text="Screenshot of the Azure portal that shows the container registry deployment, with the button for going to a resource highlighted.":::
 
-1. In the container registry's **Overview** area, note the value of the **Login server** setting. It will look like *yourregistryname.azurecr.io*.
+1. In the container registry's **Overview** area, note the value of the **Login server** setting. It will look like _yourregistryname.azurecr.io_.
 
    :::image type="content" source="../media/6-registry-login-server.png" alt-text="Screenshot of the Azure portal that shows the container registry's details, with the login server highlighted.":::
 
@@ -48,17 +49,17 @@ Before you can publish modules, you need to create a registry for your organizat
 
 In the preceding unit, you learned about the importance of having a versioning strategy for your modules. You also learned how to use module metadata files to specify the major and minor version number of your module within a pipeline. Here, you add a metadata file for your storage account module.
 
-1. In Visual Studio Code, expand the *modules* folder in the root of your repository. Then, expand the *storage-account* folder.
+1. In Visual Studio Code, expand the _modules/storage-account_ folder in the root of your repository.
 
-1. Create a new file named *metadata.json*.
+1. Create a new file named _metadata.json_.
 
-   :::image type="content" source="../media/6-visual-studio-code-metadata-json.png" alt-text="Screenshot of Visual Studio Code that shows the location of the metadata dot J S O N file.":::
+   :::image type="content" source="../media/6-visual-studio-code-metadata-json.png" alt-text="Screenshot of Visual Studio Code that shows the location of the metadata dot JSON file.":::
 
 1. Add the following content to the file:
 
    :::code language="json" source="code/6-metadata.json" :::
 
-   Notice that in the metadata file, you separately define the major and minor version numbers. Your pipeline will combine these numbers, along with the pipeline's build number, into a complete version number each time the pipeline runs.
+   Notice that in the metadata file, you separately define the major and minor version numbers. Your pipeline combines these numbers, along with the pipeline's build number, into a complete version number each time the pipeline runs.
 
 1. Save your changes to the file.
 
@@ -66,15 +67,15 @@ In the preceding unit, you learned about the importance of having a versioning s
 
 Your repository contains a draft of a pipeline that you can use as a starting point.
 
-1. Open the *pipeline.yml* file in the *modules/storage-account* folder.
+1. Open the _pipeline.yml_ file in the _modules/storage-account_ folder.
 
-1. On line 16, update the value of the `ModuleRegistryServer` environment variable to your container registry's server name. You copied that name earlier in this exercise. 
+1. Update the value of the `ModuleRegistryServer` environment variable to your container registry's server name. You copied that name earlier in this exercise.
 
-   For example, if your registry's login server is *yourregistryname.azurecr.io*, line 16 will look like this:
+   For example, if your registry's login server is _yourregistryname.azurecr.io_, it will look like this:
 
    :::code language="yaml" source="code/6-pipeline.yml" range="15-16" highlight="2" :::
 
-1. At the bottom of the file, for the **To be added** comment, add the following lint stage definition:
+1. At the bottom of the file, for the `# To be added` comment with the following lint stage definition:
 
    :::code language="yaml" source="code/6-pipeline.yml" range="25-35" highlight="3-11" :::
 
@@ -82,13 +83,13 @@ Your repository contains a draft of a pipeline that you can use as a starting po
 
 Now, you can add a second stage to publish the module to your container registry.
 
-1. At the bottom of the *pipeline.yml* file, define the *Publish* stage, and add a step to read the version number from your module's *metadata.json* file and set it as a pipeline variable.
+1. At the bottom of the _pipeline.yml_ file, define the _Publish_ stage, and add a step to read the version number from your module's _metadata.json_ file and set it as a pipeline variable.
 
    :::code language="yaml" source="code/6-pipeline.yml" range="37-46" :::
 
    The step runs a script that uses the jq command-line application to parse the JSON file.
 
-1. Below the step that you just created, add a step to publish the module to the registry.
+1. Below the step that you created, add a step to publish the module to the registry.
 
    :::code language="yaml" source="code/6-pipeline.yml" range="47-57" :::
 
@@ -98,7 +99,7 @@ Now, you can add a second stage to publish the module to your container registry
 
 ## Verify and commit your pipeline definition
 
-1. Verify that your *storage_account_module.yml* file looks like the following example:
+1. Verify that your _storage_account_module.yml_ file looks like the following example:
 
    :::code language="yaml" source="code/6-pipeline.yml" highlight="16, 27-57" :::
 
@@ -130,7 +131,7 @@ Now, you can add a second stage to publish the module to your container registry
 
 You can also view the published module in the Azure portal.
 
-1. In your browser, go to the [Azure portal](https://portal.azure.com?azure-portal=true).
+1. In your browser, go to the [Azure portal](https://portal.azure.com).
 
 1. Go to the **ToyReusable** resource group.
 
@@ -140,7 +141,7 @@ You can also view the published module in the Azure portal.
 
    :::image type="content" source="../media/6-registry-portal.png" alt-text="Screenshot of the Azure portal that shows a Bicep module in the container registry.":::
 
-   Notice that there's a single *tag*, which matches the version number of the module that your pipeline published. The major version (1) and minor version (2) match the version numbers that you defined in the *metadata.json* file. The revision number (20220405.3) matches the pipeline's build number.
+   Notice that there's a single _tag_, which matches the version number of the module that your pipeline published. The major version (1) and minor version (2) match the version numbers that you defined in the _metadata.json_ file. The revision number (20230407.3) matches the pipeline's build number.
 
 ## Clean up the resources
 
@@ -165,3 +166,25 @@ Remove-AzResourceGroup -Name ToyReusable -Force
 ```
 
 ::: zone-end
+
+You can also remove the service connection and Azure DevOps project.
+
+- Service connection
+
+  1. From the Azure DevOps project, select **Project settings** > **Service connections**.
+  1. Select **ToyReusable**.
+  1. In the upper-right corner, select the three dots for **More actions**.
+  1. Select **Delete** and confirm the deletion.
+
+- Azure App registration
+
+  1. From the portal home page, search for _Azure Active Directory_ and select it from the list of **Services**.
+  1. Go to **Manage** > **App registrations**.
+  1. In **Deleted applications** select **toy-reusable**.
+  1. Select **Delete permanently** and follow the prompts.
+
+- Azure DevOps project
+
+  1. From the Azure DevOps project, select **Project settings** > **Overview**.
+  1. From **Delete project** select **Delete**.
+  1. Enter the project name and confirm the deletion.

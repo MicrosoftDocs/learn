@@ -1,4 +1,4 @@
-Mara now has a copy of the *Space Game* code on her local machine. She's going to build it using Microsoft Azure Pipelines instead of the existing Ubuntu 22.04 build server. Before she can do that, she needs to think about the existing build scripts. Follow along as she maps the existing scripts to Azure Pipelines tasks. Think about how you can do the same with your own build process.
+Mara now has a copy of the *Space Game* code. She's going to build it using Microsoft Azure Pipelines instead of the existing Ubuntu 22.04 build server. Before she can do that, she needs to think about the existing build scripts. Follow along as she maps the existing scripts to Azure Pipelines tasks. Think about how you can do the same with your own build process.
 
 Here are some notes that Mara collected when she talked to Andy, the dev lead:
 

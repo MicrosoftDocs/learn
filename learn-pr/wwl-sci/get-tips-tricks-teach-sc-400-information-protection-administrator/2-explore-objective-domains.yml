@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-tips-tricks-teach-sc-400-information-protection-administrator.explore-objective-domains
+title: Explore objective domains
+metadata:
+  title: Explore objective domains
+  description: "Explore objective domains"
+  ms.date: 04/11/2023
+  author: wwlpublish
+  ms.author: Trinity Sheppard
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+  ms.service: azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-explore-objective-domains.md)]

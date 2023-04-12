@@ -1,0 +1,88 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-solutions-security-posture-management-hybrid-multicloud-environments.knowledge-check
+title: Knowledge check - Design solutions for security posture management in hybrid and multicloud environments
+metadata:
+  title: Knowledge check - Design solutions for security posture management in hybrid and multicloud environments
+  description: "Knowledge check for the module on the topic: design solutions for security posture management in hybrid and multicloud environments."
+  ms.date: 3/14/2023
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 5
+###########################################################################
+###
+### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
+###  - Questions are complete sentences ending with a question mark
+###  - No true/false questions
+###  - 3 answers per question
+###  - All answers about the same length
+###  - Numeric answers listed in sorted order
+###  - No "All of the above" and/or "None of the above" as answer choices
+###  - No "Not" or "Except" in questions
+###  - No second person ("you") in the questions or answers
+###  - Provide a meaningful explanation for both correct and incorrect answers
+###
+###########################################################################
+content: |
+quiz:
+  questions:
+    - content: "What is the purpose of Cloud Security Posture Management (CSPM)?"
+      choices:
+        - content: "To provide a comprehensive vulnerability assessment of all resources in the cloud environment."
+          isCorrect: false
+          explanation: "CSPM provides more than just a vulnerability assessment, it offers continuous compliance monitoring and security configuration management."
+        - content: "To facilitate secure communication between hybrid and multicloud environments."
+          isCorrect: false
+          explanation: "This statement is referring to another concept called hybrid and multicloud connectivity."
+        - content: "To enable users to prevent and respond to threats, automate compliance requirements, and assess the security posture of their cloud environment."
+          isCorrect: true
+          explanation: "CSPM helps users ensure their cloud environment is secure by assessing, identifying, preventing and responding to threats or vulnerabilities that could compromise it. Additionally, it automates compliance tasks and monitors security configuration across all cloud resources or services."
+        - content: "To provide endpoint protection against advanced attacks."
+          isCorrect: false
+          explanation: "Endpoint protection refers to a different approach to security which involves securing individual endpoints like devices or servers."
+          
+    - content: "What is Cloud Workload Protection in Microsoft Defender for Cloud?"
+      choices:
+        - content: "A feature that provides external attack surface management."
+          isCorrect: false
+          explanation: "Workload protection is focused on providing security measures to specific workloads or applications running in the cloud, and doesn't pertain to external attack surface management."
+        - content: "A feature that automates vulnerability assessments and compliance checks."
+          isCorrect: false
+          explanation: "This statement is describing CSPM functionality, not workload protection."
+        - content: "A feature that surfaces workload-specific recommendations that lead you to the right security controls to protect your workloads."
+          isCorrect: true
+          explanation: "Workload protection is designed specifically for addressing threats targeting cloud workloads such as applications or containers."
+        - content: "A feature that provides security controls for DevOps teams and their CI/CD pipelines."
+          isCorrect: false
+          explanation: "This statement is referring to another feature called Azure Defender for Kubernetes which provides native security controls for CI/CD pipelines."
+          
+    - content: "What is Azure Arc used for?"
+      choices:
+        - content: "To automatically scale compute resources in cloud environments."
+          isCorrect: false
+          explanation: "This statement describes auto scaling which is related but distinct from Azure Arc."
+        - content: "To monitor network traffic and detect anomalies in cloud environments."
+          isCorrect: false
+          explanation: "This statement describes a network monitoring tool, rather than Azure Arc which is more focused on enabling hybrid cloud management."
+        - content: "To extend Azure management capabilities and tools to manage resources running outside of Azure datacenters."
+          isCorrect: true
+          explanation: "Azure Arc enables enterprises to manage their infrastructure centrally from Azure portal, including servers, Kubernetes clusters, and applications running in distributed environments."
+        - content: "To perform virtual machine backups and disaster recovery for cloud environments."
+          isCorrect: false
+          explanation: "This statement generally refers to another feature within Azure called Azure Site Recovery which focuses on ensuring business continuity and disaster recovery."
+          
+    - content: "What is external attack surface management?"
+      choices:
+        - content: "A feature that secures data stored on public cloud services."
+          isCorrect: false
+          explanation: "This statement references data security, while external attack surface management is more about the visibility and governance of all external assets and resources exposed to potential attackers."
+        - content: "A feature that provides endpoint threat detection and response for cloud-connected devices."
+          isCorrect: false
+          explanation: "This statement is describing a feature called Microsoft Defender for Endpoint which focuses more specifically on protecting endpoints linked to cloud resources or services."
+        - content: "An umbrella term used to describe tactics used by hackers to gain access to an organization's assets through external-facing entry points such as web applications, APIs, and remote offices."
+          isCorrect: false
+          explanation: "This is a definition of the external attack surface itself, while external attack surface management refers to the proactive identification and governance of potential risks to those entry points."
+        - content: "A feature that correlates information from various sources to provide a single view of the organization's security posture related to external attack surfaces."
+          isCorrect: true
+          explanation: "External attack surface management allows organizations to have a unified view of their external assets so they can detect risks at the earliest possible time. The feature correlates information from various sources, including intelligence feeds, third-party tools, and internal organizational information to provide a complete view on external attack surface risk levels."
