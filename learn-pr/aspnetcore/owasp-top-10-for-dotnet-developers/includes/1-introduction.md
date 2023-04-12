@@ -1,9 +1,9 @@
 
-In this module you’ll go through the list of OWASP TOP 10. You'll discover, by looking at examples, that are the most common security weaknesses and how you, app developer or architect, can reduce the risk of security bug infecting your systems. This module will introduce techniques, tools and best practices that can improve your product’s security posture.
+This module explores OWASP TOP 10 - 2021 edition. It will cover, by looking at examples, most common security weaknesses and how you, app developer or architect, can reduce the risk of security bug infecting your systems. This module will introduce techniques, tools and best practices that can improve your product’s security posture.
 
 ### Threat landscape
 
-Implementing secured and high quality software can be challenging. Malware, exploits and many other cyber threats are on the rise. Attacks happen by exploiting vulnerabilities in an application. A vulnerability is just an unintended flaw or weakness in that application. The way data is processed or validated, how information is stored or protected, a simple misconfiguration of a external service that forms part of the application are a few examples of where vulnerability could be introduced.
+Implementing secured and high quality software can be challenging. Malware, exploits and many other cyber threats are on the rise. Attacks happen by exploiting vulnerabilities in an application. A vulnerability is just an unintended flaw or weakness in that application. The way data is processed or flows through the system, how information is stored, how services are configured are a few examples of where vulnerability could be introduced.
 
 ![Application Security](../media/appsec.png)
 
@@ -24,7 +24,7 @@ Application Security, often referred to as AppSec, is the process of finding, fi
 
 ### Meet the Team
 
-Suppose you're joining a new IT company with an established team working on a legacy software. Team's main focus is maintaining, supporting and developing new features of a rich web application used by customer all around the world. Website and it's underlying infrastructure has only just recently been migrated to Microsoft Azure cloud.
+Suppose you're joining a new IT company with an established team working on a legacy software. Team's main focus is maintaining, supporting and developing new features of a rich web application used by customer all around the world. Website and it's underlying infrastructure has only recently been migrated to Microsoft Azure cloud.
 The team you're part of has a mix of talent, including early in career and seasoned enterprise developers.
 
 :::row:::
@@ -43,6 +43,6 @@ The team you're part of has a mix of talent, including early in career and seaso
 :::row-end:::
 
 Team for long has been slowed down by manual release process that proofed to be unreliable, error prone and heavy on manual interaction. As part of migration to the cloud team is looking into adopting modern CI/CD automation.
-The company hasn't fully grasped the concepts behind secure DevOps practices. Security of the digital estate has long been neglected by the business. With the new hire the company is looking to spread the security best practices not only within the team but the company as a whole.
+The company hasn't fully grasped the concepts behind secure DevOps practices. Security of the digital estate has been neglected by the business. With new personnel onboarded, the company is looking to spread the security best practices not only within the team but the company as a whole.
 
-Your team lead asked you to conduct design and code review of team-owned codebase with extra attention payed to security aspects of the solution.
+Your team lead asked you to conduct design and code review of team-owned codebase with extra attention paid to security aspects of the solution.
