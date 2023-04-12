@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
-  description: Check your knowledge about Azure virtual machine scale sets.
+  description: Check your knowledge about Azure Virtual Machine Scale Sets.
   ms.date: 04/11/2023
   ms.reviewer: mimckitt
   author: Orin-Thomas
@@ -23,14 +23,14 @@ quiz:
     - content: "Autoscale according to metrics"
       isCorrect: true
       explanation: "Correct. Configuring autoscale according to metrics lets the application be responsible for utilization, which meets your goals."
-  - content: "What is the maximum number of VMs in an Azure virtual machine scale set?"
+  - content: "What is the maximum number of VMs in an Azure Virtual Machine Scale Set?"
     choices:
     - content: "1000"
       isCorrect: true
-      explanation: "Correct. The maximum number of IaaS VMs in an Azure virtual machine scale set is 1000."
+      explanation: "Correct. The maximum number of IaaS VMs in an Azure Virtual Machine Scale Set is 1000."
     - content: "1024"
       isCorrect: false
-      explanation: "Incorrect. The maximum number of IaaS VMs in an Azure virtual machine scale set is 1000."
+      explanation: "Incorrect. The maximum number of IaaS VMs in an Azure Virtual Machine Scale Set is 1000."
     - content: "2056"
       isCorrect: false
-      explanation: "Incorrect. The maximum number of IaaS VMs in an Azure virtual machine scale set is 1000."
+      explanation: "Incorrect. The maximum number of IaaS VMs in an Azure Virtual Machine Scale Set is 1000."
