@@ -1,4 +1,4 @@
-In this part, you create a project in Azure Pipelines that builds and deploys that project to the Azure app service created earlier.
+In this unit, you'll create a project in Azure Pipelines that builds and deploys that project to the Azure app service created earlier.
 
 The GitHub repo that you forked for this project contains the source code for a basic Python web project that uses Django. In addition, it also includes some very useful unit and functional tests for validating the code both before and after deployment.
 
@@ -18,9 +18,9 @@ Here you install the Azure Pipelines extension for your GitHub repository. This 
 
 1. Go to the [GitHub Marketplace](https://github.com/marketplace?azure-portal=true).
 1. Search for **Azure Pipelines** and select the **Azure Pipelines** result.
-1. Locate the **Free** option and select **Install it for free**.
-1. Select **Complete order and begin installation**.
-1. Select **Only select repositories** and choose the **mslearn-python-django** repository that you forked earlier.
+1. Select **Set up a plan**, locate the **Free** option, and select **Install it for free**.
+1. Enter any information for which you're prompted, then select **Complete order and begin installation**.
+1. Scroll down, select **Only select repositories** and choose the **mslearn-python-django** repository that you forked earlier.
 1. Select **Install**.
 
 ## Set up an Azure DevOps project
@@ -32,9 +32,9 @@ The previous task links your GitHub repository to your Azure DevOps organization
 
     The **Create new project** dialog box opens.
 1. In the **Project name** field, enter a name such as *mslearn-python-django*.
-1. Under **Visibility**, you choose whether to make your project public or private. For now, you can choose private.
+1. Under **Visibility**, you can choose whether to make your project public or private. For now, you can choose private.
 
-    Creators of open source projects will often choose public visibility so that others can view active issues and build status.
+    Creators of open-source projects will often choose public visibility so that others can view active issues and build status.
 1. Select **Advanced**.
 1. Under **Version control**, make sure that **Git** is selected.
 1. Select **Create**.
@@ -66,13 +66,13 @@ The starter pipeline code provides everything you need to build, test, package, 
 
 ### The CI trigger
 
-The pipeline is configured to run whenever a change is committed to the `main` branch. You can adjust this as needed, such as if you wanted to include (or exclude) runs based on their branch, path, or tag.
+The pipeline is configured to run whenever a change is committed to the `main` branch. You can adjust this as needed, such as if you want to include (or exclude) runs based on their branch, path, or tag.
 
 [!code-yml[](code/4-1-azure-pipelines.yml)]
 
 ### Pipeline variables
 
-To aid in pipeline maintenance, the default template uses variables for commonly-used parameters, such as the name of the service connection string used to connect to Azure. A service connection provides secure access to your Azure subscription from Azure Pipelines.
+To aid in pipeline maintenance, the default template uses variables for commonly used parameters, such as the name of the service connection string used to connect to Azure. A service connection provides secure access to your Azure subscription from Azure Pipelines.
 
 Update the **projectRoot** variable to use the */Application* path under the default working directory. This is where *manage.py* is located in the source code.
 
@@ -80,7 +80,7 @@ Update the **projectRoot** variable to use the */Application* path under the def
 
 ### The Build stage
 
-A _stage_ is a part of the pipeline that can run independently and be triggered by different mechanisms. For example, you might have one stage that builds the application, a second stage that deploys to a pre-production environment, and a final stage that deploys to production.
+A *stage* is a part of the pipeline that can run independently and be triggered by different mechanisms. For example, you might have one stage that builds the application, a second stage that deploys to a pre-production environment, and a final stage that deploys to production.
 
 This pipeline is divided into two stages: *Build* and *Deploy*. The *Build* stage configures and performs the build tasks, which includes publishing the build artifact (a *.zip* file) to artifact storage.
 
@@ -112,7 +112,7 @@ After the build completes, the `ArchiveFiles@2` task packages the output. The re
 
 ### Running unit tests
 
-After the build is archived, unit tests are run. These could be run at any point after the build, but to keep things basic here we place all the unit test tasks together. After the tests are run, their results are published by using the `PublishTestResults@2` task. You can access test results from Azure Pipelines. The *Tests* folder, which contains the functional tests to be run after deployment, are also archived for later use during the deployment phase.
+After the build is archived, unit tests are run. These could be run at any point after the build, but to keep things basic here, we place all the unit test tasks together. After the tests are run, their results are published by using the `PublishTestResults@2` task. You can access test results from Azure Pipelines. The *Tests* folder, which contains the functional tests to be run after deployment, are also archived for later use during the deployment phase.
 
 Add this code immediately after the *upload* task:
 
@@ -134,7 +134,7 @@ The `AzureWebApp@1` task deploys web apps to Azure App Service. It's a very flex
 * `azureSubscription` refers to the name of your Azure service connection pipeline variable.
 * `appType` indicates whether the app is being deployed for Linux (`webAppLinux`).
 * `appName` specifies the name of the Azure App Service instance in your Azure account.
-* `runtimeStack` indicates which image the app should be run on, which is required for Linux deployments.
+* `runtimeStack` indicates on which image the app should be run, which is required for Linux deployments.
 * `package` specifies the path to the package to be deployed.
 * `startUpCommand` specifies the startup command to run after the app has been deployed, which is required for Linux deployments.
 
@@ -152,18 +152,18 @@ Append this code to the end of the pipeline. As before, ensure that the task is 
 
 1. Select **Save and run** from the top right corner of the page. Select **Save and run** again to trigger the pipeline to run.
 1. In Azure Pipelines, go to the build. Trace the build as it runs.
-1. After the build has succeeded, select the web site's deploy task and click the URL to view the deployed site.
+1. After the build has succeeded, select the web site's deploy task and select the URL to view the deployed site.
 
     :::image type="content" source="../media/4-deploy-url.png" alt-text="Locating the web site URL in Azure Pipelines.":::
 
-1. You see the site running on App Service.
+1. You get the site running on App Service:
 
     :::image type="content" source="../media/4-python-django.png" alt-text="The Python application running in a web browser.":::
 
-1. Return to the pipeline summary. You see the details of the pipeline run, which also includes the test results. Scroll down to the stages view to see how the test run in each stage performed. Select one of the test links to view the aggregated performance.
+1. Return to the pipeline summary. You have the details of the pipeline run, which also includes the test results. Scroll down to the stages view to learn how the test run in each stage performed. Select one of the test links to view the aggregated performance.
 
     :::image type="content" source="../media/4-pipeline-run-summary.png" alt-text="A screenshot of Azure Pipelines showing the location of the link to the test summary.":::
 
-1. The test run summary provides details about the test runs. If you would like to review specific tests, you may update the filters option to include *Passed* tests. By default it only shows tests that failed or were aborted.
+1. The test run summary provides details about the test runs. If you'd like to review specific tests, you can update the filters option to include *Passed* tests. By default, it only shows tests that failed or were aborted.
 
     :::image type="content" source="../media/4-test-run-summary.png" alt-text="A screenshot of Azure Pipelines showing the test summary. The location of the filter options is highlighted.":::
