@@ -4,15 +4,15 @@ Imagine that you work for a domestic shipping company. Your customers use one of
 
 You decide to move the application to Azure. You need a solution that automatically handles load fluctuations and ensures consistent performance of the website. You also need to quickly roll out application updates to the servers while minimizing the effect on end users.
 
-In this module, you'll learn how a virtual machine scale set helps address these challenges of load balancing a web application.
+In this module, you'll learn how a Virtual Machine Scale Set helps address these challenges of load balancing a web application.
 
 ## Learning objectives
 
 In this module, you'll:
 
-- Identify the features and capabilities of virtual machine scale sets.
-- Identify the use cases for running applications on virtual machine scale sets.
-- Deploy an application on a virtual machine scale set.
+- Identify the features and capabilities of Virtual Machine Scale Sets.
+- Identify the use cases for running applications on Virtual Machine Scale Sets.
+- Deploy an application on a Virtual Machine Scale Set.
 
 ## Prerequisites
 
