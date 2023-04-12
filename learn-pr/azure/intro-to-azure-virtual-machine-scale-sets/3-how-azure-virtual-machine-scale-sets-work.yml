@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.introduction-to-azure-virtual-machine-scale-sets.how-azure-virtual-machine-scale-sets-work
-title: How Azure virtual machine scale sets work
+title: How Azure Virtual Machine Scale Sets work
 metadata:
-  title: How Azure virtual machine scale sets work
-  description: Learn how Azure virtual machine scale sets work.
+  title: How Azure Virtual Machine Scale Sets work
+  description: Learn how Azure Virtual Machine Scale Sets work.
   ms.date: 04/11/2023
   author: Orin-Thomas
   ms.author: orthomas
