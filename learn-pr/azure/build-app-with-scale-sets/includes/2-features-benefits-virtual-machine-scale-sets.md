@@ -1,20 +1,20 @@
-Azure virtual machine scale sets provide a scalable way to run applications on a set of virtual machines (VMs). The VMs in a scale set can all have the same configuration and run the same applications or have different configurations and run different applications . As demand grows, the number of VMs running in the scale set increases. As demand shrinks, excess VMs can be removed. Virtual machine scale sets are ideal for scenarios that include compute workloads, big-data workloads, and container workloads. 
+Azure Virtual Machine Scale Sets provide a scalable way to run applications on a set of virtual machines (VMs). The VMs in a scale set can all have the same configuration and run the same applications or have different configurations and run different applications . As demand grows, the number of VMs running in the scale set increases. As demand shrinks, excess VMs can be removed. Virtual Machine Scale Set are ideal for scenarios that include compute workloads, big-data workloads, and container workloads. 
 
-In our example scenario, your customers use one of the company's websites to manage and check the status of their shipments. Because the website is accessed globally, the load is sometimes difficult to predict at any particular time of day. Additionally, loading might vary seasonally, with December being busy because of the holidays at the end of the year. You decide to use a virtual machine scale set to handle the fluctuating load while maintaining a low response time for customer requests.
+In our example scenario, your customers use one of the company's websites to manage and check the status of their shipments. Because the website is accessed globally, the load is sometimes difficult to predict at any particular time of day. Additionally, loading might vary seasonally, with December being busy because of the holidays at the end of the year. You decide to use a Virtual Machine Scale Set to handle the fluctuating load while maintaining a low response time for customer requests.
 
-In this unit, you'll explore the features of virtual machine scale sets. By the end of this unit, you'll be able to describe how a scale set works. You'll understand how a scale set supports scale-out and scale-up scenarios. You'll see how to use autoscaling and schedule-based scaling to adjust the resources available to a scale set.
+In this unit, you'll explore the features of Virtual Machine Scale Sets. By the end of this unit, you'll be able to describe how a scale set works. You'll understand how a scale set supports scale-out and scale-up scenarios. You'll see how to use autoscaling and schedule-based scaling to adjust the resources available to a scale set.
 
-## What is a virtual machine scale set?
+## What is a Virtual Machine Scale Set?
 
-Virtual machine scale sets in Azure are designed to allow you to deploy and manage many load-balanced VMs. Virtual machine scale sets are intelligent enough to automatically scale up or down the number of VM instances.
+Virtual machine scale sets in Azure are designed to allow you to deploy and manage many load-balanced VMs. Virtual Machine Scale Sets are intelligent enough to automatically scale up or down the number of VM instances.
 
 The criteria used to activate the upscale or downscale can depend on a customized schedule or actual demand and usage. Scale sets can apply the same configuration to a group of VMs simultaneously. They don't require you to manually configure instances individually if you do not want to.
 
 A scale set uses a load balancer to distribute requests across the VM instances. It uses a health probe or the Application Health Extension to determine the availability of each instance. The health probe or Application Health Extension *pings* the instance. If the instance responds, the scale set knows the instance is still available. If the ping fails or times out, the scale set knows the instance is unavailable and doesn't send requests to it.
 
-Virtual machine scale sets support both Linux and Windows VMs in Azure and can run up to 1,000 VMs on a single scale set.
+Virtual Machine Scale Sets support both Linux and Windows VMs in Azure and can run up to 1,000 VMs on a single scale set.
 
-If you deal with large workloads whose demand varies and is unpredictable, scale sets are a great solution. Because virtual machine scale sets offer VMs that can scale in response to demand and are load-balanced, they automatically provide a highly available environment.
+If you deal with large workloads whose demand varies and is unpredictable, scale sets are a great solution. Because Virtual Machine Scale Sets offer VMs that can scale in response to demand and are load-balanced, they automatically provide a highly available environment.
 
 ## Scaling options for scale sets
 
@@ -24,7 +24,7 @@ Sometimes you might need to add or remove machines in a scale set, depending on 
 
 ## Scaling a scale set
 
-Virtual machine scale sets address the need to quickly create and manage VMs for a fluctuating workload. You can configure two types of scaling for a scale set:
+Virtual Machine Scale Sets address the need to quickly create and manage VMs for a fluctuating workload. You can configure two types of scaling for a scale set:
 
 - **Scheduled scaling**: You can proactively schedule the scale set to deploy one or *N* number of additional instances to accommodate a spike in traffic and then scale back down when the spike ends.
 
