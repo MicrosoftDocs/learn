@@ -1,19 +1,22 @@
-This category refers to failures related to cryptography that often leads to sensitive data exposure or system compromise.
 
-To begin, let's distinguish between encoding, encryption and hashing.
-Encoding a value provides no security, it helps transmit data in a channel (for example base 64 encoding over HTTP), it changes the format of a value, obstructs but not protects the value.
-Encryption is a reversible operation that translates text into what may seem a random and meaningless cypher. To decrypt the value an encryption *key* is needed.
-Hashing is a one-way operation, there's no way to reverse hash a value.
+Cryptographic failures focuses on failures related to cryptography (or lack thereof) that often leads to sensitive data exposure or system compromise.
 
-.NET provides us with all the tools you need, encryption, hashing and random number generation out of the box.
+To better understand how where implementation mistakes leading to cryptographic failures are made let's being with distinguish between encoding, encryption and hashing in general, programming sense.
+
+**Encoding** a value provides no security, it helps transmit data in a channel (for example base 64 encoding over HTTP). It changes the format of a value, obstructs but not protects the value.
+**Encryption** is a reversible operation that translates text into what may seem a random and meaningless cypher. To decrypt the value an encryption *key* is needed.
+**Hashing** is a one-way operation of mapping input date into fixed-size values (value hash). There's no way to reverse hash a value.
 
 > [!WARNING]
 > Avoid writing your own cryptographic algorithms. Use strong cryptographic algorithms provided by .NET.
 
+For .NET developers, framework provides us with all the tools one may require, i.e. encryption, hashing and random number generation, out of the box.
+
+Suppose your web applications deals with user data and their accounts. But how do you securely encrypt a secret, generate a password hash or create a temporary password in .NET? To answers lets explore a couple of examples of what ``System.Security.Cryptography`` namespace and it's contained functionality has to offer.
+
 ### Encryption
 
-Let's explore a couple of examples of what ``System.Security.Cryptography`` namespace and it's contained functionality has to offer.
-We start with Advanced Encryption Standard (AES). In the example below a new instance of the AES class is created and used it to generate new key and initialization vector (IV).​ This illustrates how to use the Advanced Encryption Standard to be used to perform encryption on any type of managed stream, then the stream is wrapped with CryptoStream.
+To securely encrypt a value (string, integer etc.) we can useAdvanced Encryption Standard (AES). In the example below a new instance of the AES class is created and used it to generate new key and initialization vector (IV).​ This illustrates how to use the Advanced Encryption Standard to be used to perform encryption on any type of managed stream, then the stream is wrapped with CryptoStream.
 
  ```csharp
 Aes aes = Aes.Create();​
@@ -37,12 +40,12 @@ public static byte[] HashPassword256(string password)​
 
 ### Random numbers
 
-System.Random isn't a random number generator. It's a deterministic pseudo-random sequence generator. Microsoft Learn documentation explicitly states it shouldn't be used for generating passwords. It’s predictable and seeded only from the system clock. To generate a cryptographically secure random number, such as one that's suitable for creating a random password.
+System.Random isn't a random number generator. It's a deterministic pseudo-random sequence generator which mean it can be guessed by the attacker. Microsoft Learn documentation explicitly states it shouldn't be used for generating passwords. It’s predictable and seeded only from the system clock.
+To generate a cryptographically secure random number, such as one that's suitable for creating a random password `RandomNumberGenerator` instance should be used.
 
 ```csharp
 var randomNumberGenerator = System.Security.Cryptography.RandomNumberGenerator.Create();​
 ```
-
 
 ### Code Review Notes
 

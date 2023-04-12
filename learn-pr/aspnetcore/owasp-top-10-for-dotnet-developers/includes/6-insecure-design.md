@@ -1,6 +1,5 @@
-Insecure design is a new entry on the OWASP Top 10 in 2021.
-It's different from insecure implementation in that it has more to do with risks related to design and architectural flaws. A secure implementation might have an insecure design, which still renders an application vulnerable to attacks and exploits.​
-Security should be not an afterthought - how you protect your system’s configuration secrets, handle customers data, leak implementation details during logging and so on​. An insecure design can not be fixed by a perfect implementation.​
+
+Insecure *design* is different from insecure *implementation* in that it has more to do with risks related to design and architectural flaws. A secure implementation might have an insecure design, which still renders an application vulnerable to attacks and exploits.​
 
 You might be familiar with the term *'shift-left'*. It's often referred to testing your application early on during the application lifecycle to ensure hight quality (left being analysis and requirements phase, right being release and support phase). Shift-left also applies to security, even before we write the first line of code. A few activities could include threat modeling, following secure design patterns and principles, leveraging reference architectures and conducting security code reviews. ​
 
@@ -18,11 +17,12 @@ Whenever an application’s design or code is changed, you run the threat modeli
 
 :::image type="content" source="../media/tm-2.png" alt-text="Data flow diagram with basic threat model":::
 
-Making threat modeling part of the design phase of the application helps bake security into the design from the start, which is always going to be more effective that trying to tack it on at the end. But it’s not only useful at the design stage – it should be performed at every stage of the SDLC – requirements gathering; design; coding; testing; even deployment.
+Making threat modeling part of the design phase of the application helps bake security into the design from the start, which is always going to be more effective that trying to tack it on at the end. But it’s not only useful at the design stage – it should be performed at every stage of the Secure Development Lifecycle (defined in module 2) – requirements gathering; design; coding; testing; even deployment.
 
 ### Design Review Notes
 
 Here, you focused your attention on the overall system architecture and design. Insecure design flows target systems as a whole and note it's codebase.
+Security should be not an afterthought. How you protect your system’s configuration secrets, handle customers data and implement logging should be considered early on project lifecycle. An insecure design can not be fixed by a perfect implementation.​
 After conversations with your team you understood better fictional and non-functional security requirements and learned about the bug bar - technique to help classify and prioritize security vulnerabilities based on their severity and potential impact.
 As your new team adopt DevOps and Secure DevOps practices in an ongoing effort you want to think of security as early and quickly as possible (by shifting security considerations left).
 Before contributing to your teams codebase consider following few techniques that can address insecure design:

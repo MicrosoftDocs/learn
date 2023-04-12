@@ -1,3 +1,4 @@
+
 The objectives of the module were to explain:
 
 * learned about the threat landscape and risks involving unsecure software
@@ -13,7 +14,7 @@ No matter if you are designing a brand new green field application or contributi
         :::image type="content" source="../media/devops-metrics.png" alt-text="Microsoft Defender for DevOps":::
     :::column-end:::
     :::column:::
-        The Microsoft Defender product family can bring best-in-class security features to your product. Defender for DevOps provides unified DevOps security management. You can gain full visibility into the security posture of pre-production application code, resource configurations, multi-cloud and multiple-pipeline environments. You can track threat actor activity and patterns with Microsoft Defender Threat Intelligence. Defender External Attack Surface Management can help discover unmanaged resources that could be potential entry points for an attacker
+        Leverage automation when possible. Explore free and vendor offerings for CI/CD integrated security tooling. An example could be Defender for DevOps [extension for Azure DevOps](https://marketplace.visualstudio.com/items?itemName=ms-securitydevops.microsoft-security-devops-azdevops), bringing credential, dependency and static analysis scanning to your workflow.
     :::column-end:::
 :::row-end:::
 
@@ -40,8 +41,6 @@ Remember the Zero Trust principles and apply them in your apps in systems:
 -**User least privilege access.** Limit user, application, and device access with granular permissions, role assignments, just-in-time and just-enough-access (JIT/JEA).
 
 -**Assume breach.** Mentality help minimize the blast radius for breaches and prevent lateral movement. Enable swift replacement and rotation of credentials. Keep sessions, network access, and data encrypted end to end. Build and test durable and repeatable backup and restore processes. Avoid insecure legacy authentication and authorization protocols.
-
-You already broke out of silo-ed approach with bringing developers and operations together with DevOps. It's about time to make security experts and champions part of your team to ensure best security practices.
 
 Security code reviews, automation of security checks with SAST, DAST and SCA, and threat modeling can identify most of the OWASP Top 10 items.
 

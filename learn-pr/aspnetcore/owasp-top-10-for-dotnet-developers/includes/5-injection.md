@@ -1,9 +1,7 @@
-Let's consider how your application handles input data. The injection category is attributed to an application accepting data as input and processing it as instruction instead of as data​.
 
-As a golden rule, ensure validation is performed whenever you're processing user input. Never assume any user data input as safe to process until proven otherwise.
+The injection category is attributed to an application accepting data as input and processing it as instruction instead of as data​.
 
-> [!IMPORTANT]
-> Neutralize or verify user input in your application. Always verify that input is safe, legitimate and in the correct format.
+Let's consider how your application handles input data.
 
 .NET provides build-in capabilities for data annotation and validation. The attributes from `System.ComponentModel.DataAnnotations` namespace can decode your data model to provide the necessary validation functionality. Email, phone, credit card or date validators are only a few examples of the build-in validators that can spare you the effort of writing and maintaining custom code.
 
@@ -25,18 +23,19 @@ public class ExampleModel ​
 ### SQL Injection
 
 Injection can take different forms and shapes, from SQL, process to command injection.
-The canonical example of SQL injection could be the following statement, where `username` in an unsanitised query input parameter:
+Simple example of SQL injection could be the following statement, where `username` in an unsanitised query input parameter:
 
 ```sql
 string sql = ​"SELECT * FROM users WHERE name = '" + username + "';";
 ```
 
-Without validation of user input, a malicious actor could supplement a genuine user name for a crafted part of SQL statement:
+Without validation of user input, a malicious actor could supplement a genuine user name for a crafted part of SQL statement `a';DROP TABLE users;--` resulting in change of query intentions:
 
 ```sql
 SELECT * FROM Users WHERE name = 'a';DROP TABLE users;--
 ```
 
+As a result the table containing user information will be removed from database. In similar way statement can be crafted to extraction data prior to data table deletion.
 
 ### File Input Validation
 
@@ -77,10 +76,14 @@ Input validation also includes the way you handle file upload. Following example
 }
 ```
 
-As an exercise check if your web app is correctly validating user input by typing in `<iframe src="javascript:alert('HACKED')">` into a text input area. If a browser displays an alert there might be a room for improvement in your validation logic.
-
+> [!IMPORTANT]
+> Neutralize or verify user input in your application. Always verify that input is safe, legitimate and in the correct format.
 
 ### Code Review Notes
 
 Your team uses Entity Framework Core (Object-Relational Mapping) as the glue between the C# code and database which eliminates the need for writing your own SQL queries and prevents from SQL injection.
 You've noticed that every single user input, uploaded files or form entry fields, are always validated. Sanitization and normalization of user input is a must.
+
+As a golden rule, ensure validation is performed whenever you're processing user input. Never assume any user data input as safe to process until proven otherwise.
+
+You decided, as an exercise, to check if your web app is correctly validating user input by typing in `<iframe src="javascript:alert('HACKED')">` into a text input area. If a browser displays an alert there might be a room for improvement in your validation logic.

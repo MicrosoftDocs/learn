@@ -1,52 +1,62 @@
-<!-- ## A01: Broken Access Control -->
+
 As you onboard to your new team and explore the codebase you discover a web project, ASP.NET Blazor. With OWASP Top 10 in mind, you set off to deep dive into the code with security lenses on.
-You start with the top of the list with #1 - broken access control. This category refers to incidents when confidential information is viewed by a user who shouldn't have permission to access that data.
+
+You start with the top of the list with *#1 - Broken Access Control*. This category refers to incidents when confidential information is viewed by a user who shouldn't have permission to access that data.
 
 ### Build-in Framework Security Capabilities
 
 .NET has build in authentication and session management so there's no need to implement your own.
-Let's consider a ASP.NET Core controller (example below). Controller without any authorization attributes treats each requests the same way without applying any security checks. By adding `Authorize` and `AllowAnonymous` attributes, you can control which actions (or controllers) should inspect for authorization to be in place.
+Let's consider a ASP.NET Core controller (example below). Controller without any authorization attributes treats each requests the same way without applying any security checks. By decorating controller actions or controller itself with `Authorize` (user must be signed in and authenticated) or `AllowAnonymous` (any unauthenticated caller can invoke method) attributes you gain control over what can be accessed publicly and which functionality is for authorized users only.
 
 :::row:::
     :::column:::
-        Plane ASP.NET controller with no authorization attributes.
+        Plane ASP.NET controller with no authorization attributes, no access restrictions applied.
 ```csharp
 
 public class AccountController : Controller​
 {​
-        public ActionResult Login()​
-        {
-        }
-               
-        public ActionResult Logout()​
-        {
-        }
+    public ActionResult Login()​
+    {
+    }
+            
+    public ActionResult Logout()​
+    {
+    }
+
+    public ActionResult<string> GetCitizenTaxId()​
+    {
+    }
 }
 
 ```
 
 :::column-end:::
     :::column:::
-        Controller with authorization attributes, based on policy or role assignments.
+        Controller with authorization attributes, based on policy or role assignments. The `GetCitizenTaxId` can only be invoked by authorized caller.
 ```csharp
 [Authorize(Policy="", Roles=""]​
 public class AccountController : Controller​
 {​
-        [AllowAnonymous]​
-        public ActionResult Login()​            
-        {
-        }
-                            
-        public ActionResult Logout()​            
-        {
-        }
+    [AllowAnonymous]​
+    public ActionResult Login()​            
+    {
+    }
+                        
+    public ActionResult Logout()​            
+    {
+    }
+    
+    [Authorize]
+    public ActionResult<string> GetCitizenTaxId()​
+    {
+    }
 }​
 ```
 
 :::column-end:::
 :::row-end:::
 
-Similarly the ASP.NET Minimal Api supports the attribute decoration, policy and claim authorization as seen in the example.
+Similarly the ASP.NET Minimal Api supports the attribute decoration (Lambda *HTTP get* method with `[Authorize]` attribute), policy (AdminsOnly) and claim (admin) authorization as seen in the example.
 
 >  ```csharp
 > var builder = WebApplication.CreateBuilder(args);​
@@ -62,7 +72,7 @@ Similarly the ASP.NET Minimal Api supports the attribute decoration, policy and 
 > app.MapGet("/", () => "This endpoint doesn't require authorization.");​
 > app.Run();
 
-ASP.NET Blazor's razor syntax supports conditionally displayed components depending on authorization status.
+User interface ouf your application should also reflect the user's authentication (is the user who the say they are) and authorization (is one allowed to access certain piece of information) state. Here, too, framework has you covered. ASP.NET Blazor's razor syntax supports conditionally displayed components depending on authorization status.
 
 ```csharp
 <AuthorizeView Roles="admin, superuser" Policy="content-editor">​
@@ -87,7 +97,6 @@ ASP.NET Blazor's razor syntax supports conditionally displayed components depend
 ```
 
 The `SecureMethod` will only be accessible once the user is authorized by the application.
-
 
 ### Code Review Notes
 

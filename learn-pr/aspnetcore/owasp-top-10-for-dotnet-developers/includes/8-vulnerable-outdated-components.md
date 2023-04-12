@@ -1,4 +1,3 @@
-<!-- ## A06: Vulnerable and Outdated Components -->
 
 Occurs when you don’t know all the versions of all the components you use and if the software is vulnerable unsupported or out of date.
 
@@ -8,11 +7,11 @@ Remove unused dependencies, unnecessary features, components, files, and documen
 > [!IMPORTANT]
 > Know what your digital components and dependencies are (bill or materials) for the project.
 
-The .NET, for example, is kept up-to-date by Microsoft with the Windows Update service. Individual components and dependencies can be kept up to date using NuGet.
+The .NET, for example, is kept up-to-date by Microsoft with the Windows Update service. Individual components and dependencies can be kept up to date using NuGet -package manager, enabling .NET developers to create, share, and consume .NET libraries.
 
 :::image type="content" source="../media/nuget-updates.png" alt-text="Visual Studio Nuget Updates":::
 
-Cater for, with plan and schedule, regular updates of your product's components. As you develop your app you might already have a habit of checking Visual Studio prompts for updates.
+Cater for, with plan and schedule, regular updates of your product's components. As you develop your app you might already have a habit of checking for any library updates. Most modern integrated development environments (IDEs) streamline update process, with Visual Studio being one of them (image above).
 
 :::row:::
     :::column:::
@@ -22,7 +21,6 @@ Cater for, with plan and schedule, regular updates of your product's components.
         :::image type="content" source="../media/dotnet-securirty-announcements.png" alt-text="dotnet security announcements on GitHub Issues":::
     :::column-end:::
 :::row-end:::
-
 
 ### Code Review Notes
 

@@ -1,3 +1,4 @@
+
 In this module you’ll go through the list of OWASP TOP 10. You'll discover, by looking at examples, that are the most common security weaknesses and how you, app developer or architect, can reduce the risk of security bug infecting your systems. This module will introduce techniques, tools and best practices that can improve your product’s security posture.
 
 ### Threat landscape
@@ -20,16 +21,6 @@ Application Security, often referred to as AppSec, is the process of finding, fi
 
 ![Security culture, delivery and automation cogs work better with CI, Shift left and automation](../media/worlds-breaches.png)
 [Image source](https://www.informationisbeautiful.net/visualizations/worlds-biggest-data-breaches-hacks/)
-
-### Application security in a wider security context​
-
-As the application complexity becomes more increases, so does the effort of making it secure. Modern applications, in contrast with single-project monolith legacy application, depend on external libraries, services for hosting, building and releasing to name a few. None of these services are simple plug and play affairs, developers need to understand them, and know how to configure and implement the flows and processes – the interactions - securely in their own code.
-
-AppSec logically falls under the wider context of **Information Security (InfoSec)**, term covering protection of information and systems from unauthorized access, use, disruption, or destruction etc. InfoSec also covers areas like as network security, intrusion detection, digital forensics, and governance, risk, and compliance for example.
-
-**The Security Development Lifecycle (SDL)** consists of a set of practices that support security assurance and compliance requirements. The SDL helps developers build more secure software by reducing the number and severity of vulnerabilities in software.
-
-**DevSecOps** is an evolution in the way development organizations approach security by introducing a security-first mindset culture, and automating security into every phase of the software development lifecycle from design to delivery.​
 
 ### Meet the Team
 
