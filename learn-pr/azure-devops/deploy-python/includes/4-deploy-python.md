@@ -123,7 +123,7 @@ Add this code immediately after the *upload* task:
 
 ### Deploying the build
 
-The second stage of the pipeline deploys the application to Azure. It depends on the *Build* stage completing successfully, after which it uses the pipeline's Azure service connection to deploy the app to the configured target. This projects deploys the app to Azure App Service.
+The second stage of the pipeline deploys the application to Azure. It depends on the *Build* stage completing successfully, after which it uses the pipeline's Azure service connection to deploy the app to the configured target. This project deploys the app to Azure App Service.
 
 [!code-yml[](code/4-8-azure-pipelines.yml)]
 
