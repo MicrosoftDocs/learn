@@ -2,9 +2,9 @@ Managing virtual machines at scale can be challenging, especially when usage pat
 
 Imagine that you work for a domestic shipping company. Your customers use one of the company's websites to manage and check the status of their shipments. This website is deployed to virtual machines and hosted on-premises. You've noticed that increased usage on the site is straining the virtual machines' resources. However, you can't adjust to load fluctuations without manually intervening and creating or deallocating virtual machines.
 
-You decide to move the application to Azure. You need a solution that automatically handles load fluctuations and ensures consistent performance of the website. You also need to quickly roll out application updates to the servers while minimizing the effect on end users.
+You decide to move the application to Azure. You need a solution that automatically handles load fluctuations and ensures consistent performance of the website. You also need to quickly rollout application updates to the servers while minimizing the effect on end users.
 
-In this module, you'll learn how a Virtual Machine Scale Set helps address these challenges of load balancing a web application.
+In this module, you learn how a Virtual Machine Scale Set helps address these challenges of load balancing a web application.
 
 ## Learning objectives
 
