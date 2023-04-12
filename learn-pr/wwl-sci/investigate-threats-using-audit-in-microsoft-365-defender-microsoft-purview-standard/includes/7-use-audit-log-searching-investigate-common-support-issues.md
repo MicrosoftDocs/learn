@@ -204,7 +204,7 @@ To retrieve mailbox audit log records for non-E5 users, you can complete one of 
 
 When you use the **Users** dropdown list in the audit log search tool in the Microsoft Purview compliance portal or the **Search-UnifiedAuditLog -UserIds** command in Exchange Online PowerShell, you can search for activities performed by a specific user.
 
-For mailbox audit activities, this type of search will search for activities performed by the specified user. However, it doesn't guarantee that all activities performed in the same mailbox are returned in the search results.
+For mailbox audit activities, this type of search searches for activities performed by the specified user. However, it doesn't guarantee that all activities performed in the same mailbox are returned in the search results.
 
 For example, an audit log search won't return audit records for activities performed by a delegate user. Why? Because searching for mailbox activities performed by a specific user won't return activities performed by a delegate user who's been assigned permissions to access another user's mailbox.
 

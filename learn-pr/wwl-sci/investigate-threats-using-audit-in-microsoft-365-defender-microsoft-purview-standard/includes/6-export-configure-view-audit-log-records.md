@@ -4,7 +4,7 @@ After you search the audit log and download the search results to a CSV file, th
 
 **Question**: If multiple properties are combined together in the **AuditData** column, how can an organization sort and filter on a specific property?
 
-**Answer**: Through the JSON transform feature in the Power Query Editor in Excel. This feature enables an organization to split each property in the JSON object in the **AuditData** column into multiple columns. By doing so, each property will have its own column. In turn, an organization can sort and filter on one or more of these properties. This process can help it quickly locate the specific auditing data that it's looking for.
+**Answer**: Through the JSON transform feature in the Power Query Editor in Excel. This feature enables an organization to split each property in the JSON object in the **AuditData** column into multiple columns. By doing so, each property has its own column. In turn, an organization can sort and filter on one or more of these properties. This process can help it quickly locate the specific auditing data that it's looking for.
 
 ### Step 1: Export audit log search results
 
@@ -17,7 +17,7 @@ The first step is to search the audit log and then export the results in a comma
     :::image type="content" source="../media/audit-export-audit-search-results-4523.png" alt-text="Screenshot of the Audit search window with the Download all results option highlighted.":::
     
     
-    This option exports all the audit records from the audit log search. It then adds the raw data from the audit log to a CSV file. It takes a while to prepare the download file for a large search. Large files will result when searching for all activities or using a wide date range.
+    This option exports all the audit records from the audit log search. It then adds the raw data from the audit log to a CSV file. It takes a while to prepare the download file for a large search. Large files result when searching for all activities or using a wide date range.
 4.  After the export process is complete, a message is displayed at the top of the window that prompts you to open the CSV file and save it to your local computer. You can also access the CSV file in the **Downloads** folder.
     
     > [!CAUTION]
@@ -25,7 +25,7 @@ The first step is to search the audit log and then export the results in a comma
 
 ### Step 2: Format the exported audit log using the Power Query Editor
 
-The next step is where the JSON transform feature in the Power Query Editor in Excel comes into play. This feature will split each property in the JSON object in the **AuditData** column into its own column. You can then filter columns to view records based on the values of specific properties. By doing so, you can quickly locate the specific auditing data you're looking for.
+The next step is where the JSON transform feature in the Power Query Editor in Excel comes into play. This feature splits each property in the JSON object in the **AuditData** column into its own column. You can then filter columns to view records based on the values of specific properties. By doing so, you can quickly locate the specific auditing data you're looking for.
 
 1.  Open a blank workbook in Excel for Office 365, Excel 2019, or Excel 2016.
 2.  On the **Data** tab, in the **Get &amp; Transform Data** ribbon group, select **From Text/CSV**.

@@ -90,7 +90,7 @@ Each of these steps is examined in greater detail in the following sections.
 
 Once you've started a search, the results are Queued. After the search is Completed the Search time and the Total results are displayed below the search form. Select the Search name to display the results on a new page. 
 
-A maximum of 50,000 events will be displayed in increments of 150 events. If more than 50,000 events meet the search criteria, only the 50,000 unsorted events returned will be displayed.
+A maximum of 50,000 events is displayed in increments of 150 events. If more than 50,000 events meet the search criteria, only the 50,000 unsorted events returned is displayed.
 
 :::image type="content" source="../media/audit-export-audit-search-results-4523.png" alt-text="Screenshot showing the number of results that are displayed after the search is finished.":::
 

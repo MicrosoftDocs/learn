@@ -1,38 +1,38 @@
 ## Start recording activity in the Unified Audit Log
 
-You've already learned that Audit (Standard) is enabled by default for all organizations with the appropriate subscription, but you still have to start the recording. In this exercise you will explore the following:
+You have already learned that Audit (Standard) is enabled by default for all organizations with the appropriate subscription, but you still have to start the recording. In this exercise you'll explore the following:
 
 1. Enable recording by using the Purview Compliance portal Audit Search interface.
 1. Use Exchange PowerShell to check the status and enable or disable recording.
 
 ### Prerequisites
 
-1. You will need a Microsoft 365 tenant with licensing that supports Microsoft 365 Defender and Microsoft Purview.
-1. To run the PowerShell cmdlets you will need to have Cloud Shell configured (either in the [Microsoft Azure portal](https://portal.azure.com/) or the [Microsoft 365 admin center portal](https://admin.microsoft.com/)).
+1. You'll need a Microsoft 365 tenant with licensing that supports Microsoft 365 Defender and Microsoft Purview.
+1. To run the PowerShell cmdlets, you'll need to have Cloud Shell configured (either in the [Microsoft Azure portal](https://portal.azure.com/) or the [Microsoft 365 admin center portal](https://admin.microsoft.com/)).
 
 > [!NOTE]
 > If you choose to perform this exercise in the unit, be aware you might incur costs in your Azure Subscription. To estimate the cost, refer to [Microsoft Sentinel Pricing](https://azure.microsoft.com/pricing/details/azure-sentinel/).
 
 ### Use the Purview Compliance portal to Start recording the Audit Log
 
-To start recording in the [Microsoft Purview Compliance portal](https://compliance.microsoft.com/), select **Audit** under **Solutions** and then select (the horizontal blue bar) **Start recording user and admin activity**.
+To start recording in the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), select **Audit** under **Solutions** and then select (the horizontal blue bar) **Start recording user and admin activity**.
 
 > [!TIP]
-> You can perform the same steps in the [Microsoft 365 Defender portal](https://security.microsoft.com/), shown below.
+> You can perform the same steps in the [Microsoft 365 Defender portal](https://security.microsoft.com/), shown in the screenshot.
 
 :::image type="content" source="../media/Screenshot_Audit_enable.png" alt-text="Screenshot of the blue bar used to enable recording of activity.":::
 
 > [!NOTE]
 > If the blue bar to **Start recording..** is not there, recording is already enabled. You can disable and reenable recording with Exchange PowerShell cmdlets.
 
-### Use Exchange Powershell to Start recording the Audit Log
+### Use Exchange PowerShell to Start recording the Audit Log
 
-To start recording using Exchange PowerShell perform the following steps:
+To start recording using Exchange PowerShell, perform the following steps:
 
-1. In the [Microsoft Azure portal](https://portal.azure.com.com/), select the **Cloud Shell** icon to open a new **PowerShell** session. If Cloud Shell opens with a Bash prompt, you will need to switch to PowerShell.
-1. From the **PS /home/xxx** command prompt enter the **Connect-EXOPSSession** cmdlet and wait for it to complete. It will load all the Exchange PowerShell cmdlets you need and you can ignore any warning messages.
-1. Next, enter the **Get-AdminAuditLogConfig | Format-List UnifiedAuditLogIngestionEnabled** cmdlets. If recording is not enabled you see the following response: **UnifiedAuditLogIngestionEnabled : False** (it will respond with **True** if enabled).
-1. To enable recording enter the **Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true** cmdlet. You will receive the following response: **WARNING: The admin audit log configuration change you specified could take up to 60 minutes to take effect.**.
+1. In the [Microsoft Azure portal](https://portal.azure.com.com/), select the **Cloud Shell** icon to open a new **PowerShell** session. If Cloud Shell opens with a Bash prompt, you'll need to switch to PowerShell.
+1. From the PS /home/xxx command prompt, enter the **Connect-EXOPSSession** cmdlet and wait for it to complete. It loads all the Exchange PowerShell cmdlets you need and you can ignore any warning messages.
+1. Next, enter the **Get-AdminAuditLogConfig | Format-List UnifiedAuditLogIngestionEnabled** cmdlets. If recording isn't enabled, you see the following response: **UnifiedAuditLogIngestionEnabled : False** (it responds with **True** if enabled).
+1. To enable recording, enter the **Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true** cmdlet. You'll receive the following response: **WARNING: The admin audit log configuration change you specified could take up to 60 minutes to take effect.**.
 1. After a couple minutes you can rerun the **Get-AdminAuditLogConfig | Format-List UnifiedAuditLogIngestionEnabled** cmdlets and the response will be **UnifiedAuditLogIngestionEnabled : True**.
 
 > [!TIP]
@@ -40,7 +40,7 @@ To start recording using Exchange PowerShell perform the following steps:
 
 After completing these steps, you'll have enabled Unified Audit Log recording:
 
-- Using the Microsoft Purview Compliance portal (or the Microsoft 365 Defender portal).
+- Using the Microsoft Purview compliance portal (or the Microsoft 365 Defender portal).
 - Using Exchange online PowerShell cmdlets in Cloud Shell
 
 ## Check your work
