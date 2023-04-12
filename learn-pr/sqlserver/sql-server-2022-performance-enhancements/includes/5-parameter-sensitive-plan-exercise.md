@@ -1,13 +1,11 @@
-\*This will be a note for the individual taking the exercise
-
-This exercise will be leveraging the following githib repository:
-
-[sqlworkshops-sql2022workshop/sql2022workshop at main ·
-microsoft/sqlworkshops-sql2022workshop ·
-GitHub](https://github.com/microsoft/sqlworkshops-sql2022workshop/tree/main/sql2022workshop)
-
-Before continuing with the exercise access lab
-
+>This exercise will be leveraging the following githib repository:
+>
+>[sqlworkshops-sql2022workshop/sql2022workshop at main ·
+>microsoft/sqlworkshops-sql2022workshop ·
+>GitHub](https://github.com/microsoft/sqlworkshops-sql2022workshop/tree/main/sql2022workshop)
+>
+>Before continuing with the exercise access lab
+ 
 You are the SQL Server DBA for Wide World Importers and part of your
 role is to keep up to date with new features in the product. You have
 learned that SQL Server 2022 is GA and you need to evaluate the product.
@@ -60,7 +58,7 @@ a compile which is reflect in execution 2 in the above screenshot. This
 is the time we want to compare.
 
 ![ShowingIndexSeek](../media/psp/exercise1a/Exercise1AShowingIndexSeek.png)
-<!--> Image Exercise1AShowingIndexSeek for markdown-->
+<!-- Image Exercise1AShowingIndexSeek for markdown-->
 
 Note the query plan uses an Index Seek reflected in the above
 screenshot. When this plan is within the procedure cache the business
