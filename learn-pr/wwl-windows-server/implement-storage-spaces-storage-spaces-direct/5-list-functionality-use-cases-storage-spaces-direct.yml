@@ -4,11 +4,10 @@ title: List the functionalities, components, benefits, and use cases of Storage 
 metadata:
   title: List the functionalities, components, benefits, and use cases of Storage Spaces Direct
   description: "List the functionalities, components, benefits, and use cases of Storage Spaces Direct"
-  ms.date: 01/20/2022
+  ms.date: 04/12/2023
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
 azureSandbox: false
 labModal: false
 durationInMinutes: 10
