@@ -17,13 +17,13 @@ quiz:
   questions:
   - content: How do you respond to a click event?
     choices:
-    - content: <span title="Click to play a piece" @click="() => PlayPiece(0)">🔽</span>
+    - content: Use @click="handler".
       isCorrect: false
       explanation: Incorrect. You should type @onclick="handler" not @click="handler".
-    - content: <span title="Click to play a piece" onclick="() => PlayPiece(0)">🔽</span>
+    - content: Use onclick="handler"".
       isCorrect: false
       explanation: Incorrect. You should type @onclick="handler" not onclick="handler".
-    - content: <span title="Click to play a piece" @click="() => PlayPiece(0)">🔽</span>
+    - content: Use @click="handler""
       isCorrect: true
       explanation: Correct.
   - content: In what component method would you place logic that would initialize your component?
