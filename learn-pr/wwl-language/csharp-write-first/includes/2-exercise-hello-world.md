@@ -1,5 +1,6 @@
 
 
+
 In this first hands-on exercise, you'll use C# to print a hallowed programmer's phrase to the standard output of a console.
 
 ## Write your first line of code
@@ -117,7 +118,9 @@ In this task, you'll comment out the previous line of code, then add new lines o
 1. Press the green Run button again. This time, you should get the following output.
 
     ```Output
-    Congratulations! You wrote your first lines of code.
+    Congratulations! 
+    
+    You wrote your first lines of code.
     ```
 
 ### The difference between Console.Write and Console.WriteLine

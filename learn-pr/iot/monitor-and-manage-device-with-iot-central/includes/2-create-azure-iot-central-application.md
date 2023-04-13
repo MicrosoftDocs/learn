@@ -46,4 +46,4 @@ In this section we activate the Azure sandbox, sign in to Azure IoT Central and 
 
 Your IoT Central custom application is now live and ready to connect to IoT Devices.
 
-1. Select the link for your **IoT Central Application URL**, such as https://coffee-maker-1234.azureiotcentral.com.
+1. Select the link for your **IoT Central Application URL**, such as `https://coffee-maker-1234.azureiotcentral.com`.

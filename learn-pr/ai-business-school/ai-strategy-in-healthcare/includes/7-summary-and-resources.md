@@ -17,4 +17,4 @@ Check the [10 Practical Use Cases for AI in Health interactive e-book](https://i
 
 ## References
 
-[(1) Managed Healthcare Executive, “Top data analytics challenges facing healthcare organizations,” 10, December 2017](https://www.managedhealthcareexecutive.com/managed-healthcare-executive/news/top-data-analytics-challenges-facing-healthcare-organizations)
+[(1) Managed Healthcare Executive, “Top data analytics challenges facing healthcare organizations,” 10, December 2017](https://www.managedhealthcareexecutive.com/view/top-data-analytics-challenges-facing-healthcare-organizations)
