@@ -30,5 +30,6 @@ subjects:
 - artificial-intelligence
 modules:
 - learn.wwl.get-started-openai
+- learn.wwl.build-language-solution-azure-openai
 trophy:
   uid: learn.wwl.develop-ai-solutions-azure-openai.trophy

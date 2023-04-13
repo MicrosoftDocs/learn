@@ -4,12 +4,12 @@ title: Exercise - Perform addition with implicit data conversion
 metadata:
   title: Exercise - Perform addition with implicit data conversion
   description: "Exercise - Perform addition with implicit data conversion"
-  ms.date: 02/24/2023
+  ms.date: 04/13/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-interactive: csharp
 durationInMinutes: 10
 content: |
   [!include[](includes/2-exercise-add-numbers.md)]
+interactive: csharp

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-solutions-network-security.design-solutions-network-segmentation
+title: Design solutions for network segmentation
+metadata:
+  title: Design solutions for network segmentation
+  description: "SC-100 preparatory module on: design solutions for network segmentation."
+  ms.date: 3/14/2023
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-design-solutions-network-segmentation.md)]

@@ -1,4 +1,4 @@
-You successfully deployed the video rendering service website to your cluster. But you noticed that you couldn't access the website from any client external to the cluster. The problem is that you haven't exposed your application to the internet yet. By default, Kubernetes blocks all external traffic. You'll need to add an *ingress rule* to allow traffic into the cluster.
+You successfully deployed the video rendering service website to your cluster. But you noticed that you couldn't access the website from any client external to the cluster. The problem is that you haven't exposed your application to the internet yet. By default, Kubernetes blocks all external traffic. You need to add an *ingress rule* to allow traffic into the cluster.
 
 [!INCLUDE [azure-exercise-subscription-prerequisite](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
@@ -29,9 +29,9 @@ Like all resources, services also have manifest files that describe how they sho
       name: contoso-website
     ```
 
-    In this code, you added the first two keys to tell Kubernetes the `apiVersion` and `kind` of manifest you're creating. The `name` is the name of the service. You'll use it to identify and query the service information when you use `kubectl`.
+    In this code, you added the first two keys to tell Kubernetes the `apiVersion` and `kind` of manifest you're creating. The `name` is the name of the service. Use it to identify and query the service information when you use `kubectl`.
 
-1. You define how the service will behave in the specification section of the manifest file. The first behavior you need to add is the type of service. Set the `type` key to `clusterIP`.
+1. You define how the service behaves in the specification section of the manifest file. The first behavior you need to add is the type of service. Set the `type` key to `clusterIP`.
 
     Update the `service.yaml` file to match the following YAML.
 
@@ -45,7 +45,7 @@ Like all resources, services also have manifest files that describe how they sho
       type: ClusterIP
     ```
 
-1. You define the pods the service will group and provide coverage by adding a `selector` section to the manifest file. Add the `selector`, and set the `app` key value to the `contoso-website` label of your pods as specified in your earlier deployment's manifest file.
+1. You define the pods the service groups and provide coverage by adding a `selector` section to the manifest file. Add the `selector`, and set the `app` key value to the `contoso-website` label of your pods as specified in your earlier deployment's manifest file.
 
     Update the `service.yaml` file to match the following YAML.
 
@@ -61,7 +61,7 @@ Like all resources, services also have manifest files that describe how they sho
           app: contoso-website
       ```
 
-1. You define the port-forwarding rules by adding a `ports` section to the manifest file. The service must accept all TCP requests on port 80 and forward the request to the HTTP target port for all pods matching the selector value defined earlier.
+1. You define the port-forwarding rules by adding a `ports` section to the manifest file. The service must accept all TCP requests on port 80 and forward the request to the HTTP target port for all pods that match the selector value defined earlier.
 
     Update the `service.yaml` file to match the following YAML.
 
@@ -135,7 +135,7 @@ To expose your website to the world via DNS, you must create an ingress controll
       name: contoso-website
     ```
 
-    In this code, you added the first two keys to tell Kubernetes the `apiVersion` and `kind` of manifest you're creating. The `name` is the name of the ingress. You'll use it to identify and query the ingress information when you use `kubectl`.
+    In this code, you added the first two keys to tell Kubernetes the `apiVersion` and `kind` of manifest you're creating. The `name` is the name of the ingress. Use it to identify and query the ingress information when you use `kubectl`.
 
 1. Create an `annotations` key inside the `metadata` section of the manifest file called to use the :::no-loc text="HTTP application routing"::: add-on for this ingress. Set the key to `kubernetes.io/ingress.class` and a value of `addon-http-application-routing`.
 
@@ -180,7 +180,7 @@ To expose your website to the world via DNS, you must create an ingress controll
         - host: contoso.<zone-name> # Which host is allowed to enter the cluster
     ```
 
-1. Next up, add the back-end configuration to your ingress rule. Create a key named `http` and allow the `http` protocol to pass through. Then, define the `paths` key that will allow you to filter whether this rule applies to all paths of the website or only some of them.
+1. Next up, add the back-end configuration to your ingress rule. Create a key named `http` and allow the `http` protocol to pass through. Then, define the `paths` key that allows you to filter whether this rule applies to all paths of the website or only some of them.
 
     Update the `ingress.yaml` file to match the following YAML.
 

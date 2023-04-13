@@ -34,7 +34,7 @@ You can select the condition to modify the threshold, but for this exercise, weâ
 1. Provide a **Name** for the entry and then select **Review + create** to save the action group.
 1. A text message is sent to your phone confirming that it is included in the action group.
 1. In the **Action Groups** list, select your new action group and select **Apply to rule**.  
-    :::image type="content" source="../media/7-actions-groups-apply.png" lightbox="../media/7-actions-groups-apply.png" alt-text="A screenshot showing the action group to apply to the alert rule.":::
+    :::image type="content" source="../media/7-action-groups-apply.png" lightbox="../media/7-action-groups-apply.png" alt-text="A screenshot showing the action group to apply to the alert rule.":::
 
 ## Create alert rule for restarting container
 
@@ -42,7 +42,7 @@ The Node CPU alert will be difficult to simulate for a test application, so enab
 
 1. Locate the alert with the **Rule Name** *Restarting container count*. Select the slider in the **Status** column to change its status to *Enabled*.
 
-   :::image type="content" source="../media/7-restarting-container-alert.png" lightbox="../media/7-restarting-container-alert.png" alt-text="Screenshot enable restarting container count alert rule.":::
+   :::image type="content" source="../media/7-restarting-container-alert.png" lightbox="../media/7-restarting-container-alert.png" alt-text="A screenshot showing the enable restarting container count alert rule.":::
 
 1. Select the message **No action group assigned** to create an action group and assign it to the rule that you just enabled.
 1. Select the action group that you created and select **Apply to rule**.

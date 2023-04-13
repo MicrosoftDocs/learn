@@ -8,7 +8,7 @@ metadata:
   ms.author: maevan
   manager: jasonh
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: marketplace
 title: Simplify cloud procurement and governance with Azure Marketplace
 summary: Overview of using Azure Marketplace for cloud procurement and governance for customers
 abstract: |
@@ -29,8 +29,8 @@ roles:
 - administrator
 - developer
 products:
-- azure
 - azure-marketplace
+- azure
 subjects:
 - cloud-computing
 - marketing-sales

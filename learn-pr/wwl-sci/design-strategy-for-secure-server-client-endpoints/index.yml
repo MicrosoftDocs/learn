@@ -2,8 +2,8 @@
 uid: learn.wwl.design-strategy-for-secure-server-client-endpoints
 metadata:
   title: Design a strategy for securing server and client endpoints
-  description: "Design a strategy for securing server and client endpoints"
-  ms.date: 12/21/2022
+  description: "Learn how to design a cybersecurity strategy to secure server and client endpoints."
+  ms.date: 04/07/2023
   author: wwlpublish
   ms.author: hrasheed
   ms.topic: interactive-tutorial
@@ -31,7 +31,6 @@ roles:
 products:
 - azure
 - active-directory
-- azure-sentinel
 subjects:
 - architecture
 - security
