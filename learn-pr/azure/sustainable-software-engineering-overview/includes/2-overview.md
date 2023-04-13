@@ -33,7 +33,7 @@ Alongside the six principles of Sustainable Software Engineering, there are two 
 
     Nothing happens in isolation, everything is connected, and small changes lead to significant changes. Normalizing sustainability discussions in technical meetings empowers others to raise their voices. That's how you create change in any organization.
 
-As Sustainable Software Engineers, we believe that everyone has a part to play in the climate solution. Sustainable Software Engineering is inclusive. Whatever sector, industry, role, or technology, you can always do something to have an impact.
+    As Sustainable Software Engineers, we believe that everyone has a part to play in the climate solution. Sustainable Software Engineering is inclusive. Whatever sector, industry, role, or technology, you can always do something to have an impact.
 
 1. **Sustainability is enough, all by itself, to justify our work**
 
