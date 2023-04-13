@@ -33,7 +33,6 @@ units:
 - learn.wwl.train-machine-learning-model-azure-databricks.understand-spark-ml
 - learn.wwl.train-machine-learning-model-azure-databricks.train-validate-model
 - learn.wwl.train-machine-learning-model-azure-databricks.use-other-frameworks
-- learn.wwl.train-machine-learning-model-azure-databricks.knowledge-check
 - learn.wwl.train-machine-learning-model-azure-databricks.summary
 badge:
   uid: learn.wwl.train-machine-learning-model-azure-databricks.badge
