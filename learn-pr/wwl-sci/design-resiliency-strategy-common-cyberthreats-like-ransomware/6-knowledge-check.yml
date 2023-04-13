@@ -1,0 +1,85 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-resiliency-strategy-common-cyberthreats-like-ransomware.knowledge-check
+title: Knowledge check - Design a resiliency strategy for common cyberthreats
+metadata:
+  title: Knowledge check - Design a resiliency strategy for common cyberthreats
+  description: "Knowledge check for module on the topic: Design a resiliency strategy for common cyberthreats."
+  ms.date: 3/14/2023
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 10
+###########################################################################
+###
+### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
+###  - Questions are complete sentences ending with a question mark
+###  - No true/false questions
+###  - 3 answers per question
+###  - All answers about the same length
+###  - Numeric answers listed in sorted order
+###  - No "All of the above" and/or "None of the above" as answer choices
+###  - No "Not" or "Except" in questions
+###  - No second person ("you") in the questions or answers
+###  - Provide a meaningful explanation for both correct and incorrect answers
+###
+###########################################################################
+content: |
+quiz:
+    questions:
+      - content: "What is the primary method for mitigating against ransomware attacks?"
+        choices:
+        - content: "Frequently patching systems and applications"
+          isCorrect: false
+          explanation: "While keeping systems and applications patched can help prevent certain types of attacks, it isn't the primary method for mitigating ransomware attacks."
+        - content: "Monitoring network traffic for indicators of compromise"
+          isCorrect: false
+          explanation: "While monitoring network traffic can help identify possible attacks, it isn't the primary method for mitigating ransomware attacks."
+        - content: "Backing up data regularly and testing restore procedures"
+          isCorrect: true
+          explanation: "Regular backups are essential for restoring any lost or encrypted data after a ransomware attack. Testing restore procedures ensure that the backups can actually perform the desired restore."
+        - content: "Enforcing complex password policies for all users"
+          isCorrect: false
+          explanation: "While enforcing complex password policies is important for security, it isn't the primary method for mitigating ransomware attacks."
+      - content: "What is a critical component of business resiliency planning?"
+        choices:
+        - content: "Strict adherence to company policies and procedures"
+          isCorrect: false
+          explanation: "Adhering to policies and procedures is important, but isn't a critical component of business resiliency planning."
+        - content: "Performing regular risk assessments"
+          isCorrect: true
+          explanation: "Understanding potential risks is key to developing effective resiliency plans. Regular risk assessments help identify these risks and allow for appropriate mitigation strategies to be developed."
+        - content: "Establishing clear lines of communication and decision-making authority "
+          isCorrect: false
+          explanation: "While clear lines of communication are important during disruptions, they are not a critical component of business resiliency planning."
+        - content: "Frequently performing simulated disaster scenarios"
+          isCorrect: false
+          explanation: "Simulating disaster scenarios is important, but isn't a critical component of business resiliency planning."
+      - content: "When implementing a backup solution, what should be a consideration in addition to frequency of backups?"
+        choices:
+        - content: "Cost-effectiveness of the solution"
+          isCorrect: true
+          explanation: "Backup solutions should provide adequate protection while also being cost-effective. A solution that requires too much resources may not be sustainable in the long run."
+        - content: "The physical location of the backup server"
+          isCorrect: false
+          explanation: "Physical location is important for ensuring availability during disasters, but it isn't an additional consideration when implementing a backup solution."
+        - content: "The operating system used on the backup server"
+          isCorrect: false
+          explanation: "While it is important to select a backup solution that is compatible with the operating system used, it isn't an additional consideration."
+        - content: "The amount of storage capacity available for backups"
+          isCorrect: false
+          explanation: "Storage capacity is important, but it is already a consideration when implementing a backup solution."
+      - content: "How can update management automation help mitigate against security threats?"
+        choices:
+        - content: "Automating app development to be more secure by design"
+          isCorrect: false
+          explanation: "While automating app development can improve security posture, it has little to do with update management automation and mitigating security threats."
+        - content: "Ensuring all updates are automatically installed as soon as they become available"
+          isCorrect: false
+          explanation: "Automatically installing all updates may cause issues if compatibility or other problems arise, so it's not the best approach."
+        - content: "Facilitating quicker deployment of critical security patches across infrastructure"
+          isCorrect: true
+          explanation: "Update management automation helps quickly deploy critical security patches, reducing the time attackers have to exploit vulnerabilities."
+        - content: "Providing detailed log analysis for security events across systems"
+          isCorrect: false
+          explanation: "While log analysis is important for detecting and investigating security incidents, it does not relate to update management automation and mitigation techniques."

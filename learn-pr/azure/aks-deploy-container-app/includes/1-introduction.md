@@ -2,11 +2,11 @@ Imagine you work for a growing video editing company that provides a cloud-based
 
 You've identified Azure Kubernetes Service (AKS) as a potential solution. AKS meets the requirements that allow you to deploy your app and handle the company's increased growth. You want to understand how to deploy your app to an AKS cluster and allow customers access to the app's services.
 
-In this module, you'll deploy Kubernetes workloads declaratively to an AKS cluster by using manifest files. You'll create different deployment manifest files that allow you to deploy and expose your application to your users.
+In this module, deploy Kubernetes workloads declaratively to an AKS cluster by using manifest files. You can then create different deployment manifest files to deploy and expose your application to your users.
 
 ## Learning objectives
 
-By the end of this module, you'll be able to:
+By the end of this module, you can:
 
 - Create and set up an AKS cluster.
 - Deploy Kubernetes workloads by using deployment YAML files.
@@ -21,6 +21,7 @@ By the end of this module, you'll be able to:
 - Ability to use the [Azure CLI](/azure/aks/kubernetes-walkthrough).
 - Ability to create a Docker container. If you're new to Docker, start with the [intro to containers](/training/modules/intro-to-containers/).
 
-All exercises will use [Azure Cloud Shell](/azure/cloud-shell/overview), which already has all the needed tooling installed. If you prefer to run the examples in your own terminal, you'll need to have the following tooling installed first:
+All exercises use [Azure Cloud Shell](/azure/cloud-shell/overview), which already has all the needed tooling installed. If you prefer to run the examples in your own terminal, you need to have the following tooling installed first:
+
 - [Azure CLI](/azure/aks/kubernetes-walkthrough)
 - [Kubectl](/azure/aks/kubernetes-walkthrough#connect-to-the-cluster)

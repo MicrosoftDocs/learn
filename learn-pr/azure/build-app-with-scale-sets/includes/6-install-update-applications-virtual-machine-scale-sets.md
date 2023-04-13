@@ -24,7 +24,7 @@ The following example shows a custom script configuration that downloads an appl
 }
 ```
 
-To deploy this configuration on the scale set, you'll use a custom script extension. The following code shows how to create a custom script extension for a virtual machine scale set by using the Azure CLI. This command installs the new app on the VMs across the scale set:
+To deploy this configuration on the scale set, you'll use a custom script extension. The following code shows how to create a custom script extension for a Virtual Machine Scale Set by using the Azure CLI. This command installs the new app on the VMs across the scale set:
 
 ```azurecli
 az vmss extension set \
@@ -38,7 +38,7 @@ az vmss extension set \
 
 ## Update an application across a scale set by using a custom script extension
 
-You can use a custom script extension to update an existing app across a virtual machine scale set. You'll reference an updated deployment script, then reapply the extension to your scale set. For example, the following JSON code shows a configuration that fetches a new version of an application and installs it:
+You can use a custom script extension to update an existing app across a Virtual Machine Scale Set. You'll reference an updated deployment script, then reapply the extension to your scale set. For example, the following JSON code shows a configuration that fetches a new version of an application and installs it:
 
 ````json
 # yourConfigV2.json
@@ -66,7 +66,7 @@ The VMs are updated according to the upgrade policy for the scale set. You'll sp
 - **Rolling**: The scale set rolls out the update in batches across the VMs in the scale set. An optional pause can minimize or eliminate a service outage. In this mode, machines in the scale set might run different versions of the app for a short time. This mode requires that you either add a health probe to the scale set or apply the application health extension to the scale set.
 - **Manual**: Existing VMs in the scale set aren't updated. All changes must be done manually. This mode is the default.
 
-To specify the upgrade policy mode when you provision a virtual machine scale set, you can use the `upgrade-policy-mode` option. The following code example uses the Azure CLI:  
+To specify the upgrade policy mode when you provision a Virtual Machine Scale Set, you can use the `upgrade-policy-mode` option. The following code example uses the Azure CLI:  
 
 ```azurecli
 az vmss create \

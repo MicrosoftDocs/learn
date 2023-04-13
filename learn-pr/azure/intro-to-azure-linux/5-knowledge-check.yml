@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Knowledge check
-  ms.date: 6/26/2020
+  ms.date: 04/12/2023
   author: ChaseCrum
   ms.author: chasecrum
   ms.topic: interactive-tutorial
@@ -23,7 +23,7 @@ quiz:
       explanation: IaaS is based on virtual machines and infrastructure, not a single shared host.
     - content: A collection of platform services to which you can deploy Linux-based applications
       isCorrect: false
-      explanation: This is a description of platform as a service (PaaS) computing.
+      explanation: This answer is a description of platform as a service (PaaS) computing.
     - content: A set of Microsoft datacenter services that can host and manage your hardware infrastructure
       isCorrect: false
       explanation: Azure is a cloud computing service, not a datacenter provider or hardware colocation service.
@@ -31,7 +31,7 @@ quiz:
     choices:  
     - content: Azure Cognitive Services search APIs
       isCorrect: false
-      explanation: Cognitive Services provides search APIs that are powered by AI, and that can be used by applications on any platform. It doesn't host applications.
+      explanation: Cognitive Services provides search APIs that are powered by AI, and are used by applications on any platform. It doesn't host applications.
     - content: Virtual machines
       isCorrect: false
       explanation: Virtual machines are a component of infrastructure as a service (IaaS) computing.
@@ -43,13 +43,13 @@ quiz:
       explanation: Azure App Service is a managed web application hosting platform that can host applications on Linux.
   - content: Which of the following is *not* a benefit of using an endorsed Linux distribution on Azure?
     choices:  
-    - content: Availability of optimized, regularly-updated VM images
+    - content: Availability of optimized, regularly updated VM images
       isCorrect: false
       explanation: Microsoft works with partners to provide VM images optimized for Azure, and requires them to publish updates to their images regularly.
     - content: SLA connectivity guarantees
       isCorrect: false
       explanation: The VM platform SLA of Azure applies to Linux virtual machines only when endorsed images are used.
-    - content: Enhanced compatibility with additional programming languages
+    - content: Enhanced compatibility with more programming languages
       isCorrect: true
       explanation: Endorsed distributions don't provide any benefits related to specific programming languages.
     - content: Distribution-specific benefits like SAP integration

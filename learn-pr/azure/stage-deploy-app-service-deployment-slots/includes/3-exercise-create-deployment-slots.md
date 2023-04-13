@@ -64,7 +64,7 @@ Now, you'll set up the git client in Cloud Shell and use it to clone a sample we
 
 1. In the Azure global controls at the top of the page, select the Cloud Shell icon to launch an Azure Cloud Shell session.
 
-      :::image type="content" source="../media/3-cloud-shell-icon.png" alt-text="Cloud Shell icon in global controls.":::
+      :::image type="content" source="../media/3-cloud-shell-icon.png" alt-text="Screenshot of the Cloud Shell icon in global controls.":::
 
 1. In the Cloud Shell session, when prompted, select the **Bash** experience and create storage for your subscription.
 
@@ -103,14 +103,14 @@ We're going to use git to deploy the source code to the web app's production slo
 
 1. In the Azure portal, your web app should be active. In the resource menu, select **Overview**. 
 
-1. In the Overview pane for your web app, the **Essentials** section has a **URL**. Note that the URL contains your deployment name for the web app.
+1. In the Overview pane for your web app, the **Essentials** section has a URL in the **Default domain**. Note that the URL contains your deployment name for the web app.
 
-    :::image type="content" source="../media/3-copy-git-clone-url.png" alt-text="Copy the git clone URL." lightbox="../media/3-copy-git-clone-url.png":::
+    :::image type="content" source="../media/3-copy-git-clone-url.png" alt-text="Screenshot of the Essentials section, where you Copy the git clone URL." lightbox="../media/3-copy-git-clone-url.png":::
 
     > [!NOTE]
     > If you don't see a git clone URL where it's shown in the preceding screenshot, refresh the portal.
 
-1. Hover over the  **Git clone url**, and select the *Copy to clipboard* icon. Note that this value also contains your deployment username.
+1. Hover over the  **Git clone url** and select the *Copy to clipboard* icon. Note that this value also contains your deployment username.
 
 1. In Cloud Shell, run the following command to configure the git remote with a name "production". Replace \<git-clone-url> with the content you copied to the clipboard from the previous step.
 
@@ -124,8 +124,9 @@ We're going to use git to deploy the source code to the web app's production slo
     ```bash
     git push production
     ```
-   The terminal session identifies all the processes that take place as part of the deployment. Wait until deployment completes. You should see a **Deployment successful** notification. 
-    
+
+   The terminal session identifies all the processes that take place as part of the deployment. Wait until deployment completes. You should see a **Deployment successful** notification.
+
 1. In the Azure portal, the **Overview** pane should still be active.  Hover over the **URL**. You can either double-click it to open it in a new browser tab or copy and paste it into a new browser tab.
 
     :::image type="content" source="../media/3-web-app-production-slot.png" alt-text="Screenshot of your web app in the production slot.":::
@@ -144,7 +145,7 @@ For your web app, you created one slot, the production slot, and you deployed so
 
     :::image type="content" source="../media/3-access-deployment-slots.png" alt-text="Screenshot of the App Service menu with Deployment slots highlighted.":::
 
-1. In the command bar, select **Add Slot**. The **Add a slot** pane appears.
+1. In the command bar, select **+ Add Slot**. The **Add a slot** pane appears.
 
 1. In the **Name** field, enter *Staging*, accept the default for **Clone settings from**, and then select **Add**.
 
@@ -155,9 +156,9 @@ For your web app, you created one slot, the production slot, and you deployed so
 Let's set up the new slot to use git deployment.
 
 1. On the Azure portal, select **Home** page, and then from Azure services, select **All resources**. 
-    
+
 1. Sort the resources by **Resource group**. for the resource group **mslearn-slots**, you'll see two App Service types. Deployment slots are represented as separate apps in the portal. 
-    
+
 1. Select the staging slot. The Overview pane for your App Service (Slot) appears.
 
 1. In the Staging menu, under **Deployment**, select **Deployment Center**.
@@ -172,8 +173,8 @@ Let's set up the new slot to use git deployment.
 
 To use the git client to deploy source code to the new slot, let's add an extra remote to the git configuration.
 
-1. In App Service menu, select Overview. If you are prompted to save the password for the username you created in the previous task, select **Save**. 
-    
+1. In App Service menu, select Overview. If you are prompted to save the password for the username you created in the previous task, select **Save**.
+
 1. On the **Overview** pane, in the **Essentials** section, hover over the **Git clone url** value and select the *Copy to clipboard* icon. Note that the URL contains your staging deployment username.
 
     > [!NOTE]
@@ -218,13 +219,14 @@ Next, let's make a small change to the web app files, and then use git to deploy
     git commit -m "New version of web app."
     git push staging
     ```
-    When prompted, enter your deployment password. Notifications of the operations to create and deploy the staging display in the Cloud Shell session, and should display **Deployment successful**. 
-    
+
+    When prompted, enter your deployment password. Notifications of the operations to create and deploy the staging display in the Cloud Shell session, and should display **Deployment successful**.
+
 ## Browse the staging slot
 
 Now you can view the new version of the web app by browsing to the URL for the staging deployment slot.
 
-1. In the Azure portal, on the **Overview** pane for the staging slot, select **Browse** from the command bar, or select the URL. The home page for staging **Web App Version 2** appears in a browser tab.
+1. In the Azure portal, on the **Overview** pane for the staging slot, select **Browse** from the command bar, or select the URL in the **Default domain**. The home page for staging **Web App Version 2** appears in a browser tab.
 
     :::image type="content" source="../media/3-web-app-staging-slot.png" alt-text="Screenshot of the updated web app in the staging slot.":::
 

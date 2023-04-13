@@ -3,11 +3,11 @@ uid: learn.wwl.perform-post-installation-configuration-of-windows-server
 metadata:
   title: Perform post-installation configuration of Windows Server
   description: "Perform post-installation configuration of Windows Server"
-  ms.date: 06/14/2022
+  ms.date: 04/11/2023
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
+  ms.prod: learning-azure
 title: Perform post-installation configuration of Windows Server
 summary: Learn to perform post-installation configuration of Windows Server by using several methods and tools.
 abstract: |

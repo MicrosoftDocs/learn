@@ -3,7 +3,7 @@ uid: learn.react-to-state-changes-using-event-grid.3-exercise-trigger-logic-app
 metadata:
   title: Exercise - Trigger a logic app by using Event Grid
   description: Set up a virtual machine and trigger an event on Event Grid.
-  ms.date: 02/22/2023
+  ms.date: 04/04/2023
   author: spelluru
   ms.author: spelluru
   ms.topic: interactive-tutorial

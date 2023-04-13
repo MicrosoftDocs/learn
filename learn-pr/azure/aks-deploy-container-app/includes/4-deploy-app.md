@@ -9,13 +9,13 @@ Assume you're using an Azure virtual machine (VM) as your target platform. The f
 - Install and configure the web server software.
 - Deploy the web application.
 
-You'll repeat this process for each new VM when you decide to scale the website out to handle an increase in demand from customers.
+Repeat this process for each new VM when you decide to scale the website out to handle an increase in demand from customers.
 
-An alternative approach is to run the website on a container-based platform like Azure Container Instances. You don't need to worry about the underlying server technology, but you'll have to configure and manage several containers to use this strategy manually.
+An alternative approach is to run the website on a container-based platform like Azure Container Instances. You don't need to worry about the underlying server technology, but you have to configure and manage several containers to use this strategy manually.
 
 Kubernetes and AKS help you orchestrate containers. The Kubernetes container orchestration features make it easy to manage workloads on the cluster. You deploy workloads by using containers built from container images to run your applications within an AKS cluster.
 
-Here you'll explore how to create workloads in your AKS cluster.
+Here you can explore how to create workloads in your AKS cluster.
 
 ## What is a container registry?
 
@@ -25,9 +25,9 @@ For example, you might have the image `contoso-website:latest`, which would be a
 
 :::image type="content" source="../media/4-1-container-registry-diagram.png" alt-text="A diagram that shows how container images are downloaded from a container registry to a Kubernetes cluster by using a manifest file.":::
 
-Container registries might be public or private. Private registries require credentials to access and download images and will be the strategy you'll follow when you store container images.
+Container registries might be public or private. Private registries require credentials to access and download images and is the strategy you follow when you store container images.
 
-Kubernetes only allows you to deploy images hosted in a container registry. Creating a private container registry will normally be part of your standard AKS deployment strategy.
+Kubernetes only allows you to deploy images hosted in a container registry. Creating a private container registry is normally part of your standard AKS deployment strategy.
 
 ## What is a Kubernetes pod?
 
@@ -66,9 +66,9 @@ apiVersion: apps/v1 # Where in the API it resides
 kind: Deployment # The kind of workload we're creating
 ```
 
-The `apiVersion` key defines the API server endpoint that manages the object you'll deploy.
+The `apiVersion` key defines the API server endpoint that manages the object you deploy.
 
-The `kind` key defines the workload this deployment will create.
+The `kind` key defines the workload this deployment creates.
 
 Other common keys for all the files are the `metadata` and `name` keys. All Kubernetes resources *must* have a name. This name goes inside the `metadata` key.
 

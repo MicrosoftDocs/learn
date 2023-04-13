@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-dynamic-deployment.deploy-provisioning-packages
+title: Deploy using provisioning packages
+metadata:
+  title: Deploy using provisioning packages
+  description: "Deploy using provisioning packages"
+  ms.date: 04/05/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-deploy-provisioning-packages.md)]

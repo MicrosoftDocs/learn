@@ -16,13 +16,13 @@ The Azure data engineer focuses on data-related tasks in Azure. Primary responsi
 
 The role of data engineer is different from the role of a database administrator. A data engineer's scope of work goes well beyond looking after a database and the server where it's hosted. Data engineers must also get, ingest, transform, validate, and clean up data to meet business requirements. This process is called _data wrangling_.
 
-A data engineer adds tremendous value to both business intelligence and data science projects. Data wrangling can consume a lot of time. When the data engineer wrangles data, projects move more quickly because data scientists can focus on their own areas of work.
+A data engineer adds tremendous value to both business intelligence and data science projects. Data wrangling can consume much time. When the data engineer wrangles data, projects move more quickly because data scientists can focus on their own areas of work.
 
 Both database administrators and business intelligence professionals can easily transition to a data engineer role. They just need to learn the tools and technology that are used to process large amounts of data.
 
 ## Data scientist
 
-Data scientists perform advanced analytics to extract value from data. Their work can vary from descriptive analytics to predictive analytics. Descriptive analytics evaluate data through a process known as exploratory data analysis (EDA). Predictive analytics are used in machine learning to apply modeling techniques that can detect anomalies or patterns. These are an important part of forecast models. 
+Data scientists perform advanced analytics to extract value from data. Their work can vary from descriptive analytics to predictive analytics. Descriptive analytics evaluate data through a process known as exploratory data analysis (EDA). Predictive analytics are used in machine learning to apply modeling techniques that can detect anomalies or patterns, which are an important part of forecast models.
 
 Descriptive and predictive analytics are just one aspect of data scientists' work. Some data scientists might even work in the realms of deep learning, iteratively experimenting to solve a complex data problem by using customized algorithms.
 
@@ -40,9 +40,9 @@ For example, an AI engineer might be working on a Computer Vision application th
 
 The roles of the data engineer, AI engineer, and data scientist differ. Each role solves a different problem. 
 
-Data engineers primarily provision data stores. They make sure that massive amounts of data are securely and cost-effectively extracted, loaded, and transformed. 
+Data engineers primarily provision data stores. They make sure that massive amounts of data are securely and cost-effectively extracted, loaded, and transformed.
 
-AI engineers add the intelligent capabilities of vision, voice, language, and knowledge to applications. To do this, they use the Cognitive Services offerings that are available out of the box. 
+AI engineers add the intelligent capabilities of vision, voice, language, and knowledge to applications, by using the Cognitive Services offerings that are available out of the box.
 
 When a Cognitive Services application reaches its capacity, AI engineers call on data scientists. Data scientists develop machine learning models and customize components for an AI engineer's application. 
 

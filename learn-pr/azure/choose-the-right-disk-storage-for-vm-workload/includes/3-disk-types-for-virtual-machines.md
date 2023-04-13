@@ -17,14 +17,17 @@ Ultra disks provide the highest disk performance available in Azure. Choose them
 
 The maximum performance of an Ultra disk depends on the size you select, as shown in the examples in this table:
 
-| Disk size (GB) | IOPS | Throughput (:::no-loc text="MBps":::) |
+| Disk size (GB) | IOPS | Throughput (MB/s) |
 | --- | --- | --- |
 | 4 | 1,200 | 300 |
+| 8 | 2,400 | 600 |
 | 16 | 4,800 | 1,200 |
-| 32 | 9,600 | 2,000 |
+| 32 | 9,600 | 2,400 |
+| 64 | 19,200 | 4,000 |
+| 128 | 38,400 | 4,000 |
 | 256 | 76,800 | 2,000 |
-| Over 1,024 | 160,000 | 2,000 |
-| | |
+| 512 | 153,600 | 4,000 |
+| 1,024 - 65,536 (sizes in this range increase in 1 TiB increments) | 160,000 | 2,000 |
 
 Ultra disks can have capacities from 4 GB up to 64 TB. A unique feature of Ultra disks is that you can adjust the IOPS and throughput values while they're running and without detaching them from the host virtual machine. Performance adjustments can take up to an hour to take effect.
 
@@ -52,7 +55,7 @@ Premium SSD v2 managed disks are suited for a broad range of workloads such as S
 
 Premium SSD managed disks are the next tier down from Premium SSD v2 managed disks in terms of performance, but they still provide high throughput and IOPS with low latency. Premium SSD doesn't have the current limitations of either Ultra Disks or Premium SSD v2. For example, they're available in all regions and can be used with virtual machines that are outside of availability zones.
 
-You can't adjust performance without detaching these disks from their virtual machine. Also, you can only use premium SSD managed disks with virtual machine sizes that are compatible with premium storage.
+To adjust the performance of a disk you can change its performance tier (which can be done without detaching the disk from a virtual machine). Also, you can only use premium SSD managed disks with virtual machine sizes that are compatible with premium storage.
 
 This table has examples that illustrate the high performance of premium SSD managed disks:
 
@@ -62,7 +65,6 @@ This table has examples that illustrate the high performance of premium SSD mana
 | P15 | 256 GiB | 1,100 | 125 |
 | P40 | 2 TiB | 7,500 | 250 |
 | P80 | 32 TiB | 20,000 | 900 |
-| | | |
 
 With Premium SSD, these performance figures are guaranteed. There's no such guarantee for standard tier disks, which can be impacted occasionally by high demand.
 
@@ -80,7 +82,7 @@ This table has examples that illustrate the performance characteristics of Stand
 
 | Disk size name | Disk size (GB) | IOPS | Throughput (:::no-loc text="MBps":::) |
 | --- | --- | --- | --- |
-| E4 | 32 | 120 | 25 |
+| E4 | 32 | 500 | 60 |
 | E15 | 256 | 500 | 60 |
 | E40 | 2,048 | 500 | 60 |
 | E80 | 32,767 | 6,000 | 750 |
