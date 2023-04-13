@@ -1,4 +1,4 @@
-Modernizing your data platform has the potential to streamline your database systems and eliminate obstacles to profitability, but it can be a complex process that requires a complete understanding to ensure success.
+Data platform modernization is an essential step for businesses to keep up with the constantly evolving technology landscape. 
 
 You've been asked to prepare an initial report for the board that explains why they should finance a data platform modernization project. The board wants to understand the return on investment and efficiencies that could be obtained through this project.
 
@@ -22,7 +22,7 @@ Microsoft Azure provides several fully managed SQL-based platforms and services 
 
 - **Convenience** - Setting up an Azure SQL data platform can be convenient as it eliminates the need to manage physical hardware. However, there are certain aspects that need to be taken care of such as understanding the latest security best practices and managing operating system and SQL server patches for IaaS (Infrastructure as a Service) offering. In a PaaS (Platform as a Service) offering, all the hardware, software updates, and OS patches are managed for you. You only need to specify a few options, and a running Azure SQL Database can be provisioned within minutes. 
 
-- **Cost** - Microsoft manages the hardware for you, eliminating the need to buy, provide power for, or maintain any system hardware. Azure SQL offers various pricing options that allow you to balance performance and cost, with plans starting at just a few dollars a month. You can use the **Azure Total Cost of Ownership Calculator** to determine the costs associated with the service you want to use.
+- **Cost** - Microsoft manages the hardware for you, eliminating the need to buy, provide power for, or maintain any system hardware. Azure SQL offers various pricing options that allow you to balance performance and cost, with plans starting at just a few dollars a month. You can use the [**Azure Total Cost of Ownership Calculator**](https://azure.microsoft.com/pricing/tco/calculator/) to determine the costs associated with the service you want to use.
 
 - **Scale** - Azure provides a scalable infrastructure that can grow or shrink based on your business needs. This means that you can scale up or down your computing resources, storage, and networking capabilities as required.
 

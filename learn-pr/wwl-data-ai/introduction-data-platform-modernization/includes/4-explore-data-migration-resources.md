@@ -6,14 +6,18 @@ Here, you'll learn about  the Azure SQL hosting services available, and also Azu
 
 :::image type="content" border="false" source="../media/2-azure-sql-overview.png" alt-text="A diagram showing the main Azure SQL solutions and scenarios for data modernization.":::
 
-## SQL Server on a Virtual Machine
+## SQL Server on an Azure Virtual Machine
 
-Using **Infrastructure as a Service (IaaS)**  is useful for any application solutions that require a quick migration to the cloud with minimal changes. All the versions and editions of SQL Server are available and offer 100% compatibility with SQL Server, allowing you to host as many databases as needed and executing cross-database transactions. There are also other benefits that may get you to consider using IaaS platform including:
+Using **Infrastructure as a Service (IaaS)**  is useful for any application solutions that require a quick migration to the cloud with minimal changes. All the versions and editions of SQL Server are available and offer 100% compatibility with SQL Server, allowing you to host as many databases as needed and executing cross-database transactions. 
+
+There are also other benefits that may get you to consider using IaaS platform including:
 
 - Configure and manage high availability, disaster recovery, and patching for SQL Server easier than on-premises machines
 - Customized environment with full administrative rights
 - SQL Server instances with up to 64 TB of storage and as many databases as needed
 - Fully supports SQL Server transactional replication, AlwaysOn Availability Groups, Integration Services, Log Shipping to replicate data, and traditional SQL Server backups
+
+In addition, migrating to SQL Server on an Azure Virtual Machine may be an option for legacy systems, where application and database need to coexist in the same server.
 
 Because of the simple nature of the migration, migrating to this target platform is often referred to as "lift and shift".
 

@@ -8,7 +8,7 @@ In this unit, you'll explore each of the five stages in more detail.
 
 ## Initiate and discover
 
-Data platform modernization projects are usually initiated to meet business or legal requirements, such as GDPR compliance or improved business benefits. Therefore, it is crucial to account for these needs and obtain support from senior management. The first step is to complete a discovery exercise that includes the following considerations:
+Data platform modernization projects are usually initiated to meet business or legal requirements. Therefore, it is crucial to account for these needs and obtain support from senior management. The first step is to complete a discovery exercise that includes the following considerations:
 
 - **Evaluate current environment**
 
