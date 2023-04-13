@@ -4,12 +4,12 @@ To help keep this tutorial on-topic with teaching about Blazor, we're providing 
 
 ## Adding Game state
 
-The *GameState.cs file* is in this [repository](https://github.com/dotnet/intro-to-dotnet-web-dev/blob/main/5-blazor/1-complete/ConnectFour/Shared/GameState.cs) and you copy it into your version of the game.
+The *GameState.cs file* is in this [repository](https://raw.githubusercontent.com/dotnet/intro-to-dotnet-web-dev/main/5-blazor/1-complete/ConnectFour/Shared/GameState.cs) and you copy it into your version of the game.
 
 1. Copy the *GameState.cs* file from this repository into your project in the *Shared* folder.
 
    We need to make an instance of the `GameState` available to any component that requests it, and only one instance of `GameState` should be available in our application at a time. We address this need by registering our GameState as a Singleton in the application.
- 
+
 1. Open the *Program.cs* file at the root of the project and let's add this statement after the `builder.AddServices...` statement:
 
     ```csharp
@@ -87,7 +87,7 @@ Next, let's allocate the possible 42 game pieces that could be played. We can re
 
 Let's add a method to handle when a player places a Piece in a column. The `GameState` class knows how to assign the correct row for the game piece, and reports back the row that it lands in. We can use this information to assign CSS classes representing the player's color, the final location of the piece, and a CSS drop animation.
 
-We call this method `PlayPiece()` and it accepts an input parameter that specifies the column (1 indexed) the player has chosen. 
+We call this method `PlayPiece()` and it accepts an input parameter that specifies the column (1 indexed) the player has chosen.
 
 1. Add this code below the `Pieces` array we defined in the previous step.
 
@@ -139,11 +139,11 @@ We next need to place some controls that allow players to choose a column and ca
 
 1. Let's review in the browser and it should look like this now:
 
-    ![connect four board](https://github.com/dotnet/intro-to-dotnet-web-dev/raw/main/5-blazor/img/2-Board-Step3.png)
+   :::image type="content" source="../media/2-Board-Step3.png" alt-text="Connect Four board":::
 
    Even better... when we select one of the drop buttons at the top, the following behavior can be observed:
 
-   ![connect four animation](https://github.com/dotnet/intro-to-dotnet-web-dev/raw/main/5-blazor/img/2-board-drop.gif)
+   :::image type="content" source="../media/2-board-drop.gif" alt-text="Connect Four animation":::
 
    Great progress! We can now add pieces to the board. The GameState object is smart enough to pivot back and forth between the two players. Go ahead and select more drop buttons and watch the results.
 
@@ -153,7 +153,7 @@ If you play with the game that you've configured at this point, you find that it
 
 Let's add some error handling and indicators to our board to make the current state clear.
 
-Let's add a simple status area above the board, and below the drop buttons. 
+Let's add a status area above the board, and below the drop buttons.
 
 1. Insert the following markup after the closing `</nav>` element:
 
@@ -214,7 +214,7 @@ Let's add a simple status area above the board, and below the drop buttons.
 
     Our error handler indicator is simple, and uses the Bootstrap CSS framework to display an error in danger mode.
 
-    ![](https://github.com/dotnet/intro-to-dotnet-web-dev/raw/main/5-blazor/img/3-Board-ErrorHandler.png)
+    :::image type="content" source="../media/3-Board-ErrorHandler.png" alt-text="Your game so far, with a board and pieces":::
 
 1. Next, let's add the `ResetGame()` method that our button triggers to restart a game. Currently, the only way to restart a game is to refresh the page... this code allows us to stay on the same page.
 
@@ -236,7 +236,7 @@ Let's add a simple status area above the board, and below the drop buttons.
 
     This update should allow us to play the game again, and now we see an indicator just above the board declaring the player's turn and eventually the completion of the game.
 
-    ![](https://github.com/dotnet/intro-to-dotnet-web-dev/raw/main/5-blazor/img/3-Board-Step1.png)
+    :::image type="content" source="../media/3-Board-Step1.png" alt-text="displaying game over":::
 
     We're still left in a situation where we can't select the reset button. Let's add some logic in the `PlayPiece()` method to detect the end of the game.
 
@@ -256,8 +256,7 @@ Let's add a simple status area above the board, and below the drop buttons.
 
     Now when we play and reach a game-ending scenario, these indicators appear:
 
-    ![](https://github.com/dotnet/intro-to-dotnet-web-dev/raw/main/5-blazor/img/3-Board-Step2.png)
-
+    :::image type="content" source="../media/3-Board-Step2.png" alt-text="Reset game"::: 
 
 ## Summary
 
@@ -270,7 +269,11 @@ We've learned a lot about Blazor and built a neat little game. Here are just som
 - Wrote an error handler to report the state of the game
 - Added parameters to our component
 
-The project we built, is just a simple game, and there's so much more you could do with it. Looking for some challenges to improve it? Consider the following challenges:
+The project we built, is a simple game, and there's so much more you could do with it. Looking for some challenges to improve it?
+
+### Challenges
+
+Consider the following challenges:
 
 - Remove the default layout and extra pages in the application to make it smaller.
 

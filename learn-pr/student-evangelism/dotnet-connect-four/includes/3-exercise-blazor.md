@@ -37,7 +37,7 @@ First, let's scaffold a new project for our game. With .NET 6 installed, we can 
    > [!NOTE]
    > In the above sample, we would navigate to http://localhost:5136. You should be presented with the following welcome screen in your browser:
 
-   ![Blazor project running](https://github.com/dotnet/intro-to-dotnet-web-dev/raw/main/5-blazor/img/1-NewTemplate.png)
+   :::image type="content" source="../media/1-NewTemplate.png" alt-text="Blazor running project":::
 
    Congratulations! You've created your first Blazor application using the Blazor WebAssembly template.
 
@@ -50,7 +50,7 @@ Next, let's create a board component to be used by players in our game. The comp
 
     We use this component to hold everything needed for the game-board layout and managing interactions with it.
 
-    The initial contents of this new component are a simple H3 tag and a code block indicating where C# code should be written:
+    The initial contents of this new component are an H3 tag and a code block indicating where C# code should be written:
 
     ```csharp
     <h3>Board</h3>
@@ -68,7 +68,7 @@ Next, let's create a board component to be used by players in our game. The comp
    <PageTitle>Index</PageTitle>
    ``` 
 
-1. Add our Board component to the Index page by just adding a tag with the filename of our component to the Index page.
+1. Add our Board component to the Index page by adding a tag with the filename of our component to the Index page.
 
    ```csharp
    @page "/"
@@ -79,9 +79,9 @@ Next, let's create a board component to be used by players in our game. The comp
 
 1. Run our application with F5 and in the hot-reload toolbar button activate the "Hot reload on file save" option.
 
-   Hot reload allows you to observe the evolution of the game from a simple page to a full Connect Four board with interactive pieces.
+   Hot reload allows you to observe the evolution of the game from a page to a full Connect Four board with interactive pieces.
 
-   ![App with board title](https://github.com/dotnet/intro-to-dotnet-web-dev/raw/main/5-blazor/img/2-Board-Step1.png)
+   :::image type="content" source="../media/2-Board-Step1.png" alt-text="App board with title":::
 
    Congratulations! You've built your first component and used it on a Blazor page.
 
@@ -113,7 +113,7 @@ Let's start defining a game board with the seven columns and six rows. We add a 
 
 ### Styling the component
 
-Let's add some style to this component by defining some colors for the frame of the board and the players, just above the first `div` tag of our Board.razor file:
+Let's add some style to this component by defining some colors for the frame of the board and the players, above the first `div` tag of our Board.razor file:
 
     ```html
     <HeadContent>
@@ -134,7 +134,7 @@ Let's add some style to this component by defining some colors for the frame of 
 
     Next, we'll add a completed stylesheet for the game from the 0-start folder in this repository.
 
-1. Right-click in the Solution Explorer on the Shared folder and create a new CSS file called *Board.razor.css*. 
+1. Right-click in the Solution Explorer on the Shared folder and create a new CSS file called *Board.razor.css*.
 1. Copy the following content into the new *Board.razor.css* file:
 
    ```css
@@ -142,7 +142,7 @@ Let's add some style to this component by defining some colors for the frame of 
    ```
 
     > [!TIP]
-    > For convenience, you can also find this content in the [TODO Board.razor.css](0-start/Shared/Board.razor.css) file in this repository.
+    > For convenience, you can also find this content in the [TODO Board.razor.css](https://raw.githubusercontent.com/dotnet/intro-to-dotnet-web-dev/f203f0b24de8ebff8c052abbf6fb3dbf5bcaa8b2/5-blazor/0-start/Shared/Board.razor.css) file in this repository.
 
     Here's some of the CSS used to format the board and 'punch holes' for each of the spaces. There's more content available than displayed below, in the CSS file, and we use that for the game pieces and their animations on screen.
 
@@ -189,6 +189,6 @@ Let's add some style to this component by defining some colors for the frame of 
 
     Your browser should be refreshed for you (if not you can manually refresh the browser with F5), and you should be greeted with a proper yellow Connect Four board:
 
-   ![Alt text](https://github.com/dotnet/intro-to-dotnet-web-dev/raw/main/5-blazor/img/2-Board-Step2.png)
+   :::image type="content" source="../media/2-Board-Step2.png" alt-text="Yellow connect four board":::
 
    Congratulations, you now have the start of game. In later units, we add game logic to it.
