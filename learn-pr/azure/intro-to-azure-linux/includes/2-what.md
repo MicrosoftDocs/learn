@@ -1,10 +1,10 @@
-"Linux on Azure" broadly encompasses two different kinds of Azure support for Linux applications and workloads: **infrastructure as a service (IaaS)** and **platform as a service (PaaS)**. Let's explore exactly what those terms mean, and learn more about additional Azure services and features you can take advantage of regardless of how you use Linux on Azure.
+"Linux on Azure" broadly encompasses two different kinds of Azure support for Linux applications and workloads: **infrastructure as a service (IaaS)** and **platform as a service (PaaS)**. Let's explore exactly what those terms mean, and learn about more Azure services and features you can take advantage of. Regardless of how you use Linux on Azure.
 
 ## Linux infrastructure as a service (IaaS)
 
 With IaaS, you deploy your applications and workloads to virtual machines that run in Azure. These VMs are connected to each other and to the internet by virtual network infrastructure that you define and configure.
 
-You can provision and manage VMs on an individual basis, or as *virtual machine scale sets*: groups of identical VMs managed through a central configuration interface. With scale sets, you can distribute your workloads to achieve high availability, redundancy, load balancing, and manual and automatic elastic scale.
+You can provision and manage VMs on an individual basis, or as *Virtual Machine Scale Sets*: groups of identical VMs managed through a central configuration interface. With scale sets, you can distribute your workloads to achieve high availability, redundancy, load balancing, and manual and automatic elastic scale.
 
 Azure virtual machines support most common Linux distributions. Azure Marketplace has hundreds of preconfigured Linux disk images across many popular distributions, all of which include first-class Azure platform support. You can also create or migrate your own disk images, upload them to Azure, and create virtual machines from them.
 
@@ -18,17 +18,17 @@ The Linux-based managed platforms of Azure allow you to take advantage of the be
 
 If your organization uses a Linux-powered development workflow or runs production applications on Linux, you can often deploy or migrate applications to a managed Azure platform.
 
-## Additional Azure tools and services
+## More Azure tools and services
 
-Regardless of whether you use IaaS or PaaS, Azure tools and services offer a lot of additional value to Linux workloads beyond the standard cloud benefits of elasticity, agility, and reduced maintenance.
+Regardless of whether you use IaaS or PaaS, Azure tools and services offer more value to Linux workloads beyond the standard cloud benefits of elasticity, agility, and reduced maintenance.
 
 ### Azure Resource Manager
 
-Azure Resource Manager provides a standard interface and set of concepts for managing every kind of Azure service and platform. Manage all of your resources and workloads in a single, browser-based graphical experience with the Azure portal. Automate resource provisioning and management from the command line with Azure PowerShell and the Azure CLI, available locally and in the browser via the Azure Cloud Shell. Alternatively, you can do this from your own application code by using libraries available for most common languages. Use Azure Resource Manager templates and Azure Blueprints to perform configurable, repeatable deployments of cloud infrastructure. With broad compatibility for third-party tools, you can preserve your existing investments in tools like Ansible, Chef, Puppet, Terraform, and Packer.
+Azure Resource Manager provides a standard interface and set of concepts for managing every kind of Azure service and platform. Manage all of your resources and workloads in a single, browser-based graphical experience with the Azure portal. Automate resource provisioning and management from the command line with Azure PowerShell and the Azure CLI, available locally and in the browser via the Azure Cloud Shell. Alternatively, you can automate resource management from your own application code by using libraries available for most common languages. Use Azure Resource Manager templates and Azure Blueprints to perform configurable, repeatable deployments of cloud infrastructure. With broad compatibility for third-party tools, you can preserve your existing investments in tools like Ansible, Chef, Puppet, Terraform, and Packer.
 
 ### Azure storage services
 
-Get durable, scalable, web-accessible storage with the core Azure storage services: Azure Blob storage for unstructured cloud-native storage; Azure File storage for mountable file shares; and Azure Queue storage for reliable messaging between applications. Mountable disk storage for virtual machines is managed just like other cloud resources, and Linux images in Azure Marketplace have all the required drivers built in. Ultra disk storage provides industry-leading throughput and sub-millisecond latency.
+Get durable, scalable, web-accessible storage with the core Azure storage services: Azure Blob storage for unstructured cloud-native storage; Azure File storage for mountable file shares; and Azure Queue storage for reliable messaging between applications. Mountable disk storage for virtual machines is managed just like other cloud resources, and Linux images in Azure Marketplace have all the required drivers built in. Ultra disk storage provides industry-leading throughput and submillisecond latency.
 
 ### Azure virtual networking and network appliances
 
@@ -58,7 +58,7 @@ Build a secure foundation for your apps and workloads with security tools and ca
 
 ### Business continuity and disaster recovery
 
-Keep your data safe and your workloads online with an Azure-supported business continuity and disaster recovery strategy. Azure Backup creates encrypted snapshot backups of all of your VMs, and supports application consistency. This ensures that applications start up as expected after restoring a snapshot. Azure Site Recovery ensures that apps and workloads remain up and running during outages, by replicating VMs across geographical regions.
+Keep your data safe and your workloads online with an Azure-supported business continuity and disaster recovery strategy. Azure Backup creates encrypted snapshot backups of all of your VMs, and supports application consistency. This recovery strategy ensures that applications start up as expected after restoring a snapshot. Azure Site Recovery ensures that apps and workloads remain up and running during outages, by replicating VMs across geographical regions.
 
 ### Azure Migrate
 
