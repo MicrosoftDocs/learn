@@ -21464,6 +21464,11 @@
       "source_path": "learn-pr/wwl-data-ai/train-machine-learning-model-azure-databricks/6-knowledge-check.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/machine-learning-azure-databricks/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/train-machine-learning-model-azure-databricks/7-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/machine-learning-azure-databricks/",
+      "redirect_document_id": false
     }
   ]
 }
