@@ -1,6 +1,3 @@
-
-## What you can't measure, you can't change
-
 The Greenhouse Gas (GHG) protocol is the most commonly used method for organizations to measure their total carbon emissions. While software emissions can be calculated using this approach, it can be difficult. A better-suited calculation is the Software Carbon Intensity (SCI) calculation.
 
 ## Greenhouse Gas Protocol

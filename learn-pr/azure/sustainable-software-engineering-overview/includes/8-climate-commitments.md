@@ -1,6 +1,3 @@
-
-## Understand the exact mechanism of carbon reduction
-
 Over the years, many terms have been used interchangeably when discussing an approach to reduce emissions. It's essential to have a common understanding of these terms in order to be able to work towards an agreed goal.  
 
 ## Carbon reduction methodologies
