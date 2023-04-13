@@ -43,7 +43,7 @@ Let's now interpret the parameters and place their values in the CSS block at th
 
     This change shouldn't have changed anything in the appearance of our game board.
 
-    Let's head back to *Pages/Index.razor* and add some parameters to our "<Board>" tag and see how they change the game
+    Let's head back to *Pages/Index.razor* and add some parameters to our `<Board>` tag and see how they change the game
 
     ```csharp
     <Board 
