@@ -1,3 +1,4 @@
+
 The are advantages and limits to using the different Azure backup components. In this section, we compare the Microsoft Azure Recovery Services (MARS) backup agent and Microsoft Azure Backup Server, which uses the System Center DPM protection agent.
 
 The following table summarizes features and restrictions, and identifies what data is protected by the backup, and where the backups are stored in the configuration.

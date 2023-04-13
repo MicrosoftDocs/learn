@@ -2,7 +2,7 @@ Watch this video for an overview of serverless computing.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWAqjM]
 
-As mentioned in the video, serverless computing is a cloud-hosted execution environment that runs your code but abstracts the underlying hosting environment. The term *serverless computing* is a misnomer. After all, there *is* a server (or a group of servers) that executes your code or desired functionality.  
+As mentioned in the video, serverless computing is a cloud-hosted execution environment that runs your code but abstracts the underlying hosting environment. The term *serverless computing* is a misnomer. After all, there *is* a server (or a group of servers) that executes your code or desired functionality.
 
 The key idea is that you're not responsible for setting up or maintaining the server. You don't have to worry about scaling it when there's increased demand, and you don't have to worry about outages. The cloud vendor takes care of all maintenance and scaling concerns for you.
 
@@ -16,7 +16,7 @@ In this module, we'll cover two Azure serverless computing services: Azure Funct
 
 With the [Azure Functions](https://azure.microsoft.com/services/functions/?azure-portal=true) service, you can host a single method or function by using a popular programming language in the cloud that runs in response to an event. An example of an event might be an HTTP request, a new message on a queue, or a message on a timer.
 
-Because of its atomic nature, Azure Functions can serve many purposes in an application's design. Functions can be written in many common programming languages, such as C#, Python, JavaScript, Typescript, Java, and PowerShell.
+Because of its atomic nature, Azure Functions can serve many purposes in an application's design. Functions can be written in many common programming languages, such as C#, Python, JavaScript, TypeScript, Java, and PowerShell.
 
 Azure Functions scales automatically, and charges accrue only when a function is triggered. These qualities make Azure Functions a solid choice when demand is variable. For example, you might be receiving messages from an IoT solution that monitors a fleet of delivery vehicles. You'll likely have more data arriving during business hours. Azure Functions can scale out to accommodate these busier times.
 
@@ -38,6 +38,6 @@ If you can't find the action or connector you need, you can build your own by us
 
 ## What are the differences between these services?
 
-You can call Azure Functions from Azure Logic Apps, and vice versa.  The primary difference between the two services is their intent.  Azure Functions is a serverless compute service, and Azure Logic Apps is intended to be a serverless orchestration service.  Although you can use Azure Functions to orchestrate a long-running business process that involves various connections, this was not its primary use case when it was designed.
+You can call Azure Functions from Azure Logic Apps, and vice versa. The primary difference between the two services is their intent. Azure Functions is a serverless compute service, and Azure Logic Apps is intended to be a serverless orchestration service. Although you can use Azure Functions to orchestrate a long-running business process that involves various connections, this wasn't its primary use case when it was designed.
 
 Additionally, the two services are priced differently. Azure Functions pricing is based on the number of executions and the running time of each execution. Logic Apps pricing is based on the number of executions and the type of connectors that it utilizes.

@@ -6,11 +6,11 @@ You might even find that using a collections method replaces the need to, for ex
 
 Collections can be powerful and, ultimately, it's up to you what types of collections you use and how you use them.
 
-In this module, you'll learn about collection data structures, their APIs, and scenarios in which you might apply them.
+In this module, you learn about collection data structures, their APIs, and scenarios in which you might apply them.
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you:
 
 - Explore collection data structures.
 - Learn about the basic properties in a list structure.

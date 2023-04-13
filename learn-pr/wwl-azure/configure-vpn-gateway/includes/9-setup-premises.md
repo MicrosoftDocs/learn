@@ -1,3 +1,4 @@
+
 A validated list of standard VPN devices that work well with the VPN gateway is available for developers. The list was created in partnership with device manufacturers like Cisco, Juniper, Ubiquiti, and Barracuda Networks. 
 
 ### Things to know about configuring your VPN device

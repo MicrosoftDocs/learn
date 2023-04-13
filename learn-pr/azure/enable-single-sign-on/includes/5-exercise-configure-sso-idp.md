@@ -34,7 +34,7 @@ In this module, we're using Azure AD as the identity provider in the single sign
 
 ## Add a claim
 
-The administrator at the retail company knows that the application relies on the department of the employee to appropriately share information. To add a `department` claim to the token:
+The administrator at the commercial bank knows that the application relies on the department of the employee to appropriately share information. To add a `department` claim to the token:
 
 1. On the **Single sign-on** page, select **Edit** in the **Attributes & Claims** box.
 1. On the **Attributes & Claims** pane, select **Add new claim**.

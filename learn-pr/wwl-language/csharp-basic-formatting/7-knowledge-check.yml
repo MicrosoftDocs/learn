@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-basic-formatting.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/13/2023
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+quiz:
+  title: ""
+  questions:
+  - content: "Which of the following escape sequences should be used to add double quotes to a literal string in C# code?"
+    choices:
+    - content: "'`\\q`'"
+      isCorrect: false
+      explanation: "Incorrect. \\q isn't a valid escape sequence."
+    - content: "'`\\'`'"
+      isCorrect: false
+      explanation: "Incorrect. \\' is the escape sequence for a single quote, not a double quote."
+    - content: "'`\\\"`'"
+      isCorrect: true
+      explanation: "Correct. Correct, `\\\"` will display double quotes!"
+  - content: "Which of the following lines of code correctly uses string interpolation assuming that the variable `value` is a string?"
+    choices:
+    - content: "'`Console.WriteLine(@\"My value: {value}\");`'"
+      isCorrect: false
+      explanation: "Incorrect. This line uses the at `@` symbol instead of the dollar `$` symbol as the prefix for string interpolation."
+    - content: "'`Console.WriteLine($\"My value: {value}\");`'"
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "'`Console.WriteLine(@\"My value: [value]\");`'"
+      isCorrect: false
+      explanation: "Incorrect. This line uses the at `@` symbol instead of the dollar `$` symbol, and square brackets instead of curly braces for the interpolation expression."
+  - content: "Unicode characters where embedded in the C# strings for a console application to present a greeting message in Thai. However, the message is only displayed as question mark characters.  What is a possible cause?"
+    choices:
+    - content: "A missing \\u escape sequence for Unicode characters."
+      isCorrect: false
+      explanation: "Incorrect. If the \\u escape sequence for Unicode characters are not used, only numbers will appear, question marks won't be displayed."
+    - content: "The wrong Unicode characters were used."
+      isCorrect: false
+      explanation: "Incorrect. This is unlikely.  It would only be true if all the Unicode characters were the same value representing a question mark--\\u003F."
+    - content: "The user's console doesn't support Unicode characters."
+      isCorrect: true
+      explanation: "Correct.Correct!"
+  - content: "Which of the following lines of code append a single `\\` to the string `directory`?"
+    choices:
+    - content: "'`directory = directory + \"\\\";`'"
+      isCorrect: false
+      explanation: "Incorrect. This line escapes the `\"` character and results in an error."
+    - content: "'`directory = directory + '\\';`'"
+      isCorrect: false
+      explanation: "Incorrect. This line escapes the `'` character and results in an error."
+    - content: "'`directory = directory + @\"\\\";`'"
+      isCorrect: true
+      explanation: "Correct. The `@` symbol creates a verbatim string where it is unnecessary to escape the `\\`."

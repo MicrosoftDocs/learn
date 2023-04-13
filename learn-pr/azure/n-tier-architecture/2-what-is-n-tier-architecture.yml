@@ -15,26 +15,26 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'A three-tier application needs to be updated to integrate with a partner API. Which layer should this functionality be added to?'
+  - content: 'You need to update a three-tier application to integrate with a partner API. Which layer should you add this functionality to?'
     choices:
-    - content: 'Presentation tier'
+    - content: Presentation tier
       isCorrect: false
-      explanation: 'Responsibilities of this tier should focus on how the application is served to the user.'
-    - content: 'Application tier'
+      explanation: This tier should focus its responsibilities on serving the application to the user.
+    - content: Application tier
       isCorrect: true
-      explanation: 'API calls to other systems are best located in the application tier, where returned data can be easily integrated with new or existing business logic.'
-    - content: 'Data tier'
+      explanation: The application tier is the best place  to locate API calls to other systems. You can more easily integrate data returned by the API with new or existing business logic.
+    - content: Data tier
       isCorrect: false
-      explanation: 'The data tier focuses on the storage of data. Adding integration with an API is not best placed on this tier of the application.'
+      explanation: The data tier focuses on the storage of data. This tier of the application isn't the best place to add integration with an API.
 
   - content: 'On which layer is it acceptable to allow access to users?'
     choices:
-    - content: 'Presentation tier'
+    - content: Presentation tier
       isCorrect: true
-      explanation: 'This tier handles the interaction with the end user, and should be the tier accessed by the end user. '
-    - content: 'Application tier'
+      explanation: This tier handles the interaction with the end user, and should be the tier accessed by the end user.
+    - content: Application tier
       isCorrect: false
-      explanation: 'This tier contains business logic, data processing, and other potentially sensitive details and should not be exposed to end users. '
-    - content: 'Data tier'
+      explanation: This tier contains business logic, data processing, and other potentially sensitive details. You shouldn't expose this tier to end users.
+    - content: Data tier
       isCorrect: false
-      explanation: 'The data tier handles the storage of data and should never be exposed directly to users. Consumers of data should use capabilities provided by higher tiers.'
+      explanation: The data tier handles the storage of data. You should never expose the data tier directly to users. Consumers of data should use capabilities provided by higher tiers.

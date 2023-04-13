@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-azure-active-directory-identities.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/10/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "To connect to Azure AD using the Windows PowerShell command-line interface, what command should you run?"
+    choices:
+    - content: "Connect-MsolService"
+      isCorrect: true
+      explanation: "Correct. This command connects with an authenticated account using Active Directory cmdlet requests."
+    - content: "Get-AzureADUser -ObjectId \"YourUserName@tenant.com\""
+      isCorrect: false
+      explanation: "Incorrect. This command returns a specific user. Try again."
+    - content: "Set-AzureADUser -ObjectId YourUserName@example.com -Displayname $user.Displayname"
+      isCorrect: false
+      explanation: "Incorrect. This command updates a user's property with the specific attributes. Try again."
+  - content: "What are the two types of memberships reserved for a person in a cloud-based group?"
+    choices:
+    - content: "Security or Dynamic"
+      isCorrect: false
+      explanation: "Incorrect. Security is a group type in the Azure AD, but not a membership type. Try again."
+    - content: "Assigned or Dynamic"
+      isCorrect: true
+      explanation: "Correct. Members with an Assigned membership are manually added or removed. Members with a Dynamic membership are based on a query using Azure AD objects."
+    - content: "Assigned or Distribution"
+      isCorrect: false
+      explanation: "Incorrect. Distribution is a group type in Azure AD, but not a membership type. Try again."

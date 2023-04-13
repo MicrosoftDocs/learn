@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/17/2022
+  ms.date: 02/22/2023
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -21,10 +21,10 @@ quiz:
     choices:
     - content: "Reasonable"
       isCorrect: false
-      explanation: "Incorrect. Reasonable is not a configuration option."
+      explanation: "Incorrect. Reasonable isn't a configuration option."
     - content: "Maximum"
       isCorrect: false
-      explanation: "Incorrect. Maximum is not a configuration option."
+      explanation: "Incorrect. Maximum isn't a configuration option."
     - content: "Minimal"
       isCorrect: true
       explanation: "Correct. Minimal is a configuration option."
@@ -35,7 +35,7 @@ quiz:
       explanation: "Correct.  You need to install the Log Analytics Agent."
     - content: "Sysmon"
       isCorrect: false
-      explanation: "Incorrect.  Sysmon is not related to provisioning."
+      explanation: "Incorrect.  Sysmon isn't related to provisioning."
     - content: "Windows Firewall"
       isCorrect: false
       explanation: "Incorrect.  Windows Firewall is already installed on a Windows VM"
@@ -46,7 +46,7 @@ quiz:
       explanation: "Correct.  Policy Add-on for Kubernetes is an extension."
     - content: "Windows Events"
       isCorrect: false
-      explanation: "Incorrect.  Windows Events is not an extension."
+      explanation: "Incorrect.  Windows Events isn't an extension."
     - content: "Policy for Azure Policy"
       isCorrect: false
-      explanation: "Incorrect.  Policy for Azure Policy is not an extension."
+      explanation: "Incorrect.  Policy for Azure Policy isn't an extension."

@@ -1,16 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.azure-sentinel.enable-azure-sentinel
-title: Enable Microsoft Sentinel
+title: Enable Azure Sentinel
 metadata:
-  title: Enable Microsoft Sentinel
-  description: "Enable Microsoft Sentinel"
-  ms.date: 01/07/2022
+  title: Enable Azure Sentinel
+  description: "Enable Azure Sentinel"
+  ms.date: 02/24/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  zone_pivot_groups: None
 durationInMinutes: 5
 content: |
   [!include[](includes/2-enable-azure-sentinel.md)]

@@ -145,7 +145,7 @@ public InputStream read(String name) {
     az appservice plan create \
     --name blob-exercise-plan \
     --resource-group <rgn>[sandbox resource group name]</rgn> \
-    --sku FREE --location centralus
+    --sku FREE --location eastus
     ```
 
     ```azurecli
@@ -257,7 +257,7 @@ Your app is finished, so let's deploy it and see it work. We'll use the Maven Pl
     ```azurecli
     export AZ_SUBSCRIPTION_ID=$(az account show --query id --output tsv)
     export AZ_RESOURCE_GROUP=<rgn>[sandbox resource group name]</rgn>
-    export AZ_REGION=centralus
+    export AZ_REGION=eastus
     export AZ_APP_NAME=<your-unique-app-name>
     export AZ_PRICING_TIER=F1
     export AZ_STORAGE_CONNECTION_STRING=$(az storage account show-connection-string --name <your-unique-storage-account-name> --output tsv)

@@ -5,8 +5,8 @@ metadata:
   title: Introduction
   description: Introduction to the module.
   ms.date: 09/09/2020
-  author: KittyYeungQ
-  ms.author: kitty
+  author: bradben
+  ms.author: brbenefield
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1

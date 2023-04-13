@@ -11,7 +11,7 @@ Blackjack players typically are dealt face cards called Jack, Queen, King, and A
     cd Cards
     ```
 
-1. Open the *Program.fs* file. Replace the contents with the following code:
+1. Open the *Program.fs* file. Replace the contents with the following code. Remember, indentation is important in F#.
 
    ```fsharp
    let cardNo = 12

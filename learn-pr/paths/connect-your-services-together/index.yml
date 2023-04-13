@@ -4,14 +4,14 @@ metadata:
   title: Connect your services together learning path
   description: Use Azure to create website front-ends, back-end services, and triggered functions that compute-on-demand and can also communicate with each other.
   brand: azure
-  ms.date: 09/24/2018
+  ms.date: 04/04/2023
   author: adrianstevens
   ms.author: adsteven
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Connect your services together
 summary: |
-  Azure lets you create applications composed of various components: web site front-ends, back-end services, and triggered functions that perform compute-on-demand services. Azure also includes various communication strategies to let these various components pass data to each other. Learn how to leverage these communication services to create scalable, efficient solutions out of testable components. This learning path can help you prepare for the [Microsoft Certified: Azure Developer Associate certification](/certifications/azure-developer).
+  Azure lets you create applications composed of various components: web site front-ends, back-end services, and triggered functions that perform compute-on-demand services. Azure also includes various communication strategies to let these various components pass data to each other. Learn how to use these communication services to create scalable, efficient solutions out of testable components. This learning path can help you prepare for the [Microsoft Certified: Azure Developer Associate certification](/certifications/azure-developer).
 prerequisites: None 
 iconUrl: /training/achievements/connect-your-services-together.svg
 levels: 

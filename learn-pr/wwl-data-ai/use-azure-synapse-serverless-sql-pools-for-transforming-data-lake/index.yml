@@ -3,7 +3,7 @@ uid: learn.wwl.use-azure-synapse-serverless-sql-pools-for-transforming-data-lake
 metadata:
   title: Use Azure Synapse serverless SQL pools to transform data in a data lake
   description: "Use Azure Synapse serverless SQL pools to transform data in a data lake"
-  ms.date: 08/02/2022
+  ms.date: 03/02/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial

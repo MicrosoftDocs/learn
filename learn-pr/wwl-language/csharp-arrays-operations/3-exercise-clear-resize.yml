@@ -1,0 +1,28 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-arrays-operations.exercise-clear-resize
+title: Exercise - Explore Clear() and Resize()
+metadata:
+  title: Exercise - Explore Clear() and Resize()
+  description: "Exercise - Explore Clear() and Resize()"
+  ms.date: 02/25/2023
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+content: |
+  [!include[](includes/3-exercise-clear-resize.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What best describes the code `Array.Clear(pallets, 0, 2);` where `pallets` is a `string` array?"
+    choices:
+    - content: "`Array.Clear(pallets, 0, 2);` removes `2` array elements starting from item `0`."
+      isCorrect: true
+      explanation: "Correct. `Clear` is a method of arrays that removes (replaces with `Null`) specific elements in an array."
+    - content: "`Array.Clear(pallets, 0, 2);` removes the data from array element locations `pallets[0]` and `pallets[2]`."
+      isCorrect: false
+      explanation: "Incorrect. `Clear` is a method of arrays that removes (replaces with `Null`) specific elements in an array."
+    - content: "`Array.Clear(pallets, 0, 2);` removes array elements that are equal to `0` or `2`."
+      isCorrect: false
+      explanation: "Incorrect. `Clear` is a method of arrays that removes (replaces with `Null`) specific elements in an array."

@@ -10,7 +10,6 @@ Azure Private 5G Core allows you to divide a private mobile network into multipl
 
 You can create new slices when you set up a private mobile network or modify existing slices after the network setup.
 
-<!-- Need to verify the instructions before publication -->
 For each slice, you need to configure the following fields:
 
 - Slice name: The name of the slice.
@@ -50,7 +49,7 @@ To add or modify a slice for an existing private mobile network, take these step
 > - Network slices are only supported in 5G networks. For 4G networks, all UEs are assigned to the slice with an SST value of 1 and no SD.
 > - You can't delete a slice that is currently used by other components.
 
-For detailed instructions on configuring network slices, see relevant information in the [Azure Private 5G Core documentation](/azure/private-5g-core/).
+For detailed instructions on configuring network slices, see [Create and manage network slices - Azure portal](/azure/private-5g-core/create-manage-network-slices) and [Create a slice using an ARM template](/azure/private-5g-core/create-slice-arm-template).
 
 ## Modify the packet core instance in a site
 
@@ -75,6 +74,23 @@ To modify the packet core instance in a site, take these steps:
    The [Collect the required information for a site](/azure/private-5g-core/collect-required-information-for-a-site) article provides detailed information about each field.
 
 For detailed instructions, see [Modify the packet core instance in a site](/azure/private-5g-core/modify-packet-core).
+
+## Modify a site plan
+
+For a site, the *site plan* determines the following information:
+
+- The throughput and the number of radio access network (RAN) connections.
+- The number of devices that each network supports.
+
+You may need to update the site plan if your deployment requirements change.
+
+To modify the site plan for a site, take these steps:
+
+1. Open the **Mobile Network Site** resource that represents the site through the Azure portal.
+1. Select **Overview**, and then select **Change Plan**.
+1. Select the new site plan you want to use.
+
+For detailed instructions, see [Modify a site plan](/azure/private-5g-core/modify-site-plan).
 
 ## Decommission a site
 

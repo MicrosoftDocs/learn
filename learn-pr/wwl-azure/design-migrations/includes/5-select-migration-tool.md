@@ -4,7 +4,7 @@ After you assess Tailwind Traders on-premises workloads, you can begin to consid
 
 As we reviewed in the previous unit, Azure Migrate is a set of features located in a centralized hub that you can use to assess and migrate different workloads to Azure. You can use Azure Migrate to perform the migration of workloads, including applications and virtual machines. Workloads that can be migrated to Microsoft Azure include on-premises servers, infrastructure, applications, and data.
 
-:::image type="content" source="../media/discover-assess.png" alt-text="Screenshot that shows Azure Migrate: Discovery and assessment tools.":::
+:::image type="content" source="../media/discover-assess.png" alt-text="Screenshot that shows Azure Migrate: Discovery and assessment tools." border="false":::
 
 ### Things to know about Azure Migrate and migration
 
@@ -29,7 +29,6 @@ Azure Migrate includes the following components to support the migration process
    | Azure Migrate: Server Migration | Migrate servers |
    | SQL Server Data Migration Assistant (DMA) | Assess SQL Server databases for migration to Azure SQL Database, Azure SQL Managed Instance, or Azure virtual machines running SQL Server |
    | Azure Database Migration Service | Migrate on-premises databases to Azure virtual machines running SQL Server, Azure SQL Database, or SQL Managed Instances |
-   | Movere | Assess servers |
    | Web app migration assistant | Assess on-premises web apps and migrate them to Azure |
    | Azure Data Box | Migrate offline data |
 
@@ -81,13 +80,12 @@ Azure Resource Mover is a tool that helps move your Azure resources between subs
 - Automatic clean-up of resources in the source region.
 - The ability to test a move operation before you commit it.
 
-:::image type="content" source="../media/resource-mover.png" alt-text="Screenshot that shows a migration with Azure Resource Mover." border="false":::
-
 ### Things to consider when migrating with Azure Resource Mover
 
 You can use Azure Resource Mover in two ways:
 
 - **Before you migrate**, to organize your resources.
+
 - **After you migrate**, to optimize your resource organization. 
 
 > [!Tip]

@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-for.exercise-for
+title: Exercise - Create and configure for iteration loops
+metadata:
+  title: Exercise - Create and configure for iteration loops
+  description: "Exercise - Create and configure for iteration loops"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 14
+content: |
+  [!include[](includes/2-exercise-for.md)]
+quiz:
+  title: "Knowledge check"
+  questions:
+  - content: "Which of the following `for` statements is correct?"
+    choices:
+    - content: "`for (int x = 20: x < 80: x++)`"
+      isCorrect: false
+      explanation: "Incorrect. A colon cannot be used as an end of statement operator."
+    - content: "`for (int j = 0; j < 80; j + 1)`"
+      isCorrect: false
+      explanation: "Incorrect. The iterator section `j + 1` causes a compilation error."
+    - content: "`for (int counter = 20; counter < 80; counter++)`"
+      isCorrect: true
+      explanation: "Correct!"
+  - content: "Which of the following statements should be used to exit out of a `for` loop before the iteration has completed?"
+    choices:
+    - content: "`exit;`"
+      isCorrect: false
+      explanation: "Incorrect. The word \"exit\" is not a keyword in C#."
+    - content: "`break;`"
+      isCorrect: true
+      explanation: "Correct! The `break` keyword can be used to jump out of a `for` loop when a desired condition is met."
+    - content: "`return;`"
+      isCorrect: false
+      explanation: "Incorrect. The `return` keyword would exit out of the entire method."

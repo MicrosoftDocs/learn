@@ -14,7 +14,7 @@ Let's reconsider our design for the Tailwind Traders product demo application, a
 
 - Events are distributed to handlers like Azure Functions and Azure DevOps Webhooks.
 
-- The service manages the routing and delivery of events from many sources and subscribers eliminates, which helps to minimize cost and latency by eliminating the need for polling. 
+- The service manages the routing and delivery of events from many sources. The management helps to minimize cost and latency by eliminating the need for polling. 
 
 #### How Azure Event Grid works
 

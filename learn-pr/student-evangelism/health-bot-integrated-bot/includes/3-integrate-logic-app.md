@@ -1,4 +1,4 @@
-In this unit, we'll use Azure Logic Apps to connect our database to the healthcare bot.
+In this unit, we use Azure Logic Apps to connect our database to the healthcare bot.
 
 Azure Logic Apps is a cloud-based platform for creating and running automated workflows. These workflows can integrate your apps, data, services, and systems.
 
@@ -14,26 +14,26 @@ To begin, go to the [Azure portal](https://portal.azure.com/#home).
 
 1. Select the **Create** button.
 
-1. On the page that appears, fill in the required fields.
+1. On the page that appears, fill in the required fields. All other fields can be left as the default.
 
-   :::image type="content" source="../media/3-provision-logic-app.png" alt-text="Screenshot showing how to provision a logic app." lightbox="../media/3-provision-logic-app.png":::
+   :::image type="content" source="../media/3-provision-logic-app.png" alt-text="Screenshot showing how to create a logic app." lightbox="../media/3-provision-logic-app.png":::
 
     - **Subscription**: Select your subscription.
 
     - **Resource group**: Select **Create new** and enter a unique name for the resource group, such as *Healthbot*. Then select **OK**.
 
-    - **Type**: Select **Standard**.
+    - **Plan type**: Select **Standard**.
 
     - **Logic App name**: Choose a unique name, such as *healthbotlearn*.
 
     - **Publish**: Select **Workflow**.
 
-    - **Region**: Select any region. We'll use **Central US**.
+    - **Region**: Select any region. We used **Central US**.
 
    > [!Note]
    > Before you select **Review + create** in the next step, you can select **Next: Hosting** to see other details.
 
-1. Select **Review + create** to create and deploy the logic app.  
+1. Select **Review + create**, and then **Create** to deploy the logic app.  
 
 1. Select **Go to resource**.
 
@@ -45,7 +45,7 @@ To begin, go to the [Azure portal](https://portal.azure.com/#home).
 
 1. Select **Add**.
 
-1. Name the workflow. We'll name our workflow *healthbot-post*. Select the state type as **Stateful**. Then select **Create**.
+1. Name the workflow. We named our workflow *healthbot-post*. Select the state type as **Stateful**. Then select **Create**.
 
 1. Select the workflow name to open it.
 
@@ -53,20 +53,20 @@ To begin, go to the [Azure portal](https://portal.azure.com/#home).
 
    :::image type="content" source="../media/3-http-request.png" alt-text="Screenshot showing the workflow designer. The selection on the right is labeled, 'When a H T T P response is received.'" lightbox="../media/3-http-request.png":::
 
-1. Choose an operation. Then, in the search bar, search for and select **When a HTTP request is received**.
+1. In the search bar, search for and select **When a HTTP request is received**.
 
-1. Select **Method** > **POST**.
+1. In the **Add new parameter** drop-down, select **Method**, and then select **POST**.
 
    :::image type="content" source="../media/3-http-post-method.png" alt-text="Screenshot showing the selection of the H T T P POST method." lightbox="../media/3-http-post-method.png":::
 
-1. Copy the HTTP POST URL and save it for future reference.
+1. Select **Save**, and then copy the HTTP POST URL and save it for future reference.
 
    :::image type="content" source="../media/3-post-url.png" alt-text="Screenshot showing the generated H T T P POST U R L." lightbox="../media/3-post-url.png":::
 
 1. For the request body JSON schema, use the following code:
 
    ```json
-   "'{
+   {
     "properties": {
         "Age": {
             "type": "string"
@@ -95,12 +95,12 @@ To begin, go to the [Azure portal](https://portal.azure.com/#home).
 
 1. Fill the table by using the following information:
 
-    - **Connection name**: Name your connection. We'll use *healthbot-vitals*.
+    - **Connection name**: Name your connection. We used *healthbot-vitals*.
     - **Authentication Type**: Select **SQL Server Authentication**.
-    - **SQL server name**: Paste the name for the SQL server you created. You'll find it listed on the **Essentials** pane.
+    - **SQL server name**: Paste the name for the SQL server you created. You can find it listed on the **Essentials** pane.
     - **SQL database name**: Paste your database name, such as *healthbot*.
-    - **Username**: Provide the username you used to log in to the query editor. We used *learnbot*.
-    - **Password**: Provide the password you used to log in to the query editor. We used *healthbot@123*.
+    - **Username**: Provide the username you used to sign in to the query editor. We used *learnbot*.
+    - **Password**: Provide the password you used to sign in to the query editor. We used *healthbot@123*.
 
 1. Select the gateway if you already have one. Otherwise, select [**Install gateway**](/azure/logic-apps/logic-apps-gateway-install).
 
@@ -136,7 +136,7 @@ To begin, go to the [Azure portal](https://portal.azure.com/#home).
 
    :::image type="content" source="../media/3-response-config.png" alt-text="Screenshot showing the H T T P response configuration." lightbox="../media/3-response-config.png":::
 
-1. On the left, select **Overview** > **Run with payload**.
+1. On the left, select **Overview** > **Run Trigger** > **Run with payload**.
 
    :::image type="content" source="../media/3-run-payload.png" alt-text="Screenshot showing the Run with payload pane." lightbox="../media/3-run-payload.png":::
 
@@ -149,7 +149,7 @@ To begin, go to the [Azure portal](https://portal.azure.com/#home).
 
 ## Set up the logic app for the GET method
 
-We'll now use the logic app to create a workflow for the GET method. This setup will allow us to retrieve data from the database and display it.
+Now we use the logic app to create a workflow for the GET method. This setup allows us to retrieve data from the database and display it.
 
 1. On the **Workflows** page, select **Add** to add a new workflow.
 
@@ -159,45 +159,21 @@ We'll now use the logic app to create a workflow for the GET method. This setup 
 
 1. Select **Create**.
 
-1. After the workflow is created, on the left, under **Developer**, select **Designer**.
+1. After the workflow is created, under **Developer**, select **Designer**.
 
    :::image type="content" source="../media/3-logic-app-designer.png" alt-text="Screenshot showing the logic app designer." lightbox="../media/3-logic-app-designer.png":::
 
-1. Select **Add a new action**. 
+1. Select **Add a new action**.
 
 1. Search for *HTTP request* and then select **When a HTTP request is received**.
 
-1. Note down the HTTP GET URL. We'll need it later to run the workflow.
+1. In the **Add new parameter** drop-down, select **Method**, and then select **GET**.
 
    :::image type="content" source="../media/3-get-method.png" alt-text="Screenshot showing how to add the GET method." lightbox="../media/3-get-method.png":::
 
-1. Select **Method** > **GET**.
+1. Select **Save**. Note the HTTP GET URL. We're going to need it later to run the workflow.
 
-1. Add a new action and then search for *SQL query*.
-
-   :::image type="content" source="../media/3-execute-sql-query.png" alt-text="Screenshot showing how to run a SQL query." lightbox="../media/3-execute-sql-query.png":::
-
-1. Give the connection a unique name. You can copy the connection string from the SQL database.
-
-   :::image type="content" source="../media/3-execute-query-connection.png" alt-text="Screenshot showing how to search for the Execute Query selection." lightbox="../media/3-execute-query-connection.png":::
-
-1. To get the connection string, in the Azure portal, select the SQL database you created.
-
-   :::image type="content" source="../media/3-sql-database.png" alt-text="Screenshot showing a selected SQL database in the Azure portal." lightbox="../media/3-sql-database.png":::
-
-1. On the left, under **Settings**, select **Connection strings**.
-
-1. Under **ADO.NET**, copy the string under **ADO.NET (SQL authentication)**.
-
-   :::image type="content" source="../media/3-ado-net.png" alt-text="Screenshot showing the A D O dot NET key." lightbox="../media/3-ado-net.png":::
-
-1. In the **Execute Query** pane, paste the string in the **Connection String** field. Then select **Create**.
-
-   :::image type="content" source="../media/3-query-parameters.png" alt-text="Screenshot showing the query parameters for the connection." lightbox="../media/3-query-parameters.png":::
-
-1. In the **Query** field, enter *SQL Query*.
-
-1. Select **Add new parameter** > **Query parameters**. Then select the small table icon next to the query parameters.
+1. Add a new action, select the **Azure** tab, search for and then select **Execute a SQL Query (V2)**.
 
    :::image type="content" source="../media/3-sql-query.png" alt-text="Screenshot showing parameter selections for the SQL query." lightbox="../media/3-sql-query.png":::
 
@@ -220,7 +196,7 @@ We'll now use the logic app to create a workflow for the GET method. This setup 
 
    :::image type="content" source="../media/3-http-response-block.png" alt-text="Screenshot showing parameters for the H T T P response." lightbox="../media/3-http-response-block.png":::
 
-After you've added the three components (HTTP request, Execute SQL query, and Response), select **Save**. 
+After you've added the three components (HTTP request, Execute SQL query, and Response), select **Save**.
 
 :::image type="content" source="../media/3-final-get.png" alt-text="Screenshot showing the three added components in the logic app designer." lightbox="../media/3-final-get.png":::
 

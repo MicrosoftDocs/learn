@@ -5,7 +5,7 @@ metadata:
   description: "Create and manage sensitive information types"
   ms.date: 06/14/2022
   author: wwlpublish
-  ms.author: bneeb
+  ms.author: riswinto
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
 title: Create and manage sensitive information types
@@ -27,6 +27,7 @@ roles:
 - ip-admin
 - risk-practitioner
 products:
+- microsoft-purview
 - m365
 - m365-information-protection
 subjects:

@@ -24,6 +24,8 @@ roles:
 products:
 - azure
 - microsoft-sentinel
+- github
+- azure-devops
 subjects:
 - security
 units:

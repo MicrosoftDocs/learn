@@ -55,7 +55,7 @@ quiz:
       explanation: "Incorrect. The Diagnose and solve problems option, on the Overview page, helps with troubleshooting but is not intended for metrics evaluation."
     - content: "Select the chart, which opens it in the Metrics Explorer."
       isCorrect: true
-      explanation: "Correct. Selecting a chart in the overview page allows you to drill into logs, change the chart type, and view the data parameters."
+      explanation: "Correct. Selecting a chart in the Overview page allows you to drill into logs, change the chart type, and view the data parameters."
     - content: "Use the Log stream."
       isCorrect: false
       explanation: "Incorrect. The Log stream option, under Monitoring, is used for a Live Log Stream, which is displayed in a console window.  It does not drill down into the charts."

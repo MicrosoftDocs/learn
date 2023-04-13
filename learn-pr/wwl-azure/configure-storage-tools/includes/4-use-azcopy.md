@@ -10,7 +10,7 @@ Let's look at some of the characteristics of the AzCopy tool.
 
 - AzCopy automatically retries a transfer when a failure occurs.
 
-- When you use Azure Blob Storage, AzCopy lets you copy an entire account to another account with the `Put` command from URL APIs. No data transfer to the client is needed.
+- When you use Azure Blob Storage, AzCopy lets you copy an entire account to another account. No data transfer to the client is needed.
 
 - AzCopy supports Azure Data Lake Storage Gen2 APIs.
 

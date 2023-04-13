@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.challenge-project-create-mini-game.exercise-make-player-consume-food
+title: Exercise - Make the player consume food
+metadata:
+  title: Exercise - Make the player consume food
+  description: "Exercise - Make the player consume food"
+  ms.date: 03/22/2023
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-exercise-make-player-consume-food.md)]

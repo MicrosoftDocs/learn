@@ -34,7 +34,7 @@ quiz:
         - content: Create a new custom scenario and build the scenario logic using the built-in symptom checker and handoff scenarios.
           isCorrect: false
           explanation: Scenario templates enable you to quickly build your own custom scenarios. The *triage and handoff* scenario template extends the built-in symptom checker and transitions the conversations to a live nurse.
-        - content: Import the *triage and handoff* scenario template in the health bot instance and customize the flow by using the **Designer** visual interface or code.
+        - content: Import the *triage and handoff* scenario template in the health bot instance and customize the flow by using the **Editor** visual interface.
           isCorrect: true
           explanation: Scenario templates enable you to quickly build your own custom scenarios. The *triage and handoff* scenario template extends the built-in symptom checker and transitions the conversations to a live nurse.
     - content: Which of the following statements is true about the triage and handoff template?

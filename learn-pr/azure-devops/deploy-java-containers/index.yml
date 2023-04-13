@@ -17,6 +17,7 @@ abstract: |
   - Create a project in Azure Pipelines that builds and deploys a basic Java application to Azure
   - Trigger the pipeline and see your application be built and deployed to Azure
 prerequisites: |
+  - An Azure DevOps organization with access to **Microsoft-hosted** parallel jobs. [Check your parallel jobs and request a free grant](/azure/devops/pipelines/troubleshooting/troubleshooting#check-for-available-parallel-jobs).
   - An Azure subscription
   - An Azure DevOps organization
   - A GitHub account

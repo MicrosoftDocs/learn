@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-log-analytics.create-workspace
-title: Create a workspace
+title: Create a Log Analytics workspace
 metadata:
-  title: Create a workspace
-  description: "Create a workspace"
-  ms.date: 11/18/2022
+  title: Create a Log Analytics workspace
+  description: "Create a Log Analytics workspace in the Azure portal."
+  ms.date: 02/28/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 3
+durationInMinutes: 2
 content: |
   [!include[](includes/3-create-workspace.md)]

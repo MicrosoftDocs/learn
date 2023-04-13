@@ -1,16 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-network-watcher.describe-features
-title: Describe Network Watcher features
+title: Describe Azure Network Watcher features
 metadata:
-  title: Describe Network Watcher features
-  description: "Describe Network Watcher features"
-  ms.date: 10/12/2021
+  title: Describe Azure Network Watcher features
+  description: "Describe Azure Network Watcher features"
+  ms.date: 04/06/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 3
+durationInMinutes: 4
 content: |
   [!include[](includes/2-describe-features.md)]

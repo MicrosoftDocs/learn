@@ -18,7 +18,7 @@ Benefits:
 - Security improvements
 
 Limitations:
-- Not compatible with Microsoft Defender for Cloud
+- The Azure Monitor Agent is released in preview and is supported with the CSPM plan and Microsoft Defender for Servers Plan 2.
 
 Requirements:
 - non-Azure VM's/devices require Azure Arc.

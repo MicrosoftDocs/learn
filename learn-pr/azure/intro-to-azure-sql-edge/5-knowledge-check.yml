@@ -5,8 +5,8 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: Knowledge check
-  ms.date: 03/26/2021  
-  author: rwestmsft
+  ms.date: 02/27/2023
+  author: rwestMSFT
   ms.author: randolphwest 
   manager: jroth 
   ms.topic: interactive-tutorial 
@@ -26,7 +26,7 @@ quiz:
       explanation: "Incorrect. Classification helps you comply with security regulations by allowing data to be categorized by sensitivity and business impact."
     - content: "Always Encrypted."
       isCorrect: true
-      explanation: "Correct. Always Encrypted provides a separation between those who own the data and those who manage it."
+      explanation: "Correct. Always Encrypted provides a separation between people who own the data and people who manage it."
   - content: "When considering whether to deploy Azure SQL Edge to the edge, which of the following criteria relate to developers' skills?"
     choices:
     - content: "Latency."
@@ -60,7 +60,7 @@ quiz:
     - content: "A Linux OS."
       isCorrect: false
       explanation: "Incorrect. This doesn't enable you to orchestrate your devices. However, you can choose Linux as the host for your container."
-  - content: "A developer in an automotive company is designing an application that will work with IoT sensors in a company's vehicles. It's important that the app can make decisions quickly, based on sensor data, without needing to connect to the internet. How could Azure SQL Edge help this developer address this requirement?"
+  - content: "A developer in an automotive company is designing an application that works with IoT sensors in a company's vehicles. It's important that the app can make decisions quickly, based on sensor data, without needing to connect to the internet. How could Azure SQL Edge help this developer address this requirement?"
     choices:
     - content: "Azure SQL Edge provides a local database, minimizing latency."
       isCorrect: false

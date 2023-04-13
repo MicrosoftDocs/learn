@@ -3,7 +3,7 @@ uid: learn.health-bot-language-understanding
 metadata:
   title: Language understanding in Azure Health Bot
   description: Language Understanding plays a fundamental role in the working of Azure Health Bot. 
-  ms.date: 07/27/2021
+  ms.date: 03/10/2023
   author: nrd26
   ms.author: chnoring
   ms.topic: interactive-tutorial
@@ -23,7 +23,7 @@ roles:
   - developer
   - student
 products:
-  - vs
+  - azure
 prerequisites: |
  - Introduction to Azure Health Bot
  - Basic Azure Health Bot

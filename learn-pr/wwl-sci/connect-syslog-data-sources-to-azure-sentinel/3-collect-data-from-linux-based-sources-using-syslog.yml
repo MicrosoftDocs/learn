@@ -6,7 +6,7 @@ metadata:
   description: "Collect data from Linux-based sources using syslog"
   ms.date: 06/27/2022
   author: wwlpublish
-  ms.author: bneeb
+  ms.author: kelawson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false

@@ -1,9 +1,9 @@
-As part of device management, Microsoft Endpoint Manager helps you protect device data, manage policy assignments, ensure proper device access, implement device security rules, and resolve device compliance issues.
+As part of device management, Microsoft Intune helps you protect device data, manage policy assignments, ensure proper device access, implement device security rules, and resolve device compliance issues.
 
 All devices that you manage have a lifecycle. Microsoft Intune and Microsoft Endpoint Configuration Manager can help you manage this lifecycle: from enrollment, through configuration and protection, to retiring the device when it's no longer required. 
 
 ## Video - Interactive guide to managing devices
-The following interactive guide steps you through the Microsoft Endpoint Manager admin center to show you how to manage and protect devices.
+The following interactive guide steps you through the Microsoft Intune admin center to show you how to manage and protect devices.
 
 </p>
 <div align=”center”>
@@ -20,7 +20,7 @@ In this module, you will:
 
   - Understand how your organization's devices can be provisioned.
   - Understand the device management lifecycle.
-  - Learn about the different types of enrollment methods available using Microsoft Endpoint Manager.
+  - Learn about the different types of enrollment methods available using Microsoft Intune.
 
 ## Prerequisites
 

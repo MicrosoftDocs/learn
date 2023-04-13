@@ -4,16 +4,16 @@ In addition to migrating applications, virtual machines, databases, and other st
 
 The Azure Storage Migration Service in the Windows Admin Center is helpful when you need to move servers to newer hardware or virtual machines. You can use the Migration Service to assist with migrating your unstructured data in several ways, including:
 
-- Conduct an inventory of your servers and their data.
-- Rapidly transfer files, file shares, and security configuration from the source servers.
-- Take over the identity of the source servers (or _cut over_).
-- Manage one or multiple migrations from the Windows Admin Center interface.
+- Conduct an inventory of your servers and their data
+- Rapidly transfer files, file shares, and security configuration from the source servers
+- Take over the identity of the source servers (or _cut over_) 
+- Manage one or multiple migrations from the Windows Admin Center interface
 
 ### Things to know about the Migration Service
 
 The Azure Storage Migration Service can you help you migrate unstructured data stored in on-premises file servers to Azure Files and Azure-hosted virtual machines. The migration process is accomplished through capabilities provided by the Migration Service, Azure File Sync, and Azure Migrate.
 
-:::image type="content" source="../media/storage-migration-service.png" alt-text="Illustration that shows how the Azure Storage Migration Service moves on-premises data.":::
+:::image type="content" source="../media/storage-migration-service.png" alt-text="Illustration that shows how the Azure Storage Migration Service moves on-premises data." border="false":::
 
 #### Migrating online on-premises unstructured data
 
@@ -29,11 +29,11 @@ The Azure Storage Migration Service implements three steps to move your online o
 
 To migrate your unstructured data with the Azure Storage Migration Service, you need to prepare the following configuration:
 
-- Select the source server or failover cluster containing the data to migrate.
-- Select a destination server or failover cluster to receive the migrated data.
-- Identify an orchestrator server to manage the migration.
-- Prepare your PC or server with Windows Admin Center to run the Migration Service user interface.
-- Satisfy requirements for security, the Migration Service proxy service, and firewall port settings.
+- Select the source server or failover cluster containing the data to migrate
+- Select a destination server or failover cluster to receive the migrated data
+- Identify an orchestrator server to manage the migration
+- Prepare your PC or server with Windows Admin Center to run the Migration Service user interface
+- Satisfy requirements for security, the Migration Service proxy service, and firewall port settings
 
 > [!IMPORTANT]
 > 

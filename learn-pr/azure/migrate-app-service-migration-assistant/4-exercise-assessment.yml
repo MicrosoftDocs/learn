@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Assess an on-premises ASP.NET web application
   description: Use the Azure App Service Migration Assistant to perform an assessment.
   ms.date: 05/21/2020
-  author: msangapu-msft
-  ms.author: msangapu
+  author: v-ksreedevan
+  ms.author: v-ksreedevan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

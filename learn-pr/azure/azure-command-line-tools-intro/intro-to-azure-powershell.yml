@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-command-line-tools-intro.intro-to-azure-powershell
+metadata:
+  title: Introduction to Azure PowerShell
+  description: Overview of using Azure PowerShell to manage and provision Azure resources
+  ms.published: 02/27/2023
+  ms.date: 02/27/2023
+  author: mikefrobbins
+  ms.author: mirobb
+  ms.topic: module-choose-best-product
+  ms.prod: learning-azure
+title: Introduction to Azure PowerShell
+durationInMinutes: 3
+content: |
+  [!include[](includes/intro-to-azure-powershell.md)]

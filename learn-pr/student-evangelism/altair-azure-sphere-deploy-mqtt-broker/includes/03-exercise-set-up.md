@@ -133,7 +133,7 @@ The following steps set up certificates to help secure the communications betwee
 
 The following instructions walk you through installing the Certbot ACME client on the Ubuntu server. Let's Encrypt-issued certificates expire after six months. The Certbot client ensures that the certificates are updated before they expire.
 
-For more information, see the [instructions on the Certbot site](https://certbot.eff.org/lets-encrypt/ubuntufocal-other?azure-portal=true).
+For more information, see the [instructions on the Certbot site](https://certbot.eff.org/lets-encrypt).
 
 1. Copy and paste the following block of commands into the SSH session and then select the **Enter** key:
 

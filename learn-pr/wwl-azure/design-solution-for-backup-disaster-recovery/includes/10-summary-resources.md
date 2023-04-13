@@ -1,55 +1,41 @@
-During this module, you learned how to select appropriate backup solutions for Azure workloads. You also learned how to select appropriate disaster recovery options for these workloads. Having completed this module, you’ll now be able to select appropriate backup and recovery solutions for your workloads.
+Azure Architects understand how to design solutions to back up their data and support disaster recovery. These solutions help to avoid costly business interruptions due to component failures, malicious attacks, and outages. Microsoft Azure provides an end-to-end backup and disaster recovery solution that's secure, scalable, and resilient, while remaining cost-effective.
 
-Now that you've completed this module, you should be able to:
+In this module, you learned how to select appropriate backup solutions for Azure workloads. You also reviewed how to select appropriate disaster recovery options for these workloads. You explored backup and recovery options for Azure files, blobs, virtual machines, and SQL databases. You examined how to design solutions for several Azure services, including Azure Backup and Azure Site Recovery.
 
-- Design for backup and recovery.
+## Learn more
 
-- Design for Azure Backup.
+- Read more about [Azure file share backup](/azure/backup/azure-file-share-backup-overview).
 
-- Design for Azure blob backup and recovery.
+- Peruse [Azure Backup service documentation](/azure/backup).
 
-- Design for Azure Files backup and recovery.
+- Explore [Azure Recovery Services vaults](/azure/backup/backup-azure-recovery-services-vault-overview).
 
-- Design for Azure virtual machine backup and recovery.
+- Peruse [Azure Site Recovery documentation](/azure/site-recovery/).
 
-- Design for Azure SQL backup and recovery
+- Examine [Azure to Azure disaster recovery architecture](/azure/site-recovery/azure-to-azure-architecture).
 
-- Design for Azure Site Recovery.
+- Read about [Azure Traffic Manager](/azure/traffic-manager/traffic-manager-overview).
 
-## Learn more with Azure documentation
+- Use [auto-failover groups to enable transparent and coordinated failover of multiple databases](/azure/azure-sql/database/auto-failover-group-overview).
 
-- [About Azure file share backup](/azure/backup/azure-file-share-backup-overview?toc=/azure/storage/files/toc.json)
+- Explore [Azure Storage redundancy](/azure/storage/common/storage-redundancy).
 
-- [Azure Backup service documentation](/azure/backup?azure-portal=true)
-
-- [Recovery Services vaults overview](/azure/backup/backup-azure-recovery-services-vault-overview?azure-portal=true)
-
-- [Azure Site Recovery documentation](/azure/site-recovery/?azure-portal=true)
-
-- [Azure to Azure disaster recovery architecture](/azure/site-recovery/azure-to-azure-architecture?azure-portal=true)
-
-- [What is Traffic Manager?](/azure/traffic-manager/traffic-manager-overview?azure-portal=true)
-
-- [Use auto-failover groups to enable transparent and coordinated failover of multiple databases](/azure/azure-sql/database/auto-failover-group-overview?azure-portal=true)
-
-- [Azure Storage redundancy](/azure/storage/common/storage-redundancy?azure-portal=true)
-
-- [Back up Azure file shares](/azure/backup/backup-afs?azure-portal=true)
+- Back up [Azure file shares](/azure/backup/backup-afs).
 
 ## Learn more with self-paced training
 
-- [Disaster recovery and backup](/training/modules/cmu-disaster-recovery-backup/)
+- Discover [disaster recovery and backup](/training/modules/cmu-disaster-recovery-backup/).
 
-- [Design your site recovery solution in Azure](/training/modules/design-your-site-recovery-solution-in-azure/)
+- Design your [site recovery solution in Azure](/training/modules/design-your-site-recovery-solution-in-azure/). 
 
-- [Protect your virtual machines by using Azure Backup](/training/modules/protect-virtual-machines-with-azure-backup/)
+- Design a [geographically distributed application](/training/modules/design-a-geographically-distributed-application/).
 
-- [Design a geographically distributed application](/training/modules/design-a-geographically-distributed-application/)
+- Explore [Microsoft Azure Well-Architected Framework - Reliability](/training/modules/azure-well-architected-reliability/).
 
-- [Microsoft Azure Well-Architected Framework - Reliability](/training/modules/azure-well-architected-reliability/)
+- Describe [high-availability and disaster-recovery strategies](/training/modules/describe-high-availability-disaster-recovery-strategies/).
 
-- [Describe high-availability and disaster-recovery strategies](/training/modules/describe-high-availability-disaster-recovery-strategies/)
+## Learn more with optional hands-on exercises
 
-## Learn more with optional hands-on labs
+- Back up and restore [your Azure SQL database (sandbox)](/training/modules/backup-restore-azure-sql/).
 
-- [Backup and restore your Azure SQL database](/training/modules/backup-restore-azure-sql/)
+- Protect your [virtual machines by using Azure Backup](/training/modules/protect-virtual-machines-with-azure-backup/). _Azure subscription required_.

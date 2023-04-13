@@ -1,82 +1,85 @@
 One of the primary concerns for your organization is how to migrate its enterprise applications that require high-performance storage to Azure.
 
-As part of the migration strategy, you propose the Azure Disk Storage solution to optimize performance and costs. This unit covers the various disk storage types that are available in Azure.
+As part of the migration strategy, you propose the Azure Disk Storage solution to optimize performance and costs. This unit covers the various disk-storage types available in Azure.
 
-## Ultra Disk Storage
+## Ultra disks
 
-Of the various disks available in Azure, Azure Ultra Disk Storage provides the highest disk performance. Choose this option when you need the fastest storage performance in addition to high throughput, high input/output operations per second (IOPS), and low latency.
+Ultra disks provide the highest disk performance available in Azure. Choose them when you need the fastest storage performance, which includes high throughput, high IOPS, and low latency.
 
-The performance you'll get with Ultra Disk Storage depends on the size of the disk you choose. The following table provides examples. The table shows disk size in gigabytes (GB) and throughput in megabytes per second (MBps).
+The maximum performance of an Ultra disk depends on the size you select, as you can see from examples in this table:
 
-| Disk size (GB) | IOPS | Throughput (MBps) |
-| --- | --- |--- |
+| Disk size (GB) | IOPS | Throughput (MB/s) |
+| --- | --- | --- |
 | 4 | 1,200 | 300 |
+| 8 | 2,400 | 600 |
 | 16 | 4,800 | 1,200 |
-| 32 | 9,600 | 2,000 |
+| 32 | 9,600 | 2,400 |
+| 64 | 19,200 | 4,000 |
+| 128 | 38,400 | 4,000 |
 | 256 | 76,800 | 2,000 |
-| Over 1,024 | 160,000 | 2,000 |
+| 512 | 153,600 | 4,000 |
+| 1,024 - 65,536 (sizes in this range increase in 1 TiB increments) | 160,000 | 2,000 |
 
-Ultra Disk Storage can have a capacity ranging from 4 GB up to 64 terabytes (TB). A unique feature of Ultra Disk Storage is that you can adjust the IOPS and throughput values while they're running and without detaching the disk from the host VM. For example, depending on the sizes of the disks you choose in Ultra Disk Storage, a single instance of Ultra Disk Storage can support a maximum of 160,000 IOPS. Performance adjustments might take up to an hour to take effect.
+Ultra disks can have capacities from 4 GB up to 64 TB. A unique feature of Ultra disks is that you can adjust the IOPS and throughput values while they're running and without detaching them from the host virtual machine. Performance adjustments can take up to an hour to take effect.
 
-> [!NOTE]
-> You can resize an instance of Ultra Disk Storage only four times in a 24-hour window. Also, it's possible that the performance resize operation might fail because of a lack of performance bandwidth capacity.
+Ultra disks have some limitations. For a complete list, see [Ultra disk Limitations](/azure/virtual-machines/disks-types#ultra-disk-limitations).
 
-By default, Azure creates instances of Ultra Disk Storage with a 4-KB physical sector, which is compatible with most applications. For earlier versions of applications that aren't compatible with a 4-KB physical sector, you can create a 512-byte emulation (512e) sector size.
-
-Ultra Disk Storage is a new disk type in Azure and has some limitations:
-
-- It's available only in a subset of Azure regions.
-- You can attach Ultra Disk Storage only to VMs that are in Azure availability zones.
-- You can use Ultra Disk Storage only as data disks and as empty disks.
-- Ultra Disk Storage doesn't support disk snapshots, VM images, virtual machine scale sets, Azure Disk Encryption, Azure Backup, or Azure Site Recovery.
-- Ultra Disk Storage doesn't support cached read and write operations.
-
-Some workloads place intensive workloads on disk storage. For example, top-tier databases and SAP HANA need fast performance and are transaction heavy. If you have such a workload and if Azure Premium SSD disks are causing performance bottlenecks, consider using Azure Ultra Disk Storage.
+Some workloads place intensive loads on disk storage. For example, top-tier databases and SAP HANA need fast performance and are transaction heavy. If you have such a workload, and if Premium SSD managed disks have caused performance bottlenecks, consider using Ultra disks.
 
 > [!NOTE]
 > When you provision an instance of Azure Ultra Disk Storage, you can independently configure the size, IOPS, and throughput of the disk. You're charged for using Ultra Disk Storage based on the provisioned size, IOPS, and throughput.
 
-## Premium SSD managed disks
+## Premium SSD v2
 
-Azure Premium SSD managed disks provide high throughput and IOPS with low latency, although they offer a slightly lower performance compared to Ultra Disk Storage. Premium SSD disks don't have the current limitations of Ultra Disk Storage. For example, they're available in all regions and you can use them with VMs that are located outside Azure availability zones.
+Premium SSD managed disks are the next tier down from Ultra disks in terms of performance, but they still provide extremely high throughput and IOPS with low latency. Like Ultra disks, the performance (capacity, throughput, and IOPS) of Premium SSD v2 managed disks can be independently configured at any time, making it easier for more scenarios to be cost efficient while meeting performance needs.
 
-You can adjust the performance of Premium SSD disks by first detaching the disks from their VMs. Also, you can use Premium SSD disks only with larger VM sizes that are compatible with Premium storage.
+The following table provides an example of disk capacities and performance maximums.
 
-> [!NOTE]
-> In May 2021, Microsoft announced a preview option to adjust the performance tier on Premium SSD disks while they're attached to VMs.
+|Disk size  |Maximum available IOPS  |Maximum available throughput (MB/s)  |
+|---------|---------|---------|
+|1 GiB-64 TiBs    |3,000-80,000 (Increases by 500 IOPS per GiB)        |125-1,200 (increases by 0.25 MB/s per set IOPS)         |
 
-The following table provides examples that illustrate the high performance of Premium SSD disks. Disk sizes in this table include gibibytes (GiB) and tebibytes (TiB).
+Unlike Premium SSD managed disks, Premium SSD v2 managed disks don't have dedicated sizes. You can set a Premium SSD v2 disk to any supported size you prefer, and make granular adjustments to the performance without downtime. Premium SSD v2 managed disks don't support host caching but, benefits significantly from lower latency which addresses some of the same core problems host caching addresses. The ability to adjust IOPS, throughput, and size at any time also means you can avoid the maintenance overhead of having to stripe disks to meet your needs.
 
-| Disk size name | Disk size | IOPS | Throughput (MBps) |
-| --- | --- |--- | --- |
+Premium SSD v2 managed disks have some limitations. For a complete list, see [Premium SSD v2 Limitations](/azure/virtual-machines/disks-types#premium-ssd-v2-limitations).
+
+Premium SSD v2 managed disks are suited for a broad range of workloads such as SQL server, Oracle, MariaDB, SAP, Cassandra, Mongo DB, big data/analytics, and gaming, on virtual machines or stateful containers.
+
+## Premium SSD
+
+Premium SSD managed disks are the next tier down from Premium SSD v2 managed disks in terms of performance, but they still provide high throughput and IOPS with low latency. Premium SSD doesn't have the current limitations of either Ultra Disks or Premium SSD v2. For example, they're available in all regions and can be used with virtual machines that are outside of availability zones.
+
+To adjust the performance of a disk you can change its performance tier (which can be done without detaching the disk from a virtual machine or shutting down the VM). Also, you can only use premium SSD managed disks with virtual machine sizes that are compatible with premium storage.
+
+The following table contains examples that illustrate the high performance of premium SSD managed disks:
+
+| Disk size name | Disk size | IOPS | Throughput (MB/s) |
+| --- | --- | --- | --- |
 | P4 | 32 GiB | 120 | 25 |
 | P15 | 256 GiB | 1,100 | 125 |
 | P40 | 2 TiB | 7,500 | 250 |
 | P80 | 32 TiB | 20,000 | 900 |
 
-Premium SSD disks are designed to provide consistent performance figures, as the examples in the table depict. Azure Standard SSD managed disks occasionally might be affected by high demand.
+With Premium SSD, these performance figures are guaranteed. There's no such guarantee for standard tier disks, which can be impacted occasionally by high demand.
 
-If you need higher performance than what Standard SSD disks provide, or if you can't sustain the occasional effect on performance, use Premium SSD disks. Also use Premium SSD disks when you want the highest possible performance, but you're not able to use Ultra Disk Storage because of its current limitations. Premium SSD disks are a good solution for mission-critical workloads in medium and large organizations.
+If you need higher performance than standard disks provide, or if you can't sustain occasional drops in performance, use Premium SSD. Also use Premium SSD managed disks when you want the highest performance but can't use Ultra disks or Premium SSD v2 because of their current limitations. Premium SSD managed disks are a good fit for mission-critical workloads in medium and large organizations.
 
-Azure Premium SSD disks support disk bursting, with which you can achieve higher IOPS and throughput than with your provisioned performance. For P20 disks and smaller disks, bursting is enabled by default with no additional cost.
-
-> [!NOTE]
-> You'll learn more about the Azure disk bursting functionality in [Optimize performance and costs using performance-scaling options](../4-optimize-performance-and-costs-using-performance-scaling-options.yml).
+Azure Premium SSD disks support two bursting models, an on-demand bursting model and a credit-based model. The disk bursting models and their differences are covered in the[Optimize performance and costs using performance-scaling options](../4-optimize-performance-and-costs-using-performance-scaling-options.yml) section.
 
 ## Standard SSD managed disks
 
-Azure Standard SSD managed disks are a cost-effective storage option for VMs that need consistent performance at lower speeds. Standard SSD disks aren't as fast as Premium SSD disks or Ultra Disk Storage, but they still provide single-digit millisecond (ms) latencies and up to 6,000 IOPS and 750 MBps of throughput. You can attach Standard SSD disks to any VM, regardless of its size.
+Azure Standard SSD managed disks are a cost-effective storage option for VMs that need consistent performance at lower speeds. Standard SSD disks aren't as fast as Premium SSD disks or Ultra Disk Storage, but they still provide single-digit millisecond (ms) latencies and up to 6,000 IOPS and 750 MB/s of throughput. You can attach Standard SSD disks to any VM, regardless of its size.
 
 The following table provides the performance characteristics of Standard SSD disks in several sizes:
 
-| Disk size name | Disk size (GB) | IOPS | Throughput (MBps) |
+| Disk size name | Disk size (GB) | IOPS | Throughput (MB/s) |
 | --- | --- |--- | --- |
 | E4 | 32 | 500 | 60 |
 | E15 | 256 | 500 | 60 |
 | E40 | 2,048 | 500 | 60 |
 | E80 | 32,767 | 6,000 | 750 |
 
-Use Standard SSD disks when you have budgetary constraints and a workload that isn't performance-intensive. For example, web servers, lightly used enterprise applications, and test servers all can run on Standard SSD disks. Standard SSD disks support disk bursting on P30 disks and smaller disks.
+Use Standard SSD disks when you have budgetary constraints and a workload that isn't performance-intensive. For example, web servers, lightly used enterprise applications, and test servers all can run on Standard SSD disks. Standard SSD disks support credit-based disk bursting on P30 and smaller disks.
 
 ## Standard HDD managed disks
 
@@ -84,7 +87,7 @@ In Azure Standard HDD managed disks, data is stored on conventional magnetic dis
 
 The following table provides the performance characteristics of Standard HDD disks in several sizes:
 
-| Disk size name | Disk size (GB) | IOPS | Throughput (MBps) |
+| Disk size name | Disk size (GB) | IOPS | Throughput (MB/s) |
 | --- | --- |--- | --- |
 | S4 | 32 | 500 | 60 |
 | S15 | 256 | 500 | 60 |

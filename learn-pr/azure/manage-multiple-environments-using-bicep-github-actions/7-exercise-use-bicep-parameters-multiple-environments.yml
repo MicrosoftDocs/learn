@@ -5,7 +5,7 @@ metadata:
   unitType: exercise
   title: Exercise - Use Bicep parameters with multiple environments
   description: Update a deployment workflow to use inputs and secrets for each environment's settings.
-  ms.date: 11/08/2021
+  ms.date: 02/24/2023
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial

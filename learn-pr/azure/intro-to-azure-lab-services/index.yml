@@ -9,7 +9,7 @@ metadata:
   author: mikejo5000
   ms.author: mikejo
   manager: jmartens
-  ms.topic: interactive-tutorial
+  ms.topic: module-intro-to-product
   ms.prod: learning-azure
 title: Introduction to Azure Lab Services
 summary: Find out how lab plans, labs, and virtual machines work together to simplify the infrastructure for hosted classroom labs. Determine the types of business problems that can be solved using Azure Lab Services. 

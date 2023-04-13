@@ -1,3 +1,4 @@
+
 The Azure Backup service provides a simple, secure, and cost-effective solution for backing up your data. Administrators implement the Microsoft Azure Recovery Services (MARS) agent for Azure Backup to recover their data from the Microsoft Azure cloud.
 
 In this module, suppose your company stores critical compliance information on Azure Files file shares. You're responsible for ensuring this content can be recovered if there's data loss or corruption. You need to configure backup and restore policies that meet your company's regulatory needs.

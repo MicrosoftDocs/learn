@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-arrays.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following can be used to access the third element in an array?"
+    choices:
+    - content: "`myArray[3]`."
+      isCorrect: false
+      explanation: "Incorrect. Remember - indexes are zero-based."
+    - content: "`myArray[2]`."
+      isCorrect: true
+      explanation: "Correct! Because indexes a zero based, two returns the third element in an array."
+    - content: "`myArray{3}`."
+      isCorrect: false
+      explanation: "Incorrect. Make sure to use square brackets and zero-based indexes!"
+  - content: "Which of the following choices describes the correct way to create a new integer array with three elements?"
+    choices:
+    - content: "`int[] myArray = new int[3];`."
+      isCorrect: true
+      explanation: "Correct! This is the correct way to create an array with three elements."
+    - content: "`int[] myArray = new int[2];`."
+      isCorrect: false
+      explanation: "Incorrect. Arrays indexes are zero based, but when declaring an array, specify the actual number of elements."
+    - content: "`int myArray = new int[3];`."
+      isCorrect: false
+      explanation: "Incorrect. Missing a set of square brackets after the initial type specification, `int`."
+  - content: "Which of the following `foreach` statements is syntactically correct?"
+    choices:
+    - content: "`foreach (int value in values)`."
+      isCorrect: true
+      explanation: "Correct! This `foreach` statement is defined using valid syntax."
+    - content: "`foreach (int value of values)`."
+      isCorrect: false
+      explanation: "Incorrect. The `foreach` statement doesn't include an `of` keyword."
+    - content: "`foreach (int value with values)`."
+      isCorrect: false
+      explanation: "Incorrect. The `foreach` statement doesn't include an `with` keyword."

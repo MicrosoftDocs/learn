@@ -1,3 +1,4 @@
+
 When you configure a virtual network gateway, you need to specify the type VPN to create. There are two options: route-based or policy-based.
 
 The VPN type you choose depends on the connection topology you want to create. To create a point-to-site (P2S) connection, you would create a route-based VPN. The VPN type can also depend on your hardware. For a site-to-site (S2S) configuration, you need a VPN device. Some VPN devices only support a certain VPN type.

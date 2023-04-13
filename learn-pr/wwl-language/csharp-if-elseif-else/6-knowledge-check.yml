@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-if-elseif-else.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "Given that `int x = 5`, which of the following Boolean expressions is valid and evaluates to **true**?"
+    choices:
+    - content: "`x < 5`."
+      isCorrect: false
+      explanation: "Incorrect. Since `x` isn't less than 5, this expression evaluates to **false**."
+    - content: "`x > 5`."
+      isCorrect: false
+      explanation: "Incorrect. Since `x` isn't greater than 5, this expression evaluates to **false**."
+    - content: "`x == 5`."
+      isCorrect: true
+      explanation: "Correct! Since `x` is equal to 5, using the C# equality operator `==` in the expression evaluates to **true**."
+  - content: "Which of the choices below is *not* a valid operator in C#?"
+    choices:
+    - content: "`%%`."
+      isCorrect: true
+      explanation: "Correct! The double percentage-sign symbol `%%` isn't a valid C# operator."
+    - content: "`&&`."
+      isCorrect: false
+      explanation: "Incorrect. `&&` is the C# logical AND operator."
+    - content: "`||`."
+      isCorrect: false
+      explanation: "Incorrect. `||` is the C# logical OR operator."
+  - content: "The following answer choices describe `if` statement syntax. Which of the descriptions is correct?"
+    choices:
+    - content: "The Boolean expression evaluated by an `if` statement is optional."
+      isCorrect: false
+      explanation: "Incorrect. A Boolean expression is a required component of an `if` statement."
+    - content: "An `else` statement can't be placed before an `else if` statement."
+      isCorrect: true
+      explanation: "Correct! An `else` can't be placed before an `else if` statement."
+    - content: "The `else` statement is required when an `if` statement includes an `else if`."
+      isCorrect: false
+      explanation: "Incorrect. The `else` statement isn't required in order to create a valid `if` statement."

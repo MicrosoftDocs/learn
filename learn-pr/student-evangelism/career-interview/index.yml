@@ -24,7 +24,7 @@ levels:
 roles:
   - developer
 products:
-  - vs
+  - azure
 prerequisites: None
 units:
   - learn.career-interview.1-introduction

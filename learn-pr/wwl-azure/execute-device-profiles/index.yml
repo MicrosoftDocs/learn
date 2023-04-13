@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.wwl.execute-device-profiles
+metadata:
+  title: Execute device profiles
+  description: "Students learn about the various types of device profiles, and how to create and manage them."
+  ms.date: 03/14/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+title: Execute device profiles
+summary: Students learn about the various types of device profiles, and how to create and manage them.
+abstract: |
+  After completing this module, you will be able to:
+  *   Describe the various types of device profiles in Intune.
+  *   Explain the difference between built-in and custom profiles.
+  *   Create and manage profiles.
+prerequisites: |
+  *   Strong technical skills installing, maintaining, and troubleshooting the Windows 10 OS or later.
+  *   Strong understanding of computer networking, client security, and application concepts.
+  *   Experience using Active Directory Domain Services.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- windows
+- configuration-manager
+- intune
+subjects:
+- device-management
+- identity-access
+units:
+- learn.wwl.execute-device-profiles.introduction
+- learn.wwl.execute-device-profiles.explore-intune-device-profiles
+- learn.wwl.execute-device-profiles.create-device-profiles
+- learn.wwl.execute-device-profiles.create-custom-device-profile
+- learn.wwl.execute-device-profiles.knowledge-check
+- learn.wwl.execute-device-profiles.summary
+badge:
+  uid: learn.wwl.execute-device-profiles.badge

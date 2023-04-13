@@ -16,3 +16,4 @@ In this module, you will:
 
 - Basic knowledge of C#
 - Basic knowledge of Azure AD
+- An Azure account with an [active subscription](https://azure.microsoft.com/free)

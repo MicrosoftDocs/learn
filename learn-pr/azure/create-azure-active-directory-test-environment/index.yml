@@ -3,7 +3,7 @@ uid: learn.create-azure-active-directory-test-environment
 metadata:
   title: Set up a test environment for application testing in Azure Active Directory
   description: Evaluate whether you need a dedicated test tenant for your application test environment or whether you can use a production tenant. Create a dedicated Azure AD tenant for application testing.
-  ms.date: 12/08/2022
+  ms.date: 03/24/2023
   author: rwike77
   ms.author: ryanwi
   ms.topic: interactive-tutorial
@@ -16,6 +16,7 @@ abstract: |
     - Set up a test environment in a separate tenant  
 prerequisites: |
   - Experience navigating the Azure portal.
+  - Knowledge of Azure PowerShell and Azure CLI at the beginner level.
   - Knowledge of Azure AD tenants, app registrations, service principals, and users at the beginner level.
   - Knowledge of app permissions and consent in Microsoft identity platform at the beginner level.
   - To complete the exercise in this module, you'll need an Azure account with an active subscription. Create an [account for free](https://azure.microsoft.com/free/).

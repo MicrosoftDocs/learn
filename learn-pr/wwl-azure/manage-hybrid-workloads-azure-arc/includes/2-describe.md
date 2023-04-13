@@ -8,7 +8,7 @@
  -  SQL servers
  -  Azure Data Services
 
-Azure Arc also extends adoption of cloud native services and DevOps across hybrid, multicloud, and edge environments. In addition to extending the control plane for managing infrastructure, Azure Arc enables companies to run Azure data services, and Azure machine learning on containerized infrastructure anywhere.
+Azure Arc also extends adoption of cloud native services and DevOps across hybrid, multicloud, and edge environments. In addition to extending the control plane for managing infrastructure, Azure Arc enables companies to run Azure data services, and Azure Machine Learning on containerized infrastructure anywhere.
 
 Continuous improvements have been made to the Azure control plane. This control plane is responsible for managing the lifecycle of resources such as VMs, database instances, Apache Hadoop clusters, and Kubernetes clusters.
 

@@ -1,0 +1,34 @@
+### YamlMime:LearningPath
+uid: learn.wwl.examine-application-management
+metadata:
+  title: MD-102 Examine application management
+  description: Learners will examine application management methods using on-premises and cloud-based solutions.
+  ms.date: 04/04/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: MD-102 Examine application management
+prerequisites: |
+  *   Strong technical skills installing, maintaining, and troubleshooting the Windows 10 OS or later
+  *   Strong understanding of computer networking, client security, and application concepts
+  *   Experience using Active Directory Domain Services
+summary: |
+  Learners will examine application management methods using on-premises and cloud-based solutions.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- windows
+- configuration-manager
+- intune
+subjects:
+- development-tools
+modules:
+- learn.wwl.execute-mobile-application-management
+- learn.wwl.deploy-applications
+- learn.wwl.administer-endpoint-applications
+trophy:
+  uid: learn.wwl.examine-application-management.trophy

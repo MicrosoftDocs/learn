@@ -1,15 +1,16 @@
-Now that your pipeline deploys to both of your environments, you're ready to integrate with the third-party API for product reviews. 
+Now that your pipeline deploys to both of your environments, you're ready to integrate with the third-party API for product reviews.
 
 Your website team has provided you with the API keys and URLs that your website should use to access the service. There are different values for your test and production environments to use. In this unit, you'll update your pipeline to configure each of your environments with the correct settings for the product review API.
 
 During the process, you'll:
 
 > [!div class="checklist"]
-> * Create variable groups for each of your environments.
-> * Update the pipeline so it picks the correct variable group for each environment instead of using template parameters.
-> * Update your Bicep file to propagate the settings that you need for the product review API.
-> * Update the variable group and pipeline to set the values for the product review API's settings.
-> * Review the pipeline results and the changes to your Azure environment.
+>
+> - Create variable groups for each of your environments.
+> - Update the pipeline so it picks the correct variable group for each environment instead of using template parameters.
+> - Update your Bicep file to propagate the settings that you need for the product review API.
+> - Update the variable group and pipeline to set the values for the product review API's settings.
+> - Review the pipeline results and the changes to your Azure environment.
 
 ## Add variable groups
 
@@ -32,7 +33,7 @@ Because you're adding more parameters that vary between each environment, you de
    | EnvironmentType | Test |
    | ResourceGroupName | ToyWebsiteTest |
 
-   Notice that you don't define the service connection name in the variable group. Service connection names have special rules about how they can be specified. In this module, you'll use pipeline template parameters.
+   Notice that you don't define the service connection name in the variable group. Service connection names have special rules about how they can be specified. In this module, you use pipeline template parameters.
 
    :::image type="content" source="../media/7-variable-group-test-v1.png" alt-text="Screenshot of the test variable group and variables.":::
 
@@ -55,7 +56,7 @@ Because you're adding more parameters that vary between each environment, you de
 
 ## Update the deployment pipeline template to use the variable group
 
-1. In Visual Studio Code, open the *deploy.yml* file.
+1. In Visual Studio Code, open the _deploy.yml_ file.
 
 1. At the top of the file, remove the `resourceGroupName` and `serviceConnectionName` parameters. Don't delete the `environmentType` or `deploymentDefaultLocation` parameters.
 
@@ -81,7 +82,7 @@ Because you're adding more parameters that vary between each environment, you de
 
    :::code language="yaml" source="code/7-deploy-1.yml" range="53-78" highlight="6-7, 19, 22, 25" :::
 
-1. Verify that your *deploy.yml* file now looks like the following code:
+1. Verify that your _deploy.yml_ file now looks like the following code:
 
    :::code language="yaml" source="code/7-deploy-1.yml" highlight="1-6, 16-17, 23, 26, 29, 37-38, 44, 49, 51, 58-59, 71, 74, 77" :::
 
@@ -89,7 +90,7 @@ Because you're adding more parameters that vary between each environment, you de
 
 ## Update the pipeline definition to simplify the parameter list
 
-1. Open the *azure-pipelines.yml* file.
+1. Open the _azure-pipelines.yml_ file.
 
 1. Update the stages that use templates to remove the `resourceGroupName` and `serviceConnectionName` parameters. Leave only the `environmentType` parameter.
 
@@ -97,7 +98,7 @@ Because you're adding more parameters that vary between each environment, you de
 
 1. Save your changes to the file.
 
-1. Commit your changes to your Git repository without pushing them by using the following commands: 
+1. Commit your changes to your Git repository without pushing them by using the following commands:
 
    ```bash
    git add .
@@ -106,7 +107,7 @@ Because you're adding more parameters that vary between each environment, you de
 
 ## Update the Bicep file
 
-1. Open the *main.bicep* file.
+1. Open the _main.bicep_ file.
 
 1. Below the parameters that are already in the file, add the following parameters for the new review API:
 
@@ -114,7 +115,7 @@ Because you're adding more parameters that vary between each environment, you de
 
 1. Update the `appServiceApp` resource definition to provide the review API URL and key to the application, so that your website's code can use them:
 
-   :::code language="bicep" source="code/7-main.bicep" range="63-90" highlight="17-24" :::
+   :::code language="bicep" source="code/7-main.bicep" range="64-91" highlight="17-24" :::
 
 1. Save your changes to the file.
 
@@ -152,7 +153,7 @@ Because you're adding more parameters that vary between each environment, you de
 
 ## Add the review API variables to the variable groups
 
-1. In Visual Studio Code, open the *deploy.yml* file.
+1. In Visual Studio Code, open the _deploy.yml_ file.
 
 1. In the `ValidateBicepCode` job, add the review API parameter values to the deployment task:
 
@@ -169,11 +170,11 @@ Because you're adding more parameters that vary between each environment, you de
 
    :::code language="yaml" source="code/7-deploy-2.yml" range="57-84" highlight="26-27" :::
 
-1. Verify that your *deploy.yml* file now looks like the following code:
+1. Verify that your _deploy.yml_ file now looks like the following code:
 
    :::code language="yaml" source="code/7-deploy-2.yml" highlight="30-31, 53-55, 82-83" :::
 
-1. Commit and push your changes to your Git repository by using the following commands: 
+1. Commit and push your changes to your Git repository by using the following commands:
 
    ```bash
    git add .
@@ -201,7 +202,7 @@ Because you're adding more parameters that vary between each environment, you de
 
    Notice that you now see multiple deployments in the environment's history.
 
-1. In your browser, go to the [Azure portal](https://portal.azure.com?azure-portal=true). 
+1. In your browser, go to the [Azure portal](https://portal.azure.com).
 
 1. Go to the **ToyWebsiteProduction** resource group.
 

@@ -8,7 +8,7 @@ A Bicep file describes the state that you want your Azure environment to be in a
 
 A deployment can result in new resources being deployed into your environment, or existing resources being updated. When you run a deployment in complete mode, it can even result in the deletion of existing resources.
 
-Any time resources are created, updated, or deleted, there's a risk that things can change in a way you didn't expect. It's a good practice to add an extra step to verify what exactly will be created, updated, and deleted. This verification adds value to your automation process. When you're deploying to a production environment, it's important to confirm any changes that will happen to your environment.
+When resources are created, updated, or deleted, there's a risk that things can change in a way you didn't expect. It's a good practice to add an extra step to verify which resources will be created, updated, and deleted. This verification adds value to your automation process. When you're deploying to a production environment, it's important to confirm any changes that will happen to your environment.
 
 Resource Manager provides the what-if operation, which you can run on your Bicep file within your pipeline stage:
 
@@ -25,7 +25,7 @@ You can use the `az deployment group what-if` Azure CLI command from within your
 
 ::: zone-end
 
-The what-if operation doesn't make any changes to your environment. Instead, it describes the resources that'll be created, the resource properties that'll be updated, and the resources that'll be deleted.
+The what-if operation doesn't make any changes to your environment. Instead, it describes the resources that will be created or deleted, the resource properties that will be updated, and the resources that will be deleted.
 
 What-if sometimes shows that a resource will change when actually no change will happen. This feedback is called _noise_. We're working to reduce these problems, but we need your help to [report these problems](https://aka.ms/whatifissues).
 
@@ -78,6 +78,6 @@ The environments feature in Azure Pipelines gives you the ability to link your d
 
 It's important that you and your organization establish good practices to review your pipeline definitions. An example is configuring your repository to require pull request reviews on any changes to your _main_ branch by using branch protection policies. You'll learn more about this concept in a future module.
 
-You can also add checks and approvals to service connections. This approach ensures that approval is obtained before a deployment can use a service principal's credentials. However, this would also affect your pipeline's ability to run preflight validation and the what-if operation, because they require a service connection too.
+You can also add checks and approvals to service connections that ensure approval is obtained before a deployment can use a service principal's credentials. However, the approvals would also affect your pipeline's ability to run preflight validation and the what-if operation, because they require a service connection too.
 
 You could use another, separate service connection for the what-if stage with its own service principal. The service principal used for the preflight and validation stages needs to have a custom Azure role defined, to ensure that it has the minimum permissions that it needs to do its work.

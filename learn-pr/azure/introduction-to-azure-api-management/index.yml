@@ -4,7 +4,7 @@ metadata:
   moduleType: introduction
   title: Introduction to Azure API Management
   description: Evaluate whether Azure API Management is appropriate for managing and exposing your organization's APIs
-  ms.date: 11/01/2022
+  ms.date: 04/07/2023
   author: dlepow
   ms.author: danlep
   ms.topic: interactive-tutorial

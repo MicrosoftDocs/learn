@@ -1,3 +1,4 @@
+
 Applications need to be resilient to failures and easily scale to support changes in workload demands. Administrators use Azure Load Balancer to distribute workloads and network traffic across virtual machines. Load Balancer enables you to build solutions to provide improved resiliency and scalability.
 
 In this module, you identified the features and usage cases for Azure Load Balancer. You discovered how to implement public and internal Azure load balancers. You reviewed the different features and configuration details for load balancer SKUS. You explored how to create back-end pools, load-balancing rules, session persistence, and health probes.
