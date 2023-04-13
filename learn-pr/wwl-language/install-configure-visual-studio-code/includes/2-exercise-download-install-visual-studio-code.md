@@ -1,6 +1,6 @@
 
 
-Visual Studio Code is a lightweight but powerful source code editor that runs on your desktop and is available for Windows, macOS and Linux. It comes with built-in support for **JavaScript**, TypeScript and Node.js and has a rich ecosystem of extensions for other languages and runtimes (such as C++, C#, Java, Python, PHP, Go, .NET).
+Visual Studio Code is a lightweight but powerful source code editor that runs on your desktop and is available for Windows, macOS and Linux. It comes with built-in support for JavaScript, TypeScript and Node.js and has a rich ecosystem of extensions for other languages and runtimes (such as C++, C#, Java, Python, PHP, Go, .NET).
 
 ## Download Visual Studio Code
 
@@ -13,7 +13,7 @@ Getting up and running with Visual Studio Code is quick and easy. It's a small d
 1. In the browser window, select **Download for Windows**.
 
     > [!NOTE]
-    > The Visual Studio Code download page automatically detects your operating system. It will display the version download for your operating system, such as Linux, macOS, or Windows.
+    > The Download page for Visual Studio Code automatically detects your operating system. It displays the version to download for your operating system, such as Linux, macOS, or Windows.
   
 1. Wait for the installer file to finish downloading.
 

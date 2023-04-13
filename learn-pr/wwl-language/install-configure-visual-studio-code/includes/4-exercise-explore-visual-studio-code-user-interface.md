@@ -111,7 +111,7 @@ In this exercise, you open Visual Studio Code and complete a quick tour of the I
 
 1. Take a minute to read about the formatting options.
 
-    You'll be using code formatting commands during hands-on activites as you learn more about C# programming.
+    You'll be using code formatting commands during hands-on activities as you learn more about C# programming.
  
 1. Close the Editor Playground document.
 
