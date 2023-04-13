@@ -1,4 +1,4 @@
-To make learning Blazor a fun activity, we teach you to build a game of "Connect Four". In this unit, we cover concepts like how this game works and what constructs of Blazor you need to know about to produce a game.
+In this unit, we cover concepts like how the "Connect Four" game works and what constructs of Blazor you need to know about to produce a game.
 
 ## Connect Four
 

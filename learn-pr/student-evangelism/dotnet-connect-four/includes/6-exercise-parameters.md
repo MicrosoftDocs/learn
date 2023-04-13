@@ -24,7 +24,7 @@ Parameters in Blazor are properties in our component that have been decorated wi
      = ColorTranslator.FromHtml("blue");
     ```
 
-    We use the Color type to ensure that the values passed to our Board component are in-fact colors. Let's also add a using statement to the top of the Board.razor file to indicate we're using content from the System.Drawing namespace.
+    We use the `Color` type to ensure that the values passed to our Board component are in-fact colors. Let's also add a using statement to the top of the Board.razor file to indicate we're using content from the System.Drawing namespace.
 
 1. @using System. Drawing
 Let's now interpret the parameters and place their values in the CSS block at the top of Board.razor

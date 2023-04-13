@@ -2,22 +2,26 @@
 uid: learn.gh-dotnet-connectfour
 metadata:
   title: Build Connect Four game with Blazor
-  description: Learn how to
+  description: Learn how to build a web app with Blazor
   ms.date: 03/15/2023
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Introduction to
-summary: Learn how to
+title: Build Connect Four game with Blazor
+summary: In this module, you will learn the fundamentals of Blazor while building a "Connect Four" game.
 abstract: |
   In this module you will:
-  - Learn about X
+  - Create an app in Blazor.
+  - Manage state to your app.
+  - Customize appearance using CSS.
+  - Build a "Connect Four" game.
 iconUrl: /learn/achievements/gh-dotnet-copilot.svg
 levels:
   - beginner
 roles:
   - developer
+  - student
 products:
   - vs
 prerequisites: None

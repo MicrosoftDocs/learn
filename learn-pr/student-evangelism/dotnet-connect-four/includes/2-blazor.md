@@ -1,4 +1,4 @@
-There are many approaches to build web applications. To build web applications that are highly interactive and fast, you usually use plenty JavaScript. 
+There are many approaches to build web applications. To build web applications that are highly interactive and fast, you usually use plenty of JavaScript. 
 
 Another approach is the use to the Blazor framework by Microsoft, which allows you to use a mixture of C# and JavaScript while compiling to WASM, web assembly. Assembly language that your browser knows how to run.
 
@@ -52,7 +52,7 @@ There are two approaches we look at on how you could style a Blazor component:
 
 - **Styling a component**, using a CSS isolation. Blazor components and pages have a feature called CSS isolation that allows you to create style rules that only apply to the contents of that component or page. By creating a file with the same name as our component and adding the .css filename extension, Blazor recognizes this naming as the styles that should ONLY be applied to HTML content in the Board.razor template.
 
-- Styling Blazor component, inline. Blazor components can define content to be added to the HTML head of the page using a special HeadContent tag.
+- **Inline styling**. Blazor components can define content to be added to the HTML head of the page using a special `HeadContent` tag.
 
     ```csharp
     <HeadContent>

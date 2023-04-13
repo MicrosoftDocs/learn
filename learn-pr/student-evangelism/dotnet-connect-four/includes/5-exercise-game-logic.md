@@ -101,7 +101,7 @@ We call this method `PlayPiece()` and it accepts an input parameter that specifi
     ```
 
     Here's what the code does:
-    1. We tell the game state to play a piece in the submitted column called `col` and capture the row reported by the game state.
+    1. We tell the game state to play a piece in the submitted column called `col` and capture the row the piece landed in.
     1. We can then define the 3 CSS classes to assign to the game piece to identify which player is currently acting, the column the piece was placed in, and the landing row.
     1. The last line of the method chooses the next element in the `Pieces` array and assigns these classes to that game piece.
 

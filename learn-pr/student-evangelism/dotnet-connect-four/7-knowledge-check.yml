@@ -15,15 +15,39 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: First question
-      choices:
-        - content: first choice
-          isCorrect: true
-          explanation: Correct. because reasons
-        - content: second choice
-          isCorrect: false
-        - content: third choice
-          isCorrect: false
-        - content: fourth choice
-          isCorrect: false
-          explanation: Incorrect. because reasons
+  - content: How do you respond to a click event?
+    choices:
+    - content: <span title="Click to play a piece" @click="() => PlayPiece(0)">🔽</span>
+      isCorrect: false
+      explanation: Incorrect. You should type @onclick="handler" not @click="handler".
+    - content: <span title="Click to play a piece" onclick="() => PlayPiece(0)">🔽</span>
+      isCorrect: false
+      explanation: Incorrect. You should type @onclick="handler" not onclick="handler".
+    - content: <span title="Click to play a piece" @click="() => PlayPiece(0)">🔽</span>
+      isCorrect: true
+      explanation: Correct.
+  - content: In what component method would you place logic that would initialize your component?
+    choices:
+    - content: In the OnInitialized method
+      isCorrect: true
+      explanation: Correct. This method is a good place to place such code.
+    - content: In the constructor
+      isCorrect: false
+      explanation: Incorrect.OnInitialized is the recommended method to call such code. 
+    - content: In the OnStart method
+      isCorrect: false
+      explanation: Incorrect. There's no such method OnStart. OnInitialized is the recommended method to call such code. 
+  - content: How can a component handle a specific route?
+    choices:
+    - content: Add a @route directive at the top of the component
+      isCorrect: false
+      explanation: Incorrect. The directive is called @page not @route
+    - content: Add a @page directive at the top of the component, for example @page "/my-component"
+      isCorrect: true
+      explanation: Correct.
+    - content: Inject the `RouteManager` class and register the route and its handler
+      isCorrect: false
+      explanation: Incorrect. There's no such class `RouteManager`
+     
+
+        

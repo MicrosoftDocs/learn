@@ -1,4 +1,4 @@
-In this exercise, we create a Blazor project and we start building an app that becomes a "connect four" game throughout the course of the module.
+In this exercise, we create a Blazor project and we start building an app that becomes a "Connect Four" game throughout the course of the module.
 
 ## Create a new Blazor project
 
@@ -106,7 +106,7 @@ Let's start defining a game board with the seven columns and six rows. We add a 
    </div>
    ```
 
-   When we save the board component, our application refreshes and it appears as an empty page, thanks to the "hot reloading" functionalitY that rebuilds and launches the updated app.
+   When we save the board component, our application refreshes and it appears as an empty page, thanks to the "hot reloading" functionality that rebuilds and launches the updated app.
 
    > [!NOTE]
     > You may be prompted by Visual Studio to restart your app as files change. Confirm that the application should be rebuilt on code edits, and our application will automatically restart and refresh the browser for us as we add features.
