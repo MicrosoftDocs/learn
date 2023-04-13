@@ -94,7 +94,7 @@ A transaction on Azure is an I/O operation less than or equal to 256 KiBs of thr
 
 For example, an IO with the size of 1024 KiBs (1MiB) would be processed as 4 transactions on a Standard SSD disk.
 
-Standard SSDs have a cap on the amount of transactions that will be billed in an hour. Once that cap is passed, the rest of your transactions during that hour are free. For details, see [Standard SSD transaction caps](https://techcommunity.microsoft.com/t5/azure-storage-blog/cost-saving-with-standard-ssd-billing-caps/ba-p/3758792).
+Standard SSDs have a cap on the number of transactions that will be billed in an hour. Once that cap is passed, the rest of your transactions during that hour are free. For details, see [Standard SSD transaction caps](https://techcommunity.microsoft.com/t5/azure-storage-blog/cost-saving-with-standard-ssd-billing-caps/ba-p/3758792).
 
 ## Optimize performance and costs with the optimal option
 
