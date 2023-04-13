@@ -8,4 +8,4 @@ Finally, you learned to respond to event making your app something a user could 
 
 ## Learn more
 
-- [Learn more on the Blazor framework](https://learn.microsoft.com/en-us/aspnet/core/razor-pages/?view=aspnetcore-7.0&tabs=visual-studio)
+- [Learn more on the Blazor framework](/aspnet/core/razor-pages/?view=aspnetcore-7.0&tabs=visual-studio)

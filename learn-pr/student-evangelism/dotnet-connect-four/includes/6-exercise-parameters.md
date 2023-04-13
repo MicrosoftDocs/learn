@@ -43,7 +43,7 @@ Let's now interpret the parameters and place their values in the CSS block at th
 
     This change shouldn't have changed anything in the appearance of our game board.
 
-    Let's head back to Pages/Index.razor and add some parameters to our <Board> tag and see how they change the game
+    Let's head back to *Pages/Index.razor* and add some parameters to our "<Board>" tag and see how they change the game
 
     ```csharp
     <Board 
@@ -55,4 +55,5 @@ Let's now interpret the parameters and place their values in the CSS block at th
 
     Isn't that a cool looking board?
 
-     ![](https://github.com/dotnet/intro-to-dotnet-web-dev/raw/main/5-blazor/img/4-Board.png)
+    :::image type="content" source="../media/4-Board.png" alt-text="end of game":::
+
