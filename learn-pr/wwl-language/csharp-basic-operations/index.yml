@@ -27,7 +27,6 @@ roles:
 - developer
 products:
 - dotnet
-- vs-code
 subjects:
 - development-tools
 units:
