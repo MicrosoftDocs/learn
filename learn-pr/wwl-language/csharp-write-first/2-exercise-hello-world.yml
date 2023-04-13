@@ -4,12 +4,12 @@ title: Exercise - Write your first code
 metadata:
   title: Exercise - Write your first code
   description: "Exercise - Write your first code"
-  ms.date: 02/24/2023
+  ms.date: 04/13/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-interactive: csharp
 durationInMinutes: 6
 content: |
   [!include[](includes/2-exercise-hello-world.md)]
+interactive: csharp
