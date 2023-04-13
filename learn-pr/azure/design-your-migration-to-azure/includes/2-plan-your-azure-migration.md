@@ -42,7 +42,7 @@ Several tools and services are available to help you plan and complete the four 
 
 | Service or tool | Stage | Use |
 |------|-------|-------|
-| [Azure Migrate](/azure/migrate/migrate-overview)                   | Assess and migrate   | Performs assessment and migration of VMware VMs, Hyper-V VMs, cloud VMs, and physical servers, as well as databases, data, virtual desktop infrastructure, and web applications, to Azure. |
+| [Azure Migrate](/azure/migrate/migrate-overview)                   | Assess and migrate   | Performs assessment and migration of VMware VMs, Hyper-V VMs, cloud VMs, and physical servers, to Azure. Also performs assessment and migration of databases, data, virtual desktop infrastructure, and web applications, to Azure. |
 | [Service Map](/azure/azure-monitor/insights/service-map)           | Assess   | Maps communication between application components on Windows or Linux. Helps you identify dependencies when scoping what to migrate. |
 | [Azure TCO Calculator](https://azure.microsoft.com/pricing/tco/calculator)                   | Assess   | Estimates your monthly running costs in Azure versus on-premises. |
 | [Azure Database Migration Service](/azure/dms/dms-overview)        | Migrate  | Uses the Data Migration Assistant and the Azure portal to migrate database workloads to Azure. |
@@ -94,7 +94,7 @@ Use Microsoft Cost Management to start analyzing your Azure costs at different m
 
 ### Review opportunities to improve
 
-Microsoft Cost Management shows you cost-reduction advice from Azure Advisor. The advice includes suggestions like reducing the performance of underused VMs, making use of additional discounts, or reserving resources instead of paying as you go. Azure Advisor also shows you recommendations for network security, high availability, and performance. Review the recommendations that Advisor presents to further optimize your environment.
+Microsoft Cost Management shows you cost-reduction advice from Azure Advisor. The advice includes suggestions like reducing the performance of underused VMs, making use of extra discounts, or reserving resources instead of paying as you go. Azure Advisor also shows you recommendations for network security, high availability, and performance. Review the recommendations that Advisor presents to further optimize your environment.
 
 ![Heading image for the Monitor stage.](../media/2-monitor.png)
 
