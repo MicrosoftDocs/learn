@@ -9,13 +9,13 @@ We accomplish the above goals by writing a classic four-in-a-row "Connect Four" 
 
 ## Scenario - build a "Connect Four" game
 
-You are a developer at a company building computer games. You decide to evaluate Blazor by building a game with it.
+You're a developer at a company building computer game. You decide to evaluate Blazor by building a game with it.
 
 In this game, two players alternate taking turns placing a game piece (typically a checker) in the top of the board. Game pieces fall to the lowest row of a column and the player that places four game pieces to make a line horizontally, vertically, or diagonally wins.
 
 ## What will I learn?
 
-You will learn how to:
+You'll learn how to:
 
 - Create an app in Blazor.
 - Manage state to your app.

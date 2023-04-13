@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Build Connect Four game with Blazor
-summary: In this module, you will learn the fundamentals of Blazor while building a "Connect Four" game.
+summary: In this module, you learn the fundamentals of Blazor while building a "Connect Four" game.
 abstract: |
   In this module you will:
   - Create an app in Blazor.
