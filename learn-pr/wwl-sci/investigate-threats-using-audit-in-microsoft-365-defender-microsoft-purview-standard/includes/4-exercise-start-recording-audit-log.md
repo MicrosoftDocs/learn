@@ -7,8 +7,8 @@ You have already learned that Audit (Standard) is enabled by default for all org
 
 ### Prerequisites
 
-1. You'll need a Microsoft 365 tenant with licensing that supports Microsoft 365 Defender and Microsoft Purview.
-1. To run the PowerShell cmdlets, you'll need to have Cloud Shell configured (either in the [Microsoft Azure portal](https://portal.azure.com/) or the [Microsoft 365 admin center portal](https://admin.microsoft.com/)).
+- You'll need a Microsoft 365 tenant with licensing that supports Microsoft 365 Defender and Microsoft Purview.
+- To run the PowerShell cmdlets, you'll need to have Cloud Shell configured (either in the [Microsoft Azure portal](https://portal.azure.com/) or the [Microsoft 365 admin center portal](https://admin.microsoft.com/)).
 
 > [!NOTE]
 > If you choose to perform this exercise in the unit, be aware you might incur costs in your Azure Subscription. To estimate the cost, refer to [Microsoft Sentinel Pricing](https://azure.microsoft.com/pricing/details/azure-sentinel/).
@@ -20,7 +20,7 @@ To start recording in the [Microsoft Purview compliance portal](https://complian
 > [!TIP]
 > You can perform the same steps in the [Microsoft 365 Defender portal](https://security.microsoft.com/), shown in the screenshot.
 
-:::image type="content" source="../media/Screenshot_Audit_enable.png" alt-text="Screenshot of the blue bar used to enable recording of activity.":::
+:::image type="content" source="../media/screenshot-audit-enable.png" alt-text="Screenshot of the blue bar used to enable recording of activity.":::
 
 > [!NOTE]
 > If the blue bar to **Start recording..** is not there, recording is already enabled. You can disable and reenable recording with Exchange PowerShell cmdlets.
@@ -46,10 +46,10 @@ After completing these steps, you'll have enabled Unified Audit Log recording:
 ## Check your work
 
 1. The blue Start recording bar is gone and you can enter search criteria in the form fields.
-:::image type="content" source="../media/Screenshot ready to search the UAL 2023-04-04 143906.png" alt-text="Screenshot of the Audit search form ready to perform searches.":::
+:::image type="content" source="../media/screenshot-ready-to-search-the-audit-log-2023-04-04-143906.png" alt-text="Screenshot of the Audit search form ready to perform searches." lightbox="../media/screenshot-ready-to-search-the-audit-log-2023-04-04-143906.png":::
 1. Or, using Exchange PowerShell in Azure Cloud Shell, the result of "Get-AdminAuditLogConfig | Format-List UnifiedAuditLogIngestionEnabled" is "True".
-:::image type="content" source="../media/Screenshot PowerShell ready to search 2023-04-04 144700.png" alt-text="Screenshot of the PowerShell cmdlet results in Cloud Shell.":::
+:::image type="content" source="../media/screenshot-powershell-ready-to-search-2023-04-04-144700.png" alt-text="Screenshot of the PowerShell cmdlet results in Cloud Shell.":::
 
 ## Resources
 
-[Turn auditing on or off](/microsoft-365/compliance/audit-log-enable-disable?view=o365-worldwide)
+[Turn auditing on or off](/microsoft-365/compliance/audit-log-enable-disable)

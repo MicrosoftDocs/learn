@@ -25,7 +25,7 @@ Microsoft Purview Audit (Standard) provides organizations with the ability to lo
      -  activities performed by specific users
      -  activities that occurred within a date range
     
-    :::image type="content" source="../media/audit-log-search-tool-6cf1e38b.png" alt-text="Screenshot of the audit log search tool in the Microsoft Purview compliance portal.":::
+    :::image type="content" source="../media/audit-log-search-tool-6cf1e38b.png" alt-text="Screenshot of the audit log search tool in the Microsoft Purview compliance portal." lightbox="../media/audit-log-search-tool-6cf1e38b.png":::
     
  -  **Search-UnifiedAuditLog cmdlet**. Organizations can also use the **Search-UnifiedAuditLog** cmdlet in Exchange Online PowerShell (the underlying cmdlet for the search tool) to search for audit events or to use in a script. For more information, see:
      -  [Search-UnifiedAuditLog cmdlet reference](/powershell/module/exchange/search-unifiedauditlog?azure-portal=true)
