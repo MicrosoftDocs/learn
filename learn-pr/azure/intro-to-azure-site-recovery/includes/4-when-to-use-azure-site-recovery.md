@@ -4,7 +4,7 @@ Azure Site Recovery is the appropriate solution for Adatum for the following rea
 
 - Azure Site Recovery can orchestrate the replication of virtual machines in the Australia East Azure region to the Australia Southeast region.
 
-- Azure Site Recovery can be configured to store recovery points for two weeks, which meets Adatum's goals for recovering from data corruption problems.
+- You can configre Azure Site Recovery to store recovery points for two weeks. This meets Adatum's goals for recovering from data corruption problems.
 
 - Azure Site Recovery allows test failovers to be performed without performing an actual failover, allowing you to verify that the existing virtual machine protection configuration meets Adatum's needs.
 
