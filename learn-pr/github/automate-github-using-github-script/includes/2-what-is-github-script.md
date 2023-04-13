@@ -24,15 +24,15 @@ So instead of:
 
 `octokit.issues.createComment({`
 
-You would use:
+You'd use:
 
 `github.issues.createComment({`
 
 In addition to the `github` variable, the following variables are also provided:
 
-- `context` is an object containing the [context of the workflow run](https://github.com/actions/toolkit/blob/master/packages/github/src/context.ts?azure-portal=true)
-- `core` is a reference to the [@actions/core](https://github.com/actions/toolkit/tree/master/packages/core?azure-portal=true) package
-- `io` is a reference to the [@actions/io](https://github.com/actions/toolkit/tree/master/packages/io?azure-portal=true) package
+- `context` is an object containing the [context of the workflow run](https://github.com/actions/toolkit/blob/master/packages/github/src/context.ts?azure-portal=true).
+- `core` is a reference to the [@actions/core](https://github.com/actions/toolkit/tree/master/packages/core?azure-portal=true) package.
+- `io` is a reference to the [@actions/io](https://github.com/actions/toolkit/tree/master/packages/io?azure-portal=true) package.
 
 ## Building a workflow that uses GitHub Script
 
@@ -72,23 +72,23 @@ In this case, there's only one step: the GitHub Script action.
             })
 ```
 
-Using GitHub Actions can really help automate the events that take place in your repositories. Imagine a repository visitor opened a new issue containing information about a critical bug. You may want to thank them for bringing that to your attention; however, this simple task can become overwhelming as your repository attracts more visitors. By automating an issue comment, you could automate the process of thanking visitors every single time.
+Using GitHub Actions can really help automate the events that take place in your repositories. Imagine that a repository visitor opened a new issue containing information about a critical bug. You might want to thank them for bringing that to your attention; however, this simple task can become overwhelming as your repository attracts more visitors. By automating an issue comment, you could automate the process of thanking visitors every single time.
 
 ### Using actions/github-script@0.8.0
 
 The `actions/github-script@0.8.0` action, also known as GitHub Script, does all the heavy lifting for our integration with the GitHub API.
 
-This action requires a `github-token` that will be provided at runtime so that requests are authenticated. This is automatically done for you, so you can use that code as-is.
+This action requires a `github-token` that is be provided at runtime so that requests are authenticated. This is automatically done for you, so you can use that code as-is.
 
-The `script` parameter can be virtually any JavaScript that will use the octokit/rest/js client stored in `github`. In this case, it's just one line (split across multiple lines for readability) that creates a hardcoded comment.
+The `script` parameter can be virtually any JavaScript that uses the octokit/rest/js client stored in `github`. In this case, it's just one line (split across multiple lines for readability) that creates a hardcoded comment.
 
-After the workflow is run, GitHub Script will log the code it executed for review on the **Actions** tab.
+After the workflow is run, GitHub Script logs the code it executed for review on the **Actions** tab.
 
 ![Screenshot of a completed workflow using GitHub Script.](../media/2-completed-workflow.png)
 
 ### Running from a separate file
 
-Sometimes, you may need to use significant code to fulfill your GitHub Script scenario. When that happens, you can keep the script in a separate file and reference it from the workflow instead of putting all the script inline.
+Sometimes, you might need to use significant code to fulfill your GitHub Script scenario. When that happens, you can keep the script in a separate file and reference it from the workflow instead of putting all the script inline.
 
 Here's an example of a simple workflow that does this:
 
