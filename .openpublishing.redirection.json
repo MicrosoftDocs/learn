@@ -21479,6 +21479,11 @@
       "source_path": "learn-pr/wwl-data-ai/train-machine-learning-model-azure-databricks/2-understand-spark-ml.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/machine-learning-azure-databricks/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/train-machine-learning-model-azure-databricks/4-use-other-frameworks.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/machine-learning-azure-databricks/",
+      "redirect_document_id": false
     }
   ]
 }
