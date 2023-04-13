@@ -1,4 +1,4 @@
-In this section, you make sure that your Azure DevOps organization is set up to complete the rest of this module. You also create the Azure App Service environments that you'll deploy.
+In this section, you'll make sure that your Azure DevOps organization is set up to complete the rest of this module. You also create the Azure App Service environments that you'll deploy.
 
 To accomplish these tasks, you:
 
@@ -22,7 +22,7 @@ Then sign out of Azure DevOps. Then sign in again under the Microsoft account th
 
 ## Get the Azure DevOps project
 
-Here you make sure that your Azure DevOps organization is set up to complete the rest of this module. You accomplish this task by running a template that creates a project in Azure DevOps.
+Here, you make sure that your Azure DevOps organization is set up to complete the rest of this module. You accomplish this task by running a template that creates a project in Azure DevOps.
 
 The modules in this learning path form a progression as you follow the Tailspin web team through their DevOps journey. For learning purposes, each module has an associated Azure DevOps project.
 
@@ -53,9 +53,9 @@ From the Azure DevOps Demo Generator site, follow these steps to run the templat
 
 ## Move the work item to Doing
 
-In this part, in Azure Boards, you assign yourself a work item that relates to this module. You also move the work item to the **Doing** state. In practice, your team would create work items at the start of each sprint or work iteration.
+In this part, you assign yourself a work item in Azure Boards that relates to this module. You also move the work item to the **Doing** state. In practice, your team would create work items at the start of each sprint or work iteration.
 
-Assigning work in this way gives you a checklist to work from. It gives your team visibility into what you're working on and how much work is left. It also helps the team enforce limits on work in progress (WIP) to avoid taking on too much work at one time.
+Assigning work in this way gives you a checklist from which to work. It gives your team visibility into what you're working on and how much work is left. It also helps the team enforce limits on work in progress (WIP) to avoid taking on too much work at one time.
 
 Recall that the team settled on these top issues for the current sprint:
 
@@ -79,13 +79,13 @@ To set up the work item:
 
     :::image type="content" source="../media/3-azure-boards-wi3-doing.png" alt-text="A screenshot of Azure Boards, showing the card in the Doing column.":::
 
-At the end of this module, after you complete the task, you move the card to the **Done** column.
+At the end of this module, after you complete the task, you'll move the card to the **Done** column.
 
 [!include[](../../shared/includes/deploy-local-setup.md)]
 
 ## Create the Azure App Service environments
 
-Here you create the environments that define the pipeline stages. You create one App Service instance that corresponds to each stage: _Dev_, _Test_, and _Staging_.
+Here, you create the environments that define the pipeline stages. You create one App Service instance that corresponds to each stage: _Dev_, _Test_, and _Staging_.
 
 In the [Create a multistage pipeline by using Azure Pipelines](/training/modules/create-multi-stage-pipeline?azure-portal=true) module, you used the Azure CLI to create your App Service instances. Here you'll do the same.
 
@@ -99,7 +99,7 @@ In the [Create a multistage pipeline by using Azure Pipelines](/training/modules
 
 ### Select an Azure region
 
-Here you specify the default _region_, or geographic location, where your Azure resources are to be created.
+Here, you specify the default _region_, or geographic location, where your Azure resources are to be created.
 
 1. From Cloud Shell, run the following `az account list-locations` command to list the regions that are available from your Azure subscription.
 
@@ -125,7 +125,7 @@ Here you specify the default _region_, or geographic location, where your Azure 
 
 ### Create the App Service instances
 
-Here you create the App Service instances for the three stages you'll deploy to: _Dev_, _Test_, and _Staging_.
+Here, you create the App Service instances for the three stages you'll deploy to: _Dev_, _Test_, and _Staging_.
 
 > [!NOTE]
 > For learning purposes, here, you use the default network settings. These settings make your site accessible from the internet. In practice, you could configure an Azure virtual network that places your website in a network that's not internet routable, and that's accessible only to you and your team. Later, when you're ready, you could reconfigure your network to make the website available to your users.
@@ -179,7 +179,7 @@ Here you create the App Service instances for the three stages you'll deploy to:
       --runtime "DOTNET|6.0"
     ```
 
-    For learning purposes, here, you apply the same App Service plan, **B1 Basic**, to each App Service instance. In practice, you would assign a plan that matches your expected workload.
+    For learning purposes, here, you apply the same App Service plan (**B1 Basic**) to each App Service instance. In practice, you'd assign a plan that matches your expected workload.
 
 1. Run the following `az webapp list` command to list the hostname and state of each App Service instance.
 
@@ -200,9 +200,9 @@ Here you create the App Service instances for the three stages you'll deploy to:
     tailspin-space-game-web-staging-21017.azurewebsites.net  Running
     ```
 
-1. As an optional step, go to one or more of the names to verify that they're running, and that the default home page appears.
+1. As an optional step, copy and paste one or more of the names into your browser to verify that they're running and that the default home page appears.
 
-    You see this page:
+    You should get this page:
 
     :::image type="content" source="../../shared/media/app-service-default.png" alt-text="The default home page on Azure App Service.":::
 
@@ -211,7 +211,7 @@ Here you create the App Service instances for the three stages you'll deploy to:
 
 ## Create pipeline variables in Azure Pipelines
 
-In the [Create a multistage pipeline by using Azure Pipelines](/training/modules/create-multi-stage-pipeline?azure-portal=true), you added one variable for each of the App Service instances, which correspond to the _Dev_, _Test_, and _Staging_ stages in your pipeline. Here you do the same.
+In the [Create a multistage pipeline by using Azure Pipelines](/training/modules/create-multi-stage-pipeline?azure-portal=true), you added one variable for each of the App Service instances, which correspond to the _Dev_, _Test_, and _Staging_ stages in your pipeline. Here, you do the same.
 
 Each stage in your pipeline configuration uses these variables to identify which App Service instance to deploy to.
 
@@ -239,7 +239,7 @@ To add the variables:
 
 1. Near the top of the page, select **Save** to save your variable to the pipeline.
 
-    Your variable group resembles this one:
+    Your variable group should resemble this one:
 
     :::image type="content" source="../media/3-library-variable-group.png" alt-text="A screenshot of Azure Pipelines, showing the variable group. The group contains three variables.":::
 
@@ -271,7 +271,7 @@ To create the **dev**, **test**, and **staging** environments:
 
 ## Create a service connection
 
-Here you create a service connection that enables Azure Pipelines to access your Azure subscription. Azure Pipelines uses this service connection to deploy the website to App Service. You created a similar service connection in the previous module.
+Here, you create a service connection that enables Azure Pipelines to access your Azure subscription. Azure Pipelines uses this service connection to deploy the website to App Service. You created a similar service connection in the previous module.
 
 > [!IMPORTANT]
 > Make sure that you're signed in to both the Azure portal and Azure DevOps under the same Microsoft account.
