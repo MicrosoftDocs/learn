@@ -18,7 +18,7 @@ If you're building something that integrates GitHub, the odds are good that you'
 
 ### How is using GitHub Script different from octokit/rest.js?
 
-The main difference in usage is that GitHub Script provides you with a pre-authenticated octokit/rest.js client named `github`.
+The main difference in usage is that GitHub Script provides you with a preauthenticated octokit/rest.js client named `github`.
 
 So instead of:
 
