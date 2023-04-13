@@ -1,4 +1,4 @@
-In this module, you learned about the emerging discipline of Sustainable Software Engineering. The units in this module focused on each of the eight principles that software engineers can use to make decisions that have a meaningful impact on the carbon pollution of their applications.
+In this module, you learned about the emerging discipline of Sustainable Software Engineering. The units in this module focused on each of the six principles that software engineers can use to make decisions that have a meaningful impact on the carbon pollution of their applications.
 
 1. **Carbon efficiency**: Build applications that are carbon efficient
 1. **Energy efficiency**: Build applications that are energy-efficient
