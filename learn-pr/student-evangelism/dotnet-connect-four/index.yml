@@ -16,7 +16,7 @@ abstract: |
   - Manage state to your app.
   - Customize appearance using CSS.
   - Build a "Connect Four" game.
-iconUrl: /learn/achievements/gh-dotnet-copilot.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
   - beginner
 roles:
