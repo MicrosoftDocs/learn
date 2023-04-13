@@ -1,4 +1,5 @@
 
+
 The .NET software development kit (SDK) includes a command-line interface (CLI) that can be accessed from Visual Studio Code's integrated Terminal. During this training, you use .NET CLI commands to create new console applications, build your project code, and run your applications.
 
 For example, the following .NET CLI command to create a new console application in the specified folder location:

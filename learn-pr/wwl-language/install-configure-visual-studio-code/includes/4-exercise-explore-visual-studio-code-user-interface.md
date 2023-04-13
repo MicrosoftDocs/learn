@@ -1,4 +1,5 @@
 
+
 The Visual Studio Code IDE provides tools for developers who are just starting out, but is also extensible and advanced enough for professional developers.
 
 In this exercise, you open Visual Studio Code and complete a quick tour of the IDE.
@@ -68,7 +69,7 @@ In this exercise, you open Visual Studio Code and complete a quick tour of the I
 
 1. To view the File menu options, select **File**.
 
-1. Notice the options presented on the **File** menu.
+1. Notice the **New**, **Open**, **Save**, and **Close** options listed on the **File** menu.
 
 1. Take a minute to examine the **Edit** menu options, and then each of the other top level menu items.
 
@@ -86,7 +87,7 @@ In this exercise, you open Visual Studio Code and complete a quick tour of the I
 
     You can switch between the tabs (PROBLEMS, OUTPUT, DEBUG CONSOLE, and TERMINAL) and hover the mouse pointer over the buttons (upper right) to display the button labels.
 
-1. Notice that the Terminal panel includes command prompt.
+1. Notice that the Terminal panel includes a command prompt.
 
     The Terminal panel can be used to run command line interface (CLI) commands. You'll be using CLI commands later in this module.
 
@@ -96,8 +97,22 @@ In this exercise, you open Visual Studio Code and complete a quick tour of the I
 
     The command palette can be used to find and run all sorts of useful commands. You don't have the time (or the need) to examine them in detail now, but it's good to know where to find the command palette.
 
-1. At the command palette prompt, type **user interface** and then select **Help: User Interface Overview**.
+1. At the command palette prompt, type **extensions**
 
-1. Take a minute to review the information presented on the User Interface Overview screen.
+    Notice that the list of commands is filtered based on your entry. 
+
+1. To update the filtered list of commands, change **extensions** to **help** 
+
+1. From the list of command options, select **Help: Interactive Editor Playground**.
+
+    The Editor Playground document that opens in the Editor includes a list of interactive activities.
+ 
+1. From the bulleted list of interactive activities, select **Formatting**.
+
+1. Take a minute to read about the formatting options.
+
+    You'll be using code formatting commands during hands-on activites as you learn more about C# programming.
+ 
+1. Close the Editor Playground document.
 
 That completes your tour of the Visual Studio Code user interface. Once you begin coding, the training materials continue to point out ways that Visual Studio Code can help boost your productivity.
