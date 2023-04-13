@@ -8,7 +8,7 @@ Here, we'll discuss how GitHub Script lets you automate common GitHub processes 
 
 octokit is the official collection of clients for the GitHub API. One of these clients, rest.js, provides JavaScript access to GitHub's REST interface.
 
-You've always been able to automate the GitHub API via octokit/rest.js, although it could be a chore to properly set up and maintain. One of the great advantages to using GitHub Script is that it handles all of this overhead so you can immediately start using the API. You don't need to worry about dependencies, configuration, or even authentication.
+You have always been able to automate the GitHub API via octokit/rest.js, although it could be a chore to properly set up and maintain. One of the great advantages to using GitHub Script is that it handles all of this overhead so you can immediately start using the API. You don't need to worry about dependencies, configuration, or even authentication.
 
 ### What can octokit/rest.js do?
 
@@ -78,7 +78,7 @@ Using GitHub Actions can really help automate the events that take place in your
 
 The `actions/github-script@0.8.0` action, also known as GitHub Script, does all the heavy lifting for our integration with the GitHub API.
 
-This action requires a `github-token` that is be provided at runtime so that requests are authenticated. This is automatically done for you, so you can use that code as-is.
+This action requires a `github-token` that's provided at runtime so that requests are authenticated. This is automatically done for you, so you can use that code as-is.
 
 The `script` parameter can be virtually any JavaScript that uses the octokit/rest/js client stored in `github`. In this case, it's just one line (split across multiple lines for readability) that creates a hardcoded comment.
 
