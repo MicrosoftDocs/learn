@@ -4,7 +4,7 @@ title: Create and use a compute cluster
 metadata:
   title: Create and use a compute cluster
   description: "Learn about how to create and use a compute cluster in Azure Machine Learning. A compute cluster is ideal for scalable and parallel machine learning workloads."
-  ms.date: 01/17/2023
+  ms.date: 04/10/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial

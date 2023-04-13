@@ -4,25 +4,26 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/24/2023
+  ms.date: 04/13/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3
 quiz:
+  title: ""
   questions:
-  - content: "Which of the following escape sequences (without the space between the \\ and the character) would you use to add double quotes to your literal string?"
+  - content: "Which of the following escape sequences should be used to add double quotes to a literal string in C# code?"
     choices:
-    - content: "\\q"
+    - content: "'`\\q`'"
       isCorrect: false
-      explanation: "Incorrect. \\ q isn't a valid escape sequence."
-    - content: "\\ '"
+      explanation: "Incorrect. \\q isn't a valid escape sequence."
+    - content: "'`\\'`'"
       isCorrect: false
-      explanation: "Incorrect. \\ ' is the escape sequence for a single quote, not a double quote."
-    - content: "\\ \""
+      explanation: "Incorrect. \\' is the escape sequence for a single quote, not a double quote."
+    - content: "'`\\\"`'"
       isCorrect: true
-      explanation: "Correct!"
+      explanation: "Correct. Correct, `\\\"` will display double quotes!"
   - content: "Which of the following lines of code correctly uses string interpolation assuming that the variable `value` is a string?"
     choices:
     - content: "'`Console.WriteLine(@\"My value: {value}\");`'"
@@ -34,12 +35,12 @@ quiz:
     - content: "'`Console.WriteLine(@\"My value: [value]\");`'"
       isCorrect: false
       explanation: "Incorrect. This line uses the at `@` symbol instead of the dollar `$` symbol, and square brackets instead of curly braces for the interpolation expression."
-  - content: "You embedded Unicode characters in your strings to present a special message in Thai. However, the message is only displayed as question mark characters.  What happened?"
+  - content: "Unicode characters where embedded in the C# strings for a console application to present a greeting message in Thai. However, the message is only displayed as question mark characters.  What is a possible cause?"
     choices:
-    - content: "You're missing the \\u escape sequence for Unicode characters."
+    - content: "A missing \\u escape sequence for Unicode characters."
       isCorrect: false
-      explanation: "Incorrect. If you don't use the \\u escape sequence for Unicode characters, you won't see question marks.  You see the numbers."
-    - content: "You used the wrong Unicode characters."
+      explanation: "Incorrect. If the \\u escape sequence for Unicode characters are not used, only numbers will appear, question marks won't be displayed."
+    - content: "The wrong Unicode characters were used."
       isCorrect: false
       explanation: "Incorrect. This is unlikely.  It would only be true if all the Unicode characters were the same value representing a question mark--\\u003F."
     - content: "The user's console doesn't support Unicode characters."

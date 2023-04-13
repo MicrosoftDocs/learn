@@ -8,7 +8,7 @@ In this exercise, you'll learn how to set up a condition that enables the logic 
 
 First, let's create a condition that runs the logic app whenever a certain event is published.
 
-1. In the Azure portal, the Logic app you just created should be active. If not, select **Home**, and under **Recent resources**, select the Logic app you just created.
+1. In the Azure portal, the Logic app you created should be active. If not, select **Home**, and under **Recent resources**, select the Logic app you just created.
 
 1. In the **Logic app** menu, under **Development Tools**, select **Logic app designer**. The **Logic app designer** pane for your logic app appears.
 

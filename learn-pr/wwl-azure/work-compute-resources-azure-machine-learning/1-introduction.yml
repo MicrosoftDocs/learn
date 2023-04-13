@@ -4,7 +4,7 @@ title: Introduction
 metadata:
   title: Introduction
   description: "Learn about working with compute targets in Azure Machine Learning. Specifically, you'll learn how to create and use a compute instance and compute cluster."
-  ms.date: 01/17/2023
+  ms.date: 04/10/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial

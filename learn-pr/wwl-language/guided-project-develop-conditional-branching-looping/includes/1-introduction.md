@@ -1,5 +1,6 @@
 
 
+
 It's common for developers to begin a project by developing the features that import or generate application data. Once your application has access to the data it depends on, you can begin developing the features that process data and generate reports.  
 
 Suppose you're a developer who likes to support the local community. You and some of your friends started a business that helps find new homes for stray or abandoned cats and dogs. Your business started off small, with just a couple of strays, but it's starting to grow. You want to create an application that will help you match the animals in your care with people looking for a pet. You've found that it's important to have a detailed description of the animals to share with potential owners. In addition, being able to describe the personality of the dog or cat makes them more appealing to potential owners. You decide to create an application that helps you manage information about the dogs and cats you're caring for.
@@ -30,7 +31,7 @@ In this module, you'll practice how to:
 
 ## Prerequisites
 
-- Experience using Visual Studio Code to develop, build, and run C# console applications that include console I/O and access the methods of .NET classes.
+- Experience using Visual Studio Code to develop, build, and run C# console applications that include console I/O and access methods of .NET classes.
 - Experience using C# code to evaluate conditional expressions and manage variable scope inside and outside of code blocks.
 - Experience using if-elseif-else and switch-case statements in C# to match a variable or expression against several possible outcomes.
 - Experience using foreach, for, do, and while statements in C# to loop through a block of code and access elements of array variables.
