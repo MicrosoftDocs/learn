@@ -30,7 +30,6 @@ subjects:
 units:
 - learn.wwl.use-mlflow-to-track-experiments-azure-databricks.understand-capabilities-of-mlflow
 - learn.wwl.use-mlflow-to-track-experiments-azure-databricks.terminology
-- learn.wwl.use-mlflow-to-track-experiments-azure-databricks.run-experiments
 - learn.wwl.use-mlflow-to-track-experiments-azure-databricks.summary
 badge:
   uid: learn.wwl.use-mlflow-to-track-experiments-azure-databricks.badge
