@@ -52,7 +52,7 @@ At this point, an organization is ready to search the audit log within the Micro
 1. In the **Microsoft Purview compliance** portal, select **Audit** in the **Solutions** section of the navigation pane.
 1. On the **Audit** page, configure the search using the following conditions on the **New Search** tab.
     
-    :::image type="content" source="../media/audit-log-search-tool-callouts-db4d2a76.png" alt-text="Screenshot of the Audit page on the Microsoft Purview compliance portal showing the audit log search settings." lightbox="../media/audit-log-search-tool-callouts-db4d2a76.png.png":::
+    :::image type="content" source="../media/audit-log-search-tool-callouts-db4d2a76.png" alt-text="Screenshot of the Audit page on the Microsoft Purview compliance portal showing the audit log search settings." lightbox="../media/audit-log-search-tool-callouts-db4d2a76.png":::
     
     
      -  **A. Date and time range**. Select a date and time range to display the events that occurred within that period. The date and time are presented in local time. The last seven days are selected by default.
@@ -63,7 +63,7 @@ At this point, an organization is ready to search the audit log within the Micro
      -  **B. Activities**. Select the activities to search for. Use the search box to search for activities to add to the list. For a partial list of audited activities, see [Audited activities](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?azure-portal=true). Leave this box blank to return entries for all audited activities.
      -  **C. Users**. Select in this box and start typing the name of users to display search results for. The audit log entries for the selected activities performed by the users you select in this box are displayed in the list of results. Leave this box blank to return entries for all users (and service accounts) in your organization.
      -  **D. File**, **folder**, **or site**. Type some or all of a file or folder name to search for activity related to the file of folder that contains the specified keyword. You can also specify a URL of a file or folder. If you use a URL of a file or folder, be sure the type the full URL path or if you type a portion of the URL, don't include any special characters or spaces. Leave this box blank to return entries for all files and folders in your organization.
-     - **E. Record type**. Use the search box to select a Record type from the Office 365 Management API Schemas to search for. See [AuditLogRecordType](https://learn.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype)
+     - **E. Record type**. Use the search box to select a Record type from the Office 365 Management API Schemas to search for. See [AuditLogRecordType](/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype)
      - **F. Workload**. Workloads provide more filtering combined with Activities. Workloads are a top level categorization based on products. Examples include AzureActiveDirectory, Exchange, OneDrive. They're where the activity occurred. Use the search box to enter a Workload to search for.
      - **G. Keyword Search**. Enter a Keyword to search for.
      - **H. Search name**. Optional, give the Search a name.
