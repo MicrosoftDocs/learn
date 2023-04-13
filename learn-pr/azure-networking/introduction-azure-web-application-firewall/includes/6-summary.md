@@ -4,7 +4,7 @@ In this module, you learned that Azure Web Application Firewall creates a barrie
 
 Yes, it's possible to write frontend and backend code to deter the vulnerabilities that plague modern web apps. However, there are hundreds of possible exploits to consider. Writing the code to manage a single vulnerability takes a great deal of time and requires specialized expertise. And with threat actors constantly inventing new exploits, protecting web apps in-house requires a significant commitment and a large budget.
 
-You can deploy Azure Web Application Firewall in minutes and your web apps instantly get powerful protection from hundreds of common exploits. Microsoft's security experts manage your core rule set and you can adjust the protection as needed with custom rules. You recommend Azure Web Application Firewall to Contoso IT management to help provide immediate and cost-effective protection to all your web apps.
+You can deploy Azure Web Application Firewall in minutes, and your web apps instantly get powerful protection from hundreds of common exploits. Microsoft's security experts manage your core rule set, and you can adjust the protection as needed with custom rules. You recommend Azure Web Application Firewall to Contoso IT management to help provide immediate and cost-effective protection to all your web apps.
 
 ## Learn more
 

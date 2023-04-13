@@ -4,13 +4,11 @@ title: Summary and resources
 metadata:
   title: Summary and resources
   description: "Summary and resources"
-  ms.date: 04/13/2022
+  ms.date: 02/07/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
-azureSandbox: false
-labModal: false
 durationInMinutes: 1
 content: |
   [!include[](includes/7-summary-resources.md)]

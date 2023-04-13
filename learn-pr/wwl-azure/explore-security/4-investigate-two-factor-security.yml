@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-security.investigate-two-factor-security
+title: Investigate two factor security
+metadata:
+  title: Investigate two factor security
+  description: "The investigate two factor security unit discusses two factor authentication and security as it relates to security in the broader module."
+  ms.date: 01/31/2023
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-investigate-two-factor-security.md)]

@@ -49,7 +49,7 @@ At this stage, your Static Web Apps instance is created in Azure, but your app i
 
 You can check the status of your build and deploy action by selecting the following link to go to the **Actions** page of your GitHub repository:
 
-:::image type="content" source="../media/goto-action.png" alt-text="Browse to see the progress of the GitHub Actions workflow.":::
+:::image type="content" source="../media/goto-action.png" alt-text="Screenshot showing how to browse to see the progress of the GitHub Actions workflow.":::
 
 After you're there:
 
@@ -67,7 +67,7 @@ After your GitHub Action finishes building and publishing your web app, you can 
 
 Select the *URL* link in the Azure portal to visit your app in the browser.
 
-:::image type="content" source="../media/static-web-apps-resource-overview.png" alt-text="Azure Static Web Apps overview page.":::
+:::image type="content" source="../media/static-web-apps-resource-overview.png" alt-text="Screenshot of the Azure Static Web Apps overview page.":::
 
 Your app is now globally available, but it's still stuck at *Loading data* because there's no data or API yet. You'll add the API for your web app in the next section.
 

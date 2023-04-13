@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.discover-basics-computing.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/22/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: "Check Your Knowledge"
+  questions:
+  - content: "What does a media access control (MAC) address do?"
+    choices:
+    - content: "Gives a device a unique ID on a subnet"
+      isCorrect: false
+      explanation: "That's incorrect. The internet protocol (IP) address gives a unique ID on a subnet."
+    - content: "Tells a computer which website to load"
+      isCorrect: false
+      explanation: "That's incorrect. The domain name tells the computer which website to load."
+    - content: "Gives a device a globally unique ID"
+      isCorrect: true
+      explanation: "That's correct. The MAC address is the devices special ID that no other device shares."
+  - content: "Why can two computers on two different subnets have the same IP address?"
+    choices:
+    - content: "Because their MAC addresses are different"
+      isCorrect: false
+      explanation: "That's incorrect. The MAC address doesn't tell the router which IP address to assign."
+    - content: "Because subnets are not connected to the internet"
+      isCorrect: false
+      explanation: "That's incorrect. Many subnets are connected to the internet."
+    - content: "Because subnets are controlled by separate routers"
+      isCorrect: true
+      explanation: "That's correct. The router that controls a subnet assigns IP addresses so many subnets can use the same IP addresses."
+  - content: "A new business would like its website to be available on the internet. What service enables people to find your website by using its domain name?"
+    choices:
+    - content: "Virtual Private Network"
+      isCorrect: false
+      explanation: "That's incorrect. A virtual private network, or VPN, is used to provide private access to a network for people working remotely."
+    - content: "Network Discovery Utility"
+      isCorrect: false
+      explanation: "That's incorrect. A network discovery utility can help find devices on a network but they aren't used for helping people find domain names."
+    - content: "Domain Name System"
+      isCorrect: true
+      explanation: "That's correct. The Domain Name System, or DNS, keeps track of domain names and sends people to the right computers when navigating the internet."

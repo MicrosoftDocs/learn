@@ -35,7 +35,6 @@ roles:
 - data-scientist
 products:
 - azure
-- vs-code
 subjects:
 - development-tools
 modules:

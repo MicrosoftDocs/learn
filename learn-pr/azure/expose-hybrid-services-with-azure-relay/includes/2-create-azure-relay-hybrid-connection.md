@@ -2,11 +2,11 @@ Azure Relay gives you a way to connect services across network boundaries and fi
 
 You want to move all the systems in your financial organization into the cloud. However, regulations in your jurisdiction prevent you from migrating your credit-checking service. This service must remain on-premises for data protection purposes. You need a way to connect the cloud services to the credit-checking service. Ideally, you'd prefer not to open extra ports on your on-premises firewall or to build a virtual private network.
 
-In this unit, you'll learn how Azure Relay can provide this connection.
+In this unit, you learn how Azure Relay can provide this connection.
 
 ## What is Azure Relay?
 
-Many organizations are migrating their systems to the cloud. This process is often done component-by-component, as a phased approach. Such an approach limits the impact of problems that might arise during the migration, but it has its own challenges. For example, a newly migrated cloud component often needs to communicate with another component that remains on-premises but is protected by a firewall or other security systems. 
+Many organizations are migrating their systems to the cloud. This process is often done component-by-component, as a phased approach. Such an approach limits the effect of problems that might arise during the migration, but it has its own challenges. For example, a newly migrated cloud component often needs to communicate with another component that remains on-premises but is protected by a firewall or other security systems. 
 
 In other cases, you might find that an on-premises service can't be migrated to the cloud. For example, your jurisdiction might impose extra security requirements on financial systems, which you can't comply with in a cloud system. 
 
@@ -30,7 +30,7 @@ Hybrid connections can use one of these protocols:
 - **HTTP**: This stateless protocol consists of requests such as GET and POST, and it's used to transfer webpages between web servers and browsers. Usually, HTTP uses TCP port 80 or 443 when the request is secured with Secure Sockets Layer. This protocol is widely supported and easy to code for. However, because this protocol is stateless, it's less efficient for persistent communications.
 - **WebSocket**: This protocol creates a full duplex communication channel over port 80 or 443, which is more efficient than the stateless HTTP protocol. A WebSocket connection is especially efficient when the communication consists of many messages, not just a single request and response.
 
-In this module, because the process is a simple request for a credit check, followed by a single response, you'll use a hybrid connection and the HTTP protocol.
+In this module, because the process is a simple request for a credit check, followed by a single response, you use a hybrid connection and the HTTP protocol.
 
 ## How Azure Relay works
 
@@ -38,7 +38,7 @@ Because both the cloud-hosted and on-premises components initiate the connection
 
 The following diagram shows how the connection is made:
 
-![How Azure Relay exchanges messages.](../media/2-how-relay-works.png)
+:::image type="content" source="../media/2-how-relay-works.png" alt-text="Diagram showing how Azure Relay exchanges messages.":::
 
 1. A listener requests a connection to Azure Relay. The request is sent to a relay gateway by Azure Load Balancer.
 1. The gateway creates an Azure relay in the gateway store. At this point, the listener is ready to receive messages.

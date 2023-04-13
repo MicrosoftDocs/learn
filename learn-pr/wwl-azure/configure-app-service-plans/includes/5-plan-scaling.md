@@ -1,28 +1,42 @@
-Autoscale allows you to have the right amount of resources running to handle the load on your application. It allows you to add resources to handle increases in load and also save money by removing resources that are sitting idle. You specify a minimum and maximum number of instances to run and add or remove VMs automatically based on a set of rules. When rule conditions are met, one or more autoscale actions are triggered.
+The autoscale process allows you to have the right amount of resources running to handle the load on your application. You can add resources to support increases in load and save money by removing idle resources.
 
-## Autoscale settings
+### Things to know about autoscale
 
-An autoscale setting is read by the autoscale engine to determine whether to scale out or in. Autoscale settings are grouped into profiles.
+Let's take a closer look at how to use autoscale for your Azure App Service plan and applications.
 
-:::image type="content" source="../media/web-app-autoscale-94c4da54.png" alt-text="Screenshot of the Create a Scale Condition page. The scale mode selection is Scale Based on Metric. The Scale to specific instance count selection is also shown.":::
+- To use autoscale, you specify the minimum, and maximum number of instances to run by using a set of rules and conditions.
+
+- When your application runs under autoscale conditions, the number of virtual machine instances are automatically adjusted based on your rules. When rule conditions are met, one or more autoscale actions are triggered.
+
+- An autoscale setting is read by the autoscale engine to determine whether to scale out or in. Autoscale settings are grouped into profiles.
+
+- Autoscale rules include a trigger and a scale action (in or out). The trigger can be metric-based or time-based.
+
+    :::image type="content" source="../media/web-app-autoscale-94c4da54.png" alt-text="Screenshot that shows how to create an autoscale condition in the Azure portal, including settings for the scale mode and instance count.":::
+
+   - **Metric-based** rules measure application load and add or remove virtual machines based on the load, such as "do this action when CPU usage is above 50%." Example metrics include CPU time, Average response time, and Requests.
+
+   - **Time-based** rules (or, schedule-based) allow you to scale when you see time patterns in your load and want to scale before a possible load increase or decrease occurs. An example is "trigger a webhook every 8:00 AM on Saturday in a given time zone."
 
 
-Rules include a trigger and a scale action (in or out). The trigger can be metric-based or time-based.
+- The autoscale engine uses notification settings.
 
- -  **Metric-based**. Metric-based rules measure application load and add or remove VMs based on that load. For example, do this action when CPU usage is above 50%. Examples of metrics are CPU time, Average response time, and Requests.
- -  **Time-based**. Time-based (schedule-based) rules allow you to scale when you see time patterns in your load and want to scale before a possible load increase or decrease occurs. For example, trigger a webhook every 8am on Saturday in a given time zone.
+   A notification setting defines what notifications should occur when an autoscale event occurs based on satisfying the criteria of an autoscale setting profile. Autoscale can notify one or more email addresses or make calls to one or more webhooks.
 
-## Considerations
+### Things to consider when configuring autoscale
 
- -  Having a minimum instance count makes sure your application is always running even under no load.
- -  Having a maximum instance count limits your total possible hourly cost.
- -  You can automatically scale between the minimum and maximum using rules you create.
- -  Ensure the maximum and minimum values are different and have an adequate margin between them.
- -  Always use a scale-out and scale-in rule combination that performs an increase and decrease.
- -  Choose the appropriate statistic for your diagnostics metric (Average, Minimum, Maximum and Total).
- -  Always select a safe default instance count. The default instance count is important because autoscale scales your service to that count when metrics are not available.
- -  Always configure autoscale notifications.
+There are several considerations to keep in mind when you configure autoscale for your Azure App Service plan and applications. 
 
-## Notification settings
+- **Minimum instance count**. Set a minimum instance count to make sure your application is always running even when there's no load.
 
-A notification setting defines what notifications should occur when an autoscale event occurs based on satisfying the criteria of one of the autoscale setting’s profiles. Autoscale can notify one or more email addresses or make calls to one or more webhooks.
+- **Maximum instance count**. Set a maximum instance count to limit your total possible hourly cost.
+
+- **Adequate scale margin**. Make sure your maximum and minimum instance count values are different, and set an adequate margin between the two values. You can automatically scale between the minimum and maximum by using rules you create.
+
+- **Scale rule combinations**. Always use a scale-out and scale-in rule combination that performs an increase and decrease. If you don't set a scale-out rule, your application might fail, or performance might degrade under increased loads. If you don't set a scale-in rule, you can experience unnecessary and extensive costs when the load decreases.
+
+- **Metric statistics**. Carefully choose the appropriate statistic for your diagnostic metrics, including Average, Minimum, Maximum, and Total.
+
+- **Default instance count**. Always select a safe default instance count. The default instance count is important because autoscale scales your service to the count you specify when metrics aren't available.
+
+- **Notifications**. Always configure autoscale notifications. It's important to maintain awareness of how your application is performing as the load changes.

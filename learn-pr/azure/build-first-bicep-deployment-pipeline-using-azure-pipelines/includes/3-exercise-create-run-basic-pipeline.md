@@ -5,13 +5,14 @@ You want to automate deployment of updates to your toy company's website. As a f
 In this exercise, you'll:
 
 > [!div class="checklist"]
-> * Create an Azure DevOps organization and project.
-> * Create a basic pipeline.
-> * Execute your basic pipeline.
+>
+> - Create an Azure DevOps organization and project.
+> - Create a basic pipeline.
+> - Execute your basic pipeline.
 
 ## Create a project in Azure DevOps
 
-1. In a browser, go to [dev.azure.com](https://dev.azure.com?azure-portal=true). Sign in or create a new account.
+1. In a browser, go to [dev.azure.com](https://dev.azure.com). Sign in or create a new account.
 
 1. If you created a new account, follow the prompts to create an Azure DevOps organization. Azure DevOps then prompts you to create a new project. Continue to the next step to set up the project.
 
@@ -21,14 +22,15 @@ In this exercise, you'll:
 
 1. In the **Create a project to get started** pane, enter the following details for your new project:
 
-    * **Project name**: Use a meaningful but short name. For this exercise, enter **toy-website**.
-    * **Visibility**: You can use Azure DevOps to create public and private repositories. In this case, the repository should be private because your company website files should be accessed only by people within your organization. You can grant access to other users later.
+    - **Project name**: Use a meaningful but short name. For this exercise, enter _toy-website_.
+    - **Description**: Enter a description of the project's purpose. For this exercise, enter _Toy company website.
+    - **Visibility**: You can use Azure DevOps to create public and private repositories. In this case, the repository should be private because your company website files should be accessed only by people within your organization. You can grant access to other users later.
 
     Your project configuration should look like this example:
 
     :::image type="content" source="../../includes/media/azure-devops-new-project-details.png" alt-text="Screenshot of Azure DevOps Create a project to get started pane that shows project name and visibility options highlighted.":::
 
-1. Select **Create**. 
+1. Select **Create**.
 
 ## Clone the repository
 
@@ -43,8 +45,8 @@ In this exercise, you'll:
     :::image type="content" source="../media/3-clone-visual-studio-code.png" alt-text="Screenshot showing repository settings with the Clone in VS Code button highlighted.":::
 
 1. If a dialog box appears, prompting you to allow an extension to open the repository URI, select **Open**.
- 
-1. Create a folder on your local device to use for this repository, and then select **Select Repository Location**.
+
+1. Create a folder on your local device to use for this repository, and then select **Select as Repository Location**.
 
 1. If you're using this repository for the first time, you're prompted to sign in.
 
@@ -72,9 +74,9 @@ Now that you've created your organization, project, and repository, you're ready
 
 1. In Visual Studio Code, open the Explorer.
 
-1. In **Explorer**, hover over your *TOY-WEBSITE* project folder, and select **New Folder**. Name that folder *deploy*.
+1. In **Explorer**, hover over your **TOY-WEBSITE** project folder, and select **New Folder**. Name that folder _deploy_.
 
-1. Select the *deploy* folder, and in the **TOY-WBSITE** project select **New File** icon. Name that file *azure-pipelines.yml*.
+1. Select the _deploy_ folder, and in the **TOY-WEBSITE** project select **New File** icon. Name that file _azure-pipelines.yml_.
 
     :::image type="content" source="../media/3-visual-studio-code-pipeline-file.png" alt-text="Screenshot of Visual Studio Code Explorer showing the deploy folder and the azure-pipelines dot Y M L file that was just created.":::
 
@@ -84,9 +86,11 @@ Now that you've created your organization, project, and repository, you're ready
 
 1. Save your changes to the file.
 
-1. Open a Visual Studio Code terminal window by selecting **Terminal** > **New Terminal**. A **TERMINAL** panel and an **OUTPUT** panel open.
+1. Open a Visual Studio Code terminal window by selecting **Terminal** > **New Terminal**.
 
-1. To commit and push the *azure-pipelines.yml* file to your Git repository, paste this code in the terminal panel, and then press <kbd>Enter</kbd>.
+   A terminal window opens, usually in the lower half of your screen.
+
+1. To commit and push the _azure-pipelines.yml_ file to your Git repository, paste this code in the terminal panel, and then press <kbd>Enter</kbd>.
 
     ```bash
     git add deploy/azure-pipelines.yml
@@ -98,27 +102,27 @@ Now that you've created your organization, project, and repository, you're ready
 
 You've created a pipeline definition. Next, register the pipeline with Azure Pipelines.
 
-1. In the resource menu of your Azure DevOps session, select **Pipelines**, and in the resulting **Create your first Pipeline** pane, select **Create Pipeline**.
+1. In the resource menu of your Azure DevOps session, select **Pipelines**, and in the **Create your first Pipeline** pane, select **Create Pipeline**.
 
     :::image type="content" source="../media/3-create-pipeline.png" alt-text="Screenshot of create your first pipeline pane with Pipelines highlighted in resource menu Create Pipeline button highlighted.":::
 
-1. On the **Connect** tab (**Where is your code?** pane), select **Azure Repos Git**.
+1. On the **Connect** tab's **Where is your code?** pane, select **Azure Repos Git**.
 
     :::image type="content" source="../media/3-create-pipeline-repo-type.png" alt-text="Screenshot of Where is your code pane with Azure Repos Git option selected.":::
 
-1. On the **Select** tab (**Select a repository** pane), select **toy-website**.
+1. On the **Select** tab's **Select a repository** pane, select **toy-website**.
 
     :::image type="content" source="../media/3-create-pipeline-repo.png" alt-text="Screenshot that shows Configure your pipeline tab with the toy-website repository selected.":::
 
-1. On the **Configure** tab (**Configure your pipeline** pane), select **Existing Azure Pipelines YAML file**.
+1. On the **Configure** tab's **Configure your pipeline** pane, select **Existing Azure Pipelines YAML file**.
 
     :::image type="content" source="../media/3-create-pipeline-configure.png" alt-text="Screenshot that shows Existing Azure Pipelines YAML File option highlighted.":::
 
-1. On **Select an existing YAML file** pane, in **Path** dropdown, select */deploy/azure-pipelines.yml*, and then select **Continue**.
+1. On the **Select an existing YAML file** pane's **Path** dropdown, select _/deploy/azure-pipelines.yml_, and then select **Continue**.
 
     :::image type="content" source="../media/3-create-pipeline-yaml-file.png" alt-text="Screenshot of the Azure DevOps 'Select an existing YAML file' pane, with Path set to the pipeline file and the Continue button highlighted.":::
 
-    The Review tab (**Review your Pipeline YAML** pane) shows your YAML pipeline definition as a new pipeline.
+    The Review tab's **Review your Pipeline YAML** pane shows your YAML pipeline definition as a new pipeline.
 
     > [!TIP]
     > The Azure Pipelines web interface provides an editor that you can use to manage your pipeline definition. In this module, you work with the definition file in Visual Studio Code, but you can explore the Azure Pipelines editor to see how it works.
@@ -134,7 +138,7 @@ You've created a pipeline definition. Next, register the pipeline with Azure Pip
 > [!IMPORTANT]
 > If this is your first time using pipelines in this Azure DevOps organization, you might see an error saying:
 >
-> > *No hosted parallelism has been purchased or granted.*
+> > _No hosted parallelism has been purchased or granted._
 >
 > In order to protect against misuse, Azure DevOps requires that new organizations be approved before they can use Microsoft-hosted pipeline agents without a charge.
 >

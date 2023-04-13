@@ -1,6 +1,6 @@
 In this module, you created, modified, and deployed a web app and API with user authentication to Azure Static Web Apps.
 
-As a reminder, the code for the sample project is on [GitHub in the _main_ branch](https://github.com/MicrosoftDocs/mslearn-staticwebapp-authentication/tree/main?azure-portal=true). The instructions about how to get started appear in the README file.
+As a reminder, the code for the sample project is on [GitHub in the _main_ branch](https://github.com/MicrosoftDocs/mslearn-staticwebapp-authentication/tree/main?azure-portal=true). The instructions about how to get started appears in the README file.
 
 ## Additional resources
 

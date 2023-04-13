@@ -1,4 +1,4 @@
-You have the option to treat this as a demo to just see what you can do with Translator. You fully control these resources, so if you're interested in peeking at the technical details, you can choose to dive deeper by browsing the code on GitHub or checking out the resources in the Azure portal.
+Feel free to treat this exercise as a demo, just to see what you can do with Translator. You fully control these resources. So, if you're interested in peeking at the technical details, you can choose to dive deeper by browsing the code on GitHub or checking out the resources in the Azure portal.
 
 For more guided hands-on learning on Translator, we have more Learn modules for you to check out. After learning more, you can always come back here to apply what you've learned in the free sandbox.
 
@@ -6,7 +6,7 @@ For more guided hands-on learning on Translator, we have more Learn modules for 
 
 To create the Translator resource and deploy the webapp, complete the following three steps:
 
-1. Once the Cloud Shell is loaded and shows a prompt, copy the command below and paste it into the Cloud Shell by selecting Ctrl+Shift+V on Windows and Linux, or by selecting Cmd+Shift+V on macOS.
+1. Once the Cloud Shell is loaded and shows a prompt, copy the following command and paste it into the Cloud Shell. Paste by selecting Ctrl+Shift+V on Windows and Linux, or by selecting Cmd+Shift+V on macOS.
 
     Run the following command in the Cloud Shell:
 
@@ -14,7 +14,7 @@ To create the Translator resource and deploy the webapp, complete the following 
     curl -s https://raw.githubusercontent.com/MicrosoftDocs/mslearn-intro-translator-text-to-speech/main/scripts/deploy-in-sandbox.sh | bash
     ```
 
-2. Wait several minutes for the command to run. You may finish reading this page and navigate to other pages within this module - it won't impact the running script.
+2. Wait several minutes for the command to run. You may finish reading this page and navigate to other pages within this module - it won't affect the running script.
 
 3. Activate the link to the URL displayed at the bottom of the shell. The web app will open letting you use Translator. You can also cut and paste the URL from here, but remember, it won't work until the script finishes running: https://fr-<rgn>[sandboxName]</rgn>.azurewebsites.net
 

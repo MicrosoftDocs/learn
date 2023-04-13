@@ -16,21 +16,31 @@ design data residency requirements and translate privacy requirements
 into security solutions with proper data classification and identity
 protection.
 
-## More information
+## Learn more with optional hands-on exercises
+
+> [!Note] 
+> - Students who don't already have an Azure subscription can [sign up for one free](https://azure.microsoft.com/free/)
+> - Students who don't already have a Microsoft 365 subscription can setup an [M365 E5 sandbox subscription](/office/developer-program/microsoft-365-developer-program-get-started)
+
+* [Microsoft Defender for Cloud Module 4 - Regulatory Compliance](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module-4-Regulatory-Compliance.md)
+
+## Learn more with security documentation
 
 Visit the links below for more information about the topics covered in
 this module:
 
 * [Define cloud governance corporate policy - Cloud Adoption Framework](/azure/cloud-adoption-framework/govern/policy-compliance/policy-definition)
 * [Operational compliance in Azure - Cloud Adoption Framework](/azure/cloud-adoption-framework/manage/azure-management-guide/operational-compliance?tabs=UpdateManagement%2CAzurePolicy%2CAzureBlueprints)
-* [Azure and other Microsoft cloud services compliance offerings -
-    Azure Compliance](https://learn.microsoft.com/azure/compliance/offerings/)
+* [Azure and other Microsoft cloud services compliance offerings - Azure Compliance](/azure/compliance/offerings/)
 * [Operational compliance in Azure - Cloud Adoption Framework](/azure/cloud-adoption-framework/manage/azure-management-guide/operational-compliance?tabs=UpdateManagement%2CAzurePolicy%2CAzureBlueprints)
 * [Evaluate and define corporate policy - Cloud Adoption Framework](/azure/cloud-adoption-framework/govern/corporate-policy)
 * [Regulatory compliance - Microsoft Azure Well-Architected Framework](/azure/architecture/framework/security/design-regulatory-compliance)
 * [HIPAA HITRUST 9.2](/azure/governance/policy/samples/hipaa-hitrust-9-2)
 * Visit Azure Compliance offerings to learn more about the industries
 that are covered by Azure from the compliance perspective: [Azure and other Microsoft cloud services compliance offerings - Azure Compliance](/azure/compliance/offerings/)
+
+## Learn more with video content
+
 * Watch [this webinar](https://youtu.be/tD8JnqzNOPc) for more
 information on how to track your regulatory compliance. Although this
 webinar was delivered when Microsoft Defender for Cloud was called Azure
@@ -46,6 +56,6 @@ on Allowed Locations policy
 * For more information, visit [Data Residency in
 Azure](https://azure.microsoft.com/global-infrastructure/data-residency/)
 * Watch [this video](https://youtu.be/W2bsj3ULw0Y) for more
-information about Azure Purview.
+information about Microsoft Purview.
 * Watch [this video](https://youtu.be/1REQYdZ6364) for more
 information on Azure AD Identity Protection.

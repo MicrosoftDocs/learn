@@ -1,6 +1,6 @@
 ## Built-in roles for Azure Resources (uses PowerShell)
 
-Azure AD provides several *built-in roles* to cover the most common security scenarios. To understand how the roles work, let's examine three roles that apply to all resource types:
+Azure provides several *built-in roles* to cover the most common security scenarios. To understand how the roles work, let's examine three roles that apply to all resource types:
 
 * **Owner**, which has full access to all resources, including the right to delegate access to others.
 * **Contributor**, which can create and manage all types of Azure resources but can’t grant access to others.

@@ -4,7 +4,7 @@ title: Plan a release pipeline by using Azure Pipelines
 metadata:
   title: Plan a release pipeline by using Azure Pipelines
   description: Plan a basic CD pipeline that runs on Azure Pipelines.
-  ms.custom: devdivchpfy22
+  ms.custom: devdivchpfy22, engagement-fy23
   ms.date: 08/19/2022
   author: ramiMSFT
   ms.author: rabououn

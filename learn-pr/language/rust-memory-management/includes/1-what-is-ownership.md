@@ -44,11 +44,11 @@ The variable is valid from the point at which it's declared until the end of tha
 
 ## Ownership and dropping
 
-Rust adds a twist to the idea of scopes. Whenever an object goes out of scope, it's "dropped." Dropping a variable means releasing any resources that are tied to it. For variables of files, the file ends up being closed. For variables that have allocated memory associated with them, the memory is freed.
+Rust adds a twist to the idea of scopes. Whenever an object goes out of scope, it's "dropped." Dropping a variable releases any resources that are tied to it. For variables of files, the file ends up being closed. For variables that have allocated memory associated with them, the memory is freed.
 
 In Rust, bindings that have things "associated" with them that they'll free when the binding is dropped are said to "own" those things.
 
-In our example above, the `mascot` variable owns the String data associated with it. The `String` itself owns the heap-allocated memory that holds the characters of that string. At the end of the scope, `mascot` is "dropped", the `String` it owns is dropped, and finally the memory that `String` owns is freed.
+In the previous example, the `mascot` variable owns the String data associated with it. The `String` itself owns the heap-allocated memory that holds the characters of that string. At the end of the scope, `mascot` is "dropped", the `String` it owns is dropped, and finally the memory that `String` owns is freed.
 
 ```rust
 {
@@ -72,9 +72,9 @@ The simplest example is when declaring a new binding:
 }
 ```
 
-A key thing to understand is that once ownership is transferred, the old variable is no longer valid. In our example above, after we transfer ownership of the `String` from `mascot` to `ferris`, we can no longer use the `mascot` variable.
+A key thing to understand is that once ownership is transferred, the old variable is no longer valid. In our previous example, after we transfer ownership of the `String` from `mascot` to `ferris`, we can no longer use the `mascot` variable.
 
-In Rust, "transferring ownership" is known as "moving". In other words, in the example above, the ownership of the `String` value has been *moved* from `mascot` to `ferris`.
+In Rust, "transferring ownership" is known as "moving". In other words, the ownership of the `String` value has been *moved* from `mascot` to `ferris`.
 
 If we try to use `mascot` after the `String` has been moved from `mascot` to `ferris`, the compiler won't compile our code:
 
@@ -133,7 +133,7 @@ The compiler complains that the value `s` was *moved*.
 
 As you can see in the preceding snippet, the first call to `process` transfers ownership of the variable `s`. The compiler tracks ownership, so the second call to `process` results in an error. After resources are moved, the previous owner can no longer be used.
 
-This pattern has a profound impact on the way Rust code is written. It's central to the promise of memory safety that Rust proposes.
+This pattern has a profound effect on the way Rust code is written. It's central to the promise of memory safety that Rust proposes.
 
 In other programming languages, the `String` value of the `s` variable can be implicitly copied before being passed to our function. But in Rust, this action doesn't happen.
 
@@ -141,9 +141,9 @@ In Rust, ownership transfer (that is, moving) is the default behavior.
 
 ## Copying instead of moving
 
-You might have noticed that in the (rather informative) compiler error messages above, the `Copy` trait was mentioned. We haven't talked about traits yet, but values that implement the `Copy` trait, don't get moved but are rather copied.
+In the previous example, you might have noticed the mention of the `Copy` trait in the (rather informative) compiler error messages. We haven't talked about traits yet, but a value that implements the `Copy` trait, isn't moved but is copied.
 
-Let's take a look at a value that implements the `Copy` trait: `u32`. The following code mirrors our broken code from above, but it compiles without issue.
+Let's take a look at a value that implements the `Copy` trait: `u32`. The following code mirrors our broken code, but it compiles without issue.
 
 ```rust
 fn process(input: u32) {}
@@ -155,11 +155,11 @@ fn caller() {
 }
 ```
 
-Simple types like numbers are *copy* types. They implement the `Copy` trait, which means they're copied rather than moved. The same action occurs for most simple types. Copying numbers is inexpensive, so it makes sense for these values to be copied. Copying strings or vectors or other complex types can be very expensive, so they don't implement the `Copy` trait and are instead moved.
+Simple types like numbers are *copy* types. They implement the `Copy` trait, which means they're copied rather than moved. The same action occurs for most simple types. Copying numbers is inexpensive, so it makes sense for these values to be copied. Copying strings or vectors or other complex types can be expensive, so they don't implement the `Copy` trait and are instead moved.
 
 ## Copying types that don't implement `Copy`
 
-One way to work around the errors we saw above is by *explicitly* copying types before they're moved: known as cloning in Rust. A call to `.clone` will duplicate the memory and produce a new value. The new value is moved meaning the old value can still be used.
+One way to work around the errors we saw in the previous example is by *explicitly* copying types before they're moved: known as cloning in Rust. A call to `.clone` will duplicate the memory and produce a new value. The new value is moved meaning the old value can still be used.
 
 ```rust
 fn process(s: String) {}

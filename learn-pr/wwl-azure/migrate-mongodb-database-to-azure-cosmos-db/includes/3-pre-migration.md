@@ -57,7 +57,7 @@ The discovery and assessment were all about our MongoDB Source, now it's time to
 
 We can do some capacity planning by one of two ways.
 
-- **Convert vCores to RUs**. - If the only information we know is the number of servers or the number of vCores in our current MongoDB environment, we can convert those vCores to RUs.  In the previous unit, *[Convert vCores to RUs](/training/modules/migrate-mongodb-database-to-azure-cosmos-db/2-vcore-to-rus)*, we went in more detail on how to estimate Request Units using vCores or vCPUs.
+- **Convert vCores to RUs**. - If the only information we know is the number of servers or the number of vCores in our current MongoDB environment, we can convert those vCores to RUs.  In the previous unit, *[Convert vCores to RUs](/training/modules/migrate-mongodb-database-to-azure-cosmos-db/2-virtual-core-request-units)*, we went in more detail on how to estimate Request Units using vCores or vCPUs.
 - **Using the** ***Azure Cosmos DB capacity planner***. If we have a very good idea on how much data we have, and the number of CRUD operations we do per second, we could use the capacity calculator to estimate the number of RU/s we'll need. In the previous module, we discuss this subject in detail under the *[Capacity estimation using the Azure Cosmos DB Capacity Calculator][/training/modules/get-started-mongodb-api-azure-cosmos-db/5-capacity-estimation-use-calculator]* unit.
 
     > [!NOTE]

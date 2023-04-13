@@ -6,7 +6,7 @@ further.
 
 ## Waves of probabilities
 
-The term *wave function* might be familiar to you. You might have noticed that the `DumpMachine` function that you just used refers to the quantum state as a "wave function."
+The term *wave function* might be familiar to you. You might have noticed that the `DumpMachine` function that you used refers to the quantum state as a "wave function."
 
 Physicists often use "wave function" as a synonym for the quantum state of a system. They use this term because of the Schrödinger equation we introduced at the beginning of this module. The Schrödinger equation has the same mathematical structure as classical wave equations. 
 

@@ -5,12 +5,12 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: "Check your knowledge about how to use Microsoft Graph extensions to add custom data to Microsoft Graph."
-  ms.date: 04/08/2022
+  ms.date: 01/24/2023
   author: FaithOmbongi
   ms.author: ombongifaith
   ms.topic: interactive-tutorial
   ms.prod: learning-graph
-durationInMinutes: 4
+durationInMinutes: 3
 content: |
 quiz:
   questions:

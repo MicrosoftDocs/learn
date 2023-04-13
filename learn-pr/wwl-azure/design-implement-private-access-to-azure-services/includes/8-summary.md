@@ -4,15 +4,15 @@ Now that you have reviewed this module, you should be able to:
  -  Integrate a Private Link with DNS and on-premises clients
  -  Create, configure, and provide access to Service Endpoints
  -  Configure VNET integration for App Service
- -  Repeat the title page learning objectives in this list.
+
 
 ## Resources
 
 Use these resources to discover more.
 
- -  [private endpoint overview](/azure/private-link/private-endpoint-overview)
- -  [virtual network service endpoints overview](/azure/virtual-network/virtual-network-service-endpoints-overview)
- -  [design ip addressing for Azure](/training/modules/design-ip-addressing-for-azure)
- -  [secure and isolate with nsg and service endpoints](/training/modules/secure-and-isolate-with-nsg-and-service-endpoints)
- -  [private link and dns integration at scale](/azure/cloud-adoption-framework/ready/azure-best-practices/private-link-and-dns-integration-at-scale)
- -  [app-service overview](/azure/app-service/overview)
+ -  [Private endpoint overview](/azure/private-link/private-endpoint-overview)
+ -  [Virtual network service endpoints overview](/azure/virtual-network/virtual-network-service-endpoints-overview)
+ -  [Design ip addressing for Azure](/training/modules/design-ip-addressing-for-azure)
+ -  [Secure and isolate with nsg and service endpoints](/training/modules/secure-and-isolate-with-nsg-and-service-endpoints)
+ -  [Private link and dns integration at scale](/azure/cloud-adoption-framework/ready/azure-best-practices/private-link-and-dns-integration-at-scale)
+ -  [App Service overview](/azure/app-service/overview-vnet-integration)

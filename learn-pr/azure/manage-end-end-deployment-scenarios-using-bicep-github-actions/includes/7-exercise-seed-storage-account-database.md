@@ -3,35 +3,36 @@ You updated your workflow to build and deploy your website's application to the 
 In the process, you'll:
 
 > [!div class="checklist"]
-> * Add a blob container to the Azure storage account.
-> * Add an Azure SQL logical server and database.
-> * Update the build job to build the database project into a DACPAC file.
-> * Add new variables and secrets for the Azure SQL logical server and database.
-> * Update your workflow to use the new variables and secrets.
-> * Add new workflow steps to deploy your DACPAC file.
-> * Run the workflow and view the website.
+>
+> - Add a blob container to the Azure storage account.
+> - Add an Azure SQL logical server and database.
+> - Update the build job to build the database project into a DACPAC file.
+> - Add new variables and secrets for the Azure SQL logical server and database.
+> - Update your workflow to use the new variables and secrets.
+> - Add new workflow steps to deploy your DACPAC file.
+> - Run the workflow and view the website.
 
 ## Add a storage container
 
 Your Bicep file already defines a storage account, but it doesn't define a blob container. Here, you add a blob container to your Bicep file. You also provide the name of the storage account and blob container to the application by using its configuration settings. That way, the app knows which storage account to access.
 
-1. In Visual Studio Code, open the *main.bicep* file in the *deploy* folder.
+1. In Visual Studio Code, open the _main.bicep_ file in the _deploy_ folder.
 
 1. Below the variables that define resource names (near line 27), add a new variable definition for the blob storage container's name:
 
-   :::code language="bicep" source="code/7-main.bicep" range="34" :::
+   :::code language="bicep" source="code/7-main.bicep" range="35" :::
 
 1. Update the `storageAccount` resource to define the blob container:
 
-   :::code language="bicep" source="code/7-main.bicep" range="144-161" highlight="7-17" :::
+   :::code language="bicep" source="code/7-main.bicep" range="151-168" highlight="7-17" :::
 
 1. Update the app's `appSettings` property to add two new application settings, one for the storage account name and one for the blob container name:
 
-   :::code language="bicep" source="code/7-main.bicep" range="88-123, 128-131" highlight="25-36" :::
+   :::code language="bicep" source="code/7-main.bicep" range="89-124, 129-132" highlight="25-36" :::
 
 1. At the end of the file contents, add new outputs to expose the names of the storage account and blob container:
 
-   :::code language="bicep" source="code/7-main.bicep" range="190-191" :::
+   :::code language="bicep" source="code/7-main.bicep" range="197-198" :::
 
 1. Save your changes to the file.
 
@@ -46,50 +47,50 @@ Your Bicep file already defines a storage account, but it doesn't define a blob 
 
 Your Bicep file doesn't currently deploy an Azure SQL logical server or database. In this section, you add these resources to your Bicep file.
 
-1. In the *main.bicep* file, add two new parameters below the `reviewApiKey` parameter near the top of the file:
+1. In the _main.bicep_ file, add two new parameters below the `reviewApiKey` parameter near the top of the file:
 
    :::code language="bicep" source="code/7-main.bicep" range="22-27" :::
 
 1. Below the variables that define resource names, add new variables to define the names of your Azure SQL logical server and database:
 
-   :::code language="bicep" source="code/7-main.bicep" range="35-36" :::
+   :::code language="bicep" source="code/7-main.bicep" range="36-37" :::
 
 1. Below the variables you just added, define a new variable that creates a connection string for the application to access the database:
 
-   :::code language="bicep" source="code/7-main.bicep" range="38-39" :::
+   :::code language="bicep" source="code/7-main.bicep" range="39-40" :::
 
    > [!NOTE]
    > For simplicity, the application uses the administrator login and password to access the database. This isn't good practice for a production solution, though. It's better to use an App Service managed identity to access the database, and grant the managed identity the minimum permissions needed by the application. We link to more information in the Summary page at the end of the module.
 
 1. Near the end of the file contents, above the outputs, add the Azure SQL logical server and database resources:
 
-   :::code language="bicep" source="code/7-main.bicep" range="163-186" :::
+   :::code language="bicep" source="code/7-main.bicep" range="170-193" :::
 
 1. Update the `environmentConfigurationMap` variable to define the SKUs to use for your database for each environment:
 
-   :::code language="bicep" source="code/7-main.bicep" range="42-80" highlight="14-19, 27-32" :::
+   :::code language="bicep" source="code/7-main.bicep" range="43-81" highlight="14-19, 32-37" :::
 
-1. Add an additional app setting to your App Service app for the database connection string:
+1. Add another app setting to your App Service app for the database connection string:
 
-   :::code language="bicep" source="code/7-main.bicep" range="88-131" highlight="37-40" :::
+   :::code language="bicep" source="code/7-main.bicep" range="89-132" highlight="37-40" :::
 
 1. At the bottom of the file, add outputs to expose the host name of the Azure SQL logical server and the name of the database:
 
-   :::code language="bicep" source="code/7-main.bicep" range="188-193" highlight="5-6" :::
+   :::code language="bicep" source="code/7-main.bicep" range="195-200" highlight="5-6" :::
 
 1. Save your changes to the file.
 
 ## Add new build steps for the database project
 
-Your website developers have prepared a Visual Studio database project that deploys and configures your website database table. Here, you update your workflow *build* called workflow to build the database project into a DACPAC file and upload it as a workflow artifact.
+Your website developers have prepared a Visual Studio database project that deploys and configures your website database table. Here, you update your workflow _build_ called workflow to build the database project into a DACPAC file and upload it as a workflow artifact.
 
-1. Open the *build.yml* file in the *.github/workflows* folder.
+1. Open the _build.yml_ file in the _.github/workflows_ folder.
 
-1. To build the Visual Studio database project and upload the generated DACPAC file as a workflow artifact, add the *build-database* job:
+1. To build the Visual Studio database project and upload the generated DACPAC file as a workflow artifact, add the _build-database_ job:
 
    :::code language="yaml" source="code/7-build.yml" highlight="34-51" :::
 
-   The *build-database* job uses a Windows runner. Currently, Visual Studio database projects must be built on the Windows operating system.
+   The _build-database_ job uses a Windows runner. Currently, Visual Studio database projects must be built on the Windows operating system.
 
 1. Save your changes to the file.
 
@@ -103,17 +104,17 @@ You need to securely store your Azure SQL logical server's administrator passwor
 
 1. Select the **New repository secret** button.
 
-1. Enter *SQL_SERVER_ADMINISTRATOR_LOGIN_PASSWORD_TEST* as the secret name, and *SecurePassword!111* as the value.
+1. Enter _SQL_SERVER_ADMINISTRATOR_LOGIN_PASSWORD_TEST_ as the secret name, and _SecurePassword!111_ as the value.
 
    :::image type="content" source="../media/7-secrets-new-test.png" alt-text="Screenshot of GitHub showing a new secret.":::
 
 1. Select **Add secret**.
 
-1. Repeat the process to add another secret named *SQL_SERVER_ADMINISTRATOR_LOGIN_PASSWORD_PRODUCTION* as the secret name, and *SecurePassword!999* as the value. Select **Add secret**.
+1. Repeat the process to add another secret named _SQL_SERVER_ADMINISTRATOR_LOGIN_PASSWORD_PRODUCTION_ as the secret name, and _SecurePassword!999_ as the value. Select **Add secret**.
 
 ## Add the secrets and inputs to your workflow
 
-1. In Visual Studio Code, open the *deploy.yml* file in the *.github/workflows* folder.
+1. In Visual Studio Code, open the _deploy.yml_ file in the _.github/workflows_ folder.
 
 1. At the top of the file, define a new input named `sqlServerAdministratorLogin`, and a new secret named `sqlServerAdministratorLoginPassword`:
 
@@ -121,79 +122,79 @@ You need to securely store your Azure SQL logical server's administrator passwor
 
 1. Save your changes to the file.
 
-1. Open the *workflow.yml* file.
+1. Open the _workflow.yml_ file.
 
-1. In the *deploy-test* definition, define a value for the `sqlServerAdministratorLogin` input, and propagate the value for the `sqlServerAdministratorLoginPassword` secret:
+1. In the _deploy-test_ definition, define a value for the `sqlServerAdministratorLogin` input, and propagate the value for the `sqlServerAdministratorLoginPassword` secret:
 
-   :::code language="yaml" source="code/7-workflow.yml" range="20-34" highlight="9, 15" :::
+   :::code language="yaml" source="code/7-workflow.yml" range="24-38" highlight="9, 15" :::
 
-1. Repeat the process in the *deploy-production* definition, with the production environment's values:
+1. Repeat the process in the _deploy-production_ definition, with the production environment's values:
 
-   :::code language="yaml" source="code/7-workflow.yml" range="36-53" highlight="12, 18" :::
+   :::code language="yaml" source="code/7-workflow.yml" range="40-57" highlight="12, 18" :::
 
 1. Save your changes to the file.
 
 ## Add parameter values and outputs
 
-The Bicep file now has two new mandatory parameters: `sqlServerAdministratorLogin` and `sqlServerAdministratorLoginPassword`. Here, you propagate those parameter values from your workflow inputs and secrets, for the *validate* and *deploy* jobs. You also propagate the Bicep deployments's outputs to the job's outputs.
+The Bicep file now has two new mandatory parameters: `sqlServerAdministratorLogin` and `sqlServerAdministratorLoginPassword`. Here, you propagate those parameter values from your workflow inputs and secrets, for the _validate_ and _deploy_ jobs. You also propagate the Bicep deployments's outputs to the job's outputs.
 
-1. Open the *deploy.yml* file.
+1. Open the _deploy.yml_ file.
 
-1. Update the *validate* job's *Run preflight validation* step to add the new parameters:
+1. Update the _validate_ job's _Run preflight validation_ step to add the new parameters:
 
-   :::code language="yaml" source="code/7-deploy.yml" range="34-58" highlight="23-24" :::
+   :::code language="yaml" source="code/7-deploy.yml" range="30-54" highlight="23-24" :::
 
-1. Update the *Run what-if* step to add the new parameters:
+1. Update the _Run what-if_ step to add the new parameters:
 
-   :::code language="yaml" source="code/7-deploy.yml" range="59-72" highlight="12-13" :::
+   :::code language="yaml" source="code/7-deploy.yml" range="55-68" highlight="12-13" :::
 
-1. Update the *deploy* job's *Deploy Bicep file* step to add the new parameters:
+1. Update the _deploy_ job's _Deploy Bicep file_ step to add the new parameters:
 
-   :::code language="yaml" source="code/7-deploy.yml" range="74-80, 85-106" highlight="28-29" :::
+   :::code language="yaml" source="code/7-deploy.yml" range="70-76, 81-102" highlight="28-29" :::
 
-1. In the *deploy* job's definition, add new outputs for the Bicep file's outputs:
+1. In the _deploy_ job's definition, add new outputs for the Bicep file's outputs:
 
-   :::code language="yaml" source="code/7-deploy.yml" range="74-84" highlight="8-11" :::
+   :::code language="yaml" source="code/7-deploy.yml" range="70-80" highlight="8-11" :::
 
 ## Add database and data seed jobs
 
 In this section, you define the steps that are required to deploy the database components of your website. First, you add a step to deploy the DACPAC file that the workflow previously built. Then, you add sample data to the database and storage account, but only for non-production environments.
 
-1. Below the *deploy-website* job, add a new job to deploy the DACPAC file:
+1. Below the _deploy-website_ job, add a new job to deploy the DACPAC file:
 
-   :::code language="yaml" source="code/7-deploy.yml" range="126-143" :::
+   :::code language="yaml" source="code/7-deploy.yml" range="122-139" :::
 
-1. Below the job you just added, and above the *smoke-test* job, define a new job to seed the database with sample data.
+1. Below the job you just added, and above the _smoke-test_ job, define a new job to seed the database with sample data.
 
-   :::code language="yaml" source="code/7-deploy.yml" range="145-165" :::
+   :::code language="yaml" source="code/7-deploy.yml" range="141-161" :::
 
-   Notice that the *Add test data to database* step has a condition applied to it. That is, it runs only for non-production environments. The condition is applied to the step, not to the whole job, so that later jobs can depend on this job regardless of the environment type.
+   Notice that the _Add test data to database_ step has a condition applied to it. That is, it runs only for non-production environments. The condition is applied to the step, not to the whole job, so that later jobs can depend on this job regardless of the environment type.
 
-1. Below the job you just added, and above the *smoke-test* job, define another job to upload some sample toy images to the blob container by using the Azure CLI:
+1. Below the job you just added, and above the _smoke-test_ job, define another job to upload some sample toy images to the blob container by using Azure CLI:
 
-   :::code language="yaml" source="code/7-deploy.yml" range="167-187" :::
+   :::code language="yaml" source="code/7-deploy.yml" range="163-183" :::
 
-   Notice that this job uses an Ubuntu runner, because the `azure/cli` action requires Linux to run. But the `build-database` job you defined earlier uses a Windows runner to build the database project. This workflow is a good example of using a variety of operating systems to achieve your requirements.
+   Notice that this job uses an Ubuntu runner, because the `azure/cli` action requires Linux to run. But the `build-database` job you defined earlier uses a Windows runner to build the database project. This workflow is a good example of using various operating systems to achieve your requirements.
 
 ## Update the dependencies for the smoke test job
 
-1. Update the *smoke-test* job's dependencies to ensure it runs after all of the deployment steps are completed:
+1. Update the _smoke-test_ job's dependencies to ensure it runs after all of the deployment steps are completed:
 
-   :::code language="yaml" source="code/7-deploy.yml" range="189-207" highlight="3-8" :::
+   :::code language="yaml" source="code/7-deploy.yml" range="185-203" highlight="3-8" :::
 
 1. Save your changes to the file.
 
 ## Verify files and commit your changes
 
-1. Verify that your *main.bicep* file looks like this:
+1. Verify that your _main.bicep_ file looks like this:
 
-   :::code language="bicep" source="code/7-main.bicep" highlight="22-27, 34-36, 38-39, 55-60, 73-78, 112-127, 150-160, 163-186, 190-193" :::
+   :::code language="bicep" source="code/7-main.bicep" highlight="22-27, 35-37, 39-40, 56-61, 74-79, 113-128, 157-167, 170-193, 197-200" :::
 
    If it doesn't, update it to match the file contents.
 
-1. Verify that your *deploy.yml* file looks like this:
+1. Verify that your _deploy.yml_ file looks like this:
 
-   :::code language="yaml" source="code/7-deploy.yml" highlight="15-17, 27-28, 56-57, 70-71, 81-84, 105-106, 126-187, 191-196" :::
+   :::code language="yaml" source="code/7-deploy.yml" highlight="15-17, 27-28, 52-53, 66-67, 77-80, 101-102, 122-183, 187-192" :::
 
    If it doesn't, update it to match the file contents.
 
@@ -245,7 +246,7 @@ In this section, you define the steps that are required to deploy the database c
 
 ## Clean up resources
 
-Now that you've completed the exercise, you'll want to remove the resources so that you aren't billed for them.
+Now that you've completed the exercise, you'll want to remove the Azure resources so that you aren't billed for them.
 
 In the Visual Studio Code terminal, run the following commands:
 

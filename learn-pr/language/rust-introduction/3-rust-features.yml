@@ -27,7 +27,7 @@ quiz:
       explanation: "Incorrect. Rust can be used to implement embedded functionality, but the language is well suited for all development. Programmers also use Rust to build tools, write web apps, and do high-level abstractions."
     - content: "Rust has a robust garbage collector and helps to manage memory efficiently."
       isCorrect: false
-      explanation: "Incorrect. Rust doesn't have a built-in garbage collector. Rust produces a very minimal runtime, which is also optional."
+      explanation: "Incorrect. Rust doesn't have a built-in garbage collector. Rust produces a minimal runtime, which is also optional."
 
   - content: "How is Rust code executed?"
     choices:

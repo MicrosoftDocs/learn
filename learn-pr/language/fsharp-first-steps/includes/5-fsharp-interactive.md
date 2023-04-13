@@ -1,8 +1,8 @@
-Sometimes you don't want to go through the process of creating, packaging, and distributing an application. F# Interactive is an interactive programming and scripting environment makes it simple to go from idea to code by letting you write and evaluate code in real time through the console or standalone script files.
+Sometimes you don't want to go through the process of creating, packaging, and distributing an application. F# Interactive is an interactive programming and scripting environment. It makes it simple to go from idea to code by letting you write and evaluate code in real time through the console or standalone script files.
 
 ## Starting F# Interactive
 
-F# Interactive is built into the .NET SDK and can be started with the .NET CLI `dotnet fsi` command.
+F# Interactive is built into the .NET SDK. You can start it with the .NET CLI `dotnet fsi` command.
 
 ```dotnetcli
 dotnet fsi
@@ -29,7 +29,7 @@ To evaluate your input, you must enter it after the `>` character.
 > #help;;
 ```
 
-Running the `#help` command, for example, outputs the F# Interactive help menu
+For example, if you run the `#help` command, the output shows the F# Interactive help menu.
 
 ```console
 F# Interactive directives:
@@ -49,7 +49,7 @@ F# Interactive command line options:
     See 'dotnet fsi --help' for options
 ```
 
-Note that the end of an expression is delimited by the `;;` characters. No code is evaluated until you input the `;;` characters. This is useful when writing multi-line expressions since your code is not delimited by new line characters.
+The end of an expression is delimited by the `;;` characters. No code is evaluated until you input the `;;` characters. This structure is useful when writing multi-line expressions since your code isn't delimited by new line characters.
 
 Evaluating F# code works the same way. The following code prints a message to the console.
 
@@ -57,7 +57,7 @@ Evaluating F# code works the same way. The following code prints a message to th
 > printfn "Hello World!";;
 ```
 
-The evaluated output is the following:
+The evaluated output is:
 
 ```console
 Hello World!
@@ -68,7 +68,7 @@ The first line displays the output from the evaluated code while the second line
 
 ## Exiting the REPL
 
-Once you're done using the F# Interactive REPL, use the `#q` or `#quit` commands to exit.
+After you use the F# Interactive REPL, use the `#q` or `#quit` commands to exit.
 
 ```fsharp
 > #q;;
@@ -78,13 +78,13 @@ Once you're done using the F# Interactive REPL, use the `#q` or `#quit` commands
 
 As you write more code, you can save your code in a script with the *fsx* file extension.
 
-Using the same example of printing  a message to the console, I can create a file called *my-script.fsx* to write my code in.
+If you use the same example of printing a message to the console, you can create a file called *my-script.fsx* to write your code in.
 
 ```fsharp
 printfn "Hello World!"
 ```
 
-One thing to note though is that in *fsx* files, you no longer need to use `;;` at the end of your expressions. This is because in script files, F# Interactive is able to use standard F# code formatting guidelines like indentation and new lines.
+One thing to note though is that in *fsx* files, you don't need to use `;;` at the end of your expressions. You don't need it because in script files, F# Interactive is able to use standard F# code formatting guidelines like indentation and new lines.
 
 Instead of compiling source code and then later running the compiled assembly, you can just run `dotnet fsi` and specify the name of your script file containing your F# code, and F# interactive reads the code and executes it in real time.
 

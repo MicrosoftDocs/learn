@@ -3,7 +3,7 @@ uid: learn.language.rust-introduction
 metadata:
   title: What is Rust?
   description: A quick introduction to Rust language features and how Rust compares with other programming languages.
-  ms.date: 09/01/2021
+  ms.date: 12/02/2022
   author: GitHubber17
   ms.author: chnoring
   ms.topic: interactive-tutorial
@@ -26,7 +26,6 @@ roles:
 - student
 - developer
 products:
-- vs-code
 - azure
 subjects:
 - development-tools

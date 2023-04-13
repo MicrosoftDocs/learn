@@ -1,3 +1,4 @@
+
 With MSAL.NET 3.x, the recommended way to instantiate an application is by using the application builders: `PublicClientApplicationBuilder` and `ConfidentialClientApplicationBuilder`. They offer a powerful mechanism to configure the application either from the code, or from a configuration file, or even by mixing both approaches.
 
 Before initializing an application, you first need to register it so that your app can be integrated with the Microsoft identity platform.  After registration, you may need the following information (which can be found in the Azure portal):
@@ -49,7 +50,7 @@ In the code snippets using application builders, a number of `.With` methods can
 
 ## Modifiers common to public and confidential client applications
 
-The table below lists some of the modifiers you can set on a public, or client confidential client.
+The table below lists some of the modifiers you can set on a public, or confidential client.
 
 | Modifier | Description |
 |--|--|

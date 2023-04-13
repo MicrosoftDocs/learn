@@ -4,7 +4,7 @@ title: Create a network virtual appliance (NVA) in a virtual hub
 metadata:
   title: Create a network virtual appliance (NVA) in a virtual hub
   description: "Create a network virtual appliance (NVA) in a virtual hub"
-  ms.date: 11/09/2022
+  ms.date: 01/05/2023
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
@@ -32,10 +32,10 @@ quiz:
     choices:
     - content: "NVAs are deployed into an on-premises subnet."
       isCorrect: false
-      explanation: "Incorrect, NVAs are not deployed into an on-premises subnet."
+      explanation: "Incorrect, NVAs aren't deployed into an on-premises subnet."
     - content: "NVAs are deployed directly into a Virtual WAN hub."
       isCorrect: true
       explanation: "Correct, NVAs are deployed directly into a Virtual WAN hub and have an externally facing public IP address."
     - content: "NVAs are deployed into a security-isolated subnet."
       isCorrect: false
-      explanation: "Incorrect, NVAs do not require security isolation."
+      explanation: "Incorrect, NVAs don't require security isolation."

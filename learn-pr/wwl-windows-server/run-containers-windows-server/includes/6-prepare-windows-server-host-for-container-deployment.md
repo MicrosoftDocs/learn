@@ -1,140 +1,157 @@
+> [!Note]
+> For the purpose of this Microsoft Learn module, all examples will be performed with the Docker CLI. These commands should work on Windows 10 and 11 with Docker Desktop, as well as on Windows Server with Moby or MCR. Environments with containerd will have other CLI options and the commands will differ.
+
+ 
+
 The Contoso Windows Server administrator needs to understand and source container base images, how to determine which container base images are available and appropriate to use, and how to pull base images down locally. This enables the administrator to create and run any necessary containers.
 
-## Download container-based images
+**Download container-based images**
 
-After you install the Docker Engine, the next step is to pull a base image, which is used to provide a foundational layer of OS services for your container. You can then create and run a container, which is based upon the base image.
+After you install the container runtime of choice, the next step is to pull a base image, which is used to provide a foundational layer of OS services for your container. You can then create and run a container, which is based upon the base image.
 
 A container base image includes:
 
 - The user mode OS files needed to support the provisioned application.
+
 - Any runtime files or dependencies the application requires.
+
 - Any other miscellaneous configuration files the app needs to provision and run properly.
 
-Microsoft provides the base images in the following table as a starting point to build your own container image.
+Microsoft provides the base OS images in the following table as a starting point to build your own container images.
 
-|Base image name|Details|
-|||
-|Windows Server Core|An image that contains a subset of the Windows Server application programming interfaces (APIs) such as the full .NET framework. It also includes most server roles.|
-|Nano Server|The smallest Windows Server image, with support for the .NET Core APIs and some server roles.|
-|Windows|Contains the full set of Windows APIs and system services; however, doesn't contain server roles.|
-|Windows Internet of Things (IoT) Core|A version of Windows used by hardware manufacturers for small IoT devices that run ARM or x86/x64 processors.|
+| **Base image name**| **Details** |
+| - | - |
+| Server Core| An image that contains a subset of the Windows Server application programming interfaces (APIs) such as the full .NET framework. It also includes most server roles. This image is ideal for scenarios on which an existing application is being "containerized". |
+| Nano Server| The smallest Windows Server image, with support for the .NET APIs and some server roles. This image requires the application to be written for Nano Server and is ideal for new applications that rely on Windows. |
+| Windows| Contains the full set of Windows APIs and system services; however, doesn't contain server roles. This image was replaced by the Server image starting with Windows Server 2022. |
+| Server| Similar to the Windows image, this base image contains the full set of Windows Server APIs and system services. This results in a larger container image, but higher application compatibility. This image is ideal for scenario on which an existing application is being containerized, but the Server Core image does not provide the necessary dependencies for the application. |
 
-> [!TIP]
-> To review a list of all available Microsoft container base images, from a Windows PowerShell console, run the command `docker search microsoft`.
 
-> [!NOTE]
+> [!Note]
 > The Windows host OS version must match the container OS version. To run a container based on a newer Windows build, you need to ensure that an equivalent OS version is installed on the host.
->
-> If your host server contains a newer OS version, you can use the Hyper-V isolation mode to run an older version of Windows containers.
->
-> To determine the version of Windows installed, run the `ver` command from the command prompt.
 
-You can find base images through the Docker Hub and then download them from the Microsoft Container Registry (MCR). Use the `docker pull` command to download a specific base image.
+If your host server contains a newer OS version, you can use the Hyper-V isolation mode to run an older version of Windows containers.
 
-When you enter the `docker pull` command, specify the version that matches the version of the host machine. For example, if you wanted to pull a Nano Server image based upon version 20H2, you would use the following command:
+For more information about host and container image compatibility, check out [Windows container version compatibility](/virtualization/windowscontainers/deploy-containers/version-compatibility?tabs=windows-server-2022%2Cwindows-11-21H2).
+
+You can find and download base images through the Microsoft Container Registry. Use the docker pull command to download a specific base image.
+
+> [!Important]
+> OS base images provide the Windows Server OS components and its server roles. Microsoft also provides specific images for different frameworks already installed, such as IIS, .Net Framework and .Net.
+
+When you enter the docker pull command, specify the version that matches the version of the host machine. For example, if you wanted to pull a Nano Server image based upon Windows Server 2022, you would use the following command:
 
 ```docker
-docker pull mcr.microsoft.com/windows/nanoserver:20H2
+docker pull mcr.microsoft.com/windows/nanoserver:ltsc2022
 ```
-
-If you wanted to pull a 2019 LTSC Server core image, you would use the following command:
+If you wanted to pull a Windows Server 2019 Server Core image, you would use the following command:
 
 ```docker
 docker pull mcr.microsoft.com/windows/servercore:ltsc2019
 ```
-
 After you download the base images needed for your containers, you can verify the images that are available locally and display metadata information by entering the following command:
 
 ```docker
-docker image ls
+docker images
 ```
+**Run a Windows container**
 
-## Run a Windows container
+On large-scale, production environments you most likely interact with containers via a container orchestrator, such as Kubernetes or Docker Swarm. On smaller and dev/test environments, you can create, remove, and manage containers on Windows Server via CLI.
 
-With Docker, you can create, remove, and manage containers. You can also browse the Docker Hub to access and download prebuilt images. In most organizations, the most common management tasks that use Docker include:
+You can also browse the Docker Hub or Microsoft Container Registry to access and pull prebuilt images. There are two main alternatives to build a container image to host your application:
 
-- Automating the process of creating container images by using `Dockerfile` on a Windows OS.
-- Managing containers by using Docker.
+- Build a container image using developer tools. When the application is being written by a developer, it can be packaged directly from the developer IDE, such as Visual Studio.
 
-## Automate container image creation by using Dockerfile on Windows
+- Build a container image with a dockerfile. A dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image. Tools such as Visual Studio build the dockerfile natively for a new application, but you have the option to build your own dockerfile manually.
 
-The Docker Engine includes tools for automating the process of creating container images. Although you can create container images manually, adopting an automated image-creation process provides many benefits, including:
+> [!Note]
+> There's an additional option to create container images based on a running container. This is similar to creating a Golden Image from a running VM. This method is not recommended. More details will be provided in the next section.
+
+**Automate container image creation by using dockerfile on Windows**
+
+The Docker Desktop engine and MCR include tools for automating the process of creating container images. Although you can create container images manually, adopting an automated image-creation process provides many benefits, including:
 
 - The ability to store container images as code.
+
 - The rapid and precise re-creation of container images for maintenance and upgrade purposes.
+
 - Continuous integration between container images and the development cycle.
 
-The Docker components that drive this automation are the *Dockerfile* text file and the `docker build` command:
+> [!Note]
+> Moby and containerd don't include a native image build solution. Alternatively, you can use a container image build service, such as Azure Container Registry (ACR) Tasks.
 
-- The *Dockerfile* text file contains the instructions needed to create a new container image. These instructions include the identification of an existing image to use as a base, commands to run during the image creation process, and a command that runs when new instances of the container image deploy.
-- The `docker build` Docker Engine command consumes a Dockerfile and then triggers the image-creation process.
+The Docker components that drive this automation are the dockerfile text file and the docker build command:
 
-## Manage containers by using Docker
+- The dockerfile text file contains the instructions needed to create a new container image. These instructions include the identification of an existing image to use as a base, commands to run during the image creation process, and a command that runs when new instances of the container image deploy.
 
-You can use Docker to support and manage a container environment. After you install Docker, use the following commands to create and manage your containers:
+- The docker build command consumes a dockerfile and then triggers the image-creation process.
 
-- The `docker images` command lists the available images on your container host. One reason to do this is to use existing container images as a base for new containers:
+**Manage containers by using the CLI**
 
-    ```docker
-    docker images
-    ```
+Use the following commands to create and manage your containers and container images:
 
-- The `docker run` command creates a container by using a container image. For example, the following command creates a container that's based on the Windows Server Core container image. Don't specify an isolation mode in the command, so Docker will use the default isolation mode, which is process isolation. Docker also assigns the name *IIS* to the container:
+- The docker images command lists the available images on your container host. One reason to do this is to use existing container images as a base for new containers:
 
-    ```docker
-    docker run --name IIS -it windowsservercore
-    ```
+```docker
+docker images
+```
+- The docker run command creates a container by using a container image. For example, the following command creates a container that's based on the Windows Server Core container image. Don't specify an isolation mode in the command, so Docker will use the default isolation mode, which is process isolation. The --name parameter is used to set a name to the container. The -it is used to have an interactive session with the container (as opposed to -d to run detached) and the PowerShell instruction opens a PowerShell session:
 
-- The `docker commit` command commits the changes you made to a container to a new container image. The commit operation doesn't include data contained in volumes mounted within the container. By default, the container will be paused while the new container image is being created:
+```docker
+docker run --name IIS -it mcr.microsoft.com/windows/servercore:ltsc2022 powershell
+```
+- The docker commit command commits the changes you made to a container to a new container image. The commit operation doesn't include data contained in volumes mounted within the container. By default, the container will be paused while the new container image is being created: (keep in mind this option is not recommended as a best practice to create new container images)
 
-    ```docker
-    docker commit
-    ```
+```docker
+docker commit
+```
+- The docker stop command stops a running container:
 
-- The `docker stop` command stops a running container:
+```docker
+docker stop <container name or ID>
+```
+- The docker rm command removes one or more containers:
 
-    ```docker
-    docker stop
-    ```
-
-- The `docker rm` command removes one or more containers:
-
-    ```docker
-    docker rm
-    ```
-
-## Demonstration
+```docker
+docker rm <container name or ID>
+```
+**Demonstration**
 
 The following video demonstrates how to:
 
-- Install **Docker** on **Windows Server**.
-- Install and run a Windows container.
-- Use **Windows Admin Center (WAC)** to manage containers.
+- Install **Docker CE/Moby** on **Windows Server**.
+
+- Pull a container image and run a new container interactively.
+
+- Deploy an IIS container instance and validate webpage on browser.
 
 The main steps in the process are:
 
-1. Install **Docker** on **Windows Server**.
-1. Download a **Windows Server Core** image that contains Internet Information Services (IIS). Because the container base image version must match that of the host, use the `iis:windowsservercore-ltsc2019` container.
-1. Run the following Docker command with these parameters:
-    - Run the downloaded container as a background service by using the `-d` parameter.
-    - Configure networking so that **port 80** of the container host maps to **port 80** of the container.
+1. Install **Docker CE/Moby** on **Windows Server**.
 
-    ```docker
-    Docker run -d -p 80:80 --name ContosoSite mcr.microsoft.com/windows/servercore/iis:windowsservercore-ltsc2019 cmd
-    ```
+2. Download a **Windows Server Core** image that contains Internet Information Services (IIS). Because the container base image version must match that of the host, use the iis:windowsservercore-ltsc2022 container.
 
-1. Obtain the container ID by using the following command:
+3. Run the following Docker command with these parameters:
 
-    ```docker
-    docker ps
-    ```
+	- Run the downloaded container as a background service by using the -d parameter.
 
-1. Stop the container by using the following command:
+	- Configure networking so that **port 80** of the container host maps to **port 80** of the container.
 
-    ```docker
-    docker stop
-    ```
+```docker
+Docker run -d -p 80:80 mcr.microsoft.com/windows/servercore/iis:windowsservercore-ltsc2022
+```
+4. Obtain the container ID by using the following command:
 
-1. View management information for the container by using **WAC**.
+```docker
+docker ps
+```
+5. Stop the container by using the following command:
 
- >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MzHM]
+```docker
+docker stop <container ID>
+```
+
+ > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5cqLo]
+
+
+**Quick review** 

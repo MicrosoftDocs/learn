@@ -1,10 +1,13 @@
-In this unit we'll be covering how to create queues and manage messages in Azure Queue Storage by showing code snippets from a .NET project.
+
+
+
+In this unit we're covering how to create queues and manage messages in Azure Queue Storage by showing code snippets from a .NET project.
 
 The code examples rely on the following NuGet packages:
 
 * [Azure.Core library for .NET](https://www.nuget.org/packages/azure.core/): This package provides shared primitives, abstractions, and helpers for modern .NET Azure SDK client libraries.
 * [Azure.Storage.Common client library for .NET](https://www.nuget.org/packages/azure.storage.common/): This package provides infrastructure shared by the other Azure Storage client libraries.
-* [Azure.Storage.Queues client library for .NET](https://www.nuget.org/packages/azure.storage.queues/): This package enables working with Azure Queue Storage for storing messages that may be accessed by a client.
+* [Azure.Storage.Queues client library for .NET](https://www.nuget.org/packages/azure.storage.queues/): This package enables working with Azure Queue Storage for storing messages that accessed by a client.
 * [System.Configuration.ConfigurationManager library for .NET](https://www.nuget.org/packages/system.configuration.configurationmanager/): This package provides access to configuration files for client applications.
 
 ## Create the Queue service client
@@ -17,7 +20,7 @@ QueueClient queueClient = new QueueClient(connectionString, queueName);
 
 ## Create a queue
 
-This example shows how to create a queue if it does not already exist:
+This example shows how to create a queue if it doesn't already exist:
 
 ```csharp
 // Get the connection string from app settings
@@ -94,7 +97,7 @@ if (queueClient.Exists())
 }
 ```
 
-## De-queue the next message
+## Dequeue the next message
 
 Dequeue a message from a queue in two steps. When you call `ReceiveMessages`, you get the next message in a queue. A message returned from `ReceiveMessages` becomes invisible to any other code reading messages from this queue. By default, this message stays invisible for 30 seconds. To finish removing the message from the queue, you must also call `DeleteMessage`. This two-step process of removing a message assures that if your code fails to process a message due to hardware or software failure, another instance of your code can get the same message and try again. Your code calls `DeleteMessage` right after the message has been processed.
 
@@ -120,7 +123,7 @@ if (queueClient.Exists())
 
 ## Get the queue length
 
-You can get an estimate of the number of messages in a queue. The `GetProperties` method returns queue properties including the message count. The `ApproximateMessagesCount` property contains the approximate number of messages in the queue. This number is not lower than the actual number of messages in the queue, but could be higher.
+You can get an estimate of the number of messages in a queue. The `GetProperties` method returns queue properties including the message count. The `ApproximateMessagesCount` property contains the approximate number of messages in the queue. This number isn't lower than the actual number of messages in the queue, but could be higher.
 
 ```csharp
 /// Instantiate a QueueClient which will be used to manipulate the queue

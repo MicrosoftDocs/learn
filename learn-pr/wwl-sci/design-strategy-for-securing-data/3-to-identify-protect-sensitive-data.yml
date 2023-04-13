@@ -4,13 +4,11 @@ title: Design a strategy to identify and protect sensitive data
 metadata:
   title: Design a strategy to identify and protect sensitive data
   description: "Design a strategy to identify and protect sensitive data"
-  ms.date: 07/20/2022
+  ms.date: 02/07/2023
   author: wwlpublish
   ms.author: hrasheed
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 10
 content: |
   [!include[](includes/3-to-identify-protect-sensitive-data.md)]

@@ -3,17 +3,16 @@ uid: learn.iot.introduction-azure-rtos
 metadata:
   title: Introduction to Azure RTOS
   description: Description TBD
-  ms.date: 01/27/2022
+  ms.date: 04/19/2022
   author: timlt
   ms.author: timlt
   ms.reviewer: liydu
   manager: lizross
-  ms.custom: engagement-fy23
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Azure RTOS
 summary: Learn the basics of RTOS.
-abstract:  | 
+abstract: |
   In this module, you will:
   - Learn the basic components of an RTOS
   - Learn what an RTOS does
@@ -21,17 +20,17 @@ prerequisites: |
   - None, although a working knowledge of C or C++, GitHub and Visual Studio will be most helpful.
 iconUrl: /training/achievements/iot/introduction-azure-rtos.svg
 levels:
-- beginner
+  - beginner
 roles:
-- developer
+  - developer
 products:
-- azure
-- azure-iot
-- azure-rtos
+  - azure
+  - azure-iot
+  - azure-rtos
 subjects:
-- iot
+  - iot
 units:
- - learn.iot.introduction-azure-rtos.introduction
- - learn.iot.introduction-azure-rtos.set-up-environment
+  - learn.iot.introduction-azure-rtos.introduction
+  - learn.iot.introduction-azure-rtos.set-up-environment
 badge:
-  uid: learn.iot.introduction-azure-rtos.badge 
+  uid: learn.iot.introduction-azure-rtos.badge

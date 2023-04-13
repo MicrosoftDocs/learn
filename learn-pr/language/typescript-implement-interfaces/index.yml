@@ -34,7 +34,6 @@ roles:
 - student
 products:
 - azure
-- vs-code
 units:
 - learn.language.typescript-implement-interfaces.1-introduction
 - learn.language.typescript-implement-interfaces.2-interfaces-typescript

@@ -25,8 +25,11 @@ roles:
 - administrator
 products:
 - azure
+- azure-lighthouse
 subjects:
 - information-protection-governance
+- cloud-computing
+- identity-access
 units:
 - learn.govern-monitor-secure-resources-azure-lighthouse.1-introduction
 - learn.govern-monitor-secure-resources-azure-lighthouse.2-view-manage-service-provider-activities

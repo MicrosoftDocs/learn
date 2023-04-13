@@ -1,3 +1,4 @@
+
 Segmentation is about dividing something into smaller pieces. An organization, for example, will typically consist of smaller business groups such as human resources, sales, customer service, and more. In an office environment, it's common to see each business group have their own dedicated office space, while members of the same group share an office.  This enables members of the same business group to collaborate, while maintaining separation from other groups to address the confidentiality requirements of each business.
 
 The same concept applies with corporate IT networks.  The main reasons for network segmentation are:

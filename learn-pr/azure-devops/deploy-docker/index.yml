@@ -2,23 +2,27 @@
 uid: learn.azdo.deploy-docker
 metadata:
   title: Automate Docker container deployments with Azure Pipelines
-  description: Implement a CI/CD pipeline for Docker containers.
-  ms.date: 08/04/2022
+  description: Use Azure Pipelines to deploy Docker containers to Azure App Service.
+  ms.date: 03/13/2023
   author: ramiMSFT
   ms.author: rabououn
-  ms.custom: devdivchpfy22
+  ms.custom: devdivchpfy22, engagement-fy23
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Automate Docker container deployments with Azure Pipelines
-summary: Implement a CI/CD pipeline for Docker containers.
+summary: Use Azure Pipelines to deploy Docker containers to Azure App Service.
 abstract: |
   After completing this module, you'll be able to:
   - Create Azure resources to support a Docker container web application
-  - Update a basic release pipeline to build, publish, and deploy a Docker container
-  - Monitor the build, release, and deployment of your project
+  - Use YAML pipelines to build, publish, and deploy a Docker container
+  - Monitor the build and deployment of your project
+
+  > [!NOTE]
+  > if you just want to learn how to deploy Docker containers to Azure Web App for Containers, please refer to the [Deploy to Azure Web App for Containers](/azure/devops/pipelines/apps/cd/deploy-docker-webapp) guide.
+
 prerequisites: |
   - An Azure subscription
-  - An Azure DevOps organization
+  - An Azure DevOps organization with access to **Microsoft-hosted** parallel jobs. [Check your parallel jobs and request a free grant](/azure/devops/pipelines/troubleshooting/troubleshooting#check-for-available-parallel-jobs).
   - A GitHub account
 iconUrl: /training/achievements/azure-devops/deploy-docker.svg
 levels:

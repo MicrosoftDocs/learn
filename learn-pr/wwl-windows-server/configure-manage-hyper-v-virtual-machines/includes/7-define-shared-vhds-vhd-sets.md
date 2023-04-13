@@ -1,4 +1,4 @@
-As Contoso prepares for the VM migrations, certain scenarios might require sharing of a single VHD between multiple VMs. This typically occurs when you incorporate high availability by using VMs that you configure to support failover clustering. Hyper-V in Windows Server 2019 supports two methods for sharing a VHD between multiple VMs: shared VHDs and VHD Sets.
+As Contoso prepares for the VM migrations, certain scenarios might require sharing of a single VHD between multiple VMs. This typically occurs when you incorporate high availability by using VMs that you configure to support failover clustering. Hyper-V in Windows Server 2022 supports two methods for sharing a VHD between multiple VMs: shared VHDs and VHD Sets.
 
 ## Shared VHDs
 

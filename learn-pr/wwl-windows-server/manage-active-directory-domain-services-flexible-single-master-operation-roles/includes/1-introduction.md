@@ -1,7 +1,6 @@
+Learn about essential management and maintenance tasks for Active Directory Domain Services (AD DS) domain controllers, including their deployment, backup and recovery, and schema management. Find out about design considerations regarding the optimal number, roles, and location of domain controllers.
 
-Learn about essential management and maintenance tasks for Microsoft Azure Active Directory Domain Services (Azure AD DS) domain controllers, including their deployment, backup and recovery, and schema management. Find out about design considerations regarding the optimal number, roles, and location of domain controllers.
-
-## Scenario    
+## Scenario
 
 Contoso, Ltd. is a financial services company in Seattle with major offices located throughout the world. Most of its compute environment runs on-premises on Windows Server. This includes virtualized workloads on Windows Server 2016 hosts.
 
@@ -11,19 +10,19 @@ As a newly hired Windows Server administrator, you'll be responsible for managin
 
 After completing this module, you'll understand how to accomplish these tasks.
 
-## Learning objectives      
+## Learning objectives
 
 After completing this module, you'll be able to:
 
-- Deploy and maintain AD DS domain controllers.
-- Describe the AD DS global catalog role and its placement considerations.
-- Describe AD DS operations master roles, their placement considerations, and their management tasks.
-- Describe the AD DS schema and its management tasks.
+ -  Deploy and maintain AD DS domain controllers.
+ -  Describe the AD DS global catalog role and its placement considerations.
+ -  Describe AD DS operations master roles, their placement considerations, and their management tasks.
+ -  Describe the AD DS schema and its management tasks.
 
 ## Prerequisites
 
 To get the best learning experience from this module, it's important that you have knowledge and experience of the following areas:
 
-- Windows Server 2012 or Windows Server 2016.
-- Core networking technologies.
-- AD DS.
+ -  Windows Server 2012 or Windows Server 2016.
+ -  Core networking technologies.
+ -  AD DS.

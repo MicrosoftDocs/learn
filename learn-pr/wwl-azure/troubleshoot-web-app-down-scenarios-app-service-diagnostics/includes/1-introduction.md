@@ -21,5 +21,3 @@ After completing this module, you’ll be able to:
 - Ability to navigate the Azure portal
 
 - A basic understanding of web app performance would be helpful but isn't required
-
- 

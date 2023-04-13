@@ -1,16 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.azure-active-directory.azure-ad-vs-ad-ds
-title: Compare Azure AD vs Active Directory Domain Services
+title: Self-managed Active Directory Domain Services, Azure Active Directory, and managed Azure Active Directory Domain Services
 metadata:
-  title: Compare Azure AD vs Active Directory Domain Services
-  description: "Compare Azure AD vs Active Directory Domain Services"
-  ms.date: 10/18/2022
+  title: Self-managed Active Directory Domain Services, Azure Active Directory, and managed Azure Active Directory Domain Services
+  description: "Self-managed Active Directory Domain Services, Azure Active Directory, and managed Azure Active Directory Domain Services"
+  ms.date: 04/04/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  zone_pivot_groups: None
 durationInMinutes: 5
 content: |
   [!include[](includes/3-compare.md)]

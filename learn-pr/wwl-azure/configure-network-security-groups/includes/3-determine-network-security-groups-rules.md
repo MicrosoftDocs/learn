@@ -1,26 +1,36 @@
-Security rules in network security groups enable you to filter the type of network traffic that can flow in and out of virtual network subnets and network interfaces. Azure creates several default security rules within each network security group.
+Security rules in network security groups enable you to filter network traffic. You can define rules to control the traffic flow in and out of virtual network subnets and network interfaces.
 
-You can add more rules by specifying:
+### Things to know about security rules
 
- -  Name
- -  Priority
- -  Port
- -  Protocol (Any, TCP, UDP)
- -  Source (Any, IP Addresses, Service tag)
- -  Destination (Any, IP Addresses, Virtual Network)
- -  Action (Allow or Deny)
+Let's review the characteristics of security rules in network security groups.
 
-Azure creates the default rules in each network security group that you create. You cannot remove the default rules, but you can override them by creating rules with higher priorities.
+- Azure creates several default security rules within each network security group, including inbound traffic and outbound traffic. Examples of default rules include `DenyAllInbound` traffic and `AllowInternetOutbound` traffic.
 
-## Inbound rules
+- Azure creates the default security rules in each network security group that you create.
 
-There are three default inbound security rules. The rules deny all inbound traffic except from the virtual network and Azure load balancers.
+- You can add more security rules to a network security group by specifying conditions for any of the following settings:
+   - **Name**
+   - **Priority**
+   - **Port**
+   - **Protocol** (Any, TCP, UDP)
+   - **Source** (Any, IP addresses, Service tag)
+   - **Destination** (Any, IP addresses, Virtual network)
+   - **Action** (Allow or Deny)
 
-:::image type="content" source="../media/inbound-rules-a554314b.png" alt-text="Screenshot of the default inbound security rules.":::
+- Each security rule is assigned a Priority value. All security rules for a network security group are processed in priority order. When a rule has a low Priority value, the rule has a higher priority or precedence in terms of order processing.
 
+- You can't remove the default security rules.
 
-## Outbound rules
+- You can override a default security rule by creating another security rule that has a higher Priority setting for your network security group.
 
-There are three default outbound security rules. The rules only allow outbound traffic to the Internet and the virtual network.
+#### Inbound traffic rules
 
-:::image type="content" source="../media/outbound-rules-ff90d802.png" alt-text="Screenshot of the default outbound security rules.":::
+Azure defines three default inbound security rules for your network security group. These rules **deny all inbound traffic** except traffic from your virtual network and Azure load balancers. The following image shows the default inbound security rules for a network security group in the Azure portal.
+
+:::image type="content" source="../media/inbound-rules-a554314b.png" alt-text="Screenshot that shows default inbound security rules for a network security group in the Azure portal.":::
+
+#### Outbound traffic rules
+
+Azure defines three default outbound security rules for your network security group. These rules **only allow outbound traffic** to the internet and your virtual network. The following image shows the default outbound security rules for a network security group in the Azure portal.
+
+:::image type="content" source="../media/outbound-rules-ff90d802.png" alt-text="Screenshot that shows default outbound security rules for a network security group in the Azure portal.":::

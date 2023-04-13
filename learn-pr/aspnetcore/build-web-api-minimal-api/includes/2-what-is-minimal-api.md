@@ -8,7 +8,7 @@ If you've developed a .NET web API, you've used an approach that uses controller
 
 What's the difference between the controller-based approach and minimal API?
 
-- **Streamlined *Program.cs*:** The template for the controller-based web API wires up the controllers using the `AddControllers` method. In addition, it wires up Swagger to provide Open API support. Minimal APIs don't have this wiring by default, though you can add Swagger if you wish.
+- **Streamlined *Program.cs*:** The template for the controller-based web API wires up the controllers using the `AddControllers` method. In addition, it wires up Swagger to provide OpenAPI support. Minimal APIs don't have this wiring by default, though you can add Swagger if you wish.
 - **Routing looks a little different:** The routing looks slightly different compared to a controller-based web API. In a web API, for routing you write code as shown:
 
    ```csharp
@@ -26,7 +26,7 @@ What's the difference between the controller-based approach and minimal API?
    app.MapGet("/todos", await (TodoDb db) => db.Todos.ToListAsync());
    app.MapPost("/todos", await (Todo todo) => {});
    app.MapPut("/todos", (Todo todo) => {});
-   app.MapDelete("/todos/{id}", (int id) => {}});
+   app.MapDelete("/todos/{id}", (int id) => {});
    ```
 
 The same functionality is still there. You still configure a database, set up CORS, and add authentication in much the same way that you're used to.
@@ -119,43 +119,43 @@ To run your code, you start your project, like any .NET project, with `dotnet ru
 
 Documentation is something you want for your API. You want it for yourself, your colleagues, and any third-party developers who might want to use your API. It's key to keep the documentation in sync with your API as it changes. A good approach is to describe your API in a standardized way and ensure it's self-documenting. By *self-documenting*, we mean that if the code changes, the documentation changes with it.
 
-Swagger implements the Open API specification. This format describes your routes but also what data they accept and produce. Swagger UI is a collection of tools that render the Open API specification as a website and let you interact with your API via the website.
+Swagger implements the OpenAPI specification. This format describes your routes but also what data they accept and produce. Swagger UI is a collection of tools that render the OpenAPI specification as a website and let you interact with your API via the website.
 
 To use Swagger and the Swagger UI in your API, you do two things:
 
 - **Install a package.** To install Swagger, you specify to install a package called Swashbuckle:
 
-   ```bash
-   dotnet add package Swashbuckle.AspNetCore --version 6.1.4   
-   ```
+    ```bash
+    dotnet add package Swashbuckle.AspNetCore --version 6.1.4   
+    ```
 
 - **Configure it.** After the package is installed, you configure it via your code. You add a few different entries:
 
    - Add a namespace. You need this namespace when you later call `SwaggerDoc()` and provide the header information for your API.
    
-       ```csharp
-       using Microsoft.OpenApi.Models;
-       ```
+     ```csharp
+     using Microsoft.OpenApi.Models;
+      ```
 
    - Add `AddSwaggerGen()`. This method sets up header information on your API, like what it's called and the version number.
 
-   ```csharp
-   builder.Services.AddEndpointsApiExplorer();
-   builder.Services.AddSwaggerGen(c =>
-    {
-        c.SwaggerDoc("v1", new OpenApiInfo { Title = "Todo API", Description = "Keep track of your tasks", Version = "v1" });
-    });
-   ```
+     ```csharp
+     builder.Services.AddEndpointsApiExplorer();
+     builder.Services.AddSwaggerGen(c =>
+       {
+           c.SwaggerDoc("v1", new OpenApiInfo { Title = "Todo API", Description = "Keep track of your tasks", Version = "v1" });
+       });
+     ```
 
    - Add `UseSwagger()` and `UseSwaggerUI()`. These two code lines tell the API project to use Swagger and also where to find the specification file *swagger.json*.
 
-   ```csharp
-   app.UseSwagger();
-   app.UseSwaggerUI(c =>
-    {
-       c.SwaggerEndpoint("/swagger/v1/swagger.json", "Todo API V1");
-    });
-   ```
+     ```csharp
+     app.UseSwagger();
+     app.UseSwaggerUI(c =>
+       {
+         c.SwaggerEndpoint("/swagger/v1/swagger.json", "Todo API V1");
+       });
+     ```
 
 That's all that's involved with building a minimal API! Starting the project and navigation to *http://localhost:5000/swagger* displays something like this:
 

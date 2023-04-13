@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.threat-response-sentinel-playbooks.7-summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Describes how to set up automated response on threats using Microsoft Sentinel Playbooks."
+  ms.date: 01/25/2023
+  author: wwlpublish
+  ms.author: kelawson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-summary.md)]

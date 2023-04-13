@@ -6,7 +6,7 @@ Once you have keys and secrets stored in the key vault it is very important to t
 
 This diagram shows how Event Grid and Function Apps can be used to automate the process.
 
-:::image type="content" source="../media/az500-key-vault-rotation-0d01efe7.png" alt-text="A key is updated using event grid and function apps.":::
+:::image type="content" source="../media/az500-key-vault-rotation-0d01efe7.png" alt-text="Screenshot of a key is updated using Event Grid and function apps.":::
 
 
 1.  Thirty days before the expiration date of a secret, Key Vault publishes the "near expiry" event to Event Grid.

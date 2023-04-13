@@ -4,8 +4,8 @@ metadata:
   title: Set and view alerts in your Log Analytics workspace
   description: Set and view alerts fin your Log Analytics workspace.
   ms.date: 04/22/2022
-  author: MarkusVi
-  ms.author: markvi
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Set and view alerts in your Log Analytics workspace

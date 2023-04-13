@@ -5,7 +5,7 @@ metadata:
   unitType: knowledge_check
   title: "Knowledge check"
   description: "Knowledge check"
-  ms.date: 10/10/2022
+  ms.date: 01/06/2023
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial # do we need ms.topic?
@@ -39,7 +39,7 @@ quiz:
       explanation: Incorrect. The parameter's default value is set through the `uniqueString()` function, which has been seeded with the ID of the resource group. So the value that the `uniqueString()` function returns will be the same whenever the template is deployed in the same resource group in the same Azure subscription.
     - content: When the template is deployed to the same resource group in the same subscription repeatedly, the `siteName` parameter's default value will be the same each time.
       isCorrect: true
-      explanation: Correct. The default value of the `siteName` parameter uses the `uniqueString()` function, which has been seeded with the ID of the resource group. So the value that the `uniqueString()` function returns will be the same whenever the template is deployed in the same resource group in the same Azure subscription.
+      explanation: Correct. The `siteName` parameter's default value uses string interpolation to combine the string prefix `mysite-` with a value from the `uniqueString()` function, which is seeded with the resource group ID. The value that the `uniqueString()` function returns will be the same whenever the template is deployed in the same resource group in the same Azure subscription.
   - content: The Bicep template that the IT department wrote has two modules in it. Which of these statements is true?
     choices:
     - content: If an output is added to one of the modules, it will automatically be published as an output from the parent template too.

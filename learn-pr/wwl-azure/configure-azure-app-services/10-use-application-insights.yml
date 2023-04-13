@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-azure-app-services.use-application-insights
-title: Use Application Insights
+title: Use Azure Application Insights
 metadata:
-  title: Use Application Insights
-  description: "Use Application Insights"
-  ms.date: 11/18/2022
+  title: Use Azure Application Insights
+  description: "Use Azure Application Insights"
+  ms.date: 01/18/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial

@@ -4,13 +4,11 @@ title: Evaluate Azure Storage redundancy options
 metadata:
   title: Evaluate Azure Storage redundancy options
   description: "Evaluate Azure Storage redundancy options"
-  ms.date: 09/29/2022
+  ms.date: 02/07/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/5-azure-storage-redundancy.md)]

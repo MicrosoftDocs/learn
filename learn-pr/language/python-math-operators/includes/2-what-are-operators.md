@@ -65,7 +65,7 @@ print(display_minutes)
 # Output: 17
 ```
 
-The next step is to determine the number of seconds. This is the remainder of `1042` if you divide by `60`. You can find the remainder by using the [modulo](https://en.wikipedia.org/wiki/Modulo_operation) operator, which is `%` in Python. The remainder of `1042 / 60` is `22`, which is what the modulo operator will provide.
+The next step is to determine the number of seconds. This number is the remainder of `1042` if you divide by `60`. You can find the remainder by using the [modulo](https://en.wikipedia.org/wiki/Modulo_operation) operator, which is `%` in Python. The remainder of `1042 / 60` is `22`, which is what the modulo operator will provide.
 
 ```python
 seconds = 1042
@@ -89,7 +89,7 @@ Python honors the order of operation for math. The order of operation dictates t
 1. Multiplication and division
 1. Addition and subtraction
 
-Notice how parentheses are evaluated before any other operations. This allows you to ensure code is run in a predictable manner, and your code becomes easier to read and maintain. As a result, it's a best practice to use parentheses even if order of operation would evaluate the same way without them. In the following two lines of code, the second one is more understandable because the parenthesis is a clear indication of what operation will be performed first.
+Notice how parentheses are evaluated before any other operations. Using parentheses allows you to ensure code is run in a predictable manner, and your code becomes easier to read and maintain. As a result, it's a best practice to use parentheses even if order of operation would evaluate the same way without them. In the following two lines of code, the second one is more understandable because the parentheses give a clear indication of what operation will be performed first.
 
 ```python
 result_1 = 1032 + 26 * 2

@@ -1,6 +1,5 @@
 In this section, you'll write your first Go program to print a message to the screen. This exercise is a typical way to get started in a programming language. You'll learn more about the Go command-line interface (CLI), and how to build and run a Go application.
 
-
 ## Configure the IDE to open from the CLI
 
 You can open the Visual Studio Code IDE from your CLI prompt and start editing the files in your current workspace. This IDE feature is implemented by using the **$PATH** (or _$Path_) system environment variable. When the feature is enabled, you can use the `code .` command from the CLI to open the IDE and edit files in your current directory.
@@ -34,19 +33,19 @@ Follow these steps to register the Visual Studio Code CLI in your $PATH environm
 
 Follow these steps to add the location of the Visual Studio Code CLI to your $Path system environment variable:
 
-> [!Note]
+> [!NOTE]
 > If you're familiar with environment variables, and know how to add a new location to your $Path system variable, you can use the method that works best for you. The following procedure is a bit long, but it's a verified method to ensure the variable is correctly updated.
 
 1. Open the Windows **Control Panel**.
 
-1. Select **System**, and then select **Advanced system settings** on the left.
+1. Select **System**, and then select **Advanced system settings**.
 
 1. In the **System properties** dialog, under **Advanced**, select **Environment variables**. The **Edit environment variables** dialog opens.
 
    The **Edit environment variables** dialog shows two lists:
    - User variables for \<user-name\>: Local variable definitions for the specific user.
    - System variables: System variable definitions for all users.
-   
+
    In this procedure, we're working with the system variables.
 
 1. In the **Environment variables** dialog, in the **System variables** list box, scroll to locate the **Path** variable.
@@ -77,6 +76,7 @@ After you confirm Visual Studio Code is ready to use from the CLI, you can open 
 1. Open your Go workspace directory by running the following command:
 
    ::: zone pivot="linux,macos"
+
    ```console
    cd $GOPATH/src
    ```
@@ -84,6 +84,7 @@ After you confirm Visual Studio Code is ready to use from the CLI, you can open 
    ::: zone-end
 
    ::: zone pivot="windows"
+
    ```console
    cd %GOPATH%/src
    ```
@@ -100,18 +101,17 @@ Visual Studio Code launches. The **Explorer** view is shown on the left, and a *
 
 In the **Explorer** view, the **SRC** section of your Go project should be open (expanded). This section is the */src* folder for your project. It's currently empty, but we'll add some content in the next step.
 
-
 ## Step 2: Create a new folder and a Go file
 
 Let's add a folder and file to your Go project. There are several ways in Visual Studio Code to create new items:
 
 - Actions on the toolbar menu:
-   - Select **File** > **Open folder**, and then create a **New folder**.
-   - Select **File** > **New file**, and start a new file.
+  - Select **File** > **Open folder**, and then create a **New folder**.
+  - Select **File** > **New file**, and start a new file.
 - Links on the **Welcome** page, which are similar to the toolbar menu actions.
 - Icons in the **Explorer** view, to the right of the **SRC** section:
-   - Select the **New folder** icon. In the text box, type the folder name, and press Enter.
-   - Select the **New file** icon. In the text box, type the file name, and press Enter.
+  - Select the **New folder** icon. In the text box, type the folder name, and press Enter.
+  - Select the **New file** icon. In the text box, type the file name, and press Enter.
 
 Complete the following steps in Visual Studio Code. 
 To create the new file and folder, use the process that works best for you.
@@ -123,7 +123,6 @@ To create the new file and folder, use the process that works best for you.
    > SRC/<br>
    > &nbsp;&nbsp;&nbsp;&nbsp;helloworld/<br>
 	> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;main.go
-
 
 ### Install Go extension tools
 
@@ -139,7 +138,6 @@ When the install process succeeds, the Terminal output displays a summary:
 
 > All tools successfully installed. You are ready to Go :).
 
-
 ## Step 3: Add code to your Go file
 
 Now let's add code to your Go file.
@@ -152,14 +150,13 @@ Now let's add code to your Go file.
    import "fmt"
 
    func main() {
-	   fmt.Println("Hello World!")
+       fmt.Println("Hello World!")
    }
    ```
 
-1. Save the file. 
+1. Save the file.
 
 Don't worry about code formatting like tabs or spaces. Visual Studio Code formats the code automatically every time you save the file. 
-
 
 ## Step 4: Execute your Go program 
 
@@ -179,6 +176,7 @@ If you want to run the program from within Visual Studio Code, rather than a sta
 1. In the Terminal, run the following command to change the directory location to your Go workspace and the folder that has your Go file: 
 
    ::: zone pivot="linux,macos"
+
    ```console
    cd $GOPATH/src/helloworld
    ```
@@ -186,6 +184,7 @@ If you want to run the program from within Visual Studio Code, rather than a sta
    ::: zone-end
 
    ::: zone pivot="windows"
+
    ```console
    cd %GOPATH%/src/helloworld
    ```
@@ -209,7 +208,6 @@ Hello World!
 
 The `go run` command does two things. It compiles the app, and after compile succeeds, it executes the app.
 
-
 ### Build an executable
 
 To generate an executable for your program, use this command:
@@ -219,7 +217,6 @@ go build main.go
 ```
 
 When the `go build` command completes, it generates an executable app that you can run anytime without further processing. The command only produces an executable. It doesn't run the program like the `go run` command.
-
 
 ### Review the /src contents
 
@@ -231,7 +228,6 @@ Here's what your project should look like now in the **Explorer** > **SRC** view
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;main.go
 
 In the **Explorer** view, the name of the file without the extension is the executable file you can use to run your program. (On Windows, this file actually has the *.exe* extension.) When you're developing, you use the `go run` command. To build the binaries for your application, you use the `go build` command and deploy the binary executable to a proper environment.
-
 
 ## What did you just write in Go?
 
@@ -251,6 +247,7 @@ We'll look closer at these concepts in the next module. For now, we need to know
 > **Challenge: _Change the package name_**
 >
 > Can you confirm the importance of the `main` package?
+>
 > 1. In your Go file, change the package name in the first line.
 > 1. Save the file, and run your program again in the Terminal.
 >
@@ -267,7 +264,6 @@ We'll look closer at these concepts in the next module. For now, we need to know
 >
 ***
 
-
 Here's the next line in your Go file:
 
 ```go
@@ -280,7 +276,6 @@ You need this `import` statement because you're using a function from this packa
 
 
 Did Visual Studio Code remove the import when you saved the file? Try editing the file without Visual Studio Code, and try to run the app. What output do you see now?
-
 
 > [!div class="alert is-tip"]
 > **Challenge: _Add another import_**
@@ -320,7 +315,6 @@ func main() {
 The `func` statement is a reserved word that's used to declare a function. This first function is named "main" because it's the starting point of our program. You can have only one `main()` function across the `package main` (the one you defined in the first line). In the `main()` function, you called the `Println` function from the `fmt` package. You sent a text message that you wanted to see on the screen. 
 
 There's more to cover about functions, and we'll do that in the next module.
-
 
 <!-- Links -->
 [GoDocs]: https://golang.org/pkg/fmt/?azure-portal=true

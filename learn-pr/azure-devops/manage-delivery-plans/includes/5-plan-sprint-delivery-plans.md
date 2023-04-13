@@ -18,12 +18,13 @@ You create a Delivery Plan from the **Delivery Plans** tab of Azure Boards. You 
 
     > [!IMPORTANT]
     > Ensure that you select **Delivery Plans** and not **Plans**.
+
 1. Select **New plan**.
 1. In the form, enter these fields:
     * **Name**: _Space Game Delivery Plan_.
     * Select the **Backlog items** backlog for the **Space Game Web Team**.
     * Add the **Space Game Engine Team's Backlog items** backlog using the **Add team** option.
-    
+
     The Web team and the Engine team share a common set of backlog items.
 
     :::image type="content" source="../media/5-create-delivery-plan.png" alt-text="Screenshot of the final delivery plan settings.":::

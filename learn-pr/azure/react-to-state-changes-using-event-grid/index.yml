@@ -3,7 +3,7 @@ uid: learn.react-to-state-changes-using-event-grid
 metadata:
   title: React to state changes in your Azure services by using Event Grid
   description: Build a serverless application architecture, automate your operations, and integrate applications by handling Azure events with Event Grid.
-  ms.date: 05/02/2022
+  ms.date: 04/04/2023
   author: spelluru
   ms.author: spelluru
   ms.topic: interactive-tutorial
@@ -35,6 +35,7 @@ units:
 - learn.react-to-state-changes-using-event-grid.3-exercise-trigger-logic-app
 - learn.react-to-state-changes-using-event-grid.4-build-logic-respond-event
 - learn.react-to-state-changes-using-event-grid.5-exercise-email-vm-change
-- learn.react-to-state-changes-using-event-grid.6-summary
+- learn.react-to-state-changes-using-event-grid.6-knowledge-check
+- learn.react-to-state-changes-using-event-grid.7-summary
 badge:
   uid: learn.react-to-state-changes-using-event-grid.badge

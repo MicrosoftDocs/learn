@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-security-operations-strategy.develop-for-hybrid-multi-cloud-environments
-title: Develop security operations for hybrid and multi-cloud environments
+title: Develop security operations for hybrid and multicloud environments
 metadata:
-  title: Develop security operations for hybrid and multi-cloud environments
-  description: "Develop security operations for hybrid and multi-cloud environments"
-  ms.date: 10/11/2022
+  title: Develop security operations for hybrid and multicloud environments
+  description: "Develop security operations for hybrid and multicloud environments"
+  ms.date: 03/22/2023
   author: wwlpublish
   ms.author: hrasheed
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 10
 content: |
   [!include[](includes/4-develop-for-hybrid-multi-cloud-environments.md)]

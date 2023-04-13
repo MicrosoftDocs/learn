@@ -1,3 +1,4 @@
+
 You can swap deployment slots on your app's Deployment slots page and the Overview page. Before you swap an app from a deployment slot into production, make sure that production is your target slot and that all settings in the source slot are configured exactly as you want to have them in production.
 
 ## Manually swapping deployment slots

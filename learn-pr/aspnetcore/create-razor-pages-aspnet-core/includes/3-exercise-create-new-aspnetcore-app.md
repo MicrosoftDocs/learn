@@ -8,7 +8,7 @@ To set up a .NET project to work with a web app, you'll use Visual Studio Code. 
 
 1. In Visual Studio Code, select **File** > **Open Folder**.
 
-1. Create a new folder named **RazorPagesPizza** in the location of your choice, and then click **Select Folder**. If you are shown a prompt asking *Do you trust the authors of the files in this folder?* select the `Yes` button.
+1. Create a new folder named **RazorPagesPizza** in the location of your choice, and then choose **Select Folder** to make it the active folder. If you're shown a prompt asking *Do you trust the authors of the files in this folder?* select the `Yes` button.
 
 1. Open the integrated terminal from Visual Studio Code by selecting **View** > **Terminal** from the main menu.
 
@@ -20,7 +20,7 @@ To set up a .NET project to work with a web app, you'll use Visual Studio Code. 
 
     This command creates the files for a basic web app project, along with a C# project file named **RazorPagesPizza.csproj**.
 
-    You may receive a prompt from Visual Studio Code to add assets to debug the project. Click `Yes` on the dialog.
+    You may receive a prompt from Visual Studio Code to add assets to debug the project. Select `Yes` on the dialog.
 
     The command uses an ASP.NET Core project template to scaffold a C#-based web app project. A *RazorPagesPizza* directory is created, which contains an ASP.NET Core project running on .NET. The project name matches the *RazorPagesPizza* directory name.
 
@@ -63,7 +63,7 @@ To set up a .NET project to work with a web app, you'll use Visual Studio Code. 
     * Compiles the project code.
     * Hosts the web app with ASP.NET Core's Kestrel web server at both an HTTP and HTTPS endpoint.
 
-    A port from 5000-5300 will be selected for HTTP, and from 7000-7300 for HTTPS, at the time the project is created. As always, the ports used during development can be easily changed by editing the project’s launchSettings.json file. This module uses the secure localhost URL beginning with `https`.
+    At the time the project is created, a port from 5000-5300 will be selected for HTTP, and from 7000-7300 for HTTPS. As always, the ports used during development can be easily changed by editing the project’s launchSettings.json file. This module uses the secure localhost URL beginning with `https`.
 
     A variation of the following output displays to indicate your app is running:
 
@@ -83,7 +83,7 @@ If running this app on your own machine, you could direct a browser to the HTTPS
 
 ## Tour the app
 
-1. Note the HTTP URL displayed in the terminal output, e.g. `https://localhost:7192`.
+1. Note the HTTP URL displayed in the terminal output, for example, `https://localhost:7192`.
 
 1. Open the app in your browser by browsing to the HTTPS URL.
 

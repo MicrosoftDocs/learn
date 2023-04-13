@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.run-training-script-command-job-azure-machine-learning.convert-notebook-script
+title: Convert a notebook to a script
+metadata:
+  title: Convert a notebook to a script
+  description: "Learn how to get your code production ready."
+  ms.date: 01/25/2023
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 9
+content: |
+  [!include[](includes/2-convert-notebook-script.md)]

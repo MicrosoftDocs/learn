@@ -3,10 +3,10 @@ uid: learn.azure.intro-to-anomaly-detector.2-what-is-anomaly-detector
 title: What is Anomaly Detector?
 metadata:
   title: What is Anomaly Detector?
-  description: "Learn what anomaly detector is along with scenarios for usage."
-  ms.date: 09/05/2022
+  description: "Anomaly Detector is a part of the Decision Services category within Azure Cognitive Services. It is a cloud-based service that enables you to monitor time series data, and to detect anomalies in that data."
+  ms.date: 02/01/2023
   author: wwlpublish
-  ms.author: gerryo
+  ms.author: sheryang
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false

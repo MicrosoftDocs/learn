@@ -6,7 +6,7 @@ TypeScript addresses the limitations of JavaScript, doing so without compromisin
 
 ## What is TypeScript?
 
-TypeScript is an open-source language that was developed by Microsoft. It is a superset of JavaScript, which means that you can continue to use the JavaScript skills you've already developed and add certain features that were previously unavailable to you.
+TypeScript is an open-source language that was developed by Microsoft. It's a superset of JavaScript, which means that you can use the JavaScript skills you've already developed along with certain features that were previously unavailable to you.
 
 ### Type hints
 
@@ -16,7 +16,7 @@ Through static type checking, TypeScript catches code issues early in developmen
 
 Types also power the intelligence and productivity benefits of development tools, such as IntelliSense, symbol-based navigation, go to definition, find all references, statement completion, and code refactoring.
 
-Writing types can be optional in TypeScript, because *type inference* allows you to get a lot of power without writing additional code. If TypeScript can determine the data type implicitly (for example, when you assign a value to a variable by using `let age = 42`), it automatically infers the data type.
+Writing types can be optional in TypeScript, because *type inference* allows you to get much of this power without writing extra code. If TypeScript can determine the data type implicitly (for example, when you assign a value to a variable by using `let age = 42`), it automatically infers the data type.
 
 #### Try it! Learning about types
 
@@ -34,25 +34,25 @@ Let's look at an example to demonstrate the use of types.
     console.log(addNumbers(3, 6));
     ```
 
-   Notice that the same code appears in the **.JS** (right) pane. This is the JavaScript code that TypeScript will generate after it's compiled.
+   Notice that the same code appears in the **.JS** (right) pane. This pane shows the JavaScript code that TypeScript will generate after it's compiled.
 
 1. Select **Run** to execute the JavaScript code. Then, select the **Logs** tab and notice that the value `9` is logged to the console. JavaScript has assigned the `number` type to the parameters `x` and `y` and the function returned a number.
 
 1. Replace `3` with `"three"` (including the quotation marks) in the TypeScript code, and then run it. JavaScript now assigns the `string` type to the `x` parameter and returns "three6", a string type, to the console. You've probably run into this situation before and, as you know, it can cause some unexpected results.
 
-   In the TypeScript pane, notice the red squiggly lines under the parameter names in the `addNumbers` function. This indicates that the type checker identified errors. Hover over one of the parameters and read the description of the error. TypeScript has implicitly assigned a type of `any`, which is the broadest type because it can essentially contain anything.
+   In the TypeScript pane, notice the red squiggly lines under the parameter names in the `addNumbers` function. The lines indicate that the type checker identified errors. Hover over one of the parameters and read the description of the error. TypeScript has implicitly assigned a type of `any`, which is the broadest type because it can essentially contain anything.
 
 1. Update the TypeScript code to specify a type for each parameter. Replace `x` with `x: number` and `y` with `y: number`.
 
-   You'll notice that the errors are now gone from the parameters, but a new one has appeared under the first argument in the function call: "Argument of type 'string' is not assignable to parameter of type 'number'."
+   You'll notice that the errors are now gone from the parameters, but a new one has appeared under the first argument in the function call: "Argument of type 'string' isn't assignable to parameter of type 'number'."
 
-1. Replace `"three"` with a number to correct the error. You could pass in a literal value, a variable, or any other data and, because TypeScript understands the shape of your object, it can notify you of the type conflict at development time.
+1. Replace `"three"` with a number to correct the error. You could pass in a literal value, a variable, or any other data. TypeScript understands the shape of your object, so it can notify you of the type conflict at development time.
 
-1. Review the JavaScript and notice that there are no changes to it. TypeScript was able to provide type checking during development, but this has had no impact on the resulting JavaScript code because it doesn't support types.
+1. Review the JavaScript and notice that there are no changes to it. TypeScript was able to provide type checking during development, but had no effect on the resulting JavaScript code because it doesn't support types.
 
 ### Other code features of TypeScript
 
-TypeScript has additional coding features that you won't find in JavaScript:
+TypeScript has more coding features that you won't find in JavaScript:
 
 - Interfaces
 - Namespaces
@@ -69,7 +69,7 @@ You'll learn more about some of these features in later modules.
 
 ## TypeScript compatibility with JavaScript
 
-TypeScript is a strict superset of [ECMAScript 2015](https://www.ecma-international.org/ecma-262/6.0/?azure-portal=true) (ECMAScript 6 or ES6). This means that all JavaScript code is also TypeScript code, and a TypeScript program can seamlessly consume JavaScript.
+TypeScript is a strict superset of [ECMAScript 2015](https://www.ecma-international.org/ecma-262/6.0/?azure-portal=true) (ECMAScript 6 or ES6). This relationship means that all JavaScript code is also TypeScript code, and a TypeScript program can seamlessly consume JavaScript.
 
 Browsers understand JavaScript only. For your application to work, when you write it in TypeScript, you need to compile your code and convert it to JavaScript. You transform the TypeScript code into JavaScript code by using the TypeScript compiler or a TypeScript-compatible transpiler. The resulting JavaScript is clean, simple code that runs anywhere JavaScript runs: In a browser, on Node.js, or in your apps.
 
@@ -80,6 +80,6 @@ Browsers understand JavaScript only. For your application to work, when you writ
 
 ## Migrate from JavaScript to TypeScript
 
-Adopting TypeScript is not a binary choice, so you can gradually migrate your codebase. You can start by annotating your existing JavaScript with [JSDoc](https://jsdoc.app/?azure-portal=true), and then switch a few files to be checked by TypeScript. You can prepare your codebase over time to be converted completely.
+Adopting TypeScript isn't a binary choice, so you can gradually migrate your codebase. You can start by annotating your existing JavaScript with [JSDoc](https://jsdoc.app/?azure-portal=true), and then switch a few files to be checked by TypeScript. You can prepare your codebase over time to be converted completely.
 
 For more information about this process, see [TypeScript Tutorials: Migrating from JavaScript](https://www.typescriptlang.org/docs/handbook/migrating-from-javascript.html?azure-portal=true).

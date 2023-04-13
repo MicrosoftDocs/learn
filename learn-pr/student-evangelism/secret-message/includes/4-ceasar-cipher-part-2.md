@@ -125,9 +125,9 @@ def lasso_letter( letter, shift_amount ):
     return decoded_letter
 ```
 
-Now that you have the `lasso_letter()` function, you can call this on each letter in the secret message. 
+Now that you have the `lasso_letter()` function, you can call the function on each letter in the secret message.
 
-You will do this in the next unit, but you can try it out now by calling the `lasso_letter()` function within a `print()` function, like this:
+You'll use this function in the next unit, but you can try it out now by calling the `lasso_letter()` function within a `print()` function, like this:
 
 ```python
 print(lasso_letter('a', 2))

@@ -3,11 +3,12 @@ You've created a basic workflow, and you've configured your Azure and GitHub env
 In this exercise, you'll:
 
 > [!div class="checklist"]
-> * Add a Bicep file to your repository.
-> * Add a workflow step to download your repository source code to the runner's file system.
-> * Add a workflow step to sign in to Azure.
-> * Add a workflow step to deploy your Bicep file.
-> * Run your workflow again and verify that it successfully deployed your website.
+>
+> - Add a Bicep file to your repository.
+> - Add a workflow step to download your repository source code to the runner's file system.
+> - Add a workflow step to sign in to Azure.
+> - Add a workflow step to deploy your Bicep file.
+> - Run your workflow again and verify that it successfully deployed your website.
 
 ## Add your website's Bicep file to the GitHub repository
 
@@ -15,13 +16,13 @@ You've already prepared your website's Bicep file, which can be used to deploy d
 
 1. Open the Visual Studio Code Explorer.
 
-1. At the root of your repository, create a *deploy* folder.
+1. At the root of your repository, create a _deploy_ folder.
 
-1. In the *deploy* folder, create a new file named *main.bicep*. Make sure you create the file inside the *deploy* folder:
+1. In the _deploy_ folder, create a new file named _main.bicep_. Make sure you create the file inside the _deploy_ folder:
 
    :::image type="content" source="../media/6-visual-studio-code-main-bicep.png" alt-text="Screenshot of the Visual Studio Code Explorer, with the main dot bicep file highlighted and located in the deploy folder.":::
 
-1. Copy the following code into the *main.bicep* file:
+1. Copy the following code into the _main.bicep_ file:
 
    :::code language="bicep" source="code/6-main.bicep":::
 
@@ -39,9 +40,9 @@ You've already prepared your website's Bicep file, which can be used to deploy d
 
 Next, update your workflow definition to deploy your Bicep file to Azure.
 
-1. In Visual Studio Code, open the *.github/workflows/workflow.yml* file.
+1. In Visual Studio Code, open the _.github/workflows/workflow.yml_ file.
 
-1. At the top of the file, above the `jobs:` line, add a `permissions` section:
+1. At the top of the file, between `on:` and `jobs:` add a `permissions:` section.
 
    :::code language="yaml" source="code/6-workflow.yml" range="1-8, 13" highlight="5-7" :::
 
@@ -49,11 +50,11 @@ Next, update your workflow definition to deploy your Bicep file to Azure.
 
 1. Rename the `say-hello` job to `deploy`:
 
-   :::code language="yaml" source="code/6-workflow.yml" range="13-14" highlight="2" :::
+   :::code language="yaml" source="code/6-workflow.yml" range="13-16" highlight="2" :::
 
 1. To remove the `placeholder` step from the workflow definition, delete the bottom two lines of the file.
 
-1. As a first step you will add a task to check out the code to the runner's file system. Add a new step at the bottom of the file:
+1. As a first step you'll add a task to check out the code to the runner's file system. Add a new step at the bottom of the file:
 
    :::code language="yaml" source="code/6-workflow.yml" range="13-17" highlight="5" :::
 
@@ -68,9 +69,9 @@ Next, update your workflow definition to deploy your Bicep file to Azure.
 
    :::code language="yaml" source="code/6-workflow.yml" range="13-28" highlight="11-16" :::
 
-   Notice that this task uses environment variables for the resource group name, and for the parameter that the Bicep file includes. It also uses the `github.run_number` default environment variable to name the deployment in Azure.
+   Notice that this task uses the `github.run_number` default environment variable to name the deployment in Azure. It also uses environment variables for the resource group name and for the `environmentType` parameter in the Bicep file.
 
-1. Add these variables and their values at the top of your workflow file, below the `on: [workflow_dispatch]` trigger and above the `jobs`: 
+1. Add these variables and their values at the top of your workflow file, between `permissions:` and `jobs`:
 
    :::code language="yaml" source="code/6-workflow.yml" range="1-13" highlight="9-11" :::
 
@@ -90,7 +91,7 @@ Next, update your workflow definition to deploy your Bicep file to Azure.
 
 Now, you're ready to run your workflow!
 
-1. In your browser, open the workflow by selecting **Actions** > **deploy-toy-website**. 
+1. In your browser, open the workflow by selecting **Actions** > **deploy-toy-website**.
 
 1. Select **Run workflow** > **Run workflow**.
 
@@ -106,7 +107,7 @@ Now, you're ready to run your workflow!
 
 1. Select **Run azure/arm-deploy@v1**. This displays the task details.
 
-1. Select **Run azure/arm-deploy@v1** in the task details. 
+1. Select **Run azure/arm-deploy@v1** in the task details.
 
    :::image type="content" source="../media/6-log-variables.png" alt-text="Screenshot of the GitHub interface showing the workflow log, with the 'environment variables' highlighted." border="true":::
 
@@ -118,7 +119,7 @@ Now, you're ready to run your workflow!
 
 ## Verify the deployment
 
-1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true).
+1. Go to the [Azure portal](https://portal.azure.com).
 
 1. In the left menu, select **Resource groups**.
 
@@ -128,14 +129,12 @@ Now, you're ready to run your workflow!
 
    :::image type="content" source="../media/6-portal-resource-group.png" alt-text="Screenshot of the Azure portal that shows the resource group with one successful deployment.":::
 
-   Notice that the name of the deployment matches the workflow's run number in GitHub Actions, because you used the `github.run_number` environment variable to name your deployment.
-
 1. Select **1 Succeeded** to see the details of the deployment.
 
    :::image type="content" source="../media/6-portal-deployment-list.png" alt-text="Screenshot of the Azure portal that shows the resource group deployment history, with the deployment highlighted.":::
 
-   The deployment name is the same as the name of the workflow run.
+   Notice that the name of the deployment matches the workflow's run number in GitHub Actions, because you used the `github.run_number` environment variable to name your deployment.
 
-1. To see what resources were deployed, select the deployment. To expand the deployment to see more details, select **Deployment details**. In this case, there's a storage account, an Azure App Service plan, and an app.
+1. To see which resources were deployed, select the deployment. To expand the deployment and see more details, select **Deployment details**. In this case, there's a storage account, an Azure App Service plan, and an app.
 
    :::image type="content" source="../media/6-portal-deployment-details.png" alt-text="Screenshot of the Azure portal that shows the resource group deployment details, with the App Service resources highlighted.":::

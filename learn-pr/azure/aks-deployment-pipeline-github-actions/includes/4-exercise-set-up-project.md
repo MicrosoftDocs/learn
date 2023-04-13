@@ -28,9 +28,17 @@ Now that we understand what we need to do, let's create our resources and publis
 
    The command creates a new directory called mslearn-aks-deployment-pipeline-github-actions.
 
-1. To go to the new directory, run `cd mslearn-aks-deployment-pipeline-github-actions`.
+1. To go to the new directory, run the following command:
 
-1. Execute the **init.sh** file that's located in the root of the project, by using the command `bash init.sh`.
+    ```bash
+    cd mslearn-aks-deployment-pipeline-github-actions
+    ```
+
+1. Execute the **init.sh** file that's located in the root of the project by running the following command:
+
+    ```bash
+    bash init.sh
+    ```
 
     The init.sh file does the following tasks:
 
@@ -45,5 +53,14 @@ Now that we understand what we need to do, let's create our resources and publis
 
 Confirm that all the resources were created when the init.sh script ran:
 
-1. Run `az group list -o table` and check whether the resource group shown in the script output is listed.
-1. Run `az acr list -o table` and check whether the Container Registry instance shown in the script output is listed.
+1. Run the following command and check whether the resource group shown in the script output is listed:
+
+    ```bash
+    az group list -o table
+    ```
+
+1. Run the following command and check whether the Container Registry instance shown in the script output is listed:
+
+    ```bash
+    az acr list -o table
+    ```

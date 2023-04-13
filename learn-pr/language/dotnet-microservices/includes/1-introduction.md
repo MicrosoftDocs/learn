@@ -2,7 +2,7 @@ In recent years, enterprises are choosing microservices over monolithic architec
 
 Suppose that you've started a new job as a software developer at the world's most popular pizza joint, Contoso Pizza. Business is booming, and the Contoso Pizza's website that indicates whether pizzas are in stock or not. That website is a monolith right now, but is an ideal candidate for the microservice architecture. A team member has already refactored the monolith website into an ASP.NET Core Razor page application and ASP.NET Core web API. Your job is to deploy the services.
 
-In this module, you will gain an understanding of the microservice architectural pattern and the problem it solves. You'll see how you can use Docker to implement the microservice architectural pattern with an ASP.NET Core web API.
+In this module, you'll gain an understanding of the microservice architectural pattern and the problem it solves. You'll see how you can use Docker to implement the microservice architectural pattern with an ASP.NET Core web API.
 
 By the end of this module, you'll have the foundation necessary to build microservices with .NET and understand how you can use Docker to implement the microservice architectural pattern.
 

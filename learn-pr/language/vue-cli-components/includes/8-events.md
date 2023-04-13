@@ -28,7 +28,7 @@ You emit an event by using the `$emit` function. If you want to emit an event th
 > [!NOTE]
 > You're using the shortcut of `@click`, which is typically how you connect event handlers in Vue.
 
-At times, you might need to perform more steps before emitting the event. If your component needs to save the value to a database before returning any updated information, you can do this by adding a method. Inside the method, you can use `this.$emit` to raise the event as you did before:
+At times, you might need to perform more steps before emitting the event. If your component needs to save the value to a database before returning any updated information, you can add a method. Inside the method, you can use `this.$emit` to raise the event as you did before:
 
 ```html
 <!-- inside the component's vue file -->
@@ -51,7 +51,7 @@ export default {
 
 ## Emit events with data
 
-The component might need to return data to the parent through events. You can return any data by passing additional parameters to `$emit`. If you want to indicate that the update was successful by returning `true`, you can update the call like this:
+The component might need to return data to the parent through events. You can return any data by passing other parameters to `$emit`. If you want to indicate that the update was successful by returning `true`, you can update the call like this:
 
 ```html
 <button @click="$emit('userUpdated', true)">Save user</button>

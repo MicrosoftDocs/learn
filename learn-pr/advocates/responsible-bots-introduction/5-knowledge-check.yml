@@ -54,7 +54,7 @@ quiz:
     - content: "Delay the launch by a few days until the help feature is complete."
       isCorrect: false
       explanation: "Incorrect. Help features make bots responsible by making them easy to use. But time is limited in this case. And alternatives exist to the standard help feature. Those alternatives also make the bot responsible by providing useful information."
-    - content: "Delay the launch by one day. During that time, add a simple help feature that provides examples of all types of questions that the bot can answer."
+    - content: "Delay the launch by one day. During that time, add a basic help feature that provides examples of all types of questions that the bot can answer."
       isCorrect: false
       explanation: "Incorrect. Help features make bots responsible by making them easy to use. But time is limited in this case. And alternatives exist to the idea of listing all possible types of questions. Those alternatives also make the bot responsible by providing useful information."
     - content: "Launch the bot now. Over the next few days, develop a help feature that you can add to the deployed bot."

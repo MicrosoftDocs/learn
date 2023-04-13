@@ -12,7 +12,7 @@ By default, a private endpoint is an Azure Resource Manager resource. An Azure R
 
 By default, all the compute nodes in a Batch pool are assigned a public IP address. The Batch service uses this address to schedule tasks and for communication with compute nodes, including outbound access to the internet.
 
-To restrict access to these nodes and reduce the discoverability of these nodes from the internet, you can provision the pool without public IP addresses. This feature is most often used in conjunction with private endpoints. 
+To restrict access to these nodes and reduce the discoverability of these nodes from the internet, you can provision the pool without public IP addresses. This feature is most often used with private endpoints.
 
 ## Disk encryption
 

@@ -1,4 +1,4 @@
-A lab VM is powerful because it provides a quick and repeatable way to spin up a preconfigured virtualized computing environment. You can use Azure DevTest Labs to add virtual machines (VMs) that are preconfigured with required software components.
+A lab VM is powerful because it provides a quick and repeatable way to spin up a pre-configured virtualized computing environment. You can use Azure DevTest Labs to add virtual machines (VMs) that are preconfigured with required software components.
 
 Your eCommerce company has a large and expanding development team, and you need to use Azure DevTest Labs to create a pool of standardized developer VMs. The developers will access these VMs through Remote Desktop (RDP).
 
@@ -6,15 +6,15 @@ In this unit, you'll learn about adding VMs to an existing lab in Azure DevTest 
 
 ## Create a lab VM
 
-A lab in Azure DevTest Labs doesn't contain any computing resources. You can add VMs to an existing lab that can then be used by lab users to perform their tasks.
+A lab in Azure DevTest Labs doesn't contain any computing resources. You can add VMs to an existing lab that lab users can then use to perform their tasks.
 
-When you add a VM to a lab, Azure DevTest Labs creates and manages all the underlying resources for hosting an Azure Virtual Machine. For example, an Azure storage account, IP address, load balancer, and more. As a lab owner, you don't have to manage this infrastructure.
+When you add a VM to a lab, Azure DevTest Labs creates and manages all the underlying resources for hosting an Azure Virtual Machine (for example: an Azure storage account, IP address, load balancer, and more). As a lab owner, you don't have to manage this infrastructure.
 
 There are several ways to create a lab VM in Azure DevTest Labs. You can use the Azure portal, the Azure Command Line Interface (CLI), a PowerShell script, or an ARM template.
 
 The first step to create a lab VM is to select one of the available VM base images in the lab. In the previous unit, you've specified a list of allowed images from the Azure Marketplace.
 
-When the virtual machine finishes provisioning, you can then connect and start using the VM. For Windows VMs you can use a remote desktop (RDP) client, and for Linux machines, you can start a secure shell (SSH) connection.
+When the virtual machine finishes provisioning, you can then connect and start using the VM. For Windows VMs, you can use a remote desktop (RDP) client; for Linux machines, you can start a secure shell (SSH) connection.
 
 The Azure portal provides a wizard to add a VM to an existing lab. This wizard contains the following fields to configure the virtual machine:
 
@@ -45,13 +45,13 @@ Azure DevTest Labs ensures that when a user claims a VM, no one else can claim t
 
 You use artifacts to configure a VM or deploy software on it, after it's provisioned. Artifacts can be:
 
-- Tools that you want to install on the VM, such as monitoring agents, or Visual Studio.
-- Actions that you want to run on the VM. For example, cloning a GitHub repository.
+- Tools that you want to install on the VM, such as monitoring agents or Visual Studio.
+- Actions that you want to run on the VM; for example, cloning a GitHub repository.
 - Applications that you want to run and test.
 
-During the creation of a lab VM, you can specify which artifacts that you want to add to it. When the VM finishes provisioning, Azure DevTest Labs installs the artifacts on the VM. If you've claimed a VM, you can add or remove artifacts at any time during the lifetime of the VM.
+During the creation of a lab VM, you can specify which artifacts you want to add to it. When the VM finishes provisioning, Azure DevTest Labs installs the artifacts on the VM. If you've claimed a VM, you can add or remove artifacts at any time during the lifetime of the VM.
 
-In your eCommerce company, you could use an artifact to install **Azure PowerShell** or developer tools to the developer lab VM. This avoids that every developer has to go through the process of manually installing these tools.
+In your eCommerce company, you could use an artifact to install **Azure PowerShell** or developer tools to the developer lab VM. This way, you avoid making every developer go through the process of manually installing these tools.
 
 :::image type="content" source="../media/devtest-labs-add-artifacts-blade-selected-artifacts.png" alt-text="Screenshot that shows how to add an artifact to a lab VM in Azure DevTest Labs.":::
 

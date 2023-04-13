@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.make-data-available-azure-machine-learning.create-datastore
+title: Create a datastore
+metadata:
+  title: Create a datastore
+  description: "Create a datastore"
+  ms.date: 01/13/2023
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-create-datastore.md)]

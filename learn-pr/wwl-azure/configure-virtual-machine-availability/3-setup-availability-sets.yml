@@ -1,16 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-virtual-machine-availability.setup-availability-sets
-title: Setup availability sets
+title: Create availability sets
 metadata:
-  title: Setup availability sets
-  description: "Setup availability sets"
-  ms.date: 10/20/2022
+  title: Create availability sets
+  description: "Create availability sets"
+  ms.date: 02/06/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 2
 content: |
   [!include[](includes/3-setup-availability-sets.md)]

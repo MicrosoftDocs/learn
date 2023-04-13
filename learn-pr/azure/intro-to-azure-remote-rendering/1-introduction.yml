@@ -6,8 +6,8 @@ metadata:
   title: Introduction
   description: Azure Remote Rendering enables you to render high-quality, interactive 3D content in the cloud. You can then stream this content in real time to target devices.
   ms.date: 06/15/2021
-  author: nickwalkmsft
-  ms.author: nickwalk  
+  author: DrewLonMS
+  ms.author: oliverlondon
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 4

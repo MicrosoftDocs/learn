@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.wwl.use-spark-notebooks-azure-synapse-pipeline
+metadata:
+  title: Use Spark Notebooks in an Azure Synapse Pipeline
+  description: "This module describes how Apache Spark notebooks can be integrated into an Azure Synapse Analytics pipeline."
+  ms.date: 02/07/2023
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: synapse-analytics
+title: Use Spark Notebooks in an Azure Synapse Pipeline
+summary: Apache Spark provides data engineers with a scalable, distributed data processing platform, which can be integrated into an Azure Synapse Analytics pipeline.
+abstract: |
+  In this module, you will learn how to:
+  - Describe notebook and pipeline integration.
+  - Use a Synapse notebook activity in a pipeline.
+  - Use parameters with a notebook activity.
+prerequisites: |
+  Before starting this module, you should have experience of using Apache Spark in Azure Synapse Analytics. Consider completing the [Analyze data with Apache Spark in Azure Synapse Analytics](/training/modules/understand-big-data-engineering-with-apache-spark-azure-synapse-analytics/) module first:
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+products:
+- azure-synapse-analytics
+subjects:
+- data-engineering
+- data-warehousing
+units:
+- learn.wwl.use-spark-notebooks-azure-synapse-pipeline.introduction
+- learn.wwl.use-spark-notebooks-azure-synapse-pipeline.understand-notebooks-pipelines
+- learn.wwl.use-spark-notebooks-azure-synapse-pipeline.use-notebook-activity
+- learn.wwl.use-spark-notebooks-azure-synapse-pipeline.notebook-parameters
+- learn.wwl.use-spark-notebooks-azure-synapse-pipeline.exercise-use-spark-notebooks-pipeline
+- learn.wwl.use-spark-notebooks-azure-synapse-pipeline.knowledge-check
+- learn.wwl.use-spark-notebooks-azure-synapse-pipeline.summary
+badge:
+  uid: learn.wwl.use-spark-notebooks-azure-synapse-pipeline.badge

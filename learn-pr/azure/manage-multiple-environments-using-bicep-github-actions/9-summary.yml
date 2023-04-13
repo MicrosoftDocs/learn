@@ -5,7 +5,7 @@ metadata:
   unitType: summary
   title: Summary
   description: Summary for managing multiple environments by using Bicep and GitHub Actions.
-  ms.date: 11/08/2021
+  ms.date: 02/24/2023
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial

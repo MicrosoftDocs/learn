@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.investigate-history-app-development.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/16/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check Your Knowledge"
+  questions:
+  - content: "What is one significant way computer programming has changed?"
+    choices:
+    - content: "Programmers no longer use computer code."
+      isCorrect: false
+      explanation: "That's incorrect. Most programming is still done with code."
+    - content: "Applications are stored on mainframes."
+      isCorrect: false
+      explanation: "That's incorrect. Mainframes were used heavily in the past, but modern computing rarely uses them."
+    - content: "Programs can now be used from the internet."
+      isCorrect: true
+      explanation: "That's correct. Programmers can write small programs called functions to do just one thing and call them from the internet."
+  - content: "How do mainframes and the cloud differ?"
+    choices:
+    - content: "The cloud doesn't rely on computer servers, but mainframes do."
+      isCorrect: false
+      explanation: "That's incorrect. Both the cloud and mainframes use servers."
+    - content: "Mainframes are more secure than the cloud."
+      isCorrect: false
+      explanation: "That's incorrect. While some mainframes were very secure because they weren't on a network, modern cloud computers are just as secure as mainframes."
+    - content: "The cloud scales but mainframes don't."
+      isCorrect: true
+      explanation: "That's correct. This is one big difference between the two. The cloud can grow and shrink based on need."
+  - content: "What is a benefit of getting application data over the internet versus on a disk?"
+    choices:
+    - content: "The data is more secure."
+      isCorrect: false
+      explanation: "That's incorrect. Both data delivered over the internet and on disk are secure."
+    - content: "The data is less prone to being corrupt."
+      isCorrect: false
+      explanation: "That's incorrect. Data delivered over the internet and on disk can get corrupted occasionally."
+    - content: "The data can be updated."
+      isCorrect: true
+      explanation: "That's correct. By delivering data over the internet, it's possible to update it when needed. This isn't possible with data delivered on disk."

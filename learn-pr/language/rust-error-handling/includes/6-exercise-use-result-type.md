@@ -1,11 +1,14 @@
-In this exercise, you'll add error handling to a program that reads files from a computer. In the sample program, the `read_file_contents` function receives a `PathBuf` struct as its single input and returns a `Result<String, io::Error>`. The function does the following tasks:
+In this exercise, you'll add error handling to a program that reads files from a computer. In the sample program, the `read_file_contents` function receives a `PathBuf` struct as its single input and returns a `Result<String, io::Error>`. 
 
-1. Create a mutable empty `String` variable.
-1. Access a file at a specified path.
-1. Read the file contents into the `String` variable with the `read_to_string` method.
-1. Return the modified `String` variable.
+The function does the following tasks:
+
+1. Creates a mutable empty `String` variable.
+1. Accesses a file at a specified path.
+1. Reads the file contents into the `String` variable with the `read_to_string` method.
+1. Returns the modified `String` variable.
 
 Here are some details about the code:
+
 - The program uses some structs and a trait. The first three lines of code bring these data types into scope.
 - Some of the `match` arms introduce variables like `file_handle` and `io_error`. Because their scope is limited to the `match` expression, they aren't declared in code that precedes `match`.
 - The `open` method returns a `Result<File, Error>` enum. When no errors occur, it returns a file handle wrapped in an `Ok` variant.
@@ -16,13 +19,16 @@ Here are some details about the code:
 ## Open the sample program
 
 To work on the sample code for this exercise, you have two options:
+
 - Copy the following code and edit it in your local development environment. 
 - Open the code in this prepared [Rust Playground][RustPlay-exercise].
 
 ### Edit in local development environment
+
 To run this code on your local computer, write the code in a *src/main.rs* file. The file must be at the root of a Cargo project. For questions about how to set up a new Cargo project, review the [first module in this learning path][Rust-cargo].
 
 ### Work in the Rust Playground
+
 To complete the exercise in the Rust Playground, you can read your own code as a file named *src/main.rs*. This file is on its own virtual path.
 
 ```rust
@@ -71,7 +77,7 @@ fn main() {
 
 Your first task is to add code to handle the success and failure scenarios.
 
-> [!Note]
+> [!NOTE]
 > In the sample code, look for the `TODO` comments and the `todo!` macro. The comments explain the task to complete. This macro indicates code that needs to be finished or updated.
 
 Update the following code to handle the success and failure scenarios inside a `match` expression.
@@ -89,6 +95,7 @@ Update the following code to handle the success and failure scenarios inside a `
 ```
 
 As you complete the task, address these programming goals:
+
 - The `Ok(value)` case must provide the inner `value`.
 - The `Err(error_value)` value must be returned early from the `read_file_contents` function.
 
@@ -109,6 +116,7 @@ Your next task is to add error handling. Update the following code to support th
 ```
 
 As you work on this task, address the following programming goals:
+
 - The `Ok(value)` case must provide the inner `value`.
 - The `Err(error_value)` value must be returned early from the `read_file_contents` function.
 
@@ -135,11 +143,9 @@ The program found the main file.
 The program reported an error for the file that doesn't exist.
 ```
 
-
 ## Solution
 
 You can compare your code with the prepared solution in this [Rust Playground][RustPlay-answer].
-
 
 <!-- Links -->
 

@@ -10,20 +10,6 @@ The DSVM comes with tools preinstalled for:
 
 You can add more programming languages, desktop applications, database tools, and so forth.
 
-## Run RStudio remotely
-
-From the DSVM desktop running in your XFCE client, double-click the RStudio icon.
-
-![Screenshot that shows the XFCE client, with RStudio highlighted.](../media/desktop-ubuntu.png)
-
-When RStudio finishes startup, enter `demo(graphics)` in the console window to see a demonstration of RStudio's graphing capabilities. 
-
-![Screenshot that shows the RStudio interface.](../media/rstudio.png)
-
-The free Azure resources used for this module don't have permission to access the internet, unlike those you create with your own account. Because the DSVM can't access the internet in this context, it can't download the data files needed for the included Python Jupyter notebook tutorials.
-
-In our scenario, your local data disk might be mounted as a remote disk on the virtual machine. If so, you can begin your analysis immediately.
-
 ## List and activate a Python conda environment
 
 The conda package manager is a popular way to manage Python programming environments. It's the default environment manager that the DSVM uses. The DSVM comes with several environments configured to work with popular data science and machine learning packages. As an example, let's run through initializing, activating, and using PyTorch running with Python 3.6.
@@ -52,12 +38,10 @@ To activate the desired conda environment:
    # conda environments:
    #
    base                  *  /anaconda
-   azureml_py36_automl      /anaconda/envs/azureml_py36_automl
-   azureml_py36_pytorch     /anaconda/envs/azureml_py36_pytorch
-   azureml_py36_tensorflow     /anaconda/envs/azureml_py36_tensorflow
-   py37_default             /anaconda/envs/py37_default
-   py37_pytorch             /anaconda/envs/py37_pytorch
-   py37_tensorflow          /anaconda/envs/py37_tensorflow
+   azureml_py310_sdkv2      /anaconda/envs/azureml_py310_sdkv2
+   azureml_py38     /anaconda/envs/azureml_py38
+   azureml_py38_PT_and_TF     /anaconda/envs/azureml_py38_PT_and_TF
+   py38_default             /anaconda/envs/py37_default
    ```
 
    The asterisk indicates that the `base` environment is currently active.
@@ -67,7 +51,7 @@ To activate the desired conda environment:
 1. Activate the environment that we want to use by running:
 
     ```bash
-    conda activate azureml_py36_pytorch
+    conda activate azureml_py38_PT_and_TF
     ```
 
 1. Run `python --version` and `conda list` again to confirm that the Python environment has changed.
@@ -78,6 +62,6 @@ To start a Jupyter server, run:
 jupyter notebook
 ```
 
-After startup, the Firefox browser on your DSVM should start. It should open to `localhost:8888/tree` and show the home directory of your DSVM user. Although the **notebooks** directory contains a number of tutorials on the various installed frameworks, almost all require downloading data from external sources. Because your DSVM is running in a free, restricted Azure environment in this module, you can't access that data at this time.
+After startup, the Firefox browser on your DSVM should start. It should open to `localhost:8888/tree` and show the home directory of your DSVM user. Although the **notebooks** directory contains tutorials on the various installed frameworks, almost all require downloading data from external sources. Because your DSVM is running in a free, restricted Azure environment in this module, you can't access that data at this time.
 
 Feel free to try other software on the machine, although the sandbox restrictions will affect programs that rely on internet access.

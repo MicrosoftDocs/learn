@@ -50,7 +50,7 @@ Now that you've connected with HttpRepl, let's try out our app. After each CRUD 
     cd Pizza
     ```
 
-1. Run the following command to get the list of all pizzas.
+1. Run the following command to get the list of all pizzas:
 
     ```dotnetcli
     get
@@ -61,7 +61,7 @@ Now that you've connected with HttpRepl, let's try out our app. After each CRUD 
     > [!NOTE]
     > **Why are the `sauce` and `toppings` properties null?** Remember in the `PizzaService.GetAll` method, you didn't use the `Include` extension method to specify that the navigation properties should be loaded.
 
-1. Run the following command to get a single pizza.
+1. Run the following command to get a single pizza:
 
     ```dotnetcli
     get 2
@@ -69,7 +69,7 @@ Now that you've connected with HttpRepl, let's try out our app. After each CRUD 
 
     The API returns the "Hawaiian" pizza. Notice that the `sauce` and `toppings` properties are populated because the `PizzaService.GetById` method uses the `Include` extension method.
 
-1. Run the following command to add a new pizza.
+1. Run the following command to add a new pizza:
 
     ```dotnetcli
     post
@@ -93,13 +93,13 @@ Now that you've connected with HttpRepl, let's try out our app. After each CRUD 
     }
     ```
 
-1. Run the following command to add another topping to the new BBQ Beef pizza.
+1. Run the following command to add another topping to the new BBQ Beef pizza:
 
     ```dotnetcli
     put 4/addtopping?toppingId=5 --no-body
     ```
 
-1. Run the following command to change the sauce on the BBQ Beef pizza.
+1. Run the following command to change the sauce on the BBQ Beef pizza:
 
     ```dotnetcli
     put 4/updatesauce?sauceId=2 --no-body

@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/30/2022
+  ms.date: 01/19/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -39,7 +39,7 @@ quiz:
     - content: "Password."
       isCorrect: false
       explanation: "Incorrect. A password attack occurs when someone attempts to gain authentication for password-protected accounts to get unauthorized access into a device or system."
-  - content: "Which mitigation strategy uses the principle of something the user knows and has?"
+  - content: "Which mitigation strategy uses the principle of something the user is and has?"
     choices:
     - content: "Threat intelligence."
       isCorrect: false
@@ -47,6 +47,6 @@ quiz:
     - content: "Browser security."
       isCorrect: false
       explanation: "Incorrect. Browser security is based on the application of security policies to prevent cyberattacks."
-    - content: "Multifactor authentication"
+    - content: "Multifactor authentication."
       isCorrect: true
       explanation: "Correct. Multifactor authentication works by requiring a user to provide multiple forms of identification to verify that they are who they claim to be."

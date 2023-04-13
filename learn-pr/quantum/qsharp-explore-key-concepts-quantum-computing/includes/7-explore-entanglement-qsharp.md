@@ -6,11 +6,11 @@ If you don´t have an Azure Quantum workspace yet, check the [Get started with A
 
 ## Create a new Notebook in your workspace
 
-1. Log in to the [Azure portal](https://portal.azure.com/) and select the workspace you created in the previous step.
+1. Sign in to the [Azure portal](https://portal.azure.com/) and select the workspace you created in the previous step.
 1. In the left blade, select **Notebooks**.
-1. Click **My Notebooks** and click **Add New**.
+1. Select **My Notebooks** and select **Add New**.
 1. In **Kernel Type**, select **IQ#**.
-1. Type a name for the file, for example *Entanglement.ipynb*, and click **Create file**. 
+1. Type a name for the file, for example *Entanglement.ipynb*, and select **Create file**.
 
 When your new Notebook opens, it automatically creates the code for the first cell, based on your subscription and workspace information.
 
@@ -27,7 +27,7 @@ If you run this cell, it should authenticate to your subscription and display a 
 
 The first step is to define a Q# operation that  initializes a qubit to a known state. You call this to set a qubit to a *classical* state, meaning it either returns `Zero` 100% of the time or returns `One` 100% of the time. `Zero` and `One` are Q# values that represent the only two possible results of a measurement of a qubit.
 
-Click **+Code** to add a new cell and add the following code:
+Select **+Code** to add a new cell and add the following code:
 
 ```qsharp
 operation SetQubitState(desired : Result, target : Qubit) : Unit {
@@ -46,7 +46,7 @@ The  `SetQubitState` operation:
 
 1. Takes two parameters: a type `Result`, named `desired`, that represents the desired state for the qubit to be in (0 or 1), and a type `Qubit`. 
 1. Performs a measurement operation, `M`, which measures the state of the qubit (`Zero` or `One`) and compares the result to the value specified in `desired`.
-1. If the measurement does not match the compared value, it runs an `X` operation, which flips the state of the qubit to where the probabilities of a measurement returning `Zero` and `One` are reversed. This way, `SetQubitState` always puts the target qubit in the desired state. 
+1. If the measurement doesn't match the compared value, it runs an `X` operation, which flips the state of the qubit to where the probabilities of a measurement returning `Zero` and `One` are reversed. This way, `SetQubitState` always puts the target qubit in the desired state. 
 
 ## Test the measurement
 
@@ -107,7 +107,7 @@ allocate the qubits in a known state. This is required by the `use` statement.
 
 Before moving on to the procedures for superposition and entanglement, test the code up to this point to see the initialization and measurement of the qubits. 
 
-To run the `TestBellState` operation, you use the `%simulate` magic command to call the Azure Quantum full-state simulator. You need to specify the `count` and `initial` arguments, for example, `count=1000` and `initial=1`. This initializes the first qubit to `One` and measures each qubit 1000 times. Add a new cell with the following command and click **Run all**:
+To run the `TestBellState` operation, you use the `%simulate` magic command to call the Azure Quantum full-state simulator. You need to specify the `count` and `initial` arguments, for example, `count=1000` and `initial=1`. This initializes the first qubit to `One` and measures each qubit 1000 times. Add a new cell with the following command and select **Run all**:
 
 ```dotnetcli
 %simulate TestBellState count=1000 initial=1
@@ -120,7 +120,7 @@ q1:Zero, One  q2:Zero, One
 (0, 1000, 1000, 0)
 ```
 
-Because the qubits haven't been manipulated yet, they have retained their initial values: the first qubit returns `One` every time, and the second qubit returns `Zero`.
+Because the qubits haven't been manipulated yet, they've retained their initial values: the first qubit returns `One` every time, and the second qubit returns `Zero`.
 
 If you run the cell again with `initial=0`, you should observe that the first qubit also returns `Zero` every time.
 
@@ -135,7 +135,7 @@ q1:Zero, One q2:Zero, One
 
 ## Put a qubit in superposition in Q\#
 
-Currently, the qubits in the program are all in a *classical* state, that is, they are either 1 or 0. You know this because the program initializes the qubits to a known state, and you haven't added any processes to manipulate them.  Before entangling the qubits, you will put the first qubit into a *superposition* state, where a measurement of the qubit will return `Zero` 50% of the time and `One` 50% of the time. Conceptually, the qubit can be thought of as being in a linear combination of all states between the `Zero` and `One`.
+Currently, the qubits in the program are all in a *classical* state, that is, they're either 1 or 0. You know this because the program initializes the qubits to a known state, and you haven't added any processes to manipulate them.  Before entangling the qubits, you'll put the first qubit into a *superposition* state, where a measurement of the qubit will return `Zero` 50% of the time and `One` 50% of the time. Conceptually, the qubit can be thought of as being in a linear combination of all states between the `Zero` and `One`.
 
 To put a qubit in superposition, Q# provides the `H`, or *Hadamard*, operation. Recall the `X` operation from the [Initialize a qubit using measurement](#initialize-a-qubit-using-measurement) procedure earlier, which flipped a qubit from 0 to 1 (or vice versa); the `H` operation flips the qubit *halfway* into a state of equal probabilities of 0 or 1. When measured, a qubit in superposition should return roughly an equal number of `Zero` and `One` results.
 
@@ -155,7 +155,7 @@ In the previous cell with the `TestBellState`, add the `H` operation inside the 
             let resultQ2 = M(q2); 
 ```
 
-Initialize the qubit to 1 again in the `%simulate` command and click **Run all**, and you can see the results of the first qubit in superposition:
+Initialize the qubit to 1 again in the `%simulate` command and select **Run all**, and you can see the results of the first qubit in superposition:
 
 ```dotnetcli
 %simulate TestBellState count=1000 initial=1
@@ -252,7 +252,7 @@ operation TestBellState(count : Int, initial : Result) : (Int, Int, Int, Int) {
 
 ```
 
-Click **Run all** to run the updated operation and you should see:
+Select **Run all** to run the updated operation and you should see:
 
 ```output
 Q1:Zero/One  Q2:Zero/One
@@ -332,7 +332,7 @@ same result. Now you're going to replicate the code by using `Controlled X` inst
 
    ```
 
-1. Click **Run all** to run the updated operation and you should see:
+1. Select **Run all** to run the updated operation and you should see:
 
    ```output
    Q1:Zero/One  Q2:Zero/One

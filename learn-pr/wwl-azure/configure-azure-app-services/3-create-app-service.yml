@@ -1,16 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-azure-app-services.create-app-service
-title: Create an app service
+title: Create an app with App Service
 metadata:
-  title: Create an app service
-  description: "Create an app service"
-  ms.date: 11/18/2022
+  title: Create an app with App Service
+  description: "Create an app with App Service"
+  ms.date: 01/18/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 9
+durationInMinutes: 8
 content: |
   [!include[](includes/3-create-app-service.md)]

@@ -4,9 +4,10 @@ title: Exercise - Implement the blue-green deployment pattern
 metadata:
   title: Exercise - Implement the blue-green deployment pattern
   description: Implement the blue-green deployment pattern in your pipeline by using deployment slots.
-  ms.date: 06/23/2021
+  ms.date: 08/08/2022
   author: ramiMSFT
   ms.author: rabououn
+  ms.custom: devdivchpfy22
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

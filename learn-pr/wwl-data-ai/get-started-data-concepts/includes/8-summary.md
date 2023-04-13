@@ -1,4 +1,4 @@
-When you understand the data in a dataset, you can extend and transform it using techniques that make it easy to analyze. In its most basic format, data does not reveal much useful information. When you apply sorting, filtering, and aggregate calculations, you can shape data to expose insights upon which critical business decisions are made.
+When you understand the data in a dataset, you can extend and transform it using techniques that make it easy to analyze. In its most basic format, data doesn't reveal much useful information. When you apply sorting, filtering, and aggregate calculations, you can shape data to expose insights to determine critical business decisions.
 
 In this module, you've learned how to:
 

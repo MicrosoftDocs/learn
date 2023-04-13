@@ -1,10 +1,10 @@
 You might have heard that Go does an outstanding job for concurrency. Perhaps it's the most prominent feature that has made Go so popular and the choice for writing other software like Docker, Kubernetes, and Terraform. 
 
-Before you start learning about how concurrency works in Go, you might need to forget what you already know from other programming languages. Go's approach is very different.
+Before you start learning about how concurrency works in Go, you might need to forget what you already know from other programming languages. Go's approach is different.
 
 At this point, you already have the required knowledge to cover more advanced topics like concurrency. Nonetheless, we'll start by making the case of why concurrency is needed. We'll introduce different topics little by little. 
 
-We recommend that you practice all of the sample codes and don't move forward until you understand the concepts very well. As you've experienced in previous modules, practice is what will help you to better understand concepts.
+We recommend that you practice all of the code samples and don't move forward until you fully understand the concepts. As you've experienced in previous modules, practice is what will help you to better understand concepts.
 
 Let's start to explore what you'll learn in this module.
 
@@ -20,7 +20,7 @@ In this module, you'll learn about:
 
 ## Prerequisites
 
-- A Go environment that's ready to create applications. Ideally, you should have installed and configured Go locally and installed [Visual Studio Code](https://code.visualstudio.com/download) with the [Go extension](https://marketplace.visualstudio.com/items?itemName=golang.Go).
+- A Go environment that's ready to create applications. Ideally, you should have Go installed and configured locally, and have [Visual Studio Code](https://code.visualstudio.com/download) installed with the [Go extension](https://marketplace.visualstudio.com/items?itemName=golang.Go).
 - The ability to create and modify `.go` files.
 - The ability to run Go applications by using the terminal prompt.
 - Knowledge of basic data types like `string`, `int`, and `boolean`.

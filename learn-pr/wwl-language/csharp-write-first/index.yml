@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.languages.csharp-write-first
+metadata:
+  title: Write your first C# code
+  description: "Write your first C# code"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Write your first C# code
+summary: Get started by writing code examples to learn the basics of the C# syntax!
+abstract: |
+  After you complete this module, you'll be able to:
+  * Write your first lines of C# code
+  * Use two different techniques to print a message to a text console
+  * Diagnose errors when you type code incorrectly
+  * Identify different C# syntax elements like operators, classes, and methods
+prerequisites: ""
+iconUrl: /training/achievements/csharp-write-first.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- dotnet
+- vs-code
+subjects:
+- development-tools
+units:
+- learn.languages.csharp-write-first.introduction
+- learn.languages.csharp-write-first.exercise-hello-world
+- learn.languages.csharp-write-first.how-it-works
+- learn.languages.csharp-write-first.challenge
+- learn.languages.csharp-write-first.review-solution-print-messages
+- learn.languages.csharp-write-first.knowledge-check
+- learn.languages.csharp-write-first.summary
+badge:
+  uid: learn.languages.csharp-write-first.badge

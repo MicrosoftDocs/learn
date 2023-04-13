@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-computers.research-data-centers-cloud-computing
+title: Research data centers for cloud computing
+metadata:
+  title: Research data centers for cloud computing
+  description: "Research data centers for cloud computing"
+  ms.date: 12/16/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-research-data-centers-cloud-computing.md)]

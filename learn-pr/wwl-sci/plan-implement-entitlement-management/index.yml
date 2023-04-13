@@ -3,7 +3,7 @@ uid: learn.wwl.plan-implement-entitlement-management
 metadata:
   title: Plan and implement entitlement management
   description: "When new users or external users join your site, quickly assigning them access to Azure solutions is a must. Explore how to entitle users to access your site and resources."
-  ms.date: 06/24/2022
+  ms.date: 02/07/2023
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
@@ -29,6 +29,10 @@ roles:
 products:
 - azure
 - azure-active-directory
+- azure-active-directory-domain
+- entra
+- entra-identity-governance
+- entra-permissions-management
 subjects:
 - cloud-computing
 units:

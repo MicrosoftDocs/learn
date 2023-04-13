@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.build-chat-app-web-pubsub.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 12/14/2022
+  author: dlepow
+  ms.author: danlep
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.contributors: jixin 
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  questions:
+  - content: The Web PubSub client protocol is based on which of the following protocols?
+    choices:
+    - content: Azure Web Apps
+      isCorrect: false
+      explanation: Incorrect. Azure Web Apps is an Azure service and is not a protocol.
+    - content: WebSocket 
+      isCorrect: true
+      explanation: Correct. WebSocket is a highly reliable, efficient, bi-directional protocol for real-time web messaging.
+    - content: HTTPS
+      isCorrect: false
+      explanation: Incorrect. The HTTPS protocol is not used to create a client connection for Web PubSub.
+  - content: Which services does the sample Static Web App use to implement continuous delivery (CD)?
+    choices:
+    - content: GitHub Webhooks and Azure Pipelines
+      isCorrect: false
+      explanation: Incorrect. Webhooks aren't used in this application.
+    - content: Azure DevOps
+      isCorrect: false
+      explanation: Incorrect. A Static Web App can use Azure Repos and Azure Pipelines, but in this module we picked a different architecture.
+    - content: GitHub repo with GitHub Actions
+      isCorrect: true
+      explanation: You're right. GitHub Actions monitors the main branch of the repo for changes, then calls a GitHub Actions workflow to build and deploy the changes.
+  -  content: Which of the following  statements is true about the Web PubSub event handler in this module?
+     choices:
+     - content: The event handler triggers GitHub Actions to update the static web app.
+       isCorrect: false
+       explanation: Incorrect. Updates to source code in the GitHub repo trigger the GitHub Actions to deliver an updated static web app.
+     - content: The event handler handles client requests to Web PubSub and maps them to APIs in the static web app. 
+       isCorrect: true
+       explanation: Correct! The event handler handles an incoming client event to Web PubSub, such as the login event, and maps it to a backend API.
+     - content: The event handler initiates the client connection to Web PubSub.
+       isCorrect: false
+       explanation: Incorrect. The client connection to Azure Web PubSub uses a WebSocket connection.

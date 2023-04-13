@@ -3,7 +3,7 @@ uid: learn.wwl.deploy-iaas-solutions-with-azure-sql
 metadata:
   title: Deploy IaaS solutions with Azure SQL
   description: "Deploy IaaS solutions with Azure SQL"
-  ms.date: 10/18/2022
+  ms.date: 12/22/2022
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - Familiarity with on-premises virtualization technologies, including: VMs, virtual networking, and virtual hard disks.
   - Familiarity with network configuration, including TCP/IP, Domain Name System (DNS), virtual private networks (VPNs), firewalls, and encryption technologies.
-  - Ability to create a on-premises SQL Server database, including the configuration  of data files and log files.
+  - Ability to create an on-premises SQL Server database, including the configuration  of data files and log files.
   - Experience creating and configuring resources using the Azure portal.
 iconUrl: /training/achievements/deploy-sql-server-in-a-virtual-machine.svg
 levels:

@@ -23,7 +23,8 @@ roles:
 - security-operations-analyst
 products:
 - azure
-- azure-sentinel
+- microsoft-sentinel
+- azure-log-analytics
 subjects:
 - cloud-security
 units:

@@ -7,65 +7,67 @@ metadata:
   ms.date: 07/01/2022
   author: edlamie80
   ms.author: liydu
+  ms.reviewer: liydu
+  manager: lizross
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 8
 content: |
 quiz:
   questions:
-    - content: "Why does the TCP/IP model use data packets?"
+    - content: 'Why does the TCP/IP model use data packets?'
       choices:
-        - content: "Using data packets is discouraged because it causes considerable overhead."
+        - content: 'Using data packets is discouraged because it causes considerable overhead.'
           isCorrect: false
           explanation: "Incorrect, data may be quite large, so it's divided into fixed-size data packets."
-        - content: "Data packets should only be used for sending images."
+        - content: 'Data packets should only be used for sending images.'
           isCorrect: false
           explanation: "Incorrect, data may be quite large, so it's divided into fixed-size data packets."
-        - content: "Data packets should only be used within small networks."
+        - content: 'Data packets should only be used within small networks.'
           isCorrect: false
           explanation: "Incorrect, data may be quite large, so it's divided into fixed-size data packets."
         - content: "Data may be quite large, so it's divided into fixed-size data packets."
           isCorrect: true
           explanation: "Correct, data may be quite large, so it's divided into fixed-size data packets."
-    - content: "Which of the following is a part of the general template for NetX Duo projects?"
+    - content: 'Which of the following is a part of the general template for NetX Duo projects?'
       choices:
-        - content: "The `start_netx` function."
+        - content: 'The `start_netx` function.'
           isCorrect: false
-          explanation: "Incorrect, the `tx_application_define` initialization function is part of the general template."
-        - content: "The `tx_application_define` initialization function."
+          explanation: 'Incorrect, the `tx_application_define` initialization function is part of the general template.'
+        - content: 'The `tx_application_define` initialization function.'
           isCorrect: true
-          explanation: "Correct, the `tx_application_define` initialization function is part of the general template."
-        - content: "The ping request command."
+          explanation: 'Correct, the `tx_application_define` initialization function is part of the general template.'
+        - content: 'The ping request command.'
           isCorrect: false
-          explanation: "Incorrect, the `tx_application_define` initialization function is part of the general template."
-        - content: "The TCP/IP model definition."
+          explanation: 'Incorrect, the `tx_application_define` initialization function is part of the general template.'
+        - content: 'The TCP/IP model definition.'
           isCorrect: false
-          explanation: "Incorrect, the `tx_application_define` initialization function is part of the general template."
-    - content: "What is the purpose of the address resolution protocol (ARP)?"
+          explanation: 'Incorrect, the `tx_application_define` initialization function is part of the general template.'
+    - content: 'What is the purpose of the address resolution protocol (ARP)?'
       choices:
-        - content: "Translate an IP address to a physical address."
+        - content: 'Translate an IP address to a physical address.'
           isCorrect: true
-          explanation: "Correct, ARP translates an IP address to a physical address."
-        - content: "Translate a physical address to an IP address."
+          explanation: 'Correct, ARP translates an IP address to a physical address.'
+        - content: 'Translate a physical address to an IP address.'
           isCorrect: false
-          explanation: "Incorrect, ARP translates an IP address to a physical address."
-        - content: "Resolve conflicting IP addresses."
+          explanation: 'Incorrect, ARP translates an IP address to a physical address.'
+        - content: 'Resolve conflicting IP addresses.'
           isCorrect: false
-          explanation: "Incorrect, ARP translates an IP address to a physical address."
-        - content: "Resolve conflicting physical addresses."
+          explanation: 'Incorrect, ARP translates an IP address to a physical address.'
+        - content: 'Resolve conflicting physical addresses.'
           isCorrect: false
-          explanation: "Incorrect, ARP translates an IP address to a physical address."
-    - content: "What is the purpose of a ping request?"
+          explanation: 'Incorrect, ARP translates an IP address to a physical address.'
+    - content: 'What is the purpose of a ping request?'
       choices:
         - content: Determine whether data packets have been received."
           isCorrect: false
-          explanation: "Incorrect, the ping request is used to check the reachability of a host."
-        - content: "Check the reachability of a host."
+          explanation: 'Incorrect, the ping request is used to check the reachability of a host.'
+        - content: 'Check the reachability of a host.'
           isCorrect: true
-          explanation: "Correct, the ping request is used to check the reachability of a host."
-        - content: "Determine whether a physical address is a high-speed address."
+          explanation: 'Correct, the ping request is used to check the reachability of a host.'
+        - content: 'Determine whether a physical address is a high-speed address.'
           isCorrect: false
-          explanation: "Incorrect, the ping request is used to check the reachability of a host."
-        - content: "Determine whether a network is operational."
+          explanation: 'Incorrect, the ping request is used to check the reachability of a host.'
+        - content: 'Determine whether a network is operational.'
           isCorrect: false
-          explanation: "Incorrect, the ping request is used to check the reachability of a host."
+          explanation: 'Incorrect, the ping request is used to check the reachability of a host.'

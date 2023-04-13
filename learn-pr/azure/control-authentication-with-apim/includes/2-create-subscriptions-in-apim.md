@@ -1,6 +1,6 @@
 When you publish an API with APIM, you define who can access the API through the gateway.
 
-For your meteorological app, you want to ensure that only customers who have subscribed to your service can access the API and use your forecast data. You accomplish this by issuing subscription keys.
+For your meteorological app, you want to ensure that only customers who have subscribed to your service can access the API and use your forecast data. You accomplish this access control by issuing subscription keys.
 
 > [!IMPORTANT]
 > Subscriptions in this context are not related to Azure subscriptions used for managing your Azure account.
@@ -9,7 +9,7 @@ Here, you'll learn how to use subscription keys to secure your APIs.
 
 ## Subscriptions and keys
 
-You can choose to publish your APIs and the information they contain for free, but, usually you want to restrict access to users who have paid or organizations with which you have a working relationship. You can control access to your APIs by using subscriptions. Subscriptions are used to segment the access levels to an API.
+You can choose to publish your APIs and the information they contain for free. But usually, you want to restrict access to users who have paid or organizations with which you have a working relationship. You can control access to your APIs by using subscriptions. Subscriptions are used to segment the access levels to an API.
 
 Subscription keys form the authorization to enable access to these subscriptions. Whenever a client makes a request to a protected API, a valid subscription key must be included in the HTTP request, otherwise the call will be rejected.
 

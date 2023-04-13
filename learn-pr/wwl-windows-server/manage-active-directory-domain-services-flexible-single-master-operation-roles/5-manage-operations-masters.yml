@@ -4,18 +4,17 @@ title: Manage AD DS operations masters
 metadata:
   title: Manage AD DS operations masters
   description: "Manage AD DS operations masters"
-  ms.date: 10/20/2021
+  ms.date: 01/05/2023
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
 azureSandbox: false
 labModal: false
 durationInMinutes: 15
 content: |
   [!include[](includes/5-manage-operations-masters.md)]
 quiz:
-  title: "Quick review"
+  title: "Check your knowledge"
   questions:
   - content: "What tool allows the transfer of the Infrastructure Master operations master role?"
     choices:

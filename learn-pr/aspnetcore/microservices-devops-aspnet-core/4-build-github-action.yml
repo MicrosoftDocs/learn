@@ -7,7 +7,7 @@ metadata:
   author: scottaddie
   ms.author: scaddie
   ms.topic: interactive-tutorial
-  ms.prod: learning-aspnetcore
+  ms.prod: aspnet-core
 title: Exercise - Create a GitHub Action to build a container image
 durationInMinutes: 10
 content: |

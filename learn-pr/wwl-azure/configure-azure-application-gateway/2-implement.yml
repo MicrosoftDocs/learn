@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-azure-application-gateway.implement
-title: Implement Application Gateway
+title: Implement Azure Application Gateway
 metadata:
-  title: Implement Application Gateway
-  description: "Implement Application Gateway"
-  ms.date: 06/02/2022
+  title: Implement Azure Application Gateway
+  description: "Implement Azure Application Gateway"
+  ms.date: 02/01/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial

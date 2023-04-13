@@ -4,7 +4,7 @@ In this exercise, you'll install the Azure Monitor Agent on your new VM to colle
 
 ## Install the Azure Monitor agent by using data collection rules
 
-1. In the Portal, search for Monitor. 
+1. In the [Azure portal](https://portal.azure.com?azure-portal=true), search for Monitor.
 1. Under **Settings**, select **Data Collection Rules**.
 1. Select **Create**.
 
@@ -15,8 +15,8 @@ In this exercise, you'll install the Azure Monitor Agent on your new VM to colle
    | Setting     | Value |
    |---------|---------|
    |Rule Name    |   MyPerformanceMetrics |
-   |Subscription  |   Concierge Subscription  |
-   |Resource group   |  <rgn>[sandbox resource group name]</rgn>     |
+   |Subscription  |   Your subscription  |
+   |Resource group   |  Resource group that contains the VM    |
    |Region  | Region where the VM is located     |
    |Platform Type  | Linux     |
 
@@ -33,10 +33,9 @@ In this exercise, you'll install the Azure Monitor Agent on your new VM to colle
     You have different configuration options depending on the OS installed on the VM. At the basic level, these options are performance counters (CPU, Memory, Disk and Network) which can be sent to Azure Monitor Metrics and/or Azure Monitor Logs. However, you can also choose to collect custom metrics like percentage of free disk space on Windows, or the amount of swap available on Linux.
 
 1. For **Data source type**, select **Performance Counters**.
-1. Leave the default for the **Basic** performance counters and Sample rate.
 
     :::image type="content" source="../media/6-add-data-sources.png" alt-text="Screenshot of the data collection rules performance counters." lightbox="../media/6-add-data-sources.png":::
-
+1. Change the **Sample rate (seconds)** for each counter to *60*. 
 1. Select the **Destination** tab to view the default destination for Performance Counters, Azure Monitor Metrics.
 
     :::image type="content" source="../media/6-add-dcr-destinations.png" alt-text="Screenshot of the data collection rules performance counters destination.":::

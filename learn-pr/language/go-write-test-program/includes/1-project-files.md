@@ -2,7 +2,7 @@ Let's talk about what we'll be creating. As mentioned previously, we'll create t
 
 ## Define the features and requirements
 
-The online bank we're about to build is a proof of concept, which will determine how feasible it is to build the bank program. In this first iteration, the interaction with the core package will be through a CLI program. We won't have a user interface or persist data into a database. To see the account statement from a customer, we'll simply expose an endpoint.
+The online bank we're about to build is a proof of concept, which will determine if it's feasible to build the bank program. In this first iteration, the interaction with the core package will be through a CLI program. We won't have a user interface or persist data into a database. To see the account statement from a customer, we'll expose an endpoint.
 
 The online bank system will:
 
@@ -12,7 +12,7 @@ The online bank system will:
 - Provide an account statement with customer data and a final balance.
 - Expose a Web API through an endpoint to print an account statement.
 
-We'll build this together, so don't worry too much about the details for now.
+We'll build this program together, so don't worry too much about the details for now.
 
 ## Create the initial project files
 
@@ -81,7 +81,7 @@ require (
 replace github.com/msft/bank => ../bankcore
 ```
 
-To make sure everything is working, go to the terminal in the `$GOPATH/src/bankapi/` directory and run the following command:
+To make sure everything is working, open a terminal in the `$GOPATH/src/bankapi/` directory and run the following command:
 
 ```sh
 go run main.go

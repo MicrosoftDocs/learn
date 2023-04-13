@@ -3,7 +3,7 @@ uid: learn.cpp-write-your-first-program
 metadata:
   title: Write your first program in C++
   description: Get familiar with the C++ programming language. Construct a C++ program and learn basic C++ syntax. Also, learn how to identify and correct common programming errors.
-  ms.date: 11/18/2021
+  ms.date: 01/04/2023
   author: saifeemustafaq
   ms.author: chnoring
   ms.topic: interactive-tutorial
@@ -23,7 +23,7 @@ roles:
   - developer
   - student
 products:
-  - vs
+  - azure
 prerequisites: None
 subjects:
 - development-tools

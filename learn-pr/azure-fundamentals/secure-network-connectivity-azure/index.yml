@@ -4,8 +4,8 @@ metadata:
   title: Secure network connectivity on Azure (AZ-900)
   description: Learn about the Azure services you can use to help ensure that your network is safe, secure, and trusted. Prepare for AZ-900.
   ms.date: 09/20/2022
-  author: Randall-Knapp
-  ms.author: rknapp
+  author: wwlpublish
+  ms.author: robbarefoot
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   adobe-target: true

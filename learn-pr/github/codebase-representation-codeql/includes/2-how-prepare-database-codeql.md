@@ -44,7 +44,7 @@ You can prevent the CLI from searching unrelated sibling directories by keeping 
 
 ### 3. Obtain a local copy of the CodeQL queries
 
-The CodeQL repository on GitHub contains the queries and libraries for CodeQL analysis of C/C++, C#, Java, JavaScript/TypeScript, Python, and Ruby. The CodeQL for Go repository on GitHub contains the libraries and queries for Go analysis.
+The CodeQL repository on GitHub contains the queries and libraries for CodeQL analysis of C/C++, C#, Java, JavaScript/TypeScript, Python, and Ruby. The CodeQL for Go repository on GitHub is contained within the CodeQL repository and contains the libraries and queries for Go analysis.
 
 Clone a copy of the repository into your CodeQL directory `codeql-home`. The root of the cloned repository will be called`codeql` by default. After creating the clone, rename the folder`codeql-repo` so that you don't have a conflict with the CodeQL CLI that you'll extract in the next step.
 

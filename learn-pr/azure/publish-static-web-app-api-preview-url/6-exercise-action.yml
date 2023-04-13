@@ -3,7 +3,7 @@ uid: learn.azure.publish-static-web-app-api-preview-url.6-exercise-action
 metadata:
   title: Exercise - Publish the API with GitHub Actions
   description: Use a GitHub Action to automatically publish your updated static site and API
-  ms.date: 06/17/2021
+  ms.date: 12/08/2022
   author: craigshoemaker
   ms.author: cshoe
   ms.topic: interactive-tutorial

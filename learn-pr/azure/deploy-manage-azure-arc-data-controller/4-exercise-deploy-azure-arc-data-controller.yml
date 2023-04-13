@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.deploy-manage-azure-arc-data-controller.exercise-deploy-azure-arc-data-controller
+title: Exercise - Deploy an Azure Arc data controller
+metadata:
+  title: Exercise - Deploy an Azure Arc data controller
+  description: Complete this exercise to deploy Azure Arc data controller.
+  ms.date: 12/19/2022
+  author: tchristiani
+  ms.author: terrychr
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+content: |
+  [!include[](includes/exercise-deploy-azure-arc-data-controller.md)]

@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Multiple-choice questions
-  ms.date: 09/22/2020
+  ms.date: 01/06/2023
   author: aaronpowell
   ms.author: aapowell
   ms.topic: interactive-tutorial
@@ -23,55 +23,55 @@ quiz:
       choices:
         - content: "Delete the Azure Static Web Apps instance and recreate it."
           isCorrect: false
-          explanation: "The Azure Static Web Apps instance doesn't need to be recreated to redeploy changes to your web app."
+          explanation: "Incorrect. The Azure Static Web Apps instance doesn't need to be recreated to redeploy changes to your web app."
         - content: "Push commits to the watched branched or create pull request to watched branch."
           isCorrect: true
-          explanation: "Every time you push commits or create pull requests into the watched branch, the GitHub Action automatically builds and deploys your app and its API to Azure."
+          explanation: "Correct. Every time you push commits or create pull requests into the watched branch, the GitHub Action automatically builds and deploys your app and its API to Azure."
         - content: "Create a new GitHub Actions workflow to build and publish your web app."
           isCorrect: false
-          explanation: "The existing GitHub Actions workflow is capable of redeploying your web app."
+          explanation: "Incorrect. The existing GitHub Actions workflow is capable of redeploying your web app."
         - content: "Create and push a new branch to your git repository."
           isCorrect: false
-          explanation: "A new branch will not be watched by the existing GitHub Actions workflow."
+          explanation: "Incorrect. A new branch will not be watched by the existing GitHub Actions workflow."
     - content: "How do you view the progress of building and redeploying after you make changes to your app?"
       choices:
         - content: "Go to the production URL of your app."
           isCorrect: false
-          explanation: "The production URL of your Azure Static Web Apps instance displays your web app, not your build progress."
+          explanation: "Incorrect. The production URL of your Azure Static Web Apps instance displays your web app, not your build progress."
         - content: "Go to your resource in the Azure portal and view the configuration."
           isCorrect: false
-          explanation: "The configuration for your resource in the Azure portal allows you to view or modify the configuration of the resource. It does not show the progress of your build and redeployment of your web app."
+          explanation: "Incorrect. The configuration for your resource in the Azure portal allows you to view or modify the configuration of the resource. It does not show the progress of your build and redeployment of your web app."
         - content: "Push your commits to your watched branched of your git repository."
           isCorrect: false
-          explanation: "Pushing your commits will not show your progress, but it will trigger a GitHub Actions workflow."
+          explanation: "Incorrect. Pushing your commits will not show your progress, but it will trigger a GitHub Actions workflow."
         - content: "Go to the repository on `github.com`, then navigate to the Actions menu."
           isCorrect: true
-          explanation: "You can view the progress of the GitHub Actions workflow in your browser on your repository."
+          explanation: "Correct. You can view the progress of the GitHub Actions workflow in your browser on your repository."
     - content: "How do you configure your app so that when you navigate to _/about_ in the browser, it serves the root _index.html_ file?"
       choices:
         - content: "Add a `navigationFallback` to the _staticwebapp.config.json_ file that uses index.html."
           isCorrect: true
-          explanation: "You can customize navigation fallbacks in the _staticwebapp.config.json_ file in your app's artifact folder. When you define a fallback rule all unmatched routes will serve **/index.html**."
+          explanation: "Correct. You can customize navigation fallbacks in the _staticwebapp.config.json_ file in your app's artifact folder. When you define a fallback rule all unmatched routes will serve **/index.html**."
         - content: "Add an entry in _Client.csproj_ for a wildcard route **/*** to serve **/index.html**."
           isCorrect: false
-          explanation: "The navigation fallback must be defined in the _staticwebapp.config.json_ file."
+          explanation: "Incorrect. The navigation fallback must be defined in the _staticwebapp.config.json_ file."
         - content: "Add an entry in _routes.json_ for a wildcard route /index** to serve **/index.html**."
           isCorrect: false
-          explanation: "The _routes.json_ file is deprecated in favor of _staticwebapp.config.json_."
+          explanation: "Incorrect. The _routes.json_ file is deprecated in favor of _staticwebapp.config.json_."
         - content: "Configure a wildcard route in the GitHub Actions workflow file to serve **/index.html**."
           isCorrect: false
-          explanation: "The navigation fallback must be defined in the _staticwebapp.config.json_ file."
+          explanation: "Incorrect. The navigation fallback must be defined in the _staticwebapp.config.json_ file."
     - content: "How do you tell Azure Static Web Apps that you changed where your API is located?"
       choices:
         - content: "In the Client.csproj file."
           isCorrect: false
-          explanation: "The configuration for your app's locations are defined in the GitHub Actions workflow file."
+          explanation: "Incorrect. The configuration for your app's locations are defined in the GitHub Actions workflow file."
         - content: "Add an entry in _staticwebapp.config.json_ for the location."
           isCorrect: false
-          explanation: "The _staticwebapp.config.json_ file is where you define routing rules, not the location of your API."
+          explanation: "Incorrect. The _staticwebapp.config.json_ file is where you define routing rules, not the location of your API."
         - content: "Azure Static Web Apps automatically knows where your code and API are located, without any configuration."
           isCorrect: false
-          explanation: "You can configure the location of your code, artifacts, and API in the GitHub Actions workflow file. If you do not specify these locations, default values will be used."
+          explanation: "Incorrect. You can configure the location of your code, artifacts, and API in the GitHub Actions workflow file. If you do not specify these locations, default values will be used."
         - content: "In the GitHub Actions workflow file in your _.github/workflows_ folder."
           isCorrect: true
-          explanation: "You can configure the locations for your app code, app artifact, and API in the GitHub Actions workflow file. This file is located in your _.github/workflows_ folder."
+          explanation: "Correct. You can configure the locations for your app code, app artifact, and API in the GitHub Actions workflow file. This file is located in your _.github/workflows_ folder."

@@ -14,7 +14,7 @@ In unsupervised learning, the objective function makes its judgment purely on th
 
 ## What is supervised learning?
 
-Supervised learning can be thought of as learning by example. In supervised learning, we assess the model's performance by comparing its estimates to the correct answer. Although we can have very simple objective functions, we need both:
+Think of supervised learning as learning by example. In supervised learning, we assess the model's performance by comparing its estimates to the correct answer. Although we can have simple objective functions, we need both:
 
 * Features that are provided as inputs to the model
 * Labels, which are the correct answers that we want the model to be able to produce

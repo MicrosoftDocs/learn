@@ -2,16 +2,16 @@
 uid: learn.oxford.explore-design-brain-patterns
 metadata:
   title: Explore brain design patterns
-  description: Learn Autonomous Intelligence technologies and evaluate when to use it.
+  description: Learn AI brain design patterns and evaluate when to use them.
   ms.date: 10/18/2022
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Explore brain design patterns
-summary: In this module, you’ll learn about the main Autonomous AI brain design patterns that solve most of the Machine Teaching challenges. You’ll also learn when to best use them individually or combined.
+summary: In this module, you'll learn about the main Autonomous AI brain design patterns that solve most of the Machine Teaching challenges. You'll also learn when to best use them individually or combined.
 abstract: | 
-  After completing this module, you’ll be able to:
+  After completing this module, you'll be able to:
   - Design Autonomous AI brains for an industrial application
   - Describe the benefits and usage of brain design patterns
   - Apply best practices of Machine Teaching to solve industrial business challenges
@@ -30,6 +30,7 @@ roles:
 - business-user
 products: 
 - azure
+- bonsai
 subjects:
 - artificial-intelligence
 units:

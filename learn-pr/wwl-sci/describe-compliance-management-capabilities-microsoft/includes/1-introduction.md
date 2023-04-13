@@ -1,3 +1,4 @@
+
 Microsoft Cloud services are built on a foundation of trust, security, and compliance. The Microsoft Service Trust Portal provides a variety of content, tools, and other resources about Microsoft security, privacy, and compliance practices.
 
 Microsoft also helps organizations meet their privacy requirements, with Microsoft Priva. Priva helps organizations safeguard personal data and build a privacy-resilient workplace.

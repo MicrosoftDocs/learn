@@ -13,16 +13,16 @@ With TLS client authentication, the API Management gateway can inspect the certi
 | **Certificate Authority (CA)** | Only allow certificates signed by a particular CA. |
 | **Thumbprint** | Allow certificates containing a specified thumbprint. |
 | **Subject** | Only allow certificates with a specified subject. |
-| **Expiration Date** | Only allow certificates that have not expired. |
+| **Expiration Date** | Only allow certificates that haven't expired. |
 | | |
 
 These properties aren't mutually exclusive and they can be combined to form your own policy requirements. For example, you can specify that the certificate passed in the request hasn't expired, and has been signed by a particular certificate authority.
 
-Client certificates are signed to ensure that they are not tampered with. When a partner sends you a certificate, verify that it comes from them and not an imposter. There are two common ways to verify a certificate:
+Client certificates are signed to ensure that they aren't tampered with. When a partner sends you a certificate, verify that it comes from them and not an imposter. There are two common ways to verify a certificate:
 
 - Check who issued the certificate. If the issuer was a certificate authority that you trust, you can use the certificate. You can configure the trusted certificate authorities in the Azure portal to automate this process.
 
-- If the certificate is issued by a partner, verify that it came from them. For example, if they deliver the certificate in person, you can be sure of its authenticity. These are known as self-signed certificates.
+- If the certificate is issued by a partner, verify that it came from them. For example, if they deliver the certificate in person, you can be sure of its authenticity. These certificates are known as *self-signed certificates*.
 
 ## Accept client certificates in the Consumption tier
 
@@ -38,7 +38,7 @@ Create these policies in the inbound processing policy file within the API Manag
 
 ### Check the thumbprint of a client certificate
 
-Every client certificate includes a thumbprint, which is a hash, calculated from other certificate properties. The thumbprint ensures that the values in the certificate have not been altered since the certificate was issued by the certificate authority. You can check the thumbprint in your policy. The following example checks the thumbprint of the certificate passed in the request.
+Every client certificate includes a thumbprint, which is a hash, calculated from other certificate properties. The thumbprint ensures that the values in the certificate haven't been altered since the certificate was issued by the certificate authority. You can check the thumbprint in your policy. The following example checks the thumbprint of the certificate passed in the request.
 
 ```XML
 <choose>

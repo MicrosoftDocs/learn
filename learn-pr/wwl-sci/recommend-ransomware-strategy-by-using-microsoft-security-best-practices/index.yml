@@ -3,8 +3,10 @@ uid: learn.wwl.recommend-ransomware-strategy-by-using-microsoft-security-best-pr
 metadata:
   title: Recommend a ransomware strategy by using Microsoft Security Best Practices
   description: "This module shows you how to execute the three important phases of ransomware protection: create a recovery plan, limit the scope of damage, make it hard to get in."
-  ms.date: 10/17/2022
+  ms.date: 02/07/2023
+  author: wwlpublish
   ms.author: hrasheed
+  ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Recommend a ransomware strategy by using Microsoft Security Best Practices
 summary: "You'll learn how to execute the three important phases of ransomware protection: create a recovery plan, limit the scope of damage, make it hard to get in."
@@ -17,7 +19,7 @@ abstract: |
 prerequisites: |
   *   Conceptual knowledge of security policies, requirements, zero trust architecture, and management of hybrid environments
   *   Working experience with zero trust strategies, applying security policies, and developing security requirements based on business goals
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/recommend-ransomware-strategy-use-microsoft-security-best-practices.svg
 levels:
 - advanced
 roles:

@@ -3,7 +3,7 @@ uid: learn.language.rust-create-program
 metadata:
   title: Create your first Rust program
   description: Learn about Rust concepts, including variables, data types, and functions.
-  ms.date: 01/05/2022
+  ms.date: 12/05/2022
   author: GitHubber17
   ms.author: chnoring
   ms.topic: interactive-tutorial
@@ -26,7 +26,6 @@ roles:
 - student
 - developer
 products:
-- vs-code
 - azure
 units:
 - learn.language.rust-create-program.0-introduction

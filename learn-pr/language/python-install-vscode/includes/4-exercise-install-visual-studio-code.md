@@ -18,18 +18,18 @@ Microsoft provides a Python extension for Visual Studio Code. This extension off
 
 ## Install Visual Studio Code on Windows
 
-In this section, you'll learn how to download the VS Code installer from the Visual Studio Code website.
+In this section, you'll learn how to download the Visual Studio Code installer from the Visual Studio Code website.
 
 1. In your browser, navigate to [Visual Studio Code download page](https://code.visualstudio.com/Download?azure-portal=true).
 
     The web page displays logos for Windows, Linux, and Mac.
 
-1. Select and download the Windows installer. Most browsers give you the option to either save the file to your local computer (usually in your Downloads folder) or immediately run the installer file.
+1. Select and download the Visual Studio Code installer for Windows. Most browsers give you the option to either save the file to your local computer (usually in your Downloads folder) or immediately run the installer file.
 
     > [!NOTE]
     > After downloading the installer, you may need to open File Explorer and navigate to the location your web browser installed it. The most common location is the _Downloads_ folder.
 
-1. Double-click the installer file to start the installation process.
+1. Double-click the installer file to start the installation process and run through the setup.
 
     After the installation is complete, Visual Studio Code launches automatically.
 

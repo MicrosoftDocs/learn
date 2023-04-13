@@ -6,8 +6,8 @@ metadata:
   title: When to use Azure Remote Rendering
   description: When to use Azure Remote Rendering
   ms.date: 06/15/2021
-  author: nickwalkmsft
-  ms.author: nickwalk  
+  author: DrewLonMS
+  ms.author: oliverlondon
   ms.topic: interactive-tutorial 
   ms.prod: learning-azure
 durationInMinutes: 4

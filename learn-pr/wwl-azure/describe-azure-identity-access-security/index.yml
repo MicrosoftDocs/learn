@@ -2,8 +2,8 @@
 uid: learn.wwl.describe-azure-identity-access-security
 metadata:
   title: Describe Azure identity, access, and security
-  description: "&lt;module title&gt;"
-  ms.date: 10/08/2022
+  description: "Describe Azure identity, access, and security"
+  ms.date: 01/04/2023
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
@@ -22,7 +22,7 @@ abstract: |
   - Describe the purpose of Microsoft Defender for Cloud
 prerequisites: |
   * Basic familiarity with IT terms and concepts
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/describe-azure-identity-access-security.svg
 levels:
 - beginner
 roles:

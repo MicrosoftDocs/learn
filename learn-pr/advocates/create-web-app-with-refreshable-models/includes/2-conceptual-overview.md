@@ -2,7 +2,7 @@ Machine learning is permeating mobile and web app development. To create modern,
 
 ## What is Vue.js?
 
-Vue (pronounced /vjuː/, like view) is a progressive framework for building user interfaces. It's designed to be incrementally adoptable. Vue can also power sophisticated Single-Page Applications. For more information about Vue, visit [the project's docs](https://vuejs.org/v2/guide). You don't have to use Vue.js to create apps using machine learning models, but this example app demonstrates that particular framework's methodology.
+Vue (pronounced /vjuː/, like view) is a progressive framework for building user interfaces. It's designed to be incrementally adoptable. Vue can also power sophisticated Single-Page Applications. For more information about Vue, visit [the project's docs](https://v2.vuejs.org/). You don't have to use Vue.js to create apps using machine learning models, but this example app demonstrates that particular framework's methodology.
 
 ## What is a machine learning model?
 

@@ -1,3 +1,8 @@
+---
+interactive:bash
+zone_pivot_groups:azure-interface
+title:Exercise - Estimate workload costs by using the Pricing calculator
+---
 In this exercise, you use the Pricing calculator to estimate the cost of running a basic web application on Azure.
 
 Start by defining which Azure services you need.
@@ -36,8 +41,8 @@ In practice, you would define your requirements in greater detail. But here are 
 
 Let's start with a quick tour of the Pricing calculator.
 
-1. Go to the [Pricing calculator](https://azure.microsoft.com/pricing/calculator/?azure-portal=true).
-1. Notice the following tabs:
+1.  Go to the [Pricing calculator](https://azure.microsoft.com/pricing/calculator/?azure-portal=true).
+2.  Notice the following tabs:
     
     :::image type="content" source="../media/price-calculator-menu-bar-4a43e988.png" alt-text="A screenshot of the Pricing calculator menu bar with the Products tab selected.":::
     
@@ -57,53 +62,242 @@ Here you add each Azure service that you need to the calculator. Then you config
 
 ### Add services to the estimate
 
-1. On the **Products** tab, select the service from each of these categories:
+1.  On the **Products** tab, select the service from each of these categories:
     
-    | **Category** | **Service**             |
-    | ------------ | ----------------------- |
-    | Compute      | **Virtual Machines**    |
-    | Databases    | **Azure SQL Database**  |
-    | Networking   | **Application Gateway** |
-1. Scroll to the bottom of the page. Each service is listed with its default configuration.
+    :::row:::
+      :::column:::
+        **Category**
+      :::column-end:::
+      :::column:::
+        **Service**
+      :::column-end:::
+    :::row-end:::
+    :::row:::
+      :::column:::
+        Compute
+      :::column-end:::
+      :::column:::
+        **Virtual Machines**
+      :::column-end:::
+    :::row-end:::
+    :::row:::
+      :::column:::
+        Databases
+      :::column-end:::
+      :::column:::
+        **Azure SQL Database**
+      :::column-end:::
+    :::row-end:::
+    :::row:::
+      :::column:::
+        Networking
+      :::column-end:::
+      :::column:::
+        **Application Gateway**
+      :::column-end:::
+    :::row-end:::
+    
+2.  Scroll to the bottom of the page. Each service is listed with its default configuration.
 
 ### Configure services to match your requirements
 
-1. Under **Virtual Machines**, set these values:
+1.  Under **Virtual Machines**, set these values:
     
-    | **Setting**      | **Value**             |
-    | ---------------- | --------------------- |
-    | Region           | **West US**           |
-    | Operating system | **Windows**           |
-    | Type             | **(OS Only)**         |
-    | Tier             | **Standard**          |
-    | Instance         | **D2 v3**             |
-    | Virtual machines | **2** x **730 Hours** |
+    :::row:::
+      :::column:::
+        **Setting**
+      :::column-end:::
+      :::column:::
+        **Value**
+      :::column-end:::
+    :::row-end:::
+    :::row:::
+      :::column:::
+        Region
+      :::column-end:::
+      :::column:::
+        **West US**
+      :::column-end:::
+    :::row-end:::
+    :::row:::
+      :::column:::
+        Operating system
+      :::column-end:::
+      :::column:::
+        **Windows**
+      :::column-end:::
+    :::row-end:::
+    :::row:::
+      :::column:::
+        Type
+      :::column-end:::
+      :::column:::
+        **(OS Only)**
+      :::column-end:::
+    :::row-end:::
+    :::row:::
+      :::column:::
+        Tier
+      :::column-end:::
+      :::column:::
+        **Standard**
+      :::column-end:::
+    :::row-end:::
+    :::row:::
+      :::column:::
+        Instance
+      :::column-end:::
+      :::column:::
+        **D2 v3**
+      :::column-end:::
+    :::row-end:::
+    :::row:::
+      :::column:::
+        Virtual machines
+      :::column-end:::
+      :::column:::
+        **2** x **730 Hours**
+      :::column-end:::
+    :::row-end:::
+    
     
     Leave the remaining settings at their current values.
-1. Under **Azure SQL Database**, set these values:
+2.  Under **Azure SQL Database**, set these values:
     
-    | **Setting**         | **Value**           |
-    | ------------------- | ------------------- |
-    | Region              | **West US**         |
-    | Type                | **Single Database** |
-    | Backup storage tier | **RA-GRS**          |
-    | Purchase model      | **vCore**           |
-    | Service tier        | **General Purpose** |
-    | Compute tier        | **Provisioned**     |
-    | Generation          | **Gen 5**           |
-    | Instance            | **8 vCore**         |
+    :::row:::
+      :::column:::
+        **Setting**
+      :::column-end:::
+      :::column:::
+        **Value**
+      :::column-end:::
+    :::row-end:::
+    :::row:::
+      :::column:::
+        Region
+      :::column-end:::
+      :::column:::
+        **West US**
+      :::column-end:::
+    :::row-end:::
+    :::row:::
+      :::column:::
+        Type
+      :::column-end:::
+      :::column:::
+        **Single Database**
+      :::column-end:::
+    :::row-end:::
+    :::row:::
+      :::column:::
+        Backup storage tier
+      :::column-end:::
+      :::column:::
+        **RA-GRS**
+      :::column-end:::
+    :::row-end:::
+    :::row:::
+      :::column:::
+        Purchase model
+      :::column-end:::
+      :::column:::
+        **vCore**
+      :::column-end:::
+    :::row-end:::
+    :::row:::
+      :::column:::
+        Service tier
+      :::column-end:::
+      :::column:::
+        **General Purpose**
+      :::column-end:::
+    :::row-end:::
+    :::row:::
+      :::column:::
+        Compute tier
+      :::column-end:::
+      :::column:::
+        **Provisioned**
+      :::column-end:::
+    :::row-end:::
+    :::row:::
+      :::column:::
+        Generation
+      :::column-end:::
+      :::column:::
+        **Gen 5**
+      :::column-end:::
+    :::row-end:::
+    :::row:::
+      :::column:::
+        Instance
+      :::column-end:::
+      :::column:::
+        **8 vCore**
+      :::column-end:::
+    :::row-end:::
+    
     
     Leave the remaining settings at their current values.
-1. Under **Application Gateway**, set these values:
+3.  Under **Application Gateway**, set these values:
     
-    | **Setting**            | **Value**                    |
-    | ---------------------- | ---------------------------- |
-    | Region                 | **West US**                  |
-    | Tier                   | **Web Application Firewall** |
-    | Size                   | **Medium**                   |
-    | Gateway hours          | **2** x **730 Hours**        |
-    | Data processed         | **1 TB**                     |
-    | Outbound data transfer | **5 GB**                     |
+    :::row:::
+      :::column:::
+        **Setting**
+      :::column-end:::
+      :::column:::
+        **Value**
+      :::column-end:::
+    :::row-end:::
+    :::row:::
+      :::column:::
+        Region
+      :::column-end:::
+      :::column:::
+        **West US**
+      :::column-end:::
+    :::row-end:::
+    :::row:::
+      :::column:::
+        Tier
+      :::column-end:::
+      :::column:::
+        **Web Application Firewall**
+      :::column-end:::
+    :::row-end:::
+    :::row:::
+      :::column:::
+        Size
+      :::column-end:::
+      :::column:::
+        **Medium**
+      :::column-end:::
+    :::row-end:::
+    :::row:::
+      :::column:::
+        Gateway hours
+      :::column-end:::
+      :::column:::
+        **2** x **730 Hours**
+      :::column-end:::
+    :::row-end:::
+    :::row:::
+      :::column:::
+        Data processed
+      :::column-end:::
+      :::column:::
+        **1 TB**
+      :::column-end:::
+    :::row-end:::
+    :::row:::
+      :::column:::
+        Outbound data transfer
+      :::column-end:::
+      :::column:::
+        **5 GB**
+      :::column-end:::
+    :::row-end:::
+    
     
     Leave the remaining settings at their current values.
 

@@ -1,0 +1,86 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.teach-ai-with-project-bonsai.knowledge-check-2
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: A knowledge check for the discover Project Bonsai for Autonomous AI.
+  ms.date: 11/8/2022
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/13-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "Select the continuation of the following sentence. The brain training stops when…:"
+    choices:
+    - content: "It reaches 100% Goal Satisfaction."
+      isCorrect: false
+      explanation: "Reaching 100% goal satisfaction is not the end of the training session. For goals such as maximizing and minimizing, the teaching engine will continue to encourage the brain to move far beyond the desired threshold toward more robust and better performing policies."
+    - content: "It reaches Goal Robustness of one."
+      isCorrect: false
+      explanation: "Goal robustness is the best criterion to evaluate brain training once you consistently meet 100% goal satisfaction for all your objectives. Yet, a brain with robustness lower than one might be good enough for deployment purposes."
+    - content: " It finishes one episode."
+      isCorrect: false
+      explanation: "At the end of one episode the brain will still have a bad performance. It has to try hundreds of thousands of episodes to succeed."
+    - content: " It reaches the No Progress Iteration Limit."
+      isCorrect: true
+      explanation: "Brain training will continue until no more champions are found on a set of consecutive iterations. The number of iterations that will indicate to the brain it is time to stop training is defined by the NoProgressIterationLimit."
+  - content: "Each vertical group of dots in any brain assessment plot is:"
+    choices:
+    - content: "An objective’s performance value."
+      isCorrect: false
+      explanation: "An objective’s performance value is represented by a dot in each vertical group. The overall goal satisfaction line, the blue dot, is the average goal satisfaction across all the objectives. The group of dots at a given training iteration does not pertain to a specific objective."
+    - content: "A champion."
+      isCorrect: true
+      explanation: "Each assessment shown in the training performance (blue dots) represents a champion. Champions are evaluation points in automatic assessments where the brain policy was found to be the most effective up to that point."
+    - content: "A strategy."
+      isCorrect: false
+      explanation: "Moab has one strategy which corresponds to the concept being trained (MoveToCenter). All dots represented in the graph relate to the strategy and its underlying goal objectives."
+    - content: "A goal objective."
+      isCorrect: false
+      explanation: "There are two goals “Avoid Fall off Plate” and “Drive Center of Plate” and they are not represented by the blue dots. The effectiveness of reaching these goals is also dots in the graph. Yet, the group of dots at each iteration does not pertain to a specific goal objective."
+  - content: "You should stop training the brain when:"
+    choices:
+    - content: "The goal satisfaction has not made any meaningful progress."
+      isCorrect: false
+      explanation: "You can stop training when you notice that the goal satisfaction has not made any meaningful progress. But it’s not a necessity."
+    - content: "At 200k iterations."
+      isCorrect: false
+      explanation: "You can typically stop training at (or before) 500k iterations for the Moab sample."
+    - content: "It reaches 100% goal satisfaction."
+      isCorrect: false
+      explanation: "The brain needs to continue training when it reaches 100% satisfaction to ensure a robust policy."
+    - content: "You don't need to stop brain training."
+      isCorrect: true
+      explanation: "If a brain fails to improve after a given number of consecutive iterations (as defined by NoProgressIterationLimit(NPIL)), Bonsai terminates the training to avoid wasting computational resources."
+  - content: "What is Machine Teaching Experimentation?"
+    choices:
+    - content: "Planning a hypothesis to be tested on a brain training session."
+      isCorrect: false
+      explanation: "Evaluating the hypothesis to be tested and running a training session is part of the Machine Teaching Experimentation process. Yet, on its own, it is insufficient."
+    - content: "Running custom assessments on scenarios of interest."
+      isCorrect: false
+      explanation: "Custom assessment is configured by users, codified in a config file, and run on demand through the Bonsai UI or Bonsai CLI. Custom assessments are useful to track brain performance, but they are insufficient towards Machine Teaching Experimentation."
+    - content: "Comparing the brain against the benchmark."
+      isCorrect: false
+      explanation: "The benchmarking consists of the performance based on current methods. Assessing the brain performance against it is key towards Machine Teaching Experimentation. Before considering deployment, you should ensure that your brain effectively controls the simulated environment for the scenarios of interest. Alone, though, benchmark comparison is insufficient towards Machine Teaching Experimentation."
+    - content: "All of the above."
+      isCorrect: true
+      explanation: "The loop of training a brain based on a hypothesis, assessing brain performance, and comparing against benchmark is the initial cycle towards Machine Teaching experimentation. That is cyclical process needed to iterate towards ever better performing brains."
+  - content: "Select the deployment option which is NOT currently supported by the Bonsai platform:"
+    choices:
+    - content: "Cloud"
+      isCorrect: false
+      explanation: "It's the ACR deployment. The export is an image that can be instanced through Command Line Interface. "
+    - content: "IoT Edge"
+      isCorrect: false
+      explanation: "Feedback: IoT deployment is currently supported by the Bonsai platform."
+    - content: "Embedded devices"
+      isCorrect: true
+      explanation: "Embedded devices are an option available, currently not supported by the Bonsai platform."
+    - content: "Local deployment"
+      isCorrect: false
+      explanation: "Deploying to a local device inside the deployment network is a valid deployment option currently supported by Bonsai."

@@ -13,89 +13,88 @@ durationInMinutes: 3
 content: |
   [!include[](includes/7-knowledge-check.md)] 
 quiz:
-  title: Check your knowledge
   questions:
   - content: "What function does the “P” term in PID control serve?"
     choices:
     - content: "Applies human expertise to a decision."
       isCorrect: false
-      explanation: "Any controller uses a math equation to control a system, it doesn't apply human expertise to make a decision."
+      explanation: "Incorrect. Any controller uses a math equation to control a system, it doesn't apply human expertise to make a decision."
     - content: "Predicts the impact of a control decision."
       isCorrect: false
-      explanation: "No part of the PID controller predicts the impact of a decision."
+      explanation: "Incorrect. No part of the PID controller predicts the impact of a decision."
     - content: "Prevents the controller from overshooting."
       isCorrect: false
-      explanation: "The “I” or Integral part of the PID controller is what prevents the system from overshooting."
+      explanation: "Incorrect. The “I” or Integral part of the PID controller is what prevents the system from overshooting."
     - content: "Drives the system toward the target goal."
       isCorrect: true
-      explanation: "“P” stands for Proportional, and it drives the systems towards the target."
+      explanation: "Correct 'P' stands for Proportional, and it drives the systems towards the target."
   - content: "Which control theory technique also includes an optimization routine?"
     choices:
     - content: "PID"
       isCorrect: false
-      explanation: "PID Controller is a control theory technique that doesn't contain an optimization algorithm."
+      explanation: "Incorrect. PID Controller is a control theory technique that doesn't contain an optimization algorithm."
     - content: "Open Loop Control"
       isCorrect: false
-      explanation: "Open Control is a control theory technique that doesn't contain an optimization algorithm."
+      explanation: "Incorrect. Open Control is a control theory technique that doesn't contain an optimization algorithm."
     - content: "Feed Forward Control"
       isCorrect: false
-      explanation: "Feed Forward Control is a control theory technique that doesn't contain an optimization algorithm."
+      explanation: "Incorrect. Feed Forward Control is a control theory technique that doesn't contain an optimization algorithm."
     - content: "Model Predictive Control (MPC)"
       isCorrect: true
-      explanation: "MPC contains a model of the system or process, and it has an optimization algorithm in the background."
+      explanation: "Correct. MPC contains a model of the system or process, and it has an optimization algorithm in the background."
   - content: "Which of the following techniques is NOT an Automated Intelligence technique?"
     choices:
     - content: "Expert Systems"
       isCorrect: false
-      explanation: "Expert systems or “manuals” are a form of Automated Intelligence."
+      explanation: "Incorrect. Expert systems or “manuals” are a form of Automated Intelligence."
     - content: "Neural Networks"
       isCorrect: true
-      explanation: "Neural networks or Machine Learning algorithms fall in the group of Autonomous Intelligence."
+      explanation: "Correct. Neural networks or Machine Learning algorithms fall in the group of Autonomous Intelligence."
     - content: "Optimization algorithms"
       isCorrect: false
-      explanation: "Optimization algorithms, also known as “menus” are a form of Automated Intelligence."
+      explanation: "Incorrect. Optimization algorithms, also known as “menus” are a form of Automated Intelligence."
     - content: "Control theory"
       isCorrect: false
-      explanation: "Control theory, also known as “math” is a form of Automated Intelligence."
+      explanation: "Incorrect. Control theory, also known as “math” is a form of Automated Intelligence."
   - content: "How does control theory decide which is the next action to take in a system?"
     choices:
     - content: "Search possible options and select based on objective criteria."
       isCorrect: false
-      explanation: "Optimization algorithms are the ones that perform a search of all possible options and select the best one based on an objective criteria."
+      explanation: "Incorrect. Optimization algorithms are the ones that perform a search of all possible options and select the best one based on an objective criteria."
     - content: "Try actions and test if they're closer or farther from the goal."
       isCorrect: false
-      explanation: "(Deep) Reinforcement Learning is the technology that performs trial and error with a goal or reward function."
+      explanation: "Incorrect. (Deep) Reinforcement Learning is the technology that performs trial and error with a goal or reward function."
     - content: "Calculate the next action using mathematical equations, physics, or chemistry."
       isCorrect: true
-      explanation: "Control theory uses math to determine the best next action to take."
+      explanation: "Correct. Control theory uses math to determine the best next action to take."
     - content: "Look up options from a table."
       isCorrect: false
-      explanation: "Control theory doesn’t look up options from a table."
+      explanation: "Incorrect. Control theory doesn’t look up options from a table."
   - content: "Which of the following sentences describe strengths of optimization algorithms?"
     choices:
     - content: "Good for situations where you don't have much expertise in how to control the system."
       isCorrect: true
-      explanation: "Optimization algorithms are the perfect tool to explore when we don't know about the task or the search space."
+      explanation: "Correct. Optimization algorithms are the perfect tool to explore when we don't know about the task or the search space."
     - content: "Optimal for understanding concepts and strategies needed to complete the task."
       isCorrect: false
-      explanation: "Optimization algorithms don't know anything about the tasks or strategies used to solve them."
+      explanation: "Incorrect. Optimization algorithms don't know anything about the tasks or strategies used to solve them."
     - content: "Generates decisions quickly with little computer resources required."
       isCorrect: false
-      explanation: "Optimization algorithms consume a lot of resources and are slow to generate a decision. Both are drawbacks of this technology."
+      explanation: "Incorrect. Optimization algorithms consume a lot of resources and are slow to generate a decision. Both are drawbacks of this technology."
     - content: "Adapts well to fuzzy, uncertain conditions."
       isCorrect: false
-      explanation: "Optimization algorithms don't adapt to fuzzy or/and uncertain conditions."
+      explanation: "Incorrect. Optimization algorithms don't adapt to fuzzy or/and uncertain conditions."
   - content: "Which automated intelligence technique would you choose for controlling the speed of the rotors on a drone?"
     choices:
     - content: "Control Theory"
       isCorrect: true
-      explanation: "It is the simplest and most reliable technology for low-level control, which is what is necessary to control the rotors of a drone."
+      explanation: "Correct. It is the simplest and most reliable technology for low-level control, which is what is necessary to control the rotors of a drone."
     - content: "Expert Systems"
       isCorrect: false
-      explanation: "It would be impossible to add the set of rules and exceptions necessary to control the rotors of a drone (i.e.: reaction to wind or adjustment to new landscapes)."
+      explanation: "Incorrect. It would be impossible to add the set of rules and exceptions necessary to control the rotors of a drone (i.e.: reaction to wind or adjustment to new landscapes)."
     - content: "Optimization"
       isCorrect: false
-      explanation: "It would be too slow and definitely not real time to control the rotors of a drone using optimization methods, which needs to search across all options every time the algorithm is run."
+      explanation: "Incorrect. It would be too slow and definitely not real time to control the rotors of a drone using optimization methods, which needs to search across all options every time the algorithm is run."
     - content: "Procedural Programming"
       isCorrect: false
-      explanation: "It would be impossible to add the set of rules and exceptions necessary to control the rotors of a drone."
+      explanation: "Incorrect. It would be impossible to add the set of rules and exceptions necessary to control the rotors of a drone."

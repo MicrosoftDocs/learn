@@ -27,7 +27,7 @@ To verify and publish your Solidity source code, first enter the contract source
 
 It's imperative to [securely manage private keys](https://docs.openzeppelin.com/learn/preparing-for-mainnet#key-management?azure-portal=true) when you deploy to the mainnet. This step requires serious precautions so that your private keys can't be compromised, lost, or stolen. 
 
-Mismanaged keys have resulted in several major thefts and losses. The accounts you'll use to deploy and interact with smart contracts hold real ether. They're targets for hackers. Common ways to store private keys securely include [hardware wallets](https://docs.ethhub.io/using-ethereum/wallets/hardware/?azure-portal=true) and [cold storage](https://www.investopedia.com/terms/c/cold-storage.asp#:~:text=Key%20Takeaways&text=Cold%20storage%20is%20a%20way,their%20holdings%20via%20traditional%20means?azure-portal=true.), which are computers that never connect to any network.
+Mismanaged keys have resulted in several major thefts and losses. The accounts you'll use to deploy and interact with smart contracts hold real ether. They're targets for hackers. Common ways to store private keys securely include [hardware wallets](https://unlock-protocol.github.io/ethhub/using-ethereum/wallets/hardware/?azure-portal=true) and [cold storage](https://www.investopedia.com/terms/c/cold-storage.asp#:~:text=Key%20Takeaways&text=Cold%20storage%20is%20a%20way,their%20holdings%20via%20traditional%20means?azure-portal=true.), which are computers that never connect to any network.
 
 ## Handle project governance
 

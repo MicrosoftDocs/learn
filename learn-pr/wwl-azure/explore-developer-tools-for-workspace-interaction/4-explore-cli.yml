@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-developer-tools-for-workspace-interaction.explore-cli
+title: Explore the CLI
+metadata:
+  title: Explore the CLI
+  description: "Explore the CLI"
+  ms.date: 01/06/2023
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-explore-cli.md)]

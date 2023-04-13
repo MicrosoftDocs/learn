@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.teach-ai-with-project-bonsai.how-train-evaluate-progress
+title: How to train a brain and evaluate training progress
+metadata:
+  title: How to train a brain and evaluate training progress
+  description: We explain how to train a brain and evaluate the training progress.
+  ms.date: 11/15/2022
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-how-train-evaluate-progress.md)] 

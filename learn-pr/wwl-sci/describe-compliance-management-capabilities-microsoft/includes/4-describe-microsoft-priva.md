@@ -1,3 +1,4 @@
+
 Privacy is top of mind for organizations and consumers today, and concerns about how private data is handled are steadily increasing. Regulations and laws impact people around the world, setting rules for how organizations store personal data and giving people rights to manage personal data collected by an organization.
 
 To meet regulatory requirements and build customer trust, organizations need to take a "privacy by default" stance. Rather than manual processes and a patchwork of tools, organizations need a comprehensive solution to address common challenges such as:

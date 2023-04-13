@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-css-styles.exercise-selectors
+title: 'Exercise: Selectors'
+metadata:
+  title: 'Exercise: Selectors'
+  description: "Exercise: Selectors"
+  ms.date: 03/03/2023
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-exercise-selectors.md)]

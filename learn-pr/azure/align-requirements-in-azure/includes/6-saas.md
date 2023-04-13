@@ -10,8 +10,8 @@ For organizational use, you can rent productivity apps, such as email, collabora
 
 ### Advantages
 
-**Gain access to sophisticated applications:** To provide SaaS apps to users, you don’t need to purchase, install, update, or maintain any hardware, middleware, or software. SaaS makes even sophisticated enterprise applications, such as ERP and CRM, affordable for organizations that lack the resources to buy, deploy, and manage the required infrastructure and software themselves. You pay only for what you use. You also save money, because the SaaS service automatically scales up and down according to the level of usage.
+**Gain access to sophisticated applications**: To provide SaaS apps to users, you don’t need to purchase, install, update, or maintain any hardware, middleware, or software. SaaS makes even sophisticated enterprise applications, such as ERP and CRM, affordable for organizations that lack the resources to buy, deploy, and manage the required infrastructure and software themselves. You pay only for what you use. You also save money, because the SaaS service automatically scales up and down according to the level of usage.
 
-**Use free client software:** Users can run most SaaS apps directly from their web browser without needing to download and install any software. You don't need to purchase or deploy client software for your users.
+**Use free client software**: Users can run most SaaS apps directly from their web browser without needing to download and install any software. You don't need to purchase or deploy client software for your users.
 
-**Access app data from anywhere:** With data stored in the cloud, users can access their information from any Internet-connected computer or mobile device. Since app data is stored in the cloud, no data is lost if a user’s computer or device fails.
+**Access app data from anywhere**: With data stored in the cloud, users can access their information from any Internet-connected computer or mobile device. Since app data is stored in the cloud, no data is lost if a user’s computer or device fails.

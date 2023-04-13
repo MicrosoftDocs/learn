@@ -1,3 +1,4 @@
+
 In this module, you've seen why passwords are a problematic form of authentication. You've learned about the different types of authentication that can be used with Azure AD, including passwordless authentication with Windows Hello for Business and the Microsoft Authenticator app. You've learned about multi-factor authentication.
 
 You've learned how Azure AD can be configured to allow users to reset their own passwords, and how Azure AD Password Protection mitigates against the inherent risks associated with passwords.

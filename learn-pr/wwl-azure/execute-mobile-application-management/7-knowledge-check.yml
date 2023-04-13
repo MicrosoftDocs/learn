@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.execute-mobile-application-management.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/17/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+  ms.prod: intune
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "There are two types of Microsoft Intune Mobile Application Management (MAM) configurations that can be used to implement app-level policies. One type is Microsoft Intune Mobile Device Manager (MDM) with Microsoft Intune MAM. What is the second type?"
+    choices:
+    - content: "Microsoft Mobile Security Manager"
+      isCorrect: false
+      explanation: "Incorrect. This item isn't the second type of Microsoft Intune MAM configuration that can be used to implement app-level policies. Try again."
+    - content: "Microsoft Intune MAM without device enrollment"
+      isCorrect: true
+      explanation: "Correct. IT administrators can manage apps on devices using MDM with MAM, or only with MAM without requiring device enrollment."
+    - content: "Microsoft Intune MDM without device enrollment"
+      isCorrect: false
+      explanation: "Incorrect. This item isn't the second type of Microsoft Intune MAM configuration that can be used to implement app-level policies. Try again."
+  - content: "The Contoso IT department purchased licenses for an app built by another company. Contoso is deploying the application internally. They don't have access to the source code. Which tool would be best to use to support application protection policies?"
+    choices:
+    - content: "Intune App Wrapping tool"
+      isCorrect: true
+      explanation: "Correct. The Intune App Wrapping tool is a command-line application that creates a wrapper around the app, which allows the app to be managed by an Intune app protection policy."
+    - content: "Intune App SDK"
+      isCorrect: false
+      explanation: "Incorrect. The Intune App SKD is a tool for customers who have access to the source code for the app and want to be able to manage the apps with Intune. Try again."
+    - content: "Windows Defender SmartScreen"
+      isCorrect: false
+      explanation: "Incorrect. Windows Defender Smartscreen looks for suspicious activity in files and apps on mobile devices. Try again."

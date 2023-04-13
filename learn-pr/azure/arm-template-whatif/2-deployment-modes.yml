@@ -4,8 +4,8 @@ title: Understand deployment modes
 metadata:
   title: Understand deployment modes
   description: Learn about the two deployment modes for Azure, incremental and complete.
-  author: softchris
-  ms.author: chnoring
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.date: 05/20/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

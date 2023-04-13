@@ -22,7 +22,7 @@ Let's discuss some of the other reasons that startups raise money from investors
 
 Having the backing of a good investor brings access to capital and expertise, both of which can greatly enhance your ability to grow your startup into a large and successful business.
 
-In many cases, startups require a large up-front investment to build the product and get it in the hands of users before meaningful revenues can be generated. In these instances, it might not be feasible for the founders to self-fund the company, so raising external capital is the only option. This is especially true for deep-tech companies or those organizations that require development of complex physical products.
+In many cases, startups require a large up-front investment to build the product and get it in the hands of users before generating meaningful revenues. In these instances, it might not be feasible for the founders to self-fund the company, so raising external capital is the only option. This is especially true for deep-tech companies or those organizations that require development of complex physical products.
 
 If you're competing in a large and global market, it's likely that you'll have competitors. Some of those companies will have access to significant amounts of capital. In these situations, you might not be able to compete meaningfully without access to similar amounts of capital. By attempting to bootstrap the company, you would be going backwards in relative terms.
 
@@ -44,7 +44,7 @@ A worksheet like the [Founder Alignment Exercise](https://foundershubcontent.z13
 
 When you raise money from an investor, they'll want some input on how you run the company. They need this information to protect their investment. They also need to ensure they're able to contribute positively to the company's growth.
 
-Input might take the form of a seat on your board of directors or a board observer position. Or it might take place informally through regular meetings with the founders. It also generally involves giving the investor certain voting rights and veto rights in relation to key strategic decisions. Usually, a separate class of shares is issued to investors with these rights attached.
+Input might take the form of a seat on your board of directors or a board observer position, or it might take place informally through regular meetings with the founders. It also generally involves giving the investor certain voting rights and veto rights in relation to key strategic decisions. Usually, a separate class of shares is issued to investors with these rights attached.
 
 As we'll discuss later, a good investor isn't interested in running your company. They just want to maximize its chance of succeeding. Unless something goes terribly wrong, you and your cofounders will still be in charge of the company. You'll still make all the day-to-day decisions.
 
@@ -52,7 +52,7 @@ Nevertheless, many founders grapple with the question of giving up some control 
 
 It's important to separate the concepts of economic interest and control. As startups raise more capital, the shareholdings of the founders are diluted by the incoming investors. When startups raise very large amounts of money over multiple funding rounds, founders sometimes end up with a minority shareholding in the company they started.
 
-This change doesn't necessarily mean they lose control over the company. An investor can have a significant economic interest in the company, while having only a modest degree of control over it. But they still benefit financially when the company is successful.
+This change doesn't necessarily mean they lose control over the company. An investor can have a significant economic interest in the company while having only a modest degree of control over it, but they still benefit financially when the company is successful.
 
 By way of example, Mark Zuckerberg has retained significant control over Meta (previously Facebook). He holds around 58 percent of voting stock, despite having raised billions of dollars from investors and being diluted to a minority shareholding with [less than 20 percent of the company's total stock](https://www.investopedia.com/articles/insights/082216/top-9-shareholders-facebook-fb.asp?azure-portal=true).
 
@@ -71,7 +71,7 @@ The terminology used to describe each of these funding rounds varies considerabl
 |Series A|Established market<br><br>Evidence of product-market fit<br><br>Growth in revenue limited by capital rather than by demand|VC funds|
 |Series B, C, D, E|Expansion to other products, markets, and geographies|VC funds, private equity firms|
 
-These funding rounds can be plotted on a time chart that shows the typical milestones against which each round is raised.
+You can plot these funding rounds on a time chart that shows the typical milestones against which each round is raised.
 
 :::image type="content" source="../media/learning-path-value.png" alt-text="Line chart that shows funding over time. The value decreases at first. As it passes milestones, the value then increases and becomes positive.":::
 
@@ -138,13 +138,13 @@ Some other factors that investors consider when they make investment decisions i
   - Founder vesting to protect the company in case one of the founders leaves the company.
   - Employment contracts with all founders and employees, including an intellectual property (IP) assignment to ensure the company has ownership of all relevant IP assets.
   - Good governance practices, such as regular board meetings, even if prior to the investment the founders are the only directors.
-  - An employee stock option program, if you have employees, to ensure maximum alignment of interests and retention of key personnel.
+  - An employee stock-option program, if you have employees, to ensure maximum alignment of interests and retention of key personnel.
 
 ## Investors look for outliers
 
 Many early-stage investors see thousands of opportunities a year. They typically invest in only 1 to 2 percent of all the companies they see.
 
-The reason for this low acceptance rate is that investor returns follow a power law distribution. A few highly successful investments are worth many times more than all the other investments combined. Investors know that the majority of startups they invest in will fail. The small proportion of startups that succeed need to generate a large enough return to compensate for all the failed companies.
+The reason for this low acceptance rate is that investor returns follow a power-law distribution. A few highly successful investments are worth many times more than all the other investments combined. Investors know that the majority of startups in which they invest will fail. The small proportion of startups that succeed need to generate a large enough return to compensate for all the failed companies.
 
 :::image type="content" source="../media/learning-path-returns-startups.png" alt-text="Line chart that shows investor funds decreasing as the number of startups increases.":::
 
@@ -156,11 +156,11 @@ Let's explore this concept further by working through a hypothetical angel inves
 
 Melanie is an angel investor. She's decided that she's going to make seed-stage investments in 10 companies. She'll make an average investment of $100,000 in each company. These investments will take place over a period of a few years.
 
-Melanie doesn't know which of the companies she backs will ultimately be successful. But she realizes that each company she invests in must have a chance at being hugely successful. She makes her investments with this idea in mind.
+Melanie doesn't know which of the companies she backs will ultimately be successful, but she realizes that each company she invests in must have a chance at being hugely successful. She makes her investments with this idea in mind.
 
-Significant [research has been done on angel investor portfolios](https://seraf-investor.com/compass/article/angel-investing-returns-research-and-reality?azure-portal=true). One of the consistent findings is that [on average, at least half of all early-stage investments lead to no return](http://www.rightsidecapital.com/assets/documents/HistoricalAngelReturn.pdf?azure-portal=true). This result is typically either because the company fails completely or it grows slowly and remains a privately owned company but never achieves a liquidity event. Investors sometimes refer to these investments as *zombie* companies.
+Significant [research has been done on angel investor portfolios](https://seraf-investor.com/compass/article/angel-investing-returns-research-and-reality?azure-portal=true). One of the consistent findings is that [on average, at least half of all early-stage investments lead to no return](http://www.rightsidecapital.com/assets/documents/HistoricalAngelReturn.pdf?azure-portal=true). This result is typically either because the company fails completely, or it grows slowly and remains a privately owned company but never achieves a liquidity event. Investors sometimes refer to these investments as *zombie* companies.
 
-As an experienced investor, Melanie knows this outcome is likely for a large proportion of the companies she invests in. Like any sensible angel investor, she only invests money that she can afford to lose.
+As an experienced investor, Melanie knows this outcome is likely for a large proportion of the companies in which she invests. Like any sensible angel investor, she only invests money that she can afford to lose.
 
 Let's look at Melanie's investment portfolio and assume from the outset that half of her investments generate zero return.
 
@@ -180,7 +180,7 @@ Let's look at Melanie's investment portfolio and assume from the outset that hal
 
 Research has also shown that out of every 10 angel investments, on average two will make a one-time return, which is better than zero but not a successful outcome. This scenario sometimes occurs because the founders know the company isn't working out. They're able to do an orderly windup and return the investors' capital to them before the company completely fails.
 
-Similarly, out of every 10 investments, on average two will make a small positive return of two times to four times the amount invested. This scenario can occur when the company is *acquihired*, meaning a small acquisition coupled with hiring the team that started the company. Again, this return is better than zero, but it's not the outcome that Melanie is seeking.
+Similarly, out of every 10 investments, on average two will make a small positive return of two times to four times the amount invested. This scenario can occur when the company is *acquired*, meaning a small acquisition coupled with hiring the team that started the company. Again, this return is better than zero, but it's not the outcome that Melanie is seeking.
 
 If we now look at Melanie's investment portfolio, we can populate 9 of the 10 investment outcomes. Five failed, which generated zero return. Two generated a one-time return, and two more generated a two-time and a four-time return.
 
@@ -206,7 +206,7 @@ How well does company number 10 need to do? We can estimate this amount by worki
 
 If Melanie invests $1 million and holds these investments for seven years, she needs to realize a $5 million return on her $1 million invested. A simple [internal rate of return (IRR)](https://www.investopedia.com/terms/i/irr.asp?azure-portal=true) calculation confirms this return.
 
-A $5 million return might sound like a phenomenal outcome. That's $4 million more than Melanie invested. But remember that she's investing in risky startups and could have made a much safer return by investing in lower-risk assets.
+A $5 million return might sound like a phenomenal outcome. That's $4 million more than Melanie invested. But remember that she's investing in risky startups and could've made a much safer return by investing in lower-risk assets.
 
 If we know Melanie needs to make a $5 million portfolio return, and so far nine companies have returned only $800,000, we know that company 10 needs to generate a return of $4.2 million.
 

@@ -1,3 +1,4 @@
+
 This module is an introduction to both client and server-side programming on Azure Cosmos DB.
 
 After completing this module, you'll be able to:

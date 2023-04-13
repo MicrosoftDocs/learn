@@ -5,8 +5,8 @@ metadata:
   title: Set up Azure File Sync on Windows Server
   description: Learn how to prepare the Windows Server environment for Azure File Sync.
   ms.date: 05/18/2020
-  author: roygara
-  ms.author: rogarana
+  author: khdownie
+  ms.author: kendownie
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3

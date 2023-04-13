@@ -40,7 +40,7 @@ On the Azure DevOps Demo Generator site, follow these steps to run the template:
 1. Select **Sign In** and accept the usage terms.
 1. On the **Create New Project** page, select your Azure DevOps organization. Then enter a project name, such as *Space Game - web - Deployment patterns*.
 
-    :::image type="content" source="../media/3-create-new-project.png" alt-text="Creating a project through the Azure DevOps Demo Generator.":::
+    :::image type="content" source="../media/3-create-new-project.png" alt-text="Screenshot that shows how to create a project through the Azure DevOps Demo Generator.":::
 
 1. Select **Yes, I want to fork this repository**. Then select **Authorize**.
 1. Select **Create Project**.
@@ -61,7 +61,7 @@ Assigning work in this way gives you a checklist to work from. It gives your tea
 
 Recall that the team settled on these top issues for the current sprint:
 
-:::image type="content" source="../../shared/media/deploy-all-tasks.png" alt-text="A screenshot of Azure Boards, showing the tasks for this sprint.":::
+:::image type="content" source="../../shared/media/deploy-all-tasks.png" alt-text="Screenshot of Azure Boards that shows the tasks for this sprint.":::
 
 > [!NOTE]
 > Within an Azure DevOps organization, work items are numbered sequentially. In your project, the number for each work item might not match what you see here.
@@ -72,14 +72,14 @@ To set up the work item:
 
 1. In Azure DevOps, go to **Boards**, and then select **Boards** from the menu.
 
-    :::image type="content" source="../../shared/media/azure-devops-boards-menu.png" alt-text="A screenshot of Azure DevOps showing the location of the Boards menu.":::
+    :::image type="content" source="../../shared/media/azure-devops-boards-menu.png" alt-text="Screenshot of Azure DevOps that shows the location of the Boards menu.":::
 
 1. At the bottom of the **Improve release cadence** work item, select the down arrow. Then assign the work item to yourself.
 
-    :::image type="content" source="../../shared/media/azure-boards-down-chevron.png" alt-text="A screenshot of Azure Boards showing the location of the down arrow.":::
+    :::image type="content" source="../../shared/media/azure-boards-down-chevron.png" alt-text="Screenshot of Azure Boards that shows the location of the down arrow.":::
 1. Move the work item from the **To Do** column to the **Doing** column.
 
-    :::image type="content" source="../media/3-azure-boards-wi5-doing.png" alt-text="A screenshot of Azure Boards showing the card in the Doing column.":::
+    :::image type="content" source="../media/3-azure-boards-wi5-doing.png" alt-text="Screenshot of Azure Boards that shows the card in the Doing column.":::
 
 At the end of this module, you move the card to the **Done** column after you complete the task.
 
@@ -218,7 +218,7 @@ Here you create App Service instances for the three stages that you'll deploy to
 
     You see this page in each environment:
 
-    :::image type="content" source="../../shared/media/app-service-default.png" alt-text="A screenshot of the default home page in Azure App Service.":::
+    :::image type="content" source="../../shared/media/app-service-default.png" alt-text="Screenshot of the default home page in Azure App Service.":::
 
 > [!IMPORTANT]
 > The [Clean up your Azure DevOps environment](/training/modules/manage-release-cadence/6-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you're not charged for Azure resources after you complete this module. Be sure to perform the cleanup steps even if you don't complete this module.
@@ -234,7 +234,7 @@ To add the variables:
 1. In Azure DevOps, go to your **Space Game - web - Deployment patterns** project.
 1. Under **Pipelines**, select **Library**.
 
-    :::image type="content" source="../../create-release-pipeline/media/5-pipelines-library.png" alt-text="A screenshot of Azure Pipelines, showing the Library menu option.":::
+    :::image type="content" source="../../create-release-pipeline/media/5-pipelines-library.png" alt-text="Screenshot of Azure Pipelines that shows the Library menu option.":::
 1. Select **+ Variable group**.
 1. Under **Properties**, for the variable group name, enter *Release*.
 1. Under **Variables**, select **+ Add**.
@@ -255,7 +255,7 @@ To add the variables:
 
     Your variable group resembles this one:
 
-    :::image type="content" source="../media/3-library-variable-group.png" alt-text="A screenshot of Azure Pipelines, showing the variable group. The group contains three variables.":::
+    :::image type="content" source="../media/3-library-variable-group.png" alt-text="Screenshot of Azure Pipelines that shows the variable group. The group contains three variables.":::
 
 ## Create the dev, test, and staging environments
 
@@ -265,7 +265,7 @@ To create the **dev**, **test**, and **staging** environments:
 
 1. From Azure Pipelines, select **Environments**.
 
-    :::image type="content" source="../../shared/media/pipelines-environments.png" alt-text="A screenshot of Azure Pipelines showing the location of the Environments menu option.":::
+    :::image type="content" source="../../shared/media/pipelines-environments.png" alt-text="Screenshot of Azure Pipelines that shows the location of the Environments menu option.":::
 
 1. To create the **dev** environment:
     1. Select **Create environment**.
@@ -359,8 +359,8 @@ Here you push the initial configuration to GitHub so that you're up to date with
 
 1. After your pipeline run has been completed, navigate to the summary page to see your pipeline status.
 
-    :::image type="content" source="../media/3-stages-complete.png" alt-text="A screenshot of Azure Pipelines showing the completed stages.":::
+    :::image type="content" source="../media/3-stages-complete.png" alt-text="Screenshot of Azure Pipelines that shows the completed stages.":::
 
 1. Navigate to the URL that corresponds to each stage. Your web app should be deployed to each environment.
 
-    :::image type="content" source="../media/3-app-service-dev.png" alt-text="A screenshot of a web browser showing the Space Game website in the Dev environment.":::
+    :::image type="content" source="../media/3-app-service-dev.png" alt-text="Screenshot of a web browser that shows the Space Game website in the Dev environment.":::

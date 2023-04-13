@@ -53,7 +53,7 @@ The applications that you'll create in the upcoming exercises will use this acco
     | **location** | Specifies the location for the account. |
     | **yes** | Suppresses the prompt for terms confirmation. |
 
-    This command should take a few seconds to complete, and you will see a JSON response from Azure like the following example when the command has finished.
+    This command should take a few seconds to complete, and you'll see a JSON response from Azure like the following example when the command has finished.
 
     ```json
     {

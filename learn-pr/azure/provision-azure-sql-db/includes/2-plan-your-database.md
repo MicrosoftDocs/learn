@@ -4,7 +4,7 @@ Here, you'll learn why Azure SQL Database is a convenient, cost-effective, and s
 
 ## Why choose Azure SQL Database?
 
-Your transportation logistics application requires stored procedures that run basic CRUD (_Create_, _Read_, _Update_, and _Delete_) operations. You have experience working with SQL Server and other relational databases.
+Your transportation logistics application requires stored procedures that run basic CRUD (*Create*, *Read*, *Update*, and *Delete*) operations. You have experience working with SQL Server and other relational databases.
 
 You consider two choices for your database:
 
@@ -29,7 +29,7 @@ You've decided to build the web and application tiers for your logistics app on 
 
 - **Scale**
 
-    You find that the amount of transportation logistics data you must store doubles every year. When running on-premises, how much excess capacity should you plan for?
+    You find that the amount of transportation logistics data you must store doubles every year. When you run on-premises, how much excess capacity should you plan for?
 
     With Azure SQL Database, you can adjust the performance and size of your database on the fly when your needs change.
 

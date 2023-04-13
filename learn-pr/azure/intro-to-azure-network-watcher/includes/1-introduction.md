@@ -6,12 +6,12 @@ This module explains what Azure Network Watcher does, how it works, and when you
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you'll:
 
 - Learn what Azure Network Watcher is and the functionality it provides.
 - Determine whether Azure Network Watcher meets the needs of your organization.
 
 ## Prerequisites
 
-- Understanding of basic networking concepts such as IP addressing, subnetting, routing, and network security groups.
-- Basic familiarity with Azure network integration concepts such as VPNs, Azure ExpressRoute, and peering.
+- Understanding of basic networking concepts such as IP addressing, subnetting, routing, and network security groups
+- Basic familiarity with Azure network integration concepts such as VPNs, Azure ExpressRoute, and peering

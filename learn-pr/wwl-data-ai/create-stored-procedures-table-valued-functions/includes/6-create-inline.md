@@ -34,29 +34,27 @@ Unlike the inline TVF, a multi-statement table-valued function (MSTVF) can have 
 Notice how in the following code, we use a BEGIN/END in addition to RETURN:
 
 ```sql
-CREATE FUNCTION Sales.mstvf_OrderStatus 
-     ( @CustomerID int )
-RETURNS 
-@Results TABLE 
+CREATE FUNCTION Sales.mstvf_OrderStatus ()
+RETURNS
+@Results TABLE
      ( CustomerID int, OrderDate datetime )
 AS
 BEGIN
      INSERT INTO @Results
      SELECT SC.CustomerID, OrderDate
-     FROM Sales.Customer AS SC 
-     INNER JOIN Sales.SalesOrderHeader AS SOH 
+     FROM Sales.Customer AS SC
+     INNER JOIN Sales.SalesOrderHeader AS SOH
         ON SC.CustomerID = SOH.CustomerID
      WHERE Status >= 5
  RETURN;
 END;
-GO;
 ```
 
 Once created, you reference the MSTVF in place of a table just like with the previous inline function above. You can also reference the output in the FROM clause and join it with other tables.
 
 ```sql
 SELECT *
-FROM Sales.mstvf_OrderStatus(22);
+FROM Sales.mstvf_OrderStatus();
 ```
 
 ### Performance considerations

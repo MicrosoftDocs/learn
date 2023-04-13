@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.saas-foundations.what-is-saas
+title: What is SaaS?
+metadata:
+  title: what-is-saas
+  description: "What is SaaS? Different between B2B and B2C SaaS"
+  ms.date: 09/11/2022
+  author: kostinams
+  ms.author: irkostin
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-what-is-saas.md)]

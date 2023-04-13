@@ -1,3 +1,8 @@
+---
+interactive:bash
+zone_pivot_groups:azure-interface
+title:Describe factors that can affect costs in Azure
+---
 The following video provides an introduction to things that can impact your costs in Azure.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWGNx4]

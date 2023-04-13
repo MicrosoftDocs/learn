@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.azure.build-reusable-bicep-templates-parameters
 metadata:
-  moduleType: standard  
+  moduleType: standard
   title: Build reusable Bicep templates by using parameters
-  description: Control and apply parameters to a Bicep template while protecting sensitive inputs. 
-  ms.date: 10/29/2021
+  description: Control and apply parameters to a Bicep template while protecting sensitive inputs.
+  ms.date: 01/03/2023
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial # do we need ms.topic?
   ms.prod: learning-azure
-title: Build reusable Bicep templates by using parameters  
+title: Build reusable Bicep templates by using parameters
 summary: |
     Use Bicep parameters to provide information for your template during each deployment.
     Add decorators to make your parameters easy to understand and work with, and to protect secret data.
@@ -20,15 +20,16 @@ abstract: |
     - Understand the ways that parameters can be supplied to a Bicep template deployment
     - Work with secure parameters
 prerequisites: |
-  You should be familiar with:
+  You should be familiar with the following:
   - Creating and deploying basic Bicep templates.
   - Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
 
-  To follow along with the exercises in the module, you'll need:
-  - [Visual Studio Code](https://code.visualstudio.com) installed locally.
-  - Either:
-    - The latest [Azure CLI](/cli/azure/install-azure-cli) tools installed locally.
-    - The latest [Azure PowerShell](/powershell/azure/install-az-ps) installed locally.
+  To follow along with the exercises in the module, you'll need the following software installed locally:
+  - [Visual Studio Code](https://code.visualstudio.com) and the [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep).
+  - [Bicep CLI](/azure/azure-resource-manager/bicep/install) for your computing platform.
+  - One of these command-line shells:
+    - The latest [Azure CLI](/cli/azure/install-azure-cli).
+    - The latest [Azure PowerShell](/powershell/azure/install-az-ps).
 iconUrl: /training/achievements/bicep/build-reusable-bicep-templates-parameters.svg
 levels:
   - intermediate
@@ -38,7 +39,7 @@ roles:
   - administrator
 languages:
   - bicep
-products:  
+products:
   - azure-resource-manager
 subjects:
   - devops
@@ -52,5 +53,5 @@ units:
 - learn.azure.build-reusable-bicep-templates-parameters.exercise-create-use-parameter-files
 - learn.azure.build-reusable-bicep-templates-parameters.knowledge-check
 - learn.azure.build-reusable-bicep-templates-parameters.summary
-badge:                 
+badge:
   uid: learn.azure.build-reusable-bicep-templates-parameters.badge

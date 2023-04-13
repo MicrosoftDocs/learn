@@ -42,4 +42,4 @@ During this lab, you'll complete the following exercises:
  -  Exercise 3: Implement Azure DevOps pull request integration with SonarCloud.
 
 [:::image type="content" source="../media/launch-exercise-25d42425.png" alt-text="Screenshot of a launch button which will take you to the lab.":::
-](https://microsoftlearning.github.io/AZ400-DesigningandImplementingMicrosoftDevOpsSolutions/Instructions/Labs/AZ400_M07_L16_Managing_technical_debt_with_SonarQube_and_Azure_DevOps.html)
+](https://microsoftlearning.github.io/AZ400-DesigningandImplementingMicrosoftDevOpsSolutions/Instructions/Labs/AZ400_M07_L17_Managing_technical_debt_with_SonarQube_and_Azure_DevOps.html)

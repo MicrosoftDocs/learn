@@ -1,0 +1,45 @@
+### YamlMime:ModuleUnit
+uid: learn.continuous-validate-test-mission-critical-workloads.set-baselines-load-test
+title: Set baselines for load tests
+metadata:
+  title: Set baselines for load tests
+  description: Learn how to set baselines for load tests.
+  ms.date: 01/16/2023
+  author: sebader
+  ms.author: prwilk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-set-baselines-load-test.md)]
+
+quiz:
+  title: Knowledge check
+  questions:
+  - content: "How many baselines are required?"
+    choices:
+    - content: "A single baseline is always enough."
+      isCorrect: false
+      explanation: "Incorrect. The baseline definition of *good* or *healthy* can differ based on the environment or stage, the load profile, or whether the test included Azure Chaos experiments."
+    - content: "The number of required baselines depends on how the scenarios are defined."
+      isCorrect: true
+      explanation: "Correct. Different scenarios might require different baselines. For example, performance requirements and expectations can vary across stages and environments. Azure Chaos experiments can also affect the expected performance."
+  - content: "Does a baseline define the performance that the deployment can provide?"
+    choices:
+    - content: "The baseline defines the deployment performance."
+      isCorrect: false
+      explanation: "Incorrect. Although the baseline defines expected performance numbers, it has no impact on the performance that's provided during deployment."
+    - content: "The baseline has no impact on the deployment performance."
+      isCorrect: true
+      explanation: "Correct. Although the baseline defines expected performance numbers, it has no impact on the performance that's provided during deployment."
+  - content: "When do baselines need to be evaluated and updated?"
+    choices:
+    - content: "Establishing baselines is a one-time activity."
+      isCorrect: false
+      explanation: "Incorrect. Baselines need to be evaluated regularly and need to be updated to reflect application or infrastructure changes that affect performance."
+    - content: "Baselines should be evaluated as part of every release or major change."
+      isCorrect: true
+      explanation: "Correct. You should evaluate existing baselines with every release or major change and adjust them when needed."
+    - content: "Baselines should be updated on a yearly basis."
+      isCorrect: false
+      explanation: "Incorrect. Evaluating baselines only after a specific interval isn't a good practice. Baselines should be evaluated regularly--for example, as part of every release or major change."

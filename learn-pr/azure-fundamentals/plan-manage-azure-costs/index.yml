@@ -2,10 +2,10 @@
 uid: learn.azure.plan-manage-azure-costs
 metadata:
   title: Plan and manage your Azure costs (AZ-900)
-  description: Migration to the cloud presents new ways to think about your IT expenses. This module teaches you about the factors that influence cost and tools you can use to help estimate and manage your cloud spend. Prepare for AZ-900.
-  ms.date: 04/29/2022
-  author: Randall-Knapp
-  ms.author: rknapp
+  description: Plan and manage your Azure costs with confidence by learning the factors that influence cost and the tools to estimate and manage cloud spend.
+  ms.date: 03/01/2023
+  author: wwlpublish
+  ms.author: robbarefoot
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Plan and manage your Azure costs

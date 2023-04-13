@@ -143,7 +143,7 @@ It looks like it's working!
 
 ## Continue testing the decoder
 
-While this example worked, there is an issue when we get to the end of the alphabet. 
+While this example worked, there's an issue when we get to the end of the alphabet.
 
 Let's see what would happen if you ran this code with the first letter of the actual secret message, `N`, and the shift amount, `13`.
 
@@ -157,7 +157,7 @@ Let's see what would happen if you ran this code with the first letter of the ac
 
 The code won't return the expected result because a Caesar cipher loops back to lowercase `a` when it reaches lowercase `z`.
 
-You can try this out by testing your function:
+You can try this code out by testing your function:
 
 ```python
 print(lasso_letter('N', 13))

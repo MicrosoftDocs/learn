@@ -19,7 +19,7 @@ The `HPAScalingPolicy` object is defined as an object with the following keys:
 Scaling policies allows you to fine-tune the way the scaling works, for example, you can completely disable the scale down operation by setting a `scaleDown` policy to `Disabled`:
 
 ```yml
-apiVersion: autoscaling/v2beta2
+apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
   name: contoso-website
@@ -51,7 +51,7 @@ spec:
 You can also set the number of replicas to scale out at a time by defining a `scaleUp` policy, like this:
 
 ```yml
-apiVersion: autoscaling/v2beta2
+apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
   name: contoso-website

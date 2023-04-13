@@ -22,6 +22,9 @@ In this unit, you'll create C# entity classes that will map to tables in a local
     code .
     ```
 
+    > [!NOTE]
+    > If you get a message to update dependencies, select **Yes**.
+
 1. Review the code:
 
     - The project is an ASP.NET Core web API.
@@ -75,7 +78,7 @@ Before you start, you need to add the required packages.
 
 ## Wire up models and DbContext
 
-Now you'll add and configure a `DbContext` implementation, which will serve as the gateway through which you will interact with the database.
+Now, you'll add and configure a `DbContext` implementation, which will serve as the gateway through which you'll interact with the database.
 
 1. In the project root directory, add a new folder called *Data*.
 1. In *Data* directory, create a new file named *PizzaContext.cs*. Add the following code to the empty file:
@@ -154,7 +157,7 @@ You've done all you need to create a migration for creating your initial databas
     dotnet ef database update --context PizzaContext
     ```
 
-    Execution of the preceding command applies the migration. Since *ContosoPizza.db* doesn't exist, it's created in the project directory.
+    Executing the preceding command applies the migration. Since *ContosoPizza.db* doesn't exist, it's created in the project directory.
 
     > [!TIP]
     > The `dotnet ef` tool is supported on all platforms. In Visual Studio on Windows, it's also possible to use the `Add-Migration` and `Update-Database` PowerShell cmdlets in the integrated **Package Manager Console** window.
@@ -287,7 +290,7 @@ Your manager at Contoso Pizza has given you some new requirements that force you
     A migration named *:::no-loc text="ModelRevisions":::* is created.
 
     > [!NOTE]
-    > The message "An operation was scaffolded that may result in the loss of data. Please review the migration for accuracy." is displayed. This is because we have changed the relationship from `Pizza` to `Topping` from one-to-many to many-to-many, which requires that an existing foreign key column is dropped. This is OK because we don't yet have any data in our database. However, in general it is a good idea to check the generated migration when this warning is displayed to make sure no data is deleted or truncated by the migration.
+    > The message "An operation was scaffolded that may result in the loss of data. Please review the migration for accuracy." is displayed. This is because we have changed the relationship from `Pizza` to `Topping` from one-to-many to many-to-many, which requires that an existing foreign key column is dropped. This is OK because we don't yet have any data in our database. However, in general it's a good idea to check the generated migration when this warning is displayed to make sure no data is deleted or truncated by the migration.
 
 1. Run the following command to apply the *:::no-loc text="ModelRevisions":::* migration:
 

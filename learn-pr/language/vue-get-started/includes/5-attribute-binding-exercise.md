@@ -5,7 +5,7 @@ Let's say you want to display an image of the space cruise for your customers. B
 In the previous exercise, you created a `data()` method inside the `App` object. Now add the properties for the image.
 
 1. Open the *index.js* file.
-1. Immediately below `// additional properties later`, add the following code.
+1. Immediately after the line `// additional properties later`, add the following code.
 
     ```javascript
     productImage: 'assets/cruise.jpg',
@@ -39,7 +39,7 @@ const app = Vue.createApp({
 Now update the HTML to include the image. You'll set the attributes and style by using attribute binding.
 
 1. Open the *index.html* file.
-1. Below `<div>{{ productDescription }}</div>`, add the following HTML.
+1. Immediately after the line `<div>{{ productDescription }}</div>`, add the following HTML.
 
     ```html
     <img :src="productImage" :alt="productImageDescription" :style="productImageStyle" />

@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-app-service-plans.implement-azure
-title: Implement Azure app service plans
+title: Implement Azure App Service plans
 metadata:
-  title: Implement Azure app service plans
-  description: "Implement Azure app service plans"
-  ms.date: 11/17/2022
+  title: Implement Azure App Service plans
+  description: "Implement Azure App Service plans"
+  ms.date: 01/29/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial

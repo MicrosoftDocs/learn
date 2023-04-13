@@ -6,6 +6,7 @@ metadata:
   description: Many of the built-in features of Visual Studio make it the most friendly development environment for beginners. Developing professionals use it everyday for top of the line developer experiences. Visual Studio can scale with your team with Professional or Enterprise licenses as your company expands.
   author: anandmeg
   ms.author: meghaanand
+  manager: jmartens
   ms.date: 12/15/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-visual-studio

@@ -1,3 +1,8 @@
+---
+interactive:bash
+zone_pivot_groups:azure-interface
+title:Summary
+---
 This module detailed target environment provisioning, service connections creation process, and test infrastructure setup. You learned how to configure functional test automation and run availability tests.
 
 You learned how to describe the benefits and usage of:

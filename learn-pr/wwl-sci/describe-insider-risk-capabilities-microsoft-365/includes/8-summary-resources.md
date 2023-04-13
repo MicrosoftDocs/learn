@@ -1,3 +1,4 @@
+
 There are various capabilities available from Microsoft Purview to help protect organizations from data leaks or inappropriate communication, from company insiders.
 
 Now that you’ve completed this module, you should be able to:

@@ -2,8 +2,8 @@
 uid: learn.wwl.plan-implement-identity-governance-strategy
 metadata:
   title: 'SC-300: Plan and implement an identity governance strategy'
-  description: 'SC-300: Plan and implement an identity governance strategy'
-  ms.date: 12/02/2021
+  description: Design and implement identity governance for your identity solution using entitlement, access reviews, privileged access, and monitoring your Azure Active Directory (Azure AD). Aligned to SC-300 exam.
+  ms.date: 02/07/2023
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
@@ -12,7 +12,7 @@ title: 'SC-300: Plan and implement an identity governance strategy'
 prerequisites: |
   None
 summary: |
-  Design and implement identity governance for your identity solution using entitlement, access reviews, privileged access, and monitoring your Azure Active Directory (Azure AD).  Aligned to SC-300 exam.
+  Design and implement identity governance for your identity solution using entitlement, access reviews, privileged access, and monitoring your Azure Active Directory (Azure AD). Aligned to SC-300 exam.
 iconUrl: /training/achievements/plan-and-implement-an-identity-governance-strategy.svg
 levels:
 - intermediate
@@ -23,6 +23,11 @@ roles:
 products:
 - azure
 - azure-active-directory
+- azure-active-directory-domain
+- defender-identity
+- azure-active-directory-priviledged-identity-management
+- entra
+- entra-identity-governance
 subjects:
 - identity-access
 modules:

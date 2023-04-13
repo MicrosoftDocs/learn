@@ -4,11 +4,12 @@ metadata:
   moduleType: standard
   title: Build your first Bicep deployment workflow by using GitHub Actions
   description: Build a basic deployment workflow for Bicep infrastructure as code templates by using Azure DevOps and GitHub Actions.
-  ms.date: 07/20/2022
+  ms.date: 01/17/2023
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: engagement-fy23
 title: Build your first Bicep deployment workflow by using GitHub Actions
 summary: |
   Create an automated workflow in GitHub Actions that securely deploys resources to Azure from Bicep code. Configure your workflow to run on a schedule or when your configuration changes.
@@ -23,15 +24,15 @@ prerequisites: |
   - Bicep, including creating and deploying basic files.
   - Azure, including the Azure portal, subscriptions, resource groups, and resources.
   - Basic Git commands, including cloning, committing files, and pushing changes to GitHub.
-  
+
   To work through the exercises in the module, you'll need an Azure account, with the ability to create resource groups and Azure Active Directory applications.
-  
+
   You'll also need the following installed locally:
-  
-  - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true).
-  - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep&azure-portal=true).
+
+  - [Visual Studio Code](https://code.visualstudio.com).
+  - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep).
   - The latest [Azure CLI](/cli/azure/install-azure-cli) tools *or* the latest [Azure PowerShell](/powershell/azure/install-az-ps).
-  - [Git](https://git-scm.com/download?azure-portal=true).
+  - [Git](https://git-scm.com/download).
 iconUrl: /training/achievements/bicep/build-first-bicep-deployment-workflow-using-github-actions.svg
 levels:
   - intermediate

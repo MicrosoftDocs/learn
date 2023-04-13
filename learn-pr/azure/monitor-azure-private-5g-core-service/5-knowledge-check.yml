@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.monitor-azure-private-5g-core-service.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Checks that you've grasped what is taught about the monitoring capabilities and tools of Azure Private 5G Core.
+  ms.date: 10/27/2022
+  author: michael-weizhong-shan
+  ms.author: michaelshan
+  ms.topic: interactive-tutorial
+  ms.service: learning-private-5g-core
+durationInMinutes: 4
+content: |
+quiz:
+  questions:
+  - content: "To monitor all the sites in a private mobile network centrally from Azure, which of the following tools should be used?"
+    choices:
+    - content: "Platform metrics"
+      isCorrect: true
+      explanation: "Correct. Azure Private 5G Core creates the platform metrics for a site when the site is deployed. You can check these platform metrics through the Mobile Network Site resource that you use to manage the site."
+    - content: "The packet core dashboards"
+      isCorrect: false
+      explanation: "Try again. The packet core dashboards allow you to locally monitor a specific site in a private mobile network."
+    - content: "The distributed tracing tool"
+      isCorrect: false
+      explanation: "Try again. The distributed tracing tool is for issue diagnostics. It allows you to locally diagnose network issues in a site."
+  - content: "To use third-party applications to monitor a private mobile network, which of the following methods should be used?"
+    choices:
+    - content: "Use the distributed tracing tool."
+      isCorrect: false
+      explanation: "Try again. The distributed tracing tool is mainly for diagnosing network issues."
+    - content: "Use the Azure Monitor REST API."
+      isCorrect: true
+      explanation: "Correct. Azure Private 5G Core shares a list of health and performance metrics, which third-party applications can retrieve with the Azure Monitor REST API."
+    - content: "Use the platform metrics."
+      isCorrect: false
+      explanation: "Try again. The platform metrics provide visualized views of the health and performance metrics. However, third-party applications can't retrieve the metrics directly from these dashboards."
+  - content: "To diagnose a 5G network issue with the distributed tracing tool, what keyword should be used to search for information about signaling flows and errors?"
+    choices:
+    - content: "The subscription permanent identifier (SUPI)."
+      isCorrect: true
+      explanation: "Correct. Activities involving a particular subscriber can be searched using their subscription permanent identifier (SUPI) or, in 4G networks, their international mobile subscriber identity (IMSI)."
+    - content: "Words in error messages."
+      isCorrect: false
+      explanation: "Try again. Words in error messages can't be used to search for information about signaling flows and errors. However, the distributed tracing tool supports searching by error types."
+    - content: "The time at which an event occurred."
+      isCorrect: false
+      explanation: "Try again. The time can't be used as a search keyword in the distributed tracing tool. However, the tool allows search results to be restricted with a date/time range."
+  - content: "Which of the following item is a health and performance metric that you need to monitor for a private mobile network?"
+    choices:
+    - content: "The names of the RANs to which Azure Private 5G Core connects."
+      isCorrect: false
+      explanation: "Try again. RAN names aren't health and performance metrics. They don't often change."
+    - content: "The number of SIM policies defined for a site."
+      isCorrect: false
+      explanation: "Try again. The number of SIM policies isn't a health and performance metric. It depends on the business needs of the enterprise that uses the UEs."
+    - content: "The numbers of packets sent/received on the N3/N6 interfaces"
+      isCorrect: true
+      explanation: "Azure Private 5G Core uses the N3/N6 interfaces to communicate with the data network. For issues related to the data network, checking the numbers of packets sent/received on the N3/N6 interfaces may help."

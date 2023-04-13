@@ -1,3 +1,8 @@
+---
+interactive:bash
+zone_pivot_groups:azure-interface
+title:Set up and run functional tests
+---
 **Estimated time:** 60 minutes.
 
 **Lab files:** none.

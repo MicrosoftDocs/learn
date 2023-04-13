@@ -5,10 +5,9 @@ metadata:
   description: In this module, you'll learn how to connect an IoT Edge device to your IoT Central application
   author: dominicbetts
   ms.author: dobett
-  ms.date: 10/04/2022
+  ms.date: 01/11/2023
   ms.reviewer: rangv
   manager: lizross
-  ms.custom: engagement-fy23
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Connect an IoT Edge device to your IoT Central application

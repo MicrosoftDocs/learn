@@ -1,9 +1,11 @@
+
+
 Microsoft Defender for Cloud provides security posture management and threat protection capabilities for Azure Virtual Desktop VMs in the following ways:
 
  -  Secure configuration assessment and Secure Score.
  -  Industry-tested vulnerability assessment.
  -  Host level detections.
- -  Agentless cloud network micro-segmentation &amp; detection.
+ -  Agentless cloud network micro-segmentation & detection.
  -  File integrity monitoring.
  -  Just-in-time VM access.
  -  Adaptive Application Controls.

@@ -2,7 +2,7 @@ After the convert and migrate phases of converting your templates to Bicep, you 
 
 :::image type="content" source="../media/4-refactor-phase.png" alt-text="Diagram of the refactor phase of the recommended workflow for migrating Azure resources to Bicep." border="false":::
 
-The main focus of the *refactor* phase is to improve the quality of your Bicep code. Improvements can include changes, such as adding code comments, that bring the template in line with your template standards.
+The main focus of the _refactor_ phase is to improve the quality of your Bicep code. Improvements can include changes like adding code comments that align the template with your template standards.
 
 The refactor phase consists of eight steps, which you do in any order:
 
@@ -15,60 +15,21 @@ The refactor phase consists of eight steps, which you do in any order:
 - Add comments.
 - Follow Bicep best practices.
 
-Here's the output of the Bicep `decompile` command against a JSON template that creates an App Service plan:
+The following example shows the output from the Bicep `decompile` command of a JSON template that creates an App Service plan:
 
-```bicep
-@description('Location for resources.')
-param location string = resourceGroup().location
+:::code language="bicep" source="code/4-bicep-decompile-output.bicep" :::
 
-@allowed([
-  'prod'
-  'dev'
-  'test'
-])
-@description('The list of allowed environment names.')
-param environment string = 'prod'
-
-@allowed([
-  'P1v3'
-  'P2v3'
-  'P3v3'
-])
-@description('The list of allowed App Service Plan SKUs.')
-param appServicePlanSku string = 'P1v3'
-
-@minValue(1)
-@maxValue(10)
-@description('The number of allowed App Service Plan instances.')
-param appServicePlanInstanceCount int = 1
-
-var appServicePlanName_var = 'plan-${environment}-001'
-
-resource appServicePlanName 'Microsoft.Web/serverfarms@2020-12-01' = {
-  name: appServicePlanName_var
-  location: location
-  sku: {
-    name: appServicePlanSku
-    capacity: appServicePlanInstanceCount
-  }
-  kind: 'app'
-  properties: {}
-}
-
-output appServicePlanId string = appServicePlanName.id
-```
-
-If you deploy this Bicep template as-is, the deployment will succeed, but you can improve the template to bring it line with your template standards.
+If you deploy this Bicep template as-is, the deployment will succeed, but you can improve the template to align it with your template standards.
 
 ### Review resource API versions
 
 When you use Bicep to interact with your Azure resources, you specify an _API version_ to use. As Azure products change and improve, newer API versions are released to provide access to new functionality. When you export Azure resources, the exported template might not have the latest API version for a resource type. If you need specific properties for future deployments, update the API to the appropriate version. It's good practice to review the API versions for each exported resource.
 
-Consider using the [Azure ARM template reference](/azure/templates/?azure-portal=true) to help verify the appropriate API versions and resource properties for your template.
+Consider using the [Azure ARM template reference](/azure/templates/) to help verify the appropriate API versions and resource properties for your template.
 
 ### Review the linter suggestions in your new Bicep file
 
-When you create Bicep files by using the [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep&azure-portal=true), the linter runs automatically and highlights suggestions and errors in your code. Many of the suggestions and errors include an option to apply a quick fix to the issue. Review these recommendations and adjust your Bicep file.
+When you create Bicep files by using the [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep), the linter runs automatically and highlights suggestions and errors in your code. Many of the suggestions and errors include an option to apply a quick fix to the issue. Review these recommendations and adjust your Bicep file.
 
 ### Revise parameters, variables, and symbolic names
 
@@ -82,7 +43,7 @@ For example, in the converted template, the variable named `appServicePlanName_v
 
 For clarity, it's a good idea to remove `_var` from the variable name. But, when you rename the variable, its new name conflicts with the symbolic name of the App Service plan resource. So, it's a good idea to rename resources first, and then rename the variables that are used in their definitions.
 
-[!include[Tip - How to use Visual Studio Code to rename Bicep symbols.](../../includes/azure-template-bicep-tip-rename.md)]
+[!INCLUDE [Tip - How to use Visual Studio Code to rename Bicep symbols.](../../includes/azure-template-bicep-tip-rename.md)]
 
 ### Simplify expressions
 
@@ -103,7 +64,7 @@ If you're converting a template that has many resources, consider breaking the i
 
 ### Add comments and descriptions
 
-Good Bicep code is _self-documenting_. In Bicep, you can add comments and descriptions to your code to document your infrastructure. Comments and descriptions can help your teammates understand the code and increase confidence when changes are made. Both comments and descriptions are visible when you work with the file in Visual Studio Code, for example when you need to specify a parameter value for a module, but when you deploy the Bicep file to Azure, the comments are ignored.
+Good Bicep code is _self-documenting_. In Bicep, you can add comments and descriptions to your code to document your infrastructure. Comments and descriptions can help your teammates understand the code and increase confidence when changes are made. Comments and descriptions are visible when you work with a Bicep file in Visual Studio Code, like when you need to specify a parameter value for a module. But when you deploy a Bicep file to Azure, the comments are ignored.
 
 Bicep supports both single-line comments using a `//` character sequence and multi-line comments that start with a `/*` and end with a `*/`. You can add comments to apply to specific lines in your code or to sections of code.
 
@@ -118,13 +79,13 @@ You can add a multi-line comment at the beginning of the file:
 
 Single-line comments can be added as headers for sections of code or on individual lines to describe the code:
 
-:::code language="bicep" source="code/4-app-service-plan-updated.bicep" range="34-46" highlight="1,6,9,12" :::
+:::code language="bicep" source="code/4-app-service-plan-updated.bicep" range="35-49" highlight="1,7,10,15" :::
 
-Bicep provides the `@description` decorator that you can use to document the purpose of your parameters, variables, resources, modules, and outputs. You can add the description on the line above the item you are describing:
+Bicep provides the `@description` decorator that you can use to document the purpose of your parameters, variables, resources, modules, and outputs. You can add the description on the line above the item you're describing:
 
 ```bicep
-@description('The name of the App Service Plan.')
-param appServicePlanName string
+@description('The name of the App Service plan.')
+var appServicePlanName = 'plan-${environment}-001'
 ```
 
 ### Follow Bicep best practices
@@ -133,56 +94,6 @@ Make sure that your Bicep file follows standard recommendations. Review [Bicep b
 
 ### The converted template
 
-After you make the appropriate improvements, review the final template before you deploy it. Take a look at a final converted example template that includes the revised names and added comments:
+After you make the appropriate improvements, review the final template before you deploy it. The updated template includes revised names, API version, descriptions, and added comments:
 
-```bicep
-/*
-  This Bicep file was developed by the web team.
-  It deploys the resources we need for our toy company's website.
-*/
-
-// Parameters
-@description('Location for all resources.')
-param location string = resourceGroup().location
-
-@allowed([
-  'prod' // Production environment
-  'dev' // Development environment
-  'test' // Test environment
-])
-@description('The list of allowed environment names.')
-param environment string = 'prod'
-
-@allowed([
-  'P1v3'
-  'P2v3'
-  'P3v3'
-])
-@description('The list of allowed App Service plan SKUs.')
-param appServicePlanSku string = 'P1v3'
-
-@minValue(1)
-@maxValue(10)
-@description('The number of allowed App Service plan instances.')
-param appServicePlanInstanceCount int = 1
-
-// Variables
-@description('The name of the App Service plan.')
-var appServicePlanName = 'plan-${environment}-001'
-
-// Resource - App Service Plan
-@description('The App Service plan resource name.')
-resource appServicePlan 'Microsoft.Web/serverfarms@2020-12-01' = {
-  name: appServicePlanName
-  location: location
-  sku: {
-    name: appServicePlanSku // Specifies the SKU of the App Service plan.
-    capacity: appServicePlanInstanceCount
-  }
-  kind: 'app' // Specifies a Windows App Service plan.
-}
-
-// Outputs
-@description('The resource ID of the App Service plan.')
-output appServicePlanId string = appServicePlan.id
-```
+:::code language="bicep" source="code/4-app-service-plan-updated.bicep" :::

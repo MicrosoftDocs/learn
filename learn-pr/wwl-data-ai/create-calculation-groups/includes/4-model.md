@@ -6,7 +6,7 @@ Application of calculation groups can't be accomplished in Power BI desktop. Dow
 
 With Tabular Editor installed, you can access it from the external tools tab of the ribbon in Power BI.
 
-![External tools tab of the ribbon in Power BI desktop displaying ALM toolkit, DAX studio, and Tabular Editor.](../media/external-tools-tabular-editor-2.png)
+![External tools tab of the ribbon in Power BI desktop displaying ALM toolkit, DAX Studio, and Tabular Editor.](../media/external-tools-tabular-editor-2.png)
 
 Launching Tabular Editor from the External Tools tab of the ribbon will open the Tabular Editor interface, with a connection to your Power BI data model.
 
@@ -28,7 +28,7 @@ Saving the calculation group in Tabular Editor will save changes to the connecte
 ![Refresh the Time Intelligence query in Power BI desktop to apply the changes made in Tabular Editor.](../media/refresh-query-calculation-group.png)
 
 > [!NOTE]
-> Calculation groups do not work with implicit measures. Measures to be evaluated by the calcuation group must be explicitly defined.
+> Calculation groups do not work with implicit measures. Measures to be evaluated by the calculation group must be explicitly defined.
 
 ## Use your calculation group in a visual
 

@@ -3,12 +3,12 @@ uid: learn.student-evangelism.basic-python-nasa
 metadata:
   title: Write basic Python in Notebooks
   description: Learn the basics of Python.
-  ms.date: 05/05/2021
+  ms.date: 01/25/2023
   author: drguthals
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: team=nextgen
+  ms.custom: team=nextgen, py-fresh-zinc, engagement-fy23
 title: Write basic Python in Notebooks
 summary: Learn the basics of Python using interactive Notebooks.
 abstract: |
@@ -31,7 +31,7 @@ roles:
 - student
 - data-scientist
 products:
-- vs-code
+- azure
 subjects:
 - development-tools
 units:

@@ -1,3 +1,4 @@
+
 In this exercise, you will test the capabilities of the Form Recognizer service. You'll use a simple command-line application that runs in the Cloud Shell. The same principles and functionality apply in real-world solutions, such as web sites or phone apps.
 
 > [!NOTE]

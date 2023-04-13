@@ -1,8 +1,8 @@
-In this module, you learned and performed the core operations that are necessary anytime you create an Azure Cosmos DB SQL API account. These core operations will be repeated often as you explore deeper concepts for the Azure Cosmos DB SQL API.
+In this module, you learned and performed the core operations that are necessary anytime you create an Azure Cosmos DB for NoSQL account. These core operations will be repeated often as you explore deeper concepts for the Azure Cosmos DB for NoSQL.
 
 Now that you have completed this module, you can:
 
-- Create a new Azure Cosmos DB account resource that uses the SQL API
+- Create a new Azure Cosmos DB account resource that uses the NoSQL API
 - Create database and container resources using the Data Explorer
 - Create item resources using the Data Explorer
 

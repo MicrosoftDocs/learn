@@ -1,3 +1,4 @@
+
 The Microsoft Graph SDKs are designed to simplify building high-quality, efficient, and resilient applications that access Microsoft Graph. The SDKs include two components: a service library and a core library.
 
 The service library contains models and request builders that are generated from Microsoft Graph metadata to provide a rich, strongly typed, and discoverable experience when working with the many datasets available in Microsoft Graph.
@@ -19,14 +20,34 @@ The Microsoft Graph .NET SDK is included in the following NuGet packages:
 The Microsoft Graph client is designed to make it simple to make calls to Microsoft Graph. You can use a single client instance for the lifetime of the application. The following code examples show how to create an instance of a Microsoft Graph client. The authentication provider will handle acquiring access tokens for the application. The different application providers support different client scenarios. For details about which provider and options are appropriate for your scenario, see [Choose an Authentication Provider](/graph/sdks/choose-authentication-providers).
 
 ```csharp
-// Build a client application.
-IPublicClientApplication publicClientApplication = PublicClientApplicationBuilder
-            .Create("INSERT-CLIENT-APP-ID")
-            .Build();
-// Create an authentication provider by passing in a client application and graph scopes.
-DeviceCodeProvider authProvider = new DeviceCodeProvider(publicClientApplication, graphScopes);
-// Create a new instance of GraphServiceClient with the authentication provider.
-GraphServiceClient graphClient = new GraphServiceClient(authProvider);
+var scopes = new[] { "User.Read" };
+
+// Multi-tenant apps can use "common",
+// single-tenant apps must use the tenant ID from the Azure portal
+var tenantId = "common";
+
+// Value from app registration
+var clientId = "YOUR_CLIENT_ID";
+
+// using Azure.Identity;
+var options = new TokenCredentialOptions
+{
+    AuthorityHost = AzureAuthorityHosts.AzurePublicCloud
+};
+
+// Callback function that receives the user prompt
+// Prompt contains the generated device code that you must
+// enter during the auth process in the browser
+Func<DeviceCodeInfo, CancellationToken, Task> callback = (code, cancellation) => {
+    Console.WriteLine(code.Message);
+    return Task.FromResult(0);
+};
+
+// https://learn.microsoft.com/dotnet/api/azure.identity.devicecodecredential
+var deviceCodeCredential = new DeviceCodeCredential(
+    callback, tenantId, clientId, options);
+
+var graphClient = new GraphServiceClient(deviceCodeCredential, scopes);
 ```
 
 ## Read information from Microsoft Graph

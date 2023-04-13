@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.oversee-device-profiles.monitor-device-profiles-intune
+title: Monitor device profiles in Intune
+metadata:
+  title: Monitor device profiles in Intune
+  description: "This unit teaches learner the process to monitor device profiles in Intune."
+  ms.date: 03/14/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-monitor-device-profiles-intune.md)]

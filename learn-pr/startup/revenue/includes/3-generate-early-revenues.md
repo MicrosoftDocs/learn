@@ -1,6 +1,6 @@
-At this point, you've validated your core business model assumptions with customers. You've built a product or at least a minimal viable product (MVP) that can be monetized. You've also selected a revenue model. Now you're in a position to start generating revenues.
+At this point, you've validated your core business model assumptions with customers. You've built a product or at least a minimal viable product (MVP) that can be monetized. You've also selected a revenue model. Now, you're in a position to start generating revenues.
 
-Ask yourself a crucial question: Who should I try to sell my product to? Keep in mind that your customer might not be the same person as your user, especially if your startup is B2B.
+Ask yourself a crucial question: To whom should I try to sell my product? Keep in mind that your customer might not be the same person as your user, especially if your startup is B2B.
 
 ## Focus on user happiness
 
@@ -18,7 +18,7 @@ The benefit of targeting this group of users first is that they'll be evangelist
 
 In contrast, by trying to target the entire continuum, you'll inevitably pick up customers who won't like your product. It won't comprehensively solve a problem for them. They won't be advocates for your product, and won't bring other customers via referral. You'll get a range of reviews, some of which will be lukewarm or negative. You'll also have to provide ongoing customer support to a growing number of dissatisfied customers. Dealing with this customer segment will drain resources from your team and could negatively affect team morale. Worse, it could create a lasting suboptimal impression of your brand at a time when you're working to complete product development and establish your company as a new entrant in the market.
 
-From a financial perspective, even though you might have generated more upfront revenue, you'll have a lower customer retention rate. You'll also have a lower customer LTV. Ultimately, your cost of customer acquisition will be higher. You'll have to rely on paid channels to reach new customers and counteract the effects of negative reviews by your existing users.
+From a financial perspective, even though you might've generated more upfront revenue, you'll have a lower customer retention rate. You'll also have a lower customer LTV. Ultimately, your cost of customer acquisition will be higher. You'll have to rely on paid channels to reach new customers and counteract the effects of negative reviews by your existing users.
 
 A good rule of thumb in the early days of your startup is to focus on selling only to those users who you believe will love your product. Don't try to sell to a larger number of users who will merely like your product.
 
@@ -34,7 +34,7 @@ Let's take Calendly as an example. The company started out focusing on power use
 
 These users regularly included a Calendly link in their emails. By demonstrating their reliance on Calendly, they convinced many new users to try the product. This type of practical endorsement contributed to Calendly's viral growth.
 
-Over time, Calendly added features such as payment gateways for paid consultations, SMS notifications, website embeds, custom branding, and polls for multi-person meetings. In parallel, the company broadened its marketing and customer acquisition efforts to attract a wider group of users. It continued to be mindful of the importance of focusing on user happiness.
+Over time, Calendly added features such as payment gateways for paid consultations, SMS notifications, website embeds, custom branding, and polls for multi-person meetings. In parallel, the company broadened its marketing and customer-acquisition efforts to attract a wider group of users. It continued to be mindful of the importance of focusing on user happiness.
 
 ## Early adopters
 
@@ -46,7 +46,7 @@ Here are other common attributes of early adopters:
 - They're willing to take the risk of trying and paying for a new and unproven product. They'll persist even if it's imperfect.
 - They relish the opportunity to try new products before anyone else.
 - They're happy to give you candid feedback and genuinely want you to succeed.
-- They're likely to have experimented with alternatives. They might have created makeshift solutions themselves, such as a spreadsheet or a database.
+- They're likely to have experimented with alternatives. They might've created makeshift solutions themselves, such as a spreadsheet or a database.
 
 > [!TIP]
 > When you conduct customer interviews, ask whether the person will try your product before it launches and give you some feedback. If they say yes, you can tag them as a potential early adopter.
@@ -75,34 +75,34 @@ If you've done some customer interviews, it's likely you've built a list of pros
 
 Some startups can grow with zero-touch sales, even in the early days. But most startups benefit from having the founders engage directly with early customers and close the first 50 to 100 sales in person.
 
-This approach might seem inefficient and manual, but it's highly beneficial. It enables founders to acquire a deep understanding of their customers' needs. They also hone their ability to communicate the value proposition and address any common objections.
+This approach might seem inefficient and manual, but it's highly beneficial. It allows founders to acquire a deep understanding of their customers' needs. They also hone their ability to communicate the value proposition and address any common objections.
 
-Pursuing a direct sales approach at the outset enables you to describe your company and product on your website and in marketing materials in a way that resonates with your ideal target customer. This true-to-life description improves conversions after you start to automate customer acquisition.
+Pursuing a direct sales approach at the outset allows you to describe your company and product on your website and in marketing materials in a way that resonates with your ideal target customer. This true-to-life description improves conversions after you start to automate customer acquisition.
 
 If you don't have a list of potential customers, there are many ways you can find and convert early customers. Here are some examples:
 
 - Post on Product Hunt and ask everyone you know to upvote your product.
 - Join or create a LinkedIn group for people who represent your target customer. Use it to post relevant content and respond to questions. Establish yourself as a voice of authority and encourage members to try your product. Don't spam the group.
 - Post to relevant communities on Reddit or other social networks that make sense for your product and your target audience.
-- Talk about your product launch and more generally about the problem space on Clubhouse and Twitter Spaces.
-- Experiment with different customer acquisition channels. Try paid ones like search ads and social ads and unpaid channels like social media and content marketing. By tracking uptake data and conversion metrics, you can identify channels that work. Then focus on them.
-- Have a short pre-qualification form on your website for potential customers. Ask a few key questions aimed at identifying whether they fit your ideal first customer persona.
+- Talk about your product launch, and more generally about the problem space, on Clubhouse and Twitter Spaces.
+- Experiment with different customer-acquisition channels. Try paid ones like search ads and social ads, and unpaid channels like social media and content marketing. By tracking uptake data and conversion metrics, you can identify channels that work, then focus on them.
+- Have a short pre-qualification form on your website for potential customers. Ask a few key questions aimed at identifying whether they fit your ideal-first-customer persona.
 - Email or call people you know and ask them to refer you to five people they think could be a potential customer. Give them a discount code they can pass on to people in their network.
 - Go to relevant conferences and exhibitions either in person or online. Talk to people who represent your target customer. Get a speaking spot if you can.
-- Talk to every customer who signs up or buys your product. Try to understand how they're using the product and whether they're satisfied. Aim to learn more about what customers need and at the same time minimize churn. If they love your product, ask them to refer you to people in their network who they think would also benefit from it.
+- Talk to every customer who signs up or buys your product. Try to understand how they're using the product and whether they're satisfied. Aim to learn more about what customers need, and at the same time minimize churn. If they love your product, ask them to refer you to people in their network who they think would also benefit from it.
 - Incentivize users to share your product with others via an affiliate or referral program.
 
 ## Tips for founders without a sales background
 
 It's common for founders who haven't worked in a sales role to struggle with establishing a strong sales ethos and sales processes. This situation is especially true in B2B companies that need to engage in some form of direct sales on an ongoing basis.
 
-Often founders who lack sales experience will lean toward hiring someone to take care of sales early in the life of the company. Generally, this strategy isn't a productive one. Founders have a better understanding of the problem and the product than anyone else. They have more passion for the problem than a salaried sales executive. They're best placed to evangelize their product with customers.
+Often, founders who lack sales experience will lean toward hiring someone to take care of sales early in the life of the company. Generally, this strategy isn't a productive one. Founders have a better understanding of the problem and the product than anyone else. They have more passion for the problem than a salaried sales executive. They're best placed to evangelize their product with customers.
 
 Founders also need to continue learning about what customers need. The best way to learn is to engage directly with them in a sales context.
 
 Here are some tips to help founders overcome a lack of sales experience:
 
 - To make a sale directly with a customer, you have to ask them for money. If you find this question uncomfortable, recognize it as early as possible. Sales coaching or discussions with other founders who have a strong sales background can help you overcome your reluctance.
-- Be prepared to hear "no" a lot. Be willing to persist with sales calls even if you get a low conversion rate. Not closing a sale shouldn't be thought of as a failure. It's an opportunity to learn which types of customers are high-quality versus low-quality prospects. It's also a chance to better express your proposition and overcome common objections.
+- Be prepared to hear "no" a lot. Be willing to persist with sales calls even if you get a low conversion rate. You shouldn't think of not closing a sale as a failure. It's an opportunity to learn which types of customers are high-quality versus low-quality prospects. It's also a chance to better express your proposition and overcome common objections.
 - Learn about sales pipelines. Create a basic pipeline by using one of the many free or low-cost sales and CRM tools available.
-- Automate and document sales processes and gather any required collateral. Then when you do start to build a sales team, those employees can quickly get up to speed and be effective.
+- Automate and document sales processes and gather any required collateral. Then, when you do start to build a sales team, those employees can quickly get up to speed and be effective.

@@ -1,6 +1,6 @@
 SQL Server 2022 is Microsoft's latest major release of the SQL Server product. SQL Server 2022 is a hybrid data platform powered by innovations in security, performance, availability, and data virtualization.
 
-SQL Server 2022 is designed to help organizations looking to modernize their data estate from older versions of SQL Server. SQL Server 2022 provides new cloud connected capabilities for users looking to enable hybrid data scenarios.
+SQL Server 2022 is designed to help organizations looking to modernize their data estate from older versions of SQL Server. SQL Server 2022 provides new cloud-connected capabilities for users looking to enable hybrid data scenarios.
 
 Organizations can accelerate performance for their applications with no code changes, protect data integrity with blockchain capabilities, and achieve increased scalability and availability for critical data.
 

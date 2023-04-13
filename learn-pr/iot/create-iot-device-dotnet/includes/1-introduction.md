@@ -23,7 +23,7 @@ In this module, you will:
 
 - Intermediate knowledge of .NET.
 - Basic understanding of Raspberry Pi and Raspberry Pi OS.
-- .NET SDK 6 or later.
+- .NET SDK 7 or later.
 - The following hardware components:
   - A Raspberry Pi device (2 or greater) configured as described in the *Important* callout below.
   - BME280 humidity/barometric pressure/temperature sensor breakout ([example](https://learn.adafruit.com/adafruit-bme280-humidity-barometric-pressure-temperature-sensor-breakout))
@@ -38,7 +38,11 @@ All of the required hardware components are available from various retailers. Mo
 > [!IMPORTANT]
 > The .NET IoT Libraries support a wide range of hardware platforms. Raspberry Pi was selected for this module due to its wide availability and affordable price point.
 >
-> Ensure your device has the latest version of [Raspberry Pi OS](https://www.raspberrypi.org/documentation/installation/installing-images/README.md) installed. Since you won't be using the Raspberry Pi desktop, it's unnecessary to do the full install. If you prefer the "Lite" image, it's found under **Raspberry Pi OS (Other)** in the Raspberry Pi OS installer.
+> Ensure your device has a recent version of [Raspberry Pi OS](https://www.raspberrypi.com/documentation/computers/getting-started.html) installed. Note the following:
+>
+> - A 64-bit version of Raspberry Pi OS is recommended.
+> - A desktop environment is not required, so you may select the *Lite* variant to conserve space and bandwidth.
+> - The 64-bit and Lite variants are located under **Raspberry Pi OS (Other)** in Raspberry Pi Imager's list of available operating systems.
 >
 > After installing Raspberry Pi OS, use the `raspi-config` command to ensure the following two services are enabled:
 >

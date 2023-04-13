@@ -1,4 +1,5 @@
 
+
 In this module, you learned how Microsoft 365 Defender can help protect your organization. You explored each of the different Defender services to understand how they can protect: Identity, Office 365, Endpoint, and cloud apps.  You also explored the capabilities of the Microsoft 365 Defender portal, including Microsoft Secure Score, reports, and incident management.
 
 Now you've completed this module, you'll be able to:

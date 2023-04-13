@@ -1,7 +1,7 @@
 
 
 
-Any VMs that you deploy as part of Contoso's Azure subscription need to be secure. You can use the Change Tracking and Inventory feature, part of Azure Automation, to help secure Contoso's Windows Server IaaS VMs in Azure.
+Any VMs that you deploy as part of Contoso's Azure subscription need to be secure. You can use the Change Tracking and Inventory feature, part of Azure Automation, to help secure Contoso's Windows Server IaaS VMs **in Azure**.
 
 ## What is Change Tracking and Inventory?
 

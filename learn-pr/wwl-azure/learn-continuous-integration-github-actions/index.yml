@@ -3,7 +3,7 @@ uid: learn.wwl.learn-continuous-integration-github-actions
 metadata:
   title: Learn continuous integration with GitHub Actions
   description: "Learn continuous integration with GitHub Actions"
-  ms.date: 10/08/2022
+  ms.date: 01/12/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -52,7 +52,7 @@ units:
 - learn.wwl.learn-continuous-integration-github-actions.mark-releases-git-tags
 - learn.wwl.learn-continuous-integration-github-actions.create-encrypted-secrets
 - learn.wwl.learn-continuous-integration-github-actions.use-secrets-workflow
-- learn.wwl.learn-continuous-integration-github-actions.implement-github-actions-by-using-devops-starter
+- learn.wwl.learn-continuous-integration-github-actions.implement-github-actions-for-ci-cd
 - learn.wwl.learn-continuous-integration-github-actions.knowledge-check
 - learn.wwl.learn-continuous-integration-github-actions.summary
 badge:

@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.azure.deploy-manage-azure-arc-enabled-sql-managed-instance
+metadata:
+  title: Deploy and manage an Azure Arc-enabled SQL Managed Instance
+  description: Describe how to deploy and manage an Azure Arc-enabled SQL managed instance.
+  ms.date: 12/21/2022
+  author: MikeRayMSFT
+  ms.author: mikeray
+  manager: jroth
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Deploy and manage an Azure Arc-enabled SQL Managed Instance
+summary: Describe Azure Arc-enabled SQL Managed Instance and how to connect to it to restore a SQL Server database backup and run queries. Use the instance to deploy, configure, and apply service updates.
+abstract: |
+  By the end of this module, you'll be able to:
+    - Describe the features of Azure Arc-enabled SQL Managed Instance.
+    - Deploy an Azure Arc-enabled SQL Managed Instance.
+    - Manage an Azure Arc-enabled SQL Managed Instance.
+prerequisites: |
+  - Experience implementing and managing Platform-as-a-Service (PaaS) services in Microsoft Azure.
+  - Intermediate knowledge of Azure management, including the ability to navigate the Azure portal and run Azure CLI commands.
+  -	Intermediate knowledge of containerization and container orchestration by using Kubernetes.
+  -	Intermediate knowledge of Azure SQL Managed Instance.
+
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - data-engineer
+  - solution-architect
+products:
+  - azure-arc
+  - azure-sql-managed-instance
+subjects:
+  - cloud-computing
+units:
+- learn.azure.deploy-manage-azure-arc-enabled-sql-managed-instance.introduction
+- learn.azure.deploy-manage-azure-arc-enabled-sql-managed-instance.what-is-azure-arc-enabled-sql-managed-instance
+- learn.azure.deploy-manage-azure-arc-enabled-sql-managed-instance.deploy-azure-arc-enabled-sql-managed-instance
+- learn.azure.deploy-manage-azure-arc-enabled-sql-managed-instance.exercise-deploy-azure-arc-enabled-sql-managed-instance
+- learn.azure.deploy-manage-azure-arc-enabled-sql-managed-instance.manage-azure-arc-enabled-sql-managed-instance
+- learn.azure.deploy-manage-azure-arc-enabled-sql-managed-instance.exercise-restore-azure-arc-enabled-sql-managed-instance-database
+- learn.azure.deploy-manage-azure-arc-enabled-sql-managed-instance.exercise-manage-azure-arc-enabled-sql-managed-instance
+- learn.azure.deploy-manage-azure-arc-enabled-sql-managed-instance.knowledge-check
+- learn.azure.deploy-manage-azure-arc-enabled-sql-managed-instance.summary
+badge:
+  uid: learn.azure.deploy-manage-azure-arc-enabled-sql-managed-instance.badge
+  

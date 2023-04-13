@@ -4,4 +4,4 @@ You learned how to:
 
 - Render all items in an array.
 - Show or hide HTML elements based on variable values.
-- Use if-else/if-else statements in Vue.js.
+- Use if, else, and else-if statements in Vue.js.

@@ -1,6 +1,6 @@
 You've created a deployment pipeline. When you run the pipeline, it fails when it reaches the **Deploy** stage.
 
-You see an error in the pipeline log that's similar to the following message:
+You get an error in the pipeline log that's similar to the following message:
 
 > The provided location is not available for this resource type.
 

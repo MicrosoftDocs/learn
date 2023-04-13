@@ -3,9 +3,10 @@ You've created a basic pipeline, and you've configured your Azure and Azure Pipe
 In this exercise, you'll:
 
 > [!div class="checklist"]
-> * Add a Bicep file to your repository.
-> * Add a pipeline step to deploy your Bicep file.
-> * Run your pipeline again and verify that it successfully deployed your website.
+>
+> - Add a Bicep file to your repository.
+> - Add a pipeline step to deploy your Bicep file.
+> - Run your pipeline again and verify that it successfully deployed your website.
 
 ## Add your website's Bicep file to the Git repository
 
@@ -13,11 +14,11 @@ You've already prepared your website's Bicep file. You can use the Bicep file to
 
 1. Open the Visual Studio Code Explorer.
 
-1. In the *deploy* folder, create a new file named *main.bicep*. Make sure you create the file inside the *deploy* folder, and not at the root of the repository:
+1. In the _deploy_ folder, create a new file named _main.bicep_. Make sure you create the file inside the _deploy_ folder, and not at the root of the repository:
 
    :::image type="content" source="../media/6-visual-studio-code-main-bicep.png" alt-text="Screenshot of the Visual Studio Code Explorer, with the main dot bicep file highlighted and located in the deploy folder.":::
 
-1. Copy the following code into the *main.bicep* file:
+1. Copy the following code into the _main.bicep_ file:
 
    :::code language="bicep" source="code/6-main.bicep":::
 
@@ -35,9 +36,9 @@ You've already prepared your website's Bicep file. You can use the Bicep file to
 
 Next, update your pipeline definition to deploy your Bicep file to Azure by using the service connection.
 
-1. In Visual Studio Code, open the *deploy/azure-pipelines.yml* file.
+1. In Visual Studio Code, open the _deploy/azure-pipelines.yml_ file.
 
-1. Above the `jobs:` line, add a new section to define a variable named `deploymentDefaultLocation`:
+1. Before the `jobs:` line, add `variables:` to define a variable named `deploymentDefaultLocation`:
 
    :::code language="yaml" source="code/6-pipeline.yml" range="1-10" highlight="6-8":::
 
@@ -91,7 +92,7 @@ Next, update your pipeline definition to deploy your Bicep file to Azure by usin
 
    :::image type="content" source="../media/6-edit-pipeline-new-variable.png" alt-text="Screenshot of Azure DevOps that shows the pipeline variable editor, with the 'New variable' button highlighted.":::
 
-1. In **Name**, enter **ServiceConnectionName**. In **Value**, enter **ToyWebsite**.
+1. In **Name**, enter _ServiceConnectionName_. In **Value**, enter _ToyWebsite_.
 
    Leave the checkboxes cleared, and select **OK**.
 
@@ -101,14 +102,14 @@ Next, update your pipeline definition to deploy your Bicep file to Azure by usin
 
    :::image type="content" source="../media/6-edit-pipeline-additional-variable.png" alt-text="Screenshot of Azure DevOps that shows the pipeline variable list, with the plus button highlighted.":::
 
-   Create the following variables the same way you created the *ServiceConnectionName* variable:
+   Create the following variables the same way you created the _ServiceConnectionName_ variable:
 
    | Variable name       | Value        |
    |---------------------|--------------|
-   | *ResourceGroupName* | *ToyWebsite* |
-   | *EnvironmentType*   | *nonprod*    |
+   | _ResourceGroupName_ | _ToyWebsite_ |
+   | _EnvironmentType_   | _nonprod_    |
 
-1. Complete the steps one more time to create a variable named *DeployToyManualsStorageAccount*, with a value of *true*. For this variable, select the **Let users override this value when running this pipeline** checkbox.
+1. Complete the steps again to create a variable named _DeployToyManualsStorageAccount_, with a value of _true_. For this variable, select the **Let users override this value when running this pipeline** checkbox.
 
    :::image type="content" source="../media/6-edit-pipeline-variable-deploytoymanualsstorageaccount.png" alt-text="Screenshot of Azure DevOps that shows the pipeline variable editor.":::
 
@@ -132,7 +133,7 @@ Your template includes a storage account, which your website team uses to store 
 
    :::image type="content" source="../media/6-pipeline-run.png" alt-text="Screenshot of Azure DevOps that shows the 'Run pipeline' page, with the Variables menu item highlighted.":::
 
-1. Select the **DeployToyManualsStorageAccount** variable and change its value to *false*. Then select **Update**.
+1. Select the **DeployToyManualsStorageAccount** variable and change its value to _false_. Then select **Update**.
 
    :::image type="content" source="../media/6-pipeline-run-edit-variable.png" alt-text="Screenshot of Azure DevOps that shows the 'Run pipeline' variable editor, with the Update button highlighted.":::
 
@@ -142,7 +143,7 @@ Your template includes a storage account, which your website team uses to store 
 
 1. To start a new pipeline run, select **Run**. The pipeline might take a few minutes to start. After the pipeline starts, the deployment might take a few minutes to finish.
 
-1. To open the job, select **Jobs**. You can monitor the job as it runs, or you can wait until the job completes to review its history.
+1. To open the job, in the **Jobs** section select **Job**. You can monitor the job as it runs, or you can wait until the job completes to review its history.
 
    Wait for the job to finish.
 
@@ -154,7 +155,7 @@ Your template includes a storage account, which your website team uses to store 
 
    :::image type="content" source="../media/6-log-variables.png" alt-text="Screenshot of Azure DevOps that shows the pipeline log, with the '1 queue time variable used' item highlighted.":::
 
-   The overridden value for this pipeline run is shown. The `DeployToyManualsStorageAccount` variable's value is *false* because you overrode the original value.
+   The overridden value for this pipeline run is shown. The `DeployToyManualsStorageAccount` variable's value is _false_ because you overrode the original value.
 
 1. Inspect the rest of your pipeline output.
 
@@ -162,7 +163,7 @@ Your template includes a storage account, which your website team uses to store 
 
 ## Verify the deployment
 
-1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true).
+1. Go to the [Azure portal](https://portal.azure.com).
 
 1. In the left menu, select **Resource groups**.
 

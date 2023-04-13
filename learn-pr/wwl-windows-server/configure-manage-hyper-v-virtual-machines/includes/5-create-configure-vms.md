@@ -16,7 +16,7 @@ VMs use simulated hardware. Hyper-V uses this virtual hardware to mediate access
 By default, Generation 1 VMs have the hardware listed in the following table.
 
 |Hardware|Description|
-|||
+|---|---|
 |BIOS|Virtual hardware simulates a computer's BIOS. For example, you can configure a VM to switch Num Lock on or off. You can choose the startup order for a VM's virtual hardware. You can start a VM from a DVD drive, an integrated drive electronics (IDE) device, a legacy network adapter, or a floppy disk.|
 |Memory|You can allocate memory resources to a VM. An individual VM can allocate as much as 1 TB of memory. You can also configure Dynamic Memory, which automatically changes a VM's available memory within a range that you define.|
 |Processor|You can allocate processor resources to a VM. You can allocate up to 64 virtual processors to a single VM.|
@@ -35,7 +35,7 @@ By default, Generation 1 VMs have the hardware listed in the following table.
 Generation 2 VMs have the following hardware by default.
 
 |Hardware|Description|
-|||
+|---|---|
 |Firmware|UEFI allows all the features of the BIOS in generation 1 VMs. However, it also allows Secure Boot, which is enabled by default.|
 |Memory|Same as generation 1 VMs.|
 |Processor|Same as generation 1 VMs.|
@@ -45,7 +45,7 @@ Generation 2 VMs have the following hardware by default.
 You can add the following hardware to a VM by editing the properties of the VM and then selecting **Add Hardware**.
 
 |Hardware|Description|
-|||
+|---|---|
 |SCSI controller|You can add up to four virtual SCSI devices. Each controller supports up to 64 disks.|
 |Network adapter|A single VM can have a maximum of eight Hyper-V–specific network adapters.|
 |Fibre Channel adapter|This adapter allows a VM to connect directly to a Fibre Channel SAN. For this adapter, the Hyper-V host should have a Fibre Channel HBA that also has a Windows Server driver that supports virtual Fibre Channels.|
@@ -55,7 +55,7 @@ You can add the following hardware to a VM by editing the properties of the VM a
 Use management settings to configure how a VM behaves on a Hyper-V host. The VM management settings in the following table are configurable.
 
 |VM Management Setting|Use|
-|||
+|---|---|
 |Name|Use this setting to configure the display name of the VM on a Hyper-V host. Doing this doesn't alter the actual VM's computer name.|
 |Integration Services|Determine how a VM communicates with the host with settings for various components such as Heartbeat, Time synchronization and more. Use this setting to configure which VM integration settings are enabled and available in a VM.|
 |Checkpoints|Checkpoints allow you to save a VM's state at a specific point in time, which you can later restore. Use this setting to enable or disable checkpoints, specify the type of checkpoint that will be created and also a location for where the configuration and checkpoint saved state files should be stored.|
@@ -84,4 +84,10 @@ The main steps in the process are:
 1. Create a generation 1 VM with dynamic memory enabled by using Hyper-V Manager.
 1. Manage the VMs by using Windows Admin Center.
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MC7i]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MC7i]
+
+---
+
+
+
+---

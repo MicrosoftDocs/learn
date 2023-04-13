@@ -2,7 +2,7 @@ Your company needs to launch new toys regularly to stay competitive. The shorter
 
 You've created a template that deploys a website and storage resources. This template is reusable for future product launches, which means you've significantly cut the time it takes to launch a new product.
 
-You created a Bicep template to deploy a basic storage account, an Azure App Service plan, and an application. You parameterized the template to make it generalizable for future products. You then refactored it into modules to make the template more reusable, and easier to understand and work with. Finally, you added an output to send information from a template deployment back to the person or tool executing the deployment.
+You created a Bicep template to deploy a basic storage account, an Azure App Service plan, and an application. You parameterized the template to make it useful for future products. You then refactored it into modules to make the template more reusable, and easier to understand and work with. Finally, you added an output to send information from a template deployment back to the person or tool executing the deployment.
 
 Imagine how much work it would be to deploy these resources for each new product launch. You'd have to manually provision the resources and remember to configure them correctly each time.
 

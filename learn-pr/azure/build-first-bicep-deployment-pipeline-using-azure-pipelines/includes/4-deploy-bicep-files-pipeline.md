@@ -1,19 +1,19 @@
 Now that you've created a basic pipeline, you're ready to set up the pipeline to deploy your Bicep files. In this unit, you'll learn how to deploy Bicep code from a pipeline and how to set up the deployment steps.
 
-[!include[Note - don't run commands](../../../includes/dont-run-commands.md)]
+[!INCLUDE [Note - don't run commands](../../../includes/dont-run-commands.md)]
 
 ## Service connections
 
 When you deploy a Bicep file from your own computer, you use the Azure CLI or Azure PowerShell. Before you can deploy your code, you sign in to Azure. Usually, the tools ask you to enter your email address and password in a browser. After your credentials are verified, your permissions to deploy resources are confirmed and you can use the tools to deploy your Bicep file.
 
-Deployment by pipeline requires authentication, too. Because pipelines run without human intervention, pipelines authenticate to Azure by using a service principal. A service principal's credentials consist of an *application ID* and a secret, which usually is a key or a certificate. In Azure Pipelines, you use a *service connection* to securely store these credentials so that your pipeline can use them. A service connection also includes some other information to help your pipeline identify the Azure environment that you want to deploy to.
+Deployment by pipeline requires authentication, too. Because pipelines run without human intervention, pipelines authenticate to Azure by using a service principal. A service principal's credentials consist of an _application ID_ and a secret, which usually is a key or a certificate. In Azure Pipelines, you use a _service connection_ to securely store these credentials so that your pipeline can use them. A service connection also includes some other information to help your pipeline identify the Azure environment that you want to deploy to.
 
 > [!TIP]
 > In this module, you'll use Azure DevOps to automatically create a service principal when it creates a service connection. The module [Authenticate your Azure deployment pipeline by using service principals](xref:learn.azure.authenticate-azure-deployment-pipeline-service-principals) provides a more detailed explanation of service principals including how they work, as well as how you create them, assign them roles, and manage them.
 
 When you create a service connection, you name the connection. Steps refer to the service connection by using this name, so your pipeline YAML code doesn't need to contain secret information.
 
-When your pipeline starts, the agent that's running your deployment steps has access to the service connection, including its credentials. A pipeline step uses the credentials to sign in to Azure, just like you sign in yourself. Then, the actions that are defined in the step use the service principal's *identity*.
+When your pipeline starts, the agent that's running your deployment steps has access to the service connection, including its credentials. A pipeline step uses the credentials to sign in to Azure, just like you sign in yourself. Then, the actions that are defined in the step use the service principal's _identity_.
 
 :::image type="content" source="../media/4-service-connection.png" alt-text="Diagram that shows a pipeline that includes an Azure deployment step, which accesses a service connection and then deploys to Azure." border="false":::
 
@@ -28,7 +28,7 @@ You also can set up your service connection so that it can be used only in speci
 
 ## Deploy a Bicep file by using the Azure Resource Group Deployment task
 
-When you need to deploy a Bicep file from a pipeline, you can use the *Azure Resource Group Deployment* task. Here's an example of how to configure a step to use the task:
+When you need to deploy a Bicep file from a pipeline, you can use the _Azure Resource Group Deployment_ task. Here's an example of how to configure a step to use the task:
 
 ```yaml
 - task: AzureResourceManagerTemplateDeployment@3
@@ -43,12 +43,12 @@ When you need to deploy a Bicep file from a pipeline, you can use the *Azure Res
 
 The first line specifies `AzureResourceManagerTemplateDeployment@3`. It tells Azure Pipelines that the task you want to use for this step is named `AzureResourceManagerTemplateDeployment`, and you want to use version `3` of the task.
 
-When you use the Azure Resource Group Deployment task, you specify *inputs* to tell the task what to do. Here are some inputs you might specify when you use the task:
+When you use the Azure Resource Group Deployment task, you specify _inputs_ to tell the task what to do. Here are some inputs you might specify when you use the task:
 
-* `connectedServiceName` is the name of the service connection to use.
-* `location` needs to be specified even though its value might not be used. The Azure Resource Group Deployment task can also create a resource group for you, and if it does, it needs to know the Azure region in which to create the resource group. In this module, you'll specify the `location` input value but its value isn't used.
-* `resourceGroupName` specifies the name of the resource group that the Bicep file should be deployed to.
-* `overrideParameters` contains any parameter values you want to pass into your Bicep file at deployment time.
+- `connectedServiceName` is the name of the service connection to use.
+- `location` needs to be specified even though its value might not be used. The Azure Resource Group Deployment task can also create a resource group for you, and if it does, it needs to know the Azure region in which to create the resource group. In this module, you'll specify the `location` input value but its value isn't used.
+- `resourceGroupName` specifies the name of the resource group that the Bicep file should be deployed to.
+- `overrideParameters` contains any parameter values you want to pass into your Bicep file at deployment time.
 
 When the task starts, it uses the service connection to sign in to Azure. By the time the task runs the deployment you specified, the task has authenticated. You don't need to run `az login`.
 
@@ -60,7 +60,7 @@ In future Microsoft Learn modules, you'll see how the Azure CLI command can help
 
 ## Variables
 
-Often, your pipelines contain values that you want to keep separate from your YAML file. For example, when you deploy a Bicep file to a resource group, you specify the name of the resource group. The resource group name probably is different when you deploy to different environments. You also might need to provide parameters for your Bicep files, including secrets, like database server passwords. Don't store these values in your pipeline YAML file or anywhere else in your Git repository. Instead, to increase security and to make your pipeline definitions reusable, use *variables*.
+Often, your pipelines contain values that you want to keep separate from your YAML file. For example, when you deploy a Bicep file to a resource group, you specify the name of the resource group. The resource group name probably is different when you deploy to different environments. You also might need to provide parameters for your Bicep files, including secrets, like database server passwords. Don't store these values in your pipeline YAML file or anywhere else in your Git repository. Instead, to increase security and to make your pipeline definitions reusable, use _variables_.
 
 ### Create a variable
 
@@ -70,7 +70,7 @@ The Azure Pipelines web interface has an editor you can use to create variables 
 
 You can set an Azure Pipelines variable value as secret. When you set a variable value as secret, you can't view the value after you've set it. Azure Pipelines is designed to not reveal secret values in your pipeline logs.
 
-[!include[Best-effort protection for secrets](../../includes/azure-devops-secret-best-effort.md)]
+[!INCLUDE [Best-effort protection for secrets](../../includes/azure-devops-secret-best-effort.md)]
 
 You can let users override a variable value when they run your pipeline manually. The value a user provides is used only for that specific pipeline run. Variable overrides can be useful when you're testing your pipeline.
 
@@ -87,10 +87,10 @@ The pipeline definition file format includes a special `$(VariableName)` syntax.
 
 ### System variables
 
-Azure Pipelines also uses *system variables*. System variables contain predefined information you might want to use in your pipeline. Here are some of the system variables you can use in your pipeline:
+Azure Pipelines also uses _system variables_. System variables contain predefined information you might want to use in your pipeline. Here are some of the system variables you can use in your pipeline:
 
-* `Build.BuildNumber` is the unique identifier for your pipeline run. Despite its name, the `Build.BuildNumber` value often is a string, and not a number. You might use this variable to name your Azure deployment, so you can track the deployment back to the specific pipeline run that triggered it.
-* `Agent.BuildDirectory` is the path on your agent machine's file system where your pipeline run's files are stored. This information can be useful when you want to reference files on the build agent.
+- `Build.BuildNumber` is the unique identifier for your pipeline run. Despite its name, the `Build.BuildNumber` value often is a string, and not a number. You might use this variable to name your Azure deployment, so you can track the deployment back to the specific pipeline run that triggered it.
+- `Agent.BuildDirectory` is the path on your agent machine's file system where your pipeline run's files are stored. This information can be useful when you want to reference files on the build agent.
 
 ### Create variables in your pipeline's YAML file
 

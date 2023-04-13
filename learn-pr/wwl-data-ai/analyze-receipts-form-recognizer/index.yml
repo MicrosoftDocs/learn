@@ -3,9 +3,9 @@ uid: learn.wwl.analyze-receipts-form-recognizer
 metadata:
   title: Analyze receipts with the Form Recognizer service
   description: "Analyze receipts with the Form Recognizer service"
-  ms.date: 09/02/2022
+  ms.date: 02/07/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: sheryang
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Analyze receipts with the Form Recognizer service

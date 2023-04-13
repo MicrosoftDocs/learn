@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/27/2022
+  ms.date: 02/07/2023
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -36,7 +36,7 @@ quiz:
     - content: "pg_read_all_settings"
       isCorrect: false
       explanation: "That's incorrect. pg_read_all_settings doesn't allow the user full admin permissions on the server."
-    - content: "pg_admin"
+    - content: "azure_pg_admin"
       isCorrect: true
       explanation: "That's correct. pg_admin allows the user full admin permissions on the server, and is available to assign to another administrator."
   - content: "Your company is required to encrypt sensitive data while it's stored on disk. As the result of an internal audit, you realize that sensitive data is being held on your Azure for PostgreSQL flexible server. What should you do?"

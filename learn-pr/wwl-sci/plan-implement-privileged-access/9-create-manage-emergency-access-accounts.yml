@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan-implement-privileged-access.create-manage-emergency-access-accounts
+title: Create and manage emergency access accounts
+metadata:
+  title: Create and manage emergency access accounts
+  description: "Create and manage emergency access accounts"
+  ms.date: 02/07/2023
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/9-create-manage-emergency-access-accounts.md)]

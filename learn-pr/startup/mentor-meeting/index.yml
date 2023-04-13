@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.startups.mentor-meeting
+metadata:
+  title: Make the most of a mentor meeting
+  description: Mentor meetings benefit startup founders, but only if founders manage the mentor relationship and mentor meetings effectively. This Microsoft Learn module for startup founders will help them get the most out of mentorship and mentor meetings.
+  ms.date: 11/11/2022
+  author: turoczy
+  ms.author: v-rturoczy
+  ms.topic: interactive-tutorial
+  ms.prod: learning-consumer
+title: Make the most of a mentor meeting
+summary: >
+  As a startup founder with limited time, engaging with mentors is one of the most expedient ways to gain critical insights and avoid common errors. Effectively managing your meetings with mentors can be the most effective way of starting that relationship on a positive note.
+abstract: | 
+  At the end of this module, you'll be able to:
+  - Identify areas where mentorship could benefit you and your company.
+  - Understand your mentor's area of expertise and startup experience.
+  - Develop a meeting format that ensures that you and your mentor get the most out of your meeting(s).
+prerequisites: | 
+    - Familiarity with meeting etiquette 
+    - Basic familiarity with mentorship in a business context
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+- beginner
+roles:
+- startup-founder
+- business-owner
+- business-analyst
+- functional-consultant
+- student
+products:
+- consumer
+units:
+- learn.startups.mentor-meeting.introduction
+- learn.startups.mentor-meeting.document-mentor-needs
+- learn.startups.mentor-meeting.topics-with-mentors
+- learn.startups.mentor-meeting.get-to-know-mentor
+- learn.startups.mentor-meeting.identify-topic-and-outcome
+- learn.startups.mentor-meeting.create-meeting-agenda
+- learn.startups.mentor-meeting.choose-meeting-location
+- learn.startups.mentor-meeting.schedule-meeting-with-mentor
+- learn.startups.mentor-meeting.drive-meeting-with-mentor
+- learn.startups.mentor-meeting.following-up-mentor-meeting
+- learn.startups.mentor-meeting.knowledge-check
+- learn.startups.mentor-meeting.summary
+badge:
+  uid: learn.startups.mentor-meeting.badge

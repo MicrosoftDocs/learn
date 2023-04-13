@@ -3,7 +3,7 @@ Let's update your display to highlight options that are almost sold out and to d
 ## Add code to update the display
 
 1. In Visual Studio Code, open *index.html*.
-1. Below the commented line that reads "More to come," add the following HTML:
+1. On the line after the commented line that reads "More to come," add the following HTML:
 
     ```html
     <!-- More to come -->
@@ -12,7 +12,8 @@ Let's update your display to highlight options that are almost sold out and to d
 
     <div v-show="productClass.seatsAvailable < 10">Almost sold out!</div>
     ```
-1. Save your changes. 
+
+1. Save your changes.
 
 ## Test the display
 

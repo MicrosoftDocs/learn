@@ -1,3 +1,4 @@
+
 Having completed this module, you now have a better understanding of how Log Analytics and alerts can help highlight issues before they become a problem. You know about the different gateways, and when to reset them. Also, you understand the tools available, and why some key issues can cause problems with certificate-based VPN connections.
 
 Now you’ve completed this module, you should be able to:
@@ -41,8 +42,6 @@ Use these resources to discover more about the topics covered.
 [Configuring a RADIUS server](/windows-server/networking/technologies/nps/nps-top)
 
 [Azure VPN Gateway: Create & install VPN client config files - P2S RADIUS connections | Microsoft Docs](/azure/vpn-gateway/point-to-site-vpn-client-configuration-radius)
-
-[RADIUS Server and client address pool](/azure/vpn-gateway/point-to-site-how-to-radius-ps%235-add-the-radius-server-and-client-address-pool)
 
 [Monitoring Azure VPN Gateway | Microsoft Docs](/azure/vpn-gateway/monitor-vpn-gateway)
 

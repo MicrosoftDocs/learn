@@ -3,11 +3,11 @@ uid: learn.wwl.run-containers-windows-server
 metadata:
   title: Run containers on Windows Server
   description: "Run containers on Windows Server"
-  ms.date: 03/01/2021
+  ms.date: 01/04/2023
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
+  ms.prod: learning-azure
 title: Run containers on Windows Server
 summary: Learn about Windows Server and Hyper-V containers, associated isolation modes, running containers, and preparing the Windows Server host for running containerized workloads. Learn about Docker, preparing Windows Server for running container workloads, and managing containers.
 abstract: |
@@ -40,7 +40,7 @@ units:
 - learn.wwl.run-containers-windows-server.define-hyper-v-containers-isolation-modes
 - learn.wwl.run-containers-windows-server.explore-docker
 - learn.wwl.run-containers-windows-server.prepare-2019-host-for-container-deployment
-- learn.wwl.run-containers-windows-server.manage-configure-container-workloads
+- learn.wwl.run-containers-windows-server.security-storage-networking-windows-containers
 - learn.wwl.run-containers-windows-server.knowledge-check
 - learn.wwl.run-containers-windows-server.summary
 badge:

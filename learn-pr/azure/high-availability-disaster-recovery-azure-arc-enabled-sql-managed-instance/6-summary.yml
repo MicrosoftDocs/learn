@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance.summary
+uid: learn.azure.high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance.summary
 title: Summary
 metadata:
   title: Summary
-  description: "Conclusion of high availability and disaster recovery for Azure Arc-enabled SQL Managed Instance."
-  ms.date: 8/24/2022
+  description: Review high availability and disaster recovery features of Azure Arc-enabled SQL Managed Instance."
+  ms.date: 12/26/2022
   author: tchristiani
   ms.author: terrychr
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.prod: learning-azure
 durationInMinutes: 1
 content: |
-  [!include[](includes/6-summary.md)]
+  [!include[](includes/summary.md)]

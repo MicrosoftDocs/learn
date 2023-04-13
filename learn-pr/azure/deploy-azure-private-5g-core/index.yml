@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.deploy-azure-private-5g-core
+hidden: true
+metadata:
+  title: Deploy an Azure Private 5G Core service
+  description: "Describes Azure Private 5G Core deployment tasks, including prerequisites, deployment methods, and creating mobile network and site."
+  ms.date: 01/18/2023
+  author: ArchanaUpadhyaya
+  ms.author: archanau
+  ms.topic: interactive-tutorial
+  ms.service: learning-private-5g-core
+title: Deploy an Azure Private 5G Core service
+summary: "Describes Azure Private 5G Core deployment tasks, including prerequisites, deployment methods, and creating mobile network and site."
+abstract: |
+  After completing this module, you'll be able to: 
+  - Describe the Azure Private 5G Core deployment prerequisites. 
+  - Describe the Azure Private 5G Core deployment procedure using Azure portal and ARM templates. 
+  - Deploy a private mobile network and configure a packet core site. 
+prerequisites: |
+  - Fundamental knowledge about Azure. 
+  - Fundamental knowledge of 5G and 4G technologies. 
+  - Fundamental knowledge of Azure Private 5G Core. 
+iconUrl: /learn/achievements/deploy-azure-private-5g-core.svg
+levels: 
+  - intermediate
+roles: 
+  - service-adoption-specialist
+  - solution-architect
+  - technology-manager
+products: 
+- azure
+subjects:
+  - cloud-computing
+  - networking
+units:
+- learn.deploy-azure-private-5g-core.introduction
+- learn.deploy-azure-private-5g-core.deployment-methods
+- learn.deploy-azure-private-5g-core.prerequisites-of-deployment
+- learn.deploy-azure-private-5g-core.deploy-private-mobile-network
+- learn.deploy-azure-private-5g-core.deploy-site
+- learn.deploy-azure-private-5g-core.deploy-using-arm-templates
+- learn.deploy-azure-private-5g-core.knowledge-check
+- learn.deploy-azure-private-5g-core.summary
+badge:
+  uid: learn.deploy-azure-private-5g-core.badge

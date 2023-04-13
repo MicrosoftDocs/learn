@@ -717,7 +717,7 @@ The following tables provide a partial listing of the metrics that each IoT hub 
     Total
   :::column-end:::
   :::column:::
-    The number of IoT Hub events published to Event Grid. Use the Result dimension for the number of successful and failed requests. EventType dimension shows the type of event. To see the where the requests come from, use the EventType dimension.
+    The number of IoT Hub events published to Event Grid. Use the Result dimension for the number of successful and failed requests. EventType dimension shows the type of event. To see where the requests come from, use the EventType dimension.
   :::column-end:::
   :::column:::
     Result, EventType

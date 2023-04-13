@@ -59,7 +59,7 @@ Two important attributes are applied to `WeatherForecastController`, as shown in
 public class WeatherForecastController : ControllerBase
 ```
 
-`[ApiController]` enables [opinionated behaviors](/aspnet/core/web-api/#apicontroller-attribute) that make it easier to build web APIs. Some behaviors include [parameter source inference](/aspnet/core/web-api/#binding-source-parameter-inference), [attribute routing as a requirement](/aspnet/core/web-api/#attribute-routing-requirement), and [model validation error-handling enhancements](/aspnet/core/web-api/#automatic-http-400-responses).
+`[ApiController]` enables [opinionated behaviors](/aspnet/core/web-api/#apicontroller-attribute-1) that make it easier to build web APIs. Some behaviors include [parameter source inference](/aspnet/core/web-api/#binding-source-parameter-inference-1), [attribute routing as a requirement](/aspnet/core/web-api/#attribute-routing-requirement-1), and [model validation error-handling enhancements](/aspnet/core/web-api/#automatic-http-400-responses-1).
 
 `[Route]` defines the routing pattern `[controller]`. The `[controller]` token is replaced by the controller's name (case-insensitive, without the *Controller* suffix). This controller handles requests to `https://localhost:{PORT}/weatherforecast`.
 

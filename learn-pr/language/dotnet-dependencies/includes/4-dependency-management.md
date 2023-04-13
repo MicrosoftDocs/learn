@@ -2,17 +2,17 @@
 
 Take these considerations into account before you try to update a library:
 
-- **The type of update**. What type of update is available? Is it a small bug fix? Is it adding a new feature that you need? Will it break your code? You can communicate the type of update by using a system called *semantic versioning*. The way the version number of the library is expressed communicates to developers the type of update they're dealing with.
-- **Whether the project is configured correctly**. You can configure your .NET project so that you get only the types of updates you want. You'll perform an update only if a specific type of update is available. We recommend this approach, because you don't risk running into surprises.
-- **Security problems**. Managing your project dependencies over time involves being aware of problems that might happen. Problems arise as vulnerabilities are detected, for example. Ideally, patches will be released that you can download. The .NET Core tool helps you run an *audit* on your libraries to find out if you have packages that should be updated. It also helps you take the appropriate action to fix a problem.
+- **The type of update**: What type of update is available? Is it a small bug fix? Is it adding a new feature that you need? Will it break your code? You can communicate the type of update by using a system called *semantic versioning*. The way the version number of the library is expressed communicates to developers the type of update with which they're dealing.
+- **Whether the project is configured correctly**: You can configure your .NET project so that you get only the types of updates you want. You'll perform an update only if a specific type of update is available. We recommend this approach, because you don't risk running into surprises.
+- **Security problems**: Managing your project dependencies over time involves being aware of problems that might happen. Problems arise as vulnerabilities are detected, for example. Ideally, patches will be released that you can download. The .NET Core tool helps you run an *audit* on your libraries to find out if you have packages that should be updated. It also helps you take the appropriate action to fix a problem.
 
 ## Use semantic versioning
 
 There's an industry standard called *semantic versioning*. Semantic versioning is how you express the type of change that you or some other developer is introducing to a library. Semantic versioning works by ensuring that a package has a version number, and that the version number is divided into these sections:
 
-- **Major version**. The leftmost number. For example, it's the 1 in 1.0.0. A change to this number means that you can expect breaking changes in code. You might need to rewrite part of your code.
-- **Minor version**. The middle number. For example, it's the 2 in 1.2.0. A change to this number means that features have been added. Your code should still work. It's generally safe to accept the update.
-- **Patch version**. The rightmost number. For example, it's the 3 in 1.2.3. A change to this number means that a change has been applied that fixes something in the code that should have worked. It should be safe to accept the update.
+- **Major version**: The leftmost number. For example, it's the 1 in 1.0.0. A change to this number means that you can expect breaking changes in code. You might need to rewrite part of your code.
+- **Minor version**: The middle number. For example, it's the 2 in 1.2.0. A change to this number means that features have been added. Your code should still work. It's generally safe to accept the update.
+- **Patch version**: The rightmost number. For example, it's the 3 in 1.2.3. A change to this number means that a change has been applied that fixes something in the code that should have worked. It should be safe to accept the update.
 
 This table illustrates how the version-number changes for each version type:
 
@@ -28,11 +28,11 @@ Changes to a package can introduce risk, including the risk that a bug might har
 
 ### Update approach
 
-As a .NET developer, you can communicate to .NET the update behavior that you want. Think about updating in terms of risk. Here are some approaches:
+As a .NET developer, you can communicate the update behavior that you want to .NET. Think about updating in terms of risk. Here are some approaches:
 
-- **Major version**. I'm OK with updating to the latest major version as soon as it's out. I accept the fact that I might need to change code on my end.
-- **Minor version**. I'm OK with a new feature being added. I'm not OK with code that breaks.
-- **Patch version**. The only updates I'm OK with are bug fixes.
+- **Major version**: I'm OK with updating to the latest major version as soon as it's out. I accept the fact that I might need to change code on my end.
+- **Minor version**: I'm OK with a new feature being added. I'm not OK with code that breaks.
+- **Patch version**: The only updates I'm OK with are bug fixes.
 
 If you're managing a new or smaller .NET project, you can afford to be loose with how you define the update strategy. For example, you can always update to the latest version. For more complex projects, there's more nuance, but we'll save that for a future module.
 
@@ -56,7 +56,7 @@ Let's first talk about version ranges. This is special notation that's used for 
 |[1.0,2.0) | 1.0 ≤ x < 2.0| Mixed inclusive minimum and exclusive maximum version |
 |(1.0)     | invalid      | invalid        |
 
-NuGet also supports using a floating version notation for major, minor, patch, and pre-release suffix parts of the number. This notation is an asterisk (\*). For example, the version specification 6.0.\* says "use the latest 6.0.x version." In another example, 4.\* means "use the latest 4.x version." Using a floating version reduces changes to the project file, while keeping up to date with the latest version of a dependency.
+NuGet also supports using a floating version notation for major, minor, patch, and pre-release suffix parts of the number. This notation is an asterisk (\*). For example, the version specification 6.0.\* says "use the latest 6.0.x version." In another example, 4.\* means "use the latest 4.x version." Using a floating version reduces changes to the project file while keeping up to date with the latest version of a dependency.
 
 > [!NOTE]
 > We recommend installing a specific version instead of using any of the floating notations. Installing a specific version ensures that your builds are repeatable unless you explicitly request an update to a dependency.
@@ -101,9 +101,9 @@ Top-level Package      Requested   Resolved   Latest
 
 Here are the meanings of the names of the columns in the output:
 
-- `Requested`. The version or version range that you've specified.
-- `Resolved`. The actual version that has been downloaded for the project that matches the specified version.
-- `Latest`. The latest version available for update from NuGet.
+- `Requested`: The version or version range that you've specified.
+- `Resolved`: The actual version that has been downloaded for the project that matches the specified version.
+- `Latest`: The latest version available for update from NuGet.
 
 The recommended workflow is to run the following commands, in this order:
 

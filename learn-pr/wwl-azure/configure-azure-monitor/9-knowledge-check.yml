@@ -4,49 +4,47 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/19/2022
+  ms.date: 03/02/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/9-knowledge-check.md)]
 quiz:
   title: ""
   questions:
-  - content: "Someone has deleted a network security group through Azure Resource Manager. Which of the following categories would include this information?"
+  - content: "Which category includes information to help track NSGs and Azure Resource Manager?"
     choices:
-    - content: "Administrative"
-      isCorrect: true
-      explanation: "Correct. The administrative category would have this information."
     - content: "Service Health"
       isCorrect: false
-      explanation: "Incorrect. The service health category contains service health incidents."
+      explanation: "Incorrect. The Service Health category contains service health incidents."
+    - content: "Administrative"
+      isCorrect: true
+      explanation: "Correct. The Administrative category contains information to help track NSGs and Azure Resource Manager."
     - content: "Policy"
       isCorrect: false
-      explanation: "Incorrect. The policy category contains records for Azure policy actions."
+      explanation: "Incorrect. The Policy category contains records for Azure policy actions."
   - content: "What data does Azure Monitor collect?"
     choices:
-    - content: "Data from a many different sources, such as the Application event log."
-      isCorrect: true
-      explanation: "Correct. Azure Monitor collects data from many sources. Sources include the operating system, resources, and event logs."
     - content: "Azure billing details"
       isCorrect: false
-      explanation: "Incorrect. Azure Monitor does not collect information related to billing.  Microsoft Cost Management should be used to track this information."
-    - content: "Backup of database transaction logs"
+      explanation: "Incorrect. Azure Monitor doesn't collect information related to billing of Azure services and resources. Use Azure Cost Management and Billings to track these costs."
+    - content: "Back up of database transaction logs"
       isCorrect: false
       explanation: "Incorrect. Azure Monitor doesn't back up database transaction logs. Use Azure Backup for system backup information."
-  - content: "How long are activity logs kept?"
+    - content: "Data from many different sources, such as the Application event log"
+      isCorrect: true
+      explanation: "Correct. Azure Monitor collects data from many sources, such as the operating system, resources, and event logs."
+  - content: "How long are Azure Monitor activity logs kept?"
     choices:
-    - content: "30 days"
-      isCorrect: false
-      explanation: "Incorrect. Activity logs are kept 90 days."
     - content: "90 days"
       isCorrect: true
-      explanation: "Correct. Activity logs are kept for 90 days."
+      explanation: "Correct. Azure Monitor activity logs are kept for 90 days."
+    - content: "30 days"
+      isCorrect: false
+      explanation: "Incorrect. Azure Monitor activity logs are kept for 90 days."
     - content: "120 days"
       isCorrect: false
-      explanation: "Incorrect. Activity logs are kept 90 days."
+      explanation: "Incorrect. Azure Monitor activity logs are kept for 90 days."

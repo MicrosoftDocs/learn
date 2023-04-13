@@ -3,11 +3,12 @@ At your toy company, your website development team has committed the latest vers
 In the process, you'll:
 
 > [!div class="checklist"]
-> * Add a new called workflow for the build job.
-> * Update the workflow to include the build job.
-> * Add a new smoke test.
-> * Update the deployment job to deploy the application.
-> * Run the workflow.
+>
+> - Add a new called workflow for the build job.
+> - Update the workflow to include the build job.
+> - Add a new smoke test.
+> - Update the deployment job to deploy the application.
+> - Run the workflow.
 
 ## Add a reusable workflow for the build job
 
@@ -15,11 +16,11 @@ Here, you add a new job definition that contains the steps required to build the
 
 1. Open Visual Studio Code.
 
-1. In the *.github/workflows* folder, create a new file named *build.yml*.
+1. In the _.github/workflows_ folder, create a new file named _build.yml_.
 
    :::image type="content" source="../media/5-visual-studio-code-build-yml-file.png" alt-text="Screenshot of Visual Studio Code Explorer, with the dot github and workflows folders and the build dot YML file shown.":::
 
-1. Add the following content to the *build.yml* workflow file:
+1. Add the following content to the _build.yml_ workflow file:
 
    :::code language="yaml" source="code/5-build.yml" :::
 
@@ -29,21 +30,21 @@ Here, you add a new job definition that contains the steps required to build the
 
 ## Add the build job to the workflow
 
-1. Open the *workflow.yml* file.
+1. Open the _workflow.yml_ file.
 
-1. Below the *jobs:* line, before the *lint* job, add a new job named *build* that uses the reusable workflow you just defined:
+1. Below the _jobs:_ line, before the _lint_ job, add a new job named _build_ that uses the reusable workflow you just defined:
 
-   :::code language="yaml" source="code/5-workflow.yml" range="1-18" highlight="12-14" :::
+   :::code language="yaml" source="code/5-workflow.yml" range="1-22" highlight="16-18" :::
 
-1. Update the *deploy-test* job to depend on the new *build* job:
+1. Update the _deploy-test_ job to depend on the new _build_ job:
 
-   :::code language="yaml" source="code/5-workflow.yml" range="20-30" highlight="4" :::
+   :::code language="yaml" source="code/5-workflow.yml" range="24-36" highlight="4" :::
 
-1. Update the *deploy-production* job to also depend on the *built* and *lint* jobs.
+1. Update the _deploy-production_ job to also depend on the _build_ and _lint_ jobs.
 
-   :::code language="yaml" source="code/5-workflow.yml" range="34-41" highlight="4-7" :::
+   :::code language="yaml" source="code/5-workflow.yml" range="38-53" highlight="4-7" :::
 
-   Because the production deployment depends on the test deployment, you don't strictly need to do this. But, it's a good practice to be explicit, to avoid your workflow running incorrectly if you reorder or remove your jobs or environments.
+   Because the production deployment depends on the test deployment, you don't strictly need to specify the dependencies. But, it's a good practice to be explicit, to avoid your workflow running incorrectly if you reorder or remove your jobs or environments.
 
    Notice you're specifying the `needs` list in two different ways -  your test environment deployment's dependencies are listed on a single line, and your production environment's by using a multiline list. The two approaches are equivalent.
 
@@ -53,7 +54,7 @@ Here, you add a new job definition that contains the steps required to build the
 
 The website developers have added a health endpoint to the website. This endpoint checks that the website is online and that it can reach the database. Here, you add a new smoke test to invoke the health check from your deployment workflow.
 
-1. Open the *Website.Tests.ps1* file in the *deploy* folder.
+1. Open the _Website.Tests.ps1_ file in the _deploy_ folder.
 
 1. Add a new test case that invokes the health check. The test case fails if the response code isn't 200, which indicates success:
 
@@ -65,23 +66,23 @@ The website developers have added a health endpoint to the website. This endpoin
 
 You'll soon add a deployment step that publishes your website to Azure App Service. The publish step requires the name of the App Service app. Here, you expose the app name as an output from your Bicep file.
 
-1. Open the *main.bicep* file in the *deploy* folder.
+1. Open the _main.bicep_ file in the _deploy_ folder.
 
-1. At the end of the file contents, add the App Service app's name as an output: 
+1. At the end of the file contents, add the App Service app's name as an output:
 
-   :::code language="bicep" source="code/5-main.bicep" range="110-111" highlight="1" :::
+   :::code language="bicep" source="code/5-main.bicep" range="117-118" highlight="1" :::
 
 1. Save your changes to the file.
 
 ## Update the deployment job to propagate the output
 
-Now, you need to update your *deploy* job to take the value of the output from the Bicep deployment and make it available to the rest of the workflow.
+Now, you need to update your _deploy_ job to take the value of the output from the Bicep deployment and make it available to the rest of the workflow.
 
-1. Open the *deploy.yml* file in the *.github/workflows* folder.
+1. Open the _deploy.yml_ file in the _.github/workflows_ folder.
 
-1. In the *deploy* job's definition, add a new output for the `appServiceAppName`:
+1. In the _deploy_ job's definition, add a new output for the `appServiceAppName`:
 
-   :::code language="yaml" source="code/5-deploy.yml" range="65-72" highlight="6" :::
+   :::code language="yaml" source="code/5-deploy.yml" range="61-68" highlight="6" :::
 
    > [!NOTE]
    > When you start to work with your YAML file in Visual Studio Code, you might see some red squiggly lines telling you there's a problem. This is because the Visual Studio Code extension for YAML files sometimes incorrectly guesses the file's schema.
@@ -94,14 +95,14 @@ Now, you need to update your *deploy* job to take the value of the output from t
 
 ## Add a job to deploy the website
 
-1. Below the *deploy* job definition, and above the *smoke-test* job definition, define a new job to deploy the website to App Service:
+1. Below the _deploy_ job definition, and above the _smoke-test_ job definition, define a new job to deploy the website to App Service:
 
-   :::code language="yaml" source="code/5-deploy.yml" range="93-109" :::
+   :::code language="yaml" source="code/5-deploy.yml" range="89-105" :::
 
    > [!NOTE]
-   > Be careful with the indentation of the YAML file, ensuring that the new job is indented at the same level as the `deploy` job. If you're not sure, copy the whole *deploy.yml* file contents from the example in the next step.
+   > Be careful with the indentation of the YAML file, ensuring that the new job is indented at the same level as the `deploy` job. If you're not sure, copy the whole _deploy.yml_ file contents from the example in the next step.
 
-   Notice that the job depends on the *deploy* job by using the `needs` keyword. This ensures the website isn't deployed until the infrastructure is ready. It also enables the job to access the `appServiceAppName` output from the *deploy* job.
+   Notice that the job depends on the _deploy_ job by using the `needs` keyword. This dependency ensures the website isn't deployed until the infrastructure is ready. It also enables the job to access the `appServiceAppName` output from the _deploy_ job.
 
    Also, notice that this job includes steps to download the workflow artifacts and to sign in to Azure. Each job runs on its own runner, so it needs to be self-contained.
 
@@ -109,9 +110,9 @@ Now, you need to update your *deploy* job to take the value of the output from t
 
 ## Verify the deploy.yml file contents, and commit your changes
 
-1. Verify that your *deploy.yml* file looks like the following:
+1. Verify that your _deploy.yml_ file looks like the following example:
 
-   :::code language="yaml" source="code/5-deploy.yml" highlight="70, 93-109" :::
+   :::code language="yaml" source="code/5-deploy.yml" highlight="66, 89-105" :::
 
 1. Save your changes to the file.
 
@@ -135,21 +136,21 @@ Now, you need to update your *deploy* job to take the value of the output from t
 
 1. In your browser, go to **Actions**.
 
-   The first run of your workflow, labeled *Initial commit*, is shown as a failure. GitHub automatically ran the workflow when you created the repository. It failed because the secrets weren't ready at that time. You can ignore this failure.
+   The first run of your workflow, labeled _Initial commit_, is shown as a failure. GitHub automatically ran the workflow when you created the repository. It failed because the secrets weren't ready at that time. You can ignore this failure.
 
 1. Select the **deploy-toy-website-end-to-end** workflow.
 
 1. Select the most recent run of your workflow.
 
-1. Wait until the *build* job finishes successfully.
+1. Wait until the _build_ job finishes successfully.
 
    :::image type="content" source="../media/5-jobs.png" alt-text="Screenshot of GitHub that shows the workflow run jobs.":::
 
-1. Wait for the *deploy-test / deploy* job to finish successfully.
+1. Wait for the _deploy-test / deploy_ job to finish successfully.
 
    Some warnings are listed in the **Annotations** panel. All of these warnings are because of the way Bicep writes informational messages to the workflow log. You can ignore these warnings.
 
-1. The workflow then runs the *deploy-test / smoke-test* job, but the smoke test fails:
+1. The workflow then runs the _deploy-test / smoke-test_ job, but the smoke test fails:
 
    :::image type="content" source="../media/5-smoke-test-failure.png" alt-text="Screenshot of GitHub that shows the workflow run's smoke test job for the test environment. The status shows that the job has failed.":::
 
@@ -159,4 +160,4 @@ Now, you need to update your *deploy* job to take the value of the output from t
 
    :::image type="content" source="../media/5-smoke-test-failure-log.png" alt-text="Screenshot of GitHub showing the workflow run log, with the output of the smoke test displayed. The JSON health test result is highlighted.":::
 
-   Notice that the workflow log indicates the website and configuration isn't healthy. There's a problem with the application's communication with Azure SQL Database. You haven't yet deployed or configured a database, which is why the website can't access it. You'll fix this soon.
+   Notice that the workflow log indicates the website and configuration isn't healthy. There's a problem with the application's communication with Azure SQL Database. You haven't yet deployed or configured a database, which is why the website can't access it. You'll fix this problem soon.

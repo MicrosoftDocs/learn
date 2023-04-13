@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.teach-ai-with-project-bonsai.summary
+title: Summary
+metadata:
+  title: Summary
+  description: An overview of the content covered in the module.
+  ms.date: 11/8/2022
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2 
+content: |
+  [!include[](includes/14-summary.md)] 

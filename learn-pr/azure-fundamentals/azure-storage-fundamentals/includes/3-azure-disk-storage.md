@@ -1,6 +1,6 @@
 :::row:::
   :::column span="3":::
-    
+
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -13,8 +13,7 @@
   :::column-end:::
 :::row-end:::
 
-
-Disks come in many different sizes and performance levels, from solid-state drives (SSDs) to traditional spinning hard disk drives (HDDs), with varying performance tiers. You can use standard SSD and HDD disks for less critical workloads, premium SSD disks for mission-critical production applications, and ultra disks for data-intensive workloads such as SAP HANA, top tier databases, and transaction-heavy workloads. Azure has consistently delivered enterprise-grade durability for infrastructure as a service (Iaas) disks, with an industry-leading ZERO% annualized failure rate.
+Disks come in many different sizes and performance levels, from solid-state drives (SSDs) to traditional spinning hard disk drives (HDDs), with varying performance tiers. You can use standard SSD and HDD disks for less critical workloads. Premium SSD disks for mission-critical production applications. Or, use ultra disks for data-intensive workloads such as SAP HANA, top tier databases, and transaction-heavy workloads. Azure has consistently delivered enterprise-grade durability for infrastructure as a service (Iaas) disks, with an industry-leading ZERO% annualized failure rate.
 
 The following illustration shows an Azure virtual machine that uses separate disks to store different data.
 

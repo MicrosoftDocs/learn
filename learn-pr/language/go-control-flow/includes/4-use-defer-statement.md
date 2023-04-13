@@ -34,7 +34,7 @@ deferred -2
 deferred -1
 ```
 
-In this example, notice that every time `fmt.Println("deferred", -i)` was deferred, the value for `i` was stored, and its run task was added to a queue. After the `main()` function finished printing the `regular` values, all the deferred calls ran. That's why you see the output in reverse order (last in, first out).
+In this example, notice that every time `fmt.Println("deferred", -i)` was deferred, the value for `i` was stored, and the function call was added to a queue. After the `main()` function finished printing the `regular` values, all the deferred calls ran. Notice the output from the deferred calls is in reverse order (last in, first out), as they're popped off of the queue.
 
 A typical use case for the `defer` function is to close a file after you finish using it. Here's an example:
 

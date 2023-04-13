@@ -1,6 +1,7 @@
 
 
 
+
 ## Why assign roles to groups?
 
 Azure Active Directory (Azure AD) lets you target Azure AD groups for role assignments. Assigning roles to groups can simplify the management of role assignments in Azure AD with minimal effort from your Global Administrators and Privileged Role Administrators.

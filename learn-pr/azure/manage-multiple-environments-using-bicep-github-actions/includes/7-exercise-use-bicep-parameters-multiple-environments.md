@@ -1,66 +1,67 @@
-Now that your workflow deploys to both of your environments, you're ready to integrate with the third-party API for product reviews. 
+Now that your workflow deploys to both of your environments, you're ready to integrate with the third-party API for product reviews.
 
 Your website team has provided you with the API keys and URLs that your website should use to access the service. There are different values for your test and production environments to use. In this unit, you'll update your workflow to configure each of your environments with the correct settings for the product review API.
 
 During the process, you'll:
 
 > [!div class="checklist"]
-> * Create secrets for the review API keys for each of your environments.
-> * Update the workflow with the correct input and secret values for each environment.
-> * Update your Bicep file to propagate the settings that you need for the product review API.
-> * Review the workflow results and the changes to your Azure environment.
+>
+> - Create secrets for the review API keys for each of your environments.
+> - Update the workflow with the correct input and secret values for each environment.
+> - Update your Bicep file to propagate the settings that you need for the product review API.
+> - Review the workflow results and the changes to your Azure environment.
 
 ## Add secrets
 
 You decide to store the API keys in GitHub secrets, to ensure they're protected appropriately.
 
-1. In your browser, go to **Settings** > **Secrets** > **Actions**.
+1. In your browser, go to **Settings** > **Secrets and variables** > **Actions**.
 
    :::image type="content" source="../media/7-secrets.png" alt-text="Screenshot of GitHub that shows the Secrets menu item under the Settings category.":::
 
 1. Select the **New repository secret** button.
 
-1. Enter *REVIEW_API_KEY_TEST* as the secret name, and *sandboxsecretkey* as the value.
+1. Enter _REVIEW_API_KEY_TEST_ as the secret name, and _sandboxsecretkey_ as the value.
 
    :::image type="content" source="../media/7-secrets-new-test.png" alt-text="Screenshot of GitHub showing a new secret.":::
 
 1. Select **Add secret**.
 
-1. Repeat the process to add another secret named *REVIEW_API_KEY_PRODUCTION* as the secret name, and *productionsecretkey* as the value. Select **Add secret**.
+1. Repeat the process to add another secret named _REVIEW_API_KEY_PRODUCTION_ as the secret name, and _productionsecretkey_ as the value. Select **Add secret**.
 
 ## Update the deploy.yml file to use the new settings
 
-1. In Visual Studio Code, open the *deploy.yml* file.
+1. In Visual Studio Code, open the _deploy.yml_ file.
 
 1. Update the workflow trigger to include new values for the `inputs` and `secrets` settings:
 
    :::code language="yaml" source="code/7-deploy.yml" range="3-23" highlight="10-12, 20-21" :::
 
-   Notice that you include the API URLs as inputs. These aren't secret values.
+   Notice that you include the API URLs as inputs because they aren't secret values.
 
 1. In the `validate` job, update the steps to include the new deployment parameters:
 
-   :::code language="yaml" source="code/7-deploy.yml" range="29-63" highlight="21-22, 33-34" :::
+   :::code language="yaml" source="code/7-deploy.yml" range="25-59" highlight="21-22, 33-34" :::
 
 1. Update the `deploy` job to include the new deployment parameters:
 
-   :::code language="yaml" source="code/7-deploy.yml" range="65-90" highlight="25-26" :::
+   :::code language="yaml" source="code/7-deploy.yml" range="61-86" highlight="25-26" :::
 
 1. Save your changes to the file.
 
 ## Update the workflow.yml file to provide the new settings
 
-1. In Visual Studio Code, open the *workflow.yml* file.
+1. In Visual Studio Code, open the _workflow.yml_ file.
 
 1. Add the `reviewApiUrl` inputs, and the `reviewApiKey` secrets, for each environment:
 
-   :::code language="yaml" source="code/7-workflow.yml" highlight="23, 28, 37, 42" :::
+   :::code language="yaml" source="code/7-workflow.yml" highlight="27, 32, 41, 46" :::
 
 1. Save your changes to the file.
 
 ## Update the Bicep file
 
-1. Open the *main.bicep* file.
+1. Open the _main.bicep_ file.
 
 1. Below the parameters that are already in the file, add the following parameters for the new review API:
 
@@ -68,11 +69,11 @@ You decide to store the API keys in GitHub secrets, to ensure they're protected 
 
 1. Update the `appServiceApp` resource definition to provide the review API URL and key to the application, so that your website's code can use them:
 
-   :::code language="bicep" source="code/7-main.bicep" range="63-90" highlight="17-24" :::
+   :::code language="bicep" source="code/7-main.bicep" range="64-91" highlight="17-24" :::
 
 1. Save your changes to the file.
 
-1. Commit and push your changes to your Git repository by using the following commands: 
+1. Commit and push your changes to your Git repository by using the following commands:
 
    ```bash
    git add .
@@ -98,7 +99,7 @@ You decide to store the API keys in GitHub secrets, to ensure they're protected 
 
    Notice that you now see multiple deployments in the environment's history.
 
-1. In your browser, go to the [Azure portal](https://portal.azure.com?azure-portal=true). 
+1. In your browser, go to the [Azure portal](https://portal.azure.com).
 
 1. Go to the **ToyWebsiteProduction** resource group.
 

@@ -1,3 +1,4 @@
+
 Azure Active Directory is Microsoft's cloud-based identity and access
 management service. It provides single sign-on authentication,
 conditional access, password-less and multifactor authentication,

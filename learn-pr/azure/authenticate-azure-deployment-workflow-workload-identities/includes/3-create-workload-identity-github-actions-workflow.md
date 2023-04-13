@@ -2,7 +2,7 @@ Now that you understand the concept of a workload identity, you might wonder how
 
 ## Create an Azure Active Directory application
 
-In the previous unit, you learned that workload identities require creating an *application registration* in Azure Active Directory (Azure AD).
+In the previous unit, you learned that workload identities require creating an _application registration_ in Azure Active Directory (Azure AD).
 
 > [!NOTE]
 > Creating and modifying application registrations requires you to have permissions in Azure AD. In some organizations, you might need an administrator to perform these steps for you.
@@ -44,9 +44,9 @@ When you create an application registration, you typically set only the display 
 
 ## Federated credentials
 
-When an identity needs to communicate with Azure, it signs in to Azure AD. By itself, an application registration doesn't allow a workflow or application to sign in to Azure. You need to assign some credentials first. *Federated credentials* are one type of application credential. Unlike most credentials, federated credentials don't require you to manage any secrets like passwords or keys.
+When an identity needs to communicate with Azure, it signs in to Azure AD. By itself, an application registration doesn't allow a workflow or application to sign in to Azure. You need to assign some credentials first. _Federated credentials_ are one type of application credential. Unlike most credentials, federated credentials don't require you to manage any secrets like passwords or keys.
 
-When you create a federated credential for a deployment workflow, you effectively tell Azure AD and GitHub to trust each other. This trust is called a *federation*.
+When you create a federated credential for a deployment workflow, you effectively tell Azure AD and GitHub to trust each other. This trust is called a _federation_.
 
 Then, when your workflow tries to sign in, GitHub provides information about the workflow run so that Azure AD can decide whether to allow the sign-in attempt. The information that GitHub provides to Azure AD during each sign-in attempt can include the following fields:
 
@@ -58,8 +58,8 @@ Then, when your workflow tries to sign in, GitHub provides information about the
 
 You can configure Azure AD to allow or deny a sign-in attempt from GitHub, depending on the values of the properties listed earlier. For example, you can enforce the following policies:
 
-- *Only permit sign-in attempts when a workflow runs from a specific GitHub repository within my organization.*
-- *Only permit sign-in attempts when a workflow runs from a specific GitHub repository within my organization, and the branch name is _main_*.
+- _Only permit sign-in attempts when a workflow runs from a specific GitHub repository within my organization._
+- _Only permit sign-in attempts when a workflow runs from a specific GitHub repository within my organization, and the branch name is main_.
 
 Here's an illustration of how a deployment workflow can sign in by using a workload identity and federated credential:
 
@@ -90,7 +90,7 @@ When you use the Azure CLI, you define a federated credential by creating a JSON
 }
 ```
 
-In that file, the `subject` property specifies that the federated credential should be valid only when a workflow runs for the following situations: 
+In that file, the `subject` property specifies that the federated credential should be valid only when a workflow runs for the following situations:
 
 | Field | Value |
 | - | - |
@@ -98,12 +98,12 @@ In that file, the `subject` property specifies that the federated credential sho
 | GitHub repository name | `my-repo` |
 | Branch name | `main` |
 
-After you create a policy in JSON and save it to a file named *policy.json*, you can use the Azure CLI to create the federated credential:
+After you create a policy in JSON and save it to a file named _policy.json_, you can use the Azure CLI to create the federated credential:
 
 ```azurecli
 az ad app federated-credential create \
-    --id $applicationRegistrationObjectId \
-    --parameters @policy.json
+  --id $applicationRegistrationObjectId \
+  --parameters @policy.json
 ```
 
 ::: zone-end
@@ -116,7 +116,7 @@ When you use Azure PowerShell, you define a federated credential by creating a s
 $policy = "repo:my-github-user/my-repo:ref:refs/heads/main"
 ```
 
-The preceding string specifies that the federated credential should be valid only when a workflow runs for the following situations: 
+The preceding string specifies that the federated credential should be valid only when a workflow runs for the following situations:
 
 | Field | Value |
 | - | - |
@@ -127,29 +127,30 @@ The preceding string specifies that the federated credential should be valid onl
 After you've created a policy string, you can use Azure PowerShell to create the federated credential:
 
 ```azurepowershell
-New-AzADAppFederatedIdentityCredential `
-    -Name 'MyFederatedCredential' `
-    -ApplicationObjectId $applicationRegistrationObjectId `
-    -Issuer 'https://token.actions.githubusercontent.com' `
-    -Audience 'api://AzureADTokenExchange' `
-    -Subject $policy
+New-AzADAppFederatedCredential `
+  -Name 'MyFederatedCredential' `
+  -ApplicationObjectId $applicationRegistrationObjectId `
+  -Issuer 'https://token.actions.githubusercontent.com' `
+  -Audience 'api://AzureADTokenExchange' `
+  -Subject $policy
 ```
 
 ::: zone-end
 
 ## Manage the lifecycle of your workload identity
 
-It's important to consider the whole lifecycle of each workload identity that you create. When you build a workload identity for a deployment workflow, what will happen if the workflow is eventually deleted or is no longer used? 
+It's important to consider the whole lifecycle of each workload identity that you create. When you build a workload identity for a deployment workflow, what will happen if the workflow is eventually deleted or is no longer used?
 
 Workload identities and federated credentials aren't removed automatically, so you need to audit and remove old ones. Even though your deployment workflow's workload identities don't have secret credentials that could be reused, it's still best to remove them when they're no longer needed. That way, there's no chance that somebody could create another GitHub repository with the same name and unexpectedly get access to your Azure environment.
 
 It's a good practice to document your workload identities in a place that you and your team can easily access. Include the following information for each workload identity:
 
 > [!div class="checklist"]
-> * Key identifying information, like its name and application ID
-> * Its purpose
-> * Who created it, who's responsible for managing it, and who might have answers if there's a problem
-> * The permissions that it needs, and a clear justification for why it needs them
-> * What its expected lifetime is
+>
+> - Key identifying information, like its name and application ID
+> - Its purpose
+> - Who created it, who's responsible for managing it, and who might have answers if there's a problem
+> - The permissions that it needs, and a clear justification for why it needs them
+> - What its expected lifetime is
 
 You should regularly audit your workload identities to ensure that they're still being used and that the permissions they've been assigned are still correct.

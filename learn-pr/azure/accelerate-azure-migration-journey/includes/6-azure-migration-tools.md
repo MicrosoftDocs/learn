@@ -28,7 +28,7 @@ The Cloud Adoption Framework brings together cloud adoption best practices from 
 
 [Azure Migrate](https://azure.microsoft.com/services/azure-migrate/?azure-portal=true) is the central hub of Azure cloud migration services and tools to discover, assess, and migrate workloads to the cloud. Tailwind Traders can get all of the Azure migration tools and guidance you need to plan and implement your move to the cloud and track your progress using a central dashboard that provides intelligent insights.
 
-![Azure portal shows the Azure Migrate dashboard.](../media/azure-migrate.png)
+![Screenshot of Azure Migrate get started screen.](../media/azure-migrate.png)
 
 Tailwind Traders can use a comprehensive approach to migrating your application and data center estate. Get support for critical migration workloads like Windows, SQL, and Linux Server, databases, data, web apps, and virtual desktops. Migrate to destinations including Azure Virtual Machines, Azure VMware Solution, Azure App Service, and Azure SQL Database. Migrations are holistic across VMware, Hyper-V, physical server, and cloud-to-cloud migration.
 

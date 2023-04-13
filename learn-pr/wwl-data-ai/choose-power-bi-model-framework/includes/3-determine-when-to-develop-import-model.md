@@ -47,7 +47,7 @@ Power BI imposes limits on how often scheduled refresh operations can occur. Itâ
 You should determine whether this degree of latency is tolerable. It often depends on the velocity (or volatility) of the data, and the urgency to keep users informed about the current state of data. When scheduled refresh limits arenâ€™t acceptable, consider using DirectQuery storage tables, or creating a hybrid table. Or take a different approach, and create a real-time dataset instead.
 
 > [!TIP]
-> Hybrid tables are described in [unit 4](/training/modules/choose-power-bi-model-framework/5-determine-when-to-develop-composite-model). For information about real-time datasets, work through the [Monitor data in real-time with Power BI](/training/modules/monitor-data-real-time-with-power-bi/) module.
+> Hybrid tables are described in [unit 4](/training/modules/choose-power-bi-model-framework/5-determine-when-to-develop-composite-model). For information about real-time datasets, work through the [Monitor data in real-time with Power BI](/training/modules/monitor-data-real-time-power-bi/) module.
 
 You must also consider refresh workload and duration. By default, to refresh a table, Power BI removes all data and reloads it again. These operations can place an unacceptable burden on source systems, especially for large fact tables. To reduce this burden, you can set up the incremental refresh feature. Incremental refresh automates the creation and management of time-period partitions, and intelligently update only those partitions that require refresh.
 

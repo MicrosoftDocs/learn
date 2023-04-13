@@ -1,3 +1,4 @@
+
 Application Insights log-based metrics let you analyze the health of your monitored apps, create powerful dashboards, and configure alerts. There are two kinds of metrics:
 
 * **Log-based metrics** behind the scene are translated into [Kusto queries](/azure/kusto/query/) from stored events.

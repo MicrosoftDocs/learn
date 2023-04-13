@@ -1,3 +1,4 @@
+
 In this module, you learned how to:
 
 * Explain the key scenarios Azure Cache for Redis covers and its service tiers

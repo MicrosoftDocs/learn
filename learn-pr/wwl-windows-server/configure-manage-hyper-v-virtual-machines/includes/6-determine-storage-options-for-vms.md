@@ -18,7 +18,7 @@ Consider the following factors when you plan the storage location of VHD files:
   > Multiple VMs that are running simultaneously on the same storage can place a tremendous I/O burden on a disk subsystem. If you don't choose high-performance storage in this scenario, VM performance will suffer.
 - Adequate growth space. If you have configured VHDs to grow automatically, ensure that there's adequate space into which the files can grow.
 
-    >[!TIP]
+    > [!TIP]
     > You should carefully monitor growth so that you aren't surprised when a VHD fills the volume that you allocated to host it.
 
 ## Fibre Channel support for SANs

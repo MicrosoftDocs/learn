@@ -9,7 +9,6 @@ metadata:
   ms.author: glenga
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  zone_pivot_groups: dev-lang-csharp-powershell
 azureSandbox: true
 durationInMinutes: 15
 content: |

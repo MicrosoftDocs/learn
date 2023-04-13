@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Integrate logs with a Log Analytics workspace
   description: Exercise - Integrate logs with a Log Analytics workspace.
   ms.date: 04/22/2022
-  author: MarkusVi
-  ms.author: markvi
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Integrate logs with a Log Analytics workspace

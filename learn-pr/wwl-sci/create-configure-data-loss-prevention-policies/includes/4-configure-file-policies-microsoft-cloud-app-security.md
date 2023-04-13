@@ -17,23 +17,14 @@ The other option is to use the Data Classification Service that is also employed
 To create a file policy, follow this procedure:
 
 1. In the **Microsoft Defender for Cloud Apps** portal at [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com/?azure-portal=true), select **Control** followed by **Policies**.
-
 1. Select **+ Create policy** and select **File policy**.
-
 1. Give your policy a name and description, if you want you can base it on a template.
-
 1. Give your policy a **Policy severity**. If you have set Defender for Cloud Apps to send you notifications on policy matches for a specific policy severity level, this level is used to determine whether the policy's matches trigger a notification.
-
 1. Within **Category**, link the policy to the most appropriate risk type. This field is informative only and helps you search for specific policies and alerts later, based on risk type. The risk may already be preselected according to the category for which you chose to create the policy. By default, File policies are set to DLP.
-
 1. **Create a filter for the files this policy will act on** to set which discovered apps trigger this policy. Narrow down the policy filters until you reach an accurate set of files you wish to act upon. Be as restrictive as possible to avoid false positives. For example, if you wish to remove public permissions, remember to add the **Public** filter, if you wish to remove an external user, use the **External** filter etc.
-
 1. Under the **Apply to** filter, select **all files excluding selected folders** or **selected folders** for Box, SharePoint, Dropbox, OneDrive, where you can enforce your file policy over all files on the app or on specific folders. You're redirected to sign-in to the cloud app, and then add the relevant folders.
-
 1. Under the **Select user groups** filter, select either **all file owners, file owners from selected user groups** or **all file owners excluding selected groups**. Then select the relevant user groups to determine which users and groups should be included in the policy.
-
 1. Select the content **Inspection method**. You can select either [Built-in DLP](/cloud-app-security/content-inspection-built-in) or [Data Classification Services](/cloud-app-security/content-inspection?azure-portal=true).
-
 1. Choose the **Governance** actions you want Defender for Cloud Apps to take when a match is detected and select **Create**.
 
 Once you've created your policy, you can view it in the **Information protection** tab. You can edit a policy, calibrate its filters, or change the automated actions.
@@ -47,17 +38,9 @@ It's recommended to narrow down the filters to exactly represent the files that 
 
 ## File policy matches
 
-If you want to view all files that are suspected to violate a policy, follow these steps:
+If you want to view all files suspected to violate a policy, follow these steps:
 
 1. Select **Control** and then **Policies**.
-
 1. Search the respective **File Policy** you want to view.
-
 1. Select the three vertical dots (**…**) on the right-side of the policy and select **View all matches**.
-
-1. You'll see a list of files that are currently recognized by the file policy to match the selected filters. You can use this view to see the impact your policy has before you change it to apply any Governance actions.
-
-Use the Protect and control information with Microsoft Cloud App Security interactive guide to experiment with the capabilities discussed above.
-
-[:::image type="content" source="../media/protect-information-interactive-guide.png" alt-text="Cover for an interactive guide that says Protect and control information with Microsoft Cloud App Security." border="false":::](https://mslearn.cloudguides.com/en-us/guides/Protect%20and%20control%20information%20with%20Microsoft%20Cloud%20App%20Security)
-
+1. You'll see a list of files currently recognized by the file policy to match the selected filters. You can use this view to see the impact your policy has before you change it to apply any Governance actions.

@@ -1,3 +1,4 @@
+
 Authentication is the process of verifying an identity to be legitimate. Passwords are commonly used to authenticate users, but there are better and more secure ways to authenticate. 
 
 

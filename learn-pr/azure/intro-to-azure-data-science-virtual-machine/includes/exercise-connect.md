@@ -2,7 +2,7 @@ Because you just created the virtual machine, it will already be running. You sh
 
 ## Connect to your Ubuntu Data Science Virtual Machine by using X2Go
 
-The Linux VM is already provisioned with X2Go Server, and is ready to accept client connections. To connect to the Linux VM graphical desktop, complete the following procedure on your client:
+The Linux virtual machine (VM) is already provisioned with X2Go Server, and is ready to accept client connections. To connect to the Linux VM graphical desktop, complete the following procedure on your client:
 
 1. Download and install the X2Go Client for your client platform from [X2Go](https://wiki.x2go.org/doku.php/doc:installation:x2goclient?portal=true).
 

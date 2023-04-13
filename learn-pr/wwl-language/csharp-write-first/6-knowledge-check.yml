@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-write-first.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the primary job of the compiler?"
+    choices:
+    - content: "The compiler primarily locates spelling mistakes in your code."
+      isCorrect: false
+      explanation: "Incorrect. While it's possible you misspelled something in your code and that produces an error, that isn't the primary job of the compiler."
+    - content: "The compiler primarily executes your code."
+      isCorrect: false
+      explanation: "Incorrect. The compiler doesn't execute your code, but makes it possible for your code to be executed."
+    - content: "The compiler primarily converts your code into an executable format that the computer can understand."
+      isCorrect: true
+      explanation: "Correct! The primary job of the compiler is to convert your code into a format that the computer can understand."
+  - content: "Which of the following statements is **true** about C#?"
+    choices:
+    - content: "C# is case *insensitive*."
+      isCorrect: false
+      explanation: "Incorrect. Actually, C# is case-sensitive."
+    - content: "`Console` is a method, and `WriteLine()` is a class."
+      isCorrect: false
+      explanation: "Incorrect. Actually, the reverse is true.  `Console` is a class.  `WriteLine()` is a method."
+    - content: "You use double quotation marks to create a literal string."
+      isCorrect: true
+      explanation: "Correct! You can create a literal string in C# using double quotation marks."
+  - content: "What is **wrong** with this line of code?  `Console.WriteLine(\"What is wrong with me?\")`"
+    choices:
+    - content: "The `L` in `WriteLine` should be lower-case."
+      isCorrect: false
+      explanation: "Incorrect. The `L` should be upper case."
+    - content: "It's missing a semi-colon at the end"
+      isCorrect: true
+      explanation: "Correct! The semi-colon must be used at the end of a code statement."
+    - content: "The string should use single-quotes."
+      isCorrect: false
+      explanation: "Incorrect. A string literal must be surrounded in double-quotes.  A char literal is surrounded in single quotes."

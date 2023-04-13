@@ -1,4 +1,4 @@
-In this module, you learned about Azure SQL, including the deployment options, purchasing models, service tiers, and hardware choices. You now have a better understanding of the options you can and should choose for your applications and data.
+In this module, you learned about Azure SQL, including its deployment options, purchasing models, service tiers, and hardware choices. You now have a better understanding of the options you can and should choose for your applications and data.
 
 ## Learn more
 
@@ -29,11 +29,10 @@ If you're specifically considering SQL Server on RHEL Azure VMs, check out the [
 
 ### Companies that use Azure SQL  
 
-There are many companies that have moved to Azure SQL. You can learn more about the companies mentioned in this module:  
+There are many companies that have moved to Azure SQL. You can learn more about some of the companies mentioned in this module:  
 
 - [Allscripts: SQL Server on Azure Virtual Machines](https://customers.microsoft.com/story/allscripts-partner-professional-services-azure?azure-portal=true)
 - [Komatsu: Azure SQL Managed Instance](https://customers.microsoft.com/story/komatsu-australia-manufacturing-azure?azure-portal=true)
-- [AccuWeather: Azure SQL Database](https://customers.microsoft.com/story/1346767190324538120-accu-weather-media-azure-en-us)
 
 ### Platform as a service (PaaS) capabilities
 
@@ -56,7 +55,7 @@ If you want to learn more about deployment options and how to choose one, check 
 
 You might want to learn more about the differences between [DTU-based](/azure/azure-sql/database/service-tiers-dtu) and [vCore-based](/azure/azure-sql/database/service-tiers-sql-database-vcore) purchasing models. To do that, review the [in-depth comparison of vCores and DTUs](/azure/azure-sql/database/purchasing-models). Note that only the vCore model allows you to save money with options like [Azure Hybrid Benefit for SQL Server](https://azure.microsoft.com/pricing/hybrid-benefit/?azure-portal=true) and [reserved capacity](/azure/azure-sql/database/reserved-capacity-overview).  
 
-The [documentation](/azure/azure-sql/database/service-tiers-general-purpose-business-critical?azure-portal=true) goes deeper into the details and architectures for the various service tiers.  
+The [documentation](/azure/azure-sql/database/service-tiers-sql-database-vcore#business-critical) goes deeper into the details and architectures for the various service tiers.  
 
 ### Management interfaces
 

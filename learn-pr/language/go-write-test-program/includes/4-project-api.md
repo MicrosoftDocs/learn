@@ -29,7 +29,7 @@ func main() {
 }
 ```
 
-Run the program with `go run main.go` to make sure you don't have any errors. The program doesn't do anything else for now, so let's add the logic to create a Web API.
+Ensure that you are in the `$GOPATH/src/bankapi/`location. Run the program with `go run main.go` to make sure you don't have any errors. The program doesn't do anything else for now, so let's add the logic to create a Web API.
 
 ## Expose the statement method
 
@@ -61,7 +61,7 @@ func statement(w http.ResponseWriter, req *http.Request) {
 
 The first highlight from the `statement` function is that it's receiving the object to write a response back to the browser (`w http.ResponseWriter`). It's also receiving the request object to access the information from the HTTP request (`req *http.Request`). 
 
-Then, notice that we're using the `req.URL.Query().Get()` function to read a parameter from the query string. This is the account number that we'll send through the HTTP call. We'll use that value to access the account map and get its information. 
+Then, notice that we're using the `req.URL.Query().Get()` function to read a parameter from the query string. This parameter is the account number that we'll send through the HTTP call. We'll use that value to access the account map and get its information. 
 
 Because we're getting data from the user, we should include some validations to avoid a crash. When we know that we have a valid account number, we can make the call to the `Statement()` method and print the string that it returns to the browser (`fmt.Fprintf(w, account.Statement())`).
 
@@ -83,10 +83,10 @@ func main() {
 }
 ```
 
-If you don't see any error or output when you run the program (`go run main.go`), it's working correctly. Open a web browser and enter the URL `http://localhost:8000/statement?number=1001`, or run the following command:
+If you don't see any error or output when you run the program (`go run main.go`), it's working correctly. Open a web browser and enter the URL `http://localhost:8000/statement?number=1001`, or run the following command in another shell while your program is running:
 
 ```sh
-curl http://localhost:8000/statement\?number=1001
+curl http://localhost:8000/statement?number=1001
 ```
 
 You should see the following output:
@@ -152,10 +152,10 @@ func main() {
 }
 ```
 
-If you don't see any error or output when you run the program (`go run main.go`), it's working correctly. Open a web browser and enter the URL `http://localhost:8000/deposit?number=1001&amount=100`, or run the following command:
+If you don't see any error or output when you run the program (`go run main.go`), it's working correctly. Open a web browser and enter the URL `http://localhost:8000/deposit?number=1001&amount=100`, or run the following command in another shell while your program is running:
 
 ```sh
-curl http://localhost:8000/deposit\?number=1001&amount=100
+curl "http://localhost:8000/deposit?number=1001&amount=100"
 ```
 
 You should see the following output:
@@ -220,10 +220,10 @@ func main() {
 }
 ```
 
-If you don't see any error or output when you run the program (`go run main.go`), it's working correctly. Open a web browser and enter the URL `http://localhost:8000/withdraw?number=1001&amount=100`, or run the following command:
+If you don't see any error or output when you run the program (`go run main.go`), it's working correctly. Open a web browser and enter the URL `http://localhost:8000/withdraw?number=1001&amount=100`, or run the following command in another shell while your program is running:
 
 ```sh
-curl http://localhost:8000/withdraw\?number=1001&amount=100
+curl "http://localhost:8000/withdraw?number=1001&amount=100"
 ```
 
 You should see the following output:
@@ -235,10 +235,10 @@ the amount to withdraw should be greater than the account's balance
 Notice that the error we're getting comes from the core package. When the program starts, the account balance is zero. Therefore, you can't withdraw any amount of money. Call the `/deposit` endpoint a few times to add funds, and call the `/withdraw` endpoint again to confirm that's working:
 
 ```sh
-curl http://localhost:8000/deposit\?number=1001&amount=100
-curl http://localhost:8000/deposit\?number=1001&amount=100
-curl http://localhost:8000/deposit\?number=1001&amount=100
-curl http://localhost:8000/withdraw\?number=1001&amount=100
+curl "http://localhost:8000/deposit?number=1001&amount=100"
+curl "http://localhost:8000/deposit?number=1001&amount=100"
+curl "http://localhost:8000/deposit?number=1001&amount=100"
+curl "http://localhost:8000/withdraw?number=1001&amount=100"
 ```
 
 You should see the following output:

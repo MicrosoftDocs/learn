@@ -28,7 +28,7 @@ Let's see how else you can write loops in Go.
 
 ## Empty prestatements and poststatements
 
-In some programming languages, you use the `while` keyword to write loop patterns where only the condition expression is required. Go has no `while` keyword. But you can use a `for` loop instead. This provision makes prestatements and poststatements optional.
+In some programming languages, you use the `while` keyword to write loop patterns where only the condition expression is required. Go has no `while` keyword. But you can use a `for` loop instead and take advantage of the fact that Go makes prestatements and poststatements optional.
 
 Use the following code snippet to confirm that you can use the `for` loop without using prestatements and poststatements.
 

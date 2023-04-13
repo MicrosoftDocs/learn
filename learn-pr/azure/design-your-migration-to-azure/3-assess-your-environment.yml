@@ -4,8 +4,8 @@ metadata:
   title: Assess your environment with Azure Migrate
   description: An overview of Azure Migrate, a service that assesses readiness and assists you with the migration to Azure from an on-premises environment.
   ms.date: 07/30/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: v-ksreedevan
+  ms.author: v-ksreedevan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Assess your environment with Azure Migrate

@@ -1,6 +1,10 @@
 on: 
   workflow_dispatch:
 
+permissions:
+  id-token: write
+  contents: read
+
 jobs:
   job-test:
     uses: ./.github/workflows/script.yml

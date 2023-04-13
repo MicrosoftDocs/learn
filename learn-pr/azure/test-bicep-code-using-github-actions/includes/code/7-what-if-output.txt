@@ -1,18 +1,31 @@
 Resource and property changes are indicated with these symbols:
+  - Delete
   + Create
   ~ Modify
   = Nochange
+  * Ignore
 
 The deployment will update the following scope:
 
-Scope: /subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c/resourceGroups/ToyWebsiteTest
+Scope: /subscriptions/***/resourceGroups/ToyWebsiteTest
 
-  ~ Microsoft.Web/sites/toy-website-nbfnedv766snk [2021-01-15]
+  ~ Microsoft.OperationalInsights/workspaces/workspace-abcdefghijklm [2022-10-01]
+    - properties.retentionInDays: 30
+    - properties.sku:
+
+        name: "pergb2018"
+
+    - properties.workspaceCapping:
+
+        dailyQuotaGb: -1.0
+
+  ~ Microsoft.Web/sites/toy-website-abcdefghijklm [2022-03-01]
     + properties.siteConfig.localMySqlEnabled:   false
     + properties.siteConfig.netFrameworkVersion: "v4.6"
 
   = Microsoft.Insights/components/toywebsite [2020-02-02]
-  = Microsoft.Storage/storageAccounts/mystoragenbfnedv766snk [2021-04-01]
-  = Microsoft.Web/serverfarms/toy-website [2021-01-15]
+  = Microsoft.Storage/storageAccounts/mystorageabcdefghijklm [2022-09-01]
+  = Microsoft.Web/serverfarms/toy-website [2022-03-01]
+  * microsoft.alertsmanagement/smartDetectorAlertRules/Failure Anomalies - toywebsite
 
-Resource changes: 1 to modify, 3 no change.   
+Resource changes: 2 to modify, 3 no change, 1 to ignore.

@@ -1,6 +1,6 @@
 Thanks to your efforts, your toy company has a large set of Bicep files to deploy all aspects of its Azure infrastructure. Managing these files has been a challenge, though, and you needed a way to keep track of your changes.
 
-In this module, you learned how the Git version control system can be used with Bicep code to provide a repository for your deployment templates. You learned about the benefits of using Git with Bicep code, and how Git can scale from an individual to an entire organization. 
+In this module, you learned how the Git version control system can be used with Bicep code to provide a repository for your deployment templates. You learned about the benefits of using Git with Bicep code, and how Git can scale from an individual to an entire organization.
 
 You used Visual Studio Code to initialize a Git repository, added and updated some files, viewed their history, and created a branch. You then merged that branch. Finally, you published your Git repository so that your colleagues can access it. Publishing the repository will also enable you to use a deployment pipeline in the future.
 
@@ -13,7 +13,7 @@ There's a lot more to know about Git's capabilities for working with deployment 
 - The learning path [Introduction to version control with Git](/training/paths/intro-to-vc-git/) is a good next step to provide a deeper overview.
 - The module [Use Git version-control tools in Visual Studio Code](/training/modules/use-git-from-vs-code/) provides more information on Git integration into Visual Studio Code.
 
-The following features of Git are particularly useful when you work with infrastructure as code:
+The following features of Git are useful when you work with infrastructure as code:
 
 - [Staging your changes](https://code.visualstudio.com/docs/introvideos/versioncontrol), which enables you to commit only some of the things you've changed while leaving others out of the commit.
 - [Stashing your changes](https://git-scm.com/book/en/v2/Git-Tools-Stashing-and-Cleaning), which enables you to keep your changes without committing them.

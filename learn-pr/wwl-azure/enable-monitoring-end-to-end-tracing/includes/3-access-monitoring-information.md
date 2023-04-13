@@ -31,7 +31,13 @@ Spring Apps Service uses an in-process Java Agent for Application Insights. When
 
 You'll need to check whether an Application Insights instance is linked to your Spring Apps Service. If the instance isn't linked, then relink Application Insights.
 
-1.  Use the following command to determine whether Application Insights is linked to your Spring Apps Service.
+1.  Run the following command to allow automatic installation of the Azure CLI extension required for this lab.
+    
+    ```azurecli
+    az config set extension.use_dynamic_install=yes_without_prompt
+    ```
+
+2.  Use the following command to determine whether Application Insights is linked to your Spring Apps Service.
     
     ```azurecli
     az spring app-insights show \
@@ -58,7 +64,7 @@ You'll need to check whether an Application Insights instance is linked to your 
     
     To reconfigure Application Insights, do the following procedure.
 
-2.  To re-enable Application Insights, you'll first need to get hold of the instrumentation key of your Application Insights instance.
+3.  To re-enable Application Insights, you'll first need to get hold of the instrumentation key of your Application Insights instance.
     
     ```azurecli
     INSTRUMENTATIONKEY=$(az monitor app-insights component show \
@@ -67,7 +73,7 @@ You'll need to check whether an Application Insights instance is linked to your 
     -o tsv)
     ```
 
-3.  You can use the instrumentation key to reconfigure Application Insights for your Spring Apps Service.
+4.  You can use the instrumentation key to reconfigure Application Insights for your Spring Apps Service.
     
     ```azurecli
     az spring app-insights update \
@@ -77,10 +83,10 @@ You'll need to check whether an Application Insights instance is linked to your 
         --app-insights-key $INSTRUMENTATIONKEY
     ```
 
-4.  You can reissue a *show* for your Application Insights config of the proper output.
+5.  You can reissue a *show* for your Application Insights config of the proper output.
     
     ```azurecli
     az spring app-insights show \
     -g $RESOURCE_GROUP \
-    -n $SPRING_CLOUD_SERVICE
+    -n $SPRING_APPS_SERVICE
     ```

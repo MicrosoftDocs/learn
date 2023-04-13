@@ -1,23 +1,48 @@
-In App Service, an app runs in an App Service plan. An App Service plan defines a set of compute resources for a web app to run. These compute resources are analogous to the server farm in conventional web hosting. One or more apps can be configured to run on the same computing resources (or in the same App Service plan).
+In Azure App Service, an application runs in an Azure App Service plan. An App Service plan defines a set of compute resources for a web application to run. The compute resources are analogous to a server farm in conventional web hosting. One or more applications can be configured to run on the same computing resources (or in the same App Service plan).
 
-When you create an App Service plan in a certain region (for example, West Europe), a set of compute resources is created for that plan in that region. Whatever apps you put into this App Service plan run on these compute resources as defined by your App Service plan. Each App Service plan defines:
+### Things to know about App Service plans
 
- -  **Region** (West US, East US, etc.)
- -  **Number of VM instances**
- -  **Size of VM instances** (Small, Medium, Large)
+Let's take a closer look at how to implement and use an App Service plan with your virtual machines.
 
-## How the app runs and scales
+- When you create an App Service plan in a region, a set of compute resources is created for the plan in the specified region. Any applications that you place into the plan run on the compute resources defined by the plan.
 
-In the Free and Shared tiers, an app receives CPU minutes on a shared VM instance and cannot scale out. In other tiers, an app runs and scales as follows.
+- Each App Service plan defines three settings:
+   - **Region**: The region for the App Service plan, such as West US, Central India, North Europe, and so on.
+   - **Number of VM instances**: The number of virtual machine instances to allocate for the plan.
+   - **Size of VM instances**: The size of the virtual machine instances in the plan, including Small, Medium, or Large.
 
-When you create an app in App Service, it is put into an App Service plan. When the app runs, it runs on all the VM instances configured in the App Service plan. If multiple apps are in the same App Service plan, they all share the same VM instances. If you have multiple deployment slots for an app, all deployment slots also run on the same VM instances. If you enable diagnostic logs, perform backups, or run WebJobs, they also use CPU cycles and memory on these VM instances.
+- You can continue to add new applications to an existing plan as long as the plan has enough resources to handle the increasing load.
 
-In this way, the App Service plan is the scale unit of the App Service apps. If the plan is configured to run five VM instances, then all apps in the plan run on all five instances. If the plan is configured for autoscaling, then all apps in the plan are scaled out together based on the autoscale settings.
+#### How applications run and scale in App Service plans
 
-## Considerations
+The Azure App Service plan is the scale unit of App Service applications. Depending on the pricing tier for your Azure App Service plan, your applications run and scale in a different manner. If your plan is configured to run five virtual machine instances, then all applications in the plan run on all five instances. If your plan is configured for autoscaling, then all applications in the plan are scaled out together based on the autoscale settings.
 
-Since you pay for the computing resources your App Service plan allocates, you can potentially save money by putting multiple apps into one App Service plan. You can continue to add apps to an existing plan as long as the plan has enough resources to handle the load. However, keep in mind that apps in the same App Service plan all share the same compute resources. To determine whether the new app has the necessary resources, you need to understand the capacity of the existing App Service plan, and the expected load for the new app. Overloading an App Service plan can potentially cause downtime for your new and existing apps. Isolate your app into a new App Service plan when:
+Here's a summary of how applications run and scale in Azure App Service plan pricing tiers:
 
- -  The app is resource-intensive.
- -  You want to scale the app independently from the other apps in the existing plan.
- -  The app needs resource in a different geographical region.
+- **Free or Shared tier**:
+   - Applications run by receiving CPU minutes on a shared virtual machine instance.
+   - Applications can't scale out.
+
+- **Basic, Standard, Premium, or Isolated tier**:
+   - Applications run on all virtual machine instances configured in the App Service plan.   
+   - Multiple applications in the same plan share the same virtual machine instances.
+   - If you have multiple deployment slots for an application, all deployment slots run on the same virtual machine instances.
+   - If you enable diagnostic logs, perform backups, or run WebJobs, these tasks use CPU cycles and memory on the same virtual machine instances.
+
+### Things to consider when using App Service plans
+
+Review the following considerations about using Azure App Service plans to run and scale your applications. Think about what conditions might apply to running and scaling the hotel website.
+
+- **Consider cost savings**. Because you pay for the computing resources that your App Service plan allocates, you can potentially save money by placing multiple applications into the same App Service plan.
+
+- **Consider multiple applications in one plan**. Create a single plan to support multiple applications, to make it easier to configure and maintain shared virtual machine instances. Because the applications share the same virtual machine instances, you need to carefully manage your plan resources and capacity.
+
+- **Consider plan capacity**. Before you add a new application to an existing plan, determine the resource requirements for the new application and identify the remaining capacity of your plan.
+
+   > [!Important]
+   > Overloading an App Service plan can potentially cause downtime for new and existing applications.
+
+- **Consider application isolation**. Isolate your application into a new App Service plan when:
+   - The application is resource-intensive.
+   - You want to scale the application independently from the other applications in the existing plan.
+   - The application needs resource in a different geographical region.

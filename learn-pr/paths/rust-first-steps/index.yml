@@ -30,7 +30,7 @@ roles:
 - developer
 - student
 products:
-- vs-code
+- azure
 subjects:
 - development-tools
 modules:

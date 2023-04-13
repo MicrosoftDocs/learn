@@ -2,18 +2,18 @@
 uid: learn.wwl.configure-azure-firewall
 metadata:
   title: Configure Azure Firewall
-  description: "You will learn how to configure the Azure Firewall including firewall rules."
-  ms.date: 04/20/2022
+  description: "Learn how to configure Azure Firewall including firewall rules."
+  ms.date: 01/05/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Configure Azure Firewall
-summary: You will learn how to configure the Azure Firewall including firewall rules.
+summary: Learn how to configure Azure Firewall including firewall rules.
 abstract: |
-  After completing this module, you will be able to:
+  In this module, you learn how to:
   - Determine when to use Azure Firewall.
-  - Implement Azure Firewall including firewall rules
+  - Implement Azure Firewall including firewall rules.
 prerequisites: |
   None
 iconUrl: /training/achievements/azure-firewall-configure.svg

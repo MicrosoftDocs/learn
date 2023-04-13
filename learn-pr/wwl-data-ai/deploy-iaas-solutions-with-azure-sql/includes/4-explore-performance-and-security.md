@@ -10,7 +10,7 @@ Each VM will have at least two disks associated with it:
 
 - **Operating System disk** – Each virtual machine will require an operating system disk that contains the boot volume. This disk would be the C: drive in the case of a Windows platform virtual machine, or /dev/sda1 on Linux. The operating system will be automatically installed on the operating system disk.
 
-- **Temporary disk** – Each virtual machine will include one disk used for temporary storage. This storage is intended to be used for data that does not need to be durable, such as page files or swap files. Because the disk is temporary, you should not use it for storing any critical information like database or transaction log files as they will be lost during maintenance or a reboot of the virtual machine. This drive will be mounted as D:\ on Windows, and /dev/sdb1 on Linux.
+- **Temporary disk** – Each virtual machine will include one disk used for temporary storage. This storage is intended to be used for data that doesn't need to be durable, such as page files or swap files. Because the disk is temporary, you shouldn't use it for storing any critical information like database or transaction log files as they'll be lost during maintenance or a reboot of the virtual machine. This drive will be mounted as D:\ on Windows, and /dev/sdb1 on Linux.
 
 Additionally, you can and should add additional data disks to your Azure VMs running SQL Server.
 
@@ -28,7 +28,7 @@ Furthermore, each disk can be one of several types:
 
 The best practices for SQL Server on Azure recommend using Premium Disks pooled for increased IOPs and storage capacity. Data files should be stored in their own pool with read-caching on the Azure disks.
 
-Transaction log files will not benefit from this caching, so those files should go into their own pool without caching. TempDB can optionally go into its own pool, or using the VM’s temporary disk, which offers low latency since it is physically attached to the physical server where the VMs are running. Properly configured Premium SSD will see latency in single digit milliseconds. For mission critical workloads that require latency lower than that, you should consider Ultra SSD.
+Transaction log files won't benefit from this caching, so those files should go into their own pool without caching. TempDB can optionally go into its own pool, or using the VM’s temporary disk, which offers low latency since it's physically attached to the physical server where the VMs are running. Properly configured Premium SSD will see latency in single digit milliseconds. For mission critical workloads that require latency lower than that, you should consider Ultra SSD.
 
 ## Security considerations
 
@@ -50,7 +50,7 @@ Most of the existing on-premises SQL Server performance features are also availa
 
 ### Table partitioning
 
-Table partitioning provides many benefits, but often times this strategy is only considered when the table becomes large enough that starts compromising query performance. Identifying which tables are candidates for table partitioning is a good practice that could lead to less disruptions and interventions. When you filter your data using your partition column, only a subset of the data is accessed, not the entire table. Similarly, maintenance operations on a partitioned table will reduce maintenance duration, for example, by compressing specific data in a particular partition or rebuilding specific partitions of an index.
+Table partitioning provides many benefits, but often this strategy is only considered when the table becomes large enough that starts compromising query performance. Identifying which tables are candidates for table partitioning is a good practice that could lead to fewer disruptions and interventions. When you filter your data using your partition column, only a subset of the data is accessed, not the entire table. Similarly, maintenance operations on a partitioned table will reduce maintenance duration, for example, by compressing specific data in a particular partition or rebuilding specific partitions of an index.
 
 There are four main steps required when defining a table partition:
 
@@ -69,7 +69,7 @@ CREATE PARTITION FUNCTION PartitionByMonth (datetime2)
     FOR VALUES ('20210101', '20210201', '20210301',
       '20210401', '20210501', '20210601', '20210701',
       '20210801', '20210901', '20211001', '20211101', 
-      '20212101');
+      '20211201');
 
 -- The partition scheme below will use the partition function created above, and assign each partition to a specific filegroup.
 CREATE PARTITION SCHEME PartitionByMonthSch
@@ -94,9 +94,9 @@ The tradeoffs to compression are that it does require a small amount of CPU over
 
 The image above shows this performance benefit. These tables have same underlying indexes; the only difference is that the clustered and nonclustered indexes on the *Production.TransactionHistory_Page*table are page compressed. The query against the page compressed object performs 72% fewer logical reads than the query that uses the uncompressed objects.
 
-Compression is implemented in SQL Server at the object level. Each index or table can be compressed individually, and you have the option of compressing partitions within a partitioned table or index. You can evaluate how much space you will save by using the sp_estimate_data_compression_savings system stored procedure. Prior to SQL Server 2019, this procedure did not support columnstore indexes, or columnstore archival compression.
+Compression is implemented in SQL Server at the object level. Each index or table can be compressed individually, and you have the option of compressing partitions within a partitioned table or index. You can evaluate how much space you'll save by using the sp_estimate_data_compression_savings system stored procedure. Prior to SQL Server 2019, this procedure didn't support columnstore indexes, or columnstore archival compression.
 
-- **Row compression** - Row compression is fairly basic and does not incur much overhead; however, it does not offer the same amount of compression (measured by the percentage reduction in storage space required) that page compression may offer. Row compression basically stores each value in each column in a row in the minimum amount of space needed to store that value. It uses a variable-length storage format for numeric data types like integer, float, and decimal, and it stores fixed-length character strings using variable length format.
+- **Row compression** - Row compression is fairly basic and doesn't incur much overhead; however, it doesn't offer the same amount of compression (measured by the percentage reduction in storage space required) that page compression may offer. Row compression basically stores each value in each column in a row in the minimum amount of space needed to store that value. It uses a variable-length storage format for numeric data types like integer, float, and decimal, and it stores fixed-length character strings using variable length format.
 
 - **Page compression** - Page compression is a superset of row compression, as all pages will initially be row compressed prior to applying the page compression. Then a combination of techniques called prefix and dictionary compression are applied to the data. Prefix compression eliminates redundant data in a single column, storing pointers back to the page header. After that step, dictionary compression searches for repeated values on a page and replaces them with pointers, further reducing storage. The more redundancy in your data, the greater the space savings when you compress your data.
 

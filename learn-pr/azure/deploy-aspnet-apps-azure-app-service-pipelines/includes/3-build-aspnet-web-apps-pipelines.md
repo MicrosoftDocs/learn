@@ -4,11 +4,11 @@ In the past, your company, following Microsoft best practices, has been relying 
 
 Use the following process to build ASP.NET app artifacts:
 
-1. **Identify and update NuGet package dependencies.** In this task, you retrieve all packages required to perform the build.
-1. **Build artifacts.** This generates a compiled app that you can subsequently test and deploy.
-1. **Run unit and functional tests.** In this step, you verify functionality of the built app prior to its deployment.
-1. **Index source code and publish symbols.** This allows you to debug the app on another computer that doesn't have access to the source code.
-1. **Publish build artifacts to a location that you designate.** This makes the artifacts available for subsequent deployment.
+1. **Identify and update NuGet package dependencies**: In this task, you retrieve all packages required to perform the build.
+1. **Build artifacts**: This generates a compiled app that you can subsequently test and deploy.
+1. **Run unit and functional tests**: In this step, you verify functionality of the built app prior to its deployment.
+1. **Index source code and publish symbols**: This allows you to debug the app on another computer that doesn't have access to the source code.
+1. **Publish build artifacts to a location that you designate**: This makes the artifacts available for subsequent deployment.
 
 While this seems like quite a bit of work, all these steps are readily available in the form of predefined Azure Pipelines tasks. Implementing the corresponding pipeline is even more straightforward, because it requires simply that you select the **ASP.NET** template on which the build pipeline will be based and point to the code repository hosting the app code. When using the classic editor, this results in automatic creation and configuration of the following tasks:
 
@@ -30,4 +30,4 @@ Azure Pipelines rely on build agents to perform the build process. While you cou
 - **vs2017-win2016**: based on Windows Server 2016 with Visual Studio 2017
 
 > [!NOTE]
-> The use of self-hosted agents might be beneficial when running multiple builds against large code repositories, because Microsoft-hosted agents don't support caching between builds.
+> Using self-hosted agents might be beneficial when running multiple builds against large code repositories, because Microsoft-hosted agents don't support caching between builds.

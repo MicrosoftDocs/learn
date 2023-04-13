@@ -1,7 +1,7 @@
 The Data Science Virtual Machine (DSVM) is a virtual machine that runs on the Azure cloud platform. There are DSVM images for:
 
 - Windows Server 2019
-- Ubuntu Server 18.04 LTS
+- Ubuntu Server 20.04 LTS
 
 You can choose to run the DSVM on different Azure virtual machine series and sizes. Common choices for the DSVM are:
 
@@ -54,10 +54,10 @@ You can use the DSVM to evaluate or learn new data science tools. The DSVM has s
 
 In the DSVM, your training models can use deep learning algorithms on hardware that's based on GPUs. By taking advantage of the VM scaling capabilities of the Azure platform, the DSVM helps you use GPU-based hardware in the cloud.
 
-You can switch to a GPU-based VM when you're training large models, or when you need high-speed computations while keeping the same OS disk. You can choose any of the N series GPU-enabled virtual machine SKUs with the DSVM. Note that Azure free accounts don't support GPU-enabled virtual machine SKUs.
+You can switch to a GPU-based VM when you're training large models, or when you need high-speed computations while keeping the same OS disk. You can choose any of the N series GPU-enabled virtual machine SKUs with the DSVM. Azure free accounts don't support GPU-enabled virtual machine SKUs.
 
 The DSVM is configured with the proper drivers, framework versions and configurations, and GPU tools for those tools and frameworks that support GPU acceleration. If you use Python, there are several conda environments configured to avoid confusion. For instance, PyTorch and TensorFlow are in separate environments.
 
 You can also deploy the Ubuntu or Windows edition of the DSVM to an Azure virtual machine that isn't based on GPUs. In this case, all the deep learning frameworks will fall back to the CPU model.
 
-Our scenario, where you're investigating bank data to help predict trends, touches on several of these use cases: collaboration, capacity, and exploration. You decide that an Ubuntu DSVM is a good choice, because it will allow you to use familiar tools like RStudio and your existing data disk. And it won't require you to invest in learning new technologies until you've worked with your data for a while.
+Our scenario, where you're investigating bank data to help predict trends, touches on several of these use cases: collaboration, capacity, and exploration. You decide that an Ubuntu DSVM is a good choice, because it will allow you to use familiar tools like CRAN-R and your existing data disk. And it won't require you to invest in learning new technologies until you've worked with your data for a while.

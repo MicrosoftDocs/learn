@@ -1,3 +1,4 @@
+
 In this module, you learned about the security defenses available to protect your company’s digital estate. You also discovered the key security operation areas that Microsoft Sentinel supports and how it integrates with your existing security systems. You get a single solution for alert detection, threat visibility, proactive hunting, and threat response.  You also learned about the two ways to pay for the Microsoft Sentinel service: Capacity Reservations and Pay-As-You-Go. Microsoft Sentinel's.
 
 Now you've completed this module, you should be able to:

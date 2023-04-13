@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.make-data-available-azure-machine-learning.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary"
+  ms.date: 01/13/2023
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]

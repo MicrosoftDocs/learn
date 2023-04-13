@@ -1,4 +1,4 @@
-The reporting architecture in Azure AD consists of the following components:
+The reporting architecture in Azure Active Directory (Azure AD), part of Entra consists of the following components:
 
  -  **Activity**
     

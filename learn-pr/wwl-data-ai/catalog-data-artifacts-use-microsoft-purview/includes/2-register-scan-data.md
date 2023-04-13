@@ -19,7 +19,7 @@ Data sources are registered at the collection level. Scan results can then be se
 
 ## Register and scan data sources
 
-Data governance using begins at collection level, with the registration of data sources in Microsoft Purview governance portal. Microsoft Purview supports an array of data sources. Data teams (analysts, engineers, and scientists) may not be actively registering and scanning data in Microsoft Purview, but it's critical that data consumers understand governance efforts. Registering and scanning assets requires **Data Curator** permissions. 
+Data governance use begins at collection level, with the registration of data sources in Microsoft Purview governance portal. Microsoft Purview supports an array of data sources. Data teams (analysts, engineers, and scientists) may not be actively registering and scanning data in Microsoft Purview, but it's critical that data consumers understand governance efforts. Registering and scanning assets requires **Data Curator** permissions. 
 
 > [!IMPORTANT]
 > Data registered and scanned in Microsoft Purview only collects metadata information. Data remains in its location and isn't migrated to any other platform.
@@ -56,7 +56,7 @@ You'll now need to configure your scan and assign the following details:
 - [Create credentials](/azure/purview/manage-credentials) to authenticate to your registered data sources.
 - Choose a collection to send scan results.
 
-After the basic configuration, you'll *scope* your scan, which allows you to choose just a specific zone of your data source. For instance, if you have a collection call “Raw” in your data map, you can define the scope to scan only the raw container of your data lake.
+After the basic configuration, you'll *scope* your scan, which allows you to choose just a specific zone of your data source. For instance, if you have a collection called “Raw” in your data map, you can define the scope to scan only the raw container of your data lake.
 
 After configuring and scoping your scan, you'll define the *scan rule set*. A scan rule set is a container for grouping a set of scan rules together so that you can easily associate them with a scan. For example, you might create a default scan rule set for each of your data source types, and then use these scan rule sets by default for all scans within your company. You might also want users with the right permissions to create other scan rule sets with different configurations based on business need.
 

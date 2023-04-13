@@ -1,5 +1,4 @@
-In this exercise, you'll take advantage of the `unittest` module, which is included in Python's standard library to write tests and fix bugs. Passing tests ensure that code is behaving as expected, increasing the confidence that new changes aren't breaking previous functionality.
-
+In this exercise, you'll take advantage of the `unittest` module, which is included in Python's standard library to write tests and fix bugs. Passing tests ensures that code is behaving as expected, increasing the confidence that new changes aren't breaking previous functionality.
 
 ## Step 1 - Add a file for this exercise
 
@@ -47,7 +46,7 @@ Now the test file has a function to test and a couple of tests to verify its beh
     $ python test_exercise.py
     ```
 
-     The run should complete with one test passing and one failure, and the failure output should be similar to the following output:
+    The run should complete with one test passing and one failure, and the failure output should be similar to the following output:
 
     ```bash
     .F
@@ -69,7 +68,7 @@ Now the test file has a function to test and a couple of tests to verify its beh
 
 ## Step 3 - Fix the bug and make the tests pass
 
-Now that the error is pointing out to the capitalized `'Yes'` string input, the bug needs to be fixed. Although the test can be updated to use the lowercase word (`'yes'`) to make it pass, the fix is going to make the function work with any casing. That means that any of these options should work: `YES`, `YeS`, `yES`, `yes`, `yeS`, `Y`, `y`. 
+Now that the error has pointed out the capitalized `'Yes'` string input, the bug needs to be fixed. Although the test can be updated to use the lowercase word (`'yes'`) to make it pass, the fix is going to make the function work with any casing. That means that any of these options should work: `YES`, `YeS`, `yES`, `yes`, `yeS`, `Y`, `y`.
 
 1. Update the `str_to_bool()` function to reassign the `value` variable to be lowercase using `value.lower()`. The updated function should look like this:
 
@@ -85,7 +84,7 @@ Now that the error is pointing out to the capitalized `'Yes'` string input, the 
             return False
     ```
 
-2. Rerun the test script: 
+2. Rerun the test script:
 
     ```bash
     $ python test_exercise.py
@@ -102,15 +101,15 @@ Now that the error is pointing out to the capitalized `'Yes'` string input, the 
     ```
 
 > [!NOTE]
-> Since the function is able to work with more values of different casing, more tests should be added to cover those variations. This would prevent in the future that changes to the function cause a different (unexpected) behavior.
+> Since the function is able to work with more values of different casing, more tests should be added to cover those variations. This would prevent future changes to the function from causing a different (unexpected) behavior.
 
 ## Step 4 - Add new code with tests
 
 Part of the idea of working with tests is getting validation for changes. Even if the changes are updating existing code or adding new functionality, tests increase the confidence that everything still works as expected.
 
-In this case, the function being tested only works with strings, so using any other type as input would cause an unhandled exception to be raised. 
+In this case, the function being tested only works with strings, so using any other type as input would cause an unhandled exception to be raised.
 
-1. Update the function so that it raises an `AttributeError` if a non-string value is used. This can be detected by catching an `AttributeError` when calling `value.lower()` because only strings have a `lower()` method:
+1. Update the function so that it raises an `AttributeError` if a non-string value is used. This case can be detected by catching an `AttributeError` when calling `value.lower()` because only strings have a `lower()` method:
 
     ```python
     def str_to_bool(value):
@@ -127,7 +126,7 @@ In this case, the function being tested only works with strings, so using any ot
             return False
     ```
 
-2. Use a new assert method from `unittest.TestCase` in the test class. This new test should verify that the `AttributeError` raises on non-string input:
+2. Use a new assert method from `unittest.TestCase` in the test class. This new test should verify that the `AttributeError` is raised by non-string input:
 
     ```python
         def test_invalid_input(self):
@@ -135,7 +134,7 @@ In this case, the function being tested only works with strings, so using any ot
                 str_to_bool(1)
     ```
 
-3. Run all tests again by executing the script with Python to get the following output:
+3. Run the tests again by executing the Python script. the output should show three passing tests:
 
     ```bash
     $ python test_exercise.py
@@ -146,13 +145,13 @@ In this case, the function being tested only works with strings, so using any ot
     OK
     ```
 
-## Check your work 
+## Check your work
 
-At this point you should have a Python test file named similar to *test_exercise.py* with the following:
+At this point you should have a Python test file, named *test_exercise.py* or something similar, with the following components:
 
 - A `str_to_bool()` function
-- A `try/except` block in the `str_to_bool()` function that catches `AtributeError`
-- A `TestStrToBool()` test class that inherits from `unittest.TestCase`
-- At least three test methods that test inputs to the `str_to_bool()` function
+- A `try/except` block in the `str_to_bool()` function that catches `AttributeError`.
+- A `TestStrToBool()` test class that inherits from `unittest.TestCase`.
+- At least three test methods that test inputs to the `str_to_bool()` function.
 
-All tests should be passing when running them in the terminal.
+All of these tests should pass when you run them in the terminal.

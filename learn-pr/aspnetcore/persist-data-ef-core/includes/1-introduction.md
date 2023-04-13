@@ -6,7 +6,7 @@ Suppose you're an employee of a pizza company named Contoso Pizza. Your manager 
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you'll:
 
 - Review object-relational mapper (ORM) concepts.
 - Understand Entity Framework Core (EF Core) architecture.

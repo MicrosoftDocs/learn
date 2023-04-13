@@ -4,7 +4,7 @@ To complete the exercises in this module, you need an Azure account. If you don'
 
 ## Connect to the data
 
-You'll use the Azure Data Explorer web interface to connect to the data. However, the Kusto Query Language itself can also be used in Log Analytics, Azure Sentinel, and other services. You'll only need to connect once, and you'll continue to use this data connection for all queries in the following units.
+You'll use the Azure Data Explorer web interface to connect to the data. However, you can also use the Kusto Query Language itself in Log Analytics, Azure Sentinel, and other services. You'll only need to connect once, and you'll continue to use this data connection for all queries in the following units.
 
 1. Use your Azure account to sign in to the [Azure Data Explorer web UI](https://dataexplorer.azure.com/).
 1. In the left pane, select **Query**.
@@ -27,4 +27,4 @@ Queries always run in the context of a database, so you need to connect to a spe
 
 1. If you expand the **Samples** database, **Tables**, and the **Storm_Events** folder, you'll see a list of tables below the database; we'll be using the *StormEvents* table.
 
-Now you're ready to run queries on the *StormEvents* table. You'll do that in the following exercise.
+Now, you're ready to run queries on the *StormEvents* table. You'll do that in the following exercise.

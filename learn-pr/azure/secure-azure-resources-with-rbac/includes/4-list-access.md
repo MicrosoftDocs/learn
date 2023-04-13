@@ -16,7 +16,7 @@ Follow these steps to see what roles are currently assigned to you.
 
     :::image type="content" source="../media/4-my-permissions-pane.png" alt-text="Screenshot of the My permissions pane.":::
 
-    You'll find the roles that you have been assigned and the scope. Your list will look different.
+    You'll find the roles that you've been assigned and the scope. Your list will look different.
 
 ## List role assignments for a resource group
 
@@ -36,13 +36,13 @@ Follow these steps to see what roles are assigned at the resource group scope.
 
 1. Select the **Role assignments** tab.
 
-    This tab shows who has access to the resource group. Notice that some roles are scoped to **This resource** while others are **(Inherited)** from a parent scope.
+    This tab shows who has access to the resource group. Notice that some roles are scoped to **This resource**, while others are **(Inherited)** from a parent scope.
 
    :::image type="content" source="../media/4-resource-group-role-assignment.png" alt-text="Screenshot showing Role assignments tab for the selected resource group.":::
 
 ## List roles
 
-As you learned in the previous unit, a role is a collection of permissions. Azure has more than 70 built-in roles that you can use in your role assignments. Follow this step to list the roles.
+As you learned in the previous unit, a role is a collection of permissions. Azure has more than 70 built-in roles that you can use in your role assignments. To list the roles:
 
 - In the menu bar at the top of the pane, select the **Roles** tab to list of all the built-in and custom roles.
 

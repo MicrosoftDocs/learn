@@ -8,13 +8,13 @@ To set up your system, you:
 > * On Azure Boards, move the work item for this module to the **Doing** column.
 > * Create the Azure App Service environments by using the Azure CLI in Azure Cloud Shell.
 > * Create pipeline variables that define the names of your App Service environments.
-> * Create a service connection that enables Azure Pipelines to securely access your Azure subscription.
+> * Create a service connection that enables Azure Pipelines to access your Azure subscription securely.
 
 ## Add a user to Azure DevOps
 
 To complete this module, you need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true). You can get started with Azure for free.
 
-Although you don't need an Azure subscription to work with Azure DevOps, here you'll use Azure DevOps to deploy to resources that exist in your Azure subscription. To simplify the process, you use the same Microsoft account to sign in to both your Azure subscription and your Azure DevOps organization.
+Although you don't need an Azure subscription to work with Azure DevOps, here, you'll use Azure DevOps to deploy to resources that exist in your Azure subscription. To simplify the process, you use the same Microsoft account to sign in to both your Azure subscription and your Azure DevOps organization.
 
 If you use different Microsoft accounts to sign in to Azure and Azure DevOps, add a user to your DevOps organization under the Microsoft account that you use to sign in to Azure. For more information, see [Add users to your organization or project](/azure/devops/organizations/accounts/add-organization-users?azure-portal=true&tabs=browser). When you add the user, choose the **Basic** access level.
 
@@ -38,7 +38,7 @@ On the Azure DevOps Demo Generator site, follow these steps to run the template.
 1. Select **Sign In** and accept the usage terms.
 1. On the **Create New Project** page, select your Azure DevOps organization. Then enter a project name, such as *Space Game - web - Nonfunctional tests*.
 
-    :::image type="content" source="../media/3-create-new-project.png" alt-text="Creating a project through the Azure DevOps Demo Generator.":::
+    :::image type="content" source="../media/3-create-new-project.png" alt-text="Screenshot for Creating a project through the Azure DevOps Demo Generator.":::
 
 1. Select **Yes, I want to fork this repository**. Then select **Authorize**.
 1. Select **Create Project**.
@@ -53,13 +53,13 @@ On the Azure DevOps Demo Generator site, follow these steps to run the template.
 
 ## Move the work item to Doing
 
-In this part, on Azure Boards you assign yourself a work item that relates to this module. You also move the work item to the **Doing** state. In practice, your team would create work items at the start of each *sprint*, or work iteration.
+In this part, on Azure Boards, you assign yourself a work item that relates to this module. You also move the work item to the **Doing** state. In practice, your team would create work items at the start of each *sprint* or work iteration.
 
 Assigning work in this way gives you a checklist to work from. It gives your team visibility into what you're working on and how much work is left. It also helps the team enforce limits on work in progress (WIP) so that the team doesn't take on too much work at one time.
 
 Recall that the team settled on these top issues for the current sprint:
 
-:::image type="content" source="../../shared/media/deploy-all-tasks.png" alt-text="A screenshot of Azure Boards, showing the tasks for this sprint.":::
+:::image type="content" source="../../shared/media/deploy-all-tasks.png" alt-text="Screenshot of Azure Boards, showing the tasks for this sprint.":::
 
 > [!NOTE]
 > Within an Azure DevOps organization, work items are numbered sequentially. In your project, the number for each work item might not match what you see here.
@@ -70,14 +70,14 @@ To set up the work item:
 
 1. In Azure DevOps, navigate to **Boards**. Then select **Boards** from the menu.
 
-    :::image type="content" source="../../shared/media/azure-devops-boards-menu.png" alt-text="A screenshot of Azure DevOps showing the location of the Boards menu.":::
+    :::image type="content" source="../../shared/media/azure-devops-boards-menu.png" alt-text="Screenshot of Azure DevOps showing the location of the Boards menu.":::
 
 1. In the **Automate performance tests** work item, select the down arrow at the bottom of the card. Then assign the work item to yourself.
 
-    :::image type="content" source="../../shared/media/azure-boards-down-chevron.png" alt-text="A screenshot of Azure Boards showing the location of the down arrow.":::
+    :::image type="content" source="../../shared/media/azure-boards-down-chevron.png" alt-text="Screenshot of Azure Boards showing the location of the down arrow.":::
 1. Move the work item from the **To Do** column to the **Doing** column.
 
-    :::image type="content" source="../media/3-azure-boards-wi4-doing.png" alt-text="A screenshot of Azure Boards, showing the card in the Doing column.":::
+    :::image type="content" source="../media/3-azure-boards-wi4-doing.png" alt-text="Screenshot of Azure Boards, showing the card in the Doing column.":::
 
 At the end of this module, you move the card to the **Done** column after you complete the task.
 
@@ -128,7 +128,7 @@ Here you specify the default _region_, or geographic location, where your Azure 
 Here you create the App Service instances for the three stages that you'll deploy to: _Dev_, _Test_, and _Staging_.
 
 > [!NOTE]
-> For learning purposes, you use the default network settings. These settings make your site accessible from the internet. In practice, you could configure an Azure virtual network that places your website in a network that's not routable from the internet and that's accessible to only your team. Later, when you're ready, you could reconfigure your network to make the website available to your users.
+> For learning purposes, you use the default network settings. These settings make your site accessible from the internet. In practice, you could configure an Azure virtual network that places your website in a network that's not routable from the internet, and that's accessible to only your team. Later, when you're ready, you could reconfigure your network to make the website available to your users.
 
 1. In Cloud Shell, generate a random number that makes your web app's domain name unique.
 
@@ -179,7 +179,7 @@ Here you create the App Service instances for the three stages that you'll deplo
       --runtime "DOTNET|6.0"
     ```
 
-    For learning purposes, here you apply the same App Service plan, **B1 Basic**, to each App Service instance. In practice, you would assign a plan that matches your expected workload.
+    For learning purposes, here, you apply the same App Service plan, **B1 Basic**, to each App Service instance. In practice, you would assign a plan that matches your expected workload.
 
 1. Run the following `az webapp list` command to list the host name and state of each App Service instance.
 
@@ -190,7 +190,7 @@ Here you create the App Service instances for the three stages that you'll deplo
       --output table
     ```
 
-    Note the host name for each running service. You'll need these host names later when you verify your work. Here's an example:
+    Note the hostname for each running service. You'll need these host names later when you verify your work. Here's an example:
 
     ```output
     HostName                                                 State
@@ -204,7 +204,7 @@ Here you create the App Service instances for the three stages that you'll deplo
 
     You see this page:
 
-    :::image type="content" source="../../shared/media/app-service-default.png" alt-text="The default home page on Azure App Service.":::
+    :::image type="content" source="../../shared/media/app-service-default.png" alt-text="Screenshot of the default home page on Azure App Service.":::
 
 > [!IMPORTANT]
 > The [Clean up your Azure DevOps environment](/training/modules/run-non-functional-tests-azure-pipelines/6-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you're not charged for Azure resources after you complete this module. Be sure to follow the cleanup steps even if you don't complete this module.
@@ -220,7 +220,7 @@ To add the variables:
 1. In Azure DevOps, go to your **Space Game - web - Nonfunctional tests** project.
 1. Under **Pipelines**, select **Library**.
 
-    :::image type="content" source="../../create-release-pipeline/media/5-pipelines-library.png" alt-text="A screenshot of Azure Pipelines, showing the Library menu option.":::
+    :::image type="content" source="../../create-release-pipeline/media/5-pipelines-library.png" alt-text="Screenshot of Azure Pipelines, showing the Library menu option.":::
 1. Select **+ Variable group**.
 1. For the variable group name, under **Properties**, enter *Release*.
 1. Under **Variables**, select **+ Add**.
@@ -241,7 +241,7 @@ To add the variables:
 
     Your variable group resembles this one:
 
-    :::image type="content" source="../media/3-library-variable-group.png" alt-text="A screenshot of Azure Pipelines, showing the variable group. The group contains three variables.":::
+    :::image type="content" source="../media/3-library-variable-group.png" alt-text="Screenshot of Azure Pipelines, showing the variable group. The group contains three variables.":::
 
 ## Create the dev, test, and staging environments
 
@@ -251,7 +251,7 @@ To create the **dev**, **test**, and **staging** environments:
 
 1. From Azure Pipelines, select **Environments**.
 
-    :::image type="content" source="../../shared/media/pipelines-environments.png" alt-text="A screenshot of Azure Pipelines showing the location of the Environments menu option.":::
+    :::image type="content" source="../../shared/media/pipelines-environments.png" alt-text="Screenshot of Azure Pipelines showing the location of the Environments menu option.":::
 
 1. To create the **dev** environment:
     1. Select **Create environment**.

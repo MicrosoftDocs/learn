@@ -1,3 +1,4 @@
+
 Azure Blueprints provide a way to define a repeatable set of Azure resources.  Azure Blueprints enable development teams to rapidly provision and run new environments, with the knowledge that they're in line with the organization’s compliance requirements. Teams can also provision Azure resources across several subscriptions simultaneously, meaning they can achieve shorter development times and quicker delivery.
 
 Azure Blueprints are a declarative way to orchestrate the deployment of various resource templates and other artifacts such as:

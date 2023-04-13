@@ -3,9 +3,10 @@ uid: learn.azure.intro-to-content-moderator
 metadata:
   title: Introduction to Content Moderator
   description: Discover how Content Moderator can evaluate text, images, and video, for appropriateness.
-  ms.date: 01/29/2021
-  author: gerryo
-  ms.author: gerryo
+  ms.date: 03/13/2023
+  author: PatrickFarley
+  ms.author: pafarley
+  manager: nitinme
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Content Moderator

@@ -4,7 +4,7 @@ metadata:
   moduleType: standard
   title: Interact with data in Blazor web apps
   description: Learn how to create a graphical user interface in a Blazor web app by creating and assembling Blazor components. Access data and share it for display on multiple pages within your app.
-  ms.date: 8/13/2021
+  ms.date: 02/09/2023
   author: csharpfritz
   ms.author: jefritz
   ms.topic: interactive-tutorial

@@ -16,35 +16,35 @@ quiz:
   questions:
   - content: What is the Elasticsearch (self-managed) template?
     choices:
-    - content: An Azure Marketplace template used for deploying Elastic on Azure VMs using best practices
+    - content: An Azure Marketplace template used for deploying Elastic on Azure VMs using best practices.
       isCorrect: true
-      explanation: This template guides you through the deployment process using best practices
-    - content: A data visualization tool
+      explanation: The template guides you through the deployment process using best practices.
+    - content: A data visualization tool.
       isCorrect: false
-      explanation: Kibana is Elastic’s data visualization tool that is part of the Elastic Stack
-    - content: A template for deploying Elastic on-premises
+      explanation: Kibana is Elastic’s data visualization tool that is part of the Elastic Stack.
+    - content: A template for deploying Elastic on-premises.
       isCorrect: false
-      explanation: This is a template for deploying Elastic on Azure VMs
-  - content: What is the recommended number of nodes of Elasticsearch, you can start with if you’re not sure where to start? 
+      explanation: The template is for deploying Elastic on Azure VMs.
+  - content: What is the recommended number of Elasticsearch nodes to start with, if you’re not sure where to start? 
     choices:
     - content: One
       isCorrect: false
       explanation: While a single-node cluster may be sufficient, a three-nodes cluster is recommended.
     - content: Three
       isCorrect: true
-      explanation: A three-nodes cluster is recommended when starting and you can always adjust this later
+      explanation: A three-node cluster is recommended when starting and you can always adjust this number later.
     - content: "60"
       isCorrect: false
-      explanation: A three-nodes cluster is recommended when starting and you can always adjust this later
+      explanation: A three-node cluster is recommended when starting and you can always adjust this number later.
   - content: What is the final step to deploy Elastic on Azure VMs?
     choices:
-    - content: Enter the Basics
+    - content: Enter the Basics.
       isCorrect: false
-      explanation: This is the first step in the process
-    - content: Add Kibana & Logstash
+      explanation: This is the first step in the process.
+    - content: Add Kibana & Logstash.
       isCorrect: false
-      explanation: This is an optional step in the process
-    - content: Press Review and create
+      explanation: This is an optional step in the process.
+    - content: Select Review and create.
       isCorrect: true
-      explanation: This is the final step in deploying Elastic on Azure VMs
+      explanation: This is the final step in deploying Elastic on Azure VMs.
   

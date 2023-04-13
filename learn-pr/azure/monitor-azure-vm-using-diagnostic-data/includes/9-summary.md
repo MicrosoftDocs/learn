@@ -2,7 +2,9 @@ When you host your virtual machines on Azure, you're given basic metrics without
 
 You viewed the various metrics, built a dashboard, and created an alert to monitor performance. When the alert criteria were triggered, you got an email notification. You've seen how to use tools in Azure to get detailed information about a virtual machine's state.
 
-[!include[](../../../includes/azure-sandbox-cleanup.md)]
+## Clean up
+
+[!include[](../../../includes/azure-subscription-cleanup.md)]
 
 ## Learn more
 

@@ -3,7 +3,7 @@ uid: learn.azure.publish-static-web-app-api-preview-url.3-build-api
 metadata:
   title: Build an API with Azure Functions
   description: Learn how to build an API for your static web app with Azure Functions
-  ms.date: 06/17/2021
+  ms.date: 12/08/2022
   author: craigshoemaker
   ms.author: cshoe
   ms.topic: interactive-tutorial

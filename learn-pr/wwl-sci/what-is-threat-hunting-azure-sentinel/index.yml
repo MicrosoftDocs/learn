@@ -23,9 +23,11 @@ roles:
 - security-operations-analyst
 products:
 - azure
-- azure-sentinel
+- microsoft-sentinel
 subjects:
 - security
+- cloud-security
+- threat-protection
 units:
 - learn.wwl.what-is-threat-hunting-azure-sentinel.introduction
 - learn.wwl.what-is-threat-hunting-azure-sentinel.understand-cybersecurity

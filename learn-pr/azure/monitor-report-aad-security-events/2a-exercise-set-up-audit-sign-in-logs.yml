@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Set up and view sign-in logs and audit logs
   description: Exercise - Set up and view sign-in logs and audit logs.
   ms.date: 04/22/2022
-  author: MarkusVi
-  ms.author: markvi
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

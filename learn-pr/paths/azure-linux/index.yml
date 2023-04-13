@@ -4,7 +4,7 @@ metadata:
   title: Linux on Azure
   description: This comprehensive learning path reviews deployment and management of Linux on Azure. Learn about cloud computing concepts, Linux IaaS and PaaS solutions and benefits and Azure cloud services. Discover how to migrate and extend your Linux-based workloads on Azure with improved scalability, security, and privacy.
   brand: azure
-  ms.date: 6/26/2020
+  ms.date: 01/24/2023
   author: ChaseCrum
   ms.author: chasecrum
   ms.topic: interactive-tutorial
@@ -13,7 +13,6 @@ title: Linux on Azure
 summary: |
   This comprehensive learning path reviews deployment and management of Linux on Azure. Learn about cloud computing concepts, Linux IaaS and PaaS solutions and benefits and Azure cloud services. Discover how to migrate and extend your Linux-based workloads on Azure with improved scalability, security, and privacy.
 
-  This learning path should be explored alongside the [Azure Fundamentals part 1: Describe core Azure concepts](../az-900-describe-cloud-concepts/index.yml) learning path. If you're new to cloud computing, consider taking the first learning path in the Azure Fundamentals 6-part learning path series first.
 prerequisites: None
 video:
   title: "Linux on Azure video"
@@ -32,6 +31,7 @@ subjects:
 modules:
 - learn.azure.intro-to-azure-linux
 - learn.create-linux-vm-in-azure
+- learn.optimize-operations-with-automanage
 - learn-sqlserver.introduction-sql-server-linux
 - learn.wwl.introduction-open-source-database-migration-azure
 - learn.build-and-run-a-web-application-with-the-mean-stack-on-an-azure-linux-vm

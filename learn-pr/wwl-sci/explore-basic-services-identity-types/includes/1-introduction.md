@@ -1,3 +1,4 @@
+
 When it comes to security, your organization can no longer rely on its network boundary. To allow employees, partners, and customers to collaborate securely, organizations need to shift to an approach whereby identity becomes the new security perimeter. Using an identity provider helps organizations manage that shift and all the aspects of identity security.
 
 This module introduces you to Microsoft Azure Active Directory (Azure AD), part of Microsoft Entra. Microsoft Entra is a product family that encompasses all of Microsoft’s identity and access capabilities, including Microsoft Azure Active Directory (Azure AD).

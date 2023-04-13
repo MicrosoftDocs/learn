@@ -106,7 +106,7 @@ The following table compares the capabilities of streaming and push datasets.
 |Latency|~1 second|3-5 seconds|
 |Data retention|60 minutes|5 million rows per table, or 200,000 rows when **basicFIFO** retention is set|
 |Maximum ingestion rates|5 requests/second, 15 KB per request|1 request/second, 16 MB per request (maximum 10,000 rows)|
-|Data throughput limits|None|1 million rows/hour, but 12 rows/hours when the table exceeds 250,000 rows|
+|Data throughput limits|None|1 million rows/hour, but 120 rows/hours when the table exceeds 250,000 rows|
 |Dataset structure|Single table|Rich data model that supports filtering and aggregation|
 |Visual types|Streaming tiles only|Report visuals, including custom visuals|
 |Animation updates|Smooth and fluid|A bit twitchy|

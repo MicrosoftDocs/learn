@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.saas-foundations.pricing-models-for-saas
+title: Pricing models for SaaS solutions
+metadata:
+  title: Pricing models for SaaS solutions
+  description: "Learn what are the most common pricing models for SaaS solutions and how to come up with the pricing strategy."
+  ms.date: 09/11/2022
+  author: kostinams
+  ms.author: irkostin
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-pricing-models-for-saas.md)]

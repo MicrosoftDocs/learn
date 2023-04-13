@@ -6,6 +6,6 @@ We also demonstrated how to use lineage view in Power BI service to understand h
 
 Learn more about reusable Power BI assets with the following articles:
 
-- [Use composite models in Power BI Desktop](/transform-model/desktop-composite-models)
+- [Use composite models in Power BI Desktop](/power-bi/transform-model/desktop-composite-models)
 - [Using DirectQuery for Power BI datasets and Analysis Services](/power-bi/connect-data/desktop-directquery-datasets-azure-analysis-services)
 - [Manage DirectQuery connections to a published dataset](/power-bi/connect-data/desktop-discourage-directquery-connections-to-dataset)

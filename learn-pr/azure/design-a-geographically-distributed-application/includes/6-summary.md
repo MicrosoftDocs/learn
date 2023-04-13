@@ -4,7 +4,7 @@ We've seen how to make the networking elements of the application highly availab
 
 Many application services, such as web apps, web APIs, and Azure Functions that implement the core functionality of your application, can be deployed to multiple regions.
 
-Finally, you saw how to make the data architecture highly available and multi-regional by using replication in Azure SQL Database or Cosmos DB.
+Finally, you saw how to make the data architecture highly available and multi-regional by using replication in Azure SQL Database or Azure Cosmos DB.
 
 ## Learn more
 

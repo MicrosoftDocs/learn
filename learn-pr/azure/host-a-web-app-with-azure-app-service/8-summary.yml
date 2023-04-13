@@ -16,14 +16,14 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: "True or false: Azure App service can automatically scale your web application to meet traffic demand?"
+  - content: "True or false: Azure App service can automatically scale your web application to meet traffic demand."
     choices:
     - content: "True"
       isCorrect: true
-      explanation: "Azure App service has built-in auto scale support and will increase or decrease the resources allocated to run your app as needed, depending on the demand."
+      explanation: "Azure App service has built-in autoscale support and will increase or decrease the resources allocated to run your app as needed, depending on the demand."
     - content: "False"
       isCorrect: false
-      explanation: "Azure App service has built-in auto scale support and will increase or decrease the resources allocated to run your app as needed, depending on the demand."
+      explanation: "Azure App service has built-in autoscale support and will increase or decrease the resources allocated to run your app as needed, depending on the demand."
 
   - content: "Which of the following isn't a valid automated deployment source?"
     choices:

@@ -45,7 +45,7 @@ BEGIN TRY
     -- code to be executed
 END TRY
 BEGIN CATCH
-    PRINT ERROR_MESSAGE0.
+    PRINT ERROR_MESSAGE();
     THROW
 END CATCH
 ```

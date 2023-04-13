@@ -14,7 +14,7 @@ In this module, you'll learn how you can test your Bicep code within your Azure 
 
 You'll add linting to ensure the quality of your Bicep code, and preflight deployment validation to increase the chance that your deployments will succeed. You'll also use the what-if operation to add a manual approval step to your pipeline. After deployment, you'll verify your environment by running more tests.
 
-## What is the main goal?
+## What's the main goal?
 
 After you complete this module, you'll be able to update your Bicep deployment pipeline with validation and tests that help to ensure the quality of your Azure environment.
 
@@ -29,7 +29,7 @@ You should be familiar with using:
 
 To work through the exercises in the module, you'll need:
 
-- An Azure account, with the ability to create resource groups, Azure Active Directory applications, and service principals.
+- An Azure account with the ability to create resource groups, Azure Active Directory applications, and service principals.
 - An Azure DevOps organization and account.
 
 You'll also need the following installed locally:

@@ -2,15 +2,15 @@ Choose the correct service to create a test bot by examining your company's requ
 
 ## Examine the criteria for a test bot
 
-Your company wants to create a test bot. It will field customer-support requests and advise customers about new services. If the test bot is successful, your team will pursue further development to implement more sophisticated features.
+Your company wants to create a test bot. The bot will field customer-support requests and advise customers about new services. If the test bot is successful, your team will pursue further development to implement more sophisticated features.
 
 Your company has important criteria for creating the bot you need to consider. The following requirements should inform your decision-making process:
 
 - The initial development of a test bot should be in a low-code designer.
 - The test bot should include an existing LUIS app for language understanding. It should be trained to recognize financial industry terms and phrases.
 - The bot will be hosted on the company website.
-- After testing the bot, your team needs to integrate into it several C# libraries to extend its functionality.
-- After testing, you need to integrate the bot with a preexisting REST-enabled FAQ application.
+- After your team tests the bot, they need to integrate several C# libraries into it, to extend its functionality.
+- After your testing is complete, you need to integrate the bot with a pre-existing REST-enabled FAQ application.
 
 ## Consider factors to choose a service
 
@@ -41,7 +41,7 @@ For the test bot, all development must be performed in a low-code designer that 
 
 ## Why Power Virtual Agents isn't a good choice
 
-The second requirement for the test bot involves integration with a LUIS app. Although Power Virtual Agents does have its own natural language understanding capabilities, it doesn't support direct integration with LUIS in its low-code designer. That's why it's not the correct service to use.
+The second requirement for the test bot involves integration with a LUIS app. Although Power Virtual Agents does have its own natural language understanding capabilities, it doesn't support direct integration with LUIS in its low-code designer.
 
 Another reason why Power Virtual Agents isn't a good choice is that it doesn't fulfill your development team's requirement for code-based integration of C# libraries.
 

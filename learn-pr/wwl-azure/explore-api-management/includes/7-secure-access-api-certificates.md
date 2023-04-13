@@ -1,3 +1,4 @@
+
 Certificates can be used to provide Transport Layer Security (TLS) mutual authentication between the client and the API gateway. You can configure the API Management gateway to allow only requests with certificates containing a specific thumbprint. The authorization at the gateway level is handled through inbound policies.
 
 ## Transport Layer Security client authentication

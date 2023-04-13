@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.wwl.enroll-devices-use-endpoint-configuration-manager
+metadata:
+  title: Enroll devices using Microsoft Configuration Manager
+  description: "This module introduces students to client deployment options and some of the high-level management and monitoring options that are available using Configuration Manager"
+  ms.date: 03/10/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+  ms.prod: configuration-manager
+title: Enroll devices using Microsoft Configuration Manager
+summary: This module introduces students to client deployment options and some of the high-level management and monitoring options that are available using Configuration Manager.
+abstract: |
+  After completing this module, you will be able to:
+  - Describe Microsoft Endpoint Manager.
+  - Understand the advantages of managing a client with Configuration Manager.
+  - Deploy the Configuration Manager client.
+  - Monitor the Configuration Manager client.
+  - Manage Configuration Manager devices.
+prerequisites: |
+  - Strong technical skills installing, maintaining, and troubleshooting the Windows 10 OS or later.
+  - Strong understanding of computer networking, client security, and application concepts.
+  - Experience using Active Directory Domain Services.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- configuration-manager
+units:
+- learn.wwl.enroll-devices-use-endpoint-configuration-manager.introduction
+- learn.wwl.enroll-devices-use-endpoint-configuration-manager.deploy-configuration-manager-client
+- learn.wwl.enroll-devices-use-endpoint-configuration-manager.monitor-configuration-manager-client
+- learn.wwl.enroll-devices-use-endpoint-configuration-manager.manage-configuration-manager-client
+- learn.wwl.enroll-devices-use-endpoint-configuration-manager.knowledge-check
+- learn.wwl.enroll-devices-use-endpoint-configuration-manager.summary
+badge:
+  uid: learn.wwl.enroll-devices-using-endpoint-configuration-manager.badge

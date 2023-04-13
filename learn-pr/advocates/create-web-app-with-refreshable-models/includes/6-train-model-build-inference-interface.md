@@ -17,21 +17,21 @@ Make sure to give this project the type *Classification* as it will simply deter
 
 Now you are ready to train on your image set.
 
-In the folder you downloaded, you'll find two folders, one labeled 'ice cream' and the other 'dalmatian'. Select the `+` icon in your Custom Vision AI project, and select the images in the `dalmatian` folder. Tag those `dalmatian`. Do the same process for the `ice cream` folder, tagging those `ice cream`.
+In the folder you downloaded, you'll find two folders, one labeled 'ice cream' and the other 'dalmatian'. Select the **Add images** button in your Custom Vision AI project, and select the images in the `dalmatian` folder. Tag those `dalmatian`. Do the same process for the `ice cream` folder, tagging those `ice cream`.
 
 ![Add tagging.](../media/tagging.png)
 
-You now have your twelve training images uploaded and tagged. Select the *gear* icon at the top, and select *Quick Training*. You will see the results with performance analyzed. Test your data on a new image of ice cream or a dalmatian. Here is one to try:
+You now have your twelve training images uploaded and tagged. Select the **Train** button at the top, and select **Quick Training**. You will see the results with performance analyzed. Test your data on a new image of ice cream or a dalmatian. Here is one to try:
 
 ![a dalmatian.](../media/dalmatian.jpg)
 
-Drag this image to your desktop, and then select the *checkmark* icon in the Custom Vision AI interface, and browse to find the image on your desktop. The model classifies this new image as a dalmatian!
+Drag this image to your desktop, and then select the **Quick Test** button in the Custom Vision AI interface, and browse to find the image on your desktop. The model classifies this new image as a dalmatian!
 
 ![classification success.](../media/classification-test.png)
 
 ## Download your model
 
-Select the *down arrow* icon at the top of the Custom Vision AI interface to download your model and its associated assets. Select *TensorFlow* as the model type, and `tensorflow.js` in the dropdown list.
+Select the **Export** button at the top of the Custom Vision AI interface to download your model and its associated assets. Select *TensorFlow* as the model type, and `tensorflow.js` in the dropdown list. When the package is complete, select **Download**.
 
 ![tf.js.](../media/tensorflowjs.png)
 
@@ -49,7 +49,7 @@ The first thing to do is install a special npm package into your web app, *custo
 
 1. In the same file, also add `"raw-loader": "^4.0.0",` to the `devDependencies` list. You need this package to manage reading .txt files from your Vue app.
 
-1. In the same file, add `"webpack-cli": "^3.3.10"` to the `devDependencies` list so that the webpack CLI will be usable within the app, which is necessary for text file parsing.
+1. In the same file, add `"webpack-cli": "^3.3.10"` to the `devDependencies` list so that the Webpack CLI will be usable within the app, which is necessary for text file parsing.
 
 Stop your web app if it's running by pressing <kbd>Ctrl+C</kbd>, and run `npm i` from the root, via your terminal. This will install this package.
 

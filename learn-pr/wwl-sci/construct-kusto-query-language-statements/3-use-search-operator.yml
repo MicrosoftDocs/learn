@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.construct-kql-statements.use-search-operator
+title: Use the search operator
+metadata:
+  title: Use the search operator
+  description: "Use the search operator"
+  ms.date: 02/23/2023
+  author: wwlpublish
+  ms.author: kelawson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-use-search-operator.md)]

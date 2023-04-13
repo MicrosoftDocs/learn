@@ -57,6 +57,7 @@ Each `ActionResult` instance used in the preceding action is mapped to the corre
 |`BadRequest` is implied      |400             |The request body's `Pizza` object is invalid.|
 
 ## DELETE
+
 One of the easier actions to implement is the `DELETE` action, which takes in just the `id` parameter of the pizza to remove from the in-memory cache:
 
 ```csharp

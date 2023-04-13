@@ -12,11 +12,11 @@ The simplest way to provide the same AD DS environment in Azure that an organiza
 1. Connect that virtual network to the on-premises network.
 1. Configure that subnet as a new AD DS site, as shown in the following image.
 
-   :::image type="content" source="../media/image5.png" alt-text="Replication of an on-premises identity hosted in Active Directory Domain Services to Azure Active Directory." lightbox="../media/image5.png":::
+   :::image type="content" source="../media/4-identity-replication-diagram.png" alt-text="Diagram that shows replication of an on-premises identity hosted in Active Directory Domain Services to Azure Active Directory." border="false" lightbox="../media/4-identity-replication-diagram.png":::
 
 Another option is to configure the cloud-hosted AD DS domain as a child domain of the on-premises domain's forest. An additional option is to configure the AD DS domain controllers running in the cloud as a separate forest that has a trust relationship with the on-premises forest. The following image shows this resource forest topology.
 
-:::image type="content" source="../media/image6.png" alt-text=" On-premises AD DS configured in a trust relationship with an AD DS deployment hosted on an Azure subnet." lightbox="../media/image6.png":::
+:::image type="content" source="../media/4-trust-relationship-diagram.png" alt-text="Diagram that shows on-premises AD DS configured in a trust relationship with an AD DS deployment hosted on an Azure subnet." border="false" lightbox="../media/4-trust-relationship-diagram.png":::
 
 When organizations deploy domain controllers on virtual machines (VMs) in Azure, those organizations can then deploy workloads that require line of sight to a domain controller on the same Azure Virtual Network subnet where they deployed the domain controller VMs. This is a conceptually simple model of hybrid cloud for many organizations because Azure datacenters are treated as a remote Active Directory site.
 
@@ -28,7 +28,7 @@ Azure Active Directory (Azure AD) Connect allows organizations to synchronize th
 
 The following image shows an on-premises AD DS instance synchronizing with an Azure AD instance.
 
-:::image type="content" source="../media/image7.png" alt-text="Identity synchronization between on-premises Active Directory Domain Services instances and an Azure Active Directory tenant." lightbox="../media/image7.png":::
+:::image type="content" source="../media/4-identity-synchronization-diagram.png" alt-text="Diagram that shows identity synchronization between on-premises Active Directory Domain Services instances and an Azure Active Directory tenant." border="false" lightbox="../media/4-identity-synchronization-diagram.png":::
 
 If Tailwind Traders plans to adopt Microsoft 365 technologies such as Exchange Online or Microsoft Teams, it will need to configure Azure AD Connect to replicate identities from its on-premises AD DS environment to Azure. If the company also wants to use on-premises identities with applications in Azure, but doesn't want to deploy AD DS domain controllers on VMs, it will also need to deploy Azure AD Connect.
 
@@ -40,7 +40,7 @@ Azure AD DS allows you to have a basic managed Active Directory environment avai
 
 The following image shows an Azure AD DS architecture.
 
-:::image type="content" source="../media/image8.png" alt-text="On-premises AD DS synchronizes with an Azure AD tenant that populates an Azure AD DS managed domain." lightbox="../media/image8.png":::
+:::image type="content" source="../media/4-azure-active-directory-domain-services-architecture.png" alt-text="Diagram that shows how on-premises AD DS synchronizes with an Azure AD tenant that populates an Azure AD DS managed domain." border="false" lightbox="../media/4-azure-active-directory-domain-services-architecture.png":::
 
 One drawback to Azure AD DS is that the Group Policy implementation is basic. It includes a fixed set of policies and offers no ability to create Group Policy Objects (GPOs). Even though the identities used on-premises will be available in Azure, any policies configured on-premises won't be available.
 

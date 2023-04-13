@@ -1,9 +1,9 @@
 name: deploy-toy-website-test
 concurrency: toy-company
 
-on: 
+on:
   push:
-    branches: 
+    branches:
       - main
 
 permissions:
@@ -15,17 +15,17 @@ env:
   ENVIRONMENT_TYPE: Test
 
 jobs:
-  lint: 
+  lint:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - name: Run Bicep linter
       run: az bicep build --file deploy/main.bicep
 
-  validate: 
+  validate:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - uses: azure/login@v1
       name: Sign in to Azure
       with:
@@ -45,7 +45,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: [lint, validate]
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - uses: azure/login@v1
       name: Sign in to Azure
       with:
@@ -67,7 +67,7 @@ jobs:
     environment: Website
     needs: preview
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - uses: azure/login@v1
       name: Sign in to Azure
       with:

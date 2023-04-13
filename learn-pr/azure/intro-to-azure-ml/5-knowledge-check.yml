@@ -22,7 +22,7 @@ quiz:
       explanation: "Incorrect. Network security can be managed through the Azure portal and Workspace."
     - content: "Visual canvas with drag and drop controls."
       isCorrect: true
-      explanation: "Correct. Azure ML Designer is found within the Azure ML Studio and is suited for building ML pipelines by dragging and dropping modules to create workflows or tasks execute in a particular order."
+      explanation: "Correct. Azure ML Designer is found within the Azure ML Studio. It's suited for building ML pipelines by dragging and dropping modules to create workflows or tasks execute in a particular order."
     - content: "Model storage and versioning"
       isCorrect: false
       explanation: "Incorrect. Model storage and versioning can be accessed via the Workspace and Notebook feature."
@@ -30,7 +30,7 @@ quiz:
     choices:
     - content: "A coding environment for deploying and monitoring models"
       isCorrect: false
-      explanation: "Incorrect. The coding environment can be found within a typical deployment pipeline but are not a description of a pipeline."
+      explanation: "Incorrect. The coding environment can be found within a typical deployment pipeline but isn't a description of a pipeline."
     - content: "A top-level resource for managing all assets you create when you use Azure Machine Learning"
       isCorrect: false
       explanation: "Incorrect. This description describes a Workspace, which is where you manage all artifacts used to train and deploy models."
@@ -41,10 +41,10 @@ quiz:
     choices:
     - content: "Faster deployment of models"
       isCorrect: false
-      explanation: "Incorrect. Yes, this is a MLOps principled feature in Azure ML, however, other features are also present within this service."
+      explanation: "Incorrect. Yes, faster deployment is a MLOps principled feature in Azure ML, however, other features are also present within the service."
     - content: "Reproducible training pipelines and environments"
       isCorrect: false
-      explanation: "Incorrect. Yes, this is a MLOps principled feature in Azure ML, however, other features are also present within this service."
+      explanation: "Incorrect. Yes, reproducible training pipelines and environments are MLOps principled features in Azure ML, however, other features are also present within the service."
     - content: "All of the above"
       isCorrect: true
       explanation: "Correct. Azure ML incorporates all of these principles within its features to help create reproducible and reliable creation of models."

@@ -14,22 +14,30 @@ In this task, you'll deploy these components as microservices to the Azure Sprin
 > [!NOTE]
 > When you deploy the customers-service, vets-service and visits-service you should do so with the mysql profile activated.
 
-1.  In the main **pom.xm**l file, change the spring-cloud.version on line 33 from version **2021.0.2** to **2021.0.0** and save the file.
+1.  In the main **pom.xm**l file, validate the version number on line 9.
     
     ```
-    <spring-cloud.version>2021.0.0</spring-cloud.version>
+    <parent>
+        <groupId>org.springframework.samples</groupId>
+        <artifactId>spring-petclinic-microservices</artifactId><version>2.7.6</version>
+    </parent>
     ```
-2.  Begin by building all the microservice of the spring petclinic application, by running `mvn clean package` in the root directory of the application.
+2.  From the Git Bash window, set a `VERSION` environment variable to this version number **2.7.6**.<br>
+    
+    ```
+    VERSION=2.7.6
+    ```
+3.  Begin by building all the microservice of the spring petclinic application, by running `mvn clean package` in the root directory of the application.
     
     ```
     cd ~/spring-petclinic-microservices/
     mvn clean package -DskipTests
     ```
 
-3.  Verify that the build succeeds by reviewing the output of the `mvn clean package -DskipTests` command, which should have the following format:
+4.  Verify that the build succeeds by reviewing the output of the `mvn clean package -DskipTests` command, which should have the following format:
     
     ```
-    [INFO] Reactor Summary for spring-petclinic-microservices 2.6.3:
+    [INFO] Reactor Summary for spring-petclinic-microservices 2.7.6:
     [INFO]
     [INFO] spring-petclinic-microservices ..................... SUCCESS [ 0.224 s]
     [INFO] spring-petclinic-admin-server ...................... SUCCESS [ 5.665 s]
@@ -46,7 +54,7 @@ In this task, you'll deploy these components as microservices to the Azure Sprin
     [INFO] ------------------------------------------------------------------------
     ```
 
-4.  For each application, you'll now create an app on Azure Spring Apps service. you'll start with the api-gateway. To deploy it, from the Git Bash prompt, run the following command:
+5.  For each application, you'll now create an app on Azure Spring Apps service. you'll start with the api-gateway. To deploy it, from the Git Bash prompt, run the following command:
     
     ```Bash
     az spring-cloud app create \
@@ -59,7 +67,7 @@ In this task, you'll deploy these components as microservices to the Azure Sprin
     > [!NOTE]
     > Wait for the provisioning to complete, about 5 minutes.
 
-5.  Next deploy the jar file to this newly created app by running the following command from the Git Bash prompt:
+6.  Next deploy the jar file to this newly created app by running the following command from the Git Bash prompt:
     
     ```Bash
     az spring-cloud app deploy \
@@ -67,10 +75,10 @@ In this task, you'll deploy these components as microservices to the Azure Sprin
         --resource-group $RESOURCE_GROUP \
         --name api-gateway \
         --no-wait \
-        --artifact-path spring-petclinic-api-gateway/target/spring-petclinic-api-gateway-2.6.7.jar
+        --artifact-path spring-petclinic-api-gateway/target/spring-petclinic-api-gateway-$VERSION.jar    
     ```
 
-6.  In the same way create an app for the admin-server microservice:
+7.  In the same way create an app for the admin-server microservice:
     
     ```Bash
     az spring-cloud app create \
@@ -83,7 +91,7 @@ In this task, you'll deploy these components as microservices to the Azure Sprin
     > [!NOTE]
     > Wait for the operation to complete, about 5 minutes.
 
-7.  Next deploy the jar file to this newly created app:
+8.  Next deploy the jar file to this newly created app:
     
     ```Bash
     az spring-cloud app deploy \
@@ -91,10 +99,10 @@ In this task, you'll deploy these components as microservices to the Azure Sprin
         --resource-group $RESOURCE_GROUP \
         --name app-admin \
         --no-wait \
-        --artifact-path spring-petclinic-admin-server/target/spring-petclinic-admin-server-2.6.7.jar
+        --artifact-path spring-petclinic-admin-server/target/spring-petclinic-admin-server-$VERSION.jar
     ```
 
-8.  Next, you'll create an app for the customers-service microservice:
+9.  Next, you'll create an app for the customers-service microservice:
     
     ```Bash
     az spring-cloud app create \
@@ -106,7 +114,7 @@ In this task, you'll deploy these components as microservices to the Azure Sprin
     > [!NOTE]
     > Wait for the operation to complete, about 5 minutes.
 
-9.  You'll not assign an endpoint but you'll set the mysql profile (customers service):
+10. You'll not assign an endpoint but you'll set the mysql profile (customers service):
     
     ```Bash
     az spring-cloud app deploy \
@@ -114,11 +122,11 @@ In this task, you'll deploy these components as microservices to the Azure Sprin
         --resource-group $RESOURCE_GROUP \
         --name customers-service \
         --no-wait \
-        --artifact-path spring-petclinic-customers-service/target/spring-petclinic-customers-service-2.6.7.jar \
+        --artifact-path spring-petclinic-admin-server/target/spring-petclinic-admin-server-$VERSION.jar
         --env SPRING_PROFILES_ACTIVE=mysql
     ```
 
-10. Next, you'll create an app for the visits-service microservice:
+11. Next, you'll create an app for the visits-service microservice:
     
     ```Bash
     az spring app create \
@@ -130,7 +138,7 @@ In this task, you'll deploy these components as microservices to the Azure Sprin
     > [!NOTE]
     > Wait for the operation to complete, about 5 minutes.
 
-11. For the visit-service will also skip the endpoint assignment but include the mysql profile:
+12. For the visit-service will also skip the endpoint assignment but include the mysql profile:
     
     ```Bash
     az spring app deploy \
@@ -138,11 +146,11 @@ In this task, you'll deploy these components as microservices to the Azure Sprin
         --resource-group $RESOURCE_GROUP \
         --name visits-service \
         --no-wait \
-        --artifact-path spring-petclinic-visits-service/target/spring-petclinic-visits-service-2.6.7.jar \
+        --artifact-path spring-petclinic-admin-server/target/spring-petclinic-admin-server-$VERSION.jar
         --env SPRING_PROFILES_ACTIVE=mysql
     ```
 
-12. To conclude, you'll create an app for the vets-service microservice:
+13. To conclude, you'll create an app for the vets-service microservice:
     
     ```Bash
     az spring app create \
@@ -154,7 +162,7 @@ In this task, you'll deploy these components as microservices to the Azure Sprin
     > [!NOTE]
     > Wait for the operation to complete, about 5 minutes.
 
-13. In this case, you'll also skip the endpoint assignment but include the mysql profile:
+14. In this case, you'll also skip the endpoint assignment but include the mysql profile:
     
     ```Bash
     az spring app deploy \
@@ -162,6 +170,6 @@ In this task, you'll deploy these components as microservices to the Azure Sprin
         --resource-group $RESOURCE_GROUP \
         --name vets-service \
         --no-wait \
-        --artifact-path spring-petclinic-vets-service/target/spring-petclinic-vets-service-2.6.7.jar \
+        --artifact-path spring-petclinic-admin-server/target/spring-petclinic-admin-server-$VERSION.jar
         --env SPRING_PROFILES_ACTIVE=mysql
     ```

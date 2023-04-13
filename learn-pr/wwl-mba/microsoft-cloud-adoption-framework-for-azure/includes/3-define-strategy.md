@@ -71,7 +71,7 @@ The most successful cloud adoption journeys start with a business outcome in min
 - Building or facilitating the cloud rationalization process, selecting the first application, and managing subsequent prioritized backlogs.
 - Managing communications with key stakeholders and promoting the cloud adoption journey success and learnings.
 
-Remember that the chief financial officer (CFO) can be a key player in creating and landing zone a cloud adoption plan and can drive the value of migration and innovation and create a financial plan for adoption.
+Remember that the chief financial officer (CFO) can be a key player in creating and landing a cloud adoption plan and can drive the value of migration and innovation, including creating a financial plan for adoption.
 
 Here are some tools to support you in your financial planning:
 

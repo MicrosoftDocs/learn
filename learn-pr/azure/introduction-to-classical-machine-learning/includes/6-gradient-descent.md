@@ -1,8 +1,8 @@
 We've seen how cost functions evaluate how well models perform by using data. The optimizer is the final piece of the puzzle.
 
-The role of the optimizer is to alter the model in a way that improves its performance. It does this by inspecting the model outputs and cost and suggesting new parameters for the model.
+The role of the optimizer is to alter the model in a way that improves its performance. It does this alteration by inspecting the model outputs and cost and suggesting new parameters for the model.
 
-For example, in our farming scenario, our linear model has two parameters: the line's intercept and the line's slope. If the intercept of the line is wrong, the model will underestimate or overestimate temperatures on average. If the slope is set wrong, the model won't do a good job of demonstrating how temperatures have changed since the 1950s. The optimizer changes these two parameters so that they do an optimal job of modeling temperatures over time.
+For example, in our farming scenario, our linear model has two parameters: the line's intercept and the line's slope. If the intercept of the line is wrong, the model underestimates or overestimates temperatures on average. If the slope is set wrong, the model won't do a good job of demonstrating how temperatures have changed since the 1950s. The optimizer changes these two parameters so that they do an optimal job of modeling temperatures over time.
 
 :::image type="content" source="../media/2-6-a.png" alt-text="Diagram that shows the optimizer part of the machine learning lifecycle." border="false":::
 
@@ -10,7 +10,7 @@ For example, in our farming scenario, our linear model has two parameters: the l
 
 The most common optimization algorithm today is gradient descent. Several variants of this algorithm exist, but they all use the same core concepts.
 
-Gradient descent uses calculus to estimate how changing each parameter will change the cost. For example, increasing a parameter might be predicted to reduce the cost.
+Gradient descent uses calculus to estimate how changing each parameter changes the cost. For example, increasing a parameter might be predicted to reduce the cost.
 
 Gradient descent is named as such because it calculates the gradient (slope) of the relationship between each model parameter and the cost. The parameters are then altered to move down this slope.
 
@@ -22,7 +22,7 @@ Our previous example looked to do a good job, assuming that cost would have kept
 
 :::image type="content" source="../media/2-6-b.png" alt-text="Plot of cost versus model parameter, with a minima for cost when the model parameter is 5." border="false":::
 
-This wouldn't have been such a great job, if parameters smaller than 0 or larger than 10 would have resulted in lower costs, like in this image:
+This job wouldn't have been so great if parameters smaller than 0 or larger than 10 would have resulted in lower costs, like in this image:
 
 :::image type="content" source="../media/2-6-c.png" alt-text="Plot of cost versus model parameter, with a local minima for cost when the model parameter is 5 but a lower cost when the model parameter is at negative 6." border="false":::
 

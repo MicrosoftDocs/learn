@@ -52,13 +52,15 @@ Many GitHub Actions are open source and available for anyone who wants to use th
 - Check if the action is verified in the GitHub Marketplace. This means that GitHub has approved the use of this action. However, you should still review it before using it.
 - Include the version of the action you're using by specifying a Git ref, SHA, or tag.
 
-## Two types of GitHub actions
+## Types of GitHub actions
 
-There are two types of GitHub actions: container actions and JavaScript actions.
+There are three types of GitHub actions: container actions, JavaScript actions, and composite actions.
 
 With **container actions**, the environment is part of the action's code. These actions can only be run in a Linux environment that GitHub hosts. Container actions support many different languages.
 
-**JavaScript actions** don't include the environment in the code. You'll have to specify the environment to execute these actions. You can run in a VM in the cloud or on-premises. JavaScript actions support Linux, macOS, and Windows environments.
+**JavaScript actions** don't include the environment in the code. You'll have to specify the environment to execute these actions. You can run these actions in a VM in the cloud or on-premises. JavaScript actions support Linux, macOS, and Windows environments.
+
+**Composite actions** allow you to combine multiple workflow steps within one action. For example, you can use this feature to bundle together multiple run commands into an action, and then have a workflow that executes the bundled commands as a single step using that action.
 
 ### The anatomy of a GitHub action
 
@@ -101,7 +103,7 @@ In the ```runs``` section, notice you specify *docker* in the ```uses``` attribu
 
 The last section, *branding*, personalizes your action in the GitHub Marketplace if you decide to publish it there.
 
-You can find a complete list of action metadata at [Metadata syntax for GitHub Actions](https://help.github.com/en/actions/building-actions/metadata-syntax-for-github-actions?azure-portal=true).
+You can find a complete list of action metadata at [Metadata syntax for GitHub Actions](https://docs.github.com/actions/creating-actions/metadata-syntax-for-github-actions?azure-portal=true).
 
 ## What is a GitHub Actions workflow?
 
@@ -144,7 +146,7 @@ on:
       - created
 ```
 
-An event will trigger on all activity types for the event unless you specify the type or types. For a comprehensive list of events and their activity types, see: [Events that trigger workflows](https://help.github.com/actions/reference/events-that-trigger-workflows?azure-portal=true) in the GitHub documentation.
+An event will trigger on all activity types for the event unless you specify the type or types. For a comprehensive list of events and their activity types, see: [Events that trigger workflows](https://docs.github.com/actions/using-workflows/events-that-trigger-workflows?azure-portal=true) in the GitHub documentation.
 
 A workflow must have at least one *job*. A job is a section of the workflow that will be associated with a *runner*. A runner can be GitHub-hosted or self-hosted, and the job can run on a machine or in a container. You'll specify the runner with the ```runs-on:``` attribute. Here, you're telling the workflow to run this job on ```ubuntu-latest```.
 
@@ -152,7 +154,7 @@ Each job will have steps to complete. In our example, the step uses the action *
 
 The last part of this workflow file sets the MY_NAME variable value for this workflow. Recall the container action took an input called MY_NAME.
 
-For more information on workflow syntax, see [Workflow syntax for GitHub Actions](https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions?azure-portal=true)
+For more information on workflow syntax, see [Workflow syntax for GitHub Actions](https://docs.github.com/actions/using-workflows/workflow-syntax-for-github-actions?azure-portal=true)
 
 ## GitHub-hosted versus self-hosted runners
 
@@ -164,4 +166,4 @@ Each type of runner has its benefits, but GitHub-hosted runners offer a quicker,
 
 ### GitHub Actions may have usage limits
 
-GitHub Actions has some usage limits, depending on whether your runner is GitHub-hosted or self-hosted and your GitHub plan. For more information on usage limits, check out [Usage limits, billing, and administration](https://docs.github.com/en/actions/reference/usage-limits-billing-and-administration) in the GitHub documentation.
+GitHub Actions has some usage limits, depending on whether your runner is GitHub-hosted or self-hosted and your GitHub plan. For more information on usage limits, check out [Usage limits, billing, and administration](https://docs.github.com/actions/reference/usage-limits-billing-and-administration) in the GitHub documentation.

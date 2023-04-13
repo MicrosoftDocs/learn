@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-private-5g-core.benefits-usage-scenarios
+title: Benefits and usage scenarios
+metadata:
+  title: Benefits and usage scenarios
+  description: "Lists the key benefits of Azure Private 5G Core and describes the usage scenarios of the product."
+  ms.date: 10/10/2022
+  author: michael-weizhong-shan
+  ms.author: michaelshan
+  ms.topic: interactive-tutorial
+  ms.service: learning-private-5g-core
+durationInMinutes: 9
+content: |
+  [!include[](includes/3-benefits-usage-scenarios.md)]

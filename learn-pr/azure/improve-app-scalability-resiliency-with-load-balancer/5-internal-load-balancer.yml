@@ -26,7 +26,7 @@ quiz:
     - content: "Virtual machines must be in an availability set."
       isCorrect: false
       explanation: "Although this configuration is an option, it's not a requirement."
-  - content: "Which of the following statement about external load balancers is correct?"
+  - content: "Which one of the following statements about external load balancers is correct?"
     choices:
     - content: "They have a private, front-facing IP address."
       isCorrect: false

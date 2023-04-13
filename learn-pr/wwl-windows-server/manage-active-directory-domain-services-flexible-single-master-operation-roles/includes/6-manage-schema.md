@@ -18,7 +18,8 @@ AD DS schema objects consist of attributes, which are grouped together into clas
 
 The user class is an example of a structural class. A structural class is the only type of class that can have objects in an AD DS database. To modify the schema, you can create an auxiliary class with its own attributes, and then reference it in the definition of a structural class.
 
-:::image type="content" source="../media/m7-addc-schema.png" alt-text="A screenshot of an Active Directory Schema console displays a list of user class attributes.":::
+:::image type="content" source="../media/m7-addc-schema-e20bdbe5.png" alt-text="A screenshot of an Active Directory Schema console displays a list of user class attributes.":::
+
 
 ## Manage AD DS schema
 
@@ -29,8 +30,7 @@ When managing the AD DS schema, you can modify the schema only if you are a memb
 
 You should change the schema only when necessary because the schema controls the storage of information. Additionally, any changes made to the schema affect every domain controller. Before you change the schema, you should review the changes and implement them only after you've performed testing. This will help ensure that the changes Won't adversely affect the rest of the forest or any applications that use AD DS.
 
-:::image type="content" source="../media/m7-update-schema.png" alt-text="Context menu for the schema container in the navigation pane of the ADSI Edit console. The Update Schema Now option is selected.":::
+:::image type="content" source="../media/m7-update-schema-12083aa2.png" alt-text="Context menu for the schema container in the navigation pane of the ADSI Edit console. The Update Schema Now option is selected.":::
 
 
-
----
+##

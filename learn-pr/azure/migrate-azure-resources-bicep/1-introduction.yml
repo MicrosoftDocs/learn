@@ -5,7 +5,7 @@ metadata:
   unitType: introduction
   title: Introduction
   description: Learn how to migrate your Azure resources to Bicep.
-  ms.date: 08/17/2021
+  ms.date: 12/01/2022
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial

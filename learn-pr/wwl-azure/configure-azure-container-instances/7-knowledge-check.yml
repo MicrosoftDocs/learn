@@ -4,38 +4,52 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/20/2022
+  ms.date: 12/15/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 5
+durationInMinutes: 3
 content: |
   [!include[](includes/7-knowledge-check.md)]
 quiz:
   title: ""
+
   questions:
-  - content: "Which of the following is a reason to select virtual machines over containers?"
+  - content: "Why should you select virtual machines over containers for your configuration?"
     choices:
-    - content: "Virtual machines provide complete isolation from the host operating system and other VMs."
-      isCorrect: true
-      explanation: "Correct. Containers only provide lightweight isolation from the host."
-    - content: "Virtual machines run the user mode portion of an operating system and can be tailored to contain just the needed services for the app."
+    - content: "Virtual machines run the user mode portion of an operating system and can be tailored to contain just the needed services for your app."
       isCorrect: false
       explanation: "Incorrect. Virtual machines run a complete operating system including the kernel."
+    - content: "Virtual machines provide complete isolation from the host operating system and other virtual machines."
+      isCorrect: true
+      explanation: "Correct. Azure containers only provide lightweight isolation from the host."      
     - content: "Virtual machines use Azure Disks for local storage for a single node."
       isCorrect: false
-      explanation: "Incorrect. Virtual machines use a virtual hard disk (VHD) for local storage for a single VM."
-  - content: "Which is a feature of Azure Container Instances?"
+      explanation: "Incorrect. Virtual machines use a virtual hard disk (VHD) for local storage for a single virtual machine."
+
+  - content: "Which of the following options is a feature of Azure Container Instances?"
     choices:
-    - content: "Billing occurs when the container is in use."
+    - content: "Container Instances require several minutes to load."
+      isCorrect: false
+      explanation: "Incorrect. Container Instances launch in seconds and that's an advantage over virtual machines."
+    - content: "Container Instances use Azure Blob Storage for retrieve and persist state."
+      isCorrect: false
+      explanation: "Incorrect. Container Instances use Azure Files file shares to retrieve and persist state."
+    - content: "Billing for Container Instances occurs when containers are in use."
       isCorrect: true
-      explanation: "Correct. Organizations are only billed when the container is in use."
-    - content: "Containers require several minutes to load."
+      explanation: "Correct. Organizations are only billed when their Container Instances are in use."
+
+  - content: "What implementation ensures container software runs the same locally and in the cloud on Azure?"
+    choices:
+    - content: "Docker"
+      isCorrect: true
+      explanation: "Correct. Docker guarantees that containerized software always runs the same locally on Windows or Linux, and in the cloud on Azure."          
+    - content: "Container groups"
       isCorrect: false
-      explanation: "Incorrect. Containers launch in seconds and that is an advantage over virtual machines."
-    - content: "Containers use Azure blobs for retrieve and persist state."
+      explanation: "Incorrect. Using container groups in Azure Container Instances doesn't guarantee that your containerized software always runs the same."
+    - content: "Container Instances"
       isCorrect: false
-      explanation: "Incorrect. Containers use Azure file shares to retrieve and persist state."
+      explanation: "Incorrect. Azure Container Instances doesn't guarantee that containerized software always runs the same."      

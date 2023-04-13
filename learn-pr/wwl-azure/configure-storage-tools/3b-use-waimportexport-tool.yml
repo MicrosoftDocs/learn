@@ -3,8 +3,8 @@ uid: learn.wwl.configure-storage-tools.use-waimportexport-tool
 title: Use the WAImportExport tool
 metadata:
   title: Use the WAImportExport tool
-  description: "Use the WAImportExport tool with the Azure Import/Export service to import or export data in Azure."
-  ms.date: 11/02/2022
+  description: "Use the WAImportExport tool"
+  ms.date: 04/06/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial

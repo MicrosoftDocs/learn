@@ -1,12 +1,13 @@
-Every organization has data. That data needs to be protected at rest, in transit, and while it is being used within and application. Azure provides a set of security features to protect you data, no matter where it is located.
+
+Every organization has data. That data needs to be protected at rest, in transit, and while it's being used within an application. Azure provides a set of security features to protect your data, no matter where it's located.
 
 ## Scenario
 
-A security engineer will protect data within databases, file shares, or anywhere it resides, you will work on such tasks as:
+A security engineer will protect data within databases, file shares, or anywhere it resides, you'll work on such tasks as:
 
  -  Lock down access to storage to specific users and applications.
- -  Encrypt data where it is stored and while it is moved around.
- -  Use identity to protect data when it is accessed and used.
+ -  Encrypt data where it's stored and while it's moved around.
+ -  Use identity to protect data when it's accessed and used.
 
 ## Skills measured
 

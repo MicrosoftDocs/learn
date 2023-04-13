@@ -10,13 +10,13 @@ The commercial marketplace is free to join. You can use the commercial marketpla
 
 ## Multiple access points
 
-When you list your company’s solutions in the commercial marketplace, customers will be able to find them in two online stores, through the Microsoft network of resellers, and through in-product experiences in products like Microsoft 365, Dynamics 365, the Power Platform, and Azure.
+When you list your company’s solutions in the commercial marketplace, customers will be able to find them in two online stores, through the Microsoft network of resellers and through in-product experiences in products like Microsoft 365, Dynamics 365, the Power Platform, and Azure.
 
 The commercial marketplace has two online stores, **Microsoft AppSource** and **Azure Marketplace**, which are designed to serve different buyer roles within your customers’ organizations.
 
 Between the two online stores and the in-product experiences, the commercial marketplace draws millions of active users per month, with each unique user representing a potential customer for your company. Because Microsoft products and services are used widely by organizations around the world, these monthly users represent companies of all sizes in every industry.
 
-![Comparison of two storefronts commercial marketplace storefronts by audience.](../media/1-commercial-market.png)
+![Diagram showing comparison of two storefronts commercial marketplace storefronts by audience.](../media/1-commercial-market.png)
 
 ## Summary
 

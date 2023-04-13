@@ -249,7 +249,7 @@ Scoring the game is about assigning points to the correct player after play has 
 
 ### Add a continuation query
 
-A continuation query is a question at the end of the game round asking the player if they want to continue. If the user chooses not to continue, it's nice to output the current results and the winner, if any.
+A continuation query is a question at the end of the game round asking the player if they want to continue. If the user chooses not to continue, it can output the current results and the winner, if any.
 
 1. Locate the `Game` class, and update the method `determineWinner()`:
 

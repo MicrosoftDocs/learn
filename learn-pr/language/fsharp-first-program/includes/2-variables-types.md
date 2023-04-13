@@ -2,13 +2,13 @@ All programs usually consist of many steps where the program operates on data. A
 
 ## Variables, bind a value
 
-Variables are named references bound to a value, that you want to keep referring to in your code. In F#, it's thought of as binding a value. So what you do is to assign, or _bind_, a value to a named reference, a variable. To bind a value, you use the `let` keyword, a name for your reference and assign a value to it, like in the below code:
+Variables are named references bound to a value, that you want to keep referring to in your code. In F#, it's thought of as binding a value. So what you do is to assign, or *bind*, a value to a named reference, a variable. To bind a value, you use the `let` keyword, a name for your reference and assign a value to it, like in the below code:
 
 ```fsharp
 let name = "Chris"
 ```
 
-Above `name` is the named reference and "Chris" its bound value.
+`name` is the named reference and "Chris" its bound value.
 
 After a value is assigned to a variable, it can't be changed, it's immutable. The following code wouldn't compile and produces an error saying something like "error FS0027: This value is not mutable."
 
@@ -19,7 +19,7 @@ name <- "Luis" // not allowed
 
 ### Make it mutable
 
-You can change variables, but you need to signal that you want to make them _mutable_. By using the keyword `mutable` in your variable definition, you can change a value without a compilation error, like in the following code:
+You can change variables, but you need to signal that you want to make them *mutable*. By using the keyword `mutable` in your variable definition, you can change a value without a compilation error, like in the following code:
 
 ```fsharp
 let mutable name = "Chris"
@@ -47,11 +47,11 @@ let PI = 3.14 // float
 let name = "my name" // string
 ```
 
-The compiler _infers_ what the types should be, and it's right. You can also be more explicit about what you want the type to be. To assign a data, you use the syntax `variableName:<type>`, like in this code:
+The compiler *infers* what the types should be, and it's right. You can also be more explicit about what you want the type to be. To assign a data, you use the syntax `variableName:<type>`, like in this code:
 
 ```fsharp
 let sum:float = 0.0
-``` 
+```
 
 ## Print to the screen
 
@@ -65,7 +65,7 @@ There are other reasons for wanting to output to the screen, but the preceding t
 So how would you print to the screen? In F#, there are three different functions you can use. They're `printf`, `printfn`, and even `Console.WriteLine`. So what's the difference?
 
 - `printf`: It prints to `stdout` inline (no newline character).
-- `printfn `: It prints to `stdout` adds a newline character.
+- `printfn`: It prints to `stdout` adds a newline character.
 - `Console.WriteLine`: This function is from the `System` namespace and works in all .NET languages.
 
 Now you know the difference, but which one should you use? Well, `printf` and `printfn` are considered more idiomatic and preferred in F#.
@@ -117,4 +117,4 @@ There are many format specifiers. Here are some you're likely to encounter.
 | %d, %i | Formatted as a decimal integer, signed if the basic integer type is signed  | printf "Age: %i" 65 |
 | %b | Boolean `true` or `false` | printf "Setting on: %b" true |
 
-There's much more information on formatting. If you want to know about all the capabilities, see the [formatting in F# doc](/dotnet/fsharp/language-reference/plaintext-formatting).
+There's more information on formatting. If you want to know about all the capabilities, see the [formatting in F# doc](/dotnet/fsharp/language-reference/plaintext-formatting).

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.saas-foundations.new-consumption-model
+title: New consumption model
+metadata:
+  title: New consumption model
+  description: "Subscription or consumption model is at the core of SaaS. Learn about importance of adoption of the product by your customers and which role it plays."
+  ms.date: 09/11/2022
+  author: kostinams
+  ms.author: irkostin
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-new-consumption-model.md)]

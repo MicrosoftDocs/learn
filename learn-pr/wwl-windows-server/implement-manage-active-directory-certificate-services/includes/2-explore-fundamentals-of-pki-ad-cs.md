@@ -1,4 +1,4 @@
-To obtain certificates for your AD DS infrastructure, you can request them from a public CA or issue them by using your own infrastructure. To implement your own CA, you can use AD CS, which is the path that Contoso chose to take. AD CS is an identity technology in Windows Server that allows you to implement PKI for your organization.
+To obtain certificates for your AD DS infrastructure, you can request them from a public CA or issue them by using your own infrastructure. To implement your own CA, you can use AD CS, which is the path that Contoso chose to take. AD CS is an identity technology in Windows Server that allows you to implement PKI for your **organization**.
 
 ## What is PKI?
 

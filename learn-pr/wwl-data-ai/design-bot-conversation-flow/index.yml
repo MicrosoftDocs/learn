@@ -30,7 +30,6 @@ roles:
 products:
 - azure
 - azure-bot-service
-- vs-code
 subjects:
 - chatbot
 units:

@@ -19,12 +19,7 @@ The modules in this learning path and previous learning paths form a progression
 
 If you want to start with this learning path, set up a development environment on your Windows, macOS, or Linux system. You will need:
 
-- An [Azure DevOps organization](https://dev.azure.com?azure-portal=true)
-- An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true)
-- A [GitHub](https://github.com/join?azure-portal=true) account
-- [Git](https://git-scm.com/downloads?azure-portal=true)
-- [.NET 6.0 SDK](https://dotnet.microsoft.com/download/dotnet/6.0?azure-portal=true)
-- [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
+[!include[](../../shared/includes/prerequisites.md)]
 
 To follow the progression from the beginning, complete the following learning paths:
 

@@ -1,0 +1,50 @@
+### YamlMime:Module
+uid: learn.continuous-validate-test-mission-critical-workloads
+metadata:
+  title: Continuously validate and test mission-critical workloads
+  description: Learn how to automate Azure Load Testing and Azure Chaos Studio simultaneously as part of your CI/CD pipelines.
+  ms.date: 12/22/2022
+  author: sebader
+  ms.author: prwilk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure 
+title: Continuously validate and test mission-critical workloads
+summary: You want to be aware of potential problems and be ready to respond so that your workload stays operational even when failures occur. Learn how to set up automated tests using Azure Load Testing and Azure Chaos Studio simultaneously as part of your continuous integration/continuous deployment (CI/CD) pipelines.
+abstract:  | 
+  By the end of this module, you'll be able to:
+  - Identify user flows and system flows of an application, as the foundation for defining load tests and chaos experiments.
+  - Establish baselines for load tests with expected thresholds for system components, individual user flows, and the overall solution.
+  -	Identify potential failure scenarios for system components as a guide for designing chaos experiments.
+  - Design an automated process for continuous validation in your CI/CD pipeline.
+prerequisites: |
+  - You've completed the previous module about health modeling. 
+  - You have a good understanding of the design principles and design areas of a mission-critical workload in the Azure Well-Architected Framework.
+  -	You have an Azure subscription. 
+  -	You have an Azure DevOps organization and project.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+-	administrator
+-	solution-architect
+-	devops-engineer
+-	network-engineer
+-	security-engineer
+products:
+-	azure-devops
+-	azure-load-testing
+# - chaos-studio
+subjects:
+-	high-availability-system
+-	architecture
+-	solution-design
+-	devops
+units:
+- learn.continuous-validate-test-mission-critical-workloads.introduction
+- learn.continuous-validate-test-mission-critical-workloads.define-load-tests
+- learn.continuous-validate-test-mission-critical-workloads.set-baselines-load-test
+- learn.continuous-validate-test-mission-critical-workloads.design-chaos-experiments
+- learn.continuous-validate-test-mission-critical-workloads.create-validation-pipelines
+- learn.continuous-validate-test-mission-critical-workloads.summary
+badge:
+  uid: learn.continuous-validate-test-mission-critical-workloads.badge 

@@ -1,3 +1,4 @@
+
 Azure AD identity governance gives organizations the ability to do the following tasks:
 
 - Govern the identity lifecycle.

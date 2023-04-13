@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.maintain-user-profiles.explore-user-profile-types
+title: Explore user profile types
+metadata:
+  title: Explore user profile types
+  description: "This unit explores the user profile types."
+  ms.date: 03/14/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-explore-user-profile-types.md)]

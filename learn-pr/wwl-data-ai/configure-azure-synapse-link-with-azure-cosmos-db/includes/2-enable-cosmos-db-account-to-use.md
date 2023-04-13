@@ -21,9 +21,9 @@ You can enable Azure Synapse Link in the Azure portal page for your Cosmos DB ac
 
 ### Using the Azure portal
 
-In the Azure portal, you can configure features of Cosmos DB account on the **Features** page, as shown below.
+In the Azure portal, you can enable Azure Synapse Link for a Cosmos DB account on the **Azure Synapse Link** page in the **Integrations** section, as shown below.
 
-![A screenshot showing the option to enable Azure Synapse Link on the Features page for a Cosmos DB for NoSQL account.](../media//enable-synapse-link.png)
+![A screenshot showing the option to enable Azure Synapse Link for a Cosmos DB for NoSQL account.](../media/enable-synapse-link.png)
 
 > [!TIP]
 > For Azure Cosmos DB for NoSQL accounts, there's also a link on the **Data Explorer** page.

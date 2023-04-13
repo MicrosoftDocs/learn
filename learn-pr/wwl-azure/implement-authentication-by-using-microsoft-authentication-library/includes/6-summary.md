@@ -1,3 +1,4 @@
+
 In this module, you learned how to:
 
 * Explain the benefits of using MSAL and the application types and scenarios it supports

@@ -10,11 +10,11 @@ In this part, you'll:
 
 ## Review the Build stage
 
-Here you review the existing CI/CD pipeline defined in *azure-pipelines.yml*. 
+Here, you'll review the existing CI/CD pipeline defined in *azure-pipelines.yml*.
 
 1. From Azure DevOps, navigate to **Pipelines**.
 1. Select the pipeline.
-1. Select **Edit**. Ensure that the branch is set to **main**, by selecting it from the dropdown menu. This brings up the *azure-pipelines.yml* file that defines the existing CI/CD pipeline.
+1. Select **Edit**. Ensure that the branch is set to **main** by selecting it from the dropdown menu. This brings up the *azure-pipelines.yml* file that defines the existing CI/CD pipeline.
 
     Because of the use of wildcards to the project paths, the highlighted tasks below will automatically restore, build, and publish the new Azure Functions project.
 
@@ -32,7 +32,7 @@ Here you review the existing CI/CD pipeline defined in *azure-pipelines.yml*.
 
 ## Azure Function App Task
 
-The `AzureFunctionApp@1` task is designed to deploy function apps. It's conceptually similar to the `AzureWebApp@1` task and includes everything needed for this function app scenario:
+The `AzureFunctionApp@1` task is designed to deploy function apps. It's conceptually similar to the `AzureWebApp@1` task and includes everything needed for this function-app scenario:
 
 * `azureSubscription` refers to the name of your Azure service connection pipeline variable.
 * `appType` indicates whether the app is being deployed for Linux (`functionAppLinux`) or Windows (`functionApp`).
@@ -43,7 +43,7 @@ The `AzureFunctionApp@1` task is designed to deploy function apps. It's conceptu
 
 You can learn more about the flexibility of this task in the documentation for the [Azure Function App task](/azure/devops/pipelines/tasks/deploy/azure-function-app?azure-portal=true).
 
-Add the highlighted code below to the end of your pipeline.
+Add the following highlighted code to the end of your pipeline.
 
 [!code-yml[](code/4-2-azure-pipelines.yml?highlight=25-33)]
 
@@ -56,7 +56,7 @@ Add the highlighted code below to the end of your pipeline.
 
 **Mara:** I agree. Adding a task for that to our pipeline will help us avoid accidental oversights down the road if we change either service. We can put it right at the end.
 
-Add the highlighted code below to the end of your pipeline. Be sure to match the indentation of the task above it. If you would like to learn more about this task, you can review the docs for [Azure App Service Settings task](/azure/devops/pipelines/tasks/deploy/azure-app-service-settings?azure-portal=true).
+Add the following highlighted code to the end of your pipeline. Be sure to match the indentation of the task above it. If you'd like to learn more about this task, you can review the docs for [Azure App Service Settings task](/azure/devops/pipelines/tasks/deploy/azure-app-service-settings?azure-portal=true).
 
 [!code-yml[](code/4-3-azure-pipelines.yml?highlight=11-24)]
 
@@ -64,18 +64,18 @@ Add the highlighted code below to the end of your pipeline. Be sure to match the
 
 1. Select **Save** from the top right corner of the page. Confirm the **Save** to trigger a run.
 1. In Azure Pipelines, go to the build. Trace the build as it runs.
-1. After the build has succeeded, select the web site's deploy task and select the URL to view the deployed site.
+1. After the build succeeds, select the web site's deploy task and select the URL to view the deployed site.
 
     :::image type="content" source="../media/4-deploy-url.png" alt-text="A screenshot of Azure Pipelines, showing the location of the web site URL.":::
 
-1. You see the site running on App Service. Scroll down to confirm that the leaderboard has real data in it. This is powered by the function app.
+1. You'll get a page with the site running on App Service. Scroll down to confirm that the leaderboard has real data in it. This is powered by the function app.
 
     :::image type="content" source="../media/4-space-game.png" alt-text="A screenshot of the Space Game web site.":::
 
     > [!NOTE]
-    > If there is an error loading the leaderboard, double-check the steps followed in this module. If you see the exception message "An attempt was made to access a socket in a way forbidden by its access permissions", make sure that the app service's AppSettings__LeaderboardFunctionUrl setting is being set correctly.
+    > If there's an error loading the leaderboard, double-check the steps you followed in this module. If you see the exception message "An attempt was made to access a socket in a way forbidden by its access permissions", make sure that the app service's AppSettings__LeaderboardFunctionUrl setting is being set correctly.
 
-1. You can also test out the function app directly. Just navigate to your URL using the format below. The response is JSON, which should just render as text in your browser.
+1. You can also test out the function app directly. Just navigate to your URL using the following format. The response is JSON, which should just render as text in your browser.
 
     ```
     http://<leaderboard function name>.azurewebsites.net/api/LeaderboardFunction?pageSize=10

@@ -1,4 +1,4 @@
-This unit will cover how to manage risk in startup teams. We'll start with managing conflict between cofounders. Then we'll discuss how to use vesting of founder shares to help protect the company if one founder leaves.
+This unit will cover how to manage risk in startup teams. We'll start with managing conflict between cofounders. Then, we'll discuss how to use vesting of founder shares to help protect the company if one founder leaves.
 
 ## Cofounder conflict
 
@@ -18,7 +18,7 @@ The key elements of a cofounder agreement typically include:
 - The equity stake that each cofounder will have.
 - The process that will be used for reviewing and adjusting equity stakes over time.
 - Salaries or other financial compensation. (This element is relevant after the company starts generating revenues or raises external capital.)
-- The functional roles and responsibilities of each cofounder, and what decisions they're responsible for making. (Keep in mind that in the early days, it's generally best not to be overly prescriptive about roles because everyone has to do a bit of everything.)
+- The functional roles and responsibilities of each cofounder, and what decisions they're responsible for making. (Keep in mind that in the early days, it's generally best not to be overly prescriptive about roles, because everyone has to do a bit of everything.)
 - The process to be used for making different types of decisions, and who will be involved.
 - The process to be used for conflict resolution if a decision can't be reached.
 - What happens if a cofounder leaves the company (including some consideration of whether they leave on good terms or bad terms).
@@ -32,7 +32,7 @@ It's important to draft a cofounder agreement before anyone has created any subs
 
 Despite your best efforts, it's possible that you or one of your cofounders will decide to leave the company. Departure of a cofounder in the first few years of a startup is surprisingly common. It can happen for many reasons, including financial pressures or disagreements between founders.
 
-If a founder leaves but remains a large shareholder, this can be a major demotivating factor for the remaining founders who are working hard for no additional benefit. It can also make the company much less attractive to investors because a sizable chunk of equity is now owned by someone who is (at best) passive and not contributing, or (at worst) disgruntled and actively seeking to disrupt the company by blocking decisions or refusing to sign critical documents.
+If a founder leaves but remains a large shareholder, this can be a major demotivating factor for the remaining founders who are working hard for no additional benefit. It can also make the company much less attractive to investors, because a sizable chunk of equity is now owned by someone who is (at best) passive and not contributing, or (at worst) disgruntled and actively seeking to disrupt the company by blocking decisions or refusing to sign critical documents.
 
 To address this problem, startups frequently adopt *founder vesting*. That is, each founder earns equity over time, contingent on their ongoing involvement and performance.
 
@@ -43,9 +43,9 @@ The longer the person remains in the company, the more of their shares vest (own
 The main benefits of founder vesting are:
 
 - It incentivizes founders to stay for the long term, because they'll earn a substantial shareholding only by remaining involved.
-- It protects the company if a founder leaves, by minimizing the chances of them walking away with a large unearned shareholding.
+- It protects the company if a founder leaves by minimizing the chances of them walking away with a large unearned shareholding.
 
-Founder vesting has two components: 
+Founder vesting has two components:
 
 - **Cliff**. A cliff is typically a one-year period from the date of incorporation in which none of the founders have any vested shares. At the end of the year, assuming that each founder has remained involved, 25 percent of their shares will vest.
 
@@ -59,7 +59,7 @@ Founder vesting has two components:
 
 It's common for early-stage investors to insist on a reset of founder vesting so that each of the founders has to re-earn their shares, including any that had already vested.
 
-This can be a contentious point. But investors often request it because they want to have confidence that all members of the founding team are committed to the business going forward.
+This can be a contentious point, but investors often request it because they want to have confidence that all members of the founding team are committed to the business going forward.
 
 ## What happens in an exit?
 

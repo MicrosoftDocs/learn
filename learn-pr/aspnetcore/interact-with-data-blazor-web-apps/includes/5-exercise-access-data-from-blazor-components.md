@@ -200,7 +200,7 @@ The app checks to see if there's an existing SQLite database and creates one wit
 
     This change creates a database scope with the `PizzaStoreContext`. If there isn't a database already created, it calls the `SeedData` static class to create one.
 
-1. At the moment, the app won't work because we haven't initialized the `PizzaStoreContext`. In the `Add Services to the container` section higher in the *Program.cs* file, add this code under the current services (the lines that start `builder.Services.`):
+1. At the moment, the app doesn't work because we haven't initialized the `PizzaStoreContext`. In the `Add Services to the container` section higher in the *Program.cs* file, add this code under the current services (the lines that start `builder.Services.`):
 
     ```csharp
       builder.Services.AddHttpClient();

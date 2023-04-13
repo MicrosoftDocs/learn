@@ -4,7 +4,7 @@ metadata:
   moduleType: standard
   title: GitHub administration for GitHub Advanced Security
   description: Understand where GitHub Advanced Security fits in your software development lifecycle and how to enable and roll it out in your organization
-  ms.date: 2/14/2022
+  ms.date: 01/05/2023
   author: lucie-docs
   ms.author: lucielenaour
   ms.topic: interactive-tutorial
@@ -13,14 +13,14 @@ title: GitHub administration for GitHub Advanced Security
 summary: Understand where GitHub Advanced Security fits in your software development lifecycle and how to enable and roll it out in your organization
 abstract: |
   By the end of this module, you'll be able to:
-  - Understand what GitHub Advanced Security is and how to leverage it in the software development lifecycle
-  - Identify which GitHub Advanced Security features are available for open source projects and which are available on enterprise products
-  - Enable the different features of GitHub Advanced Security on different enterprise products
-  - Determine who should get access to GitHub Advanced Security features in an organization and grant the correct permissions
-  - Set security policies at the organization and repository levels
-  - Understand how to respond to a security alert
-  - Use the Security Overview to monitor security alerts
-  - Use the GitHub Advanced Security API endpoints to manage the GitHub Advanced Security features and alerts
+  - Understand what GitHub Advanced Security is and how to leverage it in the software development lifecycle.
+  - Identify which GitHub Advanced Security features are available for open-source projects and which are available on enterprise products.
+  - Enable the different features of GitHub Advanced Security on different enterprise products.
+  - Determine who should get access to GitHub Advanced Security features in an organization and grant the correct permissions.
+  - Set security policies at the organization and repository levels.
+  - Understand how to respond to a security alert.
+  - Use the Security Overview to monitor security alerts.
+  - Use the GitHub Advanced Security API endpoints to manage the GitHub Advanced Security features and alerts.
 prerequisites: |
   - A GitHub enterprise account with a GitHub Advanced Security license
   - Repository administrator or organization owner permissions

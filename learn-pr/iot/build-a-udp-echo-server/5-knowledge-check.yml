@@ -1,0 +1,72 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.build-a-udp-echo-server.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Interactive questions that validate whether the learner achieved the learning objectives.
+  ms.date: 01/23/2023
+  author: edlamie80
+  ms.author: liydu
+  manager: lizross
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+quiz:
+  questions:
+    - content: 'Which of the following statements is most correct?'
+      choices:
+        - content: 'A typical UDP server should bind to a port and let the client know.'
+          isCorrect: false
+          explanation: 'Incorrect, all the statements are true.'
+        - content: 'A UDP socket can send data to multiple servers.'
+          isCorrect: false
+          explanation: 'Incorrect, all the statements are true.'
+        - content: 'A UDP server can receive data from multiple clients.'
+          isCorrect: false
+          explanation: 'Incorrect, all the statements are true.'
+        - content: 'All the above statements are correct.'
+          isCorrect: true
+          explanation: 'Correct, all the statements are true.'
+    - content: 'Which is the first action performed when sending a UDP packet?'
+      choices:
+        - content: 'Bind to a port.'
+          isCorrect: false
+          explanation: 'Incorrect, create a UDP socket.'
+        - content: 'Create a UDP socket.'
+          isCorrect: true
+          explanation: 'Correct, create a UDP socket.'
+        - content: 'Retrieve the IP address from the packet.'
+          isCorrect: false
+          explanation: 'Incorrect, create a UDP socket.'
+        - content: 'Send a ping request.'
+          isCorrect: false
+          explanation: 'Incorrect, create a UDP socket.'
+    - content: 'What output did you receive when you built ProjectUDPEchoServer?'
+      choices:
+        - content: 'You received a prompt asking you to enter a command.'
+          isCorrect: false
+          explanation: 'Incorrect, you received numerous build messages.'
+        - content: 'You received a blank screen because the project was waiting for the build operation to begin.'
+          isCorrect: false
+          explanation: 'Incorrect, you received numerous build messages.'
+        - content: 'You received numerous build messages.'
+          isCorrect: true
+          explanation: 'Correct, you received numerous build messages.'
+        - content: 'You received a summary of the data packets that were going to be used.'
+          isCorrect: false
+          explanation: 'Incorrect, you received numerous build messages.'
+    - content: 'What output did you receive when you ran ProjectUDPEchoServer and entered the ncat command?'
+      choices:
+        - content: 'Everything you entered was echoed.'
+          isCorrect: true
+          explanation: 'Correct, everything you entered was echoed.'
+        - content: 'The ABCs were displayed repeatedly.'
+          isCorrect: false
+          explanation: 'Incorrect, everything you entered was echoed.'
+        - content: 'A statistical summary of the packet transmission was displayed.'
+          isCorrect: false
+          explanation: 'Incorrect, everything you entered was echoed.'
+        - content: 'The IP address of the socket was displayed.'
+          isCorrect: false
+          explanation: 'Incorrect, everything you entered was echoed.'

@@ -1,14 +1,21 @@
-:::image type="content" source="../media/kubernetes-terms-ee59aa6e.png" alt-text="Pools contain nodes. Nodes contain pods. Pods contain containers.":::
+Azure Kubernetes Service (AKS) provides a simplified approach for deploying a managed Kubernetes cluster in Azure. Azure operates as a hosted Kubernetes service and performs critical functions like health monitoring and maintenance. AKS employs components like nodes, pods, and pools to help you deploy and manage your container applications in Kubernetes clusters.
 
+The following illustration shows the relationships in a Kubernetes pool between nodes, pods, and containers.
 
-**Pools** are groups of nodes with identical configurations.
+:::image type="content" source="../media/kubernetes-terms-ee59aa6e.png" alt-text="Illustration of a Kubernetes pool with nodes, nodes with pods, and pods with containers." border="false":::
 
-**Nodes** are individual virtual machines running containerized applications.
+### Things to know about AKS concepts
 
-**Pods** are a single instance of an application. A pod can contain multiple containers.
+Before you begin using Kubernetes and Azure Kubernetes Service to deploy and manage containerized applications, it's helpful to be familiar with the terminology and concepts.
 
-**Container** is a lightweight and portable executable image that contains software and all of its dependencies.
+- **Pools**: A pool is a group of nodes that have an identical configuration.
 
-**Deployment** has one or more identical pods managed by Kubernetes.
+- **Nodes**: A node is an individual virtual machine that runs containerized applications.
 
-**Manifest** is the YAML file describing a deployment.
+- **Pods**: A pod is a single instance of an application. A pod can contain multiple containers.
+
+- **Container**: A container is a lightweight and portable executable image that contains software and all of its dependencies.
+
+- **Deployment**: A deployment has one or more identical pods managed by Kubernetes.
+
+- **Manifest**: The manifest is the YAML file that describes a deployment.

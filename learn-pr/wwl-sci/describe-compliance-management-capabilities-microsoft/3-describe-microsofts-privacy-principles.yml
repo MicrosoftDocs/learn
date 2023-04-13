@@ -4,13 +4,11 @@ title: Describe Microsoft's privacy principles
 metadata:
   title: Describe Microsoft's privacy principles
   description: "Describe Microsoft's privacy principles"
-  ms.date: 09/26/2022
+  ms.date: 02/09/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
-azureSandbox: false
-labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/3-describe-microsofts-privacy-principles.md)]

@@ -4,8 +4,8 @@ metadata:
   title: Design your migration to Azure
   description: Minimize the time and resources required to migrate your on-premises environment to Azure. Assess your current systems with Azure Migrate, and migrate them with Azure Migrate and Azure Database Migration Service.
   ms.date: 11/11/2022
-  author: jboeshart
-  ms.author: jaboes
+  author: v-ksreedevan
+  ms.author: v-ksreedevan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Design your migration to Azure

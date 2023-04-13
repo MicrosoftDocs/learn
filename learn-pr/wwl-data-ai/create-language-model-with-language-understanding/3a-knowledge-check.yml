@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/02/2022
+  ms.date: 03/06/2023
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -27,7 +27,7 @@ quiz:
       explanation: "Incorrect. You can use a Cognitive Service resource for Conversational Language Understanding prediction, but not for authoring."
   - content: "You are authoring a Conversational Language Understanding application to support an international clock. You want users to be able to ask for the current time in a specified city, for example \"What is the time in London?\". What should you do?"
     choices:
-    - content: "Define a \"city\" entity and a \"GetTime\" intent with utterances that indicate the city intent."
+    - content: "Define a \"city\" entity and a \"GetTime\" intent with utterances that indicate the city entity."
       isCorrect: true
       explanation: "Correct. The intent encapsulates the task (getting the time) and the entity specifies the item to which the intent is applied (the city)."
     - content: "Create an intent for each city, each with an utterance that asks for the time in that city."

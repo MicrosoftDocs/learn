@@ -1,1 +1,0 @@
-In the previous step, you create a container image for your anomaly detection module. You can now check that the container image was successfully created and stored in the Azure container registry associated with your machine learning environment.

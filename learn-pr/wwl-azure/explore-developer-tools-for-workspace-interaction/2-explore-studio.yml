@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-developer-tools-for-workspace-interaction.explore-studio
+title: Explore the studio
+metadata:
+  title: Explore the studio
+  description: "Explore the studio"
+  ms.date: 01/06/2023
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-explore-studio.md)]

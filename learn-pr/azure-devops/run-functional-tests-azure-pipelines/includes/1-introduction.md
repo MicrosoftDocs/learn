@@ -12,7 +12,7 @@ After completing this module, you'll be able to:
 
 - Define the role of functional tests and identify some popular kinds of tests you can run
 - Map manual testing steps to automated test cases
-- Run automated UI tests locally and in the pipeline by using Selenium
+- Run automated UI tests locally and in the pipeline using Selenium
 
 ## Prerequisites
 
@@ -25,8 +25,8 @@ We also recommend that you start at the beginning of the [Deploy applications wi
 
 If you want to go through just this module, you need to set up a development environment on your Windows, macOS, or Linux system. You need these assets:
 
-- An [Azure DevOps organization](https://dev.azure.com?azure-portal=true)
 - An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true)
+- An [Azure DevOps organization](/azure/devops/pipelines/get-started/pipelines-sign-up) with access to [parallel jobs](/azure/devops/pipelines/licensing/concurrent-jobs). If your organization does not have access to parallel jobs, you can request parallel jobs for free for public or private projects using [this form](https://aka.ms/azpipelines-parallelism-request). Your request will take 2-3 business days.
 - A [GitHub](https://github.com/join?azure-portal=true) account
 - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
 - [.NET 6.0 SDK](https://dotnet.microsoft.com/download/dotnet/6.0?azure-portal=true)

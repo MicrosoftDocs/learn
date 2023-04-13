@@ -6,8 +6,8 @@ metadata:
   title: How Azure Remote Rendering works
   description: How Azure Remote Rendering works
   ms.date: 06/15/2021
-  author: nickwalkmsft
-  ms.author: nickwalk  
+  author: DrewLonMS
+  ms.author: oliverlondon
   ms.topic: interactive-tutorial 
   ms.prod: learning-azure
 durationInMinutes: 6

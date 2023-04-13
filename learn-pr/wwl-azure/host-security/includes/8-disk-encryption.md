@@ -7,7 +7,7 @@ If you use Microsoft Defender for Cloud, you'll be alerted if you have VMs that 
 
 Azure Disk Encryption is zone resilient, the same way as Virtual Machines.
 
-## Supported VMs and operating systems
+## Supported VMs and operating systems<br>
 
 **Supported VMs**
 
@@ -15,7 +15,7 @@ Windows VMs are available in a range of sizes. Azure Disk Encryption is supporte
 
 Azure Disk Encryption is not available on Basic, A-series VMs, or on virtual machines with less than 2 GB of memory.
 
-**Supported operating systems**<br>
+**Supported operating systems**
 
  -  Windows client: Windows 8 and later.
  -  Windows Server: Windows Server 2008 R2 and later.
@@ -91,7 +91,5 @@ Linux VMs are available in a range of sizes. Azure Disk Encryption is supported 
 
 
 Once the OS disk encryption process is complete on Linux virtual machines, the VM can be configured to run with less memory.
-
-Azure Disk Encryption is also available for VMs with premium storage. Azure Disk Encryption is not available on Generation 2 VMs and Lsv2-series VMs.
 
 Azure Disk Encryption requires the dm-crypt and `vfat` modules to be present on the system. Removing or disabling `vfat` from the default image will prevent the system from reading the key volume and obtaining the key needed to unlock the disks on subsequent reboots. System hardening steps that remove the vfat module from the system are not compatible with Azure Disk Encryption

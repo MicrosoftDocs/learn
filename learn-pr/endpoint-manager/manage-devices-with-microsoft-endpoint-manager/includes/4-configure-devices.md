@@ -1,6 +1,6 @@
 Enrolling your devices is just the first step. When you configure devices in your organization, you can apply settings and features to be enabled or disabled. These settings and features are added to "configuration profiles". You can create profiles for different devices and different platforms, including iOS/iPadOS, Android device administrator, Android Enterprise, and Windows. Then, use Intune to apply or "assign" the profile to the devices.
 
-[ ![Configuring devices using Microsoft Endpoint Manager.](../media/intro-to-endpoint-manager-16.png) ](../media/intro-to-endpoint-manager-16.png#lightbox)
+[ ![Configuring devices using Microsoft Intune.](../media/intro-to-endpoint-manager-16.png) ](../media/intro-to-endpoint-manager-16.png#lightbox)
 
 As part of your mobile device management (MDM) solution, use these configuration profiles to complete different tasks. Some profile examples include:
 

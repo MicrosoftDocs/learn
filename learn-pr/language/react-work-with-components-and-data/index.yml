@@ -26,7 +26,6 @@ roles:
 - developer
 products:
 - azure-app-service-static
-- vs-code
 subjects:
 - data-analytics
 units:

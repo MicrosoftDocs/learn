@@ -19,24 +19,24 @@ quiz:
     choices:
     - content: "TypeScript is a superset of JavaScript."
       isCorrect: true
-      explanation: "Correct. TypeScript is a strict superset of ECMAScript 2015 (ECMAScript 6 or ES6). This means that all JavaScript code is also TypeScript code, and a TypeScript program can seamlessly consume JavaScript."
+      explanation: "Correct. TypeScript is a strict superset of ECMAScript 2015 (ECMAScript 6 or ES6). This relationship means that all JavaScript code is also TypeScript code, and a TypeScript program can seamlessly consume JavaScript."
     - content: "TypeScript is exactly the same as JavaScript."
       isCorrect: false
       explanation: "Incorrect. There are important differences between TypeScript and JavaScript."
     - content: "TypeScript is a subset of JavaScript."
       isCorrect: false
-      explanation: "Incorrect. TypeScript is not a subset of JavaScript because it has added features that JavaScript does not have."
+      explanation: "Incorrect. TypeScript isn't a subset of JavaScript because it has added features that JavaScript doesn't have."
   - content: "Why is it necessary to compile (or transpile) TypeScript code to JavaScript before you can use it in your applications?"
     choices:
-    - content: "It's not necessary to do this because you only need to rename the TypeScript file with a .js extension for it to work."
+    - content: "It's not necessary because you only need to rename the TypeScript file with a .js extension for it to work."
       isCorrect: false
       explanation: "Incorrect. Although you can create a TypeScript file by renaming a JavaScript file with a .ts file extension, it doesn't work when you rename a TypeScript file with a .js file extension."
-    - content: "TypeScript code is considered valid JavaScript while JavaScript code is not valid TypeScript."
+    - content: "TypeScript code is considered valid JavaScript while JavaScript code isn't valid TypeScript."
       isCorrect: false
       explanation: "Incorrect. This would make it unnecessary to compile TypeScript code to JavaScript."
-    - content: "TypeScript includes code features that are not compatible with browsers."
+    - content: "TypeScript includes code features that aren't compatible with browsers."
       isCorrect: true
-      explanation: "Correct. You must compile TypeScript code to JavaScript to remove the features that JavaScript does not support."
+      explanation: "Correct. You must compile TypeScript code to JavaScript to remove the features that JavaScript doesn't support."
   - content: "What does the command `npm install -g typescript` do?"
     choices:
     - content: "Installs npm so you can install TypeScript."

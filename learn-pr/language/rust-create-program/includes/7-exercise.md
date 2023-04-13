@@ -6,7 +6,7 @@ To work on the sample code for this exercise, you have two options:
 - Copy the code and edit it in your local development environment.
 - Open the code in a prepared Rust Playground.
 
-> [!Note]
+> [!NOTE]
 > In the sample code, look for the `todo!` macro. This macro indicates code that needs to be completed or updated.
 
 ## Define an enum

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.saas-foundations.security-and-privacy
+title: Privacy & security considerations for SaaS on Azure
+metadata:
+  title: Privacy & security considerations for SaaS on Azure
+  description: "Privacy & Security for SaaS providers building on Azure. Learn what services can be used to secure SaaS solution on Azure"
+  ms.date: 09/11/2022
+  author: kostinams
+  ms.author: irkostin
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-security-privacy.md)]

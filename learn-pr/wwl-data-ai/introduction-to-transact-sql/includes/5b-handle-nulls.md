@@ -81,7 +81,7 @@ The previous example handled a NULL value in the source table, but you can use I
 
 ## COALESCE
 
-The ISNULL function is not ANSI standard, so you may wish to use the COALESCE function instead. COALESCE is a little more flexible is that it can take a variable number of arguments, each of which is an expression. It will return the first expression in the list that is not NULL.
+The ISNULL function is not ANSI standard, so you may wish to use the COALESCE function instead. COALESCE is a little more flexible in that it can take a variable number of arguments, each of which is an expression. It will return the first expression in the list that is not NULL.
 
 If there are only two arguments, COALESCE behaves like ISNULL. However, with more than two arguments, COALESCE can be used as an alternative to a multipart CASE expression using ISNULL.
 

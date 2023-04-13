@@ -4,13 +4,11 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/18/2022
+  ms.date: 02/08/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
@@ -22,11 +20,11 @@ quiz:
       explanation: "That's incorrect. The basic tier has no service-level agreement and is ideal for development/test and non-critical workloads."
     - content: "Standard"
       isCorrect: true
-      explanation: "That's correct. The standard tier is the lowest tier that offers replication which is always recommended for production scenarios."
+      explanation: "That's correct. The standard tier is the lowest tier that offers replication，which is always recommended for production scenarios."
     - content: "Premium"
       isCorrect: false
       explanation: "That's incorrect. The premium tier is suitable for production, but it isn't the lowest tier recommended for production."
-  - content: "Caching is important because it allows us to store commonly used values in memory. However, we also need a way to expire values when they are stale. In Redis this is done by applying a time to live (TTL) to a key. Which value represents the expire time resolution?"
+  - content: "Caching is important because it allows us to store commonly used values in memory. However, we also need a way to expire values when they're stale. In Redis this is done by applying a time to live (TTL) to a key. Which value represents the expire time resolution?"
     choices:
     - content: "1 millisecond"
       isCorrect: true

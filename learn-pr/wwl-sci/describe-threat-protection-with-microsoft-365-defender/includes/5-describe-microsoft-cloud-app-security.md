@@ -1,3 +1,4 @@
+
 Moving to the cloud increases flexibility for employees and IT teams. However, it also introduces new challenges and complexities for keeping your organization secure. To get the full benefit of cloud apps and services, an IT team must find the right balance for supporting access while protecting critical data.
 
 Microsoft Defender for Cloud Apps is a Cloud Access Security Broker (CASB). It's a comprehensive cross-SaaS solution that operates as an intermediary between a cloud user and the cloud provider. Microsoft Defender for Cloud Apps provides rich visibility to your cloud services, control over data travel, and sophisticated analytics to identify and combat cyberthreats across all your Microsoft and third-party cloud services. Use this service to gain visibility into Shadow IT by discovering the cloud apps being used. You can control and protect data in the apps after you sanction them to the service.
@@ -41,7 +42,7 @@ Defender for Cloud Apps Security delivers on the components of the framework thr
 
 In this interactive guide, you’ll get an introduction to the capabilities available with Microsoft Defender for Cloud Apps. Select the image below to get started and follow the prompts on the screen.
 
-[![Interactive guide](../media/5-defender-cloud-apps-interactive-guide.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/sc-900/LP03M04-Describe-threat-protection-with-Microsoft-365/index.html?azure-portal=true)
+[![Interactive guide](../media/5-defender-cloud-apps-interactive-guide.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/sc-900/mcas-revised-2048x1080-v2-november-2022-update/index.html?azure-portal=true)
 
 ## Office 365 Cloud App Security
 

@@ -1,3 +1,4 @@
+
 In this module, you've learned about Conditional Access and how it's used to protect resources. You've seen how Conditional Access policies use *if then* statements with signals to determine whether to grant access, require more information, or block access.
 
 You also learned about built-in and custom roles in Azure AD and how these are used to provide role-based access control in Azure AD

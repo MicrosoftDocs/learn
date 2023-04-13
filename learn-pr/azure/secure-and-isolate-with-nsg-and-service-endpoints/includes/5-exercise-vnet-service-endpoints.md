@@ -101,7 +101,7 @@ You now need to configure the storage account to be accessible only from databas
         --service-endpoints Microsoft.Storage
     ```
 
-1. To deny all access to change the default action to `Deny`, run the following command in Cloud Shell. After network access is denied, the storage account is not accessible from any network.
+1. To deny all access, change the default action to `Deny` by running the following command in Cloud Shell. After network access is denied, the storage account is not accessible from any network.
 
     ```azurecli
     az storage account update \
@@ -154,7 +154,7 @@ In this step, you'll connect to both of your servers, and verify that only **Dat
 
 1. The response should include a `mount error` message. This connection isn't allowed, because there is no service endpoint for the storage account on the **Applications** subnet.
 
-1. To connect to your **DataServer** VM, and attempt to mount the Azure file share, run the following command in Cloud Shell:.
+1. To connect to your **DataServer** VM and attempt to mount the Azure file share, run the following command in Cloud Shell:
 
     ```bash
     ssh -t azureuser@$DATASERVERIP \

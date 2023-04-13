@@ -2,8 +2,8 @@
 uid: learn.wwl.create-deploy-azure-resource-manager-templates
 metadata:
   title: Create and deploy Azure Resource Manager templates
-  description: "Learn how Azure Resource Manager (ARM) can help streamline deployments, choose the correct deployment mode for your solution, and create and deploy an ARM template."
-  ms.date: 11/07/2022
+  description: "Create and deploy Azure Resource Manager templates"
+  ms.date: 02/06/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
@@ -20,7 +20,7 @@ abstract: |
 prerequisites: |
   * You should be familiar with developer concepts and terminology.
   * An understanding of cloud computing and some experience with the Azure portal.
-iconUrl: /learn/achievements/azure-resource-manager-create-deploy.svg
+iconUrl: /training/achievements/azure-resource-manager-create-deploy.svg
 levels:
 - intermediate
 roles:

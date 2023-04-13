@@ -1,18 +1,17 @@
 ### YamlMime:Module
 uid: learn.azure.choose-azure-services-sla-lifecycle
 metadata:
-  title: Choose the right Azure services by examining service-level agreements (SLAs) and service lifecycle (AZ-900)
-  description: Learn about service-level agreements (SLAs) in Azure, and how they can affect your application design decisions. See how to access preview services and learn how they affect your planning. Prepare for AZ-900.
-  ms.date: 09/14/2020
-  author: Randall-Knapp
-  ms.author: rknapp
+  title: Choose the right Azure services by examining SLAs and service lifecycle
+  description: "Learn about service-level agreements (SLAs) in Azure, and how they can affect your application design decisions. See how to access preview services and learn how they affect your planning. Prepare for AZ-900."
+  ms.date: 03/20/2023
+  author: wwlpublish
+  ms.author: robbarefoot
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Choose the right Azure services by examining SLAs and service lifecycle
 summary: Learn about service-level agreements (SLAs) in Azure, and how they can affect your application design decisions. See how to access preview services and learn how they affect your planning.
 abstract: |
   After completing this module, you'll be able to:
-
   * Describe what a service-level agreement (SLA) is and why SLAs are important.
   * Identify factors, such as the service tier you choose, that can affect an SLA.
   * Combine SLAs to compute a composite SLA.
@@ -25,9 +24,9 @@ levels:
 - beginner
 roles:
 - administrator
-- developer
 - business-owner
 - business-user
+- developer
 - student
 - technology-manager
 products:

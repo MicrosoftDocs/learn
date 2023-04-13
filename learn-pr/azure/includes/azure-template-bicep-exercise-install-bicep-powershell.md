@@ -2,9 +2,10 @@
 author: davidsmatlak
 ms.prod: learning-azure
 ms.topic: include
-ms.date: 11/14/2021
+ms.date: 04/11/2023
 ms.author: davidsmatlak
 ---
+
 ### Install the Bicep CLI
 
-To use Bicep from Azure PowerShell, [install the Bicep CLI](/azure/azure-resource-manager/templates/bicep-install?tabs=azure-powershell#install-manually).
+To use Bicep from Azure PowerShell, [install the Bicep CLI](/azure/azure-resource-manager/templates/bicep-install?tabs=azure-powershell#azure-powershell).

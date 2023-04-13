@@ -2,11 +2,11 @@ Azure Migrate: App Containerization is a standalone utility that you can downloa
 
 The tool currently supports containerization and migration of following ASP.NET applications -
 
-- ASP.NET applications using Microsoft .NET framework 3.5 or later.
+- ASP.NET applications using Microsoft .NET Framework 3.5 or later.
 - Application servers running Windows Server 2008 R2 or later (application servers should be running PowerShell version 5.1).
 - Applications running on Internet Information Services (IIS) 7.5 or later.
 
-Azure Migrate: App Containerization helps you to -
+Azure Migrate: App Containerization helps you to:
 
 - **Discover your application**: The tool remotely connects to the application servers running your ASP.NET web application and discovers the application components. The tool creates a Dockerfile that can be used to create a container image for the application.
 - **Build the container image**: You can inspect and further customize the Dockerfile as per your application requirements and use that to build your application container image. The application container image is pushed to an Azure Container Registry you specify.

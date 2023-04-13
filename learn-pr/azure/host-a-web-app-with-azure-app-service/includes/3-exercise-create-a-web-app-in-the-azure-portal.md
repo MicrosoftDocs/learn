@@ -6,7 +6,7 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
 
 ::: zone pivot="csharp"
 
-1. On the Azure portal menu, or from the **Home** page, select **Create a resource**. Everything you create on Azure is a resource. The **Create a resource** pane appears.
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**. Everything you create on Azure is a resource. The **Create a resource** pane appears.
 
     Here, you can search for the resource you want to create, or select one of the popular resources that people create in the Azure portal.
 
@@ -24,7 +24,7 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
     | **Instance Details** |
     | Name | *Enter a unique name* | The name of your web app. This name will be part of the app's URL: *appname*.azurewebsites.net.  The name you choose must be unique among all Azure web apps. |
     | Publish | Code | The method you want to use to publish your application. When publishing an application as code, you also must configure **Runtime stack** to prepare App Service resources to run your app. |
-    | Runtime stack | .NET Core 3.1 (LTS) | The platform on which your application will run. Your choice may affect whether you have a choice of operating system - for some runtime stacks, App Service supports only one operating system. |
+    | Runtime stack | .NET 6 (LTS) | The platform on which your application will run. Your choice may affect whether you have a choice of operating system - for some runtime stacks, App Service supports only one operating system. |
     | Operating System | Linux | The operating system used on the virtual servers that will run your app. |
     | Region | Central US | The geographical region from which your app will be hosted. |
     | **App Service Plan** |
@@ -129,10 +129,10 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
 
 ::: zone-end
 
-1. Leave any other settings as default. Select **Review + Create** to go to the review pane, and then select **Create**. The portal shows the deployment pane, where you can view the status of your deployment.
+5. Leave any other settings as default. Select **Review + Create** to go to the review pane, and then select **Create**. The portal shows the deployment pane, where you can view the status of your deployment.
 
     > [!NOTE]
-    > It can take a minute for deployment to complete.
+    > It can take a moment for deployment to complete.
 
 ## Preview your web app
 
@@ -140,7 +140,7 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
 
     :::image type="content" source="../media/3-web-app-home.png" alt-text="Screenshot showing the App Service pane with the URL link of the overview section highlighted.":::
 
-1. To preview your web app's default content, select the **URL** at the top right. The placeholder page that loads indicates that your web app is up and running, and is ready to receive deployment of your app's code.
+1. To preview your web app's default content, select the URL under **Default domain** at the top right. The placeholder page that loads indicates that your web app is up and running and is ready to receive deployment of your app's code.
 
 ::: zone pivot="csharp"
 

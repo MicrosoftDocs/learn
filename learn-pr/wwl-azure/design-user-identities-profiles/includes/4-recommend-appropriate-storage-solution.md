@@ -61,7 +61,7 @@ The following tables compare the storage solutions Azure Storage offers for Azur
     All regions
   :::column-end:::
   :::column:::
-    [Select regions](https://azure.microsoft.com/global-infrastructure/services/?products=netapp&amp;regions=all).
+    [Select regions](https://azure.microsoft.com/global-infrastructure/services/?products=netapp&regions=all).
   :::column-end:::
   :::column:::
     All regions

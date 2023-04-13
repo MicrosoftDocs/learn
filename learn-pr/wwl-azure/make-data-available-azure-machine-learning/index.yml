@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.wwl.make-data-available-azure-machine-learning
+metadata:
+  title: Make data available in Azure Machine Learning
+  description: "Make data available in Azure Machine Learning"
+  ms.date: 01/13/2023
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Make data available in Azure Machine Learning
+summary: Learn about how to connect to data from the Azure Machine Learning workspace. You'll be introduced to datastores and data assets.
+abstract: |
+  In this module, you'll learn how to:
+  - Work with Uniform Resource Identifiers (URIs).
+  - Create and use datastores.
+  - Create and use data assets.
+prerequisites: ""
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- data-scientist
+products:
+- azure-machine-learning
+subjects:
+- machine-learning
+units:
+- learn.wwl.make-data-available-azure-machine-learning.introduction
+- learn.wwl.make-data-available-azure-machine-learning.understand-uris
+- learn.wwl.make-data-available-azure-machine-learning.create-datastore
+- learn.wwl.make-data-available-azure-machine-learning.create-data-asset
+- learn.wwl.make-data-available-azure-machine-learning.exercise
+- learn.wwl.make-data-available-azure-machine-learning.knowledge-check
+- learn.wwl.make-data-available-azure-machine-learning.summary
+badge:
+  uid: learn.wwl.make-data-available-azure-machine-learning.badge

@@ -4,7 +4,8 @@ You can help us improve the accuracy of the result by opening an issue here: htt
 Resource and property changes are indicated with these symbols:
   - Delete
   ~ Modify
-  = Nochange
+  x NoEffect
+  = NoChange
 
 The deployment will update the following scope:
 
@@ -13,24 +14,29 @@ Scope: /subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c/resourceGroups/TOYTRU
   - Microsoft.Compute/disks/ToyTruckServer_disk1_23e6a144c4ea4049b3e2be24b78a9e81
 
       id:        "/subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c/resourceGroups/TOYTRUCK/providers/Microsoft.Compute/disks/ToyTruckServer_disk1_23e6a144c4ea4049b3e2be24b78a9e81"
-      location:  "westus"
+      location:  "westus3"
       managedBy: "/subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c/resourceGroups/ToyTruck/providers/Microsoft.Compute/virtualMachines/ToyTruckServer"
       name:      "ToyTruckServer_disk1_23e6a144c4ea4049b3e2be24b78a9e81"
       sku.name:  "Premium_LRS"
       sku.tier:  "Premium"
       type:      "Microsoft.Compute/disks"
 
-  ~ Microsoft.Network/networkInterfaces/toytruckserver890 [2020-07-01]
+  ~ Microsoft.Network/networkInterfaces/toytruckserver123 [2022-05-01]
+    - kind:                                              "Regular"
+    - properties.allowPort25Out:                         true
     ~ properties.ipConfigurations: [
       ~ 0:
 
         - properties.privateIPAddress: "10.0.0.4"
 
       ]
+    x properties.ipConfigurations[0].properties.primary: true
 
-  = Microsoft.Compute/virtualMachines/ToyTruckServer [2021-03-01]
-  = Microsoft.Network/networkSecurityGroups/ToyTruckServer-nsg [2020-11-01]
-  = Microsoft.Network/publicIPAddresses/ToyTruckServer-ip [2020-11-01]
-  = Microsoft.Network/virtualNetworks/ToyTruck-vnet [2020-11-01]
+  = Microsoft.Compute/virtualMachines/ToyTruckServer [2022-08-01]
+    x properties.storageProfile.osDisk.managedDisk.storageAccountType: "Premium_LRS"
+
+  = Microsoft.Network/networkSecurityGroups/ToyTruckServer-nsg [2022-05-01]
+  = Microsoft.Network/publicIPAddresses/ToyTruckServer-ip [2022-05-01]
+  = Microsoft.Network/virtualNetworks/ToyTruck-vnet [2022-05-01]
 
 Resource changes: 1 to delete, 1 to modify, 4 no change.

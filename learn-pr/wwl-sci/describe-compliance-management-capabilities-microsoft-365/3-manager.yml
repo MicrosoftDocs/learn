@@ -4,13 +4,11 @@ title: Describe Compliance Manager
 metadata:
   title: Describe Compliance Manager
   description: "Describe Compliance Manager"
-  ms.date: 08/04/2022
+  ms.date: 02/09/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
-azureSandbox: false
-labModal: false
 durationInMinutes: 10
 content: |
   [!include[](includes/3-manager.md)]

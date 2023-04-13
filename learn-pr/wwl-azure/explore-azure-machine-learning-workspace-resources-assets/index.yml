@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.wwl.explore-azure-machine-learning-workspace-resources-assets
+metadata:
+  title: Explore Azure Machine Learning workspace resources and assets
+  description: "Explore Azure Machine Learning workspace resources and assets"
+  ms.date: 01/05/2023
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Explore Azure Machine Learning workspace resources and assets
+summary: As a data scientist, you can use Azure Machine Learning to train and manage your machine learning models. Learn what Azure Machine Learning is, and get familiar with all its resources and assets.
+abstract: |
+  In this module, you'll learn how to:
+  - Create an Azure Machine Learning workspace.
+  - Identify resources and assets.
+  - Train models in the workspace.
+prerequisites: ""
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- data-scientist
+products:
+- azure-machine-learning
+subjects:
+- machine-learning
+units:
+- learn.wwl.explore-azure-machine-learning-workspace-resources-assets.introduction
+- learn.wwl.explore-azure-machine-learning-workspace-resources-assets.provision
+- learn.wwl.explore-azure-machine-learning-workspace-resources-assets.identify-resources
+- learn.wwl.explore-azure-machine-learning-workspace-resources-assets.identify-assets
+- learn.wwl.explore-azure-machine-learning-workspace-resources-assets.run-jobs
+- learn.wwl.explore-azure-machine-learning-workspace-resources-assets.exercise-explore-workspace
+- learn.wwl.explore-azure-machine-learning-workspace-resources-assets.knowledge-check
+- learn.wwl.explore-azure-machine-learning-workspace-resources-assets.summary
+badge:
+  uid: learn.wwl.explore-azure-machine-learning-workspace-resources-assets.badge

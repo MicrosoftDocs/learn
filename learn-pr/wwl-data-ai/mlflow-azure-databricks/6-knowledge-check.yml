@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.mlflow-azure-databricks.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/22/2023
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.service: azure-databricks
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "Which method should you use to record the `rmse` evaluation value from your model in an MLflow run?"
+    choices:
+    - content: "mlflow.log_metric"
+      isCorrect: true
+      explanation: "Correct. Log performance metrics using the mlflow.log_metric method."
+    - content: "mlflow.log_param"
+      isCorrect: false
+      explanation: "Incorrect. Use the mlflow.log_param method to log parameters."
+    - content: "mlflow.spark.log_model"
+      isCorrect: false
+      explanation: "Incorrect.Use the mlflow.spark.log_model method to log a trained model."
+  - content: "You've logged a model in an experiment run, and you plan to deploy it in a real-time inferencing service. What should you do?"
+    choices:
+    - content: "Reproduce the experiment"
+      isCorrect: false
+      explanation: "Incorrect. Reproducing an experiment doesn't prepare a model for deployment."
+    - content: "Register the model"
+      isCorrect: true
+      explanation: "Correct. Register a model before deploying it for inferencing."
+    - content: "Save the model as an ONXX file in the DFFS file system."
+      isCorrect: false
+      explanation: "Incorrect. Saving the model in DBFS dis not a necessary step for deployment."
+  - content: "You want to be able to use your model to continually predict labels from feature data as it is stored in a delta table. What kind of inferencing should you set up?"
+    choices:
+    - content: "Real-time endpoint"
+      isCorrect: false
+      explanation: "Incorrect. A real-time endpoint enables applications to perform inferencing on-demand through a REST interface."
+    - content: "Streaming"
+      isCorrect: true
+      explanation: "Correct. A streaming inferencing solution processes data in a delta table and streams the results to another table."
+    - content: "Batch"
+      isCorrect: false
+      explanation: "Incorrect. Batch inferencing processes data as a batch, not as it arrives."

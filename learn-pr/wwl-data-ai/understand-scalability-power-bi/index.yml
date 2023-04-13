@@ -3,7 +3,7 @@ uid: learn.wwl.understand-scalability-power-bi
 metadata:
   title: Understand scalability in Power BI
   description: "Scalable data models enable enterprise-scale analytics in Power BI. Implement data modeling best practices, use large dataset storage format, and practice building a star schema to design analytics solutions that can scale."
-  ms.date: 07/20/2022
+  ms.date: 11/24/2022
   author: wwlpublish
   ms.author: shlindsay
   ms.topic: interactive-tutorial
@@ -18,8 +18,8 @@ abstract: |
 prerequisites: |
   Consider completing the [Model data in Power BI](/training/paths/model-power-bi/) learning path.
   You will need knowledge of:
-  - Power BI data model design including star schema design basics
-iconUrl: /training/achievements/generic-badge.svg
+  *   Power BI data model design including star schema design basics
+iconUrl: /training/achievements/understand-scalability-power-bi.svg
 levels:
 - intermediate
 roles:

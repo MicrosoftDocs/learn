@@ -17,7 +17,7 @@ Here are some key factors that NASA takes into account to prepare for a launch:
 - Precipitation intensity
 - Rocket velocity
 
-The 45th Space Wing is a division of the U.S. Space Force that focuses on space exploration and weather as it relates to successful rocket launches. The division has created an [easy-to-follow graphic](https://aka.ms/LearnWithDrG/LaunchForecastFAQ/?azure-portal=true) that shows some of the critical criteria to consider for a safe rocket launch.
+The 45th Space Wing is a division of the U.S. Space Force that focuses on space exploration and weather as it relates to successful rocket launches. The division has created an [easy-to-follow graphic](https://www.patrick.spaceforce.mil/Portals/14/Weather/LaunchFAQ.pdf?ver=wW9MREd4NYgnoOMcKgGG2A%3d%3d) that shows some of the critical criteria to consider for a safe rocket launch.
 
 ### What you can learn from clouds
 

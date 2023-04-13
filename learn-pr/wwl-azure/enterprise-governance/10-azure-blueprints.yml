@@ -4,13 +4,12 @@ title: Deploy Azure blueprints
 metadata:
   title: Deploy Azure blueprints
   description: "Deploy Azure blueprints"
-  ms.date: 03/10/2022
+  ms.date: 02/27/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  zone_pivot_groups: None
 durationInMinutes: 7
 content: |
   [!include[](includes/10-azure-blueprints.md)]

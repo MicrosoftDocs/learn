@@ -3,7 +3,7 @@ uid: learn.health-bot-channelized-bot
 metadata:
   title: Channelized Azure Health Bot
   description: This module demonstrates how to make a bot available on the Microsoft Teams channel. It also shows how to build a basic app.
-  ms.date: 07/27/2021
+  ms.date: 03/22/2023
   author: shreyan1999
   ms.author: chnoring
   ms.topic: interactive-tutorial
@@ -24,7 +24,7 @@ roles:
   - developer
   - student
 products:
-  - vs
+  - azure
 prerequisites: |
  - Introduction to Azure Health Bot
  - Basic Azure Health Bot

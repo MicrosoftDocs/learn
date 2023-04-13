@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.design-health-model-mission-critical-workload.exercise-define-health-states-metrics-threshold
+title: Exercise - Define health state, metrics, and thresholds
+metadata:
+  title: Exercise - Define health state, metrics, and thresholds
+  description: Learn how to define the health state, metrics, and thresholds for a health model.
+  ms.date: 01/12/2022
+  author: msimecek
+  ms.author: prwilk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-exercise-define-health-states-metrics-threshold.md)]

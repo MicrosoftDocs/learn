@@ -13,7 +13,7 @@ Some key characteristics of microservices are:
 - Microservices are small, independent, and loosely coupled.
 - Each microservice has a separate codebase, which can be managed by a small development team.
 - Microservices are deployed independently. A team can update an existing microservice without rebuilding and redeploying the entire application.
-- Microservices are responsible for persisting their data or external state in their respective databases. Unlike the monolithic architecture, microservices do not share databases.
+- Microservices are responsible for persisting their data or external state in their respective databases. Unlike the monolithic architecture, microservices don't share databases.
 - Microservices communicate with each other by using well-defined APIs. Internal implementation details of each service are hidden from other services.
 - Supports polyglot programming. For example, microservices don't need to share the same technology stack, libraries, or frameworks.
 
@@ -23,9 +23,9 @@ Some key characteristics of microservices are:
 
 The benefits of microservices are that each one typically encapsulates simpler customer-requirement functionality, which you can scale out or in, test, deploy, and manage independently. One important benefit of a microservices approach is that teams are driven more by customer scenarios than by technology. Smaller teams develop a microservice based on a customer scenario and use any technologies they want to use.
 
-Microservices provide long-term agility. Microservices enable better maintainability in complex, large, and highly-scalable systems by letting you create applications based on many independently deployable services that each have granular and autonomous lifecycles.
+Microservices provide long-term agility. Microservices enable better maintainability in complex, large, and highly scalable systems by letting you create applications based on many independently deployable services that each have granular and autonomous lifecycles.
 
-As an additional benefit, microservices can scale out independently. Instead of having a single monolithic application that you must scale out as a unit, you can instead scale out specific microservices. That way, you can scale just the functional area that needs more processing power or network bandwidth to support demand, rather than scaling out other areas of the application that don't need to be scaled. That means cost savings because you need less hardware.
+As another benefit, microservices can scale out independently. Instead of having a single monolithic application that you must scale out as a unit, you can instead scale out specific microservices. That way, you can scale just the functional area that needs more processing power or network bandwidth to support demand, rather than scaling out other areas of the application that don't need to be scaled. That means cost savings because you need less hardware.
 
 ![Diagram showing how microservices can scale across virtual machines.](../media/microservice-approach.png)
 
@@ -50,7 +50,7 @@ Another benefit of containerization is scalability. You can scale out quickly by
 
 In short, containers offer the benefits of isolation, portability, agility, scalability, and control across the whole application-lifecycle workflow.
 
-The microservices you will build in this module will run in a container, specifically a Docker container.
+The microservices you'll build in this module will run in a container, specifically a Docker container.
 
 ### Docker
 
@@ -60,17 +60,17 @@ Docker containers can run anywhere on Azure: on-premises in the customer's datac
 
 ### What is an image?
 
-When using Docker, a developer creates an app or service and packages it and its dependencies into a container image. An image is a static representation of the app or service and its configuration and dependencies.
+When a developer uses Docker, they create an app or service and package it and its dependencies into a container image. An image is a static representation of the app or service and its configuration and dependencies.
 
 It's this image that, when run, becomes our container. The container is the in-memory instance of an image.
 
-A container image is immutable. Once you've built an image, the image can't be changed. Since you can't change an image, if you need to make changes, you will create a new image. This feature is our guarantee that the image we use in production is the same image used in development and QA.
+A container image is immutable. Once you've built an image, the image can't be changed. Since you can't change an image, if you need to make changes, you'll create a new image. This feature is our guarantee that the image we use in production is the same image used in development and QA.
 
 ### What is a Dockerfile?
 
 A Dockerfile is a text file that contains instructions on how to build a Docker image. Dockerfiles are written in a minimal scripting language designed for building and configuring images. They also document the operations required to build an image starting with a base image.
 
-To create a Docker image containing your application, you'll typically begin by identifying a base image to which you add additional files and configuration. The process of identifying a suitable base image usually starts with a search on Docker Hub for a ready-made image that already contains an application framework and all the utilities and tools of a Linux distribution like Ubuntu or Alpine. For example, if you have an ASP.NET Core application that you want to package into a container, Microsoft publishes an image called `mcr.microsoft.com/dotnet/core/aspnet` that already contains the ASP.NET Core runtime.
+To create a Docker image containing your application, you'll typically begin by identifying a base image to which you add more files and configuration. The process of identifying a suitable base image usually starts with a search on Docker Hub for a ready-made image that already contains an application framework and all the utilities and tools of a Linux distribution like Ubuntu or Alpine. For example, if you have an ASP.NET Core application that you want to package into a container, Microsoft publishes an image called `mcr.microsoft.com/dotnet/core/aspnet` that already contains the ASP.NET Core runtime.
 
 You can customize an image by starting a container with the base image and making changes to it. Changes usually involve activities like copying files into the container from the local filesystem, and running various tools and utilities to compile code.
 

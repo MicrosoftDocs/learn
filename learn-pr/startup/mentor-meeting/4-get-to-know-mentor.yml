@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.startups.mentor-meeting.get-to-know-mentor
+title: Get to know your mentor
+metadata:
+  title: Get to know your mentor
+  description: "This content is part of the \"Make the most of a mentor meeting\" module."
+  ms.date: 11/11/2022
+  author: turoczy
+  ms.author: v-rturoczy
+  ms.topic: interactive-tutorial
+  ms.prod: learning-consumer
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-get-to-know-mentor.md)]

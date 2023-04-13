@@ -3,7 +3,7 @@ In this module, you learned how to:<br>
  -  Create an Azure Spring Apps service.
  -  Configure your config server.
  -  Create an Azure MySQL Database service.
- -  Deploy your first components of the Spring Petclinic app to the Spring Cloud service.
+ -  Deploy your first components of the Spring Petclinic app to the Spring Apps service.
  -  Provide a publicly available endpoint for the Spring Petclinic application.
  -  Test the application through the publicly available endpoint.
 

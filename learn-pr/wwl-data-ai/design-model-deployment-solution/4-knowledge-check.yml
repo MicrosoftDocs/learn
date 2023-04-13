@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-model-deployment-solution.knowledge-check
+title: Exercise - Design a deployment solution
+metadata:
+  title: Exercise - Design a deployment solution
+  description: "Exercise - Design a deployment solution"
+  ms.date: 01/03/2023
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz:
+  title: "Knowledge check"
+  questions:
+  - content: "What type of predictions are needed by the mobile application?"
+    choices:
+    - content: "Real-time predictions"
+      isCorrect: true
+      explanation: "Correct. There is a need for immediate predictions for individual patients."
+    - content: "Batch predictions"
+      isCorrect: false
+      explanation: "Incorrect. Batch predictions would take too long. We need immediate predictions."
+    - content: "Local predictions"
+      isCorrect: false
+      explanation: "Incorrect. There is a need for immediate predictions for individual patients so we need real-time predictions."
+  - content: "What kind of compute should be used by the deployed model?"
+    choices:
+    - content: "Virtual machines"
+      isCorrect: false
+      explanation: "Incorrect. Virtual machine will be too expensive to have running all the time. Containers will be a more cost-effective solution."
+    - content: "Containers"
+      isCorrect: true
+      explanation: "Correct. Containers will be the more cost-effective solution as we want the model to be always available and respond immediately."
+    - content: "Local device"
+      isCorrect: false
+      explanation: "Incorrect. A local device will be too expensive to have running all the time. Containers will be a more cost-effective solution."

@@ -3,7 +3,7 @@ uid: learn.wwl.perform-device-investigations-microsoft-defender-for-endpoints
 metadata:
   title: Perform device investigations in Microsoft Defender for Endpoint
   description: "Perform device investigations in Microsoft Defender for Endpoint"
-  ms.date: 07/01/2022
+  ms.date: 02/20/2023
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -24,8 +24,13 @@ roles:
 - security-operations-analyst
 products:
 - m365
+- mdatp
+- windows-security
 subjects:
+- cloud-security
 - security
+- threat-protection
+- asset-management
 units:
 - learn.wwl.perform-device-investigations-microsoft-defender-for-endpoints.introduction
 - learn.wwl.perform-device-investigations-microsoft-defender-for-endpoints.use-device-inventory-list

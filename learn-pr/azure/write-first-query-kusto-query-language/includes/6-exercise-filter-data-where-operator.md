@@ -85,7 +85,7 @@ The `contains` operator is similar to `has`, but it matches on any substring. Fo
 StormEvents | where EventType contains "free"
 ```
 
-The `has` operator is more performant than the `contains` operator, so use `has` wherever you have a choice between the two.
+The `has` operator is more performant than the `contains` operator, so you should use `has` wherever you have a choice between the two.
 
 ## Filter on `datetime` values
 
@@ -114,4 +114,4 @@ The syntax for constructing this date range is as follows:
 
     :::image type="content" source="../media/5-where-3.png" alt-text="Screenshot of query results for where operators that include a time range.":::
 
-1. Notice that all the dates are within the first half of the year, months 1 to 6. You might also see that even though you've selected events from the state of Florida, the state doesn't appear as an output column, because it wasn't specified in the `project` operator.
+1. Notice that all the dates are within the first half of the year, months 1 to 6. You might also notice that even though you've selected events from the state of Florida, the state doesn't appear as an output column, because it wasn't specified in the `project` operator.

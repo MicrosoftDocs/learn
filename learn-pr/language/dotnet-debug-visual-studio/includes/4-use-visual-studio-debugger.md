@@ -1,14 +1,14 @@
-It's time to put into practice your newly acquired debugging knowledge. It's your first day on the job, and it's time to put your .NET debugging skills to work by fixing a bug in the company's flagship product, a Fibonacci calculator.
+It's time to put your newly acquired debugging knowledge into practice. It's your first day on the job, and it's time to put your .NET debugging skills to work by fixing a bug in the company's flagship product, a Fibonacci calculator.
 
 ## Create a sample .NET project for debugging
 
 To set up Visual Studio for .NET debugging, we'll first need a .NET project. Visual Studio provides plenty of starter templates that make creating a new project easy.
 
-1. In Visual Studio, select **File** > **New Project**.
+1. In Visual Studio, select **File** > **New** > **Project**.
 
 1. In the **Create a new Project** dialog, select **Console App** and choose **Next**.
 
-1. Name the project *DotNetDebugging*, and choose the location where you'd like to save. Leave the other values at their defaults, and then select **Next**.
+1. Name the project *DotNetDebugging*, and choose the location where you'd like to save. Leave the other values at their defaults, then select **Next**.
 
 1. Click **Create** on the final screen.
 
@@ -191,11 +191,11 @@ It's important to be strategic about where we put our breakpoints. We're especia
 
     This breakpoint will let us inspect the program state before the function exits. We've already learned all we can expect to from our previous breakpoints on lines 1 and 13, so we can clear them.
 
-1. Remove our previous breakpoints on lines 1 and 13. Click on the breakpoints in the margin next to the line numbers or clear the breakpoint check boxes for lines 1 and 13 in the breakpoints pane in the lower left.
+1. Remove our previous breakpoints on lines 1 and 13. Click the breakpoints in the margin next to the line numbers, or clear the breakpoint check boxes for lines 1 and 13 in the breakpoints pane in the lower left.
 
     :::image source="../media/visual-studio-breakpoints-clear.png" alt-text="Screenshot showing the breakpoints listed in the breakpoints pane.":::
 
-    Now that we understand what's going on a lot better and have set a breakpoint designed to catch our program in the act of misbehaving, we should be able to catch this bug!
+    Now that we better understand what's going on and have set a breakpoint designed to catch our program in the act of misbehaving, we should be able to catch this bug!
 
 1. Start the debugger one last time.
 
@@ -247,7 +247,7 @@ It's important to be strategic about where we put our breakpoints. We're especia
 
 1. Stop the debugging session if you haven't already.
 
-1. Make the preceding change to line 11, and leave our breakpoint on line 18.
+1. Make the preceding change to line 11, and leave your breakpoint on line 18.
 
 1. Restart the debugger. This time, when we hit the breakpoint on line 18, we'll see the following values:
 

@@ -23,6 +23,7 @@ prerequisites: |
  - macOS 10.9 or later
  - Ubuntu, Debian, Red Hat, Fedora, or SUSE
 iconUrl: /training/achievements/introducing-vs-code.svg
+hidden: true
 levels:
 - beginner
 roles:

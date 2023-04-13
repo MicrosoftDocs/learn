@@ -19,7 +19,7 @@ namespace RazorPagesPizza.Pages
 }
 ```
 
-A Razor page's `PageModel` class file defines any page handlers for HTTP requests sent to the page, and data used to render the page. The `PageModel` keeps those concerns separate from the Razor page, your app more modular, and easier to maintain. By convention, the `PageModel` class is named *[PageName]Model* and resides in the same namespace as the Razor page. In this case, the `PizzaModel` class in the namespace of `RazorPagesPizza.Pages`.
+A Razor page's `PageModel` class file defines any page handlers for HTTP requests sent to the page, and data used to render the page. The `PageModel` keeps those concerns separate from the Razor page, making your app more modular and easier to maintain. By convention, the `PageModel` class is named *[PageName]Model* and resides in the same namespace as the Razor page. In this case, the `PizzaModel` class in the namespace of `RazorPagesPizza.Pages`.
 
 Currently, the `PizzaModel` class handles the HTTP GET request with an empty `OnGet` page handler. You can add handlers for any HTTP verb. The most common handlers are:
 
@@ -32,9 +32,9 @@ The *Pizza* page contains a form and therefore requires an HTTP POST page handle
 
 The `OnPostAsync` page handler needs to perform the following tasks for this app:
 
-* Verify the user-submitted data posted to the `PageModel` is valid.
+* Verify that the user-submitted data posted to the `PageModel` is valid.
 * If the attempted `PageModel` changes are invalid, the *Pizza* page is presented again to the user. A message is displayed clarifying the input requirements.
-* If the `PageModel` update is valid, then data changes are passed to a service called `PizzaService`. The `PizzaService` will handle the concern persisting the data.
+* If the `PageModel` update is valid, then data changes are passed to a service called `PizzaService`. The `PizzaService` will handle the concern of persisting the data.
 
 ## Bind the model
 
@@ -49,7 +49,7 @@ Binding to properties can reduce the amount of code you have to write. Binding r
 
 ## Built-in server-side model validation using ASP.NET Core data annotations
 
-Model binding and validation are available when you create a ASP.NET Core web app. Both automatically occur before the execution of a page handler. So the `OnPostAsync` page handler only needs to verify the outcome of that validation.
+Model binding and validation are available when you create an ASP.NET Core web app. Both automatically occur before the execution of a page handler. So the `OnPostAsync` page handler only needs to verify the outcome of that validation.
 
 ```csharp
 if (!ModelState.IsValid)
@@ -60,11 +60,11 @@ if (!ModelState.IsValid)
 
 In the preceding code, `ModelState` represents errors from model binding and validation. If the `ModelState` is invalid, then the *Pizza* page is presented again to the user. In the previous unit, you saw how the *Pizza* Razor page uses ASP.NET Core's built-in client-side form input validation to responsively provide the user with input validation feedback.
 
-If the `ModelState` is valid, the `OnPostAsync` page handler calls upon an instance of `PizzaService`. `PizzaService` is responsible for storing the information - in this case, using an in-memory data store.
+If the `ModelState` is valid, the `OnPostAsync` page handler calls upon an instance of `PizzaService`. `PizzaService` is responsible for storing the information. In this case, using an in-memory data store.
 
 ## Define validation rules for the Pizza model using data annotations
 
-This project uses a central model file *Pizza.cs* for `Pizza` model validation and operations. It's used by all Razor page *PageModels* involved in UI for `Pizza` CRUD operations, and is used to validate Pizza data received from the web api. By convention, it's stored in the *Models* directory. The `Pizza` model's namespace is `RazorPagesPizza.Models`.
+This project uses a central model file *Pizza.cs* for `Pizza` model validation and operations. It's used by all Razor page *PageModels* involved in UI for `Pizza` CRUD operations, and is used to validate Pizza data received from the web API. By convention, it's stored in the *Models* directory. The `Pizza` model's namespace is `RazorPagesPizza.Models`.
 
 Your new `PizzaModel` class gained access to any model types defined in the `RazorPagesPizza.Models` namespace, including the `Pizza` model, with the following `using` directive:
 
@@ -111,4 +111,4 @@ A comprehensive set of data annotation attributes is available to you in the `Sy
 
 The `Pizza` model also serves as a Data Transfer Object (DTO). A DTO is an object that defines the data that will be sent over the network, in this case to the web API. In a more advanced version of this application, the *RazorPagesPizza* project's `PizzaService` class would use the `Pizza` model as a DTO that defines valid *Pizza* data that can be sent to and received from the web API or backing database.
 
-Next, you'll update the `PizzaModel` interact with the `PizzaService` class to list existing pizzas and create new ones.
+Next, you'll update the `PizzaModel` so that it interacts with the `PizzaService` class to list existing pizzas and create new ones.

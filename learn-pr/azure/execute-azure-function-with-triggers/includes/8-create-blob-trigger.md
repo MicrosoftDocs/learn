@@ -16,7 +16,7 @@ Let's continue using your existing Azure Functions application and add a blob tr
 
 1. Under **Select a template**, select **Azure Blob Storage trigger**.
 
-1. If you see a message saying  **Extensions not installed**, select **Install**. Dependency installation can take a couple of minutes, so please be patient. Wait until the installation completes before continuing.
+1. If you see a message saying  **Extensions not installed**, select **Install**. Dependency installation can take a couple of minutes. Wait until the installation completes before continuing.
 
 1. Under **Template details**, accept the default value for the **New Function** field.
 
@@ -39,7 +39,7 @@ Now that we've created a blob trigger, let's use Storage browser to create a blo
 
 1. Select your storage account identified under the *Type* column. Your **Storage account** pane appears.
 
-1. In the middle menu pane, select the **Storage browser (preview)**. The **Storage browser (preview)** pane appears where you can work with blobs and files.
+1. In the middle menu pane, select the **Storage browser**. The **Storage browser** pane appears where you can work with blobs and files.
 
 The blob trigger is monitoring only the location described in the **Path** field. By default, your path should be:
 
@@ -63,15 +63,17 @@ Now that we've created our container to monitor, let's run our function so we ca
 
 1. Select your blob trigger. In the left menu pane, under **Developer**, select **Code + Test**.
 
-1. Expand the **Logs** tab at the bottom of the screen.
+1. Expand the **Logs** tab at the bottom of the screen if necessary.
+
+1. Select the **App Insight Logs** drop-down, and then select **Filesystem Logs**. Select **OK** when the **Switching to filesystem based logs...** message displays.
 
 ## Create a blob
 
 Our blob trigger is now up and listening for activity. Let's create a blob to see if we get a log message.
 
-1. Switch back to the browser tab with Storage Explorer.
+1. Switch back to the browser tab with Storage Browser.
 
-1. In Storage Explorer, select the **samples-workitems** container from the **Blob containers** list.
+1. In Storage Browser, select the **samples-workitems** container from the **Blob containers** list.
 
 1. In the top menu bar, select **Upload**. The **Upload blob** pane opens.
 
@@ -79,4 +81,4 @@ Our blob trigger is now up and listening for activity. Let's create a blob to se
 
 1. Select **Upload**.
 
-1. Switch back to the Azure Function tab and check the output logs for a message that displays which file was uploaded. Your blob trigger should automatically execute. If you select **Test/Run** from the top menu bar, and then select **Run** in the function pane, it will likely error due to the default value that is specified in the **Test** request body. You'll need to change the path from the *Input* tab in the request **Body** pane to a valid file for the test to run successfully.
+1. Switch back to the Azure Function tab and check the output logs for a message that displays which file was uploaded. Your blob trigger should automatically execute. If you select **Test/Run** from the top menu bar, and then select **Run** in the function pane, it might result in an error due to the default value that is specified in the **Test** request body. You'll need to change the path from the *Input* tab in the request **Body** pane to a valid file for the test to run successfully.

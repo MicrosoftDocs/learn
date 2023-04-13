@@ -1,3 +1,4 @@
+
 In this module, you've gained an insight into the features and capabilities of Azure Active Directory.  You've learned about the different Azure AD editions, the identity types supported by Azure AD, and how you can use it to support external users. Finally, you learned about the hybrid model, where all user identities are managed in your on-premises Active Directory Domain Services (AD DS) directory, and changes are synchronized to your Azure AD.
 
 Now that you've completed this module, you'll be able to:

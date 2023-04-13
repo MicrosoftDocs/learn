@@ -9,3 +9,17 @@ Autonomous AI uses Machine Teaching to empower industry subject matter experts t
 - What use cases make sense for us?
 
 In this module, you will learn about three main factors that allow you to distinguish if a use case is a good candidate for Machine Teaching.
+
+## Learning objectives
+
+After completing this module, you’ll be able to:
+
+- Select use cases for Autonomous AI
+- Evaluate scenarios where you can use Autonomous AI
+
+## Prerequisites
+
+- Basic knowledge of Automated Intelligence
+- Basic knowledge of Autonomous Intelligence
+- Basic knowledge of Machine Teaching
+- Basic knowledge of Brain Design Patterns

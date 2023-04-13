@@ -4,13 +4,11 @@ title: Define authentication and authorization
 metadata:
   title: Define authentication and authorization
   description: "Define authentication and authorization"
-  ms.date: 05/10/2022
+  ms.date: 02/09/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
-azureSandbox: false
-labModal: false
 durationInMinutes: 2
 content: |
   [!include[](includes/2-define-authentication-authorization.md)]

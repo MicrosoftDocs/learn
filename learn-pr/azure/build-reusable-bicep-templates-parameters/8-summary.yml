@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.build-reusable-bicep-templates-parameters.summary  
-title: Summary  
+uid: learn.azure.build-reusable-bicep-templates-parameters.summary
+title: Summary
 metadata:
-  unitType: summary  
+  unitType: summary
   title: Summary
   description: Summary.
-  ms.date: 10/29/2021
+  ms.date: 01/03/2023
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial

@@ -1,28 +1,28 @@
-You've now learned about workflow jobs, and how you can add a workflow job to validate your Bicep code. The next step in building confidence with your deployment is to add another job to check exactly what your deployment will change. 
+You've now learned about workflow jobs, and how you can add a workflow job to validate your Bicep code. The next step in building confidence with your deployment is to add another job to check exactly what your deployment will change.
 
 In this unit, you'll learn about using the what-if command in a workflow. You'll also learn about adding environment protection rules so that you have the opportunity to manually verify the command's output before the deployment runs.
 
 ## The what-if operation
 
-A Bicep file describes the state that you want your Azure environment to be in at the end of a deployment. When you submit a deployment, Azure Resource Manager changes your Azure environment to match the state that's described in your Bicep file. 
+A Bicep file describes the state that you want your Azure environment to be in at the end of a deployment. When you submit a deployment, Azure Resource Manager changes your Azure environment to match the state that's described in your Bicep file.
 
-A deployment can result in new resources being deployed into your environment, or existing resources being updated. When you run a deployment in complete mode, it can even result in the deletion of existing resources. 
+A deployment can result in new resources being deployed into your environment, or existing resources being updated. When you run a deployment in complete mode, it can even result in the deletion of existing resources.
 
-Anytime resources are created, updated, or deleted, there's a risk that things can change in a way you didn't expect. It's a good practice to add an extra step to verify what exactly will be created, updated, and deleted. This verification adds value to your automation process. When you're deploying to a production environment, it's particularly important to confirm any changes that will happen to your environment.
+Anytime resources are created, updated, or deleted, there's a risk that things can change in a way you didn't expect. It's a good practice to add an extra step to verify what exactly will be created, updated, and deleted. This verification adds value to your automation process. When you're deploying to a production environment, it's important to confirm any changes that will happen to your environment.
 
 Resource Manager provides the what-if operation, which you can run on your Bicep file within your workflow job:
 
 :::image type="content" source="../media/6-jobs-preview.png" alt-text="Diagram of a workflow that includes Lint, Validate, and Preview jobs. The Preview job executes a what-if operation against Azure." border="false":::
 
-The `arm-deploy` action supports triggering what-if operation by using the `additionalArguments` property:
+The `arm-deploy` action supports triggering the what-if operation by using the `additionalArguments` property:
 
 :::code language="yaml" source="code/6-what-if.yml" highlight="12-20" :::
 
-The code above is equivalent to running the deployment by using Azure CLI, with the `--what-if` argument included.
+The highlighted code is equivalent to running the deployment by using Azure CLI, with the `--what-if` argument included.
 
 The what-if operation doesn't make any changes to your environment. Instead, it describes the resources that will be created, the resource properties that will be updated, and the resources that will be deleted.
 
-What-if sometimes shows that a resource will change when actually no change will happen. This is called *noise*. We're working to reduce these problems, but we need your help. [Please report these problems](https://aka.ms/whatifissues).
+What-if sometimes shows that a resource will change when actually no change will happen. This type of output is called _noise_. We're working to reduce these problems, but we need your help. [Report what-if problems](https://aka.ms/whatifissues).
 
 After you see the output of the what-if operation, you can determine whether to continue on to the deployment. This step typically involves a human reviewing the output from the what-if command, and then making a decision about whether the identified changes are reasonable. If a human reviewer decides that the changes are reasonable, they can manually approve the workflow run.
 
@@ -30,22 +30,22 @@ To learn more about the what-if command, see the Microsoft Learn module [Preview
 
 ## Environments
 
-In GitHub Actions, an *environment* represents the place to which your solution is deployed. Environments provide features that help when you work with complex deployments. In a future module, you'll learn more about environments and their features. For now, we'll focus on their ability to add required reviewers to your workflow.
+In GitHub Actions, an _environment_ represents the place to which your solution is deployed. Environments provide features that help when you work with complex deployments. In a future module, you'll learn more about environments and their features. For now, we'll focus on their ability to add required reviewers to your workflow.
 
 You create an environment by using the GitHub web interface. You can create environments when you work with a public GitHub repository, or when you use a GitHub Enterprise account.
 
-After you create an environment you can reference it in any jobs in your workflow:
+After you create an environment, you can reference it in any jobs in your workflow:
 
 :::code language="yaml" source="code/6-environment.yml" range="19-60" highlight="28" :::
 
 > [!NOTE]
-> When your deployment workflow's workload identity interacts with Azure Resource Manager within an environment, it needs a federated credential that's configured with the name of the environment. You'll learn more about this in future modules. When you run the exercises for this module, you'll create the necessary federated credentials.
+> When your deployment workflow's workload identity interacts with Azure Resource Manager within an environment, it needs a federated credential that's configured with the name of the environment. You'll learn more about environments in future modules. When you run the exercises for this module, you'll create the necessary federated credentials.
 
 ## Environment protection rules
 
-After you create an environment, you can define *protection rules*. Protection rules are used to verify conditions that must be met before a step can use the environment. The *required reviewers* protection rule is a type of check that requires a human to provide a manual approval.
+After you create an environment, you can define _protection rules_. Protection rules are used to verify conditions that must be met before a step can use the environment. The _required reviewers_ protection rule is a type of check that requires a human to provide a manual approval.
 
-Protection rules are defined on the environment, not the workflow. Authors of the workflow YAML file can't remove or add these protection rules. Only the administrators of a repository or the account owner can manage environments and their protection rules. 
+Protection rules are defined on the environment, not the workflow. Authors of the workflow YAML file can't remove or add these protection rules. Only the administrators of a repository or the account owner can manage environments and their protection rules.
 
 Environment protection rules help to ensure that the right people are involved in the deployment process.
 
@@ -67,6 +67,6 @@ Reviewers can inspect the workflow logs, such as the changes that the what-if op
 
 The environments feature in GitHub gives you the ability to link your deployments to an environment, and then the deployment inherits the protection rules defined by the administrator of the environment. However, there's nothing to require that new workflows use environments.
 
-It's important that you and your organization establish good practices to review your workflow definitions. An example is configuring your repository to require pull request reviews on any changes to your *main* branch by using branch protection rules. You'll learn more about this in a future module.
+It's important for an organization to establish good practices to review your workflow definitions. An example is configuring your repository to require pull request reviews on any changes to your _main_ branch by using branch protection rules. You'll learn more about this concept in a future module.
 
-You can also add *secrets* to an environment. That way the secret can only be used in a job that also uses the environment. By combining environment protection rules and secrets, you can ensure your workflow security is maintained.
+You can also add _secrets_ to an environment. That way the secret can only be used in a job that also uses the environment. By combining environment protection rules and secrets, you can ensure your workflow security is maintained.

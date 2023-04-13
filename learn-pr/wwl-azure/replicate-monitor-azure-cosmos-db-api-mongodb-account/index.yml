@@ -2,8 +2,8 @@
 uid: learn.wwl.replicate-monitor-azure-cosmos-db-api-mongodb-account
 metadata:
   title: Replicate and monitor an Azure Cosmos DB for MongoDB account
-  description: "Learn about replication, monitoring and troubleshooting performance using Azure Cosmos DB."
-  ms.date: 10/20/2022
+  description: "Replicate and monitor an Azure Cosmos DB for MongoDB account"
+  ms.date: 12/12/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ abstract: |
   *   Monitor Azure Cosmos DB
 prerequisites: |
   Before starting this module, you should have experience of building cloud applications with Microsoft JavaScript, Java, Python, C# or a similar programming language.
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/replicate-monitor-azure-cosmos-db-api-mongodb-account.svg
 levels:
 - intermediate
 roles:

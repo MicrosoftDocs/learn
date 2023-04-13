@@ -29,7 +29,7 @@ The important parameters for this command are listed in :
 | `-CorsRules` | This parameter specifies  an array of CORS rules to apply to the storage account. You can retrieve the existing rules using the `Get-AzureStorageCORSRule` cmdlet. |
 | `-ServiceType` | This parameter specifies the Azure Storage service type for which this cmdlet assigns rules. The acceptable values for this parameter are: <ul><li>Blob</li><li>Table</li><li>Queue</li><li>File</li></ul> |
 
-The example below enables CORS for the blob storage account specified by *&lt;account-name&gt;*. The CORS rule permits HTTP GET and PUT requests from the *www.fabrikam.com* and *www.contoso.com* domains.
+The example below enables CORS for the blob storage account specified by *&lt;account-name&gt;*. The CORS rule permits HTTP GET and PUT requests from the `www.fabrikam.com` and `www.contoso.com` domains.
 
 ```PowerShell
 $context = New-AzureStorageContext -StorageAccountName <account-name> -StorageAccountKey <key>

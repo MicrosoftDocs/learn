@@ -1,4 +1,4 @@
-Device events enable you to keep your solution healthy. Some parameters are are easy to check or verify, while others can be more difficult to track.
+Device events enable you to keep your solution healthy. Some parameters are easy to check or verify, while others can be more difficult to track.
 
 ## Device heartbeat
 

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-data-pipeline-azure-synapse-analytics.run-pipelines
+title: Run a pipeline
+metadata:
+  title: Run a pipeline
+  description: "Run a pipeline"
+  ms.date: 02/03/2023
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: synapse-analytics
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-run-pipelines.md)]

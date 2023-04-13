@@ -41,7 +41,7 @@ If a condition expression evaluates to `true`, the corresponding action block is
 In this example, we check if a number is within an allowable range. We want to do some specific processing when the number is less than zero, equal to zero, or greater than 512. We declare the boolean variable `out_of_range`, but we don't set the variable value until the program enters the conditional test expression.
 
 ```rust
-let num = 500 // num variable can be set at some point in the program
+let num = 500; // num variable can be set at some point in the program
 let out_of_range: bool;
 if num < 0 {
     out_of_range = true;

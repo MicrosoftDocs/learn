@@ -18,8 +18,6 @@ On Premium SSD disks, Azure offers this functionality in preview to a limited nu
 
 You can change the performance tier of a Premium SSD disk without downtime and without dismounting the disk from the VM.
 
-Currently, Azure supports this functionality in preview only in the East US 2 region and requires that you deploy the VM by using an Azure Resource Manager template (ARM template) by using the 2020-12-01 API.
-
 You can change the performance tier of the disk by using the Azure CLI or the Azure portal.
 
 In the Azure CLI, use the following commands to change the disk performance tier:
@@ -53,8 +51,8 @@ VM bursting supports only the credit-based model for bursting, which doesn't req
 
 Azure Premium SSD disks offer two models of bursting:
 
-- **Credit-based bursting model**. You can use this model for short-term performance scaling. This model is free and enabled by default on Premium SSD 512-GiB disks and smaller disks, and on Standard SSD 1-TiB disks and smaller disks. It uses accumulated credit to burst up to 30 minutes at the maximum burst rate.
-- **On-demand bursting model (preview)**. This option is configurable bursting for Premium SSD disks that are larger than 512 GiB. It comes with an additional cost. To configure on-demand bursting, you must detach the disk from the VM.
+- **Credit-based bursting model**: You can use this model for short-term performance scaling. This model is free and enabled by default on Premium SSD 512-GiB disks and smaller disks, and on Standard SSD 1-TiB disks and smaller disks. It uses accumulated credit to burst up to 30 minutes at the maximum burst rate.
+- **On-demand bursting model**: This option is configurable bursting for Premium SSD disks that are larger than 512 GiB. It comes with an additional cost. To configure on-demand bursting, you must detach the disk from the VM.
 
 You can enable on-demand bursting by using Azure PowerShell, the Azure CLI, or an ARM template. You can enable this functionality on new and existing disks.
 
@@ -73,8 +71,8 @@ $dataDisk = New-AzDisk -ResourceGroupName "myResourceGroupDisk" -DiskName "myDat
 
 Now that you understand how different performance indicators define the overall performance of an Azure disk, let's examine some use-case scenarios:
 
-- **Planned versus unplanned performance scaling**. If you have a planned event, like a marketing campaign, that requires a sustained increase in disk performance, use performance tiers to better accommodate the increased load. However, if you can't plan ahead or can't accurately predict the performance pattern of your workloads, disk bursting would be a better choice because it provides you with a higher allowance beyond your provisioned target.
-- **Duration**. For scenarios in which high demand results from short-running jobs or jitters in I/O scheduling, on-demand disk bursting will be more cost-efficient because you will pay only for the burst transactions. If your workload doesn't exceed the provisioned target, you pay only for the burst enablement fee, which is a small fraction of the disk cost. In contrast, if you expect your workload to burst for days or even longer, performance tiers will be the better option.
+- **Planned versus unplanned performance scaling**: If you have a planned event like a marketing campaign that requires a sustained increase in disk performance, use performance tiers to better accommodate the increased load. However, if you can't plan ahead or can't accurately predict the performance pattern of your workloads, disk bursting would be a better choice because it provides you with a higher allowance beyond your provisioned target.
+- **Duration**: For scenarios in which high demand results from short-running jobs or jitters in I/O scheduling, on-demand disk bursting will be more cost-efficient because you pay only for the burst transactions. If your workload doesn't exceed the provisioned target, you pay only for the burst-enablement fee, which is a small fraction of the disk cost. In contrast, if you expect your workload to burst for days or even longer, performance tiers will be the better option.
 
 |&nbsp;              | Credit-based bursting                               | On-demand bursting                                  | Changing performance tier |
 | ------------ | --------------------------------------------------- | --------------------------------------------------- | ---------------------------------------------------------------------- |

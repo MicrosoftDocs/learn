@@ -22,10 +22,9 @@ This module assumes you've completed the [Automate development tasks by using Gi
 
 - A GitHub account
 - The ability to navigate and edit files in GitHub
-  - For more information about GitHub, see [Introduction to GitHub](https://lab.github.com/githubtraining/introduction-to-github?azure-portal=true).
+  - For more information about GitHub, see [Introduction to GitHub](https://github.com/skills/introduction-to-github).
 - Basic familiarity with GitHub Actions and workflows
   - If you aren't familiar with workflows, jobs and steps, check out the [Automate development tasks by using GitHub Actions](/training/modules/github-actions-automate-tasks/) module.
 - Basic familiarity with continuous integration using GitHub Actions and workflows
   - If you're unfamiliar with continuous integration using GitHub Actions and workflows, check out [Build continuous integration workflows by using GitHub Actions](/training/modules/github-actions-ci/)
 - An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true).
-- An understanding of [Microsoft Azure Fundamentals](../../../paths/az-900-describe-cloud-concepts/index.yml)

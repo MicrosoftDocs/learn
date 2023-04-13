@@ -33,7 +33,7 @@ func main() {
 
 If you run the preceding code several times, you'll see a different output every time. (But if you run the code in the Go Playground, you'll get the same result every time. That's one of the service's limitations.)
 
-Go executes each case of the `switch` statement until it finds a match for the condition. But notice that the previous code doesn't cover all possible cases of `num` variable values. If `num` ends up being `5`, the program output is `ok`. 
+Go compares each case of the `switch` statement until it finds a match for the condition. But notice that the previous code doesn't cover all possible cases of `num` variable values. If `num` ends up being `5`, the program output is `ok`.
 
 You can also be more specific about the default use case and include it like this:
 
@@ -50,7 +50,7 @@ default:
 }
 ```
 
-Notice that for the `default` case, you don't write a validating expression. Instead, you simply include the `i` variable because you'll validate its value in the `case` statements.
+Notice that for the `default` case, you don't write a validating expression. The value of the `i` variable is validated against the `case` statements, and the `default` case handles any unvalidated values.
 
 ## Use multiple expressions
 
@@ -103,7 +103,7 @@ func main() {
     case "Monday", "Tuesday", "Wednesday", "Thursday", "Friday":
         fmt.Println("It's time to learn some Go.")
     default:
-        fmt.Println("It's weekend, time to rest!")
+        fmt.Println("It's the weekend, time to rest!")
     }
 
     fmt.Println(time.Now().Weekday().String())

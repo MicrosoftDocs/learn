@@ -10,7 +10,7 @@ During the refactoring process, you'll:
 
 ## Update the resource symbolic names
 
-1. In Visual Studio Code, open the *main.bicep* file.
+1. In Visual Studio Code, open the _main.bicep_ file.
 
 1. Select the symbolic name for the network security group resource, which is `networkSecurityGroups_ToyTruckServer_nsg_name_resource` or a similar name.
 
@@ -24,10 +24,10 @@ During the refactoring process, you'll:
    > The names of the resources in your deployment will be a little different from the names in the table. Find the resources that have names that are close to these names.
 
    | Resource type | Current symbolic name | New symbolic name |
-   |-|-|-|
+   | ---- | ---- | ---- |
    | Public IP address | `publicIPAddresses_ToyTruckServer_ip_name_resource` | `publicIPAddress` |
-   | Virtual network | `virtualNetworks_ToyTruck_vnet_name_resource` | `virtualNetwork ` |
    | Virtual machine | `virtualMachines_ToyTruckServer_name_resource` | `virtualMachine` |
+   | Virtual network | `virtualNetworks_ToyTruck_vnet_name_resource` | `virtualNetwork` |
    | Subnet | `virtualNetworks_ToyTruck_vnet_name_default` | `defaultSubnet` |
    | Network interface | `networkInterfaces_toytruckserver890_name_resource` | `networkInterface` |
 
@@ -39,7 +39,7 @@ The virtual network's subnet currently is defined twice. It's defined once in th
 
    Notice that the `networkInterface` resource now displays a problem, because it refers to the default subnet's resource ID:
 
-   :::image type="content" source="../media/5-network-interface-subnet-problem.png" alt-text="Screenshot of Visual Studio Code that shows the networkInterface resource definition, with the error highlighted.":::
+   :::image type="content" source="../media/5-network-interface-subnet-problem.png" alt-text="Screenshot of Visual Studio Code that shows the network interface resource definition, with the error highlighted.":::
 
 1. Update the `virtualNetwork` resource to include an `existing` reference to the subnet. By adding the `existing` reference, you can refer to the subnet again within your Bicep code without defining it again:
 
@@ -49,9 +49,13 @@ The virtual network's subnet currently is defined twice. It's defined once in th
 
    :::code language="bicep" source="code/5-network-interface-fixed.bicep" highlight="15" :::
 
+   You will notice an error about that the expression is involved in a cycle. You'll fix that in the next step.
+
+1. Go to the `virtualNetwork` resource's `subnets` property and remove `id: defaultSubnet.id` to resolve the error.
+
 ## Change the parameters to variables
 
-The parameters in the current template don't really need to be parameters. Here, you'll convert them to variables. At the same time, you'll rename them to more meaningful names.
+The parameters in the template don't need to be parameters. You'll rename the parameters to more meaningful names and convert them to variables.
 
 1. Select the symbolic name for the `virtualNetworks_ToyTruck_vnet_name` parameter. Rename it to `virtualNetworkName`.
 
@@ -61,133 +65,158 @@ The parameters in the current template don't really need to be parameters. Here,
    var virtualNetworkName = 'ToyTruck-vnet'
    ```
 
-1. Repeat the process for each parameter. Rename the parameters as shown in the following table:
+1. Repeat the process for each parameter. Rename the parameters as shown in the following table.
+
+   Notice that the value of the `networkInterfaceName` includes a three-digit number. The number is different between deployments. Ensure that you copy the variable's value from your reference template.
 
    | Current parameter name | New variable name |
-   |-|-|
+   | ---- | ---- |
    | `virtualMachines_ToyTruckServer_name` | `virtualMachineName` |
    | `networkInterfaces_toytruckserver890_name` | `networkInterfaceName` |
    | `publicIPAddresses_ToyTruckServer_ip_name` | `publicIPAddressName` |
    | `networkSecurityGroups_ToyTruckServer_nsg_name` | `networkSecurityGroupName` |
 
-1. Verify that your variable declarations look similar to the following example:
+1. Verify that your variable declarations look like the following example:
 
    :::code language="bicep" source="code/5-variables.bicep" :::
 
-   Notice that the value of the `networkInterfaceName` includes a three-digit number. The number is different between deployments. Ensure that you copy the variable's value from your reference template.
-
 ## Update the resource locations
 
-All the resources currently use a hard-coded location. Here, you'll add a parameter so that the template becomes more reusable.
+All the resources currently use a hard-coded location. You'll add a parameter so that the template becomes more reusable.
 
-1. At the top of the file, add a new parameter and a description decorator to make the parameter's purpose clear:
+1. At the top of the file, add a new parameter and a description decorator to clarify the parameter's purpose.
 
    ```bicep
-   @description('The location into which the resources should be deployed.')
+   @description('The location where resources are deployed.')
    param location string = resourceGroup().location
    ```
 
-1. Update each resource to use the `location` parameter instead of the hard-coded `westus` location.
+1. Update each resource to use the `location` parameter instead of the hard-coded `westus3` location.
 
 ## Add parameters and variables
 
 Your template has some hard-coded values where parameters or variables would be more appropriate. Here, you'll add parameters for properties that might change between deployments and variables for values that won't.
 
-1. At the top of the *main.bicep* file, below the `location` parameter, add the following parameters:
+1. At the top of the _main.bicep_ file, below the `location` parameter, add the following parameters:
 
    ```bicep
    @description('The name of the size of the virtual machine to deploy.')
    param virtualMachineSizeName string = 'Standard_D2s_v3'
-   
+
    @description('The name of the storage account SKU to use for the virtual machine\'s managed disk.')
    param virtualMachineManagedDiskStorageAccountType string = 'Premium_LRS'
-   
+
    @description('The administrator username for the virtual machine.')
    param virtualMachineAdminUsername string = 'toytruckadmin'
-   
+
    @description('The administrator password for the virtual machine.')
    @secure()
    param virtualMachineAdminPassword string
-   
+
    @description('The name of the SKU of the public IP address to deploy.')
-   param publicIPAddressSkuName string = 'Basic'
-   
+   param publicIPAddressSkuName string = 'Standard'
+
    @description('The virtual network address range.')
    param virtualNetworkAddressPrefix string
-   
+
    @description('The default subnet address range within the virtual network')
    param virtualNetworkDefaultSubnetAddressPrefix string
    ```
 
    Some of the parameters have default values and others don't. Later, you'll create a parameter file to set most of these values.
 
-1. Add the following new variable declarations:
+1. Add the following new variable declarations below the `networkSecurityGroupName` variable.
 
    ```bicep
    var virtualNetworkDefaultSubnetName = 'default'
    var virtualMachineImageReference = {
      publisher: 'canonical'
      offer: '0001-com-ubuntu-server-focal'
-     sku: '20_04-lts'
+     sku: '20_04-lts-gen2'
      version: 'latest'
    }
    ```
 
 1. Add the following variable declaration. Replace the values with the OS disk name from your own reference template:
 
-   :::code language="bicep" source="code/5-main-refactored.bicep" range="35":::
+   :::code language="bicep" source="code/5-main-refactored.bicep" range="38":::
 
    The value of the `virtualMachineOSDiskName` is unique. The value is different between deployments. Ensure that you copy the variable's value from your reference template.
 
    > [!WARNING]
-   > Ensure that you copy the values for the `virtualMachineOSDiskName` and `networkInterfaceName` variables correctly. Otherwise, Azure won't detect that you're declaring the same resources that already exist, and it might try to create new resources.
+   > Ensure that you copy the correct values for the `virtualMachineOSDiskName` and `networkInterfaceName` variables. Otherwise, Azure won't detect that you're declaring existing resources and might try to create new resources.
 
    Your variable declarations should now look like this example:
 
-   :::code language="bicep" source="code/5-main-refactored.bicep" range="26-38" highlight="2, 4-9, 10, 11" :::
+   :::code language="bicep" source="code/5-main-refactored.bicep" range="26-38" highlight="3, 6, 7-12, 13" :::
 
-1. Update the `publicIPAddress` resource to refer to the `publicIPAddressSkuName` parameter in its `sku.name` property.
+1. Update the `publicIPAddress` resource to refer to a parameter.
 
-1. Update the `virtualNetwork` resource to refer to the parameters and variables:
-
-   - Use the `virtualNetworkAddressPrefix` parameter within the virtual network's `addressSpace.addressPrefixes` property.
-   - Use the `virtualNetworkDefaultSubnetName` variable for the subnet `name` properties. Make sure you change both the `subnets` property and the nested `existing` resource.
-   - Use the `virtualNetworkDefaultSubnetAddressPrefix` parameter for the subnet's `addressPrefix` property.
+   | Property | Parameter |
+   | ---- | ---- |
+   | `sku.name` | `publicIPAddressSkuName` |
 
 1. Update the `virtualMachine` resource to refer to the parameters and variables:
 
-   - Use the `virtualMachineSizeName` parameter for the `hardwareProfile.vmSize` property.
-   - Use the `virtualMachineImageReference` variable for the `storageProfile.imageReference` property.
-   - Use the `virtualMachineOSDiskName` variable for the `storageProfile.osDisk.name` property.
-   - Use the `virtualMachineManagedDiskStorageAccountType` parameter for the `storageProfile.osDisk.managedDisk.storageAccountType` property.
-   - Use the `virtualMachineAdminUsername` parameter for the `osProfile.adminUsername` property.
-   - Directly below the `osProfile.adminUsername` property, add a new property named `adminPassword`. Set the property value to the `virtualMachineAdminPassword` parameter.
+   | Property | Parameter or variable |
+   | ---- | ---- |
+   | `hardwareProfile.vmSize` | `virtualMachineSizeName` |
+   | `storageProfile.imageReference` | `virtualMachineImageReference` <br> Use the variable name to replace the object's values including the curly braces. |
+   | `storageProfile.osDisk.name` | `virtualMachineOSDiskName` |
+   | `storageProfile.osDisk.managedDisk.storageAccountType` | `virtualMachineManagedDiskStorageAccountType` |
+   | `osProfile.adminUsername` | `virtualMachineAdminUsername` |
+   | `osProfile.adminPassword ` <br> Add this property below `osProfile.adminUsername` | `virtualMachineAdminPassword` |
+
+1. Update the `virtualNetwork` resource to refer to the parameters and variables:
+
+   | Property | Parameter or variable |
+   | ---- | ---- |
+   | `addressSpace.addressPrefixes`| `virtualNetworkAddressPrefix` |
+   | `subnets.name` | `virtualNetworkDefaultSubnetName` |
+   | `subnets.addressPrefix` | `virtualNetworkDefaultSubnetAddressPrefix` |
+
+1. Update the `virtualNetwork` resource's nested resource `defaultSubnet`.
+
+   | Property | Variable |
+   | ---- | ---- |
+   | `name` | `virtualNetworkDefaultSubnetName` |
 
 ## Remove unnecessary properties
 
-The export process adds redundant properties to many resources. Here, you remove the extraneous properties.
+The export process adds redundant properties to many resources. Use these steps to remove the unneeded properties.
 
-1. In the `networkSecurityGroup` resource, remove the `securityRules` property because it's empty. Remove the `properties` property because it's empty now, too.
+1. In the `networkSecurityGroup` resource, remove `properties` because the `securityRules` property is empty.
 
-1. In the `publicIPAddress` resource:
+1. In the `publicIPAddress` resource remove the following properties:
 
-   - Remove the `ipAddress` property because it's automatically set by Azure.
-   - Remove the `ipTags` property because it's empty.
+   - `ipAddress` property because it's automatically set by Azure.
+   - `ipTags` property because it's empty.
 
-1. In the `virtualNetwork` resource, remove the `delegations` and `virtualNetworkPeerings` properties because they're empty.
+1. In the `virtualMachine` resource remove the following properties:
 
-1. In the `virtualMachine` resource:
+   - `storageProfile.osDisk.managedDisk.id` property because Azure automatically determines this property when the virtual machine is deployed.
 
-   - Remove the `storageProfile.osDisk.managedDisk.id` property because Azure automatically determines this property when the virtual machine is deployed.
      > [!IMPORTANT]
      > It's important to remove this property or your template won't deploy correctly.
-   - Remove the `requireGuestProvisionSignal` property because Azure sets this property automatically.
-   - Remove the `storageProfile.dataDisks` and `osProfile.secrets` properties because they're empty.
 
-1. In the `networkInterface` resource:
+   - `storageProfile.dataDisks` property because it's empty.
+   - `osProfile.secrets` property because it's empty.
+   - `osProfile.requireGuestProvisionSignal` property because Azure sets this property automatically.
 
-   - Remove the `privateIPAddress` property from `ipConfigurations` because it's automatically set by Azure and the allocation method is _Dynamic_.
-   - Remove the `dnsServers` property from `dnsSettings` because it's empty. Remove the `dnsSettings` property because it's empty now, too.
+1. In the `virtualNetwork` resource remove the following properties:
+
+   - `delegations` and `virtualNetworkPeerings` properties because they're empty.
+   - The line for `type: 'Microsoft.Network/virtualNetworks/subnets'`.
+
+1. In the `networkInterface` resource remove the following properties:
+
+   - The `kind` property.
+   - From `ipConfigurations` the `id`, `etag`, and `type`.
+   - From `ipConfigurations.properties`:
+     - `provisioningState`.
+     - `privateIPAddress` property because it's automatically set by Azure and the allocation method is _Dynamic_.
+   - From `publicIPAddress` remove `name`, `properties`, `type`, and `sku`.
+   - `dnsSettings` because the `dnsServers` property is empty.
 
 > [!TIP]
 > When you work with your own templates, you'll need to determine whether there are any properties that should be removed like you've done here.
@@ -196,35 +225,41 @@ The export process adds redundant properties to many resources. Here, you remove
 >
 > :::image type="content" source="../media/5-visual-studio-code-required-properties.png" alt-text="Screenshot of Visual Studio Code that shows the required properties selection when defining a new Bicep resource.":::
 >
-> When you select **required-properties**, Visual Studio Code prepopulates the resource definition with the properties that are mandatory. You can refer to **required-properties** to determine whether the properties in your converted template all need to be present.
+> When you select **required-properties**, Visual Studio Code populates the resource definition with the properties that are mandatory. You can refer to **required-properties** to determine whether the properties in your converted template all need to be present.
 >
-> The Azure quickstart templates repository is also helpful for this task. Find a quickstart template that does approximately what you're trying to do, and look at the properties it sets on the resource.
+> The Azure Quickstart Templates repository is also helpful for this task. Find a quickstart template that does approximately what you're trying to do, and look at the properties it sets on the resource.
 
 ## Create a parameter file
 
 Your parameters currently are defined as default values in your template. To make your template work well across environments, it's a good idea to create a parameter file, and to remove default values for parameters that need to change for each environment.
 
-1. Create a new file named *main.parameters.production.json*.
+1. Create a new file named _main.parameters.production.json_.
 
-1. Paste the following JSON into the *main.parameters.production.json* file.
+1. Paste the following JSON into the _main.parameters.production.json_ file.
 
    :::code language="json" source="code/5-parameters.json" :::
 
 1. Update the values for the `virtualNetworkAddressPrefix` and `virtualNetworkDefaultSubnetAddressPrefix` parameters to match the IP address ranges that are specified in your reference template's virtual network resource.
 
-   For example, here's how they are specified in a reference template. Your IP addresses might be different from IP addresses that are used in this example:
+   For example, here's how the values are specified in a reference template. Your IP addresses might be different from IP addresses that are used in this example:
 
-   :::code language="bicep" source="code/3-main-migrated.bicep" range="31-54" highlight="7, 14":::
+   :::code language="bicep" source="code/3-main-migrated.bicep" range="93-118" highlight="7, 15":::
 
-1. Update your *main.bicep* file to remove the default values for the parameters you specified in the parameters file. Leave the default values for the `location` and `publicIPAddressSkuName` parameters because they likely are the same for all your environments.
+1. Update your _main.bicep_ file to remove the default values for the parameters you specified in the parameters file.
+
+   - `virtualMachineSizeName`
+   - `virtualMachineManagedDiskStorageAccountType`
+   - `virtualMachineAdminUsername`
+
+  Don't change the default values for `location` and `publicIPAddressSkuName` parameters because those values are likely the same for all your environments.
 
 ## Verify your template
 
-1. At the end of the refactor phase, your *main.bicep* file should look similar to the following example:
+1. At the end of the refactor phase, your _main.bicep_ file should look similar to the following example:
 
    :::code language="bicep" source="code/5-main-refactored.bicep" :::
 
-   Your *main.parameters.production.json* file should look similar to the following file, although you might have different IP address ranges listed:
+   Your _main.parameters.production.json_ file should look similar to the following file, although you might have different IP address ranges listed:
 
    :::code language="json" source="code/5-parameters-completed.json" :::
 

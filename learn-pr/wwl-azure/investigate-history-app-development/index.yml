@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.investigate-history-app-development
+metadata:
+  title: Investigate the history of app development
+  description: "Investigate the history of app development"
+  ms.date: 12/16/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Investigate the history of app development
+summary: Explores the history of computing and programming and surveys how modern programming evolved from the early days.
+abstract: |
+  After completing this module, you'll be able to:
+  - Outline computing history
+  - Survey the early days of programming
+  - Explain modern programming techniques
+  - Summarize the importance of accessibility
+prerequisites: |
+  General knowledge of computer terminology.
+iconUrl: /learn/achievements/investigate-history-app-development.svg
+levels:
+- beginner
+roles:
+- administrator
+- developer
+- k-12-educator
+- student
+products:
+- return-to-school
+- return-to-workplace
+subjects:
+- cloud-computing
+units:
+- learn.wwl.investigate-history-app-development.introduction
+- learn.wwl.investigate-history-app-development.research-computing-history
+- learn.wwl.investigate-history-app-development.explore-programming-history
+- learn.wwl.investigate-history-app-development.investigate-modern-programming
+- learn.wwl.investigate-history-app-development.inspect-modern-cloud-structure
+- learn.wwl.investigate-history-app-development.explore-accessibility
+- learn.wwl.investigate-history-app-development.knowledge-check
+- learn.wwl.investigate-history-app-development.summary
+badge:
+  uid: learn.wwl.investigate-history-app-development.badge

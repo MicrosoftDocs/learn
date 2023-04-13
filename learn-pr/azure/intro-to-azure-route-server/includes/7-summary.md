@@ -1,6 +1,6 @@
 You’ve learned how Azure Route Server can help optimize route information exchange between your NVA and Azure virtual networks to make it more efficient. Azure Route Server provides:
 
-- A highly available and fully-managed solution.
+- A highly available and fully managed solution.
 - A simple method for configuring, managing, and deploying your NVA in your virtual network.
 - Integration with many NVAs.
 

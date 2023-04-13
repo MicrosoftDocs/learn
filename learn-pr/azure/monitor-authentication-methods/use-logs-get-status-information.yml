@@ -6,8 +6,8 @@ metadata:
   title: Use logs to get status information
   description: Use Azure AD activity logs to get status information.
   ms.date: 07/21/2022
-  author: MarkusVi
-  ms.author: markvi
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 20

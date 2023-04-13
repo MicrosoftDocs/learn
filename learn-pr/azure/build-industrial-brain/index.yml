@@ -1,0 +1,54 @@
+### YamlMime:Module
+uid: learn.oxford.build-industrial-brain
+metadata:
+  title: Build an industrial strength brain
+  description: Learn the concept of Machine Teaching to create a modular brain with an example.
+  ms.date: 11/30/2022
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Build an industrial strength brain
+summary: Train a modular brain for real industrial processes. Decompose the tasks into skills, do Machine Teaching experimentation to get the orchestration and the training completed successfully. Evaluate brain performance using training graphs and custom assessments. 
+abstract: | 
+  In this module, you'll learn how to:
+  - Identify the benefits of "modular" brains against "monolithic" brains when tackling industrial use cases
+  - Explore the Machine Teaching training strategies required to build industrial strength brains
+  - Learn the benefits of using web visualizers and how to embed them into the Bonsai UI
+  - Understand how Autonomous control can have a positive impact in process performance
+  - Understand how industrial strength brains require more nuanced machine teaching
+  - Describe how assessing a modular brain is different than assessing a monolithic brain
+
+  "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)***"
+prerequisites: | 
+  - Basic knowledge of Automated Intelligence
+  - Basic knowledge of Autonomous Intelligence
+  - Basic knowledge of Machine Teaching
+  - Basic knowledge of AI Specification document
+  - Basic knowledge of brain design patterns
+  - Basic knowledge of selecting use cases for Autonomous AI
+iconUrl: /training/achievements/generic-badge.svg
+levels: 
+- beginner
+roles: 
+- business-user
+products: 
+- azure
+- bonsai
+subjects:
+- artificial-intelligence
+units:
+- learn.oxford.build-industrial-brain.introduction
+- learn.oxford.build-industrial-brain.define-problem
+- learn.oxford.build-industrial-brain.decompose-problem
+- learn.oxford.build-industrial-brain.knowledge-check-setup-account
+- learn.oxford.build-industrial-brain.exercise-setup-account
+- learn.oxford.build-industrial-brain.exercise-create-brain
+- learn.oxford.build-industrial-brain.knowledge-check-brain
+- learn.oxford.build-industrial-brain.exercise-train-brain
+- learn.oxford.build-industrial-brain.exercise-create-custom-assessment
+- learn.oxford.build-industrial-brain.exercise-query-assessment-data
+- learn.oxford.build-industrial-brain.summary
+
+badge: 
+  uid: learn.oxford.build-industrial-brain.badge

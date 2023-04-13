@@ -31,7 +31,6 @@ At a high level, a certificate policy contains the following information:
  -  Key Properties. Contains key type, key length, exportable, and reuse key fields. These fields instruct key vault on how to generate a key.
  -  Secret properties. Contains secret properties such as content type of addressable secret to generate the secret value, for retrieving certificate as a secret.
  -  Lifetime Actions. Contains lifetime actions for the Key Vault certificate. Each lifetime action contains:
-    
      -  Trigger, which specifies via days before expiry or lifetime span percentage.
      -  Action, which specifies the action type: emailContacts, or autoRenew.
  -  Issuer: Contains the parameters about the certificate issuer to use to issue x509 certificates.
@@ -42,10 +41,8 @@ At a high level, a certificate policy contains the following information:
 Before you can create a certificate issuer in a Key Vault, the following two prerequisite steps must be completed successfully:
 
 1.  Onboard to CA providers:
-    
      -  An organization administrator must onboard their company with at least one CA provider.
 2.  Admin creates requester credentials for Key Vault to enroll (and renew) SSL certificates:
-    
      -  Provides the configuration to be used to create an issuer object of the provider in the key vault.
 
 ## Certificate contacts
@@ -65,7 +62,6 @@ The Key Vault that contains certificates manages access control for those same c
 The following permissions closely mirror the operations allowed on a secret object, and can be used on a per-principal basis in the secrets access control entry on a key vault:
 
  -  Permissions for certificate management operations:
-    
      -  get: Get the current certificate version, or any version of a certificate.
      -  list: List the current certificates, or versions of a certificate.
      -  update: Update a certificate.
@@ -82,5 +78,4 @@ The following permissions closely mirror the operations allowed on a secret obje
      -  `setissuers`: Create or update a Key Vault certificate's authorities/issuers.
      -  `deleteissuers`: Delete a Key Vault certificate's authorities/issuers.
  -  Permissions for privileged operations:
-    
      -  purge: Purge (permanently delete) a deleted certificate.

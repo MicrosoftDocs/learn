@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.try-azure-cosmos-db-sql-api.exercise-create-account
-title: 'Exercise: Create an Azure Cosmos DB SQL API account'
+title: 'Exercise: Create an Azure Cosmos DB for NoSQL account'
 metadata:
-  title: 'Exercise: Create an Azure Cosmos DB SQL API account'
-  description: "Exercise: Create an Azure Cosmos DB SQL API account"
-  ms.date: 06/03/2022
+  title: 'Exercise: Create an Azure Cosmos DB for NoSQL account'
+  description: "Exercise: Create an Azure Cosmos DB for NoSQL account"
+  ms.date: 12/19/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial

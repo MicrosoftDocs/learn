@@ -6,7 +6,8 @@ metadata:
   description: Check what you've learned.
   author: alexwolfmsft
   ms.author: alexwolf
-  ms.date: 5/15/2022
+  ms.date: 12/08/2022
+  manager: jmartens
   ms.topic: interactive-tutorial
   ms.prod: learning-dotnet
 durationInMinutes: 3

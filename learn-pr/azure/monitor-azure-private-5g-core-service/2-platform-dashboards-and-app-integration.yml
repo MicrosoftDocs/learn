@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.monitor-azure-private-5g-core-service.platform-metrics-and-app-integration
+title: Platform metrics and application integration
+metadata:
+  title: Platform metrics and application integration
+  description: Azure Private 5G Core allows you to use the platform metrics to remotely monitor all the sites in your private mobile network. It also allows you to use the Azure Monitor REST API to integrate the metrics into third-party applications.
+  ms.date: 11/22/2022
+  author: michael-weizhong-shan
+  ms.author: michaelshan
+  ms.topic: interactive-tutorial
+  ms.service: learning-private-5g-core
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-platform-metrics-and-app-integration.md)]

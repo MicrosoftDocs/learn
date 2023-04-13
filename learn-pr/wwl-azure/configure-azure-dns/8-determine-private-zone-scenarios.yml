@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-azure-dns.determine-private-zone-scenarios
-title: Determine private zone scenarios
+title: Review Azure Private DNS zone scenarios
 metadata:
-  title: Determine private zone scenarios
-  description: "Determine private zone scenarios"
-  ms.date: 10/10/2022
+  title: Review Azure Private DNS zone scenarios
+  description: "Review scenarios for implementing Azure Private DNS zone records."
+  ms.date: 01/10/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial

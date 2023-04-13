@@ -92,7 +92,7 @@ To deploy our logic app resource, we'll use the `az deployment group create` com
 
     You see the same JSON block that you previously saw. You can run this command later if you ever need these details about the deployment. The output is structured as JSON to make it easier to feed into other tools you might use to track your deployments and cloud usage.
 
-1. To see the app in action, find the **logicAppUrl** value in the JSON result.  Select the URL and paste it into a new browser window. The page will display the *Hello Azure Logic Apps Template!* message as shown in the following screenshot.
+1. To see the app in action, find the **logicAppUrl** value in the JSON result. Select the URL, or copy and paste it into a new browser window. The page displays the *Hello Azure Logic Apps Template!* message as shown in the following screenshot.
 
    ![Screenshot with Web browser displaying response from our basic logic app workflow.](../media/3-hello.png)
 

@@ -1,3 +1,4 @@
+
 Microsoft Azure Active Directory (Azure AD), part of Microsoft Entra, is Microsoft’s cloud-based identity and access management service. Organizations use Azure AD to enable their employees, guests, and others to sign in and access the resources they need, including:
 
 - Internal resources, such as apps on your corporate network and intranet, and cloud apps developed by your own organization.

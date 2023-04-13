@@ -1,3 +1,4 @@
+
 **Phase 3** of ransomware protection is to make it hard to get in.
 
 In this phase, you make the attackers work a lot harder to get into your on-premises or cloud infrastructures by incrementally removing the risks at the points of entry.

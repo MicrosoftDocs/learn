@@ -67,7 +67,7 @@ For more information on architecture considerations for multitentant scenarios, 
 
 Today, companies struggle to control and govern increasingly complex environments that extend across data centers, multiple clouds, and edge of a network boundary. Each environment and cloud possess its own set of management tools, and new DevOps and ITOps operational models can be hard to implement across resources.
 
-Azure Arc simplifies governance and management by delivering a consistent multi-cloud and on-premises management platform.
+Azure Arc simplifies governance and management by delivering a consistent multicloud and on-premises management platform.
 
 Azure Arc provides a centralized, unified way to:
 

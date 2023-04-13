@@ -17,7 +17,7 @@ In this module, you'll practice how to:
 
 * A GitHub account where you can create a repository. [Create one for free](https://github.com).
 * An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true). You can get started with Azure for free.
-* An Azure DevOps organization and project. [Create one for free](/azure/devops/pipelines/get-started/pipelines-sign-up).
+- An [Azure DevOps organization](/azure/devops/pipelines/get-started/pipelines-sign-up) with access to [parallel jobs](/azure/devops/pipelines/licensing/concurrent-jobs). If your organization does not have access to parallel jobs, you can request parallel jobs for free for public or private projects using [this form](https://aka.ms/azpipelines-parallelism-request). Your request will take 2-3 business days.
 * Familiarity with Azure App Service and Azure DevOps. If you're new to Azure or Azure DevOps, we have an extensive series of learning paths to help guide you:
     * [Get started with Azure DevOps](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true)
     * [Build applications with Azure DevOps](../../../paths/build-applications-with-azure-devops/index.yml?azure-portal=true)

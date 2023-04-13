@@ -159,7 +159,7 @@ We will extend our pipeline by adding a deployment stage to deploy the *Space Ga
 
 ## View the deployed website on App Service
 
-1. If you still have your App Service tab open, simply refresh the page. Otherwise, navigate to your Azure App Service in Azure Portal and select the instance's **URL**: e.g. *https://tailspin-space-game-web-1234.azurewebsites.net*
+1. If you still have your App Service tab open, simply refresh the page. Otherwise, navigate to your Azure App Service in Azure Portal and select the instance's **URL**: e.g. *`https://tailspin-space-game-web-1234.azurewebsites.net`*
 
     :::image type="content" source="../media/5-app-service-details.png" alt-text="Screenshot showing deployment details.":::
 

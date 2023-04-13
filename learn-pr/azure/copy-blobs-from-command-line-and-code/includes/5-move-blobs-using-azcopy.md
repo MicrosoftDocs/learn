@@ -74,10 +74,10 @@ You can create a new container in a blob storage account by running the `AzCopy 
 azcopy make "https://myaccount.blob.core.windows.net/newcontainer?<sas token>"
 ```
 
-To remove a blob, run the `AzCopy remove` command. You can remove all blobs with names that match a specific pattern with the `--include` flag, and you can walk through a hierarchical container with the `--recursive` flag. The following example removes all blobs with the *txt* suffix from *mycontainer*.
+To remove a blob, run the `AzCopy remove` command. You can remove all blobs with names that match a specific pattern with the `--include-pattern` flag, and you can walk through a hierarchical container with the `--recursive` flag. The following example removes all blobs with the *txt* suffix from *mycontainer*.
 
 ```bash
-azcopy remove "https://myaccount.blob.core.windows.net/mycontainer?<sas token>" --include "*.txt" --recursive=true
+azcopy remove "https://myaccount.blob.core.windows.net/mycontainer?<sas token>" --include-pattern "*.txt" --recursive=true
 ```
 
 ## Configure concurrency

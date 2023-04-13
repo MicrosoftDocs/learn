@@ -1,4 +1,4 @@
-As an aspiring Rust developer, you'll need to write Rust source code into text files.
+As an aspiring Rust developer, you need to write Rust source code into text files.
 
 A Rust source file is a text file with a *.rs* file extension that you type all your Rust code into. After you save the code in your text file, you use the Rust compiler (`rustc`) or Cargo to compile your code into a program.
 
@@ -9,7 +9,7 @@ You typically write Rust syntax in a text file and save it to your local hard dr
 > [!TIP]
 > Avoid any text editor that includes formatting options, like bold, underline, or italics, or any other program that has word-processing features. For example, don't write code in Microsoft Word or TextEdit on macOS. These programs have additional formatting instructions that the Rust compiler won't understand.
 
-Although you can use a text editor, you'll probably want to use a tool that's better suited for the unique challenges of writing code. There are many options, but many developers rely on Visual Studio Code for this purpose. Visual Studio Code is free and available on Windows, macOS, and Linux. It has many features that make it easy to navigate code, no matter which programming language you want to work with.
+Although you can use a text editor, you probably want to use a tool that's better suited for the unique challenges of writing code. There are many options, but many developers rely on Visual Studio Code for this purpose. Visual Studio Code is free and available on Windows, macOS, and Linux. It has many features that make it easy to navigate code, no matter which programming language you want to work with.
 
 Pick one of the following installation procedures, based on your operating system.
 

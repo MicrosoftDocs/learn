@@ -1,3 +1,4 @@
+
 Sometimes you need to optionally deploy a resource in an Azure Resource Manager template (ARM template). Use the `condition` element to specify whether the resource is deployed. The value for the condition resolves to true or false. When the value is true, the resource is created. When the value is false, the resource isn't created. The value can only be applied to the whole resource.
 
 > [!NOTE]

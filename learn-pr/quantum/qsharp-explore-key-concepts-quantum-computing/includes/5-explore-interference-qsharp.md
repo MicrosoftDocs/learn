@@ -81,10 +81,7 @@ If you measure you always obtain 'Zero'.
 Zero
 ```
 
-You can see how applying `H` twice recovers the initial state of the qubit.
-It's recovered because the superposition states that the first `H`
-operation created destructively interfere when you superpose the states again in the 
-second `H` operation.
+You can see how applying `H` twice recovers the initial state of the qubit. It's recovered because the superposition states created by the first `H` operation destructively interfere when you superpose the states again in the second `H` operation.
 
 ## Explore the relative phases in Q#
 

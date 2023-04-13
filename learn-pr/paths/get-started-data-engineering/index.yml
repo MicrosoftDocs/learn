@@ -1,0 +1,31 @@
+### YamlMime:LearningPath
+uid: learn.wwl.get-started-data-engineering
+metadata:
+  title: Get started with data engineering on Azure
+  description: Learn how to perform core data engineering workloads on Microsoft Azure.
+  ms.date: 02/07/2023
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Get started with data engineering on Azure
+prerequisites: |
+  Before starting this learning path, you should have completed the [Microsoft Azure Data Fundamentals certification](/certifications/azure-data-fundamentals/) or have equivalent knowledge and experience.
+summary: |
+  In most organizations, a data engineer is the primary role responsible for integrating, transforming, and consolidating data from various structured and unstructured data systems into structures that are suitable for building analytics solutions. An Azure data engineer also helps ensure that data pipelines and data stores are high-performing, efficient, organized, and reliable, given a specific set of business requirements and constraints.
+iconUrl: /learn/achievements/data-ai/get-started-data-engineering-trophy.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+products:
+- azure-data-lake-gen2
+- azure-synapse-analytics
+subjects:
+- data-engineering
+modules:
+- learn.wwl.introduction-data-engineering-azure
+- learn.data-ai.introduction-to-azure-data-lake-storage
+- learn.wwl.introduction-to-azure-synapse-analytics
+trophy:
+  uid: learn.data-ai.get-started-data-engineering-trophy.trophy

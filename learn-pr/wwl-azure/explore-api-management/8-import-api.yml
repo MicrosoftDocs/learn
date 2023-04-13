@@ -2,15 +2,13 @@
 uid: learn.wwl.explore-api-management.exercise-create-backend-api
 title: 'Exercise: Create a backend API'
 metadata:
-  title: Demo-Introduction
+  title: 'Exercise: Create a backend API'
   description: "Exercise: Create a backend API"
-  ms.date: 07/20/2022
-  author: benjiang
+  ms.date: 02/05/2023
+  author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 10
 content: |
   [!include[](includes/8-import-api.md)]

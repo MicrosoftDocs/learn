@@ -2,8 +2,8 @@
 uid: learn.wwl.query-configuration-information
 metadata:
   title: Query configuration information by using CIM and WMI
-  description: "Query configuration information by using CIM and WMI"
-  ms.date: 11/23/2022
+  description: "This module explains the structure of the namespaces that contain classes and also how to query instances of a class. It covers how to query remote computers by using ad-hoc connections and CIM sessions."
+  ms.date: 12/21/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -39,7 +39,6 @@ products:
 - azure-powershell
 - azure-virtual-machines
 - m365
-- vs-code
 subjects:
 - architecture
 - development-tools

@@ -1,6 +1,6 @@
 Much of your XAML definition will be settled at compile time. You often know where elements should be positioned, what colors and fonts will be used, and which literal values should be assigned to properties.
 
-However, sometimes you need to set a property value to a value that can't be determined at compile time. These values are only known when the program is running. In these situations, you can create an object that will provide a value to XAML at runtime. XAML supports **Mark-up Extensions** for this purpose. 
+However, sometimes you need to set a property value to a value that can't be determined at compile time. These values are only known when the program is running. In these situations, you can create an object that will provide a value to XAML at runtime. XAML supports **Mark-up Extensions** for this purpose.
 
 In this unit, you'll learn how to create and use mark-up extensions.
 
@@ -60,7 +60,7 @@ public class GlobalFontSizeExtension : IMarkupExtension
 ```
 
 > [!NOTE]
-> The **MyFontSize** field must be a `static` member of the **MainPage** class to allow it to be referenced in the **ProvideValue** method in his way. Good practice implies that in this case the variable should also be a constant. A `const` value is `static`.
+> The **MyFontSize** field must be a `static` member of the **MainPage** class to allow it to be referenced in the **ProvideValue** method in this way. Good practice implies that in this case the variable should also be a constant. A `const` value is `static`.
 >
 > The **ProvideValue** method could also make adjustments to the value returned, depending on the orientation and form-factor of the device.
 
@@ -115,7 +115,5 @@ To use this class in your XAML code, you provide the name of the static variable
             FontSize="{x:Static Member=mycode:MainPage.MyFontSize}"
             HorizontalOptions="CenterAndExpand"/>
 ```
-
-
 
 .NET MAUI provides a set of other mark-up extension classes, which you can use for scenarios such as data-binding, referencing dynamic resources and styles, and handling arrays of data.

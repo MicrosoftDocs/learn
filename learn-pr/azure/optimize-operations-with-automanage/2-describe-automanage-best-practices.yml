@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.optimize-operations-with-automanage.describe-automanage-best-practices
+title: Describe concepts around Azure Automanage best practices
+metadata:
+  title: Describe concepts around Azure Automanage best practices
+  description: Describe the benefits and services of using Azure Automanage.
+  ms.date: 01/10/2023
+  author: johnmarco
+  ms.author: johnmarc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-describe-automanage-best-practices.md)]

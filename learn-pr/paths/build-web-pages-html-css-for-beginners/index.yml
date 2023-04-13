@@ -1,0 +1,32 @@
+### YamlMime:LearningPath
+uid: learn.wwl.build-web-pages-html-css-for-beginners
+metadata:
+  title: Build web pages with HTML and CSS for beginners
+  description: Write HTML and CSS code to create an accessible webpage using the browser-based version of Visual Studio code.
+  ms.date: 01/16/2023
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Build web pages with HTML and CSS for beginners
+prerequisites: |
+  None
+summary: |
+  Write HTML and CSS code to create an accessible webpage using the browser-based version of Visual Studio Code.
+iconUrl: /training/achievements/build-web-pages-html-css-for-beginners.svg
+levels:
+- beginner
+roles:
+- k-12-educator
+- maker
+- student
+products:
+- vs-code
+subjects:
+- cloud-computing
+modules:
+- learn.wwl.build-first-html-webpage
+- learn.wwl.use-css-styles
+- learn.student-evangelism.web-development-101.accessibility
+trophy:
+  uid: learn.wwl.build-web-pages-html-css-for-beginners.trophy

@@ -4,7 +4,7 @@ We'll use the Azure Cognitive Services Custom Vision service to create a machine
 
 It's likely that you've heard of AI, machine learning, or deep learning. Let's identify the terms, so we understand how they're different.
 
-- **Artificial intelligence (AI)**: AI is the process of programming a computer to mimic human intelligence. AI includes *machine learning*. The idea of AI is as simple as using a machine to mimic human intelligence, but AI offers many different techniques. The technique this module focuses on is machine learning.
+- **Artificial intelligence (AI)**: AI is the process of programming a computer to mimic human intelligence. AI includes *machine learning*. The idea of AI is to use a machine to mimic human intelligence, but AI offers many different techniques. The technique this module focuses on is machine learning.
 
 - **Machine learning**: Machine learning is a subset of AI. Machine learning uses techniques to train machines based on *experience*. Think of experience as a dataset, with right and wrong answers already given. In machine learning, the computer uses the answers that are supplied to improve how the computer completes specific tasks. The field of machine learning also includes *deep learning*.
 
@@ -16,7 +16,7 @@ When we build a model, we're trying to mimic human intelligence. We use data as 
 
 ## What is transfer learning?
 
-Azure Cognitive Services Custom Vision uses *transfer learning*. Transfer learning is the ability to use prior knowledge to better solve the problem at hand. As humans, we take this approach to problem solving all the time. We are discovering new ways to do it with computers, too. 
+Azure Cognitive Services Custom Vision uses *transfer learning*. Transfer learning is the ability to use prior knowledge to better solve the problem at hand. As humans, we take this approach to problem solving all the time. We're discovering new ways to do it with computers, too. 
 
 In the Custom Vision service in Azure, transfer learning works by adding a layer that consists of a pre-trained model to the neural network. The trained model gives us a head start when we train new data. Training starts with a general-knowledge domain. New layers are added to the neural network to solve a specific problem. In this case, the problem we want to solve is how to identify birds. By starting with a pre-trained model, we get better results without adding large amounts of data.
 

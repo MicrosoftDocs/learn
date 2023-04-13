@@ -1,6 +1,6 @@
 Government customers can use private and hybrid clouds with Azure Stack Hub and Azure Stack Edge to deploy in remote areas with limited connectivity. These technologies allow for control over data and support various data classifications.
 
-Now that you have reviewed this module, you should be able to:
+Now that you've reviewed this module, you should be able to:
 
 * Explain how Azure Stack Hub helps customers to remain in control of access to their data.
 * Describe and identify key use cases for Azure Stack Edge.

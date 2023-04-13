@@ -12,7 +12,7 @@ To set up a .NET project to work with a web API, we'll use Visual Studio Code. V
 
 1. In Visual Studio Code, select **File** > **Open Folder**.
 
-1. Create a folder named **AccessibleWeb** in the location of your choice, and then click **Select Folder**.
+1. Create a folder named **AccessibleWeb** in the location of your choice, and then select **Select Folder**.
 
 1. Open the integrated terminal in Visual Studio Code by selecting **View** > **Terminal** from the main menu.
 

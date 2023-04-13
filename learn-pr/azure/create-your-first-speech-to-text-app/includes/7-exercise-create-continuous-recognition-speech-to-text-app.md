@@ -2,13 +2,13 @@ In this exercise, you'll create an application that uses continuous recognition 
 
 ## Modify the code for your text-to-speech application
 
-1. In the Cloud Shell on the right, open the *Program.cs* file in Visual Studio Code.
+1. In the Cloud Shell on the right, open the *Program.cs* file.
 
     ```dotnetcli
     code Program.cs
     ```
 
-1. Update try/catch block of the `Main()` function with the following code to modify the application to use continuous recognition instead of single shot recognition.
+1. Update try/catch block with the following code to modify the application to use continuous recognition instead of single shot recognition.
 
     ```csharp
     try
@@ -69,83 +69,71 @@ In this exercise, you'll create an application that uses continuous recognition 
 1. When you have finished modifying the code, your file should resemble the following example.
 
     ```csharp
-    using System;
-    using System.IO;
     using System.Text;
-    using System.Threading.Tasks;
     using Microsoft.CognitiveServices.Speech;
     using Microsoft.CognitiveServices.Speech.Audio;
     
-    namespace speech_to_text
+    string azureKey = "ENTER YOUR KEY FROM THE FIRST EXERCISE";
+    string azureLocation = "ENTER YOUR LOCATION FROM THE FIRST EXERCISE";
+    string textFile = "Shakespeare.txt";
+    string waveFile = "Shakespeare.wav";
+    
+    try
     {
-        class Program
+        FileInfo fileInfo = new FileInfo(waveFile);
+        if (fileInfo.Exists)
         {
-            static async Task Main(string[] args)
+            var speechConfig = SpeechConfig.FromSubscription(azureKey, azureLocation);
+            using var audioConfig = AudioConfig.FromWavFileInput(fileInfo.FullName);
+            using var speechRecognizer = new SpeechRecognizer(speechConfig, audioConfig);
+            var stopRecognition = new TaskCompletionSource<int>();
+            
+            FileStream fileStream = File.OpenWrite(textFile);
+            StreamWriter streamWriter = new StreamWriter(fileStream, Encoding.UTF8);
+    
+            speechRecognizer.Recognized += (s, e) =>
             {
-                string azureKey = "ENTER YOUR KEY FROM THE FIRST EXERCISE";
-                string azureLocation = "ENTER YOUR LOCATION FROM THE FIRST EXERCISE";
-                string textFile = "Shakespeare.txt";
-                string waveFile = "Shakespeare.wav";
-    
-                try
+                switch(e.Result.Reason)
                 {
-                    FileInfo fileInfo = new FileInfo(waveFile);
-                    if (fileInfo.Exists)
-                    {
-                        var speechConfig = SpeechConfig.FromSubscription(azureKey, azureLocation);
-                        using var audioConfig = AudioConfig.FromWavFileInput(fileInfo.FullName);
-                        using var speechRecognizer = new SpeechRecognizer(speechConfig, audioConfig);
-                        var stopRecognition = new TaskCompletionSource<int>();
-                        
-                        FileStream fileStream = File.OpenWrite(textFile);
-                        StreamWriter streamWriter = new StreamWriter(fileStream, Encoding.UTF8);
-    
-                        speechRecognizer.Recognized += (s, e) =>
-                        {
-                            switch(e.Result.Reason)
-                            {
-                                case ResultReason.RecognizedSpeech:
-                                    streamWriter.WriteLine(e.Result.Text);
-                                    break;
-                                case ResultReason.NoMatch:
-                                    Console.WriteLine("Speech could not be recognized.");
-                                    break;
-                            }
-                        };
-    
-                        speechRecognizer.Canceled += (s, e) =>
-                        {
-                            if (e.Reason != CancellationReason.EndOfStream)
-                            {
-                                Console.WriteLine("Speech recognition canceled.");
-                            }
-                            stopRecognition.TrySetResult(0);
-                            streamWriter.Close();
-                        };
-    
-                        speechRecognizer.SessionStopped += (s, e) =>
-                        {
-                            Console.WriteLine("Speech recognition stopped.");
-                            stopRecognition.TrySetResult(0);
-                            streamWriter.Close();
-                        };
-    
-                        Console.WriteLine("Speech recognition started.");
-                        await speechRecognizer.StartContinuousRecognitionAsync();
-                        Task.WaitAny(new[] { stopRecognition.Task });
-                        await speechRecognizer.StopContinuousRecognitionAsync();
-                    }
+                    case ResultReason.RecognizedSpeech:
+                        streamWriter.WriteLine(e.Result.Text);
+                        break;
+                    case ResultReason.NoMatch:
+                        Console.WriteLine("Speech could not be recognized.");
+                        break;
                 }
-                catch (Exception ex)
+            };
+    
+            speechRecognizer.Canceled += (s, e) =>
+            {
+                if (e.Reason != CancellationReason.EndOfStream)
                 {
-                    Console.WriteLine(ex.Message);
+                    Console.WriteLine("Speech recognition canceled.");
                 }
-            }
+                stopRecognition.TrySetResult(0);
+                streamWriter.Close();
+            };
+    
+            speechRecognizer.SessionStopped += (s, e) =>
+            {
+                Console.WriteLine("Speech recognition stopped.");
+                stopRecognition.TrySetResult(0);
+                streamWriter.Close();
+            };
+    
+            Console.WriteLine("Speech recognition started.");
+            await speechRecognizer.StartContinuousRecognitionAsync();
+            Task.WaitAny(new[] { stopRecognition.Task });
+            await speechRecognizer.StopContinuousRecognitionAsync();
         }
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine(ex.Message);
     }
     ```
 
-    As you did with the previous exercise, make sure that you update the values for the `azureKey` and `azureLocation` variables with your key and location from the first exercise.
+    As with the previous exercise, make sure that you update the values for the `azureKey` and `azureLocation` variables with your key and location from the first exercise.
 
 1. To save your changes, press `Ctrl-S` to save the file, and then press `Ctrl-Q` to exit the editor.
 
@@ -170,7 +158,7 @@ In this exercise, you'll create an application that uses continuous recognition 
     ls -l
     ```
 
-    You should see a response like the following example, and you should see the _Shakespeare.txt_ in the list of files.
+    You should see a response like the following example, and you should see the *Shakespeare.txt* in the list of files.
 
     ```bash
     drwxr-xr-x 3 user   user     4096 Oct  1 11:11 bin
@@ -183,7 +171,7 @@ In this exercise, you'll create an application that uses continuous recognition 
 
     You'll notice that the size of the text file is larger than the result of the previous exercise. This difference in file size is because the continuous speech recognition converted more of the audio file.
 
-1. To view the contents of the _Shakespeare.txt_ file, use the following command.
+1. To view the contents of the *Shakespeare.txt* file, use the following command.
 
     ```bash
     cat Shakespeare.txt
@@ -209,7 +197,7 @@ Azure Cognitive Services allow you to help improve your recognition results by s
 
 To see an example of this type of improvement in action, use the following steps.
 
-1. In the Cloud Shell on the right, open the *Program.cs* file in Visual Studio Code.
+1. In the Cloud Shell on the right, open the *Program.cs* file.
 
     ```dotnetcli
     code Program.cs
@@ -218,12 +206,11 @@ To see an example of this type of improvement in action, use the following steps
 1. Locate the following two lines of code.
 
     ```csharp
-    FileStream fileStream = File.OpenWrite(Path.Combine(fileInfo.DirectoryName, textFile));
+    FileStream fileStream = File.OpenWrite(textFile);
     StreamWriter streamWriter = new StreamWriter(fileStream, Encoding.UTF8);
     ```
 
 1. Add the following lines of code after those two lines.
-
 
     ```csharp
     var phraseList = PhraseListGrammar.FromRecognizer(speechRecognizer);
@@ -240,7 +227,7 @@ To see an example of this type of improvement in action, use the following steps
     dotnet run
     ```
 
-1. When your application has finished, use the following command to view the contents of the _Shakespeare.txt_ file.
+1. When your application has finished, use the following command to view the contents of the *Shakespeare.txt* file.
 
     ```bash
     cat Shakespeare.txt
@@ -257,4 +244,3 @@ To see an example of this type of improvement in action, use the following steps
     ```
 
     You'll notice that the recognition error has been fixed in the results.
-

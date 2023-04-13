@@ -92,4 +92,4 @@ The preceding table tells the story of how the game progresses through different
 
    We gave the `Game` the field `endGame` because of the fourth line. Additionally, the `Game` class has two participants, `participant` and `secondParticipant`. There were two roles a variable on an object could have. The roles could be a state, like the floor of an elevator, or a descriptive attribute. The `points` and `choice` attributes are state variables in this context. The participants on the `Game` class are descriptive attributes because a game *has* participants.
 
-   Congratulations! You've added classes to your game and created data--attributes that you've assigned to the created classes. At this point, you have a good starting code. It doesn't do much yet because it needs behavior. You'll add behavior in the next exercise unit.
+   Congratulations! You've added classes to your game and created data-attributes that you've assigned to the created classes. At this point, you have a good starting code. It doesn't do much yet because it needs behavior. You'll add behavior in the next exercise unit.

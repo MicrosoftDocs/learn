@@ -10,7 +10,7 @@ You can find the Log Analytics tool in the Azure portal and use it to run sample
 
     The Azure Monitor page appears along with more options, including **Activity Log**, **Alerts**, **Metrics**, and **Logs**.
 
-1. Select **Query & Analyze Logs**.
+1. Select **Logs**.
 
     Here, you can enter your query and see the output.
 
@@ -36,7 +36,7 @@ Events
 > [!NOTE]
 > The Kusto query language that Azure Monitor uses is case-sensitive. Language keywords are typically written in lowercase. When you're using names of tables or columns in a query, make sure to use the correct case.
 
-Events, captured from the event logs of monitored computers, are just one type of data source. Azure Monitor provides many other types of data sources. For example, the `Heartbeat` data source reports the health of all computers that report to your Log Analytics workspace. You can also capture data from performance counters and update management records.
+Events captured from the event logs of monitored computers are just one type of data source. Azure Monitor provides many other types of data sources. For example, the `Heartbeat` data source reports the health of all computers that report to your Log Analytics workspace. You can also capture data from performance counters and update management records.
 
 The following example retrieves the most recent heartbeat record for each computer. The computer is identified by its IP address. In this example, the `summarize` aggregation with the `arg_max` function returns the record with the most recent value for each IP address.
 

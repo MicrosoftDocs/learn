@@ -23,7 +23,7 @@ fn send_data_as_json(value: &impl AsJson) {
 
 Here, we specify the trait name and the `impl` keyword. We specify with these values instead of using a concrete type for the `value` parameter. The `value` parameter accepts all types that use the defined trait. Because the function doesn't know anything about the concrete type it will receive, it can only use the methods available by the trait bounds of the anonymous type parameter.
 
-Another way to write the same function, but with a little different syntax, explicitly tells that T is a generic type that must implement the `AsJson` trait:
+Another way to write the same function, but with a little different syntax, explicitly states that T is a generic type that must implement the `AsJson` trait:
 
 ```rust
 fn send_data_as_json<T: AsJson>(value: &T) { ... }

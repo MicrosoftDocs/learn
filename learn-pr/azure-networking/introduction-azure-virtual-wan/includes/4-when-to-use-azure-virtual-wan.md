@@ -19,9 +19,9 @@ Enterprises can choose from these options:
 
 The benefits of Azure Virtual WAN aren't just for Fortune 500 global companies.
 
-Small, medium, and large business can take advantage of the multiple methods of connectivity previously outlined. The options for connectivity offer flexibility for users to access a company’s services.
+Small, medium, and large business can take advantage of the multiple methods of connectivity previously outlined. The options for connectivity offer users flexibility to access a company’s services.
 
-For example, the Virtual WAN any-to-any connectivity to support distributed working from home, your contractors, employees, and customers. They all can connect using Point-to-Site VPN. This service allows connection to all your resources on-premises and in Azure.
+For example, the Virtual WAN any-to-any connectivity supports distributed working from home, your contractors, employees, and customers. They all can connect using Point-to-Site VPN. This service allows connection to all your resources on-premises and in Azure.
 
 Azure Virtual WAN is beneficial for organizations that:
 
@@ -33,4 +33,4 @@ Azure Virtual WAN is beneficial for organizations that:
 - Use optimal routing through virtual network connections with low latency and high bandwidth.
 - Use firewall protection with security policy managed by Azure Firewall Manager.
 
-The ease of management, any-to-any connectivity, access speed, and cost saving, are features of the Azure Virtual WAN.
+The ease of management, any-to-any connectivity, access speed, and cost saving are features of the Azure Virtual WAN.

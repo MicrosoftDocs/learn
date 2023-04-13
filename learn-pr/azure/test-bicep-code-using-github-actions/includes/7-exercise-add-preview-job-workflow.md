@@ -1,19 +1,20 @@
 You want to add an extra job to your workflow so you can check what changes will be made to your Azure environment.
 
-During the process, you'll: 
+During the process, you'll do the following tasks:
 
 > [!div class="checklist"]
-> * Update the workflow YAML file to add a new preview job.
-> * Add an environment to your GitHub repository.
-> * Configure the environment to require a review.
-> * Update the workflow YAML file to use the environment for the deployment job.
-> * View the what-if results and approve a workflow run.
+>
+> - Update the workflow YAML file to add a new preview job.
+> - Add an environment to your GitHub repository.
+> - Configure the environment to require a review.
+> - Update the workflow YAML file to use the environment for the deployment job.
+> - View the what-if results and approve a workflow run.
 
 ## Update the workflow definition to add a preview job
 
 Here, you add a new job to your workflow that runs the what-if operation.
 
-1. In Visual Studio Code, open the *workflow.yml* file in the *.github/workflows* folder.
+1. In Visual Studio Code, open the _workflow.yml_ file in the _.github/workflows_ folder.
 
 1. Between the **validate** and **deploy** jobs, add the following definition for the **preview** job:
 
@@ -52,14 +53,15 @@ In the setup steps for this module, you already created a federated credential f
    :::image type="content" source="../media/7-add-reviewers.png" alt-text="Screenshot of the GitHub interface that shows the Website environment, with the required reviewers checkbox and textbox highlighted.":::
 
 1. Select **Save protection rules**.
+1. Select **Environments** to exit the configuration.
 
 ## Update the workflow definition to require an environment and reviewer
 
-Here, you configure the **deploy** job to run against the **Website** environment that you created previously. 
+Here, you configure the **deploy** job to run against the **Website** environment that you created previously.
 
-1. Open the *workflow.yml* file in Visual Studio Code.
+1. Open the _workflow.yml_ file in Visual Studio Code.
 
-1. Add the `environment` parameter to the **deploy** job. Set the value to `Website`, to match the name of the environment you just created:
+1. Add the `environment` parameter to the **deploy** job. Set the value to `Website`, to match the name of the environment you created:
 
    :::code language="yaml" source="code/7-workflow.yml" range="65-84" highlight="3" :::
 
@@ -67,7 +69,7 @@ Here, you configure the **deploy** job to run against the **Website** environmen
 
 ## Verify and commit your workflow definition
 
-1. Verify that your *workflow.yml* file looks like the following code:
+1. Verify that your _workflow.yml_ file looks like the following code:
 
    :::code language="yaml" source="code/7-workflow.yml" highlight="44-63, 67-68" :::
 
@@ -89,7 +91,7 @@ Here, you configure the **deploy** job to run against the **Website** environmen
 
    Wait until the workflow completes the **lint**, **validate**, and **preview** jobs. Although GitHub automatically updates the page with the latest status, it's a good idea to refresh your page occasionally.
 
-1. Notice that the workflow prompts you for a review. You also receive an email informing you that the workflow needs your review.
+1. Notice that the workflow prompts you for a review. Dependent upon how you've set up your GitHub account, you'll receive an email or web notification with a request to review the workflow.
 
    :::image type="content" source="../media/7-workflow-run-review-required.png" alt-text="Screenshot of the GitHub interface that shows the workflow run, with the review requirement highlighted.":::
 
@@ -103,7 +105,7 @@ Here, you configure the **deploy** job to run against the **Website** environmen
 
    :::code language="output" source="code/7-what-if-output.txt" :::
 
-   The what-if operation has detected a change to the website resource. However, the changes that it has detected are noise. They don't represent real changes to your resource. Over time, the Azure team works to reduce noise. In the meantime, for these two specific properties, you can ignore the detected changes.
+   The what-if operation has detected a change to the log analytics workspace and website resources. However, the changes that it has detected are noise. They don't represent real changes to your resource. Over time, the Azure team works to reduce noise. In the meantime, you can ignore the detected changes.
 
    You might also see an item in the what-if output for the resource type `microsoft.alertsmanagement/smartDetectorAlertRules/Failure Anomalies - toywebsite`. This is a resource that Application Insights creates automatically. The what-if command detects that no change will be made to the resource.
 
@@ -115,7 +117,7 @@ Here, you configure the **deploy** job to run against the **Website** environmen
 
 1. Select the **Review deployments** button on the review panel.
 
-1. In the **Review pending deployments** pop-up, select the **Website** environment. In the **Leave a comment** box, enter **Reviewed what-if results**.
+1. In the **Review pending deployments** pop-up, select the **Website** environment. In the **Leave a comment** box, enter _Reviewed what-if results_.
 
 1. Select **Approve and deploy**.
 

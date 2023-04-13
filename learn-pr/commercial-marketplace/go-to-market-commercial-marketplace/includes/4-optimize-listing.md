@@ -8,7 +8,7 @@ In this unit, we'll look at some best practices to create your online store list
 
 Your marketplace listing in the online stores has a lot of useful information for buyers. When you publish your offer in Partner Center, you'll be required to provide certain information that will appear on your product listing in Azure Marketplace and Microsoft AppSource.
 
-Here's a list of some of the required information with suggestions to get the most out of your listing:
+Here's some of the required information with suggestions to get the most out of your listing:
 
 - **Offer name**: Choose a name that communicates the value that your product delivers and captures your customers’ attention.
 
@@ -24,7 +24,7 @@ Here's a list of some of the required information with suggestions to get the mo
 
 In addition to the information you provide customers in the online stores, you can build optional features into your commercial marketplace offer to improve customer engagement.
 
-- **Free trials + test drives**: Many customers will want to try your product before they buy it, so we recommend building a trial experience into your listing. The commercial marketplace allows publishers to enable two different kinds of trial experiences: free software trials and test drives. When customers click “free trial” or “test drive” on your offer listing page, Microsoft will send leads to your CRM so you can follow up to continue the conversation.
+- **Free trials and test drives**: Many customers will want to try your product before they buy it, so we recommend building a trial experience into your listing. The commercial marketplace allows publishers to enable two different kinds of trial experiences: free software trials and test drives. When customers select **Free trial** or **Test drive** on your offer listing page, Microsoft will send leads to your CRM so you can follow up to continue the conversation.
 
 - **Plans and pricing**: Customers like options. You can give your customers choices by offering multiple plans of your listing, with each plan representing a different version of the same product. Plans can be split by tiers of functionality, capacity, seats of access, or other variables depending on your solution. We recommend that you give customers as much choice and flexibility as possible by offering multiple plans at different price points.
 

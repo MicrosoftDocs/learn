@@ -1,4 +1,4 @@
-ContosoPizza's manager has asked you to add an endpoint to list coupons from an existing database. In this unit, you'll create scaffolding from an existing database and modify the resulting entity class.
+Contoso Pizza's manager has asked you to add an endpoint to list coupons from an existing database. In this unit, you'll create scaffolding from an existing database and modify the resulting entity class.
 
 ## Inspect promotions database
 

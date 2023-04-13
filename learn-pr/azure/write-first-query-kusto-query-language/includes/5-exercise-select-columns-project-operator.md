@@ -1,4 +1,5 @@
-Kusto queries can be used to filter data and return specific information.
+You can use Kusto queries to filter data and return specific information.
+
 Recall that you've looked at arbitrary rows of data to get a sense of its structure. In this unit, you'll learn how to choose specific data columns that relate to storm types, locations, and damaging effects.
 
 ## Use the `project` operator
@@ -23,7 +24,7 @@ If you remember, the meteorological data example has quite a few columns. Not al
 
 ## Rename and define new columns by using `project`
 
-To understand the impacts of storms in US states, you want to get the total number of injuries and the total amount of damage. With the `project` operator, you can sum integer values from different columns and return the results in a new column. You can also rename columns to make them more meaningful to your analysis. 
+To understand the impacts of storms in US states, you want to get the total number of injuries and the total amount of damage. With the `project` operator, you can sum integer values from different columns and return the results in a new column. You can also rename columns to make them more meaningful to your analysis.
 
 For example, there are other countries/regions with states. It might be helpful to rename the state column so it's clear that the results are for US states. Let's see how to change your previous query so you get the total number of injuries and amount of damage for US states.
 
@@ -61,7 +62,7 @@ For example, there are other countries/regions with states. It might be helpful 
 
 ## Use the `project-away` operator
 
-What if you want to remove a few select columns? For this exploration, you don't have any use for the IDs assigned to each episode and event. You can remove specific columns by using the `project-away` operator, which indicates which columns to remove, while leaving all remaining columns. You can also use a wildcard, such as `| project-away *Id`, to remove all columns that end in **Id**.
+What if you want to remove a few select columns? For this exploration, you don't have any use for the IDs assigned to each episode and event. You can remove specific columns by using the `project-away` operator, which indicates which columns to remove while leaving all remaining columns. You can also use a wildcard, such as `| project-away *Id`, to remove all columns that end in **Id**.
 
 1. Run the following query:
 

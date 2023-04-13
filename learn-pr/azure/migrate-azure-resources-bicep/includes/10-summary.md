@@ -4,13 +4,14 @@ In this module, you learned about the process and recommended workflow for migra
 
 You exported the toy truck's back-end virtual machine to a JSON ARM template. You used the Bicep `decompile` command to convert the JSON template to a Bicep file. After the conversion, you migrated the resources to a deployable Bicep file. You refactored the Bicep file to adjust the symbolic names, parameters, and variables. Parameter descriptions were added to provide detail about the individual settings. You tested the refactored template by using the what-if operation, made adjustments, and tested again. Finally, you deployed your template to your Azure environment.
 
-After you successfully deploy your production environment by using your Bicep code, you're done! Now, go use a pipeline and automated deployments.
+After you successfully deploy your production environment by using your Bicep code, you're done! The next steps are to use a pipeline and automated deployments.
 
 ## References
 
-- [Bicep documentation](/azure/azure-resource-manager/bicep/overview?azure-portal=true)
-- [Bicep on GitHub](https://github.com/Azure/bicep?azure-portal=true)
-- [Azure quickstart templates](https://azure.microsoft.com/resources/templates?azure-portal=true)
-- [Azure ARM template reference](/azure/templates/?azure-portal=true)
-- [Azure Resource Explorer](/azure/azure-resource-manager/templates/view-resources?azure-portal=true#use-resource-explorer)
-- [ARM template deployment what-if operation](/azure/azure-resource-manager/templates/deploy-what-if?tabs=azure-powershell&azure-portal=true)
+- [Bicep documentation](/azure/azure-resource-manager/bicep/overview)
+- [Bicep on GitHub](https://github.com/Azure/bicep)
+- [Bicep deployment what-if operation](/azure/azure-resource-manager/bicep/deploy-what-if)
+- [Azure Quickstart Templates](/samples/browse/?expanded=azure&products=azure-resource-manager)
+- [Azure ARM template reference](/azure/templates/)
+- [ARM template deployment what-if operation](/azure/azure-resource-manager/templates/deploy-what-if?tabs=azure-powershell)
+- [Export a template](/azure/azure-resource-manager/templates/export-template-portal)

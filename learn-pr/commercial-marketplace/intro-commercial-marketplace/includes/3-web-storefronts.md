@@ -13,7 +13,7 @@ Your customers can access the Azure Marketplace online store by visiting <https:
 ![Screenshot of the Azure Marketplace apps landing page with emphasis on application categories and filters.](..\media\3-azure-marketplace-apps.png)</br>
 *Screenshots of the Azure Marketplace web storefront.*
 
-Because Azure Marketplace is a part of Azure, they can also access these solutions through the Azure portal at <https://portal.azure.com>. Any time Azure users select **Create a resource** on the Azure portal homepage, they’re accessing solutions from Azure Marketplace.
+Because Azure Marketplace is a part of Azure, your customers can also access these solutions through the Azure portal at <https://portal.azure.com>. Any time Azure users select **Create a resource** on the Azure portal homepage, they’re accessing solutions from Azure Marketplace.
 
 ![Screenshot of the Azure portal homepage with emphasis on the "Create a resource" button.](..\media\4-azure-portal-homepage-create-resource.png)
 

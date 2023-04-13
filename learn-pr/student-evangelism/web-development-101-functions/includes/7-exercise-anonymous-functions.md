@@ -1,4 +1,4 @@
-In this exercise, you'll use `setTimer` with an anonymous function to display a message on a webpage. You'll create code that displays the message after a 2-second delay.
+In this exercise, you'll use `setTimeout` with an anonymous function to display a message on a webpage. You'll create code that displays the message after a 2-second delay.
 
 You'll use the same file that you used in the earlier exercise to complete this one.
 
@@ -34,7 +34,7 @@ Let's see the results!
 
    :::image type="content" source="../media/hello-again.png" alt-text="Screenshot of the browser, displaying the '...Hello again!' message.":::
 
-You have now used an anonymous function to have a message appear after a delay.
+You've now used an anonymous function to have a message appear after a delay.
 
 ## Full code
 

@@ -9,4 +9,4 @@ For more information about Azure Synapse Link, see the following articles in the
 
 - [What is Azure Synapse Link for Azure Cosmos DB?](/azure/cosmos-db/synapse-link?context=%2Fazure%2Fsynapse-analytics%2Fcontext%2Fcontext)
 - [What is Azure Synapse Link for SQL?](/azure/synapse-analytics/synapse-link/sql-synapse-link-overview)
-- [What is Azure Synapse Link for Dataverse?](/epower-apps/maker/data-platform/export-to-data-lake?context=%2Fazure%2Fsynapse-analytics%2Fcontext%2Fcontext)
+- [What is Azure Synapse Link for Dataverse?](/power-apps/maker/data-platform/export-to-data-lake?context=%2Fazure%2Fsynapse-analytics%2Fcontext%2Fcontext)

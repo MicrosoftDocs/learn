@@ -68,13 +68,42 @@ You'd normally install Azure File Sync on your on-premises server. For this exer
 
    Creating the VM takes a few minutes.
 
+## Create a public IP address and associate it with the file server VM
+
+In order to connect to the new server using Remote Desktop, you'll need to create a public IP address and assign it to the file server VM.
+
+1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
+
+1. In the portal, in the top search box, search for and select **Public IP addresses**. The **Public IP addresses** pane appears.
+
+1. Select **+ Create**. The **Create public IP address** pane appears.
+
+1. Leave the defaults as they are, and under **Name**, specify **FileServerPublicIP**.
+
+1. Select the same Azure subscription and location that you used for the VM. Select the **learn-file-sync-rg** resource group.
+
+1. Select **Create** to create the public IP address.
+
+1. In the top search box, search for and select **Virtual machines**. The **Virtual machines** pane appears.
+
+1. Select the **FileServerLocal** VM. The **FileServerLocal** virtual machine pane appears.
+
+1. Under **Settings** > **Networking**, select the network interface called **FileServerLocal**.
+
+1. Under **Settings** > **IP configurations**, select the IP configuration **FileServerLocal**.
+
+1. Select **Associate**, and then for **Public IP address** select **FileServerPublicIP**.
+
+1. Select **Save**.
+
+
 ## Set up Windows Server for assessment
 
 Connect to the new server by using Remote Desktop client. You'll download a sample CAD file and install the Azure PowerShell module that you'll use later.
 
-1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
+1. Make sure you're still signed in to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
-1. In the portal, in the top search box, search for and select **Virtual machines**. The **Virtual machines** pane appears.
+1. In the top search box, search for and select **Virtual machines**. The **Virtual machines** pane appears.
 
 1. Select the **FileServerLocal** VM. The **FileServerLocal** virtual machine pane appears.
 

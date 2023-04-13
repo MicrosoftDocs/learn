@@ -4,7 +4,7 @@ The following outline contains a checklist of key topics that most investors wan
 
 > [!NOTE]
 > Work that you've completed earlier feeds directly into what investors are looking for:
-> 
+>
 > - The [attributes of successful companies checklist](../../fundamentals/3-success.yml?azure-portal=true#worksheet)
 > - The [Value Proposition Canvas](../../validate-idea/2-articulate-idea.yml?azure-portal=true#task-complete-your-own-value-proposition-canvas)
 > - The [experiments you've run to test core assumptions](../../validate-idea/5-experiment-power.yml?azure-portal=true)

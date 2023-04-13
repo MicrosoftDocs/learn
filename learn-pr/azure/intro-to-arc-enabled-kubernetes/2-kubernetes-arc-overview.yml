@@ -3,9 +3,9 @@ uid: learn.azure.intro-to-arc-enabled-kubernetes.2-kubernetes-arc-overview
 metadata:
   title: What are Kubernetes and Azure Arc?
   description: In this unit you'll learn about Kubernetes and Azure Arc, and the key benefits that they provide.
-  ms.date: 05/24/2022
-  author: micrum
-  ms.author: micrum
+  ms.date: 01/05/2023
+  author: JnHs
+  ms.author: jenhayes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom:
@@ -18,7 +18,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "What is the format of the Kubernetes manifest files supported by Arc?"
+  - content: "What is the format of the Kubernetes manifest files supported by Azure Arc?"
     choices:
     - content: "XML"
       isCorrect: false
@@ -32,7 +32,7 @@ quiz:
     - content: "TXT"
       isCorrect: false
       explanation: "Kubernetes doesn't recognize TXT format for manifest files."
-  - content: "Which technology makes it possible to deploy Azure Kubernetes Service (AKS) in on-premises data centers?"
+  - content: "Which technology makes it possible to deploy Azure Kubernetes Service (AKS) in on-premises datacenters?"
     choices:
     - content: "GKS"
       isCorrect: false
@@ -42,7 +42,7 @@ quiz:
       explanation: "EKS is a third-party platform that doesn't support AKS."
     - content: "Azure Stack HCI"
       isCorrect: true
-      explanation: "The only solution that allows running AKS in an on-premises data center is Azure Stack HCI."
+      explanation: "AKS clusters can be deployed on Azure Stack HCI in an on-premises datacenter."
     - content: "OpenShift"
       isCorrect: false
       explanation: "OpenShift is a third-party containerization platform that doesn't support AKS."

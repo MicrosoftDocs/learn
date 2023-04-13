@@ -19,7 +19,7 @@ It's common practice to train the model using a subset of the data, while holdin
 
 You will use *designer*'s **Score Model** component to generate the predicted class label value. Once you connect all the components, you will want to run an experiment, which will use the data asset on the canvas to train and score a model.  
 
-![Screenshot of designer components that can be connected to train a classification model.](../media/train-model-example.png)
+![Screenshot of designer components that can be connected to train a classification model.](../media/classification-train-model-example.png)
 
 ## Evaluate performance 
 
@@ -29,21 +29,35 @@ After training a model, it is important to evaluate its performance. There are m
 
 #### Confusion matrix
 
-The confusion matrix shows cases where both the predicted and actual values were 1 (known as *true positives*) at the top left, and cases where both the predicted and the actual values were 0 (*true negatives*) at the bottom right. The other cells show cases where the predicted and actual values differ (*false positives* and *false negatives*).
+The confusion matrix is a tool used to assess the quality of a classification model's predictions. It compares predicted labels against actual labels. 
 
-For a binary classification model where you're predicting one of two possible values, the confusion matrix is a 2x2 grid showing the predicted and actual value counts for classes **0** and **1**, similar to this:
+In a binary classification model where you're predicting one of two possible values, the confusion matrix is a 2x2 grid showing the predicted and actual value counts for classes **1** and **0**. It categorizes the model's results into four types of outcomes. Using our diabetes example these outcomes can look like: 
+- *True Positive*: The model predicts the patient has diabetes, and the patient does actually have diabetes.
+- *False Positive*: The model predicts the patient has diabetes, but the patient does not actually have diabetes. 
+- *False Negative*: The model predicts the patient does not have diabetes, but the patient actually does have diabetes. 
+- *True Negative*: The model predicts the patient does not have diabetes, and the patient actually does not have diabetes.  
+
+![Screenshot of a confusion matrix terms showing true and false positives, as well as true and false negatives.](../media/confusion-matrix-terms.png)
+
+Suppose you have data for 100 patients. You create a model that predicts a patient does not have diabetes 15% of the time, so it *predicts* 15 people have diabetes and *predicts* 85 people do not have diabetes. In actuality, suppose 25 people *actually* do have diabetes and 75 people *actually* do not have diabetes. This information can be presented in a confusion matrix such as the one below: 
 
 ![Screenshot of a confusion matrix showing actual and predicted value counts.](../media/confusion-matrix.png)
 
 For a multi-class classification model (where there are more than two possible classes), the same approach is used to tabulate each possible combination of actual and predicted value counts - so a model with three possible classes would result in a 3x3 matrix with a diagonal line of cells where the predicted and actual labels match.
 
-Metrics can be derived from the confusion matrix include:
-- **Accuracy**: The ratio of correct predictions (true positives + true negatives) to the total number of predictions. 
-- **Precision**: The fraction of the cases classified as positive that are actually positive (the number of true positives divided by the number of true positives plus false positives). 
-- **Recall**: The fraction of positive cases correctly identified (the number of true positives divided by the number of true positives plus false negatives).
+Metrics that can be derived from the confusion matrix include:
+- **Accuracy**: The number of correct predictions (true positives + true negatives) divided by the total number of predictions. 
+- **Precision**: The number of the cases classified as positive that are actually positive: the number of true positives divided by (the number of true positives plus false positives). 
+- **Recall**: The fraction of positive cases correctly identified: the number of true positives divided by (the number of true positives plus false negatives).
 - **F1 Score**: An overall metric that essentially combines precision and recall.
 
-Of these metric, *accuracy* is the most intuitive. However, you need to be careful about using accuracy as a measurement of how well a model works. Suppose that only 3% of the population is diabetic. You could create a model that always predicts **0** and it would be 97% accurate, but it would not help correctly predict cases of diabetes. For this reason, most data scientists use other metrics like precision and recall to assess classification model performance.
+Of these metric, *accuracy* may be the most intuitive. However, you need to be careful about using accuracy as a measurement of how well a model performs. Using the model that predicts 15% of patients have diabetes, when actually 25% of patients have diabetes, we can calculate the following metrics:
+
+The *accuracy* of the model is: (10+70)/ 100 = 80%. 
+
+The *precision* of the model is: 10/(10+5) = 67%. 
+
+The *recall* of the model is 10/(10+15) = 40%
 
 #### Choosing a threshold 
 A classification model predicts the probability for each possible class. In other words, the model calculates a likelihood for each predicted label. In the case of a binary classification model, the predicted probability is a value between 0 and 1. By default, a predicted probability _including or above_ 0.5 results in a class prediction of 1, while a prediction _below_ this threshold means that there's a greater probability of a *negative* prediction (remember that the probabilities for all classes add up to 1), so the predicted class would be 0. 
@@ -77,7 +91,7 @@ It will take a while for your endpoint to be deployed. The Deployment state on t
 
 On the **Test** tab, you can test your deployed service with sample data in a JSON format. The test tab is a tool you can use to quickly check to see if your model is behaving as expected. Typically it is helpful to test the service before connecting it to an application.
  
-![Screenshot of the test tab on the endpoints page.](../media/endpoints-example-3.png)
+![Screenshot of the test tab on the endpoints page.](../media/diabetes-endpoints-example-3.png)
 
 You can find credentials for your service on the **Consume** tab. These credentials are used to connect your trained machine learning model as a service to a client application.
 

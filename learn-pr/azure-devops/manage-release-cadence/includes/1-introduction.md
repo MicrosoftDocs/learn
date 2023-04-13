@@ -1,14 +1,14 @@
 In this learning path, you've been helping the Tailspin Toys team set up an automated release pipeline. The pipeline includes multiple stages and both functional and nonfunctional tests. 
 
-In this module, you help the team solve another problem. How do they implement a deployment pattern that lets them release to production in a way that's best both for the company and for their users? You'll help them evaluate the possibilities and then implement the one that they choose.
+In this module, you help the team solve another problem, which is to implement a deployment pattern to release to production in a way that's best for the company and their users. You'll help them evaluate the possibilities and then implement the one they choose.
 
 ## Learning objectives
 
 After completing this module, you'll be able to:
 
-- Explain why deployment patterns matter
-- Compare different deployment patterns so that you can choose the one that best suits your needs
-- Apply the blue-green deployment pattern in your pipeline
+- Explain why deployment patterns matter.
+- Compare different deployment patterns so that you can choose the one that best suits your needs.
+- Apply the blue-green deployment pattern in your pipeline.
 
 ## Prerequisites
 
@@ -23,7 +23,7 @@ We also recommend that you start at the beginning of this learning path, [Deploy
 
 If you want to go through just this module, then you need to set up a development environment on your Windows, macOS, or Linux system. You need the following resources:
 
-- An [Azure DevOps organization](https://dev.azure.com?azure-portal=true)
+- An [Azure DevOps organization](/azure/devops/pipelines/get-started/pipelines-sign-up) with access to [parallel jobs](/azure/devops/pipelines/licensing/concurrent-jobs). If your organization does not have access to parallel jobs, you can request parallel jobs for free for public or private projects using [this form](https://aka.ms/azpipelines-parallelism-request). Your request will take 2-3 business days.
 - An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true)
 - A [GitHub](https://github.com/join?azure-portal=true) account
 - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)

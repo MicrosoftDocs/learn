@@ -13,7 +13,7 @@ In this unit, you'll create a new Azure Key Vault service for holding your appli
 From the Bash Git prompt, run the commands below to create an Azure Key Vault instance. The name of the service should be globally and adjusted accordingly in case the randomly generated name is already in use.
 
 ```Bash
-KEYVAULT_NAME=springappskv$RANDOM$RANDOM
+KEYVAULT_NAME=kv-$APPNAME-$UNIQUEID
 az keyvault create \
     --name $KEYVAULT_NAME \
     --resource-group $RESOURCE_GROUP \

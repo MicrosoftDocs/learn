@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-spark-notebooks-azure-synapse-pipeline.use-notebook-activity
+title: Use a Synapse notebook activity in a pipeline
+metadata:
+  title: Use a Synapse notebook activity in a pipeline
+  description: "Use a Synapse notebook activity in a pipeline"
+  ms.date: 02/07/2023
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: synapse-analytics
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-use-notebook-activity.md)]

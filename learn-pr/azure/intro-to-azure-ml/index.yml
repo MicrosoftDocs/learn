@@ -3,9 +3,9 @@ uid: learn.azure.intro-to-azure-ml
 metadata:
   title: Introduction to Azure Machine Learning
   description: Azure Machine Learning provides your software with automated data identification and extraction from your documents. Using an SDK or REST, the AI-powered service decreases, or can completely eliminate, time spent on and errors in data entry, while also making it easier to utilize your data.
-  ms.date: 03/14/2021
-  author: tomreidnz
-  ms.author: jasdeb
+  ms.date: 01/03/2023
+  author: sdgilley
+  ms.author: sgilley
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Azure Machine Learning 

@@ -20,7 +20,7 @@ In the preceding exercise, we deployed a logic app using a basic Azure Resource 
 
    [!code-json[](../code/basic-template-with-params/template.json?range=4-18)]
 
-   Both parameters are strings. We don't provide a default value for the `logicAppName` parameter, which means supply one at deployment time. In contrast, the `location` is optional as we supply a default value.
+   Both parameters are strings. We don't provide a default value for the `logicAppName` parameter, which means you need to supply one at deployment time. In contrast, the `location` is optional as we supply a default value.
 
    The default value for the `location` parameter is the location for the resource group into which the app is deployed. We get that value by referencing the *location* property from the resource group returned by the `resourceGroup()` template function. Expressions start and end with left and right brackets (`[ ]`) respectively. The expression's value is evaluated when the template finishes deployment. An expression can return a string, integer, boolean, array, or object. In a template, you can define 256 parameters as the maximum.
 
@@ -34,7 +34,7 @@ In the preceding exercise, we deployed a logic app using a basic Azure Resource 
 
    [!code-json[](../code/basic-template-with-params/template.json?range=60-65)]
 
-1. Save all changes to **template-with-params.json**.
+1. Press **<kbd>Ctrl</kbd> + <kbd>S</kbd>** to save all changes to **template-with-params.json**.
 
 ## Deploy logic app resource with the parameterized template
 
@@ -48,7 +48,7 @@ There are two ways to supply parameters to our template during deployment using 
    code params.json
    ```
 
-1. Paste the following JSON into **params.json**, and save your changes.
+1. Paste the following JSON into **params.json**, and press **<kbd>Ctrl</kbd> + <kbd>S</kbd>** to save your changes.
 
    [!code-json[](../code/basic-template-with-params/params.json?range=1-5)]
 
@@ -72,7 +72,7 @@ There are two ways to supply parameters to our template during deployment using 
    If validation failed, you would see a detailed description of the failure in the output.
 
 ## Deploy template with parameters from a local file
- 
+
 1. In the Cloud Shell, run the following command to deploy the logic app resource with the app's name taken from the **params.json** file. In the **params.json file**, the `location` parameter isn't set, so the default is used.
 
    ```azurecli
@@ -84,7 +84,7 @@ There are two ways to supply parameters to our template during deployment using 
 
    Deployment will take a few seconds and you can watch the progress in the Cloud Shell command line. When deployment is finished, you should see `provisioningState` in the JSON result with the value `Succeeded`.
 
-1. To see the app in action, find the **logicAppUrl** value in the JSON result. Select the URL and paste it into a new browser window. The page will display the *Hello Azure Logic Apps Template!* message.
+1. To see the app in action, find the **logicAppUrl** value in the JSON result. Select the URL, or copy and paste it into a new browser window. The page will display the *Hello Azure Logic Apps Template!* message.
 
 ## Deploy template with parameters from the command line
 
@@ -124,11 +124,11 @@ Let's now turn our attention to making our app do a little more than just sendin
    code template-with-params.json
    ```
 
-1. Replace the `relativePath` field to the **inputs** section of our HTTP request trigger as shown in the following snippet:
+1. Add the `relativePath` field to the **inputs** section of our HTTP request trigger as shown in the following snippet:
 
    [!code-json[](../code/basic-template-with-params/template.json?range=36-40)]
 
-   The `relativePath` entry specifies the parameters that we want our HTTP endpoint URL to accept. In this case, we define two parameters, *width* and *height*. We'll use these parameter values to calculate an area and return the result. 
+   The `relativePath` entry specifies the parameters that we want our HTTP endpoint URL to accept. In this case, we define two parameters, *width* and *height*. We'll use these parameter values to calculate an area and return the result.
 
 1. Update the body of the Response action with the following line:
 
@@ -140,7 +140,7 @@ Let's now turn our attention to making our app do a little more than just sendin
 
    - Returns the product of the integer equivalents for the height and width string values from the URL parameters. This task uses the `mul()` function and `int()` conversion function.
 
-1. Save all changes to **template-with-params.json**.
+1. Press **<kbd>Ctrl</kbd> + <kbd>S</kbd>** to save all changes to **template-with-params.json**.
 
 1. Validate our template after these changes with the `az deployment group validate` command in the Cloud Shell. In this example, we set the app's name to *CalculateArea* by using an inline parameter.
 

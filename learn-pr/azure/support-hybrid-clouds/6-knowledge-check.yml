@@ -42,7 +42,7 @@ quiz:
       explanation: "Incorrect. Azure Stack Edge is an AI-enabled edge computing device with network data transfer capabilities."
     - content: "Customer Lockbox."
       isCorrect: false
-      explanation: "Incorrect. Customer Lockbox allows customers to approve are deny elevated access requests for customer data in support scenarios."
+      explanation: "Incorrect. Customer Lockbox allows customers to approve and deny elevated access requests for customer data in support scenarios."
   - content: "Which of the following is a use case for Azure Stack Edge?"
     choices:
     - content: "Lock down inbound traffic to Azure VMs by creating network security group (NSG) rules."

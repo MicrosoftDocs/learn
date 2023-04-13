@@ -33,7 +33,6 @@ roles:
 - student
 products:
 - azure
-- vs-code
 - azure-app-service
 subjects:
 - development-tools

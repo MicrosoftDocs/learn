@@ -4,9 +4,9 @@ title: Validate your Python version and installation
 metadata:
   title: Exercise - validate your Python version and installation
   description: What is Python? Why should I learn Python? How can I tell if it's installed on my computer?
-  ms.date: 04/05/2022
-  author: rjmolyneaux
-  ms.author: rmolyneaux
+  ms.date: 01/09/2023
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen, devdivchpfy22

@@ -6,14 +6,14 @@ The three primary options to consider are Azure App Service, Azure Kubernetes Se
 
 Azure App Service is an HTTP-based service for hosting web applications, REST APIs, and mobile back ends. You can develop in your favorite language, be it .NET, .NET Core, Java, Ruby, Node.js, PHP, or Python. Applications run and scale with ease on both Windows and Linux-based environments.
 
-App Service not only adds the benefits of Microsoft Azure to your application, such as security, load balancing, autoscaling, and automated management. You can also take advantage of its DevOps capabilities, such as continuous deployment from Azure DevOps, GitHub, Docker Hub, and other sources, package management, staging environments, custom domain, and TLS/SSL certificates.
+App Service not only adds the benefits of Microsoft Azure to your application, such as security, load balancing, autoscaling, and automated management. DevOps capabilities, such as continuous deployment from Azure DevOps, GitHub, Docker Hub can package management, staging environments, custom domain, and TLS/SSL certificates.
 
 Azure App Service is a fully managed platform as a service (PaaS) offering for developers. Here are some key features of App Service:
 
  -  **Multiple languages and frameworks** \- App Service has first-class support for ASP.NET, ASP.NET Core, Java, Ruby, Node.js, PHP, or Python. You can also run PowerShell and other scripts or executables as background services.
  -  **Managed production environment** \- App Service automatically patches and maintains the OS and language frameworks for you.
- -  **Containerization and Docker** \- Dockerize your app and host a custom Windows or Linux container in App Service. Run multi-container apps with Docker Compose. Migrate your Docker skills directly to App Service.
- -  **Global scale with high availability** \- Scale up or out manually or automatically. Host your apps anywhere in Microsoft's global datacenter infrastructure, and the App Service SLA provides high availability.
+ -  **Containerization and Docker** \- Contain your app and host a custom Windows or Linux container in App Service. Run multi-container apps with Docker Compose. Migrate your Docker skills directly to App Service.
+ -  **Global scale with high availability** \- Scale up or out manually or automatically. Host your apps anywhere at Microsoft's global datacenter infrastructure, and the App Service SLA provides high availability.
  -  **Visual Studio and Visual Studio Code integration** \- Dedicated tools in Visual Studio and Visual Studio Code streamline the work of creating, deploying, and debugging.
 
 ## Azure Kubernetes Service
@@ -45,9 +45,9 @@ Because the Spring Petclinic application consists of multiple interactive micros
  -  The new implementation of Spring Petclinic should eliminate the need to manually upgrade and manage the underlying infrastructure. Instead, the application should use the platform-as-a-service (PaaS) model.
  -  Spring Petclinic implementation adheres to the principles of the microservices architecture. Each component of the application runs as a microservice and granular control over cross-component communication. The application will evolve into a solution that will provide automatic and independent scaling of each component and extend to include more microservices.
 
-You'll need to consider other steps to migrate the Spring Petclinic application to the target service.
+You'll need to consider other steps to migrate the [labstarter branch of the GitHub repo](https://github.com/Azure-Samples/spring-petclinic-microservices/tree/labstarter) hosting the Spring Petclinic application code to the target service.
 
-Use the table below to organize your thoughts around what is appropriate for using Azure App Service, Azure Kubernetes Service, and Azure Spring Apps:
+Use the table to organize your thoughts around what is appropriate for using Azure App Service, Azure Kubernetes Service, and Azure Spring Apps:
 
 :::row:::
   :::column:::
@@ -65,7 +65,7 @@ Use the table below to organize your thoughts around what is appropriate for usi
 :::row-end:::
 :::row:::
   :::column:::
-    **Public endpoint available**
+    **Public endpoint available.**
   :::column-end:::
   :::column:::
     *Applicable?*
@@ -79,7 +79,7 @@ Use the table below to organize your thoughts around what is appropriate for usi
 :::row-end:::
 :::row:::
   :::column:::
-    **Auto-upgrade underlying hardware**
+    **Auto-upgrade underlying hardware.**
   :::column-end:::
   :::column:::
      *Applicable?*
@@ -93,7 +93,7 @@ Use the table below to organize your thoughts around what is appropriate for usi
 :::row-end:::
 :::row:::
   :::column:::
-    **Run microservices**
+    **Run microservices.**
   :::column-end:::
   :::column:::
      *Applicable?*
@@ -107,7 +107,7 @@ Use the table below to organize your thoughts around what is appropriate for usi
 :::row-end:::
 :::row:::
   :::column:::
-    **Other advantages**
+    **Other advantages.**
   :::column-end:::
   :::column:::
      *Applicable?*
@@ -123,7 +123,7 @@ Use the table below to organize your thoughts around what is appropriate for usi
 
 ## Considerations for choosing a service
 
-Below are suggestions for reviewing which are the most appropriate service to be deployed for the Spring Petclinic application.
+Suggestions for reviewing which are the most appropriate service to be deployed for the Spring Petclinic application.
 
  -  Azure App Service, Azure Kubernetes Service, and Azure Spring Apps each support a public endpoint that can be accessed anonymously.
  -  Azure App Service, Azure Kubernetes Service, and Azure Spring Apps each support automatic upgrades and eliminates the need to manage the underlying infrastructure.
@@ -141,8 +141,6 @@ Below are suggestions for reviewing which are the most appropriate service to be
 
 ## Conclusion
 
-Given all the constraints and features listed above, the most beneficial services for supporting the Spring Petclinic application are Azure Spring Apps or Azure Kubernetes Service.
+Given all the constraints and features, the most beneficial services for supporting the Spring Petclinic application are Azure Spring Apps or Azure Kubernetes Service.
 
-For this exercise, you'll be using Azure Spring Apps as the service to be deployed for the Spring Petclinic application. For the activities in this learning path, you'll be using a subset of resources from the PetClinic sample application located on the [Deploying and running Java applications in Azure Spring Apps](https://github.com/MicrosoftLearning/Deploying-and-Running-Java-Applications-in-Azure-Spring-Apps/tree/master/StarterProject) repository.
-
-For full implementation details, see our fork of [PetClinic](https://github.com/Azure-Samples/spring-petclinic-microservices). The samples reference the source code as needed.
+For this exercise, you'll be using Azure Spring Apps as the service to be deployed for the Spring Petclinic application. In this learning path, you'll be using a subset of resources from the PetClinic sample application located on the [lab starter branch of the GitHub repo](https://github.com/Azure-Samples/spring-petclinic-microservices/tree/labstarter) hosting the Spring Petclinic application code repository.

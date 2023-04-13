@@ -4,7 +4,7 @@ The publishing process is broken down into several steps, each of which requires
 
 ### Offer setup
 
-After selecting **+ New offer** on the overview page of the commercial marketplace section of Partner Center, you’ll be taken to the offer setup page. This step is where you'll indicate whether you want to sell through Microsoft. It's also where you'll configure your CRM or HTTP endpoint to receive [customer leads](/azure/marketplace/partner-center-portal/commercial-marketplace-get-customer-leads) from Microsoft.
+After selecting **+ New offer** on the overview page of the commercial marketplace section of Partner Center, you’ll be taken to the offer-setup page. This step is where you'll indicate whether you want to sell through Microsoft. It's also where you'll configure your CRM or HTTP endpoint to receive [customer leads](/azure/marketplace/partner-center-portal/commercial-marketplace-get-customer-leads) from Microsoft.
 
 The "sell through Microsoft" selection you make in this step determines the information required throughout the rest of the publishing process.
 
@@ -12,18 +12,18 @@ The "sell through Microsoft" selection you make in this step determines the info
 
 :::image type="content" source="../media/8-offer-properties.png" alt-text="Screenshot of the offer properties fields that are required to publish any SaaS offer to the commercial marketplace.":::
 
-When you get to the properties tab of the publishing process, you’ll be asked to define the categories and industries that will be used to index your offering in the commercial marketplace. You’ll select your choices from a pre-populated list of options.
+When you get to the **Properties** tab of the publishing process, you’ll be asked to define the categories and industries that will be used to index your offering in the commercial marketplace. You’ll select your choices from a pre-populated list of options.
 
-> [!Important]
+> [!IMPORTANT]
 > The categories you select to describe your offer will determine your SaaS offer’s placement in Azure Marketplace or Microsoft AppSource. As a reminder, business applications are published to Microsoft AppSource, while IT and Developer applications are published to Azure Marketplace.
 
-The Properties tab is also where you provide the legal terms and conditions that govern the use of your SaaS application by customers. You can use the commercial marketplace standard contract, or you can define your own terms and conditions. If you choose the standard contract, you’ll be given the option to supplement it with amendments that you define. For more detail on terms and conditions, you can reference our [standard contract for Microsoft commercial marketplace documentation](/azure/marketplace/standard-contract).
+The **Properties** tab is also where you provide the legal terms and conditions that govern the use of your SaaS application by customers. You can use the commercial marketplace standard contract, or you can define your own terms and conditions. If you choose the standard contract, you’ll be given the option to supplement it with amendments that you define. For more detail on terms and conditions, you can reference our [standard contract for Microsoft commercial marketplace documentation](/azure/marketplace/standard-contract).
 
 ### Provide information for your offer listing
 
-:::image type="content" source="../media/9-offer-listing.png" alt-text="Screenshot of offer listing fields from Partner Center.":::
+:::image type="content" source="../media/9-offer-listing.png" alt-text="Screenshot of Offer listing fields from Partner Center.":::
 
-In the Offer listing tab, you’ll provide the information that will be displayed to customers in the commercial marketplace, including descriptions of your SaaS application, getting started instructions, links to useful product information, and support and engineering contacts for customers. This page is also where you provide media—such as logos, screenshots, and videos—that will be displayed on your products page in Microsoft AppSource or Azure Marketplace.
+In the **Offer listing** tab, you’ll provide the information that'll be displayed to customers in the commercial marketplace, including descriptions of your SaaS application, getting started instructions, links to useful product information, and support and engineering contacts for customers. This page is also where you'll provide media (such as logos, screenshots, and videos) that'll be displayed on your products page in Microsoft AppSource or Azure Marketplace.
 
 For tips to help you complete this step, reference our documentation on [offer listing best practices](/azure/marketplace/gtm-offer-listing-best-practices) and [marketing best practices](/azure/marketplace/gtm-marketing-best-practices).
 

@@ -2,15 +2,13 @@
 uid: learn.wwl.get-tips-tricks-teach-mb-910-dynamics-365-fundamentals.introduction
 title: Introduction
 metadata:
-  title: 1-Introduction
+  title: Introduction
   description: "Introduction"
-  ms.date: 04/12/2022
+  ms.date: 03/21/2023
   author: wwlpublish
   ms.author: tsheppard
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.prod: dynamics-365
 durationInMinutes: 3
 content: |
   [!include[](includes/1-introduction.md)]

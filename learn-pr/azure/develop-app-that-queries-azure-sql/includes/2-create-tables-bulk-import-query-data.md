@@ -14,9 +14,9 @@ You can create a single database through the Azure portal or by using Azure Powe
 
     ![Screenshot of the Databases and SQL Database options.](../media/2-databases-sql-database.png)
 
-1. To use CLI, run the **az sql server create** and **az sql db create** commands.
+1. To use CLI, run the `az sql server create` and `az sql db create` commands.
 
-1. To use PowerShell, run the **New-AzSqlServer** and **New-AzSqlDatabase** commands.
+1. To use PowerShell, run the `New-AzSqlServer` and `New-AzSqlDatabase` commands.
 
 When you create a single database, you're prompted to specify the server to manage it. You can create a new server or use an existing server.
 
@@ -28,7 +28,7 @@ Each database server is protected by a firewall to block potentially malicious p
 - Assess the vulnerability of your databases and take necessary remediation steps.
 - Send alerts when a threat is detected.
 
-You provision resources by using the virtual core (vCore) model, which specifies the memory, I/O, and CPU resources to allocate. You can scale the compute and storage resources independently. Or, you can assign resources in terms of database transaction units (DTUs). A DTU is a measure of the calibrated cost of the resources that you need to perform a benchmarked transaction.
+You configure resources by using the virtual core (vCore) model, which specifies the memory, I/O, and CPU resources to allocate. You can scale the compute and storage resources independently. Or, you can assign resources in terms of database transaction units (DTUs). A DTU is a measure of the calibrated cost of the resources that you need to perform a benchmarked transaction.
 
 If you have multiple databases and the resource needs of the databases fluctuate, you can use SQL elastic pool. This feature enables sharing a pool of resources among pooled databases as demand requires.
 
@@ -42,7 +42,7 @@ You can use any of these tools to create tables:
 - The `sqlcmd` utility and Cloud Shell
 - SQL Server Management Studio
 
-Whichever tool you choose, you define the table by using the `CREATE TABLE` SQL command. SQL Database supports primary keys, foreign keys, indexes, and triggers on tables. The following sample code creates a pair of related tables and a non-clustered index. You can run these commands as a batch in the query editor or in the `sqlcmd` utility.
+Whichever tool you choose, you define the table by using the `CREATE TABLE` Transact-SQL (T-SQL) command. SQL Database supports primary keys, foreign keys, indexes, and triggers on tables. The following sample code creates a pair of related tables and a non-clustered index. You can run these commands as a batch in the query editor or in the `sqlcmd` utility.
 
 ```SQL
 CREATE TABLE MyTable
@@ -66,7 +66,7 @@ To access the query editor in the Azure portal, go to the page for your database
 
 ![The SQL Database sign-in page in the Azure portal.](../media/2-sign-in-annotated.png)
 
-You enter your SQL code in the query pane and then select **Run** to execute it. If the SQL statement is a query, any rows that are returned appear in the **Results** pane. The **Messages** pane displays information like the number of rows returned or any errors that occurred:
+You enter your T-SQL code in the query pane and then select **Run** to execute it. If the T-SQL statement is a query, any rows that are returned appear in the **Results** pane. The **Messages** pane displays information like the number of rows returned or any errors that occurred:
 
 ![The query editor in the Azure portal with the various panes highlighted.](../media/2-query-editor-annotated.png)
 
@@ -76,7 +76,7 @@ To use the `sqlcmd` utility, go to Cloud Shell and run the following command. Re
 sqlcmd -S <server>.database.windows.net -d <database> -U <username> -P <password>
 ```
 
-If the sign-in command succeeds, you'll see a `1>` prompt. You can enter SQL commands on several lines and then type **GO** to run them.
+If the sign-in command succeeds, you'll see a `1>` prompt. You can enter T-SQL commands on several lines and then type `GO` to run them.
 
 ## Bulk import data with bcp
 

@@ -11,7 +11,7 @@ In this module, you created resources by using your Azure subscription. The foll
    > [!div class="nextstepaction"]
    > [Azure portal](https://portal.azure.com?azure-portal=true)
 
-1. Select **Resource groups** on the left.
+1. Select **Resource groups** from the Azure portal menu.
 
 1. Find the resource group **rg-ship-manager**, or the resource group name that you used, and select it.
 

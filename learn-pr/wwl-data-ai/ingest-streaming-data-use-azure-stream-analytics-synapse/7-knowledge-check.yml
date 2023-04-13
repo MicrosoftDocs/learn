@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.ingest-streaming-data-use-azure-stream-analytics-synapse.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/08/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: stream-analytics
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which type of output should you use to ingest the results of an Azure Stream Analytics job into a dedicated SQL pool table in Azure Synapse Analytics?"
+    choices:
+    - content: "Azure Synapse Analytics"
+      isCorrect: true
+      explanation: "Correct. An Azure Synapse Analytics output writes data to a table in an Azure Synapse Analytics dedicated SQL pool."
+    - content: "Blob storage/ADLS Gen2"
+      isCorrect: false
+      explanation: "Incorrect. A Blob storage/ADLS Gen2 output does not write data to a relational table in a dedicated SQL pool."
+    - content: "Azure Event Hubs"
+      isCorrect: false
+      explanation: "Incorrect. An Azure Event Hubs output does not write data to a relational table in a dedicated SQL pool."
+  - content: "Which type of output should be used to ingest the results of an Azure Stream Analytics job into files in a data lake for analysis in Azure Synapse Analytics?"
+    choices:
+    - content: "Azure Synapse Analytics"
+      isCorrect: false
+      explanation: "Incorrect. An Azure Synapse Analytics output does not write data to files in a data lake."
+    - content: "Blob storage/ADLS Gen2"
+      isCorrect: true
+      explanation: "Correct. A Blob storage/ADLS Gen2 output writes data to files in a data lake."
+    - content: "Azure Event Hubs"
+      isCorrect: false
+      explanation: "Incorrect. An Azure Event Hubs output does not write data to files in a data lake."

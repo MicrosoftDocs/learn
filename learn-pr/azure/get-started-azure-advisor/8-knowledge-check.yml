@@ -53,12 +53,12 @@ quiz:
     - content: "If your Advisor Score falls below your target goal, analyze the category scores to see what is most in need of addressing."
       isCorrect: false
       explanation: "Analyzing your category scores to see what is most in need of addressing is definitely part of a good general workflow for how to manage your Advisor Score."
-    - content: "Apply the Advisor recommendations that will get you back to your goal as quickly as possible."
+    - content: "Apply the Advisor recommendations that get you back to your goal as quickly as possible."
       isCorrect: false
       explanation: "Applying recommendations that get you back to your target goal as quickly as possible is a definite part of a good general workflow for how to manage your Advisor Score."
     - content: "Ignore the category score impact for each recommendation since it's not really necessary."
       isCorrect: true
-      explanation: "That's right! Looking at the category score impact for each recommendation to see which ones will produce the most benefit when addressed is absolutely part of a good general workflow for how to manage your Advisor Score."
+      explanation: "That's right! Looking at the category score impact for each recommendation to see which ones produce the most benefit when addressed is absolutely part of a good general workflow for how to manage your Advisor Score."
   - content: "What is the difference between Advisor Alerts and Advisor Recommendation Digests?"
     choices:
     - content: "Alerts periodically send you a summary of all your active recommendations while Recommendation Digests only notify you when a new recommendation is available."

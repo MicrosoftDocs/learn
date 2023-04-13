@@ -4,7 +4,7 @@ metadata:
   moduleType: standard
   title: Deploy Elastic Cloud on Kubernetes on Azure Kubernetes Service
   description: Deploy Elastic Cloud on Kubernetes (ECK) on Azure Kubernetes Service (AKS) to build applications that run Linux systems and provide built-in search capabilities on a fully managed cluster.
-  ms.date: 6/13/2021
+  ms.date: 02/07/2023
   author: yenchiho
   ms.author: yenchiho
   ms.topic: interactive-tutorial

@@ -14,10 +14,10 @@ Policies are made up of individual statements, which are executed in order. The 
 
 In Azure API Management, policies execute at four different times:
 
-- **Inbound**. These policies execute when a request is received from a client.
-- **Backend**. These policies execute before a request is forwarded to a managed API.
-- **Outbound**. These policies execute before a response is sent to a client.
-- **On-Error**. These policies execute when an exception is raised.
+- **Inbound**: These policies execute when a request is received from a client.
+- **Backend**: These policies execute before a request is forwarded to a managed API.
+- **Outbound**: These policies execute before a response is sent to a client.
+- **On-Error**: These policies execute when an exception is raised.
 
 In the policy XML, there's a separate tag for each of these execution times:
 
@@ -47,7 +47,7 @@ This policy also translates any out-bound responses in JSON format into XML.
 
 ## Policy scopes
 
-A policy's scope determines how broadly it will be applied. There are four policy scopes that you can choose from:
+A policy's scope determines how broadly it will be applied. There are four policy scopes from which you can choose:
 
 - Global
 - Product
@@ -60,33 +60,33 @@ Policies applied at the global scope affect all APIs within the instance of API 
 
 To use the global scope, in your API Management service pane, in the left menu pane, under **API Management**, select **APIs**, and then select **All APIs** in the middle menu pane. You can open the XML editor by selecting the tag symbol **</>** in the **Inbound processing**, **Outbound processing**, or **Backend** sections:
 
-![Global All API Scope.](../media/2-global-scope.png)
+![Screenshot of the Global All API Scope.](../media/2-global-scope.png)
 
-The policy editor that appears, contains default XML content. On the right, you can see shortcuts that add policies:
+The policy editor that appears contains default XML content. On the right, you can find shortcuts that add policies:
 
-![Global Scope Editor.](../media/2-global-scope-editor.png)
+![Screenshot of the Global Scope Editor.](../media/2-global-scope-editor.png)
 
 To create policy, you can manually edit the XML in the policy editor. Alternatively, on the **All APIs** pane, you can select **Add policy** to start a wizard that helps you to add policy with the correct syntax:
 
-![Global All API Scope to add policy.](../media/2-global-policy-wizard.png)
+![Screenshot of the Global All API Scope to add policy.](../media/2-global-policy-wizard.png)
 
 ### Product
 
 In API Management, you can assemble one or more APIs into a single product and then manage access to that product as a single entity. Policies applied to the product scope affect all the APIs in that product. APIs in other products are unaffected. When you manage a product in the Azure portal, select the **Policies** pane to bring up the XML policy editor:
 
-![Product Scope.](../media/2-products-scope.png)
+![Screenshot of the Product Scope.](../media/2-products-scope.png)
 
 ### API
 
-Policies applied at the API scope affect only a single API. To set a policy at the API scope, on the API Management home page, select **APIs**, and then select the API you want to manage. Finally, under the **Design** tab, select **All operations**:
+Policies applied at the API scope affect only a single API. To set a policy at the API scope, on the API Management home page, select **APIs**, then select the API you want to manage. Finally, under the **Design** tab, select **All operations**:
 
-![API Scope.](../media/2-api-scope.png)
+![Screenshot of the API Scope.](../media/2-api-scope.png)
 
 ### Operation
 
 Policies applied at the operation scope affect only one operation within the API. In the example below, the administrator has selected the **GetSpeaker** operation within the **Demo Conference API** and can set inbound, outbound, or backend policies that apply only to that operation:
 
-![API Operation Scope.](../media/2-operation-scope.png)
+![Screenshot of the API Operation Scope.](../media/2-operation-scope.png)
 
 ## Which order are policies applied in?
 
@@ -123,13 +123,13 @@ To allow or deny calls from specific IP addresses or ranges of IP addresses, use
 
 Several policies enable you to control authentication:
 
-You can use the **Authenticate with Basic** policy to enable authentication in plain text. This form of authentication is broadly supported, but remember it should be protected with SSL encryption; otherwise, a malicious attack can intercept the credentials as they cross the network.
+You can use the **Authenticate with Basic** policy to enable authentication in plain text. This form of authentication is broadly supported, but remember that you should protect it with SSL encryption; otherwise, a malicious attack can intercept the credentials as they cross the network.
 
-Use the **Authenticate with client certificate** policy to enable clients to authenticate by supplying a client certificate.
+You can use the **Authenticate with client certificate** policy to enable clients to authenticate by supplying a client certificate.
 
 ### Cross-domain policies
 
-Cross-domain requests are considered a security threat and denied by browsers and APIs. However, for specific operations, they can be desirable and API Management policies enable you to permit them securely.
+Cross-domain requests are considered a security threat and denied by browsers and APIs. However, they can be desirable for specific operations, and API Management policies let you permit them securely.
 
 Use the **Allow cross-domain calls** policy to permit calls from Adobe Flash and Silverlight. If your API or client apps rely on Cross-Origin Resource Sharing (CORS), use the **CORS** policy to permit them.
 
@@ -139,17 +139,17 @@ Some AJAX code, which runs on the browser, uses JSON with padding to make cross-
 
 It's often helpful to change the format or content of a response from a managed API. You can do that with several policies:
 
-To convert to and from JSON and XML, use the **Convert JSON to XML** and **Convert XML to JSON** policies. This policy often helps to make multiple APIs in a product consistent. It can also remove the need to recode an API, when an app expects a response in a specific format.
+To convert to and from JSON and XML, use the **Convert JSON to XML** and **Convert XML to JSON** policies. This policy often helps to make multiple APIs in a product consistent. It can also remove the need to recode an API when an app expects a response in a specific format.
 
 Sometimes you want to keep a response in XML, but alter its schema. In such cases, use the **Transform XML** policy to apply an XSLT template.
 
-Use **Find and replace string in body** to execute a string substitution. For example, if a brand-name has changed, you could use this policy to ensure that the change is reflected in all responses, even if the underlying data still includes references to the old name.
+Use **Find and replace string in body** to execute a string substitution. For example, if a brand name has changed, you could use this policy to ensure that the change is reflected in all responses, even if the underlying data still includes references to the old name.
 
 The **Mask URLs in content** policy can rewrite any links in the response body so that they point to a different location. This policy is useful when a website or web API has moved.
 
 Use the **Set body** policy to set the message text for incoming and outgoing requests.
 
-If you want to modify an incoming HTTP request or outgoing response, you can use several different policies: To add items to an existing response or request header, use the **Set HTTP header** policy. If you need to modify the query strings, which appear after the question mark in the URL, use the **Set query string parameter** policy. If a public URL, which a user has requested, must be mapped to a different internal destination, the **Rewrite URL** policy can perform the conversion both inbound and outbound.
+If you want to modify an incoming HTTP request or outgoing response, you can use several different policies. To add items to an existing response or request header, use the **Set HTTP header** policy. If you need to modify the query strings, which appear after the question mark in the URL, use the **Set query string parameter** policy. If a public URL, which a user has requested, must be mapped to a different internal destination, the **Rewrite URL** policy can perform the conversion both inbound and outbound.
 
 ### Advanced policies
 

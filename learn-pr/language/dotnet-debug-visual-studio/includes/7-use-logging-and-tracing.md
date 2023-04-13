@@ -29,7 +29,7 @@ Before we debug the application, let's add more debug diagnostics. Additional di
     }
     ```
 
-4. Debug the application, and you should see the following output:
+4. Debug the application. You should get the following output:
 
     ```output
     Entering Fibonacci method
@@ -61,7 +61,7 @@ The return value is not 5 and it should be.
    at Program.<Main>$(String[] args) in C:\Users\Jon\Desktop\DotNetDebugging\Program.cs:line 3
 ```
 
-Stop debugging, and then run the application without debug by entering the following command in the terminal.
+Stop debugging, then run the application without debug by entering the following command in the terminal.
 
 ```bash
 dotnet run

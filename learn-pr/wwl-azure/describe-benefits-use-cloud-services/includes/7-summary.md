@@ -13,4 +13,4 @@ You should now be able to:
 
 The following resources provide more information on topics in this module or related to this module.
 
- -  [Build great solutions with the Microsoft Azure Well-Architected Framework](/training/paths/azure-well-architected-framework/) is a Microsoft Learn course that introduces you to the Microsoft Azure Well-Architected Framework.
+ -  [Build great solutions with the Microsoft Azure Well-Architected Framework](/learn/paths/azure-well-architected-framework/) is a Microsoft Learn course that introduces you to the Microsoft Azure Well-Architected Framework.

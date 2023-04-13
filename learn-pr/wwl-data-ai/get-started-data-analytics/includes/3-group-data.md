@@ -6,6 +6,6 @@ When the dataset contains multiple categories, you can group them into hierarchi
 
 By grouping and summarizing sales data, you might find that the New York store generates more revenue than the London store, but that the London store sells more products on a Saturday. 
 
-In this video, you will see how grouping can be applied to categorical data to create a summary within each category:
+In this video, you'll see how grouping can be applied to categorical data to create a summary within each category:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4U38q]

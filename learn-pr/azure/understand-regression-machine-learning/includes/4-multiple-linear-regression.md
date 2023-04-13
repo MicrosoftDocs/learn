@@ -1,8 +1,8 @@
-In this unit, we contrast multiple linear regression with _simple linear regression_. We'll also look at a metric called R<sup>2</sup>, which is commonly used to evaluate the quality of a linear regression model.
+In this unit, we'll contrast multiple linear regression with _simple linear regression_. We'll also look at a metric called R<sup>2</sup>, which is commonly used to evaluate the quality of a linear regression model.
 
 ## Multiple linear regression
 
-_Multiple linear regression_ models the relationship between several features and a single label. Mathematically, it's the same as simple linear regression, and is usually fit using the same cost function, but with more features.
+_Multiple linear regression_ models the relationship between several features and a single variable. Mathematically, it's the same as simple linear regression, and is usually fit using the same cost function, but with more features.
 
 Rather than modeling a single relationship this technique simultaneously models multiple relationships, which it treats as independent of one another. For example, if we're predicting how ill a dog becomes based on their age and body_fat_percentage, two relationships are found:
 

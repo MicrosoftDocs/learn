@@ -1,7 +1,7 @@
 :::image type="content" source="../media/company-brand-583c4126.png" alt-text="Screenshot of the Azure A D Company Branding page. You can pick a default language, a corporate logo, and over values.":::
 
 
-You can use your organization's logo and custom color schemes to provide a consistent experience on your sign-in pages. This is a relatively new feature of Azure Active Directory (Azure AD). Your sign-in pages appear when users sign in to your organization's web-based apps, such as Microsoft 365, which uses Azure AD as your identity provider. Adding custom branding requires you to have either **Azure AD Premium 1, Premium 2, or Office 365 (for Office 365 apps)** license.
+You can use your organization's logo and custom color schemes to provide a consistent experience on your sign-in pages. This is a relatively new feature of Azure Active Directory (Azure AD), part of Microsoft Entra. Your sign-in pages appear when users sign in to your organization's web-based apps, such as Microsoft 365, which uses Azure AD as your identity provider. Adding custom branding requires you to have either **Azure AD Premium 1, Premium 2, or Office 365 (for Office 365 apps)** license.
 
 To set the company branding, open up the Azure AD page in the Azure portal. Then launch **Company branding** from the Manage menu. If you do not have the proper premium license the menu option will not be present.
 

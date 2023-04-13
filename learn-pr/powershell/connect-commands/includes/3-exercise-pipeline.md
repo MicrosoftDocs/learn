@@ -18,7 +18,7 @@ To manage your machine, you sometimes need to discover what processes run on it 
    Get-Process | Where-Object CPU -gt 2 | Sort-Object CPU -Descending | Select-Object -First 3
    ```
 
-The exact output you see depends on your machine, but you should see a result where the first 3 processes whose CPU value is greater than 2 are sorted in descending order, with the greatest CPU value at the top of the list. Your output will look similar to the following example:
+The exact output you see depends on your machine. But, you should see a result where the first 3 (`-First 3`) processes whose CPU value is greater than 2 (`-gt 2`) are sorted in `-Descending` order. Your output should look similar to the following example:
 
 ```output
  NPM(K)    PM(M)      WS(M)     CPU(s)      Id  SI ProcessName

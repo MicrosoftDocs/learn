@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.query-data-sentinel.3-monitor-visualize-data
+title: Monitor and visualize data
+metadata:
+  title: Monitor and visualize data
+  description: "Monitor and visualize data by using Microsoft Sentinel Workbooks."
+  ms.date: 01/26/2023
+  author: wwlpublish
+  ms.author: kelawson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-monitor-visualize-data.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "An administrator wants to open a previously saved query. After opening the Logs page in Microsoft Sentinel, which one of the following options must the administrator select?"
+    choices:
+    - content: "Queries"
+      isCorrect: false
+      explanation: "The Queries link in the page header opens some of the predefined sample queries."
+    - content: "Query explorer"
+      isCorrect: true
+      explanation: "The Query Explorer link in the page header helps you access your previously saved queries."
+    - content: "Tables pane"
+      isCorrect: false
+      explanation: "The Tables pane groups logs from different solutions into tables."
+  - content: "The administrator wants to create an analytics rule from the created query. Which option from the queries pane should the administrator select?"
+    choices:
+    - content: "Azure Monitor Alert"
+      isCorrect: false
+      explanation: "A new Azure Monitor Alert creates an alert in Azure Monitor."
+    - content: "Microsoft Sentinel Alert"
+      isCorrect: true
+      explanation: "A new Microsoft Sentinel alert creates an analytics rule."
+    - content: "Copy link"
+      isCorrect: false
+      explanation: "Copy link is used to share the query."

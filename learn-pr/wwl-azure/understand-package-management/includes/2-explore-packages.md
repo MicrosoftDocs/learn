@@ -6,9 +6,7 @@ They provide a way to store those components in a well-defined format with metad
 
 A package is a formalized way of creating a distributable unit of software artifacts that can be consumed from another software solution.
 
-The package describes the content it contains and usually provides extra metadata.
-
-This additional information uniquely identifies the individual packages and to be self-descriptive.
+The package describes the content it contains and usually provides extra metadata, and the information uniquely identifies the individual packages and is self-descriptive.
 
 It helps to better store packages in centralized locations and consume the contents of the package predictably.
 

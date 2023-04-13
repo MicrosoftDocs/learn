@@ -9,9 +9,9 @@ To create an app role by using the Azure portal's user interface:
 2.  Open the portal menu and then select **Azure Active Directory**.
 3.  On the **Azure Active Directory** blade, under **Manage,** select **App registrations**.
 4.  Select **App roles**, and then select **Create app role**.
-
-     :::image type="content" source="../media/app-roles-create-app-role.png" alt-text="Screenshot of the  app roles configuration wizard with create app role highlighted.":::
-
+    
+    :::image type="content" source="../media/app-roles-create-app-role-17c8eae3.png" alt-text="Screenshot of the  app roles configuration wizard with create app role highlighted.":::
+    
 5.  In the **Create app role** pane, in the **Display name** box, enter **Survey Writer**.
 6.  Under **Allow member types**, select **User/Groups**.
 7.  In the **Value** box, enter **Survey.Create**.

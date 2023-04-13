@@ -1,3 +1,4 @@
+
 Digital collaboration has changed. Your employees and partners now need to collaborate and access organizational resources from anywhere, on any device, and without affecting their productivity.  There has also been an acceleration in the number of people working from home.
 
 Enterprise security needs to adapt to this new reality. The security perimeter can no longer be viewed as the on-premises network. It now extends to:

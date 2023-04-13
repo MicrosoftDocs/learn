@@ -1,4 +1,5 @@
 
+
 Cybersecurity weaknesses identified in your organization are mapped to
 actionable security recommendations and prioritized by their impact.
 Prioritized recommendations help shorten the time to mitigate or
@@ -40,7 +41,7 @@ on-premises, on PCs, on phones, and in the cloud.
 | Product/Service               | Article                                                                                             |
 |-------------------------------|-----------------------------------------------------------------------------------------------------|
 | Machine Trust Boundary        | Ensure that binaries are obfuscated if they contain sensitive information                           |
-|                               | Consider using an Encrypted File System (EFS) is used to protect confidential user-specific data    |
+|                               | Consider using an Encrypted File System (EFS) to protect confidential user-specific data    |
 |                               | Ensure that sensitive data stored by the application on the file system is encrypted                |
 | Web Application               | Ensure that sensitive content isn't cached on the browser                                          |
 |                               | Encrypt sections of Web App's configuration files that contain sensitive data                       |
@@ -130,5 +131,5 @@ Here's a summary of the guidance:
 
 -   [**Defender for Cloud App Best Practices**](/defender-cloud-apps/best-practices)
 -   [**Threat Remediation**](/defender-cloud-apps/tutorial-flow)
--   [**Manage Multi-Cloud Environment**](/defender-cloud-apps/tutorial-cloud-platform-security)
+-   [**Manage Multicloud Environment**](/defender-cloud-apps/tutorial-cloud-platform-security)
 -   [**Ransomware Protection**](/security/compass/protect-against-ransomware)

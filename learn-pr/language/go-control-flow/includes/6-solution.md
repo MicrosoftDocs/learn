@@ -67,7 +67,7 @@ func main() {
 }
 ```
 
-In the `main` function, we loop from 1 to 20, and call the `findprimes` function to check the current number. In the `findprimes` function, we start the `for` loop at 2, and repeat until the counter is more than the `number` value. If the `number` is evenly divisible by the counter, the `number` isn't prime. If we complete the loop without exiting, the number is either 1 or it's prime.
+In the `main` function, we loop from 1 to 20, and call the `findprimes` function to check the current number. In the `findprimes` function, we start the `for` loop at 2, and repeat until the counter is more than the `number` value. If the `number` is evenly divisible by the counter, the `number` isn't prime. If we complete the loop without exiting, the number is either 1, or it's prime.
 
 Here's the output:
 

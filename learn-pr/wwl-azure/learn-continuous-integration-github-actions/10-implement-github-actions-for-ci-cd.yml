@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.learn-continuous-integration-github-actions.implement-github-actions-for-ci-cd
+title: Implement GitHub Actions For CI/CD
+metadata:
+  title: Implement GitHub Actions For CI/CD
+  description: "Implement GitHub Actions For CI/CD"
+  ms.date: 01/12/2023
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 40
+content: |
+  [!include[](includes/10-implement-github-actions-for-ci-cd.md)]

@@ -9,7 +9,7 @@ metadata:
   ms.author: chnoring
   ms.custom: team=nextgen
   ms.topic: interactive-tutorial
-  ms.prod: learning-aspnetcore
+  ms.prod: aspnet-core
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-use-sqlite-database.md)]

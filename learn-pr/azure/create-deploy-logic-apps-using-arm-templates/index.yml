@@ -3,7 +3,7 @@ uid: learn.azure.logic-apps-and-arm-templates
 metadata:
   title: Create and deploy Azure Logic Apps workflow using Azure Resource Manager templates
   description: Define an Azure Logic Apps workflow declaratively as a Resource Manager template and deploy the app using the Azure Command Line Interface (CLI).
-  ms.date: 05/03/2019
+  ms.date: 12/12/2022
   author: ecfan
   ms.author: estfan
   ms.topic: interactive-tutorial

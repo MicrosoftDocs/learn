@@ -24,13 +24,17 @@ You just created a GitHub repository named **my-static-blazor-app** in your GitH
 
 1. Open the solution file, _ShoppingList.sln_.
 
+   :::image type="content" source="../media/open-solution.png" alt-text="Screenshot showing where to open the shopping list solution.":::
+
 1. Finally, run the front-end client application by selecting **Client** as the start-up project and launching the debugger.
+
+   :::image type="content" source="../media/select-start-project.png" alt-text="Screenshot showing the client project selected.":::
 
 ## Browse to your app
 
 It's time to see your application running locally. Visual Studio will open the website in your default browser.
 
-:::image type="content" source="../media/my-shopping-list-app-loading.png" alt-text="Browsing to your web app.":::
+:::image type="content" source="../media/my-shopping-list-app-loading.png" alt-text="Screenshot showing the UI of your web app.":::
 
 Your app should say **Loading data ...** because there's no data or API yet. You'll add the API for your web app later on in this module.
 

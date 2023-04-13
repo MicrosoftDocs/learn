@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.enable-external-collaboration-with-b2b.3-enable-mfa-b2b
+metadata:
+  title: Enable multi-factor authentication in Azure AD B2B
+  description: Enable multi-factor authentication in Azure AD B2B
+  ms.date: 03/14/2023
+  author: msmimart
+  ms.author: mimart
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Enable multi-factor authentication in Azure AD B2B
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-enable-mfa-b2b.md)]

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.challenge-project-create-mini-game.exercise-add-code-to-end-game
+title: Exercise - Add code to end the game
+metadata:
+  title: Exercise - Add code to end the game
+  description: "Exercise - Add code to end the game"
+  ms.date: 03/22/2023
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-exercise-add-code-to-end-game.md)]

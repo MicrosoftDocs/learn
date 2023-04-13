@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-azure-app-services.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/18/2023
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/12-knowledge-check.md)]
+quiz:
+  title: ""
+  questions:
+  - content: "When you clone a configuration from another deployment slot, which configuration setting follows the content across the swap?"
+    choices:
+    - content: "Custom domain names"
+      isCorrect: false
+      explanation: "Incorrect. Custom domain names don't follow the content across the swap."
+    - content: "Connection strings"
+      isCorrect: true
+      explanation: "Correct. Connections strings follow the content across the swap."
+    - content: "Scale settings"
+      isCorrect: false
+      explanation: "Incorrect. Scale settings don't follow the content across the swap."
+  - content: "How can you support the Marketing team requests about research web page usage?"
+    choices:
+    - content: "Continuous deployment"
+      isCorrect: false
+      explanation: "Incorrect. Continuous deployment is the process of moving software that's been built and tested successfully into production."
+    - content: "Application logging"
+      isCorrect: false
+      explanation: "Incorrect. Enabling application logging provides authentication and authorization traces."
+    - content: "Azure Application Insights"
+      isCorrect: true
+      explanation: "Correct. Application Insights meets all the requirements. The product can also determine which web pages perform best."
+  - content: "Which option is a valid automated deployment source?"
+    choices:
+    - content: "GitHub"
+      isCorrect: true
+      explanation: "Correct. Azure currently supports Azure DevOps, GitHub, Bitbucket, OneDrive, Dropbox, and external Git repositories."
+    - content: "JavaScript code"
+      isCorrect: false
+      explanation: "Incorrect. Azure currently supports Azure DevOps, GitHub, Bitbucket, OneDrive, Dropbox, and external Git repositories."
+    - content: "SharePoint"
+      isCorrect: false
+      explanation: "Incorrect. Azure currently supports Azure DevOps, GitHub, Bitbucket, OneDrive, Dropbox, and external Git repositories."

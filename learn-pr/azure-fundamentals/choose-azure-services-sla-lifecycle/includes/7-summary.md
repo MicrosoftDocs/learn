@@ -24,5 +24,5 @@ In this module, you learned about several factors that affect service guarantees
 
 ### Work with preview services
 
-* Review the [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms?azure-portal=true).
-* Learn about updates and new product features on the [Azure announcements blog](https://azure.microsoft.com/blog/topics/announcements?azure-portal=true).
+ -  Review the [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms?azure-portal=true).
+ -  Learn about updates and new product features on the [Azure announcements blog](https://azure.microsoft.com/blog/topics/announcements?azure-portal=true).

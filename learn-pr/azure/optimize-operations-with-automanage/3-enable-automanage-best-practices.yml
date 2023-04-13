@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.optimize-operations-with-automanage.enable-automanage-best-practices
+title: Enable Azure Automanage best practices
+metadata:
+  title: Enable Azure Automanage best practices
+  description: Describe how to deploy Azure Automanage best practices through the Azure portal, Azure Policy, and ARM.
+  ms.date: 01/10/2023
+  author: johnmarco
+  ms.author: johnmarc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+content: |
+  [!include[](includes/3-enable-automanage-best-practices.md)]

@@ -2,17 +2,17 @@ Let's take a step back and see how Grover's algorithm works and why we can use i
 
 In this section, we define the problem solved by Grover's search algorithm (the so-called "search problem") and take a closer look at how various real-life problems can be represented in terms of this problem.
 
-## The search problem
+## Formulate the problem
 
 The search problem is formulated as follows: you're given a function $f$ that takes an $N$-bit input and returns a 1-bit output, 0 or 1. Your goal is to find any input $x_0$ for which $f(x_0) = 1$.
 
 > [!NOTE] 
 > Notice that you are not given any information about the structure of the function! You only have 
-> access to an "opaque box" that implements this function, this is, takes the input and returns the corresponding output.
+> access to an "opaque box" that implements this function, that is, takes the input and returns the corresponding output.
 
 ## What problems can be framed as search problems?
 
-The search problem is by design generic. Indeed, any problem that allows you to check whether a given value $x$ is a valid solution (a "yes or no problem") can be formulated in terms of the search problem, if we define $f(x)$ as "1 if, and only if, $x$ is a valid solution for our problem".
+The search problem is generic by design. Indeed, any problem that allows you to check whether a given value $x$ is a valid solution (a "yes or no problem") can be formulated in terms of the search problem. Just define $f(x)$ as "1 if, and only if, $x$ is a valid solution for our problem".
 
 Here are some examples:
 
@@ -23,7 +23,7 @@ Here are some examples:
 
 Some of these problems are better suited to benefit from using Grover's algorithm than the others. 
 
-The space fleet has several space stations scattered throughout the galaxy. Noise and interference are problems that the communication division is trying to solve. Space stations need to communicate among them, but if two stations are too close, the radio signals interfere and we can't decode the information. For this reason, we need to assign a specific bandwidth to each space station. However, we can't assign a unique bandwidth to each space station as available bandwidths are limited and the space fleet grows year by year. For effectiveness, two space stations may share the same bandwidth if they're far enough to not interfere. Based on this, you need to assign a bandwidth to each station while trying to keep the number of different assigned bandwidths as low as possible. 
+The space fleet has several space stations scattered throughout the galaxy. Noise and interference are problems that the communication division is trying to solve. Space stations need to communicate with each other, but if two stations are too close, the radio signals interfere and we can't decode the information. For this reason, we need to assign a specific bandwidth to each space station. However, we can't assign a unique bandwidth to each space station as available bandwidths are limited and the space fleet grows year by year. For effectiveness, two space stations may share the same bandwidth if they're far enough to not interfere. Based on this, you need to assign a bandwidth to each station while trying to keep the number of different assigned bandwidths as low as possible.
 
 This problem is an instance of the graph coloring problem where the vertices are the space stations, the labels/colors are the bandwidth, and two vertices are connected if they're close enough so their signals interfere.
 

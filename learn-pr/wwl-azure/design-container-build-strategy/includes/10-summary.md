@@ -7,9 +7,9 @@ You learned how to describe the benefits and usage of:
 
 ## Learn more
 
- -  [Container Jobs in Azure Pipelines](/azure/devops/pipelines/process/container-phases).
- -  [Build an image using Azure Pipelines](/azure/devops/pipelines/ecosystems/containers/build-image).
- -  [Service Containers with Azure Pipelines](/azure/devops/pipelines/process/service-containers).
- -  [Quickstart: Create an Azure container registry using the Azure portal](/azure/container-registry/container-registry-get-started-portal).
- -  [What are microservices?](/devops/deliver/what-are-microservices).
- -  [CI/CD for microservices architectures](/azure/architecture/microservices/ci-cd).
+ -  [Container Jobs in Azure Pipelines - Azure Pipelines](/azure/devops/pipelines/process/container-phases).
+ -  [Build an image - Azure Pipelines](/azure/devops/pipelines/ecosystems/containers/build-image).
+ -  [Service Containers - Azure Pipelines](/azure/devops/pipelines/process/service-containers).
+ -  [Quickstart - Create registry in portal - Azure Container Registry](/azure/container-registry/container-registry-get-started-portal).
+ -  [What are Microservices?](/devops/deliver/what-are-microservices).
+ -  [CI/CD for microservices](/azure/architecture/microservices/ci-cd).

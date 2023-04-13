@@ -3,7 +3,7 @@ uid: learn.wwl.plan-microsoft-sentinel-deployment-sap
 metadata:
   title: Plan to deploy the Microsoft Sentinel solution for SAP
   description: "Understand the Microsoft Sentinel solution for SAP. The module covers the roles of the team members who will work together to design, deploy and implement the Microsoft Sentinel solution for SAP."
-  ms.date: 10/08/2022
+  ms.date: 11/29/2022
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   - Basic understanding of Microsoft Sentinel
   - SAP system management
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/plan-microsoft-sentinel-deployment-sap.svg
 levels:
 - intermediate
 roles:

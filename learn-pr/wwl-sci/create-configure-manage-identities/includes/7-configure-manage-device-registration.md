@@ -56,7 +56,7 @@ Administrators can secure and further control Azure AD joined devices using Mobi
 
 Azure AD join can be accomplished using self-service options like the Out of Box Experience (OOBE), bulk enrollment, or Windows Autopilot.
 
-Azure AD joined devices can still maintain single sign-on access to on-premises resources when they are on the organization's network. Devices that are Azure AD joined can still authenticate to on-premises servers like file, print, and other applications.
+Azure AD joined devices can still maintain single sign-on access to on-premises resources when they are on the organization's network. Azure AD joined devices authenticate to on-premises servers like for file, print, and other applications.
 
 ### Scenarios for joined devices
 
@@ -125,4 +125,4 @@ Cloud: You can write Conditional Access policies for any Azure AD integrated app
 
 On-premises: This is not possible without device writeback. If the application is integrated with ADFS (2012 or higher) then you can write claim rules to check for the device status and then provide access only if the "is managed " claim is present. In order to issue this claim, ADFS will check for the device object in the "Registered Devices" container and then issue the claim accordingly.
 
-Windows Hello For Business (WHFB) requires device writeback to in Hybrid- Federated scenarios.
+Windows Hello For Business (WHFB) requires device writeback to function in Hybrid and Federated scenarios.

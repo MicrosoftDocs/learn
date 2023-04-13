@@ -1,23 +1,23 @@
 ### YamlMime:Module
 uid: learn.benefits-microsoft-endpoint-manager
 metadata:
-  title: Benefits of Microsoft Endpoint Manager
-  description: In this module, you'll learn about Microsoft Endpoint Manager benefits, including how it increases security and productivity, provides flexibility, and maximizes your investment. 
-  ms.date: 07/05/2022
+  title: Benefits of Microsoft Intune
+  description: In this module, you'll learn about Microsoft Intune benefits, including how it increases security and productivity, provides flexibility, and maximizes your investment. 
+  ms.date: 12/08/2022
   author: Erikre
   ms.author: erikre
   ms.topic: interactive-tutorial
   ms.prod: learning-endpoint-manager
-title: Benefits of Microsoft Endpoint Manager
-summary: Learn about Microsoft Endpoint Manager benefits, including how it increases security and productivity, provides flexibility, and maximizes your investment.
+title: Benefits of Microsoft Intune
+summary: Learn about Microsoft Intune benefits, including how it increases security and productivity, provides flexibility, and maximizes your investment.
 abstract: | 
   In this module, you will:
   - Learn about intelligent and unified endpoint security.
   - Learn about flexible and unified endpoint management.
   - Learn about protecting data without device enrollment.
-  - Understand how Microsoft Endpoint Manager increases your end users' productivity.
+  - Understand how Microsoft Intune increases your end users' productivity.
   - Learn about the benefits of co-management.  
-  - Learn how Microsoft Endpoint Manager helps you maximize your return on investment.  
+  - Learn how Microsoft Intune helps you maximize your return on investment.  
 prerequisites: None
 iconUrl: /training/achievements/benefits-microsoft-endpoint-manager.svg
 ratingEnabled: true

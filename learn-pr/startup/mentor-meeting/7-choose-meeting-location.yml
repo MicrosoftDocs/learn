@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.startups.mentor-meeting.choose-meeting-location
+title: Choose the best location for achieving the desired outcome
+metadata:
+  title: Choose the best location for achieving the desired outcome
+  description: "This content is part of the \"Make the most of a mentor meeting\" module."
+  ms.date: 11/11/2022
+  author: turoczy
+  ms.author: v-rturoczy
+  ms.topic: interactive-tutorial
+  ms.prod: learning-consumer
+durationInMinutes: 7
+content: |
+  [!include[](includes/7-choose-meeting-location.md)]

@@ -1,4 +1,4 @@
-Your colleague is using workload identities with a GitHub deployment workflow. This is the workflow definition file:
+Your colleague is using workload identities with a GitHub deployment workflow. The following code is the workflow definition file:
 
 ```yaml
 on:
@@ -14,7 +14,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - uses: azure/login@v1
       with:
         client-id: '555e8321-44fb-4fbe-a009-77c9b5a9ef87'
@@ -28,4 +28,6 @@ jobs:
 
 The workflow returns the following error message:
 
-> Error:  Unable to get ACTIONS_ID_TOKEN_REQUEST_URL env variable. Please make sure to give write permissions to id-token in the workflow.
+```output
+Error:  Unable to get ACTIONS_ID_TOKEN_REQUEST_URL env variable. Please make sure to give write permissions to id-token in the workflow.
+```

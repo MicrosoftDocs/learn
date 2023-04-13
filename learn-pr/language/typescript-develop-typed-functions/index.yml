@@ -3,7 +3,7 @@ uid: learn.language.typescript-develop-typed-functions
 metadata:
   title: 'Develop typed functions by using TypeScript'
   description: Learn how to develop typed functions by using TypeScript.
-  ms.date: 02/11/2021
+  ms.date: 01/09/2023
   author: GeekTrainer
   ms.author: chnoring
   ms.topic: interactive-tutorial
@@ -33,7 +33,6 @@ roles:
 - student
 products:
 - azure
-- vs-code
 units:
 - learn.language.typescript-develop-typed-functions.1-introduction
 - learn.language.typescript-develop-typed-functions.2-create-functions-typescript

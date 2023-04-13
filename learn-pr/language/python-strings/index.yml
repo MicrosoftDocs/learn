@@ -3,7 +3,7 @@ uid: learn.beginner-python.use-strings
 metadata:
   title: Use strings in Python
   description: Strings and string operations are among the main core types in Python. Manipulating text is an essential developer skill, and Python offers several ways to work with strings.
-  ms.date: 08/17/2022
+  ms.date: 12/01/2022
   author: alfredodeza
   ms.author: chnoring
   ms.custom: team=nextgen
@@ -25,7 +25,7 @@ roles:
   - developer
   - student
 products:
-  - vs
+  - azure
 subjects:
 - cloud-computing
 units:

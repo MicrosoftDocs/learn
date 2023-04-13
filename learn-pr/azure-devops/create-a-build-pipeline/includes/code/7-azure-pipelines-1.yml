@@ -3,8 +3,6 @@ trigger:
 
 pool:
   vmImage: 'ubuntu-22.04'
-  demands:
-  - npm
 
 steps:
 - task: UseDotNet@2

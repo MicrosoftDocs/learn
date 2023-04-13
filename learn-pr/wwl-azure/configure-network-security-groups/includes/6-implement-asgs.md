@@ -1,32 +1,58 @@
-[Application Security Groups (ASGs)](/azure/virtual-network/application-security-groups) ) logically group virtual machines by workload and define network security rules based on those groups. ASGs work in the same way as NSGs but provide an application-centric way of looking at your infrastructure. You join virtual machines to the ASG, and then use the ASG as a source or destination in NSG rules.
+You can implement [application security groups](/azure/virtual-network/application-security-groups) in your Azure virtual network to logically group your virtual machines by workload. You can then define your network security group rules based on your application security groups.
 
-## When to use Application Security Groups
+### Things to know about using application security groups
 
-Let’s consider a usage case for an online retailer. In this scenario, it's important to control the network traffic to the application virtual machines. Here are the requirements. 
+Application security groups work in the same way as network security groups, but they provide an application-centric way of looking at your infrastructure. You join your virtual machines to an application security group. Then you use the application security group as a source or destination in the network security group rules.
 
-- Shoppers access the company’s product catalog hosted on Web Servers. The Web Servers must be accessible from the internet over HTTP port 80 and HTTPS port 443. 
+Let's examine how to implement application security groups by creating a configuration for an online retailer. In our example scenario, we need to control network traffic to virtual machines in application security groups. 
 
-- Inventory information is located on Database Servers. The Database Servers must be accessible over port 1433. Only the Web Servers should have access to the Database Servers. 
+:::image type="content" source="../media/application-security-groups.png" alt-text="Diagram that shows how application security groups combine with network security groups to protect applications." border="false":::
 
-## How to use Application Security Groups
+#### Scenario requirements
 
-:::image type="content" source="../media/asgs.png" alt-text="Diagram of how an A S G combines with an N S G to protect applications.":::
+Here are the scenario requirements for our example configuration:
 
-For this scenario, we would:
+- We have six virtual machines in our configuration with two web servers and two database servers.
+- Customers access the online catalog hosted on our web servers.
+- The web servers must be accessible from the internet over HTTP port 80 and HTTPS port 443. 
+- Inventory information is stored on our database servers.
+- The database servers must be accessible over HTTPS port 1433.
+- Only our web servers should have access to our database servers. 
 
-Create an ASG (WebASG) that groups the Web Servers. Create another ASG (DBASG) that groups the Database Servers. Assign the corresponding server NICs to each ASG.
+#### Solution
 
-Inside the NSG, create following rules:
-- Priority: 100, allow access from the internet to WebASG with port 80 and 443.
-- Priority: 110, allow access from WebASG to DBASG with port 1433.
-- Priority: 120, deny access from anywhere to DBASG with port 1433.
+For our scenario, we need to build the following configuration:
 
-## Advantages of using an application security group
+1. Create application security groups for the virtual machines.
 
-This configuration has several advantages:
+   1. Create an application security group named `WebASG` to group our web server machines.
 
-- The configuration doesn’t require specific IP addresses. It would be difficult to specify IP addresses because of the number of servers and because the IP addresses could change. You also don't need to arrange the servers into a specific subnet. 
+   1. Create an application security group named `DBASG` to group our database server machines.
 
-- This configuration doesn't require multiple rule sets. You don't need to create a separate rule for each VM. You can dynamically apply new rules to ASG. New security rules are automatically applied to all the VMs in the Application Security Group.
+1. Assign the network interfaces for the virtual machines.
 
-- The configuration is easy to maintain and understand since is based on workload usage. 
+   - For each virtual machine server, assign its NIC to the appropriate application security group.
+
+1. Create the network security group and security rules.
+
+   - **Rule 1**: Set **Priority** to 100. Allow access from the internet to machines in the `WebASG` group from HTTP port 80 and HTTPS port 443.
+   
+      Rule 1 has the lowest priority value, so it has precedence over the other rules in the group. Customer access to our online catalog is paramount in our design.
+
+   - **Rule 2**: Set **Priority** to 110. Allow access from machines in the `WebASG` group to machines in the `DBASG` group over HTTPS port 1433.
+
+   - **Rule 3**: Set **Priority** to 120. **Deny** (X) access from anywhere to machines in the `DBASG` group over HTTPS port 1433.
+
+      The combination of Rule 2 and Rule 3 ensures that only our web servers can access our database servers. This security configuration protects our inventory databases from outside attack.
+
+### Things to consider when using application security groups
+
+There are several advantages to implementing application security groups in your virtual networks.
+
+- **Consider IP address maintenance**. When you control network traffic by using application security groups, you don't need to configure inbound and outbound traffic for specific IP addresses. If you have many virtual machines in your configuration, it can be difficult to specify all of the affected IP addresses. As you maintain your configuration, the number of your servers can change. These changes can require you to modify how you support different IP addresses in your security rules.
+
+- **Consider no subnets**. By organizing your virtual machines into application security groups, you don't need to also distribute your servers across specific subnets. You can arrange your servers by application and purpose to achieve logical groupings.
+
+- **Consider simplified rules**. Application security groups help to eliminate the need for multiple rule sets. You don't need to create a separate rule for each virtual machine. You can dynamically apply new rules to designated application security groups. New security rules are automatically applied to all the virtual machines in the specified application security group.
+
+- **Consider workload support**. A configuration that implements application security groups is easy to maintain and understand because the organization is based on workload usage. Application security groups provide logical arrangements for your applications, services, data storage, and workloads.

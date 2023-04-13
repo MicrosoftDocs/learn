@@ -105,7 +105,7 @@ You can specify the conditions under which each job runs. The example job shown 
 
 You can also run jobs in parallel or sequentially. Using your existing build pipeline as an example, you can use parallel jobs to build your software on Windows, Linux, and macOS agents simultaneously.
 
-A [deployment job](/devops/pipelines/process/deployment-jobs) is a special type of job that plays an important role in your deployment stages. Deployment jobs record the status of your deployments in Azure Pipelines, providing you with an audit trail. Deployment jobs also help you define your deployment strategy, which we'll do shortly.
+A [deployment job](/azure/devops/pipelines/process/deployment-jobs) is a special type of job that plays an important role in your deployment stages. Deployment jobs record the status of your deployments in Azure Pipelines, providing you with an audit trail. Deployment jobs also help you define your deployment strategy, which we'll do shortly.
 
 #### Strategies
 

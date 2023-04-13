@@ -96,7 +96,7 @@ Once you publish an APR report to the Power BI service, Power BI may enforce res
 
 When you publish a report to a workspace that has its license mode set to **Pro**, it means the workspace resides in a shared capacity. A shared capacity is shared with other Microsoft customers. To avoid noisy neighbor situations (where a co-tenant monopolizes resources), an APR refresh has a minimum interval of 30 minutes, even if the refresh interval in your report is less than that value. Change detection measures aren’t supported in shared capacities.
 
-When you publish a report to a workspace that has its license mode set to **Premium per user**, **Premium per user**, or **Embedded** (called a dedicated capacity), APR may not be enabled or is constrained. That’s because a capacity admin can enable or disable APR, and enable or disable the use of a change detection measure for a dedicated capacity. They can also set a minimum refresh interval and a minimum execution interval for change detection measures. When your report page settings are lower than the minimum intervals, the minimum intervals will prevail.
+When you publish a report to a workspace that has its license mode set to **Premium per user**, or **Embedded** (called a dedicated capacity), APR may not be enabled or is constrained. That’s because a capacity admin can enable or disable APR, and enable or disable the use of a change detection measure for a dedicated capacity. They can also set a minimum refresh interval and a minimum execution interval for change detection measures. When your report page settings are lower than the minimum intervals, the minimum intervals will prevail.
 
 ![Screenshot of the A P R capacity settings.](../media/real-time-automatic-page-refresh-capacity-settings.png)
 

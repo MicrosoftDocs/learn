@@ -28,7 +28,7 @@ The Azure Import/Export service is frequently used in cases where uploading or d
 
 ## Azure Import jobs
 
-Azure Import jobs securely transfer large amounts of data to Azure Blob Storage (block blobs or page blobs) or Azure Files. You ship disk drives to an Azure datacenter, the staff copy specified data to the drives and then return the drives to you. Consider how Azure Import jobs can be a part of your data transfer strategy.
+Azure Import jobs securely transfer large amounts of data to Azure Blob Storage (block blobs or page blobs) or Azure Files. You ship disk drives to an Azure datacenter, the staff copy specified data to the Azure storage and then return the drives to you. Consider how Azure Import jobs can be a part of your data transfer strategy.
 
 :::image type="content" source="../media/import-jobs-3dd387ae.png" alt-text="Flowchart of an Azure Import job. You prepare disks, create the job, and ship the disks. The datacenter receives the disks, transfers the data, packages the disks, and ships the disks back." border="false":::
 

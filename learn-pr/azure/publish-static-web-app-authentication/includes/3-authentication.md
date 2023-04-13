@@ -1,4 +1,4 @@
-Your shopping list web app needs a way to uniquely identify its users, and provide them a personal space to store the products.
+Your shopping list web app needs a way to uniquely identify its users, and provide them with a personal space to store the products.
 
 Authentication is the way you'll verify the identity of a user that is trying to access an information system. We'll now look into authentication and how you can implement it in Azure Static Web Apps.
 
@@ -46,7 +46,7 @@ The `/.auth/logout` route logs out users from the web app. You can add a link to
 <a href="/.auth/logout">Log out</a>
 ```
 
-Like with login, you can provide an URL to redirect to after logging out using the `post_logout_redirect_uri` query string parameter:
+Like with login, you can provide a URL to redirect to after logging out using the `post_logout_redirect_uri` query string parameter:
 
 ```html
 <a href="/.auth/logout?post_logout_redirect_uri=/home">Log out</a>

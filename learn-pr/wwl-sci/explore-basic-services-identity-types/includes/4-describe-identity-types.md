@@ -1,3 +1,4 @@
+
 Azure AD manages different types of identities: users, service principals, managed identities, and devices. In this unit, we consider each type of Azure AD identity.
 
 ### User

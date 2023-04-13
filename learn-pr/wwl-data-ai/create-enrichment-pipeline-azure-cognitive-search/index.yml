@@ -27,7 +27,6 @@ roles:
 - solution-architect
 products:
 - azure-functions
-- vs-code
 - azure-cognitive-search
 units:
 - learn.wwl.create-enrichment-pipeline-with-azure-cognitive-search.introduction

@@ -1,3 +1,4 @@
+
 You can create a Redis cache using the Azure portal, the Azure CLI, or Azure PowerShell. 
 
 ## Create and configure an Azure Cache for Redis instance

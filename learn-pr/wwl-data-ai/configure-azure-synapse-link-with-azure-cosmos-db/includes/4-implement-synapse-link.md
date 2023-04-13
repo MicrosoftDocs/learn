@@ -2,7 +2,7 @@ When you have an Azure Cosmos DB container with analytical store support, you ca
 
 To create a linked service to an Azure Cosmos DB analytical data store, use Azure Synapse Studio, and add a linked service on the **Data** page by selecting the **Connect to external data** option, as shown here:
 
-![A screenshot of Azure Synapse Studioshowing the Connect to external data page.](../media//add-cosmos-db-link.png)
+![A screenshot of Azure Synapse Studio showing the Connect to external data page.](../media/add-cosmos-db-link.png)
 
 As you complete the steps to create your linked service, select the type of Azure Cosmos DB account and then assign your linked service a meaningful name and provide the necessary information to connect to your Azure Cosmos DB database.
 

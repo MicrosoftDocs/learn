@@ -4,8 +4,8 @@ metadata:
   title: Introduction to the Data Science Virtual Machine
   description: You'll learn about the features of the Data Science Virtual Machine and the options available for creating them. 
   ms.date: 08/28/2020
-  author: samkemp
-  ms.author: samkemp
+  author: jesscioffi
+  ms.author: jcioffi
   ms.topic: interactive-tutorial
   ms.service: machine-learning
   ms.prod: learning-azure

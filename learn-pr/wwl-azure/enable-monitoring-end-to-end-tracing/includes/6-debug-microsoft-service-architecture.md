@@ -1,4 +1,4 @@
-Now that you've been collecting log data from your Spring Cloud Service, your next step will be to query the log data.
+Now that you've been collecting log data from your Spring Apps Service, your next step will be to query the log data.
 
 In this section, you'll view the following entries:
 
@@ -6,7 +6,7 @@ In this section, you'll view the following entries:
  -  Ingress log entries.
  -  Container log entries
 
-:::image type="content" source="../media/service-logs-a667bb5c.png" alt-text="Displays a screenshot of the Service instande logs.":::
+:::image type="content" source="../media/service-logs-a667bb5c.png" alt-text="Displays a screenshot of the Service instance logs.":::
 
 
 To view the log entries, do the following procedures.

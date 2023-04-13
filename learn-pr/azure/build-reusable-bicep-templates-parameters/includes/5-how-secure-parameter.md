@@ -3,7 +3,7 @@ Sometimes you need to pass sensitive values into your deployments, like password
 > [!TIP]
 > The best approach is to avoid using credentials entirely. [Managed identities for Azure resources](/azure/active-directory/managed-identities-azure-resources/overview) can enable the components of your solution to securely communicate with one another without any credentials. Managed identities aren't available for every resource, but it's a good idea to use them wherever you can. Where you can't, you can use the approaches described here.
 
-[!include[Note - don't run commands](../../../includes/dont-run-commands.md)]
+[!INCLUDE [Note - don't run commands](../../../includes/dont-run-commands.md)]
 
 ## Define secure parameters
 
@@ -54,4 +54,4 @@ Modules enable you to create reusable Bicep files that encapsulate a set of reso
 
 :::code language="bicep" source="code/5-module.bicep" highlight="8":::
 
-Notice that in this Bicep file, the Key Vault is referenced by using the `existing` keyword. This tells Bicep that the Key Vault already exists, and this is just a reference to that vault. Bicep won't redeploy it. Also, notice that the code uses the `getSecret()` method in the value for the module's `apiKey` parameter. This is a special Bicep function that can only be used with secure module parameters. Internally, Bicep translates this to the same kind of Key Vault reference you learned about earlier.
+Notice that in this Bicep file, the Key Vault resource is referenced by using the `existing` keyword. The keyword tells Bicep that the Key Vault already exists, and this code is a reference to that vault. Bicep won't redeploy it. Also, notice that the module's code uses the `getSecret()` function in the value for the module's `apiKey` parameter. This is a special Bicep function that can only be used with secure module parameters. Internally, Bicep translates this expression to the same kind of Key Vault reference you learned about earlier.

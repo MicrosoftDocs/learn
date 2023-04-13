@@ -6,7 +6,7 @@ Azure Monitor collects two fundamental types of data: metrics and logs. Metrics 
 
 The following diagram gives a high-level view of Azure Monitor. On the left are the sources of monitoring data: Azure, operating systems, and custom sources. At the center of the diagram are the data stores for metrics and logs. On the right are the functions that Azure Monitor performs with this collected data, such as analysis, alerting, and streaming to external systems.
 
-![Diagram of Azure Monitor's architecture displaying the sources of monitoring data, the data stores, and functions performed on the data.](../media/2-azure-monitor.svg)
+![Diagram of Azure Monitor's architecture, displaying the sources of monitoring data, the data stores, and functions performed on the data.](../media/2-azure-monitor.svg)
 
 Azure Monitor collects data automatically from a range of components. For example:
 
@@ -35,7 +35,7 @@ You can log data from Azure Monitor in a Log Analytics workspace. Azure provides
 
 ### Metrics
 
-Metrics are numerical values that describe some aspect of a system at a point in time. Azure Monitor can capture metrics in near-real time. The metrics are collected at regular intervals and are useful for alerting because of their frequent sampling. You can use various algorithms to compare a metric to other metrics and observe trends over time.
+Metrics are numerical values that describe some aspect of a system at a point in time. Azure Monitor can capture metrics in near-real time. The metrics are collected at regular intervals, and are useful for alerting because of their frequent sampling. You can use various algorithms to compare a metric to other metrics and observe trends over time.
 
 Metrics are stored in a time-series database. This data store is most effective for analyzing time-stamped data. Metrics are suited for alerting and fast detection of issues. They can tell you about system performance. If needed, you can combine them with logs to identify the root cause of issues.
 

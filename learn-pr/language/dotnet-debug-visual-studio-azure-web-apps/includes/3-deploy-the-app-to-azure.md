@@ -4,20 +4,20 @@ In order to work through a remote debugging exercise with App Service, you'll fi
 
 You can create the sample app for this module using Visual Studio. The sample app allows you to search for GitHub organizations by name and display their repositories in a simple table.
 
-1) Inside Visual Studio, select **File > New Project**.
+1. Inside Visual Studio, select **File > New Project**.
 
-2) In the **Create a new project** dialog, search for **ASP.NET** and select the **ASP.NET Core Web App** option. Make sure to choose the Razor Pages project template instead of the **Model-View-Controller** option, then select **Next**.
+2. In the **Create a new project** dialog, search for **ASP.NET** and select the **ASP.NET Core Web App** option. Make sure to choose the **Razor Pages** project template instead of the **Model-View-Controller** option, then select **Next**.
 
     :::image type="content" source="../media/visual-studio-create-project.png" alt-text="A screenshot of the new project dialog in Visual Studio.":::
 
-3) On the **Configure your new project** dialog, name the project **GitHubBrowser**, leave the rest of the settings at their defaults, and then choose **Next**.
+3. On the **Configure your new project** dialog, name the project **GitHubBrowser**, leave the rest of the settings at their defaults, and then choose **Next**.
 
-> [!IMPORTANT]
-> Make sure to name your project **GitHubBrowser** for the code snippets below to work with matching namespaces. If you name your project something else, you'll need to update the namespace in the code snippets.
+   > [!IMPORTANT]
+   > Make sure to name your project **GitHubBrowser** for the code snippets below to work with matching namespaces. If you name your project something else, you'll need to update the namespace in the code snippets.
 
-4) On the **Additional information** step, choose .NET 6.0 and then select **Create**. This exercise can also work with earlier versions of .NET, such as .NET 5.0 or .NET Core 3.1.
+4. On the **Additional information** step, choose .NET 6.0 and then select **Create**. This exercise can also work with earlier versions of .NET, such as .NET 5.0 or .NET Core 3.1.
 
-5) After Visual Studio creates the project, expand the `Pages` folder in the solution explorer and open the `Index.cshtml` file. Replace the contents of `Index.cshtml` with the following code:
+5. After Visual Studio creates the project, expand the `Pages` folder in the solution explorer and open the `Index.cshtml` file. Replace the contents of `Index.cshtml` with the following code:
 
     ```razor
     @page
@@ -54,7 +54,7 @@ You can create the sample app for this module using Visual Studio. The sample ap
 
     This Razor code provides a basic search form to browse for GitHub organizations and displays the results in a table.
 
-6) In the solution explorer, expand the arrow next to `Index.cshtml` to reveal the `Index.cshtml.cs` file. Double click the `Index.cshtml.cs` file to open it, and replace its contents with the following code:
+6. In the solution explorer, expand the arrow next to `Index.cshtml` to reveal the `Index.cshtml.cs` file. Double click the `Index.cshtml.cs` file to open it, and replace its contents with the following code:
 
     ```csharp
     using Microsoft.AspNetCore.Mvc;
@@ -119,12 +119,12 @@ You can create the sample app for this module using Visual Studio. The sample ap
         }
     }
     ```
-    
+
     The preceding code contains two important methods:
     * The **OnGet** method handles initially loading the search page.
     * The **OnPost** method handles the form submission. The method pulls the GitHub API URL from the `appsettings.Development.json` file using the configuration service and makes an HTTP request with the submitted search term as a parameter. The items returned from the API are then assigned to a property and rendered using a table in the `Index.cshtml` file.
 
-7) In the Visual Studio Solution Explorer, expand the arrow next to the `appsettings.json` file. Open the `appsettings.Development.json` file and replace its contents with the following code:
+7. In the Visual Studio Solution Explorer, expand the arrow next to the `appsettings.json` file. Open the `appsettings.Development.json` file and replace its contents with the following code:
 
     ```json
     {
@@ -141,49 +141,63 @@ You can create the sample app for this module using Visual Studio. The sample ap
 
     This file provides some essential configuration values for the app, including the URL of the GitHub API that is used to retrieve an organization's repositories.
 
-8) Test the app locally by pressing the run button at the top of Visual Studio. The app should load in the browser and present a form to use for search queries. For example, search *dotnet* to browse repos for that GitHub organization to get an idea of what the results should look like.
+8. Test the app locally by pressing the run button at the top of Visual Studio. The app should load in the browser and present a form to use for search queries. For example, search *dotnet* to browse repos for that GitHub organization to get an idea of what the results should look like.
 
     :::image type="content" source="../media/visual-studio-remote-debug-app.png" alt-text="A screenshot of the sample app.":::
 
 ## Deploy the app to Azure
 
-Next you need to deploy the app to Azure so others can use it to browse repositories. You can deploy the app using Visual Studio and the steps below.
+Next, you need to deploy the app to Azure so others can use it to browse repositories. You can deploy the app using Visual Studio and the steps below.
 
-> [!NOTE]
-> If you are using the Learn sandbox, you may need to log out and log in again inside of Visual Studio for your subscription information to refresh. You can manage your account by clicking on the name icon in the upper right of Visual Studio. Make sure you are logged into the account you used to create the sandbox.
+1. If you are using the Learn sandbox, you may need to log out and log in again inside of Visual Studio for your subscription information to refresh. You can manage your account by clicking on the name icon in the upper right of Visual Studio, choose **Account settings**, and then choose **sign out**, then **sign in**. Make sure you are logged into the same account you used to create the sandbox.
 
-:::image type="content" source="../media/visual-studio-remote-account.png" alt-text="A screenshot of the account settings icon.":::
+   :::image type="content" source="../media/visual-studio-remote-account.png" alt-text="A screenshot of the account settings icon.":::
 
-1) Right click on the project node in the solution explorer, and then select **Publish**.
+2. Right click on the project node in the solution explorer, and then select **Publish**.
 
     :::image type="content" source="../media/visual-studio-remote-debug-publish.png" alt-text="A screenshot of the publishing option in Visual Studio.":::
 
-2) In the publishing dialog, select **Azure** as the Target, and then select **Next**.
+3. In the publishing dialog, select **Azure** as the Target, and then select **Next**.
 
-3) On the **Specific Target** step, select **Azure App Service (Windows)**, and then choose **Next**.
+4. On the **Specific Target** step, select **Azure App Service (Windows)**, and then choose **Next**.
 
-4) For the **App Service** step, make sure you're signed into the correct Azure Account in the upper right of the dialog.  and then select the subscription you would like to deploy to. 
+5. For the **App Service** step, make sure you're signed into the correct Azure Account in the upper right of the dialog.
 
-5) Next, create a new app service instance by selecting the green **+** icon. In the new app service dialog, enter the following values:
+   Remember, for the Learn sandbox, you may need to sign out of Visual Studio and sign in to make the sandbox subscription available, as described previously.
+
+6. Select the subscription you would like to deploy to.
+
+   For the Learn sandbox environment, check whether the `Concierge Subscription` has loaded by clicking the **Refresh** button. If it's available, select it. If it's not available, continue with the next step.
+
+7. Create a new app service instance by selecting the green **+ Create new** icon.
+
+   > [!NOTE]
+   > For the sandbox environment, you may need to wait while Visual Studio loads the subscription information. This may take some time.
+
+    :::image type="content" source="../media/visual-studio-remote-debug-loading-subscriptions.png" alt-text="A screenshot of loading subscription info in the create app service workflow.":::
+
+8. In the new app service dialog, enter or verify the following values:
 
     | Setting | Value  |
     | --- | --- |
     | **Name** |  Enter `GitHubBrowser123`, where `123` are three random numbers of your choosing to ensure your App Service name and domain is unique across Azure. |
-    | **Subscription name** | If you are using the Learn sandbox environment, select the `Concierge Subscription`, otherwise select your own. Remember, you may need to log out and in again if you don't see the sandbox subscription as an option. |
+    | **Subscription name** | If you are using the Learn sandbox environment, select the `Concierge Subscription`, otherwise select your own. |
     | **Resource group** | Choose the default <rgn>[sandbox resource group name]</rgn> if you are using the sandbox, or select **New...** to create your own new group with a name such as `mslearn-github-browser`. |
-    | **Hosting plan** | If you are using the Learn sandbox, leave the default value.  If you are using your own subscription, select **New...** and enter a name of `mslearn-github-browser-plan` and choose your instance size. |
+    | **Hosting plan** | If you are using the Learn sandbox, leave the default value.  If you are using your own subscription, select **New...** and enter a name of `mslearn-github-browser-plan` and choose your instance size. (Tip: If you are using the Learn sandbox and the default hosting plan doesn't appear, switch the resource group to a new group and then switch back to the default group.)|
 
     :::image type="content" source="../media/visual-studio-remote-debug-create-app-service.png" alt-text="A screenshot of the create app service workflow.":::
 
-6) Select **Create** to close the dialog, and Visual Studio will take a moment to create the App Service instance for you.
+9. Select **Create** to close the dialog, and Visual Studio will take a moment to create the App Service instance for you.
 
-7) Once the App Service is created, select the new instance, and then choose Finish.
+   Once the App Service is created, select the new instance, and then choose **Finish**. If you see a blank screen instead, try proceeding to the next step.
 
-8) Visual Studio will display a summary view of the publishing profile. Select **Publish** in the upper right corner to deploy your app to Azure. This process may take a moment to complete.
+10. Visual Studio will display a summary view of the publishing profile. Select **Publish** in the upper right corner to deploy your app to Azure. This process may take a little time to complete.
 
     :::image type="content" source="../media/visual-studio-remote-debug-publish-profile.png" alt-text="A screenshot of the publishing profile.":::
 
-When the deployment finishes Visual Studio will launch a web browser to the home page of your app. At first, it appears that everything is working correctly. However, when you try to search *dotnet* again, you'll receive an error page instead of the table of results. This error didn't happen locally, and you can use Visual Studio to figure out why.
+When the deployment finishes Visual Studio will launch a web browser to the home page of your app. At first, it appears that everything is working correctly.
+
+Next, enter *dotnet* again in the GitHubBrowser app's search box, and at this point you'll receive an error page instead of the table of results. This error didn't happen locally, and you can use Visual Studio to figure out why.
 
 :::image type="content" source="../media/visual-studio-remote-debug-error.png" alt-text="A screenshot of the application error.":::
 
@@ -191,16 +205,18 @@ When the deployment finishes Visual Studio will launch a web browser to the home
 
 Before you can debug this issue with Visual Studio, you must enable the remote debugging feature on the App Service. This setting will allow the Visual Studio debugger to connect to the main App Service web hosting process.
 
-1) Locate your deployed application in the Azure portal. You can find your app by browsing to the **App Services** page and then selecting the **GitHubBrowser123** app.  You can also search for the App Service instance directly by name in the search bar at the top.
+1. If you're using the Learn sandbox, open the [Learn sandbox Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). Make sure to sign in with the same account that you opened the sandbox. If you're not using the sandbox, sign into your own [Azure portal](https://portal.azure.com/).
+
+   Locate your deployed application in the Azure portal. You can find your app by browsing to the **App Services** page and then selecting the **GitHubBrowser123** app.  You can also search for the App Service instance directly by name in the search bar at the top.
 
     :::image type="content" source="../media/visual-studio-remote-debug-azure-search.png"  alt-text="A screenshot of Azure search." :::
 
-2) On the App Service settings page, select **Configuration** on the left navigation, and then switch to the **General Settings** tab. 
+2. On the App Service settings page, select **Configuration** on the left navigation, and then switch to the **General Settings** tab.
 
-3) Towards the bottom of the page, make sure to set the **Remote Debugging** feature to **On** and select **Visual Studio 2022** as the **Remote Visual Studio version**.
+3. Towards the bottom of the page, make sure to set the **Remote Debugging** feature to **On** and select **Visual Studio 2022** as the **Remote Visual Studio version**.
 
     :::image type="content" source="../media/visual-studio-remote-debug-azure-settings-small.png"  alt-text="A screenshot of the Azure remote debugging settings." lightbox="../media/visual-studio-remote-debug-azure-settings.png":::
 
-4) Select **Save** at the top of the page to persist your changes.
+4. Select **Save** at the top of the page to persist your changes.
 
 Your app service instance now supports remote debugging through Visual Studio.

@@ -1,0 +1,62 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.describe-verified-id-concepts.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check on DIDs and verifiable credentials."
+  ms.date: 03/06/2023
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 2
+###########################################################################
+###
+### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
+###  - Questions are complete sentences ending with a question mark
+###  - No true/false questions
+###  - 3 answers per question
+###  - All answers about the same length
+###  - Numeric answers listed in sorted order
+###  - No "All of the above" and/or "None of the above" as answer choices
+###  - No "Not" or "Except" in questions
+###  - No second person ("you") in the questions or answers
+###  - Provide a meaningful explanation for both correct and incorrect answers
+###
+###########################################################################
+content: |
+quiz:
+  questions:
+  - content: "What are the four properties that characterize decentralized identifiers (DIDs)"
+    choices:
+    - content: "Persistent, resolvable, cryptographically verifiable, and decentralized"
+      isCorrect: true
+      explanation: "Correct. A DID is the first new identifier to meet all four of these properties: persistent, resolvable, cryptographically verifiable, and decentralized."
+    - content: "Ephemeral, resolvable, verifiable through a certificate authority, and decentralized"
+      isCorrect: false
+      explanation: "Incorrect.  While DIDs are resolvable, cryptographically verifiable, and decentralized, they aren't ephemeral. DIDs are persistent."
+    - content: "Persistent, resolvable, cryptographically verifiable, and centralized"
+      isCorrect: false
+      explanation: "Incorrect.  While DIDs are persistent, resolvable, and cryptographically verifiable, they aren't centralized. A DID is decentralized."
+  - content: "What are two key pieces of information that are typically included in a DID document?"
+    choices:
+    - content: "Public keys and service endpoints"
+      isCorrect: true
+      explanation: "Correct.  The public keys and service endpoints associated with a DID are important pieces of information commonly contained in the DID document."
+    - content: "Private keys and service endpoints"
+      isCorrect: false
+      explanation: "Incorrect.  Private keys are never shared. A DID document will typically include public keys and service endpoints."
+    - content: "The root certificate authority and the public key"
+      isCorrect: false
+      explanation: "Incorrect. DIDs don't use certificate authorities. A DID document will typically include public keys and service endpoints."
+  - content: "Which of the following statements is true regarding verifiable credentials"
+    choices:
+    - content: "When a verifier validates the issuer's signature, the verifier can resolve the issuer's DID to obtain the public key, without having to contact the issuer directly."
+      isCorrect: true
+      explanation: ""
+    - content: "The verifier must establish a direction connection with the issuer of the credential to verify the credential's validity."
+      isCorrect: false
+      explanation: "Incorrect.  The verifier doesn't need to contact the issuer to validate the credential. The verifier can resolve the issuer's DID to obtain the public key, without having to contact the issuer directly."
+    - content: "The issuer of the verifiable credential presents the verifiable credential to the verifier."
+      isCorrect: false
+      explanation: "Incorrect. In a verifiable credential transaction, the holder of the credential (the user) controls the presentation of the credential to the verifier."

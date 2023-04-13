@@ -5,7 +5,7 @@ metadata:
   unitType: exercise
   title: Exercise - Test and deploy your converted template
   description: Learn how to test your migrated Bicep file by using the what-if operation and how to deploy your Bicep files to production.
-  ms.date: 08/17/2021
+  ms.date: 12/01/2022
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial

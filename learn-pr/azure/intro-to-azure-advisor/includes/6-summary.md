@@ -1,11 +1,10 @@
-You have explored in details about what is the Azure Advisor and how your organization can benefit from all recommendations you can get to improve your environment over the main pillars of cloud:
+In this module, you've explored how Azure Advisor recommendations can benefit your organization in respect of the five pillars of architectural excellence: 
 
-* Costs
-* Security
 * Reliability
+* Security
+* Cost optimization
 * Operational excellence
-* Performance
-
+* Performance efficiency
 
 ## Additional reading
 

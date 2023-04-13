@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/03/2022
+  ms.date: 12/19/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
@@ -14,7 +14,7 @@ labModal: false
 durationInMinutes: 5
 quiz:
   questions:
-  - content: "Before creating a container, which Azure Cosmos DB SQL API resource should you create first?"
+  - content: "Before creating a container, which Azure Cosmos DB for NoSQL resource should you create first?"
     choices:
     - content: "Database"
       isCorrect: true
@@ -25,14 +25,14 @@ quiz:
     - content: "User-defined function"
       isCorrect: false
       explanation: "Incorrect. User-defined functions are child resources of containers in Azure Cosmos DB."
-  - content: "Which one of these resources is a child resource of an Azure Cosmos DB SQL API account and parent resource for a container?"
+  - content: "Which one of these resources is a child resource of an Azure Cosmos DB for NoSQL account and parent resource for a container?"
     choices:
     - content: "Triggers"
       isCorrect: false
-      explanation: "Incorrect. Triggers are child resourced for containers, and are therefore items in Azure Cosmos DB SQL API."
+      explanation: "Incorrect. Triggers are child resourced for containers, and are therefore items in Azure Cosmos DB for NoSQL."
     - content: "Stored procedure"
       isCorrect: false
-      explanation: "Incorrect. Stored procedures are child resourced for containers, and are therefore items in Azure Cosmos DB SQL API."
+      explanation: "Incorrect. Stored procedures are child resourced for containers, and are therefore items in Azure Cosmos DB for NoSQL."
     - content: "Database"
       isCorrect: true
-      explanation: "Correct. Databases are not items in Azure Cosmos DB SQL API, they are the parent resource for containers and child resource for accounts."
+      explanation: "Correct. Databases are not items in Azure Cosmos DB for NoSQL, they are the parent resource for containers and child resource for accounts."

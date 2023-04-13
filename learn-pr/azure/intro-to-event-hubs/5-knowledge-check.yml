@@ -17,15 +17,15 @@ quiz:
   questions:
   - content: 'Which of the following are true about Event Hubs?'
     choices:
-    - content: "Event Hubs provides an absolute guarantee of message delivery"
+    - content: "Event Hubs provides an absolute guarantee of message delivery."
       isCorrect: false
       explanation: "Incorrect. Event Hubs guarantees message caching, but responsibility to reading that cache falls to the consumer application."
     - content: "Event Hubs is well suited to situations where thousands of data sources submit information concurrently."
       isCorrect: true
       explanation: "Correct."
-    - content: "Event Hubs isn't suitable for load balancing"
+    - content: "Event Hubs isn't suitable for load balancing."
       isCorrect: false
-      explanation: "Incorrect. As cached messages can be pulled by multiple consumers, Event Hubs can help with load balancing."
+      explanation: "Incorrect. Event Hubs helps with load balancing by allowing multiple consumers to pull cached messages."
   - content: 'What are consumer groups?'
     choices:
     - content: "Consumer groups are used to organize consumers but have no practical application."
@@ -39,7 +39,7 @@ quiz:
       explanation: "Correct."
   - content: 'What is the main consideration for the ‘pull’ model provided by Event Hubs?'
     choices:
-    - content: "Pull models make it the responsibility of the consumer(s) to ensure data are processed before they expire. This provides flexibility but also can mean that messages are lost in exceptional circumstances."
+    - content: "Pull models make it the responsibility of the consumer(s) to ensure data is processed before it expires. This model provides flexibility but also can mean that messages are lost in exceptional circumstances."
       isCorrect: true
       explanation: "Correct."
     - content: "This guarantees message delivery to consumers in a timely fashion."

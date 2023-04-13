@@ -6,7 +6,7 @@ metadata:
   description: This unit describes how to add behavior to your objects. It also covers data encapsulation and the need to keep your object's data secret from other objects and how to do it in Python. 
   author: ttorble
   ms.author: chnoring
-  ms.date: 05/01/2022
+  ms.date: 01/27/2023
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen

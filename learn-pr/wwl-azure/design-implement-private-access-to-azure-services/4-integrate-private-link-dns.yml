@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-implement-private-access-to-azure-services.integrate-private-link-dns
-title: Integrate Private Link with DNS
+title: Integrate private endpoint with DNS
 metadata:
-  title: Integrate Private Link with DNS
-  description: "Integrate Private Link with DNS"
-  ms.date: 08/29/2022
+  title: Integrate private endpoint with DNS
+  description: "Integrate private endpoint with DNS"
+  ms.date: 12/07/2022
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial

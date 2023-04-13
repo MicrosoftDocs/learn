@@ -52,7 +52,7 @@ The following snippet is the *function.json* file for this scenario.
 }
 ```
 
-Our JSON configuration specifies that our function will be triggered when a message is added to a queue named **myqueue-items**. The return value of our function is then written to **outTable** in Azure Table storage. For PowerShell functions, output bindings are explicitly written to with the `Push-OutputBinding` cmdlet.
+Our JSON configuration specifies that our function is triggered when a message is added to a queue named **myqueue-items**. The return value of our function is then written to **outTable** in Azure Table storage. For PowerShell functions, output bindings are explicitly written to with the `Push-OutputBinding` cmdlet.
 
 This example is a simple illustration of how we configure bindings for a function. We could change the output to be an email using a SendGrid binding, or put an event onto a Service Bus to notify some other component in our architecture, or even have multiple output bindings to push data to various services.
 
@@ -131,4 +131,4 @@ The following code snippets show how to create a log message:
 
 ### Errors, failures, warnings, and anomalies
 
-You can use Metrics or options from the Investigate category in the Function menu to monitor performance, diagnose failures, or configure dozens of predefined workbooks to manage your function app, everything from compilation errors and warnings in the code, to usage statistics by role.
+You can use Metrics or options from the Investigate category in the Function menu to monitor performance, diagnose failures, or configure dozens of predefined workbooks to manage your function app. Everything from compilation errors and warnings in the code, to usage statistics by role.

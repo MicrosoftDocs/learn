@@ -4,13 +4,11 @@ title: Describe Conditional Access in Azure AD
 metadata:
   title: Describe Conditional Access in Azure AD
   description: "Describe Conditional Access in Azure AD"
-  ms.date: 04/07/2022
+  ms.date: 02/07/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
-azureSandbox: false
-labModal: false
 durationInMinutes: 9
 content: |
   [!include[](includes/2-describe-conditional-access-azure-ad.md)]

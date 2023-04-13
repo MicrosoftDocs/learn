@@ -1,7 +1,7 @@
 
-Batch Transcription can transcribe entire storage containers with a single POST request. While you can also use the SDK to integrate transcription into your existing applications, in this exercise we'll use a POST request to closely examine the entire end-to-end process.
+Batch Transcription can transcribe entire storage containers with a single POST request. You can use the SDK to integrate transcription into your existing applications. However, in this exercise we use a POST request so that we can closely examine the entire end-to-end process.
 
-We'll prepare an environment, submit our jobs, check the job status, then view the results. We'll work in Bash here, though note most commands can be executed through languages such as C# and Python. If you want to dive deeper, we have a [GitHub repository](https://github.com/MicrosoftDocs/mslearn-batch-stt) available.
+First, we prepare an environment, then submit our jobs, check the job status, and view the results. Though we're using Bash in our Cloud Shell session, most commands can be executed through languages such as C# and Python. If you want to dive deeper, we have a [GitHub repository](https://github.com/MicrosoftDocs/mslearn-batch-stt) available.
 ​
 ## Preparing the environment
 
@@ -49,7 +49,7 @@ Let's start by preparing our environment. The following script creates our cogni
 
 ## Load audio files into the storage container
 
-Batch Transcription can process WAV (PCM Codec), MP3 (PCM Codec), and OGG (Opus Codec) files sampled at 8 kHz or 16 kHz. These must be at a publicly accessible or shared access signature (SAS) URI. Next, you'll copy the example audio files from GitHub into the storage container you just created.
+Batch Transcription can process WAV (PCM Codec), MP3 (PCM Codec), and OGG (Opus Codec) files sampled at 8 kHz or 16 kHz. These files must be at a publicly accessible or shared access signature (SAS) URI. Next, copy the example audio files from GitHub into the storage container you created in the previous step.
 
 1. Run the following command to download the audio files
 
@@ -67,9 +67,9 @@ Batch Transcription can process WAV (PCM Codec), MP3 (PCM Codec), and OGG (Opus 
 
 ## Set up access keys and tokens
 
-To produce and use transcriptions, we need tokens and access keys. Next, you'll  generate a SAS URI that will allow the Batch Transcription service to securely access the audio files in your storage container.
+To produce and use transcriptions, you need tokens and access keys. Next, generate a SAS URI that allows the Batch Transcription service to securely access the audio files in your storage container.
 
-First, the transcription service will need to be passed the URI that allows it to know where the files are kept, and give the service access to list and read our data. As Azure provides security by default, preventing public access to your files, we'll generate an access token that can be appended to the URL for the container.
+First, we pass the SAS URI to the transcription service. This URI tells the service where the files are kept, and gives the service access to list and read our data. As Azure provides security by default, preventing public access to your files, we need to generate an access token that can be appended to the URL for the container.
 
 1. Run the following command to generate the SAS token
 
@@ -91,9 +91,9 @@ First, the transcription service will need to be passed the URI that allows it t
 
 ## Submitting the job
 
-Now all the services are set up, you are going to submit the transcription job. We need to create a JSON body for the request, stating where our container is and the transcription options. Batch Transcription can process one or more files per batch. If more than one file is provided, the system attempts to process these in parallel, minimizing turn-around time.
+Now all the services are set up, you're going to submit the transcription job. We need to create a JSON body for the request, stating where our container is and the transcription options. Batch Transcription can process one or more files per batch. If more than one file is provided, the system attempts to process the files in parallel, minimizing turn-around time.
 
-First, the command will create the secure URL for the container where the audio files are kept, using the names of the blob and container, and appending the SAS token you just generated to the end of the URL. Then, the command will create a JSON object, that contains the optional settings and locale for the transcription, along with the secure URL for the audio files.
+First, the command creates the secure URL for the container where the audio files are kept. It creates the command by using the names of the blob and container, and appending the SAS token you generated to the end of the URL. Then, the command creates a JSON object that contains the optional settings and locale for the transcription, along with the secure URL for the audio files.
 
 > [!TIP]
 >  
@@ -121,7 +121,7 @@ First, the command will create the secure URL for the container where the audio 
 
     ```
 
-1. Now, we're going to use cURL to submit the transcription job with a POST request. Notice we have the URL, and out Speech API key as a header. The `--data "$json"` is the request body, which is the JSON created in the previous step. Run the following command to submit your Batch Transcription job
+1. Now, we're going to use cURL to submit the transcription job with a POST request. Notice we have the URL, and our Speech API key as a header. The `--data "$json"` is the request body, which is the JSON created in the previous step. Run the following command to submit your Batch Transcription job
 
     ```bash
     # Submit the job
@@ -131,9 +131,9 @@ First, the command will create the secure URL for the container where the audio 
     --data "$json")
 
     ```
-    
-1. Our captured `response` provides some information about where our results will be stored. To view it, past the following echo command into the terminal
-    
+
+1. Our captured `response` provides some information about where our results are stored. To view it, paste the following echo command into the terminal.
+
     ```bash
     echo "$response"
     ```
@@ -150,13 +150,13 @@ First, the command will create the secure URL for the container where the audio 
 
     ```
 
-    Take note of the status. When it states 'Succeeded', then move on. If it states the job is still running, wait 20 seconds, then paste the command above into the terminal and run it again. Repeat this until the status is 'Succeeded'!
+    Take note of the status. When it states 'Succeeded', then move on. If it states the job is still running, wait 20 seconds, then paste the previous command into the terminal and run it again. Repeat this process until the status is 'Succeeded'!
 
 ## Viewing the results
 
-To view our results, we need to see where they are saved to in general. We can extract this information from results we previously looked at. Next, we'll use Regex to do this.
+To view our results, we need to see where they're saved to. We can extract this information from the results we previously looked at by using Regex.
 
-1. Run the following command to retrieve the uri for the transcription information, and create a list of the individual transcription files
+1. Run the following command to retrieve the URI for the transcription information, and create a list of the individual transcription files.
 
     ```bash
     result_info_uri=$(echo $job_information | grep -oP -m 1 "(\s*\"files\":\s*\"\K)([^\"]*)")
@@ -169,7 +169,7 @@ To view our results, we need to see where they are saved to in general. We can e
     >  
     > You can select any of the contentUrl's to view the raw output of each transcription.
 
-1. Let's now loop through these files, download them, and view the first transcript. Run the following command to extract the URLs with Regex, and download each transcript
+1. Let's now loop through these files, download them, and view the first transcript. Run the following command to extract the URLs with Regex, and download each transcript.
 
     ```bash
     # Extract the URLs using Regex
@@ -189,7 +189,7 @@ To view our results, we need to see where they are saved to in general. We can e
 
     ```
 
-1. Run the following command to take a look at the first transcript
+1. Run the following command to take a look at the first transcript.
 
     ```bash
     # View the first transcript in nano

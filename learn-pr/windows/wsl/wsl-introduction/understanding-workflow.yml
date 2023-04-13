@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wsl-introduction.understanding-workflow
+title: Overview of a WSL development workflow
+metadata:
+  unitType: learning-content
+  title: Overview of a WSL development workflow
+  description: Overview of how WSL works and what to expect from a development workflow that utilizes tools and directories from two different file systems.
+  ms.date: 11/09/2022
+  author: mattwojo
+  ms.author: mattwoj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-understanding-workflow.md)]

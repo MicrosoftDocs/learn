@@ -13,7 +13,7 @@ Regardless of whether you sell through Microsoft, you’ll need to provide the f
 - Details and descriptions of your offer and the value it provides for customers
 
 > [!TIP]
-> To help you provide the information listed, we’ve created a separate learning module that shares information and best practices that will help you make the most of your company’s presence in the Microsoft commercial marketplace. To learn more, you can complete **["Go to market through the Microsoft commercial marketplace."](/training/modules/go-to-market-commercial-marketplace/)**
+> To help you provide the information listed, we’ve created a separate learning module that shares information and best practices that will help you make the most of your company’s presence in the Microsoft commercial marketplace. To learn more, you can complete the **[Go to market through the Microsoft commercial marketplace](/training/modules/go-to-market-commercial-marketplace/)** module.
 
 We’ll spend the rest of our time in this unit discussing considerations for publishers that sell their SaaS offers through Microsoft.
 
@@ -62,12 +62,12 @@ For more detailed information about using the marketplace metering service, chec
 
 #### Enable SaaS offer free trials
 
-When you sell through Microsoft, you can also choose to allow a one-month free trial for customers. If you choose this option, Microsoft will automatically forego billing for the first month of a customer’s subscription. At the end of the 1-month trial period, Microsoft automatically converts the customer to a paid subscription.
+When you sell through Microsoft, you can also choose to allow a one-month free trial for customers. If you choose this option, Microsoft will automatically forego billing for the first month of a customer’s subscription. At the end of the one-month trial period, Microsoft automatically converts the customer to a paid subscription.
 
 Adding a free trial to your transact offer is as easy as checking a box when configuring your offer in Partner Center. The option appears on the pricing and availability page of the process, and free trials can be added for each offer plan.
 
-> [!Note]
-> This free trial period for a transact offer is different from a free trial listing, which redirects customers to your website to activate a trial. With free trials for transact offers, customers subscribe through Microsoft and they're automatically converted to a paid subscription at the end of the trial period.
+> [!NOTE]
+> This free-trial period for a transact offer is different from a free-trial listing, which redirects customers to your website to activate a trial. With free trials for transact offers, customers subscribe through Microsoft and they're automatically converted to a paid subscription at the end of the trial period.
 
 #### Select plan visibility
 

@@ -1,6 +1,6 @@
-Code scanning workflows that use CodeQL have various configuration options that can be adjusted to better suit the needs of your organization.
+Code-scanning workflows that use CodeQL have various configuration options that you can adjust to better suit the needs of your organization.
 
-In this unit, you will learn how to reference additional queries in a custom configuration file.
+In this unit, you'll learn how to reference additional queries in a custom configuration file.
 
 ## Additional queries in a custom configuration file
 
@@ -14,7 +14,7 @@ In the workflow file, use the `config-file` parameter of the `init` action to sp
     config-file: ./.github/codeql/codeql-config.yml
 ```
 
-The configuration file can be located within the repository you are analyzing, or in an external repository. Using an external repository allows you to specify configuration options for multiple repositories in a single place. When you reference a configuration file located in an external repository, you can use the `OWNER/REPOSITORY/FILENAME@BRANCH` syntax. For example, `octo-org/shared/codeql-config.yml@main`.
+The configuration file can be located within the repository you're analyzing or in an external repository. Using an external repository allows you to specify configuration options for multiple repositories in a single place. When you reference a configuration file located in an external repository, you can use the `OWNER/REPOSITORY/FILENAME@BRANCH` syntax. For example: `octo-org/shared/codeql-config.yml@main`.
 
 If the configuration file is located in an external private repository, use the `external-repository-token` parameter of the `init` action to specify a token that has access to the private repository.
 
@@ -28,10 +28,10 @@ The settings in the configuration file are written in YAML format.
 
 ### Specify CodeQL query packs in custom configuration files
 
-> [!Note]
-> The CodeQL package management functionality, including CodeQL packs, is currently in beta and subject to change.
+> [!NOTE]
+> The CodeQL package-management functionality, including CodeQL packs, is currently in beta and subject to change.
 
-You specify CodeQL query packs in an array. Note that the format is different from the format used by the workflow file.
+You can specify CodeQL query packs in an array. Note that the format is different from the format used by the workflow file.
 
 ```yml
 packs:
@@ -59,7 +59,7 @@ packs:
 
 ### Specify additional queries in a custom configuration
 
-You specify additional queries in a queries array. Each element of the array contains a uses parameter with a value that identifies a single query file, a directory containing query files, or a query suite definition file.
+You can specify additional queries in a queries array. Each element of the array contains a uses parameter with a value that identifies a single query file, a directory containing query files, or a query suite definition file.
 
 ```yml
 queries:
@@ -68,7 +68,7 @@ queries:
   - uses: ./query-suites/my-security-queries.qls
 ```
 
-Optionally, you can give each array element a name, as shown in the example configuration file below.
+Optionally, you can give each array element a name, as shown in the following example configuration file:
 
 ```yml
 name: "My CodeQL config"
@@ -94,7 +94,7 @@ paths-ignore:
 
 ## Disable the default queries
 
-If you only want to run custom queries, you can disable the default security queries by using `disable-default-queries: true`. This flag should also be used if you are trying to construct a custom query suite that excludes a particular rule. This is to avoid having all of the queries run twice.
+If you only want to run custom queries, you can disable the default security queries by using `disable-default-queries: true`. You should also use this flag if you're trying to construct a custom query suite that excludes a particular rule. This is to avoid having all of the queries run twice.
 
 ## Specify directories to scan
 
@@ -108,10 +108,10 @@ paths-ignore:
   - '**/*.test.js'
 ```
 
-> [!Note]
-> * The `paths` and `paths-ignore` keywords, used in the context of the code scanning configuration file, should not be confused with the same keywords when used for `on.<push|pull_request>.paths` in a workflow. When they are used to modify `on.<push|pull_request>` in a workflow, they determine whether the actions will be run when someone modifies code in the specified directories.
-> * The filter pattern characters `?`, `+`, `[`, `]`, and `!` are not supported and will be matched literally.
-> * `**` characters can only be at the start or end of a line, or surrounded by slashes, and you can't mix `**` and other characters. For example, `foo/**`, `**/foo`, and `foo/**/bar` are all allowed syntax, but `**foo` isn't. However you can use single stars along with other characters, as shown in the example. You'll need to quote anything that contains a `*` character.
+> [!NOTE]
+> * The `paths` and `paths-ignore` keywords, used in the context of the code scanning configuration file, should not be confused with the same keywords when used for `on.<push|pull_request>.paths` in a workflow. When they're used to modify `on.<push|pull_request>` in a workflow, they determine whether the actions will be run when someone modifies code in the specified directories.
+> * The filter pattern characters `?`, `+`, `[`, `]`, and `!` aren't supported and will be matched literally.
+> * `**` characters can only be at the start or end of a line, or surrounded by slashes, and you can't mix `**` and other characters. For example: `foo/**`, `**/foo`, and `foo/**/bar` are all allowed syntax, but `**foo` isn't. However ,you can use single stars along with other characters, as shown in the example. You'll need to quote anything that contains a `*` character.
 
 For compiled languages, if you want to limit code scanning to specific directories in your project, you must specify appropriate build steps in the workflow. The commands you need to use to exclude a directory from the build will depend on your build system.
 

@@ -50,7 +50,7 @@ public class HomePageTest
 
 ### Add the IWebDriver member variable
 
-**Andy:** Next we need an `IWebDriver` member variable. `IWebDriver` is the programming interface that you use to launch a web browser and interact with webpage content.
+**Andy:** Next, we need an `IWebDriver` member variable. `IWebDriver` is the programming interface that you use to launch a web browser and interact with webpage content.
 
 **Amita:** I've heard of interfaces in programming. Can you tell me more?
 
@@ -58,13 +58,13 @@ public class HomePageTest
 
 This diagram shows the `IWebDriver` interface and a few of the classes that implement this interface:
 
-:::image type="content" source="../media/5-selenium-webdriver.png" alt-text="The IWebDriver interface, its methods, and concrete classes.":::
+:::image type="content" source="../media/5-selenium-webdriver.png" alt-text="Screenshot of The IWebDriver interface, its methods, and concrete classes.":::
 
 The diagram shows three of the methods that `IWebDriver` provides: `Navigate`, `FindElement`, and `Close`.
 
 The three classes shown here, `ChromeDriver`, `FirefoxDriver`, and `EdgeDriver`, each implement `IWebDriver` and its methods. There are other classes, such as `SafariDriver`, that also implement `IWebDriver`. Each driver class can control the web browser that it represents.
 
-Andy adds a member variable named `driver` to the `HomePageTest` class, like this:
+Andy adds a member variable named `driver` to the `HomePageTest` class, like this code:
 
 ```cs
 public class HomePageTest
@@ -122,7 +122,7 @@ public void Setup()
 }
 ```
 
-In the `Setup` method, we can use a `switch` statement to assign the `driver` member variable to the appropriate concrete implementation, based on the browser name. Let's add that code now.
+In the `Setup` method, we can use a `switch` statement to assign the `driver` member variable to the appropriate concrete implementation based on the browser name. Let's add that code now.
 
 ```cs
 // Create the driver for the current browser.
@@ -167,11 +167,11 @@ Let's write two helper methods, one for each action. We'll start with the method
 
 #### Write the FindElement helper method
 
-When you locate an element on the page, it's typically in response to some other event, such as the page loading or the user entering information. Selenium provides the `WebDriverWait` class, which enables you to wait for a condition to be true. If the condition isn't true within the given time period, `WebDriverWait` throws an exception, or error. We can use the `WebDriverWait` class to wait for a given element to be displayed and to be ready to receive user input.
+When you locate an element on the page, it's typically in response to some other event, such as the page loading or the user entering information. Selenium provides the `WebDriverWait` class, which enables you to wait for a condition to be true. If the condition isn't true within the given time period, `WebDriverWait` throws an exception or error. We can use the `WebDriverWait` class to wait for a given element to be displayed and to be ready to receive user input.
 
 To locate an element on the page, you use the `By` class. The `By` class provides methods that enable you to find an element by its name, by its CSS class name, by its HTML tag, or in our case, by its `id` attribute.
 
-Andy and Amita code up the `FindElement` helper method. It looks like this:
+Andy and Amita code up the `FindElement` helper method. It looks like this code:
 
 ```cs
 private IWebElement FindElement(By locator, IWebElement parent = null, int timeoutSeconds = 10)
@@ -203,7 +203,7 @@ private IWebElement FindElement(By locator, IWebElement parent = null, int timeo
 
 `ChromeDriver`, `FirefoxDriver`, and `EdgeDriver` each implement `IJavaScriptExecutor`. We need to cast the driver to this interface and then call `ExecuteScript` to run the JavaScript `click()` method on the underlying HTML object.
 
-Andy and Amita code up the `ClickElement` helper method. It looks like this:
+Andy and Amita code up the `ClickElement` helper method. It looks like this code:
 
 ```cs
 private void ClickElement(IWebElement element)
@@ -221,7 +221,7 @@ private void ClickElement(IWebElement element)
 
 ### Define the test method
 
-**Andy:** Now we're ready to define the test method. Based on the manual tests that we ran earlier, let's call this method `ClickLinkById_ShouldDisplayModalById`. It's a good practice to give test methods descriptive names that define precisely what the test accomplishes. Here we want to click a link, defined by its `id` attribute. And we want to verify that the proper modal window appears, also by using its `id` attribute.
+**Andy:** Now we're ready to define the test method. Based on the manual tests that we ran earlier, let's call this method `ClickLinkById_ShouldDisplayModalById`. It's a good practice to give test methods descriptive names that define precisely what the test accomplishes. Here we want to click a link defined by its `id` attribute. And we want to verify that the proper modal window appears, also by using its `id` attribute.
 
 Andy adds starter code for the test method:
 
@@ -303,7 +303,7 @@ public void ClickLinkById_ShouldDisplayModalById(string linkId, string modalId)
 ...
 ```
 
-**Andy:** For each `TestCase` attribute, the first parameter is the `id` attribute for the link to click on. The second parameter is the `id` attribute for the modal window that we expect to appear. You can see how these parameters correspond to the two string arguments in our test method.
+**Andy:** For each `TestCase` attribute, the first parameter is the `id` attribute for the link to click on. The second parameter is the `id` attribute for the modal window that we expect to appear. You can see how these parameters correspond to the two-string arguments in our test method.
 
 **Amita:** I do see that. With some practice, I think I can add my own tests. When can we see these tests running in our pipeline?
 

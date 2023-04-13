@@ -21,7 +21,7 @@ The starter application already contains the core data model you'll use. The `pr
 Create the form the user will use to set up the reservation:
 
 1. In Visual Studio Code, open the *index.html* file.
-1. Below the `TODO: Add booking form` comment, add the following HTML.
+1. On the line after the `TODO: Add booking form` comment, add the following HTML.
 
     ```html
     <!-- TODO: Add booking form -->
@@ -57,7 +57,7 @@ Let's explore the HTML code you added to the page.
 <form v-show="!booking.completed">
 ```
 
-The `form` element is a normal HTML form element. The key attribute you added is `v-show`, which allows you to toggle the display of an item in Vue.js. In this design, you want to display the item if the booking is incomplete. We can calculate this by using `!booking.completed`, with the `!` reversing the `completed` option for us.
+The `form` element is a normal HTML form element. The key attribute you added is `v-show`, which allows you to toggle the display of an item in Vue.js. In this design, you want to display the item if the booking is incomplete. By setting `v-show` to `!booking.completed`, you indicate that the form will display while the booking is `!` (*not*) `completed`.
 
 ### The select element for cabins
 
@@ -83,7 +83,7 @@ You bind the `booking.notes` option to a `textarea`. You set the size by setting
 
 ### The todo comment
 
-Notice that you've added a `TODO` reminder to add a button. After you learn to create event handlers later in this module, you'll place the button here.
+Notice the `TODO` reminder to add a button. After you learn to create event handlers later in this module, you'll place the button here.
 
 > [!TIP]
 > `TODO` comments are a great way to make notes about tasks you need to complete.

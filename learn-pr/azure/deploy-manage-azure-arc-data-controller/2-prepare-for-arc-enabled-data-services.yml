@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.deploy-manage-azure-arc-data-controller.prepare-for-arc-enabled-data-services
+title: Prepare for deploying Azure Arc-enabled data services
+metadata:
+  title: Prepare to deploy Azure Arc-enabled data services
+  description: Learn how to prepare your Kubernetes environment for deployment of Azure Arc-enabled data services.
+  ms.date: 12/19/2022
+  author: tchristiani
+  ms.author: terrychr
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/prepare-for-arc-enabled-data-services.md)]

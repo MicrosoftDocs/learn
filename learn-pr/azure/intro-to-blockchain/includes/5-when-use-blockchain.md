@@ -28,7 +28,7 @@ If you want to host your solution on Azure, there are several options you can co
 
 ### Templates
 
-Solution templates provide Infrastructure as a Service (IaaS) packaged virtual machines (VMs) for many major protocols and blockchain network configurations. For example, there are solution templates provided by Microsoft to deploy blockchain consortium networks for Ethereum and Hyperledger Fabric. There are also several third-party solution templates for other popular blockchain protocols including Corda and Quorum, BlockApps, and GoChain.
+Solution templates provide Infrastructure as a Service (IaaS) packaged virtual machines (VMs) for many major protocols and blockchain network configurations. For example, there are several third-party solution templates for popular blockchain protocols including Hyperledger Fabric, Corda, Quorum, BlockApps, and GoChain.
 
 Solution templates for blockchain can be found in the [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps/category/blockchain).
 

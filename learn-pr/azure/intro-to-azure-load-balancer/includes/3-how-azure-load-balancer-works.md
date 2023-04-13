@@ -12,10 +12,10 @@ Load Balancer has several elements that work together to ensure an application's
 
 ## Front-end IP
 
-The front-end IP address is the address used by clients connecting to your web application. A front-end IP address can be either a public or a private IP address. Azure load balancers can have multiple front-end IPs. The selection of a public or a private IP address determines which type of load balancer will be created:
+The front-end IP address is the address clients use to connect to your web application. A front-end IP address can be either a public or a private IP address. Azure load balancers can have multiple front-end IPs. The selection of a public or a private IP address determines which type of load balancer will be created:
 
-- **Public IP address: A public load balancer**. A public load balancer maps the public IP and port of incoming traffic to the private IP and port of the VM. You can distribute specific types of traffic across multiple VMs or services by applying load-balancing rules. For example, you can spread the load of web request traffic across multiple web servers. The load balancer maps traffic from the private IP and port of the VM to the public IP and port of the load balancer when transmitting response traffic back to the requesting client.
-- **Private IP address: An internal load balancer**. An internal load balancer distributes traffic to resources that are inside a virtual network. Azure restricts access to the front-end IP addresses of a virtual network that are load balanced. Front-end IP addresses and virtual networks are never directly exposed to an internet endpoint. Internal line-of-business applications run in Azure and are accessed from within Azure or from on-premises resources through a VPN or ExpressRoute connection.
+- **Public IP address: A public load balancer**: A public load balancer maps the public IP and port of incoming traffic to the private IP and port of the VM. You can distribute specific types of traffic across multiple VMs or services by applying load-balancing rules. For example, you can spread the load of web request traffic across multiple web servers. The load balancer maps traffic from the private IP and port of the VM to the public IP and port of the load balancer when transmitting response traffic back to the requesting client.
+- **Private IP address: An internal load balancer**: An internal load balancer distributes traffic to resources that are inside a virtual network. Azure restricts access to the front-end IP addresses of a virtual network that are load balanced. Front-end IP addresses and virtual networks are never directly exposed to an internet endpoint. Internal line-of-business applications run in Azure and are accessed from within Azure or from on-premises resources through a VPN or ExpressRoute connection.
 
     :::image type="content" source="../images/load-balancer-types.png" alt-text="Diagram that depicts how public and internal load balancers work in Azure Load Balancer." border="false":::
 
@@ -40,22 +40,22 @@ Load Balancer can't apply different rules based on internal traffic content. Thi
 
 ## Back-end pool
 
-The back-end pool is a group of VMs or instances in a virtual machine scale set that responds to the incoming request. To scale cost-effectively to meet high volumes of incoming traffic, computing guidelines generally recommend adding more instances to the back-end pool.  
+The back-end pool is a group of VMs or instances in a Virtual Machine Scale Set that responds to the incoming request. To scale cost-effectively to meet high volumes of incoming traffic, computing guidelines generally recommend adding more instances to the back-end pool.  
 
 Load Balancer implements automatic reconfiguration to redistribute load across the altered number of instances when you scale instances up or down. For example, if you added two more VMs instances to the back-end pool, Load Balancer would reconfigure itself to start balancing traffic to those instances based on the already configured load balancing rules.
 
 ## Health probes
 
-A health probe is used to determine the health status of the instances in the back-end pool. This health probe will determine if an instance is healthy and can receive traffic. You can define the unhealthy threshold for your health probes. When a probe fails to respond, the load balancer stops sending new connections to the unhealthy instances. A probe failure doesn't affect existing connections. The connection continues until the application:
+A health probe is used to determine the health status of the instances in the back-end pool. This health probe will determine if an instance is healthy and can receive traffic. You can define the unhealthy threshold for your health probes. When a probe fails to respond, the load balancer stops sending new connections to the unhealthy instances. A probe failure doesn't affect existing connections. The connection continues until:
 
-- Ends the flow.
+- The application ends the flow.
 - Idle timeout occurs.
 - The VM shuts down.
 
 Load Balancer allows you to configure different health probe types for endpoints: TCP, HTTP, and HTTPS.
 
-- **TCP custom probe**. This probe relies on establishing a successful TCP session to a defined probe port. If the specified listener on the VM exists, the probe succeeds. If the connection is refused, the probe fails. You can specify the Port, Interval, and Unhealthy threshold.
-- **HTTP or HTTPS custom probe**. The load balancer regularly probes your endpoint (every 15 seconds, by default). The instance is healthy if it responds with an HTTP 200 within the timeout period (default of 31 seconds). Any status other than HTTP 200 causes the probe to fail. You can specify the port (Port), the URI for requesting the health status from the back end (URI), amount of time between probe attempts (Interval), and the number of failures that must occur for the instance to be considered unhealthy (Unhealthy threshold).
+- **TCP custom probe**: This probe relies on establishing a successful TCP session to a defined probe port. If the specified listener on the VM exists, the probe succeeds. If the connection is refused, the probe fails. You can specify the Port, Interval, and Unhealthy threshold.
+- **HTTP or HTTPS custom probe**: The load balancer regularly probes your endpoint (every 15 seconds, by default). The instance is healthy if it responds with an HTTP 200 within the timeout period (default of 31 seconds). Any status other than HTTP 200 causes the probe to fail. You can specify the port (Port), the URI for requesting the health status from the back end (URI), amount of time between probe attempts (Interval), and the number of failures that must occur for the instance to be considered unhealthy (Unhealthy threshold).
 
 ## Session persistence
 
@@ -87,7 +87,7 @@ HA ports load-balancing rules help you with critical scenarios, such as high ava
 
 ## Inbound NAT rules
 
-Load balancing rules can be used in combination with Network Address Translation (NAT) rules. For example, you could use NAT from the load balancer's public address to TCP 3389 on a specific VM. This allows remote desktop access from outside of Azure.
+You can use load balancing rules in combination with Network Address Translation (NAT) rules. For example, you could use NAT from the load balancer's public address to TCP 3389 on a specific VM. This allows remote desktop access from outside of Azure.
 
 :::image type="content" source="../images/inbound-nat-rules.png" alt-text="Diagram that shows how inbound NAT rules work in Azure Load Balancer." border="false":::
 

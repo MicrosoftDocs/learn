@@ -4,13 +4,11 @@ title: Describe compliance concepts
 metadata:
   title: Describe compliance concepts
   description: "Describe compliance concepts"
-  ms.date: 04/12/2022
+  ms.date: 02/09/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 2
 content: |
   [!include[](includes/6-describe-compliance-concepts.md)]

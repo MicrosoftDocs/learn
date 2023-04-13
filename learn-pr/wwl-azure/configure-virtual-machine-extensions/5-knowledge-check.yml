@@ -4,49 +4,49 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/15/2022
+  ms.date: 12/19/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 4
 content: |
   [!include[](includes/5-knowledge-check.md)]
 quiz:
   title: ""
   questions:
-  - content: "Which of the following is a small application that provides post-deployment configuration and automation tasks on Azure virtual machines?"
+  - content: "Which of the following options is a small application that provides post-deployment configuration and automation tasks for Azure Virtual Machines?"
     choices:
     - content: "Automation State Configuration"
       isCorrect: false
-      explanation: "Incorrect. Automated state configuration ensures all virtual machines in a collection are in the same consistent state."
-    - content: "Desired state configuration"
+      explanation: "Incorrect. Automated State Configuration ensures all virtual machines in a collection are in the same consistent state."
+    - content: "Desired State Configuration"
       isCorrect: false
-      explanation: "Incorrect. DSC helps with deploying and managing configuration data for software services."
-    - content: "Virtual machine extensions."
+      explanation: "Incorrect. Desired State Configuration helps with deploying and managing configuration data for software services."
+    - content: "Virtual machine extensions"
       isCorrect: true
-      explanation: "Correct. Virtual machine extensions automate the tasks of creating, maintaining, and removing virtual machines"
-  - content: "Custom script extensions time out after which of the following?"
+      explanation: "Correct. Virtual machine extensions are small applications that automate the tasks of creating, maintaining, and removing virtual machines."
+  - content: "How soon do Custom Script Extensions time out?"
     choices:
     - content: "30 minutes"
       isCorrect: false
-      explanation: "Incorrect. Custom script extensions will time out, but not after only 30 minutes."
+      explanation: "Incorrect. Custom Script Extensions do time out, but not after only 30 minutes have passed."
     - content: "90 minutes"
       isCorrect: true
-      explanation: "Correct. Custom script extensions will time out and that should be considered when deciding on the scope of the script."
+      explanation: "Correct. Custom Script Extensions time out after 90 minutes. Always consider the time-out period when planning the scope of your script."
     - content: "120 minutes"
       isCorrect: false
-      explanation: "Incorrect. Custom script extensions will time out, but sooner than 120 minutes."
-  - content: "The infrastructure team needs to install IIS on the localhost. They do not want to use a Custom Script Extension. Which of the following could be used instead?"
+      explanation: "Incorrect. Custom Script Extensions time out before 120 minutes have passed."
+  - content: "What option can the infrastructure team use for their IIS configuration instead of Custom Script Extensions?"
     choices:
-    - content: "Desired state configuration"
+    - content: "Desired State Configuration"
       isCorrect: true
-      explanation: "Correct. DSC is a good choice for installing virtual machine features."
+      explanation: "Correct. Desired State Configuration is a good choice for installing virtual machine features."
     - content: "Virtual machine extension"
       isCorrect: false
-      explanation: "Incorrect. Virtual machine extensions automate the tasks of creating, maintaining, and removing virtual machines"
+      explanation: "Incorrect. Virtual machine extensions automate the tasks of creating, maintaining, and removing virtual machines."
     - content: "Windows update"
       isCorrect: false
       explanation: "Incorrect. Windows update isn't appropriate in this scenario."

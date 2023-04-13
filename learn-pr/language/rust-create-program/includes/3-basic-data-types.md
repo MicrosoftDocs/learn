@@ -30,7 +30,6 @@ error: aborting due to previous error
 
 You can interact with the preceding code in this [Rust Playground][RustPlay-compile].
 
-
 ## Built-in data types
 
 Rust comes with some built-in primitive data types to express numbers, text, and truth. Several of these types are referred to as *scalar* because they represent a single value:
@@ -97,6 +96,8 @@ println!("Is 1 > 4? {}", is_bigger);
 
 Rust supports text values with two basic string types and one character type. A character is a single item, while a string is a series of characters. All text types are valid UTF-8 representations.
 
+### Characters
+
 The `char` type is the most primitive of the text types. The value is specified by enclosing the item in single quotation marks:
 
 ```rust
@@ -106,7 +107,7 @@ let smiley_face = '😃';
 ```
 
 > [!NOTE]
-> Some languages treat their `char` types as 8-bit unsigned integers, which is the equivalent of the Rust `u8` type. The `char` type in Rust contains unicode code points, but they don't use utf-8 encoding. A `char` in Rust is a 21-bit integer that's padded to be 32 bits wide. The `char` contains the plain code point value directly.
+> Some languages treat their `char` types as 8-bit unsigned integers, which is the equivalent of the Rust `u8` type. The `char` type in Rust contains unicode code points, but they don't use UTF-8 encoding. A `char` in Rust is a 21-bit integer that's padded to be 32 bits wide. The `char` contains the plain code point value directly. You can learn more about the `char` type in Rust in the [Rust documentation](https://doc.rust-lang.org/std/primitive.char.html).
 
 ### Strings
 

@@ -2,10 +2,10 @@
 uid: learn.azure.intro-to-anomaly-detector
 metadata:
   title: Introduction to Anomaly Detector
-  description: "Discover the Anomaly Detector service that is part of the Azure Decision services offerings."
-  ms.date: 09/05/2022
+  description: "Discover the Anomaly Detector service that is part of the Azure Decision services offerings. Anomaly detection is an artificial intelligence technique used to determine whether values in a series are within expected parameters."
+  ms.date: 02/01/2023
   author: wwlpublish
-  ms.author: gerryo
+  ms.author: sheryang
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Anomaly Detector

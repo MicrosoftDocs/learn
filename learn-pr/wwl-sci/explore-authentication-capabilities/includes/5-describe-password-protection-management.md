@@ -1,3 +1,4 @@
+
 Password Protection is a feature of Azure AD that reduces the risk of users setting weak passwords.  Azure AD Password Protection detects and blocks known weak passwords and their variants, and can also block other weak terms that are specific to your organization.
 
 With Azure AD Password Protection, default global banned password lists are automatically applied to all users in an Azure AD tenant. To support your own business and security needs, you can define entries in a custom banned password list. When users change or reset their passwords, these lists are checked to enforce the use of strong passwords.

@@ -19,4 +19,4 @@ In this module, you'll:
 
 - A [GitHub](https://github.com?azure-portal=true) account
 - The ability to navigate and edit files in GitHub
-  - (For more information about GitHub, see [Introduction to GitHub](https://lab.github.com/githubtraining/introduction-to-github?azure-portal=true).)
+  - (For more information about GitHub, see [Introduction to GitHub](https://github.com/skills/introduction-to-github?azure-portal=true).)

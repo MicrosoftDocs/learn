@@ -4,7 +4,7 @@ You can use the Azure portal to create and deploy Azure Batch jobs and create ot
 
 ## Create a resource group
 
-Create a resource group to hold a Batch account that you'll create later. You'll use the resource group to administer related services and applications together. A resource group will also make resource cleanup easier when you finish this module. 
+Create a resource group to hold a Batch account that you'll create later. You'll use the resource group to administer related services and applications together. A resource group will also make resource clean up easier when you finish this module.
 
 To create a resource group in the Azure portal:
 
@@ -30,11 +30,11 @@ To create a resource group in the Azure portal:
 
 1. On the Azure portal menu or from the home page, select **Create a resource**.
 
-1. Enter **storage account** in the **Search the Marketplace** search box, and then select **Storage account**.
+1. Enter **storage account** in the **Search services and marketplace** search box, and then select **Storage account**.
 
 1. Select **Create** to open the **Create storage account** form.
 
-   :::image type="content" source="../media/3-create-storage-account.png" alt-text="Screenshot of the form for creating a storage account on the Basics tab.":::
+   :::image type="content" source="../media/3-create-storage-account-2022.png" alt-text="Screenshot of the form for creating a storage account on the Basics tab.":::
 
 1. For **Subscription**, select the appropriate subscription that you want to use.
 
@@ -47,7 +47,7 @@ To create a resource group in the Azure portal:
 
 1. Select a location close to you from the available options.
 
-1. Leave all the other options as their defaults. Then select **Review + create**, followed by **Create**.
+1. Leave all the other options as their defaults. Select **Review**, and then **Create**.
 
 1. Wait for the deployment to finish. You now have a storage account that you'll use in your processing to store input and output files. You'll associate this storage account with your Batch account shortly.
 
@@ -55,17 +55,17 @@ To create a resource group in the Azure portal:
 
 Here, you'll add input data for a Batch task that you'll use in the next exercise.
 
-1. Go to the storage account that you just created by selecting **Go to resource** after the storage account deployment is complete.
+1. Select **Go to resource** after the storage account deployment is complete.
 
-1. On the left, select **Containers** under **Blob Service**.
+1. On the left, select **Containers** under **Data storage**.
 
-1. Create a container by selecting the **Container** button. Name the container **input-data**, and set the public access level as **Private**.
+1. Select the **Container** button to create a container. Name the container **input-data**, and set the public access level as **Private**.
 
-    :::image type="content" source="../media/2-create-container.png" alt-text="Screenshot of the Containers page in the Azure portal, with the button for creating a container highlighted.":::
+    :::image type="content" source="../media/3-create-container.png" alt-text="Screenshot of the Containers page in the Azure portal, with the button for creating a container highlighted.":::
 
 1. Download [this video](https://github.com/MicrosoftDocs/mslearn-create-batch-account/raw/main/LowPriVMs-1.mp4). You'll use it as input data for a Batch task shortly.
 
-1. Select the **input-data** container that you just created. Upload the video that you just downloaded by selecting the **Upload** button and browsing to where you downloaded the video (most likely your local *Downloads* folder).
+1. Select the **input-data** container that you created. Upload the video that you downloaded by selecting the **Upload** button and browsing to where you downloaded the video. It's most likely your local *Downloads* folder.
 
 ## Create a Batch account
 
@@ -75,40 +75,40 @@ Next, you'll create the Azure Batch account and pool in a virtual network for yo
 
 1. Select **Create a resource**.
 
-1. Enter **batch service** in the **Search the Marketplace** search box, and then select **Batch Service** from the list.
+1. Enter **batch service** in the **Search services and marketplace** search box, and then select **Batch Service** from the list.
 
 1. Select **Create** to open the **New Batch account** form.
 
 1. Enter the following settings on the **Basics** tab, in the **Project details** section:
 
-    * **Subscription**: Select the appropriate subscription that you want to use.
+    - **Subscription**: Select the appropriate subscription that you want to use.
 
-    * **Resource group**: Select the name of the resource group that you created earlier (**BatchResourceGroup**).
+    - **Resource group**: Select the name of the resource group that you created earlier (**BatchResourceGroup**).
 
    :::image type="content" source="../media/3-diagram-1.png" alt-text="A screenshot of the page for creating a new Batch account in the Azure portal.":::
 
 1. Enter the following settings on the **Basics** tab, in the **Instance details** section:
 
-    * **Account name**: A name that's unique within the Azure region where the account is created. The account name can contain only lowercase characters or numbers, and it must be 3 to 24 characters in length.
+    - **Account name**: A name that's unique within the Azure region where the account is created. The account name can contain only lowercase characters or numbers, and it must be 3 to 24 characters in length.
 
-    * **Location**: The Azure region in which to create the Batch account. Only the regions supported by your subscription and resource group are displayed as options.
+    - **Location**: The Azure region in which to create the Batch account. Only the regions supported by your subscription and resource group are displayed as options.
 
-1. On the **Basics** tab, in the **Storage account** section, click **Select a storage account**. Then select the storage account that you created earlier.
+1. On the **Basics** tab, in the **Storage account** section, select **Select a storage account**. Then select the storage account that you created earlier.
 
-   :::image type="content" source="../media/3-diagram-2.png" alt-text="A screenshot of the dialog for creating a storage account in the Azure portal.":::
+   :::image type="content" source="../media/3-storage-account-section.png" alt-text="A screenshot of the dialog for creating a storage account in the Azure portal.":::
 
 1. Select **Next: Advanced**, and then enter the following settings on the **Advanced** tab:
 
-    * **Identity type**: Leave as the default.
+    - **Identity type**: Leave as the default.
 
-    * **Public network access**: Leave as the default, which should be **Enabled**.
-
-    * **Pool allocation mode**: Leave as the default, which should be **Batch service**.
+    - **Pool allocation mode**: Leave as the default, which should be **Batch service**.
 
     > [!NOTE]
     > If you had specified **User subscription**, that would create the pool in the subscription where you were creating your Batch service.
 
-    :::image type="content" source="../media/3-diagram-3.png" alt-text="A screenshot of the pool allocation method selection on the Advanced tab when creating a Batch account in the Azure portal.":::
+    :::image type="content" source="../media/3-batch-account-advanced-tab.png" alt-text="A screenshot of the pool allocation mode selection on the Advanced tab when creating a Batch account in the Azure portal.":::
+
+1. Select **Next: Networking**. Leave **Public network access** as the default, which should be **All networks**.
 
 1. Leave all the other options as their defaults. Then select **Review + create**, followed by **Create**.
 
@@ -128,15 +128,15 @@ After you've created a virtual network and assigned a subnet to it, you can crea
 
 1. Enter the following settings on the **Basics** tab, in the **Project details** section:
 
-    * **Subscription**: Select the same subscription as your Batch account from previous steps.
+    - **Subscription**: Select the same subscription as your Batch account from previous steps.
 
-    * **Resource group**: Select the same resource group as your Batch account from previous steps (**BatchResourceGroup**).
+    - **Resource group**: Select the same resource group as your Batch account from previous steps (**BatchResourceGroup**).
 
 1. Enter the following settings on the **Basics** tab, in the **Instance details** section:
 
-    * **Name**: Enter a name for your virtual network.
+    - **Name**: Enter a name for your virtual network.
 
-    * **Location**: Select the same region as your Batch account from previous steps.
+    - **Location**: Select the same region as your Batch account from previous steps.
 
     :::image type="content" source="../media/4-diagram-1.png" alt-text="A screenshot of the page for creating a virtual network in the Azure portal.":::
 
@@ -161,17 +161,17 @@ After you've created a virtual network and assigned a subnet to it, you can crea
 
 1. For this exercise, specify the following options in the **Operating System** section:
 
-    * Select **Marketplace** from the **Image Type** dropdown menu.
+    - Select **Marketplace** from the **Image Type** dropdown menu.
 
-    * Select **microsoftwindowsserver** for **Publisher**.
+    - Select **microsoftwindowsserver** for **Publisher**.
 
-    * Select **windowsserver** for **Offer**.
+    - Select **windowsserver** for **Offer**.
 
-    * Select **2019-datacenter** for **Sku**.
+    - Select **2019-datacenter** for **Sku**.
 
 1. For this exercise, select **Standard A1** from the **VM size** dropdown menu.
 
-1. Set the **Target dedicated nodes** to **1**, and set **Target low-priority nodes** to **0**.
+1. Set the **Target dedicated nodes** to **1**, and set **Target Spot/low-priority nodes** to **0**.
 
    To learn more about low-priority VMs, see [Use low-priority VMs with Batch](/azure/batch/batch-low-pri-vms).
 

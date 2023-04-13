@@ -1,43 +1,39 @@
-## Scenario
+Azure Architects are interested in solutions that make it easier to deploy and manage their web, mobile, and API applications.
 
-Imagine you're building a website for a new business, or you're running an existing web app on an aging on-premises server. Setting up a new server can be challenging. You need appropriate hardware, likely a server-level operating system, and a web hosting stack.
+In this module, your company is doing consumer research, and your team manages the on-premises servers. The servers you administer run the entire company infrastructure from web servers to databases. However, the hardware is aging and starting to struggle to keep up with some of the new data analysis applications being deployed.
 
-And once it's running, you need to maintain the server. And what happens if your website traffic increases? You may need to invest in extra hardware.
-
-Hosting your web application using Azure App Service makes deploying and managing a web app much easier when compared to managing a physical server.
-
-## Skills measured
-
-Configuring the Azure App Service is part of [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104).
-
-Deploy and manage Azure compute resources (20–25%)
-
-Create and configure Azure App Service
-
- -  Create an App Service.
- -  Secure an App Service.
- -  Configure custom domain names.
- -  Configure backup for an App Service.
- -  Configure networking settings.
- -  Configure deployment settings.
-
-Monitor and back up Azure resources (10–15%)
-
-Monitor resources by using Azure Monitor
-
- -  Configure Application Insights.
+Rather than upgrade the hardware, the company has decided to deploy Azure App Service where possible. As the administrator, you're responsible for deploying App Service. Your tasks include app configuration settings, deployment slots, security settings, and custom domain names. You're also responsible for application backup, recovery, and monitoring.
 
 ## Learning objectives
 
-In this module, you'll learn how to:
+In this module, you learn how to:
 
- -  Identify features and usage cases for the Azure App Service.
- -  Create an App Service.
- -  Configure deployment settings, specifically deployment slots.
- -  Secure the App Service.
- -  Configure custom domain names
- -  Back up the App Service.
- -  Configure Application Insights.
+- Identify features and usage cases for Azure App Service.
+- Create an app with App Service.
+- Configure deployment settings, specifically deployment slots.
+- Secure your App Service app.
+- Configure custom domain names.
+- Back up and restore your App Service app.
+- Configure Azure Application Insights.
+
+## Skills measured
+
+The content in the module helps you prepare for [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104). The module concepts are covered in:
+
+Deploy and manage Azure compute resources (20–25%)
+
+- Create and configure apps with Azure App Service
+   - Create an app with App Service
+   - Secure your App Service app
+   - Configure custom domain names
+   - Configure backup for your App Service app
+   - Configure networking settings
+   - Configure deployment settings
+
+Monitor and back up Azure resources (10–15%)
+
+- Monitor resources by using Azure Monitor
+   - Configure Azure Application Insights
 
 ## Prerequisites
 

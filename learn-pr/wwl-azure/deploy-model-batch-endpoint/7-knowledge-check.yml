@@ -1,0 +1,36 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-model-batch-endpoint.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 11/24/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "You are creating a batch endpoint that you want to use to predict new values for a large volume of data files. You want the pipeline to run the scoring script on multiple nodes and collate the results. What output action should you choose for the deployment?"
+    choices:
+    - content: "`summary_only`"
+      isCorrect: false
+      explanation: "Incorrect. You should use `append_row` to append each prediction to one output file."
+    - content: "`append_row`"
+      isCorrect: true
+      explanation: "Correct. You should use `append_row` to append each prediction to one output file."
+    - content: "`concurrency`"
+      isCorrect: false
+      explanation: "Incorrect. You should use `append_row` to append each prediction to one output file."
+  - content: "You have multiple models deployed to a batch endpoint. You invoke the endpoint without indicating which model you want to use. Which deployed model will do the actual batch scoring?"
+    choices:
+    - content: "The latest version of the deployed model."
+      isCorrect: false
+      explanation: "Incorrect. The default deployment will be used to do the actual batch scoring when the endpoint is invoked."
+    - content: "The latest deployed model."
+      isCorrect: false
+      explanation: "Incorrect. The default deployment will be used to do the actual batch scoring when the endpoint is invoked."
+    - content: "The default deployed model."
+      isCorrect: true
+      explanation: "Correct. The default deployment will be used to do the actual batch scoring when the endpoint is invoked."

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.saas-foundations.introduction
+title: Foundations of SaaS
+metadata:
+  title: Foundations of SaaS
+  description: "Learn from Microsoft about SaaS (Software-as-a-Service), what is the difference from traditional software company, what is SLA and SLO, things to consider regarding security and privacy."
+  ms.date: 09/11/2022
+  author: kostinams
+  ms.author: irkostin
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

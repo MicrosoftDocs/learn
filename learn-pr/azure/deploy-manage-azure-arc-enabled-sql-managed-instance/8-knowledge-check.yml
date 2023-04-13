@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.deploy-manage-azure-arc-enabled-sql-managed-instance.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Demonstrate how to deploy and manage Azure Arc-enabled SQL Managed Instance.
+  ms.date: 12/21/2022
+  author: tchristiani
+  ms.author: terrychr
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: 'Which of the following types of data must be uploaded to an Azure subscription after deploying an indirectly connected Azure Arc-enabled SQL Managed Instance?'
+    choices:
+    - content: 'Log data'
+      isCorrect: false
+      explanation: 'Incorrect. Log data uploads are optional, not mandatory.'
+    - content: 'User auditing data'
+      isCorrect: false
+      explanation: 'Incorrect. User auditing data is not a valid data type.'
+    - content: 'Usage data'
+      isCorrect: true
+      explanation: 'Correct. Upload of the usage data is required for billing purposes and is not optional.'
+  - content: 'Which of the following steps are required in order to upload usage data to an Azure subscription when using an indirectly connected Azure Arc-enabled SQL Managed Instance?'
+    choices:
+    - content: 'Create an Azure Active Directory security group'
+      isCorrect: false
+      explanation: 'Incorrect. Although you need to create a Service Principal to upload usage and metric data to an Azure subscription in the indirectly connected mode, there is no specific requirement to create a security group as part of the process.'
+    - content: 'Run az arcdata dc export'
+      isCorrect: true
+      explanation: 'Correct. The az arcdata dc export Azure CLI command exports usage data from the data controller, which subsequently can be uploaded to Azure.'
+    - content: 'Use az arcdata dc update to update the usage type data to the Azure subscription'
+      isCorrect: false
+      explanation: 'Incorrect. You use the az arcdata dc update Azure CLI command to update configurations of a data controller.'
+  - content: 'Which option is correct for enabling Azure Arc-enabled SQL Managed Instance to use readable secondaries while minimizing costs in a production environment?'
+    choices:
+    - content: 'Deploying the General Purpose tier and choosing the option for development use only'
+      isCorrect: false
+      explanation: 'Incorrect. General Purpose tier does not support secondaries. Development use is not suitable for a production environment.'
+    - content: 'Deploying the Business Critical tier and choosing the option for development use only'
+      isCorrect: false
+      explanation: 'Incorrect. Development use is not suitable for a production environment.'
+    - content: 'Deploying the Business Critical tier and selecting the **I already have a SQL Server License** option'
+      isCorrect: true
+      explanation: 'Correct. Leveraging an existing SQL Server License can provide a discount when configuring Azure Arc-enabled SQL Managed Instance to use readable secondaries.'
+      

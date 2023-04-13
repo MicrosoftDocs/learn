@@ -19,7 +19,7 @@ The following screenshot shows the Windows, Linux, and macOS downloads available
 
 ### Full-featured code editor
 
-Visual Studio Code's editor is based on the [Monaco Editor](https://microsoft.github.io/monaco-editor/index.html?azure-portal=true) technology that provides a workbench to create and edit code. The editor has rich features such as code syntax coloring, bracket matching, and IntelliSense as shown in the following screenshot. These features help you write and refactor your code more efficiently.
+Visual Studio Code's editor is based on the [Monaco Editor](https://microsoft.github.io/monaco-editor/?azure-portal=true) technology that provides a workbench to create and edit code. The editor has rich features such as code syntax coloring, bracket matching, and IntelliSense as shown in the following screenshot. These features help you write and refactor your code more efficiently.
 
 :::image type="content" source="../media/2-intellisense.png" alt-text="Screenshot of Visual Studio Code interface showing code syntax coloring, bracket matching, and IntelliSense.":::
 

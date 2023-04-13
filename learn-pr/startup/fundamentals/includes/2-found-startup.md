@@ -1,29 +1,29 @@
-Let's assume that you're here because you're working on an early-stage startup, or a startup idea. You'd like to make sure you have a good grasp of essential startup concepts before you go much further.
+Let's assume that you're here because you're working on an early-stage startup or a startup idea. You'd like to make sure you have a good grasp of essential startup concepts before you go much further.
 
 How will you know if founding a startup is right for you? For many startup founders (and aspiring founders), there are a few critical considerations that can help to answer this important question.
 
 ## Are you passionate about solving a specific problem?
 
-To be a successful entrepreneur, you need to be passionate about solving a problem. Many successful entrepreneurs have reported that they would have pursued their idea regardless of whether there was a business opportunity. They were that passionate about solving that particular problem.
+To be a successful entrepreneur, you need to be passionate about solving a problem. Many successful entrepreneurs have reported that they would've pursued their idea regardless of whether there was a business opportunity; they were that passionate about solving that particular problem.
 
 The [road from startup idea to successful business](https://techcrunch.com/2018/07/31/what-every-startup-founder-should-know-about-exits/?azure-portal=true) is often a long one, with the typical time from launch to exit being anywhere from [four to ten years](https://about.crunchbase.com/blog/startup-exit/?azure-portal=true).
 
-Bear in mind that few startup founders set out with anything like this commitment up-front. It's entirely rational to start a company with a modest time horizon, and become more committed as the opportunity solidifies and the company grows.  
+Bear in mind that few startup founders set out with anything like this commitment up front. It's entirely rational to start a company with a modest time horizon and become more committed as the opportunity solidifies and the company grows.  
 
-Nevertheless, it will be much easier for you to devote meaningful time to solving a problem if you're passionate about it. This is especially the case in the early days, when there's likely to be lots of hard work and before you've reached any significant commercial milestones.
+Nevertheless, it'll be much easier for you to devote meaningful time to solving a problem if you're passionate about it. This is especially the case in the early days, when there's likely to be lots of hard work and before you've reached any significant commercial milestones.
 
 > [!TIP]
-> Ask yourself: Am I passionate about solving this problem and can I imagine devoting years of my life to working on it?
+> Ask yourself: Am I passionate about solving this problem, and can I imagine devoting years of my life to working on it?
 
 ## Do you have deep domain expertise?
 
 The odds of a startup succeeding are always higher if the founders have unique insights into the problem space, or *domain expertise*, in which their startup will operate. These insights are typically acquired over a long period of time (either through work or a personal interest), accompanied by a thirst for understanding problems and exploring potential solutions.
 
-In fact, in the early days of many startups, these unique insights are the only competitive advantage the company has. So it's important to make sure you're able to identify and articulate the insights on which you're going to base your startup.
+In fact, in the early days of many startups, these unique insights are the only competitive advantage the company has, so it's important to make sure you're able to identify and articulate the insights on which you're going to base your startup.
 
 There are four main ways in which startup founders can take advantage of their domain expertise to create value:
 
-- By identifying an important problem that many others don't realize exists. It's well known that many great startup ideas came from spending time "marinating" in the problem space, exploring interesting problems with potential customers and developing unique insights over a long period of time. Finding great problems to work on often means skipping over the problems that everyone else is working on, and identifying others that are hidden, or that seem unsolvable, but that still represent a great opportunity.
+- By identifying an important problem that many others don't realize exists. It's well known that many great startup ideas came from spending time "marinating" in the problem space, exploring interesting problems with potential customers and developing unique insights over a long period of time. Finding great problems to work on often means skipping over the problems on which everyone else is working, and identifying others that are hidden or that seem unsolvable, but that still represent a great opportunity.
 - By coming up with a compelling solution that's unlikely to have occurred to others, and might even seem unlikely to succeed. Historically, many of the best startup ideas seemed wild at the outset, and it was only with hindsight that their value became evident.
 - By tapping into their existing network, or by using their profile as a thought leader, founders can make connections with customers that would be difficult for a newcomer.
 - In the case of *deep-tech* startups (those based on advanced technology or scientific research), by developing novel, cutting-edge technology that can become the basis for the company's competitive advantage.
@@ -32,7 +32,7 @@ There are four main ways in which startup founders can take advantage of their d
 > Ask yourself:
 >  
 > - Does my startup idea take advantage of the time and energy I've already invested in my career or my other interests?
-> - What insights do I have that most of my peers don't, which will open up an opportunity that may have been invisible to others?
+> - What insights do I have (that most of my peers don't) that will open up an opportunity that may have been invisible to others?
 
 ## How much financial freedom do you have?
 
@@ -48,18 +48,18 @@ As a startup founder, you need to work on three tasks to determine your startup'
 
 - Predict the likely revenues you'll generate when the product is in the hands of customers. Consider how long it will take to reach that juncture.
 
-  - This is the trickiest part, and many would argue that forecasting future revenues for a pre-launch start-up is at best a rough guess, and perhaps no more than crystal ball gazing.
+  - This is the trickiest part, and many would argue that forecasting future revenues for a pre-launch startup is at best a rough guess.
   - Almost all startup pitch decks are heavily influenced by optimism bias. They have a revenue chart that goes steeply up and to the right. A good rule of thumb is to double the length of time you think it will take to get to revenue, and halve the amount of revenue you think you'll generate.
 
 - Determine how much capital you have and are willing to invest in the company, prior to funding from revenues or external investment. If you have cofounders, this is a great topic to discuss as a team.
 
-Answering these questions helps you develop a cashflow forecast that enables you to make informed decisions about where to invest time and money early on.
+Answering these questions helps you develop a cashflow forecast that allows you to make informed decisions about where to invest time and money early on.
 
 ## What is your risk tolerance?
 
 A startup is one of the most uncertain business environments in which you can place yourself. To be successful as a startup founder, it's critical that you're not just comfortable with uncertainty, but that you thrive in this dynamic environment.
 
-An important part of this is considering your own risk tolerance in the context of your personal financial commitments.
+An important part of this process is considering your own risk tolerance in the context of your personal financial commitments.
 
 Everyone has their own unique risk profile, but as a generalization, for most people risk tolerance is highest when they're young. Younger individuals tend to have relatively few financial obligations and don't yet have an established career. If founding a startup doesn't work out (or takes longer than planned to get off the ground), it doesn't seem like that big of a deal, at least financially.
 
@@ -67,10 +67,10 @@ Risk tolerance generally decreases over time. As people take on financial commit
 
 Additionally, opportunity cost generally increases over time. It can be more difficult to leave a successful career that you've invested in over many years than to start something when your career is still in its infancy.
 
-As a founder you should think about your own risk tolerance at the beginning of the startup journey. If you have cofounders, this is an excellent time to have a frank and open conversation about each individual's risk profile and financial situation. It's a good idea to find out whether you're collectively aligned on these fronts.
+As a founder, you should think about your own risk tolerance at the beginning of the startup journey. If you have cofounders, this is an excellent time to have a frank and open conversation about each individual's risk profile and financial situation. It's a good idea to find out whether you're collectively aligned on these fronts.
 
 > [!TIP]
-> Ask yourself: How much cash am I willing to put into this company? How much income am I willing to forego as I work on this company instead of doing other paid work? What is the minimum income that I need to generate, and can I do that while working on this startup? What are my financial objectives, and will they be met by building this startup?
+> Ask yourself: How much cash am I willing to put into this company? How much income am I willing to forego as I work on this company instead of doing other paid work? What's the minimum income that I need to generate, and can I do that while working on this startup? What are my financial objectives, and will they be met by building this startup?
 
 ## Are the cofounders aligned?
 
@@ -92,7 +92,7 @@ Even if you're a sole founder, it's still useful to capture these thoughts and d
 
 Download and complete the [Founder Alignment Exercise](https://foundershubcontent.z13.web.core.windows.net/1_EXERCISE1%20-%20Founder%20alignment%20exercise.pdf?azure-portal=true) worksheet. Use it to start discussions with your cofounders (or if you're a sole founder, with your friends or family).
 
-:::image type="content" source="../media/founder-alignment-exercise.png" alt-text="Image of a worksheet that outlines points to consider before pursuing a startup.":::
+:::image type="content" source="../media/founder-alignment-exercise.png" alt-text="Screenshot of a worksheet that outlines points to consider before pursuing a startup.":::
 
 ## When should you go full-time?
 
@@ -100,15 +100,15 @@ At some point, founders need to make the decision to step back from other work i
 
 For most people, this isn't a rational path. If you have finite financial resources and some immovable financial commitments, it's generally wiser to commit to your startup incrementally. Start with a small time commitment, during which you test your idea and establish whether it's worth proceeding any further.
 
-It's helpful to think about the early stages of your startup as an opportunity to explore and experiment. You don't need to lock in a business model or decide on exactly what product to build right away. Instead, approach these things iteratively over a period of time, so that you can have some certainty about what product to build, and who's going to pay for it.
+It's helpful to think about the early stages of your startup as an opportunity to explore and experiment. You don't need to lock in a business model or decide on exactly what product to build right away. Instead, approach these things iteratively over a period of time so that you can have some certainty about what product to build and who's going to pay for it.
 
-For many people, this can be done part-time, around your existing job or other commitments.
+For many people, you can do this part-time, around your existing job or other commitments.
 
-By identifying critical milestones or inflection points that allow you to build increasing conviction, it's possible to identify stages in the development of your company. These stages allow you to commit additional time and money as you gain greater certainty about the prospects of your company.
+By identifying critical milestones or inflection points that allow you to build increasing conviction, you can identify stages in the development of your company. These stages allow you to commit additional time and money as you gain greater certainty about the prospects of your company.
 
-Founders should consciously decide to invest their time and money into their startup in the same way as an investor would decide to invest in your company. Base your investment on a rational and hard-nosed assessment of the prospects of the company, including the extent to which the founders have been able to identify, address, and retire the core risks that could cause the startup to fail.
+Founders should consciously decide to invest their time and money into their startup in the same way as an investor would decide to invest in your company. Base your investment on a rational and hard-nosed assessment of the company's prospects, including the extent to which the founders have been able to identify, address, and retire the core risks that could cause the startup to fail.
 
-For example, make an investment case to yourself that begins: "It's rational for me to invest this amount of my time and/or money at this point, because...." The things that should convince you that it's sensible to invest might include validating core assumptions, receiving positive feedback from potential customers, and generating early revenues.
+For example, make an investment case to yourself that begins: "It's rational for me to invest this amount of my time and/or money at this point, because..." The things that should convince you that it's sensible to invest might include validating core assumptions, receiving positive feedback from potential customers, and generating early revenues.
 
 ## Scenario: A milestone chart for commitments
 
@@ -131,4 +131,4 @@ Download and complete the [milestone worksheet](https://foundershubcontent.z13.w
 
 Remember that this is a living document, and you'll need to adjust the milestones and your commitments as you progress.
 
-:::image type="content" source="../media/founder-commitment-milestone-worksheet.png" alt-text="Image of a worksheet that outlines the time and cash that are available for investing in milestones.":::
+:::image type="content" source="../media/founder-commitment-milestone-worksheet.png" alt-text="Screenshot of a worksheet that outlines the time and cash that are available for investing in milestones.":::

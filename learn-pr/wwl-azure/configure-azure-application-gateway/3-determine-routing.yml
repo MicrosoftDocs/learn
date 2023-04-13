@@ -1,16 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-azure-application-gateway.determine-routing
-title: Determine Application Gateway routing
+title: Determine Azure Application Gateway routing
 metadata:
-  title: Determine Application Gateway routing
-  description: "Determine Application Gateway routing"
-  ms.date: 06/02/2022
+  title: Determine Azure Application Gateway routing
+  description: "Determine Azure Application Gateway routing"
+  ms.date: 02/01/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 4
 content: |
   [!include[](includes/3-determine-routing.md)]

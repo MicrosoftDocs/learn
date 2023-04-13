@@ -38,7 +38,7 @@ To enable database creation, you need to set the database connection string. The
     var connectionString = builder.Configuration.GetConnectionString("Pizzas") ?? "Data Source=Pizzas.db";
     ```
 
-    This code checks the configuration provider for a connection string named *Pizzas*. If it doesn't find one, it will use `Data Source=Pizzas.db` as the connection string. SQLite will map this to a file.
+    This code checks the configuration provider for a connection string named *Pizzas*. If it doesn't find one, it will use `Data Source=Pizzas.db` as the connection string. SQLite will map this string to a file.
 
 1. In the CRUD portion of this tutorial, you used an in-memory database. Now you're going to replace the in-memory database with a persistent database.
 
@@ -54,7 +54,7 @@ To enable database creation, you need to set the database connection string. The
     dotnet ef migrations add InitialCreate
     ```
 
-    EF Core creates a folder named *Migrations* in your project directory that contains two files with the code that represents the database migrations.
+    EF Core creates a *Migrations* folder in your project directory that contains two files with the code that represents the database migrations.
 
 1. Now that you've completed the migration, you can use it to create your database and schema.
 

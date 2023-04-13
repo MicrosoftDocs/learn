@@ -1,4 +1,5 @@
 
+
 Microsoft Defender for Cloud Apps encrypts data at rest to protect
 against 'out-of-band' attacks (such as accessing underlying storage)
 using encryption. This helps ensure that attackers can't easily read or
@@ -71,17 +72,18 @@ Vault, or customer-managed keys on customer-controlled hardware. You can
 manage and store keys on-premises or in another secure location with
 client-side encryption.
 
-| Client-side encryption | Client-side encryption is performed outside of Azure. It includes:                                                                                                                                                                                                                              |
-|------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                        | Data is encrypted by an application running in the customer's datacenter or by a service application.                                                                                                                                                                                           |
-|                        | Data that is already encrypted when Azure receives it.                                                                                                                                                                                                                                          |
-|                        | With client-side encryption, cloud service providers don't have access to the encryption keys and can't decrypt this data. You maintain complete control of the keys.                                                                                                                          |
-| Server-side encryption | The three server-side encryption models offer different key management characteristics, which you can choose according to your requirements:                                                                                                                                                    |
-|                        | Service-managed keys: Provides a combination of control and convenience with low overhead.                                                                                                                                                                                                      |
-|                        | Customer-managed keys: Gives you control over the keys, including Bring Your Own Keys (BYOK) support, or allows you to generate new ones.                                                                                                                                                       |
-|                        | Service-managed keys in customer-controlled hardware: Enables you to manage keys in your proprietary repository, outside of Microsoft control. This characteristic is called Host Your Own Key (HYOK). However, the configuration is complex, and most Azure services don't support this model. |
+**Client-side encryption** is performed outside of Azure. It includes:
 
+* Data is encrypted by an application running in the customer's datacenter or by a service application.
+* Data that is already encrypted when Azure receives it.
 
+With client-side encryption, cloud service providers don't have access to the encryption keys and can't decrypt this data. You maintain complete control of the keys.
+
+The three **server-side encryption** models offer different key management characteristics, which you can choose according to your requirements:
+
+* Service-managed keys: Provides a combination of control and convenience with low overhead. 
+* Customer-managed keys: Gives you control over the keys, including Bring Your Own Keys (BYOK) support, or allows you to generate new ones.
+* Service-managed keys in customer-controlled hardware: Enables you to manage keys in your proprietary repository, outside of Microsoft control. This characteristic is called Host Your Own Key (HYOK). However, the configuration is complex, and most Azure services don't support this model.
 
 ### Encryption of data in transit
 

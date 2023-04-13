@@ -64,19 +64,19 @@ Your team then asks you to identify the countries with the lowest revenues in th
 
 1. Look at each row. Notice that the first column shows the months of the last year, in descending order, followed by columns that show the total sales for the country with the lowest sales numbers that month.
 
-## Use the leftouter `join` kind
+## Use the rightouter `join` kind
 
-Your sales team wants to know the total sales per product category. When you start reviewing the available data, you realize that you'll need the *Products* table to get the list of product categories and the *SalesFact* table to get the sales data. You also realize that you want to count the sales for each category and list all product categories, even for products that might not have sales.
+Your sales team wants to know the total sales by product category. When you start reviewing the available data, you realize that you'll need the *Products* table to get the list of product categories and the *SalesFact* table to get the sales data. You also realize that you want to count the sales for each category and list all product categories.
 
-Having analyzed the request, you choose to use the *leftouter* `join`, because it returns all records from the left table, enriched with matching data from the right table. You write your query by using the *Products* table as the left dimension table, matching data from the *SalesFact* facts table, and grouping the result by product category, as follows:
+Having analyzed the request, you choose to use the *rightouter* `join`, because it returns all sales records from the right table, enriched with matching data product category from the left table. You write your query by using the *Products* table as the left dimension table, matching data from the *SalesFact* facts table, and grouping the result by product category, as follows:
 
 1. Run the following query.
 
-    <a href="https://dataexplorer.azure.com/clusters/help/databases/ContosoSales?query=H4sIAAAAAAAAA03MQQrCMBCF4b2neEt7iK4KboRSsBcYk1FSkwxMJouUHt6gCK7f979FxVdn5XRgk5DxCtmPkR8m1Vhxo8jlQs4gGcvXXrl1XWpKpGFnrGIUPxAjnNRs5wH39uMTGT9F20yJeyfq+2+f/zLPxb0BQv/+DokAAAA=" target="_blank">Run the query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/ContosoSales?query=H4sIAAAAAAAAA03MQQrCMBCF4b2neEt7iK4EN4VS0AuMydCmbTIwmSxSPLzBIrh+3/8mFV+c5csbq4SELSTfa5gXk2KseNDO+U7OIAnTiQeujecSI2k4GE8x2r8QPZyUZNcOr/rjNzKeRetIkVsn6ttvm/8yz9l9ABmJ5jWKAAAA" target="_blank">Run the query</a>
 
     ```kusto
     Products
-    | join kind=leftouter SalesFact on ProductKey
+    | join kind=rightouter SalesFact on ProductKey
     | summarize TotalSales = count() by ProductCategoryName
     | order by TotalSales desc
     ```
@@ -85,7 +85,7 @@ Having analyzed the request, you choose to use the *leftouter* `join`, because i
 
     :::image type="content" source="../media/4-join-3.png" alt-text="Screenshot of the join operator query, showing the total sales per product.":::
 
-1. Notice that the execution time is 0.861 seconds, though this time might vary between runs. This query is one way to get this answer and is a good example of a query that isn't optimized for performance. Later, you'll compare this time with the execution time of an equivalent query by using the `lookup` operator, which is optimized for this type of data.
+1. Notice that the execution time is 0.834 seconds, though this time might vary between runs. This query is one way to get this answer and is a good example of a query that isn't optimized for performance. Later, you'll compare this time with the execution time of an equivalent query by using the `lookup` operator, which is optimized for this type of data.
 
 ## Use the rightanti `join` kind
 

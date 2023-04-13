@@ -1,62 +1,60 @@
 ### YamlMime:ModuleUnit
-uid: learn.high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance.knowledge-check
+uid: learn.azure.high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Verify your knowledge about high availability and disaster recovery options in Azure Arc-enabled SQL Managed Instance."
-  ms.date: 8/24/2022
+  description: Verify your knowledge about high availability and disaster recovery options of Azure Arc-enabled SQL Managed Instance.
+  ms.date: 12/26/2022
   author: tchristiani
   ms.author: terrychr
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
-durationInMinutes: 5
-###########################################################################
-###
-### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
-###  - Questions are complete sentences ending with a question mark
-###  - No true/false questions
-###  - 3 answers per question
-###  - All answers about the same length
-###  - Numeric answers listed in sorted order
-###  - No "All of the above" and/or "None of the above" as answer choices
-###  - No "Not" or "Except" in questions
-###  - No second person ("you") in the questions or answers
-###  - Provide a meaningful explanation for both correct and incorrect answers
-###
-###########################################################################
+  ms.prod: learning-azure
+durationInMinutes: 3
 content: |
 quiz:
   questions:
-  - content: "Through which mechanism does Arc-enabled SQL Managed Instance provide High Availability for the General Purpose service tier?"
+  - content: 'Through which mechanism does Azure Arc-enabled SQL Managed Instance provide high availability for the General Purpose service tier?'
     choices:
-    - content: "Kubernetes"
+    - content: 'Kubernetes'
       isCorrect: true
-      explanation: "Correct. With the General Purpose tier, high availability option is provided by Kubernetes."
-    - content: "Contained Availability Groups"
+      explanation: 'Correct. With the General Purpose tier, high availability option is provided by Kubernetes.'
+    - content: 'Contained availability groups'
       isCorrect: false
-      explanation: "Incorrect. Kubernetes provides the ability to provide high availability for General Purpose tier deployments, while Contained Availability Groups provide high availability for Business Critical tier deployments. The service tier will impact the amount of time taken to perform a failover and be up and functional again."
-    - content: "Azure Container Instances"
+      explanation: 'Incorrect. Contained availability groups provide high availability for Business Critical tier deployments. The service tier impacts the amount of time it takes to perform a failover.'
+    - content: 'Azure Container Instances'
       isCorrect: false
-      explanation: "Incorrect. With the General Purpose tier, high availability option is provided by Kubernetes."
-  - content: "Which option is valid for recovering a database prior to an issue being experienced, allowing for recovering maliciously damaged or corrupt data?"
+      explanation: 'Incorrect. Azure Container Instances are not used with Azure Arc-enabled SQL Managed Instance.'
+  - content: 'Which option is valid for recovering an Azure Arc-enabled SQL Managed Instance database prior to an issue being experienced, allowing for recovering maliciously damaged or corrupt data?'
     choices:
-    - content: "Performing a manual failover to a secondary replica in the primary site."
+    - content: 'Performing a manual failover to a secondary replica in the primary site.'
       isCorrect: false
-      explanation: "Incorrect. A manual failover does not recover a database to a point in time prior to the identified issue."
-    - content: "Performing a point in time restore to just before the identified incident."
+      explanation: 'Incorrect. A manual failover does not recover a database to a point in time prior to the identified issue.'
+    - content: 'Performing a point-in-time restore of the database to a state prior to the identified incident.'
       isCorrect: true
-      explanation: "Correct. Doing so will revert the state of the data to what it was prior to the identified issue."
-    - content: "Performing a manual failover to a secondary site."
+      explanation: 'Correct. Doing so will revert the state of the database to a point in time prior to the identified issue.'
+    - content: 'Performing a manual failover to a secondary site.'
       isCorrect: false
-      explanation: "Incorrect. A manual failover will not recover a database to a point in time prior to the identified issue."
-  - content: "Which command performs a failover to the secondary site when the primary site Kubernetes cluster is lost?"
+      explanation: 'Incorrect. A manual failover will not recover the database to a point in time prior to the identified issue.'
+  - content: 'Which command performs a failover to the secondary site when the Kubernetes cluster hosting the Azure Arc-enabled SQL Managed Instance in the primary site is lost?'
     choices:
-    - content: "az sql instance-failover-group-arc update --role secondary"
+    - content: 'az sql instance-failover-group-arc update --role secondary'
       isCorrect: false
-      explanation: "Incorrect. This command can only be executed if the primary site kubernetes cluster is available."
-    - content: "az sql instance-failover-group-arc update --role force-primary-allow-data-loss"
+      explanation: 'Incorrect. This command should be executed if the Kubernetes cluster in the primary site is available.'
+    - content: 'az sql instance-failover-group-arc update --role force-primary-allow-data-loss'
       isCorrect: true
-      explanation: "Correct. This command forces the chosen secondary to become the primary and allows data loss to occur to bring the new primary replica online."
+      explanation: 'Correct. This command forces the chosen secondary to become the primary and implies the possibility of data loss.'
     - content: "az sql mi-arc update --preferred-primary-replica"
       isCorrect: false
-      explanation: "Incorrect. This command is used to set the new primary replica in the primary site. This action does not allow for failover to a secondary site."
+      explanation: 'Incorrect. This command is used to set the new primary replica in the primary site. This action does not allow for failover to a secondary site.'
+  - content: 'Azure Arc-enabled SQL Managed Instance provides built-in automated database backups. Which type of database is not backed up as part of this built-in service?'
+    choices:
+    - content: 'Master database'
+      isCorrect: false
+      explanation: 'Incorrect. Master database is automatically backed up.'
+    - content: 'User database in Full Recovery Model'
+      isCorrect: false
+      explanation: 'Incorrect. User databases in Full Recovery model are automatically backed up.'
+    - content: 'User database in Simple Recovery Model'
+      isCorrect: true
+      explanation: 'Correct. Databases in the Simple Recovery Model are not supported in the automated backup.'
+      

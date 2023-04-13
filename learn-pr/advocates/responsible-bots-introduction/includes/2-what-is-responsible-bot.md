@@ -19,7 +19,7 @@ To help you create responsible bots, Microsoft has outlined [10 guidelines for d
 
 A responsible bot has a clear goal. For instance, our geography bot might have the goal of assisting students by providing information about capital/major cities. Before developers start working on the bot, they carefully consider how to communicate that purpose to users. When a bot expresses its purpose and limitations in a responsible way, you can reduce frustration and unmet expectations for your users.
 
-Careful planning is required for bots that have _consequential outcomes_. When a bot has a conversation with the user, it can have a significant impact on the user's life. Bots that are used in healthcare or education need to be carefully designed for this consideration.
+Careful planning is required for bots that have *consequential outcomes*. When a bot has a conversation with the user, it can have a significant impact on the user's life. Bots used in healthcare or education need to be carefully designed for this consideration.
 
 When the bot clearly communicates its goal, the user is discouraged from engaging in conversation about unrelated issues. Building a bot to solve specific tasks is also easier than providing support for general conversation.
 

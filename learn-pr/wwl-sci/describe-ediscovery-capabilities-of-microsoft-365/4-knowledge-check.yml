@@ -4,13 +4,11 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/29/2022
+  ms.date: 02/09/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
-azureSandbox: false
-labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/4-knowledge-check.md)]
@@ -28,7 +26,7 @@ quiz:
     - content: "Add them as a member of the eDiscovery custodian role."
       isCorrect: false
       explanation: "Incorrect. This role isn’t suitable for managing eDiscovery cases. Instead, use the eDiscovery Manager role group."
-  - content: "The compliance admin needs to be able to collect and copy data into review sets and to be able filter, search, and tag content, which solution can best address his need?"
+  - content: "The compliance admin team needs to be able to collect and copy data into review sets and to be able filter, search, and tag content, which solution can best address their needs?"
     choices:
     - content: "Audit (Standard)."
       isCorrect: false

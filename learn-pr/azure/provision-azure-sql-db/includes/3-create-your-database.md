@@ -16,7 +16,7 @@ Let's take a quick look at some things you need to consider when you create an A
 
 When you create your first Azure SQL database, you also create an _Azure SQL logical server_. Think of a logical server as an administrative container for your databases. You can control logins, firewall rules, and security policies through the logical server. You can also override these policies on each database within the logical server.
 
-For now, you need just one database. But a logical server enables you to add more later and tune performance among all your databases.
+For now, you need just one database. But a logical server enables you to add more at a later time and tune performance among all your databases.
 
 ## Choose performance: DTUs versus vCores
 
@@ -34,7 +34,7 @@ Azure SQL Database has two purchasing models: _DTU_ and _vCore_.
 
     Unlike the DTU model, which provides fixed configurations for compute, storage, and IO resources, the vCore model enables you to configure each of these resources independently. For example, with the vCore model, you can increase storage capacity but keep the existing amount of compute and IO throughput.
 
-Your transportation and logistics prototype needs only one Azure SQL Database instance. You decide to use the DTU option because it provides the best balance of compute, storage, and IO performance, and it's also less expensive to use while you build your prototype.
+Your transportation and logistics prototype needs only one Azure SQL Database instance. You decide to use the DTU option because it provides the best balance of compute, storage, and IO performance. It's also less expensive to use while you build your prototype.
 
 ## What are SQL elastic pools?
 
@@ -50,12 +50,12 @@ Collation refers to the rules that sort and compare data. Collation helps you de
 
 Let's take a moment to consider what the default collation, **SQL_Latin1_General_CP1_CI_AS**, means:
 
-  - **Latin1_General** refers to the family of Western European languages.
-  - **CP1** refers to code page 1252, a popular character encoding of the Latin alphabet.
-  - **CI** means that comparisons are case insensitive. For example, "HELLO" compares equally to "hello".
-  - **AS** means that comparisons are accent sensitive. For example, "résumé" doesn't compare equally to "resume".
+- **Latin1_General** refers to the family of Western European languages.
+- **CP1** refers to code page 1252, a popular character encoding of the Latin alphabet.
+- **CI** means that comparisons are case insensitive. For example, "HELLO" compares equally to "hello".
+- **AS** means that comparisons are accent sensitive. For example, "résumé" doesn't compare equally to "resume".
 
-  Because you don't have specific requirements for how data is sorted and compared, choose the default collation.
+Because you don't have specific requirements for how data is sorted and compared, choose the default collation.
 
 ## Create your Azure SQL database
 
@@ -67,11 +67,11 @@ Over time, if you realize you need more compute power to keep up with demand, yo
 
 1. From **Home**, or in **Azure Services**, select **Create a resource**. The **Create a resource** pane appears.
 
+1. Under **Categories**, select **Databases** and in the results, select **SQL Database**.
+
    :::image type="content" source="../media/3-create-db.png" alt-text="Screenshot showing Create a resource pane with Databases in menu and SQL Database resource service highlighted.":::
 
-1. In the resource menu, select **Databases**, and then in the results, select **SQL Database**. The **Create SQL Database** pane appears.
-
-1. On the **Basics** tab, enter the following values for each setting.
+1. The **Create SQL Database** pane appears. On the **Basics** tab, enter the following values for each setting.
 
     | Setting | Value |
     | --- | --- |
@@ -93,16 +93,16 @@ Over time, if you realize you need more compute power to keep up with demand, yo
       | Setting | Value |
       | --- | --- |
       | Server name | Enter a globally unique [server name](/azure/architecture/best-practices/naming-conventions). |
-      | Location | Select one of the regions from the list below. |
-      | Authentication Method | Use SQL Authentication. (default) |
-      | Server admin login | Choose a unique admin login serves as your primary administrator login ID. |
+      | Location | Select one of the regions from the list following this table. |
+      | Authentication Method | Use SQL Authentication. |
+      | Server admin login | Choose a unique admin login that serves as your primary administrator login ID. |
       | Password | The password of your choice must have eight or more characters from three of these categories: uppercase, lowercase, numbers, and non-alphanumeric. |
 
      [!INCLUDE [regions](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
     b. Select **OK**. The Server field updates with the name of the server you created.
 
-1. Under **Compute + storage**, select **Configure database**. The **Configure** pane appears.
+1. In the **Database details** section, for **Compute + storage**, select **Configure database**. The **Configure** pane appears.
 
     a. Enter the following values for each setting.
 
@@ -114,7 +114,7 @@ Over time, if you realize you need more compute power to keep up with demand, yo
 
     b. Select **Apply**.
 
-1. Select the **Additional settings** tab at the top of the screen, and enter the following values for each setting.
+1. Select the **Additional settings** tab at the top of the screen, and enter or confirm the following values for each setting.
 
     | Setting | Value |
     | --- | --- |
@@ -144,7 +144,7 @@ Your Azure SQL database is now up and running. There are many options that you c
 
     :::image type="content" source="../media/3-set-server-firewall.png" alt-text="Screenshot showing command bar with Set server firewall highlighted.":::
 
-1. Select **Add your client IP4 address**. This action automatically adds the IP address for your computer.
+1. Choose **Selected networks** and then select **Add your client IP4 address**. This action automatically adds the IP address for your computer.
 
     :::image type="content" source="../media/3-add-client-ip.png" alt-text="Screenshot of the Azure portal showing a SQL database Firewall settings pane with the Add client IP highlighted.":::
 

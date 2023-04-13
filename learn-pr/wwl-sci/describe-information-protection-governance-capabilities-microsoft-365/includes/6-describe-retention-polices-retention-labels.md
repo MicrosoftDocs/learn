@@ -1,5 +1,3 @@
-> [!NOTE]
-> Microsoft 365 compliance is now called Microsoft Purview and the solutions within the compliance area have been rebranded. For more information about Microsoft Purview, see the [blog announcement](https://www.microsoft.com/security/blog/2022/04/19/the-future-of-compliance-and-data-governance-is-here-introducing-microsoft-purview/)
 
 Retention labels and policies help organizations to manage and govern information by ensuring content is kept only for a required time, and then permanently deleted.  Applying retention labels and assigning retention policies helps organizations:
 

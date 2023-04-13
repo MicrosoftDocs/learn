@@ -32,7 +32,7 @@ quiz:
     - content: "You get a panic error."
       isCorrect: false
       explanation: "Incorrect. Go will create a new array and double its size to hold more elements when needed."
-    - content: "You don't get an error, but the new element is not added to the slice."
+    - content: "You don't get an error, but the new element isn't added to the slice."
       isCorrect: false
       explanation: "Incorrect. Go will create a new array and double its size to hold the new element and have space for more elements."
     - content: "Go doubles the size of the underlying array."
@@ -57,7 +57,7 @@ quiz:
     - content: "No, you can only access the map's values."
       isCorrect: false
       explanation: "Incorrect. When you loop map elements, you can access both the key and its value."
-    - content: "You can only access both the key and the value when they are the same type."
+    - content: "You can only access both the key and the value when they're the same type."
       isCorrect: false
       explanation: "Incorrect. The key and the value can have a different type, and when you loop map elements, you can access the key and its value."
   - content: "Can you embed one struct into another struct?"

@@ -3,8 +3,8 @@
   It deploys the resources we need for our toy company's website.
 */
 
-// parameters
-@description('Location For All Resources.')
+// Parameters
+@description('Location for all resources.')
 param location string = resourceGroup().location
 
 @allowed([
@@ -20,26 +20,30 @@ param environment string = 'prod'
   'P2v3'
   'P3v3'
 ])
-@description('The list of allowed App Service Plan SKUs.')
+@description('The list of allowed App Service plan SKUs.')
 param appServicePlanSku string = 'P1v3'
 
 @minValue(1)
 @maxValue(10)
-@description('The number of allowed App Service Plan instances.')
+@description('The number of allowed App Service plan instances.')
 param appServicePlanInstanceCount int = 1
 
-// variables
+// Variables
+@description('The name of the App Service plan.')
 var appServicePlanName = 'plan-${environment}-001'
 
-// Resource - App Service Plan 
-resource appServicePlan 'Microsoft.Web/serverfarms@2020-12-01' = {
+// Resource - App Service plan
+@description('The App Service plan resource name.')
+resource appServicePlan 'Microsoft.Web/serverfarms@2022-03-01' = {
   name: appServicePlanName
   location: location
   sku: {
-    name: appServicePlanSku // Specifies the SKU of the App Service Plan. 
+    name: appServicePlanSku // Specifies the SKU of the App Service plan.
     capacity: appServicePlanInstanceCount
   }
-  kind: 'app' // Specifies a Windows App service Plan.
+  kind: 'app' // Specifies a Windows App Service plan.
 }
 
-output appServicePlanId string = appServicePlan.id // Outputs the resource Id of the App Service Plan.
+// Outputs
+@description('The resource ID of the App Service plan.')
+output appServicePlanId string = appServicePlan.id // Resource ID of the App Service plan.

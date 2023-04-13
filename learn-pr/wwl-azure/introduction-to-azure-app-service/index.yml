@@ -2,8 +2,8 @@
 uid: learn.wwl.introduction-to-azure-app-service
 metadata:
   title: Explore Azure App Service
-  description: "Explore Azure App Service"
-  ms.date: 11/14/2022
+  description: "Learn about the key components of Azure App Service and how App Service can help you create, maintain, and deploy web apps more efficiently."
+  ms.date: 02/03/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial

@@ -1,6 +1,6 @@
-You use Azure Automation State Configuration to make sure that the virtual machines (VMs) in a cluster are in a consistent state, with the same software installed and the same configurations.
+You use Azure Automation State Configuration to ensure that the virtual machines (VMs) in a cluster area are in a consistent state, with the same software installed and the same configurations.
 
-In this unit, you'll learn about the features and capabilities of Azure Automation. You'll review the declarative model of PowerShell Desired State Configuration (DSC), and you'll explore its benefits.
+In this unit, you learn about the features and capabilities of Azure Automation, review the declarative model of PowerShell Desired State Configuration (DSC), and explore its benefits.
 
 Azure Automation State Configuration is an Azure service built on PowerShell. It enables you to consistently deploy, reliably monitor, and automatically update the desired state of all your resources. Azure Automation provides tools to define configurations and apply them to real and virtual machines.
 
@@ -14,9 +14,9 @@ You can use Azure Monitor logs to review the compliance of your nodes by configu
 
 ## What is PowerShell DSC?
 
-PowerShell DSC is a declarative management platform that Azure Automation State Configuration uses to configure, deploy, and control systems. A declarative programming language separates intent (what you want to do) from execution (how do you want to do it). You specify the desired state and let DSC do the work to get there. You don't have to know how to implement or deploy a feature when a DSC resource is available. Instead, you focus on the structure of your deployment.
+PowerShell DSC is a declarative management platform that Azure Automation State Configuration uses to configure, deploy, and control systems. A declarative programming language separates intent (what you want to do) from execution (how you want to do it). You specify the desired state and let DSC do the work to get there. You don't have to know how to implement or deploy a feature when a DSC resource is available. Instead, you focus on the structure of your deployment.
 
-If you're already using PowerShell, you might wonder why you need DSC. Consider the following example. 
+If you're already using PowerShell, you might wonder why you need DSC. Consider the following example.
 
 When you want to create a share on a Windows server, you might use this PowerShell command:
 
@@ -25,7 +25,7 @@ When you want to create a share on a Windows server, you might use this PowerShe
 New-SmbShare -Name MyFileShare -Path C:\Shared -FullAccess User1 -ReadAccess User2
 ```
 
-The script is straightforward and easy to understand. However, if you use this script in production, you'll encounter several problems. Consider what might happen if the script runs multiple times or if `User2` already has full access rather than read only access.
+The script is straightforward and easy to understand. However, if you use this script in production, you encounter several problems. Consider what might happen if the script runs multiple times or if `User2` already has full access rather than read only access.
 
 This approach isn't *idempotent*. Idempotence describes an operation that has the same effect whether you run it once or 10,001 times. To achieve idempotence in PowerShell, you need to add logic and error handling. If the file share doesn't exist, you create it. If the share does exist, there's no need to create it. If `User2` exists but doesn't have read access, you add read access. 
 
@@ -82,7 +82,7 @@ Configuration Create_Share
 }
 ```
 
-The example above uses the `xSmbShare` module, which tells DSC *how* to check the state of a file share. The DSC Resource Kit has more than 80 resource modules, including one for installing an IIS site. You'll find a link to the DSC Resource Kit at the end of the module.
+The previous example uses the `xSmbShare` module, which tells DSC *how* to check the state of a file share. The DSC Resource Kit has more than 80 resource modules, including one for installing an IIS site. You can find a link to the DSC Resource Kit in the Summary at the end of this lesson.
 
 You'll learn more about the structure of the PowerShell DSC code in the next unit.
 
@@ -90,9 +90,9 @@ You'll learn more about the structure of the PowerShell DSC code in the next uni
 
 The local configuration manager (LCM) is a component of the Windows Management Framework (WMF) on a Windows operating system. The LCM is responsible for updating the state of a node, like a VM, to match the desired state. Every time the LCM runs, it completes the following steps:
 
-1. **Get**: Get the current state of the node.
-1. **Test**: Compare the current state of a node against the desired state by using a compiled DSC script (.mof file).
-1. **Set**: Update the node to match the desired state described in the .mof file.
+1. **Get**: Gets the current state of the node.
+1. **Test**: Compares the current state of a node against the desired state by using a compiled DSC script (.mof file).
+1. **Set**: Updates the node to match the desired state described in the .mof file.
 
 You configure the LCM when you register a VM with Azure Automation.
 

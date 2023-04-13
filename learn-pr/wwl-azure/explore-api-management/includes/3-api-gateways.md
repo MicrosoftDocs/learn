@@ -1,3 +1,4 @@
+
 Your solution may contain several front- and back-end services. In this scenario, how does a client know what endpoints to call? What happens when new services are introduced, or existing services are refactored? How do services handle SSL termination, authentication, and other concerns? An *API gateway* can help to address these challenges.
 
 :::image type="content" source="../media/api-gateway.png" alt-text="Diagram of an API gateway.":::

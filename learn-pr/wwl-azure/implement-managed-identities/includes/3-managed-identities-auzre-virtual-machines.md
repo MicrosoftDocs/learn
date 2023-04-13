@@ -1,3 +1,4 @@
+
 In this unit, you learn how managed identities work with Azure virtual machines. Below are the flows detailing how the two types of managed identities work with an Azure virtual machine.
 
 ## How a system-assigned managed identity works with an Azure virtual machine

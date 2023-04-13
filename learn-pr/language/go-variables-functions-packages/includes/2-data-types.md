@@ -1,4 +1,4 @@
-Go is a strongly typed language. This means that every variable you declare is bound to a specific data type and will accept only values that match this type.
+Go is a *strongly typed* language. Every variable you declare is bound to a specific data type and will only accept values that match that type.
 
 In Go, you have four categories of data types:
 
@@ -121,7 +121,7 @@ Notice that with the previous code, Go infers the data types from the values use
 
 ## Booleans
 
-A boolean type has only two possible values: `true` and `false`. You declare a boolean type by using the keyword `bool`. Go is different from other programming languages in that in Go you can't implicitly convert a boolean type to either 0 or 1. You have to do it explicitly.
+A boolean type has only two possible values: `true` and `false`. You declare a boolean type by using the keyword `bool`. Go is different from other programming languages. In Go, you can't implicitly convert a boolean type to either 0 or 1. You have to do it explicitly.
 
 So you can declare a boolean variable like this:
 
@@ -185,7 +185,7 @@ var defaultFloat32 float32
 var defaultFloat64 float64
 var defaultBool bool
 var defaultString string
-fmt.Println(defaultInt, defaultBool, defaultFloat32, defaultFloat64, defaultString)
+fmt.Println(defaultInt, defaultFloat32, defaultFloat64, defaultBool, defaultString)
 ```
 
 You could use code like this code to determine the default value for a data type we didn't explore here.
@@ -219,4 +219,4 @@ func main() {
 
 Run the preceding code, and confirm that it runs and prints `-42` two times.
 
-Notice that there's an underscore (`_`) used as the name of a variable in the preceding code. In Go, that means we're not going to use that variable's value, and that we want to ignore it. Otherwise, the program won't compile because we need to use all variables that we declare. We'll come back to this topic, and you'll learn what the `_` typically represents in the upcoming modules.
+Notice that there's an underscore (`_`) used as the name of a variable in the preceding code. In Go, the `_` means we're not going to use that variable's value, and that we want to ignore it. Otherwise, the program won't compile because we need to use all variables that we declare. We'll come back to this subject, and you'll learn what the `_` typically represents in the upcoming modules.

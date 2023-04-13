@@ -2,8 +2,8 @@
 uid: learn.wwl.design-solution-to-log-monitor-azure-resources
 metadata:
   title: Design a solution to log and monitor Azure resources
-  description: "Azure Architects design and recommend logging and monitoring solutions."
-  ms.date: 11/09/2022
+  description: "Design a solution to log and monitor Azure resources"
+  ms.date: 01/18/2023
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial

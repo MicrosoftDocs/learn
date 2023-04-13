@@ -52,7 +52,7 @@ quiz:
       explanation: "That's incorrect. Role-based access control can be applied to the resource group."
     - content: "Resource groups can be nested."
       isCorrect: true
-      explanation: "That's correct. Resource groups cannot be nested."
+      explanation: "That's correct. Resource groups can't be nested."
   - content: "Which of the following statements is a valid statement about an Azure subscription?"
     choices:
     - content: "Using Azure doesn't require a subscription."

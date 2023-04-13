@@ -1,3 +1,4 @@
+
 The security of business assets depends on the integrity of the
 privileged accounts that administer your IT systems. Cyber-attackers use
 credential theft attacks to target administrator accounts and other
@@ -27,23 +28,23 @@ These security levels are applied consistently across device, account, intermedi
 
 ### Enterprise security
 
-Enterprise security is suitable for all enterprise users and productivity scenarios. In the progression of the rapid modernization plan, enterprise also serves as the starting point for specialized and privileged access as they progressively build on the security controls in enterprise security.
+Enterprise security is suitable for all enterprise users and productivity scenarios. In the progression of the rapid modernization plan, enterprise also serves as the starting point for specialized and privileged access as they progressively build on the security controls in enterprise security.
 
 ### Specialized security 
 
-Specialized security provides increased security controls for roles with an elevated business impact (if compromised by an attacker or malicious insider). This level allows standard general productivity tasks like email and web browsing, but includes higher security rigor on those productivity tasks for higher business impact roles such as:
+Specialized security provides increased security controls for roles with an elevated business impact (if compromised by an attacker or malicious insider). This level allows standard general productivity tasks like email and web browsing, but includes higher security rigor on those productivity tasks for higher business impact roles such as:
 
-* Developers of business critical systems
-* Sensitive business roles (such as users of SWIFT terminals, researchers with access to sensitive data, personnel with access to financial reporting prior to public release, payroll administrators, approvers for sensitive business processes)
-* Executives and personal assistants / administrative assistants that that regularly handle sensitive information.
-* High impact social media accounts that could damage the company reputation.
-* Sensitive IT Admins with a significant privileges and impact, but aren't enterprise-wide. This group typically includes administrators of individual high impact workloads. (for example, enterprise resource planning administrators, banking administrators, help desk /tech support roles, etc.)
+* Developers of business critical systems
+* Sensitive business roles (such as users of SWIFT terminals, researchers with access to sensitive data, personnel with access to financial reporting prior to public release, payroll administrators, approvers for sensitive business processes)
+* Executives and personal assistants / administrative assistants that regularly handle sensitive information.
+* High impact social media accounts that could damage the company reputation.
+* Sensitive IT Admins with a significant privileges and impact, but aren't enterprise-wide. This group typically includes administrators of individual high impact workloads. (for example, enterprise resource planning administrators, banking administrators, help desk /tech support roles, etc.)
 
 Specialized Account security also serves as an interim step for privileged security, which further builds on these controls.
 
 ### Privileged Security
 
-Privileged security is the highest level of security designed for roles that could easily cause a major incident and potential material damage to the organization in the hands of an attacker or malicious insider. This level typically includes technical roles with administrative permissions on most or all enterprise systems (and sometimes includes a select few business critical roles). Privileged accounts are focused on security first, with productivity defined as the ability to easily and securely perform a fixed set of sensitive job tasks securely (not general productivity). 
+Privileged security is the highest level of security designed for roles that could easily cause a major incident and potential material damage to the organization in the hands of an attacker or malicious insider. This level typically includes technical roles with administrative permissions on most or all enterprise systems (and sometimes includes a select few business critical roles). Privileged accounts are focused on security first, with productivity defined as the ability to easily and securely perform a fixed set of sensitive job tasks securely (not general productivity). 
 
 ## Just in time access - PIM, PAM and CIEM
 

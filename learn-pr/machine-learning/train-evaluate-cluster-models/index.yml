@@ -23,7 +23,7 @@ levels:
 roles:
 - data-scientist
 products:
-- vs-code
+- azure
 subjects:
 - machine-learning
 units:

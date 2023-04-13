@@ -14,58 +14,58 @@ durationInMinutes: 6
 content: |
 quiz:
   questions:
-  - content: "A company wants to provide appointment reminders to its customers, which Azure Communication Services feature would be most effective?"
+  - content: "A company wants to provide appointment reminders to its customers. Which Azure Communication Services feature would be most effective?"
     choices:
     - content: "Chat"
       isCorrect: false
-      explanation: "Azure Communication Services' Chat feature requires that a user be online and connected to a chat thread before they can get a reminder. Short Messaging Service(SMS) can deliver a message directly to their phone, which they can read anywhere at any time."
-    - content: "Short Messaging Service(SMS)"
+      explanation: "Azure Communication Services' Chat feature requires that a user is online and connected to a chat thread before they can get a reminder. Short Messaging Service(SMS) can deliver a message directly to their phone, which they can read anywhere at any time."
+    - content: "Short Messaging Service (SMS)"
       isCorrect: true
-      explanation: "Short Messaging Service(SMS) can deliver a message directly to their phone, which they can read anywhere at any time."
+      explanation: "Short Messaging Service (SMS) can deliver a message directly to a user's phone, which they can read anywhere at any time."
     - content: "Voice and video calling"
       isCorrect: false
       explanation: "Azure Communication Services' Calling features requires that a user be logged in and connected to a call before they can get a reminder. Short Messaging Service(SMS) can deliver a message directly to their phone, which they can read anywhere at any time."
   - content: "A company wants to provide live communication on their website for potential customers, which Azure Communication Services feature would be most effective?"
     choices:
-    - content: "Short Messaging Service(SMS)"
+    - content: "Short Messaging Service (SMS)"
       isCorrect: false
-      explanation: "New customers are unlikely to be willing to provide their mobile phone number so Short Messaging Service(SMS) messages couldn't be sent to them. Chat is a better option for prospective customers as it doesn't require an existing relationship with a customer."
+      explanation: "New customers are unlikely to be willing to provide their mobile phone number, so Short Messaging Service (SMS) messages couldn't be sent to them. Chat is a better option for prospective customers because it doesn't require an existing relationship with a customer."
     - content: "Chat"
       isCorrect: true
       explanation: "Engaging with a new customer with a live chat interface is a great way to answer any immediate questions they have. This can also be done in a way that doesn't require a customer commitment."
     - content: "Voice and video calling"
       isCorrect: false
-      explanation: "New customers are usually unwilling to be forced into a call with a live agent. Chat is a better option for prospective customers as it can be more passive and doesn't require a customer commitment."
-  - content: "A business in Australia wants to send Short Messaging Service(SMS) messages to its customers, why does this make Azure Communication Services not a good choice?"
+      explanation: "New customers are usually unwilling to be forced into a call with a live agent. Chat is a better option for prospective customers because it can be more passive and doesn't require a customer commitment."
+  - content: "A business in Australia wants to send Short Messaging Service(SMS) messages to its customers. Why isn't Azure Communication Services a good choice for this scenario?"
     choices:
-    - content: "Short Messaging Service(SMS) features aren't available in Australia"
+    - content: "Short Messaging Service (SMS) features aren't available in Australia"
       isCorrect: true
       explanation: "Azure Communication Services currently has some geographical restrictions for its features."
     - content: "Australia is too far away to use Azure Communication Services."
       isCorrect: false
-      explanation: "Azure Communication Services is a global cloud service provider. Azure Communication Services is only available in Australia. Azure Communication Services currently has some geographical restrictions for its features."
+      explanation: "Azure Communication Services is a global cloud service provider, but Azure Communication Services currently has some geographical restrictions for its features, including SMS."
     - content: "The roaming charges for sending SMS to Australia will be too high."
       isCorrect: false
       explanation: "Azure Communication Services does not currently support sending SMS to Australia. Azure Communication Services currently has some geographical restrictions for its features."
-  - content: "A new company is working on a brand-new device for communication it also runs a proprietary programming language. Why is Azure Communication Services not a good choice for this scenario?"
+  - content: "A new company is working on a brand-new device for communication. It also runs a proprietary programming language. Why is Azure Communication Services not a good choice for this scenario?"
     choices:
     - content: "The new business is risky and might fail."
       isCorrect: false
-      explanation: "All sorts of businesses can use Azure Communication Services even ones that might not succeed. It is the platform and programming language that the business is using that is the problem."
+      explanation: "All sorts of businesses can use Azure Communication Services, even ones that might not succeed. It's the platform and programming language the business is using that's the problem."
     - content: "The business's programming language and platform aren't compatible with Azure Communication Services"
       isCorrect: true
       explanation: "Azure Communication Services doesn't support all programming languages or devices yet. As this business is using a proprietary programming language and device, it isn't compatible with Azure Communication Services."
     - content: "New businesses shouldn't use Azure Communication Services"
       isCorrect: false
-      explanation: "New businesses can provide innovation and new insights to an industry, and are welcome to try Azure Communication Services. The issue is that their platform and device are incompatible with Azure Communication Services."
-  - content: "A company wants to process live communication data from its customers, why is Azure Communication Services not a good choice for this?"
+      explanation: "New businesses can provide innovation and new insights to an industry, and are welcome to try Azure Communication Services. The issue is that the platform and device are incompatible with Azure Communication Services."
+  - content: "A company wants to process live communication data from its customers. Why isn't Azure Communication Services a good choice for this scenario?"
     choices:
     - content: "Azure Communication Services isn't a data processing or analysis service."
       isCorrect: true
       explanation: "That's correct, Azure Communication Services is for communication features and not data processing. You'll need to use other Azure offerings."
-    - content: "Azure Communication Services cannot be used for communication reasons."
+    - content: "Azure Communication Services can't be used for communication reasons."
       isCorrect: false
-      explanation: "Azure Communication Services is all about communication. Data processing isn't a part of Azure Communication Services though. You'll need to use other Azure offerings."
+      explanation: "Azure Communication Services is all about communication. Data processing isn't a part of Azure Communication Services, though. You'll need to use other Azure offerings."
     - content: "Azure Communication Services is not suitable for live data"
       isCorrect: false
-      explanation: "Azure Communication Services can perfectly handle live communications, but it is not for data processing. You'll need to use other Azure offerings."
+      explanation: "Azure Communication Services can perfectly handle live communications, but it's not for data processing. You'll need to use other Azure offerings."

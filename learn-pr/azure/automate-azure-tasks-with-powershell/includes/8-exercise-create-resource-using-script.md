@@ -61,7 +61,7 @@ Follow these steps in Cloud Shell on the right to write the script:
 1. Next, create a VM using the `$vmName` variable:
 
    ```powershell
-   New-AzVm -ResourceGroupName $resourceGroup -Name $vmName -Credential $adminCredential -Image UbuntuLTS
+   New-AzVm -ResourceGroupName $resourceGroup -Name $vmName -Credential $adminCredential -Image Canonical:0001-com-ubuntu-server-focal:20_04-lts:latest
    ```
 
 1. Save the file. You can use the "..." menu at the top right corner of the editor. There are also common accelerator keys for *Save*, like <kbd>Ctrl-S</kbd>.
@@ -77,7 +77,7 @@ For ($i = 1; $i -le 3; $i++)
 {
     $vmName = "ConferenceDemo" + $i
     Write-Host "Creating VM: " $vmName
-    New-AzVm -ResourceGroupName $resourceGroup -Name $vmName -Credential $adminCredential -Image UbuntuLTS
+    New-AzVm -ResourceGroupName $resourceGroup -Name $vmName -Credential $adminCredential -Image Canonical:0001-com-ubuntu-server-focal:20_04-lts:latest
 }
 ```
 

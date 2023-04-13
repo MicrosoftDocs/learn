@@ -2,8 +2,8 @@
 uid: learn.wwl.perimeter-security
 metadata:
   title: Implement perimeter security
-  description: "Prevent attacks before they get to your Azure solutions.  Use the concepts of defense in depth and zero trust to secure Azure perimeter."
-  ms.date: 08/05/2022
+  description: "Prevent attacks before they get to your Azure solutions. Use the concepts of defense in depth and zero trust to secure Azure perimeter."
+  ms.date: 02/02/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
@@ -27,6 +27,10 @@ roles:
 products:
 - azure
 - azure-ddos-protection
+- azure-firewall
+- azure-firewall-manager
+- azure-virtual-network
+- azure-vpn-gateway
 subjects:
 - security
 units:

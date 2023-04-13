@@ -5,7 +5,7 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: Knowledge check.
-  ms.date: 10/19/2021
+  ms.date: 12/27/2022
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial
@@ -27,7 +27,7 @@ quiz:
     - content: Add a rollback job to your workflow.
       isCorrect: false
       explanation: Incorrect. You can add a rollback job to reverse the effects of a job that's failed, but it doesn't help to validate the Bicep file you submit.
-  - content: Which of these is an example of negative testing?
+  - content: Which of the following options is an example of negative testing?
     choices:
     - content: Manually approving a workflow run.
       isCorrect: false

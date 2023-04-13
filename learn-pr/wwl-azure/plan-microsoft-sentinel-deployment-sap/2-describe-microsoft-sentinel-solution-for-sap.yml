@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.plan-microsoft-sentinel-deployment-sap.describe-microsoft-sentinel-solution-for-sap
-title: Describe the Microsoft sentinel solution for SAP
+title: Describe the Microsoft Sentinel solution for SAP
 metadata:
-  title: Describe the Microsoft sentinel solution for SAP
-  description: "Describe the Microsoft sentinel solution for SAP"
-  ms.date: 10/08/2022
+  title: Describe the Microsoft Sentinel solution for SAP
+  description: "Describe the Microsoft Sentinel solution for SAP"
+  ms.date: 11/29/2022
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/2-describe-microsoft-sentinel-solution-for-sap.md)]

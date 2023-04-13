@@ -20,7 +20,7 @@ Learn how Azure provides [built-in diagnostics to help with debugging](/azure/ap
 
 ## Clean up resources
 
-In this module, you created Azure resources in a resource group. If you won't need these resources later, delete the resource group from the portal. Or run the following command in Azure Cloud Shell.
+In this module, you created Azure resources in a resource group. If you won't need these resources later, delete the resource group from the [Azure portal](https://portal.azure.com) or run the following command in Azure Cloud Shell:
 
 ```bash
 az group delete --name $AZ_RESOURCE_GROUP --yes

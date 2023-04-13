@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.continuous-validate-test-mission-critical-workloads.design-chaos-experiments
+title: Design chaos experiments
+metadata:
+  title: Design chaos experiments
+  description: Learn how to design chaos experiments with Azure Chaos Studio.
+  ms.date: 01/16/2023
+  author: sebader
+  ms.author: prwilk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-design-chaos-experiments.md)]
+
+quiz:
+  title: Knowledge check
+  questions:
+  - content: "What is the goal of a chaos experiment?"
+    choices:
+    - content: "To break the production environment"
+      isCorrect: false
+      explanation: "Incorrect. The goal is to inject failures into the deployment and then test how the application behaves and responds to them. The result can help improve error handling and monitoring to reduce the impact when these failures occur in a production environment."
+    - content: "To inject faults for testing the workload and environment"
+      isCorrect: true
+      explanation: "Correct. By intentionally injecting faults, you can test the deployment and its resiliency measures."
+  - content: "Which services does Azure Chaos Studio support?"
+    choices:
+    - content: "All Azure services"
+      isCorrect: false
+      explanation: "Incorrect. Azure Chaos Studio supports only a subset of Azure services. See the Chaos Studio library of faults."
+    - content: "A subset of Azure services"
+      isCorrect: true
+      explanation: "Correct. Azure Chaos Studio supports only certain Azure services at this time. See the Chaos Studio library of faults."
+    - content: "Only third-party services that are hosted outside Azure"
+      isCorrect: false
+      explanation: "Incorrect. Azure Chaos Studio supports certain services within Azure only."
+  - content: "Before you can run an experiment against an Azure service from Azure Chaos Studio, what settings do you need to enable?"
+    choices:
+    - content: "Targets and capabilities"
+      isCorrect: true
+      explanation: "Correct. Before you can inject a fault against an Azure resource, the resource must have its corresponding targets and capabilities enabled."
+    - content: "Availability zones"
+      isCorrect: false
+      explanation: "Incorrect. Availability zones aren't a prerequisite to use Azure Chaos Studio."
+    - content: "Azure Backup"
+      isCorrect: false
+      explanation: "Correct.Azure Backup isn't a prerequisite to use Azure Chaos Studio."

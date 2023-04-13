@@ -17,10 +17,10 @@ To begin capturing log information, do the following procedure.
 2.  Do the following procedure to create a Log Analytics Workspace to send the logs to.
     
     ```Bash
-    LAWORKSPACE=springlabworkspace
+    WORKSPACE=log-$APPNAME-$UNIQUEID
     az monitor log-analytics workspace create \
         --resource-group $RESOURCE_GROUP \
-        --workspace-name $LAWORKSPACE
+        --workspace-name $WORKSPACE
     ```
 
 3.  Now you create the Diagnostics Settings for your Spring Apps Service to link to a workspace. You begin by creating the *logs.json* file and save it to the directory where you've been CLI statements.
@@ -65,13 +65,13 @@ To begin capturing log information, do the following procedure.
     
     ```azurecli
     az monitor diagnostic-settings create \
-        --name springappslogs \
+        --name asa-logs \
         --resource $SPRING_APPS_SERVICE \
         --resource-type Microsoft.AppPlatform/Spring \
         --resource-group $RESOURCE_GROUP \
-        --workspace $LAWORKSPACE \
+        --workspace $WORKSPACE \
         --logs @logs.json \
         --metrics @metrics.json
     ```
 
-The action above will begin log collection. The process may take 5-10 time before data appears in your logs. The next unit will walk you through how to query the data.
+The action will begin log collection. The process may take 5-10 time before data appears in your logs. The next unit will walk you through how to query the data.

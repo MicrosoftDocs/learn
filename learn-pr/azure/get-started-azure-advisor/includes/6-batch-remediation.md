@@ -19,11 +19,11 @@ From your list of recommendations, you can identify any that allow batch remedia
 
 When you select the recommendation associated with **Quick Fix**, a more detailed page opens showing the resources affected and the recommended actions you can take to resolve the issues.
 
-Here, you can select a check box on the left for each recommendation you want to resolve. Then, select **Quick Fix (Preview)**.
+Here, you can select a check box next to each recommendation you want to resolve. Then, select **Quick Fix**.
 
 :::image type="icon" source="../media/quickfix.png" border="false":::
 
-In this example, we are choosing to apply the recommended action **Shut down the virtual machine** to the two resources we have selected.
+In this example, we're choosing to apply the recommended action **Shut down the virtual machine** to the two resources we've selected.
 
 :::image type="content" source="../media/azure-advisor-quick-fix-select.png" alt-text="Screenshot showing how to select recommendations for quick fix." lightbox="../media/azure-advisor-quick-fix-select.png":::
 
@@ -39,4 +39,4 @@ For this option, follow the same process for **Quick Fix** that we just discusse
 
 :::image type="content" source="../media/azure-advisor-quick-fix-select-postpone-dismiss.png" alt-text="Screenshot showing how to bulk postpone or dismiss." lightbox="../media/azure-advisor-quick-fix-select-postpone-dismiss.png":::
 
-You can then deal with those recommendations at a later time (postpone), or they will be removed from the list altogether (dismiss). You can always review your postponed or dismissed recommendations in the **Postponed & Dismissed** tab under any recommendation. And as a reminder, postponed and dismissed recommendations will not be counted toward your Advisor Score.
+You can then deal with those recommendations at a later time (postpone), or remove them from the list altogether (dismiss). You can always review your postponed or dismissed recommendations in the **Postponed & Dismissed** tab under any recommendation. And as a reminder, postponed and dismissed recommendations aren't counted toward your Advisor Score.

@@ -3,7 +3,7 @@ uid: learn.powershell.connect-commands
 metadata:
   title: Connect commands into a pipeline
   description: In this module, you'll learn how to connect commands into a pipeline.
-  ms.date: 01/12/2022
+  ms.date: 12/09/2022
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
@@ -22,7 +22,7 @@ roles:
   - developer
   - student
 products:
-  - vs
+  - azure
 prerequisites: |
   - Basic familiarity with using command-line shells, such as a Command Prompt window or Git Bash 
   - Visual Studio Code, installed 

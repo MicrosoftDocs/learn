@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.design-a-data-model-with-ads.exercise-create-tables-with-ads
+title: Create tables with Azure Data Studio
+metadata:
+  title: Create tables with Azure Data Studio
+  description: "Create a data model for an application that includes tables and data types using Table Designer in Azure Data Studio"
+  ms.date: 12/29/2022
+  author: JetterMcTedder
+  ms.author: bspendolini
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 30
+content: |
+  [!include[](includes/4-exercise-create-tables-with-ads.md)]

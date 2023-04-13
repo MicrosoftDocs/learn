@@ -2,8 +2,8 @@
 uid: learn.wwl.query-use-common-information-model-windows-management
 metadata:
   title: Query management information by using Common Information Model and Windows Management Instrumentation
-  description: Query management information by using Common Information Model and Windows Management Instrumentation
-  ms.date: 11/23/2022
+  description: This learning path covers Windows Management Instrumentation (WMI) and Common Information Model (CIM). These technologies help to access information about a computer. Additionally, both technologies provide local and remote access to management information from the operating system, computer hardware, and installed software.
+  ms.date: 12/21/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -29,7 +29,6 @@ products:
 - azure-powershell
 - azure-virtual-machines
 - m365
-- vs-code
 subjects:
 - architecture
 - development-tools

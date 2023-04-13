@@ -23,7 +23,7 @@ roles:
   - developer
   - student
 products:
-  - vs
+  - azure
 prerequisites: |
   - Basic familiarity with using a command-line shell like Command Prompt or Git Bash 
   - Visual Studio Code installed 

@@ -4,7 +4,7 @@ When you start learning any programming language, you first try out a few statem
 
 To create a program in Python, you need to store it in a file. The file should have the extension *.py*.
 
-The idea of a program is to do something or carry out a task. To have the program do something, you'll need to add the statements or instructions to perform the task. For example, an instruction could print some text or calculate something. An example program can look something like this:
+The idea of a program is to do something or carry out a task. To have the program do something, you'll need to add the statements or instructions to perform the task. For example, an instruction could print some text or calculate something. An example program, named *python.py*, can look something like this:
 
 ```python
 # program.py
@@ -14,7 +14,7 @@ print(sum)
 
 ### Run a program
 
-Assume you created a program that consists of multiple statements. You run it by launching the Python executable program, followed by the name of your program. Here's an example of such an execution:
+Assume you created a program that consists of multiple statements. You run it by launching the Python executable program in a console. A console is a command-line application that lets you interact with the operating system. To run a program, type the name of the Python executable program, followed by the name of your program. Here's an example of such an execution:
 
 ```console
 python3 program.py
@@ -28,18 +28,24 @@ Running such a program would show the following result on the console:
 
 ## The print() function
 
-One of the first things you're likely to do is print to a console. A console is a command-line application that lets you interact with the operating system. On the console, you can run commands and programs. You can also enter information and show information as text on the screen.
+One of the first things you're likely to do is print to a console. On the console, you can run commands and programs. You can also enter information and show information as text on the screen.
 
-To write information to the console, you can use the `print()` function and implement it as a core function. Because it's a core function, you'll have access to it if Python is installed. To use `print()`, give it an argument:
+To write information to the console, you can use the `print()` function and implement it as a core function. Because it's a core function, you'll have access to it if Python is installed. To use `print()` in your program, give it an argument:
 
 ```python
 print("show this in the console")
 ```
 
-Note how the preceding command calls `print()` by using parentheses. That's how you execute a function. If you used square brackets (`[]`) instead of parentheses, it wouldn't work, as you'll notice if you run this code:
+Running the program now would show the following result on the console:
 
-```console
-python3 program.py
+```output
+show this in the console
+```
+
+Note how the command calls `print()` by using parentheses. That's how you execute a function. If you used square brackets (`[]`) instead of parentheses, it wouldn't work, as you'll notice if you run the program again with this code:
+
+```python
+print["show this in the console"]
 ```
 
 Here's the output:
@@ -194,4 +200,10 @@ To make this code work, you need to convert the date into a string. You accompli
 
 ```python
 print("Today's date is: " + str(date.today()))
+```
+
+The output looks like this:
+
+```output
+Today's date is: <date>
 ```

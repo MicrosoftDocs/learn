@@ -2,7 +2,7 @@ As you've seen in this module, it's easy to add text filters to your apps and se
 
 - Analyze text to look for unwanted content.
 - Classify the potentially offensive content.
-- Get insights into the potential PII that's being shared so that you can protect it.
+- Get insights into the potential personal data that's being shared so that you can protect it.
 
 ## Cleanup
 

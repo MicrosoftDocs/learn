@@ -1,4 +1,4 @@
-Many web applications use sessions to maintain state information between a user's requests. A session caches this state information during a request, and makes the information available for further requests by the same user. 
+Many web applications use sessions to maintain state information between a user's requests. A session caches this state information during a request and makes the information available for further requests by the same user. 
 
 In this module, you learned:
 

@@ -10,7 +10,7 @@ When you collect information from a website user, it's important to check that i
 - **For technical reasons:** If your code uses form input for calculations or other processing, incorrect input can cause errors and exceptions.
 - **For security reasons:** Malicious users may try to inject code by exploiting input fields that are not checked.
 
-Website users are familiar with validation rules that check for the presence and correct format of the details they enter. Required fields are often marked with an asterisk or a **Required** label. If they omit a value or enter a poorly formatted value, they see a validation message that instructs them on how to put the problem right. The validation message may appear when the tab out of a field or when they click the **Submit** button.
+Website users are familiar with validation rules that check for the presence and correct format of the details they enter. Required fields are often marked with an asterisk or a **Required** label. If they omit a value or enter a poorly formatted value, they see a validation message that instructs them on how to put the problem right. The validation message may appear when the user tabs out of a field or when they click the **Submit** button.
 
 Here's an example form where the user has submitted invalid data. In this case, there are validation messages at the bottom of the form and invalid fields are highlighted in red. You'll build this form in the next exercise:
 
@@ -86,7 +86,7 @@ To configure your form to use data annotation validation, first make sure you've
     <InputText id="chefemail" @bind-Value="pizza.ChefEmail" />
     <ValidationMessage For="@(() => pizza.ChefEmail)" />
     
-    <InputText id="price" @bind-Value="pizza.Price" />
+    <InputNumber id="price" @bind-Value="pizza.Price" />
     <ValidationMessage For="@(() => pizza.Price)" />
 </EditForm>
 
@@ -123,7 +123,7 @@ public class Pizza
 }
 ```
 
-The built-in validation attributes are versatile and you can use regular expressions to check against many kinds of text patterns. However, if you have specific or unusual requirements for validation, you may be unable to satisfy them precisely with built-in attributes. In these circumstances, you can create a custom validation attribute. Start by creating a class that inherits from the **ValidationAttribute** class and overrides the **IsValid**** method:
+The built-in validation attributes are versatile and you can use regular expressions to check against many kinds of text patterns. However, if you have specific or unusual requirements for validation, you may be unable to satisfy them precisely with built-in attributes. In these circumstances, you can create a custom validation attribute. Start by creating a class that inherits from the **ValidationAttribute** class and overrides the **IsValid** method:
 
 ```csharp
 public class PizzaBase : ValidationAttribute
@@ -195,7 +195,7 @@ If you use `OnSubmit`, the other two events will not fire. Instead you can use t
     <InputText id="chefemail" @bind-Value="pizza.ChefEmail" />
     <ValidationMessage For="@(() => pizza.ChefEMail)" />
     
-    <InputText id="price" @bind-Value="pizza.Price" />
+    <InputNumber id="price" @bind-Value="pizza.Price" />
     <ValidationMessage For="@(() => pizza.Price" />
 </EditForm>
 
@@ -232,7 +232,7 @@ If you use `OnValidSubmit` and `OnInvalidSubmit` instead, you don't have to chec
     <InputText id="chefemail" @bind-Value="pizza.ChefEmail" />
     <ValidationMessage For="@(() => pizza.ChefEMail)" />
     
-    <InputText id="price" @bind-Value="pizza.Price" />
+    <InputNumber id="price" @bind-Value="pizza.Price" />
     <ValidationMessage For="@(() => pizza.Price" />
 </EditForm>
 

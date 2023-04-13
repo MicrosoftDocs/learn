@@ -32,7 +32,6 @@ roles:
 - data-scientist
 products:
 - azure
-- vs-code
 subjects:
 - machine-learning
 units:

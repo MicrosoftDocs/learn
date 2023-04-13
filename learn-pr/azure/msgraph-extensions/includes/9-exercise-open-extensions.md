@@ -2,11 +2,11 @@ In this exercise, you use [Graph Explorer](https://aka.ms/ge) to make REST API r
 
 ## Authenticate your session
 
-Sign in to Graph Explorer by using a work or school account that has global administrator privileges in the tenant.
+1. Sign in to Graph Explorer by using a work or school account that has global administrator privileges in the tenant.
 
-To perform the API operations in this exercise, consent to the *User.ReadWrite.All* Microsoft Graph permission.
+1. To perform the API operations in this exercise, consent to the *User.ReadWrite.All* Microsoft Graph permission.
 
-In the team-bonding app, employees will sign in with their Azure Active Directory (Azure AD) profile and must consent to the *User.Read.All* and *User.ReadWrite* Microsoft Graph permissions. When they grant this consent, the employees can discover their colleagues and update their own profile information.
+In the team-bonding app, employees will sign in with their Azure AD profile and must consent to the *User.Read.All* and *User.ReadWrite* Microsoft Graph permissions. When they grant this consent, the employees can discover their colleagues and update their own profile information.
 
 ## Create and store data
 
@@ -16,6 +16,7 @@ In this step, you create an open extension called *socialSettings* with three pr
 
 ```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/users/6e03a2db-564a-47ec-ba51-d0cd38af069a/extensions
+Content-type: application/json
 
 {
     "@odata.type": "#microsoft.graph.openTypeExtension",
@@ -25,6 +26,7 @@ POST https://graph.microsoft.com/v1.0/users/6e03a2db-564a-47ec-ba51-d0cd38af069a
     "xboxGamertag": "AwesomeAdele"
 }
 ```
+
 ### Response
 
 ```http
@@ -42,14 +44,17 @@ Content-type: application/json
 
 ## Update and delete user data
 
-Suppose user "Adele" has crossed the 1,000,000 *gamerscore* mark and, to show off the milestone, she has changed her Xbox *gamertag* from `AwesomeAdele` to `AtalantaAdele`. Adele wants to change the gamertag in her app profile so that her colleagues can discover it.
+Suppose Adele has crossed the 1,000,000 *gamerscore* mark and, to show off the milestone, has changed her Xbox gamertag from `AwesomeAdele` to `AtalantaAdele`. Adele wants to change the value in the internal profile as well. 
 
-Adele also no longer uses the Skype app and now uses Teams instead. The app calls Microsoft Graph to set the value of **skypeId** to `null`.
+Adele also no longer uses the Skype app and now uses Teams instead. The app calls Microsoft Graph to set the value of the **skypeId** property to `null`.
+
+To update any property in the open extension object, you must specify *all* properties in the request body; otherwise, Microsoft Graph will delete the unspecified properties.
 
 ### Request
 
 ```msgraph-interactive
 PATCH https://graph.microsoft.com/v1.0/users/6e03a2db-564a-47ec-ba51-d0cd38af069a/extensions/socialSettings
+Content-type: application/json
 
 {
     "@odata.type": "#microsoft.graph.openTypeExtension",
@@ -69,9 +74,3 @@ HTTP/1.1 204 No Content
 ### Other Azure AD scenarios for custom data
 
 Open extensions and the data that the extensions store aren't supported by any other Azure AD scenarios. However, you can use the extensions and their data to support other custom app-specific scenarios for your organization.
-
-## Conclusion
-
-You've used Microsoft Graph open extension properties to store three custom values. You've seen how to retrieve, update, or remove any values from the open extension properties.
-
-For each type of operation, you should implement the appropriate logic in the team-bonding app to translate successful HTTP response codes to user-friendly response messages in the user interface.

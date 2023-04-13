@@ -1,3 +1,4 @@
+
 In this exercise you'll learn how to perform the following actions:
 
 * Register an application with the Microsoft identity platform
@@ -49,7 +50,7 @@ Azure Active Directory assigns a unique application (client) ID to your app, and
     dotnet new console
     ```
 
-1. Open the *az204-auth* folder in VS Code.
+1. Open the *az204-auth* folder in Visual Studio Code.
 
     ```ps
     code . -r
@@ -61,7 +62,7 @@ In this section you will add the necessary packages and code to the project.
 
 ### Add packages and using statements
 
-1. Add the `Microsoft.Identity.Client` package to the project in a terminal in VS Code.
+1. Add the `Microsoft.Identity.Client` package to the project in a terminal in Visual Studio Code.
 
     ```ps
     dotnet add package Microsoft.Identity.Client
@@ -156,7 +157,7 @@ namespace az204_auth
 
 ## Run the application
 
-1. In the VS Code terminal run `dotnet build` to check for errors, then `dotnet run` to run the app. 
+1. In the Visual Studio Code terminal run `dotnet build` to check for errors, then `dotnet run` to run the app. 
 
 1. The app will open the default browser prompting you to select the account you want to authenticate with. If there are multiple accounts listed select the one associated with the tenant used in the app.
 

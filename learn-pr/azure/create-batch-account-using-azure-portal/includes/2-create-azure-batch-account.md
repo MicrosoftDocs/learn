@@ -33,7 +33,7 @@ When you create an Azure Batch pool, you can provision the pool in a subnet of a
 
 A virtual network is the fundamental building block for your private network in Azure. Virtual networks enable many types of Azure resources, such as virtual machines, to securely communicate each other, the internet, and on-premises networks. 
 
-A virtual network is similar to a traditional network that you'd operate in your own datacenter. But it brings the additional benefits of the Azure infrastructure, such as scale, availability, and isolation.
+A virtual network is similar to a traditional network that you'd operate in your own datacenter. But it brings more benefits of the Azure infrastructure, such as scale, availability, and isolation.
 
 Key scenarios that you can accomplish with a virtual network include: 
 
@@ -46,4 +46,4 @@ Key scenarios that you can accomplish with a virtual network include:
 
 A subnet is a range of IP addresses in the virtual network. You can divide a virtual network into multiple subnets for organization and security. When you set up a virtual network, you specify the topology, including the available address spaces and subnets. If the virtual network will be connected to other virtual network or on-premises networks, you must select address ranges that don't overlap.
 
-There is no security boundary between subnets, so VMs in each subnet can talk to one another. But you can set up network security groups, which allow you to control the traffic flow to and from subnets and VMs.
+There's no security boundary between subnets, so VMs in each subnet can talk to one another. But you can set up network security groups, which allow you to control the traffic flow to and from subnets and VMs.

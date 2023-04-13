@@ -6,7 +6,7 @@ Azure displays a shared disk as a logical unit number (LUN) to the target VM, wh
 
 Applications that use Azure shared disks use a SCSI persistent reservation (SCSI PR) standard to enable failover from one node to another. VMs in the cluster can read or write to their attached disk, based on the chosen reservation of the clustered application that uses SCSI PR.
 
-> [!Note]
+> [!NOTE]
 > SCSI PR is an industry standard that applications running on on-premises system area networks (SANs) use.
 
 You use Azure shared disks to run clustered databases, parallel file systems, persistent container volumes, and machine-learning applications.
@@ -18,20 +18,20 @@ An Azure shared disk is created as a *managed disk*. A managed disk is a virtual
 Azure shared disks are available on the following disk types: 
 
 - Premium SSDs (P15 and greater). Premium SSDs are backed by solid-state drives (SSDs). They deliver high-performance, low-latency disk support for VMs that are running I/O-intensive workloads.
-- Ultra Disks. These disks deliver high throughput, high I/O operations per second (IOPS), and consistent low latency disk storage for Azure infrastructure as a service (IaaS) VMs. By using Ultra Disks, you can dynamically change a disk's performance without restarting your VMs. Ultra Disks have the fastest performance on Azure along with low sub-millisecond latencies. They're scalable to 64 tebibytes (TiB).
+- Ultra Disks. These disks deliver high throughput, high I/O operations per second (IOPS), and consistent low latency disk storage for Azure infrastructure as a service (IaaS) VMs. By using Ultra Disks, you can dynamically change a disk's performance without restarting your VMs. Ultra Disks have the fastest performance on Azure along with low submillisecond latencies. They're scalable to 64 tebibytes (TiB).
 
 For Premium SSDs, the disk size defines the number of maximum shares, which can't be more than 10. For each disk, a *maxShares* value represents the maximum number of nodes that can simultaneously share the disk.
 
 Ultra Disks don't have size restrictions. The maximum value for the *maxShares* setting is 5.
 
-> [!Note]
+> [!NOTE]
 > You can share Azure shared disks only as data disks and not as OS disks.
 
 ## Use-case scenarios for Azure shared disks
 
 Azure shared disks offer the flexibility to migrate on-premises clustered environments that run on Windows or Linux. Applications that run on Windows Server instances can use the failover cluster service to control the Azure shared disks' read and write operation.
 
-### A failover cluster scenario 
+### A failover cluster scenario
 
 In a failover cluster scenario, you use multiple VMs to access an Azure shared disk. One of the VMs acts as a primary node and reads and writes to the disk. The other VMs act as secondary nodes. If the primary node loses access to the disk, the secondary nodes can take over the read and write operations. A common use-case scenario that uses a failover cluster with active-passive mode is а clustered database such as a SQL Server failover cluster instance (FCI).
 
@@ -50,14 +50,14 @@ To help you understand how shared disks work, let's examine the following step-b
 
 You can create a SQL Server FCI by using two or more Windows Azure VMs. To achieve high availability, use Premium SSDs that support availability sets and proximity placement groups. Alternatively, you can use Ultra Disks that include support for availability zones. You should use Azure shared disks to store SQL Server FCI data directories. You can also implement striping across multiple shared disks if you create a shared storage pool. 
 
-> [!Note]
+> [!NOTE]
 > Availability sets and proximity placement groups aren't required to implement a SQL Server FCI with a shared disk. They're used to increase the availability and performance of the SQL Server FCI.
 
 ### SAP ASCS/SCS
 
 SAP application servers use clustered shared disks to place SAP ASCS/SCS and SAP global host files. You can deploy SAP applications on both Windows and Linux.
 
-Windows Server failover clustering with Azure VMs requires additional configuration steps. When you build a cluster, you need to set up several IP addresses and virtual host names for the SAP ASCS/SCS instance. You can deploy both single and multiple security identifier (SID) options for SAP ASCS/SCS. You can use only Premium SSDs as Azure shared disks for an SAP ASCS/SCS instance.
+Windows Server failover clustering with Azure VMs requires more configuration steps. When you build a cluster, you need to set up several IP addresses and virtual host names for the SAP ASCS/SCS instance. You can deploy both single and multiple security identifier (SID) options for SAP ASCS/SCS. You can use only Premium SSDs as Azure shared disks for an SAP ASCS/SCS instance.
 
 ### File servers
 
@@ -73,7 +73,7 @@ The following diagram illustrates another common clustered workload. It consists
 
 :::image type="content" source="../media/02-diagram-for-model-training-for-machine-learning-using-shared-disk.png" alt-text="Diagram for model training for machine learning using shared disk." border="true":::
 
-> [!Note]
+> [!NOTE]
 > You can also enable a multiple-write scenario. However, this scenario requires that applications can write.
 
 ### Clustering on Linux
@@ -117,5 +117,5 @@ For detailed information about creating an RHEL cluster with shared disks, see t
 
 Applications that are running in Azure Kubernetes Service (AKS) can use persistent storage on Azure shared disks. The manifest YAML file should contain a *devicePath* setting instead of *mountPaths*. This setting enables the container instances to use the mounted file system.
 
-> [!Note]
+> [!NOTE]
 > The shared disk feature supports only raw block devices. Kubernetes applications should manage coordination and control of writes, reads, locks, caches, mounts, and fencing on the shared disk that's exposed as a raw block device.

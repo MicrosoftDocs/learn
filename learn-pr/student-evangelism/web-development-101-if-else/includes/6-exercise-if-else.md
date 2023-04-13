@@ -1,15 +1,17 @@
-As a junior game developer of recreational games, you've been asked to start the development of a Blackjack game. Blackjack has some interesting rules on how to calculate points. You realize this is a great opportunity to apply some Boolean logic you've learned.
+As a junior game developer of recreational games, you've been asked to start the development of a Blackjack game. Blackjack has some interesting rules on how to calculate points. You realize this game is a great opportunity to apply some Boolean logic you've learned.
 
 ## Calculate a card hand
 
 In Blackjack, the goal of the game is to win over the bank. You win by holding a score higher than the bank but less than or equal to 21.
 
-1. Create a file _blackjack.js_.
+1. Use the Azure Cloud Shell to create a file.
 
-   ```javascript
+   ```bash
    touch app.js
    code .
    ```
+
+1. Press <kbd>Ctrl</kbd> + <kbd>S</kbd> to save the file. Name the file *blackjack.js*.
 
 1. Give it the following starter code:
 
@@ -33,9 +35,9 @@ In Blackjack, the goal of the game is to win over the bank. You win by holding a
    console.log(`You have ${sum} points`);
    ```
 
-1. Run the code.
+1. Save your changes, press <kbd>Ctrl</kbd> + <kbd>Q</kbd> to close the file, and then run the code.
 
-   ```javascript
+   ```bash
    node blackjack.js
    ```
 
@@ -48,6 +50,12 @@ In Blackjack, the goal of the game is to win over the bank. You win by holding a
 ## Add an opponent
 
 Your opponent is the bank. Remember the rules. You win if you have a better score than the bank, or if the bank has over 21. Let's implement those rules.
+
+1. Open the *blackjack.js* file.
+
+    ```bash
+    code blackjack.js
+    ```
 
 1. Add the following variables to represent the banks cards.
 
@@ -69,9 +77,9 @@ Your opponent is the bank. Remember the rules. You win if you have a better scor
    }
    ```
 
-1. Run the code.
+1. Save and close the file, and then run the code.
 
-   ```javascript
+   ```bash
    node blackjack.js
    ```
 

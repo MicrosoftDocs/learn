@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.discover-basics-computing
+metadata:
+  title: Discover the basics of computing
+  description: "Learn about the parts of computers and how they work together."
+  ms.date: 12/22/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Discover the basics of computing
+summary: An overview of the parts of computers and how they work together.
+abstract: |
+  After completing this module, you'll be able to:
+  - Identify the parts of a computer
+  - Understand identity on networks
+  - Explain how VPNs work and are used
+  - Identify the parts of a web address
+prerequisites: |
+  - Basic understanding of computer terminology.
+iconUrl: /training/achievements/discover-basics-computing.svg
+levels:
+- beginner
+roles:
+- administrator
+- developer
+- k-12-educator
+- student
+products:
+- return-to-school
+- return-to-workplace
+subjects:
+- cloud-computing
+units:
+- learn.wwl.discover-basics-computing.introduction
+- learn.wwl.discover-basics-computing.explore-basics-computers
+- learn.wwl.discover-basics-computing.discover-computer-networking
+- learn.wwl.discover-basics-computing.investigate-identity-network
+- learn.wwl.discover-basics-computing.examine-internet-identity
+- learn.wwl.discover-basics-computing.describe-virtual-private-networks
+- learn.wwl.discover-basics-computing.examine-web-addresses
+- learn.wwl.discover-basics-computing.knowledge-check
+- learn.wwl.discover-basics-computing.summary
+badge:
+  uid: learn.wwl.discover-basics-computing.badge

@@ -14,8 +14,15 @@ this insight to recommend mitigations when appropriated. Lastly, you
 learned how to recommend security capabilities or controls to mitigate
 the risks that were identified.
 
-Visit the links below for more information about the topics covered in
-this module:
+## Learn more with optional hands-on exercises
+
+> [!Note] 
+> - Students who don't already have an Azure subscription can [sign up for one free](https://azure.microsoft.com/free/)
+> - Students who don't already have a Microsoft 365 subscription can setup an [M365 E5 sandbox subscription](/office/developer-program/microsoft-365-developer-program-get-started)
+
+* [Microsoft Defender for Cloud Module 5 - Improving your Secure Posture](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module-5-Improving-your-Secure-Posture.md)
+
+## Learn more with security documentation
 
 * [Microsoft uses threat intelligence to protect, detect, and respond to threats](https://www.microsoft.com/en-us/insidetrack/microsoft-uses-threat-intelligence-to-protect-detect-and-respond-to-threats)
 * [What is risk? Azure AD Identity Protection](/azure/active-directory/identity-protection/concept-identity-protection-risks)

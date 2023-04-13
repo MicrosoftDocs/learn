@@ -4,19 +4,19 @@ Your first challenge is to create an application that your company can use to tr
 
 - **Single-shot recognition**
 
-    - Single-shot recognition listens for a break in the audio and then stops recognizing, and will only process a maximum of 15 seconds of audio.
+  - Single-shot recognition listens for a break in the audio and then stops recognizing, and will only process a maximum of 15 seconds of audio.
 
-    - This type of recognition will work well for the brief memos that your company's medical clients provide, but it will not work for the longer dictations.
+  - This type of recognition will work well for the brief memos that your company's medical clients provide, but it will not work for the longer dictations.
 
-    - Single-shot recognition is easier to implement in your application, but you have less control.
+  - Single-shot recognition is easier to implement in your application, but you have less control.
 
 - **Continuous recognition**
 
-    - Continuous recognition will continue to listen until recognition is stopped.
+  - Continuous recognition will continue to listen until recognition is stopped.
 
-    - This type of recognition will work well for both the brief memos and longer dictations.
+  - This type of recognition will work well for both the brief memos and longer dictations.
 
-    - Continuous recognition requires more code to implement in your application, but you have more control.
+  - Continuous recognition requires more code to implement in your application, but you have more control.
 
 In the following example, you'll use single-shot recognition to create an application that you can use to transcribe the brief memos from your company's medical clients. Later in this module, you'll use continuous recognition that you can use to transcribe both the brief memos and longer dictations.
 
@@ -28,7 +28,7 @@ To create an application that will convert speech to text using Azure Cognitive 
 
 - Create a `SpeechConfig` class using the API key from your Azure Cognitive Services account.
 
-- Create a `AudioConfig` class using a WAVE file as the source.
+- Create an `AudioConfig` class using a WAVE file as the source.
 
 - Create a `SpeechRecognizer` class using the `SpeechConfig` and `AudioConfig` classes.
 
