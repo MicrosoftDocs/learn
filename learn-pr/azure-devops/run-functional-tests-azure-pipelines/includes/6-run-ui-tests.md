@@ -1,10 +1,10 @@
-Before Andy and Amita run their tests in the pipeline, they want to verify that their new UI tests do what they should. In this section, you follow along. You run the Selenium UI tests first locally and then in the pipeline.
+Before Andy and Amita run their tests in the pipeline, they want to verify that their new UI tests do what they should. In this section, you'll follow along by running the Selenium UI tests first locally and then in the pipeline.
 
 Writing automated tests is an iterative process, just like writing any other type of code. For your own apps, you'll likely need to try a few approaches, refer to reference documentation and example code, and fix build errors.
 
 ## Optional: Install the Selenium driver for Microsoft Edge
 
-Follow this part if you want to see the tests run locally on Edge.
+Follow this section if you want to see the tests run locally on Microsoft Edge.
 
 The NuGet package for Chrome and Firefox installs driver software under the *bin* directory, alongside the compiled test code. For Edge, you need to manually install the driver. To do so:
 
@@ -19,7 +19,7 @@ The NuGet package for Chrome and Firefox installs driver software under the *bin
 
 1. Extract the *.zip* file to the *bin/Release/net6.0* directory under your project's *Tailspin.SpaceGame.Web.UITests* directory. Create these directories if they don't exist.
 
-On macOS, you may need to update your system policy to allow **msedgedriver** to run. To do so, in Visual Studio Code, run the following `spctl` command from the terminal:
+On macOS, you might need to update your system policy to allow **msedgedriver** to run. To do so, in Visual Studio Code, run the following `spctl` command from the terminal:
 
 ```bash
 spctl --add Tailspin.SpaceGame.Web.UITests/bin/Release/net6.0/msedgedriver
@@ -34,7 +34,7 @@ The section **Selenium Web Drivers** lists the Selenium driver versions that are
 
 :::image type="content" source="../media/6-readme-selenium-drivers.png" alt-text="A screenshot showing the documentation for the installed Selenium drivers on the build agent.":::
 
-For each driver, you see the environment variable that maps to the location of that driver. For example, `ChromeWebDriver` maps to the location of the Chrome driver.
+For each driver, you have the environment variable that maps to the location of that driver. For example, `ChromeWebDriver` maps to the location of the Chrome driver.
 
 The unit tests code is already set up to read these environment variables. These variables tell Selenium where to find the driver executable files. To run the unit tests locally, you need to export these same environment variables.
 
@@ -133,7 +133,7 @@ Let's add the pipeline variable now, before you update your pipeline configurati
 1. For the name of your variable, enter *SITE_URL*. As its value, enter the URL of the App Service instance that corresponds to your **test** environment, such as **http:\//tailspin-space-game-web-test-10529.azurewebsites.net**.
 1. Near the top of the page, select **Save** to save your variable to the pipeline.
 
-    Your variable group resembles this one:
+    Your variable group should resemble this one:
 
     :::image type="content" source="../media/6-library-variable-group.png" alt-text="A screenshot of Azure Pipelines, showing the variable group. The group contains four variables.":::
 
@@ -155,7 +155,7 @@ In this section, you modify the pipeline configuration to run your Selenium UI t
 
         [!code-yml[](code/6-azure-pipelines-publish.yml?highlight=5)]
 
-        This task generates two build artifacts: the _Space Game_ website package and the compiled UI tests. We build the UI tests during the _Build_ stage to ensure that they'll compile during the _Test_ stage. But we don't need to publish the compiled test code. We build it again during the _Test_ stage when the tests run.
+        This task generates two build artifacts: the _Space Game_ website package and the compiled UI tests. We build the UI tests during the _Build_ stage to ensure that they'll compile during the _Test_ stage, but we don't need to publish the compiled test code. We build it again during the _Test_ stage when the tests run.
     * The _Test_ stage includes a second job that builds and runs the tests. This job resembles the one that you used in the [Run quality tests in your build pipeline by using Azure Pipelines](/training/modules/run-quality-tests-build-pipeline/4-add-unit-tests?azure-portal=true) module. In that module, you ran NUnit tests that verified the leaderboard's filtering functionality.
 
         Recall that a _deployment job_ is a special type of job that plays an important role in your deployment stages. The second job is a normal job that runs the Selenium tests on a Windows Server 2019 agent. Although we use a Linux agent to build the application, here we use a Windows agent to run the UI tests. We use a Windows agent because Amita runs manual tests on Windows, and that's what most customers use.
@@ -172,7 +172,7 @@ In this section, you modify the pipeline configuration to run your Selenium UI t
 
 ## Watch Azure Pipelines run the tests
 
-Here you watch the pipeline run. The pipeline runs the Selenium UI tests during the _Test_ stage.
+Here, you watch the pipeline run. The pipeline runs the Selenium UI tests during the _Test_ stage.
 
 1. In Azure Pipelines, go to the build and trace it as it runs.
 
@@ -184,10 +184,10 @@ Here you watch the pipeline run. The pipeline runs the Selenium UI tests during 
 
     :::image type="content" source="../media/6-stages-complete.png" alt-text="A screenshot of Azure Pipelines, showing the completed stages.":::
 
-    You see that the deployment and the UI tests finished successfully.
+    You note that the deployment and the UI tests finished successfully.
 1. Near the top of the page, note the summary.
 
-    You see that the build artifact for the _Space Game_ website is published just like always. Also note the **Tests and coverage** section, which shows that the Selenium tests have passed.
+    You note that the build artifact for the _Space Game_ website is published just like always. Also note the **Tests and coverage** section, which shows that the Selenium tests have passed.
 
     :::image type="content" source="../../shared/media/azure-pipelines-build-summary-tests.png" alt-text="A screenshot of Azure Pipelines, showing the test summary.":::
 
@@ -197,7 +197,7 @@ Here you watch the pipeline run. The pipeline runs the Selenium UI tests during 
 
     :::image type="content" source="../media/6-test-summary.png" alt-text="A screenshot of Azure Pipelines, showing the full test report.":::
 
-    If any test fails, you see detailed results of the failure. From there, you can investigate the source of the failure, fix it locally, and then push up the necessary changes to make the tests pass in the pipeline.
+    If any test fails, you get detailed results of the failure. From there, you can investigate the source of the failure, fix it locally, and then push up the necessary changes to make the tests pass in the pipeline.
 
 **Amita:** This automation is exciting! I now have UI tests that I can run in the pipeline. The tests will really save us time in the long run. I also have a pattern to follow to add more tests. Best of all, the UI tests give us added confidence in our code quality.
 
