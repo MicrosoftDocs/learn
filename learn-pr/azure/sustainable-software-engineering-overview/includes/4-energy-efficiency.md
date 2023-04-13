@@ -6,29 +6,29 @@ Most people think electricity is clean. When we plug something into a wall, our 
 
 Because we can draw a direct line from electricity to carbon emissions, we can consider electricity one of the proxies for carbon.
 
-From the applications running on your smartphone to training machine-learning models running in data centers, all software consumes electricity in its execution. One of the best ways to reduce electricity consumption and the subsequent emissions of carbon pollution made by our software is to make our applications more energy-efficient.
+From the applications running on your smartphone to training machine-learning models running in data centers, all software consumes electricity in its execution. One of the best ways to reduce electricity consumption and our software's subsequent carbon pollution emissions is to make our applications more energy-efficient.
 
 This is why the second principle of Sustainable Software Engineering is to **build applications that are energy-efficient**.
 
-As sustainable engineers, we need to understand electricity. Our journey doesn't start from the computer, it starts from how the electricity that powers our computers is made.
+As sustainable engineers, we need to understand electricity. Our journey doesn't start with the computer; it begins with how the electricity that powers our computers is made.
 
 ## Energy vs. power
 
-Energy is a measure of an amount of electricity used; the standard unit for Energy is Joules or J. However, another common way of referring to energy consumption is in Kilowatt-hours, or kWh.
+Energy measures the amount of electricity used; the standard unit for Energy is Joules or J. However, kilowatt-hours or kWh is another common way of referring to energy consumption.
 
 Electricity is often reported as either Power or Energy, which are two different concepts:
 
 <nobr>Energy = Power &#10005; Time</nobr>
 
-- Energy is the total amount of electricity used, the standard unit for Energy is Joules or J.
+- Energy is the total amount of electricity used; the standard unit for Energy is Joules or J.
 
-- Power is the rate of electricity consumed per unit time; the standard unit of Power is Watt or W. A single Watt is one Joule per second.
+- Power is the rate of electricity consumed per unit of time; the standard unit of Power is Watt or W. A single Watt is one Joule per second.
 
 A common way of referring to energy consumption is _Power over a unit of Time, such as Watt-seconds or Kilowatt-hours_. For example:
 
 - 20 Watt-seconds or <nobr>20 Ws</nobr> is the amount of energy you would get if <nobr>20 W</nobr> were run for one second. Since one Watt is one Joule per second, this value is 20 Joules.
 
-- 20 Kilowatt-hours or <nobr>20 kWh</nobr> is the amount of energy you would get if 20,000 Watts were running for one hour.
+- 20 Kilowatt-hours or <nobr>20 kWh</nobr> is the energy you would get if 20,000 Watts ran for one hour.
 
     <nobr>Energy = 60 &#10005; 60 &#10005; 20,000 = 72,000,000 Joules = 72 Megajoules (72 MJ)</nobr>
 
@@ -36,25 +36,25 @@ A common way of referring to energy consumption is _Power over a unit of Time, s
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxdGc]
 
-Utilization is a measure of how much of a computer's resources are being used, which is usually represented as a percentage. An idle computer has a low utilization percentage and isn't being utilized, a computer running at its maximum capacity has a high percentage and is being fully utilized.
+Utilization measures how much of a computer's resources are being used, which is usually represented as a percentage. An idle computer has a low utilization percentage and isn't being utilized; a computer running at its maximum capacity has a high percentage and is being fully utilized.
 
-[Energy proportionality](https://en.wikipedia.org/wiki/Energy_proportional_computing) is a measure of the relationship between power consumed in a computer system and the rate at which useful work is done (its utilization). If the overall power consumption is proportional to the computer's utilization, then it's said to be energy proportional.
+[Energy proportionality](https://en.wikipedia.org/wiki/Energy_proportional_computing) is a measure of the relationship between power consumed in a computer system and the rate at which useful work is done (its utilization). If the overall power consumption is proportional to the computer's utilization, then its energy proportional.
 
-In an energy proportional system, the energy efficiency is a constant; no matter the utilization, the energy efficiency remains the same. However, the energy efficiency of hardware is not constant. It varies based on context. Due to the complex interactions of many different components of a hardware device, it can be nonlinear, which means that the relationship between power and utilization is not proportional.
+In an energy proportional system, the energy efficiency is a constant; no matter the utilization, the energy efficiency remains the same. However, the energy efficiency of hardware isn't constant. It varies based on context. Due to the complex interactions of many different hardware device components, it can be nonlinear, which means that the relationship between power and utilization isn't proportional.
 
 ![Diagram showing power versus utilization.](../media/7-energy-proportionality-1.svg)
 
-At 0% utilization, the computer still draws <nobr>100 W</nobr>; at 50% utilization, it draws <nobr>180 W</nobr>, and at 100% utilization, it draws <nobr>200 W</nobr>. The relationship between power consumption and utilization is not linear, and it doesn't cross the origin.
+At 0% utilization, the computer still draws <nobr>100 W</nobr>; at 50% utilization, it draws <nobr>180 W</nobr>, and at 100% utilization, it draws <nobr>200 W</nobr>. The relationship between power consumption and utilization isn't linear, and it doesn't cross the origin.
 
 Because of this relationship, **the more you utilize a computer, the more efficient it becomes at converting electricity to useful computing operations**. Running your work on as few servers as possible with the highest utilization rate maximizes their energy efficiency.
 
 ### Static power draw
 
-There are various reasons for this lack of energy proportionality, and one of them is static power draw.
+There are various reasons for this lack of energy proportionality, one of which is static power draw.
 
-An idle computer, even one at zero percent utilization, still draws electricity. This static power draw varies by configuration and hardware components, but all components have some static power draw. This potential power draw is one of the reasons that PCs, laptops, and mobile devices have power-save modes available. If the device is idle, it will eventually trigger a hibernation mode and put the disk and screen to sleep or even change the CPU frequency. These power-save modes save on electricity, but they have other trade-offs, such as a slower restart when the device wakes up.
+An idle computer, even at zero percent utilization, still draws electricity. This static power draw varies by configuration and hardware components, but all components have some static power draw. This potential power draw is one of the reasons that PCs, laptops, and mobile devices have power-save modes available. If the device is idle, it will eventually trigger a hibernation mode, put the disk and screen to sleep, or even change the CPU frequency. These power-save modes save on electricity but have other trade-offs, such as a slower restart when the device wakes up.
 
-Servers are usually not configured for aggressive or even minimal power-saving. Many server use-cases demand full capacity as quickly as possible in response to rapidly changing demands. This scenario can leave many servers in idle modes during low demand periods. An idle server has a cost both from embedded carbon and its inefficient utilization.
+Servers are usually not configured for aggressive or even minimal power-saving. Many server use cases demand full capacity as quickly as possible in response to rapidly changing demands. This scenario can leave many servers in idle mode during low-demand periods. An idle server has a cost both from embedded carbon and its inefficient utilization.
 
 #### Clock speed
 
@@ -64,4 +64,4 @@ Clock speed denotes how fast a computer can execute instructions.
 
 The energy efficiency of microprocessors changes with clock speed; high clock speeds are often **less** energy-efficient than low clock speeds. For example, in the I7-3770K system, you can run at <nobr>3.5 GHz</nobr> for <nobr>50 W</nobr>, or about <nobr>5 GHz</nobr> for <nobr>175 W<nobr>. An approximate 40% increase in clock speed requires <nobr>&gt;3&#10005;</nobr> power increase.
 
-Taking this information into consideration, reducing the clock speed at times of low utilization can increase energy efficiency, thereby maximizing the energy efficiency of hardware.
+Considering this information, reducing the clock speed at times of low utilization can increase energy efficiency, thereby maximizing the energy efficiency of hardware.
