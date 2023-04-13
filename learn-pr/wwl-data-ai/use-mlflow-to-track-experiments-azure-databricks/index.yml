@@ -28,6 +28,5 @@ products:
 subjects:
 - data-analytics
 units:
-- learn.wwl.use-mlflow-to-track-experiments-azure-databricks.understand-capabilities-of-mlflow
 badge:
   uid: learn.wwl.use-mlflow-to-track-experiments-azure-databricks.badge
