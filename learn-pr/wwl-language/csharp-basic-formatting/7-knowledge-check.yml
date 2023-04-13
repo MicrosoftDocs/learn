@@ -40,7 +40,7 @@ quiz:
     - content: "A missing \\u escape sequence for Unicode characters."
       isCorrect: false
       explanation: "Incorrect. If the \\u escape sequence for Unicode characters are not used, only numbers will appear, question marks won't be displayed."
-    - content: "Yhe wrong Unicode characters were used."
+    - content: "The wrong Unicode characters were used."
       isCorrect: false
       explanation: "Incorrect. This is unlikely.  It would only be true if all the Unicode characters were the same value representing a question mark--\\u003F."
     - content: "The user's console doesn't support Unicode characters."
