@@ -4,8 +4,8 @@ metadata:
   title: Protect your on-premises infrastructure from disasters with Azure Site Recovery
   description: Provide disaster recovery for your on-premises infrastructure by managing and orchestrating replication, failover, and failback of VMware virtual machines, Hyper-V virtual machines, and physical servers with Azure Site Recovery.
   ms.date: 08/01/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: ankitadutta
+  ms.author: ankitaduttaMSFT
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Protect your on-premises infrastructure from disasters with Azure Site Recovery

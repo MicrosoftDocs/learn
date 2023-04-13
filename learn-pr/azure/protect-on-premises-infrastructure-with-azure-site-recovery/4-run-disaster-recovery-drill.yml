@@ -4,8 +4,8 @@ metadata:
   title: Run a disaster recovery drill
   description: Understand recovery time and recovery point objectives, and see how a recovery drill can test that Azure Site Recovery was configured correctly to meet these objectives.
   ms.date: 08/01/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: ankitadutta
+  ms.author: ankitaduttaMSFT
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Run a disaster recovery drill
