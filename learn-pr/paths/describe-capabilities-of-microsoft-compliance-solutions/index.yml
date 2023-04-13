@@ -62,6 +62,7 @@ roles:
 products:
 - azure
 - m365
+- microsoft-purview
 subjects:
 - compliance
 - identity-access

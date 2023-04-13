@@ -1,11 +1,11 @@
 
 ## Basic and enhanced security features
 
-## Basic features
+### Basic features
 
 When you open Defender for Cloud in the Azure portal for the first time or if you enable it through the Application Programming Interface (API), Defender for Cloud is **enabled for free on all your Azure subscriptions**. Defender for Cloud provides foundational **cloud security and posture management (CSPM)** features by default. The foundational CSPM includes a **secure score**, **security policy and basic recommendations**, and **network security assessment** to help you **protect your Azure resources**.
 
-## Defender Cloud Security Posture Management (CSPM) plan options
+### Defender Cloud Security Posture Management (CSPM) plan options
 
 Defender for cloud **offers foundational multicloud CSPM capabilities for free**. These capabilities are automatically enabled by default on any subscription or account that has been onboarded to Defender for Cloud. The foundational CSPM includes asset discovery, continuous assessment and security recommendations for posture hardening, compliance with Microsoft Cloud Security Benchmark (MCSB), and a Secure score which measure the current status of your organization’s posture.
 
@@ -16,11 +16,11 @@ The following table summarizes each plan and its cloud availability.
 :::image type="content" source="../media/defender-cspm-plans-f0ad4520.png" alt-text="Screenshot showing Defender Cloud Security Poster Management plan options.":::
 
 
-## Enhanced features
+### Enhanced features
 
 If you want to try out the enhanced security features, enable enhanced security features for free for the first 30 days. At the end of 30 days, if you decide to continue using the service, we'll automatically start charging for usage.
 
-## Prerequisites
+### Prerequisites
 
 To get started with Defender for Cloud, you'll need a Microsoft Azure subscription with Defender for Cloud enabled. If you don't have an Azure subscription, you can sign up for a free subscription.
 
@@ -35,7 +35,7 @@ Microsoft Defender for Cloud uses monitoring components to collect data from you
 
 The Defender plans show you the monitoring coverage for each Defender plan. If the monitoring coverage is Full, all of the necessary extensions are installed. If the monitoring coverage is Partial, the information tooltip tells you what extensions are missing. For some plans, you can configure specific monitoring settings.
 
-## Enhanced features
+### Enhanced features
 
 When you enable the enhanced security features (paid), Defender for Cloud can provide unified security management and threat protection across your hybrid cloud workloads, including:
 
