@@ -113,7 +113,7 @@ public class HomePageTest
 
 **Andy:** Next, we need to assign our `IWebDriver` member variable to a class instance that implements this interface for the browser we're testing on. The `ChromeDriver`, `FirefoxDriver`, and `EdgeDriver` classes implement this interface for Chrome, Firefox, and Edge, respectively.
 
-Let's create a method, named `Setup`, that sets the `driver` variable. We use the `OneTimeSetUp` attribute to tell NUnit to run this method one time per test fixture.
+Let's create a method named `Setup` that sets the `driver` variable. We use the `OneTimeSetUp` attribute to tell NUnit to run this method one time per test fixture.
 
 ```cs
 [OneTimeSetUp]
