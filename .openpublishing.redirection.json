@@ -21519,6 +21519,11 @@
       "source_path": "learn-pr/wwl-data-ai/use-mlflow-to-track-experiments-azure-databricks/3-terminology.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/mlflow-azure-databricks/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-mlflow-to-track-experiments-azure-databricks/2-understand-capabilities-of-mlflow.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/mlflow-azure-databricks/",
+      "redirect_document_id": false
     }
   ]
 }
