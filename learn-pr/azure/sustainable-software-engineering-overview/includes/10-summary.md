@@ -5,7 +5,7 @@ In this module, you learned about the emerging discipline of Sustainable Softwar
 1. **Carbon awareness**: Build applications that are carbon-aware
 1. **Hardware efficiency**: Build applications that are hardware efficient
 1. **Measurement**: Learn how to measure carbon emissions.
-1. **Climate commitments**: TBD.
+1. **Climate commitments**: Defining the exact mechanism of carbon reduction.
 
 In addition, you also learned about the two philosophies of Sustainable Software Engineering:
 
