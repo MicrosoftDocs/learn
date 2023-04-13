@@ -4,14 +4,13 @@ title: "Principle 6: Climate commitments"
 metadata:
   title: "Principle 6: Climate commitments"
   description: The sixth principle of sustainable software engineering is about measuring carbon emissions, and how to calculate your Software Carbon Intensity (SCI) scores.
-  ms.date: 03/01/2023
+  ms.date: 04/13/2023
   author: Zimmergren
   ms.author: tozimmergren
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.contributors:
   - tozimmergren
-  - vknight
   - simont
 durationInMinutes: 3
 content: |
