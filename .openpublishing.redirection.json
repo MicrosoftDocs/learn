@@ -21444,6 +21444,11 @@
       "source_path": "learn-pr/wwl-data-ai/work-data-azure-databricks/4-visualize-data.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/use-apache-spark-azure-databricks/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/train-machine-learning-model-azure-databricks/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/machine-learning-azure-databricks/",
+      "redirect_document_id": false
     }
   ]
 }
