@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/12/2023
+  ms.date: 04/13/2023
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -18,22 +18,22 @@ quiz:
     choices:
     - content: "3"
       isCorrect: false
-      explanation: "That's incorrect. This is not sufficient. Three-way mirroring requires at least five physical disks."
+      explanation: "That's incorrect. This isn't sufficient. Three-way mirroring requires at least five physical disks."
     - content: "4"
       isCorrect: false
-      explanation: "That's incorrect. This is not sufficient. Three-way mirroring requires at least five physical disks."
+      explanation: "That's incorrect. This isn't sufficient. Three-way mirroring requires at least five physical disks."
     - content: "5"
       isCorrect: true
       explanation: "That's correct. Three-way mirroring requires at least five physical disks."
   - content: "What's a limitation of Storage Spaces?"
     choices:
-    - content: "It is not possible to mix different types of storage in the same pool."
+    - content: "It isn't possible to mix different types of storage in the same pool."
       isCorrect: false
       explanation: "That's incorrect. You can use different types of storage in the same pool (for example, SATA, SAS, USB, and SCSI)."
-    - content: "It is not possible to use Storage Spaces on boot and system volumes."
+    - content: "It isn't possible to use Storage Spaces on boot and system volumes."
       isCorrect: true
       explanation: "That's correct. Storage Spaces volumes aren't supported on boot or system volumes."
-    - content: "After a storage pool is created, it is not possible to increase its size."
+    - content: "After a storage pool is created, it isn't possible to increase its size."
       isCorrect: false
       explanation: "That's incorrect. You can grow storage pools as required."
   - content: "How many cluster nodes are required to implement nested resiliency in Storage Spaces Direct?"
