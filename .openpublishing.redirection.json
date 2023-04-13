@@ -21444,6 +21444,86 @@
       "source_path": "learn-pr/wwl-data-ai/work-data-azure-databricks/4-visualize-data.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/use-apache-spark-azure-databricks/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/train-machine-learning-model-azure-databricks/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/machine-learning-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/train-machine-learning-model-azure-databricks/5-exercise.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/machine-learning-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/train-machine-learning-model-azure-databricks/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/machine-learning-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/train-machine-learning-model-azure-databricks/6-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/machine-learning-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/train-machine-learning-model-azure-databricks/7-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/machine-learning-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/train-machine-learning-model-azure-databricks/3-train-validate-model.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/machine-learning-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/train-machine-learning-model-azure-databricks/2-understand-spark-ml.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/machine-learning-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/train-machine-learning-model-azure-databricks/4-use-other-frameworks.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/machine-learning-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-mlflow-to-track-experiments-azure-databricks/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/mlflow-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-mlflow-to-track-experiments-azure-databricks/5-exercise-experiment.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/mlflow-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-mlflow-to-track-experiments-azure-databricks/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/mlflow-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-mlflow-to-track-experiments-azure-databricks/6-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/mlflow-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-mlflow-to-track-experiments-azure-databricks/4-run-experiments.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/mlflow-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-mlflow-to-track-experiments-azure-databricks/7-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/mlflow-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-mlflow-to-track-experiments-azure-databricks/3-terminology.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/mlflow-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-mlflow-to-track-experiments-azure-databricks/2-understand-capabilities-of-mlflow.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/mlflow-azure-databricks/",
+      "redirect_document_id": false
     }
   ]
 }
