@@ -14,29 +14,29 @@ durationInMinutes: 5
 content: |
 quiz:
   questions:
-  - content: "If an Azure NetApp Files volume will be accessed by both Windows and Linux machines, which is the best file protocol option to assign to the volume?"
+  - content: "If both Windows and Linux machines are accessing an Azure NetApp Files volume, which is the best file protocol option to assign to the volume?"
     choices:
     - content: "NFSv4"
       isCorrect: false
-      explanation: "Incorrect. While Azure NetApp Files volumes that use only the NFSv4 protocol can be readily accessed by Linux machines, mounting NFS volumes in Windows is a complex task."
+      explanation: "Incorrect. While Linux machines can readily access Azure NetApp Files volumes that use only the NFSv4 protocol, mounting NFS volumes in Windows is a complex task."
     - content: "SMB3"
       isCorrect: false
-      explanation: "Incorrect. Azure NetApp Files volumes that use only the SMB3 protocol can be accessed by Windows machines. However, mounting SMB volumes in Linux requires additional configuration."
+      explanation: "Incorrect. Windows machines can only access Azure NetApp Files volumes that use the SMB3 protocol. However, mounting SMB volumes in Linux requires more configuration."
     - content: "NFSv3 and SMB3"
       isCorrect: true
       explanation: "Correct. Azure NetApp Files supports creating volumes that use NFSv3 and SMB3 simultaneously. This capability enables both Linux and Windows machines to mount the volume without extra configuration."
-  - content: "If an enterprise app requires 128 MiB/s throughput and a 2 TiB volume size, which Azure NetApp Files service tier should be selected when creating the capacity pool, assuming the pool uses automatic QoS?"
+  - content: "An enterprise app requires 128 MiB/s throughput and a 2-TiB volume size. Which Azure NetApp Files service tier should be selected when creating the capacity pool, assuming the pool uses automatic QoS?"
     choices:
     - content: "Premium"
       isCorrect: true
       explanation: "Correct. The Premium tier provides up to 64 MiB/s of throughput per 1 TiB of capacity provisioned, so provisioning 2 TiB for the volume provides up to 128 MiB/s throughput."
     - content: "Ultra"
       isCorrect: false
-      explanation: "Incorrect. The Ultra tier provides up to 128 MiB/s of throughput per 1 TiB of capacity provisioned, so provisioning 2 TiB for the volume provides up to 256 MiB/s throughput, which is more than the requirement."
+      explanation: "Incorrect. The Ultra tier provides up to 128 MiB/s of throughput per 1 TiB of capacity provisioned. So, provisioning 2 TiB for the volume provides up to 256 MiB/s throughput, which is more than the requirement."
     - content: "Standard"
       isCorrect: false
-      explanation: "Incorrect. The Standard tier provides up to 16 MiB/s of throughput per 1 TiB of capacity provisioned, so provisioning 2 TiB for the volume provides up to 32 MiB/s throughput, which is less than the requirement."
-  - content: "Suppose a VDI administrator who is responsible for thousands of virtual desktops is working on an infrastructure for which a key consideration is the capability to roll back any user profile to an earlier configuration. This will be useful for troubleshooting. The infrastructure also must have the capability of reverting an entire volume to an earlier state, which can help the company recover from a ransomware attack. When considering migrating the VDI deployment to Azure, which of the following Azure NetApp Files features provides the required capabilities?"
+      explanation: "Incorrect. The Standard tier provides up to 16 MiB/s of throughput per 1 TiB of capacity provisioned. So, provisioning 2 TiB for the volume provides up to 32 MiB/s throughput, which is less than the requirement."
+  - content: "Suppose a VDI administrator who is responsible for thousands of virtual desktops is working on an infrastructure. A key consideration for the infrastructure is the capability to roll back any user profile to an earlier configuration. This capability is useful for troubleshooting. The infrastructure must also have the capability of reverting an entire volume to an earlier state, which can help the company recover from a ransomware attack. Which of the following Azure NetApp Files features provides the required capabilities?"
     choices:
     - content: "Quality of Service"
       isCorrect: false
@@ -47,7 +47,7 @@ quiz:
     - content: "Snapshots"
       isCorrect: true
       explanation: "Correct. A snapshot is a point-in-time image of a volume that enables you to roll back files and directories to an earlier state and to revert the entire volume to an earlier configuration."
-  - content: "Suppose an IT administrator has been asked to research the viability of moving the company's enterprise apps to Azure and using Azure NetApp Files for the apps' shared storage. The main constraint they face is a minimal budget to perform the actual migration. This means that the migration must be performed with little or no modifications to the app code, data, or configuration. Which of the following options best describes this type of migration?"
+  - content: "Suppose an IT administrator has been asked to research the viability of moving the company's enterprise apps to Azure, and using Azure NetApp Files for the apps' shared storage. The main constraint they face is a minimal budget to perform the actual migration. Because of this constraint, the migration must be performed with little or no modifications to the app code, data, or configuration. Which of the following options best describes this type of migration?"
     choices:
     - content: "Low latency"
       isCorrect: false
@@ -63,9 +63,9 @@ quiz:
     - content: "A small-scale, low-performance workload that consists mostly of static content with relatively constant demand"
       isCorrect: true
       explanation: "Correct. Azure NetApp Files isn't ideal for small, static workloads. Azure NetApp Files is best used with large-scale, high-performance workloads with elastic content and demand."
-    - content: "A high-performance computing simulation application that requires very high IOPS and very low latency"
+    - content: "A high-performance computing simulation application that requires high IOPS and low latency"
       isCorrect: false
-      explanation: "Incorrect. Azure NetApp Files supports up to 450,000 IOPS and sub-millisecond latency, so it is ideal for this type of application."
+      explanation: "Incorrect. Azure NetApp Files supports up to 450,000 IOPS and submillisecond latency, so it's ideal for this type of application."
     - content: "A massive Microsoft SQL Server deployment"
       isCorrect: false
-      explanation: "Incorrect. The high throughput and very low latency offered by Azure NetApp Files makes it well-suited as a shared storage container for even the largest databases."
+      explanation: "Incorrect. The high throughput and low latency offered by Azure NetApp Files makes it well-suited as a shared storage container for even the largest databases."

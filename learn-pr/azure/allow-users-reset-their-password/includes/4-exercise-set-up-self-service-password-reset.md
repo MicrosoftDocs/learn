@@ -2,9 +2,9 @@ In this unit, you'll configure and test self-service password reset (SSPR) by us
 
 ## Create an Azure AD organization
 
-The default Azure Active Directory (Azure AD) organization in the Azure sandbox doesn't support SSPR. So in this exercise, let's create a second organization and switch to it.
+For this step, you'll want to create a new directory and sign up for trial Premium subscription for Azure AD. 
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with the same account you used to activate the sandbox.
+1. Sign in to the [Azure portal](https://portal.azure.com/).
 1. Select **Create a resource** > **Identity** > **Azure Active Directory**.
 
    ![Screenshot that shows Azure Active Directory in the Azure Marketplace.](../media/4-create-active-directory.png)

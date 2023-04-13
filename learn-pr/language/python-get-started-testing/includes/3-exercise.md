@@ -1,6 +1,5 @@
 In this exercise, you'll take advantage of the `unittest` module, which is included in Python's standard library to write tests and fix bugs. Passing tests ensures that code is behaving as expected, increasing the confidence that new changes aren't breaking previous functionality.
 
-
 ## Step 1 - Add a file for this exercise
 
 1. Using Python's filename conventions for test files, create a new test file. Name the test file *test_exercise.py* and add the following code:

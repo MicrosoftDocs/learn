@@ -26,7 +26,7 @@ roles:
   - developer
   - student
 products:
-  - vs
+  - vs-code
 units:
   - learn.beginner-python.create-run-program.introduction
   - learn.beginner-python.create-run-program.print

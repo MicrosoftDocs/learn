@@ -2,7 +2,7 @@ The Azure Health Bot service is a cloud platform that empowers developers in hea
 
 The service combines built-in medical intelligence with natural language capabilities and more. It allows healthcare organizations to give people access to trusted and relevant healthcare services and information. 
 
-Healthcare organizations often have a wide range of users. To meet the diverse expectations of those users, the Health Bot service simplifies the process of creating a health bot. The service also simplifies the integration of the bot with existing systems in the organization that are accessed by patients, nurses, doctors, and other representatives.
+Healthcare organizations often have a wide range of users. To meet the diverse expectations of those users, the Health Bot service simplifies the process of creating a health bot. The service also simplifies the integration of the bot with existing systems in the organization that patients, nurses, doctors, and other representatives access.
 
 To enhance the usability of the health bot, organizations can give it a personal touch by:
 
@@ -11,7 +11,7 @@ To enhance the usability of the health bot, organizations can give it a personal
 
 These capabilities give users a customized experience each time they interact with the health bot.
 
-Customers such as American Nurses Foundation and Ireland's Health Service Executive (HSE) have been using the Azure Health Bot service to drive patient engagement in a variety of use cases.
+Customers such as American Nurses Foundation and Ireland's Health Service Executive (HSE) have been using the Azure Health Bot service to drive patient engagement in various use cases.
 
 Kate Judge, Executive Director of American Nurses Foundation, shares with us:
 

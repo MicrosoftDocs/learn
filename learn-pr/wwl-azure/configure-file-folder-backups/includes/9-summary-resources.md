@@ -1,3 +1,4 @@
+
 Azure Files file share backup is a native, cloud-based backup solution that protects your data in the cloud. Azure Backup eliminates extra maintenance overhead involved in on-premises backup solutions. The Azure Backup service smoothly integrates with Azure File Sync. You can centralize your file share data along with your backups.
 
 In this module, you identified features and usage cases for Azure Backup. You reviewed how to create and configure back up options for an Azure Recovery Services vault. You explored how to implement on-premises file and folder backups. You discovered how to configure the Microsoft Azure Recovery Services (MARS) agent.

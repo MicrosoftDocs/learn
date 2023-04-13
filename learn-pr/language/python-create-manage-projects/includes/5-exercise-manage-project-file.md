@@ -6,7 +6,7 @@ Before you start, create a virtual environment and place yourself in it. By doin
 
 1. Run `venv env`, to create a virtual environment called *env*:
 
-   ```bash
+   ```console
    python -m venv env
    ```
 
@@ -14,16 +14,14 @@ Before you start, create a virtual environment and place yourself in it. By doin
 
 1. To activate the virtual environment, run the following command on Windows:
 
-   ```bash  
-    # Windows
-    source env/Scripts/activate
+   ```console 
+   C:\ .. \env\Scripts\activate
    ```
 
    Or, this command on Linux, WSL or macOS:
   
    ```bash
-    # Linux, WSL or macOS
-    source env/bin/activate
+   source env/bin/activate
    ```
 
    Your command prompt should start with `(env)` to indicate the name of the virtual environment.
@@ -32,7 +30,18 @@ Before you start, create a virtual environment and place yourself in it. By doin
 
 You have access to some source code and a _requirements.txt_ file. The .txt file contains libraries that you want to download. You need to download these libraries so your program will function as intended.
 
-1. Create the needed files from the terminal:
+1. Create the *src* directory and the needed files from the terminal.
+
+   Run the following commands on Windows, one line at a time:
+
+   ```console
+   md src
+   cd src
+   type nul > app.py
+   type nul > requirements.txt
+   ```
+
+   Or, these commands on Linux, WSL or macOS, one line at a time:
 
     ```bash
     mkdir src
@@ -71,17 +80,19 @@ You have access to some source code and a _requirements.txt_ file. The .txt file
 
 1. Run `pip install` to install libraries specified in _requirements.txt_:
 
-   ```bash
+   ```console
    pip install -r requirements.txt
    ```
 
    You'll see output similar to the following text:
 
    ```output
-   Using cached python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
-   Requirement already satisfied: six==1.16.0 in ./env/lib/python3.9/site-packages (from -r requirements.txt (line 2)) (1.16.0)
-   Installing collected packages: python-dateutil
-   Successfully installed python-dateutil-2.8.2
+   Collecting python-dateutil==2.8.2
+     Using cached python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
+   Collecting six==1.16.0
+     Using cached six-1.16.0-py2.py3-none-any.whl (11 kB)
+   Installing collected packages: six, python-dateutil
+   Successfully installed python-dateutil-2.8.2 six-1.16.0
    ```
 
 Congratulations! You've successfully restored a project that had nothing but application files and a _requirements.txt_ file in it.
@@ -94,15 +105,26 @@ Let's first simulate being on an earlier version of `python-dateutil`.
 
 1. Run `pip install`:
 
-   ```bash
+   ```console
    pip install python-dateutil===2.7.4
+   ```
+
+   Other versions will be uninstalled before the specified version is installed:
+
+   ```output
+   Installing collected packages: python-dateutil
+     Attempting uninstall: python-dateutil
+       Found existing installation: python-dateutil 2.8.2
+       Uninstalling python-dateutil-2.8.2:
+         Successfully uninstalled python-dateutil-2.8.2
+   Successfully installed python-dateutil-2.7.4
    ```
 
    Now, you should be on version 2.7.4. Next, you want to try to upgrade to the latest patch version.
 
 1. Run `pip install --upgrade`:
 
-   ```bash
+   ```console
    pip install "python-dateutil==2.7.*" --upgrade
    ```
 

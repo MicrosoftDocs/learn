@@ -1,4 +1,4 @@
-This unit shows you how the JBoss administration tools appear on the screen and how to view the application logs.
+This unit shows you how the JBoss administration tools appear on the screen and how to view the application logs. You execute these steps in the next unit.
 
 ## JBoss EAP administration tools (CLI and web console)
 
@@ -15,3 +15,7 @@ az webapp log tail --name <your_app_name> -g <resource_group_name>
 ```
 
 In the next exercise, you'll learn how to access the JBoss administration tools and get the log stream from your running application.
+
+## Unit summary
+
+You've seen the steps to examine the server logs. In the next section, you execute the steps to see the logs in your application.

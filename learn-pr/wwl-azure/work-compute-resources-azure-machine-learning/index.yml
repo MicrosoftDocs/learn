@@ -3,7 +3,7 @@ uid: learn.wwl.work-compute-resources-azure-machine-learning
 metadata:
   title: Work with compute targets in Azure Machine Learning
   description: "Azure Machine Learning Python SDK v2"
-  ms.date: 01/17/2023
+  ms.date: 04/10/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial

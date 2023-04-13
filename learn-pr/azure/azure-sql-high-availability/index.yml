@@ -3,7 +3,7 @@ uid: learn.azure-sql-high-availability
 metadata:
   title: Deploy highly available solutions by using Azure SQL
   description: In this module, you'll learn how to deploy highly available solutions by using Azure SQL. You'll also look at architectures and how they affect availability.
-  ms.date: 08/05/2020
+  ms.date: 03/15/2023
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   manager: jroth

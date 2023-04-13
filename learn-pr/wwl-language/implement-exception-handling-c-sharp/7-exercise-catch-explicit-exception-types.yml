@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-exception-handling-c-sharp.exercise-catch-explicit-exception-types
+title: 'Exercise - Catch specific exception types '
+metadata:
+  title: Exercise - Catch specific exception types
+  description: "Exercise - Catch specific exception types"
+  ms.date: 03/24/2023
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 14
+content: |
+  [!include[](includes/7-exercise-catch-explicit-exception-types.md)]

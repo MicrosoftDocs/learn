@@ -14,7 +14,7 @@ We'll use a starter project so we can begin writing code quickly. The starter co
 
     # Windows
     git clone https://github.com/MicrosoftDocs/mslearn-react
-    cd mslearn-react\code\0-starter
+    cd mslearn-react/code/0-starter
     ```
 
 1. Install the required packages by using the following command in the same terminal or command window:

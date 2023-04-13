@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.enroll-devices-use-intune.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/14/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/12-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What are the four phases of the mobile device management lifecycle?"
+    choices:
+    - content: "Enroll, Configure, Protect, Retire"
+      isCorrect: true
+      explanation: "Correct. In the Enroll phase, devices register with the mobile device management solution. In the Configure phase, the enrolled devices comply with security configuration and policies. With the Protect phase, the mobile device management solution monitors settings established in the Configure phase. When a device is no longer needed, lost, or stolen, the device is reset with a wipe to remove only corporate-owned data."
+    - content: "Enroll, Configure, Protect, Reset"
+      isCorrect: false
+      explanation: "Incorrect. These items aren't the four phases of the mobile device management lifecycle. Try again."
+    - content: "Enroll, Compliance, Protect, Retire"
+      isCorrect: false
+      explanation: "Incorrect. These items aren't the four phases of the mobile device management lifecycle. Try again."
+  - content: "A retailer wants to provide 25 tablets to floor staff to capture orders and complete card transactions. The Intune admin creates a new Device Enrollment Manager (DEM) account for the restaurant supervisor. What functionality does the DEM user account have?"
+    choices:
+    - content: "Enroll in Intune, access email, and configure access to company data"
+      isCorrect: false
+      explanation: "Incorrect. DEM user accounts don't have a user assigned. Access to email or access to non VPN configuration data is a per-user access. Try again."
+    - content: "Enroll in Intune, unenroll in Intune, get company applications, and configures access to company data by deploying role-specific applications"
+      isCorrect: false
+      explanation: "Incorrect. DEM user accounts cannot unenroll a device that has been enrolled in Intune. An Intune administrator can unenroll the device. Try again."
+    - content: "Enroll in Intune, get company applications, and configure access to company data by deploying role-specific applications"
+      isCorrect: true
+      explanation: "Correct. The DEM user account is a special user account that can enroll up to 1,000 devices. A DEM account is useful for scenarios where devices are enrolled and configured before given to the user."

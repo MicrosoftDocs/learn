@@ -27,6 +27,7 @@ roles:
 - auditor
 - ip-admin
 products:
+- microsoft-purview
 - m365
 - m365-information-protection
 subjects:

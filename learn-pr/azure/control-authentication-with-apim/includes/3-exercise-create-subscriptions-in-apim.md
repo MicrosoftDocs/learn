@@ -74,7 +74,7 @@ The next step in this exercise is to create an API gateway in the Azure portal. 
     | **Instance details** |
     | Region | Select from one of the following regions: North Central US, West US, West Europe, North Europe, Southeast Asia, and Australia East. The Consumption tier used in this exercise is only available in these regions. |
     | Resource name | Enter `apim-WeatherData<random number>`; the random number is to ensure that the name is globally unique. Make a note of this resource name; it will be the API gateway name that you'll need it later in this exercise. |
-    | Organization name | Enter `Weather-Company`. |
+    | Workspace name | Enter `Weather-Company`. |
     | Administrator email | Enter your own email address. |
     | **Pricing tier** |
     | Pricing tier | From the dropdown list, select `Consumption`. |

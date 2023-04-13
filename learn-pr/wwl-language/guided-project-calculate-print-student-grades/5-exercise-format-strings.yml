@@ -4,12 +4,12 @@ title: Exercise - Format the output using escaped character sequences
 metadata:
   title: Exercise - Format the output using escaped character sequences
   description: "Exercise - Format the output using escaped character sequences"
-  ms.date: 02/23/2023
+  ms.date: 03/20/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-interactive: csharp
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-format-strings.md)]
+interactive: csharp

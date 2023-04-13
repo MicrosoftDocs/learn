@@ -8,8 +8,6 @@ View the following video to learn more.
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4voJG]
 
-You can find out more about how the Yield is using machine learning to feed the world without wrecking the planet [here](https://news.microsoft.com/transform/videos/yield-feed-world-without-wrecking-planet/).
-
 ## How machine learning works
 
 So how do machines learn?

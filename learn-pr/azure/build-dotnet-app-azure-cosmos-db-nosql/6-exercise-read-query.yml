@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.build-dotnet-app-azure-cosmos-db-nosql.exercise-read-query
+title: Exercise - Read and query items
+metadata:
+  unitType: exercise
+  title: Exercise - Read and query items
+  description: |
+    Use the Microsoft.Azure.Cosmos .NET SDK library from NuGet to point read items and perform straightforward queries.
+  sandbox: true
+  author: seesharprun
+  ms.author: sidandrews
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.date: 3/30/2023
+durationInMinutes: 9
+content: |
+  [!include[](includes/6-exercise-read-query.md)]

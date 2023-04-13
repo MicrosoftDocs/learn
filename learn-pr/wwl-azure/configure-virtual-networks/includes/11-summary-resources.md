@@ -1,3 +1,4 @@
+
 Azure virtual networks are a fundamental building block for your private network in Azure. Azure virtual networks enable many types of Azure resources to securely communicate. The resources can communicate with each other, the internet, and on-premises networks. Azure Virtual Network is similar to a traditional network, but offers more benefits such as scale, availability, and isolation.
 
 Azure IP addressing is critical to ensuring resources are accessible. You can use private IP addresses to communicate between resources in Azure. Public IP addresses enable Azure resources to be accessible directly from the internet.

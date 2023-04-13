@@ -2,19 +2,19 @@
 uid: learn.azure.intro-to-azure-virtual-machine-scale-sets
 metadata:
   title: Introduction to Azure Virtual Machine Scale Sets
-  description: Learn about what Azure virtual machine scale sets do, how they work, and when you should choose to use Azure virtual machine scale sets as a solution to meet your organization's needs.
-  ms.date: 09/20/2022
+  description: Learn about what Azure Virtual Machine Scale Sets do, how they work, and when you should use Azure Virtual Machine Scale Sets as a solution for your organization.
+  ms.date: 03/31/2023
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=cloud_advocates
 title: Introduction to Azure Virtual Machine Scale Sets
-summary: Learn about what Azure virtual machine scale sets do, how they work, and when you should choose to use Azure virtual machine scale sets as a solution to meet your organization's needs.
+summary: Learn about what Azure Virtual Machine Scale Sets do, how they work, and when you should use Azure Virtual Machine Scale Sets as a solution for your organization.
 abstract: |
   In this module, you will:
-  - Learn what Azure virtual machine scale sets are and the functionality they provide
-  - Determine whether Azure virtual machine scale sets meet the needs of your organization
+  - Learn what Azure Virtual Machine Scale Sets are and the functionality they provide
+  - Determine whether Azure Virtual Machine Scale Sets meet the needs of your organization
   - Understand the difference between using virtual machine scale sets and scaling up individual instances
 prerequisites: An understanding of basic networking and virtual machine compute concepts
 iconUrl: /training/achievements/generic-badge.svg

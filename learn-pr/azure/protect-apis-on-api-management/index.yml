@@ -3,7 +3,7 @@ uid: learn.protect-apis-on-api-management
 metadata:
   title: Protect your APIs on Azure API Management
   description: Protect your back-end APIs from information exposure and implement throttling to prevent resource exhaustion with policies in Azure API Management.
-  ms.date: 05/10/2019
+  ms.date: 03/07/2023
   author: dlepow
   ms.author: danlep
   ms.topic: interactive-tutorial

@@ -2,12 +2,12 @@
 uid: learn.wwl.get-tips-tricks-teach-mb-910-dynamics-365-fundamentals
 metadata:
   title: 'Get tips and tricks for teaching MB-910: Microsoft Dynamics 365 Fundamentals (CRM)'
-  description: "Learn tips and tricks about preparing for your first teaching session of MB-910, which labs to use, when and how to introduce technical topics, as well as other resources and materials."
-  ms.date: 04/12/2022
+  description: "Learn tips and tricks about preparing for your first teaching session, which labs to use, when and how to introduce technical topics, as well as other resources and materials."
+  ms.date: 03/21/2023
   author: wwlpublish
   ms.author: tsheppard
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: dynamics-365
 title: 'Get tips and tricks for teaching MB-910: Microsoft Dynamics 365 Fundamentals (CRM)'
 summary: Learn tips and tricks about preparing for your first teaching session, which labs to use, when and how to introduce technical topics, as well as other resources and materials.
 abstract: |
@@ -22,7 +22,7 @@ prerequisites: |
   - Understand using the objective domains when preparing to teach.
   - Prepare for the exam by understanding the exam structure.
   - Prepare to teach the fundamentals courses leveraging best practices.
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/get-tips-tricks-teach-mb-910-dynamics-365-fundamentals.svg
 levels:
 - beginner
 roles:
@@ -32,12 +32,13 @@ products:
 - dynamics-customer-service
 units:
 - learn.wwl.get-tips-tricks-teach-mb-910-dynamics-365-fundamentals.introduction
+- learn.wwl.get-tips-tricks-teach-mb-910-dynamics-365-fundamentals.explore-objective-domains
 - learn.wwl.get-tips-tricks-teach-mb-910-dynamics-365-fundamentals.learn-module-best-practices
-- learn.wwl.get-tips-tricks-teach-mb-910-dynamics-365-fundamentals.learn-fundamentals-dynamics-365-market
-- learn.wwl.get-tips-tricks-teach-mb-910-dynamics-365-fundamentals.learn-fundamentals-dynamics-365-sales
-- learn.wwl.get-tips-tricks-teach-mb-910-dynamics-365-fundamentals.learn-fundamentals-dynamics-365-customer-service
-- learn.wwl.get-tips-tricks-teach-mb-910-dynamics-365-fundamentals.learn-fundamentals-dynamics-365-field-service
-- learn.wwl.get-tips-tricks-teach-mb-910-dynamics-365-fundamentals.learn-fundamentals-dynamics-365-project-operations
+- learn.wwl.get-tips-tricks-teach-mb-910-dynamics-365-fundamentals.explore-best-practices-core-capabilities
+- learn.wwl.get-tips-tricks-teach-mb-910-dynamics-365-fundamentals.explore-best-practices-dynamics-365-marketing
+- learn.wwl.get-tips-tricks-teach-mb-910-dynamics-365-fundamentals.explore-best-practices-dynamics-365-sales
+- learn.wwl.get-tips-tricks-teach-mb-910-dynamics-365-fundamentals.explore-best-practices-dynamics-365-customer-service
+- learn.wwl.get-tips-tricks-teach-mb-910-dynamics-365-fundamentals.explore-best-practices-dynamics-365-field-service
 - learn.wwl.get-tips-tricks-teach-mb-910-dynamics-365-fundamentals.bring-together
 - learn.wwl.get-tips-tricks-teach-mb-910-dynamics-365-fundamentals.knowledge-check
 - learn.wwl.get-tips-tricks-teach-mb-910-dynamics-365-fundamentals.summary

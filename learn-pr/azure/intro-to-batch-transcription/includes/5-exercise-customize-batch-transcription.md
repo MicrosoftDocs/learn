@@ -1,4 +1,4 @@
-In the previous exercise, we used the standard en-us model. For the customer service scenario, you need to investigate if it's possible to create a custom model from existing call center data. To do this, you'll use the Custom Speech portal.
+In the previous exercise, we used the standard en-us model. For the customer service scenario, you need to investigate if it's possible to create a custom model from existing call center data. To create this model, use the Custom Speech portal.
 
 The first step to train a model is to upload training data. For more information, see [Prepare and test your data](/azure/cognitive-services/speech-service/how-to-custom-speech-test-and-train) for step-by-step instructions to prepare human-labeled transcriptions and related text (utterances and pronunciations).
 
@@ -9,7 +9,7 @@ The first step to train a model is to upload training data. For more information
 1. Go to **Speech-to-text** > **Custom Speech**
 
     :::image type="content" source="../media/5-azure-speech-portal.png" alt-text="Screenshot showing the home page of the speech portal with a red line around custom models.":::
-    
+
 1. Select **Resource** then **select your new Speech Services resource**
 1. Select **Use resource**
 1. Select **Create a new project**
@@ -19,15 +19,15 @@ The first step to train a model is to upload training data. For more information
 
 ## Use audio data to create a custom speech model
 
-Now you've created a project, it's time to upload some training data. Here, you'll use the sample data from Azure Samples to reduce processing time. However, you can provide your own data if you wish.
+Now you've created a project, it's time to upload some training data. Here, you use the sample data from Azure Samples to reduce processing time. However, you can provide your own data if you wish.
 
 1. Select your new project by clicking on its name
 1. Select **Upload data**
-1. Make sure 'Audio + human-labeled transcript' is highlighted, and select **Next**
-1. Select **Azure Blob or shared location**
-1. Copy the following URL, and paste it into the 'Audio + transcript' box, then select **Next**
+1. Make sure **Audio + human-labeled transcript** is highlighted, and select **Next**
+1. Select **Azure Blob or other shared web locations**
+1. Copy the following URL, and paste it into the **Audio + transcript** box, then select **Next**
 
-    ```
+    ```http
     https://github.com/Azure-Samples/cognitive-services-speech-sdk/raw/master/sampledata/customspeech/en-US/training/audio-and-trans.zip
     ```
 
@@ -52,7 +52,7 @@ It might take several minutes for your model to complete training. In the meanti
 
 ## Set up your custom transcription
 
-1. In the exercise sandbox, paste in the following command to get our environment variables ready for the next transcription. These use the same resources as we set up in the last exercise.
+1. In the exercise sandbox, paste in the following command to get our environment variables ready for the next transcription. These variables use the same resources that we set up in the last exercise.
 
     ```bash
     # Get and set the names from the previous exercise
@@ -75,17 +75,17 @@ It might take several minutes for your model to complete training. In the meanti
 
 Now, to use the model we need to refer to it in the Cloud Shell.
 
-We can do this using an endpoint, or linking directly to the model. Here we will link directly to the model.
+We can do this using an endpoint, or linking directly to the model. Here, we link directly to the model.
 
 1. **Return to the Custom Speech portal**, and navigate to the **Train custom models section** on the far left-hand menu of the website.
 
-1. If your model has completed training, it will be listed with its name in blue. If it is not ready, wait a few minutes for training to complete. Once it is ready, click on your model's name.
+1. If your model has completed training, it's listed with its name in blue. If it isn't ready, wait a few minutes for training to complete. Once it's ready, select your model's name.
 
-1. **Copy your Model ID** from the top of the page. It will be listed as a GUID such as 0000000-1234-5678-9abc-def012345678
+1. **Copy your Model ID** from the top of the page. It's listed as a GUID such as 0000000-1234-5678-9abc-def012345678.
 
-1. Return to the sandbox terminal, and type `model_id=<your-model-id>`, replacing \<your-model-id\> with the model id you just copied, then press <kbd>Enter</kbd>
+1. Return to the sandbox terminal, and type `model_id=<your-model-id>`, replacing \<your-model-id\> with the GUID you copied in the previous step. Then, press <kbd>Enter</kbd>
 
-1. Next, we'll follow the same steps as we did in the first exercise to create a new batch of transcriptions using the custom model. This time, you'll specify for Batch Transcription to use your newly created Custom Model in the JSON. Notice how we specify the endpoint with the cognitive services URL, and the custom model ID. Run the following command to create the JSON 
+1. Next, we follow the same steps as we did in the first exercise to create a new batch of transcriptions using the custom model. This time, you specify that Batch Transcription should use your newly created Custom Model in the JSON. Notice how we specify the endpoint with the cognitive services URL, and the custom model ID. Run the following command to create the JSON. 
 
     ```bash
     # Create the JSON  
@@ -108,7 +108,7 @@ We can do this using an endpoint, or linking directly to the model. Here we will
 
     ```
 
-1. Now, we're going to use cURL to submit the transcription job with a POST request. Run the following command to submit your next Batch Transcription job
+1. Now, we're going to use cURL to submit the transcription job with a POST request. Run the following command to submit your next Batch Transcription job.
 
     ```bash
     # Submit the job
@@ -118,7 +118,7 @@ We can do this using an endpoint, or linking directly to the model. Here we will
     --data "$json")
 
     ```
-    
+
 1. Run the following query again to see the status of the new transcriptions:
 
     ```bash
@@ -131,7 +131,7 @@ We can do this using an endpoint, or linking directly to the model. Here we will
 
     ```
 
-    Take note of the status. **Once it states 'Succeeded', then move on.** It might take a minute or two to run. If it states the job is still running, wait 20 seconds, then paste the command above into the terminal and run it again. **Repeat this until the status is 'Succeeded'**
+    Take note of the status. **Once it states 'Succeeded', then move on.** It might take a minute or two to run. If it states the job is still running, wait 20 seconds, then paste the previous command into the terminal and run it again. **Repeat this until the status is 'Succeeded'**
 
 1. Run the following command to retrieve the uri for the transcription information and download the individual transcription files.
 
@@ -156,7 +156,7 @@ We can do this using an endpoint, or linking directly to the model. Here we will
 
     ```
 
-1. Run the following command to take a look at the first transcript
+1. Run the following command to take a look at the first transcript.
 
     ```bash
     # View the first transcript in nano

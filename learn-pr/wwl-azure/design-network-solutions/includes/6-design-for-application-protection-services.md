@@ -39,7 +39,7 @@ Azure Firewall is a managed, cloud-based network security service that protects 
 - React faster to security threats by centrally patching known vulnerabilities instead of securing individual web apps
 - Deploy Web Application Firewall with Application Gateway, Front Door, and Content Delivery Network
 
-### Azure Virtual Network - Security groups
+### Azure virtual network security groups
 
 You can filter network traffic to and from Azure resources in an Azure virtual network with [Azure network security group (NSGs)](/azure/virtual-network/network-security-groups-overview). You can use a network virtual appliance (NVA) such as Azure Firewall or firewalls from other vendors.
 

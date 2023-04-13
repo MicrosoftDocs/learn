@@ -15,10 +15,10 @@ The GeoJSON format defines three objects:
 
 A *geometry* is a region in space. A geometry can be:
 
-* A single point that's defined by a longitude and a latitude
-* Multiple points that describe a line
-* Multiple points that describe the outline of a polygon
-* A collection of multiple geometries
+* A single point defined by a longitude and a latitude.
+* Multiple points that describe a line.
+* Multiple points that describe the outline of a polygon.
+* A collection of multiple geometries.
 
 A geometry GeoJSON object has two properties:
 
@@ -143,4 +143,4 @@ Here's an example of a feature collection for two European cities:
 }
 ```
 
-In this unit, you learned about the GeoJSON format that's used to store spatial data and its three object types. Next, you'll use an API to get air quality data, convert the data to GeoJSON, and then show the data on a map.
+In this unit, you learned about the GeoJSON format that's used to store spatial data and its three object types. Next, you use an API to get air quality data, convert the data to GeoJSON, and then show the data on a map.

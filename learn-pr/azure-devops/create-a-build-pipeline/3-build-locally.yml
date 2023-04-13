@@ -4,12 +4,13 @@ title: Exercise - Get the sample application
 metadata:
   title: Exercise - Get the sample application
   description: Build and run the sample application locally to help ensure it will build in your pipeline.
-  ms.date: 01/13/2023
-  ms.custom: devdivchpfy22
+  ms.date: 04/04/2023
+  ms.custom: devdivchpfy22, engagement-fy23
   author: steved0x
   ms.author: sdanie
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: learning-azure  
+  zone_pivot_groups: azure-pipelines-agent-hosting
 durationInMinutes: 10
 content: |
   [!include[](includes/3-build-locally.md)]

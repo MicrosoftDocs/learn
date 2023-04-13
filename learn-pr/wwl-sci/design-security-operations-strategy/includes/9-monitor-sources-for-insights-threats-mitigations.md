@@ -1,3 +1,4 @@
+
 Organizations use Cyber Threat Intelligence to collect information gained from access to various signals across the Microsoft network. Cyber Threat Intelligence can be sourced from many places. These include, open-source data feeds, threat intelligence-sharing communities, commercial intelligence feeds, and local intelligence gathered during security investigations within an organization. Every second, hundreds of GB's worth of data is added to the Microsoft Intelligent Security Graph. This anonymized data comes from:
 
 -   Over a hundred Microsoft data centers across the globe.

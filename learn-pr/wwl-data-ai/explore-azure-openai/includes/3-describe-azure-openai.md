@@ -1,5 +1,3 @@
-![Screenshot of Microsoft and OpenAI logos together for Azure OpenAI.](../media/openai-microsoft-logo.png)
-
 Microsoft has partnered with OpenAI to deliver on three main goals:  
 - To utilize Azure's infrastructure, including security, compliance, and regional availability, to help users build enterprise-grade applications.
 - To deploy OpenAI AI model capabilities across Microsoft products, including and beyond Azure AI products.

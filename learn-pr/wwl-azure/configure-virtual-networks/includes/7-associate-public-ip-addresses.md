@@ -1,3 +1,4 @@
+
 A public IP address resource can be associated with virtual machine network interfaces, internet-facing load balancers, VPN gateways, and application gateways. You can associate your resource with both dynamic and static public IP addresses.
 
 ### Things to consider when associating public IP addresses

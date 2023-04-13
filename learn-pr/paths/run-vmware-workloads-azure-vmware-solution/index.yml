@@ -4,7 +4,7 @@ metadata:
   title: Run VMware resources on Azure VMware Solution
   description: Learn about Azure VMware Solution, how to deploy the resource, and how to migrate VMware virtual machines on-premises.
   brand: azure
-  ms.date: 06/21/2021
+  ms.date: 04/06/2023
   author: sbkuehn
   ms.author: shkuehn
   ms.topic: interactive-tutorial
@@ -36,5 +36,6 @@ modules:
 - learn.deploy-azure-vmware-solution
 - learn.migrate-vmware-workloads-on-premises-azure-vmware-solution
 - learn.azure.deploy-disaster-recovery-vmware-srm-azure-vmware-solution
+- learn.azure.azure-vmware-solution
 trophy:
   uid: learn.run-vmware-workloads-azure-vmware-solution.trophy

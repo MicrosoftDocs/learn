@@ -1,4 +1,4 @@
-You've decided to use an Azure Service Bus topic to distribute sales performance messages in your salesforce application. Sales personnel will use the app on their mobile devices to send messages that summarize sales figures for each area and time period. Those messages will be distributed to web services that are located in the company's operational regions, including the Americas and Europe.
+You've decided to use an Azure Service Bus topic to distribute sales performance messages in your salesforce application. Sales personnel will use the app on their mobile devices to send messages that summarize sales figures for each area and time period. Those messages are distributed to web services that are located in the company's operational regions, including the Americas and Europe.
 
 You've already implemented the necessary infrastructure in your Azure subscriptions for the topic. Now, you want to write the code that sends messages to the topic and write code that retrieves messages from a subscription. Then, you'll send a message to a topic and retrieve the message for a specific subscription.
 
@@ -148,10 +148,10 @@ When you see `Message was sent successfully`, run the following command to see h
 ```azurecli
 az servicebus topic subscription show \
     --resource-group <rgn>[sandbox resource group name]</rgn> \
-    --namespace-name <namespace-name> \
     --topic-name salesperformancemessages \
     --name Americas \
-    --query messageCount
+    --query messageCount \
+    --namespace-name <namespace-name>
 ```
 
 If you replace `Americas` with `EuropeAndAsia` and run the command again, you'll see that both subscriptions have the same number of messages.
@@ -355,10 +355,10 @@ Run the following command to confirm that there are no remaining messages in the
 ```azurecli
 az servicebus topic subscription show \
      --resource-group <rgn>[sandbox resource group name]</rgn> \
-     --namespace-name <namespace-name> \
      --topic-name salesperformancemessages \
      --name Americas \
-     --query messageCount
+     --query messageCount \
+     --namespace-name <namespace-name> \
 ```
 
 If you replace `Americas` with `EuropeAndAsia` in this code to see the current message count for the `EuropeAndAsia` subscription, you'll see that the message count is `1`. In the preceding code, only `Americas` was set to retrieve topic messages, so that message is still waiting for `EuropeAndAsia` to retrieve it.

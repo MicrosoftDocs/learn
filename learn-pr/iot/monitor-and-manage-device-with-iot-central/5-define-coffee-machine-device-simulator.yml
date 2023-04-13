@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.monitor-manage-device-with-iotcentral.define-coffee-machine-device-simulator
+title: Define the coffee machine device simulator
+metadata:
+  title: Define the coffee machine device simulator
+  description: This content is a part of Build your first Azure IoT Central application to manage your coffee machines
+  ms.date: 03/16/2023
+  author: asergaz
+  ms.author: sergaz
+  ms.reviewer: adchukwu
+  manager: lizross
+  ms.custom: engagement-fy23
+  ms.topic: module-build-your-first
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-define-coffee-machine-device-simulator.md)]

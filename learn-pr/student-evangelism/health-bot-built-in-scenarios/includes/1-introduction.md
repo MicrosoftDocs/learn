@@ -2,7 +2,7 @@ Azure Health Bot supports many built-in scenarios. Some examples are to triage a
 
 ## What is a scenario?
 
-Scenarios are conversational flows that are programmed into the bot. Typically, when a scenario is triggered by the health bot, the user completes a series of questions and answers until the scenario is complete. There are two types of scenarios: built-in and custom scenarios.
+Scenarios are conversational flows that are programmed into the bot. Typically, when the health bot triggers a scenario, the user completes a series of questions and answers until the scenario is complete. There are two types of scenarios: built-in and custom scenarios.
 
 ## Learning objectives
 

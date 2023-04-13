@@ -4,7 +4,7 @@ What is the origin of the name ThreadX?
 
 :::image type="content" source="../media/threadx-logo-sm.png" alt-text="Image of the Thread X logo." border="false":::
 
-The name ThreadX derives from the fact that threads are used as the executable modules, and the letter “X” represents switching. Switching threads fast and efficiently is an essential feature of an RTOS, and ThreadX switches threads quickly and efficiently.
+The name ThreadX derives from the fact that threads are used as the executable modules, and the letter “X” represents switching. Switching threads fast and efficiently is an essential feature of a real-time operating system (RTOS), and ThreadX switches threads quickly and efficiently.
 
 ## Learning objectives
 

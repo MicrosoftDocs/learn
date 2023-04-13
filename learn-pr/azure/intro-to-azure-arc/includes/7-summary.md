@@ -1,4 +1,4 @@
-Contoso will need to continue to operate an on-premises environment for some time after it begins migrating workloads to Azure IaaS VMs. Consequently, being able to apply Azure policies to on-premises Windows Server workloads is proving to be important. Additionally, administrators need to be able to review on-premises Windows Server instances in the Azure portal. Not only that, but it's important that administrators can use the Azure portal to review Kubernetes clusters.
+Contoso will need to continue to operate an on-premises environment for some time after it begins migrating workloads to Azure IaaS VMs. So, being able to apply Azure policies to on-premises Windows Server workloads is proving to be important. Additionally, administrators need to be able to review on-premises Windows Server instances in the Azure portal. Not only that, but it's important that administrators can use the Azure portal to review Kubernetes clusters.
 
 In this module, you learned about Azure Arc-enabled servers. You also learned about Azure Arc-enabled Kubernetes clusters.
 

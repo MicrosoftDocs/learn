@@ -15,7 +15,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "The security admin has created an Azure Network Security Group (NSG) to filter network traffic to a virtual machine.  The admin wants to allow inbound traffic using the Remote Desktop Protocol (RDP), but the default NSG rules are currently blocking all inbound traffic that is not from another virtual network or an Azure load balancer.  What does the security admin have to do to allow inbound traffic using RDP?"
+  - content: "The security admin has created an Azure Network Security Group (NSG) to filter network traffic to a virtual machine. The admin wants to allow inbound traffic using the Remote Desktop Protocol (RDP), but the default NSG rules are currently blocking all inbound traffic that is not from another virtual network or an Azure load balancer.  What does the security admin have to do to allow inbound traffic using RDP?"
     choices:
     - content: "Delete the default rule."
       isCorrect: false

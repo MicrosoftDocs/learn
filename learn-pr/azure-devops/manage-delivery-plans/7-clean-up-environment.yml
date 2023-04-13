@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Clean up your environment
   description: Clean up your Azure DevOps project.
   ms.date: 06/16/2022
-  author: kathrynee
-  ms.author: kaelli
+  author: chcomley
+  ms.author: chcomley
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3

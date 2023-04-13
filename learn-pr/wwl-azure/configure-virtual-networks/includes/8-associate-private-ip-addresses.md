@@ -1,3 +1,4 @@
+
 A private IP address resource can be associated with virtual machine network interfaces, internal load balancers, and application gateways. Azure can provide an IP address (dynamic assignment) or you can assign the IP address (static assignment).
 
 ### Things to consider when associating private IP addresses

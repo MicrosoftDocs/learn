@@ -1,3 +1,4 @@
+
 Your company is migrating to Azure and replicating their on-premises network in the cloud. They're developing a plan to use Azure Virtual Network to organize company resources into virtual networks and subnets. You're working on the design for the company IP address schema, mapping out which ranges can be assigned, and which ranges can be denied traffic.
 
 - The Sales department has a subnet with an address range of 10.3.0.0/16.

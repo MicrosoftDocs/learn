@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.wwl.design-solutions-secure-organization-data
+metadata:
+  title: Design solutions for securing an organization's data
+  description: "You learn about designing solutions that secure an organization's data using capabilities like Microsoft Purview, Defender for SQL, Defender for Storage."
+  ms.date: 3/14/2023
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+title: Design solutions for securing an organization's data
+summary: "You learn about designing solutions that secure an organization's data using capabilities like Microsoft Purview, Defender for SQL, Defender for Storage."
+abstract: |
+  By the end of this module, you are able to:
+  - Design a solution for data discovery and classification using Microsoft Purview
+  - Specify priorities for mitigating threats to data
+  - Design a solution for protection of data at rest, data in motion, and data in use
+  - Design a security solution for data in Azure workloads
+  - Design a security solution for data in Azure Storage
+  - Design a security solution that includes Microsoft Defender for SQL and Microsoft Defender for Storage
+prerequisites: |
+  - Advanced experience and knowledge in identity and access, platform protection, security operations, securing data, and securing applications.
+  - Experience with hybrid and cloud implementations.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- security-engineer
+- solution-architect
+products:
+- azure
+- defender-for-cloud
+- defender-for-cloud-apps
+- defender-identity
+- microsoft-sentinel
+subjects:
+  - security
+  - cloud-security
+units:
+- learn.wwl.design-solutions-secure-organization-data.introduction-data-security
+- learn.wwl.design-solutions-secure-organization-data.design-solution-data-discovery-classification-microsoft-purview
+- learn.wwl.design-solutions-secure-organization-data.design-solution-data-protection
+- learn.wwl.design-solutions-secure-organization-data.design-data-security-azure-workloads
+- learn.wwl.design-solutions-secure-organization-data.design-security-azure-storage
+- learn.wwl.design-solutions-secure-organization-data.design-security-defender-sql-storage
+- learn.wwl.design-solutions-secure-organization-data.knowledge-check
+- learn.wwl.design-solutions-secure-organization-data.summary
+badge:
+  uid: learn.wwl.design-solutions-secure-organization-data.badge

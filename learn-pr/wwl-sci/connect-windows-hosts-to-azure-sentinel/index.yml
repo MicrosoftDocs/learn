@@ -24,7 +24,10 @@ roles:
 - security-operations-analyst
 products:
 - azure
-- azure-sentinel
+- microsoft-sentinel
+- windows-security
+- windows-sysinternals
+- azure-policy
 subjects:
 - threat-protection
 units:

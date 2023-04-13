@@ -1,3 +1,4 @@
+
 Having completed this module, you now have a better understanding of how Log Analytics and alerts can help highlight issues before they become a problem. You know about the different gateways, and when to reset them. Also, you understand the tools available, and why some key issues can cause problems with certificate-based VPN connections.
 
 Now you’ve completed this module, you should be able to:

@@ -10,12 +10,15 @@ If you don't have the build tools installed, follow these steps:
 
 1. In the popup dialog, select **Yes**. In the next popup dialog, select **Continue**.
 
-1. In the Installer window, under **Desktop & Mobile**, select the checkbox for the **C++ build tools** option on the left. 
+1. In the Installer window, under **Desktop & Mobile**, select the checkbox for the **Desktop development with C++** option.
 
-1. In the Installation details pane on the right, make sure the following options are selected:
+1. In the **Installation details** pane, make sure the following options are selected:
 
-   :::image type="content" source="../media/install-visual-cpp-build-tools.png" alt-text="Screenshot that shows the options to install with the Visual C plus plus build tools." lightbox="../media/install-visual-cpp-build-tools-large.png":::
+   > [!NOTE]
+   > Make sure you select the correct SDK for your operating system.
 
-1. At the bottom right, select **Install**.
+   :::image type="content" source="../media/install-visual-studio-build-tools.png" alt-text="Screenshot that shows the options to install with the Visual C plus plus build tools." lightbox="../media/install-visual-studio-build-tools.png":::
+
+1. Select **Install**.
 
 After the installation completes, you can continue with the Rust installation.

@@ -5,9 +5,9 @@ metadata:
   unitType: introduction
   title: Introduction
   description: "Introduction to Azure DNS Private Resolver and how to use to resolve DNS queries from on-premises to cloud."
-  ms.date: 4/26/2022
-  author: ricmmartins
-  ms.author: ricmart
+  ms.date: 03/17/2023
+  author: greg-lindsay
+  ms.author: greglin
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 1

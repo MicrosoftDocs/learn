@@ -12,13 +12,14 @@ A *workload* is a distinct capability or task that's logically separated from ot
 
 On Azure, the Special Orders application will require:
 
-* Two virtual machines.
-* One instance of Azure SQL Database.
-* One instance of Azure Load Balancer.
+ -  Two virtual machines.
+ -  One instance of Azure SQL Database.
+ -  One instance of Azure Load Balancer.
 
 Here's a diagram that shows the basic architecture:
 
-:::image type="content" source="../media/4-special-orders-architecture.svg" alt-text="A diagram showing two virtual machines connected to Azure Load Balancer and Azure SQL Database." border="false":::
+:::image type="content" source="../media/4-special-orders-architecture-75dc6b93.png" alt-text="A diagram showing two virtual machines connected to Azure Load Balancer and Azure SQL Database.":::
+
 
 ## Combine SLAs to compute the composite SLA
 
@@ -28,24 +29,49 @@ The process of combining SLAs helps you compute the *composite SLA* for a set of
 
 From [Service Level Agreements](https://azure.microsoft.com/support/legal/sla/?azure-portal=true), you discover the SLA for each Azure service that you need. They are:
 
-| Service | SLA |
-| --- | --- |
-| Azure Virtual Machines | 99.9 percent |
-| Azure SQL Database | 99.99 percent |
-| Azure Load Balancer | 99.99 percent |
+:::row:::
+  :::column:::
+    **Service**
+  :::column-end:::
+  :::column:::
+    **SLA**
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Azure Virtual Machines
+  :::column-end:::
+  :::column:::
+    99.9 percent
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Azure SQL Database
+  :::column-end:::
+  :::column:::
+    99.99 percent
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Azure Load Balancer
+  :::column-end:::
+  :::column:::
+    99.99 percent
+  :::column-end:::
+:::row-end:::
+
 
 Therefore, for the Special Orders application, the composite SLA would be:
 
-$$99.9\\% \times 99.9\\% \times 99.99\\% \times 99.99\\%$$
-$$= 0.999 \times 0.999 \times 0.9999 \times 0.9999$$
-$$= 0.9978$$
-$$= 99.78\\%$$
+$$99.9\\% \\times 99.9\\% \\times 99.99\\% \\times 99.99\\%$$ $$= 0.999 \\times 0.999 \\times 0.9999 \\times 0.9999$$ $$= 0.9978$$ $$= 99.78\\%$$
 
 Recall that you need two virtual machines. Therefore, you include the Virtual Machines SLA of 99.9 percent two times in the formula.
 
 Note that even though all of the individual services have SLAs equal to or better than the application SLA, combining them results in an overall number that's *lower* than the 99.9 percent you need. Why? Because using multiple services adds an extra level of complexity and slightly increases the risk of failure.
 
-You see here that the composite SLA of 99.78 percent doesn't meet the required SLA of 99.9 percent. You might go back to your team and ask whether this is acceptable. Or you might implement some other strategies into your design to improve this SLA.
+You see here that the composite SLA of 99.78 percent doesn't meet the required SLA of 99.9 percent. You might go back to team and ask whether this is acceptable. Or you might implement some other strategies into your design to improve this SLA.
 
 ## What happens when the composite SLA doesn't meet your needs?
 
@@ -55,13 +81,8 @@ For the Special Orders application, the composite SLA doesn't meet the required 
 
 Each of the workloads defined previously has its own SLA, and the customization choices you make when you provision each workload affects that SLA. For example:
 
-* **Disks**
-
-    With Virtual Machines, you can choose from a Standard HDD Managed Disk, a Standard SSD Managed Disk, or a Premium SSD or Ultra Disk. The SLA for a single VM would be either 95 percent, 99.5 percent or 99.9 percent, depending on the disk choice.
-
-* **Tiers**
-
-    Some Azure services are offered as both a free tier product and as a standard paid service. For example, Azure Automation provides 500 minutes of job runtime in an Azure free account, but is not backed by an SLA. The standard tier SLA for Azure Automation is 99.9 percent.
+ -  **Disks** With Virtual Machines, you can choose from a Standard HDD Managed Disk, a Standard SSD Managed Disk, or a Premium SSD or Ultra Disk. The SLA for a single VM would be either 95 percent, 99.5 percent or 99.9 percent, depending on the disk choice.
+ -  **Tiers** Some Azure services are offered as both a free tier product and as a standard paid service. For example, Azure Automation provides 500 minutes of job runtime in an Azure free account, but is not backed by an SLA. The standard tier SLA for Azure Automation is 99.9 percent.
 
 Make sure that your purchasing decisions take into account the impact on the SLA for the Azure services that you choose. Doing so ensures that the SLA supports your required application SLA.
 
@@ -77,8 +98,7 @@ An *availability zone* is a unique physical location within an Azure region. Eac
 
 Deploying two or more instances of an Azure virtual machine across two or more availability zones raises the virtual machine SLA to 99.99 percent. Recalculating your composite SLA above with this Virtual Machines SLA gives you an application SLA of:
 
-$$99.99\\% \times 99.99\\% \times 99.99\\% \times 99.99\\%$$
-$$= 99.96\\%$$
+$$99.99\\% \\times 99.99\\% \\times 99.99\\% \\times 99.99\\%$$ $$= 99.96\\%$$
 
 This revised SLA of 99.96 percent exceeds your target of 99.9 percent.
 

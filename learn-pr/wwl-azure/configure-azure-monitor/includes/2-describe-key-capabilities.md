@@ -1,3 +1,4 @@
+
 Azure Monitor provides you with a comprehensive solution for collecting, analyzing, and responding to telemetry data from your on-premises and cloud environments. The service features help you understand how your applications are performing. You can use Azure Monitor to proactively identify issues that affect your apps and resources, and take action to maximize their availability and performance.
 
 :::image type="content" source="../media/monitor-capabilities-66756141.png" alt-text="Illustration that shows the key capabilities of Azure Monitor as described in the text." border="false":::

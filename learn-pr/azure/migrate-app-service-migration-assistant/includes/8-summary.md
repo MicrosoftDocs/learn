@@ -10,11 +10,11 @@ The Azure App Service Migration Assistant provides dramatic business impact, spe
 
 ## Next steps
 
-If you're using this as a guide to perform your own web application migration, you'll want to think about the following steps that we didn't perform in the exercise:
+If you're using this as a guide to perform your own web application migration, think about the following steps that we didn't perform in the exercise:
 
 - Manually moving application settings and connection strings in your web.config file to App Service application settings.
 - Migrating data from an on-premises SQL Server database to an Azure SQL database.
-- Setting up an SSL certificate.
+- Setting up an TLS/SSL certificate.
 - Setting up custom domain names.
 - Setting up permissions in Azure Active Directory.
 
