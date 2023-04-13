@@ -130,4 +130,4 @@ jobs:
             });
 ```
 
-The GitHub Script helped you create a comprehensive response to a new issue being opened. This response is also based on a template in the repository, so it's easy to change in the future. Finally, you also included a trigger to add the issue to the project board so it you can easily triage it for future work.
+The GitHub Script helped you create a comprehensive response to a new issue being opened. This response is also based on a template in the repository, so it's easy to change in the future. Finally, you also included a trigger to add the issue to the project board so you can easily triage it for future work.
