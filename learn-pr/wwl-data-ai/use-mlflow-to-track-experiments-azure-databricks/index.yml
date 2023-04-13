@@ -28,7 +28,6 @@ products:
 subjects:
 - data-analytics
 units:
-- learn.wwl.use-mlflow-to-track-experiments-azure-databricks.introduction
 - learn.wwl.use-mlflow-to-track-experiments-azure-databricks.understand-capabilities-of-mlflow
 - learn.wwl.use-mlflow-to-track-experiments-azure-databricks.terminology
 - learn.wwl.use-mlflow-to-track-experiments-azure-databricks.run-experiments
