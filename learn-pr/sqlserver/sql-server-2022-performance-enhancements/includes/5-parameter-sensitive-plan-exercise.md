@@ -4,8 +4,32 @@
 >microsoft/sqlworkshops-sql2022workshop ·
 >GitHub](https://github.com/microsoft/sqlworkshops-sql2022workshop/tree/main/sql2022workshop)
 >
->Before continuing with the exercise access lab
- 
+>Before continuing with the exercise access lab ensure that the pre-requisites have been completed and setup has been completed.
+>
+> ## Prerequisites
+>SQL Server 2022 Evaluation or Developer Edition
+>VM or computer with at min 2 CPUs and 8Gb RAM.
+>SQL Server Management Studio (SSMS). The latest 18.x build or 19.x build will work.
+>Download ostress.exe from https://aka.ms/ostress. Install using the RMLSetup.msi file that is downloaded. Use all defaults.
+>
+>## Setup the exercise
+>Create a directory called c:\sql_sample_databases to store backups and files.
+>
+>Download a backup of a customized version of the WideWorldImporters sample database from https://aka.ms/wwi_pspopt from and copy it into c:\sql_sample_databases directory.
+>
+>Note: If you try to restore the default sample WideWorldImporters you can use the restorewwi.sql, populatedata.sql and rebuild_index.sql scripts to customize the database for >the exercise.
+>
+>Restore this database to your SQL Server 2022 instance. You can use the provided restorewwi.sql script. You may need to change the directory paths for the location of your >backup and where you will restore the database files.
+>
+>IMPORTANT: If you have permission issues to restore the backup you can try to copy the backup into the default "data" folder for your SQL Server installation and try the >restore again. You will need to edit the restorewwi.sql script accordingly. The default for most instances is C:\Program Files\Microsoft SQL Server\MSSQL16.>MSSQLSERVER\MSSQL\DATA
+>
+>Create a new procedure to be used for the workload test using proc.sql.
+>
+>Execute the script setup.sql from SSMS. This will ensure the WideWorldImporters database is at dbcompat 150 and clear the query store.
+
+# Exercise Parameter Sensitive Plan optimization
+
+## Scenario
 You are the SQL Server DBA for Wide World Importers and part of your
 role is to keep up to date with new features in the product. You have
 learned that SQL Server 2022 is GA and you need to evaluate the product.
@@ -21,6 +45,7 @@ optimization and putting together a demo for our business unit to build
 a use case on why we should upgrade to SQL Server 2022 & Compatibility
 Mode 16.0.
 
+## Exercise 1
 **Viewing the parameter sniffing plan (PSP) optimization for a single
 query execution.**
 
@@ -106,6 +131,7 @@ compiled by our **query_plan_scan.sql** execution.
 ![ShowSeekBecomesClusterScan](../media/psp/exercise1a/Exercise1AShowingIndexSeekBecomesClusterScan.png)
 <!--Image Exercise1AShowingIndexSeekBecomesClusterScan for markdown-->
 
+## Exercise 2
 **See a workload problem for PSP**
 
 **Note**: If you are using a named instance you will need to
@@ -205,6 +231,7 @@ Note. For more information on parameter sensitivity please refer to our
 documentation at
 <https://learn.microsoft.com/en-us/sql/relational-databases/query-processing-architecture-guide?view=sql-server-ver16#parameter-sensitivity>.
 
+## Exercise 3
 **Solve the problem in SQL Server 2022 with no code changes**
 
 We recently attended a Microsoft session that mentioned I can solve my
