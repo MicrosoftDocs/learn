@@ -30,7 +30,6 @@ subjects:
 - data-modeling
 - machine-learning
 units:
-- learn.wwl.train-machine-learning-model-azure-databricks.introduction
 - learn.wwl.train-machine-learning-model-azure-databricks.understand-spark-ml
 - learn.wwl.train-machine-learning-model-azure-databricks.train-validate-model
 - learn.wwl.train-machine-learning-model-azure-databricks.use-other-frameworks
