@@ -3,7 +3,7 @@ uid: learn.wwl.introduction-data-platform-modernization
 metadata:
   title: Design a SQL Server migration strategy
   description: "Design a SQL Server migration strategy"
-  ms.date: 04/13/2023
+  ms.date: 04/14/2023
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -20,7 +20,7 @@ prerequisites: |
   The following prerequisites should be completed:
   * Understand on-premises SQL Server Databases
   * Understand your current workloads
-iconUrl: /learn/achievements/introduction-to-data-platform-modernization.svg
+iconUrl: /training/achievements/introduction-to-data-platform-modernization.svg
 levels:
 - beginner
 roles:
