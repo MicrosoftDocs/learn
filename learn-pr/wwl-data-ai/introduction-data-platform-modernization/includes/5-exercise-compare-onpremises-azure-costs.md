@@ -1,8 +1,8 @@
-The Azure TCO Calculator is one tool that you can use during a Data Platform Modernization project to assess the cost difference the migration can make.
+The Total Cost of Ownership (TCO) is one tool that you can use during a data platform modernization project to assess the cost difference the migration can make.
 
-In your global retailer, Data Platform Modernization is expected to realize significant savings but the board of directors has asked you to estimate these savings as precisely as possible.
+In your global retailer, Data Platform Modernization is expected to realize significant savings but the board of directors has asked you to estimate the savings as precisely as possible.
 
-Here, you will calculate the Total Cost of Ownership (TCO) of migrating to Azure by using the TCO Calculator.
+Here, you'll calculate the Total Cost of Ownership (TCO) of migrating to Azure by using the TCO calculator.
 
 ## Calculate the TCO
 
@@ -40,7 +40,7 @@ Here, you will calculate the Total Cost of Ownership (TCO) of migrating to Azure
     | SQL Server Backup | **32 GB** |
 
     > [!NOTE]
-    > SSDs are the recommended disk type for production servers in Azure
+    > SSDs are recommended for production workloads in Azure.
 
 ### Enter the storage and networking workloads
 
@@ -65,13 +65,13 @@ Here, you will calculate the Total Cost of Ownership (TCO) of migrating to Azure
 1. Select **SQL Server Software Assurance coverage** by enabling the toggle.
 
     > [!NOTE]
-    > You can use the links in the **Software Assurance** section to learn more about the assurance that is available. There are similar links in subsequent sections.
+    > You can use the links provided in the **Software Assurance** section to learn more about the assurance that is available. 
 
-1. Under **Geo-redundant storage (GRS)**, ensure that **GRS replicates your data to a secondary region that is hundreds of miles away from the primary region** is not enabled.
+1. Under **Geo-redundant storage (GRS)**, ensure that **GRS replicates your data to a secondary region that is hundreds of miles away from the primary region** isn't enabled.
 1. Under **Virtual Machine costs**, ensure that **Enable this for the Calculator to not recommend Bs-series virtual machines** is enabled.
 
     > [!NOTE]
-    > The burstable B-series virtual machines don't have the memory-to-vCore ratio of 8 that is recommended for SQL Server workloads.
+    > The B-series virtual machines don't have the memory-to-vCore ratio of 8 that is recommended for SQL Server workloads.
 
 1. Under **Electricity costs**, in the **Price per KW hour** textbox, enter a realistic value for your location.
 
@@ -83,23 +83,23 @@ Here, you will calculate the Total Cost of Ownership (TCO) of migrating to Azure
 1. Under **Other assumption**, expand each section and look at the associated costs.
 1. At the bottom of the page, select **Next**.
 
-### Investigate the 5-year report
+### Investigate the five-year report
 
 1. On the **View report** page, note that the **Timeframe** defaults to **5 years**.
 1. Scroll down the report and investigate the estimated breakdown of costs for on-premises systems and Azure. Make a note of this information:
 
-    - Where is the majority of the costs for on-premises?
-    - What are the largest cost saving if you decide to migrate to Azure?
+    - What is the most significant cost component of on-premises?
+    - What are the largest costs saving if you decide to migrate to Azure?
 
 1. Expand each section in turn and investigate the breakdown of costs.
 
-### Investigate the 3-year report
+### Investigate the three-year report
 
 1. Scroll to the top of the page and then, in the **Timeframe** textbox, select **3 years**.
 1. Scroll down the report and investigate the estimated breakdown of costs for on-premises systems and Azure. Make a note of this information:
 
-    - Where is the majority of the costs for on-premises?
-    - What are the largest cost saving if you decide to migrate to Azure?
+    - What is the most significant cost component of on-premises?
+    - What are the largest costs saving if you decide to migrate to Azure?
 
 1. Expand each section in turn and investigate the breakdown of costs.
 
