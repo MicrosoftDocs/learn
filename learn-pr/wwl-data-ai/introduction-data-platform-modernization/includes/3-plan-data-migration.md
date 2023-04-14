@@ -48,7 +48,7 @@ The planning stage of a data platform modernization project involves determining
 
 Within the planning phase of the Data Platform modernization process, there are seven terms to describe how you can handle application and data transitioning from an existing on-premises environment to a new cloud-based environment (either public or private):
 
-:::image type="icon" source="../media/2-modernization-plan.png" border="false" alt-text="Diagram of the planning phase, showing the seven Rs":::
+:::image type="icon" source="../media/2-modernization-plan.png" border="false" alt-text="Diagram of the planning phase, showing the seven Rs.":::
 
 |#|Phase|Action|Description|
 |-|-|-|-|
