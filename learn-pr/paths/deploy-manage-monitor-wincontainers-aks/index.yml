@@ -11,11 +11,11 @@ metadata:
   #ms.learn-contact: smmark
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-prerequisites:
-- Basic knowledge of Windows Server virtualization
-- An Azure subscription 
-- Ability to use the Azure CLI
-- Ability to navigate the Azure Portal
+prerequisites: |
+  - Basic knowledge of Windows Server virtualization
+  - An Azure subscription 
+  - Ability to use the Azure CLI
+  - Ability to navigate the Azure Portal
 iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - beginner
