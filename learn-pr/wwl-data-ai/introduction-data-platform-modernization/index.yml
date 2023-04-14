@@ -38,11 +38,11 @@ subjects:
 - data-engineering
 units:
 - learn.wwl.introduction-data-platform-modernization.introduction
-- learn.wwl.introduction-data-platform-modernization.2-examine-data-platform-modernization
-- learn.wwl.introduction-data-platform-modernization.3-plan-data-migration
-- learn.wwl.introduction-data-platform-modernization.4-explore-data-migration-resources
+- learn.wwl.introduction-data-platform-modernization.examine-data-platform-modernization
+- learn.wwl.introduction-data-platform-modernization.plan-data-migration
+- learn.wwl.introduction-data-platform-modernization.explore-data-migration-resources
 - learn.wwl.introduction-data-platform-modernization.5-exercise-compare-onpremises-azure-costs
 - learn.wwl.introduction-data-platform-modernization.knowledge-check
-- learn.wwl.introduction-data-platform-modernization.7-summary
+- learn.wwl.introduction-data-platform-modernization.summary
 badge:
   uid: learn.wwl.introduction-data-platform-modernization.badge
