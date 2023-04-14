@@ -15,7 +15,7 @@ prerequisites: |
   - Basic knowledge of Windows Server virtualization
   - An Azure subscription 
   - Ability to use the Azure CLI
-  - Ability to navigate the Azure Portal
+  - Ability to navigate the Azure portal
 iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - beginner
