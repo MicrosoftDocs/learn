@@ -21524,6 +21524,26 @@
       "source_path": "learn-pr/wwl-data-ai/use-mlflow-to-track-experiments-azure-databricks/2-understand-capabilities-of-mlflow.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/mlflow-azure-databricks/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/introduction-data-platform-modernization/2-understand-data-platform-modernization.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-data-platform-modernization/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/introduction-data-platform-modernization/3-understand-stages-migration.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-data-platform-modernization/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/introduction-data-platform-modernization/4-data-migration-technologies.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-data-platform-modernization/4-explore-data-migration-resources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/introduction-data-platform-modernization/6-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-data-platform-modernization/7-summary",
+      "redirect_document_id": false
     }
   ]
 }
