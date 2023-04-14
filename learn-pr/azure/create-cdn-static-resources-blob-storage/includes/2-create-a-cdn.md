@@ -1,8 +1,8 @@
-Content Delivery Networks (CDNs) can significantly speed up the delivery of assets on a web site. However, as not all websites are the same, it's important to determine whether your own deployments will benefit.
+Content Delivery Networks (CDNs) can significantly speed up the delivery of assets on a web site. However, as not all websites are the same, it's important to determine whether your own deployments benefit.
 
 For a global training business that publishes significant numbers of videos, Azure blob storage is a good match to your business model. Azure Blob storage also enables simple web publishing. However, your company's plans to expand could overload a single point of distribution.
 
-In this unit, you'll learn about how Azure CDN works, and how to create one to improve the performance of a static website.
+In this unit, learn about how Azure CDN works and how to create one to improve the performance of a static website.
 
 ## What is a CDN?
 
@@ -21,7 +21,7 @@ The process of enabling a CDN for a site depends on the CDN provider you use, bu
 
 1. Enter a service agreement with the CDN provider. The service agreement is completed through a web portal.
 1. Configure the CDN.
-1. Modify your site implementation to use the CDN URL for assets that you want cached on the CDN. The changes you'll need to make will vary significantly depending on the implementation of your site.
+1. Modify your site implementation to use the CDN URL for assets that you want cached on the CDN. The changes you need to make vary significantly depending on the implementation of your site.
 
 ### How a CDN works
 
@@ -29,7 +29,7 @@ When a user requests a file or asset, the request is routed to the closest POP.
 
 If the data is present on the POP, the data is retrieved.
 
-If the data isn't present, the POP will request it from the origin server, return the data to the user and store local copy. Follow-on requests for the data will then be local to the POP.
+If the data isn't present, the POP requests it from the origin server, return the data to the user and store local copy. Follow-on requests for the data are then local to the POP.
 
 There are four types of CDN available in Azure:
 
