@@ -9,7 +9,7 @@ If processes are established to introduce changes frequently, those changes are 
 
 The concept of accepting failures might seem counterintuitive, but it's vital to the innovation cycle. If people are afraid to fail because errors put them at the center of blame games, they're not likely to pursue new approaches to problem solving because of the fear of failure. The whole organization then becomes a prisoner of its established practices.
 
-It's possible to establish a "fail fast" culture where people are encouraged to try out new methods. They're empowered to quickly change direction if they don't get the expected outcome. Helping to create a richer innovation culture.
+It's possible to establish a "fail fast" culture where people are encouraged to try out new methods. They're empowered to quickly change direction if they don't get the expected outcome, helping to create a richer innovation culture.
 
 ## Hypothesis-based innovation
 

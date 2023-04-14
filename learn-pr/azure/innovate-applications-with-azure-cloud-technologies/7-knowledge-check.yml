@@ -66,7 +66,7 @@ quiz:
     choices:
     - content: "Yes, with Azure Kubernetes Service."
       isCorrect: false
-      explanation: "Azure Kubernetes Service can help in the build process by running any containerized application, including machine learning and AI. But, it's not essential to enriching an application with AI."
+      explanation: "Azure Kubernetes Service can help in the build process by running any containerized application, including machine learning and AI. However, it's not essential to enrich an application with AI."
     - content: "Yes, with prebuilt models such as Azure Cognitive Services."
       isCorrect: true
       explanation: "Azure Cognitive Services has prebuilt APIs ready to be embedded into any application without requiring data science skills."
