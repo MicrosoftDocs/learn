@@ -46,7 +46,7 @@ Azure SQL Database is fully managed and provides organizations with a highly per
 
     A single database has its own resources and is deployed to a logical SQL Database server where it's managed. There are several tiers of performance, each providing different levels of throughput, performance, storage, and cost.
 
-- **Elastic Pools**
+- **Elastic pools**
 
     Elastic pools provide organizations with a cost-effective way for deploying and managing multiple databases with different workload characteristics. Databases that belong to an elastic pool are deployed onto a single SQL Database server, allowing for shared resource utilization among all databases within the pool.
 

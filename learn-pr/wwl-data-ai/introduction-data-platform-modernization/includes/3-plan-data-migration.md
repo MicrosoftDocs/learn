@@ -113,7 +113,7 @@ To view the list of features supported on each PaaS offering for SQL, see [Featu
 
     In the planning stage, you'll want to consider whether you do an offline or an online migration. With offline migrations, application downtime begins at the same time that the migration starts. To limit downtime to the time required to cut over to the new environment when the migration completes, use an online migration. It's recommended to test an offline migration to determine whether the downtime is acceptable; if not, do an online migration. Furthermore, online versus offline options may not be available depending on the Azure platform selected.
 
-## Transform and Optimize
+## Transform and optimize
 
 Your assessment and planning would have identified aspects of your applications and database that would require post-migration work that either transforms or optimizes a feature to ensure a successful migration. Transformation typically involves work that requires you to fix or change an aspect of a database. 
 
