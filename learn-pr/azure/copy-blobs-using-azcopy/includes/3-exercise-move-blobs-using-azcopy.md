@@ -97,7 +97,7 @@ We'll start by downloading the latest version of AzCopy; currently version 10. T
 
     Verify that the command responds with the message, *Successfully created the resource*.
 
-3. Create a new container named *specifications* in the hot storage destination to hold fictious specification files.
+3. Create a new container named *specifications* in the hot storage destination to hold fictitious specification files.
 
    ```bash
    ./azcopy make https://$HOT_STORAGE_NAME.blob.core.windows.net/specifications$HOT_SAS_TOKEN
