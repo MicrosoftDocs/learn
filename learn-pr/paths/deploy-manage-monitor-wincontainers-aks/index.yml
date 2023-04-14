@@ -1,17 +1,17 @@
 ### YamlMime:LearningPath
 uid: learn.deploy-manage-monitor-wincontainers-aks
 title: Deploy, manage, and monitor Windows containers on Azure Kubernetes Service
-summary: Learn how to deploy, manage, monitor and operate Windows containers on Azure Kubernetes Service and AKS Hybrid by examining the core principles of Windows containers and Kubernetes.
+summary: Learn how to deploy, manage, monitor, and operate Windows containers on Azure Kubernetes Service and AKS Hybrid by examining the core principles of Windows containers and Kubernetes.
 metadata:
   title: Deploy, manage, and monitor Windows containers on Azure Kubernetes Service learning path
-  description: Learn how to deploy, manage, monitor and operate Windows containers on Azure Kubernetes Service and AKS Hybrid by examining the core principles of Windows containers and Kubernetes.
+  description: Learn how to deploy, manage, monitor, and operate Windows containers on Azure Kubernetes Service and AKS Hybrid by examining the core principles of Windows containers and Kubernetes.
   ms.date: 03/04/2023
   author: vrapolinario
   ms.author: viniap
   #ms.learn-contact: smmark
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-prerequisites: None
+prerequisites:
   - Basic knowledge of Windows Server virtualization
   - An Azure subscription 
   - Ability to use the Azure CLI
