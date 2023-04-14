@@ -3,31 +3,31 @@ Tailwind Traders has questions about innovation that affect many other organizat
 - How do we increase the rate of change without affecting the running business?
 - How do we decide where to innovate and what changes to implement to maximize the business return of those innovations?
 
-The answer to both questions is that Tailwind Traders needs to embrace change as part of its organizational culture. One reason why change-averse organizations often have change-related outages is that those changes are too large and impactful. The changes are hard to test in controlled and realistic environments.
+The answer to both questions is: Tailwind Traders needs to embrace change as part of its organizational culture. One reason why change-averse organizations often have change-related outages is that those changes are too large and impactful. The changes are hard to test in controlled and realistic environments.
 
-If processes are established to introduce changes frequently, those changes will be smaller in size and risk. However, this process does not just involve adopting certain tools or technologies. It requires a culture that fosters change and accepts failures.
+If processes are established to introduce changes frequently, those changes are smaller in size and risk. However, this process doesn't just involve adopting certain tools or technologies. It requires a culture that fosters change and accepts failures.
 
-The concept of accepting failures might seem counterintuitive, but it's vital to the innovation cycle. If people are afraid to fail because errors will put them at the center of blame games, they likely won't pursue new approaches to problem solving because of the fear of failure. The whole organization will then be a prisoner of its established practices.
+The concept of accepting failures might seem counterintuitive, but it's vital to the innovation cycle. If people are afraid to fail because errors put them at the center of blame games, they're not likely to pursue new approaches to problem solving because of the fear of failure. The whole organization then becomes a prisoner of its established practices.
 
-It's possible to establish a "fail fast" culture where people are encouraged to try out new methods, and they're empowered to quickly change direction if they don't get the expected outcome. That will help create a richer innovation culture.
+It's possible to establish a "fail fast" culture where people are encouraged to try out new methods. They're empowered to quickly change direction if they don't get the expected outcome. Helping to create a richer innovation culture.
 
 ## Hypothesis-based innovation
 
-You could describe innovation as a hypothesis-based, iterative cycle. Upon identifying the existence of a problem, one or more hypotheses can be formulated that can potentially explain the root cause and lead to the solution. The definition of the problem itself can be challenging, because it needs to be measurable.
+You could describe innovation as a hypothesis-based, iterative cycle. When you identify the existence of a problem, one or more hypotheses can be formulated to potentially explain the root cause and lead to the solution. The definition of the problem itself can be challenging, because it needs to be measurable.
 
-For example, the problem definition "Customers are not happy with our payment platform choices" isn't measurable, so it'll be difficult to solve. If you can define the problem as "23 percent of customers leave their shopping session at the step of choosing the payment platform," you're in a better position to measure the success of any possible solution.
+For example, the problem definition "Customers aren't happy with our payment platform choices" isn't measurable, so it's difficult to solve. If you can define the problem as "23 percent of customers leave their shopping session at the step of choosing the payment platform," you're in a better position to measure the success of any possible solution.
 
-After you define a problem in a measurable way, you can formulate hypotheses that are candidates for explaining and solving the problem. For example, a hypothesis for Tailwind Traders might be described as: "Adding ContosoPay to our supported payment platforms would decrease customer churn at the payment page from 23 percent to 10 percent." Now an idea is on the table, and acting on it is a matter of verifying its validity.
+After you define a problem in a measurable way, you can formulate hypotheses that are candidates for explaining and solving the problem. For example, a hypothesis for Tailwind Traders might be described as: "Adding ContosoPay to our supported payment platforms would decrease customer churn at the payment page from 23 percent to 10 percent." Now an idea is on the table, and acting on it, is a matter of verifying its validity.
 
-Hypotheses should focus on adding value to customers and improving their experience in their interactions with your organization. That's often known as *customer empathy*: placing your customer at the center of your innovation, and focusing on increasing value for them and for you.
+Hypotheses should focus on adding value to customers and improving their experience in their interactions with your organization. This idea is known as *customer empathy*: placing your customer at the center of your innovation, and focusing on increasing value for them and for you.
 
-There are many ways to validate a hypothesis without touching application code. Customer surveys and market research are two examples of valuable information sources that can help to decide the validity of a hypothesis. Checking these sources will allow you to qualify your hypothesis, and to build hypotheses with highest likelihood of accuracy and added business value.
+There are many ways to validate a hypothesis without touching application code. Customer surveys and market research are two examples of valuable information sources that can help to decide the validity of a hypothesis. Checking these sources allow you to qualify your hypothesis, and to build hypotheses with the highest likelihood of accuracy and added business value.
 
 ### Build
 
 After a hypothesis has enough value potential to be built into your application, the build process starts. Here again, speed is crucial.
 
-Your development sprints should be as short as possible. Keeping sprints short allows quick verification or rejection of the hypothesis. It also potentially allows you to fine-tune the way in which the required functionality will be integrated in the application. The result is quicker innovation cycles.
+Your development sprints should be as short as possible. Keeping sprints short allows quick verification or rejection of the hypothesis. It also potentially allows you to fine-tune the way in which the required functionality is integrated into the application. The result is quicker innovation cycles.
 
 ### Measure
 
@@ -37,12 +37,12 @@ The goal of the MVP is verifying not only your hypothesis, but any assumptions y
 
 ### Learn
 
-The learn phase is similar to the start of the process. After you learn more about your assumptions and hypothesis, you might find out that they were right, partially right, or wrong. Having a growth mindset and enough humility to admit failures will allow you to either:
+The learn phase is similar to the start of the process. After you learn more about your assumptions and hypothesis, you might find out that they were right, partially right, or wrong. Having a growth mindset and enough humility to admit failures allows you to either:
 
-- Quickly pivot if you need to continue working on your MVP
-- Refocus your efforts in other areas and formulate an alternative hypothesis
+- Quickly pivot if you need to continue working on your MVP.
+- Refocus your efforts in other areas and formulate an alternative hypothesis.
 
-It's important to realize that even if your assumptions and hypothesis were wrong, the process has allowed you to learn something new about your customers and your business. Don't think of it as wasted time. The key is gaining that knowledge as soon as possible and applying it to a future hypothesis. That's the core of the fail-fast culture.
+It's important to realize that even if your assumptions and hypothesis were wrong, the process has allowed you to learn something new about your customers and your business. Don't think of it as wasted time. The key is gaining that knowledge as soon as possible and applying it to a future hypothesis. This idea is the core of the fail-fast culture.
 
 ## Where to look next
 
