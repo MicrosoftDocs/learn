@@ -1,4 +1,4 @@
-With your delivery network configured, let's verify that your site content is being delivered through the CDN.
+Now that your delivery network is configured, let's verify that your site content is being delivered through the CDN.
 
 In this unit, review how CDNs update content and the delay that you typically see when updating the source files.
 
