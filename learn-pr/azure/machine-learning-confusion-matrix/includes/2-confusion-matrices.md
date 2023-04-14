@@ -55,7 +55,7 @@ The square we haven't filled out is called the confusion matrix.
 
 Each cell in the confusion matrix tells us one thing about the model’s performance. These are True Negatives (TN), False Negatives (FN), False Positives (FP) and True Positives (TP).
 
-Let’s explain these one by one, replacing these acronyms with actual values. Blue-green squares mean the model made a correct prediction, and orange squares men the model made an incorrect prediction.
+Let’s explain these one by one, replacing these acronyms with actual values. Blue-green squares mean the model made a correct prediction, and orange squares mean the model made an incorrect prediction.
 
 ### True Negatives (TN)
 
