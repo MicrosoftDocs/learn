@@ -92,7 +92,7 @@ Once you've started a search, the results are Queued. After the search is Comple
 
 A maximum of 50,000 events is displayed in increments of 150 events. If more than 50,000 events meet the search criteria, only the 50,000 unsorted events returned is displayed.
 
-:::image type="content" source="../media/audit-export-audit-search-results-4523.png" alt-text="Screenshot showing the number of results that are displayed after the search is finished.":::
+:::image type="content" source="../media/audit-export-audit-search-results-4523.png" alt-text="Screenshot showing the number of results that are displayed after the search is finished." lightbox="../media/audit-export-audit-search-results-4523.png":::
 
 
 The results of an audit log search are displayed under **Results** on the **Audit log search** page. As previously stated, a maximum of 50,000 (newest) events are displayed in increments of 150 events. Use the scroll bar or press **Shift + End** to display the next 150 events.

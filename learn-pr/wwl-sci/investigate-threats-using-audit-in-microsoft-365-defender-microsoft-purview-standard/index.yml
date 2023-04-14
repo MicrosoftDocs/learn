@@ -8,7 +8,7 @@ metadata:
   ms.author: kelawson
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
-title: UAL
+title: Investigate threats by using audit features in Microsoft 365 Defender and Microsoft Purview Standard
 summary: This module examines how to search for audited activities using the Microsoft Purview Audit (UAL) solution, including how to export, configure, and view the audit log records that were retrieved from an audit log search.
 abstract: |
   By the end of this module, you'll be able to:

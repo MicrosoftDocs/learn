@@ -14,7 +14,7 @@ The first step is to search the audit log and then export the results in a comma
 2.  If necessary, revise the search criteria until you have the desired results.
 3.  On the search results page, select **Export**, and then select **Download all results**.
     
-    :::image type="content" source="../media/audit-export-audit-search-results-4523.png" alt-text="Screenshot of the Audit search window with the Download all results option highlighted.":::
+    :::image type="content" source="../media/audit-export-audit-search-results-4523.png" alt-text="Screenshot of the Audit search window with the Download all results option highlighted." lightbox="../media/audit-export-audit-search-results-4523.png":::
     
     
     This option exports all the audit records from the audit log search. It then adds the raw data from the audit log to a CSV file. It takes a while to prepare the download file for a large search. Large files result when searching for all activities or using a wide date range.
