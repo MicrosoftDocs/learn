@@ -1,5 +1,11 @@
 To create and use Azure services, you need an Azure subscription. When you're completing Learn modules, most of the time a temporary subscription is created for you, which runs in an environment called the Learn sandbox. When you're working with your own applications and business needs, you need to create an Azure account, and a subscription will be created for you. After you've created an Azure account, you're free to create additional subscriptions. For example, your company might use a single Azure account for your business and separate subscriptions for development, marketing, and sales departments. After you've created an Azure subscription, you can start creating Azure resources within each subscription.
 
+The following explains how Azure separates identity and billing information using accounts and subscriptions.
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=67fd032f-58ba-4dd9-8ae1-625b48e0bc20]
+
+This video was created with the help of artificial intelligence. To learn more about our principles for AI-generated content, visit [AI Content Principles](https://learn.microsoft.com/principles-for-ai-generated-content).
+
 :::image type="content" source="../media/account-scope-levels-9ceb3abd.png" alt-text="Diagram showing the different levels of account scope.":::
 
 
