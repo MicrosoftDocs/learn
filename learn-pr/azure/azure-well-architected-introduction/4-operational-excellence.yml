@@ -19,10 +19,10 @@ quiz:
     choices:
     - content: 'Waiting for users to reach out to you with reports of errors in your application.'
       isCorrect: false
-      explanation: 'This is a poor practice and will result in a bad user experience.'
+      explanation: 'This is a poor practice and results in a bad user experience.'
     - content: 'Performing functionality tests in the development environment that are different from functionality tests in the production environment.'
       isCorrect: false
-      explanation: 'You should perform the same functional tests between environments to ensure you are identifying issues early in your development process rather than in production.'
+      explanation: "You should perform the same functional tests between environments to ensure you're identifying issues early in your development process rather than in production."
     - content: 'Omitting infrastructure deployment from test plans.'
       isCorrect: false
       explanation: 'Infrastructure deployment should be included in test plans to avoid introducing errors or issues due to misconfigured infrastructure.'
