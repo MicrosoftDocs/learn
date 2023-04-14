@@ -26,7 +26,7 @@ quiz:
         - content: 'To reduce data type conflicts.'
           isCorrect: false
           explanation: "Incorrect. Using primitive data types doesn't reduce data type conflicts."
-    - content: 'Which of these statements is true for a ThreadX memory blook pool?'
+    - content: 'Which of these statements is true for a ThreadX memory block pool?'
       choices:
         - content: 'Using a memory block pool might cause fragmentation.'
           isCorrect: false

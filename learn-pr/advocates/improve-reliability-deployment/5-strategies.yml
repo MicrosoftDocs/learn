@@ -20,24 +20,24 @@ quiz:
 
   - content: 'A deployment strategy that involves making a duplicate of the production environment, upgrading that environment, and then cutting completely over to the duplicate is:'
     choices:
-    - content: 'blue-green deployment'
+    - content: 'Blue-green deployment'
       isCorrect: true
       explanation: 'Correct.'
-    - content: 'rolling deployment'
+    - content: 'Rolling deployment'
       isCorrect: false
       explanation: 'A rolling deployment upgrades the environment in place gradually.'
-    - content: 'canary deployment'
+    - content: 'Canary deployment'
       isCorrect: false
       explanation: 'A canary deployment rolls out the upgrade to a subset of users or the production traffic and increases the percentage over time, monitoring the results each step of the way.'
       
   - content: 'A deployment strategy that involves rolling out the upgrade to a subset of users or the production traffic and increases the percentage over time is:'
     choices:
-    - content: 'blue-green deployment'
+    - content: 'Blue-green deployment'
       isCorrect: false
       explanation: 'This describes a canary deployment.'
-    - content: 'rolling deployment'
+    - content: 'Rolling deployment'
       isCorrect: false
       explanation: 'This describes a canary deployment.'
-    - content: 'canary deployment'
+    - content: 'Canary deployment'
       isCorrect: true
       explanation: 'Correct.'

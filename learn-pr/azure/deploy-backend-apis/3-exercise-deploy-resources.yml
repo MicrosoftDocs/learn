@@ -4,8 +4,8 @@ title: Exercise - Deploy and configure Azure SQL Database and Azure Functions
 metadata:
   unitType: exercise
   title: Exercise - Deploy and configure Azure SQL Database and Azure Functions
-  description: In this exercise you will be deploying and configuring the resources necessary to build the sample application.
-  ms.date: 3/24/2021  
+  description: In this exercise you'll be deploying and configuring the resources necessary to build the sample application.
+  ms.date: 3/15/2023  
   author: amthomas46
   ms.author: antho
   ms.topic: interactive-tutorial

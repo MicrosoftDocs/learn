@@ -4,8 +4,8 @@ title: How to implement classical computation on a quantum computer
 metadata:
   description: General definition of quantum oracles and reversible computing.
   ms.date: 09/19/2020
-  author: tcNickolas
-  ms.author: mamykhai
+  author: SoniaLopezBravo
+  ms.author: sonialopez
   ms.topic: interactive-tutorial
   ms.prod: learning-quantum
   show_latex: true

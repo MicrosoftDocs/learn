@@ -33,7 +33,6 @@ roles:
   - ai-engineer
   - ai-edge-engineer
 products:
-  - vs
   - github
   - azure
 prerequisites: |

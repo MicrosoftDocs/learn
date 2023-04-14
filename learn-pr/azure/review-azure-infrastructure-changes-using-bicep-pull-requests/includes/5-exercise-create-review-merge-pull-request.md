@@ -118,13 +118,13 @@ Normally, a pull request is reviewed by someone other than its author. For this 
 
    :::image type="content" source="../media/5-repos-pull-request-review-comment.png" alt-text="Screenshot of Azure DevOps that shows the comment field, with the Comment button highlighted.":::
 
-1. Close the **Discussion** window.
-
-   :::image type="content" source="../media/5-repos-pull-request-close-discussion.png" alt-text="Screenshot of Azure DevOps that shows the discussion window, with the close button highlighted.":::
+   The width of your browser window can affect how the comment dialog box is displayed. The comment will open a **Discussion** dialog box rather than the inline comment as shown in the screenshot.
 
 1. Select **Approve**.
 
    :::image type="content" source="../media/5-repos-pull-request-approve.png" alt-text="Screenshot of Azure DevOps that shows the Approve button for the pull request.":::
+
+   After you select **Approve** the **Set auto-complete** changes to **Complete**. You use that feature later in this unit.
 
 ::: zone-end
 
@@ -144,7 +144,7 @@ When you create or review a pull request, you can participate in a conversation 
 
 ::: zone pivot="azurerepos"
 
-1. Select the **Overview** tab.
+1. From the pull request page, select the **Overview** tab.
 
    :::image type="content" source="../media/5-repos-pull-request-overview.png" alt-text="Screenshot of Azure DevOps that shows the Overview tab.":::
 

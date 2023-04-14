@@ -1,5 +1,5 @@
 
-The process of consuming data streams, analyzing them, and deriving actionable insights is called *stream processing*. [Azure Stream Analytics](https://github.com/GitHubber17/learn-pr/blob/update-az-305-data-integration-1/azure/stream-analytics/stream-analytics-introduction) is a fully managed (PaaS offering), real-time analytics and complex event-processing engine. It offers the possibility to perform real-time analytics on multiple streams of data from sources like IoT device data, sensors, clickstreams, and social media feeds.
+The process of consuming data streams, analyzing them, and deriving actionable insights is called *stream processing*. [Azure Stream Analytics](/azure/stream-analytics/stream-analytics-introduction) is a fully managed (PaaS offering), real-time analytics and complex event-processing engine. It offers the possibility to perform real-time analytics on multiple streams of data from sources like IoT device data, sensors, clickstreams, and social media feeds.
 
 ### Things to know about Azure Stream Analytics
 

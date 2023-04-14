@@ -1,0 +1,37 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-visit-petting-zoo.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/21/2023
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the purpose of defining an optional parameter in a method?"
+    choices:
+    - content: "To cause a method to perform a different task."
+      isCorrect: false
+      explanation: "Incorrect. A method should generally perform the task it's named to do, and an optional parameter should reflect a trivial difference."
+    - content: "To overload a method."
+      isCorrect: false
+      explanation: "Incorrect. Adding an optional parameter doesn't overload a method."
+    - content: "To simplify the required parameters when a parameter isn't significant to the result."
+      isCorrect: true
+      explanation: "Correct! Optional parameters enable you to pass fewer arguments and accomplish the method task."
+  - content: "What is the purpose of pseudo-code?"
+    choices:
+    - content: "To provide a design template for the intended code."
+      isCorrect: true
+      explanation: "Correct! Pseudo-code helps to bridge the gap between concept and code."
+    - content: "To safely cast operations performed in methods."
+      isCorrect: false
+      explanation: "Incorrect. Pseudo-code doesn't have an effect on written operations."
+    - content: "To develop syntactically correct code."
+      isCorrect: false
+      explanation: "Incorrect. Pseudo-code doesn't help with syntax, instead it plans general tasks before the exact code is written."

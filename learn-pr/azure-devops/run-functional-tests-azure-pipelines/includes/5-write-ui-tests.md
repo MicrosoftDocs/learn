@@ -4,7 +4,7 @@ Amita normally runs tests on Chrome, Firefox, and Microsoft Edge. Here, you do t
 
 ## Fetch the branch from GitHub
 
-In this section, you fetch the `selenium` branch from GitHub. You check out, or switch to, that branch. The contents of the branch will help you follow along with the tests that Andy and Amita write.
+In this section, you fetch the `selenium` branch from GitHub. You then check out, or switch to, that branch. The contents of the branch will help you follow along with the tests that Andy and Amita write.
 
 This branch contains the _Space Game_ project that you worked with in previous modules. It also contains an Azure Pipelines configuration to start with.
 
@@ -58,7 +58,7 @@ public class HomePageTest
 
 This diagram shows the `IWebDriver` interface and a few of the classes that implement this interface:
 
-:::image type="content" source="../media/5-selenium-webdriver.png" alt-text="Screenshot of The IWebDriver interface, its methods, and concrete classes.":::
+:::image type="content" source="../media/5-selenium-webdriver.png" alt-text="Diagram of the IWebDriver interface, its methods, and concrete classes.":::
 
 The diagram shows three of the methods that `IWebDriver` provides: `Navigate`, `FindElement`, and `Close`.
 
@@ -89,7 +89,7 @@ public class HomePageTest
 }
 ```
 
-**Andy:** Next we need to define a constructor for our test class. The constructor is called when NUnit creates an instance of this class. As its argument, the constructor takes the string that we attached to our test fixtures. Here's what the code looks like:
+**Andy:** Next, we need to define a constructor for our test class. The constructor is called when NUnit creates an instance of this class. As its argument, the constructor takes the string that we attached to our test fixtures. Here's what the code looks like:
 
 ```cs
 [TestFixture("Chrome")]
@@ -107,13 +107,13 @@ public class HomePageTest
 }
 ```
 
-**Andy:** We add the `browser` member variable so that we can use the current browser name in our setup code. Let's write the setup code next.
+**Andy:** We added the `browser` member variable so that we can use the current browser name in our setup code. Let's write the setup code next.
 
 ### Define the Setup method
 
-**Andy:** Next we need to assign our `IWebDriver` member variable to a class instance that implements this interface for the browser we're testing on. The `ChromeDriver`, `FirefoxDriver`, and `EdgeDriver` classes implement this interface for Chrome, Firefox, and Edge, respectively.
+**Andy:** Next, we need to assign our `IWebDriver` member variable to a class instance that implements this interface for the browser we're testing on. The `ChromeDriver`, `FirefoxDriver`, and `EdgeDriver` classes implement this interface for Chrome, Firefox, and Edge, respectively.
 
-Let's create a method, named `Setup`, that sets the `driver` variable. We use the `OneTimeSetUp` attribute to tell NUnit to run this method one time per test fixture.
+Let's create a method named `Setup` that sets the `driver` variable. We use the `OneTimeSetUp` attribute to tell NUnit to run this method one time per test fixture.
 
 ```cs
 [OneTimeSetUp]
@@ -160,16 +160,16 @@ In this example, the `EdgeDriver` constructor also requires additional options t
 
 **Andy:** I know we'll need to repeat two actions throughout the tests:
 
-* Finding elements on the page, such as the links that we click and the modal windows that we expect to appear.
-* Clicking elements on the page, such as the links that reveal the modal windows and the button that closes each modal.
+* Finding elements on the page, such as the links that we click and the modal windows that we expect to appear
+* Clicking elements on the page, such as the links that reveal the modal windows and the button that closes each modal
 
 Let's write two helper methods, one for each action. We'll start with the method that finds an element on the page.
 
 #### Write the FindElement helper method
 
-When you locate an element on the page, it's typically in response to some other event, such as the page loading or the user entering information. Selenium provides the `WebDriverWait` class, which enables you to wait for a condition to be true. If the condition isn't true within the given time period, `WebDriverWait` throws an exception or error. We can use the `WebDriverWait` class to wait for a given element to be displayed and to be ready to receive user input.
+When you locate an element on the page, it's typically in response to some other event, such as the page loading or the user entering information. Selenium provides the `WebDriverWait` class, which allows you to wait for a condition to be true. If the condition isn't true within the given time period, `WebDriverWait` throws an exception or error. We can use the `WebDriverWait` class to wait for a given element to be displayed and to be ready to receive user input.
 
-To locate an element on the page, you use the `By` class. The `By` class provides methods that enable you to find an element by its name, by its CSS class name, by its HTML tag, or in our case, by its `id` attribute.
+To locate an element on the page, use the `By` class. The `By` class provides methods that let you find an element by its name, by its CSS class name, by its HTML tag, or in our case, by its `id` attribute.
 
 Andy and Amita code up the `FindElement` helper method. It looks like this code:
 
@@ -199,7 +199,7 @@ private IWebElement FindElement(By locator, IWebElement parent = null, int timeo
 
 #### Write the ClickElement helper method
 
-**Andy:** Next let's write a helper method that clicks links. Selenium provides a few ways to write that method. One of them is the `IJavaScriptExecutor` interface. With it, we can programmatically click links by using JavaScript. This approach works well because it can click links without first scrolling them into view.
+**Andy:** Next, let's write a helper method that clicks links. Selenium provides a few ways to write that method. One of them is the `IJavaScriptExecutor` interface. With it, we can programmatically click links by using JavaScript. This approach works well because it can click links without first scrolling them into view.
 
 `ChromeDriver`, `FirefoxDriver`, and `EdgeDriver` each implement `IJavaScriptExecutor`. We need to cast the driver to this interface and then call `ExecuteScript` to run the JavaScript `click()` method on the underlying HTML object.
 
@@ -221,7 +221,7 @@ private void ClickElement(IWebElement element)
 
 ### Define the test method
 
-**Andy:** Now we're ready to define the test method. Based on the manual tests that we ran earlier, let's call this method `ClickLinkById_ShouldDisplayModalById`. It's a good practice to give test methods descriptive names that define precisely what the test accomplishes. Here we want to click a link defined by its `id` attribute. And we want to verify that the proper modal window appears, also by using its `id` attribute.
+**Andy:** Now, we're ready to define the test method. Based on the manual tests that we ran earlier, let's call this method `ClickLinkById_ShouldDisplayModalById`. It's a good practice to give test methods descriptive names that define precisely what the test accomplishes. Here, we want to click a link defined by its `id` attribute. Then we want to verify that the proper modal window appears, also by using its `id` attribute.
 
 Andy adds starter code for the test method:
 
@@ -286,7 +286,7 @@ public void ClickLinkById_ShouldDisplayModalById(string linkId, string modalId)
 
 ### Define test case data
 
-**Andy:** In NUnit, you can provide data to your tests in a few ways. Here we use the `TestCase` attribute. This attribute takes arguments that it later passes back to the test method when it runs. We can have multiple `TestCase` attributes that each test a different feature of our app. Each `TestCase` attribute produces a test case that's included in the report that appears at the end of a pipeline run.
+**Andy:** In NUnit, you can provide data to your tests in a few ways. Here, we use the `TestCase` attribute. This attribute takes arguments that it later passes back to the test method when it runs. We can have multiple `TestCase` attributes that each test a different feature of our app. Each `TestCase` attribute produces a test case that's included in the report that appears at the end of a pipeline run.
 
 Andy adds these `TestCase` attributes to the test method. These attributes describe the **Download game** button, one of the game screens, and the top player on the leaderboard. Each attribute specifies two `id` attributes: one for the link to click and one for the corresponding modal window.
 

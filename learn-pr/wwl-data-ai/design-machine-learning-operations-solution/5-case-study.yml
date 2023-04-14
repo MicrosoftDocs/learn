@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-machine-learning-operations-solution.case-study
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Learn what to think about when designing for retraining a model."
+  ms.date: 03/03/2023
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-case-study.md)]
+quiz:
+  questions:
+  - content: "How many Azure Machine Learning workspaces should the team create?"
+    choices:
+    - content: "One"
+      isCorrect: true
+      explanation: "Correct. With such a small team, one workspace is enough."
+    - content: "Two"
+      isCorrect: false
+      explanation: "Incorrect. Though in larger projects we'd like at least two workspaces to represent a development and production environment, the current team is too small. Having more than one workspace only creates unnecessary overhead."
+    - content: "Three"
+      isCorrect: false
+      explanation: "Incorrect. Though in larger projects we'd like at least two workspaces to represent a development and production environment, the current team is too small. Having more than one workspace only creates unnecessary overhead."
+  - content: "When should we retrain the model?"
+    choices:
+    - content: "Every week."
+      isCorrect: false
+      explanation: "Incorrect. There doesn't seem to be a reason to retrain the model every week, especially as we don't know whether we have new data that we should use each week."
+    - content: "When the model's metrics are below the benchmark."
+      isCorrect: true
+      explanation: "Correct. The most important thing is that the model performs as expected. When the model's performance is in jeopardy, we should retrain the model."
+    - content: "When there's data drift."
+      isCorrect: false
+      explanation: "Incorrect. It's stated that new data is not seen as trustworthy. Currently, we shouldn't rely on monitoring the data to decide when to retrain the model."

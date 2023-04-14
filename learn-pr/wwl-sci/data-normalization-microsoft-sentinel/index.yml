@@ -11,7 +11,7 @@ metadata:
 title: Data normalization in Microsoft Sentinel
 summary: By the end of this module, you'll be able to use ASIM parsers to identify threats inside your organization.
 abstract: |
-  After completing this module, you will be able to:
+  After completing this module, you'll be able to:
   *   Use ASIM Parsers
   *   Create ASIM Parser
   *   Create parameterized KQL functions
@@ -25,6 +25,9 @@ roles:
 products:
 - azure
 - microsoft-sentinel
+- azure-monitor
+subjects:
+  - cloud-security
 units:
 - learn.wwl.data-normalization-microsoft-sentinel.introduction
 - learn.wwl.data-normalization-microsoft-sentinel.understand

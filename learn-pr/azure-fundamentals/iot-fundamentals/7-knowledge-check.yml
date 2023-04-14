@@ -20,32 +20,32 @@ quiz:
     choices:
     - content: "IoT Hub"
       isCorrect: false
-      explanation: "That's incorrect. IoT Hub will not ensure the security of the IoT device."
+      explanation: "Incorrect. IoT Hub doesn't ensure the security of the IoT device."
     - content: "IoT Central"
       isCorrect: false
-      explanation: "That's incorrect. IoT Central  will not ensure the security of the IoT device."
+      explanation: "Incorrect. IoT Central doesn't ensure the security of the IoT device."
     - content: "Azure Sphere"
       isCorrect: true
-      explanation: "That's correct. Azure Sphere provides the highest degree of security to ensure the device has not been tampered with."
+      explanation: "Correct. Azure Sphere provides the highest degree of security to ensure the device hasn't been tampered with."
   - content: "A company wants to quickly manage its individual IoT devices by using a web-based user interface. Which IoT technology should it choose?"
     choices:
     - content: "IoT Hub"
       isCorrect: false
-      explanation: "That's incorrect. An IoT hub does not provide a graphical user interface for device management."
+      explanation: "Incorrect. An IoT hub doesn't provide a graphical user interface for device management."
     - content: "IoT Central"
       isCorrect: true
-      explanation: "That's correct. IoT Central quickly creates a web-based management portal to enable reporting and communication with IoT devices."
+      explanation: "Correct. IoT Central quickly creates a web-based management portal to enable reporting and communication with IoT devices."
     - content: "Azure Sphere"
       isCorrect: false
-      explanation: "That's incorrect. Azure Sphere does not provide a graphical user interface for device management."
+      explanation: "Incorrect. Azure Sphere doesn't provide a graphical user interface for device management."
   - content: "You want to send messages from the IoT device to the cloud and vice versa.  Which IoT technology can send and receive messages?"
     choices:
     - content: "IoT Hub"
       isCorrect: true
-      explanation: "That's correct. An IoT hub communicates to IoT devices by sending and receiving messages."
+      explanation: "Correct. An IoT hub communicates to IoT devices by sending and receiving messages."
     - content: "IoT Central"
       isCorrect: false
-      explanation: "That's incorrect. IoT Central is not concerned with communication between devices and the cloud, though it can initiate this communication via a web-based portal."
+      explanation: "Incorrect. IoT Central isn't concerned with communication between devices and the cloud, though it can initiate this communication via a web-based portal."
     - content: "Azure Sphere"
       isCorrect: false
-      explanation: "That's incorrect. Azure Sphere is not primarily concerned with communication between devices and the cloud."
+      explanation: "Incorrect. Azure Sphere isn't primarily concerned with communication between devices and the cloud."

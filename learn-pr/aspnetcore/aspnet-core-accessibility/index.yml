@@ -31,7 +31,7 @@ roles:
 products:
 - aspnet-core
 - dotnet
-- vs
+- vs-code
 subjects:
 - accessibility
 - development-tools

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-tips-tricks-teach-sc-900-security-compliance-identity-fundamentals.explore-objective-domains
+title: Explore objective domains
+metadata:
+  title: Explore objective domains
+  description: "Explore objective domains"
+  ms.date: 04/07/2023
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-explore-objective-domains.md)]

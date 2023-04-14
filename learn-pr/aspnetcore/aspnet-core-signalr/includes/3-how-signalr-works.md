@@ -207,7 +207,7 @@ When it adds a method to the previous `Consumer` class, the `SendNotificationAsy
 ```csharp
 public Task SendNotificationAsync(string text) =>
     _hubConnection.InvokeAsync(
-        "NotifyAll", new Notification(text, DateTme.UtcNow));
+        "NotifyAll", new Notification(text, DateTime.UtcNow));
 ```
 
 <!--

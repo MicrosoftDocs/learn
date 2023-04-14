@@ -12,7 +12,7 @@ Both messages and events are _datagrams_: packages of data sent from one compone
 
 In the terminology of distributed applications, the defining characteristic of a message is that the overall integrity of the application may rely on messages being received. You can think of sending a message as one component passing the baton of a workflow to a different component. The entire workflow may be a vital business process, and the message is the mortar that holds the components together.
 
-A message generally contains the actual data, not just a reference (like an ID or a URL) to data. Sending data as part of a datagram is less brittle than sending a reference. The messaging architecture guarantees delivery of the message, and because no additional lookups are required, the message is reliably handled. However, the sending application needs to know exactly what data to include to avoid sending too much data, which would require the receiving component to do unnecessary work. In this sense, the sender and receiver of a message are often coupled by a strict data contract.
+A message generally contains the actual data, not just a reference (like an ID or a URL) to data. Sending data as part of a datagram is less brittle than sending a reference. The messaging architecture guarantees delivery of the message, and because no extra lookups are required, the message is reliably handled. However, the sending application needs to know exactly what data to include to avoid sending too much data, which would require the receiving component to do unnecessary work. In this sense, the sender and receiver of a message are often coupled by a strict data contract.
 
 In the new architecture for Contoso Bicycles, when an order is placed, the company likely will use messages. The web front end or mobile app will send a message to the back-end processing components. On the back end, steps like routing to the store nearest the customer and charging a credit card would take place.
 
@@ -46,7 +46,7 @@ Queues decouple the source and destination components to insulate destination co
 
 During peak times, messages may come in faster than destination components can handle them. Because source components have no direct connection to the destination, the source is unaffected, and the queue will grow. Destination components will remove messages from the queue as they're able to handle them. When demand drops, destination components can catch up and the queue shortens.
 
-A queue responds to high demand without needing to add resources to the system. However, for messages that need to be handled quickly, creating additional instances of your destination component can allow them to share the load. Each message is handled by only one instance. This is an effective way to scale your entire application by only adding resources to the components that actually need it.
+A queue responds to high demand without needing to add resources to the system. However, for messages that need to be handled quickly, creating more instances of your destination component can allow them to share the load. Each message is handled by only one instance. This is an effective way to scale your entire application by only adding resources to the components that actually need it.
 
 ### What is a topic?
 
@@ -68,7 +68,7 @@ The key advantages of Service Bus queues include:
 * Guarantees _first-in, first-out (FIFO)_ order. Messages are handled in the same order they're added. Although FIFO is the normal operation of a queue, the default FIFO pattern is altered if the organization sets up sequenced or scheduled messages or during interruptions like a system crash. For more information, see [Compare Azure Storage queues and Azure Service Bus queues](/azure/service-bus-messaging/service-bus-azure-and-service-bus-queues-compared-contrasted#additional-information).
 * Can group multiple messages in one transaction. If one message in the transaction fails to be delivered, all messages in the transaction aren't delivered.
 * Supports role-based security.
-* Does not require destination components to continuously poll the queue.
+* Doesn't require destination components to continuously poll the queue.
 
 Advantages of storage queues:
 
@@ -104,7 +104,7 @@ Choose a _Service Bus_ queue if:
 
 Choose a _storage_ queue if:
 
-* You need a simple queue with no particular additional requirements.
+* You need a simple queue with no particular extra requirements.
 * You need an audit trail of all messages that pass through the queue.
 * You expect the queue to exceed 80 GB in size.
 * You want to track progress for processing a message inside the queue.

@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.app-management-using-microsoft-endpoint-manager
 metadata:
-  title: Understand app management using Microsoft Endpoint Manager
-  description: In this module, you'll learn about app management using Microsoft Endpoint Manager. 
+  title: Understand app management using Microsoft Intune
+  description: In this module, you'll learn about app management using Microsoft Intune. 
   ms.date: 02/28/2023
   author: Erikre
   ms.author: erikre
   ms.topic: interactive-tutorial
   ms.prod: learning-endpoint-manager
-title: Understand app management using Microsoft Endpoint Manager
-summary: As part of application management, Microsoft Endpoint Manager helps you configure apps, protect app data, manage app policy assignments, and implement app security rules. 
+title: Understand app management using Microsoft Intune
+summary: As part of application management, Microsoft Intune helps you configure apps, protect app data, manage app policy assignments, and implement app security rules. 
 abstract: | 
   In this module, you will:
   - Understand how your organization's apps can be configured and protected.

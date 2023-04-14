@@ -49,7 +49,7 @@ Minimum and maximum node configurations are:
 - Maximum of 12 clusters in an Azure private cloud
 - Maximum of 96 nodes in an Azure private cloud
 
-Each of the high-end hosts has 576 GB of RAM and dual Intel 18-core, 2.3-GHz processors. The high-end hosts have two vSAN disk groups with a 15.36-TB (SSD) raw vSAN capacity tier and a 3.2 TB (NVMe) vSAN cache tier.
+Each of the high-end hosts has 576 GB of RAM and dual Intel 18-core, 2.3-GHz processors. The high-end hosts have two vSAN disk groups with a 15.20-TB (SSD) raw vSAN capacity tier and a 3.2 TB (NVMe) vSAN cache tier.
 
 You use vSphere and NSX-T Manager to manage most aspects of cluster configuration or operation. All local storage for each host in a cluster is under the control of vSAN. Each ESXi host in the solution is configured with four 25-Gbps NICs, two NICs provisioned for ESXi system traffic, and two NICs provisioned for workload traffic.
 
@@ -95,7 +95,7 @@ During the deployment of a private cloud, the private networks for management, p
 
 ### Private-cloud storage 
 
-Azure VMware Solution uses native, fully configured, all-flash vSAN storage that's local to the cluster. All local storage from each host in a cluster is used in a vSAN datastore, and data-at-rest encryption is enabled by default. Deduplication and compression are enabled on the vSAN datastore by default.
+Azure VMware Solution uses native, fully configured, all-flash vSAN storage that's local to the cluster. All local storage from each host in a cluster is used in a vSAN datastore, and data-at-rest encryption is enabled by default.
 
 All disk groups use an NVMe cache tier of 1.6 TB with the raw SSD-based capacity of 15.4 TB per host. Two disk groups are created on each node of the vSphere cluster. Each disk group contains one cache disk and three capacity disks. All datastores are created as part of a private-cloud deployment and are available for use immediately.
 

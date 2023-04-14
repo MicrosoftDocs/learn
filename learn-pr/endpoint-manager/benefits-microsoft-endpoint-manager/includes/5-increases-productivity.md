@@ -4,4 +4,4 @@ In addition, you can increase end-user productivity by using endpoint analytics.
 
 Endpoint analytics is also a part of the [Microsoft Adoption Score](/microsoft-365/admin/adoption/adoption-score). The Adoption Score provides productivity data, insights, and recommendations for your end users' experience and your organization's overall technology experience.
 
-![Screenshot of Endpoint analytics in Microsoft Endpoint Manager.](../media/intro-to-endpoint-manager-11.png) ](../media/intro-to-endpoint-manager-11.png#lightbox)
+![Screenshot of Endpoint analytics in Microsoft Intune.](../media/intro-to-endpoint-manager-11.png) ](../media/intro-to-endpoint-manager-11.png#lightbox)

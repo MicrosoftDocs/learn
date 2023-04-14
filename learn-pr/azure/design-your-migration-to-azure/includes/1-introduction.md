@@ -2,13 +2,13 @@ Several Azure services can help you migrate resources successfully to Azure. Azu
 
 You're the solution architect for a manufacturing company that's planning to move several datacenters to Azure. You've been asked to plan your migration and to identify the tools and services you can use to migrate your company's services. Your workloads consist primarily of VMware virtual-machine-based workloads with data stored in relational databases.
 
-You'll learn how Azure Migrate can:
+In this module, you learn how Azure Migrate can:
 
 * Assess your environment's readiness to move to Azure.
 * Estimate monthly costs.
 * Get sizing recommendations for machines.
 
-You’ll also learn how Azure Migrate can migrate virtual machines to Azure. Finally, you'll learn about the Azure Database Migration Service, which helps you migrate your SQL workloads to the cloud.
+You also learn how Azure Migrate can migrate virtual machines to Azure. Finally, you learn about the Azure Database Migration Service, which helps you migrate your SQL workloads to the cloud.
 
 ## Learning objectives
 

@@ -14,7 +14,7 @@ As we described in the preceding unit, Azure provides templates that help you bu
 
 1. In the previous exercise, you deployed your function app and opened it. If it isn't already open, you can open it from the Home page by selecting **All resources**, and then selecting your function app, named something like **escalator-functions-xxx**.
 
-1. In the Function App menu, under **Functions**, select **Functions**. The **Functions** pane appears. This lists any functions you defined for your function app.
+1. In the Function App menu, under **Functions**, select **Functions**. The **Functions** pane appears. This pane lists any functions you defined for your function app.
 
 1. In the command bar, select **Create**. The **Create function** pane appears.
 
@@ -68,7 +68,7 @@ As we described in the preceding unit, Azure provides templates that help you bu
     }
     ```
 
-    This configuration file declares that the function runs when it receives an HTTP request. The output binding declares that the response will be sent as an HTTP response.
+    This configuration file declares that the function runs when it receives an HTTP request. The output binding declares that the response is sent as an HTTP response.
 
 ::: zone-end
 
@@ -132,7 +132,7 @@ As we described in the preceding unit, Azure provides templates that help you bu
     }
     ```
 
-    This configuration declares that the function runs when it receives an HTTP request. The output binding declares that the response will be sent as an HTTP response.
+    This configuration declares that the function runs when it receives an HTTP request. The output binding declares that the response is sent as an HTTP response.
 
 ::: zone-end
 
@@ -152,9 +152,38 @@ To test the function, you can send an HTTP request to the function URL using cUR
 
     :::image type="content" source="../media/5-get-function-url.png" alt-text="Screenshot of the Azure portal showing the function editor, with the Get function URL button highlighted." lightbox="../media/5-get-function-url.png":::
 
+1. Open a command prompt and run cURL to send an HTTP request to the function URL. Keep in mind to use the URL that you copied in the previous step.
+
+> [!TIP]
+> You might want to wrap the URL in quotes to avoid issues with special characters in the URL.
+
+    ```bash
+    curl "<your-https-url>"
+    ```
+
+    The response should look like the following.
+
+    ```bash
+    This HTTP triggered function executed successfully. Pass a name on the query string or in the request body for a personalized response.
+    ```
+
+    Now pass a name in the request. To do that, you need to add a query string parameter named `name` to the URL. The following example adds the query string parameter `name=Azure`.
+
+    ```bash
+    curl "<your-https-url>&name=Azure"
+    ```
+
+    The response should look like the following.
+
+    ```bash
+    Hello, Azure. This HTTP triggered function executed successfully.
+    ```
+
+    The function executed successfully and returned the name that you passed in the request.
+
 ### Secure HTTP triggers
 
-HTTP triggers let you use API keys to block unknown callers by requiring a key as part of the request. When you create a function, you select the _authorization level_. By default, it's set to *Function*, which requires a function-specific API key, but it can also be set to *Admin* to use a global "master" key, or *Anonymous* to indicate that no key is required. You can also change the authorization level through the function properties after creation.
+HTTP triggers let you use API keys to block unknown callers by requiring a key as part of the request. When you create a function, you select the _authorization level_. By default, it's set to *Function*, which requires a function-specific API key. It can also be set to *Admin* to use a global "master" key, or *Anonymous* to indicate that no key is required. You can also change the authorization level through the function properties after creation.
 
 Because you specified *Function* when you created this function, you need to supply the key when you send the HTTP request. You can send it as a query string parameter named `code`, or as an HTTP header (preferred) named `x-functions-key`.
 
@@ -164,15 +193,7 @@ Because you specified *Function* when you created this function, you need to sup
 
     :::image type="content" source="../media/5-get-function-key.png" alt-text="Screenshot showing the Function Keys pane with the revealed function key highlighted." lightbox="../media/5-get-function-key.png" :::
 
-1. At the bottom of the screen, scroll to the left, and select your function. At the top, under the **Get Function Url** section, copy your **URL** by selecting the *Copy to clipboard* icon at the end of the URL. Store this link in Notepad or a similar app for later use.
-
-1. Next, scroll to the left, and from the Function App menu, under **Functions**, select **Functions**, and then select **HttpTrigger1** (or **DriveGearTemperatureService** for PowerShell). The **HttpTrigger1** (or **DriveGearTemperatureService** for PowerShell) Function pane appears.
-
-1. In the left menu pane, under **Developer**, select **Code + Test**. The **Code + Test** pane appears for your *HttpTrigger1* (or *DriveGearTemperatureService* for PowerShell) function.
-
-1. On the command bar, select **Test/Run**. A pane showing the input parameters for running a test.
-
-1. In the **Body** text box, overwrite the embedded code by replacing line 2 in the **Body** with the cURL command below, replacing `<your-function-key>` with the function key value you saved, and replacing `<your-https-url>` with the URL of your function.
+1. To test the function with the function key, open a command prompt and run cURL to send an HTTP request to the function URL. Replace `<your-function-key>` with the function key value you saved, and replacing `<your-https-url>` with the URL of your function.
 
     ```bash
     curl --header "Content-Type: application/json" --header "x-functions-key: <your-function-key>" --request POST --data "{\"name\": \"Azure Function\"}" <your-https-url>
@@ -185,7 +206,7 @@ Because you specified *Function* when you created this function, you need to sup
     - Used a `POST` request.
     - Passed the Azure Function with the URL for your function.
 
-1. Select **Run**.
+1. Check the logs.
 
     The **Code + Test** pane should open a session displaying log file output (ensure **Filesystem Logs** is selected in the drop-down at the top of the **Logs** pane). The log file updates with the status of your request, which should look something like this for JavaScript:
 
@@ -358,7 +379,7 @@ We're going to use the **Test/Run** feature in *Developer* > *Code + Test* to te
     }
     ```
 
-1. Select **Run**. The **Output** tab displays the HTTP response code and content. To see log messages, open the **Logs** tab in the bottom flyout of the pane (if it is not already open). The following image shows an example response in the output pane and messages in the **Logs** pane.
+1. Select **Run**. The **Output** tab displays the HTTP response code and content. To see log messages, open the **Logs** tab in the bottom flyout of the pane (if it isn't already open). The following image shows an example response in the output pane and messages in the **Logs** pane.
 
    :::image type="content" source="../media/5-portal-testing.png" alt-text="Screenshot of the Azure function editor, with the Test and Logs tabs showing." lightbox="../media/5-portal-testing.png":::  
 

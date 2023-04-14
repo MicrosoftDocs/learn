@@ -4,11 +4,12 @@ metadata:
   moduleType: standard
   title: Publish reusable Bicep code by using GitHub Actions
   description: Build GitHub Actions deployment workflows for template specs and Bicep modules. Lint your Bicep code, apply versioning, and publish it to Azure or to a Bicep registry.
-  ms.date: 03/29/2022
+  ms.date: 04/05/2022
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: engagement-fy23
 title: Publish reusable Bicep code by using GitHub Actions
 summary: |
   Publish Azure template specs and Bicep modules by using a deployment workflow. Automatically validate and add versioning to your reusable Bicep code.
@@ -26,18 +27,18 @@ prerequisites: |
   - Azure, including the Azure portal, subscriptions, resource groups, and resources.
   - Basic Git commands, including cloning, committing files, and pushing changes to GitHub.
   - GitHub Actions, including jobs, steps, and secrets.
-  
+
   To work through the exercises in the module, you'll need:
-  
+
   - An Azure account that has the ability to create resource groups and Azure Active Directory applications.
   - A GitHub account.
-  
+
   You'll also need the following items installed locally:
-  
-  - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
-  - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep&azure-portal=true)
+
+  - [Visual Studio Code](https://code.visualstudio.com)
+  - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep)
   - The latest [Azure CLI](/cli/azure/install-azure-cli) tools *or* the latest [Azure PowerShell](/powershell/azure/install-az-ps) version
-  - [Git](https://git-scm.com/download?azure-portal=true)
+  - [Git](https://git-scm.com/download)
 iconUrl: /training/achievements/bicep/publish-reusable-bicep-code-using-github-actions.svg
 levels:
   - advanced

@@ -4,7 +4,7 @@ metadata:
   moduleType: introduction
   title: Introduction to Azure HPC Cache
   description: Evaluate whether Azure HPC Cache is appropriate for improving the productivity of your high-performance computing applications.
-  ms.date: 06/21/2021
+  ms.date: 03/21/2023
   author: ronhogue
   ms.author: rohogue
   ms.topic: interactive-tutorial

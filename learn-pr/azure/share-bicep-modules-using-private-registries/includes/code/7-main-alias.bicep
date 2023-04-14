@@ -7,7 +7,7 @@ param appServiceAppName string = 'toy-${uniqueString(resourceGroup().id)}'
 @description('The name of the App Service plan SKU.')
 param appServicePlanSkuName string = 'F1'
 
-var appServicePlanName = 'toy-product-launch-plan'
+var appServicePlanName = 'toy-dog-plan'
 
 module website 'br/ToyCompanyRegistry:website:v1' = {
   name: 'toy-dog-website'

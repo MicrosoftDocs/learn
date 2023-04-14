@@ -7,4 +7,4 @@ In Intune, for devices that don't meet your organization's compliance policies o
 
 The retire action removes managed app data (where applicable), settings, and email profiles that were assigned by using Intune. The device is removed from Intune management. The actual retirement happens the next time the device checks in and receives the remote retire action. The device still shows up in Intune until the device checks in. If you want to remove stale devices immediately, use the Delete action instead.
 
-[ ![Retiring devices using Microsoft Endpoint Manager.](../media/intro-to-endpoint-manager-18.png) ](../media/intro-to-endpoint-manager-18.png#lightbox)
+[ ![Retiring devices using Microsoft Intune.](../media/intro-to-endpoint-manager-18.png) ](../media/intro-to-endpoint-manager-18.png#lightbox)

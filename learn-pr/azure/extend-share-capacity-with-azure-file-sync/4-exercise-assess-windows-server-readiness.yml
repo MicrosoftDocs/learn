@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Assess Windows Server readiness
   description: In this exercise, you'll run the evaluation cmdlets to check the compatibility of your file server.
   ms.date: 05/18/2020
-  author: roygara
-  ms.author: rogarana
+  author: khdownie
+  ms.author: kendownie
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 15

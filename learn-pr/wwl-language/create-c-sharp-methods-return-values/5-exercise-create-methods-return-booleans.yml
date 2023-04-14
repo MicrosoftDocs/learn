@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-c-sharp-methods-return-values.exercise-create-methods-return-booleans
+title: Return Booleans from methods
+metadata:
+  title: Return Booleans from methods
+  description: "Return Booleans from methods"
+  ms.date: 03/21/2023
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-exercise-create-methods-return-booleans.md)]
