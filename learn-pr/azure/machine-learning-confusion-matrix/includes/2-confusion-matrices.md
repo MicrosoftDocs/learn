@@ -1,4 +1,4 @@
-Data can be thought of as continuous, categorical, or ordinal (categorical but with an order). Confusion matrices are a means of assessing how well a categorical model performs. For context as to how these work, let’s first refresh our knowledge about continuous data. Through this, we can see how confusion matrices are simply an extension of the histograms we already know.
+You can think of data as continuous, categorical, or ordinal (categorical but with an order). Confusion matrices are a means of assessing how well a categorical model performs. For context as to how these work, let’s first refresh our knowledge about continuous data. Through this, we can see how confusion matrices are simply an extension of the histograms we already know.
 
 ## Continuous data distributions
 
@@ -14,13 +14,13 @@ In some respects, categorical data aren't so different from continuous data. We 
 
 ![Bar plot showing more false labels then true.](../media/8-g-b.jpg)
 
-This tells us that there are 750 samples with “false” as a label, and 250 with “true” as the label.
+This tells us that there are 750 samples with "false" as a label, and 250 with "true" as the label.
 
 A label for three categories is similar:
 
 ![Bar plot showing more animal labels than person and tree labels.](../media/8-g-c.jpg)
 
-This tells us that there are 200 samples that are ‘person’, 400 that are ‘animal’, and 100 that are ‘tree’.
+This tells us that there are 200 samples that are "person", 400 that are "animal", and 100 that are "tree".
 
 As categorical labels are simpler, we can often show these as simple tables. The two preceding graphs would appear like so:
 
@@ -36,20 +36,20 @@ And:
 
 ## Looking at predictions
 
-We can look at predictions that the model makes just like we look at the ground-truth labels in our data. For example, we might see that in the test set our model predicted ‘false’ 700 times and ‘true’ 300 times.
+We can look at predictions that the model makes just like we look at the ground-truth labels in our data. For example, we might see that in the test set our model predicted "false" 700 times and "true" 300 times.
 
 | Model Prediction | Count |
 |------------|-------------|
 | False      | 700         |
 | True       | 300         |
 
-This provides direct information about the predictions our model is making, but it doesn’t tell us which of these are correct. While we can use a cost function to understand how often the correct responses are given, the cost function won't tell us which kinds of errors are being made. For example, the model might correctly guess all ‘true’ values, but also guess ‘true’ when it should have guessed ‘false’.
+This provides direct information about the predictions our model is making, but it doesn’t tell us which of these are correct. While we can use a cost function to understand how often the correct responses are given, the cost function won't tell us which kinds of errors are being made. For example, the model might correctly guess all "true" values, but also guess "true" when it should have guessed "false".
 
 ## The confusion matrix
 
 The key to understanding the model performance is to combine the table for model prediction with the table for ground-truth data labels:
 
-![Confusion matrix with total numbers added.](../media/8-2-a.jpg)
+![Diagram of the confusion matrix with total numbers added.](../media/8-2-a.jpg)
 
 The square we haven't filled out is called the confusion matrix.
 
@@ -61,36 +61,36 @@ Let’s explain these one by one, replacing these acronyms with actual values. B
 
 The top-left value will list how many times the model predicted false, and the actual label was also false. In other words, this lists how many times the model correctly predicted false. Let’s say, for our example, that this happened 500 times:
 
-![Confusion matrix without total numbers, showing true negatives only.](../media/8-2-b.jpg)
+![Diagram of the confusion matrix without total numbers, showing true negatives only.](../media/8-2-b.jpg)
 
 ### False Negatives (FN)
 
 The top-right value tells us how many times the model predicted false, but the actual label was true. We know now that this is 200. How? Because the model predicted false 700 times, and 500 of those times it did so correctly. Thus, 200 times it must have predicted false when it shouldn't have.
 
-![Confusion matrix showing false negatives only.](../media/8-2-c.jpg)
+![Diagram of the confusion matrix showing false negatives only.](../media/8-2-c.jpg)
 
 ### False Positives (FP)
 
-The bottom-right value holds false positives. This tells us how many times the model predicted true, but the actual label was false. We know now that this is 250, because there were 750 time that the correct answer was false. 500 of these times appear in the top-left cell (TN):
+The bottom-right value holds false positives. This tells us how many times the model predicted true, but the actual label was false. We know now that this is 250, because there were 750 times that the correct answer was false. 500 of these times appear in the top-left cell (TN):
 
-![Confusion matrix showing false positives also.](../media/8-2-d.jpg)
+![Diagram of the confusion matrix showing false positives also.](../media/8-2-d.jpg)
 
 ### True Positives (TP)
 
 Finally, we have true positives. This is the number of times that the model correctly prediction of true. We know that this is 50 for two reasons. Firstly, the model predicted true 300 times, but 250 times it was incorrect (bottom-left cell). Secondly, there were 250 times that true was the correct answer, but 200 times the model predicted false.
 
-![Confusion matrix showing true positives also.](../media/8-2-e.jpg)
+![Diagram of the confusion matrix showing true positives also.](../media/8-2-e.jpg)
 
 ### The final matrix
 
 We normally simplify our confusion matrix slightly, like so:
 
-![Simplified confusion matrix.](../media/8-2-f.jpg)
+![Diagram of the simplified confusion matrix.](../media/8-2-f.jpg)
 
-We’ve colored the cells here to highlight when the model made correct predictions. From this, we know not only how often the model made certain types of predictions, but also how often those predictions were correct, or incorrect.
+We’ve colored the cells here to highlight when the model made correct predictions. From this, we know not only how often the model made certain types of predictions, but also how often those predictions were correct or incorrect.
 
 Confusion matrices can also be constructed when there are more labels. For example, for our person/ animal/tree example, we might get a matrix like so:
 
-![Expanded confusion matrix with three labels - person, animal, and tree.](../media/8-2-g.jpg)
+![Diagram of the expanded confusion matrix with three labels: person, animal, and tree.](../media/8-2-g.jpg)
 
-When there are three categories, metrics like True Positives no longer apply, but we can still see exactly how often the model made certain kinds of mistakes. For example, we can see that the model predicted that ‘person’ 200 times when the actual correct result was ‘animal’.
+When there are three categories, metrics like True Positives no longer apply, but we can still see exactly how often the model made certain kinds of mistakes. For example, we can see that the model predicted that "person" 200 times when the actual correct result was "animal".
