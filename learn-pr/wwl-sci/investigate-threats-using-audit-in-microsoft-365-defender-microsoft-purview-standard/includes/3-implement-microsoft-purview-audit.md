@@ -15,8 +15,8 @@ These steps are examined in greater detail in the following sections.
 
 Licensing for Audit (Standard) requires the appropriate organization subscription that provides:
 
- -  access to the audit log search tool.
- -  per-user licensing that's required to log and retain audit records.
+ -  Access to the audit log search tool.
+ -  Per-user licensing that's required to log and retain audit records.
 
 When an audited activity is performed by a user or admin, an audit record is generated and stored in the audit log for the organization. In Audit (Standard), audit records are retained and searchable in the audit log for 90 days.
 

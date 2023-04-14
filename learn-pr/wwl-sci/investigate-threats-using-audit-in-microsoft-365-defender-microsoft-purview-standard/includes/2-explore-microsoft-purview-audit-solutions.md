@@ -2,10 +2,10 @@
 
 Microsoft Purview auditing solutions provide an integrated solution to help organizations effectively respond to:
 
- -  security events
- -  forensic investigations
- -  internal investigations
- -  compliance obligations
+ -  Security events
+ -  Forensic investigations
+ -  Internal investigations
+ -  Compliance obligations
 
 ### Two Microsoft Purview auditing solutions
 
@@ -21,9 +21,9 @@ Microsoft Purview Audit (Standard) provides organizations with the ability to lo
  -  **Enabled by default**. Audit (Standard) is turned on by default for all organizations with the appropriate subscription. As a result, records for audited activities will be captured and searchable. The only setup that's required is to assign the necessary permissions to access the audit log search tool (and the corresponding cmdlet) and to ensure that users are assigned the right license for Microsoft Purview Audit (Premium) features.
  -  **Thousands of searchable audit events**. Organizations can search for a wide-range of audited activities that occur in most of the Microsoft 365 services in an organization. For a partial list of the activities that can be searched for, see [Audited activities](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?azure-portal=true). For a list of the services and features that support audited activities, see [Audit log record type](/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype?azure-portal=true).
  -  **Audit search tool in the Microsoft Purview compliance portal**. Organizations can use the Audit log search tool in the Microsoft Purview compliance portal to search for audit records. You can search for:
-     -  specific activities
-     -  activities performed by specific users
-     -  activities that occurred within a date range
+     -  Specific activities
+     -  Activities performed by specific users
+     -  Activities that occurred within a date range
     
     :::image type="content" source="../media/audit-log-search-tool-6cf1e38b.png" alt-text="Screenshot of the audit log search tool in the Microsoft Purview compliance portal." lightbox="../media/audit-log-search-tool-6cf1e38b.png":::
     
