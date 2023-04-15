@@ -125,7 +125,7 @@ GitHub uses protection rules, environment secrets, and wait timers to keep envir
 
 | Feature | Use |
 |---|---|
-| **Protection rules** | Administrators can set protection rules that specify reviewers that must approve workflow runs on an environment. The reviewers have read-only access to the repository sp that they can approve or reject workflow runs without having permission to edit the code. |
+| **Protection rules** | Administrators can set protection rules that specify reviewers that must approve workflow runs on an environment. The reviewers have read-only access to the repository so that they can approve or reject workflow runs without having permission to edit the code. |
 | **Environment secrets** | Systems such as GitHub Actions or Azure can execute a workflow on an environment. Workflow jobs can only access the environment that they reference using the secrets of that environment. A reviewer can approve access for the job if needed. |
 |**Wait timers** | In situations where you want to delay code deployment, you can set a timer that can wait up to 30 days before deployment takes place. |
 
