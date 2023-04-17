@@ -1647,3 +1647,13 @@ achievements:
   title: Work with data in Azure Databricks
   summary: To work with data in Azure Databricks, you can use the *dataframe* object.
   iconUrl: /training/achievements/work-with-data-in-azure-databricks.svg
+- uid: learn.wwl.train-machine-learning-model-azure-databricks.badge
+  type: badge
+  title: Train a machine learning model with Azure Databricks
+  summary: Machine learning involves using data to train a predictive model. Azure Databricks support multiple commonly used machine learning frameworks that you can use to train models.
+  iconUrl: /training/achievements/train-a-machine-learning-model-with-azure-databricks.svg
+- uid: learn.wwl.use-mlflow-to-track-experiments-azure-databricks.badge
+  type: badge
+  title: Use MLflow to track experiments in Azure Databricks
+  summary: When you run data science and machine learning experiments at scale, you can use MLflow to track experiment runs and metrics.
+  iconUrl: /training/achievements/use-mlflow-to-track-experiments-in-azure-databricks.svg
