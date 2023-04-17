@@ -1,14 +1,14 @@
 
 Use these Try-This exercises to get some hands-on experience with Azure.
 
-In this demonstration, we will configure the Bastion service, virtual machine updates, virtual machine extensions, and disk encryption. Optionally, we will use RDP to connect to a Windows virtual machine and SSH to connect to a Linux machine.
+In this demonstration, we'll configure the Bastion service, virtual machine updates, virtual machine extensions, and disk encryption. Optionally, we'll use RDP to connect to a Windows virtual machine and SSH to connect to a Linux machine.
 
 ## Task 1 - Use the Bastion service
 
 > [!NOTE]
 > This task requires a virtual machine. If you are doing the next task, virtual machine updates, use a Windows virtual machine and keep the session running.
 
-In this task, we will configure the Bastion service and connect to a virtual machine with service.
+In this task, we'll configure the Bastion service and connect to a virtual machine with service.
 
 ### Configure the Bastion service
 
@@ -39,7 +39,7 @@ In this task, we will configure the Bastion service and connect to a virtual mac
 > [!NOTE]
 > This task requires a virtual machine in the **running** state. You may want to enable **Update management** prior to this lesson.
 
-In this task, we will review virtual machine update management.
+In this task, we'll review virtual machine update management.
 
 1.  In the **Portal**, navigate to your virtual machine.
 2.  Under **Operations** select **Update management**.
@@ -52,7 +52,7 @@ In this task, we will review virtual machine update management.
 
 ## Task 3 - Virtual Machine Extensions
 
-In this task, we will install the IaaSAntimalware extension.
+In this task, we'll install the IaaSAntimalware extension.
 
 1.  In the **Portal**, select your virtual machine.
 2.  Under **Settings**, click **Extensions**. Review how extensions are used.
@@ -70,7 +70,7 @@ In this task, we will install the IaaSAntimalware extension.
 > [!NOTE]
 > This task requires a storage account.
 
-In this task, we will enable disk encryption for a storage account.
+In this task, we'll enable disk encryption for a storage account.
 
 ### Review encryption key options
 
@@ -120,7 +120,7 @@ In this task, we will enable disk encryption for a storage account.
 > [!NOTE]
 > This task requires a Windows VM with a public IP address. You also need the login credentials for the machine.
 
-In this task, we will use RDP to connect to a Windows virtual machine.
+In this task, we'll use RDP to connect to a Windows virtual machine.
 
 1.  In the **Portal** navigate to your Windows virtual machine.
 2.  Ensure the virtual machine is **Running**.
@@ -138,7 +138,7 @@ In this task, we will use RDP to connect to a Windows virtual machine.
 > [!NOTE]
 > This task requires a Linux VM. Ensure port 22 is open.
 
-In this task, we will create an SSH private key with PuTTYgen, and then use SSH to connect to a Linux virtual machine.
+In this task, we'll create an SSH private key with PuTTYgen, and then use SSH to connect to a Linux virtual machine.
 
 ### Create the SSH Keys
 

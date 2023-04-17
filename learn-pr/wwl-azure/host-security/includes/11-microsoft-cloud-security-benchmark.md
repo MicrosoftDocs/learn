@@ -21,7 +21,7 @@ The **Microsoft cloud security benchmark (MCSB)** provides prescriptive best pra
 
 **Example: Microsoft Defender for Cloud - Regulatory compliance dashboard**
 
-:::image type="content" source="../media/cms-regulatory-compliance-dashboard-example-93241b71.png" alt-text="Screenshot showing the Microsoft Defender for Cloud Regulatory compliance dashboard.":::
+:::image type="content" source="../media/cms-regulatory-compliance-dashboard-example-93241b71.png" alt-text="Screenshot showing the Microsoft Defender for Cloud Regulatory compliance dashboard." lightbox="../media/cms-regulatory-compliance-dashboard-example-93241b71.png":::
 
 
 **Azure guidance and security principles**: Azure security guidance, security principles, features, and capabilities.

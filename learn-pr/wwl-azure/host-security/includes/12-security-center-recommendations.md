@@ -7,7 +7,7 @@ Defender for Cloud **makes its security recommendations based on your chosen ini
 
 **Example: Microsoft Defender for Cloud - All recommendations**
 
-:::image type="content" source="../media/microsoft-defender-for-cloud-all-recommendations-dashboard-version-1-585ea134.png" alt-text="Screenshot showing the Microsoft Defender for Cloud All recommendations dashboard.":::
+:::image type="content" source="../media/microsoft-defender-for-cloud-all-recommendations-dashboard-version-1-585ea134.png" alt-text="Screenshot showing the Microsoft Defender for Cloud All recommendations dashboard." lightbox="../media/microsoft-defender-for-cloud-all-recommendations-dashboard-version-1-585ea134.png":::
 
 
 **Recommendations** are actions for you to take to secure and harden your resources. Each recommendation provides you with the following information:
