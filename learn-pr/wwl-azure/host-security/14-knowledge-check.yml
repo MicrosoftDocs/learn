@@ -4,16 +4,15 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/02/2023
+  ms.date: 04/17/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  zone_pivot_groups: None
 durationInMinutes: 8
 content: |
-  [!include[](includes/13-knowledge-check.md)]
+  [!include[](includes/14-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
@@ -35,7 +34,7 @@ quiz:
       explanation: "BitLocker is for Windows based machines."
     - content: "DM-Crypt"
       isCorrect: true
-      explanation: "DM-Crypt . Azure Disk Encryption is a capability that lets you encrypt your Windows and Linux IaaS VM disks. Azure Disk Encryption uses the industry standard BitLocker feature of Windows and the `DM-Crypt` feature of Linux to provide OS and data disk encryption to help protect and safeguard your data."
+      explanation: "DM-Crypt. Azure Disk Encryption is a capability that lets you encrypt your Windows and Linux IaaS VM disks. Azure Disk Encryption uses the industry standard BitLocker feature of Windows and the `DM-Crypt` feature of Linux to provide OS and data disk encryption to help protect and safeguard your data."
     - content: "FileVault"
       isCorrect: false
       explanation: "FireVault is for encrypting Mac machines."
@@ -61,7 +60,7 @@ quiz:
     - content: "System updates should be installed on your machines."
       isCorrect: false
       explanation: "System updates are a high-severity warning."
-  - content: "Which attacks will using a Privileged access workstations protect companies from?"
+  - content: "Which attacks will using a Privileged access workstations protects companies from?"
     choices:
     - content: "Protects against attackers who have gained administrative access."
       isCorrect: false
