@@ -4,7 +4,8 @@ The following explains how Azure separates identity and billing information usin
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=67fd032f-58ba-4dd9-8ae1-625b48e0bc20]
 
-This video was created with the help of artificial intelligence. To learn more about our principles for AI-generated content, visit [AI Content Principles](https://learn.microsoft.com/principles-for-ai-generated-content).
+> [!NOTE]
+> This video was created with the help of artificial intelligence. To learn more about our principles for AI-generated content, visit [AI Content Principles](/principles-for-ai-generated-content).
 
 :::image type="content" source="../media/azure-subscriptions-e855533e.png" alt-text="Diagram that shows the relationship between an Azure subscription and an Azure account, which is an identity in Azure Active Directory.":::
 

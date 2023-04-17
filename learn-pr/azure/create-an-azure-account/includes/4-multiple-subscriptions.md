@@ -6,7 +6,9 @@ The following explains how Azure separates identity and billing information usin
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=67fd032f-58ba-4dd9-8ae1-625b48e0bc20]
 
-This video was created with the help of artificial intelligence. To learn more about our principles for AI-generated content, visit [AI Content Principles](https://learn.microsoft.com/principles-for-ai-generated-content).
+> [!NOTE]
+> This video was created with the help of artificial intelligence. To learn more about our principles for AI-generated content, visit [AI Content Principles](/principles-for-ai-generated-content).
+
 
 When you sign up, an Azure subscription is created by default. An Azure subscription is a logical container used to provision resources in Azure. It holds the details of all your resources like virtual machines (VMs), databases, and more. When  you create an Azure resource like a VM, you identify the subscription it belongs to.  As you use the VM, the usage of the VM is aggregated and billed monthly.
 
