@@ -6,7 +6,7 @@ The concepts discussed in this module aren't all-inclusive. They represent some 
 
 ## Learning objectives
 
-By the end of this module, you'll be able to:
+By the end of this module, you're able to:
 
 - Describe the pillars of the Azure Well-Architected Framework.
 - Identify key principles for creating a solid architectural foundation.
