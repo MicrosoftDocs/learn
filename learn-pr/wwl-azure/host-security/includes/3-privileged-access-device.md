@@ -3,7 +3,7 @@ This is a relatively new guidance from Microsoft. To ensure the most secure cond
 
 For this solution, root of trust will be deployed using Windows Autopilot technology with hardware that meets the modern technical requirements. To secure a workstation, Autopilot lets you leverage Microsoft OEM-optimized Windows 10 devices. These devices come in a known good state from the manufacturer. Instead of reimaging a potentially insecure device, Autopilot can transform a Windows 10 device into a “business-ready” state. It applies settings and policies, installs apps, and even changes the edition of Windows 10.
 
-:::image type="content" source="../media/secure-workstation-deployment-flow-f33ffd59.png" alt-text="Process flow diagram that shows that hardware is most secure, when purchased from a trusted OEM that uses Autopilot to provision the device before delivery, then stong security polices are enforced throughout its usage." lightbox="../media/secure-workstation-deployment-flow-f33ffd59.png":::
+:::image type="content" source="../media/secure-workstation-deployment-flow-f33ffd59.png" alt-text="Process flow diagram that shows that hardware is most secure, when purchased from a trusted OEM that uses Autopilot to provision the device before delivery, then stong security policies are enforced throughout its usage." lightbox="../media/secure-workstation-deployment-flow-f33ffd59.png":::
 
 
 ## Hardware root-of-trust
