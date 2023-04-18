@@ -4,13 +4,12 @@ title: Deploy and configure Windows Defender
 metadata:
   title: Deploy and configure Windows Defender
   description: "Deploy and configure Windows Defender"
-  ms.date: 02/02/2023
+  ms.date: 04/17/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  zone_pivot_groups: None
 durationInMinutes: 7
 content: |
-  [!include[](includes/9-windows-defender.md)]
+  [!include[](includes/10-windows-defender.md)]
