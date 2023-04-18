@@ -1,5 +1,6 @@
 
 
+
 Now that you understand the basics of addition and more importantly, implicit type conversion between numeric and string data types, let's look at several other common mathematical operations on numeric data.
 
 ## Perform basic math operations

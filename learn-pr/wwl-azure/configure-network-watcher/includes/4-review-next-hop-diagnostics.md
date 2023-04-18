@@ -1,3 +1,4 @@
+
 The **next hop** feature in Azure Network Watcher checks if traffic is being directed to the intended destination. This feature lets you view the next connection point (or _next hop_) in your network route, and helps you verify a correct network configuration.
 
 :::image type="content" source="../media/next-hop-d7dde5f6.png" alt-text="Screenshot of the next hop feature in the Azure portal." border="false":::

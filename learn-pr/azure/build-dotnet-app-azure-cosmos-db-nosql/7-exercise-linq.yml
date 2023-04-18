@@ -7,12 +7,11 @@ metadata:
   description: |
     Use the Microsoft.Azure.Cosmos .NET SDK library from NuGet to build queries using the C# LINQ method syntax.
   sandbox: true
-  interactive: bash-editor
   author: seesharprun
   ms.author: sidandrews
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.date: 3/1/2023
+  ms.date: 3/30/2023
 durationInMinutes: 7
 content: |
   [!include[](includes/7-exercise-linq.md)]

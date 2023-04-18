@@ -4,7 +4,7 @@ metadata:
   title: Architect message brokering and serverless applications in Azure learning path
   description: Learn how to create reliable messaging for your applications, and how to take advantage of serverless application services in Azure.
   brand: azure
-  ms.date: 10/22/2019
+  ms.date: 04/04/2023
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
