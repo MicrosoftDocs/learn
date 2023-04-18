@@ -90,7 +90,7 @@ The following table lists tool that you can use to respond to customer-data DSRs
 |Tool name|Description|
 |------|------|
 |Azure portal|Use this tool to respond to DSRs within Azure.|
-|Content Search eDiscovery tool|This tool is in the Office 365 Security & compliance portal and the Microsoft 365 compliance portal. Use it to help fulfill DSRs against Office 365/Microsoft 365 applications.|
+|Content Search eDiscovery tool|This tool is in the Office 365 Security & compliance portal and the Microsoft Purview compliance portal. Use it to help fulfill DSRs against Office 365/Microsoft 365 applications.|
 |DSR case tool|This tool is in the Office 365 Security & compliance portal. Use this tool to help with data-subject investigations.|
 |In-app functionality|For applications that don’t support the Content Search tool, use this application for DSR responses.|
 
