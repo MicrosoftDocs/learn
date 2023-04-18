@@ -70,7 +70,7 @@ Again, there are two steps here. First, you’ll search for (discover) their per
 
 1. Provide the data subject with access by retrieving a copy of the document or item that contains responsive data. To do this:
 
-    1. In the Compliance Center, open **Content Search**.
+    1. In the compliance portal, open **Content Search**.
     1. Select **Preview results**.
     1. Select an item, and then select **Download original file**.
 
@@ -90,8 +90,8 @@ The following table lists tool that you can use to respond to customer-data DSRs
 |Tool name|Description|
 |------|------|
 |Azure portal|Use this tool to respond to DSRs within Azure.|
-|Content Search eDiscovery tool|This tool is in the Office 365 Security & Compliance Center and the Microsoft 365 compliance center. Use it to help fulfill DSRs against Office 365/Microsoft 365 applications.|
-|DSR case tool|This tool is in the Office 365 Security & Compliance Center. Use this tool to help with data-subject investigations.|
+|Content Search eDiscovery tool|This tool is in the Office 365 Security & compliance portal and the Microsoft 365 compliance portal. Use it to help fulfill DSRs against Office 365/Microsoft 365 applications.|
+|DSR case tool|This tool is in the Office 365 Security & compliance portal. Use this tool to help with data-subject investigations.|
 |In-app functionality|For applications that don’t support the Content Search tool, use this application for DSR responses.|
 
 ## Office 365 applications that help you with DSR responses
@@ -102,7 +102,7 @@ A quick way to determine the applications that are in scope is to review the Mic
 
 ## Limiting a search using compliance boundaries
 
-*Compliance boundaries* are logical search boundaries. Use these boundaries to control or limit the content locations, such as Exchange Online mailboxes and SharePoint Online sites, in which an IT administrator or compliance officer can search when responding to a DSR. Use the Compliance Center to create compliance boundaries. Common scenarios for setting compliance boundaries include for:
+*Compliance boundaries* are logical search boundaries. Use these boundaries to control or limit the content locations, such as Exchange Online mailboxes and SharePoint Online sites, in which an IT administrator or compliance officer can search when responding to a DSR. Use the compliance portal to create compliance boundaries. Common scenarios for setting compliance boundaries include for:
 
 - Geographical boundaries.
 - Governmental organizations and agencies.
