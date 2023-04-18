@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.mlflow-azure-databricks.exercise-use-mlflow
+title: Exercise - Use MLflow in Azure Databricks
+metadata:
+  title: Exercise - Use MLflow in Azure Databricks
+  description: "Exercise - Use MLflow in Azure Databricks"
+  ms.date: 03/22/2023
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.service: azure-databricks
+durationInMinutes: 45
+content: |
+  [!include[](includes/5-exercise-use-mlflow.md)]

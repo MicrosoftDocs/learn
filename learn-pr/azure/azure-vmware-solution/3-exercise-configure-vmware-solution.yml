@@ -1,0 +1,31 @@
+﻿### YamlMime:ModuleUnit
+uid: learn.azure.azure-vmware-solution.exercise-configure-vmware-solution
+title: Exercise - configure Azure VMware Solution
+metadata:
+  title: Exercise - configure Azure VMware Solution
+  description: This content is part of the "Secure outbound internet connectivity for Azure VMware Solution" module.
+  ms.date: 03/23/2023
+  author: Mahesh-MSFT
+  ms.author: maksh
+  ms.topic: interactive-tutorial
+  ms.prod: azure-vmware-solution
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-exercise-configure-vmware-solution.md)]
+quiz:
+  title: Knowledge Check
+  questions:
+    - content: "Which of the following option is suitable when you need a fixed public IP for outbound internet traffic?"
+      choices:
+        - content: "Managed SNAT."
+          isCorrect: false
+          explanation: "Incorrect. Managed SNAT uses dynamic public IP address."
+        - content: "Public IP at NSX Edge."
+          isCorrect: true
+          explanation: "Correct. Public IP at NSX Edge provides a fixed IP address."
+        - content: "Azure Load Balancer."
+          isCorrect: false
+          explanation: "Incorrect. Azure Load Balancer can't be used with Azure VMware Solution."
+        - content: "All of the above."
+          isCorrect: false
+          explanation: "Incorrect. Only Public IP at NSX Edge provides fixed IP address."

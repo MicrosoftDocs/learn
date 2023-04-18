@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-tips-tricks-teach-sc-300-identity-access-administrator.bring-all-together
+title: Bring it all together
+metadata:
+  title: Bring it all together
+  description: "Bring it all together"
+  ms.date: 04/10/2023
+  author: wwlpublish
+  ms.author: 'Trinity Sheppard '
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+  ms.service: azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/9-bring-all-together.md)]

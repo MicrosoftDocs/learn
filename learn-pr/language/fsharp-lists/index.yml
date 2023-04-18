@@ -3,7 +3,7 @@ uid: learn.fsharp-lists
 metadata:
   title: Store and apply operations on list data in F#
   description: This module covers collections in F#, with a specific focus on lists.
-  ms.date: 07/28/2021
+  ms.date: 03/24/2023
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial

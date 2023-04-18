@@ -4,8 +4,8 @@ title: Exercise - Implement a quantum oracle for graph coloring problem
 metadata:
   description: The steps of implementing a quantum oracle using QDK.
   ms.date: 09/19/2020
-  author: tcNickolas
-  ms.author: mamykhai
+  author: SoniaLopezBravo
+  ms.author: sonialopez
   ms.topic: interactive-tutorial
   ms.prod: learning-quantum
   show_latex: true

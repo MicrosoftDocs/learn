@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-solutions-securing-server-client-endpoints.design-solution-securing-operational-technology-industrial-control-systems
+title: Secure operational technology (OT) and industrial control systems (ICS) with Microsoft Defender for IoT
+metadata:
+  title: Secure operational technology (OT) and industrial control systems (ICS) with Microsoft Defender for IoT
+  description: "SC-100 preparatory unit on the topic: secure operational technology (OT) and industrial control systems (ICS) with Microsoft Defender for IoT."
+  ms.date: 3/14/2023
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-design-solution-securing-operational-technology-industrial-control-systems.md)]

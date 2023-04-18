@@ -8,3 +8,4 @@ Finally, Azure provides various deployment options to host Docker containers. In
 
 - [Get started with Docker remote containers on WSL 2: Use a Linux command line with Docker Desktop for Windows](/windows/wsl/tutorials/wsl-containers)
 - [Channel 9 video series: Docker and .NET Core 101](https://channel9.msdn.com/Series/Docker-and-NET-Core-101/?WT.mc_id=Educationcontainers-c9-shyboyer&azure-portal=true)
+- [Learn more about Windows containers](https://aka.ms/containers)

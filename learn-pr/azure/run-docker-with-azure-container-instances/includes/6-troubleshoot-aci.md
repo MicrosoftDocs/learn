@@ -1,4 +1,4 @@
-To help you understand basic ways to troubleshoot container instances, here you'll perform some basic operations such as:
+To help you understand basic ways to troubleshoot container instances, perform some basic operations like:
 
 * Pulling container logs
 * Viewing container events
@@ -14,7 +14,7 @@ az container logs \
   --name aci-demo
 ```
 
-You get output that resembles the following:
+You get a similar output to:
 
 ```output
 Checking for script in /app/prestart.sh
@@ -42,7 +42,7 @@ az container attach \
   --name aci-demo
 ```
 
-You get output that resembles the following:
+You get a similar output to:
 
 ```output
 Container 'aci-demo' is in state 'Running'...
@@ -64,7 +64,7 @@ Running script /app/prestart.sh
 
 As you diagnose and troubleshoot issues, you may need to run commands directly on your running container.
 
-1. To see this in action, run the following `az container exec` command to start an interactive session on your container:
+1. To see commands in your container, run the following `az container exec` command to start an interactive session on your container:
 
     ```azurecli
     az container exec \
@@ -86,7 +86,7 @@ As you diagnose and troubleshoot issues, you may need to run commands directly o
 
 ## Monitor CPU and memory usage on your container
 
-Here, you'll see how to monitor CPU and memory usage on your container.
+See how to monitor CPU and memory usage on your container.
 
 1. Run the following `az container show` command to get the ID of your Azure container instance and store the ID in a Bash variable:
 
@@ -109,7 +109,7 @@ Here, you'll see how to monitor CPU and memory usage on your container.
 
     Note the `--metrics` argument. Here, **CPUUsage** specifies to retrieve CPU usage.
 
-    You'll get output similar to this:
+    You see text similar to the following output:
 
     ```output
     Timestamp            Name          Average
@@ -142,7 +142,7 @@ Here, you'll see how to monitor CPU and memory usage on your container.
 
     Here, you specified **MemoryUsage** for the `--metrics` argument to retrieve memory usage information.
 
-    You'll get output similar to this:
+    You see text similar to the following output:
 
     ```output
     Timestamp            Name          Average
@@ -162,13 +162,13 @@ Here, you'll see how to monitor CPU and memory usage on your container.
     2021-09-21 23:55:00  Memory Usage  19181568.0
     ```
 
-In the Azure portal, Azure Container Instances CPU and memory usage information looks like this:
+In the Azure portal, Azure Container Instances CPU and memory usage information look like this:
 
 :::image type="content" source="../media/6-cpu-memory.png" alt-text="Screenshot that shows the Azure portal view of Azure Container Instances CPU and memory usage information.":::
 
 ## Clean up resources
 
-In this module, you created resources using your Azure subscription. You'll want to clean up these resources so that you won't continue to be charged for them.
+In this module, you created resources using your Azure subscription. You should clean up these resources so that you aren't still charged for them.
 
 1. In the Azure **home** page, select **All resources**.
 
@@ -176,4 +176,4 @@ In this module, you created resources using your Azure subscription. You'll want
 
 1. In the **Overview** tab of the resource group, select **Delete resource group**.
 
-1. This opens a new dialog box. Enter the name of the resource group again, and select **Delete**. This will delete all of the resources we created in this module.
+1. A new dialog box opens. Enter the name of the resource group again, and select **Delete**. All of the resources we created in this module are deleted.

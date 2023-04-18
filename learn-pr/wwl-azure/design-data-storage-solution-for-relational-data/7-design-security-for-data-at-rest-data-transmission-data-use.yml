@@ -3,8 +3,8 @@ uid: learn.wwl.design-data-storage-solution-for-relational-data.design-encryptio
 title: Design security for data at rest, data in motion, and data in use
 metadata:
   title: Design security for data at rest, data in motion, and data in use
-  description: "Design security for data at rest, data in motion (data in transit), and data in use"
-  ms.date: 11/04/2022
+  description: "Design security for data at rest, data in motion, and data in use"
+  ms.date: 03/29/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial

@@ -5,8 +5,8 @@ metadata:
   title: Get started with a Jupyter notebook and Q# in Azure Quantum
   description: Learn how to run a Q# or Python sample Jupyter notebook in an Azure Quantum workspace.
   ms.date: 03/08/2021
-  author: SoniaLopezBravo
-  ms.author: sonialopez
+  author: aviviano
+  ms.author: amvivian
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

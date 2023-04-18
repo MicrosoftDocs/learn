@@ -1,6 +1,6 @@
 Your company is looking at ways to deploy your cloud-based video rendering service. You've chosen Azure Kubernetes Service (AKS) as your cloud-native development platform. Before you can deploy any application, you need to create your AKS cluster.
 
-We'll review a few concepts that allow you to deploy a new AKS cluster successfully.
+Let's review a few concepts so that you can deploy a new AKS cluster successfully.
 
 ## Kubernetes clusters
 
@@ -16,9 +16,9 @@ A cluster is node-based. There are two types of nodes in a Kubernetes cluster th
 
 ## Cluster architectures
 
-A cluster architecture allows you to conceptualize the number of control planes and nodes you'll deploy in your Kubernetes cluster.
+Use a cluster architecture to conceptualize the number of control planes and nodes you deploy in your Kubernetes cluster.
 
-For example, the number of nodes in a cluster should always be more than two. When a node becomes unavailable, the Kubernetes scheduler will try to reschedule all the workloads running on this node onto the remaining nodes in the cluster.
+For example, the number of nodes in a cluster should always be more than two. When a node becomes unavailable, the Kubernetes scheduler tries to reschedule all the workloads running on this node onto the remaining nodes in the cluster.
 
 There are two popular cluster architectures for Kubernetes-based deployments.
 
@@ -28,7 +28,7 @@ There are two popular cluster architectures for Kubernetes-based deployments.
 
 The *single control plane and multiple nodes* architecture is the most common architectural pattern, and is the easiest to deploy, but it doesn't provide high availability to your cluster's core management services.
 
-If the control plane node becomes unavailable for any reason, no other interaction can happen with the cluster. This is the case even by you as an operator, or by any workloads that use Kubernetes' APIs to communicate until, at least, the API server is back online.
+If the control plane node becomes unavailable for any reason, no other interaction can happen with the cluster. This problem occurs even if you're the operator, or by any workloads that use Kubernetes' APIs to communicate until, at least, the API server is back online.
 
 Despite being less available than others, this architecture should be enough for most situations. It's less likely that the core management services become unavailable compared to a node going offline. The control plane nodes are subject to fewer modifications than nodes and more resilient.
 
@@ -54,15 +54,15 @@ These items include:
 
 You create *node pools* to group nodes in your AKS cluster. When you create a node pool, you specify the VM size and OS type (Linux or Windows) for each node in the node pool based on application requirement. To host user application pods, node pool **Mode** should be **User** otherwise **System**.
 
-By default, an AKS cluster will have a Linux node pool (**System Mode**) whether it's created through Azure portal or CLI. However, you'll always have an option to add Windows node pools along with default Linux node pools during the creation wizard in the portal, via CLI, or in ARM templates.
+By default, an AKS cluster has a Linux node pool (**System Mode**) whether it's created through Azure portal or CLI. However, you can always add Windows node pools along with default Linux node pools during the creation wizard in the portal, via CLI, or in ARM templates.
 
-Node pools use Virtual Machine Scale Sets as the underlying infrastructure to allow the cluster to scale the number of nodes in a node pool. New nodes created in the node pool will always be the same size as you specified when you created the node pool.
+Node pools use Virtual Machine Scale Sets as the underlying infrastructure to allow the cluster to scale the number of nodes in a node pool. New nodes created in the node pool are always the same size as you specified when you created the node pool.
 
 :::image type="content" source="../media/2-3-node-pool-diagram.png" alt-text="A diagram that depicts a Kubernetes cluster with two node pools. The first node pool uses NC24s_v2 VMs, and the second node pool uses B2s standard VMs.":::
 
 ## Node count
 
-The node count is the number of nodes your cluster will have in a node pool. Nodes are Azure VMs. You can change their size and count to match your usage pattern.
+The node count is the number of nodes your cluster has in a node pool. Nodes are Azure VMs. You can change their size and count to match your usage pattern.
 
 You can change the node count later in the cluster's configuration panel. It's also a best practice to keep this number as low as possible to avoid unnecessary costs and unused compute power.
 
@@ -78,6 +78,6 @@ Ingress controllers provide the capability to deploy and expose your application
 
 :::image type="content" source="../media/2-4-http-application-routing-diagram.png" alt-text="An HTTP application routing diagram that shows how an ingress controller listens for ingress resources and creates DNS rules to make applications available to external clients.":::
 
-Ingress controllers create a reverse-proxy server that automatically allows for all the requests to be served from a single DNS output. You don't have to create a DNS record every time a new service is deployed. The ingress controller will take care of it. When a new ingress is deployed to the cluster, the ingress controller creates a new record on an Azure managed DNS zone and links it to an existing load balancer. This functionality allows for easy access to the resource through the internet without the need for additional configuration.
+Ingress controllers create a reverse-proxy server that automatically allows for all the requests to be served from a single DNS output. You don't have to create a DNS record every time a new service is deployed. The ingress controller takes care of it. When a new ingress is deployed to the cluster, the ingress controller creates a new record on an Azure managed DNS zone and links it to an existing load balancer. This functionality allows for easy access to the resource through the internet without the need for more configuration.
 
 Despite the advantages, HTTP application routing is better suited to more basic clusters. It doesn't provide the amount of customization needed for a more complex configuration. If you plan to deal with more complex clusters, there are better-suited options like the official Kubernetes ingress controller.

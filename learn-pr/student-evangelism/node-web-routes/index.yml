@@ -3,7 +3,7 @@ uid: learn.student-evangelism.node-web-routes
 metadata:
   title: Introduction to route management in Node.js with JavaScript
   description: Learn how to set up a Node.js API with multiple routes and handle incoming HTTP requests by using JavaScript.
-  ms.date: 07/12/2021
+  ms.date: 03/23/2023
   author: clarkio
   ms.author: chnoring
   ms.topic: interactive-tutorial

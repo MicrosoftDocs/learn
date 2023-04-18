@@ -2,8 +2,8 @@
 uid: learn.create-content-delivery-network-azure-cdn-blob-services
 metadata:
   title: Create a Content Delivery Network for your Website with Azure CDN and Blob Services
-  description: This module looks at how to create and utilize a Content Delivery Network (CDN) within Azure to host commonly used assets, such as images in a website. The module covers Azure CDN rather than third-party integrations, and deals with using Blob Storage as an underlying storage model for stable or non-volatile data.
-  ms.date: 4/30/2019
+  description: Learn how to create and utilize a Content Delivery Network (CDN) within Azure to host commonly used assets, such as images in a website. The module covers Azure CDN and uses Blob Storage as an underlying storage model for stable or non-volatile data.
+  ms.date: 04/14/2023
   author: duongau
   ms.author: duau
   ms.topic: interactive-tutorial
