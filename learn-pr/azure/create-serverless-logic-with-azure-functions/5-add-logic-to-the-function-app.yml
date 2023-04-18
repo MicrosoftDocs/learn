@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: dev-lang-javascript-powershell
-azureSandbox: true
+azureSandbox: false
 durationInMinutes: 10
 content: |
   [!include[](includes/5-add-logic-to-the-function-app.md)]
