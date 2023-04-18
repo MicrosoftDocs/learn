@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 25
 content: |
-  [!include[](includes/exercise-lastindexof-indexofany.md)]
+  [!include[](includes/3-exercise-lastindexof-indexofany.md)]
 quiz:
   title: "Check your knowledge"
   questions:

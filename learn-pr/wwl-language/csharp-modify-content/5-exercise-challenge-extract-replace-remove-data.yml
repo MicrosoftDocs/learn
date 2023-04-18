@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 content: |
-  [!include[](includes/exercise-challenge-extract-replace-remove-data.md)]
+  [!include[](includes/5-exercise-challenge-extract-replace-remove-data.md)]

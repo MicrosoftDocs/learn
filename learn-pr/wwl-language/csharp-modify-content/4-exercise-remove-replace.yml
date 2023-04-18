@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 8
 content: |
-  [!include[](includes/exercise-remove-replace.md)]
+  [!include[](includes/4-exercise-remove-replace.md)]
 quiz:
   title: "Check your knowledge"
   questions:

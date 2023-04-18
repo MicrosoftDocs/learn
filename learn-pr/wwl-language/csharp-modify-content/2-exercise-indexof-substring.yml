@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 25
 content: |
-  [!include[](includes/exercise-indexof-substring.md)]
+  [!include[](includes/2-exercise-indexof-substring.md)]
 quiz:
   title: "Check your knowledge"
   questions:
