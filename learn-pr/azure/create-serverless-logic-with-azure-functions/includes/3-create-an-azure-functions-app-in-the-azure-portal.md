@@ -6,14 +6,17 @@ Functions are hosted in an execution context called a **function app**. You defi
 
 ### Choose a service plan
 
-Function apps may use one of two types of service plans:
+Function apps may use one of the following hosting plans:
 
 - Consumption plan
-- Azure App Service plan
+- Premiumn plan
+- Dedicated (App Service) plan
 
 When using the Azure serverless application platform, choose the **Consumption plan**. This plan provides automatic scaling and bills you only when your functions are running. The Consumption plan comes with a configurable timeout period for executing a function. By default, it's five (5) minutes, but may be configured to have a timeout as long as 10 minutes.
 
-The **Azure App Service plan** enables you to avoid timeout periods by having your function run continuously on a VM that you define. When using an App Service plan, you're responsible for managing the app resources the function runs on, so this is technically not a serverless plan. However, it may be a better choice if your functions are used continuously, or if your functions require more processing power or longer execution time than the Consumption plan can provide.
+The **Premium plan** also dynamically scales your resources to meet demand, but you can specifiy a minimum number of VM instances to keep warm and reduce so called "cold starts." Premium plan also lets your functions connect to and run inside virtual networks. Like the Dedicated plan, the default timeout for apps in a Premium plan is 30 minutes, but they can essentially run for an unlimitd time (depending on server availability). 
+
+The **Dedicated (App Service) plan** enables you to avoid timeout periods by having your function run continuously on a VM that you define. When using an App Service plan, you're responsible for managing the app resources the function runs on, so this is technically not a serverless plan. However, it may be a better choice when you already have excess App Service resources available on which to also run your functions.
 
 ### Storage account requirements
 
@@ -21,7 +24,9 @@ When you create a function app, it must be linked to a storage account. You can 
 
 ## Create a function app
 
-Let's create a function app in the Azure portal.
+[!INCLUDE [azure-exercise-subscription-prerequisite](../../../includes/azure-exercise-subscription-prerequisite.md)]
+
+Let's create a function app in the Azure portal. Completing this module incurs a small cost of a few USD cents or less in your Azure account.
 
 ::: zone pivot="javascript"
 

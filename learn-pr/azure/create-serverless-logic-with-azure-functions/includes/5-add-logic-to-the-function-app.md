@@ -159,7 +159,8 @@ To test the function, you can send an HTTP request to the function URL using cUR
     ```
 
     > [!TIP]
-    > You might need to wrap the URL in quotes to avoid issues with special characters in the URL.
+    > You might need to wrap the URL in quotes to avoid issues with special characters in the URL.  
+    > If you're on Windows, run `cURL` from the command prompt. PowerShell has a *curl* command, but it's an alias for Invoke-WebRequest, which isn't the same as `cURL`.
 
     The response should look like the following.
 
@@ -224,9 +225,6 @@ Because you specified *Function* when you created this function, you need to sup
 ::: zone-end
 
     Under the **Output** pane, for **HTTP response code**, the function responds with the text `200 OK`.
-
-    > [!TIP]
-    > If you are on Windows, run `cURL` from the command prompt. PowerShell has a *curl* command, but it's an alias for Invoke-WebRequest, and is not the same as `cURL`.
 
     > [!NOTE]
     > The **Code/Test** function may open an *Input/Output* pane in a different configuration, with the log file appearing on the side of a selected function. If so, you won't be able to verify the function key system is working, as it is not required. Add the appropriate header and parameter values in the Test interface, and select **Run** to see the test output.
