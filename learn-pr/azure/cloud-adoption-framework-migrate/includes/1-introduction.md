@@ -18,5 +18,5 @@ In this module, you'll:
 
 ## Prerequisites
 
-- Foundational understanding of cloud migratio.n
-- Understanding of your organization's migration plan and the types of workloads you need to migrate.
+- Foundational understanding of cloud migration
+- Understanding of your organization's migration plan and the types of workloads you need to migrate
