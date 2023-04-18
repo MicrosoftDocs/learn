@@ -20,3 +20,5 @@ In this module, you will:
 ## Prerequisites
 
 - Beginner level experience with `string` helper methods
+- Beginner level experience with the `while` iteration statement
+- Experience using Visual Studio Code to develop, build, and run C# code

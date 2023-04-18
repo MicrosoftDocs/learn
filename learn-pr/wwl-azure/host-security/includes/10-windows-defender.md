@@ -1,3 +1,4 @@
+
 Windows 10, Windows Server 2019, and Windows Server 2016 include key security features. They are Windows Defender Credential Guard, Windows Defender Device Guard, and Windows Defender Application Control.
 
 ## Windows Defender Credential Guard
@@ -25,3 +26,7 @@ Application control is a crucial line of defense for helping protect enterprises
 Windows Defender Application Control helps mitigate these types of threats by restricting the applications that users can run and the code that runs in the system core, or kernel. Policies in Windows Defender Application Control also block unsigned scripts and MSIs, and Windows PowerShell runs in Constrained language mode.
 
 Does this mean the Windows Defender Device Guard configuration state is going away? Not at all. The term device guard will continue to describe the fully locked down state achieved using Windows Defender Application Control, HVCI, and hardware and firmware security features. It will also allow Microsoft to work with its original equipment manufacturer (OEM) partners to identify specifications for devices that are device guard capable—so that joint customers can easily purchase devices that meet all the hardware and firmware requirements of the original locked down scenario of Windows Defender Device Guard for Windows 10 devices.
+
+## Microsoft Defender for Endpoint - Supported Operating Systems
+
+:::image type="content" source="../media/cms-supported-windows-versions-a12d5d22.png" alt-text="Screenshot showing Microsoft Defender for Endpoint supported operating systems.":::
