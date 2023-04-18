@@ -1,5 +1,12 @@
 
-Application Insights is an extension of Azure Monitor and provides Application Performance Monitoring (also known as “APM”) features.
+Application Insights is an extension of Azure Monitor and provides Application Performance Monitoring (also known as “APM”) features. APM tools are useful to monitor applications from development, through test, and into production in the following ways:
+
+* Proactively understand how an application is performing.
+* Reactively review application execution data to determine the cause of an incident.
+
+In addition to collecting metrics and application telemetry data, which describe application activities and health, Application Insights can also be used to collect and store application trace logging data.
+
+The log trace is associated with other telemetry to give a detailed view of the activity. Adding trace logging to existing apps only requires providing a destination for the logs; the logging framework rarely needs to be changed.
 
 ## Application Insights feature overview
 
@@ -8,14 +15,12 @@ Features include, but not limited to:
 | Feature | Description |
 |:---|:---|
 | Live Metrics | Observe activity from your deployed application in real time with no effect on the host environment. |
-| Availability | Probe your applications external endpoint(s) to test the overall availability and responsiveness over time. |
+| Availability | Also known as “Synthetic Transaction Monitoring”, probe your applications external endpoint(s) to test the overall availability and responsiveness over time. |
 | GitHub or Azure DevOps integration | Create GitHub or Azure DevOps work items in context of Application Insights data. |
-| Usage | Reveals which features are popular with users and how users interact and use your application. |
-| Smart Detection | Provides automatic failure and anomaly detection through proactive telemetry analysis. |
-| Application Map | Allows a high level top-down view of the application architecture and at-a-glance visual references to component health and responsiveness. |
+| Usage | Understand which features are popular with users and how users interact and use your application |
+| Smart Detection | Automatic failure and anomaly detection through proactive telemetry analysis. |
+| Application Map | A high level top-down view of the application architecture and at-a-glance visual references to component health and responsiveness. |
 | Distributed Tracing | Search and visualize an end-to-end flow of a given execution or transaction. |
-
-More details on availability and Application Map are discussed later in this module.
 
 ## What Application Insights monitors
 
