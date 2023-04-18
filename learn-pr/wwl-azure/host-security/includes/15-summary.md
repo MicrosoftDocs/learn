@@ -1,3 +1,4 @@
+
 Host security is the process and strategy of locking down your virtual machines, their disks, and the access to them.
 
 You should be able to:
