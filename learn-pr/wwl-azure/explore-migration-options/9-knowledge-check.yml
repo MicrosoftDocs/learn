@@ -17,26 +17,26 @@ quiz:
   questions:
   - content: "Which of the following options is a potential disadvantage of a purely horizontal strategy when migrating SAP systems to Microsoft Azure?"
     choices:
-    - content: "There is no opportunity to gain experience with production systems on Azure prior to the migration."
+    - content: "There's no opportunity to gain experience with production systems on Azure prior to the migration."
       isCorrect: true
       explanation: "That's correct. A horizontal strategy allows the user to evaluate the potential cost savings, performance, and optimization of their migration strategy in a less-important environment, without significant risk to mission-critical functions on higher layers."
     - content: "If something goes wrong, large numbers of users or mission-critical business functions are likely to be affected."
       isCorrect: false
       explanation: "That’s incorrect. A horizontal strategy allows the user to evaluate the potential cost savings, performance, and optimization of their migration strategy in a less-important environment, without significant risk to mission-critical functions on higher layers."
-    - content: "There is no opportunity to analyze potential cost savings, performance, and optimization potential."
+    - content: "There's no opportunity to analyze potential cost savings, performance, and optimization potential."
       isCorrect: false
       explanation: "That’s incorrect. A horizontal strategy allows the user to evaluate the potential cost savings, performance, and optimization of their migration strategy in a less-important environment, without significant risk to mission-critical functions on higher layers."
   - content: "Why is classical migration commonly referred to as \"two-step migration\", while the SAP database migration option (DMO) is referred to as \"one-step migration\"?"
     choices:
     - content: "Classical migration is a manual process, while DMO is automated."
       isCorrect: false
-      explanation: "That’s incorrect. While it true that classical migration is a manual process, while DMO is automated, it is not the reason for the terminology."
+      explanation: "That’s incorrect. While it true that classical migration is a manual process, while DMO is automated, it isn't the reason for the terminology."
     - content: "Classical migration involves a database migration and an SAP update, while DMO only includes a database migration."
       isCorrect: false
       explanation: "That’s incorrect. DMO facilitates both an SAP upgrade and a database migration to the SAP HANA database via one tool"
-    - content: "DMO carries out a database migration and an SAP upgrade as a single step, while in classical migration they are separate steps."
+    - content: "DMO carries out a database migration and an SAP upgrade as a single step, while in classical migration they're separate steps."
       isCorrect: true
-      explanation: "That's correct. DMO facilitates both an SAP upgrade and a database migration to the SAP HANA database via one tool. While it true that classical migration is a manual process, while DMO is automated, it is not the reason for the terminology."
+      explanation: "That's correct. DMO facilitates both an SAP upgrade and a database migration to the SAP HANA database via one tool. While it true that classical migration is a manual process, while DMO is automated, it isn't the reason for the terminology."
   - content: "Which file transfer mode should be selected during a one-step migration, to minimize migration downtime?"
     choices:
     - content: "Parallel Data Transfer"
