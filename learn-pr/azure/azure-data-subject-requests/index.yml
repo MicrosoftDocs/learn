@@ -12,7 +12,7 @@ title: Responding to Data Subject Requests (DSRs)
 summary: Learners will know, understand, and be able to describe Data Subject Requests (DSRs). They will also know how to manage DSRs on Azure and Microsoft 365.
 abstract: |
   By the end of this module, you should know more about:
-  - DSRs
+  - DSRs.
   - How to use a DSR in Azure Active Directory (Azure AD).
   - How to use a DSR for Microsoft accounts.
   - How to use a DSR for Office 365 apps.
