@@ -10,7 +10,7 @@ First, we need to define some requirements for our logic:
 
 ## Add a function to your function app
 
-As we described in the preceding unit, Azure provides templates that help you build functions. In this unit, we'll use the `HttpTrigger` template to implement the temperature service.
+As we described in the preceding unit, Azure provides templates that help you build functions. In this unit, you use the `HttpTrigger` template to implement the temperature service.
 
 1. In the previous exercise, you deployed your function app and opened it. If it isn't already open, you can open it from the Home page by selecting **All resources**, and then selecting your function app, named something like **escalator-functions-xxx**.
 
