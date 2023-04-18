@@ -1,15 +1,19 @@
 ### YamlMime:Module
-uid: learn.persist-azure-openapi-context-cosmos-db-nosql
+uid: learn.build-chat-bot-azure-cosmos-db-openai-blazor
 metadata:
-  title: Persist Azure OpenAI GPT-3 chat context by using Azure Cosmos DB for NoSQL
+  title: |
+    Guided project: Build a chat bot using Azure OpenAI, Azure Cosmos DB for NoSQL, and ASP.NET Blazor
   description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the module; include relevant search keywords."
   ms.date: 4/10/2023
   author: seesharprun
   ms.author: sidandrews
   ms.reviewer: mjbrown
+  manager: jroth
+  moduleType: guided-project
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
-title: Persist Azure OpenAI GPT-3 chat context by using Azure Cosmos DB for NoSQL
+title: |
+  Guided project: Build a chat bot using Azure OpenAI, Azure Cosmos DB for NoSQL, and ASP.NET Blazor
 summary: |
   TODO 2 sentences, 20-35 words, don't teach or motivate, avoid using 'learn', don't duplicate the title, include the note below; see
   > [!NOTE]
@@ -34,12 +38,12 @@ products:
 subjects:
   - cloud-computing
 units:
-- learn.persist-azure-openapi-context-cosmos-db-nosql.introduction
-- learn.persist-azure-openapi-context-cosmos-db-nosql.prepare
-- learn.persist-azure-openapi-context-cosmos-db-nosql.exercise-one
-- learn.persist-azure-openapi-context-cosmos-db-nosql.exercise-two
-- learn.persist-azure-openapi-context-cosmos-db-nosql.exercise-three
-- learn.persist-azure-openapi-context-cosmos-db-nosql.knowledge-check
-- learn.persist-azure-openapi-context-cosmos-db-nosql.summary
+- learn.build-chat-bot-azure-cosmos-db-openai-blazor.introduction
+- learn.build-chat-bot-azure-cosmos-db-openai-blazor.prepare
+- learn.build-chat-bot-azure-cosmos-db-openai-blazor.exercise-one
+- learn.build-chat-bot-azure-cosmos-db-openai-blazor.exercise-two
+- learn.build-chat-bot-azure-cosmos-db-openai-blazor.exercise-three
+- learn.build-chat-bot-azure-cosmos-db-openai-blazor.knowledge-check
+- learn.build-chat-bot-azure-cosmos-db-openai-blazor.summary
 badge:
-  uid: learn.persist-azure-openapi-context-cosmos-db-nosql.badge
+  uid: learn.build-chat-bot-azure-cosmos-db-openai-blazor.badge
