@@ -3,7 +3,7 @@ uid: learn.wwl.explore-azure-blob-storage
 metadata:
   title: Explore Azure Blob storage
   description: "Learn the core features and functionality of Azure Blob storage."
-  ms.date: 02/07/2023
+  ms.date: 04/18/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
@@ -34,8 +34,7 @@ units:
 - learn.wwl.explore-azure-blob-storage.blob-storage-overview
 - learn.wwl.explore-azure-blob-storage.discover-resource-types
 - learn.wwl.explore-azure-blob-storage.storage-security-features
-- learn.wwl.explore-azure-blob-storage.evaluate-azure-storage-redundancy-options
-- learn.wwl.explore-azure-blob-storage.exercise-create-block-account
+- learn.wwl.explore-azure-blob-storage.blob-storage-static-website
 - learn.wwl.explore-azure-blob-storage.knowledge-check
 - learn.wwl.explore-azure-blob-storage.summary
 badge:
