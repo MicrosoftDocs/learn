@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.wwl.build-language-solution-azure-openai
 metadata:
-  title: Build natural language solutions with Azure OpenAI
+  title: Build natural language solutions with Azure OpenAI Service
   description: "Learn how to integrate language understanding and prompt completions from Azure OpenAI into your app."
   ms.date: 4/5/2023
   author: ivorb
   ms.author: berryivor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
-title: Build natural language solutions with Azure OpenAI
+title: Build natural language solutions with Azure OpenAI Service
 summary: This module provides engineers with the skills to begin building apps that integrate with the Azure OpenAI Service.
 abstract: |
   By the end of this module, you'll be able to:

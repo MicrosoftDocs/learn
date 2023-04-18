@@ -13,17 +13,17 @@ During the process, you'll:
 
 Your repository contains a draft of a pipeline definition that you can use as a starting point.
 
-1. In Visual Studio Code, expand the *template-specs* folder in the root of the repository. Then, expand the *linux-app-service* folder.
+1. In Visual Studio Code, expand the _template-specs/linux-app-service_ folder in the root of the repository.
 
-1. Open the *pipeline.yml* file.
+1. Open the _pipeline.yml_ file.
 
    :::image type="content" source="../media/4-visual-studio-code-pipeline.png" alt-text="Screenshot of Visual Studio Code that shows the location of the pipeline definition file.":::
 
-1. At the bottom of the file, where you see a comment that says **To be added**, add the following lint stage definition:
+1. At the bottom of the file, replace `# To be added` with the following lint stage definition:
 
    :::code language="yaml" source="code/4-pipeline.yml" range="25-35" highlight="3-11" :::
 
-   Your repository has a *bicepconfig.json* file that configures the linter to emit errors instead of warnings. Any failures during the lint stage will cause the pipeline to fail.
+   Your repository has a _bicepconfig.json_ file that configures the linter to emit errors instead of warnings. Any failures during the lint stage will cause the pipeline to fail.
 
    > [!TIP]
    > YAML files are sensitive to indentation. Whether you type or paste this code, make sure your indentation is correct. Later in this exercise, you'll see the complete YAML pipeline definition so that you can verify that your file matches.
@@ -32,20 +32,20 @@ Your repository contains a draft of a pipeline definition that you can use as a 
 
 Now, you can add a second stage to publish the template spec to Azure.
 
-1. Add the following code at the end of the *pipeline.yml* file:
+1. Add the following code at the end of the _pipeline.yml_ file:
 
    :::code language="yaml" source="code/4-pipeline.yml" range="37-55" :::
 
    This stage checks out the code from your repository and signs in to Azure by using service connection that you created earlier. It then runs the `az ts create` command to publish the template spec to Azure.
 
    > [!TIP]
-   > To keep things simple, your pipeline uses the pipeline's *build number* as the template spec's version number. In the next unit, you'll learn about a more complex versioning scheme.
+   > To keep things simple, your pipeline uses the pipeline's _build number_ as the template spec's version number. In the next unit, you'll learn about a more complex versioning scheme.
 
 1. Save your changes to the file.
 
 ## Verify and commit your pipeline definition
 
-1. Verify that your *pipeline.yml* file looks like the following example:
+1. Verify that your _pipeline.yml_ file looks like the following example:
 
    :::code language="yaml" source="code/4-pipeline.yml" highlight="27-55" :::
 
@@ -75,7 +75,7 @@ Now, you can add a second stage to publish the template spec to Azure.
 
    :::image type="content" source="../media/4-run-success.png" alt-text="Screenshot of Azure Pipelines that shows a successful pipeline run and highlights the build number.":::
 
-1. Note the pipeline's build number, which includes today's date and a unique revision number. In the example illustrated in the screenshot above, the build number is **20220405.1**.
+1. Note the pipeline's build number, which includes today's date and a unique revision number. In the example screenshot, the build number is **20230407.1**.
 
 ## Review the template spec in Azure
 

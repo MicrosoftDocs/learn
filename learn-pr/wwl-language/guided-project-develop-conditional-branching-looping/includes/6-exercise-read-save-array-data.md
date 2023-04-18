@@ -1,5 +1,6 @@
 
 
+
 In this exercise, you develop the data entry validation loops for each pet characteristic and then store the new `ourAnimals` array data. The detailed tasks that you complete during this exercise are:
 
 1. Read and validate species: build a loop and the inner code structure used to enter and validate the pet species.
@@ -487,7 +488,7 @@ In this task, you run your application from the Integrated Terminal and verify t
     ID #: c3
     Species: cat
     Age: 1
-    Nickname: Daisy
+    Nickname: Puss
     Physical description: small white female weighing about 8 pounds. litter box trained.
     Personality: friendly
 
