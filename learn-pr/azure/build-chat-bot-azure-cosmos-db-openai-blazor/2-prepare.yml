@@ -8,6 +8,8 @@ metadata:
     Review the project's environment and get started deploying the Azure Cosmos DB for NoSQL and Azure OpenAI resources.
   author: seesharprun
   manager: jroth
+  sandbox: true
+  interactive: bash
   ms.author: sidandrews
   ms.reviewer: mjbrown
   ms.topic: interactive-tutorial

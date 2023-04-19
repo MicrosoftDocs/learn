@@ -1,13 +1,13 @@
-You're updating an existing .NET solution that has an ASP.NET Blazor WebAssembly application as it's sole project. This project includes service classes for data storage and conversation that are minimally implemented with placeholders. Here, we discuss the overall goals of the project and how you are going to implement the data store and conversational functionality. Additionally, we cover how to set up the Azure resources that you need.
+You're updating an existing .NET solution that has an ASP.NET Blazor WebAssembly application as it's sole project. This project includes service classes for data storage and conversation that are implemented with placeholders. Here, we discuss the overall goals of the project and how you're going to implement the data store and conversational functionality. Additionally, we cover how to set up the Azure resources that you need.
 
 ## Project overview
 
-This project's goal is to implement two service classes for data storage and conversation. For the data storage service class, you will use the Azure Cosmos DB for NoSQL .NET SDK to create, update, query, and delete multiple items in a pre-existing container. You will
+This project's goal is to implement two service classes for data storage and conversation. For the data storage service class, you use the Azure Cosmos DB for NoSQL .NET SDK to create, update, query, and delete multiple items in a pre-existing container. You'll
 
 The key tasks you need to do are:
 
 1. Deploy the finished ASP.NET Blazor sample solution to Azure.
-1. Get the credentials for the deployed Azure Cosmos DB for NoSQL and Auzre OpenAI resources.
+1. Get the credentials for the deployed Azure Cosmos DB for NoSQL and Azure OpenAI resources.
 1. Open the starter solution in Visual Studio Code.
 1. Use the .NET SDK to implement Azure Cosmos DB for NoSQL as a data storage service.
 1. Use the .NET SDK to implement Azure OpenAI as a conversational interface.
@@ -15,35 +15,126 @@ The key tasks you need to do are:
 
 ## Setup
 
-To complete this project, you need an Azure Cosmos DB for NoSQL account and an Azure OpenAI account. To streamline this process, you will deploy a Bicep template to Azure with both of these accounts and the final application running in Azure App Service.
+To complete this project, you need an Azure Cosmos DB for NoSQL account and an Azure OpenAI account. To streamline this process, you deploy a Bicep template to Azure with both of these accounts and the final application running in Azure App Service.
 
 ### Deploy Bicep template
 
 This project uses the [azure-samples/cosmosdb-chatgpt](https://github.com/Azure-Samples/cosmosdb-chatgpt) GitHub repository for both the Azure Resource Manager templated deployment and the application code. In this step, create a new deployment using the Bicep template from this repository.
 
-1.
+1. Create a new shell variable named **resourceGroupName** with the name of the Azure resource group that has already been created on your behalf.
+
+    ```azurecli
+    resourceGroupName="<rgn>[sandbox resource group name]</rgn>"
+    ```
+
+1. Deploy the [azuredeploy.bicep](https://github.com/Azure-Samples/cosmosdb-chatgpt/blob/main/azuredeploy.bicep) template file to the resource group using [`az group deployment create`](/cli/azure/group/deployment#az-group-deployment-create).
+
+    ```azurecli
+    az deployment group create \
+        --resource-group $resourceGroupName \
+        --name zero-touch-deployment \
+        --template-uri https://raw.githubusercontent.com/Azure-Samples/cosmosdb-chatgpt/main/azuredeploy.bicep
+    ```
+
+1. Wait for the deployment to complete before proceeding with this project.
+
+    > [!NOTE]
+    > On average, this deployment can take five to ten minutes.
 
 ### Observe the running final application
 
-After the deployment is complete, you can retrieve the output of the deployment to find the URI of the currently running application. Use this moment to learn how the application is intended to work after you are done with this project.
+After the deployment is complete, you can retrieve the output of the deployment to find the URI of the currently running application. Use this moment to learn how the application is intended to work after you're done with this project.
 
-1.
+1. Use [`az group deployment show`](/cli/azure/group/deployment#az-group-deployment-show) to get the output from the previous deployment. The output should include the URL for the deployed web application.
 
-### Get Azure Cosmos DB for NoSQL account credentials
+    ```azurecli
+    az deployment group show \
+        --resource-group $resourceGroupName \
+        --name zero-touch-deployment \
+        --query "{ApplicationURL: properties.outputs.deployedUrl.value}" \
+        --output table
+    ```
 
-Now that you have an Azure Cosmos DB for NoSQL account, use the `az cosmosdb` command group from the Azure CLI to get the account's credentials. In this section, you filter the output of the various commands to return your endpoint and connection string to use with the Azure Cosmos DB for NoSQL .NET SDK.
+    Assuming the name of the Azure App Service web app is **nybncrsna76fo-web**, an example output would be:
 
-1.
+    ```output
+    ApplicationURL
+    -----------------------------------
+    nybncrsna76fo-web.azurewebsites.net
+    ```
 
-### Get Azure OpenAI account credentials
+1. In a new browser window, open the deployed web application. Take this moment to try to ask the AI assistant few questions. Create at least two chat conversations. You come back to these conversations later in this project.
 
-Now that you have an Azure OpenAI account with a ChatGPT model deployed, use the `az rest` command from the Azure CLI to get the account's credentials. In this section, use the REST API to return your endpoint and connection string to use with the Azure OpenAI .NET SDK.
+    :::image type="content" source="../media/open-terminal-option.png" lightbox="../media/open-terminal-option.png" alt-text="Screenshot of the menu option to open a new terminal.":::
 
-1.
+1. Optionally, navigate to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) to view your resource group, deployed data &amp; AI services, and running web application.
+
+### Get Azure Cosmos DB for NoSQL and Azure OpenAI account credentials
+
+Your template deployed Azure Cosmos DB for NoSQL and Azure OpenAI accounts and then stored their credentials in the Azure App Service web app's configuration. Now, use the `az webapp config` command group from the Azure CLI to get these credentials to use in your local developer environment. In this section, you filter the output of the various commands to return your endpoint and connection string to use with the .NET SDKs of Azure OpenAI and Azure Cosmos DB for NoSQL.
+
+1. First, get a list of all running web applications in your resource group using [`az webapp list`](/cli/azure/webapp#az-webapp-list)
+
+    ```azurecli
+    az webapp list \
+      --resource-group $resourceGroupName \
+      --query "[?state=='Running'].name"
+    ```
+
+    Assuming the name of the Azure App Service web app is **nybncrsna76fo-web**, an example output would be:
+
+    ```output
+    [
+      "nybncrsna76fo-web"
+    ]
+    ```
+
+1. Now, run the same query again but only return the first result from the array in tab-separated value (`tsv`) format.
+
+    ```azurecli
+    webAppName=$( \
+      az webapp list \
+        --resource-group $resourceGroupName \
+        --query "[?state=='Running'].name | [0]" \
+        --output tsv \
+    )
+    ```
+
+    > [!TIP]
+    > If you're not sure that your variable has the correct value, simply run `echo $webAppName` in the terminal to check the value.
+
+1. Use [`az webapp config appsettings list`](/cli/azure/webapp/config/appsettings#az-webapp-config-appsettings-list) to get a list of application settings for the web app.
+
+    Here's a truncated example of the output assuming the name of the Azure Cosmos DB for NoSQL account is **nybncrsna76fo-cosmos-nosql** and the name of the Azure OpenAI account is **nybncrsna76fo-openai**. The keys in this example are fictitious.
+
+    ```output
+    [
+      {
+        "setting": "COSMOSDB__ENDPOINT",
+        "value": "https://nybncrsna76fo-cosmos-nosql.documents.azure.com:443/"
+      },
+      {
+        "setting": "COSMOSDB__KEY",
+        "value": "Aj2OSQqWhXfFzkITIi4MIbocWAAoBCUWnSPzHlQbDYA3TiyZCJlk8A6R1l6WqD45BxAG5vrsyQ4SCXEkPS1pLh=="
+      },
+      ...
+      {
+        "setting": "OPENAI__ENDPOINT",
+        "value": "https://nybncrsna76fo-openai.openai.azure.com/"
+      },
+      {
+        "setting": "OPENAI__KEY",
+        "value": "4bf98cb194cdf0f9001eae3259a76ed8"
+      },
+      ...
+    ]
+    ```
+
+1. Record the value of the endpoint and key for both the Azure Cosmos DB for NoSQL and Azure OpenAI accounts. You use these credentials later in this project to connect to each account.
 
 ### Configure dev environment
 
-All steps in this project are designed to be completed within a [development container](https://containers.dev/). You can run the development container in GitHub Codespaces or locally using Visual Studio Code.
+A [development container](https://containers.dev/) environment is available with all dependencies required to complete every exercise in this project. You can run the development container in GitHub Codespaces or locally using Visual Studio Code.
 
 #### [GitHub Codespaces](#tab/github-codespaces)
 
