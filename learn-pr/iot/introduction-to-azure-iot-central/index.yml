@@ -2,7 +2,7 @@
 uid: learn.introduction-to-azure-iot-central
 metadata:
   title: Introduction to Azure IoT Central
-  description: Evaluate whether Azure IoT Central is appropriate to monitor and manage your IoT devices.
+  description: Evaluate whether Azure IoT Central is appropriate to quickly assess your IoT scenario.
   ms.date: 04/19/2023
   author: asergaz
   ms.author: sergaz
@@ -17,7 +17,7 @@ summary: |
   Describe how Azure IoT Central can help you collect, monitor, and analyze IoT data.
 abstract: |
   Upon completion of this module, you'll be able to:
-    - Evaluate whether Azure IoT Central is appropriate to assess the opportunities your IoT scenario can create for your business.
+    - Evaluate whether Azure IoT Central is appropriate to quickly assess your IoT scenario and the opportunities it can create for your business.
     - Describe how Azure IoT Central works to quickly connect devices, monitor device conditions, create rules, manage devices and their data throughout their life cycle, and extend IoT intelligence into line-of-business applications.
 prerequisites: |
   None
