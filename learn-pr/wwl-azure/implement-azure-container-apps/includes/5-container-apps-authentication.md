@@ -29,7 +29,7 @@ When you use one of these providers, the sign-in endpoint is available for user 
 
 The authentication and authorization middleware component is a feature of the platform that runs as a sidecar container on each replica in your application. When enabled, every incoming HTTP request passes through the security layer before being handled by your application.
 
-:::image type="content" source="../media/container-apps-authorization-architecture.png" alt-text="An architecture diagram showing requests being intercepted by a sidecar container which interacts with identity providers before allowing traffic to the app container":::
+:::image type="content" source="../media/container-apps-authorization-architecture.png" alt-text="Diagram showing requests being intercepted by a sidecar container interacting with identity providers before allowing traffic to the app container.":::
 
 The platform middleware handles several things for your app:
 

@@ -2,7 +2,7 @@
 
 Azure Container Apps manages the details of Kubernetes and container orchestration for you. Containers in Azure Container Apps can use any runtime, programming language, or development stack of your choice.
 
-:::image type="content" source="../media/azure-container-apps-containers.png" alt-text="Image showing how containers for an Azure Container App are grouped together in pods inside revision snapshots.":::
+:::image type="content" source="../media/azure-container-apps-containers.png" alt-text="Diagram showing how containers for an Azure Container App are grouped together in pods inside revision snapshots.":::
 
 Azure Container Apps supports any Linux-based x86-64 (`linux/amd64`) container image. There's no required base container image, and if a container crashes it automatically restarts. 
 
