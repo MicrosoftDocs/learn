@@ -17,13 +17,13 @@ quiz:
     choices:
     - content: "Resource group"
       isCorrect: false
-      explanation: "Incorrect. Resource groups are required by Azure CDN, but they are not limited by subscription level."
+      explanation: "Incorrect. Resource groups are required by Azure CDN, but they aren't limited by subscription level."
     - content: "CDN profiles"
       isCorrect: true
       explanation: "Correct. The number of CDN profiles that can be created is limited by the type of Azure subscription."
     - content: "Storage account"
       isCorrect: false
-      explanation: "Incorrect. Storage accounts are not a resource used in Azure CDNs."
+      explanation: "Incorrect. Storage accounts aren't a resource used in Azure CDNs."
   - content: "When publishing a website through Azure CDN, the files on that site are cached until their time-to-live (TTL) expires. What is the default TTL for large file optimizations?"
     choices:
     - content: "One day"
