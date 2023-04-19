@@ -30,7 +30,7 @@ Let's create a function app in the Azure portal. Completing this module incurs a
 
 ::: zone pivot="javascript"
 
-1. Sign in to the [Azure portal](https://portal.azure.com) using your Azure account.
+1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true) using your Azure account.
 
 1. Under **Azure services**, select **Create a resource**.
 
@@ -60,7 +60,7 @@ Let's create a function app in the Azure portal. Completing this module incurs a
 
 ::: zone pivot="powershell"
 
-1. Sign in to the [Azure portal](https://portal.azure.com) using your Azure account.
+1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true) using your Azure account.
 
 1. Under **Azure services**, select **Create a resource**.
 
