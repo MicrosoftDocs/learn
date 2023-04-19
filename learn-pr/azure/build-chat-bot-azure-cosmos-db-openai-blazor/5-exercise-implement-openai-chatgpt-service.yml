@@ -15,4 +15,4 @@ metadata:
   ms.date: 4/19/2023
 durationInMinutes: 8
 content: |
-  [!include[](includes/7-exercise-implement-openai-chatgpt-service.md)]
+  [!include[](includes/5-exercise-implement-openai-chatgpt-service.md)]

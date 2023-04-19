@@ -15,4 +15,4 @@ metadata:
   ms.date: 4/19/2023
 durationInMinutes: 7
 content: |
-  [!include[](includes/4-exercise-connect-cosmos-db-nosql.md)]
+  [!include[](includes/6-exercise-connect-cosmos-db-nosql.md)]
