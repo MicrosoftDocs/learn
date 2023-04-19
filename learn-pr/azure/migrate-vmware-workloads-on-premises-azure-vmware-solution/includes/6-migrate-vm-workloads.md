@@ -1,4 +1,4 @@
-After you install VMware HCX (HCX),and you connect your on-premises VMware environment to Azure VMware Solution, you next work on VM migration. You migrate VMs from on-premises through the HCX Connector migration web interface.
+After you install VMware HCX (HCX) and you connect your on-premises VMware environment to Azure VMware Solution, you next work on VM migration. You migrate VMs from on-premises through the HCX Connector migration web interface.
 
 ## Migrate virtual machines
 
