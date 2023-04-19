@@ -170,6 +170,8 @@ A [development container](https://containers.dev/) environment is available with
     dotnet build
     ```
 
+1. The remaining exercises in this project take place in the context of this development container.
+
 #### [Visual Studio Code](#tab/visual-studio-code)
 
 The [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) for Visual Studio Code requires [Docker](https://docs.docker.com/) to be installed on your local machine. The extension hosts the development container locally using the Docker host with the correct developer tools and dependencies preinstalled to complete this training module.
@@ -221,5 +223,7 @@ The [Dev Containers extension](https://marketplace.visualstudio.com/items?itemNa
     ```bash
     dotnet build
     ```
+
+1. The remaining exercises in this project take place in the context of this development container.
 
 ---
