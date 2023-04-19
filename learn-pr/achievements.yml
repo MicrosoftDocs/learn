@@ -1666,4 +1666,9 @@ achievements:
   type: badge
   title: Azure Percept prerequisites
   summary: Azure Percept prerequisites
-  iconUrl: /training/achievements/azure-percept/azure-percept-prerequisites.svg  
+  iconUrl: /training/achievements/azure-percept/azure-percept-prerequisites.svg
+- uid: learn.azure-percept.trophy
+  type: trophy
+  title: Build edge AI solutions with Azure Percept
+  summary: Build edge AI solutions with Azure Percept
+  iconUrl: /training/achievements/azure-percept/azure-percept.svg  

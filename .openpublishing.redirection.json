@@ -21644,6 +21644,11 @@
        "source_path": "learn-pr/azure-percept/azure-percept-prerequisites/6-summary.md",
        "redirect_url": "https://learn.microsoft.com/training",
        "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/azure-percept/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/",
+      "redirect_document_id": false
     }
   ]
 }
