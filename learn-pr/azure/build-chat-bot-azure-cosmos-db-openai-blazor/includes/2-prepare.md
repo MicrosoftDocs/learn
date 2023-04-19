@@ -65,7 +65,7 @@ After the deployment is complete, you can retrieve the output of the deployment 
 
 1. In a new browser window, open the deployed web application. Take this moment to try to ask the AI assistant few questions. Create at least two chat conversations. You come back to these conversations later in this project.
 
-    :::image type="content" source="../media/open-terminal-option.png" lightbox="../media/open-terminal-option.png" alt-text="Screenshot of the menu option to open a new terminal.":::
+    :::image type="content" source="../media/running-final-application.png" lightbox="../media/running-final-application.png" alt-text="Screenshot of the deployed web application using ChatGPT." border="false":::
 
 1. Optionally, navigate to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) to view your resource group, deployed data &amp; AI services, and running web application.
 
@@ -170,6 +170,8 @@ A [development container](https://containers.dev/) environment is available with
     dotnet build
     ```
 
+1. Close the terminal.
+
 1. The remaining exercises in this project take place in the context of this development container.
 
 #### [Visual Studio Code](#tab/visual-studio-code)
@@ -199,7 +201,7 @@ The [Dev Containers extension](https://marketplace.visualstudio.com/items?itemNa
     git checkout start
     ```
 
-1. Open the **Command Palette*, search for the **Dev Containers** settings, and then select **Dev Containers: Reopen in Container**.
+1. Open the **Command Palette*, search for the **Dev Containers** commands, and then select **Dev Containers: Reopen in Container**.
 
     :::image type="content" source="../media/reopen-container-command-palette.png" alt-text="Screenshot of the Command Palette option to reopen the current folder within the context of a development container.":::
 
@@ -223,6 +225,8 @@ The [Dev Containers extension](https://marketplace.visualstudio.com/items?itemNa
     ```bash
     dotnet build
     ```
+
+1. Close the terminal.
 
 1. The remaining exercises in this project take place in the context of this development container.
 

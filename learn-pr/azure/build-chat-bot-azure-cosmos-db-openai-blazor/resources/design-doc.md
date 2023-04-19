@@ -67,7 +67,6 @@ Connect an existing ASP.NET Core Blazor web application to Azure Cosmos DB for N
 1. Exercise: Setup and run the starter web application
     - Use [CodeTour](https://github.com/microsoft/codetour) to walk through the project's highlights
       - Model classes
-      - Options classes
       - Bicep template
         - Azure Cosmos DB resource
         - Azure OpenAI resource
