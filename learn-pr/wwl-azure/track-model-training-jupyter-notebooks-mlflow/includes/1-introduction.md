@@ -10,6 +10,6 @@ You'll learn how to track model training in notebooks with MLflow in Azure Machi
 
 In this module, you'll learn how to:
 
-- Configure to use MLflow in notebooks
+- Configure MLflow to use in notebooks
 - Use MLflow for model tracking in notebooks
 
