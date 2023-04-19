@@ -4,8 +4,8 @@ metadata:
   title: Azure Site Recovery overview
   description: Investigate how Azure Site Recovery can help achieve these goals by harnessing the power of the cloud and then study the tools that can make the failover and recovery of resources possible.
   ms.date: 08/01/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: ankitaduttaMSFT
+  ms.author: ankitadutta
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Azure Site Recovery overview
