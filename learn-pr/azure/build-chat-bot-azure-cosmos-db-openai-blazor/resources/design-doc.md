@@ -30,19 +30,19 @@ Connect an existing ASP.NET Core Blazor web application to Azure Cosmos DB for N
 
 ## Learning objectives
 
-1. Connect to an Azure Cosmos DB for NoSQL account using the .NET SDK
-1. Create, update, query, and delete items in an API for NoSQL container
 1. Connect to an Azure OpenAI account using the .NET SDK
 1. Send prompts to a model deployment and parse the responses
+1. Connect to an Azure Cosmos DB for NoSQL account using the .NET SDK
+1. Create, update, query, and delete items in an API for NoSQL container
 
 ## Subtasks
 
 | Subtask | What part of the introduction scenario does this subtask satisfy? | How do you assess it? (Exercise or Knowledge check) | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask do you combine it with? |
 | ---- | ---- | ---- | ---- | ---- |
-| Connect to Azure Cosmos DB for NoSQL | "connect to Azure Cosmos DB" | Exercise | 1 | yes |
-| Perform common API for NoSQL operations | "store conversation sessions and individual messages" | Exercise | 2 | yes |
-| Connect to Azure OpenAI | "connect to Azure OpenAI" | Exercise | 3 | yes |
-| Interface with conversational interface | "send prompts, parse responses, and summarize conversations" | Exercise | 4 | yes |
+| Connect to Azure OpenAI | "connect to Azure OpenAI" | Exercise | 1 | yes |
+| Interface with conversational interface | "send prompts, parse responses, and summarize conversations" | Exercise | 2 | yes |
+| Connect to Azure Cosmos DB for NoSQL | "connect to Azure Cosmos DB" | Exercise | 3 | yes |
+| Perform common API for NoSQL operations | "store conversation sessions and individual messages" | Exercise | 4 | yes |
 
 ## Outline
 
@@ -73,6 +73,14 @@ Connect an existing ASP.NET Core Blazor web application to Azure Cosmos DB for N
         - Azure App Service resource
     - Build the project
     - Use `dotnet watch` to test the application with no connection
+1. Exercise: Connect to Azure OpenAI ChatGPT
+    - Import the [`Azure.AI.OpenAI` (v1.0.0-beta.5)](https://www.nuget.org/packages/Azure.AI.OpenAI/1.0.0-beta.5) package from NuGet
+    - Add the Azure OpenAI endpoint and key to the existing `appsettings.development.json` file
+    - Create static strings for the AI context and summary prefix prompts
+    - Create a new `OpenAIClient` instance
+1. Exercise: Implement the Azure OpenAI ChatGPT service
+    - Implement a method to send a prompt to the AI to ask a question
+    - Implement a method to send a conversation to the AI and ask for a brief summary
 1. Exercise: Connect to Azure Cosmos DB for NoSQL
     - Import the [`Microsoft.Azure.Cosmos` (v3.32.3)](https://www.nuget.org/packages/Microsoft.Azure.Cosmos/3.32.3) package from NuGet
     - Add the Azure Cosmos DB for NoSQL endpoint and key to a new `appsettings.development.json` file
@@ -86,14 +94,6 @@ Connect an existing ASP.NET Core Blazor web application to Azure Cosmos DB for N
     - Implement a method to update an existing session
     - Implement a method to upsert (create or update) multiple messages using a transactional batch operation
     - Implement a method to delete all sessions or messages by partition key using a transactional batch operation
-1. Exercise: Connect to Azure OpenAI ChatGPT
-    - Import the [`Azure.AI.OpenAI` (v1.0.0-beta.5)](https://www.nuget.org/packages/Azure.AI.OpenAI/1.0.0-beta.5) package from NuGet
-    - Add the Azure OpenAI endpoint and key to the existing `appsettings.development.json` file
-    - Create static strings for the AI context and summary prefix prompts
-    - Create a new `OpenAIClient` instance
-1. Exercise: Implement the Azure OpenAI ChatGPT service
-    - Implement a method to send a prompt to the AI to ask a question
-    - Implement a method to send a conversation to the AI and ask for a brief summary
 1. Knowledge check
     - Get existing container using the Azure Cosmos DB for NoSQL client
     - Insert multiple Azure Cosmos DB for NoSQL items using a transactional batch
@@ -111,10 +111,10 @@ Connect an existing ASP.NET Core Blazor web application to Azure Cosmos DB for N
 | Introduction | 2 |
 | Prepare | 12 |
 | Exercise: Setup and run the starter web application | 6 |
-| Exercise: Connect to Azure Cosmos DB for NoSQL | 7 |
-| Exercise: Implement the Azure Cosmos DB for NoSQL service | 13 |
 | Exercise: Connect to Azure OpenAI ChatGPT | 5 |
 | Exercise: Implement the Azure OpenAI ChatGPT service | 8 |
+| Exercise: Connect to Azure Cosmos DB for NoSQL | 7 |
+| Exercise: Implement the Azure Cosmos DB for NoSQL service | 13 |
 | Knowledge check | 5 |
 | Summary | 2 |
 | **TOTAL** | **60** |

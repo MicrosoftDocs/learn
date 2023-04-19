@@ -14,10 +14,10 @@ This module walks through the steps to connect an existing ASP.NET Core Blazor W
 
 In short, the application will:
 
-- **Connect** to Azure Cosmos DB for NoSQL using the .NET SDK
-- **Manage** items with individual operations, queries, and transactional batches
 - **Connect** to Azure OpenAI's ChatGPT model using the .NET SDK
 - **Send** prompts to the model and parse the completion response.
+- **Connect** to Azure Cosmos DB for NoSQL using the .NET SDK
+- **Manage** items with individual operations, queries, and transactional batches
 
 ## What is the main goal?
 
