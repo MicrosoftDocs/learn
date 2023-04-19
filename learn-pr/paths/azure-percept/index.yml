@@ -45,7 +45,6 @@ subjects:
 - artificial-intelligence
 - machine-learning
 modules:
-- learn.azure-percept.prerequisites
-- learn.azure-percept.explore
+
 trophy:
   uid: learn.azure-percept.trophy
