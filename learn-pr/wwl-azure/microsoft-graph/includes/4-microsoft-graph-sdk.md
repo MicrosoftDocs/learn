@@ -64,7 +64,7 @@ var user = await graphClient.Me
 
 ## Retrieve a list of entities
 
-Retrieving a list of entities is similar to retrieving a single entity except there many other options for configuring the request. The `$filter` query parameter can be used to reduce the result set to only those rows that match the provided condition.  The `$orderBy` query parameter requests that the server provides the list of entities sorted by the specified properties.
+Retrieving a list of entities is similar to retrieving a single entity except there are other options for configuring the request. The `$filter` query parameter can be used to reduce the result set to only those rows that match the provided condition.  The `$orderBy` query parameter requests that the server provides the list of entities sorted by the specified properties.
 
 ```csharp
 // GET https://graph.microsoft.com/v1.0/me/messages?$select=subject,sender&$filter=<some condition>&orderBy=receivedDateTime
