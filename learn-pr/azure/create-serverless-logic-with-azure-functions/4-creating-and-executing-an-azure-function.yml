@@ -9,6 +9,7 @@ metadata:
   ms.author: glenga
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  zone_pivot_groups: dev-lang-javascript-powershell
 durationInMinutes: 10
 content: |
   [!include[](includes/4-creating-and-executing-an-azure-function.md)]
