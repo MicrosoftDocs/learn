@@ -5,8 +5,8 @@ metadata:
   title: Configure secure projects and repositories
   description: "Configure secure projects and repositories."
   ms.date: 1/25/2023
-  author: LuizMacedo
-  ms.author: lumac
+  author: lauraAlvEl
+  ms.author: lauraalv
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1
