@@ -50,18 +50,24 @@ The following snippet is the *function.json* file for this scenario.
 }
 ```
 
-Our JSON configuration specifies that our function is triggered when a message is added to a queue named **myqueue-items**. The return value of our function is then written to **outTable** in Azure Table storage. For PowerShell functions, output bindings are explicitly written to with the `Push-OutputBinding` cmdlet.
-
+Our JSON configuration specifies that our function is triggered when a message is added to a queue named **myqueue-items**. The return value of our function is then written to **outTable** in Azure Table storage. 
+:::zone pivot="powershell"
+For PowerShell functions, output bindings are explicitly written to with the `Push-OutputBinding` cmdlet.
+:::zone-end
 This example is a simple illustration of how we configure bindings for a function. We could change the output to be an email using a SendGrid binding, or put an event onto a Service Bus to notify some other component in our architecture, or even have multiple output bindings to push data to various services.
 
 > [!TIP]
 > To view and edit the contents of *function.json* in the Azure portal, from the Home page, select your function app, and in the right pane, select **JSON View**. The Resource JSON view displays the Resource ID and the editable JSON code. To close the JSON view, select the **X** in the top right corner of the pane.
 
+Not all languages supported by Functions use the function.json file to define functions.
+
 ## Create a function in the Azure portal
 
-Functions provides predefined function templates, which are based on a specific type of trigger. These templates, in your choosen language, makes it easy to get started creating your first function. 
+Functions provides predefined function templates, which are based on a specific type of trigger. These templates, in your chosen language, make it easy to get started creating your first function. 
 
-Not all Functions languages are supported by this module, and the portal doesn't support creating functions in all languages supported by Functions. In some cases, you'll need to develop your functions locally and publish to Azure. 
+This module isn't supported for all languages supported by Functions, and the portal itself doesn't support creating functions in all languages supported by Functions. 
+
+For supported languages that use the function.json file to define functions, you can create and edit these functions directly in the Azure portal. These portal-supported languages include: JavaScript, PowerShell, Python, and C# Script (.csx). Languages that define functions directly in the code itself must be developed outside of the portal and deployed to Azure. These nonportal supported languages include: C#, Java, Python (v2 programming model), and JavaScript/TypeScript (Node.js v4 programming model).
 
 ### Function templates
 
@@ -79,7 +85,7 @@ When you select a function that you created in your function app, the Function p
 
 :::image type="content" source="../media/4-file-navigation.png" alt-text="Screenshot of the function code and test editor showing the expanded Test/Run view, with menu options highlighted." lightbox="../media/4-file-navigation.png":::
 
-In the image above, the pane on the right has **Input** and **Output** tabs. Selecting the **Input** tab enables you to build and test the function by adding query parameters and supplying values for your query string. The **Output** tab displays the results of the request.
+In the previous image, the pane on the right has **Input** and **Output** tabs. Selecting the **Input** tab enables you to build and test the function by adding query parameters and supplying values for your query string. The **Output** tab displays the results of the request.
 
 ## Test your Azure function
 
@@ -90,7 +96,7 @@ After you've created a function in the portal, you'll want to test it. There are
 
 ### Test in the Azure portal
 
-The portal also provides a convenient way to test your functions. As previously described, in the screenshot above. When you select **Run** in this pane, the results automatically appear in the **Output** tab, and the **Logs** pane opens to display the status.
+The portal also provides a convenient way to test your functions. As previously described, in the previous screenshot. When you select **Run** in this pane, the results automatically appear in the **Output** tab, and the **Logs** pane opens to display the status.
 
 ### Run function manually
 
@@ -107,7 +113,7 @@ The ability to monitor your functions is critical during development and in prod
 After you've enabled Application Insights in the Azure portal, you can add logging statements to your function for debugging. The called methods for each language are passed a "logging" object, which can be used to add log information to the Logs pane in the **Code + Test** pane when running a test.
 
 ::: zone pivot="javascript"
-Write to logs from your code using the `log` method on the `context` object, which is passed to the handler. The following example write to the default log level (information):
+Write to logs from your code using the `log` method on the `context` object, which is passed to the handler. The following example writes to the default log level (information):
 
   ```javascript
   context.log('Enter your logging statement here');
