@@ -1,0 +1,1 @@
+Let's start with the simplest service to implement, `OpenAiService`. This service only contains two methods that we need to implement so we can implement basic prompts and completions right away. We're not implementing our Azure Cosmos DB for NoSQLdata service until later, so we can't persist our sessions across browser windows yet.
