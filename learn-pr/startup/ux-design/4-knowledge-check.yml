@@ -1,4 +1,5 @@
-﻿uid: learn.startups.ux-design.knowledge-check
+﻿### YamlMime:ModuleUnit
+uid: learn.startups.ux-design.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
@@ -21,7 +22,7 @@ quiz:
       isCorrect: true
       explanation: "*At its core, UX is how a product feels to your user while they interact with your product. The full experience from a user’s first contact until its last.*"
       isCorrect: false
-      explanation: " When discussing a product’s level of usability, there will be a certain level of objectivity tied to the opinion(s) of other users, which is why it is important to have as much research conducted and tested as possible to yield the best vantage points."
+      explanation: "When discussing a product’s level of usability, there will be a certain level of objectivity tied to the opinion(s) of other users, which is why it is important to have as much research conducted and tested as possible to yield the best vantage points."
 
   - content: "In the Ideate phase of the design thinking process, which of the following best describes the goal of this phase?"
     choices:
