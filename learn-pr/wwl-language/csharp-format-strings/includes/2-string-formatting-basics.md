@@ -147,9 +147,9 @@ Price: $123.45 (Save $50.00)
 Notice how adding the `:C` to the tokens inside of the curly braces formats the number as currency regardless of whether you use `int` or `decimal`.
 
 >[!Note:]
-> What happens if your country and language isn't known? If you run the previous code in the "in-browser" .NET Editor, such as at [TrydotNet](https://dotnet.microsoft.com/en-us/platform/try-dotnet) you'll see the following output: **`Price: ¤123.45 (Save ¤50.00)`**.  The symbol **`¤`** is used instead of the symbol for your country's money. This is a generic symbol used to denote "currency" regardless of the *type* of currency. You see this symbol in the .NET Editor because it ignores your current location.
+> What happens if your country/region and language isn't known? If you run the previous code in the "in-browser" .NET Editor, such as at [TrydotNet](https://dotnet.microsoft.com/en-us/platform/try-dotnet) you'll see the following output: **`Price: ¤123.45 (Save ¤50.00)`**.  The symbol **`¤`** is used instead of the symbol for your country/region's money. This is a generic symbol used to denote "currency" regardless of the *type* of currency. You see this symbol in the .NET Editor because it ignores your current location.
 
-## How the user's country and language affect string formatting
+## How the user's country/region and language affect string formatting
 
 What if you execute the previous code on a computer in France that has its Windows Display Language set to French? In that case you would see the following output.
 
@@ -157,7 +157,7 @@ What if you execute the previous code on a computer in France that has its Windo
 Price: 123,45 € (Save 50,00 €)
 ```
 
-The reason for the previous "€" output is that the string currency formatting feature is dependent on the local computer setting for *culture*. In this context, the term "culture" refers to the country and language of the end user. The *culture code* is a five character string that computers use to identify the location and language of the end user. The culture code ensures certain information like dates and currency can be presented properly.
+The reason for the previous "€" output is that the string currency formatting feature is dependent on the local computer setting for *culture*. In this context, the term "culture" refers to the country/region and language of the end user. The *culture code* is a five character string that computers use to identify the location and language of the end user. The culture code ensures certain information like dates and currency can be presented properly.
 
 For example:
 
@@ -167,7 +167,7 @@ For example:
 
 The culture affects the writing system, the calendar that's used, the sort order of strings, and formatting for dates and numbers (like formatting currency).
 
-Unfortunately, making sure your code works correctly on all computers regardless of the country or the end user's language is challenging. This process is known as *localization* (or *globalization*). Localization depends on many factors not discussed in this module, but simply, the string formatting syntax may use a different format depending on the user's culture.
+Unfortunately, making sure your code works correctly on all computers regardless of the country/region or the end user's language is challenging. This process is known as *localization* (or *globalization*). Localization depends on many factors not discussed in this module, but simply, the string formatting syntax may use a different format depending on the user's culture.
 
 ### Formatting numbers
 
@@ -265,4 +265,4 @@ Here are most important takeaways from this unit about string formatting:
 - Format currency using a `:C` specifier.
 - Format numbers using a `:N` specifier. Control the precision (number of values after the decimal point) using a number after the `:N` like `{myNumber:N3}`.
 - Format percentages using the `:P` format specifier.
-- Formatting currency and numbers depends on the end user's culture, a five character code that includes the user's country and language (per the settings on their computer).
+- Formatting currency and numbers depends on the end user's culture, a five character code that includes the user's country/region and language (per the settings on their computer).
