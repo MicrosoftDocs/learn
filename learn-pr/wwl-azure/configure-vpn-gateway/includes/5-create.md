@@ -1,3 +1,4 @@
+
 The VPN gateway settings that you chose are critical to creating a successful connection for your virtual network. There are several parameters to specify for a VPN gateway in the Azure portal. 
 
 ### Things to consider when creating a VPN gateway
@@ -26,7 +27,7 @@ Let's take a closer look at considerations for configuring the VPN gateway setti
    
    - Policy-based VPN gateways support only the IKEv1 protocol.
 
-- **SKU**: Use the drop-down menu to select a gateway SKU. Review SKU options in the [Determine gateway SKU and generation](/training/configure-vpn-gateway/7-determine-gateway-sku-generation) unit.
+- **SKU**: Use the drop-down menu to select a gateway SKU. Review SKU options in the [Determine gateway SKU and generation](/azure/vpn-gateway/vpn-gateway-about-vpngateways#gwsku) unit.
 
    Your choice affects the number of VPN tunnels you can have and the Aggregate Throughput Benchmark. The benchmark value is based on measurements of multiple tunnels aggregated through a single gateway. The throughput isn't guaranteed due to internet traffic conditions and your application behavior. 
 

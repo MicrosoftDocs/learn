@@ -1,3 +1,4 @@
+
 Give these Try-This exercises a test to gain some experience using Azure.
 
 > [!NOTE]
@@ -14,7 +15,7 @@ Skip this section if you already have a database to work with.
 1.  In the **Portal**, search for and a select **SQL databases**.
 2.  On the **Basics** tab, give your database a name, and create a new server.
 3.  On the **Additional settings** tab, select **Sample** for **Use existing data**. Also, **Enable advanced data security** and **Start free trial**.
-4.  **Review &amp; create**, and then **Create**.
+4.  **Review & create**, and then **Create**.
 5.  Wait for the database to deploy.
 
 ### Review Vulnerability Assessments
@@ -24,7 +25,7 @@ Skip this section if you already have a database to work with.
 3.  Select **Vulnerability Assessment**.
 4.  Review vulnerability assessments and the risk levels.
 5.  Click **Scan**.
-6.  The scan does not need to be fully complete for results to show.
+6.  The scan doesn't need to be fully complete for results to show.
 7.  Review the **Findings**.
 8.  Click any **Security Check** to get more details.
 9.  Review the **Passed** checks.
@@ -33,7 +34,7 @@ Skip this section if you already have a database to work with.
 ### Review Data Discovery and Classification
 
 1.  Return to the **Security** blade.
-2.  Select **Data Discovery &amp; Classification**.
+2.  Select **Data Discovery & Classification**.
 3.  On the **Classification** tab, select **Add classification**.
      -  Schema name: **SalesLT**
      -  Table name: **Customer**
@@ -99,10 +100,10 @@ In this task, we will configure Azure AD authentication.
 
 1.  In the **Portal**.
 2.  Navigate to your SQL database.
-3.  On the **Overview** page, there is an **Active Directory admin** box that shows the current status, configured or not configured.
+3.  On the **Overview** page, there's an **Active Directory admin** box that shows the current status, configured or not configured.
 4.  Under **Settings** select **Active Directory admin**.
 5.  Click **Set admin**.
-6.  Search for and **Select** the new Active Directory admin. Remember this user you will need in following steps.
+6.  Search for and **Select** the new Active Directory admin. Remember this user you'll need in following steps.
 7.  Be sure to **Save** your changes.
 8.  In **SQL Server Management Studio** connect to the database server using your credentials.
 9.  Select the SQL database you configured with a new Active Directory admin.

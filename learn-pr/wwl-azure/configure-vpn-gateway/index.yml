@@ -3,7 +3,7 @@ uid: learn.wwl.configure-vpn-gateway
 metadata:
   title: Configure Azure VPN Gateway
   description: "Learn how to create VPN gateways and securely connect your company sites to Azure."
-  ms.date: 01/18/2023
+  ms.date: 02/24/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial

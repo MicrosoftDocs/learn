@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-literals-variables.exercise-literal-values
+title: Exercise - Print literal values
+metadata:
+  title: Exercise - Print literal values
+  description: "Exercise - Print literal values"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+interactive: csharp
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-exercise-literal-values.md)]

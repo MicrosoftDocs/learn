@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.languages.csharp-switch-case
+metadata:
+  title: Branch the flow of code using the switch-case construct in C#
+  description: "Branch the flow of code using the switch-case construct in C#"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Branch the flow of code using the switch-case construct in C#
+summary: Learn how to add branching logic that matches one variable or expression against many possible values.
+abstract: |
+  After you complete this module, you'll be able to:
+  - Use the switch-case construct to match a variable or expression against several possible outcomes
+  - Convert code that uses an if-elseif-else construct into a switch-case construct
+prerequisites: |
+  *   Experience creating simple C# applications that include console I/O and access the methods of .NET classes such as String and Random
+  *   Experience using Visual Studio Code to develop, build, and run C# console applications that implement arrays, if-elseif-else statements, and foreach statements
+  *   Experience using C# code to evaluate conditional expressions and manage variable scope inside and outside of code blocks
+iconUrl: /training/achievements/csharp-switch-case.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- dotnet
+- dotnet-framework
+- vs-code
+subjects:
+- development-tools
+units:
+- learn.languages.csharp-switch-case.introduction
+- learn.languages.csharp-switch-case.exercise-switch-case
+- learn.languages.csharp-switch-case.challenge
+- learn.languages.csharp-switch-case.solution
+- learn.languages.csharp-switch-case.knowledge-check
+- learn.languages.csharp-switch-case.summary
+badge:
+  uid: learn.languages.csharp-switch-case.badge

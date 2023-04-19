@@ -39,7 +39,7 @@ let numberVersion = System.Int32.Parse first
 printfn "Number %i" numberVersion // Output: Number 32
 ```
 
-To use the built-in `int` function, you can instead enter it like so:
+To use the built-in `int` function, enter it like so:
 
 ```fsharp
 let first = "32"

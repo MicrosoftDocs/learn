@@ -4,13 +4,11 @@ title: Back up your virtual machines
 metadata:
   title: Back up your virtual machines
   description: "Explore a three-step process to use Azure Backup to protect your virtual machines."
-  ms.date: 02/10/2023
+  ms.date: 02/23/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 2
 content: |
   [!include[](includes/5-backup-virtual-machines.md)]

@@ -32,7 +32,7 @@ The **More resources** option in the portal provides a list of these related por
 | Microsoft Defender for Cloud| Protect your data centers and get advanced threat protection for your Azure and non-Azure workloads in the cloud and on premises. Secure your Azure services fast with autoprovisioned, native protection.|
 
 > [!NOTE]
-> Microsoft Defender for Business is a licensing model designed especially for the small and medium-sized business (up to 300 employees). You might find Microsoft 365 Defender portal content in the documentation section of Microsoft Defender for Business. The solutions use the same portal (https://security.microsoft.com) and therefor the documentation applies. 
+> Microsoft Defender for Business is a licensing model designed especially for the small and medium-sized business (up to 300 employees). You might find Microsoft 365 Defender portal content in the documentation section of Microsoft Defender for Business. The solutions use the same portal (https://security.microsoft.com) and therefore the documentation applies. 
 
 
 ## Required roles and permissions

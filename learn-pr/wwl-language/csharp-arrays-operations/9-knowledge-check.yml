@@ -1,0 +1,37 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-arrays-operations.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/25/2023
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which method changes the order of items in an `string` array?"
+    choices:
+    - content: "`myArray.Resize()`"
+      isCorrect: false
+      explanation: "Incorrect. `myArray.Resize()` changes the size, but not order, of the array."
+    - content: "`myArray.Clear()`"
+      isCorrect: false
+      explanation: "Incorrect. `myArray.Clear()` removes all items but it will not change the order."
+    - content: "`Array.Sort()`"
+      isCorrect: true
+      explanation: "Correct. `Array.Sort()` places `string` array items in ascending order."
+  - content: "What is null?"
+    choices:
+    - content: "The same as an empty string."
+      isCorrect: false
+      explanation: "Incorrect. Null isn't the same as an empty string."
+    - content: "The same as the value zero."
+      isCorrect: false
+      explanation: "Incorrect. Null isn't the same as the value zero."
+    - content: "A value that indicates a variable points to nothing in memory."
+      isCorrect: true
+      explanation: "Correct. Null isn't the same as an empty string or the value zero."

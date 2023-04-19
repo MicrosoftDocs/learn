@@ -42,8 +42,6 @@ Use these resources to discover more about the topics covered.
 
 [Azure VPN Gateway: Create & install VPN client config files - P2S RADIUS connections | Microsoft Docs](/azure/vpn-gateway/point-to-site-vpn-client-configuration-radius)
 
-[RADIUS Server and client address pool](/azure/vpn-gateway/point-to-site-how-to-radius-ps%235-add-the-radius-server-and-client-address-pool)
-
 [Monitoring Azure VPN Gateway | Microsoft Docs](/azure/vpn-gateway/monitor-vpn-gateway)
 
 [Troubleshoot Point-to-Site connections: macOS X clients - Azure VPN Gateway | Microsoft Docs](/azure/vpn-gateway/vpn-gateway-troubleshoot-point-to-site-osx-ikev2)

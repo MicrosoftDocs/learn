@@ -12,8 +12,6 @@ The following illustration shows a virtual machine resource that has a private I
 
 Let's take a closer look at the characteristics of IP addresses.
 
-- IP addresses are never managed from within a virtual machine.
-
 - IP addresses can be statically assigned or dynamically assigned.
 
 - You can separate dynamically and statically assigned IP resources into different subnets.

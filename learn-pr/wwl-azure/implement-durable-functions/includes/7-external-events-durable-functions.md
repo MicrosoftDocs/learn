@@ -1,4 +1,6 @@
 
+
+
 Orchestrator functions have the ability to wait and listen for external events. This feature of Durable Functions is often useful for handling human interaction or other external triggers.
 
 ## Wait for events

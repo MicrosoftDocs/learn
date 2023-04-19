@@ -38,3 +38,6 @@ There are two ways to configure a custom domain: direct mapping and intermediary
 
    - `CNAME` record: **`asverify`**`.blobs.contoso.com`
    - Intermediate `CNAME` record: **`asverify`**`.contosoblobs.blob.core.windows.net`
+
+
+   [Learn more about intermediary domain mapping](/azure/storage/blobs/storage-custom-domain-name?tabs=azure-portal)

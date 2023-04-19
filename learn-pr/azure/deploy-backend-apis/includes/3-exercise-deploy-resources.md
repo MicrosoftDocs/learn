@@ -38,7 +38,7 @@ In order to complete the exercises, you'll need to configure your environment. I
 
 1. Below the toolbar, select the green **Code** button and copy the HTTPS Clone URL; for example, *`https://github.com/<github-username>/serverless-full-stack-apps-azure-sql.git`*.
 
-1. In Visual Studio Code, select **Source Control** > **...** > **Clone** (or select **View, Command Palette** and enter **Git:Clone**), paste the Git repository URL you copied in the previous step, and then select <kbd>Enter</>.
+1. In Visual Studio Code, select **View** > **Source Control** > **Clone Repository** (or select **View, Command Palette** and enter **Git:Clone**), paste the Git repository URL you copied in the previous step, and then select <kbd>Enter</kbd>.
 
 1. In the file explorer dialog, select or create a local folder where you would like the repository to be copied to, and then select **Select Repository Location**.  Your forked repo of the Azure Samples is copied to your local folder. Visual Studio Code displays a notification that the repository was cloned.
 
@@ -76,13 +76,13 @@ These scripts should take three to five minutes to complete. Be sure to note you
     > [!Note]
     > A **complex password** must consist of:
     >
-    > * 8 characters minimum and 16 characters maximum
-    > * Requires 3 out of 4 of the following:
-    >    * Lowercase characters
-    >    * Uppercase characters
-    >    * Numbers ( 0-9 )
-    >    * Symbols ( @ # $ % ^ & * - _  + = [ ] { } | \ : ‘ , . ? / ` ~ “ ( ) ; )
-    
+    > - 8 characters minimum and 16 characters maximum
+    > - Requires 3 out of 4 of the following:
+    >    - Lowercase characters
+    >    - Uppercase characters
+    >    - Numbers ( 0-9 )
+    >    - Symbols ( @ # $ % ^ & * - _  + = [ ] { } | \ : ‘ , . ? / ` ~ “ ( ) ; )
+
 1. Output and store the information you'll need throughout the module by running the following code in Cloud Shell. You'll likely need to press Enter after you paste the code, because the last line won't be run by default.
 
     ```powershell
@@ -154,9 +154,9 @@ These scripts should take three to five minutes to complete. Be sure to note you
     1. *Name*: **AZURE_SQL_CONNECTION_STRING**
     1. *Value*: **Connection string from prior step**
 
- 1. Select **Add secret** to add an entry to the **Repository secrets** section.
+1. Select **Add secret** to add an entry to the **Repository secrets** section.
 
- 1. Next, you need to configure the yaml template for your repo. In Visual Studio Code, select **Explorer** from the left-hand taskbar. The files and folders for your **serverless-full-stack...** repository should display. If you don't see them, select **File** > **Open folder** and navigate to the location where you cloned the repository.
+1. Next, you need to configure the yaml template for your repo. In Visual Studio Code, select **Explorer** from the left-hand taskbar. The files and folders for your **serverless-full-stack...** repository should display. If you don't see them, select **File** > **Open folder** and navigate to the location where you cloned the repository.
 
 1. Under the folder `.github\workflows`, rename **`azuresqldatabase.yml.template`** to **`azuresqldatabase.yml`**.
 

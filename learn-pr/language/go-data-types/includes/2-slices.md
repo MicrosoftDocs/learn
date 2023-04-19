@@ -183,7 +183,7 @@ func main() {
 When you run the preceding code, you get the following output:
 
 ```output
-Before [A B C D E]
+Before [A B C D E] Remove  C
 After [A B D E]
 ```
 

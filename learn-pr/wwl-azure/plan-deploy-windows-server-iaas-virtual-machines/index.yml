@@ -3,7 +3,7 @@ uid: learn.wwl.plan-deploy-windows-server-iaas-vms
 metadata:
   title: Plan and deploy Windows Server IaaS Virtual Machines
   description: "You'll be able to describe Azure compute and storage in relation to Azure VMs, and deploy Azure VMs by using the Azure portal, Azure CLI, or templates."
-  ms.date: 10/21/2020
+  ms.date: 02/08/2023
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -11,15 +11,16 @@ metadata:
 title: Plan and deploy Windows Server IaaS Virtual Machines
 summary: You'll be able to describe Azure compute and storage in relation to Azure VMs, and deploy Azure VMs by using the Azure portal, Azure CLI, or templates.
 abstract: |
-  After completing this module, you will be able to:
+  After completing this module, you'll be able to:
   - Describe Azure compute.
   - Describe Azure storage.
   - Deploy Azure VMs.
   - Create a VM from the Azure portal.
   - Create a VM from Azure Cloud Shell.
   - Deploy Azure VMs by using templates.
+  - Describe additional management optimization options
 prerequisites: |
-  To get the best learning experience from this module, it's important that you have knowledge and experience of the following:
+  To get the best learning experience from this module, it's important that you have knowledge and experience of the following technologies:
   - Managing Windows Server operating system and Windows Server workloads in on-premises scenarios, such as Active Directory Domain Services (AD DS), Domain Name System (DNS), the Distributed File System (DFS), Microsoft Hyper-V, and file and storage services.
   - Common Windows Server management tools.
   - Core Microsoft compute, storage, networking, and virtualization technologies.
@@ -42,6 +43,7 @@ products:
 - azure-portal
 - azure-storage
 - azure-virtual-machines
+- azure-automanage
 subjects:
 - virtual-machine
 - development-tools
@@ -53,6 +55,7 @@ units:
 - learn.wwl.plan-deploy-windows-server-iaas-vms.create-windows-vm-using-portal
 - learn.wwl.plan-deploy-windows-server-iaas-vms.create-windows-vm-using-azure-cli
 - learn.wwl.plan-deploy-windows-server-iaas-vms.deploy-azure-vms-using-templates
+- learn.wwl.plan-deploy-windows-server-iaas-vms.describe-additional-options
 - learn.wwl.plan-deploy-windows-server-iaas-vms.knowledge-check
 - learn.wwl.plan-deploy-windows-server-iaas-vms.summary
 badge:

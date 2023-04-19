@@ -1,10 +1,11 @@
+
 As we reviewed in the previous section, VPN gateway connections are available in different configurations. In this module, we review the steps to configure a site-to-site connection in the Azure portal. The following flowchart highlights the seven high-level steps for this configuration. Six of the seven steps are completed in Azure and one is completed on-premises.
 
 :::image type="content" source="../media/gateway-steps-aebd935e.png" alt-text="Flowchart that shows the high-level steps to configure a site-to-site connection." border="false":::
 
 The complete process to create a VPN gateway for a site-to-site connection can take up to 45 minutes.
 
-### Things to know about site-site configuration
+### Things to know about site-to-site configuration
 
 Before we start looking at the configuration details, there are few notes to review.
 

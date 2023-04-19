@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.languages.csharp-basic-operations
+metadata:
+  title: Perform basic operations on numbers in C#
+  description: "Perform basic operations on numbers in C#"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Perform basic operations on numbers in C#
+summary: Learn the operators and techniques used to perform basic math operations on numeric data.
+abstract: |
+  After you complete this module, you'll be able to:
+  *   Perform mathematical operations on numeric values
+  *   Observe implicit type conversion between strings and numeric values
+  *   Temporarily convert one data type into another
+prerequisites: |
+  * Beginner level experience with basic C# syntax rules
+  * Beginner level experience with displaying a message to a console using the Console.WriteLine() and Console.Write() methods
+  * Beginner level experience with creating literal values and declare variables of basic data types like string, int, and decimal
+  * Beginner level experience with string concatenation and string interpolation
+iconUrl: /training/achievements/csharp-basic-operations.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- dotnet
+- vs-code
+subjects:
+- development-tools
+units:
+- learn.languages.csharp-basic-operations.introduction
+- learn.languages.csharp-basic-operations.exercise-add-numbers
+- learn.languages.csharp-basic-operations.exercise-math-operators
+- learn.languages.csharp-basic-operations.exercise-increment-decrement
+- learn.languages.csharp-basic-operations.challenge
+- learn.languages.csharp-basic-operations.solution
+- learn.languages.csharp-basic-operations.knowledge-check
+- learn.languages.csharp-basic-operations.summary
+badge:
+  uid: learn.languages.csharp-basic-operations.badge

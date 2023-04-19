@@ -1,0 +1,36 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.work-environments-azure-machine-learning.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Test your knowledge on how and when to use curated and custom environments in Azure Machine Learning."
+  ms.date: 02/28/2023
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "A data scientist created a script that trains a machine learning model using the open-source library scikit-learn. The data scientist wants to quickly test whether the script can run on the existing compute cluster, what type of environment should the data scientist use?"
+    choices:
+    - content: "Default"
+      isCorrect: false
+      explanation: "Incorrect. Default environments do not exist."
+    - content: "Curated"
+      isCorrect: true
+      explanation: "Correct. Curated environments are ideal to use for faster development time."
+    - content: "Custom"
+      isCorrect: false
+      explanation: "Incorrect. Creating a custom environment will take more time than using a curated environment."
+  - content: "A command job fails with the error message that a module isn't found. The data scientist used a curated environment and wants to add a specific Python package to create a custom environment and successfully run the job. Which file should be created before creating the custom environment that uses a curated environment as reference?"
+    choices:
+    - content: "Training script"
+      isCorrect: false
+      explanation: "Incorrect. Although you need to import any module you use in your script, including the packages in your script will not automatically install them on the compute target."
+    - content: "Docker image"
+      isCorrect: false
+      explanation: "Incorrect. Since a curated environment is used as reference, there is already a Docker image."
+    - content: "Conda specification"
+      isCorrect: true
+      explanation: "Correct. You can list Python packages in a conda specification file."

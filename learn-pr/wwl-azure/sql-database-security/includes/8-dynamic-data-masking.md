@@ -1,3 +1,4 @@
+
 SQL Database dynamic data masking (DDM) limits sensitive data exposure by masking it to non-privileged users.
 
 Dynamic data masking helps prevent unauthorized access to sensitive data by enabling customers to designate how much of the sensitive data to reveal with minimal impact on the application layer. It’s a policy-based security feature that hides the sensitive data in the result set of a query over designated database fields, while the data in the database is not changed.

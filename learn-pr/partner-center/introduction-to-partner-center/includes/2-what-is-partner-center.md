@@ -11,7 +11,7 @@ The Cloud Partner Program (formerly called the Microsoft Partner Network) is a h
 > [!NOTE]
 > If you're new to Microsoft Cloud Partner Program and don’t have an PartnerID, you can register by following these [enrollment instructions](https://partner.microsoft.com/dashboard/account/v3/enrollment/introduction/partnership).
 
-In Partner Center, you can purchase a Microsoft Action Pack that provides Microsoft software and tools to develop expertise, such as attaining competencies and earning advanced specializations. The benefits included with these programs help you build solutions and go to market. Compare our different [Microsoft Cloud Partner Program offerings](https://partner.microsoft.com/membership/compare-offers) to find the best fit for your company.
+In Partner Center, you can purchase a Microsoft Action Pack that provides Microsoft software and tools to develop expertise, such as attaining competencies and earning advanced specializations. The benefits included with these programs help you build solutions and go to market. Compare our different [Microsoft Cloud Partner Program offerings](https://partner.microsoft.com/partnership/compare-offers) to find the best fit for your company.
 
 ## Connect with customers
 

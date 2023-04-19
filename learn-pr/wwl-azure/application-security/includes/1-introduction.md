@@ -1,3 +1,4 @@
+
 Application security is one extra layer in the defense-in-depth strategy. You ensure that your application is registered, so it has a unique identity in Azure AD, then you can manage and control both access to the application and what the application can do.
 
 ## Scenario

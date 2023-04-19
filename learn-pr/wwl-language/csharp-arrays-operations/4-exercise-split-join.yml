@@ -1,0 +1,28 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-arrays-operations.exercise-split-join
+title: Exercise - Discover Split() and Join()
+metadata:
+  title: Exercise - Discover Split() and Join()
+  description: "Exercise - Discover Split() and Join()"
+  ms.date: 02/25/2023
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-exercise-split-join.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "`String.Join(\"-\", myArray);` is an example of a Join. Which explanation best fits this example?"
+    choices:
+    - content: "Constructs a character array from items in `myArray` connected with `,` (commas)."
+      isCorrect: false
+      explanation: "Incorrect. `String.Join` constructs strings from the elements of `myArray`)"
+    - content: "Constructs a string from items in `myArray` connected with `-` (dashes)."
+      isCorrect: true
+      explanation: "Correct. `String.Join` constructs strings from the elements of `myArray`)"
+    - content: "Constructs a string named `myArray` connected with `-` (dashes)."
+      isCorrect: false
+      explanation: "Incorrect. `String.Join` constructs strings from the elements of `myArray`)"

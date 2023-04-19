@@ -1,10 +1,11 @@
 One of the primary ways that Intune provides mobile app security is through policies. App protection policies allow you to do the following actions:
-- Use Azure AD identity to isolate organization data from personal data. So personal information is isolated from organizational IT awareness. Data accessed using organization credentials are given additional security protection.
+
+- Use Azure AD identity to isolate organization data from personal data. So personal information is isolated from organizational IT awareness. Data accessed using organization credentials are given extra security protection.
 - Help secure access on personal devices by restricting actions users can take with organizational data, such as copy-and-paste, save, and view.
-- Create and deploy on devices that are enrolled in Intune, enrolled in another mobile device management (MDM) service, or not enrolled in any MDM service. 
+- Create and deploy on devices that are enrolled in Intune, enrolled in another mobile device management (MDM) service, or not enrolled in any MDM service.
 
 > [!NOTE]
-> App protection policies are designed to apply uniformly across a group of apps, such as applying a policy across all Office mobile apps. 
+> App protection policies are designed to apply uniformly across a group of apps, such as applying a policy across all Office mobile apps.
 
 ## App protection policies with enrollment
 
@@ -16,7 +17,7 @@ The following illustration shows the layers of protection that an MDM service an
 
 ## App protection policies without enrollment 
 
-There are additional benefits to using an MDM service with app protection policies, and companies can use app protection policies with and without MDM at the same time. For example, consider an employee that uses both a tablet issued by the company, and their own personal phone. The company tablet is enrolled in MDM and protected by app protection policies while their personal phone is protected by app protection policies only.
+There are other benefits to using an MDM service with app protection policies, and companies can use app protection policies with and without MDM at the same time. For example, consider an employee that uses both a tablet issued by the company, and their own personal phone. The company tablet is enrolled in MDM and protected by app protection policies while their personal phone is protected by app protection policies only.
 
 ![Devices using app protection policies without enrollment - Microsoft Endpoint Manager.](../media/intro-to-endpoint-manager-22.png)
 

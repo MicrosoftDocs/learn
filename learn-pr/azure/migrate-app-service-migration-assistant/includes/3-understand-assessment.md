@@ -1,4 +1,4 @@
-In this unit, we'll review the potential challenges that you might encounter when migrating web applications hosted on-premises in your own server at a high level. We'll provide context on the kinds of dependencies that web applications have on features of Internet Information Services (IIS) and why this causes a problem. This critical background information provides the context that you might need to better understand the need for an assessment.
+In this unit, we review the potential challenges that you might encounter when migrating web applications hosted on-premises in your own server at a high level. We'll provide context on the kinds of dependencies that web applications have on features of Internet Information Services (IIS) and why this causes a problem. This critical background information provides the context that you might need to better understand the need for an assessment.
 
 ## Why move a web application to Azure App Service?
 

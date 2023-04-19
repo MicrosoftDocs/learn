@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Your organization has an internal system to share patient appointment information and notes. You can secure the access based on a user's membership in an Azure Active Directory (Azure AD) group. Which kind of authorization supports this scenario best, and why?"
+  - content: "Your organization has an internal system to share patient appointment information and notes. You can secure a user's access based on their membership in an Azure Active Directory (Azure AD) group. Which kind of authorization supports this scenario best, and why?"
     choices:
     - content: "Use a shared access signature (SAS) token. You use the Azure AD credentials and a user delegation SAS token."
       isCorrect: false

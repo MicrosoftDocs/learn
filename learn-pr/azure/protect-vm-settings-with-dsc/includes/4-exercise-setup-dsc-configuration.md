@@ -56,7 +56,7 @@ Start by deploying a new VM from a Windows Server 2019 image.
 
 1. On the Azure portal resource menu or from the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the **Search services and marketplace** text box, enter *Automation*, and press <kbd>Enter</kbd> to view the search results.
+1. In the **Search services and marketplace** text box, enter *Automation*, and select <kbd>Enter</kbd> to view the search results.
 
 1. In the *Automation* search results, select the **Automation** Azure service published by Microsoft.
 

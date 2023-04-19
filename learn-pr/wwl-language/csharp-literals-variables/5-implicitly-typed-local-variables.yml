@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-literals-variables.implicitly-typed-local-variables
+title: Declare implicitly typed local variables
+metadata:
+  title: Declare implicitly typed local variables
+  description: "Declare implicitly typed local variables"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+interactive: csharp
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-implicitly-typed-local-variables.md)]

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-evaluate-boolean-expressions.challenge-1
+title: Exercise - Complete a challenge activity using conditional operators
+metadata:
+  title: Exercise - Complete a challenge activity using conditional operators
+  description: "Exercise - Complete a challenge activity using conditional operators"
+  ms.date: 02/25/2023
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-challenge-1.md)]

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-calculate-final-gpa.exercise-format-decimal-output
+title: Exercise - Format the decimal output
+metadata:
+  title: Exercise - Format the decimal output
+  description: "Exercise - Format the decimal output"
+  ms.date: 02/23/2023
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+interactive: csharp
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-exercise-format-decimal-output.md)]

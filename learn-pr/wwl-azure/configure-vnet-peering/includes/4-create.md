@@ -6,10 +6,7 @@ There are a few points to review before we look at how to create the peering in 
 
 - To implement virtual network peering, your Azure account must be assigned to the `Network Contributor` or `Classic Network Contributor` role. Alternatively, your Azure account can be assigned to a custom role that can complete the necessary peering actions. For details, see [Permissions](/azure/virtual-network/virtual-network-manage-peering?tabs=peering-portal#permissions).
 
-- To create a peering, you need two virtual networks. The first virtual network in the peering must be deployed by using the Azure Resource Manager.
-
-   > [!Note]
-   > You can't set up peering for a virtual network deployed via the classic deployment model, or between two virtual networks deployed through the classic deployment model. 
+- To create a peering, you need two virtual networks. 
 
 - Each virtual network in the peering needs at least one virtual machine.
 

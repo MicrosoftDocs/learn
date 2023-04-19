@@ -2,7 +2,7 @@ Your organization is almost ready to migrate resources to Azure. This migration 
 
 You've already provided a high-level design for this migration. However, your project manager has requested extra information about the choice between Azure ExpressRoute and Azure VPN Gateway. You also need to put together a capability matrix, so that non-technical staff members understand the features of each service.
 
-In this unit, you'll assess two hybrid networking scenarios: Azure ExpressRoute and Azure VPN Gateway.
+In this unit, you assess two hybrid networking scenarios: Azure ExpressRoute and Azure VPN Gateway.
 
 ## Azure ExpressRoute
 
@@ -22,17 +22,17 @@ However, based on what you've learned so far, you decide that ExpressRoute is be
 
 Your organization's presence covers a wide geographical location. Although your datacenter and HQ are all in the same building, many satellite branches also need a connection to the Azure network.
 
-You've established ExpressRoute as your preferred connection to Azure. Now you'll consider your second requirement: connecting regional satellite offices to the Azure network.
+You've established ExpressRoute as your preferred connection to Azure. Now consider your second requirement: connecting regional satellite offices to the Azure network.
 
 Unlike your HQ, which has thousands of employees and an on-premises datacenter, each satellite office has between 20 and 50 employees. There's no requirement for a fast, low-latency connection.
 
-This secondary requirement has different needs. ExpressRoute, although ideal for high speeds and resilience, doesn't suit smaller satellite offices that have a lower connectivity requirement. Also, each office would need a dedicated private connection to be maintained and run by the connectivity provider.
+This secondary requirement has different needs. ExpressRoute, although ideal for high speeds and resilience, doesn't suit smaller satellite offices that have a lower connectivity requirement. Also, each office would need a dedicated private connection maintained and run by the connectivity provider.
 
 In this instance, using a VPN would provide a better overall solution. A VPN is based on existing and understood technology, which means it can be managed in-house. The lower-speed bandwidth is within an acceptable tolerance for day-to-day usage.
 
 ## Hybrid networking capability matrix
 
-To show what you've learned in this unit and to help you choose between the two connectivity types, we've built a capability matrix. The following table lists the key features for each method, the supported bandwidths, the resiliency model, typical use cases, and associated SLAs.
+We've built a capability matrix, to show what you've learned in this unit, and to help you choose between the two connectivity types. The following table lists the key features for each method, the supported bandwidths, the resiliency model, typical use cases, and associated SLAs.
 
 | Capability | VPN Gateway | ExpressRoute |
 | ---- |---|---|---|

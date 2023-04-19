@@ -24,8 +24,6 @@ prerequisites: |
 iconUrl: /training/achievements/create-foundation-modern-apps.svg
 levels:
   - intermediate
-  - beginner
-  - advanced
 roles:
   - developer
   - database-administrator

@@ -1,3 +1,4 @@
+
 As discussed already, Azure monitor has metrics, logging, and analytics features. Another feature is Monitor Alerts.
 
 ## Responding to critical situations

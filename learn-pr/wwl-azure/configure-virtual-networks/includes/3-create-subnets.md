@@ -12,7 +12,7 @@ There are certain conditions for the IP addresses in a virtual network when you 
 
 - The IP address space for a subnet must be specified by using CIDR notation.
 
-- You can segment a virtual network into one or more subnets in the Azure portal. Characteristics about the IP addresses for the subsets are listed.
+- You can segment a virtual network into one or more subnets in the Azure portal. Characteristics about the IP addresses for the subnets are listed.
 
    :::image type="content" source="../media/azure-subnets-a5c893d5.png" alt-text="Screenshot that shows multiple subnets for a virtual network in the Azure portal.":::
 

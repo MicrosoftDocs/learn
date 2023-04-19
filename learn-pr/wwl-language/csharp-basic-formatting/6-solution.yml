@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-basic-formatting.solution
+title: Review the solution
+metadata:
+  title: Review the solution
+  description: "Review the solution"
+  ms.date: 02/24/2023
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+interactive: csharp
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-solution.md)]

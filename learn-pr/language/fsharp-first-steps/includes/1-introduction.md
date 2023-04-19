@@ -12,9 +12,9 @@ With F#, you can build applications like:
 - Internet-of-Things (IoT)
 - Gaming
 
-## What will we be doing?
+## What are we doing?
 
-In this module you will:
+In this module, you'll:
 
 - Understand what makes F# a good language for building applications
 - Write your first line of F# code.
@@ -22,4 +22,4 @@ In this module you will:
 
 ## What is the main goal?
 
-By the end of this module, you'll be able to write F# code to print a message to a text console, like the Windows command prompt or Linux bash shell. These lines of code will give you your first look at the F# syntax, and immediately provide invaluable insights into what makes F# a great programming language.
+By the end of this module, you'll be able to write F# code to print a message to a text console, like the Windows command prompt or Linux bash shell. These lines of code provide you with your first look at the F# syntax, and immediately provide invaluable insights into what makes F# a great programming language.

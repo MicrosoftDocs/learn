@@ -3,7 +3,7 @@ uid: learn.fsharp-first-program
 metadata:
   title: Store and retrieve data by using F#
   description: In this module, you'll learn about variables and data types. You'll also look at how to output data to the screen and capture user input. And you'll explore operators and ways to convert between data types.
-  ms.date: 07/21/2021
+  ms.date: 02/24/2023
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial

@@ -1,0 +1,37 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.challenge-project-develop-branching-looping-structures-c-sharp.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/27/2023
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A developer is writing an application in Visual Studio Code. They save changes to their Program.cs file, and then run the `dotnet build` command in the Terminal panel. What information can they find in reported Error and Warning messages?"
+    choices:
+    - content: "One or more suggestions for how to fix any syntax issues detected."
+      isCorrect: false
+      explanation: "Incorrect. Error and Warning messages don't include suggested fixes."
+    - content: "The line number and information about what caused the error."
+      isCorrect: true
+      explanation: "Correct. Error and Warning messages include a description of the issue and the line number where it occurs."
+    - content: "Links to help documentation."
+      isCorrect: false
+      explanation: "Incorrect. Error and Warning messages don't include links to documentation."
+  - content: "A developer needs to create an iteration statement. Under what condition is a `while` statement a better choice than a `do` statement?"
+    choices:
+    - content: "When the expression values evaluated by the iteration statement are unknown prior to the iteration code block."
+      isCorrect: false
+      explanation: "Incorrect. A `do` statement would work well in this situation."
+    - content: "When the expression values evaluated by the iteration statement are known prior to the iteration code block."
+      isCorrect: true
+      explanation: "Correct. When the code is able to evaluate the loop expression prior to the loop, a `while` statement allows the code to implement zero iterations."
+    - content: "When the developer creates nested `do` or `while` loops."
+      isCorrect: false
+      explanation: "Incorrect. Nesting loops isn't a factor in this decision."

@@ -1,0 +1,28 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-modify-content.exercise-indexof-substring
+title: Exercise - Use the string's IndexOf() and Substring() helper methods
+metadata:
+  title: Exercise - Use the string's IndexOf() and Substring() helper methods
+  description: "Exercise - Use the string's IndexOf() and Substring() helper methods"
+  ms.date: 02/25/2023
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 25
+content: |
+  [!include[](includes/2-exercise-indexof-substring.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the return value of `myString.IndexOf('C');` where `string myString = \"C# Time\";`?"
+    choices:
+    - content: "`0`"
+      isCorrect: true
+      explanation: "Correct. `\"C\"` is the first item in `myString` and matches at position `0`"
+    - content: "`1`"
+      isCorrect: false
+      explanation: "Incorrect. `1` is the second item in `myString`, the character `\"#\"`."
+    - content: "`-1`"
+      isCorrect: false
+      explanation: "Incorrect. `-1` indicates no match is found in `myString`, and the first character in `myString` is the `\"C\"` match."

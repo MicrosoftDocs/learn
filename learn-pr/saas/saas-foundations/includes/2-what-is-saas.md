@@ -2,25 +2,21 @@ One of the most popular forms of cloud computing is Software as a Service, or Sa
 
 SaaS provides a complete software solution that you purchase on a pay-as-you-go basis from a service provider. You rent the use of an app for your organization, and your users connect to it over the Internet, usually with a web browser or mobile app. All the underlying infrastructure, middleware, app software, and app data are in the service provider’s datacenter. The service provider manages the hardware and software, and with the appropriate service agreement, will ensure the availability and the security of the app and your data as well. SaaS allows your organization to get quickly up and running with an app at minimal upfront cost.
 
-The idea of success behind SaaS model is not new, and the term which you might hear often, is Economies of scale. In production it is also called subtractive manufacturing – the more you produce, the higher margins it's possible to achieve.
+The idea of success behind SaaS model isn't new, and the term that you might hear often, is Economies of scale. In production it's also called subtractive manufacturing – the more you produce, the higher margins it's possible to achieve.
 
 ![This graph illustrates declining price per unit based on the amount of units produced.](../media/economies-of-scale.png) 
 
-
-
-It works with software too – but only in case you are NOT producing customizable software for each customer and reusing infrastructure. However, there are cases with dedicated or isolated tiers of service in SaaS with their own infrastructure.
+It works with software too – but only in case you're NOT producing customizable software for each customer and reusing infrastructure. However, there are cases with dedicated or isolated tiers of service in SaaS with their own infrastructure.
 
 For example, Microsoft has a special offer called Azure Government, which can only be sold to the government, since they have high security standards and requirements, and because of that the infrastructure is fully isolated from the Azure Public Cloud.  
 
-
-
 ## SaaS business models
 
-On a high level, we can distinguish 2 different business models for SaaS companies:
+On a high level, we can distinguish two different business models for SaaS companies:
 * B2B (Business – to Business) company that provides software and services to other businesses.
 * B2C (Business-to-Consumer) company that sells software and operates this software directly to individual consumers.
 
-The biggest difference is the audience of your products. And even though you might have a product which suits both business and individual consumers, it has a direct impact on your company and implemented solution.
+The biggest difference is the audience of your products. And even though you might have a product that suits both business and individual consumers, it has a direct impact on your company and implemented solution.
 
 Some other differences (but not limited to) between B2B and B2C include:
 * Pricing models
@@ -78,7 +74,7 @@ For the sake of example, requirements are simplified, but here are some examples
 
 - Initially Contoso is focusing on UK region due to its origins, preferred language and financial capability of companies providing legal services within UK region. In the future, after Contoso establishes stable business within UK region, they'll start going into other markets. 
 
-  Each geographical region will bring additional challenges, in term of technical delivery of the service, as well as over all Go-To-Market strategies and activities. If Contoso decides, that next market is Europe, they'll have to create a strategy of how to market the product in countries, where English is not default language and take into account specifics of local legal industry.  
+  Each geographical region will bring additional challenges, in term of technical delivery of the service, as well as over all Go-To-Market strategies and activities. If Contoso decides, that next market is Europe, they'll have to create a strategy of how to market the product in countries/regions, where English is not default language and take into account specifics of local legal industry.  
 
 
 

@@ -1552,3 +1552,8 @@ achievements:
   
     - Meeting a broad set of regulatory and compliance standards on a trusted cloud platform.
   iconUrl: /training/achievements/azure-sfa-generalist-path.svg
+- uid: learn.wwl.design-for-high-availability.badge
+  type: badge
+  title: Design for high availability
+  summary: Azure Architects design and recommend highly available solutions.
+  iconUrl: /training/achievements/availability-design.svg

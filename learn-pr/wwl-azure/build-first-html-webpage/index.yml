@@ -3,7 +3,7 @@ uid: learn.wwl.build-first-html-webpage
 metadata:
   title: Build your first HTML webpage
   description: "Illustrates basic programming techniques using Visual Studio Code to write HTML and CSS."
-  ms.date: 12/16/2022
+  ms.date: 03/01/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
@@ -27,8 +27,7 @@ roles:
 - k-12-educator
 - student
 products:
-- return-to-school
-- return-to-workplace
+- vs-code
 subjects:
 - cloud-computing
 units:

@@ -2,16 +2,16 @@
 uid: learn.wwl.sql-database-security
 metadata:
   title: Configure and manage SQL database security
-  description: "Configure and lock down your SQL database on Azure to protect your corporate data while it is stored."
-  ms.date: 09/06/2022
+  description: "Configure and lock down your SQL database on Azure to protect your corporate data while it's stored."
+  ms.date: 02/24/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Configure and manage SQL database security
-summary: Configure and lock down your SQL database on Azure to protect your corporate data while it is stored.
+summary: Configure and lock down your SQL database on Azure to protect your corporate data while it's stored.
 abstract: |
-  By the end of this module, you will be able to:
+  By the end of this module, you'll be able to:
   - Configure which users and applications have access to your SQL databases
   - Block access to your servers using firewalls
   - Discover, classify, and audit the use of your data

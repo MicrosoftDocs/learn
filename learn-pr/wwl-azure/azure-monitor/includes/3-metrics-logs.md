@@ -1,3 +1,4 @@
+
 All data that Azure Monitor collects fits into one of two fundamental types: **metrics or logs**.
 
 ## Azure Monitor Metrics

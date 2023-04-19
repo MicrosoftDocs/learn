@@ -5,7 +5,7 @@ metadata:
   description: 'Microsoft Azure AI Fundamentals: Get started with artificial intelligence'
   ms.date: 11/08/2021
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: sheryang
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: 'Microsoft Azure AI Fundamentals: Get started with artificial intelligence'
@@ -32,5 +32,6 @@ subjects:
 - artificial-intelligence
 modules:
 - learn.wwl.get-started-ai-fundamentals
+- learn.wwl.explore-azure-openai
 trophy:
   uid: learn.wwl.get-started-with-artificial-intelligence-on-azure.trophy
