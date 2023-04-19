@@ -2,15 +2,18 @@
 uid: learn.build-chat-bot-azure-cosmos-db-openai-blazor.knowledge-check
 title: Knowledge check
 metadata:
+  unitType: knowledge_check
   title: Knowledge check
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
-  ms.date: 4/10/2023
+  description: |
+    Check your knowledge on managing items in Azure Cosmos DB for NoSQL and interacting with the conservational interface for Azure OpenAI using their .NET SDKs.
   author: seesharprun
+  manager: jroth
   ms.author: sidandrews
   ms.reviewer: mjbrown
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
-durationInMinutes: 1
+  ms.prod: learning-azure
+  ms.date: 4/19/2023
+durationInMinutes: 5
 ###########################################################################
 ###
 ### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)

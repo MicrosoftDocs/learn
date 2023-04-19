@@ -2,14 +2,17 @@
 uid: learn.build-chat-bot-azure-cosmos-db-openai-blazor.introduction
 title: Introduction
 metadata:
-  title: introduction
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
-  ms.date: 4/10/2023
+  unitType: introduction
+  title: Introduction
+  description: |
+    Introduction to the guided project, the goals of the project, and the hypothetical scenario for the project.
   author: seesharprun
+  manager: jroth
   ms.author: sidandrews
   ms.reviewer: mjbrown
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
-durationInMinutes: 1
+  ms.prod: learning-azure
+  ms.date: 4/19/2023
+durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

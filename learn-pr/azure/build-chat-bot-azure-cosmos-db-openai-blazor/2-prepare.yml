@@ -2,14 +2,17 @@
 uid: learn.build-chat-bot-azure-cosmos-db-openai-blazor.prepare
 title: Prepare
 metadata:
+  unitType: learning-content
   title: Prepare
-  description: "Project overview and setup requirements."
-  ms.date: 4/10/2023
+  description: |
+    Review the project's environment and get started deploying the Azure Cosmos DB for NoSQL and Azure OpenAI resources.
   author: seesharprun
+  manager: jroth
   ms.author: sidandrews
   ms.reviewer: mjbrown
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
-durationInMinutes: 1
+  ms.prod: learning-azure
+  ms.date: 4/19/2023
+durationInMinutes: 12
 content: |
   [!include[](includes/2-prepare.md)]
