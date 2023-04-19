@@ -62,18 +62,16 @@ Connect an existing ASP.NET Core Blazor web application to Azure Cosmos DB for N
         - Get the Azure Cosmos DB for NoSQL endpoint and key
         - Get the Azure OpenAI endpoint and key
 1. Exercise: Setup and run the starter web application
-    - Open the environment using the `main` branch
+    - Open the environment using the `start` branch
       - Visual Studio Code development container
       - GitHub Codespaces
     - Use [CodeTour](https://github.com/microsoft/codetour) to walk through the project's highlights
       - Model classes
-      - Current service implementations
       - Options classes
       - Bicep template
         - Azure Cosmos DB resource
         - Azure OpenAI resource
         - Azure App Service resource
-    - Switch to the `start` branch
     - Build the project
     - Use `dotnet watch` to test the application with no connection
 1. Exercise: Connect to Azure Cosmos DB for NoSQL
