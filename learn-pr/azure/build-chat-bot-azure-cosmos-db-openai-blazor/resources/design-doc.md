@@ -30,10 +30,10 @@ Connect an existing ASP.NET Core Blazor web application to Azure Cosmos DB for N
 
 ## Learning objectives
 
-01. Connect to an Azure Cosmos DB for NoSQL account using the .NET SDK
-01. Create, update, query, and delete items in an API for NoSQL container
-01. Connect to an Azure OpenAI account using the .NET SDK
-01. Send prompts to a model deployment and parse the responses
+1. Connect to an Azure Cosmos DB for NoSQL account using the .NET SDK
+1. Create, update, query, and delete items in an API for NoSQL container
+1. Connect to an Azure OpenAI account using the .NET SDK
+1. Send prompts to a model deployment and parse the responses
 
 ## Subtasks
 
@@ -46,14 +46,14 @@ Connect an existing ASP.NET Core Blazor web application to Azure Cosmos DB for N
 
 ## Outline
 
-01. Introduction
+1. Introduction
     - Prose table-of-contents
         - This module walks through the steps to connect an existing ASP.NET Core Blazor WebAssembly application to an Azure Cosmos DB for NoSQL account and an Azure OpenAI account. Your application sends prompts to the ChatGPT model in Azure OpenAI and parses the responses. Your application also stores various conversation sessions and their corresponding messages as items colocated in a single container within Azure Cosmos DB for NoSQL.
     - Scenario
         - Your development team has built a chat bot interface with ASP.NET Core Blazor that can handle multiple conversations with message history for each conversation. With .NET best practices in mind, your team has stubbed out a basic implementation for a service to connect to Azure Cosmos DB and store conversation sessions and individual messages. Your team has also stubbed out an implementation of a service to connect to Azure OpenAI to send prompts, parse responses, and summarize conversations. You build an application that imports the .NET SDK for Azure Cosmos DB and Azure OpenAI and then implement these services using the SDKs.
     - Terminal learning objective (goal)
         - By the end of this module, you're able to author .NET classes that connect to Azure Cosmos DB for NoSQL or Azure OpenAI. The classes you author implement common operations using their respective SDKs. Finally, the classes you author are then used in an ASP.NET Core Blazor WebAssembly application.
-01. Prepare
+1. Prepare
     - Project overview
     - Setup
         - Use Azure Cloud Shell (50/50 split)
@@ -61,7 +61,7 @@ Connect an existing ASP.NET Core Blazor web application to Azure Cosmos DB for N
         - Observe the running sample application
         - Get the Azure Cosmos DB for NoSQL endpoint and key
         - Get the Azure OpenAI endpoint and key
-01. Exercise: Setup and run the starter web application
+1. Exercise: Setup and run the starter web application
     - Open the environment using the `main` branch
       - Visual Studio Code development container
       - GitHub Codespaces
@@ -76,7 +76,7 @@ Connect an existing ASP.NET Core Blazor web application to Azure Cosmos DB for N
     - Switch to the `start` branch
     - Build the project
     - Use `dotnet watch` to test the application with no connection
-01. Exercise: Connect to Azure Cosmos DB for NoSQL
+1. Exercise: Connect to Azure Cosmos DB for NoSQL
     - Import the [`Microsoft.Azure.Cosmos` (v3.32.3)](https://www.nuget.org/packages/Microsoft.Azure.Cosmos/3.32.3) package from NuGet
     - Add the Azure Cosmos DB for NoSQL endpoint and key to a new `appsettings.development.json` file
     - Configure custom serialization options to use [camel case](https://en.wikipedia.org/wiki/Camel_case)
