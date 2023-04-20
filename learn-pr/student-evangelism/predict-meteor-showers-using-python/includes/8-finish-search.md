@@ -27,13 +27,14 @@ Now add these two entries to the DataFrames. Go to the top of your Python notebo
 ```python
 change_meteor_shower = {'name':'Chang\'e','radiant':'Draco','bestmonth':'october','startmonth':'october','startday':1,'endmonth':'october','endday':31,'hemisphere':'northern','preferredhemisphere':'northern'}
 
-meteor_showers = meteor_showers.append(change_meteor_shower, ignore_index=True)
+meteor_showers = pd.concat([meteor_showers, pd.DataFrame(change_meteor_shower, index=[0])], ignore_index=True)
+
 ```
 
 ```python
 draco_constellation = {'constellation':'Draco','bestmonth':'july','latitudestart':90,'latitudeend':-15,'besttime':2100,'hemisphere':'northern'}
 
-constellations = constellations.append(draco_constellation, ignore_index=True)
+constellations = pd.concat([constellations, pd.DataFrame(draco_constellation, index=[0])], ignore_index=True)
 ```
 
 Your code should look like this:

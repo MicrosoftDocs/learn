@@ -26,7 +26,7 @@ If you haven't set up a Python environment before, the easiest way to do this is
 1. In the **Explore quick start templates** section, locate the **Jupyter Notebook** template and select **Use this template**. 
 
 >[!NOTE]
->If the Jupyter Notebook template isn't displayed on this page, select **See all** to list all available templates.
+>If the Jupyter Notebook template isn't displayed in the quick start templates, select **See all** to list all available templates.
 
 The Jupyter Notebook codespace launches and should look similar to the following screenshot:
 
