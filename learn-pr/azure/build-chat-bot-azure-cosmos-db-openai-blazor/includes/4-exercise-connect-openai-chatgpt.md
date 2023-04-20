@@ -150,6 +150,8 @@ Finally, we can implement the class variables required to use the Azure OpenAI c
     );
     ```
 
+1. Save the **Services/OpenAiService.cs** file.
+
 ## Check your work
 
 At this point, your constructor should include enough logic to create a client instance. Since the class doesn't do anything with the client yet, there's no point in running the web application, but there's value in building the application to make sure your code doesn't have any omissions or errors.
