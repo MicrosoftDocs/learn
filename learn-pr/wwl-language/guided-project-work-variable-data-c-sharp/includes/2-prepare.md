@@ -1,5 +1,6 @@
 
 
+
 Use Visual Studio Code to develop a version of a C# console application. The application comes with the basic features that create sample data on pets available for adoption and is able to display the pet's information. The main feature to add is searching available dogs using a single search term. The secondary tasks include adding and displaying `suggestedDonation` data.
 
 ## The design specification
@@ -29,7 +30,7 @@ Initial starter code development is complete.
 
     - the code declares variables used to collect and process pet data and menu item selections
     - the code declares the ourAnimals array
-    - the code uses a for loop around an if-elseif-else construct to populate the ourAnimals array with a sample dataset
+    - the code uses a for loop around an `if`-`else if`-`else` construct to populate the ourAnimals array with a sample dataset
     - the code displays the following main menu options for user selection:
 
         ```output

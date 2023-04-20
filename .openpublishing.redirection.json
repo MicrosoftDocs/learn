@@ -21524,6 +21524,56 @@
       "source_path": "learn-pr/wwl-data-ai/use-mlflow-to-track-experiments-azure-databricks/2-understand-capabilities-of-mlflow.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/mlflow-azure-databricks/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/introduction-data-platform-modernization/2-understand-data-platform-modernization.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-data-platform-modernization/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/introduction-data-platform-modernization/3-understand-stages-migration.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-data-platform-modernization/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/introduction-data-platform-modernization/4-data-migration-technologies.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-data-platform-modernization/4-explore-data-migration-resources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/introduction-data-platform-modernization/6-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-data-platform-modernization/7-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/host-security/9-windows-defender.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/host-security/10-windows-defender",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/host-security/11-secure-azure-workloads.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/host-security/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/host-security/10-security-center-recommendations.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/host-security/12-security-center-recommendations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/host-security/12-demonstration.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/host-security/13-demonstration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/host-security/13-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/host-security/14-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/host-security/14-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/host-security/15-summary",
+      "redirect_document_id": false
     }
   ]
 }
