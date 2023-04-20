@@ -1,3 +1,5 @@
+
+
 Proximity Placement Groups is an Azure Virtual Machine logical grouping capability that you can use to decrease the inter-VM network latency associated with your applications. When the VMs are deployed within the same proximity placement group, they are physically located as close as possible to each other. Proximity placement groups are useful to address the requirements of latency-sensitive workloads.
 
 ## Disaster recovery with Proximity Placement Groups

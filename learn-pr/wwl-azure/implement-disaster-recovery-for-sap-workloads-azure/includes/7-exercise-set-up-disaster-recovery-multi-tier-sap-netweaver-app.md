@@ -1,4 +1,6 @@
-You can use Azure Site Recovery to orchestrate the failover of full SAP deployment across Azure regions. This topic details the steps for replicating virtual machines for disaster recovery for a multi-tier SAP NetWeaver app deployment, and is part 1 of the setup for disaster recovery using Azure Site Recovery. When relying on Azure Site Recovery to implement disaster recovery for SAP deployments across Azure regions, you would use the following, full sequence of steps:
+
+
+You can use Azure Site Recovery to orchestrate the failover of full SAP deployment across Azure regions. This unit details the steps for replicating virtual machines for disaster recovery for a multi-tier SAP NetWeaver app deployment, and is part 1 of the setup for disaster recovery using Azure Site Recovery. When relying on Azure Site Recovery to implement disaster recovery for SAP deployments across Azure regions, you would use the following, full sequence of steps:
 
 1. Replicate virtual machines
 2. Design a recovery network
