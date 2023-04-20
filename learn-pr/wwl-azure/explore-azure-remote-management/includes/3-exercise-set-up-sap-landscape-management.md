@@ -1,3 +1,5 @@
+
+
 The Azure connector is shipped as of SAP LaMa 3.0 SP05. We recommend always installing the latest support package and patch for SAP LaMa 3.0. The Azure connector uses a Service Principal to authorize against Microsoft Azure.
 
 ## Create a Service Principal for SAP Landscape Management
