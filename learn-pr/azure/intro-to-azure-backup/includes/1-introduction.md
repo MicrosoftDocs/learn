@@ -1,6 +1,6 @@
 Information technology workers understand the importance of data to the organization. The need to protect that data drives decisions around storage, backups, and security. Many companies implement policies that dictate backup specifications for frequency, duration of storage for the backup, and restore policies.
 
-For on-premises scenarios, backup solutions might have included local redundant storage solutions or off-site storage. Scenarios using backup to tape drives and storing offsite come with the resulting delay in restoring the data because of the need to transport the tapes back to the server rooms, and form performing the restore operation. It can result in significant downtime.
+For on-premises scenarios, backup solutions might have included local redundant storage solutions or off-site storage. Scenarios using backup to tape drives and storing offsite come with the resulting delay in restoring the data because of the need to transport the tapes back to the server rooms, and from performing the restore operation. It can result in significant downtime.
 
 These backup solutions may not always address some of the most important considerations such as security of the backups, the potential for the company to be impacted by a ransomware attack, or human error in the backup and restore operations. An ideal solution would be cost-effective, simple to use, and secure. This is where Azure Backup comes in.
 
