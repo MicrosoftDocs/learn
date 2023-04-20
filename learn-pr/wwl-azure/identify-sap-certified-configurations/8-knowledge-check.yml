@@ -4,13 +4,11 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/18/2022
+  ms.date: 04/20/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/8-knowledge-check.md)]
@@ -22,12 +20,12 @@ quiz:
     - content: "Azure VMs"
       isCorrect: false
       explanation: "That’s incorrect. Providing an easy way to deploy and test pre-configured SAP solutions offered by SAP without having to deploy underlying infrastructure is not a primary benefit of Azure VMs."
-    - content: "SAP HANA on Azure (Large Instances)"
+    - content: "SAP S4/HANA"
       isCorrect: false
-      explanation: "That’s incorrect. Providing an easy way to deploy and test pre-configured SAP solutions offered by SAP without having to deploy underlying infrastructure is not a primary benefit of SAP HANA on Azure (Large Instances)."
+      explanation: "That’s incorrect. Providing an easy way to deploy and test pre-configured SAP solutions offered by SAP without having to deploy underlying infrastructure is not a primary benefit of SAP S4/HANA"
     - content: "SAP Cloud Appliance Library"
       isCorrect: true
-      explanation: "That’s correct. SAP Cloud Appliance Library allows you to deploy pre-configured software appliances on different public clouds, including Azure."
+      explanation: "That’s correct. SAP Cloud Appliance Library allows the deployment of pre-configured software appliances on different public clouds, including Azure."
   - content: "Which of the following is one of the SAP-certified operating systems supported for SAP products on Azure VMs?"
     choices:
     - content: "Microsoft Windows Server 2003 R2"
@@ -43,13 +41,13 @@ quiz:
     choices:
     - content: "SAP"
       isCorrect: true
-      explanation: "That’s correct. Both Microsoft and SAP have documentation on what is certified, but SAP should be the single source of truth for their solutions configurations, which consist of combinations of: SAP product; Operating system; RDBMS; and Azure offerings (Azure VM SKU, SAP HANA on Azure Large Instances)."
+      explanation: "That’s correct. Both Microsoft and SAP have documentation on what is certified, but SAP should be the single source of truth for their solutions configurations, which consist of combinations of: SAP product; Operating system; RDBMS; and Azure VM SKU."
     - content: "Microsoft"
       isCorrect: false
-      explanation: "That’s incorrect. Both Microsoft and SAP have documentation on what is certified, but SAP should be the single source of truth for their solutions configurations, which consist of combinations of: SAP product; Operating system; RDBMS; and Azure offerings (Azure VM SKU, SAP HANA on Azure Large Instances)."
+      explanation: "That’s incorrect. Both Microsoft and SAP have documentation on what is certified, but SAP should be the single source of truth for their solutions configurations, which consist of combinations of: SAP product; Operating system; RDBMS; and Azure VM SKU."
     - content: "Either SAP or Microsoft"
       isCorrect: false
-      explanation: "That’s incorrect. Both Microsoft and SAP have documentation on what is certified, but SAP should be the single source of truth for their solutions configurations, which consist of combinations of: SAP product; Operating system; RDBMS; and Azure offerings (Azure VM SKU, SAP HANA on Azure Large Instances)."
+      explanation: "That’s incorrect. Both Microsoft and SAP have documentation on what is certified, but SAP should be the single source of truth for their solutions configurations, which consist of combinations of: SAP product; Operating system; RDBMS; and Azure VM SKU."
   - content: "In SAP HANA Certified IaaS Platform, SAP uses the term 'clustering' to mean what?"
     choices:
     - content: "Scale-out only"
