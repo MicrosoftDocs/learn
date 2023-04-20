@@ -124,6 +124,21 @@ Finally, we can implement the class variables required to use the Azure OpenAI c
     > [!TIP]
     > When you run the application, this will throw an error right away if either of these settings don't have a valid value provided through the **appsettings.Development.json** file.
 
+1. Next, take the deployment name that is a parameter of the constructor and save it to the `_deploymentName` variable.
+
+    ```csharp
+    _deploymentName = deploymentName;
+    ```
+
+1. Now, let's look at the string constructor parameter that specifies the max number of tokens. This parameter needs to be parsed into an integer and saved in the `_maxTokens` variable. If it's not parsed successfully, default to a value of `3000`.
+
+    ```csharp
+    _maxTokens = Int32.TryParse(maxTokens, out _maxTokens) ? _maxTokens : 3000;
+    ```
+
+    > [!TIP]
+    > This block of code takes advantage of a ternary operator to return a value whether the max tokens count is parsed from configuration or not.
+
 1. Finally, create a new instance of the `OpenAIClient` class using the endpoint to build a `Uri` and the key to build an `AzureKeyCredential`.
 
     ```csharp
@@ -216,6 +231,9 @@ At this point, your constructor should include enough logic to create a client i
     ArgumentNullException.ThrowIfNullOrEmpty(maxTokens);
     ArgumentNullException.ThrowIfNullOrEmpty(endpoint);
     ArgumentNullException.ThrowIfNullOrEmpty(key);
+
+    _deploymentName = deploymentName;
+    _maxTokens = Int32.TryParse(maxTokens, out _maxTokens) ? _maxTokens : 3000;
 
     Uri uri = new(endpoint);
     AzureKeyCredential credential = new(key);
