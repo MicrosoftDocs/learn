@@ -44,10 +44,10 @@ quiz:
       explanation: "That’s correct. Azure Front Door provides a range of traffic-routing methods and backend health monitoring options to suit different application needs and automatic failover models."
     - content: "Azure Traffic Manager"
       isCorrect: false
-      explanation: "That’s incorrect. Azure Traffic Manager is not the service which enables users to define, manage, and monitor the global routing for their web traffic."
+      explanation: "That’s incorrect. Azure Traffic Manager isn't the service which enables users to define, manage, and monitor the global routing for their web traffic."
     - content: "Azure Firewall"
       isCorrect: false
-      explanation: "That’s incorrect. Azure Firewall is not the service which enables users to define, manage, and monitor the global routing for their web traffic."
+      explanation: "That’s incorrect. Azure Firewall isn't the service which enables users to define, manage, and monitor the global routing for their web traffic."
   - content: "Which of the following methods allows users to establish direct connectivity to an Azure virtual network from a physical computer or virtual machine not hosted in Azure?"
     choices:
     - content: "VNet peering"
@@ -58,7 +58,7 @@ quiz:
       explanation: "That’s incorrect. VNet-to-VNet is a method for establishing direct connectivity to another Azure virtual network."
     - content: "Azure ExpressRoute"
       isCorrect: true
-      explanation: "That’s correct. Azure ExpressRoute connects an Azure virtual network to an on-premises network via a private connection. It is also possible to establish connectivity using point-to-site VPN, site-to-site VPN, and Azure Virtual WAN. VNet peering and VNet-to-VNet are both methods for establishing direct connectivity to another Azure virtual network."
+      explanation: "That’s correct. Azure ExpressRoute connects an Azure virtual network to an on-premises network via a private connection. It's also possible to establish connectivity using point-to-site VPN, site-to-site VPN, and Azure Virtual WAN. VNet peering and VNet-to-VNet are both methods for establishing direct connectivity to another Azure virtual network."
   - content: "Which of the following Azure service offerings includes logging, alerting, and telemetry to help provide protection from Distributed Denial-of-Service network attacks?"
     choices:
     - content: "DDoS Protection Basic"
@@ -74,7 +74,7 @@ quiz:
     choices:
     - content: "Different layers of SAP applications are run in different deployment methods."
       isCorrect: false
-      explanation: "That’s incorrect. This deployment is not supported. The reason for this restriction is the requirement for a low latency high-performance network within one SAP system, especially between the application instances and the DBMS layer of an SAP system."
+      explanation: "That’s incorrect. This deployment isn't supported. The reason for this restriction is the requirement for a low latency high-performance network within one SAP system, especially between the application instances and the DBMS layer of an SAP system."
     - content: "Some components of an SAP layer are run in Azure, and other components are run on-premises."
       isCorrect: false
       explanation: "That’s incorrect. This deployment is not supported. The reason for this restriction is the requirement for a low latency high-performance network within one SAP system, especially between the application instances and the DBMS layer of an SAP system."
