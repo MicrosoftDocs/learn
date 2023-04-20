@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.explore-migration-options.analyze-strategies-migrating-sap-systems-microsoft-azure
+uid: learn.wwl.explore-migration-options.analyze-strategies-for-migrating-sap-systems-to-microsoft-azure
 title: Analyze strategies for migrating SAP systems to Microsoft Azure
 metadata:
   title: Analyze strategies for migrating SAP systems to Microsoft Azure
   description: "Analyze strategies for migrating SAP systems to Microsoft Azure"
-  ms.date: 04/18/2023
+  ms.date: 04/20/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial

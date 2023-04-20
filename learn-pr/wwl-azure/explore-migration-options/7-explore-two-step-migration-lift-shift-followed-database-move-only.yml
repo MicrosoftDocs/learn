@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.explore-migration-options.explore-two-step-migration-lift-shift-followed-database-move-only
+uid: learn.wwl.explore-migration-options.explore-two-step-migration-lift-shift-followed-by-dmo
 title: Explore two-step migration - lift and shift followed by DMO
 metadata:
   title: Explore two-step migration - lift and shift followed by DMO
   description: "Explore two-step migration - lift and shift followed by DMO"
-  ms.date: 04/18/2023
+  ms.date: 04/20/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial

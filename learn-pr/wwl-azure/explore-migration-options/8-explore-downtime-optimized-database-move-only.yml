@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.explore-migration-options.explore-downtime-optimized-database-move-only
+uid: learn.wwl.explore-migration-options.explore-downtime-optimized-dmo
 title: Explore downtime-optimized DMO
 metadata:
   title: Explore downtime-optimized DMO
   description: "Explore downtime-optimized DMO"
-  ms.date: 04/18/2023
+  ms.date: 04/20/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
