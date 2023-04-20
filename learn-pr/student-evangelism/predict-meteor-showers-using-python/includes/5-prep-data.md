@@ -264,7 +264,7 @@ Some of the data from these `.csv` files isn't useful. You can delete the follow
 | Data frame | Columns to remove | Reason |
 |-----------|-------------------|--------|
 | `meteor_showers` | `startmonth`, `startday`, `endmonth`, `endday`, `hemisphere` | The month and day information is captured in the `startdate` and `enddate` columns. The `preferredhemisphere` column is the optimal value. |
-| `moon_phases` | `month`, `day`, `moonphase`, `specialevent` | Month and day are captured by date. The Moon phase is captured by percentage. The `specialevent` column isn't relevant. |
+| `moon_phases` | `month`, `day`, `moonphase`, `specialevent` | The `date` column already contains `month` and `day`. The `percentage` column covers the `moonphase`. The `specialevent` column isn't relevant. |
 | `constellations` | `besttime` | Every row is 21:00. |
 
 Here's how to remove those columns:
@@ -297,12 +297,11 @@ You see that the cycle of the Moon phases goes from 0 to 0.5 to 1 to 0.5 and the
 
 You could get more detailed by figuring out a more accurate percentage on your own:
 
-1. Import the math Python library.
-2. Create a variable to save the last phase that you saw.
-3. Loop through each row and column in the `moon_phases` DataFrame.
-4. If the value in the `percentage` column of a row is `NaN` (null), then replace it with the last phase that you saw.
-5. If the value isn't `NaN`, then save the value as the last phase that you saw.
-6. Show the info for the `moon_phases` DataFrame:
+1. Create a variable to save the last phase that you saw.
+2. Loop through each row and column in the `moon_phases` DataFrame.
+3. If the value in the `percentage` column of a row is `NaN` (null), then replace it with the last phase that you saw.
+4. If the value isn't `NaN`, then save the value as the last phase that you saw.
+5. Show the info for the `moon_phases` DataFrame:
 
     ```python
     lastPhase = 0
