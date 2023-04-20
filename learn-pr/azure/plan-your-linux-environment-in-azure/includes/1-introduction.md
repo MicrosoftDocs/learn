@@ -6,7 +6,7 @@ Suppose you work as an information technology (IT) system engineer for a financi
 
 ## What will we be doing?
 
-In this module, you'll review the process for planning a deployment of Azure VMs running Linux. This process involves choosing the VM sizes most suitable for their intended workloads and identifying corresponding networking dependencies. You’ll also review the storage options and optimization techniques that will help you maximize the benefits of the planned deployment. 
+In this module, you'll review the process for planning a deployment of Azure VMs running Linux. This process involves choosing the VM sizes most suitable for their intended workloads and identifying corresponding networking dependencies. You'll also review the storage options and optimization techniques that will help you maximize the benefits of the planned deployment. 
 
 ## What is the main goal?
 

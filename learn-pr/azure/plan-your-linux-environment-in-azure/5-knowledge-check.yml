@@ -21,15 +21,15 @@ quiz:
       explanation: "Correct: Azure Bastion supports SSH connectivity to Azure VMs running Linux directly from the Azure portal over the HTTPS protocol."
     - content: "JIT VM access"
       isCorrect: false
-      explanation: "Incorrect: JIT VM access supports SSH connectivity by dynamically modifying an NSG protecting the target Azure VM, but the connection is not established by using the HTTPS protocol."
+      explanation: "Incorrect: JIT VM access supports SSH connectivity by dynamically modifying an NSG protecting the target Azure VM, but the connection isn't established by using the HTTPS protocol."
     - content: "The VMaccess extension"
       isCorrect: false
-      explanation: "Incorrect: The VMaccess extension enables you to modify credentials used to access an Azure VM running Linux. However, you cannot connect to it using the HTTPS protocol."
+      explanation: "Incorrect: The VMaccess extension enables you to modify credentials used to access an Azure VM running Linux. However, you can't connect to it using the HTTPS protocol."
   - content: "Which Azure resource must be provisioned first before you can deploy an Azure VM running Linux?"
     choices:
     - content: "A storage account"
       isCorrect: false
-      explanation: "Incorrect: The ability to deploy an Azure VM does not rely on having an existing storage account."
+      explanation: "Incorrect: The ability to deploy an Azure VM doesn't rely on having an existing storage account."
     - content: "A virtual network"
       isCorrect: true
       explanation: "Correct: A virtual network must exist before you can deploy an Azure VM."
@@ -40,16 +40,16 @@ quiz:
     choices:
     - content: "The number of network interfaces"
       isCorrect: false
-      explanation: "Incorrect: The number of network interfaces does not affect the maximum available bandwidth of an Azure VM."
+      explanation: "Incorrect: The number of network interfaces doesn't affect the maximum available bandwidth of an Azure VM."
     - content: "Size"
       isCorrect: true
       explanation: "Correct: The Azure VM size is the sole factor that determines its maximum available bandwidth."
     - content: "VM Generation"
       isCorrect: false
-      explanation: "Incorrect: VM Generation does not affect the maximum available bandwidth of an Azure VM."
+      explanation: "Incorrect: VM Generation doesn't affect the maximum available bandwidth of an Azure VM."
   - content: "Which feature of an Azure VM must be implemented to provide access to its OS by using the Azure VM serial console?"
     choices:
-    - content: "JIT VM Acccess"
+    - content: "JIT VM Access"
       isCorrect: false
       explanation: "Incorrect: JIT VM Access provides SSH connectivity, rather than connectivity by using the serial console."
     - content: "Azure Bastion"
@@ -65,7 +65,7 @@ quiz:
       explanation: "Incorrect: dev/sda designates the OS disk of an Azure VM running Linux."
     - content: "`dev/hda`"
       isCorrect: false
-      explanation: "Incorrect: dev/hda is not available on Azure VMs running Linux."
+      explanation: "Incorrect: dev/hda isn't available on Azure VMs running Linux."
     - content: "`dev/sdb`"
       isCorrect: true
       explanation: "Correct: dev/sdb designates the temporary disk of an Azure VM running Linux."
