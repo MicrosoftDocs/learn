@@ -1,4 +1,4 @@
-Estimated time: 150 minutes
+
 
 All tasks in this lab are performed from the Azure portal (including a PowerShell Cloud Shell session).
 
