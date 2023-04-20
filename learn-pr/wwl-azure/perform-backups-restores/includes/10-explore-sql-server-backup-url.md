@@ -1,10 +1,12 @@
+
+
 Creating a Windows Azure Storage account within your Azure subscription is the first step in this process. As explained earlier, SQL Server can either use the Windows Azure storage account name and its access key value to authenticate and write and read blobs to the Microsoft Azure Blob storage service or use a Shared Access Signature token granting read and write permissions to individual containers. The SQL Server Credential stores this authentication information and uses it during the backup or restore operations.
 
 To implement SQL Server Backup to URL, you can use the following methods:
 
- -  **Back Up Task in SQL Server Management Studio**: You can back up a database to URL through the Back Up task in SQL Server Management Studio using a SQL Server Credential.
- -  **SQL Server Backup to URL Using Maintenance Plan Wizard**: The Maintenance Plan Wizard in SQL Server Management Studio includes URL as one of the destination options, and other supporting objects required to back up to Windows Azure storage like the SQL Credential.
- -  **Transact-SQL, PowerShell, or C\#**: These options must be used to create a striped backup set, a SQL Server file-snapshot backup, or a SQL credential using Shared Access token.
+- **Back Up Task in SQL Server Management Studio**: You can back up a database to URL through the Back Up task in SQL Server Management Studio using a SQL Server Credential.
+- **SQL Server Backup to URL Using Maintenance Plan Wizard**: The Maintenance Plan Wizard in SQL Server Management Studio includes URL as one of the destination options, and other supporting objects required to back up to Windows Azure storage like the SQL Credential.
+- **Transact-SQL, PowerShell, or C\#**: These options must be used to create a striped backup set, a SQL Server file-snapshot backup, or a SQL credential using Shared Access token.
 
 ## SQL Server Automated Backup v2 for Azure VMs
 
@@ -14,9 +16,9 @@ Automated Backup v2 works with SQL Server 2016 or higher. If you are using SQL S
 
 ### Database configuration
 
- -  Target databases must use the full recovery model. For more information about the impact of the full recovery model on backups, see Backup Under the Full Recovery Model.
- -  System databases do not have to use full recovery model. However, if you require log backups to be taken for Model or MSDB, you must use the full recovery model.
- -  Target databases must be on either the default SQL Server instance, or a named instance installed by following the procedure described in [Frequently asked questions for SQL Server on Azure VMs](/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-iaas-faq).
+- Target databases must use the full recovery model. For more information about the impact of the full recovery model on backups, see Backup Under the Full Recovery Model.
+- System databases do not have to use full recovery model. However, if you require log backups to be taken for Model or MSDB, you must use the full recovery model.
+- Target databases must be on either the default SQL Server instance, or a named instance installed by following the procedure described in [Frequently asked questions for SQL Server on Azure VMs](/azure/azure-sql/virtual-machines/windows/frequently-asked-questions-faq?view=azuresql).
 
 You can use the Azure portal or Az PowerShell to configure Automated Backup v2 during provisioning or for existing SQL Server 2016/2017 VMs.
 
@@ -26,9 +28,9 @@ SQL Server Backup in Azure VMs can be configured in the Azure portal or PowerShe
 
 When you run discovery on a SQL Server, Azure Backup does the following:
 
- -  Adds the AzureBackupWindowsWorkload extension.
- -  Creates an NT SERVICE\\AzureWLBackupPluginSvc account to discover databases on the virtual machine. This account is used for a backup and restore and requires SQL sysadmin permissions.
- -  Discovers databases that are running on a VM, Azure Backup uses the NT AUTHORITY\\SYSTEM account. This account must be a public sign-in on SQL.
+- Adds the AzureBackupWindowsWorkload extension.
+- Creates an NT SERVICE\\AzureWLBackupPluginSvc account to discover databases on the virtual machine. This account is used for a backup and restore and requires SQL sysadmin permissions.
+- Discovers databases that are running on a VM, Azure Backup uses the NT AUTHORITY\\SYSTEM account. This account must be a public sign-in on SQL.
 
 If you didn't create the SQL Server VM by using an Azure Marketplace image, you need to assign to the NT SERVICE\\AzureWLBackupPluginSvc account the sysadmin role.
 
@@ -42,8 +44,8 @@ Regardless of the choice of the implementation method, the process involves sett
 
 ## File-backup set maintenance
 
- -  **Deleting a file-snapshot backup set**: You cannot overwrite a file-snapshot backup set using the FORMAT argument. The FORMAT argument is not permitted to avoid leaving orphaned file-snapshots that were created with the original file-snapshot backup. To delete a file-snapshot backup set, use the sys.sp\_delete\_backup system stored procedure. This stored procedure deletes the backup file and the file-snapshots that comprise the backup set. Using another method to delete a file-snapshot backup set may delete the backup file without deleting the file-snapshots in the backup set.
- -  **Deleting orphaned backup file-snapshot**s: You may have orphaned file-snapshots if the backup file was deleted without using the sys.sp\_delete\_backup system stored procedure or if a database or database file was dropped while the blob(s) containing the database or database file had backup file-snapshots associated with them. To identify file-snapshots that may be orphaned, use the sys.fn\_db\_backup\_file\_snapshots system function to list all file-snapshots of the database files. To identify the file-snapshots that are part of a specific file-snapshot backup set, use the RESTORE FILELISTONLY system stored procedure. You can then use the sys.sp\_delete\_backup\_file\_snapshot system stored procedure to delete an individual backup file-snapshot that was orphaned. You can find examples using this system function and these system stored procedures at the bottom of this page.
+- **Deleting a file-snapshot backup set**: You cannot overwrite a file-snapshot backup set using the FORMAT argument. The FORMAT argument is not permitted to avoid leaving orphaned file-snapshots that were created with the original file-snapshot backup. To delete a file-snapshot backup set, use the sys.sp\_delete\_backup system stored procedure. This stored procedure deletes the backup file and the file-snapshots that comprise the backup set. Using another method to delete a file-snapshot backup set may delete the backup file without deleting the file-snapshots in the backup set.
+- **Deleting orphaned backup file-snapshot**s: You may have orphaned file-snapshots if the backup file was deleted without using the sys.sp\_delete\_backup system stored procedure or if a database or database file was dropped while the blob(s) containing the database or database file had backup file-snapshots associated with them. To identify file-snapshots that may be orphaned, use the sys.fn\_db\_backup\_file\_snapshots system function to list all file-snapshots of the database files. To identify the file-snapshots that are part of a specific file-snapshot backup set, use the RESTORE FILELISTONLY system stored procedure. You can then use the sys.sp\_delete\_backup\_file\_snapshot system stored procedure to delete an individual backup file-snapshot that was orphaned. You can find examples using this system function and these system stored procedures at the bottom of this page.
 
 ## Restore using file-snapshot backups
 
@@ -63,7 +65,6 @@ BACKUP DATABASE AdventureWorks2016
 TO URL = 'https://[mystorageaccountname].blob.core.windows.net/[mycontainername]/AdventureWorks2016.bak'
 
 WITH FILE_SNAPSHOT ;
-
 ```
 
 ### Restore from a SQL Server file-snapshot backup
@@ -74,7 +75,6 @@ The following example restores the AdventureWorks2016 database using a transacti
 RESTORE DATABASE AdventureWorks2016 FROM URL = 'https://[mystorageaccountname].blob.core.windows.net/[mycontainername]/AdventureWorks2016_2015_05_18_16_00_00.trn'
 
 WITH RECOVERY, REPLACE ;
-
 ```
 
 ### Restore from a SQL Server file-snapshot backup to a point in time
@@ -89,7 +89,6 @@ WITH NORECOVERY,REPLACE ;
 RESTORE LOG AdventureWorks2016 FROM URL = 'https://[mystorageaccountname].blob.core.windows.net/[mycontainername]/AdventureWorks2016_2015_05_18_18_00_00.trn'
 
 WITH RECOVERY,STOPAT = 'May 18, 2015 5:35 PM' ;
-
 ```
 
 ### Delete a database file-snapshot backup set
@@ -102,7 +101,6 @@ The following example deletes the specified file-snapshot backup set, including 
 
 ```bash
 sys.sp_delete_backup 'https://[mystorageaccountname].blob.core.windows.net/[mycontainername]/AdventureWorks2016.bak', 'adventureworks2016' ;
-
 ```
 
 ### View database backup file-snapshots
@@ -119,7 +117,6 @@ select * from sys.fn_db_backup_file_snapshots (null) ;
 GO
 
 select * from sys.fn_db_backup_file_snapshots ('AdventureWorks2016') ;
-
 ```
 
 ### Delete an individual database backup file-snapshot
@@ -133,5 +130,4 @@ The following example deletes the specified backup file-snapshot. The URL for th
 
 ```bash
 sys.sp_delete_backup_file_snapshot N'adventureworks2016', N'https://[mystorageaccountname].blob.core.windows.net/[mycontainername]/AdventureWorks2016Data.mdf?snapshot=2015-05-29T21:31:31.6502195Z' ;
-
 ```
