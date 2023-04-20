@@ -4,13 +4,11 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/06/2022
+  ms.date: 04/20/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/11-knowledge-check.md)]
@@ -36,7 +34,7 @@ quiz:
     - content: "No"
       isCorrect: true
       explanation: "That's correct. A resource group is a logical container that simplifies managing multiple resources. Every resource exists in one, and only one, resource group."
-    - content: "Yes, but you can't delete the resource from one resource group without also deleting it from the others"
+    - content: "Yes, but it's not possible to delete the resource from one resource group without also deleting it from the others"
       isCorrect: false
       explanation: "That’s incorrect. A resource group is a logical container that simplifies managing multiple resources. Every resource exists in one, and only one, resource group."
   - content: "Which of the following elements in the Azure Resource Manager template scheme is a required element?"
