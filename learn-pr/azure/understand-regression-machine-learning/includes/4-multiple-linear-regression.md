@@ -15,7 +15,7 @@ If we're only working with two features, we can visualize our model as a planeâ€
 
 The fact that the model expects features to be *independent* is called a model assumption. When model assumptions aren't true, the model can make misleading predictions.
 
-For example, age probably predicts how sick dogs become, as older dogs get more sick, along with whether dogs have been taught how to play frisbee; older dogs probably all know how to play frisbee. If we included *age* and *knows_frisbee* to our model as features, it would likely tell us knows_frisbee is a good predictor of an illness and underestimate the importance of age. This is a tad absurd, because knowing frisbee isn't likely to cause disease. By contrast, *dog_breed* might also be a good predictor of illness, but there's no reason to believe age predicts dog_breed, so it would be safe to include both in a model.
+For example, age probably predicts how sick dogs become, as older dogs get more sick, along with whether dogs have been taught how to play frisbee; older dogs probably all know how to play frisbee. If we included *age* and *knows_frisbee* to our model as features, it would likely tell us knows_frisbee is a good predictor of an illness and underestimate the importance of age. This is a bit absurd, because knowing frisbee isn't likely to cause disease. By contrast, *dog_breed* might also be a good predictor of illness, but there's no reason to believe age predicts dog_breed, so it would be safe to include both in a model.
 
 ## Goodness of fit: R<sup>2</sup>
 
