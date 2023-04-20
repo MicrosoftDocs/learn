@@ -1,3 +1,5 @@
+
+
 This section covers the following topics:
 
 - OS updates
@@ -115,7 +117,7 @@ To make the SAP HANA kernel settings permanent, use grub2 on SLES 12. Another op
 
 The following screenshot shows two file systems that were created on the SAP app server VM on top of the two attached Azure standard storage disks. Both file systems are of the type XFS and are mounted to /sapdata and /sapsoftware.
 
-:::image type="content" source="../media/two-file-systems-sap-app-server-728cdf09.png" alt-text="Two file systems that were created on the S A P app server virtual machine on top of the two attached Azure standard storage disks.":::
+:::image type="content" source="../media/two-file-systems-sap-app-server-728cdf09.png" alt-text="Diagram illustrating two file systems that were created on the S A P app server virtual machine on top of the two attached Azure standard storage disks.":::
 
 It isn't mandatory to structure your file systems this way. You have other options for how to structure the disk space. The most important consideration is to prevent the root file system from running out of free space.
 

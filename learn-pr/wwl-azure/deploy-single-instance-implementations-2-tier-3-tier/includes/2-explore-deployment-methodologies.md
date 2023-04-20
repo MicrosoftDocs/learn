@@ -1,3 +1,5 @@
+
+
 ## Deployment via the Azure portal
 
 The Azure portal offers an intuitive interface for performing most common administrative tasks. Its primary advantage is simplicity, although its usage precludes to large extent the use of automation.

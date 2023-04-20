@@ -1,3 +1,5 @@
+
+
 To install a scale-out SAP HANA, you need to perform the following high-level steps:
 
 1. Create new or use an existing Azure VNet.
