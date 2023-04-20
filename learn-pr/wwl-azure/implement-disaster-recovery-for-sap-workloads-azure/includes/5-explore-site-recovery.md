@@ -10,7 +10,7 @@ Oracle Data Guard is supported for disaster recovery purposes. To achieve automa
 
 ## Azure Site Recovery
 
-Azure Site Recovery Services is a comprehensive Disaster Recovery suite that orchestrates Disaster Recovery (DR) failover and failback of on-premise resources. Azure Site Recovery can orchestrate Enterprise-2-Enterprise (E2E) scenarios and Enterprise-2-Cloud (E2C) scenarios. Site Recovery exceeds the capabilities of most on-premises disaster recovery solutions, and at a lower total cost of ownership (TCO) than competing solutions.
+Azure Site Recovery Services is a comprehensive Disaster Recovery suite that orchestrates Disaster Recovery (DR) failover and failback of on-premises resources. Azure Site Recovery can orchestrate Enterprise-2-Enterprise (E2E) scenarios and Enterprise-2-Cloud (E2C) scenarios. Site Recovery exceeds the capabilities of most on-premises disaster recovery solutions, and at a lower total cost of ownership (TCO) than competing solutions.
 
 You can use Site Recovery to implement a disaster recovery solution in the following scenarios:
 

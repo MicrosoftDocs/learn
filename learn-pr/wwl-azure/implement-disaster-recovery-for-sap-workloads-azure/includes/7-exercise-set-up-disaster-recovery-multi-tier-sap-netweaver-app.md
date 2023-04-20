@@ -307,8 +307,8 @@ If the source VM has Azure disk encryption (ADE) enabled, review the settings.
 
 1. Verify the settings:
 
-     - **Disk encryption key vaults**: By default, Site Recovery creates a new key vault on the source VM disk encryption keys, with an "asr" suffix. If the key vault already exists, it is reused.
-     - **Key encryption key vaults**: By default, Site Recovery creates a new key vault in the target region. The name has an "asr" suffix and is based on the source VM encryption keys. If the key vault created by Site Recovery already exists, it's reused.
+     - **Disk encryption key vaults**: By default, Site Recovery creates a new key vault on the source VM disk encryption keys, with an `asr` suffix. If the key vault already exists, it is reused.
+     - **Key encryption key vaults**: By default, Site Recovery creates a new key vault in the target region. The name has an `asr` suffix and is based on the source VM encryption keys. If the key vault created by Site Recovery already exists, it's reused.
 2. Select **Customize** to select custom key vaults.
 
 > [!NOTE]
