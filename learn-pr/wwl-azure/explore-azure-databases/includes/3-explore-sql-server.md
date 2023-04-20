@@ -1,3 +1,5 @@
+
+
 For SQL Server deployments, with all SAP certified VM types (see [SAP Note \#1928533](https://launchpad.support.sap.com/#/notes/1928533)), except A-Series VMs, tempdb data, and log files can be placed on the non-persisted D:\\ drive. It is recommended to use multiple tempdb data files. These configurations enable tempdb to consume more space than the system drive can provide. The non-persistent D:\\ drive also offers better I/O latency and throughput (except for A-Series VMs). To determine the proper tempdb size, you can check the tempdb sizes on existing systems.
 
 Note, if you place tempdb data files and log files into a folder on D:\\ drive that you created, you need to make sure that the folder does exist after a VM restart. Since the D:\\ drive is freshly initialized after a VM restart all file and directory structures are deleted.
