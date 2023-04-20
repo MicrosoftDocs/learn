@@ -1,10 +1,10 @@
 
 
 
-In this phase, you are starting to deploy non-production SAP systems into Azure following a successful pilot, leveraging all the testing and validation tasks. All the criteria and steps applicable to the pilot do apply in this phase as well. The non-production environment typically includes development, unit tests, and business regression tests systems. It is recommended that at least one of them implements high availability configuration that will be used for the future production system. Additional steps you need to consider during that phase include:
+In this phase, you're starting to deploy non-production SAP systems into Azure following a successful pilot, leveraging all the testing and validation tasks. All the criteria and steps applicable to the pilot do apply in this phase as well. The non-production environment typically includes development, unit tests, and business regression tests systems. It's recommended that at least one of them implements high availability configuration that will be used for the future production system. Additional steps you need to consider during that phase include:
 
 1. Before moving systems from the old platform into Azure, collect resource consumption data, such as CPU usage, storage throughput, and IOPS data. This is particularly important regarding the DBMS layer units but is also very helpful in the case of the application layer units. In addition, you should measure network and storage latency.
-2. Record the availability requirements of the systems you are deploying. The goal is to determine whether non-production systems need to be available 24x7 or whether there are non-production systems that can be temporarily shut down.
+2. Record the availability requirements of the systems you're deploying. The goal is to determine whether non-production systems need to be available 24x7 or whether there are non-production systems that can be temporarily shut down.
 3. Determine whether you want to build your own OS images for Azure VMs or whether you want to use Azure Marketplace images. Depending on your choice, make sure to account for the licensing implications. If you decide to create your own OS images, refer to the following documentation:
 
      - For Windows OS, [Create a managed image of a generalized VM in Azure](/azure/virtual-machines/windows/capture-image-resource).
