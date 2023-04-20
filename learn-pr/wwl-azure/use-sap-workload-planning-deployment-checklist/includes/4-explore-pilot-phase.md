@@ -1,6 +1,6 @@
 
 
-The pilot can run in parallel to project planning and preparation. This phase can also be used to test options identified in the planning and preparation phase. As part of the pilot, it is recommended to set up and validate a full HA/DR solution as well as security design. In some cases, it might be also possible to use this phase to perform scalability tests or deploy SAP sandbox systems. To run a pilot, customers should start by identifying a non-critical system that they want to migrate into Azure and continue by carrying out the following tasks:
+The pilot can run in parallel to project planning and preparation. This phase can also be used to test options identified in the planning and preparation phase. As part of the pilot, it's recommended to set up and validate a full HA/DR solution as well as security design. In some cases, it might be also possible to use this phase to perform scalability tests or deploy SAP sandbox systems. To run a pilot, customers should start by identifying a non-critical system that they want to migrate into Azure and continue by carrying out the following tasks:
 
 ## 1. Optimize data transfer into Azure
 
@@ -20,7 +20,7 @@ In case of an SAP heterogeneous platform migration that involves an export and i
 
 - Reference SAP support notes, SAP HANA hardware directory, and SAP Product Availability Matrix (PAM) to ensure accuracy of the information regarding supported Azure VM SKUs, supported OS releases for these Azure VM SKUs, and supported SAP and DBMS releases.
 - Validate sizing of the infrastructure and the application components that you deploy in Azure. When migrating existing applications, you should be able to obtain the necessary SAPS based on existing telemetry. Retrieve the SAP benchmark and compare it to the SAPS numbers listed in [SAP Note \#1928533](https://launchpad.support.sap.com/#/notes/1928533). In addition, reference the information provided in [SAPS ratings on Azure VMs – where to look and where you can get confused](https://techcommunity.microsoft.com/t5/Running-SAP-Applications-on-the/SAPS-ratings-on-Azure-VMs-8211-where-to-look-and-where-you-can/ba-p/368208).
-- Evaluate and test the sizing of your Azure VMs regarding maximum storage throughput and network throughput of the different VM types you chose in the planning phase. This data can be found in [Sizes for virtual machines in Azure](/azure/virtual-machines/sizes). When the Azure VM guest operating system is Windows, it is important to consider the max uncached disk throughput for sizing. In the case of Linux, it is also important to consider the max uncached disk throughput for sizing.
+- Evaluate and test the sizing of your Azure VMs regarding maximum storage throughput and network throughput of the different VM types you chose in the planning phase. This data can be found in [Sizes for virtual machines in Azure](/azure/virtual-machines/sizes). When the Azure VM guest operating system is Windows, it's important to consider the max uncached disk throughput for sizing. In the case of Linux, it's also important to consider the max uncached disk throughput for sizing.
 
 ### Storage
 
@@ -45,7 +45,7 @@ Test and evaluate your virtual network infrastructure and the distribution of yo
 
      - Placing Network Virtual Appliances in the communication path between the SAP application and the DBMS layer of an SAP NetWeaver, Hybris, or S/4HANA based SAP systems is not supported.
      - Placing SAP application layer and SAP DBMS in different Azure virtual networks that are not peered is not supported.
-     - It is supported to use Azure Application Security Groups (ASGs) and Network Security Groups (NSGs) to control traffic flow between the SAP application layer and SAP DBMS layer.
+     - It's supported to use Azure Application Security Groups (ASGs) and Network Security Groups (NSGs) to control traffic flow between the SAP application layer and SAP DBMS layer.
 3. Make sure that Azure Accelerated Networking is enabled on the VMs used on the SAP application layer and the SAP DBMS layer. Keep in mind the OS requirements for support of Accelerated Networking in Azure:
 
      - Windows Server 2012 R2 or newer releases
@@ -96,7 +96,7 @@ Test and evaluate your virtual network infrastructure and the distribution of yo
 - Verify that NSG rules are working as expected and shield the protected resources.
 - Verify encryption at rest and in transit. Define and implement processes to back up, store, and access certificates as well as validate the restore process of encrypted entities.
 - Use Azure Disk Encryption for OS disks.
-- Consider a pragmatic approach when deciding whether to implement an encryption mechanism. For example, evaluate whether it is necessary to apply both Azure Disk encryption and the DBMS Transparent Database Encryption.
+- Consider a pragmatic approach when deciding whether to implement an encryption mechanism. For example, evaluate whether it's necessary to apply both Azure Disk encryption and the DBMS Transparent Database Encryption.
 
 ## 5. Test performance
 
