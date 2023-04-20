@@ -1,3 +1,5 @@
+
+
 The pilot can run in parallel to project planning and preparation. This phase can also be used to test options identified in the planning and preparation phase. As part of the pilot, it is recommended to set up and validate a full HA/DR solution as well as security design. In some cases, it might be also possible to use this phase to perform scalability tests or deploy SAP sandbox systems. To run a pilot, customers should start by identifying a non-critical system that they want to migrate into Azure and continue by carrying out the following tasks:
 
 ## 1. Optimize data transfer into Azure
@@ -25,7 +27,7 @@ In case of an SAP heterogeneous platform migration that involves an export and i
 - Use Azure Standard SSD storage as the minimum for VMs representing SAP application layers and for non-performance sensitive DBMS deployment and use Azure Premium Storage for any DBMS VMs that are performance sensitive.
 - Avoid using Azure Standard HDD disks.
 - Use Azure managed disks.
-- Enable Azure Write Accelerator for DBMS log drives with M-Series Azure VMs. Be aware of documented Write accelerator limits and usage restrictions.
+- Enable Azure Write Accelerator for DBMS log drives with M-Series Azure VMs. Be aware of documented Write Accelerator limits and usage restrictions.
 - For DBMS-related storage information, refer to [Considerations for Azure Virtual Machines DBMS deployment for SAP workload](/azure/virtual-machines/workloads/sap/dbms_guide_general) as well as DBMS specific documentation referenced in that document.
 - For SAP HANA deployments, refer to [SAP HANA infrastructure configurations and operations on Azure](/azure/virtual-machines/workloads/sap/hana-vm-operations).
 - Never mount Azure data disks to an Azure Linux VM by using the device ID. Instead, use the universally unique identifier (UUID). Be careful when you use graphical tools to mount an Azure data disk. Double-check the entries in /etc/fstab to make sure that the disks are mounted using the UUID. For more information, refer to [Connect to the Linux VM to mount the new disk](/azure/virtual-machines/linux/attach-disk-portal).
@@ -50,7 +52,7 @@ Test and evaluate your virtual network infrastructure and the distribution of yo
      - SUSE Linux 12 SP3 or newer releases
      - RHEL 7.4 or newer releases
      - Oracle Linux 7.5. The RHCKL kernel requires the release 3.10.0-862.13.1.el7. The Oracle UEK kernel requires release 5.
-4. Test and evaluate the network latency between SAP application layer VM and DBMS VM according to [SAP Note \#500235](https://launchpad.support.sap.com) and [SAP Note \#1100926](https://launchpad.support.sap.com). Evaluate the results against network latency guidance of [SAP Note \#1100926](https://launchpad.support.sap.com). The network latency should be within the moderate to good range. Exceptions apply to traffic between VMs and HANA Large Instance units as documented in [SAP HANA (Large Instances) network architecture](/azure/virtual-machines/workloads/sap/hana-network-architecture).
+4. Test and evaluate the network latency between SAP application layer VM and DBMS VM according to [SAP Note \#500235](https://launchpad.support.sap.com/#/notes/500235) and [SAP Note \#1100926](https://launchpad.support.sap.com/#/notes/1100926). Evaluate the results against network latency guidance of [SAP Note \#1100926](https://launchpad.support.sap.com/#/notes/1100926). The network latency should be within the moderate to good range.
 5. Make sure that Azure internal load balancer (ILB) deployments are set up to use Direct Server Return. This setting will reduce latency in cases where ILBs are used for high availability configurations on the DBMS layer.
 6. If you are using Azure load balancer in conjunction with Linux guest operating systems check that the Linux network parameter **net.ipv4.tcp\_timestamps** is set to 0. Note that this contradicts the general recommendations of [SAP Note \#2382421](https://launchpad.support.sap.com/#/notes/2382421). The SAP Note has been updated to reflect the fact that the parameter needs to be set to 0 to work in conjunction with Azure load balancers.
 
