@@ -2,20 +2,23 @@ Recall that in the data science project life cycle, after you have the data for 
 
 ## Exercise: Import data
 
-First, import the .csv files into your Python notebook. Import NumPy and pandas:
+First, import NumPy and pandas:
 
 ```python
 import numpy as np 
 import pandas as pd 
 ```
 
-Make sure you run the cell to ensure you have your environment set up. Your Visual Studio Code notebook should look like this:
+Make sure you run the cell to ensure you have your environment set up. Your notebook should look like this:
 
 :::image type="content" source="../media/import-pandas-numpy.png" alt-text="Screenshot that shows importing pandas and NumPy code in Visual Studio Code.":::
 
-Notice the `[1]` in the upper-left corner of the cell where you have your imported code. That number means that the cell has finished running. There's no output between the first and second cell, so you know the code was successful. 
+Notice the `[1]` in the corner of the cell where you have your imported code. That number means that the cell has finished running. There's no output between the first and second cell, so you know the code was successful.
 
-Now import all four .csv files:
+>[!NOTE]
+>When you run the first `import` command, you'll be asked to choose a kernel. Select **Python Environments** and then a Python environment such as Python 3.10.4 or later.
+
+Now import all four `.csv` files:
 
 ```python
 meteor_showers = pd.read_csv('data/meteorshowers.csv')
@@ -26,13 +29,13 @@ cities = pd.read_csv('data/cities.csv')
 
 ## Exercise: Explore data
 
-Look through the data. For each variable you created, print the `head` and the `info` for those DataFrames. `head` allows you to see the first five lines in the .csv files. `info` gives you an overview of what data might be missing. Make sure you run each of these in their own cell so that you can see their output.
+Look through the data. For each variable you created, print the `head` and the `info` for those DataFrames. `head` allows you to see the first five lines in the `.csv` files. `info` gives you an overview of what data might be missing. Make sure you run each of these commands in their own cell so that you can see their output.
 
 ```python
 meteor_showers.head()
 ```
 
-|  | name | radiant | bestmonth | startmonth | startday | endmonth | endday | hemisphere | preferredhemisphere |
+|  | `name` | `radiant` | `bestmonth` | `startmonth` | `startday` | `endmonth` | `endday` | `hemisphere` | `preferredhemisphere` |
 |---|---|---|---|---|---|---|---|---|---|
 | **0** | Lyrids | Lyra | april | april | 21 | april | 22 | northern | northern |
 | **1** | Eta Aquarids | Aquarius | may | april | 19 | may | 28 | northern, southern | southern |
@@ -67,7 +70,7 @@ memory usage: 284.0+ bytes
 moon_phases.head()
 ```
 
-|  | month | day | moonphase | specialevent |
+|  | `month` | `day` | `moonphase` | `specialevent` |
 |---|---|---|---|---|
 | **0** | january | 1 | NaN | NaN |
 | **1** | january | 2 | first quarter | NaN |
@@ -98,7 +101,7 @@ memory usage: 7.2+ KB
 constellations.head()
 ```
 
-|   | constellation | bestmonth | latitudestart | latitudeend | besttime | hemisphere |
+|   | `constellation` | `bestmonth` | `latitudestart` | `latitudeend` | `besttime` | `hemisphere` |
 |---|---|---|---|---|---|---|
 | **0** | Lyra | august | 90 | -40 | 21:00 | northern |
 | **1** | Aquarius | october | 65 | -90 | 21:00 | southern |
@@ -130,7 +133,7 @@ memory usage: 224.0+ bytes
 cities.head()
 ```
 
-|  | city | latitude | country |
+|  | `city` | `latitude` | `country` |
 |---|---|---|---|
 | **0** | Abu Dhabi | 24.47 | United Arab Emirates |
 | **1** | Abuja | 9.07 | Nigeria |
@@ -179,7 +182,7 @@ Verify your changes by adding calls to `head()` and `info()` to each of the thre
 meteor_showers.head()
 ```
 
-| | name | radiant | bestmonth | startmonth | startday | endmonth | endday | hemisphere | preferredhemisphere |
+| | `name` | `radiant` | `bestmonth` | `startmonth` | `startday` | `endmonth` | `endday` | `hemisphere` | `preferredhemisphere` |
 |--|-----|---------|-----------|------------| ---------|----------|--------|------------| --------------------|
 | **0** | Lyrids | Lyra | 4 | 4 | 21 | 4 | 22 | northern | northern |
 | **1** | Eta Aquarids | Aquarius | 5 | 4 | 19 | 3 | 28 | northern, southern | southern |
@@ -210,16 +213,16 @@ dtypes: int64(5), object(4)
 memory usage: 488.0+ bytes
 ```
 
-Before you continue, convert months and days in the meteor_showers DataFrame to a type called datetime, which tracks dates.
+Before you continue, convert months and days in the `meteor_showers` DataFrame to a type called `datetime`, which tracks dates.
 
-Create two new columns: startdate and enddate. These columns will contain a month and day in 2020:
+Create two new columns: `startdate` and `enddate`. These columns will contain a month and day in 2020:
 
 ```python
 meteor_showers['startdate'] = pd.to_datetime(2020*10000+meteor_showers.startmonth*100+meteor_showers.startday,format='%Y%m%d')
 meteor_showers['enddate'] = pd.to_datetime(2020*10000+meteor_showers.endmonth*100+meteor_showers.endday,format='%Y%m%d')
 ```
 
-Follow the same pattern for moon_phases:
+Follow the same pattern for `moon_phases`:
 
 ```python
 moon_phases['date'] = pd.to_datetime(2020*10000+moon_phases.month*100+moon_phases.day,format='%Y%m%d')
@@ -235,7 +238,7 @@ constellations.hemisphere = constellations.hemisphere.map(hemispheres)
 
 Finally, convert Moon phases to numbers that represent the percentage of the Moon that's visible. This time, add a new column to represent the data:
 1. Create the map of phases to numbers.
-2. Add a new column called *percentage* and set it to the moonphase column that's mapped to the numbers.
+2. Add a new column called `percentage` and set it to the `moonphase` column that's mapped to the numbers.
 3. Show the first five rows.
 
 ```python
@@ -244,7 +247,7 @@ moon_phases['percentage'] = moon_phases.moonphase.map(phases)
 moon_phases.head()
 ```
 
-| month | day | moonphase | specialevent | date | percentage |
+| `month` | `day` | `moonphase` | `specialevent` | `date` | `percentage` |
 |-------|-----|-----------|--------------|------|-----------|
 | 0 | 1 | 1 | NaN | 2020-01-01 | NaN |
 | 1 | 1 | 2 | first quarter | 2020-01-02 | 0.5 |
@@ -256,13 +259,13 @@ Now you've converted all the data that makes more sense as numbers. But some val
 
 ### Remove unnecessary data
 
-Some of the data from these .csv files isn't useful. You can delete the following data:
+Some of the data from these `.csv` files isn't useful. You can delete the following data:
 
 | Data frame | Columns to remove | Reason |
 |-----------|-------------------|--------|
-| meteor_showers | startmonth, startday, endmonth, endday, hemisphere | The month and day information is captured in the startdate and enddate columns. The preferredhemisphere column is the optimal value. |
-| moon_phases | month, day, moonphase, specialevent | Month and day are captured by date. The Moon phase is captured by percentage. The specialevent column isn't relevant. |
-| constellations | besttime | Every row is 21:00. |
+| `meteor_showers` | `startmonth`, `startday`, `endmonth`, `endday`, `hemisphere` | The month and day information is captured in the `startdate` and `enddate` columns. The `preferredhemisphere` column is the optimal value. |
+| `moon_phases` | `month`, `day`, `moonphase`, `specialevent` | The `date` column already contains `month` and `day`. The `percentage` column covers the `moonphase`. The `specialevent` column isn't relevant. |
+| `constellations` | `besttime` | Every row is 21:00. |
 
 Here's how to remove those columns:
 
@@ -276,7 +279,7 @@ Now it's time to fill in the missing data.
 
 ### Missing data
 
-One of the .csv files is particularly interesting. The output of `moon_phases.info()` shows the following information:
+One of the `.csv` files is interesting. The output of `moon_phases.info()` shows the following information:
 
 ```output
 <class 'pandas.core.frame.DataFrame'>
@@ -294,12 +297,11 @@ You see that the cycle of the Moon phases goes from 0 to 0.5 to 1 to 0.5 and the
 
 You could get more detailed by figuring out a more accurate percentage on your own:
 
-1. Import the math Python library.
-2. Create a variable to save the last phase that you saw.
-3. Loop through each row and column in the moon_phases DataFrame.
-4. If the value in the percentage column of a row is nan (null), then replace it with the last phase that you saw.
-5. If the value isn't nan, then save the value as the last phase that you saw.
-6. Show the info for the moon_phases DataFrame:
+1. Create a variable to save the last phase that you saw.
+2. Loop through each row and column in the `moon_phases` DataFrame.
+3. If the value in the `percentage` column of a row is `NaN` (null), then replace it with the last phase that you saw.
+4. If the value isn't `NaN`, then save the value as the last phase that you saw.
+5. Show the info for the `moon_phases` DataFrame:
 
     ```python
     lastPhase = 0
