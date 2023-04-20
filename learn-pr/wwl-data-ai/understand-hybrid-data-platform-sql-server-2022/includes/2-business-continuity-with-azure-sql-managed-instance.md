@@ -9,7 +9,7 @@ Starting with SQL Server 2022, you now have the flexibility to extend your on-pr
 
 In addition to the flexibility of failover and failback options, Azure SQL Managed Instance offers a fully functional instance of SQL Server on Azure that is highly compatible with the latest SQL Server release.
 
-:::image type="content" source="../media/module-2-azuresql-offerings.png" alt-text="Diagram showing the replication of databases from the primary replica to the secondary replica through the distributed availability group (AG).":::
+:::image type="content" source="../media/module-2-azuresql-offerings.png" alt-text="Diagram showing the various Azure SQL offerings available, including SQL Server on Azure Virtual Machine, Azure SQL Managed Instance, Azure SQL Database, and Azure SQL Edge.":::
 
 ### Use case scenario
 
