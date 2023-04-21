@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.investigate-threats-using-audit-in-microsoft-365-defender-microsoft-purview-standard.export-configure-view-audit-log-records
+title: Export, configure, and view audit log records
+metadata:
+  title: Export, configure, and view audit log records
+  description: "Export, configure, and view audit log records."
+  ms.date: 3/20/2023
+  author: wwlpublish
+  ms.author: kelawson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-export-configure-view-audit-log-records.md)]
