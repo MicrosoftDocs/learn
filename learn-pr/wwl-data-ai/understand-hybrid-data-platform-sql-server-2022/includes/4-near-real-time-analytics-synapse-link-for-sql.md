@@ -41,14 +41,15 @@ For SQL Server 2022, the landing zone is customer-managed and can be hosted anyw
 
 ## Exercise: Create Azure Synapse Link for SQL Server 2022
 
-To run this exercise, make sure you're running SQL Server 2022 with the [**AdventureWorks**](https://learn.microsoft.com/sql/samples/adventureworks-install-configure) database.
+To run this exercise, make sure you're running SQL Server 2022 with the latest [**AdventureWorks**](https://learn.microsoft.com/sql/samples/adventureworks-install-configure) database. You will also need a SQL Server user with read access to the source database.
 
 1. Select your Synapse Analytics workspace or create a new one on Azure portal.
 
     :::image type="content" source="../media/module-2-synapse-link-01.png" alt-text="Screenshot showing the list of Synapse workspace resource on Azure portal.":::
 
 1. On your Synapse workspace **Overview** page, select **Open Synapse Studio**.
-1. On the **Manage** page, on the **SQL pools** tab, select the row for the dedicated SQL pool and use its **&#9655;** icon to start it; confirming that you want to resume it when prompted. Create a dedicated SQL pool if you don't have one.
+1. On the **Manage** page, select the **SQL pools** tab.
+1. Create a new dedicated SQL pool or select the row for a pre-existing dedicated SQL pool and use its **&#9655;** icon to start it; confirming that you want to resume it when prompted. 
 
     >[NOTE!]
     >This dedicated SQL pool is the target where we're going to replicate SQL Server data to.
@@ -72,7 +73,8 @@ Create the linked service responsible to communicate with your SQL Server 2022.
 1. In the **New linked service** page, provide the following settings:
     - **Name**: SQLServerLS
     - **Description**: Connection to AdventureWorksLT database
-    - **Connect via integration runtime**: AutoResolveIntegrationRuntime or you may choose to create a new one.
+    - **Connect via integration runtime**: 
+        - Select to create a new Self-Hosted integration runtime, and choose **Option 1** to launch and install it on the same server where SQL Server is installed.
     - **Server name**: *Select your SQL Server instance name*
     - **Database name**: AdventureWorksLT
     - **Authentication type**: SQL authentication
@@ -83,7 +85,7 @@ Create the linked service responsible to communicate with your SQL Server 2022.
 
 1. Select **Create**.
 
-1. Make sure that you've granted your Azure Synapse workspace managed identity permissions to the Azure Data Lake Storage Gen2 storage account that's used as the landing zone. For more information, see [Grant permissions to a managed identity in an Azure Synapse workspace - Azure Synapse Analytics](https://learn.microsoft.com/azure/synapse-analytics/security/how-to-grant-workspace-managed-identity-permissions#grant-the-managed-identity-permissions-to-adls-gen2-storage-account).
+1. For the landing zone, you can either use a pre-existing **ADLS Gen2** storage accounts or create a new one. Make sure that you've granted your Azure Synapse workspace managed identity permissions to the Azure Data Lake Storage Gen2 storage account that's used as the landing zone. For more information, see [Grant permissions to a managed identity in an Azure Synapse workspace - Azure Synapse Analytics](https://learn.microsoft.com/azure/synapse-analytics/security/how-to-grant-workspace-managed-identity-permissions#grant-the-managed-identity-permissions-to-adls-gen2-storage-account).
 
 Next, create the linked service responsible to communicate with your landing zone on Azure Data Lake Storage Gen2.
 
