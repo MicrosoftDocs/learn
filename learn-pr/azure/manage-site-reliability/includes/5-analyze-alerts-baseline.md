@@ -14,7 +14,7 @@ The alert rule captures the target and criteria for alerting. The alert rule can
 
 The key attributes of an alert rule are:
 
-* **Target Resource**: Target Resource defines the scope and signals available for alerting. A target can be any Azure resource. Example targets include virtual machines, storage accounts, virtual machine scale sets, Log Analytics workspaces, or Application Insights resources. For certain resources (like virtual machines), you can specify multiple resources as the target of the alert rule.
+* **Target Resource**: Target Resource defines the scope and signals available for alerting. A target can be any Azure resource. Example targets include virtual machines, storage accounts, Virtual Machine Scale Sets, Log Analytics workspaces, or Application Insights resources. For certain resources (like virtual machines), you can specify multiple resources as the target of the alert rule.
 
 * **Signal**: Signals are emitted by the target resource and can be of several types: Metric, Activity log, Application Insights, and Log.
 
