@@ -58,17 +58,17 @@ quiz:
     - content: "Boot diagnostics"
       isCorrect: true
       explanation: "Correct: Boot diagnostics must be enabled to provide connectivity to an Azure VM by using the serial console."
-  - content: "Which label designates a temporary disk of an Azure VM running Linux?"
-    choices:
-    - content: "`dev/sda1`"
-      isCorrect: false
-      explanation: "Incorrect: dev/sda designates the OS disk of an Azure VM running Linux."
-    - content: "`dev/hda`"
-      isCorrect: false
-      explanation: "Incorrect: dev/hda isn't available on Azure VMs running Linux."
-    - content: "`dev/sdb`"
-      isCorrect: true
-      explanation: "Correct: dev/sdb designates the temporary disk of an Azure VM running Linux."
+#  - content: "Which label designates a temporary disk of an Azure VM running Linux?"
+#    choices:
+#    - content: "`dev/sda1`"
+#      isCorrect: false
+#      explanation: "Incorrect: dev/sda designates the OS disk of an Azure VM running Linux."
+#    - content: "`dev/hda`"
+#      isCorrect: false
+#      explanation: "Incorrect: dev/hda isn't available on Azure VMs running Linux."
+#    - content: "`dev/sdb`"
+#      isCorrect: true
+#      explanation: "Correct: dev/sdb designates the temporary disk of an Azure VM running Linux."
   - content: "Which disk should you use to store a swap file?"
     choices:
     - content: "Data disk"
