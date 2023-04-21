@@ -16,7 +16,7 @@ When you work with 3D visualization, every detail matters. However, untethered d
 
 Unfortunately, this approach reduces the quality of the resulting models. The following graphic displays a rendered model of an engine and demonstrates decimation. The image has approximately 200,000 triangles. The image quality is insufficient for desired applications, such as a 3D design review or factory-layout visualization.
 
-:::image type="content" source="../media/engine-model-1.png" alt-text="An image of an engine rendered using decimation.":::
+:::image type="content" source="../media/engine-model-1.png" alt-text="Illustration of an engine rendered using decimation.":::
 
 ## Azure Remote Rendering definition
 
