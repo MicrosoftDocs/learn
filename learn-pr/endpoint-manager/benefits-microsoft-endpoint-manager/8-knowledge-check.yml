@@ -13,30 +13,30 @@ durationInMinutes: 3
 quiz:
   title: Check your knowledge
   questions:
-  - content: "How does Microsoft Endpoint Manager allow you to manage all your endpoints?"
+  - content: "How does Microsoft Intune allow you to manage all your endpoints?"
     choices:
-    - content: "Microsoft Endpoint Manager admin center is a one-stop web site to create policies and manage your devices and apps. It plugs in other key device management services, including groups, security, Conditional Access, and reporting. Endpoint manager also shows devices managed by Configuration Manager and Intune."
+    - content: "Microsoft Intune admin center is a one-stop web site to create policies and manage your devices and apps. It plugs in other key device management services, including groups, security, Conditional Access, and reporting. Intune also shows devices managed by Configuration Manager and Intune."
       isCorrect: true
       explanation: ""
-    - content: "Microsoft Endpoint Manager admin center is a series of interconnected consoles that require separate administrator rights to access each console."
+    - content: "Microsoft Intune admin center is a series of interconnected consoles that require separate administrator rights to access each console."
       isCorrect: false
-      explanation: "Microsoft Endpoint Manager admin center a single, integrated web-based console."
-    - content: "Microsoft Endpoint Manager admin center is a single app that must be access on-premises."
+      explanation: "Microsoft Intune admin center a single, integrated web-based console."
+    - content: "Microsoft Intune admin center is a single app that must be access on-premises."
       isCorrect: false
-      explanation: "Microsoft Endpoint Manager admin center a single, integrated web-based console."
-  - content: "What types of methods does Microsoft Endpoint Manager use to keep an organization's cloud and on-premises devices, apps, and data secure?"
+      explanation: "Microsoft Intune admin center a single, integrated web-based console."
+  - content: "What types of methods does Microsoft Intune use to keep an organization's cloud and on-premises devices, apps, and data secure?"
     choices:
-    - content: "Microsoft Endpoint Manager uses a progressively changing set of technologies."
+    - content: "Microsoft Intune uses a progressively changing set of technologies."
       isCorrect: false
-      explanation: "Microsoft Endpoint Manager uses Security Baselines, BitLocker Management, and Advanced Threat Protection, as well as other technologies and methods."
-    - content: "Microsoft Endpoint Manager uses Security Baselines, BitLocker Management, Advanced Threat Protection, Secure Score, and Windows Hello for Business, as well as many other methods and technologies."
+      explanation: "Microsoft Intune uses Security Baselines, BitLocker Management, and Advanced Threat Protection, as well as other technologies and methods."
+    - content: "Microsoft Intune uses Security Baselines, BitLocker Management, Advanced Threat Protection, Secure Score, and Windows Hello for Business, as well as many other methods and technologies."
       isCorrect: true
       explanation: ""      
-  - content: "What is one way Microsoft Endpoint Manager maximizes your return on investment?"
+  - content: "What is one way Microsoft Intune maximizes your return on investment?"
     choices:
-    - content: "Microsoft Endpoint Manager can apply machine learning for recommended security and configuration settings."
+    - content: "Microsoft Intune can apply machine learning for recommended security and configuration settings."
       isCorrect: true
       explanation: ""
-    - content: "Microsoft Endpoint Manager can increase customer satisfaction by providing unconditional access to all organization data."
+    - content: "Microsoft Intune can increase customer satisfaction by providing unconditional access to all organization data."
       isCorrect: false
-      explanation: "In addition to a unified IT administration experience, continuous security improvements for everyone, and cloud content optimization, Microsoft Endpoint Manager can apply machine-learning for recommended security and configuration settings."
+      explanation: "In addition to a unified IT administration experience, continuous security improvements for everyone, and cloud content optimization, Microsoft Intune can apply machine-learning for recommended security and configuration settings."

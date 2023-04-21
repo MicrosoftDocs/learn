@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.sql-database-security.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/06/2023
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: None
+durationInMinutes: 5
+content: |
+  [!include[](includes/16-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "An SQL database administrator has recently read about SQL injection attacks. They ask what can be done to minimize the risk of this type of attack. Implementing which of the following features will help protect the database?"
+    choices:
+    - content: "Advanced Threat Protection"
+      isCorrect: true
+      explanation: "Advanced Threat Protection. Advanced Threat Protection is an Advanced Data Security feature for databases. The feature provides alerts when a potential attack, like SQL injection, occurs."
+    - content: "Data Discovery and Classification"
+      isCorrect: false
+      explanation: "Discovering and classification won't minimize the risk of attack."
+    - content: "Dynamic Data Masking"
+      isCorrect: false
+      explanation: "Data masking isn't helpful in the situation."
+  - content: "An organization provides a Help Desk for its customers. Service representatives need to identify callers using the last four numbers of their credit card. There is a need to ensure the complete credit card number isn't fully exposed to the service representatives. Which of the following features should be implemented?"
+    choices:
+    - content: "Always Encrypted"
+      isCorrect: false
+      explanation: "Encryption makes sure the data is unreadable while stored, not masking phone numbers."
+    - content: "Data Classification"
+      isCorrect: false
+      explanation: "Data classification won't help mask off personally identifiable phone number information."
+    - content: "Dynamic Data Masking"
+      isCorrect: true
+      explanation: "Dynamic Data Masking. Dynamic data masking limits sensitive data exposure by masking it to non-privileged users. This feature enables customers to designate how much of the sensitive data to reveal."
+  - content: "Auditors need to be assured that sensitive database data always remains encrypted at rest, in transit, and in use. To assure the auditors this is being done, which of the below features is configured?"
+    choices:
+    - content: "Always Encrypted"
+      isCorrect: true
+      explanation: "Always Encrypted. Always Encrypted helps protect sensitive data at rest on the server, during movement between client and server, and while the data is in use. Always Encrypted ensures that sensitive data never appears as plaintext inside the database system. After you configure data encryption, only client applications or app servers that have access to the keys can access plaintext data. Always Encrypted uses the AEAD_AES_256_CBC_HMAC_SHA_256 algorithm to encrypt data in the database."
+    - content: "Disk Encryption"
+      isCorrect: false
+      explanation: "Disk encryption on helps when data is a rest."
+    - content: "Dynamic Data Masking"
+      isCorrect: false
+      explanation: "Data masking only blocks seeing all the data values of certain data types, not encrypt data."
+  - content: "An App Service web application uses an SQL database. Users need to authenticate to the database with their Azure AD credentials. Which of the following configuration tasks would enable this?"
+    choices:
+    - content: "Create an SQL Database Administrator"
+      isCorrect: false
+      explanation: "The SQL Database Admin account would offer too much access the users."
+    - content: "Create an Azure AD Database Administrator"
+      isCorrect: false
+      explanation: "An Azure AD Database admin could only configure and manage the database."
+    - content: "Create users in each database"
+      isCorrect: true
+      explanation: "Don't create users in the Master db. Instead, contained users should be created on each database."
+  - content: "What type of firewall rules can be configured for an Azure SQL database?"
+    choices:
+    - content: "Datacenter-level firewall rules"
+      isCorrect: false
+      explanation: "Datacenter-level rules would not be available inside of an SQL database."
+    - content: "Server-level firewall rules"
+      isCorrect: true
+      explanation: "Server-level firewall rules, and Database-level firewall rules can be created. Server-level IP firewall rules enable clients to access the entire Azure SQL Database—that is, all the databases within the same SQL Database server. These rules are stored in the master database. Database-level IP firewall rules enable clients to access certain secure databases within the same SQL Database server. You can create these rules for each database (including the master database), and they are stored in the individual databases."
+    - content: "Table-level firewall rules"
+      isCorrect: false
+      explanation: "There are no table-level firewall rules."

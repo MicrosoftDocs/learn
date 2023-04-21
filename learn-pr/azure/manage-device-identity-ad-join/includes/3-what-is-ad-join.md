@@ -1,4 +1,4 @@
-You now have a better understanding of device identity and Conditional Access. You want to investigate Azure Active Directory (Azure AD) join and how it might be used to improve device management for both Azure and on-premises Active Directory Domain Services.
+You now have a better understanding of device identity and Conditional Access. You want to investigate Azure Active Directory (Azure AD) join and how you might use it to improve device management for both Azure and on-premises Active Directory Domain Services.
 
 In this unit, you'll learn about Azure AD join and how to use it for infrastructure and device management.
 
@@ -25,7 +25,7 @@ Azure AD join uses the mobile device management (MDM) platform to manage devices
 
 The latest versions of Windows 10 and Windows 11 have a built-in MDM client that works with all compatible MDM systems.
 
-To manage your Azure AD joined devices, there are two approaches:
+There are two approaches to manage your Azure AD joined devices:
 
 - **MDM only**: All joined devices are managed exclusively through an MDM provider, like Intune. If your organization uses group policies, you'll need to review your MDM policy for support.
 
@@ -37,11 +37,11 @@ We recommend that you use the MDM-only approach to manage all Azure AD joined de
 
 For the best user experience and to improve access to your application, consider moving all applications and resources to Azure. Although that might be possible in some cases, it isn't always practical. In this section, we'll explore access options for your applications and resources:
 
-- **Cloud-based applications**: Any migrated apps and all new applications will be added to the Azure AD app gallery. Users of Azure AD join can use SSO to access those applications. The majority of browsers support SSO. Azure AD join provides SSO support for device access to applications that are still using Win32.
+- **Cloud-based applications**: Any migrated apps and all new applications will be added to the Azure AD app gallery. Azure AD join users can use SSO to access those applications. The majority of browsers support SSO. Azure AD join provides SSO support for device access to applications that are still using Win32.
 
 - **On-premises web applications**: You can still access any bespoke or custom-made software that's hosted on-premises through Azure AD join. Access to those applications needs each user to add the app to their trusted sites or intranet zone, depending on where the app exists. This action allows the application to use Windows-integrated authentication without prompting the user to authenticate.
 
-- **Other devices**: This option includes existing applications through earlier protocols and on-premises network shares. Both are available to Azure AD joined devices through SSO, if the device is connected to your domain controller.
+- **Other devices**: This option includes existing applications through earlier protocols and on-premises network shares. Both are available to Azure AD joined devices through SSO if the device is connected to your domain controller.
 
 - **Printer resources**: These resources won't automatically be available through Azure AD join. Users can still connect to a printer directly by using its UNC path.
 
@@ -51,7 +51,7 @@ When you're deploying Azure AD join, you have three choices for how devices are 
 
 - **Self-service**: Requires users to manually configure the device during the Windows out-of-box experience (OOBE) for new devices, or by using the Windows settings for older devices. Self-service is better suited to users who have a strong technical background.
 
-- **Windows Autopilot**: Allows you to preconfigure Windows devices, including automatically joining the device to your Active Directory organization, automatic MDM enrollment, and creating customer OOBE content. This approach simplifies the management and deployment of devices across your organization. Your Windows devices can be provisioned and deployed. The user completes the OOBE as if they're a new user.
+- **Windows Autopilot**: Allows you to preconfigure Windows devices, including automatically joining the device to your Active Directory organization, automatic MDM enrollment, and creating customer OOBE content. This approach simplifies the management and deployment of devices across your organization. You can provision and deploy your Windows devices. The user completes the OOBE as if they're a new user.
 
 - **Bulk enrollment**: Lets you set up a provisioning package that applies to a large number of new Windows devices at the same time.
 
@@ -81,7 +81,7 @@ In the Azure portal, you can control how new devices are joined to your organiza
 |Require Multi-Factor Authentication to join devices |  Lets you enforce Azure AD Multi-Factor Authentication when the device joins Azure AD. For users who join devices to Azure AD by using Multi-Factor Authentication, the device itself becomes a second factor.   |
 |Maximum number of devices per user| Lets you specify the maximum number of devices a user can have in Azure AD. If a user reaches this maximum, they need to remove a device to add a new one. |
 
-For our scenario, we can add a pilot group of users to try AD join. In that case, choose **Users may join devices to Azure AD** > **Selected**, and then add members of your pilot group. When you're ready to deploy Azure AD join to your entire Azure AD organization, select **All**.
+For our scenario, we can add a pilot group of users to try AD join. In that case, choose **Users may join devices to Azure AD** > **Selected**, then add members of your pilot group. When you're ready to deploy Azure AD join to your entire Azure AD organization, select **All**.
 
 ## Mobility settings
 
@@ -90,7 +90,7 @@ You might need to add an MDM provider before you can configure mobility settings
 >[!div class="mx-imgBorder"]
 >![Screenshot that shows mobility applications you can add, like Microsoft Intune.](../media/3-mobility-add-application.png)
 
-When you have your MDM provider added, you can configure the following mobility settings:
+When you've added your MDM provider, you can configure the following mobility settings:
 
 |Mobility setting  |description  |
 |---------|---------|

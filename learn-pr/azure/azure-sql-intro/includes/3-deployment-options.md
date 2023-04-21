@@ -14,7 +14,7 @@ Here are some considerations for optimally deploying and managing SQL Server on 
 
 - Use the right storage configuration and take advantage of Azure Blob storage read caching.
 
-- Integrate your virtual machines to on-premises networks by using Azure virtual networks.
+- Integrate your virtual machines into on-premises networks by using Azure virtual networks.
 
 - Take advantage of automated backups, backups to Azure Blob storage, and integration with Azure Backup.
 
@@ -76,7 +76,7 @@ SQL Database is a PaaS deployment option of Azure SQL that abstracts both the OS
 
 :::image type="content" source="../media/3-sql-database.svg" alt-text="Diagram that describes when to choose Azure SQL Database." border="false"::: 
 
-AccuWeather provides a great example of using SQL Database. AccuWeather has been analyzing and predicting the weather for more than 55 years. The company wanted access Azure for its big data, machine learning, and AI capabilities. AccuWeather wants to focus on building new models and applications, not on managing databases. The company chose SQL Database to use with other services, like Azure Data Factory and Azure Machine Learning, to quickly and easily deploy new internal applications to make sales and customer predictions.  
+AccuWeather provides a great example of using SQL Database. AccuWeather has been analyzing and predicting the weather for more than 55 years. The company wanted to access Azure for its big data, machine learning, and AI capabilities. AccuWeather wants to focus on building new models and applications, not on managing databases. The company chose SQL Database to use with other services, like Azure Data Factory and Azure Machine Learning, to quickly and easily deploy new internal applications to make sales and customer predictions.  
 
 ## Elastic database pool
 
@@ -84,7 +84,7 @@ You've now learned about the three main deployment options within Azure SQL: vir
 
 **SQL Database elastic pools** allow you to host many databases within a single set of provisioned SQL Database resources. This option is ideal for a software as a service (SaaS) application or provider because you can manage and monitor performance in a simplified way for many databases.
 
-**SQL Managed Instance pools** allow you to host multiple managed instances and share resources. You can pre-provision compute resources. Doing so can reduce overall deployment time to make migrations easier. You can also host smaller managed instances in an instance pool than you can in a single managed instance. This offer is currently in public preview.
+**SQL Managed Instance pools** allow you to host multiple managed instances and share resources. You can pre-provision compute resources. Doing so can reduce overall deployment time to make migrations easier. You can also host smaller managed instances in an instance pool than in a single managed instance. This offer is currently in public preview.
 
 Paychex is a good example of a company that uses SQL Database elastic database pools. Paychex is a Human Capital Management firm that serves more than 650,000 businesses across the US and Europe. Paychex needed a way to separately manage the time and pay management for each of its customers and cut costs. The company chose SQL Database elastic database pools, which allowed it to simplify management and enable resource sharing between separate databases to lower costs.  
 

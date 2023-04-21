@@ -8,7 +8,7 @@ The architectural priorities and needs of every app are different. The five pill
 - Reliability
 - Security
 
-Focusing on these pillars when designing your architecture will ensure that you're laying a solid foundation for your applications in the cloud. With a solid foundation, you'll be able to drive innovation through your environment, build solutions that your users will love, and foster the trust of your customers.
+Focusing on these pillars when designing your architecture ensures that you're laying a solid foundation for your applications in the cloud. With a solid foundation, you're able to drive innovation through your environment, build solutions that your users love, and foster the trust of your customers.
 
 ## Learn more
 

@@ -4,8 +4,8 @@ metadata:
   title: Modern authentication for your application
   description: Learn how OAuth, OpenID Connect, and Azure AD can provide authentication and authorization for your applications.
   ms.date: 07/17/2019
-  author: chrispine-chiedo
-  ms.author: cchiedo
+  author: davidmu1
+  ms.author: davidmu
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Modern authentication for your application

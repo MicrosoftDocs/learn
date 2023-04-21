@@ -1,5 +1,5 @@
 >[!NOTE]
-> The Learn sandbox system that enables you to complete these modules without using your own subscription is currently down for maintenance. This module can still be completed using a subscription you own, but please be aware that the steps might skip some instructions necessary for you to deploy, such as logging into your subscription or cleaning up the deployment at the end of the module. Let's go!
+> You'll need access to an Azure subscription where you can create resources to complete this module.
 
 You use an Azure Kubernetes Service (AKS) cluster to host the drone tracking solution. The DevOps team uses standard declarative YAML files to deploy various services in the solution. In the current deployment workflow, the development teams create the deployment files for each application. The team is reviewing Helm as an alternative to simplify the management of cloud-native application deployments.
 
@@ -19,6 +19,7 @@ The script does the following configuration steps:
 > - [Optional] Installs version 3.1.302 of the .NET SDK, alongside the default SDK version of Cloud Shell.
 
 *Some of the above items are optional installation steps that are disabled in this exercise using command arguments.*
+
 ## Run the deployment script
 
 You'll use a `bash` deployment script that uses the following parameters to deploy a new cluster:
@@ -30,7 +31,9 @@ You'll use a `bash` deployment script that uses the following parameters to depl
 | `--use-acr` | Allows the script to configure a default ACR with the name `mslearn-kubernetes-acr`. Default value is `false`.
 | `--install-dot-net` | Allows the script to install the .NET SDK. Default value is set to `false`. |
 
-1. Run the command below in the Azure Cloud Shell.
+1. Sign in to your subscription in the Azure portal, then select the **Cloud Shell** button at the top of the screen.
+
+1. Run the following command in the Azure Cloud Shell:
 
     ```bash
     SubscriptionId=$(az account list --query '[0].id' -o tsv)

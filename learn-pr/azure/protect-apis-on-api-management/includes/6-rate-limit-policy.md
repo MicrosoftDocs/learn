@@ -1,12 +1,12 @@
-It is common to find that a few users overuse an API to the extent that you incur extra costs or that responsiveness to other uses is reduced. You can use throttling to limit access to API endpoints by putting limits on the number of times an API can be called within a specified period of time.
+It's common to find that a few users overuse an API. Sometimes, an API is overused to such an extent that you incur extra costs or that responsiveness to other users is reduced. You can use throttling to limit access to API endpoints by putting limits on the number of times an API can be called within a specified period of time.
 
-The Census API, for example, is distributed to lots of government agencies, so the number of calls to the API may become significant. By applying a rate limit policy, we can enable a quick response to all requests as it will not be possible for a single client to use all the resource for the Census API.
+The Census API, for example, is distributed to lots of government agencies, so the number of calls to the API may become significant. By applying a rate limit policy, we can enable a quick response to all requests so that it isn't possible for a single client to use all the resources for the Census API.
 
-In this unit, you will learn how to use API Management policies to impose two types of throttling.
+In this unit, you learn how to use API Management policies to impose two types of throttling.
 
 ## Limit by subscription throttling
 
-Subscription throttling allows you to set the rate limits by a specific API operation. It does not discriminate by the client. Instead, every request to the API or the specified operation is throttled in the same way. Using our census example, we could use subscription throttling to limit the number of times any of the APIs are called within a certain period. This configuration would result in clients receiving a 429 error when that limit was reached. The problem with this type of throttling is that it allows one client to use up all the requests before another client can use it.
+Subscription throttling allows you to set the rate limits by a specific API operation. It doesn't discriminate by the client. Instead, every request to the API or the specified operation is throttled in the same way. Using our census example, we could use subscription throttling to limit the number of times any of the APIs are called within a certain period. This configuration would result in clients receiving a 429 error when that limit was reached. The problem with this type of throttling is that it allows one client to use up all the requests before another client can use it.
 
 For example, the following code demonstrates an example configuration that applies to all API operations:
 
@@ -35,7 +35,7 @@ Key throttling allows you to configure different rate limits by any client reque
                    counter-key="key value" />
 ```
 
-An example configuration to limit rate limit by a requests IP Address would be:
+The following example configuration limits the rate limit by the IP Address of a request:
 
 ```XML
 <rate-limit-by-key calls="10"
@@ -44,7 +44,7 @@ An example configuration to limit rate limit by a requests IP Address would be:
               counter-key="@(context.Request.IpAddress)"/>
 ```
 
-When you choose to throttle by key, you will need to decide on specific requirements for rate limiting. For example, the following table lists three common ways of specifying the **counter-key**:
+When you choose to throttle by key, you need to decide on specific requirements for rate limiting. For example, the following table lists three common ways of specifying the **counter-key**:
 
 | Value | Description |
 | ----- | ------ |

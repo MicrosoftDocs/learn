@@ -2,7 +2,7 @@ The Node.js *path* module and `__dirname` global variable are two ways to define
 
 In the previous exercise, you wrote a program that iterates through a folder to find any of the *sales.json* files inside.
 
-In this exercise, you'll use the *path* module and `__dirname` global variable to improve the program so that it will find any file with a .json extension.
+In this exercise, you use the *path* module and `__dirname` global variable to improve the program so that it finds any file with a .json extension.
 
 ## Include the path module
 
@@ -14,7 +14,7 @@ const path = require("path");
 
 ## Use the current directory
 
-In the current index.js code, you're passing the static location of the *stores* folder. We'll change that code to use the `__dirname` value instead of passing a static folder name.
+In the current index.js code, you're passing the static location of the *stores* folder. Let's change that code to use the `__dirname` value instead of passing a static folder name.
 
 1. In the `main` method, create a variable to store a path to the *stores* directory by using the `__dirname` constant.
 
@@ -35,20 +35,20 @@ In the current index.js code, you're passing the static location of the *stores*
    node index.js
    ```
 
-   Notice that the path that's now listed for the files is the full system path. This is because the `__dirname` constant returns the full path to the current location.
+   Notice that the path that's now listed for the files is the full system path, because the `__dirname` constant returns the full path to the current location.
 
    ```bash
    [
-     '/home/username/node-files/stores/201/sales.json',
-     '/home/username/node-files/stores/202/sales.json',
-     '/home/username/node-files/stores/203/sales.json',
-     '/home/username/node-files/stores/204/sales.json',
+     '/home/username/node-essentials/nodejs-files/stores/201/sales.json',
+     '/home/username/node-essentials/nodejs-files/stores/202/sales.json',
+     '/home/username/node-essentials/nodejs-files/stores/203/sales.json',
+     '/home/username/node-essentials/nodejs-files/stores/204/sales.json',
    ]
    ```
 
 ## Join paths
 
-Instead of concatenating folder names to make a new path to search, you'll change the code to use the `path.join` method. This code will then work across operating systems.
+Instead of concatenating folder names to make a new path to search, you change the code to use the `path.join` method. This code can then work across operating systems.
 
 1. Change the `findFiles` method to use `path.join`.
 
@@ -65,7 +65,7 @@ Instead of concatenating folder names to make a new path to search, you'll chang
    node index.js
    ```
 
-   The output will be the same as the previous step, but the program is now more robust because it uses `path.join` instead of concatenating strings.
+   The output is the same as the previous step, but the program is now more robust because it uses `path.join` instead of concatenating strings.
 
 ## Find all .json files
 
@@ -98,10 +98,10 @@ Instead of looking for just *sales.json* files, the program needs to search for 
 
    ```bash
    [
-      '/home/username/node-files/stores/201/totals.json',
-      '/home/username/node-files/stores/202/sales.json',
-      '/home/username/node-files/stores/203/sales.json',
-      '/home/username/node-files/stores/204/sales.json'
+      '/home/username/node-essentials/nodejs-files/stores/201/totals.json',
+      '/home/username/node-essentials/nodejs-files/stores/202/sales.json',
+      '/home/username/node-essentials/nodejs-files/stores/203/sales.json',
+      '/home/username/node-essentials/nodejs-files/stores/204/sales.json'
    ]
    ```
 
@@ -133,7 +133,7 @@ async function findSalesFiles(folderName) {
         // Make sure the discovered file is a .json file
         if (path.extname(item.name) === ".json") {
           // store the file path in the salesFiles array
-          salesFiles.push(path.join(folderName, item.name));
+          await salesFiles.push(path.join(folderName, item.name));
         }
       }
     }

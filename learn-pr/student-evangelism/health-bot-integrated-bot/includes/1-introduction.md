@@ -1,10 +1,10 @@
 The healthcare bot has been receiving inputs from users. But the data isn't stored anywhere. What if we retrieve the data on a website so the doctor can see appointments? To do that, we have to store the data in a database. We can use the data connection step in Azure Health Bot. In this step, we can connect to a [Fast Healthcare Interoperability Resources (FHIR)](https://azure.microsoft.com/services/azure-api-for-fhir/) database and also any normal databases, such as SQL.
 
-In this tutorial, we'll demonstrate the connection by using a SQL database hosted on Azure.
+In this tutorial, we demonstrate the connection by using a SQL database hosted on Azure.
 
 ## Architecture
 
-To make the connection, we'll follow the architecture. The architecture has three main components:
+To make the connection, follow the architecture. The architecture has three main components:
 
 - The Azure Health Bot platform
 
@@ -12,13 +12,13 @@ To make the connection, we'll follow the architecture. The architecture has thre
 
 - SQL Server and Azure SQL Database
 
-Although Azure provides various framework options, we'll use Node.js. It's a popular choice in the development community.
+Although Azure provides various framework options, we use Node.js. It's a popular choice in the development community.
 
 The following diagram illustrates the architecture options:
 
 :::image type="content" source="../media/1-architecture.png" alt-text="Diagram that shows the architecture of a health bot data connection.":::
 
-Let's now learn the steps to connect the database. By the end of this module, the bot will be able to store the data in the SQL database.
+Let's now learn the steps to connect the database. By the end of this module, the bot is going to store the data in the SQL database.
 
 ## Learning objectives
 

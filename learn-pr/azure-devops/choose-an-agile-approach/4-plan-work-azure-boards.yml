@@ -6,8 +6,8 @@ metadata:
   description: Create a project, a team, and a board in Azure DevOps.
   ms.date: 06/22/2022
   ms.custom: devdivchpfy22
-  author: kathrynee
-  ms.author: kaelli
+  author: chcomley
+  ms.author: chcomley
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 15

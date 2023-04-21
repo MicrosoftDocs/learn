@@ -1,10 +1,10 @@
-Cloud attach allows you to use both Microsoft Intune and Microsoft Endpoint Configuration Manager from Microsoft Endpoint Manager.
+Cloud attach allows you to use both Microsoft Intune and Microsoft Endpoint Configuration Manager from Microsoft Intune.
 
 There are two steps to cloud attach your on-premises devices. The first step of attachment is called **tenant attach**, which is registering your Intune tenant with your Configuration Manager deployment. The second step is called **co-management**, which is concurrently managing Windows 10/11 devices with both Configuration Manager and Microsoft Intune. These are incremental steps on the journey to having full cloud attachment. You get immediate value through tenant attach and you get extra value through co-management.
 
 #### Tenant attach
 
-Tenant attach allows you to recognize your Configuration Manager devices and infrastructure by the Intune cloud service and take actions from Microsoft Endpoint Manager. Once you connect Configuration Manager, you gain instant cloud value. Configuration Manager uses the Configuration Manager connector to enable data flow to Microsoft Endpoint Manager. It requires a connection to an Intune tenant, and doesn't require turning on co-management.
+Tenant attach allows you to recognize your Configuration Manager devices and infrastructure by the Intune cloud service and take actions from Microsoft Intune. Once you connect Configuration Manager, you gain instant cloud value. Configuration Manager uses the Configuration Manager connector to enable data flow to Microsoft Intune. It requires a connection to an Intune tenant, and doesn't require turning on co-management.
 
 #### Co-management
 

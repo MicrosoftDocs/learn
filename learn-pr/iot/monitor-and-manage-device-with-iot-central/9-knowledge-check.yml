@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.monitor-manage-device-with-iotcentral.knowledge-check
+title: Knowledge check 
+metadata:
+  title: Knowledge check 
+  description: This content is a part of Build your first Azure IoT Central application to manage your coffee machines
+  ms.date: 03/16/2023
+  author: asergaz
+  ms.author: sergaz
+  ms.reviewer: adchukwu
+  manager: lizross
+  ms.custom: engagement-fy23
+  ms.topic: module-build-your-first
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  questions:
+
+  - content: "Which statement best describes the information in a device template?"
+    choices:
+    - content: "The hardware specification of a device connected to your application."
+      isCorrect: false
+      explanation: "Hardware details aren't captured by a device template."
+    - content: "The data and commands a device can exchange with your application."
+      isCorrect: true
+      explanation: "The template is a specification that captures all the potential information and commands that can be exchanged between your code and the physical device."
+    - content: "The over-the-wire protocol used to communicate with a device."
+      isCorrect: false
+      explanation: "The communication protocol isn't part of a device template."
+
+  - content: "True or false: you must have a physical device to test your IoT Central application."
+    choices:
+    - content: "True"
+      isCorrect: false
+      explanation: "You can use simulated devices for testing."
+    - content: "False"
+      isCorrect: true
+      explanation: "IoT Central automatically creates a simulated device for you when you create a device template. You can also code custom software simulations. These options let you thoroughly test your application before connecting a physical device."
+
+  - content: "Suppose you have five physical devices communicating with IoT Central. How many connection strings would you have?"
+    choices:
+    - content: "One: the connection string is shared by all connected devices."
+      isCorrect: false
+      explanation: "Shared connection strings wouldn't allow IoT Central to uniquely identify each device."
+    - content: "Two: one in active use and one backup in case the primary is compromised."
+      isCorrect: false
+      explanation: "Shared connection strings wouldn't allow IoT Central to uniquely identify each device."
+    - content: "Five: every device needs a unique connection string."
+      isCorrect: true
+      explanation: "The connection string identifies the device to IoT Central, so each device needs its own."

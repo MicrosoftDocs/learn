@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.enroll-devices-use-endpoint-configuration-manager.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/10/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+  ms.prod: configuration-manager
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which Configuration Manager console feature gives you the ability to see if a device is connected to its assigned management point?"
+    choices:
+    - content: "Client Online Status"
+      isCorrect: true
+      explanation: "Correct. With Client Online Status, the site considers the device is online if it's connected to its assigned management point."
+    - content: "Client Activity"
+      isCorrect: false
+      explanation: "Incorrect. The site considers the client active when there's communication with Configuration Manager within seven days. With client activity, the site evaluates if the client has completed one of the key actions within seven days. These activities include requesting policy updates, sending a heartbeat message, or sending a hardware inventory message. Try again."
+    - content: "Client Check"
+      isCorrect: false
+      explanation: "Incorrect. With Client Check, the site runs a periodic evaluation with the Configuration Manager client on the device. The evaluation checks the device and remediates the problems it finds. Try again."
+  - content: "To manage a Windows computer using Configuration Manager, there are multiple ways to deploy the client. What are the four most common methods of deployment?"
+    choices:
+    - content: "Client push, Manual deployment, Configuration Manager application package, Microsoft Intune"
+      isCorrect: false
+      explanation: "Incorrect. While the client can be delivered as a package, the client must already be installed and running on the device before it can receive packages. This method isn't practical for the common scenarios. Try again."
+    - content: "Windows update, Manual deployment, OS deployment, Microsoft Intune"
+      isCorrect: false
+      explanation: "Incorrect. The Client is not deployed through Windows update. Try again."
+    - content: "Client push, Manual deployment, OS Deployment, Microsoft Intune"
+      isCorrect: true
+      explanation: "Correct. With Client push, the client deploys from the Configuration Manager console. By using manual deployment, the ccmsetup.exe file is delivered and executed on the device. With the OS Deployment method, the client is installed as part of a task sequence. With devices that are managed with Microsoft Intune, the client can be delivered as an application."

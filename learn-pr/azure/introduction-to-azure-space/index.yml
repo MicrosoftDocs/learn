@@ -3,7 +3,7 @@ uid: learn.introduction-to-azure-space
 metadata:
   title: Introduction to Azure Space
   description: Explore some of the ins and outs of the space industry and how it's quickly changing.
-  ms.date: 09/16/2022
+  ms.date: 03/31/2023
   author: meaghanlewis
   ms.author: mosagie
   ms.topic: interactive-tutorial
@@ -12,9 +12,9 @@ title: Introduction to Azure Space
 summary: Explore some of the ins and outs of the space industry and how it's quickly changing.
 abstract: |
   After completing this module, you'll be able to:
-  - Understand the current state of the space industry and the key players 
-  - Articulate the business opportunities that space enables
-  - Know the most important capabilities of the Azure Space portfolio 
+  - Understand the current state of the space industry and the key players.
+  - Articulate the business opportunities that space enables.
+  - Know the most important capabilities of the Azure Space portfolio.
 prerequisites: |
   - Familiarity with cloud computing concepts
 iconUrl: /training/achievements/azure-space-intro.svg

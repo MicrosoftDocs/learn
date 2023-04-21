@@ -3,7 +3,7 @@ uid: learn.azure.export-data-with-azure-import-export
 metadata:
   title: "Export large amounts of data from Azure by using Azure Import/Export"
   description: "Learn how and when to use Azure Import/Export to copy large amounts of data from Azure"
-  ms.date: 09/13/2022
+  ms.date: 03/08/2023
   author: alkohli
   ms.author: alkohli
   ms.topic: interactive-tutorial

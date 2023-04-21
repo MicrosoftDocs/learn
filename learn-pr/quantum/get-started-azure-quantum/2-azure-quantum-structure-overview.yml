@@ -5,8 +5,8 @@ metadata:
   title: Azure Quantum structure overview
   description: Learn the basic structure of the Azure Quantum platform.
   ms.date: 01/01/2021
-  author: KittyYeungQ
-  ms.author: kitty
+  author: aviviano
+  ms.author: amvivian
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 8

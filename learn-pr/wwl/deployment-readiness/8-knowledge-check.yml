@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deployment-readiness.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/03/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Northwind Traders has multiple locations and wide area network (WAN) links. When deploying an operating system, an image, or any large amount of data, the company spends considerable time planning the deployment. Its goal is to always minimize the impact the deployment has on the performance of those using the network. When downloading and distributing large amounts of data, which Windows tool can Northwind Traders use that reduces bandwidth consumption by sharing the work of downloading these packages among multiple devices in its deployment?"
+    choices:
+    - content: "Windows Update"
+      isCorrect: false
+      explanation: "Incorrect. This feature can be used in conjunction with the correct answer. Try again."
+    - content: "Endpoint Configuration Manager"
+      isCorrect: false
+      explanation: "Incorrect. This feature can be used in conjunction with the correct answer. Try again."
+    - content: "Delivery Optimization"
+      isCorrect: true
+      explanation: "Correct. You can use Delivery Optimization to reduce bandwidth consumption by sharing the work of downloading these packages among multiple devices in your deployment. Delivery Optimization can accomplish this because it is a self-organizing distributed cache that allows clients to download those packages from alternate sources (such as other peers on the network) in addition to the traditional Internet-based servers."
+  - content: "Fabrikam experienced an application compatibility issue with its oldest legacy application. Unfortunately, all of its mitigation efforts have failed. What final mitigation method should Fabrikam implement so that it can continue to run this app?"
+    choices:
+    - content: "Run the app in compatibility mode"
+      isCorrect: false
+      explanation: "Incorrect. This action can mitigate application compatibility issues such as operating system versioning. However, it isn't the final method to try when all other mitigation efforts have failed. Try again."
+    - content: "Run the app in a virtualized environment"
+      isCorrect: true
+      explanation: "Correct. If all other methods are unavailable, you can run an app in an older version of the Windows operating system by using virtualization tools such as client Hyper-V. Client Hyper-V enables you to provide a local, virtualized environment in which previous versions of Windows can run in virtual machines. This environment enables you to run incompatible apps on supported versions of Windows while maintaining Windows 10 or Windows 11 as the main operating system, and while using only local resources."
+    - content: "Modify the security configuration"
+      isCorrect: false
+      explanation: "Incorrect. This action can mitigate application compatibility issues that appear to be permissions-related. However, it isn't the final method to try when all other mitigation efforts have failed. Try again."

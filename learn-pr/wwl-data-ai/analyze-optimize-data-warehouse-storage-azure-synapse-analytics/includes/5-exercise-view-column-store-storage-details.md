@@ -1,3 +1,4 @@
+
 To view column store storage details, perform the following steps
 
 1. Run the following query to create the `vColumnStoreRowGroupStats`:

@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.wwl.explore-windows-editions
+metadata:
+  title: MD-102 Explore Windows Editions
+  description: "This module explains Windows editions' features, reasons to choose them, and installation methods. Learners will understand various Windows versions and their installation processes. MD-102"
+  ms.date: 04/06/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Explore Windows Editions
+summary: This module covers Windows OS editions, features, and installation methods. Learners gain a deeper understanding of the available editions and corresponding installation processes.
+abstract: |
+  After completing this module, you'll be able to:
+  -  Explain the differences between the different editions of Windows.
+  -  Select the most suitable Windows device for your needs.
+  -   Describe the minimum recommended hardware requirements for installing Windows 11.
+prerequisites: |
+  *   Students should have a basic understanding of computer networks and hardware concepts.
+  *   Students should have a basic understanding of OS and Application concepts.
+  *   Students should have experience with using Windows 11 or later.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- administrator
+products:
+- windows
+- windows-10
+- windows-11
+subjects:
+- device-management
+units:
+- learn.wwl.explore-windows-editions.introduction
+- learn.wwl.explore-windows-editions.examine-client-editions-capabilities
+- learn.wwl.explore-windows-editions.select-client-edition
+- learn.wwl.explore-windows-editions.examine-hardware-requirements
+- learn.wwl.explore-windows-editions.knowledge-check
+- learn.wwl.explore-windows-editions.summary
+badge:
+  uid: learn.wwl.explore-windows-editions.badge

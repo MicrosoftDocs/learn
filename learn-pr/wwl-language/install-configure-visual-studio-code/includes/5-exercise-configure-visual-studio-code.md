@@ -1,4 +1,5 @@
 
+
 You can extend the capabilities of Visual Studio Code using extensions. The Visual Studio Code community has built hundreds of useful extensions available on the Visual Studio Code Marketplace.
 
 ## Configure Visual Studio Code Extensions

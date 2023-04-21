@@ -40,7 +40,7 @@ DDoS Protection provides these service tiers:
     Protection policies are tuned through dedicated traffic monitoring and machine learning algorithms. Policies are applied to public IP addresses, which are associated with resources deployed in virtual networks such as Azure Load Balancer and Application Gateway.
 
     The Azure global network is used to distribute and mitigate attack traffic across Azure regions.
-+ **IP Protection (Preview)**
++ **IP Protection**
 
     DDoS IP Protection is a pay-per-protected IP model. DDoS IP Protection contains the same core engineering features as DDoS Network Protection, but will differ in the following value-added services: DDoS rapid response support, cost protection, and discounts on WAF.
 

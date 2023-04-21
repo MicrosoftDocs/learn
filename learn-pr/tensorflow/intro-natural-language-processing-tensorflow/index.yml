@@ -25,7 +25,7 @@ roles:
 - developer
 - student
 products:
-- vs
+- azure-machine-learning
 prerequisites: |
   - Basic Python knowledge
   - Basic understanding of machine learning

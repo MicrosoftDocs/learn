@@ -23,7 +23,7 @@ roles:
   - developer
   - student
 products:
-  - vs
+  - azure
 prerequisites: None
 subjects:
 - development-tools

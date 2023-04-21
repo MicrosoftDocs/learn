@@ -7,7 +7,7 @@ NLP enables you to create software that can:
 - Automatically translate spoken or written phrases between languages.
 - Interpret commands and determine appropriate actions.
 
-For example, *Starship Commander*, is a virtual reality (VR) game from Human Interact, that takes place in a science fiction world. The game uses natural language processing to enable players to control the narrative and interact with in-game characters and starship systems.
+For example, *Starship Commander* is a virtual reality (VR) game from Human Interact that takes place in a science fiction world. The game uses natural language processing to enable players to control the narrative and interact with in-game characters and starship systems.
 
 Watch the following video to learn more.
 

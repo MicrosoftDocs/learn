@@ -1,3 +1,4 @@
+
 ## Analyze the space used by tables
 
 1. Open [Synapse Studio](https://web.azuresynapse.net/).

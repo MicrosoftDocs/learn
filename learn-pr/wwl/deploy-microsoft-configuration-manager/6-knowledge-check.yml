@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-microsoft-configuration-manager.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/03/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "As the Desktop Administrator for Fabrikam, Holly Spencer is using Configuration Manager to create and deploy Windows images to devices. Holly began by creating a task sequence. She now wants to target the task sequence at a deployment collection to enable successful delivery. Holly wants to use Configuration Manager's built-in collection that contains the largest scope of device resources. Which built-in collection is this?"
+    choices:
+    - content: "All Mobile Devices"
+      isCorrect: false
+      explanation: "Incorrect. This built-in collection doesn't contain the largest scope of device resources. Try again."
+    - content: "All Desktop and Server Clients"
+      isCorrect: false
+      explanation: "Incorrect. This built-in collection doesn't contain the largest scope of device resources. Try again."
+    - content: "All Systems"
+      isCorrect: true
+      explanation: "Correct. The All Systems collection contains the All Desktop and Server Clients collection, the All Mobile Devices collection, and the All Unknown Computers collection, and all mobile devices that are enrolled by Microsoft Intune. This collection contains the largest scope of device resources."
+  - content: "Contoso wants to run Windows setup to complete an in-place upgrade from Windows 8.1 to Windows 11. What's the recommended approach for large-scale deployments such as Contoso that have hundreds of devices to upgrade?"
+    choices:
+    - content: "Run the Windows setup manually with an unattended file"
+      isCorrect: false
+      explanation: "Incorrect. Running setup manually is not a scalable solution, even when using an unattended file. Try again."
+    - content: "Build a task sequence"
+      isCorrect: true
+      explanation: "Correct. Running setup manually is not a scalable solution, even when using an unattended file. Building a task sequence is the recommended approach for large-scale deployments."
+    - content: "Use Windows Autopilot"
+      isCorrect: false
+      explanation: "Incorrect. Until the device is upgraded to Windows 11 or later, traditional deployment tools must be used. Once the machine is upgraded to Windows 11, solutions such as Windows Autopilot can be used for future servicing. Try again."
