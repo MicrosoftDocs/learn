@@ -3,7 +3,7 @@
 Integrating SAP HANA with Azure AD provides you with the following benefits:
 
 - You can control in Azure AD who has access to SAP HANA.
-- You can enable your users to be automatically signed in to SAP HANA (Single Sign-On) with their Azure AD accounts.
+- You can enable your users to be automatically signed in to SAP HANA (single sign-on) with their Azure AD accounts.
 - You can manage your accounts in one central location - the Azure portal.
 
 To configure Azure AD integration with SAP HANA, you need the following items:
@@ -26,8 +26,8 @@ To configure the integration of SAP HANA into Azure AD, first add SAP HANA from 
 
 To configure Azure AD single sign-on with SAP HANA, complete the following steps:
 
-1. Configure Azure AD Single Sign-On to enable users to use this feature.
-2. Configure SAP HANA Single Sign-On to configure the Single Sign-On settings on application side.
+1. Configure Azure AD single sign-on to enable users to use this feature.
+2. Configure SAP HANA single sign-on to configure the single sign-on settings on application side.
 3. Assign Azure AD users to allow them to use Azure AD single sign-on.
 4. Create SAP HANA users to provision counterpart accounts in SAP HANA linked to the corresponding Azure AD user accounts.
 
