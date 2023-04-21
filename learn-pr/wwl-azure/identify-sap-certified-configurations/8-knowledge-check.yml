@@ -19,10 +19,10 @@ quiz:
     choices:
     - content: "Azure VMs"
       isCorrect: false
-      explanation: "Incorrect. Providing an easy way to deploy and test pre-configured SAP solutions offered by SAP without having to deploy underlying infrastructure is not a primary benefit of Azure VMs."
+      explanation: "Incorrect. Providing an easy way to deploy and test pre-configured SAP solutions offered by SAP without having to deploy underlying infrastructure isn't a primary benefit of Azure VMs."
     - content: "SAP S4/HANA"
       isCorrect: false
-      explanation: "Incorrect. Providing an easy way to deploy and test pre-configured SAP solutions offered by SAP without having to deploy underlying infrastructure is not a primary benefit of SAP S4/HANA"
+      explanation: "Incorrect. Providing an easy way to deploy and test pre-configured SAP solutions offered by SAP without having to deploy underlying infrastructure isn't a primary benefit of SAP S4/HANA"
     - content: "SAP Cloud Appliance Library"
       isCorrect: true
       explanation: "Correct. SAP Cloud Appliance Library allows the deployment of pre-configured software appliances on different public clouds, including Azure."
