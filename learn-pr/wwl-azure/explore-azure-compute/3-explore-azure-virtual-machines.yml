@@ -4,13 +4,11 @@ title: Explore Azure virtual machines (VMs)
 metadata:
   title: Explore Azure virtual machines (VMs)
   description: "Explore Azure virtual machines (VMs)"
-  ms.date: 07/06/2022
+  ms.date: 04/21/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/3-explore-azure-virtual-machines.md)]
