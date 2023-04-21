@@ -15,7 +15,7 @@ To configure the integration of SAP Cloud Platform Identity Authentication into 
 Next, you need to configure and test Azure AD-based SSO by using the following sequence of steps:
 
 1. Configure Azure AD single sign-on - to enable your users to use this feature.
-2. Configure SAP Cloud Platform Identity Authentication Single Sign-On - to configure the single sign-on settings on application side.
+2. Configure SAP Cloud Platform Identity Authentication single sign-on - to configure the single sign-on settings on application side.
 3. Assign Azure AD users to SAP Cloud Platform Identity Authentication.
 
 ### Configure Azure AD single sign-on

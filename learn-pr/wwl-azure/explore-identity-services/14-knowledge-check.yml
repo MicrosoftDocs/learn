@@ -19,10 +19,10 @@ quiz:
     choices:
     - content: "Azure Active Directory Basic"
       isCorrect: false
-      explanation: "That’s incorrect. Azure Active Directory Basic does not offer Azure Active Directory Identity Protection."
+      explanation: "That’s incorrect. Azure Active Directory Basic doesn't offer Azure Active Directory Identity Protection."
     - content: "Azure Active Directory Premium P1"
       isCorrect: false
-      explanation: "That’s incorrect. Azure Active Directory Premium P1 does not offer Azure Active Directory Identity Protection."
+      explanation: "That’s incorrect. Azure Active Directory Premium P1 doesn't offer Azure Active Directory Identity Protection."
     - content: "Azure Active Directory Premium P2"
       isCorrect: true
       explanation: "That’s correct. Azure Active Directory Premium P2 also offers Azure Active Directory Identity Protection and Privileged Identity Management (PIM)."
@@ -30,18 +30,18 @@ quiz:
     choices:
     - content: "Yes"
       isCorrect: false
-      explanation: "That’s incorrect. Azure AD DS does not allow users to create trust relationships or extend the schema. Support for Group Policy is limited, with only two previously created Group Policy Objects. In addition, Azure AD DS does not support LDAP writes."
+      explanation: "That’s incorrect. Azure AD DS doesn't allow users to create trust relationships or extend the schema. Support for Group Policy is limited, with only two previously created Group Policy Objects. In addition, Azure AD DS doesn't support LDAP writes."
     - content: "No"
       isCorrect: true
-      explanation: "That's correct. Azure AD DS does not allow users to create trust relationships or extend the schema. Support for Group Policy is limited, with only two previously created Group Policy Objects. In addition, Azure AD DS does not support LDAP writes."
+      explanation: "That's correct. Azure AD DS doesn't allow users to create trust relationships or extend the schema. Support for Group Policy is limited, with only two previously created Group Policy Objects. In addition, Azure AD DS does not support LDAP writes."
     - content: "Azure AD DS doesn't support LDAP writes, but there are no other differences"
       isCorrect: false
-      explanation: "That’s incorrect. Azure AD DS does not support LDAP writes, but there are some other important differences between AD DS and Azure AD DS. For example, Azure AD DS does not allow users to create trust relationships or extend the schema. Support for Group Policy is limited, with only two previously created Group Policy Objects."
+      explanation: "That’s incorrect. Azure AD DS doesn't support LDAP writes, but there are some other important differences between AD DS and Azure AD DS. For example, Azure AD DS does not allow users to create trust relationships or extend the schema. Support for Group Policy is limited, with only two previously created Group Policy Objects."
   - content: "There are several ways to integrate Linux VMs with Active Directory. Which of the following options doesn't allow users to change their passwords from the Linux client?"
     choices:
     - content: "LDAP Authentication / Authorization"
       isCorrect: true
-      explanation: "That's correct. With LDAP Authentication / Authorization users cannot change their password from the Linux client."
+      explanation: "That's correct. With LDAP Authentication / Authorization users can't change their password from the Linux client."
     - content: "Kerberos 5 Authentication / LDAP Authorization"
       isCorrect: false
       explanation: "That’s incorrect. With Kerberos 5 Authentication and LDAP Authorization, users can change their passwords from the Linux client."
