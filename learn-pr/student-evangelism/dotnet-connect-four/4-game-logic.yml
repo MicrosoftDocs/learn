@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.dotnet-connectfour.game-logic
+uid: learn.dotnet-connect-four.game-logic
 title: Game logic
 metadata:
   title: Game logic
@@ -9,6 +9,6 @@ metadata:
   ms.date: 03/15/2023
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 2
+durationInMinutes: 4
 content: |
   [!include[](includes/4-game-logic.md)]

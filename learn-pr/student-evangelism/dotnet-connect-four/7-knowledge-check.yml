@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.dotnet-connectfour.knowledge-check
+uid: learn.dotnet-connect-four.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
@@ -20,7 +20,7 @@ quiz:
     - content: Use @click="handler".
       isCorrect: false
       explanation: Incorrect. You should type @onclick="handler" not @click="handler".
-    - content: Use onclick="handler"".
+    - content: Use onclick="handler".
       isCorrect: false
       explanation: Incorrect. You should type @onclick="handler" not onclick="handler".
     - content: Use click="handler""

@@ -2,7 +2,7 @@ The game works... but maybe you don't like our default colors. In Blazor, we can
 
 In this exercise, we focus on customization and making the game look better using parameters.
 
-## Customizing the board with Parameters
+## Customizing the board with parameters
 
 Let's add some parameters for the colors on the board, and pass in some Groovy colors from the Pages/Index.razor page.
 
@@ -55,5 +55,5 @@ Let's now interpret the parameters and place their values in the CSS block at th
 
     Isn't that a cool looking board?
 
-    :::image type="content" source="../media/4-Board.png" alt-text="end of game":::
+    :::image type="content" source="../media/4-board.png" alt-text="Screenshot of showing end of game.":::
 

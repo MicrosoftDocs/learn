@@ -139,7 +139,7 @@ We next need to place some controls that allow players to choose a column and ca
 
 1. Let's review in the browser and it should look like this now:
 
-   :::image type="content" source="../media/2-Board-Step3.png" alt-text="Connect Four board":::
+   :::image type="content" source="../media/2-board-step3.png" alt-text="Connect Four board":::
 
    Even better... when we select one of the drop buttons at the top, the following behavior can be observed:
 
@@ -214,7 +214,7 @@ Let's add a status area above the board, and below the drop buttons.
 
     Our error handler indicator is simple, and uses the Bootstrap CSS framework to display an error in danger mode.
 
-    :::image type="content" source="../media/3-Board-ErrorHandler.png" alt-text="Your game so far, with a board and pieces":::
+    :::image type="content" source="../media/3-board-error-handler.png" alt-text="Your game so far, with a board and pieces":::
 
 1. Next, let's add the `ResetGame()` method that our button triggers to restart a game. Currently, the only way to restart a game is to refresh the page... this code allows us to stay on the same page.
 
@@ -236,7 +236,7 @@ Let's add a status area above the board, and below the drop buttons.
 
     This update should allow us to play the game again, and now we see an indicator just above the board declaring the player's turn and eventually the completion of the game.
 
-    :::image type="content" source="../media/3-Board-Step1.png" alt-text="displaying game over":::
+    :::image type="content" source="../media/3-board-step1.png" alt-text="displaying game over":::
 
     We're still left in a situation where we can't select the reset button. Let's add some logic in the `PlayPiece()` method to detect the end of the game.
 
@@ -256,7 +256,7 @@ Let's add a status area above the board, and below the drop buttons.
 
     Now when we play and reach a game-ending scenario, these indicators appear:
 
-    :::image type="content" source="../media/3-Board-Step2.png" alt-text="Reset game"::: 
+    :::image type="content" source="../media/3-board-step2.png" alt-text="Reset game"::: 
 
 ## Summary
 

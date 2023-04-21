@@ -2,7 +2,7 @@ There are many approaches to build web applications. To build web applications t
 
 Another approach is the use to the Blazor framework by Microsoft, which allows you to use a mixture of C# and JavaScript while compiling to WASM, web assembly. Assembly language that your browser knows how to run.
 
-## What is Blazor
+## What is Blazor ?
 
 Blazor is a framework for building web pages with HTML, CSS, and C#. We can define the layout and design of the website using standard HTML and CSS. The interactive components of the web pages can then be managed with C# code that runs on a server or in the browser using a web standard technology called WebAssembly. The formatting of HTML and CSS build on what we learned in our previous sessions, using the Razor template language. Blazor allows us to define our web pages using Razor and include other Razor files as components inside those pages. This capability means we can build and reuse parts of our application easily.
 

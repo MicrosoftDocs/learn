@@ -37,11 +37,11 @@ First, let's scaffold a new project for our game. With .NET 6 installed, we can 
    > [!NOTE]
    > In the above sample, we would navigate to http://localhost:5136. You should be presented with the following welcome screen in your browser:
 
-   :::image type="content" source="../media/1-NewTemplate.png" alt-text="Blazor running project":::
+   :::image type="content" source="../media/1-new-template.png" alt-text="Screenshot of Blazor running project.":::
 
    Congratulations! You've created your first Blazor application using the Blazor WebAssembly template.
 
-## Create a Board component
+## Create a board component
 
 Next, let's create a board component to be used by players in our game. The component is defined using Razor syntax, which is a mix of HTML and C#.
 
@@ -81,7 +81,7 @@ Next, let's create a board component to be used by players in our game. The comp
 
    Hot reload allows you to observe the evolution of the game from a page to a full Connect Four board with interactive pieces.
 
-   :::image type="content" source="../media/2-Board-Step1.png" alt-text="App board with title":::
+   :::image type="content" source="../media/2-board-step1.png" alt-text="Screenshot of App board with title.":::
 
    Congratulations! You've built your first component and used it on a Blazor page.
 
@@ -189,6 +189,6 @@ Let's add some style to this component by defining some colors for the frame of 
 
     Your browser should be refreshed for you (if not you can manually refresh the browser with F5), and you should be greeted with a proper yellow Connect Four board:
 
-   :::image type="content" source="../media/2-Board-Step2.png" alt-text="Yellow connect four board":::
+   :::image type="content" source="../media/2-board-step2.png" alt-text="Screenshot of Yellow connect four board":::
 
    Congratulations, you now have the start of game. In later units, we add game logic to it.

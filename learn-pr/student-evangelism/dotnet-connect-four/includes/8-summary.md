@@ -1,4 +1,4 @@
-In this module, you built a "Connect Four" game using Blazor. In the process you learned about various core concepts to gain a better familiarity with tthe Blazor framework.
+In this module, you built a "Connect Four" game using Blazor. In the process you learned about various core concepts to gain a better familiarity with the Blazor framework.
 
 First, you scaffolded an application and learned about its major parts.
 

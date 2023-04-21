@@ -2,7 +2,7 @@
 uid: learn.gh-dotnet-connectfour
 metadata:
   title: Build Connect Four game with Blazor
-  description: Learn how to build a web app with Blazor
+  description: Learn how to build a web app with Blazor.
   ms.date: 03/15/2023
   author: softchris
   ms.author: chnoring
@@ -26,13 +26,13 @@ products:
   - vs
 prerequisites: None
 units:
-  - learn.dotnet-connectfour.introduction
-  - learn.dotnet-connectfour.blazor
-  - learn.dotnet-connectfour.exercise-blazor
-  - learn.dotnet-connectfour.game-logic
-  - learn.dotnet-connectfour.exercise-game-logic
-  - learn.dotnet-connectfour.exercise-parameters
-  - learn.dotnet-connectfour.knowledge-check
-  - learn.dotnet-connectfour.summary
+  - learn.dotnet-connect-four.introduction
+  - learn.dotnet-connect-four.blazor
+  - learn.dotnet-connect-four.exercise-blazor
+  - learn.dotnet-connect-four.game-logic
+  - learn.dotnet-connect-four.exercise-game-logic
+  - learn.dotnet-connect-four.exercise-parameters
+  - learn.dotnet-connect-four.knowledge-check
+  - learn.dotnet-connect-four.summary
 badge:
   uid: learn.dotnet-connectfour.badge
