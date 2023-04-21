@@ -77,7 +77,7 @@ quiz:
       explanation: "That’s incorrect. This deployment isn't supported. The reason for this restriction is the requirement for a low latency high-performance network within one SAP system, especially between the application instances and the DBMS layer of an SAP system."
     - content: "Some components of an SAP layer are run in Azure, and other components are run on-premises."
       isCorrect: false
-      explanation: "That’s incorrect. This deployment is not supported. The reason for this restriction is the requirement for a low latency high-performance network within one SAP system, especially between the application instances and the DBMS layer of an SAP system."
+      explanation: "That’s incorrect. This deployment isn't supported. The reason for this restriction is the requirement for a low latency high-performance network within one SAP system, especially between the application instances and the DBMS layer of an SAP system."
     - content: "SAP systems reside entirely in either one of the two environments."
       isCorrect: true
       explanation: "That’s correct. In cross-premises scenarios between Azure and on-premises customers’ environments, SAP systems must reside entirely in either one of the two environments. The reason for this restriction is the requirement for a low latency high-performance network within one SAP system, especially between the application instances and the DBMS layer of an SAP system."
