@@ -1,7 +1,8 @@
 Now it's time to get data ready to create your prediction model. Remember, ideally a meteor expert would guide this step. But even without an expert, we can make a best guess at what data would help us identify the best date to see a meteor shower. 
 
 Before we gather data, it's important to identify the kind of data that we want to find. We know a few things:
-- Meteor showers are typically caused by meteoroids that melt off of comets. 
+
+- Meteoroids that melt off of comets typically cause meteor showers.
 - Comets have an orbit around the sun that's observable and predictable.
 - A bright Moon makes a meteor shower harder to see.
 - The orbit and spin of Earth affects where a meteor shower can be seen from Earth.
@@ -44,7 +45,8 @@ Every 33 years, the [Leonids meteor shower](https://solarsystem.nasa.gov/asteroi
 
 As [the Moon](https://solarsystem.nasa.gov/moons/earths-moon/overview/?azure-portal=true) orbits Earth, and Earth orbits the sun, different amounts of sunlight are reflected off the Moon to Earth. Each month, the Moon cycles through different phases. The phases are basically the names we apply to how much sunlight we see reflecting off certain parts of the Moon. 
 
-These are the phases of the Moon:
+The phases of the Moon are:
+
 - New Moon: Around the 15th of the month
 - Waxing crescent
 - First quarter: Around the 23rd of the month
@@ -58,25 +60,24 @@ New Moon, first quarter, full Moon, and third quarter are the most frequently tr
 
 ## Data files
 
-We've started to gather some data for the example in this module. On your own, try to find additional data that will help you explore the predictions of meteor showers. 
+We've started to gather some data for the example in this module. On your own, try to find other data that you can use to explore the predictions of meteor showers. For example, you can create new data files containing data for the current year or future years.
 
 Here's the data we've already gathered:
+
 - [moonphases.csv](https://aka.ms/LearnWithDrG/OverTheMoon/Data?azure-portal=true) - This file contains the Moon phases for every day of 2020. The missing data will be added in the next unit. (Data acquired from [timeanddate.com](https://www.timeanddate.com/moon/phases/?azure-portal=true))
 - [meteorshowers.csv](https://aka.ms/LearnWithDrG/OverTheMoon/Data?azure-portal=truea) - This file contains data for each of the five meteor showers that we described earlier. Data includes their preferred viewing month, the months when they're visible, and the preferred hemisphere for viewing. (Data acquired from [NASA](https://solarsystem.nasa.gov/asteroids-comets-and-meteors/meteors-and-meteorites/in-depth/?azure-portal=true))
 - [constellations.csv](https://aka.ms/LearnWithDrG/OverTheMoon/Data?azure-portal=true) - This file contains data for the four constellations that are radiants for the five meteor showers. Data includes the latitudes for which they're visible and the month for the best viewing. (Data acquired from [Wikipedia](https://en.wikipedia.org/wiki/IAU_designated_constellations?azure-portal=true).)
-- [cities.csv](https://aka.ms/LearnWithDrG/OverTheMoon/Data?azure-portal=true) - This file contains a list of country/regional capitals/major cities and their associated latitudes. (Data acquired from [Wikipedia](https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude?azure-portal=true)) 
+- [cities.csv](https://aka.ms/LearnWithDrG/OverTheMoon/Data?azure-portal=true) - This file contains a list of country/regional capitals/major cities and their associated latitudes. (Data acquired from [Wikipedia](https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude?azure-portal=true))
 
-Download these files and save them in your *over-the-moon/meteor-showers/data* folder:
+Copy the content of these files and save them to CSV files in your *over-the-moon/meteor-showers/data* folder:
 
 :::image type="content" source="../media/data-downloaded.png" alt-text="Screenshot that shows all four C S V data files in the data folder in Visual Studio Code.":::
 
 > [!TIP]
-> To download a CSV file in GitHub:
+> To copy the contents of a CSV file in GitHub and save to a CSV file in Codespaces:
 > 1. In the list of files in the GitHub repository, select the file.
-> 1. In the upper-right corner, select **Raw**. The file opens as a raw CSV file in your browser.
-> 1. Right-click anywhere in the browser window, and then select **Save as**.
-> 1. In the **File save as** dialog box, you can choose the file name (use the original name of the downloaded CSV file), the file type (CSV), and where to download the file to (your project data folder).
->
+> 1. In the upper-right corner, select the copy icon. The file contents are copied.
+> 1. In Codespaces, select the **data** folder and then select **New File**. Paste the copied data into the file and save it using the original name of the CSV file.
 
 ## Other data to consider
 
