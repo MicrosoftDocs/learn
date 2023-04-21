@@ -88,11 +88,11 @@ To authenticate over an SSH connection, you can use a combination of a username 
 
 Even with SSH keys, by default you must open connectivity to a public address associated with the target Azure VM's network adapter. However, this is vulnerable to external threats, and represents a potential attack vector. To mitigate this risk, consider implementing Azure Bastion or just-in-time (JIT) VM access. 
 
-### _Azure Bastion_
+### Azure Bastion
 
 The first method involves deploying the Azure Bastion service into a dedicated subnet of a virtual network with connectivity to the target VM. Azure Bastion serves as a broker for external SSH connections. These connections take place over HTTPS and are available only from the Azure portal. This eliminates the need for assigning public IP addresses to the target VM's network interface. It also helps ensure that only authenticated and properly authorized users can initiate SSH connections. For more information regarding these options, see the [Azure Bastion](/azure/bastion/bastion-overview) Microsoft Learn article.
 
-### _JIT VM Access_
+### JIT VM Access
 
 JIT VM access is one of the Microsoft Defender for Cloud features. Its purpose is to limit access to a public IP address associated with an Azure VM's network interface. Access limitations are achieved by dynamically adjusting the NSG to allow incoming connections only from an explicitly designated IP address range during a designated time window. As with Azure Bastion, a user must authenticate first before initiating a connection from the Azure portal.
 
