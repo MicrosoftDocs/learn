@@ -43,4 +43,4 @@ The first business commitment comes in the form of a promise to deliver a set le
 
 The second business commitment focuses on what else is needed from operations for various platforms and workloads. Any platform or workload with higher levels of criticality or impact likely needs more than the minimum SLA.
 
-To complete the business commitment, it's important to document who will be responsible for managing higher levels of day-to-day operations for those workloads. It can be a centralized responsibility with a central IT team or a mixed model between different groups.
+To complete the business commitment, it's important to document the group or groups responsible for managing higher levels of day-to-day operations for those workloads. It can be a centralized responsibility with a central IT team or a mixed model between different groups.
