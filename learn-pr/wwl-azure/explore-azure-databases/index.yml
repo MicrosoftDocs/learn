@@ -2,7 +2,7 @@
 uid: learn.wwl.explore-azure-databases
 metadata:
   title: Explore Azure for SAP databases
-  description: "Explore Azure for SAP databases"
+  description: "This module explores SAP on Azure database support and best practices for Azure for SAP workloads. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
   ms.date: 04/21/2023
   author: wwlpublish
   ms.author: eric
