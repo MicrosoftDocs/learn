@@ -1,77 +1,46 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
 
-    Goal: briefly summarize the key skill this unit will teach
 
-    Heading: none
+#  Degree of Parallelism Feedback
+The optimizer in SQL Server will in some cases run pieces of the query plan called operators using parallelism with multiple concurrent threads. The number of threads used for a query plan operator is called Degree of Parallelism (DOP).  
+ 
+The degree of parallelism (DOP) with which a query is executed can greatly impact its performance. Any time a query is using parallelism, there is always the question of if it’s using the right amount of parallelism. Sometimes, if the degree of parallelism is too high, it can introduce inefficiencies into the query execution. If the degree of parallelism is too low, we may be missing out on some of the speed-up that parallelism can provide.  
 
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
+SQL Server can control the maximum number of threads per operator using server, database, resource group, or query settings called max degree of parallelism or MAXDOP. Setting the right MAXDOP for a SQL Server deployment can be a complex and sometimes difficult exercise.
 
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
-
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
-
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
-
-    Heading: none, combine this with the topic sentence into a single paragraph
-
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
-
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
-
-    Goal: State concisely what's covered in this unit
-
-    Heading: none, combine this with the topic sentence into a single paragraph
-
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
-
-<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
-
-    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
-
-    Heading: none
--->
-TODO: add a visual element
-
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
-
-    Goal: Provide all the information the learner needs to perform this sub-task.
-
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
-
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=main)
--->
-
-<!-- Pattern for simple chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
 
 <!-- Pattern for complex chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
+### Feature overview
+In SQL Server 2022, we introduced a new feature called DOP feedback. The optimizer uses DOP feedback to find the parallel efficiency for a query. Parallel efficiency is the minimum DOP for a query that can result in the same overall query duration (factoring our common waits).   This feature will look at any parallel query and determine if it might perform better with a lower degree of parallelism than currently being used. Reducing the DOP for a query can provide more threads and CPU resources for other queries of the application.  
+
+DOP feedback never increases the degree of parallelism, at best, it will revert to a stable previous DOP, and it works incrementally, meaning instead of trying to drastically lower the degree of parallelism all at once, it will try a slightly lower degree of parallelism. Then if that’s good, it might try another slightly lower degree of parallelism. If the new, even lower degree of parallelism is good, it might try to reduce again down to the degree of parallelism of two, although it will not make a parallel plan become serial. If the new, lower DOP is not as good, we go back to the previous known good DOP and keep the query at that level.
+
+
+![DOP feedback reduces the degree of parallelism in a stepwise fashion, incrementally decreasing the degree of parallelism and verifying at each step.](../media/Feedbackstep.png)
+
+
+
+### Example
+A query is compiled with a degree of parallelism of 8.  If DOP feedback detects a fair amount of wait times between threads and CPU overhead, it will suggest a lower DOP—say, 6. On the next execution, the query will execute with a DOP of 6. If the performance is better over the next several executions, the DOP of 6 will be considered stabilized. However, DOP feedback may then determine that there are still too many waits and further attempt a DOP of 4. Again, several executions are used to verify the feedback. Then, perhaps, a DOP of 2 is tried. If after several executions the DOP 2 performance is not better, then the system will return to suggesting a DOP of 4 as the most recent, stable, and verified DOP.
+
+### DOP Feedback Architecture
+:::image type="content" source="../media/DOPFeedbackarch.png" alt-text="DOP Feedback architecture.":::
+
+DOP feedback requires the Query Store to be enabled, database compatibility level 160, and a database setting called `DOP_FEEDBACK` to be turned on.  
+With these settings, the optimizer will work in coordination with Query Store background tasks to look for repetitive and long-running queries that could benefit from a lower DOP. A feedback cycle will be used to validate an adjusted query duration (factoring out waits) won't regress with a lower DOP value and that lower overall CPU is observed for the query. After a period of validation, a lower DOP is considered stabilized and will be persisted in the Query Store. The optimizer will continue to validate lower DOP values in a stepwise down fashion to find the best parallel efficiency or a minimum DOP, which is 2. DOP feedback will never increase DOP and will honor the MAXDOP setting for a query depending on server, database, resource governor, or query hint that has been applied.  
+
+
+
+### Simple setup and easy optimization
+With DOP feedback enabled, all of this is done without triggering query recompiles, and without user action.  
+
+DOP feedback for SQL Server 2022 addresses a long-held challenge for our customers: finding the right degree of parallelism for each query without having to manually test and tweak each query for optimal performance. 
+
+
+
+For more information, refer to Degrees of Parallelism (DOP) feedback  
+https://learn.microsoft.com/en-us/sql/relational-databases/performance/intelligent-query-processing-feedback?view=sql-server-ver16#degree-of-parallelism-dop-feedback  
+
+
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
