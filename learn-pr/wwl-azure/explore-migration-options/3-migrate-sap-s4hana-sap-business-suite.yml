@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.explore-migration-options.migrate-to-sap-s4hana-from-sap-business-suite
+uid: learn.wwl.explore-migration-options.migrate-sap-s4hana-sap-business-suite
 title: Migrate to SAP S/4HANA from SAP Business Suite
 metadata:
   title: Migrate to SAP S/4HANA from SAP Business Suite
   description: "Migrate to SAP S/4HANA from SAP Business Suite"
-  ms.date: 04/20/2023
+  ms.date: 04/21/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial

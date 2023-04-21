@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.explore-migration-options.explore-one-step-migration-dmo-system-move-option
+uid: learn.wwl.explore-migration-options.explore-one-step-migration-database-move-only-option-system-move-option
 title: Explore one-step migration - DMO with system move option
 metadata:
   title: Explore one-step migration - DMO with system move option
   description: "Explore one-step migration - DMO with system move option"
-  ms.date: 04/20/2023
+  ms.date: 04/21/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
