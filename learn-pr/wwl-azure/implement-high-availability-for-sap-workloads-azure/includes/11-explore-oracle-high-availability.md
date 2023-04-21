@@ -1,3 +1,5 @@
+
+
 Windows and Oracle Linux are the only operating systems that are supported by Oracle and Azure for SAP workloads. The widely used SLES and RHEL Linux distributions aren't supported for deploying Oracle components in Azure. Oracle components include the Oracle Database client, which is used by SAP applications to connect against the Oracle DBMS.
 
 Exceptions, according to [SAP Note \#2039619](https://launchpad.support.sap.com/#/notes/2039619), are SAP components that don't use the Oracle Database client. Such SAP components are SAP's stand-alone enqueue, message server, Enqueue replication services, WebDispatcher, and SAP Gateway.
