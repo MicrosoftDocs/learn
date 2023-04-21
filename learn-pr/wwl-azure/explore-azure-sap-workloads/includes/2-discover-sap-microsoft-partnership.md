@@ -13,7 +13,7 @@ Some benefits of running SAP applications on Azure are:
 - **Security and compliance**: Azure makes it easy to protect your data and solutions using encryption, Azure Security Center, and Azure Active Directory, which provides single sign on across multiple services, both on-premises and cloud. With various industry compliance and trust certifications, Azure provides a complete compliance solution.
 - **Global scale**: Azure has the largest footprint of any cloud providers with 54 regions to support any scale, enabling organizations to optimize for the best user experience and to meet local data residency requirements.
 - **Enterprise-grade resilience**: Azure provides enterprise grade resilience with redundancy and geo replication with 99.99% SLA.
-- **Lower TCO**: Azure also provides for a 60% cost reduction when compared to traditional, on-premise storage systems. By using SAP technologies on Azure, customers can realize 40-75% TCO cost savings in Dev and Test environments.
+- **Lower TCO**: Azure also provides for a 60% cost reduction when compared to traditional, on-premises storage systems. By using SAP technologies on Azure, customers can realize 40-75% TCO cost savings in Dev and Test environments.
 
 ## SAP on Azure customers
 
