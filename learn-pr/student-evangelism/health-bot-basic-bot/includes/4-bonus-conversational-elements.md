@@ -11,10 +11,10 @@ From sending prompt messages to getting answers from the user to specific questi
 Use prompts to create two-way interactions with the user. Configure the displayed message in a way that it guides the user and provides the expected value. The fields for creating prompts are:
 
 - **Display Text** (optional): The text that's presented to the user and prompts a value entry. Provide plain text, a string literal, or a valid JavaScript expression that evaluates to a string.
-- **Variable name** (required): The name of the conversation variable that will store the user's response.
+- **Variable name** (required): The name of the conversation variable that store the user's response.
 - **Data Type** (required): The variable type for storing the user response. Options are number, string, Boolean, date, time, object, or choice.
 - **Is Active** (optional): A valid Boolean expression that determines whether or not the step is executed during runtime.
-- **Maximum number of retries:** (optional) The number of times that the bot will repeat the prompt if the user response is not valid (that is, not compatible with the data type). You can limit the number of attempts or leave this field empty for unlimited retries. You then need to decide how to handle failures when the user reaches the maximum number of attempts.
+- **Maximum number of retries:** (optional) The number of times that the bot repeats the prompt if the user response isn't valid, meaning that the response isn't compatible with the data type. You can limit the number of attempts or leave this field empty for unlimited retries. You then need to decide how to handle failures when the user reaches the maximum number of attempts.
 
 Allowing the user to select an option from a predefined list is often preferable to forcing the user to enter plain text.
 
@@ -24,7 +24,7 @@ The yes/no prompt is essentially a Boolean prompt combined with a decision s
 
 ### Statement
 
-A statement triggers an output from the health bot instance with no expectation of a response. The configuration pane is quite simple. Both the **Display Text** and **Is Active** fields can contain static values, or they can refer to valid JavaScript expressions that include variable data.
+A statement triggers an output from the health bot instance with no expectation of a response. The configuration pane is simple. Both the **Display Text** and **Is Active** fields can contain static values, or they can refer to valid JavaScript expressions that include variable data.
 
 ## Flow control
 
@@ -34,17 +34,17 @@ The data flow components are responsible for constructing, executing, and contro
 
 ### Branch
 
-The flow of the script will branch according to the yes/no nodes of the *branch* object. These nodes refer to a true and false evaluation, respectively. It's a two-way decision split, based on code. It's not based on the user's input.
+The flow of the script branches according to the yes/no nodes of the *branch* object. These nodes refer to a true and false evaluation, respectively. It's a two-way decision split, based on code. It's not based on the user's input.
 
 ### Switch
 
 The switch element defines a multi-way split in the flow of the scenario according to the evaluated expression. Instead of using a simple branch element that's set to two exit points, the switch statement allows multiple exit points to simplify the scenario flow.
 
-Sharing the same functionality between different scenarios is common. It's possible to create a scenario that can be called throughout the project. It can receive input parameters and return output to the calling scenario, making it reusable. The variables defined in such a scenario are local to the scope of the instance. So they won't affect other variables, even variables with the same name.
+Sharing the same functionality between different scenarios is common. It's possible to create a scenario that can be called throughout the project. It can receive input parameters and return output to the calling scenario, making it reusable. The variables defined in such a scenario are local to the scope of the instance. So they don't affect other variables, even variables with the same name.
 
 ### Begin Scenario
 
-The begin element invokes a sub-scenario. Sub-scenario is another smaller scenario which is connected to the main scenario through a keyword or action. Execution of the current scenario is resumed after the sub-scenario ends.
+The begin element invokes a subscenario. A subscenario is another smaller scenario that's connected to the main scenario through a keyword or action. Execution of the current scenario is resumed after the subscenario ends.
 
 Select the relevant scenario trigger value from the dropdown menu. Define the arguments with either a literal or a variable object. Define the output variable name with the return value from the called scenario.
 
@@ -54,7 +54,7 @@ When you want to completely replace a scenario and end the current scenario, you
 
 ### End Scenario
 
-When you're ready to return from the called scenario, place an end object from the end scenario with the result element in the sub-scenario.
+When you're ready to return from the called scenario, place an end object from the end scenario with the result element in the subscenario.
 
 The scope of the end object is as follows:
 
@@ -73,7 +73,7 @@ To integrate external data resources, you can use a data connections object. Thi
 
 You can define data connections at two levels:
 
-- **Connection-level configuration**: These configuration details set the baseline for the data connection. They're included in all the calls to the connection endpoints.
+- **Connection-level configuration**: Configuration details that set the baseline for the data connection. They're included in all the calls to the connection endpoints.
 - **Step-level configuration**: This configuration can extend or override the connection-level details. They're used at specific scenario steps and don't apply to every call made to the connection.
 
 ### Skill

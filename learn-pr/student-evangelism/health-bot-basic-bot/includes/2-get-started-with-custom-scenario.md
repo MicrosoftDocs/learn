@@ -16,9 +16,9 @@ The Azure Health Bot service supports several built-in scenarios. For example, t
 
    - **Name**: Choose a name for your custom bot. Try to keep it meaningful so that it's easy to find when you're searching for it.
 
-   - **Description**: Enter a brief explanation of your bot so that others will know why you're creating it.
+   - **Description**: Enter a brief explanation of your bot so that others know why you're creating it.
 
-   - **Scenario ID**: Enter a unique ID for the bot. It's case-sensitive and does not allow spaces.
+   - **Scenario ID**: Enter a unique ID for the bot. It's case-sensitive and doesn't allow spaces.
 
    - **Returning Message**: Enter a message that appears if the scenario is interrupted and then the user returns.  
 
@@ -26,6 +26,6 @@ The Azure Health Bot service supports several built-in scenarios. For example, t
 
 1. Select **Create**. Configuration of the scenario might take some time.
 
-After the scenario is configured, the screen shows three main areas. In the **Editor** is the bot that you've designed. You can select **History** to see the JSON format of the bot. You can also use the history to select different versions of your bot to see your changes in JSON.
+After the scenario is configured, the screen shows three main areas. The **Editor** shows the bot that you've designed. You can select **History** to see the JSON format of the bot. You can also use the history to select different versions of your bot to see your changes in JSON.
 
 :::image type="content" source="../media/2-health-bot-editor-window-new.png" alt-text="Screenshot that shows the bot editor.":::

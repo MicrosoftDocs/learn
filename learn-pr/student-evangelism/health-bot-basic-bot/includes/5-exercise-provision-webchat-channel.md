@@ -14,7 +14,7 @@ Web chat is a simple web page that allows users to communicate with your Azure H
 
 1. You're redirected to your Azure portal. Sign in by using your Azure credentials, and enter the details required for the deployment:
 
-   - **Subscription**: The Azure subscription that will be charged.
+   - **Subscription**: The Azure subscription that's charged.
    - **Resource group**: Create a new group or use an existing group.
    - **App Secret**: Use the APP_SECRET value copied in step 2.
    - **Webchat Secret**: Use the WEBCHAT_SECRET value copied in step 2.
@@ -41,7 +41,7 @@ Web chat is a simple web page that allows users to communicate with your Azure H
 
    :::image type="content" source="../media/5-health-bot-human-handoff.png" alt-text="Screenshot that shows the Human Handoff tab." lightbox="../media/5-health-bot-human-handoff.png":::
 
-1. To access the sample web chat, open the web chat URL that you created in step 7 and add */agent.html* to the URL. A sign-in page loads that illustrates the agent experience. You can enter any values to access the agent portal. Within the agent portal, you can issue agent commands to interact with users who are talking with your bot.
+1. To access the sample web chat, open the web chat URL that you created in step 7 and add */agent.html* to the URL. A sign-in page loads that details the agent experience. You can enter any values to access the agent portal. Within the agent portal, you can issue agent commands to interact with users who are talking with your bot.
 
    :::image type="content" source="../media/5-agent-web-chat.png" alt-text="Screenshot that shows Agent Webchat." lightbox="../media/5-agent-web-chat.png":::
 
@@ -51,7 +51,7 @@ If there are online agents, the user and agent go through a connection sequence 
 
 1. The user says something that triggers the handoff connection sequence.
 
-1. The user is advised that they'll soon be connected to an agent.
+1. The user is advised that they'll connect to an agent soon.
 
 1. The user is added to the queue, and the agents receive a notification.
 
