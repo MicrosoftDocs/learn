@@ -1,3 +1,5 @@
+
+
 Azure VMs require additional provisions to implement operating system-dependent clustering capabilities.
 
 ## High-availability architecture for an SAP ASCS/SCS instance on Windows (single-SID configuration)
