@@ -1,3 +1,5 @@
+
+
 As a first step, check the current SAP HANA alert logs. In SAP HANA Studio, navigate to **Administration Console &gt;** **Alerts** &gt; **Show: all alerts**. This interface will show all SAP HANA alerts for specific values (free physical memory, CPU utilization, etc.) that fall outside of the set minimum and maximum thresholds. By default, checks are auto-refreshed every 15 minutes.
 
 For an alert triggered due to improper threshold setting, a resolution is to reset to the default value or a more reasonable threshold value.
