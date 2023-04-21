@@ -34,7 +34,7 @@ FastPath is available on all ExpressRoute circuits. Public preview support for P
 
 **Gateways**
 
-FastPath still requires a virtual network gateway to be created to exchange routes between virtual network and on-premises network. For more information about virtual network gateways and ExpressRoute, including performance information and gateway SKUs, see [ExpressRoute virtual network gateways](azure/expressroute/expressroute-about-virtual-network-gateways).
+FastPath still requires a virtual network gateway to be created to exchange routes between virtual network and on-premises network. For more information about virtual network gateways and ExpressRoute, including performance information and gateway SKUs, see [ExpressRoute virtual network gateways](/azure/expressroute/expressroute-about-virtual-network-gateways).
 
 To configure FastPath, the virtual network gateway must be either:
 
