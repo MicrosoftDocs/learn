@@ -3,14 +3,14 @@ You can install Azure CLI locally on Linux, macOS, and Windows operating systems
 > [!NOTE]
 > For more information about the installation options for Linux, refer to Install the Azure CLI on Linux.
 
-To use Azure CLI interactively, launch a shell available within your operating system, such as cmd.exe in Windows, or Bash in Linux or macOS &mdash; and then issue a command at the command prompt. To automate repetitive tasks, assemble the CLI commands into a shell script using the script syntax of your chosen shell, and then run the script.
+To use Azure CLI interactively, launch a shell available within your operating system, such as cmd.exe in Windows, or Bash in Linux or macOS&mdash;and then issue a command at the command prompt. To automate repetitive tasks, assemble the CLI commands into a shell script using the script syntax of your chosen shell, and then run the script.
 
 If you want to avoid installing Azure CLI, you can use Azure Cloud Shell. Azure Cloud Shell is an interactive, authenticated shell that you can use to manage Azure resources from a web browser. Azure Cloud Shell can run Bash and Azure PowerShell, and it has the current version of Azure CLI already preinstalled. To access Azure Cloud Shell, open the [Azure Cloud Shell](https://shell.azure.com/) link in a web browser or launch it from the Azure portal by selecting the Azure Cloud Shell icon next to the global search textbox.
 
 ![The Azure Cloud Shell icon in the Azure portal](../media/image11.png)
 
 > [!NOTE]
-> Azure Cloud Shell provides the benefit of built-in authentication, which leverages the credentials you provide when accessing your Azure subscription from your web browser. This eliminates the need for running the **az login** command at the beginning of each session, which is required when you run Azure CLI locally.
+> Azure Cloud Shell provides the benefit of built-in authentication, which uses the credentials you provide when accessing your Azure subscription from your web browser. This eliminates the need for running the **az login** command at the beginning of each session, which is required when you run Azure CLI locally.
 
 ## Deploy a Linux VM by using Azure CLI
 
@@ -22,7 +22,7 @@ The process of provisioning an Azure VM running Linux by using Azure CLI typical
 - Create and configure a virtual network.
 - Create an Azure VM.
 
-Depending on your existing environment and requirements, it might not be necessary to complete each of the preceding steps. For example, you might use an existing resource group or a virtual network subnet for your deployment. In addition, Azure CLI supports a wide range of default settings, which automatically apply if you decide not to explicitly assign values to some of the resource settings. For example, just as with the Azure portal-based deployment, if you don't specify an existing virtual network Azure CLI will automatically provision one for you.
+Depending on your existing environment and requirements, it might not be necessary to complete each of the preceding steps. For example, you might use an existing resource group or a virtual network subnet for your deployment. In addition, Azure CLI supports a wide range of default settings, which automatically apply if you decide not to explicitly assign values to some of the resource settings. For example, as with the Azure portal-based deployment, if you don't specify an existing virtual network Azure CLI will automatically provision one for you.
 
 > [!NOTE]
 > In this task, you'll rely on the Azure CLI default settings and skip the process of creating a virtual network. For information regarding implementing virtual networks by using Azure CLI, refer to Quickstart: Create a virtual network using the Azure CLI.

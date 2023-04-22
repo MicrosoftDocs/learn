@@ -1,6 +1,6 @@
 To access your Azure subscription by using the Azure portal, you must first sign in with an authorized account. After you're successfully authenticated, the Azure portal's home page displays. This page provides links to core services, recently accessed and favorite resources, built-in management tools, and online documentation. It also serves as a convenient entry point into your Azure environment.
 
-If the functionality you're looking for is not present on the home page, you can locate it by using either the portal menu or the global search textbox. Both options are available on every portal page to which you navigate. The portal menu simplifies accessing commonly used features and resource types. It's available in the flyout and docked mode. The global search identifies matches for the text you enter across all services, resources, resource groups, marketplace offers, Azure Active Directory (Azure AD) objects, and online documentation. By default, the global search box displays the text Search resources, services, and docs (G+/).
+If the functionality you're looking for isn't present on the home page, you can locate it by using either the portal menu or the global search textbox. Both options are available on every portal page to which you navigate. The portal menu simplifies accessing commonly used features and resource types. It's available in the flyout and docked mode. The global search identifies matches for the text you enter across all services, resources, resource groups, marketplace offers, Azure Active Directory (Azure AD) objects, and online documentation. By default, the global search box displays the text Search resources, services, and docs (G+/).
 
 ![Screenshot of the portal menu and the global search textbox](../media/image1.png)
 
@@ -8,7 +8,7 @@ If the functionality you're looking for is not present on the home page, you can
 > Because the global search box offers a more comprehensive and consistent behavior, all procedures covered in this module will use this option.
 
 > [!NOTE]
-> For more information about the Azure portal interface, refer to [What is the Azure portal?](https://learn.microsoft.com/azure/azure-portal/azure-portal-overview)
+> For more information about the Azure portal interface, refer to [What is the Azure portal?](/azure/azure-portal/azure-portal-overview)
 
 To navigate to the portal page dedicated to the provisioning and management of Azure VMs, in the global search box, start entering the phrase virtual machines, which designates the Azure resource type you intend to provision. The global search box displays a list of search results even before you've entered the entire phrase. In the search results list, in the Services section, locate the Virtual machines entry. Selecting this entry will automatically open the Virtual machines page of the portal.
 
@@ -29,10 +29,10 @@ On the Virtual machines page, select the + Create link. This step is the same re
 
 ### Assign resource-specific settings
 
-The settings you assign at this stage will determine the properties of the deployed resource. Although you can modify most of the settings after deployment, there are some settings that are immutable. The immutable settings include the resource name and the operating system (OS) image, so it is important to carefully consider their assignments. In addition, some of the modifiable settings might impact the resource availability if changed after deployment. For example, you can change the resource group of an online Azure VM, but moving it across virtual networks, subscriptions, and regions (although possible) will result in downtime. Similarly, changing the Azure VM size, while very straightforward and commonly done, requires an OS restart. 
+The settings you assign at this stage will determine the properties of the deployed resource. Although you can modify most of the settings after deployment, there are some settings that are immutable. The immutable settings include the resource name and the operating system (OS) image, so it's important to carefully consider their assignments. In addition, some of the modifiable settings might impact the resource availability if changed after deployment. For example, you can change the resource group of an online Azure VM, but moving it across virtual networks, subscriptions, and regions (although possible) will result in downtime. Similarly, changing the Azure VM size, while straightforward and commonly done, requires an OS restart. 
 
 > [!NOTE]
-> Microsoft does not support moving resources across subscriptions associated with different Azure AD tenants.
+> Microsoft doesn't support moving resources across subscriptions associated with different Azure AD tenants.
 
 > [!NOTE]
 > Provisioning of multiple resources that are part of a larger deployment should follow a planning stage that determines their optimal configuration, including a naming convention.
@@ -65,7 +65,7 @@ The settings on this page configure the target subscription (either an existing 
 ![The Basics page of the Create a virtual machine wizard displays.](../media/image3.png)
 
 > [!CAUTION]
-> **:** If you deploy an individual Azure VM for testing or evaluation purposes, you might choose to allow connectivity from the internet due to the convenience it provides. However, in general, you should avoid exposing Azure VMs to connections originating from the internet without additional constraints. To enhance security in such scenarios, consider implementing Azure Bastion or just-in-time (JIT) VM access, which is available as part of the Microsoft Defender for Cloud service. Azure also offers hybrid connectivity options, including Site-to-Site (S2S) virtual private network (VPN), Point-to-Site (P2S) VPN, and Azure ExpressRoute. All three options eliminate the need for assigning public IP addresses to Azure VM network interfaces for connections originating from your on-premises datacenter or designated, internet-connected computers.
+> If you deploy an individual Azure VM for testing or evaluation purposes, you might choose to allow connectivity from the internet due to the convenience it provides. However, in general, you should avoid exposing Azure VMs to connections originating from the internet without additional constraints. To enhance security in such scenarios, consider implementing Azure Bastion or just-in-time (JIT) VM access, which is available as part of the Microsoft Defender for Cloud service. Azure also offers hybrid connectivity options, including Site-to-Site (S2S) virtual private network (VPN), Point-to-Site (P2S) VPN, and Azure ExpressRoute. All three options eliminate the need for assigning public IP addresses to Azure VM network interfaces for connections originating from your on-premises datacenter or designated, internet-connected computers.
 
 ##### Disks
 
@@ -103,15 +103,15 @@ This page provides miscellaneous options that allow you to further customize pla
 
 - Post-deployment configuration of the guest OS using a wide range of specialized software components and scripts such as Azure VM extensions, cloud-init, custom data, and user data.
 - Installation of applications within the guest OS.
-- Deployment to dedicated physical servers, ensuring that your Azure VM is not running on hardware shared with other Azure customers.
-- Minimizing latency between multiple Azure VMs by ensuring that they are part of the same placement proximity group.
+- Deployment to dedicated physical servers, ensuring that your Azure VM isn't running on hardware shared with other Azure customers.
+- Minimizing latency between multiple Azure VMs by ensuring that they're part of the same placement proximity group.
 - Minimizing costs by using capacity reservations.
 
 ![The Advanced page of the Create a virtual machine wizard displays.](../media/image8.png)
 
 ##### Tags
 
-You use this page to create descriptive labels (_tags_)that you want to assign to the resource. Tags help organize resources based on your own custom criteria, facilitating functionality such as multiple-resource management, inventory, and billing.
+You use this page to create descriptive labels (_tags_) that you want to assign to the resource. Tags help organize resources based on your own custom criteria, facilitating functionality such as multiple-resource management, inventory, and billing.
 
 ![The Tags page of the Create a virtual machine wizard displays.](../media/image9.png)
 

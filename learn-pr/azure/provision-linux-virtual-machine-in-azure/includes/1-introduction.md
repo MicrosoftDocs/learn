@@ -14,14 +14,14 @@ The easiest approach to provision Azure resources is to use the [Azure portal](h
 
 ### Azure CLI
 
-The Azure CLI is a cross-platform command-line tool that you can use to access Azure subscriptions and manage their resources. You can run Azure CLI commands interactively in a console interface, such as a Windows Command Prompt window or a Linux shell session. You also can incorporate the Azure CLI into scripts that leverage Bash shell commands and GNU utilities to automate the process.
+The Azure CLI is a cross-platform command-line tool that you can use to access Azure subscriptions and manage their resources. You can run Azure CLI commands interactively in a console interface, such as a Windows Command Prompt window or a Linux shell session. You also can incorporate the Azure CLI into scripts that use Bash shell commands and GNU utilities to automate the process.
 
 ### Terraform
 
-Terraform is an open-source, multi-platform Infrastructure as Code (IaC) tool that you can use to provision and configure a wide range of environments, including multi-vendor public and private clouds. Unlike Azure CLI &mdash; which provides an _imperative_ _approach_ to resource management &mdash; Terraform follows a declarative approach.
+Terraform is an open-source, multi-platform Infrastructure as Code (IaC) tool that you can use to provision and configure a wide range of environments, including multi-vendor public and private clouds. Unlike Azure CLI&mdash;which provides an _imperative_ _approach_ to resource management&mdash;Terraform follows a declarative approach.
 
 > [!NOTE]
-> An imperative approach involves writing scripts or running a sequence of commands. You explicitly provide the steps to run to produce a desired outcome. When you use imperative deployments, it's your responsibility to manage dependencies, error handling, and resource updates. Whereas a declarative approach involves writing a definition that describes the desired outcome, rather than the steps to implement it &mdash; the tooling determines the optimal method to deliver that outcome for you. It does this by inspecting the current state of your environment, comparing it to your target state, and then implementing the changes required to make them identical.
+> An imperative approach involves writing scripts or running a sequence of commands. You explicitly provide the steps to run to produce a desired outcome. When you use imperative deployments, it's your responsibility to manage dependencies, error handling, and resource updates. Whereas a declarative approach involves writing a definition that describes the desired outcome, rather than the steps to implement it&mdash;the tooling determines the optimal method to deliver that outcome for you. It does this by inspecting the current state of your environment, comparing it to your target state, and then implementing the changes required to make them identical.
 
 > [!NOTE]
 > Red Hat Ansible is another popular open-source tool you can use to complement the Terraform functionality. However, Ansible facilitates provisioning of cloud resources and supports both configuration management and application deployments.
