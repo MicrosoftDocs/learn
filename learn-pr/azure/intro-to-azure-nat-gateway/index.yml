@@ -37,9 +37,9 @@ subjects:
 units:
 - learn.azure.intro-to-azure-nat-gateway.1-introduction
 - learn.azure.intro-to-azure-nat-gateway.2-what-azure-nat-gateway
-- learn.azure.intro-to-azure-nat-gateway.3-when-use-azure-virtual-network-nat
-- learn.azure.intro-to-azure-nat-gateway.4-how-azure-virtual-network-nat-works
-- learn.azure.intro-to-azure-nat-gateway.5-deploy-configure-azure-virtual-network-nat
+- learn.azure.intro-to-azure-nat-gateway.3-when-use-azure-nat-gateway
+- learn.azure.intro-to-azure-nat-gateway.4-how-azure-nat-gateway-works
+- learn.azure.intro-to-azure-nat-gateway.5-deploy-configure-azure-nat-gateway
 - learn.azure.intro-to-azure-nat-gateway.6-knowledge-check
 - learn.azure.intro-to-azure-nat-gateway.7-summary
 badge:
