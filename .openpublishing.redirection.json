@@ -21663,7 +21663,7 @@
     {
       "source_path": "learn-pr/azure/intro-to-azure-virtual-network-nat/introduction.yml",
       "redirect_url": "/training/modules/intro-to-azure-nat-gateway/introduction",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/intro-to-azure-virtual-network-nat/includes/2-what-azure-virtual-network-nat.md",
