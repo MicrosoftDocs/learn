@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.provision-linux-virtual-machine-in-azure
+metadata:
+  ms.author: chasecrum
+  author: chasecrum
+  ms.date: 04/20/2023
+  title: Provisioning a Linux virtual machine in Microsoft Azure
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  ms.topic: interactive-tutorial
+title: Provisioning a Linux virtual machine in Microsoft Azure
+summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+abstract: |
+  After completing this module, you'll be able to:
+  - Provision a Linux virtual machine (VM) by using the Azure portal.
+  - Provision an Azure VM running Linux by using the Azure CLI.
+  - Provision an Azure VM running Linux by using Hashicorp Terraform.
+  - Provision an Azure VM running Linux by using Bicep.
+prerequisites: |
+  - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- learn.provision-linux-virtual-machine-in-azure.introduction
+- learn.provision-linux-virtual-machine-in-azure.provision-linux-virtual-machine-using-the-azure-portal
+- learn.provision-linux-virtual-machine-in-azure.provision-linux-virtual-machine-using-azure-cli
+- learn.provision-linux-virtual-machine-in-azure.provision-linux-virtual-machine-using-terraform
+- learn.provision-linux-virtual-machine-in-azure.provision-linux-virtual-machine-using-bicep
+- learn.provision-linux-virtual-machine-in-azure.knowledge-check
+- learn.provision-linux-virtual-machine-in-azure.summary
+badge:
+  uid: learn.provision-linux-virtual-machine-in-azure-badge
