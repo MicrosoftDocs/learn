@@ -21649,6 +21649,16 @@
       "source_path": "learn-pr/paths/azure-percept/index.md",
       "redirect_url": "https://learn.microsoft.com/training/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-virtual-network-nat/includes/2-what-azure-virtual-network-nat.md",
+      "redirect_url": "/training/modules/intro-to-azure-nat-gateway/2-what-azure-nat-gateway",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-virtual-network-nat/2-what-azure-virtual-network-nat.yml",
+      "redirect_url": "/training/modules/intro-to-azure-nat-gateway/2-what-azure-nat-gateway",
+      "redirect_document_id": true
     }   
   ]
 }

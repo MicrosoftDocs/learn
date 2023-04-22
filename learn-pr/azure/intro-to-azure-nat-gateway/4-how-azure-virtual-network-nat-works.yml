@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-azure-nat-gateway.4-how-azure-virtual-network-nat-works
+title: How does Azure Virtual Network NAT work?
+metadata:
+  unitType: learning-content
+  title: How does Azure Virtual Network NAT work?
+  description: This unit describes the key features of the Azure Virtual Network NAT service works and provides an overview of how it works.
+  ms.date: 11/23/2021
+  author: LBN-commits
+  ms.author: v-lanai
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-how-azure-virtual-network-nat-works.md)]
