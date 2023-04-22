@@ -144,6 +144,6 @@ The Azure VM will begin running shortly afterwards, usually within a couple of m
 
 At this point, you'll be able to connect to the Azure VM by running the following command (after replacing the *\<public_ip_address>* placeholder with the IP address you identified in the Azure CLI-generated output) from the computer where the private key is stored:
 
-```azurecli
+```bash
 ssh azureuser@<public_ip_address>
 ```
