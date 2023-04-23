@@ -12,3 +12,4 @@ After completing this module, you'll be able to: 
 - Describe cloud security posture management.
 - Describe the capabilities of Microsoft Defender for Cloud
 - Understand the Microsoft cloud security benchmark and security baseline in Azure.
+
