@@ -1,6 +1,6 @@
 
 
-A file-snapshot backup consists of a set of Azure snapshots of the blobs containing the database files plus a backup file containing pointers to these file-snapshots. Each file-snapshot is stored in the container with the base blob. You can specify that the backup file itself to be written to URL, disk, or tape. File-snapshot backup to URL is recommended.
+A file-snapshot backup consists of a set of Azure snapshots of the blobs that contain database files and a backup file containing pointers to these file-snapshots. Each file-snapshot is stored in the container with the base blob. You can specify that the backup file itself to be written to URL, disk, or tape. File-snapshot backup to URL is recommended.
 
 You can use this approach for both full database and transaction log backups:
 
@@ -11,13 +11,13 @@ After the initial full backup that is required to establish the transaction log 
 
 ## Considerations and limitations
 
-- **Premium storage**: When using premium storage, the following limitations apply:
+- **Premium storage**: Premium storage limitations include:
 
-  - The backup file itself cannot be stored using premium storage.
+  - The backup file itself can't be stored using premium storage.
   - The frequency of backups can be no shorter than 10 minutes.
   - The maximum number of snapshots that you can store is 100.
   - RESTORE WITH MOVE is required.
 - **Single storage account**: The file-snapshot and destination blobs must use the same storage account.
-- **Bulk recovery model**: When using bulk-logged recovery mode and working with a transaction log backup containing a minimum of logged transactions, you cannot do a log restore (including point in time recovery) using the transaction log backup. Instead, you perform a database restore to the time of the file-snapshot backup set. This limitation is identical to the limitation with streaming backup.
-- **Online restore**: When using file-snapshot backups, you cannot perform an online restore.
-- **Billing**: When using SQL Server file-snapshot backup, other charges will be incurred as data changes. Archival: If you wish to archive a file-snapshot backup, you can archive to blob storage or to streaming backup. To archive to blob storage, copy the snapshots in the file-snapshot backup set into separate blobs. To archive to streaming backup, restore the file-snapshot backup as a new database. Then perform a normal streaming backup with compression and/or encryption and archive it for as long as desired, independent of the base blobs.
+- **Bulk recovery model**: When using bulk-logged recovery mode and working with a transaction log backup containing a minimum of logged transactions, you can't do a log restore (including point in time recovery) using the transaction log backup. Instead, you perform a database restore to the time of the file-snapshot backup set. This limitation is identical to the limitation with streaming backup.
+- **Online restore**: When using file-snapshot backups, you can't perform an online restore.
+- **Billing**: When SQL Server file-snapshot backup is in use, charges are incurred for data changes. Archival: If you wish to archive a file-snapshot backup, you can archive to blob storage or to streaming backup. To archive to blob storage, copy the snapshots in the file-snapshot backup set into separate blobs. To archive to streaming backup, restore the file-snapshot backup as a new database. Then perform a normal streaming backup with compression and/or encryption and archive it for as long as desired, independent of the base blobs.
