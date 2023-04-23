@@ -3,7 +3,7 @@ uid: learn.wwl.explore-azure-databases
 metadata:
   title: Explore Azure for SAP databases
   description: "This module explores SAP on Azure database support and best practices for Azure for SAP workloads. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
-  ms.date: 04/21/2023
+  ms.date: 04/23/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
@@ -42,7 +42,7 @@ units:
 - learn.wwl.explore-azure-databases.apply-sql-server-transparent-data-encryption
 - learn.wwl.explore-azure-databases.explore-sql-server-2014-buffer-pool-extension
 - learn.wwl.explore-azure-databases.examine-oracle-recommendations
-- 'learn.wwl.explore-azure-databases.implement-linux-clustering '
+- "'learn.wwl.explore-azure-databases.implement-linux-clustering '"
 - learn.wwl.explore-azure-databases.implement-windows-clustering
 - learn.wwl.explore-azure-databases.knowledge-check
 - learn.wwl.explore-azure-databases.summary
