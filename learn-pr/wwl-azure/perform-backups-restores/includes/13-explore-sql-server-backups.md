@@ -32,7 +32,7 @@ When you backup to block blob, the maximum size of the backup is about 12.8 TB.
 - Backup to multiple blobs in a single backup operation is only supported using block blobs and using a Shared Access Signature (SAS) token rather than the storage account key for the SQL Credential.
 - Specifying BLOCKSIZE is not supported for page blobs.
 - Specifying MAXTRANSFERSIZE is not supported for page blobs.
-- Specifying backupset options - RETAINDAYS and EXPIREDATE are not supported.
+- Specifying backupset options - RETAINDAYS and EXPIREDATE aren't supported.
 - SQL Server has a maximum limit of 259 characters for a backup device name. The BACKUP TO URL consumes 36 characters for the required elements used to specify the URL - 'https://.blob.core.windows.net//.bak', leaving 223 characters for account, container, and blob names put together.
 
 > [!NOTE]
