@@ -23,8 +23,8 @@ Pre-scripts invoke native application APIs, which quiesce the IOs, and flush in-
      - **postScriptLocation**: Provide the full path of the post-script on the VM that's going to be backed up.
      - **preScriptParams**: Provide the optional parameters that need to be passed to the pre-script.
      - **postScriptParams**: Provide the optional parameters that need to be passed to the post-script.
-     - **preScriptNoOfRetries**: Set the number of times the pre-script should be retried if there is any error before terminating. Zero means only one try and no retry if there is a failure.
-     - **postScriptNoOfRetries**: Set the number of times the post-script should be retried if there is any error before terminating. Zero means only one try and no retry if there is a failure.
+     - **preScriptNoOfRetries**: Set the number of times the pre-script should be retried if there's any error before terminating. Zero means only one try and no retry if there's a failure.
+     - **postScriptNoOfRetries**: Set the number of times the post-script should be retried if there's any error before terminating. Zero means only one try and no retry if there's a failure.
      - **timeoutInSeconds**: Specify individual timeouts for the pre-script and the post-script (maximum value can be 1800).
      - **continueBackupOnFailure**: Set this value to true if you want Azure Backup to fall back to a file system consistent/crash consistent backup if pre-script or post-script fails. Setting this to false fails the backup in case of script failure (except when you have single-disk VM, in which case, script failure results always in crash-consistent backup).
      - **fsFreezeEnabled**: Specify whether Linux fsfreeze should be called while you're taking the VM snapshot to ensure file system consistency. We recommend keeping this setting set to true unless your application has a dependency on disabling fsfreeze.

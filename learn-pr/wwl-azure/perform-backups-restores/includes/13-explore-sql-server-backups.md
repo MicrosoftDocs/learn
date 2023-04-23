@@ -14,7 +14,7 @@ Creating a Windows Azure Storage account within your Azure subscription is the f
 
 There are two types of blobs that can be stored in the Microsoft Azure Blob storage service: block and page blobs. SQL Server backup can use either blob type depending upon the Transact-SQL syntax used: If the storage key is used in the credential, page blob will be used; if the Shared Access Signature is used, block blob will be used.
 
-Backup to block blob is only available in SQL Server 2016 or later version. We recommend you to backup to block blob instead of page blob if you are running SQL Server 2016 or a later version. The main reasons are:
+Backup to block blob is only available in SQL Server 2016 or later version. We recommend you to backup to block blob instead of page blob if you're running SQL Server 2016 or a later version. The main reasons are:
 
 - Shared Access Signature is a safer way to authorize blob access compared to storage key.
 - You can backup to multiple block blobs to get better backup and restore performance and support larger database backup.
@@ -36,7 +36,7 @@ When you backup to block blob, the maximum size of the backup is about 12.8 TB.
 - SQL Server has a maximum limit of 259 characters for a backup device name. The BACKUP TO URL consumes 36 characters for the required elements used to specify the URL - 'https://.blob.core.windows.net//.bak', leaving 223 characters for account, container, and blob names put together.
 
 > [!NOTE]
-> The latest version of SAP Software Provisioning Manager (SWPM) available at the time of authoring does not support creating data files directly on Azure Blobs. However, if the target SAP database is created before running SAPinst, the installer detects the database and installs it normally. Effectively, to use this approach, it is necessary to create the target SAP database with data files on blobs before running SAPinst.
+> The latest version of SAP Software Provisioning Manager (SWPM) available at the time of authoring does not support creating data files directly on Azure Blobs. However, if the target SAP database is created before running SAPinst, the installer detects the database and installs it normally. Effectively, to use this approach, it's necessary to create the target SAP database with data files on blobs before running SAPinst.
 
 ## Automated Backup v2 for Azure VMs
 
