@@ -2,7 +2,7 @@
 
 You have several possibilities to back up SQL Server by using:
 
-- **Performing conventional SQL Server backups onto direct attached Azure disks**. This approach has the advantage that you have the backups available swiftly for system refreshes and buildup of new systems as copies of existing SAP systems. It is also well known and applied in many cases in on-premises scenarios. On the other hand, it still requires implementing a longer-term backup solution. You must either use Azure Backup Services or another third-party backup/recovery tool that includes access and retention management for your backups.
+- **Performing conventional SQL Server backups onto direct attached Azure disks**. This approach has the advantage that you have the backups available swiftly for system refreshes and buildup of new systems as copies of existing SAP systems. It's also well known and applied in many cases in on-premises scenarios. On the other hand, it still requires implementing a longer-term backup solution. You must either use Azure Backup Services or another third-party backup/recovery tool that includes access and retention management for your backups.
 - **SQL Server backup to URL**. Starting with SQL Server 2012 CU4, the native SQL Server backup can designate an Azure Storage URL as its destination.
 - **Automated Backup v2 for Azure VMs**. This solution uses SQL Server IaaS Agent Extension to automatically configures Managed Backup to Azure Storage for all existing and new databases on an Azure VM running SQL Server 2016/2017 Standard, Enterprise, or Developer editions.
 - **SQL Server Backup in Azure VMs**. This solution uses AzureBackupWindowsWorkload VM extension, which uses the SQL native APIs to backup your SQL databases into Azure Site Recovery vault.
