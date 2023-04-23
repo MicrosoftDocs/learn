@@ -17,7 +17,7 @@ Now you have:
 - [Deploy resources with Azure Resource Manager templates and Azure PowerShell](/azure/azure-resource-manager/templates/deploy-powershell)
 - [Deploy resources with Azure Resource Manager templates and Azure CLI](/azure/azure-resource-manager/templates/deploy-cli)
 - [SAP on Azure Deployment Automation Framework](https://github.com/Azure/sap-automation)
-- [Azure QuickStart templates - GitHub](https://github.com/Azure/azure-quickstart-templates)
+- [Azure Quickstart Templates - GitHub](https://github.com/Azure/azure-quickstart-templates)
 - [Installation of SAP HANA on Azure virtual machines](/azure/virtual-machines/workloads/sap/hana-get-started)
 - [Automating SAP deployments in Microsoft Azure using Terraform and Ansible](https://azure.microsoft.com/blog/automating-sap-deployments-in-microsoft-azure-using-terraform-and-ansible/)
 - [Add Hosts Using the Command-Line Interface](https://help.sap.com/viewer/6b94445c94ae495c83a19646e7c3fd56/2.0.00/en-US/0d9fe701e2214e98ad4f8721f6558c34.html)
