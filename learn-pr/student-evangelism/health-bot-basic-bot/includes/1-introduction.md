@@ -7,7 +7,7 @@ The features include:
 - Customization and extensibility tools that enable a customized flow design.
 - Compliance with security and privacy standards for the health industry (for example, ISO 27001, ISO 27018, HIPAA).
 
-In this module, you'll learn how to deploy a basic project by using the Azure Health Bot service.  
+In this module, learn how to deploy a basic project by using the Azure Health Bot service.  
 
 ## Learning objectives
 
