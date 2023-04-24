@@ -31,7 +31,7 @@ Microsoft Defender plans specific to the types of resources in your subscription
 
 - Vulnerability scanning for virtual machines, container registries, and SQL resources - Easily deploy a scanner to all of your virtual machines. View, investigate, and remediate the findings directly within Microsoft Defender for Cloud.
 
-- Multi-cloud security - Connect your accounts from Amazon Web Services (AWS) and Google Cloud Platform (GCP) to protect resources and workloads on those platforms with a range of Microsoft Defender for Cloud security features.
+- Multicloud security - Connect your accounts from Amazon Web Services (AWS) and Google Cloud Platform (GCP) to protect resources and workloads on those platforms with a range of Microsoft Defender for Cloud security features.
 
 - Hybrid security – Get a unified view of security across all of your on-premises and cloud workloads. Apply security policies and continuously assess the security of your hybrid cloud workloads to ensure compliance with security standards. Collect, search, and analyze security data from multiple sources, including firewalls and other partner solutions.
 
@@ -41,4 +41,4 @@ Microsoft Defender plans specific to the types of resources in your subscription
 
 - Access and application controls - Block malware and other unwanted applications by applying machine learning powered recommendations adapted to your specific workloads to create allowlists and blocklists. Reduce the network attack surface with just-in-time, controlled access to management ports on Azure VMs. Access and application controls drastically reduce exposure to brute force and other network attacks.
 
-Additional benefits include threat protection for the resources connected to the Azure environment and container security features, among others.  Some features may be associated with specific defender plans for specific workloads.
+Additional benefits include threat protection for the resources connected to the Azure environment and container security features, among others.  Some features may be associated with specific Defender plans for specific workloads.
