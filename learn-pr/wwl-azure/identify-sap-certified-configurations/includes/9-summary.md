@@ -1,3 +1,5 @@
+
+
 You explored the general prerequisites for SAP support in public cloud environments. You also identified the available deployment options for SAP solutions on Azure, and discovered the Azure virtual machine types, operating systems, and configurations supported by SAP when deploying SAP products in Azure.
 
 ## Learn more
