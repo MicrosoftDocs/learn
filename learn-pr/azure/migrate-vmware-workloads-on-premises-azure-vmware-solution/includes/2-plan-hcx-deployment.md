@@ -2,15 +2,15 @@ VMware HCX (HCX) Advanced Cloud Manager deploys by default in Azure VMware Solut
 
 ## What is VMware HCX?
 
-VMware HCX is a workload mobility platform that provides a set of network features to simplify VM migrations. These features ease challenges with connecting on-premises datacenters to Azure. The HCX appliance links on-premises VMware environments to Azure VMware Solution at the networking layer.
+VMware HCX is a workload-mobility platform that provides a set of network features to simplify VM migrations. These features ease challenges with connecting on-premises datacenters to Azure. The HCX appliance links on-premises VMware environments to Azure VMware Solution at the networking layer.
 
 As a migration tool, HCX abstracts both on-premises and cloud resources to present them as a single resource for VM workloads. HCX also allows for bidirectional migration of virtual machines from on-premises VMware environments to Azure VMware Solution directly.
 
-Because Azure VMware Solution deploys and configures HCX Cloud Manager within the private cloud in Azure, there are steps you need to take in the on-premises VMware datacenter. You must download HCX Connector, and then activate and configure it. HCX Advanced deploys with Azure VMware Solution, and supports up to three site connections. If you require more than three site connections, submit a support request, which enables the VMware HCX Enterprise add-on. HCX Enterprise Edition provides up to ten site pairs.
+Because Azure VMware Solution deploys and configures HCX Cloud Manager within the private cloud in Azure, there are steps you need to take in the on-premises VMware datacenter. You must download HCX Connector, then activate and configure it. HCX Advanced deploys with Azure VMware Solution and supports up to three site connections. If you require more than three site connections, submit a support request to enable the VMware HCX Enterprise add-on. HCX Enterprise Edition provides up to 10 site pairs.
 
 ## HCX versions and compatibility
 
-For a supported migration pattern that uses VMware HCX, be aware that there are vSphere version compatibility requirements that need to be met on-premises.
+For a supported migration pattern that uses VMware HCX, be aware that there are vSphere version-compatibility requirements that need to be met on-premises.
 
 | Component type | HCX Connector environment requirements | HCX cloud environment requirements |
 | :------| :------- | :---- |
@@ -21,9 +21,9 @@ For older versions of vSphere (5.0+), HCX Connector needs to be deployed and dow
 
 ## Network connectivity and ports
 
-Azure VMware Solution configures an Azure ExpressRoute circuit during deployment of the resource in Azure. You then need to peer the circuit into an Azure virtual network for access to all resources in Azure.
+Azure VMware Solution configures an Azure ExpressRoute circuit during the resource's deployment in Azure. You then need to peer the circuit into an Azure virtual network for access to all resources in Azure.
 
-Next, configure the Global Reach feature of ExpressRoute between the on-premises VMware environment and the Azure VMware Solution ExpressRoute, by using a separate ExpressRoute circuit. Global Reach enables east-west connectivity between both ExpressRoute circuits by using BGP. That connectivity routes all traffic privately within the Microsoft global backbone. Before HCX Connector can be deployed and a site pairing established, you must enable Global Reach.
+Next, configure the Global Reach feature of ExpressRoute between the on-premises VMware environment and the Azure VMware Solution ExpressRoute by using a separate ExpressRoute circuit. Global Reach enables east-west connectivity between both ExpressRoute circuits by using BGP. That connectivity routes all traffic privately within the Microsoft global backbone. Before HCX Connector can be deployed and a site pairing established, you must enable Global Reach.
 
 All required network ports need to be open for communication between the on-premises VMware environment and Azure VMware Solution. The following table outlines all ports, protocols used, and what VMware components need open ports for configuration.
 
@@ -57,12 +57,12 @@ HCX offers a few different ways to migrate workloads:
 
 | Migration type | Use cases | Capabilities |
 | :------------- | :-------- | :-------- |
-| Live migration | Production VMs that need to remain online, with minimal downtime. | - Migrates a powered-on VM. <br>- Needs an HCX-enabled vCenter configured. <br>- Needs an HCX-enabled destination site configuration. <br>- vMotion captures the VM's active memory, execution state, IP address, and MAC address. <br>- Migration duration depends on connectivity. <br>- Connectivity includes bandwidth available and the latency between both sites. <br>- The VM never powers off, there's no service disruption, and workloads remain online.
+| Live migration | Production VMs that need to remain online with minimal downtime. | - Migrates a powered-on VM. <br>- Needs an HCX-enabled vCenter configured. <br>- Needs an HCX-enabled destination site configuration. <br>- vMotion captures the VM's active memory, execution state, IP address, and MAC address. <br>- Migration duration depends on connectivity. <br>- Connectivity includes bandwidth available and the latency between both sites. <br>- The VM never powers off, there's no service disruption, and workloads remain online.
 | Cold migration | Dev/test workloads that might not be online during migration, but need to be migrated. | <br>- Transfers a powered-off VM. <br>- Uses same network path as VMware HCX vMotion. <br>- VM IP address and MAC address are preserved. |
 | Bulk migration | Many VMs that need to be migrated on a schedule. | - Moves VMs in parallel. <br>- Pre-defined schedule. <br>- VMs run at the source site until the cutover begins. <br>- The service interruption is equivalent to a reboot. |
 
 ## Scenario readiness and preparation for Azure VMware Solution
 
-Your company's production environment maintains a strict SLA. You need to select live migration to achieve minimal downtime, as workloads move from on-premises to Azure VMware Solution. The on-premises VMware environment has vSphere 6.0 installed and the required ports have been allowed in the on-premises networking environment. As a result, there shouldn't be an issue with connectivity or functionality with HCX Cloud Manager in Azure VMware Solution.
+Your company's production environment maintains a strict SLA. You need to select live migration to achieve minimal downtime as workloads move from on-premises to Azure VMware Solution. The on-premises VMware environment has vSphere 6.0 installed and the required ports have been allowed in the on-premises networking environment. As a result, there shouldn't be an issue with connectivity or functionality with HCX Cloud Manager in Azure VMware Solution.
 
 In the next unit, we'll cover how to deploy and install HCX Connector so you can begin migrating workloads to Azure VMware Solution.

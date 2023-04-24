@@ -6,7 +6,7 @@ To help decide whether serverless computing is right for you, let's first learn 
 
 ## What is Azure Functions?
 
-Azure Functions is a serverless application platform. It enables developers to host business logic that can be executed without provisioning infrastructure. Azure Functions provides intrinsic scalability and you're charged only for the resources used. You can write your function code in the language of your choice, including C#, F#, JavaScript, Python, and PowerShell Core. Support for package managers like NuGet and npm is also included, so you can use popular libraries in your business logic.
+Azure Functions is a serverless application platform. It enables developers to host business logic that can be executed without provisioning infrastructure. Azure Functions provides intrinsic scalability and you're charged only for the resources used. You can write your function code in the language of your choice, including C#, Java, JavaScript, Python, and PowerShell. Support for package managers like NuGet and npm is also included, so you can use popular libraries in your business logic.
 
 ## Benefits of a serverless compute solution
 
@@ -30,7 +30,7 @@ Functions are a key component of serverless computing, but they're also a genera
 
 ## Drawbacks of a serverless compute solution
 
-Serverless compute won't always be the appropriate solution to hosting your business logic. Here are a few characteristics of functions that may affect your decision to host your services in serverless compute.
+Serverless compute, as provided by Azure Functions in the Consumption plan, won't always be the appropriate solution to hosting your business logic. Here are a few characteristics of functions that may affect your decision to host your services in serverless compute.
 
 ### Execution time
 
@@ -38,6 +38,6 @@ By default, functions have a timeout of five (5) minutes. This timeout is config
 
 ### Execution frequency
 
-The second characteristic is execution frequency. If you expect clients executing your function continuously, it would be prudent to estimate the usage and calculate the cost of using functions accordingly. It might be cheaper to host your service on a VM.
+Another characteristic is execution frequency. If you expect clients executing your function continuously, it would be prudent to estimate the usage and calculate the cost of using functions accordingly. It might be cheaper to host your service on a VM.
 
 While scaling, only one function app instance can be created every 10 seconds, for up to 200 total instances. Keep in mind, each instance can service multiple concurrent executions, so there's no set limit about how much traffic a single instance can handle. Different types of triggers have different scaling requirements, so research your choice of trigger and investigate its limits.
