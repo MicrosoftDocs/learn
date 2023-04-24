@@ -45,7 +45,7 @@ First, let's scaffold a new project for our game. With .NET 6 installed, we can 
 
 Next, let's create a board component to be used by players in our game. The component is defined using Razor syntax, which is a mix of HTML and C#.
 
-1. Right-click on the Shared folder in the Solution Explorer of Visual Studio. Choose **Add - Razor Component** from the context menu and name the file *Board.razor*.
+1. Right-click on the Shared folder in the Solution Explorer of Visual Studio. Choose **Add - Razor Component** from the context menu and name the file *Board.razor*. 
 1. Place this file in the *Shared* folder, this placement allows the component to be referenced and used throughout the application. 
 
     We use this component to hold everything needed for the game-board layout and managing interactions with it.
@@ -189,6 +189,6 @@ Let's add some style to this component by defining some colors for the frame of 
 
     Your browser should be refreshed for you (if not you can manually refresh the browser with F5), and you should be greeted with a proper yellow Connect Four board:
 
-   :::image type="content" source="../media/2-board-step2.png" alt-text="Screenshot of Yellow connect four board":::
+   :::image type="content" source="../media/2-board-step2.png" alt-text="Screenshot of Yellow connect four board.":::
 
    Congratulations, you now have the start of game. In later units, we add game logic to it.

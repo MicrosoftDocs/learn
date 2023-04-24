@@ -3,7 +3,7 @@ The game works... but maybe you don't like our default colors. In Blazor, we can
 In this exercise, we focus on customization and making the game look better using parameters.
 
 ## Customizing the board with parameters
-
+ 
 Let's add some parameters for the colors on the board, and pass in some Groovy colors from the Pages/Index.razor page.
 
 Parameters in Blazor are properties in our component that have been decorated with the Parameter attribute.

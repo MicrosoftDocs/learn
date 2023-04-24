@@ -102,7 +102,7 @@ class State
   
   void PlayPiece(int position) 
   {
-    this.pieces[position] = true; // true = occupied
+    this.pieces[position] = true; // true = occupied 
   }
 }
 ```

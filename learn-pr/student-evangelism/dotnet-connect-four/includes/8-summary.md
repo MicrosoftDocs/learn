@@ -6,6 +6,6 @@ Second, you customized the appearance of your app by adding styling. Additionall
 
 Finally, you learned to respond to event making your app something a user could interact with.
 
-## Learn more
+## Learn more 
 
 - [Learn more on the Blazor framework](/aspnet/core/razor-pages/?view=aspnetcore-7.0&tabs=visual-studio&preserve-view=true)

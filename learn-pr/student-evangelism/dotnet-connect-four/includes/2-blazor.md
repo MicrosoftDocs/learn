@@ -1,6 +1,6 @@
 There are many approaches to build web applications. To build web applications that are highly interactive and fast, you usually use plenty of JavaScript. 
 
-Another approach is the use to the Blazor framework by Microsoft, which allows you to use a mixture of C# and JavaScript while compiling to WASM, web assembly. Assembly language that your browser knows how to run.
+Another approach is the use to the Blazor framework by Microsoft, which allows you to use a mixture of C# and JavaScript while compiling to WASM, web assembly. Assembly language that your browser knows how to run. 
 
 ## What is Blazor ?
 
