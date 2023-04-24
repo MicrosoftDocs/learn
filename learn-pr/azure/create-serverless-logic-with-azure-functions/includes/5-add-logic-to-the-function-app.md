@@ -10,7 +10,7 @@ First, we need to define some requirements for our logic:
 
 ## Add a function to your function app
 
-As we described in the preceding unit, Azure provides templates that help you build functions. In this unit, we'll use the `HttpTrigger` template to implement the temperature service.
+As we described in the preceding unit, Azure provides templates that help you build functions. In this unit, you use the `HttpTrigger` template to implement the temperature service.
 
 1. In the previous exercise, you deployed your function app and opened it. If it isn't already open, you can open it from the Home page by selecting **All resources**, and then selecting your function app, named something like **escalator-functions-xxx**.
 
@@ -154,12 +154,13 @@ To test the function, you can send an HTTP request to the function URL using cUR
 
 1. Open a command prompt and run cURL to send an HTTP request to the function URL. Keep in mind to use the URL that you copied in the previous step.
 
-> [!TIP]
-> You might want to wrap the URL in quotes to avoid issues with special characters in the URL.
-
     ```bash
     curl "<your-https-url>"
     ```
+
+    > [!TIP]
+    > You might need to wrap the URL in quotes to avoid issues with special characters in the URL.  
+    > If you're on Windows, run `cURL` from the command prompt. PowerShell has a *curl* command, but it's an alias for Invoke-WebRequest, which isn't the same as `cURL`.
 
     The response should look like the following.
 
@@ -208,25 +209,22 @@ Because you specified *Function* when you created this function, you need to sup
 
 1. Check the logs.
 
-    The **Code + Test** pane should open a session displaying log file output (ensure **Filesystem Logs** is selected in the drop-down at the top of the **Logs** pane). The log file updates with the status of your request, which should look something like this for JavaScript:
-
+    The **Code + Test** pane should open a session displaying log file output (ensure **Filesystem Logs** is selected in the drop-down at the top of the **Logs** pane). The log file updates with the status of your request, which should look something like this:
+::: zone pivot="javascript"
     ```output
     2022-02-16T22:34:10.473 [Information] Executing 'Functions.HttpTrigger1' (Reason='This function was programmatically called via the host APIs.', Id=4f503b35-b944-455e-ba02-5205f9e8b47a)
     2022-02-16T22:34:10.539 [Information] JavaScript HTTP trigger function processed a request.
     2022-02-16T22:34:10.562 [Information] Executed 'Functions.HttpTrigger1' (Succeeded, Id=4f503b35-b944-455e-ba02-5205f9e8b47a, Duration=114ms)
     ```
-
-    and something like this for PowerShell:
-
+::: zone-end
+::: zone pivot="powershell"
     ```output
     2022-02-16T21:07:11.340 [Information] INFORMATION: PowerShell HTTP trigger function processed a request.
     2022-02-16T21:07:11.449 [Information] Executed 'Functions.DriveGearTemperatureService' (Succeeded, Id=25e2edc3-542f-4629-a152-cf9ed99680d8, Duration=1164ms)
     ```
+::: zone-end
 
     Under the **Output** pane, for **HTTP response code**, the function responds with the text `200 OK`.
-
-    > [!CAUTION]
-    > If you are on Windows, run `cURL` from the command prompt. PowerShell has a *curl* command, but it's an alias for Invoke-WebRequest, and is not the same as `cURL`.
 
     > [!NOTE]
     > The **Code/Test** function may open an *Input/Output* pane in a different configuration, with the log file appearing on the side of a selected function. If so, you won't be able to verify the function key system is working, as it is not required. Add the appropriate header and parameter values in the Test interface, and select **Run** to see the test output.
