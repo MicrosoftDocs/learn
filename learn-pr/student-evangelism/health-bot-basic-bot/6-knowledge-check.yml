@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Three multiple-choice questions
-  ms.date: 07/27/2021
+  ms.date: 03/07/2023
   author: Meghana-ch
   ms.author: chnoring
   ms.topic: interactive-tutorial
@@ -48,7 +48,7 @@ quiz:
           explanation: "This isn't where you test the bot."
         - content: "Chat"
           isCorrect: false
-          explanation: "Chat is only the name of the window where you do the testing. You use the Web Chat v4 to test the bot."
-        - content: "Web Chat v4"
+          explanation: "Chat is only the name of the window where you do the testing. You use the Web Chat to test the bot."
+        - content: "Web Chat"
           isCorrect: true
-          explanation: "You run and test scenarios in the Web Chat v4 in the upper right of the scenario editor."
+          explanation: "You run and test scenarios in the Web Chat in the upper right of the scenario editor."

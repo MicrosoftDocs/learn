@@ -1,18 +1,18 @@
 
 The Microsoft Authentication Library (MSAL) can be used to provide secure access to Microsoft Graph, other Microsoft APIs, third-party web APIs, or your own web API. MSAL supports many different application architectures and platforms including .NET, JavaScript, Java, Python, Android, and iOS.
 
-MSAL gives you many ways to get tokens, with a consistent API for a number of platforms. Using MSAL provides the following benefits:
+MSAL gives you many ways to get tokens, with a consistent API for many platforms. Using MSAL provides the following benefits:
 
 * No need to directly use the OAuth libraries or code against the protocol in your application.
 * Acquires tokens on behalf of a user or on behalf of an application (when applicable to the platform).
-* Maintains a token cache and refreshes tokens for you when they are close to expire. You don't need to handle token expiration on your own.
+* Maintains a token cache and refreshes tokens for you when they're close to expire. You don't need to handle token expiration on your own.
 * Helps you specify which audience you want your application to sign in.
 * Helps you set up your application from configuration files.
 * Helps you troubleshoot your app by exposing actionable exceptions, logging, and telemetry.
 
  ## Application types and scenarios
 
-Using MSAL, a token can be acquired from a number of application types: web applications, web APIs, single-page apps (JavaScript), mobile and native applications, and daemons and server-side applications. MSAL currently supports the platforms and frameworks listed in the table below.
+Using MSAL, a token can be acquired from many application types: web applications, web APIs, single-page apps (JavaScript), mobile and native applications, and daemons and server-side applications. MSAL currently supports the platforms and frameworks listed in the following table.
 
 | Library | Supported platforms and frameworks |
 |--|--|
@@ -29,18 +29,18 @@ Using MSAL, a token can be acquired from a number of application types: web appl
 
 ## Authentication flows
 
-Below are some of the different authentication flows provided by Microsoft Authentication Library (MSAL). These flows can be used in a variety of different application scenarios.
+The following table shows some of the different authentication flows provided by Microsoft Authentication Library (MSAL). These flows can be used in various application scenarios.
 
-Flow | Description 
---- | --- 
-Authorization code | Native and web apps securely obtain tokens in the name of the user 
-Client credentials | Service applications run without user interaction 
-On-behalf-of | The application calls a service/web API, which in turns calls Microsoft Graph 
-Implicit | Used in browser-based applications 
-Device code | Enables sign-in to a device by using another device that has a browser 
-Integrated Windows | Windows computers silently acquire an access token when they are domain joined 
-Interactive | Mobile and desktops applications call Microsoft Graph in the name of a user 
-Username/password | The application signs in a user by using their username and password 
+| Flow | Description |
+|--|--|
+| Authorization code | Native and web apps securely obtain tokens in the name of the user |
+| Client credentials | Service applications run without user interaction |
+| On-behalf-of | The application calls a service/web API, which in turns calls Microsoft Graph |
+| Implicit | Used in browser-based applications |
+| Device code | Enables sign-in to a device by using another device that has a browser |
+| Integrated Windows | Windows computers silently acquire an access token when they're domain joined |
+| Interactive | Mobile and desktops applications call Microsoft Graph in the name of a user |
+| Username/password | The application signs in a user by using their username and password | 
 
 ### Public client, and confidential client applications
 
