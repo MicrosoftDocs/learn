@@ -1,3 +1,5 @@
+
+
 The following tables outline Azure supported configurations and the growing list of SAP certifications.
 
 ## SAP HANA certifications
@@ -15,25 +17,13 @@ The following tables outline Azure supported configurations and the growing list
 :::row-end:::
 :::row:::
   :::column:::
-    SAP HANA Developer Edition (including the HANA client software comprised of SQLODBC, ODBO-Windows only, ODBC, JDBC drivers, HANA studio, and HANA database)
-  :::column-end:::
-  :::column:::
-    Red Hat Enterprise Linux, SUSE Linux Enterprise
-  :::column-end:::
-  :::column:::
-    D-Series VM family
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
     Business One on HANA
   :::column-end:::
   :::column:::
     SUSE Linux Enterprise
   :::column-end:::
   :::column:::
-    DS14\_v2, M32ts, M32ls, M64ls, M64s
-[SAP HANA Certified IaaS Platforms](https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/#/solutions?filters=iaas;ve:24;v:120)
+   [SAP HANA Certified IaaS Platforms](https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/#/solutions?filters=iaas;ve:24;v:120)
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -44,7 +34,7 @@ The following tables outline Azure supported configurations and the growing list
     Red Hat Enterprise Linux, SUSE Linux Enterprise
   :::column-end:::
   :::column:::
-    Controlled Availability for GS5. Full support for M64s, M64ms, M128s, M128ms, M64ls, M32ls, M32ts, M208s\_v2, M208ms\_v2, M416s\_v2, M416ms\_v2, SAP HANA on Azure (Large instances) [SAP HANA Certified IaaS Platforms](https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/#/solutions?filters=iaas;ve:24)
+    [SAP HANA Certified IaaS Platforms](https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/#/solutions?filters=iaas;ve:24)
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -55,7 +45,7 @@ The following tables outline Azure supported configurations and the growing list
     Red Hat Enterprise Linux, SUSE Linux Enterprise
   :::column-end:::
   :::column:::
-    M64s, M64ms, M128s, M128ms, M64ls, M32ls, M32ts, M208s\_v2, M208ms\_v2, M416s\_v2, M416ms\_v2, SAP HANA on Azure (Large instances) [SAP HANA Certified IaaS Platforms](https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/#/solutions?filters=iaas;ve:24;v:125)
+    [SAP HANA Certified IaaS Platforms](https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/#/solutions?filters=iaas;ve:24;v:125)
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -66,7 +56,7 @@ The following tables outline Azure supported configurations and the growing list
     Red Hat Enterprise Linux, SUSE Linux Enterprise
   :::column-end:::
   :::column:::
-    GS5, M64s, M64ms, M128s, M128ms, M64ls, M32ls, M32ts, M208s\_v2, M208ms\_v2, M416s\_v2, M416ms\_v2, SAP HANA on Azure (Large instances) [SAP HANA Certified IaaS Platforms](https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/#/solutions?filters=iaas;ve:24;v:105)
+    [SAP HANA Certified IaaS Platforms](https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/#/solutions?filters=iaas;ve:24;v:105)
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -77,7 +67,7 @@ The following tables outline Azure supported configurations and the growing list
     Red Hat Enterprise Linux, SUSE Linux Enterprise
   :::column-end:::
   :::column:::
-    GS5, M64s, M64ms, M128s, M128ms, M64ls, M32ls, M32ts, M208s\_v2, M208ms\_v2, M416s\_v2, M416ms\_v2, SAP HANA on Azure (Large instances) [SAP HANA Certified IaaS Platforms](https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/#/solutions?filters=iaas;ve:24;v:105)
+    [SAP HANA Certified IaaS Platforms](https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/#/solutions?filters=iaas;ve:24;v:105)
   :::column-end:::
 :::row-end:::
 
@@ -112,7 +102,7 @@ Microsoft Azure is certified for the following SAP products, with full support f
     SQL Server, Oracle (Windows and Oracle Linux only), DB2, SAP ASE
   :::column-end:::
   :::column:::
-    A5 to A11, D11 to D14, DS11 to DS14, DS11\_v2 to DS15\_v2, GS1 to GS5, D2s\_v3 to D64s\_v3, D2as\_v4 to D64as\_v4, E2s\_v3 to E64s\_v3, E2as\_v4 to E64as\_v4, M64s, M64ms, M128s, M128ms, M64ls, M32ls, M32ts, M208s\_v2, M208ms\_v2, M416s\_v2, M416ms\_v2
+    [SAP Note \#1928533: SAP Applications on Azure: Supported Products and Azure VM types](https://launchpad.support.sap.com/#/notes/1928533)
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -126,7 +116,7 @@ Microsoft Azure is certified for the following SAP products, with full support f
     SQL Server, Oracle (Windows and Oracle Linux only), DB2, SAP ASE
   :::column-end:::
   :::column:::
-    A5 to A11, D11 to D14, DS11 to DS14, DS11\_v2 to DS15\_v2, GS1 to GS5, D2s\_v3 to D64s\_v3, D2as\_v4 to D64as\_v4, E2s\_v3 to E64s\_v3, E2as\_v4 to E64as\_v4, M64s, M64ms, M128s, M128ms, M64ls, M32ls, M32ts, M208s\_v2, M208ms\_v2, M416s\_v2, M416ms\_v2
+    [SAP Note \#1928533: SAP Applications on Azure: Supported Products and Azure VM types](https://launchpad.support.sap.com/#/notes/1928533)
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -140,7 +130,7 @@ Microsoft Azure is certified for the following SAP products, with full support f
     N/A
   :::column-end:::
   :::column:::
-    A5 to A11, D11 to D14, DS11 to DS14, DS11\_v2 to DS15\_v2, GS1 to GS5, D2s\_v3 to D64s\_v3, D2as\_v4 to D64as\_v4, E2s\_v3 to E64s\_v3, E2as\_v4 to E64as\_v4, M64s, M64ms, M128s, M128ms, M64ls, M32ls, M32ts, M208s\_v2, M208ms\_v2, M416s\_v2, M416ms\_v2
+    [SAP Note \#1928533: SAP Applications on Azure: Supported Products and Azure VM types](https://launchpad.support.sap.com/#/notes/1928533)
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -154,7 +144,7 @@ Microsoft Azure is certified for the following SAP products, with full support f
     SQL Server, Oracle (Windows and Oracle Linux only), DB2, SAP ASE
   :::column-end:::
   :::column:::
-    A5 to A11, D11 to D14, DS11 to DS14, DS11\_v2 to DS15\_v2, GS1 to GS5, D2s\_v3 to D64s\_v3, D2as\_v4 to D64as\_v4, E2s\_v3 to E64s\_v3, E2as\_v4 to E64as\_v4, M64s, M64ms, M128s, M128ms, M64ls, M32ls, M32ts, M208s\_v2, M208ms\_v2, M416s\_v2, M416ms\_v2
+    [SAP Note \#1928533: SAP Applications on Azure: Supported Products and Azure VM types](https://launchpad.support.sap.com/#/notes/1928533)
   :::column-end:::
 :::row-end:::
 
@@ -197,7 +187,7 @@ Microsoft Azure is certified for the following SAP products, with full support f
     Windows and Linux
   :::column-end:::
   :::column:::
-
+ 
   :::column-end:::
   :::column:::
     All NetWeaver Certified VM types
@@ -294,4 +284,4 @@ Microsoft Azure is certified for the following SAP products, with full support f
 :::row-end:::
 
 > [!IMPORTANT]
-> Both Microsoft and SAP have documentation on what is certified, but SAP should be the single source of truth for their solutions configurations, which consist of combinations of SAP product, operating system, RDBMS, and Azure offerings (Azure VM SKU, SAP HANA on Azure Large Instances).
+> Both Microsoft and SAP have documentation on what is certified, but SAP should be the single source of truth for their solutions configurations, which consist of combinations of SAP product, operating system, RDBMS, and Azure VM SKU.
