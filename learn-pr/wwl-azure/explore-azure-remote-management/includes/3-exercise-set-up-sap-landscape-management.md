@@ -1,3 +1,5 @@
+
+
 The Azure connector is shipped as of SAP LaMa 3.0 SP05. We recommend always installing the latest support package and patch for SAP LaMa 3.0. The Azure connector uses a Service Principal to authorize against Microsoft Azure.
 
 ## Create a Service Principal for SAP Landscape Management
@@ -8,22 +10,22 @@ Follow these steps:
 2. Open **Azure Active Directory**.
 3. Select **App registrations**.
 4. Select **Add**.
-5. Enter a **Name**, select Application Type "**Web app/API**", enter a sign-on URL (for example **<http://localhost>**) and select **Create**. The sign-on URL is not used and can be any valid URL.
+5. Enter a **Name**, select Application Type "**Web app/API**", enter a sign-on URL (for example **<http://localhost>**) and select **Create**. The sign-on URL isn't used and can be any valid URL.
 6. Select the **new App** and select **Keys** in the **Settings** tab.
 7. Enter a description for a new key, select "**Never expires**" and select **Save**.
-8. Write down the **Value**. It is used as the password for the Service Principal.
-9. Write down the **Application ID**. It is used as the username of the Service Principal.
+8. Write down the **Value**. It's used as the password for the Service Principal.
+9. Write down the **Application ID**. It's used as the username of the Service Principal.
 
 ## Give the Service Principal permissions to access your Azure resources
 
-By default, the Service Principal does not have permissions to access your Azure resources. Follow these steps to give it the necessary permissions:
+By default, the Service Principal doesn't have permissions to access your Azure resources. Follow these steps to give it the necessary permissions:
 
 1. In the Azure portal, open **Resource groups**.
 2. Select the resource group you want to use.
 3. Select **Access control (IAM)**.
 4. Select **Add role assignment**.
 5. Select the role **Contributor**.
-6. Enter the name of the application you created above.
+6. Enter the name of the application you created previously.
 7. Select **Save**.
 8. Repeat step 2 to 7 for all resource groups you want to use in SAP LaMa.
 9. Open the SAP LaMa website and navigate to **Infrastructure**. Go to the **Cloud Managers** tab and select **Add**. Select the **Microsoft Azure Cloud Adapter** and select **Next**. Enter the following information:
