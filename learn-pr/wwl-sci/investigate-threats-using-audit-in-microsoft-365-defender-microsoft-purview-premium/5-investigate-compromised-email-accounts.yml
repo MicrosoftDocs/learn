@@ -9,6 +9,6 @@ metadata:
   ms.author: kelawson
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
-durationInMinutes: 1
+durationInMinutes: 15
 content: |
   [!include[](includes/5-investigate-compromised-email-accounts.md)]

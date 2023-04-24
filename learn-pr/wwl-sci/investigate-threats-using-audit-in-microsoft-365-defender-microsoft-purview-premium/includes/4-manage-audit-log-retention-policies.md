@@ -63,7 +63,7 @@ Audit log retention policies are listed on the **Audit retention policies** tab 
 
 Audit log retention policies are listed in the dashboard. One advantage of viewing policies in the dashboard is that you can select the **Priority** column to list the policies in the priority in which they're applied. As previously explained, a lower value indicates a higher priority.
 
-:::image type="content" source="../media/audit-retention-policies-42023.png" alt-text="Screenshot showing the Audit retention policies tab on the Audit page with the priority column highlighted for each policy.":::
+:::image type="content" source="../media/audit-retention-policies-42023.png" alt-text="Screenshot showing the Audit retention policies tab on the Audit page with the priority column highlighted for each policy." lightbox="../media/audit-retention-policies-42023.png":::
 
 You can also select a policy to display its settings on the policy detail pane that appears.
 
@@ -75,7 +75,7 @@ You can also select a policy to display its settings on the policy detail pane t
 To edit a policy, select it to display the policy detail pane. You can modify one or more setting and then save your changes.
 
 > [!IMPORTANT]
-> If you use the **New-UnifiedAuditLogRetentionPolicy** cmdlet to create a policy, it's possible to create an audit log retention policy for record types or activities that aren't available in the C**reate audit retention policy** tool in the Microsoft Purview compliance portal. In this case, you won't be able to edit the policy (for example, change the retention duration or add and remove activities) from the **Audit retention policies** dashboard. You'll only be able to view and delete the policy in the Microsoft Purview compliance portal. To edit the policy, you'll have to use the [Set-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/set-unifiedauditlogretentionpolicy?azure-portal=true) cmdlet in the Security and Compliance PowerShell module.
+> If you use the **New-UnifiedAuditLogRetentionPolicy** cmdlet to create a policy, it's possible to create an audit log retention policy for record types or activities that aren't available in the **Create audit retention policy** tool in the Microsoft Purview compliance portal. In this case, you won't be able to edit the policy (for example, change the retention duration or add and remove activities) from the **Audit retention policies** dashboard. You'll only be able to view and delete the policy in the Microsoft Purview compliance portal. To edit the policy, you'll have to use the [Set-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/set-unifiedauditlogretentionpolicy?azure-portal=true) cmdlet in the Security and Compliance PowerShell module.
 
 > [!TIP]
 > A message is displayed at the top of the policy detail pane for policies that have to be edited using PowerShell.
@@ -136,7 +136,7 @@ Use the **Set-UnifiedAuditLogRetentionPolicy** cmdlet in the Security and Compli
 
 #### Delete policies in PowerShell
 
-Use the R**emove-UnifiedAuditLogRetentionPolicy** cmdlet in the Security and Compliance PowerShell module to delete an audit log retention policy. It may take up to 30 minutes for a deleted policy to be removed from an organization.
+Use the **Remove-UnifiedAuditLogRetentionPolicy** cmdlet in the Security and Compliance PowerShell module to delete an audit log retention policy. It may take up to 30 minutes for a deleted policy to be removed from an organization.
 
 ## Knowledge check
 
