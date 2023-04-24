@@ -56,11 +56,11 @@ These events can help you investigate possible breaches and determine the scope 
 
 Audit (Premium) provides the following new events, each of which is introduced in the following sections:
 
-- [MailItemsAccessed event](https://learn.microsoft.com/en-us/microsoft-365/compliance/audit-premium?view=o365-worldwide#mailitemsaccessed)
-- [Send event](/microsoft-365/compliance/audit-premium?view=o365-worldwide#send)
-- [SearchQueryInitiatedExchange event](/microsoft-365/compliance/audit-premium?view=o365-worldwide#searchqueryinitiatedexchange)
-- [SearchQueryInitiatedSharePoint event](/microsoft-365/compliance/audit-premium?view=o365-worldwide#searchqueryinitiatedsharepoint)
-- [Other Audit (Premium) events in Microsoft 365](/microsoft-365/compliance/audit-premium?view=o365-worldwide#other-audit-premium-events-in-microsoft-365)
+- [MailItemsAccessed event](/microsoft-365/compliance/audit-premium)
+- [Send event](/microsoft-365/compliance/audit-premium)
+- [SearchQueryInitiatedExchange event](/microsoft-365/compliance/audit-premium)
+- [SearchQueryInitiatedSharePoint event](/microsoft-365/compliance/audit-premium)
+- [Other Audit (Premium) events in Microsoft 365](/microsoft-365/compliance/audit-premium)
 
 > [!NOTE]
 > These new events in Audit (Premium) events are available in the Office 365 Management Activity API. As long as audit records are generated for users with the appropriate license, you'll be able to access these records through the Office 365 Management Activity API.
@@ -168,7 +168,7 @@ With the release of Audit (Premium), Microsoft 365 has moved from a publisher-le
 
 All organizations are initially allocated a baseline of 2,000 requests per minute. This limit will dynamically increase depending on an organization's seat count and their licensing subscription. E5/A5/G5 organizations get about twice as much bandwidth as non-E5/A5/G5 organizations. There will also be a cap on the maximum bandwidth to protect the health of the service.
 
-**Additional reading**. For more information, see the "API throttling" section in [Office 365 Management Activity API reference](/office/office-365-management-api/office-365-management-activity-api-reference#api-throttling?azure-portal=true). [FAQs for Audit (Premium)](/microsoft-365/compliance/audit-premium?view=o365-worldwide#faqs-for-audit-premium)
+**Additional reading**. For more information, see the "API throttling" section in [Office 365 Management Activity API reference](/office/office-365-management-api/office-365-management-activity-api-reference#api-throttling?azure-portal=true). [FAQs for Audit (Premium)](/microsoft-365/compliance/audit-premium#faqs-for-audit-premium)
 
 ## Knowledge check
 
