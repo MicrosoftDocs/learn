@@ -30,4 +30,4 @@ Carbon intensity is the amount of carbon equivalent for the particular time and 
 
 ![Diagram of SCI Calculation.](../media/7-measurement-sci-image.svg)
 
-The calculation multiplies the energy consumed by the carbon intensity. The amount of carbon emitted through the hardware is then added to the sum. This gives a score that can be applied to each functional unit. For example, if the software is an API, the functional unit is a single call to that API. This makes the score an intensity rather than a total.
+The calculation multiplies the energy consumed by the carbon intensity. The amount of carbon emitted through the hardware is then added to the sum. This gives a score that can be applied to each functional unit. For example, if the software is an API, the functional unit might be a single call to that API. This makes the score an intensity rather than a total.
