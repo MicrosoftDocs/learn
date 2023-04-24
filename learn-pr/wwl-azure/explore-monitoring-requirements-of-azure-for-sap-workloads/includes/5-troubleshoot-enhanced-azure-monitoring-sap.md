@@ -1,4 +1,6 @@
-[SAP Note \#1999351](https://launchpad.support.sap.com/#/notes/1999351) describes the process of troubleshooting issues with the Azure Extension for SAP. As the note states “to ensure full supportability of Azure for SAP workloads, it's crucial that the **AzureEnhancedMonitoring** service is correctly configured and that the Azure performance counters show up in the SAP OS monitor. In case there are no counters, supportability cannot be guaranteed.“
+
+
+[SAP Note \#1999351](https://launchpad.support.sap.com/#/notes/1999351) describes the process of troubleshooting issues with the Azure Extension for SAP. As the note states “to ensure full supportability of Azure for SAP workloads, it's crucial that the **AzureEnhancedMonitoring** service is correctly configured and that the Azure performance counters show up in the SAP OS monitor. In case there are no counters, supportability can't be guaranteed.“
 
 If some of the monitoring data isn't delivered correctly, use the troubleshooting steps described here.
 

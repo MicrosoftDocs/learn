@@ -16,9 +16,6 @@ To build a new brain for the continuous stirred-tank reactor (CSTR) problem:
 
     ![The screen shows how to select a sample from Azure Marketplace.](../media/select-brain.png)
 
-    > [!NOTE]
-    > If you don’t see the CSTR sample in the list, you can click on the following link to open it up directly: [CSTR Sample – Microsoft Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/microsoftcorporation1638560120339.bonsai_cstr_sample?tab=Overview)
-
 2. In the "Sign in to Microsoft Azure Marketplace", enter your email associated with your Azure Account and then click "Sign in".
 
     ![The screenshot shows how to sign in to marketplace.](../media/sign-into-marketplace.png)
