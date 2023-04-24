@@ -1,87 +1,77 @@
-In this section, you ensure that your Azure DevOps organization is set up to complete the rest of this module. You also create the Azure Kubernetes Service environment that you'll deploy to.
+In this section, you will configure your Azure DevOps organization to proceed with the rest of this module and create an Azure Kubernetes Service environment to deploy your application to.
 
-To accomplish these goals, you:
+To achieve these objectives, you will:
 
 > [!div class="checklist"]
-> * Add a user to ensure Azure DevOps can connect to your Azure subscription.
-> * Set up an Azure DevOps project for this module.
-> * On Azure Boards, move the work item for this module to the **Doing** column.
-> * Create an Azure Container Registry (ACR) and Azure Kubernetes Service (AKS) cluster using the Azure CLI in Azure Cloud Shell.
-> * Create pipeline variables that define the names of your Azure resources.
-> * Create a service connection that enables Azure Pipelines to securely access your Azure subscription.
-> * Update the source project on GitHub to use your new ACR instance.
+> * Add a user to your Azure DevOps organization.
+> * Set up your Azure DevOps project.
+> * Manage your workflow with Azure Boards.
+> * Create Azure resources using Azure CLI.
+> * Create pipeline variables in Azure Pipelines.
+> * Create a service connection tto authenticate with Azure.
+> * Update your Kubernetes deployment manifest.
 
-## Add a user to Azure DevOps
+## Add a user to your organization
 
-To complete this module, you need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true). You can get started with Azure for free.
+To complete this module, an [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true) is required, which can be obtained for free. you need your own . You can get started with Azure for free.
 
-You don't need an Azure subscription to work with Azure DevOps, but here you'll use Azure DevOps to deploy to Azure resources that exist in your Azure subscription. To simplify the process, use the same Microsoft account to sign in to both your Azure subscription and your Azure DevOps organization.
+Although not necessary to work with Azure DevOps, an Azure subscription is necessary to deploy to Azure resources via Azure DevOps. To make the process more straightforward, use the same Microsoft account to sign in to both your Azure subscription and your Azure DevOps organization.
 
-If you use different Microsoft accounts to sign in to Azure and Azure DevOps, then add a user to your DevOps organization under the Microsoft account that you use to sign in to Azure. For more information, see [Add users to your organization or project](/azure/devops/organizations/accounts/add-organization-users?azure-portal=true&tabs=browser). When you add the user, choose the **Basic** access level.
+If you sign in to Azure and Azure DevOps using different Microsoft accounts, you can still proceed by adding a user to your DevOps organization under the Microsoft account associated with your Azure subscription.
+See [Add users to your organization or project](/azure/devops/organizations/accounts/add-organization-users?azure-portal=true&tabs=browser) for more details. WWhile adding the user, select the **Basic** access level.
 
-Then sign out of Azure DevOps and sign in. Use the Microsoft account that you use to sign in to your Azure subscription.
+After adding the user with Basic access level, sign out of Azure DevOps and sign back in using the Microsoft account associated with your Azure subscription.
 
 ## Get the Azure DevOps project
 
-Here you make sure that your Azure DevOps organization is set up to complete the rest of this module. To do so, you run a template that creates a project in Azure DevOps.
-
-The modules in this learning path form a progression. You follow the Tailspin web team through their DevOps journey. For learning purposes, each module has its own Azure DevOps project.
+In this section, you will run a template to create your project in Azure DevOps.
 
 ### Run the template
 
-Run a template that sets up your Azure DevOps organization:
+Run the template to set up your Azure DevOps project for this module:
 
 > [!div class="nextstepaction"]
 > [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?x-ms-routing-name=self&name=Deploymulti-containersolutionstoKubernetes&azure-portal=true)
 
-From the Azure DevOps Demo Generator site, follow these steps to run the template:
+From the Azure DevOps Demo Generator portal, follow these steps to run the template:
 
-1. Select **Sign In** and accept the usage terms.
+1. Select **Sign In** and agree to the terms of use.
 
-1. On the **Create New Project** page, select your Azure DevOps organization. Enter a project name, such as *Space Game - web - Kubernetes*.
+1. On the **Create New Project** page, select your Azure DevOps organization and provide a project name, such as *Space Game - web - Kubernetes*.
 
     :::image type="content" source="../media/3-create-new-project.png" alt-text="Screenshot of the Azure DevOps Demo Generator showing the process to create the project.":::
 
-1. Select **Yes, I want to import this repository** > **Authorize**.
-
-    If a window appears, authorize access to your GitHub account.
+1. Select **Yes, I want to import this repository**, and then **Authorize**. If a window pops up, grant permission to access your GitHub account.
 
     > [!IMPORTANT]
-    > You need to select this option so the template will connect to your GitHub repository. Select it even if you've already forked the _Space Game_ website project. The template uses your existing fork.
+    > Selecting this option is necessary for the template to connect to your GitHub repository. Please choose it even if you have already forked the *Space Game* repository as the template will use your existing fork.
 
-1. Select **Create Project**.
+1. Select **Create Project** and wait for the template to finish running, which may take a few minutes.
 
-    The template takes a few moments to run.
-
-1. Select **Navigate to project** to go to your project in Azure DevOps.
+1. Select **Navigate to project** to access your project in Azure DevOps.
 
 > [!IMPORTANT]
-> In this module, the [Clean up your Azure DevOps environment](/training/modules/deploy-kubernetes/5-clean-up-environment?azure-portal=true) page contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to follow the cleanup steps even if you don't complete this module.
+> The unit [Clean up your Azure DevOps environment](/training/modules/deploy-kubernetes/5-clean-up-environment?azure-portal=true) in this module includes crucial steps for cleanup. It is recommended to perform these steps to avoid running out of free build minutes. Even if you don't finish this module, it is important to follow the cleanup steps.
 
 [!include[](../../shared/includes/project-visibility.md)]
 
 ## Move the work item to Doing
 
-Here you assign a work item to yourself on Azure Boards. You also move the work item to the **Doing** state. In practice, you and your team would create work items at the start of each *sprint*, or work iteration.
+In this step, you will assign a work item to yourself on Azure Boards and move it to the Doing state. In real-world scenarios, you and your team would create work items at the beginning of each sprint or work iteration.
 
-This work assignment gives you a checklist to work from. It gives other team members visibility into what you're working on and how much work is left. The work item also helps enforce work-in-progress (WIP) limits so that the team doesn't take on too much work at one time.
+Assigning work items provides you with a checklist to work from and gives other team members visibility into your progress and remaining work. It also helps enforce work-in-progress (WIP) limits to prevent the team from taking on too much work at once.
 
-Here you move the first item, **Create multi-container version of web site orchestrated with Kubernetes**, to the **Doing** column. Then you assign yourself to the work item.
-
-To set up the work item:
-
-1. From Azure DevOps, go to **Boards**. Then, select **Boards** from the menu.
+1. Navigate to **Boards** in Azure DevOps, and then select **Boards** from the menu.
 
     :::image type="content" source="../../shared/media/azure-devops-boards-menu.png" alt-text="Screenshot of Azure DevOps showing the location of the Boards menu.":::
 
-1. In the **Create multi-container version of web site orchestrated with Kubernetes** work item, select the down arrow at the bottom of the card. Then assign the work item to yourself.
+1. Assign the **Create multi-container version of web site orchestrated with Kubernetes** work item to yourself by selecting the down arrow located at the bottom of the card.
 
     :::image type="content" source="../../shared/media/azure-boards-down-chevron.png" alt-text="Screenshot of Azure Boards showing the location of the down arrow.":::
-1. Move the work item from the **To Do** column to the **Doing** column.
+
+1. Drag and drop the work item from the **To Do** column to the **Doing** column. You will move the task to the Done column at the end of this module when you have completed it.
 
     :::image type="content" source="../media/3-azure-boards-wi1-doing.png" alt-text="Screenshot of Azure Boards showing the card in the Doing column.":::
-
-At the end of this module, you'll move the card to the **Done** column after you complete the task.
 
 ## Create the Azure Kubernetes Service environment
 
