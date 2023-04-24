@@ -2,7 +2,7 @@
 uid: learn.wwl.implement-azure-key-vault
 metadata:
   title: Implement Azure Key Vault
-  description: "Implement Azure Key Vault"
+  description: "Learn how Azure Key Vault can help you keep your apps more secure, and how to set and retrieve secrets by using the Azure CLI."
   ms.date: 04/24/2023
   author: wwlpublish
   ms.author: jeffko
