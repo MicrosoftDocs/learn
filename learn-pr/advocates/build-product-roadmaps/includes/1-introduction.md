@@ -4,7 +4,7 @@ You have an amazing idea. You’ve taken the core concepts of your idea and turn
 
 Once you have your prototype, how then do you turn it into a fully fledged product? Enter the product roadmap.
 
-This module is an introduction, for Product Managers and Product Engineers, to developing product roadmaps. We present a high-level structure for roadmaps and a process for how to build them. We'll introduce you to a startup, Fabrikam, who are building a new AI-powered fashion app and take you through their process for building their first product roadmap. This module assumes you're using and understand Agile methodology, but we're not opinionated about what kind of Agile you embrace. This module isn't a definitive guide to product roadmaps, but a starting point from which to experiment and learn what works for you.
+This module is an introduction, for Product Managers and Product Engineers, to developing product roadmaps. We present a high-level structure for roadmaps and a process for how to build them. We'll introduce you to a startup, Fabrikam, who is building a new AI-powered fashion app. We'll take you through their process for building their first product roadmap. This module assumes you're using and understand Agile methodology, but we're not opinionated about what kind of Agile you embrace. This module isn't a definitive guide to product roadmaps, but a starting point from which to experiment and learn what works for you.
 
 You’ll learn how to:
 
