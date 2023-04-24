@@ -36,7 +36,7 @@ Note the little `i` in the blue circle, which you can select for more info. Also
 
 Let's head back to our new file we're editing. Notice the changes to the UI after adding content.
 
-![Screenshot that shows what unsaved file indicators look like in Visual Studio Code. The Explorer button shows a number in a blue circle to indicate the number of unsaved files.](../media/4-visual-studio-doce-unsaved-file-indicators.png)
+![Screenshot that shows what unsaved file indicators look like in Visual Studio Code. The Explorer button shows a number in a blue circle to indicate the number of unsaved files.](../media/4-visual-studio-code-unsaved-file-indicators.png)
 
 There's a number 1 on the **Explorer** icon in the Activity Bar, which means there's one file open that's been changed but not saved. After that is a count of unsaved changes in the Explorer, next to the Open Editors header. Lastly, the file name in the list of open editors and the editor tab for the file itself each have a large dot.
 

@@ -45,6 +45,6 @@ Take this opportunity to try our different color themes. If the default themes a
 
 Select **Tools and languages** under **Customize** and see the left pane expand to show the current list of available extensions, similar to what you see in the next screenshot. You can also use the **View** menu and select **Extensions**. The first option adds the filter `@category:"programming languages"` to the extensions list, to show only extensions in that category. You can edit this filter yourself, or clear it with the **Clear Extensions Input** button.
 
-:::image type="content" source="../media/2-visual-studio-code-extensions.png" alt-text="Screenshot that shows the Extensions menu selected in Visual Studio Code":::
+:::image type="content" source="../media/2-visual-studio-code-extensions.png" alt-text="Screenshot that shows the Extensions menu selected in Visual Studio Code.":::
 
 We're not installing any of these extensions right now, but take a moment to scroll through the list to get an idea of the various options. We'll discuss extensions in more depth in the next unit.
