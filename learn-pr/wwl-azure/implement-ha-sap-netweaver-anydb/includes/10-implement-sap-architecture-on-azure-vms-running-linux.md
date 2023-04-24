@@ -1,4 +1,4 @@
-Estimated time: 100 minutes
+
 
 All tasks in this lab are performed from the Azure portal (including the Bash Cloud Shell session).
 
