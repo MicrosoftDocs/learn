@@ -2,7 +2,7 @@
 
 
 
-In the  **Configuration > Path mappings** section you can configure handler mappings, and virtual application and directory mappings. The **Path mappings** page will display different options based on the OS type.
+In the  **Configuration > Path mappings** section you can configure handler mappings, and virtual application and directory mappings. The **Path mappings** page displays different options based on the OS type.
 
 ## Windows apps (uncontainerized)
 
@@ -20,7 +20,7 @@ You can configure virtual applications and directories by specifying each virtua
 
 ## Linux and containerized apps
 
-You can add custom storage for your containerized app. Containerized apps include all Linux apps and also the Windows and Linux custom containers running on App Service. Click **New Azure Storage Mount** and configure your custom storage as follows:
+You can add custom storage for your containerized app. Containerized apps include all Linux apps and also the Windows and Linux custom containers running on App Service. Select **New Azure Storage Mount** and configure your custom storage as follows:
 
 * **Name**: The display name.
 * **Configuration options**: Basic or Advanced.

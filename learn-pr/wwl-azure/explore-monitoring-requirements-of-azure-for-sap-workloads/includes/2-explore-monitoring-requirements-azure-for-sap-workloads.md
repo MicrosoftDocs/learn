@@ -1,3 +1,5 @@
+
+
 As per [SAP Note \#2015553](https://launchpad.support.sap.com/#/notes/2015553), "for full support, you must enable built-in SAP monitors to retrieve information about configuration and resource utilization from the underlying Azure infrastructure." Therefore, you must set up every Azure instance that hosts SAP software and related DBMS systems such that:
 
 - The Azure Extension for SAP is deployed and correctly configured.
@@ -17,7 +19,7 @@ In order to effectively analyze problems related to SAP HANA (both in Azure VMs 
 
 - [SAP Note \#2222200 – FAQ: SAP HANA Network](https://launchpad.support.sap.com/#/notes/2222200)
 - [SAP Note \#2100040 – FAQ: SAP HANA CPU](https://launchpad.support.sap.com/#/notes/2100040)
-- [SAP Note \#199997 – FAQ: SAP HANA Memory](https://launchpad.support.sap.com/#/notes/199997)
+- [SAP Note \#1999997 – FAQ: SAP HANA Memory](https://launchpad.support.sap.com/#/notes/1999997)
 - [SAP Note \#200000 – FAQ: SAP HANA Performance Optimization](https://launchpad.support.sap.com/#/notes/200000)
 - [SAP Note \#199930 – FAQ: SAP HANA I/O Analysis](https://launchpad.support.sap.com/#/notes/199930)
 - [SAP Note \#2177064 – FAQ: SAP HANA Service Restart and Crashes](https://launchpad.support.sap.com/#/notes/2177064)
