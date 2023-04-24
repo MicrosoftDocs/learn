@@ -5,9 +5,9 @@ Application Insights is enabled through either Auto-Instrumentation (agent) or b
 
 Auto-instrumentation is the preferred instrumentation method. It requires no developer investment and eliminates future overhead related to updating the SDK. It's also the only way to instrument an application in which you don't have access to the source code.
 
-In essence, all you have to do is enable and - in some cases - configure the agent, which will collect the telemetry automatically.
+In essence, all you have to do is enable and - in some cases - configure the agent, which collects the telemetry automatically.
 
-The list of services that are supported by auto-instrumentation changes rapidly, visit this [page](/azure/azure-monitor/app/codeless-overview#supported-environments-languages-and-resource-providers) for a list of what is currently supported.
+The list of services supported by auto-instrumentation changes rapidly, visit this [page](/azure/azure-monitor/app/codeless-overview#supported-environments-languages-and-resource-providers) for a list of what is currently supported.
 
 ## Enabling via Application Insights SDKs
 
