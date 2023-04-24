@@ -15,7 +15,7 @@ This audience will be the primary and default audience for your product roadmap,
 
 ## Your executive team and investors
 
-Your executive team are interested your high-level goals, like the total time and cost of development work and how it achieves the company's strategic objectives. Most likely, the executive audience will be interested in the reporting outputs from your product management process.
+Your executive team is interested your high-level goals, like the total time and cost of development work and how it achieves the company's strategic objectives. Most likely, the executive audience will be interested in the reporting outputs from your product management process.
 
 * What you plan to do in the near future; for example, the next quarter? What are you going to do next?
 * What you have and are achieving currently; for example, this quarter? Are you on schedule?
