@@ -15,7 +15,7 @@ A good user story contains:
 
 * A summary of the requirement, no more than one or two sentences.
 * A priority to tell us how important the story is to the product.
-* A series of "stories" about the requirement that describe what we expect from it.
+* A series of "stories" about the requirement that describes what we expect from it.
 * A test of the story's success.
 * An estimate of the effort the story will take.
 
