@@ -16,9 +16,9 @@ The maximum performance of an Ultra disk depends on the size you select, as you 
 | 32 | 9,600 | 2,400 |
 | 64 | 19,200 | 4,000 |
 | 128 | 38,400 | 4,000 |
-| 256 | 76,800 | 2,000 |
+| 256 | 76,800 | 4,000 |
 | 512 | 153,600 | 4,000 |
-| 1,024 - 65,536 (sizes in this range increase in 1 TiB increments) | 160,000 | 2,000 |
+| 1,024 - 65,536 (sizes in this range increase in 1 TiB increments) | 160,000 | 4,000 |
 
 Ultra disks can have capacities from 4 GB up to 64 TB. A unique feature of Ultra disks is that you can adjust the IOPS and throughput values while they're running and without detaching them from the host virtual machine. Performance adjustments can take up to an hour to take effect.
 
@@ -83,7 +83,7 @@ Use Standard SSD disks when you have budgetary constraints and a workload that i
 
 ## Standard HDD managed disks
 
-In Azure Standard HDD managed disks, data is stored on conventional magnetic disk drives that have moving spindles. Disks are slower and the variation in speeds is higher compared to solid-state drives (SSDs). Standard SSD disks are designed to deliver write latencies under 10 ms and read latencies under 20 ms for most operations. Like Standard SSD disks, you can use Standard HDD disks for any VM.
+In Azure Standard HDD managed disks, data is stored on conventional magnetic disk drives that have moving spindles. Disks are slower and the variation in speeds is higher compared to solid-state drives (SSDs). Standard HDD disks are designed to deliver write latencies under 10 ms and read latencies under 20 ms for most operations. Like Standard SSD disks, you can use Standard HDD disks for any VM.
 
 The following table provides the performance characteristics of Standard HDD disks in several sizes:
 
