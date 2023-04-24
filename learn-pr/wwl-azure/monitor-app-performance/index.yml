@@ -3,7 +3,7 @@ uid: learn.wwl.monitor-app-performance
 metadata:
   title: Monitor app performance
   description: "Monitor app performance"
-  ms.date: 02/09/2023
+  ms.date: 04/24/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
@@ -30,7 +30,6 @@ subjects:
 - cloud-computing
 units:
 - learn.wwl.monitor-app-performance.introduction
-- learn.wwl.monitor-app-performance.explore-azure-monitor
 - learn.wwl.monitor-app-performance.explore-application-insights
 - learn.wwl.monitor-app-performance.discover-log-based-metrics
 - learn.wwl.monitor-app-performance.instrument-app-for-monitoring
