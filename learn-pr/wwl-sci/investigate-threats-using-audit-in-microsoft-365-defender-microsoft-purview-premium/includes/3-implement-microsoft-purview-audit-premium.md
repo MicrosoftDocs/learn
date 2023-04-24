@@ -8,7 +8,7 @@ If an organization has a subscription and end-user licensing that supports Audit
 
 Audit (Premium) features require an appropriate E5 license assigned to users. The Advanced Auditing app/service plan must also be enabled for those users. To verify that the Advanced Auditing app is assigned to users, perform the following steps for each user:
 
-1. In the **Microsoft 365 admin center**, ([Microsoft 365 admin center portal](https://admin.microsoft.com/)) select **Users** on the navigation pane, and then select **Active users**.
+1. In the **Microsoft 365 admin center** ([Microsoft 365 admin center portal](https://admin.microsoft.com/)), select **Users** on the navigation pane, and then select **Active users**.
 1. On the **Active users** page, select a user.
 1. On the user properties flyout page that appears, select the **Licenses and apps** tab.
 1. In the **Licenses** section, verify the user is assigned an E5 license or is assigned an appropriate add-on license. For a list of licenses that support Audit (Premium), see [Audit (Premium) licensing requirements](/microsoft-365/compliance/auditing-solutions-overview?azure-portal=true).
