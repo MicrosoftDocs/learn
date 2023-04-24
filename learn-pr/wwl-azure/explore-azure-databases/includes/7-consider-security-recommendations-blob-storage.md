@@ -1,3 +1,5 @@
+
+
 ## Data protection
 
 - Use the Azure Resource Manager deployment model.
@@ -17,9 +19,9 @@
 - Secure your account access keys with Azure Key Vault.
 - Regenerate your account keys periodically.
 - Disallow Shared Key authorization.
-- Keep in mind the principal of least privilege when assigning permissions to a SAS.
+- Keep in mind the principle of least privilege when assigning permissions to a SAS.
 - Have a revocation plan in place for any SAS that you issue to clients.
-- If a service SAS is not associated with a stored access policy, then set the expiry time to one hour or less.
+- If a service SAS isn't associated with a stored access policy, then set the expiry time to one hour or less.
 - Disable anonymous public read access to containers and blobs.
 
 ## Networking
