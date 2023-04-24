@@ -1,4 +1,3 @@
-## Summary
 
 This module explored the key functionality in Microsoft Purview Audit (Premium). Audit (Premium) builds on the capabilities of Audit (Standard). It does so by providing audit log retention policies, longer retention of audit records, high-value crucial events, and higher bandwidth access to the Office 365 Management Activity API.
 
