@@ -5,15 +5,15 @@ Components are independently deployable parts of your distributed/microservices 
 
 * Components are different from "observed" external dependencies such as SQL, Event Hubs, etc. which your team/organization may not have access to (code or telemetry).
 * Components run on any number of server/role/container instances.
-* Components can be separate Application Insights instrumentation keys (even if subscriptions are different) or different roles reporting to a single Application Insights instrumentation key. The preview map experience shows the components regardless of how they are set up.
+* Components can be separate Application Insights instrumentation keys (even if subscriptions are different) or different roles reporting to a single Application Insights instrumentation key. The preview map experience shows the components regardless of how they're set up.
 
 You can see the full application topology across multiple levels of related application components. Components could be different Application Insights resources, or different roles in a single resource. The app map finds components by following HTTP dependency calls made between servers with the Application Insights SDK installed.
 
-This experience starts with progressive discovery of the components. When you first load the application map, a set of queries is triggered to discover the components related to this component. A button at the top-left corner will update with the number of components in your application as they are discovered.
+This experience starts with progressive discovery of the components. When you first load the application map, a set of queries is triggered to discover the components related to this component. A button at the top-left corner updates with the number of components in your application as they're discovered.
 
 On clicking "Update map components", the map is refreshed with all components discovered until that point. Depending on the complexity of your application, this may take a minute to load.
 
-If all of the components are roles within a single Application Insights resource, then this discovery step is not required. The initial load for such an application will have all its components.
+If all of the components are roles within a single Application Insights resource, then this discovery step isn't required. The initial load for such an application has all its components.
 
 :::image type="content" source="../media/application-map.png" alt-text="Application Map screenshot showing the initial load of an app where all of the components are roles within a single Application Insights resource.":::
 
