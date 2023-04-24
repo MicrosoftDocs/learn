@@ -4,13 +4,11 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/30/2022
+  ms.date: 04/23/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 2
 content: |
   [!include[](includes/12-knowledge-check.md)]
@@ -21,13 +19,13 @@ quiz:
     choices:
     - content: "The IP addresses are properly configured automatically, and do not need to be changed."
       isCorrect: false
-      explanation: "That’s incorrect. All IP addresses of the network cards and Azure internal load balancers are dynamic by default. You need to change them to static IP addresses."
+      explanation: "That’s incorrect. All IP addresses of the network cards and Azure internal load balancers are dynamic by default. They must be changed to static IP addresses."
     - content: "All of the IP addresses are static by default, and need to be changed to dynamic."
       isCorrect: false
-      explanation: "That’s incorrect. All IP addresses of the network cards and Azure internal load balancers are dynamic by default. You need to change them to static IP addresses."
+      explanation: "That’s incorrect. All IP addresses of the network cards and Azure internal load balancers are dynamic by default. They must be changed to static IP addresses."
     - content: "All of the IP addresses are dynamic by default, and need to be changed to static."
       isCorrect: true
-      explanation: "That's correct. All IP addresses of the network cards and Azure internal load balancers are dynamic by default. You need to change them to static IP addresses."
+      explanation: "That's correct. All IP addresses of the network cards and Azure internal load balancers are dynamic by default. They must be changed to static IP addresses."
   - content: "Azure load balancer's idle timeout can time out open connections to the SAP enqueue process. To prevent Azure load balancer's idle timeout, customers should add registry entries for KeepAliveTime and KeepAliveInterval at what registry path on the cluster nodes of the SAP ASCS-SCS instance?"
     choices:
     - content: "HKLM\\SYSTEM\\CurrentControlSet\\Services\\Tcpip\\Interfaces"
