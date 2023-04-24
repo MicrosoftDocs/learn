@@ -1,3 +1,5 @@
+
+
 High availability of SAP workloads relies either on the high availability features built into the workload or on a failover cluster implemented on the operating system level. A failover cluster is a group of independent servers that work together to increase the availability of applications and services. If a node failure occurs, the cluster performs node arbitration, and depending on the outcome, transfers the workload to one of the remaining nodes.
 
 Windows Server Failover Clustering is the service providing high availability in Windows Server. Windows Server Failover Clustering relies on the quorum construct to avoid split-brain scenarios. There are several different quorum modes, including node majority, node and disk majority, node and file share majority, and disk only, the recommended choice is Cloud Witness (introduced in Windows Server 2016). When using earlier versions of Windows, you'll need to choose either node majority, or node and file share (you can implement a highly available file share in Azure by using a Storage Spaces Direct cluster). Shared locally attached disks aren't natively supported on Azure VMs. Optionally you can resort to third-party solutions, such as SIOS DataKeeper, which emulate shared disks by synchronously replicating local disks across clustered Azure VMs.
@@ -11,12 +13,9 @@ The SBD requires at least one more virtual machine that acts as an iSCSI target 
 ## High availability set up in SUSE using the STONITH
 
 - Operating System: **SLES 12 SP1 for SAP**
-- HANA Large Instances: **2xS192 (4 sockets, 2 TB)**
 - HANA Version: **HANA 2.0 SP1**
 - Server Names: **sapprdhdb95** (node1) and **sapprdhdb96** (node2)
 - STONITH Device: **iSCSI based STONITH device**
-- NTP set up on one of the HANA Large Instance nodes
-- HANA Large Instance: When you set up HANA Large Instances with HSR, you can request the Microsoft Service Management team to set up STONITH.
 
 To set up the end-to-end HA using STONITH, the following steps need to be followed:
 
