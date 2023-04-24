@@ -34,7 +34,7 @@ By default, the Command Palette comes up in Command mode, signified by the `>` p
 
 Changing the look of your editor is important to most of us. Visual Studio Code makes it easy with Themes. On the Welcome page, select **Color theme** under **Customize** and you see something like the following screenshot:
 
-:::image type="content" source="../media/2-visual-studio-code-color-themes.png" alt-text="Screenshot that shows Visual Studio Code with the Color theme options displayed." lightbox="../media/2-visual-studio-code-color-themes.png":::
+:::image type="content" source="../media/2-visual-studio-code-color-themes-2023.png" alt-text="Screenshot that shows Visual Studio Code with the Color theme options displayed." lightbox="../media/2-visual-studio-code-color-theme-2023.png":::
 
 > [!NOTE]
 > You can also get to this list in other ways, such as the Command palette, pulldown menus, and keyboard shortcuts.
