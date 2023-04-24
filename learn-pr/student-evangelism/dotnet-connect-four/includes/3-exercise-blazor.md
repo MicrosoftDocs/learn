@@ -81,7 +81,7 @@ Next, let's create a board component to be used by players in our game. The comp
 
    Hot reload allows you to observe the evolution of the game from a page to a full Connect Four board with interactive pieces.
 
-   :::image type="content" source="../media/2-board-step1.png" alt-text="Screenshot of App board with title.":::
+   :::image type="content" source="../media/2-board-step-1.png" alt-text="Screenshot of App board with title.":::
 
    Congratulations! You've built your first component and used it on a Blazor page.
 
@@ -189,6 +189,6 @@ Let's add some style to this component by defining some colors for the frame of 
 
     Your browser should be refreshed for you (if not you can manually refresh the browser with F5), and you should be greeted with a proper yellow Connect Four board:
 
-   :::image type="content" source="../media/2-board-step2.png" alt-text="Screenshot of Yellow connect four board.":::
+   :::image type="content" source="../media/2-board-step-2.png" alt-text="Screenshot of Yellow connect four board.":::
 
    Congratulations, you now have the start of game. In later units, we add game logic to it.
