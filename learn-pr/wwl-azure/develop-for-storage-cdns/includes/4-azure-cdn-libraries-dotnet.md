@@ -1,11 +1,11 @@
 
-You can use the Azure CDN Library for .NET to automate creation and management of CDN profiles and endpoints. Install the [Microsoft.Azure.Management.Cdn.Fluent](https://www.nuget.org/packages/Microsoft.Azure.Management.Cdn.Fluent) directly from the Visual Studio Package Manager console or with the .NET Core CLI.
+You can use the Azure CDN Library for .NET to automate creation and management of CDN profiles and endpoints. Install the [Microsoft.Azure.Management.Cdn.Fluent](https://www.nuget.org/packages/Microsoft.Azure.Management.Cdn.Fluent) directly from the Visual Studio Package Manager console or with the .NET CLI.
 
-In this unit you will see code examples illustrating common actions.
+In this unit, you see code examples illustrating common actions.
 
 ## Create a CDN client
 
-The example below shows creating a client by using the `CdnManagementClient` class.
+The following example shows creating a client by using the `CdnManagementClient` class.
 
 ```csharp
 static void Main(string[] args)
@@ -18,7 +18,7 @@ static void Main(string[] args)
 
 ## List CDN profiles and endpoints
 
-The first thing the method below does is list all the profiles and endpoints in our resource group, and if it finds a match for the profile and endpoint names specified in our constants, makes a note of that for later so we don't try to create duplicates.
+The first thing the method below does is list all the profiles and endpoints in our resource group, and if it finds a match for the profile and endpoint names specified in our constants, makes a note of it for later so we don't try to create duplicates.
 
 ```csharp
 private static void ListProfilesAndEndpoints(CdnManagementClient cdn)
@@ -72,7 +72,7 @@ private static void CreateCdnProfile(CdnManagementClient cdn)
 }
 ```
 
-Once the profile is created, we'll create an endpoint.
+Once the profile is created, we create an endpoint.
 
 ```csharp
 private static void CreateCdnEndpoint(CdnManagementClient cdn)
