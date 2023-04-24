@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Failover and failback using Azure Site Recovery
   description: Exercise - Failover and failback using Azure Site Recovery
   ms.date: 11/15/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: ankitaduttaMSFT
+  ms.author: ankitadutta
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Failover and failback using Azure Site Recovery

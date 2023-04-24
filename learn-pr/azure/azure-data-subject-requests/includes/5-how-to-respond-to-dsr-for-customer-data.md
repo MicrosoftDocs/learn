@@ -31,7 +31,7 @@ A customer residing in France has called the DSR toll-free number to enact their
 
 1. In Azure AD, select **Users**.
 2. In the **All users** blade, select the check box for the data subject's user account.
-3. Select **Delete user**, and then select **Yes** to confirm.
+3. Select **Delete**, and then select **Yes** to confirm.
 4. In the **Deleted users** blade, select the check box for the data subject's user account.
 5. Select **Delete permanently**, and then select **Yes** to confirm.
 
@@ -42,7 +42,7 @@ A customer residing in France has called the DSR toll-free number to enact their
 
 A Contoso customer who lives in California has submitted a DSR form through the company's website. They want access to the personal information that they provided to Contoso through email and documents.
 
-Again, there are two steps here. First, you’ll search for (discover) their personal information. You’ll then give the customer access to that information. If this isn’t possible, you might need to provide an explanation of why the information can't be provided. 
+Again, there are two steps here. First, you’ll search for (discover) their personal information. You’ll then give the customer access to that information. If this isn’t possible, you might need to provide an explanation of why the information can't be provided.
 
 #### Task 1: Discover
 
@@ -68,9 +68,9 @@ Again, there are two steps here. First, you’ll search for (discover) their per
 
 #### Task 2: Provide access
 
-1. Provide the data subject with access by retrieving a copy of the document or item that contains responsive data.  To do this:
+1. Provide the data subject with access by retrieving a copy of the document or item that contains responsive data. To do this:
 
-    1. In the Compliance Center, open **Content Search**.
+    1. In the compliance portal, open **Content Search**.
     1. Select **Preview results**.
     1. Select an item, and then select **Download original file**.
 
@@ -83,26 +83,26 @@ Again, there are two steps here. First, you’ll search for (discover) their per
 > [!NOTE]
 > When providing a copy to the data subject, you should remove or redact personal information about other data subjects or other confidential information.
 
-## Useful tools for responding to customer-data DSRs 
+## Useful tools for responding to customer-data DSRs
 
 The following table lists tool that you can use to respond to customer-data DSRs in Microsoft online services:
 
 |Tool name|Description|
 |------|------|
 |Azure portal|Use this tool to respond to DSRs within Azure.|
-|Content Search eDiscovery tool|This tool is in the Office 365 Security & Compliance Center and the Microsoft 365 compliance center. Use it to help fulfill DSRs against Office 365/Microsoft 365 applications.|
-|DSR case tool|This tool is in the Office 365 Security & Compliance Center. Use this tool to help with data-subject investigations.|
+|Content Search eDiscovery tool|This tool is in the Office 365 Security & compliance portal and the Microsoft Purview compliance portal. Use it to help fulfill DSRs against Office 365/Microsoft 365 applications.|
+|DSR case tool|This tool is in the Office 365 Security & compliance portal. Use this tool to help with data-subject investigations.|
 |In-app functionality|For applications that don’t support the Content Search tool, use this application for DSR responses.|
 
 ## Office 365 applications that help you with DSR responses
 
 Office 365 includes many applications that might store user data. Knowing which applications the data subject uses helps narrow down what’s in scope for a DSR response. Depending on the application, you might use the Content Search tool to respond. However, in other cases, you'll use the in-app functionality to access the data.
 
-A quick way to determine the applications that are in-scope is to review the Microsoft 365 for Business subscription. The subscription's details list the included applications. You can also use the Microsoft 365 admin center to help locate the user's account. From there, in the user account's properties, you can review their product licensing.
+A quick way to determine the applications that are in scope is to review the Microsoft 365 for Business subscription. The subscription's details list the included applications. You can also use the Microsoft 365 admin center to help locate the user's account. From there, in the user account's properties, you can review their product licensing.
 
 ## Limiting a search using compliance boundaries
 
-*Compliance boundaries* are logical search boundaries. Use these boundaries to control or limit the content locations, such as Exchange Online mailboxes and SharePoint Online sites, in which an IT administrator or compliance officer can search when responding to a DSR. Use the Compliance Center to create compliance boundaries. Common scenarios for setting compliance boundaries include for:
+*Compliance boundaries* are logical search boundaries. Use these boundaries to control or limit the content locations, such as Exchange Online mailboxes and SharePoint Online sites, in which an IT administrator or compliance officer can search when responding to a DSR. Use the compliance portal to create compliance boundaries. Common scenarios for setting compliance boundaries include for:
 
 - Geographical boundaries.
 - Governmental organizations and agencies.

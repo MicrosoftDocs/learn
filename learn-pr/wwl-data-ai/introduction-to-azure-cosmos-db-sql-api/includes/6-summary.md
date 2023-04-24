@@ -1,6 +1,6 @@
-In this module, you have learned how Azure Cosmos DB SQL API will allow you to get a database launched with relatively little friction and will grow with your company as your needs evolve.
+In this module, you've learned how Azure Cosmos DB SQL API allows you to launch a database with relatively little friction that can grow with your company as your needs evolve.
 
-Azure Cosmos DB SQL API eases many common pain points by offering an elastic and globally distributed database platform. Azure Cosmos DB SQL API will scale up-and-down to meet your real-world usage. The SQL API for Azure Cosmos DB SQL API is the built-in native API with the widest variety of SDK options for developers in your organization. The SQL API also natively uses JSON documents enabling your team to store a wide variety of data formats in your database.
+Azure Cosmos DB SQL API eases many common pain points by offering an elastic and globally distributed database platform. Azure Cosmos DB SQL API scales up-and-down to meet your real-world usage. The SQL API for Azure Cosmos DB SQL API is the built-in native API with the widest variety of SDK options for developers in your organization. The SQL API also natively uses JSON documents, enabling your team to store a wide variety of data formats in your database.
 
 Now that you have completed this module, you can:
 
@@ -9,7 +9,7 @@ Now that you have completed this module, you can:
 
 ## Learn more
 
-For more information about the topics discussed in this module, see:
+For more information about the subjects discussed in this module, see:
 
 - [Azure Cosmos DB resource model][/azure/cosmos-db/account-databases-containers-items]
 - [Choose an API in Azure Cosmos DB][/azure/cosmos-db/choose-api]
