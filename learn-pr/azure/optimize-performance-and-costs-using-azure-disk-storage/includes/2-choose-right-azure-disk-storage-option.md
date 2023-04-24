@@ -83,7 +83,7 @@ Use Standard SSD disks when you have budgetary constraints and a workload that i
 
 ## Standard HDD managed disks
 
-In Azure Standard HDD managed disks, data is stored on conventional magnetic disk drives that have moving spindles. Disks are slower and the variation in speeds is higher compared to solid-state drives (SSDs). Standard SSD disks are designed to deliver write latencies under 10 ms and read latencies under 20 ms for most operations. Like Standard SSD disks, you can use Standard HDD disks for any VM.
+In Azure Standard HDD managed disks, data is stored on conventional magnetic disk drives that have moving spindles. Disks are slower and the variation in speeds is higher compared to solid-state drives (SSDs). Standard HDD disks are designed to deliver write latencies under 10 ms and read latencies under 20 ms for most operations. Like Standard SSD disks, you can use Standard HDD disks for any VM.
 
 The following table provides the performance characteristics of Standard HDD disks in several sizes:
 
