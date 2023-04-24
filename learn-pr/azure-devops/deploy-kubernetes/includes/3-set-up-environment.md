@@ -75,33 +75,33 @@ Assigning work items provides you with a checklist to work from and gives other 
 
 ## Create the Azure Kubernetes Service environment
 
-Here you create the Azure Kubernetes Service resources that are required to deploy the new container version of the site.
+In this step, you will create the necessary Azure Kubernetes Service resources to deploy the new container version of the website.
 
-In [Create a release pipeline with Azure Pipelines](/training/modules/create-release-pipeline?azure-portal=true), you brought up Azure resources through the Azure portal. Although the portal is a great way to explore what's available on Azure or to do basic tasks, bringing up components such as Azure Kubernetes Service can be tedious.
+In the previous module, [Create a release pipeline with Azure Pipelines](/training/modules/create-release-pipeline?azure-portal=true), you you used the Azure portal to create Azure resources. While the portal is useful for exploring Azure capabilities and performing basic tasks, creating components like Azure Kubernetes Service can be a time-consuming process.
 
-In this module, you use the Azure CLI to bring up the resources needed to deploy and run your app on Azure Kubernetes Service. You can access the Azure CLI from a terminal or through Visual Studio Code. Here you access the Azure CLI from Azure Cloud Shell. This browser-based shell experience is hosted in the cloud. In Cloud Shell, the Azure CLI is configured for use with your Azure subscription.
+In this module, you will be using the Azure CLI to create the resources required to deploy and run your application on Azure Kubernetes Service. The Azure CLI can be accessed from a terminal or through Visual Studio Code. However, in this module, you will be accessing the Azure CLI from Azure Cloud Shell. Cloud Shell is a browser-based shell experience hosted in the cloud, which comes preconfigured with the Azure CLI for use with your Azure subscription.
 
 > [!IMPORTANT]
-> You need your own Azure subscription to complete the exercises in this module.
+> To complete the exercises in this module, you need your own Azure subscription.
 
-### Bring up Cloud Shell through the Azure portal
+### Launch Cloud Shell
 
-1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true), and sign in.
+1. Navigate to [Azure portal](https://portal.azure.com?azure-portal=true) and log in.
 
-1. From the menu, select **Cloud Shell**. When prompted, select the **Bash** experience.
+1. Select **Cloud Shell** option from the menu, and then choose the **Bash** experience when prompted.
 
     :::image type="content" source="../../shared/media/azure-portal-menu-cloud-shell.png" alt-text="Screenshot of the Azure portal showing the location of the Cloud Shell menu item.":::
 
-    > [!NOTE]
-    > Cloud Shell requires an Azure storage resource to persist any files that you create in Cloud Shell. When you first open Cloud Shell, you're prompted to create a resource group, storage account, and Azure Files share. This setup is automatically used for all future Cloud Shell sessions.
+> [!NOTE]
+> Cloud Shell requires an Azure storage resource to persist any files that you create in Cloud Shell. When you first open Cloud Shell, you're prompted to create a resource group, storage account, and Azure Files share. This setup is automatically used for all future Cloud Shell sessions.
 
 ### Select an Azure region
 
-A _region_ is one or more Azure datacenters within a geographic location. East US, West US, and North Europe are examples of regions. Every Azure resource, including an App Service instance, is assigned a region.
+A region refers to one or more Azure datacenters located in a geographic area. Regions such as East US, West US, and North Europe are examples of such areas. Each Azure resource, including an App Service instance, is associated with a region.
 
-To make commands easier to run, start by selecting a default region. After you specify the default region, later commands use that region unless you specify a different region.
+To simplify the execution of commands, begin by setting a default region. Once you set a default region, subsequent commands will use that region by default, unless you explicitly specify a different region.
 
-1. From Cloud Shell, run the following `az account list-locations` command to list the regions that are available from your Azure subscription:
+1. From Cloud Shell, run the following command to list the regions available in your Azure subscription:
 
     ```azurecli
     az account list-locations \
@@ -109,25 +109,25 @@ To make commands easier to run, start by selecting a default region. After you s
       --output table
     ```
 
-1. From the `Name` column in the output, choose a region that's close to you. For example, choose `eastasia` or `westus2`.
+1. Select a **region** from the Name column in the output that is geographically close to you. For instance, you could choose *eastasia* or *westus2*.
 
-1. Run `az configure` to set your default region. Replace `<REGION>` with the name of the region you chose.
+1. Run the following command to set your default region. Replace <REGION> with the name of the region you chose earlier.
 
     ```azurecli
     az configure --defaults location=<REGION>
     ```
 
-    This example sets `westus2` as the default region.
+This example sets `westus2` as the default region.
 
-    ```azurecli
-    az configure --defaults location=westus2
-    ```
+```azurecli
+az configure --defaults location=westus2
+```
 
 ### Create Bash variables
 
-Create Bash variables to make the setup process more convenient and less error-prone. Using variables for shared text strings helps avoid accidental typos.
+Using Bash variables can make the setup process more convenient and less error-prone. This approach helps avoid accidental typos by defining shared text strings as variables that can be used throughout your script.
 
-1. From Cloud Shell, generate a random number. This will make it easier to create globally unique names for certain services in the next step.
+1. From Cloud Shell, generate a random number to simplify the creation of globally unique names for certain services in the next step.
 
     ```bash
     resourceSuffix=$RANDOM
@@ -156,18 +156,16 @@ Create Bash variables to make the setup process more convenient and less error-p
 
 ### Create the Azure resources
 
-This solution requires several Azure resources for deployment, which you create now.
+> [!NOTE]
+> In this tutorial, default network settings are used for learning purposes. These settings enable your website to be accessed from the internet. However, in practice, you may choose to configure an Azure virtual network that places your website in a network that is not internet-routable and is only accessible by you and your team. Later, you could reconfigure your network to make the website available to your users.
 
-   > [!NOTE]
-   > For learning purposes, here you use the default network settings. These settings make your site accessible from the internet. In practice, you could configure an Azure virtual network that places your website in a network that's not internet routable, and that only you and your team can access. Later, you could reconfigure your network to make the website available to your users.
-
-1. Run the following `az group create` command to create a resource group using the name defined earlier:
+1. Run the following command to create a resource group with the name you defined earlier:
 
     ```azurecli
     az group create --name $rgName
     ```
 
-1. Run the following `az acr create` command to create an Azure Container Registry using the name defined earlier:
+1. Run the `az acr create` command to create an Azure Container Registry with the name you defined earlier:
 
     ```azurecli
     az acr create \
@@ -176,7 +174,7 @@ This solution requires several Azure resources for deployment, which you create 
       --sku Standard
     ```
 
-1. Run the following `az aks create` command to create an AKS instance using the name defined earlier:
+1. Run the `az aks create` command to create an AKS instance with the name you defined earlier:
 
     ```azurecli
     az aks create \
@@ -188,7 +186,7 @@ This solution requires several Azure resources for deployment, which you create 
     ```
 
    > [!NOTE]
-   > It may take 10-15 minutes for the AKS deployment to complete.
+   > AKS deployment completion may take 10-15 minutes.
 
 1. Create a variable to store the ID of the service principal configured for the AKS instance:
 
@@ -210,7 +208,7 @@ This solution requires several Azure resources for deployment, which you create 
       --output tsv)
     ```
 
-1. Run the following `az acr list` command to print the login server for your ACR instance:
+1. Run the `az acr list` command to retrieve the login server URL for your Azure Container Registry (ACR) instance:
 
     ```azurecli
     az acr list \
@@ -219,7 +217,7 @@ This solution requires several Azure resources for deployment, which you create 
      --output table
     ```
 
-    Note the login server for your container registry. You'll need this when configuring the pipeline and environment in upcoming steps. Here's an example:
+    Make sure to take note of the login server for your container registry. You will need this information later when configuring your pipeline. Here's an example:
 
     ```output
     LoginServer                      
@@ -227,7 +225,7 @@ This solution requires several Azure resources for deployment, which you create 
     tailspinspacegame4692.azurecr.io
     ```
 
-1. Run the following `az role assignment create` command to create a role assignment to authorize the AKS cluster to connect to the Azure Container Registry:
+1. Run the `az role assignment create` command to create a role assignment to authorize the AKS cluster to connect to the Azure Container Registry:
 
     ```azurecli
     az role assignment create \
@@ -237,7 +235,7 @@ This solution requires several Azure resources for deployment, which you create 
     ```
 
 > [!IMPORTANT]
-> The [Clean up your Azure DevOps environment](/training/modules/deploy-kubernetes/5-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you're not charged for Azure resources after you complete this module. Be sure to perform the cleanup steps even if you don't complete this module.
+> The unit [Clean up your Azure DevOps environment](/training/modules/deploy-kubernetes/5-clean-up-environment?azure-portal=true) in this module includes crucial steps for cleanup. It is recommended to perform these steps to avoid running out of free build minutes. Even if you don't finish this module, it is important to follow the cleanup steps.
 
 ## Create pipeline variables in Azure Pipelines
 
