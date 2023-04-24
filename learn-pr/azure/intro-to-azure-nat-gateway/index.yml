@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.azure.intro-to-azure-nat-gateway
+metadata:
+  moduleType: introduction        
+  title: Introduction to Azure NAT Gateway         
+  description: Evaluate whether Microsoft Azure NAT Gateway is appropriate for resolving issues such as connection timeouts and delays connecting to the internet.       
+  ms.date: 04/21/2023
+  author: LBN-commits   
+  ms.author: allensu         
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to Azure NAT Gateway
+summary: Describe the Microsoft Azure NAT Gateway service, discuss scenarios of usage, learn how it works, and explore basic steps for its deployment and configuration.
+abstract: |
+  By the end of this module, you'll be able to:
+    - Describe the Azure NAT Gateway service.
+    - Recognize scenarios where Azure NAT Gateway is applicable.
+    - Perform basic deployment of the Azure NAT Gateway service.
+prerequisites: |
+  - Experience with Azure virtual machines (VMs).
+  - Experience with Azure virtual networks.
+  - Ability to navigate the Azure portal.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - administrator
+  - security-engineer
+  - solution-architect
+  - student
+  - technology-manager
+products:
+  - azure
+  - azure-virtual-network
+subjects:
+- networking
+units:
+- learn.azure.intro-to-azure-nat-gateway.1-introduction
+- learn.azure.intro-to-azure-nat-gateway.2-what-azure-nat-gateway
+- learn.azure.intro-to-azure-nat-gateway.3-when-use-azure-nat-gateway
+- learn.azure.intro-to-azure-nat-gateway.4-how-azure-nat-gateway-works
+- learn.azure.intro-to-azure-nat-gateway.5-deploy-configure-azure-nat-gateway
+- learn.azure.intro-to-azure-nat-gateway.6-knowledge-check
+- learn.azure.intro-to-azure-nat-gateway.7-summary
+badge:
+  uid: learn.azure.intro-to-azure-nat-gateway.badge

@@ -25,3 +25,4 @@ In this module, you will:
 - Introductory experience with creating and initializing variables of type `string` and `decimal`
 - Introductory experience with literal values of type `string` and `decimal`
 - Introductory experience with `Console.WriteLine()`
+- Experience using Visual Studio Code to develop, build, and run C# code

@@ -6,7 +6,7 @@ You should be able to:
  -  Define the most common types of cyber-attacks
  -  Configure Microsoft Defender for Cloud based on your security posture
  -  Review Secure Score and raise it
- -  Lock down your solutions using Security Center and Defender
+ -  Lock down your solutions using Microsoft Defender for Cloud recommendations
  -  Enable Just-in-Time access and other security features
 
 ## Learn More

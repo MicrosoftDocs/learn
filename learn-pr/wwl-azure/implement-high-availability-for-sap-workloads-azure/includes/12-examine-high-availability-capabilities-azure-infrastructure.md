@@ -1,3 +1,5 @@
+
+
 The following principles apply to maximizing high availability of the SAP NetWeaver system in Azure:
 
 - The complete system is deployed on Azure (required - DBMS layer, (A)SCS instance and complete application layer need to run in the same location).
