@@ -17,7 +17,7 @@ To enable static website hosting:
 1. In the **Error document path** field, specify a default error page. For example, *404.html*.
 1. Select **Save**.
 
-:::image type="content" source="../media/enable-static-website-hosting.png" alt-text="Image showing the locations of the fields to enable and configure static website hosting.":::
+:::image type="content" source="../media/enable-static-website-hosting.png" alt-text="Screenshot showing the locations of the fields to enable and configure static website hosting.":::
 
 ## Impact of setting the access level on the web container
 
