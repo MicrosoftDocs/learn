@@ -8,7 +8,7 @@ The Backint component of HANA provides the 'pipes' (a pipe to read from and a pi
 
 Since the streams primarily deal with disks, you need to understand the disk performance for read and network performance to transfer backup data to gauge the backup and restore performance. For further information, refer to the [Tutorial: Back up SAP HANA databases in an Azure VM](/azure/backup/tutorial-backup-sap-hana-db).
 
-## Other Backup Methods
+## Other backup methods
 
 Without using Azure Backup service, the standard way to manage backup/restore at the file level is with a file-based backup via SAP HANA Studio or via SAP HANA SQL statements. When choosing type "file," one has to specify a path in the file system where SAP HANA writes the backup files. Restore works the same way.
 
@@ -37,4 +37,3 @@ To lessen the potential effect on the SAP HANA system from a performance or disk
 ### Copy SAP HANA backup files to Azure Files
 
 It is possible to mount an Azure Files share inside an Azure Linux VM. Tests have shown, however, that SAP HANA backup doesn't currently work directly with this kind of CIFS mount. It is also stated in [SAP Note \#1820529](https://launchpad.support.sap.com/#/notes/1820529) that CIFS is not recommended.
-w

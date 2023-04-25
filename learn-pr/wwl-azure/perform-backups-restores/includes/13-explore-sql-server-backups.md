@@ -14,22 +14,22 @@ Creating a Windows Azure Storage account within your Azure subscription is the f
 
 There are two types of blobs that can be stored in the Microsoft Azure Blob storage service: block and page blobs. SQL Server backup can use either blob type depending upon the Transact-SQL syntax used: If the storage key is used in the credential, page blob will be used; if the Shared Access Signature is used, block blob will be used.
 
-Backup to block blob is only available in SQL Server 2016 or later version. We recommend you to backup to block blob instead of page blob if you're running SQL Server 2016 or a later version. The main reasons are:
+Backup to block blob is only available in SQL Server 2016 or later version. We recommend you to back up to block blob instead of page blob if you are running SQL Server 2016 or a later version. The main reasons are:
 
 - Shared Access Signature is a safer way to authorize blob access compared to storage key.
-- You can backup to multiple block blobs to get better backup and restore performance and support larger database backup.
+- You can back up to multiple block blobs to get better backup and restore performance and support larger database backup.
 - Block blob is cheaper than page blob.
 
-When you backup to block blob, the maximum size of the backup is about 12.8 TB.
+When you back up to block blob, the maximum size of the backup is about 12.8 TB.
 
 ### Limitations
 
-- Backup to premium storage is not supported.
+- Back up to premium storage is not supported.
 - SQL Server limits the maximum backup size supported using a page blob to 1 TB. The maximum backup size supported using block blobs is limited to approximately 200 GB (50,000 blocks \* 4MB MAXTRANSFERSIZE). Block blobs support striping to support substantially larger backup sizes (up to 12.8 TB).
 - You can issue backup or restore statements by using TSQL, SMO, PowerShell cmdlets, SQL Server Management Studio Backup or Restore wizard.
 - Creating a logical device name is not supported. So, adding URL as a backup device using sp\_dumpdevice or through SQL Server Management Studio is not supported.
 - Appending to existing backup blobs is not supported. Backups to an existing blob can only be overwritten by using the WITH FORMAT option. However, when using file-snapshot backups (using the WITH FILE\_SNAPSHOT argument), the WITH FORMAT argument is not permitted to avoid leaving orphaned file-snapshots that were created with the original file-snapshot backup.
-- Backup to multiple blobs in a single backup operation is only supported using block blobs and using a Shared Access Signature (SAS) token rather than the storage account key for the SQL Credential.
+- Back up to multiple blobs in a single backup operation is only supported using block blobs and using a Shared Access Signature (SAS) token rather than the storage account key for the SQL Credential.
 - Specifying BLOCKSIZE is not supported for page blobs.
 - Specifying MAXTRANSFERSIZE is not supported for page blobs.
 - Specifying backupset options - RETAINDAYS and EXPIREDATE aren't supported.
