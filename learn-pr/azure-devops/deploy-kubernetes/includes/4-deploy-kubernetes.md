@@ -83,7 +83,7 @@ In this unit, you'll learn how to:
 
 ### Kubernetes manifest task
 
-The `KubernetesManifest@0` task is designed to manage all of the mainstream deployment operations required for Kubernetes. It supports multiple `action` options that range from creating secrets to deploying images. In this case, the `createSecret` action will be used, along with the additional parameters defined as follows:
+The [Kubernetes manifest task](/azure/devops/pipelines/tasks/deploy/kubernetes-manifest?azure-portal=true) is designed to manage all of the mainstream deployment operations required for Kubernetes. It supports multiple `action` options that range from creating secrets to deploying images. In this case, the `createSecret` action will be used, along with the additional parameters defined as follows:
 
 * `action` indicates the feature to run. In this case, `createSecret` creates the shared secret.
 * `secretName` specifies the name of the secret to create.
@@ -91,27 +91,26 @@ The `KubernetesManifest@0` task is designed to manage all of the mainstream depl
 * `kubernetesServiceConnection` specifies the name of the Azure Kubernetes Services connection.
 * `namespace` specifies the Kubernetes namespace this action applies to.
 
-You can learn more about the flexibility of this task in the [Kubernetes manifest task](/azure/devops/pipelines/tasks/deploy/kubernetes-manifest?azure-portal=true) documentation.
-
-1. Add the following code to the end of the pipeline. Be sure to indent it to match the `download` step before it.
+1. Add the following snippet to the end of the pipeline. Make sure that the indentation of this task matches that of the *download* task.
 
     [!code-yml[](code/4-7-azure-pipelines.yml)]
 
-    **Andy:** The final step is to trigger the deployment of our updates images to the Kubernetes cluster. Based on the documentation, it looks like we can use the same task but with a different action and parameters.
+    **Andy:** The final step is to trigger the deployment of our images to the Kubernetes cluster. Based on the documentation, it looks like we can use the same task but with a different action and parameters.
 
-    * `action` indicates the feature to run. In this case, `deploy` does exactly what it sounds like.
+    * `action` indicates the feature to run. In this case, `deploy` to deploy to AKS cluster.
 	* `kubernetesServiceConnection` specifies the name of the Azure Kubernetes Services connection.
 	* `namespace` specifies the Kubernetes namespace this action applies to.
 	* `imagePullSecrets` specifies the list of secrets needed to pull from the container registry.
 	* `containers` specifies the list of container images to deploy.
 
-1. Add the following code to the end of the pipeline. Be sure to indent it to match the previous task.
+1. Add the following snippet to the end of the pipeline. Make sure that the indentation of this task matches that of the previous task.
 
 	[!code-yml[](code/4-8-azure-pipelines.yml)]
 
-## Save the pipeline to trigger a build and release
+## Run your pipeline
 
-1. Select **Save** from the upper-right corner of the page. Confirm the **Save** to trigger a run.
+1. Select **Save** from the upper-right corner of the page. Select **Save** to confirm your commit message.
+1. Select **Run**, confirm your branch name and then select **Run** to trigger a pipeline run.
 1. In Azure Pipelines, go to the build. Trace the build as it runs.
 1. After the build has succeeded, return to the **Environments** tab in Azure DevOps.
 1. Select **spike**, the Azure DevOps environment that you created earlier.
