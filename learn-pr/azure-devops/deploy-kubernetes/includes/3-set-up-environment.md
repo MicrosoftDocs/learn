@@ -326,11 +326,11 @@ Now you will create an Azure Resource Manager service connection to authenticate
 1. Under **Namespace**, select **Existing** and then pick **default** from the dropdown menu.
 1. Select **Validate and create** when you're done.
 
-## Update the Kubernetes deployment manifest in your GitHub source project
+## Update the Kubernetes deployment manifest
 
-Here you update the Kubernetes *deployment.yml* manifest to point to the container registry you created earlier.
+In this section you will be updating the Kubernetes manifest *deployment.yml* to point to the container registry you created earlier.
 
-1. Go to the GitHub project created for this module. The project is named *mslearn-tailspin-spacegame-web-kubernetes* in your GitHub account.
+1. Navigate to the GitHub repository created for this module, which can be found under the name "mslearn-tailspin-spacegame-web-kubernetes" in your GitHub account.
 
 1. Open the file at *manifests/deployment.yml* in edit mode.
 

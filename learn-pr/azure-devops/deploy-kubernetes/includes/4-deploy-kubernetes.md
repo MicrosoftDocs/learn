@@ -1,51 +1,47 @@
-Your project came with a release pipeline that builds the web project in the solution as a Docker container and deploys it to Azure App Service. This will all need to be updated to support the multi-container deployment to Kubernetes.
+The release pipeline provided with your project is designed to build the solution as a Docker container and deploy it to Azure App Service. To support the deployment of multiple containers to a Kubernetes cluster, you will need to modify this pipeline.
 
-In this part, you'll:
+In this unit, you'll learn how to:
 
 > [!div class="checklist"]
-> * Update the pipeline to support CI/CD on a commit to the main branch.
-> * Define some pipeline variables to make the build pipeline easier to maintain.
-> * Add a task to build and publish the leaderboard container to your container registry.
-> * Add a task to publish Kubernetes manifests from the **Build** stage so that they can be downloaded for use in the **Deploy** stage.
+> * Update the pipeline to trigger on a commit to the main branch.
+> * Define variables to be shared across the pipeline.
+> * Build and publish Docker images.
+> * Publish Kubernetes manifests.
 > * Add a task to create an image pull secret for use between your Kubernetes and container registry instances.
-> * Add a task to deploy updated images to a Kubernetes cluster.
-> * Save the pipeline to trigger a CI/CD workflow.
+> * Deploy updated images to a Kubernetes cluster.
 
+## Update the pipeline to support triggers
 
-## Update the pipeline to support CI/CD
+1. Log in to your Azure DevOps organization, and then navigate to your project.
+1. Select **Pipelines**, and then select your pipeline.
+1. Select **Edit** to edit your *azure-pipelines.yml*.
 
-Here you add a new pipeline variable to the existing CI/CD pipeline defined in *azure-pipelines.yml*.
+    **Andy:** This was the build stage we had in place for the previous single-container solution. I knew it wasn't going to run properly, so I disabled it. We can start off by re-enabling triggers on commits to the `main` branch.
 
-1. From Azure DevOps, go to **Pipelines**.
-1. Select the pipeline.
-1. Select **Edit**. This brings up the *azure-pipelines.yml* file that defines the existing CI/CD pipeline.
-
-    **Andy:** This was the build stage we had in place for the previous single-container solution. I knew it wasn't going to run properly, so I disabled it. We can start off by re-enabling CI/CD for commits to the `main` branch.
-
-1. Replace the existing `trigger` line at the top of the file with the code below. This will automate runs when there's a commit to the main branch.
+1. Replace the existing `trigger` line at the top of the file with the snippet below. This will trigger a pipeline run every time a commit is made to the main branch.
 
     [!code-yml[](code/4-1-azure-pipelines.yml)]
 
-## Define variables to be shared within the pipeline
+## Define variables accessible across pipeline
 
-**Andy:** We're going to need to add two variables for the pipeline. The first will specify the name of the leaderboard repository, which is `leaderboard`. The other will be the name we want to use for the image pull secret shared by our AKS and ACR instances when deploying.
+**Andy:** We're going to need to add two pipeline variables. One for specifying the name of the leaderboard repository, which is "leaderboard". The other is for the name of the image pull secret used for sharing between AKS and ACR instances during deployment.
 
 1. Add the highlighted code below to the `variables` section.
 
     [!code-yml[](code/4-2-azure-pipelines.yml?highlight=3,6)]
 
-## Add a task to build and publish the leaderboard container
+## Build and publish Docker image to Azure Container Registry
 
 **Andy:** We already have a task for building the web app as a Docker container, which we publish to our container registry. We can just use a second task to do the same for our leaderboard.
 
-1. Add a second `Docker@2` task that builds and pushes the leaderboard container using the highlighted code below. Add this task after the web container task.
+1. Add a second `Docker@2` task to build and publish the leaderboard container using the highlighted snippet below. Add this task right after the web container task.
 
     [!code-yml[](code/4-3-azure-pipelines.yml?highlight=12-21)]
 
-    > [!TIP]
-    > In a YAML file, whitespace is important. Ensure that the task you add here uses the same indentation as the previous task.
+> [!TIP]
+> Make sure that the task you add here uses consistent indentation with the previous task as whitespace is important in a YAML file..
 
-## Add a task to publish the Kubernetes manifests for use in the Deploy stage
+## Publish the Kubernetes manifests
 
 **Andy:** I think we can move on to the next stage. Do you see anything missing?
 
@@ -59,7 +55,7 @@ Here you add a new pipeline variable to the existing CI/CD pipeline defined in *
 
 **Mara**: That's what the `PublishBuildArtifacts@1` task is for. It's so common that there's even a shorthand for it, `publish`.
 
-1. Add a `publish` task that stores the *manifests* folder for a future stage as shown in the following code snippet. Be sure to match the indentation of the previous task.
+1. Add a `publish` task that stores the *manifests* folder for a future stage as shown in the following code snippet. Make sure that the indentation of this task matches that of the previous task.
 
     [!code-yml[](code/4-4-azure-pipelines.yml?highlight=12-13)]
 
