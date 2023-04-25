@@ -2,11 +2,11 @@ You can also use the *fs* module in Node.js to write data to files and read data
 
 You're almost finished creating a Node.js masterpiece for Tailwind Traders. So far, your code reads any directory, finds all .json files, and creates a *totals.txt* file.
 
-In this exercise, you'll complete the project by reading the .json files, adding up the store totals, and writing the grand total to the *totals.txt* file.
+In this exercise, you complete the project by reading the .json files, adding up the store totals, and writing the grand total to the *totals.txt* file.
 
 ## Create a method to calculate sales totals
 
-1. At the top of index.js, just below the `require("path")` statement, create a function that will calculate the sales total. This method should take in the array of file paths that it can iterate over.
+1. At the top of index.js, just below the `require("path")` statement, create a function that calculates the sales total. This method should take in the array of file paths that it can iterate over.
 
    ```javascript
    async function calculateSalesTotal(salesFiles) {
@@ -102,7 +102,7 @@ async function main() {
    node index.js
    ```
 
-   There is no output from the program. If you look in the *salesTotals/totals.txt* file, you'll see the total of all the sales from the *sales.json* file.
+   There's no output from the program, except for the message that the *salesTotals* file already exists. But, if you look in the *salesTotals/totals.txt* file, you see the total of all the sales from the *sales.json* and *totals.json* files.
 
 1. Run the program from the terminal again.
 
@@ -156,7 +156,7 @@ async function findSalesFiles(folderName) {
         // Make sure the discovered file is a .json file
         if (path.extname(item.name) === ".json") {
           // store the file path in the salesFiles array
-          salesFiles.push(path.join(folderName, item.name));
+          await salesFiles.push(path.join(folderName, item.name));
         }
       }
     }

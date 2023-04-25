@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-virtual-networks.associate-private-ip-addresses
-title: Associate private IP addresses
+title: Allocate or assign private IP addresses
 metadata:
-  title: Associate private IP addresses
-  description: "Associate private IP addresses"
-  ms.date: 03/22/2023
+  title: Allocate or assign private IP addresses
+  description: "Allocate or assign private IP addresses"
+  ms.date: 04/12/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial

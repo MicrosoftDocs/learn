@@ -8,7 +8,7 @@ Clearly, you need a way to handle these unexpected peaks. You don't want to add 
 
 You can solve this problem by using Azure Queue storage. A storage queue is a high-performance message buffer that can act as a broker between the front-end components (the "producers") and the middle tier (the "consumer").
 
-Our front-end components place a message for each new alert into a queue. The middle tier then retrieves these messages one at a time from the queue for processing. At times of high-demand, the queue may grow in length, but no stories will be lost, and the application will remain responsive. When demand drops back to normal levels, the web service will catch up by working through the queue backlog.
+Our front-end components place a message for each new alert into a queue. The middle tier then retrieves these messages one at a time from the queue for processing. At times of high-demand, the queue may grow in length, but no stories are lost, and the application remains responsive. When demand drops back to normal levels, the web service catches up by working through the queue backlog.
 
 Let's learn how to use Azure Queue storage to handle high demand and improve resilience in your distributed applications.
 

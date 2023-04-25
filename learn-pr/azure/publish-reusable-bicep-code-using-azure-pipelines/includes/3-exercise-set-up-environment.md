@@ -5,10 +5,11 @@ Before you start to publish your toy company's reusable Bicep code, you need to 
 To meet these objectives, you'll:
 
 > [!div class="checklist"]
-> * Set up an Azure DevOps project for this module.
-> * Clone the project's repository to your computer.
-> * Create a resource group in Azure.
-> * Create a service connection in Azure Pipelines.
+>
+> - Set up an Azure DevOps project for this module.
+> - Clone the project's repository to your computer.
+> - Create a resource group in Azure.
+> - Create a service connection in Azure Pipelines.
 
 ## Get the Azure DevOps project
 
@@ -24,13 +25,13 @@ The modules in this learning path are part of a progression. For learning purpos
 Run a template that sets up your Azure DevOps project.
 
 > [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=bicepreusable&azure-portal=true)
+> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=bicepreusable)
 
 On the Azure DevOps Demo Generator site, do the following:
 
 1. Select **Sign In**, and then agree to the site usage terms by selecting **Accept**.
 
-1. On the **Create New Project** page, select your Azure DevOps organization and then, in the **New Project Name** box, enter a project name, such as *toy-reusable*.
+1. On the **Create New Project** page, select your Azure DevOps organization and then, in the **New Project Name** box, enter a project name, such as _toy-reusable_.
 
     :::image type="content" source="../media/3-create-new-project.png" alt-text="Screenshot of the Azure DevOps Demo Generator pane for creating a new project.":::
 
@@ -40,7 +41,7 @@ On the Azure DevOps Demo Generator site, do the following:
 
 1. Select **Navigate to project** to go to your project in Azure DevOps.
 
-[!include[](../../includes/cleanup-steps.md)]
+[!INCLUDE [](../../includes/cleanup-steps.md)]
 
 ## Clone the repository
 
@@ -56,7 +57,7 @@ On the Azure DevOps Demo Generator site, do the following:
 
 1. Select **Clone in VS Code**. If you're prompted to allow Visual Studio Code to open, select **Open**.
 
-    :::image type="content" source="../media/3-clone-visual-studio-code.png" alt-text="Screenshot of Azure DevOps that shows the repository settings, with the 'Clone in VS Code' button highlighted.":::
+    :::image type="content" source="../media/3-clone-visual-studio-code.png" alt-text="Screenshot of Azure DevOps that shows the repository settings, with the Clone in VS Code button highlighted.":::
 
 1. Create a folder to use for the repository, and then select **Select Repository Location**.
 
@@ -70,15 +71,13 @@ On the Azure DevOps Demo Generator site, do the following:
 
    :::image type="content" source="../../includes/media/open-cloned-repo.png" alt-text="Screenshot of Visual Studio Code that shows a prompt to open the cloned repository, with the Open button highlighted.":::
 
-[!include[](../../includes/azure-template-pipeline-sign-in.md)]
-
 ## Sign in to Azure
 
 ::: zone pivot="cli"
 
-To work with resource groups in Azure, sign in to your Azure account from the Visual Studio Code terminal. Be sure that you've installed the [Azure CLI](/cli/azure/install-azure-cli?azure-portal=true) tools.
+To work with resource groups in Azure, sign in to your Azure account from the Visual Studio Code terminal. Be sure that you've installed the [Azure CLI](/cli/azure/install-azure-cli) tools.
 
-1[!include[](../../includes/azure-exercise-terminal-cli.md)]
+[!INCLUDE [](../../includes/azure-exercise-terminal-cli.md)]
 
 ### Sign in to Azure by using the Azure CLI
 
@@ -94,9 +93,9 @@ To work with resource groups in Azure, sign in to your Azure account from the Vi
 
 ::: zone pivot="powershell"
 
-To work with resource groups in Azure, sign in to your Azure account from the Visual Studio Code terminal. Be sure that you've [installed Azure PowerShell](/powershell/azure/install-az-ps?azure-portal=true).
+To work with resource groups in Azure, sign in to your Azure account from the Visual Studio Code terminal. Be sure that you've [installed Azure PowerShell](/powershell/azure/install-az-ps).
 
-[!include[](../../includes/azure-exercise-terminal-powershell.md)]
+[!INCLUDE [](../../includes/azure-exercise-terminal-powershell.md)]
 
 ### Sign in to Azure by using Azure PowerShell
 
@@ -138,7 +137,7 @@ Next, create a service connection in Azure Pipelines. This process automatically
 
 1. In your browser, select **Project settings**.
 
-   :::image type="content" source="../../includes/media/azure-devops-project-settings.png" alt-text="Screenshot of Azure DevOps that shows the menu, with the 'Project settings' item highlighted.":::
+   :::image type="content" source="../../includes/media/azure-devops-project-settings.png" alt-text="Screenshot of Azure DevOps that shows the menu, with the Project settings item highlighted.":::
 
 1. Select **Service connections** > **Create service connection**.
 
@@ -150,7 +149,7 @@ Next, create a service connection in Azure Pipelines. This process automatically
 
 1. Select **Service principal (automatic)** > **Next**.
 
-   :::image type="content" source="../../includes/media/azure-devops-create-service-connection-principal-type.png" alt-text="Screenshot of Azure DevOps that shows the 'New Azure service connection' pane, with the 'Service principal (automatic)' option highlighted.":::
+   :::image type="content" source="../../includes/media/azure-devops-create-service-connection-principal-type.png" alt-text="Screenshot of Azure DevOps that shows the New Azure service connection' pane, with the Service principal (automatic) option highlighted.":::
 
 1. In the **Subscription** dropdown list, select your Azure subscription.
 
@@ -160,7 +159,7 @@ Next, create a service connection in Azure Pipelines. This process automatically
 
 1. In the **Service connection name** box, enter **ToyReusable**. Ensure that the **Grant access permission to all pipelines** checkbox is selected.
 
-   :::image type="content" source="../media/3-create-service-connection-principal-details.png" alt-text="Screenshot of Azure DevOps that shows the 'New Azure service connection' pane, with the details completed and the 'Save' button highlighted.":::
+   :::image type="content" source="../media/3-create-service-connection-principal-details.png" alt-text="Screenshot of Azure DevOps that shows the 'New Azure service connection' pane, with the details completed and the Save button highlighted.":::
 
    > [!TIP]
    > In this exercise, for simplicity, you're giving every pipeline access to your service connection. When you create real service connections that work with production resources, consider restricting access to only the pipelines that need them.

@@ -1,11 +1,11 @@
-You're finished with the tasks for this module. Here you'll clean up your Azure resources and clean up your Azure DevOps environment.
+You're finished with the tasks for this module. Here, you'll clean up your Azure resources and clean up your Azure DevOps environment.
 
 > [!IMPORTANT]
 > This page contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. It also helps ensure that you're not charged for Azure resources after you complete this module.
 
 ## Clean up Azure resources
 
-Here you delete your Azure App Service instance. The easiest way to delete the instance is to delete its parent resource group. When you delete a resource group, you delete all resources in that group.
+Here, you delete your Azure App Service instance. The easiest way to delete the instance is to delete its parent resource group. When you delete a resource group, you delete all resources in that group.
 
 You may use the Azure portal user interface or Azure CLI to manage resources. Here you tear down your deployment by using the Azure CLI through Azure Cloud Shell. The steps are similar to the steps that you used when you created the resources.
 
@@ -16,7 +16,7 @@ To clean up your resource group:
 
     :::image type="content" source="../../shared/media/azure-portal-menu-cloud-shell.png" alt-text="A screenshot of the Azure portal showing the location of the Cloud Shell menu item.":::
 
-1. Run the following `az group delete` command to delete the resource group that you used, `python-cicd-rg`.
+1. Run the following `az group delete` command to delete the resource group that you used, `python-cicd-rg`:
 
     ```azurecli
     az group delete --name python-cicd-rg
@@ -24,13 +24,13 @@ To clean up your resource group:
 
     When prompted, enter `y` to confirm the operation.
 
-1. As an optional step, after the previous command finishes, run the following `az group list` command.
+1. As an optional step, after the previous command finishes, run the following `az group list` command:
 
     ```azurecli
     az group list --output table
     ```
 
-    You see that the resource group `python-cicd-rg` no longer exists.
+    You find that the resource group `python-cicd-rg` no longer exists.
 
 ## Disable the pipeline or delete your project
 
@@ -48,7 +48,7 @@ To disable the pipeline:
 1. From the drop-down menu, select **Settings**:
 
     :::image type="content" source="../../shared/media/azure-pipelines-settings-button.png" alt-text="A screenshot of Azure Pipelines showing the location of the Settings menu.":::
-1. Under **Processing of new run requests**, select **Disabled** and then select **Save**.
+1. Under **Processing of new run requests**, select **Disabled**, then select **Save**.
 
     Your pipeline will no longer process build requests.
 

@@ -1,4 +1,4 @@
-Recall that your organization wants to automate customer chat support by using a chat bot on your website and social-networking sites. You need to determine which Azure Bot Service tool is the best choice for your needs. You'll evaluate your company's requirements for a chat bot and then compare three bot-creation tools.
+Recall that your organization wants to automate customer chat support by using a chat bot on your website and social-networking sites. You need to determine which Azure Bot Service tool is the best choice for your needs. In this unit, you'll evaluate your company's requirements for a chat bot and compare three bot-creation tools.
 
 ## Chat bot requirements
 
@@ -12,13 +12,13 @@ The Azure Bot Service has several features that you can use. In this unit, you'l
 
 ## Evaluating bot-building tools
 
-You have three primary bot creation methods available, Power Virtual Agents, QnA Maker, and Bot Framework Composer. Each method has qualities that you'll evaluate against your requirements to choose the best fit for your organization.
+You have three primary bot-creation methods available: Power Virtual Agents, QnA Maker, and Bot Framework Composer. Each method has qualities that you'll evaluate against your requirements to choose the best fit for your organization.
 
 ### Power Virtual Agents
 
 Use Power Virtual Agents to create powerful chat bots. These bots can answer questions posed by your customers, other employees, or visitors to your website or service. Because of the guided, no-code graphical interface, you can use the Power Virtual Agents web app to create chat bots without needing developer expertise.
 
-Topics guide a bot's conversation in Power Virtual Agents. Each topic contains a dialog tree that guides conversation flow. Each topic also has trigger phrases that a user is likely to enter. These phrases are matched to a specific topic using built-in natural language understanding. For instance, consider that a user enters "Open hours" into your bot. The bot's AI can match that to a topic named Store hours and then begin a conversation asking the user which store they're asking about. Ultimately, the bot then provides that store's hours of operation.
+Topics guide a bot's conversation in Power Virtual Agents. Each topic contains a dialog tree that guides conversation flow. Each topic also has trigger phrases that a user is likely to enter. These phrases are matched to a specific topic using built-in natural language understanding. For instance, consider that a user enters "Open hours" into your bot. The bot's AI can match that to a topic named Store hours and then begin a conversation asking the user about which store they're asking. Ultimately, the bot then provides that store's hours of operation.
 
 Extend Power Virtual Agents bot capability by using the Bot Framework SDK. Bot extensions can include:
 
@@ -38,7 +38,7 @@ Recall that QnA Maker is an Azure-based Natural Language Processing service. Use
 The QnA Maker portal is a complete knowledge base authoring experience. You can import documents in their current form to your knowledge base. These documents might include an FAQ, product manual, spreadsheet, or webpage. The documents are converted into question and answer pairs. Each pair is analyzed for follow-up prompts and connected to other pairs.
 
 >[!NOTE]
-> The final markdown format supports rich presentation including images and links.
+> The final markdown format supports rich presentation, including images and links.
 
 Once your knowledge base is edited, you can publish the knowledge base to a working Azure Web App bot without writing any code. Test your bot in the Azure portal or download it and continue development.
 

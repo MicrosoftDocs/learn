@@ -1,37 +1,35 @@
 
 ## Brute force attacks
 
+A brute force attack is a type of hacking technique in which an attacker tries to gain access to a network or system by guessing the username and password combination through an automated process. The attacker typically uses a program that generates a large number of login attempts in a short period of time to try every possible combination of characters until the correct one is discovered. This type of attack can be very effective against weak passwords and security systems with no protection against brute force attacks, but it is time-consuming and can be detected by security measures such as account lockouts after a certain number of failed login attempts.
+
+## Management services, ports, and protocols
+
 Adversaries without prior knowledge of legitimate credentials within the system or environment may guess passwords to attempt access to accounts. Without knowledge of the password for an account, an adversary may opt to systematically guess the password using a repetitive or iterative mechanism. An adversary may guess login credentials without prior knowledge of system or environment passwords during an operation by using a list of common passwords. Password guessing may or may not take into account the target's policies on password complexity or use policies that may lock accounts out after a number of failed attempts.
 
 Typically, management services over commonly used ports are used when guessing passwords. Commonly targeted services include the following:
 
- -  SSH (22/TCP)
- -  Telnet (23/TCP)
- -  FTP (21/TCP)
- -  NetBIOS / SMB / Samba (139/TCP & 445/TCP)
- -  LDAP (389/TCP)
- -  Kerberos (88/TCP)
- -  RDP / Terminal Services (3389/TCP)
- -  HTTP/HTTP Management Services (80/TCP & 443/TCP)
- -  MSSQL (1433/TCP)
- -  Oracle (1521/TCP)
- -  MySQL (3306/TCP)
- -  VNC (5900/TCP)
- -  SNMP (161/UDP and 162/TCP/UDP)
-
-:::image type="content" source="../media/remote-desktop-services-primary-54ce8abb.png" alt-text="Screenshot showing Brute Force Attack example.":::
+:::image type="content" source="../media/brute-force-attack-target-management-services-ports-and-protocols-1321b9fc.png" alt-text="Screenshot showing management services, ports, and protocols.":::
 
 
-One way to reduce exposure to a brute force attack is to limit the amount of time a port is open. Management ports don't need to be open at all times. They only need to be open while you're connected to the VM, for example, to perform management or maintenance tasks. When just-in-time is enabled, Microsoft Defender for Cloud uses network security group (NSG) and Azure Firewall rules, which restrict access to management ports so they cannot be targeted by attackers.
+## Brute force attack programs and use cases
 
-Microsoft Defender for Cloud leverages the Microsoft intelligent security graph to discover and act against attacks. The graph combines the cyber intelligence Microsoft collects across all of its services along with industry data to block known attack patterns. Microsoft also gives you the control you need to prioritize alerts and incidents that are important to your organization. Additionally, we give you a unified view for forensics analysis and the ability to search across all your computer resources. Threat intelligence can be visualized down to the trending attack techniques and the geographic regions affected.
+These programs can be used individually or in combination to launch a successful brute force attack on a target network or system. There are several types of brute force attack programs used by attackers, including:
 
-### Indications of an attack
+:::image type="content" source="../media/types-of-brute-force-attack-programs-and-use-cases-e35bf257.png" alt-text="Screenshot showing brute force attack programs and use cases.":::
+
+
+## Indications of an attack
 
  -  Extreme counts of failed sign-ins from many unknown usernames
  -  Never previously successfully authenticated from multiple remote desktop protocol (RDP) connections or from new source IP addresses
 
-### Stop brute-force attacks
+**Example:** Potential SQL Brute Force attempt alert
+
+:::image type="content" source="../media/example-of-a-potential-sql-brute-force-attempt-alert-7a3d05aa.png" alt-text="Screenshot showing a potential sql brute force attempt alert example.":::
+
+
+## Practices to blunt a Brute Force Attacks
 
 To counteract brute-force attacks, you can take multiple measures such as:
 

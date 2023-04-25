@@ -15,5 +15,5 @@ In this module, you will:
 
 ## Prerequisites
 
-- Basic knowledge of operating system virtualization concepts
-- Basic knowledge of command-line based applications
+- Knowledge of operating system virtualization concepts at beginner level
+- Knowledge of command-line based applications at beginner level

@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.investigate-threats-using-audit-in-microsoft-365-defender-microsoft-purview-premium.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check."
+  ms.date: 3/22/2023
+  author: wwlpublish
+  ms.author: kelawson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "To help organizations investigate compromised email accounts, Microsoft 365 audits access to mail data by mail protocols and clients. What mailbox-auditing action does Microsoft 365 use in Audit (Premium) to provide this functionality?"
+    choices:
+    - content: "MailItemsAccessed"
+      isCorrect: true
+      explanation: "Correct. To help organizations investigate compromised email accounts, Microsoft 365 audits access to mail data by mail protocols and clients. It does so by using the MailItemsAccessed mailbox-auditing action. This audited action can help investigators better understand email data breaches and identify the scope of compromises to specific mail items that may have been compromised."
+    - content: "AuditExchangeMail"
+      isCorrect: false
+      explanation: "Incorrect. This item isn't a valid mailbox-auditing action."
+    - content: "ExchangeMailActivity"
+      isCorrect: false
+      explanation: "Incorrect. This item isn't a valid mailbox-auditing action."
+  - content: "Audit (Premium) helps organizations conduct forensic and compliance investigations by providing access to important events. Which of the following prerequisites must be completed so that audit logs will be generated when users perform these events?"
+    choices:
+    - content: "An extra add-on license must be purchased per user"
+      isCorrect: false
+      explanation: "Incorrect. Retaining audit logs for 10 years requires an extra per-user add-on license. However, such a license isn't required so that audit logs will be generated when users perform audited events."
+    - content: "Users must be assigned an Audit (Premium) license"
+      isCorrect: true
+      explanation: "Correct. Users must be assigned an Audit (Premium) license so that audit logs will be generated when users perform these important, audited events."
+    - content: "The MailItemsAccessed action must be enabled"
+      isCorrect: false
+      explanation: "Incorrect. This action doesn't require enabling."
+  - content: "Tailspin Toys has implemented Microsoft Purview Audit (Premium). It set up Audit (Premium) for its users. It's now enabling Audit (Premium) events to be logged. Which of the following items is an Audit (Premium) event that Tailspin Toys must enable?"
+    choices:
+    - content: "ExchangeQueryInitiated"
+      isCorrect: false
+      explanation: "Incorrect. This item isn't an Audit (Premium) event that must be enabled."
+    - content: "SearchQueryInitiatedSharePoint"
+      isCorrect: true
+      explanation: "Correct. You must enable the following Audit (Premium) events to be logged so that users can perform searches in Exchange Online and SharePoint Online: SearchQueryInitiatedExchange andSearchQueryInitiatedSharePoint."
+    - content: "InitiateOneDriveQuery"
+      isCorrect: false
+      explanation: "Incorrect. This item isn't an Audit (Premium) event that must be enabled."

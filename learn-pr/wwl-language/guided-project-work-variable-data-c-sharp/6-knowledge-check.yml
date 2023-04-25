@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/24/2023
+  ms.date: 04/25/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
@@ -13,7 +13,7 @@ durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What best describes the purpose of `TryParse()`?"
+  - content: "Which choice best describes the purpose of `TryParse()`?"
     choices:
     - content: "To split sentences into words stored in an array."
       isCorrect: false

@@ -1,0 +1,50 @@
+﻿### YamlMime:Module
+uid: learn.azure.azure-vmware-solution
+title: Secure outbound internet connectivity for Azure VMware Solution
+metadata:
+  title: Secure outbound internet connectivity for Azure VMware Solution
+  description: Secure outbound internet connectivity for Azure VMware Solution using Azure Route Server, Azure Firewall and 3rd party NVA
+  ms.date: 03/23/2023
+  author: Mahesh-MSFT
+  ms.author: maksh
+  ms.topic: interactive-tutorial
+  ms.prod: azure-vmware-solution
+summary: > 
+  Learn how to route, control, and inspect outbound network traffic from Azure VMware Solution private cloud. Define the outbound internet network path using either custom or third party network virtualization appliance with Azure Route Server and Azure Firewall.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Generate and inject the default route using either custom or 3rd party Network Virtual Appliance (NVA) with Azure Firewall as the next hop.
+  - Propagate the default route to Azure VMware Solution private cloud using Azure Route Server.
+  - Define network rules in Azure Firewall to allow outbound internet traffic from Azure VMware Solution private cloud.
+prerequisites: |
+  This module requires understanding of the following activities. 
+  - Beginner level experience with Azure basic networking concepts such as Azure Virtual WAN, Virtual Networks (VNet), Subnets, Network Security Groups (NSG), Route Table, User Defined Routes (UDR), ExpressRoute Gateway, Azure Virtual Network Peering.
+  - Intermediate level experience with [deploying and running](/azure/azure-vmware/deploy-azure-vmware-solution?tabs=azure-portal) Azure VMware Solution private cloud, networking covering NSX-T Data Center T0/T1 gateways, NSX-T Data Center Edge & Managed SNAT.
+  - Intermediate level experience with creating a network segment and Virtual Machine (VM) in that network segment and testing internet connectivity from VM.
+  - Intermediate level experience with creating either a custom or a 3rd party NVA on Azure, Border Gateway Protocol (BGP), Azure Route Server and Azure Firewall.
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+  - intermediate
+roles:
+  - solution-architect
+  - security-engineer
+  - network-engineer
+products:
+  - azure-vmware-solution
+units:
+- learn.azure.azure-vmware-solution.introduction
+- learn.azure.azure-vmware-solution.outbound-internet-connectivity
+- learn.azure.azure-vmware-solution.exercise-configure-vmware-solution
+- learn.azure.azure-vmware-solution.exchange-routes-with-avs
+- learn.azure.azure-vmware-solution.exercise-create-route-server
+- learn.azure.azure-vmware-solution.securing-network-communication
+- learn.azure.azure-vmware-solution.exercise-create-firewall
+- learn.azure.azure-vmware-solution.using-frrouting-nva
+- learn.azure.azure-vmware-solution.exercise-configure-custom-router
+- learn.azure.azure-vmware-solution.network-security-management
+- learn.azure.azure-vmware-solution.exercise-establish-outbound-internet
+- learn.azure.azure-vmware-solution.summary
+badge:
+  uid: learn.azure.azure-vmware-solution.badge

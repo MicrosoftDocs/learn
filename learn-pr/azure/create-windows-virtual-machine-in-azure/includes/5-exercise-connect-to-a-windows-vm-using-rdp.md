@@ -51,7 +51,7 @@ You can enter this information into the RDP client, or download a pre-configured
 
 1. On the **Remote Desktop Connection** dialog box, note the security warning and the remote computer IP address, and then select **Connect** to start the connection to the VM.
 
-1. In the **Windows Security** dialog box, enter your username and password that you used in steps 6 and 7.
+1. In the **Windows Security** dialog box, enter your username and password that you created in the previous exercise.
 
     > [!NOTE]
     > If you are using a Windows client to connect to the VM, it will default to known identities on your machine. Select the **More choices** option, and then select **Use a different account** that lets you enter a different username/password combination.

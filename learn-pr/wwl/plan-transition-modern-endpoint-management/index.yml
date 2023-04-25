@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.plan-transition-modern-endpoint-management
+metadata:
+  title: MD-102 3-Plan a transition to modern endpoint management
+  description: "Explore considerations and review the planning of transitioning to modern management, focusing on migration and newly provisioned devices."
+  ms.date: 04/05/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Plan a transition to modern endpoint management
+summary: Explore considerations and review the planning of transitioning to modern management, focusing on migration and newly provisioned devices.
+abstract: |
+  After completing this module, you should be able to:
+  - Identify usage scenarios for Azure AD join.
+  - Identify workloads that you can transition to Intune.
+  - Identify prerequisites for co-management.
+  - Identify considerations for transitioning to modern management.
+  - Plan a transition to modern management using existing technologies.
+  - Plan a transition to modern management using Microsoft Intune.
+prerequisites: |
+  - Strong technical skills installing, maintaining, and troubleshooting the Windows 10 OS or later
+  - Strong understanding of computer networking, client security, and application concepts
+  - Experience using Active Directory Domain Services
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- windows
+- configuration-manager
+- intune
+units:
+- learn.wwl.plan-transition-modern-endpoint-management.introduction
+- learn.wwl.plan-transition-modern-endpoint-management.explore-co-management-transition
+- learn.wwl.plan-transition-modern-endpoint-management.examine-prerequisites-for-co-management
+- learn.wwl.plan-transition-modern-endpoint-management.evaluate-modern-management-considerations
+- learn.wwl.plan-transition-modern-endpoint-management.evaluate-upgrades-migrations-modern-transitioning
+- learn.wwl.plan-transition-modern-endpoint-management.migrate-data-when-modern-transitioning
+- learn.wwl.plan-transition-modern-endpoint-management.migrate-workloads-when-modern-transitioning
+- learn.wwl.plan-transition-modern-endpoint-management.knowledge-check
+- learn.wwl.plan-transition-modern-endpoint-management.summary
+badge:
+  uid: learn.wwl.plan-transition-modern-endpoint-management.badge

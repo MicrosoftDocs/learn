@@ -1,5 +1,6 @@
 
 
+
 In this exercise, you'll begin setting up variables needed to calculate a student's GPA. Let's get started.
 
 > [!IMPORTANT]

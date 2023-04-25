@@ -4,8 +4,8 @@ metadata:
   title: Solve a job shop scheduling optimization problem by using Azure Quantum
   description: Learn how to use Azure Quantum's optimization service to solve a job shop scheduling problem.
   ms.date: 01/26/2021
-  author: anraman
-  ms.author: anraman
+  author: bradben
+  ms.author: brbenefield
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Solve a job shop scheduling optimization problem by using Azure Quantum

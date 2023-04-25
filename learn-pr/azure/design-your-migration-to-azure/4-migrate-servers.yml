@@ -3,9 +3,9 @@ uid: learn.design-your-migration-to-azure.4-migrate-servers
 metadata:
   title: Migrate servers with Azure Migrate
   description: Review Azure Migrate and see how to use it to migrate specific workloads to Azure.
-  ms.date: 07/30/2019
-  author: jboeshart
-  ms.author: jaboes
+  ms.date: 04/13/2023
+  author: v-ksreedevan
+  ms.author: v-ksreedevan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Migrate servers with Azure Migrate

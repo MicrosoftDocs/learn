@@ -17,27 +17,27 @@ In AWS, by enabling JIT-access the relevant rules in the attached **Amazon Elast
 
 When a user requests access to a VM, Defender for Cloud checks that the user has **Azure role-based access control (Azure RBAC)** permissions for that VM. If the request is approved, Defender for Cloud configures the NSGs and Azure Firewall to allow inbound traffic to the selected ports from the r**elevant IP address** (**or range**), for the amount of time that was specified. In AWS, Defender for Cloud creates a new EC2 security group that allows inbound traffic to the specified ports. After the time has expired, Defender for Cloud restores the NSGs to their previous states. Connections that are already established are not interrupted.
 
-**Just-in-time VM enabled on an Azure Virtual Machine.**
+## **Just-in-time VM enabled on an Azure Virtual Machine.**
 
-**Example: Azure virtual machine**
+**Example:** Azure virtual machine
 
 The diagram shows the logic that Defender for Cloud applies when deciding how to categorize your supported VMs (i.e., Azure Virtual Machine)
 
 :::image type="content" source="../media/just-in-time-vm-enabled-on-an-azure-virtual-machine-f4788d97.png" alt-text="Diagram showing just in time VM enabled on an Azure virtual machine.":::
 
 
-**Just-in-time VM enabled on an AWS EC2 Instance.**
+## **Just-in-time VM enabled on an AWS EC2 Instance.**
 
 The diagram shows the logic that Defender for Cloud applies when deciding how to categorize your supported VMs (i.e., AWS EC2 instance)
 
-**Example: AWS EC2 Instance**
+**Example:** AWS EC2 Instance
 
 ## :::image type="content" source="../media/just-in-time-vm-enabled-on-an-aws-ec2-virtual-machine-d1250e67.png" alt-text="Diagram showing just in time VM enabled on an AWS EC2 instance."::: 
 
-**Added to the recommendation’s Unhealthy resources tab**
+## Added to the recommendation’s Unhealthy resources tab
 
 The diagram shows the logic Defender for Cloud applies when deciding how to categorize your supported VM. When Defender for Cloud finds a machine that can benefit from JIT, it adds that machine to the recommendation's Unhealthy resources tab.
 
-**Example: Affected resources**
+**Example:** Affected resources
 
 :::image type="content" source="../media/added-to-the-recommendations-unhealthy-resources-tab-0b994a13.png" alt-text="Screenshot showing the recommendations unhealthy resources tab.":::
